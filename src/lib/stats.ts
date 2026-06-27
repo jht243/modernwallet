@@ -11,6 +11,7 @@ import { projectRetirement, early401kWithdrawal, computeRMD } from "./retirement
 import { computeInvestment, type InvestmentInput } from "./investment";
 import { computePortfolio, type PortfolioInput } from "./portfolio";
 import { computeNetWorth, type NetWorthInput } from "./net-worth";
+import { carAffordability, homeAffordability, downPaymentBreakdown, closingCostEstimate } from "./affordability";
 import { fmtUSD, fmtMonths, fmtPct, fmtNum } from "./format";
 
 export interface Stat {
@@ -19,6 +20,9 @@ export interface Stat {
 }
 
 export function spokeStats(entry: SpokeEntry): Stat[] {
+  // Buyer-journey override tools key off the spoke's islandId + preset.kind.
+  if (entry.islandId === "affordability") return affordabilityStats(entry.preset as Record<string, unknown>);
+  if (entry.islandId === "mortgage-extras") return extrasStats(entry.preset as Record<string, unknown>);
   switch (entry.calculator) {
     case "auto-loan":
     case "mortgage":
@@ -36,6 +40,56 @@ export function spokeStats(entry: SpokeEntry): Stat[] {
     default:
       return [];
   }
+}
+
+function affordabilityStats(preset: Record<string, unknown>): Stat[] {
+  if (preset.kind === "home") {
+    const r = homeAffordability({
+      annualIncome: Number(preset.annualIncome) || 0,
+      monthlyDebts: Number(preset.monthlyDebts) || 0,
+      downPayment: Number(preset.downPayment) || 0,
+      interestRatePct: Number(preset.interestRatePct) || 0,
+      loanTermYears: Number(preset.loanTermYears) || 30,
+    });
+    if (r.maxHomePrice == null) return [];
+    return [
+      { label: "home you can afford", value: fmtUSD(r.maxHomePrice) },
+      { label: "monthly budget", value: fmtUSD(r.maxMonthlyPayment) },
+      { label: "loan amount", value: fmtUSD(r.maxLoanAmount) },
+    ];
+  }
+  const r = carAffordability({
+    monthlyBudget: Number(preset.monthlyBudget) || 0,
+    downPayment: Number(preset.downPayment) || 0,
+    tradeInValue: Number(preset.tradeInValue) || 0,
+    interestRatePct: Number(preset.interestRatePct) || 0,
+    loanTermMonths: Number(preset.loanTermMonths) || 60,
+  });
+  if (r.maxVehiclePrice == null) return [];
+  return [
+    { label: "car you can afford", value: fmtUSD(r.maxVehiclePrice) },
+    { label: "max loan", value: fmtUSD(r.maxLoanAmount) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+  ];
+}
+
+function extrasStats(preset: Record<string, unknown>): Stat[] {
+  if (preset.kind === "closing-cost") {
+    const r = closingCostEstimate(Number(preset.homePrice) || 0);
+    if (!r) return [];
+    return [
+      { label: "typical closing costs", value: fmtUSD(r.typical) },
+      { label: "low (2%)", value: fmtUSD(r.low) },
+      { label: "high (5%)", value: fmtUSD(r.high) },
+    ];
+  }
+  const r = downPaymentBreakdown(Number(preset.homePrice) || 0, Number(preset.downPaymentPct) || 0);
+  if (!r) return [];
+  return [
+    { label: "down payment", value: fmtUSD(r.downPaymentAmount) },
+    { label: "loan amount", value: fmtUSD(r.loanAmount) },
+    { label: "loan-to-value", value: fmtPct(r.ltvPct, 0) },
+  ];
 }
 
 function netWorthStats(preset: Partial<NetWorthInput>): Stat[] {

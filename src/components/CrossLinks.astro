@@ -1,0 +1,33 @@
+---
+// A compact row of cross-category "you might also need" pill links. Bridges the calculator silos.
+import { crossLinksFor } from "../data/cross-links";
+interface Props { calcId: string; }
+const { calcId } = Astro.props as Props;
+const links = crossLinksFor(calcId);
+---
+{links.length > 0 && (
+  <section class="cross">
+    <h2>Plan the bigger picture</h2>
+    <div class="pills">
+      {links.map((l) => (
+        <a class="pill" href={l.href}>{l.label}<span class="arrow" aria-hidden="true">→</span></a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .cross { padding: 26px 0; border-top: 1px solid #EEF2F0; }
+  .cross h2 { font-size: 1.5rem; margin: 0 0 16px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border-radius: 999px;
+    border: 1px solid #D8EEE6; background: #F4FAF8; color: var(--primary-dark);
+    text-decoration: none; font-weight: 600; font-size: 0.92rem;
+    transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+  }
+  .pill:hover { background: #E4F4EF; border-color: var(--primary); transform: translateY(-1px); }
+  .pill .arrow { transition: transform 150ms ease; }
+  .pill:hover .arrow { transform: translateX(2px); }
+</style>

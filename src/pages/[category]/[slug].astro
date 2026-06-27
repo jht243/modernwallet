@@ -12,6 +12,7 @@ import { linkify, plain } from "../../lib/richtext";
 import { titleCase } from "../../lib/format";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
+import CrossLinks from "../../components/CrossLinks.astro";
 
 export function getStaticPaths() {
   return SPOKES
@@ -107,7 +108,7 @@ const jsonLdApp = {
       <div class="tool-badge"><span class="dot"></span> Interactive — edit any field</div>
       <CalculatorIsland
         client:only="react"
-        calculatorId={calc.islandId}
+        calculatorId={entry.islandId ?? calc.islandId}
         initialData={entry.preset}
         heading={entry.toolHeading}
         subheading={entry.toolSubheading}
@@ -162,6 +163,8 @@ const jsonLdApp = {
         </p>
       </section>
     )}
+
+    <CrossLinks calcId={calc.id} />
   </main>
 
   <style>

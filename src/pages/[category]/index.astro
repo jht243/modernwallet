@@ -9,6 +9,7 @@ import CalculatorIsland from "../../components/CalculatorIsland";
 import { linkify, plain } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
+import CrossLinks from "../../components/CrossLinks.astro";
 
 export function getStaticPaths() {
   return CALCULATORS
@@ -127,6 +128,7 @@ const jsonLdArticle = articleSchema({
     )}
 
     <Sources sources={calc.sources} />
+    <CrossLinks calcId={calc.id} />
   </main>
 
   <style>

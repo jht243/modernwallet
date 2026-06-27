@@ -68,6 +68,9 @@ export interface SpokeEntry {
   // ---- Tool customization ----
   toolHeading?: string;
   toolSubheading?: string;
+  /** Override the island this spoke renders (defaults to the calculator's islandId). Lets a spoke
+   *  use a different tool than its category — e.g. an affordability tool under /auto-loan/. */
+  islandId?: string;
   /** Calculator-specific initial inputs for this intent. */
   preset: Record<string, unknown>;
   /** Curated sibling slugs (within the same calculator) for cross-linking. */

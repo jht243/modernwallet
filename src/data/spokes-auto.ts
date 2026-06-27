@@ -312,4 +312,45 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     preset: { vehiclePrice: 35000, downPayment: 5000, interestRatePct: 7.5, loanTermMonths: 60, extraMonthlyPayment: 0 },
     relatedSlugs: ["payoff-calculator", "amortization-schedule", "extra-payment-calculator", "early-payoff-calculator"],
   },
+
+  {
+    calculator: "auto-loan",
+    slug: "car-affordability-calculator",
+    title: "Car Affordability Calculator: How Much Car Can I Afford?",
+    metaDescription:
+      "Use our car affordability calculator to turn a monthly budget into a real price. See how much car you can afford, plus the 20/4/10 rule explained.",
+    targetKeyword: "car affordability calculator",
+    estimatedVolume: 6600,
+    estimatedKD: 39,
+    h1: "Car Affordability Calculator: How Much Car Can I Afford?",
+    islandId: "affordability",
+    intro:
+      "This car affordability calculator works backward from your monthly budget to the car price you can actually buy. Enter your target payment, down payment, APR, and loan term, and the calculator above estimates your max price and loan amount. It answers the real question: how much car can I afford without straining my budget? Remember, the sticker price you can finance is not your true cost.",
+    howItWorks:
+      "The calculator above starts with the monthly payment you choose, not a car price. It adds your down payment and uses your APR and loan term to find the largest loan that fits that payment. Then it shows the top car price within reach.\n\nA popular rule of thumb is the 20/4/10 rule: put 20% down, finance for no more than 4 years, and keep total vehicle costs at or below 10% of your gross income. Treat it as a guideline, not a hard limit. The CFPB also stresses adding insurance, taxes, registration, fuel, and maintenance on top of your loan payment. Once you settle on a price, see the [auto loan interest calculator](/auto-loan/interest-calculator/) for the true cost of borrowing, or the [auto loan payoff calculator](/auto-loan/payoff-calculator/) to plan an early payoff.",
+    commonMistakes: [
+      "Budgeting only for the loan payment. Insurance, fuel, registration, taxes, and maintenance stack on top and can rival the payment itself.",
+      "Stretching the loan term to 72 or 84 months to lower the payment. A longer term lets you afford a pricier car but costs far more interest.",
+      "Confusing the financed sticker price with your true budget. The price the calculator shows does not include ongoing ownership costs.",
+      "Skipping a down payment. A small or zero down payment raises the loan amount and the risk of owing more than the car is worth.",
+      "Using an optimistic APR. Your real rate depends on your credit, so confirm offers before trusting the affordability estimate.",
+    ],
+    workedExample:
+      "Say your monthly payment budget is $450, you have $3,000 to put down, no trade-in, a 7.5% APR, and a 60-month loan. The calculator above estimates a max car price of about $25,457, made up of your $3,000 down payment plus a loan of about $22,457. Over the full 60 months you would pay about $4,543 in interest, and your total of payments would be $27,000. That interest is the real cost of borrowing, and a longer term would push it higher.",
+    faqs: [
+      { question: "How much car can I afford on my budget?", answer: "Start with the monthly payment you can comfortably handle, then use the car affordability calculator above to convert it into a price. For example, a $450 payment, $3,000 down, 7.5% APR, and a 60-month term supports a car price of about $25,457. Always leave room for insurance, fuel, and maintenance." },
+      { question: "What is the 20/4/10 rule for buying a car?", answer: "The 20/4/10 rule is a budgeting rule of thumb: put 20% down, finance for no more than 4 years, and keep total vehicle expenses at or below 10% of your gross monthly income. The 10% covers your payment, insurance, fuel, and maintenance combined. It is a guideline, not a strict requirement." },
+      { question: "Does the financed price include all the costs of owning a car?", answer: "No. The car price you can finance is only part of the picture. The CFPB notes that taxes, registration, insurance, fuel, and maintenance add to your true cost of ownership. Budget for these on top of your loan payment so the car stays affordable." },
+      { question: "Does a longer loan term let me afford more car?", answer: "Yes, but it costs you. A longer term lowers the monthly payment, so you can finance a pricier car for the same budget. However, you pay far more interest over time, and the CFPB warns that long loans raise the risk of owing more than the car is worth. Compare terms with our [auto loan calculator](/auto-loan/)." },
+      { question: "How big a down payment should I make?", answer: "A larger down payment lowers your loan amount, your monthly payment, and your total interest. The CFPB lists a down payment and a trade-in as factors that reduce how much you need to borrow. The 20/4/10 rule of thumb suggests aiming for about 20% down." },
+    ],
+    sources: [
+      { label: "CFPB — How much can I afford to borrow for a car or auto loan?", url: "https://www.consumerfinance.gov/ask-cfpb/how-much-can-i-afford-to-borrow-for-a-car-or-auto-loan-en-751/" },
+      { label: "CFPB — How do I compare auto loan offers?", url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/" },
+    ],
+    toolHeading: "How much car can you afford?",
+    toolSubheading: "Enter your monthly budget — the tool works backward to a car price.",
+    preset: { kind: "car", monthlyBudget: 450, downPayment: 3000, tradeInValue: 0, interestRatePct: 7.5, loanTermMonths: 60 },
+    relatedSlugs: ["payoff-calculator", "interest-calculator", "extra-payment-calculator", "amortization-schedule"],
+  },
 ];

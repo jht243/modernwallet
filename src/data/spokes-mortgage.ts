@@ -617,4 +617,128 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     preset: { vehiclePrice: 500000, downPayment: 100000, interestRatePct: 6.75, loanTermMonths: 360 },
     relatedSlugs: ["piti-calculator", "affordability-calculator", "amortization-schedule"],
   },
+
+  {
+    calculator: "mortgage",
+    slug: "home-affordability-calculator",
+    title: "Home Affordability Calculator: How Much House Can I Afford",
+    metaDescription:
+      "Use our free home affordability calculator to see how much house you can afford. The 28/36 rule, your debt, and down payment all shape your budget.",
+    targetKeyword: "home affordability calculator",
+    estimatedVolume: 40000,
+    estimatedKD: 52,
+    h1: "Home Affordability Calculator: How Much House Can I Afford?",
+    islandId: "affordability",
+    intro:
+      "This home affordability calculator estimates how much house you can afford based on your income, debts, down payment, and mortgage rate. Enter your numbers in the calculator above to see a target home price and monthly payment. Lenders weigh your income against your debts to decide what you can borrow. Knowing how much house you can afford before you shop keeps your search realistic and your budget safe.",
+    howItWorks:
+      "The calculator above applies the 28/36 rule, a common guideline lenders use to gauge affordability. Under this rule, your monthly housing payment should stay at or below 28% of your gross monthly income, and your total debt payments should stay at or below 36%. Your gross income is what you earn before taxes. The lower of these two limits sets your real budget.\n\nThe housing payment here means PITI, not just principal and interest. PITI stands for principal, interest, property taxes, and insurance. If your down payment is under 20%, lenders usually add private mortgage insurance (PMI), which raises the payment. Try our [down payment calculator](/mortgage/down-payment-calculator/) and [closing cost calculator](/mortgage/closing-cost-calculator/) to plan the cash you'll need up front.",
+    commonMistakes: [
+      "Budgeting for only principal and interest. Property taxes, insurance, and PMI are part of every payment and can add hundreds of dollars a month.",
+      "Ignoring existing debt. A car loan or student loan payment shrinks your housing budget close to dollar for dollar under the 36% limit.",
+      "Treating the lender's maximum as your target. Lenders may approve a debt-to-income ratio well above 36%, but a higher ratio leaves less room for emergencies.",
+      "Using take-home pay instead of gross income. The 28/36 rule is based on income before taxes, so using net pay distorts the result.",
+      "Forgetting closing costs and a cash cushion. Stretching your down payment to the limit can leave you short on move-in day and beyond.",
+    ],
+    workedExample:
+      "Say you earn $90,000 a year, or $7,500 in gross monthly income. You pay $400 a month toward existing debt, have $40,000 for a down payment, and face a 6.5% rate on a 30-year loan. Under the 28% housing limit, your maximum monthly payment is $2,100. That is the binding limit here, so it sets your budget. With property tax near 1.1% and insurance around $1,800 a year, you can afford a home priced at about $287,000, with a loan of roughly $247,285. The $2,100 payment breaks down to about $1,563 in principal and interest, $263 in property tax, $150 in insurance, and $124 in PMI, since the down payment is under 20%.",
+    faqs: [
+      { question: "How does a home affordability calculator decide how much house I can afford?", answer: "A home affordability calculator applies the 28/36 rule to your income, debts, down payment, and rate. It caps your housing payment at 28% of gross monthly income and your total debt at 36%. The lower limit sets your maximum home price. It then includes taxes, insurance, and PMI to show a realistic monthly payment. Before you buy, [check your net worth](/net-worth/) to make sure you're financially ready." },
+      { question: "What is the 28/36 rule?", answer: "The 28/36 rule says your monthly housing payment should stay at or below 28% of gross monthly income, and all your debt payments combined should stay at or below 36%. It is a guideline, not a law. Lenders use it to estimate how much you can comfortably borrow." },
+      { question: "Can I get approved for more than the 28/36 rule allows?", answer: "Yes. Many lenders approve higher debt-to-income ratios. Fannie Mae allows up to 50% for some automated approvals. A higher ratio means a bigger payment and less cushion for emergencies, so the safer payment may be lower than the maximum you qualify for." },
+      { question: "How does existing debt affect how much house I can afford?", answer: "Existing debt lowers your home budget close to dollar for dollar. The 36% total-debt limit covers your housing payment plus car loans, student loans, and credit cards. Every $100 in other monthly debt is $100 less you can spend on housing. Once you buy, our [mortgage payoff calculator](/mortgage/payoff-calculator/) shows how extra payments shorten your loan." },
+    ],
+    sources: [
+      { label: "CFPB — What is a debt-to-income ratio?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/" },
+      { label: "CFPB — Figure out how much you want to spend", url: "https://www.consumerfinance.gov/owning-a-home/prepare/figure-out-how-much-you-want-to-spend/" },
+      { label: "Fannie Mae — Debt-to-Income Ratios (Selling Guide B3-6-02)", url: "https://selling-guide.fanniemae.com/sel/b3-6-02/debt-income-ratios" },
+    ],
+    toolHeading: "How much house can you afford?",
+    toolSubheading: "Enter your income and debts — the tool uses the 28/36 rule to find your price.",
+    preset: { kind: "home", annualIncome: 90000, monthlyDebts: 400, downPayment: 40000, interestRatePct: 6.5, loanTermYears: 30 },
+    relatedSlugs: ["down-payment-calculator", "closing-cost-calculator", "payoff-calculator", "amortization-schedule"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "down-payment-calculator",
+    title: "Down Payment Calculator: How Much You Need (+ PMI)",
+    metaDescription:
+      "Use our down payment calculator to see how much cash you need, your loan amount, and whether putting under 20% down triggers PMI.",
+    targetKeyword: "down payment calculator",
+    estimatedVolume: 18000,
+    estimatedKD: 44,
+    h1: "Down Payment Calculator",
+    islandId: "mortgage-extras",
+    intro:
+      "This down payment calculator shows how much cash you need to buy a home and whether your down payment will trigger private mortgage insurance (PMI). Enter your home price and down payment percent in the calculator above. It returns your down payment amount, your loan amount, and your loan-to-value (LTV) ratio. Here is a key surprise: you do not need 20% down. Conventional loans can go as low as 3%, and FHA loans start at 3.5%. But putting down less than 20% on a conventional loan usually means paying PMI until you build enough equity.",
+    howItWorks:
+      "The down payment calculator above uses two numbers: your home price and your down payment percent. It multiplies them to find your down payment in dollars. It then subtracts that from the price to show your loan amount. Finally, it divides the loan amount by the price to find your LTV ratio.\n\nLTV is the figure lenders watch most. A 20% down payment means an 80% LTV, which avoids PMI on a conventional loan. Anything under 20% down pushes your LTV above 80% and usually adds PMI. Once you have a price in mind, see how much you can borrow with the [home affordability calculator](/mortgage/home-affordability-calculator/), and budget the rest with the [closing cost calculator](/mortgage/closing-cost-calculator/).",
+    commonMistakes: [
+      "Assuming you must put 20% down. Conventional loans go as low as 3%, and FHA loans start at 3.5%. You can buy with far less.",
+      "Forgetting that under 20% down usually means PMI. This extra cost is added to your monthly payment until you reach 20% equity.",
+      "Budgeting only for the down payment. Closing costs are separate and due at the same time. Estimate them with the closing cost calculator.",
+      "Treating PMI as permanent. You can request cancellation at 80% LTV, and it auto-terminates at 78% LTV under federal law.",
+      "Draining all your savings into the down payment. Leave a cushion for moving, repairs, and emergencies after closing.",
+    ],
+    workedExample:
+      "Say you are buying a $400,000 home and put 10% down. Your down payment is $40,000, leaving a loan amount of $360,000. That puts your loan-to-value ratio at 90%. Because that is under 20% down, PMI is likely. If you could put down $40,000 more, your total down payment would reach $80,000, or 20%. That larger down payment would avoid PMI and lower both your loan and your lifetime interest.",
+    faqs: [
+      { question: "How much down payment do I need?", answer: "It depends on your loan type. Conventional loans can require as little as 3% down, and FHA loans require at least 3.5%. Use the down payment calculator above to turn a percent into a dollar amount for your home price. A 20% down payment is the threshold that avoids PMI on a conventional loan, but it is not required to buy." },
+      { question: "Does a down payment under 20% mean I pay PMI?", answer: "Usually, yes. On a conventional loan, a down payment under 20% means your loan-to-value is above 80%, so lenders typically require private mortgage insurance (PMI). PMI protects the lender, not you. It is added to your monthly payment until you build enough equity to remove it." },
+      { question: "When can I stop paying PMI?", answer: "You can request PMI cancellation in writing once your balance is scheduled to reach 80% of the home's original value. Your servicer must also automatically terminate PMI at 78% of the original value, as long as you are current on payments. This rule comes from the federal Homeowners Protection Act." },
+      { question: "Why does a bigger down payment cost less over time?", answer: "A bigger down payment lowers your loan amount, so you borrow less and pay interest on a smaller balance. Reaching 20% down also avoids PMI entirely. Together, that reduces both your monthly payment and the total interest you pay over the life of the loan." },
+    ],
+    sources: [
+      { label: "CFPB — What is private mortgage insurance?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/" },
+      { label: "CFPB — When can I remove PMI from my loan?", url: "https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/" },
+      { label: "HUD — Minimum down payment requirement for FHA", url: "https://answers.hud.gov/FHA/s/article/What-is-the-minimum-down-payment-requirement-for-FHA" },
+    ],
+    toolHeading: "Calculate your down payment",
+    toolSubheading: "See your down payment, loan amount, LTV, and whether PMI applies.",
+    preset: { kind: "down-payment", homePrice: 400000, downPaymentPct: 10 },
+    relatedSlugs: ["home-affordability-calculator", "closing-cost-calculator", "payoff-calculator", "amortization-schedule"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "closing-cost-calculator",
+    title: "Closing Cost Calculator: Estimate Your Total",
+    metaDescription:
+      "Use this closing cost calculator to estimate what you'll pay at closing. See typical 2-5% costs, what's included, and how to compare lender quotes.",
+    targetKeyword: "closing cost calculator",
+    estimatedVolume: 14000,
+    estimatedKD: 43,
+    h1: "Closing Cost Calculator",
+    islandId: "mortgage-extras",
+    intro:
+      "This closing cost calculator shows roughly what you'll pay at the closing table to finish buying a home. Enter your home price in the calculator above to get an instant estimate. Closing costs typically run about 2% to 5% of the price. On a $400,000 home, that means roughly $8,000 to $20,000, with a typical bill near $12,000 (about 3%). These fees cover the loan, title work, taxes, and prepaid items. Here is the key point many buyers miss: closing costs are separate from and on top of your down payment. The calculator gives a planning estimate. Your official Loan Estimate from a lender holds the real numbers.",
+    howItWorks:
+      "The closing cost calculator above multiplies your home price by a typical percentage to estimate your total. It then splits that total into the main fee categories so you can see where the money goes. On a $400,000 home with a typical 3% estimate, that is about $12,000. The rough breakdown is loan origination near $2,400, appraisal and inspection near $800, title insurance and search near $2,000, recording and transfer taxes near $2,000, prepaid taxes and insurance near $2,000, and other lender and third-party fees near $2,800.\n\nUse the result as a budgeting guide, not a final bill. After you apply, the lender must give you a Loan Estimate within three business days. That form lists your real closing costs and your estimated cash to close. You can request Loan Estimates from several lenders and compare them side by side. You can also shop separately for some services, like title work, to save money. Plan the rest of your upfront cash with the [down payment calculator](/mortgage/down-payment-calculator/) and the [home affordability calculator](/mortgage/home-affordability-calculator/).",
+    commonMistakes: [
+      "Treating closing costs as part of the down payment. They are extra money you bring on top of it.",
+      "Budgeting only for the loan fees. Title insurance, transfer taxes, and prepaid escrow items add up fast.",
+      "Skipping the lender comparison. Requesting Loan Estimates from several lenders can lower your total.",
+      "Assuming every fee is fixed. You can shop for some services, and sellers may cover part of the costs.",
+      "Treating this estimate as the final number. Your Loan Estimate has the accurate figures, not a calculator.",
+    ],
+    workedExample:
+      "Maya is buying a $400,000 home. The calculator above uses a typical 3% rate and estimates about $12,000 in closing costs. The breakdown shows loan origination near $2,400, appraisal and inspection near $800, title insurance and search near $2,000, recording and transfer taxes near $2,000, prepaid taxes and insurance near $2,000, and other fees near $2,800. Maya now knows this $12,000 is separate from her down payment. She also sees the range runs from $8,000 at 2% to $20,000 at 5%, so she requests Loan Estimates from three lenders to compare and shops for title services.",
+    faqs: [
+      { question: "How much are closing costs on a house?", answer: "Closing costs typically run about 2% to 5% of the home price. On a $400,000 home, that is roughly $8,000 to $20,000, with a typical bill near $12,000. The closing cost calculator above estimates your total based on your price." },
+      { question: "What is included in closing costs?", answer: "Closing costs include loan origination fees, appraisal and inspection, title insurance and search, recording and transfer taxes, and prepaid taxes and insurance for your escrow account. On a typical $400,000 purchase, these categories together total about $12,000." },
+      { question: "Are closing costs separate from the down payment?", answer: "Yes. Closing costs are separate from and paid on top of your down payment. The down payment goes toward the home price, while closing costs cover the loan, title, taxes, and prepaid items. Budget for both. You can plan your down payment with the [down payment calculator](/mortgage/down-payment-calculator/)." },
+      { question: "Can I lower my closing costs?", answer: "Yes, you have options. You can shop separately for some services, like title work, to save money. You can also compare Loan Estimates from several lenders, and sellers may agree to pay part of the costs." },
+      { question: "When do I get the real closing cost numbers?", answer: "Your lender must give you a Loan Estimate within three business days of your application. This form lists your actual closing costs and your estimated cash to close. The calculator above gives a planning estimate, but the Loan Estimate has the real figures." },
+    ],
+    sources: [
+      { label: "CFPB — What fees are paid when closing on a mortgage, and who pays them?", url: "https://www.consumerfinance.gov/ask-cfpb/what-fees-or-charges-are-paid-when-closing-on-a-mortgage-and-who-pays-them-en-1845/" },
+      { label: "CFPB — Loan Estimate explainer", url: "https://www.consumerfinance.gov/owning-a-home/loan-estimate/" },
+      { label: "CFPB — Get to know loan costs", url: "https://www.consumerfinance.gov/owning-a-home/explore/learn-about-loan-costs/" },
+    ],
+    toolHeading: "Estimate your closing costs",
+    toolSubheading: "Enter the home price for a typical estimate and a fee-by-fee breakdown.",
+    preset: { kind: "closing-cost", homePrice: 400000 },
+    relatedSlugs: ["down-payment-calculator", "home-affordability-calculator", "payoff-calculator", "amortization-schedule"],
+  },
 ];

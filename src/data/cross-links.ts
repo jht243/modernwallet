@@ -1,0 +1,47 @@
+// Curated cross-CALCULATOR links — the thing the audit found missing. Each calculator points to a
+// few genuinely-related tools in OTHER categories, so a persona on a life journey (buy a car → check
+// net worth; buy a home → are we ready to retire) is guided across the silo, and link equity spreads.
+
+export interface CrossLink { href: string; label: string; }
+
+export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  "auto-loan": [
+    { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/mortgage/", label: "Buying a home too?" },
+  ],
+  "mortgage": [
+    { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
+    { href: "/net-worth/", label: "Check if you're financially ready" },
+    { href: "/retirement/", label: "Stay on track for retirement" },
+  ],
+  "real-estate": [
+    { href: "/mortgage/", label: "Finance the purchase" },
+    { href: "/investing/", label: "Compare to stock-market returns" },
+    { href: "/net-worth/", label: "Track your total net worth" },
+  ],
+  "retirement": [
+    { href: "/investing/", label: "Grow your investments" },
+    { href: "/net-worth/", label: "Track your net worth" },
+    { href: "/portfolio/", label: "Check your asset mix" },
+  ],
+  "investing": [
+    { href: "/retirement/", label: "Plan your retirement" },
+    { href: "/portfolio/", label: "Balance your portfolio" },
+    { href: "/net-worth/", label: "Track your net worth" },
+  ],
+  "portfolio": [
+    { href: "/investing/", label: "Project investment growth" },
+    { href: "/retirement/", label: "Plan your retirement" },
+    { href: "/net-worth/", label: "Track your net worth" },
+  ],
+  "net-worth": [
+    { href: "/retirement/", label: "Are you on track to retire?" },
+    { href: "/investing/", label: "Grow your money" },
+    { href: "/mortgage/", label: "How much house can you afford?" },
+  ],
+};
+
+export function crossLinksFor(calcId: string): CrossLink[] {
+  return CROSS_LINKS[calcId] ?? [];
+}
