@@ -42,7 +42,7 @@ The original skill stops here for the user to approve the manifest. The auto var
 
 | Manifest state (after Phase 0 builds it) | Decision | Email status |
 |---|---|---|
-| 0 actionable rows (everything was `working as intended` / `already-fixed`) | skip remaining phases | `no-op` |
+| 0 actionable rows (everything was `working as intended` / `already-fixed`) | skip remaining phases | `no-changes` |
 | All rows in `ambiguous / needs human` | skip remaining phases | `failure` (lists the rows in details) |
 | Otherwise | auto-approve, fix **ALL** actionable rows, continue to Phase 1 | (continue) |
 
@@ -79,7 +79,9 @@ The original skill stops at Phase 8 for the user to approve push + submission. T
 
 If any of these were touched, abort the push, email failure listing the files, and let the user resolve manually.
 
-## Email report (ALWAYS sent — success, failure, or no-op)
+## Email report (ALWAYS sent — success, failure, or no-changes)
+
+> When nothing needed changing, report it as **Success Without Changes** (pass `--status no-changes`). Never write the literal "no-op" in the email, commit message, report, or `--summary`.
 
 The email must answer, without opening the dashboard: **what ran, on which repo/branch, what was fixed — or what failed and why.**
 
@@ -96,7 +98,7 @@ The email must answer, without opening the dashboard: **what ran, on which repo/
 Phase 5 result: <pass / rejected-then-fixed / hard-fail + why>.
 
 ## Re-submitted to search engines
-<IndexNow + Google Indexing URLs, or "skipped — failure / no-op">
+<IndexNow + Google Indexing URLs, or "skipped — failure / no-changes">
 
 ## Left for human (ambiguous / needs review)
 - `<url>` — <why it was not auto-fixed>
@@ -114,7 +116,7 @@ Phase 5 result: <pass / rejected-then-fixed / hard-fail + why>.
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py \
-  --status <success|failure|no-op> \
+  --status <success|failure|no-changes> \
   --skill indexing-pass-auto \
   --site "<BASE_URL discovered in Phase 0>" \
   --repo "$REPO" --branch "$BRANCH" \
@@ -123,7 +125,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
 
-For no-op / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`. The email helper is best-effort — if it fails, log to stdout but don't fail the routine.
+For no-changes / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`. The email helper is best-effort — if it fails, log to stdout but don't fail the routine.
 
 ## What this skill MUST NOT do
 

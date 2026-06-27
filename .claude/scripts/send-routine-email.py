@@ -86,7 +86,8 @@ def load_secrets() -> dict[str, str]:
 STATUS_THEME = {
     "success": {"label": "Success", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
     "failure": {"label": "Failure", "bg": "#ef4444", "fg": "#ffffff", "emoji": "✕"},
-    "no-op":   {"label": "No-op",   "bg": "#6b7280", "fg": "#ffffff", "emoji": "—"},
+    "no-op":   {"label": "Success Without Changes", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
+    "no-changes": {"label": "Success Without Changes", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
 }
 
 # Human-readable name of what ran, shown in the header band. Falls back to the
@@ -212,7 +213,7 @@ def build_html(args: argparse.Namespace, details_html: str) -> str:
     site = html.escape(args.site)
 
     # Bottom-line-up-front headline: STATUS — WHAT RAN, with the project beneath.
-    status_word = {"success": "SUCCESS", "failure": "FAILED", "no-op": "NO-OP"}.get(args.status, "DONE")
+    status_word = {"success": "SUCCESS", "failure": "FAILED", "no-op": "SUCCESS WITHOUT CHANGES", "no-changes": "SUCCESS WITHOUT CHANGES"}.get(args.status, "DONE")
     pass_label = SKILL_LABELS.get(args.skill, args.skill)
     headline = f"{status_word} &mdash; {html.escape(pass_label)}"
 
@@ -276,7 +277,7 @@ def build_html(args: argparse.Namespace, details_html: str) -> str:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--status", required=True, choices=["success", "failure", "no-op"])
+    p.add_argument("--status", required=True, choices=["success", "failure", "no-op", "no-changes"])
     p.add_argument("--skill", required=True, help="e.g. comparison-content-auto")
     p.add_argument("--site", required=True, help="e.g. layer3labs.io")
     p.add_argument("--summary", default="", help="One-line RESULT: what was created/changed, or what failed and why")
@@ -336,7 +337,7 @@ def main() -> int:
 
     # Inbox subject mirrors the header BLUF: status · what ran · project — result
     subject_emoji = STATUS_THEME[args.status]["emoji"]
-    status_word = {"success": "SUCCESS", "failure": "FAILED", "no-op": "NO-OP"}.get(args.status, "DONE")
+    status_word = {"success": "SUCCESS", "failure": "FAILED", "no-op": "SUCCESS WITHOUT CHANGES", "no-changes": "SUCCESS WITHOUT CHANGES"}.get(args.status, "DONE")
     pass_label = SKILL_LABELS.get(args.skill, args.skill)
     subject = f"{subject_emoji} {status_word} · {pass_label} · {args.site}"
     if args.summary:

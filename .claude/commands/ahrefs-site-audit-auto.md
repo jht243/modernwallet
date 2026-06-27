@@ -82,7 +82,9 @@ After all 25 (or fewer) fixes are applied:
 2. If it fails → `git reset --hard HEAD`, email failure.
 3. If it passes → stage, commit with message `chore(ahrefs-audit): auto-fix N issues across M pages`, push.
 
-## STEP 7 — Email report (ALWAYS sent — success, failure, or no-op)
+## STEP 7 — Email report (ALWAYS sent — success, failure, or no-changes)
+
+> When nothing needed changing, report it as **Success Without Changes** (pass `--status no-changes`). Never write the literal "no-op" in the email, commit message, report, or `--summary`.
 
 The email must answer, without opening the dashboard: **what ran, on which repo/branch, which issues were fixed — or what failed and why.**
 
@@ -117,7 +119,7 @@ The email must answer, without opening the dashboard: **what ran, on which repo/
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py \
-  --status <success|failure|no-op> \
+  --status <success|failure|no-changes> \
   --skill ahrefs-site-audit-auto \
   --site "$BASE_URL" \
   --repo "$REPO" --branch "$BRANCH" \
@@ -126,9 +128,9 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
 
-For no-op (clean audit) / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`.
+For no-changes (clean audit) / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`.
 
-If Ahrefs returned 0 fixable issues → status `no-op` ("Ahrefs audit clean — no fixable issues this week").
+If Ahrefs returned 0 fixable issues → status `no-changes` ("Ahrefs audit clean — no fixable issues this week").
 
 ## What this skill MUST NOT do
 

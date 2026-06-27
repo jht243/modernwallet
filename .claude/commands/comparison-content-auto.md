@@ -30,7 +30,7 @@ Run the existing phases by reading their instruction files in order:
 1. **Phase 0** — `.claude/commands/comparison-content-creator/phase-0-discover.md` — discover project facts. On any hard blocker (no content system / no SEO data / unsafe tree) → skip-ship, email failure with the blocker reason, exit 0.
 2. **Phase 1** — `phase-1-candidates.md` — candidate generation.
 3. **Phase 1b** — `phase-1b-coverage-check.md` — coverage dedup.
-   - If `0 NEW + 0 PARTIAL` survive → email a **no-op** report ("All candidates already covered; nothing to publish this run"), exit 0.
+   - If `0 NEW + 0 PARTIAL` survive → email a **Success Without Changes** report ("All candidates already covered; nothing to publish this run"), exit 0.
 4. **Phase 2** — `phase-2-score.md` — score every NEW survivor; select ALL that the data approves (Tier 1–2). No cap.
 5. **Phase 3** — `phase-3-generate.md` — generate NEW pages.
 6. **Phase 3b** — `phase-3b-enrich.md` — enrich PARTIAL pages.
@@ -46,12 +46,14 @@ The original skill's Phase 6 is `Summary + HARD HUMAN GATE, then push`. In the a
 |---|---|---|
 | Phase 5 reverted (typecheck failed) | skip push, no commit on `main` | `failure` |
 | Phase 4 marked **every** generated/enriched page `draft: true` | skip push, leave the draft commit unpushed | `failure` |
-| `0 NEW + 0 PARTIAL` came out of Phase 1b earlier (handled above) | (already exited) | `no-op` |
+| `0 NEW + 0 PARTIAL` came out of Phase 1b earlier (handled above) | (already exited) | `no-changes` |
 | Otherwise (mixed result: ≥1 page shipped non-draft) | `git push origin HEAD` (current branch) + IndexNow ping for shipped URLs (skip drafts) | `success` |
 
 **Never block on the draft outcome.** Drafts are how the original skill handles audit-failing pages — they ship as `noindex` and are skipped by sitemap/IndexNow. That's a successful run, not a failure.
 
-## Email report (ALWAYS sent — success, failure, or no-op)
+## Email report (ALWAYS sent — success, failure, or no-changes)
+
+> When nothing needed changing, report it as **Success Without Changes** (pass `--status no-changes`). Never write the literal "no-op" in the email, commit message, report, or `--summary`.
 
 The email must let a human understand the run **without opening the dashboard**. It has to answer, every time: **what ran, on which repo/branch, and what changed — or, if it failed, exactly what failed and why.**
 
@@ -74,7 +76,7 @@ Phase 4 result: <X/Y passed>; <N drafted (noindex) and why>.
 <the full Candidate Chart from Phase 1b/2 — every row, including dropped duplicates>
 
 ## IndexNow
-<URLs submitted, or "skipped — failure / no-op">
+<URLs submitted, or "skipped — failure / no-changes">
 
 ## Blocker (only if the run stopped early)
 <what stopped it and the exact reason; omit this section on success>
@@ -87,7 +89,7 @@ REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py \
-  --status <success|failure|no-op> \
+  --status <success|failure|no-changes> \
   --skill comparison-content-auto \
   --site "<BASE_URL discovered in Phase 0>" \
   --repo "$REPO" \
@@ -98,7 +100,7 @@ SHA="$(git rev-parse HEAD)"
   --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
 
-For a **no-op** (nothing to publish) or **failure** where nothing was committed, pass `--commit-sha ""` and `--commit-url ""` so the email shows "none (no changes pushed)".
+For a **no-changes** (nothing to publish) or **failure** where nothing was committed, pass `--commit-sha ""` and `--commit-url ""` so the email shows "none (no changes pushed)".
 
 The email helper is best-effort — if it fails (network, Resend outage), **log to stdout but do not error the routine**. A missed email never rolls back committed work.
 

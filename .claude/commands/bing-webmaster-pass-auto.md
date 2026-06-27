@@ -30,7 +30,7 @@ The original skill stops at the Phase 0 manifest for human approval. The auto va
 
 | Manifest state | Decision | Email status |
 |---|---|---|
-| 0 fixable technical rows (site crawl-clean, or all rows are intentional exclusions) | skip remaining phases | `no-op` |
+| 0 fixable technical rows (site crawl-clean, or all rows are intentional exclusions) | skip remaining phases | `no-changes` |
 | All fixable rows are `ambiguous / needs human` | skip remaining phases | `failure` (lists rows) |
 | Fixable rows exceed the skill's caps (40 link edits / 15 sitemap changes) | proceed with the top-N per the skill's own sort; queue the rest in the report | (continue, note in details) |
 | Otherwise | auto-approve, continue through fixes → audit → build → commit → push → Bing submit | `success` |
@@ -41,7 +41,9 @@ The skill's own blast-radius caps (40 link/href edits, 15 sitemap-entry changes)
 
 Follow the skill's commit → push → Bing-submit steps, but push the **current branch** (`git push origin HEAD`). Submit only the URLs actually changed this run, within Bing's `urlSubmissionQuota`.
 
-## Email report (ALWAYS sent — success, failure, or no-op)
+## Email report (ALWAYS sent — success, failure, or no-changes)
+
+> When nothing needed changing, report it as **Success Without Changes** (pass `--status no-changes`). Never write the literal "no-op" in the email, commit message, report, or `--summary`.
 
 The email must answer, without opening the dashboard: **what ran, on which repo/branch, what was fixed — or what failed and why.**
 
@@ -58,7 +60,7 @@ The email must answer, without opening the dashboard: **what ran, on which repo/
 Phase result: <pass / rejected-then-fixed / hard-fail + why>.
 
 ## Submitted to Bing
-<URLs submitted within quota, or "skipped — failure / no-op">
+<URLs submitted within quota, or "skipped — failure / no-changes">
 
 ## Left for human (ambiguous)
 - `<url>` — <why not auto-fixed>
@@ -76,7 +78,7 @@ Phase result: <pass / rejected-then-fixed / hard-fail + why>.
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py \
-  --status <success|failure|no-op> \
+  --status <success|failure|no-changes> \
   --skill bing-webmaster-pass-auto \
   --site "<BASE_URL discovered in STEP 1>" \
   --repo "$REPO" --branch "$BRANCH" \
@@ -85,7 +87,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
 
-For no-op (clean) / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`. The email helper is best-effort — if it fails, log to stdout but don't fail the routine.
+For no-changes (clean) / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`. The email helper is best-effort — if it fails, log to stdout but don't fail the routine.
 
 ## What this skill MUST NOT do
 

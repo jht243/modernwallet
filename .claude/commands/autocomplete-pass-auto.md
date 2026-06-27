@@ -27,7 +27,7 @@ If any check fails, **skip the run** and email a failure report. Do not commit, 
 
 Run them exactly as `.claude/commands/autocomplete-pass.md` describes (STEPs 1, 2, 3). If the user passed a chart path as `$ARGUMENTS`, skip mining and go straight to STEP 4 with that chart.
 
-For unattended seed selection (no `$ARGUMENTS` passed), the original skill's rules apply — derive 3–6 seeds from the target-keyword inventory, skipping any seed mined in the last 14 days. **If 0 fresh seeds remain → email no-op and exit 0** ("All seeds were mined within the last 14 days; nothing new to discover").
+For unattended seed selection (no `$ARGUMENTS` passed), the original skill's rules apply — derive 3–6 seeds from the target-keyword inventory, skipping any seed mined in the last 14 days. **If 0 fresh seeds remain → email Success Without Changes and exit 0** ("All seeds were mined within the last 14 days; nothing new to discover").
 
 ## STEP 4: load the resulting chart → run Phase 0 (`keyword-gap-pass/phase-0-discover.md`)
 
@@ -39,7 +39,7 @@ The original skill stops at Phase 0 for the user to approve the chart. The auto 
 
 | Chart state | Decision | Email status |
 |---|---|---|
-| 0 actionable rows (everything was duplicate / already-covered) | skip remaining phases | `no-op` |
+| 0 actionable rows (everything was duplicate / already-covered) | skip remaining phases | `no-changes` |
 | many actionable rows | process **ALL** of them — no cap | (continue) |
 | All rows have `no data` from SEMrush (heuristic-only mode) AND the project has Ahrefs MCP available | re-score the survivors against Ahrefs MCP `keywords-explorer-overview` instead of skipping | (continue, note in details) |
 | Otherwise | auto-approve, continue to Phase 1 | (continue) |
@@ -68,6 +68,8 @@ If Phase 4 audit hard-fails after 2 reworks per the original retry rule, **mark 
 
 ## Email report (always sent)
 
+> When nothing needed changing, report it as **Success Without Changes** (pass `--status no-changes`). Never write the literal "no-op" in the email, commit message, report, or `--summary`.
+
 The email must answer, without opening the dashboard: **what ran, on which repo/branch, what was created/changed — or what failed and why.**
 
 **Step 1 — write `/tmp/autocomplete-pass-auto-<YYYY-MM-DD>.md`** with these EXACT headings (write "None this run" if empty):
@@ -86,7 +88,7 @@ The email must answer, without opening the dashboard: **what ran, on which repo/
 <the keyword chart with Coverage + Verdict columns>
 
 ## IndexNow
-<URLs submitted, or "skipped — failure / no-op">
+<URLs submitted, or "skipped — failure / no-changes">
 
 ## Blocker (only if the run stopped early)
 <what stopped it and the exact reason; omit on success>
@@ -98,7 +100,7 @@ The email must answer, without opening the dashboard: **what ran, on which repo/
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py \
-  --status <success|failure|no-op> \
+  --status <success|failure|no-changes> \
   --skill autocomplete-pass-auto \
   --site "<BASE_URL discovered in STEP 1>" \
   --repo "$REPO" --branch "$BRANCH" \
@@ -107,7 +109,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
 
-For no-op / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`.
+For no-changes / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`.
 
 ## What this skill MUST NOT do
 
