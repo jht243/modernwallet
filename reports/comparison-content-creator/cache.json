@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "lastRun": "2026-06-27",
+  "dropped": [
+    { "slug": "etf-vs-index-fund", "optionA": "ETF", "optionB": "Index Fund", "reason": "KD 37 — too competitive for current DR", "score": 0.393 },
+    { "slug": "heloc-vs-home-equity-loan", "optionA": "HELOC", "optionB": "Home Equity Loan", "reason": "KD 45 — high-authority incumbents dominate SERP", "score": 0.356 },
+    { "slug": "active-vs-passive-investing", "optionA": "Active Investing", "optionB": "Passive Investing", "reason": "KD 26 + low vol (600) — not enough return", "score": 0.318 },
+    { "slug": "dollar-cost-averaging-vs-lump-sum", "optionA": "Dollar-Cost Averaging", "optionB": "Lump Sum Investing", "reason": "KD 37 + vol 450 — too hard for the volume", "score": 0.255 },
+    { "slug": "heloc-vs-cash-out-refinance", "optionA": "HELOC", "optionB": "Cash-Out Refinance", "reason": "KD 46 — too competitive", "score": 0.200 },
+    { "slug": "rental-property-vs-stock-market", "optionA": "Rental Property", "optionB": "Stock Market", "reason": "Vol 40 — too low volume", "score": 0.119 },
+    { "slug": "auto-loan-vs-paying-cash", "optionA": "Auto Loan", "optionB": "Paying Cash", "reason": "Zero search volume reported", "score": 0 }
+  ],
+  "published": []
+}
