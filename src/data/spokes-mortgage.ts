@@ -66,7 +66,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Calculate your mortgage payoff",
     toolSubheading: "Add an extra monthly payment to see your new payoff date and interest saved.",
     preset: { vehiclePrice: 300000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 200 },
-    relatedSlugs: ["extra-payment-calculator", "early-payoff-calculator", "amortization-schedule"],
+    relatedSlugs: ["extra-payment-calculator", "refinance-calculator", "amortization-schedule"],
   },
 
   {
@@ -127,7 +127,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "How much will extra payments save?",
     toolSubheading: "Enter your mortgage, then add an extra monthly amount to see the savings.",
     preset: { vehiclePrice: 350000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 300 },
-    relatedSlugs: ["payoff-calculator", "early-payoff-calculator", "amortization-schedule"],
+    relatedSlugs: ["payoff-calculator", "refinance-calculator", "amortization-schedule"],
   },
 
   {
@@ -188,7 +188,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Generate your mortgage amortization schedule",
     toolSubheading: "Enter your loan to see the full month-by-month principal and interest breakdown.",
     preset: { vehiclePrice: 320000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 0 },
-    relatedSlugs: ["payoff-calculator", "extra-payment-calculator", "early-payoff-calculator"],
+    relatedSlugs: ["payoff-calculator", "extra-payment-calculator", "piti-calculator"],
   },
 
   {
@@ -244,6 +244,372 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Should you pay off your mortgage early?",
     toolSubheading: "Enter your balance as the home price, set down payment to $0, and add an extra payment.",
     preset: { vehiclePrice: 250000, downPayment: 0, interestRatePct: 6.0, loanTermMonths: 360, extraMonthlyPayment: 500 },
+    relatedSlugs: ["payoff-calculator", "refinance-calculator", "amortization-schedule"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "piti-calculator",
+    title: "PITI Mortgage Calculator: All-In Monthly Payment",
+    metaDescription:
+      "Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.",
+    targetKeyword: "mortgage calculator with taxes and insurance",
+    estimatedVolume: 8100,
+    estimatedKD: 48,
+    h1: "PITI Mortgage Calculator",
+    intro:
+      "PITI stands for Principal, Interest, Taxes, and Insurance — the four components that make up your true all-in monthly mortgage payment. The calculator above shows your principal and interest (P&I); add your estimated property taxes and homeowner's insurance below to build your full PITI. Here is why it matters: lenders use your PITI — not just P&I — when applying the 28% front-end debt-to-income (DTI) rule, so your PITI must stay under 28% of your gross monthly income to qualify for most conventional loans.",
+    howItWorks:
+      "PITI is calculated by adding four line items: principal and interest from your amortization schedule, monthly property taxes (annual tax ÷ 12), monthly homeowner's insurance (annual premium ÷ 12), and PMI if your down payment is less than 20%. The calculator above handles the P&I portion; the remaining components depend on your location and loan structure.\n\nProperty taxes vary widely by state and county. The national average is roughly 1.1% of assessed home value per year, according to the Tax Foundation, but ranges from under 0.3% in Hawaii to over 2.1% in New Jersey. Private mortgage insurance (PMI) typically runs 0.5–1.5% of the loan amount annually for borrowers with less than 20% down, according to the CFPB. PMI is split into 12 monthly installments. Once your equity reaches 20%, you can request PMI cancellation under the Homeowners Protection Act; at 22% equity it is automatically terminated.",
+    commonMistakes: [
+      "Budgeting only for principal and interest. Taxes and insurance together often add $300–$600 or more per month on a median-priced home, which can push PITI above the lender's 28% front-end limit.",
+      "Forgetting PMI when putting less than 20% down. On a $350,000 loan at 1% annual PMI, that adds $292 per month — a cost that disappears once you reach 20% equity.",
+      "Using the list-price assessed value to estimate taxes. Assessed value can differ significantly from market price depending on your county. Ask the listing agent for the seller's current tax bill.",
+      "Ignoring homeowner's insurance cost differences by location. Coastal or flood-prone areas can carry premiums three to four times the national average. Get a quote before finalizing your budget.",
+      "Not asking about escrow. Most lenders escrow taxes and insurance, collecting them monthly as part of your payment. If yours does not, you must budget to pay those bills yourself at year-end.",
+    ],
+    workedExample:
+      "Say you buy a $400,000 home with 20% down ($80,000), leaving a $320,000 loan at 6.75% for 30 years. P&I works out to $2,075.68 per month. Property taxes at the national average of 1.1% on $400,000 add $366.67 per month. Homeowner's insurance at a typical $1,500 per year adds $125 per month. Because you put 20% down, there is no PMI. Total PITI: $2,567.35 per month. To qualify conventionally under the 28% front-end rule, you would need at least $9,169 per month in gross income ($2,567.35 ÷ 0.28).",
+    faqs: [
+      {
+        question: "What does PITI stand for in a mortgage?",
+        answer:
+          "PITI stands for Principal, Interest, Taxes, and Insurance. These four items make up your total monthly housing cost. Lenders use your full PITI payment — not just principal and interest — when calculating your front-end debt-to-income ratio.",
+      },
+      {
+        question: "What is the 28% rule for PITI?",
+        answer:
+          "The 28% rule says your PITI should not exceed 28% of your gross monthly income. This is the conventional front-end DTI limit used by most lenders. For example, if you earn $8,000 per month before taxes, your PITI should stay at or below $2,240.",
+      },
+      {
+        question: "How much is PMI and when can I remove it?",
+        answer:
+          "PMI typically costs 0.5–1.5% of your loan amount per year, according to the CFPB. You can request cancellation once your equity reaches 20% of the original purchase price. Under the federal Homeowners Protection Act, your lender must automatically cancel PMI when your loan balance reaches 78% of the original value.",
+      },
+      {
+        question: "How do I estimate property taxes for my PITI?",
+        answer:
+          "Divide the annual property tax bill by 12. If you do not have the actual tax bill, use the county's current millage rate applied to the assessed value. The national average is about 1.1% of assessed value per year, per the Tax Foundation, but local rates vary significantly.",
+      },
+      {
+        question: "Is homeowner's insurance required for a mortgage?",
+        answer:
+          "Yes. Nearly all lenders require homeowner's insurance for the life of the loan. The premium varies by location, home value, coverage level, and risk factors like flood zone or fire risk. Your lender will typically collect it monthly through your escrow account.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — What is private mortgage insurance?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/" },
+      { label: "CFPB — Understand loan options", url: "https://www.consumerfinance.gov/owning-a-home/loan-options/" },
+      { label: "Tax Foundation — Property Taxes by State", url: "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/" },
+    ],
+    toolHeading: "Calculate your PITI mortgage payment",
+    toolSubheading: "Enter your home price and down payment to see principal and interest, then add taxes and insurance for your full PITI.",
+    preset: { vehiclePrice: 400000, downPayment: 80000, interestRatePct: 6.75, loanTermMonths: 360 },
+    relatedSlugs: ["affordability-calculator", "amortization-schedule", "payoff-calculator"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "affordability-calculator",
+    title: "Mortgage Affordability Calculator: How Much House?",
+    metaDescription:
+      "Find out how much house you can afford based on your income, debts, and down payment. Uses the 28/36 DTI rules lenders actually apply.",
+    targetKeyword: "mortgage affordability calculator",
+    estimatedVolume: 22000,
+    estimatedKD: 55,
+    h1: "Mortgage Affordability Calculator",
+    intro:
+      "Your maximum affordable home price is determined by two lender rules: your PITI must stay at or below 28% of gross monthly income (front-end DTI), and all monthly debts combined must stay at or below 36% of gross monthly income (back-end DTI). The calculator above shows the principal-and-interest payment for any home price; use the 28% front-end limit to work backwards to a purchase price that fits your income. Here is the non-obvious insight: keeping your DTI under 36% does not just get you approved — lenders often tier interest rates by DTI, meaning a lower DTI can earn you a better rate, not merely a lender's yes.",
+    howItWorks:
+      "Lenders measure affordability with two debt-to-income ratios, according to the CFPB and Fannie Mae guidelines. The front-end DTI compares your monthly PITI payment to your gross monthly income; conventional lenders typically cap this at 28%. The back-end DTI adds all monthly debt payments (car loans, student loans, minimum credit card payments, and the new PITI) and divides by gross income; conventional lenders typically cap this at 36%, though Fannie Mae automated underwriting can approve up to 45-50% for strong borrowers. FHA loans allow higher DTIs — often up to 43% and in some cases 50% — making them more accessible for buyers with existing debt.\n\nTo find your maximum home price, start with 28% of your gross monthly income as your PITI budget, subtract estimated taxes and insurance, and the remainder is your maximum P&I. Enter that P&I into the calculator to find the corresponding loan amount, then add your down payment to get your maximum purchase price.",
+    commonMistakes: [
+      "Confusing gross income with take-home pay. DTI is always calculated on gross (pre-tax) monthly income, not the amount deposited in your bank account.",
+      "Omitting minimum payments on all debts. Student loans, car payments, and even zero-balance credit cards with minimum payment requirements all count in your back-end DTI.",
+      "Forgetting that PITI — not just P&I — goes into the DTI calculation. Taxes and insurance can add hundreds of dollars per month, reducing the loan size you can qualify for.",
+      "Buying at the maximum you qualify for. Qualifying for the max does not mean it is comfortable. A lower payment leaves room for maintenance, savings, and life changes.",
+      "Ignoring the impact of the down payment on PMI. A down payment below 20% adds PMI to your PITI, which increases your front-end DTI and reduces how much loan you can qualify for.",
+    ],
+    workedExample:
+      "Suppose you earn $7,500 gross per month and have $400 per month in existing debt payments (car loan + student loan minimum). At the 28% front-end limit, your maximum PITI is $2,100. Subtract $350 for taxes and $125 for insurance, leaving $1,625 for P&I. At 6.75% for 30 years, a $1,625 P&I payment corresponds to roughly a $250,000 loan. With a $70,000 down payment, your maximum purchase price is about $320,000. Check the back-end: $2,100 PITI + $400 existing debt = $2,500, which is 33% of $7,500 gross — comfortably under the 36% back-end cap.",
+    faqs: [
+      {
+        question: "How much house can I afford on my income?",
+        answer:
+          "A common starting point: your total PITI payment should not exceed 28% of your gross monthly income. On $6,000 per month in gross income, that is $1,680 for PITI. After subtracting taxes and insurance, the remaining P&I determines the loan amount you can afford at current rates.",
+      },
+      {
+        question: "What DTI do lenders use for mortgage approval?",
+        answer:
+          "Conventional lenders typically use 28% front-end and 36% back-end DTI as standard guidelines, per Fannie Mae. Automated underwriting can approve up to 45-50% back-end DTI for strong borrowers. FHA allows up to 43% and sometimes 50% back-end DTI, according to HUD.",
+      },
+      {
+        question: "Does a lower DTI get me a better mortgage rate?",
+        answer:
+          "Yes, in many cases. Lenders often use risk-based pricing that assigns better rates to lower-DTI borrowers. A DTI well under 36% signals stronger repayment capacity and can reduce your rate by 0.125–0.25%, saving thousands over the life of the loan.",
+      },
+      {
+        question: "What counts as debt in my DTI calculation?",
+        answer:
+          "All monthly minimum debt payments count: car loans, student loans, personal loans, minimum credit card payments, child support, and alimony. The new mortgage PITI is also included in the back-end DTI. Income-driven student loan payments use the actual monthly payment amount in the calculation.",
+      },
+      {
+        question: "How does an FHA loan change my affordability?",
+        answer:
+          "FHA loans allow higher DTI ratios — often up to 43%, and in some cases 50%, according to HUD — which can increase your maximum purchase price if you carry existing debt. See our [FHA loan calculator](/mortgage/fha-calculator/) for FHA-specific payment estimates including mortgage insurance premiums.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — How do lenders decide how much to lend?", url: "https://www.consumerfinance.gov/ask-cfpb/how-do-lenders-decide-how-much-money-to-lend-me-en-19/" },
+      { label: "Fannie Mae — Debt-to-Income Ratios", url: "https://www.fanniemae.com/media/document/pdf/selling-guide-dti.pdf" },
+      { label: "HUD — FHA Loan Eligibility", url: "https://www.hud.gov/buying/loans" },
+    ],
+    toolHeading: "See what your target home price costs monthly",
+    toolSubheading: "Enter a home price and down payment to find the P&I payment, then apply the 28% front-end rule to check affordability.",
+    preset: { vehiclePrice: 350000, downPayment: 70000, interestRatePct: 6.75, loanTermMonths: 360 },
+    relatedSlugs: ["piti-calculator", "fha-calculator", "payoff-calculator"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "refinance-calculator",
+    title: "Mortgage Refinance Calculator: Break-Even Analysis",
+    metaDescription:
+      "Calculate your refinance break-even point: compare your current rate to a new rate, see monthly savings, and find out how long before closing costs pay off.",
+    targetKeyword: "mortgage refinance calculator",
+    estimatedVolume: 9900,
+    estimatedKD: 52,
+    h1: "Mortgage Refinance Calculator",
+    intro:
+      "A mortgage refinance is worth it only if you stay in the home long enough to recoup the closing costs through monthly savings — this is called the break-even point. Enter your new loan details in the calculator above to see the payment, then subtract it from your current payment to find your monthly savings. Divide your total closing costs by that monthly savings to get your break-even in months. The non-obvious trap: even if you lower your rate, resetting to a new 30-year term can cost you more in total interest than staying on your existing loan — always compare remaining-term options like a 20-year or 15-year refinance.",
+    howItWorks:
+      "Refinancing replaces your existing mortgage with a new one, typically at a lower interest rate or different term. Your new monthly payment is determined by the new loan amount (current balance + any rolled-in costs), the new interest rate, and the new term. Monthly savings equal your old P&I minus your new P&I.\n\nClosing costs typically run 2–5% of the loan amount, according to the CFPB. These include origination fees, appraisal, title insurance, and prepaid interest. Break-even is calculated as: total closing costs ÷ monthly savings = months to break even. If you plan to sell or refinance again before hitting that month, the refinance costs you money net. Some lenders offer no-closing-cost refinances, but the costs are rolled into the rate or loan balance — there is no free lunch, just a different trade-off.",
+    commonMistakes: [
+      "Resetting to a 30-year term without checking total interest. A 30-year refinance of a loan you have already paid for 8 years extends your payoff by 8 years and can add tens of thousands in interest even at a lower rate.",
+      "Ignoring closing costs when calculating savings. A half-point rate drop saves real money monthly, but $8,000 in closing costs means it takes years to come out ahead.",
+      "Refinancing right before a planned move. If your break-even is 36 months and you move in 24, you paid closing costs for nothing.",
+      "Not shopping at least three lenders. The CFPB recommends comparing Loan Estimates from multiple lenders because rates and fees vary significantly for the same borrower profile.",
+      "Cash-out refinancing for depreciating purchases. Tapping equity to buy cars or pay vacations converts unsecured spending into 30 years of mortgage interest.",
+    ],
+    workedExample:
+      "You have a $280,000 balance at 7.25% with 22 years left. Your current P&I is $2,124. A lender offers a 30-year refinance at 5.75% with $7,000 in closing costs. Your new P&I would be $1,634 per month, saving $490 monthly. Break-even: $7,000 ÷ $490 = 14.3 months. If you plan to stay 5+ years, the refinance makes sense on monthly cash flow. But on the original 22-year remaining term, you would pay $145,608 more in total interest on the new 30-year loan versus finishing the old one — so a 20-year refinance at 5.75% (P&I: $1,948, break-even: 21 months) is worth comparing.",
+    faqs: [
+      {
+        question: "When does it make sense to refinance a mortgage?",
+        answer:
+          "Refinancing makes sense when your monthly savings from a lower rate exceed closing costs before you plan to move or refinance again. A common rule of thumb is that a rate drop of 1% or more is worth investigating, but the actual math depends on your break-even period and how long you plan to stay.",
+      },
+      {
+        question: "How much do refinance closing costs typically run?",
+        answer:
+          "Refinance closing costs typically run 2–5% of the loan amount, according to the CFPB. On a $300,000 loan, that is $6,000–$15,000. Costs include origination fees, appraisal, title search, and prepaid interest. Always get a Loan Estimate to see itemized costs before committing.",
+      },
+      {
+        question: "What is a no-closing-cost refinance?",
+        answer:
+          "A no-closing-cost refinance rolls closing costs into your loan balance or offsets them with a higher interest rate (a lender credit). You pay nothing upfront, but you pay more over time through a larger balance or higher rate. It works best if you plan to refinance again soon or are short on cash.",
+      },
+      {
+        question: "Does refinancing reset my mortgage clock?",
+        answer:
+          "Yes, if you choose a new 30-year term. Restarting the clock means more early payments go to interest, and your payoff date moves further out. Consider a shorter term like 20 or 15 years to avoid extending your debt while still lowering your rate. See our [amortization schedule](/mortgage/amortization-schedule/) to compare total interest by term.",
+      },
+      {
+        question: "How do I calculate my refinance break-even point?",
+        answer:
+          "Divide your total closing costs by your monthly payment savings. For example, $7,000 in closing costs and $350 monthly savings yields a 20-month break-even. If you stay in the home at least that long, the refinance pays off. If you move sooner, you come out behind.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — Should I refinance my mortgage?", url: "https://www.consumerfinance.gov/ask-cfpb/when-is-it-a-good-time-to-refinance-my-mortgage-en-1939/" },
+      { label: "CFPB — What are closing costs?", url: "https://www.consumerfinance.gov/ask-cfpb/what-are-closing-costs-en-183/" },
+      { label: "Freddie Mac — Refinancing", url: "https://myhome.freddiemac.com/refinancing" },
+    ],
+    toolHeading: "Model your refinance payment",
+    toolSubheading: "Enter your new loan amount and rate to see P&I, then compare it to your current payment to find your break-even.",
+    preset: { vehiclePrice: 350000, downPayment: 0, interestRatePct: 5.75, loanTermMonths: 360 },
     relatedSlugs: ["payoff-calculator", "extra-payment-calculator", "amortization-schedule"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "fha-calculator",
+    title: "FHA Loan Calculator: Payment with MIP",
+    metaDescription:
+      "Calculate your FHA loan payment including upfront and annual mortgage insurance premiums (MIP). See how 3.5% down affects your true monthly cost.",
+    targetKeyword: "FHA loan calculator",
+    estimatedVolume: 6600,
+    estimatedKD: 45,
+    h1: "FHA Loan Calculator",
+    intro:
+      "An FHA loan requires a minimum 3.5% down payment for borrowers with a 580 or higher credit score and carries two layers of mortgage insurance: a one-time upfront MIP of 1.75% of the loan amount (typically financed into the loan) and an annual MIP of 0.55% for most 30-year loans with less than 10% down (per HUD's 2023 guidelines), divided into 12 monthly installments. The calculator above shows principal and interest on your loan amount after financing the upfront MIP. The critical non-obvious fact: unlike conventional PMI, FHA annual MIP remains for the life of the loan if you put less than 10% down — it does not automatically cancel at 20% equity, so many FHA borrowers refinance to conventional once they reach 20% to shed the ongoing insurance cost.",
+    howItWorks:
+      "FHA loans are insured by the Federal Housing Administration, part of HUD, which allows lenders to offer more lenient qualifying terms. With a 580+ credit score, you need only 3.5% down. With a 500–579 credit score, the minimum down payment rises to 10%.\n\nThe upfront MIP (UFMIP) equals 1.75% of the base loan amount. If you do not pay it at closing, it is added to your loan balance. On a $337,750 loan (3.5% down on $350,000), the UFMIP is $5,910.63, making your total financed amount $343,660.63. The annual MIP for a 30-year loan with less than 10% down is 0.55% of the average outstanding balance, per HUD. Divide by 12 to get the monthly MIP — roughly $157 per month on that loan. Together, P&I plus monthly MIP is your true FHA monthly housing cost.",
+    commonMistakes: [
+      "Assuming FHA MIP cancels at 20% equity like conventional PMI. For loans with less than 10% down originated after June 2013, FHA annual MIP stays for the full loan term per HUD rules — you must refinance to a conventional loan to remove it.",
+      "Forgetting to add the UFMIP to the loan amount. If you finance the upfront MIP, your loan balance is 1.75% larger than the purchase price minus down payment.",
+      "Not comparing the true cost to conventional PMI. At higher credit scores (720+), conventional PMI can be cheaper than FHA MIP, and conventional PMI cancels at 20% equity.",
+      "Using FHA limits without checking local maximums. FHA sets loan limits by county. In high-cost areas the 2024 ceiling is $1,149,825; in lower-cost areas it can be as low as $498,257. You cannot borrow above your county's limit.",
+      "Overlooking FHA streamline refinances. Once you have an FHA loan, an FHA streamline refinance requires less documentation and no new appraisal, making it easier to lower your rate later.",
+    ],
+    workedExample:
+      "You buy a $350,000 home with 3.5% down ($12,250). Your base loan is $337,750. The UFMIP at 1.75% is $5,910.63, financed into the loan for a total balance of $343,660.63. At 6.5% for 30 years, P&I is $2,172.14 per month. Annual MIP at 0.55% on $343,660.63 is $1,890.13 per year, or $157.51 per month. Total monthly payment (P&I + MIP): $2,329.65. By contrast, a conventional loan at 6.75% on the same home with 3.5% down and PMI at 1.0% annually would run $2,211 P&I plus $276 PMI = $2,487 per month initially — more per month, but PMI cancels once you reach 20% equity.",
+    faqs: [
+      {
+        question: "What is FHA mortgage insurance and how long do I pay it?",
+        answer:
+          "FHA mortgage insurance has two parts: a one-time upfront MIP of 1.75% of the loan amount, and an annual MIP charged monthly. For 30-year loans with less than 10% down, annual MIP continues for the life of the loan per HUD rules. With 10% or more down, annual MIP cancels after 11 years.",
+      },
+      {
+        question: "What credit score do I need for an FHA loan?",
+        answer:
+          "You need a 580 or higher credit score to qualify for the 3.5% minimum down payment. With a score between 500 and 579, FHA requires a 10% down payment. Scores below 500 do not qualify for FHA financing, per HUD guidelines.",
+      },
+      {
+        question: "How does FHA compare to conventional for first-time buyers?",
+        answer:
+          "FHA offers a lower down payment (3.5% vs. 5% for most conventional loans) and accepts lower credit scores. But FHA MIP can be more expensive long-term than conventional PMI, especially if you have strong credit. Once you have 20% equity, conventional loans let you drop PMI — FHA does not unless you refinance.",
+      },
+      {
+        question: "What are the FHA loan limits for 2024?",
+        answer:
+          "FHA loan limits vary by county. For 2024, the national floor is $498,257 for a single-family home in lower-cost areas. The ceiling in high-cost areas is $1,149,825. Check HUD's website for your specific county limit before shopping for a home.",
+      },
+      {
+        question: "Can I refinance out of FHA to remove MIP?",
+        answer:
+          "Yes. Once you reach 20% equity, you can refinance into a conventional loan and eliminate MIP entirely. This is one of the most common strategies for FHA borrowers, especially after home values rise. Compare the cost of refinancing against the ongoing MIP savings to find your break-even. See our [refinance calculator](/mortgage/refinance-calculator/) for the analysis.",
+      },
+    ],
+    sources: [
+      { label: "HUD — FHA Mortgage Insurance", url: "https://www.hud.gov/program_offices/housing/fhahistory" },
+      { label: "HUD — FHA Mortgage Insurance Premiums", url: "https://www.hud.gov/sites/dfiles/OCHCO/documents/2023-07ml.pdf" },
+      { label: "CFPB — FHA Loans", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-an-fha-loan-en-1965/" },
+    ],
+    toolHeading: "Calculate your FHA loan payment",
+    toolSubheading: "Enter your home price with 3.5% down to see principal and interest, then add monthly MIP for your true FHA cost.",
+    preset: { vehiclePrice: 350000, downPayment: 12250, interestRatePct: 6.5, loanTermMonths: 360 },
+    relatedSlugs: ["va-loan-calculator", "piti-calculator", "affordability-calculator"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "va-loan-calculator",
+    title: "VA Loan Calculator: Payment with Funding Fee",
+    metaDescription:
+      "Calculate your VA loan payment with no down payment and no PMI. Includes VA funding fee details for veterans, active duty, and surviving spouses.",
+    targetKeyword: "VA loan calculator",
+    estimatedVolume: 5400,
+    estimatedKD: 44,
+    h1: "VA Loan Calculator",
+    intro:
+      "VA loans require no down payment and no private mortgage insurance for eligible veterans, active-duty service members, and surviving spouses — making them the most powerful home-buying benefit available to eligible borrowers. Instead of PMI, VA loans carry a one-time funding fee of 2.15% of the loan amount for first-time use with 0% down (2024 rate per VA.gov), which is typically financed into the loan. The non-obvious advantage: VA loans consistently carry the lowest average interest rates of any major loan type — historically 0.25–0.5% lower than conventional rates according to Freddie Mac's Primary Mortgage Market Survey — so the no-PMI and lower-rate combination saves eligible borrowers thousands of dollars per year.",
+    howItWorks:
+      "The VA Home Loan program is guaranteed by the U.S. Department of Veterans Affairs, which allows VA-approved lenders to offer favorable terms with no down payment requirement and no PMI. The guarantee reduces lender risk, which is why rates run lower than conventional.\n\nThe VA funding fee replaces PMI as the program's cost-recovery mechanism. For first-time use with 0% down, the fee is 2.15% of the loan amount. For subsequent use, it rises to 3.3%. With a 5% or more down payment, the fee drops to 1.5% (first use) or 3.3% (subsequent use). Service members receiving VA disability compensation of any percentage are exempt from the funding fee entirely, a significant savings. The funding fee is added to the loan balance if not paid at closing, which slightly increases your monthly P&I.",
+    commonMistakes: [
+      "Assuming VA loans are harder to get than conventional. VA loans have no minimum credit score set by VA (though lenders set their own, typically 580–620) and no maximum DTI set by VA — making them accessible to borrowers who might not qualify conventionally.",
+      "Paying the funding fee out of pocket when you may be exempt. Veterans with a VA disability rating of any level are exempt from the funding fee. Surviving spouses of veterans who died in service or from service-connected disability are also exempt. Always verify your status before closing.",
+      "Not shopping lenders. VA rates vary by lender even within the same loan type. The CFPB recommends comparing at least three lenders to ensure you get the best rate and fees.",
+      "Using a VA loan on a home that fails VA appraisal. VA appraisals include minimum property requirements (MPRs) beyond standard market value. Homes with major safety or structural issues can fail VA appraisal, so inspect thoroughly before making an offer.",
+      "Confusing VA loan entitlement with a loan limit. VA removed loan limits for eligible borrowers with full entitlement in 2020 — you can borrow as much as a lender will approve with no down payment, assuming your income and credit qualify.",
+    ],
+    workedExample:
+      "You are a first-time VA loan user buying a $400,000 home with 0% down. Your base loan is $400,000. The funding fee at 2.15% is $8,600, financed into the loan for a total balance of $408,600. At 6.25% for 30 years, P&I is $2,516.75 per month. There is no PMI. Compare to a conventional loan on the same home with 5% down ($20,000): base loan $380,000 at 6.75% with 0.9% PMI gives P&I of $2,464.78 plus PMI of $285 = $2,749.78 per month, and you had to bring $20,000 to closing. The VA loan costs $233 less per month even with the higher balance, and required no down payment.",
+    faqs: [
+      {
+        question: "Who is eligible for a VA home loan?",
+        answer:
+          "Eligible borrowers include veterans, active-duty service members, National Guard and Reserve members who meet service requirements, and surviving spouses of veterans who died in service or from a service-connected disability. VA.gov's eligibility page has the specific service duration requirements for each category.",
+      },
+      {
+        question: "What is the VA funding fee and can it be waived?",
+        answer:
+          "The VA funding fee is a one-time charge of 2.15% of the loan amount for first-time use with 0% down (2024 rates). It can be financed into the loan or paid at closing. The fee is waived entirely for veterans receiving VA disability compensation of any rating and for eligible surviving spouses.",
+      },
+      {
+        question: "Do VA loans have PMI?",
+        answer:
+          "No. VA loans have no private mortgage insurance requirement, regardless of your down payment. This is one of the program's most significant financial benefits. The VA funding fee (paid once) serves a similar cost-recovery function for the program but is far less expensive than years of monthly PMI.",
+      },
+      {
+        question: "Are VA loan rates really lower than conventional rates?",
+        answer:
+          "Yes, historically. Freddie Mac's Primary Mortgage Market Survey data consistently shows VA loan rates averaging 0.25–0.5% lower than conventional rates. The VA guarantee reduces lender risk, which translates directly into better pricing for borrowers.",
+      },
+      {
+        question: "Can I use a VA loan more than once?",
+        answer:
+          "Yes. You can use VA loan benefits multiple times as long as your entitlement is restored. Entitlement is typically restored when you sell the home and repay the prior VA loan in full. For subsequent use with 0% down, the funding fee increases to 3.3%. See our [affordability calculator](/mortgage/affordability-calculator/) to plan your next purchase.",
+      },
+    ],
+    sources: [
+      { label: "VA.gov — VA Home Loan Funding Fee", url: "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/" },
+      { label: "VA.gov — VA Home Loan Eligibility", url: "https://www.va.gov/housing-assistance/home-loans/eligibility/" },
+      { label: "Freddie Mac — Primary Mortgage Market Survey", url: "https://www.freddiemac.com/pmms" },
+    ],
+    toolHeading: "Calculate your VA loan payment",
+    toolSubheading: "Enter your home price with 0% down to see your VA loan P&I. Add 2.15% of the loan to the price to account for the financed funding fee.",
+    preset: { vehiclePrice: 400000, downPayment: 0, interestRatePct: 6.25, loanTermMonths: 360 },
+    relatedSlugs: ["fha-calculator", "piti-calculator", "affordability-calculator"],
+  },
+
+  {
+    calculator: "mortgage",
+    slug: "interest-only-calculator",
+    title: "Interest-Only Mortgage Calculator",
+    metaDescription:
+      "Calculate your interest-only mortgage payment and see how the payment jumps when the IO period ends. Understand the risks before choosing an IO loan.",
+    targetKeyword: "interest only mortgage calculator",
+    estimatedVolume: 4400,
+    estimatedKD: 41,
+    h1: "Interest-Only Mortgage Calculator",
+    intro:
+      "An interest-only (IO) mortgage payment covers only the interest due each month — none of your payment reduces the principal balance during the IO period, which typically lasts 5 to 10 years. The calculator above shows the principal-and-interest payment for your loan; your IO payment is simply the monthly interest portion alone (loan balance × annual rate ÷ 12). When the IO period ends, the full remaining balance — unchanged from day one — amortizes over the remaining term, causing a significant payment increase. The critical risk: because IO loans build zero equity during the IO period, a drop in home values can leave you underwater with no equity buffer.",
+    howItWorks:
+      "During the interest-only period, your monthly payment equals loan balance × (annual interest rate ÷ 12). On a $400,000 loan at 6.75%, that is $400,000 × (0.0675 ÷ 12) = $2,250 per month. You pay $2,250 every month for the IO period and still owe $400,000 when it ends.\n\nAfter the IO period, the full balance must amortize over the remaining term. If you had a 30-year IO loan with a 10-year IO period, the $400,000 balance amortizes over the remaining 20 years (240 months) at the then-current rate. At 6.75%, that payment jumps to $3,044 per month — a 35% increase. If the loan is also adjustable-rate, the rate may be higher at that point, compounding the payment shock.\n\nTotal interest paid over the life of an IO loan significantly exceeds that of a fully amortizing loan because no principal reduction occurs during the IO period, so you pay interest on the full balance for those years.",
+    commonMistakes: [
+      "Treating the IO payment as your long-term budget. The low IO payment lasts only 5–10 years. Plan for the post-IO payment — which can be 25–40% higher — before you commit.",
+      "Assuming the home will appreciate enough to cover the lack of equity build. IO loans became widespread before 2008 on this assumption. Home prices fell instead, leaving many IO borrowers deeply underwater.",
+      "Not reading whether the loan is fixed or adjustable. Most IO loans are adjustable-rate (ARM) products. The rate can rise at the IO-period end, which can compound the payment jump beyond what a fixed-rate IO would produce.",
+      "Forgetting that selling costs eat into zero-equity positions. If you sell during the IO period, you owe the full original balance. After subtracting realtor fees (typically 5–6%) and closing costs, you may need to bring cash to closing.",
+      "Comparing the IO payment to a fully amortizing payment without accounting for total interest. An IO loan looks cheaper monthly but costs significantly more over 30 years because interest runs on the full balance for a decade longer.",
+    ],
+    workedExample:
+      "You take a $400,000 IO loan at 6.75% with a 10-year IO period followed by a 20-year fully amortizing period. During the IO period: $400,000 × (0.0675 ÷ 12) = $2,250 per month for 120 months = $270,000 in interest paid, principal balance still $400,000. After IO period: $400,000 amortizes over 240 months at 6.75%, giving a payment of $3,044 per month. Total interest during amortization period: $330,560. Grand total interest: $600,560 — compared to $562,072 for a standard 30-year fully amortizing $400,000 loan at 6.75% (which has a constant payment of $2,594). The IO loan costs $38,488 more in total interest and carries far more risk.",
+    faqs: [
+      {
+        question: "What is an interest-only mortgage?",
+        answer:
+          "An interest-only mortgage requires you to pay only the interest owed each month for a set period — typically 5 to 10 years. None of your payment reduces the loan balance. After the IO period ends, the full original balance amortizes over the remaining term, causing your payment to increase substantially.",
+      },
+      {
+        question: "How much does the payment increase after the IO period?",
+        answer:
+          "The increase depends on your loan amount, rate, and remaining term. On a $400,000 loan at 6.75%, the IO payment is $2,250. After a 10-year IO period, the fully amortizing payment over the remaining 20 years jumps to $3,044 — a 35% increase. If the rate is also adjustable, the jump can be larger.",
+      },
+      {
+        question: "Do interest-only loans build equity?",
+        answer:
+          "No. During the IO period, your balance does not decrease, so you build zero equity through loan paydown. Any equity gain comes solely from home price appreciation. If prices fall, you lose equity — or go underwater — with no principal reduction to cushion the loss.",
+      },
+      {
+        question: "Who benefits from an interest-only mortgage?",
+        answer:
+          "IO loans can make sense for borrowers with irregular income (such as commissioned salespeople or investors) who expect large periodic income windfalls to pay down principal, or for short-term holds where the buyer plans to sell before the IO period ends. They require careful planning and carry meaningful risk.",
+      },
+      {
+        question: "How do I calculate my interest-only payment?",
+        answer:
+          "Multiply your loan balance by your annual interest rate, then divide by 12. For example: $400,000 × 6.75% ÷ 12 = $2,250 per month. Use the calculator above to find your post-IO fully amortizing payment, which you can compare to your IO payment to plan for the transition.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — Interest-only mortgages", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-an-interest-only-mortgage-en-1212/" },
+      { label: "CFPB — Adjustable-rate mortgages", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-an-adjustable-rate-mortgage-en-100/" },
+      { label: "HUD — Risky or Nontraditional Mortgages", url: "https://www.hud.gov/program_offices/housing/sfh/buying/risky_mortgages" },
+    ],
+    toolHeading: "Calculate your interest-only mortgage payment",
+    toolSubheading: "Enter your loan details to see the fully amortizing P&I. Your IO payment is: loan amount × (rate ÷ 12).",
+    preset: { vehiclePrice: 500000, downPayment: 100000, interestRatePct: 6.75, loanTermMonths: 360 },
+    relatedSlugs: ["piti-calculator", "affordability-calculator", "amortization-schedule"],
   },
 ];

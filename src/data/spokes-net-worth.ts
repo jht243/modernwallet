@@ -43,7 +43,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     toolHeading: "Calculate your net worth step by step",
     toolSubheading: "Enter assets, then debts. The total updates as you type.",
     preset: { cash: 10000, investments: 15000, retirement: 30000, realEstate: 0, vehicles: 18000, mortgage: 0, autoLoans: 12000, studentLoans: 25000, creditCards: 3000, age: 30 },
-    relatedSlugs: ["net-worth-by-age-calculator", "liquid-net-worth-calculator"],
+    relatedSlugs: ["net-worth-by-age-calculator", "liquid-net-worth-calculator", "net-worth-percentile-calculator", "net-worth-projection-calculator"],
   },
 
   {
@@ -76,6 +76,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
       { question: "Is median net worth a better benchmark than average net worth?", answer: "Yes. Median net worth shows what a typical household holds, while average net worth is pulled up by a small number of billionaires. The Federal Reserve publishes median figures in the SCF for this reason." },
       { question: "How often is the Survey of Consumer Finances updated?", answer: "The Federal Reserve releases the Survey of Consumer Finances every three years. The 2022 SCF is the most recent dataset and provides the median net worth figures used in the calculator above." },
       { question: "What is the difference between net worth and liquid net worth?", answer: "Net worth includes illiquid assets like your home and vehicles. Liquid net worth counts only assets you can convert to cash quickly. Use the [liquid net worth calculator](/net-worth/liquid-net-worth-calculator/) to see the difference, or learn the method in [how to calculate net worth](/net-worth/how-to-calculate-net-worth/)." },
+      { question: "How does net worth by age compare for couples versus individuals?", answer: "The Federal Reserve's 2022 Survey of Consumer Finances shows that married-couple households accumulate substantially more net worth than single-person households at every age bracket, driven by dual incomes, shared fixed costs, and combined retirement contributions. While the SCF does not publish a side-by-side single-versus-couple age table, the survey consistently finds that married-couple household median net worth is roughly two to three times that of single-person households in the same age range. For example, at the 35–44 bracket the all-households SCF median is $135,600; single-person households in that group typically fall well below that figure, while two-adult households typically exceed it by a wide margin. The same pattern holds at every decade. For a household-level comparison as a couple, use the [couples net worth calculator](/net-worth/couples-net-worth-calculator/) to combine both partners' assets and liabilities, then benchmark the combined figure against the SCF medians shown above." },
     ],
     sources: [
       { label: "Federal Reserve, Survey of Consumer Finances overview", url: "https://www.federalreserve.gov/econres/scfindex.htm" },
@@ -83,7 +84,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     toolHeading: "Compare your net worth to the median for your age",
     toolSubheading: "Federal Reserve 2022 SCF medians, side by side with your number.",
     preset: { cash: 12000, investments: 25000, retirement: 55000, realEstate: 280000, vehicles: 20000, mortgage: 230000, autoLoans: 15000, studentLoans: 20000, creditCards: 4000, age: 35 },
-    relatedSlugs: ["how-to-calculate-net-worth", "liquid-net-worth-calculator"],
+    relatedSlugs: ["how-to-calculate-net-worth", "liquid-net-worth-calculator", "net-worth-percentile-calculator", "couples-net-worth-calculator"],
   },
 
   {
@@ -124,6 +125,255 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     toolHeading: "Calculate your spendable wealth",
     toolSubheading: "Liquid assets only — minus every debt.",
     preset: { cash: 30000, investments: 80000, retirement: 60000, realEstate: 0, vehicles: 20000, mortgage: 0, autoLoans: 15000, studentLoans: 10000, creditCards: 5000, age: 45 },
-    relatedSlugs: ["how-to-calculate-net-worth", "net-worth-by-age-calculator"],
+    relatedSlugs: ["how-to-calculate-net-worth", "net-worth-by-age-calculator", "net-worth-projection-calculator", "net-worth-percentile-calculator"],
+  },
+
+  {
+    calculator: "net-worth",
+    slug: "net-worth-percentile-calculator",
+    title: "Net Worth Percentile Calculator: Where Do You Rank?",
+    metaDescription:
+      "See your wealth rank among U.S. households using Federal Reserve SCF 2022 data. Find where your net worth falls by percentile — median is $192,700.",
+    targetKeyword: "net worth percentile calculator",
+    estimatedVolume: 8100,
+    estimatedKD: 45,
+    h1: "Net Worth Percentile Calculator",
+    intro:
+      "The net worth percentile calculator shows where your household wealth ranks among all U.S. households, using data from the Federal Reserve's 2022 Survey of Consumer Finances. Enter your assets and debts above, and you'll see your net worth alongside the percentile it represents. The SCF is the gold-standard source on U.S. household wealth — a comprehensive survey of roughly 5,000 families conducted every three years.",
+    howItWorks:
+      "Your net worth percentile is determined by comparing your total assets minus total liabilities to the wealth distribution reported in the Federal Reserve's Survey of Consumer Finances. The SCF divides U.S. households into percentile brackets and publishes the wealth cutoffs at each threshold.\n\nKey 2022 SCF benchmarks: the median U.S. household net worth is approximately $192,700, meaning half of all households have more and half have less. The mean is approximately $1.06 million — nearly six times the median — because the ultra-wealthy pull the average sharply upward. To reach the top 10%, a household needs roughly $1.46 million in net worth. The top 1% threshold is approximately $11.1 million. These figures reflect all age groups combined; for age-specific benchmarks, use the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/).",
+    commonMistakes: [
+      "Comparing yourself to the mean net worth instead of the median. The mean ($1.06M) is almost 6× the median ($192,700) because a small number of ultra-wealthy households pull the average up dramatically.",
+      "Forgetting that SCF net worth is measured at the household level, not per individual. A couple's combined assets and debts form one data point in the survey.",
+      "Treating a below-median net worth as failure. The median is the midpoint of a wide distribution — half of all U.S. households are below it by definition.",
+      "Using a single year's snapshot to judge progress. Net worth percentile is most meaningful as a trend over several years, not a one-time rank.",
+      "Leaving out retirement accounts. The SCF includes 401(k) and IRA balances in household net worth, so you should too when comparing to SCF percentiles.",
+    ],
+    workedExample:
+      "Consider a 40-year-old household with $15,000 in cash, $40,000 in taxable investments, $120,000 in retirement accounts, a $350,000 home, and $25,000 in vehicles — $550,000 in total assets. Liabilities include a $250,000 mortgage, $18,000 auto loan, $22,000 in student loans, and $6,000 in credit card balances — $296,000 in total liabilities. Net worth is $254,000. That sits above the overall U.S. median of $192,700, placing this household roughly around the 55th to 60th percentile of all U.S. households according to the 2022 SCF distribution. The 45–54 age SCF median is $247,200, so this household is close to the typical midpoint for its age group.",
+    faqs: [
+      {
+        question: "What is the median net worth in the U.S.?",
+        answer:
+          "The median U.S. household net worth is approximately $192,700, according to the Federal Reserve's 2022 Survey of Consumer Finances. Half of all households have more than this, and half have less. The median is a far more realistic benchmark than the mean ($1.06 million), which is skewed upward by a small number of ultra-wealthy households.",
+      },
+      {
+        question: "How much net worth do you need to be in the top 10%?",
+        answer:
+          "To reach the top 10% of U.S. households by net worth, you need approximately $1.46 million, based on the 2022 Survey of Consumer Finances. The top 1% threshold is approximately $11.1 million. These cutoffs include all ages combined — younger households typically need lower absolute amounts to rank in the upper percentiles for their age group.",
+      },
+      {
+        question: "Why is average net worth so much higher than median net worth?",
+        answer:
+          "The mean (average) U.S. household net worth is roughly $1.06 million while the median is $192,700 — nearly a 6× gap. This happens because the top 1% of households hold approximately 31% of all U.S. household wealth, according to the Federal Reserve's Distributional Financial Accounts. A small number of billionaires pull the average far above what a typical household actually holds.",
+      },
+      {
+        question: "Does the Federal Reserve measure net worth by individual or household?",
+        answer:
+          "The Federal Reserve's Survey of Consumer Finances measures net worth at the household level. That means a couple's combined assets and debts form a single data point. When comparing to SCF percentile benchmarks, use your total household net worth — both partners' assets and liabilities combined.",
+      },
+      {
+        question: "How do I compare my net worth to people my age?",
+        answer:
+          "For age-specific benchmarks, use the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/), which shows the 2022 SCF median for your age bracket. The overall percentile calculator here compares you to all U.S. households regardless of age.",
+      },
+    ],
+    sources: [
+      {
+        label: "Federal Reserve — Survey of Consumer Finances 2022",
+        url: "https://www.federalreserve.gov/econres/scfindex.htm",
+      },
+      {
+        label: "Federal Reserve — Distributional Financial Accounts (DFA)",
+        url: "https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/",
+      },
+    ],
+    toolHeading: "Find your net worth percentile",
+    toolSubheading: "Enter your assets and debts — see where you rank among U.S. households.",
+    preset: {
+      cash: 15000,
+      investments: 40000,
+      retirement: 120000,
+      realEstate: 350000,
+      vehicles: 25000,
+      otherAssets: 0,
+      mortgage: 250000,
+      autoLoans: 18000,
+      studentLoans: 22000,
+      creditCards: 6000,
+      otherDebt: 0,
+      age: 40,
+    },
+    relatedSlugs: [
+      "how-to-calculate-net-worth",
+      "net-worth-by-age-calculator",
+      "liquid-net-worth-calculator",
+    ],
+  },
+
+  {
+    calculator: "net-worth",
+    slug: "couples-net-worth-calculator",
+    title: "Couples Net Worth Calculator: Track Together",
+    metaDescription:
+      "Calculate combined household net worth for couples. Enter both partners' assets and debts to see your true financial picture as a household unit.",
+    targetKeyword: "couples net worth calculator",
+    estimatedVolume: 2400,
+    estimatedKD: 30,
+    h1: "Couples Net Worth Calculator",
+    intro:
+      "A household net worth calculation combines both partners' assets and liabilities into a single number that reflects your shared financial position. The Federal Reserve's Survey of Consumer Finances — the authoritative source on U.S. household wealth — measures net worth at the household level for exactly this reason. Use the calculator above to enter both partners' figures together, then read on for what joint tracking reveals that individual tracking misses.",
+    howItWorks:
+      "Combined household net worth equals the total of both partners' assets minus the total of both partners' liabilities. Assets to include: all checking and savings accounts, taxable investment accounts, retirement balances (401(k), IRA, pension present value), the current market value of jointly or individually owned real estate, and vehicles. Liabilities to subtract: the remaining mortgage balance, all auto loans, student loans held by either partner, credit card balances, and any personal loans.\n\nThe key reason to track jointly: nearly every major financial decision — buying a home, planning retirement, setting insurance coverage, qualifying for a mortgage — is evaluated at the household level by lenders, the IRS, and the Federal Reserve alike. Knowing only your individual number leaves half the picture missing. For comparison to U.S. benchmarks, use the [net worth percentile calculator](/net-worth/net-worth-percentile-calculator/) after you've combined your figures.",
+    commonMistakes: [
+      "Tracking only individual net worth when financial decisions are made jointly. A mortgage application, for example, uses combined income and combined debt load.",
+      "Omitting one partner's student loans because they feel like 'their debt.' In a household budget, both partners' debts reduce the household's financial margin.",
+      "Forgetting to include both partners' retirement accounts. A spouse's 401(k) is part of the household's long-term wealth even if the other partner has no access to it today.",
+      "Using a joint number for age benchmarks without accounting for age gap. If partners differ in age by more than a few years, the SCF age-bracket comparison is less meaningful at the household level.",
+      "Conflating legal ownership with financial reality. Even in separate-property states, both partners' incomes and debts affect household cash flow and should both appear in a planning-level net worth calculation.",
+    ],
+    workedExample:
+      "A couple, both age 42, pools their figures. Partner A has $20,000 cash, $60,000 in investments, $180,000 in retirement accounts, a $500,000 home, and $30,000 vehicle. Partner B has $10,000 cash, $20,000 in investments, and $60,000 in retirement accounts. Combined assets: $880,000. Partner A carries a $380,000 mortgage, $15,000 auto loan, and $15,000 student loans. Partner B carries $15,000 student loans and $8,000 in credit cards. Combined liabilities: $433,000. Household net worth: $447,000. The 2022 SCF median for the 35–44 bracket is $135,600 — this household sits well above the median for their age group.",
+    faqs: [
+      {
+        question: "Should couples calculate net worth together or separately?",
+        answer:
+          "Both. Calculate jointly to see your household financial position for major decisions like buying a home, planning retirement, or qualifying for insurance. Calculate separately to track individual credit health and to ensure each partner has independent financial footing. The Federal Reserve's SCF uses the household level for wealth comparisons.",
+      },
+      {
+        question: "Do co-signed loans count in both partners' net worth?",
+        answer:
+          "Yes — and this is a non-obvious point. If one partner co-signs the other's student loan, both partners are legally responsible for the full balance. In a household net worth calculation, the loan appears once as a liability. But in individual credit profiles and individual financial assessments, both co-signers bear the debt. Track it in the joint calculation and make sure both partners understand their individual exposure.",
+      },
+      {
+        question: "How does the Federal Reserve measure household net worth?",
+        answer:
+          "The Federal Reserve's Survey of Consumer Finances measures net worth at the household level — combining all assets and liabilities of everyone in the household unit. This is why SCF median benchmarks should be compared to your combined household net worth, not to one partner's individual figure.",
+      },
+      {
+        question: "What if partners have very different asset levels?",
+        answer:
+          "Net worth is still calculated the same way — total assets minus total liabilities for the household. A significant imbalance between partners is useful information: it may indicate one partner has stronger individual financial standing, which matters if the couple separates or if one partner needs to qualify for credit independently.",
+      },
+      {
+        question: "How does this relate to the net worth by age calculator?",
+        answer:
+          "The [net worth by age calculator](/net-worth/net-worth-by-age-calculator/) uses SCF medians by age of the household head. For couples, use the age of the primary earner or the older partner to get the most relevant benchmark, then compare your combined household net worth to that figure.",
+      },
+    ],
+    sources: [
+      {
+        label: "Federal Reserve — Survey of Consumer Finances household methodology",
+        url: "https://www.federalreserve.gov/econres/scfindex.htm",
+      },
+      {
+        label: "CFPB — Joint financial planning resources",
+        url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/",
+      },
+    ],
+    toolHeading: "Calculate your household net worth together",
+    toolSubheading: "Enter both partners' assets and debts to see your combined financial picture.",
+    preset: {
+      cash: 30000,
+      investments: 80000,
+      retirement: 240000,
+      realEstate: 500000,
+      vehicles: 40000,
+      otherAssets: 0,
+      mortgage: 380000,
+      autoLoans: 25000,
+      studentLoans: 30000,
+      creditCards: 8000,
+      otherDebt: 0,
+      age: 42,
+    },
+    relatedSlugs: [
+      "how-to-calculate-net-worth",
+      "net-worth-by-age-calculator",
+      "net-worth-percentile-calculator",
+    ],
+  },
+
+  {
+    calculator: "net-worth",
+    slug: "net-worth-projection-calculator",
+    title: "Net Worth Projection Calculator: See Your Future",
+    metaDescription:
+      "Project your net worth 10–20 years out. See when you'll hit $1M and how savings rate and investment return change the timeline.",
+    targetKeyword: "net worth projection calculator",
+    estimatedVolume: 3600,
+    estimatedKD: 38,
+    h1: "Net Worth Projection Calculator",
+    intro:
+      "A net worth projection calculator estimates where you'll be financially in 5, 10, and 20 years based on your current net worth, annual savings, and expected investment return. Today's snapshot — your assets minus your debts — is the starting line. This spoke explains how to use that number as the foundation for a forward-looking projection so you can see when key milestones like $500,000 or $1 million become reachable.",
+    howItWorks:
+      "Net worth projection starts with your current net worth and then applies two growth levers year by year: the amount you add each year (your savings rate) and the return your existing assets earn (your investment return rate). In formula terms: projected net worth in year N = (current net worth × (1 + return rate)^N) + (annual savings × ((1 + return rate)^N − 1) / return rate).\n\nTwo factors drive the result, but their relative importance shifts over time. In the early years, your savings rate — how much new money you add each year — has more impact than your return rate. If your current net worth is $50,000 and you add $12,000 a year, doubling that contribution to $24,000 increases your 10-year projection far more than raising your return assumption from 6% to 8% on the same $50,000 base. Once your net worth grows to roughly 10× your annual income, however, the math flips: at that scale, a 2-percentage-point change in return rate outweighs any realistic increase in annual savings. That crossover point is one of the most useful — and least discussed — insights in personal finance planning. For age-based context on where you stand today, see the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/).",
+    commonMistakes: [
+      "Using an unrealistically high return assumption. The SEC's compound-interest illustrations typically use 6–7% as a long-term nominal equity return benchmark. Assuming 10–12% compounding overstates likely outcomes.",
+      "Forgetting that savings rate must account for taxes and living expenses — the number that matters is net annual additions to investment accounts, not gross income.",
+      "Projecting linear debt paydown without accounting for the freed-up cash flow once a loan is paid off. Paying off a car loan at year 3 increases available savings from year 4 onward.",
+      "Treating the projection as a guaranteed outcome rather than a sensitivity tool. Run at least three scenarios: conservative (5% return, current savings), base (7% return, modest savings increase), and optimistic (8% return, aggressive savings).",
+      "Ignoring inflation. A projected net worth of $1 million in 20 years has less purchasing power than $1 million today. In real (inflation-adjusted) terms, use a real return rate of roughly 4–5% instead of nominal.",
+    ],
+    workedExample:
+      "A 35-year-old has a current net worth of $254,000: $20,000 cash, $50,000 investments, $100,000 in retirement accounts, a $300,000 home, $20,000 in vehicles, minus a $240,000 mortgage, $15,000 auto loan, $18,000 student loans, and $4,000 in credit cards. They save $15,000 per year in net additions to their investment and retirement accounts. At a 7% annual return, their 10-year projected net worth is approximately $757,000, and their 20-year projection exceeds $2.1 million. Raising the savings rate to $20,000 per year moves the 10-year projection to roughly $843,000 — an $86,000 increase from the extra savings alone. Compare that to bumping the return assumption from 7% to 9%, which adds about $109,000 over 10 years on the same savings — meaningful, but not dramatically different at this stage. By year 20, the return-rate lever dominates.",
+    faqs: [
+      {
+        question: "What is a net worth projection calculator?",
+        answer:
+          "A net worth projection calculator estimates your future net worth by applying your expected savings rate and investment return to your current net worth over a set time horizon. It shows when you might hit financial milestones like $500,000 or $1 million and lets you test how changes to savings or return rate change the timeline.",
+      },
+      {
+        question: "Does savings rate or investment return matter more?",
+        answer:
+          "It depends on where you are in the wealth-building journey. When net worth is small relative to income — say, under 5× annual income — adding more money each year matters more than squeezing out extra return. Once net worth exceeds roughly 10× annual income, your investment return rate begins to dominate. This is why high earners benefit most from optimizing asset allocation, while people earlier in their careers benefit most from increasing their savings rate.",
+      },
+      {
+        question: "What return rate should I use for a net worth projection?",
+        answer:
+          "The SEC's Investor.gov compound-interest calculator uses 6% and 8% as illustrative long-term return rates. Many financial planners use 6–7% as a nominal return assumption for a diversified stock-and-bond portfolio over 20+ years. Avoid assuming 10–12% consistently, as that reflects peak historical equity returns and overstates likely long-run outcomes for most investors.",
+      },
+      {
+        question: "How do I project net worth if I have debt?",
+        answer:
+          "Start with your current net worth (assets minus all debts) as the baseline — the debt is already baked in. Each year, your net worth grows from two sources: investment returns on your existing assets and net new savings added. As debts like auto loans are paid off, the freed cash flow can shift into savings, boosting future projections.",
+      },
+      {
+        question: "Where can I see how my current net worth compares to peers?",
+        answer:
+          "Use the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/) for SCF median benchmarks by age group, or the [net worth percentile calculator](/net-worth/net-worth-percentile-calculator/) to see your rank among all U.S. households. Both use Federal Reserve 2022 Survey of Consumer Finances data.",
+      },
+    ],
+    sources: [
+      {
+        label: "Federal Reserve — Economic research on household wealth accumulation",
+        url: "https://www.federalreserve.gov/econres/scfindex.htm",
+      },
+      {
+        label: "SEC Investor.gov — Compound Interest Calculator",
+        url: "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator",
+      },
+    ],
+    toolHeading: "Project your net worth into the future",
+    toolSubheading: "See your 10- and 20-year milestones based on today's snapshot plus your savings rate.",
+    preset: {
+      cash: 20000,
+      investments: 50000,
+      retirement: 100000,
+      realEstate: 300000,
+      vehicles: 20000,
+      otherAssets: 0,
+      mortgage: 240000,
+      autoLoans: 15000,
+      studentLoans: 18000,
+      creditCards: 4000,
+      otherDebt: 0,
+      age: 35,
+    },
+    relatedSlugs: [
+      "how-to-calculate-net-worth",
+      "net-worth-by-age-calculator",
+      "liquid-net-worth-calculator",
+    ],
   },
 ];
