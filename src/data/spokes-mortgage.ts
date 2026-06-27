@@ -66,7 +66,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Calculate your mortgage payoff",
     toolSubheading: "Add an extra monthly payment to see your new payoff date and interest saved.",
     preset: { vehiclePrice: 300000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 200 },
-    relatedSlugs: ["extra-payment-calculator", "refinance-calculator", "amortization-schedule"],
+    relatedSlugs: ["extra-payment-calculator", "refinance-calculator", "early-payoff-calculator"],
   },
 
   {
@@ -305,7 +305,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Calculate your PITI mortgage payment",
     toolSubheading: "Enter your home price and down payment to see principal and interest, then add taxes and insurance for your full PITI.",
     preset: { vehiclePrice: 400000, downPayment: 80000, interestRatePct: 6.75, loanTermMonths: 360 },
-    relatedSlugs: ["affordability-calculator", "amortization-schedule", "payoff-calculator"],
+    relatedSlugs: ["affordability-calculator", "amortization-schedule", "interest-only-calculator"],
   },
 
   {
@@ -366,7 +366,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "See what your target home price costs monthly",
     toolSubheading: "Enter a home price and down payment to find the P&I payment, then apply the 28% front-end rule to check affordability.",
     preset: { vehiclePrice: 350000, downPayment: 70000, interestRatePct: 6.75, loanTermMonths: 360 },
-    relatedSlugs: ["piti-calculator", "fha-calculator", "payoff-calculator"],
+    relatedSlugs: ["piti-calculator", "fha-calculator", "va-loan-calculator"],
   },
 
   {
@@ -427,7 +427,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     toolHeading: "Model your refinance payment",
     toolSubheading: "Enter your new loan amount and rate to see P&I, then compare it to your current payment to find your break-even.",
     preset: { vehiclePrice: 350000, downPayment: 0, interestRatePct: 5.75, loanTermMonths: 360 },
-    relatedSlugs: ["payoff-calculator", "extra-payment-calculator", "amortization-schedule"],
+    relatedSlugs: ["payoff-calculator", "interest-only-calculator", "amortization-schedule"],
   },
 
   {

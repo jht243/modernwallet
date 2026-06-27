@@ -164,7 +164,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     toolHeading: "How much should you save each month?",
     toolSubheading: "Enter your goal and timeline to get your required monthly contribution.",
     preset: { goalMode: true, targetAmount: 1000000, currentBalance: 20000, monthlyContribution: 0, annualReturnPct: 7, years: 30 },
-    relatedSlugs: ["roth-ira-calculator", "withdrawal-calculator", "investment-growth-calculator"],
+    relatedSlugs: ["roth-ira-calculator", "withdrawal-calculator", "high-yield-savings-calculator"],
   },
 
   {
@@ -225,7 +225,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     toolHeading: "Project your Roth IRA balance",
     toolSubheading: "See how tax-free compounding builds wealth over decades.",
     preset: { currentBalance: 10000, monthlyContribution: 583, annualReturnPct: 7, years: 30 },
-    relatedSlugs: ["compound-interest-calculator", "investment-growth-calculator", "savings-goal-calculator"],
+    relatedSlugs: ["compound-interest-calculator", "dividend-calculator", "savings-goal-calculator"],
   },
 
   {
