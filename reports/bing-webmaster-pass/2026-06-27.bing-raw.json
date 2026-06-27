@@ -1,0 +1,38 @@
+{
+  "site": "https://themodernwallet.com/",
+  "tool": "bing_webmaster.py deep-dive",
+  "sections": {
+    "crawlStats": [],
+    "crawlIssues": [],
+    "rankAndTraffic": [],
+    "queryStats": [],
+    "pageStats": [],
+    "linkCounts": {
+      "__type": "LinkCounts:#Microsoft.Bing.Webmaster.Api",
+      "Links": [],
+      "TotalPages": 0
+    },
+    "blockedUrls": [],
+    "queryParameters": [],
+    "feeds": [
+      {
+        "__type": "Feed:#Microsoft.Bing.Webmaster.Api",
+        "Compressed": false,
+        "FileSize": 686,
+        "LastCrawled": "2026-06-27T20:07:32Z",
+        "Status": "Success",
+        "Submitted": "2026-06-27T20:07:32Z",
+        "Type": "Sitemap Index",
+        "Url": "https://www.themodernwallet.com/sitemap-index.xml",
+        "UrlCount": 1
+      }
+    ],
+    "urlSubmissionQuota": {
+      "__type": "UrlSubmissionQuota:#Microsoft.Bing.Webmaster.Api",
+      "DailyQuota": 61,
+      "MonthlyQuota": 361
+    },
+    "pageQueryStats": {}
+  },
+  "_errors": {}
+}
