@@ -1,0 +1,128 @@
+---
+// Sitewide header: brand wordmark + a single "Calculators" dropdown so the bar stays one line
+// while keeping every category link crawlable (good for internal linking). Accessible disclosure
+// menu: opens on hover (pointer) and on click/keyboard (all devices).
+import { SITE } from "../data/site";
+import { liveCalculators } from "../data/calculators";
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== "/" && path.startsWith(href));
+const navCalcs = liveCalculators();
+const anyActive = isActive("/calculators/") || navCalcs.some((c) => isActive(`/${c.id}/`));
+---
+<header class="site-header">
+  <div class="hdr-inner">
+    <div class="brand-group">
+      <a class="brand" href="/" aria-label={`${SITE.name} home`}>
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="var(--primary)"></rect>
+          <rect x="8" y="6" width="16" height="20" rx="2.4" fill="none" stroke="#fff" stroke-width="2"></rect>
+          <rect x="11" y="9.5" width="10" height="4" rx="1" fill="#fff"></rect>
+          <circle cx="12.2" cy="18" r="1.3" fill="#fff"></circle>
+          <circle cx="16" cy="18" r="1.3" fill="#fff"></circle>
+          <circle cx="19.8" cy="18" r="1.3" fill="#fff"></circle>
+          <circle cx="12.2" cy="22" r="1.3" fill="#fff"></circle>
+        </svg>
+        <span class="brand-name">{SITE.name}</span>
+      </a>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-tagline">{SITE.tagline}</span>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <div class="nav-dd">
+        <button type="button" class:list={["nav-trigger", { active: anyActive }]} aria-haspopup="true" aria-expanded="false">
+          Calculators
+          <svg class="chev" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-menu" role="menu">
+          <a class="menu-all" href="/calculators/" role="menuitem">All calculators</a>
+          <div class="menu-cols">
+            {navCalcs.map((c) => (
+              <a href={`/${c.id}/`} role="menuitem" class={isActive(`/${c.id}/`) ? "active" : ""}>{c.label}</a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Click + keyboard toggle for the Calculators dropdown (hover is handled in CSS for pointers).
+  const dd = document.querySelector<HTMLElement>(".nav-dd");
+  const trigger = dd?.querySelector<HTMLButtonElement>(".nav-trigger");
+  if (dd && trigger) {
+    const open = () => { dd.classList.add("open"); trigger.setAttribute("aria-expanded", "true"); };
+    const close = () => { dd.classList.remove("open"); trigger.setAttribute("aria-expanded", "false"); };
+    trigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dd.classList.contains("open") ? close() : open();
+    });
+    document.addEventListener("click", (e) => { if (!dd.contains(e.target as Node)) close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  }
+</script>
+
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid #ECECEC;
+  }
+  .hdr-inner {
+    max-width: 1100px; margin: 0 auto; padding: 10px 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand-group { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
+  .brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+  .brand-name { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+  .brand-divider { width: 1px; height: 22px; background: #D6D6D6; flex-shrink: 0; }
+  .brand-tagline { font-size: 0.9rem; font-weight: 600; color: #6B7280; white-space: nowrap; }
+
+  .primary-nav { display: flex; }
+  .nav-dd { position: relative; }
+  .nav-trigger {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: inherit; font-size: 0.95rem; font-weight: 700; color: #333;
+    background: #F1F8F5; border: 1px solid #DCEEE6; cursor: pointer;
+    padding: 8px 14px; border-radius: 9px; white-space: nowrap;
+  }
+  .nav-trigger:hover, .nav-trigger.active { color: var(--primary-dark); border-color: var(--primary); background: #E4F4EF; }
+  .chev { transition: transform 150ms ease; }
+  .nav-dd.open .chev { transform: rotate(180deg); }
+
+  .nav-menu {
+    position: absolute; right: 0; top: calc(100% + 8px);
+    min-width: 320px; padding: 10px; border-radius: 12px;
+    background: #fff; border: 1px solid #E3ECE8; box-shadow: 0 16px 40px -16px rgba(0,0,0,0.25);
+    opacity: 0; visibility: hidden; transform: translateY(-4px);
+    transition: opacity 140ms ease, transform 140ms ease, visibility 140ms;
+  }
+  /* Open via JS click (.open) OR hover/keyboard focus on pointer devices */
+  .nav-dd.open .nav-menu,
+  .nav-dd:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  @media (hover: hover) {
+    .nav-dd:hover .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  }
+
+  .menu-all {
+    display: block; font-weight: 700; font-size: 0.9rem; color: var(--primary-dark);
+    padding: 9px 10px; border-radius: 8px; text-decoration: none; margin-bottom: 4px;
+  }
+  .menu-all:hover { background: #E4F4EF; }
+  .menu-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 6px; border-top: 1px solid #EEF3F1; padding-top: 6px; }
+  .menu-cols a {
+    font-size: 0.9rem; font-weight: 600; color: #444; text-decoration: none;
+    padding: 8px 10px; border-radius: 8px; white-space: nowrap;
+  }
+  .menu-cols a:hover { background: #F1F8F5; color: var(--primary-dark); }
+  .menu-cols a.active { color: var(--primary-dark); background: #E4F4EF; }
+
+  @media (max-width: 760px) {
+    .brand-divider, .brand-tagline { display: none; }
+  }
+  @media (max-width: 420px) {
+    .nav-menu { min-width: min(320px, calc(100vw - 32px)); }
+  }
+</style>

@@ -1,0 +1,66 @@
+---
+// Compact card linking to a calculator hub or a spoke page. Horizontal layout: a themed
+// infographic icon tile on the left, text on the right.
+import type { CalcIcon } from "../data/icons";
+import { titleCase } from "../lib/format";
+interface Props {
+  href: string;
+  title: string;
+  meta?: string;
+  soon?: boolean;
+  icon?: CalcIcon | null;
+}
+const { href, title, meta, soon = false, icon = null } = Astro.props as Props;
+const Tag = soon ? "div" : "a";
+const label = titleCase(title);
+---
+<Tag class:list={["card", { soon }]} href={soon ? undefined : href}>
+  {icon && (
+    <span class="card-icon" style={`background:linear-gradient(135deg, ${icon.bg}, ${icon.bg2})`}>
+      <span class="icon-chip" style={`color:${icon.fg}`}>
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={icon.svg}></svg>
+      </span>
+    </span>
+  )}
+  <span class="card-body">
+    <span class="card-title">{label}</span>
+    {meta && <span class="card-meta">{meta}</span>}
+    {soon && <span class="card-badge">Coming soon</span>}
+  </span>
+</Tag>
+
+<style>
+  .card {
+    display: flex; flex-direction: row; align-items: stretch; min-height: 88px;
+    border: 1px solid #E0EFE9; border-radius: 12px; overflow: hidden;
+    background: #fff; text-decoration: none; color: var(--text);
+    transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+  }
+  a.card:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0,0,0,0.12); }
+  a.card:hover .icon-chip { transform: translateY(-1px); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 6px 14px -5px rgba(0,0,0,0.22); }
+  a.card:hover .icon-chip svg { transform: scale(1.08); }
+  .card-icon {
+    flex-shrink: 0; width: 96px; display: flex; align-items: center; justify-content: center;
+  }
+  .icon-chip {
+    width: 50px; height: 50px; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.66);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 4px 10px -4px rgba(0,0,0,0.16);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  .icon-chip svg { transition: transform 200ms ease; }
+  .card-body {
+    flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center;
+    gap: 4px; padding: 14px 18px;
+  }
+  .card-title { font-weight: 700; font-size: 1rem; line-height: 1.25; }
+  .card-meta { font-size: 0.82rem; color: #7a8a85; }
+  .card.soon { opacity: 0.62; }
+  .card-badge {
+    align-self: flex-start; margin-top: 2px;
+    font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+    color: #8A7340; background: #FBF4E4; border: 1px solid #F0DEB4; padding: 2px 8px; border-radius: 999px;
+  }
+  @media (max-width: 380px) { .card-icon { width: 76px; } }
+</style>

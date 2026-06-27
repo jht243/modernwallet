@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LinkCard from "../../components/LinkCard.astro";
+import Byline from "../../components/Byline.astro";
+import Sources from "../../components/Sources.astro";
+import { SITE, LAST_UPDATED } from "../../data/site";
+import { SPOKES } from "../../data/spokes";
+import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
+import CalculatorIsland from "../../components/CalculatorIsland";
+import { spokeStats } from "../../lib/stats";
+import { linkify, plain } from "../../lib/richtext";
+import { titleCase } from "../../lib/format";
+import { personSchema, articleSchema } from "../../lib/jsonld";
+import { iconForSpoke } from "../../data/icons";
+
+export function getStaticPaths() {
+  return SPOKES
+    .filter((s) => {
+      const c = CALC_BY_ID[s.calculator];
+      return c && isLive(c);
+    })
+    .map((entry) => ({
+      params: { category: entry.calculator, slug: entry.slug },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const calc = CALC_BY_ID[entry.calculator]!;
+const related = relatedSpokes(entry, 4);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Build-time computation — inject real numbers into static HTML before JS hydrates.
+const stats = spokeStats(entry);
+
+// ---- JSON-LD ----
+const jsonLdFaq = entry.faqs.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: entry.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: plain(f.answer) },
+      })),
+    }
+  : null;
+
+const jsonLdPerson = personSchema();
+const jsonLdArticle = articleSchema({
+  headline: entry.h1,
+  description: entry.metaDescription,
+  url: canonicalUrl,
+  datePublished: LAST_UPDATED,
+  sources: entry.sources,
+});
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: calc.label, item: new URL(`/${calc.id}/`, Astro.site).toString() },
+    { "@type": "ListItem", position: 3, name: entry.targetKeyword, item: canonicalUrl },
+  ],
+};
+
+const jsonLdApp = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: entry.title,
+  description: entry.metaDescription,
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any (web)",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  url: canonicalUrl,
+};
+---
+<BaseLayout title={entry.title} description={entry.metaDescription}>
+  {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <a href={`/${calc.id}/`}>{calc.label}</a> <span>/</span>
+      <span class="crumb-current">{titleCase(entry.targetKeyword)}</span>
+    </nav>
+
+    <header class="hero">
+      <h1>{entry.h1}</h1>
+      <Byline />
+      <p class="lede" set:html={linkify(entry.intro)} />
+      {stats.length > 0 && (
+        <div class="proof">
+          {stats.map((s) => (
+            <span class="proof-stat"><strong>{s.value}</strong> {s.label}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <section class="tool-section" aria-label="Interactive calculator">
+      <div class="tool-badge"><span class="dot"></span> Interactive — edit any field</div>
+      <CalculatorIsland
+        client:only="react"
+        calculatorId={calc.islandId}
+        initialData={entry.preset}
+        heading={entry.toolHeading}
+        subheading={entry.toolSubheading}
+        mortgageMode={calc.id === "mortgage"}
+      />
+    </section>
+
+    <section class="section">
+      <h2>How it's calculated</h2>
+      {entry.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
+    </section>
+
+    {entry.workedExample && (
+      <section class="section">
+        <h2>A worked example</h2>
+        <p set:html={linkify(entry.workedExample)} />
+      </section>
+    )}
+
+    <section class="section">
+      <h2>Common mistakes to avoid</h2>
+      <ul class="mistakes">
+        {entry.commonMistakes.map((m) => <li set:html={linkify(m)} />)}
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Frequently asked questions</h2>
+      <div class="faqs">
+        {entry.faqs.map((f) => (
+          <details class="faq">
+            <summary><h3>{f.question}</h3></summary>
+            <p set:html={linkify(f.answer)} />
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <Sources sources={entry.sources} />
+
+    {related.length > 0 && (
+      <section class="section">
+        <h2>Related {calc.label.toLowerCase()} calculators</h2>
+        <div class="related-grid">
+          {related.map((r) => (
+            <LinkCard href={`/${r.calculator}/${r.slug}/`} title={r.targetKeyword} meta="Free · instant" icon={iconForSpoke(r.calculator, r.slug)} />
+          ))}
+        </div>
+        <p class="related-all">
+          See all <a href={`/${calc.id}/`}>{calc.label.toLowerCase()} calculators</a>, or browse
+          <a href="/calculators/"> every {SITE.name} calculator</a>.
+        </p>
+      </section>
+    )}
+  </main>
+
+  <style>
+    .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb a:hover { text-decoration: underline; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0; line-height: 1.7; max-width: 60ch; }
+    .proof { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 18px; font-size: 0.95rem; color: #555; }
+    .proof-stat strong { color: var(--primary-dark); font-weight: 700; }
+    .tool-section {
+      position: relative; margin: 8px 0 18px; padding: 22px;
+      background: linear-gradient(180deg, #F4FAF8 0%, #FFFFFF 100%);
+      border: 1px solid #D8EEE6; border-radius: 18px;
+      box-shadow: 0 12px 32px -18px rgba(0,0,0,0.12);
+    }
+    .tool-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;
+      color: var(--primary-dark); background: #E4F4EF; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px;
+    }
+    .tool-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(14,124,102,0.6); } 70% { box-shadow: 0 0 0 8px rgba(14,124,102,0); } 100% { box-shadow: 0 0 0 0 rgba(14,124,102,0); } }
+    .section { padding: 26px 0; border-top: 1px solid #EEF2F0; }
+    .section > *:last-child { margin-bottom: 0; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .section p { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; max-width: 62ch; margin: 0 0 18px; }
+    .mistakes { padding-left: 22px; line-height: 1.85; max-width: 62ch; }
+    .mistakes li { margin-bottom: 10px; color: #2c2c2c; padding-left: 4px; }
+    .faqs { display: flex; flex-direction: column; gap: 8px; max-width: 64ch; }
+    .faq { border: 1px solid #eee; border-radius: 8px; padding: 16px 18px; background: #fff; }
+    .faq summary { cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; font-weight: 600; }
+    .faq[open] summary h3 { color: var(--primary-dark); }
+    .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+    .related-all { margin-top: 16px; font-size: 0.95rem; color: #555; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } }
+  </style>
+</BaseLayout>

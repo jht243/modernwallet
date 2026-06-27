@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LinkCard from "../components/LinkCard.astro";
+import { SITE } from "../data/site";
+import { CALCULATORS, isLive, spokesForCalc } from "../data/calculators";
+import { SPOKE_BY_PATH } from "../data/spokes";
+import { iconForCalc, iconForSpoke } from "../data/icons";
+
+const calcs = [...CALCULATORS].sort((a, b) => a.navOrder - b.navOrder);
+const liveCount = calcs.filter(isLive).length;
+// Curated across categories so the row isn't four of the same icon/topic.
+const popularSpokes = [
+  "auto-loan/payoff-calculator",
+  "retirement/401k-early-withdrawal-calculator",
+  "investing/compound-interest-calculator",
+  "real-estate/cash-flow-calculator",
+].map((p) => SPOKE_BY_PATH[p]).filter(Boolean);
+
+const title = `${SITE.name} — Free Financial Calculators`;
+const description = SITE.description;
+---
+<BaseLayout title={title} description={description}>
+  <main class="home">
+    <section class="hero">
+      <h1>Free financial calculators that actually do the math</h1>
+      <p class="lede">
+        Accurate, instant calculators for auto loans, mortgages, retirement, investing, rentals,
+        and net worth — no signup, no fluff. Pick a calculator and get real numbers in seconds.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="/calculators/">Browse all calculators</a>
+        <a class="btn btn-ghost" href="/auto-loan/">Try the auto loan calculator</a>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Calculators</h2>
+      <div class="grid">
+        {calcs.map((c, i) => {
+          const n = spokesForCalc(c.id).length;
+          const live = isLive(c);
+          return (
+            <LinkCard
+              href={`/${c.id}/`}
+              title={`${c.label} Calculator`}
+              meta={live ? (n > 0 ? `${n} tools · free` : "Free · instant") : undefined}
+              soon={!live}
+              icon={iconForCalc(c.id)}
+            />
+          );
+        })}
+      </div>
+    </section>
+
+    {popularSpokes.length > 0 && (
+      <section class="block">
+        <h2>Popular calculators</h2>
+        <div class="grid">
+          {popularSpokes.map((s) => (
+            <LinkCard href={`/${s.calculator}/${s.slug}/`} title={s.targetKeyword} meta="Free · instant" icon={iconForSpoke(s.calculator, s.slug)} />
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="block why">
+      <h2>Why trust these calculators</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </span>
+          <h3>Sourced from the experts</h3>
+          <p>Every guide is checked against primary sources — the CFPB, IRS, Federal Reserve, SEC, and FDIC — not recycled blog posts.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+          </span>
+          <h3>Real math, shown clearly</h3>
+          <p>See the full breakdown behind every result — principal vs. interest, payoff timelines, and complete schedules you can verify.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <h3>Free and instant</h3>
+          <p>No signup, no paywall, no email wall. Run any of our {liveCount} calculators in seconds, on any device.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .home { max-width: 1000px; margin: 0 auto; padding: 24px 20px 56px; }
+    .hero { padding: 28px 0 22px; text-align: center; }
+    .hero h1 { font-size: 2.6rem; margin: 0 0 16px; line-height: 1.15; }
+    .lede { font-size: 1.2rem; color: #444; max-width: 720px; margin: 0 auto; line-height: 1.6; }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+    .btn {
+      display: inline-block; padding: 12px 22px; border-radius: 10px; font-weight: 700; text-decoration: none;
+      background: var(--primary); color: #fff; border: 1px solid var(--primary);
+    }
+    .btn:hover { background: var(--primary-dark); }
+    .btn-ghost { background: #fff; color: var(--primary-dark); }
+    .btn-ghost:hover { background: #F1F8F5; }
+    .block { padding: 28px 0; border-top: 1px solid #EEF2F0; }
+    .block h2 { font-size: 1.6rem; margin: 0 0 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .why-card { padding: 22px 20px; border: 1px solid #E0EFE9; border-radius: 14px; background: #fff; }
+    .why-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 42px; height: 42px; border-radius: 11px; margin-bottom: 12px;
+      background: #E4F4EF; color: var(--primary-dark);
+    }
+    .why-card h3 { font-size: 1.05rem; margin: 0 0 6px; }
+    .why-card p { font-size: 0.92rem; color: #555; line-height: 1.55; margin: 0; }
+    @media (max-width: 600px) { .hero h1 { font-size: 2rem; } }
+  </style>
+</BaseLayout>

@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE, AUTHOR } from "../data/site";
+import { personSchema } from "../lib/jsonld";
+
+const canonicalUrl = new URL("/about/", Astro.site).toString();
+const jsonLdPerson = personSchema();
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "About", item: canonicalUrl },
+  ],
+};
+---
+<BaseLayout
+  title={`About ${SITE.name} — Our Editorial Approach`}
+  description={`Who writes ${SITE.name} and how we keep our free financial calculators and guides accurate, sourced, and up to date.`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span class="crumb-current">About</span>
+    </nav>
+
+    <header class="hero">
+      <h1>About {SITE.name}</h1>
+      <p class="lede">{SITE.name} builds free, accurate financial calculators that show the math behind the answer — no signup, no fluff.</p>
+    </header>
+
+    <section class="section">
+      <h2>Our editorial approach</h2>
+      <p>Money decisions deserve accurate tools. Every calculator on {SITE.name} runs the same standard financial formulas that lenders and planners use, and every page is written to explain how the result is reached. We cite primary sources — like the Consumer Financial Protection Bureau, the Federal Reserve, and the IRS — rather than second-hand summaries.</p>
+      <p>Our calculators are educational tools, not personalized financial advice. For decisions specific to your situation, consult a licensed professional.</p>
+    </section>
+
+    <section class="section author">
+      <h2>Who writes {SITE.name}</h2>
+      <div class="author-card">
+        <div class="avatar" aria-hidden="true">{AUTHOR.name.split(" ").map((p) => p[0]).join("")}</div>
+        <div>
+          <p class="aname">{AUTHOR.name}</p>
+          <p class="arole">{AUTHOR.role}</p>
+          <p class="abio">{AUTHOR.bio}</p>
+          <p class="aknows"><strong>Focus areas:</strong> {AUTHOR.knowsAbout.join(", ")}.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .page { max-width: 820px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 12px; }
+    .lede { font-size: 1.12rem; color: #444; line-height: 1.6; margin: 0; }
+    .section { padding: 24px 0; border-top: 1px solid #EEF2F0; }
+    .section h2 { font-size: 1.45rem; margin: 0 0 12px; }
+    .section p { color: #333; line-height: 1.7; max-width: 720px; }
+    .author-card { display: flex; gap: 18px; align-items: flex-start; }
+    .avatar { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; }
+    .aname { font-weight: 700; font-size: 1.1rem; margin: 0; }
+    .arole { color: var(--primary-dark); font-weight: 600; margin: 2px 0 8px; }
+    .abio, .aknows { margin: 8px 0 0; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.85rem; } }
+  </style>
+</BaseLayout>

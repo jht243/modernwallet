@@ -1,0 +1,24 @@
+---
+// Visible author byline + reviewed/updated line (YMYL E-E-A-T). Sits under the H1.
+// The visible link is a RELATIVE path (/about/) for portability; the absolute AUTHOR.url is used
+// only in JSON-LD (src/lib/jsonld.ts), where schema.org expects absolute URLs.
+import { AUTHOR, LAST_UPDATED } from "../data/site";
+const updated = new Date(LAST_UPDATED + "T00:00:00Z").toLocaleDateString("en-US", {
+  year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
+});
+---
+<div class="byline">
+  <span class="by">By <a href="/about/">{AUTHOR.name}</a>, {AUTHOR.role}</span>
+  <span class="sep" aria-hidden="true">·</span>
+  <span class="rev">Reviewed against primary sources · Updated {updated}</span>
+</div>
+
+<style>
+  .byline {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+    font-size: 0.85rem; color: #6a7a75; margin: 2px 0 14px;
+  }
+  .byline a { color: var(--primary-dark); text-decoration: none; font-weight: 600; }
+  .byline a:hover { text-decoration: underline; }
+  .sep { color: #c5cfca; }
+</style>

@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LinkCard from "../../components/LinkCard.astro";
+import Byline from "../../components/Byline.astro";
+import Sources from "../../components/Sources.astro";
+import { SITE, LAST_UPDATED } from "../../data/site";
+import { CALCULATORS, isLive, spokesForCalc } from "../../data/calculators";
+import CalculatorIsland from "../../components/CalculatorIsland";
+import { linkify, plain } from "../../lib/richtext";
+import { personSchema, articleSchema } from "../../lib/jsonld";
+import { iconForSpoke } from "../../data/icons";
+
+export function getStaticPaths() {
+  return CALCULATORS
+    .filter(isLive)
+    .map((calc) => ({ params: { category: calc.id }, props: { calc } }));
+}
+
+const { calc } = Astro.props;
+const spokes = spokesForCalc(calc.id);
+const canonicalUrl = new URL(`/${calc.id}/`, Astro.site).toString();
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: calc.label, item: canonicalUrl },
+  ],
+};
+const jsonLdItemList = spokes.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: calc.h1,
+      numberOfItems: spokes.length,
+      itemListElement: spokes.map((s, i) => ({
+        "@type": "ListItem", position: i + 1, name: s.targetKeyword,
+        url: new URL(`/${s.calculator}/${s.slug}/`, Astro.site).toString(),
+      })),
+    }
+  : null;
+const jsonLdApp = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: calc.metaTitle,
+  description: calc.metaDescription,
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any (web)",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  url: canonicalUrl,
+};
+const jsonLdFaq = calc.faqs.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: calc.faqs.map((f) => ({
+        "@type": "Question", name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: plain(f.answer) },
+      })),
+    }
+  : null;
+const jsonLdPerson = personSchema();
+const jsonLdArticle = articleSchema({
+  headline: calc.h1,
+  description: calc.metaDescription,
+  url: canonicalUrl,
+  datePublished: LAST_UPDATED,
+  sources: calc.sources,
+});
+---
+<BaseLayout title={calc.metaTitle} description={calc.metaDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
+  {jsonLdItemList && <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />}
+  {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span class="crumb-current">{calc.label}</span>
+    </nav>
+
+    <header class="hero">
+      <h1>{calc.h1}</h1>
+      <Byline />
+      <p class="lede" set:html={linkify(calc.intro)} />
+    </header>
+
+    <section class="tool-section" aria-label="Interactive calculator">
+      <div class="tool-badge"><span class="dot"></span> Interactive — edit any field</div>
+      <CalculatorIsland client:only="react" calculatorId={calc.islandId} initialData={calc.defaultPreset} mortgageMode={calc.id === "mortgage"} />
+    </section>
+
+    {spokes.length > 0 && (
+      <section class="section">
+        <h2>{calc.label} calculators</h2>
+        <div class="grid">
+          {spokes.map((s) => (
+            <LinkCard href={`/${s.calculator}/${s.slug}/`} title={s.targetKeyword} meta="Free · instant" icon={iconForSpoke(s.calculator, s.slug)} />
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="section">
+      <h2>How it works</h2>
+      {calc.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
+    </section>
+
+    {calc.faqs.length > 0 && (
+      <section class="section">
+        <h2>Frequently asked questions</h2>
+        <div class="faqs">
+          {calc.faqs.map((f) => (
+            <details class="faq">
+              <summary><h3>{f.question}</h3></summary>
+              <p set:html={linkify(f.answer)} />
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <Sources sources={calc.sources} />
+  </main>
+
+  <style>
+    .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0; line-height: 1.7; max-width: 60ch; }
+    .tool-section {
+      position: relative; margin: 8px 0 18px; padding: 22px;
+      background: linear-gradient(180deg, #F4FAF8 0%, #FFFFFF 100%);
+      border: 1px solid #D8EEE6; border-radius: 18px;
+      box-shadow: 0 12px 32px -18px rgba(0,0,0,0.12);
+    }
+    .tool-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.74rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;
+      color: var(--primary-dark); background: #E4F4EF; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px;
+    }
+    .tool-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(14,124,102,0.6); } 70% { box-shadow: 0 0 0 8px rgba(14,124,102,0); } 100% { box-shadow: 0 0 0 0 rgba(14,124,102,0); } }
+    .section { padding: 26px 0; border-top: 1px solid #EEF2F0; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .section p { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; max-width: 62ch; margin: 0 0 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+    .faqs { display: flex; flex-direction: column; gap: 8px; max-width: 64ch; }
+    .faq { border: 1px solid #eee; border-radius: 8px; padding: 14px 18px; background: #fff; }
+    .faq summary { cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary h3 { display: inline; font-size: 1rem; margin: 0; font-weight: 600; }
+    .faq[open] summary h3 { color: var(--primary-dark); }
+    .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } }
+  </style>
+</BaseLayout>
