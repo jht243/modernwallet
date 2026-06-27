@@ -1,0 +1,64 @@
+url,coverage_state,bucket,target,fix
+/about/,Discovered - currently not indexed,add internal links,indexed,add /about/ to footer legal nav
+/auto-loan/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/auto-loan/amortization-schedule/,Discovered - currently not indexed,add internal links,indexed,linked from auto-loan hub; relatedSlugs present
+/auto-loan/early-payoff-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from auto-loan hub; relatedSlugs present
+/auto-loan/extra-payment-calculator/,URL is unknown to Google,add internal links,indexed,linked from auto-loan hub; sibling relatedSlugs route traffic
+/auto-loan/interest-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from auto-loan hub; relatedSlugs present
+/auto-loan/payoff-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from auto-loan hub; in homepage popularSpokes (existing)
+/calculators/,URL is unknown to Google,add internal links,indexed,linked from homepage hero button and footer
+/investing/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/investing/compound-interest-calculator/,Discovered - currently not indexed,add internal links,indexed,in homepage popularSpokes (existing); dense inbound relatedSlugs
+/investing/dividend-calculator/,URL is unknown to Google,add internal links,indexed,add to homepage popularSpokes; add to roth-ira-calculator.relatedSlugs
+/investing/dollar-cost-averaging-calculator/,URL is unknown to Google,add internal links,indexed,linked from investing hub; relatedSlugs present
+/investing/high-yield-savings-calculator/,URL is unknown to Google,add internal links,indexed,add to savings-goal-calculator.relatedSlugs
+/investing/investment-growth-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from investing hub; high inbound relatedSlugs count
+/investing/roth-ira-calculator/,URL is unknown to Google,add internal links,indexed,linked from investing hub; update relatedSlugs to add dividend-calculator
+/investing/savings-goal-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from investing hub; update relatedSlugs to add high-yield-savings-calculator
+/investing/sp500-calculator/,URL is unknown to Google,add internal links,indexed,linked from investing hub; sibling relatedSlugs present
+/investing/withdrawal-calculator/,URL is unknown to Google,add internal links,indexed,linked from investing hub; sibling relatedSlugs present
+/mortgage/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/mortgage/affordability-calculator/,URL is unknown to Google,add internal links,indexed,update relatedSlugs to replace payoff-calculator with va-loan-calculator
+/mortgage/amortization-schedule/,Discovered - currently not indexed,add internal links,indexed,linked from mortgage hub; high inbound relatedSlugs count
+/mortgage/early-payoff-calculator/,Discovered - currently not indexed,add internal links,indexed,add to payoff-calculator.relatedSlugs (replacing amortization-schedule)
+/mortgage/extra-payment-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from mortgage hub; relatedSlugs present
+/mortgage/fha-calculator/,URL is unknown to Google,add internal links,indexed,linked from mortgage hub; relatedSlugs present
+/mortgage/interest-only-calculator/,URL is unknown to Google,add internal links,indexed,add to piti-calculator.relatedSlugs and refinance-calculator.relatedSlugs
+/mortgage/payoff-calculator/,Discovered - currently not indexed,add internal links,indexed,add to homepage popularSpokes
+/mortgage/piti-calculator/,URL is unknown to Google,add internal links,indexed,update relatedSlugs to replace payoff-calculator with interest-only-calculator
+/mortgage/refinance-calculator/,URL is unknown to Google,add internal links,indexed,update relatedSlugs to replace extra-payment-calculator with interest-only-calculator
+/mortgage/va-loan-calculator/,URL is unknown to Google,add internal links,indexed,add to affordability-calculator.relatedSlugs (replacing payoff-calculator)
+/net-worth/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/net-worth/couples-net-worth-calculator/,URL is unknown to Google,add internal links,indexed,linked from net-worth hub; relatedSlugs present
+/net-worth/how-to-calculate-net-worth/,Discovered - currently not indexed,add internal links,indexed,add to homepage popularSpokes
+/net-worth/liquid-net-worth-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from net-worth hub; relatedSlugs present
+/net-worth/net-worth-by-age-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from net-worth hub; relatedSlugs present
+/net-worth/net-worth-percentile-calculator/,URL is unknown to Google,add internal links,indexed,linked from net-worth hub; sibling relatedSlugs present
+/net-worth/net-worth-projection-calculator/,URL is unknown to Google,add internal links,indexed,linked from net-worth hub; sibling relatedSlugs present
+/portfolio/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/portfolio/60-40-portfolio-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from portfolio hub; relatedSlugs present
+/portfolio/asset-allocation-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from portfolio hub; relatedSlugs present
+/portfolio/expected-return-calculator/,URL is unknown to Google,add internal links,indexed,linked from portfolio hub; sibling relatedSlugs present
+/portfolio/portfolio-risk-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from portfolio hub; relatedSlugs present
+/real-estate/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/real-estate/airbnb-calculator/,URL is unknown to Google,add internal links,indexed,linked from real-estate hub; sibling relatedSlugs present
+/real-estate/cap-rate-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from real-estate hub; relatedSlugs present
+/real-estate/capital-gains-calculator/,URL is unknown to Google,add internal links,indexed,linked from real-estate hub; sibling relatedSlugs present
+/real-estate/cash-flow-calculator/,Discovered - currently not indexed,add internal links,indexed,in homepage popularSpokes (existing); relatedSlugs present
+/real-estate/cash-on-cash-return-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from real-estate hub; relatedSlugs present
+/real-estate/depreciation-calculator/,URL is unknown to Google,add internal links,indexed,linked from real-estate hub; sibling relatedSlugs present
+/real-estate/rental-income-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from real-estate hub; relatedSlugs present
+/real-estate/rental-income-tax-calculator/,URL is unknown to Google,add internal links,indexed,linked from real-estate hub; sibling relatedSlugs present
+/real-estate/roi-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from real-estate hub; relatedSlugs present
+/retirement/,Discovered - currently not indexed,add internal links,indexed,hub linked from homepage nav; crawl follows sitemap
+/retirement/401k-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from retirement hub; relatedSlugs present
+/retirement/401k-early-withdrawal-calculator/,Discovered - currently not indexed,add internal links,indexed,in homepage popularSpokes (existing); relatedSlugs present
+/retirement/couples-retirement-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
+/retirement/early-retirement-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
+/retirement/fire-calculator/,URL is unknown to Google,add internal links,indexed,add to homepage popularSpokes
+/retirement/military-retirement-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
+/retirement/pension-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
+/retirement/retirement-income-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
+/retirement/retirement-savings-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from retirement hub; relatedSlugs present
+/retirement/rmd-calculator/,Discovered - currently not indexed,add internal links,indexed,linked from retirement hub; relatedSlugs present
+/retirement/social-security-retirement-calculator/,URL is unknown to Google,add internal links,indexed,linked from retirement hub; sibling relatedSlugs present
