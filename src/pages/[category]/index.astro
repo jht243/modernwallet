@@ -35,8 +35,10 @@ const jsonLdItemList = spokes.length
       name: calc.h1,
       numberOfItems: spokes.length,
       itemListElement: spokes.map((s, i) => ({
-        "@type": "ListItem", position: i + 1, name: s.targetKeyword,
-        url: new URL(`/${s.calculator}/${s.slug}/`, Astro.site).toString(),
+        "@type": "ListItem",
+        position: i + 1,
+        name: s.targetKeyword,
+        item: new URL(`/${s.calculator}/${s.slug}/`, Astro.site).toString(),
       })),
     }
   : null;
@@ -47,7 +49,7 @@ const jsonLdApp = {
   description: calc.metaDescription,
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any (web)",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
   url: canonicalUrl,
 };
 const jsonLdFaq = calc.faqs.length

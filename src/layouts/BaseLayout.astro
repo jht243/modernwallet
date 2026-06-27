@@ -17,7 +17,7 @@ const orgJsonLd = {
   "@type": "Organization",
   name: SITE.name,
   url: new URL("/", Astro.site).toString(),
-  logo: new URL("/favicon.svg", Astro.site).toString(),
+  logo: { "@type": "ImageObject", url: new URL("/favicon.svg", Astro.site).toString() },
   description: SITE.description,
 };
 ---

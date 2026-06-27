@@ -30,6 +30,7 @@ export function articleSchema(opts: {
     headline: opts.headline,
     description: opts.description,
     url: opts.url,
+    image: { "@type": "ImageObject", url: `${SITE.url}/favicon.svg` },
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
     author: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
