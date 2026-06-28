@@ -140,7 +140,7 @@ const S: Record<string, React.CSSProperties> = {
   head: { marginBottom: 16 },
   heading: { fontSize: "1.2rem", fontWeight: 700 },
   subheading: { fontSize: "0.95rem", color: "#555", marginTop: 2 },
-  grid: { display: "grid", gridTemplateColumns: "minmax(260px, 1fr) minmax(260px, 1fr)", gap: 24 },
+  grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 },
   inputs: { display: "flex", flexDirection: "column", gap: 12 },
   row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
   field: { display: "flex", flexDirection: "column", gap: 5 },

@@ -173,7 +173,7 @@ const S: Record<string, React.CSSProperties> = {
   modeRow: { display: "flex", gap: 8, marginBottom: 16 },
   modeBtn: { flex: 1, padding: "9px 0", border: "1px solid #D0DAD6", background: "#fff", borderRadius: 8, fontWeight: 600, fontSize: "0.9rem", cursor: "pointer", color: "#444" },
   modeOn: { borderColor: PRIMARY, background: "#E4F4EF", color: PRIMARY },
-  grid: { display: "grid", gridTemplateColumns: "minmax(280px, 1.1fr) minmax(260px, 0.9fr)", gap: 24 },
+  grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 },
   inputs: { display: "flex", flexDirection: "column", gap: 14 },
   groupCard: { border: "1px solid #E3EEE9", borderRadius: 12, padding: "12px 14px 14px", background: "#FAFDFC" },
   groupTitle: { display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", paddingBottom: 10, marginBottom: 12, borderBottom: "1px solid #E9F1ED" },

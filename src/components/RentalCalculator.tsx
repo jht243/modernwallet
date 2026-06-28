@@ -203,7 +203,7 @@ const S: Record<string, React.CSSProperties> = {
   head: { marginBottom: 16 },
   heading: { fontSize: "1.2rem", fontWeight: 700 },
   subheading: { fontSize: "0.95rem", color: "#555", marginTop: 2 },
-  grid: { display: "grid", gridTemplateColumns: "minmax(280px, 1.1fr) minmax(240px, 0.9fr)", gap: 24 },
+  grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 },
   inputs: { display: "flex", flexDirection: "column", gap: 14 },
   group: { border: "1px solid #E2EDE9", borderRadius: 12, padding: "8px 14px 14px", margin: 0 },
   legend: { fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", padding: "0 6px" },

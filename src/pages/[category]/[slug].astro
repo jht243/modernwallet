@@ -205,8 +205,8 @@ const jsonLdApp = {
     .faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; font-weight: 600; }
     .faq[open] summary h3 { color: var(--primary-dark); }
     .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
-    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
     .related-all { margin-top: 16px; font-size: 0.95rem; color: #555; }
-    @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } .tool-section { padding: 16px; } }
   </style>
 </BaseLayout>
