@@ -8,7 +8,7 @@ import { SPOKES } from "../../data/spokes";
 import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
 import CalculatorIsland from "../../components/CalculatorIsland";
 import { spokeStats } from "../../lib/stats";
-import { linkify, plain } from "../../lib/richtext";
+import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { titleCase } from "../../lib/format";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
@@ -94,7 +94,7 @@ const jsonLdApp = {
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline />
-      <p class="lede" set:html={linkify(entry.intro)} />
+      {paragraphs(entry.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
       {stats.length > 0 && (
         <div class="proof">
           {stats.map((s) => (
@@ -124,7 +124,7 @@ const jsonLdApp = {
     {entry.workedExample && (
       <section class="section">
         <h2>A worked example</h2>
-        <p set:html={linkify(entry.workedExample)} />
+        {paragraphs(entry.workedExample).map((para) => <p set:html={linkify(para)} />)}
       </section>
     )}
 
@@ -175,7 +175,8 @@ const jsonLdApp = {
     .crumb-current { color: #999; }
     .hero { padding: 8px 0 16px; }
     .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
-    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0; line-height: 1.7; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
+    .lede:last-of-type { margin-bottom: 0; }
     .proof { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 18px; font-size: 0.95rem; color: #555; }
     .proof-stat strong { color: var(--primary-dark); font-weight: 700; }
     .tool-section {

@@ -6,7 +6,7 @@ import Sources from "../../components/Sources.astro";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { CALCULATORS, isLive, spokesForCalc } from "../../data/calculators";
 import CalculatorIsland from "../../components/CalculatorIsland";
-import { linkify, plain } from "../../lib/richtext";
+import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
@@ -89,7 +89,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{calc.h1}</h1>
       <Byline />
-      <p class="lede" set:html={linkify(calc.intro)} />
+      {paragraphs(calc.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
     <section class="tool-section" aria-label="Interactive calculator">
@@ -138,7 +138,8 @@ const jsonLdArticle = articleSchema({
     .crumb-current { color: #999; }
     .hero { padding: 8px 0 16px; }
     .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
-    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0; line-height: 1.7; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
+    .lede:last-of-type { margin-bottom: 0; }
     .tool-section {
       position: relative; margin: 8px 0 18px; padding: 22px;
       background: linear-gradient(180deg, #F4FAF8 0%, #FFFFFF 100%);
