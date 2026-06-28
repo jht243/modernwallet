@@ -284,6 +284,39 @@ export const CALCULATORS: CalculatorDef[] = [
     ],
     defaultPreset: { cash: 15000, investments: 40000, retirement: 120000, realEstate: 350000, vehicles: 25000, mortgage: 250000, autoLoans: 18000, studentLoans: 22000, creditCards: 6000, age: 40 },
   },
+
+  {
+    id: "budget",
+    islandId: "budget",
+    label: "Budget",
+    navOrder: 8,
+    metaTitle: "Budget Calculator: Plan Your Monthly Spending",
+    metaDescription:
+      "Free budget calculator using the 50/30/20 rule or zero-based method. Enter your take-home pay and expenses to see exactly where your money should go.",
+    targetKeyword: "budget calculator",
+    h1: "Budget Calculator",
+    intro:
+      "A budget calculator splits your take-home pay across needs, wants, and savings so every dollar has a plan. The calculator above uses the popular 50/30/20 rule — 50% of income to needs, 30% to wants, and 20% to savings and debt payoff — and includes a zero-based mode for budgeting every dollar to zero. Enter your monthly income and spending to see your targets, where you're over, and how much is left to assign. For example, on $5,000 a month after tax, the 50/30/20 rule sets aside $2,500 for needs, $1,500 for wants, and $1,000 for savings.",
+    howItWorks:
+      "A budget works by comparing what you earn to what you plan to spend, then steering the gap toward your goals. The calculator above groups spending into three buckets. Needs are costs you can't skip — housing, utilities, groceries, transportation, insurance, and the minimum payments on your debts. Wants are lifestyle choices like dining out, subscriptions, and travel. Savings covers your emergency fund, retirement and investing, and any extra debt payoff above the minimum.\n\nThe 50/30/20 rule, popularized by Senator Elizabeth Warren in her book All Your Worth, recommends 50% of after-tax income for needs, 30% for wants, and 20% for savings and debt. These are guidelines, not laws — in high-cost areas, needs often run higher, which simply means a smaller wants bucket. The zero-based method, used by Dave Ramsey's EveryDollar and others, takes a different angle: income minus expenses should equal zero, so every dollar is assigned a job before the month begins. Use the toggle above to switch between the two. To turn your leftover into wealth, see how to [grow your savings](/investing/) and [track your net worth](/net-worth/).",
+    faqs: [
+      { question: "What is a budget calculator?", answer: "A budget calculator totals your take-home income and planned spending to show whether you have a surplus or a shortfall, and how your spending compares to recommended targets. The calculator above splits your money into needs, wants, and savings using the 50/30/20 rule, or lets you budget every dollar to zero." },
+      { question: "What is the 50/30/20 budget rule?", answer: "The 50/30/20 rule allocates 50% of your after-tax income to needs, 30% to wants, and 20% to savings and debt payoff. It comes from Senator Elizabeth Warren's book All Your Worth and is the most widely used quick-start budgeting framework because it needs just one number — your monthly take-home pay." },
+      { question: "Should I use gross or take-home income for a budget?", answer: "Use take-home (after-tax) income — the amount that actually lands in your account. The 50/30/20 rule is built on after-tax pay. If you save for retirement through payroll deductions, you can add that back in and count it inside your 20% savings bucket." },
+      { question: "What is zero-based budgeting?", answer: "Zero-based budgeting assigns every dollar of income a specific job until income minus expenses equals zero. It doesn't mean spending everything — money sent to savings or debt counts as a job. This is the method behind Dave Ramsey's EveryDollar app, and you can switch to it with the toggle in the calculator above." },
+      { question: "Do minimum debt payments count as a need or savings?", answer: "Minimum required debt payments are needs — they're non-negotiable, so they belong in the 50% bucket. Any extra you pay above the minimum to get out of debt faster counts in the 20% savings and debt-payoff bucket. Keeping the two separate is the most common 50/30/20 mistake." },
+      { question: "How much of my income should I save?", answer: "The 50/30/20 rule targets 20% of take-home pay for savings and debt payoff combined. If you have high-interest debt, focus that 20% on eliminating it first, then redirect it to an emergency fund and investing. See the [savings goal calculator](/investing/savings-goal-calculator/) to plan a target." },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — Making a budget", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/" },
+      { label: "Warren & Tyagi — All Your Worth: The Ultimate Lifetime Money Plan", url: "https://www.elizabethwarren.com/" },
+    ],
+    defaultPreset: {
+      monthlyIncome: 5000,
+      mode: "50-30-20",
+      amounts: { housing: 1500, utilities: 220, groceries: 500, transportation: 300, insurance: 180, minimumDebt: 150, dining: 300, entertainment: 130, shopping: 220, funMisc: 150, emergencyFund: 250, retirement: 600, extraDebt: 300 },
+    },
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

@@ -7,11 +7,13 @@ export interface CrossLink { href: string; label: string; }
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
   "auto-loan": [
     { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
+    { href: "/budget/", label: "Does this fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/mortgage/", label: "Buying a home too?" },
   ],
   "mortgage": [
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
+    { href: "/budget/", label: "Build a monthly budget" },
     { href: "/net-worth/", label: "Check if you're financially ready" },
     { href: "/retirement/", label: "Stay on track for retirement" },
   ],
@@ -36,9 +38,15 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
   ],
   "net-worth": [
+    { href: "/budget/", label: "Build a monthly budget" },
     { href: "/retirement/", label: "Are you on track to retire?" },
     { href: "/investing/", label: "Grow your money" },
     { href: "/mortgage/", label: "How much house can you afford?" },
+  ],
+  "budget": [
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/investing/", label: "Invest your monthly surplus" },
+    { href: "/retirement/", label: "Are you saving enough to retire?" },
   ],
 };
 

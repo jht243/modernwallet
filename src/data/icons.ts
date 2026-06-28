@@ -18,6 +18,7 @@ const STYLE: Record<string, { bg: string; bg2: string; fg: string }> = {
   "portfolio": { bg: "#F5ECFA", bg2: "#EAD9F4", fg: "#8A4FBF" },
   "real-estate": { bg: "#E7F5F6", bg2: "#D2ECEF", fg: "#1B8090" },
   "net-worth": { bg: "#E9F6EE", bg2: "#D4EEDD", fg: "#128A4E" },
+  "budget": { bg: "#F0E8F5", bg2: "#E5D5EC", fg: "#7A4FA8" },
 };
 const DEFAULT_STYLE = { bg: "#EEF4F0", bg2: "#DFEAE5", fg: "#0E7C66" };
 
@@ -49,7 +50,7 @@ const SHAPE: Record<string, string> = {
 // Category default shape (for the hub/category cards).
 const CATEGORY_SHAPE: Record<string, string> = {
   "auto-loan": "car", "mortgage": "house", "retirement": "sun", "investing": "trending",
-  "portfolio": "pie", "real-estate": "building", "net-worth": "scale",
+  "portfolio": "pie", "real-estate": "building", "net-worth": "scale", "budget": "wallet",
 };
 
 // Per-spoke concept shape so cards within a category still look different.
@@ -87,6 +88,10 @@ const SPOKE_SHAPE: Record<string, string> = {
   "net-worth/how-to-calculate-net-worth": "list",
   "net-worth/net-worth-by-age-calculator": "bars",
   "net-worth/liquid-net-worth-calculator": "drop",
+  "budget/50-30-20-budget-calculator": "pie",
+  "budget/monthly-budget-calculator": "calendar",
+  "budget/zero-based-budget-calculator": "list",
+  "budget/household-budget-calculator": "wallet",
 };
 
 function styleFor(calcId: string) {

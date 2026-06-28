@@ -12,6 +12,7 @@ import { computeInvestment, type InvestmentInput } from "./investment";
 import { computePortfolio, type PortfolioInput } from "./portfolio";
 import { computeNetWorth, type NetWorthInput } from "./net-worth";
 import { carAffordability, homeAffordability, downPaymentBreakdown, closingCostEstimate } from "./affordability";
+import { computeBudget } from "./budget";
 import { fmtUSD, fmtMonths, fmtPct, fmtNum } from "./format";
 
 export interface Stat {
@@ -37,9 +38,31 @@ export function spokeStats(entry: SpokeEntry): Stat[] {
       return portfolioStats(entry.preset as Partial<PortfolioInput>);
     case "net-worth":
       return netWorthStats(entry.preset as Partial<NetWorthInput>);
+    case "budget":
+      return budgetStats(entry.preset as Record<string, unknown>);
     default:
       return [];
   }
+}
+
+function budgetStats(preset: Record<string, unknown>): Stat[] {
+  const income = Number(preset.monthlyIncome) || 0;
+  const amounts = (preset.amounts as Record<string, number>) || {};
+  if (!(income > 0)) return [];
+  const r = computeBudget({ monthlyIncome: income, amounts });
+  if (preset.mode === "zero-based") {
+    return [
+      { label: "monthly income", value: fmtUSD(income) },
+      { label: "total assigned", value: fmtUSD(r.totalSpending) },
+      { label: "left to assign", value: fmtUSD(r.leftover) },
+    ];
+  }
+  const target = (b: string) => r.buckets.find((x) => x.bucket === b)!.target;
+  return [
+    { label: "needs budget (50%)", value: fmtUSD(target("needs")) },
+    { label: "wants budget (30%)", value: fmtUSD(target("wants")) },
+    { label: "savings budget (20%)", value: fmtUSD(target("savings")) },
+  ];
 }
 
 function affordabilityStats(preset: Record<string, unknown>): Stat[] {

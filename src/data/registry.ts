@@ -3,4 +3,4 @@
 // filtering without pulling client component code into the server bundle.
 //
 // Phase 2 adds: "mortgage", "retirement", "investing", "portfolio", "real-estate", "net-worth".
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth"]);
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget"]);

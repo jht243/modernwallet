@@ -6,6 +6,7 @@ import { RETIREMENT_SPOKES } from "./spokes-retirement";
 import { INVESTING_SPOKES } from "./spokes-investing";
 import { PORTFOLIO_SPOKES } from "./spokes-portfolio";
 import { NET_WORTH_SPOKES } from "./spokes-net-worth";
+import { BUDGET_SPOKES } from "./spokes-budget";
 
 // Aggregator for all spoke pages across calculators. Phase 2 adds one spokes-*.ts file per
 // calculator and spreads it here.
@@ -17,6 +18,7 @@ export const SPOKES: SpokeEntry[] = [
   ...INVESTING_SPOKES,
   ...PORTFOLIO_SPOKES,
   ...NET_WORTH_SPOKES,
+  ...BUDGET_SPOKES,
 ];
 
 export const SPOKE_BY_PATH: Record<string, SpokeEntry> = Object.fromEntries(
