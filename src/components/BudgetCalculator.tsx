@@ -38,6 +38,7 @@ export default function BudgetCalculator({ initialData, heading, subheading }: P
   const zero = mode === "zero-based";
   const over = r.leftover < -5;
   const surplus = r.leftover > 5;
+  const byBucket = (bb: Bucket) => r.buckets.find((x) => x.bucket === bb)!;
 
   return (
     <div style={S.wrap}>
@@ -61,8 +62,13 @@ export default function BudgetCalculator({ initialData, heading, subheading }: P
           {BUCKETS.map((b) => (
             <div key={b}>
               <div style={S.groupTitle}>
-                {BUCKET_LABEL[b]}
-                {!zero && <span style={S.groupTarget}> · target {fmtPct(targetPct(b), 0)}</span>}
+                <span>
+                  {BUCKET_LABEL[b]}
+                  {!zero && <span style={S.groupTarget}> · target {fmtPct(targetPct(b), 0)}</span>}
+                </span>
+                <span style={{ ...S.groupSum, color: !zero && byBucket(b).variance > 0 ? NEGATIVE : "#2A6A58" }}>
+                  {fmtUSD(byBucket(b).actual)}
+                </span>
               </div>
               <div style={S.gridFields}>
                 {BUDGET_LINES.filter((l) => l.bucket === b).map((l) => (
@@ -79,10 +85,10 @@ export default function BudgetCalculator({ initialData, heading, subheading }: P
           <div style={S.bigStat}>
             <span style={S.bigLabel}>{zero ? "Left to assign" : "Left to budget"}</span>
             <span style={{ ...S.bigValue, color: over ? NEGATIVE : PRIMARY }}>{fmtUSD(r.leftover)}</span>
-            <span style={S.bigSub}>{fmtUSD(income)} income − {fmtUSD(r.totalSpending)} planned</span>
+            <span style={S.bigSub}>{fmtUSD(income)} income − {fmtUSD(r.totalSpending)} you entered</span>
           </div>
 
-          <div style={over ? S.warnNote : surplus ? S.goodNote : S.goodNote}>
+          <div style={over ? S.warnNote : S.goodNote}>
             {zero
               ? over
                 ? <span>You've assigned <strong>{fmtUSD(Math.abs(r.leftover))}</strong> more than you earn. Trim a category so every dollar has a job and the plan balances to $0.</span>
@@ -90,8 +96,10 @@ export default function BudgetCalculator({ initialData, heading, subheading }: P
                   ? <span><strong>{fmtUSD(r.leftover)}</strong> still needs a job. In a zero-based budget, give it one — add to savings or extra debt payoff until this hits $0.</span>
                   : <span><strong>Every dollar has a job.</strong> Your plan balances to $0 — the goal of a zero-based budget.</span>
               : over
-                ? <span>You're planning to spend <strong>{fmtUSD(Math.abs(r.leftover))}</strong> more than you earn. Cut from the buckets running over their target below.</span>
-                : <span>You have <strong>{fmtUSD(r.leftover)}</strong> left. Put it toward the 20% savings &amp; debt bucket to stay on track.</span>}
+                ? <span>Your entries total <strong>{fmtUSD(r.totalSpending)}</strong> — <strong>{fmtUSD(Math.abs(r.leftover))}</strong> more than you earn. Trim the buckets over their target below.</span>
+                : surplus
+                  ? <span>The 50/30/20 splits are <strong>targets, not limits</strong> — your entries don't have to total 100%. You've entered {fmtUSD(r.totalSpending)} of your {fmtUSD(income)} income, so <strong>{fmtUSD(r.leftover)}</strong> isn't assigned yet. Give it a job (savings is the usual pick).</span>
+                  : <span><strong>Every dollar is assigned.</strong> Now check each bucket against its 50/30/20 target below.</span>}
           </div>
 
           <div style={S.statRow}>
@@ -167,8 +175,9 @@ const S: Record<string, React.CSSProperties> = {
   modeOn: { borderColor: PRIMARY, background: "#E4F4EF", color: PRIMARY },
   grid: { display: "grid", gridTemplateColumns: "minmax(280px, 1.1fr) minmax(260px, 0.9fr)", gap: 24 },
   inputs: { display: "flex", flexDirection: "column", gap: 10 },
-  groupTitle: { fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 8, marginTop: 4 },
+  groupTitle: { display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 8, marginTop: 4 },
   groupTarget: { color: "#9aa6a2", fontWeight: 600 },
+  groupSum: { textTransform: "none", letterSpacing: "normal", fontSize: "0.92rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   gridFields: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
   field: { display: "flex", flexDirection: "column", gap: 5 },
   label: { fontSize: "0.8rem", fontWeight: 600, color: "#444" },
