@@ -6,7 +6,8 @@ import { fmtUSD, fmtMonths } from "../lib/format";
 // preset) instead of any injected global — fully standalone, no external host coupling.
 
 interface Props {
-  initialData?: Partial<AutoLoanInput>;
+  // Mortgage mode adds optional escrow inputs (property tax, insurance, HOA) for a true PITI total.
+  initialData?: Partial<AutoLoanInput> & { propertyTaxAnnual?: number; homeInsuranceAnnual?: number; hoaMonthly?: number };
   heading?: string;
   subheading?: string;
   /** When true, this calculator is being used for a mortgage (relabels "vehicle price" → "home price"). */
@@ -42,6 +43,19 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
   const priceLabel = mortgageMode ? "Home price" : "Vehicle price";
   const terms = mortgageMode ? MORTGAGE_TERMS : TERM_OPTIONS;
   const hasExtra = (input.extraMonthlyPayment ?? 0) > 0;
+
+  // Escrow (mortgage only) → true PITI total payment.
+  const [escrow, setEscrow] = useState({
+    propertyTaxAnnual: Number(initialData?.propertyTaxAnnual) || 0,
+    homeInsuranceAnnual: Number(initialData?.homeInsuranceAnnual) || 0,
+    hoaMonthly: Number(initialData?.hoaMonthly) || 0,
+  });
+  const pmiMonthly = mortgageMode && input.vehiclePrice > 0 && (result.loanAmount ?? 0) > 0 &&
+    (input.downPayment ?? 0) / input.vehiclePrice < 0.2
+    ? ((result.loanAmount ?? 0) * 0.006) / 12 : 0;
+  const escrowMonthly = escrow.propertyTaxAnnual / 12 + escrow.homeInsuranceAnnual / 12 + escrow.hoaMonthly + pmiMonthly;
+  const showPITI = mortgageMode && escrowMonthly > 0.5 && result.monthlyPaymentPI != null;
+  const totalMonthly = (result.monthlyPaymentPI ?? 0) + escrowMonthly;
 
   const principalPct = result.loanAmount && result.totalCost
     ? Math.round((result.loanAmount / result.totalCost) * 100)
@@ -109,17 +123,41 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
           <Field label="Extra payment per month (optional)">
             <MoneyInput value={input.extraMonthlyPayment ?? 0} onChange={(v) => set({ extraMonthlyPayment: v })} />
           </Field>
+
+          {mortgageMode && (
+            <>
+              <div style={S.row2}>
+                <Field label="Property tax / year">
+                  <MoneyInput value={escrow.propertyTaxAnnual} onChange={(v) => setEscrow((s) => ({ ...s, propertyTaxAnnual: v }))} />
+                </Field>
+                <Field label="Home insurance / year">
+                  <MoneyInput value={escrow.homeInsuranceAnnual} onChange={(v) => setEscrow((s) => ({ ...s, homeInsuranceAnnual: v }))} />
+                </Field>
+              </div>
+              <Field label="HOA / month (optional)">
+                <MoneyInput value={escrow.hoaMonthly} onChange={(v) => setEscrow((s) => ({ ...s, hoaMonthly: v }))} />
+              </Field>
+            </>
+          )}
         </div>
 
         {/* ---- Results ---- */}
         <div style={S.results}>
           <div style={S.bigStat}>
-            <span style={S.bigLabel}>Monthly payment</span>
+            <span style={S.bigLabel}>{showPITI ? "Total monthly payment" : "Monthly payment"}</span>
             <span style={S.bigValue}>
-              {fmtUSD(result.monthlyPaymentPI)}
+              {fmtUSD(showPITI ? totalMonthly : result.monthlyPaymentPI)}
               {hasExtra && <span style={S.plusExtra}> + {fmtUSD(input.extraMonthlyPayment)} extra</span>}
             </span>
+            {showPITI && <span style={S.bigSub}>principal, interest, taxes & insurance (PITI)</span>}
           </div>
+
+          {showPITI && (
+            <div style={S.statRow}>
+              <Stat label="Principal & interest" value={fmtUSD(result.monthlyPaymentPI)} />
+              <Stat label={`Taxes, insurance${pmiMonthly > 0 ? " + PMI" : ""}`} value={fmtUSD(escrowMonthly)} />
+            </div>
+          )}
 
           <div style={S.statRow}>
             <Stat label="Loan amount" value={fmtUSD(result.loanAmount)} />
@@ -259,6 +297,7 @@ const S: Record<string, React.CSSProperties> = {
   bigStat: { display: "flex", flexDirection: "column", gap: 2, paddingBottom: 8, borderBottom: "1px solid #E6F0EC" },
   bigLabel: { fontSize: "0.8rem", fontWeight: 600, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em" },
   bigValue: { fontSize: "2rem", fontWeight: 800, color: PRIMARY, letterSpacing: "-0.02em" },
+  bigSub: { fontSize: "0.8rem", color: "#777", marginTop: 2 },
   plusExtra: { fontSize: "0.9rem", fontWeight: 600, color: "#777" },
   statRow: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 },
   stat: { display: "flex", flexDirection: "column", gap: 1 },

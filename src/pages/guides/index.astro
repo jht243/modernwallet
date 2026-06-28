@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE } from "../../data/site";
+import { GUIDES } from "../../data/guides";
+
+const canonicalUrl = new URL("/guides/", Astro.site).toString();
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Guides", item: canonicalUrl },
+  ],
+};
+---
+<BaseLayout
+  title={`Money Guides — ${SITE.name}`}
+  description="Step-by-step money guides that walk you through buying a home, buying a car, and getting ready to retire — with the calculators for each step."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span class="crumb-current">Guides</span>
+    </nav>
+
+    <header class="hero">
+      <h1>Money guides</h1>
+      <p class="lede">Step-by-step guides that walk you through the big money decisions — and link the calculator for every step.</p>
+    </header>
+
+    <div class="grid">
+      {GUIDES.map((g) => (
+        <a class="gcard" href={`/guides/${g.slug}/`}>
+          <span class="gcard-title">{g.h1}</span>
+          <span class="gcard-blurb">{g.cardBlurb}</span>
+          <span class="gcard-meta">{g.tools.length} tools · {g.sections.length} steps</span>
+        </a>
+      ))}
+    </div>
+  </main>
+
+  <style>
+    .page { max-width: 1000px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 18px; border-bottom: 1px solid #eee; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.4rem; margin: 0 0 12px; }
+    .lede { font-size: 1.15rem; color: #444; max-width: 720px; line-height: 1.6; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    .gcard { display: flex; flex-direction: column; gap: 8px; padding: 22px; border: 1px solid #E0EFE9; border-radius: 14px; background: #fff; text-decoration: none; color: var(--text); transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease; }
+    .gcard:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0,0,0,0.12); }
+    .gcard-title { font-weight: 700; font-size: 1.1rem; line-height: 1.3; }
+    .gcard-blurb { font-size: 0.92rem; color: #555; line-height: 1.5; }
+    .gcard-meta { font-size: 0.8rem; color: #8a9a95; margin-top: 2px; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.9rem; } }
+  </style>
+</BaseLayout>

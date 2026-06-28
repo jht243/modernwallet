@@ -84,7 +84,7 @@ export const CALCULATORS: CalculatorDef[] = [
     targetKeyword: "mortgage calculator",
     h1: "Mortgage Calculator",
     intro:
-      "This mortgage calculator estimates the monthly principal and interest (P&I) payment on a home loan and shows the full amortization schedule. Enter your home price, down payment, interest rate, and term in the calculator above to see your number instantly. One important note: this tool covers principal and interest only. It does not include property taxes, homeowners insurance, PMI, or HOA dues, so your true monthly housing cost will be higher.",
+      "This mortgage calculator estimates the monthly principal and interest (P&I) payment on a home loan and shows the full amortization schedule. Enter your home price, down payment, interest rate, and term in the calculator above to see your number instantly. You can also add property taxes and homeowners insurance to see your full monthly payment, known as PITI (principal, interest, taxes, and insurance) — the number that actually hits your bank account.",
     howItWorks:
       "A mortgage calculator works by spreading your loan amount over the term at a fixed interest rate, then solving for the level monthly payment. Take a common 2026 example: a $400,000 home with $80,000 down leaves a $320,000 loan. At a 6.5% APR over 30 years, the monthly P&I payment is $2,022.62.\n\nHere is the part most buyers miss. In month one, $1,733.33 of that payment goes to interest and only $289.28 goes to principal. Early payments are almost all interest, and principal builds slowly. Over the full 30 years you would pay $408,142 in interest, bringing the total of payments to $728,142. That is why even small extra payments early on can save so much.",
     faqs: [
@@ -130,6 +130,8 @@ export const CALCULATORS: CalculatorDef[] = [
       interestRatePct: 6.5,
       loanTermMonths: 360,
       extraMonthlyPayment: 0,
+      propertyTaxAnnual: 4400, // ~1.1% of $400k — showcases PITI
+      homeInsuranceAnnual: 1800,
     },
   },
 
