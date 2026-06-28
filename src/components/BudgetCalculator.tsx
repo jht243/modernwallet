@@ -60,7 +60,7 @@ export default function BudgetCalculator({ initialData, heading, subheading }: P
             <Money v={income} on={setIncome} />
           </Field>
           {BUCKETS.map((b) => (
-            <div key={b}>
+            <div key={b} style={S.groupCard}>
               <div style={S.groupTitle}>
                 <span>
                   {BUCKET_LABEL[b]}
@@ -174,8 +174,9 @@ const S: Record<string, React.CSSProperties> = {
   modeBtn: { flex: 1, padding: "9px 0", border: "1px solid #D0DAD6", background: "#fff", borderRadius: 8, fontWeight: 600, fontSize: "0.9rem", cursor: "pointer", color: "#444" },
   modeOn: { borderColor: PRIMARY, background: "#E4F4EF", color: PRIMARY },
   grid: { display: "grid", gridTemplateColumns: "minmax(280px, 1.1fr) minmax(260px, 0.9fr)", gap: 24 },
-  inputs: { display: "flex", flexDirection: "column", gap: 10 },
-  groupTitle: { display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 8, marginTop: 4 },
+  inputs: { display: "flex", flexDirection: "column", gap: 14 },
+  groupCard: { border: "1px solid #E3EEE9", borderRadius: 12, padding: "12px 14px 14px", background: "#FAFDFC" },
+  groupTitle: { display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", paddingBottom: 10, marginBottom: 12, borderBottom: "1px solid #E9F1ED" },
   groupTarget: { color: "#9aa6a2", fontWeight: 600 },
   groupSum: { textTransform: "none", letterSpacing: "normal", fontSize: "0.92rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   gridFields: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
