@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-06-27",
+  "lastRun": "2026-06-28",
   "dropped": [
     { "slug": "etf-vs-index-fund", "optionA": "ETF", "optionB": "Index Fund", "reason": "KD 37 — too competitive for current DR", "score": 0.393 },
     { "slug": "heloc-vs-home-equity-loan", "optionA": "HELOC", "optionB": "Home Equity Loan", "reason": "KD 45 — high-authority incumbents dominate SERP", "score": 0.356 },
@@ -8,7 +8,31 @@
     { "slug": "dollar-cost-averaging-vs-lump-sum", "optionA": "Dollar-Cost Averaging", "optionB": "Lump Sum Investing", "reason": "KD 37 + vol 450 — too hard for the volume", "score": 0.255 },
     { "slug": "heloc-vs-cash-out-refinance", "optionA": "HELOC", "optionB": "Cash-Out Refinance", "reason": "KD 46 — too competitive", "score": 0.200 },
     { "slug": "rental-property-vs-stock-market", "optionA": "Rental Property", "optionB": "Stock Market", "reason": "Vol 40 — too low volume", "score": 0.119 },
-    { "slug": "auto-loan-vs-paying-cash", "optionA": "Auto Loan", "optionB": "Paying Cash", "reason": "Zero search volume reported", "score": 0 }
+    { "slug": "auto-loan-vs-paying-cash", "optionA": "Auto Loan", "optionB": "Paying Cash", "reason": "Zero search volume reported", "score": 0 },
+    { "slug": "best-robo-advisors", "format": "roundup", "category": "robo-advisors", "angle": "best", "reason": "Tier 3 — KD 52, highly competitive SERP dominated by NerdWallet/Investopedia", "score": 0.290 },
+    { "slug": "best-credit-cards", "format": "roundup", "category": "credit cards", "angle": "best", "reason": "Tier 3 — KD 68, unreachable for current DR; affiliate-heavy SERP", "score": 0.280 },
+    { "slug": "best-personal-loans", "format": "roundup", "category": "personal loans", "angle": "best", "reason": "Tier 3 — KD 55 + dominated by LendingTree aggregators", "score": 0.270 },
+    { "slug": "best-checking-accounts", "format": "roundup", "category": "checking accounts", "angle": "best", "reason": "Tier 3 — KD 47, hub relevance weak (no checking calculator)", "score": 0.265 },
+    { "slug": "best-savings-accounts", "format": "roundup", "category": "savings accounts", "angle": "best", "reason": "Tier 3 — KD 49, too broad; HYSA angle partially covered by existing compare pages", "score": 0.258 },
+    { "slug": "best-student-loan-refinance", "format": "roundup", "category": "student loan refinance lenders", "angle": "best", "reason": "Tier 3 — KD 43, no student loan calculator hub to anchor internal links", "score": 0.245 },
+    { "slug": "best-high-yield-savings-accounts", "format": "roundup", "category": "high-yield savings accounts", "angle": "best", "reason": "Tier 3 — KD 41, adjacent to hysa-vs-money-market page (partial overlap risk)", "score": 0.238 },
+    { "slug": "best-cd-rates", "format": "roundup", "category": "CD rates", "angle": "best", "reason": "Tier 3 — KD 39 but extremely rate-sensitive; content would decay monthly", "score": 0.225 },
+    { "slug": "best-home-equity-loans", "format": "roundup", "category": "home equity loans", "angle": "best", "reason": "Tier 3 — KD 44, HELOC vs home-equity-loan compare page already covers intent", "score": 0.218 },
+    { "slug": "best-auto-insurance", "format": "roundup", "category": "auto insurance", "angle": "best", "reason": "Tier 3 — KD 58, outside core finance-calculator hub relevance", "score": 0.200 },
+    { "slug": "best-tax-software", "format": "roundup", "category": "tax software", "angle": "best", "reason": "Tier 3 — KD 51, seasonal content; no tax calculator hub", "score": 0.195 },
+    { "slug": "best-life-insurance", "format": "roundup", "category": "life insurance", "angle": "best", "reason": "Tier 3 — KD 55, YMYL compliance overhead high; no existing hub", "score": 0.188 },
+    { "slug": "best-estate-planning-software", "format": "roundup", "category": "estate planning software", "angle": "best", "reason": "Tier 3 — vol 150/mo — too low volume even at KD 9", "score": 0.155 },
+    { "slug": "best-real-estate-crowdfunding", "format": "roundup", "category": "real estate crowdfunding platforms", "angle": "best", "reason": "Tier 3 — vol 800 but KD 42; niche audience vs core calculator users", "score": 0.148 }
   ],
-  "published": []
+  "published": [
+    { "slug": "best-mortgage-lenders", "format": "roundup", "category": "mortgage lenders", "angle": "best", "publishedAt": "2026-06-28" },
+    { "slug": "best-index-funds", "format": "roundup", "category": "index funds", "angle": "best", "publishedAt": "2026-06-28" },
+    { "slug": "best-ira-accounts", "format": "roundup", "category": "IRA accounts", "angle": "best", "publishedAt": "2026-06-28" },
+    { "slug": "best-investment-apps-for-beginners", "format": "roundup", "category": "investment apps", "angle": "best", "segment": "beginners", "publishedAt": "2026-06-28" },
+    { "slug": "best-money-market-accounts", "format": "roundup", "category": "money market accounts", "angle": "best", "publishedAt": "2026-06-28" },
+    { "slug": "best-budgeting-apps-for-couples", "format": "roundup", "category": "budgeting apps", "angle": "best", "segment": "couples", "publishedAt": "2026-06-28" },
+    { "slug": "best-401k-providers-for-small-business", "format": "roundup", "category": "401(k) providers", "angle": "best", "segment": "small business", "publishedAt": "2026-06-28" },
+    { "slug": "best-net-worth-tracker", "format": "roundup", "category": "net worth trackers", "angle": "best", "publishedAt": "2026-06-28" },
+    { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" }
+  ]
 }

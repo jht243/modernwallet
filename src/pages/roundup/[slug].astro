@@ -1,0 +1,275 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Byline from "../../components/Byline.astro";
+import Sources from "../../components/Sources.astro";
+import { SITE, LAST_UPDATED } from "../../data/site";
+import { ROUNDUPS } from "../../data/roundups";
+import { linkify, plain, paragraphs } from "../../lib/richtext";
+import { personSchema, articleSchema } from "../../lib/jsonld";
+import { COMPARISONS } from "../../data/comparisons";
+
+export function getStaticPaths() {
+  return ROUNDUPS
+    .filter((entry) => !entry.draft)
+    .map((entry) => ({
+      params: { slug: entry.slug },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const canonicalUrl = new URL(`/roundup/${entry.slug}/`, Astro.site).toString();
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Roundups", item: new URL("/roundup/", Astro.site).toString() },
+    { "@type": "ListItem", position: 3, name: entry.title, item: canonicalUrl },
+  ],
+};
+
+const jsonLdItemList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: entry.h1,
+  description: entry.metaDescription,
+  url: canonicalUrl,
+  numberOfItems: entry.options.length,
+  itemListElement: entry.options.map((opt, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: opt.name,
+    description: opt.bestFor,
+  })),
+};
+
+const jsonLdFaq = entry.faqs.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: entry.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: plain(f.answer) },
+      })),
+    }
+  : null;
+
+const jsonLdPerson = personSchema();
+const jsonLdArticle = articleSchema({
+  headline: entry.h1,
+  description: entry.metaDescription,
+  url: canonicalUrl,
+  datePublished: LAST_UPDATED,
+  sources: entry.sources,
+});
+
+const relatedEntries = entry.relatedComparisons
+  ? entry.relatedComparisons
+      .map((s) => COMPARISONS.find((c) => c.slug === s))
+      .filter((c): c is NonNullable<typeof c> => c !== undefined)
+  : [];
+---
+<BaseLayout title={entry.title} description={entry.metaDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />
+  {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span>Roundups</span> <span>/</span>
+      <span class="crumb-current">{entry.title}</span>
+    </nav>
+
+    <header class="hero">
+      <h1>{entry.h1}</h1>
+      <Byline />
+      {paragraphs(entry.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
+    </header>
+
+    {entry.rankingCriteria && (
+      <section class="section criteria-section" aria-label="How we ranked">
+        <h2>How we ranked these {entry.category}</h2>
+        {paragraphs(entry.rankingCriteria).map((para) => <p set:html={linkify(para)} />)}
+      </section>
+    )}
+
+    {entry.options.map((opt, i) => (
+      <section class="section option-section" id={opt.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}>
+        <h2><span class="opt-rank">#{i + 1}</span> {opt.name}</h2>
+        <p class="opt-bestfor"><strong>Best for:</strong> {opt.bestFor}</p>
+        {paragraphs(opt.description).map((para) => <p set:html={linkify(para)} />)}
+        <div class="pros-cons">
+          <div class="pros">
+            <h3>Strengths</h3>
+            <ul>{opt.strengths.map((s) => <li set:html={linkify(s)} />)}</ul>
+          </div>
+          <div class="cons">
+            <h3>Limitations</h3>
+            <ul>{opt.limitations.map((l) => <li>{l}</li>)}</ul>
+          </div>
+        </div>
+        <p class="opt-pricing"><strong>Pricing:</strong> {opt.pricing}</p>
+      </section>
+    ))}
+
+    <section class="section table-section" aria-label="Side-by-side comparison">
+      <h2>Comparison: {entry.options.length} {entry.category} at a glance</h2>
+      <div class="table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th scope="col">Option</th>
+              {entry.comparisonTable.headers.map((h) => <th scope="col">{h}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {entry.comparisonTable.rows.map((row) => (
+              <tr>
+                <th scope="row">{row.name}</th>
+                {row.values.map((v) => <td>{v}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section verdict-section">
+      <h2>Our verdict: which should you choose?</h2>
+      <div class="verdict-box">
+        {paragraphs(entry.verdict).map((para) => <p set:html={linkify(para)} />)}
+      </div>
+    </section>
+
+    {entry.sections.map((s) => (
+      <section class="section">
+        <h2>{s.heading}</h2>
+        {s.content.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
+      </section>
+    ))}
+
+    {entry.faqs.length > 0 && (
+      <section class="section">
+        <h2>Frequently asked questions</h2>
+        <div class="faqs">
+          {entry.faqs.map((f) => (
+            <details class="faq">
+              <summary><h3>{f.question}</h3></summary>
+              <p set:html={linkify(f.answer)} />
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {entry.calculatorLinks && entry.calculatorLinks.length > 0 && (
+      <section class="section cta-section">
+        <h2>Free calculators to help you decide</h2>
+        <div class="cta-grid">
+          {entry.calculatorLinks.map((link) => (
+            <a href={link.href} class="cta-card">
+              <span class="cta-label">{link.label}</span>
+              <span class="cta-arrow">→</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <Sources sources={entry.sources} />
+
+    {relatedEntries.length > 0 && (
+      <section class="section">
+        <h2>Related comparisons</h2>
+        <div class="related-grid">
+          {relatedEntries.map((r) => (
+            <a href={`/compare/${r.slug}/`} class="related-card">
+              <span class="related-vs">{r.optionA} vs {r.optionB}</span>
+              <span class="related-title">{r.title}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+
+  <style>
+    .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb a:hover { text-decoration: underline; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
+    .lede:last-of-type { margin-bottom: 0; }
+    .section { padding: 26px 0; border-top: 1px solid #EEF2F0; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .section p { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; margin: 0 0 16px; }
+    .section p:last-child { margin-bottom: 0; }
+    /* Option sections */
+    .opt-rank { display: inline-block; background: var(--primary, #0e7c66); color: #fff; border-radius: 4px; font-size: 0.85rem; padding: 2px 8px; margin-right: 8px; vertical-align: middle; }
+    .opt-bestfor { font-size: 1rem; color: #444; margin: -4px 0 14px; }
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .pros h3, .cons h3 { font-size: 0.95rem; margin: 0 0 8px; color: #1a3a30; }
+    .pros ul, .cons ul { margin: 0; padding-left: 18px; }
+    .pros li, .cons li { font-size: 0.97rem; color: #2c2c2c; line-height: 1.65; margin-bottom: 4px; }
+    .opt-pricing { font-size: 0.97rem; background: #f7faf9; border: 1px solid #e2ece8; border-radius: 6px; padding: 10px 14px; margin-top: 12px; }
+    /* Comparison table */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+    .cmp-table th, .cmp-table td { padding: 10px 12px; text-align: left; border: 1px solid #e2ece8; }
+    .cmp-table thead th { background: #f0f8f5; font-weight: 700; color: #1a3a30; }
+    .cmp-table thead th:first-child { width: 22%; }
+    .cmp-table tbody tr:nth-child(even) td, .cmp-table tbody tr:nth-child(even) th { background: #fafcfb; }
+    .cmp-table th[scope="row"] { font-weight: 600; color: #333; }
+    /* Verdict */
+    .verdict-box {
+      background: linear-gradient(135deg, #f0f9f5 0%, #e6f4ef 100%);
+      border-left: 4px solid var(--primary, #0e7c66); border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+    }
+    .verdict-box p { margin: 0 0 12px; font-size: 1.05rem; line-height: 1.8; color: #1a3a30; }
+    .verdict-box p:last-child { margin-bottom: 0; }
+    /* FAQs */
+    .faqs { display: flex; flex-direction: column; gap: 8px; }
+    .faq { border: 1px solid #eee; border-radius: 8px; padding: 16px 18px; background: #fff; }
+    .faq summary { cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; font-weight: 600; }
+    .faq[open] summary h3 { color: var(--primary-dark, #0a5c4a); }
+    .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
+    /* CTA */
+    .cta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+    .cta-card {
+      display: flex; justify-content: space-between; align-items: center;
+      background: #fff; border: 1px solid #d8eee6; border-radius: 10px;
+      padding: 14px 18px; text-decoration: none; color: var(--primary-dark, #0a5c4a);
+      font-weight: 600; font-size: 0.97rem; transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .cta-card:hover { border-color: var(--primary, #0e7c66); box-shadow: 0 2px 12px rgba(14,124,102,0.10); }
+    .cta-arrow { font-size: 1.1rem; }
+    /* Related */
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 10px; }
+    .related-card {
+      display: flex; flex-direction: column; gap: 4px;
+      background: #fff; border: 1px solid #e8efec; border-radius: 10px;
+      padding: 14px 18px; text-decoration: none; transition: border-color 0.15s;
+    }
+    .related-card:hover { border-color: var(--primary, #0e7c66); }
+    .related-vs { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary-dark, #0a5c4a); }
+    .related-title { font-size: 0.95rem; color: #2c2c2c; font-weight: 500; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .section h2 { font-size: 1.28rem; }
+      .cmp-table th, .cmp-table td { padding: 7px 9px; font-size: 0.87rem; }
+      .pros-cons { grid-template-columns: 1fr; }
+    }
+  </style>
+</BaseLayout>
