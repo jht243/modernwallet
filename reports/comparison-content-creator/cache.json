@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-06-28",
+  "lastRun": "2026-06-29",
   "dropped": [
     { "slug": "etf-vs-index-fund", "optionA": "ETF", "optionB": "Index Fund", "reason": "KD 37 — too competitive for current DR", "score": 0.393 },
     { "slug": "heloc-vs-home-equity-loan", "optionA": "HELOC", "optionB": "Home Equity Loan", "reason": "KD 45 — high-authority incumbents dominate SERP", "score": 0.356 },
@@ -33,6 +33,8 @@
     { "slug": "best-budgeting-apps-for-couples", "format": "roundup", "category": "budgeting apps", "angle": "best", "segment": "couples", "publishedAt": "2026-06-28" },
     { "slug": "best-401k-providers-for-small-business", "format": "roundup", "category": "401(k) providers", "angle": "best", "segment": "small business", "publishedAt": "2026-06-28" },
     { "slug": "best-net-worth-tracker", "format": "roundup", "category": "net worth trackers", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" }
+    { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" },
+    { "slug": "hsa-vs-fsa", "format": "comparison", "optionA": "Health Savings Account (HSA)", "optionB": "Flexible Spending Account (FSA)", "publishedAt": "2026-06-29" },
+    { "slug": "va-loan-vs-conventional-loan", "format": "comparison", "optionA": "VA Loan", "optionB": "Conventional Loan", "publishedAt": "2026-06-29" }
   ]
 }

@@ -928,6 +928,175 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Net worth calculator", href: "/net-worth/" },
     ],
   },
+
+  // ─── 12. HSA vs FSA ──────────────────────────────────────────────────────
+  {
+    slug: "hsa-vs-fsa",
+    title: "HSA vs FSA: Which Account Saves You More?",
+    metaDescription:
+      "HSA vs FSA compared: contribution limits, rollover rules, investment options, and which pre-tax health savings account is right for you in 2025.",
+    targetKeyword: "hsa vs fsa",
+    optionA: "Health Savings Account (HSA)",
+    optionB: "Flexible Spending Account (FSA)",
+    h1: "HSA vs FSA: Which Pre-Tax Health Account Is Right for You?",
+    intro:
+      "An HSA lets you save pre-tax money for medical costs, rolls over every year, and can be invested for long-term growth — but it requires a high-deductible health plan — while an FSA also provides pre-tax savings without that eligibility restriction, though a \"use it or lose it\" rule means unspent balances are forfeited at year-end, making the HSA the better long-term choice for those who qualify.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2025 contribution limit", a: "$4,300 individual / $8,550 family", b: "$3,300 (healthcare FSA)" },
+        { dimension: "Account ownership", a: "You own it — portable when you leave your employer", b: "Employer-owned — typically forfeited when you leave" },
+        { dimension: "Rollover / carryover", a: "Full balance rolls over every year, indefinitely", b: "\"Use it or lose it\" — up to $660 carryover OR 2.5-month grace period (employer's choice)" },
+        { dimension: "Eligible health plan required", a: "Yes — must be enrolled in an HDHP", b: "No — available with most health plan types" },
+        { dimension: "Investment option", a: "Yes — invest in stocks, ETFs, and mutual funds above the cash threshold", b: "No — cash-only, no investment component" },
+        { dimension: "Tax advantage", a: "Triple: pre-tax contributions + tax-free growth + tax-free withdrawals", b: "Double: pre-tax contributions + tax-free qualified withdrawals (no growth)" },
+        { dimension: "Funds available day 1", a: "Only what you've contributed so far this year", b: "Full annual election amount available on day 1 of coverage" },
+      ],
+    },
+    verdict:
+      "Choose an HSA if your employer offers a high-deductible health plan — the triple tax advantage, unlimited rollover, and long-term investment potential make it one of the most powerful savings vehicles in the tax code. Choose an FSA if your health plan doesn't qualify for an HSA, you need the full year's funds available immediately in January, or you have predictable annual medical expenses you know you'll spend. If your employer offers a Limited-Purpose FSA (dental and vision only), you can pair it with an HSA to get benefits from both — but a standard healthcare FSA and an HSA cannot be held simultaneously.",
+    sections: [
+      {
+        heading: "How an HSA works",
+        content:
+          "A Health Savings Account (HSA) is a personal tax-advantaged account you own permanently. Contributions go in pre-tax, grow tax-free when invested, and come out tax-free when used for qualified medical expenses — the only triple tax advantage in the U.S. tax code.\n\nThe key eligibility requirement: you must be enrolled in a High-Deductible Health Plan (HDHP). In 2025, an HDHP is defined as a plan with a minimum deductible of $1,650 for self-only coverage or $3,300 for family coverage. If your employer doesn't offer an HDHP option, you can't open an HSA.\n\nThe rollover rule is the HSA's most underrated feature. Unlike an FSA, your full balance carries forward every year without limit. A 35-year-old who contributes $4,300/year for 30 years and invests at a historical 8% average return would accumulate over $525,000 — and all of it is tax-free for qualified medical expenses. Use the [investment calculator](/investing/) to model HSA growth at your contribution level.\n\nAt age 65, the HSA transforms into something resembling a Traditional IRA: you can withdraw for any purpose and pay ordinary income tax on non-medical withdrawals, with no additional penalty. Medicare premiums are always qualified HSA expenses, tax-free.",
+      },
+      {
+        heading: "How an FSA works",
+        content:
+          "A Flexible Spending Account (FSA) is an employer-sponsored benefit that lets you set aside pre-tax dollars for qualified medical, dental, and vision expenses without requiring a specific type of health plan. The key practical feature: your full annual election amount is available from day one — even before you've contributed those payroll deductions.\n\nThe trade-off is the \"use it or lose it\" rule. Unspent FSA balances at year-end revert to your employer. The IRS allows employers to offer one of two relief options — a carryover of up to $660 to the following plan year, or a 2.5-month grace period — but not both, and not every employer offers either.\n\nThe FSA is entirely employer-controlled. If you leave your job mid-year, your remaining FSA balance is generally forfeited unless you elect COBRA continuation coverage. This portability gap is the sharpest practical difference between the two accounts.\n\nFor families with known large annual medical expenses — scheduled surgeries, braces, or a new baby's pediatric costs — the FSA's front-loading can actually be an advantage. You can charge $3,300 in January and repay it through payroll the rest of the year, effectively getting an interest-free loan from your employer.",
+      },
+      {
+        heading: "The HSA as a long-term retirement savings tool",
+        content:
+          "The most underused HSA strategy is treating it as a \"stealth IRA\" for healthcare costs in retirement. The approach: max the HSA each year, invest the balance in a low-cost stock index fund, pay current medical expenses out of pocket, and save every receipt.\n\nAt retirement, you use those saved receipts to reimburse yourself from the HSA — tax-free, with no time limit on reimbursements for old expenses. Medicare premiums, long-term care insurance, and most healthcare costs in retirement are qualified HSA expenses and can be paid tax-free.\n\nThe compounding advantage is substantial. An HSA invested in an S&P 500 index fund from age 35 to 65 outperforms the same dollars in a taxable savings account by roughly 30–40% on an after-tax basis, solely from eliminating capital gains and dividend taxes along the way.\n\nA non-obvious implication: the HSA is the only savings account where you can contribute pre-tax, earn returns tax-free, AND withdraw tax-free — making its effective return higher than a Roth IRA for qualified medical expenses. See the [net worth calculator](/net-worth/) to factor healthcare costs into your long-term financial picture.",
+      },
+      {
+        heading: "When an FSA beats an HSA",
+        content:
+          "The FSA wins in several scenarios that most comparison articles overlook. First: predictable large early-year expenses. If you're scheduling a $3,000 surgery in January, the FSA lets you access the full $3,300 immediately and repay through payroll deductions — the HSA would only have what you'd contributed since January 1.\n\nSecond: when your employer's health plan doesn't qualify for an HSA. Many popular employer plans — PPOs with low deductibles, HMOs — don't meet the HDHP threshold. If your only option is a $1,000-deductible plan, HSA is off the table and FSA is the only pre-tax health savings option available.\n\nThird: predictable annual spend with no desire to invest. If you reliably spend exactly your FSA election on annual healthcare costs, the FSA's simplicity (no investment decisions, no investment threshold to manage) is genuinely adequate. The triple tax advantage only matters if you have a long-enough time horizon for tax-free growth to accumulate.\n\nFor most people under 50 with an HDHP option, the HSA still wins on math. But the FSA wins on practicality when health plan constraints or near-term cash flow are the primary concern. Use the [retirement calculator](/retirement/) to factor both accounts into your long-term savings plan.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I have both an HSA and an FSA at the same time?",
+        answer:
+          "Not a standard healthcare FSA and an HSA simultaneously — IRS rules prohibit it. However, you can pair an HSA with a Limited-Purpose FSA (LPFSA), which covers only dental and vision expenses. You can also hold a Dependent Care FSA (for childcare costs) alongside an HSA — that's a different type of FSA entirely and has no conflict with HSA eligibility.",
+      },
+      {
+        question: "What happens to my HSA if I switch from an HDHP to a regular health plan?",
+        answer:
+          "Your existing HSA balance stays yours permanently. You just can't make new contributions while enrolled in a non-HDHP plan. The funds already in the account can still be used tax-free for qualified medical expenses at any age, with no deadline. If you switch back to an HDHP later, you can resume contributions.",
+      },
+      {
+        question: "What happens to my FSA if I leave my job?",
+        answer:
+          "Your FSA balance is generally forfeited when you leave your employer unless you elect COBRA continuation coverage to maintain FSA access through year-end. The FSA is employer-owned — unlike an HSA, you can't take it with you. This is one of the strongest arguments for spending your FSA down before leaving a job and for contributing conservatively if job security is uncertain.",
+      },
+      {
+        question: "Is an HSA or FSA better for taxes?",
+        answer:
+          "The HSA is better for taxes in almost every scenario where you qualify. It provides a triple tax advantage: pre-tax contributions reduce your taxable income, growth is tax-free when invested, and withdrawals for medical expenses are tax-free. An FSA gives you the first and third benefit but not tax-free growth (no investment option). For someone in the 22% tax bracket saving $4,300/year in an HSA, the immediate income tax savings alone is about $946 — plus investment growth over time.",
+      },
+      {
+        question: "What qualifies as a medical expense for HSA and FSA?",
+        answer:
+          "Both accounts cover the same IRS-defined list: doctor visits, prescription drugs, dental care, vision care (including LASIK), mental health services, surgery, hospital fees, and many medical devices. After the 2020 CARES Act, over-the-counter medications and menstrual care products are eligible for both without a prescription. Cosmetic procedures, gym memberships, and non-prescription vitamins are generally not qualified expenses. The full list is in IRS Publication 502.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Publication 969: Health Savings Accounts", url: "https://www.irs.gov/publications/p969" },
+      { label: "IRS — Publication 502: Medical and Dental Expenses", url: "https://www.irs.gov/publications/p502" },
+      { label: "IRS — HSA contribution limits 2025", url: "https://www.irs.gov/newsroom/irs-announces-2025-hsa-limits" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "hysa-vs-money-market"],
+    calculatorLinks: [
+      { label: "Investment growth calculator", href: "/investing/" },
+      { label: "Net worth calculator", href: "/net-worth/" },
+      { label: "Retirement calculator", href: "/retirement/" },
+    ],
+  },
+
+  // ─── 13. VA Loan vs Conventional Loan ────────────────────────────────────
+  {
+    slug: "va-loan-vs-conventional-loan",
+    title: "VA Loan vs Conventional Loan: Which Saves More?",
+    metaDescription:
+      "VA loan vs conventional loan compared: down payment, funding fee vs PMI, interest rates, eligibility, and which mortgage saves veterans the most money.",
+    targetKeyword: "va loan vs conventional loan",
+    optionA: "VA Loan",
+    optionB: "Conventional Loan",
+    h1: "VA Loan vs Conventional Loan: Which Mortgage Is Better for Veterans?",
+    intro:
+      "A VA loan gives eligible veterans and service members 0% down payment and no monthly PMI — two features that save thousands upfront and hundreds per month — while a conventional loan is available to anyone but requires 3–20% down and PMI until 20% equity is reached, making the VA loan the financially superior choice for most eligible borrowers.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Minimum down payment", a: "0% — no down payment required", b: "3% for first-time buyers; 5% for repeat buyers (conventional conforming)" },
+        { dimension: "Monthly PMI", a: "None — ever, regardless of down payment", b: "Required below 20% equity; typically 0.5–1.5%/year of loan balance" },
+        { dimension: "One-time funding fee", a: "1.25–3.3% of loan amount (waived for veterans with 10%+ disability rating)", b: "None (standard closing costs apply)" },
+        { dimension: "Interest rate advantage", a: "Typically 0.25–0.5% lower than comparable conventional rate", b: "Market rate — varies by credit score, LTV, and lender" },
+        { dimension: "Minimum credit score", a: "No VA minimum; most lenders require 580–620+", b: "620+ for conforming loans; 680+ for best rates" },
+        { dimension: "Eligibility", a: "Active duty, veterans, National Guard/Reserves (6 years), surviving spouses — requires Certificate of Eligibility", b: "Anyone with qualifying income and credit — no service requirement" },
+        { dimension: "Property types allowed", a: "Primary residence only — no investment properties or vacation homes", b: "Primary residence, second home, and investment properties" },
+      ],
+    },
+    verdict:
+      "Choose a VA loan if you or your spouse has qualifying military service — the combination of no down payment, no monthly PMI, and lower interest rates saves most borrowers $200–$500 per month versus a comparable conventional loan with less than 20% down. The one-time funding fee (1.25–3.3%) is typically offset by PMI savings within 18–36 months. Choose a conventional loan when you don't have VA eligibility, when you plan to buy an investment property (VA is primary residence only), or when you can put 20% down and eliminate PMI entirely — at which point the rate difference is smaller and no funding fee applies.",
+    sections: [
+      {
+        heading: "How the VA funding fee compares to conventional PMI",
+        content:
+          "The most common misconception about the VA loan is that the funding fee makes it more expensive than conventional. In almost every scenario for borrowers with less than 20% down, that's wrong.\n\nHere's the math: A first-time VA borrower with 0% down pays a 2.15% funding fee — $7,525 on a $350,000 loan. A conventional borrower with 5% down pays zero upfront fee but pays PMI of approximately 0.8% per year — $2,660/year or $222/month — until reaching 20% equity, which typically takes 7–12 years on a standard amortization schedule.\n\nOn that $350,000 loan, the VA borrower's one-time funding fee ($7,525) is fully offset by PMI savings in about 3.4 years. After that, the VA borrower saves $222/month indefinitely — and that's before factoring in the lower interest rate on the VA loan itself. Use the [mortgage calculator](/mortgage/) to run the full comparison at your loan amount and down payment.\n\nVeterans with a service-connected disability rating of 10% or more are completely exempt from the funding fee, making the VA loan savings even larger. Surviving spouses of veterans who died in service or from a service-connected disability are also exempt.",
+      },
+      {
+        heading: "VA loan interest rates vs conventional rates",
+        content:
+          "VA loans consistently carry lower interest rates than conventional mortgages — typically 0.25–0.50 percentage points below comparable 30-year conventional rates. That gap sounds modest, but compounded over 30 years it's substantial: a 0.375% rate advantage on a $400,000 loan saves about $90/month and roughly $32,400 in total interest.\n\nThe rate advantage exists because the Department of Veterans Affairs guarantees 25% of each VA loan against default, which dramatically reduces lender risk. Lenders pass part of that reduced risk to borrowers through lower rates.\n\nNot all lenders price the VA rate advantage equally. Veterans-focused lenders like Navy Federal Credit Union, USAA, and dedicated VA mortgage specialists tend to offer the most competitive rates. Always compare at least three lenders — the gap between the best and worst VA rate offer can exceed the typical VA-vs-conventional rate difference for borrowers with strong credit.\n\nUse the [VA loan calculator](/mortgage/va-loan-calculator/) to model your exact monthly payment and total interest at current rates.",
+      },
+      {
+        heading: "When a conventional loan beats a VA loan",
+        content:
+          "Despite the VA loan's financial advantages for most eligible borrowers, conventional loans win in specific situations.\n\nInvestment properties: VA loans are strictly limited to primary residences you intend to occupy. If you want to buy a rental property, a vacation home, or a multi-unit building you won't live in, you need a conventional loan. Many veterans use a VA loan for their primary residence and conventional financing for their real estate investment portfolio.\n\nRepeat VA use with equity: The funding fee increases for subsequent VA loan use (3.3% vs 2.15% for first-time users with 0% down). A veteran who can put 20% down on a second or third home purchase may prefer a conventional loan — no funding fee, no PMI (since the down payment eliminates it), and rates that may be competitive at higher credit scores.\n\nCondo complications: Not all condominiums are VA-approved, and the VA approval process for condo communities can be lengthy. In a competitive condo market where a competing conventional offer can close faster, the timing disadvantage may matter. Use the [home affordability calculator](/mortgage/home-affordability-calculator/) to evaluate what you can qualify for under each loan type.",
+      },
+      {
+        heading: "How to qualify for a VA loan: eligibility and the COE",
+        content:
+          "VA loan eligibility is based on your length and character of military service. The general rules: veterans who served at least 90 consecutive days during wartime or 181 days during peacetime qualify. National Guard and Reserve members need at least 6 years of service or 90 days of active duty under Title 10 or Title 32 orders. Active-duty service members qualify after 90 continuous days. Surviving spouses of eligible veterans may also qualify.\n\nTo use a VA loan, you need a Certificate of Eligibility (COE). Most VA-approved lenders can pull your COE electronically through the VA's portal in minutes as part of the loan application — it rarely requires paperwork on your part.\n\nA key underwriting difference from conventional loans: the VA evaluates residual income — the money left over after all monthly debts and living expenses — in addition to the standard debt-to-income ratio. This more holistic approach makes VA loans more accessible to veterans with higher debt loads than conventional lenders would approve.\n\nThe VA loan benefit can be used repeatedly, but full entitlement is generally restored after selling the prior VA-financed home and repaying the loan. Use the [down payment calculator](/mortgage/down-payment-calculator/) to see how different down payment amounts affect your monthly payment under each loan type.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a VA loan always better than a conventional loan for veterans?",
+        answer:
+          "For most eligible veterans buying a primary residence with less than 20% down, yes. The VA loan's combination of no PMI, lower rates, and 0% down saves $200–$500/month in most scenarios. Exceptions: investment properties (VA requires primary residence), condos without VA approval, or veterans putting 20%+ down who want to skip the funding fee and have minimal rate difference.",
+      },
+      {
+        question: "What is the VA loan funding fee and who is exempt?",
+        answer:
+          "The VA funding fee is a one-time charge of 1.25–3.3% of the loan amount, typically rolled into the loan balance. It funds the VA guarantee program so it costs taxpayers nothing. Veterans with a service-connected disability rating of 10% or higher are completely exempt — saving $4,375–$11,550 on a typical $350,000 loan. Purple Heart recipients and surviving spouses of veterans who died in service or from a service-connected disability are also exempt.",
+      },
+      {
+        question: "Can a veteran use a VA loan more than once?",
+        answer:
+          "Yes. VA loan benefits can be used multiple times. The funding fee increases on subsequent uses without a down payment (3.3% vs 2.15% for first-time users), but the benefit remains available. You can restore full VA entitlement by selling the prior home and repaying the VA loan, or use \"bonus entitlement\" to hold a second VA loan while keeping the first property.",
+      },
+      {
+        question: "Does a VA loan require a down payment?",
+        answer:
+          "No down payment is required on a VA loan. Veterans can purchase a home up to the conforming loan limit with 0% down, and since 2020 there is no VA loan limit for eligible veterans with full entitlement — meaning you can buy above the conforming loan limit with 0% down. However, making a down payment of 5% or more reduces the funding fee, which lowers your upfront cost.",
+      },
+    ],
+    sources: [
+      { label: "U.S. Department of Veterans Affairs — VA home loans", url: "https://www.benefits.va.gov/homeloans/" },
+      { label: "VA — VA loan funding fee tables", url: "https://www.benefits.va.gov/homeloans/purchasecashout_fees.asp" },
+      { label: "CFPB — VA loan basics", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-va-loan-en-1567/" },
+    ],
+    relatedComparisons: ["15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying"],
+    calculatorLinks: [
+      { label: "Mortgage calculator", href: "/mortgage/" },
+      { label: "VA loan calculator", href: "/mortgage/va-loan-calculator/" },
+      { label: "Home affordability calculator", href: "/mortgage/home-affordability-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
