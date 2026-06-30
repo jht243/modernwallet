@@ -1,0 +1,21 @@
+{
+  "_note": "Competitor Publishing Monitor roster for themodernwallet.com (personal-finance calculators + guides). Confirm/edit. `niche` drives the relevance gate.",
+  "niche": {
+    "include": ["loan", "loans", "mortgage", "refinance", "retirement", "invest", "investing", "investment", "savings", "save money", "debt", "credit", "credit card", "interest", "apr", "amortization", "401k", "ira", "roth", "net worth", "budget", "budgeting", "tax", "taxes", "calculator", "finance", "financial", "rent", "rental", "payment", "compound interest", "annuity", "payoff", "mortgage rates", "auto loan", "personal finance"],
+    "exclude": ["crypto", "cryptocurrency", "bitcoin", "ethereum", "nft", "web3", "defi", "forex", "casino", "sports betting", "gambling"]
+  },
+  "competitors": [
+    { "name": "Calculator.net", "domain": "calculator.net" },
+    { "name": "Omni Calculator", "domain": "omnicalculator.com" },
+    { "name": "The Calculator Site", "domain": "thecalculatorsite.com" },
+    { "name": "MortgageCalculator.org", "domain": "mortgagecalculator.org" },
+    { "name": "SmartAsset", "domain": "smartasset.com" },
+    { "name": "Bankrate", "domain": "bankrate.com" },
+    { "name": "NerdWallet", "domain": "nerdwallet.com" },
+    { "name": "CalcXML", "domain": "calcxml.com" },
+    { "name": "Dinkytown", "domain": "dinkytown.net" },
+    { "name": "Financial Mentor", "domain": "financialmentor.com" },
+    { "name": "Investor.gov", "domain": "investor.gov" },
+    { "name": "Investopedia", "domain": "investopedia.com" }
+  ]
+}
