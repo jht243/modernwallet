@@ -21,13 +21,44 @@ const year = 2026;
       <p class="tagline">{SITE.description}</p>
     </div>
 
-    <nav class="ftr-links" aria-label="Footer">
-      <span class="grp-title">Calculators</span>
-      <div class="links-grid">
-        <a href="/calculators/">All calculators</a>
-        {calcs.map((c) => <a href={`/${c.id}/`}>{c.label}</a>)}
-      </div>
-    </nav>
+    <div class="ftr-navs">
+      <nav class="ftr-links" aria-label="Footer calculators">
+        <span class="grp-title">Calculators</span>
+        <div class="links-grid">
+          <a href="/calculators/">All calculators</a>
+          {calcs.map((c) => <a href={`/${c.id}/`}>{c.label}</a>)}
+        </div>
+      </nav>
+
+      <nav class="ftr-links" aria-label="Footer comparisons">
+        <span class="grp-title">Comparisons</span>
+        <div class="links-grid links-grid--cmp">
+          <a href="/compare/401k-vs-roth-ira/">401(k) vs Roth IRA</a>
+          <a href="/compare/roth-401k-vs-traditional-401k/">Roth vs Traditional 401(k)</a>
+          <a href="/compare/529-vs-roth-ira/">529 vs Roth IRA</a>
+          <a href="/compare/etf-vs-mutual-fund/">ETF vs Mutual Fund</a>
+          <a href="/compare/hsa-vs-fsa/">HSA vs FSA</a>
+          <a href="/compare/va-loan-vs-conventional-loan/">VA Loan vs Conventional</a>
+          <a href="/compare/15-year-vs-30-year-mortgage/">15 vs 30-Year Mortgage</a>
+          <a href="/compare/fixed-vs-arm-mortgage/">Fixed vs ARM Mortgage</a>
+          <a href="/compare/hysa-vs-money-market/">HYSA vs Money Market</a>
+          <a href="/compare/stocks-vs-bonds/">Stocks vs Bonds</a>
+        </div>
+      </nav>
+
+      <nav class="ftr-links" aria-label="Footer guides">
+        <span class="grp-title">Guides &amp; Best-of</span>
+        <div class="links-grid links-grid--cmp">
+          <a href="/guides/first-time-home-buyer-guide/">First-Time Home Buyer</a>
+          <a href="/guides/how-to-buy-a-car/">How to Buy a Car</a>
+          <a href="/roundup/best-401k-providers-for-small-business/">Best 401(k) Providers</a>
+          <a href="/roundup/best-budgeting-apps-for-couples/">Best Budgeting Apps</a>
+          <a href="/roundup/best-money-market-accounts/">Best Money Market Accounts</a>
+          <a href="/roundup/best-net-worth-tracker/">Best Net Worth Trackers</a>
+          <a href="/roundup/best-retirement-accounts-for-self-employed/">Best Retirement Accounts</a>
+        </div>
+      </nav>
+    </div>
   </div>
 
   <div class="ftr-legal">
@@ -56,12 +87,14 @@ const year = 2026;
   .brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; }
   .brand span { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.02em; }
   .tagline { font-size: 0.85rem; line-height: 1.5; color: #7B948C; margin: 8px 0 0; }
-  .ftr-links { margin-left: auto; }
+  .ftr-navs { margin-left: auto; display: flex; gap: 36px 48px; flex-wrap: wrap; align-items: flex-start; }
+  .ftr-links { }
   .grp-title { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: #5A726A; font-weight: 700; margin-bottom: 10px; }
   .links-grid {
     display: grid; grid-auto-flow: column; grid-template-rows: repeat(4, auto);
     gap: 8px 48px;
   }
+  .links-grid--cmp { grid-template-rows: repeat(5, auto); gap: 8px 36px; }
   .links-grid a { color: #C2D2CC; text-decoration: none; font-size: 0.88rem; white-space: nowrap; }
   .links-grid a:hover { color: #fff; }
   .ftr-legal {
@@ -76,7 +109,7 @@ const year = 2026;
   .ftr-legal a:hover { color: #fff; text-decoration: underline; }
   @media (max-width: 560px) {
     .ftr-inner { gap: 24px; }
-    .ftr-links { margin-left: 0; }
+    .ftr-navs { margin-left: 0; }
     .links-grid { gap: 8px 32px; }
   }
 </style>
