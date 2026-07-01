@@ -204,7 +204,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "hysa-vs-money-market",
     title: "HYSA vs Money Market Account: Which Pays You More?",
     metaDescription:
-      "High-yield savings account vs money market account: APY comparison, FDIC insurance, access, and which earns more for your cash in 2024.",
+      "High-yield savings account vs money market account: APY comparison, FDIC insurance, access, and which earns more for your cash in 2026.",
     targetKeyword: "hysa vs money market account",
     optionA: "High-Yield Savings Account (HYSA)",
     optionB: "Money Market Account",
