@@ -1,0 +1,58 @@
+keyword,action,target_page_or_new_url,lens,tier,volume,notes,best_medium,resolved_deliverable
+how to make a budget,update existing body text,/budget/,Lens 1 (competitor gap),core,1830000,budget hub body expansion,n/a,n/a
+how to invest in stocks,update existing body text,/investing/,Lens 1 (competitor gap),core,673000,investing hub body expansion,n/a,n/a
+car loan calculator,update existing metadata,/auto-loan/,Lens 1 (competitor gap),core,550000,core-auto-loan synonym,n/a,n/a
+high yield savings account,update existing body text,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),core,550000,HYSA spoke body expansion,n/a,n/a
+investment strategies,update existing body text,/investing/,Lens 1 (competitor gap),core,550000,investing hub body expansion,n/a,n/a
+investment calculator,update existing metadata,/investing/,Lens 1 (competitor gap),core,450000,core-investing synonym,n/a,n/a
+real estate investing,update existing body text,/real-estate/,Lens 1 (competitor gap),core,450000,real-estate body expansion,n/a,n/a
+investment basics,update existing body text,/investing/,Lens 1 (competitor gap),core,301000,investing hub body expansion,n/a,n/a
+401k,update existing metadata,/retirement/401k-calculator/,Lens 1 (competitor gap),core,246000,401k spoke head-term enrichment,n/a,n/a
+mortgage payment calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,165000,core-mortgage synonym,n/a,n/a
+loan payment calculator,update existing metadata,/auto-loan/,Lens 1 (competitor gap),core,110000,core-auto-loan synonym,n/a,n/a
+best high yield savings account,update existing body text,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),core,90500,HYSA spoke body expansion,n/a,n/a
+home loan calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,74000,core-mortgage synonym,n/a,n/a
+high interest savings account,update existing metadata,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),core,74000,HYSA spoke synonym,n/a,n/a
+best high yield savings accounts,update existing body text,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),core,60500,HYSA spoke body expansion,n/a,n/a
+savings calculator,update existing metadata,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),core,49500,HYSA spoke synonym,n/a,n/a
+mortgage loan calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,40500,core-mortgage synonym,n/a,n/a
+mortgage estimator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,33100,core-mortgage synonym,n/a,n/a
+how to calculate mortgage payments,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,33100,core-mortgage synonym,n/a,n/a
+how to create a family budget,update existing body text,/budget/,Lens 1 (competitor gap),core,27100,budget hub body expansion,n/a,n/a
+home mortgage calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,22200,core-mortgage synonym,n/a,n/a
+mortgage calc,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,22200,core-mortgage synonym,n/a,n/a
+calculate mortgage payment,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,22200,core-mortgage synonym,n/a,n/a
+monthly mortgage calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,18100,core-mortgage synonym,n/a,n/a
+free mortgage calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,14800,core-mortgage synonym,n/a,n/a
+reverse mortgage calculator,create new content,/mortgage/reverse-mortgage-calculator/,Lens 1 (competitor gap),core,14800,mortgage spoke (new),interactive tool,interactive tool
+online mortgage calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,12100,core-mortgage synonym,n/a,n/a
+heloc calculator: how much can i borrow,create new content,/mortgage/heloc-calculator/,Lens 1 (competitor gap),core,9900,mortgage spoke (new),interactive tool,interactive tool
+commercial mortgage calculator,create new content,/mortgage/commercial-mortgage-calculator/,Lens 1 (competitor gap),core,8100,mortgage spoke (new),interactive tool,interactive tool
+30 year mortgage calculator,update existing metadata,/mortgage/,Lens 1 (competitor gap),core,6600,core-mortgage synonym,n/a,n/a
+passive income ideas,create new content,/guides/passive-income-ideas/,Lens 1 (competitor gap),adjacent,1830000,adjacent guide,text,text
+tax tips,create new content,/guides/tax-tips/,Lens 1 (competitor gap),adjacent,1830000,adjacent guide,text,text
+tax calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,823000,new-hub tax,interactive tool,interactive tool
+inflation calculator,create new content,/inflation-calculator/,Lens 1 (competitor gap),adjacent,450000,standalone calculator (low difficulty),interactive tool,interactive tool
+salary calculator,create new content,/paycheck/,Lens 1 (competitor gap),adjacent,201000,new-hub paycheck,interactive tool,interactive tool
+income tax calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,90500,new-hub tax,interactive tool,interactive tool
+hysa,update existing metadata,/investing/high-yield-savings-calculator/,Lens 1 (competitor gap),adjacent,74000,HYSA spoke synonym,n/a,n/a
+how to choose a financial advisor,create new content,/guides/how-to-choose-a-financial-advisor/,Lens 1 (competitor gap),adjacent,74000,adjacent guide,text,text
+tax refund calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,74000,new-hub tax,interactive tool,interactive tool
+money market account,create new content,/guides/money-market-account/,Lens 1 (competitor gap),adjacent,60500,adjacent guide,text,text
+tax calculator 2025,create new content,/tax/,Lens 1 (competitor gap),adjacent,33100,new-hub tax,interactive tool,interactive tool
+salary paycheck calculator,create new content,/paycheck/,Lens 1 (competitor gap),adjacent,27100,new-hub paycheck,interactive tool,interactive tool
+paycheck tax calculator,create new content,/paycheck/,Lens 1 (competitor gap),adjacent,22200,new-hub paycheck,interactive tool,interactive tool
+tax calculator 2026,create new content,/tax/,Lens 1 (competitor gap),adjacent,22200,new-hub tax,interactive tool,interactive tool
+tax estimator,create new content,/tax/,Lens 1 (competitor gap),adjacent,22200,new-hub tax,interactive tool,interactive tool
+capital gains tax calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,14800,new-hub tax,interactive tool,interactive tool
+federal income tax calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,14800,new-hub tax,interactive tool,interactive tool
+nyc tax calculator,create new content,/tax/nyc-tax-calculator/,Lens 1 (competitor gap),adjacent,14800,state tax spoke,interactive tool,interactive tool
+nyc income tax calculator,create new content,/tax/nyc-tax-calculator/,Lens 1 (competitor gap),adjacent,14800,state tax spoke,interactive tool,interactive tool
+take home salary estimator,create new content,/paycheck/,Lens 1 (competitor gap),adjacent,14800,new-hub paycheck,interactive tool,interactive tool
+california tax calculator,create new content,/tax/california-tax-calculator/,Lens 1 (competitor gap),adjacent,14800,state tax spoke,interactive tool,interactive tool
+salary calculator california,create new content,/paycheck/california-paycheck-calculator/,Lens 1 (competitor gap),adjacent,14800,state paycheck spoke,interactive tool,interactive tool
+net income calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,14800,new-hub tax,interactive tool,interactive tool
+new york salary calculator,create new content,/paycheck/new-york-paycheck-calculator/,Lens 1 (competitor gap),adjacent,12100,state paycheck spoke,interactive tool,interactive tool
+debt snowball,create new content,/budget/debt-snowball-calculator/,Lens 1 (competitor gap),adjacent,12100,budget spoke (new),interactive tool,interactive tool
+income tax calculator nevada,create new content,/tax/nevada-tax-calculator/,Lens 1 (competitor gap),adjacent,9900,state tax spoke,interactive tool,interactive tool
+effective tax rate calculator,create new content,/tax/,Lens 1 (competitor gap),adjacent,6600,new-hub tax,interactive tool,interactive tool

@@ -1,0 +1,1041 @@
+{
+  "our_domain": "themodernwallet.com",
+  "database": "us",
+  "competitors": [
+    "calculator.net",
+    "bankrate.com",
+    "nerdwallet.com",
+    "smartasset.com",
+    "investopedia.com",
+    "mortgagecalculator.org",
+    "ramseysolutions.com",
+    "fidelity.com"
+  ],
+  "our_organic_count": 3,
+  "tracked_count": 1406,
+  "gap_count": 102,
+  "core_count": 59,
+  "adjacent_count": 43,
+  "gaps": [
+    {
+      "keyword": "how to make a budget",
+      "volume": 1830000,
+      "kd": 0.41,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 6,
+      "comp_url": "https://www.nerdwallet.com/finance/learn/budget-worksheet",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "mortgage rates today",
+      "volume": 823000,
+      "kd": 0.37,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage rates",
+      "volume": 673000,
+      "kd": 0.3,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "how to invest in stocks",
+      "volume": 673000,
+      "kd": 0.52,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/learning-center/trading-investing/investing-for-beginners",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "car loan calculator",
+      "volume": 550000,
+      "kd": 0.19,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.calculator.net/auto-loan-calculator.html",
+      "competitor": "calculator.net"
+    },
+    {
+      "keyword": "high yield savings account",
+      "volume": 550000,
+      "kd": 0.32,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "investment strategies",
+      "volume": 550000,
+      "kd": 0.01,
+      "intent": "0,1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.investopedia.com/investing/investing-strategies/",
+      "competitor": "investopedia.com"
+    },
+    {
+      "keyword": "investment calculator",
+      "volume": 450000,
+      "kd": 0.05,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.calculator.net/investment-calculator.html",
+      "competitor": "calculator.net"
+    },
+    {
+      "keyword": "real estate investing",
+      "volume": 450000,
+      "kd": 0.1,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.nerdwallet.com/investing/learn/5-ways-to-invest-in-real-estate",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "current mortgage rates",
+      "volume": 301000,
+      "kd": 0.52,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 4,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "investment basics",
+      "volume": 301000,
+      "kd": 0.24,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.fidelity.com/learning-center/trading-investing/investing-for-beginners",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "roth ira",
+      "volume": 301000,
+      "kd": 0.59,
+      "intent": "0,1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/retirement/roth-ira",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "401k",
+      "volume": 246000,
+      "kd": 0.16,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/learning-center/smart-money/what-is-a-401k",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "30 year mortgage rates",
+      "volume": 165000,
+      "kd": 0.25,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.bankrate.com/mortgages/30-year-mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage payment calculator",
+      "volume": 165000,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "mortgage quote",
+      "volume": 165000,
+      "kd": 0.26,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage rates news",
+      "volume": 165000,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage",
+      "volume": 135000,
+      "kd": 0.3,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "refinance mortgage rates",
+      "volume": 135000,
+      "kd": 0.68,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/refinance-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "roth ira calculator",
+      "volume": 110000,
+      "kd": 0.19,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.calculator.net/roth-ira-calculator.html",
+      "competitor": "calculator.net"
+    },
+    {
+      "keyword": "loan payment calculator",
+      "volume": 110000,
+      "kd": 0.22,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/loans/loan-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "best high yield savings account",
+      "volume": 90500,
+      "kd": 0.76,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "home equity loan rates",
+      "volume": 90500,
+      "kd": 0.7,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/home-equity/home-equity-loan-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "home loan calculator",
+      "volume": 74000,
+      "kd": 0.53,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "high interest savings account",
+      "volume": 74000,
+      "kd": 0.54,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "high yield savings account rates",
+      "volume": 60500,
+      "kd": 0.71,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "best high yield savings accounts",
+      "volume": 60500,
+      "kd": 0.76,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "bankrate mortgage calculator",
+      "volume": 49500,
+      "kd": 0.01,
+      "intent": "2,3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "savings calculator",
+      "volume": 49500,
+      "kd": 0.1,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/banking/savings/simple-savings-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "401k fidelity",
+      "volume": 49500,
+      "kd": 0.02,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://netbenefits.fidelity.com/",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "mortgage loan calculator",
+      "volume": 40500,
+      "kd": 0.28,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "nerdwallet mortgage calculator",
+      "volume": 33100,
+      "kd": 0.05,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/mortgages/calculators/mortgage-calculator",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "mortgage estimator",
+      "volume": 33100,
+      "kd": 0.62,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "how to calculate mortgage payments",
+      "volume": 33100,
+      "kd": 0.49,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "mortgage rate calculator",
+      "volume": 27100,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "how to create a family budget",
+      "volume": 27100,
+      "kd": 0.66,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/budgeting/how-to-create-a-family-budget",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "home mortgage calculator",
+      "volume": 22200,
+      "kd": 0.42,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "mortgage calc",
+      "volume": 22200,
+      "kd": 0.31,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "calculate mortgage payment",
+      "volume": 22200,
+      "kd": 0.52,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "dave ramsey investment calculator",
+      "volume": 22200,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "nerdwallet mortgage rates",
+      "volume": 18100,
+      "kd": 0.11,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/mortgages/mortgage-rates",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "monthly mortgage calculator",
+      "volume": 18100,
+      "kd": 0.5,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "bankrate mortgage rates",
+      "volume": 14800,
+      "kd": 0.02,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/30-year-mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "free mortgage calculator",
+      "volume": 14800,
+      "kd": 0.47,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "reverse mortgage calculator",
+      "volume": 14800,
+      "kd": 0.61,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/calcs/reverse-mortgage.php",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "ramsey investment calculator",
+      "volume": 14800,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "online mortgage calculator",
+      "volume": 12100,
+      "kd": 0.04,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "dave ramsey mortgage calculator",
+      "volume": 12100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "ramsey retirement calculator",
+      "volume": 12100,
+      "kd": 0.02,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/retirement-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "heloc calculator: how much can i borrow",
+      "volume": 9900,
+      "kd": 0.55,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/calcs/heloc.php",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "commercial mortgage calculator",
+      "volume": 8100,
+      "kd": 0.18,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/calcs/commercial.php",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "ramsey mortgage calculator",
+      "volume": 8100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "ramsey invest calc",
+      "volume": 8100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "early mortgage payoff calculator",
+      "volume": 8100,
+      "kd": 0.04,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "30 year mortgage calculator",
+      "volume": 6600,
+      "kd": 0.47,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "mortgage early payoff calculator",
+      "volume": 5400,
+      "kd": 0.04,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "mortgage calculator pay",
+      "volume": 5400,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "smartasset retirement calculator",
+      "volume": 2900,
+      "kd": 0.02,
+      "intent": "2,3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/retirement/retirement-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "ramsey mortgage payoff calculator",
+      "volume": 2900,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "passive income ideas",
+      "volume": 1830000,
+      "kd": 0.48,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://www.fidelity.com/learning-center/smart-money/passive-income-ideas",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "tax tips",
+      "volume": 1830000,
+      "kd": 0.13,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 5,
+      "comp_url": "https://www.fidelity.com/learning-center/personal-finance/no-tax-on-tips",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "tax calculator",
+      "volume": 823000,
+      "kd": 0.06,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 4,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "best credit cards",
+      "volume": 673000,
+      "kd": 0.69,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "inflation calculator",
+      "volume": 450000,
+      "kd": 0.02,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.calculator.net/inflation-calculator.html",
+      "competitor": "calculator.net"
+    },
+    {
+      "keyword": "renters insurance quotes",
+      "volume": 246000,
+      "kd": 0.03,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/insurance/renters/renters-insurance-quotes",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "term life insurance",
+      "volume": 246000,
+      "kd": 0.08,
+      "intent": "0,1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/wealth/term-life-insurance",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "salary calculator",
+      "volume": 201000,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.calculator.net/salary-calculator.html",
+      "competitor": "calculator.net"
+    },
+    {
+      "keyword": "victoria secret credit card",
+      "volume": 165000,
+      "kd": 0.05,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 5,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/learn/victorias-secret-credit-card",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "home insurance quotes",
+      "volume": 135000,
+      "kd": 0.31,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/insurance/homeowners/home-insurance-quotes",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "income tax calculator",
+      "volume": 90500,
+      "kd": 0.08,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "hysa",
+      "volume": 74000,
+      "kd": 0.76,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/banking/best/high-yield-online-savings-accounts",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "cashback credit cards",
+      "volume": 74000,
+      "kd": 0.34,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best/cash-back",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "how to choose a financial advisor",
+      "volume": 74000,
+      "kd": 0.63,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://www.nerdwallet.com/financial-advisors/learn/how-to-choose-a-financial-advisor",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "what is a family trust",
+      "volume": 74000,
+      "kd": 0.24,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://smartasset.com/financial-advisor/family-trust",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "tax refund calculator",
+      "volume": 74000,
+      "kd": 0.24,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 9,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "money market account",
+      "volume": 60500,
+      "kd": 0.53,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/banking/money-market/rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "best credit cards 2025",
+      "volume": 60500,
+      "kd": 0.58,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "tax calculator 2025",
+      "volume": 33100,
+      "kd": 0.31,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 4,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "nerdwallet credit cards",
+      "volume": 27100,
+      "kd": 0.61,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "salary paycheck calculator",
+      "volume": 27100,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "tax calculator tax calculator tax calculator",
+      "volume": 27100,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "nerdwallet best credit cards",
+      "volume": 22200,
+      "kd": 0.64,
+      "intent": "0,2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "paycheck tax calculator",
+      "volume": 22200,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "tax calculator 2026",
+      "volume": 22200,
+      "kd": 0.21,
+      "intent": "0,1",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "tax estimator",
+      "volume": 22200,
+      "kd": 0.37,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "capital gains tax calculator",
+      "volume": 14800,
+      "kd": 0.1,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/investing/capital-gains-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "federal income tax calculator",
+      "volume": 14800,
+      "kd": 0.09,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "nyc tax calculator",
+      "volume": 14800,
+      "kd": 0.03,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/new-york-paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "nyc income tax calculator",
+      "volume": 14800,
+      "kd": 0.03,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/new-york-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "take home salary estimator",
+      "volume": 14800,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "california tax calculator",
+      "volume": 14800,
+      "kd": 0.05,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/california-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "salary calculator california",
+      "volume": 14800,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/california-paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "net income calculator",
+      "volume": 14800,
+      "kd": 0.02,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "new york salary calculator",
+      "volume": 12100,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/new-york-paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "debt snowball",
+      "volume": 12100,
+      "kd": 0.12,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/debt/how-the-debt-snowball-method-works",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "income tax calculator nevada",
+      "volume": 9900,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/nevada-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "effective tax rate calculator",
+      "volume": 6600,
+      "kd": 0.07,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "figure paycheck tax",
+      "volume": 6600,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "smartasset tax calculator",
+      "volume": 4400,
+      "kd": 0.01,
+      "intent": "2,3",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "smartasset income tax calculator",
+      "volume": 3600,
+      "kd": 0.33,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "ramsey smart tax",
+      "volume": 3600,
+      "kd": 0.47,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/taxes",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "ramsey tax",
+      "volume": 1900,
+      "kd": 0.54,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/taxes/smarttax",
+      "competitor": "ramseysolutions.com"
+    }
+  ]
+}
