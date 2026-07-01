@@ -472,4 +472,46 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     preset: { goalMode: false, currentBalance: 1000000, monthlyContribution: 0, annualReturnPct: 6, years: 30 },
     relatedSlugs: ["compound-interest-calculator", "savings-goal-calculator", "high-yield-savings-calculator"],
   },
+
+  {
+    calculator: "investing",
+    slug: "money-market-account-calculator",
+    title: "Money Market Account Calculator: MMA Interest & Growth",
+    metaDescription:
+      "Use this money market account calculator to project your MMA balance, interest earned, and growth over time based on your APY and deposits.",
+    targetKeyword: "money market account calculator",
+    estimatedVolume: 0,
+    h1: "Money Market Account Calculator",
+    intro:
+      "This money market account calculator projects how much your MMA balance can grow from your starting deposit, monthly contributions, and APY. Enter your current balance, monthly deposit, APY, and time frame in the calculator above to see your future balance. It splits the total into what you contributed and what interest added, so the growth is easy to follow. A money market account (MMA) is a bank deposit account, so remember its APY is variable and can change at any time. For a side-by-side rate comparison, see the [high-yield savings calculator](/investing/high-yield-savings-calculator/).",
+    howItWorks:
+      "A money market account is an interest-bearing deposit account offered by banks and credit unions. The CFPB describes MMAs as accounts that often pay more than a regular savings account while allowing limited check writing or debit card access. That mix of a competitive rate and some spending flexibility is what sets an MMA apart from a plain savings account.\n\nThe calculator above compounds your balance monthly. Each month, you earn interest on your starting balance, your past interest, and any new deposit you add. Compounding means your interest starts earning its own interest, so the balance grows faster the longer you leave it alone. To see this effect in isolation, try the [compound interest calculator](/investing/compound-interest-calculator/).\n\nFocus on the APY, not a plain interest rate. Annual percentage yield already includes the effect of compounding, so it shows your true yearly return. The CFPB's Regulation DD (Truth in Savings) requires banks to disclose APY so you can compare accounts on equal footing. Always compare one account's APY directly to another's, never a raw interest rate to an APY.\n\nWhat makes an MMA different from a HYSA? Both are FDIC-insured deposit accounts that pay a variable rate above the national average. The FDIC's national average money market rate was 0.61% as of June 2026, well below what many banks advertise for a competitive MMA. The main differences are structural. MMAs often come with check-writing privileges and a debit card, and they typically require a higher minimum balance than a high-yield savings account, sometimes $1,000 or more. A high-yield savings account, especially from an online bank, often skips the minimum and pays a slightly higher rate but drops the check-writing feature. See our full [money market account guide](/guides/money-market-account/) for a deeper comparison.\n\nHow to shop for an MMA. Three checks matter more than the headline APY. First, confirm FDIC insurance using the FDIC's BankFind tool; coverage is $250,000 per depositor, per bank, per ownership category. Second, check the minimum balance and any monthly fee; a fee or a balance you can't maintain can erase your rate advantage fast. Third, read the transaction limits; MMAs commonly cap check and electronic transfers per statement cycle, even though ATM and in-person withdrawals are usually unlimited. We don't rank specific banks here; use these criteria to compare live offers.",
+    commonMistakes: [
+      "Confusing a money market account with a money market mutual fund. An MMA is a bank deposit and FDIC insured. A money market mutual fund is an investment sold by a brokerage and is not FDIC insured.",
+      "Ignoring minimum-balance requirements and fees. Many MMAs require $1,000 or more to earn the advertised rate, and a monthly fee can wipe out the extra interest on a smaller balance.",
+      "Assuming the APY is fixed. MMA rates are variable, so a bank can lower your rate at any time, just like a savings account.",
+      "Not comparing against HYSA rates before choosing. A high-yield savings account may pay more with a lower minimum, so check both before you open an account.",
+      "Forgetting the transaction limits. MMAs often cap check-writing and electronic transfers per statement cycle, which can catch you off guard if you expect unlimited access.",
+    ],
+    workedExample:
+      "Say you start with $15,000 in a money market account and add $250 every month, earning 4.0% APY compounded monthly. After 10 years, the calculator projects a balance of $59,174.94. You contributed $45,000 of that yourself: the $15,000 start plus $250 a month for 120 months. The remaining $14,174.94 is interest earned through compounding. Remember that 4.0% APY is not locked in, since MMA rates can rise or fall over that 10-year span.",
+    faqs: [
+      { question: "What is a money market account calculator?", answer: "A money market account calculator is a tool that projects your MMA balance over time from a starting deposit, monthly contributions, and an APY. It shows your future balance and splits it into what you contributed versus what interest added. Enter your own numbers in the calculator above." },
+      { question: "How is interest calculated on a money market account?", answer: "Most banks compound MMA interest monthly, meaning you earn interest on your balance, including any interest already added, each month. The APY already reflects this compounding under the CFPB's Regulation DD, so comparing APY figures directly tells you which account pays more." },
+      { question: "Is a money market account the same as a money market fund?", answer: "No. A money market account is a bank deposit and is FDIC insured up to $250,000 per depositor, per bank, per ownership category. A money market mutual fund is an investment product sold by a brokerage and is not FDIC insured. See our [money market account guide](/guides/money-market-account/) for the full comparison." },
+      { question: "Money market account vs high-yield savings account: which earns more?", answer: "It depends on the bank. Both are FDIC-insured deposit accounts, and rates move with the market. An MMA often adds check-writing and debit access but usually needs a higher minimum balance. A HYSA, especially online, often pays a slightly higher rate with a lower minimum. Compare both with the [high-yield savings calculator](/investing/high-yield-savings-calculator/)." },
+      { question: "Is my money safe in a money market account?", answer: "Yes, at an FDIC-insured bank. Coverage protects up to $250,000 per depositor, per bank, per ownership category. That limit covers your MMA balance alongside any other deposits, like savings or checking, you hold at the same bank in the same ownership category." },
+      { question: "Does a money market account rate ever change?", answer: "Yes. MMA rates are variable, so your bank can raise or lower the APY at any time based on market conditions. The FDIC's national average money market rate was just 0.61% as of June 2026, so shopping around for a stronger APY can make a meaningful difference." },
+    ],
+    sources: [
+      { label: "CFPB — What is a money market account?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-money-market-account-en-915/" },
+      { label: "FDIC — Understanding Deposit Insurance ($250,000 coverage)", url: "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance" },
+      { label: "FDIC — National Rates and Rate Caps", url: "https://www.fdic.gov/national-rates-and-rate-caps" },
+      { label: "CFPB — Truth in Savings (Regulation DD, APY)", url: "https://www.consumerfinance.gov/rules-policy/regulations/1030/" },
+    ],
+    toolHeading: "See your money market account grow",
+    toolSubheading: "Enter your balance, deposits, and APY to project your MMA balance over time.",
+    preset: { currentBalance: 15000, monthlyContribution: 250, annualReturnPct: 4.0, years: 10 },
+    relatedSlugs: ["high-yield-savings-calculator", "savings-goal-calculator", "compound-interest-calculator"],
+  },
 ];
