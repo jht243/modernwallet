@@ -550,6 +550,102 @@ export const GUIDES: Guide[] = [
       { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
     ],
   },
+
+  {
+    slug: "how-to-protect-assets-from-nursing-home",
+    title: "How to Protect Assets From Nursing Home Costs",
+    metaDescription:
+      "How to protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — consult an elder-law attorney.",
+    h1: "How to Protect Assets From Nursing Home Costs",
+    cardBlurb: "Medicaid Asset Protection Trusts, the 5-year lookback, home protection, and CSRA — the legal tools that actually work.",
+    intro:
+      "Nursing home care runs $115,000-$132,000/year in 2026 and inflates at ~4.5%/year. Without protection, a couple's life savings can be gone in 3-5 years — Medicaid takes over only after spend-down under 42 U.S.C. §1396p, and by then the well spouse has little left. This guide covers the actual tools that work: Medicaid Asset Protection Trusts funded 5+ years before application, transfers that avoid the lookback penalty, the Community Spouse Resource Allowance that protects half a couple's assets, home-equity limits and protection deeds, and the estate recovery rules that determine what's left for heirs. Not legal advice — every strategy here requires an elder-law attorney in your state, and timing is the difference between full protection and a wasted trust.",
+    sections: [
+      {
+        heading: "Step 1: Understand the 5-year lookback (before you touch anything)",
+        body:
+          "Under 42 U.S.C. §1396p(c), Medicaid reviews every transfer in the 60 months before application. Any gift, below-market sale, or funding of an irrevocable trust triggers a penalty period during which Medicaid will not pay. Penalty period = transferred amount ÷ state monthly divisor: California $14,440/month, Texas $7,900, Florida $10,645, New York $16,229. Transfer $200,000 in California and the penalty is 13.8 months at $10,000+/month in nursing home costs — a $138,000 out-of-pocket bill you weren't planning for.\n\nException categories that don't trigger the penalty: transfers to a spouse; transfers to a disabled child (blind or disabled per Social Security definition); transfers to a caretaker child who lived in the home 2+ years providing care that delayed institutionalization; transfers to a sibling with equity interest who lived in the home 1+ year; and transfers into certain trusts for disabled beneficiaries under 65 (Special Needs Trusts under §1396p(d)(4)(A)). Everything else counts.\n\nBottom line: if you're within 5 years of needing care, you can't gift or transfer your way out. What you can do: spend down on care itself, buy exempt assets (home repairs, prepaid burial, one new car), use annuities that meet DRA requirements, or set up a Miller Trust in income-cap states. Full asset protection requires acting 5+ years before care is needed.",
+      },
+      {
+        heading: "Step 2: Medicaid Asset Protection Trust (MAPT) — the primary tool",
+        body:
+          "A Medicaid Asset Protection Trust is an irrevocable trust set up 5+ years before Medicaid application that removes assets from countable resources while preserving them for family. Because the trust is irrevocable and the grantor gives up control, the assets are no longer 'available' under 42 U.S.C. §1396a — but the grantor can retain income rights and can name family members as trustees and beneficiaries.\n\nWhat goes in: home (transferred to the trust while retaining life estate or right to reside), non-retirement investments, second properties, high-value savings. What stays out: retirement accounts (transferring triggers full income tax immediately) and any assets you can't part with control of. Setup cost: $3,000-$7,000 for a properly drafted MAPT by an elder-law attorney. The 5-year clock starts on the transfer date, not application date. Transfer late 2026 and you're fully protected by late 2031.\n\nMAPTs are not appropriate for everyone. If care is imminent (under 5 years), the trust will trigger the lookback penalty and the transfer is worse than useless. If total assets are under about $200,000, spending down is often simpler than complex trust setup. Above that threshold and with 5+ years of planning runway, MAPTs are the standard tool.",
+      },
+      {
+        heading: "Step 3: Protect the community spouse's share (CSRA + MMMNA)",
+        body:
+          "If you're married and only one spouse needs care, federal law under 42 U.S.C. §1924 protects the well spouse. The Community Spouse Resource Allowance (CSRA) protects half of countable assets, bounded by 2026 min $32,532 and max $162,660. If assets total $300,000, CSRA protects $150,000; if assets total $500,000, CSRA caps at $162,660. Illinois, Massachusetts, and New York use the maximum $162,660 as the floor — always the max, regardless of half-share math.\n\nThe Minimum Monthly Maintenance Needs Allowance (MMMNA) protects the well spouse's income. Federal minimum $2,643.75/month in 2026, max $4,066.50. If shelter costs (mortgage + utilities + property tax + insurance) exceed the shelter allowance, the well spouse can claim up to the max. Alaska $3,381.25 and Hawaii $3,111.25 have higher minimums.\n\nExecution: run the CSRA math with an elder-law attorney BEFORE spending anything. Couples routinely spend down $80,000-$120,000 they didn't have to — money that was fully protected by CSRA. See the [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/) for state-specific figures.",
+      },
+      {
+        heading: "Step 4: Protect the home (equity limit, transfer deeds, estate recovery)",
+        body:
+          "The primary residence is exempt during the applicant's life if a community spouse or dependent resides, or if the applicant intends to return home. But home equity is capped: 2026 federal minimum $752,000, maximum $1,130,000. Twelve states plus DC use the maximum (Alabama, California, Colorado, Connecticut, Hawaii, Maine, Massachusetts, New Jersey, New York, Tennessee, Washington). The other 38 use the minimum. Equity above the limit blocks Medicaid unless a HELOC reduces it or a spousal transfer moves it.\n\nAfter death, Medicaid Estate Recovery under 42 U.S.C. §1396p(b) can claim against the estate for benefits paid. Most states limit recovery to probate estate. Some (New York, Massachusetts) expand to non-probate assets like life insurance and jointly-held property. Strategies to reduce recovery: transfer to a MAPT 5+ years before application; enhanced life estate deed (ladybird deed) available in Florida, Michigan, Texas, Vermont, West Virginia — passes home to beneficiary at death without probate and without triggering lookback; transfer to a disabled child or caretaker child (both exempt from lookback); or transfer with retained life estate 5+ years before application (triggers lookback if within 60 months).",
+      },
+      {
+        heading: "Step 5: Income-cap states need a Miller Trust",
+        body:
+          "In 20 income-cap states (Alabama, Alaska, Arizona, Colorado, Delaware, Florida, Georgia, Idaho, Indiana, Iowa, Louisiana, Mississippi, Nevada, New Mexico, Oklahoma, Oregon, South Carolina, South Dakota, Texas, Wyoming), monthly income above the 2026 cap of $2,982 (300% of SSI FBR $994) blocks institutional Medicaid. The fix under 42 U.S.C. §1396p(d)(4)(B): a Qualified Income Trust (Miller Trust) drafted before application. Each month, income above the cap flows into the trust; the trust pays the nursing home. Miller Trusts are simple ($500-$1,500 to draft) but must be in place BEFORE application, not after — Medicaid denies retroactively-fixed cases.\n\nMedically-needy states (the other ~30) don't need Miller Trusts. Instead, monthly income above the state's Medically Needy Income Level goes toward medical expenses (nursing home care counts) — a monthly spend-down that continues throughout care.",
+      },
+      {
+        heading: "Step 6: Long-term care insurance as the parallel strategy",
+        body:
+          "LTC insurance is the alternative to Medicaid planning — pay premiums during working/pre-retirement years so care is funded without spend-down. 2026 median policy pays $150-$300/day, caps at 3-5 years or $150k-$300k lifetime, triggers on 2 of 6 ADLs (bathing, dressing, transferring, toileting, continence, eating) or cognitive impairment per HIPAA §7702B(c). Partnership LTC policies under Deficit Reduction Act §6021 add asset protection above the policy benefit paid — if the policy pays out $200,000 in benefits, an extra $200,000 in assets is protected from Medicaid spend-down if benefits eventually run out.\n\nLTC insurance premiums have risen sharply since 2018. A 60-year-old couple typically pays $6,000-$12,000/year for meaningful coverage. Hybrid life insurance with LTC rider (Nationwide CareMatters, Lincoln MoneyGuard) is cheaper and returns unused premium as a death benefit. See the [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/) to size a policy against projected costs.",
+      },
+      {
+        heading: "Step 7: Act now if care is 5+ years away — spend-down now if not",
+        body:
+          "Timing determines everything. If care is 5+ years away, MAPT + LTC insurance + strategic gifting can protect substantial assets. If care is within 5 years, the lookback penalty makes most protection strategies counterproductive — the tools become spend-down management, CSRA optimization for married couples, Miller Trust setup for income-cap states, and buying exempt assets (home repairs, prepaid burial, new car). Do not attempt DIY Medicaid planning — the rules are state-specific, the penalties for mistakes are large, and elder-law attorneys ($2,000-$8,000 flat fees for a complete plan) usually save many multiples of their cost.",
+      },
+    ],
+    tools: [
+      { href: "/elder-care/", label: "Elder care planning calculator" },
+      { href: "/elder-care/medicaid-spend-down-calculator/", label: "Medicaid spend-down calculator" },
+      { href: "/elder-care/long-term-care-cost-calculator/", label: "Long-term care cost calculator" },
+      { href: "/elder-care/special-needs-trust-calculator/", label: "Special needs trust calculator" },
+      { href: "/estate-planning/living-trust-cost-calculator/", label: "Living trust cost calculator" },
+      { href: "/net-worth/net-worth-projection-calculator/", label: "Net worth projection calculator" },
+    ],
+    faqs: [
+      {
+        question: "How can I protect my assets from nursing home costs?",
+        answer:
+          "The primary tools are: a Medicaid Asset Protection Trust (MAPT) funded 5+ years before application; long-term care insurance or hybrid life+LTC rider policies; the Community Spouse Resource Allowance (CSRA) that automatically protects up to $162,660 for the well spouse; transfer deeds (ladybird deed in eligible states, life estate deed with 5+ year runway); and transfers to a disabled child or caretaker child (both exempt from the 5-year lookback). Timing is everything: within 5 years of care, most transfers trigger the lookback penalty under 42 U.S.C. §1396p(c).",
+      },
+      {
+        question: "What is the 5-year Medicaid lookback?",
+        answer:
+          "Under 42 U.S.C. §1396p(c), Medicaid reviews all asset transfers in the 60 months before institutional Medicaid application. Any gift, below-market sale, or funding of an irrevocable trust triggers a penalty period = transferred amount ÷ state monthly divisor (California $14,440, Texas $7,900, Florida $10,645, New York $16,229). During the penalty period, Medicaid will not pay for nursing home care. Exceptions: transfers to a spouse, disabled child, caretaker child (2+ years), sibling with equity interest (1+ year), or a Special Needs Trust for a beneficiary under 65.",
+      },
+      {
+        question: "What is a Medicaid Asset Protection Trust?",
+        answer:
+          "A Medicaid Asset Protection Trust (MAPT) is an irrevocable trust set up 5+ years before Medicaid application. Because the grantor gives up control, assets in the trust are not countable for Medicaid under 42 U.S.C. §1396a. The grantor can retain income rights and name family as trustees and beneficiaries. Setup: $3,000-$7,000 with an elder-law attorney. Best holdings: home (with life estate or right to reside), taxable investments, second properties. NOT retirement accounts — transferring triggers full income tax immediately. The 5-year clock starts on the transfer date.",
+      },
+      {
+        question: "Can I give my house to my kids to avoid Medicaid recovery?",
+        answer:
+          "Only if you do it 5+ years before application. A gift of the home triggers the 60-month lookback under 42 U.S.C. §1396p(c). Alternatives that avoid the lookback trap: (1) transfer to a caretaker child who lived in the home 2+ years providing care — exempt from lookback; (2) transfer to a disabled child — exempt from lookback; (3) enhanced life estate deed (ladybird deed) available in Florida, Michigan, Texas, Vermont, West Virginia — passes home to beneficiary at death without probate and without triggering lookback; (4) transfer to a MAPT 5+ years before application.",
+      },
+      {
+        question: "How much can my spouse keep if I go to a nursing home?",
+        answer:
+          "The Community Spouse Resource Allowance (CSRA) under 42 U.S.C. §1924(f)(2) protects half of the couple's countable assets, bounded by 2026 min $32,532 and max $162,660. Illinois, Massachusetts, and New York apply the max as the floor. The well spouse also keeps income up to the MMMNA — federal min $2,643.75/month in 2026, max $4,066.50. Alaska $3,381.25 and Hawaii $3,111.25 have higher minimums. The primary residence is fully exempt during the applicant's life if the community spouse resides. Run the CSRA math with an elder-law attorney BEFORE spending anything.",
+      },
+      {
+        question: "Should I buy long-term care insurance or plan for Medicaid?",
+        answer:
+          "Depends on assets and age. If assets are under $200,000, Medicaid planning (MAPT + CSRA) is usually the fit — LTC insurance premiums would eat too much of the base. If assets are $500,000+, LTC insurance or hybrid life+LTC (Nationwide CareMatters, Lincoln MoneyGuard) can be cheaper than losing assets to spend-down. Partnership LTC policies under DRA §6021 add asset protection above the policy benefit paid — a common structure. See the [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/) to size projected costs against assets and income.",
+      },
+    ],
+    sources: [
+      { label: "42 U.S.C. §1396p — Medicaid transfers, home equity, estate recovery", url: "https://www.ssa.gov/OP_Home/ssact/title19/1917.htm" },
+      { label: "42 U.S.C. §1924 — CSRA + MMMNA (spousal impoverishment)", url: "https://www.ssa.gov/OP_Home/ssact/title19/1924.htm" },
+      { label: "CMS 2026 Spousal Impoverishment Standards (CIB 12/9/2025)", url: "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12092025.pdf" },
+      { label: "IRS §7702B — Qualified long-term care insurance", url: "https://www.law.cornell.edu/uscode/text/26/7702B" },
+      { label: "Deficit Reduction Act §6021 — Partnership LTC policies", url: "https://www.medicaid.gov/medicaid/long-term-services-supports/long-term-services-supports-partnerships-for-long-term-care/index.html" },
+      { label: "National Academy of Elder Law Attorneys (NAELA)", url: "https://www.naela.org/" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

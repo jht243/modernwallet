@@ -18,6 +18,10 @@ import LivingTrustCostCalculator from "./LivingTrustCostCalculator";
 import EstateTaxCalculator from "./EstateTaxCalculator";
 import PrenupCostCalculator from "./PrenupCostCalculator";
 import ProbateHubCalculator from "./ProbateHubCalculator";
+import ElderCareHubCalculator from "./ElderCareHubCalculator";
+import MedicaidSpendDownCalculator from "./MedicaidSpendDownCalculator";
+import SpecialNeedsTrustCalculator from "./SpecialNeedsTrustCalculator";
+import LongTermCareCostCalculator from "./LongTermCareCostCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -45,8 +49,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "living-trust-cost": LivingTrustCostCalculator,
   "estate-tax": EstateTaxCalculator,
   "prenup-cost": PrenupCostCalculator,
-  // Pillar 3 (Probate) — hub + 3 spokes reuse the same island with different presets/content.
   "probate": ProbateHubCalculator,
+  // Pillar 4 (Elder Care) — aging-assessment hub + 3 spokes (Medicaid spend-down, SNT, LTC cost).
+  "elder-care": ElderCareHubCalculator,
+  "medicaid-spend-down": MedicaidSpendDownCalculator,
+  "special-needs-trust": SpecialNeedsTrustCalculator,
+  "long-term-care-cost": LongTermCareCostCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

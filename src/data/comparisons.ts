@@ -1474,6 +1474,8 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
       { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
       { label: "Estate planning calculator", href: "/estate-planning/" },
+      { label: "Medicaid spend-down calculator", href: "/elder-care/medicaid-spend-down-calculator/" },
+      { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
     ],
   },
 

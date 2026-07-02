@@ -148,7 +148,7 @@ export const CALCULATORS: CalculatorDef[] = [
     intro:
       "This retirement calculator estimates how much you'll have saved by your target retirement age and whether that money will last. Enter your age, current savings, monthly contribution, and expected return in the calculator above to see your projected nest egg. It also shows your balance in today's dollars, so inflation doesn't fool you. For example, a 35-year-old saving $500 a month could reach about $1,097,072 by age 67.",
     howItWorks:
-      "The retirement calculator works in two stages: it grows your savings until retirement, then estimates how much you can safely withdraw each year. During the saving years, it compounds your current balance plus monthly contributions at a fixed annual return you choose. In our example saver's case (age 35, $50,000 saved, $500/month, 7% return), the balance grows to $1,097,072 by age 67. The striking part is the source of that money: your $50,000 starting balance plus $192,000 of new contributions add up to $242,000 you put in. Compound growth adds the other $855,072, so time does the heavy lifting.\n\nFor spending, the calculator applies the 4% rule. It withdraws 4% of your balance in year one, which is $43,883 (about $3,657 per month) for our example. At that rate, the savings last through age 95. The 4% rule is a planning guideline, not a guarantee. To go deeper, try our [retirement savings calculator](/retirement/retirement-savings-calculator/), or model your workplace plan with the [401k calculator](/retirement/401k-calculator/). If the numbers feel high-stakes and you want a professional second opinion, our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fees, and credentials.\n\nHave a retirement plan — now protect it. Once you've projected a nest egg above a few hundred thousand, the next question is what happens to it if you die before spending it, become incapacitated, or need long-term care. A revocable living trust avoids probate on the accounts and property that fund your retirement lifestyle; an ILIT removes life insurance from your taxable estate; and beneficiary designations on 401(k)/IRA accounts override your will, so those need to match your intent. See our [estate planning calculator](/estate-planning/) for a specific plan tier, and the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal and state exposure under the 2026 $15M exemption (permanent under OBBBA P.L. 119-21).",
+      "The retirement calculator works in two stages: it grows your savings until retirement, then estimates how much you can safely withdraw each year. During the saving years, it compounds your current balance plus monthly contributions at a fixed annual return you choose. In our example saver's case (age 35, $50,000 saved, $500/month, 7% return), the balance grows to $1,097,072 by age 67. The striking part is the source of that money: your $50,000 starting balance plus $192,000 of new contributions add up to $242,000 you put in. Compound growth adds the other $855,072, so time does the heavy lifting.\n\nFor spending, the calculator applies the 4% rule. It withdraws 4% of your balance in year one, which is $43,883 (about $3,657 per month) for our example. At that rate, the savings last through age 95. The 4% rule is a planning guideline, not a guarantee. To go deeper, try our [retirement savings calculator](/retirement/retirement-savings-calculator/), or model your workplace plan with the [401k calculator](/retirement/401k-calculator/). If the numbers feel high-stakes and you want a professional second opinion, our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fees, and credentials.\n\nHave a retirement plan — now protect it. Once you've projected a nest egg above a few hundred thousand, the next question is what happens to it if you die before spending it, become incapacitated, or need long-term care. A revocable living trust avoids probate on the accounts and property that fund your retirement lifestyle; an ILIT removes life insurance from your taxable estate; and beneficiary designations on 401(k)/IRA accounts override your will, so those need to match your intent. See our [estate planning calculator](/estate-planning/) for a specific plan tier, and the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal and state exposure under the 2026 $15M exemption (permanent under OBBBA P.L. 119-21).\n\nThe biggest untracked retirement risk is long-term care. Median 2026 nursing home private room is $132,000/year and inflates at ~4.5% annually — a 4-year care period starting at age 82 can consume $600,000+ that your 4%-rule withdrawal was never meant to cover. Medicare pays essentially zero for custodial care. Project your exposure with the [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/), and if projected shortfall is large, model the Medicaid safety net with the [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/). Start Medicaid Asset Protection Trust planning 5+ years before care is needed — the 60-month lookback under 42 U.S.C. §1396p(c) blocks any last-minute transfers.",
     faqs: [
       { question: "How much will I have when I retire?", answer: "It depends on your savings, contributions, return, and time. The retirement calculator above projects your total. In our example, a 35-year-old saving $500 a month at a 7% return reaches $1,097,072 by age 67, which is about $426,034 in today's dollars." },
       { question: "How much of my retirement balance comes from compound growth?", answer: "Most of it, if you start early. In our example, you start with $50,000 and add $192,000 in contributions, for $242,000 of your own money. Investment growth adds $855,072 more, reaching $1,097,072. Compounding does far more work than your contributions alone." },
@@ -524,6 +524,75 @@ export const CALCULATORS: CalculatorDef[] = [
       estateValue: 750_000,
       complexity: "moderate",
       ancillaryStates: 0,
+    },
+  },
+
+  // ---- Pillar 4: Professional Services — Elder Care ----
+  // Grounded in 2026 CMS Medicaid figures (CIB 12/9/2025 — CSRA, MMMNA, home equity, income cap),
+  // POMS SI 01120.199-.204 (Special Needs Trust rules under 42 U.S.C. §1396p(d)(4)), and the
+  // CareScout 2025 Cost of Care Survey. OBBBA (P.L. 119-21) caps home equity at $1M eff. 1/1/2028.
+  {
+    id: "elder-care",
+    islandId: "elder-care",
+    label: "Elder Care",
+    navOrder: 12,
+    metaTitle: "Elder Care Planning Calculator: Medicaid + LTC Strategy",
+    metaDescription:
+      "Free elder care planning calculator. Assess Medicaid spend-down exposure, 5-year lookback deadlines, MAPT costs, and long-term care coverage gaps.",
+    targetKeyword: "elder care planning calculator",
+    h1: "Elder Care Planning Calculator: Protect Assets, Plan for LTC",
+    intro:
+      "An elder care planning calculator maps your age, assets, income, and long-term care outlook to the specific planning steps that protect assets from a $115,000-per-year median nursing home cost while preserving Medicaid eligibility. The calculator above applies the 2026 federal figures (Community Spouse Resource Allowance $32,532-$162,660, MMMNA minimum $2,644, institutional income cap $2,982/month) and the 60-month lookback under 42 U.S.C. §1396p(c). For a 62-year-old married couple with $550,000 in countable assets and possible LTC needs within 5 years, the recommendation is a Medicaid Asset Protection Trust ($3,000-$6,000 attorney-drafted) funded now — every month of delay compresses the lookback window and shifts assets from protected to countable.",
+    howItWorks:
+      "Elder care planning turns on three deadlines and one core rule. The core rule: Medicaid pays for long-term nursing home care once you qualify, but qualification requires countable assets under $2,000 (single) and CSRA-adjusted amounts for a community spouse. Medicare does NOT cover long-term custodial care — only up to 100 days of skilled nursing after a 3-day hospital stay (2026 days 21-100 = $217/day patient share). Private pay at the national median is $115,000/year for a semi-private nursing home room, or $129,575/year for a private room (CareScout 2025 Cost of Care Survey).\n\nDeadline 1: the 5-year Medicaid lookback. Transfers within 60 months of a Medicaid application trigger a penalty period equal to the transferred amount divided by the state's monthly divisor (California $14,440/month, Texas $7,900, Florida $10,645). Funding a Medicaid Asset Protection Trust (MAPT) — an irrevocable trust — 5+ years before application fully shields the assets; funding within 5 years creates partial exposure. This is why elder care planning starts in the mid-50s to early 60s: the earlier the trust is funded, the more assets it protects.\n\nDeadline 2: Community Spouse Resource Allowance (CSRA). If your spouse enters a nursing home while you remain in the community, federal law under 42 U.S.C. §1924(f) protects between $32,532 and $162,660 of assets for you (2026 figures per CMS CIB 12/9/2025). Above that, assets must be spent down or converted to exempt (home improvements, prepaid burial trust, spousal transfers). Attorney-guided spend-down converts countable to exempt at 1:1 ratios rather than the 50% you'd lose to private pay.\n\nDeadline 3: the 100-day Medicare skilled nursing window. After discharge from a hospital, Medicare covers days 1-20 fully and days 21-100 with a $217/day copay in 2026. Day 101 forward is 100% out-of-pocket until Medicaid qualification. Long-term care insurance ($2,200-$3,750/year for a 55-year-old single, $7,137-$12,250 at 65 per AALTCI 2025) fills this gap.\n\nOne 2026 change worth flagging: California re-added a Medicaid asset test on January 1, 2026 after 2 years without one. Community Medi-Cal now applies a $130,000 individual / $195,000 couple asset limit — much higher than the federal $2,000, but a real cap that CA residents need to plan around. Every state's specific figures live in the [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/). For long-term care cost projections, see the [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/), and for special-needs family members the [special-needs trust calculator](/elder-care/special-needs-trust-calculator/).",
+    faqs: [
+      {
+        question: "What is an elder care planning calculator?",
+        answer:
+          "An elder care planning calculator assesses your Medicaid spend-down exposure, 5-year lookback deadline, and long-term care coverage gap. It applies the 2026 federal Medicaid figures — Community Spouse Resource Allowance $32,532-$162,660, MMMNA minimum $2,644, institutional income cap $2,982/month — and returns a plan tways with cost bands: Medicaid Asset Protection Trust $3,000-$6,000, third-party Special Needs Trust $2,500-$5,000, LTC insurance premiums by age.",
+      },
+      {
+        question: "What is the Medicaid 5-year lookback?",
+        answer:
+          "Under 42 U.S.C. §1396p(c), Medicaid reviews all asset transfers made within 60 months before your application. Uncompensated transfers (including gifts to family, funding an irrevocable trust) trigger a penalty period equal to the transferred amount divided by the state's monthly divisor (California $14,440/month in 2026, Texas $7,900, Florida $10,645). A $200,000 transfer in California creates a ~14-month ineligibility period. Fund a MAPT more than 5 years before application and the lookback fully closes.",
+      },
+      {
+        question: "What is CSRA (Community Spouse Resource Allowance)?",
+        answer:
+          "When one spouse enters a nursing home while the other remains in the community, federal spousal-impoverishment rules under 42 U.S.C. §1924 protect assets for the community spouse. The 2026 CSRA range is $32,532 minimum to $162,660 maximum (CMS CIB 12/9/2025). The community spouse can keep half the couple's countable assets up to the maximum, plus a minimum $2,644/month income allowance (MMMNA). Assets above the CSRA must be spent down before the institutional spouse qualifies for Medicaid.",
+      },
+      {
+        question: "Does Medicare cover long-term care?",
+        answer:
+          "No — Medicare does NOT cover long-term custodial care. Medicare covers up to 100 days of skilled nursing after a qualifying 3-day inpatient hospital stay: days 1-20 fully covered, days 21-100 with a $217/day patient coinsurance in 2026, day 101+ is 100% patient responsibility until Medicaid qualifies or private funds run out. Private-pay nursing home costs are $114,975/year semi-private (national median, CareScout 2025). This is why long-term care insurance, MAPT planning, or spend-down strategy matters.",
+      },
+      {
+        question: "What is a Medicaid Asset Protection Trust?",
+        answer:
+          "A Medicaid Asset Protection Trust (MAPT) is an irrevocable trust designed to remove assets from your countable Medicaid pool while allowing you to receive limited benefits (typically income, sometimes limited access). Attorney-drafted: $3,000-$6,000. Because it's irrevocable, transfers into a MAPT trigger the 5-year lookback under 42 U.S.C. §1396p(c) — fund it 5+ years before Medicaid application and it fully shields the assets. Fund it within 5 years and you face a penalty period. This is why MAPT planning starts in the mid-50s to early 60s.",
+      },
+      {
+        question: "How much does long-term care cost?",
+        answer:
+          "National median costs from the CareScout 2025 Cost of Care Survey: home health aide $34/hour ($77,792/year full-time), adult day care $95/day, assisted living $6,200/month ($74,400/year), nursing home semi-private $315/day ($114,975/year), private $355/day ($129,575/year). State variation is dramatic: Alaska tops $330,000/year for nursing home care, while Texas is $65,700/year. See the [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/) for your specific state and care type.",
+      },
+    ],
+    sources: [
+      { label: "CMS CMCS Informational Bulletin — 2026 SSI + Spousal Impoverishment Standards", url: "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12092025.pdf" },
+      { label: "42 U.S.C. §1396p — Medicaid transfers, home equity, estate recovery", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section1396p" },
+      { label: "42 U.S.C. §1924 — Spousal impoverishment (CSRA, MMMNA)", url: "https://www.law.cornell.edu/uscode/text/42/1396r-5" },
+      { label: "CareScout 2025 Cost of Care Survey", url: "https://www.carescout.com/cost-of-care" },
+      { label: "SSA POMS SI 01120.203 — Trusts (SNT rules)", url: "https://secure.ssa.gov/poms.nsf/lnx/0501120203" },
+      { label: "Medicaid.gov — Home & Community Based Services (HCBS)", url: "https://www.medicaid.gov/medicaid/home-community-based-services/index.html" },
+      { label: "Medicare.gov — Skilled Nursing Facility Care", url: "https://www.medicare.gov/coverage/skilled-nursing-facility-care" },
+    ],
+    defaultPreset: {
+      age: 62,
+      countableAssets: 550_000,
+      monthlyIncome: 4_200,
+      maritalStatus: "married-both-well",
+      careRisk: "within-5-years",
+      specialNeedsDependent: false,
     },
   },
 ];

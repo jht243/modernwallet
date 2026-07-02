@@ -4,5 +4,5 @@
 //
 // Phase 2 added: "mortgage", "retirement", "investing", "portfolio", "real-estate", "net-worth".
 // Pillar 1 (professional services) added: "tax-resolution". Pillar 2: "estate-planning".
-// Pillar 3: "probate". Follow-on: "elder-care".
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate"]);
+// Pillar 3: "probate". Pillar 4: "elder-care".
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care"]);

@@ -66,6 +66,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/estate-planning/estate-tax-calculator/", label: "Estate tax exposure at death" },
     { href: "/net-worth/", label: "Know the estate's net worth" },
   ],
+  "elder-care": [
+    { href: "/estate-planning/", label: "Start with your estate plan" },
+    { href: "/estate-planning/living-trust-cost-calculator/", label: "Irrevocable trusts for asset protection" },
+    { href: "/retirement/", label: "Model retirement + LTC costs together" },
+    { href: "/net-worth/", label: "See your net worth first" },
+  ],
 };
 
 export function crossLinksFor(calcId: string): CrossLink[] {
