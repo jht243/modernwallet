@@ -26,6 +26,17 @@ export const AUTHOR = {
   ],
 } as const;
 
+// Attorney reviewer for legal/tax pages (Estate Planning, Probate, Elder Care, Tax Resolution).
+// PLACEHOLDER — backfill `name` (and optionally `url`) once a real reviewer is confirmed. Rendered
+// as a second byline line on legal pages and mirrored into the Article `reviewedBy` JSON-LD field.
+// Legal pillars pass this to <Byline reviewer={REVIEWER} />; existing personal-finance pillars pass
+// nothing and render unchanged.
+export const REVIEWER = {
+  name: "[Attorney Name]",
+  credentials: "Esq.",
+  url: "",
+} as const;
+
 // Sitewide "last updated" stamp. Bump when content is materially revised.
 export const LAST_UPDATED = "2026-06-25";
 

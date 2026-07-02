@@ -3,13 +3,20 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import LinkCard from "../../components/LinkCard.astro";
 import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
-import { SITE, LAST_UPDATED } from "../../data/site";
+import LegalDisclaimer from "../../components/LegalDisclaimer.astro";
+import { SITE, LAST_UPDATED, REVIEWER } from "../../data/site";
 import { CALCULATORS, isLive, spokesForCalc } from "../../data/calculators";
 import CalculatorIsland from "../../components/CalculatorIsland";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
-import { personSchema, articleSchema } from "../../lib/jsonld";
+import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
+
+// The 4 professional-services pillars (Pillar 1+ rollout) render an attorney-reviewer byline,
+// LegalDisclaimer, and reviewer-in-JSON-LD. Existing 8 personal-finance pillars pass no reviewer
+// and render unchanged.
+const LEGAL_PILLARS = new Set(["estate-planning", "probate", "elder-care", "tax-resolution"]);
+const TAX_PILLAR = "tax-resolution";
 
 export function getStaticPaths() {
   return CALCULATORS
@@ -20,6 +27,9 @@ export function getStaticPaths() {
 const { calc } = Astro.props;
 const spokes = spokesForCalc(calc.id);
 const canonicalUrl = new URL(`/${calc.id}/`, Astro.site).toString();
+const isLegal = LEGAL_PILLARS.has(calc.id);
+const reviewer = isLegal ? REVIEWER : undefined;
+const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -64,12 +74,14 @@ const jsonLdFaq = calc.faqs.length
     }
   : null;
 const jsonLdPerson = personSchema();
+const jsonLdReviewerPerson = reviewer ? reviewerPersonSchema(reviewer) : null;
 const jsonLdArticle = articleSchema({
   headline: calc.h1,
   description: calc.metaDescription,
   url: canonicalUrl,
   datePublished: LAST_UPDATED,
   sources: calc.sources,
+  reviewedBy: reviewer,
 });
 ---
 <BaseLayout title={calc.metaTitle} description={calc.metaDescription}>
@@ -78,6 +90,7 @@ const jsonLdArticle = articleSchema({
   {jsonLdItemList && <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />}
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  {jsonLdReviewerPerson && <script type="application/ld+json" set:html={JSON.stringify(jsonLdReviewerPerson)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
 
   <main class="page">
@@ -88,7 +101,7 @@ const jsonLdArticle = articleSchema({
 
     <header class="hero">
       <h1>{calc.h1}</h1>
-      <Byline />
+      <Byline reviewer={reviewer} />
       {paragraphs(calc.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
@@ -127,6 +140,7 @@ const jsonLdArticle = articleSchema({
       </section>
     )}
 
+    {isLegal && <LegalDisclaimer scope={disclaimerScope} />}
     <Sources sources={calc.sources} />
     <CrossLinks calcId={calc.id} />
   </main>

@@ -317,6 +317,78 @@ export const CALCULATORS: CalculatorDef[] = [
       amounts: { housing: 1500, utilities: 220, groceries: 500, transportation: 300, insurance: 180, minimumDebt: 150, dining: 300, entertainment: 130, shopping: 220, funMisc: 150, emergencyFund: 250, retirement: 600, extraDebt: 300 },
     },
   },
+
+  // ---- Pillar 1: Professional Services — Tax Resolution ----
+  // Different audience from /guides/tax-tips (which covers proactive planning). This hub is for
+  // taxpayers already behind — negotiating IRS debt, penalties, and collection notices. Grounded in
+  // IRS Form 656-B (OIC), IRC §6502 (CSED), IRM 5.14/5.16 (IA + CNC), and Pub 971 (Innocent Spouse).
+  // Engine: src/lib/tax-resolution-hub.ts. Island: TaxResolutionHubCalculator.
+  {
+    id: "tax-resolution",
+    islandId: "tax-resolution",
+    label: "Tax Resolution",
+    navOrder: 9,
+    metaTitle: "Tax Resolution Calculator: What Are Your IRS Options?",
+    metaDescription:
+      "Free tax resolution calculator. Enter what you owe, your income, and assets — see whether an OIC, IRS payment plan, or hardship status fits your situation.",
+    targetKeyword: "tax resolution calculator",
+    h1: "Tax Resolution Calculator: See Your IRS Relief Options",
+    intro:
+      "A tax resolution calculator maps your IRS debt to the specific relief program most likely to work — Offer in Compromise, installment agreement, Currently Not Collectible, penalty abatement, or Innocent Spouse Relief. The calculator above does this in seconds. Enter what you owe, your monthly income, your allowable living expenses, your net asset equity, and whether the debt is joint. For example, someone owing $42,000 with $700 a month of disposable income and $8,000 of equity has an IRS Reasonable Collection Potential of $16,400 — the floor for a viable Offer in Compromise.",
+    howItWorks:
+      "An IRS tax debt has five main paths out, and the right one depends on the ratio of what you can pay to what you owe. The calculator applies the IRS's own math — Reasonable Collection Potential (RCP) — which equals your net asset equity plus a multiple of your monthly disposable income: 12 months for a Lump-Sum Cash Offer, 24 months for a Periodic Payment Offer. If RCP is meaningfully less than your debt, an Offer in Compromise is viable. The IRS accepted 7,199 of 33,591 offers in FY2025 — a 21.4% acceptance rate — so it's a real path, not a marketing slogan.\n\nIf your RCP equals or exceeds the debt, the IRS will collect in full and you're choosing between installment structures. A short-term payment plan (up to 180 days, no setup fee) works if you can pay it off fast. A streamlined installment agreement is the online default for individuals owing $50,000 or less — $22 setup with direct debit, and your failure-to-pay penalty drops from 0.5% to 0.25% per month the day the plan is approved. Owe more than $50,000 and the IRS requires Form 433-F to review your full financial picture before approving a non-streamlined agreement.\n\nThere's also a hardship track. If your allowable living expenses meet or exceed your income — measured against the IRS Collection Financial Standards for your county and family size — the IRS should place your account in Currently Not Collectible status. Active collection stops, but the 10-year Collection Statute Expiration Date (CSED) under IRC §6502(a)(1) keeps running in your favor. If the CSED expires before your finances improve, the debt is gone. Two frequently overlooked options round out the picture: First Time Abate strips out failure-to-file and failure-to-pay penalties if you've been penalty-free for the last 3 years, and Innocent Spouse Relief under IRC §6015 can remove liability entirely if the debt came from a spouse's under-reporting. If you're current on taxes and looking for planning rather than resolution, our [tax tips guide](/guides/tax-tips/) covers that side. This page is for when you're already behind.",
+    faqs: [
+      {
+        question: "What is a tax resolution calculator?",
+        answer:
+          "A tax resolution calculator maps IRS tax debt to the relief program most likely to fit — Offer in Compromise, installment agreement, Currently Not Collectible, penalty abatement, or Innocent Spouse Relief. This one takes your debt amount, income, allowable living expenses, and asset equity, then applies the IRS's Reasonable Collection Potential formula to show which path applies and roughly what professional help would cost.",
+      },
+      {
+        question: "Is IRS tax relief legit?",
+        answer:
+          "IRS tax relief is real. Offer in Compromise, installment agreements, Currently Not Collectible status, and penalty abatement are all statutory programs the IRS administers under the Internal Revenue Code, not marketing gimmicks. The FY2025 IRS Data Book shows 7,199 of 33,591 offers were accepted — a 21.4% acceptance rate. The catch is that companies promising 'pennies on the dollar' before ever seeing your Form 433 financials rarely deliver what the IRS actually approves. Real relief is what the IRS's own Reasonable Collection Potential math says you can pay.",
+      },
+      {
+        question: "How much does tax relief cost?",
+        answer:
+          "Professional fees typically run $3,500 to $7,500 for an Offer in Compromise, $500 to $1,500 for a penalty-abatement request, and $1,500 to $3,500 for a non-streamlined installment agreement above the $50,000 threshold. Streamlined online installment agreements cost just $22 to set up with direct debit — most people don't need a professional for those. The IRS's own $205 Offer in Compromise application fee is waived if your income is at or below 250% of the federal poverty guidelines.",
+      },
+      {
+        question: "Can back taxes be forgiven?",
+        answer:
+          "Yes, in three specific ways. An accepted Offer in Compromise settles the debt for less than the balance owed. A Partial Pay Installment Agreement lets you pay less than the full amount over the remaining CSED; whatever is unpaid when the 10-year statute expires disappears. And if the IRS places you in Currently Not Collectible status and your finances don't recover before the CSED, the debt expires. Blanket 'IRS forgiveness programs' pitched in ads are usually one of these three routes in disguise.",
+      },
+      {
+        question: "What happens if I ignore back taxes?",
+        answer:
+          "Ignoring back taxes triggers a predictable escalation. Failure-to-pay penalty runs 0.5% per month (capped at 25% of the balance), interest accrues at the IRS quarterly underpayment rate (7% per year for the third quarter of 2026), and a Notice of Federal Tax Lien can be filed against your assets. Continued non-response leads to wage garnishment or a bank levy, and the State Department can revoke or refuse passport renewal once seriously delinquent tax debt exceeds roughly $62,000. The debt does not go away on its own — the 10-year CSED clock starts only when the tax is assessed.",
+      },
+      {
+        question: "What's the difference between a tax attorney, CPA, and Enrolled Agent?",
+        answer:
+          "All three can represent you before the IRS, but their strengths differ. Enrolled Agents are federally licensed by the IRS specifically for tax representation and are usually the most affordable option ($150–$300/hour). CPAs bring broader accounting depth — useful if bookkeeping errors caused the debt. Tax attorneys ($300–$600/hour) add attorney-client privilege and are the right call if there is criminal exposure, complex Innocent Spouse issues, or a Tax Court petition on the table.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Payment plans (installment agreements)", url: "https://www.irs.gov/payments/payment-plans-installment-agreements" },
+      { label: "IRS — Offer in Compromise", url: "https://www.irs.gov/payments/offer-in-compromise" },
+      { label: "IRS — Form 656 Booklet (OIC application)", url: "https://www.irs.gov/pub/irs-pdf/f656b.pdf" },
+      { label: "IRS — Failure to Pay Penalty", url: "https://www.irs.gov/payments/failure-to-pay-penalty" },
+      { label: "IRS — Quarterly interest rates on underpayments", url: "https://www.irs.gov/payments/quarterly-interest-rates" },
+      { label: "IRS — Innocent Spouse Relief (IRC §6015)", url: "https://www.irs.gov/businesses/small-businesses-self-employed/innocent-spouse-relief" },
+      { label: "IRS — First Time Abate (penalty relief)", url: "https://www.irs.gov/payments/penalty-relief-due-to-first-time-abate-or-other-administrative-waiver" },
+      { label: "IRS Data Book (FY2025) — Publication 55B", url: "https://www.irs.gov/pub/irs-pdf/p55b.pdf" },
+    ],
+    defaultPreset: {
+      totalDebt: 42000,
+      yearsBehind: 0,
+      monthlyIncome: 6500,
+      monthlyAllowableExpenses: 5800,
+      assetEquity: 8000,
+      isJointSpousal: false,
+      cleanPriorThreeYears: false,
+    },
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

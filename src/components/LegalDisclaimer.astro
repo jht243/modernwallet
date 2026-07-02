@@ -1,0 +1,37 @@
+---
+// Standardized disclaimer for YMYL legal/tax pages (Estate Planning, Probate, Elder Care,
+// Tax Resolution). Rendered above <Sources>. Single source of language so all legal pillars stay
+// aligned if the wording ever needs to change.
+interface Props {
+  /** Short category tag surfaced in the label, e.g. "legal" or "tax". Defaults to "legal". */
+  scope?: "legal" | "tax";
+}
+const { scope = "legal" } = Astro.props as Props;
+const label = scope === "tax" ? "Not tax advice" : "Not legal advice";
+---
+<aside class="legal-disclaimer" role="note" aria-label={label}>
+  <span class="tag">{label}</span>
+  <p>
+    This calculator provides estimates for educational purposes and is not
+    {scope === "tax" ? "tax" : "legal or tax"} advice. Laws, tax rules, and program eligibility vary
+    by state and change over time. Consult a licensed {scope === "tax" ? "tax professional" : "attorney"}
+    in your state before acting on any result shown here.
+  </p>
+</aside>
+
+<style>
+  .legal-disclaimer {
+    display: flex; align-items: flex-start; gap: 12px;
+    margin: 26px 0 8px; padding: 14px 16px;
+    background: #FFF7E6; border: 1px solid #F0DDA5; border-radius: 10px;
+  }
+  .legal-disclaimer .tag {
+    flex-shrink: 0;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;
+    color: #8A6A00; background: #FCE9B6; padding: 4px 8px; border-radius: 999px;
+    margin-top: 2px;
+  }
+  .legal-disclaimer p {
+    margin: 0; color: #3a3a3a; font-size: 0.95rem; line-height: 1.65;
+  }
+</style>

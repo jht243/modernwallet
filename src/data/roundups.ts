@@ -2027,6 +2027,207 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Investment Growth Calculator", href: "/investing/" },
     ],
   },
+
+  // ── Best Tax Relief Companies ────────────────────────────────────────────
+  {
+    slug: "best-tax-relief-companies",
+    title: "Best Tax Relief Companies 2026: Verified Picks",
+    metaDescription:
+      "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+    targetKeyword: "best tax relief companies",
+    category: "tax relief companies",
+    angle: "best",
+    segment: "Tax Resolution",
+    h1: "Best Tax Relief Companies of 2026",
+    intro:
+      "The best tax relief companies are the ones with the cleanest BBB record, verifiable staff credentials, transparent pricing, and no recent FTC action — and by that standard the category has fewer safe picks than most reviews suggest. We evaluated six national firms on years in business, BBB accreditation and complaint volume, staff mix (tax attorneys / CPAs / Enrolled Agents), pricing model, minimum debt threshold, and regulatory history. The FTC's consumer alert on tax-relief companies at consumer.ftc.gov/articles/tax-relief-companies remains live in 2026 with its core guidance unchanged: don't pay a full fee upfront, most taxpayers don't qualify for the OIC or hardship program advertised, and the recommended first step is a direct payment plan with the IRS.\n\nBefore you engage any firm below, run your numbers through the [tax resolution calculator](/tax-resolution/), the [Offer in Compromise calculator](/tax-resolution/offer-in-compromise-calculator/), and the [IRS payment plan calculator](/tax-resolution/irs-payment-plan-calculator/) — most cases at $50,000 or less don't need any of these companies at all, and knowing what the IRS's own math shows keeps you from overpaying.",
+    rankingCriteria:
+      "Rankings weighted: years in business (10%), BBB rating and complaint volume (25%), verified staff credentials (20%), pricing transparency (15%), minimum debt threshold and case fit (15%), regulatory history — FTC actions, class actions, state bar complaints (15%). No company paid for placement. Optima Tax Relief is included despite the 2022 FTC settlement to give readers the full picture; the settlement is disclosed in its listing below.",
+    options: [
+      {
+        name: "Precision Tax Relief",
+        bestFor: "Best overall — clean record, longest track, flat-fee pricing",
+        description:
+          "Coeur d'Alene, Idaho, founded 1967 (roughly 59 years in business). A+ BBB rating, accredited since 2011, and only 2 BBB complaints in the last 3 years — the cleanest complaint record among the six national firms reviewed. Precision Tax staffs Enrolled Agents (federally licensed IRS specialists) rather than attorneys or CPAs — the same unlimited practice rights before the IRS at typically lower cost. Precision has been named 'Best Overall' by Investopedia across multiple years and 'Best Customer Service' by CNBC Select in 2024.",
+        strengths: [
+          "Cleanest complaint record among national tax-relief firms (2 BBB complaints in 3 years)",
+          "Longest track record in the category — 59 years in business",
+          "Flat-fee pricing with a 'Fair Quote Guarantee' — no phased or hidden fees",
+          "Enrolled Agents on staff (federally licensed IRS specialists)",
+          "Payment plans available for the fee itself",
+        ],
+        limitations: [
+          "No attorneys on staff — refers out for criminal exposure, Tax Court, or complex Innocent Spouse cases",
+          "Case fees not published on the website — quoted after free eligibility assessment",
+        ],
+        pricing: "Flat fee (custom-quoted per case); payment plans available. Free eligibility assessment. Case-fee ranges not published.",
+      },
+      {
+        name: "Community Tax",
+        bestFor: "Best for smaller balances — lowest investigation fee",
+        description:
+          "Chicago, Illinois, founded 2010 (approximately 16 years in business). A+ BBB rating, accredited. Staffs tax attorneys, CPAs, and Enrolled Agents. Community Tax uses a two-phase pricing model that's transparent on the initial investigation fee: roughly $295–$549 for individual cases and $595–$999 for business cases. A resolution fee follows the investigation phase, quoted after review. Community Tax refunds the investigation fee if no resolution is possible, which is unusual in the category.",
+        strengths: [
+          "Lowest published investigation fee in the category ($295–$549 individual)",
+          "Investigation-fee refund if no resolution is possible",
+          "All three professional credentials on staff",
+          "Minimum debt threshold around $7,000–$10,000 — accepts smaller cases than most competitors",
+        ],
+        limitations: [
+          "Resolution-phase fees are not published — quoted after investigation",
+          "Standard service-quality complaints in BBB history (typical for the category)",
+        ],
+        pricing: "Two-phase: investigation fee $295–$549 individual ($595–$999 business) + resolution fee quoted after review.",
+      },
+      {
+        name: "Larson Tax Relief",
+        bestFor: "Best for business tax problems (payroll, 941, business levies)",
+        description:
+          "Westminster, Colorado, family-owned for over 20 years. A+ BBB rating, accredited. Larson is unusual in the category for its $25,000 minimum debt threshold — higher than every other national firm — and its business-tax specialty. Roughly 80% of Larson's cases are payroll tax issues (Form 941), IRS levies on operating businesses, and trust fund recovery penalty cases. Very low complaint volume, no FTC or class-action history.",
+        strengths: [
+          "Business tax specialist — 80% of cases are payroll/business tax",
+          "Very low BBB complaint volume across 20+ years",
+          "All three professional credentials on staff",
+          "Family-owned and stable",
+        ],
+        limitations: [
+          "$25,000 minimum debt threshold — won't take smaller individual cases",
+          "Fees custom-quoted; higher than category norm given business-case focus",
+        ],
+        pricing: "Flat fee, custom-quoted per case. $25,000 minimum debt.",
+      },
+      {
+        name: "Fortress Tax Relief",
+        bestFor: "Best for complex or high-dollar attorney-required cases",
+        description:
+          "Bend, Oregon. Roughly 20 years in business. A+ BBB rating. Fortress is the only national firm reviewed where every case is worked by a licensed tax attorney — no sales-rep intake or case-manager handling. That makes it a fit for cases with criminal exposure, Tax Court petitions, complex Innocent Spouse Relief facts, or offshore reporting issues where attorney-client privilege matters. $20,000 minimum debt.",
+        strengths: [
+          "Every case worked by a licensed tax attorney (attorney-client privilege applies)",
+          "Handles cases up to $20 million",
+          "Clean regulatory history — no FTC or class-action issues",
+          "Fit for cases where CPAs/EAs cannot go (criminal, Tax Court, complex Innocent Spouse)",
+        ],
+        limitations: [
+          "Hourly billing rather than flat fee — higher cost on straightforward cases",
+          "$20,000 minimum debt threshold",
+          "Fees not published on the site — attorney rates typically $300–$600+/hour",
+        ],
+        pricing: "Hourly attorney billing; $20,000 minimum debt threshold. Rates not published; attorney category rates apply.",
+      },
+      {
+        name: "Anthem Tax Services",
+        bestFor: "Best money-back guarantee",
+        description:
+          "Woodland Hills, California, founded 2010 (roughly 16 years in business). A+ BBB rating, accredited since February 2017. Anthem offers a 100% money-back guarantee on resolution work if the firm doesn't reduce the balance owed or restructure the payment plan (the guarantee excludes bookkeeping, tax prep, and a required minimum deposit). Staff credentials are not itemized specifically on the public site.",
+        strengths: [
+          "100% money-back guarantee on resolution work",
+          "A+ BBB accreditation since 2017",
+          "16 years in business",
+        ],
+        limitations: [
+          "Minimum debt threshold not disclosed on the site",
+          "Staff credential mix not itemized publicly (BBB shows 'tax professionals' without breakdown)",
+          "Fees not disclosed on the site — quoted after consultation",
+        ],
+        pricing: "Not disclosed on site. Money-back guarantee on resolution work with defined exclusions.",
+      },
+      {
+        name: "Optima Tax Relief",
+        bestFor: "Largest scale — but read the FTC-settlement disclosure",
+        description:
+          "Santa Ana, California, founded 2011 (roughly 15 years in business). A+ BBB rating, accredited. Largest firm by resolved-dollars claimed ($3 billion+). REGULATORY DISCLOSURE: Optima settled with the FTC in 2022 for $7 million in consumer redress (part of a broader $12 million package) over allegations of misrepresenting savings and refund practices. Optima has continued operating and rebuilt its process, but BBB complaint volume remains high (770+ in the last 3 years). If you're considering Optima, factor in the FTC history and heightened complaint volume against its scale and brand recognition.",
+        strengths: [
+          "Largest scale in the category — $3B+ resolved",
+          "Heavy brand recognition; 'America's #1 Most Trusted' by YouGov 2023",
+          "Tax attorneys + licensed tax professionals on staff",
+          "15-day money-back on investigation phase",
+        ],
+        limitations: [
+          "2022 FTC settlement — $7M consumer redress over misrepresentation allegations",
+          "770+ BBB complaints in last 3 years",
+          "Under-$10,000 leads are referred out to partner firms",
+          "Case fees not published — industry-reported $4,000–$7,500+",
+        ],
+        pricing: "Two-phase: investigation + resolution. 15-day money-back on investigation phase. Fees not published.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Company", "Min. Debt", "Staff Credential", "Pricing", "Years", "Regulatory"],
+      rows: [
+        { name: "Precision Tax Relief", values: ["Free assessment", "Enrolled Agents", "Flat fee", "59", "Clean"] },
+        { name: "Community Tax", values: ["~$7,000–$10,000", "Attorneys / CPAs / EAs", "Two-phase ($295+)", "16", "Clean"] },
+        { name: "Larson Tax Relief", values: ["$25,000", "Attorneys / CPAs / EAs", "Flat fee (custom)", "20+", "Clean"] },
+        { name: "Fortress Tax Relief", values: ["$20,000", "Attorneys only", "Hourly", "~20", "Clean"] },
+        { name: "Anthem Tax Services", values: ["Not disclosed", "Not itemized", "Not disclosed; money-back", "16", "Clean"] },
+        { name: "Optima Tax Relief", values: ["$10,000", "Attorneys + tax pros", "Two-phase", "15", "2022 FTC settlement — $7M"] },
+      ],
+    },
+    verdict:
+      "Precision Tax Relief is the best overall pick for most taxpayers — the cleanest complaint record, the longest track record, flat-fee pricing, and Enrolled Agents at rates below attorney-heavy firms. Community Tax is the right choice when your balance is on the smaller side ($7,000–$20,000) and you want the lowest published investigation fee. Larson Tax Relief is the pick for business tax problems (payroll, 941, business levies). Fortress Tax Relief is the pick when your case has criminal exposure, Tax Court potential, or complex Innocent Spouse facts that require attorney-client privilege. Anthem Tax Services is worth considering only if the money-back guarantee is the decisive factor for you. Optima Tax Relief is included for completeness — the 2022 FTC settlement and elevated complaint volume mean the burden of proof is on you to justify choosing them over the alternatives above. Before you hire any of these firms, run your specific numbers through our [tax resolution hub](/tax-resolution/) — most straightforward cases (streamlined installment agreements, First Time Abate) don't need a paid firm at all.",
+    sections: [
+      {
+        heading: "How to avoid tax-relief scams (FTC guidance)",
+        content:
+          "The FTC's consumer alert at consumer.ftc.gov/articles/tax-relief-companies has stayed live and unchanged in substance for years. The core warnings: (1) don't pay a full fee upfront; (2) no company can guarantee a specific outcome — Offer in Compromise acceptance rates are around 21% (7,199 of 33,591 in FY2025 per the IRS Data Book), not the 90%+ some ads suggest; (3) monthly 'maintenance fees' often stretch cases out for months or years without meaningful progress; (4) the IRS's own Online Payment Agreement for balances under $50,000 costs $22 to set up and doesn't need a paid firm at all.\n\nA practical filter: if a company won't tell you their fee before running your Reasonable Collection Potential math, walk away. Our [Offer in Compromise calculator](/tax-resolution/offer-in-compromise-calculator/) shows exactly what the IRS's Form 656-B worksheet returns for your specific numbers — a legitimate firm can match or improve on that, and shouldn't want to hide the underlying math.",
+      },
+      {
+        heading: "When you don't need a tax-relief company",
+        content:
+          "Most straightforward IRS collection cases don't require any of the firms in this roundup. A streamlined online installment agreement for balances of $50,000 or less costs $22 to set up (direct debit) and can be done through the IRS's Online Payment Agreement application in about 15 minutes. First Time Abate is available via a phone call to the toll-free number on your penalty notice if you've been penalty-free for the last 3 years. Currently Not Collectible status uses Form 433-F and is filed directly with the IRS.\n\nHiring a professional makes sense when the case has real complexity: an Offer in Compromise (the RCP math is nuanced), a Partial Pay Installment Agreement (Form 433-F financials + 2-year mandatory reviews), a Collection Due Process appeal after Letter 1058, or an Innocent Spouse Relief case. For those, an Enrolled Agent ($150–$300/hour, $3,000–$7,500 for OIC) is usually the right hire — see our [tax attorney vs CPA vs enrolled agent comparison](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) for the specific problem-shape guidance.",
+      },
+      {
+        heading: "How we ranked",
+        content:
+          "Rankings weighted years in business (10%), BBB rating and complaint volume (25%), verified staff credentials (20%), pricing transparency (15%), minimum debt threshold and case fit (15%), and regulatory history including FTC actions, class actions, and state bar complaints (15%). No company paid for placement. Optima Tax Relief was included despite its 2022 FTC settlement to give readers the full picture; the settlement and elevated complaint volume are disclosed in its listing. Where a firm did not publish specific fees or credential mixes, we noted the gap rather than importing third-party estimates.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are tax relief companies worth it?",
+        answer:
+          "Tax relief companies are worth it for genuinely complex cases — Offer in Compromise prep, Partial Pay Installment Agreements, Collection Due Process appeals, and Innocent Spouse Relief — where the numbers and paperwork justify a $3,000–$7,500 professional fee. They are usually not worth it for straightforward cases: streamlined online installment agreements (balance ≤ $50,000) cost $22 through the IRS Online Payment Agreement, and First Time Abate can be requested by phone. The FTC warns that most taxpayers don't qualify for the aggressive settlements these companies advertise, so run your specific numbers through our [Offer in Compromise calculator](/tax-resolution/offer-in-compromise-calculator/) before you hire anyone.",
+      },
+      {
+        question: "Is IRS tax relief legit?",
+        answer:
+          "IRS tax relief itself is real — Offer in Compromise, installment agreements, Currently Not Collectible status, and penalty abatement are all statutory programs the IRS administers under the Internal Revenue Code. The FY2025 IRS Data Book shows 7,199 of 33,591 offers were accepted (21.4%). Tax-relief companies that help clients access these programs are legitimate businesses. What isn't legitimate: firms promising 'pennies on the dollar' before ever seeing your Form 433 financials, or firms that charge upfront fees before doing any work. The FTC's Tax Relief Companies alert covers the specific patterns to avoid.",
+      },
+      {
+        question: "How much does a tax relief company cost?",
+        answer:
+          "Cost depends on the case type and the firm's pricing model. An Offer in Compromise typically runs $3,000–$7,500 (Enrolled Agents and CPAs at the lower end, tax attorneys at the higher end). A Partial Pay Installment Agreement runs $1,500–$3,500. A First Time Abate request runs $500–$1,500 (though for a First Time Abate, doing it yourself with a phone call to the IRS is usually the right call). Investigation phase fees (used by Community Tax and Optima) start around $295–$549 for individual cases. Flat-fee firms like Precision Tax quote after a free eligibility assessment.",
+      },
+      {
+        question: "Are any tax relief companies backed by the IRS?",
+        answer:
+          "No. The IRS does not endorse, back, or accredit any private tax-relief company. Any firm that implies IRS endorsement is violating IRS Circular 230 and FTC advertising rules. The IRS's own consumer resources — irs.gov/payments — are free. Some firms use marketing language like 'Fresh Start Program' or 'IRS Approved' that trades on the IRS's actual Fresh Start Initiative (a real 2012 IRS policy change that expanded OIC criteria) but implies more IRS involvement than exists.",
+      },
+      {
+        question: "Which tax relief company should I use for my case?",
+        answer:
+          "Match the firm to your case shape. For balances under $50,000 with straightforward W-2 income, do it yourself through the IRS Online Payment Agreement — no firm needed. For Offer in Compromise cases with W-2 income and modest assets, Precision Tax Relief (flat fee, Enrolled Agents) or Community Tax (lowest investigation fee) are the best value. For business tax problems (payroll, 941, trust fund recovery), Larson Tax Relief is the specialist. For complex cases with criminal exposure, Tax Court potential, or offshore issues, Fortress Tax Relief (attorney-only) is the fit. Our [tax attorney vs CPA vs enrolled agent comparison](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) walks through the specific problem shapes each professional handles best.",
+      },
+      {
+        question: "Can I get my money back if a tax relief company doesn't help me?",
+        answer:
+          "It depends on the firm's guarantee. Anthem Tax Services offers a 100% money-back guarantee on resolution work if they don't reduce your balance or restructure your payment plan (with specific exclusions). Optima Tax Relief has a 15-day money-back guarantee on the investigation phase only. Community Tax refunds the investigation fee if no resolution is possible. Precision Tax Relief has a satisfaction-focused approach but no explicit money-back guarantee posted. Larson and Fortress do not publish money-back guarantees. Read the specific guarantee terms carefully — many exclude bookkeeping, tax prep, and require a minimum deposit.",
+      },
+    ],
+    sources: [
+      { label: "FTC — Tax Relief Companies (consumer alert)", url: "https://consumer.ftc.gov/articles/tax-relief-companies" },
+      { label: "IRS — Offer in Compromise", url: "https://www.irs.gov/payments/offer-in-compromise" },
+      { label: "IRS — Payment plans (installment agreements)", url: "https://www.irs.gov/payments/payment-plans-installment-agreements" },
+      { label: "IRS Data Book FY2025 — Publication 55B", url: "https://www.irs.gov/pub/irs-pdf/p55b.pdf" },
+      { label: "IRS — Circular 230 (regulations governing practice before the IRS)", url: "https://www.irs.gov/tax-professionals/circular-230-tax-professionals" },
+    ],
+    relatedComparisons: ["tax-attorney-vs-cpa-vs-enrolled-agent"],
+    calculatorLinks: [
+      { label: "Tax resolution calculator", href: "/tax-resolution/" },
+      { label: "Offer in compromise calculator", href: "/tax-resolution/offer-in-compromise-calculator/" },
+      { label: "IRS payment plan calculator", href: "/tax-resolution/irs-payment-plan-calculator/" },
+      { label: "Penalty abatement calculator", href: "/tax-resolution/penalty-abatement-calculator/" },
+    ],
+  },
 ];
 
 export const ROUNDUP_BY_SLUG = Object.fromEntries(

@@ -1,53 +1,75 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import LinkCard from "../../components/LinkCard.astro";
-import Byline from "../../components/Byline.astro";
-import Sources from "../../components/Sources.astro";
-import LegalDisclaimer from "../../components/LegalDisclaimer.astro";
-import { SITE, LAST_UPDATED, REVIEWER } from "../../data/site";
-import { SPOKES } from "../../data/spokes";
-import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
-import CalculatorIsland from "../../components/CalculatorIsland";
-import { spokeStats } from "../../lib/stats";
-import { linkify, plain, paragraphs } from "../../lib/richtext";
-import { titleCase } from "../../lib/format";
-import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
-import { iconForSpoke } from "../../data/icons";
-import CrossLinks from "../../components/CrossLinks.astro";
+// State-subpage route: /{category}/{slug}/{state}/ (e.g. /estate-planning/will-cost-calculator/texas/).
+// Generates one page per (spoke × state) combination where the spoke declares `stateVariants`.
+// Reuses the spoke template, injects a state law-context section, sibling-state links, and a
+// back-link to the parent spoke. Pillar 1 content generation will fill each state page's unique
+// title/meta/H1/intro/lawContext via the keyword-gap-pass workflow — the shell renders sensibly
+// with template defaults until then.
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LinkCard from "../../../components/LinkCard.astro";
+import Byline from "../../../components/Byline.astro";
+import Sources from "../../../components/Sources.astro";
+import LegalDisclaimer from "../../../components/LegalDisclaimer.astro";
+import CalculatorIsland from "../../../components/CalculatorIsland";
+import CrossLinks from "../../../components/CrossLinks.astro";
+import { SITE, LAST_UPDATED, REVIEWER } from "../../../data/site";
+import { SPOKES } from "../../../data/spokes";
+import { CALC_BY_ID, isLive, relatedSpokes } from "../../../data/calculators";
+import { STATE_BY_SLUG, STATES } from "../../../data/states";
+import { getStateOverride } from "../../../data/state-overrides";
+import { linkify, plain, paragraphs } from "../../../lib/richtext";
+import { titleCase } from "../../../lib/format";
+import { personSchema, articleSchema, reviewerPersonSchema } from "../../../lib/jsonld";
+import { iconForSpoke } from "../../../data/icons";
 
-// Legal pillars (Pillar 1+) render attorney-reviewer byline + LegalDisclaimer + reviewer JSON-LD.
+// The 4 legal pillars render the attorney-reviewer byline + disclaimer + reviewer JSON-LD.
 const LEGAL_PILLARS = new Set(["estate-planning", "probate", "elder-care", "tax-resolution"]);
 const TAX_PILLAR = "tax-resolution";
 
 export function getStaticPaths() {
-  return SPOKES
-    .filter((s) => {
-      const c = CALC_BY_ID[s.calculator];
-      return c && isLive(c);
-    })
-    .map((entry) => ({
-      params: { category: entry.calculator, slug: entry.slug },
-      props: { entry },
-    }));
+  const paths = [];
+  for (const s of SPOKES) {
+    if (!s.stateVariants || s.stateVariants.length === 0) continue;
+    const c = CALC_BY_ID[s.calculator];
+    if (!c || !isLive(c)) continue;
+    for (const stateSlug of s.stateVariants) {
+      const st = STATE_BY_SLUG[stateSlug];
+      if (!st) continue;
+      paths.push({
+        params: { category: s.calculator, slug: s.slug, state: st.slug },
+        props: { entry: s, state: st },
+      });
+    }
+  }
+  return paths;
 }
 
-const { entry } = Astro.props;
+const { entry, state } = Astro.props;
 const calc = CALC_BY_ID[entry.calculator]!;
-const related = relatedSpokes(entry, 3);
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const isLegal = LEGAL_PILLARS.has(calc.id);
-const reviewer = isLegal ? (entry.reviewer ?? REVIEWER) : undefined;
 const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
+const reviewer = isLegal ? (entry.reviewer ?? REVIEWER) : undefined;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
-// Build-time computation — inject real numbers into static HTML before JS hydrates.
-const stats = spokeStats(entry);
+// Per-state bespoke content overrides (Phase-3 authored, Phase-4 audited per state page).
+// If a state doesn't have overrides yet, sensible templated defaults are used so the shell still
+// renders — that page then queues for its own Phase 3 authoring in a follow-on slice.
+const override = getStateOverride(entry.slug, state.slug);
+const title = override?.title ?? `${titleCase(entry.targetKeyword)} — ${state.name} | ${SITE.name}`;
+const metaDescription = (override?.metaDescription ?? `${state.name} ${entry.targetKeyword} estimator. ${entry.metaDescription}`).slice(0, 160);
+const h1 = override?.h1 ?? `${entry.h1} — ${state.name}`;
+const stateIntro = override?.intro ?? `This page tailors the ${entry.targetKeyword} for ${state.name} residents. ${entry.intro}`;
+const stateLawContext = override?.lawContext ?? state.lawContext;
+const combinedFaqs = [...(entry.faqs ?? []), ...(override?.extraFaqs ?? [])];
+const combinedSources = [...(entry.sources ?? []), ...(override?.extraSources ?? [])];
+const sisterStates = STATES.filter((s) => s.slug !== state.slug && (entry.stateVariants ?? []).includes(s.slug)).slice(0, 8);
 
 // ---- JSON-LD ----
-const jsonLdFaq = entry.faqs.length
+const jsonLdFaq = combinedFaqs.length
   ? {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: entry.faqs.map((f) => ({
+      mainEntity: combinedFaqs.map((f) => ({
         "@type": "Question",
         name: f.question,
         acceptedAnswer: { "@type": "Answer", text: plain(f.answer) },
@@ -58,11 +80,11 @@ const jsonLdFaq = entry.faqs.length
 const jsonLdPerson = personSchema();
 const jsonLdReviewerPerson = reviewer ? reviewerPersonSchema(reviewer) : null;
 const jsonLdArticle = articleSchema({
-  headline: entry.h1,
-  description: entry.metaDescription,
+  headline: h1,
+  description: metaDescription,
   url: canonicalUrl,
   datePublished: LAST_UPDATED,
-  sources: entry.sources,
+  sources: combinedSources,
   reviewedBy: reviewer,
 });
 
@@ -72,22 +94,25 @@ const jsonLdBreadcrumb = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
     { "@type": "ListItem", position: 2, name: calc.label, item: new URL(`/${calc.id}/`, Astro.site).toString() },
-    { "@type": "ListItem", position: 3, name: entry.targetKeyword, item: canonicalUrl },
+    { "@type": "ListItem", position: 3, name: entry.targetKeyword, item: new URL(`/${calc.id}/${entry.slug}/`, Astro.site).toString() },
+    { "@type": "ListItem", position: 4, name: state.name, item: canonicalUrl },
   ],
 };
 
 const jsonLdApp = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: entry.title,
-  description: entry.metaDescription,
+  name: `${entry.targetKeyword} — ${state.name}`,
+  description: metaDescription,
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any (web)",
   offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
   url: canonicalUrl,
 };
+
+const related = relatedSpokes(entry, 3);
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription}>
+<BaseLayout title={title} description={metaDescription}>
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
@@ -99,20 +124,14 @@ const jsonLdApp = {
     <nav class="crumb" aria-label="Breadcrumb">
       <a href="/">{SITE.name}</a> <span>/</span>
       <a href={`/${calc.id}/`}>{calc.label}</a> <span>/</span>
-      <span class="crumb-current">{titleCase(entry.targetKeyword)}</span>
+      <a href={`/${calc.id}/${entry.slug}/`}>{titleCase(entry.targetKeyword)}</a> <span>/</span>
+      <span class="crumb-current">{state.name}</span>
     </nav>
 
     <header class="hero">
-      <h1>{entry.h1}</h1>
+      <h1>{h1}</h1>
       <Byline reviewer={reviewer} />
-      {paragraphs(entry.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
-      {stats.length > 0 && (
-        <div class="proof">
-          {stats.map((s) => (
-            <span class="proof-stat"><strong>{s.value}</strong> {s.label}</span>
-          ))}
-        </div>
-      )}
+      {paragraphs(stateIntro).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
     <section class="tool-section" aria-label="Interactive calculator">
@@ -127,17 +146,17 @@ const jsonLdApp = {
       />
     </section>
 
+    {stateLawContext && (
+      <section class="section">
+        <h2>{state.name} law and cost context</h2>
+        {paragraphs(stateLawContext).map((para) => <p set:html={linkify(para)} />)}
+      </section>
+    )}
+
     <section class="section">
       <h2>How it's calculated</h2>
       {entry.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
     </section>
-
-    {entry.workedExample && (
-      <section class="section">
-        <h2>A worked example</h2>
-        {paragraphs(entry.workedExample).map((para) => <p set:html={linkify(para)} />)}
-      </section>
-    )}
 
     <section class="section">
       <h2>Common mistakes to avoid</h2>
@@ -149,7 +168,7 @@ const jsonLdApp = {
     <section class="section">
       <h2>Frequently asked questions</h2>
       <div class="faqs">
-        {entry.faqs.map((f) => (
+        {combinedFaqs.map((f) => (
           <details class="faq">
             <summary><h3>{f.question}</h3></summary>
             <p set:html={linkify(f.answer)} />
@@ -159,7 +178,22 @@ const jsonLdApp = {
     </section>
 
     {isLegal && <LegalDisclaimer scope={disclaimerScope} />}
+
     <Sources sources={entry.sources} />
+
+    {sisterStates.length > 0 && (
+      <section class="section">
+        <h2>See {entry.targetKeyword} for other states</h2>
+        <div class="sister-states">
+          {sisterStates.map((s) => (
+            <a class="pill" href={`/${calc.id}/${entry.slug}/${s.slug}/`}>{s.name}<span class="arrow" aria-hidden="true">→</span></a>
+          ))}
+        </div>
+        <p class="see-all">
+          <a href={`/${calc.id}/${entry.slug}/`}>Back to the {titleCase(entry.targetKeyword)} overview →</a>
+        </p>
+      </section>
+    )}
 
     {related.length > 0 && (
       <section class="section">
@@ -169,10 +203,6 @@ const jsonLdApp = {
             <LinkCard href={`/${r.calculator}/${r.slug}/`} title={r.targetKeyword} meta="Free · instant" icon={iconForSpoke(r.calculator, r.slug)} />
           ))}
         </div>
-        <p class="related-all">
-          See all <a href={`/${calc.id}/`}>{calc.label.toLowerCase()} calculators</a>, or browse
-          <a href="/calculators/"> every {SITE.name} calculator</a>.
-        </p>
       </section>
     )}
 
@@ -189,8 +219,6 @@ const jsonLdApp = {
     .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
     .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
     .lede:last-of-type { margin-bottom: 0; }
-    .proof { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 18px; font-size: 0.95rem; color: #555; }
-    .proof-stat strong { color: var(--primary-dark); font-weight: 700; }
     .tool-section {
       position: relative; margin: 8px 0 18px; padding: 22px;
       background: linear-gradient(180deg, #F4FAF8 0%, #FFFFFF 100%);
@@ -218,7 +246,18 @@ const jsonLdApp = {
     .faq[open] summary h3 { color: var(--primary-dark); }
     .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
     .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
-    .related-all { margin-top: 16px; font-size: 0.95rem; color: #555; }
+    .sister-states { display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border-radius: 999px;
+      border: 1px solid #D8EEE6; background: #F4FAF8; color: var(--primary-dark);
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: background 120ms ease, border-color 120ms ease;
+    }
+    .pill:hover { background: #E4F4EF; border-color: var(--primary); }
+    .see-all { margin-top: 14px; font-size: 0.95rem; }
+    .see-all a { color: var(--primary-dark); font-weight: 600; text-decoration: none; }
+    .see-all a:hover { text-decoration: underline; }
     @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } .tool-section { padding: 16px; } }
   </style>
 </BaseLayout>

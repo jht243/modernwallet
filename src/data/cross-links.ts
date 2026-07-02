@@ -48,6 +48,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/investing/", label: "Invest your monthly surplus" },
     { href: "/retirement/", label: "Are you saving enough to retire?" },
   ],
+  "tax-resolution": [
+    { href: "/guides/tax-tips/", label: "Proactive tax planning (if you're current)" },
+    { href: "/mortgage/home-affordability-calculator/", label: "Back taxes and mortgage approval" },
+    { href: "/budget/", label: "Build a budget to fund the payment plan" },
+    { href: "/net-worth/", label: "See your full net worth" },
+  ],
 };
 
 export function crossLinksFor(calcId: string): CrossLink[] {

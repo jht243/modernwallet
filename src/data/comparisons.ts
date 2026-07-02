@@ -1102,6 +1102,104 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Home affordability calculator", href: "/mortgage/home-affordability-calculator/" },
     ],
   },
+
+  // ─── Tax Attorney vs CPA vs Enrolled Agent ──────────────────────────────
+  {
+    slug: "tax-attorney-vs-cpa-vs-enrolled-agent",
+    title: "Tax Attorney vs CPA vs Enrolled Agent: Who to Hire",
+    metaDescription:
+      "Tax attorney vs CPA vs enrolled agent compared: credentials, hourly rates, IRS representation rights, and which one to hire for what tax problem.",
+    targetKeyword: "tax attorney vs cpa vs enrolled agent",
+    optionA: "Tax Attorney",
+    optionB: "CPA or Enrolled Agent",
+    segment: "Tax Resolution",
+    h1: "Tax Attorney vs CPA vs Enrolled Agent: Who to Hire for What",
+    intro:
+      "A tax attorney is a bar-admitted lawyer who adds attorney-client privilege and can represent you in U.S. Tax Court; a CPA is a state-licensed accountant whose strength is broad accounting and financial-statement depth; and an Enrolled Agent is a federally licensed IRS specialist who is often the most affordable option for straightforward representation. All three have unlimited practice rights before the IRS under Circular 230, but the right choice depends on the shape of your tax problem: criminal or high-stakes litigation calls for a tax attorney, bookkeeping or business tax planning calls for a CPA, and IRS collection cases (installment agreements, Offers in Compromise, penalty abatement) typically call for an EA at $150–$300 per hour.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Credential source", a: "Bar admission (state supreme court); often J.D. + LL.M. in taxation", b: "CPA: state board + college coursework + Uniform CPA Exam. EA: IRS federal license via Special Enrollment Examination or 5+ years IRS experience" },
+        { dimension: "IRS practice rights (Circular 230)", a: "Unlimited representation on all matters, all tax years", b: "Unlimited representation on all matters, all tax years" },
+        { dimension: "Attorney-client privilege", a: "Full attorney-client privilege for legal advice", b: "Limited §7525 tax-practitioner privilege in non-criminal, civil-only matters; no privilege in criminal cases" },
+        { dimension: "Typical hourly rate", a: "$300–$600+", b: "CPA: $250–$500. EA: $150–$300" },
+        { dimension: "Offer in Compromise prep", a: "$5,000–$15,000+", b: "$3,000–$7,500" },
+        { dimension: "Installment agreement setup", a: "$2,500–$5,000+", b: "$1,500–$3,500" },
+        { dimension: "Tax Court representation", a: "Yes (admitted to U.S. Tax Court)", b: "Only if separately admitted (rare)" },
+        { dimension: "Criminal tax defense", a: "Yes", b: "No — must refer to a tax attorney" },
+        { dimension: "Best fit", a: "Criminal exposure, Tax Court petition, complex Innocent Spouse, offshore issues, appeals with significant dollars", b: "Straightforward collection cases: installment agreements, OIC, penalty abatement, currently not collectible, first-time abate" },
+      ],
+    },
+    verdict:
+      "Pick a tax attorney only when you have criminal exposure, a Tax Court petition on the table, a complex Innocent Spouse claim, offshore reporting issues, or an appeal with significant dollars at stake — the price premium buys attorney-client privilege and court admission. For everything else, an Enrolled Agent is usually the right hire: the same unlimited practice rights before the IRS as a CPA or attorney, sharper focus on IRS collection procedures, and 40–60% lower hourly rates. A CPA is the right choice when the tax problem is downstream of a bookkeeping or business-tax error — they can fix the underlying accounting AND handle the IRS notice.",
+    sections: [
+      {
+        heading: "What each credential actually means",
+        content:
+          "A tax attorney is a J.D.-holding lawyer admitted to a state bar, often with an additional LL.M. in taxation. The bar admission triggers attorney-client privilege — communications with a tax attorney about legal advice are privileged and cannot be compelled in most contexts. Tax attorneys can appear in every court, including U.S. Tax Court, U.S. District Court, and the U.S. Court of Federal Claims.\n\nA CPA (Certified Public Accountant) is licensed by a state board of accountancy after completing 150 semester hours of college coursework, passing the four-section Uniform CPA Examination, and typically 1–2 years of qualifying experience. The CPA license focuses on accounting and auditing; taxation is one of several specialty areas.\n\nAn Enrolled Agent is federally licensed by the IRS itself, either by passing the three-part Special Enrollment Examination (SEE) or by 5+ years of qualifying IRS experience. EAs specialize in taxation — that's the entire scope of the license. Unlike CPAs and attorneys, EA licensure is granted by the IRS and is portable across all 50 states without further requirements.\n\nAll three have 'unlimited practice rights' under IRS Circular 230, meaning they can represent any taxpayer, on any matter, before any IRS office, on any tax period.",
+      },
+      {
+        heading: "The privilege question",
+        content:
+          "The single most important legal difference is privilege. Attorney-client privilege protects communications with a tax attorney for the purpose of obtaining legal advice, in both civil and criminal contexts. The IRS cannot compel disclosure of privileged communications.\n\nCPAs and Enrolled Agents have a much narrower protection under IRC §7525 (the federally authorized tax practitioner privilege). It applies only in non-criminal civil tax matters before the IRS or federal court. In criminal tax proceedings, §7525 provides zero protection — the IRS can subpoena the entire client file. This is the single biggest reason to hire a tax attorney if criminal exposure is possible.\n\nA practical rule: if the IRS has referred your case to Criminal Investigation Division (CID), or if the potential penalty structure includes fraud (§6663 — 75% of underpayment) or willful failure to file (§7203, a misdemeanor), retain a tax attorney immediately. Any communications you have with a CPA or EA from that point on are subpoena-able.",
+      },
+      {
+        heading: "Cost differences on real tax-resolution work",
+        content:
+          "For straightforward IRS collection work, the price gap between attorneys and EAs is substantial. Offer in Compromise preparation typically costs $3,000 to $7,500 with an Enrolled Agent or CPA (per practitioner surveys from TaxCure and NAEA members), versus $5,000 to $15,000+ with a tax attorney. Complex or appealed OICs push higher on both sides.\n\nInstallment agreement setup runs $1,500 to $3,500 with an EA/CPA versus $2,500 to $5,000+ with a tax attorney. Penalty abatement (First Time Abate is often a single phone call) runs $500 to $1,500 with an EA/CPA versus $1,000 to $2,500 with an attorney.\n\nThe [tax resolution hub](/tax-resolution/) walks through the specific relief program each situation calls for, and the [IRS payment plan calculator](/tax-resolution/irs-payment-plan-calculator/), [Offer in Compromise calculator](/tax-resolution/offer-in-compromise-calculator/), and [penalty abatement calculator](/tax-resolution/penalty-abatement-calculator/) show what each program is actually worth to you — a lot of straightforward relief is DIY-able if you have the calculator to check the numbers.",
+      },
+      {
+        heading: "Which one to hire, by problem shape",
+        content:
+          "Hire a tax attorney when: (1) the IRS has issued a criminal referral or you have Fraud Technical Advisor involvement, (2) you're petitioning U.S. Tax Court, (3) you have complex Innocent Spouse Relief facts (§6015 equitable relief cases turn on litigation-quality analysis), (4) offshore reporting issues are involved (FBAR penalties can hit $10,000 per non-willful violation or 50% of account value for willful), or (5) an appeal has enough dollars at risk to justify the premium.\n\nHire a CPA when: (1) bookkeeping or business-tax error caused the IRS problem, (2) you need financial-statement work alongside the tax representation, (3) you have complex business tax situations (S-corp basis, partnership allocations, multi-state issues), or (4) the CPA is already representing you on your annual return.\n\nHire an Enrolled Agent when: (1) it's a routine IRS collection matter (installment agreement, OIC, CNC, penalty abatement, currently not collectible), (2) budget matters and the problem doesn't require litigation, (3) you want a specialist whose entire practice is IRS representation, or (4) you're in the middle of a wage garnishment, bank levy, or automated collection escalation and need someone who lives in this world.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can an Enrolled Agent do everything a tax attorney can do with the IRS?",
+        answer:
+          "Yes and no. Under IRS Circular 230, Enrolled Agents have the same unlimited practice rights before the IRS as attorneys and CPAs — they can represent any taxpayer, on any matter, at any level of the IRS, including Appeals. What they cannot do is appear in U.S. Tax Court (unless separately admitted, which is rare), provide legal advice, or extend full attorney-client privilege. For routine IRS collection cases, an EA can do everything a tax attorney can do at 40–60% lower cost.",
+      },
+      {
+        question: "When do I need a tax attorney instead of a CPA?",
+        answer:
+          "You need a tax attorney when there is criminal exposure (fraud penalties under §6663, willful failure to file under §7203, or an IRS Criminal Investigation Division referral), when petitioning U.S. Tax Court, when Innocent Spouse Relief under §6015 requires litigation-quality analysis, when offshore reporting issues (FBAR, FATCA) are involved, or when attorney-client privilege matters. The §7525 tax-practitioner privilege that covers CPAs is limited to non-criminal civil matters and evaporates the moment the case turns criminal.",
+      },
+      {
+        question: "How much do tax attorneys, CPAs, and Enrolled Agents charge?",
+        answer:
+          "Tax attorneys typically charge $300–$600+ per hour and $5,000–$15,000+ for a complete Offer in Compromise. CPAs charge $250–$500 per hour and $3,000–$7,500 for an OIC. Enrolled Agents are the most affordable at $150–$300 per hour and $3,000–$7,500 for an OIC — often at the lower end of that band. First Time Abate penalty relief runs $500–$1,500 with an EA or CPA. All fees vary by market and case complexity.",
+      },
+      {
+        question: "What is an Enrolled Agent and how is it different from a CPA?",
+        answer:
+          "An Enrolled Agent is a federally licensed IRS specialist. The EA license is granted by the IRS itself after passing the three-part Special Enrollment Examination (or through 5+ years of qualifying IRS experience). It focuses exclusively on taxation and IRS representation. A CPA is state-licensed after passing the four-section Uniform CPA Examination and covers a broader accounting and financial-statement scope. Both have unlimited practice rights before the IRS; both can prepare returns and represent clients in audits, appeals, and collections. EAs tend to focus on tax specifically; CPAs on accounting broadly.",
+      },
+      {
+        question: "Does attorney-client privilege apply to CPAs and Enrolled Agents?",
+        answer:
+          "No — not in full. CPAs and Enrolled Agents get the limited §7525 tax-practitioner privilege, which applies only in non-criminal civil matters before the IRS or in federal court proceedings. §7525 does not apply in criminal tax proceedings, state tax proceedings, or in matters involving tax shelters. Full attorney-client privilege applies only to communications with a licensed attorney for the purpose of obtaining legal advice. This is why criminal tax exposure requires a tax attorney, not a CPA or EA.",
+      },
+      {
+        question: "Can I represent myself before the IRS instead of hiring a professional?",
+        answer:
+          "Yes. Any taxpayer can represent themselves before the IRS at every stage — audit, collection, Appeals, and even Tax Court (as a pro se petitioner). For straightforward cases, self-representation is entirely viable: streamlined online installment agreements, First Time Abate requests, and Currently Not Collectible filings are all designed for DIY use. The calculators at the tax resolution hub show you the numbers professionals would run. Hire a professional when the dollars, complexity, or criminal exposure justify the cost.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Circular 230: Regulations Governing Practice Before the IRS", url: "https://www.irs.gov/tax-professionals/circular-230-tax-professionals" },
+      { label: "IRS — Enrolled Agent Information", url: "https://www.irs.gov/tax-professionals/enrolled-agents" },
+      { label: "IRC §7525 — Confidentiality privileges relating to taxpayer communications", url: "https://www.law.cornell.edu/uscode/text/26/7525" },
+      { label: "AICPA — What is a CPA?", url: "https://www.aicpa-cima.com/resources/article/what-is-a-cpa" },
+      { label: "NAEA — What is an Enrolled Agent?", url: "https://www.naea.org/for-taxpayers/find-an-enrolled-agent" },
+    ],
+    relatedComparisons: [],
+    calculatorLinks: [
+      { label: "Tax resolution calculator", href: "/tax-resolution/" },
+      { label: "Offer in compromise calculator", href: "/tax-resolution/offer-in-compromise-calculator/" },
+      { label: "IRS payment plan calculator", href: "/tax-resolution/irs-payment-plan-calculator/" },
+      { label: "Penalty abatement calculator", href: "/tax-resolution/penalty-abatement-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

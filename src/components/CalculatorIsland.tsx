@@ -7,6 +7,11 @@ import NetWorthCalculator from "./NetWorthCalculator";
 import AffordabilityCalculator from "./AffordabilityCalculator";
 import MortgageExtrasCalculator from "./MortgageExtrasCalculator";
 import BudgetCalculator from "./BudgetCalculator";
+import TaxResolutionHubCalculator from "./TaxResolutionHubCalculator";
+import OfferInCompromiseCalculator from "./OfferInCompromiseCalculator";
+import IRSPaymentPlanCalculator from "./IRSPaymentPlanCalculator";
+import PenaltyAbatementCalculator from "./PenaltyAbatementCalculator";
+import BackTaxesImpactCalculator from "./BackTaxesImpactCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -22,6 +27,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "portfolio": PortfolioCalculator,
   "net-worth": NetWorthCalculator,
   "budget": BudgetCalculator,
+  // Pillar 1 (Tax Resolution) — IRS relief-program decision-tree hub + spoke calculators.
+  "tax-resolution": TaxResolutionHubCalculator,
+  "oic": OfferInCompromiseCalculator,
+  "irs-payment-plan": IRSPaymentPlanCalculator,
+  "penalty-abatement": PenaltyAbatementCalculator,
+  "back-taxes-impact": BackTaxesImpactCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,
