@@ -17,6 +17,7 @@ import WillCostCalculator from "./WillCostCalculator";
 import LivingTrustCostCalculator from "./LivingTrustCostCalculator";
 import EstateTaxCalculator from "./EstateTaxCalculator";
 import PrenupCostCalculator from "./PrenupCostCalculator";
+import ProbateHubCalculator from "./ProbateHubCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -44,6 +45,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "living-trust-cost": LivingTrustCostCalculator,
   "estate-tax": EstateTaxCalculator,
   "prenup-cost": PrenupCostCalculator,
+  // Pillar 3 (Probate) — hub + 3 spokes reuse the same island with different presets/content.
+  "probate": ProbateHubCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

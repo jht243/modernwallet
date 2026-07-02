@@ -458,6 +458,74 @@ export const CALCULATORS: CalculatorDef[] = [
       specialNeedsDependent: false,
     },
   },
+
+  // ---- Pillar 3: Professional Services — Probate ----
+  // Grounded in state probate codes (Cal. Prob. Code §10810 statutory fee schedule,
+  // Fla. Stat. §733.6171, Iowa Code §633.197, Mo. Rev. Stat. §473.153, NY SCPA §2307,
+  // plus reasonable-fee jurisdictions), Uniform Probate Code adoption, and state
+  // small-estate thresholds. Engine: src/lib/probate-hub.ts.
+  {
+    id: "probate",
+    islandId: "probate",
+    label: "Probate",
+    navOrder: 11,
+    metaTitle: "Probate Calculator: What Will It Cost and How Long?",
+    metaDescription:
+      "Free probate calculator. Enter state and estate value to see total cost, timeline, small-estate options, and how much a living trust would have saved.",
+    targetKeyword: "probate calculator",
+    h1: "Probate Calculator: Cost, Timeline, and What a Trust Would've Saved",
+    intro:
+      "A probate calculator estimates the total cost and timeline of probating an estate in your state — attorney fees (statutory in 9 states, reasonable-fee in ~41), executor commission, court filing fees, and any ancillary probate for out-of-state real property. The calculator above applies the actual state fee schedule where one exists: California uses Cal. Prob. Code §10810 (4%/3%/2%/1%/0.5% tiers), Florida uses Fla. Stat. §733.6171 ($1,500 base + tiered percentages), and 7 other states have their own statutes. For a $750,000 moderate California estate, the total probate cost runs about $36,000–$42,000 over 15–30 months — versus $2,025–$6,750 for a revocable living trust that would have avoided probate entirely.",
+    howItWorks:
+      "Probate cost has four components. First, attorney fees — California, Florida, Iowa, Missouri, Montana, New York (executor only), Wyoming, Arkansas, Oklahoma, and New Jersey (executor only) set statutory schedules; every other state uses a reasonable-fee model at roughly 2-4% of gross estate. Second, executor commission — in California and Iowa, both the attorney and executor get the same statutory percentage, roughly doubling the bill. Third, court filing fees + publication + certified copies, typically $400-$1,500 uncontested, $900-$4,500 contested. Fourth, ancillary probate — a separate probate opened in each additional state where the decedent owned titled real property, running $2,000-$8,000 per additional state.\n\nTimelines vary sharply by state. Texas independent administration under Estates Code §401.001 closes in 3-6 months. Uniform Probate Code informal states (Utah, Colorado, Arizona, Minnesota, Idaho) close in 4-8 months. California takes 12-24 months because Prob. Code §9100's 4-month creditor claim period plus urban court backlogs push things out. New York Surrogate's Court runs 12-24 months for anything beyond voluntary administration (SCPA Article 13, available for personal property under $50,000). Contested probate — will contests, creditor litigation — runs 2-5 years everywhere.\n\nEvery state has a small-estate procedure that lets estates under a threshold skip full probate: California $208,850 (indexed 2025), Texas $75,000 excluding homestead, New York $50,000 personal property (SCPA Article 13), Florida $75,000 or death 2+ years old (summary administration), Wyoming $200,000. The calculator above flags when your estate qualifies. Below the threshold, fees drop to under $1,000 and timeline shortens to weeks.\n\nThe biggest single lever to reduce probate cost is a revocable living trust set up during life. Because trust assets don't pass through probate, the entire attorney-executor-court stack disappears. The [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) shows attorney fees of $1,500-$5,000 for a revocable trust in most states, $5,000-$10,000+ in California and other HNW metros. For any California estate over about $200,000 gross, the trust math wins decisively — a lesson probate teaches families the expensive way.",
+    faqs: [
+      {
+        question: "What is a probate calculator?",
+        answer:
+          "A probate calculator estimates the total cost and timeline of probating an estate in your state. Inputs: state, gross estate value, complexity (uncontested vs contested), and number of additional states where real property is located (which triggers ancillary probate). The calculator above applies actual state fee schedules — California's Cal. Prob. Code §10810, Florida's Fla. Stat. §733.6171, and 7 other statutory states — and market-typical percentages for the ~41 reasonable-fee states.",
+      },
+      {
+        question: "How much does probate cost?",
+        answer:
+          "Probate cost runs 3-8% of gross estate in most states for uncontested cases, or roughly $10,000-$60,000 for typical estates. In statutory-fee states like California, both the attorney and executor get the same percentage schedule (Cal. Prob. Code §10810), so total statutory fees roughly double: a $500,000 California estate faces about $26,000 in combined attorney + executor fees. Reasonable-fee states like Texas and Colorado run 2-4% of gross estate. Contested cases hit $50,000+ almost everywhere. Ancillary probate for real property in additional states adds $2,000-$8,000 per state.",
+      },
+      {
+        question: "How long does probate take?",
+        answer:
+          "Uncontested probate takes 6-12 months in most states, 9-18 months with real estate, and 12-24 months in California and New York. Texas independent administration closes fastest (3-6 months). Uniform Probate Code informal states (Utah, Colorado, Arizona, Minnesota, Idaho) close in 4-8 months. California is slow because Prob. Code §9100 sets a 4-month creditor claim period plus urban courts run backlogs. Contested probate — will contests or creditor litigation — takes 2-5 years everywhere. Small-estate procedures bypass full probate and close in weeks.",
+      },
+      {
+        question: "Which states have statutory probate fees?",
+        answer:
+          "Nine states set statutory attorney or executor fee schedules: California (Cal. Prob. Code §10810), Florida (Fla. Stat. §733.6171 attorney + §733.617 PR), Iowa (Iowa Code §633.197/198), Missouri (§473.153), Montana (§72-3-631), New York (SCPA §2307 executor only), Wyoming (§2-7-803), Arkansas (§28-48-108), Oklahoma (tit. 58 §527), and New Jersey (§3B:18-14, executor only). The other ~41 states use a 'reasonable fee' standard subject to court approval on contested cases and market-typical practice on uncontested cases (2-4% of gross estate typical).",
+      },
+      {
+        question: "How can I avoid probate?",
+        answer:
+          "The most reliable way is a revocable living trust set up during life. Assets titled to the trust pass to beneficiaries at death without going through probate court. Other probate-avoidance tools: transfer-on-death deeds for real estate (available in ~30 states); pay-on-death designations on bank accounts; joint tenancy with rights of survivorship on real estate and vehicles; beneficiary designations on 401(k), IRA, and life insurance (these override wills and trusts). A living trust is the most comprehensive because it covers assets these individual tools miss. See the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) for setup costs by state.",
+      },
+      {
+        question: "What is ancillary probate?",
+        answer:
+          "Ancillary probate is a separate probate proceeding opened in each state (other than the decedent's domicile) where the decedent owned titled real property — real estate, mineral interests, sometimes vehicles/boats. The domicile-state probate must be opened first; the ancillary state then admits the domicile-state letters testamentary. Cost typically $2,000-$8,000 per additional state, plus 6-12 months of additional timeline. A revocable living trust that holds all real property avoids ancillary probate entirely because the trust doesn't die when the grantor does.",
+      },
+    ],
+    sources: [
+      { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "Iowa Code §633.197 — executor commission", url: "https://www.legis.iowa.gov/docs/code/633.197.pdf" },
+      { label: "Mo. Rev. Stat. §473.153 — statutory fee", url: "https://revisor.mo.gov/main/OneSection.aspx?section=473.153" },
+      { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+    ],
+    defaultPreset: {
+      state: "california",
+      estateValue: 750_000,
+      complexity: "moderate",
+      ancillaryStates: 0,
+    },
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

@@ -1566,6 +1566,106 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Estate planning calculator", href: "/estate-planning/" },
     ],
   },
+
+  // ─── Probate vs Trust ────────────────────────────────────────────────────
+  {
+    slug: "probate-vs-trust",
+    title: "Probate vs Trust: The Real Cost + Timeline Tradeoff",
+    metaDescription:
+      "Probate vs trust compared: probate cost 3-8% of estate + 6-24 months vs trust setup $1,500-$5,000 during life. Real numbers by state.",
+    targetKeyword: "probate vs trust",
+    optionA: "Probate",
+    optionB: "Revocable Living Trust",
+    segment: "Probate",
+    h1: "Probate vs Trust: What Each One Actually Costs",
+    intro:
+      "Probate is the default court process for settling an estate at death — attorney fees, executor commission, court costs, and 6-24 months of settlement time, running roughly 3-8% of gross estate. A revocable living trust is the standard alternative — $1,500-$5,000 attorney or $499-$599 online, set up during life, and it avoids probate entirely because trust assets don't pass through court. For estates above the state's small-estate threshold (California $208,850; Arizona $200,000; Oregon $275,000), the trust math wins decisively: a $750,000 California estate faces $36,000+ in statutory probate fees vs $2,025-$6,750 for a revocable living trust that would have avoided it entirely.",
+    comparisonTable: {
+      rows: [
+        { dimension: "When you pay", a: "At death (deducted from estate)", b: "During life (one-time setup)" },
+        { dimension: "Attorney fee", a: "Statutory in 9 states (CA §10810: 4%/3%/2%/1%/0.5%); reasonable in ~41 states (2-4% of gross)", b: "$1,500-$5,000 typical; $5,000-$10,000+ in CA/HNW; $499-$599 online" },
+        { dimension: "Executor / trustee fee", a: "2-4% commission (CA + IA + WY: same statutory schedule)", b: "Typically 0 during life (grantor is trustee); successor trustee compensated only if formal" },
+        { dimension: "Court + publication", a: "$400-$1,500 uncontested; $900-$4,500 contested", b: "None" },
+        { dimension: "Timeline", a: "6-24 months uncontested; 2-5 years contested", b: "Weeks to distribute at death" },
+        { dimension: "Privacy", a: "Public record via probate court", b: "Private (trust not filed in court)" },
+        { dimension: "Multi-state property", a: "Requires ancillary probate per state ($2k-$8k each + 6-12 months)", b: "Trust holds all property; no ancillary needed" },
+        { dimension: "Small-estate procedure", a: "Available if estate ≤ state threshold; weeks + <$1,000", b: "Same trust setup — usually not worth it below threshold" },
+        { dimension: "Estate tax", a: "Doesn't reduce; assets in taxable estate", b: "Doesn't reduce; assets remain in taxable estate (revocable)" },
+        { dimension: "Changes after setup", a: "N/A (probate is one-shot)", b: "Amend anytime during life" },
+      ],
+    },
+    verdict:
+      "Choose probate (i.e., don't set up a trust) when: your estate is at or below the state's small-estate threshold (California $208,850; Arizona $200,000; Oregon $275,000; most others $25k-$100k) AND you don't own real property in multiple states. Below the threshold, small-estate procedures process in weeks for under $1,000 — cheaper than trust setup. Choose a revocable living trust when: your estate is above the small-estate threshold, you own real property in more than one state (avoids ancillary probate), you're in a slow probate state (California, New York), or you want privacy for your estate settlement. The trust setup cost ($1,500-$5,000) is meaningfully less than probate cost on any middle-class-or-larger estate. Above the federal $15M estate tax exemption or a state exemption threshold, you also need IRREVOCABLE trusts (ILIT, MAPT, dynasty) for tax planning — a revocable trust alone doesn't reduce estate tax.",
+    sections: [
+      {
+        heading: "The math on a $750,000 California estate",
+        content:
+          "Under Cal. Prob. Code §10810, attorney statutory fee on $750,000: 4% × $100k ($4,000) + 3% × $100k ($3,000) + 2% × $550k ($11,000) = $18,000. Under §10800, executor gets the same $18,000. Court filing + publication + certified copies: $600-$1,500. Total probate cost: $36,600-$37,500 over 15-30 months (12-24 base + 3-6 for real estate under Cal. Prob. Code §9100's 4-month creditor claim period plus urban court backlog).\n\nCompare to a California revocable living trust: attorney-drafted $2,025-$6,750 (national $1,500-$5,000 × California's 1.35 cost multiplier) or Trust & Will online $499-$599. Add funding $500-$2,000. Total trust setup: $2,525-$8,750, done today. Net savings if the trust is in place at death: $28,000-$35,000 plus 12+ months of estate settlement time. The [probate fee calculator](/probate/fee-calculator/) computes this exactly for your specific state and estate value.",
+      },
+      {
+        heading: "When probate is the right choice",
+        content:
+          "Not every estate needs a trust. Below the state's small-estate threshold, probate via affidavit is cheaper than trust setup. California §13100 processes estates ≤ $208,850 in weeks for a few hundred dollars in fees. Arizona's threshold expanded to $200,000 personal / $300,000 real in September 2025. Oregon allows $275,000 combined. Every state has some form of simplified procedure; the threshold determines whether trust setup pays off.\n\nThe other case where probate makes sense: single-property, single-state, single-heir estates where the parties want court oversight of asset transfer. Some heirs prefer a clean court order over trust-based distribution — probate provides that public record and creditor cutoff at the end of the claim period.",
+      },
+      {
+        heading: "The multi-state trap",
+        content:
+          "Ancillary probate is the single strongest argument for a trust. Every state where the decedent owned titled real property (real estate, mineral interests, sometimes vehicles/boats) requires its own probate proceeding at death — the primary probate opens in the domicile state, then each additional state runs its own ancillary probate. Cost is $2,000-$8,000 per additional state, and timeline adds 6-12 months per state.\n\nA revocable living trust with title to all real properties eliminates this entirely. Nothing 'dies' with the grantor because the trust owns everything; no ancillary probate is triggered. For anyone owning a vacation home, inherited family cabin, or investment property in another state, this alone typically justifies the trust cost.",
+      },
+      {
+        heading: "What a revocable trust doesn't do",
+        content:
+          "A revocable living trust does NOT reduce estate tax. Assets in a revocable trust remain in your taxable estate because you retained control. The 2026 federal exemption is $15M per individual (permanent under OBBBA P.L. 119-21) regardless of trust structure. It also does not protect assets from your creditors during life or from Medicaid spend-down. For those, you need irrevocable structures — see the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) for ILIT, MAPT, and dynasty trust costs.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a trust cheaper than probate?",
+        answer:
+          "For estates above the state's small-estate threshold, yes — dramatically so. Trust setup runs $1,500-$5,000 attorney or $499-$599 online, one-time during life. Probate at death runs 3-8% of gross estate, or roughly $10,000-$60,000 for typical estates. In statutory-fee states (California under Cal. Prob. Code §10810, Florida under §733.6171, and 7 others), the gap is even larger because probate fees are fixed by percentage tiers on gross estate. For a $750,000 California estate, probate costs about $36,000 vs trust setup at $2,025-$6,750.",
+      },
+      {
+        question: "How much does probate cost?",
+        answer:
+          "3-8% of gross estate in most states for uncontested probate, or roughly $10,000-$60,000 for typical estates. In California (Cal. Prob. Code §10810), both attorney and executor each get the same statutory percentage schedule (4%/3%/2%/1%/0.5%), so total statutory fees roughly double. Florida sets attorney fees under §733.6171 with a stepped base and tiered percentages. The other ~41 states use reasonable-fee models at 2-4% of gross estate. Contested probate hits $50,000+ almost everywhere.",
+      },
+      {
+        question: "Does a living trust avoid probate?",
+        answer:
+          "Yes, for assets properly funded into the trust. The trust holds title to your assets during your life (with you as trustee and beneficiary), and at death a successor trustee distributes them according to the trust document — bypassing probate court entirely. The catch: the trust MUST be funded. Assets not retitled into the trust still go through probate. Trust funding (retitling deeds, brokerage accounts, etc.) is a $500-$2,000 additional cost or DIY step that most trust failures skip.",
+      },
+      {
+        question: "How long does probate take?",
+        answer:
+          "6-12 months for uncontested probate in most states, 9-18 months with real estate, 12-24 months in California and New York (statutory creditor claim periods + court backlogs), and 3-6 months in Texas (independent administration under Tex. Est. Code §401.001). Contested probate takes 2-5 years. A revocable living trust distributes to beneficiaries in weeks after death — no court proceeding required for trust assets. See the [probate timeline calculator](/probate/timeline-calculator/) for state-specific ranges.",
+      },
+      {
+        question: "Do I need a trust or is a will enough?",
+        answer:
+          "A will is enough when your estate is at or below the state's small-estate threshold (California $208,850, Arizona $200,000, Oregon $275,000, most others $25k-$100k) AND you don't own real property in multiple states. Add a durable POA and healthcare directive to the will and you're covered for $500-$1,500 attorney or $199-$299 online. Add a revocable living trust when you're above the small-estate threshold, own multi-state real estate, or want probate avoidance for privacy or speed. See the [living trust vs will comparison](/compare/living-trust-vs-will/) for the full framework.",
+      },
+      {
+        question: "Does a living trust save estate tax?",
+        answer:
+          "No — a revocable living trust does NOT reduce estate tax. Assets remain in your taxable estate because you retained control. The 2026 federal exemption is $15M per individual (permanent under OBBBA P.L. 119-21) regardless of trust structure. Only irrevocable trusts move assets out of the taxable estate: ILIT for life insurance, dynasty trust for generational transfer, gifting trusts for appreciating assets. See the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal + state exposure, and the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) for irrevocable trust costs.",
+      },
+    ],
+    sources: [
+      { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
+      { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust"],
+    calculatorLinks: [
+      { label: "Probate calculator", href: "/probate/" },
+      { label: "Probate fee calculator", href: "/probate/fee-calculator/" },
+      { label: "Probate vs trust calculator", href: "/probate/cost-vs-trust-calculator/" },
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

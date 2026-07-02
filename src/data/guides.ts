@@ -452,6 +452,104 @@ export const GUIDES: Guide[] = [
       { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
     ],
   },
+
+  {
+    slug: "probate-process-guide",
+    title: "Probate Process Guide: What Happens After Someone Dies",
+    metaDescription:
+      "Probate process guide: what happens after death, executor duties, timeline by state, small-estate procedures, and how to avoid probate. Not legal advice.",
+    h1: "Probate Process Guide: What to Do After Someone Dies",
+    cardBlurb: "Executor duties, timeline, small-estate procedures, and how to avoid probate — step by step.",
+    intro:
+      "This probate process guide walks through what happens after a death: the initial 30-day tasks (funeral, notifying agencies, locating the will), opening probate (petition, letters testamentary), the executor's duties (inventory, notice, creditor claims, tax returns), distribution, and closing. It also covers when a small-estate procedure can bypass full probate and how a revocable living trust drafted during life would have avoided the whole process. Not legal advice — consult a licensed attorney in the decedent's state.",
+    sections: [
+      {
+        heading: "Step 1: The first 30 days",
+        body:
+          "Immediately after death, three tasks come before probate. First, obtain 10-20 certified death certificates from the county vital records office ($15-$30 each) — you'll need them for banks, life insurance, retirement accounts, and title transfers. Second, locate the original will (safe deposit box, attorney's office, home file) — a photocopy is not enough in most states. Third, notify Social Security (which stops benefits and issues a small death benefit) and any pension administrators.\n\nIf there's a surviving spouse and modest joint assets, no probate may be needed at all — joint accounts, joint tenancy real estate, POD/TOD accounts, and beneficiary-designation assets (401(k), IRA, life insurance) all pass outside probate. Take inventory before assuming probate is required.",
+      },
+      {
+        heading: "Step 2: Determine if probate is needed",
+        body:
+          "Full probate is only needed for assets in the decedent's sole name without a beneficiary designation or survivorship title. Every state has a small-estate procedure that bypasses full probate when the estate falls under a threshold: California $208,850 (§13100 affidavit, indexed 2025); Arizona $200,000 personal / $300,000 real (September 2025 update); Oregon $275,000 combined; Texas $75,000 excluding homestead; New York $50,000 personal property (SCPA Article 13 voluntary administration). Most other states run $25,000-$100,000. Below the threshold, the small-estate affidavit processes in weeks for under $1,000 — dramatically cheaper than full probate.\n\nThe [probate fee calculator](/probate/fee-calculator/) flags when your estate qualifies. Above the threshold, formal probate is generally required unless the decedent held everything in a revocable living trust.",
+      },
+      {
+        heading: "Step 3: Open probate and get letters testamentary",
+        body:
+          "The executor named in the will (or, if no will, a court-appointed administrator) files a petition in the county probate court where the decedent was domiciled. The court holds a hearing, admits the will to probate, and issues letters testamentary — the executor's legal authority to act for the estate. This step takes 30-90 days in most states, longer in California and New York due to court backlogs.\n\nThe executor's authority begins with the letters, not with the death. Until the letters are issued, only limited actions (funeral, urgent bill payment from the executor's own funds) are proper. In statutory-fee states — California, Florida, Iowa, Missouri, Montana, New York (executor only), Wyoming, Arkansas, Oklahoma, New Jersey (executor only) — the executor's compensation is set by state statute. Elsewhere, it's 2-4% of gross estate as reasonable compensation.",
+      },
+      {
+        heading: "Step 4: Inventory, notice, and creditor claims",
+        body:
+          "The executor's four core duties: inventory (list every asset and its date-of-death value; some states require formal appraisal for real estate), notice (mail to known heirs and creditors; publish in a newspaper of general circulation in the county), creditor claim period (2-12 months by state; California's is 4 months under Cal. Prob. Code §9100), and tax returns (final income tax on Form 1040, and Form 706 estate tax return if the estate exceeds the $15M federal exemption or applicable state threshold).\n\nCreditor claims are typically 3-8% of estate value: mortgages continue to accrue interest, credit cards, medical bills, and any unresolved obligations. Legitimate claims must be paid before distribution; disputed claims can be litigated. In California, missed publication of notice extends the timeline — the 4-month window doesn't start until notice actually runs.",
+      },
+      {
+        heading: "Step 5: Distribution and closing",
+        body:
+          "After creditor claims are resolved and taxes are paid, the executor distributes remaining assets according to the will (or state intestacy law if there's no will). The court reviews the final accounting, approves distributions, and discharges the executor.\n\nUncontested probate closes in 6-12 months in most states, 9-18 months with real estate, 12-24 months in California and New York, and 3-6 months in Texas independent administration. Contested probate — will contests, creditor litigation, fiduciary disputes — stretches to 2-5 years with costs escalating 5-10× the uncontested baseline.",
+      },
+      {
+        heading: "Step 6: If probate is dragging — accelerate what you can",
+        body:
+          "If you're stuck in a long probate, six levers can help. First, apply for a small-estate procedure if the estate qualifies (most states let you convert if you discover eligibility late). Second, publish creditor notice immediately if it hasn't run — the statutory window doesn't start until notice actually runs. Third, use independent administration where available (Texas Est. Code §401.001; several other states have similar provisions) to skip court oversight of routine acts. Fourth, request UPC informal probate in a UPC state (Utah, Colorado, Arizona, Minnesota, Idaho, others). Fifth, consider moving venue to a rural county if the decedent had residence flexibility. Sixth, hire a probate paralegal or attorney with local court expertise — knowing when to file specific motions can shave months. See the [probate timeline calculator](/probate/timeline-calculator/) for state-specific ranges.",
+      },
+      {
+        heading: "Step 7: Avoid probate for your own estate",
+        body:
+          "The single most effective probate-avoidance tool is a revocable living trust set up during life. Assets in the trust bypass probate entirely at death — no attorney fee, no executor commission, no court proceeding, no publication. Cost: $1,500-$5,000 attorney or $499-$599 online (Trust & Will). Other probate-avoidance tools: transfer-on-death deeds for real estate (~30 states); pay-on-death designations for bank accounts; joint tenancy with rights of survivorship; beneficiary designations on 401(k), IRA, and life insurance (these override wills and trusts). A living trust is the most comprehensive because it covers assets these individual tools miss.\n\nFor any estate above the state's small-estate threshold, the trust math wins — see the [probate vs trust comparison](/compare/probate-vs-trust/) and the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/). The savings for a $750,000 California estate are typically $28,000-$35,000 plus 12+ months of settlement time.",
+      },
+    ],
+    tools: [
+      { href: "/probate/", label: "Probate calculator" },
+      { href: "/probate/fee-calculator/", label: "Probate fee calculator" },
+      { href: "/probate/timeline-calculator/", label: "Probate timeline calculator" },
+      { href: "/probate/cost-vs-trust-calculator/", label: "Probate vs trust calculator" },
+      { href: "/estate-planning/", label: "Estate planning calculator" },
+      { href: "/estate-planning/living-trust-cost-calculator/", label: "Living trust cost calculator" },
+    ],
+    faqs: [
+      {
+        question: "What is probate?",
+        answer:
+          "Probate is the court process that settles an estate at death: validating the will, appointing an executor, inventorying assets, paying creditors and taxes, and distributing what's left to beneficiaries. It typically takes 6-24 months and costs 3-8% of gross estate. Every state has a small-estate procedure that bypasses full probate when the estate falls below a threshold (California $208,850, Arizona $200,000, Oregon $275,000, most others $25k-$100k).",
+      },
+      {
+        question: "How long does probate take?",
+        answer:
+          "Uncontested probate takes 6-12 months in most states, 9-18 months with real estate, 12-24 months in California and New York, and 3-6 months in Texas independent administration. Uniform Probate Code informal states (Utah, Colorado, Arizona, Minnesota, Idaho) run 4-8 months. Contested probate takes 2-5 years. Small-estate procedures process in weeks for qualifying estates. See the [probate timeline calculator](/probate/timeline-calculator/) for state-specific ranges.",
+      },
+      {
+        question: "How much does probate cost?",
+        answer:
+          "3-8% of gross estate for uncontested probate in most states. In statutory-fee states (California Cal. Prob. Code §10810, Florida Fla. Stat. §733.6171, 7 others), the schedule is set by state law and both attorney and executor may each get the same percentage — total statutory fees can roughly double. The other ~41 states use a 'reasonable fee' model at 2-4% of gross estate for each of attorney and executor. Contested probate hits $50,000+ almost everywhere. See the [probate fee calculator](/probate/fee-calculator/) for the exact math in your state.",
+      },
+      {
+        question: "How do I avoid probate?",
+        answer:
+          "The most comprehensive tool is a revocable living trust set up during life — assets titled to the trust bypass probate entirely at death. Cost: $1,500-$5,000 attorney or $499-$599 online. Other probate-avoidance tools: transfer-on-death deeds for real estate (~30 states); pay-on-death designations on bank accounts; joint tenancy with rights of survivorship; beneficiary designations on 401(k), IRA, and life insurance (these override wills and trusts). A living trust is the most comprehensive because it covers what individual tools miss.",
+      },
+      {
+        question: "What are the executor's duties?",
+        answer:
+          "Four core duties. First, inventory — list every asset and its date-of-death value, with formal appraisal for real estate in most states. Second, notice — mail to known heirs and creditors, and publish in a newspaper of general circulation. Third, manage creditor claims through the state's statutory window (California 4 months under §9100, Texas 2 months, up to 12 months elsewhere) and pay legitimate claims. Fourth, file tax returns (final Form 1040 for the decedent's last year, and Form 706 estate tax return if estate exceeds the $15M federal exemption or applicable state threshold). After debts and taxes are paid, distribute per the will and file the final accounting with the court.",
+      },
+      {
+        question: "What if there's no will?",
+        answer:
+          "The estate passes under state intestacy law rather than the decedent's wishes. Most states' intestacy statutes distribute to the surviving spouse and children first, then parents, then siblings, then more distant relatives — with specific percentages varying by state and whether there's a surviving spouse plus children. The court appoints an administrator (usually a close relative who petitions) instead of an executor. The process is the same as with a will — inventory, notice, creditor claims, tax returns, distribution — but the distribution follows state statute, not the decedent's intent. Unmarried partners and stepchildren typically inherit nothing under intestacy, which is why having any will at all matters more than most people realize.",
+      },
+    ],
+    sources: [
+      { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
+      { label: "Cal. Prob. Code §9100 — creditor claim period", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9100&lawCode=PROB" },
+      { label: "Cal. Prob. Code §13100 — small-estate affidavit", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13100&lawCode=PROB" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "Tex. Est. Code §401.001 — independent administration", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.401.htm" },
+      { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));
