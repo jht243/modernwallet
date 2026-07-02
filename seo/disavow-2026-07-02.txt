@@ -1,0 +1,17 @@
+# Disavow file for themodernwallet
+# Generated: 2026-07-02
+# Source: Ahrefs referring-domains export, classified by scripts/disavow_classify.py
+# Contains ONLY domains matching the known SEO/backlink spam-network signature
+# blasting this portfolio. Total: 11 domains.
+
+domain:atomizelink.icu
+domain:fiverr-seo-for-business-growth.site
+domain:linksnatcher.com
+domain:rankvanceseo.info
+domain:seo-growth-authority-boost-hub.shop
+domain:seo-growth-optimization-hub.shop
+domain:seodomains.website
+domain:seoflox.io
+domain:seopxl-organic-boost-lab.shop
+domain:seopxl-performance-authority-engine.shop
+domain:seopxl-traffic-growth-lab.shop
