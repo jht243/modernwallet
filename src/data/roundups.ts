@@ -2228,6 +2228,553 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Penalty abatement calculator", href: "/tax-resolution/penalty-abatement-calculator/" },
     ],
   },
+
+  // ── Best Online Will Makers ──────────────────────────────────────────────
+  {
+    slug: "best-online-will-makers",
+    title: "Best Online Will Makers 2026: Verified Picks",
+    metaDescription:
+      "Best online will makers of 2026: Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear. Verified pricing, state coverage, and when each is right.",
+    targetKeyword: "best online will makers",
+    category: "online will makers",
+    angle: "best",
+    segment: "Estate Planning",
+    h1: "Best Online Will Makers of 2026",
+    intro:
+      "The best online will makers produce legally valid last wills and testaments in every U.S. state at prices 60-95% below attorney rates. We evaluated six services on published pricing, state coverage, execution instructions, and included documents (POA, healthcare directive). Trust & Will leads on features and clarity ($199 individual / $299 couple / $499-$599 trust). LegalZoom Basic is cheapest at meaningful scale ($129/$229). FreeWill is genuinely free ($0) for simple-to-moderate cases. Nolo Quicken WillMaker is the strongest desktop-software option ($99-$209).\n\nBefore committing, verify your specific numbers with our [will cost calculator](/estate-planning/will-cost-calculator/) — attorney-drafted may make sense for blended families, business interests, or Louisiana (which requires a notarial testament under La. Civ. Code art. 1577 that some online tools don't default to).",
+    rankingCriteria:
+      "Rankings weighted: published pricing transparency (20%), state coverage including Louisiana + holographic-will states (20%), included supporting documents — POA and healthcare directive (20%), attorney-review add-on availability (15%), self-proving affidavit generation (10%), and update/versioning options (15%). No service paid for placement.",
+    options: [
+      {
+        name: "Trust & Will",
+        bestFor: "Best overall — cleanest UX, clearest state instructions",
+        description:
+          "$199 individual will / $299 couple will. Add trust plan at $499/$599 for RLT + pour-over will. $299 attorney review add-on. $49/year membership for unlimited updates. Includes durable POA and healthcare directive with HIPAA release in the base will package. State-specific signing instructions clearly presented at the end of the flow. Founded 2017.",
+        strengths: [
+          "Cleanest end-to-end UX with clear state-specific execution instructions",
+          "Included POA + healthcare directive in every will package",
+          "Attorney-review add-on ($299) for hybrid coverage",
+          "Membership ($49/yr) allows unlimited document updates",
+        ],
+        limitations: [
+          "Higher base price than LegalZoom Basic or FreeWill",
+          "Trust plan is meaningful investment ($499-$599) that not every household needs",
+        ],
+        pricing: "$199 individual will / $299 couple. Trust plan $499 individual / $599 couple. Attorney review +$299. Membership $49/yr.",
+      },
+      {
+        name: "FreeWill",
+        bestFor: "Best free option — genuinely $0 for simple-to-moderate cases",
+        description:
+          "$0 for a last will and testament, durable POA, and healthcare directive. Monetized through partnerships with 2,400+ nonprofit organizations (nonprofits pay to be listed as recommended charitable-giving options, though users are not required to include a charitable gift). Revocable Living Trust available in California only. Founded 2017. Valid last will and testament in every state.",
+        strengths: [
+          "Truly $0 — no upsell required to complete a valid will",
+          "Includes POA and healthcare directive at no cost",
+          "Simple, focused flow — no complexity gates",
+          "Nonprofit partnership model means the product itself is not monetization pressure",
+        ],
+        limitations: [
+          "No trust product outside California",
+          "No attorney-review option",
+          "No membership or included updates — you re-do the flow to change anything",
+        ],
+        pricing: "$0 for will, POA, healthcare directive. Revocable Living Trust available in California only.",
+      },
+      {
+        name: "LegalZoom",
+        bestFor: "Best budget attorney-review option",
+        description:
+          "Basic Will $129 individual / $229 couple. Pro Will $149/$249. Premium Will $299/$399 (includes attorney consultation). Living Trust ~$279. Founded 2001 — longest-running online legal service in the category. Broader legal product line beyond wills (business formation, IP filings) if you value one-stop.",
+        strengths: [
+          "Lowest base price for a full will package ($129)",
+          "Premium tier includes attorney consultation at moderate cost ($299)",
+          "20+ years in business — longest track record in the category",
+          "Broader legal product line if you need adjacent services",
+        ],
+        limitations: [
+          "UX and state instructions less polished than Trust & Will",
+          "Basic tier does not include POA or healthcare directive — must upgrade to Pro or Premium",
+        ],
+        pricing: "Basic $129/$229; Pro $149/$249; Premium $299/$399. Living Trust ~$279.",
+      },
+      {
+        name: "Nolo Quicken WillMaker & Trust 2026",
+        bestFor: "Best desktop-software option (offline-capable)",
+        description:
+          "Software-based (Windows + Mac) rather than web app. Starter $99, Plus $139 (includes revocable living trust template), All Access $209 (adds Everplans document storage). Trusted legal-publisher brand — Nolo has published estate-planning materials for 50+ years. Includes will, POA, healthcare directive, and (in Plus tier) an RLT template. Works fully offline once installed.",
+        strengths: [
+          "Fully offline capable — data stays local unless you opt in to storage",
+          "Nolo's 50-year track record in legal publishing",
+          "Lowest-cost path to a revocable living trust template ($139)",
+          "One-time purchase, no membership required",
+        ],
+        limitations: [
+          "Desktop software requires installation (not a web app)",
+          "Interface feels dated versus Trust & Will",
+          "Annual repurchase if you want the latest year's tax/law updates",
+        ],
+        pricing: "Starter $99; Plus $139 (with RLT template); All Access $209 (adds Everplans storage).",
+      },
+      {
+        name: "Mama Bear Legal Forms",
+        bestFor: "Best for young families — POA + HIPAA bundled at low cost",
+        description:
+          "$159 individual / $249 couple. Includes will, POA, and HIPAA release. Add-ons: Young Adult POA $89, Senior POA $89. Founded 2020 with a specific focus on parents of young children. Emphasizes plain-language document explanations. Family-owned; smaller footprint than the top three.",
+        strengths: [
+          "POA + HIPAA release included in base price",
+          "Plain-language explanation of each document",
+          "Focus on parents-with-young-kids use case",
+          "Young Adult POA add-on ($89) uniquely targets the age-18 handoff",
+        ],
+        limitations: [
+          "Smaller company, shorter track record than Trust & Will or LegalZoom",
+          "No trust product",
+          "No attorney-review add-on",
+        ],
+        pricing: "$159 individual / $249 couple. Young Adult POA +$89. Senior POA +$89.",
+      },
+      {
+        name: "Rocket Lawyer",
+        bestFor: "Best membership model with attorney consultations",
+        description:
+          "Membership-based (~$39.99/month) with unlimited documents including wills, POA, healthcare directive, and attorney consultations. Non-member document one-off pricing around $39.99 per document. Founded 2008. Membership model works best if you use multiple legal documents beyond the estate-planning basics.",
+        strengths: [
+          "Membership includes attorney consultation — hybrid coverage at moderate cost",
+          "Unlimited documents beyond the will (leases, contracts, IP filings)",
+          "Ask-a-lawyer feature integrated into membership",
+        ],
+        limitations: [
+          "Pricing pages 404'd during 2026-07 verification — confirm current pricing directly at rocketlawyer.com",
+          "Monthly membership only justified if you use multiple legal products",
+          "Cancel-anytime but auto-renews if you forget",
+        ],
+        pricing: "~$39.99/mo membership (verify current). Non-member document ~$39.99. Pricing pages returned 404 during verification.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Service", "Individual will", "Couple will", "Trust plan", "POA + HC in base", "Attorney review"],
+      rows: [
+        { name: "Trust & Will", values: ["$199", "$299", "$499 / $599", "Yes", "+$299"] },
+        { name: "FreeWill", values: ["$0", "$0", "CA only", "Yes", "No"] },
+        { name: "LegalZoom", values: ["$129 Basic", "$229 Basic", "~$279", "Pro+ only", "Included Premium ($299)"] },
+        { name: "Nolo WillMaker", values: ["$99 Starter", "N/A single price", "$139 Plus (RLT template)", "Yes", "No"] },
+        { name: "Mama Bear", values: ["$159", "$249", "None", "Yes", "No"] },
+        { name: "Rocket Lawyer", values: ["Membership", "Membership", "N/A", "Yes", "Membership included"] },
+      ],
+    },
+    verdict:
+      "Trust & Will is the best overall pick — cleanest UX, POA and healthcare directive in the base package, attorney-review hybrid available. FreeWill is the best free option for simple-to-moderate estates (single, married with straightforward heirs) — genuinely $0 and valid in every state. LegalZoom is the best budget pick when you want attorney consultation included (Premium $299). Nolo Quicken WillMaker is the best desktop-software option if you prefer offline. Mama Bear is best for young families who want the POA + HIPAA bundled at moderate cost. Rocket Lawyer works if you'll use multiple legal documents beyond the estate-planning basics. Before committing to any of them, verify your specific state's execution requirements (witnesses, self-proving affidavit, Louisiana notarial testament) match the service's default flow.",
+    sections: [
+      {
+        heading: "How to pick between them",
+        content:
+          "Three questions decide it for most households. First: do you need a revocable living trust? If you own real estate in more than one state, have a special-needs dependent, or want probate privacy, yes — then Trust & Will's trust plan ($499/$599) or Nolo Plus ($139) are the picks. Second: how much complexity do you have? Simple facts (single, married with clear heirs) → FreeWill $0 or LegalZoom Basic $129. Moderate facts (married with kids, guardian nomination) → Trust & Will $199/$299 or LegalZoom Basic. Complex facts (blended family, business, testamentary trust with age-based distributions) → attorney-drafted, not online. Third: do you want attorney review? Trust & Will $299 add-on or LegalZoom Premium $299 give you hybrid coverage.",
+      },
+      {
+        heading: "State-specific traps",
+        content:
+          "Louisiana's notarial testament requirement (La. Civ. Code art. 1577) requires 2 witnesses PLUS a notary at execution. Most online tools produce documents that meet this if you follow their signing instructions, but verify or use a Louisiana attorney if unsure. Ohio does NOT permit self-proving affidavits — you'll need live witness testimony at probate, so choose witnesses carefully. Colorado and North Dakota uniquely accept notarization instead of two witnesses under C.R.S. §15-11-502(2) and N.D.C.C. §30.1-08-02. About 27 states recognize holographic (handwritten, unwitnessed) wills as a fallback, but attorney-drafted or online tools with two witnesses plus a self-proving affidavit remain the standard everywhere.",
+      },
+      {
+        heading: "When online is not enough",
+        content:
+          "Skip online and hire an attorney when: blended family (children from multiple marriages, second spouse), business interests requiring specific succession, testamentary trust for minor children with age-based distributions past 18, contested beneficiaries, out-of-state property with unusual community-property/common-law interactions, estate near or above a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M, etc.), or Louisiana residents who want an attorney handling the notary requirement in one appointment. Model with our [will cost calculator](/estate-planning/will-cost-calculator/) to see attorney costs in your state before deciding.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are online will makers legally binding?",
+        answer:
+          "Yes — Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear, and Rocket Lawyer all produce legally valid last wills and testaments in every U.S. state, provided you execute them with the state's required formalities. Louisiana requires an extra notary step under La. Civ. Code art. 1577 that most online tools don't default to. The primary source of online-will failures is user error at signing (skipping witnesses, wrong sequence, forgetting the self-proving affidavit) — not defects in the drafted document.",
+      },
+      {
+        question: "Which online will maker is the best?",
+        answer:
+          "Trust & Will is the best overall pick for most households — cleanest UX, POA and healthcare directive in the base package ($199 individual / $299 couple), attorney-review hybrid available ($299 add-on). FreeWill is the best genuinely-free option for simple-to-moderate cases ($0, valid in every state). LegalZoom Basic is the cheapest full package at $129. Nolo Quicken WillMaker is best if you want offline desktop software ($99-$209).",
+      },
+      {
+        question: "Is FreeWill really free?",
+        answer:
+          "Yes, genuinely — no credit card required and no upsell to complete a valid last will and testament, durable POA, and healthcare directive. FreeWill monetizes through partnerships with 2,400+ nonprofit organizations that pay to be listed as recommended charitable-giving options, but users are not required to include any charitable gift for the will to be valid. FreeWill offers a Revocable Living Trust in California only; other states get the will/POA/healthcare directive package.",
+      },
+      {
+        question: "Should I choose Trust & Will or LegalZoom?",
+        answer:
+          "Choose Trust & Will if you want the cleanest UX, POA and healthcare directive included in the base will package, and the option to add attorney review ($299). Choose LegalZoom Basic if lowest cost matters most ($129 vs $199) and you're comfortable with slightly less polished state instructions. LegalZoom Premium ($299) includes attorney consultation, which parallels Trust & Will's add-on but at the same total price with the consultation bundled. Both produce valid documents in every state.",
+      },
+      {
+        question: "Do online will makers work in every state?",
+        answer:
+          "Yes — Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear, and Rocket Lawyer all serve every U.S. state plus DC. State-specific handling: witness count (2 in essentially every state; Colorado and North Dakota also accept notarization alone), self-proving affidavit availability (48 states + DC; Ohio doesn't permit), Louisiana's notarial testament requirement (2 witnesses PLUS notary — most online tools don't default to this, so verify or use a Louisiana attorney), and holographic will recognition in ~27 states as a fallback. Follow the state-specific signing instructions the service provides.",
+      },
+    ],
+    sources: [
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
+      { label: "Cornell LII — Holographic will overview", url: "https://www.law.cornell.edu/wex/holographic_will" },
+      { label: "Legaltemplates 2026 — 909-firm estate planning cost study", url: "https://legaltemplates.net/resources/estate-planning/cost-of-estate-planning/" },
+      { label: "Nolo — How Much Will a Lawyer Charge to Write Your Will?", url: "https://www.nolo.com/legal-encyclopedia/how-much-will-lawyer-charge-write-your-will.html" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer"],
+    calculatorLinks: [
+      { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+    ],
+  },
+
+  // ── Best Living Trust Services ────────────────────────────────────────────
+  {
+    slug: "best-living-trust-services",
+    title: "Best Living Trust Services 2026: Verified Picks",
+    metaDescription:
+      "Best living trust services of 2026: Trust & Will, LegalZoom, Nolo compared. Attorney vs online costs, trust funding, and state-specific rules.",
+    targetKeyword: "best living trust services",
+    category: "living trust services",
+    angle: "best",
+    segment: "Estate Planning",
+    h1: "Best Living Trust Services of 2026",
+    intro:
+      "The best living trust services produce a valid revocable living trust for a straightforward household at 60-90% below attorney rates. We evaluated three online services (Trust & Will, LegalZoom Living Trust, Nolo Quicken WillMaker Plus) against a national attorney benchmark. Trust & Will is the leader at $499 individual / $599 couple with clear funding instructions. LegalZoom Living Trust is ~$279 (verify current) but lighter on funding guidance. Nolo Plus is the cheapest path at $139 (RLT template included). Attorney-drafted revocable trusts run $1,500-$5,000 typical, $5,000-$10,000+ in California and HNW metros.\n\nBefore choosing, model your specific numbers with our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/). A revocable living trust does NOT reduce estate tax — for that, an irrevocable trust (attorney-only) is required.",
+    rankingCriteria:
+      "Rankings weighted: trust document quality (30%), state coverage (20%), funding instructions and support (20%), attorney-review option (15%), and price transparency (15%). No service paid for placement. Attorney-drafted comparison included for reference.",
+    options: [
+      {
+        name: "Trust & Will",
+        bestFor: "Best online — clearest funding instructions",
+        description:
+          "$499 individual / $599 couple for revocable living trust + pour-over will + POA + healthcare directive. Attorney review add-on $299. Includes funding checklist (deed retitling, account beneficiary updates) with state-specific guidance. Membership $49/yr allows unlimited updates.",
+        strengths: [
+          "Clearest post-purchase funding instructions — the step most online trusts fail on",
+          "Included pour-over will, POA, and healthcare directive",
+          "Attorney-review add-on for hybrid coverage",
+          "Membership allows unlimited amendments",
+        ],
+        limitations: [
+          "Higher price than LegalZoom or Nolo",
+          "Does not draft irrevocable trusts (ILIT, MAPT, dynasty)",
+          "Not appropriate for California residents whose estate exceeds $184,500 gross probate threshold — attorney worth the added cost",
+        ],
+        pricing: "$499 individual / $599 couple trust package. Attorney review +$299. Membership $49/yr.",
+      },
+      {
+        name: "LegalZoom Living Trust",
+        bestFor: "Best budget online",
+        description:
+          "~$279 for revocable living trust package (verify current pricing). Includes basic funding guidance. LegalZoom's 20+ year track record in online legal is longest in the category. Attorney consultation included in Premium tier (~$299) if bundled with a will.",
+        strengths: [
+          "Lowest full-service online price for a revocable living trust",
+          "20+ year track record — longest in the category",
+          "Bundling with LegalZoom Premium will unlocks attorney consultation",
+        ],
+        limitations: [
+          "Funding guidance less thorough than Trust & Will",
+          "UX feels older than Trust & Will",
+          "Trust product pricing not confirmed during 2026-07 verification — check legalzoom.com directly",
+        ],
+        pricing: "~$279 (verify current). Premium bundle with will unlocks attorney consultation.",
+      },
+      {
+        name: "Nolo Quicken WillMaker Plus 2026",
+        bestFor: "Cheapest path to a valid RLT template",
+        description:
+          "$139 for the desktop software (Windows + Mac) which includes a revocable living trust template alongside will, POA, and healthcare directive. Nolo's 50+ year track record in legal publishing. Works fully offline once installed. All Access tier $209 adds Everplans document storage.",
+        strengths: [
+          "Lowest price path to a valid revocable living trust ($139)",
+          "Nolo's 50+ year legal-publisher brand",
+          "Fully offline — data stays local",
+          "One-time purchase, no membership",
+        ],
+        limitations: [
+          "Software installation required (not a web app)",
+          "Less hand-holding on funding compared to Trust & Will",
+          "Interface dated versus Trust & Will",
+          "Annual repurchase if you want latest law updates",
+        ],
+        pricing: "Plus $139 (RLT template); All Access $209 (adds storage).",
+      },
+      {
+        name: "Attorney-drafted",
+        bestFor: "Best for complex facts, high-net-worth, or irrevocable structures",
+        description:
+          "$1,500-$5,000 typical for a revocable living trust; $5,000-$10,000+ in California and other high-cost/HNW metros. Includes trust funding (deed recording, account retitling) in the same appointment. Required for irrevocable trusts (ILIT $2,500-$4,000, MAPT $3,000-$6,000, dynasty $5,000-$10,000+). Model with our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) for state-specific attorney rates.",
+        strengths: [
+          "Handles blended families, business interests, cross-state property correctly",
+          "Required for irrevocable trusts (ILIT, MAPT, dynasty)",
+          "Handles trust funding (deed recording, account retitling) in the same engagement",
+          "Attorney-client privilege applies",
+        ],
+        limitations: [
+          "3-20x the cost of online",
+          "California and NY metros hit $5,000-$10,000+ even for straightforward trusts",
+          "Multiple appointments and turnaround time",
+        ],
+        pricing: "$1,500-$5,000 typical revocable living trust; $5,000-$10,000+ California/HNW. Irrevocable trusts $2,500-$10,000+.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Service", "RLT price", "Pour-over will included", "Funding guidance", "Handles irrevocable", "Attorney-drafted"],
+      rows: [
+        { name: "Trust & Will", values: ["$499 / $599", "Yes", "Clearest online", "No", "Add-on +$299"] },
+        { name: "LegalZoom Living Trust", values: ["~$279", "Yes", "Basic", "No", "Premium bundle"] },
+        { name: "Nolo WillMaker Plus", values: ["$139", "Yes", "Basic", "No", "No"] },
+        { name: "Attorney", values: ["$1,500-$10,000+", "Yes", "Included", "Yes", "Yes"] },
+      ],
+    },
+    verdict:
+      "Trust & Will is the best online living trust service for most households — clearest funding instructions, included pour-over will and supporting documents, attorney-review hybrid available. LegalZoom is the budget pick for straightforward facts. Nolo Plus at $139 is the cheapest valid path if you're comfortable with less hand-holding. Attorney-drafted becomes worth it for California residents (probate on any estate over $184,500 is statutorily expensive), blended families, business interests, cross-state property, or any irrevocable trust (ILIT, MAPT, dynasty). Below the federal $15M and state estate tax thresholds, a revocable trust is a probate-avoidance tool — not a tax tool.",
+    sections: [
+      {
+        heading: "Why funding is the make-or-break step",
+        content:
+          "A revocable living trust that hasn't been funded — deed not recorded, accounts not retitled — provides zero probate protection at death. This is where most DIY trusts fail. The trust sits empty, assets remain in your name, and probate still applies at death. Trust & Will handles this best with clear post-purchase instructions and a funding checklist; LegalZoom and Nolo provide basic guidance but leave more up to you. Attorney-drafted trusts typically handle funding in the same engagement. Whichever path you choose, fund the trust immediately after drafting or the exercise is decorative.",
+      },
+      {
+        heading: "Revocable trusts don't reduce estate tax",
+        content:
+          "A revocable living trust does not reduce federal or state estate tax — assets remain in your taxable estate because you retained control. If your net worth is above the 2026 federal $15M exemption (OBBBA P.L. 119-21) or a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M, etc.), a revocable trust alone doesn't help with taxes. You need irrevocable structures — ILIT for life insurance ($2,500-$4,000 attorney-drafted), dynasty trust for generational transfer ($5,000-$10,000+), or gifting trust to remove appreciating assets from the estate. Irrevocable trusts require attorney drafting; online tools cannot produce them. See our [estate tax calculator](/estate-planning/estate-tax-calculator/) for exposure analysis.",
+      },
+      {
+        heading: "State-specific considerations",
+        content:
+          "In community property states (Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, Wisconsin), a joint trust preserves the double basis step-up on both spouses' halves at the first death under IRC §1014(b)(6) — separate trusts lose that benefit. In California specifically, probate on any estate over $184,500 gross is statutorily expensive (4% of the first $100k and scaling down), making a living trust more valuable than in most other states — Trust & Will's California customers are its largest single state group for a reason. In Louisiana, unique civil-law requirements make attorney-drafted the practical default.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best online living trust service?",
+        answer:
+          "Trust & Will is the best online living trust service — clearest funding instructions (the step most DIY trusts fail on), included pour-over will and supporting documents ($499 individual / $599 couple), and an attorney-review add-on ($299) for hybrid coverage. LegalZoom Living Trust is ~$279 for a similar package but with lighter funding guidance. Nolo Quicken WillMaker Plus is $139 and includes a valid RLT template — the cheapest online path.",
+      },
+      {
+        question: "Can I set up a living trust online?",
+        answer:
+          "Yes for revocable living trusts with straightforward facts. Trust & Will ($499/$599), LegalZoom Living Trust (~$279), and Nolo Quicken WillMaker Plus ($139) all produce valid RLTs. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning under the 5-year lookback, blended families with complex distributions, business interests, or estates above state estate tax exemption thresholds. Attorney-drafted becomes worth it when the facts stop fitting a fill-in-the-blank template.",
+      },
+      {
+        question: "How much does an online living trust cost vs an attorney?",
+        answer:
+          "Online: $139 (Nolo Plus) to $599 (Trust & Will couple). Attorney-drafted revocable trust: $1,500-$5,000 typical, $5,000-$10,000+ in California and other high-cost/HNW metros. Trust funding (retitling deeds, updating account beneficiaries) adds $500-$2,000 attorney or $50-$150 per deed DIY. The gap is roughly 3-20x depending on state and complexity. For straightforward facts, online works well; for complex facts or California residents, the attorney premium is warranted.",
+      },
+      {
+        question: "Does a living trust from Trust & Will or LegalZoom work in every state?",
+        answer:
+          "Yes — Trust & Will, LegalZoom, and Nolo produce valid revocable living trusts in every U.S. state. State-specific considerations: community property states (AZ, CA, ID, LA, NV, NM, TX, WA, WI) benefit from a joint trust structure to preserve the IRC §1014(b)(6) double basis step-up; Louisiana's civil-law regime makes attorney-drafted practical for complex facts; California's statutorily expensive probate on estates over $184,500 gross makes a trust much more valuable than in most other states.",
+      },
+      {
+        question: "Does an online living trust reduce estate tax?",
+        answer:
+          "No — a revocable living trust (online or attorney-drafted) does not reduce estate tax. Assets remain in your taxable estate because you retained control. Only irrevocable trusts move assets out of the taxable estate: ILIT for life insurance, dynasty trust for generational transfer, gifting trusts for appreciating assets, or Medicaid Asset Protection Trusts for long-term-care planning. Irrevocable trusts require attorney drafting — online tools cannot produce them.",
+      },
+    ],
+    sources: [
+      { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },
+      { label: "IRC §1014(b)(6) — Double basis step-up in community property", url: "https://www.law.cornell.edu/uscode/text/26/1014" },
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust"],
+    calculatorLinks: [
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+    ],
+  },
+
+  // ── Best Estate Planning Software ────────────────────────────────────────
+  {
+    slug: "best-estate-planning-software",
+    title: "Best Estate Planning Software 2026: Verified Picks",
+    metaDescription:
+      "Best estate planning software of 2026: Trust & Will, LegalZoom, Nolo, FreeWill compared. Wills, trusts, POA, healthcare directives — pricing and use cases.",
+    targetKeyword: "best estate planning software",
+    category: "estate planning software",
+    angle: "best",
+    segment: "Estate Planning",
+    h1: "Best Estate Planning Software of 2026",
+    intro:
+      "The best estate planning software covers the four core documents (will, revocable living trust, durable POA, advance healthcare directive) with state-specific execution instructions and clear funding guidance. We evaluated Trust & Will, LegalZoom, Nolo Quicken WillMaker, FreeWill, Mama Bear Legal Forms, and Rocket Lawyer on document breadth, state coverage, pricing transparency, and attorney-review availability. Trust & Will leads for households needing both a will and a trust. FreeWill is genuinely $0 for simple-to-moderate estates. Nolo Plus at $139 is the cheapest RLT-included path. LegalZoom Premium is the best budget attorney-consultation bundle.\n\nBefore choosing, verify your specific plan tier with our [estate planning calculator](/estate-planning/) — it maps family and asset situation to the right document set.",
+    rankingCriteria:
+      "Rankings weighted: document breadth (will + trust + POA + healthcare directive; 25%), state coverage including Louisiana + holographic + notarization-only states (20%), pricing transparency (15%), attorney-review option (15%), update/versioning model (15%), and desktop/web/mobile format (10%). No service paid for placement.",
+    options: [
+      {
+        name: "Trust & Will",
+        bestFor: "Best overall — will + trust + supporting documents in one flow",
+        description:
+          "$199 individual will / $299 couple; $499/$599 trust plan; $299 attorney review add-on; $49/yr membership. Includes POA and healthcare directive with HIPAA release in every will package. Cleanest state-specific execution instructions in the category. Founded 2017.",
+        strengths: [
+          "Cleanest UX and state execution instructions",
+          "POA + healthcare directive included in base will package",
+          "Attorney-review add-on for hybrid coverage",
+          "Membership allows unlimited updates",
+          "Trust product uses same clean flow as will",
+        ],
+        limitations: [
+          "Higher price than LegalZoom Basic or FreeWill",
+          "No support for irrevocable trusts (ILIT, MAPT, dynasty)",
+        ],
+        pricing: "$199/$299 will; $499/$599 trust; +$299 attorney review; $49/yr membership.",
+      },
+      {
+        name: "LegalZoom",
+        bestFor: "Best budget option with bundled attorney consultation",
+        description:
+          "Basic Will $129/$229; Pro $149/$249; Premium $299/$399 (includes attorney consultation); Living Trust ~$279. Longest track record in the category (founded 2001). Broader legal product line beyond estate planning.",
+        strengths: [
+          "Lowest base price ($129) for a full will package",
+          "Premium tier bundles attorney consultation at $299 same-price-point as Trust & Will's add-on",
+          "20+ year track record",
+          "Broader legal product line",
+        ],
+        limitations: [
+          "State instructions less polished than Trust & Will",
+          "Basic tier does not include POA or healthcare directive",
+          "Trust pricing not fully verified during 2026-07 check",
+        ],
+        pricing: "Basic $129/$229; Pro $149/$249; Premium $299/$399; Trust ~$279.",
+      },
+      {
+        name: "FreeWill",
+        bestFor: "Best genuinely free — simple-to-moderate estates",
+        description:
+          "$0 for will + POA + healthcare directive. Monetized via 2,400+ nonprofit partnerships (nonprofits pay for placement; users are not required to include a charitable gift). RLT available in California only. Founded 2017.",
+        strengths: [
+          "Truly $0 — no credit card or upsell required",
+          "Includes POA and healthcare directive",
+          "Simple, focused flow",
+          "Nonprofit partnership model reduces monetization pressure on users",
+        ],
+        limitations: [
+          "No RLT outside California",
+          "No attorney-review option",
+          "No membership — re-do the flow to change anything",
+        ],
+        pricing: "$0 for will + POA + healthcare directive. RLT California only.",
+      },
+      {
+        name: "Nolo Quicken WillMaker & Trust 2026",
+        bestFor: "Best desktop software with RLT included",
+        description:
+          "Desktop software (Windows + Mac). Starter $99, Plus $139 (adds RLT template), All Access $209 (adds Everplans storage). Nolo's 50+ year legal-publisher brand. Works fully offline.",
+        strengths: [
+          "Cheapest path to an RLT template ($139)",
+          "Fully offline capable",
+          "Nolo's 50+ year track record",
+          "One-time purchase",
+        ],
+        limitations: [
+          "Software installation required",
+          "Interface dated vs Trust & Will",
+          "Annual repurchase for latest year's updates",
+        ],
+        pricing: "Starter $99; Plus $139 (with RLT); All Access $209 (adds storage).",
+      },
+      {
+        name: "Mama Bear Legal Forms",
+        bestFor: "Best for parents of young kids",
+        description:
+          "$159 individual / $249 couple. Will + POA + HIPAA release. Add-ons: Young Adult POA $89, Senior POA $89. Founded 2020 with focus on parents of young children.",
+        strengths: [
+          "POA + HIPAA in base package",
+          "Plain-language document explanations",
+          "Focus on parents-with-kids use case",
+          "Young Adult POA add-on for age-18 handoff",
+        ],
+        limitations: [
+          "Smaller company, shorter track record",
+          "No trust product",
+          "No attorney review",
+        ],
+        pricing: "$159 individual / $249 couple. Young Adult POA +$89.",
+      },
+      {
+        name: "Rocket Lawyer",
+        bestFor: "Best if you use multiple legal documents",
+        description:
+          "Membership model ~$39.99/month with unlimited documents including wills, POA, healthcare directive, and attorney consultations. Non-member ~$39.99 per document. Founded 2008.",
+        strengths: [
+          "Attorney consultation included in membership",
+          "Unlimited documents (leases, contracts, IP beyond estate planning)",
+          "Ask-a-lawyer feature",
+        ],
+        limitations: [
+          "Pricing pages 404'd during verification — check rocketlawyer.com directly",
+          "Monthly membership only justified if you use multiple products",
+          "Auto-renews",
+        ],
+        pricing: "~$39.99/mo membership (verify). Non-member ~$39.99 per document.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Software", "Will (indiv/couple)", "Trust", "POA + HC included", "Attorney review", "Format"],
+      rows: [
+        { name: "Trust & Will", values: ["$199 / $299", "$499 / $599", "Yes", "+$299", "Web"] },
+        { name: "LegalZoom", values: ["$129 / $229 Basic", "~$279", "Pro+ only", "Premium ($299)", "Web"] },
+        { name: "FreeWill", values: ["$0 / $0", "CA only", "Yes", "No", "Web"] },
+        { name: "Nolo WillMaker Plus", values: ["$139", "$139 (RLT template)", "Yes", "No", "Desktop"] },
+        { name: "Mama Bear", values: ["$159 / $249", "None", "Yes", "No", "Web"] },
+        { name: "Rocket Lawyer", values: ["Membership", "N/A", "Yes", "Membership", "Web"] },
+      ],
+    },
+    verdict:
+      "Trust & Will is the best overall estate planning software — cleanest UX, POA + healthcare directive included, attorney-review hybrid, and a trust product built with the same clarity as the will. FreeWill is the best free option for simple-to-moderate estates. LegalZoom Premium ($299) is the best budget attorney-consultation bundle. Nolo Quicken WillMaker Plus ($139) is the cheapest path if you want an RLT template. Mama Bear works for young families who want POA + HIPAA bundled. Rocket Lawyer works if you'll use multiple legal documents. Attorney-drafted becomes worth it for complex facts, California residents with meaningful estates, or any irrevocable trust need.",
+    sections: [
+      {
+        heading: "What each document actually does",
+        content:
+          "The four core documents cover four different scenarios. A last will and testament directs how your assets pass at death and (critically for parents) nominates a guardian for minor children. A revocable living trust holds title to your assets during life and bypasses probate at death — probate avoidance and privacy, not tax reduction. A durable power of attorney appoints someone to handle finances during any incapacity BEFORE death. An advance healthcare directive with HIPAA release appoints a healthcare agent and states your end-of-life wishes. Each software above bundles some subset of these; Trust & Will, FreeWill, Nolo Plus, and Mama Bear include POA and healthcare directive in the base package.",
+      },
+      {
+        heading: "State-specific rules that trip up online tools",
+        content:
+          "Louisiana requires a notarial testament under La. Civ. Code art. 1577 — 2 witnesses PLUS a notary. Most online tools default to two-witness wills without the notary; you'll need to re-execute with a notary present or use a Louisiana attorney. Ohio does not permit self-proving affidavits under Ohio Rev. Code §2107.03 — you'll need live witness testimony at probate. Colorado and North Dakota uniquely accept notarization instead of two witnesses under C.R.S. §15-11-502(2) and N.D.C.C. §30.1-08-02. About 27 states recognize holographic (handwritten, unwitnessed) wills as a fallback, but attorney-drafted or online tools with two witnesses plus self-proving affidavit remain the standard everywhere.",
+      },
+      {
+        heading: "When you outgrow estate planning software",
+        content:
+          "Skip software and hire an attorney when: your net worth is above the 2026 federal $15M exemption or a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M), you need an irrevocable trust (ILIT, MAPT, dynasty — online tools can't produce them), you have blended family or business interests, you have a testamentary trust with age-based distributions past 18, you have cross-state property with unusual titling, or you're in Louisiana. See our [estate planning calculator](/estate-planning/) for the specific plan tier your net worth calls for, and the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal + state exposure.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best estate planning software?",
+        answer:
+          "Trust & Will is the best overall estate planning software for most households — cleanest UX, POA and healthcare directive included in the base will package, attorney-review hybrid available. FreeWill is the best genuinely-free option for simple-to-moderate estates ($0). LegalZoom Premium is the best budget attorney-consultation bundle ($299 individual). Nolo Quicken WillMaker Plus is the cheapest path with an RLT template ($139).",
+      },
+      {
+        question: "Can I do a whole estate plan with software?",
+        answer:
+          "Yes for simple-to-moderate estates. Trust & Will, LegalZoom, Nolo, FreeWill, and Mama Bear all produce valid wills, POAs, and healthcare directives in every U.S. state; Trust & Will, LegalZoom, and Nolo Plus also produce revocable living trusts. Software is not appropriate for: net worth above the $15M federal exemption or a state estate tax threshold; irrevocable trusts (ILIT, MAPT, dynasty); blended families; business succession; testamentary trusts with age-based distributions to minor children; contested beneficiaries; or Louisiana residents (notarial testament requirement).",
+      },
+      {
+        question: "How much does estate planning software cost?",
+        answer:
+          "Range: $0 (FreeWill) to $599 (Trust & Will couple trust plan). Common paths: FreeWill $0 for will/POA/healthcare directive; LegalZoom Basic $129 individual will; Trust & Will $199 individual will + POA + healthcare directive; Nolo Quicken WillMaker Plus $139 including RLT template; Trust & Will trust plan $499/$599; LegalZoom Premium $299/$399 (includes attorney consultation). Attorney-drafted comparison: $300-$800 simple will, $1,500-$5,000 revocable trust, $5,000-$10,000+ California/HNW metros.",
+      },
+      {
+        question: "Should I use FreeWill or Trust & Will?",
+        answer:
+          "Choose FreeWill when your case is simple-to-moderate (single, married with clear heirs, no special needs, no cross-state property), price matters most, and you don't need a revocable living trust. Choose Trust & Will when you want the cleanest UX, need a trust ($499/$599), want the option of attorney review (+$299), or value membership-based unlimited updates ($49/yr). Both produce legally valid documents in every state — the choice is about features and support.",
+      },
+      {
+        question: "Does estate planning software work in every state?",
+        answer:
+          "Yes — the major services (Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear, Rocket Lawyer) all serve every U.S. state plus DC. State-specific handling: Louisiana requires notarial testament (2 witnesses + notary under La. Civ. Code art. 1577); Ohio doesn't permit self-proving affidavits; Colorado and North Dakota accept notarization instead of witnesses; ~27 states recognize holographic wills as a fallback. Follow the state-specific signing instructions the service provides.",
+      },
+    ],
+    sources: [
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
+      { label: "Cornell LII — Holographic will overview", url: "https://www.law.cornell.edu/wex/holographic_will" },
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "Legaltemplates 2026 — 909-firm estate planning cost study", url: "https://legaltemplates.net/resources/estate-planning/cost-of-estate-planning/" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer", "revocable-vs-irrevocable-trust"],
+    calculatorLinks: [
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+      { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
+    ],
+  },
 ];
 
 export const ROUNDUP_BY_SLUG = Object.fromEntries(

@@ -38,6 +38,7 @@ export const GUIDES: Guide[] = [
       { heading: "Step 3: Budget for closing costs", body: "Closing costs are separate fees you pay to finalize the loan, on top of your down payment. They cover things like the appraisal, title insurance, taxes, and prepaid items such as homeowners insurance. These costs typically run about 2% to 5% of the loan amount.\n\nMany first-time buyers forget to budget for this cash. Your lender lists every fee on your Loan Estimate, so review it carefully. Use our [closing cost calculator](/mortgage/closing-cost-calculator/) to estimate this amount and avoid a surprise at the closing table." },
       { heading: "Step 4: Understand the monthly payment and paying it down", body: "Your monthly payment is more than just principal and interest. It often includes property taxes, homeowners insurance, and PMI if you put down less than 20%. Knowing the full payment helps you plan your budget honestly.\n\nPaying extra toward principal can shrink your loan years faster and save interest. Even small extra payments add up over time. Use our [mortgage payoff calculator](/mortgage/payoff-calculator/) to see how extra payments shorten your loan and cut total interest." },
       { heading: "Step 5: Make sure you're financially ready", body: "Being financially ready means more than affording the payment. You should have an emergency fund for repairs and a clear picture of your overall finances. Owning a home brings new costs, so a cash cushion protects you when something breaks.\n\nTracking your net worth shows whether you are on solid ground before you buy. It adds up what you own and subtracts what you owe. Use our [net worth calculator](/net-worth/) to check your full financial picture before you commit to a mortgage." },
+      { heading: "Step 6: Bought a house? You now need a will", body: "The single biggest financial asset most first-time buyers acquire is the home. Without a will, at death that home passes under state intestacy law — usually to a spouse and children, but with court supervision through probate and no guardian named for minor kids. A basic will handles both: it directs how the home passes and names a guardian for the children. If you own real estate in more than one state (say, a home plus an inherited family cabin), a revocable living trust also avoids ancillary probate in each state.\n\nAttorney costs run $300 to $2,500 depending on state and complexity; online services like Trust & Will ($199 individual / $299 couple), LegalZoom Basic ($129/$229), or FreeWill ($0) work for straightforward cases. See specifics with our [will cost calculator](/estate-planning/will-cost-calculator/), or run the full plan tier through the [estate planning calculator](/estate-planning/). This applies from the day you close on your first home." },
     ],
     tools: [
       { href: "/mortgage/home-affordability-calculator/", label: "Home affordability" },
@@ -363,6 +364,92 @@ export const GUIDES: Guide[] = [
       { label: "IRS — Innocent Spouse Relief", url: "https://www.irs.gov/businesses/small-businesses-self-employed/innocent-spouse-relief" },
       { label: "IRS — Understanding a Federal Tax Lien", url: "https://www.irs.gov/businesses/small-businesses-self-employed/understanding-a-federal-tax-lien" },
       { label: "IRC §6502 — Collection Statute Expiration Date", url: "https://www.law.cornell.edu/uscode/text/26/6502" },
+    ],
+  },
+
+  {
+    slug: "first-time-estate-planning",
+    title: "First Time Estate Planning: What You Actually Need",
+    metaDescription:
+      "A first-time estate planning guide: which documents you need, when to DIY vs hire an attorney, what it costs, and 2026 estate tax rules. Not legal advice.",
+    h1: "First Time Estate Planning: Documents, Costs, and Order of Operations",
+    cardBlurb: "The core 4 documents, DIY vs attorney costs by state, and the 2026 estate tax rules — step by step.",
+    intro:
+      "This first-time estate planning guide covers what you actually need at each net-worth tier, what it costs, and the order to tackle the documents. Below the federal $15M estate tax exemption and any state exemption, estate planning is about probate avoidance, guardianship for minors, and decision-making during incapacity — not about saving taxes. Above those thresholds, the analysis flips to tax planning, and attorney-drafted irrevocable trusts become essential.",
+    sections: [
+      {
+        heading: "Step 1: The core four documents everyone needs",
+        body:
+          "Four documents cover the essentials for most households. First, a last will and testament — names an executor, distributes assets, and (critically for parents) nominates a guardian for minor children. Second, a durable power of attorney — appoints someone to handle finances during any incapacity BEFORE death. Third, an advance healthcare directive with HIPAA release — appoints a healthcare agent and states your wishes for end-of-life care. Fourth, a beneficiary designation review — the 401(k), IRA, and life insurance beneficiary forms override your will, so those matter more than most people realize.\n\nCost: attorney-drafted, $500 to $1,500 for the package in most states (California, New York, Massachusetts run 20-35% higher). Online, the same package runs $199 to $299 through Trust & Will, $129 to $229 through LegalZoom Basic, or $0 through FreeWill. See specifics with our [will cost calculator](/estate-planning/will-cost-calculator/).",
+      },
+      {
+        heading: "Step 2: Decide whether you need a living trust",
+        body:
+          "A revocable living trust adds probate avoidance and privacy but doesn't reduce estate tax. You need one when at least one is true: you own real estate in more than one state (avoids ancillary probate), you have a special-needs dependent (paired with a Third-Party Special Needs Trust), you want your estate settled privately, or you're in California where probate on any estate over $184,500 gross is statutorily expensive.\n\nCost: attorney-drafted revocable trust $1,500 to $5,000 typical, $5,000 to $10,000+ in California and other HNW metros. Online, Trust & Will's trust plan is $499 individual / $599 couple; LegalZoom Living Trust ~$279; Nolo Quicken WillMaker Plus $139 (includes RLT template). Add $500 to $2,000 for trust funding — retitling deeds and accounts into the trust. Skip funding and the trust is decorative. Model with the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/).",
+      },
+      {
+        heading: "Step 3: Check your federal + state estate tax exposure",
+        body:
+          "The 2026 federal estate tax exemption is $15,000,000 per individual — permanent and indexed under the One Big Beautiful Bill Act (P.L. 119-21, July 2025), amending IRC §2010(c)(3). Married couples shield up to $30M via portability (Form 706 election). Rate is 40% flat on the excess.\n\nTwelve states plus DC also impose estate taxes with much lower thresholds: Oregon starts at $1M (lowest in country), Massachusetts $2M, Washington $3M (rate reset from 35% to 20% on 7/1/2026), Illinois $4M, Maryland $5M (also has inheritance tax), DC $4.99M, Vermont $5M, Hawaii $5.49M, Maine $7M, New York $7.35M (with unique 105% cliff), Minnesota $3M, Rhode Island $1.84M, and Connecticut $15M (tied to federal). Five states also impose inheritance tax that hits beneficiaries: Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. Model with the [estate tax calculator](/estate-planning/estate-tax-calculator/).",
+      },
+      {
+        heading: "Step 4: If you're above the exemption, add irrevocable trusts",
+        body:
+          "Only irrevocable trusts move assets out of your taxable estate. Common structures at this tier: an Irrevocable Life Insurance Trust (ILIT) holds a life insurance policy and receives the death benefit outside your estate (attorney cost $2,500 to $4,000); a dynasty trust holds assets for multiple generations and uses the $15M GST exemption to skip generation-skipping tax ($5,000 to $10,000+); a Medicaid Asset Protection Trust (MAPT) shields assets from long-term-care spend-down subject to the 5-year lookback under 42 U.S.C. §1396p ($3,000 to $6,000).\n\nIrrevocable trusts require attorney drafting — DIY tools can't produce them because the legal language must precisely disclaim retained rights that would otherwise trigger inclusion in your estate. Add annual Form 1041 tax return preparation ($500 to $2,000/year) because irrevocable trusts file their own tax returns.",
+      },
+      {
+        heading: "Step 5: Address downstream issues before signing",
+        body:
+          "Before you sign anything, three checks. First, beneficiary designations on 401(k), IRA, and life insurance override your will — update those first, or your careful drafting gets bypassed. Second, if you're in a community property state (Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, Wisconsin), a joint trust preserves the double basis step-up on both spouses' halves at the first death under IRC §1014(b)(6) — separate trusts lose that benefit. Third, if you're planning to move to a no-estate-tax state (Florida, Texas, Nevada, Wyoming, Tennessee), do it before death to fully avoid your current state's estate tax — domicile at death controls.\n\nOnce those are addressed, the [estate planning calculator](/estate-planning/) shows the specific plan tier and document list your situation calls for. This guide is general information only, not legal advice — consult a licensed attorney in your state for anything beyond the DIY-appropriate simple case.",
+      },
+    ],
+    tools: [
+      { href: "/estate-planning/", label: "Estate planning calculator" },
+      { href: "/estate-planning/will-cost-calculator/", label: "Will cost calculator" },
+      { href: "/estate-planning/living-trust-cost-calculator/", label: "Living trust cost calculator" },
+      { href: "/estate-planning/estate-tax-calculator/", label: "Estate tax calculator" },
+      { href: "/estate-planning/prenup-cost-calculator/", label: "Prenup cost calculator" },
+    ],
+    faqs: [
+      {
+        question: "What documents do I need for first-time estate planning?",
+        answer:
+          "The core four are: a last will and testament (names executor, distributes assets, nominates guardian for minor children), a durable power of attorney (handles finances during incapacity before death), an advance healthcare directive with HIPAA release (appoints healthcare agent and states end-of-life wishes), and a beneficiary designation review for 401(k)/IRA/life insurance (those override your will). Attorney-drafted, the package runs $500 to $1,500; online, $199 to $299 through Trust & Will or $0 through FreeWill.",
+      },
+      {
+        question: "How much does estate planning cost?",
+        answer:
+          "Attorney estate planning costs range from $300 for a simple will (single, no kids) up to $15,000+ for a full estate plan with irrevocable trusts (net worth above the $15M federal exemption). Middle-of-the-road: $750-$2,500 for a married-with-kids will package, $1,500-$5,000 for a revocable living trust, $2,500-$4,000 for an ILIT. Online services are much cheaper: FreeWill $0, Trust & Will $199-$599, LegalZoom $129-$299, Nolo $99-$209.",
+      },
+      {
+        question: "At what age should I do estate planning?",
+        answer:
+          "Do it when at least one of these applies: you have a spouse or partner, you have minor children (guardian nomination is the single biggest reason to have a will), you own real estate, your net worth exceeds a few tens of thousands, or you have specific bequests you want to control. For most people, that's some point in their 20s or 30s — and definitely by the time you buy your first home or have a child. Waiting until later in life makes the same documents more expensive (family becomes more complex, assets more diverse) and risks dying intestate.",
+      },
+      {
+        question: "Do I need a lawyer for estate planning?",
+        answer:
+          "Not for simple-to-moderate cases. Online services (Trust & Will, LegalZoom, FreeWill, Nolo) produce legally valid wills, powers of attorney, and healthcare directives in every state. Hire a lawyer when you have: blended family, business interests, testamentary trust for minor children with age-based distributions, contested beneficiaries, out-of-state property with unusual community-property/common-law interactions, estate near or above a state estate tax threshold, or you're in Louisiana (notarial testament requirement most online tools don't default to). Consider the hybrid attorney-review option (Trust & Will $299 add-on, Rocket Lawyer membership, LegalZoom Premium) for borderline cases.",
+      },
+      {
+        question: "What is the 2026 federal estate tax exemption?",
+        answer:
+          "The 2026 federal estate tax exemption is $15,000,000 per individual, made permanent and indexed to inflation by the One Big Beautiful Bill Act (P.L. 119-21, signed July 2025), which amended IRC §2010(c)(3). The rate on the excess is a flat 40%. Married couples can shield up to $30 million by combining exemptions via portability (Form 706 election at the first spouse's death). The GST tax exemption mirrors at $15 million, and the annual gift tax exclusion for 2026 is $19,000 per donee.",
+      },
+      {
+        question: "What states have their own estate tax?",
+        answer:
+          "Twelve states plus DC impose estate taxes in 2026, with exemptions far below the federal $15M: Oregon ($1M — lowest), Rhode Island ($1.84M, indexed), Massachusetts ($2M), Minnesota ($3M), Washington ($3M with rate reset 7/1/2026), Illinois ($4M), DC ($4.99M), Maryland ($5M — also has inheritance tax), Vermont ($5M), Hawaii ($5.49M), Maine ($7M), New York ($7.35M with 105% cliff), and Connecticut ($15M, tied to federal). Five additional states impose inheritance tax on beneficiaries: Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. Use the [estate tax calculator](/estate-planning/estate-tax-calculator/) to see your exact exposure.",
+      },
+    ],
+    sources: [
+      { label: "IRS Rev. Proc. 2025-32 — 2026 inflation adjustments (OBBBA)", url: "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf" },
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "IRS — Form 706 Instructions (Portability)", url: "https://www.irs.gov/forms-pubs/about-form-706" },
+      { label: "IRC §2010(c) — Applicable Credit Amount (OBBBA)", url: "https://www.law.cornell.edu/uscode/text/26/2010" },
+      { label: "42 U.S.C. §1396p — Medicaid 5-year lookback", url: "https://www.law.cornell.edu/uscode/text/42/1396p" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
     ],
   },
 ];

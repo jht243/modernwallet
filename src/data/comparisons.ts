@@ -1200,6 +1200,372 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Penalty abatement calculator", href: "/tax-resolution/penalty-abatement-calculator/" },
     ],
   },
+
+  // ─── Living Trust vs Will ────────────────────────────────────────────────
+  {
+    slug: "living-trust-vs-will",
+    title: "Living Trust vs Will: Which One Do You Actually Need?",
+    metaDescription:
+      "Living trust vs will: probate avoidance, cost, privacy, and when a trust is worth it. Attorney and online costs plus 2026 estate tax rules.",
+    targetKeyword: "living trust vs will",
+    optionA: "Living Trust",
+    optionB: "Will",
+    segment: "Estate Planning",
+    h1: "Living Trust vs Will: Which One Do You Actually Need?",
+    intro:
+      "A living trust avoids probate entirely and keeps your estate settlement private, but costs $1,500–$5,000 attorney-drafted (or $499–$599 online); a will is cheaper ($300–$2,500 attorney or $0–$299 online) and easier to update, but goes through public probate at your death. Neither reduces federal estate tax (the 2026 $15M exemption is the same either way). You need a living trust when you own real estate in more than one state, have a special-needs dependent, or want to avoid probate for privacy or speed reasons — for most households below the estate tax exemption, a will is enough.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Probate at death", a: "Avoided (assets in trust bypass probate)", b: "Public probate proceeding required" },
+        { dimension: "Attorney cost", a: "$1,500–$5,000 typical; $5,000–$10,000+ in CA/HNW metros", b: "$300–$2,500 depending on complexity" },
+        { dimension: "Online cost", a: "$499–$599 (Trust & Will); $139 (Nolo WillMaker Plus)", b: "$0 (FreeWill); $129–$299 (LegalZoom / Trust & Will)" },
+        { dimension: "Estate tax savings", a: "None — revocable trust is in taxable estate", b: "None — will is in taxable estate" },
+        { dimension: "Privacy", a: "Private (not filed in court)", b: "Public record via probate court" },
+        { dimension: "Multi-state property", a: "Avoids ancillary probate in each state", b: "Requires ancillary probate per state" },
+        { dimension: "Updates during life", a: "Amend the trust anytime you're alive", b: "Codicil or new will (simpler process)" },
+        { dimension: "Guardian nomination for minors", a: "Requires a pour-over will alongside the trust", b: "Built into the will directly" },
+      ],
+    },
+    verdict:
+      "Choose a will when: you have straightforward assets in one state, no cross-state property, no special-needs dependent, and your net worth is below the federal $15M estate tax exemption. Add a durable POA and healthcare directive, and you're covered for $500–$1,500 attorney or $199–$299 online. Choose a living trust when: you own real estate in multiple states (avoids ancillary probate), you have a special-needs dependent (paired with a Third-Party Special Needs Trust), you want privacy for your estate settlement, or you're in California where probate on any estate over $184,500 gross is statutorily expensive. If your net worth is above the federal exemption OR any state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M, etc.), you need BOTH — a revocable living trust for probate avoidance plus irrevocable trusts (ILIT, dynasty) for tax planning.",
+    sections: [
+      {
+        heading: "What a living trust actually does",
+        content:
+          "A revocable living trust holds title to your assets during your life — you're both trustee and beneficiary, so nothing changes about your control. At death, a successor trustee distributes the assets according to the trust document, bypassing probate court entirely. That's the whole benefit: probate avoidance. A living trust does NOT reduce estate tax (assets remain in your taxable estate because you retained control), does NOT protect assets from creditors during your life, and does NOT change how retirement accounts or life insurance pass (beneficiary designations override the trust).\n\nThe [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) shows attorney and online costs for revocable trusts and their irrevocable cousins (ILIT, MAPT, dynasty).",
+      },
+      {
+        heading: "What a will does",
+        content:
+          "A last will and testament directs how your assets pass at death, names an executor to administer the estate, and (critically for parents) nominates a guardian for minor children. It's cheaper, simpler, and easier to update than a trust. The catch: it triggers probate — a public court proceeding to validate the will, pay creditors, and distribute assets. Probate takes 6–18 months typically, is public, and costs 2–7% of estate value depending on state (California's statutory fee schedule is famously expensive).\n\nThe [will cost calculator](/estate-planning/will-cost-calculator/) shows state-specific attorney and online costs, plus each state's execution requirements (witnesses, holographic recognition, self-proving affidavit).",
+      },
+      {
+        heading: "When probate actually matters (and doesn't)",
+        content:
+          "Probate matters most in three situations: California (statutory attorney fees on estates over $184,500 gross start at 4% of the first $100k and scale down), states with real property in multiple jurisdictions (each requires its own ancillary probate), and estates where privacy matters (probate records are public). Probate matters less in most other states, where informal or summary procedures apply to modest estates and the process is administrative rather than adversarial.\n\nA useful test: look up your state's small-estate threshold (Texas $75,000, Utah $100,000, Wyoming $200,000, most states $25,000–$50,000). Below that, simplified procedures apply and a trust adds little value. Above it, the trust's probate-avoidance benefit becomes real.",
+      },
+      {
+        heading: "What both instruments miss",
+        content:
+          "Wills and trusts both control what a will/trust controls — but the biggest financial assets often pass through beneficiary designations that override both. 401(k) accounts, IRAs, and life insurance pass to the named beneficiary regardless of what your will or trust says. Bank and brokerage accounts with Transfer-on-Death (TOD) designations do the same. Real estate with joint tenancy with rights of survivorship passes automatically. Before drafting either a will or a trust, do a beneficiary designation review — that's often where most of the estate actually is.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should I have a will or a living trust?",
+        answer:
+          "Most households need a will. Add a living trust when: you own real estate in more than one state (avoids ancillary probate in each state), you have a special-needs dependent (paired with a Third-Party Special Needs Trust to preserve SSI/Medicaid), you want your estate settled privately (probate is public), or you're in California where probate is statutorily expensive. Below the federal $15M estate tax exemption and state exemption thresholds, a living trust is a probate-avoidance tool, not a tax-avoidance tool.",
+      },
+      {
+        question: "Does a living trust save on estate tax?",
+        answer:
+          "No — a revocable living trust does not reduce estate tax. Assets in a revocable trust remain in your taxable estate because you retained control (you can amend or dissolve the trust). The 2026 federal exemption is $15M per individual regardless of whether you use a will or a trust. Only irrevocable trusts (ILIT, dynasty, MAPT) move assets out of the taxable estate — and those require attorney drafting and permanent transfer of control.",
+      },
+      {
+        question: "How much cheaper is a will than a living trust?",
+        answer:
+          "Attorney-drafted, a will runs $300–$2,500 depending on complexity, while a revocable living trust runs $1,500–$5,000 — roughly 3–5× the will cost. Online, the gap is smaller: FreeWill offers a will for $0, Trust & Will individual will is $199 vs. individual trust $499. Add trust funding ($500–$2,000 for deed recording and account retitling) and the trust total climbs further. Below the estate tax exemption and outside of the specific trust-benefit situations (multi-state property, special needs, privacy), the extra cost buys probate avoidance you may not need.",
+      },
+      {
+        question: "Does a living trust replace a will?",
+        answer:
+          "No — you need both. A living trust holds the assets you've funded into it, but any assets NOT funded into the trust still need a will to direct their distribution and name an executor. That will is called a 'pour-over will' — it 'pours over' any missed assets into the trust at death. You also need the will to nominate a guardian for minor children (a nomination in a trust document is not the same). Plan on a will + a trust as a pair, not either/or.",
+      },
+      {
+        question: "Can I set up a living trust online?",
+        answer:
+          "Yes, for revocable living trusts with straightforward facts. Trust & Will ($499 individual / $599 couple), LegalZoom Living Trust (~$279), and Nolo Quicken WillMaker Plus ($139, includes RLT template) all produce valid RLTs. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning under the 5-year lookback, blended families with complex distributions, business interests, or cross-state property with unusual titling. Attorney-drafted becomes worth it when the facts stop fitting a fill-in-the-blank template.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+      { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
+    ],
+    relatedComparisons: ["online-will-vs-lawyer", "revocable-vs-irrevocable-trust"],
+    calculatorLinks: [
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+      { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
+    ],
+  },
+
+  // ─── Online Will vs Lawyer ────────────────────────────────────────────────
+  {
+    slug: "online-will-vs-lawyer",
+    title: "Online Will vs Lawyer: Which Should You Use in 2026?",
+    metaDescription:
+      "Online will vs lawyer compared: cost, validity, state execution rules, and when each is the right choice. Trust & Will, LegalZoom, FreeWill, Nolo.",
+    targetKeyword: "online will vs lawyer",
+    optionA: "Online Will Service",
+    optionB: "Lawyer",
+    segment: "Estate Planning",
+    h1: "Online Will vs Lawyer: When Each Is the Right Choice",
+    intro:
+      "An online will from Trust & Will, LegalZoom, FreeWill, or Nolo produces a legally valid last will and testament in every U.S. state (with Louisiana requiring an extra notary step under La. Civ. Code art. 1577), costs $0–$299 for the will itself, and works for most simple-to-moderate estates. A lawyer costs $300–$7,500+ depending on state and complexity, and is worth it for blended families, business interests, testamentary trusts with age-based distributions, or estates above state estate tax thresholds. The trap most people miss isn't which tool — it's whether the will was executed with the state's required formalities (witnesses, signing sequence, self-proving affidavit).",
+    comparisonTable: {
+      rows: [
+        { dimension: "Cost — simple will", a: "$0–$299 (FreeWill / Trust & Will / LegalZoom Basic)", b: "$300–$800 attorney-drafted" },
+        { dimension: "Cost — moderate will (married + kids)", a: "$199–$299 (Trust & Will couple)", b: "$750–$2,500 attorney-drafted" },
+        { dimension: "Cost — complex will (blended, business)", a: "Not appropriate — attorney required", b: "$2,500–$7,500+" },
+        { dimension: "Legal validity", a: "Valid in every state when signed with required formalities", b: "Valid — attorney supervises execution" },
+        { dimension: "State execution supervision", a: "You handle witnesses and signing yourself", b: "Attorney office serves as witness venue" },
+        { dimension: "Louisiana notarial testament", a: "Trust & Will / LegalZoom do NOT default to Louisiana's notary requirement — verify or use a Louisiana attorney", b: "Attorney handles notary + 2 witnesses in one appointment" },
+        { dimension: "Guardian nomination for minors", a: "Standard field on Trust & Will, LegalZoom, Nolo", b: "Included" },
+        { dimension: "Testamentary trust with age distributions", a: "Not supported by most online tools", b: "Custom-drafted by attorney" },
+        { dimension: "Ongoing updates", a: "Free with membership (Trust & Will) or repurchase", b: "Codicil $150–$400 or new will" },
+        { dimension: "Peace of mind / professional review", a: "Attorney add-on $299 (Trust & Will)", b: "Included" },
+      ],
+    },
+    verdict:
+      "Choose an online service when: you have straightforward assets, a clear list of beneficiaries, no blended family or business interests, and you're not in Louisiana (which requires a notary at signing). Trust & Will ($199/$299) and LegalZoom Basic ($129/$229) are the leaders; FreeWill is genuinely free and produces a valid last will and testament in every state. Choose a lawyer when: you have a blended family, business interests, a testamentary trust with age-based distributions to minor children, contested beneficiaries, or your estate is near or above a state estate tax threshold (Oregon $1M, Massachusetts $2M, etc.). Hybrid option: use Trust & Will's attorney review add-on ($299) or Rocket Lawyer's membership-based attorney consultation to get professional eyes on an online-drafted document without full attorney rates.",
+    sections: [
+      {
+        heading: "Are online wills legally binding?",
+        content:
+          "Yes — a will produced by Trust & Will, LegalZoom, FreeWill, or Nolo is a legally valid last will and testament in every U.S. state, provided you execute it with the state's required formalities. Those formalities are: (1) two witnesses present at signing (essentially every state), (2) a notary for the self-proving affidavit (48 states + DC), and (3) Louisiana's additional notarial testament requirement under La. Civ. Code art. 1577. Colorado and North Dakota uniquely accept notarization instead of two witnesses. About 27 states also recognize holographic (handwritten, unwitnessed) wills as a fallback. Online tools produce documents that meet these formalities — you just need to follow the signing instructions the service provides.",
+      },
+      {
+        heading: "When online is genuinely enough",
+        content:
+          "Online is enough for the majority of households: single with standard heirs, married couples with a clear beneficiary structure, single parents naming a guardian for minor children, and moderate-complexity estates without business interests or blended families. Trust & Will's couple plan ($299) covers a married-with-kids will package with guardian nomination, POA, and healthcare directive. LegalZoom Basic ($129/$229) covers the same for less. FreeWill is $0 and produces valid documents in every state. The signing instructions the services provide are specific and correct — the primary source of online-will failures is user error at signing (skipping witnesses, wrong signing sequence), not defects in the drafted document.",
+      },
+      {
+        heading: "When you actually need a lawyer",
+        content:
+          "Hire an attorney when the facts stop fitting the fill-in-the-blank template. Concrete triggers: blended family (children from multiple marriages, second spouse), business ownership (LLC operating agreement interactions, buy-sell provisions), a testamentary trust for minor children with age-based distributions past 18 (online tools handle basic guardianship but not multi-tranche trusts), contested beneficiaries (a disinherited child or an unusual bequest), out-of-state property with unusual titling (community property with a common-law state residence), or an estate near or above a state estate tax threshold that requires credit-shelter or QTIP planning. Louisiana residents should generally use a Louisiana attorney because of the notarial testament requirement most online tools don't default to.",
+      },
+      {
+        heading: "The 'attorney review' hybrid",
+        content:
+          "Trust & Will offers a $299 attorney review add-on. Rocket Lawyer's membership includes attorney consultations. LegalZoom Premium ($299 individual / $399 couple) includes attorney consultation. These hybrid options give you attorney eyes on an online-drafted document at meaningfully lower cost than full attorney drafting. They're a reasonable middle path when your situation is close to but not clearly in the DIY-appropriate box.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an online will legally binding?",
+        answer:
+          "Yes — an online will from Trust & Will, LegalZoom, FreeWill, or Nolo is a legally valid last will and testament in every U.S. state, provided you execute it with the state's required formalities. Louisiana requires an extra notary step under La. Civ. Code art. 1577 that most online tools don't default to. The primary source of online-will failures is user error at signing (skipping witnesses, wrong signing sequence, forgetting the self-proving affidavit) — not defects in the drafted document.",
+      },
+      {
+        question: "How much cheaper is an online will than a lawyer?",
+        answer:
+          "Online will services are 60–95% cheaper than attorneys. FreeWill is $0, LegalZoom Basic is $129/$229, Trust & Will is $199/$299, Nolo Quicken WillMaker is $99–$209. Attorney-drafted wills run $300–$800 for simple facts and $750–$2,500 for moderate complexity. In high-cost states like California and New York, attorney costs are 35% above the national baseline (simple $405–$1,080, moderate $1,013–$3,375). For simple-to-moderate facts, the cost delta buys you nothing beyond peace of mind — the online-drafted document itself is legally identical.",
+      },
+      {
+        question: "When should I use a lawyer instead of an online will?",
+        answer:
+          "Use a lawyer when your situation has any of: blended family with children from multiple marriages, business interests requiring specific succession planning, testamentary trust for minor children with age-based distributions, contested beneficiaries, out-of-state property with unusual community-property/common-law interactions, estate above a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M, etc.), or you're in Louisiana (notarial testament requirement). Consider the attorney-review hybrid (Trust & Will $299 add-on, Rocket Lawyer membership, LegalZoom Premium $299) if your situation is borderline.",
+      },
+      {
+        question: "Do online wills cover all 50 states?",
+        answer:
+          "Yes — Trust & Will, LegalZoom, and FreeWill produce valid last wills and testaments in all 50 states plus DC. Nolo Quicken WillMaker is sold as software in every state. The state-specific variations they handle: witness count (2 in essentially every state; Colorado and North Dakota also accept notarization alone), self-proving affidavit availability (48 states + DC), and Louisiana's notarial testament requirement (2 witnesses PLUS notary under La. Civ. Code art. 1577 — some online tools don't default to this, so verify or use a Louisiana attorney). Follow the state-specific signing instructions the service provides.",
+      },
+      {
+        question: "Can I do a will and living trust online?",
+        answer:
+          "Yes for both, though the trust is more complex. Trust & Will's trust plan ($499 individual / $599 couple) produces a valid revocable living trust plus a pour-over will and supporting documents. LegalZoom Living Trust is ~$279. Nolo Quicken WillMaker Plus ($139) includes an RLT template. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning, or estates above state tax exemption thresholds where credit-shelter planning is needed. For those, attorney-drafted is warranted.",
+      },
+    ],
+    sources: [
+      { label: "Uniform Law Commission — Uniform Probate Code (witness rules)", url: "https://www.uniformlaws.org/" },
+      { label: "Cornell LII — Holographic will overview", url: "https://www.law.cornell.edu/wex/holographic_will" },
+      { label: "Legaltemplates 2026 — 909-firm estate planning cost study", url: "https://legaltemplates.net/resources/estate-planning/cost-of-estate-planning/" },
+      { label: "Nolo — How Much Will a Lawyer Charge to Write Your Will?", url: "https://www.nolo.com/legal-encyclopedia/how-much-will-lawyer-charge-write-your-will.html" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust"],
+    calculatorLinks: [
+      { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+    ],
+  },
+
+  // ─── Revocable vs Irrevocable Trust ──────────────────────────────────────
+  {
+    slug: "revocable-vs-irrevocable-trust",
+    title: "Revocable vs Irrevocable Trust: Which Do You Need?",
+    metaDescription:
+      "Revocable vs irrevocable trust compared: probate avoidance, estate tax, Medicaid asset protection, cost, and when each type is the right choice.",
+    targetKeyword: "revocable vs irrevocable trust",
+    optionA: "Revocable Trust (RLT)",
+    optionB: "Irrevocable Trust",
+    segment: "Estate Planning",
+    h1: "Revocable vs Irrevocable Trust: What's the Difference?",
+    intro:
+      "A revocable trust (also called a revocable living trust or RLT) can be changed or dissolved by you at any time — you retain full control, and it avoids probate but does NOT reduce estate tax, protect assets from creditors, or shield assets from Medicaid. An irrevocable trust permanently transfers ownership out of your control and, in exchange, can achieve real tax and asset-protection goals: an ILIT removes life insurance from your taxable estate, a Medicaid Asset Protection Trust (MAPT) shields assets from long-term-care spend-down (subject to the 5-year lookback), and a dynasty trust transfers wealth across generations. Cost: revocable $1,500–$5,000; ILIT $2,500–$4,000; MAPT $3,000–$6,000; dynasty $5,000–$10,000+.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Control during life", a: "You retain full control (trustee + beneficiary)", b: "Permanently transferred to trustee (with limits)" },
+        { dimension: "Can be changed/dissolved", a: "Yes, anytime", b: "No (with narrow exceptions)" },
+        { dimension: "Avoids probate", a: "Yes", b: "Yes (assets not in your name at death)" },
+        { dimension: "Reduces estate tax", a: "No — assets remain in taxable estate", b: "Yes — moves assets out of taxable estate" },
+        { dimension: "Protects from creditors", a: "No — you still own the assets legally", b: "Yes, with proper structure (asset protection trusts)" },
+        { dimension: "Shields from Medicaid spend-down", a: "No", b: "Yes via MAPT (5-year lookback applies)" },
+        { dimension: "Federal income tax", a: "Grantor trust — you report income on your 1040", b: "Separate taxpayer — files Form 1041; typically higher rates" },
+        { dimension: "Attorney cost", a: "$1,500–$5,000 (CA/HNW: $5,000–$10,000+)", b: "ILIT $2,500–$4,000; MAPT $3,000–$6,000; dynasty $5,000–$10,000+" },
+        { dimension: "Online option", a: "Trust & Will $499/$599; Nolo WillMaker Plus $139", b: "Not appropriate — attorney-drafted only" },
+        { dimension: "Primary use case", a: "Probate avoidance + privacy", b: "Estate tax reduction + asset protection" },
+      ],
+    },
+    verdict:
+      "Choose a revocable trust when your goal is probate avoidance and privacy — you want to control your assets during life and keep them out of probate court at death. Most households below the $15M federal exemption and state estate tax thresholds need only a revocable trust (if any trust at all). Choose an irrevocable trust when your goal is estate tax reduction, asset protection, or Medicaid planning. Specific fits: ILIT for anyone with life insurance whose taxable estate is above the federal or state exemption; MAPT for anyone within 5 years of possibly needing Medicaid for long-term care; dynasty trust for generational wealth transfer above the GST exemption ($15M in 2026). Most estate plans that use irrevocable trusts ALSO use a revocable trust for the household's non-transferred assets — the two are complements, not either/or.",
+    sections: [
+      {
+        heading: "The control tradeoff",
+        content:
+          "The single biggest difference is control. With a revocable trust, you're the trustee and the beneficiary during your life — you can amend the trust, add or remove assets, change beneficiaries, and dissolve it entirely. That flexibility is why revocable trusts don't reduce estate tax: the IRS looks at whether you retained control, and a revocable trust means yes. With an irrevocable trust, you permanently transfer ownership to a trustee, who manages the assets according to the trust document for the beneficiaries. Once funded, you generally can't amend or dissolve it, take assets back, or serve as trustee (with narrow exceptions for grantor-trust structures). That loss of control is what makes the tax and asset-protection benefits real.",
+      },
+      {
+        heading: "Which trust reduces estate tax",
+        content:
+          "Only irrevocable trusts move assets out of your taxable estate. A revocable trust does not — assets in a revocable trust are counted in the estate at your death because you retained control. Common irrevocable structures: ILIT (Irrevocable Life Insurance Trust) holds a life insurance policy and receives the death benefit outside your estate; dynasty trust holds assets for multiple generations and uses the $15M GST exemption to skip generation-skipping tax; gifting trust receives lifetime gifts and removes future appreciation from your estate. Each has specific requirements — ILITs have a 3-year rule under IRC §2035(a) if transferring an existing policy, and dynasty trusts require state law that permits perpetual trusts (Delaware, South Dakota, Nevada, Wyoming lead here).",
+      },
+      {
+        heading: "Which trust helps with Medicaid",
+        content:
+          "Only a Medicaid Asset Protection Trust (MAPT) — a specific type of irrevocable trust — can shield assets from Medicaid spend-down. Medicaid applies a 5-year lookback under 42 U.S.C. §1396p: transfers within 5 years of applying for Medicaid trigger a penalty period equal to the transferred amount divided by the state's monthly regional rate. A MAPT funded more than 5 years before application avoids the penalty and shields the assets. A revocable trust provides zero Medicaid protection because you still control the assets — they count against eligibility. Plan MAPT funding at least 5 years before any anticipated long-term-care need.",
+      },
+      {
+        heading: "Cost and complexity",
+        content:
+          "Revocable trusts are attorney-drafted at $1,500–$5,000 (California and HNW metros $5,000–$10,000+) or DIY through Trust & Will ($499/$599) or Nolo WillMaker Plus ($139). Irrevocable trusts require attorney drafting — DIY tools cannot produce them because the legal language must precisely disclaim retained rights that would otherwise trigger inclusion in your estate. ILIT $2,500–$4,000; MAPT $3,000–$6,000; dynasty trust $5,000–$10,000+. Add annual Form 1041 tax return preparation ($500–$2,000) for irrevocable trusts because they file their own tax returns.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the difference between revocable and irrevocable trusts?",
+        answer:
+          "A revocable trust can be changed or dissolved by you at any time; you retain full control. Its primary benefit is probate avoidance. It does NOT reduce estate tax, protect assets from creditors, or shield assets from Medicaid. An irrevocable trust permanently transfers ownership out of your control. In exchange, it can reduce estate tax (ILIT, dynasty, gifting trusts), protect assets (asset-protection trusts, DAPTs), or shield assets from Medicaid (MAPT). Cost is higher — irrevocable trusts require attorney drafting.",
+      },
+      {
+        question: "Does a revocable trust save estate tax?",
+        answer:
+          "No — a revocable trust does not save estate tax. Assets in a revocable trust remain in your taxable estate because you retained control. The 2026 federal exemption is $15M per individual regardless of whether you use a revocable trust. Only irrevocable trusts move assets out of the taxable estate. If your net worth is above the federal exemption or a state estate tax threshold, you need irrevocable structures (ILIT, dynasty trust, gifting trust) for the tax benefit — a revocable trust alone doesn't help.",
+      },
+      {
+        question: "Does a revocable trust protect assets from Medicaid?",
+        answer:
+          "No — a revocable trust provides zero Medicaid protection because you still control the assets. They count against your Medicaid eligibility just as if they were in your own name. Only a Medicaid Asset Protection Trust (MAPT) — a specific type of irrevocable trust — can shield assets, and only if funded more than 5 years before applying for Medicaid (the federal 5-year lookback under 42 U.S.C. §1396p). Attorney cost is $3,000–$6,000. Plan MAPT funding at least 5 years before any anticipated long-term-care need.",
+      },
+      {
+        question: "Which is more expensive: revocable or irrevocable trust?",
+        answer:
+          "Irrevocable trusts are typically more expensive: ILIT $2,500–$4,000, MAPT $3,000–$6,000, dynasty trust $5,000–$10,000+. Revocable trusts run $1,500–$5,000 attorney-drafted for typical facts (California and high-net-worth metros $5,000–$10,000+). Online options exist for revocable trusts (Trust & Will $499/$599, Nolo $139) but not for irrevocable — those require attorney drafting because the legal language must precisely disclaim retained rights. Add annual Form 1041 preparation ($500–$2,000/year) for irrevocable trusts.",
+      },
+      {
+        question: "Do I need both a revocable and irrevocable trust?",
+        answer:
+          "Often, yes — they're complements, not either/or. A common structure: revocable living trust holds the household's day-to-day assets for probate avoidance during life and privacy at death, while irrevocable trusts hold specific assets targeted for tax reduction (ILIT for life insurance, dynasty for generational transfer) or asset protection (MAPT for Medicaid, DAPT for creditor protection). Above the federal $15M exemption or a state estate tax threshold, most estate plans use both. Below those thresholds, a revocable trust alone is usually enough.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "IRC §2035 — Three-year rule for ILIT transfers", url: "https://www.law.cornell.edu/uscode/text/26/2035" },
+      { label: "42 U.S.C. §1396p — Medicaid 5-year lookback", url: "https://www.law.cornell.edu/uscode/text/42/1396p" },
+      { label: "ACTEC — American College of Trust and Estate Counsel", url: "https://www.actec.org/" },
+      { label: "Medicaid.gov — Estate Recovery", url: "https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery/index.html" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer"],
+    calculatorLinks: [
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+    ],
+  },
+
+  // ─── Prenup vs Postnup ────────────────────────────────────────────────────
+  {
+    slug: "prenup-vs-postnup",
+    title: "Prenup vs Postnup: Timing, Cost, and Enforceability",
+    metaDescription:
+      "Prenup vs postnup compared: timing, cost, enforceability standards, state law (UPAA/UPMAA), and when each is the right choice.",
+    targetKeyword: "prenup vs postnup",
+    optionA: "Prenup (Premarital)",
+    optionB: "Postnup (Postmarital)",
+    segment: "Estate Planning",
+    h1: "Prenup vs Postnup: Timing, Cost, and Enforceability",
+    intro:
+      "A prenuptial agreement is signed before marriage and is enforceable in every U.S. state under the Uniform Premarital Agreement Act (UPAA, ~28 states) or state case law; a postnuptial agreement is signed after marriage and is enforceable under a stricter standard because spouses owe each other a fiduciary duty by then, making full disclosure and independent counsel effectively mandatory. Both cost roughly the same per party ($1,500–$10,000+ depending on state), but postnups face higher enforcement risk. California requires a 7-day waiting period before signing prenups (Cal. Fam. Code §1615(c)(2)(B)) and independent counsel for waivers — rules that apply to postnups too under §1615(c). If you're already married, the postnup is still available; if you're not yet married, the prenup is easier to enforce.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Timing", a: "Signed before marriage", b: "Signed after marriage" },
+        { dimension: "Enforceability standard", a: "UPAA in ~28 states + case law elsewhere", b: "Higher standard — fiduciary duty applies" },
+        { dimension: "Full financial disclosure", a: "Required under UPAA (or written waiver)", b: "Effectively mandatory due to fiduciary duty" },
+        { dimension: "Independent counsel", a: "Strongly recommended; required in CA for waivers", b: "Effectively required for enforceability" },
+        { dimension: "Cost — moderate case", a: "$4,000–$14,000 total ($2,000–$7,000/party)", b: "$4,000–$16,000 total ($2,000–$8,000/party)" },
+        { dimension: "California 7-day rule", a: "Applies (§1615(c)(2)(B))", b: "Applies to postnups too" },
+        { dimension: "Uniform Act coverage", a: "UPAA (1983) or UPMAA (2012)", b: "UPMAA covers postnups; UPAA does not" },
+        { dimension: "Court skepticism at enforcement", a: "Moderate", b: "High — courts scrutinize for coercion" },
+        { dimension: "What it can't enforce", a: "Child custody, child support, unconscionable terms", b: "Same" },
+      ],
+    },
+    verdict:
+      "Choose a prenup when you can — sign before marriage. Prenups are cheaper to enforce (lower court skepticism), covered by UPAA in 28 states, and don't face the fiduciary-duty overlay that postnups do. Postnups are the right choice when: you're already married and something material changed (inheritance, business start, significantly different net worth), you want to formalize what would otherwise happen at divorce, or you have a specific reason (estate planning, second-marriage protection, business succession) that arose after marriage. In both cases, both parties should have independent counsel, full disclosure is essential, and California's 7-day waiting period applies. If you're in a UPMAA state (Colorado, North Dakota), postnups are more clearly on equal footing with prenups than in UPAA-only states.",
+    sections: [
+      {
+        heading: "The fiduciary duty difference",
+        content:
+          "The big legal difference between prenups and postnups: spouses owe each other a fiduciary duty; engaged couples don't. That duty means postnups face a higher enforceability bar. Full financial disclosure isn't just recommended for a postnup — it's effectively mandatory, because concealment breaches the fiduciary duty and voids the agreement. Independent counsel for each spouse becomes essentially required because a court will look skeptically at any postnup where one spouse dominated the process. California's Cal. Fam. Code §1615(c) requires independent counsel for waivers in both prenups and postnups, but the practical bar for postnup enforcement is higher across all states.",
+      },
+      {
+        heading: "When each makes sense",
+        content:
+          "Prenup makes sense before any first marriage where one party has meaningful premarital assets or a business, and before any second (or later) marriage where children from a prior marriage need protection, inheritance rights need to be specified, or spousal support waivers are on the table. Postnup makes sense when: a material change occurred (large inheritance, business start, significantly asymmetric net worth), the couple wants to formalize property division without divorcing (sometimes called a 'reconciliation agreement' when it accompanies marriage counseling), or estate planning requires specific asset allocation between spouses. A postnup can also convert community-property state assets to separate property (California, Texas, Washington) or vice versa.",
+      },
+      {
+        heading: "Cost and enforceability tradeoffs",
+        content:
+          "Per-party attorney costs are roughly the same for prenups and postnups at the same complexity — NYC $2,500–$10,000+ per party, California $3,000–$10,000+, Florida and Texas $1,500–$5,000, national baseline $1,500–$8,000. But postnups almost always require both parties to have independent counsel (due to fiduciary duty overlay), so plan on 2× the per-party number for total cost. Enforceability tradeoff: prenups can survive with somewhat less procedural rigor because there's no fiduciary duty; postnups need full disclosure, independent counsel, and reasonable substantive terms to hold up at enforcement.",
+      },
+      {
+        heading: "What neither can enforce",
+        content:
+          "Neither a prenup nor a postnup can enforce child-custody or child-support decisions — universally void as the court applies its best-interest standard. Neither can enforce terms that encourage divorce (void in most states). Neither can enforce unconscionable terms — UPAA states measure unconscionability at execution, while some non-UPAA states (New Jersey, California in some contexts) also measure at enforcement. Personal or lifestyle clauses (weight-loss requirements, chore lists, sexual frequency) are generally unenforceable, though non-financial breach penalties are sometimes upheld. Everything else — property division, spousal support waivers or caps, debt allocation, business protection, inheritance rights — can be enforced in both agreement types with proper drafting.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the difference between a prenup and a postnup?",
+        answer:
+          "A prenuptial agreement is signed before marriage; a postnuptial agreement is signed after marriage. Both cover the same subjects — property division, spousal support waivers, debt allocation, inheritance rights — but postnups face a higher enforceability standard because spouses owe each other a fiduciary duty by the time they sign. That fiduciary duty makes full financial disclosure and independent counsel effectively mandatory for a postnup, while prenups can survive with somewhat less procedural rigor.",
+      },
+      {
+        question: "How much does a postnup cost compared to a prenup?",
+        answer:
+          "Per-party attorney costs are similar. National baseline: $1,500–$3,500 per party simple, $2,500–$5,000 moderate, $4,000–$8,000 complex. High-cost states run higher — NYC $2,500–$10,000+ per party, California $3,000–$10,000+. Both agreement types usually require both parties to retain their own attorneys (roughly 2× the per-party number for total cost). Postnups tend toward the higher end of the per-party range because the enforceability standard is stricter and drafting must be more careful.",
+      },
+      {
+        question: "Are postnups enforceable?",
+        answer:
+          "Yes, but under a stricter standard than prenups. Postnups require full financial disclosure (mandatory due to fiduciary duty between spouses), independent counsel for each spouse (effectively required), and terms that are not unconscionable at execution (and, in some states, not unconscionable at enforcement). UPMAA (2012) explicitly covers postnups; UPAA (1983) does not. Confirmed UPMAA adopters are Colorado and North Dakota. In UPAA-only and non-UPAA states, postnups are enforced under case law with generally higher court scrutiny than prenups face.",
+      },
+      {
+        question: "Does California's 7-day waiting period apply to postnups?",
+        answer:
+          "Yes. Cal. Fam. Code §1615(c) applies to both prenuptial and postnuptial agreements. The 7-day waiting period between final agreement presentation and signing (§1615(c)(2)(B)) applies to both, and the independent-counsel requirement for waivers of spousal-support or property rights (§1615(c)) applies to both. In practice, California postnups need the same procedural runway as California prenups: at least 7 days between final draft and signing, both parties represented by their own attorneys.",
+      },
+      {
+        question: "Can a postnup convert community property?",
+        answer:
+          "Yes — in community property states (Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, Wisconsin) a postnup can convert community-property assets to separate property or vice versa. This is sometimes called a 'transmutation agreement' and requires specific formalities — most states require the transmutation to be in writing and signed by the spouse whose interest is being adversely affected. In California, Fam. Code §852 requires an express declaration of transmutation; ambiguity is resolved against transmutation. Consult a family-law attorney in your community property state before attempting this.",
+      },
+    ],
+    sources: [
+      { label: "Uniform Law Commission — Premarital and Marital Agreements Act (UPMAA)", url: "https://www.uniformlaws.org/committees/community-home?CommunityKey=2e456584-938e-4008-ba0c-bb6a1a544400" },
+      { label: "Cornell LII — Uniform Premarital Agreement Act", url: "https://www.law.cornell.edu/wex/uniform_premarital_agreement_act" },
+      { label: "Cal. Fam. Code §1615", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FAM&sectionNum=1615." },
+      { label: "Community property in the United States (Wikipedia)", url: "https://en.wikipedia.org/wiki/Community_property_in_the_United_States" },
+    ],
+    relatedComparisons: ["living-trust-vs-will"],
+    calculatorLinks: [
+      { label: "Prenup cost calculator", href: "/estate-planning/prenup-cost-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

@@ -3,6 +3,6 @@
 // filtering without pulling client component code into the server bundle.
 //
 // Phase 2 added: "mortgage", "retirement", "investing", "portfolio", "real-estate", "net-worth".
-// Pillar 1 (professional services) adds: "tax-resolution". Follow-on pillars: "estate-planning",
-// "probate", "elder-care" (each ships when its island lands).
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution"]);
+// Pillar 1 (professional services) added: "tax-resolution". Pillar 2 adds: "estate-planning".
+// Follow-on pillars: "probate", "elder-care" (each ships when its island lands).
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning"]);

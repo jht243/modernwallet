@@ -54,6 +54,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "Build a budget to fund the payment plan" },
     { href: "/net-worth/", label: "See your full net worth" },
   ],
+  "estate-planning": [
+    { href: "/retirement/", label: "Have a retirement plan — now protect it" },
+    { href: "/net-worth/", label: "Know your net worth first" },
+    { href: "/net-worth/couples-net-worth-calculator/", label: "Planning finances together?" },
+    { href: "/retirement/401k-calculator/", label: "Your 401(k) is part of your taxable estate" },
+  ],
 };
 
 export function crossLinksFor(calcId: string): CrossLink[] {
