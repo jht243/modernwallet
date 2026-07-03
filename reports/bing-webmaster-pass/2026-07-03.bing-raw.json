@@ -1,0 +1,118 @@
+{
+  "site": "https://themodernwallet.com/",
+  "tool": "bing_webmaster.py deep-dive",
+  "sections": {
+    "crawlStats": [
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 56,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 4,
+        "Date": "2026-06-30T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 50,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 64,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 29,
+        "Date": "2026-07-01T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 55,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 74,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 79,
+        "Date": "2026-07-02T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 68,
+        "InLinks": 1
+      }
+    ],
+    "crawlIssues": [],
+    "rankAndTraffic": [
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-28T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-29T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-30T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "2026-07-01T07:00:00Z",
+        "Impressions": 8
+      }
+    ],
+    "queryStats": [],
+    "pageStats": [],
+    "linkCounts": {
+      "__type": "LinkCounts:#Microsoft.Bing.Webmaster.Api",
+      "Links": [],
+      "TotalPages": 0
+    },
+    "blockedUrls": [],
+    "queryParameters": [],
+    "feeds": [
+      {
+        "__type": "Feed:#Microsoft.Bing.Webmaster.Api",
+        "Compressed": false,
+        "FileSize": 0,
+        "LastCrawled": "2026-06-27T20:07:33Z",
+        "Status": "Success",
+        "Submitted": "2026-06-27T20:07:32Z",
+        "Type": "Sitemap Index",
+        "Url": "https://www.themodernwallet.com/sitemap-index.xml",
+        "UrlCount": 64
+      }
+    ],
+    "urlSubmissionQuota": {
+      "__type": "UrlSubmissionQuota:#Microsoft.Bing.Webmaster.Api",
+      "DailyQuota": 100,
+      "MonthlyQuota": 2900
+    },
+    "pageQueryStats": {}
+  },
+  "_errors": {}
+}
