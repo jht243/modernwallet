@@ -595,6 +595,42 @@ export const CALCULATORS: CalculatorDef[] = [
       specialNeedsDependent: false,
     },
   },
+
+  {
+    id: "trump-account",
+    islandId: "trump-account",
+    label: "Trump Account",
+    navOrder: 13,
+    metaTitle: "Trump Account Calculator: Value at Age 18",
+    metaDescription:
+      "Free Trump Account calculator: project how the $1,000 federal seed plus your yearly contributions could grow, tax-deferred, by the time your child turns 18.",
+    targetKeyword: "trump account calculator",
+    h1: "Trump Account Calculator",
+    intro:
+      "A Trump Account calculator projects how the new $1,000 federal seed, plus the contributions you add each year, could grow by the time your child turns 18. Enter your child's age, the seed, and how much your family (and any employer) adds each year in the calculator above to see the projected value. For example, a newborn's $1,000 seed plus $200 a month at a 7% annual return grows to about $89,657 by age 18 — $44,200 put in and $45,457 in tax-deferred growth.",
+    howItWorks:
+      "The calculator above starts with the seed deposit, adds your yearly contributions in monthly steps, and compounds the balance at the return you choose until the child turns 18. Trump Accounts launched on July 4, 2026: the federal government seeds $1,000 for each U.S.-citizen child born between 2025 and 2028, and the money must be invested in a low-cost fund that tracks the S&P 500 or a similar U.S.-stock index. Growth is tax-deferred, and withdrawals are generally blocked until January 1 of the year the child turns 18 — after which the account is taxed like a traditional IRA.\n\nContributions are capped. Families, relatives, and friends can add up to $5,000 per year combined, and an employer can chip in up to $2,500 — but that employer money counts toward the same $5,000 cap, not on top of it. The $1,000 federal seed does not count against the cap. If you enter more than the limits, the calculator trims the excess and shows a warning, so your projection reflects what the law actually allows.\n\nTime does the heavy lifting. The $1,000 seed alone, left untouched at a 7% return, grows to about $3,513 by age 18. Add $200 a month and the balance reaches roughly $89,657. Max out the $5,000 yearly limit from birth and it grows to about $182,980 — of which about half is growth you never contributed. To compare that path against other accounts, see [Trump Account vs 529](/compare/trump-account-vs-529/) and [Trump Account vs a custodial account](/compare/trump-account-vs-custodial-account/), or read [what a Trump Account is and how to open one](/guides/trump-accounts/). To pressure-test whether it's the right home for your money, see [are Trump Accounts worth it](/guides/trump-account-worth-it/). For a general projection with different assumptions, the [investment calculator](/investing/) uses the same compounding math.",
+    faqs: [
+      { question: "How does this Trump Account calculator work?", answer: "The Trump Account calculator takes your child's age, the $1,000 federal seed, and your yearly family and employer contributions, then compounds the balance monthly at the return you choose until age 18. It enforces the $5,000 yearly contribution cap (including the $2,500 employer limit) so the projection matches the real rules. The result is an estimate — actual index returns vary year to year." },
+      { question: "How much will a Trump Account be worth at 18?", answer: "It depends on contributions and returns. The $1,000 seed alone at a 7% average return grows to about $3,513 by age 18. Adding $200 a month brings it to roughly $89,657, and contributing the full $5,000 per year from birth reaches about $182,980. Use the calculator above to model your own numbers." },
+      { question: "Who gets the $1,000 Trump Account seed?", answer: "The federal government deposits $1,000 for each U.S.-citizen child born between January 1, 2025 and December 31, 2028 who has a Social Security number. Children outside that birth window can still have a Trump Account opened and funded, but they do not receive the $1,000 seed. Set the seed to $0 in the calculator if your child isn't eligible." },
+      { question: "How much can you contribute to a Trump Account each year?", answer: "Up to $5,000 per year combined from family, relatives, and friends. An employer can contribute up to $2,500, but that amount counts toward the same $5,000 cap rather than adding to it. The $1,000 federal seed is separate and does not count against the limit. The cap is indexed to inflation after 2027." },
+      { question: "Is Trump Account growth taxed?", answer: "Growth inside a Trump Account is tax-deferred — you owe no tax on gains while the money stays invested. Contributions are made with after-tax dollars and are not deductible. Once the child turns 18, the account is treated like a traditional IRA, so withdrawals are generally taxed as income. Compare the tax treatment in our [Trump Account vs 529](/compare/trump-account-vs-529/) guide." },
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Guidance on Trump Accounts (Working Families Tax Cuts)", url: "https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-trump-accounts-established-under-the-working-families-tax-cuts-notice-announces-upcoming-regulations" },
+      { label: "Congressional Research Service — Trump Accounts: Overview (R48910)", url: "https://www.congress.gov/crs-product/R48910" },
+      { label: "U.S. Treasury — BNY named financial agent for Trump Accounts", url: "https://home.treasury.gov/news/press-releases/sb0433" },
+    ],
+    defaultPreset: {
+      childCurrentAge: 0,
+      seedDeposit: 1000,
+      annualFamilyContribution: 2400,
+      annualEmployerContribution: 0,
+      annualReturnPct: 7,
+    },
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

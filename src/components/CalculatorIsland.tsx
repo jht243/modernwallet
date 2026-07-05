@@ -22,6 +22,7 @@ import ElderCareHubCalculator from "./ElderCareHubCalculator";
 import MedicaidSpendDownCalculator from "./MedicaidSpendDownCalculator";
 import SpecialNeedsTrustCalculator from "./SpecialNeedsTrustCalculator";
 import LongTermCareCostCalculator from "./LongTermCareCostCalculator";
+import TrumpAccountCalculator from "./TrumpAccountCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -55,6 +56,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "medicaid-spend-down": MedicaidSpendDownCalculator,
   "special-needs-trust": SpecialNeedsTrustCalculator,
   "long-term-care-cost": LongTermCareCostCalculator,
+  // Trump Account (federal child savings account, live 2026-07-04) — seed + capped contributions to age 18.
+  "trump-account": TrumpAccountCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

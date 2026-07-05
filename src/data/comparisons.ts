@@ -595,7 +595,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Traditional and Roth IRAs", url: "https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" },
       { label: "IRS — Topic No. 409 Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -839,7 +839,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Federal Student Aid — FAFSA and assets", url: "https://studentaid.gov/resources/prepare-for-college/students/how-fafsa-works" },
       { label: "IRS — SECURE 2.0 Act provisions", url: "https://www.irs.gov/retirement-plans/secure-20-act" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "trump-account-vs-529"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -1666,6 +1666,139 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Probate fee calculator", href: "/probate/fee-calculator/" },
       { label: "Probate vs trust calculator", href: "/probate/cost-vs-trust-calculator/" },
       { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+    ],
+  },
+
+  // ─── Trump Account vs 529 (mindmap pass 2026-07-04) ──────────────────────
+  {
+    slug: "trump-account-vs-529",
+    title: "Trump Account vs 529 Plan: Which Wins for Kids?",
+    metaDescription:
+      "Trump Account vs 529 plan compared: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but only for education. See which fits.",
+    targetKeyword: "trump account vs 529",
+    optionA: "Trump Account",
+    optionB: "529 Plan",
+    segment: "family savings",
+    h1: "Trump Account vs 529 Plan",
+    intro:
+      "In the Trump Account vs 529 debate, the core trade is taxes versus flexibility: a Trump Account grows tax-deferred and can be used for anything at 18, while a 529 plan grows tax-free but only for education. A Trump Account gives U.S.-citizen children born in 2025–2028 a free $1,000 federal seed and caps contributions at $5,000 a year. A 529 plan has no federal annual limit, often earns a state tax break, and pays for tuition, books, and room and board tax-free. For paying for college, a 529 usually wins on taxes. For open-ended savings that don't require school, the Trump Account has the edge.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it's for", a: "Anything after the child turns 18", b: "Qualified education costs only" },
+        { dimension: "Tax treatment of growth", a: "Tax-deferred; taxed as ordinary income at withdrawal", b: "Tax-free for qualified education expenses" },
+        { dimension: "Free money to start", a: "$1,000 federal seed (children born 2025–2028, needs SSN)", b: "None from the federal government" },
+        { dimension: "Annual contribution limit", a: "$5,000/yr combined from all private sources", b: "No federal limit (gift-tax exclusion ~$19,000/yr in 2025)" },
+        { dimension: "State tax deduction", a: "No", b: "Most states offer a deduction or credit" },
+        { dimension: "Investment choice", a: "Must be an S&P 500 / U.S.-equity index fund", b: "Menu of funds chosen by the state plan" },
+      ],
+    },
+    verdict:
+      "Choose a 529 plan if the goal is education, because tax-free growth and a likely state deduction beat the Trump Account's tax-deferred treatment. Choose a Trump Account if you want a head start with no strings: the free $1,000 seed is real money, and the child can use the balance for anything at 18 without needing to attend college. Most families with children born 2025 to 2028 can do both. Claim the free seed, then decide where new dollars go. For a full projection, try our [Trump Account calculator](/trump-account/), and if you're weighing education paths, see [529 vs Roth IRA](/compare/529-vs-roth-ira/).",
+    sections: [
+      {
+        heading: "How each account is taxed",
+        content:
+          "The tax rules are the biggest difference between these accounts.\n\nA 529 plan uses after-tax contributions, but growth and withdrawals are tax-free when spent on qualified education. Qualified costs include tuition, fees, books, and room and board, plus up to $20,000 a year in K-12 tuition. Non-qualified withdrawals trigger income tax plus a 10% penalty on the earnings.\n\nA Trump Account also uses after-tax contributions, and those contributions are not deductible. Growth is tax-deferred, not tax-free. After the child turns 18, the account works like a traditional IRA, so withdrawals are taxed as ordinary income. There is no state tax deduction. For a plain-English primer, read [what is a Trump Account](/guides/trump-accounts/).",
+      },
+      {
+        heading: "Contribution limits and the free seed",
+        content:
+          "A Trump Account starts with a $1,000 federal seed for eligible children born between January 1, 2025, and December 31, 2028. The child must be a U.S. citizen with a Social Security number. After that, contributions are capped at $5,000 a year from all private sources combined. An employer may add up to $2,500 a year, but that amount counts toward the $5,000 cap rather than on top of it. The seed itself does not count against the cap.\n\nA 529 plan has no federal annual limit. Contributions are treated as gifts, so most families stay under the annual gift-tax exclusion of about $19,000 per giver in 2025. Each state plan sets a high aggregate lifetime limit, often above $500,000.",
+      },
+      {
+        heading: "Flexibility and what happens if plans change",
+        content:
+          "Flexibility is where the accounts diverge most.\n\nMoney in a Trump Account is generally locked until January 1 of the year the child turns 18. After that, the child controls it and can spend it on anything, from a first home to a business to retirement. The trade is that every dollar of growth is eventually taxed as income.\n\nA 529 plan is narrower but has escape hatches. You can change the beneficiary to another family member. Under SECURE 2.0, up to $35,000 of unused 529 funds can roll into the beneficiary's Roth IRA, subject to a 15-year account-age rule. To decide whether the Trump Account's flexibility is worth the tax cost, see [are Trump Accounts worth it](/guides/trump-account-worth-it/).",
+      },
+      {
+        heading: "Impact on college financial aid",
+        content:
+          "A parent-owned 529 plan is reported as a parental asset on the FAFSA. Parental assets are assessed at a maximum of 5.64%, so a 529 has a relatively small effect on aid eligibility.\n\nThe Trump Account is a newer, IRA-style account owned by the child. Retirement accounts are generally not reported as assets on the FAFSA, which can be an underrated advantage for aid-sensitive families. The catch is that the Trump Account is built for education only by coincidence, not by design, so any withdrawal to pay tuition is still taxed as ordinary income.",
+      },
+    ],
+    faqs: [
+      { question: "Is a Trump Account or a 529 better for college?", answer: "A 529 plan is usually better for college because its growth and withdrawals are tax-free for qualified education expenses. A Trump Account only grows tax-deferred, so tuition withdrawals are taxed as ordinary income. In the Trump Account vs 529 comparison, the 529 wins on education taxes, while the Trump Account wins on flexibility and the free $1,000 seed." },
+      { question: "Can I open both a Trump Account and a 529 plan?", answer: "Yes, you can open both a Trump Account and a 529 plan for the same child. Many families claim the free $1,000 Trump Account seed for eligible children and also fund a 529 for tax-free education savings. The accounts have separate rules and separate contribution limits." },
+      { question: "How much can a Trump Account grow by age 18?", answer: "A Trump Account's $1,000 seed alone grows to about $3,513 by age 18 at a 7% return. Adding $200 a month brings it to roughly $89,657, and contributing the $5,000 yearly maximum from birth reaches about $182,980. Run your own numbers with the [Trump Account calculator](/trump-account/)." },
+      { question: "Does a Trump Account get a state tax deduction like a 529?", answer: "No, a Trump Account does not offer a state tax deduction. Contributions are after-tax and not deductible on either federal or state returns. Most 529 plans, by contrast, give residents a state income-tax deduction or credit on their contributions." },
+      { question: "What happens to a 529 if the child skips college?", answer: "Unused 529 funds have several options if the child skips college. You can change the beneficiary to another family member, or roll up to $35,000 into the beneficiary's Roth IRA under SECURE 2.0 rules. Cashing out for non-education use triggers income tax plus a 10% penalty on the earnings." },
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "Congressional Research Service — Report R48910", url: "https://www.congress.gov/crs-product/R48910" },
+    ],
+    relatedComparisons: ["529-vs-roth-ira", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" },
+    ],
+  },
+
+  // ─── Trump Account vs Custodial Account (mindmap pass 2026-07-04) ─────────
+  {
+    slug: "trump-account-vs-custodial-account",
+    title: "Trump Account vs Custodial Account (UTMA/UGMA)",
+    metaDescription:
+      "Trump Account vs custodial account (UTMA/UGMA): compare the free $1,000 seed and tax-deferred growth against a custodial account's flexibility and no cap.",
+    targetKeyword: "trump account vs custodial account",
+    optionA: "Trump Account",
+    optionB: "Custodial Account (UTMA/UGMA)",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs Custodial Account (UTMA/UGMA): Which Is Better for Your Child?",
+    intro:
+      "In a Trump account vs custodial account (UTMA/UGMA) comparison, the Trump Account gives a free $1,000 federal seed plus tax-deferred, index-only growth locked until age 18, while a custodial account offers no contribution cap, any investment, and money you can use for the child anytime. The Trump Account is best when you want a hands-off head start. A custodial account wins when you need flexibility and control. Many families open both. This guide breaks down the rules, taxes, and financial-aid impact so you can choose.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Free starter money", a: "$1,000 federal seed for U.S.-citizen kids born 2025–2028", b: "None — you fund it yourself" },
+        { dimension: "Annual contribution cap", a: "$5,000/year combined (employer up to $2,500 counts inside the cap; seed does not)", b: "No cap; gift-tax annual exclusion (~$19,000 in 2025) applies" },
+        { dimension: "Investment choices", a: "S&P 500 / U.S.-equity index fund only", b: "Almost anything — stocks, ETFs, mutual funds, bonds" },
+        { dimension: "When money can be used", a: "Locked until Jan 1 of the year the child turns 18", b: "Anytime, for the child's benefit" },
+        { dimension: "Taxes", a: "Tax-deferred growth; withdrawals taxed as ordinary income (like a traditional IRA)", b: "Kiddie tax: some income tax-free, some at child's rate, rest at parents' rate" },
+        { dimension: "Who owns and controls it", a: "The child owns it; treated like a traditional IRA at 18", b: "Child owns the assets; custodian controls until the age of majority (18–25 by state)" },
+        { dimension: "FAFSA financial-aid impact", a: "Retirement-style account (lighter aid treatment)", b: "Counted as the student's asset — assessed at 20%, a bigger aid hit" },
+      ],
+    },
+    verdict:
+      "Choose a Trump Account for a free $1,000 head start and hands-off, tax-deferred compounding you won't touch before 18. Choose a custodial account (UTMA/UGMA) for full investment freedom, no contribution cap, and money you can spend on the child anytime. The honest answer for most families is both: grab the free Trump seed, then use a custodial account for goals before age 18. Just remember the custodial account counts against college aid more heavily.",
+    sections: [
+      {
+        heading: "How each account actually works",
+        content:
+          "A Trump Account is a new federal savings account for kids. The program went live July 4, 2026. Every U.S.-citizen child born between 2025 and 2028 can get a $1,000 federal seed deposited for them. Families can add up to $5,000 a year combined. An employer can chip in up to $2,500, but that counts inside the same $5,000 cap. The seed does not count toward it.\n\nThe money must go into an S&P 500 or U.S.-equity index fund. You cannot pick other investments. Growth is tax-deferred, and your contributions are after-tax (non-deductible). The account stays locked until January 1 of the year the child turns 18. After that, it works like a traditional IRA, so withdrawals are taxed as ordinary income. Learn more in our guide on [what is a Trump Account](/guides/trump-accounts/).\n\nA custodial account (UTMA/UGMA) works differently. An adult custodian manages the money for a minor. The assets are irrevocably the child's from day one. You can invest in almost anything. There is no contribution cap, though gifts above the annual exclusion (~$19,000 in 2025) may trigger gift-tax rules. You can use the funds anytime, as long as it benefits the child.",
+      },
+      {
+        heading: "Taxes: tax-deferred growth vs the kiddie tax",
+        content:
+          "This is the biggest difference. A Trump Account grows tax-deferred. You pay no tax each year on gains. But when the child withdraws after 18, the money is taxed as ordinary income, just like a traditional IRA.\n\nA custodial account is taxed each year under the kiddie tax. Per the IRS, a set amount of the child's unearned income is tax-free. The next slice is taxed at the child's low rate. Anything above the threshold is taxed at the parents' marginal rate. In 2025 the kiddie tax kicks in once unearned income tops $2,700.\n\nSo the Trump Account defers all tax until withdrawal. The custodial account can create a small tax bill every year if it earns a lot. For a heavily funded custodial account, that yearly drag adds up. For a small one, the kiddie tax rarely bites.",
+      },
+      {
+        heading: "Control, flexibility, and the FAFSA trap",
+        content:
+          "The real trade is control and flexibility versus a free head start. A custodial account lets you invest in anything and spend on the child anytime — braces, a laptop, summer camp, a first car. Control transfers to the child at the age of majority, which ranges from 18 to 25 depending on your state and whether it is UTMA or UGMA.\n\nA Trump Account is far more rigid. It is index-only, locked until 18, and taxed like an IRA. In exchange, you get the free $1,000 and simple, hands-off compounding.\n\nHere is the non-obvious catch: on the FAFSA, a custodial account is the student's asset. Federal Student Aid assesses student assets at 20% — a much bigger aid hit than parental assets. A Trump Account gets lighter, retirement-style treatment. If college aid matters, that gap can outweigh the custodial account's flexibility. See how the numbers play out in [are Trump Accounts worth it](/guides/trump-account-worth-it/).",
+      },
+      {
+        heading: "Which should you choose (or use both)?",
+        content:
+          "Pick a Trump Account if your child qualifies for the free seed and you want a simple, long-term account you won't touch before 18. Our [Trump Account calculator](/trump-account/) shows the payoff. The $1,000 seed alone at 7% grows to about $3,513 by age 18. Add $200 a month and it reaches roughly $89,657. Max the $5,000 a year and it hits about $182,980.\n\nPick a custodial account if you want investment freedom, no contribution cap, or money you can spend on the child before 18. It is also the better fit if you plan to invest in individual stocks or funds the Trump Account bans.\n\nMany families use both. Grab the free Trump seed for the locked, tax-deferred bucket. Use a custodial account for goals before 18. If your child has a job, a custodial Roth IRA is a third option — but it requires the child to have earned income. Also compare a [Trump Account vs 529](/compare/trump-account-vs-529/) for college-specific saving, and see [brokerage vs IRA](/compare/brokerage-vs-ira/) for the tax basics.",
+      },
+    ],
+    faqs: [
+      { question: "What is the difference between a Trump Account and a custodial account?", answer: "The main difference is that a Trump Account gives a free $1,000 federal seed and tax-deferred, index-only growth locked until age 18, while a custodial account (UTMA/UGMA) has no contribution cap, lets you invest in almost anything, and can be used for the child anytime. The Trump Account trades flexibility for a free head start. The custodial account trades the free money for full control and investment freedom." },
+      { question: "Can I open both a Trump Account and a custodial account for my child?", answer: "Yes, you can open both a Trump Account and a custodial account for the same child, and many families do. The common strategy is to claim the free $1,000 Trump seed for long-term, hands-off compounding, then use a custodial account for money you may need before the child turns 18. Just remember the custodial account counts more heavily against college financial aid." },
+      { question: "How is a custodial account taxed compared to a Trump Account?", answer: "A custodial account is taxed each year under the kiddie tax, while a Trump Account grows tax-deferred and is taxed only at withdrawal. With the kiddie tax, a portion of the child's unearned income is tax-free, some is taxed at the child's rate, and the rest is taxed at the parents' marginal rate (the threshold was $2,700 in 2025). A Trump Account withdrawal after age 18 is taxed as ordinary income, like a traditional IRA." },
+      { question: "Does a custodial account hurt financial aid more than a Trump Account?", answer: "Yes, a custodial account usually hurts financial aid more than a Trump Account. On the FAFSA, a custodial account (UTMA/UGMA) is treated as the student's own asset and assessed at 20%, a steeper hit than parental assets. A Trump Account gets lighter, retirement-style treatment. If maximizing college aid matters to you, this difference can be significant." },
+      { question: "When can my child access the money in each account?", answer: "A Trump Account is locked until January 1 of the year the child turns 18, while a custodial account can be used for the child's benefit at any time. After 18, the Trump Account works like a traditional IRA. With a custodial account, full control transfers to the child at the age of majority, which is 18 to 25 depending on your state and whether it is a UTMA or UGMA account." },
+    ],
+    sources: [
+      { label: "IRS — Topic No. 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "Federal Student Aid — How Aid Is Calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+    ],
+    relatedComparisons: ["brokerage-vs-ira", "529-vs-roth-ira"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" },
     ],
   },
 ];
