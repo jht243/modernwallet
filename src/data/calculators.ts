@@ -631,6 +631,42 @@ export const CALCULATORS: CalculatorDef[] = [
       annualReturnPct: 7,
     },
   },
+
+  {
+    id: "529-savings-calculator",
+    islandId: "529-savings-calculator",
+    label: "529 College Savings",
+    navOrder: 14,
+    metaTitle: "529 Calculator: College Savings Projection",
+    metaDescription:
+      "Free 529 calculator: project your college savings balance at age 18, then compare it to the inflated cost of college and see the monthly amount to fully fund it.",
+    targetKeyword: "529 savings calculator",
+    h1: "529 Savings Calculator",
+    intro:
+      "A 529 savings calculator projects how your college fund grows by the time your child turns 18, and shows whether it will cover the cost of college. Enter your child's age, your current balance, your monthly contribution, and an expected return in the calculator above. For example, starting at $0 and saving $300 a month at a 6% return grows to about $116,206 in 18 years — $64,800 contributed and $51,406 in tax-free growth. Add a college-cost target and the tool also shows your projected coverage and the monthly amount needed to fully fund it.",
+    howItWorks:
+      "The calculator compounds your 529 balance monthly at the return you choose until your child turns 18, then splits the result into what you contributed versus tax-free growth. A 529 plan grows tax-free and stays tax-free at withdrawal when the money pays for qualified education. In the example above, $300 a month reaches about $116,206 by age 18.\n\nWhen you enter a total four-year college cost in today's dollars, the calculator inflates it to your child's college-start year (college costs have historically risen about 5% a year, faster than general inflation) and compares it to your projected balance. It then shows your coverage percentage and the monthly contribution needed to close any gap. A $120,000 cost today, for instance, projects to roughly $289,000 in 18 years — so a $300/month plan would cover about 40% of it.\n\nUse the result to decide your next move. See what a 529 can actually pay for in our [529 qualified expenses guide](/guides/529-qualified-expenses/), and what happens to money you don't use in [529 leftover money options](/guides/529-leftover-money-options/). Weighing a 529 against other accounts? Compare [529 vs Roth IRA](/compare/529-vs-roth-ira/), [Trump Account vs 529](/compare/trump-account-vs-529/), and the full lineup in [best investment account for kids](/guides/best-investment-account-for-kids/). For a general (non-529) projection, the [investment calculator](/investing/) uses the same compounding math.",
+    faqs: [
+      { question: "How does this 529 calculator work?", answer: "This 529 calculator projects your college-savings balance by compounding your current balance and monthly contributions at a chosen annual return until your child turns 18. If you enter a college-cost target, it inflates that cost to your child's college year, shows what percentage you're on track to cover, and calculates the monthly contribution needed to fully fund it. Results are estimates — real returns and college costs vary." },
+      { question: "How much should I save in a 529 per month?", answer: "The right monthly amount depends on your child's age, your target college cost, and your expected return. Saving $300 a month from birth at a 6% return grows to about $116,206 by age 18. To hit a specific college cost, enter it in the calculator above and it will show the exact monthly contribution needed to close the gap. Starting earlier lowers the monthly amount because compounding has more time to work." },
+      { question: "What return should I assume for a 529 plan?", answer: "A common assumption for a 529 plan is 5% to 7% a year. Most 529 plans use age-based portfolios that start aggressive and shift toward bonds and cash as college nears, which lowers the expected return over time. A 6% average is a reasonable middle estimate. Use a lower rate if your child is close to college age, since the portfolio will be more conservative." },
+      { question: "Does the calculator account for rising college costs?", answer: "Yes, when you enter a college-cost target the calculator inflates it to your child's college-start year. It defaults to 5% annual college-cost inflation, which is roughly the historical average and higher than general CPI inflation. You can change the rate. This is why a cost that looks affordable today can be far larger by the time your child enrolls." },
+      { question: "Is 529 growth really tax-free?", answer: "Yes, growth in a 529 plan is tax-free, and withdrawals are also tax-free when used for qualified education expenses like tuition, fees, books, and room and board. Money used for non-qualified purposes owes income tax plus a 10% penalty on the earnings. See our [529 qualified expenses guide](/guides/529-qualified-expenses/) for the full list of what counts." },
+    ],
+    sources: [
+      { label: "IRS — Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "SEC Investor.gov — An Introduction to 529 Plans", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/529-plans" },
+      { label: "SEC Investor.gov — Compound Interest Calculator", url: "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" },
+    ],
+    defaultPreset: {
+      childCurrentAge: 0,
+      currentBalance: 0,
+      monthlyContribution: 300,
+      annualReturnPct: 6,
+      collegeCostToday: 0,
+      costInflationPct: 5,
+    },
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

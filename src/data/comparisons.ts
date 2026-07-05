@@ -595,7 +595,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Traditional and Roth IRAs", url: "https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" },
       { label: "IRS — Topic No. 409 Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account", "trump-account-vs-brokerage-account"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -839,7 +839,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Federal Student Aid — FAFSA and assets", url: "https://studentaid.gov/resources/prepare-for-college/students/how-fafsa-works" },
       { label: "IRS — SECURE 2.0 Act provisions", url: "https://www.irs.gov/retirement-plans/secure-20-act" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "trump-account-vs-529"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "trump-account-vs-529", "529-vs-utma"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -1728,7 +1728,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
       { label: "Congressional Research Service — Report R48910", url: "https://www.congress.gov/crs-product/R48910" },
     ],
-    relatedComparisons: ["529-vs-roth-ira", "brokerage-vs-ira"],
+    relatedComparisons: ["529-vs-roth-ira", "brokerage-vs-ira", "trump-account-vs-roth-ira", "529-vs-utma"],
     calculatorLinks: [
       { label: "Trump Account calculator", href: "/trump-account/" },
       { label: "Investment calculator", href: "/investing/" },
@@ -1795,11 +1795,509 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
       { label: "Federal Student Aid — How Aid Is Calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
     ],
-    relatedComparisons: ["brokerage-vs-ira", "529-vs-roth-ira"],
+    relatedComparisons: ["brokerage-vs-ira", "529-vs-roth-ira", "utma-vs-ugma", "529-vs-utma"],
     calculatorLinks: [
       { label: "Trump Account calculator", href: "/trump-account/" },
       { label: "Investment calculator", href: "/investing/" },
     ],
+  },
+
+
+  // Kids-accounts autocomplete pass (2026-07-04) — 10 comparisons
+  {
+    slug: "529-vs-brokerage-account",
+    title: "529 vs Brokerage Account: Which for College?",
+    metaDescription: "529 vs brokerage account for a kid: the 529 grows tax-free for school; a taxable brokerage stays flexible but taxed. See which fits and when.",
+    targetKeyword: "529 vs brokerage account",
+    optionA: "529 Plan",
+    optionB: "Brokerage Account",
+    segment: "Kids & family investing",
+    h1: "529 vs Brokerage Account: Which Is Better for College Savings?",
+    intro: "A 529 plan beats a taxable brokerage account when you are confident the money goes toward education, because the 529 grows and pays out tax-free for school. A regular parent-owned brokerage account has no tax break, but it stays fully flexible for any goal. You keep control of the brokerage for life, unlike a custodial account. The right pick depends on how sure you are the child attends college. This guide compares both so you can choose. See the [best investment account for kids](/guides/best-investment-account-for-kids/) for the full lineup.",
+    comparisonTable: { rows: [
+      { dimension: "Tax on growth", a: "Tax-free if used for qualified education", b: "Taxed yearly on dividends and at sale on gains" },
+      { dimension: "State tax break", a: "Most states give a deduction or credit", b: "None" },
+      { dimension: "Use of money", a: "Education only (or 10% penalty + tax on earnings)", b: "Any purpose, no restrictions" },
+      { dimension: "Contribution cap", a: "No federal annual limit; high aggregate caps", b: "No limit" },
+      { dimension: "Who controls it", a: "You (the account owner)", b: "You (the parent)" },
+      { dimension: "Liquidity", a: "Restricted; non-qualified use is penalized", b: "Fully liquid anytime" },
+      { dimension: "FAFSA treatment", a: "Parental asset, assessed at up to 5.64%", b: "Parental asset, assessed at up to 5.64%" }
+    ] },
+    verdict: "Choose the 529 if college is the clear goal; its tax-free growth is hard to beat for education. Choose a taxable brokerage if you want the money open to any use, or if there is real doubt the child attends college. Model both with the [529 savings calculator](/529-savings-calculator/) and an [investment calculator](/investing/), then compare against a [529 vs UTMA](/compare/529-vs-utma/) setup.",
+    sections: [
+      { heading: "The core trade-off: tax break vs flexibility", content: "The 529 wins on taxes. Contributions are after-tax, but growth and withdrawals are tax-free when used for qualified education like tuition, fees, books, and room & board. Most states add an income-tax deduction or credit for contributions.\n\nA regular brokerage account wins on freedom. There is no contribution cap and no rule on how you spend the money. But there is no tax shelter: dividends are taxed each year, and you owe capital-gains tax when you sell. Over 18 years that yearly drag can meaningfully lower the final balance versus a 529." },
+      { heading: "The non-obvious insight: flexibility can beat the tax break", content: "A taxable brokerage can actually come out ahead of a 529 when there is real doubt the child goes to college. Here is why: a non-qualified 529 withdrawal owes income tax PLUS a 10% penalty on the earnings portion.\n\nThat penalty can wipe out years of tax savings. If the child skips college, joins the military, or starts a business, the brokerage money is simply there, penalty-free, for any of those paths. The 529's tax break only pays off if the education actually happens. Decision rule: the less certain the college path, the more a flexible brokerage earns its keep." },
+      { heading: "How this differs from a custodial (UTMA) account", content: "A parent-owned brokerage account is not a custodial account. In a [UTMA custodial account](/compare/529-vs-utma/), the assets belong irrevocably to the child, and control transfers to them at the age of majority (18 to 25 depending on the state).\n\nA regular brokerage account stays in your name. You keep control for life, can spend it on anything, and never hand it over. That control is the key reason some parents pick a taxable brokerage over a custodial account, even though the custodial route offers a small kiddie-tax break on early gains." },
+      { heading: "When to use each account", content: "Use the 529 when education is the primary goal and you want to capture the state deduction and tax-free growth. Unused funds are not fully stranded: up to $35,000 of leftover 529 money can roll to the beneficiary's Roth IRA if the account is at least 15 years old, subject to annual Roth limits.\n\nUse a taxable brokerage when you value control and flexibility over the tax break, or when the child's path is uncertain. Many families use both: a 529 for the expected tuition, and a brokerage for everything else. Compare the retirement angle in [529 vs Roth IRA](/compare/529-vs-roth-ira/) and [brokerage vs IRA](/compare/brokerage-vs-ira/)." }
+    ],
+    faqs: [
+      { question: "Is a 529 or brokerage account better for college?", answer: "A 529 is usually better for college because its growth and withdrawals are tax-free for qualified education, while a brokerage account is taxed every year on dividends and gains. Choose a brokerage only if you want the money open to non-education uses." },
+      { question: "What happens to a 529 if my child skips college?", answer: "A non-qualified 529 withdrawal owes income tax plus a 10% penalty on the earnings portion. You can also change the beneficiary, use it for a sibling, or roll up to $35,000 into the beneficiary's Roth IRA if the account is at least 15 years old." },
+      { question: "Do I pay taxes on a brokerage account for my kid's college?", answer: "Yes. A taxable brokerage account is taxed on dividends each year and on realized capital gains when you sell. There is no education tax break, which is the main cost of its flexibility." },
+      { question: "Does a brokerage account hurt financial aid more than a 529?", answer: "No, not when the parent owns both. A parent-owned 529 and a parent-owned brokerage are each treated as a parental asset on the FAFSA, assessed at up to 5.64%. A custodial account, by contrast, is the student's asset and hits aid harder." },
+      { question: "Can I keep control of the money in a brokerage account?", answer: "Yes. A regular parent-owned brokerage account stays in your name for life, so you control the money and can spend it on any purpose. This differs from a custodial account, where the assets become the child's at the age of majority." }
+    ],
+    sources: [
+      { label: "IRS Topic No. 313, Qualified Tuition Programs (529 Plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS Topic No. 404, Dividends", url: "https://www.irs.gov/taxtopics/tc404" },
+      { label: "IRS Topic No. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" }
+    ],
+    relatedComparisons: ["529-vs-utma", "529-vs-roth-ira", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "529 savings calculator", href: "/529-savings-calculator/" },
+      { label: "Investment calculator", href: "/investing/" }
+    ],
+  },
+
+  {
+    slug: "529-vs-coverdell-esa",
+    title: "529 vs Coverdell ESA: Which Wins in 2026?",
+    metaDescription: "529 vs Coverdell ESA compared: contribution limits, K-12 rules, investment choice, and income limits. See which education account fits your family.",
+    targetKeyword: "529 vs coverdell",
+    optionA: "529 Plan",
+    optionB: "Coverdell ESA",
+    segment: "Kids & family investing",
+    h1: "529 vs Coverdell ESA: Which Education Account Is Better?",
+    intro: "For most families, a 529 plan beats a Coverdell ESA because it has no real annual contribution cap, no income limits, and now covers up to $20,000/yr in K-12 tuition. Both accounts grow tax-free and pay tax-free for qualified education. But the Coverdell caps you at just $2,000 per year and phases out at higher incomes. Its one real edge is broader, self-directed investment choice. This guide shows exactly when each account wins.",
+    comparisonTable: { rows: [
+      { dimension: "Annual contribution limit", a: "No federal cap; gift-tax exclusion (~$19,000/yr) and state aggregate caps ($235k–$550k+) apply", b: "$2,000/yr total per beneficiary, across all accounts" },
+      { dimension: "Income limits to contribute", a: "None", b: "Yes — contributor income phase-outs apply" },
+      { dimension: "Tax treatment", a: "Tax-free growth & withdrawals for qualified education", b: "Tax-free growth & withdrawals for qualified education" },
+      { dimension: "K-12 coverage", a: "Up to $20,000/yr tuition (2026); most college costs", b: "Broad K-12 expenses (tuition, books, tutoring) plus college" },
+      { dimension: "Investment choice", a: "State plan's menu of portfolios", b: "Broad, self-directed (stocks, funds, ETFs)" },
+      { dimension: "Deadline to use funds", a: "No age deadline; unused funds can roll to beneficiary's Roth IRA (up to $35,000 lifetime, 15-yr rule)", b: "Must be used by beneficiary's age 30" },
+      { dimension: "State tax break", a: "Most states offer a deduction or credit", b: "None" },
+    ] },
+    verdict: "Choose a 529 plan if you want to save more than $2,000 a year, want a state tax break, or earn too much to fund a Coverdell — that covers most families. Choose a Coverdell only if you want to pick your own investments and are happy staying under the $2,000 cap. Estimate your college number with our [529 savings calculator](/529-savings-calculator/), or compare the 529 against a [custodial UTMA account](/compare/529-vs-utma/).",
+    sections: [
+      { heading: "The tax deal is nearly identical", content: "Both accounts work the same way at tax time. You contribute after-tax dollars, the money grows tax-free, and withdrawals are tax-free when used for qualified education.\n\nThe difference is how much you can put in and what you can invest in. A 529 lets you contribute far more and often gives a state income-tax deduction. A Coverdell gives you no state break but lets you invest with almost total freedom, like a regular brokerage account.\n\nBoth also penalize misuse the same way: non-qualified withdrawals owe income tax plus a 10% penalty on the earnings portion. See the [pillar guide to kids' accounts](/guides/best-investment-account-for-kids/) for how these fit a full savings plan." },
+      { heading: "The $2,000 cap is the Coverdell's dealbreaker", content: "The Coverdell ESA limits you to $2,000 per beneficiary per year, total, across every account for that child. That cap has not risen in years.\n\nAt $2,000/yr for 18 years, you contribute just $36,000 before growth. A 529 has no federal annual limit — you're bound only by the gift-tax exclusion (~$19,000/yr per giver) and high per-plan aggregate caps.\n\nHigh earners face a second wall: Coverdell contributions phase out above set income levels, so wealthier parents may be blocked entirely. A 529 has no income limit at all." },
+      { heading: "Why the Coverdell lost most of its old edge", content: "For years the Coverdell's big advantage was K-12 flexibility — you could use it for private school before college, which old 529 rules did not allow.\n\nThat edge is largely gone. Since the 2017 tax law and later expansions, a 529 can now pay up to $20,000 per year in K-12 tuition (2026), up from $10,000. So the 529 now does the K-12 job too, without the $2,000 ceiling.\n\nThe result: the Coverdell now mainly appeals to families who want self-directed investments and don't need to save more than $2,000 a year. For a deeper list, see [what counts as a qualified 529 expense](/guides/529-qualified-expenses/)." },
+      { heading: "Deadlines and leftover money", content: "A Coverdell forces a clock: funds generally must be used by the time the beneficiary turns 30, or they're distributed with tax and penalty on earnings. That's a real risk if the child skips or delays college.\n\nA 529 has no such deadline. Leftover money is far more flexible. Under SECURE 2.0, up to $35,000 of unused 529 funds can roll into the beneficiary's Roth IRA, if the account is at least 15 years old and you stay within annual Roth limits.\n\nThat rollover safety valve makes the 529 much easier to over-fund without regret." },
+    ],
+    faqs: [
+      { question: "Is a 529 or a Coverdell ESA better?", answer: "A 529 plan is better for most families because it has no annual contribution cap, no income limits, a possible state tax deduction, and now covers up to $20,000/yr in K-12 tuition. A Coverdell only makes sense if you want self-directed investments and will save $2,000 a year or less." },
+      { question: "Can I have both a 529 and a Coverdell ESA?", answer: "Yes, you can fund both a 529 plan and a Coverdell ESA for the same child in the same year. The $2,000 Coverdell limit is separate from 529 contributions, and coordination rules mainly matter only when you take withdrawals for the same expenses." },
+      { question: "What is the Coverdell ESA contribution limit?", answer: "The Coverdell ESA limit is $2,000 per beneficiary per year, combined across all accounts for that child. Contributor income phase-outs can reduce or block that amount for higher earners." },
+      { question: "Does a Coverdell have to be used by a certain age?", answer: "Yes. Coverdell ESA funds generally must be used by the time the beneficiary turns 30, or the account is distributed with income tax and a 10% penalty on earnings. A 529 plan has no age deadline." },
+      { question: "Can a 529 pay for private K-12 school?", answer: "Yes. A 529 plan can pay up to $20,000 per year in K-12 tuition as of 2026. This expansion erased the Coverdell's former advantage of covering private school before college." },
+    ],
+    sources: [
+      { label: "IRS Topic No. 310, Coverdell Education Savings Accounts", url: "https://www.irs.gov/taxtopics/tc310" },
+      { label: "IRS Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "SEC Investor.gov, An Introduction to 529 Plans", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/529-plans" },
+    ],
+    relatedComparisons: ["529-vs-utma", "529-vs-roth-ira"],
+    calculatorLinks: [ { label: "529 savings calculator", href: "/529-savings-calculator/" } ],
+  },
+
+  {
+    slug: "529-vs-utma",
+    title: "529 vs UTMA: Which Kids Account Wins?",
+    metaDescription: "529 vs UTMA compared: a 529 is tax-free but education-only with a light FAFSA hit, while a UTMA is flexible but kiddie-taxed and becomes the child's at 18.",
+    targetKeyword: "529 vs utma",
+    optionA: "529 Plan",
+    optionB: "UTMA / Custodial Account",
+    segment: "Kids & family investing",
+    h1: "529 vs UTMA: Which Account Is Best for Your Child?",
+    intro: "The 529 vs UTMA choice comes down to one trade: a 529 plan grows tax-free but only for education, while a UTMA (custodial) account can fund anything but is taxed every year. A parent-owned 529 stays under your control and barely dents financial aid. A UTMA becomes your child's property outright, and they can spend it on anything once they reach the age of majority. Pick the 529 if college is the goal; pick the UTMA only if you truly need spending freedom. This guide breaks down taxes, control, and the two hidden costs most parents miss.",
+    comparisonTable: { rows: [
+      { dimension: "Purpose of funds", a: "Education only for tax-free treatment", b: "Any purpose the custodian (then child) chooses" },
+      { dimension: "Tax treatment", a: "Growth and withdrawals tax-free for qualified education", b: "Kiddie tax yearly: unearned income over $2,700 taxed at parent rates (2025)" },
+      { dimension: "Who controls it", a: "Account owner (usually the parent) keeps control", b: "Custodian controls until majority, then the child owns it fully" },
+      { dimension: "Contribution cap", a: "No federal annual cap; aggregate caps often $235k-$550k+", b: "No cap (gift-tax exclusion ~$19,000/yr applies)" },
+      { dimension: "Investment options", a: "Plan menu of funds only", b: "Full brokerage freedom (stocks, funds, and more)" },
+      { dimension: "FAFSA impact", a: "Parental asset, assessed up to 5.64%", b: "Student asset, assessed at 20% (a bigger aid hit)" },
+      { dimension: "Non-education use", a: "Earnings taxed + 10% penalty (or $35k Roth rollover)", b: "No penalty; spend on anything" },
+    ] },
+    verdict: "Choose a 529 if the money is for college. It grows tax-free, you keep control, and it barely touches financial aid. Choose a UTMA only when you need to fund non-education goals and accept the yearly tax plus losing control at 18-21. Most families should default to the 529 and use our [529 savings calculator](/529-savings-calculator/) to project growth; if flexibility matters more, compare it against a plain [taxable brokerage account](/compare/529-vs-brokerage-account/) too.",
+    sections: [
+      { heading: "The tax difference is the whole story", content: "A 529 plan grows completely tax-free as long as you spend the money on qualified education. That means tuition, fees, books, and room & board, plus up to $20,000/yr for K-12 tuition and up to $10,000 lifetime toward student loans. No tax on the earnings, ever, if you follow the rules.\n\nA UTMA has no such shelter. It is taxed under the kiddie tax every year. In 2025 the first $1,350 of the child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and anything above $2,700 is taxed at the parents' marginal rate. A growing UTMA quietly generates a tax bill each year, while a 529 compounds untouched.\n\nWant to see the gap over 18 years? Run the numbers in our [529 savings calculator](/529-savings-calculator/) or the general [investment calculator](/investing/)." },
+      { heading: "Control: the UTMA hands the keys to your kid", content: "This is the trade-off almost nobody plans for. With a parent-owned 529, you stay in charge for life. You choose when to spend it, you can change the beneficiary to another child, and your teenager cannot touch it.\n\nA UTMA is different. The assets are irrevocably your child's from day one. You only act as custodian. When your child hits the age of majority (18 to 21, and up to 25 in some states depending on the UTMA terms), full control transfers to them. At that point they can legally spend the entire balance on anything, a car, a trip, or nothing responsible at all.\n\nIf you are not comfortable handing an 18-year-old a five- or six-figure account with no strings, the 529 is the safer structure. For the full mechanics, read our [UTMA custodial account explained](/guides/utma-custodial-account-explained/) guide." },
+      { heading: "The FAFSA gap most parents miss", content: "Both accounts appear on the FAFSA, but they are not treated equally. A parent-owned 529 is a parental asset and is assessed at a maximum of 5.64% when calculating aid eligibility. A UTMA is the student's own asset and is assessed at 20%.\n\nThat difference is large. On $50,000 saved, a 529 adds at most about $2,820 to the expected family contribution, while a UTMA adds around $10,000. In plain terms, the same savings can cost your child several thousand dollars more in lost financial aid if it sits in a UTMA.\n\nFor a college-bound child, this alone often tips the decision toward the 529." },
+      { heading: "When a UTMA actually makes sense", content: "The UTMA is not a bad account; it is just a different tool. It wins when your goal is not strictly education. Because the money can be spent on anything, a UTMA can fund a first car, a business, a gap year, or a down payment head start.\n\nIt also offers full investment freedom. You are not limited to a plan's fund menu, so you can build any portfolio you want. And there is no contribution cap beyond gift-tax planning.\n\nJust know the two costs: the yearly kiddie tax and the loss of control at majority. If those are acceptable, a UTMA delivers flexibility a 529 cannot. Not sure which fits your family? Start with our pillar guide, [the best investment account for kids](/guides/best-investment-account-for-kids/)." },
+    ],
+    faqs: [
+      { question: "Is a 529 or a UTMA better for college savings?", answer: "For college savings, a 529 is usually better than a UTMA. It grows tax-free for qualified education, keeps the parent in control, and is assessed at only up to 5.64% on the FAFSA, versus 20% for a student-owned UTMA." },
+      { question: "What is the difference between a 529 and a custodial account?", answer: "A 529 is an education account with tax-free growth that the parent controls, while a custodial account (UTMA/UGMA) can be used for any purpose but is taxed yearly and becomes the child's property at the age of majority." },
+      { question: "Does a UTMA hurt financial aid more than a 529?", answer: "Yes. A UTMA is counted as the student's asset and assessed at 20% on the FAFSA, while a parent-owned 529 is a parental asset assessed at up to 5.64%, so the same balance in a UTMA reduces aid more." },
+      { question: "Can my child spend a UTMA on anything?", answer: "Yes, once your child reaches the age of majority (18 to 21, up to 25 in some states), they take full control of the UTMA and can legally spend the entire balance on anything. A 529 stays under the account owner's control." },
+      { question: "What happens if I don't use 529 money for school?", answer: "Non-qualified 529 withdrawals owe income tax plus a 10% penalty on the earnings portion. You can avoid this by changing the beneficiary or rolling up to $35,000 of unused funds into the beneficiary's Roth IRA if the account is at least 15 years old." },
+    ],
+    sources: [
+      { label: "IRS Topic 313: Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS Topic 553: Tax on a child's investment income (kiddie tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "Federal Student Aid: How aid is calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+    ],
+    relatedComparisons: ["529-vs-roth-ira","529-vs-brokerage-account","utma-vs-ugma"],
+    calculatorLinks: [ { label: "529 savings calculator", href: "/529-savings-calculator/" }, { label: "Investment calculator", href: "/investing/" } ],
+  },
+
+  {
+    slug: "custodial-roth-ira-vs-529",
+    title: "Custodial Roth IRA vs 529 Plan: Which for Your Kid?",
+    metaDescription: "Custodial Roth IRA vs 529 plan: one builds tax-free retirement money but needs the child's earned income; the other funds education. See how to choose.",
+    targetKeyword: "custodial roth ira vs 529",
+    optionA: "Custodial Roth IRA",
+    optionB: "529 Plan",
+    segment: "Kids & family investing",
+    h1: "Custodial Roth IRA vs 529 Plan: How to Choose",
+    intro: "A custodial Roth IRA vs 529 plan comes down to one gate: a custodial Roth IRA requires the child to have earned income, while a 529 plan does not. The custodial Roth grows tax-free for retirement (or flexible early use), but caps contributions at the child's earnings or $7,000 a year, whichever is less. A 529 plan grows tax-free for education, has no earned-income rule, and allows far larger contributions plus a likely state tax break. Many families use both: a 529 for college and a custodial Roth for a working teen's retirement head start. This guide shows which account fits which goal.",
+    comparisonTable: { rows: [
+      { dimension: "Main purpose", a: "Tax-free retirement savings (flexible)", b: "Tax-free savings for education" },
+      { dimension: "Earned-income requirement", a: "Yes — child must have a job or self-employment", b: "No — anyone can fund it" },
+      { dimension: "Annual contribution limit", a: "Lesser of child's earnings or $7,000 (2025)", b: "No federal limit; gift-tax exclusion ~$19,000/yr (2025)" },
+      { dimension: "Tax treatment", a: "After-tax in; growth & qualified withdrawals tax-free", b: "After-tax in; growth & education withdrawals tax-free" },
+      { dimension: "State tax break", a: "None", b: "Most states give a deduction or credit" },
+      { dimension: "Non-qualified withdrawal", a: "Contributions out anytime tax-free; earnings may owe tax + 10% penalty", b: "Earnings owe income tax + 10% penalty" },
+      { dimension: "Financial aid (FAFSA)", a: "Retirement accounts are not reported as an asset", b: "Parent-owned 529 is a parental asset, assessed at 5.64% or less" },
+    ] },
+    verdict: "Fund a 529 plan when the goal is college and the child is too young to work — it has no earned-income rule and a likely state tax break; estimate a target with our [529 savings calculator](/529-savings-calculator/). Choose a custodial Roth IRA once your child earns money from a job, to start decades of tax-free retirement growth. They are not rivals; see [529 plan vs Roth IRA](/compare/529-vs-roth-ira/) if you are weighing them for one shared goal.",
+    sections: [
+      { heading: "The earned-income gate decides eligibility", content: "The single biggest difference is who can open each account. A custodial Roth IRA can only be funded if the child has earned income — wages from a job or self-employment such as babysitting or lawn care. The IRS caps the contribution at the child's earnings or the annual IRA limit ($7,000 in 2025), whichever is lower.\n\nA newborn with no income cannot have a funded custodial Roth. A 529 plan has no such rule. A parent, grandparent, or anyone else can open and fund it from the day the child is born. That is why the 529 is the default for early college savings and the custodial Roth becomes an option later, once your child starts working." },
+      { heading: "Different tax breaks for different goals", content: "Both accounts use after-tax money and grow tax-free, but for different purposes. A [custodial Roth IRA for kids](/guides/custodial-roth-ira-for-kids/) delivers tax-free withdrawals in retirement, and contributions (not earnings) can come out anytime tax- and penalty-free.\n\nA 529 plan delivers tax-free withdrawals for qualified education — tuition, fees, books, and room & board. Most states also give a state income-tax deduction or credit on 529 contributions, a break the custodial Roth does not offer. So the Roth wins on flexibility and long-horizon growth; the 529 wins on education focus and an upfront state tax cut." },
+      { heading: "Limits, aid, and the SECURE 2.0 bridge", content: "The 529 allows much larger balances. There is no federal annual limit, though contributions above the gift-tax annual exclusion (about $19,000 in 2025) start using your lifetime gift exemption, and plans set aggregate caps often between $235,000 and $550,000. The custodial Roth is capped at $7,000 a year at most.\n\nOn financial aid, a parent-owned 529 counts as a parental asset, assessed at up to 5.64% on the FAFSA — a light touch. Retirement accounts are not reported as assets at all. A useful bridge exists too: under SECURE 2.0, up to $35,000 of unused 529 funds can roll into the beneficiary's Roth IRA if the account is at least 15 years old, subject to annual Roth limits." },
+      { heading: "When to use both together", content: "For most families the answer is not either-or. Open a 529 early to build a college fund with no earned-income requirement and a state tax break. Then, once your teen has a summer or part-time job, open a custodial Roth IRA and match part of their earnings.\n\nStarting a Roth at 15 instead of 25 gives the money an extra decade to compound tax-free — a decision rule worth remembering. Compare the wider menu of options in our [best investment account for kids](/guides/best-investment-account-for-kids/) guide, and if you want an irrevocable-gift account without the earned-income rule, weigh a [custodial Roth IRA vs a UTMA](/compare/custodial-roth-ira-vs-utma/)." },
+    ],
+    faqs: [
+      { question: "Can a child have both a custodial Roth IRA and a 529 plan?", answer: "Yes. A child can have both a custodial Roth IRA and a 529 plan at the same time, and many families use both. The 529 covers education, while the custodial Roth builds tax-free retirement savings from the child's job earnings." },
+      { question: "Does a 529 plan require the child to have earned income?", answer: "No. A 529 plan has no earned-income requirement, so a parent or grandparent can open and fund it from the day a child is born. A custodial Roth IRA, by contrast, can only be funded up to the child's earned income." },
+      { question: "Which is better for college savings?", answer: "A 529 plan is usually better for college savings because its growth and withdrawals are tax-free for qualified education, most states add a tax deduction or credit, and it has no earned-income requirement. A custodial Roth IRA is aimed at retirement, not education." },
+      { question: "Can 529 money be moved into a Roth IRA?", answer: "Yes, within limits. Under SECURE 2.0, up to $35,000 of unused 529 funds can roll into the beneficiary's Roth IRA if the 529 account has been open at least 15 years, subject to the annual Roth contribution limit." },
+      { question: "What happens to a custodial Roth IRA when the child grows up?", answer: "Control of a custodial Roth IRA transfers to the child at the age of majority (18 to 21, depending on the state). The account then becomes their own Roth IRA, keeping its tax-free growth and existing balance." },
+    ],
+    sources: [
+      { label: "IRS — 529 Qualified Tuition Programs (Topic 313)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+    ],
+    relatedComparisons: ["529-vs-roth-ira", "custodial-roth-ira-vs-utma", "529-vs-utma"],
+    calculatorLinks: [
+      { label: "529 savings calculator", href: "/529-savings-calculator/" },
+      { label: "Investment calculator", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "custodial-roth-ira-vs-utma",
+    title: "Custodial Roth IRA vs UTMA: Which for Your Kid?",
+    metaDescription: "Custodial Roth IRA vs UTMA (or UGMA): the Roth grows tax-free but needs a job; a UTMA has no income rule or cap. See which custodial account fits your child.",
+    targetKeyword: "custodial roth ira vs utma",
+    optionA: "Custodial Roth IRA",
+    optionB: "UTMA / Custodial Account",
+    segment: "Kids & family investing",
+    h1: "Custodial Roth IRA vs UTMA: Which Account Is Better for Your Child?",
+    intro: "In a custodial Roth IRA vs UTMA choice, pick the custodial Roth IRA when your child has a job, because its growth is fully tax-free — but fund a UTMA (or the older UGMA version) when they have no earned income, need money before retirement, or want to save more than the Roth allows. A custodial Roth IRA can only be funded with a child's earned income, up to $7,000 in 2025. A UTMA custodial account has no earned-income rule and no contribution cap, but its investment gains face the kiddie tax. This page compares both, including how a custodial brokerage account stacks up.",
+    comparisonTable: { rows: [
+      { dimension: "Earned income required?", a: "Yes — child must have a job or self-employment", b: "No — anyone can gift money to it" },
+      { dimension: "Contribution limit (2025)", a: "Lesser of earned income or $7,000", b: "No cap (gift-tax exclusion ~$19,000/yr applies)" },
+      { dimension: "How growth is taxed", a: "Tax-free growth and qualified withdrawals", b: "Kiddie tax: above $2,700 of unearned income taxed at parent's rate" },
+      { dimension: "What the money is for", a: "Retirement-oriented (contributions withdrawable anytime)", b: "Any purpose — college, car, first apartment" },
+      { dimension: "When the child gains control", a: "Child owns it, but Roth rules discourage early spending", b: "Full control at the age of majority (18–21, up to 25 in some states)" },
+      { dimension: "College financial aid (FAFSA)", a: "Retirement accounts are not reported as an asset", b: "Counts as the student's asset, assessed at 20%" },
+      { dimension: "Investment choice", a: "Broad — stocks, funds, ETFs", b: "Broad — stocks, funds, and (UTMA) even property" },
+    ] },
+    verdict: "For a teen with a job, max the custodial Roth IRA first — tax-free growth is hard to beat — then send any extra savings to a UTMA. For a younger child with no earned income, the custodial Roth is not even an option, so a UTMA or [custodial brokerage account](/guides/how-to-open-a-custodial-brokerage-account-for-kids/) is the flexible choice. Model the long-term difference with our [investment calculator](/investing/), and see how both fit alongside a 529 in the [best investment account for kids](/guides/best-investment-account-for-kids/) guide.",
+    sections: [
+      { heading: "The core trade-off: tax-free growth vs no strings", content: "A [custodial Roth IRA](/guides/custodial-roth-ira-for-kids/) wins on taxes. Every dollar of growth and every qualified withdrawal is tax-free. Over decades that beats any taxable account. But it comes with two hard limits: the child must have documented earned income, and you can only add the lesser of that income or $7,000 (2025).\n\nA [UTMA custodial account](/guides/utma-custodial-account-explained/) trades that tax perk for freedom. There is no earned-income rule and no contribution cap. You can fund it for a newborn, and the money can be spent on anything — not just retirement. The cost is the kiddie tax and the fact that the child takes full control at the age of majority." },
+      { heading: "When a custodial Roth IRA isn't even possible", content: "This is the decision rule most parents miss: a custodial Roth IRA requires earned income, so a child with no job cannot have one funded at all. A newborn, a toddler, or a kid who only receives allowance and gift money is not eligible.\n\nIf your child has no wages, the choice narrows to a UTMA, a UGMA, or a parent-owned brokerage account. The Roth question only returns once they start earning — from a summer job, babysitting, or self-employment they can document." },
+      { heading: "The smart move for a working teen: fund both", content: "When a teen does have a job, the strongest play is to fund the custodial Roth first, then overflow into a UTMA. Here is why. The Roth is capped at their earned income (max $7,000 in 2025), so a teen earning $4,000 can only put $4,000 in the Roth that year.\n\nOnce that tax-free bucket is full, extra savings have nowhere tax-advantaged left to go — so a UTMA catches the overflow. You get the best of both: tax-free retirement growth up to the cap, plus an uncapped, flexible account for near-term goals like a car or college. A family gift can even 'match' a teen's earnings so they keep their paycheck while the Roth still gets funded up to what they earned." },
+      { heading: "UTMA vs UGMA vs custodial brokerage — same idea, small differences", content: "People search for a UTMA, a UGMA, and a 'custodial brokerage account' as if they were three different products. They are mostly the same thing: an adult manages investments that irrevocably belong to a minor. A custodial brokerage account is simply a UTMA or UGMA opened at a brokerage.\n\nUGMA (Uniform Gifts to Minors Act) holds financial assets only — cash, stocks, bonds, and funds — and every state allows it. UTMA (Uniform Transfers to Minors Act) is broader: it can also hold real estate and other property, and some states let the transfer age reach 25. Both are taxed under the kiddie tax and both become the child's outright at majority. For a deeper split, see [UTMA vs UGMA](/compare/utma-vs-ugma/)." },
+    ],
+    faqs: [
+      { question: "Custodial Roth IRA vs UTMA — which is better?", answer: "A custodial Roth IRA is better for a child with earned income because its growth is tax-free, while a UTMA is better for a child with no job or one who needs flexible, uncapped savings. The Roth requires a documented paycheck and caps contributions at $7,000 (2025); the UTMA has neither limit but is subject to the kiddie tax." },
+      { question: "Can a child have both a custodial Roth IRA and a UTMA?", answer: "Yes, a child can hold both a custodial Roth IRA and a UTMA at the same time. A common strategy is to max the tax-free Roth up to the child's earned income, then put any additional savings in a UTMA, which has no contribution cap." },
+      { question: "What is the difference between a custodial Roth IRA and a custodial brokerage account?", answer: "A custodial Roth IRA is a retirement account with tax-free growth that requires the child's earned income, while a custodial brokerage account (a UTMA or UGMA) is a flexible taxable account with no income rule and no contribution cap. The brokerage account's gains face the kiddie tax; the Roth's do not." },
+      { question: "Does a child need a job to open a UTMA?", answer: "No, a child does not need earned income to have a UTMA or UGMA funded. Anyone can gift money to it, which is why it is often the only investing option for a newborn or a young child who is not yet working." },
+      { question: "How does each account affect college financial aid?", answer: "A UTMA is counted as the student's own asset on the FAFSA and assessed at up to 20%, which reduces aid more than a parent's assets do. Retirement accounts, including a custodial Roth IRA, are not reported as assets on the FAFSA, so the Roth is gentler on aid eligibility." },
+    ],
+    sources: [
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Topic 553, Kiddie Tax (child's unearned income)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "SEC Investor.gov — UGMA/UTMA custodial accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+    ],
+    relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma"],
+    calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
+  },
+
+  {
+    slug: "trump-account-vs-529-vs-utma",
+    title: "Trump Account vs 529 vs UTMA: 3-Way Compared",
+    metaDescription: "Trump Account vs 529 vs UTMA compared: the free $1,000 seed, tax-free college savings, and flexible custodial money. See which account fits your kid.",
+    targetKeyword: "trump account vs 529 vs utma",
+    optionA: "Trump Account",
+    optionB: "529 vs UTMA",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs 529 vs UTMA: Which Kids' Account Wins?",
+    intro: "In the Trump Account vs 529 vs UTMA choice, the Trump Account gives a free $1,000 federal seed but locks the money until 18, a 529 grows tax-free for college, and a UTMA offers full flexibility but the heaviest tax and aid cost. These are not either-or accounts. The free Trump seed is worth claiming for every eligible child, then you layer a 529 or UTMA on top based on your goal. This page breaks down all three side by side so you can pick the right mix. See our [best investment account for kids](/guides/best-investment-account-for-kids/) guide for the full lineup.",
+    comparisonTable: { rows: [
+      { dimension: "Free money to start", a: "$1,000 federal seed for kids born 2025-2028", b: "529: none · UTMA: none" },
+      { dimension: "Tax treatment of growth", a: "Tax-deferred; withdrawals taxed as ordinary income", b: "529: tax-free for school · UTMA: kiddie-taxed yearly" },
+      { dimension: "What the money can buy", a: "Anything, but not before age 18", b: "529: education only · UTMA: any purpose, any time" },
+      { dimension: "Investment choices", a: "S&P 500 / U.S.-equity index fund only", b: "529: plan menu of funds · UTMA: nearly anything" },
+      { dimension: "Who controls it", a: "Locked to Jan 1 of the year child turns 18", b: "529: you keep control · UTMA: child takes over at majority" },
+      { dimension: "Contribution cap", a: "$5,000/yr combined from all private sources", b: "529: gift-tax limits, high aggregate caps · UTMA: no cap" },
+      { dimension: "FAFSA aid impact", a: "Treated like the child's retirement account", b: "529: parent asset (<=5.64%) · UTMA: student asset (20%)" }
+    ] },
+    verdict: "Claim the free Trump Account seed for every eligible child; it is $1,000 you would not otherwise get. If college is the goal, put ongoing savings in a 529 for tax-free growth and a possible state deduction. If you want money the child can use for a car, a first apartment, or a business, use a UTMA and accept the kiddie tax and bigger aid hit. Many families run two or all three together. Model the seed's growth with our [Trump Account calculator](/trump-account/) and college savings with the [529 savings calculator](/529-savings-calculator/), then read [Trump Account vs 529](/compare/trump-account-vs-529/).",
+    sections: [
+      { heading: "Trump Account: the free seed with strings attached", content: "The Trump Account is a federal child account that gives a one-time $1,000 seed to U.S.-citizen kids born between 2025 and 2028, as long as they have a Social Security number. That seed is free money, so it is worth claiming even if you add nothing else.\n\nAfter the seed, private contributions are capped at $5,000 per year combined from all sources. The money must sit in an S&P 500 or U.S.-equity index fund, and it grows tax-deferred. There is no yearly tax bill on the gains.\n\nThe trade-offs are real. The account is locked until January 1 of the year the child turns 18, and withdrawals are then taxed as ordinary income, like a traditional IRA. Our growth engine shows the $1,000 seed alone at 7% reaching about $3,513 by age 18. Add $200 a month and it grows to roughly $89,657. Max it at $5,000 a year from birth and it reaches about $182,980. See the full picture in the [Trump Accounts guide](/guides/trump-accounts/)." },
+      { heading: "529 plan: tax-free money, but for school only", content: "A 529 plan is built for education. You contribute after-tax dollars, the money grows tax-free, and withdrawals are tax-free when used for qualified education costs like tuition, fees, books, and room & board. Most states also give a state income-tax deduction or credit for contributions.\n\nThe catch is the narrow use. If you pull money out for something other than education, you owe income tax plus a 10% penalty on the earnings. A 529 is a parent-owned asset on the FAFSA, assessed at no more than 5.64%, which is gentle on aid.\n\nA newer rule softens the college-only limit: up to $35,000 of unused 529 funds can roll to the beneficiary's Roth IRA if the account is at least 15 years old. Compare the two head to head in [529 vs UTMA](/compare/529-vs-utma/), or see [Trump Account vs 529](/compare/trump-account-vs-529/)." },
+      { heading: "UTMA: total flexibility, at a cost", content: "A UTMA (Uniform Transfers to Minors Act) custodial account is the most flexible of the three. There is no contribution cap, you can invest in almost anything, and the money can pay for anything that benefits the child, at any age. No education requirement, no lock to 18.\n\nThat freedom comes with three costs. First, the money is taxed under the kiddie tax: in 2025 the first $1,350 of unearned income is tax-free, the next $1,350 is taxed at the child's rate, and anything above $2,700 is taxed at the parents' marginal rate. Second, the assets are irrevocably the child's, and control transfers to them at the age of majority (18 to 25 depending on your state). Third, a UTMA is the student's asset on the FAFSA, assessed at 20%, the biggest aid hit of any account here.\n\nLearn the details in our [UTMA custodial account explainer](/guides/utma-custodial-account-explained/) and the [custodial account and kiddie-tax guide](/guides/custodial-account-taxes-kiddie-tax/)." },
+      { heading: "How to combine all three", content: "These accounts solve different problems, so the smart move is often to use more than one. Start by claiming the Trump Account seed; it is free and takes little effort.\n\nIf your child is likely headed to college, direct your ongoing savings to a 529 for tax-free growth and a possible state deduction. Add a UTMA only when you want money outside the education box, such as funds for a first car, a gap year, or seed capital for a small business.\n\nA common setup: Trump Account for the free seed, a 529 as the college workhorse, and a small UTMA for flexible, non-college money. Because a UTMA hurts financial aid most, keep its balance modest if aid matters. Not sure which two to pair? Start with [Trump Account vs custodial account](/compare/trump-account-vs-custodial-account/) and the [best account for kids](/guides/best-investment-account-for-kids/) pillar." }
+    ],
+    faqs: [
+      { question: "Can I open a Trump Account, a 529, and a UTMA for the same child?", answer: "Yes. You can hold all three for one child at the same time. Each has its own rules, so many families claim the free Trump Account seed, save for college in a 529, and keep flexible money in a UTMA." },
+      { question: "Which account is best if my child might not go to college?", answer: "A UTMA is best for a child who may skip college, because the money can be used for any purpose. A 529 is education-focused and charges a 10% penalty on earnings for non-qualified withdrawals, though up to $35,000 can later roll to the child's Roth IRA." },
+      { question: "Which account hurts financial aid the most?", answer: "A UTMA hurts financial aid the most. It is the student's asset on the FAFSA, assessed at 20%, versus a parent-owned 529 assessed at no more than 5.64%. Keep UTMA balances modest if aid matters." },
+      { question: "How is each account taxed?", answer: "A Trump Account grows tax-deferred and is taxed as ordinary income on withdrawal after 18. A 529 grows and pays out tax-free for education. A UTMA is taxed yearly under the kiddie tax, with unearned income above $2,700 taxed at the parents' rate in 2025." },
+      { question: "How much can the free Trump Account seed grow?", answer: "The $1,000 Trump Account seed alone at 7% grows to about $3,513 by age 18. Adding $200 a month raises it to roughly $89,657, and maxing contributions at $5,000 a year from birth reaches about $182,980." }
+    ],
+    sources: [
+      { label: "IRS - Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS Topic 313 - Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS Topic 553 - Tax on a child's investment income (kiddie tax)", url: "https://www.irs.gov/taxtopics/tc553" }
+    ],
+    relatedComparisons: ["trump-account-vs-529", "529-vs-utma", "trump-account-vs-custodial-account"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "529 savings calculator", href: "/529-savings-calculator/" }
+    ],
+  },
+
+  {
+    slug: "trump-account-vs-brokerage-account",
+    title: "Trump Account vs Brokerage Account for Kids",
+    metaDescription: "Trump Account vs brokerage account: the Trump Account adds a free $1,000 seed and tax deferral, but a taxable brokerage stays flexible and liquid. See which wins.",
+    targetKeyword: "trump account vs brokerage account",
+    optionA: "Trump Account",
+    optionB: "Brokerage Account",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs Brokerage Account: Which Is Better for Your Kid?",
+    intro: "A Trump Account beats a taxable brokerage account when you can leave the money invested until your child turns 18, but a brokerage wins when you need flexibility or liquidity before then. The Trump Account hands you a free $1,000 federal seed and lets the money grow tax-deferred. The catch: it can only hold an S&P 500 index fund and stays locked until January 1 of the year your child turns 18. A taxable brokerage account has no seed and gets taxed every year, but you can invest in anything, withdraw anytime, and use the money for any purpose. This guide compares the trade-offs so you can pick the right home for your child's money.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Free money", a: "$1,000 federal seed for kids born 2025-2028", b: "None" },
+        { dimension: "Investment choice", a: "S&P 500 / U.S.-equity index fund only", b: "Any stock, bond, ETF, or fund" },
+        { dimension: "Tax on growth", a: "Tax-deferred; taxed as ordinary income at withdrawal", b: "Dividends and realized gains taxed every year / at sale" },
+        { dimension: "Access to money", a: "Locked until Jan 1 of the year the child turns 18", b: "Fully liquid; withdraw anytime" },
+        { dimension: "Allowed use of funds", a: "Any purpose after 18 (treated like a traditional IRA)", b: "Any purpose, anytime" },
+        { dimension: "Contribution cap", a: "$5,000/yr combined from all private sources", b: "No contribution limit" },
+        { dimension: "Who controls it", a: "Custodian, then the child at 18", b: "Whoever owns it (parent or custodian)" },
+      ],
+    },
+    verdict: "Choose the Trump Account if your child was born 2025-2028 and you can commit to leaving the money until 18 - the free $1,000 seed plus tax deferral give it a real head start. Choose a taxable brokerage if you might need the money sooner, want to pick your own investments, or the child isn't seed-eligible. Many families do both: grab the free seed, then use a brokerage for flexible, unlocked savings. Model the Trump Account with our [Trump Account calculator](/trump-account/) and compare a flexible plan with the [investment calculator](/investing/), then see the full lineup in our guide to the [best investment account for kids](/guides/best-investment-account-for-kids/).",
+    sections: [
+      {
+        heading: "The free $1,000 seed and tax deferral give the Trump Account an early edge",
+        content: "The Trump Account's biggest advantage is money you don't have to put in. Every eligible U.S.-citizen child born between 2025 and 2028 gets a $1,000 federal seed, and that seed does not count against the $5,000 annual contribution cap.\n\nOn top of the free start, growth is tax-deferred. Nothing is taxed while the money compounds, so gains build on gains untouched by yearly taxes.\n\nThe numbers show the head start. The $1,000 seed alone at a 7% return grows to about $3,513 by age 18 - with zero of your own money added. Add $200 a month and the balance reaches roughly $89,657. Max out the $5,000 a year from birth and it grows to about $182,980. A taxable brokerage starts from zero and loses a slice to taxes every year, so early on the Trump Account is hard to beat.",
+      },
+      {
+        heading: "A brokerage account taxes you yearly but keeps every dollar flexible",
+        content: "A taxable brokerage account has no tax shelter. Dividends are taxed the year you receive them, and realized gains are taxed when you sell, at [capital gains rates](https://www.irs.gov/taxtopics/tc409). That yearly drag is the price of freedom.\n\nWhat you get in return is total flexibility. You can buy any stock, bond, ETF, or fund - not just one index. You can also open it as a parent-owned account and keep control, or as a custodial account that becomes the child's.\n\nBest of all, the money is fully liquid. There is no lock-up and no age gate. You can withdraw for a car at 16, a tuition bill at 19, or an emergency at any age, for any purpose.",
+      },
+      {
+        heading: "The lock-up and index-only rule are the Trump Account's real trade-offs",
+        content: "The Trump Account's edge comes with two hard limits. First, the money is locked until January 1 of the year your child turns 18 - you cannot tap it for a pre-college need. Second, it can only hold an S&P 500 or U.S.-equity index fund, so you can't tilt toward bonds, international stocks, or individual picks.\n\nThere's also a tax twist at the end. After 18 the account works like a [traditional IRA](https://www.irs.gov/retirement-plans/roth-iras), so withdrawals are taxed as ordinary income - not the lower long-term capital gains rate a brokerage can qualify for.\n\nA brokerage has none of these limits. That's why flexibility and the lack of a lock-up win whenever you might need the money before 18 or want to choose your own investments. See how it stacks up against tax-free options in our [Trump Account vs 529 comparison](/compare/trump-account-vs-529/).",
+      },
+      {
+        heading: "A simple decision rule",
+        content: "Ask one question: will you definitely leave this money invested until your child is 18?\n\nIf yes, and your child is seed-eligible, start with the Trump Account to capture the free $1,000 and tax-deferred growth. It's the strongest first dollar.\n\nIf you might need the money sooner, want investments beyond an index fund, or your child isn't seed-eligible, a taxable brokerage is the better fit. And you don't have to choose just one - claim the free Trump Account seed, then run a brokerage alongside it for the flexible, unlocked portion of your savings. Compare a fully liquid cash option in our [Trump Account vs savings account](/compare/trump-account-vs-savings-account/) breakdown, or see the parent-owned trade-offs in [brokerage vs IRA](/compare/brokerage-vs-ira/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a Trump Account better than a brokerage account for a kid?",
+        answer: "A Trump Account is better when you can leave the money invested until your child turns 18, because of the free $1,000 seed and tax-deferred growth. A brokerage account is better when you value flexibility - any investment, full liquidity, and any use of the money. The right choice depends on whether you need access before 18.",
+      },
+      {
+        question: "How much does the Trump Account's free $1,000 seed grow to?",
+        answer: "The $1,000 federal seed alone grows to about $3,513 by age 18 at a 7% return, with no other contributions. Add $200 a month and it reaches roughly $89,657. Contribute the $5,000 annual max from birth and it grows to about $182,980.",
+      },
+      {
+        question: "Can I take money out of a Trump Account before my child turns 18?",
+        answer: "No, a Trump Account is locked until January 1 of the year your child turns 18. A taxable brokerage account, by contrast, is fully liquid and can be withdrawn at any time for any purpose, which is its main advantage when you might need the money early.",
+      },
+      {
+        question: "How is a taxable brokerage account taxed compared to a Trump Account?",
+        answer: "A taxable brokerage account is taxed every year - dividends when received and gains when you sell, at capital gains rates. A Trump Account grows tax-deferred, but withdrawals after 18 are taxed as ordinary income, like a traditional IRA, which can be a higher rate than long-term capital gains.",
+      },
+      {
+        question: "Can I open both a Trump Account and a brokerage account?",
+        answer: "Yes, and many families do. You can claim the free $1,000 Trump Account seed for tax-deferred, long-term growth, then run a taxable brokerage alongside it for flexible, fully liquid savings you can invest and access however you like.",
+      },
+    ],
+    sources: [
+      { label: "IRS - Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS - Topic 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS - Roth IRAs (traditional IRA distribution rules)", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+    ],
+    relatedComparisons: ["trump-account-vs-529", "trump-account-vs-savings-account", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "trump-account-vs-roth-ira",
+    title: "Trump Account vs Roth IRA (for Kids): Which Wins?",
+    metaDescription: "Trump account vs Roth IRA for kids: the free $1,000 seed and no earned-income rule vs tax-free growth. See who qualifies and why you may want both.",
+    targetKeyword: "trump account vs roth ira",
+    optionA: "Trump Account",
+    optionB: "Roth IRA (custodial)",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs Roth IRA for Kids: A Clear Comparison",
+    intro: "A Trump Account gives any eligible child a free $1,000 federal seed with no job required, while a custodial Roth IRA offers tax-free growth but only for a child who has earned income. The Trump Account grows tax-deferred and is taxed as ordinary income at withdrawal, like a traditional IRA. A custodial Roth IRA grows and pays out tax-free, and contributions can come out anytime. The earned-income rule is the deciding factor, and the two accounts are not mutually exclusive. This guide shows which fits your child and when to use both.",
+    comparisonTable: { rows: [
+      { dimension: "Earned income required?", a: "No — any eligible child can be funded, even a newborn", b: "Yes — the child must have documented earned income" },
+      { dimension: "Free money", a: "$1,000 federal seed for U.S.-citizen kids born 2025–2028", b: "None" },
+      { dimension: "Tax treatment", a: "Tax-DEFERRED; withdrawals taxed as ordinary income", b: "Tax-FREE growth and qualified withdrawals" },
+      { dimension: "Annual contribution cap", a: "$5,000/yr combined from private sources (seed doesn't count)", b: "Up to $7,000 in 2025, capped at the child's earned income" },
+      { dimension: "Investments allowed", a: "S&P 500 / U.S.-equity index fund only", b: "Broad — stocks, ETFs, index and mutual funds" },
+      { dimension: "Access to funds", a: "Locked until Jan 1 of the year the child turns 18", b: "Contributions withdrawable anytime, tax- and penalty-free" },
+      { dimension: "Best for", a: "A head start for any eligible child, working or not", b: "A working teen building lifelong tax-free savings" },
+    ] },
+    verdict: "Fund the Trump Account for any eligible child to capture the free $1,000 seed, since a newborn or non-working kid cannot fund a Roth. Once your child earns income, add a custodial Roth IRA for tax-free growth and flexible access. They are not either/or — a working teen can hold both. Model the Trump seed with the [Trump Account calculator](/trump-account/), then compare paths against a [Trump Account vs 529](/compare/trump-account-vs-529/).",
+    sections: [
+      { heading: "The earned-income gate decides everything", content: "The single biggest difference is who can fund each account. A [custodial Roth IRA](/guides/custodial-roth-ira-for-kids/) requires the child to have documented earned income — a job, babysitting, or self-employment. A newborn with no income cannot have one funded at all.\n\nThe Trump Account has no such rule. Any U.S.-citizen child born 2025–2028 gets the $1,000 federal seed, and parents can add up to $5,000 a year regardless of whether the child works. This is why the accounts pair so well: the Trump Account covers the years before your child can work, and the Roth IRA takes over once they can.\n\nA working teen can do both in the same year, doubling their tax-advantaged head start." },
+      { heading: "Tax treatment: deferred vs free", content: "The Trump Account grows tax-DEFERRED. Contributions are after-tax and non-deductible, but withdrawals are taxed as ordinary income — the same treatment as a traditional IRA. That is the key catch buried in the free seed.\n\nA Roth IRA grows and pays out tax-FREE for qualified withdrawals. Decades of compounding come out with zero tax owed. For a child with 50-plus years of runway, tax-free growth is powerful.\n\nSo the Trump Account trades a tax bill later for free money and no earned-income hurdle now. The Roth trades the free seed for a better long-run tax outcome — if the child can fund it. See our [best investment account for kids](/guides/best-investment-account-for-kids/) guide for the full landscape." },
+      { heading: "Growth, access, and flexibility", content: "The Trump Account is locked until January 1 of the year the child turns 18 and must be invested in an S&P 500 or U.S.-equity index fund only. Using our engine, the $1,000 seed alone at 7% grows to about $3,513 by age 18. Add $200 a month and it reaches roughly $89,657. Fund the full $5,000 a year from birth and it hits about $182,980.\n\nA custodial Roth IRA offers broad investment choice and far more flexibility. Contributions — not earnings — can be withdrawn anytime, tax- and penalty-free, which makes it a soft emergency backstop. But the annual contribution is capped at the lesser of $7,000 (2025) or the child's actual earned income.\n\nRun your own numbers with the [investment calculator](/investing/) before you commit a monthly amount." },
+      { heading: "When to use each — and both", content: "Open the Trump Account first for any eligible child. The $1,000 seed is free and does not count against the $5,000 annual cap, so leaving it unclaimed is leaving money on the table. Read [is a Trump Account worth it](/guides/trump-account-worth-it/) for the full case.\n\nAdd a custodial Roth IRA the moment your child has earned income. Match their contribution to their W-2 or 1099 earnings so every dollar of tax-free space is used.\n\nBecause they are not mutually exclusive, the ideal plan for a working teen is both: the Trump Account for the guaranteed seed and index compounding, the Roth for tax-free growth and flexibility. Compare the Trump Account against a [custodial account](/compare/trump-account-vs-custodial-account/) to round out the picture." },
+    ],
+    faqs: [
+      { question: "Trump account vs Roth IRA — which is better for a child?", answer: "It depends on whether your child has earned income. A Trump Account is better for a child with no job because it delivers a free $1,000 seed and needs no earned income. A custodial Roth IRA is better for a working child because it grows tax-free. If the child works, using both is usually ideal." },
+      { question: "Can a child have both a Trump Account and a Roth IRA?", answer: "Yes. The two accounts are not mutually exclusive. A working teen can hold a Trump Account for the free seed and index compounding and a custodial Roth IRA for tax-free growth in the same year. The Roth still requires earned income; the Trump Account does not." },
+      { question: "Is a Trump Account taxed like a traditional IRA?", answer: "Yes. A Trump Account grows tax-deferred, and withdrawals are taxed as ordinary income — the same treatment as a traditional IRA. Contributions are after-tax and non-deductible. This differs from a Roth IRA, where qualified withdrawals are completely tax-free." },
+      { question: "Trump account vs custodial IRA — what is the main difference?", answer: "The main difference is the earned-income requirement and the tax outcome. A custodial IRA (Roth or traditional) requires the child to have earned income, while a Trump Account does not. A custodial Roth IRA also grows tax-free, whereas a Trump Account is tax-deferred and taxed at withdrawal." },
+      { question: "Can a newborn have a Roth IRA?", answer: "No. A Roth IRA can only be funded up to the child's earned income, and a newborn has none. A Trump Account, by contrast, can be funded for a newborn and even comes with a $1,000 federal seed for eligible U.S.-citizen children born 2025–2028." },
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Publication 590-A (IRA contributions, compensation & limits)", url: "https://www.irs.gov/publications/p590a" },
+    ],
+    relatedComparisons: ["trump-account-vs-529", "trump-account-vs-custodial-account", "custodial-roth-ira-vs-529"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "trump-account-vs-savings-account",
+    title: "Trump Account vs Savings Account: Which for Kids?",
+    metaDescription: "Trump account vs savings account for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid, safe. See which fits college and wealth goals.",
+    targetKeyword: "trump account vs savings account",
+    optionA: "Trump Account",
+    optionB: "Kids Savings Account (HYSA)",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs Savings Account: Which Is Better for Kids?",
+    intro: "A Trump account vs savings account choice comes down to invested growth versus guaranteed safety. A Trump account puts your child's money in an S&P 500 index fund, adds a $1,000 federal seed, and grows tax-deferred, but locks the money until age 18. A kids savings account or high-yield savings account (HYSA) is FDIC-insured, fully liquid, and never loses principal, but pays only about 4% and gets taxed every year. The right pick depends on whether the money is long-term (college, wealth) or short-term (an emergency fund your child can touch).",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it holds", a: "S&P 500 / U.S. equity index fund (invested)", b: "Bank cash deposit" },
+        { dimension: "Safety of principal", a: "Market risk — value can fall", b: "FDIC-insured to $250,000, principal safe" },
+        { dimension: "Free seed money", a: "$1,000 federal seed (kids born 2025–2028)", b: "None" },
+        { dimension: "Typical return", a: "Long-run stock growth (~7% used here)", b: "~4% interest (variable)" },
+        { dimension: "Taxes", a: "Tax-deferred; withdrawals taxed as ordinary income", b: "Interest taxed as ordinary income every year" },
+        { dimension: "Access to money", a: "Locked until Jan 1 of the year child turns 18", b: "Fully liquid — withdraw anytime" },
+        { dimension: "Contribution cap", a: "$5,000/yr combined from private sources", b: "No cap" }
+      ]
+    },
+    verdict: "Pick a Trump account for long-term goals like college or a wealth head start — invested growth plus the $1,000 seed does the heavy lifting over 18 years. Pick a kids savings account or HYSA for money you may need soon or want fully safe. Many families use both: the Trump account for growth, a savings account for a liquid cushion. Model the growth gap with the [Trump Account calculator](/trump-account/), then see the [best investment account for kids](/guides/best-investment-account-for-kids/).",
+    sections: [
+      {
+        heading: "The core trade-off: growth vs. safety",
+        content: "A Trump account invests in an S&P 500 index fund, so it aims for long-run stock-market growth. That growth comes with market risk — the balance can drop in any given year. A kids savings account trades that upside for certainty: your principal never falls and is FDIC-insured to $250,000.\n\nThe numbers show the gap. Using a 7% return, a Trump account's $1,000 seed alone grows to about $3,513 by age 18. Add $200 a month and it reaches roughly $89,657. Fund the $5,000-a-year max from birth and it can hit about $182,980. A ~4% savings account, taxed yearly, cannot come close over the same 18 years."
+      },
+      {
+        heading: "The non-obvious insight: safety is a short-term tool",
+        content: "Here is the decision rule most parents miss: over 18 years, stock-market growth typically far outpaces savings-account interest. A savings account's safety is really a short-term or emergency tool, not a long-term college or wealth builder.\n\nWhy? A ~4% return, taxed every year, barely keeps pace with inflation. The Trump account's tax-deferred, invested growth compounds untouched until 18. So use a savings account for money your child might need this year, and use invested accounts for money that has 10-plus years to grow. Compare the compounding directly with the [investment calculator](/investing/)."
+      },
+      {
+        heading: "Liquidity, taxes, and the $1,000 seed",
+        content: "The biggest practical difference is access. A savings account is fully liquid — you (or your child) can withdraw any day with no penalty. A Trump account is locked until January 1 of the year the child turns 18, and it is then treated like a traditional IRA, so withdrawals are taxed as ordinary income.\n\nTaxes differ too. Savings-account interest is taxed every year as ordinary income, which drags on returns. The Trump account grows tax-deferred, so nothing is taxed until withdrawal. And only the Trump account offers the $1,000 federal seed for U.S.-citizen kids born 2025–2028 — free money a savings account can never match."
+      },
+      {
+        heading: "When a savings account still wins",
+        content: "A kids savings account is the right home for short-term money. If you are saving for a bike, a summer trip, or a rainy-day fund your child can reach, the guaranteed value and instant access beat market risk.\n\nIt is also a great teaching tool. Kids can watch a savings balance grow and learn how interest works, without the swings of a stock fund. For growth money, though, the Trump account wins — and you can weigh other options in our [best investment account for kids](/guides/best-investment-account-for-kids/) guide, or compare it with a [brokerage account](/compare/trump-account-vs-brokerage-account/) or [custodial account](/compare/trump-account-vs-custodial-account/)."
+      }
+    ],
+    faqs: [
+      {
+        question: "Is a Trump account better than a savings account for a child?",
+        answer: "A Trump account is usually better for long-term goals because it invests in stocks, adds a $1,000 seed, and grows tax-deferred. A savings account is better for short-term or emergency money because it is FDIC-insured, liquid, and never loses principal. The best choice depends on your time horizon."
+      },
+      {
+        question: "Trump account vs high yield savings — which grows more?",
+        answer: "A Trump account typically grows far more over 18 years because it is invested in an S&P 500 index fund. At a 7% return, a $1,000 seed grows to about $3,513, or roughly $89,657 with $200 a month added. A high-yield savings account at ~4%, taxed yearly, cannot match that over the same period."
+      },
+      {
+        question: "Is money in a Trump account FDIC-insured like a savings account?",
+        answer: "No. A Trump account is invested in a stock index fund, so it is not FDIC-insured and its value can fall. Only bank deposits like a savings account or HYSA carry FDIC insurance, which protects up to $250,000 per depositor, per bank."
+      },
+      {
+        question: "Can I withdraw from a Trump account like a savings account?",
+        answer: "No. A savings account is fully liquid and you can withdraw anytime. A Trump account is locked until January 1 of the year the child turns 18, and withdrawals are then taxed as ordinary income like a traditional IRA."
+      },
+      {
+        question: "Should I use both a Trump account and a savings account?",
+        answer: "Yes, many families use both. The Trump account handles long-term, invested growth with its $1,000 seed, while a kids savings account or HYSA holds liquid, principal-safe money for near-term needs and emergencies."
+      }
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "FDIC — Deposit Insurance ($250,000 limit)", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+      { label: "IRS — Traditional IRAs (distribution tax treatment)", url: "https://www.irs.gov/retirement-plans/traditional-iras" }
+    ],
+    relatedComparisons: ["trump-account-vs-529", "trump-account-vs-brokerage-account", "trump-account-vs-custodial-account"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" }
+    ],
+  },
+
+  {
+    slug: "utma-vs-ugma",
+    title: "UTMA vs UGMA: Custodial Account Differences (2026)",
+    metaDescription: "UTMA vs UGMA: both are custodial accounts for a child, but UTMA holds more asset types and often transfers later. Here's which one you actually get.",
+    targetKeyword: "utma vs ugma",
+    optionA: "UTMA",
+    optionB: "UGMA",
+    segment: "Kids & family investing",
+    h1: "UTMA vs UGMA: What's the Difference?",
+    intro: "UTMA vs UGMA comes down to what the account can hold and when the child takes control: UTMA can hold almost any property and often transfers later, while UGMA holds only financial assets like cash, stocks, and funds. Both are custodial accounts, where an adult manages money that legally belongs to the child. Both are taxed the same way under the kiddie tax, and both count as the student's asset on the FAFSA. In practice, the account type is usually decided for you by your state and your broker, not by a choice you make. Most brokers today open UTMA accounts by default.",
+    comparisonTable: { rows: [
+      { dimension: "Full name", a: "Uniform Transfers to Minors Act", b: "Uniform Gifts to Minors Act" },
+      { dimension: "What it can hold", a: "Almost any property: cash, securities, real estate, art, patents", b: "Financial assets only: cash, stocks, bonds, mutual funds" },
+      { dimension: "State availability", a: "Nearly every state (newer statute)", b: "All states (older statute)" },
+      { dimension: "Age control transfers", a: "18 to 21, up to 25 in some states", b: "Typically 18 to 21" },
+      { dimension: "Ownership", a: "Irrevocably the child's", b: "Irrevocably the child's" },
+      { dimension: "Taxes", a: "Kiddie tax on unearned income", b: "Kiddie tax on unearned income" },
+      { dimension: "FAFSA treatment", a: "Student asset, assessed up to 20%", b: "Student asset, assessed up to 20%" },
+    ] },
+    verdict: "For most families the choice is already made: your state and your broker decide, and nearly all brokers open a UTMA today. Pick UTMA if you may gift non-cash property like real estate or want the option of a later transfer age. Choose UGMA only if that is what your provider offers and you are gifting cash or securities. Model the long-term growth with our [investment calculator](/investing/), and see how a custodial account stacks up against a college plan in our [529 vs UTMA comparison](/compare/529-vs-utma/).",
+    sections: [
+      { heading: "What UGMA and UTMA actually are", content: "UGMA and UTMA are the two laws that let an adult hold investments for a minor without a formal trust. Under both, a custodian manages the account until the child reaches the age of majority.\n\nThe money is a completed gift. That means it belongs to the child the moment you put it in, and you cannot take it back or redirect it to another child. This is true for both UGMA and UTMA accounts. For the full mechanics, see our [UTMA custodial account guide](/guides/utma-custodial-account-explained/)." },
+      { heading: "The real difference: what each can hold", content: "UGMA (Uniform Gifts to Minors Act) is the older law. It covers financial assets only: cash, stocks, bonds, and mutual funds. That fits most families saving for a child.\n\nUTMA (Uniform Transfers to Minors Act) is the newer, broader law. On top of financial assets, it can hold real estate, fine art, patents, and other property. Nearly every state has adopted UTMA. If you only ever plan to gift cash or index funds, this difference will not affect you." },
+      { heading: "When the child takes control", content: "This is the difference that matters most in practice. Under both laws, control passes to the child at the age of majority, usually 18 or 21 depending on your state.\n\nUTMA gives some states the option to push that age as high as 25. A later age can be a feature, not a bug: an 18-year-old who suddenly controls a large account may not be ready for it. Once the transfer happens, the young adult can spend the money on anything, and you lose all say." },
+      { heading: "Why you rarely get to choose", content: "Which statute applies is set by your state of residence and by what your brokerage offers. Most major brokers open UTMA accounts by default because UTMA is more flexible and adopted almost everywhere.\n\nSo the honest answer to \"UTMA or UGMA?\" is usually \"whichever your broker opens.\" Do not agonize over the label. Focus instead on the tax and financial-aid tradeoffs a custodial account carries, and compare it against a [custodial Roth IRA](/compare/custodial-roth-ira-vs-utma/) if your child has earned income. For the bigger picture, start with our pillar guide, [the best investment account for kids](/guides/best-investment-account-for-kids/)." },
+    ],
+    faqs: [
+      { question: "What is the main difference between UTMA and UGMA?", answer: "The main difference is that UTMA can hold almost any property, including real estate and art, while UGMA holds only financial assets like cash, stocks, bonds, and funds. UTMA is also the newer, more flexible law and often allows a later transfer age." },
+      { question: "Is UTMA or UGMA better?", answer: "UTMA is generally more flexible because it holds more asset types and can delay the transfer age. But most families never notice the difference, because both are taxed and treated identically for financial aid, and your broker usually chooses for you." },
+      { question: "Can I choose between a UGMA and a UTMA account?", answer: "Usually no. Your state and your brokerage decide which type you get, and most brokers open UTMA accounts by default. You rarely make an active choice between the two." },
+      { question: "Are UTMA and UGMA accounts taxed differently?", answer: "No. Both are taxed the same way under the kiddie tax. In 2025 the first $1,350 of a child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and unearned income above $2,700 is taxed at the parents' marginal rate." },
+      { question: "Does a UTMA or UGMA account hurt financial aid?", answer: "Yes, and equally. Both count as the student's asset on the FAFSA, assessed at up to 20 percent. That is a larger aid hit than a parent-owned account like a 529, which is assessed at up to 5.64 percent." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — UGMA/UTMA accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "IRS — Topic 553, Tax on a child's investment income (kiddie tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "Federal Student Aid — How aid is calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+    ],
+    relatedComparisons: ["529-vs-utma", "custodial-roth-ira-vs-utma"],
+    calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
   },
 ];
 

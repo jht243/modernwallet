@@ -679,6 +679,9 @@ export const GUIDES: Guide[] = [
       { question: "How much can you contribute to a Trump Account?", answer: "Families and friends can contribute up to $5,000 per year combined to a child's Trump Account, and that cap is indexed to inflation after 2027. An employer may add up to $2,500 a year, but that amount counts inside the $5,000 cap, not on top of it. The one-time $1,000 federal seed does not count toward the limit. Contributions could not be made before July 4, 2026." },
       { question: "Are Trump Accounts worth it?", answer: "Trump Accounts can be worth it, especially for a child who qualifies for the free $1,000 seed and a long time horizon. The key catch is taxes: withdrawals are taxed as ordinary income under traditional-IRA rules, not tax-free like a Roth IRA or a 529 used for school. That makes them a strong wealth-building tool but not always the best account for every goal. See our full breakdown of whether [Trump Accounts are worth it](/guides/trump-account-worth-it/)." },
       { question: "How is the money in a Trump Account invested?", answer: "The money in a Trump Account must be invested in a low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. There is no menu of individual stocks or risky picks, which keeps fees low and the strategy simple. At a 7% average return, a single $1,000 seed left alone could reach about $3,513 by age 18, while $200 a month could grow to roughly $89,657." },
+      { question: "Can grandparents open or contribute to a Trump Account?", answer: "Grandparents, relatives, and friends can all contribute to a child's Trump Account, though a parent or legal guardian generally opens the account. Everyone's contributions count toward the same $5,000 annual cap, and money a grandparent adds is treated as a gift to the child. This makes a Trump Account an easy way for extended family to chip in on a child's future." },
+      { question: "When can you open a Trump Account?", answer: "You can open and fund a Trump Account starting July 4, 2026, when the program went live. No contributions were allowed before that date. Families who opted in while filing their 2025 taxes may already have an account started, and everyone else can open one at TrumpAccounts.gov or through the official Trump Accounts app." },
+      { question: "Do you report a Trump Account on your taxes?", answer: "You do not report Trump Account growth on your yearly taxes, because the account grows tax-deferred. Contributions are made with after-tax dollars and are not deductible, so they do not lower your tax bill. You make a one-time Trump Account election when you open the account, and withdrawals after the child turns 18 are taxed as ordinary income under traditional-IRA rules." },
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
@@ -717,11 +720,504 @@ export const GUIDES: Guide[] = [
       { question: "Is a Trump Account better than a 529?", answer: "For college savings, a 529 plan is usually better than a Trump Account. A 529 grows tax-free when used for qualified education costs. A Trump Account taxes withdrawals as ordinary income, even for school. The Trump Account can win for a child who may not attend college, because it is a flexible long-term account with a free $1,000 seed. See our full Trump Account vs 529 comparison to weigh both." },
       { question: "What's the catch with a Trump Account?", answer: "The main catches are taxes and access. Withdrawals are taxed as ordinary income, unlike a Roth IRA or a 529 used for school, which can be tax-free. The money is also locked until January 1 of the year your child turns 18, so you cannot use it earlier. On top of that, contributions must go into a U.S.-equity index fund, and the yearly cap is a modest $5,000." },
       { question: "How much can you contribute to a Trump Account?", answer: "You can contribute up to $5,000 per year to a Trump Account. Within that cap, an employer can add up to $2,500. The government's $1,000 seed does not count against the limit. Contributions are made with after-tax dollars and are not tax-deductible. All contributions must be invested in a U.S.-equity index fund, such as one that tracks the S&P 500." },
+      { question: "Can a Trump Account be converted to a Roth IRA?", answer: "A Trump Account is not a Roth IRA, but once the child turns 18 it is treated like a traditional IRA, so the standard rules for converting a traditional IRA to a Roth would generally apply. A Roth conversion means paying ordinary income tax on the amount converted so it can then grow tax-free afterward. Because the IRS is still finalizing Trump Account rules, confirm the current conversion guidance before acting." },
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
       { label: "Congressional Research Service — Trump Accounts (R48910)", url: "https://www.congress.gov/crs-product/R48910" },
       { label: "SEC Investor.gov — Compound Interest Calculator", url: "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" },
+    ],
+  },
+
+
+  // Kids-accounts autocomplete pass (2026-07-04) — 7 guides
+  {
+    slug: "529-leftover-money-options",
+    title: "What Happens to Leftover 529 Money",
+    metaDescription: "Have 529 leftover money? You can change the beneficiary, roll up to $35,000 to a Roth IRA, use it for grad school, or withdraw it. Here are all 5 options.",
+    h1: "What Happens to Leftover 529 Money: Your 5 Options",
+    cardBlurb: "Five ways to use unused 529 funds without wasting them — including the new $35,000 Roth IRA rollover.",
+    intro: "Leftover 529 money is rarely lost — you can change the beneficiary, roll up to $35,000 into a Roth IRA, spend it on more school, or take it out and pay tax plus a 10% penalty on the earnings only. A 529 plan does not expire, and the funds stay yours until you decide. The scariest-sounding path, a non-qualified withdrawal, penalizes only the growth, never your original contributions. And thanks to a 2024 rule, over-saving is far less risky than it once was. Here is how each option works, and how to pick.",
+    sections: [
+      {
+        heading: "Option 1: Change the beneficiary",
+        body: "The simplest fix for unused 529 funds is to change the beneficiary to another family member. The IRS lets you switch the beneficiary tax-free to a wide circle of relatives — a sibling, a future grandchild, a niece, a spouse, or even yourself.\n\nThis keeps the money growing tax-free for education. A common move: a parent rolls a first child's leftover balance to a younger sibling, or holds it for a grandchild years later.\n\nThere is no deadline to make the switch, so an unused account can simply wait. See our [529 qualified expenses guide](/guides/529-qualified-expenses/) for what the funds can then pay for."
+      },
+      {
+        heading: "Option 2: Roll up to $35,000 into a Roth IRA",
+        body: "Under the SECURE 2.0 Act, you can roll up to $35,000 of leftover 529 money into the beneficiary's Roth IRA. This is a lifetime cap, not a yearly one, and it started in 2024.\n\nThree rules matter. The 529 account must be at least 15 years old. Each year's rollover cannot exceed the annual Roth IRA contribution limit ($7,000 in 2025), so a full $35,000 takes several years. And the beneficiary must have earned income for that year.\n\nThis is the option that changes the math on saving. Because leftover funds can seed the child's retirement tax-free, over-saving in a 529 is far less risky than it used to be. Compare the two accounts in our [529 vs Roth IRA breakdown](/compare/529-vs-roth-ira/)."
+      },
+      {
+        heading: "Option 3: Use it for more education",
+        body: "A 529 covers far more than a four-year degree, so leftover money often still has a home. Qualified spending includes grad school, trade school, and registered apprenticeship program costs (fees, books, and required equipment).\n\nYou can also put up to $10,000 lifetime toward the beneficiary's student loans, plus another $10,000 for each of their siblings. This is a one-time-per-person lifetime cap.\n\nSo a child who finishes college with a balance left could later use it for a master's degree or a certification. This flexibility is a key edge over a [custodial UTMA account](/compare/529-vs-utma/), which has no education focus."
+      },
+      {
+        heading: "Option 4: Take a non-qualified withdrawal",
+        body: "If you just want the cash, you can take a non-qualified withdrawal — but only the earnings get taxed and penalized. Your original after-tax contributions always come out tax-free and penalty-free.\n\nOn the earnings portion, you owe ordinary income tax plus a 10% federal penalty. Each withdrawal is split pro-rata between contributions and growth, so you cannot pull out only your principal.\n\nExample: if an account is 60% contributions and 40% earnings, a $10,000 withdrawal treats $4,000 as taxable, penalized earnings. If most of the balance is still your own contributions, the real cost is small."
+      },
+      {
+        heading: "Option 5: The scholarship exception",
+        body: "If your child wins a scholarship, the 10% penalty is waived on a matching amount of leftover 529 money. This is a specific relief the IRS grants so a scholarship does not trap your savings.\n\nYou can withdraw up to the scholarship's value penalty-free. You still owe ordinary income tax on the earnings portion, but you skip the 10% hit.\n\nThe same waiver applies if the beneficiary attends a U.S. military academy or dies or becomes disabled. Keep the school's scholarship documentation with your tax records."
+      },
+      {
+        heading: "How to choose the right option",
+        body: "Rank the options by tax cost. Keeping the money inside a 529 — by changing the beneficiary, spending it on more school, or rolling it to a Roth IRA — preserves the tax break entirely. A non-qualified withdrawal is the only path that triggers tax and a penalty, and even then only on earnings.\n\nA simple decision rule: if anyone in the family will ever need education funds, keep the account and switch the beneficiary. If not, use the Roth rollover first, then withdraw the rest.\n\nDeciding how much to put in up front? Model it with our [529 savings calculator](/529-savings-calculator/), or step back to the [best investment account for kids](/guides/best-investment-account-for-kids/) to compare 529s with other options."
+      }
+    ],
+    tools: [
+      { href: "/529-savings-calculator/", label: "529 savings calculator" }
+    ],
+    faqs: [
+      {
+        question: "What happens to leftover 529 money if my child doesn't go to college?",
+        answer: "Leftover 529 money is not lost if your child skips college — you can change the beneficiary to another relative, roll up to $35,000 into a Roth IRA, or withdraw it and pay income tax plus a 10% penalty on the earnings only. Your original contributions always come out tax-free."
+      },
+      {
+        question: "Can I get my own contributions back from a 529 tax-free?",
+        answer: "Yes. In a non-qualified withdrawal, your after-tax contributions always come out tax-free and penalty-free. Only the earnings portion of each withdrawal is taxed as ordinary income and hit with the 10% penalty, and every withdrawal is split pro-rata between the two."
+      },
+      {
+        question: "How much of a 529 can I roll into a Roth IRA?",
+        answer: "You can roll up to $35,000 of unused 529 funds into the beneficiary's Roth IRA over their lifetime. The 529 account must be at least 15 years old, each year's rollover is capped at the annual Roth limit ($7,000 in 2025), and the beneficiary needs earned income."
+      },
+      {
+        question: "Does a 529 plan expire?",
+        answer: "No. A 529 plan has no expiration date and no age limit for the beneficiary. Unused funds can stay invested and grow tax-free for years, which is why holding the account for a future grandchild or the beneficiary's grad school is often the best move."
+      },
+      {
+        question: "What is the penalty for taking money out of a 529 for non-education?",
+        answer: "A non-qualified 529 withdrawal owes ordinary income tax plus a 10% federal penalty on the earnings portion only, never on your contributions. The penalty is waived up to the amount of any scholarship the beneficiary receives."
+      },
+      {
+        question: "Can I use leftover 529 money for student loans?",
+        answer: "Yes. You can use up to $10,000 lifetime of 529 funds to repay the beneficiary's student loans, plus up to $10,000 for each of their siblings. This is a one-time-per-person lifetime cap, separate from the account's other uses."
+      }
+    ],
+    sources: [
+      { label: "IRS Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" }
+    ],
+  },
+
+  {
+    slug: "529-qualified-expenses",
+    title: "529 Qualified Expenses: What a 529 Can Pay For",
+    metaDescription: "529 qualified expenses include tuition, fees, books, room & board, computers, K-12 tuition up to $20,000/yr, apprenticeships, and up to $10,000 in student loans.",
+    h1: "529 Qualified Expenses: What a 529 Plan Can Pay For Tax-Free",
+    cardBlurb: "A plain-English list of what a 529 can and cannot cover tax-free — plus the room & board rule most families miss.",
+    intro: "529 qualified expenses are the education costs you can pay from a 529 plan with no federal tax on the earnings. These include college tuition, fees, books, required supplies, room & board (if the student is enrolled at least half-time), and computers or internet used for school. A 529 can also cover K-12 tuition up to $20,000 per year in 2026, registered apprenticeship costs, and up to $10,000 lifetime toward student loans. Spend on anything else and the earnings portion gets hit with income tax plus a 10% penalty. This guide shows exactly what counts, what does not, and the one room & board rule most families miss.",
+    sections: [
+      {
+        heading: "The core list: what a 529 pays for tax-free",
+        body: "A 529 plan covers most real costs of higher education. Qualified expenses include tuition and mandatory fees, books, and supplies or equipment required for your courses. If the student is enrolled at least half-time, room & board also qualifies. So do computers, printers, software, and internet access used primarily by the student while enrolled.\n\nThe school must be an eligible institution — one that can take federal student aid. That covers nearly all accredited U.S. colleges, universities, and many vocational schools. Withdrawals for these costs are free from federal income tax, and usually state tax too.\n\nDeciding how much to save toward these costs? Run the numbers with our [529 savings calculator](/529-savings-calculator/), and see how a 529 stacks up against other options in our [best investment account for kids](/guides/best-investment-account-for-kids/) guide."
+      },
+      {
+        heading: "K-12 tuition: up to $20,000 per year in 2026",
+        body: "A 529 can pay for private or religious K-12 school tuition, up to $20,000 per beneficiary per year as of 2026. This is a big jump from the old $10,000 cap. The limit is per student, not per account, so it applies across all 529 plans for that child.\n\nOne catch: at the K-12 level, only tuition clearly qualifies for federal purposes. Room & board, books, and supplies for K-12 are treated differently than at the college level. Some states also do not follow the federal rule and may tax or penalize K-12 withdrawals at the state level.\n\nCheck your own state's treatment before pulling money for private school. A withdrawal that is federally fine can still trigger a state tax bill or clawback of a past state deduction."
+      },
+      {
+        heading: "Room & board — and the off-campus rent trap",
+        body: "Room & board is a qualified 529 expense only if the student is enrolled at least half-time. On-campus housing is simple: the amount you pay the school qualifies.\n\nOff-campus is where families overspend. Rent and food only qualify up to the school's published cost-of-attendance room & board allowance for off-campus students. If your child rents a $2,000/month apartment but the school's allowance is $1,200/month, only $1,200 qualifies. The extra $800 is a non-qualified withdrawal — the earnings portion owes income tax plus the 10% penalty.\n\nThe fix is simple: pull the school's published cost of attendance from the financial-aid office, and keep your 529-paid housing at or under that allowance. Keep receipts."
+      },
+      {
+        heading: "Computers, apprenticeships, and student loans",
+        body: "Computers and technology count. A laptop, related equipment, software, and internet access qualify as long as they are used primarily by the student during enrollment. General-purpose software or a gaming PC does not qualify.\n\nRegistered apprenticeship programs are also covered. Fees, books, supplies, and required equipment for a program registered with the U.S. Department of Labor are qualified 529 expenses.\n\nA 529 can also repay student loans — up to $10,000 lifetime per beneficiary, plus a separate $10,000 lifetime limit for each of the beneficiary's siblings. This is a lifetime cap, not annual. Have leftover money after these options? See your full menu in [529 leftover money options](/guides/529-leftover-money-options/)."
+      },
+      {
+        heading: "What does NOT qualify (and the penalty)",
+        body: "Plenty of college-life costs are not 529 qualified expenses. Transportation and travel — flights home, a car, gas, parking — do not qualify. Neither does student health insurance, most extracurricular fees, sports and club dues, or general living costs beyond the room & board allowance.\n\nWhen you spend 529 money on a non-qualified expense, only the earnings portion is taxed — your original contributions come out tax-free. But those earnings owe ordinary income tax plus a 10% federal penalty. The 10% penalty is waived in specific cases, such as the beneficiary receiving a scholarship (up to the scholarship amount), attending a U.S. military academy, or becoming disabled.\n\nBefore taking a non-qualified withdrawal, weigh alternatives like a Roth IRA rollover or changing the beneficiary. Also compare the 529's rules against a [Coverdell ESA](/compare/529-vs-coverdell-esa/) or a [Trump Account vs a 529](/compare/trump-account-vs-529/), which handle education spending very differently."
+      }
+    ],
+    tools: [
+      { href: "/529-savings-calculator/", label: "529 savings calculator" }
+    ],
+    faqs: [
+      {
+        question: "Can a 529 pay for private school (K-12)?",
+        answer: "Yes. A 529 can pay K-12 tuition at private or religious schools, up to $20,000 per student per year in 2026. Only tuition clearly qualifies at the K-12 level — not room & board or supplies — and some states do not follow the federal rule, so check your state's treatment first."
+      },
+      {
+        question: "Can I use a 529 for student loans?",
+        answer: "Yes, up to $10,000 lifetime per beneficiary toward qualified student loans, plus a separate $10,000 lifetime limit for each of the beneficiary's siblings. This is a lifetime cap, not an annual one. Interest paid this way cannot also be deducted as student-loan interest."
+      },
+      {
+        question: "Does room & board count as a 529 qualified expense?",
+        answer: "Yes, but only if the student is enrolled at least half-time. On-campus housing qualifies up to what you pay the school. Off-campus rent and food qualify only up to the school's published cost-of-attendance room & board allowance."
+      },
+      {
+        question: "How much off-campus rent does a 529 cover?",
+        answer: "A 529 covers off-campus rent and food only up to the school's published cost-of-attendance room & board allowance for off-campus students. If your rent is higher than that allowance, the excess is a non-qualified withdrawal — so overpaying rent isn't fully covered. Get the allowance figure from the financial-aid office."
+      },
+      {
+        question: "Can a 529 pay for a computer?",
+        answer: "Yes. A computer, related equipment, software, and internet access are qualified 529 expenses if they are used primarily by the beneficiary while enrolled. A general-purpose or gaming computer used mainly for entertainment does not qualify."
+      },
+      {
+        question: "What happens if I use 529 money for a non-qualified expense?",
+        answer: "The earnings portion of a non-qualified withdrawal is taxed as ordinary income plus a 10% federal penalty; your contributions always come out tax-free. The 10% penalty is waived in certain cases, such as a scholarship (up to its amount), a service-academy appointment, disability, or death of the beneficiary."
+      }
+    ],
+    sources: [
+      { label: "IRS — Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "SEC Investor.gov — An Introduction to 529 Plans (Investor Bulletin)", url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/introduction-529-plans-investor-bulletin" },
+      { label: "IRS — Publication 970, Tax Benefits for Education", url: "https://www.irs.gov/publications/p970" }
+    ],
+  },
+
+  {
+    slug: "best-investment-account-for-kids",
+    title: "Best Investment Account for Kids (2026 Guide)",
+    metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and learn to layer them.",
+    h1: "The Best Investment Account for Kids: How to Choose (and Layer) Them",
+    cardBlurb: "A decision framework across every kid account type — Trump Account, 529, custodial brokerage, custodial Roth IRA — with a clear which-to-pick matrix.",
+    intro: "The best investment account for kids is usually not one account — it is a layered stack: the free $1,000 Trump Account seed everyone eligible should claim, a 529 for college, and a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so picking only one leaves money on the table. This guide compares all six main kid account types side by side, then gives you a plain decision rule for which to open first. The non-obvious takeaway: most families should stack accounts, not choose between them.",
+    sections: [
+      {
+        heading: "The six kid account types, at a glance",
+        body: "There is no single \"best\" account because each one is built for a different job. A [529 plan](/guides/529-qualified-expenses/) is a tax-free college account. A [custodial UTMA brokerage](/guides/utma-custodial-account-explained/) is a flexible, use-it-for-anything account. A [custodial Roth IRA](/guides/custodial-roth-ira-for-kids/) is a tax-free retirement head start for a working teen. The new [Trump Account](/guides/trump-accounts/) is a federal, tax-deferred account with a free seed. A Coverdell ESA is a small education account. A high-yield savings account (HYSA) is safe cash for short-term needs.\n\nThe right pick depends on your goal, your timeline, and whether the child has earned income. Match the account to the job, and you will almost always end up using more than one."
+      },
+      {
+        heading: "Start free: claim the Trump Account seed",
+        body: "If your child is a U.S. citizen born between 2025 and 2028 and has a Social Security number, the federal government will deposit a $1,000 seed into a Trump Account — free money you should not leave unclaimed. The account grows tax-deferred and must be invested in an S&P 500 or U.S.-equity index fund. It is locked until January 1 of the year the child turns 18, then behaves like a traditional IRA (withdrawals are taxed as ordinary income).\n\nThe growth is real even if you never add a dollar. Our engine puts the $1,000 seed alone at about $3,513 by age 18 at a 7% return. Add $200 a month and it reaches roughly $89,657. Contribute the $5,000 annual max from birth and it grows to about $182,980. Because the seed is free and requires no ongoing contributions, claiming it is the clearest first move for eligible families. See how it compares in [Trump Account vs 529](/compare/trump-account-vs-529/)."
+      },
+      {
+        heading: "For college: the 529 plan",
+        body: "If your primary goal is paying for school, a 529 plan is usually the strongest account. Contributions are after-tax, but growth and withdrawals are completely tax-free when used for qualified education — tuition, fees, books, and room & board — plus up to $20,000 a year in K-12 tuition and up to $10,000 lifetime toward student loans. Most states also add a state income-tax deduction or credit.\n\nA 529 also helps with financial aid: a parent-owned 529 is treated as a parental asset on the FAFSA, assessed at no more than 5.64% — a lighter hit than a custodial account. Our 529 calculator shows $300 a month from birth growing to about $116,206 by age 18 at a 6% return. The main risk is flexibility: non-qualified withdrawals owe income tax plus a 10% penalty on earnings, though SECURE 2.0 now lets up to $35,000 of unused funds roll into the beneficiary's Roth IRA. Weigh it against a plain brokerage in [529 vs UTMA](/compare/529-vs-utma/)."
+      },
+      {
+        heading: "For flexibility: a custodial (UTMA) brokerage",
+        body: "If you want to invest for a goal that is not college — a first car, a business, a down payment — a custodial UTMA brokerage account gives you the widest freedom. There is no contribution cap and no restriction on what you invest in. The catch is that the money is irrevocably the child's, and control transfers to them at the age of majority (18 to 25 depending on your state).\n\nTaxes follow the kiddie-tax rules: in 2025 the first $1,350 of unearned income is tax-free, the next $1,350 is taxed at the child's rate, and anything above $2,700 is taxed at the parents' marginal rate. On the FAFSA, a custodial account is the student's asset, assessed at 20% — a bigger aid hit than a 529. Learn the mechanics in [the UTMA custodial account explained](/guides/utma-custodial-account-explained/)."
+      },
+      {
+        heading: "For a working teen: a custodial Roth IRA",
+        body: "If your child has earned income from a real job or self-employment, a custodial Roth IRA is one of the most powerful accounts you can open for them. Contributions are limited to the lesser of the child's earned income or the annual IRA limit ($7,000 in 2025). Growth and qualified withdrawals are tax-free, and contributions (not earnings) can be pulled out anytime without tax or penalty.\n\nThe hard limit is earned income: a newborn with no wages cannot fund one, so this account only unlocks once a teen starts working. That makes it a later layer, not a starter account. Compare it against the federal option in [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/), and against college saving in [custodial Roth IRA vs 529](/compare/custodial-roth-ira-vs-529/)."
+      },
+      {
+        heading: "Which to pick: the decision rule",
+        body: "Do not agonize over a single choice — follow this order and layer as you go:\n\n1. Eligible for the Trump Account seed? Claim the free $1,000 first. It costs nothing.\n\n2. Saving mainly for college? Open a 529 next for its tax-free growth and lighter FAFSA treatment.\n\n3. Want flexibility for non-college goals? Add a custodial UTMA brokerage — but remember the child controls it as an adult.\n\n4. Does your teen have a job? Open a custodial Roth IRA and match part of their earnings for a tax-free retirement head start.\n\n5. Need money within a year or two? Keep it in an HYSA, not the market.\n\nA Coverdell ESA can supplement education savings but caps at $2,000 a year, so most families choose a 529 instead. The insight worth repeating: the strongest plan for most households is a stack — the free Trump seed, a 529 for college, and a custodial Roth once a teen works — not a single \"best\" account."
+      },
+      {
+        heading: "How to start today",
+        body: "Start with the account that fits your child's situation right now. If they were born 2025–2028, claim the Trump Account seed through the IRS enrollment process — it takes about 10 minutes and needs only their SSN. For college, open a 529 with your state's plan (to capture any state tax break) or a low-cost national plan, then set up an automatic monthly contribution.\n\nRun the numbers before you commit a dollar. Use the [529 savings calculator](/529-savings-calculator/) to size a college target, and the [Trump Account calculator](/trump-account/) to see how the seed plus contributions compound to age 18. Once a teen earns income, add the custodial Roth IRA. Automating even small monthly deposits into the right layered accounts does more than any one perfect account choice."
+      }
+    ],
+    tools: [
+      { href: "/529-savings-calculator/", label: "529 savings calculator" },
+      { href: "/trump-account/", label: "Trump Account calculator" }
+    ],
+    faqs: [
+      {
+        question: "What is the best investment account for kids?",
+        answer: "The best investment account for kids depends on your goal: a 529 for college, a custodial UTMA brokerage for flexibility, and a custodial Roth IRA for a working teen. Most families should layer accounts rather than pick one — and claim the free $1,000 Trump Account seed first if the child is eligible."
+      },
+      {
+        question: "Should I open just one account or several?",
+        answer: "Most families are better off layering accounts. Claim the free Trump Account seed, add a 529 for college, and open a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so stacking them beats forcing every dollar into one."
+      },
+      {
+        question: "Is a 529 or a custodial account better for college?",
+        answer: "A 529 is usually better for college. Its growth and withdrawals are tax-free for qualified education, and a parent-owned 529 is assessed at no more than 5.64% on the FAFSA. A custodial account is more flexible but is the student's asset, assessed at 20% — a larger financial-aid hit. See [529 vs UTMA](/compare/529-vs-utma/)."
+      },
+      {
+        question: "Can my child have both a 529 and a custodial Roth IRA?",
+        answer: "Yes. A child can hold both, and many should. Use the 529 for tax-free college savings and the custodial Roth IRA for tax-free retirement growth once they have earned income. SECURE 2.0 even lets up to $35,000 of unused 529 funds roll into the beneficiary's Roth IRA. Compare them in [custodial Roth IRA vs 529](/compare/custodial-roth-ira-vs-529/)."
+      },
+      {
+        question: "How much can the free Trump Account seed grow?",
+        answer: "The $1,000 Trump Account seed can grow to about $3,513 by age 18 with no added contributions at a 7% return. Adding $200 a month raises it to roughly $89,657, and contributing the $5,000 annual maximum from birth grows it to about $182,980. Read more in the [Trump Accounts guide](/guides/trump-accounts/)."
+      },
+      {
+        question: "What account is best if my teen has a job?",
+        answer: "A custodial Roth IRA is often the best account for a teen with earned income. Contributions are capped at the lesser of their earnings or $7,000 (2025), and qualified growth is tax-free. Because it requires documented earned income, it only becomes available once they start working. See [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/)."
+      }
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Topic 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Topic 553, Tax on a Child's Investment Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" }
+    ],
+  },
+
+  {
+    slug: "custodial-account-taxes-kiddie-tax",
+    title: "Custodial Account Taxes: How the Kiddie Tax Works",
+    metaDescription: "How custodial account taxes work and how the kiddie tax hits a child's unearned income in 2025 — brackets, filing rules, and planning tips.",
+    h1: "Custodial Account Taxes and the Kiddie Tax Explained",
+    cardBlurb: "Who pays tax on a custodial account, the 2025 kiddie-tax brackets, and how to keep a child's investment income under the threshold.",
+    intro: "Custodial account taxes fall on the child, not the parent, because the assets legally belong to the minor — but the kiddie tax can push some of that income up to the parents' marginal rate. A custodial account (UTMA or UGMA) is taxed each year on its investment income, and the kiddie tax sets how much is tax-free, how much is taxed at the child's low rate, and how much is taxed at the parents' higher rate. In 2025 the first $1,350 of unearned income is tax-free and the next $1,350 is taxed at the child's rate. Everything above $2,700 is taxed at the parents' marginal rate. This guide explains who files, the brackets, earned vs unearned income, and how to keep the bill small.",
+    sections: [
+      {
+        heading: "Who pays tax on a custodial account?",
+        body: "The child pays the tax on a custodial account, because the money is irrevocably theirs. When you open a UTMA or UGMA account, the assets legally belong to the minor even though an adult custodian manages them. That is different from a parent-owned brokerage account, where the parent reports the income.\n\nBecause the account is the child's, the income is reported under the child's Social Security number. But a low child's tax rate does not automatically apply to all of it. The [kiddie tax](https://www.irs.gov/taxtopics/tc553) exists to stop families from shifting large investment income to a child to dodge higher rates. For the basics of how these accounts work, see our [UTMA custodial account guide](/guides/utma-custodial-account-explained/)."
+      },
+      {
+        heading: "The 2025 kiddie-tax brackets",
+        body: "The kiddie tax splits a child's unearned income into three tiers. For 2025, the tiers are:\n\n- **First $1,350** of unearned income: tax-free (covered by the standard deduction).\n- **Next $1,350** (from $1,350 to $2,700): taxed at the child's own rate, which is usually 10%.\n- **Above $2,700**: taxed at the parents' marginal tax rate.\n\nThat top tier is the surprise for many families. Once a custodial account throws off more than $2,700 in a year, the excess is taxed as if the parents earned it — often 22%, 24%, or higher. So a well-funded, growth-heavy custodial account can create a yearly tax bill at the parents' rate, not the child's."
+      },
+      {
+        heading: "Earned vs unearned income — why it matters",
+        body: "The kiddie tax only applies to unearned income. Unearned income is money the child did not work for: interest, dividends, and capital gains from investments. A custodial account produces exactly this kind of income, which is why it is exposed to the kiddie tax.\n\nEarned income — wages from a job or self-employment — is not subject to the kiddie tax. It is taxed at the child's own rate and gets its own standard deduction. This distinction is why a child with a real job can also fund a [custodial Roth IRA](/guides/best-investment-account-for-kids/), which needs earned income, while a custodial brokerage account never counts as earned income."
+      },
+      {
+        heading: "When does a child have to file a tax return?",
+        body: "A child generally must file their own return once unearned income tops $1,350 in 2025 (or when total income crosses the filing threshold). If the only income is investment income and it stays under that amount, no return is usually needed.\n\nWhen a return is required, unearned income above the thresholds is figured on [IRS Form 8615](https://www.irs.gov/taxtopics/tc553), which applies the parents' rate to the top tier. In some cases parents can instead report a child's interest and dividends on their own return using Form 8814 — but that can raise the parents' income, so run the numbers first. When in doubt, check the exact filing rules with a tax professional or the IRS."
+      },
+      {
+        heading: "How to keep the tax bill small",
+        body: "The simplest rule: keep the account's annual unearned income under the kiddie-tax threshold. If yearly interest, dividends, and realized gains stay below about $1,350, the income is effectively tax-free.\n\nPractical moves:\n\n- **Choose tax-efficient funds.** Broad index funds and ETFs throw off less taxable income than actively managed funds that trade often and distribute gains.\n- **Favor growth over payouts.** Funds that reinvest and pay small dividends defer taxes until you sell.\n- **Keep growth-heavy assets modest** inside a custodial account, or you invite a yearly bill at the parents' rate.\n- **Mind capital gains timing.** Selling appreciated holdings all at once can spike unearned income past $2,700.\n\nIf your goal is college and the tax hit worries you, a 529 grows tax-free for education — see [529 vs UTMA](/compare/529-vs-utma/) to compare the tradeoffs, and our [best investment account for kids](/guides/best-investment-account-for-kids/) pillar for the full picture."
+      },
+      {
+        heading: "A worked example",
+        body: "Say a custodial account holds $60,000 and earns $3,000 of dividends and interest in 2025. The first $1,350 is tax-free. The next $1,350 is taxed at the child's 10% rate ($135). The final $300 — the amount above $2,700 — is taxed at the parents' marginal rate; at 24% that is $72.\n\nThe same $3,000 in a smaller, more tax-efficient account might have stayed under $1,350 and owed nothing. That gap is why fund choice and account size matter. Use our [investment calculator](/investing/) to project how much income a given balance is likely to generate before you fund the account."
+      }
+    ],
+    tools: [
+      { href: "/investing/", label: "Investment calculator" }
+    ],
+    faqs: [
+      {
+        question: "Who pays taxes on a custodial account?",
+        answer: "The child pays the taxes on a custodial account, because the assets legally belong to the minor. Income is reported under the child's Social Security number, but the kiddie tax can push part of it up to the parents' marginal rate."
+      },
+      {
+        question: "What is the kiddie tax in 2025?",
+        answer: "In 2025 the kiddie tax makes the first $1,350 of a child's unearned income tax-free, taxes the next $1,350 at the child's rate, and taxes anything above $2,700 at the parents' marginal rate. It applies to investment income like interest, dividends, and capital gains."
+      },
+      {
+        question: "Does the kiddie tax apply to a child's job income?",
+        answer: "No. The kiddie tax only applies to unearned income such as interest, dividends, and capital gains. Earned income from a job or self-employment is taxed at the child's own rate and is not subject to the kiddie tax."
+      },
+      {
+        question: "When does a child have to file a tax return for a custodial account?",
+        answer: "A child generally must file a return once unearned income tops $1,350 in 2025 (or when total income crosses the filing threshold). Income above the kiddie-tax tiers is figured on IRS Form 8615."
+      },
+      {
+        question: "How can I lower custodial account taxes?",
+        answer: "Keep the account's yearly unearned income under about $1,350 and use tax-efficient investments. Broad index funds and ETFs that pay small dividends and reinvest growth generate less taxable income than actively managed funds that distribute gains."
+      },
+      {
+        question: "Is a custodial account better than a 529 for taxes?",
+        answer: "For education, a 529 usually wins on taxes because its growth and qualified withdrawals are tax-free, while a custodial account is taxed yearly under the kiddie tax. A custodial account offers more spending flexibility. Compare them in our 529 vs UTMA guide."
+      }
+    ],
+    sources: [
+      { label: "IRS Topic 553 — Kiddie Tax (Tax on a Child's Investment and Other Unearned Income)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "SEC Investor.gov — UGMA/UTMA Accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "IRS Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" }
+    ],
+  },
+
+  {
+    slug: "custodial-roth-ira-for-kids",
+    title: "Custodial Roth IRA for Kids: The Complete Guide",
+    metaDescription: "A custodial Roth IRA lets a working child grow money tax-free. Learn the earned-income rule, 2025 limits, and how to open one.",
+    h1: "Custodial Roth IRA for Kids: How It Works",
+    cardBlurb: "A tax-free retirement account for kids who earn income — plus the one rule that decides whether they qualify.",
+    intro: "A custodial Roth IRA for kids is a retirement account an adult opens and manages for a minor who has earned income. The child owns the account; the adult controls it until the child reaches the age of majority. Money grows tax-free, and qualified withdrawals in retirement are tax-free too. But there is one hard gate: the child must have earned income to contribute. No earned income means no funding — full stop.",
+    sections: [
+      {
+        heading: "What a custodial Roth IRA is",
+        body: "A custodial Roth IRA is a normal Roth IRA titled for a minor, with an adult acting as custodian. The adult opens it, funds it, and picks the investments. The child is the legal owner.\n\nControl transfers to the child when they reach the age of majority in their state, usually 18 or 21. After that, the account is theirs to manage.\n\nBecause it is a Roth, contributions go in after tax. There is no upfront deduction. The payoff comes later: decades of tax-free growth. For a young saver, that runway is the whole point. See how a Roth stacks up against other options in our [best investment account for kids guide](/guides/best-investment-account-for-kids/)."
+      },
+      {
+        heading: "The earned-income rule (the key gate)",
+        body: "This is the rule that decides everything. A child can only contribute if they have earned income for the year. A newborn or a kid with no job cannot have a funded Roth IRA — there is nothing to base a contribution on.\n\nThe contribution limit is the lesser of the child's earned income or the annual IRA limit. For 2025, that annual limit is $7,000. So a teen who earns $3,000 can contribute up to $3,000, not $7,000. A teen who earns $9,000 is still capped at $7,000.\n\nThe IRS is clear: yearly contributions to all of your IRAs cannot be more than $7,000, or, \"if less, your taxable compensation for the year.\" Earned income is the ceiling."
+      },
+      {
+        heading: "What counts as earned income (and documenting it)",
+        body: "Earned income means money paid for work. A W-2 job — a summer job, retail, lifeguarding, a paper route — clearly counts. Self-employment counts too: babysitting, lawn mowing, tutoring, dog walking, or reselling.\n\nWhat does not count: allowance, birthday cash, gifts, or investment income. Those are not earned.\n\nHere is the non-obvious part. You must be able to prove the income. If your child does self-employment work, keep records — dates, who paid, how much, and for what. A simple log or invoices is enough. If the IRS ever asks how a Roth got funded, undocumented \"chore\" money will not hold up. No documented earned income, no valid contribution."
+      },
+      {
+        heading: "How to open a custodial Roth IRA",
+        body: "The process is short. Pick a brokerage that offers custodial Roth IRAs — many major low-cost brokers do. Open the account under the adult's name as custodian, with the child as beneficial owner.\n\nYou will need the child's Social Security number and basic details, plus your own information as custodian.\n\nThen fund it, up to the child's earned income for the year (or $7,000 for 2025, whichever is less). The money does not have to be the child's exact paycheck — a parent can gift the contribution — but the child must have earned at least that much. Finally, invest it. A broad, low-cost index fund is a common, simple choice. Model the long-term math with our [investment calculator](/investing/)."
+      },
+      {
+        heading: "Tax-free growth and flexible withdrawals",
+        body: "The Roth advantage is tax-free growth. Contributions are after-tax, so qualified withdrawals in retirement come out completely tax-free — including decades of earnings.\n\nThere is also built-in flexibility. Contributions (not earnings) can be withdrawn anytime, tax- and penalty-free. If your teen puts in money and later needs it, the amount they contributed is accessible.\n\nOne caution: pulling contributions out early erases the tax-free growth that money would have earned. The account works best when the money stays invested for the long haul. For a comparison with education-focused accounts, see [custodial Roth IRA vs 529](/compare/custodial-roth-ira-vs-529/)."
+      },
+      {
+        heading: "Why it is a powerful retirement head start",
+        body: "Time is the reason. A dollar invested at 15 has 50 years to compound before a normal retirement age. That is a head start most adults never get.\n\nStarting young also builds the habit. A teen who watches their own account grow learns how investing works before they have real bills.\n\nA custodial Roth is not the only kids' account, and it is not always the right one — it depends on whether the child earns income. Compare it with a flexible custodial account in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/), and with the new federal option in [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/)."
+      }
+    ],
+    tools: [ { href: "/investing/", label: "Investment calculator" } ],
+    faqs: [
+      {
+        question: "Can I open a custodial Roth IRA for a child with no income?",
+        answer: "No. A custodial Roth IRA can only be funded if the child has earned income for the year. Without earned income, there is no allowable contribution, so a newborn or a child with no job cannot have a funded Roth IRA."
+      },
+      {
+        question: "What is the contribution limit for a custodial Roth IRA?",
+        answer: "The limit is the lesser of the child's earned income or the annual IRA limit, which is $7,000 for 2025. A child who earns $2,500 can contribute up to $2,500; a child who earns more than $7,000 is still capped at $7,000."
+      },
+      {
+        question: "What counts as earned income for a child's Roth IRA?",
+        answer: "Earned income is money paid for work, such as a W-2 job or self-employment like babysitting, lawn mowing, or tutoring. Allowance, gifts, and investment income do not count, because they are not earned."
+      },
+      {
+        question: "Do I need to document my child's earned income?",
+        answer: "Yes. You should keep records of the income used to justify a contribution, especially for self-employment. A simple log of dates, amounts, and who paid — or invoices — protects the contribution if the IRS ever asks how the account was funded."
+      },
+      {
+        question: "Can my child withdraw money from a custodial Roth IRA?",
+        answer: "Contributions can be withdrawn anytime, tax- and penalty-free, but earnings generally cannot be withdrawn tax-free until retirement age and other conditions are met. Pulling money out early sacrifices future tax-free growth."
+      },
+      {
+        question: "Who controls a custodial Roth IRA?",
+        answer: "The adult custodian controls the account until the child reaches the age of majority, usually 18 or 21 depending on the state. After that, the child takes full control of the account they own."
+      }
+    ],
+    sources: [
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
+      { label: "SEC Investor.gov — UGMA/UTMA and custodial accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" }
+    ],
+  },
+
+  {
+    slug: "how-to-open-a-custodial-brokerage-account-for-kids",
+    title: "How to Open a Custodial Brokerage Account for Kids",
+    metaDescription: "How to open a custodial brokerage account for kids: what a UTMA/UGMA is, what you need, choosing a broker, funding, and the kiddie tax explained.",
+    h1: "How to Open a Custodial Brokerage Account for Kids",
+    cardBlurb: "A step-by-step guide to opening, funding, and managing a UTMA/UGMA custodial brokerage account for your child.",
+    intro: "To open a custodial brokerage account for kids, an adult opens a UTMA or UGMA account in the child's name at a broker, provides the child's Social Security number and their own ID, and funds it. The account is legally the child's, but you manage the investments as custodian. Most major brokers let you open one online in about 15 minutes with no minimum and no account fees. The catch worth knowing up front: your child takes full control at the age of majority, and you cannot take the money back. This guide walks through each step, from what you need to the [kiddie tax](/guides/custodial-account-taxes-kiddie-tax/) at the end.",
+    sections: [
+      {
+        heading: "What a custodial (UTMA/UGMA) brokerage account is",
+        body: "A custodial brokerage account is an investment account an adult opens and manages for a minor. The two types are UGMA (Uniform Gifts to Minors Act) and UTMA (Uniform Transfers to Minors Act). You act as the custodian and pick the investments, but the assets legally belong to the child.\n\nThe key word is irrevocable. Once you put money in, it is a gift to the child and cannot be taken back or moved to another kid. That is different from a 529 or a parent-owned brokerage account, where you keep control.\n\nUGMA holds financial assets only, such as cash, stocks, bonds, and funds. UTMA is broader and can also hold property like real estate. UTMA is the newer, more flexible statute and is available in nearly every state. For most families opening a brokerage account, the two work the same way. See our [UTMA custodial account explained](/guides/utma-custodial-account-explained/) guide for the full breakdown."
+      },
+      {
+        heading: "What you need before you start",
+        body: "You can gather everything in a few minutes. To open the account you will need:\n\n- The child's full legal name, date of birth, and Social Security number.\n- Your own government-issued ID and Social Security number, plus your address.\n- A funding source, usually a linked bank account for an electronic transfer.\n\nThe child's SSN matters because the account is reported under the child's tax ID, not yours. That is what triggers the kiddie tax rules on any investment gains, covered below.\n\nYou will also choose the age of majority for your state during signup, though this is usually fixed by law (often 18 or 21). Have your bank routing and account numbers ready so you can fund the account right away."
+      },
+      {
+        heading: "Choosing a broker",
+        body: "Most large brokers offer custodial accounts with no account fees, no minimum to open, and commission-free trades on stocks and ETFs. Firms like Fidelity, Schwab, and Vanguard all fit this description, and many banks and robo-advisors offer them too.\n\nWhen you compare, look at four things:\n\n- Cost: confirm zero account fees and commission-free ETF trades.\n- Minimums: many require $0 to open.\n- Investment choice: broad access to index funds and ETFs matters more than fancy tools.\n- Fractional shares: helpful when you are investing small amounts each month.\n\nAny reputable, low-cost broker that offers custodial UTMA/UGMA accounts will do the job. Do not overthink the brand; the account type and low fees matter far more than the logo."
+      },
+      {
+        heading: "Opening the account: step by step",
+        body: "The online process is short. Here is the typical flow:\n\n1. On the broker's site, choose to open a custodial or UTMA/UGMA account.\n2. Enter your details as the custodian, then the child's details, including their SSN.\n3. Select your state's age of majority if prompted.\n4. Review and agree to the custodial agreement.\n5. Link your bank account to fund it.\n\nApproval is usually instant or within a business day. Once open, you buy investments inside the account the same way you would in your own brokerage account. Everything you buy is held for the child."
+      },
+      {
+        heading: "Funding the account and the gift-tax note",
+        body: "You fund a custodial account by transferring cash from your bank, then investing it. There is no annual contribution limit on the account itself. Anyone, such as grandparents or relatives, can contribute too.\n\nGifts do interact with the federal gift tax, though most families never owe it. For 2026 you can give up to $19,000 per child per year without any gift-tax paperwork, per the [IRS gift tax rules](https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes). A married couple can give up to $38,000 combined to one child. Gifts above the annual exclusion only reduce your lifetime exemption; they rarely mean an actual tax bill.\n\nSet up an automatic monthly transfer if you can. Small, steady contributions add up over many years of growth."
+      },
+      {
+        heading: "What to invest in",
+        body: "Because a custodial account is for a long time horizon, most families choose broad, low-cost investments. A total-market or S&P 500 index fund or ETF gives you wide diversification in a single holding.\n\nThe main tradeoff is taxes. Unlike a 529 or Roth IRA, gains here are taxable each year, so funds that spin off less taxable income (like broad index ETFs) are efficient choices.\n\nAvoid frequent trading and individual-stock bets with a child's money. A simple index fund held for a decade or more usually beats a complicated portfolio. Try our [investment calculator](/investing/) to see how monthly contributions could grow over time."
+      },
+      {
+        heading: "Taxes (kiddie tax) and the age-of-majority handover",
+        body: "A custodial account's investment gains are taxed under the kiddie tax, not at your rate for most of it. For 2025, the first $1,350 of a child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and unearned income above $2,700 is taxed at the parents' marginal rate, per [IRS Topic 553](https://www.irs.gov/taxtopics/tc553). Most small accounts stay under these thresholds.\n\nThe bigger planning point is the handover. At the age of majority (18 to 21, depending on your state), the account becomes the child's outright. They can spend it on anything, and you lose all control. Plan for this: talk with your child about the money before that age, and do not assume it will go toward college.\n\nOne more tradeoff: for financial aid, a custodial account counts as the student's asset and is assessed at up to 20% on the FAFSA, a bigger aid hit than a parent-owned account. If college aid is your priority, weigh a [529 vs UTMA](/compare/529-vs-utma/). To compare every option side by side, start with our pillar guide on the [best investment account for kids](/guides/best-investment-account-for-kids/)."
+      }
+    ],
+    tools: [
+      { href: "/investing/", label: "Investment calculator" }
+    ],
+    faqs: [
+      {
+        question: "How do I open a custodial brokerage account for my child?",
+        answer: "You open a custodial brokerage account by choosing a UTMA/UGMA account at a broker, entering your details and the child's Social Security number, agreeing to the custodial agreement, and linking a bank account to fund it. Most brokers finish approval online in minutes with no minimum."
+      },
+      {
+        question: "What do I need to open a custodial account?",
+        answer: "You need the child's full name, date of birth, and Social Security number, plus your own ID, Social Security number, and address, and a funding source such as a linked bank account. The child's SSN is required because the account is reported under their tax ID."
+      },
+      {
+        question: "Can I take the money back out of a custodial account?",
+        answer: "No, you cannot take the money back. A custodial account is an irrevocable gift to the child, so the assets legally belong to them. As custodian you can spend funds for the child's benefit, but you cannot reclaim the money or move it to another child."
+      },
+      {
+        question: "When does my child get control of the account?",
+        answer: "Your child gains full control at the age of majority, which is 18 to 21 depending on your state and the account's UTMA terms. At that point the account becomes theirs outright and they can use the money however they choose."
+      },
+      {
+        question: "How is a custodial brokerage account taxed?",
+        answer: "A custodial account is taxed under the kiddie tax on the child's unearned income. For 2025 the first $1,350 is tax-free, the next $1,350 is taxed at the child's rate, and income above $2,700 is taxed at the parents' marginal rate. See our [kiddie tax guide](/guides/custodial-account-taxes-kiddie-tax/) for details."
+      },
+      {
+        question: "Is a custodial account better than a 529 for college?",
+        answer: "It depends on your goal. A custodial account offers full investment flexibility and any use of the money, but a 529 gives tax-free growth for education and a smaller financial-aid hit. Compare them in our [529 vs UTMA](/compare/529-vs-utma/) breakdown."
+      }
+    ],
+    sources: [
+      { label: "IRS — Tax Topic 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "IRS — Frequently Asked Questions on Gift Taxes", url: "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes" },
+      { label: "SEC Investor.gov — UGMA/UTMA Accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" }
+    ],
+  },
+
+  {
+    slug: "utma-custodial-account-explained",
+    title: "UTMA Custodial Account Explained: Pros & Cons",
+    metaDescription: "A UTMA account lets an adult invest for a child until they come of age. See how custodial accounts work, the real pros and cons, and who they fit.",
+    h1: "UTMA Custodial Account Explained: How It Works, Pros & Cons",
+    cardBlurb: "A plain-English guide to UTMA custodial accounts — how they work, the tradeoffs, and who they suit.",
+    intro: "A UTMA account is a custodial investment account an adult opens and manages for a child until the child legally owns it at the age of majority. UTMA stands for the Uniform Transfers to Minors Act. There is no contribution cap and you can invest in almost anything. But the money is the child's for good, and they take full control between 18 and 21 in most states. This guide covers how it works, the honest pros and cons, and who a custodial account fits.",
+    sections: [
+      {
+        heading: "What a UTMA custodial account is",
+        body: "A UTMA custodial account holds investments that legally belong to a child, managed by an adult until the child comes of age. The adult is the \"custodian\" — usually a parent — and the child is the beneficiary.\n\nYou open one at almost any brokerage. Money and investments you put in become the child's property right away. The custodian makes the buy and sell decisions, but only for the child's benefit.\n\nUTMA is the newer, broader version of these accounts. It can hold cash, stocks, funds, and even real estate or other property. It is available in nearly every state. For more on account types, see our [best investment account for kids](/guides/best-investment-account-for-kids/) guide."
+      },
+      {
+        heading: "How a UTMA account works, step by step",
+        body: "The custodian opens the account, funds it, and invests on the child's behalf. There is no limit on how much you can add, though gifts above the annual gift-tax exclusion may need reporting.\n\nWhile the child is a minor, the custodian controls the account. They can use the money for the child's benefit — but not for their own normal parenting costs.\n\nControl transfers to the child at the age of majority. This is 18, 21, or up to 25 depending on your state and the account terms. On that date, the account becomes fully theirs to do with as they wish. See [how to open a custodial brokerage account for kids](/guides/how-to-open-a-custodial-brokerage-account-for-kids/) for the setup steps."
+      },
+      {
+        heading: "The pros of a UTMA account",
+        body: "The biggest draw is flexibility. Unlike a 529 plan, the money is not locked to education — it can pay for a car, a first apartment, a business, or anything else.\n\nThere is no contribution cap, so you can fund it as much as you like. Investment choice is broad: index funds, individual stocks, bonds, and more.\n\nSetup is simple. There are no income limits and no earned-income rule, so you can open one for a newborn. Growth over 18 years can be meaningful — try our [investment calculator](/investing/) to model it."
+      },
+      {
+        heading: "The cons families underestimate",
+        body: "The account is irrevocable. Once you gift money in, you cannot take it back or change the beneficiary. That is very different from a 529 plan, where you keep control.\n\nInvestment income can trigger the kiddie tax. A child's unearned income above a yearly threshold is taxed at the parents' higher rate. We cover the details in our [custodial account taxes and kiddie tax](/guides/custodial-account-taxes-kiddie-tax/) guide.\n\nCustodial accounts also carry the heaviest college-aid penalty. On the FAFSA, the account counts as the student's own asset and is assessed at up to 20% — a bigger aid hit than a parent-owned 529, which is capped near 5.64%."
+      },
+      {
+        heading: "The real risk: the child gets the money with no strings",
+        body: "This is the tradeoff most families overlook. At the age of majority — often 18 or 21 — the child gets full, unrestricted control of the entire balance.\n\nThey can spend it on anything. You cannot legally require them to use it for college, a home, or anything responsible. For a small account meant to teach investing, this is fine and even valuable.\n\nFor a large balance, it is a genuine risk. A teenager suddenly owning tens of thousands of dollars is a real scenario. If keeping control matters to you, a parent-owned 529 or taxable brokerage may fit better — compare [529 vs UTMA](/compare/529-vs-utma/)."
+      },
+      {
+        heading: "UTMA vs UGMA in brief",
+        body: "UTMA and UGMA are close cousins, both custodial and both taxed under the kiddie tax. The main difference is what they can hold and when control transfers.\n\nUGMA (Uniform Gifts to Minors Act) holds only financial assets — cash, stocks, bonds, and funds. It is accepted in all states. UTMA is broader, can also hold real estate and other property, and often allows a later transfer age.\n\nUTMA is the newer, more flexible statute and is what most brokerages offer today. For a full breakdown, see [UTMA vs UGMA](/compare/utma-vs-ugma/)."
+      },
+      {
+        heading: "Who a UTMA account is best for",
+        body: "A UTMA account fits families who want flexible, no-strings savings for a child and are comfortable handing over control later. It shines as a hands-on way to teach a teen about investing with real money.\n\nIt suits gifts you are happy to make permanent, and amounts modest enough that full control at 18 to 21 is not a worry. It is also useful when the goal is not strictly college.\n\nIf education is the main goal, a 529 usually wins on taxes and financial aid — see [529 vs UTMA](/compare/529-vs-utma/). To weigh all the options side by side, start with our [best investment account for kids](/guides/best-investment-account-for-kids/) hub."
+      }
+    ],
+    tools: [
+      { href: "/investing/", label: "Investment calculator" }
+    ],
+    faqs: [
+      {
+        question: "Is a UTMA account a good idea?",
+        answer: "A UTMA account is a good idea when you want flexible savings for a child and accept that they will control the money as an adult. It is great for teaching investing and for goals beyond college. It is riskier for large sums, because the child gets full control at 18 to 21 with no strings attached."
+      },
+      {
+        question: "What are the main pros and cons of a UTMA account?",
+        answer: "The main pros are no contribution cap, broad investment choice, and simple setup with no income limits. The main cons are that the gift is irrevocable, investment income can trigger the kiddie tax, the child takes full control at the age of majority, and it carries the heaviest FAFSA hit at up to 20% of the balance."
+      },
+      {
+        question: "At what age does the child get the money in a UTMA account?",
+        answer: "The child gains full control of a UTMA account at the age of majority, which is 18, 21, or up to 25 depending on the state and account terms. On that date the balance becomes entirely theirs to spend however they choose. You cannot legally restrict how they use it."
+      },
+      {
+        question: "Can I take money back out of a UTMA account?",
+        answer: "No — a UTMA account is irrevocable, so you cannot take back money you have gifted into it. The assets legally belong to the child. As custodian you may spend the funds only for the child's benefit, not for your own use or normal parenting costs."
+      },
+      {
+        question: "What is the difference between UTMA and UGMA?",
+        answer: "The difference is that UGMA accounts hold only financial assets like cash, stocks, and funds, while UTMA accounts can also hold real estate and other property. UTMA is the newer, more flexible statute and often allows a later transfer age. Both are custodial and both are taxed under the kiddie tax. See our [UTMA vs UGMA](/compare/utma-vs-ugma/) comparison."
+      },
+      {
+        question: "How does a UTMA account affect financial aid?",
+        answer: "A UTMA account hurts financial aid more than most accounts because the FAFSA counts it as the student's own asset, assessed at up to 20%. That is a bigger aid hit than a parent-owned 529 plan, which is assessed at no more than 5.64%. A [529 vs UTMA](/compare/529-vs-utma/) comparison shows the tradeoff."
+      }
+    ],
+    sources: [
+      { label: "FINRA — Custodial Accounts", url: "https://www.finra.org/investors/investing/investment-accounts/custodial-accounts" },
+      { label: "SEC Investor.gov — UGMA/UTMA Accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "IRS — Topic 553, Tax on a Child's Investment Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" }
     ],
   },
 ];
