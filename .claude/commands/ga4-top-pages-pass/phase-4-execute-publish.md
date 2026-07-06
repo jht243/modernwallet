@@ -34,7 +34,7 @@ git fetch origin && git status
 git diff --cached HEAD --numstat   # NO deletions you didn't make
 ```
 Remote moved → rebase/re-stage so the commit contains ONLY this run's changes. Any staged deletion of an untouched file = stale base — fix first. Single commit:
-`ga4-top-pages-pass <date>: N new pages, M enrichments, K metadata, T tools across P audited winners` → `git push origin HEAD`.
+`ga4-top-pages-pass <date>: N new pages, M enrichments, K metadata, T tools across P audited winners`, then deploy to the authorized branch: `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (see the launcher's Git model — `main` is this repo's authorized nightly deploy path). This runs only after the Phase 4 audit passed.
 
 ## 6. Verify 200s + IndexNow
 After the deploy settles, `curl -s -o /dev/null -w "%{http_code}"` every new AND every edited URL — all must be 200 before IndexNow (an enrichment that 404s its page is a rollback, not a skip: revert that page's change, re-push). Submit new + changed URLs to IndexNow (fallback key block in the orchestrator). Other non-200s: digest + skip from IndexNow, do NOT roll back the whole run.
