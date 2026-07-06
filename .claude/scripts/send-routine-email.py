@@ -100,7 +100,48 @@ SKILL_LABELS = {
 }
 
 
-def markdown_to_html(md: str) -> str:
+LINK_STYLE = "color:#2563eb;text-decoration:underline;"
+
+
+def _normalize_base(site: str) -> str:
+    """Return an absolute origin (scheme + host, no trailing slash) for `site`."""
+    s = (site or "").strip().rstrip("/")
+    if not s:
+        return ""
+    if not s.startswith(("http://", "https://")):
+        s = "https://" + s
+    return s
+
+
+def _resolve_url(text: str, base: str):
+    """Turn a link-like token into an absolute, clickable URL, or None.
+
+    - Full http(s) URLs pass through.
+    - `www.`-prefixed hosts get https://.
+    - Site-relative routes (`/foo/`) resolve against `base` — unless they look
+      like a source/asset file path (has a code/asset extension), which stay code.
+    """
+    import re
+    t = (text or "").strip()
+    if not t:
+        return None
+    if t.startswith(("http://", "https://")):
+        return t
+    if t.startswith("www.") and "." in t:
+        return "https://" + t
+    if t.startswith("/") and base:
+        core = t.split("#", 1)[0].split("?", 1)[0].rstrip("/")
+        if re.search(
+            r"\.(ts|tsx|js|jsx|mjs|cjs|astro|vue|svelte|py|rb|go|rs|json|md|mdx|"
+            r"css|scss|html?|txt|ya?ml|toml|svg|png|jpe?g|gif|webp|ico|xml|csv|lock)$",
+            core, re.I,
+        ):
+            return None
+        return base + t
+    return None
+
+
+def markdown_to_html(md: str, base_url: str = "") -> str:
     """Tiny, deliberately-limited markdown renderer.
 
     Supports: headings (# / ## / ###), bullet lists (- / *), code blocks (``` fenced),
@@ -130,11 +171,39 @@ def markdown_to_html(md: str) -> str:
             in_list = False
 
     def inline(s: str) -> str:
-        s = html.escape(s)
         import re
-        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" style="color:#2563eb;text-decoration:none;">\1</a>', s)
+        # Render inline markdown, turning site routes and bare URLs into
+        # clickable links so every routine email is verifiable by a click.
+        # Markdown links and code spans are rendered first and stashed as
+        # placeholders so later passes never touch their innards; the remaining
+        # prose is escaped, then any bare URL still in it is auto-linked.
+        stash: list[str] = []
+
+        def _stash(frag: str) -> str:
+            stash.append(frag)
+            return f"\x00{len(stash) - 1}\x00"
+
+        def _md_link(m):
+            text, url = m.group(1), m.group(2).strip()
+            return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(text)}</a>')
+
+        def _code(m):
+            inner = m.group(1)
+            url = _resolve_url(inner, base_url)
+            if url:
+                return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(inner)}</a>')
+            return _stash(f'<code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">{html.escape(inner)}</code>')
+
+        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", _md_link, s)
+        s = re.sub(r"`([^`]+)`", _code, s)
+        s = html.escape(s)
+        s = re.sub(
+            r"(?<![\"'>=/])\bhttps?://[^\s<>()\"']+",
+            lambda m: f'<a href="{m.group(0)}" style="{LINK_STYLE}">{m.group(0)}</a>',
+            s,
+        )
         s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
-        s = re.sub(r"`([^`]+)`", r'<code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">\1</code>', s)
+        s = re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], s)
         return s
 
     for raw in lines:
@@ -332,7 +401,7 @@ def main() -> int:
         except OSError as e:
             print(f"[send-routine-email] could not read --details-file: {e}", file=sys.stderr)
 
-    details_html = markdown_to_html(details_md) if details_md else ""
+    details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
     body_html = build_html(args, details_html)
 
     # Inbox subject mirrors the header BLUF: status · what ran · project — result
