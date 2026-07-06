@@ -208,7 +208,7 @@ const S: Record<string, React.CSSProperties> = {
   group: { border: "1px solid #E2EDE9", borderRadius: 12, padding: "8px 14px 14px", margin: 0 },
   legend: { fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", padding: "0 6px" },
   groupBody: { display: "flex", flexDirection: "column", gap: 10 },
-  row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
+  row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, alignItems: "end" },
   field: { display: "flex", flexDirection: "column", gap: 5 },
   label: { fontSize: "0.8rem", fontWeight: 600, color: "#444" },
   input: { width: "100%", padding: "9px 12px", fontSize: "1rem", border: "1px solid #D0DAD6", borderRadius: 8, background: "#fff", boxSizing: "border-box", color: "#1A1A1A" },

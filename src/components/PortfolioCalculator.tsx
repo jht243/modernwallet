@@ -144,7 +144,7 @@ const S: Record<string, React.CSSProperties> = {
   grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 },
   inputs: { display: "flex", flexDirection: "column", gap: 10 },
   groupTitle: { fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em" },
-  row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
+  row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, alignItems: "end" },
   field: { display: "flex", flexDirection: "column", gap: 5 },
   label: { fontSize: "0.82rem", fontWeight: 600, color: "#444" },
   input: { width: "100%", padding: "10px 12px", fontSize: "1rem", border: "1px solid #D0DAD6", borderRadius: 8, background: "#fff", boxSizing: "border-box", color: "#1A1A1A" },
