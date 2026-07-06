@@ -1,0 +1,44 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-05",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 5
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-budgeting-apps-for-couples",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 7,
+  "top10_pages_total_clicks": 7,
+  "channel_split": {
+    "/": {
+      "Unassigned": 4,
+      "Cross-network": 2,
+      "Direct": 2,
+      "Referral": 1
+    },
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-budgeting-apps-for-couples": {
+      "Direct": 1
+    }
+  }
+}
