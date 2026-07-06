@@ -16,3 +16,5 @@ node_modules/
 .claude/secrets/
 .claude/routines.config
 __pycache__/
+*.pyc
+*.tsbuildinfo
