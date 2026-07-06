@@ -419,7 +419,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "What is the Survivor Benefit Plan and should I elect it?",
         answer:
-          "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. For most married retirees, SBP is worth evaluating carefully against commercial life insurance alternatives.",
+          "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. For most married retirees, SBP is worth evaluating carefully against commercial life insurance alternatives. For a deeper breakdown of military pay, VA benefits, and survivor protections, see [rankandpay.org's military retirement guide](https://rankandpay.org/military-retirement/).",
       },
     ],
     sources: [
