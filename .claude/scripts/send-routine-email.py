@@ -191,7 +191,7 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
             inner = m.group(1)
             url = _resolve_url(inner, base_url)
             if url:
-                return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(inner)}</a>')
+                return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(url)}</a>')
             return _stash(f'<code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">{html.escape(inner)}</code>')
 
         s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", _md_link, s)
