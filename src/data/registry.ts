@@ -6,4 +6,4 @@
 // Pillar 1 (professional services) added: "tax-resolution". Pillar 2: "estate-planning".
 // Pillar 3: "probate". Pillar 4: "elder-care". Mindmap pass (Trump Accounts): "trump-account".
 // Autocomplete pass (kids accounts): "529-savings-calculator".
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator"]);
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator", "merchant-cash-advance", "invoice-factoring", "business-line-of-credit"]);

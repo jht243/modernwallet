@@ -14,6 +14,14 @@ import { titleCase } from "../../lib/format";
 import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
+import LeadForm from "../../components/LeadForm.astro";
+import { BUSINESS_CALC_IDS } from "../../data/business-financing";
+
+const FINANCING_LABEL: Record<string, string> = {
+  "merchant-cash-advance": "Merchant cash advance",
+  "invoice-factoring": "Invoice factoring",
+  "business-line-of-credit": "Business line of credit",
+};
 
 // Legal pillars (Pillar 1+) render attorney-reviewer byline + LegalDisclaimer + reviewer JSON-LD.
 const LEGAL_PILLARS = new Set(["estate-planning", "probate", "elder-care", "tax-resolution"]);
@@ -176,6 +184,7 @@ const jsonLdApp = {
       </section>
     )}
 
+    {BUSINESS_CALC_IDS.has(calc.id) && <LeadForm financingType={FINANCING_LABEL[calc.id]} />}
     <CrossLinks calcId={calc.id} />
   </main>
 

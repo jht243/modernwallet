@@ -24,6 +24,9 @@ import SpecialNeedsTrustCalculator from "./SpecialNeedsTrustCalculator";
 import LongTermCareCostCalculator from "./LongTermCareCostCalculator";
 import TrumpAccountCalculator from "./TrumpAccountCalculator";
 import CollegeSavings529Calculator from "./CollegeSavings529Calculator";
+import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
+import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
+import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -61,6 +64,10 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "trump-account": TrumpAccountCalculator,
   // 529 / college-savings — projects balance to college start + funding-gap vs an inflated cost target.
   "529-savings-calculator": CollegeSavings529Calculator,
+  // Business Financing pillar — MCA, invoice factoring, business line of credit.
+  "merchant-cash-advance": MerchantCashAdvanceCalculator,
+  "invoice-factoring": InvoiceFactoringCalculator,
+  "business-line-of-credit": BusinessLineOfCreditCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

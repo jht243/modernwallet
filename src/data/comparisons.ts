@@ -1,6 +1,7 @@
 // Comparison page data — head-to-head X vs Y articles.
 // Route: /compare/<slug>/   (src/pages/compare/[slug].astro)
 import type { FAQ, Source } from "./types";
+import { BUSINESS_COMPARISONS } from "./comparisons-business";
 
 export interface ComparisonEntry {
   slug: string;
@@ -3437,7 +3438,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Estate Planning Guide", href: "/estate-planning/" },
     ],
   },
-
+  ...BUSINESS_COMPARISONS,
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

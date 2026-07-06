@@ -6,6 +6,8 @@ import { SITE, LAST_UPDATED } from "../../data/site";
 import { GUIDES } from "../../data/guides";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
+import LeadForm from "../../components/LeadForm.astro";
+import { BUSINESS_GUIDE_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
   return GUIDES.map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
@@ -89,6 +91,7 @@ const jsonLdArticle = articleSchema({
       </div>
     </section>
 
+    {BUSINESS_GUIDE_SLUGS.has(guide.slug) && <LeadForm heading="Ready to compare real financing offers?" />}
     <Sources sources={guide.sources} />
   </main>
 

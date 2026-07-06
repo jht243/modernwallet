@@ -6,6 +6,8 @@ import { SITE, LAST_UPDATED } from "../../data/site";
 import { COMPARISONS } from "../../data/comparisons";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
+import LeadForm from "../../components/LeadForm.astro";
+import { BUSINESS_COMPARISON_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
   return COMPARISONS
@@ -142,6 +144,7 @@ const relatedEntries = entry.relatedComparisons
     )}
 
     <Sources sources={entry.sources} />
+    {BUSINESS_COMPARISON_SLUGS.has(entry.slug) && <LeadForm heading="See real offers for your business" />}
 
     {relatedEntries.length > 0 && (
       <section class="section">

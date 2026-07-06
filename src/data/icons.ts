@@ -19,6 +19,9 @@ const STYLE: Record<string, { bg: string; bg2: string; fg: string }> = {
   "real-estate": { bg: "#E7F5F6", bg2: "#D2ECEF", fg: "#1B8090" },
   "net-worth": { bg: "#E9F6EE", bg2: "#D4EEDD", fg: "#128A4E" },
   "budget": { bg: "#F0E8F5", bg2: "#E5D5EC", fg: "#7A4FA8" },
+  "merchant-cash-advance": { bg: "#FBF1E5", bg2: "#F4E1C6", fg: "#B5701C" },
+  "invoice-factoring": { bg: "#EAF1FB", bg2: "#D6E5F7", fg: "#2F6FB0" },
+  "business-line-of-credit": { bg: "#E9F6EE", bg2: "#D4EEDD", fg: "#128A4E" },
 };
 const DEFAULT_STYLE = { bg: "#EEF4F0", bg2: "#DFEAE5", fg: "#0E7C66" };
 
@@ -51,6 +54,7 @@ const SHAPE: Record<string, string> = {
 const CATEGORY_SHAPE: Record<string, string> = {
   "auto-loan": "car", "mortgage": "house", "retirement": "sun", "investing": "trending",
   "portfolio": "pie", "real-estate": "building", "net-worth": "scale", "budget": "wallet",
+  "merchant-cash-advance": "fast", "invoice-factoring": "coins", "business-line-of-credit": "building",
 };
 
 // Per-spoke concept shape so cards within a category still look different.

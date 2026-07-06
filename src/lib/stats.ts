@@ -13,6 +13,9 @@ import { computePortfolio, type PortfolioInput } from "./portfolio";
 import { computeNetWorth, type NetWorthInput } from "./net-worth";
 import { carAffordability, homeAffordability, downPaymentBreakdown, closingCostEstimate } from "./affordability";
 import { computeBudget } from "./budget";
+import { computeMca, type McaInput } from "./merchant-cash-advance";
+import { computeFactoring, type FactoringInput } from "./invoice-factoring";
+import { computeLoc, type LocInput } from "./business-line-of-credit";
 import { fmtUSD, fmtMonths, fmtPct, fmtNum } from "./format";
 
 export interface Stat {
@@ -40,9 +43,63 @@ export function spokeStats(entry: SpokeEntry): Stat[] {
       return netWorthStats(entry.preset as Partial<NetWorthInput>);
     case "budget":
       return budgetStats(entry.preset as Record<string, unknown>);
+    case "merchant-cash-advance":
+      return mcaStats(entry.preset as Partial<McaInput>);
+    case "invoice-factoring":
+      return factoringStats(entry.preset as Partial<FactoringInput>);
+    case "business-line-of-credit":
+      return locStats(entry.preset as Partial<LocInput>);
     default:
       return [];
   }
+}
+
+function mcaStats(preset: Partial<McaInput>): Stat[] {
+  const r = computeMca({
+    advanceAmount: 0,
+    factorRate: 0,
+    termMonths: 0,
+    paymentFrequency: "daily",
+    ...preset,
+  } as McaInput);
+  if (r.periodicPayment == null) return [];
+  const cadence = (preset.paymentFrequency ?? "daily") === "weekly" ? "weekly payment" : "daily payment";
+  return [
+    { label: cadence, value: fmtUSD(r.periodicPayment) },
+    { label: "effective APR", value: fmtPct(r.effectiveAprPct, 1) },
+    { label: "total payback", value: fmtUSD(r.totalPayback) },
+  ];
+}
+
+function factoringStats(preset: Partial<FactoringInput>): Stat[] {
+  const r = computeFactoring({
+    invoiceAmount: 0,
+    advanceRatePct: 0,
+    factorFeePct: 0,
+    daysUntilPaid: 0,
+    ...preset,
+  } as FactoringInput);
+  if (r.advanceAmount == null) return [];
+  return [
+    { label: "cash now", value: fmtUSD(r.advanceAmount) },
+    { label: "factoring fee", value: fmtUSD(r.feeAmount) },
+    { label: "effective APR", value: fmtPct(r.effectiveAprPct, 1) },
+  ];
+}
+
+function locStats(preset: Partial<LocInput>): Stat[] {
+  const r = computeLoc({
+    drawAmount: 0,
+    aprPct: 0,
+    repaymentTermMonths: 0,
+    ...preset,
+  } as LocInput);
+  if (r.monthlyPayment == null) return [];
+  return [
+    { label: "monthly payment", value: fmtUSD(r.monthlyPayment) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+    { label: "APR with fees", value: fmtPct(r.effectiveAprPct, 1) },
+  ];
 }
 
 function budgetStats(preset: Record<string, unknown>): Stat[] {

@@ -11,6 +11,14 @@ import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
+import LeadForm from "../../components/LeadForm.astro";
+import { BUSINESS_CALC_IDS } from "../../data/business-financing";
+
+const FINANCING_LABEL: Record<string, string> = {
+  "merchant-cash-advance": "Merchant cash advance",
+  "invoice-factoring": "Invoice factoring",
+  "business-line-of-credit": "Business line of credit",
+};
 
 // The 4 professional-services pillars (Pillar 1+ rollout) render an attorney-reviewer byline,
 // LegalDisclaimer, and reviewer-in-JSON-LD. Existing 8 personal-finance pillars pass no reviewer
@@ -141,6 +149,7 @@ const jsonLdArticle = articleSchema({
     )}
 
     {isLegal && <LegalDisclaimer scope={disclaimerScope} />}
+    {BUSINESS_CALC_IDS.has(calc.id) && <LeadForm financingType={FINANCING_LABEL[calc.id]} />}
     <Sources sources={calc.sources} />
     <CrossLinks calcId={calc.id} />
   </main>

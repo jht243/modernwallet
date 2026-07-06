@@ -7,6 +7,8 @@ import { ROUNDUPS } from "../../data/roundups";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { COMPARISONS } from "../../data/comparisons";
+import LeadForm from "../../components/LeadForm.astro";
+import { BUSINESS_ROUNDUP_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
   return ROUNDUPS
@@ -183,6 +185,7 @@ const relatedEntries = entry.relatedComparisons
     )}
 
     <Sources sources={entry.sources} />
+    {BUSINESS_ROUNDUP_SLUGS.has(entry.slug) && <LeadForm heading="Get matched with a vetted funder" blurb="Skip the shopping — tell us what you need and we'll connect you with funders that fit your business." />}
 
     {relatedEntries.length > 0 && (
       <section class="section">

@@ -54,6 +54,21 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "Build a budget to fund the payment plan" },
     { href: "/net-worth/", label: "See your full net worth" },
   ],
+  "merchant-cash-advance": [
+    { href: "/business-line-of-credit/", label: "A cheaper alternative: business line of credit" },
+    { href: "/invoice-factoring/", label: "Turn unpaid invoices into cash instead" },
+    { href: "/compare/merchant-cash-advance-vs-loan/", label: "MCA vs a business loan" },
+  ],
+  "invoice-factoring": [
+    { href: "/business-line-of-credit/", label: "Compare a business line of credit" },
+    { href: "/merchant-cash-advance/", label: "How a merchant cash advance compares" },
+    { href: "/compare/invoice-factoring-vs-merchant-cash-advance/", label: "Factoring vs MCA" },
+  ],
+  "business-line-of-credit": [
+    { href: "/invoice-factoring/", label: "Factor invoices for faster cash" },
+    { href: "/merchant-cash-advance/", label: "When speed matters: MCA" },
+    { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
+  ],
   "estate-planning": [
     { href: "/retirement/", label: "Have a retirement plan — now protect it" },
     { href: "/net-worth/", label: "See your net worth first" },

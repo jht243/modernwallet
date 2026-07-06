@@ -1,4 +1,5 @@
 import type { FAQ, Source } from "./types";
+import { BUSINESS_GUIDES } from "./guides-business";
 
 // Long-form GUIDE pages — top-of-funnel "journey" content that threads multiple calculators
 // together for a persona (home buyer, car buyer, pre-retiree). CONTENT via the keyword-gap
@@ -1220,6 +1221,7 @@ export const GUIDES: Guide[] = [
       { label: "IRS — Topic 553, Tax on a Child's Investment Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" }
     ],
   },
+  ...BUSINESS_GUIDES,
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

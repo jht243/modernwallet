@@ -1,0 +1,116 @@
+---
+// Lead-capture form for the Business Financing pillar. Renders only on business-financing pages
+// (gated by the calling route). Captures a qualified funding request and posts it to the endpoint
+// in PUBLIC_LEAD_ENDPOINT. If that env var is unset at build time, the form falls back to a mailto:
+// so leads still reach someone — set PUBLIC_LEAD_ENDPOINT (a Formspree/serverless/CRM webhook) and
+// PUBLIC_LEAD_EMAIL to wire real delivery.
+//
+// This is intentionally a SOFT conversion: the calculators stay free and ungated; this appears only
+// as an optional "see real offers" step below the tool, preserving the site's no-signup trust.
+interface Props {
+  financingType?: string; // pre-selects the dropdown, e.g. "Merchant cash advance"
+  heading?: string;
+  blurb?: string;
+}
+const { financingType, heading, blurb } = Astro.props as Props;
+const endpoint = import.meta.env.PUBLIC_LEAD_ENDPOINT ?? "";
+const fallbackEmail = import.meta.env.PUBLIC_LEAD_EMAIL ?? "funding@themodernwallet.com";
+const TYPES = [
+  "Merchant cash advance",
+  "Invoice factoring",
+  "Business line of credit",
+  "Equipment financing",
+  "Not sure — help me choose",
+];
+---
+<section class="lead" id="get-offers" aria-labelledby="lead-h">
+  <div class="lead-inner">
+    <h2 id="lead-h">{heading ?? "See real financing offers for your business"}</h2>
+    <p class="lead-blurb">{blurb ?? "Tell us what you need and we'll match you with vetted funders. Free, no obligation, and no impact on your credit to check."}</p>
+
+    <form class="lead-form" data-endpoint={endpoint} data-fallback-email={fallbackEmail}>
+      <div class="lf-row">
+        <label>Business name<input name="business" type="text" required autocomplete="organization" /></label>
+        <label>Financing type
+          <select name="type">
+            {TYPES.map((t) => <option value={t} selected={t === financingType}>{t}</option>)}
+          </select>
+        </label>
+      </div>
+      <div class="lf-row">
+        <label>Average monthly revenue<input name="revenue" type="text" inputmode="numeric" placeholder="$" /></label>
+        <label>Amount needed<input name="amount" type="text" inputmode="numeric" placeholder="$" /></label>
+      </div>
+      <div class="lf-row">
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" /></label>
+      </div>
+      <button type="submit" class="lf-submit">Get my offers</button>
+      <p class="lf-status" role="status" aria-live="polite" hidden></p>
+      <p class="lf-fine">By submitting, you agree to be contacted about financing. ModernWallet is not a lender; we match businesses with funding partners. This is not a credit application or an offer of credit.</p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .lead { margin: 30px 0 8px; scroll-margin-top: 20px; }
+  .lead-inner {
+    background: linear-gradient(180deg, #10352B 0%, #0E2A22 100%);
+    border-radius: 18px; padding: 28px 26px; color: #EAF3EF;
+  }
+  .lead h2 { font-size: 1.5rem; margin: 0 0 8px; color: #fff; line-height: 1.25; }
+  .lead-blurb { margin: 0 0 18px; color: #B7D3C8; font-size: 1.02rem; line-height: 1.55; max-width: 60ch; }
+  .lead-form { display: flex; flex-direction: column; gap: 12px; }
+  .lf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lead-form label { display: flex; flex-direction: column; gap: 5px; font-size: 0.82rem; font-weight: 600; color: #CFE5DC; }
+  .lead-form input, .lead-form select {
+    padding: 10px 12px; font-size: 1rem; border: 1px solid #2E5347; border-radius: 8px;
+    background: #F7FBF9; color: #14201B; box-sizing: border-box;
+  }
+  .lf-submit {
+    margin-top: 4px; padding: 13px 16px; border: none; border-radius: 9px; cursor: pointer;
+    background: var(--primary, #0E7C66); color: #fff; font-size: 1.02rem; font-weight: 700;
+  }
+  .lf-submit:hover { filter: brightness(1.06); }
+  .lf-status { margin: 6px 0 0; font-size: 0.95rem; font-weight: 600; color: #9BE7C8; }
+  .lf-status.err { color: #F3B4A6; }
+  .lf-fine { margin: 4px 0 0; font-size: 0.76rem; color: #86A99C; line-height: 1.5; }
+  @media (max-width: 560px) { .lf-row { grid-template-columns: 1fr; } .lead-inner { padding: 22px 18px; } }
+</style>
+
+<script>
+  // Progressive enhancement: POST to the configured endpoint; fall back to a prefilled mailto: so a
+  // lead is never lost even before a CRM/webhook is wired.
+  document.querySelectorAll<HTMLFormElement>(".lead-form").forEach((form) => {
+    const status = form.querySelector<HTMLParagraphElement>(".lf-status")!;
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      const endpoint = form.dataset.endpoint;
+      const email = form.dataset.fallbackEmail || "funding@themodernwallet.com";
+      status.hidden = false;
+      status.classList.remove("err");
+      status.textContent = "Sending…";
+      try {
+        if (endpoint) {
+          const res = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({ ...data, page: location.pathname, ts: new Date().toISOString() }),
+          });
+          if (!res.ok) throw new Error(String(res.status));
+          status.textContent = "Got it — a funding specialist will reach out shortly.";
+          form.reset();
+        } else {
+          // No endpoint configured yet → open a prefilled email as the fallback delivery channel.
+          const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join("%0D%0A");
+          window.location.href = `mailto:${email}?subject=Financing%20request%20from%20${encodeURIComponent(String(data.business || "a business"))}&body=${body}`;
+          status.textContent = "Opening your email to send the request…";
+        }
+      } catch {
+        status.classList.add("err");
+        status.textContent = "Something went wrong — email us at " + email + " and we'll help directly.";
+      }
+    });
+  });
+</script>

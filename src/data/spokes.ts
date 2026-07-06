@@ -11,6 +11,7 @@ import { TAX_RESOLUTION_SPOKES } from "./spokes-tax-resolution";
 import { ESTATE_PLANNING_SPOKES } from "./spokes-estate-planning";
 import { PROBATE_SPOKES } from "./spokes-probate";
 import { ELDER_CARE_SPOKES } from "./spokes-elder-care";
+import { BUSINESS_FINANCING_SPOKES } from "./spokes-business-financing";
 
 // Aggregator for all spoke pages across calculators. Phase 2 adds one spokes-*.ts file per
 // calculator and spreads it here. Pillar 1 = tax-resolution; Pillar 2 = estate-planning;
@@ -28,6 +29,7 @@ export const SPOKES: SpokeEntry[] = [
   ...ESTATE_PLANNING_SPOKES,
   ...PROBATE_SPOKES,
   ...ELDER_CARE_SPOKES,
+  ...BUSINESS_FINANCING_SPOKES,
 ];
 
 export const SPOKE_BY_PATH: Record<string, SpokeEntry> = Object.fromEntries(

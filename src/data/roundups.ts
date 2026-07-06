@@ -1,4 +1,5 @@
 import type { FAQ, Source } from "./types";
+import { BUSINESS_ROUNDUPS } from "./roundups-business";
 
 export interface RoundupOption {
   name: string;
@@ -2979,6 +2980,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Net Worth Tracker", href: "/net-worth/" },
     ],
   },
+  ...BUSINESS_ROUNDUPS,
 ];
 
 export const ROUNDUP_BY_SLUG = Object.fromEntries(
