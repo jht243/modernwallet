@@ -172,36 +172,41 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
 
     def inline(s: str) -> str:
         import re
-        # Render inline markdown, turning site routes and bare URLs into
-        # clickable links so every routine email is verifiable by a click.
-        # Markdown links and code spans are rendered first and stashed as
-        # placeholders so later passes never touch their innards; the remaining
-        # prose is escaped, then any bare URL still in it is auto-linked.
+        # Render inline markdown so every page in a routine email is a real
+        # clickable link you can open and verify — never a bare path or mapping.
+        # Named links / code spans / bare URLs / bare site routes are each
+        # rendered and stashed as placeholders first (visible text = the full
+        # absolute URL for anything that resolves to a page), then the remaining
+        # prose is escaped and bolded. Order matters: a later pass must never see
+        # the innards of an already-linked span.
         stash: list[str] = []
 
         def _stash(frag: str) -> str:
             stash.append(frag)
             return f"\x00{len(stash) - 1}\x00"
 
-        def _md_link(m):
-            text, url = m.group(1), m.group(2).strip()
+        def _link(url: str, text: str) -> str:
             return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(text)}</a>')
+
+        def _md_link(m):
+            return _link(m.group(2).strip(), m.group(1))
 
         def _code(m):
             inner = m.group(1)
             url = _resolve_url(inner, base_url)
             if url:
-                return _stash(f'<a href="{html.escape(url, quote=True)}" style="{LINK_STYLE}">{html.escape(url)}</a>')
+                return _link(url, url)
             return _stash(f'<code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:13px;">{html.escape(inner)}</code>')
+
+        def _route(m):
+            url = _resolve_url(m.group(0), base_url)
+            return _link(url, url) if url else m.group(0)
 
         s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", _md_link, s)
         s = re.sub(r"`([^`]+)`", _code, s)
+        s = re.sub(r"(?<![\w@])https?://[^\s<>()\[\]`\"']+", lambda m: _link(m.group(0), m.group(0)), s)
+        s = re.sub(r"(?<![\w@/])/[A-Za-z0-9][\w\-./]*", _route, s)
         s = html.escape(s)
-        s = re.sub(
-            r"(?<![\"'>=/])\bhttps?://[^\s<>()\"']+",
-            lambda m: f'<a href="{m.group(0)}" style="{LINK_STYLE}">{m.group(0)}</a>',
-            s,
-        )
         s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
         s = re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], s)
         return s
