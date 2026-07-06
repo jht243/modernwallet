@@ -211,7 +211,7 @@ const S: Record<string, React.CSSProperties> = {
   row2: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 },
   field: { display: "flex", flexDirection: "column", gap: 5 },
   label: { fontSize: "0.8rem", fontWeight: 600, color: "#444" },
-  input: { width: "100%", padding: "9px 12px", fontSize: "0.98rem", border: "1px solid #D0DAD6", borderRadius: 8, background: "#fff", boxSizing: "border-box", color: "#1A1A1A" },
+  input: { width: "100%", padding: "9px 12px", fontSize: "1rem", border: "1px solid #D0DAD6", borderRadius: 8, background: "#fff", boxSizing: "border-box", color: "#1A1A1A" },
   suffixWrap: { position: "relative", display: "flex", alignItems: "center" },
   prefix: { position: "absolute", left: 11, color: "#888", fontSize: "0.95rem", pointerEvents: "none" },
   suffix: { position: "absolute", right: 12, color: "#888", fontSize: "0.95rem", pointerEvents: "none" },
