@@ -955,9 +955,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 5. Best Money Market Accounts ───────────────────────────────────────
   {
     slug: "best-money-market-accounts",
-    title: "Best Money Market Accounts of 2026: Rates Compared",
+    title: "Best Money Market Accounts (Updated July 2026): Top Picks Compared",
     metaDescription:
-      "Compare the best money market accounts of 2026 by APY, fees, and FDIC coverage. Top picks for high-yield savings with check-writing flexibility.",
+      "Compare the best money market accounts for July 2026 by APY, fees, and FDIC coverage. See top-rated picks like Ally, Discover, and UFB Direct for higher-yield savings with check-writing access.",
     targetKeyword: "best money market accounts",
     category: "money market accounts",
     angle: "best",

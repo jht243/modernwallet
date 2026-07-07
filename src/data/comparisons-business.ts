@@ -248,11 +248,93 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
       { label: "FTC — Court enters $20.3M judgment against MCA operator for deceiving small businesses", url: "https://www.ftc.gov/news-events/news/press-releases/2024/02/court-enters-203-million-judgment-ftc-case-against-merchant-cash-advance-operator-jonathan-braun" },
       { label: "U.S. SBA — 7(a) loan terms, conditions, and eligibility", url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility" },
     ],
-    relatedComparisons: ["merchant-cash-advance-vs-loan", "factor-rate-vs-interest-rate"],
+    relatedComparisons: ["merchant-cash-advance-vs-loan", "factor-rate-vs-interest-rate", "invoice-factoring-vs-business-line-of-credit"],
     calculatorLinks: [
       { label: "Invoice factoring calculator", href: "/invoice-factoring/" },
       { label: "Merchant cash advance calculator", href: "/merchant-cash-advance/" },
       { label: "Factor rate calculator", href: "/merchant-cash-advance/factor-rate-calculator/" },
+    ],
+  },
+
+  // ─── 4. Invoice Factoring vs Business Line of Credit ─────────────────────
+  {
+    slug: "invoice-factoring-vs-business-line-of-credit",
+    title: "Invoice Factoring vs Business Line of Credit",
+    metaDescription:
+      "Invoice factoring vs business line of credit: factoring a $100,000 invoice can run ~28.63% APR versus ~14.05% effective APR for a typical LOC draw.",
+    targetKeyword: "invoice factoring vs business line of credit",
+    optionA: "Invoice Factoring",
+    optionB: "Business Line of Credit",
+    segment: "Business Financing",
+    h1: "Invoice Factoring vs Business Line of Credit: Which Is Cheaper?",
+    intro:
+      "Invoice factoring vs business line of credit usually comes down to whether you already have unpaid invoices or just need flexible access to cash. Factoring a $100,000 invoice at an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. A business line of credit drawing $50,000 at a 12% APR over 24 months with a 2% draw fee costs about 14.05% effective APR. A line of credit is usually cheaper, but it requires qualifying for approval upfront, while factoring approval leans on your customer's credit instead of yours.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What backs it", a: "A real, unpaid invoice you already issued", b: "Your business's own credit and revenue history" },
+        { dimension: "Cost measure", a: "Factoring fee (e.g. 1.5% per 30 days)", b: "APR plus any draw or maintenance fees" },
+        { dimension: "Illustrative effective APR", a: "~28.63% ($100,000 invoice, 85% advance)", b: "~14.05% ($50,000 draw, 12% APR, 2% draw fee)" },
+        { dimension: "Approval basis", a: "Your customer's creditworthiness", b: "Your business's own credit and financials" },
+        { dimension: "How you get cash", a: "Advance on a specific invoice (e.g. 85% upfront)", b: "Draw any amount up to your credit limit, revolving" },
+        { dimension: "Repayment source", a: "Your customer pays the invoice", b: "You repay the draw over its term" },
+        { dimension: "Best fit", a: "B2B firms with slow-paying customers and thin credit", b: "Established businesses that qualify and want flexible access" },
+      ],
+    },
+    verdict:
+      "A business line of credit is usually the cheaper option when your business can qualify for one — its effective APR typically undercuts factoring's fee-per-period structure. But factoring stays the better fit when your own credit or time in business would not clear a line's approval bar, since factoring is priced mainly on your customer's ability to pay, not yours. Run both figures as an effective APR before deciding.",
+    sections: [
+      {
+        heading: "A line of credit is priced on your business, factoring is priced on your customer",
+        content:
+          "A business line of credit is approved and priced using your own business credit, revenue, and time in business. Invoice factoring instead leans on the creditworthiness of the customer who owes the invoice, which is why newer or lower-credit businesses can often qualify for factoring when they would not qualify for a line. Model your own draw cost with our [business line of credit calculator](/business-line-of-credit/).",
+      },
+      {
+        heading: "The cost gap favors a line of credit when you can get one",
+        content:
+          "Drawing $50,000 on a line of credit at 12% APR over 24 months with a 2% draw fee costs about 14.05% effective APR. Factoring a comparable $100,000 invoice at an 85% advance and a 1.5% fee per 30 days runs closer to 28.63% effective APR. The gap exists because a line charges a standard interest rate, while factoring's fee accrues per 30-day period the invoice stays outstanding — the longer your customer takes to pay, the more factoring costs. See the fee build-up in our [invoice factoring calculator](/invoice-factoring/).",
+      },
+      {
+        heading: "Revolving access vs. invoice-by-invoice cash",
+        content:
+          "A line of credit is revolving: draw what you need, repay it, and draw again up to your limit, without tying each draw to a specific sale. Factoring instead converts one invoice at a time into cash, so your available funding rises and falls with how much you have billed and not yet collected. A business with steady, predictable expenses often prefers a line's flexibility; a business whose cash is mostly tied up in slow-paying invoices often leans on factoring instead.",
+      },
+      {
+        heading: "Non-obvious insight: the two are not mutually exclusive",
+        content:
+          "Many small businesses use a line of credit for day-to-day flexibility and turn to factoring only when a specific slow-paying invoice creates a cash crunch a line's limit cannot cover. Using both also avoids maxing out a single credit line, which can hurt future approval odds. Compare the effective APR each option quotes you, since draw fees and factoring fees both push the real cost above the headline rate.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is invoice factoring or a business line of credit cheaper?",
+        answer:
+          "A business line of credit is usually cheaper when you qualify for one. Drawing $50,000 at 12% APR over 24 months with a 2% draw fee costs about 14.05% effective APR, versus roughly 28.63% for a comparable invoice factoring deal. The gap narrows or reverses if your customers pay very quickly, since factoring fees accrue per 30-day period.",
+      },
+      {
+        question: "Which is easier to qualify for, factoring or a line of credit?",
+        answer:
+          "Invoice factoring is typically easier to qualify for because approval leans on your customer's creditworthiness, not yours. A business line of credit is underwritten against your own business credit, revenue, and time in business, which can shut out newer or lower-credit companies that factoring would still approve.",
+      },
+      {
+        question: "Can I use both a line of credit and invoice factoring?",
+        answer:
+          "Yes. Many businesses keep a line of credit open for everyday flexibility and use invoice factoring only when a specific slow-paying invoice needs to be turned into cash faster than the line's limit allows. Using both can also help avoid maxing out a single credit source.",
+      },
+      {
+        question: "Does a business line of credit add debt like a loan?",
+        answer:
+          "Yes. A business line of credit is a form of borrowing, so a draw adds debt to your balance sheet and accrues interest until repaid. Invoice factoring is a sale of your receivables, not a loan, so it does not add debt the same way — though it does reduce the cash you eventually collect from the sold invoice.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — Small business lending under ECOA (Regulation B)", url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/" },
+      { label: "U.S. SBA — Asset-Based Lending: Upside and Downside", url: "https://www.sba.gov/blog/asset-based-lending-what-upside-downside" },
+      { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
+    ],
+    relatedComparisons: ["invoice-factoring-vs-merchant-cash-advance", "merchant-cash-advance-vs-loan"],
+    calculatorLinks: [
+      { label: "Invoice factoring calculator", href: "/invoice-factoring/" },
+      { label: "Business line of credit calculator", href: "/business-line-of-credit/" },
     ],
   },
 ];

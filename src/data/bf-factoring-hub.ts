@@ -50,6 +50,16 @@ export const FACTORING_HUB: CalculatorDef = {
       answer:
         "Lower your effective APR by working with faster-paying customers and negotiating a lower fee per period. In our example, a 45-day payment on a 1.5% fee produces a 28.63% APR. If the same customer paid in 30 days, only one fee period would apply, cutting the cost and the APR. You can also learn more in our [small business financing guide](/guides/small-business-financing-guide/).",
     },
+    {
+      question: "How fast can I get funded through invoice factoring?",
+      answer:
+        "Most factoring companies wire your advance within 24 to 48 hours after approving your first invoice, and repeat draws on already-approved customers can fund same-day. The setup itself — verifying your invoices and your customer's credit — is usually the slower step, often taking a few days to a week for a new account. Once that groundwork is done, ongoing factoring is one of the fastest ways to convert receivables into cash.",
+    },
+    {
+      question: "Does invoice factoring require good business credit?",
+      answer:
+        "No. Factoring approval is based mainly on your customer's creditworthiness, not yours, since the factor is advancing against an invoice your customer owes. That makes it accessible to newer or lower-credit businesses that would not qualify for a traditional bank loan, as long as they bill creditworthy commercial or government customers. Your own credit history can still affect fee pricing, but it is rarely a disqualifying factor the way it is for a term loan.",
+    },
   ],
 
   sources: [
