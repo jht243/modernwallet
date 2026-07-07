@@ -1,0 +1,116 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-06",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 5,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 5
+    },
+    {
+      "page": "/",
+      "views": 3,
+      "sessions": 5,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/compare/trump-account-vs-529/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/529-savings-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-roth-ira/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/best-investment-account-for-kids/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 1,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 1
+    },
+    {
+      "page": "/invoice-factoring/factoring-fee-calculator/",
+      "views": 1,
+      "sessions": 2,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 17,
+  "top10_pages_total_clicks": 17,
+  "channel_split": {
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Organic Search": 4,
+      "Unassigned": 2
+    },
+    "/": {
+      "Unassigned": 3,
+      "Direct": 2,
+      "Referral": 1
+    },
+    "/invoice-factoring/factoring-fee-calculator/": {
+      "Direct": 2
+    },
+    "/529-savings-calculator/": {
+      "Unassigned": 1
+    },
+    "/compare/trump-account-vs-529/": {
+      "Direct": 1,
+      "Organic Search": 1
+    },
+    "/compare/trump-account-vs-roth-ira/": {
+      "Direct": 1
+    },
+    "/guides/best-investment-account-for-kids/": {
+      "Direct": 1
+    },
+    "/guides/trump-account-worth-it/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/portfolio/": {
+      "Unassigned": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Direct": 1
+    }
+  }
+}
