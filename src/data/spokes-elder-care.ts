@@ -208,7 +208,7 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
       {
         question: "Does Medicare pay for long-term care?",
         answer:
-          "Essentially no. Medicare Part A covers Skilled Nursing Facility (SNF) care ONLY, up to 100 days, and only after a qualifying 3-night hospital admission. Days 1-20 are fully covered; days 21-100 have a $209.50/day copay (2026 projected from CMS Part A deductible). Day 101 onward: $0 Medicare coverage. Medicare does not cover assisted living, long-term home aide, or custodial nursing home care at any point. For those, funding comes from personal savings, LTC insurance, Medicaid (after spend-down), or Home and Community-Based Services waivers.",
+          "Essentially no. Medicare Part A covers Skilled Nursing Facility (SNF) care ONLY, up to 100 days, and only after a qualifying 3-night hospital admission. Days 1-20 are fully covered; days 21-100 have a $209.50/day copay (2026 projected from CMS Part A deductible). Day 101 onward: $0 Medicare coverage. Medicare does not cover assisted living, long-term home aide, or custodial nursing home care at any point. For those, funding comes from personal savings, LTC insurance, Medicaid (after spend-down), or Home and Community-Based Services waivers. Medicare can still help with drug costs specifically — see our [Medicare Extra Help income limits](/guides/medicare-extra-help-income-limits/) guide to check whether a lower-income household qualifies for reduced Part D premiums and copays.",
       },
       {
         question: "How much long-term care insurance do I need?",
