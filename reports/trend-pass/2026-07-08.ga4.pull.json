@@ -1,0 +1,116 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-07",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/invoice-factoring/factoring-fee-calculator/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/trump-account-vs-custodial-account/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/estate-planning/living-trust-cost-calculator/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-utma/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/invoice-factoring-vs-business-line-of-credit/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-529/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-roth-ira/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/utma-vs-ugma/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 16,
+  "top10_pages_total_clicks": 16,
+  "channel_split": {
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Organic Search": 2
+    },
+    "/compare/trump-account-vs-custodial-account/": {
+      "Direct": 2
+    },
+    "/invoice-factoring/factoring-fee-calculator/": {
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/": {
+      "Cross-network": 1,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/compare/custodial-roth-ira-vs-utma/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/compare/invoice-factoring-vs-business-line-of-credit/": {
+      "Direct": 1
+    },
+    "/compare/trump-account-vs-529/": {
+      "Direct": 1
+    },
+    "/compare/trump-account-vs-roth-ira/": {
+      "Direct": 1
+    },
+    "/compare/utma-vs-ugma/": {
+      "Unassigned": 1
+    },
+    "/estate-planning/living-trust-cost-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
