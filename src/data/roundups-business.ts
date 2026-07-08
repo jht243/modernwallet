@@ -130,6 +130,96 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         pricing:
           "Term loans $5,000–$400,000; lines of credit $6,000–$200,000. Rates published and vary by profile. Eligibility: 1 year in business, $100,000+ revenue, 625+ FICO. Details at ondeck.com.",
       },
+      {
+        name: "Kabbage (now American Express Business Blueprint)",
+        bestFor: "Businesses already banking with American Express who want financing folded into one cash-flow dashboard",
+        description:
+          "Kabbage was an online lender known for underwriting on connected bank, payment-processor, and accounting data rather than a factor-rate cash advance. American Express acquired Kabbage in 2020 and retired the brand in 2023, folding its technology into [American Express Business Blueprint](https://www.americanexpress.com/en-us/business/blueprint/) — a cash-flow dashboard built around an Amex business line of credit, business checking, and card products.\n\nUnlike the MCA-style advances from Rapid Finance, Credibly, or Fora Financial above, Business Blueprint isn't a stand-alone factor-rate product — it's a broader cash-management platform, so it's a fit mainly if you're comfortable consolidating financing with American Express rather than shopping a pure MCA quote.",
+        strengths: [
+          "Underwriting built on connected account and cash-flow data, not just a credit score",
+          "Backed by American Express's scale and support infrastructure",
+          "Combines a line of credit with business checking and card tools in one dashboard",
+        ],
+        limitations: [
+          "No longer a stand-alone merchant cash advance product under the Kabbage name",
+          "Best suited to businesses willing to bank with American Express",
+          "Product structure differs from a classic factor-rate MCA — confirm it's the right fit before assuming it replaces one",
+        ],
+        pricing:
+          "Terms are set by American Express and not published as a fixed factor rate; check current line-of-credit and checking terms at americanexpress.com/en-us/business/blueprint.",
+      },
+      {
+        name: "Kapitus",
+        bestFor: "Comparing several financing products, not just an MCA, through one application",
+        description:
+          "[Kapitus](https://kapitus.com/) operates as a financing marketplace: one application can surface offers across term loans, lines of credit, revenue-based financing, equipment financing, invoice factoring, and SBA-backed loans through its own programs and partner network, instead of locking you into a single MCA product. That breadth makes it useful for comparing a cash-advance-style offer against a lower-cost alternative before committing.\n\nWhere Rapid Finance and Fora Financial fund a single MCA product directly, Kapitus's edge is choice — you see several structures side by side, though the specific terms you're quoted depend on which underlying product and partner you're matched with.",
+        strengths: [
+          "One application can return offers across several financing types, not just an MCA",
+          "Revenue-based financing option gives a sales-linked alternative to a fixed factor rate",
+          "Established, long-running player in alternative small-business financing",
+        ],
+        limitations: [
+          "Because offers can come from partner lenders, terms and service vary by which product you're matched with",
+          "Pricing and eligibility are not published — you only see them after applying",
+          "Comparing several product types at once takes more homework than a single MCA quote",
+        ],
+        pricing:
+          "Funding amounts and pricing vary by product and are quote-based; fast approvals are advertised for some products. Quotes at kapitus.com.",
+      },
+      {
+        name: "Kalamata Capital Group",
+        bestFor: "ISO/broker-sourced MCA and short-term working capital",
+        description:
+          "[Kalamata Capital Group](https://www.kalamatacapitalgroup.com/) is a Bethesda, Maryland-based provider of merchant cash advances and short-term business loans that markets primarily through a network of independent sales organizations (ISOs) and brokers rather than direct-to-business advertising. It serves a wide mix of industries, including retail, medical and dental practices, trucking and logistics, and restaurants.\n\nBecause Kalamata leans on broker referrals rather than the direct online application flow that Rapid Finance, Credibly, or Fora Financial emphasize, expect the process to often run through a broker relationship — worth knowing since terms and service can vary by which broker submits your file.",
+        strengths: [
+          "Serves a broad mix of industries, including some higher-risk sectors other lenders avoid",
+          "Advertises fast decisions on funding requests",
+          "Long track record in the MCA space (founded in the early 2010s)",
+        ],
+        limitations: [
+          "Primarily broker/ISO-sourced, so your experience can depend heavily on which broker submits your application",
+          "Funding amounts, factor rates, and eligibility are not published",
+          "Less direct-to-consumer transparency than lenders with an online-first application",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and not published; contact a representative or broker for a specific offer at kalamatacapitalgroup.com.",
+      },
+      {
+        name: "Headway Capital",
+        bestFor: "A revolving line of credit from an Enova International brand, where it's offered",
+        description:
+          "[Headway Capital](https://www.headwaycapital.com/) is a small-business line-of-credit provider operated by Enova International — the same public parent company that owns OnDeck, above. Rather than an MCA, it offers a revolving line of credit with draw access once approved, and Enova positions it as a companion product to OnDeck's term-loan lineup.\n\nThe key difference from OnDeck and the MCA providers on this list is availability: Headway Capital's line of credit is not offered in every state, so businesses in some parts of the country will need to confirm the current state list before applying.",
+        strengths: [
+          "Revolving line of credit means you draw only what you need and can reuse the credit line",
+          "Shares an underwriting parent (Enova International) with OnDeck, an established public company",
+          "Positioned as a companion, fixed-payment-style product alongside a sister MCA-alternative brand",
+        ],
+        limitations: [
+          "Not a merchant cash advance — no sales-linked remittance flexibility",
+          "Line of credit is not available in every US state",
+          "Rates and fees are quote-based within a range rather than a single published number",
+        ],
+        pricing:
+          "Line of credit amounts and rates are quote-based and vary by state and applicant profile. Availability is limited to a subset of US states — confirm your state at headwaycapital.com.",
+      },
+      {
+        name: "Can Capital",
+        bestFor: "One of the longest-operating alternative small-business lenders, now focused on working capital and equipment financing",
+        description:
+          "[Can Capital](https://www.cancapital.com/) (also styled CAN Capital) is one of the earliest entrants in the alternative small-business financing space, operating since the late 1990s. Its current site markets working capital loans and equipment financing rather than leading with a factor-rate merchant cash advance, though revenue-based products remain part of its history.\n\nThe practical difference versus Rapid Finance, Credibly, and Fora Financial above is emphasis: Can Capital's current marketing leans toward working-capital and equipment loans, so if you're specifically shopping a classic MCA, confirm which product you're being quoted before comparing it to a factor-rate offer.",
+        strengths: [
+          "Decades of operating history in small-business alternative financing",
+          "Offers equipment financing alongside working capital, useful if you need both",
+          "Established brand with a longer track record than most competitors on this list",
+        ],
+        limitations: [
+          "Current product menu emphasizes working capital and equipment loans over a clearly marketed MCA",
+          "Funding amounts and pricing are not published",
+          "Went through a public debt-financing restructuring around 2016 — worth factoring into any long-term relationship consideration",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and not published. Quotes at cancapital.com.",
+      },
     ],
     comparisonTable: {
       headers: [
@@ -194,6 +284,51 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
             "625 FICO, 1 yr, $100k/yr",
           ],
         },
+        {
+          name: "Kabbage (Amex Business Blueprint)",
+          values: [
+            "Line of credit + banking (not MCA)",
+            "Not published",
+            "Varies by product",
+            "Set by American Express",
+          ],
+        },
+        {
+          name: "Kapitus",
+          values: [
+            "Multi-product marketplace (loan/LOC/RBF/factoring)",
+            "Not published",
+            "Varies by product matched",
+            "Not published",
+          ],
+        },
+        {
+          name: "Kalamata Capital Group",
+          values: [
+            "MCA + short-term loan (broker/ISO)",
+            "Not published",
+            "Advertises fast decisions",
+            "Not published",
+          ],
+        },
+        {
+          name: "Headway Capital",
+          values: [
+            "Line of credit (not MCA)",
+            "Not published",
+            "Fast draw once approved",
+            "Limited to specific states",
+          ],
+        },
+        {
+          name: "Can Capital",
+          values: [
+            "Working capital + equipment financing",
+            "Not published",
+            "Not published",
+            "Not published",
+          ],
+        },
       ],
     },
     verdict:
@@ -218,6 +353,21 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         heading: "When invoice factoring beats an MCA",
         content:
           "If your cash crunch comes from slow-paying customers rather than thin margins, [invoice factoring](/invoice-factoring/) is often cheaper than an MCA. Factoring advances cash against specific unpaid invoices and is repaid when your customer pays — so you are not committing a slice of all future sales, and there is no daily holdback on your whole revenue stream.\n\nSeveral companies on this list (Rapid Finance, Expansion Capital Group) offer factoring alongside MCA products. If you invoice B2B customers on net-30 or net-60 terms, ask about factoring before you accept an advance.",
+      },
+      {
+        heading: "Availability by state and metro area",
+        content:
+          "Most of the providers on this list — Rapid Finance, Credibly, Fora Financial, National Funding, Expansion Capital Group, Kapitus, Kalamata Capital Group, and Can Capital — fund small businesses nationwide, including in the states that show the heaviest merchant cash advance search demand: California, Florida, Georgia, Maryland, New Jersey, Texas, and New York (including New York City, Brooklyn, and other major metros like Miami, Tampa, and Las Vegas). Nationwide availability doesn't guarantee approval — individual underwriting still applies.\n\nHeadway Capital's line of credit is the one exception here: it's licensed in a specific list of states rather than all 50, so confirm your state directly with the lender before assuming it's available where you do business. And remember that California and New York layer additional commercial-financing disclosure requirements onto any MCA offer made to a business there (see the disclosure-law section above) — that's a borrower protection, not a barrier to access.",
+      },
+      {
+        heading: "A note on Yellowstone Capital",
+        content:
+          "Yellowstone Capital is a name that comes up often in merchant cash advance searches, but it is not a company we can recommend or link to as an active option. The FTC found that Yellowstone Capital withdrew money from small businesses' accounts without authorization and misrepresented advance terms, resulting in a $9.8 million settlement and refunds to thousands of harmed businesses (see Sources below). More recently, state attorneys general in New York and New Jersey pursued further action over its merchant cash advance practices, and public reporting indicates Yellowstone Capital LLC is no longer an active lender as of 2026, with outstanding merchant debts canceled as part of the resulting settlements.\n\nIf you're researching Yellowstone Capital because of an existing advance or a collection notice, that legal history — not current pricing — is the relevant fact. Speaking with a commercial-finance attorney about your options is a more useful next step than searching for new financing from the company.",
+      },
+      {
+        heading: "Niche and international providers",
+        content:
+          "A few brand names surface often in merchant cash advance searches but serve a different market than the US-focused providers compared above. [Dojo](https://dojo.tech/), [Teya](https://www.teya.com/), [Worldpay](https://www.worldpay.com/en), and [YouLend](https://youlend.com/) are UK- and Europe-focused payments and embedded-finance companies — YouLend is the funder behind cash-advance products branded through partners like Dojo and Teya, offering revenue-based funding bundled into a merchant's existing card-payment relationship. They're relevant if you process card payments through one of these UK/EU platforms, but they aren't general-purpose US small-business MCA providers.\n\n[Giggle Finance](https://gigglefinance.com/) sits in a different niche again: it funds US gig-economy workers, freelancers, and online-marketplace sellers, sizing and underwriting a cash advance around gig or 1099 income rather than a traditional storefront's card or bank-statement revenue. It's worth knowing about if you're a rideshare driver, delivery worker, or marketplace seller rather than a brick-and-mortar business — a distinct enough niche that it deserves its own qualification guide rather than a place among the general small-business picks above.",
       },
     ],
     faqs: [
@@ -266,6 +416,11 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         label:
           "FTC — $9.7M Returned to Small Businesses Harmed by Yellowstone Capital",
         url: "https://www.ftc.gov/news-events/news/press-releases/2022/06/federal-trade-commission-returns-more-97-million-small-businesses-harmed-yellowstone-capitals",
+      },
+      {
+        label:
+          "New York Attorney General — Settlement with Yellowstone Capital Regarding Merchant Cash Advances",
+        url: "https://ag.ny.gov/resources/individuals/credit-debt-lending/yellowstone-settlement",
       },
       {
         label:
