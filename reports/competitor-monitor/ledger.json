@@ -88066,11 +88066,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/business/taxes/learn/small-business-tax-services": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:28442f7ba06f2e4315b4782c5a2603e85ae629a6cf9ac7baeea1f007e1a1da54",
+          "disposition": "published",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-07-02T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-to-choose-a-small-business-tax-service/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Signs you&#39;ve outgrown DIY tax software",
@@ -88089,7 +88093,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Small-Business Tax Services of 2026 - NerdWallet",
           "tool_io": []
         },
@@ -96678,11 +96682,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/real-applications-zero-percent-credit-card-approval": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:9af3dbd39da823b272622446c2a7877f4adea70cccb8270df3e79080b46c0d96",
+          "disposition": "published",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-07-06T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/credit-score-for-0-apr-credit-card/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "0% APR credit card approval rates",
@@ -96694,7 +96702,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Credit Score Do You Need for a 0% APR Credit Card? (Based on Real Applications) - NerdWallet",
           "tool_io": []
         },
@@ -233031,11 +233039,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/estate-planning/what-happens-to-your-401k-when-you-die": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:4c52268c49749711a40a6f4f36929cfcb1265b7f89e868856177c48574870152",
+          "disposition": "published",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T21:46:48+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/401k-beneficiary-rules/",
           "outline": [
             "How Your 401(k) Is Passed onto a Beneficiary",
             "What the Beneficiary Needs to Do to Inherit the 401(k)",
@@ -233048,7 +233060,7 @@
             "401k",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Happens to Your 401(k) When You Die? Beneficiary Rules and Taxes",
           "tool_io": []
         },
@@ -239437,11 +239449,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/heloc-interest-tax-deductible": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:c26726c6b37e53bbc3161e752ee23959ade57eede9d4573d844dfef95a00ece5",
+          "disposition": "enriched",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T21:46:18+00:00",
+          "our_url": "https://www.themodernwallet.com/compare/heloc-vs-home-equity-loan/",
           "outline": [
             "Is HELOC Interest Tax Deductible?",
             "Rules for Deducting HELOC Interest",
@@ -239458,7 +239474,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Is HELOC Interest Tax Deductible? IRS Rules and Limits",
           "tool_io": []
         },
@@ -254767,11 +254783,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/hsa-investments": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:30564a4b3c6b538bdd576e2bac28e72d7657fb3bca17cba054a9f69190586d0d",
+          "disposition": "enriched",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T17:13:22+00:00",
+          "our_url": "https://www.themodernwallet.com/compare/hsa-vs-fsa/",
           "outline": [
             "What\u2019s the Right Approach for HSA Investments?",
             "1. Managed Approach",
@@ -254792,7 +254812,7 @@
             "investing",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "A 2026 Guide to HSA Investments",
           "tool_io": []
         },
@@ -263821,11 +263841,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/mortgage/all-about-the-va-funding-fee": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:268c44e84a8ff665c0b98b7283183fb0898741f19add85d37b95b15dc6895253",
+          "disposition": "enriched",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T17:16:54+00:00",
+          "our_url": "https://www.themodernwallet.com/mortgage/va-loan-calculator/",
           "outline": [
             "What Is the VA Funding Fee?",
             "How Much Does the VA Funding Fee Cost?",
@@ -263840,7 +263864,7 @@
             "loans",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "2026 VA Funding Fee: Complete Guide",
           "tool_io": []
         },
@@ -269365,11 +269389,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/mortgage/va-loan-requirements": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:d49b7e712e282c2626fbf6377be278e7efc747587ea3b8f6f3b5ff3a353271d2",
+          "disposition": "enriched",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T17:21:22+00:00",
+          "our_url": "https://www.themodernwallet.com/compare/va-loan-vs-conventional-loan/",
           "outline": [
             "VA Loan Basics",
             "VA Loan Eligibility Requirements",
@@ -269388,7 +269416,7 @@
             "loans",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "2026 Eligibility Requirements for VA Loans",
           "tool_io": []
         },
@@ -275577,11 +275605,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/do-i-need-a-financial-advisor-for-my-401k": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:883e79f1272a204f54928795f0e94ad7fc51b89e73d1dcd3f453c1bd7483fd70",
+          "disposition": "enriched",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T22:16:13+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-to-choose-a-financial-advisor/",
           "outline": [
             "What Is a 401(k)?",
             "How a Financial Advisor Can Help Your 401(k)",
@@ -275599,7 +275631,7 @@
             "investing",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Do I Need a Financial Advisor for My 401(k)?",
           "tool_io": []
         },
@@ -278756,11 +278788,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/medicare-extra-help-income-limits": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:67fe60b120d7adf483433eb398a86639c3417ca062590e411c1fb725fdfae5f7",
+          "disposition": "published",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T17:32:58+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/medicare-extra-help-income-limits/",
           "outline": [
             "What Is Medicare Extra Help?",
             "2026 Income Limits for Medicare Extra Help",
@@ -278773,7 +278809,7 @@
           "relevance_hits": [
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Medicare Extra Help Income Limits for 2026",
           "tool_io": []
         },
@@ -289075,11 +289111,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/who-is-exempt-from-federal-income-tax": {
+          "acted": true,
+          "acted_date": "2026-07-08",
           "content_hash": "sha256:6e9964d9953c8af4c09420909c6ce0460efebff6c6bd89b2acf641ac2cfc2853",
+          "disposition": "published",
           "first_seen": "2026-07-08",
           "kind": "page",
           "last_seen": "2026-07-08",
           "lastmod": "2026-02-06T19:50:03+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/who-is-exempt-from-federal-income-tax/",
           "outline": [
             "What Does It Mean to Be Exempt From Federal Income Tax?",
             "Individuals Who May Be Exempt From Federal Income Tax",
@@ -289098,7 +289138,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Who Is Exempt From Federal Income Tax: Individuals and Groups",
           "tool_io": []
         },
