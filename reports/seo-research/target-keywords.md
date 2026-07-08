@@ -5892,6 +5892,21 @@
 | trump accounts invested in what | trump investment account | alphabet:w | 2026-07-08 |
 | how does the trump child investment account work | trump investment account | alphabet:w | 2026-07-08 |
 | trump youth investment account | trump investment account | alphabet:y | 2026-07-08 |
+| trump account etf options | trump account alternatives | alphabet:e | 2026-07-08 |
+| trump account fund options | trump account alternatives | alphabet:f | 2026-07-08 |
+| trump alter | trump account alternatives | alphabet:f | 2026-07-08 |
+| trump account alternative name | trump account alternatives | alphabet:n | 2026-07-08 |
+| alternatives to trump account | trump account alternatives | alphabet:t | 2026-07-08 |
+| trump account withdrawal options | trump account alternatives | alphabet:w | 2026-07-08 |
+| trump account instead of 529 | trump account instead of | question:what | 2026-07-08 |
+| what is up with trump's signature | trump account instead of | question:what | 2026-07-08 |
+| what bills have donald trump signed | trump account instead of | question:what | 2026-07-08 |
+| trump account vs others | trump account instead of | alphabet:o | 2026-07-08 |
+| trump account vs rrsp | trump account instead of | alphabet:r | 2026-07-08 |
+| trump account vs roth ira for child | trump account instead of | alphabet:r | 2026-07-08 |
+| trump account vs roth ira reddit | trump account instead of | alphabet:r | 2026-07-08 |
+
+
 
 
 

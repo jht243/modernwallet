@@ -1,7 +1,17 @@
 {
   "version": 1,
-  "lastRun": "2026-06-29",
+  "lastRun": "2026-07-08",
   "dropped": [
+    { "slug": "trump-account-vs-coverdell-esa", "format": "comparison", "reason": "0 Autocomplete demand (Trump pass 2026-07-08) — 'trump account vs X' space saturated", "score": 0 },
+    { "slug": "trump-account-vs-i-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-savings-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-whole-life-insurance", "format": "comparison", "reason": "~0 Autocomplete demand (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-iul", "format": "comparison", "reason": "1 Autocomplete mention, niche (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-cd", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-able-account", "format": "comparison", "reason": "1 mention, niche disability account (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-trust-fund", "format": "comparison", "reason": "1 mention (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-ugma", "format": "comparison", "reason": "DUPLICATE of trump-account-vs-custodial-account (2026-07-08)", "score": 0 },
+    { "slug": "trump-account-vs-custodial-roth-ira", "format": "comparison", "reason": "DUPLICATE of trump-account-vs-roth-ira (2026-07-08)", "score": 0 },
     { "slug": "etf-vs-index-fund", "optionA": "ETF", "optionB": "Index Fund", "reason": "KD 37 — too competitive for current DR", "score": 0.393 },
     { "slug": "heloc-vs-home-equity-loan", "optionA": "HELOC", "optionB": "Home Equity Loan", "reason": "KD 45 — high-authority incumbents dominate SERP", "score": 0.356 },
     { "slug": "active-vs-passive-investing", "optionA": "Active Investing", "optionB": "Passive Investing", "reason": "KD 26 + low vol (600) — not enough return", "score": 0.318 },
@@ -35,6 +45,7 @@
     { "slug": "best-net-worth-tracker", "format": "roundup", "category": "net worth trackers", "angle": "best", "publishedAt": "2026-06-28" },
     { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" },
     { "slug": "hsa-vs-fsa", "format": "comparison", "optionA": "Health Savings Account (HSA)", "optionB": "Flexible Spending Account (FSA)", "publishedAt": "2026-06-29" },
-    { "slug": "va-loan-vs-conventional-loan", "format": "comparison", "optionA": "VA Loan", "optionB": "Conventional Loan", "publishedAt": "2026-06-29" }
+    { "slug": "va-loan-vs-conventional-loan", "format": "comparison", "optionA": "VA Loan", "optionB": "Conventional Loan", "publishedAt": "2026-06-29" },
+    { "slug": "trump-account-alternatives", "format": "alternatives", "subject": "Trump Account", "route": "/guides/trump-account-alternatives/", "publishedAt": "2026-07-08" }
   ]
 }
