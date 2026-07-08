@@ -2493,8 +2493,8 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   {
     slug: "trump-account-vs-savings-account",
-    title: "Trump Account vs Savings Account: Which for Kids?",
-    metaDescription: "Trump account vs savings account for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid, safe. See which fits college and wealth goals.",
+    title: "Trump Account vs High-Yield Savings Account (HYSA)",
+    metaDescription: "Trump Account vs a high-yield savings account (HYSA) for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid cash. See which fits your goals.",
     targetKeyword: "trump account vs savings account",
     optionA: "Trump Account",
     optionB: "Kids Savings Account (HYSA)",

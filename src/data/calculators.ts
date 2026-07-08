@@ -621,9 +621,9 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "trump-account",
     label: "Trump Account",
     navOrder: 13,
-    metaTitle: "Trump Account Calculator: Savings & Baby Account",
+    metaTitle: "Trump Account Calculator: $1,000 Value at 18",
     metaDescription:
-      "Free Trump Account calculator — also called the Trump savings account or baby account. Project how the $1,000 federal seed plus contributions grow by age 18.",
+      "See what a Trump Account — also called a Trump savings or baby account — could be worth at 18. Project the $1,000 federal seed plus your yearly contributions.",
     targetKeyword: "trump account calculator",
     h1: "Trump Account Calculator",
     intro:
