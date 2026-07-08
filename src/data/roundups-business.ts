@@ -451,4 +451,308 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       },
     ],
   },
+
+  // ── 2. Best Invoice Factoring Companies (ga4-top-pages pass 2026-07-08) ────
+  {
+    slug: "best-invoice-factoring-companies",
+    title: "Best Invoice Factoring Companies of 2026",
+    metaDescription:
+      "Compare the best invoice factoring companies of 2026 on advance rate, industry focus, and speed. Independent picks — no factor paid for placement.",
+    targetKeyword: "best invoice factoring companies",
+    category: "invoice factoring companies",
+    angle: "best",
+    segment: "small business owners",
+    h1: "Best Invoice Factoring Companies of 2026",
+    intro:
+      "The best invoice factoring companies fund fast, quote a clear advance rate and fee, and match a real specialty — trucking, staffing, government contracting, or general B2B — to your industry. For most small businesses that means one of six providers below: altLINE, Riviera Finance, Scale Funding, Triumph Business Capital, Porter Capital, or RTS Financial, plus eCapital for businesses that want one funder across several industry niches.\n\nInvoice factoring is a sale of your unpaid invoices, not a loan — you get cash now, and the factor collects (or you retain the collections relationship, under a non-recourse or recourse agreement) when your customer pays. Pricing is typically quote-based and varies by risk profile, so the ranges below are directional — get a real offer before you decide. ModernWallet is not a lender and takes no placement fees. These rankings are independent, and no company paid to appear.",
+    rankingCriteria:
+      "We scored each provider on five things a business owner actually feels: funding speed, advance-rate and fee transparency, industry specialization (a factor that knows trucking or staffing underwrites and services those invoices better than a generalist), recourse vs non-recourse options, and whether the company lends directly or brokers through a third party.\n\nProviders that publish a clear advance-rate range and disclose recourse terms upfront ranked higher. Providers with a narrow, well-matched industry focus ranked higher for businesses in that niche, even when their headline terms weren't the cheapest on paper.",
+    options: [
+      {
+        name: "altLINE",
+        bestFor: "Bank-backed pricing with no lockbox or annual-renewal fees",
+        description:
+          "[altLINE](https://altline.sobanco.com/) is the invoice-factoring division of The Southern Bank Company, an FDIC-insured community bank founded in 1936 — so unlike most factoring companies, which broker funds from a third-party capital source, altLINE lends directly from its own balance sheet. That structure is why it can skip the monthly access, lockbox, and annual-renewal fees that many independent factors charge.\n\naltLINE serves a broad mix of B2B industries plus a dedicated payroll-funding product for staffing agencies, and offers both recourse and non-recourse factoring.",
+        strengths: [
+          "Direct bank lender, not a broker — funds from its own balance sheet",
+          "No monthly access, lockbox, or annual-renewal fees",
+          "Serves a wide range of B2B industries plus staffing payroll funding",
+          "Both recourse and non-recourse options available",
+        ],
+        limitations: [
+          "Bank underwriting can mean a slower, more document-heavy approval than a pure fintech factor",
+          "Specific factor rates are quote-based and vary by risk profile",
+          "Best fit for established B2B invoicing relationships, not one-off invoices",
+        ],
+        pricing:
+          "Factor rates and advance amounts are quote-based and vary by risk profile and industry. No monthly minimum, lockbox, or annual-renewal fee. Quotes at altline.sobanco.com.",
+      },
+      {
+        name: "Riviera Finance",
+        bestFor: "Non-recourse factoring with 60+ years of operating history",
+        description:
+          "[Riviera Finance](https://www.rivierafinance.com/) has offered full-service, non-recourse invoice factoring since 1969, with more than 25 offices across the U.S. and Canada. Non-recourse means Riviera absorbs the loss if your customer never pays an approved invoice, effectively acting as your credit department.\n\nRiviera markets an advance of up to 95% of invoice face value depending on your industry and situation, with same-day-to-24-hour funding once you're set up as a client.",
+        strengths: [
+          "Non-recourse factoring — the factor absorbs approved-invoice credit risk, not you",
+          "Advance up to 95% of invoice value depending on industry",
+          "60+ years in business with a large office network across the U.S. and Canada",
+          "Acts as your credit and collections department, not just a funding source",
+        ],
+        limitations: [
+          "Non-recourse protection typically costs more than recourse factoring",
+          "Specific advance rates and fees are quote-based and vary by industry",
+          "Local-office model means service quality can vary by branch",
+        ],
+        pricing:
+          "Advance up to 95% of invoice value; pricing quote-based and varies by industry and risk profile. Quotes at rivierafinance.com.",
+      },
+      {
+        name: "Scale Funding (formerly TCI Business Capital)",
+        bestFor: "Midwest-based factoring with a long track record under a new name",
+        description:
+          "[Scale Funding](https://getscalefunding.com/) is the new name for TCI Business Capital, a factoring and receivables-financing provider that has operated since 1994 and is a division of Fidelity Bank. It offers revolving credit lines against receivables from roughly $10,000 to $20 million per month, serving small and mid-sized businesses across a range of industries.\n\nBecause it's bank-affiliated, expect a similar due-diligence process to altLINE — more documentation than a pure online fintech factor, in exchange for bank-backed stability.",
+        strengths: [
+          "Bank-affiliated (division of Fidelity Bank) with a 30+ year operating history under its prior name",
+          "Wide funding range — roughly $10,000 to $20 million per month",
+          "Serves a broad mix of small and mid-sized business industries",
+        ],
+        limitations: [
+          "Recently rebranded from TCI Business Capital to Scale Funding — confirm you're on the current site (getscalefunding.com) when researching",
+          "Bank-affiliated underwriting can be slower than a fintech-only factor",
+          "Specific factor rates and advance amounts are quote-based",
+        ],
+        pricing:
+          "Revolving credit lines against receivables from about $10,000 to $20 million per month; pricing quote-based and varies by risk profile. Quotes at getscalefunding.com.",
+      },
+      {
+        name: "Triumph Business Capital",
+        bestFor: "Trucking and freight factoring at scale",
+        description:
+          "[Triumph Business Capital](https://triumph.io/) is the freight-factoring division of Triumph Financial, Inc. (NYSE: TFIN), a publicly traded financial and technology company. Originally founded as Advance Business Capital in 2004 and acquired by the bank in 2012, Triumph has grown into one of the largest freight factors in the U.S., processing billions of dollars in freight invoices annually for carriers, freight brokers, and government contractors.\n\nIts scale and trucking-specific technology (including load and invoice submission tools) make it a natural fit for carriers who want a factor that already understands the freight industry's payment cycle.",
+        strengths: [
+          "Backed by a publicly traded parent company (Triumph Financial, NYSE: TFIN)",
+          "Deep specialization in trucking, freight brokers, and government contractors",
+          "Purpose-built technology for submitting loads and invoices",
+          "Processes billions in freight invoices annually — proven scale",
+        ],
+        limitations: [
+          "Freight-industry focus makes it a less natural fit outside trucking/logistics",
+          "Specific advance rates and fees are quote-based and vary by carrier profile",
+          "Larger, more corporate structure than a boutique regional factor",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and vary by carrier profile and freight volume. Quotes at triumph.io.",
+      },
+      {
+        name: "Porter Capital",
+        bestFor: "A direct lender with over 30 years across a wide range of industries",
+        description:
+          "[Porter Capital](https://portercap.com/) was founded in 1991 in Birmingham, Alabama, and has funded more than $8 billion since inception as a direct lender (not a broker). It serves businesses across a wide range of industries and runs a dedicated transportation division, Porter Freight Funding, for trucking-specific factoring.\n\nAs a direct lender, Porter controls its own underwriting and funding process rather than routing your file through a third-party capital source.",
+        strengths: [
+          "Direct lender — funds from its own capital, not a broker network",
+          "30+ years in business with $8 billion+ funded since inception",
+          "Dedicated transportation division (Porter Freight Funding) alongside general factoring",
+          "Broad industry coverage beyond trucking",
+        ],
+        limitations: [
+          "Specific advance rates and fees are quote-based and not published",
+          "Regional (Birmingham, AL) roots mean less brand recognition than the largest national factors",
+          "Best suited to businesses that bill creditworthy commercial or government customers",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and vary by risk profile and industry. Quotes at portercap.com.",
+      },
+      {
+        name: "RTS Financial",
+        bestFor: "Trucking-focused factoring bundled with fuel savings",
+        description:
+          "[RTS Financial](https://rtsinc.com/) specializes in factoring for trucking companies and owner-operators, pairing same-day invoice payment with fuel-discount and driver-related tools built specifically for the freight industry. Its factoring product is designed around a carrier's cash-flow cycle — get paid on a load without waiting on a shipper's standard payment terms.\n\nBecause it's built specifically for trucking, expect load-board and mobile-wallet features that a generalist factor (like altLINE or Porter Capital's non-transportation side) typically doesn't offer.",
+        strengths: [
+          "Purpose-built for trucking, with fuel-discount and driver tools bundled in",
+          "Same-day invoice payment marketed for approved loads",
+          "Mobile wallet and load-board access aimed at owner-operators and small fleets",
+        ],
+        limitations: [
+          "Narrow trucking focus — not a fit for non-transportation B2B invoicing",
+          "Specific factor rates and fees are quote-based",
+          "Bundled fuel/driver tools matter less if you don't need them",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and vary by carrier profile. Quotes at rtsinc.com.",
+      },
+      {
+        name: "eCapital",
+        bestFor: "One funder spanning many industry niches through acquisitions",
+        description:
+          "[eCapital](https://ecapital.com/) has grown into one of the larger independent factoring platforms in North America and the U.K. through a series of acquisitions — including Flexible Funding and its freight-factoring subsidiary InstaPay (2021), UMB Bank's accounts-receivable financing division and CNH Finance (2022), and U.K.-based Advantedge Commercial Finance. That roll-up strategy gives eCapital factoring products spanning transportation, staffing, and general commercial invoicing under one company.\n\nIf you'd rather shop one larger platform than a narrow regional specialist, eCapital's breadth across industries and geographies (U.S., Canada, and the U.K.) is the main draw.",
+        strengths: [
+          "Broad industry coverage (transportation, staffing, general B2B) under one company",
+          "Grown through acquisition of several established niche factors, adding depth in each",
+          "Operates across the U.S., Canada, and the U.K.",
+        ],
+        limitations: [
+          "Breadth from acquisitions can mean less-unified service than a single-founder factor",
+          "Specific advance rates and fees are quote-based and not published",
+          "Larger platform may feel less personal than a boutique regional factor",
+        ],
+        pricing:
+          "Funding amounts and pricing are quote-based and vary by risk profile and industry. Quotes at ecapital.com.",
+      },
+    ],
+    comparisonTable: {
+      headers: [
+        "Company",
+        "Specialty",
+        "Recourse options",
+        "Speed",
+        "Structure",
+      ],
+      rows: [
+        {
+          name: "altLINE",
+          values: [
+            "General B2B + staffing payroll funding",
+            "Recourse & non-recourse",
+            "Not published",
+            "Direct bank lender (FDIC-insured)",
+          ],
+        },
+        {
+          name: "Riviera Finance",
+          values: [
+            "General B2B, up to 95% advance",
+            "Non-recourse",
+            "Same-day to 24 hrs after setup",
+            "Direct lender, 25+ offices US/Canada",
+          ],
+        },
+        {
+          name: "Scale Funding",
+          values: [
+            "General B2B, $10K–$20M/mo",
+            "Not published",
+            "Not published",
+            "Bank-affiliated (Fidelity Bank division)",
+          ],
+        },
+        {
+          name: "Triumph Business Capital",
+          values: [
+            "Trucking, freight brokers, gov't contractors",
+            "Not published",
+            "Purchase decision in seconds on most invoices",
+            "Public company division (NYSE: TFIN)",
+          ],
+        },
+        {
+          name: "Porter Capital",
+          values: [
+            "General B2B + transportation division",
+            "Not published",
+            "Not published",
+            "Direct lender since 1991",
+          ],
+        },
+        {
+          name: "RTS Financial",
+          values: [
+            "Trucking only",
+            "Not published",
+            "Same-day marketed",
+            "Trucking-focused platform",
+          ],
+        },
+        {
+          name: "eCapital",
+          values: [
+            "Transportation, staffing, general B2B",
+            "Not published",
+            "Varies by product",
+            "Multi-acquisition platform (US/Canada/UK)",
+          ],
+        },
+      ],
+    },
+    verdict:
+      "For a bank-backed, fee-light general factor, altLINE leads. If non-recourse protection matters most, Riviera Finance's 60-year track record stands out. For trucking specifically, Triumph Business Capital and RTS Financial are purpose-built, with Triumph's scale as a public company an edge for larger fleets. Porter Capital and Scale Funding are solid general-purpose direct lenders with long histories, and eCapital is worth a look if you want one platform spanning several industry niches. Always convert the quote you receive into an effective APR — see our [factoring fee calculator](/invoice-factoring/factoring-fee-calculator/) — before comparing offers, since factor rates alone don't tell the whole story.",
+    sections: [
+      {
+        heading: "How to actually compare invoice factoring offers",
+        content:
+          "A factoring fee alone doesn't tell you the real cost. To compare two offers, weigh three things together: the advance rate (how much cash you get upfront), the fee per period, and how fast your customer typically pays.\n\nA 1.5% fee per 30 days sounds small, but it compounds every period the invoice stays outstanding — a customer who pays in 45 days triggers two fee periods, not one and a half. Use our [invoice factoring calculator](/invoice-factoring/) to convert an advance rate and fee structure into cash-in-hand and an effective APR before you sign anything.",
+      },
+      {
+        heading: "Recourse vs non-recourse: who eats a bad debt",
+        content:
+          "Recourse factoring means you must buy back an invoice if your customer never pays — you keep the non-payment risk. Non-recourse factoring shifts that risk to the factor, which is why non-recourse deals usually cost more.\n\nMost factors on this list are quote-based on recourse terms and disclose them only during underwriting, so ask directly which structure you're being offered before comparing price. Riviera Finance markets non-recourse as its core offering; several others (Scale Funding, Triumph, Porter, RTS, eCapital) don't publish this upfront, so it's a question worth asking every provider.",
+      },
+      {
+        heading: "Industry specialization matters more than it seems",
+        content:
+          "A factor that already understands your industry's invoicing rhythm — trucking's load-to-payment cycle, staffing's weekly payroll funding needs, or government contracting's slower but reliable payment terms — tends to underwrite faster and service the relationship better than a pure generalist.\n\nThat's why Triumph Business Capital and RTS Financial lean so heavily into trucking, and why altLINE built a dedicated payroll-funding product for staffing agencies. If your business fits one of these niches, a specialist is usually worth prioritizing over a generalist's headline rate.",
+      },
+      {
+        heading: "Direct lender vs broker — why it affects your terms",
+        content:
+          "altLINE, Riviera Finance, and Porter Capital all fund directly from their own balance sheet rather than brokering your file to a third-party capital source. A direct lender typically means fewer parties in the funding chain, which can translate to faster decisions and more consistent terms over time, since you're not re-underwritten by a new capital partner if your original funder's arrangement changes.\n\nThat doesn't make broker-sourced factoring bad — it can widen your options if a direct lender turns you down — but it's worth asking any provider whether they fund directly or place your file with a partner.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best invoice factoring companies in 2026?",
+        answer:
+          "The best invoice factoring companies in 2026 include altLINE for bank-backed, fee-light general factoring, Riviera Finance for non-recourse protection with a 60-year track record, Triumph Business Capital and RTS Financial for trucking-specific factoring, and Porter Capital, Scale Funding, and eCapital as established general-purpose direct lenders. Rankings are independent — no company paid for placement, and pricing is always quote-based.",
+      },
+      {
+        question: "How much does invoice factoring cost?",
+        answer:
+          "Invoice factoring cost is typically quoted as an advance rate (commonly 80%–90% of invoice value) plus a factoring fee (commonly 1%–5%) per 30-day period the invoice stays outstanding. On a $100,000 invoice at an 85% advance and a 1.5% fee, a 45-day payment produces about a 28.63% effective APR — see our [factoring fee calculator](/invoice-factoring/factoring-fee-calculator/) for the exact math on your numbers.",
+      },
+      {
+        question: "What's the difference between recourse and non-recourse invoice factoring?",
+        answer:
+          "Recourse factoring means you must buy back an invoice if your customer never pays, so you keep the non-payment risk. Non-recourse factoring shifts that risk to the factoring company, which is why non-recourse deals usually charge higher fees. Riviera Finance markets non-recourse as its standard offering; ask any provider which structure applies before comparing price.",
+      },
+      {
+        question: "Do invoice factoring companies specialize by industry?",
+        answer:
+          "Yes. Triumph Business Capital and RTS Financial specialize in trucking and freight, altLINE offers a dedicated payroll-funding product for staffing agencies, and eCapital spans transportation, staffing, and general B2B through acquired niche factors. A specialist that already understands your industry's payment cycle often underwrites and services your account better than a pure generalist.",
+      },
+      {
+        question: "Is it better to use a direct lender or a broker for invoice factoring?",
+        answer:
+          "A direct lender — like altLINE, Riviera Finance, or Porter Capital — funds from its own balance sheet, which can mean fewer parties in the chain and more consistent terms over time. A broker can widen your options if a direct lender declines you, but confirm who actually funds the deal and services your account before signing.",
+      },
+      {
+        question: "How fast can I get funded through invoice factoring?",
+        answer:
+          "Most factoring companies wire your advance within 24 to 48 hours after approving your first invoice, and providers like Riviera Finance and Triumph Business Capital market same-day-to-24-hour turnarounds on already-approved customers. The initial setup — verifying your invoices and your customer's credit — is usually the slower step and can take a few days to a week for a new account.",
+      },
+    ],
+    sources: [
+      {
+        label: "U.S. Small Business Administration — Asset-Based Lending: Upside and Downside",
+        url: "https://www.sba.gov/blog/asset-based-lending-what-upside-downside",
+      },
+      {
+        label: "CFPB — Small business lending under ECOA (Regulation B)",
+        url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/",
+      },
+    ],
+    relatedComparisons: [
+      "invoice-factoring-vs-business-line-of-credit",
+      "invoice-factoring-vs-merchant-cash-advance",
+      "invoice-factoring-vs-invoice-discounting",
+    ],
+    calculatorLinks: [
+      {
+        label: "Invoice factoring calculator",
+        href: "/invoice-factoring/",
+      },
+      {
+        label: "Factoring fee calculator",
+        href: "/invoice-factoring/factoring-fee-calculator/",
+      },
+    ],
+  },
 ];

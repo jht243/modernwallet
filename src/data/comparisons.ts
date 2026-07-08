@@ -1470,13 +1470,100 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "ACTEC — American College of Trust and Estate Counsel", url: "https://www.actec.org/" },
       { label: "Medicaid.gov — Estate Recovery", url: "https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery/index.html" },
     ],
-    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer"],
+    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer", "living-trust-vs-lady-bird-deed"],
     calculatorLinks: [
       { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
       { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
       { label: "Estate planning calculator", href: "/estate-planning/" },
       { label: "Medicaid spend-down calculator", href: "/elder-care/medicaid-spend-down-calculator/" },
       { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
+    ],
+  },
+
+  // ─── Living Trust vs Lady Bird Deed (ga4-top-pages pass 2026-07-08) ────────
+  {
+    slug: "living-trust-vs-lady-bird-deed",
+    title: "Living Trust vs Lady Bird Deed: Which Is Cheaper?",
+    metaDescription:
+      "Living trust vs lady bird deed: a lady bird deed costs a few hundred dollars and covers one house, while a living trust costs more but covers your whole estate.",
+    targetKeyword: "living trust vs lady bird deed",
+    optionA: "Revocable Living Trust",
+    optionB: "Lady Bird Deed (Enhanced Life Estate Deed)",
+    segment: "Estate Planning",
+    h1: "Living Trust vs Lady Bird Deed: Which Avoids Probate for Less?",
+    intro:
+      "A lady bird deed (also called an enhanced life estate deed) is a real-estate-only document that costs a few hundred dollars and lets your home skip probate and pass directly to named beneficiaries, but it is only available in a handful of states. A revocable living trust costs more — typically $1,500 to $5,000 attorney-drafted — but covers your entire estate, not just one property, and works in every state. If you own a single home in Florida, Texas, Michigan, Vermont, or West Virginia and have little else to plan for, a lady bird deed can be the cheaper, simpler choice; a living trust is the broader tool for everyone else.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it covers", a: "Your entire estate — real estate, accounts, and other property you retitle into it", b: "One piece of real estate named on the deed" },
+        { dimension: "States available", a: "Every state", b: "Only a handful: Florida, Texas, Michigan, Vermont, West Virginia (a few others recognize a similar transfer-on-death deed)" },
+        { dimension: "Typical cost", a: "$1,500–$5,000 attorney-drafted ($5,000–$10,000+ in California/HNW metros); online $139–$599", b: "$400–$1,000 attorney-drafted; a simple recorded form in some states" },
+        { dimension: "Avoids probate", a: "Yes, for everything retitled into the trust", b: "Yes, for the named property only" },
+        { dimension: "Control during life", a: "Full control as trustee; can sell, refinance, or amend", b: "Full control; can sell, mortgage, or revoke without any beneficiary's consent" },
+        { dimension: "Medicaid estate-recovery protection", a: "None — a revocable trust does not shield assets from Medicaid, including after death", b: "Can shield the home from Medicaid estate recovery once you die, since it passes outside probate" },
+        { dimension: "Setup effort", a: "Draft the trust, then retitle each asset into it (the step most people skip)", b: "Sign and record one deed at the county recorder's office" },
+      ],
+    },
+    verdict:
+      "Choose a lady bird deed if you live in one of the states that allows it, own a home as your main asset, and want the cheapest way to keep that house out of probate — it costs a few hundred dollars against a living trust's $1,500-plus. Choose a revocable living trust if you have multiple properties, meaningful non-real-estate assets, want a single document that covers everything, need built-in incapacity planning, or your state does not recognize lady bird deeds at all. Many single-asset homeowners in the eligible states use a lady bird deed instead of a full trust; everyone else, and anyone with a more complex estate, is usually better served by the trust.",
+    sections: [
+      {
+        heading: "What a lady bird deed actually is",
+        content:
+          "A lady bird deed — also called an enhanced life estate deed, and sometimes labeled a transfer-on-death deed in states like Texas that use similar language — lets you keep full ownership and control of your home while you're alive, including the right to sell it, mortgage it, or revoke the deed entirely, without needing permission from the beneficiaries named on it. When you die, the property passes directly to those named beneficiaries, bypassing probate court completely.\n\nOnly five states currently recognize the lady bird deed by name: Florida (used since the 1980s), Texas, Michigan (since 2014), Vermont (since 2018), and West Virginia (since 2019). A handful of other states offer a similar statutory transfer-on-death deed that accomplishes much the same goal for real estate specifically. If your state isn't on this list, the option simply isn't available to you, and a living trust becomes the standard route to avoid probate on a home.",
+      },
+      {
+        heading: "Cost: a few hundred dollars vs a few thousand",
+        content:
+          "A lady bird deed is one of the cheapest probate-avoidance tools available. Attorney-drafted, it typically runs $400 to $1,000 — largely the cost of drafting a single deed and recording it at the county recorder's office. A revocable living trust runs meaningfully higher: $1,500 to $5,000 for typical facts, and $5,000 to $10,000 or more in California and other high-cost metros, per our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/).\n\nThe living trust's higher price buys broader coverage: it can hold bank accounts, brokerage accounts, business interests, and multiple properties, not just one house. A lady bird deed only ever covers the specific parcel named on it — if you own a second home or a rental property, each one needs its own separate deed, and none of your other assets (accounts, vehicles, personal property) get any probate protection from it at all.",
+      },
+      {
+        heading: "The non-obvious edge: Medicaid estate recovery",
+        content:
+          "Here is the tradeoff most comparisons miss. A revocable living trust does NOT protect your home from Medicaid estate recovery after you die, because the assets remain fully in your control (and therefore countable) during your lifetime — Medicaid can still pursue a claim against trust-held property through the probate-adjacent recovery process in many states.\n\nA lady bird deed can do better here. Because the property passes directly to your named beneficiaries at death and never touches probate, it can fall outside the reach of your state's Medicaid estate recovery program for the home specifically — a real advantage for someone whose home is their main asset and who may need Medicaid-funded long-term care later. This is a narrower issue than a full Medicaid Asset Protection Trust (see [revocable vs irrevocable trust](/compare/revocable-vs-irrevocable-trust/) for the MAPT route), but it's a meaningful, low-cost layer of protection a living trust alone does not provide.",
+      },
+      {
+        heading: "When each one wins",
+        content:
+          "A lady bird deed wins when you live in an eligible state, your estate is simple (mainly your home), you have a small number of cooperative beneficiaries, and cost is a real constraint. It's a fast, cheap, single-purpose fix.\n\nA living trust wins when you own more than one property, have significant non-real-estate assets, want one document to manage everything (including what happens if you become incapacitated, not just when you die), or live in a state that doesn't offer the lady bird option at all. Many people layer both: a lady bird deed on the primary home for its Medicaid-recovery edge, and a revocable trust for everything else. See our full [living trust vs will](/compare/living-trust-vs-will/) comparison if you haven't ruled out simpler options first.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What states allow a lady bird deed?",
+        answer:
+          "Only five states currently recognize the lady bird deed (enhanced life estate deed) by name: Florida, Texas, Michigan, Vermont, and West Virginia. A few other states offer a similar statutory transfer-on-death deed for real estate. If your state isn't one of these, a lady bird deed is not an option, and a revocable living trust is the standard way to avoid probate on a home.",
+      },
+      {
+        question: "How much does a lady bird deed cost compared to a living trust?",
+        answer:
+          "A lady bird deed typically costs $400 to $1,000 attorney-drafted, versus $1,500 to $5,000 (or $5,000 to $10,000+ in high-cost metros) for a revocable living trust. The lady bird deed only covers one named property, while the living trust can cover your entire estate once you retitle assets into it.",
+      },
+      {
+        question: "Does a lady bird deed avoid probate?",
+        answer:
+          "Yes, for the specific property named on the deed. The home passes directly to your named beneficiaries at death without going through probate court. It provides no probate protection for any other assets you own — bank accounts, other real estate, or personal property still need their own plan, such as a will or living trust.",
+      },
+      {
+        question: "Does a lady bird deed protect my home from Medicaid?",
+        answer:
+          "A lady bird deed can help shield your home from Medicaid estate recovery after you die, because the property passes directly to beneficiaries outside of probate. A revocable living trust does not offer this protection, since you retain full control of trust assets during your life. Neither tool protects against Medicaid's asset limits while you're alive — a Medicaid Asset Protection Trust (a type of irrevocable trust) is required for that.",
+      },
+      {
+        question: "Can I still sell or mortgage my house after signing a lady bird deed?",
+        answer:
+          "Yes. A lady bird deed's defining feature is that you keep full control during your life — you can sell the property, take out a mortgage, or revoke the deed entirely, all without needing permission from the beneficiaries named on it. Control only passes to the named beneficiaries when you die.",
+      },
+    ],
+    sources: [
+      { label: "Medicaid Planning Assistance — Lady Bird Deeds: How They Work & Which States Allow Them", url: "https://www.medicaidplanningassistance.org/lady-bird-deeds/" },
+      { label: "Medicaid.gov — Estate Recovery", url: "https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery/index.html" },
+      { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust", "probate-vs-trust"],
+    calculatorLinks: [
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
     ],
   },
 
@@ -1739,9 +1826,9 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Trump Account vs Custodial Account (mindmap pass 2026-07-04) ─────────
   {
     slug: "trump-account-vs-custodial-account",
-    title: "Trump Account vs Custodial Account (UTMA/UGMA)",
+    title: "Trump Account vs Custodial Account: Which to Open?",
     metaDescription:
-      "Trump Account vs custodial account (UTMA/UGMA): compare the free $1,000 seed and tax-deferred growth against a custodial account's flexibility and no cap.",
+      "Trump Account vs custodial account (UTMA/UGMA): see whether the free $1,000 seed or a flexible, uncapped custodial account fits your child best.",
     targetKeyword: "trump account vs custodial account",
     optionA: "Trump Account",
     optionB: "Custodial Account (UTMA/UGMA)",
@@ -1796,10 +1883,97 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
       { label: "Federal Student Aid — How Aid Is Calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
     ],
-    relatedComparisons: ["brokerage-vs-ira", "529-vs-roth-ira", "utma-vs-ugma", "529-vs-utma"],
+    relatedComparisons: ["brokerage-vs-ira", "529-vs-roth-ira", "utma-vs-ugma", "529-vs-utma", "custodial-account-vs-savings-account"],
     calculatorLinks: [
       { label: "Trump Account calculator", href: "/trump-account/" },
       { label: "Investment calculator", href: "/investing/" },
+    ],
+  },
+
+  // ─── Custodial Account vs Savings Account (ga4-top-pages pass 2026-07-08) ──
+  {
+    slug: "custodial-account-vs-savings-account",
+    title: "Custodial Account vs Savings Account: Kids' Money",
+    metaDescription:
+      "Custodial account vs savings account for a child: a UTMA/UGMA invests and is irrevocably the child's, while a savings account stays simple, liquid, and yours.",
+    targetKeyword: "custodial account vs savings account",
+    optionA: "Custodial Account (UTMA/UGMA)",
+    optionB: "Savings Account",
+    segment: "Kids & family investing",
+    h1: "Custodial Account vs Savings Account: Which Is Better for Your Child's Money?",
+    intro:
+      "A custodial account (UTMA/UGMA) invests a child's money in stocks, funds, or other assets that irrevocably belong to the child, while a regular savings account for a child just holds cash at a bank or credit union, stays in a parent's control, and earns whatever interest rate the account pays. Choose the custodial account when you want growth over many years and are comfortable giving up control at the age of majority. Choose a savings account when you want simple, fully liquid money you can spend on the child anytime, with no market risk and no irrevocable gift.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it holds", a: "Stocks, ETFs, mutual funds, and (UTMA) other property", b: "Cash only" },
+        { dimension: "Growth potential", a: "Market-linked; historically higher over 10+ years", b: "Interest only — a high-yield account paid roughly 3.5%–4.5% APY in 2026, though rates move with the Fed" },
+        { dimension: "Ownership", a: "Irrevocably the child's the moment you contribute", b: "Titled to whoever opened it — often the parent, or a child co-owner on some bank products" },
+        { dimension: "Who controls withdrawals", a: "Custodian, until the child reaches the age of majority (18–25 by state)", b: "Whoever is the account owner — usually the parent, indefinitely" },
+        { dimension: "FDIC/NCUA insurance", a: "Only the cash sitting uninvested is insured; invested assets are not FDIC-insured", b: "Yes, up to $250,000 per depositor, per institution" },
+        { dimension: "Taxes", a: "Kiddie tax on unearned income above the annual threshold ($2,700 in 2025)", b: "Interest is taxable income each year, generally at the account owner's rate" },
+        { dimension: "FAFSA treatment", a: "Student asset, assessed at up to 20%", b: "Parent asset if parent-owned (up to 5.64%); student asset at 20% if titled to the child" },
+      ],
+    },
+    verdict:
+      "Pick a custodial account when the money will sit for many years and you want it to grow faster than cash — a UTMA/UGMA's stock and fund exposure has historically outpaced savings-account interest by a wide margin over a decade or more. Pick a plain savings account for money you may need soon, want to keep fully liquid, or don't want irrevocably gifted to the child yet. Many families do both: a savings account for the short-term cushion (school trip, first car repair) and a custodial account for the long-term growth bucket.",
+    sections: [
+      {
+        heading: "The core difference: an irrevocable gift vs your own account",
+        content:
+          "A custodial account is a completed gift the moment you fund it. Money you put into a UTMA or UGMA belongs to the child immediately and permanently — you cannot take it back, redirect it to a sibling, or use it for yourself, even though you control it as custodian until the age of majority.\n\nA savings account for a child is usually just a normal deposit account, often titled to the parent (sometimes with the child as a joint owner or beneficiary). You keep full control of the money for as long as you want. Nothing is irrevocably gifted, and you can move the funds, close the account, or spend the balance on anything.",
+      },
+      {
+        heading: "Growth vs safety: what the money actually earns",
+        content:
+          "A custodial account can hold stocks, ETFs, and mutual funds, so its long-run growth potential is much higher than cash — historically the S&P 500 has averaged roughly 10% a year over multi-decade periods, though any single year can be sharply negative. That volatility is the tradeoff for the higher expected return.\n\nA savings account only earns interest, and only the uninvested cash balance is FDIC- or NCUA-insured up to $250,000 per depositor, per institution — a real safety guarantee a custodial account's invested assets do not carry. A high-yield savings account paid roughly 3.5%–4.5% APY in 2026, but that rate floats with the Fed funds rate and can fall in a rate-cutting cycle. For money needed within the next few years, that safety usually outweighs a custodial account's growth potential.",
+      },
+      {
+        heading: "The non-obvious catch: you can't undo a custodial account",
+        content:
+          "The decision most parents underweight is irreversibility. Once you deposit money into a UTMA or UGMA, it is legally the child's — full stop. If your family's financial situation changes and you need that money back, you cannot reclaim it, unlike money sitting in your own savings account.\n\nThis is why many financial planners suggest keeping true emergency-style or short-horizon cash for a child in a plain savings account (in the parent's name) and reserving the custodial account for money you are certain you want the child to have outright, with enough time horizon to ride out market swings. Compare the custodial account against the newer federal alternative in [Trump Account vs custodial account](/compare/trump-account-vs-custodial-account/), or see how it stacks up against a Roth option in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/).",
+      },
+      {
+        heading: "Which should you open?",
+        content:
+          "Open a custodial account if you have a decade or more before the child needs the money and want it to grow beyond what interest alone provides — college costs, a first home down payment, or a general head start. Open a savings account if you want simple, fully insured, instantly accessible money, or if you are not ready to make an irrevocable gift.\n\nMany families use both: a savings account they control for near-term needs and gifts, and a custodial account for the long-term growth money they intend the child to have outright. See the full menu of options in [the best investment account for kids](/guides/best-investment-account-for-kids/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a custodial account better than a savings account for a child?",
+        answer:
+          "A custodial account is better for long-term growth because it can invest in stocks and funds, while a savings account is better for money you want to keep safe, liquid, and under your own control. The custodial account's gift is irrevocable; a savings account is not.",
+      },
+      {
+        question: "Can I take money back out of a custodial account?",
+        answer:
+          "No, not for yourself. Once you fund a UTMA or UGMA custodial account, the money is irrevocably the child's, and you can only spend it for the child's benefit as custodian. A savings account you own has no such restriction — you can withdraw or close it anytime.",
+      },
+      {
+        question: "Is a savings account for a child FDIC-insured?",
+        answer:
+          "Yes, a savings account at a bank (or NCUA at a credit union) is insured up to $250,000 per depositor, per institution. A custodial account's invested holdings — stocks, ETFs, mutual funds — are not FDIC-insured; only cash sitting uninvested inside the account carries that protection.",
+      },
+      {
+        question: "Which account hurts financial aid more, a custodial account or a savings account?",
+        answer:
+          "A custodial account (UTMA/UGMA) is the student's own asset on the FAFSA and is assessed at up to 20%. A savings account titled to a parent is assessed as a parental asset at up to 5.64%, a much lighter aid impact — but a savings account titled directly to the child is treated the same as a custodial account.",
+      },
+      {
+        question: "Can I have both a custodial account and a savings account for my kid?",
+        answer:
+          "Yes, and many families do exactly that. A savings account covers near-term needs and gifts you still control, while a custodial account grows money for the long term that you are ready to gift outright. Neither account limits how many of the other type you can also open.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "FDIC — Deposit Insurance FAQs", url: "https://www.fdic.gov/resources/deposit-insurance/faqs/" },
+      { label: "IRS — Topic No. 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+    ],
+    relatedComparisons: ["trump-account-vs-custodial-account", "custodial-roth-ira-vs-utma", "utma-vs-ugma"],
+    calculatorLinks: [
+      { label: "Investment calculator", href: "/investing/" },
+      { label: "Net Worth Tracker", href: "/net-worth/" },
     ],
   },
 
@@ -2017,7 +2191,91 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Topic 553, Kiddie Tax (child's unearned income)", url: "https://www.irs.gov/taxtopics/tc553" },
       { label: "SEC Investor.gov — UGMA/UTMA custodial accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
     ],
-    relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma"],
+    relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma", "custodial-roth-ira-vs-brokerage-account"],
+    calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
+  },
+
+  // ─── Custodial Roth IRA vs Brokerage Account (ga4-top-pages pass 2026-07-08) ──
+  {
+    slug: "custodial-roth-ira-vs-brokerage-account",
+    title: "Custodial Roth IRA vs Brokerage Account for Kids",
+    metaDescription:
+      "Custodial Roth IRA vs brokerage account: the Roth needs a job but grows tax-free for retirement, while a brokerage account is taxable but unrestricted.",
+    targetKeyword: "custodial roth ira vs brokerage account",
+    optionA: "Custodial Roth IRA",
+    optionB: "Custodial Brokerage Account",
+    segment: "Kids & family investing",
+    h1: "Custodial Roth IRA vs Brokerage Account: Which Is Better for Your Child?",
+    intro:
+      "A custodial Roth IRA grows completely tax-free for retirement but only accepts a child's own earned income, while a custodial brokerage account (a UTMA or UGMA) accepts money from anyone, has no contribution cap, and can be spent on anything — at the cost of yearly kiddie-tax exposure. Pick the Roth when your child has documented wages and you want tax-free compounding over 50+ years. Pick the brokerage account when the child has no job yet, or when you want money available before retirement age.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Funding source", a: "Only the child's own earned income", b: "Anyone can gift or contribute" },
+        { dimension: "Contribution cap (2025)", a: "Lesser of earned income or $7,000", b: "No cap (gift-tax exclusion ~$19,000/yr applies)" },
+        { dimension: "Tax on growth", a: "Tax-free growth and qualified withdrawals", b: "Kiddie tax on unearned income above $2,700 (2025)" },
+        { dimension: "When it can be spent", a: "Retirement-oriented; contributions withdrawable anytime, earnings restricted before 59½", b: "Anytime, for the child's benefit, once the custodian releases funds" },
+        { dimension: "Who controls it", a: "Custodian manages until adulthood; becomes the child's own IRA at majority", b: "Custodian manages until the age of majority (18–25 by state), then full control transfers" },
+        { dimension: "FAFSA treatment", a: "Retirement accounts are not reported as an asset", b: "Counts as the student's asset, assessed at up to 20%" },
+        { dimension: "Investment choice", a: "Broad — stocks, funds, ETFs inside an IRA wrapper", b: "Broad — stocks, funds, ETFs, and (UTMA) other property" },
+      ],
+    },
+    verdict:
+      "Choose a custodial Roth IRA when your child has real, documented earned income and you want every dollar of growth to compound tax-free for retirement — there is no better long-horizon wrapper available to a minor. Choose a custodial brokerage account (UTMA/UGMA) when the child has no job, when you want to save more than their earned-income cap allows, or when the money needs to be available before retirement age for college, a car, or a first apartment. The two are not mutually exclusive: a working teen can fund a Roth up to their earned income and route any extra savings into a brokerage account.",
+    sections: [
+      {
+        heading: "The earned-income wall that decides everything",
+        content:
+          "A custodial Roth IRA can only be funded with money the child actually earned — a summer job, babysitting, lawn mowing, or self-employment income the family can document if the IRS ever asks. A child with no income cannot have a custodial Roth funded at all, no matter how much a parent or grandparent wants to gift.\n\nA custodial brokerage account has no such rule. Anyone can deposit money into a UTMA or UGMA for a newborn, a toddler, or a working teenager alike. This single fact decides which account is even available to you before any other comparison matters.",
+      },
+      {
+        heading: "Tax-free compounding vs a taxable account",
+        content:
+          "Inside a custodial Roth IRA, contributions grow completely tax-free, and qualified withdrawals in retirement owe no tax at all. Because a teenager's money has 40–50 years to compound before retirement, even a few thousand dollars contributed at 16 can grow into a life-changing sum by traditional retirement age.\n\nA custodial brokerage account offers no such shelter. Its dividends and realized capital gains are taxed every year under the kiddie tax — in 2025, unearned income above $2,700 is taxed at the parents' marginal rate. That yearly drag compounds against you the same way tax-free growth compounds for you in the Roth.",
+      },
+      {
+        heading: "Non-obvious insight: the brokerage account's flexibility is the real trade you're making",
+        content:
+          "The Roth's tax advantage is easy to see; the brokerage account's advantage is easier to overlook. A custodial brokerage account can fund a car at 16, a security deposit at 19, or a business at 22 — money a Roth IRA effectively locks away until retirement (earnings withdrawn before 59½ generally face a 10% penalty plus tax, though contributions themselves come out tax- and penalty-free anytime).\n\nSo the real decision is not 'which account is better' but 'when do you need the money.' A family saving purely for retirement decades away should lean Roth. A family that expects to tap the account for a near-term goal should lean brokerage, even knowing the kiddie tax will take a bite along the way.",
+      },
+      {
+        heading: "The smart move for a working teen: fund both",
+        content:
+          "For a teenager with a job, the strongest strategy is to fund the custodial Roth IRA up to their earned income first, then send any additional savings — from gifts, allowance, or extra income — into a custodial brokerage account. This captures the Roth's tax-free growth on the capped amount while keeping an uncapped, flexible account open for near-term goals.\n\nA parent or grandparent can effectively 'match' a working teen's Roth contribution: if the teen earned $3,000 but wants to spend some of their paycheck, a family member can gift the $3,000 into the Roth instead, as long as the teen's own documented earnings support that contribution amount. See how this pairs with other kids' accounts in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/) and [the best investment account for kids](/guides/best-investment-account-for-kids/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Custodial Roth IRA vs brokerage account — which is better for my child?",
+        answer:
+          "A custodial Roth IRA is better if your child has documented earned income and you want tax-free growth for retirement. A custodial brokerage account is better if the child has no job yet, or if you want money available before retirement age. Many families use both once the child starts earning.",
+      },
+      {
+        question: "Can my child have a custodial Roth IRA without a job?",
+        answer:
+          "No. A custodial Roth IRA can only be funded with the child's own documented earned income — wages, self-employment, or similar. A child with no income cannot have one funded, even by a generous parent or grandparent. A custodial brokerage account (UTMA/UGMA) has no such requirement.",
+      },
+      {
+        question: "Is a custodial brokerage account the same as a UTMA?",
+        answer:
+          "Yes, in practice a custodial brokerage account is simply a UTMA or UGMA account opened at a brokerage firm. It holds investments that irrevocably belong to the child, managed by a custodian until the child reaches the age of majority, and its gains are taxed under the kiddie tax.",
+      },
+      {
+        question: "How much can go into a custodial Roth IRA vs a brokerage account each year?",
+        answer:
+          "A custodial Roth IRA is capped at the lesser of the child's earned income or $7,000 for 2025. A custodial brokerage account has no contribution cap, though gifts above the annual gift-tax exclusion (about $19,000 per giver in 2025) may trigger gift-tax filing rules for the giver.",
+      },
+      {
+        question: "Which hurts financial aid more, a custodial Roth IRA or a brokerage account?",
+        answer:
+          "A custodial brokerage account hurts financial aid more. It counts as the student's own asset on the FAFSA and is assessed at up to 20%. Retirement accounts, including a custodial Roth IRA, are not reported as assets on the FAFSA at all, making the Roth the gentler option for aid eligibility.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Topic No. 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
+      { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+    ],
+    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma"],
     calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
   },
 
@@ -2291,11 +2549,13 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "Can I choose between a UGMA and a UTMA account?", answer: "Usually no. Your state and your brokerage decide which type you get, and most brokers open UTMA accounts by default. You rarely make an active choice between the two." },
       { question: "Are UTMA and UGMA accounts taxed differently?", answer: "No. Both are taxed the same way under the kiddie tax. In 2025 the first $1,350 of a child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and unearned income above $2,700 is taxed at the parents' marginal rate." },
       { question: "Does a UTMA or UGMA account hurt financial aid?", answer: "Yes, and equally. Both count as the student's asset on the FAFSA, assessed at up to 20 percent. That is a larger aid hit than a parent-owned account like a 529, which is assessed at up to 5.64 percent." },
+      { question: "At what age does a UTMA or UGMA account transfer to my child in my state?", answer: "It varies by state and, in several states, by what the custodian elected when the account was opened. Texas transfers at 21. New York defaults to 21 but lets the person who opened the account elect 18 instead. California and Florida both let the custodian choose an age between 21 and 25 at setup (California's default is 21 for a straightforward gift, but it can run to 25 if the account was funded through a will, trust, or power of appointment). Check your specific account's paperwork — the age chosen at opening controls, not just your state's default — before assuming the money transfers at 18." },
     ],
     sources: [
       { label: "SEC Investor.gov — UGMA/UTMA accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
       { label: "IRS — Topic 553, Tax on a child's investment income (kiddie tax)", url: "https://www.irs.gov/taxtopics/tc553" },
       { label: "Federal Student Aid — How aid is calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+      { label: "Capital Group — UGMA/UTMA Age of Majority by State", url: "https://www.capitalgroup.com/advisor/account-resource-center/ugma-utma/age-of-majority.html" },
     ],
     relatedComparisons: ["529-vs-utma", "custodial-roth-ira-vs-utma"],
     calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],

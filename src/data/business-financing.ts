@@ -10,12 +10,14 @@ export const BUSINESS_CALC_IDS = new Set<string>([
 
 export const BUSINESS_ROUNDUP_SLUGS = new Set<string>([
   "best-merchant-cash-advance-companies",
+  "best-invoice-factoring-companies",
 ]);
 
 export const BUSINESS_COMPARISON_SLUGS = new Set<string>([
   "merchant-cash-advance-vs-loan",
   "factor-rate-vs-interest-rate",
   "invoice-factoring-vs-merchant-cash-advance",
+  "invoice-factoring-vs-invoice-discounting",
 ]);
 
 export const BUSINESS_GUIDE_SLUGS = new Set<string>([

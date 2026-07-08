@@ -153,6 +153,11 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         answer:
           "Yes, for a revocable living trust with straightforward facts. Trust & Will ($499 individual, $599 couple), LegalZoom Living Trust (~$279), and Nolo Quicken WillMaker Plus ($139, includes RLT template) all produce valid RLTs. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning, blended families with complex distributions, business interests, or cross-state property. Attorney-drafted becomes worth it when the facts stop fitting a fill-in-the-blank template.",
       },
+      {
+        question: "How much does it cost to maintain a living trust after it's set up?",
+        answer:
+          "A revocable living trust has no mandatory annual fee and needs no separate tax return while you're alive — it's a grantor trust, so it uses your own Social Security number and is reported on your personal Form 1040, unlike an irrevocable trust, which must file its own Form 1041. Ongoing costs are occasional rather than annual: retitling any asset you acquire after the trust is signed (a new house, a refinanced property, a new brokerage account) costs the same $200–$500 per deed or $300–$1,500 per account as the original funding step. An amendment to update beneficiaries or add a provision typically runs $300–$1,000 with an attorney. If you name a corporate trustee instead of a family member, expect an annual fee of roughly 0.5%–1.5% of trust assets — a cost most families avoid by serving as their own trustee while they're able.",
+      },
     ],
     sources: [
       { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },

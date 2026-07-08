@@ -12,6 +12,11 @@
 | /compare/trump-account-vs-roth-ira/ | 2026-07-07 | 1 | 0/0/0/0/0 | 0 |
 | /guides/best-investment-account-for-kids/ | 2026-07-07 | 1 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-worth-it/ | 2026-07-07 | 1 | 0/0/0/0/0 | 0 |
-| /invoice-factoring/factoring-fee-calculator/ | 2026-07-07 | 1 | 1/1/1/0/0 | 1 |
+| /invoice-factoring/factoring-fee-calculator/ | 2026-07-07 | 1 | 2/1/1/0/0 | 0 |
 | /portfolio/ | 2026-07-07 | 1 | 0/0/0/0/0 | 1 |
 | /roundup/best-money-market-accounts/ | 2026-07-07 | 1 | 0/0/0/1/0 | 0 |
+| /compare/trump-account-vs-custodial-account/ | 2026-07-08 | 2 | 0/1/0/1/0 | 0 |
+| /estate-planning/living-trust-cost-calculator/ | 2026-07-08 | 2 | 0/1/1/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-utma/ | 2026-07-08 | 1 | 0/1/0/0/0 | 0 |
+| /compare/invoice-factoring-vs-business-line-of-credit/ | 2026-07-08 | 1 | 0/1/1/0/0 | 0 |
+| /compare/utma-vs-ugma/ | 2026-07-08 | 1 | 0/0/1/0/0 | 0 |

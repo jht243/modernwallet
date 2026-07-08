@@ -325,16 +325,101 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
         answer:
           "Yes. A business line of credit is a form of borrowing, so a draw adds debt to your balance sheet and accrues interest until repaid. Invoice factoring is a sale of your receivables, not a loan, so it does not add debt the same way — though it does reduce the cash you eventually collect from the sold invoice.",
       },
+      {
+        question: "Is invoice factoring worth it?",
+        answer:
+          "Invoice factoring is worth it if slow-paying customers, not weak margins, are your cash-flow problem — you convert an invoice you'd otherwise wait 30-90 days to collect into cash within a day or two, and approval leans on your customer's credit rather than yours. It's usually not worth it if you'd qualify for a cheaper line of credit or term loan instead, since factoring's per-30-day fee structure typically prices higher than a bank rate. Run both as an effective APR with the calculators above before deciding, and weigh recourse vs non-recourse terms, since a bad-debt buyback clause changes who eats an unpaid invoice.",
+      },
     ],
     sources: [
       { label: "CFPB — Small business lending under ECOA (Regulation B)", url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/" },
       { label: "U.S. SBA — Asset-Based Lending: Upside and Downside", url: "https://www.sba.gov/blog/asset-based-lending-what-upside-downside" },
       { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
     ],
-    relatedComparisons: ["invoice-factoring-vs-merchant-cash-advance", "merchant-cash-advance-vs-loan"],
+    relatedComparisons: ["invoice-factoring-vs-merchant-cash-advance", "merchant-cash-advance-vs-loan", "invoice-factoring-vs-invoice-discounting"],
     calculatorLinks: [
       { label: "Invoice factoring calculator", href: "/invoice-factoring/" },
       { label: "Business line of credit calculator", href: "/business-line-of-credit/" },
+    ],
+  },
+
+  // ─── Invoice Factoring vs Invoice Discounting (ga4-top-pages pass 2026-07-08) ──
+  {
+    slug: "invoice-factoring-vs-invoice-discounting",
+    title: "Invoice Factoring vs Invoice Discounting: Key Difference",
+    metaDescription:
+      "Invoice factoring vs invoice discounting: factoring hands collections to the funder, while discounting stays confidential and you keep your own ledger.",
+    targetKeyword: "invoice factoring vs invoice discounting",
+    optionA: "Invoice Factoring",
+    optionB: "Invoice Discounting",
+    segment: "Business Financing",
+    h1: "Invoice Factoring vs Invoice Discounting: What's the Real Difference?",
+    intro:
+      "Invoice factoring and invoice discounting both advance cash against unpaid invoices, but the difference is who collects the money and whether your customer finds out. With factoring, the factoring company takes over collections and your customer usually pays the factor directly, so the arrangement is visible. With invoice discounting, you keep collecting payments yourself under your own name, your customer is typically unaware a lender is involved, and you carry more of the credit-control responsibility in exchange for confidentiality.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who collects the invoice", a: "The factoring company contacts and collects from your customer", b: "You continue collecting under your own business name" },
+        { dimension: "Customer awareness", a: "Usually visible — your customer often pays the factor directly", b: "Usually confidential — your customer may never know" },
+        { dimension: "Credit control", a: "Factor typically runs credit checks and manages collections", b: "You retain your own credit and collections process" },
+        { dimension: "Typical business profile", a: "Smaller businesses or those wanting collections outsourced", b: "Larger, more established businesses with their own credit team" },
+        { dimension: "Recourse options", a: "Available as recourse or non-recourse", b: "Almost always recourse — you keep the credit risk" },
+        { dimension: "U.S. market availability", a: "Widely available from many providers", b: "Less common in the U.S.; more standard in the U.K. and Europe" },
+      ],
+    },
+    verdict:
+      "Choose invoice factoring if you want a funder to take collections off your plate, don't have your own credit department, or don't mind your customer knowing a factor is involved — it's the more widely available option for U.S. small businesses. Choose invoice discounting if you have an established credit and collections process, want your financing to stay confidential from customers, and can qualify with a lender that offers it (more common for larger, more established U.S. businesses and standard practice in the U.K.). Most small businesses in the U.S. end up with factoring simply because discounting is harder to find and typically requires a stronger financial profile to qualify.",
+    sections: [
+      {
+        heading: "The core split: who owns collections",
+        content:
+          "Invoice factoring transfers the collections job to the funder. Once you sell an invoice, the factoring company contacts your customer, manages follow-up, and often collects payment directly into its own account. That's a real operational benefit if you don't have a credit department — the factor effectively becomes one for you, as described in our [invoice factoring calculator](/invoice-factoring/) guide.\n\nInvoice discounting flips that. You keep running your own accounts-receivable process, invoicing and following up exactly as you always have. The lender advances cash against the invoice but stays in the background; you're still the one calling a late-paying customer.",
+      },
+      {
+        heading: "Why confidentiality is the whole point of discounting",
+        content:
+          "The defining feature of invoice discounting is that it can be arranged confidentially — your customer typically has no idea a lender has advanced you money against their invoice. For businesses that worry a visible factoring arrangement could signal cash-flow stress to customers or competitors, that discretion is the main draw.\n\nFactoring is usually the opposite: many factoring agreements require notifying the customer, and payment is often redirected to the factor's lockbox or account. Some non-notification factoring products exist, but they're the exception, not the rule, and typically cost more.",
+      },
+      {
+        heading: "Why discounting is harder to get than factoring in the U.S.",
+        content:
+          "Invoice discounting is far more standard in the U.K. and Europe than in the United States, where invoice factoring dominates the small-business alternative-financing market. Discounting lenders generally want to see a mature, disciplined credit and collections function already in place, because you — not the lender — are still responsible for chasing payment. That makes it a better fit for larger, more established businesses than for a newer company still building its receivables process.\n\nFactoring's lower bar is a direct result of the funder taking on collections itself: because the factor controls the process (and often prices in non-recourse credit protection), it can extend financing to newer or thinner-credit businesses that a discounting arrangement would turn away. See how factoring stacks up against other options in [invoice factoring vs business line of credit](/compare/invoice-factoring-vs-business-line-of-credit/).",
+      },
+      {
+        heading: "Which should you choose?",
+        content:
+          "Pick invoice factoring if you want collections handled for you, are a newer or smaller business, or can't easily qualify for a confidential facility. Pick invoice discounting only if you already run a solid in-house credit and collections process, want the arrangement kept confidential from customers, and can find a lender that offers it for a business your size.\n\nBoth options convert unpaid invoices into cash faster than waiting for net-30 or net-60 terms to run their course. Model the true cost of either against your invoice terms with our [factoring fee calculator](/invoice-factoring/factoring-fee-calculator/) before signing.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the main difference between invoice factoring and invoice discounting?",
+        answer:
+          "The main difference is who collects the invoice and whether your customer knows. With invoice factoring, the factoring company takes over collections and the arrangement is usually visible to your customer. With invoice discounting, you keep collecting payments yourself, and the financing typically stays confidential from your customer.",
+      },
+      {
+        question: "Is invoice discounting cheaper than invoice factoring?",
+        answer:
+          "Not necessarily — pricing depends more on your business's credit profile and the specific lender than on which product you choose. Discounting can look cheaper on paper because the lender isn't running your collections, but it's also harder to qualify for, and you still carry the collections workload and most of the credit risk yourself.",
+      },
+      {
+        question: "Can a small business get invoice discounting in the U.S.?",
+        answer:
+          "It's possible but less common than invoice factoring in the U.S. market. Invoice discounting is far more standard in the U.K. and Europe. In the U.S., most lenders offering discounting want to see an established credit and collections process already in place, which favors larger, more mature businesses over newer or smaller ones.",
+      },
+      {
+        question: "Will my customer know if I use invoice factoring or invoice discounting?",
+        answer:
+          "With invoice factoring, your customer usually finds out, since the factor often collects payment directly and may contact your customer about the invoice. With invoice discounting, your customer typically never knows, since you continue collecting under your own name while the lender stays in the background.",
+      },
+    ],
+    sources: [
+      { label: "U.S. Small Business Administration — Asset-Based Lending: Upside and Downside", url: "https://www.sba.gov/blog/asset-based-lending-what-upside-downside" },
+      { label: "CFPB — Small business lending under ECOA (Regulation B)", url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/" },
+    ],
+    relatedComparisons: ["invoice-factoring-vs-business-line-of-credit", "invoice-factoring-vs-merchant-cash-advance"],
+    calculatorLinks: [
+      { label: "Invoice factoring calculator", href: "/invoice-factoring/" },
+      { label: "Factoring fee calculator", href: "/invoice-factoring/factoring-fee-calculator/" },
     ],
   },
 ];
