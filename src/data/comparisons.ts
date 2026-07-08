@@ -1759,10 +1759,58 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   // ─── Trump Account vs 529 (mindmap pass 2026-07-04) ──────────────────────
   {
+    slug: "trump-account-vs-baby-bonds",
+    title: "Trump Account vs Baby Bonds: What's the Difference?",
+    metaDescription: "Trump account vs baby bonds: they are not the same. The Trump Account is enacted federal law; baby bonds are a federal proposal plus a few state programs.",
+    targetKeyword: "trump account vs baby bonds",
+    optionA: "Trump Account",
+    optionB: "Baby Bonds",
+    segment: "Kids & family investing",
+    h1: "Trump Account vs Baby Bonds: What's the Difference?",
+    intro: "A Trump Account and a baby bond are not the same thing. The Trump Account is enacted federal law that gives most U.S. newborns a $1,000 seeded investment account. \"Baby bonds\" is a separate policy idea: government-funded, income-targeted accounts for lower-income kids. At the federal level, baby bonds are still just a proposal. A handful of states, led by Connecticut, have launched their own baby-bond programs. So one is real and nationwide today, while the other is mostly a plan. This guide shows exactly how they differ and which one your child can actually get.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Legal status", a: "Enacted federal law; accounts live July 4, 2026.", b: "Federal version is a proposal (not law). Some states have enacted their own." },
+        { dimension: "Who funds it", a: "A $1,000 federal seed, plus family or employer contributions.", b: "Government-funded (federal or state). Families are not expected to add money." },
+        { dimension: "Eligibility", a: "Near-universal: U.S.-citizen kids born 2025-2028 with an SSN. Not income-based.", b: "Income-targeted. Lower-income children qualify (e.g., Medicaid-covered births in Connecticut)." },
+        { dimension: "Private contributions allowed", a: "Yes, up to $5,000/year combined (employer up to $2,500 within the cap).", b: "Generally no; the account is funded by the government, not families." },
+        { dimension: "How it's invested", a: "A low-cost S&P 500 / U.S.-equity index fund.", b: "Held and invested by the government or state, often more conservatively." },
+        { dimension: "When and how it's used", a: "Locked until Jan 1 of the year the child turns 18; then any purpose.", b: "Unlocked in adulthood but usually restricted to wealth-building (school, a home, a business)." },
+        { dimension: "Tax treatment", a: "Tax-deferred, not tax-free; taxed like a traditional IRA after 18.", b: "Varies by program; the federal proposal was structured as tax-favored." }
+      ]
+    },
+    verdict: "Do not treat these as two versions of the same account. The Trump Account is here and near-universal, so almost any U.S. family with a 2025-2028 newborn gets one automatically. Baby bonds are aimed narrowly at lower-income children, and at the federal level they remain a proposal that is not law. If your goal is a real account you can fund today, the Trump Account is the one that exists. If you are lower-income and live in a state like Connecticut, your child may also receive a state baby bond on top of it. The two are not mutually exclusive. To go deeper, read [what a Trump Account is](/guides/trump-accounts/) and whether [Trump Accounts are worth it](/guides/trump-account-worth-it/) for your family. Bottom line: the Trump Account is money you can act on now; baby bonds are mostly a policy you can only wait on.",
+    sections: [
+      { heading: "Are Trump Accounts and baby bonds the same thing?", content: "No. They are two different programs that people often confuse. The Trump Account is a real, enacted federal law. Congress created it in the 2025 One Big Beautiful Bill, and accounts go live on July 4, 2026. It gives most U.S.-citizen newborns a $1,000 federal seed invested in an S&P 500 index fund.\n\n\"Baby bonds\" describes a different concept entirely. The idea is a government-funded, income-targeted account for children, designed to shrink the wealth gap. The best-known federal version is the American Opportunity Accounts Act. It has been introduced in Congress several times but has never passed. As of the latest available information, it sits in committee and is not law.\n\nSo the short answer is simple. A Trump Account is a live federal account. A baby bond is a policy idea that is real in a few states but not at the federal level." },
+      { heading: "How the Trump Account works", content: "The Trump Account is a federal investment account for children, created under IRC Section 530A. Every U.S.-citizen child born between January 1, 2025 and December 31, 2028 qualifies if they have a Social Security number. It is not income-targeted. High earners and low earners get the same $1,000 federal seed.\n\nFamilies and employers can add money too. Combined private contributions can reach $5,000 per year, and an employer can put in up to $2,500 within that cap. The $1,000 seed does not count against the limit. The money is invested in a low-cost S&P 500 or U.S.-equity index fund.\n\nGrowth is tax-deferred, not tax-free. The account is locked until January 1 of the year the child turns 18. After that, funds can be used for any purpose and are taxed like a traditional IRA, at ordinary income rates. At an assumed 7% return, the $1,000 seed alone grows to about $3,513 by age 18. Add $200 a month and it reaches about $89,657. Contribute the full $5,000 a year from birth and it can hit about $182,980. These are illustrations, not guarantees." },
+      { heading: "How baby bonds work (federal proposal and state programs)", content: "Baby bonds are government-funded accounts aimed at lower-income children. Unlike the Trump Account, they scale by need, so children from poorer families receive more. Families are not expected to contribute their own money.\n\nAt the federal level, baby bonds remain a proposal. The American Opportunity Accounts Act, introduced by Senator Cory Booker and Representative Ayanna Pressley, would seed every newborn with $1,000 and add up to $2,000 a year based on family income. The Treasury would manage the funds, and kids could access them at 18 for uses like buying a home or paying for school. As of the latest available information, the bill has not become law.\n\nSome states have gone further and enacted their own programs. Connecticut launched the first funded state baby-bond program on July 1, 2023. It invests up to $3,200 for each child whose birth was covered by HUSKY, the state's Medicaid program. The state treasurer manages the money. Beneficiaries can claim it between ages 18 and 30 for approved uses: buying a Connecticut home, education or job training, starting a Connecticut business, or saving for retirement. California created a related program, the HOPE for Children Trust Account, for certain vulnerable children. Rules, amounts, and eligibility differ by state and can change." },
+      { heading: "Which one applies to your child?", content: "Start with the Trump Account, because it reaches almost everyone. If your child is a U.S. citizen born between 2025 and 2028 with an SSN, they qualify regardless of income. That makes it the account most families can actually plan around, and the one you can add money to.\n\nBaby bonds depend on where you live and how much you earn. There is no federal baby bond you can sign up for today, because the federal version is still a proposal. A state baby bond only applies if your state runs one and your family meets its income rules. In Connecticut, for example, the birth generally must be covered by Medicaid.\n\nThese programs can also stack. A lower-income Connecticut family could have both a Trump Account and a state baby bond for the same child. If you want to compare tax-advantaged options for education specifically, see our [Trump Account vs 529](/compare/trump-account-vs-529/) breakdown." }
+    ],
+    faqs: [
+      { question: "Are Trump accounts baby bonds?", answer: "No. A Trump Account is enacted federal law that gives most U.S. newborns a $1,000 invested account. Baby bonds are a separate, income-targeted policy that is only a proposal at the federal level. They share the goal of building wealth for kids, but they are different programs with different rules." },
+      { question: "What is the main difference between a Trump account and baby bonds?", answer: "The main difference is who they serve and whether they exist. The Trump Account is near-universal and live nationwide, and families can add up to $5,000 a year. Baby bonds are income-targeted, government-funded, and generally do not rely on family contributions. Federal baby bonds are still just a proposal." },
+      { question: "Are baby bonds a real, active program?", answer: "Partly. Federal baby bonds are not law; they remain a proposal in Congress. But some states have launched their own. Connecticut started the first funded state program in 2023, investing up to $3,200 for eligible lower-income children. Availability depends entirely on your state and income." },
+      { question: "Can my child have both a Trump Account and a baby bond?", answer: "Yes, potentially. The Trump Account is federal and near-universal, so most 2025-2028 U.S. newborns get one. A state baby bond is separate. If you live in a state with a program and meet its income rules, your child could receive both. The two do not cancel each other out." },
+      { question: "Who funds each account?", answer: "The government funds both seeds, but differently. The Trump Account gives every eligible child the same $1,000, and families or employers can add more. Baby bonds are fully government-funded and scaled by need, so lower-income children receive more, and families are not expected to contribute." },
+      { question: "Can the funds be used for anything?", answer: "It depends on the account. Trump Account funds unlock at 18 and can be used for any purpose, taxed like a traditional IRA. Baby-bond funds are usually restricted to wealth-building uses in adulthood, such as buying a home, paying for education, or starting a business. Connecticut also requires a financial literacy course." }
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "Congress.gov — S.441 American Opportunity Accounts Act (118th Congress)", url: "https://www.congress.gov/bill/118th-congress/senate-bill/441" },
+      { label: "Connecticut Office of the State Treasurer — CT Baby Bonds", url: "https://portal.ct.gov/ott/debt-management/ct-baby-bonds" }
+    ],
+    relatedComparisons: ["trump-account-vs-529", "trump-account-vs-savings-account", "trump-account-vs-custodial-account"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" }
+    ]
+  },
+
+  {
     slug: "trump-account-vs-529",
     title: "Trump Account vs 529 Plan: Which Wins for Kids?",
     metaDescription:
-      "Trump Account vs 529 plan compared: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but only for education. See which fits.",
+      "Trump Account vs 529 college savings account: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but school-only. See which fits.",
     targetKeyword: "trump account vs 529",
     optionA: "Trump Account",
     optionB: "529 Plan",
@@ -2464,7 +2512,7 @@ export const COMPARISONS: ComparisonEntry[] = [
         { dimension: "Contribution cap", a: "$5,000/yr combined from private sources", b: "No cap" }
       ]
     },
-    verdict: "Pick a Trump account for long-term goals like college or a wealth head start — invested growth plus the $1,000 seed does the heavy lifting over 18 years. Pick a kids savings account or HYSA for money you may need soon or want fully safe. Many families use both: the Trump account for growth, a savings account for a liquid cushion. Model the growth gap with the [Trump Account calculator](/trump-account/), then see the [best investment account for kids](/guides/best-investment-account-for-kids/).",
+    verdict: "Pick a Trump account for long-term goals like college or a wealth head start — invested growth plus the $1,000 seed does the heavy lifting over 18 years. Pick a kids savings account or HYSA for money you may need soon or want fully safe. Many families use both: the Trump account for growth, a savings account for a liquid cushion. Model the growth gap with the [Trump Account calculator](/trump-account/), then see the [best investment account for kids](/guides/best-investment-account-for-kids/). For the account under its other common name, read the [Trump savings account guide](/guides/trump-savings-account/).",
     sections: [
       {
         heading: "The core trade-off: growth vs. safety",
