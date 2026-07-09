@@ -84,20 +84,108 @@ def load_secrets() -> dict[str, str]:
 
 
 STATUS_THEME = {
-    "success": {"label": "Success", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
-    "failure": {"label": "Failure", "bg": "#ef4444", "fg": "#ffffff", "emoji": "✕"},
-    "no-op":   {"label": "Success Without Changes", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
-    "no-changes": {"label": "Success Without Changes", "bg": "#10b981", "fg": "#ffffff", "emoji": "✓"},
+    "success": {"label": "Success", "bg": "#10b981", "fg": "#ffffff", "emoji": "✅"},
+    "failure": {"label": "Failure", "bg": "#ef4444", "fg": "#ffffff", "emoji": "❌"},
+    "no-op":   {"label": "No changes", "bg": "#64748b", "fg": "#ffffff", "emoji": "⚪"},
+    "no-changes": {"label": "No changes", "bg": "#64748b", "fg": "#ffffff", "emoji": "⚪"},
 }
 
-# Human-readable name of what ran, shown in the header band. Falls back to the
-# raw --skill value for anything not listed.
+# Inbox subject icon per status — 3 states so the icon alone tells you
+# success-with-changes / ran-clean-no-changes / failed. Color emoji so it
+# actually renders colored in the mail list (monochrome ✓/✕ render black).
+STATUS_ICON = {"success": "✅", "failure": "❌", "no-op": "⚪", "no-changes": "⚪"}
+
+# Repo name (basename of owner/repo, auto-detected from git) → (display project,
+# plus-tag slug). The project becomes the email sender name so each site is
+# distinguishable in the inbox; the slug tags the From address for filtering.
+REPO_PROJECTS = {
+    "layer3labs": ("Layer3Labs", "layer3labs"),
+    "pipeflare-site": ("PipeFlare", "pipeflare"),
+    "prayer-site": ("Find A Prayer", "prayer"),
+    "modernwallet": ("ModernWallet", "modernwallet"),
+    "humidor-atlas": ("Humidorist", "humidorist"),
+    "metabolic_journal": ("The Metabolic Journal", "metabolic"),
+    "psych_report": ("Mind Medicine Law", "mindmedicine"),
+    "weaponization_fund": ("Lawfare Claims", "lawfare"),
+    "banthebots": ("BanTheBots", "banthebots"),
+    "cuban_insights": ("Cuban Insights", "cuban"),
+    "getzen_nomads": ("getZEN", "getzen"),
+    "ven_biz_network": ("Venezuela Network", "venezuela"),
+    "vet_tools": ("Vet Tools", "vettools"),
+}
+
+# Human-readable name of what ran, shown in the body's "What ran" row / header.
+# Falls back to the raw --skill value for anything not listed.
 SKILL_LABELS = {
     "comparison-content-auto": "Comparison content",
     "indexing-pass-auto": "Indexing pass",
     "autocomplete-pass-auto": "Autocomplete pass",
     "ahrefs-site-audit-auto": "Ahrefs site audit",
+    "question-gap-pass-auto": "Follow-up question gaps",
+    "competitor-monitor-auto": "Competitor publishing monitor",
 }
+
+# Short pass label for the SUBJECT line (kept tight so the outcome fits too).
+SKILL_SHORT = {
+    "ga4-top-pages-pass-auto": "GA4 top-pages",
+    "trend-pass-auto": "Trend pass",
+    "comparison-content-auto": "Comparison",
+    "indexing-pass-auto": "Indexing",
+    "autocomplete-pass-auto": "Autocomplete",
+    "ahrefs-site-audit-auto": "Ahrefs audit",
+    "question-gap-pass-auto": "Question gaps",
+    "competitor-monitor-auto": "Competitor watch",
+    "download-promise-audit-auto": "Download audit",
+    "page-quality-pass-auto": "Page quality",
+    "bing-webmaster-pass-auto": "Bing technical",
+    "downloadable-asset-pass": "Asset build",
+    "roundup-pass": "Roundup",
+}
+
+
+def _slugify(text: str) -> str:
+    import re
+    return re.sub(r"[^a-z0-9]", "", (text or "").lower()) or "site"
+
+
+def resolve_project(repo: str, site: str, override: str = ""):
+    """Return (display_name, plus_tag_slug) for this run.
+
+    Priority: explicit --project override, then the repo→project map (repo is
+    auto-detected from git so it's stable across cloud runs), then a title-cased
+    fallback from the site/repo so an unmapped project still gets a sane name.
+    """
+    if override:
+        return override.strip(), _slugify(override)
+    name = (repo or "").split("/")[-1].strip().lower()
+    if name in REPO_PROJECTS:
+        return REPO_PROJECTS[name]
+    # Fallback: derive from site host (or repo name), strip scheme/www/path.
+    base = (site or name or "").strip()
+    base = base.split("//")[-1].split("/")[0]
+    if base.startswith("www."):
+        base = base[4:]
+    label = base.split(".")[0] if "." in base else base
+    label = label.replace("_", " ").replace("-", " ").strip()
+    disp = " ".join(w.capitalize() for w in label.split()) or "Routines"
+    return disp, _slugify(label)
+
+
+def build_from(base_from: str, project_disp: str, slug: str) -> str:
+    """Build a per-project From header: `{Project} Routines <local+slug@domain>`.
+
+    The sending domain (verified for SPF/DKIM) is preserved from base_from; only
+    the display name and a `+slug` sub-address tag are applied. The tag is ignored
+    for delivery but makes each project a distinct sender the inbox can filter on.
+    """
+    import re
+    m = re.search(r"<([^>]+)>", base_from or "")
+    addr = (m.group(1) if m else (base_from or "")).strip()
+    local, _, domain = addr.partition("@")
+    if not domain:
+        local, domain = "notifications", "intake.layer3labs.io"
+    local = local.split("+")[0]  # drop any existing tag before re-tagging
+    return f"{project_disp} Routines <{local}+{slug}@{domain}>"
 
 
 LINK_STYLE = "color:#2563eb;text-decoration:underline;"
@@ -264,7 +352,7 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
     return "\n".join(out)
 
 
-def build_html(args: argparse.Namespace, details_html: str) -> str:
+def build_html(args: argparse.Namespace, details_html: str, preheader: str = "", project_disp: str = "") -> str:
     theme = STATUS_THEME.get(args.status, STATUS_THEME["no-op"])
     now = datetime.now().strftime("%Y-%m-%d %H:%M %Z").strip() or datetime.now().strftime("%Y-%m-%d %H:%M")
 
@@ -310,8 +398,23 @@ def build_html(args: argparse.Namespace, details_html: str) -> str:
     rows.append(meta_row("When", html.escape(now)))
     meta_table = "".join(rows)
 
+    # Hidden preheader — the gray preview text the inbox shows next to the
+    # subject. Without this the client scrapes the header band ("✅ …") and the
+    # preview just duplicates the subject. The trailing zero-width spacer stops
+    # real body text from bleeding into the preview window.
+    pre = html.escape(preheader or summary or "")
+    preheader_block = (
+        '<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;'
+        'opacity:0;color:transparent;height:0;width:0;font-size:1px;line-height:1px;">'
+        f'{pre}</div>'
+        '<div style="display:none;max-height:0;overflow:hidden;">'
+        + ("&zwnj;&nbsp;" * 60) + "</div>"
+    )
+    footer_project = html.escape(project_disp) if project_disp else "Layer3 Routines"
+
     return f"""<!doctype html>
 <html><body style="margin:0;padding:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+{preheader_block}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f9fafb;padding:32px 16px;">
   <tr><td align="center">
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.06);overflow:hidden;">
@@ -343,7 +446,7 @@ def build_html(args: argparse.Namespace, details_html: str) -> str:
       </td></tr>
 
     </table>
-    <div style="margin-top:14px;font-size:11px;color:#9ca3af;">Layer3 Routines · automated SEO maintenance</div>
+    <div style="margin-top:14px;font-size:11px;color:#9ca3af;">{footer_project} Routines · automated SEO maintenance</div>
   </td></tr>
 </table>
 </body></html>"""
@@ -361,6 +464,10 @@ def main() -> int:
     p.add_argument("--details-file", default="", help="Path to a markdown file with the run report")
     p.add_argument("--commit-sha", default="")
     p.add_argument("--commit-url", default="")
+    p.add_argument("--project", default="", help="Override project display name (else derived from repo)")
+    p.add_argument("--headline", default="", help="Tight outcome phrase for the subject (else from summary)")
+    p.add_argument("--preheader", default="", help="Inbox preview text (else from summary + commit)")
+    p.add_argument("--dry-run", action="store_true", help="Print From/Subject/preheader and skip the send")
     args = p.parse_args()
 
     # Auto-detect git facts from the current repo when not explicitly passed, so
@@ -393,11 +500,15 @@ def main() -> int:
 
     secrets = load_secrets()
     api_key = secrets.get("RESEND_API_KEY", "").strip()
-    if not api_key:
+    if not api_key and not args.dry_run:
         print("[send-routine-email] RESEND_API_KEY missing in secrets.env", file=sys.stderr)
         return 2
-    sender = secrets.get("RESEND_FROM", "Layer3 Routines <notifications@intake.layer3labs.io>")
+    base_sender = secrets.get("RESEND_FROM", "Layer3 Routines <notifications@intake.layer3labs.io>")
     recipient = secrets.get("RESEND_TO", "jonathan@pipelinemarketing.io")
+
+    # Per-project sender: "{Project} Routines <notifications+slug@domain>".
+    project_disp, project_slug = resolve_project(args.repo, args.site, args.project)
+    sender = build_from(base_sender, project_disp, project_slug)
 
     details_md = args.details
     if args.details_file:
@@ -406,16 +517,32 @@ def main() -> int:
         except OSError as e:
             print(f"[send-routine-email] could not read --details-file: {e}", file=sys.stderr)
 
-    details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
-    body_html = build_html(args, details_html)
+    # Inbox subject: the icon carries success/fail/changed and the From carries
+    # the project, so the subject spends its width on the pass + the outcome.
+    # → "{icon} {short pass} · {outcome}"
+    icon = STATUS_ICON.get(args.status, "•")
+    short_pass = SKILL_SHORT.get(args.skill, SKILL_LABELS.get(args.skill, args.skill))
+    outcome = (args.headline or args.summary or "").strip()
+    if not outcome:
+        outcome = {"success": "done", "failure": "failed",
+                   "no-op": "no changes", "no-changes": "no changes"}.get(args.status, "done")
+    subject = f"{icon} {short_pass} · {outcome[:64]}"
 
-    # Inbox subject mirrors the header BLUF: status · what ran · project — result
-    subject_emoji = STATUS_THEME[args.status]["emoji"]
-    status_word = {"success": "SUCCESS", "failure": "FAILED", "no-op": "SUCCESS WITHOUT CHANGES", "no-changes": "SUCCESS WITHOUT CHANGES"}.get(args.status, "DONE")
-    pass_label = SKILL_LABELS.get(args.skill, args.skill)
-    subject = f"{subject_emoji} {status_word} · {pass_label} · {args.site}"
-    if args.summary:
-        subject += f" — {args.summary[:70]}"
+    # Inbox preview: the specifics that don't fit the subject (+ the commit).
+    preheader = (args.preheader or args.summary or "").strip()
+    if args.commit_sha:
+        tail = f"commit {args.commit_sha[:7]}"
+        preheader = f"{preheader} · {tail}" if preheader else tail
+
+    details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
+    body_html = build_html(args, details_html, preheader, project_disp)
+
+    if args.dry_run:
+        print("From:      " + sender)
+        print("To:        " + recipient)
+        print("Subject:   " + subject)
+        print("Preheader: " + preheader)
+        return 0
 
     payload = json.dumps({
         "from": sender,
