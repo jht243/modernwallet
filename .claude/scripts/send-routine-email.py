@@ -176,8 +176,10 @@ def resolve_project(repo: str, site: str, override: str = ""):
 
 
 def build_from(base_from: str, project_disp: str, slug: str) -> str:
-    """Build a per-project From header: `{Project} Routines <local+slug@domain>`.
+    """Build a per-project From header: `{Project} <local+slug@domain>`.
 
+    The sender display name is just the project (e.g. "PipeFlare"), NOT
+    "PipeFlare Routines" — the user wants the bare project name in the inbox.
     The sending domain (verified for SPF/DKIM) is preserved from base_from; only
     the display name and a `+slug` sub-address tag are applied. The tag is ignored
     for delivery but makes each project a distinct sender the inbox can filter on.
@@ -189,7 +191,7 @@ def build_from(base_from: str, project_disp: str, slug: str) -> str:
     if not domain:
         local, domain = "notifications", "intake.layer3labs.io"
     local = local.split("+")[0]  # drop any existing tag before re-tagging
-    return f"{project_disp} Routines <{local}+{slug}@{domain}>"
+    return f"{project_disp} <{local}+{slug}@{domain}>"
 
 
 LINK_STYLE = "color:#2563eb;text-decoration:underline;"
