@@ -1,0 +1,615 @@
+{
+  "site": "https://themodernwallet.com/",
+  "tool": "bing_webmaster.py deep-dive",
+  "sections": {
+    "crawlStats": [
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 56,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 4,
+        "Date": "2026-06-30T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 50,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 64,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 29,
+        "Date": "2026-07-01T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 55,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 74,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 79,
+        "Date": "2026-07-02T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 68,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 82,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 77,
+        "Date": "2026-07-03T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 76,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 99,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 81,
+        "Date": "2026-07-04T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 87,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 8,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 97,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 45,
+        "Date": "2026-07-05T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 97,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 9,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 115,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 104,
+        "Date": "2026-07-06T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 111,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 10,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 119,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 146,
+        "Date": "2026-07-07T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 121,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 11,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 138,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 185,
+        "Date": "2026-07-08T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 137,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 9,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 144,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 163,
+        "Date": "2026-07-09T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 145,
+        "InLinks": 165
+      }
+    ],
+    "crawlIssues": [],
+    "rankAndTraffic": [
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-28T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-29T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-30T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "2026-07-01T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-02T07:00:00Z",
+        "Impressions": 31
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 5
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-04T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-05T07:00:00Z",
+        "Impressions": 10
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-06T07:00:00Z",
+        "Impressions": 16
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "2026-07-07T07:00:00Z",
+        "Impressions": 35
+      }
+    ],
+    "queryStats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "retirement calculator with military pension and 401k"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 4,
+        "Query": "money market account rates comparison"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "should i pay off my mortgage early if rent covers the mortgage payment?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "interest calculation for reduced loan term when paying off mortgage early in 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retirement pension calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what are money market deposit accounts?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "net worth percentile calculator 2022 estimate social security payout dates"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much money can i expect to have when i retire if i start investing in a pension fund at age 50 with a contribution of 19,930 yuan?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "method for calculating weighted average return"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "spend assets to avoid nursing home private paycosts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to avoid withdrawal symptoms after exiting investments"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is 40k liquid net worth but 8k credit card debt at 19 good or bad"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "liquid net worth calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "$600,000 invested at 4% today, and $5,000 withdrawn monthly lasts how long"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "should i use hysa vs money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "rental property sale capital gains calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "loan amortization"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to calculate expected returns"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "stock dividend compound interest calculation formula"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "roughly how much to make to afford $200/mo car"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "30-year fixed investment compound interest returns and maximum drawdown calculation"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "weekly s&p 500 investment of $500: yield calculation"
+      }
+    ],
+    "pageStats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/retirement/military-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 6,
+        "Query": "https://www.themodernwallet.com/portfolio/expected-return-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/investing/dividend-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/net-worth/net-worth-percentile-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/retirement/pension-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/investing/sp500-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/hysa-vs-money-market/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/how-to-protect-assets-from-nursing-home/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/mortgage/amortization-schedule/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/money-market-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/retirement/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/"
+      }
+    ],
+    "linkCounts": {
+      "__type": "LinkCounts:#Microsoft.Bing.Webmaster.Api",
+      "Links": [],
+      "TotalPages": 0
+    },
+    "blockedUrls": [],
+    "queryParameters": [],
+    "feeds": [
+      {
+        "__type": "Feed:#Microsoft.Bing.Webmaster.Api",
+        "Compressed": false,
+        "FileSize": 0,
+        "LastCrawled": "2026-06-27T20:07:33Z",
+        "Status": "Success",
+        "Submitted": "2026-06-27T20:07:32Z",
+        "Type": "Sitemap Index",
+        "Url": "https://www.themodernwallet.com/sitemap-index.xml",
+        "UrlCount": 64
+      }
+    ],
+    "urlSubmissionQuota": {
+      "__type": "UrlSubmissionQuota:#Microsoft.Bing.Webmaster.Api",
+      "DailyQuota": 100,
+      "MonthlyQuota": 2200
+    },
+    "pageQueryStats": {}
+  },
+  "_errors": {}
+}
