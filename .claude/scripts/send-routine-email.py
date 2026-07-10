@@ -83,17 +83,21 @@ def load_secrets() -> dict[str, str]:
     return out
 
 
+# Three visual states. GREEN is reserved for runs that actually shipped a commit
+# (new/updated content). YELLOW = ran fine but committed nothing (a "no changes"
+# run). RED = failed. See main(): a `success` with no commit is downgraded to
+# `no-op` so green never implies content shipped when it didn't.
 STATUS_THEME = {
     "success": {"label": "Success", "bg": "#10b981", "fg": "#ffffff", "emoji": "✅"},
     "failure": {"label": "Failure", "bg": "#ef4444", "fg": "#ffffff", "emoji": "❌"},
-    "no-op":   {"label": "No changes", "bg": "#64748b", "fg": "#ffffff", "emoji": "⚪"},
-    "no-changes": {"label": "No changes", "bg": "#64748b", "fg": "#ffffff", "emoji": "⚪"},
+    "no-op":   {"label": "No changes", "bg": "#f59e0b", "fg": "#ffffff", "emoji": "🟡"},
+    "no-changes": {"label": "No changes", "bg": "#f59e0b", "fg": "#ffffff", "emoji": "🟡"},
 }
 
 # Inbox subject icon per status — 3 states so the icon alone tells you
-# success-with-changes / ran-clean-no-changes / failed. Color emoji so it
-# actually renders colored in the mail list (monochrome ✓/✕ render black).
-STATUS_ICON = {"success": "✅", "failure": "❌", "no-op": "⚪", "no-changes": "⚪"}
+# green=shipped-a-commit / yellow=ran-clean-but-no-commit / red=failed. Color
+# emoji so it renders colored in the mail list (monochrome ✓/✕ render black).
+STATUS_ICON = {"success": "✅", "failure": "❌", "no-op": "🟡", "no-changes": "🟡"}
 
 # Repo name (basename of owner/repo, auto-detected from git) → (display project,
 # plus-tag slug). The project becomes the email sender name so each site is
@@ -497,6 +501,13 @@ def main() -> int:
             args.commit_sha = head
     if args.commit_sha and not args.commit_url and args.repo:
         args.commit_url = f"https://github.com/{args.repo}/commit/{args.commit_sha}"
+
+    # Reserve the GREEN "success" band/icon for runs that actually produced a
+    # commit (new or updated content). A run that reports success but committed
+    # nothing didn't ship anything — render it YELLOW ("no changes"), never green,
+    # so the inbox color never implies content was published when it wasn't.
+    if args.status == "success" and not args.commit_sha:
+        args.status = "no-op"
 
     secrets = load_secrets()
     api_key = secrets.get("RESEND_API_KEY", "").strip()
