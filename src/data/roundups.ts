@@ -1125,8 +1125,18 @@ export const ROUNDUPS: RoundupEntry[] = [
         content:
           "Money market accounts at banks are FDIC insured up to $250,000 per depositor, per institution, per account category — meaning your principal and accrued interest are protected even if the bank fails. Credit union money market accounts are similarly covered by NCUA insurance.\n\nMoney market funds (like Vanguard's VMFXX) are a separate category — they are investment products, not bank deposits, and are not FDIC insured. However, U.S. government money market funds are considered extremely low risk because they invest in short-term Treasury and government agency securities.",
       },
+      {
+        heading: "Which money market accounts have the lowest fees?",
+        content:
+          "Every bank account in this roundup charges no monthly maintenance fee — that is a deliberate ranking filter, not a coincidence. A monthly fee erases the interest edge that makes a money market account worth opening: a $12 monthly fee costs $144 a year, which cancels roughly a third of the interest a $10,000 balance earns at a competitive APY.\n\nOn a no-monthly-fee MMA, the fees that actually bite hide in the fine print. Watch for four: excess-withdrawal fees when you pass the bank's monthly transaction cap, out-of-network ATM charges on accounts with [debit card access](/guides/money-market-account-debit-card/), outgoing wire fees when you move the money, and paper-statement fees if you don't opt into e-statements. Also check the APY tiers — some accounts advertise a headline rate that only applies above a balance threshold, which functions like a fee on smaller balances.\n\nTo keep an account truly free, read the fee schedule before you open it and set two defaults on day one: e-statements on, and transfers routed through your linked checking account rather than one-off withdrawals. If an account you hold starts charging a maintenance fee, switch — with no minimums to open at UFB Direct, Sallie Mae, Discover, or Ally, the switching cost is an afternoon.",
+      },
     ],
     faqs: [
+      {
+        question: "Are there money market accounts with no monthly maintenance fee?",
+        answer:
+          "Yes — every bank pick in this roundup (UFB Direct, Sallie Mae, Discover, Ally, CIT Bank, and TIAA Bank) charges no monthly maintenance fee. No-fee MMAs are now the norm among online banks. The fees to watch instead are excess-withdrawal fees past the monthly transaction cap, out-of-network ATM charges, outgoing wire fees, and paper-statement fees — all avoidable with e-statements and planned transfers.",
+      },
       {
         question: "What is a good APY for a money market account in 2026?",
         answer:
@@ -1553,6 +1563,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         content:
           "Small business 401(k) fees fall into three categories: plan-level fees (monthly base fee charged to the employer), participant fees (per-employee monthly charges), and fund expense ratios (charged inside the investment funds, paid by employees).\n\nThe last category is the most common source of hidden costs. A plan that advertises $0 employer fees but offers funds with 0.80%+ expense ratios is shifting costs onto employees — which reduces their retirement savings. Index-fund-based providers like Guideline and Fidelity use funds with 0.03–0.15% expense ratios, dramatically reducing this drag.\n\nAlways ask any prospective provider for the 'all-in cost' — employer fees plus the average weighted fund expense ratio that employees pay.",
       },
+      {
+        heading: "How to choose a 401(k) provider for your small business",
+        content:
+          "Choosing a 401(k) provider comes down to four questions, in this order: does it sync with your payroll, who carries the fiduciary responsibility, what is the all-in cost at your headcount, and how much setup work lands on you.\n\nStart with payroll, because contribution sync is where small plans break. A provider with native integration to your payroll system (Guideline with Gusto, ADP and Paychex with their own platforms, Human Interest with most major systems) posts deferrals automatically every pay run. Deciding between the two payroll-native routes? See our [Gusto 401(k) vs Paychex 401(k) comparison](/compare/gusto-401k-vs-paychex-401k/). Without that, someone on your team uploads a contribution file every payday — and late deposits are one of the most common Department of Labor compliance findings against small plans. Next, fiduciary coverage: a provider that acts as 3(38) investment fiduciary and 3(16) administrator takes fund selection, nondiscrimination testing, and Form 5500 filing off your desk. If a provider offers those only as add-ons, price them in — the responsibility doesn't disappear, it just stays with you.\n\nOn setup effort, the modern providers have compressed what used to be a months-long process. Fully digital onboarding at providers like Guideline and Human Interest typically gets a new plan live in a few weeks, with the provider handling plan documents, employee notices, and auto-enrollment setup (required for most new plans starting in 2025 under SECURE 2.0). Traditional providers may involve a sales and design consultation cycle. Whichever route you take, start the process at least a quarter before you want payroll deductions to begin, and claim the SECURE 2.0 startup credit — up to $5,000 per year for three years — which for many businesses under 50 employees makes the first years of the plan effectively free.",
+      },
     ],
     faqs: [
       {
@@ -1766,8 +1781,18 @@ export const ROUNDUPS: RoundupEntry[] = [
         content:
           "The leading net worth trackers use read-only access — they can view your account data but cannot move money or make transactions. Apps like Empower and Tiller use Plaid or Yodlee, which are regulated financial data aggregators that connect thousands of institutions using secure OAuth or encrypted credential storage.\n\nThe main risk is credential exposure if the aggregator is compromised. Major aggregators have strong security records, and read-only access limits the damage any breach could cause. Nonetheless, you should use a unique, strong password for any financial account and enable two-factor authentication wherever available.",
       },
+      {
+        heading: "Which net worth tracker is best for tax planning?",
+        content:
+          "Quicken Classic is the strongest pick on this list for tax planning, because tax work runs on data most trackers don't keep: cost basis by tax lot, realized versus unrealized gains, and holding periods. Quicken tracks cost basis and capital gains in detail and can produce the reports a CPA actually asks for at filing time, including Schedule D-ready realized-gains data.\n\nEmpower covers the next tier of tax awareness. Its free dashboard separates taxable, tax-deferred, and Roth accounts, which is the view you need for two common decisions: which account to sell from first, and whether unrealized losses in a taxable account are worth harvesting against this year's gains. Boldin approaches tax from the retirement side — it models Roth conversion timing and the tax bill attached to different withdrawal orders, which matters more than lot-level detail once you are within ten years of retirement.\n\nKnow the limit of every app here: a net worth tracker informs tax decisions but doesn't file anything, and aggregator-synced cost basis can drift from the broker's official records after transfers or corporate actions. Before acting on a harvesting or conversion decision, confirm the numbers against your brokerage's own tax-lot page, and keep the full picture current with our [net worth calculator](/net-worth/). (Selling a rental property? That gain has its own math — see the [rental property capital gains calculator](/real-estate/capital-gains-calculator/).)",
+      },
     ],
     faqs: [
+      {
+        question: "Can a net worth tracker help with tax planning?",
+        answer:
+          "Yes, within limits. Trackers with investment depth — Quicken Classic (cost basis and capital gains tracking), Empower (taxable vs. tax-deferred vs. Roth account views), and Boldin (Roth conversion and withdrawal-order modeling) — surface the data behind tax-loss harvesting, asset-location, and conversion decisions. But no tracker files taxes or replaces your broker's official tax-lot records, so verify numbers there before you act.",
+      },
       {
         question: "What is the best free net worth tracker?",
         answer:

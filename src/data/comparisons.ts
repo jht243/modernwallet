@@ -234,7 +234,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "What is a money market account?",
         content:
-          "A money market account (MMA) is a deposit account offered by banks and credit unions that pays competitive interest while also giving you spending access — usually a debit card, check-writing, or both.\n\nMMAs are often confused with money market funds (which are investment products, not bank deposits, and not FDIC insured). A money market account at a bank IS FDIC insured and holds cash, not investments.\n\nThe key advantage over a regular savings account or HYSA is direct spending access. You can write a check directly from the account — helpful for paying contractors, bills, or landlords who don't accept electronic transfers.",
+          "A money market account (MMA) is a deposit account offered by banks and credit unions that pays competitive interest while also giving you spending access — usually [a debit card](/guides/money-market-account-debit-card/), check-writing, or both.\n\nMMAs are often confused with money market funds (which are investment products, not bank deposits, and not FDIC insured). A money market account at a bank IS FDIC insured and holds cash, not investments.\n\nThe key advantage over a regular savings account or HYSA is direct spending access. You can write a check directly from the account — helpful for paying contractors, bills, or landlords who don't accept electronic transfers.",
       },
       {
         heading: "HYSA vs money market: which has better rates?",
@@ -3360,7 +3360,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS: SEP Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps" },
       { label: "IRS: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "gusto-401k-vs-paychex-401k"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investing Growth Calculator", href: "/investing/" },
@@ -3744,6 +3744,75 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Net Worth Tracker", href: "/net-worth/" },
       { label: "Budget Planner", href: "/budget/" },
       { label: "Estate Planning Guide", href: "/estate-planning/" },
+    ],
+  },
+  // ─── Gusto 401(k) vs Paychex 401(k) ──────────────────────────────────────
+  {
+    slug: "gusto-401k-vs-paychex-401k",
+    title: "Gusto vs Paychex 401(k): Small Business Comparison",
+    metaDescription:
+      "Gusto's Guideline-powered 401(k) vs Paychex's in-house plan compared: pricing transparency, payroll sync, fiduciary coverage, and which fits your business.",
+    targetKeyword: "gusto vs paychex 401k",
+    optionA: "Gusto 401(k) (via Guideline)",
+    optionB: "Paychex 401(k)",
+    segment: "small business owners choosing a 401(k) provider",
+    h1: "Gusto vs Paychex 401(k): Which Small Business Plan Fits You?",
+    intro:
+      "[Gusto](https://gusto.com/) and [Paychex](https://www.paychex.com/retirement-services) take opposite approaches to the small business 401(k). Gusto does not run a retirement plan itself — it connects your payroll to [Guideline](https://www.guideline.com/), an independent recordkeeper with published flat-fee pricing and built-in fiduciary coverage. Paychex runs its 401(k) in-house as part of its payroll and HR platform, with pricing set by quote. The right choice comes down to how much you value published pricing and automated fiduciary coverage versus a single vendor that bundles payroll, HR, and retirement under one contract.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who runs the plan", a: "Guideline, an independent recordkeeper synced to Gusto payroll", b: "Paychex itself — recordkeeping, payroll, and HR under one roof" },
+        { dimension: "Pricing transparency", a: "Published flat monthly base fee plus a per-participant fee", b: "Quote-based; pricing is not published" },
+        { dimension: "Payroll integration", a: "Native 360° sync with Gusto payroll — deferrals flow automatically", b: "Native — payroll and 401(k) share one system (Paychex Flex)" },
+        { dimension: "Investment fiduciary (3(38))", a: "Included — Guideline selects and monitors the fund lineup", b: "Optional add-on through Paychex's fiduciary services" },
+        { dimension: "Administrative fiduciary (3(16))", a: "Included on Guideline plans — compliance testing, Form 5500 filing", b: "Optional add-on service" },
+        { dimension: "Investment lineup", a: "Curated menu of low-cost index funds", b: "Broader menu; varies by plan design and advisor" },
+        { dimension: "Beyond the 401(k)", a: "Payroll, benefits, HR tools aimed at small teams", b: "Full HR outsourcing (PEO), insurance, time tracking at any size" },
+        { dimension: "Best for", a: "Small teams that want set-it-and-forget-it compliance and known costs", b: "Growing businesses already on Paychex that want one vendor" },
+      ],
+    },
+    verdict:
+      "Pick Gusto's Guideline-powered 401(k) when you run payroll on Gusto and want published pricing with 3(38) and 3(16) fiduciary coverage built in — it is the lower-maintenance plan for teams without an HR department. Pick Paychex when you already use Paychex Flex for payroll or you want retirement, HR, insurance, and compliance handled by a single vendor as you grow past 50 employees. Whichever you choose, claim the SECURE 2.0 startup credit — it can offset up to $5,000 of plan costs per year for your first three years.",
+    sections: [
+      {
+        heading: "How Gusto's 401(k) actually works (it's Guideline)",
+        content:
+          "Gusto's 401(k) offering is delivered by Guideline, a separate company that acts as the plan's recordkeeper and fiduciary. When you add a 401(k) inside Gusto, Guideline runs the plan and syncs with each payroll run. Employee deferral changes flow both ways automatically, which removes the manual file uploads that cause most small-plan errors.\n\nGuideline publishes its pricing: a flat monthly base fee by plan tier plus a per-active-participant fee, listed on its pricing page. It also serves as the 3(38) investment fiduciary and 3(16) plan administrator on its plans. That means Guideline — not you — selects the fund menu, runs nondiscrimination testing, and files Form 5500.\n\nThe trade-off is a curated lineup. Guideline builds its menus around low-cost index funds. Most small teams benefit from that simplicity, but if an owner wants specific funds or a brokerage window, the curated menu can feel limiting.",
+      },
+      {
+        heading: "How the Paychex 401(k) works",
+        content:
+          "Paychex runs one of the largest 401(k) recordkeeping operations in the country and keeps everything in-house. Your payroll, plan administration, and employee retirement portal all live inside Paychex Flex. That single-system design is the core appeal: there is no integration to break, and one support line covers both payroll and the plan.\n\nPricing works differently than Guideline's. Paychex quotes each plan based on headcount, plan design, and which services you bundle. Businesses that negotiate payroll, HR, and retirement together can do well on price, but you will not find a public rate card to compare against.\n\nFiduciary coverage is modular. Paychex offers 3(16) administrative fiduciary services and access to 3(38) investment management as add-ons rather than defaults. That gives larger businesses flexibility to keep an outside advisor, but it also means the compliance burden stays with you unless you buy the coverage.",
+      },
+      {
+        heading: "Cost comparison and the SECURE 2.0 startup credits",
+        content:
+          "For a brand-new plan, federal tax credits matter more than the fee difference between these two providers. Under SECURE 2.0, employers with up to 50 employees can claim a credit for 100% of plan startup costs, capped at $5,000 per year for the first three years. A separate $500-per-year credit applies for three years when the plan uses automatic enrollment, and an employer-contribution credit can add up to $1,000 per employee. The IRS details the rules on its [retirement plans startup costs credit page](https://www.irs.gov/retirement-plans/retirement-plans-startup-costs-tax-credit).\n\nNote that new 401(k) plans established after December 29, 2022 are generally required to auto-enroll eligible employees starting in 2025, so both providers build automatic enrollment into new plans by default.\n\nWhen you compare quotes, put them on the same footing: ask Paychex for the all-in monthly cost at your exact headcount, then stack it against Guideline's published base-plus-participant pricing. Also compare fund expense ratios, because employees pay those out of their balances — a lineup of low-cost index funds can matter more over 20 years than a $30 difference in the monthly admin fee. Model the long-run stakes with our [401k calculator](/retirement/401k-calculator/).",
+      },
+      {
+        heading: "How to decide (and what switching costs you)",
+        content:
+          "Start from your payroll system, because the payroll sync is where small-plan problems live. If you run payroll on Gusto, the Guideline plan is the path of least resistance; if you run Paychex Flex, the in-house plan is. Running a 401(k) from a vendor your payroll doesn't talk to means manual contribution files every pay period — a common source of the late-deposit compliance issues the Department of Labor flags in its [retirement plan fees guidance](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees).\n\nWeigh who carries the fiduciary risk. With Guideline, 3(38) and 3(16) coverage is part of the product. With Paychex, decide whether you will pay for those services or keep the responsibility — a real cost either way, not a feature checkbox.\n\nIf you are choosing a provider from scratch rather than deciding between these two, our [best 401(k) providers for small business](/roundup/best-401k-providers-for-small-business/) roundup ranks the full field. Self-employed with no employees? A solo plan is cheaper than either option here — see [SEP IRA vs Solo 401(k)](/compare/sep-ira-vs-solo-401k/).",
+      },
+    ],
+    faqs: [
+      { question: "Does Gusto have its own 401(k) plan?", answer: "No. Gusto partners with Guideline, an independent recordkeeper, to provide 401(k) plans that sync natively with Gusto payroll. Guideline runs the plan, acts as fiduciary, and handles compliance; Gusto handles the payroll side of each contribution." },
+      { question: "How much does a Gusto 401(k) cost?", answer: "Pricing comes from Guideline, not Gusto: a flat monthly base fee that varies by plan tier, plus a per-active-participant monthly fee, published on Guideline's pricing page. Employees also pay fund expense ratios on their balances. Check Guideline's current pricing page for exact figures before you commit." },
+      { question: "How much does a Paychex 401(k) cost?", answer: "Paychex does not publish 401(k) pricing. Costs are quoted per business based on employee count, plan design, and whether you bundle payroll or HR services. Ask for the all-in monthly figure — base fee, per-participant charges, and any setup cost — so you can compare it directly against published competitors." },
+      { question: "Is Guideline or Paychex better for a startup's first 401(k)?", answer: "Guideline (through Gusto) is usually simpler for a first plan: published pricing, built-in 3(38) and 3(16) fiduciary coverage, and automated compliance testing. Paychex makes more sense when you already run Paychex payroll or want one vendor for HR, insurance, and retirement. Either way, SECURE 2.0 startup credits can offset up to $5,000 of costs per year for three years." },
+      { question: "Can I move my 401(k) from Paychex to Guideline (or the reverse)?", answer: "Yes. A plan conversion moves your existing 401(k) to a new recordkeeper without employees losing balances or tax status. Expect a blackout period of a few weeks while assets transfer, a required employee notice before it starts, and some plan-design cleanup. Time the switch to a quarter boundary to simplify compliance testing." },
+      { question: "Do these plans require automatic enrollment?", answer: "Generally yes for new plans. SECURE 2.0 requires 401(k) plans established after December 29, 2022 to automatically enroll eligible employees starting in 2025, with limited exceptions for businesses with 10 or fewer employees or those under 3 years old. Both Guideline and Paychex build auto-enrollment into new plan setups." },
+    ],
+    sources: [
+      { label: "IRS — Retirement Plans Startup Costs Tax Credit", url: "https://www.irs.gov/retirement-plans/retirement-plans-startup-costs-tax-credit" },
+      { label: "DOL — Understanding Your Retirement Plan Fees", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees" },
+      { label: "Guideline — 401(k) Pricing", url: "https://www.guideline.com/pricing" },
+      { label: "Paychex — Retirement Services", url: "https://www.paychex.com/retirement-services" },
+    ],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "roth-401k-vs-traditional-401k", "pension-vs-401k"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
     ],
   },
   ...BUSINESS_COMPARISONS,
