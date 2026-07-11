@@ -1760,8 +1760,8 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Trump Account vs 529 (mindmap pass 2026-07-04) ──────────────────────
   {
     slug: "trump-account-vs-baby-bonds",
-    title: "Trump Account vs Baby Bonds: What's the Difference?",
-    metaDescription: "Trump account vs baby bonds: they are not the same. The Trump Account is enacted federal law; baby bonds are a federal proposal plus a few state programs.",
+    title: "Trump Account vs Baby Bonds: Which One Is Real?",
+    metaDescription: "Trump Account vs baby bonds: one is enacted federal law with a $1,000 seed live now; baby bonds remain mostly a proposal. See which one your child gets.",
     targetKeyword: "trump account vs baby bonds",
     optionA: "Trump Account",
     optionB: "Baby Bonds",

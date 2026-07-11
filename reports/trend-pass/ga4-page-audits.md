@@ -20,3 +20,8 @@
 | /compare/custodial-roth-ira-vs-utma/ | 2026-07-08 | 1 | 0/1/0/0/0 | 0 |
 | /compare/invoice-factoring-vs-business-line-of-credit/ | 2026-07-08 | 1 | 0/1/1/0/0 | 0 |
 | /compare/utma-vs-ugma/ | 2026-07-08 | 1 | 0/0/1/0/0 | 0 |
+| /compare/trump-account-vs-baby-bonds/ | 2026-07-11 | 1 | 0/0/0/1/0 | 0 |
+| /compare/trump-account-vs-savings-account/ | 2026-07-11 | 1 | 0/0/0/0/0 | 0 |
+| /guides/529-leftover-money-options/ | 2026-07-11 | 1 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-alternatives/ | 2026-07-11 | 1 | 0/0/0/1/0 | 0 |
+| /net-worth/liquid-net-worth-calculator/ | 2026-07-11 | 1 | 0/0/0/1/0 | 0 |

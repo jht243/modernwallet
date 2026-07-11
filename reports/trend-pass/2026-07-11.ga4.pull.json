@@ -1,0 +1,84 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-10",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 6,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 6
+    },
+    {
+      "page": "/compare/trump-account-vs-baby-bonds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-savings-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-account-alternatives/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/net-worth/liquid-net-worth-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 12,
+  "top10_pages_total_clicks": 12,
+  "channel_split": {
+    "/": {
+      "Referral": 3,
+      "Direct": 1
+    },
+    "/compare/trump-account-vs-baby-bonds/": {
+      "Organic Search": 1
+    },
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Direct": 1
+    },
+    "/compare/trump-account-vs-savings-account/": {
+      "Organic Search": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 1
+    },
+    "/guides/trump-account-alternatives/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/net-worth/liquid-net-worth-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}

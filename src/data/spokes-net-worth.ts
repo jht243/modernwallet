@@ -90,9 +90,9 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   {
     calculator: "net-worth",
     slug: "liquid-net-worth-calculator",
-    title: "Liquid Net Worth Calculator: See What You Can Spend",
+    title: "Free Liquid Net Worth Calculator: What Can You Spend?",
     metaDescription:
-      "Free liquid net worth calculator. See how much of your wealth is actually accessible after subtracting debts from cash and easy-to-sell investments.",
+      "Free liquid net worth calculator: subtract debts from cash and easy-to-sell investments to see what's really spendable - no 401(k) or home equity counted.",
     targetKeyword: "liquid net worth calculator",
     estimatedVolume: 1900,
     estimatedKD: 35,

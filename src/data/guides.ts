@@ -1032,8 +1032,8 @@ export const GUIDES: Guide[] = [
   // Trump Account alternatives roundup (comparison-content pass 2026-07-08)
   {
     slug: "trump-account-alternatives",
-    title: "Trump Account Alternatives: 6 Ways to Save for Kids",
-    metaDescription: "The best Trump Account alternatives: 529 plans, custodial Roth IRAs, UTMA accounts, Coverdell ESAs, high-yield savings, and I bonds compared by goal.",
+    title: "Trump Account Alternatives: 6 Options Ranked by Goal",
+    metaDescription: "Compare the 6 best Trump Account alternatives - 529, custodial Roth IRA, UTMA, Coverdell, HYSA, I bonds - ranked by goal, including kids born before 2025.",
     h1: "Trump Account Alternatives: 6 Better Ways to Save for a Child",
     cardBlurb: "No seed money for a kid born before 2025? Compare the six best Trump Account alternatives and see which fits your goal.",
     intro: "The best Trump Account alternatives are a 529 plan, a custodial brokerage account, a custodial Roth IRA, a Coverdell ESA, a high-yield savings account, and I bonds. Each one fixes a limit the Trump Account can't.\n\nThe [Trump Account](/guides/trump-accounts/) only hands a $1,000 seed to U.S.-citizen kids born in 2025 through 2028. If your child was born before 2025, you get no seed at all — so the account's main draw disappears.\n\nThe Trump Account also locks the money until the year your child turns 18, taxes it as ordinary income, caps contributions at $5,000 a year, and holds only an S&P 500 index fund. Those limits are why families look elsewhere.\n\nThis guide ranks six alternatives by goal. Pick the one that matches what you want most: tax-free growth, flexibility, or safety. If you're still deciding, see whether a [Trump Account is worth it](/guides/trump-account-worth-it/) first.",
