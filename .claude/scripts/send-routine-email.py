@@ -358,6 +358,100 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
     return "\n".join(out)
 
 
+# --- Routine-email content policy -------------------------------------------
+# Every routine email answers exactly four things and nothing else:
+#   1) what ran      -> the colored band + "What ran" row (the --skill)
+#   2) when it ran   -> the "When" row
+#   3) success/error -> the colored band (green/red/yellow) + Blocker on failure
+#   4) what changed  -> the --summary line + this filtered "What changed" block
+# The details a skill passes in are filtered HARD to (4): only sections that
+# describe a CONCRETE change survive. Analytics/verdict/engagement tables,
+# per-page rosters, skipped/deferred/flagged/ledger/audit/IndexNow logs, and any
+# markdown table are stripped. Enforced centrally so no single skill can put the
+# "word garbage" back into an email — unknown sections fail-closed (dropped), and
+# the --summary still answers "what changed" when nothing survives.
+_CHANGE_HEADINGS = (
+    "shipped", "published", "new content", "new page", "created", "rewrite",
+    "enrich", "links added", "next-step link", "internal link", "tool",
+    "metadata rewrite", "metadata fix", "fix", "consolidat", "redirect",
+    "asset", "treatment", "what changed", "changes made", "updated", "blocker",
+)
+_NOISE_HEADINGS = (
+    "table", "verdict", "engagement", "per-page", "per page", "skipped",
+    "deferred", "flagged", "ledger", "audit", "indexnow", "index now",
+    "improvement report", "roster", "run info", "source", "overview",
+    "pulled pages", "metrics", "diagnos",
+)
+
+
+def _is_change_heading(heading: str) -> bool:
+    hl = heading.lower()
+    if any(n in hl for n in _NOISE_HEADINGS):
+        return False
+    return any(k in hl for k in _CHANGE_HEADINGS)
+
+
+def _strip_tables_and_empties(body_lines: list[str]) -> list[str]:
+    out: list[str] = []
+    for raw in body_lines:
+        s = raw.strip()
+        if not s:
+            out.append("")
+            continue
+        if s.startswith("|"):                       # markdown table row
+            continue
+        if s.startswith("(") and s.endswith(")"):   # legend / caption line
+            continue
+        if s.lower() in ("none this run", "none", "n/a", "—", "-", "none."):
+            continue
+        out.append(raw)
+    return out
+
+
+def clean_details(md: str) -> str:
+    """Reduce a skill's raw digest to only its concrete 'what changed' content.
+
+    - No headings at all -> keep the prose, minus tables (covers short/free-form
+      success or failure notes).
+    - Otherwise -> keep only CHANGE sections (see _is_change_heading); drop every
+      table, legend line, and empty/"None this run" section. Unknown headings are
+      dropped so new skills fail toward a minimal email rather than leaking noise.
+    """
+    text = (md or "").strip()
+    if not text:
+        return ""
+
+    lines = text.splitlines()
+    if not any(l.lstrip().startswith("#") for l in lines):
+        kept = _strip_tables_and_empties(lines)
+        return "\n".join(kept).strip()
+
+    sections: list[tuple[str, list[str]]] = []
+    cur_head: str | None = None
+    cur_body: list[str] = []
+    for raw in lines:
+        if raw.lstrip().startswith("#"):
+            if cur_head is not None:
+                sections.append((cur_head, cur_body))
+            cur_head = raw.lstrip().lstrip("#").strip()
+            cur_body = []
+        elif cur_head is not None:
+            cur_body.append(raw)
+    if cur_head is not None:
+        sections.append((cur_head, cur_body))
+
+    out: list[str] = []
+    for head, body in sections:
+        if not _is_change_heading(head):
+            continue
+        clean_body = _strip_tables_and_empties(body)
+        if any(x.strip() for x in clean_body):
+            out.append(f"## {head}")
+            out.extend(clean_body)
+            out.append("")
+    return "\n".join(out).strip()
+
+
 def build_html(args: argparse.Namespace, details_html: str, preheader: str = "", project_disp: str = "") -> str:
     theme = STATUS_THEME.get(args.status, STATUS_THEME["no-op"])
     now = datetime.now().strftime("%Y-%m-%d %H:%M %Z").strip() or datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -547,6 +641,9 @@ def main() -> int:
         tail = f"commit {args.commit_sha[:7]}"
         preheader = f"{preheader} · {tail}" if preheader else tail
 
+    # Enforce the 4-things-only email policy: strip everything from the passed
+    # details except concrete "what changed" content (no tables, no analytics).
+    details_md = clean_details(details_md)
     details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
     body_html = build_html(args, details_html, preheader, project_disp)
 
