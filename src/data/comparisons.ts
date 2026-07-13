@@ -1096,7 +1096,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "VA — VA loan funding fee tables", url: "https://www.benefits.va.gov/homeloans/purchasecashout_fees.asp" },
       { label: "CFPB — VA loan basics", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-va-loan-en-1567/" },
     ],
-    relatedComparisons: ["15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying"],
+    relatedComparisons: ["15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying", "fha-loan-vs-va-loan"],
     calculatorLinks: [
       { label: "Mortgage calculator", href: "/mortgage/" },
       { label: "VA loan calculator", href: "/mortgage/va-loan-calculator/" },
@@ -1284,7 +1284,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
       { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
     ],
-    relatedComparisons: ["online-will-vs-lawyer", "revocable-vs-irrevocable-trust"],
+    relatedComparisons: ["online-will-vs-lawyer", "revocable-vs-irrevocable-trust", "power-of-attorney-vs-guardianship"],
     calculatorLinks: [
       { label: "Estate planning calculator", href: "/estate-planning/" },
       { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
@@ -2791,7 +2791,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Federal Reserve: Selected Interest Rates (H.15)", url: "https://www.federalreserve.gov/releases/h15/" },
       { label: "IRS Publication 936, Home Mortgage Interest Deduction", url: "https://www.irs.gov/publications/p936" },
     ],
-    relatedComparisons: ["fixed-vs-arm-mortgage", "15-year-vs-30-year-mortgage", "renting-vs-buying"],
+    relatedComparisons: ["fixed-vs-arm-mortgage", "15-year-vs-30-year-mortgage", "renting-vs-buying", "heloc-vs-personal-loan"],
     calculatorLinks: [
       { label: "Mortgage Calculator", href: "/mortgage/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
@@ -2883,7 +2883,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "CFPB — Cancelling private mortgage insurance (PMI)", url: "https://www.consumerfinance.gov/ask-cfpb/how-can-i-cancel-my-private-mortgage-insurance-pmi-en-202/" },
       { label: "FHFA — Conforming Loan Limit Values for 2025", url: "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-values-for-2025" },
     ],
-    relatedComparisons: ["va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage"],
+    relatedComparisons: ["va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "fha-loan-vs-va-loan"],
     calculatorLinks: [
       { label: "Mortgage Payment Calculator", href: "/mortgage/" },
       { label: "Net Worth Tracker", href: "/net-worth/" },
@@ -3360,7 +3360,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS: SEP Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps" },
       { label: "IRS: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "gusto-401k-vs-paychex-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "gusto-401k-vs-paychex-401k", "simple-ira-vs-401k"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investing Growth Calculator", href: "/investing/" },
@@ -3647,7 +3647,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
       { label: "NCUA — Share Insurance Coverage", url: "https://ncua.gov/consumers/share-insurance-coverage" },
     ],
-    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd"],
+    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd", "annuity-vs-cd"],
     calculatorLinks: [
       { label: "Investing Calculator", href: "/investing/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
@@ -3815,6 +3815,443 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
     ],
   },
+  // ─── FHA Loan vs VA Loan ──────────────────────────────────────────────────
+  {
+    slug: "fha-loan-vs-va-loan",
+    title: "FHA Loan vs. VA Loan: Which Costs Less in 2026?",
+    metaDescription:
+      "FHA loan vs VA loan compared: down payment, funding fee vs MIP, interest rates, and eligibility — see which government-backed mortgage saves more.",
+    targetKeyword: "fha loan vs va loan",
+    optionA: "FHA Loan",
+    optionB: "VA Loan",
+    segment: "veterans and first-time buyers",
+    h1: "FHA Loan vs. VA Loan: Which Mortgage Is Better?",
+    intro:
+      "An FHA loan requires just 3.5% down and accepts credit scores as low as 580, while a VA loan lets eligible veterans and service members buy with 0% down and no monthly mortgage insurance at all — and for anyone who qualifies for VA, it is almost always the cheaper mortgage over time despite FHA's smaller-looking upfront cost.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Minimum down payment", a: "3.5% (10% if credit score is 500–579)", b: "0% — no down payment required" },
+        { dimension: "Monthly mortgage insurance", a: "Yes — annual MIP around 0.55%, often for the life of the loan", b: "None, ever, regardless of down payment" },
+        { dimension: "Upfront insurance/fee", a: "1.75% upfront MIP, financed into the loan", b: "1.25%–3.3% funding fee (waived for veterans with a 10%+ disability rating)" },
+        { dimension: "Who qualifies", a: "Any borrower who meets credit and income requirements", b: "Active duty, veterans, qualifying National Guard/Reserve members, and surviving spouses only" },
+        { dimension: "Minimum credit score", a: "580 for 3.5% down; 500–579 requires 10% down", b: "No VA minimum; most lenders require 580–620+" },
+        { dimension: "Interest rate", a: "Market rate based on credit and LTV", b: "Typically 0.25%–0.5% lower than comparable FHA/conventional rates" },
+        { dimension: "Property use", a: "Primary residence, 1–4 units, owner-occupied", b: "Primary residence only — no investment properties" },
+      ],
+    },
+    verdict:
+      "Choose a VA loan if you or your spouse qualify — 0% down, no monthly mortgage insurance, and a typically lower rate make it the cheaper mortgage in nearly every case for eligible borrowers. Choose an FHA loan if you don't have VA eligibility and your credit score is below about 620, since FHA's 580-score, 3.5%-down qualifying bar is easier to clear than most conventional guidelines. If you do qualify for VA and carry a service-connected disability rating of 10% or higher, the funding fee is waived entirely, which removes FHA's only real edge over VA — availability to non-veterans.",
+    sections: [
+      {
+        heading: "FHA vs VA mortgage insurance: the real cost gap",
+        content:
+          "The biggest cost difference between these two loans is mortgage insurance, not the interest rate. FHA charges two separate premiums, both set by [HUD](https://www.hud.gov/buying/loans): a 1.75% upfront MIP financed into the loan, and an annual MIP of about 0.55% that, for most loans with less than 10% down, lasts for the entire loan term.\n\nA VA loan carries no monthly mortgage insurance at all, regardless of your down payment. Instead it charges a one-time funding fee — 2.15% for a first-time user putting 0% down, scaling from 1.25% to 3.3% based on down payment and prior use, per the [Department of Veterans Affairs](https://www.benefits.va.gov/homeloans/).\n\nOn a $350,000 loan, FHA's annual MIP alone runs roughly $1,900 a year for as long as you hold the loan with less than 10% down. A VA borrower pays the funding fee once and never sees another insurance charge. That's the non-obvious math most side-by-side rate sheets skip: FHA's smaller-looking upfront number hides a recurring cost that VA borrowers never pay.",
+      },
+      {
+        heading: "Down payment and credit score requirements",
+        content:
+          "FHA is built for buyers who can't put much down. A 580 credit score unlocks the 3.5% minimum down payment; drop to 500–579 and FHA still allows financing, but the down payment requirement rises to 10%.\n\nVA sets no minimum credit score of its own — the [VA](https://www.benefits.va.gov/homeloans/) leaves that to individual lenders, most of whom require 580 to 620 or higher. The bigger VA advantage is the down payment: eligible borrowers can finance 100% of the purchase price with no down payment at all, something no conventional or FHA loan offers.\n\nBoth programs allow gift funds toward the down payment or closing costs, and both cap how much you can finance based on the county's loan limit — use the [home affordability calculator](/mortgage/affordability-calculator/) to see what price range fits your credit profile under each program.",
+      },
+      {
+        heading: "Who actually qualifies for each loan",
+        content:
+          "Eligibility is where these two loans diverge completely. FHA is open to any borrower — first-time buyers, repeat buyers, and investors buying an owner-occupied 1-to-4-unit property all qualify if they meet the credit and income guidelines.\n\nVA eligibility is service-based. Veterans who served at least 90 consecutive days during wartime or 181 days during peacetime qualify, National Guard and Reserve members generally need 6 years of service (or 90 days under Title 10/32 orders), and surviving spouses of veterans who died in service or from a service-connected disability may also qualify. A Certificate of Eligibility (COE) — usually pulled electronically by the lender — confirms your status.\n\nVA loans are also restricted to a primary residence you intend to occupy, while FHA allows the same restriction but with more flexibility on multi-unit properties, since you can rent out the other units in a duplex, triplex, or fourplex as long as you live in one.",
+      },
+      {
+        heading: "When FHA still makes sense",
+        content:
+          "FHA wins in exactly one scenario: you don't have VA eligibility. Since VA benefits are earned through military service, most first-time civilian buyers with lower credit scores or limited savings will find FHA is their most accessible government-backed option.\n\nFHA can also make sense for a veteran buying a second home or investment-adjacent multi-unit property that VA's owner-occupancy rules don't fit as well, or when a veteran has already used their full VA entitlement and prefers not to pursue restoration.\n\nFor most eligible veterans comparing the two loans side by side, the deciding factor comes down to the recurring MIP cost — model both scenarios in the [mortgage calculator](/mortgage/) before choosing, since the monthly insurance difference compounds over the life of the loan.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a VA loan always cheaper than an FHA loan?",
+        answer:
+          "For nearly all eligible borrowers, yes. VA loans have no monthly mortgage insurance and typically carry a lower interest rate than FHA, so the ongoing cost is lower even though VA charges a one-time funding fee. FHA's annual MIP often lasts the life of the loan, which adds up to more than VA's single funding fee over time.",
+      },
+      {
+        question: "Can I use a VA loan and an FHA loan at the same time?",
+        answer:
+          "You can hold both loan types, but not stacked on the same property purchase. Some veterans use a VA loan for a primary residence and later use FHA or conventional financing for a separate purchase, since VA loans require the property to be your primary residence.",
+      },
+      {
+        question: "What credit score do I need for a VA loan vs an FHA loan?",
+        answer:
+          "FHA sets a firm minimum of 580 for the 3.5% down payment option (500–579 requires 10% down). VA sets no minimum score itself, but most VA-approved lenders require 580 to 620 or higher, so in practice the two programs land in a similar credit range.",
+      },
+      {
+        question: "Does a VA loan really have no down payment requirement?",
+        answer:
+          "Yes, for eligible veterans and service members with full entitlement. VA loans can finance up to 100% of the purchase price with $0 down. Putting down 5% or more does reduce the funding fee, but it isn't required to qualify.",
+      },
+      {
+        question: "Which loan is easier to qualify for, FHA or VA?",
+        answer:
+          "FHA is easier to qualify for in the sense that anyone can apply — there's no service requirement. But for those who do have VA eligibility, VA underwriting is often more forgiving on debt-to-income ratio because it evaluates residual income, not just DTI, alongside a $0 down payment requirement.",
+      },
+    ],
+    sources: [
+      { label: "HUD — FHA Loan Eligibility", url: "https://www.hud.gov/buying/loans" },
+      { label: "U.S. Department of Veterans Affairs — VA Home Loans", url: "https://www.benefits.va.gov/homeloans/" },
+      { label: "VA — VA Loan Funding Fee Tables", url: "https://www.benefits.va.gov/homeloans/purchasecashout_fees.asp" },
+    ],
+    relatedComparisons: ["fha-vs-conventional-loan", "va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage"],
+    calculatorLinks: [
+      { label: "FHA Loan Calculator", href: "/mortgage/fha-calculator/" },
+      { label: "VA Loan Calculator", href: "/mortgage/va-loan-calculator/" },
+      { label: "Home Affordability Calculator", href: "/mortgage/affordability-calculator/" },
+    ],
+  },
+
+  // ─── SIMPLE IRA vs 401(k) ─────────────────────────────────────────────────
+  {
+    slug: "simple-ira-vs-401k",
+    title: "SIMPLE IRA vs. 401(k): Best Plan for Small Business",
+    metaDescription:
+      "SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.",
+    targetKeyword: "simple ira vs 401k",
+    optionA: "SIMPLE IRA",
+    optionB: "401(k)",
+    segment: "small business owners",
+    h1: "SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business?",
+    intro:
+      "A SIMPLE IRA lets small businesses offer a retirement plan with almost no paperwork and a mandatory employer contribution capped near 3% of pay, while a 401(k) costs more to administer but lets employees save nearly 50% more per year and gives owners far more plan-design flexibility — and the right choice depends mostly on your headcount and how much administrative cost you're willing to take on.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 employee contribution limit", a: "$17,000 ($21,000 if 50+)", b: "$24,500 ($32,500 if 50+; up to $35,750 if 60–63)" },
+        { dimension: "Employer contribution", a: "Mandatory — 3% dollar-for-dollar match or 2% nonelective for all eligible employees", b: "Optional — most employers match, but it isn't legally required" },
+        { dimension: "Setup and admin cost", a: "Low — no annual Form 5500 filing, no nondiscrimination testing", b: "Higher — annual Form 5500, plan document, possible nondiscrimination testing" },
+        { dimension: "Roth option", a: "Yes, at participating providers (added by SECURE 2.0)", b: "Yes, widely available as a Roth 401(k)" },
+        { dimension: "Plan loans", a: "Not allowed", b: "Allowed if the plan document permits them" },
+        { dimension: "Vesting on employer contributions", a: "Immediate — 100% vested from day one", b: "Can vest over up to 6 years (employer match only)" },
+        { dimension: "Best for", a: "Businesses with 100 or fewer employees wanting minimal admin work", b: "Businesses that want higher savings caps and can absorb the admin cost" },
+      ],
+    },
+    verdict:
+      "Choose a SIMPLE IRA if you have 100 or fewer employees, want to avoid the cost and paperwork of a full retirement plan, and are comfortable with a mandatory 3% match every year. Choose a 401(k) if you want employees — including yourself — to save more than SIMPLE IRA's lower cap allows, want the flexibility to skip a match in a lean year, or want features like plan loans and vesting schedules. Once you can absorb the added administration cost, a 401(k) almost always wins on flexibility and on how much your highest earners can defer.",
+    sections: [
+      {
+        heading: "How SIMPLE IRA and 401(k) contribution limits compare",
+        content:
+          "The gap between these two plans widens every year. For 2026, the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the SIMPLE IRA employee deferral limit at $17,000, with a $4,000 catch-up for participants 50 and older. The 401(k) employee deferral limit is $24,500, with a $32,500 catch-up limit for 50+ and a higher $35,750 catch-up for employees aged 60 to 63 under SECURE 2.0's enhanced catch-up rule.\n\nThat's roughly 44% more room in a 401(k) at the standard deferral level, and the gap grows further for employees over 50. For an owner or high earner trying to maximize tax-advantaged savings, the 401(k)'s higher ceiling alone can justify the added administrative cost.",
+      },
+      {
+        heading: "The employer cost you can't skip: mandatory SIMPLE IRA contributions",
+        content:
+          "A SIMPLE IRA isn't optional for the employer. You must either match employee deferrals dollar-for-dollar up to 3% of compensation, or make a flat 2% nonelective contribution to every eligible employee whether they contribute or not. There's no year where you can choose to skip it.\n\nA 401(k) gives you more control. Employer matching is common but not legally required (safe harbor 401(k) designs do require a set contribution in exchange for skipping nondiscrimination testing, but a standard 401(k) doesn't). That flexibility matters most for businesses with uneven cash flow, where a mandatory 3% obligation in a slow year is a real burden.",
+      },
+      {
+        heading: "Administrative burden: why 401(k)s cost more to run",
+        content:
+          "SIMPLE IRAs skip most of the compliance machinery that makes 401(k)s expensive. There's no annual Form 5500 filing, no nondiscrimination testing, and no plan document to maintain — the provider handles most of the setup with a short adoption agreement.\n\nA 401(k) requires an annual Form 5500 filing, a formal plan document, and — unless you use a safe harbor design — nondiscrimination testing to confirm highly compensated employees aren't disproportionately benefiting. The [Department of Labor](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees) publishes guidance on the fees and duties that come with running a 401(k), which is worth reading before you commit to the higher administrative load.\n\nMany providers now bundle this work into a flat monthly fee, so the true cost gap between the two plans is often smaller than the paperwork difference suggests — get quotes before assuming a 401(k) is out of reach.",
+      },
+      {
+        heading: "When to switch from a SIMPLE IRA to a 401(k)",
+        content:
+          "SIMPLE IRAs run on the calendar year, and you generally can't terminate one mid-year to start a 401(k) — the switch has to take effect January 1, with employees notified in the prior year. Plan the transition at least a few months ahead of your target start date.\n\nThe usual triggers to make the switch: you've grown past 100 employees (which disqualifies you from SIMPLE IRA eligibility), your highest earners are maxing out the SIMPLE limit and want more room, or you want plan features — loans, vesting schedules, a wider investment menu — that SIMPLE IRAs don't offer.\n\nIf you're choosing a 401(k) provider for the first time, see our [best 401(k) providers for small business](/roundup/best-401k-providers-for-small-business/) roundup, and check whether your business qualifies for the SECURE 2.0 startup tax credit, which can offset up to $5,000 of setup costs per year for three years.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I have a SIMPLE IRA and a 401(k) at the same time?",
+        answer:
+          "Generally no. The IRS treats SIMPLE IRAs as an exclusive plan — if you sponsor one, you generally can't also maintain a 401(k) for the same employees in the same calendar year. You have to terminate the SIMPLE IRA, effective January 1, before starting a 401(k).",
+      },
+      {
+        question: "What is the 2026 SIMPLE IRA contribution limit?",
+        answer:
+          "The 2026 SIMPLE IRA employee deferral limit is $17,000, up from $16,500 in 2025. The catch-up contribution for participants 50 and older is $4,000, and a higher $5,250 catch-up applies to employees aged 60 to 63 under SECURE 2.0.",
+      },
+      {
+        question: "Is a 401(k) always better than a SIMPLE IRA?",
+        answer:
+          "Not always. A 401(k) offers higher contribution limits and more design flexibility, but it costs more to administer and requires more paperwork. For a small business with 100 or fewer employees that wants the lowest-maintenance option, a SIMPLE IRA is often the better fit despite the lower savings cap.",
+      },
+      {
+        question: "Does a SIMPLE IRA require an employer match?",
+        answer:
+          "Yes. The employer must either match employee contributions dollar-for-dollar up to 3% of compensation, or make a flat 2% nonelective contribution to every eligible employee regardless of whether they contribute. This is mandatory every year the plan is active.",
+      },
+      {
+        question: "How do I switch from a SIMPLE IRA to a 401(k)?",
+        answer:
+          "Notify employees before November 2 of the year prior to the switch, terminate the SIMPLE IRA effective December 31, and start the new 401(k) on January 1. Work with a 401(k) provider several months ahead of the target date to have the plan document and payroll integration ready in time.",
+      },
+    ],
+    sources: [
+      { label: "IRS — 401(k) Limit Increases to $24,500 for 2026", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — SIMPLE IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
+      { label: "DOL — Understanding Your Retirement Plan Fees", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees" },
+    ],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "401k-vs-roth-ira", "pension-vs-401k"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+      { label: "Retirement Hub", href: "/retirement/" },
+    ],
+  },
+
+  // ─── Annuity vs CD ────────────────────────────────────────────────────────
+  {
+    slug: "annuity-vs-cd",
+    title: "Annuity vs. CD: Which Pays More in Retirement?",
+    metaDescription:
+      "Annuity vs CD compared: 2026 rates, taxes, liquidity, and safety — see which one fits your retirement savings and guaranteed-income goals better.",
+    targetKeyword: "annuity vs cd",
+    optionA: "Annuity",
+    optionB: "Certificate of Deposit (CD)",
+    h1: "Annuity vs. CD: Which Is the Better Place for Your Retirement Savings?",
+    intro:
+      "A fixed annuity typically pays 1 to 2 percentage points more than a comparable-term CD in 2026 and defers taxes on the growth until you withdraw, while a CD is simpler, fully [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured up to $250,000, and lets you access your money without an insurer's surrender charge — and the right pick depends on your time horizon, tax bracket, and whether you want guaranteed lifetime income.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 typical rate", a: "Multi-year guaranteed annuities (MYGAs) around 5.5%–6.3% for 3–10 year terms", b: "Top CDs around 4.0%–4.4% for comparable terms" },
+        { dimension: "Insurance/backing", a: "State guaranty association plus the insurer's own financial strength", b: "FDIC-insured up to $250,000 per depositor, per bank" },
+        { dimension: "Tax treatment", a: "Tax-deferred — no tax due until you withdraw", b: "Taxed as ordinary income every year, even if you don't touch it" },
+        { dimension: "Early withdrawal cost", a: "Insurer surrender charge, often 5%–10% in early years, plus a 10% IRS penalty before age 59½", b: "Bank early-withdrawal penalty, typically a few months of interest" },
+        { dimension: "Lifetime income option", a: "Yes — can convert to guaranteed income you can't outlive", b: "No — a CD only ever pays back principal plus interest" },
+        { dimension: "Liquidity", a: "Locked in; withdrawals above a small free amount trigger surrender charges", b: "Locked until maturity, but penalties are usually smaller and shorter" },
+        { dimension: "Typical minimum investment", a: "$10,000–$25,000", b: "$500–$1,000, sometimes $0" },
+      ],
+    },
+    verdict:
+      "Choose a CD for money you may need within a year or two, for amounts where full FDIC insurance matters most, or if you're under 59½ and want to avoid the IRS early-withdrawal penalty. Choose a fixed annuity for retirement money you won't touch for 3 or more years, when the higher rate and tax deferral outweigh the appeal of easy access, or when you specifically want the option to convert savings into guaranteed income you can't outlive. Rates change constantly, so compare actual quotes at the exact term you need before committing to either.",
+    sections: [
+      {
+        heading: "How annuity and CD rates compare right now",
+        content:
+          "In 2026, multi-year guaranteed annuities (MYGAs) are outpacing bank CDs at every term from 3 to 10 years, typically by 150 to 200 basis points. A top 3-year MYGA has been paying around 5.8%, roughly 1.4 to 1.8 percentage points above the best comparable 3-year CD in the 4.0%–4.4% range.\n\nThat gap exists because insurers can invest premiums in longer-duration bonds and corporate credit than a bank typically holds against short-term CD deposits, and they pass part of that extra yield to the policyholder. The rate advantage tends to widen the longer you're willing to lock money up.\n\nRates on both products move with the broader interest-rate environment, so always pull a current quote rather than relying on last year's numbers — a MYGA quote can change week to week.",
+      },
+      {
+        heading: "Taxes: the deferral advantage annuities have and CDs don't",
+        content:
+          "A CD generates a 1099-INT every year, and you owe income tax on that interest annually whether you spend it or reinvest it. There's no way to defer it in a taxable account.\n\nA fixed annuity grows tax-deferred. You owe nothing until you actually withdraw funds, at which point the earnings portion is taxed as ordinary income (the [IRS](https://www.irs.gov/) treats withdrawals under the last-in-first-out rule, so gains come out — and get taxed — before principal). For someone in a high tax bracket during their working years who expects a lower bracket in retirement, that deferral can meaningfully raise the after-tax return compared to a CD's rate alone.\n\nThe deferral advantage matters less in a tax-advantaged account like an IRA, where a CD's interest already grows tax-deferred — the annuity's tax benefit is most relevant for taxable, non-retirement savings.",
+      },
+      {
+        heading: "What happens if you need your money early",
+        content:
+          "CDs are the more forgiving option if plans change. Most banks charge a penalty equal to a few months of interest for withdrawing before maturity — annoying, but rarely severe.\n\nAnnuities are stricter. Most contracts include a surrender charge schedule, often starting at 7% to 10% in year one and stepping down each year until it disappears, typically after 5 to 10 years. Withdraw beyond the contract's small annual free-withdrawal allowance (often 10% of the account value) during that window, and the surrender charge applies on top of ordinary income tax — and a 10% IRS early-withdrawal penalty if you're under 59½.\n\nBefore buying an annuity, confirm the exact surrender schedule and free-withdrawal amount in writing, per guidance from the [National Association of Insurance Commissioners](https://content.naic.org/consumer/annuities.htm) (NAIC), since these terms vary significantly between insurers.",
+      },
+      {
+        heading: "The one thing a CD can never do: guaranteed lifetime income",
+        content:
+          "A CD, no matter how large, is a fixed pool of money — you can spend it down, but it can run out. An annuity can be converted, often called \"annuitizing,\" into a stream of guaranteed payments for as long as you live, regardless of how long that turns out to be.\n\nAccording to [FINRA](https://www.finra.org/investors/investing/investment-products/annuities), this longevity protection is the core reason annuities exist as a product category — they let an insurer pool mortality risk across many policyholders so no individual has to guess how long their money needs to last.\n\nFor a retiree mainly worried about outliving their savings, this single feature can make the annuity comparison largely academic, even if a CD's rate were competitive. For a retiree who's confident in their spending plan and wants maximum flexibility and safety, a CD (or CD ladder) paired with the [retirement income calculator](/retirement/retirement-income-calculator/) may be the simpler, cheaper path.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an annuity safer than a CD?",
+        answer:
+          "A CD is generally considered safer for amounts under $250,000, since it carries direct FDIC insurance. An annuity is backed by the issuing insurer's financial strength and a state guaranty association, which offers real but less standardized protection than FDIC insurance — check the insurer's credit rating before buying.",
+      },
+      {
+        question: "Why do annuities pay more than CDs right now?",
+        answer:
+          "Insurers invest annuity premiums in longer-duration bonds and corporate credit than banks typically hold against CD deposits, which lets them offer a higher guaranteed rate. In 2026, that gap has run 150 to 200 basis points in the annuity's favor across most terms.",
+      },
+      {
+        question: "Can I lose money in a fixed annuity?",
+        answer:
+          "Not from market performance — a fixed annuity guarantees your principal and stated rate. You can lose money relative to what you put in if you withdraw early and pay a surrender charge, or if the issuing insurer becomes insolvent beyond what your state's guaranty association covers.",
+      },
+      {
+        question: "What happens to an annuity when the guarantee period ends?",
+        answer:
+          "Most MYGAs let you renew at the insurer's current rate, transfer the funds tax-free to another annuity via a 1035 exchange, withdraw the funds and pay tax on the growth, or annuitize into a guaranteed income stream. Review your options before the guarantee period ends, since the default option varies by contract.",
+      },
+      {
+        question: "Should retirees put money in annuities or CDs?",
+        answer:
+          "Most retirees benefit from using both: CDs or a CD ladder for near-term spending and emergency access, and an annuity for a portion of savings earmarked for guaranteed long-term income. The right split depends on your other income sources, health, and how much you value flexibility over guaranteed payments.",
+      },
+    ],
+    sources: [
+      { label: "FINRA — Annuities", url: "https://www.finra.org/investors/investing/investment-products/annuities" },
+      { label: "NAIC — Annuities", url: "https://content.naic.org/consumer/annuities.htm" },
+      { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+    ],
+    relatedComparisons: ["cd-vs-money-market", "hysa-vs-cd", "pension-vs-401k"],
+    calculatorLinks: [
+      { label: "Retirement Income Calculator", href: "/retirement/retirement-income-calculator/" },
+      { label: "Retirement Hub", href: "/retirement/" },
+    ],
+  },
+
+  // ─── HELOC vs Personal Loan ───────────────────────────────────────────────
+  {
+    slug: "heloc-vs-personal-loan",
+    title: "HELOC vs. Personal Loan: Which Is Cheaper in 2026?",
+    metaDescription:
+      "HELOC vs personal loan compared: 2026 rates, fees, speed, and tax deductibility — see which financing option costs less for your home project.",
+    targetKeyword: "heloc vs personal loan",
+    optionA: "HELOC",
+    optionB: "Personal Loan",
+    segment: "Home financing",
+    h1: "HELOC vs. Personal Loan: Which Should You Use for Home Improvement?",
+    intro:
+      "A HELOC uses your home as collateral for a lower variable rate — typically 8.5% to 9.5% in 2026 — while a personal loan needs no collateral but charges 8.5% to 25% depending on your credit, and funds in days instead of weeks; for projects over roughly $25,000, the HELOC almost always costs less over time despite its slower, more paperwork-heavy approval process.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 typical rate", a: "8.5%–9.5%, variable, tied to the prime rate", b: "8.5%–25%, fixed, based on credit" },
+        { dimension: "Collateral", a: "Your home — the lender can foreclose if you default", b: "None required for most personal loans" },
+        { dimension: "Funding speed", a: "2–6 weeks — requires an appraisal and closing", b: "1–5 business days" },
+        { dimension: "Best loan size", a: "Larger projects, typically $25,000 or more", b: "Smaller or time-sensitive projects, typically under $25,000" },
+        { dimension: "Interest tax-deductible?", a: "Yes, if funds buy, build, or substantially improve the home securing the loan (IRS Pub. 936)", b: "No, never deductible" },
+        { dimension: "How you access funds", a: "Revolving line — draw as needed during the draw period", b: "One lump sum at closing" },
+        { dimension: "Credit score for best rate", a: "Typically 680+", b: "700+ for the best rate; approvals possible at lower scores for a higher rate" },
+      ],
+    },
+    verdict:
+      "Choose a HELOC for a large or multi-phase project — $25,000 or more — where the lower rate, potentially tax-deductible interest, and draw-as-you-go structure outweigh a few extra weeks of approval time. Choose a personal loan when you need funds fast, don't want to put your home up as collateral, or the project is small enough that a HELOC's closing costs and appraisal fee would erase the rate advantage. Run both offers through the [budget calculator](/budget/) before committing — the monthly payment difference at your actual loan amount usually settles the decision.",
+    sections: [
+      {
+        heading: "Rate comparison: why a HELOC usually costs less",
+        content:
+          "HELOCs carry lower rates than personal loans because they're secured by your home — the lender's risk is smaller, so the price is smaller too. In 2026, HELOC rates run roughly 8.5% to 9.5%, variable and tied to the prime rate, according to the [CFPB](https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf).\n\nPersonal loan rates span a much wider range — about 8.5% to 15% for borrowers with credit scores above 700, and 15% to 25% for fair credit in the 640–699 range. Because personal loan rates are fixed for the life of the loan, a borrower with strong credit can sometimes land a rate close to a HELOC's, but most borrowers pay meaningfully more.\n\nOn a $30,000 loan over 10 years, a HELOC can save roughly $7,000 compared to a 12% personal loan, and over $20,000 compared to an 18% personal loan — the gap widens fast as the rate difference compounds.",
+      },
+      {
+        heading: "Speed and paperwork: when a personal loan wins",
+        content:
+          "A HELOC requires a home appraisal and a formal closing, which typically takes 2 to 6 weeks from application to funded line. That's manageable for a planned renovation, but it's a problem if you need money this week.\n\nA personal loan skips the appraisal entirely. Most lenders can approve and fund a personal loan within 1 to 5 business days, since there's no collateral to verify and no title work required.\n\nFor a time-sensitive repair — a failed water heater, storm damage, an HVAC replacement in July — the personal loan's speed can outweigh its higher rate, especially if the amount is modest enough that the total extra interest is small in dollar terms.",
+      },
+      {
+        heading: "The tax deduction only a HELOC can offer",
+        content:
+          "Personal loan interest is never tax-deductible, no matter what you use the money for. HELOC interest can be deductible, but only under a specific condition set by the Tax Cuts and Jobs Act and detailed in [IRS Publication 936](https://www.irs.gov/publications/p936): the funds must be used to buy, build, or substantially improve the home securing the loan.\n\nUsing a HELOC to consolidate credit card debt or cover everyday expenses makes the interest nondeductible, even though the loan itself is still secured by your home. You also have to itemize deductions to claim it, and the combined mortgage debt deduction is capped at $750,000 ($375,000 if married filing separately).\n\nIf your project genuinely qualifies — a kitchen remodel, an addition, a new roof — the deduction adds real value to the HELOC's already-lower rate. Confirm your specific situation with a tax preparer before assuming the deduction applies.",
+      },
+      {
+        heading: "How to decide based on your project size",
+        content:
+          "The [Federal Reserve's](https://www.federalreserve.gov/releases/h15/) published interest-rate data shows the HELOC-to-personal-loan rate gap holding fairly steady across recent years, which makes project size the most reliable rule of thumb: for costs above roughly $25,000, a HELOC's lower rate typically outweighs its slower closing and appraisal fee; below that threshold, a personal loan's speed and simplicity often make it the better deal once you account for the HELOC's fixed costs.\n\nAlso weigh your risk tolerance. A HELOC's variable rate can rise if the Federal Reserve raises rates, while a personal loan's fixed rate never changes once you sign. If you expect to carry the balance for years and rates might climb, that certainty has real value even at a higher starting rate.\n\nGet quotes on both before deciding — run the actual numbers through the [net worth calculator](/net-worth/) to see how each option affects your overall financial picture over the life of the loan.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a HELOC or personal loan better for a kitchen remodel?",
+        answer:
+          "For a full kitchen remodel — typically $25,000 or more — a HELOC usually costs less overall thanks to its lower rate and potential tax deductibility. For a smaller cosmetic update under $15,000, a personal loan's faster funding and lack of home-equity risk can make it the more practical choice.",
+      },
+      {
+        question: "Can I get a personal loan without home equity?",
+        answer:
+          "Yes. Personal loans are unsecured, so you don't need any home equity, or even own a home, to qualify. Approval is based on your credit score, income, and debt-to-income ratio instead of collateral.",
+      },
+      {
+        question: "Is HELOC interest still tax-deductible?",
+        answer:
+          "Yes, but only if you use the funds to buy, build, or substantially improve the home securing the loan, per IRS Publication 936. Using a HELOC for debt consolidation, tuition, or general expenses makes the interest nondeductible, and you must itemize to claim the deduction.",
+      },
+      {
+        question: "What credit score do I need for a HELOC vs a personal loan?",
+        answer:
+          "Most lenders want 680 or higher for a HELOC's best rate, since it's a larger, longer-term commitment secured by your home. Personal loans reward 700+ credit scores with the lowest rates but remain available, at a higher rate, down to fair-credit borrowers in the 640–699 range.",
+      },
+      {
+        question: "What happens if I can't repay a HELOC?",
+        answer:
+          "Because a HELOC is secured by your home, the lender can foreclose if you default, just as with a mortgage. A personal loan carries no such risk to your home — a default instead damages your credit and can lead to collections or a lawsuit for the unpaid balance.",
+      },
+    ],
+    sources: [
+      { label: "CFPB: What You Should Know About Home Equity Lines of Credit", url: "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf" },
+      { label: "Federal Reserve: Selected Interest Rates (H.15)", url: "https://www.federalreserve.gov/releases/h15/" },
+      { label: "IRS Publication 936, Home Mortgage Interest Deduction", url: "https://www.irs.gov/publications/p936" },
+    ],
+    relatedComparisons: ["heloc-vs-home-equity-loan", "cash-out-refinance-vs-heloc", "secured-vs-unsecured-loan"],
+    calculatorLinks: [
+      { label: "Mortgage Calculator", href: "/mortgage/" },
+      { label: "Net Worth Calculator", href: "/net-worth/" },
+      { label: "Budget Calculator", href: "/budget/" },
+    ],
+  },
+
+  // ─── Power of Attorney vs Guardianship ────────────────────────────────────
+  {
+    slug: "power-of-attorney-vs-guardianship",
+    title: "Power of Attorney vs. Guardianship: Key Differences",
+    metaDescription:
+      "Power of attorney vs guardianship compared: cost, court involvement, and control — see why setting up a POA now can help you avoid guardianship later.",
+    targetKeyword: "power of attorney vs guardianship",
+    optionA: "Power of Attorney",
+    optionB: "Guardianship",
+    h1: "Power of Attorney vs. Guardianship: What's the Difference?",
+    intro:
+      "A power of attorney is a document you sign yourself, while you're still capable, to name someone to handle your finances or health decisions — it typically costs $150 to $700 and takes days to set up. Guardianship is a court process a judge imposes only after you can no longer make decisions and haven't named an agent, and it typically costs thousands of dollars and takes weeks or months to establish.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who sets it up", a: "You — while you still have legal capacity", b: "A court — after you've already lost capacity" },
+        { dimension: "Court involvement", a: "None to create it; no ongoing court supervision", b: "Required — a judge appoints the guardian and typically supervises ongoing" },
+        { dimension: "Typical cost", a: "$150–$700 attorney-drafted; often bundled free with an online will package", b: "$2,000–$10,000+ in attorney and court fees, plus ongoing accounting costs" },
+        { dimension: "Time to establish", a: "Days — sign and notarize", b: "Weeks to months — filing, medical evaluation, and a court hearing" },
+        { dimension: "Who you choose", a: "You name your own agent", b: "A judge decides, who may not be who you would have picked" },
+        { dimension: "Scope", a: "Can be narrow (one account) or broad (all finances and health)", b: "Often broad — covers most or all decision-making for the ward" },
+        { dimension: "When it takes effect", a: "Immediately, or \"springs\" into effect at incapacity, per the document", b: "Only after the court hearing and formal appointment" },
+      ],
+    },
+    verdict:
+      "Set up a durable power of attorney now, while you're healthy — it's cheap, fast, and lets you choose who handles your affairs if you become incapacitated. Guardianship becomes necessary only when someone loses capacity without a valid POA in place, and it's slower, more expensive, and hands the choice of decision-maker to a judge instead of you. If a family member is already incapacitated and has no POA, guardianship is often the only remaining option — but the surest way to avoid ever needing it is a POA signed today.",
+    sections: [
+      {
+        heading: "How a power of attorney works",
+        content:
+          "A power of attorney (POA) is a legal document where you, the principal, name someone — your agent or attorney-in-fact — to act on your behalf. A durable POA stays in effect even if you become incapacitated, which is the version most estate plans use.\n\nYou control the scope. A POA can be narrow, covering a single bank account or transaction, or broad, covering all financial decisions and, with a separate healthcare POA, medical decisions too. Most attorney-drafted estate planning packages bundle a financial POA and a healthcare directive together for $150 to $700, and many online will services include both at no extra cost.\n\nBecause a POA is a private document, not a court filing, it takes effect as soon as it's properly signed and notarized — no judge, no hearing, no waiting period, per guidance from the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/).",
+      },
+      {
+        heading: "How guardianship works, and why it costs so much more",
+        content:
+          "Guardianship is a court process. A judge appoints someone — often called a guardian or conservator, depending on the state — to manage the finances, healthcare, or both for a person the court has determined can no longer manage their own affairs.\n\nGetting there requires a petition, a medical or psychological evaluation documenting incapacity, notice to interested family members, and a formal hearing. According to the [National Guardianship Association](https://www.guardianship.org/), courts are required to confirm that less restrictive alternatives — like an existing POA — aren't sufficient before appointing a guardian, which is one reason a valid POA can prevent the case from ever being filed.\n\nThe process typically costs several thousand dollars in attorney and court fees just to get started, and many states require the guardian to file regular accountings with the court afterward, adding ongoing legal and administrative cost for as long as the guardianship lasts.",
+      },
+      {
+        heading: "Why a POA can prevent the need for guardianship entirely",
+        content:
+          "The single biggest reason to sign a POA before you need one: it removes the reason for a guardianship petition to exist. Courts only step in when no one already has legal authority to act — a valid, durable POA fills that gap.\n\nWithout a POA, a spouse or adult child has no automatic legal right to manage your bank accounts, sign on your behalf, or make medical decisions once you're incapacitated, even for a short-term situation like a coma after an accident. The family has to go to court and ask a judge for that authority, which is exactly what guardianship requires.\n\nA POA, according to the [American Bar Association](https://www.americanbar.org/groups/real_property_trust_estate/resources/estate_planning/power_of_attorney/), can also be tailored far more precisely than a court-ordered guardianship — you decide exactly what your agent can and can't do, rather than accepting whatever scope of authority a judge grants.",
+      },
+      {
+        heading: "What happens if you wait too long",
+        content:
+          "Once someone has already lost capacity — from a stroke, advanced dementia, or a serious accident — it's too late to sign a POA. Signing a legal document requires the mental capacity to understand what you're agreeing to, and a court will not accept a POA signed after that capacity is gone.\n\nAt that point, guardianship becomes the only path forward for a family that needs legal authority to manage the person's finances or healthcare. That's the scenario that runs $2,000 to $10,000 or more and takes weeks to months to resolve, all while bills, insurance decisions, and medical choices are on hold.\n\nThe fix is timing: sign a durable POA — and a healthcare directive — while you're healthy, well before you think you'll need one. Pair it with the rest of your estate plan using our [will cost calculator](/estate-planning/will-cost-calculator/) to see what a complete document package runs in your state.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does having a power of attorney prevent guardianship?",
+        answer:
+          "In most cases, yes. Courts are generally required to consider whether a less restrictive alternative — like an existing, valid power of attorney — already gives someone the legal authority needed before appointing a guardian. A properly drafted, durable POA typically removes the need for a guardianship petition altogether.",
+      },
+      {
+        question: "How much does guardianship cost compared to a power of attorney?",
+        answer:
+          "A power of attorney typically costs $150 to $700 attorney-drafted, or is bundled free with many online will packages. Guardianship typically costs $2,000 to $10,000 or more in attorney and court fees to establish, plus ongoing costs for required court accountings — often 10 to 20 times more expensive than a POA.",
+      },
+      {
+        question: "Can a power of attorney be revoked?",
+        answer:
+          "Yes, at any time, as long as you still have legal capacity. You can revoke a POA by signing a written revocation, notifying your agent and any institutions relying on the document, and destroying old copies. Guardianship, by contrast, can only be modified or ended through another court proceeding.",
+      },
+      {
+        question: "What happens if someone becomes incapacitated without a POA?",
+        answer:
+          "A family member has no automatic legal authority to manage that person's finances or make medical decisions, even a spouse in most states. The family must petition the court for guardianship, which requires a medical evaluation, notice to relatives, and a formal hearing before a judge grants that authority.",
+      },
+      {
+        question: "Is a healthcare power of attorney the same as a living will?",
+        answer:
+          "No. A healthcare power of attorney names a person to make medical decisions on your behalf. A living will (or advance directive) states your own wishes for specific treatments, like life support, in writing. Most estate planning packages include both documents together, since they cover different situations.",
+      },
+    ],
+    sources: [
+      { label: "CFPB — Managing Someone Else's Money", url: "https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/" },
+      { label: "National Guardianship Association", url: "https://www.guardianship.org/" },
+      { label: "American Bar Association — Power of Attorney", url: "https://www.americanbar.org/groups/real_property_trust_estate/resources/estate_planning/power_of_attorney/" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "probate-vs-trust", "online-will-vs-lawyer"],
+    calculatorLinks: [
+      { label: "Will Cost Calculator", href: "/estate-planning/will-cost-calculator/" },
+      { label: "Estate Planning Hub", href: "/estate-planning/" },
+      { label: "Probate Hub", href: "/probate/" },
+    ],
+  },
+
   ...BUSINESS_COMPARISONS,
 ];
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-07-08",
+  "lastRun": "2026-07-13",
   "dropped": [
     { "slug": "trump-account-vs-coverdell-esa", "format": "comparison", "reason": "0 Autocomplete demand (Trump pass 2026-07-08) — 'trump account vs X' space saturated", "score": 0 },
     { "slug": "trump-account-vs-i-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
@@ -32,7 +32,10 @@
     { "slug": "best-tax-software", "format": "roundup", "category": "tax software", "angle": "best", "reason": "Tier 3 — KD 51, seasonal content; no tax calculator hub", "score": 0.195 },
     { "slug": "best-life-insurance", "format": "roundup", "category": "life insurance", "angle": "best", "reason": "Tier 3 — KD 55, YMYL compliance overhead high; no existing hub", "score": 0.188 },
     { "slug": "best-estate-planning-software", "format": "roundup", "category": "estate planning software", "angle": "best", "reason": "Tier 3 — vol 150/mo — too low volume even at KD 9", "score": 0.155 },
-    { "slug": "best-real-estate-crowdfunding", "format": "roundup", "category": "real estate crowdfunding platforms", "angle": "best", "reason": "Tier 3 — vol 800 but KD 42; niche audience vs core calculator users", "score": 0.148 }
+    { "slug": "best-real-estate-crowdfunding", "format": "roundup", "category": "real estate crowdfunding platforms", "angle": "best", "reason": "Tier 3 — vol 800 but KD 42; niche audience vs core calculator users", "score": 0.148 },
+    { "slug": "credit-card-vs-personal-loan", "format": "comparison", "optionA": "Credit Card", "optionB": "Personal Loan", "reason": "2026-07-13 run: Ahrefs units exhausted (workspace over 100k limit, resets 2026-07-18), no SEMrush export, no GSC — heuristic-only score. Dropped on winnability risk: site's cache history shows repeated KD drops in the consumer-credit/debt-payoff head-term space (best-credit-cards KD68, best-personal-loans KD55) dominated by NerdWallet/Bankrate; no live KD confirmation available this run so treated conservatively.", "score": 0 },
+    { "slug": "traditional-ira-vs-roth-401k", "format": "comparison", "optionA": "Traditional IRA", "optionB": "Roth 401(k)", "reason": "2026-07-13 run: heuristic-only (Ahrefs units exhausted). Dropped on portfolio-saturation risk: site already has 4 pages covering this exact 4-entity matrix pairwise (401k-vs-roth-ira, roth-401k-vs-traditional-401k, traditional-ira-vs-401k, roth-ira-vs-traditional-ira) — a 5th permutation risks cannibalization for low incremental value.", "score": 0 },
+    { "slug": "sep-ira-vs-simple-ira", "format": "comparison", "optionA": "SEP IRA", "optionB": "SIMPLE IRA", "reason": "2026-07-13 run: DUPLICATE — already thoroughly covered (full differences table in prose + explicit verdict) in an H3 section titled 'SEP IRA vs. SIMPLE IRA: which plan fits your situation?' inside /roundup/best-retirement-accounts-for-self-employed/. Not a new page candidate; a pointer link to the new simple-ira-vs-401k comparison was added to that section instead.", "score": 0 }
   ],
   "published": [
     { "slug": "best-mortgage-lenders", "format": "roundup", "category": "mortgage lenders", "angle": "best", "publishedAt": "2026-06-28" },
@@ -46,6 +49,12 @@
     { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" },
     { "slug": "hsa-vs-fsa", "format": "comparison", "optionA": "Health Savings Account (HSA)", "optionB": "Flexible Spending Account (FSA)", "publishedAt": "2026-06-29" },
     { "slug": "va-loan-vs-conventional-loan", "format": "comparison", "optionA": "VA Loan", "optionB": "Conventional Loan", "publishedAt": "2026-06-29" },
-    { "slug": "trump-account-alternatives", "format": "alternatives", "subject": "Trump Account", "route": "/guides/trump-account-alternatives/", "publishedAt": "2026-07-08" }
+    { "slug": "trump-account-alternatives", "format": "alternatives", "subject": "Trump Account", "route": "/guides/trump-account-alternatives/", "publishedAt": "2026-07-08" },
+    { "slug": "fha-loan-vs-va-loan", "format": "comparison", "optionA": "FHA Loan", "optionB": "VA Loan", "publishedAt": "2026-07-13" },
+    { "slug": "simple-ira-vs-401k", "format": "comparison", "optionA": "SIMPLE IRA", "optionB": "401(k)", "publishedAt": "2026-07-13" },
+    { "slug": "annuity-vs-cd", "format": "comparison", "optionA": "Annuity", "optionB": "Certificate of Deposit (CD)", "publishedAt": "2026-07-13" },
+    { "slug": "heloc-vs-personal-loan", "format": "comparison", "optionA": "HELOC", "optionB": "Personal Loan", "publishedAt": "2026-07-13" },
+    { "slug": "power-of-attorney-vs-guardianship", "format": "comparison", "optionA": "Power of Attorney", "optionB": "Guardianship", "publishedAt": "2026-07-13" },
+    { "slug": "estate-tax-vs-inheritance-tax", "format": "enrichment", "route": "/estate-planning/estate-tax-calculator/", "note": "Added a head-to-head paragraph + FAQ to the existing estate-tax-calculator spoke page (PARTIAL from Phase 1b — was covered only in passing).", "publishedAt": "2026-07-13" }
   ]
 }
