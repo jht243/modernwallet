@@ -30,11 +30,18 @@ def _fetch(url: str) -> str:
 
 
 def fetch_sitemap_paths(base_url: str) -> list[str]:
-    root = base_url.rstrip("/") + "/sitemap.xml"
-    try:
-        xml = _fetch(root)
-    except Exception as e:
-        print(f"[warn] could not fetch {root}: {e}", file=sys.stderr)
+    candidates = [
+        base_url.rstrip("/") + "/sitemap.xml",
+        base_url.rstrip("/") + "/sitemap-index.xml",
+    ]
+    xml = None
+    for root in candidates:
+        try:
+            xml = _fetch(root)
+            break
+        except Exception as e:
+            print(f"[warn] could not fetch {root}: {e}", file=sys.stderr)
+    if xml is None:
         return []
     locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", xml)
     # sitemap index → recurse one level into child sitemaps

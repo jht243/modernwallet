@@ -1,0 +1,1304 @@
+[
+  {
+    "page": "https://www.themodernwallet.com/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 17.6
+    },
+    "top_queries": [
+      {
+        "query": "nerd wallet mortgage calculator",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 39
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "flat"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 17.6, trend flat \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 5,
+      "position": 17.6,
+      "impressions_trend_30d": "flat",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 355,
+      "clicks": 7,
+      "ctr": 0.0197,
+      "position": 8.14
+    },
+    "top_queries": [
+      {
+        "query": "trump account vs brokerage",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "query": "trump account vs brokerage account",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 10.5
+      },
+      {
+        "query": "trump account vs brokerage account for kids",
+        "impressions": 10,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 8.3
+      },
+      {
+        "query": "trump account vs custodial brokerage account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "query": "trump account vs regular brokerage",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "query": "trump account vs taxable brokerage",
+        "impressions": 11,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 7.82
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 1,
+          "clicks": 1
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 122,
+          "clicks": 4
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 111,
+          "clicks": 1
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 58,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 38,
+          "clicks": 1
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 25,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 2.0% < 3% at avg position 8.1 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0.0197,
+      "impressions": 355,
+      "position": 8.14,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/investing/withdrawal-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 142,
+      "clicks": 2,
+      "ctr": 0.0141,
+      "position": 61.62
+    },
+    "top_queries": [
+      {
+        "query": "compound interest calculator withdrawals",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 85
+      },
+      {
+        "query": "draw down calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 92
+      },
+      {
+        "query": "drawdown calculator",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93
+      },
+      {
+        "query": "drawdown investment calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 86
+      },
+      {
+        "query": "future value calculator with withdrawals",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 74
+      },
+      {
+        "query": "how long will $1 million last calculator",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 78.5
+      },
+      {
+        "query": "how long will money last calculator",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 85
+      },
+      {
+        "query": "how long will my investment last",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 92
+      },
+      {
+        "query": "how long will my investments last",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "query": "how long will my investments last in retirement",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 95
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 13,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 12,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 8,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 18,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 10,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 17,
+          "clicks": 1
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 22,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 28,
+          "clicks": 1
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 14,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 1.4%, position 61.6, trend up \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0.0141,
+      "impressions": 142,
+      "position": 61.62,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 566,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 81.5
+    },
+    "top_queries": [
+      {
+        "query": "additional car payment calculator",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93
+      },
+      {
+        "query": "additional payment calculator auto",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 85.5
+      },
+      {
+        "query": "amortization calculator car loan extra payments",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 89
+      },
+      {
+        "query": "auto amortization calculator extra payments",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 81
+      },
+      {
+        "query": "auto car loan payoff calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93
+      },
+      {
+        "query": "auto early payoff calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 66
+      },
+      {
+        "query": "auto finance amortization calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "query": "auto loan calculator early payoff",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 68.33
+      },
+      {
+        "query": "auto loan calculator extra payment",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 77.67
+      },
+      {
+        "query": "auto loan calculator extra payments",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 82
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 13,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 58,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 63,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 36,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 34,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 28,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 28,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 61,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 59,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 44,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 88,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 54,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0% on 566 impressions (avg pos 81.5) \u2014 page is shown but nobody clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 566,
+      "position": 81.5,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/budget/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 29,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 87.14
+    },
+    "top_queries": [
+      {
+        "query": "basic budget calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 87
+      },
+      {
+        "query": "budget calculator",
+        "impressions": 10,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 85.7
+      },
+      {
+        "query": "budget calculator with percentages",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83
+      },
+      {
+        "query": "budget creator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 91
+      },
+      {
+        "query": "budget generator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 94
+      },
+      {
+        "query": "budget salary calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "query": "budgeting calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 86
+      },
+      {
+        "query": "budgeting calculator free",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 84
+      },
+      {
+        "query": "buget calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83
+      },
+      {
+        "query": "calculator for monthly expenses",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 88
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 23,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "down"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "Impressions trending DOWN over 30 days \u2014 rewrite justified.",
+      "ctr": 0,
+      "impressions": 29,
+      "position": 87.14,
+      "impressions_trend_30d": "down",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/business-line-of-credit/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 22,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 71.73
+    },
+    "top_queries": [
+      {
+        "query": "500000 line of credit",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 73
+      },
+      {
+        "query": "business credit card limit calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 92
+      },
+      {
+        "query": "business line of credit calculator",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 73.86
+      },
+      {
+        "query": "business line of credit interest calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 30
+      },
+      {
+        "query": "credit union business line of credit calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83
+      },
+      {
+        "query": "line of credit calculator business",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 75
+      },
+      {
+        "query": "open line of credit calculator",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 54
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 3,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 12,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 7,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 71.7, trend up \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 22,
+      "position": 71.73,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 0
+    },
+    "top_queries": [],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "no-traffic"
+    },
+    "verdict": {
+      "label": "no-data",
+      "reason": "Page has no GSC impressions in window \u2014 nothing to lose by rewriting.",
+      "ctr": 0,
+      "impressions": 0,
+      "position": 0,
+      "impressions_trend_30d": "no-traffic",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/stocks-vs-bonds/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 88,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 86.27
+    },
+    "top_queries": [
+      {
+        "query": "are stocks or bonds better right now",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 78
+      },
+      {
+        "query": "compare stocks and bonds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 62
+      },
+      {
+        "query": "difference between investing in stocks and bonds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 91
+      },
+      {
+        "query": "difference between stocks and bonds",
+        "impressions": 13,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 96.77
+      },
+      {
+        "query": "how do stocks and bonds differ",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 86
+      },
+      {
+        "query": "how do stocks differ from bonds",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 90.5
+      },
+      {
+        "query": "invest in bonds or stocks",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 80
+      },
+      {
+        "query": "investing in bonds vs stocks",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83.86
+      },
+      {
+        "query": "investing in stocks versus bonds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 84
+      },
+      {
+        "query": "is it better to invest in stocks or bonds",
+        "impressions": 9,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 78.33
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 7,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 10,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 12,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 7,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 10,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 9,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 17,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 9,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 1,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0% on 88 impressions (avg pos 86.3) \u2014 page is shown but nobody clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 88,
+      "position": 86.27,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/elder-care/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 30.5
+    },
+    "top_queries": [
+      {
+        "query": "eldercare resource planning cost",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 30.5
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "no-traffic"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 30.5, trend no-traffic \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 2,
+      "position": 30.5,
+      "impressions_trend_30d": "no-traffic",
+      "rewrite_recommended": true
+    }
+  }
+]

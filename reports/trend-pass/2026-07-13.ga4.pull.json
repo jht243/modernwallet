@@ -1,0 +1,113 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-12",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/auto-loan/payoff-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/budget/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/business-line-of-credit/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/15-year-vs-30-year-mortgage/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/stocks-vs-bonds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-savings-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/elder-care/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 13,
+  "top10_pages_total_clicks": 13,
+  "channel_split": {
+    "/": {
+      "Direct": 2
+    },
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Organic Search": 2
+    },
+    "/auto-loan/payoff-calculator/": {
+      "Unassigned": 1
+    },
+    "/budget/": {
+      "Unassigned": 1
+    },
+    "/business-line-of-credit/": {
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/compare/15-year-vs-30-year-mortgage/": {
+      "Direct": 1
+    },
+    "/compare/stocks-vs-bonds/": {
+      "Direct": 1
+    },
+    "/compare/trump-account-vs-savings-account/": {
+      "Organic Search": 1
+    },
+    "/elder-care/": {
+      "Unassigned": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
