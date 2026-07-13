@@ -50,6 +50,11 @@ export const LOC_HUB: CalculatorDef = {
       answer:
         "Watch for the APR, draw fees, annual or maintenance fees, and any late fees before you sign. The CFPB advises comparing the APR, whether it can change, and every access and account fee across offers. A 2% draw fee on a $50,000 draw adds $1,000 in cost, which pushes a 12% rate up to a 14.05% effective APR. Total these fees on this calculator before you commit.",
     },
+    {
+      question: "Can I get a $500,000 business line of credit?",
+      answer:
+        "It's possible, but a line that large usually comes from a bank rather than an online lender, and it typically requires strong revenue, time in business, and collateral. Conventional and online lenders more commonly cap lines in the tens of thousands to low hundreds of thousands of dollars. For a larger line backed by a government guarantee, ask about an SBA CAPLine, a type of SBA 7(a) loan structured as a revolving line — see our [business line of credit vs SBA loan](/compare/business-line-of-credit-vs-sba-loan/) comparison for how that option differs on approval time and qualification.",
+    },
   ],
 
   sources: [

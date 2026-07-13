@@ -47,6 +47,47 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
 
   {
     calculator: "retirement",
+    slug: "ira-early-withdrawal-calculator",
+    title: "IRA Early Withdrawal Calculator: See Your Real Cost",
+    metaDescription:
+      "Use our IRA early withdrawal calculator to see the penalty, taxes, and lost growth before you cash out. Find out exactly how much you'd actually keep.",
+    targetKeyword: "ira early withdrawal calculator",
+    estimatedVolume: 2900,
+    estimatedKD: 33,
+    h1: "IRA Early Withdrawal Calculator",
+    intro:
+      "This IRA early withdrawal calculator shows exactly how much you keep after taxes and penalties. Cashing out a traditional IRA before age 59½ usually triggers a 10% [IRS](https://www.irs.gov/) penalty plus regular income tax, unless you qualify for one of the IRA-specific exceptions below. The real damage goes further: you also lose decades of compound growth on the money you withdraw. Enter your numbers in the calculator above to see your true cost.",
+    howItWorks:
+      "The calculator multiplies your withdrawal by three costs. First, the IRS adds a 10% additional tax on most traditional IRA distributions taken before age 59½. Second, the money counts as ordinary income, so you owe federal tax at your bracket. Third, most states tax it too.\n\nThe tool then projects what that same money could have earned if left invested, using your expected return and years to retirement. This lost growth never shows up on a 1099-R, but it is often the largest cost of all.\n\nIRAs carry their own set of penalty exceptions that a 401(k) does not have. You can take a penalty-free early distribution (income tax still applies) for a first-time home purchase (up to a $10,000 lifetime limit), qualified higher-education expenses, health insurance premiums while unemployed, a birth or adoption (up to $5,000), or a Substantially Equal Periodic Payment (SEPP) schedule under Section 72(t). None of these waive the income tax — only the 10% penalty. If you are weighing a 401(k) instead, compare the numbers with the [401k early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/).",
+    commonMistakes: [
+      "Assuming the Rule of 55 applies to IRAs. It does not — the Rule of 55 only waives the penalty on a 401(k) or 403(b) from the employer you just left. IRAs have no equivalent age-55 exception.",
+      "Thinking an exception erases the whole tax bill. Exceptions like first-time homebuyer or higher-education expenses remove the 10% penalty, but you still owe ordinary income tax on a traditional IRA withdrawal.",
+      "Treating the $10,000 first-time homebuyer exception as unlimited. It is a $10,000 lifetime limit per person, not a per-purchase or per-year amount.",
+      "Starting a 72(t) SEPP schedule without understanding the commitment. Once you begin Substantially Equal Periodic Payments, you must continue them for five years or until age 59½, whichever is longer, or the 10% penalty applies retroactively to every prior payment.",
+      "Confusing Roth IRA rules with traditional IRA rules. You can withdraw your original Roth contributions any time without tax or penalty, but early withdrawals of Roth earnings still face the 10% penalty and possible tax unless an exception applies.",
+    ],
+    workedExample:
+      "A 35-year-old withdraws $15,000 from a traditional IRA with no exception available. She is in the 24% federal bracket and pays 4% state tax. The 10% penalty costs $1,500. Federal income tax adds $3,600, and state tax adds $600. That is $5,700 in total cost, or 38% of the withdrawal. She keeps just $9,300. Worse, if she left the $15,000 invested at 7% for her 30 years to retirement, it could have grown by roughly $99,184.",
+    faqs: [
+      { question: "How much do I keep with an IRA early withdrawal calculator?", answer: "You keep your withdrawal minus the 10% penalty, federal income tax, and state tax, unless an exception applies. For a 35-year-old withdrawing $15,000 in the 24% bracket with 4% state tax, total cost is $5,700, leaving $9,300. The calculator above shows your exact figures." },
+      { question: "What is the penalty for withdrawing from an IRA early?", answer: "The penalty is a 10% additional tax on most traditional IRA distributions taken before age 59½, on top of regular income tax. On a $15,000 withdrawal, the penalty alone is $1,500." },
+      { question: "What are the exceptions to the 10% IRA early withdrawal penalty?", answer: "The IRS waives the 10% penalty for several IRA-specific situations: a first-time home purchase (up to a $10,000 lifetime limit), qualified higher-education expenses, health insurance premiums while unemployed, birth or adoption expenses (up to $5,000), and Substantially Equal Periodic Payments under Section 72(t). Income tax on a traditional IRA still applies even when the penalty is waived." },
+      { question: "Does the Rule of 55 apply to IRA withdrawals?", answer: "No. The Rule of 55 only applies to a 401(k) or 403(b) from the employer you separate from at age 55 or later. IRAs have no comparable age-55 exception — early IRA withdrawals need one of the IRA-specific exceptions or a 72(t) SEPP schedule to avoid the 10% penalty." },
+      { question: "Are Roth IRA withdrawals penalized the same way?", answer: "Not exactly. You can withdraw your original Roth IRA contributions at any time without tax or penalty, since you already paid tax on that money. But withdrawing earnings early — before age 59½ and before the account is five years old — can still trigger the 10% penalty and income tax unless an exception applies." },
+    ],
+    sources: [
+      { label: "IRS Topic No. 557, Additional Tax on Early Distributions From Traditional and Roth IRAs", url: "https://www.irs.gov/taxtopics/tc557" },
+      { label: "IRS — Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs)", url: "https://www.irs.gov/publications/p590b" },
+      { label: "IRS — Retirement Plans FAQs regarding Substantially Equal Periodic Payments (Section 72(t))", url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments" },
+    ],
+    toolHeading: "What will an early IRA withdrawal really cost?",
+    toolSubheading: "See the penalty, taxes, and lost future growth before you cash out your IRA.",
+    preset: { mode: "early-withdrawal", withdrawalAmount: 15000, age: 35, federalTaxRatePct: 24, stateTaxRatePct: 4, yearsToRetirement: 30, annualReturnPct: 7 },
+    relatedSlugs: ["401k-early-withdrawal-calculator", "rmd-calculator", "retirement-savings-calculator"],
+  },
+
+  {
+    calculator: "retirement",
     slug: "401k-calculator",
     title: "401k Calculator: Project Your Retirement Growth",
     metaDescription:

@@ -121,9 +121,9 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 2. Stocks vs Bonds ──────────────────────────────────────────────────
   {
     slug: "stocks-vs-bonds",
-    title: "Stocks vs Bonds: Which Investment Is Right for You?",
+    title: "Stocks vs Bonds: Which Is Better Right Now?",
     metaDescription:
-      "Stocks vs bonds compared: returns, risk, income, and how to mix them at every age. Find the right balance for your portfolio.",
+      "Stocks vs bonds: compare returns, risk, and income, then use the classic age-based rule (110 minus your age) to find your own right mix.",
     targetKeyword: "stocks vs bonds",
     optionA: "Stocks",
     optionB: "Bonds",
@@ -186,6 +186,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "In most crashes, yes. During the 2008 financial crisis, stocks fell 37% while U.S. Treasury bonds gained about 25%. However, in 2022 both fell together because the cause of the crash (soaring inflation and rapid rate hikes) hurt bonds as much as stocks.",
       },
+      {
+        question: "Are stocks or bonds better right now?",
+        answer:
+          "There's no single answer that holds for everyone at every moment — it depends on your time horizon, not on trying to time the market. If you won't need the money for 5+ years, stocks' higher long-run average return (about 10%/year historically) usually wins out despite the volatility. If you need income, stability, or you're within a few years of needing the money, bonds' lower risk and steadier payments matter more. The 110-minus-your-age rule above is a starting point for blending both rather than picking one outright.",
+      },
     ],
     sources: [
       { label: "Vanguard — Asset allocation guide", url: "https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation" },
@@ -194,8 +199,8 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["etf-vs-mutual-fund", "401k-vs-roth-ira", "brokerage-vs-ira"],
     calculatorLinks: [
-      { label: "Investment growth calculator", href: "/investing/" },
-      { label: "Portfolio calculator", href: "/portfolio/" },
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+      { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
       { label: "Net worth calculator", href: "/net-worth/" },
     ],
   },
@@ -515,11 +520,11 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Freddie Mac — Primary Mortgage Market Survey", url: "https://www.freddiemac.com/pmms" },
       { label: "CFPB — Understanding mortgage fees and rates", url: "https://www.consumerfinance.gov/owning-a-home/" },
     ],
-    relatedComparisons: ["fixed-vs-arm-mortgage", "renting-vs-buying"],
+    relatedComparisons: ["15-year-vs-20-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying"],
     calculatorLinks: [
-      { label: "Mortgage calculator", href: "/mortgage/" },
-      { label: "Net worth calculator", href: "/net-worth/" },
-      { label: "Rental property calculator", href: "/real-estate/" },
+      { label: "Mortgage extra payment calculator", href: "/mortgage/extra-payment-calculator/" },
+      { label: "Mortgage amortization schedule calculator", href: "/mortgage/amortization-schedule/" },
+      { label: "Mortgage payoff calculator", href: "/mortgage/payoff-calculator/" },
     ],
   },
 
@@ -2374,8 +2379,8 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   {
     slug: "trump-account-vs-brokerage-account",
-    title: "Trump Account vs Brokerage Account for Kids",
-    metaDescription: "Trump Account vs brokerage account: the Trump Account adds a free $1,000 seed and tax deferral, but a taxable brokerage stays flexible and liquid. See which wins.",
+    title: "Trump Account vs Brokerage Account: Which Wins?",
+    metaDescription: "Trump Account vs brokerage account, compared: free $1,000 seed and tax deferral vs full liquidity and any investment choice. See which wins for your kid.",
     targetKeyword: "trump account vs brokerage account",
     optionA: "Trump Account",
     optionB: "Brokerage Account",
@@ -4249,6 +4254,289 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Will Cost Calculator", href: "/estate-planning/will-cost-calculator/" },
       { label: "Estate Planning Hub", href: "/estate-planning/" },
       { label: "Probate Hub", href: "/probate/" },
+    ],
+  },
+
+  // ─── 15-Year vs 20-Year vs 30-Year Mortgage ──────────────────────────────
+  {
+    slug: "15-year-vs-20-year-vs-30-year-mortgage",
+    title: "15-Year vs 20-Year vs 30-Year Mortgage: Which Wins?",
+    metaDescription:
+      "15-year vs 20-year vs 30-year mortgage compared: monthly payments, total interest, rates, and which term saves you the most money.",
+    targetKeyword: "15 year vs 20 year vs 30 year mortgage",
+    optionA: "15-Year Mortgage",
+    optionB: "20-Year Mortgage or 30-Year Mortgage",
+    h1: "15-Year vs 20-Year vs 30-Year Mortgage: Total Cost, Monthly Payment, and Which Wins",
+    intro:
+      "A 15-year mortgage pays off fastest and cheapest in total interest but carries the highest monthly payment; a 30-year mortgage has the lowest payment but costs the most in interest over time; and a 20-year mortgage sits in between on both — a smaller monthly step up from the 30-year than the full jump to a 15-year, while still cutting total interest well below the 30-year's cost. On a $300,000 loan, the 15-year runs about $2,613/month at 6.5%, the 30-year about $1,996/month at 7.0%, and a 20-year lands around $2,281/month using an illustrative 6.75% rate — a worked example, not a quote, since 20-year rates vary more by lender than the other two terms.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Monthly payment ($300k loan, illustrative rates)", a: "~$2,613 at 6.5%", b: "20-year: ~$2,281 at 6.75%. 30-year: ~$1,996 at 7.0%" },
+        { dimension: "Total interest paid ($300k, same rates)", a: "~$170,000", b: "20-year: ~$247,500. 30-year: ~$419,000" },
+        { dimension: "Total interest savings vs 30-year", a: "~$249,000 saved", b: "20-year: ~$171,500 saved. 30-year: Baseline" },
+        { dimension: "Typical interest rate positioning", a: "Lowest of the three — roughly 0.50–0.75% below 30-year", b: "20-year: Not published in the standard weekly national rate survey; lender-specific, typically 0.25–0.50% below 30-year and slightly above 15-year. 30-year: Highest of the three, but the most widely quoted and easiest to rate-shop" },
+        { dimension: "Equity build speed", a: "Fastest — about half the loan paid off in ~5 years", b: "20-year: Faster than 30-year, slower than 15-year — more of each payment goes to principal earlier than a 30-year schedule. 30-year: Slowest — mostly interest in the early years" },
+        { dimension: "Payment flexibility", a: "Least — the required payment is fixed and highest", b: "20-year: Moderate — a bigger required payment than the 30-year, but well under the 15-year's. 30-year: Most — lowest required payment, can still pay extra voluntarily" },
+        { dimension: "Loan availability", a: "Offered by nearly every lender", b: "20-year: Offered by most major lenders and the GSEs, but less heavily marketed than 15/30. 30-year: Universally offered — the default term" },
+        { dimension: "Best for", a: "Stable income, near retirement, aggressive payoff, refinancers with 15–20 years left", b: "20-year: Buyers who want meaningfully lower interest than a 30-year without the full payment jump to a 15-year. 30-year: First-time buyers, growing families, anyone prioritizing monthly cash flow" },
+      ],
+    },
+    verdict:
+      "Pick the 15-year mortgage if you can comfortably absorb the highest payment — it saves the most in total interest and builds equity fastest, which matters most for borrowers near retirement or refinancing a nearly paid-off home. Pick the 30-year mortgage if the payment difference would strain your budget or crowd out emergency savings and retirement contributions — its lower floor payment is the most forgiving for first-time buyers and growing families. Pick the 20-year mortgage if you want most of the 15-year's interest savings without most of the 15-year's payment jump — it's the middle path for borrowers who can afford more than the 30-year payment but aren't ready to commit to the full 15-year one. If your lender doesn't offer a 20-year product, or its rate isn't priced competitively, you can approximate the same payoff timeline on a 30-year loan by adding extra principal each month — run both scenarios in the [mortgage payoff calculator](/mortgage/payoff-calculator/) before you decide.",
+    sections: [
+      {
+        heading: "Where the 20-year mortgage actually lands between the other two",
+        content:
+          "The 20-year mortgage is not a straight average of the 15- and 30-year terms — it's closer to the 30-year in monthly payment but closer to the 15-year in total interest saved, because amortization is front-loaded with interest and shortening the tail end of a loan cuts interest disproportionately. In the worked example above (a $300,000 loan), moving from 30 to 20 years raises the payment by about $285/month but saves roughly $171,500 in lifetime interest — a large return on a relatively modest payment increase.\n\nMoving from 20 to 15 years tells a different story: the payment jumps by another $332/month, but the additional interest savings are smaller in comparison, about $77,500. The first 10 years you shave off a 30-year loan buy more interest savings than the last 5 years you shave off a 20-year loan. That's the non-obvious reason some financial planners point clients toward the 20-year term specifically — it captures most of the 15-year's benefit without the full payment increase.\n\nThese figures assume a 6.75% rate for the 20-year term, chosen as a midpoint for illustration. Your actual quoted rate will differ by lender; use the [mortgage amortization schedule calculator](/mortgage/amortization-schedule/) to see the real breakdown at your quoted rate and loan amount.",
+      },
+      {
+        heading: "Why 20-year rates are harder to comparison-shop",
+        content:
+          "Weekly benchmark rate surveys like [Freddie Mac's Primary Mortgage Market Survey](https://www.freddiemac.com/pmms) track 30-year fixed, 15-year fixed, and 5/1 ARM rates — but not the 20-year fixed. That means there's no single published national average to check your quote against, unlike the 15- and 30-year terms.\n\nIn practice, this makes 20-year rates more lender-dependent. Some lenders price the 20-year close to the 30-year rate; others price it closer to the 15-year. The [CFPB](https://www.consumerfinance.gov/owning-a-home/) recommends getting Loan Estimates from at least three lenders for any mortgage, and that advice matters more for a 20-year loan precisely because there's less of a public benchmark to anchor against.\n\nA smaller number of lenders offer the 20-year term at all compared to 15- and 30-year, though it is a standard conforming product through Fannie Mae and Freddie Mac. If your preferred lender doesn't list it, ask directly — it's often available on request even when it isn't featured on the rate page.",
+      },
+      {
+        heading: "Can you get 20-year math out of a 30-year loan?",
+        content:
+          "Yes — making consistent extra principal payments on a 30-year mortgage can replicate a 20-year payoff timeline and most of its interest savings, without committing to the higher required payment. If you take a $300,000 / 30-year loan at 7.0% and add roughly $285 in extra principal every month, you'll pay it off close to the 20-year mark and save interest in the same range as an actual 20-year loan.\n\nThe advantage of doing it this way is flexibility: in a tight month, you can drop back to the required 30-year payment with no penalty (confirm your loan has no prepayment penalty first). The disadvantage is discipline — the extra payment is voluntary, and voluntary payments are the ones that get skipped when a lower payment is available.\n\nAn actual 20-year loan builds the faster payoff into the required payment, which works better for borrowers who know they'll spend, not save, any payment headroom. Run your own numbers with the [mortgage extra payment calculator](/mortgage/extra-payment-calculator/) to see exactly how much extra principal gets you to a 20-year (or any) payoff timeline on your specific loan.",
+      },
+      {
+        heading: "Which term fits which stage of life",
+        content:
+          "A 30-year mortgage suits buyers early in their career with variable income ahead — kids, job changes, and emergencies are more likely, and the lower required payment preserves cash for retirement contributions and an emergency fund, both of which often matter more than interest savings in your 20s and 30s.\n\nA 20-year mortgage suits borrowers with stable, established income who want to be mortgage-free well before retirement but don't want the full 15-year payment. It's also a common refinance target for someone 8–10 years into a 30-year loan who wants to accelerate payoff without resetting all the way back to a fresh 30-year term.\n\nA 15-year mortgage suits borrowers who can comfortably absorb the highest payment today — often those refinancing a mostly-paid-off home, high earners in peak income years, or anyone who wants the psychological certainty of an externally enforced payoff schedule rather than relying on voluntary extra payments.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a 20-year mortgage a good compromise between a 15-year and 30-year?",
+        answer:
+          "Often, yes. A 20-year mortgage typically captures a large share of the 15-year's total interest savings while requiring a smaller monthly payment increase over the 30-year than a full 15-year term would. It suits borrowers who want to pay off their home faster than a 30-year schedule but aren't ready for the full 15-year payment.",
+      },
+      {
+        question: "What's the interest rate difference between 15-, 20-, and 30-year mortgages?",
+        answer:
+          "The 15-year typically runs about 0.50–0.75% below the 30-year rate, and the 20-year usually falls somewhere in between — roughly 0.25–0.50% below the 30-year. Unlike 15- and 30-year rates, 20-year rates aren't published in the standard weekly national rate survey, so they vary more by lender and are worth comparison-shopping directly.",
+      },
+      {
+        question: "Can I turn a 30-year mortgage into a 20-year payoff with extra payments?",
+        answer:
+          "Yes. Adding a fixed extra amount to your principal every month on a 30-year loan can bring your payoff timeline close to 20 years and capture most of the same interest savings, while keeping the flexibility to drop back to the required payment if needed. Confirm your loan has no prepayment penalty, then use the mortgage extra payment calculator to find the exact extra amount for your target payoff date.",
+      },
+      {
+        question: "Why don't more lenders advertise the 20-year mortgage?",
+        answer:
+          "The 20-year is a standard conforming product through Fannie Mae and Freddie Mac, but it's less commonly featured on lender rate pages than the 15- and 30-year terms, largely because far fewer borrowers ask for it. It's usually available on request even when it isn't listed alongside the more popular terms — ask your loan officer directly and get a quote to compare.",
+      },
+      {
+        question: "Which mortgage term builds equity the fastest?",
+        answer:
+          "The 15-year mortgage builds equity fastest, since a larger share of each payment goes to principal from the start. The 20-year builds equity faster than a 30-year but slower than a 15-year. The gap is largest in the early years of the loan — a 30-year mortgage is still mostly paying interest 5–7 years in, while a 20-year has already made noticeably more progress on principal.",
+      },
+      {
+        question: "Is a 20-year mortgage available for refinancing, not just buying?",
+        answer:
+          "Yes — refinancing into a 20-year term is common for homeowners several years into a 30-year mortgage who want to accelerate payoff without jumping all the way to a 15-year term and its higher payment. It's also worth comparing against simply adding extra principal payments to your existing loan, which can achieve a similar payoff timeline without refinancing costs.",
+      },
+    ],
+    sources: [
+      { label: "Freddie Mac — Primary Mortgage Market Survey", url: "https://www.freddiemac.com/pmms" },
+      { label: "CFPB — Understanding mortgage fees and rates", url: "https://www.consumerfinance.gov/owning-a-home/" },
+      { label: "Fannie Mae — Selling Guide: Fixed-Rate Mortgages", url: "https://selling-guide.fanniemae.com/" },
+    ],
+    relatedComparisons: ["15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying"],
+    calculatorLinks: [
+      { label: "Mortgage extra payment calculator", href: "/mortgage/extra-payment-calculator/" },
+      { label: "Mortgage amortization schedule calculator", href: "/mortgage/amortization-schedule/" },
+      { label: "Mortgage payoff calculator", href: "/mortgage/payoff-calculator/" },
+    ],
+  },
+
+  // ─── Stocks vs Bonds vs Cash ─────────────────────────────────────────────
+  {
+    slug: "stocks-vs-bonds-vs-cash",
+    title: "Stocks vs Bonds vs Cash: Which Should You Hold?",
+    metaDescription:
+      "Stocks vs bonds vs cash compared: risk, liquidity, and inflation protection — and how to split your money across all three.",
+    targetKeyword: "stocks vs bonds vs cash",
+    optionA: "Stocks",
+    optionB: "Bonds & Cash",
+    h1: "Stocks vs Bonds vs Cash: How to Split Your Money",
+    intro:
+      "Stocks aim for the highest long-term growth but swing the most in value, bonds sit in the middle with moderate risk and steady income, and cash offers the most safety and instant access to your money but the weakest long-run protection against inflation — most people benefit from holding some combination of all three, weighted toward stocks when the money won't be needed for years and toward cash and bonds as that need gets closer.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Long-run historical average return", a: "~10%/year (S&P 500 long-run average; varies widely year to year)", b: "Bonds: ~3–5%/year (investment-grade, long-run average). Cash: near 0% real return after inflation over time" },
+        { dimension: "Risk level", a: "High — value can drop 20%+ in a single year", b: "Bonds: Low to moderate — price moves with interest rates. Cash: Minimal — balance doesn't fluctuate" },
+        { dimension: "Liquidity", a: "High — shares trade every market day", b: "Bonds: Moderate — sellable, but price can vary. Cash: Highest — available on demand, no price risk" },
+        { dimension: "FDIC/NCUA insurance", a: "Not insured — carries investment/market risk", b: "Bonds: Not insured (except direct government backing). Cash: Insured up to $250,000 per depositor, per institution" },
+        { dimension: "Inflation protection", a: "Good — company earnings tend to grow with the economy", b: "Bonds: Poor — fixed payments lose purchasing power. Cash: Poor — the balance is stable, but what it buys shrinks" },
+        { dimension: "Best time horizon", a: "5+ years", b: "Bonds: 1–10+ years, depending on duration. Cash: Under 1 year, or on-demand for emergencies" },
+        { dimension: "Role in a portfolio", a: "Growth engine", b: "Bonds: Stability and income buffer. Cash: Safety net and short-term spending reserve" },
+      ],
+    },
+    verdict:
+      "Hold stocks for money you won't touch for 5+ years and can leave alone through a downturn. Hold bonds to smooth out the ride and add income as your time horizon shortens. Hold cash for money you need within the next year or two — a true emergency fund, a near-term expense, or spending money you can't afford to watch drop in value. Few people should hold 100% of their savings in just one of the three; the mix should shift toward cash and bonds as your need for the money gets closer, and toward stocks the further away that need is.",
+    sections: [
+      {
+        heading: "What stocks, bonds, and cash each do for you",
+        content:
+          "Stocks, bonds, and cash each play a different role in a portfolio, and none of them is a complete strategy on its own. Stocks represent ownership in a company and offer the highest long-run growth potential, in exchange for the most volatility. Bonds are a loan to a government or company that pays regular interest and returns your principal at maturity, sitting in the middle on both risk and return. Cash — a checking or savings account, or a money market account — holds its dollar value steady and is available the moment you need it, but does the least to grow your money over time.\n\nThe [stocks vs bonds comparison](/compare/stocks-vs-bonds/) covers the growth-versus-income tradeoff between those two in more depth. This page adds cash as the third leg: the layer that protects you from having to sell stocks or bonds at a bad time.",
+      },
+      {
+        heading: "Where cash fits: safety and liquidity, at a cost",
+        content:
+          "Cash is the only one of the three that carries no market risk and no price to check. A savings or checking account balance at a bank or credit union doesn't rise and fall with the market — it just sits there, available whenever you need it. Deposits at [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured banks and [NCUA](https://www.ncua.gov/consumers/share-insurance-coverage)-insured credit unions are protected up to $250,000 per depositor, per institution, so the safety of cash isn't just a feeling — it's backed by federal deposit insurance.\n\nThat safety has a cost. Historically, cash has struggled to keep pace with inflation over long stretches of time, meaning the same dollar balance buys less years later even though the number on the statement never drops. That trade-off — no volatility, but weak long-run purchasing-power growth — is why cash works best as a short-term tool, not a long-term growth strategy. For more on how specific cash accounts compare to each other, see [HYSA vs CD](/compare/hysa-vs-cd/) and [CD vs money market](/compare/cd-vs-money-market/).",
+      },
+      {
+        heading: "How much to hold in each",
+        content:
+          "There's no single right split, but the standard starting point is to size your cash position around near-term needs, not around a percentage of your total net worth. Most financial guidance treats an emergency fund — commonly framed as a few months of essential expenses — as a separate, foundational cash layer that sits outside your long-term stock-and-bond mix entirely. Money for a known expense in the next year or two (a home down payment, a tuition bill) generally belongs in cash for the same reason: you can't afford for it to be down in value the week you need to spend it.\n\nOnce your near-term needs are covered, the stocks-to-bonds split for your remaining long-term savings can follow the framework in the [stocks vs bonds guide](/compare/stocks-vs-bonds/) — more stocks the further away the money is needed, more bonds as that date approaches. The [asset allocation calculator](/portfolio/asset-allocation-calculator/) and [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) let you model how a specific stocks/bonds/cash split would have performed using long-run historical assumptions.",
+      },
+      {
+        heading: "When cash beats stocks and bonds — and when it doesn't",
+        content:
+          "Cash wins when you need the money soon or can't tolerate seeing the balance drop — an emergency fund, a house down payment due next year, or spending money for a near-term goal. In those cases, the certainty of cash outweighs any return stocks or bonds might offer, because a market downturn at the wrong moment could force you to sell at a loss.\n\nCash falls short as the place to keep money you won't need for years, because its long-run return has historically lagged both stocks and bonds by a wide margin, and inflation quietly erodes what it can buy. This isn't a call to time the market by moving into or out of cash based on where stocks are trading — it's a structural decision based on when you'll need the money, made once and revisited as your timeline changes, not in reaction to daily headlines.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is cash safer than bonds?",
+        answer:
+          "In terms of principal stability, yes — cash in an FDIC- or NCUA-insured account up to $250,000 doesn't fluctuate in value, while bond prices can move with interest rates and, for corporate bonds, credit risk. U.S. Treasury bonds carry essentially no default risk but can still lose value if sold before maturity when rates rise. Cash offers more certainty; bonds offer a chance at a higher return in exchange for that added price risk.",
+      },
+      {
+        question: "How much cash should I keep instead of investing it?",
+        answer:
+          "A widely used starting point is to hold an emergency fund covering several months of essential expenses in cash, separate from your long-term stock and bond investments. Beyond that, keep in cash any money you'll need within the next year or two for a specific goal — the exact amount depends on your job stability, expenses, and upcoming plans, so this is a guideline to adapt, not a fixed rule.",
+      },
+      {
+        question: "Does cash lose value over time?",
+        answer:
+          "The dollar amount in a cash account doesn't drop the way a stock or bond price can, but its purchasing power can erode when prices rise faster than the interest the account pays. Over long periods, cash has historically been the weakest of the three asset classes at preserving purchasing power, which is why it's best suited for money you'll spend soon rather than money meant to grow for decades.",
+      },
+      {
+        question: "Can I lose money holding cash in a bank account?",
+        answer:
+          "Not through bank failure, as long as the account is at an FDIC-insured bank or NCUA-insured credit union and your balance is within the $250,000 per-depositor, per-institution coverage limit. The balance itself won't drop the way an investment can. The risk with cash is opportunity cost and inflation, not the kind of market loss you can see in a stock or bond account.",
+      },
+      {
+        question: "Should I move my investments to cash when the stock market gets volatile?",
+        answer:
+          "Shifting long-term money into cash because of short-term market swings is a timing decision, not a strategy — it locks in any paper losses and risks missing the recovery, which often happens quickly and without warning. Cash allocation should be based on when you'll actually need the money, decided in advance, rather than adjusted reactively based on recent market moves.",
+      },
+      {
+        question: "What's the difference between cash and cash-equivalent accounts like CDs or money market accounts?",
+        answer:
+          "Plain cash — a checking or basic savings account — offers full, instant access with no rate lock-in. Cash-equivalent accounts like CDs and money market accounts are still low-risk and FDIC/NCUA-insured, but they trade some liquidity or add features (a fixed rate and early-withdrawal penalty for CDs, check-writing for money market accounts) in exchange. See [HYSA vs CD](/compare/hysa-vs-cd/) and [CD vs money market](/compare/cd-vs-money-market/) for the tradeoffs between those specific options.",
+      },
+    ],
+    sources: [
+      { label: "FDIC — Deposit insurance overview", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+      { label: "NCUA — Share insurance coverage", url: "https://www.ncua.gov/consumers/share-insurance-coverage" },
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "Vanguard — Asset allocation guide", url: "https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation" },
+    ],
+    relatedComparisons: ["stocks-vs-bonds", "hysa-vs-cd", "cd-vs-money-market", "hysa-vs-money-market"],
+    calculatorLinks: [
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+      { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
+      { label: "Portfolio calculator", href: "/portfolio/" },
+    ],
+  },
+
+  // ─── Elder Law Attorney vs Estate Planning Attorney ───────────────────────
+  {
+    slug: "elder-law-attorney-vs-estate-planning-attorney",
+    title: "Elder Law Attorney vs. Estate Planning Attorney: Who to Hire",
+    metaDescription:
+      "Elder law attorney vs estate planning attorney: Medicaid/LTC planning vs wills, trusts, and estate tax. Compare costs, credentials, and when you need both.",
+    targetKeyword: "elder law attorney vs estate planning attorney",
+    optionA: "Elder Law Attorney",
+    optionB: "Estate Planning Attorney",
+    segment: "Elder Law",
+    h1: "Elder Law Attorney vs. Estate Planning Attorney: What's the Difference?",
+    intro:
+      "An elder law attorney specializes in the legal problems that come with aging — Medicaid planning and spend-down, long-term-care planning, guardianship, and protecting assets from nursing-home costs — while an estate planning (trusts & estates) attorney specializes in wills, trusts, estate tax minimization, and passing wealth to the next generation. The two fields overlap heavily: most elder law attorneys also draft wills and powers of attorney, and most estate planning attorneys handle basic Medicaid questions, but only an elder law attorney typically has deep, current knowledge of your state's Medicaid rules, and only an estate planning attorney typically has deep experience with estate-tax-driven trust structures. Which one you need depends on whether your most urgent problem is aging and long-term care, or wealth transfer and tax.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Primary focus", a: "Aging, incapacity, and long-term care: Medicaid eligibility, spend-down, guardianship, elder abuse", b: "Wealth transfer at death: wills, trusts, estate tax minimization, probate avoidance" },
+        { dimension: "Typical client", a: "Someone (or their family) facing a near-term nursing home or assisted living need", b: "Someone doing proactive planning for how assets pass to heirs" },
+        { dimension: "Core documents drafted", a: "Medicaid Asset Protection Trusts, POA, healthcare directives, guardianship petitions, wills", b: "Wills, revocable living trusts, ILITs, dynasty trusts, POA, healthcare directives" },
+        { dimension: "Relevant certification", a: "Certified Elder Law Attorney (CELA) — ABA-accredited credential via the National Elder Law Foundation", b: "ACTEC Fellow — invitation-only recognition from the American College of Trust and Estate Counsel" },
+        { dimension: "Medicaid / long-term-care depth", a: "Deep — 5-year lookback, CSRA, income caps, state-specific asset limits are daily practice", b: "Variable — many can do basic Medicaid planning, but complex spend-down cases are often referred out" },
+        { dimension: "Estate tax / wealth-transfer depth", a: "Variable — most handle basic wills and RLTs but refer complex estate-tax cases out", b: "Deep — ILITs, dynasty trusts, portability elections, and valuation discounts are daily practice" },
+        { dimension: "Typical fee range", a: "MAPT $3,000–$6,000; guardianship $2,000–$10,000+; will/POA package $150–$2,500", b: "Revocable living trust $1,500–$5,000 ($5,000–$10,000+ in CA/HNW metros); ILIT $2,500–$4,000; will $300–$2,500" },
+        { dimension: "When to hire", a: "A nursing home stay is likely within 5 years, or a family member already needs Medicaid, guardianship, or a special needs trust", b: "Net worth is above (or approaching) the state or federal estate tax exemption, or the goal is a clean, tax-efficient transfer to heirs" },
+      ],
+    },
+    verdict:
+      "Hire an elder law attorney when aging is the immediate driver — a parent's dementia diagnosis, a looming nursing home admission, a Medicaid application, or a guardianship petition. That attorney will know your state's specific asset limits, the 5-year lookback under 42 U.S.C. §1396p(c), and how to structure a Medicaid Asset Protection Trust with the timing that actually protects the assets. Hire an estate planning attorney when the driver is wealth transfer — you're above the estate tax exemption, you want an ILIT or dynasty trust, or you simply need a will and a revocable living trust with no Medicaid angle. Many households eventually need both: a revocable living trust and will from an estate planning attorney in your 40s or 50s, followed by Medicaid and long-term-care planning from an elder law attorney as retirement and aging-related risk gets closer. Ask any attorney directly which side of this line their practice actually specializes in — the title on the door doesn't always match the daily caseload.",
+    sections: [
+      {
+        heading: "What an elder law attorney actually does",
+        content:
+          "An elder law attorney focuses on the legal issues that come with aging, disability, and long-term care rather than wealth transfer alone. The core of the practice is Medicaid planning: qualifying a client for institutional Medicaid without losing the family home or life savings, using tools like the Community Spouse Resource Allowance, protected transfers, and Medicaid Asset Protection Trusts funded before the 60-month lookback window under 42 U.S.C. §1396p(c). The [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/) shows the state-specific asset limits, CSRA, and income-cap figures an elder law attorney works with every day.\n\nBeyond Medicaid, elder law attorneys handle guardianship and conservatorship petitions when someone has lost capacity without a valid power of attorney, special needs trusts for disabled beneficiaries, VA Aid & Attendance benefit applications, and elder abuse or financial exploitation cases. Many also draft basic wills, durable powers of attorney, and healthcare directives — the overlap with estate planning is real, especially at smaller firms.\n\nThe relevant credential is Certified Elder Law Attorney (CELA), issued by the [National Elder Law Foundation](https://www.nelf.org/) — the only certifying body accredited by the American Bar Association specifically for elder and special needs law. CELA requires a minimum caseload in elder law, ongoing continuing education, and a peer-reviewed exam. Not every elder law attorney holds a CELA — it's a useful signal, not a requirement to practice. The [National Academy of Elder Law Attorneys](https://www.naela.org/) (NAELA), founded in 1987, is the field's main professional association and offers a public directory for finding a member attorney.",
+      },
+      {
+        heading: "What an estate planning attorney actually does",
+        content:
+          "An estate planning (trusts & estates) attorney focuses on how assets pass at death and how to minimize the tax and cost of that transfer. The baseline documents are a will and, when probate avoidance matters, a revocable living trust — the [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) shows attorney-drafted costs ($1,500–$5,000 typical, $5,000–$10,000+ in California and other high-cost metros) against online alternatives.\n\nFor larger estates, the work shifts to tax-driven structures: Irrevocable Life Insurance Trusts (ILITs) to keep death benefits out of the taxable estate, dynasty trusts to move wealth across generations, portability elections on Form 706 so a married couple can shield up to the combined federal exemption, and valuation discounts for closely held business interests. This is technical, high-stakes drafting where a mistake can trigger an unintended taxable gift or void the intended tax benefit.\n\nThere's no single mandatory certification for estate planning attorneys the way CELA exists for elder law, but fellowship in the [American College of Trust and Estate Counsel](https://www.actec.org/) (ACTEC) — an invitation-only honor extended to attorneys with substantial trusts & estates experience — is the field's closest equivalent to a quality signal. Most estate planning attorneys also handle probate administration after death, since it's the natural continuation of the plans they draft.",
+      },
+      {
+        heading: "Where the two specialties overlap — and where they genuinely don't",
+        content:
+          "The overlap is real: both types of attorney draft wills, durable powers of attorney, and healthcare directives, and both can set up a basic revocable living trust. If your entire situation is 'I need a will and a POA, nothing complicated,' either specialty can typically handle it — the [will cost calculator](/estate-planning/will-cost-calculator/) shows the same $300–$2,500 attorney-drafted range applies regardless of which type of attorney you hire.\n\nThe gap opens up at the edges of each field. Elder law attorneys who don't regularly handle estate-tax planning may not know the current federal exemption mechanics, portability deadlines, or how to structure an ILIT correctly — they'll often refer that work to a trusts & estates colleague. Estate planning attorneys who don't regularly handle Medicaid cases can miss state-specific traps: the wrong asset counted as exempt, a gift made inside the 5-year lookback, or a Miller Trust set up after (instead of before) the application deadline. Because Medicaid rules are set state-by-state and change frequently, this is not a 'read the statute once' specialty — it requires an attorney who handles these cases routinely.\n\nA related but distinct legal problem is capacity itself. The [power of attorney vs. guardianship](/compare/power-of-attorney-vs-guardianship/) comparison covers why a POA signed today, by either type of attorney, can prevent an expensive court-supervised guardianship later — guardianship work sits squarely in elder law, while the POA that avoids it is common ground for both specialties.",
+      },
+      {
+        heading: "Which one to hire, by situation",
+        content:
+          "Hire an elder law attorney when: a parent or spouse is likely to need nursing home or assisted living care within the next five years (Medicaid Asset Protection Trusts require that lead time to be effective); someone has already lost capacity and a guardianship petition is needed; a family member has a disability and needs a special needs trust to preserve SSI or Medicaid eligibility; or an existing Medicaid application has been denied or needs an appeal.\n\nHire an estate planning attorney when: net worth is at or approaching the federal $15M exemption (2026) or a state estate tax threshold — Oregon's starts as low as $1M; the goal is a clean, tax-efficient transfer of a business or investment portfolio to heirs; a blended family needs a trust with specific, age-based, or unequal distribution terms; or the only need is a straightforward will, POA, and healthcare directive with no Medicaid angle in sight.\n\nHire both, in sequence, when a plan needs to evolve over time. A common pattern: an estate planning attorney drafts a will and revocable living trust in your 50s or 60s for probate avoidance and basic tax planning, then an elder law attorney revisits the plan in your 70s or 80s to add Medicaid Asset Protection Trust planning once long-term care risk becomes concrete. The [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/) helps time that second conversation by projecting when — and how much — care is likely to cost.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an elder law attorney the same as an estate planning attorney?",
+        answer:
+          "No, though the two specialties overlap. Both draft wills, powers of attorney, and healthcare directives. An elder law attorney's core focus is Medicaid planning, long-term-care planning, and guardianship — legal issues driven by aging and incapacity. An estate planning attorney's core focus is wills, trusts, and minimizing estate tax on wealth passed to heirs — legal issues driven by asset transfer at death. Many firms offer both services, but the depth of expertise usually sits more heavily on one side.",
+      },
+      {
+        question: "Do I need an elder law attorney or an estate planning attorney for Medicaid planning?",
+        answer:
+          "An elder law attorney, in almost all cases. Medicaid eligibility rules — the asset limits, the Community Spouse Resource Allowance, the 5-year lookback under 42 U.S.C. §1396p(c), and income caps — are state-specific, change frequently, and require routine, current practice to get right. An estate planning attorney who doesn't handle Medicaid cases regularly can miss a state-specific rule that costs a family tens of thousands of dollars in avoidable spend-down. The [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/) shows the exact figures for your state.",
+      },
+      {
+        question: "What is a Certified Elder Law Attorney (CELA)?",
+        answer:
+          "A Certified Elder Law Attorney is a credential issued by the National Elder Law Foundation (NELF) — the only certifying body accredited by the American Bar Association specifically for elder and special needs law. To earn CELA, an attorney must meet a minimum elder-law caseload requirement, complete ongoing continuing legal education in the field, and pass a peer-reviewed exam. Not every practicing elder law attorney holds CELA — many are highly experienced without it — but it's a useful, verifiable signal when comparing attorneys.",
+      },
+      {
+        question: "Can an estate planning attorney also do Medicaid planning?",
+        answer:
+          "Some can, but many refer Medicaid cases to an elder law specialist. Basic questions — like whether a revocable living trust affects Medicaid eligibility (it doesn't; assets in a revocable trust remain countable) — are common ground. Complex spend-down cases, Medicaid Asset Protection Trust timing against the 5-year lookback, and income-cap states requiring a Miller Trust are specialized enough that most estate planning attorneys without regular elder law caseload will bring in — or refer out to — an elder law attorney.",
+      },
+      {
+        question: "How much does an elder law attorney cost compared to an estate planning attorney?",
+        answer:
+          "Costs vary by the specific service rather than by which specialty the attorney practices. A Medicaid Asset Protection Trust runs $3,000–$6,000, and a guardianship petition runs $2,000–$10,000+ in attorney and court fees — typical elder law work. A revocable living trust runs $1,500–$5,000 ($5,000–$10,000+ in California and other high-cost metros), and an ILIT runs $2,500–$4,000 — typical estate planning work. A basic will and power of attorney package runs $150–$2,500 regardless of which type of attorney drafts it.",
+      },
+      {
+        question: "Do I need both an elder law attorney and an estate planning attorney?",
+        answer:
+          "Often, yes — but usually at different life stages rather than at the same time. A typical sequence is an estate planning attorney drafting a will and revocable living trust earlier in life, then an elder law attorney adding Medicaid and long-term-care planning once nursing home or assisted living risk becomes realistic — generally when care is likely within the next five years, since Medicaid Asset Protection Trusts need that lead time under the 5-year lookback to be effective. If your situation involves both a large estate and near-term long-term-care risk, some firms cover both specialties under one roof.",
+      },
+    ],
+    sources: [
+      { label: "42 U.S.C. §1396p — Medicaid transfers, home equity, estate recovery", url: "https://www.ssa.gov/OP_Home/ssact/title19/1917.htm" },
+      { label: "National Elder Law Foundation — CELA Certification", url: "https://www.nelf.org/" },
+      { label: "National Academy of Elder Law Attorneys (NAELA)", url: "https://www.naela.org/" },
+      { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust", "power-of-attorney-vs-guardianship", "probate-vs-trust"],
+    calculatorLinks: [
+      { label: "Medicaid spend-down calculator", href: "/elder-care/medicaid-spend-down-calculator/" },
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
+      { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
     ],
   },
 

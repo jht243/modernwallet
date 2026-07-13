@@ -422,4 +422,98 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
       { label: "Factoring fee calculator", href: "/invoice-factoring/factoring-fee-calculator/" },
     ],
   },
+
+  // ─── Business Line of Credit vs SBA Loan ──────────────────────────────
+  {
+    slug: "business-line-of-credit-vs-sba-loan",
+    title: "Business Line of Credit vs SBA Loan: Which Fits?",
+    metaDescription:
+      "Business line of credit vs SBA loan: revolving credit funds in days at higher rates, while an SBA 7(a) loan is cheaper but takes 30-90 days to close.",
+    targetKeyword: "business line of credit vs sba loan",
+    optionA: "Business Line of Credit",
+    optionB: "SBA Loan",
+    segment: "Business Financing",
+    h1: "Business Line of Credit vs SBA Loan: Which Should You Choose?",
+    intro:
+      "A business line of credit vs SBA loan comparison comes down to speed versus cost: a line of credit is revolving and can fund in days, while an SBA 7(a) loan is a lump-sum term loan capped by government rate rules that often makes it the cheaper long-term option. Drawing $50,000 on a line of credit at a 12% APR with a 2% draw fee costs about 14.05% effective APR. An SBA 7(a) loan's rate is capped by the U.S. [Small Business Administration](https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility) at the base rate plus roughly 3.0% to 6.5%, but approval commonly takes 30 to 90 days versus days to about two weeks for a line of credit. Which wins depends on how fast you need the money and how much collateral and paperwork you can supply.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Structure", a: "Revolving credit line — draw, repay, draw again", b: "Lump-sum term loan, government-guaranteed" },
+        { dimension: "Cost measure", a: "APR plus any draw or maintenance fees", b: "Rate capped by the SBA (base rate + 3.0%-6.5%) plus a guaranty fee" },
+        { dimension: "Illustrative effective APR", a: "~14.05% ($50,000 draw, 12% APR, 2% draw fee)", b: "Capped by SBA formula; varies with loan size and lender" },
+        { dimension: "Speed to fund", a: "Often days to about two weeks", b: "Typically 30-90 days" },
+        { dimension: "Repayment", a: "Interest only on the amount drawn, revolving", b: "Fixed monthly principal and interest on the full amount" },
+        { dimension: "Collateral / guarantee", a: "Often unsecured for smaller lines; larger lines may need a lien", b: "Personal guarantee required from 20%+ owners; collateral required when available" },
+        { dimension: "Typical loan size", a: "Commonly up to a few hundred thousand dollars", b: "Up to $5 million maximum loan amount" },
+        { dimension: "Term", a: "Open-ended draw period, renewable", b: "Up to 10 years for working capital/equipment; up to 25 years for real estate" },
+        { dimension: "Best fit", a: "Ongoing or seasonal cash-flow gaps", b: "Large, one-time capital needs like expansion, equipment, or real estate" },
+      ],
+    },
+    verdict:
+      "Choose a business line of credit when you need fast, flexible access to cash for recurring or seasonal gaps and can accept a higher rate for that speed. Choose an SBA loan when you have a large, one-time capital need — expansion, equipment, real estate, or an acquisition — and can wait 30 to 90 days for a lower, government-capped rate. If you want SBA-backed money in a revolving format, ask a lender about SBA CAPLines, which combine both structures.",
+    sections: [
+      {
+        heading: "A business line of credit is fast, revolving access to cash",
+        content:
+          "A business line of credit lets you draw funds as needed, up to a set limit, and pay interest only on what you actually draw. Drawing $50,000 at a 12% APR over 24 months with a 2% draw fee comes to a $2,353.67 monthly payment and about $7,488.17 in total cost — an effective APR of 14.05% once the draw fee is counted.\n\nMost lenders can approve and fund a line of credit within days to about two weeks, especially online lenders, though bank lines can take longer. Smaller lines are often unsecured; larger lines may require a blanket lien on business assets. See the [business line of credit calculator](/business-line-of-credit/) to model your own draw cost.",
+      },
+      {
+        heading: "An SBA loan is a government-guaranteed term loan with capped rates",
+        content:
+          "An SBA 7(a) loan is a term loan made by a bank or approved lender, with a portion guaranteed by the U.S. Small Business Administration — typically 85% of loans up to $150,000 and 75% of larger loans, up to a $5 million maximum loan amount. That guarantee is why an SBA loan usually costs less than other financing: the SBA caps the interest rate lenders can charge at the base rate plus roughly 3.0% to 6.5%, depending on loan size and maturity.\n\nTerms run up to 10 years for working capital or equipment and up to 25 years for real estate. The trade-off for that lower rate is time and paperwork: approval commonly takes 30 to 90 days, and the SBA requires a personal guarantee from anyone who owns 20% or more of the business, plus collateral when it is available.",
+      },
+      {
+        heading: "Speed and qualification are the real trade-off",
+        content:
+          "Speed favors the line of credit; cost usually favors the SBA loan. A line of credit can fund in days because approval leans on a shorter application, your business's cash flow, and often a soft credit pull for smaller amounts.\n\nAn SBA loan requires a fuller underwriting file — tax returns, financial statements, a business plan for larger loans, and proof of collateral where available — which is why approval stretches to 30-90 days even though the SBA itself does not lend the money directly. If your business cannot wait that long, the line of credit's speed can outweigh its higher rate.",
+      },
+      {
+        heading: "Non-obvious insight: the SBA also offers its own revolving line of credit",
+        content:
+          "Not every SBA product is a lump-sum term loan. The SBA's CAPLines program, a type of 7(a) loan, provides revolving lines of credit for seasonal, contract, builder, and general working-capital needs, with terms up to 10 years. That means the real-world choice is not always \"line of credit vs. SBA loan\" — a business can sometimes get an SBA-guaranteed revolving line instead of either a conventional line of credit or a standard SBA term loan.\n\nCAPLines still carries SBA underwriting requirements and timelines, so it will not match a fintech line's days-to-fund speed, but it can beat a conventional line's rate. Ask your lender whether a CAPLine fits before assuming your only options are a standard business line of credit or a term-loan SBA 7(a).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a business line of credit or an SBA loan cheaper?",
+        answer:
+          "An SBA loan is usually cheaper because the SBA caps the interest rate a lender can charge at the base rate plus roughly 3.0% to 6.5%. A line of credit trades that lower rate for speed — drawing $50,000 at 12% APR with a 2% draw fee runs about 14.05% effective APR, which can still beat other fast-cash options like a merchant cash advance.",
+      },
+      {
+        question: "How fast can I get a business line of credit vs an SBA loan?",
+        answer:
+          "A business line of credit can often fund in days to about two weeks, especially through an online lender. An SBA loan typically takes 30 to 90 days to close because of its fuller underwriting file and government guarantee process.",
+      },
+      {
+        question: "Do I need collateral or a personal guarantee for either option?",
+        answer:
+          "An SBA loan requires a personal guarantee from anyone who owns 20% or more of the business, and lenders must take available collateral, though the SBA will not decline a loan solely for lacking it. A business line of credit is often unsecured for smaller limits, but larger lines may require a lien on business assets.",
+      },
+      {
+        question: "Can I get an SBA-backed line of credit instead of a term loan?",
+        answer:
+          "Yes. The SBA's CAPLines program is a type of 7(a) loan that provides a revolving line of credit for seasonal, contract, builder, or general working-capital needs, with terms up to 10 years. It carries SBA underwriting timelines, so it funds slower than a conventional line of credit but can cost less.",
+      },
+      {
+        question: "Which is easier to qualify for?",
+        answer:
+          "A business line of credit is generally easier to qualify for, especially from online lenders that weigh revenue and cash flow over a full credit package. An SBA loan requires stronger documentation — tax returns, financial statements, and often collateral — which can shut out newer or thinly capitalized businesses.",
+      },
+      {
+        question: "Can I use a business line of credit and an SBA loan together?",
+        answer:
+          "Yes. Many businesses use an SBA loan to fund a large, one-time need like equipment or real estate, then keep a separate business line of credit open for day-to-day cash-flow gaps. Using both spreads financing across the option best suited to each need instead of forcing one product to do both jobs.",
+      },
+    ],
+    sources: [
+      { label: "U.S. SBA — 7(a) loan terms, conditions, and eligibility", url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility" },
+      { label: "U.S. Small Business Administration — Types of 7(a) loans (CAPLines revolving lines of credit)", url: "https://www.sba.gov/partners/lenders/7a-loan-program/types-7a-loans" },
+      { label: "Consumer Financial Protection Bureau — What to look for when shopping for a line of credit", url: "https://www.consumerfinance.gov/ask-cfpb/what-should-i-look-for-when-shopping-for-a-personal-line-of-credit-en-905/" },
+      { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
+    ],
+    relatedComparisons: ["invoice-factoring-vs-business-line-of-credit", "merchant-cash-advance-vs-loan"],
+    calculatorLinks: [
+      { label: "Business line of credit calculator", href: "/business-line-of-credit/" },
+    ],
+  },
 ];

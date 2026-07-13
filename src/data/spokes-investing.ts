@@ -462,6 +462,11 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
         answer:
           "Yes, significantly. Social Security income reduces how much you need to draw from your portfolio each month, which extends its longevity. For example, $2,000 per month in Social Security means you need $2,000 less per month from your investments — the equivalent of having an additional $600,000 in a portfolio earning 4%. Always model Social Security separately when planning retirement withdrawals.",
       },
+      {
+        question: "Is this the same as a drawdown calculator?",
+        answer:
+          "Yes — \"drawdown\" is another common term for the same thing this calculator does: modeling how a portfolio balance shrinks (or grows) as you take regular withdrawals from it. Whether you search for \"withdrawal calculator\" or \"drawdown calculator,\" you're looking for the same projection — enter your balance, your withdrawal amount, and an expected return, and see how many years the money lasts.",
+      },
     ],
     sources: [
       { label: "DOL — Retirement savings and withdrawal guidance", url: "https://www.dol.gov/general/topic/retirement/retirementsavings" },
