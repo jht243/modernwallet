@@ -25,3 +25,12 @@
 | /guides/529-leftover-money-options/ | 2026-07-11 | 1 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-alternatives/ | 2026-07-11 | 1 | 0/0/0/1/0 | 0 |
 | /net-worth/liquid-net-worth-calculator/ | 2026-07-11 | 1 | 0/0/0/1/0 | 0 |
+| / | 2026-07-13 | 2 | 0/0/0/0/0 | 0 |
+| /compare/trump-account-vs-brokerage-account/ | 2026-07-13 | 2 | 0/0/0/1/0 | 0 |
+| /investing/withdrawal-calculator/ | 2026-07-13 | 2 | 1/0/1/0/0 | 1 |
+| /auto-loan/payoff-calculator/ | 2026-07-13 | 1 | 0/0/0/0/0 | 0 |
+| /budget/ | 2026-07-13 | 1 | 0/0/0/0/0 | 2 |
+| /business-line-of-credit/ | 2026-07-13 | 1 | 0/1/1/0/0 | 0 |
+| /compare/15-year-vs-30-year-mortgage/ | 2026-07-13 | 1 | 0/1/1/0/0 | 1 |
+| /compare/stocks-vs-bonds/ | 2026-07-13 | 1 | 0/1/1/1/0 | 0 |
+| /elder-care/ | 2026-07-13 | 1 | 0/1/0/0/0 | 1 |
