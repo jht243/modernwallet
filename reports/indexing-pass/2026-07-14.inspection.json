@@ -4140,6 +4140,809 @@
           "verdict": "VERDICT_UNSPECIFIED"
         }
       }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/new-jersey/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=6Py7ZmwYMAIBc_NHQWEj7A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/new-mexico/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=bcjX1wgKQjyOnWxFYA1WUA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/new-york/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=Un2KjvVCAlENh4b0tHWu7g&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-carolina/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=4z2-Kp3fOjeWa7ZtqPfb-g&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-dakota/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-dakota/",
+      "user_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-dakota/",
+      "last_crawl_time": "2026-07-04T23:27:30Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=FsxRYUt39SEkoJBIzCFF6g&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:27:30Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-dakota/",
+          "userCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/north-dakota/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/ohio/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=SYO5BGi6cykhc2_NEXO2vA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/oklahoma/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=1AiAfqxVQ2ItVEwzYkOwOA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/oregon/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=BiIIu6MGgYbzoQEcE9XSaw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/pennsylvania/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/pennsylvania/",
+      "user_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/pennsylvania/",
+      "last_crawl_time": "2026-07-04T21:24:56Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=QMmWmTKsh0VDMXHdViaYFQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T21:24:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/pennsylvania/",
+          "userCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/pennsylvania/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/rhode-island/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=WDs3yOh58X46bKqmvIBypQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-carolina/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=pOYFrPzLWKg4kJWNpc0MzA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-dakota/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-dakota/",
+      "user_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-dakota/",
+      "last_crawl_time": "2026-07-04T15:32:20Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=gxdI4U9XEYjQEFt2QfMzrQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T15:32:20Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-dakota/",
+          "userCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/south-dakota/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/tennessee/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=lZiNk8S8FtNbXrUXILLDLg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/texas/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=eC5SE3cVLPVVfLyyQL7HDA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/utah/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=auR75jKTmU09v7sBXGnbaA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/vermont/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=GYfY3v7EVZEq5tcJZaepTQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/virginia/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=kMBPoZ194jm6hglVB5V8Ng&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/washington/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=OEUd81O263dKLo0-rDg2DA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/west-virginia/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=m4o2WzspHcNqim29DpUGLw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wisconsin/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=QWzxNXIsJKs2w70k5GchuQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wyoming/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wyoming/",
+      "user_canonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wyoming/",
+      "last_crawl_time": "2026-07-04T23:49:31Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=aWEUpiLKrSZBnMUfxieUSg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:49:31Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wyoming/",
+          "userCanonical": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/wyoming/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/",
+      "last_crawl_time": "2026-07-03T08:44:17Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=hOORh3ntq5aL1BUgBFPN9w&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-03T08:44:17Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/",
+      "last_crawl_time": "2026-07-04T18:13:55Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/elder-care/",
+        "https://www.themodernwallet.com/compare/hysa-vs-cd/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=TarDeRWjZkH19kP8ewuERw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T18:13:55Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/elder-care/",
+            "https://www.themodernwallet.com/compare/hysa-vs-cd/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/",
+      "last_crawl_time": "2026-07-03T11:02:43Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/estate-planning/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=jqxXR-5E-3HqoQC3bXJy1A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-03T11:02:43Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/estate-planning/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+      "last_crawl_time": "2026-07-04T18:15:56Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/estate-planning/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=ZKwJIOxOQI_KHf5qtbazJQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T18:15:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/estate-planning/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   },
   "deferred": [],
