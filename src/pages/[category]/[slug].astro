@@ -7,6 +7,7 @@ import LegalDisclaimer from "../../components/LegalDisclaimer.astro";
 import { SITE, LAST_UPDATED, REVIEWER } from "../../data/site";
 import { SPOKES } from "../../data/spokes";
 import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
+import { STATE_BY_SLUG } from "../../data/states";
 import CalculatorIsland from "../../components/CalculatorIsland";
 import { spokeStats } from "../../lib/stats";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
@@ -49,6 +50,9 @@ const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
 
 // Build-time computation — inject real numbers into static HTML before JS hydrates.
 const stats = spokeStats(entry);
+const stateLinks = (entry.stateVariants ?? [])
+  .map((slug) => STATE_BY_SLUG[slug])
+  .filter((s): s is NonNullable<typeof s> => Boolean(s));
 
 // ---- JSON-LD ----
 const jsonLdFaq = entry.faqs.length
@@ -169,6 +173,17 @@ const jsonLdApp = {
     {isLegal && <LegalDisclaimer scope={disclaimerScope} />}
     <Sources sources={entry.sources} />
 
+    {stateLinks.length > 0 && (
+      <section class="section">
+        <h2>Browse {entry.targetKeyword} by state</h2>
+        <div class="sister-states">
+          {stateLinks.map((s) => (
+            <a class="pill" href={`/${calc.id}/${entry.slug}/${s.slug}/`}>{s.name}<span class="arrow" aria-hidden="true">→</span></a>
+          ))}
+        </div>
+      </section>
+    )}
+
     {related.length > 0 && (
       <section class="section">
         <h2>Related {calc.label.toLowerCase()} calculators</h2>
@@ -228,6 +243,15 @@ const jsonLdApp = {
     .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
     .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
     .related-all { margin-top: 16px; font-size: 0.95rem; color: #555; }
+    .sister-states { display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border-radius: 999px;
+      border: 1px solid #D8EEE6; background: #F4FAF8; color: var(--primary-dark);
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: background 120ms ease, border-color 120ms ease;
+    }
+    .pill:hover { background: #E4F4EF; border-color: var(--primary); }
     @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } .tool-section { padding: 16px; } }
   </style>
 </BaseLayout>
