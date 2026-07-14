@@ -1,5 +1,1508 @@
 {
-  "inspected": {},
+  "inspected": {
+    "https://www.themodernwallet.com/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/about/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/auto-loan/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/auto-loan/interest-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/auto-loan/payoff-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/budget/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/calculators/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/compare/brokerage-vs-ira/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/compare/hysa-vs-cd/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/compare/renting-vs-buying/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/guides/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/guides/am-i-ready-to-retire/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/investing/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/investing/compound-interest-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/mortgage/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/mortgage/home-affordability-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/net-worth/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/net-worth/how-to-calculate-net-worth/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/net-worth/net-worth-by-age-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/net-worth/net-worth-percentile-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/portfolio/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/real-estate/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/real-estate/cap-rate-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/real-estate/cash-flow-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/real-estate/depreciation-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/retirement/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/retirement/401k-early-withdrawal-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/retirement/retirement-income-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/retirement/retirement-savings-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/retirement/social-security-retirement-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/roundup/best-index-funds/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/roundup/best-investment-apps-for-beginners/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/roundup/best-ira-accounts/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/roundup/best-mortgage-lenders/": {
+      "coverage_state": "Submitted and indexed",
+      "carried_forward": true,
+      "verdict": "PASS",
+      "robots_txt_state": "",
+      "indexing_state": "",
+      "page_fetch_state": "",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "",
+      "raw": {}
+    },
+    "https://www.themodernwallet.com/529-savings-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/529-savings-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/529-savings-calculator/",
+      "last_crawl_time": "2026-07-05T02:13:50Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/tax-resolution/offer-in-compromise-calculator/connecticut/",
+        "https://www.themodernwallet.com/estate-planning/will-cost-calculator/california/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=ZufZE6xvlQBepdAde3oaDw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T02:13:50Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/529-savings-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/529-savings-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/tax-resolution/offer-in-compromise-calculator/connecticut/",
+            "https://www.themodernwallet.com/estate-planning/will-cost-calculator/california/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/auto-loan/amortization-schedule/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+      "user_canonical": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+      "last_crawl_time": "2026-06-29T06:23:38Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/calculators/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=530Raowh7fslGBFOkvpF_Q&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T06:23:38Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+          "userCanonical": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/calculators/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+      "last_crawl_time": "2026-06-28T15:45:20Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/auto-loan/payoff-calculator/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=zd0PtC_YlnNzX-dRznt7TA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-28T15:45:20Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/auto-loan/payoff-calculator/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+      "last_crawl_time": "2026-06-28T15:51:54Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/auto-loan/payoff-calculator/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=NTUsf-kr2FSyD_YcQtcxPg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-28T15:51:54Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/auto-loan/payoff-calculator/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/",
+      "last_crawl_time": "2026-06-29T01:34:13Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=M2v5QJiEmfZZARs322mRNQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T01:34:13Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/budget/household-budget-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+      "last_crawl_time": "2026-06-29T02:21:23Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=yyPa4q5TAR2iIlNgI6Yo2A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T02:21:23Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/budget/monthly-budget-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/budget/monthly-budget-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/budget/monthly-budget-calculator/",
+      "last_crawl_time": "2026-06-29T01:04:16Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/budget/zero-based-budget-calculator/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=ZC4Ev2SSmZh7qFNjzYGpdQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T01:04:16Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/budget/monthly-budget-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/budget/monthly-budget-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/budget/zero-based-budget-calculator/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/budget/zero-based-budget-calculator/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/budget/zero-based-budget-calculator/",
+      "user_canonical": "https://www.themodernwallet.com/budget/zero-based-budget-calculator/",
+      "last_crawl_time": "2026-06-29T09:58:12Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=qV7BadxuobaGmmXY4FXOdw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T09:58:12Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/budget/zero-based-budget-calculator/",
+          "userCanonical": "https://www.themodernwallet.com/budget/zero-based-budget-calculator/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/business-line-of-credit/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/business-line-of-credit/",
+      "user_canonical": "https://www.themodernwallet.com/business-line-of-credit/",
+      "last_crawl_time": "2026-07-08T01:00:33Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=HthTe6_K5rqytzsynPPahA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-08T01:00:33Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/business-line-of-credit/",
+          "userCanonical": "https://www.themodernwallet.com/business-line-of-credit/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/15-year-vs-20-year-vs-30-year-mortgage/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=OiyQeCd9XkgPRDGMTJfK5A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+      "user_canonical": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+      "last_crawl_time": "2026-06-30T23:13:19Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/",
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=21QnmZFukhUksY0eXuSEZQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-30T23:13:19Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+          "userCanonical": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/",
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/401k-vs-roth-ira/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+      "user_canonical": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+      "last_crawl_time": "2026-06-29T01:16:36Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/guides/probate-process-guide/",
+        "https://www.themodernwallet.com/compare/brokerage-vs-ira/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=ovqim-Y7up41WQuDXnR2rw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-06-29T01:16:36Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+          "userCanonical": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/guides/probate-process-guide/",
+            "https://www.themodernwallet.com/compare/brokerage-vs-ira/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/529-vs-brokerage-account/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+      "user_canonical": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+      "last_crawl_time": "2026-07-05T08:41:56Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/compare/529-vs-utma/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=7oF6eDDD8u_NaFYnCWvNqw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T08:41:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+          "userCanonical": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/compare/529-vs-utma/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/",
+      "user_canonical": "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/",
+      "last_crawl_time": "2026-07-08T00:34:28Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/guides/529-qualified-expenses/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=4BhPXnjhDXu4JIoqkvuaDw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-08T00:34:28Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/",
+          "userCanonical": "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/guides/529-qualified-expenses/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/529-vs-roth-ira/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+      "user_canonical": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+      "last_crawl_time": "2026-07-03T14:15:55Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=RcFQr4elPLHi_inCSRJNAw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-03T14:15:55Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+          "userCanonical": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/estate-planning/estate-tax-calculator/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/529-vs-utma/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/529-vs-utma/",
+      "user_canonical": "https://www.themodernwallet.com/compare/529-vs-utma/",
+      "last_crawl_time": "2026-07-05T06:20:34Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/guides/how-to-open-a-custodial-brokerage-account-for-kids/"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=B4f8QAPTxbjliGSVy7Dcmw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T06:20:34Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/529-vs-utma/",
+          "userCanonical": "https://www.themodernwallet.com/compare/529-vs-utma/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/guides/how-to-open-a-custodial-brokerage-account-for-kids/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/annuity-vs-cd/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=fPDenswdWZJujYI3ZitbYA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/business-line-of-credit-vs-sba-loan/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=wCEPFPsSNDbsDLJ3p9FVsg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/cash-out-refinance-vs-heloc/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=zBenkYj-bLturqU0zCNvTQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/cd-vs-money-market/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=qWAtbz7wKUPoFrm9yUms7Q&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=w2ClzAw4cTQmXV43cAYY5Q&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+      "user_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+      "last_crawl_time": "2026-07-08T00:36:29Z",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=C-U5JalUNND8GDibQMT6vQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-08T00:36:29Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+          "userCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+      "user_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+      "last_crawl_time": "2026-07-09T02:54:43Z",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=oMKVmSpvW26mrbbJODJdsg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-09T02:54:43Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+          "userCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "user_canonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "last_crawl_time": "2026-07-08T00:36:29Z",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=DnviTqCnN0KBzmvEWmMIbA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-08T00:36:29Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+          "userCanonical": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/compare/elder-law-attorney-vs-estate-planning-attorney/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=dNtJ9KHUa83SQR7IOMJrEw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    }
+  },
   "deferred": [],
   "skipped_sitemaps": [
     "https://www.themodernwallet.com/sitemap.xml"
@@ -7,6 +1510,5 @@
   "partial": false,
   "site_url": "sc-domain:themodernwallet.com",
   "base_url": "https://www.themodernwallet.com",
-  "sweep_date": "2026-07-14",
-  "total": 0
+  "sweep_date": "2026-07-14"
 }
