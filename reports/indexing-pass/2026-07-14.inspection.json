@@ -5970,6 +5970,917 @@
           ]
         }
       }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/mississippi/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=0A0Hqj-xtXqRPdRZgYimSw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
+      "last_crawl_time": "2026-07-04T21:01:48Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=KsvgBAhPRzV23SdAkOnrQA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T21:01:48Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/montana/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=VtXye8t4aaQH9dlEXLFwjg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nebraska/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nebraska/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nebraska/",
+      "last_crawl_time": "2026-07-04T18:18:07Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=YjtqNvRcthZ6IJN0Qv55zw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T18:18:07Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nebraska/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nebraska/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nevada/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nevada/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nevada/",
+      "last_crawl_time": "2026-07-05T00:13:15Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=e9VAF4XIJlzb-ZdnRQ_2mg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T00:13:15Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nevada/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/nevada/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-hampshire/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=ndsF3fvHYK-Bns8rAxtLkA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-jersey/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=Uih8azId2UWQ_X_NN75BGg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+      "last_crawl_time": "2026-07-05T00:52:43Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=5MB1eS3RSqTnTnp-xPU7Gg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T00:52:43Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-york/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=L3kW6a41j9mBkjacMjWkew&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-carolina/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=hWKdrfJ6t4-KBrfbH31xbA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-dakota/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-dakota/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-dakota/",
+      "last_crawl_time": "2026-07-04T23:04:40Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=5kkQkhEw5y6kkieY7BPRbw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:04:40Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-dakota/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/north-dakota/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/ohio/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=T_KowUIZCOAl20sFhZEwlw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oklahoma/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oklahoma/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oklahoma/",
+      "last_crawl_time": "2026-07-04T23:44:40Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=Zyix6qPWMACQTF413oYs3w&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:44:40Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oklahoma/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oklahoma/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
+      "last_crawl_time": "2026-07-04T23:33:20Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=UI_cz3qiPx-wuTN7Wa4yXg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:33:20Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/pennsylvania/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/pennsylvania/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/pennsylvania/",
+      "last_crawl_time": "2026-07-05T01:32:11Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=FxWolvbUMbzREArmBMZd3w&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T01:32:11Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/pennsylvania/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/pennsylvania/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/rhode-island/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=tVJcXxRx2WM2lJABQSeDOg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-carolina/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-carolina/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-carolina/",
+      "last_crawl_time": "2026-07-04T23:08:50Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=MafiCyICzoYoSM7YG4ZgXQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T23:08:50Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-carolina/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-carolina/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/south-dakota/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=oyqi1w2yGK7aIkf6M6b9BQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/tennessee/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/tennessee/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/tennessee/",
+      "last_crawl_time": "2026-07-05T00:22:08Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=5yniRnqG8Hqc7Wykz1AsLA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T00:22:08Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/tennessee/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/tennessee/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/texas/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=sW8mO7n_-a21mZPXx6D9Jw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/utah/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/utah/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/utah/",
+      "last_crawl_time": "2026-07-05T01:08:30Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=XJbsLdaw_0_MikTQdEBV-Q&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T01:08:30Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/utah/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/utah/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/vermont/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/vermont/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/vermont/",
+      "last_crawl_time": "2026-07-04T15:32:23Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=nWST-BycyAJR67ldBKCFvA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-04T15:32:23Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/vermont/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/vermont/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/virginia/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=fO6Kmae9bUUzd3MkmPueMw&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/": {
+      "coverage_state": "Submitted and indexed",
+      "verdict": "PASS",
+      "robots_txt_state": "ALLOWED",
+      "indexing_state": "INDEXING_ALLOWED",
+      "page_fetch_state": "SUCCESSFUL",
+      "google_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+      "user_canonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+      "last_crawl_time": "2026-07-05T00:36:56Z",
+      "referring_urls": [
+        "https://www.themodernwallet.com/sitemap-0.xml"
+      ],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=TjSsSsR8BTdz-3YR927F9A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Submitted and indexed",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-07-05T00:36:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+          "userCanonical": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+          "referringUrls": [
+            "https://www.themodernwallet.com/sitemap-0.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Breadcrumbs",
+              "items": [
+                {
+                  "name": "Unnamed item"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/west-virginia/": {
+      "coverage_state": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+      "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "google_canonical": "",
+      "user_canonical": "",
+      "last_crawl_time": "",
+      "referring_urls": [],
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "raw": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:themodernwallet.com&id=1CMwk-GneFjfHf3QLwIG6Q&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "URL is unknown to Google",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
     }
   },
   "deferred": [],
