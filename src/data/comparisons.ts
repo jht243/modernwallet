@@ -4540,6 +4540,258 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── Financial Advisor vs Financial Planner ─────────────────────────────
+  {
+    slug: "financial-advisor-vs-financial-planner",
+    title: "Financial Advisor vs Financial Planner: Key Differences",
+    metaDescription:
+      "Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.",
+    targetKeyword: "financial advisor vs financial planner",
+    optionA: "Financial Advisor",
+    optionB: "Financial Planner",
+    h1: "Financial Advisor vs Financial Planner: What's the Real Difference?",
+    intro:
+      "\"Financial advisor\" and \"financial planner\" are both unregulated job titles that anyone can use, but a financial planner more often signals a holistic, goal-based approach — and the [CFP credential](https://www.cfp.net/certification-process) is the clearest way to verify real planning expertise behind either title. Neither title alone tells you whether someone is a fiduciary, how they're paid, or what they actually do for you.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Regulatory status", a: "Unregulated title — anyone can use it", b: "Unregulated title — anyone can use it" },
+        { dimension: "Typical focus", a: "Investment selection and portfolio management", b: "Holistic plan: budgeting, retirement, insurance, tax, and estate coordination" },
+        { dimension: "Signature credential", a: "None required; Series 65/RIA registration if managing money", b: "CFP (Certified Financial Planner) — coursework, exam, 6,000 hours of experience" },
+        { dimension: "Fiduciary duty", a: "Only if registered as an investment adviser (RIA)", b: "CFP professionals must act as fiduciaries when giving financial advice" },
+        { dimension: "Fee models", a: "AUM %, commission, flat fee, or hybrid — varies by firm", b: "AUM %, flat fee, or hourly — commission-based planners are less common" },
+        { dimension: "Best fit", a: "You mainly need investment management", b: "You want a full financial plan across multiple goals" },
+      ],
+    },
+    verdict:
+      "The title alone tells you almost nothing — verify credentials and fiduciary status before you trust a job title. If your need is narrow, managing a specific portfolio, a fee-only, fiduciary financial advisor is enough. If your need is broad — retirement timing, insurance gaps, tax coordination, estate basics, and investments all at once — prioritize someone with the CFP credential, since it's the one signal that requires demonstrated competence across the full financial-planning process, not just investments. Either way, confirm fiduciary status in writing and verify the person on SEC IAPD or FINRA BrokerCheck before you hire them.",
+    sections: [
+      {
+        heading: "Why neither title is regulated",
+        content:
+          "The SEC regulates the term \"investment adviser\" specifically, but titles like \"financial advisor,\" \"financial planner,\" and \"wealth manager\" carry no legal definition or licensing requirement. Anyone, a stockbroker, an insurance agent, or a genuinely qualified planner, can put any of these titles on a business card.\n\nThat's exactly why the SEC's own investor guidance stresses verifying credentials and registration directly rather than trusting a title. Two people with the same title on their door can have completely different qualifications, fee structures, and legal obligations to you.",
+      },
+      {
+        heading: "What actually separates a real financial planner",
+        content:
+          "The Certified Financial Planner (CFP) designation is the credential that gives \"financial planner\" real meaning. Earning it requires a bachelor's degree, a CFP Board-registered education program covering the full financial-planning process, and either 6,000 hours of professional planning experience or 4,000 hours through a supervised apprenticeship pathway, plus a comprehensive exam.\n\nCFP professionals are also required to act as fiduciaries whenever they provide financial advice, per CFP Board's Code of Ethics and Standards of Conduct. That combination — broad training across the full financial-planning process, real experience hours, and an enforced fiduciary standard — is what separates a credentialed planner from someone who simply adopted the title.",
+      },
+      {
+        heading: "What a financial advisor typically focuses on",
+        content:
+          "In practice, \"financial advisor\" is most often used by people whose core job is managing investments: building and maintaining a portfolio, choosing funds, and rebalancing over time. Many hold a Series 65 license or work for a Registered Investment Adviser (RIA) firm, which does trigger a fiduciary duty under the Investment Advisers Act of 1940 — but that duty comes from the RIA registration, not from the word \"advisor\" itself.\n\nSome financial advisors also hold the CFP credential and do full planning work; the titles overlap in practice more than the strict definitions suggest. That overlap is exactly why checking the underlying credential and registration matters more than the label on the title.",
+      },
+      {
+        heading: "Which one should you actually hire",
+        content:
+          "Start with the shape of your problem, not the title on the door. A single, well-defined need, like managing an inherited brokerage account or building a retirement portfolio, is well served by a fee-only financial advisor who is a fiduciary. A tangle of interconnected decisions, like when to retire, how to draw down accounts, whether you have enough life insurance, how equity compensation is taxed, and basic estate documents, benefits from a CFP professional trained to work across all of it at once.\n\nOur [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through verifying fiduciary status, comparing fee models, and checking anyone's record on SEC IAPD or FINRA BrokerCheck before you sign anything.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a financial planner better than a financial advisor?",
+        answer:
+          "Not automatically — it depends on the individual's credentials, not their title. A CFP-credentialed financial planner has demonstrated broad training across the full financial-planning process. A financial advisor without that credential may still be highly qualified for investment management specifically, but the title alone doesn't prove it either way.",
+      },
+      {
+        question: "Do financial planners have to be fiduciaries?",
+        answer:
+          "CFP professionals must act as fiduciaries whenever they provide financial advice, under CFP Board's Code of Ethics and Standards of Conduct. Someone using the title \"financial planner\" without the CFP credential has no such enforced requirement — always ask directly and get the answer in writing.",
+      },
+      {
+        question: "What does CFP stand for and why does it matter?",
+        answer:
+          "CFP stands for Certified Financial Planner. It's the credential that actually separates demonstrated planning competence from a self-chosen job title, requiring a bachelor's degree, CFP Board coursework, 6,000 hours of professional experience (or 4,000 through an apprenticeship pathway), and a comprehensive exam.",
+      },
+      {
+        question: "Can a financial advisor also be a financial planner?",
+        answer:
+          "Yes — many professionals hold both roles at once, especially if they carry the CFP credential alongside a Series 65 license or RIA registration. The titles describe different emphases, investment management versus holistic planning, rather than mutually exclusive jobs.",
+      },
+      {
+        question: "How do I verify someone's financial advisor or planner credentials?",
+        answer:
+          "Check SEC Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov for registered investment advisers, and FINRA BrokerCheck at brokercheck.finra.org for brokers. For the CFP credential specifically, CFP Board's own verification tool confirms whether someone's certification is current and in good standing.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Choosing an Investment Professional", url: "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional" },
+      { label: "CFP Board — The Experience Requirement", url: "https://www.cfp.net/certification-process/experience-requirement" },
+    ],
+    relatedComparisons: ["financial-advisor-vs-wealth-manager", "financial-advisor-vs-cpa"],
+    calculatorLinks: [
+      { label: "Retirement calculator", href: "/retirement/" },
+      { label: "Investing calculator", href: "/investing/" },
+    ],
+  },
+
+  // ─── Financial Advisor vs Wealth Manager ────────────────────────────────
+  {
+    slug: "financial-advisor-vs-wealth-manager",
+    title: "Financial Advisor vs Wealth Manager: What's Different",
+    metaDescription:
+      "Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.",
+    targetKeyword: "financial advisor vs wealth manager",
+    optionA: "Financial Advisor",
+    optionB: "Wealth Manager",
+    h1: "Financial Advisor vs Wealth Manager: Which One Actually Fits You?",
+    intro:
+      "A financial advisor typically works with a broad range of clients and focuses on investment management, while a wealth manager serves almost exclusively high-net-worth clients and bundles investment management with tax, estate, and legacy planning, often behind a minimum-asset requirement of $500,000 or more. The right choice usually comes down to your investable assets and how coordinated your financial life needs to be.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Typical client", a: "Broad range, from beginning savers to high earners", b: "High-net-worth households, often $1M+ investable assets" },
+        { dimension: "Minimum assets", a: "Often none, or a few thousand dollars", b: "Commonly $500,000 to $2 million+ depending on the firm" },
+        { dimension: "Core service", a: "Investment management and financial advice", b: "Investment management bundled with tax, estate, and legacy planning" },
+        { dimension: "Typical fee", a: "Around 1% AUM, flat fee, or hourly", b: "Often below 1% AUM at higher balances, but total relationship cost can be higher with bundled services" },
+        { dimension: "Team structure", a: "Often one advisor as your main point of contact", b: "Frequently a team spanning investment, tax, and estate specialists" },
+        { dimension: "Best fit", a: "Building wealth, managing a portfolio", b: "Preserving and coordinating wealth across investments, taxes, and estate" },
+      ],
+    },
+    verdict:
+      "Choose a financial advisor if your investable assets are below the wealth-management minimums most firms set (often $500,000 to $1 million) or if your needs are mainly about building and managing a portfolio. Choose a wealth manager once your assets clear that threshold and your situation adds real complexity — coordinating a taxable brokerage, retirement accounts, real estate, and estate documents all at once is exactly what wealth management teams are built for. Below the minimum, a fee-only financial advisor or even a CFP-credentialed planner can deliver most of the same coordination without the asset floor.",
+    sections: [
+      {
+        heading: "Why \"wealth manager\" and \"financial advisor\" differ in practice",
+        content:
+          "Neither title is legally defined, but the market has settled on a rough distinction: a wealth manager almost exclusively works with high-net-worth clients and bundles services beyond investing, while a financial advisor serves a broader range of account sizes with a narrower, investment-focused scope. [Charles Schwab](https://www.schwab.com/wealth-management/wealth-advisor)'s own Wealth Advisory service sets a $500,000 enrollment minimum, and its complimentary Private Client Services tier requires $1 million in household assets. [Fidelity](https://www.fidelity.com/wealth/wealth-management-offerings)'s tiers run similarly: Fidelity Wealth Management generally requires around $500,000 in general eligibility, and its Private Wealth Management tier is built for households with $10 million or more in investable assets.\n\nBelow those thresholds, most firms simply call the relationship \"financial advice\" rather than \"wealth management,\" even though the underlying investment work can look similar.",
+      },
+      {
+        heading: "What a wealth manager adds beyond investment management",
+        content:
+          "Wealth management typically bundles portfolio management with tax-efficient investing, estate planning coordination (often working alongside your attorney rather than replacing one), and sometimes philanthropic or business-succession planning. The pitch is a single coordinated team rather than separate, disconnected relationships with an advisor, a CPA, and an estate attorney who never talk to each other.\n\nThat coordination has real value once your finances get complicated: multiple account types, concentrated stock positions, real estate, and a will or trust that needs to stay aligned with how your accounts are titled. Below that complexity, the extra bundled services can go largely unused.",
+      },
+      {
+        heading: "What you give up by not meeting the minimum",
+        content:
+          "If you're below a firm's wealth-management minimum, you're not locked out of good advice, you're routed to a different service tier, usually called \"financial advisory\" or similar, with a lower or no minimum and a narrower scope. Fidelity's entry-level Fidelity Go and Fidelity Advisory Services tiers, for example, start with no minimum or a $50,000 general eligibility, well below its $500,000 Wealth Management tier.\n\nThe practical tradeoff is usually less bundled tax and estate coordination, not worse investment management. For many households, a fee-only financial advisor plus a separate CPA and estate attorney accomplishes the same goals piece by piece.",
+      },
+      {
+        heading: "How to decide which one you actually need",
+        content:
+          "Add up your investable assets, brokerage accounts, retirement accounts, and any other managed investments, and compare that number to the minimums at firms you're considering. If you're well under $500,000, a financial advisor (ideally fee-only and a fiduciary) is the appropriate tier regardless of how complex your life feels. If you're near or above $1 million and juggling investments, tax planning, and estate documents that don't talk to each other, a wealth manager's bundled coordination starts to earn its cost.\n\nOur [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers how to vet either one — the fiduciary and verification steps are identical regardless of which title is on the door.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the minimum net worth for a wealth manager?",
+        answer:
+          "It varies by firm, but $500,000 to $1 million in investable assets is a common entry point — Charles Schwab's Wealth Advisory service sets a $500,000 minimum, for example. Some private wealth tiers, like Fidelity's, require $10 million or more in investable assets for their highest tier.",
+      },
+      {
+        question: "Is a wealth manager the same as a financial advisor?",
+        answer:
+          "Not exactly. \"Wealth manager\" generally implies a broader, bundled service for high-net-worth clients that adds tax and estate coordination to investment management, while \"financial advisor\" is a broader term that can describe someone doing narrower investment-focused work for a wider range of client sizes. Neither title is legally regulated, so always verify the actual services and credentials.",
+      },
+      {
+        question: "Do wealth managers charge higher fees than financial advisors?",
+        answer:
+          "Not necessarily as a percentage — wealth management fees often decline as a percentage of assets at higher balances, similar to standard AUM pricing. But because wealth management bundles more services, the total relationship cost can be higher in dollar terms even at a lower percentage rate.",
+      },
+      {
+        question: "Can I get wealth management services without a large minimum?",
+        answer:
+          "Generally no — the bundled tax, estate, and legacy planning that defines wealth management is usually gated behind a firm's minimum, commonly $500,000 or more. Below that, a fee-only financial advisor combined with a separate CPA and estate attorney can cover similar ground piece by piece.",
+      },
+      {
+        question: "What services does a wealth manager typically include?",
+        answer:
+          "Beyond investment management, wealth management commonly includes tax-efficient investing strategies, estate planning coordination alongside your attorney, and sometimes business-succession or philanthropic planning. The exact bundle varies by firm, so ask for a specific list of included services before comparing cost.",
+      },
+    ],
+    sources: [
+      { label: "Charles Schwab — Schwab Wealth Advisory", url: "https://www.schwab.com/wealth-management/wealth-advisor" },
+      { label: "Fidelity — Wealth Management Offerings", url: "https://www.fidelity.com/wealth/wealth-management-offerings" },
+    ],
+    relatedComparisons: ["financial-advisor-vs-financial-planner", "financial-advisor-vs-cpa"],
+    calculatorLinks: [
+      { label: "Net worth calculator", href: "/net-worth/" },
+      { label: "Portfolio calculator", href: "/portfolio/" },
+    ],
+  },
+
+  // ─── Financial Advisor vs CPA ────────────────────────────────────────────
+  {
+    slug: "financial-advisor-vs-cpa",
+    title: "Financial Advisor vs CPA: Who Should You Hire?",
+    metaDescription:
+      "Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.",
+    targetKeyword: "financial advisor vs cpa",
+    optionA: "Financial Advisor",
+    optionB: "CPA",
+    h1: "Financial Advisor vs CPA: Who Should You Hire for What",
+    intro:
+      "A financial advisor focuses on investment management and building a portfolio, while a CPA is a state-licensed accountant whose core strength is tax preparation, tax strategy, and accounting, and the two roles overlap most in a CPA who also holds the [AICPA](https://www.aicpa-cima.com/membership/landing/personal-financial-specialist-pfs-credential)'s Personal Financial Specialist (PFS) credential. Most households eventually need both; the question is usually who to hire first.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Licensing", a: "No universal license; Series 65/RIA registration if managing money", b: "State board of accountancy license; 150 semester hours + Uniform CPA Exam" },
+        { dimension: "Core expertise", a: "Investment selection, asset allocation, portfolio management", b: "Tax preparation, tax strategy, accounting, business financials" },
+        { dimension: "IRS representation rights", a: "Not automatic — depends on a separate credential", b: "Unlimited practice rights before the IRS under Circular 230" },
+        { dimension: "Financial-planning credential", a: "CFP (Certified Financial Planner)", b: "PFS (Personal Financial Specialist) — CPA plus added planning training" },
+        { dimension: "Typical fee", a: "~1% AUM, flat fee, or hourly", b: "Hourly or per-return; often $200–$500+ per hour for planning work" },
+        { dimension: "Best fit", a: "Managing and growing investments", b: "Tax filing, tax strategy, and business or self-employment accounting" },
+      ],
+    },
+    verdict:
+      "Hire a financial advisor when your main need is managing investments — building a portfolio, choosing an asset allocation, and rebalancing over time. Hire a CPA when your main need is taxes or accounting — filing an accurate return, tax-efficient timing of income and deductions, or bookkeeping for a business. If you want one person who does both well, look specifically for a CPA who also holds the PFS credential; that combination is built for exactly this overlap. Most households with any complexity — self-employment income, investment gains, a home sale — end up using both a CPA for filing and a financial advisor for the portfolio, coordinated rather than combined.",
+    sections: [
+      {
+        heading: "What a CPA license actually requires",
+        content:
+          "A CPA is licensed by a state board of accountancy after completing 150 semester hours of college coursework, well beyond a standard four-year degree, passing the four-section Uniform CPA Examination, and typically 1–2 years of qualifying experience. The license covers accounting and auditing broadly; taxation is one specialty within that scope, not the entire credential.\n\nCPAs also have unlimited practice rights before the IRS under Circular 230, meaning a CPA can represent you in an audit or collections matter, something a financial advisor without a separate tax credential generally cannot do.",
+      },
+      {
+        heading: "What a financial advisor actually does",
+        content:
+          "A financial advisor's core job is managing money that's already been earned and taxed: building a diversified portfolio, choosing an asset allocation that fits your goals, and rebalancing over time. Many hold a Series 65 license or work through a Registered Investment Adviser (RIA), which triggers fiduciary duty under the Investment Advisers Act of 1940.\n\nWhat a typical financial advisor does not do is prepare your tax return or represent you before the IRS, that requires a separate credential (CPA, Enrolled Agent, or tax attorney), even if the advisor gives general tax-aware investment advice like harvesting losses or choosing which account to draw from first.",
+      },
+      {
+        heading: "The PFS credential: where the two roles actually merge",
+        content:
+          "The AICPA's Personal Financial Specialist (PFS) credential is granted only to CPAs, adding a specialization in personal financial planning, investments, retirement, insurance, and estate planning, on top of the core CPA license. Because all of those planning areas carry tax implications, the AICPA positions the CPA/PFS as uniquely equipped to plan and file in an integrated way, rather than coordinating two separate professionals.\n\nEarning the PFS requires an active CPA license, two years (or 3,000 hours) of financial-planning experience, passing a dedicated exam or holding the CFP or ChFC designation, and ongoing continuing education to keep it current. A CPA/PFS is worth seeking out specifically if you want tax and investment planning handled by one accountable person instead of two.",
+      },
+      {
+        heading: "Who to hire first, and when you need both",
+        content:
+          "If your immediate need is filing an accurate return, catching deductions, or handling a business's books, start with a CPA. If your immediate need is building or managing an investment portfolio, start with a financial advisor. Neither substitutes for the other on their core function — a financial advisor generally shouldn't be filing your taxes, and a CPA without planning training generally shouldn't be picking your asset allocation.\n\nMost households with real complexity, self-employment income, investment gains and losses, a home sale, or approaching retirement, end up using both, ideally with the advisor and CPA coordinating directly rather than working from different assumptions. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers vetting the investment side; ask any CPA candidate directly whether they hold the PFS credential if you want both skill sets from one person.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can a CPA also be a financial advisor?",
+        answer:
+          "Yes, most directly through the AICPA's Personal Financial Specialist (PFS) credential, which is granted only to CPAs who complete additional financial-planning training and experience. A CPA without the PFS (or a separate Series 65/RIA registration) is generally focused on tax and accounting, not investment management.",
+      },
+      {
+        question: "Should I hire a CPA or a financial advisor first?",
+        answer:
+          "It depends on the immediate need. Hire a CPA first for tax filing, tax strategy, or business accounting. Hire a financial advisor first for building or managing an investment portfolio. Many households eventually need both, coordinated with each other rather than working in isolation.",
+      },
+      {
+        question: "Can a financial advisor do my taxes?",
+        answer:
+          "Generally, no — most financial advisors are not licensed tax preparers and don't have IRS representation rights unless they separately hold a CPA, Enrolled Agent, or tax attorney credential. A financial advisor can give general tax-aware investment advice, like which account to withdraw from first, but that's different from preparing or filing a return.",
+      },
+      {
+        question: "What is a CPA/PFS and how is it different from a regular CPA?",
+        answer:
+          "A CPA/PFS is a Certified Public Accountant who has also earned the AICPA's Personal Financial Specialist credential, which adds specialized training in investments, retirement, insurance, and estate planning on top of the standard CPA license. It requires an active CPA license, two years (or 3,000 hours) of financial-planning experience, and passing a dedicated exam or holding the CFP or ChFC designation.",
+      },
+      {
+        question: "Does a CPA have fiduciary duty like a financial advisor?",
+        answer:
+          "Not automatically. A financial advisor registered as an investment adviser (RIA) has a fiduciary duty under the Investment Advisers Act of 1940 for investment advice. A CPA's professional obligations come from state licensing and AICPA standards, which govern accounting and tax conduct — a CPA/PFS giving investment advice would typically need separate registration to carry that same fiduciary duty on that advice.",
+      },
+    ],
+    sources: [
+      { label: "AICPA & CIMA — Personal Financial Specialist (PFS) Credential", url: "https://www.aicpa-cima.com/membership/landing/personal-financial-specialist-pfs-credential" },
+      { label: "IRS — Circular 230: Regulations Governing Practice Before the IRS", url: "https://www.irs.gov/tax-professionals/circular-230-tax-professionals" },
+    ],
+    relatedComparisons: ["financial-advisor-vs-financial-planner", "tax-attorney-vs-cpa-vs-enrolled-agent"],
+    calculatorLinks: [
+      { label: "Tax resolution calculator", href: "/tax-resolution/" },
+      { label: "Investing calculator", href: "/investing/" },
+    ],
+  },
+
   ...BUSINESS_COMPARISONS,
 ];
 

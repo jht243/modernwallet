@@ -34,3 +34,5 @@
 | /compare/15-year-vs-30-year-mortgage/ | 2026-07-13 | 1 | 0/1/1/0/0 | 1 |
 | /compare/stocks-vs-bonds/ | 2026-07-13 | 1 | 0/1/1/1/0 | 0 |
 | /elder-care/ | 2026-07-13 | 1 | 0/1/0/0/0 | 1 |
+| /guides/how-to-choose-a-financial-advisor | 2026-07-14 | 1 | 0/4/1/0/0 | 0 |
+| /portfolio/60-40-portfolio-calculator/ | 2026-07-14 | 1 | 2/1/1/0/0 | 0 |

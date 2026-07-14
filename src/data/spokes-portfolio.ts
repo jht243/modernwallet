@@ -76,6 +76,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       { question: "Is the 60/40 portfolio still a good strategy?", answer: "The 60/40 portfolio remains a widely used balanced benchmark. It gives up some return versus all stocks in exchange for much lower risk. In 2022, stocks and bonds fell together, which tested the mix. It still suits many investors seeking balance." },
       { question: "How much can a 60/40 portfolio grow over 30 years?", answer: "In the model, $100,000 split 60/40 with no added contributions grows to about $900,260 over 30 years. This uses a 7.60% expected return. Actual results will differ because real markets rise and fall." },
       { question: "Why hold bonds instead of all stocks?", answer: "Bonds are generally less volatile than stocks but offer more modest returns, per SEC guidance. Adding 40% bonds lowers the 60/40 portfolio's volatility to 10.00%, well below an all-stock mix. That trade buys you a smoother path for less return." },
+      { question: "Is the 60/40 portfolio good for retirement?", answer: "It can be, but retirees typically weight it differently than someone still saving. The 60/40 split is often used during the working years for growth with some stability; near or in retirement, many investors shift toward more bonds to reduce how much a downturn can shrink withdrawals. Use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to test a more conservative mix against your own retirement timeline." },
     ],
     sources: [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
@@ -166,5 +167,83 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     toolSubheading: "See volatility and the Sharpe ratio — return earned per unit of risk.",
     preset: { stocks: 90000, bonds: 0, realEstate: 0, cash: 10000, monthlyContribution: 0, years: 20 },
     relatedSlugs: ["asset-allocation-calculator", "60-40-portfolio-calculator", "expected-return-calculator"],
+  },
+
+  {
+    calculator: "portfolio",
+    slug: "70-30-portfolio-calculator",
+    title: "70/30 Portfolio Calculator: Return, Risk & Growth",
+    metaDescription:
+      "Use this 70/30 portfolio calculator to see the expected return, risk, and long-run growth of a 70% stock, 30% bond mix versus the classic 60/40.",
+    targetKeyword: "70/30 portfolio calculator",
+    h1: "70/30 Portfolio Calculator",
+    intro:
+      "The 70/30 portfolio holds 70% stocks and 30% bonds, a growth-tilted step up from the classic 60/40 mix. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
+    howItWorks:
+      "A 70/30 portfolio leans further into stocks than the 60/40 mix, trading some stability for more expected growth. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To compare against a more balanced split, use the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
+    commonMistakes: [
+      "Treating the 10% stock and 4% bond figures as guaranteed. They are long-run model assumptions, and real returns vary widely year to year.",
+      "Assuming the extra stock weight only adds upside. A 70/30 mix also carries more downside in a bad year than a 60/40 mix.",
+      "Forgetting to rebalance. Strong stock markets can push a 70/30 mix past 80% stocks within a few years if you never trim back.",
+      "Picking 70/30 for its higher expected return without checking the volatility figure — a bumpier ride you can't stomach can lead to panic-selling at the worst time.",
+      "Ignoring your time horizon. A 70/30 split suits a longer runway; it can be too aggressive within a few years of a spending goal.",
+    ],
+    workedExample:
+      "Say you invest $70,000 in stocks and $30,000 in bonds, for $100,000 total. That is a 70% stock, 30% bond split. The calculator shows an expected return of 8.20% and volatility of 11.45%, giving a Sharpe ratio of 0.50. Held for 30 years with no extra contributions, that $100,000 grows to about $1,063,697 in the model — roughly $163,000 more than the same starting balance in a 60/40 mix, in exchange for higher volatility along the way.",
+    faqs: [
+      { question: "What is a 70/30 portfolio?", answer: "A 70/30 portfolio holds 70% in stocks and 30% in bonds. It sits between the classic 60/40 mix and an all-stock portfolio, aiming for more growth than 60/40 while still holding a meaningful bond cushion." },
+      { question: "What return does the 70/30 portfolio calculator assume?", answer: "The calculator models stocks at a 10% return with 16% volatility and bonds at a 4% return with 5% volatility. For a 70/30 mix, that gives an expected return of 8.20% and volatility of 11.45%. These are long-run estimates, not promises." },
+      { question: "Is 70/30 better than 60/40?", answer: "Not universally — it's a different risk tradeoff. In the model, 70/30 has a higher expected return (8.20% vs 7.60%) but also higher volatility (11.45% vs 10.00%). A younger investor with a long time horizon may prefer 70/30; someone closer to needing the money may prefer 60/40's smaller swings." },
+      { question: "How much can a 70/30 portfolio grow over 30 years?", answer: "In the model, $100,000 split 70/30 with no added contributions grows to about $1,063,697 over 30 years, using an 8.20% expected return. Actual results will differ because real markets rise and fall." },
+      { question: "How often should I rebalance a 70/30 portfolio?", answer: "Many investors rebalance once a year or when the mix drifts a set amount, such as 5 percentage points, from target. Without rebalancing, a strong stock run can quietly push a 70/30 portfolio toward 80/20 or higher, raising your risk beyond what you originally chose." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "SEC Investor.gov — Beginners' Guide to Asset Allocation, Diversification, and Rebalancing", url: "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+    ],
+    toolHeading: "Analyze the growth-tilted 70/30 portfolio",
+    toolSubheading: "See the expected return, risk, and growth of a 70% stock, 30% bond mix.",
+    preset: { stocks: 70000, bonds: 30000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30 },
+    relatedSlugs: ["60-40-portfolio-calculator", "asset-allocation-calculator", "portfolio-risk-calculator"],
+  },
+
+  {
+    calculator: "portfolio",
+    slug: "80-20-portfolio-calculator",
+    title: "80/20 Portfolio Calculator: Return, Risk & Growth",
+    metaDescription:
+      "Use this 80/20 portfolio calculator to see the expected return, risk, and long-run growth of an 80% stock, 20% bond mix for longer time horizons.",
+    targetKeyword: "80/20 portfolio calculator",
+    h1: "80/20 Portfolio Calculator",
+    intro:
+      "The 80/20 portfolio holds 80% stocks and 20% bonds, an aggressive mix built for investors with a long time horizon. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
+    howItWorks:
+      "An 80/20 portfolio leans heavily into stocks, keeping only a small bond cushion. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To see a more balanced split, try the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
+    commonMistakes: [
+      "Treating the 10% stock and 4% bond figures as guaranteed. They are long-run model assumptions, and real returns vary widely year to year.",
+      "Holding 80/20 with a short time horizon. The higher stock weight needs years to recover from a bad stretch, so it fits a longer runway better than a near-term goal.",
+      "Skipping the volatility check. An 80/20 mix carries meaningfully more swing than 60/40, and the higher expected return only shows up over the long run.",
+      "Never rebalancing. A strong bull market can push an 80/20 mix toward 90% stocks or higher within a few years, well past what most investors intend.",
+      "Confusing lower bond weight with no downside protection. The 20% bond slice still cushions some of the drop in a stock selloff, just less than a 60/40 or 70/30 mix would.",
+    ],
+    workedExample:
+      "Say you invest $80,000 in stocks and $20,000 in bonds, for $100,000 total. That is an 80% stock, 20% bond split. The calculator shows an expected return of 8.80% and volatility of 12.94%, giving a Sharpe ratio of 0.49. Held for 30 years with no extra contributions, that $100,000 grows to about $1,255,645 in the model — the highest of the three fixed mixes on this site, and also the bumpiest ride.",
+    faqs: [
+      { question: "What is an 80/20 portfolio?", answer: "An 80/20 portfolio holds 80% in stocks and 20% in bonds. It's an aggressive, growth-focused mix that keeps a small bond cushion rather than going fully into stocks, and it typically suits investors with a long time horizon and a higher tolerance for swings." },
+      { question: "What return does the 80/20 portfolio calculator assume?", answer: "The calculator models stocks at a 10% return with 16% volatility and bonds at a 4% return with 5% volatility. For an 80/20 mix, that gives an expected return of 8.80% and volatility of 12.94%. These are long-run estimates, not promises." },
+      { question: "Is 80/20 too aggressive?", answer: "It depends on your time horizon and how you'd react to a large drawdown. In the model, 80/20 carries 12.94% volatility, well above the 60/40 mix's 10.00%. For a saver decades from needing the money, that volatility is often an acceptable tradeoff for higher expected growth; for someone near a spending goal, it usually is not." },
+      { question: "How much can an 80/20 portfolio grow over 30 years?", answer: "In the model, $100,000 split 80/20 with no added contributions grows to about $1,255,645 over 30 years, using an 8.80% expected return. Actual results will differ because real markets rise and fall, sometimes sharply." },
+      { question: "80/20 vs 60/40 portfolio: what's the real tradeoff?", answer: "In the model, 80/20 has a higher expected return (8.80% vs 7.60%) and higher volatility (12.94% vs 10.00%) than 60/40. The 60/40 mix trades some growth for a smoother ride; 80/20 accepts bigger swings for a higher long-run projection. Neither is universally better — it depends on your time horizon and risk tolerance." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+      { label: "FINRA — Know Your Risk Tolerance", url: "https://www.finra.org/investors/insights/know-your-risk-tolerance" },
+    ],
+    toolHeading: "Analyze the aggressive 80/20 portfolio",
+    toolSubheading: "See the expected return, risk, and growth of an 80% stock, 20% bond mix.",
+    preset: { stocks: 80000, bonds: 20000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30 },
+    relatedSlugs: ["70-30-portfolio-calculator", "60-40-portfolio-calculator", "portfolio-risk-calculator"],
   },
 ];
