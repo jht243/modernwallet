@@ -1,0 +1,42 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-14",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-choose-a-financial-advisor",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 3,
+  "top10_pages_total_clicks": 3,
+  "channel_split": {
+    "/": {
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/how-to-choose-a-financial-advisor": {
+      "Direct": 1
+    },
+    "/portfolio/60-40-portfolio-calculator/": {
+      "Direct": 1
+    }
+  }
+}

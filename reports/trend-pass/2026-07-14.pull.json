@@ -1,0 +1,154 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-07-07",
+    "end": "2026-07-14",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "trump account vs taxable brokerage",
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 0.0625,
+      "position": 8.38
+    },
+    {
+      "query": "401k administrators for small business",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 80.69
+    },
+    {
+      "query": "401k alternatives for small business",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 91.4
+    },
+    {
+      "query": "\"s&p 500 calculator\"",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "10 best money market funds",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "401 k early withdrawal calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 94.5
+    },
+    {
+      "query": "401 k for small business",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "401 k penalty calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66.5
+    },
+    {
+      "query": "401 k plan for small business owners",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "$20000 invested in s&p 500 calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/",
+      "clicks": 8,
+      "impressions": 351,
+      "ctr": 0.0228,
+      "position": 8.65
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-savings-account/",
+      "clicks": 6,
+      "impressions": 131,
+      "ctr": 0.0458,
+      "position": 7.18
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-baby-bonds/",
+      "clicks": 5,
+      "impressions": 43,
+      "ctr": 0.1163,
+      "position": 7.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/withdrawal-calculator/",
+      "clicks": 2,
+      "impressions": 85,
+      "ctr": 0.0235,
+      "position": 59.72
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+      "clicks": 2,
+      "impressions": 7,
+      "ctr": 0.2857,
+      "position": 4.71
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/military-retirement-calculator/",
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 1,
+      "position": 25.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-ira-accounts/",
+      "clicks": 1,
+      "impressions": 776,
+      "ctr": 0.0013,
+      "position": 61.0
+    },
+    {
+      "page": "https://www.themodernwallet.com/trump-account/",
+      "clicks": 1,
+      "impressions": 192,
+      "ctr": 0.0052,
+      "position": 10.35
+    },
+    {
+      "page": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/",
+      "clicks": 1,
+      "impressions": 94,
+      "ctr": 0.0106,
+      "position": 6.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+      "clicks": 1,
+      "impressions": 58,
+      "ctr": 0.0172,
+      "position": 38.34
+    }
+  ],
+  "top10_pages_total_clicks": 29,
+  "top10_queries_total_clicks": 1
+}
