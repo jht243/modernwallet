@@ -70,7 +70,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "401(k) vs Roth IRA: can you have both?",
         content:
-          "Yes — and most financial planners recommend it. There's no rule against having a 401(k) and a Roth IRA at the same time. The two accounts have separate, independent contribution limits.\n\nThe optimal order is usually: contribute to the 401(k) up to the full employer match → max out the Roth IRA → go back and max the 401(k) with any remaining savings.\n\nIf you're self-employed, a SEP-IRA or Solo 401(k) can replace the employer plan with even higher limits. The [retirement calculator](/retirement/) lets you model multiple account scenarios side by side.",
+          "Yes — and most financial planners recommend it. There's no rule against having a 401(k) and a Roth IRA at the same time. The two accounts have separate, independent contribution limits.\n\nThe optimal order is usually: contribute to the 401(k) up to the full employer match → max out the Roth IRA → go back and max the 401(k) with any remaining savings.\n\nIf you're self-employed, a SEP-IRA or Solo 401(k) can replace the employer plan with even higher limits. The [retirement calculator](/retirement/) lets you model multiple account scenarios side by side. When you're ready to open a Roth IRA, our [best IRA accounts](/roundup/best-ira-accounts/) roundup compares where to hold it.",
       },
       {
         heading: "The break-even tax rate: exactly when Roth wins",
@@ -249,7 +249,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When to use each account",
         content:
-          "Use a HYSA when your only goal is maximum interest on savings you don't need to spend directly. Most HYSAs let you link to an external checking account for easy transfers within 1–2 business days.\n\nUse a money market account when you need to be able to write checks or swipe a card from your savings — common for emergency funds where a transfer delay could cause problems, or for business owners managing cash flow.\n\nBoth are excellent for emergency funds, short-term savings goals, and parking cash you're waiting to invest. They're less suitable for money you'll need in under 1 month (use checking) or over 2 years (consider a CD).",
+          "Use a HYSA when your only goal is maximum interest on savings you don't need to spend directly. Most HYSAs let you link to an external checking account for easy transfers within 1–2 business days.\n\nUse a money market account when you need to be able to write checks or swipe a card from your savings — common for emergency funds where a transfer delay could cause problems, or for business owners managing cash flow.\n\nBoth are excellent for emergency funds, short-term savings goals, and parking cash you're waiting to invest. They're less suitable for money you'll need in under 1 month (use checking) or over 2 years (consider a CD). To find a top-paying account, see our [best money market accounts](/roundup/best-money-market-accounts/) roundup.",
       },
     ],
     faqs: [
@@ -2659,7 +2659,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Which retirement account should you choose?",
         content:
-          "Choose a Roth IRA if you expect to pay higher taxes in retirement than you do today. Young savers and people early in their careers often fit this profile. Tax-free withdrawals later can be worth far more than a small deduction now.\n\nChoose a Traditional IRA if you want to cut your tax bill this year. High earners in peak years often benefit most. This works best if you expect a lower tax rate after you stop working.\n\nYou do not always have to pick just one. Splitting contributions spreads your tax risk across both outcomes. If a Roth is off-limits due to income, explore the [401k vs Roth IRA comparison](/compare/401k-vs-roth-ira/) and the backdoor Roth strategy.",
+          "Choose a Roth IRA if you expect to pay higher taxes in retirement than you do today. Young savers and people early in their careers often fit this profile. Tax-free withdrawals later can be worth far more than a small deduction now.\n\nChoose a Traditional IRA if you want to cut your tax bill this year. High earners in peak years often benefit most. This works best if you expect a lower tax rate after you stop working.\n\nYou do not always have to pick just one. Splitting contributions spreads your tax risk across both outcomes. If a Roth is off-limits due to income, explore the [401k vs Roth IRA comparison](/compare/401k-vs-roth-ira/) and the backdoor Roth strategy. Once you've picked a type, compare providers in our [best IRA accounts](/roundup/best-ira-accounts/) roundup.",
       },
     ],
     faqs: [
@@ -3034,7 +3034,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Automatic Investing and Where You Can Buy Them",
         content:
-          "Index mutual funds are the better tool for hands-off automatic investing. You can schedule recurring buys in exact dollar amounts, like $200 every payday, and the fund fills fractional shares by default.\n\nETFs are harder to automate. You often buy whole shares, and recurring dollar-based buys depend on whether your broker supports fractional ETF shares.\n\nWhere you invest also matters. In a 401(k), you usually only get mutual funds, so an index fund is your option. In a brokerage account or IRA, you can pick either one. Track how these fit your bigger picture with our [net worth tracker](/net-worth/).",
+          "Index mutual funds are the better tool for hands-off automatic investing. You can schedule recurring buys in exact dollar amounts, like $200 every payday, and the fund fills fractional shares by default.\n\nETFs are harder to automate. You often buy whole shares, and recurring dollar-based buys depend on whether your broker supports fractional ETF shares.\n\nWhere you invest also matters. In a 401(k), you usually only get mutual funds, so an index fund is your option. In a brokerage account or IRA, you can pick either one. Once you settle on index funds, our [best index funds roundup](/roundup/best-index-funds/) highlights specific low-cost picks. Track how these fit your bigger picture with our [net worth tracker](/net-worth/).",
       },
       {
         heading: "How to Decide Between an Index Fund and an ETF",
@@ -3320,7 +3320,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When a SEP-IRA is the better pick",
         content:
-          "A SEP-IRA is the better pick when you want the simplest plan or you have employees. It takes minutes to open and has almost no ongoing paperwork.\n\nThe employee rule is the key limit. A Solo 401(k) is for owner-only businesses, meaning you and a spouse with no other full-time staff. If you hire a full-time employee, the Solo 401(k) no longer fits.\n\nA SEP-IRA still works with employees. But you must contribute the same percentage of pay for every eligible worker, which can get expensive. Compare account types in our [brokerage vs IRA](/compare/brokerage-vs-ira/) guide.",
+          "A SEP-IRA is the better pick when you want the simplest plan or you have employees. It takes minutes to open and has almost no ongoing paperwork.\n\nThe employee rule is the key limit. A Solo 401(k) is for owner-only businesses, meaning you and a spouse with no other full-time staff. If you hire a full-time employee, the Solo 401(k) no longer fits.\n\nA SEP-IRA still works with employees. But you must contribute the same percentage of pay for every eligible worker, which can get expensive. If you'd rather offer a full workplace plan, compare setups in our [best small-business 401(k) providers](/roundup/best-401k-providers-for-small-business/) roundup. Compare account types in our [brokerage vs IRA](/compare/brokerage-vs-ira/) guide.",
       },
       {
         heading: "How to choose between a SEP-IRA and a Solo 401(k)",
@@ -3418,7 +3418,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Taxes and when active can make sense",
         content:
-          "Index funds tend to be more tax-efficient than active funds in a taxable account. Their low turnover means fewer sales, so they pass through fewer taxable capital gains each year. Active funds trade more, which can create surprise gains you owe tax on even if you did not sell.\n\nIn a tax-advantaged account like an IRA, this gap matters less because growth is sheltered. Compare account types in [brokerage vs IRA](/compare/brokerage-vs-ira/).\n\nActive management can still make sense in a few cases. It fits less-efficient markets, like small-cap stocks or certain bond sectors, where a skilled manager has more room to add value. It also fits when you have genuine, researched conviction in a specific strategy. Track results across your holdings with the [portfolio tracker](/portfolio/).",
+          "Index funds tend to be more tax-efficient than active funds in a taxable account. Their low turnover means fewer sales, so they pass through fewer taxable capital gains each year. Active funds trade more, which can create surprise gains you owe tax on even if you did not sell. For specific low-fee options, see our [best index funds](/roundup/best-index-funds/) roundup.\n\nIn a tax-advantaged account like an IRA, this gap matters less because growth is sheltered. Compare account types in [brokerage vs IRA](/compare/brokerage-vs-ira/).\n\nActive management can still make sense in a few cases. It fits less-efficient markets, like small-cap stocks or certain bond sectors, where a skilled manager has more room to add value. It also fits when you have genuine, researched conviction in a specific strategy. Track results across your holdings with the [portfolio tracker](/portfolio/).",
       },
     ],
     faqs: [
@@ -3511,7 +3511,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The deduction catch: income limits for a traditional IRA",
         content:
-          "Your traditional IRA deduction can phase out if a workplace plan covers you and you earn above set limits. Anyone with earned income can contribute to a traditional IRA. But the tax deduction is what phases out — not the ability to contribute.\n\nFor 2025, if a work plan covers you, the deduction phases out between $79,000 and $89,000 for single filers. For married couples filing jointly where the contributor is covered, it phases out between $126,000 and $146,000.\n\nA 401(k) has no such income limit — your full deferral always reduces taxable income. If your IRA deduction is phased out, filling the 401(k) after the match often makes more sense than a non-deductible IRA contribution.",
+          "Your traditional IRA deduction can phase out if a workplace plan covers you and you earn above set limits. Anyone with earned income can contribute to a traditional IRA. But the tax deduction is what phases out — not the ability to contribute.\n\nFor 2025, if a work plan covers you, the deduction phases out between $79,000 and $89,000 for single filers. For married couples filing jointly where the contributor is covered, it phases out between $126,000 and $146,000.\n\nA 401(k) has no such income limit — your full deferral always reduces taxable income. If your IRA deduction is phased out, filling the 401(k) after the match often makes more sense than a non-deductible IRA contribution. If a deductible IRA still fits your income, compare providers in our [best IRA accounts](/roundup/best-ira-accounts/) roundup.",
       },
       {
         heading: "How to use both accounts together",
@@ -3607,7 +3607,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The CD ladder strategy",
         content:
-          "A CD ladder solves the lock-up problem by splitting your money across several CDs with staggered maturity dates. Instead of one five-year CD, you might open five CDs maturing in one, two, three, four, and five years.\n\nEach year one CD matures, giving you access to a portion of your cash. You reinvest maturing money into a new long-term CD, or spend it if you need it. This blends the higher rates of longer CDs with regular access.\n\nA ladder also cushions rate changes. Because you reinvest every year, you are never fully locked into one rate. It is a practical middle ground between a single CD and a fully liquid money market account. Estimate the payoff with our [investing calculator](/investing/).",
+          "A CD ladder solves the lock-up problem by splitting your money across several CDs with staggered maturity dates. Instead of one five-year CD, you might open five CDs maturing in one, two, three, four, and five years.\n\nEach year one CD matures, giving you access to a portion of your cash. You reinvest maturing money into a new long-term CD, or spend it if you need it. This blends the higher rates of longer CDs with regular access.\n\nA ladder also cushions rate changes. Because you reinvest every year, you are never fully locked into one rate. It is a practical middle ground between a single CD and a fully liquid money market account. Compare top options in our [best money market accounts](/roundup/best-money-market-accounts/) roundup. Estimate the payoff with our [investing calculator](/investing/).",
       },
       {
         heading: "Weighing the early-withdrawal penalty",
