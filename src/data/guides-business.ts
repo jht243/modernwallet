@@ -24,7 +24,7 @@ export const BUSINESS_GUIDES: Guide[] = [
       {
         heading: "Start with SBA and bank loans for the lowest cost",
         body:
-          "SBA and bank loans almost always cost the least, so start there if you have time. The SBA's 7(a) program guarantees loans up to $5 million through banks and credit unions. Its Microloan program lends up to $50,000, with an average loan near $13,000.\n\nThese loans carry the lowest rates but the slowest process. Approval can take weeks and needs strong credit, tax returns, and often collateral. If you can wait and you qualify, this is the cheapest money you will find.\n\nWhen a bank says no or the timeline is too long, the alternatives below fill the gap. They cost more but move faster. The rest of this guide helps you choose among them.",
+          "SBA and bank loans almost always cost the least, so start there if you have time. The SBA's 7(a) program guarantees loans up to $5 million through banks and credit unions. Its Microloan program lends up to $50,000, with an average loan near $13,000.\n\nThese loans carry the lowest rates but the slowest process. Approval can take weeks and needs strong credit, tax returns, and often collateral. If you can wait and you qualify, this is the cheapest money you will find. Already carrying one? Use our [business loan payoff calculator](/business-loan-payoff/) to see how much an extra monthly payment saves in interest.\n\nWhen a bank says no or the timeline is too long, the alternatives below fill the gap. They cost more but move faster. The rest of this guide helps you choose among them.",
       },
       {
         heading: "The decision framework: speed vs. cost vs. receivables",

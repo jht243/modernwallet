@@ -24,6 +24,8 @@ import SpecialNeedsTrustCalculator from "./SpecialNeedsTrustCalculator";
 import LongTermCareCostCalculator from "./LongTermCareCostCalculator";
 import TrumpAccountCalculator from "./TrumpAccountCalculator";
 import CollegeSavings529Calculator from "./CollegeSavings529Calculator";
+import CoastFireCalculator from "./CoastFireCalculator";
+import BusinessLoanPayoffCalculator from "./BusinessLoanPayoffCalculator";
 import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
 import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
@@ -64,6 +66,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "trump-account": TrumpAccountCalculator,
   // 529 / college-savings — projects balance to college start + funding-gap vs an inflated cost target.
   "529-savings-calculator": CollegeSavings529Calculator,
+  // Coast FIRE — competitor-monitor pass (2026-07-15): does current savings alone reach the FIRE
+  // number by retirement, and if not, when does it (with real contributions)?
+  "coast-fire": CoastFireCalculator,
+  // Business loan payoff — competitor-monitor pass (2026-07-15): standard amortizing term-loan
+  // payoff + extra-payment scenario (distinct from the factor-rate MCA/factoring tools below).
+  "business-loan-payoff": BusinessLoanPayoffCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,

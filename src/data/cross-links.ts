@@ -26,6 +26,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/investing/", label: "Grow your investments" },
     { href: "/net-worth/", label: "Track your net worth" },
     { href: "/portfolio/", label: "Check your asset mix" },
+    { href: "/coast-fire/", label: "Could you stop saving already?" },
+  ],
+  "coast-fire": [
+    { href: "/retirement/", label: "Full retirement projection with contributions" },
+    { href: "/investing/", label: "Project a taxable brokerage account" },
+    { href: "/net-worth/", label: "Track your net worth" },
   ],
   "investing": [
     { href: "/retirement/", label: "Plan your retirement" },
@@ -68,6 +74,11 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/invoice-factoring/", label: "Factor invoices for faster cash" },
     { href: "/merchant-cash-advance/", label: "When speed matters: MCA" },
     { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
+  ],
+  "business-loan-payoff": [
+    { href: "/business-line-of-credit/", label: "Need more credit instead?" },
+    { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
+    { href: "/net-worth/", label: "Track your net worth" },
   ],
   "estate-planning": [
     { href: "/retirement/", label: "Have a retirement plan — now protect it" },
