@@ -23457,11 +23457,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/advice/why-to-avoid-cash-advances": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:d7c1538e4aff2a73ea55ff75b144b7b4638902c467ed1ecec27bb5231a771988",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-13T20:52:58-04:00",
+          "our_url": "/guides/credit-card-cash-advance-guide/",
           "outline": [
             "Key takeaways",
             "How does a cash advance work in the first place?",
@@ -23477,7 +23481,7 @@
             "credit",
             "interest"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Why You Should Avoid Getting a Cash Advance at the ATM | Bankrate",
           "tool_io": []
         },
@@ -87007,11 +87011,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/business/loans/calculators/business-loan-payoff-calculator": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:71973fcd708ea711fddb4b5dfa3be009fe38eb4fd322b698d4937bfced8f5e46",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "tool",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-13T00:00:00-07:00",
+          "our_url": "/business-loan-payoff/",
           "outline": [
             "How much do you need?",
             "How to use our business loan payoff calculator",
@@ -87028,7 +87036,7 @@
             "payoff",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Business Loan Payoff Calculator: Estimate Savings - NerdWallet",
           "tool_io": [
             "label: Credit cards",
@@ -98012,11 +98020,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/credit-cards/learn/credit-card-perks-that-are-oversold": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:8415ffbab95493469ff3b8d9f31f1ce1d59a1fc9edca5a7e9ffbccca9b8953b1",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-10T00:00:00-07:00",
+          "our_url": "/guides/credit-card-perks-worth-it/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "1. Zero fraud liability",
@@ -98034,7 +98046,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "10 Credit Card Benefits That Are Often Oversold - NerdWallet",
           "tool_io": []
         },
@@ -102709,11 +102721,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/real-applications-zero-percent-credit-card-approval": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:fdbe0490023f925ed22e720f03b10b67e1f408e7877a2838941de7cdc78e1abb",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-06T00:00:00-07:00",
+          "our_url": "/guides/credit-score-for-0-apr-credit-card/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "0% APR credit card approval rates",
@@ -102725,7 +102741,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Credit Score Do You Need for a 0% APR Credit Card? (Based on Real Applications) - NerdWallet",
           "tool_io": []
         },
@@ -126232,17 +126248,21 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/calculators/coast-fire-calculator": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:72f3dddcd8afd474f0ea6e2b9f034baa7287f10d3d055d61f24d42a9be74c077",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "tool",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-09T00:00:00-07:00",
+          "our_url": "/coast-fire/",
           "outline": [],
           "relevance_hits": [
             "calculator",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Coast FIRE Calculator: Estimate When You Could Coast - NerdWallet",
           "tool_io": [
             "label: Credit cards",
@@ -127262,11 +127282,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/learn/coast-fire": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:496e16b586ee3a1f19c2e91bc6a6fef0af548e88730111bc18eb8d00cf3ef2b5",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-07-09T11:55:33-07:00",
+          "our_url": "/guides/coast-fire-guide/",
           "outline": [
             "What is Coast FIRE?",
             "Why did coasting gain traction?",
@@ -127277,7 +127301,7 @@
             "investing",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Coast FIRE Is the Internet\u2019s New Favorite Retirement Strategy. Should You Jump on Board? - NerdWallet",
           "tool_io": []
         },
@@ -256058,11 +256082,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/estate-planning/what-happens-to-your-401k-when-you-die": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:70876bdeb7c59338d8f150c3c2db4470f7500889e75b81dec08b33ed339de8dd",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-02-06T21:46:48+00:00",
+          "our_url": "/guides/401k-beneficiary-rules/",
           "outline": [
             "How Your 401(k) Is Passed onto a Beneficiary",
             "What the Beneficiary Needs to Do to Inherit the 401(k)",
@@ -256075,7 +256103,7 @@
             "401k",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Happens to Your 401(k) When You Die? Beneficiary Rules and Taxes",
           "tool_io": []
         },
@@ -262504,11 +262532,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/heloc-interest-tax-deductible": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:7938d21ab8ff41ae0cfca91adcef35e72df8b5e4e00690292896fa21b8e0e9bb",
+          "disposition": "enriched",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-02-06T21:46:18+00:00",
+          "our_url": "/compare/heloc-vs-personal-loan/",
           "outline": [
             "Is HELOC Interest Tax Deductible?",
             "Rules for Deducting HELOC Interest",
@@ -262525,7 +262557,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Is HELOC Interest Tax Deductible? IRS Rules and Limits",
           "tool_io": []
         },
@@ -271346,11 +271378,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/529-investment-strategy-by-age": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:751bbfad5a13ec4dae7b8f6e8432e9aba5a3e66468c649471d099e4a39e8972a",
+          "disposition": "published",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-02-10T23:51:27+00:00",
+          "our_url": "/guides/529-investment-strategy-by-age/",
           "outline": [
             "What Is a 529 College Savings Account?",
             "529 Investment Strategies",
@@ -271367,7 +271403,7 @@
             "investment",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "529 Investment Strategy by Age",
           "tool_io": []
         },
@@ -292828,11 +292864,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/mortgage/va-loan-requirements": {
+          "acted": true,
+          "acted_date": "2026-07-15",
           "content_hash": "sha256:3beab776275b129a466c9872c93166546cdbac33c78ae503c3ad759cd5585614",
+          "disposition": "enriched",
           "first_seen": "2026-07-15",
           "kind": "page",
           "last_seen": "2026-07-15",
           "lastmod": "2026-02-06T17:21:22+00:00",
+          "our_url": "/compare/va-loan-vs-conventional-loan/",
           "outline": [
             "VA Loan Basics",
             "VA Loan Eligibility Requirements",
@@ -292851,7 +292891,7 @@
             "loans",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "2026 Eligibility Requirements for VA Loans",
           "tool_io": []
         },
