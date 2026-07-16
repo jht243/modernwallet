@@ -1,0 +1,120 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-15",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/trump-account-vs-savings-account/",
+      "views": 6,
+      "sessions": 4,
+      "active_users": 3,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 6,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 6
+    },
+    {
+      "page": "/elder-care/medicaid-spend-down-calculator/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 5
+    },
+    {
+      "page": "/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/estate-planning/will-cost-calculator/",
+      "views": 2,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 2
+    },
+    {
+      "page": "/estate-planning/will-cost-calculator/maryland/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/auto-loan/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/merchant-cash-advance-vs-loan/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/elder-care/medicaid-spend-down-calculator/hawaii/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 29,
+  "top10_pages_total_clicks": 29,
+  "channel_split": {
+    "/compare/trump-account-vs-savings-account/": {
+      "Organic Search": 4
+    },
+    "/elder-care/medicaid-spend-down-calculator/": {
+      "Direct": 3,
+      "Unassigned": 3,
+      "Cross-network": 1
+    },
+    "/": {
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/estate-planning/will-cost-calculator/": {
+      "Unassigned": 2,
+      "Cross-network": 1,
+      "Organic Search": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/auto-loan/": {
+      "Referral": 1,
+      "Unassigned": 1
+    },
+    "/compare/merchant-cash-advance-vs-loan/": {
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Organic Search": 1
+    },
+    "/elder-care/medicaid-spend-down-calculator/hawaii/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/estate-planning/will-cost-calculator/maryland/": {
+      "Organic Search": 1
+    }
+  }
+}

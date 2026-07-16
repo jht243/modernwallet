@@ -1,0 +1,1014 @@
+[
+  {
+    "page": "https://www.themodernwallet.com/guides/trump-gold-coin/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 0
+    },
+    "top_queries": [],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 0,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "no-traffic"
+    },
+    "verdict": {
+      "label": "no-data",
+      "reason": "Page has no GSC impressions in window \u2014 nothing to lose by rewriting.",
+      "ctr": 0,
+      "impressions": 0,
+      "position": 0,
+      "impressions_trend_30d": "no-traffic",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 26,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.96
+    },
+    "top_queries": [
+      {
+        "query": "illinois medicaid spend down calculator",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 9.67
+      },
+      {
+        "query": "medicaid spend down calculator",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 4.86
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 9,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 2,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 4,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 8.0 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 26,
+      "position": 7.96,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 61,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 42.36
+    },
+    "top_queries": [
+      {
+        "query": "average cost of a will and trust calculator",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 9.33
+      },
+      {
+        "query": "cost of a will",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 96
+      },
+      {
+        "query": "cost of last will and testament",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 53
+      },
+      {
+        "query": "cost to update a will",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 86.33
+      },
+      {
+        "query": "how much does a last will and testament cost",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "query": "how much does a will and testament cost",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 73.5
+      },
+      {
+        "query": "how much does a will cost in nj",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 89
+      },
+      {
+        "query": "how much does it cost to change your will",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 81
+      },
+      {
+        "query": "how much for last will and testament",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "query": "how much is a last will and testament",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 65
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 3,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 5,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 4,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 7,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 9,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 8,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 7,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0% on 61 impressions (avg pos 42.4) \u2014 page is shown but nobody clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 61,
+      "position": 42.36,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/auto-loan/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 276,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 86.68
+    },
+    "top_queries": [
+      {
+        "query": "27000 car loan calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 95
+      },
+      {
+        "query": "35000 car loan calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "query": "50000 auto loan",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "query": "50000 car loan",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 81
+      },
+      {
+        "query": "50000 car loan calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98
+      },
+      {
+        "query": "50000 car loan payment",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "query": "50000 car payment calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "query": "auto apr calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 91
+      },
+      {
+        "query": "auto bank loan calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 84
+      },
+      {
+        "query": "auto caculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 90
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 13,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 31,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 2,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 2,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 4,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 3,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 6,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 41,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 90,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 74,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0% on 276 impressions (avg pos 86.7) \u2014 page is shown but nobody clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 276,
+      "position": 86.68,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/merchant-cash-advance-vs-loan/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 76.43
+    },
+    "top_queries": [
+      {
+        "query": "merchant cash advance vs business loan",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 76.43
+      }
+    ],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 2,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 1,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 2,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 76.4, trend up \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 7,
+      "position": 76.43,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/maryland/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 15.5
+    },
+    "top_queries": [],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 3,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 2,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 1,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 15.5, trend up \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 6,
+      "position": 15.5,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/hawaii/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8
+    },
+    "top_queries": [],
+    "trend": {
+      "daily": [
+        {
+          "date": "2026-06-26",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-27",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-28",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-29",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-06-30",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-01",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-02",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-03",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-04",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-05",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-06",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-07",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-08",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-09",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-10",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-11",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-12",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-13",
+          "impressions": 0,
+          "clicks": 0
+        },
+        {
+          "date": "2026-07-14",
+          "impressions": 1,
+          "clicks": 0
+        }
+      ],
+      "trend_30d": "up"
+    },
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 8.0 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 1,
+      "position": 8,
+      "impressions_trend_30d": "up",
+      "rewrite_recommended": true
+    }
+  }
+]
