@@ -15,9 +15,9 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
     calculator: "elder-care",
     slug: "medicaid-spend-down-calculator",
     islandId: "medicaid-spend-down",
-    title: "Medicaid Spend-Down Calculator: State + Assets + Income",
+    title: "Medicaid Spend-Down Calculator: Your Exact Target by State",
     metaDescription:
-      "Free Medicaid spend-down calculator. See countable assets, spend-down target, CSRA + MMMNA for community spouse, home equity limit, and income cap check by state.",
+      "Get your exact Medicaid spend-down target by state, free. See countable assets, CSRA + MMMNA for your spouse, home equity limit, and income cap check for 2026.",
     targetKeyword: "medicaid spend down calculator",
     estimatedVolume: 5400,
     estimatedKD: 32,
@@ -66,6 +66,11 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
         question: "Can I keep my home on Medicaid?",
         answer:
           "Generally yes if you intend to return home or a spouse/dependent lives there. The home is exempt regardless of value if a community spouse resides. If single, home equity is exempt up to your state's limit — $752,000 in 38 states (federal minimum), $1,130,000 in the 12 max-limit states (Alabama, California, Colorado, Connecticut, Hawaii, Maine, Massachusetts, New Jersey, New York, Tennessee, Washington, plus D.C.). Equity above the limit blocks Medicaid unless a HELOC or spousal transfer reduces it. After death, Medicaid Estate Recovery under 42 U.S.C. §1396p(b) can claim against the home unless a protected transfer (life estate deed 5+ years before, ladybird deed in eligible states, or transfer to caretaker child) applies.",
+      },
+      {
+        question: "Is Medicaid spend-down a one-time requirement, or does it repeat every month?",
+        answer:
+          "It depends on which spend-down applies to you. Asset spend-down — reducing countable assets below your state's resource limit (and below the CSRA, if married) — is a one-time threshold: once countable assets are under the limit, you don't spend down again. The calculator's asset and marital-status inputs above compute that one-time target. Income spend-down works differently. In medically-needy states (the states without a hard income cap), Medicaid compares monthly income to the state's Medically Needy Income Level (MNIL) — as low as $100/month in Louisiana, as high as $1,842/month in New York — and any income above MNIL must be spent on medical costs each month, sometimes called a 'share of cost.' Because it's tied to ongoing income rather than a one-time asset balance, this income spend-down recurs every month (or every eligibility period the state uses), not just once. In the roughly 20 income-cap states, income above the $2,982/month cap isn't spent down at all — it's redirected each month into a Miller Trust instead. Either way, if your state uses income-based eligibility, plan for a recurring monthly process on top of — not instead of — the one-time asset spend-down shown above.",
       },
     ],
     sources: [

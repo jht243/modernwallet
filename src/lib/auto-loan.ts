@@ -179,3 +179,75 @@ export function computeAutoLoan(input: AutoLoanInput): AutoLoanResult {
 function round2(n: number): number {
   return Math.round(n * 100) / 100;
 }
+
+// ---- Refinance comparison (auto loan refinance calculator spoke) ----
+//
+// Compares keeping the current loan for its remaining term against refinancing the same
+// outstanding balance into a new loan. Built entirely on the amortization primitives above
+// (monthlyPayment + amortize) — no separate math path.
+
+export interface RefinanceInput {
+  /** Outstanding balance on the loan being refinanced. */
+  currentBalance: number;
+  /** APR on the existing loan. */
+  currentApr: number;
+  /** Months remaining on the existing loan if it were kept as-is. */
+  remainingMonths: number;
+  /** APR offered on the new (refinance) loan. */
+  newApr: number;
+  /** Term, in months, of the new loan. */
+  newTermMonths: number;
+}
+
+export interface RefinanceResult {
+  /** Scheduled payment if you keep the current loan for its remaining term. */
+  currentMonthlyPayment: number | null;
+  /** Total interest left to pay if you keep the current loan for its remaining term. */
+  currentRemainingInterest: number | null;
+  /** Scheduled payment on the new (refinanced) loan. */
+  newMonthlyPayment: number | null;
+  /** Total interest over the full life of the new loan. */
+  newTotalInterest: number | null;
+  /** New payment minus current payment (negative = payment goes down). */
+  monthlyPaymentChange: number | null;
+  /** Current remaining interest minus new total interest (positive = refinancing saves interest). */
+  interestSavings: number | null;
+}
+
+const EMPTY_REFI: RefinanceResult = {
+  currentMonthlyPayment: null,
+  currentRemainingInterest: null,
+  newMonthlyPayment: null,
+  newTotalInterest: null,
+  monthlyPaymentChange: null,
+  interestSavings: null,
+};
+
+export function computeAutoRefinance(input: RefinanceInput): RefinanceResult {
+  const balance = input.currentBalance > 0 ? input.currentBalance : null;
+  const currentApr = input.currentApr >= 0 ? input.currentApr : null;
+  const remainingMonths = input.remainingMonths > 0 ? Math.round(input.remainingMonths) : null;
+  const newApr = input.newApr >= 0 ? input.newApr : null;
+  const newTermMonths = input.newTermMonths > 0 ? Math.round(input.newTermMonths) : null;
+
+  if (balance == null || currentApr == null || remainingMonths == null || newApr == null || newTermMonths == null) {
+    return { ...EMPTY_REFI };
+  }
+
+  // Current loan: what's left to pay if you keep it, amortized to $0 over the remaining term.
+  const currentPI = monthlyPayment(balance, currentApr, remainingMonths);
+  const currentAmort = amortize(balance, currentApr, currentPI, 0);
+
+  // New loan: the same balance refinanced at the new rate/term.
+  const newPI = monthlyPayment(balance, newApr, newTermMonths);
+  const newAmort = amortize(balance, newApr, newPI, 0);
+
+  return {
+    currentMonthlyPayment: round2(currentPI),
+    currentRemainingInterest: round2(currentAmort.totalInterest),
+    newMonthlyPayment: round2(newPI),
+    newTotalInterest: round2(newAmort.totalInterest),
+    monthlyPaymentChange: round2(newPI - currentPI),
+    interestSavings: round2(currentAmort.totalInterest - newAmort.totalInterest),
+  };
+}

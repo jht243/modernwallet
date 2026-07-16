@@ -36,3 +36,10 @@
 | /elder-care/ | 2026-07-13 | 1 | 0/1/0/0/0 | 1 |
 | /guides/how-to-choose-a-financial-advisor | 2026-07-14 | 1 | 0/4/1/0/0 | 0 |
 | /portfolio/60-40-portfolio-calculator/ | 2026-07-14 | 1 | 2/1/1/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-07-16 | 6 | 0/0/3/0/0 | 0 |
+| /elder-care/medicaid-spend-down-calculator/ | 2026-07-16 | 5 | 0/0/1/1/0 | 0 |
+| /estate-planning/will-cost-calculator/ | 2026-07-16 | 2 | 0/0/0/1/0 | 0 |
+| /estate-planning/will-cost-calculator/maryland/ | 2026-07-16 | 2 | 0/0/0/0/0 | 0 |
+| /auto-loan/ | 2026-07-16 | 1 | 1/0/2/1/0 | 0 |
+| /compare/merchant-cash-advance-vs-loan/ | 2026-07-16 | 1 | 0/1/0/0/0 | 0 |
+| /elder-care/medicaid-spend-down-calculator/hawaii/ | 2026-07-16 | 1 | 0/0/0/0/0 | 1 |

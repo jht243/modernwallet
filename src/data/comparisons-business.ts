@@ -516,4 +516,93 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
       { label: "Business line of credit calculator", href: "/business-line-of-credit/" },
     ],
   },
+
+  // ─── Merchant Cash Advance vs Revenue-Based Financing (ga4-top-pages pass 2026-07-16) ──
+  {
+    slug: "merchant-cash-advance-vs-revenue-based-financing",
+    title: "Merchant Cash Advance vs Revenue-Based Financing",
+    metaDescription:
+      "Merchant cash advance vs revenue-based financing: MCA sells receivables at a factor rate; RBF repays a % of revenue to a cap. Compare structure and cost.",
+    targetKeyword: "merchant cash advance vs revenue based financing",
+    optionA: "Merchant Cash Advance",
+    optionB: "Revenue-Based Financing",
+    segment: "Business Financing",
+    h1: "Merchant Cash Advance vs Revenue-Based Financing: What's the Difference?",
+    intro:
+      "Merchant cash advance vs revenue-based financing comes down to how the repayment actually moves: an MCA sells a slice of your future receivables for a fixed daily or weekly debit set at signing, while revenue-based financing (RBF) is a financing agreement repaid as a percentage of your actual monthly revenue until a pre-agreed repayment cap is reached. Both structures set a fixed total cost upfront instead of charging a standard interest rate, but they are not the same product. An MCA is priced with a factor rate and leans on card and bank-deposit history; RBF is priced with a repayment-cap multiple and often leans on recurring revenue metrics like monthly recurring revenue (MRR), which is why it shows up more often at SaaS, subscription, and ecommerce companies than at card-heavy retail shops.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Legal structure", a: "Sale of future receivables (not a loan in most states)", b: "Typically a loan or financing agreement; some providers structure it as a revenue-share purchase" },
+        { dimension: "Cost measure", a: "Factor rate (fixed multiplier, e.g. 1.30) — not an APR", b: "Repayment cap — a fixed multiple of the amount funded (commonly cited around 1.3x-3x)" },
+        { dimension: "Repayment structure", a: "Fixed daily or weekly holdback amount set at signing", b: "Recalculated monthly as a set percentage of that month's actual revenue" },
+        { dimension: "Cost transparency", a: "Factor rate hides the effective APR; some states now require APR-style disclosure", b: "Repayment cap is stated upfront, but it still is not a standardized APR" },
+        { dimension: "Typical qualifying business", a: "Card-heavy retail, restaurants, and service businesses with daily sales volume", b: "Recurring-revenue businesses — SaaS, subscription, and ecommerce brands with predictable monthly revenue" },
+        { dimension: "Speed of funding", a: "Often 1-3 business days", b: "Roughly 1-4 weeks for underwriting at most providers; some ecommerce-focused lenders review in about 24 hours" },
+        { dimension: "Collateral / personal guarantee", a: "Often required on larger advances, plus a UCC lien on business assets", b: "Commonly none — many RBF providers advertise no personal guarantee and no equity dilution" },
+      ],
+    },
+    verdict:
+      "Choose a merchant cash advance when you run a card-swipe business — retail, restaurant, or service — that needs cash in a day or two and can absorb a fixed daily debit regardless of how sales move that week. Choose revenue-based financing when your revenue is recurring and trackable, such as SaaS or subscription billing, and you would rather have a payment that shrinks in a slow month and grows in a strong one, in exchange for a slower underwriting process. Both cap your total cost upfront, so ask any provider — MCA or RBF — for the exact repayment cap or factor rate before you sign, since the headline pitch rarely tells you the real number.",
+    sections: [
+      {
+        heading: "A merchant cash advance is a receivables sale with a fixed daily debit",
+        content:
+          "A merchant cash advance is legally a purchase of your future sales, not a loan, and its repayment amount is fixed at signing rather than tied precisely to how revenue moves that month. A 1.30 factor rate on a $50,000 advance means you owe $65,000 total — a $15,000 fee that does not shrink no matter how fast you repay. That $65,000 is then split into a daily or weekly holdback, often several hundred dollars a day, debited automatically from your card batches or bank account. The [Federal Reserve's Small Business Credit Survey](https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms) describes MCAs as a nonbank product usually under $100,000, repaid as a percentage of sales rather than in a single fixed dollar figure — but in practice, most providers set that percentage into a fixed daily amount at signing, and it does not automatically renegotiate down the moment a slow week hits. Model your own payback with the [merchant cash advance calculator](/merchant-cash-advance/).",
+      },
+      {
+        heading: "Revenue-based financing repays as a moving percentage of revenue, up to a cap",
+        content:
+          "Revenue-based financing repays through a fixed percentage of your actual monthly revenue, recalculated each period, until you hit a pre-agreed repayment cap. [Clearco](https://www.clear.co/), an RBF provider focused on ecommerce brands, describes the typical structure as a pre-agreed repayment cap without interest, commonly ranging from about 1.3x to 3x the original amount funded — the total cost is bounded, but unlike an MCA's flat daily debit, the actual monthly payment moves with revenue. [Lighter Capital](https://www.lightercapital.com/), an RBF lender focused on technology and SaaS companies, underwrites primarily against recurring revenue — it typically looks for around $200,000 in annual recurring revenue or $15,000 in monthly recurring revenue from a diversified customer base, rather than card-swipe or bank-deposit history. Most RBF providers also advertise no personal guarantee and no equity dilution, since the financing is not a claim on ownership.",
+      },
+      {
+        heading: "Where the two structures genuinely diverge",
+        content:
+          "The core divide is what the repayment amount is actually pegged to. An MCA's daily or weekly debit is set once, at signing, and generally stays fixed even as your sales fluctuate day to day. RBF's monthly payment is explicitly recalculated against that month's real revenue, so it is designed to shrink in a slow month and grow in a strong one. Underwriting diverges the same way: MCA providers look at card and bank-deposit history, which is why they can approve businesses with weak credit or a short operating history, while RBF providers look at recurring-revenue metrics like MRR or ARR, which is why the product fits subscription and ecommerce businesses better than a corner restaurant with no predictable monthly billing.",
+      },
+      {
+        heading: "Non-obvious insight: a bad month hits an MCA harder than it hits RBF",
+        content:
+          "A revenue dip exposes the real structural gap between these two products. Because an MCA's daily holdback is usually fixed in dollar terms at signing, a slow week does not automatically lower what gets debited from your account that week, which is exactly the kind of mismatch the FTC has pursued MCA operators over when withdrawals outpaced what a business could actually afford. RBF's monthly percentage, by contrast, is recalculated against real revenue each period, so a weak month produces a smaller payment by design, not by negotiation. That flexibility is also why RBF's total repayment cap sits alongside a longer, slower underwriting process — providers want more certainty about your recurring revenue before they agree to let the payment move with it.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a merchant cash advance the same as revenue-based financing?",
+        answer:
+          "No. A merchant cash advance is a sale of future receivables repaid through a fixed daily or weekly debit set at signing, while revenue-based financing is typically a loan or financing agreement repaid as a percentage of actual monthly revenue up to a repayment cap. They both avoid a standard interest rate, but the repayment mechanics and underwriting are structurally different.",
+      },
+      {
+        question: "Is a merchant cash advance or revenue-based financing cheaper?",
+        answer:
+          "It depends on the deal, not the category. MCA factor rates commonly run around 1.10 to 1.50, while RBF repayment caps are often cited around 1.3x to 3x the amount funded — the ranges overlap. Ask any provider for the exact factor rate or repayment cap and convert it to an effective cost before comparing, since neither product quotes a standard APR upfront.",
+      },
+      {
+        question: "Does revenue-based financing require good personal credit?",
+        answer:
+          "Usually not as the primary factor. Most RBF providers underwrite against your recurring revenue — metrics like monthly recurring revenue or annual recurring revenue — rather than a personal credit score, and many advertise no personal guarantee. A merchant cash advance instead leans on your card and bank-deposit history, and can still require a personal guarantee on larger advances.",
+      },
+      {
+        question: "Can an ecommerce or SaaS business get a merchant cash advance instead of RBF?",
+        answer:
+          "Technically yes, but the underwriting fit is usually worse. MCA providers evaluate card-swipe or bank-deposit volume, which does not map cleanly onto subscription billing or ecommerce revenue that arrives through platforms like Shopify or Stripe. Revenue-based financing providers are built to underwrite exactly that kind of recurring or platform-based revenue, which is typically the better structural fit.",
+      },
+      {
+        question: "Is revenue-based financing a loan?",
+        answer:
+          "Usually, yes — most revenue-based financing is structured as a loan or debt-like financing agreement, though the exact legal treatment varies by provider and state, and some structure it as a revenue-share purchase instead. Either way, RBF is generally not structured as a sale of receivables the way a merchant cash advance is, which is the key legal difference between the two products.",
+      },
+    ],
+    sources: [
+      { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
+      { label: "CFPB — Small business lending under ECOA (Regulation B)", url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/" },
+      { label: "FTC — Court enters $20.3M judgment against MCA operator for deceiving small businesses", url: "https://www.ftc.gov/news-events/news/press-releases/2024/02/court-enters-203-million-judgment-ftc-case-against-merchant-cash-advance-operator-jonathan-braun" },
+      { label: "Clearco — What Is Revenue-Based Funding and Why Founders Are Choosing Flexible Models", url: "https://www.clear.co/blog/what-is-revenue-based-funding-for-founders" },
+      { label: "Lighter Capital — Startup Financing: How Revenue-Based Financing Works", url: "https://www.lightercapital.com/how-it-works" },
+    ],
+    relatedComparisons: ["merchant-cash-advance-vs-loan", "invoice-factoring-vs-merchant-cash-advance", "factor-rate-vs-interest-rate"],
+    calculatorLinks: [
+      { label: "Merchant cash advance calculator", href: "/merchant-cash-advance/" },
+      { label: "Factor rate calculator", href: "/merchant-cash-advance/factor-rate-calculator/" },
+    ],
+  },
 ];

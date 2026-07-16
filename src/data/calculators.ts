@@ -15,9 +15,9 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "auto-loan",
     label: "Auto Loan",
     navOrder: 1,
-    metaTitle: "Auto & Car Loan Calculator: Estimate Loan Payment",
+    metaTitle: "Auto Loan Calculator: Enter Any Amount, Instant Payment",
     metaDescription:
-      "Use our free auto & car loan calculator to estimate your monthly payment, total interest, and the true cost of financing a vehicle in 2026.",
+      "Enter any car loan amount and APR to see your exact monthly payment instantly. Free auto loan calculator with amortization, refinance tools, and 2026 rates.",
     targetKeyword: "auto loan calculator",
     h1: "Auto Loan Calculator",
     intro:
@@ -54,6 +54,16 @@ export const CALCULATORS: CalculatorDef[] = [
         question: "Can I save money by paying off my car loan early?",
         answer:
           "Yes, paying early reduces the total interest you pay, since interest is charged on your remaining balance. Even small extra payments toward principal can shorten your loan. First, confirm your lender has no prepayment penalty. To run the numbers, use the [pay off car loan early calculator](/auto-loan/early-payoff-calculator/), the [auto loan payoff calculator](/auto-loan/payoff-calculator/), or the [auto loan interest calculator](/auto-loan/interest-calculator/).",
+      },
+      {
+        question: "What's the monthly payment on a $50,000 car loan?",
+        answer:
+          "At 7.5% APR over 60 months with no down payment, a $50,000 car loan costs $1,001.90 a month. Enter $50,000 in the calculator above to see this instantly. Over the full 60 months you would pay $10,113.85 in interest, bringing the total of payments to $60,113.85. A larger down payment or a shorter term both lower that interest cost — try the [auto loan interest calculator](/auto-loan/interest-calculator/) to compare terms side by side.",
+      },
+      {
+        question: "What's the monthly payment on a $27,000 car loan?",
+        answer:
+          "At 7.5% APR over 60 months with no down payment, a $27,000 car loan costs $541.02 a month. Enter $27,000 in the calculator above to check this against your own rate and term. Total interest over the 60 months is $5,461.48, for a total of payments of $32,461.48. If you already have a loan this size and want to see how extra payments would shrink that interest, use the [auto loan extra payment calculator](/auto-loan/extra-payment-calculator/).",
       },
     ],
     sources: [

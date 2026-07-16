@@ -1,4 +1,5 @@
 import AutoLoanCalculator from "./AutoLoanCalculator";
+import AutoRefinanceCalculator from "./AutoRefinanceCalculator";
 import RentalCalculator from "./RentalCalculator";
 import RetirementCalculator from "./RetirementCalculator";
 import InvestmentCalculator from "./InvestmentCalculator";
@@ -36,6 +37,7 @@ import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
 
 const ISLANDS: Record<string, React.ComponentType<any>> = {
   "auto-loan": AutoLoanCalculator,
+  "auto-refinance": AutoRefinanceCalculator,
   // MortgageIQ reuses the auto-loan amortization engine in mortgageMode (home price + 15/30-yr terms).
   "mortgage": AutoLoanCalculator,
   "real-estate": RentalCalculator,

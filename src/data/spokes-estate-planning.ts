@@ -11,9 +11,9 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     calculator: "estate-planning",
     slug: "will-cost-calculator",
     islandId: "will-cost",
-    title: "Will Cost Calculator: What a Will Actually Costs by State",
+    title: "Average Cost of a Will Calculator — 2026 State Prices",
     metaDescription:
-      "Free will cost calculator. See what an attorney-drafted or online will costs in your state, plus power of attorney and healthcare directive.",
+      "Average cost of a will: $300 to $7,500+ attorney-drafted, or as low as $99 online. Free calculator compares your state's price by complexity.",
     targetKeyword: "will cost calculator",
     estimatedVolume: 6400,
     estimatedKD: 38,
