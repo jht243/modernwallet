@@ -130648,11 +130648,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/learn/concentrated-stock-risk": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:1dd86e71892a62cd1c12b59360277117597b4213a72682d3921ceb22c48f47d3",
+          "disposition": "published",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-07-16T00:00:00-07:00",
+          "our_url": "/guides/concentrated-stock-position-risk/",
           "outline": [
             "Understand how much company equity you have and what the risk is",
             "Evaluate the full picture of your current finances and what\u2019s ahead",
@@ -130662,7 +130666,7 @@
             "investing",
             "net worth"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What to Do When Too Much of Your Net Worth Is in One Stock - NerdWallet",
           "tool_io": []
         },
@@ -190350,11 +190354,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/car-interest": {
+          "acted": false,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:386b069bb4fb9c5be70775d886921622a00908d100e8d828e5a6d2a02b2c914a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-17",
           "kind": "tool",
           "last_seen": "2026-07-17",
           "lastmod": "2026-07-16T16:56:42.881Z",
+          "our_url": "/auto-loan/interest-calculator/",
           "outline": [
             "How to calculate the car loan interest",
             "How to calculate interest rate on a car loan",
@@ -190375,7 +190383,7 @@
             "payment",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Car Interest Calculator",
           "tool_io": [
             "label: Interest rate",
@@ -271737,11 +271745,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/portfolio-risk": {
+          "acted": false,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:0e505b7b96003a31f462e936bce007a3aea767d32ef0d7f8dd5488fd140af7bf",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:00:28+00:00",
+          "our_url": "/portfolio/portfolio-risk-calculator/",
           "outline": [
             "Assessing the Types of Risk",
             "Asset Risk",
@@ -271757,7 +271769,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Assess and Mitigate Portfolio Risk",
           "tool_io": []
         },
@@ -272179,11 +272191,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/real-estate-investment-basics": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:774bc40f8a6dcb7023464501c20ef0a414e1ad79d81dd65b629ab244d63bb875",
+          "disposition": "published",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:48:39+00:00",
+          "our_url": "/guides/real-estate-investment-options/",
           "outline": [
             "Real Estate Investment Basics",
             "Real Estate Investment Options",
@@ -272201,7 +272217,7 @@
             "investment",
             "rental"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Everything You Ever Wanted to Know About Real Estate Investing",
           "tool_io": []
         },
@@ -275127,11 +275143,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/what-to-do-with-inheritance": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:e86c0653c906d97d256edb201a22f64a24f1bea32215cf4932304ae271983b34",
+          "disposition": "published",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:08:23+00:00",
+          "our_url": "/guides/what-to-do-with-an-inheritance/",
           "outline": [
             "4 Options for What to Do With an Inheritance",
             "1. Pay Down Debt and Bolster Emergency Savings",
@@ -275151,7 +275171,7 @@
             "savings",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What to Do With an Inheritance",
           "tool_io": []
         },
@@ -282414,11 +282434,15 @@
           "tool_io": []
         },
         "https://smartasset.com/investing/how-much-interest-does-10000-earn-in-a-year": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:d9fec37e8ce66468502ef98072437b308ca2f6e2656854929ca506c4c2051c46",
+          "disposition": "enriched",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T16:27:16+00:00",
+          "our_url": "/guides/money-market-account/",
           "outline": [
             "Considerations to Maximize the Interest You Can Earn",
             "Interest-Bearing Investment Options",
@@ -282440,7 +282464,7 @@
             "investment",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Interest Does $10,000 Earn in a Year?",
           "tool_io": []
         },
@@ -291408,11 +291432,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/what-is-an-ipo": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:d98d842c2c3f1bab277247b859ea776609fad6c6c5799affb8032a74f3b63c8f",
+          "disposition": "published",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:42:12+00:00",
+          "our_url": "/guides/what-is-an-ipo/",
           "outline": [
             "Private vs. Public Companies",
             "How to Take a Business Public",
@@ -291425,7 +291453,7 @@
           "relevance_hits": [
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is an IPO?",
           "tool_io": []
         },
@@ -304595,11 +304623,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/can-i-retire-at-50-with-875k-in-401k-and-5000-in-monthly-expenses": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:678edabbd3d97ec1e326d78c9e52e8351591e5fc6d15a79c34cd7944c364e5f6",
+          "disposition": "enriched",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T12:30:00+00:00",
+          "our_url": "/retirement/early-retirement-calculator/",
           "outline": [
             "Create a Budget to Estimate a Retirement Date",
             "Estimate Your Social Security and Returns",
@@ -304614,7 +304646,7 @@
             "financial",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "I&#x27;m 50 With $875k in My 401(k) and $5,000 in Monthly Expenses. When&#x27;s the Soonest I Can Retire?",
           "tool_io": []
         },
@@ -307320,11 +307352,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/how-to-save-1-million-dollars": {
+          "acted": true,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:0526c2571b5f0533e75c04bdf99b4783e707b750fe76e5e474d577a132627ebc",
+          "disposition": "enriched",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:33:12+00:00",
+          "our_url": "/investing/savings-goal-calculator/",
           "outline": [
             "How to Save $1 Million Dollars",
             "Start Early and Think About Compound Interest",
@@ -307342,7 +307378,7 @@
             "investment",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Save $1 Million Dollars",
           "tool_io": []
         },
@@ -319122,11 +319158,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/who-pays-taxes-on-a-custodial-account": {
+          "acted": false,
+          "acted_date": "2026-07-17",
           "content_hash": "sha256:4cd298811ae0a0afa50c901e96000ccec8fdcb9e6d772dae3350bf01837a187d",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-17",
           "kind": "page",
           "last_seen": "2026-07-17",
           "lastmod": "2026-02-13T20:05:11+00:00",
+          "our_url": "/guides/custodial-account-taxes-kiddie-tax/",
           "outline": [
             "What Is a Custodial Account?",
             "Types of Income Earned in a Custodial Account",
@@ -319145,7 +319185,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Who Pays Taxes on a Custodial Account?",
           "tool_io": []
         },
