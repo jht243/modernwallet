@@ -19,7 +19,7 @@ Read these files when you reach each step. Do not paraphrase.
 If any check fails, **skip the run** and email a failure report. Do not commit, do not push.
 
 1. **Working tree clean** — `git status --porcelain` empty.
-2. **Branch is committable (NOT required to be `main`).** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit + push the current branch with `git push origin HEAD`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Any `git reset` uses `HEAD`, never `origin/main`. Resend key resolves from `$RESEND_API_KEY` (env) or `~/.claude/secrets.env`; if absent, skip email but still complete + push.
+2. **Branch is committable; deploy target is `main`.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit on the current branch, then deploy to `main` with `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Any `git reset` uses `HEAD`, never `origin/main`. Resend key resolves from `$RESEND_API_KEY` (env) or `~/.claude/secrets.env`; if absent, skip email but still complete + push.
 3. **Miner script present** — `.claude/tools/autocomplete-paa/autocomplete.py` exists and is executable.
 4. **Resend secrets present** in `~/.claude/secrets.env`.
 

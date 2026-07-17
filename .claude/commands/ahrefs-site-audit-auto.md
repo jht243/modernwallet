@@ -12,7 +12,7 @@ argument-hint: "[optional Ahrefs site-audit project ID — auto-discovers by BAS
 ## Hard pre-flight checks (FIRST)
 
 1. **Working tree clean** — `git status --porcelain` empty.
-2. **Branch is committable (NOT required to be `main`).** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit + push the current branch with `git push origin HEAD`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Resend key resolves from `$RESEND_API_KEY` (env) or `~/.claude/secrets.env`; if absent, skip email but still complete + push.
+2. **Branch is committable; deploy target is `main`.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit on the current branch, then deploy to `main` with `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Resend key resolves from `$RESEND_API_KEY` (env) or `~/.claude/secrets.env`; if absent, skip email but still complete + push.
 3. **Ahrefs MCP available** — verify the `mcp__*__site-audit-issues` tool is callable. If not → skip, email failure ("Ahrefs MCP not connected — enable it in the Claude Code MCP config").
 4. **Resend secrets present** in `~/.claude/secrets.env`.
 

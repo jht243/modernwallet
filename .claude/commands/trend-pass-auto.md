@@ -11,7 +11,7 @@ argument-hint: "(no arguments — fully autonomous)"
 
 ## Hard pre-flight (FIRST) — any failure → email failure, exit 0, no commit
 1. **Working tree clean** for your files (`git status --porcelain`); if the tree has unrelated dirty files from other crons, DO NOT touch them — stage only your own trend-pass files by pathspec.
-2. **Branch committable** (cloud `claude/*` branch expected). "push" = `git push origin HEAD` (the trigger may override to publish to main).
+2. **Branch committable** (cloud `claude/*` branch expected). "push" = `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (this deploys straight to `main` — intended, no approval needed).
 3. **GSC credentials** present (`$GOOGLE_REPORTING_SA_JSON` / SA file). Missing → email failure.
 4. **Ledgers exist** (`reports/trend-pass/trends.md` + `ledger.md`). Missing → email failure.
 5. **Resend secrets** best-effort: present → email; absent → do the work, print report, skip email only.

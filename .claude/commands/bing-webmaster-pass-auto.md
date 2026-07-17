@@ -14,11 +14,11 @@ This is a thin orchestrator. The full workflow lives in `.claude/commands/bing-w
 If any fails, **skip the run** and email a failure report. Do not commit, do not push.
 
 1. **Working tree clean** — `git status --porcelain` empty.
-2. **Branch is committable (NOT required to be `main`).** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit + push the current branch with `git push origin HEAD`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Any `git reset` uses `HEAD`.
+2. **Branch is committable; deploy target is `main`.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit on the current branch, then deploy to `main` with `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Any `git reset` uses `HEAD`.
 3. **Bing helper + key.** `.claude/scripts/bing_webmaster.py` exists and `python3 .claude/scripts/bing_webmaster.py sites` returns a JSON list (key resolves from `$BING_WEBMASTER_API_KEY` env or `.claude/secrets.env`). If the key is missing or returns 401/403 → skip, email failure ("Bing API key missing/invalid — add BING_WEBMASTER_API_KEY").
 4. **Resend key** resolves (env or `.claude/secrets.env`). If absent, still do the work; skip only the email.
 
-> **Git + secrets model (cloud-safe).** Commit on the current branch, push with `git push origin HEAD`. All file writes stay INSIDE the workspace. Secrets resolve from env vars or workspace-local `.claude/secrets.env` — never write to `~/.claude` (outside the workspace → permission prompt that hangs the run). The Bing helper reads `BING_WEBMASTER_API_KEY` the same way.
+> **Git + secrets model (authorized deploy path = `main`).** This repo auto-deploys from `main`, so publishing this run's commit to `main` is the intended behavior and needs **no human approval**. Commit on the current branch, push with `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (retry the rebase up to 3×; on an unresolved conflict, push the ephemeral branch and email a manual-merge note instead of force-pushing `main`). All file writes stay INSIDE the workspace. Secrets resolve from env vars or workspace-local `.claude/secrets.env` — never write to `~/.claude` (outside the workspace → permission prompt that hangs the run). The Bing helper reads `BING_WEBMASTER_API_KEY` the same way.
 
 ## Execution
 
@@ -39,7 +39,7 @@ The skill's own blast-radius caps (40 link/href edits, 15 sitemap-entry changes)
 
 ## Push + submit
 
-Follow the skill's commit → push → Bing-submit steps, but push the **current branch** (`git push origin HEAD`). Submit only the URLs actually changed this run, within Bing's `urlSubmissionQuota`.
+Follow the skill's commit → push → Bing-submit steps, deploying to `main` (`git fetch origin main && git rebase origin/main && git push origin HEAD:main`). Submit only the URLs actually changed this run, within Bing's `urlSubmissionQuota`.
 
 ## Email report (ALWAYS sent — success, failure, or no-changes)
 

@@ -16,18 +16,18 @@ This is a thin orchestrator. It does **not** duplicate the reused phase instruct
 3. **Dedup FIRST** — drop anything this project already covers **before** spending any AI credits on generation.
 4. **Generate** an **original, improved** improved version of each surviving competitor page, using the competitor's coverage + structure as the **minimum floor** (never copied), via the **same** content-generation guide + adversarial audit as the keyword-gap pass.
 5. **Auto-build** an improved version of any competitor **tool/calculator** as a real interactive tool.
-6. **Audit → publish live** (commit + `git push origin HEAD` + IndexNow) and **email a digest with clickable live links** to every published page/tool.
+6. **Audit → publish live** (commit + `git fetch origin main && git rebase origin/main && git push origin HEAD:main` + IndexNow) and **email a digest with clickable live links** to every published page/tool.
 
 ## Hard pre-flight checks (do these FIRST, before Phase 0)
 
 If any check fails, **skip the run** and email a failure report explaining why. Do not commit, do not push.
 
 1. **Working tree clean.** `git status --porcelain` must be empty → else skip + email failure ("Working tree dirty").
-2. **Branch committable (NOT required to be `main`).** `git rev-parse --abbrev-ref HEAD`. Cloud routines run on an ephemeral `claude/*` branch — that is the **expected** case; commit + push THAT branch. The ONLY abort is detached HEAD. Never abort merely because the branch is not `main`. Throughout, "push" means `git push origin HEAD`.
+2. **Branch committable; deploy target is `main`.** `git rev-parse --abbrev-ref HEAD`. Cloud routines run on an ephemeral `claude/*` branch — that is the **expected** case; commit on that branch, then deploy to `main`. The ONLY abort is detached HEAD. Never abort merely because the branch is not `main`. Throughout, "push" means `git fetch origin main && git rebase origin/main && git push origin HEAD:main`.
 3. **Python available.** `python3 --version` must succeed (the scraper needs it) → else skip + email failure.
 4. **Resend secrets (best-effort, NOT a gate).** Check `$RESEND_API_KEY` (env) or `.claude/routines.config` / `.claude/secrets.env`. If absent, do the full run and push anyway; just skip the email and print the report to stdout.
 
-> **Git model (cloud-safe).** Commit on the **current branch**, push with `git push origin HEAD`. MUST NOT create a new branch and MUST NOT `git checkout main`. When delegating to `comparison-content-creator/phase-5-publish.md`, override its "create/switch to a working branch" step: stay on the current branch and commit there.
+> **Git model (authorized deploy path = `main`).** This repo auto-deploys from `main`, so publishing this run's commit to `main` is the intended behavior and needs **no human approval**. Commit on the **current branch**, push with `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (retry the rebase up to 3×; on an unresolved conflict, push the ephemeral branch and email a manual-merge note instead of force-pushing `main`). MUST NOT create a new branch and MUST NOT `git checkout main`. When delegating to `comparison-content-creator/phase-5-publish.md`, override its "create/switch to a working branch" step: stay on the current branch and commit there.
 
 ## Volume
 
@@ -61,7 +61,7 @@ Apply top to bottom; first match wins.
 | All candidates DUPLICATE after Phase 2 | record dispositions, commit ledger, no content | `no-changes` |
 | Phase 5 typecheck/build failed | `git reset --hard HEAD~1`, no push | `failure` |
 | Phase 4 marked **every** generated page/tool `draft: true` | leave draft commit unpushed | `failure` |
-| ≥1 page/tool shipped non-draft | `git push origin HEAD` + IndexNow live URLs (skip drafts) + commit ledger | `success` |
+| ≥1 page/tool shipped non-draft | `git fetch origin main && git rebase origin/main && git push origin HEAD:main` + IndexNow live URLs (skip drafts) + commit ledger | `success` |
 
 **Never block on the draft outcome.** Drafts ship as `noindex`, excluded from sitemap/IndexNow — a successful run, not a failure.
 
