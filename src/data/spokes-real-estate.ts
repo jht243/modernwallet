@@ -16,7 +16,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
     estimatedKD: 33,
     h1: "Rental Property Cash Flow Calculator",
     intro:
-      "This rental property cash flow calculator shows the money left over each month after rent pays your mortgage and every operating cost. Cash flow is rental income minus all operating expenses minus debt service. Enter your numbers in the calculator above to find out if a property turns a real monthly profit. The result tells you whether the deal feeds your bank account or drains it.",
+      "This rental property cash flow calculator shows the money left over each month after rent pays your mortgage and every operating cost. Cash flow is rental income minus all operating expenses minus debt service. Enter your numbers in the calculator above to find out if a property turns a real monthly profit. The result tells you whether the deal feeds your bank account or drains it. Landlording is only one way in — see [real estate investment options](/guides/real-estate-investment-options/) for REITs, crowdfunding, short-term rentals, and flipping.",
     howItWorks:
       "The calculator above turns rent and costs into monthly cash flow using a simple formula. It starts with gross rent, then subtracts vacancy loss to get effective gross income. From there it removes operating expenses like taxes, insurance, maintenance, and management to reach net operating income (NOI). Finally it subtracts your loan payment to show monthly cash flow.\n\nYou enter the purchase price, down payment, loan terms, rent, and expense rates. The tool handles the math and returns cash flow, cap rate, cash-on-cash return, and DSCR. Each metric answers a different question about the deal.",
     commonMistakes: [
