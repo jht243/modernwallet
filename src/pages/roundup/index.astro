@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE } from "../../data/site";
+import { ROUNDUPS } from "../../data/roundups";
+
+const canonicalUrl = new URL("/roundup/", Astro.site).toString();
+const entries = ROUNDUPS.filter((r) => !r.draft).sort((a, b) => a.title.localeCompare(b.title));
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Roundups", item: canonicalUrl },
+  ],
+};
+
+const jsonLdItemList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Best-of roundups",
+  url: canonicalUrl,
+  itemListElement: entries.map((r, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: r.title,
+    url: new URL(`/roundup/${r.slug}/`, Astro.site).toString(),
+  })),
+};
+---
+<BaseLayout
+  title={`Best-Of Roundups — ${SITE.name}`}
+  description="Independent best-of roundups of the accounts, apps, and services people actually use — ranked on transparent criteria, no paid placement."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span class="crumb-current">Roundups</span>
+    </nav>
+
+    <header class="hero">
+      <h1>Best-of roundups</h1>
+      <p class="lede">Independent, side-by-side rankings of the accounts, apps, and services people actually use — scored on transparent criteria, with no paid placement.</p>
+    </header>
+
+    <div class="grid">
+      {entries.map((r) => (
+        <a class="rcard" href={`/roundup/${r.slug}/`}>
+          <span class="rcard-cat">{r.category}</span>
+          <span class="rcard-title">{r.title}</span>
+        </a>
+      ))}
+    </div>
+  </main>
+
+  <style>
+    .page { max-width: 1000px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 18px; border-bottom: 1px solid #eee; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.4rem; margin: 0 0 12px; }
+    .lede { font-size: 1.15rem; color: #444; max-width: 720px; line-height: 1.6; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+    .rcard { display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E0EFE9; border-radius: 14px; background: #fff; text-decoration: none; color: var(--text); transition: border-color 120ms ease, transform 120ms ease, box-shadow 120ms ease; }
+    .rcard:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0,0,0,0.12); }
+    .rcard-cat { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary-dark, #0a5c4a); }
+    .rcard-title { font-weight: 600; font-size: 1.02rem; line-height: 1.4; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.9rem; } }
+  </style>
+</BaseLayout>
