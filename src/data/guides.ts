@@ -1450,10 +1450,10 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Why it is a powerful retirement head start",
-        body: "Time is the reason. A dollar invested at 15 has 50 years to compound before a normal retirement age. That is a head start most adults never get.\n\nStarting young also builds the habit. A teen who watches their own account grow learns how investing works before they have real bills.\n\nA custodial Roth is not the only kids' account, and it is not always the right one — it depends on whether the child earns income. Compare it with a flexible custodial account in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/), and with the new federal option in [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/)."
+        body: "Time is the reason. A dollar invested at 15 has 50 years to compound before a normal retirement age. That is a head start most adults never get.\n\nStarting young also builds the habit. A teen who watches their own account grow learns how investing works before they have real bills.\n\nA custodial Roth is not the only kids' account, and it is not always the right one — it depends on whether the child earns income. Compare it with a flexible custodial account in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/), with the new federal option in [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/), and with the pre-tax alternative in [custodial Roth IRA vs Traditional IRA](/compare/custodial-roth-ira-vs-traditional-ira/)."
       }
     ],
-    tools: [ { href: "/investing/", label: "Investment calculator" } ],
+    tools: [ { href: "/investing/roth-ira-calculator/", label: "Roth IRA calculator" } ],
     faqs: [
       {
         question: "Can I open a custodial Roth IRA for a child with no income?",

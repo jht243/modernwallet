@@ -43,3 +43,5 @@
 | /auto-loan/ | 2026-07-16 | 1 | 1/0/2/1/0 | 0 |
 | /compare/merchant-cash-advance-vs-loan/ | 2026-07-16 | 1 | 0/1/0/0/0 | 0 |
 | /elder-care/medicaid-spend-down-calculator/hawaii/ | 2026-07-16 | 1 | 0/0/0/0/0 | 1 |
+| /guides/custodial-roth-ira-for-kids/ | 2026-07-18 | 4 | 0/1/1/0/0 | 0 |
+| /roundup/best-retirement-accounts-for-self-employed/ | 2026-07-18 | 1 | 0/0/0/0/0 | 0 |

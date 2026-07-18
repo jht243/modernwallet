@@ -2199,7 +2199,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
     ],
-    relatedComparisons: ["529-vs-roth-ira", "custodial-roth-ira-vs-utma", "529-vs-utma"],
+    relatedComparisons: ["529-vs-roth-ira", "custodial-roth-ira-vs-utma", "529-vs-utma", "custodial-roth-ira-vs-traditional-ira"],
     calculatorLinks: [
       { label: "529 savings calculator", href: "/529-savings-calculator/" },
       { label: "Investment calculator", href: "/investing/" },
@@ -2244,7 +2244,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Topic 553, Kiddie Tax (child's unearned income)", url: "https://www.irs.gov/taxtopics/tc553" },
       { label: "SEC Investor.gov — UGMA/UTMA custodial accounts", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
     ],
-    relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma", "custodial-roth-ira-vs-brokerage-account"],
+    relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma", "custodial-roth-ira-vs-brokerage-account", "custodial-roth-ira-vs-traditional-ira"],
     calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
   },
 
@@ -2328,8 +2328,93 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Topic No. 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
     ],
-    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma"],
+    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira"],
     calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
+  },
+
+  // ─── Custodial Roth IRA vs Traditional IRA (ga4-top-pages pass 2026-07-18) ──
+  {
+    slug: "custodial-roth-ira-vs-traditional-ira",
+    title: "Custodial Roth IRA vs Traditional IRA for Kids",
+    metaDescription:
+      "Custodial Roth IRA vs Traditional IRA: both need earned income, but a minor's deduction is often worth $0 while the Roth's growth is tax-free forever.",
+    targetKeyword: "custodial roth ira vs traditional ira",
+    optionA: "Custodial Roth IRA",
+    optionB: "Custodial Traditional IRA",
+    segment: "Kids & family investing",
+    h1: "Custodial Roth IRA vs Traditional IRA: Which Is Better for Your Child?",
+    intro:
+      "A custodial Roth IRA beats a custodial Traditional IRA for almost every working child, because a minor's low earned income already erases most or all of the Traditional IRA's upfront tax deduction, while the Roth's decades of tax-free growth remain fully intact. Both accounts share the same earned-income rule and the same 2025 contribution ceiling — the lesser of the child's earned income or $7,000. The real difference is what happens to the money later: a custodial Roth IRA is funded with after-tax dollars and never taxed again, while a custodial Traditional IRA is funded with a deduction that is often worth close to nothing to a low-earning teen, then taxed as ordinary income decades later.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Earned income required?", a: "Yes — child must have documented earned income", b: "Yes — same earned-income rule applies" },
+        { dimension: "Contribution limit (2025)", a: "Lesser of earned income or $7,000", b: "Lesser of earned income or $7,000 (shared cap if split across both)" },
+        { dimension: "Tax treatment of contributions", a: "After-tax; no deduction", b: "Pre-tax; deductible — but often worth $0 for a low-earning minor" },
+        { dimension: "Tax treatment at withdrawal", a: "Qualified withdrawals 100% tax-free", b: "Entire withdrawal taxed as ordinary income" },
+        { dimension: "Required minimum distributions", a: "None during the owner's lifetime", b: "Starting at age 73" },
+        { dimension: "Early access to contributions", a: "Contributions withdrawable anytime, tax- and penalty-free", b: "Withdrawals before 59½ generally taxed plus a 10% penalty" },
+        { dimension: "Best for", a: "Nearly every working child", b: "A rare edge case — a teen already past their standard deduction" },
+      ],
+    },
+    verdict:
+      "Open the custodial Roth IRA, not the Traditional IRA, for almost every working child. A minor's earned income is usually low enough that the dependent standard deduction already erases their tax bill before an IRA deduction even applies — under [IRS rules](https://www.irs.gov/taxtopics/tc551), a dependent's standard deduction rises dollar-for-dollar with earned income (plus $450, capped at the regular filing-status amount), so a teen earning up to the $7,000 IRA ceiling typically owes $0 federal income tax already. That makes the Traditional IRA's core benefit — a deduction against tax you would otherwise owe — worth close to nothing today, while its downside — ordinary-income tax on 100% of the withdrawal decades later — is real. The Roth flips both of those: no deduction to give up today, and zero tax on decades of growth later. Compare the Roth against other kids' accounts in [custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/) and [custodial Roth IRA vs 529](/compare/custodial-roth-ira-vs-529/), or start with the full [custodial Roth IRA for kids guide](/guides/custodial-roth-ira-for-kids/).",
+    sections: [
+      {
+        heading: "The earned-income rule applies to both accounts",
+        content:
+          "A custodial Traditional IRA is not easier to qualify for than a custodial Roth IRA — both require the same thing. The child must have [documented earned income](/guides/custodial-roth-ira-for-kids/) for the year, and the contribution is capped at the lesser of that income or the annual IRA limit, $7,000 in 2025. A newborn or a child with no job cannot fund either account.\n\nThe two accounts also share the same total contribution ceiling. If a family splits contributions between a Roth and a Traditional IRA for the same child in the same year, the combined total across both accounts still cannot exceed the child's earned income or $7,000, whichever is lower — the same rule that applies when an adult holds both account types.",
+      },
+      {
+        heading: "Why the Traditional IRA's deduction is usually worth $0 to a minor",
+        content:
+          "A Traditional IRA's main selling point is the upfront tax deduction: money you contribute lowers your taxable income for the year. That math works differently for a working teen than it does for an adult.\n\nUnder IRS Publication 501, a dependent's standard deduction equals the greater of $1,350 or the child's earned income plus $450, capped at the regular single-filer standard deduction. In practice, that means a teen's standard deduction rises dollar-for-dollar with their paycheck. A teen earning $7,000 — the maximum a Traditional IRA contribution could even offset — already has a standard deduction covering that entire amount before an IRA deduction is applied on top of it.\n\nThe result: most working teens owe $0 in federal income tax on their earnings already, with or without a Traditional IRA contribution. The deduction has nothing left to reduce.",
+      },
+      {
+        heading: "The Roth's tax-free decades outlast the Traditional IRA's deferred bill",
+        content:
+          "A custodial Roth IRA is funded with after-tax dollars, so there is no deduction to give up — the child was likely paying $0 in tax on that income anyway. In exchange, every dollar of growth and every qualified withdrawal in retirement comes out completely tax-free.\n\nA custodial Traditional IRA defers the tax bill instead of erasing it. Contributions grow tax-deferred, but the entire balance — original contributions plus decades of growth — is taxed as ordinary income when withdrawn in retirement. For an account that could compound for 50 years or more, that tax bill lands on a very large number.\n\nThe two accounts also treat mandatory withdrawals differently. A Roth IRA has no required minimum distributions during the original owner's lifetime. A Traditional IRA forces withdrawals starting at age 73, whether the money is needed or not.",
+      },
+      {
+        heading: "Is there any case where a custodial Traditional IRA makes sense?",
+        content:
+          "Rarely, but not never. A Traditional IRA can make sense if a teen has unusually high earned income for a minor — enough to push past their dependent standard deduction and into a real tax bracket — and the family expects the child's tax rate in retirement to be lower than it is today. That is an uncommon combination for someone decades from retirement.\n\nA more common real-world case: a family that has already maxed a child's Roth IRA for the year using their earned income, and wants to shelter additional pre-tax income if the child's earnings support a second contribution. Even then, most tax preparers point a minor back to the Roth first, precisely because the deduction rarely offsets any real tax bill. When in doubt, run the numbers with a tax professional before choosing Traditional over Roth for a child's account.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can a custodial Traditional IRA be opened for a child?",
+        answer:
+          "Yes. A custodial Traditional IRA follows the same earned-income rule as a custodial Roth IRA — the child must have documented wages or self-employment income, and the contribution is capped at the lesser of that income or $7,000 in 2025.",
+      },
+      {
+        question: "Is a custodial Roth IRA or Traditional IRA better for a child?",
+        answer:
+          "A custodial Roth IRA is better for nearly every working child. A minor's earned income is usually low enough that the standard deduction already erases most or all of their tax bill, so the Traditional IRA's upfront deduction saves little or nothing, while its withdrawals are fully taxed decades later. The Roth gives up nothing today and pays nothing in tax later.",
+      },
+      {
+        question: "Does a child pay taxes on a custodial Traditional IRA contribution?",
+        answer:
+          "No, contributions to a Traditional IRA are not taxed in the year they go in — that is the deduction. But because most working teens already owe close to $0 in federal income tax on modest earnings, the deduction typically has little practical value in the contribution year.",
+      },
+      {
+        question: "Can a child have both a custodial Roth IRA and a custodial Traditional IRA?",
+        answer:
+          "Yes, but the combined contributions across both accounts in the same year still cannot exceed the child's earned income or $7,000 (2025), whichever is lower — the same shared limit that applies to an adult holding both account types.",
+      },
+      {
+        question: "Does a custodial Traditional IRA have required minimum distributions?",
+        answer:
+          "Yes. A Traditional IRA — custodial or not — requires minimum distributions starting at age 73. A custodial Roth IRA has no required minimum distributions during the original owner's lifetime.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Topic No. 551, Standard Deduction", url: "https://www.irs.gov/taxtopics/tc551" },
+      { label: "IRS Publication 501 — Dependents, Standard Deduction, and Filing Information", url: "https://www.irs.gov/publications/p501" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Traditional IRAs", url: "https://www.irs.gov/retirement-plans/traditional-iras" },
+    ],
+    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "custodial-roth-ira-vs-brokerage-account", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [ { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" } ],
   },
 
   {
