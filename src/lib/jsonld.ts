@@ -31,7 +31,11 @@ export function reviewerPersonSchema(reviewer: Reviewer) {
 }
 
 /** Article schema with named author + publisher + citations. `url` is the canonical page URL.
- *  `reviewedBy` defaults to AUTHOR (current behavior); pass a Reviewer to override on legal pages. */
+ *  A page reviewer (when passed) is surfaced via the visible byline and its own standalone Person
+ *  node (see `reviewerPersonSchema`) — NOT via a `reviewedBy` property here: `reviewedBy` is a
+ *  schema.org property of `WebPage`, not of `Article`/`CreativeWork`, so emitting it on an Article
+ *  fails schema.org validation. The `reviewedBy?` param is accepted for call-site compatibility but
+ *  intentionally not written into the Article node. */
 export function articleSchema(opts: {
   headline: string;
   description: string;
@@ -41,16 +45,6 @@ export function articleSchema(opts: {
   sources?: Source[];
   reviewedBy?: Reviewer;
 }) {
-  const reviewer = opts.reviewedBy;
-  const reviewerNode = reviewer
-    ? {
-        "@type": "Person",
-        name: reviewer.name,
-        ...(reviewer.url && reviewer.url.length > 0 ? { url: reviewer.url } : {}),
-        ...(reviewer.credentials ? { honorificSuffix: reviewer.credentials } : {}),
-      }
-    : { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url };
-
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -61,7 +55,6 @@ export function articleSchema(opts: {
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
     author: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
-    reviewedBy: reviewerNode,
     publisher: {
       "@type": "Organization",
       name: SITE.name,

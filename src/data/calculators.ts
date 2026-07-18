@@ -669,7 +669,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 14,
     metaTitle: "529 Calculator: College Savings Projection",
     metaDescription:
-      "Free 529 calculator: project your college savings balance at age 18, then compare it to the inflated cost of college and see the monthly amount to fully fund it.",
+      "Free 529 calculator: project your college savings balance at age 18, compare it to inflated college costs, and see the monthly amount to fully fund it.",
     targetKeyword: "529 savings calculator",
     h1: "529 Savings Calculator",
     intro:

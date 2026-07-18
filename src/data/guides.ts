@@ -672,7 +672,7 @@ export const GUIDES: Guide[] = [
     slug: "how-to-protect-assets-from-nursing-home",
     title: "How to Protect Assets From Nursing Home Costs",
     metaDescription:
-      "How to protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — consult an elder-law attorney.",
+      "Protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — see an elder-law attorney.",
     h1: "How to Protect Assets From Nursing Home Costs",
     cardBlurb: "Medicaid Asset Protection Trusts, the 5-year lookback, home protection, and CSRA — the legal tools that actually work.",
     intro:
@@ -1214,7 +1214,7 @@ export const GUIDES: Guide[] = [
   {
     slug: "529-qualified-expenses",
     title: "529 Qualified Expenses: What a 529 Can Pay For",
-    metaDescription: "529 qualified expenses include tuition, fees, books, room & board, computers, K-12 tuition up to $20,000/yr, apprenticeships, and up to $10,000 in student loans.",
+    metaDescription: "529 qualified expenses: tuition, fees, books, room & board, computers, K-12 tuition up to $20,000/yr, apprenticeships, and up to $10,000 in student loans.",
     h1: "529 Qualified Expenses: What a 529 Plan Can Pay For Tax-Free",
     cardBlurb: "A plain-English list of what a 529 can and cannot cover tax-free — plus the room & board rule most families miss.",
     intro: "529 qualified expenses are the education costs you can pay from a 529 plan with no federal tax on the earnings. These include college tuition, fees, books, required supplies, room & board (if the student is enrolled at least half-time), and computers or internet used for school. A 529 can also cover K-12 tuition up to $20,000 per year in 2026, registered apprenticeship costs, and up to $10,000 lifetime toward student loans. Spend on anything else and the earnings portion gets hit with income tax plus a 10% penalty. This guide shows exactly what counts, what does not, and the one room & board rule most families miss.",
@@ -1279,7 +1279,7 @@ export const GUIDES: Guide[] = [
   {
     slug: "best-investment-account-for-kids",
     title: "Best Investment Account for Kids (2026 Guide)",
-    metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and learn to layer them.",
+    metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and how to layer them.",
     h1: "The Best Investment Account for Kids: How to Choose (and Layer) Them",
     cardBlurb: "A decision framework across every kid account type — Trump Account, 529, custodial brokerage, custodial Roth IRA — with a clear which-to-pick matrix.",
     intro: "The best investment account for kids is usually not one account — it is a layered stack: the free $1,000 Trump Account seed everyone eligible should claim, a 529 for college, and a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so picking only one leaves money on the table. This guide compares all six main kid account types side by side, then gives you a plain decision rule for which to open first. The non-obvious takeaway: most families should stack accounts, not choose between them.",

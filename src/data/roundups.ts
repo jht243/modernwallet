@@ -957,7 +957,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     slug: "best-money-market-accounts",
     title: "Best Money Market Accounts (Updated July 2026): Top Picks Compared",
     metaDescription:
-      "Compare the best money market accounts for July 2026 by APY, fees, and FDIC coverage. See top-rated picks like Ally, Discover, and UFB Direct for higher-yield savings with check-writing access.",
+      "Compare the best money market accounts for July 2026 by APY, fees, and FDIC coverage. Top picks include Ally, Discover, and UFB Direct for higher yields.",
     targetKeyword: "best money market accounts",
     category: "money market accounts",
     angle: "best",
@@ -1830,7 +1830,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     slug: "best-retirement-accounts-for-self-employed",
     title: "Best Retirement Accounts for Self-Employed (2026)",
     metaDescription:
-      "Compare the best retirement accounts for self-employed in 2026 — Solo 401(k), SEP IRA, SIMPLE IRA, Roth IRA, and more. Find the right account for your tax situation.",
+      "Compare the best retirement accounts for self-employed in 2026: Solo 401(k), SEP IRA, SIMPLE IRA, and Roth IRA. Find the right account for your tax situation.",
     targetKeyword: "best retirement accounts for self employed",
     category: "retirement accounts",
     angle: "best",

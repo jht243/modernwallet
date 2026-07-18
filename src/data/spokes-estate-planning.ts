@@ -284,7 +284,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     islandId: "prenup-cost",
     title: "Prenup Cost Calculator: What a Prenup Costs by State",
     metaDescription:
-      "Free prenup cost calculator. See attorney fees by state for simple, moderate, and complex prenups plus state enforceability rules and independent counsel requirements.",
+      "Free prenup cost calculator: attorney fees by state for simple, moderate, and complex prenups, plus enforceability rules and independent counsel requirements.",
     targetKeyword: "prenup cost calculator",
     estimatedVolume: 3600,
     estimatedKD: 34,

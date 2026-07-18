@@ -178,7 +178,7 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
     calculator: "elder-care",
     slug: "long-term-care-cost-calculator",
     islandId: "long-term-care-cost",
-    title: "Long-Term Care Cost Calculator: Nursing Home, Assisted Living, Home Care",
+    title: "Long-Term Care Cost Calculator: Nursing Home & Home Care",
     metaDescription:
       "Free long-term care cost calculator. Projected nursing home, assisted living, and home aide cost by state + inflation + Medicare gap + Medicaid likelihood.",
     targetKeyword: "long term care cost calculator",

@@ -1815,7 +1815,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "trump-account-vs-529",
     title: "Trump Account vs 529 Plan: Which Wins for Kids?",
     metaDescription:
-      "Trump Account vs 529 college savings account: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but school-only. See which fits.",
+      "Trump Account vs 529: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but school-only. See which savings option fits.",
     targetKeyword: "trump account vs 529",
     optionA: "Trump Account",
     optionB: "529 Plan",
