@@ -1,0 +1,31 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-18",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/custodial-roth-ira-for-kids/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-retirement-accounts-for-self-employed/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/guides/custodial-roth-ira-for-kids/": {
+      "Organic Search": 4
+    },
+    "/roundup/best-retirement-accounts-for-self-employed/": {
+      "Organic Search": 1
+    }
+  }
+}
