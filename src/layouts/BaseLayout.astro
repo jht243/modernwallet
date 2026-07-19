@@ -20,6 +20,16 @@ const orgJsonLd = {
   logo: { "@type": "ImageObject", url: new URL("/favicon.svg", Astro.site).toString() },
   description: SITE.description,
 };
+
+// WebSite JSON-LD — the entity Google uses for the search-result site name.
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": new URL("/", Astro.site).toString() + "#website",
+  url: new URL("/", Astro.site).toString(),
+  name: SITE.name,
+  description: SITE.description,
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -36,7 +46,11 @@ const orgJsonLd = {
       gtag('js', new Date());
       gtag('config', 'G-GLEBF3S7CQ');
     </script>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -50,6 +64,7 @@ const orgJsonLd = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
     <style is:global>
       :root {
         --primary: #0E7C66;
