@@ -440,7 +440,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — 401(k) contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
       { label: "IRS — Required minimum distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira", "roth-ira-vs-roth-401k"],
     calculatorLinks: [
       { label: "Retirement calculator", href: "/retirement/" },
       { label: "Investment growth calculator", href: "/investing/" },
@@ -601,7 +601,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Traditional and Roth IRAs", url: "https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" },
       { label: "IRS — Topic No. 409 Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account", "trump-account-vs-brokerage-account"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account", "trump-account-vs-brokerage-account", "401k-vs-brokerage-account"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -2784,7 +2784,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS: Retirement topics - IRA contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
       { label: "IRS: Retirement plan and IRA required minimum distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira", "roth-ira-vs-roth-401k"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investment Growth Calculator", href: "/investing/" },
@@ -3829,7 +3829,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Insurance Information Institute — Types of Life Insurance Policies", url: "https://www.iii.org/article/what-are-different-types-life-insurance-policies" },
       { label: "Consumer Financial Protection Bureau — Life Insurance", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-life-insurance-en-1751/" },
     ],
-    relatedComparisons: ["living-trust-vs-will", "stocks-vs-bonds", "401k-vs-roth-ira"],
+    relatedComparisons: ["living-trust-vs-will", "stocks-vs-bonds", "whole-life-vs-universal-life-insurance", "term-life-vs-universal-life-insurance"],
     calculatorLinks: [
       { label: "Net Worth Tracker", href: "/net-worth/" },
       { label: "Budget Planner", href: "/budget/" },
@@ -4874,6 +4874,362 @@ export const COMPARISONS: ComparisonEntry[] = [
     calculatorLinks: [
       { label: "Tax resolution calculator", href: "/tax-resolution/" },
       { label: "Investing calculator", href: "/investing/" },
+    ],
+  },
+
+  // ─── Roth IRA vs Roth 401(k) ─────────────────────────────────────────────
+  {
+    slug: "roth-ira-vs-roth-401k",
+    title: "Roth IRA vs Roth 401(k): Which Should You Max First?",
+    metaDescription:
+      "Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.",
+    targetKeyword: "roth ira vs roth 401k",
+    optionA: "Roth IRA",
+    optionB: "Roth 401(k)",
+    h1: "Roth IRA vs Roth 401(k): Which Should You Prioritize?",
+    intro:
+      "A Roth 401(k) lets you contribute up to $24,500 in 2026 (plus an $8,000 catch-up at 50+) with no income limit at all, while a Roth IRA caps contributions at $7,500 ($8,600 at 50+) and cuts off entirely once your income crosses $168,000 single or $252,000 married — so the right first move depends mainly on whether your employer offers a Roth 401(k) with a match and whether you're under the Roth IRA's income ceiling.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 contribution limit", a: "$7,500 ($8,600 if 50+)", b: "$24,500 ($32,500 if 50+; $35,750 if 60–63)" },
+        { dimension: "Income limit to contribute", a: "Phases out $153,000–$168,000 single; $242,000–$252,000 married (2026)", b: "None — any employee with plan access can contribute" },
+        { dimension: "Employer match", a: "No — it's an individual account", b: "Common; the match itself often lands in a separate pre-tax bucket" },
+        { dimension: "Investment options", a: "Unlimited — any stock, ETF, bond, mutual fund", b: "Limited to the plan's fund menu" },
+        { dimension: "Required minimum distributions", a: "None during the owner's lifetime", b: "None, starting with tax years after 2023 (SECURE 2.0)" },
+        { dimension: "Early access to contributions", a: "Your own contributions come out anytime, tax- and penalty-free", b: "Not separable — withdrawals are pro-rated between contributions and earnings" },
+        { dimension: "Who can use it", a: "Anyone under the income limit, or via a backdoor Roth conversion if over", b: "Anyone whose employer plan offers a Roth option" },
+      ],
+    },
+    verdict:
+      "Contribute to the Roth 401(k) first if your employer offers one with a match — capture the match, then decide where the rest goes. If you're under the Roth IRA's income limit and your 401(k) plan has weak or expensive fund choices, split contributions: enough to the Roth 401(k) to get the full match, then a Roth IRA for its unlimited investment menu and more accessible contributions. High earners who are locked out of a direct Roth IRA by the income limit should lean on the Roth 401(k) instead — it has no income cap at all — or use a backdoor Roth IRA conversion.",
+    sections: [
+      {
+        heading: "The income limit is the biggest practical difference",
+        content:
+          "A Roth 401(k) has no income limit — anyone whose employer offers one can contribute, regardless of salary. A Roth IRA does: for 2026, direct contributions phase out between $153,000 and $168,000 of modified adjusted gross income for single filers, and between $242,000 and $252,000 for married couples filing jointly, per the [IRS](https://www.irs.gov/retirement-plans/roth-comparison-chart).\n\nHigh earners shut out of a direct Roth IRA contribution can still get money into one through a backdoor Roth IRA conversion — contribute to a nondeductible Traditional IRA, then convert it — but that adds a tax-filing step (Form 8606) and can trigger pro-rata tax complications if you already hold other pre-tax IRA money. The Roth 401(k) sidesteps all of that by simply having no income test.",
+      },
+      {
+        heading: "How the employer match complicates a Roth 401(k)",
+        content:
+          "Choosing \"Roth\" for your own 401(k) contributions doesn't automatically make your employer's match Roth too. Unless your plan specifically elects the SECURE 2.0 option to make employer contributions Roth, the match still lands in a separate pre-tax sub-account inside the same plan — meaning a \"Roth 401(k)\" balance is often really two pots: your after-tax Roth contributions and a pre-tax employer-match pot that will be taxed on withdrawal.\n\nCheck your plan's summary or ask HR whether employer contributions are pre-tax or Roth. Either way, the match itself is worth capturing first — it's an immediate, guaranteed return no Roth IRA can match.",
+      },
+      {
+        heading: "Required minimum distributions: now equal for both",
+        content:
+          "Roth accounts inside employer plans no longer have required minimum distributions, starting with tax years beginning after December 31, 2023 — a SECURE 2.0 change that erased what used to be a real disadvantage for the Roth 401(k). Before this change, a Roth 401(k) owner had to start RMDs at 73 just like a Traditional 401(k), unless they rolled the balance into a Roth IRA first to avoid it.\n\nToday, neither account forces withdrawals during your lifetime, so this is no longer a reason to prefer one over the other — though rolling a Roth 401(k) into a Roth IRA after leaving a job can still simplify recordkeeping and widen your investment choices.",
+      },
+      {
+        heading: "Accessing your money early: a real difference in flexibility",
+        content:
+          "A Roth IRA lets you withdraw your own contributions (not earnings) at any age, for any reason, with no tax and no penalty — the [IRS](https://www.irs.gov/publications/p590b) treats contributions as coming out first, before any earnings, under ordering rules unique to IRAs. That makes a Roth IRA a genuine backup emergency fund in addition to a retirement account.\n\nA Roth 401(k) doesn't get this treatment. An early withdrawal is pro-rated between your contributions and the account's earnings, so a portion of every withdrawal before 59½ counts as taxable, penalized earnings — even though the whole balance is labeled \"Roth.\" This pro-rata rule is one of the most commonly misunderstood differences between the two accounts.",
+      },
+      {
+        heading: "The 2026 high-earner catch-up rule that pushes more people toward Roth",
+        content:
+          "Starting in 2026, a SECURE 2.0 rule requires catch-up contributions (for savers 50 and older) to be made on a Roth basis if you earned more than $150,000 in wages from that employer the prior year — you lose the option to make catch-up contributions pre-tax. This applies specifically inside employer plans, so it makes the Roth 401(k) mandatory, not optional, for the catch-up portion of many high earners' contributions.\n\nA non-obvious implication: some higher earners who always preferred pre-tax catch-up contributions now have no choice but to route that slice through the Roth 401(k) — worth knowing before you assume you can keep your entire catch-up amount pre-tax in 2026 and beyond.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I contribute to both a Roth IRA and a Roth 401(k) in the same year?",
+        answer:
+          "Yes. The two accounts have entirely separate contribution limits — $24,500 for a Roth 401(k) and $7,500 for a Roth IRA in 2026 — so you can fund both in the same year, as long as your income is under the Roth IRA's limit.",
+      },
+      {
+        question: "What happens to my Roth 401(k) if I change jobs?",
+        answer:
+          "You can roll it into your new employer's Roth 401(k) (if offered), roll it into a Roth IRA, or leave it with your former employer if the plan allows. Rolling into a Roth IRA is common because it removes the plan's limited fund menu, though it may reset which 5-year clock applies to that money.",
+      },
+      {
+        question: "Is a Roth 401(k) worth it if my income is too high for a Roth IRA?",
+        answer:
+          "Yes — a Roth 401(k) has no income limit at all, so it's the direct path to Roth-style tax-free growth for high earners who are locked out of contributing to a Roth IRA. A backdoor Roth IRA conversion is the other common workaround.",
+      },
+      {
+        question: "Does a Roth 401(k) still make sense with the 2026 mandatory Roth catch-up rule?",
+        answer:
+          "Yes. The 2026 rule only affects catch-up contributions for savers 50+ who earned over $150,000 in wages from that employer the prior year, forcing that specific slice into a Roth 401(k). It doesn't change the case for or against Roth generally — it just removes the pre-tax catch-up option for that group.",
+      },
+      {
+        question: "Which is better, a Roth IRA or a Roth 401(k)?",
+        answer:
+          "Neither is universally better. A Roth 401(k) usually comes first because of the employer match and no income limit. A Roth IRA is better for its unlimited investment menu and the ability to withdraw contributions early without penalty. Many savers use both.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Roth comparison chart", url: "https://www.irs.gov/retirement-plans/roth-comparison-chart" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — Publication 590-B, Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "traditional-ira-vs-401k"],
+    calculatorLinks: [
+      { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
+      { label: "401(k) calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement calculator", href: "/retirement/" },
+    ],
+  },
+
+  // ─── 401(k) vs Brokerage Account ─────────────────────────────────────────
+  {
+    slug: "401k-vs-brokerage-account",
+    title: "401(k) vs Brokerage Account: Which Should You Fund First?",
+    metaDescription:
+      "401(k) vs brokerage account compared: tax treatment, contribution limits, withdrawal rules, and when a taxable account beats maxing your 401(k).",
+    targetKeyword: "401k vs brokerage account",
+    optionA: "401(k)",
+    optionB: "Brokerage Account",
+    h1: "401(k) vs Brokerage Account: Which Should You Fund First?",
+    intro:
+      "A 401(k) is a tax-advantaged retirement account with a $24,500 contribution limit in 2026 and a 10% penalty on withdrawals before age 59½, while a taxable brokerage account has no contribution limit, no withdrawal penalty, and no age restriction — but you pay tax on dividends, interest, and gains as they happen instead of deferring or avoiding it. The right split depends mostly on whether you've captured your full employer match and how soon you might need the money.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+)", b: "None" },
+        { dimension: "Tax treatment", a: "Pre-tax growth; taxed as ordinary income on withdrawal (Traditional)", b: "Dividends/interest taxed yearly; long-term gains taxed at 0/15/20%" },
+        { dimension: "Employer match", a: "Yes, often — free money up to a % of salary", b: "No employer match; it's a personal account" },
+        { dimension: "Early withdrawal penalty", a: "10% penalty before 59½, on top of ordinary income tax", b: "None — withdraw any amount, any time" },
+        { dimension: "Required minimum distributions", a: "Starting at age 73 (Traditional; none for Roth 401(k))", b: "None, ever" },
+        { dimension: "Investment options", a: "Limited to the plan's fund menu", b: "Unlimited — any stock, ETF, bond, mutual fund, or option" },
+        { dimension: "Access before retirement", a: "Restricted — penalty, plus loan provisions that vary by plan", b: "Fully liquid, with no restrictions on timing or amount" },
+      ],
+    },
+    verdict:
+      "Fund the 401(k) first, at minimum up to your full employer match — that match is an immediate, guaranteed return no brokerage account can offer. After the match, a brokerage account earns its place when you might need the money before 59½ (a house down payment, a mid-term goal), or once you've already maxed tax-advantaged space and want additional, more liquid investments. Most investors with a long time horizon and steady income come out ahead maxing the 401(k) and an IRA before building a large taxable brokerage position.",
+    sections: [
+      {
+        heading: "Why the employer match makes the 401(k) the default first move",
+        content:
+          "An employer 401(k) match is typically 50% to 100% of your contribution up to a set percentage of salary — an instant, guaranteed return that no brokerage account investment can reliably beat. Skipping the match to invest in a brokerage account instead means leaving free money on the table before you've earned a single dollar of market return.\n\nOnce the match is captured, the comparison becomes genuinely close, and the right split depends on tax treatment, liquidity needs, and how much of your tax-advantaged space you've already used.",
+      },
+      {
+        heading: "What a brokerage account actually costs you in taxes",
+        content:
+          "A taxable brokerage account owes tax every year on dividends and interest it generates, and on any gains you realize when you sell, unlike a 401(k) where growth compounds untaxed until withdrawal. For 2026, long-term capital gains (positions held over a year) are taxed at 0%, 15%, or 20% depending on income — the 0% bracket tops out at $49,450 for single filers and $98,900 for married couples filing jointly, with the 20% rate starting above $545,500 single / $613,700 married, per the [IRS](https://www.irs.gov/taxtopics/tc409). High earners may also owe the 3.8% Net Investment Income Tax above $200,000 single / $250,000 married.\n\nA practical way to reduce this drag: hold low-turnover index funds and ETFs in a brokerage account, since they generate far fewer taxable distributions than actively managed funds — a distinction many investors overlook when deciding what to hold where.",
+      },
+      {
+        heading: "Liquidity: the brokerage account's biggest advantage",
+        content:
+          "A brokerage account has no age restriction and no early-withdrawal penalty, so it's the right tool for money you might need before 59½, like a house down payment or a mid-term goal a 401(k) can't serve without triggering a penalty.\n\nSome 401(k) plans allow a loan against your own balance, typically capped at the lesser of $50,000 or 50% of your vested balance, repaid through payroll deduction. It's a partial workaround, not a substitute for real liquidity — leaving the job before repayment is often required in full, or the outstanding balance is treated as a taxable, penalized distribution.",
+      },
+      {
+        heading: "The order most planners recommend funding accounts",
+        content:
+          "A common funding order: contribute to the 401(k) up to the full employer match first, then max an HSA if you have a high-deductible health plan (see our [tax tips guide](/guides/tax-tips/) for the triple tax break), then fund a Roth or Traditional IRA, then return to the 401(k) to max it out, and only then build a taxable brokerage account with any remaining savings.\n\nThis order isn't a strict rule — someone who badly needs mid-term liquidity might reasonably prioritize a brokerage account sooner — but it captures the match first and fills tax-advantaged space before taxable space, which is the sequence most fee-only planners recommend for a typical W-2 earner.",
+      },
+      {
+        heading: "A brokerage account's tax advantage most investors miss: step-up in basis",
+        content:
+          "Assets in a taxable brokerage account get a \"step-up in basis\" to fair market value when you die, which erases all capital gains tax on the appreciation for whoever inherits them — a $10,000 investment worth $100,000 at death passes to heirs with zero capital gains owed on that $90,000 of growth.\n\nA 401(k) gets no such benefit. A non-spouse beneficiary who inherits a Traditional 401(k) must empty it within 10 years under the SECURE Act, and every withdrawal is taxed as ordinary income — often at a higher effective rate than the capital gains rate a brokerage account heir would pay. This estate-planning wrinkle is a real, if secondary, reason some investors deliberately overfund a brokerage account alongside their 401(k).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should I max my 401(k) before investing in a brokerage account?",
+        answer:
+          "Get the full employer match first — that's an immediate, guaranteed return. After the match, whether to max the 401(k) before funding a brokerage account depends on your tax bracket, how soon you might need the money, and whether you've also maxed an IRA and HSA, if eligible.",
+      },
+      {
+        question: "Can I withdraw money from a brokerage account without penalty?",
+        answer:
+          "Yes. A taxable brokerage account has no early-withdrawal penalty and no age restriction. You'll owe capital gains tax on any profit when you sell, but there's no additional penalty the way there is with a 401(k) withdrawal before 59½.",
+      },
+      {
+        question: "What's the tax advantage of a 401(k) over a brokerage account?",
+        answer:
+          "A Traditional 401(k) reduces your taxable income the year you contribute and lets your investments grow without annual taxes on dividends or gains, unlike a brokerage account, which is taxed as it earns income and again when you sell. You defer all of that tax until withdrawal.",
+      },
+      {
+        question: "Is a brokerage account better for a house down payment than a 401(k)?",
+        answer:
+          "Generally yes. A brokerage account has no early-withdrawal penalty, so it's the more efficient place to save for a goal you'll need within a few years. Pulling from a 401(k) before 59½ triggers a 10% penalty plus ordinary income tax on top of what you withdraw.",
+      },
+      {
+        question: "Can I take a loan from my 401(k) instead of using a brokerage account?",
+        answer:
+          "Many plans allow it, typically capped at the lesser of $50,000 or 50% of your vested balance, repaid via payroll deduction. It's a workaround for short-term liquidity, but leaving your job often accelerates repayment, and an unpaid balance becomes a taxable, penalized distribution.",
+      },
+    ],
+    sources: [
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — Topic No. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS — Retirement topics: Required minimum distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "stocks-vs-bonds"],
+    calculatorLinks: [
+      { label: "401(k) calculator", href: "/retirement/401k-calculator/" },
+      { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+      { label: "Net worth calculator", href: "/net-worth/" },
+    ],
+  },
+
+  // ─── Whole Life vs Universal Life Insurance ──────────────────────────────
+  {
+    slug: "whole-life-vs-universal-life-insurance",
+    title: "Whole Life vs Universal Life Insurance: Key Differences",
+    metaDescription:
+      "Whole life vs universal life insurance compared: fixed vs flexible premiums, guaranteed vs variable cash value growth, and which fits your goals.",
+    targetKeyword: "whole life vs universal life insurance",
+    optionA: "Whole Life Insurance",
+    optionB: "Universal Life Insurance",
+    h1: "Whole Life vs Universal Life Insurance: Which Fits Your Goals?",
+    intro:
+      "Whole life insurance locks in a fixed premium and a guaranteed minimum cash-value growth rate for life, while universal life insurance lets you adjust your premium and death benefit within limits and credits interest that can rise or fall with market rates — so the choice comes down to whether you want predictability or flexibility. Both are permanent policies that build cash value, unlike term life, which expires with no payout if you outlive it.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Premium structure", a: "Fixed — the same amount for life", b: "Flexible — adjust amount and timing within plan limits" },
+        { dimension: "Cash value growth", a: "Guaranteed minimum rate set by the insurer", b: "Tied to current interest rates (or an index); can slow in low-rate years" },
+        { dimension: "Death benefit", a: "Fixed, guaranteed for life as long as premiums are paid", b: "Adjustable — can be raised or lowered as needs change" },
+        { dimension: "Risk of lapse", a: "Very low — guaranteed as long as premiums are paid on time", b: "Higher — a low credited rate can leave the account unable to cover charges" },
+        { dimension: "Complexity", a: "Simple — one number to track", b: "Requires reviewing an annual statement — account value, cost of insurance, credited rate" },
+        { dimension: "Best for", a: "Lifelong needs with zero tolerance for surprises: estate liquidity, final expenses", b: "Households wanting to adjust premiums or coverage as needs change" },
+      ],
+    },
+    verdict:
+      "Choose whole life insurance when predictability matters most — a locked-in premium and a guaranteed death benefit you never have to revisit, common for estate-tax liquidity or a special-needs dependent's lifelong support. Choose universal life insurance when you want flexibility to adjust your premium or death benefit as income and needs change, but know it requires more attention: a policy funded at the bare minimum can lapse if credited interest rates fall, something a whole life policy cannot do as long as premiums are paid. If you're unsure you'll stay engaged enough to review an annual statement, whole life's guarantees are the safer default.",
+    sections: [
+      {
+        heading: "How whole life's guarantees work",
+        content:
+          "A whole life policy sets one premium at issue and guarantees it never rises, along with a guaranteed minimum rate of cash-value growth set in the contract, according to the [NAIC](https://content.naic.org/consumer/life-insurance.htm). As long as you pay that premium, the death benefit and the policy's continuation are both guaranteed — there's no year-to-year uncertainty to manage.\n\nThis guarantee comes at a cost: whole life premiums are typically higher than universal life premiums for the same initial death benefit, because the insurer is pricing in the guarantee rather than passing market risk to you.",
+      },
+      {
+        heading: "How universal life's flexibility works — and its real trade-off",
+        content:
+          "A universal life policy deducts a monthly charge, covering the cost of insurance and administrative fees, from an account value that grows at a current, non-guaranteed interest rate. You can generally increase or decrease your premium payment, or raise or lower the death benefit, within the limits the [NAIC's Universal Life Insurance Model Regulation](https://content.naic.org/sites/default/files/model-law-585.pdf) requires insurers to disclose.\n\nThe trade-off: if the credited rate falls and your account value can't cover the monthly deduction, the policy can lapse — even if you've paid premiums for years — after a grace period of at least 60 days. A whole life policy paid on schedule cannot lapse this way.",
+      },
+      {
+        heading: "Indexed and variable universal life: two more flexible variants",
+        content:
+          "Indexed universal life (IUL) ties the credited interest rate to a market index like the S&P 500, usually with a cap on the upside and a floor (often 0%) protecting against a negative crediting rate — it is still universal life, not a separate product, and is frequently marketed and discussed as if it were distinct.\n\nVariable universal life (VUL) goes further, letting you invest the cash value directly in mutual-fund-like sub-accounts, which shifts real market risk — including the risk of loss — onto the policyholder. Confirm which variant you're being offered before comparing quotes, since the risk profile differs meaningfully between standard, indexed, and variable universal life.",
+      },
+      {
+        heading: "The illustration trap: why universal life needs a second look every year",
+        content:
+          "A universal life sales illustration projects future cash value based on a current, non-guaranteed crediting rate — if that rate falls after you buy the policy, the actual account value underperforms the original projection. Many policies sold in higher-rate decades illustrated premiums that would eventually \"vanish,\" funded entirely by cash value, only for owners to later find they needed to resume or increase premiums once real crediting rates came in lower than illustrated.\n\nThe practical takeaway: request an in-force illustration from your insurer every year or two, not just at purchase, so you catch an underfunded policy years before it's at risk of lapsing rather than discovering it in a lapse notice.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can a universal life insurance policy lapse even if I pay premiums?",
+        answer:
+          "Yes, if the premiums you pay aren't enough to cover the policy's monthly deductions once the credited interest rate falls. Unlike whole life, universal life's guarantees are limited, so a policy funded near the minimum can lapse after a grace period if the account value runs out.",
+      },
+      {
+        question: "Is universal life insurance riskier than whole life?",
+        answer:
+          "In terms of guarantees, yes. Whole life locks in a premium and guarantees the death benefit for life. Universal life's cash value and, in some cases, the policy's continuation depend on a crediting rate that can rise or fall, which shifts some risk from the insurer to the policyholder.",
+      },
+      {
+        question: "What is indexed universal life (IUL) insurance?",
+        answer:
+          "Indexed universal life is a type of universal life insurance where the credited interest rate is tied to a market index, like the S&P 500, usually with an upside cap and a downside floor. It's still universal life, not a separate insurance category, just with a different way of setting the credited rate.",
+      },
+      {
+        question: "Can I convert term life insurance to whole or universal life?",
+        answer:
+          "Many term policies include a conversion option that lets you switch to a permanent policy, whole or universal life, without new medical underwriting, usually within a set window (often before a certain age or policy year). Check your specific policy's conversion terms and deadline.",
+      },
+      {
+        question: "Which builds cash value faster, whole life or universal life?",
+        answer:
+          "It depends on the crediting environment. Whole life grows at a guaranteed minimum rate that's steady but modest. Universal life can grow faster when current interest rates or index returns are strong, but can also grow slower, or not lapse-proof itself, when rates are low.",
+      },
+    ],
+    sources: [
+      { label: "National Association of Insurance Commissioners (NAIC) — Universal Life Insurance Model Regulation", url: "https://content.naic.org/sites/default/files/model-law-585.pdf" },
+      { label: "National Association of Insurance Commissioners (NAIC) — Life Insurance Buyer's Guide", url: "https://content.naic.org/consumer/life-insurance.htm" },
+      { label: "Insurance Information Institute — Types of Life Insurance Policies", url: "https://www.iii.org/article/what-are-different-types-life-insurance-policies" },
+    ],
+    relatedComparisons: ["whole-life-vs-term-life-insurance", "term-life-vs-universal-life-insurance", "annuity-vs-cd"],
+    calculatorLinks: [
+      { label: "Net Worth Tracker", href: "/net-worth/" },
+      { label: "Budget Planner", href: "/budget/" },
+      { label: "Estate Planning Guide", href: "/estate-planning/" },
+    ],
+  },
+
+  // ─── Term Life vs Universal Life Insurance ───────────────────────────────
+  {
+    slug: "term-life-vs-universal-life-insurance",
+    title: "Term Life vs Universal Life Insurance: Which to Buy?",
+    metaDescription:
+      "Term life vs universal life insurance compared: cost, coverage length, cash value, and flexibility — see which policy actually fits your needs.",
+    targetKeyword: "term life vs universal life insurance",
+    optionA: "Term Life Insurance",
+    optionB: "Universal Life Insurance",
+    h1: "Term Life vs Universal Life Insurance: Which Should You Buy?",
+    intro:
+      "Term life insurance covers you for a set period, typically 10 to 30 years, at the lowest premium available and pays nothing if you outlive the term, while universal life insurance covers you for life, builds cash value, and lets you adjust your premium and death benefit — but can cost several times more for the same death benefit. Most people need term's low cost for pure income replacement; universal life fits a narrower set of lifelong, flexible-premium needs.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Coverage length", a: "Fixed term — 10, 20, or 30 years", b: "Lifelong, as long as adequately funded" },
+        { dimension: "Premium cost (same death benefit)", a: "Lowest of any life insurance type", b: "Often 5–15x higher than term, depending on age and health" },
+        { dimension: "Cash value", a: "None — pure insurance, no savings component", b: "Builds cash value you can borrow against or withdraw" },
+        { dimension: "Premium flexibility", a: "Fixed for the term; renewal at much higher rates after", b: "Adjustable within plan limits" },
+        { dimension: "Payout if you outlive the policy", a: "$0 — coverage simply ends", b: "Not time-limited, so it eventually pays out at death" },
+        { dimension: "Best for", a: "Temporary needs — income replacement while a mortgage or kids' dependency lasts", b: "Lifelong needs — estate liquidity, a permanent dependent, a buy-sell agreement" },
+      ],
+    },
+    verdict:
+      "Buy term life insurance for the vast majority of income-replacement needs — it's dramatically cheaper and covers the years your family actually depends on your income, like while a mortgage is outstanding or kids are still at home. Consider universal life insurance only for a genuinely lifelong need: estate-tax liquidity, a permanent dependent, or a business buy-sell agreement that must be funded no matter when you die. Buying universal life for simple income replacement usually means paying far more than necessary, since a correctly sized term policy paired with your own investing, through a [401(k), IRA, or brokerage account](/compare/401k-vs-brokerage-account/), typically outperforms the insurer's credited rate over decades.",
+    sections: [
+      {
+        heading: "Why term life costs so much less",
+        content:
+          "Term life insurance is priced purely on mortality risk for a fixed period, with no cash-value or investment component built in, which is why it's the cheapest way to buy a large death benefit. Universal life bundles permanent coverage with a savings component, so part of every premium funds that cash value on top of the cost of insurance.\n\nThis pricing gap is the foundation of the classic \"buy term and invest the difference\" strategy: buy the cheaper term policy, then invest what you would have paid for permanent coverage separately.",
+      },
+      {
+        heading: "What happens when term coverage ends",
+        content:
+          "When a term policy's level period ends, you can typically renew annually at a sharply higher, attained-age rate, or convert to a permanent policy if your term includes a conversion option, usually without new medical underwriting if exercised before a deadline. If you do nothing and let the term simply expire, coverage stops entirely and there's no payout, regardless of how much you paid in over the years.\n\nMany buyers no longer need coverage once the term ends — the mortgage is paid off, kids are financially independent — which is exactly the scenario term life is designed for.",
+      },
+      {
+        heading: "Where universal life genuinely earns its higher cost",
+        content:
+          "Universal life fits needs that don't have an end date: covering estate taxes so heirs aren't forced to sell assets, funding lifelong support for a special-needs dependent, or guaranteeing a business buy-sell agreement gets funded whenever a partner dies, not just within a 20- or 30-year window. In each case, the buyer specifically needs coverage that cannot expire, which term structurally cannot provide.\n\nFor these narrow, genuinely lifelong needs, universal life's higher premium buys something term life doesn't offer at any price: certainty of a payout, whenever death occurs. See our [whole life vs universal life insurance](/compare/whole-life-vs-universal-life-insurance/) comparison for how to choose between the two permanent options.",
+      },
+      {
+        heading: "The 'buy term, invest the difference' math — when it wins and when it doesn't",
+        content:
+          "Buying term and investing the premium difference in a 401(k), IRA, or brokerage account usually outperforms a universal life policy's credited rate over long periods, since the invested money isn't also paying for a cost-of-insurance charge every month. But the strategy only wins if the difference is actually invested consistently, not spent — the single biggest reason it fails in practice isn't the math, it's follow-through.\n\nThe other real trade-off: once the term ends, there's no coverage left at any price if you've become uninsurable in the meantime, while a permanent policy would still be in force. Buyers with a family history of serious illness sometimes weigh that risk deliberately, even knowing term is cheaper on paper.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is term life insurance always cheaper than universal life?",
+        answer:
+          "For the same death benefit, yes — term life is priced on mortality risk alone, while universal life also funds a cash-value component, making it typically 5 to 15 times more expensive depending on age and health at issue.",
+      },
+      {
+        question: "Can I convert term life insurance into universal life insurance later?",
+        answer:
+          "Many term policies include a conversion option letting you switch to a permanent policy like universal life without new medical underwriting, usually before a set age or within a specific number of years. Check your policy's conversion window and deadline directly with your insurer.",
+      },
+      {
+        question: "What happens if I outlive my term life policy?",
+        answer:
+          "Coverage simply ends and there's no payout, regardless of how many years of premiums you paid. Some term policies offer renewal at a much higher rate or a conversion option to permanent coverage before the term expires.",
+      },
+      {
+        question: "Does universal life insurance make sense for young, healthy buyers?",
+        answer:
+          "Usually not for pure income replacement — term life covers the same need for a fraction of the cost while kids are dependent or a mortgage is outstanding. Universal life fits a narrower case: a genuinely lifelong need like estate-tax liquidity or permanent dependent support.",
+      },
+      {
+        question: "How much life insurance do I actually need?",
+        answer:
+          "A common starting point is 10 to 15 times your annual income, adjusted for outstanding debts like a mortgage, years until kids are financially independent, and any existing savings. A term policy sized to that number, for the years you actually need it, is usually the most cost-effective approach.",
+      },
+    ],
+    sources: [
+      { label: "National Association of Insurance Commissioners (NAIC) — Life Insurance Buyer's Guide", url: "https://content.naic.org/consumer/life-insurance.htm" },
+      { label: "Insurance Information Institute — Types of Life Insurance Policies", url: "https://www.iii.org/article/what-are-different-types-life-insurance-policies" },
+      { label: "Consumer Financial Protection Bureau — Life Insurance", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-life-insurance-en-1751/" },
+    ],
+    relatedComparisons: ["whole-life-vs-term-life-insurance", "whole-life-vs-universal-life-insurance", "401k-vs-brokerage-account"],
+    calculatorLinks: [
+      { label: "Net Worth Tracker", href: "/net-worth/" },
+      { label: "Budget Planner", href: "/budget/" },
+      { label: "Estate Planning Guide", href: "/estate-planning/" },
     ],
   },
 
