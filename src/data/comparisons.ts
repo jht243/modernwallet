@@ -3206,7 +3206,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "What Is an Unsecured Loan?",
         content:
-          "An unsecured loan has no collateral, so approval depends almost entirely on your creditworthiness. The lender looks at your credit score, income, and existing debts.\n\nWith no asset to fall back on, the lender charges more to cover the risk. Rates run higher and limits run lower than a comparable secured loan.\n\nCommon examples include most personal loans, credit cards, student loans, and medical debt. Defaulting will not trigger automatic seizure of your property. But the Consumer Financial Protection Bureau notes that unpaid debt can be sent to collections, and creditors may sue. A court judgment can lead to wage garnishment. Missed payments also damage your credit for years.",
+          "An unsecured loan has no collateral, so approval depends almost entirely on your creditworthiness. The lender looks at your credit score, income, and existing debts.\n\nWith no asset to fall back on, the lender charges more to cover the risk. Rates run higher and limits run lower than a comparable secured loan.\n\nCommon examples include most [personal loans](/personal-loan/), credit cards, student loans, and medical debt. Defaulting will not trigger automatic seizure of your property. But the Consumer Financial Protection Bureau notes that unpaid debt can be sent to collections, and creditors may sue. A court judgment can lead to wage garnishment. Missed payments also damage your credit for years.",
       },
       {
         heading: "Secured vs Unsecured Loan: Cost and Risk Tradeoff",
@@ -4202,7 +4202,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Speed and paperwork: when a personal loan wins",
         content:
-          "A HELOC requires a home appraisal and a formal closing, which typically takes 2 to 6 weeks from application to funded line. That's manageable for a planned renovation, but it's a problem if you need money this week.\n\nA personal loan skips the appraisal entirely. Most lenders can approve and fund a personal loan within 1 to 5 business days, since there's no collateral to verify and no title work required.\n\nFor a time-sensitive repair — a failed water heater, storm damage, an HVAC replacement in July — the personal loan's speed can outweigh its higher rate, especially if the amount is modest enough that the total extra interest is small in dollar terms.",
+          "A HELOC requires a home appraisal and a formal closing, which typically takes 2 to 6 weeks from application to funded line. That's manageable for a planned renovation, but it's a problem if you need money this week.\n\nA [personal loan](/personal-loan/) skips the appraisal entirely. Most lenders can approve and fund a personal loan within 1 to 5 business days, since there's no collateral to verify and no title work required.\n\nFor a time-sensitive repair — a failed water heater, storm damage, an HVAC replacement in July — the personal loan's speed can outweigh its higher rate, especially if the amount is modest enough that the total extra interest is small in dollar terms.",
       },
       {
         heading: "The tax deduction only a HELOC can offer",

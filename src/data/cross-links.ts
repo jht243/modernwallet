@@ -53,6 +53,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/investing/", label: "Invest your monthly surplus" },
     { href: "/retirement/", label: "Are you saving enough to retire?" },
+    { href: "/personal-loan/", label: "Consolidating debt? Model a personal loan" },
+  ],
+  "personal-loan": [
+    { href: "/budget/", label: "Does the payment fit your budget?" },
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Compare a 0% balance transfer instead" },
   ],
   "tax-resolution": [
     { href: "/guides/tax-tips/", label: "Proactive tax planning (if you're current)" },

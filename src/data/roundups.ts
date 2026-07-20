@@ -3015,6 +3015,204 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Net Worth Tracker", href: "/net-worth/" },
     ],
   },
+  // ── Competitor-monitor pass (2026-07-20): Best Brokerage Accounts for Interest on Cash ──
+  {
+    slug: "best-brokerage-accounts-for-interest-on-cash",
+    title: "Best Brokerage Accounts for Interest on Cash (2026)",
+    metaDescription:
+      "Compare how 7 brokerages pay interest on uninvested cash — money market sweep vs bank sweep vs promotional accounts — what to check first.",
+    targetKeyword: "best brokerage accounts for interest on cash",
+    category: "brokerage accounts",
+    angle: "best",
+    h1: "Best Brokerage Accounts for Interest on Uninvested Cash",
+    intro:
+      "The best brokerage accounts for interest on cash pay you something on money sitting between trades instead of letting it earn nothing. How much depends less on the brand and more on the underlying mechanism — a money market sweep, an FDIC bank sweep, or a dedicated high-yield cash program — since each structure prices differently and moves with the Fed funds rate on a different schedule.\n\nWe compared seven major brokerages on how their cash sweep actually works, what (if anything) it costs, and what to check before you count on the rate. Rates change frequently — always confirm the current APY on the provider's own page before deciding where to park cash.",
+    rankingCriteria:
+      "Rankings weigh the sweep mechanism itself (a money market fund and an FDIC bank sweep behave differently, and that matters more long-term than this week's headline rate), any fee or subscription required to unlock the best rate, minimum balance requirements, and FDIC or SIPC coverage on the swept cash.\n\nA promotional rate that reverts to a much lower standard rate after a set period, or that requires a paid subscription tier, was weighted down relative to a durable, fee-free default rate — the sustainable rate matters more than a headline number that expires in a year.",
+    options: [
+      {
+        name: "Fidelity",
+        bestFor: "A durable, no-fee default rate with no subscription required",
+        description:
+          "[Fidelity](https://www.fidelity.com/)'s default core position for uninvested cash is a true money market mutual fund (commonly SPAXX), not a bank sweep — meaning your cash earns the fund's actual yield rather than a bank's discretionary sweep rate. There's no subscription fee and no minimum balance to access it, so the rate applies to every account size equally.\n\nBecause it's a money market fund and not a bank deposit, the cash carries [SIPC](https://www.sipc.org/for-investors/what-sipc-protects) coverage as part of your brokerage account rather than [FDIC](https://www.fdic.gov/resources/deposit-insurance/) coverage, which is a meaningful structural difference worth understanding even though money market funds have an extremely strong safety record.",
+        strengths: [
+          "Money market fund sweep, not a discretionary bank rate",
+          "No subscription fee or minimum balance to access it",
+          "Rate applies equally across account sizes",
+          "Long-standing, well-established fund",
+        ],
+        limitations: [
+          "SIPC-covered as securities, not FDIC-insured as a bank deposit",
+          "Yield moves with the fund's own portfolio, not a fixed promotional rate",
+        ],
+        pricing: "No fee, no minimum. Rate floats with the underlying money market fund's yield.",
+      },
+      {
+        name: "Vanguard",
+        bestFor: "Long-term investors who already keep a money market settlement fund",
+        description:
+          "[Vanguard](https://investor.vanguard.com/) defaults new brokerage accounts to a money market settlement fund (commonly VMFXX) rather than a low-yield bank sweep, which is consistent with Vanguard's broader investor-first cost philosophy. The fund's yield closely tracks short-term interest rates and has a low expense ratio relative to many money market alternatives.\n\nVanguard also offers a separate FDIC-insured cash product for investors who specifically want bank-level deposit insurance instead of a money market fund's SIPC coverage, giving you a choice between the two structures within the same platform.",
+        strengths: [
+          "Settlement fund is a real money market fund by default, not a low bank sweep rate",
+          "Low expense ratio relative to many money market alternatives",
+          "Optional FDIC-insured cash product available if you prefer bank coverage",
+        ],
+        limitations: [
+          "Best suited to investors already using Vanguard for core investing, not a standalone cash-parking account",
+          "Money market fund coverage is SIPC, not FDIC, unless you opt into the separate cash product",
+        ],
+        pricing: "No fee to hold the settlement fund. Rate floats with the fund's own yield.",
+      },
+      {
+        name: "Robinhood",
+        bestFor: "Active traders already paying for Robinhood Gold",
+        description:
+          "[Robinhood](https://robinhood.com/)'s highest cash sweep rate is reserved for Robinhood Gold subscribers, a paid monthly membership that also adds other trading features. Non-Gold accounts default to a noticeably lower rate on uninvested cash, so the value of the higher rate depends on whether you were already planning to subscribe for the other Gold features.\n\nRobinhood's cash sweep uses FDIC-insured partner banks rather than a money market fund, extending coverage well beyond the standard $250,000 single-bank limit by spreading deposits across its partner network.",
+        strengths: [
+          "Highest rate is FDIC-insured through a multi-bank sweep network",
+          "Extended FDIC coverage beyond the standard $250,000 single-bank limit",
+          "Simple, well-known mobile-first interface",
+        ],
+        limitations: [
+          "Top rate requires a paid Robinhood Gold subscription",
+          "Non-subscribers earn a meaningfully lower rate on the same cash",
+        ],
+        pricing: "Robinhood Gold: monthly subscription fee required for the top cash sweep rate. Lower rate applies without it.",
+      },
+      {
+        name: "Webull",
+        bestFor: "Traders who want a tiered rate based on balance and membership",
+        description:
+          "[Webull](https://www.webull.com/)'s cash management program pays a tiered rate that depends on your account balance and whether you subscribe to its premium membership tier, so your effective rate can vary meaningfully depending on how much cash you keep uninvested and which tier you're on. Read the specific tier breakpoints before assuming the headline rate applies to your full balance.\n\nWebull sweeps cash into FDIC-insured partner banks, similar in structure to Robinhood's approach, rather than a money market fund.",
+        strengths: [
+          "FDIC-insured multi-bank sweep structure",
+          "No minimum to earn some rate on cash",
+          "Rate can be competitive for premium-tier balances",
+        ],
+        limitations: [
+          "Rate is tiered by balance and membership — smaller uninvested balances or non-premium tiers earn less",
+          "More moving parts to track than a flat single-rate sweep",
+        ],
+        pricing: "Free tier and paid premium tier available; top rate typically requires the premium tier or a balance threshold.",
+      },
+      {
+        name: "Public",
+        bestFor: "Investors who want a dedicated high-yield cash account alongside brokerage",
+        description:
+          "[Public](https://public.com/) offers a dedicated high-yield cash account alongside its brokerage and social-investing features, positioning cash management as a first-class feature rather than an afterthought sweep. The account is separate from your invested brokerage balance, which makes it easier to track how much you're earning on cash specifically.\n\nBecause Public's cash account uses FDIC-insured partner banks, coverage extends beyond a single bank's $250,000 limit the same way Robinhood's and Webull's multi-bank sweep structures do.",
+        strengths: [
+          "Dedicated high-yield cash account, not just a leftover sweep balance",
+          "FDIC-insured through a partner bank network",
+          "Easy to see cash-account earnings separately from investment performance",
+        ],
+        limitations: [
+          "Rate is a distinct product from the brokerage account, so confirm you're opted into the right one",
+          "Best paired with Public's other features rather than used as a standalone bank alternative",
+        ],
+        pricing: "No fee for the standard cash account; a paid Premium tier adds features unrelated to the cash rate itself.",
+      },
+      {
+        name: "Moomoo",
+        bestFor: "New account holders taking advantage of a promotional rate",
+        description:
+          "[Moomoo](https://www.moomoo.com/) has used aggressive promotional cash rates to attract new account holders and asset transfers from other brokerages, which can make it genuinely competitive during the promotional window. The key question is what the rate reverts to once the promotion ends, so read the fine print on duration and any qualifying balance requirement.\n\nAs with the other multi-bank sweep brokerages on this list, confirm the FDIC coverage structure and whether the promotional rate applies to your full balance or only up to a stated cap.",
+        strengths: [
+          "Competitive promotional rate for new accounts and transfers",
+          "FDIC-insured sweep structure",
+          "Useful for a large one-time cash parking need during the promo window",
+        ],
+        limitations: [
+          "Promotional rate typically reverts to a lower standard rate after a set period",
+          "Best value is tied to being a new account holder, not an ongoing advantage for existing users",
+        ],
+        pricing: "Promotional rate for new/qualifying accounts for a limited period; standard rate applies afterward.",
+      },
+      {
+        name: "M1",
+        bestFor: "Investors who want cash management bundled with automated investing",
+        description:
+          "[M1](https://m1.com/)'s High-Yield Cash Account pairs a competitive rate with M1's broader automated-investing platform, so it fits best if you're already using M1 (or considering it) for your core investing rather than shopping for cash rate alone. M1 has offered temporary APY boosts for new accounts on top of its standard rate, similar to the promotional structure other brokerages on this list use.\n\nConfirm the current standard rate versus any active promotional boost before assuming the advertised number is permanent, since M1's boosted rates are explicitly time-limited.",
+        strengths: [
+          "Competitive standard rate bundled with M1's automated investing tools",
+          "FDIC-insured through M1's partner bank network",
+          "Periodic promotional APY boosts for new accounts",
+        ],
+        limitations: [
+          "Boosted promotional rates are time-limited and revert to a lower standard rate",
+          "Best fit if you also want M1's investing features, not purely a cash-parking account",
+        ],
+        pricing: "No fee for the standard High-Yield Cash Account; some features are gated behind M1 Plus.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Sweep Type", "Insurance", "Fee to Access Best Rate", "Standout Feature"],
+      rows: [
+        { name: "Fidelity", values: ["Money market fund (SPAXX)", "SIPC", "None", "No subscription needed for full rate"] },
+        { name: "Vanguard", values: ["Money market fund (VMFXX)", "SIPC (FDIC cash option available)", "None", "Investor-first low expense ratio"] },
+        { name: "Robinhood", values: ["FDIC multi-bank sweep", "FDIC", "Robinhood Gold subscription", "Extended multi-bank FDIC coverage"] },
+        { name: "Webull", values: ["FDIC multi-bank sweep", "FDIC", "Premium tier or balance threshold", "Balance/membership-tiered rate"] },
+        { name: "Public", values: ["FDIC multi-bank sweep", "FDIC", "None for standard rate", "Dedicated high-yield cash product"] },
+        { name: "Moomoo", values: ["FDIC multi-bank sweep", "FDIC", "None (promo for new accounts)", "Aggressive new-account promo rate"] },
+        { name: "M1", values: ["FDIC multi-bank sweep", "FDIC", "None for standard rate", "Bundled with automated investing"] },
+      ],
+    },
+    verdict:
+      "If you want the simplest, no-strings-attached option, Fidelity's money market sweep pays a competitive rate with no subscription, no minimum, and no promotional period that expires. Vanguard is nearly identical in structure and is the natural choice if you're already investing there.\n\nIf you specifically want FDIC deposit insurance rather than a money market fund's SIPC coverage, Public, M1, and Moomoo all offer straightforward FDIC-insured cash products without requiring a paid subscription for their standard rate. Robinhood and Webull can be competitive too, but only once you factor in whether you're already paying (or willing to pay) for their premium membership tiers — run the math on the subscription cost against the extra interest before assuming the top-tier rate is actually the better deal for you.",
+    sections: [
+      {
+        heading: "Money market fund vs bank sweep: why the structure matters more than this week's rate",
+        content:
+          "A money market fund sweep (Fidelity's SPAXX, Vanguard's VMFXX) invests your uninvested cash in a portfolio of short-term, high-quality debt and pays you the fund's actual yield, which moves continuously with short-term rates and is covered by SIPC as part of your brokerage account. A bank sweep instead deposits your cash at one or more partner banks and pays a rate the brokerage sets, which is covered by FDIC insurance the same way a savings account is.\n\nNeither structure is universally better — a money market fund tends to react to rate changes a bit differently than a bank sweep rate the brokerage adjusts at its own discretion, and the insurance type (SIPC vs FDIC) matters if you're specifically trying to maximize deposit insurance across accounts. Know which structure you're using before you assume the headline rate behaves like a savings account.",
+      },
+      {
+        heading: "Watch for promotional rates that expire",
+        content:
+          "Several brokerages on this list have used a temporary promotional rate, available to new accounts or new deposits for a set window, to compete for cash and asset transfers. That's a legitimate short-term strategy if you read the fine print, but it's not the same as a durable ongoing rate.\n\nBefore moving a large cash balance to chase a promotional rate, confirm the exact expiration date and what the standard rate reverts to afterward. A rate that's only 0.1–0.3 percentage points higher for a limited window rarely justifies the hassle of transferring assets, while a much larger, clearly time-boxed promotional gap can be worth the temporary move if you're prepared to reassess once it ends.",
+      },
+      {
+        heading: "How this compares to a standalone high-yield savings account",
+        content:
+          "A [high-yield savings account](/investing/high-yield-savings-calculator/) at an online bank is purpose-built for parking cash and often posts a rate independent of any brokerage relationship, which can beat a brokerage's default sweep rate depending on the week. The trade-off is convenience: money in a brokerage cash sweep is immediately available to fund a trade, while money in a separate savings account usually needs a transfer first, which can take a day or more.\n\nMany investors split the difference — keeping only the cash they expect to deploy soon in the brokerage sweep, and moving longer-term idle cash to a dedicated high-yield savings account or money market account for the best rate. See our [HYSA vs money market comparison](/compare/hysa-vs-money-market/) for how those two standalone options stack up against each other.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which brokerage pays the most interest on uninvested cash?",
+        answer:
+          "It changes often and depends on whether you're comparing standard rates or time-limited promotional rates. Rather than chasing the single highest number, compare the underlying sweep structure (money market fund vs FDIC bank sweep), any subscription required to unlock the top tier, and whether the rate is durable or promotional — then confirm the current number on the provider's own page.",
+      },
+      {
+        question: "Is brokerage cash sweep interest FDIC insured?",
+        answer:
+          "It depends on the structure. A bank sweep (used by Robinhood, Webull, Public, Moomoo, and M1) is FDIC-insured the same way a savings account is. A money market fund sweep (used by Fidelity and Vanguard by default) is covered by SIPC as part of your brokerage account instead, though these funds have an extremely strong track record of maintaining their value.",
+      },
+      {
+        question: "Do I need a paid subscription to get the best cash interest rate?",
+        answer:
+          "At some brokerages, yes — Robinhood's top rate requires a Robinhood Gold subscription, and Webull's top tier can require its premium membership or a minimum balance. Fidelity, Vanguard, Public, Moomoo's promo, and M1's standard rate are all accessible without a required paid subscription.",
+      },
+      {
+        question: "Should I keep my emergency fund in a brokerage cash sweep?",
+        answer:
+          "A brokerage sweep can work for cash you expect to deploy into investments soon, since it's immediately available to fund a trade. For a true emergency fund you don't plan to invest, a standalone high-yield savings account is usually a cleaner choice, since it's purpose-built for that job and easy to keep separate from money you're actively trading.",
+      },
+      {
+        question: "Why does my brokerage's cash sweep rate keep changing?",
+        answer:
+          "Both money market fund yields and bank sweep rates move with short-term interest rates, particularly the Fed funds rate, so your rate can shift whenever the broader rate environment changes. Money market funds tend to adjust continuously as their underlying holdings mature and roll over, while a bank sweep rate changes whenever the brokerage decides to reset it.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Money Market Funds", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/money-market-fund" },
+      { label: "SIPC — What SIPC Protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" },
+      { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+    ],
+    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd"],
+    calculatorLinks: [
+      { label: "High-Yield Savings Calculator", href: "/investing/high-yield-savings-calculator/" },
+      { label: "Investment Calculator", href: "/investing/" },
+    ],
+  },
   ...BUSINESS_ROUNDUPS,
 ];
 

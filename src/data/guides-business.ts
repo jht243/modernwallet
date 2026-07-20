@@ -110,4 +110,65 @@ export const BUSINESS_GUIDES: Guide[] = [
       },
     ],
   },
+
+  // Competitor-monitor pass (2026-07-20) — revenue-based loan sizing, grounded in the Fed's own
+  // Small Business Credit Survey rather than any single lender's internal application data.
+  {
+    slug: "how-revenue-affects-business-loan-approval",
+    title: "How Revenue Affects Your Business Loan Amount",
+    metaDescription:
+      "See how your business's revenue shapes what lenders approve — the funding gap by revenue size, and how to size a loan request lenders say yes to.",
+    h1: "How Revenue Affects the Business Loan Amount You Can Get",
+    cardBlurb: "The funding gap by revenue size, why growth rate matters as much as revenue level, and how to size a request lenders actually approve.",
+    intro:
+      "Revenue is one of the strongest signals a lender uses to size a business loan approval, but it isn't the only one — growth trend and lender type shift your odds of getting the full amount you ask for. This guide covers how revenue level and growth affect approval, where the funding gap is widest, and how to size a loan request that matches what a lender is actually likely to approve.",
+    sections: [
+      {
+        heading: "Why working capital needs rise with revenue",
+        body: "A business's working capital needs — inventory, payroll, receivables financing — scale roughly with its revenue, since more sales generally means more cash tied up in the gap between paying suppliers and collecting from customers. Lenders use this relationship in reverse: your revenue tells them roughly how large a working capital loan or credit line your business can realistically use and service.\n\nThis is why a loan request wildly out of proportion to your revenue draws extra scrutiny even with strong credit. A $500,000 loan request from a business doing $300,000 in annual revenue asks a lender to bet on future growth that hasn't happened yet, which is a fundamentally different (and harder) approval than sizing the request to current revenue.",
+      },
+      {
+        heading: "The funding gap: who gets the full amount they ask for",
+        body: "According to the Federal Reserve's [Small Business Credit Survey](https://www.fedsmallbusiness.org/reports/survey), 42% of applicants received the full amount of financing they sought, 36% received some or most of it, and 22% received none at all — meaning a majority of applicants get less than they asked for, not the full request. Small banks had the highest full-approval rate among lender types at 57%, well above the overall average, which is one reason a local bank or credit union is often worth trying before a larger, faster online lender.\n\nGrowth trend matters as much as revenue level. Among firms with steady month-over-month revenue growth of 10% or more, the approval rate reached 68% — well above the overall average — showing lenders weigh trajectory, not just your most recent revenue figure, when sizing an offer.",
+      },
+      {
+        heading: "Lower-revenue businesses see the widest gap",
+        body: "Smaller, lower-revenue businesses generally face a wider gap between what they request and what they're approved for, since a lender has less operating history and cash flow evidence to underwrite against. This isn't a reason to avoid applying — it's a reason to apply with a smaller, better-justified request and a lender suited to newer or smaller businesses, such as an [SBA Microloan](https://www.sba.gov/funding-programs/loans/microloans) intermediary or a local credit union, rather than starting with a large ask at a big bank.\n\nAs revenue and operating history grow, so does a lender's ability to underwrite based on real cash flow rather than projections, which is a large part of why approval odds and funded amounts both improve as a business matures — even before accounting for any change in credit profile.",
+      },
+      {
+        heading: "How to size a loan request lenders say yes to",
+        body: "Anchor your request to a specific, documented use — inventory for a confirmed order, payroll for a seasonal hiring push, equipment with a quote in hand — rather than a round number based on how much you'd like to have available. A specific, verifiable use is easier for a lender to underwrite and easier for you to justify if asked.\n\nRequest an amount your current revenue and cash flow can service comfortably, even before accounting for growth you expect but haven't yet realized. If your real need is larger than what your current numbers support, consider a smaller amount now paired with a revolving line of credit for the buffer, rather than one large term loan sized to a revenue projection.",
+      },
+      {
+        heading: "Build liquidity before you need it",
+        body: "Businesses that apply for financing with existing cash reserves and a clean, current set of financial statements generally see faster underwriting and better terms than businesses applying reactively during a cash crunch. Building even a modest cash buffer before you need financing gives you leverage: you can walk away from a bad offer instead of accepting whatever a lender proposes because you're out of options.\n\nKeep your bookkeeping current year-round, not just at tax time. A lender that can see clean, up-to-date financials moves faster and often extends better terms than one working from stale or incomplete records, since accurate numbers reduce the lender's own risk in the deal.",
+      },
+      {
+        heading: "Try smaller banks and credit unions first",
+        body: "Small banks post the highest full-approval rate of any lender type in the Fed's survey data, which makes them worth approaching before a larger bank or a fast online lender, especially for a business whose revenue doesn't yet support a large request. A community bank or credit union with local decision-making can also weigh factors — a long-standing relationship, local market knowledge — that a larger, more automated underwriting process may not.\n\nIf a smaller lender can't fund the full amount, a business line of credit or invoice factoring can fill the gap without forcing you to accept an oversized term loan just to get the total dollar amount you need — compare the trade-offs in our [small business financing guide](/guides/small-business-financing-guide/).",
+      },
+    ],
+    tools: [
+      { href: "/business-loan-payoff/", label: "Business loan payoff" },
+      { href: "/business-line-of-credit/", label: "Business line of credit" },
+      { href: "/invoice-factoring/", label: "Invoice factoring" },
+    ],
+    faqs: [
+      { question: "How much of a business loan will I actually get approved for?", answer: "It varies widely, but Federal Reserve survey data shows only 42% of applicants get the full amount they request, 36% get some or most of it, and 22% get none. Your odds of full funding improve with a smaller banking relationship, steady revenue growth, and a request sized to your current cash flow rather than a future projection." },
+      { question: "Does revenue growth matter more than revenue level for loan approval?", answer: "Growth trend carries real weight alongside your revenue level. Firms with steady month-over-month revenue growth of 10% or more saw a 68% approval rate in Federal Reserve survey data, well above the overall average, showing lenders weigh trajectory as well as your current revenue figure." },
+      { question: "Why do small banks approve more small business loans than big banks?", answer: "Small banks posted the highest full-approval rate among lender types in the Fed's Small Business Credit Survey, at 57%. Local decision-making and a direct banking relationship can factor favorably into underwriting in ways a larger, more automated process may not." },
+      { question: "How do I size a business loan request that's likely to be approved?", answer: "Anchor the request to a specific, documented use — inventory, payroll, or equipment with a real cost attached — sized to what your current revenue and cash flow can service. If your real need is larger, pair a smaller term loan with a revolving line of credit rather than requesting one oversized loan based on future projections." },
+      { question: "Do newer or lower-revenue businesses have a harder time getting a full loan approval?", answer: "Generally yes, since lenders have less operating history and cash flow evidence to underwrite against. An SBA Microloan intermediary or a local credit union is often a better starting point than a large bank for a newer or lower-revenue business, since they're built to work with smaller, less-established borrowers." },
+    ],
+    sources: [
+      {
+        label: "Federal Reserve — Small Business Credit Survey",
+        url: "https://www.fedsmallbusiness.org/reports/survey",
+      },
+      {
+        label: "U.S. Small Business Administration — Microloan Program",
+        url: "https://www.sba.gov/funding-programs/loans/microloans",
+      },
+    ],
+  },
 ];

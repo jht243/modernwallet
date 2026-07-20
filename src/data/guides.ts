@@ -2067,6 +2067,311 @@ export const GUIDES: Guide[] = [
     ],
   },
 
+  // ── Competitor-monitor pass (2026-07-20) — 5 consumer guides ──────────────────────────────
+  {
+    slug: "personal-loans-for-excellent-credit",
+    title: "Personal Loans for Excellent Credit: Rates & Requirements",
+    metaDescription:
+      "See the personal loan rate range excellent credit (720+) typically qualifies for, what lenders check beyond your score, and the risks worth knowing.",
+    h1: "Personal Loans for Excellent Credit: What Rate Can You Actually Get?",
+    cardBlurb: "Realistic rate ranges for 720+ scores, why a high score doesn't guarantee the best offer, and the fine print worth reading first.",
+    intro:
+      "Excellent credit — generally a [FICO Score](https://www.myfico.com/credit-education/credit-scores) of 720 or higher — puts you in line for a personal loan's lowest advertised rates, but it does not guarantee them. Lenders also weigh your income, your existing debt, and your debt-to-income ratio before quoting a final number. This guide covers the realistic rate range excellent credit unlocks, the requirements lenders check beyond your score, and the risks that catch even strong-credit borrowers off guard.",
+    sections: [
+      {
+        heading: "What counts as excellent credit for a personal loan",
+        body: "Excellent credit generally means a FICO Score of 720 or higher, the tier [myFICO](https://www.myfico.com/credit-education/credit-scores) classifies as \"very good\" to \"exceptional.\" Most personal loan lenders use this range as their cutoff for the lowest published rates and the highest loan amounts without extra documentation.\n\nA score above 720 is necessary for a lender's best offer, but it is not sufficient on its own. Lenders pull your full credit report, not just your score, and look at your payment history length, your mix of account types, and any recent hard inquiries before finalizing a rate.",
+      },
+      {
+        heading: "The rate range you can realistically expect",
+        body: "Personal loan rates for excellent credit typically land in the high single digits to mid-teens APR, though the exact number depends heavily on the lender, the loan term, and your specific financial profile. The [Federal Reserve's G.19 Consumer Credit release](https://www.federalreserve.gov/releases/g19/current/) tracks average finance rates on consumer loans and is a useful baseline for how rates move with the broader rate environment.\n\nDon't assume the lowest rate a lender advertises is the rate you'll get. Advertised \"as low as\" rates usually apply to a small share of approved borrowers — the ones with the strongest overall profile, not just the highest score. Get a real, personalized quote through prequalification before comparing lenders on rate alone.",
+      },
+      {
+        heading: "Why a high score doesn't guarantee the best offer",
+        body: "Your debt-to-income (DTI) ratio can override a strong score. A lender comparing two applicants with identical 750 scores will typically offer a better rate to the one with lower existing debt payments relative to income, because DTI predicts repayment capacity in a way a score alone cannot.\n\nIncome stability matters too. A gap in employment history, a recent job change, or self-employment income that's hard to verify can all push your quoted rate higher than your score alone would suggest, even at 750 or above. Lenders are pricing the whole picture, not just the three-digit number.",
+      },
+      {
+        heading: "How to shop without hurting your score",
+        body: "Prequalification uses a soft credit pull, which doesn't affect your score, and lets you see estimated rates from multiple lenders before you formally apply. Most major online lenders and banks offer this step, so use it to compare real numbers instead of advertised ranges.\n\nWhen you're ready to apply for real, the formal application triggers a hard inquiry, which can cause a small, temporary score dip. If you complete all your rate-shopping applications within a short window — most scoring models use a 14- to 45-day rate-shopping period — many models count them as a single inquiry for scoring purposes rather than several separate ones.",
+      },
+      {
+        heading: "What lenders ask for beyond your score",
+        body: "Expect to provide proof of income (pay stubs, tax returns, or bank statements for self-employed applicants), a government-issued ID, and your Social Security number for the credit pull. Some lenders also ask about the loan's purpose, since debt consolidation and home improvement loans are sometimes priced differently than general-purpose loans.\n\nAn existing banking relationship can help. Some banks and credit unions offer relationship discounts or faster underwriting to customers who already hold a checking or savings account there, on top of whatever their credit criteria would otherwise produce.",
+      },
+      {
+        heading: "The risks worth knowing even with excellent credit",
+        body: "An origination fee — typically 1% to 10% of the loan amount — is deducted from your payout by many online lenders before you ever see the cash, which raises your real cost above the advertised APR. Run any offer through our [personal loan calculator](/personal-loan/) to see the effective APR once a fee is included, not just the stated rate.\n\nOverborrowing is the other common trap. A strong approval can tempt you to borrow more than you need, since the rate looks attractive. Borrow the amount the underlying goal actually requires, and confirm the lender has no prepayment penalty in case you want to pay the loan off faster than scheduled.",
+      },
+    ],
+    tools: [
+      { href: "/personal-loan/", label: "Personal loan" },
+      { href: "/budget/", label: "Budget" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "How much can I borrow with excellent credit?", answer: "Loan amounts vary by lender, but excellent-credit borrowers commonly qualify for the higher end of a lender's range — often $50,000 or more from lenders that offer it — because income and DTI, not just the score, ultimately set your approved amount. Smaller, faster-funding loans are also available if you don't need the maximum." },
+      { question: "What affects my personal loan rate besides my credit score?", answer: "Your debt-to-income ratio, income stability, loan amount, and loan term all factor into your final rate. Two borrowers with the same score can receive different offers if one carries meaningfully more existing debt relative to income." },
+      { question: "Can I get a personal loan with no credit check?", answer: "Be cautious of any lender advertising \"no credit check\" personal loans — these are typically high-cost products aimed at borrowers who can't qualify elsewhere, and they don't reflect the rates available to excellent-credit borrowers. A legitimate lender will always check your credit before offering a real rate." },
+      { question: "Should I take out a personal loan if I have excellent credit?", answer: "It depends on the alternative. A fixed-rate personal loan can beat carrying a balance on a high-rate credit card indefinitely, but a 0% intro APR balance transfer card can beat both if you can pay off the balance within the promotional window — compare the real numbers with our [personal loan calculator](/personal-loan/) before deciding." },
+      { question: "Is a secured or unsecured personal loan better with excellent credit?", answer: "With excellent credit, an unsecured loan usually makes more sense, since your score alone can unlock a competitive rate without putting any collateral at risk. Secured personal loans exist and can shave a bit off the rate, but the risk of losing the pledged asset is rarely worth it once your credit already qualifies you for good unsecured terms." },
+      { question: "How does the personal loan calculator estimate my payment?", answer: "It uses your loan amount, interest rate, and term to compute a standard amortized monthly payment, then factors in any origination fee to show the effective APR on the cash you actually receive — not just the stated rate on the loan's face value." },
+    ],
+    sources: [
+      { label: "myFICO — Credit Score Education", url: "https://www.myfico.com/credit-education/credit-scores" },
+      { label: "Consumer Financial Protection Bureau — What is the difference between a mortgage interest rate and an APR?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-interest-rate-and-an-apr-en-135/" },
+      { label: "Federal Reserve — Consumer Credit (G.19)", url: "https://www.federalreserve.gov/releases/g19/current/" },
+    ],
+  },
+
+  {
+    slug: "balance-transfer-credit-card-approval-odds",
+    title: "Balance Transfer Card Approval Odds by Credit Score",
+    metaDescription:
+      "What credit score and income you realistically need to get approved for a balance transfer credit card — plus what to do if you're denied.",
+    h1: "Balance Transfer Credit Card Approval Odds: What It Really Takes",
+    cardBlurb: "The score and income issuers actually look for, why a good score alone isn't enough, and your next move if you're declined.",
+    intro:
+      "Approval for a balance transfer credit card depends on more than your credit score — issuers weigh your income, your existing utilization, and how much room they're willing to give a card that's about to absorb someone else's debt. This guide covers realistic approval odds by credit tier, what issuers check beyond the score, and what to do next if you're declined.",
+    sections: [
+      {
+        heading: "The score range that gets approved",
+        body: "Balance transfer cards with the longest 0% intro periods and no annual fee are generally reserved for good-to-excellent credit, commonly a [FICO Score](https://www.myfico.com/credit-education/credit-scores) around 690 and up, with the strongest offers going to scores near 720. Applicants in the fair range, roughly 580-669, are unlikely to be approved for a dedicated balance transfer card, though some issuers offer transfer options on cards built for building credit at a less favorable rate.",
+      },
+      {
+        heading: "Why income and DTI matter as much as your score",
+        body: "Issuers need evidence you can handle the transferred balance plus your existing obligations, so income and debt-to-income ratio carry real weight in the approval decision. A high score paired with a debt-to-income ratio that already looks stretched can still produce a denial, a lower credit limit than the balance you wanted to transfer, or approval with a shorter intro period than advertised.\n\nExisting utilization on your other cards factors in too. An issuer reviewing your application sees your total revolving debt across all your accounts, not just the balance you're trying to move, so high utilization elsewhere can work against you even with a strong score.",
+      },
+      {
+        heading: "The credit limit problem: approved but not enough",
+        body: "A common surprise for otherwise qualified applicants is being approved for a credit limit lower than the balance they wanted to transfer. If your new card's limit is smaller than the debt you're moving, you can only transfer part of it, and the remainder stays on the original card accruing interest.\n\nBefore applying, get a rough sense of your likely limit by checking your existing relationship with that issuer — if you already hold a card with them in good standing, they may extend a similar or higher limit on the new account. Otherwise, consider whether splitting a large balance across two transfer offers makes more sense than betting on one large approval.",
+      },
+      {
+        heading: "How to check your odds without a hard inquiry",
+        body: "Prequalification tools use a soft credit pull and let you see your estimated approval odds and offer terms before you submit a formal application, so use them first. A soft pull never affects your score, which makes it a low-risk way to compare multiple issuers before committing to a hard inquiry.\n\nWhen you do apply for real, the hard inquiry causes a small, typically temporary dip in your score. Space out applications rather than applying to several balance transfer cards in a short window, since a cluster of recent inquiries and new accounts can itself work against your approval odds.",
+      },
+      {
+        heading: "What to do if you're declined",
+        body: "Read the adverse action notice the issuer is required to send — it lists the specific reasons for the denial, which is more useful than guessing. Common reasons include insufficient credit history, high utilization, or a debt-to-income ratio the issuer considers too high for the requested limit.\n\nIf utilization is the issue, paying down existing balances before reapplying can meaningfully improve your odds within a billing cycle or two, since utilization is one of the more fast-moving factors in your score. If your score itself is the limiting factor, a nonprofit credit counseling agency accredited by the [National Foundation for Credit Counseling](https://www.nfcc.org/) can help you build a plan that doesn't rely on a balance transfer at all.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+      { href: "/personal-loan/", label: "Personal loan" },
+    ],
+    faqs: [
+      { question: "What credit score do I need to get approved for a balance transfer card?", answer: "Most issuers reserve their best balance transfer offers — the longest 0% periods, no annual fee — for scores around 690 and up, with the strongest terms going to scores near 720. Approval below that range is possible but less likely, and the terms are usually less favorable." },
+      { question: "Can I get approved for a balance transfer card with a low credit score?", answer: "It's unlikely for a dedicated balance transfer card, since issuers reserve those for good-to-excellent credit. If your score is in the fair range, a card built for building credit, a [personal loan](/personal-loan/), or a nonprofit debt management plan are more realistic paths." },
+      { question: "Does applying for a balance transfer card hurt my credit score?", answer: "A formal application triggers a hard inquiry, which typically causes a small, temporary dip. Checking your prequalification odds first uses a soft pull instead, which doesn't affect your score at all." },
+      { question: "Why was I approved for a lower limit than my balance?", answer: "Issuers set your limit based on your full credit profile, not just the size of the debt you're trying to move, so a lower-than-expected limit is common even with a decent score. If this happens, you can transfer what fits and leave the rest on your original card, or consider splitting the balance across two offers." },
+      { question: "What's next if my balance transfer application is denied?", answer: "Read the adverse action notice for the specific reason, since it's usually tied to utilization, credit history length, or debt-to-income ratio rather than the score alone. Paying down existing balances before reapplying, or exploring a personal loan or nonprofit credit counseling in the meantime, are the most common next steps." },
+    ],
+    sources: [
+      { label: "myFICO — Credit Score Education", url: "https://www.myfico.com/credit-education/credit-scores" },
+      { label: "CFPB — Credit Cards", url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/" },
+      { label: "National Foundation for Credit Counseling", url: "https://www.nfcc.org/" },
+    ],
+  },
+
+  {
+    slug: "how-to-choose-a-balance-transfer-credit-card",
+    title: "How to Choose a Balance Transfer Credit Card",
+    metaDescription:
+      "How to pick between a dedicated 0% balance transfer card and a rewards card with a transfer offer — based on your score, timeline, and payoff plan.",
+    h1: "How to Choose a Balance Transfer Credit Card",
+    cardBlurb: "Dedicated 0% card vs a rewards card with a transfer offer — the four questions that actually decide it.",
+    intro:
+      "The right balance transfer credit card depends less on which offer looks flashiest and more on four specific answers: your credit score, how much you're moving, how long you genuinely need to pay it off, and whether you want anything beyond debt payoff from the card. This guide walks through the decision so you pick a card that matches your actual payoff timeline, not just its advertised intro period.",
+    sections: [
+      {
+        heading: "Dedicated 0% cards vs rewards cards with a transfer offer",
+        body: "A dedicated balance transfer card is built for one job: the longest possible 0% intro period, often 15 to 21 months, usually with no annual fee, but few or no ongoing rewards once the intro period ends. A rewards card with a shorter transfer offer — commonly 12 to 15 months at 0% — earns points, miles, or cash back on new spending, which can be worth it if you also plan to keep using the card after the debt is gone.\n\nPick the dedicated card when payoff speed matters more than anything else. Pick the rewards card when your transfer balance is smaller relative to your income, you're confident you'll pay it off well within the shorter window, and you want a card you'll keep using afterward.",
+      },
+      {
+        heading: "Do the transfer fee math before you apply",
+        body: "Nearly every balance transfer, even at 0% interest, carries an upfront fee — typically 3% to 5% of the amount moved, charged at the time of transfer regardless of the promotional rate. On a $6,000 balance, a 3% fee costs $180 and a 5% fee costs $300, charged immediately even though you're paying 0% interest on the balance itself.\n\nCompare that fee against what you're currently paying in interest. If your existing card charges 22% APR and you'd otherwise carry the $6,000 balance for a year, you'd pay roughly $1,300 in interest — making even a 5% transfer fee a clear net win. The fee rarely changes the decision, but always confirm the exact percentage before committing, since it varies by issuer.",
+      },
+      {
+        heading: "Match the intro period to your real payoff timeline",
+        body: "Divide your transfer balance by the number of months in the intro period to get the fixed payment that clears it in full before interest kicks back in. A $6,000 balance on an 18-month 0% offer needs $333 a month; the same balance on a 12-month offer needs $500 a month.\n\nBe honest about which payment you can actually sustain every month without fail. Choosing a shorter intro period with a payment you can't consistently make defeats the purpose — any balance still open when the promotional period ends starts accruing interest at the card's standard rate, which is often well above what you were paying before.",
+      },
+      {
+        heading: "What happens if you don't pay it off in time",
+        body: "A true 0% intro APR card charges interest only going forward on whatever balance remains once the promotional period ends — it does not charge you retroactively for the intro months. That's different from a deferred-interest offer, more common on store cards, which can charge interest back to the original transfer date on the full amount if any balance is left when the period ends.\n\nRead your specific card's terms for the words \"deferred interest\" before assuming your offer works the safer way. If your card is a true 0% intro APR offer and you still have a balance when the period ends, you'll pay standard interest only on what's left — costly, but far less costly than a deferred-interest surprise.",
+      },
+      {
+        heading: "A simple decision checklist",
+        body: "Check your score first — a [FICO Score](https://www.myfico.com/credit-education/credit-scores) around 690 or higher opens up the best dedicated 0% offers, while scores below that range should look at a personal loan or a card built for building credit instead. Then divide your balance by your realistic monthly payment capacity to find the minimum intro period length you actually need, and only compare offers that meet or beat it.\n\nFinally, decide whether you want a rewards card you'll keep using afterward or a dedicated card you'll likely close once the balance is paid. There's no wrong answer — the right card is whichever one you'll actually pay off on schedule.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+      { href: "/personal-loan/", label: "Personal loan" },
+    ],
+    faqs: [
+      { question: "Is a dedicated balance transfer card better than a rewards card with a transfer offer?", answer: "It depends on your payoff timeline. A dedicated card usually offers the longest 0% period, which is better if you need more time. A rewards card's shorter 0% period can still work if you're confident you'll pay off the balance quickly and want to keep earning rewards on the card afterward." },
+      { question: "How much does a balance transfer cost even at 0% interest?", answer: "Almost every balance transfer charges an upfront fee, typically 3% to 5% of the amount moved, charged at the time of the transfer regardless of the 0% rate. Compare that one-time fee against the interest you'd otherwise pay to confirm the transfer still saves you money." },
+      { question: "How do I pick the right intro period length?", answer: "Divide your balance by the monthly payment you can realistically sustain every month, and choose an intro period at least that long. Picking a shorter period with a payment you can't consistently make risks leaving a balance that starts accruing interest once the promotion ends." },
+      { question: "What's the difference between true 0% APR and deferred interest on a balance transfer?", answer: "A true 0% intro APR card charges interest only on the remaining balance going forward once the period ends. A deferred-interest offer can charge interest retroactively on the full original amount if any balance is left — check your card's specific terms for the words \"deferred interest\" to know which one you have." },
+      { question: "Should I choose a balance transfer card or a personal loan?", answer: "A balance transfer card can be cheaper if you can pay off the balance within the 0% window, since a personal loan charges interest from day one. If you need longer than the intro period to pay it off, a fixed-rate [personal loan](/personal-loan/) often ends up cheaper — run both scenarios before deciding." },
+    ],
+    sources: [
+      { label: "CFPB — Credit Cards", url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/" },
+      { label: "myFICO — Credit Score Education", url: "https://www.myfico.com/credit-education/credit-scores" },
+    ],
+  },
+
+  {
+    slug: "student-loan-standard-repayment-plan",
+    title: "Student Loan Standard Repayment Plan: 2026 Changes",
+    metaDescription:
+      "The federal Standard Repayment Plan changed in 2026. See how the new Tiered Standard Plan differs from the legacy 10-year plan and which one applies to you.",
+    h1: "Student Loan Standard Repayment Plan: What Changed in 2026",
+    cardBlurb: "Legacy 10-year Standard Plan vs the new balance-based Tiered Standard Plan — and which one your loans actually fall under.",
+    intro:
+      "Federal student loan repayment changed for new borrowers starting July 1, 2026, when the [One Big Beautiful Bill Act](https://www.congress.gov/bill/119th-congress/house-bill/1) replaced the old menu of repayment plans with two options: a new Tiered Standard Repayment Plan and a new income-driven plan called the Repayment Assistance Plan (RAP). This guide explains how the legacy Standard Repayment Plan worked, what's different about the new Tiered Standard Plan, and which one applies to your loans.",
+    sections: [
+      {
+        heading: "How the legacy Standard Repayment Plan worked",
+        body: "The legacy Standard Repayment Plan sets a fixed monthly payment over a flat 10-year term, regardless of how much you borrowed. It was the default plan for federal student loans for decades and remains the fastest way to become debt-free among plans that were available before the 2026 changes, since no other plan pays off the balance faster.\n\nBecause the term never changes with your balance, a large loan balance under the legacy Standard Plan can mean a high monthly payment — sometimes high enough that borrowers with heavy debt loads chose an income-driven plan instead, trading a longer timeline for a lower payment.",
+      },
+      {
+        heading: "What's new: the Tiered Standard Repayment Plan",
+        body: "The Tiered Standard Repayment Plan, available to borrowers with loans first disbursed on or after July 1, 2026, adjusts its term based on your total outstanding balance instead of using one fixed 10-year term for everyone. Borrowers with smaller balances get a shorter term, while borrowers with larger balances are stretched across a longer one — the published tiers run from 10 years up to 25 years depending on how much you owe.\n\nThe Tiered Standard Plan is not income-driven. There's no income recertification, no payment tied to what you earn, and no loan forgiveness at the end of the term — you simply pay off the full balance plus interest over whichever tier your balance falls into. That makes it a closer cousin to the legacy Standard Plan than to an income-driven plan like RAP, just with a term that scales to your debt.",
+      },
+      {
+        heading: "Legacy Standard vs Tiered Standard, side by side",
+        body: "The core difference is simple: the legacy Standard Plan uses one fixed term (10 years) for every borrower, while the Tiered Standard Plan uses a variable term set by your balance, so a bigger loan doesn't force a payment as high as the legacy plan would have required. Both are non-income-driven, both charge interest the same way a standard loan does, and neither offers forgiveness at the end — the only real trade is monthly payment size versus total time and total interest paid.\n\nA smaller loan on the Tiered Standard Plan can land in the same 10-year tier as the legacy plan, producing an essentially identical payment. A larger loan lands in a longer tier, lowering the monthly payment compared to what the legacy 10-year plan would have demanded, but extending the payoff timeline and increasing total interest paid over the life of the loan.",
+      },
+      {
+        heading: "Which plan applies to your loans",
+        body: "Your plan options depend on when your loans were first disbursed, not on when you're reading this. Loans disbursed before July 1, 2026 generally keep access to the repayment options that existed under the prior system, subject to the transition rules servicers are applying. Loans first disbursed on or after July 1, 2026 choose between the new Tiered Standard Plan and RAP, the new income-driven option, as their primary choices going forward.\n\nBorrowers on legacy income-driven plans like Income-Contingent Repayment (ICR) or Pay As You Earn (PAYE) should know those plans are being phased out, with a full sunset date of July 1, 2028 under the law — your servicer will contact you before you're required to transition to one of the new options. Log into your account at [Federal Student Aid](https://studentaid.gov/) to confirm which plans you're currently eligible for; servicers are actively updating borrower options as the new system rolls out.",
+      },
+      {
+        heading: "Is the Standard Plan right for you?",
+        body: "Choose a Standard-style plan (legacy or tiered) when you want the lowest total interest cost and can comfortably afford the resulting monthly payment, since paying off the loan faster always saves money compared to a longer income-driven timeline. Both Standard-style plans front-load the payoff instead of stretching it, which suits borrowers whose income is stable and high enough relative to their balance.\n\nIf your income is lower relative to your balance, or your income varies year to year, RAP's income-based payment may fit better even though it takes longer to pay off, since it's specifically designed to keep payments affordable as your income changes. Run your numbers on the [Federal Student Aid loan simulator](https://studentaid.gov/loan-simulator/) before choosing, since the right plan depends entirely on your specific balance, income, and how much payment flexibility you actually need.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "What is the Tiered Standard Repayment Plan?", answer: "It's the new non-income-driven repayment plan for federal loans first disbursed on or after July 1, 2026, under the One Big Beautiful Bill Act. Instead of a flat 10-year term for everyone, your term — 10 to 25 years — is set by your total outstanding balance, so larger balances get a longer term and a lower monthly payment." },
+      { question: "Is the legacy Standard Repayment Plan still available?", answer: "Legacy plan availability depends on when your loans were first disbursed and the transition rules your servicer is applying. Loans first disbursed on or after July 1, 2026 use the new Tiered Standard Plan or RAP instead; check your account at studentaid.gov to confirm your current options." },
+      { question: "Which is cheaper: the legacy Standard Plan or the Tiered Standard Plan?", answer: "Whichever plan pays off your balance fastest generally costs less in total interest, since interest accrues over the whole repayment period. For a smaller balance that falls into a shorter tier, the two plans can cost roughly the same; for a larger balance, the Tiered Standard Plan's longer term lowers the monthly payment but increases total interest paid." },
+      { question: "Does the Tiered Standard Plan offer loan forgiveness?", answer: "No. Neither the legacy Standard Plan nor the new Tiered Standard Plan offers forgiveness at the end of the term — you pay off the full balance plus interest. Forgiveness after a set number of payments is a feature of income-driven plans like RAP, not the Standard-style plans." },
+      { question: "What happened to Income-Contingent Repayment (ICR) and PAYE?", answer: "Both are being phased out under the One Big Beautiful Bill Act, with a full sunset date of July 1, 2028. Borrowers currently on ICR or PAYE will be transitioned to one of the new plans before that date; your loan servicer will contact you with your specific timeline and options." },
+      { question: "How do I find out which repayment plan I'm currently on?", answer: "Log into your account at Federal Student Aid (studentaid.gov) to see your current plan and the options available to you. The site also offers a loan simulator that estimates your monthly payment and total cost under each plan you qualify for." },
+    ],
+    sources: [
+      { label: "Federal Student Aid (U.S. Department of Education) — studentaid.gov", url: "https://studentaid.gov/" },
+      { label: "Federal Student Aid — Loan Simulator", url: "https://studentaid.gov/loan-simulator/" },
+      { label: "Congress.gov — H.R.1, One Big Beautiful Bill Act", url: "https://www.congress.gov/bill/119th-congress/house-bill/1" },
+    ],
+  },
+
+  {
+    slug: "side-hustle-ideas",
+    title: "Side Hustle Ideas: Realistic Pay, Effort & Tax Rules",
+    metaDescription:
+      "Side hustle ideas grouped by real hourly pay and startup effort — plus the tax rules (1099s, self-employment tax) most guides leave out.",
+    h1: "Side Hustle Ideas: What Actually Pays, and What It Really Costs You in Time",
+    cardBlurb: "Side hustles grouped by how fast you get paid and what they really net after expenses — plus the tax rules most lists skip.",
+    intro:
+      "The right side hustle depends less on a long list of ideas and more on one honest trade-off: how fast you need cash versus how much of your own time and money you're willing to put in first. This guide groups realistic side hustles by that trade-off — quick cash for your time, selling what you already own, selling a skill, and building an asset that pays later — and covers the tax rules on side income that most lists skip entirely.",
+    sections: [
+      {
+        heading: "Quick cash for your time: gig and task apps",
+        body: "Rideshare and delivery driving (passenger rides, food and grocery delivery) pay out within days and need no upfront investment beyond a vehicle you likely already own, but gas, vehicle wear, and insurance eat into the advertised per-trip rate more than most first-timers expect. Track your actual mileage from day one — the standard [IRS mileage rate](https://www.irs.gov/tax-professionals/standard-mileage-rates) is a real deduction against this income and materially changes your net pay per hour.\n\nTask and errand apps (moving help, furniture assembly, minor repairs) typically pay more per hour than driving apps because the work requires more skill or physical effort, and many let you set your own rate. Pet sitting and dog walking through a marketplace app fall in the same category: fast approval, modest but reliable pay, and almost no startup cost.",
+      },
+      {
+        heading: "Selling what you already own",
+        body: "Selling used clothing, electronics, and household items through a resale marketplace turns idle possessions into cash within days, with the platform's fee (typically 5% to 20% of the sale) as the only real cost. This is the fastest path to cash on this list because there's no client relationship to build and no skill to market — just an item, a listing, and a buyer.\n\nThe income adds up faster than people expect once they treat it as a recurring habit — a monthly closet and garage sweep — rather than a one-time declutter. It's not scalable the way a skill-based hustle is, but it's the lowest-effort entry point if you need cash this week.",
+      },
+      {
+        heading: "Selling a skill: freelancing and tutoring",
+        body: "Freelance work — writing, design, bookkeeping, virtual assistance — pays significantly more per hour than gig-app driving once you have even a small portfolio and one or two repeat clients, but the first month or two often means underpricing your time to build that portfolio. Private tutoring works similarly: pay per hour is strong relative to task apps, but building a steady client base takes weeks, not days.\n\nThe honest trade-off here is time-to-first-dollar versus long-term hourly rate. Gig-app work pays from day one at a modest rate; freelancing and tutoring pay little or nothing for the first few weeks while you build proof of work, then can pay two to three times more per hour once you have it.",
+      },
+      {
+        heading: "Building an asset: digital products and content",
+        body: "Digital products (templates, courses, an e-book, a print-on-demand shop) and content platforms (a YouTube channel, a blog, a Substack) can pay for months or years after the initial work, but almost all of that work happens before the first dollar arrives — often hundreds of unpaid hours. This is the opposite trade-off from gig-app driving: little to no pay upfront, in exchange for a shot at income that keeps arriving with no new hourly work.\n\nThe realistic failure mode is spending months on a product or channel that never finds an audience. Validate demand cheaply first — a small paid pre-order, a free sample chapter, a handful of short-form posts — before committing serious time to the full version. If a small test doesn't get any real interest, a larger version usually won't either.\n\nThis category overlaps with, but isn't the same as, [passive income](/guides/passive-income-ideas/): a digital product needs real upfront work and often ongoing marketing to keep selling, so it's better described as a side hustle with a long payoff than something that runs itself from day one.",
+      },
+      {
+        heading: "The tax rules most side hustle lists skip",
+        body: "Side hustle income is taxable starting with your very first dollar, whether or not you receive a tax form for it. Payment apps and marketplaces are required to send you a Form 1099-K once your payments cross the IRS reporting threshold for the year, but the IRS is clear that all income is reportable regardless of whether a 1099 arrives.\n\nMost side hustlers report this income on Schedule C as self-employment income, which also triggers self-employment tax — an additional 15.3% covering Social Security and Medicare, on top of your regular income tax rate — once net self-employment earnings exceed $400 in a year. Setting aside 25% to 30% of side hustle income for taxes as you earn it, rather than at filing time, avoids a painful surprise the following April.",
+      },
+      {
+        heading: "Red flags worth avoiding",
+        body: "Be skeptical of any \"side hustle\" that requires you to pay a large upfront fee for training, a starter kit, or exclusive access before you can start earning — legitimate gig platforms and marketplaces never charge you to join. The [FTC](https://consumer.ftc.gov/articles/job-scams) has flagged this pattern, often paired with vague promises of guaranteed high pay, as a recurring scam structure.\n\nAlso watch for \"reshipping\" or \"money transfer\" job offers that ask you to receive and forward packages or funds on someone else's behalf — these are common vehicles for fraud and can expose you to legal liability even if you didn't realize what was happening.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "What's the fastest side hustle to get paid from?", answer: "Selling items you already own through a resale marketplace typically pays out fastest, often within days, since there's no client relationship to build first. Gig and task apps are close behind, usually paying out within a few days of completed work." },
+      { question: "Which side hustles pay the most per hour?", answer: "Freelance and skill-based work (writing, design, bookkeeping, tutoring) generally pays the most per hour once you've built even a small portfolio or client base, but it takes longer to reach that rate than gig-app work, which pays a modest amount from day one." },
+      { question: "Do I have to pay taxes on side hustle income?", answer: "Yes. All side hustle income is taxable from the first dollar, whether or not you receive a 1099 form. Most people report it on Schedule C, which also triggers self-employment tax once net earnings exceed $400 for the year." },
+      { question: "What is self-employment tax and how much is it?", answer: "Self-employment tax is an additional 15.3% covering Social Security and Medicare, charged on top of your regular income tax once your net self-employment earnings exceed $400 in a year. Setting aside 25% to 30% of side hustle income as you earn it helps cover both taxes at filing time." },
+      { question: "Is passive income the same as a side hustle?", answer: "Not quite. A side hustle like freelancing, driving, or selling items requires ongoing time for ongoing pay. A digital product or content channel can eventually generate income with less new work per dollar, but it still starts with significant upfront effort — see our [passive income guide](/guides/passive-income-ideas/) for streams that are closer to truly hands-off." },
+      { question: "How do I avoid side hustle scams?", answer: "Never pay an upfront fee to start a legitimate gig job, and be wary of any offer promising guaranteed high pay for vague work. Reshipping or money-transfer job offers are common fraud vehicles — the FTC recommends researching any company thoroughly before providing personal or banking information." },
+    ],
+    sources: [
+      { label: "IRS — Understanding Your Form 1099-K", url: "https://www.irs.gov/businesses/small-businesses-self-employed/understanding-your-form-1099-k" },
+      { label: "IRS — Self-Employment Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" },
+      { label: "FTC — Job Scams", url: "https://consumer.ftc.gov/articles/job-scams" },
+    ],
+  },
+
+  {
+    slug: "chase-travel-portal-guide",
+    title: "Chase Travel Portal: How Points Boost & Redemptions Work",
+    metaDescription:
+      "How the Chase Travel portal values your Ultimate Rewards points, which cards unlock Points Boost, and when transferring to a partner beats the portal.",
+    h1: "Chase Travel Portal: How It Works and When to Use It",
+    cardBlurb: "Baseline point value, which cards unlock Points Boost, and when transferring to an airline or hotel partner beats booking through the portal.",
+    intro:
+      "The [Chase Travel](https://www.chase.com/personal/credit-cards/education/basics/how-to-use-chase-ultimate-rewards-travel-portal) portal lets Ultimate Rewards cardholders book flights and hotels directly with points, at a baseline value of 1 cent per point for every eligible card, with select bookings tagged Points Boost worth more. This guide covers how the portal prices your points, which cards unlock the higher Points Boost value, and when transferring points to an airline or hotel partner instead of booking through the portal gets you more for the same points.",
+    sections: [
+      {
+        heading: "What the Chase Travel portal actually is",
+        body: "The Chase Travel portal is a booking site built into your Ultimate Rewards account where you search flights, hotels, rental cars, and cruises and pay with points instead of cash. It works like a normal travel booking site — search dates, compare results, book — except your account balance decreases in points rather than dollars.\n\nEvery Ultimate Rewards-earning card can use the portal for standard bookings, but the point value and access to certain features scale up with premium cards, which is the main reason the \"right\" card for maximizing the portal isn't the same for every traveler.",
+      },
+      {
+        heading: "Which cards can access the portal",
+        body: "Any card that earns Ultimate Rewards points — including Chase Freedom, Sapphire Preferred, Sapphire Reserve, and the Ink Business line — can book through the portal at the baseline 1-cent-per-point value. Points Boost, the elevated redemption rate on select bookings, is limited to a smaller set of premium cards: Sapphire Reserve, Sapphire Preferred, Sapphire Reserve for Business, J.P. Morgan Reserve, Ink Business Preferred, and Ink Business Plus.\n\nIf you hold a no-annual-fee Freedom card, you can still book through the portal at the standard rate, but you won't see the boosted Points Boost pricing on tagged listings the way a Sapphire or premium Ink cardholder would.",
+      },
+      {
+        heading: "How Points Boost changes your point value",
+        body: "Points Boost is a rotating set of hotel and flight listings, marked with a rocket icon in search results, where your points are worth more than the standard 1-cent baseline for a limited time. On a Sapphire Reserve, boosted listings can be worth up to 2 cents per point; on a Sapphire Preferred, boosted listings top out around 1.5 cents per point — both a meaningful jump over the 1-cent rate every other portal booking gets.\n\nIf you held an eligible card before the Points Boost overhaul rolled out, points you earned before the changeover may still redeem at your card's old fixed rate for a limited transition window — check your account for a specific notice rather than assuming the 1-cent baseline applies to every point in your balance.\n\nThe catch is that Points Boost only applies to the specific listings Chase tags, not to every hotel or flight in a search. If your exact dates or preferred property aren't part of a current Points Boost offer, you're back to the standard 1-cent value for that booking, so it pays to compare a few date or property options before assuming you've found the best redemption.",
+      },
+      {
+        heading: "Portal vs transferring to a travel partner",
+        body: "Ultimate Rewards points can also be transferred, usually 1:1, to a set of airline and hotel partners, and that route can beat even a Points Boost redemption when the partner's own award chart prices a specific flight or hotel stay below what the points-per-dollar math implies through the portal. Transferring is generally the better move for a premium cabin flight or a luxury hotel stay where the partner's award price is unusually low relative to cash cost.\n\nThe portal is generally the simpler, safer choice for economy flights, budget-to-midrange hotels, and last-minute bookings, since it doesn't require researching a specific partner's award chart or worrying about partner award availability, which can be limited on popular routes. As a rule of thumb: check a transfer partner first for a big-ticket premium redemption, and default to the portal (ideally a Points Boost listing) for everyday travel.",
+      },
+      {
+        heading: "How to find and book a Points Boost offer",
+        body: "Log into the Chase Travel portal, search your dates as usual, and look for the rocket icon and \"Points Boost\" tag on individual listings in your results — boosted offers are also sometimes featured at the top of category pages. Because the offers rotate and are tied to specific inventory, availability changes; searching a few days on either side of your ideal dates can surface a boosted listing you'd otherwise miss.\n\nIf you need help with a booking made through the portal — a cancellation, a change, or a dispute — contact Chase Travel support directly through the number or chat listed in your account, rather than the hotel or airline itself, since the reservation was made through Chase and changes typically need to go through them first.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+    ],
+    faqs: [
+      { question: "What is the baseline value of a Chase Ultimate Rewards point in the travel portal?", answer: "Every Ultimate Rewards-earning card books through the portal at a baseline of 1 cent per point. Points Boost listings, available to Sapphire and premium Ink cardholders, are worth more — up to 1.5 cents on Sapphire Preferred and up to 2 cents on Sapphire Reserve." },
+      { question: "Which credit cards can access Chase's travel portal?", answer: "Any Ultimate Rewards-earning card, including Chase Freedom, Sapphire Preferred, and Sapphire Reserve, can book through the portal at the standard rate. Points Boost's elevated rates are limited to Sapphire Reserve, Sapphire Preferred, Sapphire Reserve for Business, J.P. Morgan Reserve, Ink Business Preferred, and Ink Business Plus." },
+      { question: "How do I find Points Boost offers in the portal?", answer: "Search your travel dates as usual and look for listings tagged with a rocket icon and the words \"Points Boost\" in your results. Offers rotate and apply to specific inventory, so checking a few nearby dates can turn up a boosted listing you'd otherwise miss." },
+      { question: "Is it better to book through the portal or transfer points to a partner?", answer: "For everyday economy flights and mid-range hotels, the portal — ideally a Points Boost listing — is simpler and usually competitive. For premium cabin flights or luxury hotel stays, transferring points to an airline or hotel partner can be worth meaningfully more per point if that partner's award price is unusually low." },
+      { question: "Does the Chase Travel portal charge any fees?", answer: "Booking through the portal itself doesn't add a separate fee beyond the points (or points-plus-cash) price shown at checkout. Standard airline and hotel policies, like change or cancellation fees from the airline or property, can still apply depending on the fare or rate rules of what you booked." },
+      { question: "Can I cancel or change a booking made through the Chase Travel portal?", answer: "Yes, but changes generally need to go through Chase Travel support rather than the airline or hotel directly, since the reservation was made through Chase's system. Refund and change policies depend on the specific fare or rate you booked, so review those terms before booking if flexibility matters to you." },
+    ],
+    sources: [
+      { label: "Chase — How to use the Chase Travel℠ portal", url: "https://www.chase.com/personal/credit-cards/education/basics/how-to-use-chase-ultimate-rewards-travel-portal" },
+      { label: "Chase Travel — How Points Boost Works", url: "https://www.chase.com/travel/guide/trips/chase-sapphire-points-boost-benefits-guide" },
+    ],
+  },
+
   ...BUSINESS_GUIDES,
 ];
 

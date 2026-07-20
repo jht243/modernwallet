@@ -27,6 +27,7 @@ import TrumpAccountCalculator from "./TrumpAccountCalculator";
 import CollegeSavings529Calculator from "./CollegeSavings529Calculator";
 import CoastFireCalculator from "./CoastFireCalculator";
 import BusinessLoanPayoffCalculator from "./BusinessLoanPayoffCalculator";
+import PersonalLoanCalculator from "./PersonalLoanCalculator";
 import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
 import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
@@ -74,6 +75,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Business loan payoff — competitor-monitor pass (2026-07-15): standard amortizing term-loan
   // payoff + extra-payment scenario (distinct from the factor-rate MCA/factoring tools below).
   "business-loan-payoff": BusinessLoanPayoffCalculator,
+  // Personal loan — competitor-monitor pass (2026-07-20): amortizing personal-loan payment +
+  // origination-fee-aware effective APR (the gap most basic personal loan calculators skip).
+  "personal-loan": PersonalLoanCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,

@@ -22,4 +22,5 @@ export const BUSINESS_COMPARISON_SLUGS = new Set<string>([
 
 export const BUSINESS_GUIDE_SLUGS = new Set<string>([
   "small-business-financing-guide",
+  "how-revenue-affects-business-loan-approval",
 ]);
