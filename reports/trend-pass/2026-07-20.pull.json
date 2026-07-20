@@ -1,0 +1,154 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-07-13",
+    "end": "2026-07-20",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "brokerage account vs trump account",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.1667,
+      "position": 10.33
+    },
+    {
+      "query": "401k administrators for small business",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 81.73
+    },
+    {
+      "query": "401k early withdrawal calculator",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 57.33
+    },
+    {
+      "query": "401 k withdrawal calculator",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 82.25
+    },
+    {
+      "query": "401k companies for small business",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 42.33
+    },
+    {
+      "query": "401k early distribution tax calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 67.33
+    },
+    {
+      "query": "10 best money market funds",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "401k alternatives for small business",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88
+    },
+    {
+      "query": "401k companies for employers",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 119
+    },
+    {
+      "query": "401k distribution tax calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 77
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/",
+      "clicks": 4,
+      "impressions": 189,
+      "ctr": 0.0212,
+      "position": 9.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-savings-account/",
+      "clicks": 2,
+      "impressions": 60,
+      "ctr": 0.0333,
+      "position": 7.88
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+      "clicks": 2,
+      "impressions": 35,
+      "ctr": 0.0571,
+      "position": 36.14
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/high-yield-savings-calculator/",
+      "clicks": 1,
+      "impressions": 220,
+      "ctr": 0.0045,
+      "position": 9.9
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "clicks": 1,
+      "impressions": 58,
+      "ctr": 0.0172,
+      "position": 11.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+      "clicks": 1,
+      "impressions": 50,
+      "ctr": 0.02,
+      "position": 27.76
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-estate-planning-software/",
+      "clicks": 1,
+      "impressions": 46,
+      "ctr": 0.0217,
+      "position": 60.87
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+      "clicks": 1,
+      "impressions": 39,
+      "ctr": 0.0256,
+      "position": 8.49
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/",
+      "clicks": 1,
+      "impressions": 37,
+      "ctr": 0.027,
+      "position": 7.62
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/iowa/",
+      "clicks": 1,
+      "impressions": 32,
+      "ctr": 0.0312,
+      "position": 7.38
+    }
+  ],
+  "top10_pages_total_clicks": 15,
+  "top10_queries_total_clicks": 1
+}

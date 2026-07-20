@@ -20,4 +20,4 @@ that already exists, so an empty ledger is safe on night one.
 
 | # | Theme | Entities | Format | Caught | Status | Coverage / pointers |
 |---|---|---|---|---|---|---|
-| _(none yet)_ | | | | | | |
+| 1 | 401(k) — small-business plan setup & withdrawal/distribution tax | 401(k), small-business 401k providers/administrators, 401k withdrawal tax, 401k distribution tax | roundup / comparison / calculator | 2026-07-20 | EVERGREEN | Fully covered by existing pages: roundup/best-401k-providers-for-small-business, compare/gusto-401k-vs-paychex-401k, compare/sep-ira-vs-solo-401k, compare/simple-ira-vs-401k, retirement/401k-early-withdrawal-calculator, retirement/401k-calculator, retirement/rmd-calculator, guides/401k-beneficiary-rules. 4 candidates mechanically generated and all DROPPED as near-dups by Layer-4 adversarial review (see ledger.md 2026-07-20 rows). 0 new pages this run — corroborates the independent 2026-07-18 ga4-top-pages-pass "no gap" finding for the same vertical.
