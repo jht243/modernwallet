@@ -220,7 +220,84 @@ export const COMPLIANCE_ALERTS: ComplianceAlert[] = [
         url: "https://lis.virginia.gov/bill-details/20261/HB5",
       },
     ],
-    relatedSlugs: ["ny-llc-transparency-act", "california-climate-disclosure-sb253-sb261"],
+    relatedSlugs: ["ny-llc-transparency-act", "california-climate-disclosure-sb253-sb261", "dhs-f1-j1-fixed-admission-period"],
+  },
+
+  // ── DHS fixed admission period for F-1/J-1/I nonimmigrants ──────────────────────────────────
+  {
+    slug: "dhs-f1-j1-fixed-admission-period",
+    title: "DHS Ends F-1/J-1 Duration of Status: New 2026 Rule",
+    metaDescription:
+      "DHS ends duration of status for F-1, J-1, and I visas starting Sept 15, 2026. See the new 4-year fixed admission cap, EOS filing rules, and who must comply.",
+    targetKeyword: "f-1 j-1 fixed admission period",
+    h1: "DHS's New F-1/J-1 Fixed Admission Period Rule: What Schools and Employers Must Do",
+    intro:
+      "Starting September 15, 2026, the Department of Homeland Security replaces \"duration of status\" for F-1 students, J-1 exchange visitors, and I-visa foreign media representatives with a fixed admission period — up to four years for F-1/J-1 (plus a 30-day grace period to depart) and 90 or 240 days for I nonimmigrants — after which they must file a timely extension of stay (EOS) or begin accruing unlawful presence. SEVP-certified schools, J-1 program sponsors, and employers of F-1 OPT/CPT or J-1 workers now need to track each nonimmigrant's fixed end date and make sure Form I-539 gets filed before it expires, since a lapse can trigger inadmissibility bars for the individual and compliance headaches for the institution.",
+    jurisdiction: "Federal",
+    agency: "Department of Homeland Security (DHS / USCIS / ICE-SEVP)",
+    citation: "DHS Final Rule 2026-14439, amending 8 CFR 214.1, 214.2, 214.3, 214.4, 248, and 274",
+    citationUrl:
+      "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+    whoMustComply:
+      "SEVP-certified schools and their DSOs, J-1 exchange visitor program sponsors, and employers of F-1 (OPT/CPT) or J-1 nonimmigrant workers",
+    actionRequired:
+      "Track each F-1/J-1 nonimmigrant's fixed admission end date (Form I-20/DS-2019 program end date, capped at 4 years) or an I nonimmigrant's 90/240-day period, and ensure a timely Form I-539 extension-of-stay (EOS) filing before that period expires",
+    effectiveDate: "2026-09-15",
+    deadline: "2027-03-18",
+    penalty:
+      "Nonimmigrants who don't timely file an EOS begin accruing unlawful presence under INA 212(a)(9)(B)/(C) once their fixed period expires — risking 3/10-year reentry bars and removal proceedings; schools and sponsors that fail SEVIS reporting requirements risk losing SEVP certification under 8 CFR 214.4(a)(2)",
+    urgency: "high",
+    category: "Employment & Labor",
+    recommendedProfessionals: ["attorney", "consultant", "tech"],
+    whatChanged:
+      "For decades, F-1 students, J-1 exchange visitors, and I-visa foreign media representatives were admitted for \"duration of status\" (D/S) — an open-ended period lasting as long as they maintained their program, with no fixed expiration on their Form I-94. DHS's final rule ends that for all three categories: F-1 and J-1 nonimmigrants are now admitted for a fixed period tied to their program end date on Form I-20 or DS-2019, capped at four years, plus a 30-day grace period to depart (or 30 additional days if their program ends early). I nonimmigrants (representatives of foreign information media) are admitted for the time needed to complete their activity, capped at 240 days — or 90 days for holders of a passport from the People's Republic of China, excluding Hong Kong and Macau SAR passports.\n\nOnce that fixed period runs out, the nonimmigrant must either leave the country or have filed a timely application for an extension of stay (EOS) on Form I-539 (or its successor form) with USCIS — filing on time automatically extends their stay while the application is pending. The rule takes effect September 15, 2026, 60 days after publication, and DHS built in one notable transition carve-out: F-1 students already in the U.S. on D/S who timely file Form I-765 for post-completion OPT or a STEM OPT extension on or before March 18, 2027 do not need to separately file an EOS application.",
+    whoIsAffected:
+      "Any organization that sponsors, employs, or enrolls F-1, J-1, or I nonimmigrants now has a new compliance calendar to manage. SEVP-certified colleges and universities and their Designated School Officials (DSOs) must recalculate each F-1 student's fixed admission end date from the program start date shown on Form I-20, continue their existing SEVIS reporting duties, and help students who need more time file an EOS before their status lapses — a school's own SEVP certification can be affected if its SEVIS reporting falls out of compliance. J-1 exchange visitor program sponsors and their Responsible Officers (ROs) face the identical tracking obligation against the Form DS-2019 program end date, capped at four years from the rule's effective date for those already present under D/S.\n\nEmployers of F-1 workers on Optional Practical Training (OPT) or Curricular Practical Training (CPT), and employers of J-1 workers, should build the fixed end date into their own I-9/work-authorization tracking — an employee whose fixed period lapses without a timely EOS filing stops being authorized to work and starts accruing unlawful presence, which can also complicate that person's ability to travel and reenter. Organizations that host I-visa foreign media representatives face the shortest runway of all: 240 days (90 for most PRC passport holders) before an EOS becomes necessary. This rule does not change employment-based visa categories (H-1B and similar) directly, but any HR or international-student office that has relied on \"duration of status\" as effectively open-ended now needs a hard-date tracking process instead.",
+    complianceSteps: [
+      "Inventory every F-1, J-1, and I nonimmigrant your institution sponsors, employs, or enrolls, and pull each one's program end date from Form I-20 (F-1) or DS-2019 (J-1), or note the activity end date for I visas.",
+      "Calculate the fixed admission end date: program end date plus a 30-day grace period, not to exceed 4 years total for F-1/J-1 (for those already in the U.S. on D/S, no more than 4 years from the September 15, 2026 effective date); 240 days (90 for most PRC passport holders) for I nonimmigrants.",
+      "Build a tracking process — SEVIS-integrated if possible — that flags each person's fixed end date well before it arrives, since an EOS application (Form I-539 or successor) must be filed before the period expires to keep the person in status automatically while USCIS adjudicates it.",
+      "If any F-1 students are pursuing post-completion OPT or a STEM OPT extension and were on D/S, confirm their Form I-765 is filed on or before March 18, 2027 so they qualify for the transition exemption from filing a separate EOS.",
+      "Continue existing DSO/RO SEVIS reporting on the required timelines, since a lapse in reporting — separate from any individual student's status — can put the school's or sponsor's own SEVP certification at risk.",
+    ],
+    faqs: [
+      {
+        question: "What is the F-1 J-1 fixed admission period, and when does it start?",
+        answer:
+          "It's DHS's replacement for \"duration of status\": instead of an open-ended admission tied to maintaining a program, F-1 students and J-1 exchange visitors are now admitted for a fixed period — their program end date on Form I-20 or DS-2019, capped at four years, plus a 30-day grace period to depart. The rule takes effect September 15, 2026.",
+      },
+      {
+        question: "What happens if an F-1 or J-1 nonimmigrant doesn't file for an extension in time?",
+        answer:
+          "Once their fixed period expires without a timely-filed EOS application, they begin accruing unlawful presence under INA section 212(a)(9)(B) and (C). That accrual can trigger a 3- or 10-year bar to reentry once they depart the U.S., and they become subject to removal proceedings if they don't leave. Filing the EOS application (Form I-539 or its successor) before the fixed period ends automatically extends their stay while it's pending.",
+      },
+      {
+        question: "Does this rule create new penalties for schools or employers?",
+        answer:
+          "Not new ones. DHS declined commenters' requests to add new institutional financial penalties. What already existed — and still applies — is 8 CFR 214.4(a)(2): a school or program sponsor that fails to meet its SEVIS reporting requirements can lose its SEVP certification. The bigger operational change for schools and employers is the new fixed-date tracking burden, not a new fine.",
+      },
+      {
+        question: "How long can I-visa foreign media representatives stay under the new rule?",
+        answer:
+          "I nonimmigrants are admitted for the time needed to complete their activity, capped at 240 days, or 90 days for holders of a passport from the People's Republic of China (except Hong Kong SAR and Macau SAR passport holders). Anyone needing more time must file an EOS with USCIS before that period runs out.",
+      },
+      {
+        question: "Is there a grace period for F-1 students already in the U.S. under duration of status?",
+        answer:
+          "Yes. F-1 and J-1 nonimmigrants already present on D/S when the rule takes effect get a fixed period running from their program end date, capped at no more than four years from the September 15, 2026 effective date, plus 30 days to depart. DHS also carved out an exception: F-1 students who timely file Form I-765 for post-completion OPT or a STEM OPT extension on or before March 18, 2027 don't need to separately file an EOS application.",
+      },
+    ],
+    sources: [
+      {
+        label: "Federal Register — DHS Final Rule 2026-14439 (Fixed Period of Admission for F, J, I Nonimmigrants)",
+        url: "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+      },
+      {
+        label: "eCFR — 8 CFR 214.4 (SEVP certification requirements)",
+        url: "https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.4",
+      },
+    ],
+    relatedSlugs: ["virginia-paid-sick-leave", "ny-llc-transparency-act"],
   },
 ];
 

@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-07-20T14:37:46.130422+00:00",
+  "fetched": 59,
+  "passed_gate": 5,
+  "threshold": 5,
+  "note": "Metadata-driven score gate (CFR title + agency + action + significance for federal, subject tags for state, plus keyword evidence). HIGH RECALL, NOT verified \u2014 the /compliance-alert-pass-auto skill confirms each survivor against the primary source before writing a page.",
+  "candidates": [
+    {
+      "id": "fr-2026-14509",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "title": "Margin Requirements for Uncleared Swaps for Swap Dealers and Major Swap Participants",
+      "summary": "The Commodity Futures Trading Commission (\"Commission\") is amending the margin requirements for uncleared swaps applicable to swap dealers and major swap participants that are not subject to the margin rules of a prudential regulator. The amendment revises the definition of \"margin affiliate\" in the Commission's regulations to provide that certain collective investment vehicles (\"investment funds\" or \"funds\") that receive start-up capital from a sponsor entity (\"seeded funds\") would be deemed not to have any margin affiliates or to constitute margin affiliates of another entity for the purposes of calculating certain thresholds that trigger the requirement to exchange initial margin for uncleared swaps (\"Seeded Funds Amendment\"). The Seeded Funds Amendment relieves swap dealers and major swap participants subject to the Commission's uncleared swaps margin rules from the requirement to post and collect initial margin with certain eligible seeded funds for a period of up to three years from the date on which the eligible seeded fund's asset manager begins making investments on behalf of the fund (\"trading inception date\"). The Commission is also eliminating a provision disqualifying securities issued by certain pooled investment funds (\"money market and similar funds\") whose asset managers transfer fund assets through securities lending, securities borrowing, repurchase agreements, reverse repurchase agreements, and similar arrangements from being used as eligible initial margin collateral for uncleared swaps, thereby expanding the scope of assets that qualify as eligible collateral (\"Eligible Collateral Amendment\"). Additionally, the Commission is amending the haircut schedule for eligible margin collateral for uncleared swaps to address the haircuts applicable to money market and similar funds (\"Haircut Schedule Amendment\").",
+      "url": "https://www.federalregister.gov/documents/2026/07/17/2026-14509/margin-requirements-for-uncleared-swaps-for-swap-dealers-and-major-swap-participants",
+      "agency": "Commodity Futures Trading Commission",
+      "citation": "2026-14509",
+      "published": "2026-07-17",
+      "effective_date": "2026-08-17",
+      "significant": true,
+      "action": "Final rule.",
+      "cfr_titles": [
+        17
+      ],
+      "topics": [
+        "Swaps"
+      ],
+      "urgency": "high",
+      "category_guess": "Tax & Finance",
+      "professionals_guess": [
+        "attorney",
+        "cpa"
+      ],
+      "score": 12,
+      "score_reasons": [
+        "cfr17:+5",
+        "agency_high:+3",
+        "significant:+3",
+        "subject\u00d71"
+      ],
+      "duty_signals": [],
+      "business_subjects": [
+        "\\bswap dealers?\\b"
+      ]
+    },
+    {
+      "id": "fr-2026-14439",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "title": "Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media",
+      "summary": "The Department of Homeland Security (DHS) is amending its regulations to change the admission period in the F, J, and I classifications from duration of status to an admission for a fixed time period, and additional changes to admission and extension requirements. This final rule will provide additional protections and oversight of these nonimmigrant categories and will allow DHS to better evaluate whether these nonimmigrants are maintaining status while temporarily in the United States. This final rule provides amendments to the proposed rule covering this topic that was published in the Federal Register on August 28, 2025.",
+      "url": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+      "agency": "Homeland Security Department",
+      "citation": "2026-14439",
+      "published": "2026-07-17",
+      "effective_date": "2026-09-15",
+      "significant": true,
+      "action": "Final rule.",
+      "cfr_titles": [
+        8
+      ],
+      "topics": [
+        "Administrative practice and procedure",
+        "Aliens",
+        "Cultural exchange programs",
+        "Employment",
+        "Foreign officials",
+        "Health professions",
+        "Penalties",
+        "Reporting and recordkeeping requirements",
+        "Students"
+      ],
+      "urgency": "high",
+      "category_guess": "Employment & Labor",
+      "professionals_guess": [
+        "attorney",
+        "consultant",
+        "tech"
+      ],
+      "score": 8,
+      "score_reasons": [
+        "cfr8:+5",
+        "significant:+3"
+      ],
+      "duty_signals": [],
+      "business_subjects": []
+    },
+    {
+      "id": "fr-2026-14303",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "title": "FEP Agency Designation Procedures: Revising Location of FEP Agency Lists",
+      "summary": "The Equal Employment Opportunity Commission (EEOC or Commission) is revising its procedural regulations regarding fair employment practice agencies (FEP agencies or FEPAs). The lists of FEPAs in the regulations will be removed, and the agency will instead publish the lists of current FEPAs on its public website.",
+      "url": "https://www.federalregister.gov/documents/2026/07/16/2026-14303/fep-agency-designation-procedures-revising-location-of-fep-agency-lists",
+      "agency": "Equal Employment Opportunity Commission",
+      "citation": "2026-14303",
+      "published": "2026-07-16",
+      "effective_date": "2026-07-16",
+      "significant": false,
+      "action": "Final rule.",
+      "cfr_titles": [
+        29
+      ],
+      "topics": [
+        "Administrative practice and procedure",
+        "Equal employment opportunity"
+      ],
+      "urgency": "high",
+      "category_guess": "Employment & Labor",
+      "professionals_guess": [
+        "consultant",
+        "attorney",
+        "tech"
+      ],
+      "score": 8,
+      "score_reasons": [
+        "cfr29:+5",
+        "agency_high:+3"
+      ],
+      "duty_signals": [],
+      "business_subjects": []
+    },
+    {
+      "id": "fr-2026-14573",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "title": "Food Standards of Identity Modernization; Pasteurized Orange Juice",
+      "summary": "The Food and Drug Administration (FDA or we) is issuing a final rule to amend the standard of identity for pasteurized orange juice by lowering the minimum orange juice soluble solids content from 10.5[deg] to 10[deg] Brix and permitting up to 15 percent Citrus reticulata juice or Citrus reticulata hybrid juice, by volume. This final rule modernizes the pasteurized orange juice standard. This action responds to two citizen petitions: one submitted by the Florida Citrus Processors Association Inc. and the Florida Citrus Mutual Inc., and another submitted by the Florida Department of Citrus, the Florida Citrus Mutual, and the Juice Products Association.",
+      "url": "https://www.federalregister.gov/documents/2026/07/20/2026-14573/food-standards-of-identity-modernization-pasteurized-orange-juice",
+      "agency": "Health and Human Services Department, Food and Drug Administration",
+      "citation": "2026-14573",
+      "published": "2026-07-20",
+      "effective_date": "2026-08-19",
+      "significant": false,
+      "action": "Final rule.",
+      "cfr_titles": [
+        21
+      ],
+      "topics": [
+        "Food grades and standards",
+        "Fruit juices"
+      ],
+      "urgency": "high",
+      "category_guess": "Healthcare",
+      "professionals_guess": [
+        "consultant",
+        "attorney"
+      ],
+      "score": 6,
+      "score_reasons": [
+        "cfr21:+2",
+        "agency_high:+3",
+        "subject\u00d71"
+      ],
+      "duty_signals": [],
+      "business_subjects": [
+        "\\bprocessors?\\b"
+      ]
+    },
+    {
+      "id": "fr-2026-14539",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "title": "Public Charge Ground of Inadmissibility",
+      "summary": "DHS is rescinding the 2022 public charge ground of inadmissibility regulations (\"2022 Final Rule\"). The 2022 Final Rule was not the best implementation of the statute. It was inconsistent with congressional intent, unduly restrictive, and hampered DHS's ability to make accurate, precise, and reliable determinations of whether certain aliens are likely at any time to become a public charge. Rescission restores broader discretion for DHS officers to evaluate all pertinent facts and aligns with long-standing policy that aliens in the United States should be self-reliant and government benefits should not incentivize immigration. This rule also revises the breach and cancellation of public charge bonds regulations.",
+      "url": "https://www.federalregister.gov/documents/2026/07/20/2026-14539/public-charge-ground-of-inadmissibility",
+      "agency": "Homeland Security Department",
+      "citation": "2026-14539",
+      "published": "2026-07-20",
+      "effective_date": "2026-09-18",
+      "significant": false,
+      "action": "Final rule.",
+      "cfr_titles": [
+        8
+      ],
+      "topics": [
+        "Administrative practice and procedure",
+        "Aliens",
+        "Authority delegations (Government agencies)",
+        "Fees",
+        "Freedom of information",
+        "Immigration",
+        "Passports and visas",
+        "Privacy",
+        "Reporting and recordkeeping requirements",
+        "Surety bonds"
+      ],
+      "urgency": "high",
+      "category_guess": "Employment & Labor",
+      "professionals_guess": [
+        "attorney",
+        "consultant",
+        "tech"
+      ],
+      "score": 5,
+      "score_reasons": [
+        "cfr8:+5"
+      ],
+      "duty_signals": [],
+      "business_subjects": []
+    }
+  ]
+}

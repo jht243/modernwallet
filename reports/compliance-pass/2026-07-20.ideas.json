@@ -1,0 +1,61 @@
+{
+  "ideas": [
+    {
+      "status": "shipped",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "category": "Employment & Labor",
+      "title": "Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media",
+      "citation": "2026-14439",
+      "citation_url": "https://www.federalregister.gov/documents/2026/07/17/2026-14439/establishing-a-fixed-time-period-of-admission-and-an-extension-of-stay-procedure-for-nonimmigrant",
+      "slug": "dhs-f1-j1-fixed-admission-period",
+      "target_keyword": "f-1 j-1 fixed admission period",
+      "score": 8,
+      "reason": "SHIPPED — creates real new tracking/filing duty on SEVP schools, exchange sponsors, and F-1/J-1 employers; all facts verified against primary source."
+    },
+    {
+      "status": "rejected",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "category": "Tax & Finance",
+      "title": "Margin Requirements for Uncleared Swaps for Swap Dealers and Major Swap Participants",
+      "citation": "2026-14509",
+      "citation_url": "https://www.federalregister.gov/documents/2026/07/17/2026-14509/margin-requirements-for-uncleared-swaps-for-swap-dealers-and-major-swap-participants",
+      "score": 12,
+      "reason": "REJECTED (Phase 1 kill) — grants relief/exemption to swap dealers (seeded funds carve-out), does not impose a new duty; audience is an ultra-narrow set of CFTC-regulated swap dealers/MSPs, not a broad business class."
+    },
+    {
+      "status": "rejected",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "category": "Employment & Labor",
+      "title": "FEP Agency Designation Procedures: Revising Location of FEP Agency Lists",
+      "citation": "2026-14303",
+      "citation_url": "https://www.federalregister.gov/documents/2026/07/16/2026-14303/fep-agency-designation-procedures-revising-location-of-fep-agency-lists",
+      "score": 8,
+      "reason": "REJECTED (Phase 1 kill) — purely government-internal/administrative: EEOC moving a list of FEP agencies from regulatory text to its website; no new business duty."
+    },
+    {
+      "status": "rejected",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "category": "Healthcare",
+      "title": "Food Standards of Identity Modernization; Pasteurized Orange Juice",
+      "citation": "2026-14573",
+      "citation_url": "https://www.federalregister.gov/documents/2026/07/20/2026-14573/food-standards-of-identity-modernization-pasteurized-orange-juice",
+      "score": 6,
+      "reason": "REJECTED (Phase 1 kill) — permissive/deregulatory standard change (lowers minimum solids, allows blending); optional for processors, no affirmative new duty, narrow niche audience."
+    },
+    {
+      "status": "rejected",
+      "source_type": "federal_rule",
+      "jurisdiction": "Federal",
+      "category": "Employment & Labor",
+      "title": "Public Charge Ground of Inadmissibility",
+      "citation": "2026-14539",
+      "citation_url": "https://www.federalregister.gov/documents/2026/07/20/2026-14539/public-charge-ground-of-inadmissibility",
+      "score": 5,
+      "reason": "REJECTED (Phase 1 kill) — explicit rescission/repeal of the 2022 public charge rule with no new duty created; kill category per skill rule."
+    }
+  ]
+}
