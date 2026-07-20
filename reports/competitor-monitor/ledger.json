@@ -38004,11 +38004,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/personal-loans/excellent-credit-loans": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:89533d2116ff63bad7720f42612e1283492c5e0ccb2c1459736f1a75deb4f9a0",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T14:37:23+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/personal-loans-for-excellent-credit/",
           "outline": [
             "Unlock personal loan offers for excellent credit",
             "Best excellent credit loans",
@@ -38053,7 +38057,7 @@
             "loans",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Personal Loans for Excellent Credit in April 2025 | Bankrate",
           "tool_io": []
         },
@@ -38658,11 +38662,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/personal-loans/personal-loan-calculator": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:7ad71a8742c2aad18f3c914c5db624d21047b3047c8acb74cc3bd2956780d85e",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T20:03:14+00:00",
+          "our_url": "https://www.themodernwallet.com/personal-loan/",
           "outline": [
             "How to use the personal loan calculator",
             "Enter your loan amount.",
@@ -38686,7 +38694,7 @@
             "loans",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Personal Loan Calculator | Bankrate",
           "tool_io": [
             "input: siteSearchInput"
@@ -91841,11 +91849,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/business/loans/news/2026-revenue-business-loan-study": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:590feee9a97cc49370d181c6f754dd6a02586adb34754b182f0cbff14dc7a05a",
+          "disposition": "published",
           "first_seen": "2026-07-20",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T09:40:57-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-revenue-affects-business-loan-approval/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Key findings",
@@ -91872,7 +91884,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Small-Business Loan Data: How Revenue Shapes Funding - NerdWallet",
           "tool_io": []
         },
@@ -100545,11 +100557,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/credit-cards/learn/choosing-balance-transfer-card": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:7d8b0cd65ad4f296a7aee8493e800b5f057ced0bb70d4d1e7447fda83db1ab85",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-to-choose-a-balance-transfer-credit-card/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "DEDICATED 0% APR CARDS FOR TRANSFERS",
@@ -100587,7 +100603,7 @@
             "credit",
             "debt"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Which Balance Transfer Credit Card Is Best for Me? - NerdWallet",
           "tool_io": []
         },
@@ -106357,11 +106373,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/real-applications-balance-transfer-credit-card-approval": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:27fc68f7d6d2c2a29f4f868a4a1ea4995048c4ecf22fd8512f1a465ca4ddee01",
+          "disposition": "published",
           "first_seen": "2026-07-20",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T08:52:30-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/balance-transfer-credit-card-approval-odds/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Balance transfer credit card approval rates",
@@ -106372,7 +106392,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Can You Qualify for a Balance Transfer Credit Card? (Based on Real Applications) - NerdWallet",
           "tool_io": []
         },
@@ -113145,11 +113165,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/learn/70-20-10-budget": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:4b93a6fb4988cb906cd6d756b04c30927d4e8f879cfefd7410d6b2f2f4dc2583",
+          "disposition": "enriched",
           "first_seen": "2026-07-20",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/budget/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "What is the 70/20/10 budget rule?",
@@ -113171,7 +113195,7 @@
             "finance",
             "interest"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "70/20/10 Budget: Why Combining Needs &amp; Wants Could Backfire - NerdWallet",
           "tool_io": []
         },
@@ -115113,11 +115137,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/learn/how-to-make-money": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:d433771ea99588f6626b7200f637507a56db3fa53df1328168c506076acbd134",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-18T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/side-hustle-ideas/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "1. Pick up freelance work online",
@@ -115149,7 +115177,7 @@
             "finance",
             "rent"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "20 Realistic Side Hustles for 2026 - NerdWallet",
           "tool_io": []
         },
@@ -129825,11 +129853,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/best/brokerage-account-interest-rates": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:ac380af6e60f1a7a12990cf0730a1757c5836149345ac95c02e33422e99492ed",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-brokerage-accounts-for-interest-on-cash/",
           "outline": [
             "Fidelity",
             "See how we rate Fidelity on other features \u2193",
@@ -129859,7 +129891,7 @@
             "interest",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Brokerage Accounts for High Interest Rates: Up to 3.58%",
           "tool_io": []
         },
@@ -144073,11 +144105,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/student-loans/learn/standard-repayment-plan-student-loans": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:c7a02c8498f42cb13548cf7e0d69835a39102e636b72da576a3cb34b66453a0b",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-20T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/student-loan-standard-repayment-plan/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "The legacy Standard Repayment Plan",
@@ -144089,7 +144125,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Student Loan Standard Repayment Plan Changes - What to Know - NerdWallet",
           "tool_io": []
         },
@@ -151471,11 +151507,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/travel/learn/chase-ultimate-rewards-travel-portal-guide": {
+          "acted": true,
+          "acted_date": "2026-07-20",
           "content_hash": "sha256:5d0d8ead02fac1211a146609a8df3fc36bfbcba8bceab9e77db476e86e504b74",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-07-20",
           "lastmod": "2026-07-18T00:00:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/chase-travel-portal-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "What is Chase\u2019s travel portal?",
@@ -151494,7 +151534,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Chase Travel Portal: What You Need to Know - NerdWallet",
           "tool_io": []
         },
