@@ -1,0 +1,147 @@
+---
+// Lead-capture form for the Compliance Alerts vertical (/compliance/*). Captures a business that
+// needs help complying with the page's law/rule and tags the lead with the obligation category,
+// jurisdiction, page slug, and which professional they want (attorney / CPA / consultant /
+// software) — the fields that make routing + monetization possible later.
+//
+// Delivery mirrors LeadForm.astro: POST JSON to PUBLIC_LEAD_ENDPOINT (Supabase Edge Function /
+// webhook), falling back to a prefilled mailto: when no endpoint is configured at build time.
+// Soft conversion by design: the explainer content stays free and ungated.
+import type { ProfessionalType } from "../data/types";
+
+interface Props {
+  /** /compliance/<slug> — stored on the lead for attribution. */
+  pageSlug: string;
+  obligationCategory: string;
+  jurisdiction: string;
+  /** Which professional types this obligation calls for — ordered first in the dropdown. */
+  recommendedProfessionals: ProfessionalType[];
+  heading?: string;
+  blurb?: string;
+}
+const { pageSlug, obligationCategory, jurisdiction, recommendedProfessionals, heading, blurb } =
+  Astro.props as Props;
+
+// Dedicated endpoint var (NOT the business-financing PUBLIC_LEAD_ENDPOINT) so the two lead
+// funnels stay independently configurable. Points at the compliance-lead Supabase Edge Function.
+const endpoint = import.meta.env.PUBLIC_COMPLIANCE_LEAD_ENDPOINT ?? "";
+const fallbackEmail = import.meta.env.PUBLIC_LEAD_EMAIL ?? "compliance@themodernwallet.com";
+
+const PRO_LABEL: Record<ProfessionalType, string> = {
+  attorney: "Attorney (legal review)",
+  cpa: "Accountant / CPA (filings & tax)",
+  consultant: "Compliance consultant",
+  tech: "Software that handles this",
+};
+// Recommended professionals first, then the rest, then "not sure".
+const ALL_PROS: ProfessionalType[] = ["attorney", "cpa", "consultant", "tech"];
+const proOptions = [
+  ...recommendedProfessionals,
+  ...ALL_PROS.filter((p) => !recommendedProfessionals.includes(p)),
+];
+---
+<section class="lead" id="get-help" aria-labelledby="clead-h">
+  <div class="lead-inner">
+    <h2 id="clead-h">{heading ?? "Get help complying with this rule"}</h2>
+    <p class="lead-blurb">{blurb ?? "Tell us about your business and we'll match you with a vetted professional for a free, no-obligation consultation about this requirement."}</p>
+
+    <form class="lead-form" data-endpoint={endpoint} data-fallback-email={fallbackEmail}>
+      <div class="lf-row">
+        <label>Business name<input name="business" type="text" required autocomplete="organization" /></label>
+        <label>State<input name="state" type="text" required autocomplete="address-level1" placeholder="e.g. New York" /></label>
+      </div>
+      <div class="lf-row">
+        <label>What kind of help do you need?
+          <select name="professional_type">
+            {proOptions.map((p) => <option value={p}>{PRO_LABEL[p]}</option>)}
+            <option value="unsure">Not sure — help me choose</option>
+          </select>
+        </label>
+        <label>Company size
+          <select name="company_size">
+            <option value="1-24">1–24 employees</option>
+            <option value="25-49">25–49 employees</option>
+            <option value="50-249">50–249 employees</option>
+            <option value="250+">250+ employees</option>
+          </select>
+        </label>
+      </div>
+      <div class="lf-row">
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" /></label>
+      </div>
+      <input type="hidden" name="page_slug" value={pageSlug} />
+      <input type="hidden" name="obligation_category" value={obligationCategory} />
+      <input type="hidden" name="jurisdiction" value={jurisdiction} />
+      {/* Honeypot — hidden from humans; the Edge Function silently drops submissions that fill it. */}
+      <input class="lf-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="lf-submit">Match me with a professional</button>
+      <p class="lf-status" role="status" aria-live="polite" hidden></p>
+      <p class="lf-fine">By submitting, you agree to be contacted about compliance help for your business. ModernWallet is not a law firm, accounting firm, or compliance advisor; we connect businesses with independent professionals. This is not legal, tax, or compliance advice, and submitting this form does not create an attorney-client or advisor relationship.</p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .lead { margin: 30px 0 8px; scroll-margin-top: 20px; }
+  .lead-inner {
+    background: linear-gradient(180deg, #10352B 0%, #0E2A22 100%);
+    border-radius: 18px; padding: 28px 26px; color: #EAF3EF;
+  }
+  .lead h2 { font-size: 1.5rem; margin: 0 0 8px; color: #fff; line-height: 1.25; }
+  .lead-blurb { margin: 0 0 18px; color: #B7D3C8; font-size: 1.02rem; line-height: 1.55; max-width: 60ch; }
+  .lead-form { display: flex; flex-direction: column; gap: 12px; }
+  .lf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lead-form label { display: flex; flex-direction: column; gap: 5px; font-size: 0.82rem; font-weight: 600; color: #CFE5DC; }
+  .lead-form input, .lead-form select {
+    padding: 10px 12px; font-size: 1rem; border: 1px solid #2E5347; border-radius: 8px;
+    background: #F7FBF9; color: #14201B; box-sizing: border-box;
+  }
+  .lf-submit {
+    margin-top: 4px; padding: 13px 16px; border: none; border-radius: 9px; cursor: pointer;
+    background: var(--primary, #0E7C66); color: #fff; font-size: 1.02rem; font-weight: 700;
+  }
+  .lf-submit:hover { filter: brightness(1.06); }
+  .lf-status { margin: 6px 0 0; font-size: 0.95rem; font-weight: 600; color: #9BE7C8; }
+  .lf-status.err { color: #F3B4A6; }
+  .lf-fine { margin: 4px 0 0; font-size: 0.76rem; color: #86A99C; line-height: 1.5; }
+  .lf-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  @media (max-width: 560px) { .lf-row { grid-template-columns: 1fr; } .lead-inner { padding: 22px 18px; } }
+</style>
+
+<script>
+  // Progressive enhancement: POST to the configured endpoint; fall back to a prefilled mailto: so a
+  // lead is never lost even before the Edge Function/webhook is wired.
+  document.querySelectorAll<HTMLFormElement>(".lead-form").forEach((form) => {
+    const status = form.querySelector<HTMLParagraphElement>(".lf-status")!;
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      const endpoint = form.dataset.endpoint;
+      const email = form.dataset.fallbackEmail || "compliance@themodernwallet.com";
+      status.hidden = false;
+      status.classList.remove("err");
+      status.textContent = "Sending…";
+      try {
+        if (endpoint) {
+          const res = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({ ...data, page: location.pathname, ts: new Date().toISOString() }),
+          });
+          if (!res.ok) throw new Error(String(res.status));
+          status.textContent = "Got it — a compliance specialist will reach out shortly.";
+          form.reset();
+        } else {
+          // No endpoint configured yet → open a prefilled email as the fallback delivery channel.
+          const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join("%0D%0A");
+          window.location.href = `mailto:${email}?subject=Compliance%20help%20request%20from%20${encodeURIComponent(String(data.business || "a business"))}&body=${body}`;
+          status.textContent = "Opening your email to send the request…";
+        }
+      } catch {
+        status.classList.add("err");
+        status.textContent = "Something went wrong — email us at " + email + " and we'll help directly.";
+      }
+    });
+  });
+</script>

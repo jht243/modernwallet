@@ -1,8 +1,14 @@
 ---
-// Compact footer: brand + browse links (live calculators) + legal.
+// Compact footer: brand + browse links (live calculators + compliance alerts) + legal.
 import { SITE } from "../data/site";
 import { liveCalculators } from "../data/calculators";
+import { liveAlerts } from "../data/compliance-alerts";
 const calcs = liveCalculators();
+// Highest-urgency alerts first; the column caps at 7 links + the "all" link.
+const urgencyRank = { high: 0, medium: 1, low: 2 } as const;
+const footerAlerts = [...liveAlerts()]
+  .sort((a, b) => urgencyRank[a.urgency] - urgencyRank[b.urgency])
+  .slice(0, 7);
 const year = 2026;
 ---
 <footer class="site-footer">
@@ -44,6 +50,14 @@ const year = 2026;
           <a href="/compare/fixed-vs-arm-mortgage/">Fixed vs ARM Mortgage</a>
           <a href="/compare/hysa-vs-money-market/">HYSA vs Money Market</a>
           <a href="/compare/stocks-vs-bonds/">Stocks vs Bonds</a>
+        </div>
+      </nav>
+
+      <nav class="ftr-links" aria-label="Footer compliance alerts">
+        <span class="grp-title">Compliance Alerts</span>
+        <div class="links-grid links-grid--cmp links-grid--alerts">
+          <a href="/compliance/">All compliance alerts</a>
+          {footerAlerts.map((a) => <a href={`/compliance/${a.slug}/`}>{a.title}</a>)}
         </div>
       </nav>
 
@@ -97,6 +111,7 @@ const year = 2026;
     gap: 8px 48px;
   }
   .links-grid--cmp { grid-template-rows: repeat(5, auto); gap: 8px 36px; }
+  .links-grid--alerts a { white-space: normal; max-width: 230px; line-height: 1.4; }
   .links-grid a { color: #C2D2CC; text-decoration: none; font-size: 0.88rem; white-space: nowrap; }
   .links-grid a:hover { color: #fff; }
   .ftr-legal {
