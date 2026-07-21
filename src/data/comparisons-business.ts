@@ -80,7 +80,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
       { label: "FTC — Court enters $20.3M judgment against MCA operator for deceiving small businesses", url: "https://www.ftc.gov/news-events/news/press-releases/2024/02/court-enters-203-million-judgment-ftc-case-against-merchant-cash-advance-operator-jonathan-braun" },
       { label: "CFPB — Small business lending under ECOA (Regulation B)", url: "https://www.consumerfinance.gov/rules-policy/final-rules/small-business-lending-under-the-equal-credit-opportunity-act-regulation-b/" },
     ],
-    relatedComparisons: ["factor-rate-vs-interest-rate", "invoice-factoring-vs-merchant-cash-advance"],
+    relatedComparisons: ["factor-rate-vs-interest-rate", "invoice-factoring-vs-merchant-cash-advance", "merchant-cash-advance-vs-revenue-based-financing"],
     calculatorLinks: [
       { label: "Merchant cash advance calculator", href: "/merchant-cash-advance/" },
       { label: "Factor rate calculator", href: "/merchant-cash-advance/factor-rate-calculator/" },

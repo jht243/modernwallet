@@ -2131,7 +2131,7 @@ export const GUIDES: Guide[] = [
     h1: "Balance Transfer Credit Card Approval Odds: What It Really Takes",
     cardBlurb: "The score and income issuers actually look for, why a good score alone isn't enough, and your next move if you're declined.",
     intro:
-      "Approval for a balance transfer credit card depends on more than your credit score — issuers weigh your income, your existing utilization, and how much room they're willing to give a card that's about to absorb someone else's debt. This guide covers realistic approval odds by credit tier, what issuers check beyond the score, and what to do next if you're declined.",
+      "Approval for a balance transfer credit card depends on more than your credit score — issuers weigh your income, your existing utilization, and how much room they're willing to give a card that's about to absorb someone else's debt. This guide covers realistic approval odds by credit tier, what issuers check beyond the score, and what to do next if you're declined. Once you have a realistic sense of your odds, see [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) to pick between a dedicated 0% card and a rewards card with a transfer offer.",
     sections: [
       {
         heading: "The score range that gets approved",
@@ -2180,7 +2180,7 @@ export const GUIDES: Guide[] = [
     h1: "How to Choose a Balance Transfer Credit Card",
     cardBlurb: "Dedicated 0% card vs a rewards card with a transfer offer — the four questions that actually decide it.",
     intro:
-      "The right balance transfer credit card depends less on which offer looks flashiest and more on four specific answers: your credit score, how much you're moving, how long you genuinely need to pay it off, and whether you want anything beyond debt payoff from the card. This guide walks through the decision so you pick a card that matches your actual payoff timeline, not just its advertised intro period.",
+      "The right balance transfer credit card depends less on which offer looks flashiest and more on four specific answers: your credit score, how much you're moving, how long you genuinely need to pay it off, and whether you want anything beyond debt payoff from the card. This guide walks through the decision so you pick a card that matches your actual payoff timeline, not just its advertised intro period. Not sure you'll qualify yet? Check [balance transfer approval odds by credit score](/guides/balance-transfer-credit-card-approval-odds/) first.",
     sections: [
       {
         heading: "Dedicated 0% cards vs rewards cards with a transfer offer",
