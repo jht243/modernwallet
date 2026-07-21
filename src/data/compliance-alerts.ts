@@ -79,7 +79,11 @@ export const COMPLIANCE_ALERTS: ComplianceAlert[] = [
         url: "https://www.fincen.gov/boi",
       },
     ],
-    relatedSlugs: ["california-climate-disclosure-sb253-sb261", "virginia-paid-sick-leave"],
+    relatedSlugs: [
+      "california-climate-disclosure-sb253-sb261",
+      "virginia-paid-sick-leave",
+      "colorado-antitrust-premerger-notification-update",
+    ],
   },
 
   // ── California climate disclosure (SB 253 / SB 261) ──────────────────────────────────────────
@@ -220,7 +224,12 @@ export const COMPLIANCE_ALERTS: ComplianceAlert[] = [
         url: "https://lis.virginia.gov/bill-details/20261/HB5",
       },
     ],
-    relatedSlugs: ["ny-llc-transparency-act", "california-climate-disclosure-sb253-sb261", "dhs-f1-j1-fixed-admission-period"],
+    relatedSlugs: [
+      "ny-llc-transparency-act",
+      "california-climate-disclosure-sb253-sb261",
+      "dhs-f1-j1-fixed-admission-period",
+      "colorado-cottage-foods-act-expansion",
+    ],
   },
 
   // ── DHS fixed admission period for F-1/J-1/I nonimmigrants ──────────────────────────────────
@@ -298,6 +307,216 @@ export const COMPLIANCE_ALERTS: ComplianceAlert[] = [
       },
     ],
     relatedSlugs: ["virginia-paid-sick-leave", "ny-llc-transparency-act"],
+  },
+
+  // ── Colorado antitrust pre-merger notification update ───────────────────────────────────────
+  {
+    slug: "colorado-antitrust-premerger-notification-update",
+    title: "Colorado Pre-Merger Notification Act: AG Filing Rule",
+    metaDescription:
+      "Colorado's updated pre-merger notification law takes effect Aug. 12, 2026. HSR filers must notify the state AG or face penalties up to $10,000/day.",
+    targetKeyword: "colorado pre-merger notification act",
+    h1: "Colorado's Pre-Merger Notification Act Update: What HSR Filers Must Do",
+    intro:
+      "Colorado's amended Uniform Antitrust Pre-Merger Notification Act takes effect August 12, 2026, and requires any company that already files a federal Hart-Scott-Rodino (HSR) pre-merger notification — and whose deal meets Colorado's own filing conditions — to send the Colorado Attorney General a complete copy within one business day of the federal filing. The update also adds new filer protections and a formal penalty process: the AG must store filings securely, return or destroy them within 120 days of the deal closing, and give written notice plus a three-business-day cure period before seeking a civil penalty of up to $10,000 per day of noncompliance.",
+    jurisdiction: "Colorado",
+    agency: "Colorado Attorney General",
+    citation: "Colorado HB 26-1427, amending C.R.S. §§ 6-4.5-103 to 6-4.5-106 (Uniform Antitrust Pre-Merger Notification Act)",
+    citationUrl: "https://leg.colorado.gov/bills/HB26-1427",
+    whoMustComply:
+      "Any person or company that files a federal Hart-Scott-Rodino pre-merger notification for a transaction that also meets Colorado's own filing conditions under C.R.S. § 6-4.5-103",
+    actionRequired:
+      "File a complete electronic copy of the HSR pre-merger notification form with the Colorado Attorney General within one business day after the federal HSR filing",
+    effectiveDate: "2026-08-12",
+    penalty:
+      "Civil penalty of up to $10,000 per day of noncompliance — but only after the AG gives written notice and a 3-business-day period to cure",
+    urgency: "high",
+    category: "Tax & Finance",
+    recommendedProfessionals: ["attorney", "consultant"],
+    whatChanged:
+      "Colorado's Uniform Antitrust Pre-Merger Notification Act already required parties in certain mergers to send the state Attorney General a copy of their federal Hart-Scott-Rodino (HSR) filing. HB 26-1427 rewrites several parts of that process. The filing window changes from \"contemporaneous\" with the federal filing to a clear one-business-day deadline after it. The AG must now provide a secure electronic system to receive and store the materials, and — new this year — must return or destroy them within 120 days after the underlying deal closes or any related legal proceeding ends, whichever is later.\n\nThe law also tightens how the AG shares information with other states that have adopted the same uniform act: before disclosing a filer's materials to another state's AG, Colorado's AG must now get that state's assurance it will keep the documents confidential, and must give the filer five business days' notice before any such disclosure (up from two). Finally, the bill writes a formal civil-penalty procedure into the statute for the first time in this detail: the AG must give written notice and a three-business-day opportunity to cure before seeking a penalty, capped at $10,000 per day of noncompliance.",
+    whoIsAffected:
+      "You're in scope if your transaction already requires a federal HSR pre-merger notification to the FTC and DOJ, and it also meets Colorado's separate filing conditions spelled out in C.R.S. § 6-4.5-103(a) — the statute layers a state-level trigger on top of the federal one rather than replacing it. Because that state-level trigger isn't reprinted in the 2026 amendment (only the subsections the bill actually changed are), confirm your deal's status against the current text of § 6-4.5-103 or with M&A counsel rather than assuming HSR status alone is enough.\n\nOnce you know you're covered, the operational change is the clock: you now have one business day after your federal filing to get a complete electronic copy to the Colorado AG, not the prior \"contemporaneous\" standard. Deal teams that build HSR filing checklists should add a same-week Colorado AG filing step, and back-office counsel should note the AG's new 120-day materials-destruction clock in case a return-or-destroy confirmation is needed for the deal file.",
+    complianceSteps: [
+      "Determine whether your deal already requires a federal HSR filing, and if so, check whether it also meets Colorado's filing conditions under C.R.S. § 6-4.5-103(a) — consult the current statute or M&A counsel, since the exact state-level trigger isn't reprinted in the 2026 amendment text.",
+      "Calendar a one-business-day deadline to send the Colorado Attorney General a complete electronic copy of your HSR form once you file it federally.",
+      "Confirm the secure electronic submission channel the AG's office provides, since the amended law now requires the AG to maintain one.",
+      "If your deal materials remain on file with the AG after closing, track the 120-day clock for their return or destruction.",
+      "If the AG opens an enforcement inquiry, respond promptly to any written notice — you have three business days to cure before a civil penalty of up to $10,000 per day may be sought.",
+    ],
+    faqs: [
+      {
+        question: "What is Colorado's Uniform Antitrust Pre-Merger Notification Act?",
+        answer:
+          "It's a state law, based on a model act from the Uniform Law Commission, that requires parties in certain mergers to send the Colorado Attorney General a copy of their federal Hart-Scott-Rodino (HSR) pre-merger notification. It layers a state-level filing duty on top of the federal HSR process rather than replacing it.",
+      },
+      {
+        question: "How much time do I have to file with the Colorado AG after my federal HSR filing?",
+        answer:
+          "One business day. HB 26-1427 replaced the prior \"contemporaneous\" filing standard with a clear one-business-day deadline that starts running when you make your federal HSR filing.",
+      },
+      {
+        question: "What happens if I miss the Colorado filing deadline?",
+        answer:
+          "The Attorney General must give you written notice and a three-business-day period to cure before seeking a civil penalty. If you don't cure in time, the AG may seek a penalty of up to $10,000 per day of noncompliance, subject to normal due-process procedures.",
+      },
+      {
+        question: "When does the updated law take effect?",
+        answer:
+          "August 12, 2026 — ninety days after the general assembly's final adjournment — unless a referendum petition is filed against it within that window, in which case the effective date could shift to a statewide vote in November 2026.",
+      },
+    ],
+    sources: [
+      {
+        label: "Colorado General Assembly — HB26-1427 bill page",
+        url: "https://leg.colorado.gov/bills/HB26-1427",
+      },
+      {
+        label: "Colorado General Assembly — HB26-1427 signed act (primary text)",
+        url: "https://leg.colorado.gov/bill_files/117178/download",
+      },
+    ],
+    relatedSlugs: ["ny-llc-transparency-act", "colorado-medical-record-request-fee-cap"],
+  },
+
+  // ── Colorado medical record request fee cap ──────────────────────────────────────────────────
+  {
+    slug: "colorado-medical-record-request-fee-cap",
+    title: "Colorado Caps Medical Record Fees at $400 in 2026",
+    metaDescription:
+      "Colorado's HB 26-1414 caps attorney record-request fees at $400 and sets a 30-day response deadline for health-care providers, effective Aug. 12, 2026.",
+    targetKeyword: "colorado medical record request fee cap",
+    h1: "Colorado's New Medical Record Fee Cap and 30-Day Deadline for Providers",
+    intro:
+      "Colorado's HB 26-1414 caps at $400 the total fee a health-care facility or provider can charge when a patient's attorney (or their personal representative's attorney) requests a medical record longer than 664 pages, effective August 12, 2026. Providers must also send an invoice within 30 days of the request, deliver records electronically when asked and feasible, and release the records for free if they blow past the 30-day window without sending a written extension notice.",
+    jurisdiction: "Colorado",
+    agency: "Colorado Department of Public Health and Environment (health facility licensing)",
+    citation: "Colorado HB 26-1414, amending C.R.S. § 25-1-801 (Patient records in custody of health-care facility)",
+    citationUrl: "https://leg.colorado.gov/bills/HB26-1414",
+    whoMustComply:
+      "Health-care facilities licensed under C.R.S. § 25-1.5-103 or Title 25, Article 3, and entities regulated under Title 10 that provide health-care services directly or through a managed care plan",
+    actionRequired:
+      "Cap total fees for attorney medical-record requests exceeding 664 pages at $400, invoice the requestor within 30 days, deliver records electronically on request when feasible, and give written notice before taking a 30-day extension",
+    effectiveDate: "2026-08-12",
+    penalty:
+      "The facility must provide the requested records at no cost if it misses the 30-day deadline without sending a written extension notice (absent a qualifying force majeure event)",
+    urgency: "high",
+    category: "Healthcare",
+    recommendedProfessionals: ["consultant", "attorney", "tech"],
+    whatChanged:
+      "Colorado already let health-care facilities and providers charge \"reasonable fees\" for records requested by an attorney with a HIPAA-compliant authorization, subpoena, or court order. HB 26-1414 caps that total charge at $400 whenever the requested record exceeds 664 pages — a facility can still charge more only if the request requires extra work to segregate, withhold, or redact protected information under other law. Starting January 1, 2028, and every even-numbered year after that, the $400 cap adjusts for inflation.\n\nThe bill also adds process rules that didn't exist before: the facility must send the requestor a written invoice within 30 days of the request and deliver the records once it's paid; if the facility can't meet that 30-day window, it must send written notice of a 30-day extension before the deadline passes. Miss both the deadline and the extension notice, and the facility must hand over the records at no charge — unless a genuine force-majeure event caused the delay, in which case the facility has 5 business days after the event to notify the requestor. Records must also go out in electronic format if the requestor asks for it, the originals are stored electronically, and producing them that way is feasible.",
+    whoIsAffected:
+      "Any Colorado health-care facility licensed under § 25-1.5-103 or Title 25, Article 3 (hospitals, clinics, and similar licensed facilities), plus Title 10-regulated entities that provide health-care services directly or through a managed care plan, is covered. The trigger is a record request from a patient's attorney, or the attorney of a patient's personal representative, made with a HIPAA-compliant authorization, a valid subpoena, or a valid court order — for records over 664 pages.\n\nBilling and health-information-management staff are where this lands hardest: your fee schedule for these attorney requests needs a hard $400 ceiling (absent extra redaction work), your workflow needs a 30-day invoice deadline, and your process needs a written-extension step before day 30 rather than after. Providers using outside record-retrieval vendors should confirm the vendor's fee schedule and turnaround match the new caps and deadlines, since the statute doesn't shift liability to the vendor.",
+    complianceSteps: [
+      "Update your fee schedule so any record request from a patient's attorney (or their representative's attorney) exceeding 664 pages is capped at $400 total, unless extra segregation, withholding, or redaction work justifies a higher reasonable fee.",
+      "Send the requestor a written invoice within 30 days of receiving the request.",
+      "If you can't meet the 30-day deadline, send written notice of a 30-day extension before that deadline lapses.",
+      "Deliver records electronically when the requestor asks for that format, your originals are electronic, and production in that format is feasible.",
+      "Calendar the January 1, 2028 (and future even-year) inflation adjustments to the $400 cap.",
+    ],
+    faqs: [
+      {
+        question: "How much can a Colorado health-care provider charge for a medical record request?",
+        answer:
+          "For a request from a patient's attorney (or their personal representative's attorney) that exceeds 664 pages, the total fee is capped at $400 starting August 12, 2026. The facility may charge a reasonable fee above that cap only if fulfilling the request requires extra work to segregate, withhold, or redact protected health information.",
+      },
+      {
+        question: "What happens if my practice misses the 30-day deadline to respond?",
+        answer:
+          "You must provide the records at no cost, unless you sent written notice of a 30-day extension before the original deadline passed, or the delay was caused by a genuine force-majeure event (in which case you have 5 business days after the event to notify the requestor).",
+      },
+      {
+        question: "Does the $400 cap apply to every medical record request?",
+        answer:
+          "No — it applies specifically to requests from a patient's attorney or a personal representative's attorney, made under a HIPAA-compliant authorization, valid subpoena, or valid court order, for records exceeding 664 pages. Other types of record requests are governed by the law's existing \"reasonable fee\" standard.",
+      },
+      {
+        question: "When does this law take effect?",
+        answer:
+          "August 12, 2026 — ninety days after the general assembly's final adjournment — unless a referendum petition against it is filed within that window, which could push the effective date to a November 2026 statewide vote.",
+      },
+    ],
+    sources: [
+      {
+        label: "Colorado General Assembly — HB26-1414 bill page",
+        url: "https://leg.colorado.gov/bills/HB26-1414",
+      },
+      {
+        label: "Colorado General Assembly — HB26-1414 signed act (primary text)",
+        url: "https://leg.colorado.gov/bill_files/117189/download",
+      },
+    ],
+    relatedSlugs: ["colorado-antitrust-premerger-notification-update", "colorado-cottage-foods-act-expansion"],
+  },
+
+  // ── Colorado Cottage Foods Act expansion ("Tamale Act") ──────────────────────────────────────
+  {
+    slug: "colorado-cottage-foods-act-expansion",
+    title: "Colorado Cottage Foods Act 2027: New Registration Rule",
+    metaDescription:
+      "Starting Jan. 1, 2027, Colorado home cooks selling tamales, burritos, or other TCS foods must register annually, take a safety course, and more.",
+    targetKeyword: "colorado cottage foods act registration",
+    h1: "Colorado's Cottage Foods Act Expansion: Registration, Safety Course, and the New $150K Cap",
+    intro:
+      "Colorado's \"Tamale Act\" (HB 26-1033) lets home cooks sell tamales, burritos, and other foods that need time and temperature control starting January 1, 2027, but only if the producer registers annually with the state, completes a food-safety course, and stays under a $150,000 revenue cap per food product — up from the previous $10,000 cap. Producers who mislabel a covered food or break the safety rules three times in a year lose the right to sell those foods, and inspectors can fine them up to $100 per violation plus recover inspection costs up to $1,000.",
+    jurisdiction: "Colorado",
+    agency: "Colorado Department of Public Health and Environment",
+    citation: "Colorado HB 26-1033 (\"Tamale Act\"), amending C.R.S. § 25-4-1614 (Colorado Cottage Foods Act)",
+    citationUrl: "https://leg.colorado.gov/bills/HB26-1033",
+    whoMustComply:
+      "Home-based (\"cottage\") food producers in Colorado who sell foods requiring time and temperature control for safety — such as tamales, burritos, or tortas — directly to informed end consumers, earning up to $150,000 in gross revenue per food product per year",
+    actionRequired:
+      "Register annually with the Colorado Department of Public Health and Environment before selling, complete an approved food-safety course covering time/temperature control, maintain proof of completion and good standing, and label products with the department-issued registration number",
+    effectiveDate: "2027-01-01",
+    penalty:
+      "Up to $100 fine per violation plus recovery of inspection costs up to $1,000; a producer with 3 misbranding or safety violations within 12 months loses the right to sell foods requiring time/temperature control",
+    urgency: "medium",
+    category: "Licensing & Professions",
+    recommendedProfessionals: ["consultant", "attorney"],
+    whatChanged:
+      "Colorado's Cottage Foods Act previously let home cooks sell only \"non-potentially hazardous\" foods — things like baked goods, jams, and dehydrated produce that don't need refrigeration. HB 26-1033 opens the door to foods that require time and temperature control for safety, including tamales, burritos, and tortas, letting a producer sell one type of such product (with up to five variations). It also raises the revenue cap that limits who can operate under the cottage-foods exemption at all, from $10,000 to $150,000 in gross revenue per food product per year, inflation-adjusted annually going forward.\n\nIn exchange for the expanded scope, the law adds real guardrails. Anyone selling a time/temperature-control food must complete an approved food-safety course and keep proof of completion. Every producer selling under the act — not just those handling the new higher-risk foods — must now register annually with CDPHE before their first sale and display the state-issued registration number on their labels; the state also has to run a public, monthly-updated registry. Health inspectors can fine a producer up to $100 per violation for misbranding or safety failures, recover up to $1,000 in inspection costs, and permanently ban a producer from selling time/temperature-control foods after three violations in 12 months. The core provisions take effect January 1, 2027.",
+    whoIsAffected:
+      "Colorado residents selling homemade food directly to consumers under the Cottage Foods Act are affected, especially anyone who wants to add tamales, burritos, tortas, or similar foods requiring refrigeration or careful temperature handling to their offerings — previously off-limits under the act. The law doesn't cover everything: raw milk, low-acid canned foods, fermented or acidified time/temperature-control foods, alcohol or cannabinoid-containing products, and foods preserved by smoking, reduced-oxygen processing, or curing all stay outside this section.\n\nEvery cottage-food producer, not just those selling the newly allowed items, now faces the annual registration requirement and the higher (but still capped) $150,000-per-product revenue ceiling. A producer already near the old $10,000 ceiling gets meaningfully more room to grow, but the law explicitly bars splitting a business across multiple entities or contracts just to dodge the cap. Producers unsure whether their product formulation counts as requiring time/temperature control — or how to satisfy the safety-course requirement — are the ones most likely to need a consultant or food-safety attorney before their January 1, 2027 launch.",
+    complianceSteps: [
+      "Confirm your product qualifies: one type (with up to 5 variations) of a food requiring time/temperature control for safety, like tamales, burritos, or tortas — excluding raw milk, low-acid canned goods, and several other named categories.",
+      "Register annually with CDPHE before your first sale and obtain your registration number.",
+      "Complete a CDPHE-approved food-safety course covering time/temperature control, and keep proof of completion and good standing on file.",
+      "Label every product with your name, registration number, county of preparation, contact information, full ingredient list, and the CDPHE consumer-reporting website address.",
+      "Track your gross revenue per food product against the $150,000 annual cap (adjusted for inflation each year), and don't split your business across entities to get around it — that workaround is explicitly barred.",
+    ],
+    faqs: [
+      {
+        question: "When can Colorado home cooks start selling tamales and other refrigerated cottage foods?",
+        answer:
+          "January 1, 2027 — that's when the Cottage Foods Act's expanded provisions, allowing foods that require time and temperature control for safety, take effect under HB 26-1033.",
+      },
+      {
+        question: "Do I need a food-safety course to sell cottage foods in Colorado?",
+        answer:
+          "Only if you're selling a food that requires time and temperature control for safety, like tamales or burritos. You must complete an approved course covering food handling and time/temperature control and keep proof of completion. All cottage-food producers, regardless of product type, must separately register annually with CDPHE.",
+      },
+      {
+        question: "How much can I earn selling cottage foods before I need a full food license?",
+        answer:
+          "Up to $150,000 in gross revenue per food product per calendar year — up from the previous $10,000 cap — and the state adjusts that limit for inflation every year. Structuring your business across multiple entities to get around the cap is explicitly prohibited.",
+      },
+      {
+        question: "What happens if I mislabel my cottage food products?",
+        answer:
+          "A health inspector can fine you up to $100 per violation and recover inspection costs up to $1,000. If you rack up three misbranding or safety violations for a time/temperature-control food within 12 months, you lose the right to sell those foods under the Cottage Foods Act.",
+      },
+    ],
+    sources: [
+      {
+        label: "Colorado General Assembly — HB26-1033 bill page",
+        url: "https://leg.colorado.gov/bills/HB26-1033",
+      },
+      {
+        label: "Colorado General Assembly — HB26-1033 signed act (primary text)",
+        url: "https://leg.colorado.gov/bill_files/117161/download",
+      },
+    ],
+    relatedSlugs: ["colorado-medical-record-request-fee-cap", "virginia-paid-sick-leave"],
   },
 ];
 
