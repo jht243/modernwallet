@@ -45,3 +45,4 @@
 | /elder-care/medicaid-spend-down-calculator/hawaii/ | 2026-07-16 | 1 | 0/0/0/0/0 | 1 |
 | /guides/custodial-roth-ira-for-kids/ | 2026-07-18 | 4 | 0/1/1/0/0 | 0 |
 | /roundup/best-retirement-accounts-for-self-employed/ | 2026-07-18 | 1 | 0/0/0/0/0 | 0 |
+| / | 2026-07-21 | 1 | 0/0/0/0/0 | 0 |
