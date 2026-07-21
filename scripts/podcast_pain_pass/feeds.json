@@ -1,0 +1,13 @@
+{
+  "_comment": "Roster of TRANSCRIPT-READY personal-finance podcasts mined weekly by podcast-pain-pass-auto. Only shows whose RSS feed carries <podcast:transcript> tags can be auto-mined (no speech-to-text). Every feed below was verified on 2026-07-21 to contain a real <podcast:transcript url=...> element. To add a show: curl its feed and grep for '<podcast:transcript' before adding it. NOTE: the big Megaphone/Simplecast shows (NerdWallet Smart Money, Ramsey Show, BiggerPockets Money, Money Guy Show, etc.) do NOT embed transcript tags and cannot be mined here. 'vertical' is just a label carried through to the brief; the mined THEME (see mine_pain.py) drives the hub route.",
+  "shows": [
+    { "name": "Ready For Retirement", "vertical": "retirement", "feed": "https://rss.buzzsprout.com/958921.rss" },
+    { "name": "How to Money", "vertical": "personal-finance", "feed": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/63841c13-0d18-43da-80af-ae320005b8a3/ac04f6c2-caa5-49c7-9e23-ae320005b8ad/podcast.rss" },
+    { "name": "Suze Orman's Women & Money", "vertical": "personal-finance", "feed": "https://www.omnycontent.com/d/playlist/2df1102a-5761-4c99-b489-aabd0161f8fe/44e0936e-923c-43c7-9e2a-aade00edf4d3/4e05fb00-5a5b-4ed9-b353-aade00edf4dd/podcast.rss" },
+    { "name": "The Better Budgeting Podcast", "vertical": "budgeting", "feed": "https://rss.buzzsprout.com/2182191.rss" },
+    { "name": "Catching Up to FI", "vertical": "retirement", "feed": "https://feeds.libsyn.com/451611/rss" },
+    { "name": "The Simply Investing Dividend Podcast", "vertical": "investing", "feed": "https://rss.buzzsprout.com/2061354.rss" },
+    { "name": "Rental Income Podcast With Dan Lane", "vertical": "real-estate", "feed": "https://www.spreaker.com/show/4540074/episodes/feed" },
+    { "name": "The Personal Finance Club Show", "vertical": "investing", "feed": "https://feeds.buzzsprout.com/2526656.rss" }
+  ]
+}

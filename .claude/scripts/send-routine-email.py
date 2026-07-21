@@ -127,6 +127,7 @@ SKILL_LABELS = {
     "ahrefs-site-audit-auto": "Ahrefs site audit",
     "question-gap-pass-auto": "Follow-up question gaps",
     "competitor-monitor-auto": "Competitor publishing monitor",
+    "podcast-pain-pass-auto": "Podcast pain mining",
 }
 
 # Short pass label for the SUBJECT line (kept tight so the outcome fits too).
@@ -144,6 +145,7 @@ SKILL_SHORT = {
     "bing-webmaster-pass-auto": "Bing technical",
     "downloadable-asset-pass": "Asset build",
     "roundup-pass": "Roundup",
+    "podcast-pain-pass-auto": "Podcast mining",
 }
 
 
