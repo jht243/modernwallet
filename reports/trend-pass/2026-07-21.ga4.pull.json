@@ -1,0 +1,21 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-21",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 1,
+  "top10_pages_total_clicks": 1,
+  "channel_split": {
+    "/": {
+      "Direct": 1
+    }
+  }
+}
