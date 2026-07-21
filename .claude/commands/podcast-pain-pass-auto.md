@@ -76,7 +76,7 @@ On completion (success / no-changes / failure) send via:
   --summary "<result or failure reason>" --details-file /tmp/podcast-pain-pass-auto-$(date +%Y-%m-%d).md \
   --commit-sha "$(git rev-parse HEAD)" --commit-url "https://github.com/<repo>/commit/<sha>"
 ```
-Details file lists: episodes pulled per show, pain clusters found, validated terms, what shipped (with live URLs), what was deduped, and any backlog/circuit-breaker note. `podcast-pain-pass-auto` is registered in the helper's `SKILL_LABELS` + `SKILL_SHORT` dicts.
+**‼️ Every `success` email MUST list all new pages.** The helper's `clean_details` keeps only concrete "what changed" sections and drops analytics/roster/table noise, so the details file's FIRST and guaranteed-surviving section is the full new-page list — see Phase 2 "After push + verify" step 2 for the exact `## New pages shipped` format (one `[Title](full-URL)` bullet per page, all of them, never a count-only line). Everything else (episodes pulled, pain clusters, validated terms, what was deduped, backlog/circuit-breaker note) is optional context that may be stripped — the new-page list is the part that must always render. `podcast-pain-pass-auto` is registered in the helper's `SKILL_LABELS` + `SKILL_SHORT` dicts.
 
 ## Ledger (`reports/podcast-pain-pass/ledger.json`)
 - `shows.<name>.processed_guids` — episode GUIDs already mined (written by `pull_new_episodes.py`; prevents re-mining).

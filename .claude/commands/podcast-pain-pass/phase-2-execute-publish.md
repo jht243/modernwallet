@@ -35,4 +35,16 @@ For every `guide`/`comparison`/`roundup` row:
 
 ## After push + verify
 1. Append every shipped slug to `reports/podcast-pain-pass/ledger.json` `shipped_slugs`, remove each built row from `deferred_rows`, and commit the ledger (so next week's dedup treats them as covered).
-2. Send the `success` email via `.claude/scripts/send-routine-email.py --skill podcast-pain-pass-auto --site "https://www.themodernwallet.com"` with a details file: episodes mined per show, pain themes, validated terms, **the shipped pages as clickable live URLs**, deduped/skipped terms, and the commit SHA. Any URL that failed 200 goes in an `⚠️ Not live` list.
+2. Send the `success` email via `.claude/scripts/send-routine-email.py --skill podcast-pain-pass-auto --site "https://www.themodernwallet.com"` with a details file.
+
+   **‼️ The details file MUST list every new page — this is non-negotiable.** The helper's `clean_details` strips analytics/roster/table noise and keeps only "what changed" sections, so the new-page list must be under a surviving heading (`## New pages shipped`) with this EXACT shape — one `[Title](FULL-URL)` bullet per page, using the **full absolute URL** you just 200-verified (a markdown link's target is NOT host-resolved, so a bare `/route` renders as a broken relative link — always paste the complete `https://…` URL):
+
+   ```markdown
+   ## New pages shipped
+   - [Example Guide Title](https://www.themodernwallet.com/guides/example-guide)
+   - [Another Page Title](https://www.themodernwallet.com/compare/x-vs-y)
+   ```
+
+   - **List ALL of them** — one bullet per page shipped this run, never a truncated subset, never a count-only line ("1 new page"). If 15 shipped, all 15 bullets appear.
+   - If the run also updated existing page bodies, add a `## Updated pages` section (this heading survives — `## Body updates` does NOT) with the same `[Title](FULL-URL)` bullets.
+   - Any URL that failed 200 goes in an `⚠️ Not live` list. Deduped/skipped terms and the commit SHA are optional trailing context that may be filtered — the new-page list is what must always render.
