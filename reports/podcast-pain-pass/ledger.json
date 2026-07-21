@@ -1,6 +1,101 @@
 {
  "version": 1,
- "shows": {},
- "shipped_slugs": [],
+ "shows": {
+  "Ready For Retirement": {
+   "processed_guids": [
+    "Buzzsprout-19519688",
+    "Buzzsprout-19487629",
+    "Buzzsprout-19438747",
+    "Buzzsprout-19419232",
+    "Buzzsprout-19368780",
+    "Buzzsprout-19301178",
+    "Buzzsprout-19301130",
+    "Buzzsprout-19146994"
+   ]
+  },
+  "How to Money": {
+   "processed_guids": [
+    "69ab1f13-5585-4dcf-b821-b486014ed076",
+    "d7c8a880-ebac-42db-9c6d-b4860149a028",
+    "08a34790-08e3-4444-a063-b48601462c7e",
+    "618d28fb-54cd-4ddd-b32c-b4860048f698",
+    "55b722b7-d4c1-4d3b-bd62-b4790129b884",
+    "ed0a447e-de9b-440c-bade-b47901257c3f",
+    "bb1840c5-4ed5-4bb7-b4a2-b47901212578",
+    "85499a10-a0a1-430e-a2f9-b479011a6a19"
+   ]
+  },
+  "Suze Orman's Women & Money": {
+   "processed_guids": [
+    "0e733b66-0a27-4cdd-8154-b48b0150bef4",
+    "c8537242-9d7d-4eac-b6ce-b48800b9bfef",
+    "d68b9458-3dcb-4b47-9b85-b484015a0e43",
+    "9f73acbf-de44-46ea-b3fa-b48200135f53",
+    "e9bbd96f-304f-4f2e-a0b8-b47d010f693b",
+    "5c8167d6-6a36-4148-8837-b47b00110fbb",
+    "03fa9e4a-ecab-4e33-8d2d-b4770039d61f",
+    "7482e34f-d1eb-495e-80a5-b473002b6458"
+   ]
+  },
+  "The Better Budgeting Podcast": {
+   "processed_guids": [
+    "Buzzsprout-19255861",
+    "Buzzsprout-19123544",
+    "Buzzsprout-18951509",
+    "Buzzsprout-18572132",
+    "Buzzsprout-18456863",
+    "Buzzsprout-18456241",
+    "Buzzsprout-18455773",
+    "Buzzsprout-18179220"
+   ]
+  },
+  "Catching Up to FI": {
+   "processed_guids": []
+  },
+  "The Simply Investing Dividend Podcast": {
+   "processed_guids": [
+    "Buzzsprout-14825022",
+    "Buzzsprout-14781229",
+    "Buzzsprout-14733579",
+    "Buzzsprout-14635383",
+    "Buzzsprout-14629169",
+    "Buzzsprout-14603902",
+    "Buzzsprout-14543800",
+    "Buzzsprout-14498530"
+   ]
+  },
+  "Rental Income Podcast With Dan Lane": {
+   "processed_guids": [
+    "https://api.spreaker.com/episode/72585989",
+    "https://api.spreaker.com/episode/72553113",
+    "https://api.spreaker.com/episode/72551089",
+    "https://api.spreaker.com/episode/71568987",
+    "https://api.spreaker.com/episode/72678911",
+    "https://api.spreaker.com/episode/72375029",
+    "https://api.spreaker.com/episode/72373976",
+    "https://api.spreaker.com/episode/72306702"
+   ]
+  },
+  "The Personal Finance Club Show": {
+   "processed_guids": [
+    "05c4357d-2e63-48f9-8eb1-fe9017a5818f",
+    "ae727f7c-f282-416e-b17d-cdb8cdf704b8",
+    "077ec3f6-dcef-4f90-b19a-b419162b6823",
+    "6b3c069a-495e-4e28-baf5-1ff64885aaef",
+    "6069ebd8-7002-4a61-862f-39d3235724dd",
+    "Buzzsprout-18983529",
+    "Buzzsprout-18939234",
+    "Buzzsprout-18908239"
+   ]
+  }
+ },
+ "shipped_slugs": [
+  "how-much-life-insurance-do-i-need",
+  "how-much-emergency-fund",
+  "how-long-to-pay-off-credit-card",
+  "how-much-tax-will-i-pay",
+  "pay-off-debt-or-invest",
+  "debt-snowball-vs-avalanche"
+ ],
  "deferred_rows": []
 }

@@ -2373,6 +2373,306 @@ export const GUIDES: Guide[] = [
   },
 
   ...BUSINESS_GUIDES,
+  // -- podcast-pain-pass 2026-07-21: how-much-life-insurance-do-i-need --
+{
+  slug: "how-much-life-insurance-do-i-need",
+  title: "How Much Life Insurance Do I Need? (DIME Method)",
+  metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your exact coverage.",
+  h1: "How Much Life Insurance Do I Need?",
+  cardBlurb: "A needs-based way to size your coverage, from the 10 to 12 times income rule to the DIME method.",
+  intro: "How much life insurance you need is usually 10 to 12 times your yearly income. That simple multiple is a fast starting point for most families.\n\nYour real need is the money your family would lose if your paycheck stopped. A needs-based method adds up those exact costs, so you buy enough without overpaying.\n\nThis guide covers two ways to size your coverage. It explains why term insurance usually beats whole life for pure protection, and why your need shrinks as you age.",
+  sections: [
+    {
+      heading: "The 10 to 12 Times Income Rule",
+      body: "A common rule sets your life insurance at 10 to 12 times your yearly income. This multiple replaces your paycheck for about a decade, giving your family time to adjust.\n\nThe rule is fast, but blunt. It ignores your debts, the size of your mortgage, and how many children you have.\n\nUse it as a quick gut check. Then confirm the number with a needs-based method, like the one below.",
+    },
+    {
+      heading: "The DIME Method Explained",
+      body: "The DIME method sizes your coverage by adding four costs: Debt, Income, Mortgage, and Education. Each letter stands for a real bill your family would face.\n\nDebt means what you owe outside your mortgage, like car loans and credit cards.\n\nIncome is your yearly pay times the number of years your family would need it. Most people replace 10 years of income.\n\nMortgage is the balance left on your home loan. Education is the future cost of college for each child.\n\nAdd the four together to get one clear coverage target.",
+    },
+    {
+      heading: "A Worked DIME Example",
+      body: "Here is a DIME estimate for a married parent who earns $70,000 a year and has two young children. The numbers below are assumptions you would swap for your own.\n\nDebt: $25,000 in a car loan and credit cards.\nIncome: $70,000 of pay times 10 years, which is $700,000.\nMortgage: $250,000 left on the home loan.\nEducation: $100,000 each for two children, which is $200,000.\n\nAdd them up: $25,000 + $700,000 + $250,000 + $200,000 = $1,175,000 in coverage.\n\nThat total is about 17 times this parent's income. The simple 10 to 12 times rule would suggest only $700,000 to $840,000. The gap is the mortgage and college, which DIME counts on purpose.",
+    },
+    {
+      heading: "Who Needs Little or No Life Insurance",
+      body: "You may need little or no life insurance if no one depends on your income. The whole point of coverage is to protect people who would lose money without you.\n\nSingle adults with no children and no co-signed debt often need only enough to cover final expenses.\n\nStrong savings also replace some coverage. [Tally your assets with a net worth calculator](/net-worth/) to see what your family already has.\n\nA solid [emergency fund](/guides/how-much-emergency-fund/) lowers the cash your family must find right away, which shrinks the coverage you need.",
+    },
+    {
+      heading: "Why Term Usually Beats Whole Life",
+      body: "Term life insurance usually beats whole life for pure protection because it costs far less per dollar of coverage. The NAIC notes that term insurance is meant to give lower-cost coverage for a set period.\n\nWhole life is a cash-value policy that lasts your whole life but costs much more. That extra cost buys a savings feature, not a bigger death benefit.\n\nFor most families, cheap term buys the large payout they actually need. Buy whole life only for a lasting need, such as a lifelong dependent or [estate planning](/estate-planning/) goals.\n\nRead the full [whole life vs term life insurance comparison](/compare/whole-life-vs-term-life-insurance/) before you decide.",
+    },
+    {
+      heading: "Why Your Coverage Need Shrinks Over Time",
+      body: "Your life insurance need shrinks over time as your mortgage shrinks, your savings grow, and your children become independent. Most people carry the highest need in their 30s, not their 60s.\n\nThis is why you should buy the most coverage when you are young. Your need is highest then, and term premiums are lowest.\n\nThe NAIC says that once your home is paid off and your children support themselves, you may not need coverage at all.\n\nA long term policy locks in a low rate while you build the savings that will one day replace it.",
+    },
+  ],
+  tools: [
+    { href: "/net-worth/", label: "Net Worth Calculator" },
+    { href: "/mortgage/payoff-calculator/", label: "Mortgage Payoff Calculator" },
+    { href: "/estate-planning/", label: "Estate Planning Calculator" },
+  ],
+  faqs: [
+    {
+      question: "How much life insurance do I need?",
+      answer: "You need enough to replace your income and cover your debts, mortgage, and your children's education. A fast rule is 10 to 12 times your yearly income. The DIME method gives a more exact figure by adding those costs together.",
+    },
+    {
+      question: "What is the DIME method?",
+      answer: "The DIME method adds four costs to size your coverage: Debt, Income, Mortgage, and Education. You total your non-mortgage debt, the years of income to replace, your mortgage balance, and future college costs.",
+    },
+    {
+      question: "Is term or whole life insurance better?",
+      answer: "Term life is better for most people who need pure, affordable protection. It costs much less than whole life for the same death benefit. Whole life fits a lasting need, like a lifelong dependent or an estate plan.",
+    },
+    {
+      question: "Do I need life insurance if I have no kids?",
+      answer: "You probably need little life insurance if no one depends on your income. Single adults with no dependents and no co-signed debt often need only enough to cover final expenses.",
+    },
+    {
+      question: "Does my life insurance need change over time?",
+      answer: "Yes, your life insurance need usually falls as you age. Your mortgage shrinks, your savings grow, and your children become independent, so the large coverage you buy young can later be reduced or dropped.",
+    },
+    {
+      question: "Should I count my life insurance from work?",
+      answer: "Yes, but employer life insurance usually is not enough on its own. The NAIC warns the death benefit is often less than you need, and you may lose the coverage if you leave the job.",
+    },
+  ],
+  sources: [
+    { label: "NAIC Life Insurance Buyer's Guide", url: "https://content.naic.org/sites/default/files/publication-lig-lp-consumer-life.pdf" },
+    { label: "NAIC: What Type of Life Insurance Is Right for You?", url: "https://content.naic.org/article/consumer-insight-what-type-life-insurance-right-you" },
+  ],
+},
+
+  // -- podcast-pain-pass 2026-07-21: how-much-emergency-fund --
+{
+    slug: "how-much-emergency-fund",
+    title: "How Much Emergency Fund Do I Need? (3-6 Months Rule)",
+    metaDescription:
+      "How much emergency fund do you need? A common rule is 3 to 6 months of your essential expenses -- not your income. See a worked example and where to keep it.",
+    h1: "How Much Emergency Fund Do I Need?",
+    cardBlurb: "How much to save in an emergency fund -- sized on essential expenses, not income -- plus where to keep it and how to build it.",
+    intro:
+      "How much emergency fund you need is 3 to 6 months of your essential monthly expenses, not your total income. Sizing the fund on needs alone, rather than your full paycheck, often cuts the target in half. This guide shows you how to set the number and when to hold more or less. You will also see where to keep the cash and how to build it.",
+    sections: [
+      { heading: "Size it on essential expenses, not income", body: "Your emergency fund should cover essential monthly expenses, not your whole income. Essentials are the bills you cannot skip: rent or mortgage, utilities, groceries, insurance, transportation, and minimum debt payments.\n\nLeave out the extras. Dining out, travel, subscriptions, and shopping are wants, not needs. In a real emergency, you pause those costs, so your fund does not have to replace them.\n\nThis is the point most people miss. Sizing a fund on gross income can nearly double the target for no reason. Add up your true essentials first -- our [budget tools](/budget/) make that quick -- then multiply by the number of months you want to cover." },
+      { heading: "A worked example: $3,000 a month", body: "Say your essential expenses come to $3,000 a month. Three months of coverage is $9,000. Six months is $18,000. That range, $9,000 to $18,000, is your target.\n\nPick a point in the range based on your risk. A stable two-income household might aim near $9,000. A single earner with variable pay leans toward $18,000.\n\nUse our [savings goal calculator](/investing/savings-goal-calculator/) to turn that target into a monthly savings plan you can actually follow." },
+      { heading: "When to hold more than the minimum", body: "Hold closer to 6 months -- or more -- when your income is less certain or harder to replace. Several situations call for a bigger cushion.\n\n- **One income.** A single earner has no second paycheck as backup.\n- **Sole earner for a family.** More people depend on that one income.\n- **Variable or self-employed income.** Freelancers and commission earners face uneven months, so 6 to 12 months is safer.\n- **A shaky job or industry.** If layoffs are a real risk, a longer runway buys time.\n- **A long expected job search.** Senior or specialized roles can take many months to replace.\n\nThe less predictable your income, the more months you want saved." },
+      { heading: "When 3 months is enough", body: "Three months of essential expenses can be enough when your income is stable and backed up. Two steady salaries in one household are the clearest case.\n\nIf one partner loses a job, the other paycheck still covers part of the bills. That shared safety net lowers how much cash you must hold.\n\nOther signs you can sit at the lower end: strong job security, an in-demand skill, and no dependents relying only on you. You can always build past 3 months later, but reaching that first milestone matters most." },
+      { heading: "Where to keep your emergency fund", body: "Keep your emergency fund in a high-yield savings account that is FDIC-insured and easy to reach. The money must be safe and available the day you need it.\n\nThe FDIC automatically insures deposits up to at least $250,000 per depositor, per insured bank. A savings account keeps your cash protected while it earns interest.\n\nSkip investments like stocks for this money. Their value can drop right when an emergency hits. Also skip a plain checking account, where idle cash earns almost nothing and is easy to spend by accident.\n\nOne caution: do not treat a credit card as your emergency fund. If you already carry a balance, see [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) to understand the real cost." },
+      { heading: "Build it in the right order", body: "Build your emergency fund in two stages so early progress feels reachable. First, save a small starter fund of $1,000 to $2,000. This covers most surprise bills, like a car repair or a medical copay.\n\nA starter fund also keeps a small emergency from turning into high-interest debt. Once it is in place, grow the fund toward your full 3-to-6-month target.\n\nWondering whether to finish the fund before investing or clearing debt? See our guide on [whether to pay off debt or invest](/guides/pay-off-debt-or-invest/) to sequence the rest of your plan." },
+    ],
+    tools: [
+      { href: "/budget/monthly-budget-calculator/", label: "Monthly budget" },
+      { href: "/budget/50-30-20-budget-calculator/", label: "50/30/20 budget" },
+      { href: "/investing/savings-goal-calculator/", label: "Savings goal" },
+    ],
+    faqs: [
+      { question: "How much emergency fund do I need?", answer: "You need 3 to 6 months of your essential monthly expenses, not 3 to 6 months of income. Add up rent, utilities, groceries, insurance, transportation, and minimum debt payments. Then multiply by 3 for the low end and 6 for the high end." },
+      { question: "Should an emergency fund be based on income or expenses?", answer: "Expenses -- specifically your essential expenses. In an emergency you cut wants like dining out and travel, so your fund only needs to cover needs. Sizing it on your full income can nearly double the target for no reason." },
+      { question: "How much should I save before I start investing?", answer: "Save a starter fund of $1,000 to $2,000 first, then build toward 3 to 6 months of essential expenses. A starter fund keeps a small emergency from becoming credit card debt before you invest or attack other debt." },
+      { question: "Where should I keep my emergency fund?", answer: "In a high-yield savings account that is FDIC-insured and liquid. FDIC insurance protects deposits up to at least $250,000 per depositor, per insured bank. A savings account also lets the cash earn interest while staying easy to reach. Avoid stocks, which can fall right when you need the money." },
+      { question: "How many months should I save if I am self-employed?", answer: "Aim for 6 to 12 months of essential expenses if your income is variable or self-employed. Uneven months and slow seasons make a longer cushion safer than the standard 3 to 6 months. A single earner supporting a family should also lean toward the higher end." },
+      { question: "Why do I need an emergency fund?", answer: "An emergency fund keeps a surprise cost from turning into high-interest debt. The Federal Reserve found that in 2024, only 63% of adults could cover a $400 emergency with cash or its equivalent. A dedicated fund means a car repair or medical bill does not derail your budget." },
+    ],
+    sources: [
+      { label: "Federal Reserve -- Economic Well-Being of U.S. Households in 2024", url: "https://www.federalreserve.gov/publications/2025-economic-well-being-of-us-households-in-2024-savings-and-investments.htm" },
+      { label: "CFPB -- An Essential Guide to Building an Emergency Fund", url: "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" },
+      { label: "FDIC -- Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+    ],
+  },
+
+  // -- podcast-pain-pass 2026-07-21: how-long-to-pay-off-credit-card --
+{
+  slug: "how-long-to-pay-off-credit-card",
+  title: "How Long to Pay Off Credit Card: The Real Math",
+  metaDescription:
+    "How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to clear it faster.",
+  h1: "How Long Will It Take to Pay Off My Credit Card?",
+  cardBlurb:
+    "See how balance, APR, and payment set your payoff date -- and why a small fixed payment beats the minimum by years.",
+  intro:
+    "How long it takes to pay off a credit card depends on three things: your balance, your APR, and your monthly payment. This guide shows the exact math with a clear example. The big lesson is simple. Paying only the minimum can trap you in debt for a decade or more. A small, steady payment above the minimum can clear the same card in a few years. Run your own numbers with the free tools below.",
+  sections: [
+    {
+      heading: "The three numbers that set your payoff time",
+      body: "How long you carry a credit card balance comes down to three numbers: your balance, your APR, and your monthly payment. Your balance is what you owe today. Your APR is the yearly interest rate. Divide it by 12 to get the monthly rate. Your payment is what you send each month.\n\nRaise the payment and the timeline shrinks fast. Raise the APR or the balance and it stretches. The payment is the lever you control most. Even a small, steady increase changes the outcome more than most people expect.",
+    },
+    {
+      heading: "The minimum-payment trap",
+      body: "Paying only the minimum keeps you in debt for years, because most of it goes to interest, not your balance. Card issuers set the minimum low. It is often around 1% to 3% of the balance plus that month's interest. On a high-APR card, that barely dents what you owe.\n\nThe CARD Act forces your statement to show this. By law, each bill lists how long payoff takes if you pay only the minimum. It also shows the fixed amount that would clear your balance in 36 months. Read that box. The gap between those two numbers is the real cost of the minimum-payment habit.",
+    },
+    {
+      heading: "How to calculate your payoff time",
+      body: "You can calculate payoff time with one formula when your payment stays fixed:\n\nmonths = -ln(1 - (r x B) / P) / ln(1 + r)\n\nHere B is your balance, P is your fixed monthly payment, and r is your monthly rate (APR divided by 12). The \"ln\" is the natural logarithm on any calculator. The formula assumes a fixed rate, a fixed payment, and no new charges.\n\nOne rule falls straight out of the math. If your payment is less than or equal to one month's interest, you never pay the card off. Your payment has to beat the interest before the balance can fall at all.",
+    },
+    {
+      heading: "Worked example: $5,000 at 24% APR",
+      body: "Say you owe $5,000 on a card at 24% APR. That is a 2% monthly rate (24% / 12). You stop charging and pay a fixed $200 a month.\n\nPlug it in: months = -ln(1 - (0.02 x 5,000) / 200) / ln(1.02) = ln(2) / ln(1.02), which is about 35 months. You clear the card in just under three years and pay about $2,000 in interest.\n\nNow compare the minimum. Assume a typical minimum of 1% of the balance plus that month's interest, never below $25. It starts near $150 and shrinks as the balance falls. At that pace, payoff takes nearly 19 years and costs more than $8,000 in interest.\n\nHere is the part that surprises people. The fixed $200 is only about $50 more than the first minimum payment. That extra $50 a month, held steady, cuts payoff from nearly 19 years to about 3 years and saves more than $6,000 in interest.",
+    },
+    {
+      heading: "How to pay off your credit card faster",
+      body: "The fastest fix is to pick a fixed payment and never let it fall. Minimums drop as your balance drops, which quietly slows you down. A flat payment keeps your momentum going.\n\nAdd whatever extra you can on top. Because interest is charged on your balance, every extra dollar today saves interest on every month that follows. Even $25 more a month moves the finish line up.\n\nIf you carry more than one card, pick an order. The [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) comparison shows the two proven methods. Snowball pays the smallest balance first for quick wins. Avalanche pays the highest APR first to save the most interest. A 0% balance-transfer card can help too, but watch the transfer fee and the date the promo rate ends.",
+    },
+    {
+      heading: "Pay off the card, or invest?",
+      body: "Clearing high-APR credit card debt usually beats investing, dollar for dollar. Avoiding 24% interest works like a guaranteed 24% return. Few investments match that with no risk.\n\nStill capture any 401(k) employer match first, since that is free money. After that, attack the card. Our guide on whether to [pay off debt or invest](/guides/pay-off-debt-or-invest/) walks through the tradeoff step by step.\n\nTo find the extra cash, tighten your budget. A [50/30/20 budget](/budget/50-30-20-budget-calculator/) or a full [monthly budget](/budget/monthly-budget-calculator/) can free up money to raise your fixed payment.",
+    },
+  ],
+  tools: [
+    { href: "/budget/monthly-budget-calculator/", label: "Monthly budget" },
+    { href: "/budget/50-30-20-budget-calculator/", label: "50/30/20 budget" },
+  ],
+  faqs: [
+    {
+      question: "How long does it take to pay off a credit card?",
+      answer:
+        "It depends on your balance, APR, and monthly payment. With a fixed payment, use months = -ln(1 - (r x B) / P) / ln(1 + r), where r is your monthly rate. Paying only the minimum can stretch a mid-size balance past a decade. A higher fixed payment can clear the same card in a few years.",
+    },
+    {
+      question: "How long to pay off $5,000 in credit card debt?",
+      answer:
+        "About 35 months, or just under three years, if you pay a fixed $200 a month at 24% APR. That costs roughly $2,000 in interest. Pay only the minimum instead and the same balance can take nearly 19 years and cost more than $8,000 in interest.",
+    },
+    {
+      question: "Why do minimum payments take so long?",
+      answer:
+        "Minimum payments are set low, often 1% to 3% of the balance plus interest, so most of each payment covers interest, not principal. As your balance falls, the minimum falls too, which slows progress further. By law, your statement shows how many years minimum-only payoff would take.",
+    },
+    {
+      question: "What is the average credit card interest rate?",
+      answer:
+        "The average rate on credit card accounts was 20.94% in the Federal Reserve's G.19 release, and 22.15% for accounts actually charged interest (May 2026). A higher APR sends more of each payment to interest, which stretches your payoff time and raises the total you pay.",
+    },
+    {
+      question: "Does paying more than the minimum help?",
+      answer:
+        "Yes, and it helps more than most people expect. Because interest is charged on your balance, every extra dollar cuts interest on all the months that follow. On a $5,000 card at 24% APR, paying a fixed $200 instead of the shrinking minimum saves more than $6,000 and many years of payments.",
+    },
+    {
+      question: "Is it better to pay off my credit card or invest?",
+      answer:
+        "Paying off a high-APR credit card usually wins, because avoiding 24% interest works like a guaranteed 24% return with no risk. Capture any employer 401(k) match first, then focus on the card. See our guide on whether to pay off debt or invest for the full tradeoff.",
+    },
+  ],
+  sources: [
+    { label: "Federal Reserve -- Consumer Credit (G.19)", url: "https://www.federalreserve.gov/releases/g19/current/" },
+    { label: "CFPB -- What the payoff box on your credit card statement means", url: "https://www.consumerfinance.gov/ask-cfpb/a-box-on-my-credit-card-bill-says-that-i-will-pay-off-the-balance-in-three-years-if-i-pay-a-certain-amount-what-does-that-mean-do-i-have-to-pay-that-much-if-i-pay-that-much-and-make-new-purchases-will-i-still-owe-nothing-after-three-years-en-36/" },
+  ],
+},
+
+  // -- podcast-pain-pass 2026-07-21: how-much-tax-will-i-pay --
+{
+  slug: "how-much-tax-will-i-pay",
+  title: "How Much Tax Will I Pay? Estimate Your 2026 Bill",
+  metaDescription: "How much tax will you pay? Learn how tax brackets stack, why your marginal rate is not your effective rate, and how FICA adds on top -- with a worked example.",
+  h1: "How Much Tax Will I Pay? Estimating Your Federal Income Tax",
+  cardBlurb: "See why your top tax bracket is not the rate you actually pay -- and estimate your 2026 federal income tax with a clear worked example.",
+  intro: "How much tax you will pay depends on your taxable income, your filing status, and the fact that only your last dollars hit your top rate.\n\nThe United States uses a progressive system. Your income is split into bands called brackets, and each band is taxed at its own rate.\n\nSo your top bracket, called your marginal rate, is not the rate you pay on your whole income. Your real rate, called the effective rate, is almost always lower.\n\nThis guide shows you how to estimate your 2026 federal income tax by hand, plus the Social Security and Medicare taxes that come out on top.",
+  sections: [
+    {
+      heading: "Start with taxable income, not your salary",
+      body: "Your salary is not the number the tax brackets use. Tax starts with a smaller figure called taxable income.\n\nTaxable income equals your gross income minus your deductions. Most people take the standard deduction, a flat amount that needs no receipts.\n\nFor tax year 2026, the standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, and $24,150 for heads of household.\n\nSo a single filer earning $70,000 has taxable income of $70,000 minus $16,100, or $53,900. The brackets apply to that $53,900 -- not the full salary."
+    },
+    {
+      heading: "How the 2026 tax brackets stack",
+      body: "The 2026 federal tax brackets are marginal, meaning each slice of your income is taxed at its own rate. Moving into a higher bracket only taxes the dollars inside that bracket.\n\nHere are the 2026 brackets for a single filer:\n\n- 10% on taxable income up to $12,400\n- 12% from $12,400 to $50,400\n- 22% from $50,400 to $105,700\n- 24% from $105,700 to $201,775\n- 32% from $201,775 to $256,225\n- 35% from $256,225 to $640,600\n- 37% on income above $640,600\n\nPicture your income poured into these bands from the bottom up. Fill the 10% band first, then the 12% band, and so on. Only the top splash lands in your highest bracket."
+    },
+    {
+      heading: "Marginal rate vs effective rate",
+      body: "Your marginal rate is the rate on your next dollar of income. Your effective rate is the tax you actually pay divided by your income. These two numbers are not the same.\n\nSay a single filer sits in the 22% bracket. That 22% only touches the dollars above $50,400. Everything below is taxed at 10% or 12%.\n\nBlend those lower rates in and the real rate drops well below 22%. That blended number is your effective rate, and it is the honest answer to how much tax you pay.\n\nThe worked example below shows a 22% top bracket turning into an effective rate near 12%."
+    },
+    {
+      heading: "Worked example: a single filer earning $70,000",
+      body: "Take a single filer with a $70,000 salary for tax year 2026.\n\nFirst, subtract the $16,100 standard deduction. Taxable income is $53,900.\n\nNow stack that $53,900 through the brackets:\n\n- 10% on the first $12,400 = $1,240\n- 12% on the next $38,000 (from $12,400 to $50,400) = $4,560\n- 22% on the last $3,500 (from $50,400 to $53,900) = $770\n\nAdd them up: $1,240 + $4,560 + $770 = $6,570 in federal income tax.\n\nHer top bracket is 22%, but her effective rate is $6,570 divided by $53,900, or about 12.2%. As a share of her full $70,000 salary, it is only about 9.4%.\n\nThat gap -- 22% on paper versus roughly 12% in reality -- is the whole point of a marginal system."
+    },
+    {
+      heading: "FICA: Social Security and Medicare come out on top",
+      body: "Federal income tax is not the only tax on your paycheck. FICA, which funds Social Security and Medicare, comes out on top.\n\nFICA applies to your gross wages, not your taxable income, so the standard deduction does not shrink it.\n\nAs an employee in 2026, you pay 6.2% for Social Security and 1.45% for Medicare, for 7.65% total. Your employer pays a matching 7.65%.\n\nSocial Security stops at a wage base. In 2026 you pay the 6.2% only on the first $184,500 of wages. Medicare has no cap.\n\nHigh earners pay an extra 0.9% Medicare tax on wages above $200,000.\n\nFor our $70,000 single filer, FICA is 7.65% of $70,000, or $5,355. Add that to $6,570 of income tax and her total federal tax is $11,925."
+    },
+    {
+      heading: "Why a raise never lowers your take-home pay",
+      body: "A raise into a higher bracket never lowers your take-home pay. This is the most common tax myth.\n\nBrackets are marginal, so a raise only taxes the new dollars at the higher rate. Every dollar you already earned keeps its old, lower rate.\n\nSay a raise pushes you from the 12% band into the 22% band. Only the part above the bracket line is taxed at 22%. You still keep most of the raise.\n\nYou can never take home less by earning more. A raise always leaves you with more cash, just not the full amount before tax."
+    },
+    {
+      heading: "Lower your taxable income the legal way",
+      body: "You can shrink your tax bill by shrinking your taxable income. Pre-tax retirement contributions are the simplest lever.\n\nMoney you put into a traditional 401(k) comes out before income tax. It lowers the taxable income your brackets apply to.\n\nOur single filer could cut her $53,900 taxable income by contributing to a workplace plan. Try the numbers in our [401(k) calculator](/retirement/401k-calculator/).\n\nA Roth account works the opposite way -- you pay tax now for tax-free withdrawals later. Our [401(k) vs Roth IRA guide](/compare/401k-vs-roth-ira/) walks through which fits your bracket.\n\nOne catch: pre-tax 401(k) contributions cut income tax but not FICA. Social Security and Medicare still apply to the money you defer."
+    }
+  ],
+  tools: [
+    { href: "/retirement/401k-calculator/", label: "401(k) Calculator" },
+    { href: "/investing/roth-ira-calculator/", label: "Roth IRA Calculator" }
+  ],
+  faqs: [
+    {
+      question: "How much tax will I pay on a $70,000 salary?",
+      answer: "A single filer earning $70,000 pays about $6,570 in 2026 federal income tax, an effective rate near 12.2% of taxable income. After the $16,100 standard deduction, taxable income is $53,900, stacked through the 10%, 12%, and 22% brackets. FICA adds another $5,355 for Social Security and Medicare."
+    },
+    {
+      question: "What is the difference between my marginal and effective tax rate?",
+      answer: "Your marginal rate is the rate on your next dollar of income, while your effective rate is your total tax divided by your income. Because brackets are marginal, your effective rate is almost always lower than your top bracket. A filer in the 22% bracket often has an effective rate near 12%."
+    },
+    {
+      question: "Does a raise into a higher tax bracket lower my take-home pay?",
+      answer: "No. A raise never lowers your take-home pay. Brackets are marginal, so only the dollars inside the new bracket are taxed at the higher rate. Every dollar below the bracket line keeps its lower rate, so you always keep more after a raise."
+    },
+    {
+      question: "Is FICA the same as federal income tax?",
+      answer: "No. FICA is separate from federal income tax. You pay 6.2% for Social Security and 1.45% for Medicare on your gross wages, on top of income tax. In 2026, Social Security tax stops after $184,500 of wages, while Medicare has no wage cap."
+    },
+    {
+      question: "What is the 2026 standard deduction?",
+      answer: "The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, and $24,150 for heads of household. You subtract it from your gross income to find taxable income, which is the number the tax brackets actually apply to."
+    },
+    {
+      question: "How can I lower how much tax I pay?",
+      answer: "Lower your taxable income to lower your income tax. Pre-tax contributions to a traditional 401(k) come out before income tax and can move you toward a lower bracket. This cuts income tax but not FICA. Roth accounts instead trade tax now for tax-free income later."
+    }
+  ],
+  sources: [
+    { label: "IRS -- Tax inflation adjustments for tax year 2026", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
+    { label: "IRS Topic no. 751 -- Social Security and Medicare withholding rates", url: "https://www.irs.gov/taxtopics/tc751" }
+  ],
+},
+
+  // -- podcast-pain-pass 2026-07-21: pay-off-debt-or-invest --
+{
+  slug: "pay-off-debt-or-invest",
+  title: "Pay Off Debt or Invest? A Simple Decision Framework",
+  metaDescription:
+    "Deciding whether to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.",
+  h1: "Should You Pay Off Debt or Invest? A Simple Decision Framework",
+  cardBlurb: "Compare your debt's interest rate to your expected return, then follow the order: match, emergency fund, high-rate debt, invest.",
+  intro:
+    "Whether to pay off debt or invest comes down to one simple comparison. You weigh your debt's interest rate against the return you can expect from investing. Paying off a debt earns a guaranteed, risk-free return equal to its interest rate. Investing might beat that, but the return is never promised. This guide gives you the priority order most planners agree on. Each step links to a free ModernWallet calculator so you can run your own numbers.",
+  sections: [
+    { heading: "Paying off debt is a guaranteed return", body: "Paying off debt gives you a guaranteed, risk-free return equal to the loan's interest rate. Wipe out a card charging 21%, and you effectively earn 21% -- with zero risk. No investment can promise that.\n\nThe U.S. stock market has historically returned roughly 10% a year before inflation. But that long-run average hides big swings, and some years it drops 20% or more. Your future return is uncertain; the debt payoff is not.\n\nSo the real question is simple. Does your debt cost more than you can reliably earn? If yes, paying off the debt wins. Credit cards recently averaged about 21% APR, far above any safe return (Federal Reserve, May 2026)." },
+    { heading: "Step 1: Grab your employer 401(k) match first", body: "Always contribute enough to capture your full employer 401(k) match before anything else. A match is free money and an instant return no debt payoff can beat.\n\nMany plans add 50 cents for every dollar you contribute (IRS). That is an immediate 50% return. A dollar-for-dollar match doubles your money on the spot -- a 100% return. Even with credit card debt, grab the match first, then attack the debt.\n\nOne catch: matching money may vest over a few years, so check your plan rules. After you secure the match, you can [compare a 401(k) vs a Roth IRA](/compare/401k-vs-roth-ira/) for the rest of your savings." },
+    { heading: "Step 2: Build a starter emergency fund", body: "Build a small starter emergency fund before you throw every dollar at debt. Without cash on hand, one surprise bill lands right back on a credit card. That traps you in the cycle you are trying to escape.\n\nA starter fund of about $1,000, or one month of expenses, is enough at this stage. Keep it in a separate savings account you do not touch.\n\nYou can build the full three-to-six-month cushion later, after your high-rate debt is gone. See [how much emergency fund you need](/guides/how-much-emergency-fund/) for your own situation." },
+    { heading: "Step 3: Kill high-interest debt before taxable investing", body: "Pay off high-interest debt before you invest in a regular taxable account. High-interest usually means anything above roughly 7% to 8%. Credit cards, at about 21%, are the clearest example.\n\nNo safe investment reliably beats those rates, so clearing the debt wins. The CFPB suggests targeting your highest-rate balance first to save the most (CFPB).\n\nNot sure which debt to hit first? See [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) to pick a method. To map your timeline, read [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/)." },
+    { heading: "Step 4: With low-rate debt, investing often wins", body: "With low-rate debt, investing your extra cash often beats paying the loan down early. A sub-4% mortgage is the classic example. If your loan costs 3.5% and investments may earn more over time, the math favors investing.\n\nThat gap is your likely reward for taking some risk. It is not guaranteed, though, so weigh your comfort with risk.\n\nStudent loans and auto loans fall in a gray zone. Compare each loan's rate to your expected return, and split extra cash if you are unsure. Federal student loans also carry protections you give up by paying them off fast." },
+    { heading: "The behavioral factor: guaranteed vs uncertain", body: "The math is only half the decision -- how you feel about debt matters too. A return from debt payoff is certain, while investment gains are not.\n\nSome people sleep better with zero debt, even when investing might earn a bit more. That peace of mind has real value. If debt stresses you out, paying it down faster is a reasonable choice.\n\nThe best plan is the one you will actually stick with. You can also split the difference: invest part of your cash and pay down debt with the rest." },
+  ],
+  tools: [
+    { href: "/investing/compound-interest-calculator/", label: "Compound interest" },
+    { href: "/investing/investment-growth-calculator/", label: "Investment growth" },
+    { href: "/retirement/401k-calculator/", label: "401(k) growth" },
+  ],
+  faqs: [
+    { question: "Should I pay off debt or invest first?", answer: "First grab any employer 401(k) match, since it is free money. Next build a small emergency fund. Then pay off high-interest debt, roughly 7% APR or more, before investing in a taxable account. Low-rate debt, like a sub-4% mortgage, can wait while you invest." },
+    { question: "Is it better to pay off debt or invest?", answer: "It depends on your debt's interest rate versus your expected return. Paying off debt earns a guaranteed return equal to the rate. Investing may earn more but is never guaranteed. If your debt costs more than you can safely earn, paying it off usually wins." },
+    { question: "What interest rate is high enough to pay off before investing?", answer: "Roughly 7% to 8% APR or higher is the common cutoff. Credit cards, which recently averaged about 21%, sit well above that. No safe investment reliably beats those rates, so clearing high-rate debt first is the stronger move." },
+    { question: "Should I pay off my mortgage or invest?", answer: "With a low-rate mortgage, investing often wins over paying it off early. A sub-4% loan likely costs less than long-run investment returns. But those returns are uncertain, while paying down the loan is guaranteed. Choose based on the rate gap and your comfort with risk." },
+    { question: "Why should I get the 401(k) match before paying off debt?", answer: "An employer match is an instant return no debt payoff can beat. A 50-cent match per dollar is an immediate 50% gain, and a dollar-for-dollar match is 100%. Contribute enough to capture the full match, then return to your debt." },
+    { question: "Should I invest while I still have credit card debt?", answer: "Generally no, aside from capturing your employer 401(k) match. Credit cards near 21% cost far more than a safe investment can earn. Pay off the card balance first, then invest with the money you free up." },
+  ],
+  sources: [
+    { label: "Federal Reserve -- Consumer Credit G.19", url: "https://www.federalreserve.gov/releases/g19/current/" },
+    { label: "CFPB -- How to reduce your debt", url: "https://www.consumerfinance.gov/about-us/blog/how-reduce-your-debt/" },
+    { label: "IRS -- 401(k) Plan Overview", url: "https://www.irs.gov/retirement-plans/plan-sponsor/401k-plan-overview" },
+  ],
+},
+
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

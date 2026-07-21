@@ -1,0 +1,69 @@
+{
+  slug: "how-much-life-insurance-do-i-need",
+  title: "How Much Life Insurance Do I Need? (DIME Method)",
+  metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your exact coverage.",
+  h1: "How Much Life Insurance Do I Need?",
+  cardBlurb: "A needs-based way to size your coverage, from the 10 to 12 times income rule to the DIME method.",
+  intro: "How much life insurance you need is usually 10 to 12 times your yearly income. That simple multiple is a fast starting point for most families.\n\nYour real need is the money your family would lose if your paycheck stopped. A needs-based method adds up those exact costs, so you buy enough without overpaying.\n\nThis guide covers two ways to size your coverage. It explains why term insurance usually beats whole life for pure protection, and why your need shrinks as you age.",
+  sections: [
+    {
+      heading: "The 10 to 12 Times Income Rule",
+      body: "A common rule sets your life insurance at 10 to 12 times your yearly income. This multiple replaces your paycheck for about a decade, giving your family time to adjust.\n\nThe rule is fast, but blunt. It ignores your debts, the size of your mortgage, and how many children you have.\n\nUse it as a quick gut check. Then confirm the number with a needs-based method, like the one below.",
+    },
+    {
+      heading: "The DIME Method Explained",
+      body: "The DIME method sizes your coverage by adding four costs: Debt, Income, Mortgage, and Education. Each letter stands for a real bill your family would face.\n\nDebt means what you owe outside your mortgage, like car loans and credit cards.\n\nIncome is your yearly pay times the number of years your family would need it. Most people replace 10 years of income.\n\nMortgage is the balance left on your home loan. Education is the future cost of college for each child.\n\nAdd the four together to get one clear coverage target.",
+    },
+    {
+      heading: "A Worked DIME Example",
+      body: "Here is a DIME estimate for a married parent who earns $70,000 a year and has two young children. The numbers below are assumptions you would swap for your own.\n\nDebt: $25,000 in a car loan and credit cards.\nIncome: $70,000 of pay times 10 years, which is $700,000.\nMortgage: $250,000 left on the home loan.\nEducation: $100,000 each for two children, which is $200,000.\n\nAdd them up: $25,000 + $700,000 + $250,000 + $200,000 = $1,175,000 in coverage.\n\nThat total is about 17 times this parent's income. The simple 10 to 12 times rule would suggest only $700,000 to $840,000. The gap is the mortgage and college, which DIME counts on purpose.",
+    },
+    {
+      heading: "Who Needs Little or No Life Insurance",
+      body: "You may need little or no life insurance if no one depends on your income. The whole point of coverage is to protect people who would lose money without you.\n\nSingle adults with no children and no co-signed debt often need only enough to cover final expenses.\n\nStrong savings also replace some coverage. [Tally your assets with a net worth calculator](/net-worth/) to see what your family already has.\n\nA solid [emergency fund](/guides/how-much-emergency-fund/) lowers the cash your family must find right away, which shrinks the coverage you need.",
+    },
+    {
+      heading: "Why Term Usually Beats Whole Life",
+      body: "Term life insurance usually beats whole life for pure protection because it costs far less per dollar of coverage. The NAIC notes that term insurance is meant to give lower-cost coverage for a set period.\n\nWhole life is a cash-value policy that lasts your whole life but costs much more. That extra cost buys a savings feature, not a bigger death benefit.\n\nFor most families, cheap term buys the large payout they actually need. Buy whole life only for a lasting need, such as a lifelong dependent or [estate planning](/estate-planning/) goals.\n\nRead the full [whole life vs term life insurance comparison](/compare/whole-life-vs-term-life-insurance/) before you decide.",
+    },
+    {
+      heading: "Why Your Coverage Need Shrinks Over Time",
+      body: "Your life insurance need shrinks over time as your mortgage shrinks, your savings grow, and your children become independent. Most people carry the highest need in their 30s, not their 60s.\n\nThis is why you should buy the most coverage when you are young. Your need is highest then, and term premiums are lowest.\n\nThe NAIC says that once your home is paid off and your children support themselves, you may not need coverage at all.\n\nA long term policy locks in a low rate while you build the savings that will one day replace it.",
+    },
+  ],
+  tools: [
+    { href: "/net-worth/", label: "Net Worth Calculator" },
+    { href: "/mortgage/payoff-calculator/", label: "Mortgage Payoff Calculator" },
+    { href: "/estate-planning/", label: "Estate Planning Calculator" },
+  ],
+  faqs: [
+    {
+      question: "How much life insurance do I need?",
+      answer: "You need enough to replace your income and cover your debts, mortgage, and your children's education. A fast rule is 10 to 12 times your yearly income. The DIME method gives a more exact figure by adding those costs together.",
+    },
+    {
+      question: "What is the DIME method?",
+      answer: "The DIME method adds four costs to size your coverage: Debt, Income, Mortgage, and Education. You total your non-mortgage debt, the years of income to replace, your mortgage balance, and future college costs.",
+    },
+    {
+      question: "Is term or whole life insurance better?",
+      answer: "Term life is better for most people who need pure, affordable protection. It costs much less than whole life for the same death benefit. Whole life fits a lasting need, like a lifelong dependent or an estate plan.",
+    },
+    {
+      question: "Do I need life insurance if I have no kids?",
+      answer: "You probably need little life insurance if no one depends on your income. Single adults with no dependents and no co-signed debt often need only enough to cover final expenses.",
+    },
+    {
+      question: "Does my life insurance need change over time?",
+      answer: "Yes, your life insurance need usually falls as you age. Your mortgage shrinks, your savings grow, and your children become independent, so the large coverage you buy young can later be reduced or dropped.",
+    },
+    {
+      question: "Should I count my life insurance from work?",
+      answer: "Yes, but employer life insurance usually is not enough on its own. The NAIC warns the death benefit is often less than you need, and you may lose the coverage if you leave the job.",
+    },
+  ],
+  sources: [
+    { label: "NAIC Life Insurance Buyer's Guide", url: "https://content.naic.org/sites/default/files/publication-lig-lp-consumer-life.pdf" },
+    { label: "NAIC: What Type of Life Insurance Is Right for You?", url: "https://content.naic.org/article/consumer-insight-what-type-life-insurance-right-you" },
+  ],
+}

@@ -1,0 +1,72 @@
+{
+  slug: "how-much-tax-will-i-pay",
+  title: "How Much Tax Will I Pay? Estimate Your 2026 Bill",
+  metaDescription: "How much tax will you pay? Learn how tax brackets stack, why your marginal rate is not your effective rate, and how FICA adds on top -- with a worked example.",
+  h1: "How Much Tax Will I Pay? Estimating Your Federal Income Tax",
+  cardBlurb: "See why your top tax bracket is not the rate you actually pay -- and estimate your 2026 federal income tax with a clear worked example.",
+  intro: "How much tax you will pay depends on your taxable income, your filing status, and the fact that only your last dollars hit your top rate.\n\nThe United States uses a progressive system. Your income is split into bands called brackets, and each band is taxed at its own rate.\n\nSo your top bracket, called your marginal rate, is not the rate you pay on your whole income. Your real rate, called the effective rate, is almost always lower.\n\nThis guide shows you how to estimate your 2026 federal income tax by hand, plus the Social Security and Medicare taxes that come out on top.",
+  sections: [
+    {
+      heading: "Start with taxable income, not your salary",
+      body: "Your salary is not the number the tax brackets use. Tax starts with a smaller figure called taxable income.\n\nTaxable income equals your gross income minus your deductions. Most people take the standard deduction, a flat amount that needs no receipts.\n\nFor tax year 2026, the standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, and $24,150 for heads of household.\n\nSo a single filer earning $70,000 has taxable income of $70,000 minus $16,100, or $53,900. The brackets apply to that $53,900 -- not the full salary."
+    },
+    {
+      heading: "How the 2026 tax brackets stack",
+      body: "The 2026 federal tax brackets are marginal, meaning each slice of your income is taxed at its own rate. Moving into a higher bracket only taxes the dollars inside that bracket.\n\nHere are the 2026 brackets for a single filer:\n\n- 10% on taxable income up to $12,400\n- 12% from $12,400 to $50,400\n- 22% from $50,400 to $105,700\n- 24% from $105,700 to $201,775\n- 32% from $201,775 to $256,225\n- 35% from $256,225 to $640,600\n- 37% on income above $640,600\n\nPicture your income poured into these bands from the bottom up. Fill the 10% band first, then the 12% band, and so on. Only the top splash lands in your highest bracket."
+    },
+    {
+      heading: "Marginal rate vs effective rate",
+      body: "Your marginal rate is the rate on your next dollar of income. Your effective rate is the tax you actually pay divided by your income. These two numbers are not the same.\n\nSay a single filer sits in the 22% bracket. That 22% only touches the dollars above $50,400. Everything below is taxed at 10% or 12%.\n\nBlend those lower rates in and the real rate drops well below 22%. That blended number is your effective rate, and it is the honest answer to how much tax you pay.\n\nThe worked example below shows a 22% top bracket turning into an effective rate near 12%."
+    },
+    {
+      heading: "Worked example: a single filer earning $70,000",
+      body: "Take a single filer with a $70,000 salary for tax year 2026.\n\nFirst, subtract the $16,100 standard deduction. Taxable income is $53,900.\n\nNow stack that $53,900 through the brackets:\n\n- 10% on the first $12,400 = $1,240\n- 12% on the next $38,000 (from $12,400 to $50,400) = $4,560\n- 22% on the last $3,500 (from $50,400 to $53,900) = $770\n\nAdd them up: $1,240 + $4,560 + $770 = $6,570 in federal income tax.\n\nHer top bracket is 22%, but her effective rate is $6,570 divided by $53,900, or about 12.2%. As a share of her full $70,000 salary, it is only about 9.4%.\n\nThat gap -- 22% on paper versus roughly 12% in reality -- is the whole point of a marginal system."
+    },
+    {
+      heading: "FICA: Social Security and Medicare come out on top",
+      body: "Federal income tax is not the only tax on your paycheck. FICA, which funds Social Security and Medicare, comes out on top.\n\nFICA applies to your gross wages, not your taxable income, so the standard deduction does not shrink it.\n\nAs an employee in 2026, you pay 6.2% for Social Security and 1.45% for Medicare, for 7.65% total. Your employer pays a matching 7.65%.\n\nSocial Security stops at a wage base. In 2026 you pay the 6.2% only on the first $184,500 of wages. Medicare has no cap.\n\nHigh earners pay an extra 0.9% Medicare tax on wages above $200,000.\n\nFor our $70,000 single filer, FICA is 7.65% of $70,000, or $5,355. Add that to $6,570 of income tax and her total federal tax is $11,925."
+    },
+    {
+      heading: "Why a raise never lowers your take-home pay",
+      body: "A raise into a higher bracket never lowers your take-home pay. This is the most common tax myth.\n\nBrackets are marginal, so a raise only taxes the new dollars at the higher rate. Every dollar you already earned keeps its old, lower rate.\n\nSay a raise pushes you from the 12% band into the 22% band. Only the part above the bracket line is taxed at 22%. You still keep most of the raise.\n\nYou can never take home less by earning more. A raise always leaves you with more cash, just not the full amount before tax."
+    },
+    {
+      heading: "Lower your taxable income the legal way",
+      body: "You can shrink your tax bill by shrinking your taxable income. Pre-tax retirement contributions are the simplest lever.\n\nMoney you put into a traditional 401(k) comes out before income tax. It lowers the taxable income your brackets apply to.\n\nOur single filer could cut her $53,900 taxable income by contributing to a workplace plan. Try the numbers in our [401(k) calculator](/retirement/401k-calculator/).\n\nA Roth account works the opposite way -- you pay tax now for tax-free withdrawals later. Our [401(k) vs Roth IRA guide](/compare/401k-vs-roth-ira/) walks through which fits your bracket.\n\nOne catch: pre-tax 401(k) contributions cut income tax but not FICA. Social Security and Medicare still apply to the money you defer."
+    }
+  ],
+  tools: [
+    { href: "/retirement/401k-calculator/", label: "401(k) Calculator" },
+    { href: "/investing/roth-ira-calculator/", label: "Roth IRA Calculator" }
+  ],
+  faqs: [
+    {
+      question: "How much tax will I pay on a $70,000 salary?",
+      answer: "A single filer earning $70,000 pays about $6,570 in 2026 federal income tax, an effective rate near 12.2% of taxable income. After the $16,100 standard deduction, taxable income is $53,900, stacked through the 10%, 12%, and 22% brackets. FICA adds another $5,355 for Social Security and Medicare."
+    },
+    {
+      question: "What is the difference between my marginal and effective tax rate?",
+      answer: "Your marginal rate is the rate on your next dollar of income, while your effective rate is your total tax divided by your income. Because brackets are marginal, your effective rate is almost always lower than your top bracket. A filer in the 22% bracket often has an effective rate near 12%."
+    },
+    {
+      question: "Does a raise into a higher tax bracket lower my take-home pay?",
+      answer: "No. A raise never lowers your take-home pay. Brackets are marginal, so only the dollars inside the new bracket are taxed at the higher rate. Every dollar below the bracket line keeps its lower rate, so you always keep more after a raise."
+    },
+    {
+      question: "Is FICA the same as federal income tax?",
+      answer: "No. FICA is separate from federal income tax. You pay 6.2% for Social Security and 1.45% for Medicare on your gross wages, on top of income tax. In 2026, Social Security tax stops after $184,500 of wages, while Medicare has no wage cap."
+    },
+    {
+      question: "What is the 2026 standard deduction?",
+      answer: "The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, and $24,150 for heads of household. You subtract it from your gross income to find taxable income, which is the number the tax brackets actually apply to."
+    },
+    {
+      question: "How can I lower how much tax I pay?",
+      answer: "Lower your taxable income to lower your income tax. Pre-tax contributions to a traditional 401(k) come out before income tax and can move you toward a lower bracket. This cuts income tax but not FICA. Roth accounts instead trade tax now for tax-free income later."
+    }
+  ],
+  sources: [
+    { label: "IRS -- Tax inflation adjustments for tax year 2026", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
+    { label: "IRS Topic no. 751 -- Social Security and Medicare withholding rates", url: "https://www.irs.gov/taxtopics/tc751" }
+  ],
+}

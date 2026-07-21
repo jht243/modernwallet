@@ -1,0 +1,92 @@
+{
+  slug: "debt-snowball-vs-avalanche",
+  title: "Debt Snowball vs Avalanche: Which Pays Off Faster?",
+  metaDescription:
+    "Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.",
+  targetKeyword: "debt snowball vs avalanche",
+  optionA: "Debt Snowball",
+  optionB: "Debt Avalanche",
+  h1: "Debt Snowball vs Avalanche: Which Method Wins?",
+  intro:
+    "Debt snowball vs avalanche comes down to one tradeoff: motivation versus math. The snowball pays your smallest balance first for fast, motivating wins. The avalanche pays your highest interest rate first to save the most money. Both make minimum payments on every debt. Both then aim every spare dollar at one target debt. The avalanche almost always pays less interest. It is also at least as fast to debt-free. The snowball gives a quicker first win, which helps many people finish. The best method is the one you will actually stick with.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Order of attack", a: "Smallest balance first", b: "Highest APR first" },
+      { dimension: "Interest paid", a: "Usually more", b: "Least possible" },
+      { dimension: "Time to debt-free", a: "Same or a bit slower", b: "Fastest, or tied" },
+      { dimension: "First win speed", a: "Fast -- smallest debt closes first", b: "Slower if top-rate debt is large" },
+      { dimension: "Motivation", a: "High -- quick, visible wins", b: "Lower early, builds later" },
+      { dimension: "Best for", a: "People who need momentum", b: "People who stay disciplined for the numbers" },
+      { dimension: "Discipline required", a: "Lower -- early wins keep you going", b: "Higher -- the payoff is delayed" },
+    ],
+  },
+  verdict:
+    "Choose the avalanche if numbers keep you motivated and you can wait for the first win -- it pays the least interest and is never slower. Choose the snowball if you need quick, visible progress to stay on track. Either way, list every debt, keep paying all minimums, and aim every extra dollar at one target debt until it clears. The method you finish beats the one that looks best on paper.",
+  sections: [
+    {
+      heading: "How the debt snowball works",
+      content:
+        "The debt snowball pays off your smallest balance first, no matter its interest rate. You keep making the minimum payment on every debt. Then you aim every spare dollar at the smallest balance until it hits zero.\n\nWhen that debt clears, you roll its payment into the next-smallest debt. The payment grows like a snowball as each debt falls.\n\nThe payoff is psychological. Closing an account fast gives a visible win. The CFPB notes you see progress quickly this way, but you may pay more over time. Use the [monthly budget calculator](/budget/monthly-budget-calculator/) to find the spare dollars that feed the snowball.",
+    },
+    {
+      heading: "How the debt avalanche works",
+      content:
+        "The debt avalanche pays off your highest interest rate debt first, no matter the balance. You keep paying the minimum on everything else. Then you aim every spare dollar at the highest-APR debt until it is gone.\n\nHigh rates cost the most, so killing them first cuts your total interest. The CFPB says this method eliminates your costliest debts first and can save money in the long run.\n\nCredit card rates make this matter. The Federal Reserve reports the average card APR was 20.94% across all accounts in May 2026, and 22.15% on accounts charged interest. A balance at those rates grows fast, so paying it first saves real money.",
+    },
+    {
+      heading: "Worked example: the same debts, both methods",
+      content:
+        "On the same three debts, the snowball and avalanche can pick the exact same order -- and then they tie. Say you owe $1,000 at 24% APR (Debt A), $3,000 at 18% (Debt B), and $8,000 at 6% (Debt C), with $600 a month to put toward debt.\n\nThe snowball ranks by balance: A ($1,000), then B ($3,000), then C ($8,000). The avalanche ranks by rate: A (24%), then B (18%), then C (6%). Both get A, then B, then C. Here your smallest debt is also your highest-rate debt, so the two plans are identical. Illustrative result: about $980 in total interest and roughly 23 months either way. (Assumes minimum payments cover each card's interest, with the rest aimed at the target debt.)\n\nThe methods only split when your smallest debt is not your highest-rate debt. Flip the example so the $1,000 debt is at 6% and the $8,000 debt is at 24%. Now the snowball still starts on the tiny 6% balance, while the avalanche attacks the big 24% balance. Illustrative result: the avalanche saves roughly $860 in interest and finishes about a month sooner. That gap widens with bigger balances and higher rates.",
+    },
+    {
+      heading: "Which method should you choose?",
+      content:
+        "The better method depends on how you stay motivated, because both use the identical mechanics. Pick the avalanche if numbers keep you going -- it pays the least interest and is never slower to debt-free. Pick the snowball if you need a fast, visible win to stay on track.\n\nBe honest about your track record. A plan you abandon saves nothing, so early wins have real value if they keep you paying.\n\nEither way, the size of your extra payment matters more than the order. Freeing up an extra $100 a month often beats optimizing the sequence. The [50/30/20 budget calculator](/budget/50-30-20-budget-calculator/) can help you carve out more to throw at debt.",
+    },
+    {
+      heading: "Should you pay off debt or invest first?",
+      content:
+        "Clearing high-rate debt usually beats investing when the debt's rate tops your likely investment return. A 22% credit card is a guaranteed 22% cost, and few investments reliably match that. So clearing it first is usually the stronger move.\n\nLower-rate debt is different. A 6% loan may be worth paying slowly while you invest or build an emergency fund. Our guide on whether to [pay off debt or invest](/guides/pay-off-debt-or-invest/) walks through the tradeoff.\n\nTiming also depends on the balance. To see how long a card will take at your current payment, read our guide on [how long to pay off a credit card](/guides/how-long-to-pay-off-credit-card/).",
+    },
+  ],
+  faqs: [
+    {
+      question: "Debt snowball vs avalanche: which is better?",
+      answer:
+        "The debt avalanche is better for saving money, and the debt snowball is better for staying motivated. The avalanche pays your highest-rate debt first, so it costs the least interest and is never slower. The snowball pays your smallest balance first for quicker wins. The best one is the method you will actually finish.",
+    },
+    {
+      question: "Does the debt avalanche really save money?",
+      answer:
+        "Yes -- the debt avalanche pays the least interest possible, because it kills your highest-rate debt first. The savings grow with larger balances and higher rates. When your smallest debt is also your highest-rate debt, though, both methods give the same result.",
+    },
+    {
+      question: "Why do people choose the snowball if it costs more?",
+      answer:
+        "People choose the snowball because fast, visible wins help them keep going. Closing a small account early builds momentum. The CFPB notes you see progress quickly with the snowball, even though you may pay more interest over time.",
+    },
+    {
+      question: "Do both methods pay minimums on every debt?",
+      answer:
+        "Yes -- both the snowball and avalanche keep paying the minimum on every debt each month. The only difference is where your extra money goes. The snowball adds it to the smallest balance; the avalanche adds it to the highest-rate balance.",
+    },
+    {
+      question: "Which method is faster to become debt-free?",
+      answer:
+        "The debt avalanche is at least as fast as the snowball, and often faster. It targets the debt that grows the quickest, so your balances fall sooner. The two tie only when your smallest debt is also your highest-rate debt.",
+    },
+    {
+      question: "Can I switch methods partway through?",
+      answer:
+        "Yes -- you can switch between the snowball and avalanche at any time. Some people start with the snowball for an early win, then switch to the avalanche to cut interest. The key is to keep aiming every extra dollar at one debt.",
+    },
+  ],
+  sources: [
+    { label: "CFPB -- How to reduce your debt", url: "https://www.consumerfinance.gov/about-us/blog/how-reduce-your-debt/" },
+    { label: "Federal Reserve -- G.19 Consumer Credit (credit card rates)", url: "https://www.federalreserve.gov/releases/g19/current/" },
+  ],
+  calculatorLinks: [
+    { label: "Monthly budget calculator", href: "/budget/monthly-budget-calculator/" },
+    { label: "50/30/20 budget calculator", href: "/budget/50-30-20-budget-calculator/" },
+  ],
+},

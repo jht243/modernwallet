@@ -1,0 +1,105 @@
+{
+ "retirement": {
+  "investing": {
+   "count": 2,
+   "examples": []
+  },
+  "taxes": {
+   "count": 1,
+   "examples": []
+  },
+  "budgeting-saving": {
+   "count": 1,
+   "examples": []
+  },
+  "mortgage-home-buying": {
+   "count": 1,
+   "examples": [
+    "<v SPEAKER_00>It's can I afford the mortgage payment in my retirement years?"
+   ]
+  },
+  "retirement-savings": {
+   "count": 1,
+   "examples": [
+    "<v SPEAKER_00>It's can I afford the mortgage payment in my retirement years?"
+   ]
+  }
+ },
+ "personal-finance": {
+  "investing": {
+   "count": 2,
+   "examples": []
+  },
+  "retirement-savings": {
+   "count": 3,
+   "examples": [
+    "Should I take that vacation or should I contribute to my roth Ira.",
+    "I went through your prior annuity podcast, and I'm still not sure if this is a good idea."
+   ]
+  },
+  "insurance-estate": {
+   "count": 3,
+   "examples": [
+    "00:36:36 Speaker 2: So run the numbers, take a look, but also don't be too worried that you bought too much term life insurance.",
+    "I don't know how much of that will be taxable or not, but Ellen, it will depend how much we get into a Roth before you retire."
+   ]
+  },
+  "debt-payoff": {
+   "count": 1,
+   "examples": []
+  },
+  "mortgage-home-buying": {
+   "count": 2,
+   "examples": [
+    "It's not just as simple as, Should I buy a home, Suze?"
+   ]
+  },
+  "taxes": {
+   "count": 2,
+   "examples": [
+    "I don't know how much of that will be taxable or not, but Ellen, it will depend how much we get into a Roth before you retire."
+   ]
+  }
+ },
+ "budgeting": {
+  "budgeting-saving": {
+   "count": 1,
+   "examples": [
+    "<v SPEAKER_01>They are struggling to even wrap their heads around needing to tighten the grocery budget."
+   ]
+  }
+ },
+ "investing": {
+  "insurance-estate": {
+   "count": 1,
+   "examples": [
+    "<v Speaker 1>The biggest unknown here is we don't know when the cuts will happen and we don't know how much they will be cutting."
+   ]
+  },
+  "investing": {
+   "count": 5,
+   "examples": [
+    "<v Speaker 1>Well, it's a quick way to figure out how much dividends you'll receive.",
+    "<v Speaker 1>Well then, how much should I invest?"
+   ]
+  },
+  "mortgage-home-buying": {
+   "count": 2,
+   "examples": []
+  },
+  "budgeting-saving": {
+   "count": 3,
+   "examples": []
+  },
+  "taxes": {
+   "count": 2,
+   "examples": [
+    "So it's, I, I probably should just immediately transfer it because then it's harder to figure out if I lump sum transfer like when I'm doing my taxes."
+   ]
+  },
+  "retirement-savings": {
+   "count": 1,
+   "examples": []
+  }
+ }
+}

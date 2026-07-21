@@ -1,0 +1,77 @@
+{
+  slug: "how-long-to-pay-off-credit-card",
+  title: "How Long to Pay Off Credit Card: The Real Math",
+  metaDescription:
+    "How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to clear it faster.",
+  h1: "How Long Will It Take to Pay Off My Credit Card?",
+  cardBlurb:
+    "See how balance, APR, and payment set your payoff date -- and why a small fixed payment beats the minimum by years.",
+  intro:
+    "How long it takes to pay off a credit card depends on three things: your balance, your APR, and your monthly payment. This guide shows the exact math with a clear example. The big lesson is simple. Paying only the minimum can trap you in debt for a decade or more. A small, steady payment above the minimum can clear the same card in a few years. Run your own numbers with the free tools below.",
+  sections: [
+    {
+      heading: "The three numbers that set your payoff time",
+      body: "How long you carry a credit card balance comes down to three numbers: your balance, your APR, and your monthly payment. Your balance is what you owe today. Your APR is the yearly interest rate. Divide it by 12 to get the monthly rate. Your payment is what you send each month.\n\nRaise the payment and the timeline shrinks fast. Raise the APR or the balance and it stretches. The payment is the lever you control most. Even a small, steady increase changes the outcome more than most people expect.",
+    },
+    {
+      heading: "The minimum-payment trap",
+      body: "Paying only the minimum keeps you in debt for years, because most of it goes to interest, not your balance. Card issuers set the minimum low. It is often around 1% to 3% of the balance plus that month's interest. On a high-APR card, that barely dents what you owe.\n\nThe CARD Act forces your statement to show this. By law, each bill lists how long payoff takes if you pay only the minimum. It also shows the fixed amount that would clear your balance in 36 months. Read that box. The gap between those two numbers is the real cost of the minimum-payment habit.",
+    },
+    {
+      heading: "How to calculate your payoff time",
+      body: "You can calculate payoff time with one formula when your payment stays fixed:\n\nmonths = -ln(1 - (r x B) / P) / ln(1 + r)\n\nHere B is your balance, P is your fixed monthly payment, and r is your monthly rate (APR divided by 12). The \"ln\" is the natural logarithm on any calculator. The formula assumes a fixed rate, a fixed payment, and no new charges.\n\nOne rule falls straight out of the math. If your payment is less than or equal to one month's interest, you never pay the card off. Your payment has to beat the interest before the balance can fall at all.",
+    },
+    {
+      heading: "Worked example: $5,000 at 24% APR",
+      body: "Say you owe $5,000 on a card at 24% APR. That is a 2% monthly rate (24% / 12). You stop charging and pay a fixed $200 a month.\n\nPlug it in: months = -ln(1 - (0.02 x 5,000) / 200) / ln(1.02) = ln(2) / ln(1.02), which is about 35 months. You clear the card in just under three years and pay about $2,000 in interest.\n\nNow compare the minimum. Assume a typical minimum of 1% of the balance plus that month's interest, never below $25. It starts near $150 and shrinks as the balance falls. At that pace, payoff takes nearly 19 years and costs more than $8,000 in interest.\n\nHere is the part that surprises people. The fixed $200 is only about $50 more than the first minimum payment. That extra $50 a month, held steady, cuts payoff from nearly 19 years to about 3 years and saves more than $6,000 in interest.",
+    },
+    {
+      heading: "How to pay off your credit card faster",
+      body: "The fastest fix is to pick a fixed payment and never let it fall. Minimums drop as your balance drops, which quietly slows you down. A flat payment keeps your momentum going.\n\nAdd whatever extra you can on top. Because interest is charged on your balance, every extra dollar today saves interest on every month that follows. Even $25 more a month moves the finish line up.\n\nIf you carry more than one card, pick an order. The [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) comparison shows the two proven methods. Snowball pays the smallest balance first for quick wins. Avalanche pays the highest APR first to save the most interest. A 0% balance-transfer card can help too, but watch the transfer fee and the date the promo rate ends.",
+    },
+    {
+      heading: "Pay off the card, or invest?",
+      body: "Clearing high-APR credit card debt usually beats investing, dollar for dollar. Avoiding 24% interest works like a guaranteed 24% return. Few investments match that with no risk.\n\nStill capture any 401(k) employer match first, since that is free money. After that, attack the card. Our guide on whether to [pay off debt or invest](/guides/pay-off-debt-or-invest/) walks through the tradeoff step by step.\n\nTo find the extra cash, tighten your budget. A [50/30/20 budget](/budget/50-30-20-budget-calculator/) or a full [monthly budget](/budget/monthly-budget-calculator/) can free up money to raise your fixed payment.",
+    },
+  ],
+  tools: [
+    { href: "/budget/monthly-budget-calculator/", label: "Monthly budget" },
+    { href: "/budget/50-30-20-budget-calculator/", label: "50/30/20 budget" },
+  ],
+  faqs: [
+    {
+      question: "How long does it take to pay off a credit card?",
+      answer:
+        "It depends on your balance, APR, and monthly payment. With a fixed payment, use months = -ln(1 - (r x B) / P) / ln(1 + r), where r is your monthly rate. Paying only the minimum can stretch a mid-size balance past a decade. A higher fixed payment can clear the same card in a few years.",
+    },
+    {
+      question: "How long to pay off $5,000 in credit card debt?",
+      answer:
+        "About 35 months, or just under three years, if you pay a fixed $200 a month at 24% APR. That costs roughly $2,000 in interest. Pay only the minimum instead and the same balance can take nearly 19 years and cost more than $8,000 in interest.",
+    },
+    {
+      question: "Why do minimum payments take so long?",
+      answer:
+        "Minimum payments are set low, often 1% to 3% of the balance plus interest, so most of each payment covers interest, not principal. As your balance falls, the minimum falls too, which slows progress further. By law, your statement shows how many years minimum-only payoff would take.",
+    },
+    {
+      question: "What is the average credit card interest rate?",
+      answer:
+        "The average rate on credit card accounts was 20.94% in the Federal Reserve's G.19 release, and 22.15% for accounts actually charged interest (May 2026). A higher APR sends more of each payment to interest, which stretches your payoff time and raises the total you pay.",
+    },
+    {
+      question: "Does paying more than the minimum help?",
+      answer:
+        "Yes, and it helps more than most people expect. Because interest is charged on your balance, every extra dollar cuts interest on all the months that follow. On a $5,000 card at 24% APR, paying a fixed $200 instead of the shrinking minimum saves more than $6,000 and many years of payments.",
+    },
+    {
+      question: "Is it better to pay off my credit card or invest?",
+      answer:
+        "Paying off a high-APR credit card usually wins, because avoiding 24% interest works like a guaranteed 24% return with no risk. Capture any employer 401(k) match first, then focus on the card. See our guide on whether to pay off debt or invest for the full tradeoff.",
+    },
+  ],
+  sources: [
+    { label: "Federal Reserve -- Consumer Credit (G.19)", url: "https://www.federalreserve.gov/releases/g19/current/" },
+    { label: "CFPB -- What the payoff box on your credit card statement means", url: "https://www.consumerfinance.gov/ask-cfpb/a-box-on-my-credit-card-bill-says-that-i-will-pay-off-the-balance-in-three-years-if-i-pay-a-certain-amount-what-does-that-mean-do-i-have-to-pay-that-much-if-i-pay-that-much-and-make-new-purchases-will-i-still-owe-nothing-after-three-years-en-36/" },
+  ],
+}
