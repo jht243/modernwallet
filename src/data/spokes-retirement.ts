@@ -462,6 +462,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         answer:
           "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. For most married retirees, SBP is worth evaluating carefully against commercial life insurance alternatives. For a deeper breakdown of military pay, VA benefits, and survivor protections, see [rankandpay.org's military retirement guide](https://rankandpay.org/military-retirement/).",
       },
+      {
+        question: "Does the pension formula differ by branch — Army, Navy, Air Force, Marine Corps, or National Guard?",
+        answer:
+          "No — the High-3 and BRS pension formulas are set by federal law and DoD-wide policy, so the math is identical whether you served in the Army, Navy, Air Force, Marine Corps, or Space Force. What differs is the path to eligibility: active-duty members in any branch can retire after 20 years of active service, while National Guard and Reserve members generally need 20 'good years' — each requiring at least 50 retirement points — and typically can't start drawing retired pay until age 60, though qualifying active-duty mobilizations can lower that age. Whichever branch you served in, DFAS (the Defense Finance and Accounting Service) is the single agency that calculates and issues your monthly retired pay, not your individual service. VA disability compensation is a separate benefit administered by the Department of Veterans Affairs and can be received alongside military retired pay, subject to offset rules like Concurrent Retirement and Disability Pay (CRDP).",
+      },
     ],
     sources: [
       {
@@ -471,6 +476,10 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         label: "DFAS — Military Retirement",
         url: "https://www.dfas.mil/RetiredMilitary/plan/retirement-types/",
+      },
+      {
+        label: "VA — Disability Compensation",
+        url: "https://www.va.gov/disability/",
       },
       {
         label: "IRS — Publication 590-B: Distributions from Individual Retirement Arrangements",
