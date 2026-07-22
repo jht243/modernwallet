@@ -455,9 +455,9 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
   // ── 2. Best Invoice Factoring Companies (ga4-top-pages pass 2026-07-08) ────
   {
     slug: "best-invoice-factoring-companies",
-    title: "Best Invoice Factoring Companies of 2026",
+    title: "Best Invoice Factoring Companies Near You (2026)",
     metaDescription:
-      "Compare the best invoice factoring companies of 2026 on advance rate, industry focus, and speed. Independent picks — no factor paid for placement.",
+      "Find and compare the best invoice factoring companies near you on advance rate, industry focus, and speed. Independent picks — no paid placement.",
     targetKeyword: "best invoice factoring companies",
     category: "invoice factoring companies",
     angle: "best",

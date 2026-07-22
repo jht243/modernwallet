@@ -214,9 +214,9 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
   {
     calculator: "invoice-factoring",
     slug: "factoring-fee-calculator",
-    title: "Factoring Fee Calculator: Cost of One Invoice",
+    title: "Factoring Fee & Invoice Finance Charge Calculator",
     metaDescription:
-      "A factoring fee calculator that shows your advance, reserve, factoring fee, rebate, net proceeds, and the true effective APR on a single invoice.",
+      "A factoring fee (invoice finance charge) calculator showing your advance, reserve, fee, rebate, net proceeds, and true effective APR on one invoice.",
     targetKeyword: "factoring fee calculator",
     estimatedVolume: 90,
     estimatedKD: 20,

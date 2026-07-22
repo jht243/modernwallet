@@ -21,6 +21,11 @@ export const FACTORING_HUB: CalculatorDef = {
 
   faqs: [
     {
+      question: "What does invoice factoring mean?",
+      answer:
+        "Invoice factoring means selling your unpaid customer invoices to a third-party company, called a factor, in exchange for immediate cash instead of waiting 30, 45, or 60 days for payment. The factor advances most of the invoice value upfront — typically 80% to 90% — then pays you the remaining balance, minus its fee, once your customer settles the invoice. In plain terms, it converts money you're already owed into cash today, at a discount, without creating new debt on your books.",
+    },
+    {
       question: "How does an invoice factoring calculator work?",
       answer:
         "An invoice factoring calculator multiplies your invoice by the advance rate to find cash now, then applies the factoring fee for each 30-day period until payment. It shows the reserve held back, the rebate released when your customer pays, your net proceeds, and the effective APR. In our default example, a $100,000 invoice returns $85,000 up front and $97,000 net after a $3,000 fee.",
