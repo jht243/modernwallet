@@ -23,7 +23,7 @@ export const LOC_HUB: CalculatorDef = {
     {
       question: "How does a business line of credit calculator work?",
       answer:
-        "A business line of credit calculator amortizes your draw over your repayment term at your APR, then adds fees to show the true cost. It returns your monthly payment, total interest, any draw fee, the total cost of the money, and your effective APR. In our default example, a $50,000 draw at 12% over 24 months has a $2,353.67 monthly payment and costs $7,488.17 in total.",
+        "A business line of credit calculator amortizes your draw over your repayment term at your APR, then adds fees to show the true cost. It returns your monthly payment, total interest, any draw fee, the total cost of the money, and your effective APR. In our default example, a $50,000 draw at 12% over 24 months has a $2,353.67 monthly payment and costs $7,488.17 in total. People search for this same tool under different names — a business line of credit loan calculator, repayment calculator, payment calculator, amortization calculator, or interest calculator — but the math behind all of them is the same: how are payments calculated on a line of credit is really just asking how a draw amortizes at your APR. That holds whether the product is called a small business line of credit or a commercial line of credit at a bank; both are revolving and both amortize a draw the same way once you start repaying it.",
     },
     {
       question: "How is a line of credit different from a term loan?",
@@ -41,6 +41,11 @@ export const LOC_HUB: CalculatorDef = {
         "You pay interest only on the amount you draw, not on your full credit limit. Drawing $50,000 at a 12% APR over 24 months costs $6,488.17 in interest. If you draw less or repay faster, you pay less interest. This is a core advantage of a revolving line over a fixed lump-sum loan.",
     },
     {
+      question: "Does this calculator handle interest-only draws?",
+      answer:
+        "No — this calculator models an equal-payment draw, where every month's payment covers both principal and interest until the draw is paid off, the same way a term loan amortizes. Some lenders instead offer an interest-only draw period: during that stretch you pay only the interest on what you've drawn, and the principal either comes due in a lump sum when the draw period ends or converts into a fully amortizing repayment schedule afterward. To estimate an interest-only payment yourself in a spreadsheet, use simple interest: draw amount × APR ÷ 12. On a $50,000 draw at a 12% APR, that's $50,000 × 0.12 ÷ 12 = $500 a month, with none of the $50,000 principal repaid. Budget for a bigger payment once the interest-only period ends and principal repayment starts.",
+    },
+    {
       question: "Is a line of credit cheaper than a merchant cash advance?",
       answer:
         "A line of credit is usually far cheaper than a merchant cash advance for the same amount of money. A line charges a normal APR, while a [merchant cash advance](/merchant-cash-advance/) uses a factor rate that often works out to a triple-digit APR. For a full breakdown, read [merchant cash advance vs a business loan](/compare/merchant-cash-advance-vs-loan/). If you invoice customers, [invoice factoring](/invoice-factoring/) is another option to weigh.",
@@ -49,6 +54,11 @@ export const LOC_HUB: CalculatorDef = {
       question: "What fees should I watch for on a business line of credit?",
       answer:
         "Watch for the APR, draw fees, annual or maintenance fees, and any late fees before you sign. The CFPB advises comparing the APR, whether it can change, and every access and account fee across offers. A 2% draw fee on a $50,000 draw adds $1,000 in cost, which pushes a 12% rate up to a 14.05% effective APR. Total these fees on this calculator before you commit.",
+    },
+    {
+      question: "How much can I qualify for on a business line of credit?",
+      answer:
+        "The size of the line a lender offers depends on several factors working together: your business's annual revenue, how long you've been operating, your personal and business credit scores, and whether you can offer collateral. Lenders also weigh your cash flow and existing debt to judge whether you can comfortably handle the payments this calculator shows. A stronger personal credit score and steady revenue growth typically unlock a larger limit and a lower APR, while a newer business with a thin credit history is more likely to be offered a smaller, often unsecured, line to start. Pledging collateral — equipment, inventory, or receivables — can help you qualify for a larger limit or a better rate, since it lowers the lender's risk. If you're approved for less than you need today, many lenders will reconsider your limit as your revenue and on-time payment history build.",
     },
     {
       question: "Can I get a $500,000 business line of credit?",
