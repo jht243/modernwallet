@@ -823,11 +823,11 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         ],
         limitations: [
           "Ongoing rate after the intro period is not published — quoted per application",
-          "Credit limit and fee schedule are not published on the unsecured line's own page",
+          "No published ceiling on the credit limit — the site states lines start at $10,000",
           "Best rate discount requires a Preferred Rewards for Business relationship",
         ],
         pricing:
-          "Introductory Prime + 0% for 7 billing cycles; ongoing rate not publicly disclosed — quoted per application. Preferred Rewards discount 0.25%–0.75%. Source: bankofamerica.com.",
+          "Introductory Prime + 0% for 7 billing cycles; ongoing rate not publicly disclosed — quoted per application. $0 origination fee; $150 annual fee, waived the first year. Line amount starts at $10,000, no published ceiling. Preferred Rewards discount 0.25%–0.75%. Source: bankofamerica.com.",
       },
       {
         name: "PNC",
@@ -992,9 +992,9 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         {
           name: "Bank of America",
           values: [
-            "Revolving, limit not published",
+            "Revolving, from $10K (no published ceiling)",
             "Intro Prime + 0% (7 cycles), then not published",
-            "Not publicly disclosed",
+            "$0 origination; $150/yr, waived year 1",
             "Using the intro-rate window",
           ],
         },
