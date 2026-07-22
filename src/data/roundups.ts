@@ -3213,6 +3213,546 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Investment Calculator", href: "/investing/" },
     ],
   },
+  // ── 17. Best Retirement Calculators ──────────────────────────────────────
+  {
+    slug: "best-retirement-calculators",
+    title: "Best Retirement Calculators of 2026: Compared by Method",
+    metaDescription:
+      "The best retirement calculators of 2026, compared by methodology — Monte Carlo vs simple projection, Social Security, taxes, and cost.",
+    targetKeyword: "best retirement calculators",
+    category: "retirement calculators",
+    angle: "best",
+    h1: "Best Retirement Calculators of 2026",
+    intro:
+      "The best retirement calculator for you depends less on the brand name and more on what it actually models. Some tools run a simple fixed-rate projection; others run thousands of randomized market scenarios (Monte Carlo simulation) to score your odds of not running out of money.\n\nWe compared nine widely used retirement calculators on methodology — not made-up accuracy scores — looking at whether each one models market volatility, Social Security, taxes, and inflation, and whether it's free. No provider paid for placement on this list.",
+    rankingCriteria:
+      "This list is compiled from each provider's own published methodology pages, help-center documentation, and public calculator interfaces — not a paid placement or an aggregator's ranking. We did not assign a numeric \"accuracy\" score to any tool, because two calculators built on different methodologies aren't measuring the same thing.\n\nInstead, we checked five factual questions for each tool wherever the provider discloses it: (1) does it run a Monte Carlo simulation across many possible market outcomes, or a single fixed-rate projection; (2) does it estimate or let you enter Social Security income; (3) does it factor in taxes; (4) does it adjust for inflation; and (5) is it free to use. Where a provider didn't publish enough detail to answer one of these confidently, we say so rather than guess.",
+    options: [
+      {
+        name: "Bankrate",
+        bestFor: "A quick, no-signup projection with an inflation toggle",
+        description:
+          "[Bankrate](https://www.bankrate.com/)'s retirement calculator is a single-page tool: you enter your age, savings, contributions, and expected return, and it projects a retirement savings total against your income goal through age 95. It includes an optional toggle to factor in inflation and a built-in Social Security estimate based on your income, so you don't need a separate Social Security calculator to get a rough number.\n\nBankrate does not publish documentation describing a Monte Carlo or probability-based methodology for this tool, so its projection should be treated as a single deterministic scenario rather than a range of possible outcomes. Confirm the exact inputs it currently supports on bankrate.com, since free tools are updated periodically.",
+        strengths: [
+          "Free, no account or signup required",
+          "Optional inflation adjustment built in",
+          "Rough Social Security estimate included automatically",
+          "Fast — a handful of fields, results on the same page",
+        ],
+        limitations: [
+          "No published Monte Carlo or probability-of-success methodology — appears to be a single fixed-scenario projection",
+          "Does not model taxes on withdrawals",
+          "Less input control than a full retirement-planning platform",
+        ],
+        pricing: "Free with no account required. Check bankrate.com for the current input fields, which can change.",
+      },
+      {
+        name: "NerdWallet",
+        bestFor: "Comparing a straightforward savings gap against a target",
+        description:
+          "[NerdWallet](https://www.nerdwallet.com/)'s retirement calculator compares what you're on pace to save against what you'll likely need, using default assumptions of a 6% pre-retirement return, a 5% post-retirement return, 3% annual inflation, and a life expectancy of 95 — all of which you can override in its advanced-details panel. It has an optional field for Social Security, pension, or other retirement income, but it does not estimate that number for you the way some calculators do; you enter your own estimate.\n\nLike Bankrate, this is a fixed-rate projection rather than a simulation across many market scenarios. NerdWallet's own explainer describes the mechanics in those terms — a single assumed return path, not a range of probability-weighted outcomes.",
+        strengths: [
+          "Clear default assumptions, all shown and editable",
+          "Accounts for projected salary increases over time",
+          "Free with no signup",
+          "Simple two-number output: what you'll have vs. what you'll need",
+        ],
+        limitations: [
+          "Fixed-rate projection, not Monte Carlo — doesn't model a range of market outcomes",
+          "Requires you to estimate your own Social Security or pension income rather than calculating it",
+          "No explicit tax modeling on withdrawals",
+        ],
+        pricing: "Free with no account required.",
+      },
+      {
+        name: "SmartAsset",
+        bestFor: "A built-in Social Security benefit estimate without a separate lookup",
+        description:
+          "[SmartAsset](https://smartasset.com/)'s retirement calculator estimates your Social Security benefit directly from your stated income, using the same general approach the Social Security Administration uses — indexing your earnings history and averaging your highest 35 years to estimate your benefit at full retirement age, adjusted for early or delayed claiming. It also applies different assumed returns before and after retirement, and separates savings accounts from investment accounts in its projection.\n\nSmartAsset's own methodology notes that its projection assumes steady positive growth and does not model market volatility or the possibility of investment losses along the way, which is the same fixed-scenario limitation as Bankrate and NerdWallet.",
+        strengths: [
+          "Built-in Social Security benefit estimate using SSA-style methodology",
+          "Distinguishes savings-account returns from investment-account returns",
+          "Free with no signup",
+          "Detailed written methodology published alongside the tool",
+        ],
+        limitations: [
+          "Does not model market volatility — assumes steady growth with no down years",
+          "No stated Monte Carlo or probability-of-success feature",
+          "Tax treatment of withdrawals is not detailed in its published methodology",
+        ],
+        pricing: "Free with no account required.",
+      },
+      {
+        name: "Boldin (formerly NewRetirement)",
+        bestFor: "DIY planners who want Monte Carlo modeling without hiring an advisor",
+        description:
+          "[Boldin](https://www.boldin.com/), the company formerly known as NewRetirement, offers a free tier with a basic retirement projection plus a paid PlannerPlus tier that adds a Monte Carlo simulation running 1,000 market scenarios to produce a probability-of-success score — for example, a score of 90 means savings lasted through the plan's end in 90% of the simulated scenarios. Boldin's help center publishes a detailed explanation of how the simulation is built, including the historical return and volatility assumptions behind it.\n\nBoldin also supports modeling Social Security claiming ages, multiple income sources, and side-by-side comparison of up to ten planning scenarios, which is a deeper feature set than most free calculators on this list — but the Monte Carlo simulation specifically is gated behind the paid tier.",
+        strengths: [
+          "Published, detailed Monte Carlo methodology (1,000 simulations)",
+          "Free tier available for a basic projection before upgrading",
+          "Supports multiple scenarios and Social Security claiming-age comparisons",
+          "Deep input set — taxes, pensions, part-time income, healthcare costs",
+        ],
+        limitations: [
+          "Monte Carlo simulation and scenario comparison require a paid PlannerPlus subscription",
+          "More inputs mean more setup time than a five-field calculator",
+          "Best suited to people willing to do the data entry themselves",
+        ],
+        pricing: "Free basic version; PlannerPlus is a paid subscription — check boldin.com for the current price.",
+      },
+      {
+        name: "Empower",
+        bestFor: "Linking real accounts for a Monte Carlo simulation against your actual portfolio",
+        description:
+          "[Empower](https://www.empower.com/)'s free Retirement Planner links your actual 401(k), IRA, brokerage, and bank accounts (via Plaid) and runs a Monte Carlo simulation against your real holdings rather than numbers you type in by hand. It models Social Security income, pension income, and one-time events like a home sale or major purchase, and includes a separate recession-simulator feature to stress-test a plan against a market downturn.\n\nBy Empower's own description, the tool does not model tax-bracket calculations, Roth conversion strategies, or detailed withdrawal-sequencing (which account you draw from first). It's built around linked-account convenience and simulation depth rather than granular tax planning.",
+        strengths: [
+          "Free — no subscription required for the Retirement Planner",
+          "Runs Monte Carlo simulation against your actual linked accounts, not manual entry",
+          "Models Social Security, pensions, and one-time life events",
+          "Includes a recession-simulator stress test",
+        ],
+        limitations: [
+          "Requires linking financial accounts through Plaid to get the full simulation",
+          "Does not model detailed tax-bracket effects, Roth conversions, or withdrawal sequencing, by Empower's own description",
+          "Empower also markets paid advisory services alongside the free tool",
+        ],
+        pricing: "Free to use with linked accounts. Empower separately offers paid wealth-management advisory services.",
+      },
+      {
+        name: "Fidelity",
+        bestFor: "Fidelity account holders who want published, downloadable methodology detail",
+        description:
+          "[Fidelity](https://www.fidelity.com/)'s retirement planning tools — including its Planning & Guidance Center analysis and Retirement Score — use Monte Carlo simulation and publish detailed methodology documents that spell out the math, including how many market simulations are run per time horizon. Fidelity also publishes a separate, detailed methodology for estimating Social Security benefits, using the same indexed-earnings, top-35-years approach the SSA itself uses.\n\nOne specific limitation Fidelity discloses in its own documentation: for savers in a state that taxes Social Security income, the tool does not calculate or incorporate the effect of state and local taxes on that benefit. Read the specific methodology PDF for whichever Fidelity tool you're using, since Fidelity offers several retirement calculators with different depths.",
+        strengths: [
+          "Monte Carlo methodology with published, downloadable detail",
+          "Detailed, SSA-style Social Security benefit estimation",
+          "Free to use, including for non-Fidelity account holders in most cases",
+          "Multiple tools at different depths (quick check vs. full planning analysis)",
+        ],
+        limitations: [
+          "Does not incorporate state or local taxes on Social Security income, by Fidelity's own methodology disclosure",
+          "Fidelity offers several similarly named retirement tools — confirm which one you're using and its specific methodology",
+          "Deeper tools may prompt account linking for a fuller picture",
+        ],
+        pricing: "Free. Some tools are more fully featured when linked to a Fidelity account.",
+      },
+      {
+        name: "Charles Schwab",
+        bestFor: "Comparing a quick savings projection against a deeper Monte Carlo income plan",
+        description:
+          "[Charles Schwab](https://www.schwab.com/) offers two distinct free tools worth telling apart. Its retirement savings calculator is a straightforward accumulation projection where you enter Social Security income yourself. Its separate Retirement Income Calculator explicitly uses Monte Carlo simulation, targeting an 80% probability of success — meaning your specified withdrawals lasted through your selected time horizon in about 80% of simulated market paths — and adjusts your withdrawals for inflation using Schwab's own long-term return and inflation projections.\n\nSchwab's own methodology page states plainly that the Retirement Income Calculator's math does not include taxes or investment-management fees, which is worth knowing before you treat the output as a take-home number.",
+        strengths: [
+          "Retirement Income Calculator has a clearly published Monte Carlo methodology",
+          "Adjusts withdrawals for inflation using Schwab's own published assumptions",
+          "Both tools are free with no account required to try",
+          "Lets you compare a simple accumulation projection against a probability-based income plan",
+        ],
+        limitations: [
+          "Retirement Income Calculator explicitly excludes taxes and investment-management fees from its math, by Schwab's own disclosure",
+          "Two similarly purposed tools can be confusing — check which one you're using",
+          "Social Security is a manual input on the savings calculator, not auto-estimated",
+        ],
+        pricing: "Free with no account required.",
+      },
+      {
+        name: "Vanguard",
+        bestFor: "Retirees or near-retirees who want a Monte Carlo probability-of-success number for an existing portfolio",
+        description:
+          "[Vanguard](https://investor.vanguard.com/)'s Retirement Nest Egg Calculator is built for the drawdown phase: you enter your portfolio balance, planned withdrawal, time horizon, and stock/bond/cash mix, and it runs a Monte Carlo simulation drawing from historical market data to estimate the probability your portfolio lasts the full period. Vanguard also offers a separate Retirement Income Calculator that instead applies a simpler 4%-rule-style approach for a quicker estimate.\n\nBecause the Nest Egg Calculator is built around an existing balance and a withdrawal amount, it's less useful if you're still in the saving-and-growing phase of your career — it answers \"will this portfolio last,\" not \"how big will my portfolio get.\"",
+        strengths: [
+          "Monte Carlo simulation drawing on historical market data",
+          "Purpose-built for the withdrawal/drawdown phase of retirement",
+          "Free with no account required",
+          "Lets you test your actual asset allocation (stock/bond/cash mix), not just an assumed return",
+        ],
+        limitations: [
+          "Designed for people already retired or close to it, not for long-range accumulation projections",
+          "Requires you to already have a portfolio balance and withdrawal plan to model",
+          "Availability and exact tool naming has shifted over time — confirm the current tool name on vanguard.com",
+        ],
+        pricing: "Free with no account required.",
+      },
+      {
+        name: "ModernWallet Retirement Calculator",
+        bestFor: "A fast, transparent two-stage projection — savings growth, then a 4%-rule withdrawal check",
+        description:
+          "Our own [retirement calculator](/retirement/) uses a two-stage, fixed-rate methodology, not Monte Carlo simulation. Stage one compounds your current savings plus monthly contributions at a fixed annual return you choose through your target retirement age. Stage two applies the 4% rule to estimate your first-year withdrawal and shows whether your balance lasts through the life expectancy you set, and it also displays your projected balance in today's dollars using your chosen inflation rate, so a big future number doesn't overstate what it's actually worth.\n\nBeing direct about what it doesn't do: it does not run a probability-based Monte Carlo simulation, it does not estimate or model Social Security benefits, and it does not model federal or state taxes on withdrawals. It's built for a fast, understandable first-pass projection, not a replacement for a full financial plan.",
+        strengths: [
+          "Free, instant results with no signup or account linking",
+          "Shows your inflation-adjusted balance in today's dollars, not just a future nominal number",
+          "Transparent 4%-rule withdrawal check with life-expectancy modeling",
+          "Links directly to related tools — RMD, Social Security, 401(k), and Roth calculators — for deeper follow-up questions",
+        ],
+        limitations: [
+          "Fixed-rate projection only — no Monte Carlo simulation or probability-of-success score",
+          "Does not estimate or model Social Security benefits within the tool itself",
+          "Does not model taxes on withdrawals",
+        ],
+        pricing: "Free with no signup required.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Methodology", "Social Security", "Taxes Modeled", "Inflation Adjusted", "Cost"],
+      rows: [
+        { name: "Bankrate", values: ["Fixed-rate projection", "Auto-estimated from income", "No", "Optional toggle", "Free"] },
+        { name: "NerdWallet", values: ["Fixed-rate projection", "Manual entry only", "No", "Yes (default 3%)", "Free"] },
+        { name: "SmartAsset", values: ["Fixed-rate projection", "Auto-estimated, SSA-style", "Not detailed", "Not detailed", "Free"] },
+        { name: "Boldin", values: ["Monte Carlo (paid tier)", "Claiming-age modeling", "Yes (paid tier)", "Yes", "Free tier + paid PlannerPlus"] },
+        { name: "Empower", values: ["Monte Carlo", "Yes, modeled", "No (by Empower's own disclosure)", "Yes", "Free"] },
+        { name: "Fidelity", values: ["Monte Carlo", "Auto-estimated, SSA-style", "Partial (excludes state tax on SS)", "Yes", "Free"] },
+        { name: "Charles Schwab", values: ["Both: fixed projection + Monte Carlo (income tool)", "Manual entry", "No (excluded by Schwab's disclosure)", "Yes (income tool)", "Free"] },
+        { name: "Vanguard", values: ["Monte Carlo (drawdown-phase tool)", "Not a core input", "Not detailed", "Not detailed", "Free"] },
+        { name: "ModernWallet", values: ["Fixed-rate, two-stage (4% rule)", "Not modeled in-tool", "No", "Yes, shown in today's dollars", "Free"] },
+      ],
+    },
+    verdict:
+      "If you want a two-minute sanity check with no signup, Bankrate, NerdWallet, SmartAsset, and our own [retirement calculator](/retirement/) all give you a fast fixed-rate projection — pick the one whose default assumptions (return, inflation, life expectancy) you're comfortable with, and use SmartAsset if you specifically want a built-in Social Security estimate without a separate lookup.\n\nIf you want to know your probability of not running out of money, not just a single projected number, you need a tool that actually runs Monte Carlo simulation: Fidelity, Charles Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower (free, with linked accounts), or Boldin's paid PlannerPlus tier. Empower is the easiest free way to get there if you're comfortable linking accounts; Boldin is the deepest DIY option if you're willing to pay for it and enter your numbers by hand.\n\nNo calculator on this list — free or paid — fully models taxes, so treat every output here as a pre-tax planning estimate and pair it with a tax professional's advice once your plan gets specific enough to matter.",
+    sections: [
+      {
+        heading: "Monte Carlo simulation vs. fixed-rate projection: what the difference actually means",
+        content:
+          "A fixed-rate projection (used by Bankrate, NerdWallet, SmartAsset, and our own [retirement calculator](/retirement/)) assumes one steady annual return every year between now and retirement. It's fast and easy to understand, but it can't show you what happens if the market drops 20% five years before you retire — a real risk called sequence-of-returns risk.\n\nMonte Carlo simulation (used by Fidelity, Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower, and Boldin's paid tier) instead runs your plan through hundreds or thousands of randomized market paths built from historical volatility data, then reports the percentage of paths where your money lasted. A 90% probability-of-success score means your plan survived 90 out of 100 (or 900 out of 1,000) simulated market histories — it's a range of outcomes, not a single number. Neither approach is \"wrong\"; a fixed-rate tool is a fine first-pass gut check, while a Monte Carlo tool is better once you're deciding when to actually retire.",
+      },
+      {
+        heading: "Why almost none of these calculators fully model taxes",
+        content:
+          "Modeling taxes accurately requires knowing your filing status, state of residence, other income sources, and the specific account types you'll withdraw from — traditional 401(k) and IRA withdrawals are taxed as ordinary income, Roth withdrawals are typically tax-free, and Social Security benefits are only partially taxable depending on your total income. That's a lot of individual variation for a generic calculator to model correctly, which is why Empower, Schwab's Retirement Income Calculator, and our own tool all explicitly say they don't attempt it, and Fidelity discloses a specific state-tax carve-out on Social Security.\n\nBoldin's paid tier goes furthest on tax modeling among the free-to-try options here, but even there, confirm exactly what's included before you rely on an after-tax number. For most people, the safest approach is to treat every calculator's output as a pre-tax estimate, then use the [RMD calculator](/retirement/rmd-calculator/) and a tax professional to sanity-check the after-tax version once your plan is close to final.",
+      },
+      {
+        heading: "How to estimate the Social Security piece these calculators handle differently",
+        content:
+          "Bankrate, SmartAsset, and Fidelity all estimate a Social Security benefit for you directly from your income, generally following the Social Security Administration's own method of indexing your earnings and averaging your highest 35 years. NerdWallet and Schwab's savings calculator instead ask you to enter your own Social Security estimate, which means the accuracy of the whole projection depends on how good your own number is.\n\nIf you want your actual Social Security estimate rather than one derived from a rough income figure, start with the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) or your personal my Social Security statement at ssa.gov, then plug that number into whichever retirement calculator you're using that accepts manual entry.",
+      },
+      {
+        heading: "A five-minute checklist before you trust any retirement calculator's number",
+        content:
+          "First, confirm which methodology you're looking at — fixed-rate projection or Monte Carlo — since the two answer different questions and shouldn't be compared to each other as if they were the same kind of number. Second, check whether Social Security is auto-estimated or something you typed in yourself, and sanity-check that figure against ssa.gov. Third, note whether taxes are included; if the tool says no (most do), treat the output as pre-tax. Fourth, check the inflation assumption and make sure you're reading the inflation-adjusted (today's-dollars) figure if the tool offers one, not just the larger future nominal number. Fifth, run the same inputs through at least two calculators with different methodologies — a fixed-rate tool like our [retirement calculator](/retirement/) for a fast target, and a Monte Carlo tool like Empower or Fidelity for a probability check — before making a real decision based on either one alone.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which retirement calculator is most accurate?",
+        answer:
+          "There's no single \"most accurate\" calculator, because different tools are built on different methodologies that aren't measuring the same thing. A fixed-rate projection (Bankrate, NerdWallet, SmartAsset, our own retirement calculator) gives you one scenario based on assumptions you choose. A Monte Carlo tool (Fidelity, Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower, Boldin's paid tier) gives you a probability across many scenarios. Run your numbers through more than one to see how sensitive the answer is to the assumptions.",
+      },
+      {
+        question: "What is a Monte Carlo retirement calculator, and do I need one?",
+        answer:
+          "A Monte Carlo retirement calculator runs your plan through hundreds or thousands of randomized market scenarios drawn from historical volatility data, then reports the percentage of scenarios where your savings lasted. It's most useful once you're within a decade or so of retiring, or already retired, because sequence-of-returns risk (a market drop early in retirement) matters much more once you're withdrawing money instead of adding to it. If you're decades from retirement, a simpler fixed-rate projection is usually good enough for a first pass.",
+      },
+      {
+        question: "Does ModernWallet's retirement calculator use Monte Carlo simulation?",
+        answer:
+          "No. Our retirement calculator uses a two-stage fixed-rate methodology: it compounds your savings and contributions at one assumed annual return through retirement, then applies the 4% withdrawal rule to check whether the balance lasts through your set life expectancy. It also shows your balance in inflation-adjusted, today's-dollars terms. It does not run a probability-based simulation, and it does not model Social Security or taxes within the tool.",
+      },
+      {
+        question: "Do free retirement calculators account for Social Security?",
+        answer:
+          "It varies by tool. Bankrate, SmartAsset, and Fidelity estimate a Social Security benefit automatically from your income. NerdWallet and Schwab's savings calculator let you enter your own Social Security estimate but don't calculate it for you. Empower models Social Security as part of its linked-account simulation. Our own retirement calculator does not model Social Security within the tool — pair it with a dedicated Social Security calculator for that piece.",
+      },
+      {
+        question: "Why don't retirement calculators model taxes the way a tax return does?",
+        answer:
+          "Taxes on retirement withdrawals depend on your filing status, state of residence, other income, and which account types you draw from — traditional accounts are taxed as ordinary income, Roth accounts generally aren't, and Social Security is only partly taxable depending on total income. That's too much individual variation for most generic calculators to model reliably, which is why Empower, Schwab's Retirement Income Calculator, and our own tool explicitly disclose that they don't attempt full tax modeling. Treat calculator outputs as pre-tax estimates.",
+      },
+      {
+        question: "Should I trust a free calculator over paying for a financial advisor?",
+        answer:
+          "A free calculator is a good first step to size up roughly where you stand, but it can't account for your full financial picture — outside debts, other goals, estate planning, or your personal risk tolerance the way a fiduciary advisor can. Once your numbers get large enough that mistakes are costly, or your situation is complex (self-employment income, multiple pensions, a blended family), it's worth a conversation with a professional. Our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fees, and credentials to check first.",
+      },
+    ],
+    sources: [
+      { label: "Social Security Administration — Retirement Benefits", url: "https://www.ssa.gov/benefits/retirement/" },
+      { label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+      { label: "U.S. SEC Investor.gov — Retirement Planning", url: "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/retirement-planning" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [
+      { label: "Retirement Calculator", href: "/retirement/" },
+      { label: "Social Security Retirement Calculator", href: "/retirement/social-security-retirement-calculator/" },
+      { label: "RMD Calculator", href: "/retirement/rmd-calculator/" },
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+    ],
+  },
+
+  // ── 18. Best High-Yield Savings Accounts ─────────────────────────────────
+  {
+    slug: "best-high-yield-savings-accounts",
+    title: "Best High-Yield Savings Accounts of 2026",
+    metaDescription:
+      "Compare the best high-yield savings accounts of 2026 by APY range, fees, and sign-up bonuses — no fabricated rates, just what to verify.",
+    targetKeyword: "best high yield savings accounts",
+    category: "high-yield savings accounts",
+    angle: "best",
+    h1: "Best High-Yield Savings Accounts of 2026",
+    intro:
+      "The best high-yield savings account (HYSA) pays several times the national average, charges no monthly fee, and doesn't bury your rate behind a large minimum balance. Beyond that, the \"best\" one depends on whether you value the single highest available APY, a sign-up bonus, or a bank you can also walk into a branch for.\n\nWe compared ten of the most-searched HYSA providers on APY range, fees, minimum balance, and any current sign-up offer. Every rate below was checked against the bank's own site — HYSA rates are variable and change often, so treat any specific number here as a snapshot, not a promise, and always confirm the live rate before opening an account. No bank paid for placement on this list.",
+    rankingCriteria:
+      "This ranking is compiled from each bank's own publicly available rate pages, fee schedules, and account terms — not a paid placement, and not an aggregator's re-packaged list. We did not invent a specific APY for any provider; where we found a current, bank-published rate, we cite it with the date we checked it, and where a bank's rate page renders dynamically and didn't show a fixed number to us, we say to check the bank's own site for today's figure.\n\nWe weighed four factors: the bank's typical APY range relative to the FDIC national average, whether there's a monthly fee or minimum balance to earn the top rate, any current, verifiable sign-up or referral bonus, and account-opening friction (branch access, transfer speed, mobile app quality). Promotional rates that expire after a few months were noted as promotional, not treated as the account's durable rate.",
+    options: [
+      {
+        name: "Ally Bank",
+        bestFor: "A well-established online bank with no fees and no minimum balance",
+        description:
+          "[Ally Bank](https://www.ally.com/bank/online-savings-account/) is one of the longest-running online-only banks and consistently markets its Online Savings Account APY as several times the FDIC national average. It requires no minimum opening deposit and charges no monthly maintenance fee, and interest compounds daily rather than monthly, which slightly boosts your effective yield versus monthly compounding at the same stated rate.\n\nAlly also layers in savings tools like automatic \"round-ups\" and recurring transfers to help you save without thinking about it, plus buckets that let you mentally separate one account into multiple savings goals.",
+        strengths: [
+          "No minimum balance and no monthly maintenance fee",
+          "Interest compounds daily",
+          "Savings \"buckets\" and automated round-up/transfer tools",
+          "Long track record as an online-only bank",
+        ],
+        limitations: [
+          "No physical branches — all service is online, phone, or app-based",
+          "No stated ongoing sign-up bonus as of this writing — confirm current promotions on ally.com",
+          "APY is variable and can change at any time",
+        ],
+        pricing: "No monthly fee, no minimum balance. Check ally.com/bank/online-savings-account/ for today's exact APY, since it changes frequently.",
+      },
+      {
+        name: "Marcus by Goldman Sachs",
+        bestFor: "A competitive standard rate plus a temporary referral rate boost",
+        description:
+          "[Marcus by Goldman Sachs](https://www.marcus.com/us/en/savings/high-yield-savings) advertised its High Yield Online Savings Account at 3.40% APY as of July 21, 2026, according to its own site — a figure that will move with the broader rate environment, so check marcus.com for the current number before you open an account. Marcus also runs a \"Referred Rate Boost\" that adds 1.00 percentage points to the standard rate for three months when you're referred by an existing customer, which worked out to roughly 4.40% APY during that promotional window as of the same date.\n\nLike most online-only HYSAs, Marcus charges no monthly fee and sets no minimum balance to earn its stated rate.",
+        strengths: [
+          "No monthly fee or minimum balance",
+          "Referral program adds a temporary rate boost on top of the standard APY",
+          "Backed by Goldman Sachs, a large, well-capitalized institution",
+          "Simple single-product lineup makes comparison shopping easy",
+        ],
+        limitations: [
+          "The referral rate boost is temporary (three months) and reverts to the standard rate afterward",
+          "No physical branch network",
+          "APY is variable — the 3.40% figure we verified will change over time",
+        ],
+        pricing: "No monthly fee, no minimum balance. Marcus's own site showed 3.40% APY as of 7/21/2026 (4.40% with a 3-month referral boost); confirm the current rate at marcus.com before opening.",
+      },
+      {
+        name: "SoFi",
+        bestFor: "Members who already receive direct deposit into a SoFi Checking and Savings account",
+        description:
+          "[SoFi](https://www.sofi.com/banking/high-yield-savings-account/) pays its highest savings APY to members with qualifying direct deposit or qualifying monthly deposits into a SoFi Checking and Savings account. As of May 28, 2026, SoFi's own site showed 3.10% APY on savings for members with eligible direct deposit, with a limited-time 0.70-percentage-point APY Boost bringing the promotional total to about 3.80% APY. Members without qualifying direct deposit earn a noticeably lower rate — confirm the current no-direct-deposit tier on sofi.com before assuming the headline rate applies to you.\n\nSoFi has also run periodic new-account cash bonuses tied to direct deposit; check sofi.com/banking/checking-offer/ for whatever offer is currently live, since these bonuses start and end on specific dates.",
+        strengths: [
+          "Combined checking-and-savings account in one product",
+          "No monthly account fees",
+          "Periodic cash bonuses for new members who set up direct deposit",
+          "Early paycheck access with qualifying direct deposit",
+        ],
+        limitations: [
+          "Top APY requires qualifying direct deposit or monthly deposits — the rate without it is meaningfully lower",
+          "Rate boosts and bonuses are time-limited promotions, not permanent features",
+          "No physical branches",
+        ],
+        pricing: "No monthly fee. SoFi's own site showed 3.10% APY with qualifying direct deposit (about 3.80% with a limited-time boost) as of 5/28/2026; check sofi.com for the current tiers and whether the boost is still active.",
+      },
+      {
+        name: "Discover",
+        bestFor: "Existing Discover cardholders who want their savings under one login",
+        description:
+          "[Discover](https://www.discover.com/online-banking/savings-account/)'s Online Savings Account is worth a note most \"best of\" lists miss: Capital One completed its acquisition of Discover Financial Services on May 18, 2025, and as of this writing, Discover's own online savings account page redirects visitors to Capital One's 360 Performance Savings product page. Capital One has said existing Discover account holders shouldn't expect immediate changes, but if you're comparing Discover as a standalone brand, know that its savings product and Capital One's are converging.\n\nUntil (or unless) that changes further, treat Discover's and Capital One's savings offerings as effectively the same underlying product for rate-shopping purposes, and confirm the current terms on whichever page you land on.",
+        strengths: [
+          "No monthly fee historically, per Discover's own account terms",
+          "Familiar brand for existing Discover cardholders",
+          "Now backed by Capital One's larger balance sheet and branch network post-merger",
+        ],
+        limitations: [
+          "Discover's savings account page now redirects to Capital One — the two products are merging, which can be confusing if you're specifically shopping for \"Discover\"",
+          "No physical branches under the legacy Discover Bank brand",
+          "APY is variable and subject to change",
+        ],
+        pricing: "No monthly fee, no minimum balance under Discover's published terms. Its online savings page now redirects to Capital One 360 Performance Savings — check whichever page loads for the current APY.",
+      },
+      {
+        name: "American Express",
+        bestFor: "Existing Amex cardholders who want savings inside the same ecosystem",
+        description:
+          "[American Express](https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/)'s High Yield Savings Account has no minimum balance to open and no monthly fees, according to its own account terms — a straightforward, no-strings structure similar to the other online-only banks on this list. Amex markets its rate as several multiples of the national average, though its rate page renders the specific figure dynamically, so check americanexpress.com directly for today's number.\n\nInterest compounds daily and posts to the account monthly, per Amex's own FAQ, which is the same crediting structure Ally uses.",
+        strengths: [
+          "No minimum balance and no monthly fees",
+          "Daily compounding, posted monthly",
+          "Backed by a large, well-known financial brand",
+          "Straightforward single-product lineup",
+        ],
+        limitations: [
+          "No physical branches for this account",
+          "No stated ongoing sign-up bonus as of this writing — confirm current promotions on americanexpress.com",
+          "APY is variable and can change without notice",
+        ],
+        pricing: "No monthly fee, no minimum balance. Check americanexpress.com for today's exact APY.",
+      },
+      {
+        name: "Capital One",
+        bestFor: "Fee-free savings with the option of in-person Capital One Café branches",
+        description:
+          "[Capital One](https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/)'s 360 Performance Savings account has no minimum balance requirement and no monthly service charge, according to its own account terms — the same rate applies to your entire balance rather than being tiered. Capital One is also the institution now absorbing Discover's retail banking operations following the May 2025 merger, so its rate and branch footprint are a reasonable proxy for where Discover's product is headed too.\n\nUnlike most fully online HYSA providers, Capital One operates a small network of Capital One Café branch locations in select cities for customers who want occasional in-person access alongside a competitive online rate.",
+        strengths: [
+          "No fees to open or maintain the account",
+          "Same rate applies across your entire balance — no balance tiers",
+          "Small network of Capital One Café branches for in-person access",
+          "Now the parent company behind the Discover banking brand as well",
+        ],
+        limitations: [
+          "Café branch locations are limited to a handful of cities",
+          "APY is variable and its site renders the current figure dynamically — confirm before opening",
+          "No stated ongoing sign-up bonus as of this writing",
+        ],
+        pricing: "No monthly fee, no minimum balance. Check capitalone.com for today's exact APY.",
+      },
+      {
+        name: "Synchrony Bank",
+        bestFor: "Savers who also want ATM access and fee refunds on a savings account",
+        description:
+          "[Synchrony Bank](https://www.synchrony.com/banking/high-yield-savings/)'s High Yield Savings Account has no minimum deposit, no minimum balance, and no monthly fees, per its own account terms. One feature that stands out among online-only HYSAs: Synchrony provides an ATM card with domestic ATM fee refunds (up to a stated monthly cap for standard customers, unlimited for its Diamond Perks tier), which is unusual for a pure savings account rather than a checking account.\n\nAs with the other banks here, Synchrony's rate page renders its current APY dynamically rather than in static text, so confirm the live number on synchrony.com before opening.",
+        strengths: [
+          "No minimum deposit, minimum balance, or monthly fees",
+          "ATM card with fee refunds — unusual for a savings-only account",
+          "Diamond Perks tier offers unlimited ATM fee refunds for qualifying balances",
+        ],
+        limitations: [
+          "No physical branches",
+          "ATM access is a differentiator but doesn't replace full checking functionality",
+          "APY is variable — confirm the current rate before assuming a specific figure",
+        ],
+        pricing: "No monthly fee, no minimum balance. Check synchrony.com/banking/high-yield-savings/ for today's exact APY.",
+      },
+      {
+        name: "Wealthfront",
+        bestFor: "New clients who want a strong base rate plus a temporary new-account boost",
+        description:
+          "[Wealthfront](https://www.wealthfront.com/cash)'s Cash Account showed a base rate of 3.30% APY as of January 30, 2026, on its own site, with no minimum balance required to earn it and no maximum balance cap. Wealthfront also runs multiple stackable promotions: a 3.95% APY rate for new clients during their first three months, an additional 0.25 percentage points ongoing for clients who direct-deposit at least $1,000 per month into a funded Cash Account alongside a Wealthfront Investing Account, and a 0.75-percentage-point referral boost for three months (bringing a referred new client to roughly 4.05% APY during that window), per Wealthfront's own blog and support pages as of early 2026.\n\nWealthfront is a robo-advisor and cash-management platform rather than a traditional bank — cash is held at partner banks for FDIC coverage rather than at Wealthfront itself.",
+        strengths: [
+          "No minimum or maximum balance to earn the base rate",
+          "Multiple stackable promotions: new-client rate, direct-deposit boost, and referral boost",
+          "Cash held at FDIC-insured partner banks",
+          "Pairs naturally with Wealthfront's investing account for a combined direct-deposit boost",
+        ],
+        limitations: [
+          "Not a bank itself — funds sit at partner banks, which is a different structure than a direct bank account",
+          "Promotional rates (new-client and referral boosts) are time-limited and revert to the base rate",
+          "The 3.30% base rate we verified is a snapshot and will move with short-term rates going forward",
+        ],
+        pricing: "No fee, no minimum. Wealthfront's own site showed 3.30% base APY as of 1/30/2026 (with time-limited promotions up to roughly 4.05% APY); confirm the current rate and any live promotion at wealthfront.com/cash.",
+      },
+      {
+        name: "Navy Federal Credit Union",
+        bestFor: "Military-connected members who want credit-union membership perks, not the top APY",
+        description:
+          "[Navy Federal Credit Union](https://www.navyfederal.org/checking-savings/savings.html) is open to active-duty and retired military, Department of Defense civilian employees and contractors, and their families. Its own site states a basic Share Savings Account rate of 0.25% APY (as of July 21, 2026) — a rate that's typical of a standard credit-union savings account but well below the online-only HYSAs on this list. Navy Federal's more competitive rates live in its separate Money Market Savings and certificate products rather than its basic savings account, and those tend to require a higher minimum balance to earn the better tiers.\n\nIf you're specifically chasing the highest possible HYSA-style APY, Navy Federal's standard savings account isn't it — but if you want a full-service credit union relationship (checking, auto loans, mortgages) alongside your savings, it's worth checking navyfederal.org for its current Money Market Savings tiers.",
+        strengths: [
+          "Full-service credit union — checking, loans, and mortgages available alongside savings",
+          "No monthly fee on its basic Share Savings Account",
+          "Strong member service reputation among military-connected credit unions",
+          "Physical branches on and near many military installations",
+        ],
+        limitations: [
+          "Membership is restricted to military, DoD-connected, and family applicants",
+          "Basic Share Savings Account rate (0.25% APY per its own site) trails online-only HYSA competitors by a wide margin",
+          "Its more competitive Money Market Savings tiers require higher minimum balances — confirm current tiers on navyfederal.org",
+        ],
+        pricing: "Basic Share Savings: no monthly fee; 0.25% APY per navyfederal.org as of 7/21/2026. Check navyfederal.org/checking-savings/savings/money-market.html for current Money Market Savings tiers and minimums, which pay more but require larger balances.",
+      },
+      {
+        name: "PenFed Credit Union",
+        bestFor: "A low-minimum credit union savings account open to anyone who joins",
+        description:
+          "[PenFed Credit Union](https://www.penfed.org/savings/premium)'s Premium Online Savings account requires just a $5 minimum balance to open and charges no monthly maintenance fee, per its own account terms. Unlike Navy Federal, PenFed membership is open to the general public — anyone can join by opening a share account, without a military or government affiliation requirement.\n\nPenFed's rate page states its APY is subject to change and doesn't display a fixed figure in static text, so confirm the current rate directly at penfed.org before opening, alongside its separate current-rates page that lists all its deposit products side by side.",
+        strengths: [
+          "Open to the general public — no military or government affiliation required to join",
+          "Very low $5 minimum balance to open",
+          "No monthly maintenance fee",
+          "Publishes a consolidated current-rates page across all deposit products",
+        ],
+        limitations: [
+          "No physical branches in every state — check local branch availability if in-person service matters to you",
+          "APY is variable and its site doesn't show a fixed number in static text — confirm the live rate",
+          "No stated ongoing sign-up bonus as of this writing",
+        ],
+        pricing: "$5 minimum balance to open, no monthly fee. Check penfed.org/savings/premium and penfed.org/current-rates for today's exact APY.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Minimum Balance", "Monthly Fee", "Sign-Up Bonus", "Notable Feature"],
+      rows: [
+        { name: "Ally Bank", values: ["None", "None", "None confirmed — check site", "Savings buckets & round-ups"] },
+        { name: "Marcus by Goldman Sachs", values: ["None", "None", "Referral rate boost (+1.00% for 3 months)", "3.40% APY verified 7/21/26"] },
+        { name: "SoFi", values: ["None", "None", "Periodic direct-deposit cash bonus — check site", "Higher rate with qualifying direct deposit"] },
+        { name: "Discover", values: ["None", "None", "None confirmed — check site", "Page now redirects to Capital One post-merger"] },
+        { name: "American Express", values: ["None", "None", "None confirmed — check site", "Daily compounding, posted monthly"] },
+        { name: "Capital One", values: ["None", "None", "None confirmed — check site", "Capital One Café branches in select cities"] },
+        { name: "Synchrony Bank", values: ["None", "None", "None confirmed — check site", "ATM card with fee refunds"] },
+        { name: "Wealthfront", values: ["None", "None", "New-client & referral rate boosts", "3.30% base APY verified 1/30/26"] },
+        { name: "Navy Federal Credit Union", values: ["None (basic savings)", "None", "None confirmed — check site", "Military/DoD-connected membership only"] },
+        { name: "PenFed Credit Union", values: ["$5", "None", "None confirmed — check site", "Open to the general public"] },
+      ],
+    },
+    verdict:
+      "For the simplest fee-free, no-minimum option with a long track record, Ally, American Express, Synchrony, and Capital One all offer essentially the same structure — no fees, no minimum balance, and a rate that moves with the broader market. Marcus and Wealthfront are worth a closer look if you can take advantage of a referral or new-client rate boost, since those temporary boosts can meaningfully outrun the pack for a few months at a time.\n\nSoFi is the strongest pick if you're willing to route your paycheck through it, since its qualifying-direct-deposit rate is notably higher than its base rate — run the math on whether that trade-off makes sense for your banking setup first. Discover is a special case right now: its savings product is converging with Capital One's following their 2025 merger, so shopping either one gets you close to the same underlying offer.\n\nIf you specifically qualify for Navy Federal or want a credit union open to the public like PenFed, know going in that a basic credit-union savings account often trails dedicated online HYSAs on rate — Navy Federal's own site shows its basic savings paying a fraction of what the online banks advertise, so check its separate Money Market Savings tiers if a Navy Federal relationship matters more to you than chasing the single highest APY.\n\nWhichever account you pick, run the numbers through our [high-yield savings calculator](/investing/high-yield-savings-calculator/) using the actual current rate from the bank's site — not a number from any article, including this one — since HYSA rates change with the Fed funds rate and a stale figure will throw off your projection.",
+    sections: [
+      {
+        heading: "Why we won't print a single \"best APY\" number",
+        content:
+          "HYSA rates move with the Federal Reserve's target rate and can change at any bank, any week, with no advance notice. A specific APY published today can be outdated within days, and a roundup that prints one specific number per bank is often already wrong by the time you read it — or worse, was never verified against the bank's own site to begin with.\n\nThat's why this list ranks providers by structure — fee, minimum balance, verified rate range where we could confirm one, and promotional mechanics — rather than a single leaderboard number. Where we did verify a specific, dated rate directly from a bank's own page (Marcus, SoFi, and Wealthfront, as of the dates noted above), we cited it with that date attached. Everywhere else, check the bank's own current-rates page before you decide.",
+      },
+      {
+        heading: "Promotional boosts vs. durable rates: read the fine print",
+        content:
+          "Several banks on this list — Marcus, Wealthfront, and periodically SoFi — offer a temporary rate boost layered on top of their standard APY, usually tied to a referral, a new-account signup, or a qualifying direct deposit. These boosts commonly last three months and then revert to the base rate automatically.\n\nA boost is worth taking if you're opening the account anyway, but don't treat a promotional number as the account's ongoing rate when you're comparing banks long-term. Ask two questions before you move money to chase a promo: what's the exact expiration date, and what does the rate become the day after it ends?",
+      },
+      {
+        heading: "The Capital One–Discover merger, explained for savers",
+        content:
+          "Capital One completed its acquisition of Discover Financial Services on May 18, 2025. If you're specifically comparing \"Discover\" as a distinct savings option, know that its online savings account page now redirects to Capital One's 360 Performance Savings product — the two are converging into one banking operation. Capital One has said existing account holders shouldn't expect immediate changes to their accounts, but for rate-shopping purposes, treat the two brands as effectively the same underlying offer going forward, and check whichever page loads for the current terms.",
+      },
+      {
+        heading: "Rates vary by state, membership, and local branch — check before you assume",
+        content:
+          "Two accounts with the same advertised APY can behave differently depending on your state (some credit unions and banks post different rates by region), your membership eligibility (Navy Federal requires a military or DoD connection; PenFed is open to the public), and whether a local branch or partner network affects your specific offer. A national online bank's advertised rate is usually the same for every customer nationwide, but a credit union's better tiers can depend on a local branch relationship or a higher minimum balance than the basic account requires.\n\nOnce you've picked an account and confirmed its live rate, use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) to model exactly how much interest your specific balance and monthly deposit will actually earn over time — plugging in the real, current APY rather than an estimate keeps the projection honest.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which bank has the highest high-yield savings APY right now?",
+        answer:
+          "It changes too often to name a single permanent winner, and any list that claims otherwise is likely printing a stale or invented number. As of the dates we checked, Marcus by Goldman Sachs showed 3.40% APY (7/21/2026) and Wealthfront showed a 3.30% base APY (1/30/2026) directly on their own sites, both with temporary promotional boosts available on top. Always confirm the live rate on the bank's own page before opening an account, since HYSA rates move with the Fed funds rate.",
+      },
+      {
+        question: "Is my money safe in a high-yield savings account?",
+        answer:
+          "Yes, as long as the account is FDIC-insured (for banks) or NCUA-insured (for credit unions like Navy Federal and PenFed), which covers up to $250,000 per depositor, per institution, per ownership category. Robo-advisor cash accounts like Wealthfront's hold your money at FDIC-insured partner banks rather than at Wealthfront itself, so the same coverage applies through the underlying bank.",
+      },
+      {
+        question: "Do I need a large minimum balance to open a high-yield savings account?",
+        answer:
+          "Usually not. Ally, Marcus, SoFi, Discover, American Express, Capital One, Synchrony, and Wealthfront all confirmed no minimum balance requirement on their own sites as of this writing. PenFed requires just a $5 minimum to open. The exception is if you want a credit union's higher-tier Money Market Savings rate (like Navy Federal's), which typically does require a larger minimum balance than its basic savings account.",
+      },
+      {
+        question: "Should I chase a sign-up bonus or referral rate boost?",
+        answer:
+          "A referral or new-account rate boost (offered periodically by Marcus, Wealthfront, and SoFi) is worth taking if you were opening the account anyway, since it's free extra interest for a few months. It's rarely worth transferring your entire savings balance between banks purely to chase a temporary boost — factor in the hassle of moving money and confirm exactly when the boosted rate reverts to the standard one.",
+      },
+      {
+        question: "Is Discover Bank still separate from Capital One?",
+        answer:
+          "Capital One completed its acquisition of Discover Financial Services on May 18, 2025. As of this writing, Discover's online savings account page redirects to Capital One's 360 Performance Savings product, meaning the two banking operations are converging. If you're specifically shopping for a \"Discover\" savings account, expect it to function increasingly like a Capital One account going forward.",
+      },
+      {
+        question: "How much will a high-yield savings account actually earn me?",
+        answer:
+          "It depends on your balance, your deposit schedule, and the current APY, which changes over time. Use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) and enter the bank's actual current rate (not a number from any article) along with your starting balance and planned monthly deposit to see a realistic projected balance.",
+      },
+    ],
+    sources: [
+      { label: "FDIC — National Rates and Rate Caps", url: "https://www.fdic.gov/resources/bankers/national-rates/" },
+      { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+      { label: "NCUA — Share Insurance Fund Overview", url: "https://www.ncua.gov/support-services/share-insurance-fund" },
+      { label: "Consumer Financial Protection Bureau — High-Yield Savings Accounts", url: "https://www.consumerfinance.gov/consumer-tools/bank-accounts/" },
+    ],
+    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd"],
+    calculatorLinks: [
+      { label: "High-Yield Savings Calculator", href: "/investing/high-yield-savings-calculator/" },
+      { label: "Savings Goal Calculator", href: "/investing/savings-goal-calculator/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
