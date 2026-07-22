@@ -65,6 +65,11 @@ export const LOC_HUB: CalculatorDef = {
       answer:
         "It's possible, but a line that large usually comes from a bank rather than an online lender, and it typically requires strong revenue, time in business, and collateral. Conventional and online lenders more commonly cap lines in the tens of thousands to low hundreds of thousands of dollars. For a larger line backed by a government guarantee, ask about an SBA CAPLine, a type of SBA 7(a) loan structured as a revolving line — see our [business line of credit vs SBA loan](/compare/business-line-of-credit-vs-sba-loan/) comparison for how that option differs on approval time and qualification.",
     },
+    {
+      question: "How do business line of credit rates compare across banks?",
+      answer:
+        "Rates and fee structures vary widely by lender, and most banks won't quote a real number until you apply. Our [business line of credit rates by lender](/roundup/business-line-of-credit-rates-by-lender/) roundup pulls together what Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, CIBC, Amex, and Bluevine each publish on their own sites, so you can compare the rate structure and fees side by side before you plug your own numbers into the calculator above.",
+    },
   ],
 
   sources: [

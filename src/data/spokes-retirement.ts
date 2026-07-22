@@ -141,7 +141,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     intro:
       "This retirement savings calculator shows how much your nest egg could grow by the day you retire. Enter your age, current savings, monthly contribution, and an expected return. The calculator above then projects your balance and estimates your first-year monthly income. Use it to answer one question: am I saving enough?",
     howItWorks:
-      "The calculator above grows your current savings and future contributions at a fixed annual return until your chosen retirement age. It then applies the 4% rule to estimate a safe yearly withdrawal, which it shows as monthly income.\n\nTwo numbers here are assumptions, not promises. The return is a single fixed rate, so real markets will vary year to year. The 4% safe-withdrawal rate is a common planning guideline, not a guarantee. Treat the result as a planning estimate and update it as your savings change. To model a workplace plan specifically, use the [401k calculator](/retirement/401k-calculator/).",
+      "The calculator above grows your current savings and future contributions at a fixed annual return until your chosen retirement age. It then applies the 4% rule to estimate a safe yearly withdrawal, which it shows as monthly income.\n\nTwo numbers here are assumptions, not promises. The return is a single fixed rate, so real markets will vary year to year. The 4% safe-withdrawal rate is a common planning guideline, not a guarantee. Treat the result as a planning estimate and update it as your savings change. To model a workplace plan specifically, use the [401k calculator](/retirement/401k-calculator/). Want to see the underlying formulas yourself? Our [retirement calculator spreadsheet template](/guides/retirement-calculator-spreadsheet-template/) rebuilds this same compound-growth math cell by cell in Google Sheets.",
     commonMistakes: [
       "Assuming the fixed return is guaranteed. Real returns swing each year, so treat the projection as an estimate, not a locked-in number.",
       "Ignoring sequence-of-returns risk. Poor market years early in retirement can shrink a portfolio faster than the 4% rule assumes.",
@@ -282,6 +282,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "What does 'die with zero' mean, and how does it compare to a FIRE number?",
         answer:
           "'Die with zero' is a decumulation philosophy from Bill Perkins's book [Die With Zero](https://www.amazon.com/Die-Zero-Getting-Your-Money/dp/0358567092), built on the idea that money left unspent past the point where it could have funded meaningful life experiences is wasted potential, not prudence. Instead of growing a nest egg indefinitely, the framework argues for identifying your 'peak' net worth and then intentionally spending it down — including on experiences while you're still healthy enough to enjoy them — so little is left unspent at death. It's a philosophical counterpoint to FIRE's accumulation focus, not a competing formula: your FIRE number still tells you when you can stop earning, while die-with-zero is a lens for deciding how aggressively to spend that number down afterward. The two ideas can be combined — reach your FIRE number using the calculator above, then decide how much of a lifetime cushion you actually want left unspent.",
+      },
+      {
+        question: "Can I reach FIRE with bitcoin or crypto gains?",
+        answer:
+          "It's a riskier path to the same FIRE number this calculator projects. Bitcoin's price swings far more than a diversified stock-and-bond portfolio, and it pays no yield on its own, so a crypto-heavy FIRE plan is more exposed to sequence-of-returns risk right as you stop working. See our guide on [bitcoin retirement calculator considerations](/guides/bitcoin-retirement-calculator-considerations/) before you count crypto toward your FIRE number.",
       },
     ],
     sources: [
