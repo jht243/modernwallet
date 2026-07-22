@@ -3304,16 +3304,16 @@ export const ROUNDUPS: RoundupEntry[] = [
         name: "Empower",
         bestFor: "Linking real accounts for a Monte Carlo simulation against your actual portfolio",
         description:
-          "[Empower](https://www.empower.com/)'s free Retirement Planner links your actual 401(k), IRA, brokerage, and bank accounts (via Plaid) and runs a Monte Carlo simulation against your real holdings rather than numbers you type in by hand. It models Social Security income, pension income, and one-time events like a home sale or major purchase, and includes a separate recession-simulator feature to stress-test a plan against a market downturn.\n\nBy Empower's own description, the tool does not model tax-bracket calculations, Roth conversion strategies, or detailed withdrawal-sequencing (which account you draw from first). It's built around linked-account convenience and simulation depth rather than granular tax planning.",
+          "[Empower](https://www.empower.com/)'s free Retirement Planner links your actual 401(k), IRA, brokerage, and bank accounts (via Plaid) and runs a Monte Carlo simulation — Empower's own site describes running 5,000 scenarios — against your real holdings rather than numbers you type in by hand. It models Social Security income and lets you enter major financial events like when you plan to claim Social Security or a home purchase, and includes a separate recession-simulator feature to stress-test a plan against a market downturn.\n\nEmpower's own marketing pages emphasize the linked-account simulation and recession stress-test rather than detailed tax-bracket modeling, Roth conversion analysis, or withdrawal-sequencing guidance — confirm on empower.com whether those specific features have been added if they matter to your plan.",
         strengths: [
           "Free — no subscription required for the Retirement Planner",
-          "Runs Monte Carlo simulation against your actual linked accounts, not manual entry",
-          "Models Social Security, pensions, and one-time life events",
+          "Runs Monte Carlo simulation (5,000 scenarios per Empower's own site) against your actual linked accounts, not manual entry",
+          "Models Social Security claiming age and major one-time life events",
           "Includes a recession-simulator stress test",
         ],
         limitations: [
           "Requires linking financial accounts through Plaid to get the full simulation",
-          "Does not model detailed tax-bracket effects, Roth conversions, or withdrawal sequencing, by Empower's own description",
+          "Empower's own pages don't detail tax-bracket, Roth-conversion, or withdrawal-sequencing modeling — confirm current depth on empower.com",
           "Empower also markets paid advisory services alongside the free tool",
         ],
         pricing: "Free to use with linked accounts. Empower separately offers paid wealth-management advisory services.",
@@ -3398,7 +3398,7 @@ export const ROUNDUPS: RoundupEntry[] = [
         { name: "NerdWallet", values: ["Fixed-rate projection", "Manual entry only", "No", "Yes (default 3%)", "Free"] },
         { name: "SmartAsset", values: ["Fixed-rate projection", "Auto-estimated, SSA-style", "Not detailed", "Not detailed", "Free"] },
         { name: "Boldin", values: ["Monte Carlo (paid tier)", "Claiming-age modeling", "Yes (paid tier)", "Yes", "Free tier + paid PlannerPlus"] },
-        { name: "Empower", values: ["Monte Carlo", "Yes, modeled", "No (by Empower's own disclosure)", "Yes", "Free"] },
+        { name: "Empower", values: ["Monte Carlo (5,000 scenarios)", "Yes, modeled", "Not detailed on Empower's own site", "Yes", "Free"] },
         { name: "Fidelity", values: ["Monte Carlo", "Auto-estimated, SSA-style", "Partial (excludes state tax on SS)", "Yes", "Free"] },
         { name: "Charles Schwab", values: ["Both: fixed projection + Monte Carlo (income tool)", "Manual entry", "No (excluded by Schwab's disclosure)", "Yes (income tool)", "Free"] },
         { name: "Vanguard", values: ["Monte Carlo (drawdown-phase tool)", "Not a core input", "Not detailed", "Not detailed", "Free"] },
@@ -3416,7 +3416,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "Why almost none of these calculators fully model taxes",
         content:
-          "Modeling taxes accurately requires knowing your filing status, state of residence, other income sources, and the specific account types you'll withdraw from — traditional 401(k) and IRA withdrawals are taxed as ordinary income, Roth withdrawals are typically tax-free, and Social Security benefits are only partially taxable depending on your total income. That's a lot of individual variation for a generic calculator to model correctly, which is why Empower, Schwab's Retirement Income Calculator, and our own tool all explicitly say they don't attempt it, and Fidelity discloses a specific state-tax carve-out on Social Security.\n\nBoldin's paid tier goes furthest on tax modeling among the free-to-try options here, but even there, confirm exactly what's included before you rely on an after-tax number. For most people, the safest approach is to treat every calculator's output as a pre-tax estimate, then use the [RMD calculator](/retirement/rmd-calculator/) and a tax professional to sanity-check the after-tax version once your plan is close to final.",
+          "Modeling taxes accurately requires knowing your filing status, state of residence, other income sources, and the specific account types you'll withdraw from — traditional 401(k) and IRA withdrawals are taxed as ordinary income, Roth withdrawals are typically tax-free, and Social Security benefits are only partially taxable depending on your total income. That's a lot of individual variation for a generic calculator to model correctly, which is why Schwab's Retirement Income Calculator and our own tool explicitly say they don't attempt it, Empower's own site doesn't describe detailed tax-bracket or Roth-conversion modeling, and Fidelity discloses a specific state-tax carve-out on Social Security.\n\nBoldin's paid tier goes furthest on tax modeling among the free-to-try options here, but even there, confirm exactly what's included before you rely on an after-tax number. For most people, the safest approach is to treat every calculator's output as a pre-tax estimate, then use the [RMD calculator](/retirement/rmd-calculator/) and a tax professional to sanity-check the after-tax version once your plan is close to final.",
       },
       {
         heading: "How to estimate the Social Security piece these calculators handle differently",
@@ -3453,7 +3453,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Why don't retirement calculators model taxes the way a tax return does?",
         answer:
-          "Taxes on retirement withdrawals depend on your filing status, state of residence, other income, and which account types you draw from — traditional accounts are taxed as ordinary income, Roth accounts generally aren't, and Social Security is only partly taxable depending on total income. That's too much individual variation for most generic calculators to model reliably, which is why Empower, Schwab's Retirement Income Calculator, and our own tool explicitly disclose that they don't attempt full tax modeling. Treat calculator outputs as pre-tax estimates.",
+          "Taxes on retirement withdrawals depend on your filing status, state of residence, other income, and which account types you draw from — traditional accounts are taxed as ordinary income, Roth accounts generally aren't, and Social Security is only partly taxable depending on total income. That's too much individual variation for most generic calculators to model reliably, which is why Schwab's Retirement Income Calculator and our own tool explicitly disclose that they don't attempt full tax modeling, and Empower's own site doesn't describe detailed tax-bracket or Roth-conversion features either. Treat calculator outputs as pre-tax estimates.",
       },
       {
         question: "Should I trust a free calculator over paying for a financial advisor?",
