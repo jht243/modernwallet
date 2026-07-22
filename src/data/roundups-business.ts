@@ -755,4 +755,439 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       },
     ],
   },
+
+  // ── 3. Business Line of Credit Rates by Lender (autocomplete pass 2026-07-22) ──
+  {
+    slug: "business-line-of-credit-rates-by-lender",
+    title: "Business Line of Credit Rates by Lender (2026)",
+    metaDescription:
+      "Business line of credit rates by lender: Chase, Wells Fargo, BofA, PNC, TD, RBC, Scotiabank, CIBC, Amex, and Bluevine — sourced to each bank's own page.",
+    targetKeyword: "business line of credit rates by lender",
+    category: "business line of credit lenders",
+    angle: "rate comparison",
+    segment: "small business owners",
+    h1: "Business Line of Credit Rates by Lender",
+    intro:
+      "Business line of credit rates vary a lot by lender, and most banks won't give you a real number until you apply. This page pulls together what each of the 10 lenders below actually publishes on its own business-banking site — Chase, Wells Fargo, Bank of America, PNC, TD Bank, RBC, Scotiabank, CIBC, American Express Business Blueprint, and Bluevine — so you can see the rate structure, fees, and qualification bar side by side.\n\nThis is a terms comparison, not a ranking of 'best.' Several of these lenders don't publish a specific rate or margin online at all — we say so plainly instead of guessing. Where a bank does publish a number, we cite the page it came from. ModernWallet is not a lender, takes no placement fees, and no bank paid to appear or to be ranked higher here.",
+    rankingCriteria:
+      "This page is compiled directly from each lender's own publicly disclosed business line of credit terms — not a paid ranking, and no lender paid for placement or order. We listed lenders in the order they appear in live search demand (Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, CIBC, Amex, Bluevine), not by rate.\n\nFor every lender we checked its own official small-business borrowing page for the rate basis (prime + margin, flat fee, or unpublished), the credit-limit range, any disclosed fees, and stated qualification requirements. Where a lender doesn't publish a number, that's noted as 'not publicly disclosed' rather than estimated — actual pricing depends on your credit, revenue, and relationship with the bank, and can only be confirmed by applying.",
+    options: [
+      {
+        name: "Chase",
+        bestFor: "Businesses with an existing Chase banking relationship and revenue over $100,000",
+        description:
+          "[Chase](https://www.chase.com/business/banking/loans/business-line-of-credit) offers an unsecured Business Line of Credit from $10,000 to $500,000, plus a Commercial Line of Credit above $500,000 for larger operators. Chase's own page states the Business Line of Credit carries a variable interest rate indexed to Prime, and the Commercial Line is indexed to 1-month term SOFR — but Chase does not publish a specific margin or rate range online. Rates are quoted per application based on your credit and relationship.\n\nWhat Chase does publish clearly is the fee structure: an annual fee of $200 or 0.25% of your approved line (whichever is greater, capped at $750), which is waived after the first year if you maintain at least 40% average utilization. Borrowers with a Chase business relationship exceeding $500,000 may qualify for a 0.4%–1.2% rate discount under Chase's Relationship Pricing Program.",
+        strengths: [
+          "Clear published annual-fee structure, including a path to waiving it",
+          "Large credit-limit range ($10,000–$500,000) under one product",
+          "5-year draw period plus a 5-year repayment period on outstanding balances",
+          "Relationship Pricing Program can lower the rate on large lines",
+        ],
+        limitations: [
+          "No specific rate or margin published — quoted only after application",
+          "Requires $100,000+ annual revenue and a 660+ FICO score",
+          "Requires majority ownership and management unchanged for the past two years",
+        ],
+        pricing:
+          "Variable rate indexed to Prime; specific margin not publicly disclosed — quoted per application. Annual fee $200 or 0.25% of the line (max $750), waivable after year one. Credit limit $10,000–$500,000. Source: chase.com.",
+      },
+      {
+        name: "Wells Fargo",
+        bestFor: "Borrowers who want a published rate range before they apply",
+        description:
+          "[Wells Fargo](https://www.wellsfargo.com/biz/business-credit/lines-of-credit/) is one of the few lenders on this list that publishes an actual rate range for its unsecured BusinessLine line of credit: Prime + 1.75% to Prime + 9.75%, depending on your personal and business credit evaluation. Credit limits run from $10,000 to $150,000, with an express online application available up to $50,000.\n\nWells Fargo waives the annual fee for the first year, then charges $95 on lines between $10,000 and $25,000, or $175 on lines above $25,000. It requires six or more months in business, a personal guarantee from any owner with 25% or more ownership (with a minimum combined 51% ownership guaranteed), and typically a 680+ FICO score from guarantors.",
+        strengths: [
+          "Publishes an actual rate range (Prime + 1.75% to Prime + 9.75%) rather than staying silent",
+          "Low time-in-business bar — six months",
+          "First-year annual fee waived",
+          "Revolving structure: borrow, repay, and borrow again up to your limit",
+        ],
+        limitations: [
+          "Credit limit caps at $150,000, lower than Chase or Scotiabank",
+          "Requires personal guarantees from 25%+ owners, with 51% combined ownership covered",
+          "Guarantors typically need a 680+ FICO score",
+        ],
+        pricing:
+          "Prime + 1.75% to Prime + 9.75%, published range. Credit limit $10,000–$150,000. No annual fee year one; $95–$175/year after. Source: wellsfargo.com.",
+      },
+      {
+        name: "Bank of America",
+        bestFor: "Businesses that can use a 7-cycle introductory rate window",
+        description:
+          "[Bank of America](https://www.bankofamerica.com/smallbusiness/business-financing/unsecured-business-line-of-credit/) offers an unsecured Business Advantage Credit Line with a stated introductory variable rate of Prime + 0% for the first seven billing cycles after the line opens. After that introductory window, Bank of America's own page says the rate becomes 'a market competitive variable interest rate based on your creditworthiness, your business relationship with Bank of America, and the approved amount' — it does not publish an ongoing margin or rate range.\n\nBank of America also offers a secured Business Advantage Credit Line and a Cash Secured Business Line of Credit for businesses that want to pledge collateral for a larger limit or easier approval. Preferred Rewards for Business members get a 0.25%–0.75% rate discount on new credit lines, term loans, and secured lending, based on their relationship tier.",
+        strengths: [
+          "Published introductory rate: Prime + 0% for the first seven billing cycles",
+          "Preferred Rewards for Business can shave 0.25%–0.75% off the ongoing rate",
+          "Secured and cash-secured line options exist for businesses that want a larger limit",
+          "Backed by one of the largest small-business banking networks in the U.S.",
+        ],
+        limitations: [
+          "Ongoing rate after the intro period is not published — quoted per application",
+          "Credit limit and fee schedule are not published on the unsecured line's own page",
+          "Best rate discount requires a Preferred Rewards for Business relationship",
+        ],
+        pricing:
+          "Introductory Prime + 0% for 7 billing cycles; ongoing rate not publicly disclosed — quoted per application. Preferred Rewards discount 0.25%–0.75%. Source: bankofamerica.com.",
+      },
+      {
+        name: "PNC",
+        bestFor: "Businesses that want a no-collateral line under $100,000",
+        description:
+          "[PNC](https://www.pnc.com/en/small-business/borrowing/business-lines-of-credit/unsecured-business-line-of-credit.html) offers an Unsecured Small Business Line of Credit from $10,000 to $100,000, with a variable rate based on the Wall Street Journal Prime Rate Index plus an applicable margin. PNC's own page does not publish that margin as a fixed number, though it does state that qualifying Low-to-Moderate Income businesses get 1.0% off the standard rate.\n\nPNC charges a $175 annual fee and requires a minimum monthly payment of 1.5% of the balance (or $100, whichever is greater), automatically deducted from a business checking account. No collateral is required, and PNC also offers a secured line of credit for businesses that want a larger limit — generally starting above $100,000 — in exchange for pledged collateral.",
+        strengths: [
+          "No collateral required on the unsecured line",
+          "1.0% rate discount published for qualifying Low-to-Moderate Income businesses",
+          "Clear, published annual fee ($175) and minimum-payment formula",
+          "Secured line option available for larger limits",
+        ],
+        limitations: [
+          "Margin over the WSJ Prime Rate is not published as a fixed number",
+          "Unsecured limit caps at $100,000",
+          "Requires automatic payment deduction from a PNC business checking account",
+        ],
+        pricing:
+          "Variable, WSJ Prime Rate + margin; margin not publicly disclosed — quoted per application. Annual fee $175; minimum monthly payment 1.5% of balance or $100. Credit limit $10,000–$100,000. Source: pnc.com.",
+      },
+      {
+        name: "TD Bank",
+        bestFor: "Existing TD business-checking customers who qualify for autopay pricing",
+        description:
+          "[TD Bank](https://www.td.com/us/en/small-business/loans-lines-of-credit) publishes a promotional rate structure for small-business lines of credit tied to autopay from a TD Business Checking account: Wall Street Journal Prime Rate minus 0.50% on conventional lines, or WSJ Prime Rate plus 1.99% on lines approved with an SBA guaranty. As of this writing, TD's page frames this as a limited-time promotional rate for applications received in a specific window, so confirm the current rate before assuming it still applies.\n\nTD's own page does not publish a specific credit-limit range or fee schedule — it states only that applications under $250,000 can be completed online, while larger amounts require an in-person application at a branch, and that 'other fees and charges may apply' without listing amounts.",
+        strengths: [
+          "Publishes an actual rate formula (WSJ Prime minus 0.50%, or plus 1.99% with SBA guaranty)",
+          "Online application available for amounts under $250,000",
+          "Interest-only payment option available",
+          "Revolving structure — reuse funds as the balance is paid down",
+        ],
+        limitations: [
+          "Published rate is tied to a limited-time promotional window and autopay qualification",
+          "Fee schedule is not published — TD's page says only that 'other fees may apply'",
+          "Requires an active TD Business Checking account for autopay",
+        ],
+        pricing:
+          "Promotional: WSJ Prime − 0.50% (conventional) or WSJ Prime + 1.99% (SBA-guaranteed), with qualifying autopay. Fees not publicly disclosed. Source: td.com.",
+      },
+      {
+        name: "RBC",
+        bestFor: "Canadian businesses that want automatic daily sweeps into an operating account",
+        description:
+          "[RBC](https://www.rbcroyalbank.com/business/loans/operating-line-of-credit.html) (Royal Bank of Canada) offers the Royal Business OperatingLine, a revolving line of credit that starts at $10,000 and automatically transfers funds into your business deposit account to cover shortfalls, then pays itself down as deposits come in. RBC's own product page states credit lines start at $10,000 but does not publish a maximum limit, an interest rate, a margin over RBC Prime, or a fee schedule.\n\nBecause RBC's page doesn't disclose rate or fee details, the only way to get a real number is to speak with an RBC business banking specialist. RBC also offers a Visa-based small-business credit line as a separate product, which is a different structure from the OperatingLine described here.",
+        strengths: [
+          "Automatic daily transfers can cover cash-flow shortfalls without manual draws",
+          "Available in both a one-way (OperatingLine) and two-way (OperatingLine PLUS) transfer structure",
+          "Access via ATM, online banking, mobile app, or branch",
+          "Optional Business Loan Insurance Plan coverage available",
+        ],
+        limitations: [
+          "No rate, margin, maximum limit, or fee schedule published on RBC's own page",
+          "Requires a call or in-person visit to get real pricing",
+          "Canadian-dollar product for businesses operating in Canada",
+        ],
+        pricing:
+          "Rate, margin, and fees not publicly disclosed on RBC's own page — quoted per application. Credit lines start at $10,000. Source: rbcroyalbank.com.",
+      },
+      {
+        name: "Scotiabank",
+        bestFor: "Canadian businesses wanting a higher unsecured ceiling",
+        description:
+          "[Scotiabank](https://www.scotiabank.com/ca/en/business-banking/banking-solutions/line-of-credit/credit-line-for-business.html) offers a Credit Line for Business with unsecured limits up to $1 million and a floating interest rate tied to Scotiabank's prime lending rate. Scotiabank's own page describes the rate as 'competitive' but does not publish the specific margin over prime — it directs applicants to a separate small-business rates page or a business advisor for exact pricing.\n\nScotiabank also offers the Scotia Professional Plan, a variant with preferred borrowing rates for qualifying professionals (also up to $1 million). Approval weighs the owner's income over the last two tax years, business financial statements, a forward-looking business plan, and, in some cases, personal credit history. Sole proprietorships and partnerships must sign a personal guarantee.",
+        strengths: [
+          "Unsecured limit up to $1 million, higher than most U.S. lenders on this list",
+          "Separate Scotia Professional Plan available for qualifying professionals",
+          "Considers a forward-looking business plan, not just historical financials",
+        ],
+        limitations: [
+          "Specific margin over Scotiabank prime is not published on the product page",
+          "No fee schedule published",
+          "Sole proprietors and partnerships must sign a personal guarantee",
+        ],
+        pricing:
+          "Floating rate tied to Scotiabank prime; margin not publicly disclosed — quoted per application. Unsecured limit up to $1 million. Source: scotiabank.com.",
+      },
+      {
+        name: "CIBC",
+        bestFor: "Canadian businesses that want published example fee tiers, even without a fixed rate",
+        description:
+          "[CIBC](https://www.cibc.com/en/business/loans-and-lines-of-credit/revolving-line-of-credit.html) offers a revolving Business Line of Credit starting from $10,000, available secured or unsecured depending on your credit profile, with funding possible in as little as two days. CIBC states rates are variable and 'differ from borrower to borrower' based on credit score, business plan, personal investment in the business, and overall financial health — as an illustration only, CIBC's page gives an example of Prime + 4.25% for an established retailer with excellent credit and two-plus years in business, which is not a quoted or guaranteed rate.\n\nWhat CIBC does publish clearly is its fee schedule: a setup fee of $150–$1,000 payable when you sign the credit agreement, a monthly fee of $25–$150, a renewal fee of $50–$150 (charged no more than once every 12 months), and a $150 amendment fee if you change the agreement.",
+        strengths: [
+          "Publishes a clear fee schedule (setup, monthly, renewal, amendment fees) even without a fixed rate",
+          "Gives an illustrative rate example (Prime + 4.25%) for context",
+          "Funding possible in as little as two days for most applications",
+          "Available in CAD or USD, secured or unsecured",
+        ],
+        limitations: [
+          "No fixed rate or margin published — only a single illustrative example",
+          "Monthly and setup fees add real, ongoing cost on top of interest",
+          "Approval favors 12–24 months of positive business revenue",
+        ],
+        pricing:
+          "Variable, CIBC prime + margin; margin not fixed and varies by borrower (illustrative example: Prime + 4.25%). Setup fee $150–$1,000; monthly fee $25–$150; renewal fee $50–$150. Source: cibc.com.",
+      },
+      {
+        name: "American Express Business Blueprint",
+        bestFor: "Businesses that prefer a flat, disclosed fee over a variable APR",
+        description:
+          "[American Express Business Blueprint](https://www.americanexpress.com/en-us/business/blueprint/business-line-of-credit/) (the product built on Amex's Kabbage acquisition) structures its Business Line of Credit differently from every bank on this list: instead of an interest rate, it charges a monthly loan fee calculated as a percentage of the original principal. Amex's own fee page states this monthly fee currently ranges from 0.55% to 1.55% of the original principal, charged each month alongside your principal payment over an installment term of 6, 12, 18, or 24 months. Line sizes run from $2,000 to $250,000.\n\nBecause there's no traditional APR to compare against a bank's prime-plus-margin quote, the flat monthly fee is easier to see upfront but takes a bit more math to compare against a Prime + X% line. If you repay the full principal early, you avoid the loan fees for months that haven't posted yet.",
+        strengths: [
+          "Publishes an actual fee range (0.55%–1.55% monthly) rather than staying silent",
+          "No traditional variable APR to track against a moving prime rate",
+          "Early repayment avoids future months' fees",
+          "Structured for businesses already using Amex banking or card products",
+        ],
+        limitations: [
+          "Fee structure isn't a direct apples-to-apples comparison with a bank's APR",
+          "Line size tops out at $250,000, below Chase, PNC, or Scotiabank",
+          "Best fit for businesses comfortable consolidating financing with American Express",
+        ],
+        pricing:
+          "No APR — monthly loan fee of 0.55%–1.55% of original principal, over 6/12/18/24-month installment terms. Line size $2,000–$250,000. Source: americanexpress.com.",
+      },
+      {
+        name: "Bluevine",
+        bestFor: "Fast online approval without an existing bank relationship",
+        description:
+          "[Bluevine](https://www.bluevine.com/business-loans/line-of-credit) offers a revolving business line of credit up to $250,000 with repayment terms up to 12 months on a weekly or monthly schedule, aimed at businesses that want a fast online decision rather than a branch visit. Bluevine's own product page does not publish a specific interest rate or APR range — the actual rate depends on your application and is confirmed only through Bluevine's online quote process.\n\nWhat Bluevine does publish clearly is its fee policy: no fees for opening, maintaining, prepaying, or closing the line, with only a $15 fee for an optional bank-wire transfer (ACH transfers are free). Eligibility requires $10,000 or more in monthly revenue ($120,000 annualized), a personal FICO score of 625 or higher, and at least 12 months in business as a corporation or LLC — sole proprietorships generally don't qualify.",
+        strengths: [
+          "No fees for opening, maintaining, prepaying, or closing the line",
+          "Fast online application without a required branch visit",
+          "Revolving up to $250,000 with weekly or monthly repayment options",
+          "Lower time-in-business bar (12 months) than several bank lines on this list",
+        ],
+        limitations: [
+          "No specific interest rate or APR published on Bluevine's own site",
+          "Sole proprietorships generally aren't eligible — corporation or LLC required",
+          "Not available in every state (Nevada, North Dakota, South Dakota, and territories are excluded)",
+        ],
+        pricing:
+          "Rate not publicly disclosed on Bluevine's own site — quoted per application. No fees for opening, maintenance, prepayment, or closure ($15 optional wire fee). Credit limit up to $250,000. Source: bluevine.com.",
+      },
+    ],
+    comparisonTable: {
+      headers: [
+        "Lender",
+        "Structure",
+        "Rate basis (if disclosed)",
+        "Typical draw/annual fee",
+        "Best for",
+      ],
+      rows: [
+        {
+          name: "Chase",
+          values: [
+            "Revolving, $10K–$500K",
+            "Variable, indexed to Prime — margin not published",
+            "$200 or 0.25% of line (max $750), waivable",
+            "Existing Chase relationships",
+          ],
+        },
+        {
+          name: "Wells Fargo",
+          values: [
+            "Revolving, $10K–$150K",
+            "Prime + 1.75% to Prime + 9.75% (published)",
+            "$0 year 1; $95–$175/yr after",
+            "Wanting a published rate range",
+          ],
+        },
+        {
+          name: "Bank of America",
+          values: [
+            "Revolving, limit not published",
+            "Intro Prime + 0% (7 cycles), then not published",
+            "Not publicly disclosed",
+            "Using the intro-rate window",
+          ],
+        },
+        {
+          name: "PNC",
+          values: [
+            "Revolving, $10K–$100K (unsecured)",
+            "WSJ Prime + margin — margin not published",
+            "$175/yr annual fee",
+            "No-collateral lines under $100K",
+          ],
+        },
+        {
+          name: "TD Bank",
+          values: [
+            "Revolving/term, limit not published",
+            "WSJ Prime − 0.50% (conventional) / + 1.99% (SBA)",
+            "Not publicly disclosed",
+            "TD Business Checking customers",
+          ],
+        },
+        {
+          name: "RBC",
+          values: [
+            "Revolving, from $10K",
+            "Not publicly disclosed",
+            "Not publicly disclosed",
+            "Canadian businesses wanting auto-sweeps",
+          ],
+        },
+        {
+          name: "Scotiabank",
+          values: [
+            "Revolving, up to $1M (unsecured)",
+            "Floating, tied to Scotiabank prime — margin not published",
+            "Not publicly disclosed",
+            "Canadian businesses wanting a higher ceiling",
+          ],
+        },
+        {
+          name: "CIBC",
+          values: [
+            "Revolving, from $10K, secured or unsecured",
+            "Variable, CIBC prime + margin — varies by borrower",
+            "Setup $150–$1,000; monthly $25–$150",
+            "Wanting published example fee tiers",
+          ],
+        },
+        {
+          name: "Amex Business Blueprint",
+          values: [
+            "Revolving, $2K–$250K",
+            "No APR — monthly loan fee 0.55%–1.55% of principal",
+            "Fee is the cost structure itself",
+            "Preferring a flat disclosed fee over APR",
+          ],
+        },
+        {
+          name: "Bluevine",
+          values: [
+            "Revolving, up to $250K",
+            "Not publicly disclosed",
+            "$0 open/maintain/prepay/close ($15 wire opt.)",
+            "Fast online approval, no bank relationship",
+          ],
+        },
+      ],
+    },
+    verdict:
+      "There's no single 'best' rate here — only two lenders on this list (Wells Fargo, and TD Bank's promotional formula) publish an actual rate or margin on their own site, and even those depend on your credit and relationship. Everyone else, including Chase, Bank of America, PNC, RBC, Scotiabank, CIBC, and Bluevine, prices per application. Amex Business Blueprint is the outlier structurally — it charges a flat monthly fee instead of an APR, which is worth comparing carefully against a prime-plus-margin quote rather than assuming it's cheaper or more expensive.\n\nBecause the real number only shows up after you apply, the more useful move is to model a few scenarios yourself. Use ModernWallet's [business line of credit calculator](/business-line-of-credit/) to enter a draw amount, an estimated APR, a term, and a draw fee, and see the monthly payment and effective APR before you talk to any of these lenders. Then compare what each bank actually quotes you against that baseline.",
+    sections: [
+      {
+        heading: "Why most lenders won't publish a rate",
+        content:
+          "A business line of credit's interest rate depends on your credit score, time in business, revenue, and existing relationship with the bank — not a single number the bank can post for everyone. That's why Chase, Bank of America, PNC, RBC, Scotiabank, CIBC, and Bluevine all describe their rate as variable or quote-based without giving a specific margin on their own sites.\n\nWells Fargo is the exception among the banks here, publishing an actual range (Prime + 1.75% to Prime + 9.75%). TD Bank also publishes a promotional formula tied to autopay, though it's framed as a limited-time offer. Where a lender doesn't publish a number, treat 'quoted per application' as the honest answer — not a hidden trick.",
+      },
+      {
+        heading: "Prime-plus-margin, flat fee, or something else entirely",
+        content:
+          "Most of the banks on this list price a line of credit as a variable rate tied to a prime rate, plus a margin that depends on your profile. That's true whether the reference is the U.S. Wall Street Journal Prime Rate (Chase, Wells Fargo, PNC, TD, Bank of America) or a Canadian bank's own prime rate (RBC, Scotiabank, CIBC).\n\nAmerican Express Business Blueprint breaks that pattern entirely — it charges a monthly loan fee as a percentage of your original principal instead of an interest rate. There's no prime rate involved, so comparing it to a bank's quote takes converting both into a total-dollar-cost or effective-APR figure over the same term, not just comparing percentages side by side.",
+      },
+      {
+        heading: "Draw fees, annual fees, and the real cost of a line",
+        content:
+          "A quoted rate rarely tells the whole story. Chase charges an annual fee of $200 or 0.25% of your line; Wells Fargo and PNC charge annual fees of $95–$175; CIBC layers a setup fee, a monthly fee, a renewal fee, and an amendment fee on top of its variable rate. Bluevine and TD Bank, by contrast, publish minimal or no disclosed fees on their line-of-credit pages.\n\nThese fees change your real cost even when the headline rate looks similar. A 2% draw fee on a $50,000 draw adds $1,000 you never get to use, which is why the effective APR on a line is almost always higher than the quoted rate. Run your own numbers on the [business line of credit calculator](/business-line-of-credit/) before comparing lenders on rate alone.",
+      },
+      {
+        heading: "Revolving lines vs Amex's fee-based structure",
+        content:
+          "Every bank on this list — Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, and CIBC — offers a revolving line: you draw what you need, repay it, and can draw again up to your limit, paying interest only on the outstanding balance. Bluevine works the same way.\n\nAmerican Express Business Blueprint's Business Line of Credit is revolving too, but each draw becomes its own installment loan with a fixed fee schedule over 6, 12, 18, or 24 months, rather than an ongoing balance that accrues interest until you pay it down. That distinction matters if you plan to draw and repay frequently — a true revolving APR line can be cheaper for that pattern than repeated fixed-fee installments.",
+      },
+      {
+        heading: "U.S. banks vs Canadian banks: know which prime rate applies",
+        content:
+          "Chase, Wells Fargo, Bank of America, PNC, TD Bank, and Bluevine price in U.S. dollars against a U.S. prime rate (commonly the Wall Street Journal Prime Rate). RBC, Scotiabank, and CIBC price in Canadian dollars against their own bank's prime rate, which moves independently of the U.S. rate and is typically lower.\n\nTD Bank operates in both countries, so if you're comparing TD's U.S. small-business line against a Canadian bank, confirm you're looking at the right country's page and currency — the rate structures described here are for TD's U.S. small-business site.",
+      },
+      {
+        heading: "Model your own numbers before you apply",
+        content:
+          "Because eight of the ten lenders on this list don't publish a specific rate, the fastest way to compare real offers is to convert each one into the same units: a monthly payment and an effective APR that includes fees.\n\nModernWallet's [business line of credit calculator](/business-line-of-credit/) does that conversion for you — enter a draw amount, an estimated APR, a repayment term, and any draw fee to see your monthly payment, total interest, and effective APR. Run the numbers once with a conservative rate estimate, then compare each lender's actual quote against that baseline instead of against its marketing.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which bank has the best business line of credit rate?",
+        answer:
+          "There's no single answer — it depends on your credit score, time in business, revenue, and existing banking relationship, and most lenders on this list (Chase, Bank of America, PNC, RBC, Scotiabank, CIBC, and Bluevine) don't publish a rate at all. Wells Fargo publishes an actual range (Prime + 1.75% to Prime + 9.75%), which makes it the easiest to estimate upfront. The only way to know your real rate is to apply and compare the actual offers, using our business line of credit calculator to convert each quote into the same monthly-payment and effective-APR terms.",
+      },
+      {
+        question: "Do all these lenders require good personal credit?",
+        answer:
+          "Most do, but the bar varies. Chase requires a 660+ FICO score, Wells Fargo's guarantors typically need 680+, and Bluevine requires 625+. Bank of America, PNC, TD, RBC, Scotiabank, and CIBC don't publish a minimum score, but all describe credit evaluation as part of underwriting, and CIBC and Scotiabank specifically weigh personal financial history alongside the business's financials. Expect a personal guarantee from owners with a significant stake in the business at nearly every lender on this list.",
+      },
+      {
+        question: "Why don't banks publish their business line of credit rates?",
+        answer:
+          "A line of credit's rate depends on your credit score, revenue, time in business, and banking relationship, so most banks quote it per application rather than posting one number for every borrower. Wells Fargo is the exception among the lenders here, publishing an actual Prime + 1.75% to Prime + 9.75% range. Where a lender says 'quoted per application,' that's a straightforward answer, not a red flag — but it does mean you should get a real quote before assuming a rate.",
+      },
+      {
+        question: "Is American Express Business Blueprint's fee structure cheaper than a bank's rate?",
+        answer:
+          "It depends on how you use the credit. Amex Business Blueprint charges a flat monthly loan fee (0.55%–1.55% of the original principal) instead of a variable APR, which can be simpler to predict but isn't directly comparable to a Prime + margin quote without converting both to the same total-dollar cost over the same term. For money you draw and repay quickly and often, a true revolving line with a low APR can end up cheaper than repeated fixed-fee installments.",
+      },
+      {
+        question: "How is a Canadian bank's business line of credit rate different from a U.S. bank's?",
+        answer:
+          "RBC, Scotiabank, and CIBC price their business lines of credit in Canadian dollars against their own bank's Canadian prime rate, which moves independently of the U.S. Wall Street Journal Prime Rate that Chase, Wells Fargo, PNC, and TD Bank's U.S. line reference. The two prime rates aren't interchangeable, so a 'Prime + 4.25%' quote from a Canadian bank isn't directly comparable to a U.S. bank's 'Prime + 1.75%' quote without converting to actual dollar rates first.",
+      },
+      {
+        question: "What fees should I ask about beyond the interest rate?",
+        answer:
+          "Ask about annual or maintenance fees, draw fees, setup fees, renewal fees, and minimum monthly payment requirements. Chase charges $200 or 0.25% of the line annually; CIBC layers a setup fee ($150–$1,000), a monthly fee ($25–$150), and a renewal fee ($50–$150); Bluevine, by contrast, charges no fees for opening, maintaining, prepaying, or closing its line. These fees change your real cost even when two lenders quote a similar headline rate, so total them using our business line of credit calculator before comparing offers.",
+      },
+    ],
+    sources: [
+      {
+        label: "Chase — Business Line of Credit",
+        url: "https://www.chase.com/business/banking/loans/business-line-of-credit",
+      },
+      {
+        label: "Wells Fargo — BusinessLine Line of Credit",
+        url: "https://www.wellsfargo.com/biz/business-credit/lines-of-credit/",
+      },
+      {
+        label: "Bank of America — Unsecured Business Line of Credit",
+        url: "https://www.bankofamerica.com/smallbusiness/business-financing/unsecured-business-line-of-credit/",
+      },
+      {
+        label: "PNC — Unsecured Small Business Line of Credit",
+        url: "https://www.pnc.com/en/small-business/borrowing/business-lines-of-credit/unsecured-business-line-of-credit.html",
+      },
+      {
+        label: "TD Bank — Small Business Loans and Lines of Credit",
+        url: "https://www.td.com/us/en/small-business/loans-lines-of-credit",
+      },
+      {
+        label: "RBC — Royal Business OperatingLine of Credit",
+        url: "https://www.rbcroyalbank.com/business/loans/operating-line-of-credit.html",
+      },
+      {
+        label: "Scotiabank — Credit Line for Business",
+        url: "https://www.scotiabank.com/ca/en/business-banking/banking-solutions/line-of-credit/credit-line-for-business.html",
+      },
+      {
+        label: "CIBC — Business Line of Credit (Revolving)",
+        url: "https://www.cibc.com/en/business/loans-and-lines-of-credit/revolving-line-of-credit.html",
+      },
+      {
+        label: "CIBC — Business Line of Credit Fees and Details",
+        url: "https://www.cibc.com/en/business/loans-and-lines-of-credit/revolving-line-of-credit/fees-and-details.html",
+      },
+      {
+        label: "American Express Business Blueprint — Business Line of Credit",
+        url: "https://www.americanexpress.com/en-us/business/blueprint/business-line-of-credit/",
+      },
+      {
+        label: "American Express Business Blueprint — Business Line of Credit Fees FAQ",
+        url: "https://www.americanexpress.com/en-us/business/blueprint/help-center/business-line-of-credit/fees/faq.what-fees-are-charged-for-american-express-business-line-of-credit-loans.html",
+      },
+      {
+        label: "Bluevine — Business Line of Credit",
+        url: "https://www.bluevine.com/business-loans/line-of-credit",
+      },
+      {
+        label: "Consumer Financial Protection Bureau — What to look for when shopping for a line of credit",
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-should-i-look-for-when-shopping-for-a-personal-line-of-credit-en-905/",
+      },
+    ],
+    calculatorLinks: [
+      {
+        label: "Business line of credit calculator",
+        href: "/business-line-of-credit/",
+      },
+    ],
+  },
 ];
