@@ -5147,6 +5147,108 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── Bilt Rewards vs Chase Ultimate Rewards ──────────────────────────────
+  {
+    slug: "bilt-rewards-vs-chase-ultimate-rewards",
+    title: "Bilt Rewards vs Chase Ultimate Rewards: Which Wins?",
+    metaDescription:
+      "Bilt Rewards vs Chase Ultimate Rewards compared: earning on rent, annual fees, transfer partners, and which points program actually pays off.",
+    targetKeyword: "bilt rewards vs chase ultimate rewards",
+    optionA: "Bilt Rewards",
+    optionB: "Chase Ultimate Rewards",
+    h1: "Bilt Rewards vs Chase Ultimate Rewards: Which Points Program Is Worth It?",
+    intro:
+      "[Bilt Rewards](https://www.bilt.com/) is built around one mechanic no other major card matches: the Bilt Mastercard earns points on rent paid to a participating landlord or property manager with no added processing fee, while [Chase Ultimate Rewards](https://www.chase.com/personal/credit-cards/ultimate-rewards) is earned through Chase's own card lineup — Freedom, Sapphire Preferred, and Sapphire Reserve — on everyday bonus categories like dining and travel, with no rent-specific earning at all.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Core earning mechanic", a: "Points on rent (no fee) plus dining, travel, and other spend on the Bilt Mastercard", b: "Points on bonus categories (dining, travel, groceries, etc.) across the Chase card family" },
+        { dimension: "Rent payments", a: "Earns points with no added transaction fee when paid to a participating landlord/platform", b: "No rent-specific earning; a third-party rent-payment service would typically charge a processing fee" },
+        { dimension: "Card lineup", a: "Bilt Mastercard (no annual fee) is the single card; check bilt.com for the current fee", b: "Freedom (no annual fee), Sapphire Preferred, and Sapphire Reserve (both carry annual fees) — check chase.com for current amounts" },
+        { dimension: "How points are pooled", a: "Points earned on one Bilt Mastercard", b: "Points from multiple eligible Chase cards can typically be combined into one Ultimate Rewards account" },
+        { dimension: "Transfer partners", a: "Airline and hotel partners including American, United, and Hyatt-style programs — confirm the current list at bilt.com", b: "Airline and hotel partners including United, Southwest, and Hyatt/Marriott-style programs — confirm the current list at chase.com" },
+        { dimension: "Best redemption for value", a: "Transferring to airline/hotel partners for travel bookings", b: "Transferring to airline/hotel partners, especially with a Sapphire card's transfer bonus and travel protections" },
+        { dimension: "Welcome offer structure", a: "Typically smaller or promotional given the no-annual-fee model — terms change often, check bilt.com", b: "Often a larger bonus tied to a minimum spend requirement on Sapphire cards — terms change often, check chase.com" },
+        { dimension: "APR", a: "Standard variable APR range for a no-annual-fee card — check bilt.com for current rates", b: "Standard variable APR range typical of a premium travel card — check chase.com for current rates" },
+        { dimension: "Foreign transaction fee", a: "None on the Bilt Mastercard", b: "None on Sapphire Preferred/Reserve; the no-fee Freedom card may charge one — check chase.com" },
+        { dimension: "Best for", a: "Renters who pay a participating landlord and want their biggest monthly bill to earn something", b: "Frequent travelers who spend heavily in bonus categories and want the broadest transfer ecosystem" },
+      ],
+    },
+    verdict:
+      "Bilt Rewards wins for anyone whose rent goes to a participating landlord or property manager, full stop — it is the only mainstream program that turns your largest fixed monthly expense into points without charging you a fee to do it. Chase Ultimate Rewards wins for frequent travelers and heavy dining/travel spenders who either don't pay rent to a participating landlord or want a deeper bench of bonus categories, a Sapphire card's travel protections, and a points-pooling setup across multiple cards. The two aren't really rivals for the same dollar: rent is a fixed, unavoidable payment that Bilt monetizes for free, while Chase's strength is optimizing discretionary spend you'd make anyway. Renters who also travel a lot often end up carrying both.",
+    sections: [
+      {
+        heading: "How Bilt Rewards actually works",
+        content:
+          "Bilt Rewards centers on the Bilt Mastercard, a card built specifically so renters can earn points on rent without their landlord needing to accept credit cards directly and without the cardholder paying a swipe fee that a typical third-party rent-payment service would charge. You pay rent through the Bilt app, the payment is processed like a normal ACH or check transaction on the landlord's end, and Bilt awards points on top.\n\nBilt has also extended the same fee-free idea to homeowners: eligible members can earn points on a mortgage payment through the Bilt app, using the same no-swipe-fee mechanic as rent. That makes Bilt one of the few rewards programs that pays points on either side of the rent-versus-own decision, not just renters. Outside of rent and mortgage payments, the Bilt Mastercard also earns points on everyday categories such as dining, travel, and other purchases, so it can function as a primary card rather than a single-purpose rent tool. The card carries no annual fee, which matters because a no-fee card earning points on rent is a genuinely rare combination — most cards either charge a fee or don't touch rent at all.\n\nThe catch is eligibility: the fee-free rent earning only applies when your landlord or property management company is set up as a participating payment recipient in the Bilt system, and monthly rent transactions typically need to hit a minimum number of card uses that month to count toward some of Bilt's other perks. Check [bilt.com](https://www.bilt.com/) for the current qualifying rules, since the details of how landlords get onboarded have evolved over time.",
+      },
+      {
+        heading: "How Chase Ultimate Rewards actually works",
+        content:
+          "Chase Ultimate Rewards isn't a single card — it's the points currency shared across the Chase Freedom, Chase Sapphire Preferred, and Chase Sapphire Reserve cards (among others). You earn points based on the specific card's bonus categories: think rotating or fixed categories like dining, travel, streaming, and groceries, depending on which card you hold.\n\nThe program's real strength shows up when you hold more than one eligible Chase card, because points earned on a no-annual-fee Freedom card can typically be combined into the same Ultimate Rewards account as points from a Sapphire card. That combining matters because redemption value is usually much better through a card that unlocks premium redemption options (like transferring to travel partners) than through a card that only allows cash back or statement credit.\n\nChase's Sapphire cards carry annual fees — the Preferred's is lower, the Reserve's is higher — in exchange for stronger earning rates on travel and dining, transfer-partner access, and (on the Reserve) airport lounge access and travel credits. The no-fee Freedom card earns into the same pool but can't transfer points to partners on its own; it needs to be paired with a Sapphire card. Check [chase.com](https://www.chase.com/personal/credit-cards/ultimate-rewards) for the current fee and earning-rate details, since Chase periodically adjusts them.",
+      },
+      {
+        heading: "Transfer partners and redemption value",
+        content:
+          "Both programs get most of their real value from transferring points to airline and hotel loyalty programs rather than redeeming for cash back or a flat-rate statement credit — a 1:1 transfer to the right partner at the right time routinely stretches a point further than any fixed-value redemption.\n\nBilt's transfer partners span major domestic and international airlines along with hotel programs — names like American, United, and major hotel chains such as Hyatt have historically been part of the network. Chase Ultimate Rewards has its own separate partner list, which has historically included United, Southwest, and hotel programs such as Hyatt and Marriott Bonvoy. Both lists change: airlines and hotels rotate in and out, transfer ratios get adjusted, and new partners occasionally get added. Rather than lean on a specific partner list here, confirm the current lineup directly at [bilt.com](https://www.bilt.com/) and [chase.com](https://www.chase.com/personal/credit-cards/ultimate-rewards) before you plan a redemption around a particular airline or hotel.\n\nThe practical difference: Chase's ecosystem is broader because it's fed by multiple cards with different bonus categories, so a heavy traveler can accumulate a larger transferable balance faster. Bilt's ecosystem is narrower but effectively free to access on rent — a renter earning steadily on a fixed monthly payment can still build a meaningful transfer-partner balance over a year without changing their spending habits at all.",
+      },
+      {
+        heading: "Annual fees and welcome offers: what actually changes the math",
+        content:
+          "Annual fees are the clearest structural difference. The Bilt Mastercard has no annual fee, full stop, which is unusual for a card offering airline and hotel transfer partners. Chase's no-fee Freedom card also charges nothing, but the cards that unlock transfer partners — Sapphire Preferred and Sapphire Reserve — do carry annual fees, with the Reserve's fee sitting meaningfully higher in exchange for premium perks like lounge access and annual travel credits. Check [chase.com](https://www.chase.com/personal/credit-cards/ultimate-rewards) for current figures before applying, since Chase adjusts both the fee and the perks periodically.\n\nWelcome offers are worth understanding as a structure rather than a number, because any specific dollar figure quoted today will likely be stale within months. Chase's Sapphire cards typically offer a bonus tied to hitting a minimum spend threshold within the first few months — the bigger the required spend, the bigger the bonus tends to be. Bilt's welcome offers have historically been smaller or more promotional, consistent with a no-annual-fee card that earns its keep on rent rather than on a big upfront bonus. When comparing offers, divide the bonus value by the spend requirement to get an apples-to-apples return, and always check the issuer's page directly rather than a card comparison site's cached numbers.\n\nOne more cost that's easy to miss: a third-party rent-payment app that isn't built for it will often charge 2–3% to run rent through a credit card. Bilt's whole value proposition is eliminating that fee for participating landlords, so the fee comparison for renters isn't really \"Bilt vs Chase\" — it's \"Bilt's free rent-to-points conversion\" vs \"paying a fee elsewhere to do the same thing badly.\"",
+      },
+      {
+        heading: "Which one should you get — and can you use both?",
+        content:
+          "If your rent goes to a landlord or property manager set up with Bilt, get the Bilt Mastercard. There is close to no downside: it has no annual fee, it earns points on the single biggest recurring bill most renters have, and it still earns on everyday spend elsewhere. Skipping it means leaving points on the table for a payment you're making anyway.\n\nIf you don't pay rent to a participating landlord — you own your home, or your landlord isn't set up with Bilt — Chase Ultimate Rewards is the stronger everyday program for most people, especially frequent travelers. A Sapphire Preferred or Sapphire Reserve card's bonus categories, transfer partners, and travel protections generally outearn a no-rent Bilt card on the same discretionary spend, and Chase's ability to pool points across multiple cards adds flexibility Bilt's single-card model doesn't have.\n\nYou can absolutely carry both. There's no rule against holding a Bilt Mastercard alongside a Chase Sapphire card — the two run on separate points currencies with separate transfer-partner networks, so you're not stacking the same points twice. A common setup: put rent on Bilt to capture points on a payment that would otherwise earn nothing, and put dining, travel, and other bonus-category spend on a Chase card to maximize everything else. Track both balances with our [budget planner](/budget/) so rent and discretionary spend stay in their own lanes and neither program's minimum-spend or category rules catch you off guard.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Bilt really let you earn points on rent for free?",
+        answer:
+          "Yes, when your landlord or property manager is set up as a participating payment recipient in the Bilt system. You pay rent through the Bilt app, the payment processes normally on the landlord's end, and the Bilt Mastercard earns points with no added transaction fee — unlike most third-party rent-payment services, which typically charge 2–3% to run rent through a credit card.",
+      },
+      {
+        question: "Does the Bilt Mastercard have an annual fee?",
+        answer:
+          "No. The Bilt Mastercard carries no annual fee, which is part of what makes its rent-earning mechanic notable — most cards with airline and hotel transfer partners charge a fee. Confirm current terms at bilt.com since card details can change.",
+      },
+      {
+        question: "Do Chase Sapphire cards have annual fees?",
+        answer:
+          "Yes. The no-fee Chase Freedom card charges nothing, but Chase Sapphire Preferred and Chase Sapphire Reserve — the cards that unlock Ultimate Rewards transfer partners — both carry annual fees, with the Reserve's fee set higher in exchange for premium travel perks. Check chase.com for current amounts.",
+      },
+      {
+        question: "Can I transfer Bilt points and Chase Ultimate Rewards points to the same airline?",
+        answer:
+          "Possibly, since both programs partner with major airline and hotel loyalty programs, but the specific partner lists and transfer ratios are set independently by each issuer and change over time. Check the current transfer-partner list on bilt.com and chase.com before assuming a specific airline or hotel is available in both.",
+      },
+      {
+        question: "Is Bilt Rewards or Chase Ultimate Rewards better for someone who doesn't rent?",
+        answer:
+          "Chase Ultimate Rewards is generally the better fit if you own your home or your landlord doesn't participate with Bilt, since Bilt's signature rent-earning feature won't apply to you. Chase's bonus categories on dining, travel, and other everyday spend, plus its transfer-partner ecosystem, tend to earn more for non-renters.",
+      },
+      {
+        question: "Can I have both a Bilt Mastercard and a Chase Sapphire card?",
+        answer:
+          "Yes, there's no restriction on holding both. They run on separate points currencies with separate transfer-partner networks, so a common strategy is putting rent on Bilt to earn on a payment that would otherwise earn nothing, and putting dining, travel, and other bonus-category spend on a Chase card to maximize the rest of your budget.",
+      },
+      {
+        question: "How do welcome offers compare between Bilt and Chase?",
+        answer:
+          "Structurally, Chase's Sapphire cards tend to offer a larger welcome bonus tied to hitting a minimum spend requirement in the first few months, consistent with charging an annual fee. Bilt's welcome offers have historically been smaller or more promotional, consistent with its no-annual-fee model. Specific dollar amounts change often, so check bilt.com and chase.com directly before applying.",
+      },
+    ],
+    sources: [
+      { label: "Bilt Rewards — official site", url: "https://www.bilt.com/" },
+      { label: "Chase — Ultimate Rewards", url: "https://www.chase.com/personal/credit-cards/ultimate-rewards" },
+    ],
+    relatedComparisons: ["renting-vs-buying"],
+    calculatorLinks: [
+      { label: "Budget planner", href: "/budget/" },
+    ],
+  },
+
   // ─── Term Life vs Universal Life Insurance ───────────────────────────────
   {
     slug: "term-life-vs-universal-life-insurance",

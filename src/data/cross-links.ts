@@ -10,12 +10,15 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "Does this fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/mortgage/", label: "Buying a home too?" },
+    { href: "/guides/is-extended-car-warranty-worth-it/", label: "Is an extended warranty worth it?" },
   ],
   "mortgage": [
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
     { href: "/budget/", label: "Build a monthly budget" },
     { href: "/net-worth/", label: "Check if you're financially ready" },
     { href: "/retirement/", label: "Stay on track for retirement" },
+    { href: "/guides/current-mortgage-rates-guide/", label: "What actually sets your rate" },
+    { href: "/guides/lessons-from-2008-housing-crash/", label: "What the 2008 crash still teaches buyers" },
   ],
   "real-estate": [
     { href: "/mortgage/", label: "Finance the purchase" },
@@ -37,6 +40,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/retirement/", label: "Plan your retirement" },
     { href: "/portfolio/", label: "Balance your portfolio" },
     { href: "/net-worth/", label: "Track your net worth" },
+    { href: "/roundup/best-brokers-for-treasury-bonds/", label: "Best brokers for Treasury bonds" },
   ],
   "portfolio": [
     { href: "/investing/", label: "Project investment growth" },
@@ -54,6 +58,8 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/investing/", label: "Invest your monthly surplus" },
     { href: "/retirement/", label: "Are you saving enough to retire?" },
     { href: "/personal-loan/", label: "Consolidating debt? Model a personal loan" },
+    { href: "/guides/sales-tax-holidays-guide/", label: "Do sales tax holidays actually save money?" },
+    { href: "/guides/ai-financial-advice-chatbots-guide/", label: "Using AI chatbots for money questions" },
   ],
   "personal-loan": [
     { href: "/budget/", label: "Does the payment fit your budget?" },
