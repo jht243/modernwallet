@@ -5328,6 +5328,185 @@ export const COMPARISONS: ComparisonEntry[] = [
   ],
 },
 
+  {
+    slug: "military-retirement-vs-va-disability",
+    title: "Military Retirement vs VA Disability: CRDP & CRSC",
+    metaDescription:
+      "Military retired pay and VA disability used to offset dollar-for-dollar. See how CRDP and CRSC now let many retirees keep both, and who still qualifies.",
+    targetKeyword: "military retirement vs va disability",
+    optionA: "Military Retired Pay",
+    optionB: "VA Disability Compensation",
+    segment: "Military retirement",
+    h1: "Military Retirement vs VA Disability: Do They Overlap?",
+    intro:
+      "Military retired pay and VA disability compensation are two separate benefits that historically reduced each other dollar-for-dollar, but Concurrent Retirement and Disability Pay (CRDP) and Combat-Related Special Compensation (CRSC) now let many retirees keep both in full. Retired pay comes from the [Defense Finance and Accounting Service (DFAS)](https://www.dfas.mil/RetiredMilitary/) and is taxable federal income; VA disability compensation comes from the [Department of Veterans Affairs](https://www.va.gov/disability/) and is entirely tax-free. Whether you keep both in full depends on your VA disability rating and how you separated from service.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Paying agency", a: "DFAS (Defense Finance and Accounting Service)", b: "Department of Veterans Affairs (VA)" },
+        { dimension: "Taxable?", a: "Yes — ordinary federal income, reported on a 1099-R", b: "No — entirely tax-free at the federal level" },
+        { dimension: "Based on", a: "Years of service (or disability rating for Chapter 61 retirees)", b: "VA-rated disability percentage, 0–100% in 10% increments" },
+        { dimension: "Historically reduced by the other?", a: "Yes — dollar-for-dollar \"VA waiver\" for every dollar of VA compensation received", b: "No — VA compensation itself is never reduced by retired pay" },
+        { dimension: "Restored to full concurrent receipt by", a: "CRDP (20+ years' service, VA rating 50%+) or CRSC (any years, combat-related, VA rating 10%+)", b: "Same CRDP/CRSC programs" },
+      ],
+    },
+    verdict:
+      "Most retirees don't have to permanently choose between military retired pay and VA disability — CRDP or CRSC restores both in full for those who qualify. If you have 20 or more years of service and a VA rating of 50% or higher, CRDP applies automatically with no application needed. If your disability is combat-related and you don't meet CRDP's rules — for example, you medically retired with fewer than 20 years of service — apply for CRSC through your branch instead. You cannot collect both CRDP and CRSC on the same disability; DFAS pays whichever one you elect.",
+    sections: [
+      {
+        heading: "Why military retired pay and VA disability used to offset each other",
+        content:
+          "For decades, federal law barred receiving both military retired pay and VA disability compensation in full. The rule required a dollar-for-dollar \"VA waiver\": for every dollar of VA disability compensation a retiree received, DFAS withheld an equal dollar of retired pay, so total income never actually increased.\n\nThis meant a retiree's paycheck mix simply shifted from taxable retired pay toward tax-free VA compensation — often a net win at tax time, but the total dollar amount stayed capped at whichever was larger. Congress began phasing out this offset for the highest-need retirees starting in 2004.",
+      },
+      {
+        heading: "How CRDP restores full concurrent receipt",
+        content:
+          "Concurrent Retirement and Disability Pay (CRDP) lets an eligible retiree keep 100% of both military retired pay and VA disability compensation, with no offset. Eligibility requires a VA disability rating of 50% or higher.\n\nFor a retiree who reached the standard 20-year retirement, that's the whole test — DFAS pays CRDP automatically once notified of the VA rating, with no separate application. Chapter 61 medical retirees face an added hurdle: they specifically need 20 or more years of creditable service to qualify for CRDP, even at a 100% VA rating. A Chapter 61 retiree who separated with, say, 12 years of service does not qualify for CRDP no matter how severe the disability. See our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison for how Chapter 61 retirement itself works.",
+      },
+      {
+        heading: "How CRSC works for combat-related disabilities",
+        content:
+          "Combat-Related Special Compensation (CRSC) is the alternative path for retirees who don't meet CRDP's rules. It requires a VA rating of at least 10% for a disability that's combat-related — incurred in actual combat, hazardous service, training that simulates war, or as a result of an instrumentality of war (like exposure to Agent Orange or a training accident with military equipment).\n\nCRSC has no minimum years-of-service requirement, which makes it the relevant option for a Chapter 61 retiree with fewer than 20 years who doesn't qualify for CRDP. Unlike CRDP, CRSC isn't automatic — you must file an application with your branch of service. CRSC payments are entirely tax-free, just like standard VA disability compensation.",
+      },
+      {
+        heading: "CRDP vs CRSC: you can't collect both on the same disability",
+        content:
+          "DFAS is explicit on this point: a retiree who qualifies for both programs still has to pick one. You cannot receive CRDP and CRSC concurrently for the same disability rating.\n\nWhich one pays more depends on your situation — CRSC's combat-related-only scope can sometimes pay out closer to your full retired pay than CRDP's formula, especially for retirees with a mix of combat and non-combat conditions. If you think you might qualify for both, it's worth requesting an estimate from DFAS or your branch's CRSC office before settling on an election, since you can contact DFAS to review or change it later.",
+      },
+      {
+        heading: "What this means for your TSP and pension projections",
+        content:
+          "The [military retirement calculator](/retirement/military-retirement-calculator/) projects your TSP balance and your BRS or legacy High-3 pension — the retired-pay side of this comparison. VA disability compensation is a separate benefit layered on top, and CRDP/CRSC determine whether that layer adds to your retired pay or simply replaces part of it.\n\nIf you're rated 50% or higher after 20+ years of service, you can treat your CRDP-restored retired pay and your VA compensation as fully additive income when planning your budget — neither offsets the other. If your rating is below 50% and you don't qualify for CRSC, budget for the standard dollar-for-dollar reduction instead.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does VA disability reduce my military retired pay?",
+        answer:
+          "It can, but not always. The traditional rule is a dollar-for-dollar reduction — every dollar of VA disability compensation reduces retired pay by the same amount. CRDP and CRSC are the two programs that restore full concurrent receipt for retirees who qualify, so whether your retired pay is actually reduced depends on your VA rating, your years of service, and whether your disability is combat-related.",
+      },
+      {
+        question: "Do I need 20 years of service to qualify for CRDP?",
+        answer:
+          "It depends on how you retired. If you retired the regular way with 20 or more years of service, CRDP eligibility hinges only on your VA rating (50% or higher). If you were medically retired under Chapter 61, you specifically need 20 or more years of creditable service to qualify for CRDP — a Chapter 61 retiree with fewer than 20 years does not qualify for CRDP, even at a 100% VA rating, and would need to rely on CRSC instead if the disability is combat-related.",
+      },
+      {
+        question: "Can I get CRSC without 20 years of service?",
+        answer:
+          "Yes. CRSC has no minimum years-of-service requirement. You need to be entitled to military retired pay, have a VA disability rating of at least 10%, and have a disability that's combat-related. You must apply through your branch of service — it isn't automatic like CRDP.",
+      },
+      {
+        question: "Can I receive both CRDP and CRSC at the same time?",
+        answer:
+          "No. DFAS pays whichever one you elect, not both, for the same disability. If you qualify for both, compare the estimated monthly amount of each with DFAS or your branch's CRSC office before choosing, since your election can be revisited later.",
+      },
+      {
+        question: "Is VA disability compensation taxable?",
+        answer:
+          "No. VA disability compensation is entirely tax-free at the federal level, unlike military retired pay, which is taxed as ordinary federal income and reported on a 1099-R. This tax-free treatment is one reason CRDP and CRSC — which preserve as much VA compensation as possible — can meaningfully improve a retiree's after-tax income even when the pre-tax totals look similar.",
+      },
+    ],
+    sources: [
+      { label: "DFAS — Concurrent Retirement and Disability Pay (CRDP)", url: "https://www.dfas.mil/RetiredMilitary/disability/crdp/" },
+      { label: "DFAS — Combat-Related Special Compensation (CRSC)", url: "https://www.dfas.mil/RetiredMilitary/disability/crsc/" },
+      { label: "DFAS — VA Waiver and Retired Pay: CRDP & CRSC", url: "https://www.dfas.mil/RetiredMilitary/disability/VA-Waiver-and-Retired-Pay-CRDP-CRSC/" },
+      { label: "VA — Disability Compensation", url: "https://www.va.gov/disability/" },
+    ],
+    relatedComparisons: ["military-retirement-vs-medical-retirement"],
+    calculatorLinks: [
+      { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
+  {
+    slug: "military-retirement-vs-medical-retirement",
+    title: "Military Retirement vs Medical Retirement: Chapter 61",
+    metaDescription:
+      "Regular military retirement needs 20 years of service. Chapter 61 medical retirement can start earlier if a medical board rates you 30%+ unfit for duty.",
+    targetKeyword: "military retirement vs medical retirement",
+    optionA: "Regular (Length-of-Service) Retirement",
+    optionB: "Chapter 61 Medical Retirement",
+    segment: "Military retirement",
+    h1: "Military Retirement vs Medical (Chapter 61) Retirement",
+    intro:
+      "Regular military retirement requires 20 or more years of service and pays a pension based on years served, while Chapter 61 medical retirement can begin at any point in a career once a medical evaluation board rates a service member unfit for duty at 30% disability or higher. Both retirements pay a [DFAS](https://www.dfas.mil/RetiredMilitary/) pension under Title 10 of the U.S. Code, but Chapter 61 uses whichever of two formulas pays more: years of service or disability rating.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Legal basis", a: "Title 10, standard longevity retirement", b: "Title 10, Chapter 61 (disability retirement)" },
+        { dimension: "Minimum service required", a: "20 years of active service", b: "None below 20 years if rated 30%+ unfit; automatic consideration at 20+ years regardless of rating" },
+        { dimension: "Pension formula", a: "2.0% (BRS) or 2.5% (legacy) × years of service × High-3", b: "Higher of: years-of-service formula OR disability-percentage formula (minimum 50% while on TDRL)" },
+        { dimension: "Status track", a: "Permanent from day one", b: "Often starts on the Temporary Disability Retired List (TDRL), re-evaluated periodically for up to 5 years, before finalizing on the Permanent Disability Retired List (PDRL)" },
+        { dimension: "VA disability interaction", a: "Subject to standard CRDP/CRSC offset rules", b: "Same CRDP/CRSC rules apply, but CRDP still requires 20+ years of service even for Chapter 61 retirees" },
+      ],
+    },
+    verdict:
+      "You don't choose between these paths — a Physical Evaluation Board places a service member on Chapter 61 when a medical condition makes them unfit for duty, regardless of how many years they've served. A 20-year retiree who develops a qualifying condition near separation is paid under whichever computation, years of service or disability rating, produces the higher amount. The practical difference that matters most: Chapter 61 medical retirement is often the only way to reach retired-pay status before 20 years of service.",
+    sections: [
+      {
+        heading: "What makes a retirement \"Chapter 61\"",
+        content:
+          "Chapter 61 refers to the section of Title 10 of the U.S. Code that governs disability retirement. A Physical Evaluation Board reviews a service member's medical condition and determines whether it makes them unfit for continued duty.\n\nIf the member has fewer than 20 years of service, a disability rating of 30% or higher qualifies them for Chapter 61 retirement rather than a one-time disability severance payment. If the member already has 20 or more years of service, retirement is recommended regardless of the disability rating, since they've already met the standard longevity threshold.",
+      },
+      {
+        heading: "How the two computation methods work",
+        content:
+          "Chapter 61 pay is computed under whichever of two methods produces the higher monthly amount. Method A uses the disability percentage — while a member is on the Temporary Disability Retired List (TDRL), this percentage is never counted below 50% for payment purposes, even if the actual rating is lower. Method B uses years of service, calculated the same way as a regular retirement (2.0% or 2.5% per year × High-3).\n\nDFAS pays whichever method is more beneficial to the retiree. A service member with only 8 years in and a 40% rating, for example, gets paid using the higher Method A (with the 50% TDRL floor) rather than the much smaller years-of-service figure Method B would produce.",
+      },
+      {
+        heading: "TDRL vs PDRL: why some medical retirements aren't final right away",
+        content:
+          "A condition that hasn't stabilized enough for a final rating often lands a service member on the Temporary Disability Retired List (TDRL) first, rather than the Permanent Disability Retired List (PDRL). TDRL status is re-evaluated periodically, for up to 5 years, until the condition is stable enough for a permanent rating.\n\nWhile on TDRL, pay is computed using a minimum 50% disability rating for Method A, regardless of the member's actual percentage — a built-in floor that doesn't apply once the case moves to PDRL. A re-evaluation can raise, lower, or confirm the original rating before the case is finalized.",
+      },
+      {
+        heading: "How VA disability and CRDP interact differently for Chapter 61 retirees",
+        content:
+          "Chapter 61 retirees can also receive [VA](https://www.va.gov/disability/) disability compensation, but the rules for keeping both payments in full are stricter than for regular retirees. Concurrent Retirement and Disability Pay (CRDP) still requires 20 or more years of creditable service, even for someone who was medically retired — a Chapter 61 retiree with 12 years of service and a 90% VA rating does not qualify for CRDP.\n\nCombat-Related Special Compensation (CRSC) has no years-of-service floor, which makes it the relevant path for shorter-service Chapter 61 retirees whose condition is combat-related. See our full [military retirement vs VA disability](/compare/military-retirement-vs-va-disability/) breakdown for how CRDP and CRSC each work.",
+      },
+      {
+        heading: "Regular retirement vs Chapter 61: which one applies to you",
+        content:
+          "You don't get to pick between regular retirement and Chapter 61 — the Physical Evaluation Board's finding determines it. If you complete 20 years of service without a disqualifying condition, you retire the standard way and the [military retirement calculator](/retirement/military-retirement-calculator/) projects your TSP and pension directly.\n\nIf a medical board finds you unfit before then, Chapter 61 is what gets you to retired-pay status early, computed under whichever formula pays more. Either way, the underlying pension math uses the same 2.0%/2.5% multiplier and High-3 average — only the eligibility path and, for Chapter 61, the disability-percentage alternative differ.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What disability rating do I need to qualify for Chapter 61 medical retirement?",
+        answer:
+          "If you have fewer than 20 years of service, you need a disability rating of 30% or higher to qualify for Chapter 61 retirement rather than a one-time severance payment. If you already have 20 or more years of service, retirement is recommended regardless of your disability rating.",
+      },
+      {
+        question: "What's the difference between TDRL and PDRL?",
+        answer:
+          "TDRL (Temporary Disability Retired List) is for conditions that haven't stabilized enough for a final rating; it's re-evaluated periodically for up to 5 years, and pay uses a minimum 50% disability rating for the percentage-based computation method regardless of the member's actual rating. PDRL (Permanent Disability Retired List) is the final, stable status once the condition is fully rated, with no re-evaluation and no 50% floor.",
+      },
+      {
+        question: "Does Chapter 61 retirement pay more or less than regular retirement?",
+        answer:
+          "It depends on the individual case. Chapter 61 pay is computed both ways — years of service and disability percentage — and DFAS pays whichever produces the higher amount. A short-service member with a high disability rating can end up with a larger Chapter 61 pension than the years-of-service formula alone would produce; a long-service member with a low rating typically does better under the years-of-service method.",
+      },
+      {
+        question: "Do Chapter 61 retirees also get VA disability compensation?",
+        answer:
+          "Yes, Chapter 61 retirees can receive VA disability compensation alongside their retired pay, subject to the same offset rules as other retirees. The key difference: Concurrent Retirement and Disability Pay (CRDP), which restores full concurrent receipt, still requires 20 or more years of creditable service even for a Chapter 61 retiree. Shorter-service Chapter 61 retirees with a combat-related disability may qualify for Combat-Related Special Compensation (CRSC) instead, which has no years-of-service requirement.",
+      },
+      {
+        question: "Can I use the military retirement calculator for a Chapter 61 estimate?",
+        answer:
+          "The [military retirement calculator](/retirement/military-retirement-calculator/) projects TSP growth and the standard years-of-service pension formula. For a Chapter 61 estimate, compute that same years-of-service figure, then separately compute the disability-percentage figure (your rating, or 50% minimum while on TDRL, times your High-3 average), and compare the two — DFAS pays whichever is higher.",
+      },
+    ],
+    sources: [
+      { label: "DFAS — Qualifying for a Disability Retirement", url: "https://www.dfas.mil/RetiredMilitary/disability/disability/" },
+      { label: "DFAS — Concurrent Retirement and Disability Pay (CRDP)", url: "https://www.dfas.mil/RetiredMilitary/disability/crdp/" },
+      { label: "VA — Disability Compensation", url: "https://www.va.gov/disability/" },
+    ],
+    relatedComparisons: ["military-retirement-vs-va-disability"],
+    calculatorLinks: [
+      { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

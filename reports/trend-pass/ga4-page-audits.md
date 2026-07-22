@@ -46,3 +46,4 @@
 | /guides/custodial-roth-ira-for-kids/ | 2026-07-18 | 4 | 0/1/1/0/0 | 0 |
 | /roundup/best-retirement-accounts-for-self-employed/ | 2026-07-18 | 1 | 0/0/0/0/0 | 0 |
 | / | 2026-07-21 | 1 | 0/0/0/0/0 | 0 |
+| /retirement/military-retirement-calculator/ | 2026-07-22 | 1 | 0/2/3/0/0 | 0 |

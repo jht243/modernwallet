@@ -504,6 +504,21 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         answer:
           "No — the High-3 and BRS pension formulas are set by federal law and DoD-wide policy, so the math is identical whether you served in the Army, Navy, Air Force, Marine Corps, or Space Force. What differs is the path to eligibility: active-duty members in any branch can retire after 20 years of active service, while National Guard and Reserve members generally need 20 'good years' — each requiring at least 50 retirement points — and typically can't start drawing retired pay until age 60, though qualifying active-duty mobilizations can lower that age. Whichever branch you served in, DFAS (the Defense Finance and Accounting Service) is the single agency that calculates and issues your monthly retired pay, not your individual service. VA disability compensation is a separate benefit administered by the Department of Veterans Affairs and can be received alongside military retired pay, subject to offset rules like Concurrent Retirement and Disability Pay (CRDP).",
       },
+      {
+        question: "Is military retirement pay taxable?",
+        answer:
+          "Yes — military retired pay is taxable as ordinary federal income, reported each year on a 1099-R from DFAS, the same as any other pension. VA disability compensation is different: it's entirely tax-free at the federal level and isn't reported on that 1099-R. State treatment of retired pay varies widely — most states either have no state income tax at all or fully exempt military retirement pay, while a small number, including California, still tax it in full. Check your specific state's current rules before assuming your pension is state-tax-free. See our [military retirement vs VA disability](/compare/military-retirement-vs-va-disability/) comparison for how the VA-disability side interacts with your retired pay.",
+      },
+      {
+        question: "How does military retirement work for National Guard and Reserve members?",
+        answer:
+          "National Guard and Reserve retirement — officially non-regular retirement — is points-based rather than a straight count of active-service years. You need 20 'good years,' and a good year requires at least 50 retirement points, earned through roughly 15 automatic membership points plus 1 point per 4-hour drill period and 1 point per day of active duty or annual training. Guard and Reserve retirees generally can't draw retired pay until age 60, though DFAS's Reduced Age Retirement rule can lower that floor to as young as age 50 for members with qualifying periods of active duty. The pension still uses the same 2.0% (BRS) or 2.5% (legacy) multiplier applied to a years-of-service figure derived from your total points, times your High-3 average.",
+      },
+      {
+        question: "How is military retirement pay divided in a divorce?",
+        answer:
+          "The [Uniformed Services Former Spouses' Protection Act (USFSPA)](https://www.dfas.mil/Garnishment/usfspa/legal/) permits — but doesn't require — state courts to treat military retired pay as marital property that can be divided in a divorce; the actual formula and percentage come from state law, not federal law. If the marriage overlapped at least 10 years of the member's creditable service (the '10/10 rule'), DFAS can pay the former spouse's court-awarded share directly, rather than requiring the service member to pay it themselves. Direct payments are capped at 50% of disposable retired pay, or up to 65% when combined with alimony or child-support garnishments. VA disability compensation, by contrast, generally cannot be divided as marital property.",
+      },
     ],
     sources: [
       {
