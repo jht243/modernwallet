@@ -2673,6 +2673,182 @@ export const GUIDES: Guide[] = [
   ],
 },
 
+  // -- keyword-gap-pass 2026-07-22: retirement-calculator-spreadsheet-template --
+  {
+    slug: "retirement-calculator-spreadsheet-template",
+    title: "Retirement Calculator Spreadsheet Template (Google Sheets)",
+    metaDescription:
+      "Build a retirement calculator spreadsheet template in Google Sheets or Excel. Copy the compound growth and safe withdrawal rate formulas step by step.",
+    h1: "Build Your Own Retirement Calculator Spreadsheet Template",
+    cardBlurb: "Copy these compound growth and withdrawal formulas into Google Sheets or Excel to build your own retirement projection.",
+    intro:
+      "This retirement calculator spreadsheet template teaches you to build your own retirement projection by hand. You will copy real formulas into Google Sheets or Excel, cell by cell. Each formula uses compound growth to project your balance and a safe withdrawal rate to estimate retirement income. Prefer not to build one yourself? Our free [retirement calculator](/retirement/) runs the same math instantly.",
+    sections: [
+      { heading: "Why build your own spreadsheet", body: "A spreadsheet you build yourself shows every assumption in plain view. You can see exactly how a change in your contribution or return rate moves your final number.\n\nThis matters because online calculators often hide their formulas behind a single result box. A spreadsheet you control lets you test your own what-if scenarios for years to come.\n\nYou only need two things to start: Google Sheets or Microsoft Excel, and about 15 minutes." },
+      { heading: "Set up your five input columns", body: "Open a blank sheet and create five column headers in row 1: Year, Starting Balance, Contribution, Growth, and Ending Balance.\n\nIn cell B2, type your current retirement savings balance, for example 50000. In cell C2, type the dollar amount you plan to add this year, for example 7000.\n\nPick a separate cell off to the side, say H1, and label it Annual Return. Enter your assumed yearly growth rate as a decimal, such as 0.07 for 7%. You will reference this one cell in every row, so you can change your assumption once and watch the whole sheet update." },
+      { heading: "The compound growth formula, cell by cell", body: "In cell D2, type the formula =B2*$H$1. This multiplies your starting balance by your assumed return, giving you that year's growth in dollars.\n\nIn cell E2, type =B2+C2+D2. This adds your starting balance, your contribution, and the growth to get your ending balance for the year.\n\nIn cell B3, type =E2. This carries last year's ending balance forward as next year's starting balance. Now copy that formula pattern down as many rows as years until retirement." },
+      { heading: "Add contribution growth and check your total", body: "Real contributions usually rise over time with raises. In column C, you can increase the value slightly each year, for example multiplying the prior year's contribution by 1.03 for a 3% raise.\n\nAfter you fill in every row through your retirement year, the Ending Balance in your final row is your projected nest egg. This single cell answers 'how much will I have at retirement.'\n\nDouble-check the math with the built-in [FV function](https://support.google.com/docs/answer/3093224) in Google Sheets, which calculates the same growth in one formula: =FV(rate, years, -contribution, -starting_balance)." },
+      { heading: "The safe withdrawal rate formula", body: "Once you have a projected balance, the next question is how much you can safely spend each year in retirement. A commonly cited starting point is the 4% rule, developed by financial planner [William Bengen](https://www.bengenfs.com/the-4-percent-rule/) in 1994.\n\nIn a new cell, label it Annual Retirement Income and enter the formula =FinalBalance*0.04, replacing FinalBalance with the cell reference of your last row's Ending Balance. This estimates a first-year withdrawal amount you then adjust for inflation in later years.\n\nBengen's own later research suggests some retirees could safely withdraw a bit more, depending on the mix of stocks and bonds and how long the money needs to last. Treat 4% as a reasonable starting assumption, not a guarantee." },
+      { heading: "When to use the real calculator instead", body: "A spreadsheet is great for learning the mechanics, but it gets tedious once you want to test Social Security timing, tax brackets, or required minimum distributions.\n\nOur free [retirement calculator](/retirement/) runs this same compound growth math instantly, plus models withdrawals, inflation, and Social Security together. If you already have a savings target in mind, the [retirement savings calculator](/retirement/retirement-savings-calculator/) lets you test that specific number.\n\nMany people use both: the spreadsheet to understand the mechanics, and the calculator to run the full plan." },
+    ],
+    tools: [
+      { href: "/retirement/", label: "Retirement calculator" },
+      { href: "/retirement/retirement-savings-calculator/", label: "Retirement savings" },
+    ],
+    faqs: [
+      { question: "What formula calculates compound growth in a spreadsheet?", answer: "Use =StartingBalance*(1+Rate) for one year of growth, then carry the result forward as next year's starting balance. Google Sheets and Excel also both support the built-in FV function, =FV(rate, nper, pmt, pv), to calculate a future value directly from your inputs." },
+      { question: "How do I add my own contributions to the formula?", answer: "Add your contribution as a separate line item each year: Ending Balance = Starting Balance + Contribution + Growth. Carry that ending balance forward as next year's starting balance, then repeat the formula down each row until your retirement year." },
+      { question: "What is the safe withdrawal rate formula?", answer: "Multiply your final projected balance by a withdrawal percentage, commonly 4%, to estimate a sustainable first-year retirement income. The formula is =FinalBalance*0.04. Adjust that dollar amount for inflation in each following year." },
+      { question: "Can I build this template in Excel instead of Google Sheets?", answer: "Yes. The FV function and basic arithmetic formulas in this guide work the same way in Microsoft Excel and Google Sheets. Column and cell references may shift depending on where you place your inputs, but the formulas themselves do not change." },
+      { question: "Should I just use an online retirement calculator instead?", answer: "A calculator is faster once you understand the concept, since it runs the same compound growth and withdrawal math automatically. Build the spreadsheet first to learn how the numbers connect, then switch to a full calculator to model taxes, Social Security, and inflation together." },
+    ],
+    sources: [
+      { label: "Google Docs Editors Help — FV function", url: "https://support.google.com/docs/answer/3093224" },
+      { label: "Bengen Financial Services — The 4% Rule", url: "https://www.bengenfs.com/the-4-percent-rule/" },
+    ],
+  },
+
+  // -- keyword-gap-pass 2026-07-22: bitcoin-retirement-calculator-considerations --
+  {
+    slug: "bitcoin-retirement-calculator-considerations",
+    title: "Bitcoin Retirement Calculator: Risks to Know First",
+    metaDescription:
+      "Thinking about a bitcoin retirement calculator? See the real risks: volatility, no yield, crypto tax rules, and why diversification still matters.",
+    h1: "Bitcoin Retirement Calculator: What to Know Before You Rely on Crypto",
+    cardBlurb: "The real risks of funding retirement with bitcoin or crypto — volatility, taxes, and no guaranteed yield.",
+    intro:
+      "A bitcoin retirement calculator cannot promise you a number, because bitcoin's price swings far more than stocks or bonds. This guide is not investment advice and makes no price prediction. Instead, it walks through the real risks of leaning on crypto for retirement: volatility, the lack of built-in income, how the IRS taxes your gains, and why spreading your money across assets still matters. Our free [retirement calculator](/retirement/) and [FIRE calculator](/retirement/fire-calculator/) can model a retirement plan built around traditional, diversified investments.",
+    sections: [
+      { heading: "Bitcoin is far more volatile than stocks", body: "Bitcoin's price swings are much larger than the stock market's, on average. Research from [Fidelity Digital Assets](https://www.fidelitydigitalassets.com/research-and-insights/closer-look-bitcoins-volatility) has found bitcoin's annualized volatility has historically run several times higher than the S&P 500's.\n\nThat volatility has come down somewhat since bitcoin's early years, but it still moves far more than a diversified stock and bond portfolio. A retirement plan built on a volatile single asset can lose a large share of its value in a short window.\n\nIf that drop happens right before or during retirement, the damage can be permanent, since you may need to sell at the bottom to cover living expenses." },
+      { heading: "Bitcoin pays no yield unless you take on more risk", body: "Plain bitcoin held in a wallet earns no interest, dividend, or rent. Unlike a bond or a dividend stock, it produces no income on its own.\n\nSome investors turn to staking other cryptocurrencies, or to lending platforms, to earn a yield on crypto holdings. Bitcoin itself does not natively support staking, and third-party lending and staking products carry their own risk, including platform failures and lockup periods that can trap your money exactly when you need it.\n\nA retirement plan generally needs some assets built to produce income. Weigh how much of your plan, if any, should depend on an asset that only pays off through price appreciation." },
+      { heading: "The IRS taxes crypto gains, and every sale counts", body: "The [IRS](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions) treats cryptocurrency as property, not currency, for federal tax purposes. That means selling, trading, or spending bitcoin is a taxable event, and you owe capital gains tax on any increase in value.\n\nHold bitcoin for a year or less before selling, and the gain is taxed at your ordinary income rate. Hold it longer than a year, and it qualifies for lower long-term capital gains rates instead.\n\nEvery trade of one cryptocurrency for another also counts as a sale for tax purposes. That is a different rule than a traditional 401(k) or IRA, where trades inside the account are not taxed until you withdraw." },
+      { heading: "Sequence-of-returns risk gets worse with volatile assets", body: "Sequence-of-returns risk is the danger that a few bad years, right when you start withdrawing money, permanently shrink how long your savings last. The same average return, in a different order, can produce very different outcomes.\n\nBecause bitcoin's price swings are larger, this risk is amplified for anyone withdrawing from a crypto-heavy portfolio. A sharp drop in year one of retirement, combined with withdrawals for living expenses, can lock in losses you never recover from.\n\nThis risk is one reason many retirement plans shift toward more stable assets as retirement approaches, rather than holding a volatile asset through the entire drawdown period." },
+      { heading: "Diversification still matters, even with crypto", body: "The core idea behind diversification is spreading money across assets that do not all move together. A retirement plan concentrated in one asset, crypto or otherwise, carries more risk than one spread across stocks, bonds, and cash.\n\nThe [SEC's Office of Investor Education](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/crypto-asset-securities) warns that crypto asset investments can be exceptionally volatile and that investors should only risk money they can afford to lose entirely.\n\nIf you want crypto exposure in a retirement plan, treat it as one small slice of a larger, diversified portfolio, not the plan itself." },
+    ],
+    tools: [
+      { href: "/retirement/", label: "Retirement calculator" },
+      { href: "/retirement/fire-calculator/", label: "FIRE calculator" },
+    ],
+    faqs: [
+      { question: "Can I retire on bitcoin alone?", answer: "Relying on a single volatile asset for your entire retirement carries significant risk. Bitcoin has no guaranteed yield and can lose a large share of its value quickly. Most retirement plans work better when spread across many types of assets, with crypto as at most a small slice." },
+      { question: "How is bitcoin taxed when I sell it in retirement?", answer: "The IRS treats bitcoin as property, so selling it is a taxable event. Gains on bitcoin held a year or less are taxed at your ordinary income rate; gains on bitcoin held longer than a year qualify for lower long-term capital gains rates." },
+      { question: "Does bitcoin pay any income like dividends or interest?", answer: "No. Bitcoin held in a wallet produces no interest, dividend, or rental income on its own. Any yield comes only from third-party staking or lending platforms, which carry additional risks like platform failure." },
+      { question: "What is sequence-of-returns risk with crypto?", answer: "It is the risk that poor returns early in retirement, combined with withdrawals, permanently shrink your savings. Because crypto is more volatile than stocks, a bad stretch right when you start withdrawing can do outsized damage to a crypto-heavy retirement plan." },
+      { question: "Is this guide investment advice or a price prediction?", answer: "No. This guide explains risks and considerations only. It makes no prediction about bitcoin's future price and is not personalized investment, tax, or legal advice. Talk to a qualified financial advisor before making retirement decisions involving crypto." },
+    ],
+    sources: [
+      { label: "IRS — Frequently Asked Questions on Virtual Currency Transactions", url: "https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions" },
+      { label: "SEC Investor.gov — Crypto Asset Securities Investor Alert", url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/crypto-asset-securities" },
+      { label: "Fidelity Digital Assets — A Closer Look at Bitcoin's Volatility", url: "https://www.fidelitydigitalassets.com/research-and-insights/closer-look-bitcoins-volatility" },
+    ],
+  },
+
+  // -- keyword-gap-pass 2026-07-22: international-retirement-calculators --
+  {
+    slug: "international-retirement-calculators",
+    title: "International Retirement Calculators: A Country Guide",
+    metaDescription:
+      "Looking for an international retirement calculator? Ours covers U.S. rules only — find your country's own official pension planning tool instead.",
+    h1: "International Retirement Calculators: Find Your Country's Official Tool",
+    cardBlurb: "Our calculator models U.S. rules. Here's where to find official retirement resources for the UK, Canada, India, Australia, and New Zealand.",
+    intro:
+      "Our [retirement calculator](/retirement/) is built around U.S. tax law and Social Security rules, so it will not give you an accurate answer if you live outside the United States. Each country runs its own pension system, with its own rules, ages, and formulas. Below are the official government resources for the UK, Canada, India, Australia, and New Zealand, so you land somewhere genuinely useful.",
+    sections: [
+      { heading: "Why a U.S. retirement calculator doesn't work abroad", body: "Retirement calculators are built around a specific country's tax code, retirement accounts, and government benefit formulas. Ours models U.S. 401(k) and IRA rules, U.S. federal tax brackets, and the Social Security benefit formula.\n\nNone of those rules apply outside the United States. A UK reader has no 401(k) or Social Security; they have workplace pensions and the State Pension instead. Using a U.S. tool with non-U.S. numbers gives you a meaningless result." },
+      { heading: "United Kingdom: State Pension and workplace pensions", body: "The UK's government-run retirement benefit is the [State Pension](https://www.gov.uk/state-pension-age), administered by the Department for Work and Pensions. Your State Pension age depends on your date of birth, and your amount depends on your National Insurance record.\n\nCheck your own State Pension age and get a forecast directly on GOV.UK before you make any retirement plans." },
+      { heading: "Canada: CPP and Old Age Security", body: "Canada's public retirement system has two main parts, both explained on [Canada.ca](https://www.canada.ca/en/services/benefits/publicpensions.html): the Canada Pension Plan (CPP), funded by your own contributions, and Old Age Security (OAS), funded through general tax revenue.\n\nEligibility, ages, and amounts for both differ from anything in the U.S. system. Use the official Canada.ca public pensions page to check your own numbers." },
+      { heading: "India: Employees' Provident Fund", body: "India's main retirement savings system for salaried workers is the Employees' Provident Fund, run by the [Employees' Provident Fund Organisation](https://www.epfindia.gov.in/site_en/) (EPFO), a Government of India agency.\n\nEPF works through mandatory employer and employee contributions to a member account, with its own withdrawal and pension rules. Check your balance and rules through EPFO's official member portal, not a third-party site." },
+      { heading: "Australia and New Zealand: superannuation systems", body: "Australia's retirement system is built on superannuation, a mandatory employer contribution to a private super fund. [Services Australia](https://www.servicesaustralia.gov.au/superannuation) explains how super interacts with the government Age Pension.\n\nNew Zealand runs a different system called NZ Superannuation, a universal government payment available from age 65 regardless of income or assets. Check your own eligibility on [Work and Income](https://www.workandincome.govt.nz/eligibility/seniors/superannuation/index.html), the New Zealand government agency that administers it." },
+    ],
+    tools: [
+      { href: "/retirement/", label: "U.S. retirement calculator" },
+    ],
+    faqs: [
+      { question: "Does ModernWallet's retirement calculator work outside the United States?", answer: "No. Our retirement calculator is built around U.S. tax brackets, 401(k) and IRA rules, and the Social Security benefit formula. It will not give an accurate projection for a non-U.S. pension or tax system." },
+      { question: "Where can I find my country's official retirement calculator?", answer: "Start with your own government's retirement or pensions agency. This guide links directly to the official UK, Canadian, Indian, Australian, and New Zealand government pages that explain each country's system." },
+      { question: "What is the UK equivalent of U.S. Social Security?", answer: "The UK's government-run retirement benefit is the State Pension, administered by the Department for Work and Pensions. Your amount depends on your National Insurance record, and your State Pension age depends on your date of birth." },
+      { question: "What is superannuation?", answer: "Superannuation is Australia's mandatory employer-funded retirement savings system, similar in spirit to a 401(k) but required by law. New Zealand uses a different, separate system called NZ Superannuation, a universal government pension paid from age 65." },
+      { question: "Is India's EPF the same as a U.S. 401(k)?", answer: "They are similar in concept but run under very different rules. The Employees' Provident Fund is a mandatory employer-and-employee-funded retirement account administered by India's EPFO, a government agency, with its own contribution and withdrawal rules distinct from any U.S. plan." },
+    ],
+    sources: [
+      { label: "GOV.UK — Check your State Pension age", url: "https://www.gov.uk/state-pension-age" },
+      { label: "Canada.ca — Public pensions", url: "https://www.canada.ca/en/services/benefits/publicpensions.html" },
+      { label: "EPFO — Employees' Provident Fund Organisation", url: "https://www.epfindia.gov.in/site_en/" },
+      { label: "Services Australia — Superannuation", url: "https://www.servicesaustralia.gov.au/superannuation" },
+      { label: "Work and Income NZ — New Zealand Superannuation", url: "https://www.workandincome.govt.nz/eligibility/seniors/superannuation/index.html" },
+    ],
+  },
+
+  // -- keyword-gap-pass 2026-07-22: high-yield-savings-account-for-kids-and-teens --
+  {
+    slug: "high-yield-savings-account-for-kids-and-teens",
+    title: "High-Yield Savings Accounts for Kids and Teens",
+    metaDescription:
+      "How to open a high-yield savings account for kids, teens, and college students. Custodial rules, joint accounts, and age limits explained.",
+    h1: "High-Yield Savings Accounts for Kids, Teens, and College Students",
+    cardBlurb: "Custodial rules, joint accounts, and age limits for opening a HYSA for a child, teen, college student, or small business.",
+    intro:
+      "A high-yield savings account for kids works differently than one for an adult, mainly because of one rule: banks require an adult owner until the child turns 18. This guide walks through custodial and joint account options for kids, teens, college students, and even small businesses. Once you understand the age rules, you can compare real rates with our [high-yield savings calculator](/investing/high-yield-savings-calculator/).",
+    sections: [
+      { heading: "The core rule: minors need an adult on the account", body: "Most banks require you to be 18 to open a savings account entirely on your own. Below that age, a child's high-yield savings account must be a joint account, with a parent or legal guardian as a co-owner.\n\nThe [FDIC's Youth Banking Resource Center](https://www.fdic.gov/consumer-resource-center/youth-banking-resource-center) confirms that banks typically structure these accounts with an adult as a joint owner or custodian until the child turns 18, since a minor generally cannot sign a binding account agreement alone.\n\nThe parent or guardian on a joint account typically keeps full access and control, while the child builds a savings habit and, at many banks, gets a linked debit card with adult oversight." },
+      { heading: "Custodial accounts: UTMA and UGMA", body: "A custodial account, opened under your state's Uniform Transfers to Minors Act (UTMA) or Uniform Gifts to Minors Act (UGMA), is a different structure than a simple joint savings account. The money legally belongs to the child, but a custodian, usually a parent, manages it until the child reaches the account's transfer age.\n\nThat transfer age is set by state law and is typically 18 to 21, though a handful of states allow it to run later. Once a child reaches that age, they gain full control of the account, so custodial accounts work best when you're comfortable handing over full control at that age.\n\nInterest earned in a custodial account is the child's income for tax purposes. Under [2026 IRS rules](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill), the first $1,350 of a child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and amounts above $2,700 can be taxed at the parent's rate under the kiddie tax. Most kids' HYSA balances stay well under that threshold." },
+      { heading: "Teens: joint accounts that build independence", body: "For teens roughly 13 to 17, many banks and credit unions offer a joint high-yield savings account designed to teach money management. The parent co-owns the account, but the teen usually gets their own login and, sometimes, a debit card tied to a linked checking account.\n\nThis setup lets a teen watch their own balance grow while a parent retains oversight and can step in if needed. When the teen turns 18, most banks convert the account to an individual account in their name only, or the teen opens a new one and transfers the balance." },
+      { heading: "College students: the transition to a solo account", body: "Once a student turns 18, they can open a high-yield savings account entirely in their own name, no parent required. Many banks offer student-specific savings or checking bundles with fee waivers while enrolled in school.\n\nA HYSA is a good home for a college student's emergency cushion or savings toward summer expenses, since the money stays liquid and earns a competitive rate. Compare current rates and see how a starting balance grows over a semester or a year with our [high-yield savings calculator](/investing/high-yield-savings-calculator/)." },
+      { heading: "Small businesses: a different account type entirely", body: "A high-yield savings account for a small business is a separate product from a personal or custodial account, and it isn't tied to age rules at all. Business owners open these under the business's legal name and tax ID, usually an EIN, rather than a Social Security number.\n\nBusiness savings accounts sometimes carry lower rates or added fees compared with personal HYSAs, so compare terms carefully before moving business cash into one." },
+      { heading: "Which account should you open?", body: "Match the account to the age and goal. A young child usually needs a joint savings account with a parent as co-owner, or a custodial UTMA/UGMA account if you want the money legally titled to the child.\n\nA teen benefits from a joint teen-specific savings account that builds financial habits before adulthood. A college student, once 18, can open a standard HYSA solo.\n\nIf you're weighing a savings account against an investment account for a child's longer-term goals, see our guide on the [best investment account for kids](/guides/best-investment-account-for-kids/) for how a HYSA fits alongside options like a 529 or custodial brokerage account." },
+    ],
+    tools: [
+      { href: "/investing/high-yield-savings-calculator/", label: "High-yield savings" },
+    ],
+    faqs: [
+      { question: "What age can a child open a high-yield savings account?", answer: "Most banks let anyone 18 or older open an individual high-yield savings account. Below 18, a child's account must be joint with a parent or legal guardian, or structured as a custodial UTMA/UGMA account managed by an adult." },
+      { question: "What's the difference between a joint account and a custodial account for a kid?", answer: "A joint account is co-owned by a parent and child, with the parent typically retaining full access. A custodial UTMA or UGMA account legally belongs to the child from the start, with a parent managing it as custodian until the child reaches the state's transfer age, usually 18 to 21." },
+      { question: "Is interest in a kid's savings account taxable?", answer: "Yes. Interest earned in a child's account is generally the child's taxable income. Under 2026 IRS rules, the first $1,350 of a child's unearned income is tax-free, the next $1,350 is taxed at the child's rate, and amounts above $2,700 can be taxed at the parent's rate under the kiddie tax." },
+      { question: "Can a college student open their own high-yield savings account?", answer: "Yes. Once a student turns 18, they can open an individual high-yield savings account with no parent required. Many banks offer student account bundles with fee waivers while the student is enrolled in school." },
+      { question: "Can a small business open a high-yield savings account?", answer: "Yes. Business high-yield savings accounts are opened under the business's legal name and EIN rather than an individual's Social Security number, and they aren't governed by the age rules that apply to personal or custodial accounts." },
+    ],
+    sources: [
+      { label: "IRS — Tax inflation adjustments for tax year 2026", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
+      { label: "FDIC — Youth Banking Resource Center", url: "https://www.fdic.gov/consumer-resource-center/youth-banking-resource-center" },
+    ],
+  },
+
+  // -- keyword-gap-pass 2026-07-22: international-high-yield-savings-accounts --
+  {
+    slug: "international-high-yield-savings-accounts",
+    title: "International High-Yield Savings Accounts: What to Know",
+    metaDescription:
+      "Our high-yield savings guides cover FDIC-insured U.S. accounts. International savers: find your own country's official deposit protection scheme here.",
+    h1: "International High-Yield Savings Accounts: Find Your Own Deposit Protection",
+    cardBlurb: "Our HYSA content covers FDIC-insured U.S. accounts. Here's where non-U.S. savers can check their own country's deposit protection scheme.",
+    intro:
+      "ModernWallet's high-yield savings account content is built around U.S., [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured banks. If you live outside the United States, FDIC insurance does not apply to your deposits at all, even if a foreign bank shares a name or brand with a U.S. one. This guide points you toward your own country's official deposit protection scheme instead.",
+    sections: [
+      { heading: "Why FDIC insurance is a U.S.-only protection", body: "FDIC insurance covers deposits at FDIC-insured U.S. banks up to $250,000 per depositor, per bank, for each account ownership category. It is a U.S. federal program and does not extend to banks headquartered or operating outside the United States.\n\nEvery country with a modern banking system runs its own, separate deposit protection scheme, usually through its central bank or a dedicated deposit insurance agency. The coverage limits, currencies, and rules are set independently by each country." },
+      { heading: "United Kingdom: the FSCS", body: "UK depositors are protected by the [Financial Services Compensation Scheme](https://www.fscs.org.uk/what-we-cover/banks-building-societies-credit-unions/) (FSCS), which covers eligible deposits at UK-authorised banks, building societies, and credit unions. As of December 1, 2025, the FSCS protection limit is £120,000 per person, per authorised institution, up from the prior £85,000 limit.\n\nCheck the FSCS's own site to confirm whether your specific bank is covered, since some UK-facing brands are actually operated under a shared banking license." },
+      { heading: "Zambia and Zimbabwe: newer deposit protection schemes", body: "Zambia introduced the Zambia Deposit Insurance Scheme in 2025, run by the [Bank of Zambia](https://www.boz.zm/Public_Notice_Deposit_Insurance_Scheme.pdf), the country's central bank. It covers depositors at licensed banks and deposit-taking financial institutions up to K250,000 per depositor, per institution.\n\nZimbabwe's [Deposit Protection Corporation](https://www.dpcorp.co.zw/what-is-deposit-protection/) (DPC) insures deposits at contributing banks. As of July 2025, coverage runs up to US$3,000 per depositor for banks and US$2,000 for deposit-taking microfinance institutions. Confirm current limits directly with each institution, since these schemes are relatively new and limits can change." },
+      { heading: "New Zealand: the Depositor Compensation Scheme", body: "New Zealand's Depositor Compensation Scheme (DCS), run by the [Reserve Bank of New Zealand](https://www.rbnz.govt.nz/dcs), took effect on July 1, 2025. It covers up to NZ$100,000 per depositor, per covered institution, across banks, building societies, credit unions, and some finance companies.\n\nAll eligible deposits are automatically covered, so New Zealand savers don't need to apply or opt in." },
+      { heading: "What to do if your country isn't listed here", body: "Deposit protection schemes exist in most developed and many developing economies, even when they're not covered in this guide. Search for your own central bank's website and look for terms like 'deposit insurance' or 'deposit protection' to find the official page.\n\nIf you cannot verify an official deposit protection scheme for your country, treat that as important information on its own. A bank account without any deposit protection carries real risk that a U.S. HYSA does not." },
+    ],
+    tools: [
+      { href: "/investing/high-yield-savings-calculator/", label: "U.S. high-yield savings calculator" },
+    ],
+    faqs: [
+      { question: "Does FDIC insurance cover my savings account outside the United States?", answer: "No. FDIC insurance only applies to deposits at FDIC-insured banks operating in the United States. If you bank outside the U.S., your deposits are protected, if at all, only by your own country's deposit protection scheme." },
+      { question: "What is the UK equivalent of FDIC insurance?", answer: "The UK's Financial Services Compensation Scheme (FSCS) protects eligible deposits at UK-authorised banks, building societies, and credit unions. As of December 1, 2025, the FSCS limit is £120,000 per person, per institution." },
+      { question: "Are savings accounts insured in Zambia and Zimbabwe?", answer: "Yes. Zambia's Zambia Deposit Insurance Scheme, run by the Bank of Zambia, covers up to K250,000 per depositor. Zimbabwe's Deposit Protection Corporation covers up to US$3,000 per depositor at banks, as of mid-2025." },
+      { question: "What protects savings deposits in New Zealand?", answer: "New Zealand's Depositor Compensation Scheme, run by the Reserve Bank of New Zealand, covers up to NZ$100,000 per depositor, per covered institution. It took effect on July 1, 2025, and covers eligible deposits automatically." },
+      { question: "What if I can't find my country's deposit protection scheme?", answer: "Search your central bank's official website for terms like 'deposit insurance' or 'deposit protection.' If you can't verify a scheme exists, treat the lack of protection as a real risk when deciding where to keep savings." },
+    ],
+    sources: [
+      { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+      { label: "FSCS — What We Cover: Banks, Building Societies, Credit Unions", url: "https://www.fscs.org.uk/what-we-cover/banks-building-societies-credit-unions/" },
+      { label: "Bank of Zambia — Public Notice: Deposit Insurance Scheme", url: "https://www.boz.zm/Public_Notice_Deposit_Insurance_Scheme.pdf" },
+      { label: "Deposit Protection Corporation Zimbabwe", url: "https://www.dpcorp.co.zw/what-is-deposit-protection/" },
+      { label: "Reserve Bank of New Zealand — Depositor Compensation Scheme", url: "https://www.rbnz.govt.nz/dcs" },
+    ],
+  },
+
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

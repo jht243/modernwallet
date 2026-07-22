@@ -263,6 +263,26 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         answer:
           "Yes, but carefully. If you retire at 40, Social Security (SSA) benefits may be decades away and your benefit will be lower because of fewer earning years on record. Use SSA's online estimator for your projected benefit, then treat it as a future income offset that reduces the portfolio withdrawals you need after age 62 or 67.",
       },
+      {
+        question: "Is the 4% rule still valid in 2026?",
+        answer:
+          "It depends on whose research you ask, and neither side says the original number is wrong outright. William Bengen, who created the 4% rule from historical U.S. market returns, has since revised his own view upward — in his 2025 book [A Richer Retirement](https://www.amazon.com/Richer-Retirement-Supercharging-Spend-Enjoy/dp/1394343175), he argues a 'SAFEMAX' of roughly 4.7% to 5.5% is defensible for many of today's retirees. Morningstar's research points the other way: its [State of Retirement Income](https://www.morningstar.com/retirement/morningstars-retirement-income-research-finding-your-safe-withdrawal-rate) report puts a forward-looking 2026 safe withdrawal rate at 3.9% for a 30-year, 90%-confidence retirement with a 30-50% stock allocation — up slightly from 3.7% a year earlier, but still under 4%. The gap comes down to methodology: Bengen leans on historical returns, Morningstar models forward-looking capital-market assumptions. In practice, 4% remains a reasonable starting point for this calculator's projections, but treat it as an adjustable planning assumption, not a fixed law — your own safe rate depends on your asset mix, how flexible your spending can be in a down market, and how long your money needs to last.",
+      },
+      {
+        question: "What is the 'retirement red zone'?",
+        answer:
+          "The retirement red zone is the roughly five years before and five years after your retirement date — the window when sequence-of-returns risk does the most damage, because your portfolio is at or near its largest size right as you begin withdrawing from it. Prudential coined the term for this period, though the underlying math applies regardless of who names it. A market downturn hitting during the red zone forces you to sell more shares at depressed prices to fund the same withdrawal, permanently shrinking the portfolio in a way an identical downturn 15 years into retirement would not. Holding one to two years of spending in cash or short-term bonds, or trimming withdrawals in a down year, are the two most common ways retirees manage red-zone risk.",
+      },
+      {
+        question: "What is the rule of 70 for retirement?",
+        answer:
+          "The rule of 70 estimates how many years it takes inflation to cut your money's purchasing power in half: divide 70 by your expected annual inflation rate. At a typical 3% long-run inflation assumption, that's about 23 years — meaning a fixed income or a static spending target loses roughly half its real value over a typical 25-to-30-year retirement. It's the same style of shortcut as the more familiar rule of 72 used for investment doubling times, just applied to the opposite problem of money losing value rather than growing it. The takeaway for FIRE planning: recheck your FIRE number periodically and adjust your annual expenses for inflation, rather than treating either as fixed forever.",
+      },
+      {
+        question: "What does 'die with zero' mean, and how does it compare to a FIRE number?",
+        answer:
+          "'Die with zero' is a decumulation philosophy from Bill Perkins's book [Die With Zero](https://www.amazon.com/Die-Zero-Getting-Your-Money/dp/0358567092), built on the idea that money left unspent past the point where it could have funded meaningful life experiences is wasted potential, not prudence. Instead of growing a nest egg indefinitely, the framework argues for identifying your 'peak' net worth and then intentionally spending it down — including on experiences while you're still healthy enough to enjoy them — so little is left unspent at death. It's a philosophical counterpoint to FIRE's accumulation focus, not a competing formula: your FIRE number still tells you when you can stop earning, while die-with-zero is a lens for deciding how aggressively to spend that number down afterward. The two ideas can be combined — reach your FIRE number using the calculator above, then decide how much of a lifetime cushion you actually want left unspent.",
+      },
     ],
     sources: [
       {
@@ -272,6 +292,10 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         label: "IRS — Section 72(t): Substantially Equal Periodic Payments",
         url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments",
+      },
+      {
+        label: "Morningstar — Finding Your Safe Withdrawal Rate (State of Retirement Income)",
+        url: "https://www.morningstar.com/retirement/morningstars-retirement-income-research-finding-your-safe-withdrawal-rate",
       },
     ],
     toolHeading: "When will you hit your FIRE number?",

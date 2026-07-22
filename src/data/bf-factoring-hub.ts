@@ -65,6 +65,11 @@ export const FACTORING_HUB: CalculatorDef = {
       answer:
         "No. Factoring approval is based mainly on your customer's creditworthiness, not yours, since the factor is advancing against an invoice your customer owes. That makes it accessible to newer or lower-credit businesses that would not qualify for a traditional bank loan, as long as they bill creditworthy commercial or government customers. Your own credit history can still affect fee pricing, but it is rarely a disqualifying factor the way it is for a term loan.",
     },
+    {
+      question: "How do I record invoice factoring on my books?",
+      answer:
+        "It depends on whether your deal qualifies as a sale or a secured loan under GAAP. See our guide on [how to account for invoice factoring](/guides/how-to-account-for-invoice-factoring/) for the exact journal entries, the reserve and rebate treatment, and the balance-sheet impact of each case.",
+    },
   ],
 
   sources: [

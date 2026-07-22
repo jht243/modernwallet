@@ -34,7 +34,7 @@ export const BUSINESS_GUIDES: Guide[] = [
       {
         heading: "When invoice factoring is the right call",
         body:
-          "Invoice factoring fits businesses that invoice other companies and wait 30 to 90 days to get paid. You sell those unpaid invoices to a factor for most of their value up front. When your customer pays, you get the rest minus a factor fee.\n\nFactoring is cheaper than a merchant cash advance and nearly as fast. It also does not add debt, since you are selling an asset you already own. Your approval leans on your customers' credit, not just yours.\n\nRun your invoice amount and fee through our [invoice factoring calculator](/invoice-factoring/) to see your true cost. To weigh it head-to-head against an advance, read our [invoice factoring vs. merchant cash advance comparison](/compare/invoice-factoring-vs-merchant-cash-advance/).",
+          "Invoice factoring fits businesses that invoice other companies and wait 30 to 90 days to get paid. You sell those unpaid invoices to a factor for most of their value up front. When your customer pays, you get the rest minus a factor fee.\n\nFactoring is cheaper than a merchant cash advance and nearly as fast. It also does not add debt, since you are selling an asset you already own — as long as the deal qualifies as a sale under GAAP rather than a secured loan. Your approval leans on your customers' credit, not just yours.\n\nRun your invoice amount and fee through our [invoice factoring calculator](/invoice-factoring/) to see your true cost. To weigh it head-to-head against an advance, read our [invoice factoring vs. merchant cash advance comparison](/compare/invoice-factoring-vs-merchant-cash-advance/). If you need to book the deal on your own books, see our guide on [how to account for invoice factoring](/guides/how-to-account-for-invoice-factoring/).",
       },
       {
         heading: "When a merchant cash advance makes sense (and its true cost)",
@@ -168,6 +168,105 @@ export const BUSINESS_GUIDES: Guide[] = [
       {
         label: "U.S. Small Business Administration — Microloan Program",
         url: "https://www.sba.gov/funding-programs/loans/microloans",
+      },
+    ],
+  },
+
+  // Autocomplete pass (2026-07-22) — GAAP/ASC 860 treatment of invoice factoring. Primary source:
+  // FASB (ASC 860, Transfers and Servicing). Numbers match the factoring-fee-calculator spoke
+  // ($25,000 invoice, 90% advance, 3% fee, 30 days) for cross-site consistency.
+  {
+    slug: "how-to-account-for-invoice-factoring",
+    title: "How to Account for Invoice Factoring (GAAP Guide)",
+    metaDescription:
+      "Learn how to account for invoice factoring under GAAP: sale vs. loan treatment, journal entries, and balance-sheet impact, with a worked example.",
+    h1: "How to Account for Invoice Factoring Under GAAP",
+    cardBlurb:
+      "Sale or loan? The GAAP journal entries, reserve accounting, and balance-sheet treatment for factored invoices, with a worked example.",
+    intro:
+      "Invoice factoring changes your books differently depending on how the deal is written. A factoring deal is either a sale of your receivables or a secured loan under GAAP (Generally Accepted Accounting Principles). That choice drives every journal entry you make.\n\nThe [Financial Accounting Standards Board (FASB)](https://fasb.org/about-us/facts) sets this rule in [ASC 860](https://storage.fasb.org/ASU2009-16.pdf), the standard for transfers of financial assets. This guide shows the debit and credit entries for both cases. It also covers the reserve, the rebate, and a worked $25,000 invoice example.",
+    sections: [
+      {
+        heading: "Is invoice factoring a sale or a loan?",
+        body:
+          "Invoice factoring is either a sale of your receivables or a secured loan. GAAP decides which one applies. Under ASC 860, a transfer counts as a sale only if you give up control of the receivable.\n\nThree conditions decide that question. Your receivables must be legally separated from you, even if you go bankrupt. The buyer must also be free to pledge or sell them.\n\nYou must keep no real say over the receivable afterward, either. That is the third condition. All three must hold at once, not just one or two.\n\nIf all three conditions hold, you record the deal as a sale. You then remove the receivable from your books entirely. If even one condition fails, GAAP treats the whole deal as a secured borrowing instead.",
+      },
+      {
+        heading: "Why recourse and non-recourse matter, but aren't the whole test",
+        body:
+          "Recourse factoring means you must buy back an invoice if your customer never pays. Non-recourse factoring shifts that non-payment risk to the factor instead. This split matters, but it does not decide the accounting alone.\n\nA non-recourse deal usually clears the ASC 860 sale test. The factor carries the credit risk in that case. You keep no real stake in the invoice.\n\nA recourse deal can still count as a sale, though. That happens when your guarantee only covers fraud or a billing dispute. The accounting turns on the exact rights each side keeps.\n\nIt does not turn on the word \"recourse\" alone. Read your contract closely before you assume either treatment applies. When in doubt, ask your accountant to walk through the three conditions against your agreement.",
+      },
+      {
+        heading: "Journal entries when factoring qualifies as a sale",
+        body:
+          "Take a $25,000 invoice factored at a 90% advance rate, a 3% fee, and 30 days until payment. Your advance today is $22,500. The factor holds back a $2,500 reserve.\n\nAt the sale date, you debit cash for $22,500. You debit a \"due from factor\" asset for the $2,500 reserve. You credit accounts receivable for $25,000, and the invoice leaves your books.\n\nThe $750 factoring fee is booked right away, not when your customer pays. Debit factoring fee expense for $750, and credit due from factor for $750 as well.\n\nWhen your customer pays in 30 days, the factor sends your $1,750 rebate. Debit cash for $1,750 to record it. Credit due from factor for $1,750, which closes that account to zero.",
+      },
+      {
+        heading: "Journal entries when factoring is a secured borrowing",
+        body:
+          "Some deals fail the ASC 860 sale test, often due to a strong repurchase obligation. GAAP then treats the deal as a secured borrowing. The receivable never leaves your books, and the cash you get is a liability, not sale proceeds.\n\nUsing the same $25,000 invoice, you debit cash for $22,500. You debit due from factor for the $2,500 reserve. You credit a \"due to factor\" liability for $25,000, and accounts receivable stays untouched.\n\nWhen your customer pays, debit due to factor for $25,000 and credit accounts receivable for $25,000. Record the $750 fee as interest expense against the reserve. Then collect the $1,750 rebate in cash, just as in the sale example above.",
+      },
+      {
+        heading: "How the reserve and rebate get booked",
+        body:
+          "The reserve is the slice of your invoice the factor holds back until your customer pays. It belongs on your books as an asset, often called due from factor. In our example, that reserve starts at $2,500.\n\nWhen the customer pays, the factor keeps its fee out of the reserve first. It sends you the rest as a rebate, which is $1,750 here after the $750 fee. That rebate closes the due-from-factor account to zero.\n\nUntil the rebate arrives, the due-from-factor balance is real cash owed to you. Do not write it off or ignore it at month-end. Track it the same way you would track any other short-term receivable.",
+      },
+      {
+        heading: "Balance-sheet impact: what changes and what doesn't",
+        body:
+          "A sale-treatment factoring deal removes the receivable from your balance sheet. It replaces that receivable with cash and a small reserve asset. Your total assets stay close to the invoice's value, and no new debt appears anywhere.\n\nA secured-borrowing deal works the opposite way. The receivable stays on your balance sheet exactly as before. A new liability also appears for the cash you were advanced, so both assets and liabilities grow.\n\nThis difference matters beyond bookkeeping. A secured borrowing raises your reported debt and can trip a loan covenant tied to your debt-to-asset ratio. That is one reason lenders and factors both care which test your deal actually passes.",
+      },
+      {
+        heading: "How factoring accounting differs from a bank loan",
+        body:
+          "A bank loan always adds a liability to your books. It does not matter how you use the cash. Your receivables stay exactly as they were before the loan.\n\nSale-treatment factoring works differently. You trade one asset, the receivable, for another asset, cash. No new debt shows up on your balance sheet at all.\n\nThat is why factoring can look cheaper on paper than a same-size loan. The fee still cuts into your proceeds, though. Run both options through our [invoice factoring calculator](/invoice-factoring/) before you decide.\n\nOur [small business financing guide](/guides/small-business-financing-guide/) compares factoring against loans and other options side by side.",
+      },
+      {
+        heading: "Get the numbers right before you sign",
+        body:
+          "Ask your accountant to confirm your contract clears the ASC 860 sale test. Do this before you book a single entry. Getting this wrong can misstate your balance sheet.\n\nA misstatement can also confuse your lender. It can throw off a loan covenant tied to your reported debt.\n\nModel your own invoice through our [invoice factoring calculator](/invoice-factoring/) hub to see your advance, reserve, fee, and net proceeds. Use the [factoring fee calculator](/invoice-factoring/factoring-fee-calculator/) to isolate the cost on one invoice. Use the [accounts receivable financing calculator](/invoice-factoring/accounts-receivable-financing/) instead for an ongoing arrangement.\n\nBoth tools use the same math shown in the journal entries above. Run your own numbers before you sign anything.",
+      },
+    ],
+    tools: [
+      { href: "/invoice-factoring/", label: "Invoice factoring" },
+      { href: "/invoice-factoring/factoring-fee-calculator/", label: "Factoring fee" },
+      { href: "/invoice-factoring/accounts-receivable-financing/", label: "Accounts receivable financing" },
+    ],
+    faqs: [
+      {
+        question: "Is invoice factoring a loan or a sale for accounting purposes?",
+        answer:
+          "It depends on the deal. Under FASB's ASC 860, factoring is a sale only if you give up legal and practical control of the receivable. If you keep a strong repurchase obligation or retain effective control, GAAP treats it as a secured loan instead, and the receivable stays on your books.",
+      },
+      {
+        question: "What is the journal entry for factoring a $25,000 invoice?",
+        answer:
+          "On a $25,000 invoice at a 90% advance rate and a 3% fee, sale treatment works like this. Debit cash for $22,500, debit a due-from-factor reserve for $2,500, and credit accounts receivable for $25,000. Then debit factoring fee expense for $750 and credit due from factor for $750, and record the $1,750 rebate as cash in once your customer pays.",
+      },
+      {
+        question: "Does invoice factoring show up as debt on the balance sheet?",
+        answer:
+          "Only if it fails the ASC 860 sale test. A qualifying sale removes the receivable and adds no debt, since you exchanged one asset for another. A deal treated as a secured borrowing keeps the receivable on your books and adds a matching liability for the cash advanced.",
+      },
+      {
+        question: "How do I book the factoring reserve and rebate?",
+        answer:
+          "Record the reserve as an asset called due from factor at the time you sell or pledge the invoice. When your customer pays and the factor releases the rebate, debit cash and credit due from factor for the rebate amount, which zeroes out that account once the invoice is fully settled.",
+      },
+      {
+        question: "Does recourse vs. non-recourse decide the accounting by itself?",
+        answer:
+          "No. Recourse and non-recourse describe who bears the risk of non-payment, but ASC 860 asks a broader question about control. A recourse deal can still qualify as a sale if your obligation is limited to fraud or disputes rather than ordinary non-payment, so read the specific terms, not just the label.",
+      },
+    ],
+    sources: [
+      {
+        label: "FASB — Accounting Standards Update 2009-16, Transfers and Servicing (Topic 860)",
+        url: "https://storage.fasb.org/ASU2009-16.pdf",
+      },
+      {
+        label: "FASB — About the FASB",
+        url: "https://fasb.org/about-us/facts",
       },
     ],
   },
