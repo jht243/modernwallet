@@ -110,14 +110,6 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/retirement/", label: "Model retirement + LTC costs together" },
     { href: "/net-worth/", label: "See your net worth first" },
   ],
-  // Compliance Alerts pages (/compliance/*) — bridge the B2B compliance vertical to the business
-  // and tax tools so the vertical is never a link island.
-  "compliance": [
-    { href: "/business-loan-payoff/", label: "Model your business loan payoff" },
-    { href: "/tax-resolution/", label: "Behind on business taxes?" },
-    { href: "/business-line-of-credit/", label: "Credit line for compliance costs" },
-    { href: "/budget/", label: "Budget for compliance spending" },
-  ],
 };
 
 export function crossLinksFor(calcId: string): CrossLink[] {

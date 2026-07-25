@@ -7,6 +7,11 @@ const { sources } = Astro.props as Props;
 {sources && sources.length > 0 && (
   <section class="section sources">
     <h2>Sources</h2>
+    <p class="source-note">
+      We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our
+      <a href="/methodology/">calculator methodology</a> and
+      <a href="/editorial-policy/">editorial policy</a>.
+    </p>
     <ul>
       {sources.map((s) => (
         <li><a href={s.url} target="_blank" rel="noopener">{s.label}</a></li>
@@ -16,6 +21,7 @@ const { sources } = Astro.props as Props;
 )}
 
 <style>
+  .source-note { color: #4a5a55; font-size: 0.95rem; line-height: 1.6; max-width: 760px; margin: 0 0 10px; }
   .sources ul { padding-left: 20px; line-height: 1.7; max-width: 760px; margin: 0; }
   .sources li { margin-bottom: 6px; color: #333; }
   .sources a { color: var(--primary-dark); word-break: break-word; }

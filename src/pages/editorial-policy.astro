@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE } from "../data/site";
+
+const canonicalUrl = new URL("/editorial-policy/", Astro.site).toString();
+const title = `${SITE.name} Editorial Policy`;
+const description =
+  `${SITE.name} explains financial topics with calculator-first, source-backed content. See how we research, review, update, and disclose limits.`;
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Editorial Policy", item: canonicalUrl },
+  ],
+};
+---
+<BaseLayout title={title} description={description} canonical={canonicalUrl}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <span class="crumb-current">Editorial Policy</span>
+    </nav>
+
+    <header class="hero">
+      <h1>Editorial Policy</h1>
+      <p class="lede">
+        {SITE.name} publishes educational financial calculators, guides, comparisons, and roundups
+        built to explain the math behind money decisions.
+      </p>
+    </header>
+
+    <section class="section">
+      <h2>How we research</h2>
+      <p>
+        We prefer primary sources whenever a page depends on rules, formulas, limits, fees, rates,
+        or regulatory guidance. Common sources include the CFPB, IRS, Federal Reserve, SEC, FDIC,
+        Department of Labor, Bureau of Labor Statistics, state agencies, lender disclosures, and
+        official program documents.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>How we write and review</h2>
+      <p>
+        Pages are written to answer the reader's question directly, show assumptions clearly, and
+        separate general education from personalized advice. Calculator pages explain the formula
+        or method used, and article pages cite visible sources when claims depend on outside facts.
+      </p>
+      <p>
+        For legal, tax, estate, and similar high-stakes topics, pages include an explicit disclaimer
+        and source list. Content is not a substitute for advice from a licensed financial, legal, or
+        tax professional.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Updates and corrections</h2>
+      <p>
+        We update pages when formulas, government limits, deadlines, source documents, or product
+        facts materially change. If we find an error that could affect a reader's decision, we
+        correct the page and update the visible date when the change is substantive.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Independence</h2>
+      <p>
+        Editorial recommendations should be based on usefulness, clarity, cost, fit, and source-backed
+        facts. Any advertising or affiliate relationship must not change the formulas, source
+        standards, or educational conclusions on a page.
+      </p>
+    </section>
+  </main>
+
+  <style>
+    .page { max-width: 820px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 12px; }
+    .lede { font-size: 1.12rem; color: #444; line-height: 1.6; margin: 0; }
+    .section { padding: 24px 0; border-top: 1px solid #EEF2F0; }
+    .section h2 { font-size: 1.45rem; margin: 0 0 12px; }
+    .section p { color: #333; line-height: 1.75; max-width: 720px; margin: 0 0 14px; }
+    .section p:last-child { margin-bottom: 0; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.85rem; } }
+  </style>
+</BaseLayout>

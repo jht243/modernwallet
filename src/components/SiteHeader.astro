@@ -29,7 +29,6 @@ const anyActive = isActive("/calculators/") || navCalcs.some((c) => isActive(`/$
     </div>
 
     <nav class="primary-nav" aria-label="Primary">
-      <a class:list={["nav-link", { active: isActive("/compliance/") }]} href="/compliance/">Compliance Alerts</a>
       <div class="nav-dd">
         <button type="button" class:list={["nav-trigger", { active: anyActive }]} aria-haspopup="true" aria-expanded="false">
           Calculators
@@ -82,11 +81,6 @@ const anyActive = isActive("/calculators/") || navCalcs.some((c) => isActive(`/$
   .brand-tagline { font-size: 0.9rem; font-weight: 600; color: #6B7280; white-space: nowrap; }
 
   .primary-nav { display: flex; align-items: center; gap: 10px; }
-  .nav-link {
-    font-size: 0.95rem; font-weight: 700; color: #333; text-decoration: none;
-    padding: 8px 12px; border-radius: 9px; white-space: nowrap;
-  }
-  .nav-link:hover, .nav-link.active { color: var(--primary-dark); background: #E4F4EF; }
   .nav-dd { position: relative; }
   .nav-trigger {
     display: inline-flex; align-items: center; gap: 6px;
