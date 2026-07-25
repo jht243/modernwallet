@@ -1,7 +1,7 @@
 ---
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
-import { SITE } from "../data/site";
+import { OPERATOR, SITE } from "../data/site";
 
 export interface Props {
   title: string;
@@ -19,6 +19,11 @@ const orgJsonLd = {
   url: new URL("/", Astro.site).toString(),
   logo: { "@type": "ImageObject", url: new URL("/favicon.svg", Astro.site).toString() },
   description: SITE.description,
+  parentOrganization: {
+    "@type": "Organization",
+    name: OPERATOR.name,
+    url: OPERATOR.url,
+  },
 };
 
 // WebSite JSON-LD — the entity Google uses for the search-result site name.

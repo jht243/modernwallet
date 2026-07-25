@@ -11,6 +11,11 @@ export const SITE = {
     "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
 } as const;
 
+export const OPERATOR = {
+  name: "Layer3Labs",
+  url: "https://www.layer3labs.io",
+} as const;
+
 // Named author/reviewer for YMYL (finance) E-E-A-T: visible byline + Person JSON-LD + "reviewed by".
 export const AUTHOR = {
   name: "Jonathan Velez",
@@ -39,4 +44,3 @@ export const REVIEWER = {
 
 // Sitewide "last updated" stamp. Bump when content is materially revised.
 export const LAST_UPDATED = "2026-06-25";
-

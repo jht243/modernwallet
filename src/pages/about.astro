@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE, AUTHOR } from "../data/site";
+import { AUTHOR, OPERATOR, SITE } from "../data/site";
 import { personSchema } from "../lib/jsonld";
 
 const canonicalUrl = new URL("/about/", Astro.site).toString();
@@ -31,6 +31,16 @@ const jsonLdBreadcrumb = {
       <h1>About {SITE.name}</h1>
       <p class="lede">{SITE.name} builds free, accurate financial calculators that show the math behind the answer — no signup, no fluff.</p>
     </header>
+
+    <section class="section">
+      <h2>Who operates {SITE.name}</h2>
+      <p>
+        {SITE.name} is operated by <a href={OPERATOR.url} target="_blank" rel="noopener">{OPERATOR.name}</a>.
+        The site focuses on free financial calculators and educational finance content for readers
+        who want to understand the math behind loans, savings, investing, retirement, budgeting,
+        and net worth decisions.
+      </p>
+    </section>
 
     <section class="section">
       <h2>Our editorial approach</h2>
