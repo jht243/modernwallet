@@ -1,0 +1,377 @@
+{
+  "keep": [
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/personal-loans/reviews/earnest-personal-loans",
+      "title": "Earnest 2026 Personal Loan Review - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-27T00:00:00-07:00",
+      "content_hash": "sha256:5b17a586a471f25aec5f89309e58ffe70d52b573a7944e8c4fb81eafebb7b714",
+      "outline": [
+        "What to know about Earnest personal loans",
+        "What we like most about Earnest",
+        "Why Earnest may not be right for you",
+        "How much does an Earnest personal loan cost?",
+        "Do you qualify for an Earnest personal loan?",
+        "Earnest\u2019s borrowing requirements",
+        "Profile of an average Earnest borrower",
+        "How does Earnest compare?",
+        "How we rated this lender",
+        "Earnest borrower reviews"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/finance/studies/setting-boundaries-family-borrowing",
+      "title": "Helping Family With Bills? Set Boundaries Before It Costs You - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-23T06:00:07-07:00",
+      "content_hash": "sha256:c0bdda28d0966b2a5323b84ebf286cc490425b1f6977ea8f13cfda0dde2da996",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "1. Secure your emergency fund first",
+        "2. Decide whether the money is a gift or a loan",
+        "3. Create rules before the next ask",
+        "4. Help out in non-monetary ways"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/financial-advisor/ask-an-advisor-non-high-earners",
+      "title": "Ask an Advisor: How Much Should Non-High-Earners Aim to Save for Retirement?",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-09T11:00:00+00:00",
+      "content_hash": "sha256:18f9171e1090e35714d1831049fc7c6a7d396031b8f9f6b5976b7aa0f3945193",
+      "outline": [
+        "How Much to Save for Retirement",
+        "Making Adjustments",
+        "Where to Find Advice",
+        "Bottom Line",
+        "Retirement Planning Tips",
+        "Article Sources"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/financial-advisor/how-to-retire-at-40",
+      "title": "How to Retire at 40: Is It Really Possible?",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-05T21:39:13+00:00",
+      "content_hash": "sha256:97441abd4503383d9f92ff5c1e02d59271b00808eedb435253a6a3d4fe7b144d",
+      "outline": [
+        "Start With Your Goals",
+        "Calculate Your Retirement Savings Needs",
+        "What Retiring at 40 Might Look Like",
+        "Running the Numbers",
+        "What Are Your Options?",
+        "Consider Your Investment Strategy",
+        "How Much Do You Actually Need to Retire at 40?",
+        "Bottom Line",
+        "Tips for Investing"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/investing/how-to-invest-200k",
+      "title": "How to Invest $200k?",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-05T21:16:24+00:00",
+      "content_hash": "sha256:8d7b09bc620dc3994580ab41c03e99cc3a8d29b8de95872bd568c1b35c6813cd",
+      "outline": [
+        "What to Consider Before Investing $200k",
+        "4 Common Ways to Invest $200k",
+        "Factors Impacting What You Should Invest In",
+        "Sample Portfolio Allocations for a $200k Investment",
+        "Conservative Portfolio Example",
+        "Moderate Portfolio Example",
+        "Growth-Oriented Portfolio Example",
+        "Bottom Line",
+        "Investment Tips"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/personal-finance/financial-planning-for-30-year-olds",
+      "title": "Financial Planning for 30 Year Olds \u2013 A Guide",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-05T21:19:01+00:00",
+      "content_hash": "sha256:fe5500d1d6977badefac1db57fdecc60d74de2401df3584f7e5570f55ff4c731",
+      "outline": [
+        "Financial Planning for 30 Year Olds \u2013 Investing for the Future",
+        "Build and Maintain an Emergency Fund",
+        "Maximizing Your Investments",
+        "Saving for College",
+        "Insurance and Protection",
+        "Good Debt vs. Bad Debt",
+        "Managing and Avoiding Credit Card Debt",
+        "Bottom Line",
+        "Financial Planning Tips"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/retirement/is-3-million-enough-to-retire-at-40",
+      "title": "Is $3 Million Enough to Retire at 40?",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-05T06:08:45+00:00",
+      "content_hash": "sha256:c85dc244e24a96dd9f93076bb2d127fc6b08d6c8abf09576d7b609e1be388f4e",
+      "outline": [
+        "Understanding Early Retirement and Financial Independence",
+        "Factors Affecting Retirement Needs",
+        "How Long $3 Million Will Last If You Retire at 40",
+        "What a 40 Year-Old-Retiree\u2019s Portfolio Might Look Like",
+        "How to Retire at 40 with $3 Million",
+        "Saving Strategies",
+        "Investment Strategies",
+        "Other Factors to Consider",
+        "Bottom Line",
+        "Tips for Retirement"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/retirement/how-to-retire-in-10-years-with-no-savings",
+      "title": "How to Retire In 10 Years with No Savings",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-05T06:00:46+00:00",
+      "content_hash": "sha256:d389817a137ed61f36625a695095f8424341e874dfb4f94eed5b1d98bdb0e107",
+      "outline": [
+        "Is It Possible to Retire In 10 Years with No Savings?",
+        "Retiring in 10 Years: Step by Step",
+        "1. Make the Commitment",
+        "2. Cut Your Costs",
+        "3. Save 75% of Your Income",
+        "4. Invest Your Savings Wisely",
+        "5. Invest for Income",
+        "The Downside of Retiring In 10 Years",
+        "Bottom Line",
+        "Retirement Planning Tips"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/retirement/rollover-ira-vs-roth-ira",
+      "title": "Rollover IRA vs. Roth IRA",
+      "kind": "comparison",
+      "change": "new",
+      "lastmod": "2026-03-04T21:27:43+00:00",
+      "content_hash": "sha256:d411c0396db36b7eac12a5ba66138261664caad5e687407d5e93bc4086031377",
+      "outline": [
+        "What Is a Rollover IRA?",
+        "What Is a Roth IRA?",
+        "Rollover IRA vs. Roth IRA",
+        "How an Advisor Can Help You Choose: Rollover IRA vs. Roth IRA",
+        "Bottom Line",
+        "Retirement Planning Tips"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "smartasset.com",
+      "competitor_name": "SmartAsset",
+      "url": "https://smartasset.com/financial-advisor/how-to-invest-100k-to-make-1-million",
+      "title": "How to Invest $100,000 and Turn It Into $1 Million",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-03-04T22:10:46+00:00",
+      "content_hash": "sha256:963d1f0a89dcfa20290216bfb7a5faca1c567318dc98a5886b261458377457d1",
+      "outline": [
+        "1. Assess Your Starting Point",
+        "2. Gauge Your Risk Tolerance",
+        "3. Run the Numbers",
+        "4. Allocate Your Assets Wisely",
+        "5. Minimize Taxes and Fees",
+        "Types of Investments to Turn $100k Into $1 Million",
+        "Index Funds",
+        "Mutual Funds",
+        "Real Estate",
+        "Dividend Stocks",
+        "Annuities",
+        "Exchange-Traded Funds (ETFs)",
+        "Commodities",
+        "Bonds",
+        "How Long Does It Take for $100k to Become $1 Million?",
+        "Strategies to Save More Money Without Taking on Risk",
+        "Bottom Line",
+        "Tips for Investing"
+      ],
+      "tool_io": []
+    }
+  ],
+  "excluded": [
+    {
+      "competitor": "omnicalculator.com",
+      "competitor_name": "Omni Calculator",
+      "url": "https://www.omnicalculator.com/other/volunteer-engagement-profile",
+      "title": "Volunteer Engagement Profile Calculator",
+      "kind": "tool",
+      "change": "new",
+      "lastmod": "2026-07-27T09:39:08.341Z",
+      "content_hash": "sha256:e1a640c63e21ec9645f45122eb936b647b4decc9ce81c7f9e1e11cffbd394ebf",
+      "outline": [
+        "About this calculator"
+      ],
+      "tool_io": [
+        "label: Pick one.",
+        "label: Here\u2019s your score!",
+        "select: blockGroups.0.matrices.0.columns.0.0-input"
+      ]
+    },
+    {
+      "competitor": "omnicalculator.com",
+      "competitor_name": "Omni Calculator",
+      "url": "https://www.omnicalculator.com/finance/safety-stock",
+      "title": "Safety Stock Calculator",
+      "kind": "tool",
+      "change": "new",
+      "lastmod": "2026-07-24T15:01:21.140Z",
+      "content_hash": "sha256:1117619440d5474cc5aedbcf64644962817456893b001187b610da0ec7d4ba5c",
+      "outline": [
+        "The importance of safety stock",
+        "How to use the safety stock calculator",
+        "How the safety stock formula works",
+        "How to find statistical safety stock\u200b",
+        "An example of safety stock calculation",
+        "How often should I recalculate my safety stock?",
+        "Does lead time include weekends?"
+      ],
+      "tool_io": [
+        "label: Max lead&nbsp;time",
+        "label: Average daily usage",
+        "label: Average lead time",
+        "label: Safety stock",
+        "label: Reorder point"
+      ]
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-july-27-2026",
+      "title": "Mortgage Rates Today, Monday, July 27: Kind of a Big Jump - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-27T07:09:42-07:00",
+      "content_hash": "sha256:8e750e4c4d158a053dbd27d4d1545e5d6b844513b42c988e0cb3539272e94237",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "Average mortgage rates, last 30 days",
+        "\ud83d\udcc8 What influences mortgage rates?",
+        "\ud83d\udd01 Should I refinance?",
+        "\ud83c\udfe1 Should I start shopping for a home?",
+        "\ud83d\udd12 Should I lock my rate?",
+        "\ud83e\uddd0 Why is the rate I saw online different from the quote I got?",
+        "\ud83d\udc40 If I apply now, can I get the rate I saw today?"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-july-24-2026",
+      "title": "Mortgage Rates Today, Friday, July 24: Highest Rates of 2026 - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-24T06:50:30-07:00",
+      "content_hash": "sha256:840424054d42b279ec8698cd4469bf703f7ca4e4f36825f1daac0c697ee5440a",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "Average mortgage rates, last 30 days",
+        "\ud83d\udcc8 What influences mortgage rates?",
+        "\ud83d\udd01 Should I refinance?",
+        "\ud83c\udfe1 Should I start shopping for a home?",
+        "\ud83d\udd12 Should I lock my rate?",
+        "\ud83e\uddd0 Why is the rate I saw online different from the quote I got?",
+        "\ud83d\udc40 If I apply now, can I get the rate I saw today?"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-thursday-july-23-2026",
+      "title": "Mortgage Rates Today, Thursday, July 23: Ticking Down Today but Still Higher Than June - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-23T05:53:04-07:00",
+      "content_hash": "sha256:1da3a3c8ef8799e68bb616137c7ff280277024ebc66970c63ce1f14358329104",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "Average mortgage rates, last 30 days",
+        "\ud83e\udd13 Kate on Rates: July 16, 2026",
+        "\ud83d\udcc8 What influences mortgage rates?",
+        "\ud83d\udd01 Should I refinance?",
+        "\ud83c\udfe1 Should I start shopping for a home?",
+        "\ud83d\udd12 Should I lock my rate?",
+        "\ud83e\uddd0 Why is the rate I saw online different from the quote I got?",
+        "\ud83d\udc40 If I apply now, can I get the rate I saw today?"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/mortgages/news/weekly-mortgage-rates-7-23-26",
+      "title": "Weekly Mortgage Rates Tick Up, But Seasoned Shoppers Shrug - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-16T00:00:00-07:00",
+      "content_hash": "sha256:1f469fea7261c2a841df4374411164b8bc7e2bec495774ce084883870c8a53b6",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "If you&#39;re just starting your house hunt",
+        "Explore mortgages today and get started on your homeownership goals",
+        "If you&#39;ve been searching for a few months",
+        "If you&#39;ve been looking for a year or more"
+      ],
+      "tool_io": []
+    },
+    {
+      "competitor": "nerdwallet.com",
+      "competitor_name": "NerdWallet",
+      "url": "https://www.nerdwallet.com/finance/news/data-center-costs",
+      "title": "The Hidden Cost of Data Centers: Inside the Opposition - NerdWallet",
+      "kind": "page",
+      "change": "new",
+      "lastmod": "2026-07-23T07:00:44-07:00",
+      "content_hash": "sha256:dae39720e661f13f08275d5ad264cb230c6f3d869b49f98fb3502425348d8b34",
+      "outline": [
+        "You&apos;re our first priority.Every time.",
+        "The data center honeymoon is over",
+        "Meet MoneyNerd, your weekly news decoder",
+        "Why the backlash is growing",
+        "Data centers are testing electrical grids",
+        "Servers are thirsty \u2014 and could strain local watersheds",
+        "Data facilities make for noisy and noxious neighbors",
+        "The property value question hanging over homeowners",
+        "Job expectations don\u2019t match reality",
+        "This future \u2018isn\u2019t inevitable\u2019: The push to slow the data center boom"
+      ],
+      "tool_io": []
+    }
+  ]
+}
