@@ -5966,6 +5966,99 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── Rollover IRA vs Roth IRA ─────────────────────────────────────────────
+  {
+    slug: "rollover-ira-vs-roth-ira",
+    title: "Rollover IRA vs. Roth IRA: Which Should You Pick?",
+    metaDescription:
+      "Rollover IRA vs Roth IRA compared: whether converting an old 401(k) triggers tax now, how it changes RMDs, and the Medicare premium trap few mention.",
+    targetKeyword: "rollover ira vs roth ira",
+    optionA: "Rollover IRA",
+    optionB: "Roth IRA",
+    segment: "Retirement accounts",
+    h1: "Rollover IRA vs. Roth IRA: Should You Convert Your Old 401(k)?",
+    intro:
+      "A rollover IRA moves an old 401(k) into a traditional IRA tax-free, while sending that same money into a Roth IRA instead — a Roth conversion — adds the entire pretax balance to your taxable income the year you do it, so the real choice is between paying no tax now and full ordinary tax later, or paying tax now for tax-free withdrawals for life.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Tax bill at the time of the move", a: "None — a like-kind transfer from 401(k) to traditional IRA", b: "The full pretax amount converted is added to your taxable income that year" },
+        { dimension: "Tax on future withdrawals", a: "Taxed as ordinary income, same as the 401(k) would have been", b: "Qualified withdrawals are 100% tax-free for life" },
+        { dimension: "Required minimum distributions", a: "Begin at age 73, per IRS rules", b: "None for the original owner" },
+        { dimension: "Income limit to do it", a: "None — anyone can roll over a 401(k)", b: "None — conversions have no income cap, unlike direct Roth contributions" },
+        { dimension: "2026 direct-contribution income limit (separate issue)", a: "Not applicable to a rollover", b: "Direct contributions phase out $153,000–$168,000 single, $242,000–$252,000 married" },
+        { dimension: "Early access to the money", a: "10% penalty before 59½, with SEPP (72(t)) as the main exception", b: "Converted principal is penalty-free after a 5-year clock per conversion, even before 59½" },
+        { dimension: "Best fit", a: "You expect a lower tax bracket in retirement, or have no outside cash to pay a conversion tax bill", b: "You expect a higher future bracket, can pay the tax from savings outside the IRA, and want to erase future RMDs" },
+      ],
+    },
+    verdict:
+      "Roll an old 401(k) into a traditional (rollover) IRA when you want zero tax due today, you expect to be in the same or a lower bracket in retirement, or you'd have to pull money out of the account itself to cover a conversion's tax bill. Convert to a Roth IRA instead when you expect higher taxes later, you can pay the conversion tax from a separate savings or brokerage account, and you want to eliminate RMDs for good. A popular middle path — converting a fixed slice each year to \"fill up\" your current tax bracket without spilling into the next one — lets you spread the tax hit across several years instead of taking it all at once.",
+    sections: [
+      {
+        heading: "What a rollover IRA actually is",
+        content:
+          "A rollover IRA is a traditional IRA that receives money moved directly from a former employer's 401(k), 403(b), or similar plan, with no tax due at the time of the transfer. Per the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions), a direct rollover keeps the money's pretax character intact — nothing changes about how it will eventually be taxed, only which account holds it.\n\nBecause a rollover IRA is legally identical to any other traditional IRA, the same rules apply going forward: ordinary income tax on withdrawals, a 10% early-withdrawal penalty before age 59½ (with exceptions like SEPP under Section 72(t)), and required minimum distributions starting at 73. Use the [401(k) calculator](/retirement/401k-calculator/) to see how the balance would have grown if left in the old plan versus rolled over — the growth math itself doesn't change, only where the account lives.",
+      },
+      {
+        heading: "Moving it to a Roth IRA instead is a conversion, not a rollover",
+        content:
+          "Sending old 401(k) money into a Roth IRA is called a Roth conversion, and it works very differently from a rollover. The [IRS](https://www.irs.gov/retirement-plans/roth-iras) requires you to add the full pretax amount converted to your taxable income for that year, reported on Form 8606, and taxed at your ordinary rate — there's no way around this step for money that was never taxed.\n\nOnce the tax is paid, the money behaves like any other Roth IRA dollar from that point forward: it grows tax-free, and qualified withdrawals in retirement owe nothing. A $100,000 pretax conversion in the 24% bracket creates a roughly $24,000 tax bill due with that year's return — a real, upfront cost that a straight rollover to a traditional IRA never triggers.",
+      },
+      {
+        heading: "The math that actually decides it: today's bracket vs. tomorrow's",
+        content:
+          "Picture a $100,000 old 401(k) balance and two paths. Rolled into a traditional IRA and left to grow at 7% for 20 years, it reaches about $387,000 — fully taxable on withdrawal. If you're in the 22% bracket in retirement, you net roughly $302,000 after tax.\n\nConverted to a Roth today in the 24% bracket, you owe about $24,000 in tax now (ideally paid from outside the account), and the remaining $100,000 still grows to $387,000 over 20 years — but every dollar of it comes out tax-free. The Roth path only wins if your retirement bracket ends up at or above roughly 24%; if you're confident you'll land in a lower bracket once you stop working, paying 24% today to avoid a smaller future tax is the more expensive choice. Run your own numbers in the [retirement calculator](/retirement/) before deciding.",
+      },
+      {
+        heading: "The 5-year rule for converted money — and other early-access quirks",
+        content:
+          "Each Roth conversion starts its own 5-year clock. If you withdraw converted principal before that clock runs out and before age 59½, you owe a 10% penalty on that portion, even though you already paid income tax on it at conversion — a rule the [IRS](https://www.irs.gov/retirement-plans/roth-iras) applies conversion by conversion, not account by account. A traditional rollover IRA has a simpler, if less forgiving, rule: a flat 10% penalty on any withdrawal before 59½, with Substantially Equal Periodic Payments (SEPP) under Section 72(t) as the main early-access exception.\n\nA mistake worth naming directly: paying the conversion's tax bill out of the IRA itself, rather than from separate savings, both shrinks the amount that gets to grow tax-free and, if you're under 59½, adds a 10% penalty to the withheld portion — turning a planned tax strategy into an accidental early withdrawal.",
+      },
+      {
+        heading: "The Medicare premium trap a fee-only advisor would flag",
+        content:
+          "A Roth conversion adds to your Modified Adjusted Gross Income (MAGI) for that year, and a MAGI spike two years later can push you into a higher Medicare Part B and Part D premium tier — the Income-Related Monthly Adjustment Amount, or IRMAA, described on [Medicare.gov](https://www.medicare.gov/basics/costs/medicare-costs/premiums/part-b-costs). This catches people converting in the years just before or during Medicare enrollment (65+) especially hard, since a single large conversion can trigger a surcharge that lasts a full year even though the extra income was a one-time event.\n\nA fee-only fiduciary weighing this decision typically checks four things: your current bracket versus your realistic future bracket, whether you have cash outside the retirement account to cover the conversion tax, your age relative to Medicare enrollment and the IRMAA look-back window, and whether converting a smaller slice each year — rather than the whole balance at once — keeps you under the next bracket or IRMAA threshold. See our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) if you want a professional to run these numbers with you.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should I roll my old 401(k) into a traditional IRA or convert it to a Roth IRA?",
+        answer:
+          "Roll into a traditional (rollover) IRA if you want no tax due now and expect the same or a lower tax bracket in retirement. Convert to a Roth IRA if you expect a higher future bracket, can pay the conversion tax from money outside the account, and want to eliminate required minimum distributions.",
+      },
+      {
+        question: "Do I owe taxes when I roll a 401(k) into a rollover IRA?",
+        answer:
+          "No. A direct rollover from a 401(k) into a traditional IRA is not a taxable event — the money keeps its pretax character and is taxed only when you eventually withdraw it, the same as it would have been inside the 401(k).",
+      },
+      {
+        question: "Can I convert only part of an old 401(k) to a Roth IRA?",
+        answer:
+          "Yes. Partial conversions are common and often smarter than converting the full balance at once, since converting just enough to 'fill up' your current tax bracket each year spreads the tax bill across multiple years instead of pushing a large chunk of it into a higher bracket in a single year.",
+      },
+      {
+        question: "Does converting a rollover IRA to a Roth IRA affect my Medicare premiums?",
+        answer:
+          "It can. A large conversion raises your Modified Adjusted Gross Income for that year, and a MAGI increase two years earlier can push you into a higher Income-Related Monthly Adjustment Amount (IRMAA) tier for Medicare Part B and Part D premiums, per Medicare.gov. This mainly matters for conversions done close to or during Medicare enrollment at 65 and older.",
+      },
+      {
+        question: "What happens if I withdraw converted Roth money too early?",
+        answer:
+          "Each conversion starts its own 5-year clock. Withdrawing converted principal before that clock expires and before age 59½ triggers a 10% penalty on that portion, even though you already paid income tax on it when you converted — a rule the IRS applies separately to each conversion, not once per account.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Rollovers of Retirement Plan and IRA Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "Medicare.gov — Part B costs (IRMAA)", url: "https://www.medicare.gov/basics/costs/medicare-costs/premiums/part-b-costs" },
+    ],
+    relatedComparisons: ["rollover-ira-vs-traditional-ira", "roth-ira-vs-traditional-ira", "401k-vs-roth-ira", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Retirement Calculator", href: "/retirement/" },
+      { label: "IRA Early Withdrawal Calculator", href: "/retirement/ira-early-withdrawal-calculator/" },
+      { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
+    ],
+  },
+
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
