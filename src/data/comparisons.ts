@@ -110,7 +110,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
       { label: "IRS — Retirement topics: contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions" },
     ],
-    relatedComparisons: ["roth-401k-vs-traditional-401k", "brokerage-vs-ira", "529-vs-roth-ira"],
+    relatedComparisons: ["roth-401k-vs-traditional-401k", "brokerage-vs-ira", "529-vs-roth-ira", "rollover-ira-vs-roth-ira"],
     calculatorLinks: [
       { label: "Retirement calculator", href: "/retirement/" },
       { label: "Investment growth calculator", href: "/investing/" },
@@ -2784,7 +2784,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS: Retirement topics - IRA contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
       { label: "IRS: Retirement plan and IRA required minimum distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira", "roth-ira-vs-roth-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "529-vs-roth-ira", "roth-ira-vs-roth-401k", "rollover-ira-vs-roth-ira"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investment Growth Calculator", href: "/investing/" },
@@ -5871,7 +5871,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Rollovers of Retirement Plan and IRA Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions" },
       { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "traditional-ira-vs-401k", "brokerage-vs-ira"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "traditional-ira-vs-401k", "brokerage-vs-ira", "rollover-ira-vs-roth-ira"],
     calculatorLinks: [
       { label: "IRA Early Withdrawal Calculator", href: "/retirement/ira-early-withdrawal-calculator/" },
       { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },

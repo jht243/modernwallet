@@ -30,6 +30,8 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
     { href: "/portfolio/", label: "Check your asset mix" },
     { href: "/coast-fire/", label: "Could you stop saving already?" },
+    { href: "/guides/how-to-retire-at-40/", label: "Thinking about retiring early?" },
+    { href: "/guides/is-3-million-enough-to-retire-at-40/", label: "Is $3 million enough?" },
   ],
   "coast-fire": [
     { href: "/retirement/", label: "Full retirement projection with contributions" },
@@ -41,6 +43,8 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/portfolio/", label: "Balance your portfolio" },
     { href: "/net-worth/", label: "Track your net worth" },
     { href: "/roundup/best-brokers-for-treasury-bonds/", label: "Best brokers for Treasury bonds" },
+    { href: "/guides/how-to-invest-200k/", label: "Investing a lump sum? Start with $200k" },
+    { href: "/guides/how-to-invest-100k-to-1-million/", label: "How long $100k takes to reach $1M" },
   ],
   "portfolio": [
     { href: "/investing/", label: "Project investment growth" },
@@ -52,6 +56,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/retirement/", label: "Are you on track to retire?" },
     { href: "/investing/", label: "Grow your money" },
     { href: "/mortgage/", label: "How much house can you afford?" },
+    { href: "/guides/financial-planning-for-30-year-olds/", label: "Financial planning in your 30s" },
   ],
   "budget": [
     { href: "/net-worth/", label: "See your full net worth" },
@@ -60,11 +65,13 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/personal-loan/", label: "Consolidating debt? Model a personal loan" },
     { href: "/guides/sales-tax-holidays-guide/", label: "Do sales tax holidays actually save money?" },
     { href: "/guides/ai-financial-advice-chatbots-guide/", label: "Using AI chatbots for money questions" },
+    { href: "/guides/lending-money-to-family-boundaries/", label: "Lending money to family? Set boundaries first" },
   ],
   "personal-loan": [
     { href: "/budget/", label: "Does the payment fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Compare a 0% balance transfer instead" },
+    { href: "/guides/how-to-read-a-personal-loan-review/", label: "How to read a lender review" },
   ],
   "tax-resolution": [
     { href: "/guides/tax-tips/", label: "Proactive tax planning (if you're current)" },
