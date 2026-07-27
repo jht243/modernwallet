@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-07-13",
+  "lastRun": "2026-07-27",
   "dropped": [
     { "slug": "trump-account-vs-coverdell-esa", "format": "comparison", "reason": "0 Autocomplete demand (Trump pass 2026-07-08) — 'trump account vs X' space saturated", "score": 0 },
     { "slug": "trump-account-vs-i-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
@@ -67,6 +67,11 @@
     { "slug": "whole-life-vs-universal-life-insurance", "format": "comparison", "optionA": "Whole Life Insurance", "optionB": "Universal Life Insurance", "publishedAt": "2026-07-20" },
     { "slug": "term-life-vs-universal-life-insurance", "format": "comparison", "optionA": "Term Life Insurance", "optionB": "Universal Life Insurance", "publishedAt": "2026-07-20" },
     { "slug": "robo-advisor-vs-financial-advisor", "format": "enrichment", "route": "/guides/financial-advisor-worth-it/", "note": "Added a 'Robo-advisor vs. financial advisor' sub-section + FAQ to the existing guide (PARTIAL from Phase 1b — was covered only in passing).", "publishedAt": "2026-07-20" },
-    { "slug": "sep-ira-vs-traditional-ira", "format": "enrichment", "route": "/roundup/best-retirement-accounts-for-self-employed/", "note": "Added a 'SEP IRA vs. Traditional IRA' sub-section + FAQ to the existing roundup (PARTIAL from Phase 1b — both entities had individual profiles but no head-to-head treatment).", "publishedAt": "2026-07-20" }
+    { "slug": "sep-ira-vs-traditional-ira", "format": "enrichment", "route": "/roundup/best-retirement-accounts-for-self-employed/", "note": "Added a 'SEP IRA vs. Traditional IRA' sub-section + FAQ to the existing roundup (PARTIAL from Phase 1b — both entities had individual profiles but no head-to-head treatment).", "publishedAt": "2026-07-20" },
+    { "slug": "403b-vs-401k", "format": "comparison", "optionA": "403(b)", "optionB": "401(k)", "publishedAt": "2026-07-27" },
+    { "slug": "tsp-vs-401k", "format": "comparison", "optionA": "Thrift Savings Plan (TSP)", "optionB": "401(k)", "segment": "Federal employees & military", "publishedAt": "2026-07-27" },
+    { "slug": "rollover-ira-vs-traditional-ira", "format": "comparison", "optionA": "Rollover IRA", "optionB": "Traditional IRA", "publishedAt": "2026-07-27" },
+    { "slug": "457b-vs-401k", "format": "comparison", "optionA": "457(b)", "optionB": "401(k)", "publishedAt": "2026-07-27" },
+    { "slug": "iul-vs-whole-life-insurance", "format": "enrichment", "route": "/compare/whole-life-vs-universal-life-insurance/", "note": "Added an 'IUL vs whole life: which guarantees actually protect you' sub-section + FAQ (PARTIAL from Phase 1b — IUL was only discussed as a universal-life variant, no head-to-head treatment against whole life).", "publishedAt": "2026-07-27" }
   ]
 }
