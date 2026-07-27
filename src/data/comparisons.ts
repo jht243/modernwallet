@@ -5969,7 +5969,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Rollover IRA vs Roth IRA ─────────────────────────────────────────────
   {
     slug: "rollover-ira-vs-roth-ira",
-    title: "Rollover IRA vs. Roth IRA: Which Should You Pick?",
+    title: "Rollover IRA vs. Roth IRA: Which One Should You Pick?",
     metaDescription:
       "Rollover IRA vs Roth IRA compared: whether converting an old 401(k) triggers tax now, how it changes RMDs, and the Medicare premium trap few mention.",
     targetKeyword: "rollover ira vs roth ira",
@@ -5996,7 +5996,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "What a rollover IRA actually is",
         content:
-          "A rollover IRA is a traditional IRA that receives money moved directly from a former employer's 401(k), 403(b), or similar plan, with no tax due at the time of the transfer. Per the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions), a direct rollover keeps the money's pretax character intact — nothing changes about how it will eventually be taxed, only which account holds it.\n\nBecause a rollover IRA is legally identical to any other traditional IRA, the same rules apply going forward: ordinary income tax on withdrawals, a 10% early-withdrawal penalty before age 59½ (with exceptions like SEPP under Section 72(t)), and required minimum distributions starting at 73. Use the [401(k) calculator](/retirement/401k-calculator/) to see how the balance would have grown if left in the old plan versus rolled over — the growth math itself doesn't change, only where the account lives.",
+          "A rollover IRA is a traditional IRA that receives money moved directly from a former employer's 401(k), 403(b), or similar plan, with no tax due at the time of the transfer. Per the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions), a direct rollover keeps the money's pretax character intact — nothing changes about how it will eventually be taxed, only which account holds it.\n\nBecause a rollover IRA is legally identical to any other traditional IRA, the same rules apply going forward: ordinary income tax on withdrawals, a 10% early-withdrawal penalty before age 59½ (with exceptions like SEPP under Section 72(t)), and required minimum distributions starting at 73. Use the [401(k) calculator](/retirement/401k-calculator/) to see how the balance would have grown if left in the old plan versus rolled over — the growth math itself doesn't change, only where the account lives.\n\nOne nuance worth naming: \"rollover\" is a description of the funding mechanism (moving money between account custodians), not a synonym for \"traditional.\" If your old employer plan is itself a Roth 401(k), rolling that balance into a Roth IRA is also called a rollover — it's not a conversion, and no new tax is triggered, because the money was already after-tax. The rest of this page compares the more common case: rolling a pretax (traditional) 401(k) either into a traditional IRA (a rollover) or into a Roth IRA (a conversion).",
+      },
+      {
+        heading: "Direct vs. indirect rollover: the 20% withholding trap",
+        content:
+          "\"Rollover\" describes how the money moves, not what it's taxed as — a direct (trustee-to-trustee) rollover sends funds straight from the old 401(k) to the new IRA custodian and is the version described above, with no tax withheld and no tax due. An indirect rollover instead pays the check to you personally, and the plan is required to withhold 20% for federal taxes before you ever see it, even though the full amount is still taxable if you don't complete the rollover correctly.\n\nTo avoid owing tax and a possible 10% early-withdrawal penalty on that withheld 20%, you must deposit the FULL original balance — including the 20% the plan withheld — into the new IRA within 60 days, which means coming up with that withheld amount out of pocket until you recover it as a tax refund the following year. A direct rollover skips this trap entirely, which is why it's the version almost every advisor recommends by default.",
       },
       {
         heading: "Moving it to a Roth IRA instead is a conversion, not a rollover",
