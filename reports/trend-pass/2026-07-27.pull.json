@@ -1,0 +1,154 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-07-20",
+    "end": "2026-07-27",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "401k programs for small business",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "529 investment strategy by age",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 19.2
+    },
+    {
+      "query": "401k alternatives for small business",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 21.67
+    },
+    {
+      "query": "age based 529",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 90.33
+    },
+    {
+      "query": "401k for small business laredo tx",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "529 allowed expenses",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 89
+    },
+    {
+      "query": "529 eligible expenses",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 94.5
+    },
+    {
+      "query": "529 plan eligible expenses",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "age weighted 529 plan",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 88.5
+    },
+    {
+      "query": "'trump accounts'",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 98
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/guides/529-investment-strategy-by-age/",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 52.94
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/529-qualified-expenses/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 87.82
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 54.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/chase-travel-portal-guide/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 61.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 43.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-529-vs-utma/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/indiana/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/balance-transfer-credit-card-approval-odds/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 24
+    }
+  ],
+  "top10_pages_total_clicks": 0,
+  "top10_queries_total_clicks": 0
+}
