@@ -5106,6 +5106,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         content:
           "A universal life sales illustration projects future cash value based on a current, non-guaranteed crediting rate — if that rate falls after you buy the policy, the actual account value underperforms the original projection. Many policies sold in higher-rate decades illustrated premiums that would eventually \"vanish,\" funded entirely by cash value, only for owners to later find they needed to resume or increase premiums once real crediting rates came in lower than illustrated.\n\nThe practical takeaway: request an in-force illustration from your insurer every year or two, not just at purchase, so you catch an underfunded policy years before it's at risk of lapsing rather than discovering it in a lapse notice.",
       },
+      {
+        heading: "IUL vs whole life: which guarantees actually protect you",
+        content:
+          "Indexed universal life (IUL) is frequently marketed head-to-head against whole life insurance, so it's worth a direct comparison rather than treating IUL as just a footnote. Whole life's cash value grows at a guaranteed minimum rate written into the contract, with a fixed premium for life and no downside in a bad year — the guaranteed rate applies regardless of markets. IUL's cash value instead grows based on an index's performance, subject to a cap (often in the 8%–12% range) and a floor (usually 0%), on top of the flexible, sometimes-underfunded premium structure standard universal life shares.\n\nThat means IUL can outperform whole life in a strong index year but can also credit nothing at all in a flat or down year — no negative return, but no growth either. The cap rate itself is not guaranteed: insurers can and do lower an IUL policy's cap over time, so an illustration run at today's cap can overstate what the policy actually credits years later, compounding the same illustration risk standard universal life already carries. Whole life has no equivalent exposure — its guaranteed minimum rate is contractual and can't be revised downward by the insurer mid-policy.\n\nPick whole life when you want the cash-value guarantee itself, not just downside protection — it's the only one of the two where the growth rate can't be revised down later. Pick IUL only if you're comfortable reviewing an in-force illustration regularly and treating any upside as a bonus, not a plan.",
+      },
     ],
     faqs: [
       {
@@ -5122,6 +5127,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         question: "What is indexed universal life (IUL) insurance?",
         answer:
           "Indexed universal life is a type of universal life insurance where the credited interest rate is tied to a market index, like the S&P 500, usually with an upside cap and a downside floor. It's still universal life, not a separate insurance category, just with a different way of setting the credited rate.",
+      },
+      {
+        question: "Is IUL better than whole life insurance?",
+        answer:
+          "Neither is universally better. Whole life offers a guaranteed minimum growth rate that the insurer can't revise downward. IUL can credit more in strong index years but the cap rate that limits its upside is not guaranteed either — insurers can lower it over time, so an optimistic illustration can overstate real long-run performance.",
       },
       {
         question: "Can I convert term life insurance to whole or universal life?",
@@ -5606,6 +5616,353 @@ export const COMPARISONS: ComparisonEntry[] = [
     calculatorLinks: [
       { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
       { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
+  // ─── 403(b) vs 401(k) ─────────────────────────────────────────────────────
+  {
+    slug: "403b-vs-401k",
+    title: "403(b) vs 401(k): What's the Real Difference in 2026?",
+    metaDescription:
+      "403(b) vs 401(k) compared: who can offer each, 2026 contribution limits, the 403(b)'s 15-year catch-up, fees, and which is riskier for your money.",
+    targetKeyword: "403b vs 401k",
+    optionA: "403(b)",
+    optionB: "401(k)",
+    h1: "403(b) vs 401(k): What's the Real Difference?",
+    intro:
+      "A 403(b) and a 401(k) share the same 2026 contribution limit of $24,500 ($32,500 if you're 50+, $35,750 if you're 60–63) and nearly identical tax rules, but a 403(b) is only offered by public schools, hospitals, and 501(c)(3) nonprofits, while a 401(k) comes from for-profit (and some nonprofit) employers — and the two differ in ways that matter, from fund menus to an extra catch-up rule only the 403(b) has.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who can offer it", a: "Public schools, hospitals, churches, 501(c)(3) nonprofits", b: "For-profit employers (and some nonprofits)" },
+        { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+; $35,750 if 60–63)", b: "$24,500 ($32,500 if 50+; $35,750 if 60–63)" },
+        { dimension: "Extra catch-up option", a: "15-year rule: up to $3,000/year extra, $15,000 lifetime cap, for 15+ years at a qualifying employer", b: "None beyond the standard age-based catch-ups" },
+        { dimension: "ERISA protection", a: "Often exempt (church plans, some governmental/nonprofit plans)", b: "Almost always ERISA-covered, with fiduciary oversight" },
+        { dimension: "Investment menu", a: "Historically annuities and mutual funds only; newer plans can add collective investment trusts", b: "Broad mutual fund and index fund menu, sometimes a brokerage window" },
+        { dimension: "Typical fees", a: "Can run higher, especially older annuity-based products", b: "Generally lower, especially with index fund options" },
+        { dimension: "Employer match", a: "Less common, but growing — especially at hospital systems", b: "Very common, typically 3–6% of pay" },
+      ],
+    },
+    verdict:
+      "Contribute enough to capture any employer match either account offers — that's free money regardless of the label. If your 403(b) menu is dominated by high-fee annuity products, look for a 403(b)(7) mutual-fund-only option or ask your employer if one's available; if not, prioritize an outside IRA for extra savings before overfunding a high-fee 403(b). Teachers, nurses, and other long-tenured nonprofit staff should also check whether they qualify for the 403(b)'s 15-year catch-up — it's a real bonus a 401(k) simply doesn't offer.",
+    sections: [
+      {
+        heading: "The 403(b)'s 15-year catch-up is a unique perk",
+        content:
+          "Employees with at least 15 years of service at a qualifying employer — public schools, hospitals, home health agencies, and certain other nonprofits — can contribute an extra $3,000 per year to a 403(b), up to a $15,000 lifetime cap, under a special rule the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-403b-contribution-limits) calls the 15-year rule.\n\nA 401(k) has no equivalent. If you're 50 or older, you generally use whichever catch-up gives you the bigger number in a given year — the standard age-50 catch-up or the 15-year rule — rather than stacking both to their full amounts. Check with your plan administrator, since eligibility for the 15-year rule depends on your specific years of service and employer type.",
+      },
+      {
+        heading: "Why 403(b) fees have a worse reputation",
+        content:
+          "Many older 403(b) plans, especially at K-12 schools, were built around variable annuity contracts sold by insurance reps, layered with mortality and expense charges, surrender fees, and other costs that a typical 401(k) doesn't carry. That history is the main reason 403(b)s carry a reputation for higher fees.\n\nThe fix isn't to avoid the 403(b) — it's to check what's actually inside yours. Many modern 403(b) plans, particularly at hospitals and universities, now offer low-cost mutual fund lineups (sometimes called 403(b)(7) custodial accounts) that look and cost about the same as a good 401(k). Ask your HR department for the plan's fee disclosure and compare the expense ratios directly against a comparable 401(k) fund.",
+      },
+      {
+        heading: "ERISA coverage isn't automatic for a 403(b)",
+        content:
+          "A 401(k) at a for-profit company is almost always covered by ERISA, the federal law that requires fiduciary oversight, nondiscrimination testing, and specific disclosure rules. Church-sponsored 403(b) plans, and many governmental 403(b) plans (public schools), are exempt from ERISA by statute.\n\nThat doesn't automatically make a 403(b) unsafe, but it does mean less regulatory oversight of the plan's investment menu and fees. If your 403(b) is ERISA-exempt, take extra care reviewing the specific products offered rather than assuming the same protections apply that would apply to a typical 401(k).",
+      },
+      {
+        heading: "Can you have both, and does it change your limit?",
+        content:
+          "If you work two jobs in the same year — say, a school district 403(b) and a side gig with a 401(k) — the two plans share one combined IRS elective-deferral limit, not two separate ones. Your total contributions across both accounts in 2026 cannot exceed $24,500 ($32,500 if you're 50+), the same rule that applies to switching between a 401(k) and a 403(b) mid-career.\n\nThis differs from a 457(b), which has its own separate limit that can be maxed independently in the same year (see [403(b) vs 457(b)](/compare/457b-vs-401k/) for how that account fits into the picture).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a 403(b) the same as a 401(k)?",
+        answer:
+          "They're structurally similar — both are employer-sponsored, tax-advantaged retirement accounts with the same 2026 contribution limit — but a 403(b) is only offered by public schools, hospitals, churches, and other 501(c)(3) nonprofits, while a 401(k) comes from for-profit employers.",
+      },
+      {
+        question: "Can I have both a 403(b) and a 401(k)?",
+        answer:
+          "Yes, if you have income from two different qualifying employers in the same year, but the two accounts share one combined IRS contribution limit ($24,500 in 2026), not two separate limits.",
+      },
+      {
+        question: "Does a 403(b) have the same contribution limit as a 401(k)?",
+        answer:
+          "Yes. Both share the same 2026 elective deferral limit of $24,500, with an additional $8,000 catch-up at age 50+ ($32,500 total) or $11,250 for ages 60–63 ($35,750 total).",
+      },
+      {
+        question: "What is the 403(b) 15-year catch-up rule?",
+        answer:
+          "Employees with at least 15 years of service at a qualifying employer can contribute an extra $3,000 per year beyond the standard limit, up to a $15,000 lifetime cap. A 401(k) has no equivalent provision.",
+      },
+      {
+        question: "Are 403(b) plans riskier than 401(k) plans?",
+        answer:
+          "Not inherently, but many older 403(b) plans are built around higher-fee annuity products and some are exempt from ERISA's fiduciary oversight. Check your plan's specific fund lineup and fee disclosure rather than assuming it matches a typical 401(k).",
+      },
+    ],
+    sources: [
+      { label: "IRS — Retirement Topics: 403(b) Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-403b-contribution-limits" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — Retirement Topics: Catch-Up Contributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions" },
+    ],
+    relatedComparisons: ["457b-vs-401k", "tsp-vs-401k", "pension-vs-401k", "sep-ira-vs-solo-401k"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+      { label: "Retirement Hub", href: "/retirement/" },
+    ],
+  },
+
+  // ─── TSP vs 401(k) ────────────────────────────────────────────────────────
+  {
+    slug: "tsp-vs-401k",
+    title: "TSP vs 401(k): Which Retirement Plan Wins in 2026?",
+    metaDescription:
+      "TSP vs 401(k) compared: agency/employer match, fund menu, fees, and the unique G Fund — see which is better for federal employees and military.",
+    targetKeyword: "tsp vs 401k",
+    optionA: "Thrift Savings Plan (TSP)",
+    optionB: "401(k)",
+    segment: "Federal employees & military",
+    h1: "TSP vs 401(k): Which Retirement Plan Wins?",
+    intro:
+      "The Thrift Savings Plan (TSP) is the federal government's retirement plan for civilian employees and uniformed service members, and it shares the same 2026 contribution limit as a 401(k) — $24,500, or $32,500 at 50+ — but wins on cost, charging roughly 0.05% in administrative fees versus a typical 401(k)'s 0.4%–1%, while offering a far narrower five-fund menu in exchange.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who can use it", a: "Federal civilian employees and uniformed military", b: "Private-sector (and some nonprofit) employees" },
+        { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+; $35,750 if 60–63)", b: "$24,500 ($32,500 if 50+; $35,750 if 60–63) — shared limit if you also have a TSP in the same year" },
+        { dimension: "Agency/employer match", a: "FERS/BRS: automatic 1% + match up to 4% (5% total); legacy CSRS/High-3: no match", b: "Varies by employer, commonly 3–6% of pay" },
+        { dimension: "Investment menu", a: "5 core index funds (G, F, C, S, I) plus lifecycle funds — that's it", b: "Employer-chosen menu, often 15–30+ funds, sometimes a brokerage window" },
+        { dimension: "Average expense ratio", a: "~0.05%", b: "~0.4%–1%+ depending on the plan" },
+        { dimension: "Unique option", a: "G Fund — government securities that can't lose principal, with a better yield than most stable-value funds", b: "No direct equivalent" },
+        { dimension: "Roth option", a: "Yes — Roth TSP", b: "Yes, if the employer's plan offers it" },
+      ],
+    },
+    verdict:
+      "For most federal and military savers, the TSP's rock-bottom fees are hard to beat — contribute at least enough to capture your full agency or BRS match, since that's an immediate, guaranteed return. The narrow five-fund menu is a real tradeoff if you want more control over your asset allocation, but for a low-maintenance, low-cost core retirement account, the TSP is one of the best deals in American retirement savings. A 401(k) from a later private-sector job isn't automatically worse — check its specific match and expense ratios before deciding whether to roll old TSP money over.",
+    sections: [
+      {
+        heading: "The G Fund has no real 401(k) equivalent",
+        content:
+          "The [TSP's](https://www.tsp.gov/) G Fund invests in a special-issue U.S. Treasury security available only to the TSP, guaranteeing that principal can't be lost while still paying an intermediate-term Treasury yield. Most 401(k) plans that offer a \"stable value fund\" pay a lower yield because it's typically backed by insurance-company contracts rather than Treasury securities directly.\n\nFor savers who want a genuinely risk-free place to park money inside a tax-advantaged account, the G Fund is a meaningful advantage the TSP offers that a typical 401(k) menu simply doesn't match.",
+      },
+      {
+        heading: "Matching formulas differ by retirement system, not just by plan",
+        content:
+          "Federal employees under the Federal Employees Retirement System (FERS) or military members under the Blended Retirement System (BRS, for those who entered service in 2018 or later) get an automatic 1% agency or service contribution regardless of whether they contribute anything themselves, plus a dollar-for-dollar match on the first 3% of pay and 50 cents per dollar on the next 2% — five percent total.\n\nEmployees under the legacy Civil Service Retirement System (CSRS) or military members under the older High-3 retirement system get no TSP match at all, since their retirement security comes primarily from a defined-benefit pension instead. Check which system applies to you before assuming you're leaving a match on the table.",
+      },
+      {
+        heading: "Fees compound more than most savers expect",
+        content:
+          "A 0.4% difference in annual fees sounds small, but on a $500,000 balance over 20 years, it can cost tens of thousands of dollars in lost compounding compared with the TSP's roughly 0.05% expense ratio. This is the single biggest structural reason the TSP consistently ranks as one of the lowest-cost retirement plans available in the U.S.\n\nIf you roll TSP money into an IRA or a new employer's 401(k) after leaving federal service, run the numbers on the new plan's specific fund expense ratios first — a plan with high-fee actively managed funds can erase the TSP's cost advantage quickly.",
+      },
+      {
+        heading: "Military TSP works the same as civilian TSP",
+        content:
+          "The fund menu, contribution limits, and Roth option are identical whether you're a civilian federal employee or an active-duty service member — the only real difference is the matching formula, which depends on whether you're under BRS or the legacy retirement system. Use the [military retirement calculator](/retirement/military-retirement-calculator/) to project how your TSP balance combines with a military pension over a full career.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is the TSP better than a 401(k)?",
+        answer:
+          "The TSP usually wins on cost — roughly 0.05% in fees versus a typical 401(k)'s 0.4%–1%+ — but it offers only five core funds plus lifecycle options, while a 401(k) typically offers a much wider menu. Which is \"better\" depends on whether you value low cost or investment flexibility more.",
+      },
+      {
+        question: "Can federal employees have both a TSP and a 401(k)?",
+        answer:
+          "Yes, if you also have private-sector income in the same year, but the TSP and a 401(k) (or 403(b)) share one combined IRS elective-deferral limit — $24,500 in 2026 — not two separate limits.",
+      },
+      {
+        question: "What happens to my TSP if I leave federal service?",
+        answer:
+          "You can leave the money in the TSP, roll it into a new employer's 401(k) or 403(b), or roll it into an IRA. The TSP's low fees are a strong argument for leaving it in place if your new plan doesn't clearly beat its cost structure.",
+      },
+      {
+        question: "Does military TSP work the same as civilian TSP?",
+        answer:
+          "Yes — same fund menu, same contribution limits, same Roth option. The main difference is the matching formula, which depends on whether you're under the Blended Retirement System (BRS) or the legacy High-3 system.",
+      },
+      {
+        question: "What is the TSP G Fund and does a 401(k) have anything like it?",
+        answer:
+          "The G Fund is a special Treasury security available only through the TSP that can't lose principal while paying an intermediate-term Treasury yield. Most 401(k) stable-value funds pay less because they're typically backed by insurance contracts rather than direct Treasury securities.",
+      },
+    ],
+    sources: [
+      { label: "TSP.gov — The Thrift Savings Plan", url: "https://www.tsp.gov/" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — Retirement Topics: Catch-Up Contributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions" },
+    ],
+    relatedComparisons: ["403b-vs-401k", "457b-vs-401k", "military-retirement-vs-va-disability", "military-retirement-vs-medical-retirement"],
+    calculatorLinks: [
+      { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
+  // ─── Rollover IRA vs Traditional IRA ─────────────────────────────────────
+  {
+    slug: "rollover-ira-vs-traditional-ira",
+    title: "Rollover IRA vs Traditional IRA: What's Actually Different?",
+    metaDescription:
+      "Rollover IRA vs traditional IRA compared: they're taxed identically, but bankruptcy protection, backdoor Roth impact, and future rollovers can differ.",
+    targetKeyword: "rollover ira vs traditional ira",
+    optionA: "Rollover IRA",
+    optionB: "Traditional IRA",
+    h1: "Rollover IRA vs Traditional IRA: What's Actually Different?",
+    intro:
+      "A rollover IRA is legally a traditional IRA — same tax rules, same contribution limits, same IRS treatment since the Pension Protection Act of 2006 — and the only reason the label exists is that some savers keep former-401(k) money in its own account to preserve stronger bankruptcy protection and easier future rollovers, not because the tax code treats the two differently.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Legal/tax classification", a: "Identical — a rollover IRA IS a traditional IRA under IRS rules", b: "Identical — same account type" },
+        { dimension: "Typical funding source", a: "Money transferred from a former employer's 401(k), 403(b), or TSP", b: "New annual contributions (can also receive a rollover)" },
+        { dimension: "2026 contribution limit for new money", a: "$7,500/year ($8,600 if 50+) — rolled-over money itself has no dollar cap", b: "$7,500/year ($8,600 if 50+)" },
+        { dimension: "Accepted back into a future employer plan", a: "Generally accepted without extra scrutiny if kept free of new contributions", b: "Some employer plans decline to accept it if commingled with contributory money" },
+        { dimension: "Federal bankruptcy protection", a: "Unlimited, if traceable to a qualified employer plan", b: "Capped at an inflation-adjusted amount (about $1,711,975 as of April 2025)" },
+        { dimension: "Backdoor Roth pro-rata impact", a: "Counts against you, same as any pre-tax IRA balance", b: "Counts against you, same as any pre-tax IRA balance" },
+      ],
+    },
+    verdict:
+      "Don't treat a rollover IRA and a traditional IRA as two different products — for federal tax purposes, they're the same account with a different label. Keep 401(k) rollover money in its own uncommingled rollover IRA if you want the option to roll it into a future employer's plan or you want the strongest possible bankruptcy protection; if neither matters to you, there's no tax reason to keep the accounts separate, and combining them is simpler to manage.",
+    sections: [
+      {
+        heading: "Why the 'rollover IRA' label still exists",
+        content:
+          "Before the Pension Protection Act of 2006, keeping 401(k) rollover money in a separate \"conduit\" IRA was legally required if you wanted to preserve the ability to roll it into a future employer's plan. That legal requirement is gone — nearly any traditional IRA balance can now be rolled into a new employer's plan under [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) rules.\n\nWhat's left is a practical, not legal, reason: many employer plans still write their own plan documents to only accept a rollover that hasn't been mixed with regular IRA contributions. Custodians keep the \"rollover IRA\" label mainly to make that separation easy to prove later.",
+      },
+      {
+        heading: "Bankruptcy protection is the biggest real difference",
+        content:
+          "Under federal bankruptcy law, IRA money that can be traced back to a 401(k) or other ERISA-qualified employer plan is protected without a dollar limit. A traditional IRA funded only by your own annual contributions is protected only up to an inflation-adjusted cap — about $1,711,975 as of the April 2025 adjustment, which rises again in 2028.\n\nFor most savers, this distinction never matters. But if your rollover balance is large, or your state's own IRA protection is weaker than the federal exemption, keeping rollover money in its own account preserves a genuine legal advantage that gets muddied once you mix in new contributions.",
+      },
+      {
+        heading: "The backdoor Roth pro-rata trap catches both account types equally",
+        content:
+          "If you plan to use a backdoor Roth IRA conversion — contributing to a nondeductible traditional IRA, then converting it to Roth — the IRS's pro-rata rule counts ALL your traditional IRA balances together, rollover or not, when figuring how much of the conversion is taxable.\n\nA large rollover IRA balance can turn a clean backdoor Roth conversion into a partially taxable event, exactly the same way a large contributory traditional IRA balance would. Some savers avoid this by rolling old 401(k) money into a NEW employer's 401(k) instead of an IRA, keeping their IRA balance clean for backdoor Roth purposes — worth considering before you roll over.",
+      },
+      {
+        heading: "When it actually helps to keep them separate",
+        content:
+          "Keep former 401(k) money in a dedicated rollover IRA, uncommingled with new contributions, if any of these apply: you might want to roll it into a future employer's plan, you want the strongest bankruptcy protection available, or you're tracking cost basis and want a clean audit trail. Otherwise, combining a rollover IRA with an existing traditional IRA is simpler to manage and doesn't change your tax treatment at all.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a rollover IRA taxed differently than a traditional IRA?",
+        answer:
+          "No. Both are the same account type under IRS rules, with identical tax treatment, required minimum distribution rules, and early withdrawal penalty rules.",
+      },
+      {
+        question: "Can I contribute new money to a rollover IRA?",
+        answer:
+          "Yes, up to the standard IRA limit — $7,500 in 2026 ($8,600 if 50+) — but doing so may cause some employer plans to decline accepting a future rollover from that account if it requires uncommingled rollover funds.",
+      },
+      {
+        question: "Should I combine my rollover IRA and traditional IRA into one account?",
+        answer:
+          "Combining them simplifies management and doesn't change your taxes, but it can reduce your ability to roll the money into a future employer's plan and may mix your bankruptcy protection tiers. Keep them separate only if either benefit matters to you.",
+      },
+      {
+        question: "Does a rollover IRA affect the backdoor Roth pro-rata rule?",
+        answer:
+          "Yes. The IRS pro-rata rule counts all your traditional IRA balances together, including rollover money, so a large rollover IRA can make a backdoor Roth conversion partially taxable.",
+      },
+      {
+        question: "What are the disadvantages of a rollover IRA?",
+        answer:
+          "There's no inherent disadvantage versus a traditional IRA — it's the same account type. The only downside appears if you contribute new money to it and later need it to be an uncommingled rollover for a specific employer plan's rules.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Rollovers of Retirement Plan and IRA Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "traditional-ira-vs-401k", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "IRA Early Withdrawal Calculator", href: "/retirement/ira-early-withdrawal-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+      { label: "Retirement Hub", href: "/retirement/" },
+    ],
+  },
+
+  // ─── 457(b) vs 401(k) ─────────────────────────────────────────────────────
+  {
+    slug: "457b-vs-401k",
+    title: "457(b) vs 401(k): Contribution Limits, Penalties & Risk",
+    metaDescription:
+      "457(b) vs 401(k) compared: separate contribution limits, no early-withdrawal penalty after leaving your job, and the real risk of a non-governmental plan.",
+    targetKeyword: "457b vs 401k",
+    optionA: "457(b)",
+    optionB: "401(k)",
+    h1: "457(b) vs 401(k): What Public and Nonprofit Employees Should Know",
+    intro:
+      "A governmental 457(b) plan shares the same 2026 contribution limit as a 401(k) — $24,500, or $32,500 at 50+ — but uses a completely separate limit, so public employees with both can max out each account in the same year, and a 457(b) skips the 401(k)'s 10% early-withdrawal penalty entirely once you've left your job, at any age.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who can offer it", a: "State/local governments; select nonprofit \"top-hat\" plans for management/highly compensated employees", b: "For-profit employers and most nonprofits, broadly eligible" },
+        { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+; $35,750 if 60–63) — a SEPARATE limit from a 401(k)/403(b)", b: "$24,500 ($32,500 if 50+; $35,750 if 60–63) — shares one limit with a 403(b)/TSP" },
+        { dimension: "Special catch-up", a: "3-year rule: up to 2x the annual limit in the final 3 years before normal retirement age (can't stack with the age-50 catch-up)", b: "None beyond the standard age-based catch-ups" },
+        { dimension: "Early withdrawal penalty", a: "None, after separating from your employer — at any age (governmental plans)", b: "10% penalty before age 59½, with limited exceptions" },
+        { dimension: "Asset protection", a: "Non-governmental (\"top-hat\") plans: unfunded, remain the employer's general asset — at risk if the employer goes bankrupt", b: "ERISA trust protects assets from the employer's creditors" },
+        { dimension: "Rollover flexibility", a: "Governmental 457(b): rolls into an IRA or new plan freely. Non-governmental: generally CANNOT roll into an IRA", b: "Rolls into an IRA or a new employer's plan freely" },
+        { dimension: "Can you max both in the same year?", a: "Yes — a governmental 457(b) and a 401(k)/403(b) have separate limits", b: "Yes — see left" },
+      ],
+    },
+    verdict:
+      "A governmental 457(b) is one of the most underrated accounts in public-sector finance: no early-withdrawal penalty once you separate from your job, and a contribution limit that stacks separately on top of a 401(k) or 403(b) if your employer offers both — max both if you can afford to. A non-governmental \"top-hat\" 457(b), often found at hospitals and some nonprofits, is a different animal — the extra tax deferral is real, but so is the risk of losing it to the employer's creditors, and the limited rollover options, so weigh that risk before deferring large amounts into one.",
+    sections: [
+      {
+        heading: "No early-withdrawal penalty is the 457(b)'s biggest edge",
+        content:
+          "A 401(k) generally charges a 10% penalty on withdrawals before age 59½, with only a short list of exceptions. A governmental 457(b) has no such penalty at all once you've separated from the employer that sponsored it — you can withdraw at 45, 50, or any age, paying ordinary income tax but no early-withdrawal penalty, per the [IRS](https://www.irs.gov/retirement-plans/comparison-of-governmental-457b-plans-and-401k-plans-features-and-corrections) comparison of the two plan types.\n\nThis makes a governmental 457(b) especially valuable for public employees who plan to retire early, since it avoids the early-retirement penalty problem that complicates 401(k) and IRA withdrawals before 59½.",
+      },
+      {
+        heading: "You can max out a 457(b) and a 401(k)/403(b) in the same year",
+        content:
+          "Unlike a 403(b) and a 401(k), which share one combined IRS contribution limit, a governmental 457(b) has its own separate limit. A public university employee with both a 403(b) and a 457(b) available, for example, could contribute $24,500 to each in 2026 — $49,000 total in tax-advantaged retirement savings, before any catch-up contributions.\n\nThis is one of the most overlooked opportunities in public-sector retirement planning. Check whether your employer offers a 457(b) alongside your primary plan; many public employees never realize the two limits stack.",
+      },
+      {
+        heading: "The non-governmental 457(b) carries real employer-credit risk",
+        content:
+          "A \"top-hat\" 457(b) — offered by hospitals, some nonprofits, and other tax-exempt organizations to a select group of management or highly compensated employees — is legally unfunded. The money you defer remains a general asset of the employer, not held in a protected trust, until it's actually distributed to you.\n\nIf the employer becomes insolvent, top-hat 457(b) participants become unsecured creditors, competing with everyone else the company owes money to. This is a genuinely non-obvious risk many employees don't realize when they see a large employer match or generous deferral option on a top-hat plan — the deferral itself is the risk, not just the investment choices inside it.",
+      },
+      {
+        heading: "The special 3-year catch-up works differently than you'd expect",
+        content:
+          "In the three years immediately before a 457(b) plan's normal retirement age, a participant may contribute up to double the standard annual limit, or the total of previously unused contribution room from past years, whichever is less. This is separate from — and cannot be combined with — the standard age-50 catch-up; a participant eligible for both must use whichever produces the larger contribution in a given year, not stack them together.\n\nThis rule rewards employees who under-contributed earlier in their career and are approaching retirement, giving them a real opportunity to catch up quickly in their final working years.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I contribute to both a 457(b) and a 401(k) in the same year?",
+        answer:
+          "Yes. A governmental 457(b) has its own separate IRS contribution limit from a 401(k) or 403(b), so you can contribute the maximum to each in the same year if your employer offers both.",
+      },
+      {
+        question: "Is a 457(b) safe if my employer goes bankrupt?",
+        answer:
+          "It depends on the type. Governmental 457(b) plans must hold assets in trust for participants, similar to a 401(k). Non-governmental \"top-hat\" 457(b) plans are unfunded and remain the employer's general asset, putting participants at risk as unsecured creditors in a bankruptcy.",
+      },
+      {
+        question: "Can I withdraw from a 457(b) penalty-free before 59½?",
+        answer:
+          "Yes, for a governmental 457(b) — there's no 10% early-withdrawal penalty once you separate from the employer, at any age. Non-governmental 457(b) plans also skip this penalty but have more limited distribution options overall.",
+      },
+      {
+        question: "Can I roll my 457(b) into an IRA?",
+        answer:
+          "A governmental 457(b) can roll into an IRA or a new employer's plan just like a 401(k). A non-governmental (top-hat) 457(b) generally cannot be rolled into an IRA — it's typically limited to a lump-sum distribution or, in some cases, a transfer to another top-hat 457(b).",
+      },
+      {
+        question: "What is the 457(b) special catch-up rule?",
+        answer:
+          "In the final 3 years before a 457(b) plan's normal retirement age, participants can contribute up to double the standard limit (or their unused contribution room from prior years, if less). It can't be combined with the standard age-50 catch-up in the same year — you use whichever produces the larger amount.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Comparison of Governmental 457(b) Plans and 401(k) Plans", url: "https://www.irs.gov/retirement-plans/comparison-of-governmental-457b-plans-and-401k-plans-features-and-corrections" },
+      { label: "IRS — IRC 457(b) Deferred Compensation Plans", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/irc-457b-deferred-compensation-plans" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    ],
+    relatedComparisons: ["403b-vs-401k", "tsp-vs-401k", "pension-vs-401k", "sep-ira-vs-solo-401k"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+      { label: "Retirement Hub", href: "/retirement/" },
     ],
   },
 
