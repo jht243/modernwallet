@@ -2268,9 +2268,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── Best Online Will Makers ──────────────────────────────────────────────
   {
     slug: "best-online-will-makers",
-    title: "Best Online Will Makers 2026: Verified Picks",
+    title: "Best Online Will Makers 2026: Free & Paid Options",
     metaDescription:
-      "Best online will makers of 2026: Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear. Verified pricing, state coverage, and when each is right.",
+      "Compare 2026's top online will makers — FreeWill's genuinely $0 plan vs. Trust & Will and LegalZoom's full-service options. Verified pricing inside.",
     targetKeyword: "best online will makers",
     category: "online will makers",
     angle: "best",

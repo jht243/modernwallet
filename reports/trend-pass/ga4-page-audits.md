@@ -47,3 +47,12 @@
 | /roundup/best-retirement-accounts-for-self-employed/ | 2026-07-18 | 1 | 0/0/0/0/0 | 0 |
 | / | 2026-07-21 | 1 | 0/0/0/0/0 | 0 |
 | /retirement/military-retirement-calculator/ | 2026-07-22 | 1 | 0/2/3/0/0 | 0 |
+| /estate-planning/will-cost-calculator/ | 2026-07-27 | 5 | 0/0/2/0/0 | 0 |
+| /roundup/best-online-will-makers/ | 2026-07-27 | 5 | 0/0/0/1/0 | 0 |
+| /guides/529-leftover-money-options/ | 2026-07-27 | 4 | 0/0/0/0/0 | 0 |
+| /roundup/best-money-market-accounts/ | 2026-07-27 | 4 | 0/0/0/0/0 | 0 |
+| /guides/how-to-choose-a-financial-advisor/ | 2026-07-27 | 2 | 0/0/0/0/0 | 1 |
+| /real-estate/capital-gains-calculator/ | 2026-07-27 | 2 | 0/0/0/1/0 | 0 |
+| /auto-loan/ | 2026-07-27 | 1 | 0/0/0/0/0 | 0 |
+| /compare/trump-account-vs-roth-ira/ | 2026-07-27 | 1 | 0/0/0/0/0 | 1 |
+| /estate-planning/living-trust-cost-calculator/ | 2026-07-27 | 1 | 0/1/1/1/0 | 0 |

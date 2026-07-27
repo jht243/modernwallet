@@ -1,0 +1,121 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-26",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/estate-planning/will-cost-calculator/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 5
+    },
+    {
+      "page": "/roundup/best-online-will-makers/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/",
+      "views": 4,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/how-to-choose-a-financial-advisor/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/real-estate/capital-gains-calculator/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/auto-loan/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/trump-account-vs-roth-ira/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/estate-planning/living-trust-cost-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 29,
+  "top10_pages_total_clicks": 29,
+  "channel_split": {
+    "/estate-planning/will-cost-calculator/": {
+      "Organic Search": 5,
+      "Unassigned": 4
+    },
+    "/roundup/best-online-will-makers/": {
+      "Direct": 4,
+      "Unassigned": 1
+    },
+    "/": {
+      "Referral": 3,
+      "Unassigned": 3,
+      "Organic Search": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/guides/how-to-choose-a-financial-advisor/": {
+      "Organic Search": 2
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 2,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/auto-loan/": {
+      "Unassigned": 1
+    },
+    "/compare/trump-account-vs-roth-ira/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/estate-planning/living-trust-cost-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/real-estate/capital-gains-calculator/": {
+      "Direct": 1
+    }
+  }
+}

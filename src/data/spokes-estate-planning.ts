@@ -63,6 +63,11 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         answer:
           "Yes. A will only takes effect at death — a durable power of attorney handles finances and a healthcare directive handles medical decisions during any incapacity BEFORE death. Attorney-drafted, they add $250 to $700 to a will package ($150 to $400 for the POA, $100 to $300 for the healthcare directive with HIPAA release). Most online will services (Trust & Will, LegalZoom, Nolo, FreeWill, Mama Bear) include both in their base package at no additional cost. Skipping them means a court-appointed guardian instead of your named agent if incapacity strikes.",
       },
+      {
+        question: "How does a will's cost compare to a living trust?",
+        answer:
+          "A will is cheaper upfront: $300 to $7,500+ attorney-drafted (or as low as $99 online), versus $1,500 to $5,000+ for a revocable living trust ($499–$599 online). The tradeoff is what happens at death — a will goes through public probate court, while a trust's assets bypass probate entirely. Our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) breaks down trust pricing, and [living trust vs will](/compare/living-trust-vs-will/) covers the full probate-cost, privacy, and multi-state-property tradeoffs side by side.",
+      },
     ],
     sources: [
       { label: "Legaltemplates 2026 — 909-firm estate planning cost study", url: "https://legaltemplates.net/resources/estate-planning/cost-of-estate-planning/" },
@@ -81,7 +86,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       includePOA: true,
       includeHealthcareDirective: true,
     },
-    relatedSlugs: [],
+    relatedSlugs: ["living-trust-cost-calculator"],
     // 50 state subpages populated in follow-on slice via src/data/state-overrides.ts
     stateVariants: [
       "alabama", "alaska", "arizona", "arkansas", "california",
@@ -101,9 +106,9 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     calculator: "estate-planning",
     slug: "living-trust-cost-calculator",
     islandId: "living-trust-cost",
-    title: "Living Trust Cost Calculator: RLT + Irrevocable Trusts",
+    title: "Living Trust Cost Calculator: RLT, ILIT & Dynasty Trusts",
     metaDescription:
-      "Free living trust cost calculator. See revocable, ILIT, MAPT, and dynasty trust costs plus trust funding — attorney and online options compared.",
+      "Free calculator: revocable living trust, ILIT, MAPT, and dynasty trust setup costs by state — plus attorney vs. online pricing.",
     targetKeyword: "living trust cost calculator",
     estimatedVolume: 4900,
     estimatedKD: 36,
@@ -157,6 +162,11 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         question: "How much does it cost to maintain a living trust after it's set up?",
         answer:
           "A revocable living trust has no mandatory annual fee and needs no separate tax return while you're alive — it's a grantor trust, so it uses your own Social Security number and is reported on your personal Form 1040, unlike an irrevocable trust, which must file its own Form 1041. Ongoing costs are occasional rather than annual: retitling any asset you acquire after the trust is signed (a new house, a refinanced property, a new brokerage account) costs the same $200–$500 per deed or $300–$1,500 per account as the original funding step. An amendment to update beneficiaries or add a provision typically runs $300–$1,000 with an attorney. If you name a corporate trustee instead of a family member, expect an annual fee of roughly 0.5%–1.5% of trust assets — a cost most families avoid by serving as their own trustee while they're able.",
+      },
+      {
+        question: "Is a living trust worth the cost?",
+        answer:
+          "It depends on what probate would otherwise cost your estate. In California, a $750,000 estate faces roughly $36,000 in combined attorney and executor probate fees under Cal. Prob. Code §10810/§10800 — a $1,500–$5,000 trust (or $599 online) pays for itself many times over. For a smaller estate that would qualify for a state's simplified small-estate probate procedure, the trust's main benefit disappears and a will is the better spend. See [is a living trust worth it](/guides/is-a-living-trust-worth-it/) for the full break-even math by state.",
       },
     ],
     sources: [

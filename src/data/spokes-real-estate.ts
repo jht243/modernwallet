@@ -442,9 +442,9 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
   {
     calculator: "real-estate",
     slug: "capital-gains-calculator",
-    title: "Rental Property Capital Gains Calculator",
+    title: "Rental Property Capital Gains Calculator: Net Proceeds",
     metaDescription:
-      "Calculate capital gains tax on a rental property sale — including 25% depreciation recapture and long-term CG rates. Find your net sale proceeds.",
+      "See exactly what you'll net after selling a rental property — capital gains tax plus the 25% depreciation recapture the IRS always collects.",
     targetKeyword: "rental property capital gains calculator",
     estimatedVolume: 3600,
     estimatedKD: 40,
