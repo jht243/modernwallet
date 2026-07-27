@@ -5805,7 +5805,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Traditional IRA",
     h1: "Rollover IRA vs Traditional IRA: What's Actually Different?",
     intro:
-      "A rollover IRA is legally a traditional IRA — same tax rules, same contribution limits, same IRS treatment since the Pension Protection Act of 2006 — and the only reason the label exists is that some savers keep former-401(k) money in its own account to preserve stronger bankruptcy protection and easier future rollovers, not because the tax code treats the two differently.",
+      "A rollover IRA is legally a traditional IRA — same tax rules, same contribution limits, same [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) treatment since the Pension Protection Act of 2006 — and the only reason the label exists is that some savers keep former-401(k) money in its own account to preserve stronger bankruptcy protection and easier future rollovers, not because the tax code treats the two differently.",
     comparisonTable: {
       rows: [
         { dimension: "Legal/tax classification", a: "Identical — a rollover IRA IS a traditional IRA under IRS rules", b: "Identical — same account type" },
