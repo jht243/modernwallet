@@ -120392,11 +120392,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/news/data-center-costs": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:dae39720e661f13f08275d5ad264cb230c6f3d869b49f98fb3502425348d8b34",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-23T07:00:44-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "The data center honeymoon is over",
@@ -120412,7 +120416,7 @@
           "relevance_hits": [
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "The Hidden Cost of Data Centers: Inside the Opposition - NerdWallet",
           "tool_io": []
         },
@@ -121706,11 +121710,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/studies/setting-boundaries-family-borrowing": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:c0bdda28d0966b2a5323b84ebf286cc490425b1f6977ea8f13cfda0dde2da996",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-23T06:00:07-07:00",
+          "our_url": "/guides/lending-money-to-family-boundaries/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "1. Secure your emergency fund first",
@@ -121722,7 +121730,7 @@
             "finance",
             "loan"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Helping Family With Bills? Set Boundaries Before It Costs You - NerdWallet",
           "tool_io": []
         },
@@ -141902,11 +141910,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-july-24-2026": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:840424054d42b279ec8698cd4469bf703f7ca4e4f36825f1daac0c697ee5440a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-24T06:50:30-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -141921,7 +141933,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Friday, July 24: Highest Rates of 2026 - NerdWallet",
           "tool_io": []
         },
@@ -141984,11 +141996,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-july-27-2026": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:8e750e4c4d158a053dbd27d4d1545e5d6b844513b42c988e0cb3539272e94237",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-27T07:09:42-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -142003,7 +142019,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Monday, July 27: Kind of a Big Jump - NerdWallet",
           "tool_io": []
         },
@@ -142049,11 +142065,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-thursday-july-23-2026": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:1da3a3c8ef8799e68bb616137c7ff280277024ebc66970c63ce1f14358329104",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-23T05:53:04-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -142069,7 +142089,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Thursday, July 23: Ticking Down Today but Still Higher Than June - NerdWallet",
           "tool_io": []
         },
@@ -142650,11 +142670,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/weekly-mortgage-rates-7-23-26": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:1f469fea7261c2a841df4374411164b8bc7e2bec495774ce084883870c8a53b6",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-16T00:00:00-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "If you&#39;re just starting your house hunt",
@@ -142665,7 +142689,7 @@
           "relevance_hits": [
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Weekly Mortgage Rates Tick Up, But Seasoned Shoppers Shrug - NerdWallet",
           "tool_io": []
         },
@@ -145158,11 +145182,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/personal-loans/reviews/earnest-personal-loans": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:5b17a586a471f25aec5f89309e58ffe70d52b573a7944e8c4fb81eafebb7b714",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-27T00:00:00-07:00",
+          "our_url": "/guides/how-to-read-a-personal-loan-review/",
           "outline": [
             "What to know about Earnest personal loans",
             "What we like most about Earnest",
@@ -145179,7 +145207,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Earnest 2026 Personal Loan Review - NerdWallet",
           "tool_io": []
         },
@@ -203352,11 +203380,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/safety-stock": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:1117619440d5474cc5aedbcf64644962817456893b001187b610da0ec7d4ba5c",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-27",
           "kind": "tool",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-24T15:01:21.140Z",
+          "our_url": "",
           "outline": [
             "The importance of safety stock",
             "How to use the safety stock calculator",
@@ -203370,7 +203402,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Safety Stock Calculator",
           "tool_io": [
             "label: Max lead&nbsp;time",
@@ -240015,18 +240047,22 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/other/volunteer-engagement-profile": {
+          "acted": false,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:e1a640c63e21ec9645f45122eb936b647b4decc9ce81c7f9e1e11cffbd394ebf",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-27",
           "kind": "tool",
           "last_seen": "2026-07-27",
           "lastmod": "2026-07-27T09:39:08.341Z",
+          "our_url": "",
           "outline": [
             "About this calculator"
           ],
           "relevance_hits": [
             "calculator"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Volunteer Engagement Profile Calculator",
           "tool_io": [
             "label: Pick one.",
@@ -285205,11 +285241,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/ask-an-advisor-non-high-earners": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:18f9171e1090e35714d1831049fc7c6a7d396031b8f9f6b5976b7aa0f3945193",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-09T11:00:00+00:00",
+          "our_url": "/guides/how-much-to-save-for-retirement-average-earner/",
           "outline": [
             "How Much to Save for Retirement",
             "Making Adjustments",
@@ -285222,7 +285262,7 @@
             "financial",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Ask an Advisor: How Much Should Non-High-Earners Aim to Save for Retirement?",
           "tool_io": []
         },
@@ -290775,11 +290815,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/how-to-invest-100k-to-make-1-million": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:963d1f0a89dcfa20290216bfb7a5faca1c567318dc98a5886b261458377457d1",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-04T22:10:46+00:00",
+          "our_url": "/guides/how-to-invest-100k-to-1-million/",
           "outline": [
             "1. Assess Your Starting Point",
             "2. Gauge Your Risk Tolerance",
@@ -290806,7 +290850,7 @@
             "investing",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Invest $100,000 and Turn It Into $1 Million",
           "tool_io": []
         },
@@ -291018,11 +291062,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/how-to-retire-at-40": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:97441abd4503383d9f92ff5c1e02d59271b00808eedb435253a6a3d4fe7b144d",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-05T21:39:13+00:00",
+          "our_url": "/guides/how-to-retire-at-40/",
           "outline": [
             "Start With Your Goals",
             "Calculate Your Retirement Savings Needs",
@@ -291041,7 +291089,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Retire at 40: Is It Really Possible?",
           "tool_io": []
         },
@@ -305808,11 +305856,15 @@
           "tool_io": []
         },
         "https://smartasset.com/investing/how-to-invest-200k": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:8d7b09bc620dc3994580ab41c03e99cc3a8d29b8de95872bd568c1b35c6813cd",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-05T21:16:24+00:00",
+          "our_url": "/guides/how-to-invest-200k/",
           "outline": [
             "What to Consider Before Investing $200k",
             "4 Common Ways to Invest $200k",
@@ -305829,7 +305881,7 @@
             "investing",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Invest $200k?",
           "tool_io": []
         },
@@ -324235,11 +324287,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/personal-finance/financial-planning-for-30-year-olds": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:fe5500d1d6977badefac1db57fdecc60d74de2401df3584f7e5570f55ff4c731",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-05T21:19:01+00:00",
+          "our_url": "/guides/financial-planning-for-30-year-olds/",
           "outline": [
             "Financial Planning for 30 Year Olds \u2013 Investing for the Future",
             "Build and Maintain an Emergency Fund",
@@ -324258,7 +324314,7 @@
             "financial",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Financial Planning for 30 Year Olds \u2013 A Guide",
           "tool_io": []
         },
@@ -331717,11 +331773,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/how-to-retire-in-10-years-with-no-savings": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:d389817a137ed61f36625a695095f8424341e874dfb4f94eed5b1d98bdb0e107",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-05T06:00:46+00:00",
+          "our_url": "/guides/how-to-retire-in-10-years-with-no-savings/",
           "outline": [
             "Is It Possible to Retire In 10 Years with No Savings?",
             "Retiring in 10 Years: Step by Step",
@@ -331739,7 +331799,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Retire In 10 Years with No Savings",
           "tool_io": []
         },
@@ -332875,11 +332935,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/is-3-million-enough-to-retire-at-40": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:c85dc244e24a96dd9f93076bb2d127fc6b08d6c8abf09576d7b609e1be388f4e",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "page",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-05T06:08:45+00:00",
+          "our_url": "/guides/is-3-million-enough-to-retire-at-40/",
           "outline": [
             "Understanding Early Retirement and Financial Independence",
             "Factors Affecting Retirement Needs",
@@ -332897,7 +332961,7 @@
             "investment",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Is $3 Million Enough to Retire at 40?",
           "tool_io": []
         },
@@ -335982,11 +336046,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/rollover-ira-vs-roth-ira": {
+          "acted": true,
+          "acted_date": "2026-07-27",
           "content_hash": "sha256:d411c0396db36b7eac12a5ba66138261664caad5e687407d5e93bc4086031377",
+          "disposition": "published",
           "first_seen": "2026-07-27",
           "kind": "comparison",
           "last_seen": "2026-07-27",
           "lastmod": "2026-03-04T21:27:43+00:00",
+          "our_url": "/compare/rollover-ira-vs-roth-ira/",
           "outline": [
             "What Is a Rollover IRA?",
             "What Is a Roth IRA?",
@@ -336000,7 +336068,7 @@
             "retirement",
             "roth"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Rollover IRA vs. Roth IRA",
           "tool_io": []
         },
