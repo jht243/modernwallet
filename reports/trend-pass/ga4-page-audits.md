@@ -56,3 +56,4 @@
 | /auto-loan/ | 2026-07-27 | 1 | 0/0/0/0/0 | 0 |
 | /compare/trump-account-vs-roth-ira/ | 2026-07-27 | 1 | 0/0/0/0/0 | 1 |
 | /estate-planning/living-trust-cost-calculator/ | 2026-07-27 | 1 | 0/1/1/1/0 | 0 |
+| /roundup/best-401k-providers-for-small-business/ | 2026-07-28 | 1 | 0/1/1/1/0 | 0 |

@@ -1387,9 +1387,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 7. Best 401(k) Providers for Small Business ──────────────────────────
   {
     slug: "best-401k-providers-for-small-business",
-    title: "7 Best 401(k) Providers for Small Business in 2026",
+    title: "7 Best 401(k) Providers for Small Business, Payroll-Synced (2026)",
     metaDescription:
-      "Compare the best 401(k) providers for small businesses in 2026 — by cost, compliance support, and setup simplicity. Top picks from Guideline to Fidelity.",
+      "Compare 7 small-business 401(k) providers on payroll integration, compliance automation, and true cost — from Guideline to Fidelity. Find your best fit.",
     targetKeyword: "best 401k providers for small business",
     category: "401(k) providers",
     angle: "best",
@@ -1590,13 +1590,18 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "No — employer matching is optional for most 401(k) plan types. You can offer a 401(k) where employees contribute but receive no employer match. However, if your business chooses a Safe Harbor 401(k) design (to avoid nondiscrimination testing), mandatory employer contributions are required by definition. Many small businesses find that even a modest match (e.g., 100% of the first 3% of salary) significantly improves employee participation rates and provides an additional tax deduction.",
       },
+      {
+        question: "Can I use a self-directed 401(k) for my small business?",
+        answer:
+          "Yes, but none of the seven providers above are built for it. A true self-directed 401(k) — one that holds real estate, private equity, or other alternative assets — requires a specialized custodian, not a mainstream provider; Fidelity's and Vanguard's solo 401(k) plans, for example, are limited to their standard brokerage lineups. If alternative-asset investing is a priority, look specifically for providers marketing 'self-directed solo 401(k)' plans, and confirm IRS prohibited-transaction rules before using the account to hold assets you or a disqualified person will personally use.",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) Plans for Small Businesses", url: "https://www.irs.gov/retirement-plans/401k-plans" },
       { label: "DOL — SECURE 2.0 Act Summary", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/secure-2-0-act" },
       { label: "IRS — 2025 Retirement Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "sep-ira-vs-solo-401k", "simple-ira-vs-401k"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investment Growth Calculator", href: "/investing/" },
