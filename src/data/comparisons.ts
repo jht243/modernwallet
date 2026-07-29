@@ -6064,6 +6064,97 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── Autocomplete-pass-auto (2026-07-29) ─────────────────────────────────
+  {
+    slug: "coast-fire-vs-barista-fire",
+    title: "Coast FIRE vs. Barista FIRE: What's the Real Difference?",
+    metaDescription:
+      "Coast FIRE vs Barista FIRE compared: Coast FIRE needs less saved today because you keep full income and take no withdrawals until retirement age.",
+    targetKeyword: "coast fire vs barista fire",
+    optionA: "Coast FIRE",
+    optionB: "Barista FIRE",
+    h1: "Coast FIRE vs. Barista FIRE: How the Numbers Actually Differ",
+    intro:
+      "Coast FIRE vs Barista FIRE comes down to one question: are you taking money out of your portfolio now, or letting it grow untouched until retirement? Coast FIRE means you keep your current job (or any full-time income) and stop adding to retirement, letting compound growth alone carry your existing balance to your full number by retirement age. Barista FIRE means you step back to part-time work now — often specifically for a job with health benefits, the namesake being a [Starbucks](https://www.starbucks.com/careers/working-at-starbucks/benefits-and-perks/) barista position — and start withdrawing from your portfolio today to cover the gap between that part-time income and your full expenses. Because Barista FIRE requires withdrawals starting now instead of decades of untouched growth, it takes a meaningfully larger portfolio to reach than Coast FIRE does, even for the exact same person and the exact same eventual retirement age.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Work status once you get there", a: "Keep full-time income (same job or any job)", b: "Step back to part-time, often specifically for benefits" },
+        { dimension: "Portfolio withdrawals", a: "None until real retirement age", b: "Start now, funding the income gap" },
+        { dimension: "Portfolio needed today", a: "Smaller — growth alone has decades to compound", b: "Much larger — must support withdrawals immediately" },
+        { dimension: "Health insurance", a: "Usually still employer-provided (full-time job)", b: "Often the whole point — a part-time job chosen for its benefits" },
+        { dimension: "Income today", a: "Full income continues", b: "Reduced, part-time income" },
+        { dimension: "Best for", a: "Someone who wants to keep working but stop saving for retirement", b: "Someone who wants to reduce work hours or stress now, not just later" },
+      ],
+    },
+    verdict:
+      "Choose Coast FIRE if you're fine continuing your current job or income level and just want to stop adding to retirement — it requires the smaller portfolio because your money has the maximum number of years to compound untouched. Choose Barista FIRE if the goal is reducing work hours or stress sooner, not just retirement savings later — expect to need a substantially bigger portfolio up front, since you're funding withdrawals immediately instead of waiting. Run your own numbers in the [Coast FIRE calculator](/coast-fire/) before assuming either path is affordable on your current savings.",
+    sections: [
+      {
+        heading: "How Coast FIRE's smaller number works",
+        content:
+          "Coast FIRE's math only asks one thing: will your current balance, growing untouched at your expected return, reach your full retirement number by your target retirement age? Nothing is withdrawn along the way, so decades of compounding do essentially all the remaining work.\n\nTake a 35-year-old with $220,000 saved, planning to retire at 65 (30 years away), wanting $50,000 a year in retirement (a $1,250,000 FIRE number at a 4% withdrawal rate), assuming a 7% expected annual return. Their coast number today is $164,209 — and since they already have $220,000, they've already reached Coast FIRE, with a projected $1,674,696 at 65 if they stop contributing today, a $424,696 surplus over their $1,250,000 target.",
+      },
+      {
+        heading: "How Barista FIRE's bigger number works",
+        content:
+          "Barista FIRE asks a different question: how much do you need invested TODAY to start withdrawing from it right now, while a part-time income covers the rest of your expenses? Unlike Coast FIRE, there's no multi-decade runway of untouched growth — the withdrawals start immediately, so the portfolio has to be big enough to support that on its own from day one.\n\nUsing the same person — $50,000 a year in total expenses — say a part-time job covers $20,000 of that, leaving $30,000 a year to come from the portfolio. At a 4% withdrawal rate, that requires $30,000 ÷ 0.04 = $750,000 invested right now. Against their actual $220,000 saved, they're $530,000 short of Barista FIRE today — even though that same $220,000 already cleared Coast FIRE with room to spare. Same person, same savings, two very different verdicts, because the two strategies are asking fundamentally different questions of the money.",
+      },
+      {
+        heading: "Why the gap between the two numbers is so large",
+        content:
+          "The gap comes entirely from when withdrawals start. Coast FIRE's balance keeps compounding at the full expected return for every year between now and retirement, with nothing taken out — in the example above, that's 30 years turning $220,000 into $1,674,696 on its own. Barista FIRE's balance starts getting drawn down immediately, so it never gets that same multi-decade compounding runway; it has to be large enough on day one to fund the gap without ever recovering the years of pure growth Coast FIRE gets for free.\n\nThe practical upshot: Barista FIRE is a strategy for reducing work and stress sooner, but it costs meaningfully more saved capital to execute than simply continuing full-time work while you let an already-adequate balance compound.",
+      },
+      {
+        heading: "The health insurance factor most calculators skip",
+        content:
+          "Barista FIRE's name comes specifically from choosing a part-time employer, historically often a company like Starbucks, that offers health benefits at reduced hours — a detail that changes the real math more than most people expect. The [Health Insurance Marketplace](https://www.healthcare.gov/) is the fallback if a Barista FIRE plan doesn't land a benefits-eligible part-time role, and marketplace premiums for a mid-tier plan can run several hundred dollars a month per person before any subsidy, which is easy to leave out of a Barista FIRE budget built only around visible living expenses.\n\nCoast FIRE sidesteps this entirely as long as you keep the same full-time job (or any job with benefits) — health insurance simply continues unchanged, which is part of why its required portfolio is smaller: it isn't quietly solving a second, expensive problem at the same time.",
+      },
+      {
+        heading: "Can you do both — Coast FIRE first, then Barista FIRE?",
+        content:
+          "Yes, and this is a common real-world path rather than an either/or choice. Reach Coast FIRE first while working full-time — the smaller, faster milestone — then use the flexibility that unlocks (no more pressure to save for retirement) to actually shift into a part-time or lower-stress role once your income and expenses allow it. At that point you're effectively transitioning into Barista FIRE with your retirement number already handled by the earlier Coast FIRE milestone, rather than needing the full $750,000 Barista number solved on day one.\n\nCheck your own numbers with the [Coast FIRE calculator](/coast-fire/) before committing to either path — the gap between the two strategies is large enough in dollar terms that it's worth confirming which one your current savings actually supports.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which requires less money: Coast FIRE or Barista FIRE?",
+        answer:
+          "Coast FIRE requires less money saved today. In a worked example, a $220,000 balance already cleared Coast FIRE (needed just $164,209) but fell $530,000 short of the $750,000 needed for Barista FIRE on the same income goal — because Coast FIRE lets the money compound untouched for decades, while Barista FIRE needs to fund withdrawals starting immediately.",
+      },
+      {
+        question: "Can I be Coast FIRE and Barista FIRE at the same time?",
+        answer:
+          "Not simultaneously in the strict sense, since Coast FIRE assumes no withdrawals and Barista FIRE assumes withdrawals starting now — but they work well as a sequence. Many people reach Coast FIRE first (the smaller milestone), then later transition into a Barista FIRE-style part-time arrangement once other factors, like paying off a mortgage or kids finishing school, make stepping back realistic.",
+      },
+      {
+        question: "Why is Barista FIRE named after a coffee shop job?",
+        answer:
+          "The name comes from choosing a part-time employer — a company like Starbucks is the most cited example — specifically because it offers health insurance to part-time employees. The employer name isn't the point; the health-benefits access at reduced hours is what defines the strategy.",
+      },
+      {
+        question: "Do I need to stop working entirely for either strategy?",
+        answer:
+          "No — neither Coast FIRE nor Barista FIRE means fully retiring. Coast FIRE means continuing your current income level (full-time) but no longer needing to save for retirement. Barista FIRE means reducing to part-time work now while a smaller portfolio withdrawal covers the rest. Full retirement, with no income at all, is a separate milestone from both.",
+      },
+      {
+        question: "How do I calculate my own Coast FIRE number to compare against a Barista FIRE target?",
+        answer:
+          "Use the [Coast FIRE calculator](/coast-fire/) with your current age, target retirement age, current savings, and desired retirement spending to get your Coast FIRE number. For a rough Barista FIRE estimate, take the gap between your total expenses and your expected part-time income, then divide that annual gap by 4% (0.04) to see the portfolio you'd need to fund it starting today.",
+      },
+    ],
+    sources: [
+      { label: "William Bengen — The 4% Rule", url: "https://www.bengenfs.com/the-4-percent-rule/" },
+      { label: "HealthCare.gov — The Health Insurance Marketplace", url: "https://www.healthcare.gov/" },
+      { label: "SEC Investor.gov — Retirement Planning", url: "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/retirement-planning" },
+    ],
+    relatedComparisons: ["debt-snowball-vs-avalanche"],
+    calculatorLinks: [
+      { label: "Coast FIRE Calculator", href: "/coast-fire/" },
+      { label: "Retirement Calculator", href: "/retirement/" },
+      { label: "Budget", href: "/budget/" },
+    ],
+  },
+
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
