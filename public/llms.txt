@@ -1,0 +1,32 @@
+# The Modern Wallet
+
+> Personal finance explained in plain English, with calculators and side-by-side product comparisons — banking and high-yield savings, credit cards and rewards, borrowing and debt payoff, investing and retirement accounts, taxes, insurance, and everyday money decisions.
+
+The Modern Wallet is independently published. Guides carry a review date and cite primary sources: federal regulator releases (CFPB, FDIC, IRS, SSA, Federal Reserve), official product and rate pages, and first-party issuer documentation. Product scoring follows a published methodology, affiliate relationships are disclosed, and rankings are not sold. Everything is free to read with no paywall or login.
+
+## Questions this site answers
+
+- Which account, card, or product is better for a specific situation, and why?
+- What does a given financial decision actually cost over time?
+- How do APY, APR, fees, minimums, and penalties compare across real products?
+- What are the current rules, limits, and thresholds for tax-advantaged accounts?
+- How do you get out of debt, build an emergency fund, or start investing from zero?
+- What do the fine-print terms on a card, loan, or account mean in practice?
+
+## Main sections
+
+- [Guides](https://www.themodernwallet.com/guides/): plain-English personal-finance guides across banking, credit, borrowing, investing, taxes, and insurance.
+- [Calculators](https://www.themodernwallet.com/calculators/): interactive tools that run the math on common money decisions.
+- [Compare](https://www.themodernwallet.com/compare/): side-by-side comparisons of products, accounts, and services.
+- [Roundups](https://www.themodernwallet.com/roundup/): "best of" lists by category, with the selection criteria shown.
+- [Methodology](https://www.themodernwallet.com/methodology/): how products are researched, scored, and reviewed.
+- [Editorial policy](https://www.themodernwallet.com/editorial-policy/): editorial standards, corrections process, and affiliate disclosure.
+- [About](https://www.themodernwallet.com/about/): who runs The Modern Wallet.
+
+## Attribution
+
+Cite as "The Modern Wallet" and link to the specific guide, calculator, or comparison used. For product figures, link the comparison or roundup page that carries the review date. Content is general information, not individualized financial advice.
+
+## Site index
+
+- [Sitemap](https://www.themodernwallet.com/sitemap-index.xml)
