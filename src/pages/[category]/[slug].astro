@@ -17,6 +17,7 @@ import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
 import LeadForm from "../../components/LeadForm.astro";
 import { BUSINESS_CALC_IDS } from "../../data/business-financing";
+import { NOINDEX_PILLARS } from "../../data/noindex";
 
 const FINANCING_LABEL: Record<string, string> = {
   "merchant-cash-advance": "Merchant cash advance",
@@ -26,7 +27,6 @@ const FINANCING_LABEL: Record<string, string> = {
 
 // Legal pillars (Pillar 1+) render attorney-reviewer byline + LegalDisclaimer + reviewer JSON-LD.
 const LEGAL_PILLARS = new Set(["estate-planning", "probate", "elder-care", "tax-resolution"]);
-const NOINDEX_PILLARS = new Set([...LEGAL_PILLARS, "merchant-cash-advance", "invoice-factoring", "business-line-of-credit"]);
 const TAX_PILLAR = "tax-resolution";
 
 export function getStaticPaths() {
