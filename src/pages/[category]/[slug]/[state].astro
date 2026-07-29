@@ -112,7 +112,7 @@ const jsonLdApp = {
 
 const related = relatedSpokes(entry, 3);
 ---
-<BaseLayout title={title} description={metaDescription}>
+<BaseLayout title={title} description={metaDescription} noindex={true}>
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />

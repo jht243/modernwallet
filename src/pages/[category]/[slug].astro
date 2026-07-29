@@ -26,6 +26,7 @@ const FINANCING_LABEL: Record<string, string> = {
 
 // Legal pillars (Pillar 1+) render attorney-reviewer byline + LegalDisclaimer + reviewer JSON-LD.
 const LEGAL_PILLARS = new Set(["estate-planning", "probate", "elder-care", "tax-resolution"]);
+const NOINDEX_PILLARS = new Set([...LEGAL_PILLARS, "merchant-cash-advance", "invoice-factoring", "business-line-of-credit"]);
 const TAX_PILLAR = "tax-resolution";
 
 export function getStaticPaths() {
@@ -45,6 +46,7 @@ const calc = CALC_BY_ID[entry.calculator]!;
 const related = relatedSpokes(entry, 3);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const isLegal = LEGAL_PILLARS.has(calc.id);
+const shouldNoindex = NOINDEX_PILLARS.has(calc.id);
 const reviewer = isLegal ? (entry.reviewer ?? REVIEWER) : undefined;
 const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
 
@@ -99,7 +101,7 @@ const jsonLdApp = {
   url: canonicalUrl,
 };
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription}>
+<BaseLayout title={entry.title} description={entry.metaDescription} noindex={shouldNoindex}>
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
