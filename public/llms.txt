@@ -1,24 +1,41 @@
 # The Modern Wallet
 
-> Personal finance explained in plain English, with calculators and side-by-side product comparisons — banking and high-yield savings, credit cards and rewards, borrowing and debt payoff, investing and retirement accounts, taxes, insurance, and everyday money decisions.
+> Personal finance explained in plain English, with calculators and side-by-side product comparisons — mortgages and real estate, retirement accounts and planning, investing and portfolio construction, auto loans and personal loans, budgeting and net worth, banking and savings, credit cards, taxes, insurance, probate and estate basics.
 
-The Modern Wallet is independently published. Guides carry a review date and cite primary sources: federal regulator releases (CFPB, FDIC, IRS, SSA, Federal Reserve), official product and rate pages, and first-party issuer documentation. Product scoring follows a published methodology, affiliate relationships are disclosed, and rankings are not sold. Everything is free to read with no paywall or login.
+The Modern Wallet is independently published. Guides carry a review date and cite primary sources: federal regulator releases (CFPB, FDIC, IRS, SSA, Federal Reserve), official product and rate pages, and first-party issuer documentation. Product scoring follows a published methodology, affiliate relationships are disclosed, and rankings are not sold. Coverage runs 270+ pages across guides, comparisons, roundups, and calculators. Everything is free to read with no paywall or login.
 
 ## Questions this site answers
 
-- Which account, card, or product is better for a specific situation, and why?
+- Which account, card, loan, or product is better for a specific situation, and why?
 - What does a given financial decision actually cost over time?
+- How much house, car, or loan can someone afford, and what would the payment be?
 - How do APY, APR, fees, minimums, and penalties compare across real products?
-- What are the current rules, limits, and thresholds for tax-advantaged accounts?
+- What are the current rules, limits, and thresholds for tax-advantaged retirement accounts?
+- How should a portfolio be allocated, and what does a given allocation return?
 - How do you get out of debt, build an emergency fund, or start investing from zero?
+- How do you track net worth and build a budget that holds?
 - What do the fine-print terms on a card, loan, or account mean in practice?
 
-## Main sections
+## Topic hubs
 
-- [Guides](https://www.themodernwallet.com/guides/): plain-English personal-finance guides across banking, credit, borrowing, investing, taxes, and insurance.
-- [Calculators](https://www.themodernwallet.com/calculators/): interactive tools that run the math on common money decisions.
+- [Mortgage](https://www.themodernwallet.com/mortgage/): rates, affordability, refinancing, and loan types.
+- [Real estate](https://www.themodernwallet.com/real-estate/): buying, selling, and property costs.
+- [Retirement](https://www.themodernwallet.com/retirement/): 401(k), IRA, Social Security, and withdrawal planning.
+- [Investing](https://www.themodernwallet.com/investing/): accounts, assets, and strategy.
+- [Portfolio](https://www.themodernwallet.com/portfolio/): allocation, rebalancing, and portfolio modeling.
+- [Auto loan](https://www.themodernwallet.com/auto-loan/): car financing, rates, and total cost.
+- [Budget](https://www.themodernwallet.com/budget/): budgeting methods and spending plans.
+- [Net worth](https://www.themodernwallet.com/net-worth/): tracking and benchmarking net worth.
+
+## Guides, comparisons & tools
+
+- [Guides](https://www.themodernwallet.com/guides/): plain-English personal-finance guides.
 - [Compare](https://www.themodernwallet.com/compare/): side-by-side comparisons of products, accounts, and services.
 - [Roundups](https://www.themodernwallet.com/roundup/): "best of" lists by category, with the selection criteria shown.
+- [Calculators](https://www.themodernwallet.com/calculators/): interactive tools that run the math on common money decisions.
+
+## Editorial
+
 - [Methodology](https://www.themodernwallet.com/methodology/): how products are researched, scored, and reviewed.
 - [Editorial policy](https://www.themodernwallet.com/editorial-policy/): editorial standards, corrections process, and affiliate disclosure.
 - [About](https://www.themodernwallet.com/about/): who runs The Modern Wallet.
