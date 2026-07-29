@@ -1,0 +1,31 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-07-29",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/roundup/best-budgeting-apps-for-couples/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 1,
+  "top10_pages_total_clicks": 1,
+  "channel_split": {
+    "/roundup/best-budgeting-apps-for-couples/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Unassigned": 1
+    }
+  }
+}

@@ -284,9 +284,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 2. Best Index Funds ──────────────────────────────────────────────────
   {
     slug: "best-index-funds",
-    title: "Best Index Funds of 2026: Top 8 Picks for Investors",
+    title: "8 Best Index Funds of 2026: Compare Expense Ratios",
     metaDescription:
-      "The best index funds of 2026 ranked by expense ratio, coverage, and accessibility. Top picks for long-term investors across S&P 500 and total-market strategies.",
+      "8 index funds ranked by expense ratio — from 0.03% (VOO) to 0.00% (FZROX) — plus coverage, minimums, and tax efficiency for long-term investors.",
     targetKeyword: "best index funds",
     category: "index funds",
     angle: "best",
@@ -502,6 +502,16 @@ export const ROUNDUPS: RoundupEntry[] = [
         question: "Are index funds better than actively managed funds?",
         answer:
           "By the numbers, yes — for most investors over most time periods. The S&P SPIVA report consistently shows that 80–90% of actively managed U.S. equity funds underperform their index benchmark over 10-year periods, net of fees. The primary reason is cost: active funds charge 0.4–1.0%+ per year, which creates a return hurdle the manager must clear every year just to tie the index. Index funds don't face that hurdle. Exceptions exist — some active strategies outperform in specific asset classes — but identifying those managers in advance is extremely difficult.",
+      },
+      {
+        question: "What is the average return of index funds?",
+        answer:
+          "For a U.S. total-market or S&P 500 index fund, the long-run historical average is roughly 10% per year before inflation (about 7% after inflation), measured over multi-decade periods. Any single year can swing far outside that range — the S&P 500 has posted both 30%+ gains and 30%+ losses — so the average only holds up over long holding periods, not year to year. It's a historical average, not a guaranteed or predicted return.",
+      },
+      {
+        question: "Are index funds good for retirement?",
+        answer:
+          "Yes — low-cost, broad-market index funds are a standard core holding inside retirement accounts like a 401(k) or IRA, because their low expense ratios and broad diversification let more of the market's return compound over decades rather than going to fees. Most retirement investors gradually shift a portion of their portfolio from stock index funds toward bond index funds as retirement approaches, to reduce exposure to a market downturn right when withdrawals begin. See our <a href=\"/investing/\">investment growth calculator</a> to model how contributions and returns compound over time.",
       },
     ],
     sources: [
@@ -1178,9 +1188,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 6. Best Budgeting Apps for Couples ──────────────────────────────────
   {
     slug: "best-budgeting-apps-for-couples",
-    title: "Best Budgeting Apps for Couples: Track Money Together",
+    title: "7 Best Budgeting Apps for Couples in 2026",
     metaDescription:
-      "Compare the best budgeting apps for couples in 2026. Find shared tracking, joint goals, and real-time sync features that make managing money together easier.",
+      "7 budgeting apps for couples compared on shared-account sync, joint goals, and cost — from free (Honeydue) to zero-based budgeting (YNAB).",
     targetKeyword: "best budgeting apps for couples",
     category: "budgeting apps",
     angle: "best",
