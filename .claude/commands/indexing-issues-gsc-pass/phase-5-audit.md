@@ -59,6 +59,7 @@ Scan the prose. If **two or more** of these tells appear, set fail with note `ch
 - LLM-signature verbs/phrases used as filler: "delve into", "leverage" (as a verb), "navigate the complexities of", "unlock the power of", "in the realm of", "a testament to", "it's worth noting that", "that being said".
 - Uniform em-dash rhythm — the same em-dash-interrupted sentence shape repeating paragraph after paragraph.
 - Symmetrical listicle padding where every bullet is the same length and shape with no concrete specifics.
+- Anthropomorphic "death" language for software/tech — "died", "is dead", "killed", "kill it", "death of [X]", "on life support", "flatlined", "RIP [product]" applied to a demo, feature, product, tool, model, or technology. A classic AI tell — software does not die. Flag it; the fix is literal ("never shipped", "was abandoned", "stopped being used", "lost support"). This one counts on its own — a single unmistakable death-metaphor for tech is enough to flag.
 A page can carry one isolated tell and still pass; two or more is the fail line.
 
 **GATE 2 — No proprietary anchor → FAIL unless the reviewer earns an exemption (high bar).**
