@@ -151,145 +151,24 @@
   "how-long-to-pay-off-credit-card",
   "how-much-tax-will-i-pay",
   "pay-off-debt-or-invest",
-  "debt-snowball-vs-avalanche"
+  "debt-snowball-vs-avalanche",
+  "roth-conversion-rules",
+  "roth-conversion-ladder",
+  "borrowing-against-life-insurance",
+  "what-is-a-good-expense-ratio",
+  "what-target-date-fund-should-i-choose",
+  "how-to-build-a-dividend-portfolio",
+  "457b-vs-403b",
+  "457b-vs-roth-ira",
+  "i-bonds-vs-ee-bonds",
+  "i-bonds-vs-tips",
+  "best-dividend-etfs",
+  "best-target-date-funds",
+  "best-robo-advisors",
+  "best-dividend-etfs-for-retirement",
+  "best-monthly-dividend-etfs"
  ],
  "deferred_rows": [
-  {
-   "n": 1,
-   "slug": "roth-conversion-rules",
-   "format": "guide",
-   "route": "/guides/roth-conversion-rules/",
-   "kw": "roth conversion rules",
-   "vol": 4400,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 2,
-   "slug": "best-dividend-etfs",
-   "format": "roundup",
-   "route": "/roundup/best-dividend-etfs/",
-   "kw": "best dividend etfs",
-   "vol": 3600,
-   "hub": "/investing/"
-  },
-  {
-   "n": 3,
-   "slug": "roth-conversion-ladder",
-   "format": "guide",
-   "route": "/guides/roth-conversion-ladder/",
-   "kw": "roth conversion ladder",
-   "vol": 2400,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 4,
-   "slug": "457b-vs-403b",
-   "format": "comparison",
-   "route": "/compare/457b-vs-403b/",
-   "kw": "457b vs 403b",
-   "vol": 1900,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 5,
-   "slug": "borrowing-against-life-insurance",
-   "format": "guide",
-   "route": "/guides/borrowing-against-life-insurance/",
-   "kw": "borrowing against life insurance",
-   "vol": 1300,
-   "hub": "/estate-planning/"
-  },
-  {
-   "n": 6,
-   "slug": "best-target-date-funds",
-   "format": "roundup",
-   "route": "/roundup/best-target-date-funds/",
-   "kw": "best target date funds",
-   "vol": 1300,
-   "hub": "/investing/"
-  },
-  {
-   "n": 7,
-   "slug": "best-robo-advisors",
-   "format": "roundup",
-   "route": "/roundup/best-robo-advisors/",
-   "kw": "best robo advisors",
-   "vol": 1000,
-   "hub": "/investing/"
-  },
-  {
-   "n": 8,
-   "slug": "what-is-a-good-expense-ratio",
-   "format": "guide",
-   "route": "/guides/what-is-a-good-expense-ratio/",
-   "kw": "what is a good expense ratio",
-   "vol": 720,
-   "hub": "/investing/"
-  },
-  {
-   "n": 9,
-   "slug": "best-dividend-etfs-for-retirement",
-   "format": "roundup",
-   "route": "/roundup/best-dividend-etfs-for-retirement/",
-   "kw": "best dividend etfs for retirement",
-   "vol": 590,
-   "hub": "/investing/"
-  },
-  {
-   "n": 10,
-   "slug": "best-monthly-dividend-etfs",
-   "format": "roundup",
-   "route": "/roundup/best-monthly-dividend-etfs/",
-   "kw": "best monthly dividend etfs",
-   "vol": 480,
-   "hub": "/investing/"
-  },
-  {
-   "n": 11,
-   "slug": "i-bonds-vs-ee-bonds",
-   "format": "comparison",
-   "route": "/compare/i-bonds-vs-ee-bonds/",
-   "kw": "i bonds vs ee bonds",
-   "vol": 320,
-   "hub": "/investing/"
-  },
-  {
-   "n": 12,
-   "slug": "457b-vs-roth-ira",
-   "format": "comparison",
-   "route": "/compare/457b-vs-roth-ira/",
-   "kw": "457b vs roth ira",
-   "vol": 320,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 13,
-   "slug": "i-bonds-vs-tips",
-   "format": "comparison",
-   "route": "/compare/i-bonds-vs-tips/",
-   "kw": "i bonds vs tips",
-   "vol": 260,
-   "hub": "/investing/"
-  },
-  {
-   "n": 14,
-   "slug": "what-target-date-fund-should-i-choose",
-   "format": "guide",
-   "route": "/guides/what-target-date-fund-should-i-choose/",
-   "kw": "what target date fund should i choose",
-   "vol": 210,
-   "hub": "/investing/"
-  },
-  {
-   "n": 15,
-   "slug": "how-to-build-a-dividend-portfolio",
-   "format": "guide",
-   "route": "/guides/how-to-build-a-dividend-portfolio/",
-   "kw": "how to build a dividend portfolio",
-   "vol": 110,
-   "hub": "/investing/",
-   "note": "absorbs reclassified 74000/mo stock-ranking intent"
-  },
   {
    "n": 16,
    "slug": "target-date-fund-vs-sp500",
@@ -299,69 +178,6 @@
    "vol": 140,
    "hub": "/investing/",
    "note": "beyond BUILD_CAP=15 this run"
-  },
-  {
-   "n": 17,
-   "slug": "vacancy-rate-derivation-faq",
-   "format": "body-update",
-   "route": "/real-estate/rental-income-calculator/ + /real-estate/cash-flow-calculator/",
-   "kw": "how to calculate vacancy rate",
-   "vol": 320,
-   "hub": "/real-estate/"
-  },
-  {
-   "n": 18,
-   "slug": "roth-conversion-calculator",
-   "format": "calculator-spec",
-   "route": "specs/roth-conversion-calculator-spec.md",
-   "kw": "roth conversion calculator",
-   "vol": 6600,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 19,
-   "slug": "dividend-yield-calculator",
-   "format": "calculator-spec",
-   "route": "specs/dividend-yield-calculator-spec.md",
-   "kw": "dividend yield calculator",
-   "vol": 2400,
-   "hub": "/investing/"
-  },
-  {
-   "n": 20,
-   "slug": "457b-calculator",
-   "format": "calculator-spec",
-   "route": "specs/457b-calculator-spec.md",
-   "kw": "457b calculator",
-   "vol": 1900,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 21,
-   "slug": "expense-ratio-calculator",
-   "format": "calculator-spec",
-   "route": "specs/expense-ratio-calculator-spec.md",
-   "kw": "expense ratio calculator",
-   "vol": 1600,
-   "hub": "/investing/"
-  },
-  {
-   "n": 22,
-   "slug": "cash-value-life-insurance-calculator",
-   "format": "calculator-spec",
-   "route": "specs/cash-value-life-insurance-calculator-spec.md",
-   "kw": "cash value life insurance calculator",
-   "vol": 1000,
-   "hub": "/estate-planning/"
-  },
-  {
-   "n": 23,
-   "slug": "target-date-fund-calculator",
-   "format": "calculator-spec",
-   "route": "specs/target-date-fund-calculator-spec.md",
-   "kw": "target date fund calculator",
-   "vol": 110,
-   "hub": "/investing/"
   }
  ],
  "last_run": "2026-08-03"
