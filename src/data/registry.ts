@@ -8,4 +8,5 @@
 // Autocomplete pass (kids accounts): "529-savings-calculator".
 // Competitor-monitor pass (2026-07-15): "coast-fire", "business-loan-payoff".
 // Competitor-monitor pass (2026-07-20): "personal-loan".
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator", "coast-fire", "business-loan-payoff", "personal-loan", "merchant-cash-advance", "invoice-factoring", "business-line-of-credit"]);
+// Competitor-monitor pass (2026-08-03): "interest-per-day".
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator", "coast-fire", "business-loan-payoff", "personal-loan", "merchant-cash-advance", "invoice-factoring", "business-line-of-credit", "interest-per-day"]);

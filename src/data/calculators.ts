@@ -861,6 +861,59 @@ export const CALCULATORS: CalculatorDef[] = [
       originationFeePct: 3,
     },
   },
+  // Interest per day — competitor-monitor pass (2026-08-03): the daily-rate gap most simple
+  // "interest per day" calculators skip is the interest-rate-vs-APY distinction once that daily
+  // rate compounds. Works both directions (savings/HYSA/CD earning it, or loan/credit card owing it).
+  {
+    id: "interest-per-day",
+    islandId: "interest-per-day",
+    label: "Interest Per Day",
+    navOrder: 18,
+    metaTitle: "Interest Per Day Calculator: Daily Interest + APY",
+    metaDescription:
+      "Free interest per day calculator: see the daily, weekly, and monthly interest on any balance or loan, plus the effective annual yield (APY) once it compounds daily.",
+    targetKeyword: "interest per day calculator",
+    h1: "Interest Per Day Calculator",
+    intro:
+      "An interest per day calculator shows how much interest a balance earns, or a loan costs, in a single day — enter a balance and its annual rate above to see the daily, weekly, and monthly dollar amounts instantly. For example, $10,000 at a 4.5% annual rate earns about $1.23 a day, $8.63 a week, and $37.00 over a 30-day month. Most day-rate tools stop there; this one also shows the effective annual yield (APY) once that daily rate compounds daily, which is the number that actually shows up in your account balance a year later.",
+    howItWorks:
+      "Daily interest is the annual rate divided by 365, then multiplied by the balance. In the example above, a 4.5% annual rate divided by 365 days gives a daily rate of about 0.0123%, and 0.0123% of $10,000 is $1.23. Multiply that daily figure by 7 for a week or 30 for a typical month to see the running total.\n\nThe part most day-rate calculators leave out is the difference between a stated interest rate and the effective annual yield (APY) once that daily rate compounds. A bank that pays 4.5% and compounds daily doesn't just pay you 4.5% of your starting balance over a year — each day's interest gets added to the balance, so the next day's interest is calculated on a slightly larger number. Compounded daily, a stated 4.5% rate works out to roughly a 4.60% APY, and the [CFPB's Regulation DD rule on how APY is calculated](https://www.consumerfinance.gov/rules-policy/regulations/1030/A) is the reason banks are required to disclose the APY separately: it is the number that reflects what you actually earn.\n\nThe same daily math applies on the other side of the ledger. A credit card or loan balance that accrues interest daily is charged using the same principal-times-daily-rate formula, which is why a balance that sits unpaid for even a few extra days adds up faster than a monthly-only view suggests.",
+    faqs: [
+      {
+        question: "How do I calculate interest per day on a loan?",
+        answer:
+          "Divide the annual interest rate by 365 to get the daily rate, then multiply that daily rate by the loan balance. For example, a $15,000 loan balance at a 7% annual rate has a daily rate of about 0.0192%, which works out to roughly $2.88 in interest for that day. Because most loans amortize, the balance shrinks with each payment, so the dollar amount of daily interest gradually falls over the life of the loan even though the rate stays fixed.",
+      },
+      {
+        question: "What's the interest per day for a $500,000 balance at 4% interest per year?",
+        answer:
+          "At a 4% annual rate, the daily rate is about 0.01096%, so a $500,000 balance earns or accrues roughly $54.79 per day. Over a 30-day month that's about $1,643.84, and over a full year the simple total is $20,000 — slightly less than the compounded total if the balance earns daily compounding instead of a flat annual rate.",
+      },
+      {
+        question: "How much interest does $1 billion earn per day?",
+        answer:
+          "At a 4.5% annual rate, $1 billion earns about $123,288 per day using the standard daily-rate formula (annual rate divided by 365, times the balance). The exact figure scales directly with whatever rate actually applies, so doubling the rate to 9% simply doubles the daily interest to roughly $246,575.",
+      },
+      {
+        question: "Is interest calculated using a 365-day year or a 360-day year?",
+        answer:
+          "Most consumer savings accounts, HYSAs, and credit cards use a 365-day year (a 366-day count in a leap year), which is what this calculator assumes. Some commercial loans and a handful of legacy lending products instead use a 360-day \"banker's year,\" which produces a slightly higher daily rate for the same stated annual percentage. Check your account agreement or loan disclosure to confirm which method your specific product uses.",
+      },
+      {
+        question: "Why is my effective APY higher than my stated interest rate?",
+        answer:
+          "Your stated interest rate is the simple annual rate before compounding. The annual percentage yield (APY) restates that same rate after accounting for how often it compounds — daily compounding means each day's interest starts earning its own interest, so the total collected over a year is slightly more than the simple rate alone would produce. The more frequently a rate compounds, the larger this gap becomes.",
+      },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — 12 CFR Part 1030 (Regulation DD), Appendix A: Annual Percentage Yield Calculation", url: "https://www.consumerfinance.gov/rules-policy/regulations/1030/A" },
+      { label: "Consumer Financial Protection Bureau — 12 CFR Part 1030, Truth in Savings (Regulation DD)", url: "https://www.consumerfinance.gov/rules-policy/regulations/1030/" },
+    ],
+    defaultPreset: {
+      principal: 10000,
+      annualRatePct: 4.5,
+    },
+  },
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,

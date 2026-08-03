@@ -31,6 +31,7 @@ import PersonalLoanCalculator from "./PersonalLoanCalculator";
 import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
 import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
+import InterestPerDayCalculator from "./InterestPerDayCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -78,6 +79,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Personal loan — competitor-monitor pass (2026-07-20): amortizing personal-loan payment +
   // origination-fee-aware effective APR (the gap most basic personal loan calculators skip).
   "personal-loan": PersonalLoanCalculator,
+  // Interest per day — competitor-monitor pass (2026-08-03): daily interest earned/owed on any
+  // balance, plus the effective annual yield (APY) once that daily rate compounds daily.
+  "interest-per-day": InterestPerDayCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,
