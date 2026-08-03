@@ -3883,7 +3883,7 @@ export const GUIDES: Guide[] = [
     },
     {
       heading: "Contribute Consistently, Then Raise Your Rate Every Year",
-      body: "Consistent contributions beat occasional large ones. A 401(k) millionaire almost always got there by contributing the same percentage of every paycheck for decades, not by timing a few lump sums.\n\nSet up automatic payroll deductions so the contribution happens before you see the money. Most plans also let you schedule automatic annual increases, often 1% a year, tied to raises. A small yearly bump adds up over a 30-year career.\n\nNot sure what a 1% annual increase does to your balance? Test it with ModernWallet's [compound interest calculator](/investing/compound-interest-calculator/). Small, regular increases usually beat waiting for a bonus year to catch up."
+      body: "Consistent contributions beat occasional large ones. A 401(k) millionaire almost always got there by contributing the same percentage of every paycheck for decades, not by timing a few lump sums.\n\nSet up automatic payroll deductions so the contribution happens before you see the money. Most plans also let you schedule automatic annual increases, often 1% a year, tied to raises. A small yearly bump adds up over a 30-year career.\n\nThe 7% return used throughout this guide assumes a diversified mix of stock and bond index funds, not a single stock or an all-cash account. A target-date fund matched to your retirement year is the simplest way to get that diversification without picking individual funds yourself, and it automatically shifts toward bonds as you get closer to retirement.\n\nNot sure what a 1% annual increase does to your balance? Test it with ModernWallet's [compound interest calculator](/investing/compound-interest-calculator/). Small, regular increases usually beat waiting for a bonus year to catch up."
     },
     {
       heading: "Never Leave Free Employer Match Money on the Table",
@@ -3955,11 +3955,11 @@ export const GUIDES: Guide[] = [
   metaDescription: "See what $1,000 invested monthly grows to at 6%, 8%, and 10% returns over 10, 20, and 30 years, plus how fees and taxes change the total.",
   h1: "How Much Does Investing $1,000 a Month Grow To?",
   cardBlurb: "Real math on what $1,000 a month becomes after 10, 20, and 30 years of compounding.",
-  intro: "Investing $1,000 a month for 30 years grows to about $1,004,518 at a 6% annual return, $1,490,360 at 8%, or $2,260,187 at 10%, before taxes and fees. Your real number depends on how long you invest, how consistently you contribute, and what you earn after costs. This guide runs the exact math at three realistic return rates over 10, 20, and 30 years, then breaks down the fees, taxes, and account choices that change your outcome. Test your own numbers in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/).",
+  intro: "Investing $1,000 a month for 30 years grows to about $1,004,518 at a 6% annual return, $1,490,360 at 8%, or $2,260,488 at 10%, before taxes and fees. Your real number depends on how long you invest, how consistently you contribute, and what you earn after costs. This guide runs the exact math at three realistic return rates over 10, 20, and 30 years, then breaks down the fees, taxes, and account choices that change your outcome. Test your own numbers in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/).",
   sections: [
     {
       heading: "What $1,000 a month actually grows to",
-      body: "Investing $1,000 every month grows past $1 million in 25 to 30 years at realistic stock market returns. Over 10 years, $120,000 in total contributions grows to about $163,879 at a 6% annual return, $182,947 at 8%, or $204,832 at 10%. Over 20 years, $240,000 in contributions grows to about $462,042 at 6%, $589,019 at 8%, or $759,296 at 10%. Over 30 years, $360,000 in contributions grows to about $1,004,518 at 6%, $1,490,360 at 8%, or $2,260,187 at 10%.\n\nThe 8% figure is close to the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)'s long-run average nominal return, before inflation is subtracted. These numbers are hypothetical illustrations of compounding, not a promise of future results. Test your own timeline and contribution amount in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/) or [compound interest calculator](/investing/compound-interest-calculator/)."
+      body: "Investing $1,000 every month grows past $1 million in 25 to 30 years at realistic stock market returns. Over 10 years, $120,000 in total contributions grows to about $163,879 at a 6% annual return, $182,947 at 8%, or $204,845 at 10%. Over 20 years, $240,000 in contributions grows to about $462,042 at 6%, $589,019 at 8%, or $759,369 at 10%. Over 30 years, $360,000 in contributions grows to about $1,004,518 at 6%, $1,490,360 at 8%, or $2,260,488 at 10%.\n\nThe 8% figure is close to the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)'s long-run average nominal return, before inflation is subtracted. These numbers are hypothetical illustrations of compounding, not a promise of future results. Test your own timeline and contribution amount in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/) or [compound interest calculator](/investing/compound-interest-calculator/)."
     },
     {
       heading: "The three variables that set your final number",
@@ -3999,7 +3999,7 @@ export const GUIDES: Guide[] = [
   faqs: [
     {
       question: "How much will $1,000 a month be worth in 20 years?",
-      answer: "At an 8% average annual return, $1,000 a month grows to about $589,019 in 20 years, on $240,000 of contributions. At 6% it grows to about $462,042, and at 10% it grows to about $759,296. Your actual result depends on the returns you earn and how consistently you invest."
+      answer: "At an 8% average annual return, $1,000 a month grows to about $589,019 in 20 years, on $240,000 of contributions. At 6% it grows to about $462,042, and at 10% it grows to about $759,369. Your actual result depends on the returns you earn and how consistently you invest."
     },
     {
       question: "Is $1,000 a month enough to become a millionaire?",
@@ -4188,7 +4188,7 @@ export const GUIDES: Guide[] = [
     },
     {
       heading: "What is a variable-ratio reward schedule, and why do cards use it?",
-      body: "A variable-ratio reward schedule pays out on an unpredictable pattern instead of a fixed one. It's the same mechanism that makes slot machines hard to put down. This pattern produces the most persistent behavior of any reward timing psychologists have studied.\n\nRotating bonus categories and surprise cash-back offers use this same structure. A flat 2% card is predictable, so you bank the rate and stop paying attention. A card that jumps between 1% and 5% keeps you checking the app instead.\n\nThat checking behavior, not the cash back, is what the design is built to produce. The [Federal Trade Commission](https://www.ftc.gov/reports/bringing-dark-patterns-light) has linked these same design patterns to gamification that drives impulsive decisions in financial apps."
+      body: "A variable-ratio reward schedule pays out on an unpredictable pattern instead of a fixed one. It's the same mechanism that makes slot machines hard to put down. This pattern produces the most persistent behavior of any reward timing psychologists have studied.\n\nRotating bonus categories and surprise cash-back offers use this same structure. A flat 2% card is predictable, so you bank the rate and stop paying attention. A card that jumps between 1% and 5% keeps you checking the app instead.\n\nThat checking behavior, not the cash back, is what the design is built to produce. The [Federal Trade Commission](https://www.ftc.gov/reports/bringing-dark-patterns-light) has documented similar urgency-based dark patterns, including countdown timers and false scarcity, that push consumers toward impulsive purchases."
     },
     {
       heading: "How do bonus-spending thresholds create the 'spend to save' trap?",
@@ -4282,7 +4282,7 @@ export const GUIDES: Guide[] = [
     },
     {
       "heading": "Build a Price-Shock Cushion Into Your Budget",
-      "body": "A price-shock cushion is a separate line item for costs that jump without warning. Gas prices, grocery prices, and utility bills can spike in a single month even when yearly inflation looks calm. Without a cushion, one bad month forces you onto a credit card.\n\nSet your cushion at 5% to 10% of your total variable spending each month. Keep it separate from your long-term emergency fund, which covers job loss or medical bills. The [Federal Reserve](https://www.federalreserve.gov/consumerscommunities/shed.htm) reports that many households still struggle to cover a surprise $400 expense, which is exactly the gap this cushion closes."
+      "body": "A price-shock cushion is a separate line item for costs that jump without warning. Gas prices, grocery prices, and utility bills can spike in a single month even when yearly inflation looks calm. Without a cushion, one bad month forces you onto a credit card.\n\nSet your cushion at 5% to 10% of your total variable spending each month. Keep it separate from your long-term emergency fund, which covers job loss or medical bills. The [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm) reports that only 63% of adults could cover a surprise $400 expense using cash, which is exactly the gap this cushion closes."
     },
     {
       "heading": "Cut Spending or Raise Income? Do the Math First",
@@ -4328,7 +4328,7 @@ export const GUIDES: Guide[] = [
     { "label": "U.S. Bureau of Labor Statistics - Consumer Price Index News Release (June 2026 data)", "url": "https://www.bls.gov/news.release/cpi.nr0.htm" },
     { "label": "U.S. Bureau of Labor Statistics - CPI Databases (category-level inflation data)", "url": "https://www.bls.gov/cpi/data.htm" },
     { "label": "Consumer Financial Protection Bureau - Budgeting: How to Create a Budget and Stick With It", "url": "https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/" },
-    { "label": "Federal Reserve Board - Survey of Household Economics and Decisionmaking (SHED)", "url": "https://www.federalreserve.gov/consumerscommunities/shed.htm" }
+    { "label": "Federal Reserve Board - Economic Well-Being of U.S. Households in 2025", "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm" }
   ]
 },
 {

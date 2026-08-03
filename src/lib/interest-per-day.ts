@@ -2,10 +2,9 @@
 // (loan/credit card) in a single day, plus the APY gap most day-rate tools skip: the daily simple
 // rate quoted by a bank is NOT the same as its effective annual yield once daily compounding is
 // applied. Most calculators of this kind stop at "principal x rate / 365" — this one also shows
-// the compounded effective annual yield (APY), the same distinction the FDIC and CFPB draw
-// between a stated "interest rate" and the compounded "annual percentage yield" a depositor
-// actually earns (https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-an-
-// interest-rate-and-the-annual-percentage-yield-apy-on-a-savings-account-en-1276/).
+// the compounded effective annual yield (APY), the same distinction Regulation DD (Truth in
+// Savings) draws between a stated "interest rate" and the compounded "annual percentage yield"
+// a depositor actually earns (https://www.consumerfinance.gov/rules-policy/regulations/1030/A).
 
 export interface InterestPerDayInput {
   principal: number;
@@ -36,9 +35,10 @@ export function computeInterestPerDay(input: InterestPerDayInput): InterestPerDa
   if (!(principal > 0) || !(annualRatePct > 0)) return EMPTY;
 
   const dailyRate = annualRatePct / 100 / DAYS_IN_YEAR;
-  const perDay = round2(principal * dailyRate);
-  const perWeek = round2(perDay * 7);
-  const perMonth = round2(perDay * 30);
+  const dailyInterest = principal * dailyRate;
+  const perDay = round2(dailyInterest);
+  const perWeek = round2(dailyInterest * 7);
+  const perMonth = round2(dailyInterest * 30);
   const simpleAnnual = round2(principal * (annualRatePct / 100));
 
   const apyPct = round4((Math.pow(1 + dailyRate, DAYS_IN_YEAR) - 1) * 100);
