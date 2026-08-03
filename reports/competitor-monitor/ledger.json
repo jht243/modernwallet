@@ -45831,11 +45831,15 @@
           "tool_io": []
         },
         "https://www.bankrate.com/mortgages/3-homeowners-6-refinances-lessons-learned": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:7c5670f4a292ad7e6163f377ee915d630901f730d2cadf3d270225bb7598bee0",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-07-31T19:00:00-04:00",
+          "our_url": "/guides/mortgage-refinance-lessons-learned/",
           "outline": [
             "Lesson 1: The right refi rate might come sooner than you think",
             "Lesson 2: Refinancing resets your loan timeline",
@@ -45848,7 +45852,7 @@
             "loan",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage refinancing: 4 lessons from 3 real homeowners |",
           "tool_io": []
         },
@@ -107781,11 +107785,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/credit-cards/learn/credit-card-gamification": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:cc1e3fad0bffc77a9782e66a4fae8dba0cc6a411b25981ba85c3f0450734b689",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-07-30T07:23:42-07:00",
+          "our_url": "/guides/credit-card-gamification/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Gamification for a good cause",
@@ -107796,7 +107804,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Credit Card Gamification: When Every Purchase Becomes a Gamble - NerdWallet",
           "tool_io": []
         },
@@ -120925,11 +120933,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/learn/budget-irregular-income": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:0381ccac3d781dd5c6321cf7e3ba6a69368f32c09f60b2bc168fee17e5527349",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-07-28T10:13:12-07:00",
+          "our_url": "/guides/how-to-budget-with-irregular-income/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Meet MoneyNerd, your weekly news decoder",
@@ -120944,7 +120956,7 @@
             "finance",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Budget With Irregular Income: Real Stories - NerdWallet",
           "tool_io": []
         },
@@ -126738,11 +126750,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/studies/millennials-tracking-spending-survey": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:f20eb0268c372fb9f647fb1747f2c1877c09670fa99582cf5bb9f6c34cc16664",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-07-30T06:00:24-07:00",
+          "our_url": "/guides/how-to-budget-when-prices-keep-rising/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Which costs are standing out to millennials",
@@ -126756,7 +126772,7 @@
           "relevance_hits": [
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Millennials Keep Closest Eye on Spending: 4 Ways to Help Offset Rising Costs - NerdWallet",
           "tool_io": []
         },
@@ -211870,11 +211886,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/interest-per-day": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:a027784ace4694641f776b49c339c858782d6a876994ea92aa1167e1c03e6066",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "tool",
           "last_seen": "2026-08-03",
           "lastmod": "2026-07-28T11:19:26.077Z",
+          "our_url": "/interest-per-day/",
           "outline": [
             "How to use the interest per day calculator",
             "How to calculate interest rate per day",
@@ -211888,7 +211908,7 @@
             "interest",
             "loan"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Interest Per Day Calculator",
           "tool_io": [
             "label: Annual interest rate",
@@ -321371,11 +321391,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/how-much-can-investing-1000-per-month-give-me": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:169acc4ae21d06290a634de296d91349824dabd67dcc5620276ab72b4108745c",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-03-12T19:09:39+00:00",
+          "our_url": "/guides/how-much-does-investing-1000-a-month-grow-to/",
           "outline": [
             "How Much Investing $1,000 Per Month Pays Long-Term",
             "Key Variables Affecting Investment Growth",
@@ -321396,7 +321420,7 @@
             "investment",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Can Investing $1,000 Per Month Give Me?",
           "tool_io": []
         },
@@ -322976,11 +323000,15 @@
           "tool_io": []
         },
         "https://smartasset.com/investing/how-to-invest-500k": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:63840c0fa6cd5045a0e55538e7fa87c1d54d04826582a3926b18e64732250571",
+          "disposition": "enriched",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-03-12T19:08:16+00:00",
+          "our_url": "/guides/how-to-invest-200k/",
           "outline": [
             "The Basics of Investing $500,000",
             "Investing in Single Stocks",
@@ -323006,7 +323034,7 @@
             "retirement",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Invest $500,000",
           "tool_io": []
         },
@@ -343133,11 +343161,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/401k-millionaire": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:c860298ad32d4fd1d344b9bd67db9d77e2650281607a0e0636924ff54a330f18",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-03-12T19:09:04+00:00",
+          "our_url": "/guides/how-to-become-a-401k-millionaire/",
           "outline": [
             "1. Start Early",
             "2. Calculate What You Need",
@@ -343166,7 +343198,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Become a 401(k) Millionaire",
           "tool_io": []
         },
@@ -350389,11 +350421,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/is-4-million-enough-to-retire-at-40": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:d47d3ee65e0fa6a7e15a6b8d108d20de7314746850d1cee93d05b6f5395d920b",
+          "disposition": "enriched",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-03-12T18:58:16+00:00",
+          "our_url": "/guides/is-3-million-enough-to-retire-at-40/",
           "outline": [
             "Is $4 Million Enough to Retire at 40?",
             "How to Retire at 40",
@@ -350422,7 +350458,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Is $4 Million Enough to Retire at 40?",
           "tool_io": []
         },
@@ -352537,11 +352573,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/retire-at-67": {
+          "acted": true,
+          "acted_date": "2026-08-03",
           "content_hash": "sha256:b2e3dc984bb60b10bb6b8e8edf25277ff3fc6f2e3d9eb0295685200ef2facd94",
+          "disposition": "published",
           "first_seen": "2026-08-03",
           "kind": "page",
           "last_seen": "2026-08-03",
           "lastmod": "2026-03-12T18:55:31+00:00",
+          "our_url": "/guides/how-to-retire-at-67/",
           "outline": [
             "Step 1: Establish an Emergency Fund",
             "Step 2: Estimate How Much You Will Need to Retire at 67",
@@ -352566,7 +352606,7 @@
             "savings",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Retire at 67: Step-by-Step Plan",
           "tool_io": []
         },
