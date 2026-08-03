@@ -3865,6 +3865,556 @@ export const GUIDES: Guide[] = [
     ],
   },
 
+{
+  slug: "how-to-become-a-401k-millionaire",
+  title: "How to Become a 401(k) Millionaire: 2026 Guide",
+  metaDescription: "See the real math on how fast a 401(k) grows to $1 million, 2026 IRS contribution limits, employer match costs, and fee traps to avoid.",
+  h1: "How to Become a 401(k) Millionaire",
+  cardBlurb: "The real math behind hitting $1 million in your 401(k), from contribution limits to the true cost of fees.",
+  intro: "Someone who invests $500 a month in a 401(k) starting at age 25, earning a 7% average annual return, crosses $1 million around age 61. Start at age 35 instead, and you need closer to $820 a month to hit $1 million by 65. Becoming a 401(k) millionaire comes down to three levers: how early you start, how much you contribute, and how much you keep after fees. This guide walks through the real math, the 2026 IRS contribution limits, and the mistakes that quietly cost people the most money.",
+  sections: [
+    {
+      heading: "The Real Math: How Long It Takes to Hit $1 Million",
+      body: "A $500 monthly 401(k) contribution earning a 7% average annual return grows to $1 million in about 36 years. Start at age 25, and you cross the $1 million mark around age 61. That growth comes almost entirely from compounding, not from adding more of your own money late in the process.\n\nStarting 10 years later changes the math a lot. To reach $1 million by age 65 starting at age 35, you need about $820 a month instead of $500. That's more than double, because the money has 10 fewer years to grow.\n\nTime does more work than extra contributions in the early years. In the last decade before retirement, investment growth alone can add more to the balance than a full year of contributions. Test your own contribution amount, return rate, and timeline with ModernWallet's [401(k) calculator](/retirement/401k-calculator/)."
+    },
+    {
+      heading: "Calculate Your Target Number Before You Chase $1 Million",
+      body: "A million dollars is a round number, not a personal target. Many financial planners start with a simple rule: multiply your expected annual retirement spending by 25. Someone planning to spend $50,000 a year would target about $1.25 million, not $1 million.\n\nYour real number depends on your spending, your retirement age, and other income like [Social Security](https://www.ssa.gov/benefits/retirement/). A higher spender needs more than $1 million. A lower spender, or someone with a pension, might need less.\n\nModernWallet's [retirement savings calculator](/retirement/retirement-savings-calculator/) factors in your current savings, contribution rate, and expected retirement age. Run your own numbers before assuming $1 million is the right finish line."
+    },
+    {
+      heading: "Contribute Consistently, Then Raise Your Rate Every Year",
+      body: "Consistent contributions beat occasional large ones. A 401(k) millionaire almost always got there by contributing the same percentage of every paycheck for decades, not by timing a few lump sums.\n\nSet up automatic payroll deductions so the contribution happens before you see the money. Most plans also let you schedule automatic annual increases, often 1% a year, tied to raises. A small yearly bump adds up over a 30-year career.\n\nNot sure what a 1% annual increase does to your balance? Test it with ModernWallet's [compound interest calculator](/investing/compound-interest-calculator/). Small, regular increases usually beat waiting for a bonus year to catch up."
+    },
+    {
+      heading: "Never Leave Free Employer Match Money on the Table",
+      body: "Employer matching dollars are the fastest return you'll ever get on retirement savings. The average 401(k) match reached 4.7% of pay in 2025, according to [Vanguard](https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguards-twenty-fifth-how-america-saves-reveals-quiet-retirement-revolution-061626.html)'s How America Saves report, the largest annual study of 401(k) plan data. Skip that match, and you're turning down money your employer already budgeted for you.\n\nSuppose you earn $70,000 a year and your employer matches 4.7% of pay, or $3,290 a year. If you contribute too little to capture the full match every year for 30 years, and that money would have earned a 7% average return, you lose about $311,000 by retirement. That's larger than many people's entire home down payment, lost purely from under-contributing.\n\nCheck your plan's match formula in your enrollment paperwork or benefits portal. Most plans match a percentage of your first 3% to 6% of pay, so contributing at least that much should be the floor, not the goal."
+    },
+    {
+      heading: "Max Out Contributions When the 2026 Limits Allow It",
+      body: "The 2026 401(k) employee contribution limit is $24,500, up from $23,500 in 2025, according to the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500). Workers 50 and older can add an $8,000 catch-up contribution, for a total of $32,500. Workers ages 60 to 63 get a higher catch-up of $11,250 instead, under a SECURE 2.0 provision, bringing their total to $35,750.\n\nCombined employee and employer contributions can't exceed $72,000 in 2026, under IRS rules on total annual additions. Someone contributing $24,500 a year starting at age 30, with no employer match, reaches $1 million by about age 49 at a 7% average return. Add an employer match, and that timeline shortens further.\n\nMaxing out isn't automatically the right move for everyone. Money in a 401(k) is hard to reach before age 59½ without taxes and penalties, so maxing out while carrying high-interest debt or no emergency fund can backfire. Build a cash cushion first, then raise your 401(k) rate as your budget allows."
+    },
+    {
+      heading: "Watch Your Fees: Expense Ratios Compound Too",
+      body: "A 1-percentage-point difference in fees can cost you tens of thousands of dollars over a career. Investing $500 a month for 30 years at a 7% return, typical of a low-fee fund, grows to about $610,000. The same $500 a month at a 6% return, after 1% in higher fees, grows to about $502,000, a $108,000 gap from fees alone.\n\nFees usually show up as an expense ratio, a percentage of your balance charged every year. Index funds inside many 401(k) plans charge 0.02% to 0.10%. Actively managed funds can charge 0.50% to 1.50% or more for similar market exposure.\n\nCheck your plan's fund lineup for the expense ratio on each option, usually listed in the fund fact sheet. Choosing the lowest-cost fund that fits your risk level is one of the simplest ways to keep more of your own returns."
+    },
+    {
+      heading: "Roll Over Your 401(k) Instead of Cashing Out When You Change Jobs",
+      body: "Rolling over your 401(k) to a new employer's plan or an IRA keeps your money invested and avoids taxes. Cashing out instead triggers income tax on the full balance, plus a 10% early withdrawal penalty if you're under 59½, according to the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions). A direct, plan-to-plan rollover avoids both.\n\nIf a former employer sends you a check instead of moving the money directly, it must withhold 20% for federal taxes. You'd have to replace that 20% from other savings to roll over the full original balance and avoid tax on the withheld portion. A direct rollover skips this problem entirely.\n\nCashing out a $50,000 balance at age 35 doesn't just cost the taxes and penalty today. It also erases decades of future compounding, the same growth that turns modest contributions into six-figure balances."
+    },
+    {
+      heading: "Leave the Money Invested and Resist the Urge to Touch It",
+      body: "A 401(k) balance grows fastest when nobody interrupts it. Taking a 401(k) loan or hardship withdrawal pulls money out of the market, so it stops compounding while it's gone. Even loans that get repaid mean you missed growth on that money during the loan period.\n\nMarket downturns test this discipline the most. Selling stock funds after a drop locks in the loss and misses the eventual recovery. Staying invested through downturns, and continuing to buy at lower prices, is part of what builds a large balance over decades.\n\nKeeping your account details current matters too. Update your beneficiary designation after marriage, divorce, or having a child, since it usually overrides your will. See ModernWallet's guide to [401(k) beneficiary rules](/guides/401k-beneficiary-rules/) for how these designations work."
+    },
+    {
+      heading: "Look Beyond the 401(k): Other Accounts and Professional Help",
+      body: "A 401(k) doesn't have to be your only retirement account. A Roth IRA or Roth 401(k) adds tax-free withdrawals in retirement, which can pair well with a traditional 401(k)'s upfront tax break. Compare the two on ModernWallet's [401(k) vs. Roth IRA](/compare/401k-vs-roth-ira/) page before deciding how to split contributions.\n\nA health savings account, or HSA, can work as a second retirement account if you have a qualifying high-deductible health plan. Contributions, growth, and withdrawals for medical costs are all tax-free, and after age 65 you can withdraw for any purpose penalty-free. A taxable brokerage account adds flexibility once you've captured your full match and hit annual 401(k) limits.\n\nA fee-only financial advisor can help if your situation involves equity compensation, a pension, or a complex tax picture. Look for a fiduciary, someone legally required to act in your interest, rather than someone paid on commission. If you're deciding what to do with money outside your 401(k), see ModernWallet's guide on [how to invest $100k to $1 million](/guides/how-to-invest-100k-to-1-million/)."
+    }
+  ],
+  tools: [
+    { href: "/retirement/401k-calculator/", label: "401(k) Calculator" },
+    { href: "/retirement/retirement-savings-calculator/", label: "Retirement Savings Calculator" },
+    { href: "/investing/compound-interest-calculator/", label: "Compound Interest Calculator" },
+    { href: "/compare/401k-vs-roth-ira/", label: "401(k) vs. Roth IRA Comparison" }
+  ],
+  faqs: [
+    {
+      question: "How much do I need to contribute monthly to become a 401(k) millionaire?",
+      answer: "It depends on your start age and return rate, but $500 a month starting at age 25 reaches $1 million by about age 61 at a 7% average annual return. Starting at age 35 with the same contribution needs roughly $820 a month to reach $1 million by 65. The 10-year head start is worth more than the extra $320 a month."
+    },
+    {
+      question: "Is a 7% average annual return realistic for a 401(k)?",
+      answer: "A 7% average annual return is a common planning assumption for a diversified stock-and-bond portfolio held over decades. It reflects long-run historical stock market averages, adjusted down slightly for bonds and fees. Actual year-to-year returns swing much more, sometimes losing money in a single year, so 7% is a long-term average, not a guarantee."
+    },
+    {
+      question: "Can I still become a 401(k) millionaire if I start saving in my 40s?",
+      answer: "Yes, but it takes larger contributions to make up for lost time. Someone starting at 45 usually needs a combination of maxing out contributions, capturing the full employer match, and using catch-up contributions after age 50. The 2026 catch-up limit adds $8,000 a year starting at age 50, and $11,250 a year for ages 60 to 63."
+    },
+    {
+      question: "Does my employer's matching contribution count toward the IRS 401(k) limit?",
+      answer: "No, not toward the $24,500 employee limit for 2026. Employer match counts toward a separate, higher combined limit of $72,000 for employee and employer contributions together. Only your own paycheck deferrals count toward the $24,500 cap."
+    },
+    {
+      question: "What happens if I cash out my 401(k) instead of rolling it over?",
+      answer: "Cashing out triggers ordinary income tax on the full amount, plus a 10% early withdrawal penalty if you're under 59½. A former employer that pays you directly must also withhold 20% for taxes. Rolling the balance directly into a new plan or IRA avoids all three costs and keeps the money invested."
+    },
+    {
+      question: "Should I pick a Roth 401(k) or a traditional 401(k) to reach $1 million faster?",
+      answer: "The account type doesn't change how fast your balance grows, since both invest the same way. It changes when you pay taxes: traditional contributions lower your taxable income now, while Roth withdrawals are tax-free in retirement. See ModernWallet's [401(k) vs. Roth IRA](/compare/401k-vs-roth-ira/) comparison to decide which fits your tax situation."
+    }
+  ],
+  sources: [
+    { label: "IRS — 401(k) limit increases to $24,500 for 2026", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    { label: "IRS Notice 2025-67 — 2026 retirement plan contribution limits", url: "https://www.irs.gov/pub/irs-drop/n-25-67.pdf" },
+    { label: "IRS — Rollovers of retirement plan and IRA distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions" },
+    { label: "Vanguard — How America Saves 2025", url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguards-twenty-fifth-how-america-saves-reveals-quiet-retirement-revolution-061626.html" }
+  ]
+},
+{
+  slug: "how-much-does-investing-1000-a-month-grow-to",
+  title: "How Much Does Investing $1,000 a Month Grow To?",
+  metaDescription: "See what $1,000 invested monthly grows to at 6%, 8%, and 10% returns over 10, 20, and 30 years, plus how fees and taxes change the total.",
+  h1: "How Much Does Investing $1,000 a Month Grow To?",
+  cardBlurb: "Real math on what $1,000 a month becomes after 10, 20, and 30 years of compounding.",
+  intro: "Investing $1,000 a month for 30 years grows to about $1,004,518 at a 6% annual return, $1,490,360 at 8%, or $2,260,187 at 10%, before taxes and fees. Your real number depends on how long you invest, how consistently you contribute, and what you earn after costs. This guide runs the exact math at three realistic return rates over 10, 20, and 30 years, then breaks down the fees, taxes, and account choices that change your outcome. Test your own numbers in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/).",
+  sections: [
+    {
+      heading: "What $1,000 a month actually grows to",
+      body: "Investing $1,000 every month grows past $1 million in 25 to 30 years at realistic stock market returns. Over 10 years, $120,000 in total contributions grows to about $163,879 at a 6% annual return, $182,947 at 8%, or $204,832 at 10%. Over 20 years, $240,000 in contributions grows to about $462,042 at 6%, $589,019 at 8%, or $759,296 at 10%. Over 30 years, $360,000 in contributions grows to about $1,004,518 at 6%, $1,490,360 at 8%, or $2,260,187 at 10%.\n\nThe 8% figure is close to the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)'s long-run average nominal return, before inflation is subtracted. These numbers are hypothetical illustrations of compounding, not a promise of future results. Test your own timeline and contribution amount in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/) or [compound interest calculator](/investing/compound-interest-calculator/)."
+    },
+    {
+      heading: "The three variables that set your final number",
+      body: "Three variables control how much $1,000 a month becomes: time in the market, how consistently you invest, and your rate of return. Time matters most, because compounding needs years to work.\n\nLook at the 30-year, 8% scenario above: $1,490,360. Cut that same rate to just 20 years and the total drops to $589,019, a difference of over $900,000 for missing one decade.\n\nConsistency is the second lever. Skipping contributions during a market dip shrinks your final balance more than most investors expect, since missed months never get to compound. Automating the transfer removes the temptation to skip a month.\n\nRate of return is the variable you control least, but asset allocation still shapes it. A portfolio weighted toward stocks has historically returned more than one weighted toward bonds or cash, though it also swings harder in bad years. Our [asset allocation calculator](/portfolio/asset-allocation-calculator/) shows how a stock-bond mix affects your range of likely outcomes."
+    },
+    {
+      heading: "How fees, taxes, and asset mix cut into your total",
+      body: "Fees and taxes can erase a large share of your gains, even when your investments perform well. A 1% expense ratio costs more than it looks. Switching to a fund charging just 0.05% saves about $255,000 over 30 years on the same $1,000-a-month contribution stream.\n\nHere is the math. At a net 7% return (8% minus a 1% fee), $1,000 a month grows to about $1,220,046 in 30 years. At a net 7.95% return (8% minus a 0.05% fee), the same contributions grow to about $1,475,316.\n\nThe [SEC](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated) shows a similar gap using a lump-sum example. A $100,000 portfolio charged 1% a year grows to about $179,000 in 20 years, versus about $208,000 at a 0.25% fee.\n\nTaxes take a second bite, and the size of that bite depends on your account. A taxable brokerage account owes capital gains tax when you sell, and often owes tax on dividends each year. A Roth IRA or Roth 401(k) grows tax-free and comes out tax-free in retirement, if you follow the withdrawal rules.\n\nAsset allocation is the third lever, and it interacts with both fees and taxes. A too-conservative mix can undershoot the 6% to 8% range used above. A too-aggressive mix raises the odds that a bad year forces you to sell low.\n\nCheck your current split against a target mix with our [asset allocation calculator](/portfolio/asset-allocation-calculator/)."
+    },
+    {
+      heading: "Does it matter when you start investing $1,000 a month?",
+      body: "Starting date matters less for monthly investors than for people investing a lump sum, because dollar-cost averaging spreads out the risk of bad timing. A lump sum invested right before a crash can take years longer to recover, even if its long-term average return matches a monthly investor's.\n\nThis effect is called sequence-of-returns risk: the order your returns arrive in changes your outcome, even when the average return is the same. Investing $1,000 a month buys shares at many different prices, so a downturn early on just means your fixed contribution buys more shares while prices are low.\n\nThis does not mean spreading money out always wins. [FINRA](https://www.finra.org/investors/insights/dollar-cost-averaging) notes that dollar-cost averaging often produces lower returns than investing a lump sum right away, since markets rise more often than they fall. The real benefit is behavioral: it removes the temptation to guess when to buy.\n\nSequence risk matters most when you are about to invest a windfall, like a bonus or inheritance, all at once. Spreading that windfall over several months, instead of investing it in a single day, can lower the odds that a bad first year derails your plan. Regular paycheck investors already get this protection automatically, every month."
+    },
+    {
+      heading: "Where should you put your $1,000: brokerage, IRA, or 401(k)?",
+      body: "Where you put your $1,000 changes how much of it you keep, because taxable brokerage accounts, IRAs, and 401(k)s are taxed differently. A 401(k) with an employer match should usually come first, since a match is an immediate, guaranteed return on your contribution.\n\nAfter capturing any match, an IRA is often next. The [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the 2026 IRA contribution limit at $7,500, up from $7,000 in 2025, which works out to about $625 a month.\n\nIf you invest the full $1,000 a month, roughly $625 can go into an IRA and the remaining $375 can go into a taxable brokerage account or back into your 401(k). The 401(k) limit for 2026 is $24,500, far more room than a $1,000-a-month habit will fill on its own.\n\nA taxable brokerage account has no contribution limit and no withdrawal restrictions, which makes it useful once your tax-advantaged room fills up. It does mean paying capital gains tax when you sell and, often, tax on dividends each year. Our [investment growth calculator](/investing/investment-growth-calculator/) can model any of these account types side by side."
+    },
+    {
+      heading: "Should you invest $1,000 a month for growth or income?",
+      body: "Most investors under retirement age should aim for growth, not income, because growth compounds faster over time. Growth investing means buying assets like stock index funds that reinvest gains, rather than paying them out as cash.\n\nIncome investing means buying assets that pay you regularly, such as dividend stocks, bonds, or real estate investment trusts. This can make sense if you need the cash flow now, for example to supplement a part-time income in retirement.\n\nMixing the two is common. Many investors hold growth-oriented stock funds for decades, then shift part of the portfolio toward income-paying bonds and dividend funds as retirement gets closer.\n\nOur [asset allocation calculator](/portfolio/asset-allocation-calculator/) can help you set a stock-to-bond mix that matches your time horizon and cash flow needs. If you are investing a large lump sum rather than a monthly amount, see our guide on [how to invest $200,000](/guides/how-to-invest-200k/) for that separate scenario."
+    },
+    {
+      heading: "When is a financial advisor worth paying for?",
+      body: "A financial advisor is worth paying for once your finances get complicated enough that a mistake costs more than the fee. Examples include coordinating tax strategy across multiple accounts, planning around a business sale, or managing a portfolio well into seven figures.\n\nFor a straightforward goal like investing $1,000 a month into index funds, many people succeed without paid advice. A target-date fund or a simple two- or three-fund portfolio can capture most of the market's return at a very low cost.\n\nAdvisors typically charge in one of a few ways: a flat fee, an hourly rate, or a percentage of assets under management, often around 1% a year. Remember the fee math above; a 1% annual charge on a growing portfolio adds up to hundreds of thousands of dollars over 30 years, so weigh that cost against the specific advice you are paying for.\n\nA one-time session with a fee-only advisor to build a plan, rather than an ongoing asset-based fee, is a middle option worth considering for many monthly investors."
+    },
+    {
+      heading: "How do you scale $1,000 a month up over time?",
+      body: "You scale $1,000 a month up by raising your contribution every time your income rises, not just when you feel like it. A common rule is to save half of every raise, so a $200-a-month raise becomes an extra $100 a month invested.\n\nWindfalls work the same way. Tax refunds, bonuses, and side income can go straight into your investment account instead of your checking account, without changing your monthly budget.\n\nEven small increases compound alongside your returns. Raising your contribution from $1,000 to $1,200 a month in year five, and holding it there for the remaining 25 years, adds tens of thousands of dollars to the 30-year totals shown earlier.\n\nMany 401(k) plans offer an auto-escalation feature that raises your contribution percentage by 1 point each year automatically. Turning that on removes the need to remember to do it yourself."
+    }
+  ],
+  tools: [
+    { href: "/investing/dollar-cost-averaging-calculator/", label: "Dollar-Cost Averaging Calculator" },
+    { href: "/investing/compound-interest-calculator/", label: "Compound Interest Calculator" },
+    { href: "/investing/investment-growth-calculator/", label: "Investment Growth Calculator" },
+    { href: "/portfolio/asset-allocation-calculator/", label: "Asset Allocation Calculator" }
+  ],
+  faqs: [
+    {
+      question: "How much will $1,000 a month be worth in 20 years?",
+      answer: "At an 8% average annual return, $1,000 a month grows to about $589,019 in 20 years, on $240,000 of contributions. At 6% it grows to about $462,042, and at 10% it grows to about $759,296. Your actual result depends on the returns you earn and how consistently you invest."
+    },
+    {
+      question: "Is $1,000 a month enough to become a millionaire?",
+      answer: "Yes. At an 8% average annual return, $1,000 a month passes $1 million in about 25 and a half years. At 6% it takes just under 30 years, and at 10% it takes about 22 years. Starting earlier, or increasing your contribution over time, shortens the timeline further."
+    },
+    {
+      question: "What return should I assume when planning $1,000-a-month investing?",
+      answer: "A reasonable planning range is 6% to 8% a year for a diversified stock portfolio held over decades. The S&P 500's long-run average is about 10% in nominal terms and closer to 7% after inflation, but any single decade can fall well outside that range. Using a conservative assumption, like 6% to 7%, protects you from over-promising your own future."
+    },
+    {
+      question: "Should I invest $1,000 a month in a lump sum or spread it out?",
+      answer: "If you already have the full amount in hand, investing it as a lump sum has historically outperformed spreading it out, since markets rise more often than they fall. If the $1,000 comes from your monthly paycheck, there is no lump sum to consider, so dollar-cost averaging happens automatically. The lump-sum-versus-spread-out debate mainly applies to windfalls, not to money you have not earned yet."
+    },
+    {
+      question: "How much of $1,000 a month can I put in an IRA?",
+      answer: "In 2026, the IRA contribution limit is $7,500 a year, which works out to about $625 a month. The remaining $375 of a $1,000-a-month budget can go into a 401(k), if you have room left, or a taxable brokerage account."
+    },
+    {
+      question: "Do fees really matter that much on $1,000 a month?",
+      answer: "Yes. Moving from a 1% expense ratio fund to a 0.05% index fund saves about $255,000 over 30 years on $1,000-a-month contributions, assuming an 8% gross return. Fees are one of the few variables in investing you can control directly, since you cannot control the market's return."
+    }
+  ],
+  sources: [
+    { label: "IRS: 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    { label: "FINRA: The Benefits and Limitations of Dollar-Cost Averaging", url: "https://www.finra.org/investors/insights/dollar-cost-averaging" },
+    { label: "SEC Investor.gov: How Fees and Expenses Affect Your Investment Portfolio", url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated" },
+    { label: "SEC Investor.gov: Compound Interest Calculator", url: "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" }
+  ]
+},
+{
+  slug: "how-to-retire-at-67",
+  title: "How to Retire at 67: Your Social Security & Medicare Plan",
+  metaDescription: "See the real dollar math for Social Security at 62 vs. 67 vs. 70, Medicare enrollment timing, RMD rules, and a full savings plan for retiring at 67.",
+  h1: "How to Retire at 67: A Step-by-Step Plan",
+  cardBlurb: "The exact Social Security, Medicare, and RMD math behind a full-length retirement at 67.",
+  intro: "Retiring at 67 means claiming your full Social Security benefit right away, with Medicare already in place. Required minimum distributions do not start for another six to eight years, depending on your birth year. This guide covers the real dollar math on Social Security claiming ages and Medicare timing. It also covers RMD rules and how much you need saved for a normal-length retirement.",
+  sections: [
+    {
+      heading: "How Much Money Do You Need to Retire at 67?",
+      body: "Most people need 70% to 80% of their pre-retirement income to keep their lifestyle after 67. A worker earning $80,000 a year typically needs $56,000 to $64,000 a year in retirement. That income comes from three sources: Social Security, any pension, and your own savings.\n\nRetiring at 67 means planning for a 20 to 25 year retirement. A 67-year-old man lives to about 84 on average, and a woman lives to about 87. Half of retirees outlive that average, so plan for more years, not fewer.\n\nRun your own numbers with ModernWallet's [retirement income calculator](/retirement/retirement-income-calculator/) before you set a retirement date. It compares your expected Social Security, savings withdrawals, and any pension against your target spending. If you are still saving, the [retirement savings calculator](/retirement/retirement-savings-calculator/) shows if you're on pace for 67."
+    },
+    {
+      heading: "How Big Should Your Emergency Fund Be Before You Retire?",
+      body: "Retirees need 12 to 24 months of essential expenses in cash, roughly double what workers keep. If your essential expenses run $4,000 a month, that means $48,000 to $96,000 in cash. This cash buffer protects you from selling investments during a market downturn.\n\nA large cash cushion matters most in your first five retirement years. Selling stocks at a loss early in retirement can permanently shrink your savings, a risk called sequence-of-returns risk. Cash lets you skip withdrawals from your portfolio during a bad market year.\n\nKeep this fund in a high-yield savings account or money market fund, not in stocks. Rebuild it from portfolio gains during strong market years. Treat it as a separate bucket, not part of your investment mix."
+    },
+    {
+      heading: "Social Security at 62 vs. 67 vs. 70: What's the Real Dollar Difference?",
+      body: "Claiming Social Security at 62 instead of 67 cuts your monthly check by 30%. Waiting until 70 adds 24% on top of your full benefit at 67. The [Social Security Administration](https://www.ssa.gov/retirement/full-retirement-age) sets full retirement age at 67 for anyone born in 1960 or later.\n\nHere is the math on a $2,000 monthly benefit at age 67. Claim at 62, and you get $1,400 a month for life. Claim at 70, and you get $2,480 a month for life instead.\n\nWaiting from 62 to 67 costs you $84,000 in payments you never collect. The extra $600 a month you gain by waiting makes up that gap by about age 79. Past that age, waiting until 67 pays more in total.\n\nWaiting from 67 to 70 costs you $72,000 in payments you skip. The extra $480 a month from delaying makes up that gap by about age 83. Waiting to 70 only wins if you expect to live well into your 80s.\n\nThese break-even ages are estimates, not guarantees. Taxes, inflation adjustments, and spousal benefits can shift the real numbers. Run your own birth year and earnings history through ModernWallet's [Social Security retirement calculator](/retirement/social-security-retirement-calculator/)."
+    },
+    {
+      heading: "How Does Medicare Line Up With Retiring at 67?",
+      body: "Medicare eligibility starts at 65, two years before Social Security's full retirement age of 67. That means most people already have Medicare in place by the time they retire at 67. Your Initial Enrollment Period runs seven months around your 65th birthday, per [Medicare.gov](https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start).\n\nThat window covers three months before your birthday, your birthday month, and three months after. Missing it can trigger a permanent late-enrollment penalty added to your Part B premium.\n\nThis timing matters most for anyone who retires before 65. You would need private coverage or COBRA to bridge the years until Medicare starts. Retiring at 67 skips that gap, since Medicare already covers you.\n\nRetiring exactly at 67 removes two of the biggest risks early retirees face. Someone retiring decades early, like in our guide on [retiring at 40](/guides/how-to-retire-at-40/), must self-fund health coverage for years. At 67, Social Security and Medicare are both already running at full strength."
+    },
+    {
+      heading: "What Happens to RMDs After You Retire at 67?",
+      body: "Required minimum distributions force withdrawals from traditional accounts starting at age 73 or 75. The exact age depends on your birth year, under the [SECURE 2.0 Act](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs). People born between 1951 and 1959 must start RMDs at 73.\n\nPeople born in 1960 or later must start RMDs at 75, not 73. That is the same birth year group whose Social Security full retirement age is 67. Most retirees assume 73 is the rule, but this later cohort actually gets two extra years.\n\nThat difference creates a real planning window. If you retire at 67 and RMDs start at 75, you control your taxable income for eight years. If RMDs start at 73 instead, that window is six years.\n\nMany retirees use this window to convert traditional IRA money into a Roth IRA, a little at a time. You pay tax on the conversion now, at your current rate, instead of later when RMDs force bigger withdrawals. Converting during these low-income years can shrink both your lifetime tax bill and your future RMDs.\n\nUse ModernWallet's [RMD calculator](/retirement/rmd-calculator/) to see your first required withdrawal, based on your balance and birth year. The earlier you model this, the more room you have to plan Roth conversions before RMDs start."
+    },
+    {
+      heading: "Which Retirement Accounts Should You Fund and Draw Down First?",
+      body: "Retiring at 67 usually means drawing from accounts in a specific order. Spend taxable brokerage money first, then tax-deferred accounts like a 401(k), then Roth accounts last. This order lets your tax-free Roth money keep growing the longest.\n\nIf you are still working in your final years before 67, catch-up contributions can help close the gap. The [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) sets the 2026 401(k) limit at $24,500, with an $8,000 catch-up if you are 50 or older. Workers age 60 to 63 can add an even bigger catch-up of $11,250 instead.\n\nThe 2026 IRA contribution limit is $7,500. These final working years are your last chance to shelter income from taxes while you still have a paycheck. Maxing out these accounts before 67 can meaningfully close a savings gap.\n\nWhich accounts you draw down first also affects your Medicare premiums. Large withdrawals from tax-deferred accounts count as income and can raise your Medicare Part B premium two years later. Spreading withdrawals evenly, instead of taking one large lump sum, helps you avoid this surcharge."
+    },
+    {
+      heading: "Do You Need Long-Term Care Insurance?",
+      body: "Long-term care insurance makes the most sense if you have $500,000 to $2 million in assets. That range is too high to qualify for Medicaid but too low to comfortably self-fund years of paid care. Medicare does not cover long-term custodial care, like help with bathing or dressing in a nursing home.\n\nA private room in a nursing home costs roughly $10,000 to $12,000 a month in many areas. A few years of care can drain a six-figure nest egg fast. Long-term care insurance or a hybrid life-insurance policy with a care rider can cover this cost instead.\n\nBuying a policy gets more expensive, and harder to qualify for, the longer you wait. Most planners suggest shopping for coverage in your mid-50s to mid-60s, before you retire at 67. If you are past that window, ask an advisor about self-insuring with a dedicated care fund instead."
+    },
+    {
+      heading: "Should You Work With a Financial Advisor Before You Retire at 67?",
+      body: "A financial advisor earns their fee at 67 by coordinating decisions that are easy to get wrong alone. These include Social Security timing, Roth conversions, and Medicare premium planning. A fee-only fiduciary advisor is legally required to act in your best interest.\n\nYou may not need an advisor if your finances are simple: one income source and modest savings. ModernWallet's calculators can handle the math for straightforward cases like these. Our [Am I Ready to Retire?](/guides/am-i-ready-to-retire/) guide walks through a broader checklist to help you decide.\n\nConsider a one-time paid consultation if you mainly need help with Social Security and Medicare decisions. Many advisors offer a flat-fee retirement plan review for a few hundred to a few thousand dollars. That single session can pay for itself many times over if it catches one costly claiming mistake."
+    }
+  ],
+  tools: [
+    { href: "/retirement/social-security-retirement-calculator/", label: "Social Security Retirement Calculator" },
+    { href: "/retirement/retirement-income-calculator/", label: "Retirement Income Calculator" },
+    { href: "/retirement/rmd-calculator/", label: "RMD Calculator" },
+    { href: "/retirement/retirement-savings-calculator/", label: "Retirement Savings Calculator" }
+  ],
+  faqs: [
+    {
+      question: "What age is full retirement age for Social Security?",
+      answer: "Full retirement age is 67 for anyone born in 1960 or later. It was 65 for decades, but a 1983 law raised it gradually. People born between 1943 and 1959 have a full retirement age between 66 and 66 years, 10 months."
+    },
+    {
+      question: "Can I retire at 67 with $500,000 saved?",
+      answer: "Yes, for many people, if Social Security covers a large share of expenses and spending stays modest. Using the common 4% withdrawal guideline, $500,000 supports about $20,000 a year on top of Social Security. Check your specific numbers with ModernWallet's [retirement savings calculator](/retirement/retirement-savings-calculator/)."
+    },
+    {
+      question: "Do I have to sign up for Medicare at 65 if I am still working?",
+      answer: "No, not if you have qualifying health coverage through an employer with 20 or more employees. You can delay Part B without a penalty and enroll later during a Special Enrollment Period. Confirm your coverage qualifies with your employer's benefits office before your 65th birthday."
+    },
+    {
+      question: "When do RMDs start if I retire at 67?",
+      answer: "RMDs start at 73 if you were born between 1951 and 1959. They start at 75 if you were born in 1960 or later. Retiring at 67 gives you a six to eight year gap before withdrawals become mandatory."
+    },
+    {
+      question: "Is it better to take Social Security at 67 or wait until 70?",
+      answer: "Waiting until 70 pays 24% more per month than claiming at 67. It only wins in total dollars if you live past your late 70s or early 80s. Claiming at 67 makes sense if you need the income sooner or have health concerns."
+    },
+    {
+      question: "Is 67 too late to catch up on retirement savings?",
+      answer: "No, catch-up contribution rules exist specifically to help late savers close the gap. In 2026, workers 50 and older can add an extra $8,000 to a 401(k). Workers 60 to 63 can add $11,250 instead. Delaying your own retirement date adds more savings and possibly more delayed Social Security credits."
+    }
+  ],
+  sources: [
+    { label: "Social Security Administration - See Your Full Retirement Age", url: "https://www.ssa.gov/retirement/full-retirement-age" },
+    { label: "Medicare.gov - When Does Medicare Coverage Start", url: "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-medicare-coverage-start" },
+    { label: "IRS - Retirement Plan and IRA Required Minimum Distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs" },
+    { label: "IRS - 401(k) Limit Increases to $24,500 for 2026, IRA Limit Increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" }
+  ]
+},
+{
+  "slug": "mortgage-refinance-lessons-learned",
+  "title": "Mortgage Refinancing Lessons: When It's Actually Worth It",
+  "metaDescription": "Real mortgage refinancing lessons: when rates are low enough, why resetting your loan term can cost more, and what \"no-closing-cost\" really means.",
+  "h1": "Mortgage Refinancing Lessons Every Homeowner Should Know",
+  "cardBlurb": "Real math on refinance break-even points, loan term resets, and what a \"no-closing-cost\" refinance actually costs.",
+  "intro": "Most refinances pay for themselves in 24 to 40 months, once you divide closing costs by monthly savings. A full 1 or 2 percentage point rate drop is not required — even a 0.5 to 0.75 point gap can be worth taking if you plan to stay past the break-even point. This guide covers the math lenders rarely spell out: how resetting your loan term can raise total interest even at a lower rate, and how a \"no-closing-cost\" refinance quietly shifts fees into your rate or balance. Run your own numbers with [our refinance calculator](/mortgage/refinance-calculator/) before signing anything.",
+  "sections": [
+    {
+      "heading": "The Right Time to Refinance Might Be Now, Not Later",
+      "body": "Waiting for a huge rate drop can cost you more than refinancing at a smaller one. Many homeowners assume they need a 1 or 2 percentage point drop to make refinancing worth it. In reality, even a 0.5 to 0.75 percentage point drop can pay off within a few years, once you run the break-even math.\n\nRates move up and down often, sometimes within the same year. Checking [current mortgage rates](/guides/current-mortgage-rates-guide/) every few months, instead of waiting for one dramatic dip, catches these smaller windows. A homeowner who refinances at the first worthwhile dip often comes out ahead of one who holds out for a bigger drop that takes years to arrive.\n\nThe real question is not how big the rate drop is. It's whether the savings cover your closing costs before you plan to sell or refinance again. That comparison is the break-even calculation covered next."
+    },
+    {
+      "heading": "Do the Break-Even Math Before You Refinance",
+      "body": "The break-even point is the number of months it takes your monthly savings to cover your closing costs. The formula is simple: closing costs divided by monthly savings equals break-even months. If refinancing costs $6,000 and saves $200 a month, the break-even point is 30 months.\n\nSuppose a homeowner has a $300,000 balance with 25 years left, at a 7% rate. Their current payment runs about $2,120 a month. Refinancing into a new 25-year loan at 6% drops the payment to about $1,933, a savings of $187 a month.\n\nClosing costs on this loan run about 2.5% of the balance, or $7,500. Divide $7,500 by $187, and the break-even point lands at about 40 months, or roughly 3 years and 4 months. Staying in the home past that point turns the refinance into a net win; selling before it turns it into a net loss.\n\nUse [our refinance calculator](/mortgage/refinance-calculator/) to plug in your own balance, rate, and cost estimates. It runs this exact math automatically with your numbers."
+    },
+    {
+      "heading": "Why Refinancing Resets Your Loan's Clock",
+      "body": "Every new mortgage starts its amortization schedule over, even if you already paid down years of your old loan. A borrower with 22 years left on their current mortgage who refinances into a new 30-year loan adds 8 years back onto the payoff timeline. That extra time lets interest accumulate for longer, even when the new rate is lower.\n\nSuppose a homeowner owes $250,000 with 22 years left at a 7% rate. Keeping that loan costs about $1,859 a month and roughly $240,700 in total remaining interest. Refinancing into a new 30-year loan at 6% drops the payment to about $1,499 a month, a real savings of $360 every month.\n\nBut stretching the loan back out to 30 years means paying interest for 8 more years than the original payoff date. Total interest on the new loan comes to about $289,600, roughly $48,900 more than sticking with the original 22-year payoff. The lower rate cuts the monthly bill, but the longer term raises the lifetime cost."
+    },
+    {
+      "heading": "How to Avoid the Amortization Reset Trap",
+      "body": "Matching or shortening your loan term protects the interest savings a lower rate is supposed to deliver. If 22 years remain on the current loan, choosing a 20-year refinance term keeps the payoff date close to the original schedule. This avoids adding years of interest back onto the loan.\n\nA second option is refinancing into the full 30-year term for the lower required payment, then paying extra principal every month. Paying enough extra to match the original 22-year payoff date captures a similar interest outcome, while keeping flexibility if income drops later. Any extra payment must be labeled to go toward principal, or it will not shorten the loan.\n\nBefore picking a term, compare total interest across a few options: matching term, full 30-year, and full 30-year with extra payments. [Our refinance calculator](/mortgage/refinance-calculator/) shows total interest side by side for each term, so the tradeoff is visible before you sign."
+    },
+    {
+      "heading": "What \"No-Closing-Cost\" Refinancing Actually Means",
+      "body": "A no-closing-cost refinance does not erase your closing costs — it moves them into your rate or your loan balance. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/is-there-such-a-thing-as-a-no-cost-or-no-closing-loan-or-refinancing-en-141/) confirms lenders cover your upfront fees in one of two ways. They charge a higher interest rate and use the extra margin to pay the costs, or they roll the costs into your loan amount.\n\nEither way, someone pays those costs, and it isn't the lender. A higher rate means paying more in interest every month for as long as you hold the loan. A larger loan balance means a bigger payment and less home equity from day one.\n\nNeither structure is automatically a bad deal. The right choice depends on how long you expect to keep the loan, which is the math in the next section."
+    },
+    {
+      "heading": "No-Closing-Cost vs. Paying Cash: What Each Path Costs Over Time",
+      "body": "Paying closing costs upfront usually costs less than a no-closing-cost refinance, but only after several years. Suppose a homeowner refinances a $300,000 balance into a new 30-year loan. Paying $6,000 in cash upfront secures a 6.00% rate, with a payment of about $1,799 a month.\n\nThe no-closing-cost version rolls that same $6,000 into the rate instead, raising it to about 6.375%. The payment rises to about $1,871 a month, a difference of about $73 a month. That $73 gap has to run for a while before it outweighs the $6,000 paid upfront in the other option.\n\nAt 3 years, the no-closing-cost option is cheaper by about $3,400 in total cost. At 5 years, it's still cheaper, by about $1,600. Past roughly 7 years, the math flips: paying cash upfront becomes the cheaper path, and by year 10 it's ahead by about $2,700.\n\nOver the full 30-year term, paying the $6,000 upfront saves about $20,100 in total cost versus the no-closing-cost rate. Homeowners who plan to move, sell, or refinance again within about 6 years usually come out ahead skipping the upfront cash. Anyone planning to stay longer usually comes out ahead paying the costs upfront instead."
+    },
+    {
+      "heading": "Refinancing Can Reshape Your Loan to Match a New Life Stage",
+      "body": "A refinance is not only a rate reset — it can restructure who owes the loan and how the loan works. Divorce or the death of a co-borrower often requires removing a name from the mortgage, which normally means refinancing into a new loan under one person's credit and income. Lenders will not simply delete a name from an existing loan without a new underwriting process.\n\nHomeowners who need cash can tap equity through a cash-out refinance, trading a larger loan balance for money in hand. This works differently than a [home equity line of credit (HELOC)](/compare/cash-out-refinance-vs-heloc/), which keeps the original mortgage untouched and adds a separate line against the home. Comparing both options side by side shows which one costs less for a specific goal.\n\nSwitching loan structure is another common reason to refinance, such as moving from an [adjustable-rate mortgage to a fixed rate](/compare/fixed-vs-arm-mortgage/) before a rate reset hits. Anyone locked into an ARM approaching its adjustment period should compare fixed and adjustable terms well before that date. Waiting until after the adjustment often means refinancing at a worse rate under time pressure."
+    },
+    {
+      "heading": "What This Means for You",
+      "body": "Run the break-even math before assuming a small rate drop isn't worth refinancing. Divide your estimated closing costs by your monthly savings, then compare that number to how long you plan to stay in the home. [Our refinance calculator](/mortgage/refinance-calculator/) does this math automatically with your real numbers.\n\nCheck how many years remain on your current loan before picking a new term. Matching or shortening that term keeps a lower rate from turning into higher lifetime interest. A 30-year refinance on a loan with years already paid down often costs more overall, even at a better rate.\n\nAsk any lender to show the no-closing-cost rate against the pay-upfront rate side by side. Compare both over your expected time in the home, not just the first year. The cheaper option depends on how long the loan will last, not on which one sounds free."
+    }
+  ],
+  "tools": [
+    { "href": "/mortgage/refinance-calculator/", "label": "Mortgage Refinance Calculator" },
+    { "href": "/guides/current-mortgage-rates-guide/", "label": "Current Mortgage Rates Guide" },
+    { "href": "/compare/cash-out-refinance-vs-heloc/", "label": "Cash-Out Refinance vs. HELOC" },
+    { "href": "/compare/fixed-vs-arm-mortgage/", "label": "Fixed vs. ARM Mortgage" }
+  ],
+  "faqs": [
+    { "question": "How much does a mortgage refinance typically cost in closing costs?", "answer": "Closing costs on a refinance usually run 2% to 5% of the loan amount. On a $300,000 balance, that works out to $6,000 to $15,000. The exact amount depends on the lender, loan size, and state fees, so getting a [Loan Estimate](https://www.consumerfinance.gov/owning-a-home/loan-estimate/) from at least two lenders shows the real range." },
+    { "question": "Is a 1% rate drop enough to make refinancing worth it?", "answer": "Yes, a 1% drop is often worth it, and sometimes even a 0.5% drop pays off. The real test is the break-even calculation: closing costs divided by monthly savings. If that break-even point falls well before you plan to move or sell, the smaller drop is still worth taking." },
+    { "question": "Does refinancing always increase total interest paid?", "answer": "No, refinancing does not always increase total interest, but it can if the new term resets too far. Matching or shortening the remaining term on your current loan usually keeps total interest lower. Stretching a loan with only a few years left back out to a full 30-year term is what usually raises the lifetime cost." },
+    { "question": "Is a no-closing-cost refinance ever a good idea?", "answer": "Yes, a no-closing-cost refinance can be a good idea for homeowners who plan to move or refinance again within a few years. It avoids paying cash upfront in exchange for a slightly higher rate. Homeowners planning to stay in the home for a decade or more usually save more paying the closing costs upfront instead." },
+    { "question": "Can I remove a co-borrower from my mortgage without refinancing?", "answer": "In most cases, no, removing a co-borrower requires a new loan. Lenders typically will not simply drop a name from an existing mortgage. The remaining borrower usually needs to qualify alone for a refinance, based on their own income and credit." },
+    { "question": "How long should I plan to stay in my home before refinancing?", "answer": "Plan to stay at least as long as your break-even point, which is often 2 to 4 years for most refinances. Selling or refinancing again before that point usually means losing money on the closing costs. Homeowners unsure how long they'll stay should lean toward the no-closing-cost option to limit upfront risk." }
+  ],
+  "sources": [
+    { "label": "Consumer Financial Protection Bureau — Is There Such a Thing as a No-Cost or No-Closing-Cost Loan or Refinancing?", "url": "https://www.consumerfinance.gov/ask-cfpb/is-there-such-a-thing-as-a-no-cost-or-no-closing-loan-or-refinancing-en-141/" },
+    { "label": "Consumer Financial Protection Bureau — Loan Estimate Explainer", "url": "https://www.consumerfinance.gov/owning-a-home/loan-estimate/" },
+    { "label": "U.S. Department of Housing and Urban Development — FHA Streamline Refinance", "url": "https://www.hud.gov/program_offices/housing/sfh/ins/streamline" }
+  ]
+},
+{
+  slug: "credit-card-gamification",
+  title: "Credit Card Gamification: Why Rewards Push You to Spend",
+  metaDescription: "Credit card rewards apps use game design to push spending. Learn the psychology behind bonus thresholds and streaks, plus a test to spot the trap.",
+  h1: "Is Credit Card Gamification Designed to Make You Spend More?",
+  cardBlurb: "Bonus thresholds, streaks, and badges aren't neutral fun — they're built to make you spend more than you planned.",
+  intro: "Credit card issuers use game mechanics — bonus thresholds, streaks, and badges — because they measurably change how much you charge. A common design pays 5% back only after you spend $1,500 in a quarter. Chasing that threshold with $300 of new spending earns $63 more in rewards, a loss if you didn't need that spending anyway. This guide covers the psychology behind these mechanics, the real math on the bonus trap, and a simple test to spot it.",
+  sections: [
+    {
+      heading: "What is credit card gamification?",
+      body: "Credit card gamification means issuers add game-like features to a rewards program. Points, badges, streaks, and spending tiers all count. These features borrow directly from mobile games and slot machines, not traditional banking.\n\nThe goal isn't fun for its own sake. Issuers earn money from fees every time you swipe your card. A design that gets you to swipe more often pays for itself many times over.\n\nThe [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-credit-card-rewards/) has noted that rewards marketing now drives much of credit card promotion. Consumers often report confusion over hidden conditions attached to those rewards."
+    },
+    {
+      heading: "Can gamification actually help your money habits?",
+      body: "Yes, some gamified features push you toward habits that genuinely help your finances. Round-up tools sweep spare change from every purchase into savings automatically. They use the same instant-feedback design as a game, but for your benefit.\n\nPayment streaks that track on-time bills work the same way. They turn a boring habit into something that feels like progress. The mechanics only turn harmful when the habit they reinforce is overspending."
+    },
+    {
+      heading: "What is a variable-ratio reward schedule, and why do cards use it?",
+      body: "A variable-ratio reward schedule pays out on an unpredictable pattern instead of a fixed one. It's the same mechanism that makes slot machines hard to put down. This pattern produces the most persistent behavior of any reward timing psychologists have studied.\n\nRotating bonus categories and surprise cash-back offers use this same structure. A flat 2% card is predictable, so you bank the rate and stop paying attention. A card that jumps between 1% and 5% keeps you checking the app instead.\n\nThat checking behavior, not the cash back, is what the design is built to produce. The [Federal Trade Commission](https://www.ftc.gov/reports/bringing-dark-patterns-light) has linked these same design patterns to gamification that drives impulsive decisions in financial apps."
+    },
+    {
+      heading: "How do bonus-spending thresholds create the 'spend to save' trap?",
+      body: "Bonus-spending thresholds create a trap because the reward only pays out after you cross a spending line. Crossing that line often means buying things you didn't plan to buy. Say a card pays 5% back once you spend $1,500 in a quarter, with 1% below that.\n\nIf your normal quarterly spending is $1,200, you're $300 short of the bonus. Your normal $1,200 earns $12 at the 1% base rate, with no extra effort. Push $300 more to hit $1,500, and the full amount earns 5%, or $75.\n\nThat's a gain of $63 over the base rate, but you spent $300 in real money to get it. That trade only works if you'd have spent the $300 anyway. If the bonus talked you into that spending, you're $237 worse off, not $63 ahead."
+    },
+    {
+      heading: "Why do reward streaks make you anxious about breaking them?",
+      body: "Reward streaks make you anxious because breaking one feels like losing something you already own. Behavioral economists call this loss aversion. Losing a five-day streak feels worse than never having earned it at all.\n\nApps exploit this by framing spending as 'protecting' a streak, not starting a new one. That framing pushes you to buy something you'd otherwise skip, just to keep a number alive.\n\nCard issuers add pressure with artificial urgency: countdown timers and 'expires in 48 hours' alerts. None of these deadlines reflect real scarcity in the product. They exist to shorten your decision time, because fast decisions are more often impulsive ones."
+    },
+    {
+      heading: "Who are heavily gamified rewards cards actually built for?",
+      body: "Heavily gamified cards are built for people who will spend more to chase a badge or bonus tier. Issuers design them around cardholders who respond to game mechanics. That includes people prone to loss aversion around streaks, or willing to stretch a purchase to hit a cap.\n\nIf you spend the same amount every month regardless of any bonus, a gamified card offers you little extra. A flat 2% card doesn't need to change your behavior to make money for the issuer. A tiered card with rotating categories is complex on purpose — the complexity is the tool that gets you spending more."
+    },
+    {
+      heading: "How do you test whether a reward is really free money?",
+      body: "Test whether a reward is free money with one question: would I buy this without the reward? If the honest answer is no, the reward isn't free money. It's the cost of the purchase in disguise.\n\nThis test works because it separates purchases you were already making from purchases the reward talked you into. Run it right before you push spending to hit a quarterly cap. Run it again before you buy something just to protect a streak, or act on a countdown-timer offer.\n\nIf you can answer 'yes, I needed this anyway' each time, the program works in your favor. If you keep answering 'no,' the card is working as its design intended — on you, not for you."
+    },
+    {
+      heading: "How do you pick a card that fits your spending instead of a gamified bonus?",
+      body: "Pick a card by matching it to your existing spending, not to the highest advertised bonus. Start with three months of real numbers from your statements or a [ModernWallet monthly budget calculator](/budget/monthly-budget-calculator/). Know your actual spending before you compare any card's marketing.\n\nIf your grocery spending is $500 a month, a $1,500-per-quarter bonus category is already a match. You don't need to add a dollar of new spending to earn it.\n\nCompare the flat, no-threshold rate against the gamified rate using your own numbers, not the issuer's example spender. Our guide to [whether credit card perks are worth it](/guides/credit-card-perks-worth-it/) prices out fees and perks the same way. If a card only pays off above your normal pattern, it's a nudge to spend more."
+    },
+    {
+      heading: "What happens if gamified spending leaves you with a balance?",
+      body: "Gamified spending can leave you carrying a balance, and that debt costs more than any reward is worth. Credit card interest often runs in the high teens to over 20% a year. A $300 purchase to hit a bonus can cost far more than its price if you carry it.\n\nA $63 reward doesn't offset a year of interest on an unpaid balance. If gamified spending already left you with a balance, the reward math stops mattering until the debt is gone. Our guide on [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) walks through realistic payoff timelines."
+    }
+  ],
+  tools: [
+    { href: "/guides/credit-card-perks-worth-it/", label: "Are Credit Card Perks Worth It?" },
+    { href: "/guides/how-long-to-pay-off-credit-card/", label: "How Long to Pay Off a Credit Card" },
+    { href: "/budget/monthly-budget-calculator/", label: "Monthly Budget Calculator" }
+  ],
+  faqs: [
+    {
+      question: "What is credit card gamification?",
+      answer: "Credit card gamification is the use of game design features — points, streaks, badges, and spending tiers — inside a rewards program to shape how much you spend. It borrows techniques from mobile games and slot machines, including unpredictable rewards and countdown urgency. The goal is to increase how often and how much you charge to the card, not just to make the rewards program more fun."
+    },
+    {
+      question: "Are credit card rewards apps designed to make you spend more?",
+      answer: "Yes, in many cases the reward structure is built around thresholds and rotating categories that require more spending to pay off. The Consumer Financial Protection Bureau has flagged rewards program marketing as a major driver of credit card promotion, with consumer complaints centered on hidden conditions and devalued rewards. That doesn't mean every card is a trap — a flat-rate card with no thresholds pays out the same reward no matter how much you spend."
+    },
+    {
+      question: "What is a bonus spending threshold, and why is it risky?",
+      answer: "A bonus spending threshold is a minimum amount you must charge before a higher reward rate kicks in, and it's risky because hitting it often means buying things you don't need. If your normal spending falls short of the threshold, closing that gap requires new spending the reward is supposed to offset. Run the math on your own numbers before assuming the bonus is a good deal."
+    },
+    {
+      question: "Why do I feel pressure to keep a rewards streak going?",
+      answer: "You feel that pressure because of loss aversion, a well-documented pattern where losing something feels worse than gaining the equivalent feels good. A rewards streak app frames a missed day as losing progress you already earned, which pushes you to spend just to avoid that feeling. Recognizing this pattern is often enough to break its pull, since the streak was never a real asset you could lose."
+    },
+    {
+      question: "How do I know if a gamified card is right for my spending?",
+      answer: "Compare the card's bonus requirements against three months of your actual spending, not the example spender in the card's marketing. If you already spend more than the bonus threshold in a normal month, the bonus is close to free money. If you'd need to add new spending to reach it, ask whether you'd buy that item without the reward — if not, skip the bonus and pick a flat-rate card instead."
+    },
+    {
+      question: "What should I do if I've already overspent chasing a rewards bonus?",
+      answer: "Stop chasing new bonuses until you've paid down any balance the overspending created, since credit card interest costs more than almost any reward pays back. Use a monthly budget calculator to see where the extra spending came from and cut it going forward. Once the balance is cleared, decide whether the card's rewards structure matches your normal spending or whether a simpler flat-rate card would serve you better."
+    }
+  ],
+  sources: [
+    { label: "CFPB Issue Spotlight: Credit Card Rewards (May 2024)", url: "https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-credit-card-rewards/" },
+    { label: "CFPB Circular 2024-07: Design, Marketing, and Administration of Credit Card Rewards Programs", url: "https://www.consumerfinance.gov/compliance/circulars/consumer-financial-protection-circular-2024-07-design-marketing-and-administration-of-credit-card-rewards-programs/" },
+    { label: "FTC Report: Bringing Dark Patterns to Light", url: "https://www.ftc.gov/reports/bringing-dark-patterns-light" }
+  ]
+},
+{
+  "slug": "how-to-budget-when-prices-keep-rising",
+  "title": "How to Budget When Prices Keep Rising (2026 CPI Data)",
+  "metaDescription": "Grocery prices rose 2.7% and shelter costs rose 3.3% in 2026. Learn to spot habit creep, target big spending categories, and set real budget caps.",
+  "h1": "How to Budget When Prices Keep Rising",
+  "cardBlurb": "A CPI-backed method for telling real inflation apart from habit creep and setting budget caps that actually hold.",
+  "intro": "Grocery prices rose 2.7% and shelter costs rose 3.3% over the year ending June 2026, according to the [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm). Overall prices climbed 3.5% in the same period, and wages for most workers grew slower. The fix is not cutting out your morning coffee. It is comparing your own spending growth to the official inflation rate for each category, then setting caps that match how each price actually behaves.",
+  "sections": [
+    {
+      "heading": "Which Costs Are Rising Fastest in 2026",
+      "body": "Housing and food are outpacing your paycheck right now. The [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm) reported that overall consumer prices rose 3.5% over the 12 months ending June 2026. Shelter costs rose 3.3% in the same period, and overall food prices rose 3.0%.\n\nGrocery prices, also called food at home, rose 2.7% year over year. Restaurant prices, or food away from home, rose 3.4%. Core inflation, which excludes food and energy, ran cooler at 2.6%.\n\nHousing, food, and transportation usually make up more than half of a household budget. A 3% rise in shelter costs matters more in dollars than a 3% rise on a $40 subscription. That is why these three categories deserve your attention first."
+    },
+    {
+      "heading": "How to Tell Real Inflation From Habit Creep",
+      "body": "Habit creep is spending growth that has nothing to do with inflation. It happens when you buy a bigger cart, order delivery more often, or upgrade brands without noticing. The only way to catch it is to compare your own numbers against the official rate for that category.\n\nStart with your last 12 months of grocery spending from your bank statements or a [monthly budget calculator](/budget/monthly-budget-calculator/). Calculate your own percent increase over that period. Then compare that number to the BLS food-at-home rate, which was 2.7% as of June 2026.\n\nSay your grocery spending rose 12% this year, but the official food-at-home rate rose only 2.7%. About 9 points of that increase is habit creep, not inflation. That gap is the part you can actually control."
+    },
+    {
+      "heading": "Target Your Biggest Categories First",
+      "body": "Cutting your biggest expense categories saves more money than trimming small ones. Housing, food, and transportation are usually the three largest lines in any budget. A 10% cut to an $1,800 rent payment saves far more than dropping a $15 streaming service.\n\nList your spending categories from largest to smallest dollar amount, not by how annoying they feel. Attack the top three first: negotiate rent, shop your insurance rate, or switch grocery stores. Small recurring charges matter, but only after the big three are under control."
+    },
+    {
+      "heading": "Hard Dollar Caps vs. Percentage-of-Income Caps",
+      "body": "Use a hard dollar cap for categories you control, and a percentage-of-income cap for categories you do not. A hard cap means you never spend more than a fixed number, like $400 a month on groceries. A percentage cap moves with your income and with real price changes.\n\nDining out and subscriptions have no true price floor, so they deserve a hard dollar cap. Rent, insurance, and utilities deserve a percentage-of-income cap inside the needs bucket of a [50/30/20 budget](/budget/50-30-20-budget-calculator/). You often cannot negotiate these prices, so a percentage keeps them proportional as your income changes.\n\nThe rule of thumb: if you control both the price and the quantity, use a hard dollar limit. If you control neither, cap it as a percentage of income instead."
+    },
+    {
+      "heading": "Set a Realistic Limit for High-Cost Categories",
+      "body": "A realistic limit for a high-cost category comes from real spending, not a guess. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/) recommends checking actual bank and card statements, not memory, before setting any limit. Look at your last three months in that category, since prices swing and one month alone can mislead you.\n\nUse a [zero-based budget calculator](/budget/zero-based-budget-calculator/) to assign every dollar of income to a category before the month starts. This forces you to set a specific number for groceries, gas, and utilities instead of spending until the money runs out. If a limit feels impossible to hit twice in a row, raise it and cut somewhere else instead of pretending."
+    },
+    {
+      "heading": "Build a Price-Shock Cushion Into Your Budget",
+      "body": "A price-shock cushion is a separate line item for costs that jump without warning. Gas prices, grocery prices, and utility bills can spike in a single month even when yearly inflation looks calm. Without a cushion, one bad month forces you onto a credit card.\n\nSet your cushion at 5% to 10% of your total variable spending each month. Keep it separate from your long-term emergency fund, which covers job loss or medical bills. The [Federal Reserve](https://www.federalreserve.gov/consumerscommunities/shed.htm) reports that many households still struggle to cover a surprise $400 expense, which is exactly the gap this cushion closes."
+    },
+    {
+      "heading": "Cut Spending or Raise Income? Do the Math First",
+      "body": "Cutting spending has a limit; raising income does not. Once your discretionary categories are already tight, more cuts stop making a real difference. At that point, added income closes the gap faster than further cuts.\n\nCompare the math directly: if cutting further would only free up $50 a month, but a side project could realistically add $200, the side project wins. Our [passive income ideas guide](/guides/passive-income-ideas/) covers ways to add income streams without a second job. Even a small, steady income boost outpaces most further spending cuts once your budget is already lean."
+    },
+    {
+      "heading": "Which Budgeting Method Fits an Inflation Year",
+      "body": "A [zero-based budget](/budget/zero-based-budget-calculator/) fits an inflation year best because it forces a fresh check every month. Prices move fast right now, so a plan built on last month's numbers can fall short. Assigning every dollar on purpose catches price changes before they catch you.\n\nA [50/30/20 budget](/budget/50-30-20-budget-calculator/) works well if you want simpler percentage-based caps for needs, wants, and savings. A basic [monthly budget calculator](/budget/monthly-budget-calculator/) is the fastest starting point if you have never tracked spending before. Pick the method you will actually keep using, then adjust category limits as CPI data updates."
+    }
+  ],
+  "tools": [
+    { "href": "/budget/monthly-budget-calculator/", "label": "Monthly Budget Calculator" },
+    { "href": "/budget/50-30-20-budget-calculator/", "label": "50/30/20 Budget Calculator" },
+    { "href": "/budget/zero-based-budget-calculator/", "label": "Zero-Based Budget Calculator" }
+  ],
+  "faqs": [
+    {
+      "question": "How much have prices actually risen in 2026?",
+      "answer": "Overall consumer prices rose 3.5% over the 12 months ending June 2026, according to the Bureau of Labor Statistics. Grocery prices rose 2.7%, restaurant prices rose 3.4%, and shelter costs rose 3.3% over the same period. These are the most recent official figures as of this guide's publication; the BLS updates CPI data every month."
+    },
+    {
+      "question": "What is the fastest way to check if a spending increase is habit creep or real inflation?",
+      "answer": "Calculate your own percent increase in a category over the past 12 months, then compare it to the BLS rate for that same category. Any gap above the official rate is habit creep, not inflation. You can look up category-level figures in the [BLS CPI database](https://www.bls.gov/cpi/data.htm)."
+    },
+    {
+      "question": "Should I cut small expenses like coffee first?",
+      "answer": "No, target your three biggest categories first: housing, food, and transportation. Cutting a $5 coffee saves less in a month than a 5% cut to an $1,800 rent payment or a better insurance rate. Small recurring charges are worth trimming only after the big three are under control."
+    },
+    {
+      "question": "How big should my price-shock cushion be?",
+      "answer": "Set your cushion at 5% to 10% of your total variable monthly spending. This covers price spikes in gas, groceries, or utilities that hit in a single month. Keep it separate from your core emergency fund, which is meant for job loss or major expenses."
+    },
+    {
+      "question": "Does the 50/30/20 rule still work when prices rise faster than income?",
+      "answer": "Yes, but the categories inside each bucket need different types of caps. Give true necessities, like rent and insurance, a percentage-of-income cap inside the needs bucket. Give flexible costs, like dining out, a hard dollar cap so they cannot quietly grow."
+    },
+    {
+      "question": "How often should I recheck my budget category limits?",
+      "answer": "Recheck your limits every month, since CPI data and your own bills both change monthly. Compare your trailing three months of spending against your set limits. Adjust any category that missed its limit twice in a row instead of ignoring it."
+    }
+  ],
+  "sources": [
+    { "label": "U.S. Bureau of Labor Statistics - Consumer Price Index News Release (June 2026 data)", "url": "https://www.bls.gov/news.release/cpi.nr0.htm" },
+    { "label": "U.S. Bureau of Labor Statistics - CPI Databases (category-level inflation data)", "url": "https://www.bls.gov/cpi/data.htm" },
+    { "label": "Consumer Financial Protection Bureau - Budgeting: How to Create a Budget and Stick With It", "url": "https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/" },
+    { "label": "Federal Reserve Board - Survey of Household Economics and Decisionmaking (SHED)", "url": "https://www.federalreserve.gov/consumerscommunities/shed.htm" }
+  ]
+},
+{
+  slug: "how-to-budget-with-irregular-income",
+  title: "How to Budget With Irregular Income (Step by Step)",
+  metaDescription: "Learn how to budget with irregular income using a real baseline month, a variability-based buffer fund, and quarterly estimated tax planning.",
+  h1: "How to Budget With Irregular Income",
+  cardBlurb: "A step-by-step way to budget, save, and pay taxes when your paycheck changes every month.",
+  intro: "Budget your irregular income around your lowest realistic month, not your average month. A freelancer earning $2,800 to $6,200 a month should build core spending on a $2,800 baseline, then layer in taxes, a buffer fund, and retirement savings from whatever comes in above that. This guide walks through picking a real baseline number, sizing a buffer fund with actual math, paying quarterly estimated taxes, and covering health care and retirement without an employer plan.",
+  sections: [
+    {
+      heading: "How Do You Find a Realistic Baseline Income When Pay Changes Every Month?",
+      body: "Your baseline income is the lowest month you can realistically expect, not the average of all your months. Pull your last 12 months of take-home pay and sort them from low to high. Use the lowest month, or the average of your three lowest months, as the number your fixed budget is built on.\n\nSuppose a freelance designer earns between $2,800 and $6,200 a month. Over 12 months, her income adds up to $52,000, which averages to $4,333 a month. But four of those months come in under $4,000, and her single lowest month is $2,800.\n\nIf she builds her budget around the $4,333 average, she falls short four months out of the year. Building around $2,800 — the amount she can always count on — means rent and bills get paid even in a slow month. Extra income above that baseline becomes bonus money, not a hole to fill."
+    },
+    {
+      heading: "How Do You Build a Zero-Based Budget Around a Baseline Number?",
+      body: "A zero-based budget assigns every dollar of your baseline income a job before the month starts. List fixed costs first — rent, insurance, minimum debt payments — then variable essentials like groceries and gas. Every dollar of the baseline gets assigned somewhere, so nothing is left unaccounted for.\n\nModernWallet's [zero-based budget calculator](/budget/zero-based-budget-calculator/) is built for exactly this situation, since it forces income minus expenses to equal zero. Run it using your baseline number, not last month's actual income. That way the plan holds up even in your worst month, not just your best one.\n\nIf income swings by category — more client work some months, more retail hours in others — track categories separately. The [monthly budget calculator](/budget/monthly-budget-calculator/) and [household budget calculator](/budget/household-budget-calculator/) both handle this well. Rebuild the plan whenever your baseline shifts, such as after adding a new recurring client.\n\nA baseline budget is a living document, not a one-time worksheet."
+    },
+    {
+      heading: "How Should a Buffer Fund Be Sized for Income That Goes Up and Down?",
+      body: "A buffer fund for irregular income needs two separate numbers, not one flat multiple of expenses. The first is a smoothing buffer, sized to the income gap you expect several times a year. The second is a true emergency reserve: three to six months of your baseline expenses, for total loss of income.\n\nGoing back to the designer earning $2,800 to $6,200, her average month is $4,333 and her baseline is $2,800. That's a gap of about $1,533 a month. If she typically has four low months a year, her smoothing buffer needs roughly $6,133 to cover that gap.\n\nOn top of the smoothing buffer, she also needs a true emergency reserve for total income loss. That reserve should hold three to six months of her $2,800 baseline, or $8,400 to $16,800. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) notes the right fund size depends on your own spending patterns and income stability.\n\nSomeone with steadier, higher-floor income needs a smaller reserve than someone whose income swings hard every month."
+    },
+    {
+      heading: "How Do Quarterly Estimated Taxes Work for Self-Employed Income?",
+      body: "Self-employed workers must pay estimated tax if they expect to owe $1,000 or more for the year. The [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes) requires these payments in four installments, because no employer withholds tax from freelance or gig income. Payments are due in April, June, September, and the following January.\n\nTo avoid a penalty, pay at least 90% of this year's tax, or 100% of last year's tax. High earners — those with prior-year adjusted gross income over $150,000 — must pay 110% instead of 100%. Most freelancers find the prior-year rule easier, since it skips guessing this year's income.\n\nA simple habit: set aside 25% to 30% of every payment you receive in a separate tax account. This covers both income tax and self-employment tax, which funds Social Security and Medicare. Move that money out of checking the same day a client pays you, before it feels like spending money."
+    },
+    {
+      heading: "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+      body: "Freelancers without an employer plan can buy coverage through the ACA Health Insurance Marketplace at [HealthCare.gov](https://www.healthcare.gov/self-employed/). Premiums depend on your income, age, and state, and many self-employed workers qualify for subsidies that lower the monthly cost. Because your income changes, you report your estimated net self-employment income for the year, not last year's number.\n\nBuild the premium into your baseline budget as a fixed cost, the same as rent. If your income rises well above your estimate, update your Marketplace application, since a higher income can change your subsidy. Waiting until tax time to reconcile a big gap can mean owing money back.\n\nSome freelancers also budget a separate line for deductibles and copays, especially with a high-deductible plan. Treat this like the buffer fund: a specific amount, kept separate from daily spending money."
+    },
+    {
+      heading: "How Can Self-Employed Workers Save for Retirement Without a 401(k) Match?",
+      body: "Self-employed workers can save for retirement using a SEP-IRA or a solo 401(k) instead of an employer plan. A [SEP-IRA](https://www.irs.gov/retirement-plans/plan-sponsor/simplified-employee-pension-plan-sep) lets you contribute up to 25% of net self-employment earnings, capped by the IRS each year. A solo 401(k) allows similar limits and can also accept smaller Roth contributions, depending on the provider.\n\nWithout an employer match, the incentive to save has to come from your own budget. A workable rule: contribute a fixed percentage, such as 10%, of any month that comes in above baseline. Contributions are optional each month, which makes both plans a good fit for irregular income.\n\nSkipping retirement savings during lean years is common and understandable. Building it into the plan for above-baseline months, instead of treating it as an afterthought, makes it happen consistently."
+    },
+    {
+      heading: "What's the Best Way to Handle Money During a Good Month?",
+      body: "Extra money in a strong month should follow a set order, not a random spending decision. First, set aside the 25% to 30% tax portion described earlier. Second, refill the smoothing buffer if you drew from it during a recent slow month.\n\nThird, top off retirement contributions for months you skipped. Only after those three steps should extra income go toward discretionary spending or extra debt payoff. Writing this order down ahead of time removes the guesswork when a big check arrives.\n\nThis order matters because taxes and buffer refills are due whether or not you feel like paying them. A good month that gets fully spent leaves nothing to cover the next slow one. Treating windfalls as scheduled tasks, not free money, keeps a variable-income budget working long term."
+    },
+    {
+      heading: "How Do You Track Financial Progress When Income Isn't Steady?",
+      body: "Track progress with net worth, not monthly income, since net worth smooths out the ups and downs of irregular pay. Net worth is what you own minus what you owe, checked on the same day each month or quarter. A slow month that still grows your net worth is a sign your system is working.\n\nModernWallet's [guide to calculating net worth](/net-worth/how-to-calculate-net-worth/) walks through the full formula step by step. Update the same accounts each time — checking, savings, retirement, and debts — so the comparison stays accurate. Over a year, a rising trend line matters more than any single low month.\n\nChecking net worth quarterly, rather than daily, avoids the stress of watching balances jump around week to week. Irregular income naturally causes weekly noise. A quarterly view shows the real trend without that noise."
+    }
+  ],
+  tools: [
+    { href: "/budget/zero-based-budget-calculator/", label: "Zero-Based Budget Calculator" },
+    { href: "/budget/monthly-budget-calculator/", label: "Monthly Budget Calculator" },
+    { href: "/budget/household-budget-calculator/", label: "Household Budget Calculator" },
+    { href: "/net-worth/how-to-calculate-net-worth/", label: "How to Calculate Net Worth" }
+  ],
+  faqs: [
+    {
+      question: "How much of my freelance income should I set aside for taxes?",
+      answer: "Set aside 25% to 30% of every payment for federal income tax and self-employment tax combined. The exact percentage depends on your tax bracket, state taxes, and deductions, so check it against last year's actual tax bill. Move the money to a separate account right away, before it gets mixed in with spending cash."
+    },
+    {
+      question: "Should I budget based on my average income or my lowest month?",
+      answer: "Budget based on your lowest realistic month, not your average. An average hides the months you fall short, while a baseline built on your lowest month covers your bills every time. Treat income above that baseline as extra, to be assigned to taxes, buffer savings, and retirement."
+    },
+    {
+      question: "How big should an emergency fund be with irregular income?",
+      answer: "Plan for two separate amounts, not one flat number. A smoothing buffer covers the routine gap between your average and lowest months, refilled after every strong month. A true emergency reserve, for total loss of work, should hold three to six months of your baseline expenses."
+    },
+    {
+      question: "Do I still need to pay estimated taxes if a client withholds nothing?",
+      answer: "Yes, if you expect to owe $1,000 or more for the year, the IRS requires quarterly estimated payments. This applies to freelance, gig, and contract income, since no employer withholds tax on your behalf. Missing these payments can trigger a penalty even if you pay in full at filing time."
+    },
+    {
+      question: "What happens if I miss a quarterly estimated tax payment?",
+      answer: "The IRS can charge an underpayment penalty, calculated separately for each missed or late quarter. Paying late in one quarter and catching up later still reduces, but does not eliminate, the penalty for that quarter. Paying at least 90% of this year's tax, or 100% of last year's, generally avoids the penalty altogether."
+    },
+    {
+      question: "Can I contribute to a retirement account without an employer 401(k)?",
+      answer: "Yes, a SEP-IRA or a solo 401(k) both let self-employed workers save for retirement without an employer plan. Both are opened through a regular brokerage, not through a job, and both allow contributions based on a percentage of net self-employment earnings. Contributions are optional each year, which suits income that changes month to month."
+    },
+    {
+      question: "How often should I update my baseline income number?",
+      answer: "Recalculate your baseline every six to twelve months, or right after a major change in your client base. Adding or losing a large recurring client can shift your realistic low month significantly. Using outdated numbers means budgeting for income you no longer have, or missing income you could safely count on."
+    }
+  ],
+  sources: [
+    { label: "IRS — Estimated Taxes for Individuals and the Self-Employed", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes" },
+    { label: "IRS — Simplified Employee Pension Plan (SEP)", url: "https://www.irs.gov/retirement-plans/plan-sponsor/simplified-employee-pension-plan-sep" },
+    { label: "Consumer Financial Protection Bureau — An Essential Guide to Building an Emergency Fund", url: "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" },
+    { label: "HealthCare.gov — Health Coverage for Self-Employed People", url: "https://www.healthcare.gov/self-employed/" }
+  ]
+},
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));
