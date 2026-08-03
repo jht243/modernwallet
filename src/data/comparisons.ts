@@ -6155,6 +6155,410 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  {
+    slug: "457b-vs-403b",
+    title: "457(b) vs 403(b): Which Should You Fund First?",
+    metaDescription:
+      "457(b) vs 403(b) compared: separate contribution limits, no 10% penalty after you leave a 457(b), catch-up rules, and creditor risk.",
+    targetKeyword: "457b vs 403b",
+    optionA: "457(b)",
+    optionB: "403(b)",
+    h1: "457(b) vs 403(b): Which One Should You Fund First?",
+    intro:
+      "If your employer offers both, fund the 403(b) up to the full employer match first, then send the rest to a governmental 457(b), because a governmental 457(b) is the only one of the two you can spend before age 59 1/2 without the 10% early-withdrawal tax.\n\nThe two plans do not share a contribution limit. In 2026 you can defer $24,500 to each, or $49,000 combined, before any catch-up contributions. Most of the rest looks alike: pre-tax or Roth contributions, tax-deferred growth, and required withdrawals starting at 73.\n\nThe differences that decide the order are early access, catch-up rules, and, for one version of the 457(b), whether the money is legally yours at all.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who offers it", a: "State and local governments, plus \"top-hat\" plans at some hospitals and 501(c)(3) employers", b: "Public schools, colleges, churches, and 501(c)(3) nonprofits" },
+        { dimension: "2026 contribution limit", a: "$24,500, on a limit of its own", b: "$24,500, shared with any 401(k) or TSP you also use" },
+        { dimension: "Catch-up provisions", a: "$8,000 at 50+ ($11,250 at ages 60 to 63) in governmental plans only; special 3-year rule up to 2x the limit", b: "$8,000 at 50+ ($11,250 at ages 60 to 63); 15-year service rule up to $3,000 a year, $15,000 lifetime" },
+        { dimension: "Early-withdrawal penalty", a: "None on governmental 457(b) money once you separate from the employer, at any age", b: "10% additional tax before 59 1/2 unless an exception applies" },
+        { dimension: "Investment menu", a: "Set by the sponsoring employer; usually mutual funds and annuities", b: "Annuity contract, mutual fund custodial account, or church retirement income account" },
+        { dimension: "Employer match", a: "Less common, and employer money counts against your same $24,500 cap", b: "More common, and a match does not reduce your own $24,500 deferral limit" },
+        { dimension: "Creditor protection", a: "Governmental: contributions go into a trust. Non-governmental: employer property, reachable by its creditors", b: "Held for you in an annuity contract or custodial account, not owned by the employer" },
+        { dimension: "Required minimum distributions", a: "Generally start at 73; can be delayed while you still work there", b: "Generally start at 73; can be delayed while you still work there" },
+      ],
+    },
+    verdict:
+      "Fund the 403(b) up to the full employer match, then put everything else into the governmental 457(b) until you have hit your savings target for the year. The match is a guaranteed return nothing else matches, and the 457(b) is the account you can actually spend before 59 1/2 without a penalty. If the 403(b) has no match, or you expect to stop working before 59 1/2, start with the governmental 457(b) instead. Flip the rule entirely if your 457(b) is a non-governmental top-hat plan: there the 403(b) goes first, and any top-hat deferral should be treated as an unsecured claim on your employer rather than as safe retirement money.",
+    sections: [
+      {
+        heading: "The 10% penalty rule reverses the usual funding order",
+        content:
+          "A 403(b) counts as a qualified retirement plan for early-withdrawal purposes. Pull money out before age 59 1/2 and you generally owe a 10% additional tax on top of ordinary income tax.\n\nA governmental 457(b) sits outside that rule. IRS [Topic no. 558](https://www.irs.gov/taxtopics/tc558) says an eligible state or local government 457 plan is not a qualified retirement plan, so distributions from it are not hit with the 10% additional tax. Your age never enters the test. What matters is that the plan allows the distribution, which it generally does once you separate from the employer.\n\nPicture a school district employee who retires at 55 and needs income for four years. The governmental 457(b) pays out at ordinary income tax rates with no penalty. The 403(b) needs an exception. Two commonly fit: separating from service with that employer after reaching age 55, or taking substantially equal periodic payments over your life expectancy. Both are real, and both carry conditions that are easy to break.\n\nThis is why \"always chase the match first\" can be the wrong rule for an early retiree. If you need bridge income in your 50s, penalty-free access can be worth more than a small match. If you plan to work to 65, the penalty difference never comes up and the match wins outright. Model the gap years with the [early retirement calculator](/retirement/early-retirement-calculator/), and see what a penalized withdrawal actually costs in the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/).",
+      },
+      {
+        heading: "You can max out both in the same year",
+        content:
+          "The 403(b) limit is a shared limit. If you also have a 401(k) or the federal TSP, one pot of [$24,500 in 2026](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) covers all of them together.\n\nA 457(b) is not in that pot. The IRS states that you have a [separate deferral limit](https://www.irs.gov/retirement-plans/how-much-salary-can-you-defer-if-youre-eligible-for-more-than-one-retirement-plan) if you also participate in a 457(b) plan, and that it is not combined with deferrals to a 403(b) or other plans.\n\nFor a hospital or university employee offered both, that means $24,500 into the 403(b) and $24,500 into the 457(b), or $49,000 of deferrals out of one paycheck in 2026. At 50 or older in a governmental plan, each account can also take the $8,000 catch-up on top.\n\nOne asymmetry to watch. In a 457(b), the annual limit applies to total contributions and other additions to your account, so employer money eats into your own room. In a 403(b), an employer match does not reduce your $24,500 elective deferral limit. Use the [401(k) calculator](/retirement/401k-calculator/) to model the same deferral math, or the [retirement savings calculator](/retirement/retirement-savings-calculator/) for the full picture.",
+      },
+      {
+        heading: "The catch-up rules are not the same",
+        content:
+          "Both plans allow the standard age-50 catch-up of $8,000 in 2026, and $11,250 instead for ages 60 to 63. After that they diverge.\n\nOne 2026 change hits high earners in both accounts at once. Beginning in 2026, the IRS requires participants whose prior-year wages with the plan sponsor topped $150,000 to make [catch-up contributions on a Roth basis](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions). That threshold is adjusted for inflation and rose from $145,000. It covers most 401(k), 403(b), and governmental 457 plans, so it can apply to your 403(b) catch-up and your 457(b) catch-up in the same year. You do not lose the $8,000. It simply stops reducing your taxable income, in each account. If you are near that wage line, ask your plan how it is applying the rule before you set your deferral.\n\nThe 403(b) adds the 15-year service rule. Employees with 15 or more years at a public school system, hospital, home health service agency, health and welfare service agency, or church can defer up to $3,000 more per year, capped at $15,000 over a career. It is actually the lesser of three tests, so ask your plan to run your number. The IRS also fixes the order: deferrals above the standard limit apply to the 15-year catch-up first, then to the age-50 catch-up.\n\nThe governmental 457(b) adds a different one. In the three years before the plan's normal retirement age, you can defer up to twice the standard limit, which is 2 x $24,500, or $49,000, in 2026. The extra room is capped at the contribution room you left unused in earlier years. You cannot combine the special 3-year catch-up with the age-50 catch-up in the same year; you use whichever produces more.\n\nThe practical read: the 403(b) rule rewards long tenure, the 457(b) rule rewards someone who under-saved early and is closing in on the plan's retirement age. A long-serving employee near retirement can qualify for one in each account in the same year.",
+      },
+      {
+        heading: "A non-governmental 457(b) is a different product entirely",
+        content:
+          "Not every 457(b) is governmental. Hospitals, private universities, and other tax-exempt employers can offer a non-governmental 457(b), usually called a top-hat plan. The IRS limits it to a select group of management or highly compensated employees, so most staff never see one.\n\nTwo features make it far riskier than the 403(b) sitting beside it. First, the IRS states that plan assets are not held in trust for employees and remain the property of the employer, available to its general creditors in litigation or bankruptcy. You become an unsecured creditor of your own employer for pay you already earned. Second, the age-50 catch-up is not allowed in a non-governmental 457(b) at all, though the special 3-year catch-up is.\n\nYour 403(b) money is not exposed that way. It sits in an annuity contract or a mutual fund custodial account held for you.\n\nSo the answer flips with the plan type. Against a governmental 457(b), the 403(b) is the more restricted account. Against a top-hat 457(b), the 403(b) is the safer account, and a large top-hat deferral is a bet that your employer is still solvent a decade from now. Check the plan document or ask HR which type you have before you raise your deferral. The [403(b) vs 401(k)](/compare/403b-vs-401k/) breakdown covers the 403(b)'s own fee and ERISA quirks, and [457(b) vs 401(k)](/compare/457b-vs-401k/) covers the same 457(b) split against a private-sector plan.",
+      },
+      {
+        heading: "Moving money between them can erase the penalty exemption",
+        content:
+          "A governmental 457(b) can accept rollovers from a 403(b), and it can roll out to an IRA or a new employer's plan. That flexibility hides a trap most summaries skip.\n\nMoney that lands in a 457(b) from a 403(b), 401(k), or IRA keeps its old character. The IRS says amounts in a 457 plan that came from a direct transfer or rollover of a qualified plan are still subject to the 10% additional tax on early distributions. Consolidating your 403(b) into your 457(b) before an early retirement does not launder it into penalty-free money. Plans normally track those balances separately.\n\nThe reverse costs you too. Roll a governmental 457(b) into an IRA and IRA rules take over, and IRA withdrawals before 59 1/2 do face the 10% additional tax unless an exception applies. If early access is the reason you funded the 457(b), leaving it in the plan can be worth more than any fund-menu upgrade an IRA offers.\n\nOn required withdrawals the two land in the same place. Each generally begins at age 73, and each lets you delay while you are still working for that employer. Roth money inside a 403(b) has no required withdrawal during the owner's lifetime. The [RMD calculator](/retirement/rmd-calculator/) handles either account, and the [retirement hub](/retirement/) links the rest of the tools.",
+      },
+    ],
+    faqs: [
+      {
+        question: "457(b) vs 403(b): which one is better?",
+        answer:
+          "A governmental 457(b) is better for anyone who may need the money before age 59 1/2, because its distributions avoid the 10% early-withdrawal tax at any age once you leave the job. A 403(b) is better when it carries the employer match, since the match is a return the 457(b) cannot beat. If both are offered, fund the match first and the 457(b) next.",
+      },
+      {
+        question: "Can I contribute to both a 457(b) and a 403(b) in the same year?",
+        answer:
+          "Yes, and you get the full limit in each. The IRS treats the 457(b) deferral limit as separate and does not combine it with 403(b) deferrals. In 2026 that is $24,500 into each account, or $49,000 total, plus any catch-up contributions you qualify for. One catch: beginning in 2026, if your prior-year wages with the plan sponsor topped $150,000, those catch-up contributions must be made on a Roth basis in both accounts.",
+      },
+      {
+        question: "Can I withdraw from a 457(b) before 59 1/2 without a penalty?",
+        answer:
+          "Yes, from a governmental 457(b). The IRS does not treat an eligible state or local government 457 plan as a qualified retirement plan, so distributions are not subject to the 10% additional tax on early distributions, whatever your age. You still owe ordinary income tax, and the plan still has to permit the distribution, which usually requires separation from employment.",
+      },
+      {
+        question: "Which is better for early retirement, a 457(b) or a 403(b)?",
+        answer:
+          "A governmental 457(b) generally wins for early retirement. It funds the years between leaving work and 59 1/2 without a penalty, while a 403(b) needs an exception such as separating from service after age 55 or taking substantially equal periodic payments. Do not roll the 457(b) into an IRA first, since that would put the money back under the 10% rule.",
+      },
+      {
+        question: "What is the difference between a governmental and non-governmental 457(b)?",
+        answer:
+          "A governmental 457(b) is sponsored by a state or local government and holds contributions in trust for participants. A non-governmental, or top-hat, 457(b) is offered by a tax-exempt employer to a select group of management or highly compensated employees, and the IRS states its assets remain the employer's property and are available to its general creditors in litigation or bankruptcy. The non-governmental version also cannot offer the age-50 catch-up.",
+      },
+      {
+        question: "Do 457(b) and 403(b) plans have required minimum distributions?",
+        answer:
+          "Yes. Both are subject to required minimum distributions generally starting at age 73, and both let you delay while you are still working for the employer that sponsors the plan. Roth money inside a 403(b) is not subject to required withdrawals during the owner's lifetime.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Topic no. 558, Additional tax on early distributions", url: "https://www.irs.gov/taxtopics/tc558" },
+      { label: "IRS — How much salary can you defer if you're eligible for more than one retirement plan?", url: "https://www.irs.gov/retirement-plans/how-much-salary-can-you-defer-if-youre-eligible-for-more-than-one-retirement-plan" },
+      { label: "IRS — Non-governmental 457(b) deferred compensation plans", url: "https://www.irs.gov/retirement-plans/non-governmental-457b-deferred-compensation-plans" },
+    ],
+    relatedComparisons: ["457b-vs-401k", "403b-vs-401k", "tsp-vs-401k", "pension-vs-401k"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Early Retirement Calculator", href: "/retirement/early-retirement-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
+  {
+    slug: "457b-vs-roth-ira",
+    title: "457(b) vs Roth IRA: Which Gets Your Next Dollar?",
+    metaDescription:
+      "457(b) vs Roth IRA compared: separate contribution limits, no 10% penalty after you leave a public job, and which dollars you can actually touch early.",
+    targetKeyword: "457b vs roth ira",
+    optionA: "457(b)",
+    optionB: "Roth IRA",
+    segment: "Retirement accounts",
+    h1: "457(b) vs Roth IRA: Pre-Tax, After-Tax, and Which to Fund Next",
+    intro:
+      "A 457(b) and a Roth IRA are not an either/or choice, because their contribution limits are completely separate. For 2026 you can defer up to $24,500 into a 457(b) and still put $7,500 into a Roth IRA in the same year, as long as your income sits below the Roth IRA phase-out range. The real decision is not which account to pick. It is which one earns the next dollar once you understand two things: a governmental 457(b) escapes the 10% early-withdrawal penalty entirely after you leave the job, and a Roth IRA lets you pull your own contributions back out at any time.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 contribution limit", a: "$24,500 elective deferral; $32,500 at 50+ and $35,750 at ages 60-63 in governmental plans only", b: "$7,500; $8,600 at 50 or older" },
+        { dimension: "Income limit to contribute", a: "None - your salary does not lock you out", b: "Phases out $153,000-$168,000 single and $242,000-$252,000 married filing jointly (2026)" },
+        { dimension: "Tax treatment", a: "Pre-tax by default; many governmental plans also offer a designated Roth option", b: "After-tax only; qualified withdrawals are tax-free" },
+        { dimension: "Early-withdrawal penalty", a: "None on governmental 457(b) money, at any age, once you separate from the employer", b: "Your contributions come out anytime penalty-free; earnings face 10% before 59 1/2 unless an exception applies" },
+        { dimension: "Required minimum distributions", a: "Yes at 73 on pre-tax balances; designated Roth balances have none while you are alive", b: "None while the owner is alive" },
+        { dimension: "Investment menu", a: "Limited to the fund lineup your plan chose", b: "Nearly anything your brokerage offers" },
+        { dimension: "Employer money", a: "Some plans allow it, but employer dollars count toward the same annual limit", b: "None - it is your own individual account" },
+        { dimension: "Creditor protection", a: "Governmental plans hold assets in trust; non-governmental top-hat plans stay employer property and are open to its general creditors", b: "Held at your own custodian, with no exposure to any employer's creditors" },
+      ],
+    },
+    verdict:
+      "Fund both if you can. The two limits do not overlap, so treating this as a single choice leaves room on the table. If you can only fund one, a simple rule works for most public-sector savers: take any employer contribution in the 457(b) first, then fill the Roth IRA, then come back and push the 457(b) toward its limit.\n\nTwo details can flip that order. If you plan to stop working well before 59 1/2, weight the 457(b) more heavily, since a governmental plan pays out penalty-free at any age after separation. If your plan is a non-governmental \"top-hat\" 457(b), fill the Roth IRA first, because top-hat balances sit inside your employer's credit risk. See [457(b) vs 401(k)](/compare/457b-vs-401k/) for how the 457(b) stacks against a workplace plan, and [401(k) vs Roth IRA](/compare/401k-vs-roth-ira/) for the broader match-first sequence.",
+    sections: [
+      {
+        heading: "The limits are separate, so this is rarely an either/or",
+        content:
+          "The 457(b) elective deferral limit and the IRA limit live in different parts of the tax code. They do not share a cap. For 2026 the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) sets the 457(b) deferral limit at $24,500 and the IRA limit at $7,500. Savers 50 and older can add an $8,000 catch-up in a governmental plan and $1,100 in the IRA. Workers aged 60 through 63 get a larger plan catch-up of $11,250 instead.\n\nThe [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) is direct about the overlap: \"You can contribute to a traditional or Roth IRA even if you participate in another retirement plan through your employer or business.\" A teacher, city worker, or state employee can max the 457(b) and still open a Roth IRA that same year.\n\nThat matters more than most comparisons admit. Readers often arrive asking which account is better, then never fund the second one. Model the combined number in the [retirement savings calculator](/retirement/retirement-savings-calculator/) before you decide either is off the table.",
+      },
+      {
+        heading: "Many 457(b) plans now have a Roth option, which changes the question",
+        content:
+          "The pre-tax versus after-tax framing often falls apart once you read your plan documents. Per the [IRS](https://www.irs.gov/retirement-plans/irc-457b-deferred-compensation-plans), \"a governmental 457(b) plan may be amended to allow designated Roth contributions and in-plan rollovers to designated Roth accounts.\" Plenty of state and local plans have done exactly that.\n\nIf yours has, you are not choosing between pre-tax and after-tax at all. You can choose Roth treatment inside the 457(b) and get the after-tax outcome with a much larger limit. The comparison then narrows to investment menu, early access, and where your money is legally held.\n\nThis option is limited to governmental plans. A non-governmental tax-exempt 457(b) cannot offer designated Roth contributions. Check your plan's summary description, or ask your benefits office directly, before assuming your only after-tax route is an IRA. For how a plan-level Roth account compares to an IRA, see [Roth IRA vs Roth 401(k)](/compare/roth-ira-vs-roth-401k/) - the same tradeoffs apply.",
+      },
+      {
+        heading: "The 457(b) early-withdrawal rule is unusually generous",
+        content:
+          "A governmental 457(b) is one of the few retirement accounts with no 10% early-withdrawal penalty. The [IRS](https://www.irs.gov/taxtopics/tc558) states that \"an eligible state or local government section 457 deferred compensation plan isn't a qualified retirement plan and any distribution from such plan isn't subject to the 10% additional tax on early distributions.\"\n\nOnce you separate from the employer, you can take distributions at 45, 50, or any age. You owe ordinary income tax, but no penalty. That makes a 457(b) an unusually good bridge for anyone retiring before 59 1/2. A Roth IRA cannot match this for earnings - those still face the 10% additional tax before 59 1/2 unless an exception applies.\n\nOne caveat the IRS names and most articles skip: money rolled into a 457(b) from a 401(k), 403(b), or IRA keeps its original penalty exposure. Consolidating old accounts into your 457(b) does not launder them into penalty-free status. Keep rollover dollars in a separate source bucket if early access is the plan. The [early retirement calculator](/retirement/early-retirement-calculator/) can show how many bridge years you would need to cover.",
+      },
+      {
+        heading: "Roth IRA contributions are the most liquid retirement dollars you own",
+        content:
+          "This is the axis most comparisons miss. Roth IRA distributions follow ordering rules: your regular contributions come out first, then converted amounts, then earnings. Because you already paid tax on those contributions, they come back out tax-free and penalty-free at any age, for any reason. Publication 590-B from the [IRS](https://www.irs.gov/publications/p590b) lays out this sequence.\n\nThe middle bucket carries a trap worth naming. Each Roth conversion starts its own separate 5-year clock. Pull converted dollars out before that clock runs and before you turn 59 1/2, and you owe the 10% additional tax on them, even though you already paid income tax at conversion. Your regular contributions never have that problem. Converted money does, conversion by conversion.\n\nSo a Roth IRA does double duty. It is a retirement account and a deep backup reserve. Contribute $7,500 this year and that $7,500 stays reachable, even if the account's growth does not.\n\nA 457(b) works differently. You generally cannot touch it while still employed there, outside narrow plan rules. Its flexibility arrives after you leave. That is the honest split: the Roth IRA is liquid while you are working, and the governmental 457(b) is liquid once you are not. If you want the older pre-tax and after-tax comparison in IRA form, see [Roth IRA vs Traditional IRA](/compare/roth-ira-vs-traditional-ira/).",
+      },
+      {
+        heading: "Required minimum distributions push in opposite directions",
+        content:
+          "Pre-tax 457(b) balances are subject to required minimum distributions. The [IRS](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs) applies RMD rules to \"all employer sponsored retirement plans, including profit-sharing plans, 401(k) plans, 403(b) plans, and 457(b) plans,\" and withdrawals generally start at age 73.\n\nA Roth IRA has no such requirement. The IRS confirms that \"the RMD rules do not apply to Roth IRAs or Designated Roth accounts while the owner is alive.\" You control the timing for as long as you live, and beneficiaries take over the distribution rules afterward.\n\nThe practical effect is on your taxable income late in retirement. Forced 457(b) withdrawals stack on top of Social Security and any pension. A Roth IRA gives you a bucket you can leave alone in a high-income year. If your plan offers designated Roth contributions, those balances also avoid lifetime RMDs. Project the withdrawal side in the [Roth IRA calculator](/investing/roth-ira-calculator/).",
+      },
+      {
+        heading: "A non-governmental 457(b) carries a risk a Roth IRA never does",
+        content:
+          "Not every 457(b) is a government plan. Hospitals, universities, and other tax-exempt employers offer \"top-hat\" 457(b) plans to a select group of management or highly compensated employees. The legal structure is fundamentally different.\n\nThe [IRS](https://www.irs.gov/retirement-plans/non-governmental-457b-deferred-compensation-plans) is blunt about it: \"Plan assets are not held in trust for employees but remain the property of the employer (available to its general creditors in the event of litigation or bankruptcy).\" Some employers use a rabbi trust, but the plan stays unfunded and the money stays reachable by creditors. Top-hat plans also lose the age-50 catch-up, which the IRS allows only in governmental 457(b) plans, so the headline catch-up numbers you read elsewhere may not apply to you at all.\n\nA Roth IRA has no equivalent exposure. It sits at your own custodian, in your own name, disconnected from any employer's balance sheet. If your 457(b) is non-governmental, that argues for funding the Roth IRA first and for limiting how much of your net worth you let sit inside one employer's credit. Ask your benefits office which type your plan is - the answer changes the analysis on this page more than any tax bracket does. Start with the [retirement hub](/retirement/) to see how the pieces fit together.",
+      },
+    ],
+    faqs: [
+      {
+        question: "457b vs Roth IRA: which should I fund first?",
+        answer:
+          "Fund both if your budget allows, since the limits are separate. If you must choose, most public-sector savers take any employer contribution in the 457(b) first, then fill the Roth IRA, then return to the 457(b). Lean toward the 457(b) if you plan to retire before 59 1/2, and toward the Roth IRA if your plan is a non-governmental top-hat 457(b).",
+      },
+      {
+        question: "Can I contribute to a 457(b) and a Roth IRA in the same year?",
+        answer:
+          "Yes. The two accounts have entirely separate limits. For 2026 that is $24,500 in a 457(b) and $7,500 in a Roth IRA, so you can max both, as long as your income is under the Roth IRA phase-out range of $153,000 to $168,000 for single filers or $242,000 to $252,000 for married couples filing jointly.",
+      },
+      {
+        question: "Is a 457(b) pre-tax or after-tax?",
+        answer:
+          "Usually pre-tax, but not always. A governmental 457(b) plan can be amended to allow designated Roth contributions, per the IRS, which means after-tax treatment inside the plan. Non-governmental tax-exempt 457(b) plans cannot offer that option. Check your plan's summary description rather than assuming.",
+      },
+      {
+        question: "Can I withdraw from a 457(b) before 59 1/2 without a penalty?",
+        answer:
+          "Yes, for a governmental 457(b), once you have separated from that employer. The IRS states that distributions from an eligible state or local government 457 plan are not subject to the 10% additional tax on early distributions. You still owe ordinary income tax. Money rolled in from a 401(k), 403(b), or IRA keeps its original 10% penalty exposure.",
+      },
+      {
+        question: "Can I take my Roth IRA contributions out early?",
+        answer:
+          "Yes. Roth IRA ordering rules pull your regular contributions out first, and those come out tax-free and penalty-free at any age, no matter how old the account is. Earnings work differently. A withdrawal of earnings is qualified only if the account has met the 5-year holding period and you are 59 1/2 or older, or the distribution is for death, disability, or a first home. Miss either half of that test and the earnings are taxable and generally face the 10% additional tax, so an old Roth does not make earnings safe to touch at 40.",
+      },
+      {
+        question: "What happens to my 457(b) if my employer goes under?",
+        answer:
+          "It depends on the plan type. Governmental 457(b) assets are held in trust for participants. Non-governmental top-hat 457(b) assets remain the property of the employer and are available to its general creditors in litigation or bankruptcy, per the IRS. A Roth IRA has no such exposure because it is held in your own name at your own custodian.",
+      },
+    ],
+    sources: [
+      { label: "IRS - Topic no. 558, Additional tax on early distributions", url: "https://www.irs.gov/taxtopics/tc558" },
+      { label: "IRS - Non-governmental 457(b) deferred compensation plans", url: "https://www.irs.gov/retirement-plans/non-governmental-457b-deferred-compensation-plans" },
+      { label: "IRS - 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    ],
+    relatedComparisons: ["457b-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-roth-401k", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [
+      { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
+      { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
+      { label: "Early Retirement Calculator", href: "/retirement/early-retirement-calculator/" },
+    ],
+  },
+
+  {
+    slug: "i-bonds-vs-ee-bonds",
+    title: "I Bonds vs EE Bonds: Which Savings Bond Wins?",
+    metaDescription:
+      "I bonds vs EE bonds compared: current Treasury rates, the 20-year doubling guarantee, purchase limits, penalties, and which fits your timeline.",
+    targetKeyword: "i bonds vs ee bonds",
+    optionA: "Series I Bonds",
+    optionB: "Series EE Bonds",
+    h1: "I Bonds vs EE Bonds: Rates, the 20-Year Guarantee, and Which to Buy",
+    intro:
+      "Series I bonds pay a rate that resets with inflation every six months, while Series EE bonds pay one flat fixed rate plus a Treasury guarantee that the bond is worth at least double what you paid at exactly 20 years.\n\nFor bonds issued May 1, 2026 through October 31, 2026, I bonds carry a 4.26% composite rate and EE bonds carry a 2.40% fixed rate. That gap looks decisive, but it is misleading. The EE guarantee is worth about 3.5% a year, and you only collect it by holding the bond for the full 20 years.\n\nBoth series are backed by the U.S. Treasury, both cap you at $10,000 per person per calendar year, and both earn interest for 30 years.",
+    comparisonTable: {
+      rows: [
+        { dimension: "How the rate is set", a: "Fixed rate + inflation rate, combined into a composite rate", b: "One fixed rate set before you buy" },
+        { dimension: "Rate for May 1 - Oct 31, 2026 issues", a: "4.26% composite (0.90% fixed + 1.67% six-month inflation rate)", b: "2.40% fixed" },
+        { dimension: "Rate reset schedule", a: "Inflation piece resets every 6 months from your issue date; Treasury announces May 1 and Nov 1", b: "Fixed rate holds for the first 20 years; Treasury announces new rates May 1 and Nov 1" },
+        { dimension: "20-year doubling guarantee", a: "None", b: "Yes - one-time adjustment at 20 years if needed" },
+        { dimension: "Annual purchase limit", a: "$10,000 electronic per SSN per calendar year", b: "$10,000 electronic per SSN per calendar year" },
+        { dimension: "Minimum holding period", a: "12 months", b: "12 months" },
+        { dimension: "Early redemption penalty", a: "Lose last 3 months of interest if cashed before 5 years", b: "Lose last 3 months of interest if cashed before 5 years; also forfeit the 20-year adjustment" },
+        { dimension: "Tax treatment", a: "No state or local income tax; federal tax deferred until you cash it or it stops earning at 30 years", b: "No state or local income tax; federal tax deferred until you cash it or it stops earning at 30 years" },
+      ],
+    },
+    verdict:
+      "Buy I bonds if you want inflation protection and the freedom to cash out after 12 months. That covers most savers. Buy EE bonds only if you can lock the money away for a full 20 years and want a guaranteed doubling, which works out to roughly 3.5% a year.\n\nThe deciding question is not which rate is higher today. It is whether you can promise not to touch the money for 20 years. If the answer is no, the EE guarantee is worth nothing to you and the I bond is the better bond.",
+    sections: [
+      {
+        heading: "How the I bond rate is set",
+        content:
+          "An I bond rate combines two pieces: a fixed rate that never changes for the life of your bond, and an inflation rate that resets twice a year. Treasury announces both on May 1 and November 1.\n\nFor I bonds issued May 1, 2026 through October 31, 2026, the fixed rate is 0.90% and the six-month inflation rate is 1.67%. Together they produce a composite rate of 4.26%.\n\nThe reset does not follow the calendar. Your bond's rate changes every six months from its own issue date. A bond bought in July gets its next rate in January, not in November.\n\nThis is why I bonds protect purchasing power. When inflation rises, your rate rises with it. When inflation falls, your rate falls too. The 4.26% is not a rate you keep for 30 years, and no page should tell you otherwise.\n\nYou can model how a shifting rate compounds with the [compound interest calculator](/investing/compound-interest-calculator/).",
+      },
+      {
+        heading: "How the EE bond rate is set",
+        content:
+          "An EE bond earns one fixed rate that is set before you buy it. That rate holds for the bond's first 20 years and does not move with inflation.\n\nFor EE bonds issued May 1, 2026 through October 31, 2026, the fixed rate is 2.40%. Interest compounds semiannually. Treasury sets new EE rates on the same May 1 and November 1 schedule, but a new rate only affects new bonds.\n\nAfter the 20-year mark, the terms can change. Treasury may adjust the interest rate or the way the bond earns interest for the final 10 years of its 30-year life. If you do not like the new terms, you can cash the bond at 20 years, once it has at least doubled.\n\nOn the headline rate alone, 2.40% is not competitive. Top savings accounts often beat it, as our [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/) roundup shows. The EE bond's real value is somewhere else.",
+      },
+      {
+        heading: "The 20-year doubling is all or nothing",
+        content:
+          "The EE guarantee is the single most important difference between the two bonds, and almost every comparison page buries it. Treasury promises your EE bond will be worth at least twice what you paid at 20 years. If the fixed rate has not gotten there, Treasury makes a one-time adjustment to close the gap.\n\nDoubling your money in 20 years works out to about 3.5% a year. The stated rate is 2.40%. So the guarantee is worth roughly 1.1 percentage points a year more than the number on the label.\n\nHere is what that looks like on $10,000. Compounding 2.40% semiannually for 20 years gets you to about $16,100. Treasury then adds roughly $3,900 to reach $20,000. That adjustment is the entire reason to own an EE bond.\n\nNow look at year 19. The same bond is worth about $15,700 on its fixed rate alone. No adjustment has happened yet, because the adjustment only happens at 20 years. Cash out that year and you walk away with about $15,700 instead of $20,000.\n\nThat final year is worth about $4,300 on a $10,000 bond. It is close to a 27% gain in twelve months. Redeem at 19 years and 11 months and you forfeit every dollar of it.\n\n(These figures compound the 2.40% fixed rate semiannually to illustrate the gap. Treasury publishes the official redemption value for each individual bond.)\n\nThat makes an EE bond a genuine 20-year commitment, not a flexible savings vehicle. The headline fixed rate disguises this completely. Anyone comparing 2.40% against a savings account rate is comparing the wrong number, and anyone who might need the cash early is buying a bond whose main feature they will never receive.\n\nThe guarantee also gives you a break-even you can actually test. Doubling in 20 years is about 3.53% a year. An I bond earns its own fixed rate plus inflation, and the fixed rate on bonds issued May 1, 2026 through October 31, 2026 is 0.90%. Subtract one from the other and the EE bond only wins if inflation averages less than roughly 2.6% a year over the full 20 years. Above that, the I bond pulls ahead.\n\nThat threshold is not universal. It moves with the fixed rate of the I bond you actually buy. A 1.50% fixed rate drops the break-even to about 2.0% inflation and makes the EE guarantee much harder to beat; a 0.20% fixed rate lifts it to about 3.3% and makes the EE bond look better. Check the fixed rate on the day you buy, subtract it from 3.53%, and you have your own number.",
+      },
+      {
+        heading: "The rules both bonds share",
+        content:
+          "I bonds and EE bonds run on the same basic rulebook, so these points do not help you choose between them.\n\nPurchase limit: $10,000 in electronic bonds per Social Security number per calendar year, for each series. That means one person can buy $10,000 of I bonds and $10,000 of EE bonds in the same year, for $20,000 total. The minimum purchase is $25.\n\nMinimum hold: you cannot cash either bond until it is 12 months old. There is no exception for changing your mind.\n\nEarly redemption penalty: cash either bond before it is 5 years old and you lose the last 3 months of interest. After 5 years there is no penalty on either series.\n\nMaturity: both earn interest for 30 years, then stop.\n\nWhere to buy: savings bonds are sold only through TreasuryDirect, not through brokerages. Marketable Treasury securities like bills and notes are different and do trade through brokers, which our [best brokers for Treasury bonds](/roundup/best-brokers-for-treasury-bonds/) roundup covers.",
+      },
+      {
+        heading: "Tax treatment of I bonds and EE bonds",
+        content:
+          "Both series get the same three tax features, and the state tax break is the one savers most often overlook.\n\nInterest on I bonds and EE bonds is exempt from state and local income tax. In a high-tax state that is a real edge over a CD or savings account, where every dollar of interest is taxed by the state.\n\nFederal income tax applies, but it is deferred. Most owners report nothing until they cash the bond or it stops earning interest at 30 years. You may instead elect to report interest each year, which can make sense for a low-income owner.\n\nThe Education Savings Bond Program can exclude the interest from federal tax entirely. The rules are narrow. The bond must be issued after 1989, and you must have turned 24 before the bond's issue date, meaning before the first day of the month it was issued in. The bond must be registered to you, or to you and your spouse. A bond registered to your child does not qualify, even once that child reaches college age. Your modified adjusted gross income must fall under a limit published each year on IRS Form 8815, and you cannot file married filing separately. You also have to cash the bond and pay the qualified expenses in the same tax year, and those expenses must be for you, your spouse, or a dependent you claim on your return.\n\nCompare that to a taxable account. Our [HYSA vs CD](/compare/hysa-vs-cd/) breakdown shows how much a fully taxable rate has to clear to match a state-tax-free bond.",
+      },
+      {
+        heading: "Which bond fits your situation",
+        content:
+          "Match the bond to your timeline first and the rate second.\n\nPick I bonds if your horizon is 1 to 10 years, if you want a hedge against inflation, or if you are not certain when you will need the money. After 5 years you can cash out with no penalty and keep everything you earned.\n\nPick EE bonds only for money you are certain you will not touch for 20 years. A newborn's college fund, or a gift meant to be opened in two decades, are the honest use cases. Anything shorter and you are buying a 2.40% bond and calling it a 3.5% one.\n\nSkip both if the money is your emergency fund. The 12-month lockup disqualifies savings bonds for cash you may need next month. A savings account or money market is the right home, and our [CD vs money market](/compare/cd-vs-money-market/) comparison covers the near-term options.\n\nOne more framing point: neither bond is a growth investment. Both are savings instruments with a government guarantee. If your horizon is long and you can accept volatility, the tradeoff in [stocks vs bonds](/compare/stocks-vs-bonds/) matters far more to your outcome than the choice between these two series. Run the numbers with our [investing calculators](/investing/) before you commit a 20-year block of savings.",
+      },
+    ],
+    faqs: [
+      {
+        question: "I bonds vs EE bonds: which one pays more?",
+        answer:
+          "I bonds pay more today. For bonds issued May 1, 2026 through October 31, 2026, the I bond composite rate is 4.26% versus 2.40% fixed for EE bonds. Over a full 20 years EE bonds can win, because the doubling guarantee works out to about 3.5% a year no matter what the fixed rate is. The I bond rate, by contrast, resets every six months and could be higher or lower.",
+      },
+      {
+        question: "What happens if I cash an EE bond before 20 years?",
+        answer:
+          "You get only the value built up from the fixed rate, and you forfeit the doubling guarantee completely. Treasury makes the one-time adjustment at the 20-year mark, not before. As an illustration, compounding a $10,000 EE bond at 2.40% semiannually puts it near $15,700 at year 19 against a guaranteed $20,000 at year 20, so redeeming a year early costs roughly $4,300. These are illustrative figures, not official values. Treasury publishes the actual redemption value for each individual bond.",
+      },
+      {
+        question: "How much can I buy in I bonds and EE bonds each year?",
+        answer:
+          "$10,000 per series, per Social Security number, per calendar year. The limits are separate, so one person can buy $10,000 in electronic I bonds and $10,000 in electronic EE bonds in the same year, for $20,000 combined. The minimum purchase is $25.",
+      },
+      {
+        question: "When can I cash a savings bond without a penalty?",
+        answer:
+          "After the bond is 5 years old. You cannot cash either an I bond or an EE bond during its first 12 months at all. Between 12 months and 5 years you can cash it, but you lose the last 3 months of interest.",
+      },
+      {
+        question: "Do I pay state taxes on I bond or EE bond interest?",
+        answer:
+          "No. Interest on both Series I and Series EE savings bonds is exempt from state and local income tax. Federal income tax still applies, but you can defer it until you cash the bond or until it stops earning interest at 30 years.",
+      },
+      {
+        question: "Can I avoid federal tax on savings bond interest?",
+        answer:
+          "Sometimes, through the Education Savings Bond Program. If you use the proceeds for qualified higher education expenses in the same year you cash the bond, the interest can be excluded from federal tax. You must have turned 24 before the bond's issue date, the bond must be in your name (or yours and your spouse's), the expenses must be for you, your spouse, or a dependent you claim, your modified adjusted gross income must be under the limit on IRS Form 8815, and you cannot file married filing separately.",
+      },
+    ],
+    sources: [
+      { label: "TreasuryDirect - Comparing EE and I bonds", url: "https://www.treasurydirect.gov/savings-bonds/comparing-ee-and-i-bonds/" },
+      { label: "TreasuryDirect - Savings bond rates announced May 1, 2026", url: "https://www.treasurydirect.gov/news/2026/release-05-01-rates/" },
+      { label: "TreasuryDirect - EE bonds issued May 2005 and later", url: "https://www.treasurydirect.gov/savings-bonds/ee-bonds/may-2005-and-later/" },
+    ],
+    relatedComparisons: ["hysa-vs-cd", "cd-vs-money-market", "stocks-vs-bonds", "annuity-vs-cd"],
+    calculatorLinks: [
+      { label: "Compound interest calculator", href: "/investing/compound-interest-calculator/" },
+      { label: "High-yield savings calculator", href: "/investing/high-yield-savings-calculator/" },
+      { label: "Investment growth calculator", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "i-bonds-vs-tips",
+    title: "I Bonds vs TIPS: Which Inflation Protection Wins?",
+    metaDescription:
+      "I bonds vs TIPS: how each handles inflation, the deflation floor, purchase limits, liquidity, and the yearly tax TIPS owners often miss.",
+    targetKeyword: "i bonds vs tips",
+    optionA: "Series I Bonds",
+    optionB: "TIPS",
+    h1: "I Bonds vs TIPS: How Two Inflation-Protected Treasuries Differ",
+    intro:
+      "I bonds and TIPS both protect savings from inflation, but I bonds add an inflation rate on top of a fixed rate, while TIPS adjust the principal itself with CPI-U and pay a fixed coupon on that adjusted principal.\n\nThat single mechanical split drives everything else. An I bond grows in value and never falls. A TIPS balance moves up and down with the index, and the cash payment moves with it.\n\nThe practical differences are limits, access, and taxes. You can buy only $10,000 of electronic I bonds per Social Security Number per calendar year. TIPS have no equivalent calendar-year cap, but selling one is slower than most savers expect.\n\nTaxes are the part most people miss. TIPS principal increases are taxed in the year they happen, even though no cash reaches you. I bond federal tax can wait until you cash the bond.",
+    comparisonTable: {
+      rows: [
+        { dimension: "How inflation protection works", a: "Inflation rate is added to a fixed rate; value accrues inside the bond", b: "CPI-U adjusts the principal; fixed coupon is paid on the adjusted principal" },
+        { dimension: "Deflation floor", a: "Composite rate stops at 0%; the bond never loses value", b: "Principal can fall during the term; maturity pays at least the original principal (par), not your purchase price" },
+        { dimension: "Purchase limit", a: "$10,000 electronic per SSN per calendar year", b: "No calendar-year cap; $10 million noncompetitive limit per auction" },
+        { dimension: "Liquidity and secondary market", a: "No secondary market; redeem through Treasury only", b: "Tradable, but only through a bank, broker, or dealer; price moves with real yields" },
+        { dimension: "Federal tax timing", a: "Deferred until you cash the bond or it stops earning", b: "Owed every year, including on principal increases" },
+        { dimension: "Where to buy", a: "TreasuryDirect", b: "TreasuryDirect auctions, or the secondary market through a broker" },
+        { dimension: "Terms available", a: "Earns interest for up to 30 years", b: "5, 10, or 30 years" },
+        { dimension: "Minimum hold", a: "12 months; lose 3 months of interest if cashed before 5 years", b: "No Treasury holding requirement, but a TreasuryDirect purchase is locked 45 days before transfer or sale" },
+      ],
+    },
+    verdict:
+      "Choose I bonds for money you want protected, simple, and taxed later. The zero floor and the deferred federal tax make them easy to hold in a taxable account once the 12-month lock passes.\n\nChoose TIPS for the two things I bonds cannot do: protect more than $10,000 in a single year, and give you a fixed maturity date you can match to a known future expense.\n\nDo not choose TIPS for fast access. You cannot sell one inside TreasuryDirect, and a TreasuryDirect purchase must sit 45 days before you can even transfer it out. Neither security is a substitute for cash.\n\nHold TIPS inside an IRA or 401(k) whenever you can. The yearly tax on principal increases arrives with no cash attached, and a tax-advantaged account removes that problem entirely.\n\nA common order for savers who want both: fill the $10,000 I bond limit first each year, then use TIPS inside a retirement account for anything above it.",
+    sections: [
+      {
+        heading: "How I bonds fight inflation",
+        content:
+          "An I bond earns a composite rate built from two parts: a fixed rate and a semiannual inflation rate. The fixed rate stays with the bond for its whole life. The inflation rate resets every six months.\n\nTreasury announces new rates on May 1 and November 1. For I bonds issued between May 1, 2026 and October 31, 2026, the composite rate is 4.26%. That comes from a 0.90% fixed rate and a 1.67% semiannual inflation rate. Rates announced in other windows differ, so always check the issue date a rate belongs to.\n\nYour own bond does not switch rates on those calendar dates. It switches every six months from its issue month. A bond bought in January changes rates on July 1 and January 1.\n\nInterest is added to the bond rather than paid out. It compounds twice a year, and the bond keeps earning for up to 30 years. The [compound interest calculator](/investing/compound-interest-calculator/) shows how that kind of accrual builds over time.",
+      },
+      {
+        heading: "How TIPS fight inflation",
+        content:
+          "TIPS work on the principal instead of the rate. Treasury adjusts your principal using the Consumer Price Index, so the balance moves up with inflation and down with deflation.\n\nThe coupon rate itself is fixed and set at auction. Because Treasury pays that fixed rate on the adjusted principal, the dollar amount of each payment changes. Interest arrives every six months as real cash in your account.\n\nTIPS come in 5-year, 10-year, and 30-year terms. The minimum purchase is $100, in $100 increments. Treasury issues and reopens the various maturities several times a year, so auctions are frequent.\n\nThat is the core mechanical point in tips vs i bonds. One security moves the balance and pays you cash. The other moves the rate and stores the growth inside the bond.",
+      },
+      {
+        heading: "The deflation floor: what it protects and what it does not",
+        content:
+          "An I bond cannot lose value. If the inflation component turns negative enough to drag the composite rate below zero, Treasury stops the rate at zero instead. The bond simply stops growing for that period.\n\nTIPS behave differently during the term. Falling prices reduce your adjusted principal, and your interest payments shrink along with it. Sell at that point and you take the loss.\n\nMaturity is where the TIPS protection kicks in. If the adjusted principal has fallen to or below the original amount, Treasury pays the original amount. That floor is set at par, the face amount of the security.\n\nRead the floor carefully, because it protects par and not your purchase price. Buy a seasoned TIPS on the secondary market and you pay par times the accrued index ratio, which can sit well above par. If the index falls back before maturity, Treasury still pays only par, and the premium you paid becomes a real loss. The floor protects the original principal, not the buyer's cost.\n\nSo both securities have a floor, but the floors sit in different places. The I bond floor applies every single day. The TIPS floor applies only at maturity, and only up to par.",
+      },
+      {
+        heading: "The tax trap: paying now for money you have not received",
+        content:
+          "TIPS create taxable income before they create cash. The IRS treats each year's increase in inflation-adjusted principal as original issue discount. You report it as ordinary income in the year it accrues, and Treasury does not hand you that money until maturity or sale.\n\nHere is the shape of it. Say you hold $50,000 of TIPS and inflation runs 3% for the year. Your principal rises by roughly $1,500. You owe federal tax on that $1,500 now, plus tax on the coupon, even though only the coupon reached your bank account. In a high-inflation year, the paper income can easily exceed the cash income.\n\nThat mismatch is why TIPS usually belong in an IRA or 401(k). Inside a tax-advantaged account, the yearly accrual creates no current tax bill and the problem disappears. In a taxable account, you may have to sell something else just to pay the tax on income you never touched.\n\nI bonds avoid the issue by default. You can defer federal tax until you cash the bond or it stops earning interest, or you can elect to report the interest every year. Most holders defer, which is one reason I bonds sit comfortably in a taxable account.\n\nBoth are exempt from state and local income tax, which matters most in high-tax states. That exemption raises the effective yield against a fully taxable bank product. The [high-yield savings calculator](/investing/high-yield-savings-calculator/) helps you compare a taxable cash yield against these on equal terms.",
+      },
+      {
+        heading: "Limits, access, and the real cost of getting out",
+        content:
+          "The purchase limit is the hard constraint on I bonds. You can buy $10,000 in electronic I bonds per Social Security Number per calendar year through TreasuryDirect. There is no secondary market, so Treasury is your only exit.\n\nYou also cannot touch the money for 12 months. Cash the bond before five years and you give up the last three months of interest. That penalty is modest, but the 12-month lock is absolute.\n\nTIPS have no comparable calendar-year cap. A single noncompetitive bid at auction can run up to $10 million, which is why TIPS carry the larger balances.\n\nGetting out of a TIPS is slower than most savers expect. You cannot sell one from inside TreasuryDirect at all. To sell a Treasury marketable security, you must work through a bank, broker, or dealer, which means moving the security into the commercial book-entry system first. A broker may charge for that transfer.\n\nThere is also a waiting period. A marketable security bought in TreasuryDirect must be held 45 days before you can transfer or sell it. So buying TIPS at a Treasury auction means a 45-day lockup, not same-day access. Buying through a broker from the start skips the transfer step, and the [best brokers for Treasury bonds](/roundup/best-brokers-for-treasury-bonds/) roundup covers where to do that.\n\nOnce a TIPS sits at a broker, price risk takes over. TIPS trade on real yields, so a rise in real rates pushes the market price down. Selling early can hand you a loss even in a period when inflation ran high.\n\nIf you want the savings-bond comparison instead, see [I bonds vs EE bonds](/compare/i-bonds-vs-ee-bonds/). For how any of this fits beside stocks, see [stocks vs bonds](/compare/stocks-vs-bonds/).",
+      },
+      {
+        heading: "Where each one fits next to plain cash",
+        content:
+          "Neither security replaces a savings account for true emergency money. An I bond locks your cash for a full year. A TIPS can be sold, but only through a broker, and the price you get depends on the market that day.\n\nA workable order is simple. Keep three to six months of expenses in a liquid account first. Then move surplus savings into inflation protection. Cash accounts reprice instantly, which is exactly what you want for money you may need next week. Our [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/) roundup lists current options.\n\nIf you are still choosing among cash products, [HYSA vs CD](/compare/hysa-vs-cd/) and [CD vs money market](/compare/cd-vs-money-market/) cover that step. Come back to I bonds and TIPS once the short-term buffer is funded.\n\nYou can model the growth side of any of these with the tools on the [investing calculators](/investing/) hub.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which is better, I bonds vs TIPS?",
+        answer:
+          "Neither wins outright, and the choice turns on limits and taxes. I bonds fit up to $10,000 per person per year in a taxable account, because federal tax is deferred and the value never falls. TIPS fit larger amounts, fixed maturity dates, and accounts where you can shelter the yearly tax on principal increases.",
+      },
+      {
+        question: "Can TIPS lose money?",
+        answer:
+          "Yes, if you sell before maturity. TIPS prices move with real yields, so rising real rates lower the price. Deflation can also cut your adjusted principal during the term. Holding to maturity guarantees the original principal, or par, but not the price you paid if you bought above par.",
+      },
+      {
+        question: "Can I sell TIPS whenever I want?",
+        answer:
+          "Not directly, and not right away if you bought at auction. You cannot sell a TIPS from inside TreasuryDirect. You must work through a bank, broker, or dealer, and a TreasuryDirect purchase must be held 45 days before you can transfer or sell it. Buying through a broker from the start avoids that wait.",
+      },
+      {
+        question: "Why are TIPS usually held in a retirement account?",
+        answer:
+          "Because the yearly increase in TIPS principal is taxable income even though you receive no cash for it. The IRS treats that increase as original issue discount, reportable in the year it accrues. Inside an IRA or 401(k), there is no current tax, so the mismatch disappears.",
+      },
+      {
+        question: "How much can I buy in I bonds each year?",
+        answer:
+          "$10,000 in electronic I bonds per Social Security Number per calendar year, bought through TreasuryDirect. The limit resets on January 1. Two people with separate TreasuryDirect accounts each get their own $10,000 limit.",
+      },
+      {
+        question: "Are I bonds and TIPS exempt from state taxes?",
+        answer:
+          "Both are exempt from state and local income tax. Federal income tax still applies to each. The timing is what differs: TIPS are taxed every year, while I bond federal tax can be deferred until you cash the bond.",
+      },
+    ],
+    sources: [
+      { label: "TreasuryDirect - Series I savings bonds", url: "https://www.treasurydirect.gov/savings-bonds/i-bonds/" },
+      { label: "TreasuryDirect - Treasury Inflation-Protected Securities (TIPS)", url: "https://www.treasurydirect.gov/marketable-securities/tips/" },
+      { label: "TreasuryDirect - Selling a Treasury marketable security", url: "https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/" },
+    ],
+    relatedComparisons: ["stocks-vs-bonds", "hysa-vs-cd", "cd-vs-money-market"],
+    calculatorLinks: [
+      { label: "Compound interest calculator", href: "/investing/compound-interest-calculator/" },
+      { label: "High-yield savings calculator", href: "/investing/high-yield-savings-calculator/" },
+      { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+    ],
+  },
+
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

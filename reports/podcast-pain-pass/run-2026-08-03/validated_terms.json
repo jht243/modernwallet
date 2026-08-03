@@ -1,0 +1,338 @@
+[
+ {
+  "phrase": "compound interest calculator",
+  "volume": 823000,
+  "kd": "65",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "401k calculator",
+  "volume": 135000,
+  "kd": "40",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "roth ira calculator",
+  "volume": 110000,
+  "kd": "44",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "how much house can i afford",
+  "volume": 110000,
+  "kd": "77",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "rent vs buy calculator",
+  "volume": 110000,
+  "kd": "65",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "refinance calculator",
+  "volume": 49500,
+  "kd": "78",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "mortgage payoff calculator",
+  "volume": 40500,
+  "kd": "62",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "dividend calculator",
+  "volume": 27100,
+  "kd": "30",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "investment growth calculator",
+  "volume": 22200,
+  "kd": "61",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "credit card payoff calculator",
+  "volume": 22200,
+  "kd": "24",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "paycheck tax calculator",
+  "volume": 22200,
+  "kd": "74",
+  "vertical": "personal-finance",
+  "theme": "taxes",
+  "hub": "/tax/"
+ },
+ {
+  "phrase": "closing cost calculator",
+  "volume": 22200,
+  "kd": "53",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "401k vs roth ira",
+  "volume": 18100,
+  "kd": "46",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "debt payoff calculator",
+  "volume": 14800,
+  "kd": "63",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "capital gains tax calculator",
+  "volume": 14800,
+  "kd": "45",
+  "vertical": "personal-finance",
+  "theme": "taxes",
+  "hub": "/tax/"
+ },
+ {
+  "phrase": "net worth calculator",
+  "volume": 14800,
+  "kd": "56",
+  "vertical": "investing",
+  "theme": "insurance-estate",
+  "hub": "/estate-planning/"
+ },
+ {
+  "phrase": "how much do i need to retire",
+  "volume": 12100,
+  "kd": "41",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "retirement savings calculator",
+  "volume": 12100,
+  "kd": "63",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "down payment calculator",
+  "volume": 9900,
+  "kd": "73",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "how much life insurance do i need",
+  "volume": 8100,
+  "kd": "43",
+  "vertical": "investing",
+  "theme": "insurance-estate",
+  "hub": "/estate-planning/"
+ },
+ {
+  "phrase": "term vs whole life insurance",
+  "volume": 8100,
+  "kd": "38",
+  "vertical": "investing",
+  "theme": "insurance-estate",
+  "hub": "/estate-planning/"
+ },
+ {
+  "phrase": "tax bracket calculator",
+  "volume": 6600,
+  "kd": "55",
+  "vertical": "personal-finance",
+  "theme": "taxes",
+  "hub": "/tax/"
+ },
+ {
+  "phrase": "roth conversion calculator",
+  "volume": 6600,
+  "kd": "36",
+  "vertical": "personal-finance",
+  "theme": "taxes",
+  "hub": "/tax/"
+ },
+ {
+  "phrase": "emergency fund calculator",
+  "volume": 6600,
+  "kd": "51",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ },
+ {
+  "phrase": "index fund vs etf",
+  "volume": 5400,
+  "kd": "43",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "social security break even calculator",
+  "volume": 4400,
+  "kd": "39",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "student loan payoff calculator",
+  "volume": 4400,
+  "kd": "52",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "how much to save for retirement",
+  "volume": 3600,
+  "kd": "37",
+  "vertical": "retirement",
+  "theme": "retirement-savings",
+  "hub": "/retirement/"
+ },
+ {
+  "phrase": "debt consolidation calculator",
+  "volume": 3600,
+  "kd": "69",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "savings goal calculator",
+  "volume": 2400,
+  "kd": "27",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ },
+ {
+  "phrase": "roth ira vs brokerage account",
+  "volume": 1900,
+  "kd": "39",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "how much should i save each month",
+  "volume": 1900,
+  "kd": "43",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ },
+ {
+  "phrase": "biweekly mortgage calculator",
+  "volume": 1900,
+  "kd": "29",
+  "vertical": "real-estate",
+  "theme": "mortgage-home-buying",
+  "hub": "/mortgage/"
+ },
+ {
+  "phrase": "how long to pay off credit card",
+  "volume": 1300,
+  "kd": "7",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "how much emergency fund",
+  "volume": 1300,
+  "kd": "66",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ },
+ {
+  "phrase": "how much tax will i pay",
+  "volume": 1000,
+  "kd": "58",
+  "vertical": "personal-finance",
+  "theme": "taxes",
+  "hub": "/tax/"
+ },
+ {
+  "phrase": "debt snowball vs avalanche",
+  "volume": 880,
+  "kd": "54",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "estate tax calculator",
+  "volume": 880,
+  "kd": "27",
+  "vertical": "investing",
+  "theme": "insurance-estate",
+  "hub": "/estate-planning/"
+ },
+ {
+  "phrase": "50 30 20 budget calculator",
+  "volume": 590,
+  "kd": "41",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ },
+ {
+  "phrase": "pay off debt or invest",
+  "volume": 480,
+  "kd": "28",
+  "vertical": "personal-finance",
+  "theme": "debt-payoff",
+  "hub": "/debt/"
+ },
+ {
+  "phrase": "how much to invest per month",
+  "volume": 170,
+  "kd": "28",
+  "vertical": "retirement",
+  "theme": "investing",
+  "hub": "/investing/"
+ },
+ {
+  "phrase": "paycheck budget calculator",
+  "volume": 110,
+  "kd": "51",
+  "vertical": "personal-finance",
+  "theme": "budgeting-saving",
+  "hub": "/budget/"
+ }
+]

@@ -10,7 +10,15 @@
     "Buzzsprout-19368780",
     "Buzzsprout-19301178",
     "Buzzsprout-19301130",
-    "Buzzsprout-19146994"
+    "Buzzsprout-19146994",
+    "Buzzsprout-19582548",
+    "Buzzsprout-19558980",
+    "Buzzsprout-19141606",
+    "Buzzsprout-19098492",
+    "Buzzsprout-19098479",
+    "Buzzsprout-18903109",
+    "Buzzsprout-18903041",
+    "Buzzsprout-18903014"
    ]
   },
   "How to Money": {
@@ -22,7 +30,15 @@
     "55b722b7-d4c1-4d3b-bd62-b4790129b884",
     "ed0a447e-de9b-440c-bade-b47901257c3f",
     "bb1840c5-4ed5-4bb7-b4a2-b47901212578",
-    "85499a10-a0a1-430e-a2f9-b479011a6a19"
+    "85499a10-a0a1-430e-a2f9-b479011a6a19",
+    "6f0aa6a0-4652-43a3-ad2d-b49b003c888c",
+    "869660eb-ce05-49d9-82c6-b495015d64dd",
+    "2957aa55-4542-4abc-a98c-b495015a928b",
+    "26ddb7e1-5c81-454b-85e2-b49400361c76",
+    "fc54248d-f97e-4c0c-a6f7-b486015a03e0",
+    "0eb18605-fae7-48f6-a341-b4860152651a",
+    "d23720e5-596f-4d80-bffe-afc701175a18",
+    "00b57d62-cffe-4ce7-b5da-b47901155a1a"
    ]
   },
   "Suze Orman's Women & Money": {
@@ -34,7 +50,15 @@
     "e9bbd96f-304f-4f2e-a0b8-b47d010f693b",
     "5c8167d6-6a36-4148-8837-b47b00110fbb",
     "03fa9e4a-ecab-4e33-8d2d-b4770039d61f",
-    "7482e34f-d1eb-495e-80a5-b473002b6458"
+    "7482e34f-d1eb-495e-80a5-b473002b6458",
+    "fa6f8898-57f3-4e0a-8392-b499011f7959",
+    "d1e552a6-fb1d-4a6b-b22e-b4970003ff1a",
+    "167c1958-14ea-4f31-8ffe-b49200f7b00e",
+    "383e58c3-402c-497f-9825-b48f017b6247",
+    "45295c30-5823-44df-bdb8-b46f0174e062",
+    "9d0db4a0-fb2d-4e14-bc5d-b46c01789c3a",
+    "eaeb0c91-502c-4675-b12b-b468002d53fe",
+    "2faee278-0b28-46ea-b906-b466002d5751"
    ]
   },
   "The Better Budgeting Podcast": {
@@ -46,7 +70,15 @@
     "Buzzsprout-18456863",
     "Buzzsprout-18456241",
     "Buzzsprout-18455773",
-    "Buzzsprout-18179220"
+    "Buzzsprout-18179220",
+    "Buzzsprout-18100919",
+    "Buzzsprout-18043299",
+    "Buzzsprout-18017456",
+    "Buzzsprout-17965024",
+    "Buzzsprout-17892874",
+    "Buzzsprout-17892697",
+    "Buzzsprout-17613014",
+    "Buzzsprout-17540545"
    ]
   },
   "Catching Up to FI": {
@@ -61,7 +93,15 @@
     "Buzzsprout-14629169",
     "Buzzsprout-14603902",
     "Buzzsprout-14543800",
-    "Buzzsprout-14498530"
+    "Buzzsprout-14498530",
+    "Buzzsprout-14454650",
+    "Buzzsprout-14410472",
+    "Buzzsprout-14361688",
+    "Buzzsprout-14324252",
+    "Buzzsprout-14283233",
+    "Buzzsprout-14178186",
+    "Buzzsprout-14138575",
+    "Buzzsprout-14097288"
    ]
   },
   "Rental Income Podcast With Dan Lane": {
@@ -73,7 +113,15 @@
     "https://api.spreaker.com/episode/72678911",
     "https://api.spreaker.com/episode/72375029",
     "https://api.spreaker.com/episode/72373976",
-    "https://api.spreaker.com/episode/72306702"
+    "https://api.spreaker.com/episode/72306702",
+    "https://api.spreaker.com/episode/72589159",
+    "https://api.spreaker.com/episode/72280952",
+    "https://api.spreaker.com/episode/71562438",
+    "https://api.spreaker.com/episode/71636055",
+    "https://api.spreaker.com/episode/71522787",
+    "https://api.spreaker.com/episode/71947911",
+    "https://api.spreaker.com/episode/71528508",
+    "https://api.spreaker.com/episode/71344799"
    ]
   },
   "The Personal Finance Club Show": {
@@ -85,7 +133,15 @@
     "6069ebd8-7002-4a61-862f-39d3235724dd",
     "Buzzsprout-18983529",
     "Buzzsprout-18939234",
-    "Buzzsprout-18908239"
+    "Buzzsprout-18908239",
+    "Buzzsprout-18872792",
+    "Buzzsprout-18833491",
+    "Buzzsprout-18790181",
+    "Buzzsprout-18749363",
+    "Buzzsprout-18703064",
+    "Buzzsprout-18659545",
+    "Buzzsprout-18622192",
+    "Buzzsprout-18586914"
    ]
   }
  },
@@ -97,5 +153,216 @@
   "pay-off-debt-or-invest",
   "debt-snowball-vs-avalanche"
  ],
- "deferred_rows": []
+ "deferred_rows": [
+  {
+   "n": 1,
+   "slug": "roth-conversion-rules",
+   "format": "guide",
+   "route": "/guides/roth-conversion-rules/",
+   "kw": "roth conversion rules",
+   "vol": 4400,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 2,
+   "slug": "best-dividend-etfs",
+   "format": "roundup",
+   "route": "/roundup/best-dividend-etfs/",
+   "kw": "best dividend etfs",
+   "vol": 3600,
+   "hub": "/investing/"
+  },
+  {
+   "n": 3,
+   "slug": "roth-conversion-ladder",
+   "format": "guide",
+   "route": "/guides/roth-conversion-ladder/",
+   "kw": "roth conversion ladder",
+   "vol": 2400,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 4,
+   "slug": "457b-vs-403b",
+   "format": "comparison",
+   "route": "/compare/457b-vs-403b/",
+   "kw": "457b vs 403b",
+   "vol": 1900,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 5,
+   "slug": "borrowing-against-life-insurance",
+   "format": "guide",
+   "route": "/guides/borrowing-against-life-insurance/",
+   "kw": "borrowing against life insurance",
+   "vol": 1300,
+   "hub": "/estate-planning/"
+  },
+  {
+   "n": 6,
+   "slug": "best-target-date-funds",
+   "format": "roundup",
+   "route": "/roundup/best-target-date-funds/",
+   "kw": "best target date funds",
+   "vol": 1300,
+   "hub": "/investing/"
+  },
+  {
+   "n": 7,
+   "slug": "best-robo-advisors",
+   "format": "roundup",
+   "route": "/roundup/best-robo-advisors/",
+   "kw": "best robo advisors",
+   "vol": 1000,
+   "hub": "/investing/"
+  },
+  {
+   "n": 8,
+   "slug": "what-is-a-good-expense-ratio",
+   "format": "guide",
+   "route": "/guides/what-is-a-good-expense-ratio/",
+   "kw": "what is a good expense ratio",
+   "vol": 720,
+   "hub": "/investing/"
+  },
+  {
+   "n": 9,
+   "slug": "best-dividend-etfs-for-retirement",
+   "format": "roundup",
+   "route": "/roundup/best-dividend-etfs-for-retirement/",
+   "kw": "best dividend etfs for retirement",
+   "vol": 590,
+   "hub": "/investing/"
+  },
+  {
+   "n": 10,
+   "slug": "best-monthly-dividend-etfs",
+   "format": "roundup",
+   "route": "/roundup/best-monthly-dividend-etfs/",
+   "kw": "best monthly dividend etfs",
+   "vol": 480,
+   "hub": "/investing/"
+  },
+  {
+   "n": 11,
+   "slug": "i-bonds-vs-ee-bonds",
+   "format": "comparison",
+   "route": "/compare/i-bonds-vs-ee-bonds/",
+   "kw": "i bonds vs ee bonds",
+   "vol": 320,
+   "hub": "/investing/"
+  },
+  {
+   "n": 12,
+   "slug": "457b-vs-roth-ira",
+   "format": "comparison",
+   "route": "/compare/457b-vs-roth-ira/",
+   "kw": "457b vs roth ira",
+   "vol": 320,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 13,
+   "slug": "i-bonds-vs-tips",
+   "format": "comparison",
+   "route": "/compare/i-bonds-vs-tips/",
+   "kw": "i bonds vs tips",
+   "vol": 260,
+   "hub": "/investing/"
+  },
+  {
+   "n": 14,
+   "slug": "what-target-date-fund-should-i-choose",
+   "format": "guide",
+   "route": "/guides/what-target-date-fund-should-i-choose/",
+   "kw": "what target date fund should i choose",
+   "vol": 210,
+   "hub": "/investing/"
+  },
+  {
+   "n": 15,
+   "slug": "how-to-build-a-dividend-portfolio",
+   "format": "guide",
+   "route": "/guides/how-to-build-a-dividend-portfolio/",
+   "kw": "how to build a dividend portfolio",
+   "vol": 110,
+   "hub": "/investing/",
+   "note": "absorbs reclassified 74000/mo stock-ranking intent"
+  },
+  {
+   "n": 16,
+   "slug": "target-date-fund-vs-sp500",
+   "format": "comparison",
+   "route": "/compare/target-date-fund-vs-sp500/",
+   "kw": "target date fund vs s&p 500",
+   "vol": 140,
+   "hub": "/investing/",
+   "note": "beyond BUILD_CAP=15 this run"
+  },
+  {
+   "n": 17,
+   "slug": "vacancy-rate-derivation-faq",
+   "format": "body-update",
+   "route": "/real-estate/rental-income-calculator/ + /real-estate/cash-flow-calculator/",
+   "kw": "how to calculate vacancy rate",
+   "vol": 320,
+   "hub": "/real-estate/"
+  },
+  {
+   "n": 18,
+   "slug": "roth-conversion-calculator",
+   "format": "calculator-spec",
+   "route": "specs/roth-conversion-calculator-spec.md",
+   "kw": "roth conversion calculator",
+   "vol": 6600,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 19,
+   "slug": "dividend-yield-calculator",
+   "format": "calculator-spec",
+   "route": "specs/dividend-yield-calculator-spec.md",
+   "kw": "dividend yield calculator",
+   "vol": 2400,
+   "hub": "/investing/"
+  },
+  {
+   "n": 20,
+   "slug": "457b-calculator",
+   "format": "calculator-spec",
+   "route": "specs/457b-calculator-spec.md",
+   "kw": "457b calculator",
+   "vol": 1900,
+   "hub": "/retirement/"
+  },
+  {
+   "n": 21,
+   "slug": "expense-ratio-calculator",
+   "format": "calculator-spec",
+   "route": "specs/expense-ratio-calculator-spec.md",
+   "kw": "expense ratio calculator",
+   "vol": 1600,
+   "hub": "/investing/"
+  },
+  {
+   "n": 22,
+   "slug": "cash-value-life-insurance-calculator",
+   "format": "calculator-spec",
+   "route": "specs/cash-value-life-insurance-calculator-spec.md",
+   "kw": "cash value life insurance calculator",
+   "vol": 1000,
+   "hub": "/estate-planning/"
+  },
+  {
+   "n": 23,
+   "slug": "target-date-fund-calculator",
+   "format": "calculator-spec",
+   "route": "specs/target-date-fund-calculator-spec.md",
+   "kw": "target date fund calculator",
+   "vol": 110,
+   "hub": "/investing/"
+  }
+ ],
+ "last_run": "2026-08-03"
 }

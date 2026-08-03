@@ -1,0 +1,79 @@
+{
+ "retirement": {
+  "retirement-savings": {
+   "count": 1,
+   "examples": []
+  },
+  "investing": {
+   "count": 2,
+   "examples": [
+    "<v SPEAKER_00>How much should I keep in NVIDIA stock?"
+   ]
+  }
+ },
+ "personal-finance": {
+  "investing": {
+   "count": 2,
+   "examples": [
+    "00:15:32 Suze: The Treasury has to keep raising yields until money starts to flow in again and the investors say, OK, that's worth it for me to invest."
+   ]
+  },
+  "debt-payoff": {
+   "count": 1,
+   "examples": []
+  },
+  "retirement-savings": {
+   "count": 1,
+   "examples": [
+    "00:09:46 KT: Should I contribute to my 457(b) or should I contribute to my Roth 401k since it's after taxes?"
+   ]
+  },
+  "taxes": {
+   "count": 1,
+   "examples": [
+    "00:09:46 KT: Should I contribute to my 457(b) or should I contribute to my Roth 401k since it's after taxes?"
+   ]
+  },
+  "budgeting-saving": {
+   "count": 1,
+   "examples": [
+    "00:27:26 Suze: So, you have to judge yourself, are the advisors or the expense ratios worth it?"
+   ]
+  }
+ },
+ "budgeting": {
+  "budgeting-saving": {
+   "count": 1,
+   "examples": []
+  }
+ },
+ "investing": {
+  "investing": {
+   "count": 11,
+   "examples": [
+    "<v Speaker 1>And if you do the math, you can see that in the first year you would have received $522 in dividends.",
+    "<v Speaker 1>And so the first question you might be thinking is why should I invest in dividend stocks?"
+   ]
+  },
+  "insurance-estate": {
+   "count": 4,
+   "examples": [
+    "<v Speaker 1>And so, if you do the math, that will give you the dividend yield."
+   ]
+  },
+  "taxes": {
+   "count": 1,
+   "examples": []
+  }
+ },
+ "real-estate": {
+  "mortgage-home-buying": {
+   "count": 1,
+   "examples": []
+  },
+  "insurance-estate": {
+   "count": 1,
+   "examples": []
+  }
+ }
+}

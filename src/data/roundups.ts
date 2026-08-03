@@ -3946,6 +3946,1376 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  {
+    slug: "best-dividend-etfs",
+    title: "8 Best Dividend ETFs of 2026: Compared by Expense Ratio",
+    metaDescription:
+      "8 dividend ETFs ranked by expense ratio, from 0.04% (VIG, VYM) to 0.38% (DVY), plus each fund's index rule, REIT exposure, and dividend tax treatment.",
+    targetKeyword: "best dividend etfs",
+    category: "dividend ETFs",
+    angle: "best",
+    h1: "Best Dividend ETFs of 2026",
+    intro:
+      "The best dividend ETFs pair a low expense ratio with a published, repeatable rule for which dividend payers they hold. Among widely held U.S. funds, annual costs run from 0.04% (VIG and VYM) up to 0.38% (DVY), per each fund's own SEC filing or fact sheet.\n\nWe reviewed eight dividend-focused ETFs from Vanguard, Schwab, iShares, State Street, and JPMorgan. Every fee below comes from the issuer's summary prospectus or published fact sheet. No fund company paid for placement or reviewed this page.\n\nDividend ETFs are not one product. Some chase the highest current yield. Others screen for companies that keep raising payouts. A few generate income from options instead of dividends. Those designs behave very differently, and they are taxed differently too.",
+    rankingCriteria:
+      "The order below is set by one number: total annual expense ratio, cheapest first. That is the only figure every fund here discloses on the same basis, and it is the one cost you control.\n\nTwo pairs tie on cost. When two funds charge the same, we place the one with the lower published portfolio turnover first, because turnover drives trading costs and taxable events. If only one of the two publishes turnover, we place the rules-based index fund ahead of the actively managed one.\n\nWe deliberately did not rank on yield. Yield moves inversely with price, so ranking by it rewards funds whose share prices have fallen. Only five of these eight funds publish a 30-day SEC yield, and they publish it as of different dates, so a cross-fund yield ranking would rest on partial, non-comparable data. Where we cite a yield, we give the figure with the date the issuer published it and leave the comparison to you.\n\nRead the order as a cost ladder, not a fitness ranking. A cheaper fund is not automatically the better fit. What each fund is built to do sits in its Best For line and in the comparison table, and that is where the real decision gets made.",
+    options: [
+      {
+        name: "Vanguard Dividend Appreciation ETF (VIG)",
+        bestFor: "A rising payout over time rather than the biggest payout today",
+        description:
+          "VIG tracks the S&P U.S. Dividend Growers Index, a modified market-cap-weighted index of U.S. companies with a record of increasing their dividends over time. The index excludes REITs.\n\nThe design deliberately trades current income for growth of income. Because the screen favors companies that can afford to keep raising payouts, the current yield tends to sit below a pure high-yield fund. Recent portfolio turnover was 8%, the lowest of the eight funds reviewed here.",
+        strengths: [
+          "0.04% total annual fund operating expenses, tied for the lowest fee here",
+          "Targets dividend growth, which tends to favor financially healthier firms",
+          "8% turnover is very low, which helps after-tax results",
+          "Market-cap weighting keeps it closer to the broad market's sector mix",
+        ],
+        limitations: [
+          "Current yield is usually lower than a high-yield fund, by design",
+          "Vanguard's summary prospectus does not publish a 30-day SEC yield",
+          "A long dividend-increase record does not guarantee future increases",
+          "Excludes REITs, so it is not a full income solution on its own",
+        ],
+        pricing:
+          "0.04% total annual fund operating expenses (0.03% management fee plus 0.01% other expenses), restated to reflect current fees in the summary prospectus dated May 28, 2026. About $4 in year one per $10,000, per the prospectus example.",
+      },
+      {
+        name: "Vanguard High Dividend Yield ETF (VYM)",
+        bestFor: "Broad exposure to above-average yielders at the lowest published fee",
+        description:
+          "VYM tracks the FTSE High Dividend Yield Index, which holds common stocks whose dividends are generally higher than average. The index excludes REITs. The fund invests at least 80% of net assets in index stocks and tries to replicate the index rather than sample it.\n\nThis is the plainest design on the list. There is no quality overlay and no dividend-streak requirement. You get a wide slice of higher-yielding U.S. companies for a published total expense ratio of 0.04%. Recent portfolio turnover was 11%.",
+        strengths: [
+          "0.04% total annual fund operating expenses, tied for the lowest fee here",
+          "Simple, transparent rule that is easy to explain and audit",
+          "Low 11% turnover keeps trading costs and taxable events down",
+          "Full replication, so tracking is tight",
+        ],
+        limitations: [
+          "No quality screen, so weak companies can enter on yield alone",
+          "Excludes REITs, which caps how much income the fund can produce",
+          "Value-heavy sector mix means it trails in growth-led markets",
+        ],
+        pricing:
+          "0.04% total annual fund operating expenses (0.03% management fee plus 0.01% other expenses), restated to reflect current fees in the summary prospectus dated February 27, 2026. The prospectus example shows about $4 in year one per $10,000.",
+      },
+      {
+        name: "Schwab U.S. Dividend Equity ETF (SCHD)",
+        bestFor: "A quality screen layered on top of yield, at a very low cost",
+        description:
+          "SCHD tracks the Dow Jones U.S. Dividend 100 Index. A stock must have paid dividends for at least 10 straight years to be eligible. Eligible names are then ranked on cash flow to total debt, return on equity, dividend yield, and five-year dividend growth.\n\nThe index holds 100 stocks and excludes REITs, master limited partnerships, preferred stock, and convertibles. No single stock may exceed 4% of the index, and no sector may exceed 25% at construction or rebalance. The fund's summary prospectus reports total annual fund operating expenses of 0.06% and a recent portfolio turnover rate of 30%.",
+        strengths: [
+          "0.06% total annual fund operating expenses",
+          "Requires 10 consecutive years of dividend payments before a stock qualifies",
+          "Screens on balance-sheet quality, not yield alone",
+          "4% single-stock cap and 25% sector cap limit concentration",
+        ],
+        limitations: [
+          "Excludes REITs, so it skips a large slice of high-yield equity income",
+          "Only 100 holdings, which is narrow next to a total-market fund",
+          "The quality-and-value tilt can lag badly when growth stocks lead",
+        ],
+        pricing:
+          "0.06% total annual fund operating expenses, per the summary prospectus dated February 27, 2026. The prospectus example puts that at about $6 in year one on a $10,000 investment.",
+      },
+      {
+        name: "SPDR Portfolio S&P 500 High Dividend ETF (SPYD)",
+        bestFor: "Current income from the highest-yielding corner of the S&P 500",
+        description:
+          "SPYD tracks the S&P 500 High Dividend Index, which holds the 80 highest dividend-yielding companies in the S&P 500. That is a pure yield rank with no quality or streak requirement.\n\nBecause it screens on yield alone, real estate has become the fund's largest sector at 24.86% as of July 31, 2026. The fund launched October 21, 2015 and held about $8.7 billion as of July 31, 2026. State Street published a 30-day SEC yield of 4.08% as of July 30, 2026, which is a dated snapshot that moves with prices, not a rate the fund promises.",
+        strengths: [
+          "0.07% gross expense ratio, very cheap for a high-yield strategy",
+          "Simple, fully transparent rule: the 80 top yielders in the S&P 500",
+          "Draws only from S&P 500 members, so holdings are large and liquid",
+          "State Street publishes a dated 30-day SEC yield, so income is easy to track",
+        ],
+        limitations: [
+          "Only 80 holdings, and roughly a quarter sat in real estate",
+          "REIT payouts are generally not qualified dividends, which raises the tax bill",
+          "A pure yield rank can pull in companies whose share price has just dropped",
+        ],
+        pricing:
+          "0.07% gross expense ratio, per State Street's SPYD fund page (fund information as of August 3, 2026).",
+      },
+      {
+        name: "iShares Core Dividend Growth ETF (DGRO)",
+        bestFor: "Dividend growth with a wider net than VIG casts",
+        description:
+          "DGRO tracks the Morningstar US Dividend Growth Index, which selects U.S. stocks with a history of growing their dividends. BlackRock's fact sheet dated June 30, 2026 lists 389 holdings and net assets of about $41.2 billion.\n\nThat holdings count is far broader than SCHD's 100 or DVY's 99. The fund launched on June 10, 2014. The same fact sheet lists its distribution frequency as quarterly and a 30-day SEC yield of 1.98%, which is a dated snapshot rather than a fixed rate.",
+        strengths: [
+          "389 holdings, the broadest diversification in this group",
+          "0.08% expense ratio is still very low for a screened index fund",
+          "Large asset base of about $41.2 billion supports tight trading spreads",
+          "Dividend-growth screen tends to avoid stretched payout ratios",
+        ],
+        limitations: [
+          "0.08% costs twice what VIG or VYM charge",
+          "Its published 30-day SEC yield of 1.98% is low for an income sleeve",
+          "Broad holdings mean the dividend screen has less impact on returns",
+        ],
+        pricing:
+          "0.08% expense ratio (0.08% management fee, 0.00% other expenses), per the iShares fact sheet dated June 30, 2026.",
+      },
+      {
+        name: "SPDR S&P Dividend ETF (SDY)",
+        bestFor: "The strictest dividend-increase streak requirement on this list",
+        description:
+          "SDY tracks the S&P High Yield Dividend Aristocrats Index. To qualify, a company must be in the S&P Composite 1500 and have increased its dividend every year for at least 20 consecutive years. Holdings are then weighted by yield and re-weighted quarterly.\n\nThat 20-year rule is the toughest screen here. It filters out companies that cut payouts in 2008 or 2020. State Street lists 155 holdings, about $23.5 billion in assets as of July 31, 2026, and a 30-day SEC yield of 2.36% as of July 30, 2026. The fund launched November 8, 2005.",
+        strengths: [
+          "20 consecutive years of dividend increases is the strictest screen reviewed",
+          "155 holdings spread across large, mid, and small caps",
+          "Long live track record dating to November 2005",
+          "Yield weighting tilts toward the higher payers within a quality pool",
+        ],
+        limitations: [
+          "0.35% expense ratio is roughly nine times VIG's 0.04%",
+          "The 20-year rule excludes younger companies that pay well today",
+          "Yield weighting can concentrate the fund in a few defensive sectors",
+        ],
+        pricing:
+          "0.35% gross expense ratio, per State Street's SDY fund page (fund information as of August 3, 2026).",
+      },
+      {
+        name: "JPMorgan Equity Premium Income ETF (JEPI)",
+        bestFor: "Monthly income from options premiums rather than from dividends",
+        description:
+          "JEPI is not a dividend fund in the usual sense. It is actively managed and can put up to 20% of net assets into equity-linked notes that sell call options on the S&P 500 Total Return Index. Its prospectus states plainly that securities are not selected based on anticipated dividend payments.\n\nThe fund is managed to produce monthly distributions at a relatively stable level. JPMorgan's fact sheet dated June 30, 2026 published a 30-day SEC yield of 8.20% and lists 129 holdings and about $44.75 billion in investments. That payout is largely option premium rather than corporate dividends, and JPMorgan flags the tax consequence directly in the fund's SEC filings.",
+        strengths: [
+          "Monthly distributions managed toward a relatively stable level",
+          "Income does not depend on companies choosing to raise dividends",
+          "Actively managed with a stated goal of lower volatility than large-cap stocks",
+          "Publishes a dated 30-day SEC yield, which was 8.20% as of June 30, 2026",
+        ],
+        limitations: [
+          "0.35% expense ratio, versus 0.04% for VIG or VYM",
+          "Portfolio turnover was 172% in the most recent fiscal year",
+          "JPMorgan warns its derivatives may produce more ordinary income and short-term gain taxed at ordinary rates",
+          "Selling calls caps how much the fund gains in a strong rally",
+        ],
+        pricing:
+          "0.35% total annual fund operating expenses, per the summary prospectus dated November 1, 2025. The prospectus example shows about $36 in year one per $10,000.",
+      },
+      {
+        name: "iShares Select Dividend ETF (DVY)",
+        bestFor: "A concentrated, higher-yielding portfolio with a long history",
+        description:
+          "DVY tracks the Dow Jones U.S. Select Dividend Index, a group of relatively high-yielding U.S. stocks. BlackRock's fact sheet dated June 30, 2026 lists 99 holdings and about $22.9 billion in net assets.\n\nThe fund launched November 3, 2003, making it one of the oldest dividend ETFs available. The same fact sheet lists its distribution frequency as quarterly and a 30-day SEC yield of 3.56%. The trade-off is cost: at 0.38%, it is the most expensive fund reviewed here.",
+        strengths: [
+          "Live record going back to November 2003, across multiple market cycles",
+          "99 concentrated holdings give the screen real influence on returns",
+          "About $22.9 billion in assets supports steady liquidity",
+          "Its published 30-day SEC yield of 3.56% is well above the dividend-growth funds here",
+        ],
+        limitations: [
+          "0.38% expense ratio, the highest of the eight funds reviewed",
+          "That fee is roughly $38 a year per $10,000 versus $4 for VIG",
+          "Only 99 holdings, so single-name and sector risk are meaningful",
+        ],
+        pricing:
+          "0.38% expense ratio (0.38% management fee, 0.00% other expenses), per the iShares fact sheet dated June 30, 2026.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Index or Strategy", "Expense Ratio", "Selection Rule", "Best For"],
+      rows: [
+        { name: "VIG (Vanguard)", values: ["S&P U.S. Dividend Growers", "0.04%", "Record of increasing dividends over time", "Growing income over years"] },
+        { name: "VYM (Vanguard)", values: ["FTSE High Dividend Yield", "0.04%", "Above-average yielders, REITs excluded", "Cheapest broad yield"] },
+        { name: "SCHD (Schwab)", values: ["Dow Jones U.S. Dividend 100", "0.06%", "10-year dividend record plus quality screens", "Yield with a quality filter"] },
+        { name: "SPYD (SPDR)", values: ["S&P 500 High Dividend", "0.07%", "Top 80 yielders in the S&P 500", "Current income from large caps"] },
+        { name: "DGRO (iShares)", values: ["Morningstar US Dividend Growth", "0.08%", "History of dividend growth, 389 holdings", "Broadest diversification"] },
+        { name: "SDY (SPDR)", values: ["S&P High Yield Dividend Aristocrats", "0.35%", "20 straight years of dividend increases", "Strictest streak screen"] },
+        { name: "JEPI (JPMorgan)", values: ["Active equity plus S&P 500 call options", "0.35%", "Not selected for dividends; income from option premiums", "Monthly options income"] },
+        { name: "DVY (iShares)", values: ["Dow Jones U.S. Select Dividend", "0.38%", "Relatively high-yielding U.S. stocks, 99 holdings", "Concentrated higher yield"] },
+      ],
+    },
+    verdict:
+      "On cost alone, VIG and VYM lead at 0.04%. They answer two different questions. VYM holds above-average yielders today. VIG holds companies with a record of raising payouts, so its current yield is usually lower.\n\nSCHD sits just above them at 0.06% and is the only fund here that pairs a dividend record with balance-sheet screens. That combination fits investors who want income without buying whatever happens to yield the most.\n\nSPYD charges 0.07% and takes the most direct route to current income: it simply holds the 80 highest-yielding companies in the S&P 500. That directness is also its risk. It holds only 80 stocks, and roughly a quarter of the fund sat in real estate, whose payouts are generally not qualified dividends and are therefore taxed at higher ordinary rates.\n\nSDY and DVY charge 0.35% and 0.38%. Both are defensible for their screens, but the gap versus 0.04% compounds. On $50,000 held for 20 years, that fee difference alone is thousands of dollars. JEPI also charges 0.35% and is a different product entirely: its payout comes mostly from option premiums rather than dividends, so it belongs in an income sleeve, not a dividend sleeve.\n\nModel what any of these payouts could look like over time with our [dividend calculator](/investing/dividend-calculator/), and see how reinvested income compounds with the [compound interest calculator](/investing/compound-interest-calculator/).",
+    sections: [
+      {
+        heading: "What makes a dividend ETF different from a broad index fund?",
+        content:
+          "A dividend ETF applies a screen before it buys anything, while a broad index fund buys the market as it is. That screen is the entire product. Everything else, including the fee and the yield, follows from it.\n\nThe screens fall into three families. Yield screens rank companies by how much they pay right now, which is what SPYD and DVY do. Growth screens select companies that keep raising payouts, which is what VIG, DGRO, and SDY do. Quality screens add balance-sheet tests on top, which is SCHD's approach.\n\nThose choices change what you own. VYM, VIG, and SCHD all exclude REITs by index rule. SPYD does not, and real estate was its largest sector at 24.86% as of July 31, 2026. Same category, very different portfolios.\n\nIf you are still deciding between the fund wrappers themselves, see our [index fund vs. ETF comparison](/compare/index-fund-vs-etf/) and our [ETF vs. mutual fund comparison](/compare/etf-vs-mutual-fund/). For plain broad-market options, see the [best index funds roundup](/roundup/best-index-funds/).",
+      },
+      {
+        heading: "Qualified vs. ordinary dividends: the tax gap most lists skip",
+        content:
+          "Two dividend ETFs paying the same 4% can leave you with different amounts of cash after tax. The reason is the split between qualified and ordinary dividends, and almost no roundup mentions it.\n\nThe IRS taxes qualified dividends at the same 0%, 15%, or 20% maximum rate that applies to net capital gain. Ordinary dividends are taxed as ordinary income, at your regular bracket. For a high earner that difference can exceed 15 percentage points on every dollar of income.\n\nTwo things push a fund's income toward the ordinary side. REIT payouts are one. The IRS defines a qualified REIT dividend as a REIT dividend that is not a capital gain dividend and not a qualified dividend, which places ordinary REIT income outside the lower rates. Options income is the other. JPMorgan's own SEC filing warns that JEPI's derivative transactions may cause the fund to realize more ordinary income and short-term capital gain taxed at ordinary income rates.\n\nThere is also a holding-period rule people miss. To get the qualified rate, you must hold the stock more than 60 days during the 121-day period that starts 60 days before the ex-dividend date. Funds handle this at the portfolio level, but it is why a high-turnover fund can produce less qualified income than a low-turnover one. VIG turned over 8% of its portfolio in its most recent fiscal year. JEPI turned over 172%.",
+      },
+      {
+        heading: "Why a high trailing yield can signal a falling price",
+        content:
+          "Dividend yield is annual dividends per share divided by share price. Price sits in the denominator. That means a yield can rise for a good reason or a bad one, and the number alone does not tell you which.\n\nHere is the arithmetic. If a fund pays $3 a year on a $100 share, the yield is 3%. If the payout stays at $3 but the price falls to $75, the yield becomes 4%. Nothing improved. The fund simply lost 25% of its value, and the yield went up by a third because of it.\n\nThis is why screening purely on current yield is risky. A rule that ranks companies by yield and buys the top names will systematically pick up companies whose share prices just dropped, some of which are about to cut the dividend.\n\nQuality screens exist to filter those cases. SCHD's index requires 10 consecutive years of dividend payments and ranks on cash flow to total debt and return on equity. SDY requires 20 straight years of dividend increases. Neither rule is a guarantee, but both make a yield trap less likely than a raw yield rank does.\n\nOne practical habit: compare a fund's 30-day SEC yield to its own history, not to another fund's. A yield that jumped sharply usually means the price fell, not that the income improved.",
+      },
+      {
+        heading: "Which of these funds publish a 30-day SEC yield?",
+        content:
+          "Five of the eight funds here publish a 30-day SEC yield on the issuer's own fact sheet or fund page. Three do not publish one in the documents we checked, so any table that ranks all eight by yield is filling gaps with estimates.\n\nThe five, each with the date the issuer published the figure: JEPI at 8.20% as of June 30, 2026; SPYD at 4.08% as of July 30, 2026; DVY at 3.56% as of June 30, 2026; SDY at 2.36% as of July 30, 2026; and DGRO at 1.98% as of June 30, 2026. Vanguard's summary prospectuses for VIG and VYM do not carry the figure, and neither does Schwab's for SCHD.\n\nThose five numbers do not line up cleanly, for two reasons. First, the as-of dates differ by a month, and a month of price moves changes every yield. Second, they measure different things. JEPI's figure is driven mainly by option premiums rather than dividends, which is why it sits so far above the equity funds and why its tax treatment differs.\n\nUse a yield as a starting point for one fund, checked against that fund's own history. Then look at the expense ratio and the index rule, which are stable and directly comparable. Cost is a fact you can lock in. Yield is a snapshot you cannot.",
+      },
+      {
+        heading: "How expense ratios compound in a dividend portfolio",
+        content:
+          "The fee gap in this group is wider than it looks. VIG and VYM charge 0.04%. DVY charges 0.38%. That is a 0.34-point spread, and it is charged every year on your entire balance, whether the fund gains or loses.\n\nIn dollar terms, the prospectus examples make it concrete. VYM's example shows about $4 in year one on a $10,000 investment. JEPI's shows about $36 and SCHD's about $6 on the same amount. Those examples all assume a 5% annual return and unchanged expenses.\n\nFees matter more in a dividend strategy than people expect, because dividend investors often reinvest. Every dollar taken by fees is a dollar that never buys more shares, and those shares never pay their own dividends. The drag compounds on the compounding.\n\nA fee is not the only thing to weigh. A 0.35% fund with a screen you actually want is a reasonable choice. But the fee is certain and the screen's edge is not, so the burden of proof sits with the expensive fund. Run the numbers with our [compound interest calculator](/investing/compound-interest-calculator/) before paying up.",
+      },
+      {
+        heading: "Where dividend ETFs fit alongside a core portfolio",
+        content:
+          "Dividend ETFs are a slice of the U.S. stock market, not a separate asset class. Every fund here holds ordinary U.S. equities, so they carry full stock-market risk. A dividend screen reduces neither.\n\nThat matters for overlap. If you already hold a total-market or S&P 500 fund, a dividend ETF layered on top does not add new companies. It changes the weights, tilting toward value, income, and defensive sectors, and away from high-growth names that pay little or nothing.\n\nThe practical question is what job you want the sleeve to do. Current spending needs point toward funds built for yield today. A longer horizon points toward dividend growth, where a lower starting yield can rise over decades. Neither is universally better.\n\nDividend stocks are also not a substitute for bonds. They fall with the stock market, and payouts can be cut in a downturn. See our [stocks vs. bonds comparison](/compare/stocks-vs-bonds/) for how the two behave differently, and the [investing hub](/investing/) for the full set of tools.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best dividend ETFs?",
+        answer:
+          "By published cost, the cheapest options are VIG and VYM from Vanguard at 0.04%, SCHD from Schwab at 0.06%, SPYD from State Street at 0.07%, and DGRO from iShares at 0.08%. SCHD stands out because its index requires 10 consecutive years of dividend payments and then screens on cash flow to debt and return on equity. SPYD takes the most direct route to current income by holding the 80 highest-yielding S&P 500 companies, though it holds only 80 stocks. SDY (0.35%), JEPI (0.35%), and DVY (0.38%) charge more and suit narrower needs. Which one fits you depends on whether you want income now or income that grows.",
+      },
+      {
+        question: "Which dividend ETF has the lowest expense ratio?",
+        answer:
+          "VIG and VYM tie at 0.04% total annual fund operating expenses, per Vanguard's summary prospectuses filed with the SEC in May and February 2026. SCHD is next at 0.06%, then SPYD at 0.07% and DGRO at 0.08%. At the other end, SDY and JEPI charge 0.35% and DVY charges 0.38%. On a $10,000 position, that is roughly $4 a year versus $38 a year. Expense ratios are far more stable than yields, which is why they make a better basis for comparison.",
+      },
+      {
+        question: "Is a higher dividend yield always better?",
+        answer:
+          "No. Yield is dividends divided by price, so a falling share price pushes the yield up without any improvement in income. A fund paying $3 on a $100 share yields 3%; if the price drops to $75 and the payout holds, the yield reads 4%. Funds that rank purely on current yield can therefore pick up companies whose prices just fell, some of which later cut the dividend. A high number can also reflect a different income source entirely: JEPI published a 30-day SEC yield of 8.20% as of June 30, 2026, and that comes largely from selling options rather than from dividends.",
+      },
+      {
+        question: "How are dividend ETF payouts taxed?",
+        answer:
+          "It depends on whether the payout is a qualified or an ordinary dividend. The IRS taxes qualified dividends at the same 0%, 15%, or 20% maximum rate that applies to net capital gain, while ordinary dividends are taxed as ordinary income at your regular bracket. To reach the qualified rate you generally must hold the shares more than 60 days during the 121-day period beginning 60 days before the ex-dividend date. Funds heavy in REITs or options income tend to distribute more ordinary income, since a REIT dividend that is not a capital gain dividend is by IRS definition not a qualified dividend.",
+      },
+      {
+        question: "How often do dividend ETFs pay?",
+        answer:
+          "Most pay quarterly. The iShares fact sheets for DGRO and DVY both list Distribution Frequency as Quarterly, and quarterly is the standard schedule across the equity dividend funds in this group. JEPI is the exception here: its prospectus states the fund is managed to provide monthly distributions at a relatively stable level. Payment frequency does not change how much income a fund produces over a year, only the timing. Monthly payers are mainly useful if you are spending the income rather than reinvesting it.",
+      },
+      {
+        question: "What is the difference between a dividend ETF and a dividend growth ETF?",
+        answer:
+          "A dividend ETF usually screens on how much a company pays today, while a dividend growth ETF screens on whether the company keeps raising its payout. SPYD takes the yield approach, holding the 80 highest-yielding S&P 500 companies. VIG and DGRO take the growth approach, selecting firms with a record of increasing dividends. The trade-off is direct: yield funds start with more income, growth funds start with less but target a rising stream. SDY blends both, requiring 20 straight years of increases and then weighting holdings by yield.",
+      },
+    ],
+    sources: [
+      { label: "IRS Publication 550 - Qualified Dividends and Holding Periods", url: "https://www.irs.gov/publications/p550" },
+      { label: "IRS - Instructions for Form 1099-DIV (Qualified REIT Dividends)", url: "https://www.irs.gov/instructions/i1099div" },
+      { label: "SEC EDGAR - Schwab U.S. Dividend Equity ETF Summary Prospectus", url: "https://www.sec.gov/Archives/edgar/data/1454889/000110465926020681/tm266454-15_497k.htm" },
+    ],
+    relatedComparisons: ["index-fund-vs-etf", "etf-vs-mutual-fund", "stocks-vs-bonds"],
+    calculatorLinks: [
+      { label: "Dividend Calculator", href: "/investing/dividend-calculator/" },
+      { label: "Compound Interest Calculator", href: "/investing/compound-interest-calculator/" },
+    ],
+  },
+
+  {
+    slug: "best-target-date-funds",
+    title: "Best Target Date Funds of 2026: Fees and Glide Paths",
+    metaDescription:
+      "8 target date fund families ranked by expense ratio, from 0.08% to 0.63%. Plus to vs through glide paths and the index vs active fee trap.",
+    targetKeyword: "best target date funds",
+    category: "target-date funds",
+    angle: "best",
+    h1: "Best Target Date Funds of 2026",
+    intro:
+      "The best target date funds hold an entire diversified portfolio inside one fund and charge about 0.10% a year or less.\n\nA target date fund picks a stock and bond mix for you, then shifts it toward bonds as the fund's year approaches. We ranked eight real fund families on cost, whether the series is index-tracking or actively managed, and how the glide path behaves at retirement. Every expense ratio below was read from the fund's own SEC summary prospectus or the issuer's fund page. No fund company paid for placement.",
+    rankingCriteria:
+      "The list order follows one number: the net expense ratio of the cheapest broadly available share class of each family's 2055 fund. Fees are the one input you fully control, so they set the ranking. Where two families tie on net cost, the lower gross expense ratio breaks the tie, because gross cost is what you would pay if a fee waiver lapsed.\n\nThree further criteria shape the write-ups and the verdict, but not the order. Whether the series tracks indexes or is actively managed, since that drives most of the fee gap. Glide path clarity, meaning whether the fund stops shifting at the target year or keeps shifting past it, and whether the issuer says so plainly. And access, meaning minimums and which share classes an ordinary investor can actually buy.\n\nWe priced the 2055 vintage of every family, so the comparison is apples to apples. Fees on other vintages in the same series can differ. Sales loads and account fees are noted in each entry.",
+    options: [
+      {
+        name: "Vanguard Target Retirement",
+        bestFor: "The simplest low-cost default for most retirement savers",
+        description:
+          "Vanguard Target Retirement is a single retail series built from Vanguard's own broad index funds. The Target Retirement 2055 Fund Investor Shares (VFFVX) charges 0.08%, and every cent of that comes from the underlying funds. The prospectus lists a 0.00% management fee and 0.00% other expenses, with acquired fund fees making up the full 0.08%.\n\nThat 0.08% is a gross figure with no waiver behind it, which is why Vanguard edges out Schwab at the same net cost.\n\nThe glide path runs through retirement. The prospectus says the fund suits an investor who plans to withdraw the account over many years after the target year. Within seven years after 2055, the allocation should look like the Target Retirement Income Fund.",
+        strengths: [
+          "0.08% total annual operating expenses, with no fee waiver propping it up",
+          "No management fee layer on top of the underlying index funds",
+          "One retail series, so there is no cheap-versus-expensive twin to confuse",
+          "Prospectus states the seven-year post-target convergence in plain language",
+        ],
+        limitations: [
+          "$1,000 minimum to open a position in Investor Shares",
+          "A through glide path keeps real stock exposure past the target year",
+          "Underlying funds are all Vanguard, so you cannot swap a sleeve you dislike",
+        ],
+        pricing:
+          "Target Retirement 2055 Fund Investor Shares (VFFVX): 0.08% total annual operating expenses, all of it acquired fund fees. Minimum $1,000 to open, $1 to add.",
+      },
+      {
+        name: "Schwab Target Index",
+        bestFor: "Investors who want no account minimum at all",
+        description:
+          "Schwab Target Index funds hold Schwab's own ETFs. The Target 2055 Index Fund (SWYJX) has a 0.13% gross expense ratio, capped at 0.08% net by a contractual limit that lasts as long as the adviser runs the fund. The prospectus states there is no minimum initial investment.\n\nSchwab also runs an older, non-index Target series. The Target 2055 Fund (SWORX) costs 0.56% net. The index series must keep at least 80% of assets in index-tracking underlying funds. The active series simply holds other Schwab mutual funds.\n\nBoth Schwab series keep adjusting the allocation for 20 years beyond the target date.",
+        strengths: [
+          "0.08% net expense ratio on the 2055 index fund",
+          "No minimum initial investment stated in the prospectus",
+          "The 80% index policy is written into the fund's strategy, not just marketing",
+          "The 20-year post-target adjustment window is stated in the prospectus",
+        ],
+        limitations: [
+          "Gross expense ratio is 0.13%, so the 0.08% depends on the fee cap holding",
+          "The similarly named Schwab Target series costs 0.56% for the same year",
+          "Built from Schwab ETFs only, so there is no outside-manager diversification",
+        ],
+        pricing:
+          "Schwab Target 2055 Index Fund (SWYJX): 0.13% gross, 0.08% net after a contractual expense cap. No minimum initial investment. Schwab Target 2055 Fund (SWORX, active) is 0.56% net.",
+      },
+      {
+        name: "BlackRock LifePath Index",
+        bestFor: "Savers who want the glide path to stop moving at the target year",
+        description:
+          "LifePath Index is the clearest example of a to-retirement design on this list. The LifePath Index 2055 Fund Class K (LIVKX) charges 0.13% gross and 0.09% net after a waiver that runs through June 30, 2027.\n\nThe published allocation table ends at year zero, at 40% stocks and 60% bonds. The prospectus describes the mix becoming more conservative prior to retirement. When a fund reaches its horizon, its allocation is expected to resemble the LifePath Index Retirement Fund, and the two may later be merged.\n\nThat matters. A to fund is usually holding less stock than a through fund in the years right around retirement.",
+        strengths: [
+          "0.09% net expense ratio on Class K",
+          "A genuine to-retirement glide path, stated clearly in the prospectus",
+          "Published allocation table shows 40% stocks at the target year",
+          "Common as a default option in large employer plans",
+        ],
+        limitations: [
+          "The 0.09% depends on a waiver that expires June 30, 2027",
+          "Institutional class costs more at 0.14% net",
+          "Less stock at retirement can mean less growth if you live 30 more years",
+        ],
+        pricing:
+          "LifePath Index 2055 Fund Class K (LIVKX): 0.13% gross, 0.09% net, with the waiver contractual through June 30, 2027. Institutional class (LIVIX): 0.18% gross, 0.14% net.",
+      },
+      {
+        name: "State Street Target Retirement",
+        bestFor: "Plan participants offered the Class K version",
+        description:
+          "State Street Global Advisors runs registered target date mutual funds, not just collective trusts. The Target Retirement 2055 Fund Class K (SSDQX) charges 0.16% gross and 0.09% net, under a contractual waiver that runs until April 30, 2027.\n\nIt ties BlackRock on net cost but carries a higher gross ratio, which is why it sits one spot lower here.\n\nThe share class spread is unusually wide. Class I (SSDOX) is 0.29% net and Class R3 (SSAWX) is 0.59% net. That is the same portfolio at more than six times the cost, depending purely on which class your plan bought. None of the three classes carries a sales charge.",
+        strengths: [
+          "0.09% net on Class K, among the lowest in the category",
+          "No sales load on any of the three share classes",
+          "Available as a registered mutual fund, not only as a collective trust",
+          "Fee waiver is contractual and dated, not discretionary",
+        ],
+        limitations: [
+          "Class K is usually reachable only through an employer plan",
+          "Class R3 at 0.59% net costs more than six times Class K",
+          "The 0.09% relies on a waiver expiring April 30, 2027",
+        ],
+        pricing:
+          "Target Retirement 2055 Fund: Class K (SSDQX) 0.16% gross, 0.09% net; Class I (SSDOX) 0.36% gross, 0.29% net; Class R3 (SSAWX) 0.66% gross, 0.59% net. No sales charge on any class.",
+      },
+      {
+        name: "Nuveen TIAA-CREF Lifecycle Index",
+        bestFor: "403(b) and nonprofit plan savers, especially at TIAA",
+        description:
+          "The TIAA-CREF Lifecycle funds now file under the Nuveen name. The Lifecycle Index 2055 Fund Class R6 (TTIIX) charges 0.17% gross and 0.10% net. Class I (TTIHX) is 0.18% net, Premier (TTIPX) is 0.25% net, and the Retirement class (TTIRX) is 0.35% net.\n\nNuveen also runs an active Lifecycle series. The Lifecycle 2055 Fund Class R6 (TTRIX) charges 0.68% gross and 0.45% net. Comparing R6 to R6, the active version costs 35 basis points more for the same target year.\n\nNeither series charges a sales load.",
+        strengths: [
+          "0.10% net on the Class R6 index fund",
+          "No sales charge on either the index or the active series",
+          "Four share classes let plans of different sizes get a fair price",
+          "Common inside university and nonprofit 403(b) menus",
+        ],
+        limitations: [
+          "Net expense ratios depend on waivers with stated expiration dates",
+          "The Retirement class at 0.35% net costs 3.5 times Class R6",
+          "The active Lifecycle series shares almost the same name",
+        ],
+        pricing:
+          "Lifecycle Index 2055 Fund: Class R6 (TTIIX) 0.17% gross, 0.10% net; Class I (TTIHX) 0.25% gross, 0.18% net; Premier (TTIPX) 0.32% gross, 0.25% net; Retirement (TTIRX) 0.42% gross, 0.35% net. Active Lifecycle 2055 Class R6 (TTRIX): 0.68% gross, 0.45% net.",
+      },
+      {
+        name: "Fidelity Freedom Index",
+        bestFor: "Fidelity savers who know to avoid the identically named active series",
+        description:
+          "Fidelity Freedom Index is the passive series. The Freedom Index 2055 Fund Investor Class (FDEWX) charges 0.12%. Cheaper share classes in the same fund run 0.08%, 0.05%, and 0.04%.\n\nThis is the most important name trap in the category. Fidelity also sells Fidelity Freedom, an active series with almost the same name. The Freedom 2055 Fund (FDEEX) charges 0.68%. Same brand, same target year, about 5.7 times the cost. A third series, Freedom Blend, sits in between at 0.47% for the retail class.\n\nAll three series use a through glide path that keeps adjusting for roughly 15 to 20 years after the target year.",
+        strengths: [
+          "0.12% on the Investor Class, with institutional classes as low as 0.04%",
+          "No fee waiver behind the Investor Class number",
+          "Prospectus states the exact post-retirement adjustment window",
+          "Index, Blend, and active versions let a plan pick a cost tier",
+        ],
+        limitations: [
+          "The name is one word away from a fund costing 0.68%",
+          "Investor Class at 0.12% costs three times the cheapest class in the same fund",
+          "Which share class you get is decided by your plan, not by you",
+        ],
+        pricing:
+          "Freedom Index 2055 Fund Investor Class (FDEWX): 0.12%. Other classes in the same fund: 0.08%, 0.05%, 0.04%. For contrast, Freedom 2055 (FDEEX, active) is 0.68% and Freedom Blend 2055 retail (FHAOX) is 0.47%.",
+      },
+      {
+        name: "American Funds Target Date Retirement",
+        bestFor: "Plan savers who can access the R-6 share class",
+        description:
+          "Capital Group's American Funds series is actively managed and priced very differently by share class. The 2055 Target Date Retirement Fund Class R-6 (RFKTX) charges 0.38%. Class A (AAMTX) charges 0.70% and carries a maximum front-end sales charge of 5.75%.\n\nMost of the fee is the same in both classes. Acquired underlying fund expenses are 0.37% either way. The gap comes from a 0.24% 12b-1 fee and higher other expenses on Class A.\n\nIf your plan offers R-6, this is a reasonably priced active option. If you would be buying Class A retail with a load, the math gets much harder.",
+        strengths: [
+          "0.38% on Class R-6 is low for an actively managed series",
+          "No 12b-1 fee and no sales charge on Class R-6",
+          "Only one target date series, so there is no cheaper index twin to miss",
+          "Fee breakdown is published line by line on the issuer's fund page",
+        ],
+        limitations: [
+          "Class A costs 0.70% plus a 5.75% maximum front-end sales charge",
+          "Class A carries a 0.24% 12b-1 distribution fee",
+          "Still roughly five times the cost of the cheapest index series",
+        ],
+        pricing:
+          "2055 Target Date Retirement Fund: Class R-6 (RFKTX) 0.38% gross and net, no load. Class A (AAMTX) 0.70% gross and net, plus a 5.75% maximum front-end sales charge and a 0.24% 12b-1 fee.",
+      },
+      {
+        name: "T. Rowe Price Retirement",
+        bestFor: "Investors who want the most stock exposure at the retirement date",
+        description:
+          "This is the most expensive family here, and it ranks last on cost. It earns a place on the list for a different reason: its glide path is the most growth-oriented of the eight.\n\nT. Rowe Price runs three separate target date series. The Retirement 2055 Fund Investor Class (TRRNX) charges 0.63%. Its glide path holds a neutral 55% in stocks at the target date, and equity exposure keeps declining for about 30 years after that date. That is the longest post-retirement runway of any family here.\n\nThe Retirement Blend 2055 Fund (TRBOX) uses the same 55% glide path but mixes in index funds, which cuts the cost to 0.43%. The separate Target 2055 Fund (TRFFX) costs 0.62% and holds only 42.5% in stocks at the target date.",
+        strengths: [
+          "55% neutral stock allocation at the target date, the highest verified here",
+          "Equity keeps declining for about 30 years past the target date",
+          "Retirement Blend delivers the same glide path for 0.43%",
+          "The separate Target series offers a more conservative 42.5% option",
+        ],
+        limitations: [
+          "0.63% on the Investor Class is roughly eight times Vanguard's 0.08%",
+          "Accounts can be charged a $20 annual fee, subject to exceptions and minimums",
+          "Three similarly named series make it easy to buy the wrong one",
+        ],
+        pricing:
+          "Retirement 2055 Fund: Investor (TRRNX) 0.63%, I Class (TRJMX) 0.45%, Advisor (PAROX) 0.88%, R Class (RRTVX) 1.13%. Retirement Blend 2055 (TRBOX) 0.43%. Target 2055 (TRFFX) 0.62%. Maximum $20 annual account fee applies, subject to exceptions.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Index or Active", "Fund Priced", "Net Expense Ratio", "Gross Expense Ratio", "Notes"],
+      rows: [
+        { name: "Vanguard Target Retirement", values: ["Index-based", "VFFVX (2055, Investor)", "0.08%", "0.08% (no waiver; all acquired fund fees)", "$1,000 minimum"] },
+        { name: "Schwab Target Index", values: ["Index", "SWYJX (2055)", "0.08%", "0.13%", "No minimum; active twin is 0.56%"] },
+        { name: "BlackRock LifePath Index", values: ["Index", "LIVKX (2055, Class K)", "0.09%", "0.13%", "To glide path; waiver ends 6/30/2027"] },
+        { name: "State Street Target Retirement", values: ["Index-based", "SSDQX (2055, Class K)", "0.09%", "0.16%", "Class R3 is 0.59% net"] },
+        { name: "Nuveen TIAA-CREF Lifecycle Index", values: ["Index", "TTIIX (2055, Class R6)", "0.10%", "0.17%", "Active twin R6 is 0.45% net"] },
+        { name: "Fidelity Freedom Index", values: ["Index", "FDEWX (2055, Investor)", "0.12%", "0.12% (no waiver)", "Active Freedom twin is 0.68%"] },
+        { name: "American Funds Target Date", values: ["Active", "RFKTX (2055, Class R-6)", "0.38%", "0.38%", "Class A is 0.70% plus 5.75% load"] },
+        { name: "T. Rowe Price Retirement", values: ["Active", "TRRNX (2055, Investor)", "0.63%", "0.63%", "55% stocks at target; $20 account fee"] },
+      ],
+    },
+    verdict:
+      "On cost, six families sit close together: Vanguard and Schwab Target Index at 0.08% net, BlackRock LifePath Index and State Street at 0.09%, Nuveen Lifecycle Index at 0.10%, and Fidelity Freedom Index at 0.12%. For most savers, the practical answer is whichever of these your plan or brokerage already offers.\n\nVanguard takes the top spot because its 0.08% carries no fee waiver behind it. Schwab and BlackRock reach their net numbers through contractual caps, and two of those caps have expiration dates. Vanguard also shares a second advantage with American Funds: they are the only two families here that do not sell a similarly named twin series, so you cannot accidentally buy the expensive version.\n\nGlide path is the real fork in the road, and it does not track cost at all. BlackRock LifePath Index stops shifting at the target year and lands at 40% stocks. T. Rowe Price Retirement holds 55% stocks at the target year and keeps adjusting for about 30 more years. Neither is wrong. A to fund suits someone who will move money out near retirement. A through fund suits someone who will draw down slowly over decades.\n\nActive series are not automatically a mistake, but they do have to earn the fee. American Funds Class R-6 at 0.38% is defensible if you have plan access to it. Class A at 0.70% plus a 5.75% sales charge is a much weaker deal for the same portfolio. T. Rowe Price Retirement at 0.63% is the costliest option here, and it makes sense only if you specifically want its higher stock allocation into retirement. Check which share class you are actually buying before you compare anything else.",
+    sections: [
+      {
+        heading: "To vs through glide paths: what actually happens at your retirement date",
+        content:
+          "A glide path is the schedule that moves a target date fund from mostly stocks toward mostly bonds. The SEC describes two types, to and through. A to fund shifts its mix just until the target date and generally not past it. A through fund keeps shifting up to and past that date.\n\nThe practical effect shows up right around retirement. The SEC notes that a to fund typically moves to conservative holdings earlier, so at many points along the path it holds lower-risk, lower-return investments than a through fund.\n\nYou can see this in real funds. BlackRock LifePath Index publishes an allocation table that ends at year zero with 40% stocks. T. Rowe Price Retirement holds a neutral 55% stocks at its target date and keeps lowering equity for about 30 years afterward. Schwab and Fidelity sit in between, adjusting for 20 years and for 15 to 20 years past the target year.\n\nSo two funds labeled 2055 can hold very different amounts of stock on the same day in 2055. Neither is a mistake. The question is whether you plan to withdraw your balance near the target year or spend it down slowly. Our [asset allocation calculator](/portfolio/asset-allocation-calculator/) can show what a given stock and bond split looks like, and our [stocks vs. bonds comparison](/compare/stocks-vs-bonds/) covers the tradeoff.",
+      },
+      {
+        heading: "The index vs active trap hiding inside one brand name",
+        content:
+          "Several fund companies sell two target date series under nearly the same name at wildly different prices. This is the single most expensive mistake in the category, and it is easy to make.\n\nFidelity is the clearest case. Fidelity Freedom Index 2055 Investor Class charges 0.12%. Fidelity Freedom 2055 charges 0.68%. One word, and about 5.7 times the fee.\n\nSchwab does the same thing. Schwab Target 2055 Index costs 0.08% net. Schwab Target 2055, the active version, costs 0.56% net. Nuveen's TIAA-CREF Lifecycle Index Class R6 is 0.10% net, while the active Lifecycle Class R6 is 0.45% net.\n\nHere is the tell: look for the word Index in the fund's full legal name, and check the ticker. If the name has no Index in it, assume it is the active, costlier series until the prospectus says otherwise. Vanguard and American Funds are the two families here that run only one series, so this trap does not apply to them.\n\nActive is not automatically bad. T. Rowe Price Retirement Blend uses index funds inside an active framework, which the prospectus says is designed to lower overall fees. It runs 0.43% versus 0.63% for the pure active Retirement fund with the same glide path. Our [index fund vs. ETF comparison](/compare/index-fund-vs-etf/) explains how index tracking works, and our [best index funds roundup](/roundup/best-index-funds/) covers the single-asset-class alternatives.",
+      },
+      {
+        heading: "The year in the fund name is a target, not a promise",
+        content:
+          "A 2055 fund is built for someone who expects to retire near 2055. It is not a guarantee that you will have enough money in 2055.\n\nThe SEC states plainly that target date funds structured as mutual funds and ETFs do not guarantee you will have sufficient retirement income, or a specific level of income, at or after the target date. FINRA adds that these funds can lose money if the stocks and bonds they own fall in value.\n\nThe SEC also warns that funds with the same target date often hold very different investments and post different returns. Two 2055 funds are not interchangeable just because the number matches.\n\nThe Department of Labor makes a related point for employers. It notes that some target date funds keep a sizeable investment in volatile assets like stocks even after the target date, so savings can still carry investment risk in retirement.\n\nPractical takeaway: pick the fund by its glide path and its cost, then use the year as a starting filter, not as the decision. Model your own number with our [retirement savings calculator](/retirement/retirement-savings-calculator/).",
+      },
+      {
+        heading: "Why the same fund can cost you six times more",
+        content:
+          "Target date funds come in share classes. Same portfolio, same manager, different price. Which one you get is usually decided by your employer's plan, not by you.\n\nState Street Target Retirement 2055 shows the range. Class K costs 0.09% net. Class I costs 0.29% net. Class R3 costs 0.59% net. That is the identical fund at more than six times the price.\n\nFidelity Freedom Index 2055 runs from 0.04% for its cheapest class to 0.12% for Investor Class. American Funds 2055 charges 0.38% for Class R-6 and 0.70% for Class A, which also carries a 5.75% maximum front-end sales charge and a 0.24% 12b-1 fee.\n\nSmall differences compound. Take the two ends of this list. A $100,000 balance earning 7% a year before fees for 30 years grows to roughly $740,000 at a 0.10% annual fee, but only about $638,000 at 0.63%. That is a gap near $102,000 from the fee alone. This is our own compounding illustration, not a projection of any fund's return.\n\nFind your share class on your plan statement or the fund's fact sheet, then look up that exact ticker. Our [compound interest calculator](/investing/compound-interest-calculator/) shows how a fee gap widens over decades.",
+      },
+      {
+        heading: "Who target date funds fit, and who they do not",
+        content:
+          "A target date fund is a complete portfolio in one holding. It fits someone who wants one decision, automatic rebalancing, and no urge to tinker during a downturn.\n\nThey fit less well in three situations. First, if you already hold other funds, adding a target date fund can double up your exposure without you noticing. Second, in a taxable brokerage account, the fund rebalances on its own schedule and you do not control the timing of capital gains. Third, if your retirement date is genuinely uncertain, a fixed glide path may not match your plans.\n\nA reasonable middle path is to hold the target date fund inside your [401(k)](/retirement/401k-calculator/) or IRA, where the automatic rebalancing costs you nothing in taxes, and hold simpler index funds in a taxable account.\n\nAlso check whether your plan's version is a mutual fund or a collective investment trust. The SEC's investor bulletin covers mutual funds and ETFs, and states that it does not address collective investment trusts, which are not regulated by the SEC. Many workplace target date options are trusts. Our [best IRA accounts roundup](/roundup/best-ira-accounts/) covers where to hold these funds outside a workplace plan.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best target date funds by cost?",
+        answer:
+          "The cheapest widely available target date funds cluster between 0.08% and 0.12% a year. Vanguard Target Retirement 2055 Investor Shares (VFFVX) and Schwab Target 2055 Index (SWYJX) are both 0.08% net. BlackRock LifePath Index 2055 Class K (LIVKX) and State Street Target Retirement 2055 Class K (SSDQX) are 0.09% net. Nuveen TIAA-CREF Lifecycle Index 2055 Class R6 (TTIIX) is 0.10% net, and Fidelity Freedom Index 2055 Investor Class (FDEWX) is 0.12%. Vanguard's figure is the only one among the four cheapest that does not rely on a fee waiver.",
+      },
+      {
+        question: "What is the difference between a to and a through target date fund?",
+        answer:
+          "A to fund reaches its most conservative mix at the target date and generally stops shifting there. A through fund keeps shifting for years past the target date. The SEC describes both types and notes that a to fund typically moves into lower-risk, lower-return investments earlier. BlackRock LifePath Index is a to design and ends at 40% stocks at year zero. T. Rowe Price Retirement is a through design, holding 55% stocks at the target date and continuing to lower equity for about 30 years after. Which fits you depends on whether you will withdraw the balance near retirement or spend it down over decades.",
+      },
+      {
+        question: "Is Fidelity Freedom the same as Fidelity Freedom Index?",
+        answer:
+          "No. They are two different series with nearly identical names and very different fees. Fidelity Freedom Index 2055 Investor Class (FDEWX) charges 0.12%. Fidelity Freedom 2055 (FDEEX) is actively managed and charges 0.68%, about 5.7 times as much for the same target year. A third series, Fidelity Freedom Blend 2055, charges 0.47% for its retail class. Schwab and Nuveen run similar index-and-active pairs. Always check for the word Index in the full fund name and confirm the ticker before you buy.",
+      },
+      {
+        question: "What is a good expense ratio for a target date fund?",
+        answer:
+          "Anything at or below about 0.15% a year is competitive, since several major index-based series charge 0.08% to 0.12%. Above roughly 0.50%, you are usually paying for active management. To see why it matters, compare the two ends of this list: a $100,000 balance earning 7% a year before fees for 30 years grows to roughly $740,000 at a 0.10% fee but only about $638,000 at 0.63%. That is our own compounding illustration, not a forecast. Check the net expense ratio, not just the gross one, and note whether a fee waiver has an expiration date.",
+      },
+      {
+        question: "Can you lose money in a target date fund?",
+        answer:
+          "Yes. Target date funds hold stocks and bonds, and both can fall. The SEC states that target date funds structured as mutual funds and ETFs do not guarantee you will have sufficient retirement income, or a specific level of income, at or after the target date. FINRA states the same thing more directly: these funds do not provide guaranteed income and can lose money when the securities they hold drop in value. The Department of Labor notes that some of these funds hold a sizeable stock position even past the target date, so investment risk continues into retirement.",
+      },
+      {
+        question: "Should I pick the fund that matches my retirement year?",
+        answer:
+          "It is a reasonable starting point, but not the whole decision. The SEC warns that target date funds with the same target date often hold very different investments and can perform very differently, and that they may use different glide paths. Two 2055 funds can hold noticeably different amounts of stock on the same day. Some investors deliberately choose a later-dated fund for more stock exposure, or an earlier-dated one for less. Look at the glide path type and the stock allocation at the target year, then check the fee, before you settle on the year.",
+      },
+    ],
+    sources: [
+      {
+        label: "SEC / Investor.gov - Target Date Funds Investor Bulletin",
+        url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/target-date-funds-investor-bulletin",
+      },
+      {
+        label: "U.S. Department of Labor (EBSA) - Target Date Retirement Funds: Tips for ERISA Plan Fiduciaries",
+        url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/fact-sheets/target-date-retirement-funds-tips-for-erisa-plan-fiduciaries",
+      },
+      {
+        label: "FINRA - Save the Date: Target-Date Funds Explained",
+        url: "https://www.finra.org/investors/insights/save-date-target-date-funds-explained",
+      },
+    ],
+    relatedComparisons: ["index-fund-vs-etf", "stocks-vs-bonds", "etf-vs-mutual-fund"],
+    calculatorLinks: [
+      { label: "Investment Growth Calculator", href: "/investing/" },
+      { label: "Asset Allocation Calculator", href: "/portfolio/asset-allocation-calculator/" },
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+    ],
+  },
+
+  {
+    slug: "best-robo-advisors",
+    title: "Best Robo Advisors of 2026: Fees and Minimums Compared",
+    metaDescription:
+      "Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.",
+    targetKeyword: "best robo advisors",
+    category: "robo-advisors",
+    angle: "best",
+    h1: "Best Robo Advisors of 2026",
+    intro:
+      "The best robo advisor for a standalone taxable account is the one whose advisory fee, account minimum, and tax-loss harvesting threshold all match the balance you actually plan to invest.\n\nWe compared seven robo-advisors on five things that change your net cost: the advisory fee, the minimum to open, whether tax-loss harvesting is included and at what balance, the yield treatment of cash, and what it costs to reach a human CFP. Every fee and minimum below was checked against the provider's own pricing page or its SEC Form ADV. No provider paid for placement.\n\nThis page covers taxable brokerage accounts only. For retirement accounts, see our [best IRA accounts roundup](/roundup/best-ira-accounts/). If you are still deciding between automation and picking funds yourself, start with [best investment apps for beginners](/roundup/best-investment-apps-for-beginners/). If you are weighing a robo against a human planner, read [is a financial advisor worth it](/guides/financial-advisor-worth-it/).",
+    rankingCriteria:
+      "We scored each robo-advisor on five criteria, applied the same way to every option: (1) the stated advisory fee and how it is charged, (2) the minimum to open and keep the account, (3) whether tax-loss harvesting is included and the balance you need to get it, (4) how the service treats cash inside the portfolio, and (5) the cost and minimum to reach a human CFP.\n\nCriterion 1 is deliberately overridden by criterion 3 in one specific case. This page is about taxable accounts, so a paid service that harvests losses at any balance can rank above a cheaper service that gates harvesting behind $25,000 or $50,000. That is why Wealthfront at 0.25% sits above Schwab at $0 and Fidelity Go at $0 under $25,000. If you have no gains or income to offset, that override does not apply to you and the cheaper option wins.\n\nServices were penalized for fee structures that punish small balances, for tax-loss harvesting locked behind a high balance, and for revenue models that hide the real cost in a cash allocation. We did not score past investment performance, because portfolios differ and past returns do not predict future results.\n\nAll fees below sit on top of the expense ratios of the underlying ETFs. Nobody's advisory fee is your all-in cost.",
+    options: [
+      {
+        name: "Wealthfront",
+        bestFor: "Taxable accounts where tax-loss harvesting is the main reason to automate",
+        description:
+          "Wealthfront charges 0.25% a year on its Automated Investing Account and takes a $500 minimum. Tax-loss harvesting is included at every balance, with no separate threshold to clear.\n\nIt is the only option here with additional tax-aware tiers on top of that. US Direct Indexing is available to any taxable Automated Investing Account holding at least $100,000, with no upper limit - accounts above $500,000 simply hold more individual stocks. Smart Beta is a separate no-fee add-on at $500,000 that enhances direct indexing rather than replacing it. Separately, an S&P 500 Direct account holds the individual index stocks at a 0.09% advisory fee with a $5,000 minimum. There is no human advisor at any level.",
+        strengths: [
+          "Tax-loss harvesting included with no minimum balance to unlock it",
+          "$500 minimum to open an Automated Investing Account",
+          "US Direct Indexing on any taxable account of $100,000 or more, with no upper limit",
+          "S&P 500 Direct charges only 0.09% a year with a $5,000 minimum",
+          "Form ADV spells out exactly how it avoids wash sales inside your Wealthfront accounts",
+        ],
+        limitations: [
+          "No human advisor or CFP access at any balance",
+          "US Direct Indexing needs $100,000, so smaller accounts get ETF-level harvesting only",
+          "It cannot see trades in outside accounts, so you can still create a wash sale yourself",
+        ],
+        pricing:
+          "0.25% a year on the Automated Investing Account; $500 minimum. Automated Bond Ladder 0.15%. S&P 500 Direct 0.09% with a $5,000 minimum. Nasdaq-100 Direct 0.12%. Fees are charged monthly, not in advance.",
+      },
+      {
+        name: "Betterment",
+        bestFor: "Starting at any balance with a defined path to a human CFP later",
+        description:
+          "Betterment charges $5 a month as its base price, with no minimum balance. You switch to 0.25% a year once you either set up $200 or more in monthly recurring deposits or reach $24,000 across your Betterment investing accounts.\n\nThat crossover is not arbitrary. $5 a month is $60 a year, and 0.25% of $24,000 is also $60. Below roughly $24,000 without recurring deposits, the flat fee is the more expensive of the two as a percentage. Betterment Premium adds access to financial advisors at 0.65% a year and requires $100,000 in eligible household assets.",
+        strengths: [
+          "No minimum balance to open",
+          "Recurring deposits of $200 a month move you off the flat fee to 0.25%",
+          "Tax-loss harvesting included",
+          "Premium tier gives a defined, priced upgrade to human advisors",
+          "Tiered discounts above $1M: the dollars between $1M and $2M are charged 0.15%, and the dollars above $2M 0.10%, while the first $1M stays at the standard rate",
+        ],
+        limitations: [
+          "$5 a month on a small balance is a very high effective fee rate",
+          "Premium costs 0.65% a year and needs $100,000 in eligible household assets",
+          "A $75 flat fee applies to each outbound account transfer to another firm",
+        ],
+        pricing:
+          "$5 a month, or 0.25% a year once you have $200+ in monthly recurring deposits or a $24,000 balance. Premium: 0.65% a year on the first $1M, requiring $100,000 in eligible investments per household. Dollars above $1M are charged at 0.15% ($1M-$2M) and 0.10% ($2M+). Outbound transfer fee: $75 per account.",
+      },
+      {
+        name: "Schwab Intelligent Portfolios",
+        bestFor: "Investors with $5,000 or more who want no advisory fee and accept a cash allocation",
+        description:
+          "Schwab charges no advisory fee and no commissions on Intelligent Portfolios. The minimum to open is $5,000. In exchange, every portfolio carries a required cash allocation swept to Schwab Bank.\n\nSchwab states plainly why: it does not charge an advisory fee in part because Schwab Bank earns revenue on that cash. The bank earns more the larger the cash allocation, and Schwab notes some cash alternatives outside the program pay a higher yield. Tax-loss harvesting is free but requires $50,000 or more in the account, and you have to enroll.\n\nHuman advice is a separate product. Schwab Intelligent Portfolios Premium charges a $300 one-time planning fee plus a $30 monthly advisory fee, and requires $25,000. Because the fee is flat rather than a percentage, it gets cheaper as a rate the larger you are: at the $25,000 minimum it is $660 in year one and $360 a year after, or about 2.6% then 1.4%.",
+        strengths: [
+          "No advisory fee and no commissions",
+          "Tax-loss harvesting carries no extra charge once you qualify",
+          "24/7 phone and chat support from US-based staff",
+          "Portfolios are built from low-cost ETFs, including Schwab's own",
+          "Premium's flat $30 a month does not rise with your balance, unlike a percentage fee",
+        ],
+        limitations: [
+          "$5,000 minimum is the highest entry point on this list",
+          "Tax-loss harvesting is locked until the account holds $50,000",
+          "The mandatory cash allocation is how Schwab gets paid, and it can drag on returns",
+          "Withdrawing below the threshold can make the account ineligible for harvesting",
+          "Reaching a CFP means paying $300 up front plus $30 a month, and holding $25,000",
+        ],
+        pricing:
+          "No advisory fee and no commissions; $5,000 minimum. Tax-loss harvesting requires $50,000 or more in the account and must be activated. Schwab Intelligent Portfolios Premium adds unlimited CFP planning for a $300 one-time planning fee plus a $30 monthly advisory fee ($90 billed quarterly), with a $25,000 minimum.",
+      },
+      {
+        name: "Fidelity Go",
+        bestFor: "Small taxable balances that will grow past the $25,000 line",
+        description:
+          "Fidelity Go charges no advisory fee at all on balances under $25,000, then 0.35% a year at $25,000 and above. There is no minimum to open the account, and Fidelity starts investing once the balance reaches $10.\n\nThe $25,000 mark unlocks three things at once: the 0.35% fee starts, tax-loss harvesting becomes available on taxable accounts, and you get unlimited 30-minute coaching calls with a Fidelity advisor. That makes it unusually cheap below $25,000 and mid-priced above it.",
+        strengths: [
+          "No advisory fee at all under $25,000",
+          "No minimum to open; investing starts at a $10 balance",
+          "Tax-loss harvesting on taxable accounts once the balance reaches $25,000",
+          "Unlimited 30-minute coaching calls with an advisor at $25,000",
+        ],
+        limitations: [
+          "0.35% above $25,000 is the second-highest percentage fee here",
+          "Tax-loss harvesting is not available below $25,000",
+          "Portfolios use Fidelity Flex funds, so the strategy is Fidelity-only",
+        ],
+        pricing:
+          "$0 advisory fee for balances under $25,000; 0.35% a year at $25,000 or more. No minimum to open; investing begins at a $10 balance. Tax-loss harvesting on taxable accounts at $25,000 or more.",
+      },
+      {
+        name: "Vanguard Digital Advisor",
+        bestFor: "The lowest realistic all-in cost on a plain index portfolio",
+        description:
+          "Vanguard Digital Advisor charges a gross advisory fee of 0.20% for an index portfolio or 0.25% for an active portfolio. That gross fee is then reduced by a credit for revenue Vanguard keeps from the funds you hold.\n\nVanguard caps the net result at no more than $20 per $10,000 a year on the index options, and $25 per $10,000 on the active option. The minimum is $100 in a Vanguard Brokerage Account. Tax-loss harvesting is included at no extra cost. It is an all-digital service with no advisor attached.",
+        strengths: [
+          "Net advisory fee capped at $20 per $10,000 a year on index portfolios",
+          "$100 minimum to enroll a brokerage account",
+          "Tax-loss harvesting included in the advisory fee",
+          "Revenue credit mechanism reduces the fee rather than hiding it in a cash sweep",
+        ],
+        limitations: [
+          "No human advisor at this tier; Personal Advisor starts at $50,000 and about 0.30%",
+          "Portfolios are built from Vanguard funds only",
+          "Each account you enroll needs its own $100 balance",
+        ],
+        pricing:
+          "Gross advisory fee 0.20% (index) or 0.25% (active), reduced by a revenue credit. Net cost is no more than $20 per $10,000 a year on index options, $25 per $10,000 on the active option. $100 minimum per enrolled Vanguard Brokerage Account.",
+      },
+      {
+        name: "E*TRADE Core Portfolios",
+        bestFor: "Getting tax-loss harvesting on a small taxable balance",
+        description:
+          "Core Portfolios, now part of Morgan Stanley, charges 0.30% a year with a $500 minimum. E*TRADE frames it as $1.50 a year on a $500 account, which is the lowest published entry cost with harvesting attached.\n\nAll active taxable Core Portfolios accounts are eligible to enroll in tax-loss harvesting, with no balance threshold. That matters if your taxable balance is under $25,000, where Fidelity Go and Schwab both shut harvesting off.",
+        strengths: [
+          "Tax-loss harvesting available on any active taxable account, no balance floor",
+          "$500 minimum to open",
+          "No trading cost to harvest a loss",
+          "Enrolling and unenrolling from harvesting is self-service",
+        ],
+        limitations: [
+          "0.30% a year is above Betterment, Wealthfront, and Vanguard Digital Advisor",
+          "No included human CFP relationship at this tier",
+          "Harvesting is opt-in, so nothing happens until you enroll",
+        ],
+        pricing:
+          "0.30% a year, described by E*TRADE as as low as $1.50 on $500 in assets. $500 minimum investment. The advisory fee does not cover the expense ratios of the underlying funds.",
+      },
+      {
+        name: "Acorns",
+        bestFor: "Automating very small contributions when a percentage fee would not collect enough",
+        description:
+          "Acorns charges a flat monthly subscription instead of a percentage: $3 a month for Bronze, $6 for Silver, and $12 for Gold. There is no percentage advisory fee and no balance minimum.\n\nA flat fee is the right shape only at tiny balances. $3 a month is $36 a year, which is a 3.6% annual rate on a $1,000 balance and 0.36% on $10,000. Its published plan features do not include tax-loss harvesting, so it is the weakest fit of the group for a taxable account built around tax management.",
+        strengths: [
+          "Flat price does not grow with your balance",
+          "No account minimum",
+          "Round-Ups automate contributions from everyday spending",
+          "Higher tiers bundle a checking account, custodial accounts, and an IRA match",
+        ],
+        limitations: [
+          "Tax-loss harvesting is not listed among its plan features",
+          "$3 a month is 3.6% a year on a $1,000 balance",
+          "The subscription is charged even in months you do not contribute",
+          "Tier upgrades are bundled, so you pay for features you may not want",
+        ],
+        pricing:
+          "Acorns Bronze $3/month, Silver $6/month, Gold $12/month. No percentage advisory fee. No stated account minimum.",
+      },
+    ],
+    comparisonTable: {
+      headers: [
+        "Advisory Fee",
+        "Account Minimum",
+        "Tax-Loss Harvesting",
+        "Annual Cost on $25,000",
+        "Human CFP Access",
+      ],
+      rows: [
+        {
+          name: "Wealthfront",
+          values: ["0.25%/yr", "$500", "Included, no balance floor", "$62.50", "None"],
+        },
+        {
+          name: "Betterment",
+          values: ["$5/mo or 0.25%/yr", "$0", "Included", "$62.50", "Premium: 0.65% at $100,000"],
+        },
+        {
+          name: "Schwab Intelligent Portfolios",
+          values: ["No advisory fee", "$5,000", "$50,000 and must enroll", "$0", "Premium: $300 + $30/mo at $25,000"],
+        },
+        {
+          name: "Fidelity Go",
+          values: ["$0 under $25k; 0.35% at $25k+", "$0 to open, $10 to invest", "Taxable accounts $25,000+", "$87.50", "Coaching calls at $25,000"],
+        },
+        {
+          name: "Vanguard Digital Advisor",
+          values: ["Up to $20 per $10,000 (index)", "$100", "Included", "About $50", "Personal Advisor: about 0.30% at $50,000"],
+        },
+        {
+          name: "E*TRADE Core Portfolios",
+          values: ["0.30%/yr", "$500", "Included, opt-in, no floor", "$75", "Not included"],
+        },
+        {
+          name: "Acorns",
+          values: ["$3, $6, or $12/mo", "$0", "Not listed", "$36 (Bronze)", "Not included"],
+        },
+      ],
+    },
+    verdict:
+      "There is no single winner, because the fee structures cross over at different balances. Match the structure to your balance instead.\n\nUnder about $10,000 in a taxable account, Fidelity Go charges no advisory fee at all, and Vanguard Digital Advisor caps the cost near $20 per $10,000. Acorns only makes sense at this size if a flat $36 a year buys a savings habit you would not otherwise build.\n\nBetween roughly $10,000 and $50,000, tax-loss harvesting becomes the deciding feature. Wealthfront and E*TRADE Core Portfolios both harvest with no balance floor. Fidelity Go does not harvest until $25,000, and Schwab does not until $50,000.\n\nAbove $100,000, the question shifts to what the fee buys. Wealthfront adds US Direct Indexing at $100,000 and up, with no upper limit. Betterment Premium adds human advisors at 0.65%. Vanguard Personal Advisor starts at $50,000 and about 0.30%. Schwab still charges no advisory fee on the base program, but reaching a CFP means Premium at $300 up front plus $30 a month with a $25,000 minimum - and you are paying for the base program through the required cash allocation either way.\n\nIf you want a person rather than an algorithm, the robo tiers stop being the right comparison. See [is a financial advisor worth it](/guides/financial-advisor-worth-it/) and [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/).",
+    sections: [
+      {
+        heading: "Why a 0.25% advisory fee is not your total cost",
+        content:
+          "A robo-advisor's advisory fee sits on top of the expense ratios of the funds it buys for you. It does not replace them. You pay both.\n\nHere is the stack. The advisory fee goes to the robo-advisor for building and rebalancing the portfolio. The expense ratio goes to the fund company that runs each ETF, and it is deducted inside the fund before you ever see a return. E*TRADE says this outright: its advisory fee does not cover the underlying management fees and expenses of any fund in the portfolio. Betterment says the same, noting fund fees are in addition to its management fee.\n\nSo a 0.25% robo-advisor holding ETFs that average 0.08% costs about 0.33% a year all in. That is still cheap, but it is a third more than the headline number.\n\nVanguard Digital Advisor is the exception in how it handles this. It charges a gross fee of 0.20% for an index portfolio, then subtracts a credit for the revenue Vanguard keeps from the funds you hold. The stated result is a net cost of no more than $20 per $10,000 a year.\n\nOne more structural detail worth knowing: Betterment's $24,000 crossover is exact math, not marketing. Its flat price is $5 a month, or $60 a year. 0.25% of $24,000 is also $60. Below that balance without recurring deposits, the flat fee is the more expensive option measured as a percentage. On $5,000, $60 a year is 1.2%. To model what any of these fee rates cost over decades, use our [investment growth calculator](/investing/investment-growth-calculator/).",
+      },
+      {
+        heading: "When tax-loss harvesting is actually worth paying for",
+        content:
+          "Tax-loss harvesting sells a fund that has dropped below what you paid, books the loss, and buys a similar fund to keep your allocation intact. The loss offsets capital gains, and up to $3,000 a year of ordinary income.\n\nThe benefit scales with your balance, but the ceiling does not. A portfolio has to be large enough to produce meaningful unrealized losses in a given year. On a $5,000 taxable account, a 10% drawdown creates a $500 loss. At a 24% marginal rate that is worth about $120 - and only if you have gains or income to apply it against.\n\nProviders build their thresholds around exactly this. Schwab requires $50,000 in the account and makes you enroll. Fidelity Go requires $25,000 in a taxable account. Wealthfront and E*TRADE Core Portfolios apply no balance floor at all.\n\nThree conditions have to hold for harvesting to be worth a fee premium. You need a taxable account, because the strategy does nothing inside an IRA or 401(k) where gains are already sheltered. You need capital gains or ordinary income to offset. And you need to expect a similar or lower tax rate when you eventually sell, because harvesting lowers your cost basis and defers tax rather than erasing it.\n\nE*TRADE flags that last point directly: if you expect to be in a higher bracket later, enrolling may not make sense.",
+      },
+      {
+        heading: "The wash-sale trap that can permanently kill a harvested loss",
+        content:
+          "The wash-sale rule disallows a loss if you buy the same or a substantially identical security within 30 days before or after the sale. That is a 61-day window in total.\n\nMost people know that much. What most people do not know is what happens when the replacement purchase lands in your IRA.\n\nThe IRS addressed this in Revenue Ruling 2008-5. If you sell a security at a loss in your taxable account and your IRA or Roth IRA buys the substantially identical security inside that window, the loss is disallowed under section 1091. And the basis of the IRA shares is not increased. In a normal wash sale, the disallowed loss is added to the basis of the replacement shares, so you get it back later. In the IRA case, you do not. The loss is gone for good.\n\nThis matters for robo-advisors specifically. Your robo-advisor coordinates trades only inside the accounts it can see. Wealthfront's Form ADV states this plainly: clients are responsible for monitoring accounts outside Wealthfront, wash sales can occur across different accounts, and Wealthfront may lack visibility into unlinked accounts. It also warns that if you hold the same securities elsewhere, you cannot trade them for 30 days before or after a harvest.\n\nThe practical rule is simple. If your robo-advisor harvests losses on a total-market or S&P 500 ETF in your taxable account, do not hold an automatic-investing schedule for the same or a near-identical fund in your IRA or 401(k). A routine payroll contribution can quietly nullify the harvest.\n\nFor how taxable and retirement accounts differ more broadly, see our [brokerage vs. IRA comparison](/compare/brokerage-vs-ira/).",
+      },
+      {
+        heading: "How a robo-advisor with no advisory fee makes money",
+        content:
+          "Schwab Intelligent Portfolios charges no advisory fee and no commissions. Schwab explains where the revenue comes from instead, and it is worth reading before you assume free means free.\n\nEvery Intelligent Portfolios account holds a required cash allocation that is swept into FDIC-insured deposit accounts at Schwab Bank. Schwab states that it does not charge an advisory fee for the program in part because of the revenue Schwab Bank generates from that cash. It also states that the bank earns more the larger the cash allocation, and that some cash alternatives outside the program pay a higher yield.\n\nThat is a real cost, just not an itemized one. Cash held at a below-market yield inside a long-term portfolio is a drag on returns that grows with your balance and with the size of the allocation. Schwab also earns fund-level revenue, because the portfolios hold Schwab ETFs managed by a Schwab affiliate.\n\nNone of this is hidden - Schwab publishes it in its disclosure brochure. The point is that the comparison is not \"free versus 0.25%.\" It is an explicit percentage fee versus an implicit cash drag, and which one costs more depends on your allocation and on where short-term rates sit.\n\nThe same logic applies to cash held outside the portfolio. Betterment and Wealthfront both offer separate cash accounts with variable APYs, and those balances are not part of the managed portfolio. Check the current rate before treating any of them as a savings substitute.",
+      },
+      {
+        heading: "What it costs to add a human CFP to a robo-advisor",
+        content:
+          "Every service here that offers human advice prices it as a separate tier with its own minimum. The jump is usually larger than the base fee itself.\n\nBetterment Premium charges 0.65% a year, made up of the 0.25% base fee plus a 0.40% Premium fee, and requires $100,000 in eligible investments per household. On $100,000 that is $650 a year instead of $250.\n\nSchwab prices it as a subscription instead of a percentage. Schwab Intelligent Portfolios Premium charges a $300 one-time planning fee plus a $30 monthly advisory fee, billed as $90 quarterly, and requires $25,000. That is $660 in year one and $360 a year after. The flat structure flips the usual math: at the $25,000 minimum it is roughly 1.4% a year ongoing, but at $250,000 it is about 0.14% - cheaper than every percentage-based CFP tier here.\n\nVanguard splits it by size. Vanguard Personal Advisor starts at $50,000 and charges approximately $30 to $31 per $10,000 a year, or about 0.30%. Vanguard Personal Advisor Select charges no more than $30 per $10,000 for a dedicated CFP and requires $500,000 in enrolled assets.\n\nFidelity Go includes unlimited 30-minute coaching calls once your balance reaches $25,000, at the same 0.35% fee and no surcharge. That is the cheapest human contact on this list, though coaching calls are narrower than an ongoing planning relationship.\n\nWealthfront, E*TRADE Core Portfolios, and Acorns do not include human advisor access at these tiers.\n\nBefore paying for an upgrade, be clear on which service you are buying. A dedicated CFP relationship is a different product from a wealth-management engagement - see [financial advisor vs. wealth manager](/compare/financial-advisor-vs-wealth-manager/) - and the SEC's Investor Bulletin on robo-advisers is a good primer on how much human interaction any given program actually provides.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best robo advisors for a taxable brokerage account?",
+        answer:
+          "It depends on your balance, because the fee structures cross over. Under $25,000, Fidelity Go charges no advisory fee and Vanguard Digital Advisor caps the net cost near $20 per $10,000 a year. If tax-loss harvesting matters at a small balance, Wealthfront ($500 minimum) and E*TRADE Core Portfolios ($500 minimum) both include it with no balance floor. Above $100,000, Wealthfront adds US Direct Indexing and Betterment Premium adds human advisors at 0.65%.",
+      },
+      {
+        question: "How much do robo-advisors charge?",
+        answer:
+          "Most charge 0.20% to 0.35% of assets a year, and the fee sits on top of the underlying fund expense ratios. Wealthfront and Betterment charge 0.25%. E*TRADE Core Portfolios charges 0.30%. Fidelity Go charges nothing under $25,000 and 0.35% above it. Vanguard Digital Advisor caps the net cost at $20 per $10,000 a year on index portfolios. Schwab Intelligent Portfolios charges no advisory fee, but requires a cash allocation that Schwab Bank earns revenue on.",
+      },
+      {
+        question: "What is the minimum to open a robo-advisor account?",
+        answer:
+          "Minimums range from $0 to $5,000. Betterment, Fidelity Go, and Acorns have no minimum to open, though Fidelity Go waits until your balance hits $10 to start investing. Vanguard Digital Advisor requires $100 per enrolled brokerage account. Wealthfront and E*TRADE Core Portfolios both require $500. Schwab Intelligent Portfolios has the highest bar at $5,000.",
+      },
+      {
+        question: "Do all robo-advisors offer tax-loss harvesting?",
+        answer:
+          "No, and the ones that do often gate it behind a balance. Wealthfront and E*TRADE Core Portfolios include it with no balance floor, and Betterment and Vanguard Digital Advisor include it in the advisory fee. Fidelity Go offers it on taxable accounts of $25,000 or more. Schwab Intelligent Portfolios requires $50,000 or more in the account and you have to enroll. Acorns does not list tax-loss harvesting among its plan features. Harvesting only helps in a taxable account, since gains inside an IRA are already sheltered.",
+      },
+      {
+        question: "Can a wash sale cancel out my robo-advisor's tax-loss harvesting?",
+        answer:
+          "Yes, and the worst version happens in your IRA. Under IRS Revenue Ruling 2008-5, if your IRA or Roth IRA buys a substantially identical security within 30 days of a loss sale in your taxable account, the loss is disallowed and the IRA's basis is not increased - so the deduction is lost permanently, not just deferred. Your robo-advisor coordinates trades only inside accounts it can see. If it harvests an S&P 500 ETF for you, avoid buying the same or a near-identical fund in an outside IRA or 401(k) inside the 61-day window.",
+      },
+      {
+        question: "Can you talk to a human financial advisor through a robo-advisor?",
+        answer:
+          "At some, yes, but it is a paid upgrade with its own minimum. Betterment Premium charges 0.65% a year and requires $100,000 in eligible household investments. Schwab Intelligent Portfolios Premium charges a $300 one-time planning fee plus $30 a month and requires $25,000. Vanguard Personal Advisor starts at $50,000 at about 0.30%, and Personal Advisor Select charges no more than $30 per $10,000 with a $500,000 minimum for a dedicated CFP. Fidelity Go includes unlimited 30-minute coaching calls at $25,000 with no surcharge. Wealthfront, E*TRADE Core Portfolios, and Acorns do not include advisor access at these tiers.",
+      },
+    ],
+    sources: [
+      {
+        label: "SEC Investor.gov - Investor Bulletin: Robo-Advisers",
+        url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45",
+      },
+      {
+        label: "IRS Revenue Ruling 2008-5 - Wash sales and IRA purchases",
+        url: "https://www.irs.gov/pub/irs-drop/rr-08-05.pdf",
+      },
+      {
+        label: "IRS Publication 550 - Investment Income and Expenses (wash sales)",
+        url: "https://www.irs.gov/publications/p550",
+      },
+    ],
+    relatedComparisons: ["financial-advisor-vs-wealth-manager", "brokerage-vs-ira", "etf-vs-mutual-fund"],
+    calculatorLinks: [
+      { label: "Investment Growth Calculator", href: "/investing/investment-growth-calculator/" },
+      { label: "Investing Calculators", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "best-dividend-etfs-for-retirement",
+    title: "Best Dividend ETFs for Retirement: 7 Ranked by Income",
+    metaDescription:
+      "7 dividend ETFs ranked for retirement income by payout durability, crash drawdown, payment cadence, and tax location. Fees read from SEC filings.",
+    targetKeyword: "best dividend etfs for retirement",
+    category: "dividend ETFs for retirement",
+    angle: "best",
+    segment: "retirees / income in retirement",
+    h1: "Best Dividend ETFs for Retirement Income",
+    intro:
+      "The best dividend ETFs for retirement are the ones with durable, rules-based payouts and shallow drawdowns, not the ones with the highest current yield.\n\nThat is a different test than the one most dividend lists use. A retiree spends the distributions. So payout durability, downturn behavior, payment timing, and which account holds the fund matter more than a headline yield number.\n\nWe ranked seven real, currently offered dividend ETFs on those retirement-specific axes. Every expense ratio below was read from the fund's own SEC summary prospectus. For the general cost-and-index ranking across a broad audience, see our [best dividend ETFs roundup](/roundup/best-dividend-etfs/), which also covers broad funds like VYM that we left off this page because a retirement lens adds nothing to them. No fund company paid for placement.",
+    rankingCriteria:
+      "We scored each fund on five criteria, weighted in this order.\n\n1. Payout durability, weighted heaviest. Does the index screen for the ability to keep paying, or does it simply buy whatever yields the most today? Yield-first screens tend to load up on stressed companies.\n\n2. Downturn behavior. We used the worst calendar quarter each fund reports in its own summary prospectus. Six of the seven funds share the same worst quarter, Q1 2020, which makes that a clean side-by-side test.\n\n3. Payment cadence, judged on what the issuer actually publishes rather than on what a fund happened to pay last year.\n\n4. Tax location. Funds whose income is mostly qualified dividends behave differently in a taxable brokerage account than funds whose income comes from option premium or REIT rent.\n\n5. Cost, used only as a tiebreaker between funds that score similarly above.\n\nBeing explicit about one ranking decision: NOBL has the longest dividend-raise-streak requirement on this page, so criterion 1 alone would put it first. It sits at number three because its 0.35% expense ratio is roughly six times SCHD's, and criterion 5 breaks the tie against it over a 30-year retirement. Cost never moved a fund past one that beat it on durability and drawdown.\n\nWe deliberately did not rank on trailing yield. Yields move daily, and a fund's yield can rise simply because its price fell.",
+    options: [
+      {
+        name: "Schwab U.S. Dividend Equity ETF (SCHD)",
+        bestFor: "A core retirement income holding with durability screens and a low fee",
+        description:
+          "SCHD tracks the Dow Jones U.S. Dividend 100 Index. The index does not just sort by yield. It screens for cash-flow strength and dividend track record first, then weights the survivors.\n\nThat design shows up in the drawdown record. In the Q1 2020 crash the fund lost 21.55%, better than every yield-first screen on this list. Its summary prospectus reports a total annual operating expense of 0.06%.\n\nSchwab's prospectus for its U.S. equity ETF group states that dividends from net investment income are generally declared and paid quarterly.",
+        strengths: [
+          "0.06% total annual fund operating expenses per the Feb. 27, 2026 summary prospectus",
+          "Index screens for dividend durability before yield",
+          "Quarterly payment cadence stated in the fund group prospectus",
+          "Low tax drag: 1-year return of 11.60% before taxes vs 10.64% after taxes on distributions (periods ended 12/31/24)",
+        ],
+        limitations: [
+          "Concentrated in about 100 holdings, so sector bets are real",
+          "Quarterly timing does not line up with monthly bills",
+          "Yield-screened value tilt can lag the broad market for long stretches",
+        ],
+        pricing: "0.06% expense ratio (management fees 0.06%, other expenses 0.00%) per the SEC summary prospectus dated Feb. 27, 2026.",
+      },
+      {
+        name: "Vanguard Dividend Appreciation ETF (VIG)",
+        bestFor: "Retirees whose main worry is how the fund behaves in a downturn",
+        description:
+          "VIG holds companies with a record of raising dividends. It leaves out the highest yielders on purpose, which lowers current income and raises quality.\n\nThat trade shows up clearly in the crash test. VIG's worst calendar quarter in its prospectus bar chart is -16.79%, ended March 31, 2020. That is the shallowest drawdown of the seven funds here.\n\nThe Vanguard prospectus states that income dividends are generally distributed quarterly in March, June, September, and December. Total annual fund operating expenses are 0.04%, restated to reflect current fees.",
+        strengths: [
+          "Shallowest worst quarter on this list: -16.79%, ended March 31, 2020",
+          "0.04% total expenses per the May 28, 2026 summary prospectus",
+          "Prospectus names the actual payment months, not a vague cadence",
+          "Dividend-growth screen avoids the most stressed high-yield names",
+        ],
+        limitations: [
+          "Lower current income than any high-yield fund here",
+          "Growth-oriented tilt means less cash flow per dollar invested",
+          "Quarterly cadence still requires a cash buffer for monthly spending",
+        ],
+        pricing: "0.04% expense ratio (management fees 0.03%, other expenses 0.01%, restated to reflect current fees) per the SEC summary prospectus dated May 28, 2026.",
+      },
+      {
+        name: "ProShares S&P 500 Dividend Aristocrats ETF (NOBL)",
+        bestFor: "Retirees who want the longest dividend-raise-streak requirement available",
+        description:
+          "NOBL's index targets S&P 500 companies that have raised dividends every year for at least 25 years. That is the longest raise-streak requirement of any fund on this page, which is why it scores highest on our first criterion.\n\nOne honest caveat, straight from the prospectus: the index selects a minimum of 40 companies, and if fewer than 40 clear the 25-year test, or if sector limits are breached, the index will include companies with shorter dividend growth histories. So the 25-year label is a target, not a guarantee about every holding.\n\nNOBL's worst calendar quarter is -23.30%, ended March 31, 2020. Holdings are equally weighted, no sector may exceed 30%, and weights reset quarterly. The NOBL section of the prospectus states the fund intends to distribute income, if any, quarterly.",
+        strengths: [
+          "25-year raise-streak target is the longest durability screen on this page",
+          "Prospectus states the fund intends to distribute income quarterly",
+          "Equal weighting plus a 30% sector cap limits concentration",
+          "Long live record spanning the 2020 downturn",
+        ],
+        limitations: [
+          "0.35% expense ratio, roughly six times SCHD, which is why it ranks third rather than first",
+          "If fewer than 40 companies qualify, the index admits shorter dividend histories",
+          "The screen looks backward, so past raises do not guarantee future ones",
+          "ProShares' general policy adds there is no guarantee distributions come at regular intervals",
+        ],
+        pricing: "0.35% expense ratio (management fees 0.35%, other expenses 0.00%) per the SEC summary prospectus dated Sept. 26, 2025, as supplemented April 7, 2026.",
+      },
+      {
+        name: "iShares Core Dividend Growth ETF (DGRO)",
+        bestFor: "Dividend-growth exposure across a much wider holdings base",
+        description:
+          "DGRO applies a dividend-growth screen across a far broader set of payers than a strict aristocrats index. iShares publishes 390 holdings as of July 31, 2026, versus about 100 for SCHD.\n\nIts summary prospectus reports total annual fund operating expenses of 0.08%. Its worst calendar quarter is -21.91%, ended March 31, 2020, sitting between the growth funds and the yield-first funds.\n\niShares publishes a distribution frequency of quarterly for DGRO on the fund's product page.",
+        strengths: [
+          "0.08% total expenses per the Aug. 29, 2025 summary prospectus",
+          "390 holdings as of July 31, 2026, the widest base on this page",
+          "Issuer publishes a quarterly distribution frequency",
+          "Dividend-growth filter keeps out non-payers and shrinking payers",
+        ],
+        limitations: [
+          "Modest current income compared with high-yield screens",
+          "The prospectus general policy commits only to paying at least once a year, below the published quarterly cadence",
+          "Large-cap U.S. only, so no international income diversification",
+        ],
+        pricing: "0.08% expense ratio (management fees 0.08%, other expenses rounded to 0.00%) per the SEC summary prospectus dated Aug. 29, 2025.",
+      },
+      {
+        name: "Invesco S&P 500 High Dividend Low Volatility ETF (SPHD)",
+        bestFor: "A monthly payment schedule that maps onto monthly bills",
+        description:
+          "SPHD is one of the few equity dividend index funds whose prospectus commits to a monthly cadence. The Invesco prospectus states dividends from net investment income are generally declared and paid monthly by the fund.\n\nThe low-volatility label describes how the index picks stocks, not how the fund performed. SPHD's worst calendar quarter is -30.97%, ended March 31, 2020, the second deepest on this list.\n\nTotal annual fund operating expenses are 0.30%. It ranks below the durability screens because its index sorts on yield first and low volatility second.",
+        strengths: [
+          "Monthly distributions stated directly in the prospectus",
+          "High-yield screen produces more current income than growth funds",
+          "Low-volatility filter is applied after the yield screen",
+          "Long track record dating to its Oct. 18, 2012 inception",
+        ],
+        limitations: [
+          "0.30% expense ratio versus 0.04% to 0.08% for the index leaders",
+          "The low-volatility name did not prevent a -30.97% quarter in early 2020",
+          "Yield-first construction tilts heavily toward a few sectors",
+        ],
+        pricing: "0.30% expense ratio (management fees 0.30%, other expenses none) per the SEC summary prospectus dated Dec. 19, 2025.",
+      },
+      {
+        name: "JPMorgan Equity Premium Income ETF (JEPI)",
+        bestFor: "Smoothed monthly cash flow inside a tax-advantaged account",
+        description:
+          "JEPI is not a dividend index fund. It builds an actively managed stock portfolio and sells call options through equity-linked notes, which can make up to 20% of net assets.\n\nThe prospectus says the fund is managed in a way that seeks to provide monthly distributions at a relatively stable level. That is the clearest income-smoothing language of any fund here, which is why it ranks well on cadence and poorly on tax location.\n\nThe tax cost is visible in its own prospectus. For the 1-year period ended 12/31/24, the fund reports 12.56% before taxes and 9.49% after taxes on distributions, a gap of about 3.1 points. SCHD's gap over the same period was about 1.0 point.",
+        strengths: [
+          "Prospectus explicitly targets monthly distributions at a relatively stable level",
+          "Option premium income does not depend on companies raising dividends",
+          "Worst quarter of only -7.09%, in Q2 2022",
+          "Actively managed portfolio designed for lower volatility than the S&P 500",
+        ],
+        limitations: [
+          "0.35% expense ratio",
+          "Distributions are described as taxed as ordinary income or capital gains, so option income is generally not qualified-dividend income",
+          "Usually better held in an IRA or 401(k) than in a taxable account",
+          "Launched 05/20/2020, so it has no record through the Q1 2020 crash",
+          "Call writing caps upside in strong markets",
+        ],
+        pricing: "0.35% expense ratio (management fees 0.35%) per the SEC summary prospectus dated Nov. 1, 2025.",
+      },
+      {
+        name: "SPDR Portfolio S&P 500 High Dividend ETF (SPYD)",
+        bestFor: "The cheapest way to own a narrow, equal-weight 80-stock yield screen",
+        description:
+          "SPYD is the cheapest fund of its type here at 0.07%, but it is far narrower than its name suggests. Its prospectus says the index is designed to measure the performance of 80 high dividend-yielding companies within the S&P 500. State Street publishes 80 holdings. That is roughly one in six S&P 500 members, not a broad slice of the market.\n\nIt applies no durability or dividend-growth test at all, which places it last on our first criterion. It also has the deepest drawdown on this page: -36.65%, ended March 31, 2020.\n\nTax location matters here too. The S&P 500 includes REITs, and State Street's own fund page shows real estate at 24.86% of the fund as of July 31, 2026. REIT distributions are generally not qualified dividends, so this fund usually fits better inside a tax-advantaged account.",
+        strengths: [
+          "0.07% total expenses per the Oct. 31, 2025 summary prospectus",
+          "Highest current income potential of the index funds here",
+          "Equal weighting avoids one mega-cap dominating the payout",
+          "Simple, transparent rule: the highest yielders in the S&P 500",
+        ],
+        limitations: [
+          "Only 80 holdings, so it is a concentrated bet rather than broad exposure",
+          "Deepest drawdown on this list at -36.65% in Q1 2020",
+          "Real estate was 24.86% of the fund as of July 31, 2026, and REIT income is generally not qualified",
+          "Prospectus warns distributions may vary significantly from period to period",
+          "Pure yield screen has no durability or dividend-growth test",
+        ],
+        pricing: "0.07% expense ratio (management fees 0.07%, other expenses 0.00%) per the SEC summary prospectus dated Oct. 31, 2025.",
+      },
+    ],
+    comparisonTable: {
+      headers: [
+        "Payout Durability Screen",
+        "Payment Cadence (issuer-published)",
+        "Worst Quarter (Q1 2020 unless noted)",
+        "Tax Location Fit",
+        "Expense Ratio",
+      ],
+      rows: [
+        { name: "SCHD (Schwab)", values: ["Cash-flow and track-record screen", "Quarterly", "-21.55%", "Taxable or IRA", "0.06%"] },
+        { name: "VIG (Vanguard)", values: ["Dividend-raise record", "Quarterly (Mar/Jun/Sep/Dec)", "-16.79%", "Taxable or IRA", "0.04%"] },
+        { name: "NOBL (ProShares)", values: ["25-year raise streak (min 40 names)", "Quarterly (intended)", "-23.30%", "Taxable or IRA", "0.35%"] },
+        { name: "DGRO (iShares)", values: ["Dividend growth, 390 holdings", "Quarterly", "-21.91%", "Taxable or IRA", "0.08%"] },
+        { name: "SPHD (Invesco)", values: ["Yield first, then low volatility", "Monthly", "-30.97%", "Taxable or IRA", "0.30%"] },
+        { name: "JEPI (JPMorgan)", values: ["None: option premium income", "Monthly (stable-level target)", "-7.09% (Q2 2022)", "Better in a tax-advantaged account", "0.35%"] },
+        { name: "SPYD (State Street)", values: ["None: yield only, 80 holdings", "Quarterly (may vary)", "-36.65%", "Better in a tax-advantaged account", "0.07%"] },
+      ],
+    },
+    verdict:
+      "For a retiree who wants one core dividend holding, SCHD and VIG hold up best across all five tests. SCHD screens for payout durability at 0.06%. VIG gave up the most yield and had the shallowest drawdown of the group, -16.79% in Q1 2020.\n\nNOBL scores highest on payout durability alone, with a 25-year raise-streak target. It lands third because 0.35% is a real cost across a 30-year retirement, and because its index will admit shorter dividend histories if fewer than 40 companies qualify. If durability is the only thing that matters to you, it moves to the top of this list.\n\nDGRO is the pick for the widest dividend-growth base at a low fee, with 390 holdings and a published quarterly cadence.\n\nIf bills arrive monthly, SPHD and JEPI are the two funds whose issuers commit to a monthly cadence. Neither is free of trade-offs. SPHD fell 30.97% in Q1 2020. JEPI carries the largest tax drag here, has no record through the 2020 crash, and its option income generally belongs in a tax-advantaged account.\n\nSPYD is the cheapest high-yield screen, but it is also the narrowest fund here at 80 holdings, the deepest drawdown at -36.65%, and roughly a quarter real estate, so it usually fits better inside an IRA.\n\nOne honest note. None of these funds is automatically safer than selling shares from a diversified portfolio. That comparison is covered further down.",
+    sections: [
+      {
+        heading: "The four retirement tests a general dividend ranking skips",
+        content:
+          "A general dividend ranking sorts on cost and index rules. That is the right lens for someone still accumulating. It is the wrong lens once you are living on the money.\n\nThis page applies four extra tests instead.\n\nTest one is payout durability. Does the index screen for the ability to keep paying, or does it just buy the highest yielders? SCHD, VIG, NOBL, and DGRO screen. SPHD and SPYD sort on yield first. JEPI does not use a dividend screen at all.\n\nTest two is drawdown. If you are withdrawing during a crash, the depth of that crash decides how many shares you burn.\n\nTest three is cadence, because a quarterly payer and a monthly budget do not line up on their own.\n\nTest four is tax location, which decides how much of the payout you actually keep.\n\nUse our [dividend calculator](/investing/dividend-calculator/) to model what a given payout produces on your balance. For the cost-first ranking, see our [best dividend ETFs roundup](/roundup/best-dividend-etfs/).",
+      },
+      {
+        heading: "How each fund actually behaved in the Q1 2020 crash",
+        content:
+          "Every ETF summary prospectus publishes its best and worst calendar quarter. That is a rare apples-to-apples number, because it comes from the fund itself rather than from a data vendor.\n\nSix of the seven funds here report the same worst quarter: the one ended March 31, 2020. Ranked from shallowest to deepest, the losses were VIG -16.79%, SCHD -21.55%, DGRO -21.91%, NOBL -23.30%, SPHD -30.97%, and SPYD -36.65%.\n\nRead that list next to the yield ranking and the pattern is hard to miss. The funds that screened hardest on yield fell the hardest. The one labeled low volatility, SPHD, fell more than every dividend-growth fund on the list.\n\nJEPI cannot be compared here. It launched on 05/20/2020, after the crash. Its reported worst quarter is -7.09% in Q2 2022, measured over a much calmer stretch.\n\nThis matters because of sequence-of-returns risk. If you sell or spend during a deep drawdown, you lock in the loss on those shares. Model that with our [withdrawal calculator](/investing/withdrawal-calculator/).",
+      },
+      {
+        heading: "Payment cadence: what each issuer actually publishes",
+        content:
+          "Most retirees assume a dividend ETF pays on a fixed schedule. Issuers publish a frequency, and the legal documents are often looser than that.\n\nHere is what each one says. Vanguard states income dividends are generally distributed quarterly in March, June, September, and December. Schwab's U.S. equity ETF prospectus says dividends are generally declared and paid quarterly. iShares publishes a distribution frequency of quarterly for DGRO on the fund's product page. State Street says quarterly for each equity ETF, but adds they may vary significantly from period to period. ProShares says NOBL intends to distribute income quarterly.\n\nInvesco is the clearest monthly commitment among the index funds: dividends from net investment income are generally declared and paid monthly by SPHD. JPMorgan says JEPI is managed in a way that seeks to provide monthly distributions at a relatively stable level.\n\nWorth knowing: several general distribution policies sit below the published frequency. The iShares policy says a fund generally declares and pays dividends at least once a year. ProShares adds that there is no guarantee the funds will make distributions at regular intervals. The published cadence is what the issuer expects, not a contractual floor.\n\nThe practical takeaway: keep a cash buffer of one to two quarters of spending, and plan the year with our [retirement income calculator](/retirement/retirement-income-calculator/).",
+      },
+      {
+        heading: "Tax location: which of these belong inside an IRA",
+        content:
+          "Tax location is the axis most dividend lists skip, and in retirement it is often worth more than a few basis points of fee.\n\nThe IRS splits dividends into ordinary and qualified. Qualified dividends are taxed at the lower capital-gain rates. Ordinary dividends are taxed as ordinary income. Broad U.S. dividend ETFs like SCHD, VIG, NOBL, DGRO, and SPHD generate mostly company dividend income, so much of it can be qualified if you meet the holding-period rules.\n\nTwo funds here are different, and both usually fit better inside an IRA or 401(k).\n\nJEPI earns much of its income from option premium through equity-linked notes rather than from company dividends. Its prospectus describes distributions as taxed as ordinary income or capital gains.\n\nSPYD is the less obvious one. The S&P 500 includes REITs, and State Street's fund page shows real estate at 24.86% of the fund as of July 31, 2026. REIT distributions are generally not qualified dividends, so a large slice of SPYD's payout does not get the lower rate.\n\nThe funds quantify the drag themselves. For the 1-year period ended 12/31/24, JEPI reports 12.56% before taxes and 9.49% after taxes on distributions. SCHD reports 11.60% and 10.64% over the same period. Those after-tax figures assume the highest individual federal rates, so your gap will differ. Still, a roughly 3.1-point drag versus a roughly 1.0-point drag is a large difference on a $500,000 position.\n\nTwo retirement-specific wrinkles follow.\n\nFirst, moving a dividend fund into a traditional IRA does not remove the tax. It converts it. Withdrawals come out as ordinary income, and under IRS rules you generally must begin required minimum distributions at age 73. A dividend fund inside a traditional IRA does not reduce your RMD. Size that with our [RMD calculator](/retirement/rmd-calculator/).\n\nSecond, dividends paid in a taxable account count toward the income test that makes Social Security benefits taxable. The IRS adds one-half of your benefits to all your other income, including tax-exempt interest, and compares it to a base amount of $25,000 for single filers and $32,000 for joint filers. Distributions count whether you take them in cash or reinvest them.\n\nRoth IRAs sit at the other end. Under IRS rules, withdrawals are not required during the original owner's lifetime, which is why high-income-generating funds often land there.",
+      },
+      {
+        heading: "Concentration check: 80 holdings is not the market",
+        content:
+          "Fund names hide how narrow some of these are, and concentration is a live risk when the payout is your paycheck.\n\nThe spread is wide. DGRO holds 390 stocks as of July 31, 2026. SCHD holds about 100. NOBL's index targets a minimum of 40 names. SPYD's index is designed to measure 80 high dividend-yielding companies within the S&P 500, and State Street publishes 80 holdings.\n\nEighty out of roughly 500 is about one in six. A fund built that way is closer to a concentrated sector bet than to broad market exposure, which is one reason SPYD posted the deepest quarter on this page.\n\nEqual weighting helps in one direction and hurts in another. It stops a single mega-cap from dominating the payout. It also means small, stressed companies carry the same weight as strong ones.\n\nSector caps are worth checking too. NOBL's index limits any one sector to 30% of index weight. SPYD has no comparable cap, which is how real estate reached 24.86% of the fund.\n\nIf you want broad-market ballast to sit alongside these, see our [best index funds roundup](/roundup/best-index-funds/).",
+      },
+      {
+        heading: "Dividend income vs a total-return withdrawal plan",
+        content:
+          "A dividend-only strategy is not automatically safer than selling shares from a diversified portfolio. It only feels safer.\n\nWhen a fund pays a distribution, its net asset value drops by the amount paid. You are not getting money from nowhere. You are getting a forced partial sale on the fund's schedule instead of yours.\n\nA total-return approach holds a broad portfolio and sells whatever you need each year. It gives you control over which asset you sell and when, which is useful during a drawdown, and it lets you harvest losses in a taxable account.\n\nThe honest case for dividend funds in retirement is behavioral and logistical, not mathematical. Cash arriving on a schedule is easier to budget around and easier to stick with than a sell-to-spend plan.\n\nThe honest case against is concentration. Every fund on this page is a U.S. large-cap equity fund. Building an income plan out of them alone leaves out bonds and international stocks. See our [stocks vs bonds comparison](/compare/stocks-vs-bonds/) for the rest of the portfolio, and our [how to build a dividend portfolio guide](/guides/how-to-build-a-dividend-portfolio/) for construction rules.\n\nIf you are deciding between fund wrappers rather than strategies, our [index fund vs ETF comparison](/compare/index-fund-vs-etf/) covers the structural differences, and our [investing calculators](/investing/) can model the growth side of the plan.",
+      },
+      {
+        heading: "What we did not rank on, and why",
+        content:
+          "We did not rank on trailing yield, and we did not publish a yield number for any fund here.\n\nYields move with prices every day. A yield printed in a roundup is stale within a week, and a rising yield is frequently bad news rather than good news.\n\nThe number to look up instead is the 30-day SEC yield on the issuer's own fund page, which always carries an as-of date. That is a standardized calculation, so it compares across funds fairly.\n\nWe also did not rank on assets under management or past total return. Both are widely quoted and neither tells you whether a payout will hold up in the next downturn.\n\nExpense ratios are the exception, and they are the only figure here we treat as stable. They are set by the fund, published in the prospectus, and change rarely. Every fee on this page was read from the fund's SEC summary prospectus, with the filing date shown next to it.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best dividend ETFs for retirement income?",
+        answer:
+          "For retirement income, SCHD and VIG rank highest here because they pair a durability screen with the shallowest drawdowns. VIG had the mildest worst quarter of the seven funds at -16.79% in Q1 2020 and charges 0.04%. SCHD charges 0.06% and screens for cash-flow strength before yield. NOBL has the longest raise-streak requirement, a 25-year target, but 0.35% is a meaningful drag over a long retirement. If monthly timing matters more than drawdown, SPHD and JEPI are the two funds whose issuers commit to a monthly cadence.",
+      },
+      {
+        question: "Should retirees pick the dividend ETF with the highest yield?",
+        answer:
+          "No, and the drawdown data explains why. The funds on this list that screen hardest on yield fell the hardest in the Q1 2020 crash: SPYD -36.65% and SPHD -30.97%, versus VIG at -16.79%. A high trailing yield often means the price already fell. Because a retiree spends the distributions, the more useful question is whether the payout is durable, not whether it is large today. Look up the fund's current 30-day SEC yield with its as-of date rather than relying on any yield quoted in an article.",
+      },
+      {
+        question: "Which dividend ETFs pay monthly?",
+        answer:
+          "Among the funds here, SPHD and JEPI are the two with a monthly commitment. Invesco states that dividends from net investment income are generally declared and paid monthly by SPHD. JPMorgan states that JEPI is managed in a way that seeks to provide monthly distributions at a relatively stable level. The rest publish a quarterly frequency: SCHD, VIG, DGRO, NOBL, and SPYD. If your bills are monthly and your funds pay quarterly, hold one to two quarters of spending in cash rather than switching funds for timing alone.",
+      },
+      {
+        question: "Are dividend ETFs safer than selling shares in retirement?",
+        answer:
+          "Not inherently. When a fund pays a distribution, its net asset value falls by that amount, so a distribution is a scheduled partial sale rather than free income. A total-return plan that sells shares gives you more control over what you sell during a downturn and allows tax-loss harvesting in a taxable account. The real advantages of dividend funds in retirement are behavioral and logistical: predictable cash flow is easier to budget and easier to stick with. Both approaches still depend on the underlying portfolio being diversified.",
+      },
+      {
+        question: "Should dividend ETFs be held in an IRA or a taxable account?",
+        answer:
+          "It depends on where the income comes from. Broad U.S. dividend index funds generate mostly company dividend income, and qualified dividends are taxed at lower capital-gain rates, so they can work in a taxable account. Two funds here are exceptions. JEPI earns much of its income from option premium, and its prospectus describes distributions as taxed as ordinary income or capital gains. SPYD held 24.86% real estate as of July 31, 2026, and REIT distributions are generally not qualified. Both usually fit better in a tax-advantaged account. Note that a traditional IRA converts the tax rather than removing it, since withdrawals come out as ordinary income.",
+      },
+      {
+        question: "Do dividend payments affect required minimum distributions or Social Security taxes?",
+        answer:
+          "They affect Social Security taxation directly and RMDs not at all. Under IRS rules you must generally begin required minimum distributions from a traditional IRA at age 73, and the amount is based on your account balance and life expectancy, not on how much dividend income the account generated. In a taxable account, dividends do count toward the income test for Social Security. The IRS adds one-half of your benefits to all other income, including tax-exempt interest, and compares that to base amounts of $25,000 for single filers and $32,000 for joint filers. Distributions count even if you automatically reinvest them.",
+      },
+    ],
+    sources: [
+      {
+        label: "U.S. SEC EDGAR - Schwab U.S. Dividend Equity ETF (SCHD) summary prospectus, Feb. 27, 2026",
+        url: "https://www.sec.gov/Archives/edgar/data/1454889/000110465926020681/tm266454-15_497k.htm",
+      },
+      { label: "IRS - Topic no. 404, Dividends (ordinary vs qualified)", url: "https://www.irs.gov/taxtopics/tc404" },
+      { label: "IRS - Social Security income FAQs (base amounts)", url: "https://www.irs.gov/faqs/social-security-income" },
+    ],
+    relatedComparisons: ["stocks-vs-bonds", "index-fund-vs-etf", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [
+      { label: "Dividend Calculator", href: "/investing/dividend-calculator/" },
+      { label: "Retirement Income Calculator", href: "/retirement/retirement-income-calculator/" },
+      { label: "RMD Calculator", href: "/retirement/rmd-calculator/" },
+      { label: "Withdrawal Calculator", href: "/investing/withdrawal-calculator/" },
+    ],
+  },
+
+  {
+    slug: "best-monthly-dividend-etfs",
+    title: "Best Monthly Dividend ETFs: 9 Funds That Pay Monthly",
+    metaDescription:
+      "9 monthly dividend ETFs compared by expense ratio, from 0.03% to 0.60%, plus what a monthly payout schedule really changes and what it does not.",
+    targetKeyword: "best monthly dividend etfs",
+    category: "monthly dividend ETFs",
+    angle: "best",
+    h1: "Best Monthly Dividend ETFs of 2026",
+    intro:
+      "The best monthly dividend ETFs are funds that distribute income twelve times a year instead of four. That schedule is a cash-flow convenience. It does not make a fund pay more in total.\n\nWe screened for ETFs whose monthly schedule is confirmed on the issuer's own fund page, fact sheet, or SEC filing, then compared them on expense ratio and on what actually generates the cash. No fund company paid for placement.\n\nFor rankings that are not built around payout timing, see our [best dividend ETFs](/roundup/best-dividend-etfs/) roundup and our [best dividend ETFs for retirement](/roundup/best-dividend-etfs-for-retirement/) list.",
+    rankingCriteria:
+      "Every fund here had to clear one hard gate first: the issuer's own fund page, fact sheet, or SEC filing lists the distribution schedule as monthly. Funds we could not confirm as monthly payers were dropped, no matter how popular. Where an issuer's website would not render the data, we went to the fund's filings instead of guessing.\n\nAfter that gate, we grouped funds by what produces the cash - bond interest, preferred securities, common stock dividends, real estate distributions, or option premium - and ordered them by expense ratio inside each group. Expense ratio is the spine of this list because it is the one number that does not move with markets.\n\nWe also record the tax character of the payout and each fund's net assets, with the date the issuer published each figure. Yields are quoted only as 30-day SEC yields with their published as-of date, because yields change constantly. A fund's distribution rate is not part of the ranking, for reasons the page explains below.",
+    options: [
+      {
+        name: "Vanguard Total Bond Market ETF (BND)",
+        bestFor: "The cheapest way to turn a broad bond portfolio into monthly cash",
+        description:
+          "BND tracks the Bloomberg U.S. Aggregate Float Adjusted Index and holds 11,476 investment-grade U.S. bonds. Vanguard's fact sheet dated June 30, 2026 lists the dividend schedule as monthly and the expense ratio as 0.03%.\n\nMonthly payment is normal for bond funds. Bonds pay coupons on staggered dates all year, so a fund holding thousands of them collects interest continuously and can pass it along every month. Nothing exotic is involved.\n\nThis is the low-cost anchor of the category. At $159.8 billion in ETF net assets, it is also one of the largest bond ETFs in existence.",
+        strengths: [
+          "0.03% expense ratio - the lowest on this list by a wide margin",
+          "Monthly dividend schedule confirmed on Vanguard's own fact sheet",
+          "11,476 bonds across Treasuries, agency MBS, and investment-grade corporates",
+          "$159.8 billion in ETF net assets makes it easy to trade in size",
+        ],
+        limitations: [
+          "Bond prices fall when interest rates rise, and the fund's average duration is 5.8 years",
+          "Payouts are interest income, which is taxed at ordinary rates, not qualified dividend rates",
+          "Income level is modest compared with the option-income funds below",
+          "No equity upside - this is ballast, not growth",
+        ],
+        pricing:
+          "0.03% expense ratio, or about $0.30 a year per $1,000 invested. Dividend schedule listed as Monthly. ETF total net assets $159,816 million as of June 30, 2026.",
+      },
+      {
+        name: "SPDR Portfolio High Yield Bond ETF (SPHY)",
+        bestFor: "Higher monthly interest income from below-investment-grade corporate bonds",
+        description:
+          "SPHY holds high-yield corporate bonds, often called junk bonds, and distributes monthly. State Street lists a 0.05% gross expense ratio, which is unusually low for the asset class.\n\nThe income is larger than BND's because the borrowers are riskier. That is the whole trade. High-yield bonds default more often than investment-grade bonds, and they tend to fall alongside stocks during recessions rather than cushioning them.\n\nIt fits investors who already understand credit risk and want the interest paid out monthly rather than reinvested.",
+        strengths: [
+          "0.05% gross expense ratio - very cheap for high-yield exposure",
+          "Monthly distribution frequency listed on State Street's fund page",
+          "30-day SEC yield of 7.05% as of July 30, 2026",
+          "$11.63 billion in net assets as of July 31, 2026",
+        ],
+        limitations: [
+          "Credit risk is real - high-yield bonds can default and prices can drop sharply",
+          "Tends to fall with stocks in a downturn, so it is a poor diversifier",
+          "Interest income is taxed at ordinary rates",
+          "Yield moves with credit spreads and can compress quickly",
+        ],
+        pricing:
+          "0.05% gross expense ratio. 30-day SEC yield 7.05% as of July 30, 2026. Total net assets $11,631.93 million as of July 31, 2026.",
+      },
+      {
+        name: "Global X U.S. Preferred ETF (PFFD)",
+        bestFor: "Monthly income from preferred securities at a low fee",
+        description:
+          "PFFD holds U.S. preferred securities, which sit between bonds and common stock. Preferreds pay a fixed rate and rank ahead of common shares, but they have little upside and a long or perpetual life.\n\nGlobal X lists the distribution frequency as monthly, notes the fund has made monthly distributions 8 years running, and shows a total expense ratio of 0.23%. That is well below what preferred ETFs have historically charged.\n\nTax treatment varies security by security. Some preferred payments are qualified dividends; others, such as those from trust-preferred structures, are interest and are taxed at ordinary rates. Your Form 1099-DIV will show the split.",
+        strengths: [
+          "0.23% total expense ratio - inexpensive for preferred exposure",
+          "Monthly distributions for 8 consecutive years, per the issuer",
+          "30-day SEC yield of 6.56% as of July 31, 2026",
+          "Ranks ahead of common stock in a company's capital structure",
+        ],
+        limitations: [
+          "Very sensitive to interest rates because preferreds have long or perpetual maturities",
+          "Heavy concentration in banks and other financial issuers",
+          "Little capital appreciation potential - the price mostly tracks rates and credit",
+          "Only part of the payout may qualify for the lower dividend tax rate",
+        ],
+        pricing:
+          "0.23% total expense ratio. 30-day SEC yield 6.56% as of July 31, 2026. Net assets $2.16 billion as of July 31, 2026.",
+      },
+      {
+        name: "Invesco S&P 500 High Dividend Low Volatility ETF (SPHD)",
+        bestFor: "The lowest-cost way to get monthly income from large-cap stock dividends",
+        description:
+          "SPHD tracks the S&P 500 Low Volatility High Dividend Index. The index provider takes the 75 highest-yielding S&P 500 stocks over the trailing 12 months, caps any one sector at 10 names, then keeps the 50 with the lowest realized volatility, weighted by trailing dividend yield.\n\nThe monthly schedule is not on a marketing page. It is in the filings. Invesco's statement of additional information dated December 19, 2025 says dividends from net investment income, if any, are declared and paid monthly by this fund. The summary prospectus of the same date lists total annual fund operating expenses of 0.30%, made up entirely of the management fee.\n\nAt 0.30% it is the cheapest way on this list to get monthly income from ordinary large-cap stock dividends rather than from bonds or options.",
+        strengths: [
+          "0.30% total annual fund operating expenses, per the December 19, 2025 summary prospectus",
+          "Monthly payment confirmed directly in Invesco's SEC filing, not just marketing copy",
+          "Income comes from S&P 500 company dividends, so part of it can be qualified",
+          "A low-volatility screen on top of a high-yield screen filters out the most erratic names",
+        ],
+        limitations: [
+          "50 holdings only - far narrower than an S&P 500 index fund",
+          "High-yield screens have lagged: 18.03% versus 25.02% for the S&P 500 in 2024, and 8.22% versus 13.10% over the 10 years to December 31, 2024",
+          "Invesco does not publish net assets on a page we could load, so no figure is cited here",
+          "The prospectus states distributions are generally taxed as ordinary income, capital gains, or a combination",
+        ],
+        pricing:
+          "0.30% total annual fund operating expenses (management fee 0.30%, other expenses none), per the summary prospectus dated December 19, 2025. Net assets not disclosed in the filings cited.",
+      },
+      {
+        name: "Global X SuperDividend U.S. ETF (DIV)",
+        bestFor: "A deeper high-yield stock screen, if you accept the higher fee",
+        description:
+          "DIV tracks the Indxx SuperDividend U.S. Low Volatility Index and holds 50 of the highest dividend-yielding U.S. equities. Global X lists monthly distributions and a 0.45% total expense ratio.\n\nThis is one of two funds here whose income comes from ordinary company dividends rather than option premium or bond coupons. That matters for taxes, since qualified dividends can be taxed at long-term capital gains rates when the holding period rules in IRS Publication 550 are met.\n\nThe screen reaches further down the market than SPHD does. Top sector weights are Energy at 20.9% and Real Estate at 18.9%, so it is not a substitute for a broad market holding.",
+        strengths: [
+          "Income comes from stock dividends, so part of it can be qualified",
+          "Monthly distribution frequency stated on the Global X fund page",
+          "30-day SEC yield of 6.47% as of July 31, 2026",
+          "Low-volatility screen filters out the most erratic high-yield names",
+        ],
+        limitations: [
+          "0.45% expense ratio is 15 times BND's and half again SPHD's",
+          "Only 50 holdings, with heavy Energy and Real Estate concentration",
+          "$783.77 million in net assets - much smaller than the large funds here",
+          "High-yield stock screens can select companies under financial stress",
+        ],
+        pricing:
+          "0.45% total expense ratio. 30-day SEC yield 6.47% as of July 31, 2026. Net assets $783.77 million as of July 31, 2026.",
+      },
+      {
+        name: "Global X SuperDividend REIT ETF (SRET)",
+        bestFor: "Monthly real estate income, with the tax tradeoff that comes with it",
+        description:
+          "SRET holds real estate investment trusts from around the world and distributes monthly. Global X lists a 0.58% total expense ratio and a 30-day SEC yield of 8.23% as of July 31, 2026.\n\nREIT income is where the tax point on this page bites hardest. REITs deduct the dividends they pay, so their distributions generally do not qualify for the lower dividend tax rate. Vanguard says so plainly in its own fact sheet for VYM, noting that the index excludes REITs because they generally do not benefit from the favorable qualified dividend rates.\n\nREIT distributions also frequently include a return of capital, reported in Box 3 of Form 1099-DIV. That portion is not taxed now, but it reduces your cost basis and increases the gain when you sell.",
+        strengths: [
+          "Monthly distribution frequency stated on the Global X fund page",
+          "30-day SEC yield of 8.23% as of July 31, 2026",
+          "Global REIT exposure in a single ticker",
+          "Real estate income is a genuinely different return driver from stocks and bonds",
+        ],
+        limitations: [
+          "0.58% expense ratio is near the top of this list",
+          "$233.05 million in net assets - the smallest fund here",
+          "REIT distributions are largely ordinary income, not qualified dividends",
+          "Part of the payout can be return of capital, which lowers your cost basis",
+        ],
+        pricing:
+          "0.58% total expense ratio. 30-day SEC yield 8.23% as of July 31, 2026. Total net assets $233.05 million as of July 31, 2026.",
+      },
+      {
+        name: "JPMorgan Equity Premium Income ETF (JEPI)",
+        bestFor: "Large-cap equity exposure with an option-premium income stream on top",
+        description:
+          "JEPI holds a low-volatility portfolio of 129 U.S. large-cap stocks and generates extra income through equity-linked notes that pass through S&P 500 option premium. J.P. Morgan's fact sheet dated June 30, 2026 describes the goal as a monthly income stream from option premiums and stock dividends.\n\nThe fund reported a 0.350% net expense ratio, a 30-day SEC yield of 8.20%, and a 12-month rolling dividend yield of 8.06%, all as of June 30, 2026. Fund investments totaled $44.75 billion.\n\nThe structural cost is upside. Writing calls caps how much the portfolio can gain in a strong rally. JEPI's one-year return at NAV was 7.77% against 22.32% for the S&P 500 through June 30, 2026, which is exactly the shape you would expect from a covered-call strategy in a rising market.",
+        strengths: [
+          "Monthly income objective stated directly on the issuer's fact sheet",
+          "30-day SEC yield of 8.20% as of June 30, 2026",
+          "$44.75 billion in fund investments - deep liquidity",
+          "One-year standard deviation of 7.61% versus 13.09% for the S&P 500",
+        ],
+        limitations: [
+          "0.35% expense ratio is more than 10 times BND's",
+          "Option-writing caps upside - it trailed the S&P 500 badly over the year to June 30, 2026",
+          "Equity-linked notes add counterparty risk to a stock portfolio",
+          "Option-premium income is generally taxed at ordinary rates, not qualified dividend rates",
+        ],
+        pricing:
+          "0.350% net expense ratio (gross 0.350%). 30-day SEC yield 8.20% as of June 30, 2026. Fund investments $44.75 billion as of June 30, 2026.",
+      },
+      {
+        name: "JPMorgan Nasdaq Equity Premium Income ETF (JEPQ)",
+        bestFor: "The same option-income approach applied to Nasdaq-100 stocks",
+        description:
+          "JEPQ runs JEPI's strategy against the Nasdaq-100 instead of the broad large-cap market. The June 30, 2026 fact sheet lists a 0.350% net expense ratio, a 30-day SEC yield of 12.87%, a 12-month rolling dividend yield of 10.69%, and $40.66 billion in fund investments.\n\nThe higher payout is not a free upgrade over JEPI. Option premium rises with volatility, and Nasdaq-100 options are more expensive precisely because that index swings harder. You are being paid more because you are selling away more.\n\nThe same tradeoff applies. JEPQ returned 25.75% at NAV over the year to June 30, 2026 against 34.38% for the Nasdaq-100.",
+        strengths: [
+          "Monthly income objective stated on the issuer's fact sheet",
+          "30-day SEC yield of 12.87% as of June 30, 2026 - the highest here",
+          "$40.66 billion in fund investments",
+          "Same 0.350% net expense ratio as JEPI despite the higher payout",
+        ],
+        limitations: [
+          "Concentrated in a single, tech-heavy index",
+          "Higher payout reflects higher volatility, not a better deal",
+          "Capped upside - it trailed the Nasdaq-100 over the year to June 30, 2026",
+          "Option-premium income is generally taxed at ordinary rates",
+        ],
+        pricing:
+          "0.350% net expense ratio (gross 0.350%). 30-day SEC yield 12.87% as of June 30, 2026. Fund investments $40.66 billion as of June 30, 2026.",
+      },
+      {
+        name: "Global X Nasdaq 100 Covered Call ETF (QYLD)",
+        bestFor: "Understanding the gap between a distribution rate and an actual yield",
+        description:
+          "QYLD holds the Nasdaq-100 and writes call options on the whole index. Global X lists monthly distributions, a 0.60% total expense ratio, and $8.09 billion in net assets as of July 31, 2026, and notes the fund has made monthly distributions 12 years running.\n\nHere is the number that teaches the most on this page. QYLD's trailing 12-month distribution rate was 12.57%, while its 30-day SEC yield was 0.02% as of July 31, 2026. Both figures come from Global X.\n\nThey are not contradictory. The 30-day SEC yield measures net investment income - dividends and interest - over a 30-day window. Option premium is not investment income under that formula, so a fund that writes index options directly can show a near-zero SEC yield while still distributing double-digit cash.",
+        strengths: [
+          "Monthly distributions for 12 consecutive years, per the issuer",
+          "$8.09 billion in net assets as of July 31, 2026",
+          "Simple, transparent, fully systematic strategy",
+          "Useful as a plain example of how option premium converts to cash flow",
+        ],
+        limitations: [
+          "0.60% expense ratio - the highest on this list",
+          "Writing calls on the entire index caps upside in every rally",
+          "30-day SEC yield of 0.02% as of July 31, 2026 shows the payout is not investment income",
+          "Distributions are largely ordinary income and can include return of capital",
+        ],
+        pricing:
+          "0.60% total expense ratio. 30-day SEC yield 0.02% as of July 31, 2026. Trailing 12-month distribution rate 12.57%. Net assets $8.09 billion as of July 31, 2026.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Payout Schedule", "Expense Ratio", "What Generates the Cash", "Net Assets (as of)", "Tax Character of Payout"],
+      rows: [
+        {
+          name: "BND (Vanguard)",
+          values: ["Monthly", "0.03%", "Investment-grade bond interest", "$159.8B (6/30/26)", "Ordinary interest income"],
+        },
+        {
+          name: "SPHY (SPDR)",
+          values: ["Monthly", "0.05%", "High-yield corporate bond interest", "$11.63B (7/31/26)", "Ordinary interest income"],
+        },
+        {
+          name: "PFFD (Global X)",
+          values: ["Monthly", "0.23%", "U.S. preferred securities", "$2.16B (7/31/26)", "Varies by security - part qualified"],
+        },
+        {
+          name: "SPHD (Invesco)",
+          values: ["Monthly", "0.30%", "50 high-yield S&P 500 stocks", "Not in cited SEC filings", "Can be qualified if held long enough"],
+        },
+        {
+          name: "DIV (Global X)",
+          values: ["Monthly", "0.45%", "50 high-yield U.S. common stocks", "$783.77M (7/31/26)", "Can be qualified if held long enough"],
+        },
+        {
+          name: "SRET (Global X)",
+          values: ["Monthly", "0.58%", "Global REIT distributions", "$233.05M (7/31/26)", "Largely ordinary; can include return of capital"],
+        },
+        {
+          name: "JEPI (JPMorgan)",
+          values: ["Monthly", "0.35%", "Stock dividends plus ELN option premium", "$44.75B (6/30/26)", "Premium portion taxed as ordinary income"],
+        },
+        {
+          name: "JEPQ (JPMorgan)",
+          values: ["Monthly", "0.35%", "Nasdaq-100 stocks plus ELN option premium", "$40.66B (6/30/26)", "Premium portion taxed as ordinary income"],
+        },
+        {
+          name: "QYLD (Global X)",
+          values: ["Monthly", "0.60%", "Nasdaq-100 index call premium", "$8.09B (7/31/26)", "Largely ordinary; can include return of capital"],
+        },
+      ],
+    },
+    verdict:
+      "If the only thing you want is monthly cash from a cheap, boring source, BND at 0.03% and SPHY at 0.05% do that job for a fraction of what the equity-income funds charge. Monthly payment is simply how bond funds work.\n\nIf you want monthly income tied to stocks, the honest choice is between dividend-driven funds and option-driven funds. SPHD at 0.30% is the cheapest monthly payer here that draws its income from ordinary S&P 500 company dividends, and DIV at 0.45% reaches further down the yield ladder for a higher fee. The option funds - JEPI, JEPQ, and QYLD - pay more today and give up upside in rallies. The June 30, 2026 numbers show that plainly: JEPI returned 7.77% over one year at NAV while the S&P 500 returned 22.32%.\n\nPFFD and SRET are narrow, single-sleeve holdings. They can add income, but neither belongs at the center of a portfolio.\n\nThe decision that matters most is not which of these you pick. It is whether you need monthly timing at all. If you are still working and reinvesting, quarterly payers charging 0.04% - like the funds in our [best dividend ETFs](/roundup/best-dividend-etfs/) roundup - leave more money invested and produce a similar total. Monthly matters when a real bill arrives every month.",
+    sections: [
+      {
+        heading: "Why some ETFs pay monthly and most pay quarterly",
+        content:
+          "An ETF pays monthly when its underlying holdings produce income continuously and the fund chooses to pass it along on a monthly schedule. Bond funds are the classic case. A portfolio of thousands of bonds collects coupon payments on staggered dates all year, so monthly distribution is the natural rhythm.\n\nMost stock ETFs pay quarterly because most U.S. companies declare dividends quarterly. Vanguard's own fact sheets show the split: the Total Bond Market ETF (BND) lists a monthly dividend schedule, while the High Dividend Yield ETF (VYM) lists a quarterly one. A stock fund that pays monthly, like SPHD, is smoothing quarterly dividends into twelve payments rather than receiving them that way.\n\nThe third group is newer. Option-income funds write calls every month, collect the premium, and distribute it monthly. That is a fund design choice, not a property of the stocks they hold.\n\nIf you are not sure whether you want an ETF or a mutual fund wrapper for any of this, our [ETF vs. mutual fund comparison](/compare/etf-vs-mutual-fund/) covers the structural differences.",
+      },
+      {
+        heading: "Monthly payouts change timing, not total income",
+        content:
+          "A fund cannot create income by paying more often. Its annual distribution comes from what its holdings earn - coupons, dividends, and option premium - and splitting that same amount into twelve checks instead of four does not increase it.\n\nThis matters because monthly payers frequently charge more. QYLD charges 0.60% and DIV charges 0.45%, while BND charges 0.03% and VYM, a quarterly payer, charges 0.04%. On a $100,000 position, the gap between 0.04% and 0.60% is $560 a year, every year, deducted from your return regardless of how the payout is scheduled.\n\nThere is one small honest caveat. If you reinvest, monthly cash starts compounding a few weeks sooner than quarterly cash. The effect exists but it is tiny, and a fee difference of half a percentage point swamps it.\n\nThe real case for monthly is behavioral and practical: your rent, groceries, and utilities arrive monthly. Matching that rhythm can mean less cash sitting idle between quarterly payments. You can model either schedule with our [dividend calculator](/investing/dividend-calculator/).",
+      },
+      {
+        heading: "The tax tradeoff behind most monthly payers",
+        content:
+          "Most of the funds on this list distribute income that is taxed at ordinary income rates rather than the lower qualified dividend rates. IRS Publication 550 sets out the difference: qualified dividends can be taxed at the long-term capital gains rate, but only if the payment meets the definition and you meet the holding period rules.\n\nThree categories on this page generally miss that bar. Bond interest is ordinary income. REIT distributions largely do not qualify - Vanguard states in its VYM fact sheet that the index excludes REITs because they generally do not benefit from the favorable qualified dividend rates. And option premium is not a dividend at all, so the portion of a covered-call fund's payout that comes from writing calls is generally taxed as ordinary income.\n\nEven a plain dividend fund gives up something to taxes. SPHD's own prospectus reports 10-year average annual returns to December 31, 2024 of 8.22% before taxes and 7.10% after taxes on distributions, measured at the highest individual federal marginal rates.\n\nThere is a second wrinkle. Part of a distribution can be a return of capital, reported in Box 3 of Form 1099-DIV as a nondividend distribution. Publication 550 explains that this is a return of your own investment. It is not taxed in the year you receive it, but it lowers your cost basis, which raises your taxable gain when you sell.\n\nNone of this makes these funds unsuitable. It does mean the tax-adjusted income can be meaningfully lower than the headline number, especially in a taxable brokerage account. Holding them inside an IRA sidesteps the issue entirely. This is general information, not tax advice - a CPA can tell you how it applies to your bracket.",
+      },
+      {
+        heading: "Distribution rate is not the same as yield",
+        content:
+          "A distribution rate tells you how much cash a fund paid out. A 30-day SEC yield tells you how much net investment income it actually earned. They can differ enormously, and the gap is where monthly-income shopping goes wrong.\n\nQYLD is the clearest example. As of July 31, 2026, Global X reported a trailing 12-month distribution rate of 12.57% and a 30-day SEC yield of 0.02%. The 30-day SEC yield formula counts dividends and interest over a 30-day window; option premium is not investment income under that formula, so a fund writing index calls directly can show almost no SEC yield while paying out double digits.\n\nNot every option-income fund looks like this. JEPI reported a 30-day SEC yield of 8.20% and a 12-month rolling dividend yield of 8.06% as of June 30, 2026, because its premium arrives through equity-linked notes whose payments do count as investment income. Structure changes the number.\n\nThe practical rule: compare 30-day SEC yields to each other, compare distribution rates to each other, and never compare one against the other. And check the as-of date on both, since either can change within weeks.",
+      },
+      {
+        heading: "Who monthly dividend ETFs actually fit",
+        content:
+          "Monthly dividend ETFs fit people who spend the income. If distributions cover real monthly expenses, a monthly schedule reduces the cash you have to hold in reserve between payments and makes budgeting simpler.\n\nThey fit less well for investors still accumulating. If you reinvest everything, payout frequency is close to irrelevant, and the higher fees on many monthly payers are a permanent drag. A 0.03% to 0.05% broad fund usually wins that comparison. See our [best index funds](/roundup/best-index-funds/) list for the low-cost end of the market.\n\nThey also fit poorly as a total-portfolio solution. Covered-call funds cap upside, REIT funds concentrate in one sector, preferred funds are highly rate-sensitive, and the high-yield stock screens behind SPHD and DIV hold only 50 names each. Each is a sleeve, not a portfolio. Our [guide to building a dividend portfolio](/guides/how-to-build-a-dividend-portfolio/) covers how to size these positions, and our [best dividend ETFs for retirement](/roundup/best-dividend-etfs-for-retirement/) roundup looks at the same question from a withdrawal-planning angle.\n\nIf you are deciding how much of your portfolio should sit in income assets at all, our [stocks vs. bonds comparison](/compare/stocks-vs-bonds/) and our [withdrawal calculator](/investing/withdrawal-calculator/) are the better starting points.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best monthly dividend ETFs?",
+        answer:
+          "The best monthly dividend ETFs depend on what you want the income to come from. For the lowest cost, BND (0.03%) and SPHY (0.05%) pay monthly interest from bonds. For preferred securities, PFFD charges 0.23%. For stock dividends, SPHD charges 0.30% and DIV charges 0.45%. For real estate, SRET charges 0.58%. For option-premium income, JEPI and JEPQ charge 0.35% and QYLD charges 0.60%. All nine confirm a monthly distribution schedule in the issuer's own fund page, fact sheet, or SEC filing.",
+      },
+      {
+        question: "Do monthly dividend ETFs pay more than quarterly ones?",
+        answer:
+          "No. Payout frequency changes timing, not total income. A fund's annual distribution comes from what its holdings earn, and splitting that into twelve payments instead of four does not increase the amount. Reinvesting monthly compounds slightly sooner than reinvesting quarterly, but the effect is very small compared with the fee difference between a 0.04% quarterly payer and a 0.60% monthly one.",
+      },
+      {
+        question: "How are monthly dividend ETF distributions taxed?",
+        answer:
+          "Most of them are taxed at ordinary income rates. Bond interest is ordinary income, REIT distributions largely do not qualify for the lower dividend rate, and option premium is not a dividend at all. IRS Publication 550 explains which dividends qualify for long-term capital gains rates and which do not. Part of a distribution can also be a return of capital, reported in Box 3 of Form 1099-DIV, which lowers your cost basis instead of being taxed right away.",
+      },
+      {
+        question: "Why does QYLD show a 30-day SEC yield near zero?",
+        answer:
+          "Because the 30-day SEC yield only counts net investment income - dividends and interest - and option premium is not investment income under that formula. Global X reported a 0.02% 30-day SEC yield and a 12.57% trailing 12-month distribution rate for QYLD as of July 31, 2026. Both are accurate. They measure different things, which is why you should never compare a distribution rate against a SEC yield.",
+      },
+      {
+        question: "Are covered-call ETFs safer than owning stocks?",
+        answer:
+          "They are usually less volatile, but they are not low risk. JEPI reported a one-year standard deviation of 7.61% versus 13.09% for the S&P 500 as of June 30, 2026, so the ride is smoother. The cost is upside: over that same year JEPI returned 7.77% at NAV while the S&P 500 returned 22.32%. Covered-call funds still fall in a bear market, because you own the stocks underneath.",
+      },
+      {
+        question: "Should I hold monthly dividend ETFs in an IRA or a taxable account?",
+        answer:
+          "It depends on your situation, but the tax character is the deciding factor for most people. Funds whose payouts are mostly ordinary income - bond funds, REIT funds, and covered-call funds - lose more to taxes in a brokerage account than funds paying qualified dividends. Holding them in an IRA or 401(k) defers that. A tax professional can tell you what fits your bracket. See our [brokerage vs. IRA comparison](/compare/brokerage-vs-ira/) for how the two account types differ.",
+      },
+    ],
+    sources: [
+      {
+        label: "IRS Publication 550 - Investment Income and Expenses (qualified dividends, nondividend distributions)",
+        url: "https://www.irs.gov/publications/p550",
+      },
+      {
+        label: "J.P. Morgan Asset Management - JEPI Fact Sheet, June 30, 2026",
+        url: "https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/literature/fact-sheet/etfs/FS-JEPI.pdf",
+      },
+      {
+        label: "SEC EDGAR - Invesco Exchange-Traded Fund Trust II, Statement of Additional Information dated December 19, 2025 (SPHD monthly distributions)",
+        url: "https://www.sec.gov/Archives/edgar/data/1378872/000119312525328361/d54028d497.htm",
+      },
+    ],
+    relatedComparisons: ["etf-vs-mutual-fund", "index-fund-vs-etf", "stocks-vs-bonds"],
+    calculatorLinks: [
+      { label: "Dividend Calculator", href: "/investing/dividend-calculator/" },
+      { label: "Investment Growth Calculator", href: "/investing/" },
+      { label: "Withdrawal Calculator", href: "/investing/withdrawal-calculator/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
