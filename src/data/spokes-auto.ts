@@ -301,6 +301,11 @@ export const AUTO_SPOKES: SpokeEntry[] = [
         answer:
           "Put more money down, choose the shortest term you can afford, and shop multiple lenders for a lower APR. You can also pay the loan off faster. Try our [extra payment calculator](/auto-loan/extra-payment-calculator/) or [early payoff calculator](/auto-loan/early-payoff-calculator/) to see the savings.",
       },
+      {
+        question: "Does this calculator include sales tax, fees, or trade-in value?",
+        answer:
+          "Enter your vehicle price net of any trade-in credit, since sales tax and fees vary too much by state and dealer to build into a single number. To see the true amount you're financing, add your state's sales tax to the price and subtract your trade-in's value before entering it as the vehicle price, then enter your actual cash down payment separately.",
+      },
     ],
     sources: [
       { label: "CFPB — What is the difference between a loan interest rate and the APR?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/" },
@@ -343,6 +348,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       { question: "Does the financed price include all the costs of owning a car?", answer: "No. The car price you can finance is only part of the picture. The CFPB notes that taxes, registration, insurance, fuel, and maintenance add to your true cost of ownership. Budget for these on top of your loan payment so the car stays affordable." },
       { question: "Does a longer loan term let me afford more car?", answer: "Yes, but it costs you. A longer term lowers the monthly payment, so you can finance a pricier car for the same budget. However, you pay far more interest over time, and the CFPB warns that long loans raise the risk of owing more than the car is worth. Compare terms with our [auto loan calculator](/auto-loan/)." },
       { question: "How big a down payment should I make?", answer: "A larger down payment lowers your loan amount, your monthly payment, and your total interest. The CFPB lists a down payment and a trade-in as factors that reduce how much you need to borrow. The 20/4/10 rule of thumb suggests aiming for about 20% down." },
+      { question: "How long should a car loan be? Is 72 or 84 months too long?", answer: "The 20/4/10 rule points to 48 months (4 years) or less. A 72- or 84-month loan isn't automatically a mistake, but the CFPB warns that longer terms raise the odds of owing more than the car is worth (negative equity) for years, since the car depreciates faster than an 84-month loan pays it down. If a longer term is the only way to fit a car into your budget, that's usually a sign to look at a less expensive car instead of a longer loan." },
     ],
     sources: [
       { label: "CFPB — How much can I afford to borrow for a car or auto loan?", url: "https://www.consumerfinance.gov/ask-cfpb/how-much-can-i-afford-to-borrow-for-a-car-or-auto-loan-en-751/" },

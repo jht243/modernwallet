@@ -35,6 +35,8 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
       { question: "Should I use my home's purchase price or current value?", answer: "Use the current market value. Net worth measures today's reality, so check a recent appraisal or a Zillow-style estimate. Then subtract the remaining balance on your mortgage, not the original loan amount." },
       { question: "What if my net worth is negative?", answer: "A negative net worth means you owe more than you own. It's common early in life — student loans and a new mortgage often outweigh starter savings. Focus on paying down high-interest debt and building emergency cash to turn the number positive." },
       { question: "How often should I calculate my net worth?", answer: "Once a quarter is plenty for most people. Checking too often invites noise from market swings. A quarterly snapshot shows real trends without the daily distraction." },
+      { question: "Does net worth include my mortgage or real estate?", answer: "Yes, both — the calculator above has a dedicated real estate field for your home's current market value and a mortgage field for what you still owe. Enter both and it nets them into your equity automatically, the same way it nets any other asset against its matching debt." },
+      { question: "Does net worth include a pension?", answer: "Usually not the same way as a 401(k) or IRA. A traditional pension (a defined-benefit plan) pays a future income stream rather than holding a lump-sum balance you could withdraw today, so the Federal Reserve's Survey of Consumer Finances generally excludes it from net worth. If your pension has a stated cash-out or lump-sum value, you can add that figure under investments; otherwise, track it separately as future income, not as a net worth asset." },
     ],
     sources: [
       { label: "Federal Reserve — Survey of Consumer Finances", url: "https://www.federalreserve.gov/econres/scfindex.htm" },
@@ -342,6 +344,11 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
         question: "Where can I see how my current net worth compares to peers?",
         answer:
           "Use the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/) for SCF median benchmarks by age group, or the [net worth percentile calculator](/net-worth/net-worth-percentile-calculator/) to see your rank among all U.S. households. Both use Federal Reserve 2022 Survey of Consumer Finances data.",
+      },
+      {
+        question: "How does this projection relate to FIRE or Coast FIRE?",
+        answer:
+          "A net worth projection and a FIRE (Financial Independence, Retire Early) target are the same math from different angles: FIRE asks what net worth you need before your investments alone can cover your spending, while this calculator projects what your net worth will actually be at a given savings rate and return. Coast FIRE narrows that further to whether your current balance alone, with zero more contributions, will grow to your retirement number by compounding. Use our [Coast FIRE calculator](/coast-fire/) to check that specific milestone against today's balance.",
       },
     ],
     sources: [

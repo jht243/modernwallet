@@ -73,7 +73,7 @@ export const GUIDES: Guide[] = [
     intro:
       "Learning how to buy a car starts with one idea: the sticker price is not the real price. This car buying guide walks you through each step, from setting a budget to signing the loan. You will learn what a car truly costs and how to avoid the most common traps. Run the numbers yourself at every stage with the free tools linked below.",
     sections: [
-      { heading: "Step 1: Set a realistic budget before you shop", body: "Your car budget should cover far more than the monthly payment. A common rule is 20/4/10: put 20% down, finance for no more than four years, and keep total car costs under 10% of your income. The CFPB warns that the true cost of ownership also includes insurance, registration, gas, maintenance, and repairs.\n\nFigure out a safe price range before you fall in love with a car. Use our [car affordability calculator](/auto-loan/car-affordability-calculator/) to see what you can comfortably spend. Knowing your ceiling keeps you from stretching the loan to fit the car." },
+      { heading: "Step 1: Set a realistic budget before you shop", body: "Your car budget should cover far more than the monthly payment. A common rule is 20/4/10: put 20% down, finance for no more than four years, and keep total car costs under 10% of your income. The CFPB warns that the true cost of ownership also includes insurance, registration, gas, maintenance, and repairs.\n\nFigure out a safe price range before you fall in love with a car. Use our [car affordability calculator](/auto-loan/car-affordability-calculator/) to see what you can comfortably spend. Knowing your ceiling keeps you from stretching the loan to fit the car. Already leasing and thinking about keeping the car instead? The buying math is different — see our [auto lease buyout calculator guide](/guides/auto-lease-buyout-calculator/) for what you'd actually pay." },
       { heading: "Step 2: Get preapproved and understand the loan", body: "Getting preapproved before you visit a dealer puts you in control. A preapproval is a loan offer from a bank or credit union that lists your rate, term, and maximum amount. The CFPB recommends getting preapproved so you can shop around and compare it against any dealer financing.\n\nFour things shape every car loan: the price, your down payment, the interest rate, and the loan term. Change any one and the payment moves. Test different combinations with our [auto loan calculator](/auto-loan/) so you know your numbers before you negotiate." },
       { heading: "Step 3: Know what the interest really costs", body: "Interest is the price you pay to borrow, and it adds up quietly over the years. The CFPB advises comparing the APR and total amount financed, not just the monthly payment. A lower payment often hides a higher total cost.\n\nSee exactly how much interest you would pay over the life of a loan with our [auto loan interest calculator](/auto-loan/interest-calculator/). When you can see the full interest cost, a slightly higher payment on a shorter loan often looks like the better deal." },
       { heading: "Step 4: Plan to pay it off faster and save", body: "Paying extra each month shrinks both your loan and your total interest. Because interest is charged on the balance you still owe, lowering that balance sooner saves real money. Even small extra payments can shorten the loan by months.\n\nBefore you sign, model a faster payoff with our [auto loan payoff calculator](/auto-loan/payoff-calculator/). It shows how added payments cut your interest and free you from the loan early. Confirm there is no prepayment penalty in your contract first." },
@@ -4415,6 +4415,157 @@ export const GUIDES: Guide[] = [
     { label: "HealthCare.gov — Health Coverage for Self-Employed People", url: "https://www.healthcare.gov/self-employed/" }
   ]
 },
+
+  {
+    slug: "heloc-calculator-explained",
+    title: "HELOC Calculator: How Much You Can Borrow",
+    metaDescription:
+      "See how much you can borrow with a HELOC, what draw-period vs. repayment-period payments cost, and a worked example using CFPB borrowing rules.",
+    h1: "HELOC Calculator: How Much You Can Borrow and What It Costs",
+    cardBlurb: "Combined loan-to-value limits, draw-period vs. repayment-period payments, and the payment jump most borrowers don't see coming.",
+    intro:
+      "A home equity line of credit (HELOC) calculation starts with two separate questions: how much you can borrow, and what the payment actually costs once you draw on it. Lenders answer the first question with a combined loan-to-value (CLTV) formula. The second question has two different answers depending on whether you are in the draw period or the repayment period, and that difference catches a lot of borrowers off guard. This guide walks through both with real numbers, using our [mortgage](/mortgage/) and [net worth](/net-worth/) calculators to model the rest of your picture.",
+    sections: [
+      {
+        heading: "How much you can borrow: the combined loan-to-value formula",
+        body: "Most lenders cap your combined loan-to-value (CLTV) — your first mortgage plus the new HELOC — at 80% to 85% of your home's appraised value, according to the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/). To find your available credit limit, multiply your home's value by the lender's CLTV cap, then subtract your current mortgage balance.\n\nSay your home appraises at $500,000 and you owe $250,000 on your first mortgage. At an 80% CLTV cap, your maximum combined debt is $500,000 × 0.80 = $400,000. Subtract the $250,000 you already owe, and your available HELOC credit limit is $150,000. A lender may approve less based on your income, credit score, and debt-to-income ratio, but $150,000 is the equity-based ceiling.",
+      },
+      {
+        heading: "Draw-period payments are interest-only — and lower than they look",
+        body: "During the draw period, typically 10 years, most HELOCs require interest-only payments on whatever balance you have drawn, at a variable rate tied to the prime rate. You are not required to pay down principal, so the payment can look deceptively small next to the credit line you were approved for.\n\nSuppose you draw $50,000 of your $150,000 line at an 8.5% variable rate. Your monthly interest-only payment is $50,000 × 8.5% ÷ 12 = $354.17. That payment moves with the prime rate every time it changes, but it never includes principal as long as you're in the draw period.",
+      },
+      {
+        heading: "The repayment-period payment jump most borrowers don't see coming",
+        body: "When the draw period ends, the HELOC converts to a fully amortizing loan over the repayment period, often 10 to 20 years. Your payment now includes both principal and interest, even if your rate hasn't changed at all — and that alone can push the payment up sharply.\n\nTake that same $50,000 balance into a 20-year repayment period at the same 8.5% rate. The fully amortizing payment is $433.91 a month — a jump of $79.74, or about 22.5%, with no rate increase at all. If rates rose during your draw period too, the jump is larger. Budget for the repayment-period payment before you draw, not after the draw period ends.",
+      },
+      {
+        heading: "HELOC vs. home equity loan vs. cash-out refinance",
+        body: "A HELOC is a revolving, variable-rate line you draw against as needed, similar to a credit card secured by your home. A home equity loan is the opposite: a fixed lump sum at a fixed rate, repaid on a set schedule from day one. A cash-out refinance replaces your entire first mortgage with a larger one and hands you the difference in cash, per the CFPB's [comparison of home equity loans and HELOCs](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/).\n\n| | HELOC | Home equity loan | Cash-out refinance |\n|---|---|---|---|\n| Payout | Draw as needed | Lump sum | Lump sum |\n| Rate | Variable | Fixed | Fixed (usually) |\n| Payment | Interest-only, then amortizing | Fixed from day one | Fixed, replaces old mortgage |\n| Best for | Ongoing/uncertain costs (renovation phases) | One-time known cost | Large one-time cost + rate improvement |\n\nSee our full breakdowns of [HELOC vs. personal loan](/compare/heloc-vs-personal-loan/) and [cash-out refinance vs. HELOC](/compare/cash-out-refinance-vs-heloc/) for the side-by-side numbers.",
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: "Borrowing against the full approved line instead of what you actually need. Every drawn dollar accrues interest immediately and raises your future repayment-period payment.\n\nAssuming the interest is automatically tax-deductible. Under [IRS Publication 936](https://www.irs.gov/forms-pubs/about-publication-936), HELOC interest is deductible only when the funds are used to buy, build, or substantially improve the home securing the loan — not for tuition, credit card payoff, or everyday spending.\n\nIgnoring the variable-rate risk. A HELOC's rate can rise well before the draw period ends, so your interest-only payment isn't fixed even before you reach the repayment-period jump.",
+      },
+    ],
+    tools: [
+      { href: "/mortgage/", label: "Mortgage" },
+      { href: "/mortgage/refinance-calculator/", label: "Mortgage refinance" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "What is a HELOC?", answer: "A HELOC (home equity line of credit) is a revolving line of credit secured by your home, similar to a credit card. You draw against it as needed up to your approved limit, and you pay interest only on the amount you've actually drawn, according to the CFPB." },
+      { question: "How much HELOC can I get?", answer: "Most lenders cap your combined loan-to-value at 80% to 85% of your home's value. Multiply your home's value by that percentage, then subtract your current mortgage balance to estimate your available credit limit. Your income, credit score, and debt-to-income ratio can lower that further." },
+      { question: "Why did my HELOC payment go up if my rate didn't change?", answer: "When your draw period ends, your HELOC switches from interest-only payments to a fully amortizing payment that includes principal. On a $50,000 balance at 8.5% over 20 years, that switch alone raises the payment from $354.17 to $433.91 a month, even with no rate change." },
+      { question: "Is HELOC interest tax deductible?", answer: "Only if the funds were used to buy, build, or substantially improve the home securing the loan, per IRS Publication 936. Interest on a HELOC used for tuition, debt consolidation, or everyday expenses is not deductible as home mortgage interest." },
+      { question: "What's the difference between a HELOC and a home equity loan?", answer: "A HELOC is a variable-rate line of credit you draw from as needed. A home equity loan is a fixed lump sum at a fixed rate with a set repayment schedule from the start. The CFPB recommends comparing both against your actual cash-flow need before choosing." },
+    ],
+    sources: [
+      { label: "CFPB — What is a home equity line of credit (HELOC)?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/" },
+      { label: "CFPB — Home equity loan vs. HELOC", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-home-equity-loan-and-a-home-equity-line-of-credit-heloc-en-247/" },
+      { label: "IRS — About Publication 936, Home Mortgage Interest Deduction", url: "https://www.irs.gov/forms-pubs/about-publication-936" },
+    ],
+  },
+
+  {
+    slug: "commercial-mortgage-calculator-explained",
+    title: "Commercial Mortgage Calculator: Payment & Balloon",
+    metaDescription:
+      "Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.",
+    h1: "Commercial Mortgage Calculator: Payment, DSCR, and the Balloon Due at Term End",
+    cardBlurb: "DSCR qualification, amortization vs. term length, and the balloon payment residential mortgage calculators don't model.",
+    intro:
+      "A commercial mortgage calculation looks similar to a home loan at first glance — principal, rate, and term — but two things make it fundamentally different. Lenders qualify you on debt service coverage ratio (DSCR), not your personal debt-to-income ratio, and the loan's amortization schedule often runs longer than the term itself, leaving a balloon payment due at maturity. This guide walks through both with real numbers.",
+    sections: [
+      {
+        heading: "Why a commercial mortgage payment isn't calculated like a home loan",
+        body: "A residential mortgage qualifies you on personal income and a debt-to-income ratio. A commercial mortgage instead qualifies the property (or the business) on debt service coverage ratio: the income the property or business generates, divided by the annual loan payment. Lenders care whether the asset can pay for itself, not primarily whether your paycheck can.\n\nThis also means the loan terms differ. Commercial mortgages commonly carry a 20- to 25-year amortization schedule but only a 5- to 10-year loan term, so the loan is not fully paid off when the term ends.",
+      },
+      {
+        heading: "The payment: amortization can run longer than the loan term",
+        body: "Your monthly principal-and-interest payment is calculated over the full amortization period, even though you'll owe a payoff before that period is finished. Take a $600,000 loan at 7.25% amortized over 20 years (240 months). The monthly payment is $4,742.26.\n\nThat payment is calculated as if the loan runs the full 20 years. But if the loan's term is only 10 years, you are not done paying at month 240 — you're due for a full payoff, or a refinance, at month 120.",
+      },
+      {
+        heading: "The balloon payment due at year 10",
+        body: "A balloon payment is the remaining loan balance still owed when the term ends, even though the amortization schedule assumed a longer payoff. Continuing the example above — a $600,000 loan at 7.25%, 20-year amortization, 10-year term — the balance remaining after 120 payments of $4,742.26 is $403,936.\n\nThat $403,936 is due in full at month 120. Borrowers typically refinance into a new commercial mortgage or sell the property before that date; failing to arrange either one means default. Build the balloon date into your planning calendar the day you close, not the year before it's due.",
+      },
+      {
+        heading: "DSCR: the number that actually decides your loan",
+        body: "Debt service coverage ratio equals net operating income divided by annual debt service (your total yearly loan payment). On the $600,000 loan above, annual debt service is $4,742.26 × 12 = $56,907.\n\nThe [U.S. Small Business Administration](https://www.sba.gov/loans/7a-loans/) requires a minimum DSCR of 1.15 on 7(a) loans over $350,000, meaning net operating income must be at least $56,907 × 1.15 = $65,443 to qualify. Many conventional bank and commercial real estate lenders set the bar higher, often 1.25, which on this loan means $71,134 in net operating income. A DSCR below 1.0 means the property's income doesn't even cover the loan payment — an automatic decline at almost any lender.",
+      },
+      {
+        heading: "SBA loans vs. conventional commercial mortgages",
+        body: "An SBA 7(a) or 504 loan can offer a lower down payment and longer amortization than many conventional commercial lenders, but it comes with more paperwork and a guarantee fee.\n\n| | SBA 7(a)/504 | Conventional commercial |\n|---|---|---|\n| Typical down payment | 10–15% | 20–30% |\n| Minimum DSCR | 1.15 (loans over $350k) | Often 1.25+ |\n| Amortization | Up to 25 years | Often 20–25 years |\n| Balloon risk | Lower (longer terms available) | Common at 5–10 year terms |\n| Speed to close | Slower (more documentation) | Often faster |\n\nSBA financing tends to fit owner-occupied properties and businesses that can't meet a conventional lender's DSCR bar; conventional loans tend to close faster for straightforward income-property deals. Run the numbers on both before committing.",
+      },
+    ],
+    tools: [
+      { href: "/mortgage/", label: "Mortgage" },
+      { href: "/mortgage/refinance-calculator/", label: "Mortgage refinance" },
+      { href: "/real-estate/cap-rate-calculator/", label: "Cap rate" },
+      { href: "/real-estate/cash-flow-calculator/", label: "Rental cash flow" },
+    ],
+    faqs: [
+      { question: "What is a commercial mortgage calculator?", answer: "A commercial mortgage calculator estimates the monthly principal-and-interest payment on a business or investment property loan, using the loan amount, rate, and amortization period. Unlike a residential calculator, it should also help you check debt service coverage ratio (DSCR), since that — not personal income — drives qualification." },
+      { question: "What is a balloon payment on a commercial mortgage?", answer: "A balloon payment is the loan balance still owed when the loan's term ends, even though the payment was calculated over a longer amortization period. On a $600,000 loan at 7.25% with a 20-year amortization but a 10-year term, the balloon due at year 10 is $403,936." },
+      { question: "What DSCR do I need to qualify for a commercial mortgage?", answer: "The SBA requires a minimum DSCR of 1.15 on 7(a) loans over $350,000. Many conventional commercial lenders set the bar at 1.25 or higher. DSCR equals net operating income divided by annual debt service — a ratio below 1.0 means the property's income doesn't cover the loan payment." },
+      { question: "How is a commercial mortgage different from a residential mortgage?", answer: "A residential mortgage qualifies you on personal income and debt-to-income ratio. A commercial mortgage qualifies the property or business on debt service coverage ratio, and it commonly has a shorter loan term than its amortization schedule, creating a balloon payment at maturity." },
+      { question: "Can I get an SBA loan for commercial real estate?", answer: "Yes, through the SBA 7(a) or 504 loan programs, which can offer lower down payments and longer amortization than many conventional commercial lenders. SBA loans require more documentation and carry a guarantee fee, and the SBA sets its own minimum DSCR requirements by loan size." },
+    ],
+    sources: [
+      { label: "U.S. Small Business Administration — 7(a) loans", url: "https://www.sba.gov/loans/7a-loans/" },
+      { label: "SBA — 7(a) loan program terms, conditions, and eligibility", url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility" },
+    ],
+  },
+
+  {
+    slug: "auto-lease-buyout-calculator",
+    title: "Auto Lease Buyout Calculator: Is It Worth It?",
+    metaDescription:
+      "Calculate your lease buyout cost — residual value, purchase-option fee, and sales tax — then compare it to financing a used car or leasing again.",
+    h1: "Auto Lease Buyout Calculator: Is It Worth It?",
+    cardBlurb: "Residual value, purchase-option fees, sales tax, and a side-by-side against financing a comparable used car.",
+    intro:
+      "A lease buyout price is not simply the residual value printed on your lease contract. It's the residual value plus a purchase-option fee and, in most states, sales tax on that amount — and if you're buying out early, the math gets more complex still. This guide breaks down where the number comes from and how to decide whether buying out beats turning the car in.",
+    sections: [
+      {
+        heading: "What a lease buyout actually costs",
+        body: "Your total buyout cost is the residual value stated in your lease, plus a purchase-option fee (commonly $300 to $500), plus sales tax on that amount in most states, according to the [CFPB's guidance on leasing versus buying](https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-about-leasing-versus-buying-a-car-en-815/).\n\nSay your residual value is $21,000, your purchase-option fee is $350, and your state charges 6% sales tax on the residual. Sales tax adds $21,000 × 0.06 = $1,260. Your total buyout cost is $21,000 + $350 + $1,260 = $22,610.",
+      },
+      {
+        heading: "How the residual value was set in the first place",
+        body: "The residual value was calculated when you signed the lease, as a projected percentage of the car's value at lease-end. Your monthly lease payment itself is built from two pieces: depreciation (the drop from cap cost to residual, spread over the term) and a finance charge based on the money factor, the lease equivalent of an interest rate.\n\nOn a car with a $35,000 capitalized cost, a $21,000 residual (60%), a 0.00125 money factor, and a 36-month term: depreciation is ($35,000 − $21,000) ÷ 36 = $388.89 a month, and the finance charge is ($35,000 + $21,000) × 0.00125 = $70.00 a month. Total payment (before tax): $458.89. The residual value you'll pay to buy out the car is the same $21,000 baked into that payment from day one.",
+      },
+      {
+        heading: "Early buyout vs. end-of-lease buyout",
+        body: "Buying out before your lease term ends usually costs more than waiting, because an early payoff includes the present value of your remaining scheduled payments on top of the residual — not just the residual alone. Most leases don't print this early-payoff number in the contract; you have to call your leasing company for the exact figure.\n\nIf you're near the natural end of your lease term, waiting for the standard end-of-lease buyout is almost always cheaper than paying out early, unless you're facing steep mileage-overage or wear-and-tear charges that a buyout would avoid entirely.",
+      },
+      {
+        heading: "Buyout vs. financing a comparable used car vs. leasing again",
+        body: "| | Buy out your lease | Finance a used car | Lease again |\n|---|---|---|\n| You already know the car's condition | Yes | No — unknown history | Yes (new car) |\n| Avoids mileage/wear-and-tear fees | Yes | N/A | No — new limits apply |\n| Upfront cost | Residual + fee + tax | Down payment + fees | Often lowest |\n| Long-term ownership | Yes, once paid off | Yes, once paid off | No — return again |\n\nBuying out makes the most sense when you know the car's full maintenance history, it's held up well, and the buyout cost compares favorably to a similar used car with unknown history. See our [auto loan calculator](/auto-loan/) to model financing the buyout amount, and our [full car-buying guide](/guides/how-to-buy-a-car/) for the used-car comparison.",
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: "Skipping a pre-purchase inspection because you've been driving the car — mechanical issues don't always show up in daily driving the way they do under a lift.\n\nFinancing the buyout through the leasing company's rate without shopping it against a bank or credit union loan first; buyout loan rates are not always competitive.\n\nMissing your lease's purchase-option window. Some leases only allow the buyout at specific points (like the final 60–90 days), not any time you choose.",
+      },
+    ],
+    tools: [
+      { href: "/auto-loan/", label: "Auto loan" },
+      { href: "/auto-loan/payoff-calculator/", label: "Auto loan payoff" },
+      { href: "/auto-loan/interest-calculator/", label: "Auto loan interest" },
+      { href: "/guides/how-to-buy-a-car/", label: "How to buy a car" },
+    ],
+    faqs: [
+      { question: "What is a lease buyout?", answer: "A lease buyout is purchasing your leased vehicle at the end of (or during) the lease term, instead of returning it. The price is the residual value from your contract plus a purchase-option fee and, in most states, sales tax on that amount." },
+      { question: "How is the residual value calculated?", answer: "The residual value is set at lease signing as a projected percentage of the car's value at lease-end, based on expected depreciation. It's baked into your monthly payment from day one — the difference between the capitalized cost and the residual, spread across the lease term." },
+      { question: "Is buying out my lease better than financing a used car?", answer: "It depends on the numbers and what you know about the car. Buying out avoids the unknown maintenance history of a used car and any mileage-overage fees, but only makes sense if the total buyout cost compares favorably to a similar used car on the market." },
+      { question: "Can I negotiate my lease buyout price?", answer: "The residual value itself is typically fixed by contract, but the purchase-option fee and any add-ons sometimes have room to negotiate. Getting your own financing quote before negotiating gives you a stronger position than accepting the leasing company's buyout loan rate by default." },
+      { question: "Do I have to pay sales tax on a lease buyout?", answer: "In most states, yes — sales tax applies to the residual value at the time of purchase, similar to buying any used car. The exact rate depends on your state and sometimes your county, so check your local rate before budgeting your total buyout cost." },
+    ],
+    sources: [
+      { label: "CFPB — What should I know about leasing versus buying a car?", url: "https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-about-leasing-versus-buying-a-car-en-815/" },
+      { label: "CFPB — Regulation M, Consumer Leasing", url: "https://www.consumerfinance.gov/rules-policy/regulations/1013/" },
+      { label: "Federal Reserve — Vehicle Leasing: The Purchase-Option Price", url: "https://www.federalreserve.gov/pubs/leasing/resource/different/models_info10.htm" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

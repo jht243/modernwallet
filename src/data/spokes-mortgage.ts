@@ -296,11 +296,22 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Yes. Nearly all lenders require homeowner's insurance for the life of the loan. The premium varies by location, home value, coverage level, and risk factors like flood zone or fire risk. Your lender will typically collect it monthly through your escrow account.",
       },
+      {
+        question: "Does a mortgage calculator include closing costs and escrow?",
+        answer:
+          "A basic principal-and-interest calculator does not include closing costs or escrow — that's exactly why PITI exists as a separate figure. Closing costs (2–5% of the loan amount, per the CFPB) are a one-time cash need at signing, while escrow collects your recurring property tax and insurance payments monthly as part of PITI. Use the calculator above for P&I, then add taxes and insurance from the sections above to see your full monthly cost.",
+      },
+      {
+        question: "Does checking a mortgage calculator affect my credit score?",
+        answer:
+          "No. Running numbers through a mortgage calculator, including this one, does not pull your credit report or affect your score in any way — it's a math tool, not a loan application. Your score is only affected once a lender runs a hard credit inquiry as part of an actual preapproval or application.",
+      },
     ],
     sources: [
       { label: "CFPB — What is private mortgage insurance?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/" },
       { label: "CFPB — Understand loan options", url: "https://www.consumerfinance.gov/owning-a-home/loan-options/" },
       { label: "Tax Foundation — Property Taxes by State", url: "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/" },
+      { label: "CFPB — What are closing costs?", url: "https://www.consumerfinance.gov/ask-cfpb/what-are-closing-costs-en-183/" },
     ],
     toolHeading: "Calculate your PITI mortgage payment",
     toolSubheading: "Enter your home price and down payment to see principal and interest, then add taxes and insurance for your full PITI.",
@@ -357,11 +368,23 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "FHA loans allow higher DTI ratios — often up to 43%, and in some cases 50%, according to HUD — which can increase your maximum purchase price if you carry existing debt. See our [FHA loan calculator](/mortgage/fha-calculator/) for FHA-specific payment estimates including mortgage insurance premiums.",
       },
+      {
+        question: "How many times my salary can I borrow for a mortgage?",
+        answer:
+          "There's no fixed multiple — it depends on your rate, debts, and down payment, since lenders qualify you on the 28/36 DTI rule, not a flat income multiple. In our worked example above, $90,000 in gross annual income ($7,500/month) supported a roughly $320,000 purchase price at 6.75%, about 3.6 times income. A lower rate or smaller down payment changes that multiple in either direction.",
+      },
+      {
+        question: "Does this calculator work for jumbo or USDA loans?",
+        answer:
+          "The math above (28% front-end, 36% back-end) is the same underlying formula lenders use for jumbo and USDA loans, but both have different limits worth knowing. Jumbo loans are anything above the [FHFA conforming loan limit](https://www.fhfa.gov/data/conforming-loan-limit) ($832,750 in most counties for 2026) and typically require a larger down payment and stronger credit. USDA loans use a stricter 29/41 DTI cap and a 1% upfront guarantee fee, per the [USDA Single Family Housing Guaranteed Loan Program](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program), but allow 0% down in eligible rural areas.",
+      },
     ],
     sources: [
       { label: "CFPB — How do lenders decide how much to lend?", url: "https://www.consumerfinance.gov/ask-cfpb/how-do-lenders-decide-how-much-money-to-lend-me-en-19/" },
       { label: "Fannie Mae — Debt-to-Income Ratios", url: "https://www.fanniemae.com/media/document/pdf/selling-guide-dti.pdf" },
       { label: "HUD — FHA Loan Eligibility", url: "https://www.hud.gov/buying/loans" },
+      { label: "FHFA — Conforming Loan Limit Values", url: "https://www.fhfa.gov/data/conforming-loan-limit" },
+      { label: "USDA — Single Family Housing Guaranteed Loan Program", url: "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program" },
     ],
     toolHeading: "See what your target home price costs monthly",
     toolSubheading: "Enter a home price and down payment to find the P&I payment, then apply the 28% front-end rule to check affordability.",
@@ -417,6 +440,11 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         question: "How do I calculate my refinance break-even point?",
         answer:
           "Divide your total closing costs by your monthly payment savings. For example, $7,000 in closing costs and $350 monthly savings yields a 20-month break-even. If you stay in the home at least that long, the refinance pays off. If you move sooner, you come out behind.",
+      },
+      {
+        question: "Should I pay off my mortgage early, refinance, or invest the extra money instead?",
+        answer:
+          "Run the refinance break-even math above first — if refinancing clears it, that's usually the highest-value move since it lowers every future payment. If your rate is already competitive, compare your mortgage rate to what you'd earn investing: a mortgage rate above what you can safely earn elsewhere favors paying extra toward principal, while a low locked-in rate often favors investing the difference instead. See our [pay off mortgage early calculator](/mortgage/early-payoff-calculator/) and the [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide for the full decision framework.",
       },
     ],
     sources: [
