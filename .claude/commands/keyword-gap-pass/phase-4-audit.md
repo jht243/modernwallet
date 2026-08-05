@@ -45,7 +45,7 @@ On any failure, hand specific notes back to Phase-3 logic and re-run. Max 2 rewo
 ## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
 The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
 
-The `/keyword-gap-pass` (and `/autocomplete-pass`, which shares this phase file) run has EXACTLY TWO human stops, and this phase is NOT one of them:
+The `/seo-gsc-pass` run has EXACTLY TWO human stops, and this phase is NOT one of them:
 - Stop 1: the Phase 0 manifest approval (before any edits).
 - Stop 2: the Phase 8 summary approval (before the push).
 
@@ -78,16 +78,16 @@ A page can carry one isolated tell and still pass; two or more is the fail line.
 
 **GATE 2 — No proprietary anchor → FAIL unless the reviewer earns an exemption (high bar).**
 Default assumption: **this page needs at least one proprietary anchor.** An anchor is something a generic LLM could not have produced:
-- A real **client observation** from the roster, phrased with explicit grounded attribution.
-- A real **routine-work observation** from our own automation portfolio.
-- Another genuine first-hand element: an original number/benchmark we actually produced, an original artifact/screenshot, a non-obvious operational tradeoff we've hit, or a defensible contrarian POV with reasoning. **For ModernWallet calculator-explainer content, a hand-verified worked numeric example computed with the page's own formulas counts as this anchor** — check the arithmetic is actually correct, not just plausible-looking.
+- A real **client observation** from the roster (see the writer standard / `seo-content-guidelines` roster), phrased with explicit grounded attribution (e.g. "In our engagement with [Client], we observed…", "From the [Client] rollout, the failure mode was…").
+- A real **routine-work observation** from our own automation portfolio (e.g. "When we run our GA4 top-pages routine across dozens of sites in our portfolio, the pattern is…").
+- Another genuine first-hand element: an original number/benchmark we actually produced, an original artifact/screenshot, a non-obvious operational tradeoff we've hit, or a defensible contrarian POV with reasoning.
 
 Procedure:
 1. Read the page topic. Ask: does any client on the roster, or any routine in our portfolio, have **honest topical overlap** with this page?
 2. If yes and the page carries no such anchor → **HARD FAIL**, note `no-proprietary-anchor: [which client/routine fit was available and skipped]`. Hand back to the writer to weave one in (using the grounded attribution templates, max 2 client references, never invented).
-3. If a client/routine anchor genuinely does not fit (the normal case for ModernWallet's personal-finance content), check for any other first-hand anchor (own number, artifact, tradeoff, defensible POV — including a verified worked example). If one is present → PASS.
+3. If a client/routine anchor genuinely does not fit, check for any other first-hand anchor (own number, artifact, tradeoff, defensible POV). If one is present → PASS.
 4. Only if **none** of the above honestly applies may the page ship without an anchor — and the reviewer MUST record a one-sentence justification: `anchor-exempt: [why no client, no routine, and no first-hand angle honestly fit this topic]`. A boilerplate or generic exemption sentence is itself a fail — the exemption must be specific to this page's topic. Silent absence of an anchor (no anchor and no exemption sentence) is always a fail.
 
-**Never fabricate to satisfy Gate 2.** A forced, off-topic client mention (e.g. an HOA reference shoehorned into a mortgage-calculator page) is an EQUAL defect to having no anchor — fail it as `forced-anchor: [detail]`. The bar is "honest topical fit," not "mention a client somewhere." Also verify any worked-example arithmetic by recomputing it — a wrong number is worse than no anchor.
+**Never fabricate to satisfy Gate 2.** A forced, off-topic client mention (e.g. an HOA reference shoehorned into an AI-model launch page) is an EQUAL defect to having no anchor — fail it as `forced-anchor: [detail]`. The bar is "honest topical fit," not "mention a client somewhere."
 
 **This UPGRADES the "Low Information Gain" advisory note elsewhere in this file from advisory to HARD FAIL** for article/prose rows: a section that reads like conventional wisdom with no original example, case-specific insight, or non-obvious implication now blocks publication rather than merely being recorded.
