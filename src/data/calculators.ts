@@ -914,6 +914,65 @@ export const CALCULATORS: CalculatorDef[] = [
       annualRatePct: 4.5,
     },
   },
+  // Taxable vs. tax-deferred — competitor-monitor pass (2026-08-05): most "401(k) vs brokerage"
+  // content stops at a rule of thumb; this shows the actual dollar gap for your own return, tax
+  // rate, and how much of a taxable account's annual gain gets realized (dividends/interest) vs.
+  // stays unrealized until you sell.
+  {
+    id: "taxable-vs-tax-deferred",
+    islandId: "taxable-vs-tax-deferred",
+    label: "Taxable vs. Tax-Deferred",
+    navOrder: 19,
+    metaTitle: "Taxable vs. Tax-Deferred Growth Calculator",
+    metaDescription:
+      "See the real dollar gap between a taxable brokerage account and a tax-deferred 401(k)/IRA for your own return, tax rate, and years invested.",
+    targetKeyword: "taxable vs tax deferred calculator",
+    h1: "Taxable vs. Tax-Deferred Investment Growth Calculator",
+    intro:
+      "A taxable vs. tax-deferred calculator shows the dollar difference between growing money in a regular brokerage account versus a tax-deferred account like a traditional 401(k) or IRA, for the same starting balance, contribution, and return. Enter your numbers above to see both final balances side by side. For example, $10,000 plus $6,000 a year for 25 years at a 7% return, taxed at 24%, ends up meaningfully larger in the tax-deferred account than the taxable one — even though the tax-deferred account owes a bigger one-time tax bill at the end.",
+    howItWorks:
+      "The taxable account model applies tax every year, but only to the share of that year's gain you'd actually realize — dividends and interest paid out, not appreciation you haven't sold. Enter the percentage of your gain that's realized each year: closer to 100% for a bond or high-dividend fund, closer to 0-20% for a low-turnover stock index fund. That realized share is taxed at your rate immediately; the rest keeps compounding untaxed until you eventually sell.\n\nThe tax-deferred account skips all of that. The full balance compounds every year with no annual tax bill, the same way a traditional 401(k) or IRA works. The tradeoff shows up at the end: the entire final balance, contributions and growth combined, is taxed once at your ordinary income tax rate when you withdraw it, the same way a 401(k) or traditional IRA withdrawal is taxed.\n\nBoth sides of this calculator use the SAME tax rate, on purpose. That isolates the one variable that actually matters here — timing. Tax-deferred growth usually wins specifically because untaxed money compounds faster than money that gets taxed away a little at a time, not because of a rate difference. In practice, long-term capital gains and qualified dividends often get a lower rate than ordinary income, which would narrow the gap in the taxable account's favor — this calculator doesn't model that separately, so treat the deferred account's advantage here as an upper-bound estimate.",
+    faqs: [
+      {
+        question: "Is a tax-deferred account always better than a taxable account?",
+        answer:
+          "Not always, but it usually grows to a larger balance for the same return and tax rate, because untaxed money compounds faster than money that loses a slice to tax every year. A taxable account can still make sense for money you need before retirement age, since a 401(k) or traditional IRA charges an early-withdrawal penalty on top of ordinary income tax if you pull money out before 59½.",
+      },
+      {
+        question: "What does 'percent realized' mean in this calculator?",
+        answer:
+          "It's the share of a taxable account's annual gain that actually gets taxed that year, like dividends or interest paid out to you. The rest of the gain is unrealized appreciation — the investment is worth more, but you haven't sold it, so nothing is taxed yet. A high-dividend or bond fund realizes most of its gain every year; a low-turnover stock index fund realizes very little until you sell.",
+      },
+      {
+        question: "Why does the tax-deferred account still get taxed at the end?",
+        answer:
+          "Because a traditional 401(k) or IRA was never taxed going in or during the growth years, the IRS taxes the entire withdrawal as ordinary income. That's different from a Roth account, which is taxed up front so withdrawals in retirement are tax-free. This calculator models the traditional (pre-tax) version specifically.",
+      },
+      {
+        question: "Does this calculator account for the lower long-term capital gains rate?",
+        answer:
+          "No, it uses one tax rate for both accounts to isolate the effect of tax timing. In reality, long-term capital gains and qualified dividends are often taxed at a lower rate than ordinary income, which would shrink the taxable account's disadvantage shown here. Treat the tax-deferred account's edge in this calculator as a reasonable upper-bound estimate, not an exact prediction.",
+      },
+      {
+        question: "Should I max out a 401(k) before investing in a taxable brokerage account?",
+        answer:
+          "Most financial planners suggest capturing any employer 401(k) match first, since that's an immediate guaranteed return, then weighing a taxable account against further tax-advantaged contributions based on when you'll need the money. See our [401(k) vs. brokerage account comparison](/compare/401k-vs-brokerage-account/) for the full tradeoff, including access before retirement age.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Retirement Topics: Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-tax-on-early-distributions" },
+      { label: "IRS — Topic no. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS — Publication 550, Investment Income and Expenses (dividends and interest)", url: "https://www.irs.gov/publications/p550" },
+    ],
+    defaultPreset: {
+      startingBalance: 10000,
+      annualContribution: 6000,
+      annualReturnPct: 7,
+      years: 25,
+      taxRatePct: 24,
+      taxableSharePct: 30,
+    },
+  },
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,

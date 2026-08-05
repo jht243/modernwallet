@@ -3124,7 +3124,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "How to Decide Between an Index Fund and an ETF",
         content:
-          "Choose based on your account and your investing style, since the underlying index exposure is nearly identical.\n\nPick an index mutual fund if you invest automatically, prefer exact dollar amounts, or only have a 401(k). Pick an ETF if you want intraday trading, no minimum beyond one share, or you invest in a taxable account and want the tax-efficiency edge.\n\nDecision rule: in a taxable account, lean ETF for tax efficiency; in a retirement account with auto-contributions, lean index mutual fund for convenience. Either way, keep the expense ratio low and your contributions consistent. Build the full allocation with our [portfolio tool](/portfolio/).",
+          "Choose based on your account and your investing style, since the underlying index exposure is nearly identical.\n\nPick an index mutual fund if you invest automatically, prefer exact dollar amounts, or only have a 401(k). Pick an ETF if you want intraday trading, no minimum beyond one share, or you invest in a taxable account and want the tax-efficiency edge — see [realized vs. unrealized gains](/compare/realized-vs-unrealized-gains/) for exactly why that edge matters at tax time.\n\nDecision rule: in a taxable account, lean ETF for tax efficiency; in a retirement account with auto-contributions, lean index mutual fund for convenience. Either way, keep the expense ratio low and your contributions consistent. Build the full allocation with our [portfolio tool](/portfolio/).",
       },
     ],
     faqs: [
@@ -4993,7 +4993,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       ],
     },
     verdict:
-      "Fund the 401(k) first, at minimum up to your full employer match — that match is an immediate, guaranteed return no brokerage account can offer. After the match, a brokerage account earns its place when you might need the money before 59½ (a house down payment, a mid-term goal), or once you've already maxed tax-advantaged space and want additional, more liquid investments. Most investors with a long time horizon and steady income come out ahead maxing the 401(k) and an IRA before building a large taxable brokerage position.",
+      "Fund the 401(k) first, at minimum up to your full employer match — that match is an immediate, guaranteed return no brokerage account can offer. After the match, a brokerage account earns its place when you might need the money before 59½ (a house down payment, a mid-term goal), or once you've already maxed tax-advantaged space and want additional, more liquid investments. Most investors with a long time horizon and steady income come out ahead maxing the 401(k) and an IRA before building a large taxable brokerage position. Run your own numbers through our [taxable vs. tax-deferred growth calculator](/taxable-vs-tax-deferred/) to see the actual dollar gap for your return and tax rate.",
     sections: [
       {
         heading: "Why the employer match makes the 401(k) the default first move",
@@ -6559,6 +6559,198 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  {
+    slug: "realized-vs-unrealized-gains",
+    title: "Realized vs. Unrealized Gains: Tax Rules Explained",
+    metaDescription:
+      "Realized vs unrealized gains compared: which one triggers taxes, how each is reported, and the exact holding-period math that changes your tax bill.",
+    targetKeyword: "realized vs unrealized gains",
+    optionA: "Realized Gains",
+    optionB: "Unrealized Gains",
+    h1: "Realized vs. Unrealized Gains: Tax Rules Explained",
+    intro:
+      "A realized gain is profit you lock in the moment you sell an asset for more than you paid, and it's taxable that year, while an unrealized gain is a paper profit on an asset you still own that the IRS does not tax until you sell.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Definition", a: "Profit locked in after you sell", b: "Paper profit on an asset you still hold" },
+        { dimension: "Taxed today?", a: "Yes, in the year you sell", b: "No — untaxed until sold" },
+        { dimension: "Tax rate (held ≤1 year)", a: "Ordinary income rates (up to 37%)", b: "Not applicable" },
+        { dimension: "Tax rate (held >1 year)", a: "0%, 15%, or 20% long-term rate", b: "Not applicable" },
+        { dimension: "Tax form", a: "Form 8949 and Schedule D", b: "None required (most investors)" },
+        { dimension: "Can it disappear at death?", a: "No — already taxed when sold", b: "Yes, via step-up in basis for heirs" },
+        { dimension: "Affects net worth today?", a: "Converts asset to cash", b: "Yes, on paper, but value can still fall" },
+      ],
+    },
+    verdict:
+      "Realized vs unrealized gains comes down to one trigger: the sale. Hold an asset and the gain stays unrealized and untaxed, no matter how large it grows on paper. Sell it and the gain becomes realized and taxable that year, at ordinary rates if you've held it a year or less and at the lower long-term rate if you've held it longer. The single biggest lever most investors control is timing that sale to cross the one-year mark — as the worked example below shows, waiting three weeks can cut a tax bill by thousands of dollars.",
+    sections: [
+      {
+        heading: "What is a realized gain?",
+        content:
+          "A realized gain happens when you sell an asset for more than you paid for it. The profit becomes real cash (or trade proceeds) the moment the sale closes. Until that sale, any increase in value is just a number on a screen.\n\nSay you bought 100 shares of a stock at $50 each, for a $5,000 cost basis. If you sell all 100 shares at $80, you realize a $3,000 gain. That $3,000 is now taxable income for the year you sold.\n\nRealized gains apply to stocks, real estate, crypto, and most other investments. The IRS only cares about the sale date and the difference between your sale price and your cost basis.",
+      },
+      {
+        heading: "What is an unrealized gain?",
+        content:
+          "An unrealized gain is the increase in value of an asset you still own. It exists only on paper until you sell. Financial apps often call this your \"gain/loss\" column, and it changes every day the market moves.\n\nIf that same stock position climbs from $5,000 to $8,000 while you keep holding it, you have a $3,000 unrealized gain. You haven't collected a dollar of it yet, and you could lose it just as easily if the price drops back down.\n\nUnrealized gains matter for tracking your net worth, but they carry zero tax consequence on their own. The [net worth calculator](/net-worth/) can help you track how much of your total wealth sits in unrealized gains versus cash you've already banked.",
+      },
+      {
+        heading: "Tax rules: why unrealized gains aren't taxed",
+        content:
+          "The United States taxes investment gains on a realization basis, not a mark-to-market basis, for nearly all individual investors. That means the IRS waits for a sale before it counts the profit as income. You can watch a stock triple in value and owe nothing, as long as you keep holding it.\n\nThe narrow exception is a mark-to-market election available to investors who qualify as professional traders under IRS rules. That election forces year-end gains to be taxed as if everything sold, but it's rare and applies only to full-time trading businesses, not typical buy-and-hold investors. See the [IRS guide to capital gains and losses](https://www.irs.gov/taxtopics/tc409) for the general realization rule.\n\nRealized gains, by contrast, are always taxed the year the sale happens. The rate you pay depends entirely on how long you held the asset before selling it.",
+      },
+      {
+        heading: "Short-term vs. long-term: the holding period that changes your tax bill",
+        content:
+          "Hold an asset for one year or less before selling and any gain counts as short-term. Short-term gains get taxed as ordinary income, stacked on top of your salary, at rates up to 37% depending on your bracket.\n\nHold the same asset for more than one year and the gain becomes long-term. Long-term gains get taxed at 0%, 15%, or 20% for 2026, depending on your total taxable income. For most middle-income earners, that rate lands at 15% — often less than half the short-term rate.\n\nHere's the real-money version. Say you hold a stock position worth $50,000 with a $20,000 unrealized gain, and you're three weeks away from hitting the one-year mark. Sell today and that $20,000 gain is short-term, taxed in the 24% bracket, so you owe $4,800 in federal tax. Wait three weeks and the same $20,000 gain becomes long-term, taxed at 15%, so you owe $3,000. Waiting three weeks saves you $1,800 in taxes on this one sale alone, with zero change to the underlying investment. Model your own position and holding period in the [investing calculator](/investing/) before you decide when to sell.",
+      },
+      {
+        heading: "How to report each on your taxes",
+        content:
+          "Realized gains get reported on Form 8949, where you list each sale, the date bought, the date sold, your cost basis, and the proceeds. Those totals then flow to Schedule D, which summarizes your net short-term and long-term gains for the year. Most brokerages send you a 1099-B with these numbers already filled in.\n\nUnrealized gains require no reporting at all for typical investors. You don't list them anywhere on your tax return, because the IRS hasn't taxed them yet. The only exception is the rare mark-to-market trader election described above, which forces reporting of unrealized positions as if sold at year-end.\n\nThis is a common point of confusion: a brokerage statement showing a $20,000 unrealized gain is not a tax document. Nothing is owed, and nothing is reported, until you actually sell.",
+      },
+      {
+        heading: "Tax planning tips for investors",
+        content:
+          "Tax-loss harvesting pairs realized losses against realized gains to shrink your taxable income. If you sell one position at a $5,000 loss the same year you realize a $5,000 gain elsewhere, the two cancel out and you owe nothing on that gain.\n\nHolding period timing is the simplest lever you control directly. Checking your purchase date before you sell, and waiting out the last few weeks to cross the one-year mark, routinely cuts a tax bill by thousands of dollars, as shown in the worked example above.\n\nThe step-up in basis at death is the most powerful unrealized-gain strategy of all. When an investor dies still holding an appreciated asset, their heirs inherit it at its current market value, not the original purchase price. A stock bought for $10,000 and worth $200,000 at death passes to heirs with a $200,000 basis — the entire $190,000 unrealized gain simply disappears for tax purposes and is never taxed to anyone.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I owe taxes on unrealized gains?",
+        answer:
+          "No. Unrealized gains are not taxed under current IRS rules for typical individual investors. You only owe tax once you sell the asset and the gain becomes realized, with a narrow exception for traders who make a mark-to-market election.",
+      },
+      {
+        question: "What is the difference between short-term and long-term capital gains?",
+        answer:
+          "Short-term gains come from assets held one year or less and are taxed as ordinary income, up to 37%. Long-term gains come from assets held more than one year and are taxed at lower rates of 0%, 15%, or 20% depending on your income.",
+      },
+      {
+        question: "How do I report a realized gain on my taxes?",
+        answer:
+          "You report realized gains on Form 8949, listing the purchase and sale dates, cost basis, and proceeds for each sale. The totals then carry over to Schedule D, which summarizes your net short-term and long-term gains for the year.",
+      },
+      {
+        question: "Does an unrealized gain count toward my income?",
+        answer:
+          "No. An unrealized gain increases your net worth on paper but is not counted as income by the IRS until you sell. It can also shrink or vanish entirely if the asset's price falls before you sell.",
+      },
+      {
+        question: "Can unrealized gains ever avoid taxes permanently?",
+        answer:
+          "Yes, through the step-up in basis at death. When you inherit an asset, your cost basis resets to its value on the date of death, which erases any unrealized gain the original owner built up and means it's never taxed.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Topic no. 409, capital gains and losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS — Instructions for Form 8949", url: "https://www.irs.gov/instructions/i8949" },
+      { label: "IRS — Schedule D (Form 1040)", url: "https://www.irs.gov/forms-pubs/about-schedule-d-form-1040" },
+      { label: "IRS — Topic no. 703, basis of assets", url: "https://www.irs.gov/taxtopics/tc703" },
+    ],
+    relatedComparisons: ["stocks-vs-bonds", "index-fund-vs-etf", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Investment calculator", href: "/investing/" },
+      { label: "Net worth calculator", href: "/net-worth/" },
+      { label: "Portfolio calculator", href: "/portfolio/" },
+    ],
+  },
+
+  {
+    slug: "sales-tax-vs-use-tax",
+    title: "Sales Tax vs. Use Tax: What's the Difference?",
+    metaDescription:
+      "Sales tax vs. use tax explained: who collects each, when use tax applies to online purchases, and how to report it on your state return.",
+    targetKeyword: "sales tax vs use tax",
+    optionA: "Sales Tax",
+    optionB: "Use Tax",
+    h1: "Sales Tax vs. Use Tax: What's the Real Difference?",
+    intro:
+      "Sales tax is collected by a retailer at checkout and sent to the state, while use tax is the same tax rate owed directly by the buyer when no sales tax was charged — and the sales tax vs. use tax question matters most for online and out-of-state purchases, where sellers often collect nothing at all.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who collects it", a: "The retailer, at checkout", b: "No one — it's self-reported by the buyer" },
+        { dimension: "When it applies", a: "At the moment of a taxable sale", b: "When you use, store, or consume a taxable item and no sales tax was paid" },
+        { dimension: "Who remits it to the state", a: "The seller", b: "The buyer, via a tax return or standalone form" },
+        { dimension: "Typical trigger", a: "In-store or online purchase from a seller with nexus in your state", b: "Purchase from an out-of-state seller with no nexus, or an item bought tax-free elsewhere" },
+        { dimension: "Tax rate", a: "State + local sales tax rate", b: "Same rate sales tax would have been" },
+        { dimension: "Enforcement", a: "Audited at the business level", b: "Rarely enforced on individuals, but rising via data-matching" },
+        { dimension: "Where you report it", a: "Baked into the receipt total", b: "State income tax return or a dedicated use tax form" },
+      ],
+    },
+    verdict:
+      "Sales tax and use tax charge the same rate for the same reason — taxing what you buy — but only one of them relies on you to self-report. If a seller doesn't charge sales tax, whether that's a small out-of-state online shop or an item hauled home from a lower-tax state, you owe use tax on it. Track big untaxed purchases through the year and report them on your state return's use tax line; skipping it isn't a loophole, it's unpaid tax that states are getting better at finding.",
+    sections: [
+      {
+        heading: "What is sales tax?",
+        content:
+          "Sales tax is a percentage added to the price of a taxable purchase at the register or checkout screen. The seller collects it from you, then sends that money to the state on a regular schedule, usually monthly or quarterly.\n\nStates set their own sales tax rates, and many local governments add their own on top. A jacket bought in a state with a 6% state rate and a 1% local rate carries a combined 7% sales tax.\n\nA seller only has to collect sales tax in states where it has \"nexus,\" a legal connection like a store, a warehouse, or enough sales volume there. That nexus rule is exactly why the sales tax vs. use tax question comes up: plenty of sellers have no nexus in your state and never charge you anything.",
+      },
+      {
+        heading: "What is use tax?",
+        content:
+          "Use tax exists to close the gap sales tax leaves open. It applies when you use, store, or consume a taxable item in your state and nobody collected sales tax on it.\n\nThe most common trigger is online shopping. Buy a $2,000 espresso machine from a small out-of-state retailer that doesn't collect sales tax in your state, and you still owe the tax. You just owe it directly to your state instead of paying it at checkout.\n\nUse tax also applies to items bought while traveling. Drive across state lines to buy furniture in a state with no sales tax, then bring it home to a state that taxes furniture, and you owe use tax the moment you start using it there.",
+      },
+      {
+        heading: "Sales tax vs. use tax: the key differences",
+        content:
+          "The tax rate is identical in both cases. Use tax is set at the same rate sales tax would have been on the same item.\n\nWhat changes is who does the work. With sales tax, the retailer calculates the amount, adds it to your receipt, and remits it to the state. You never think about it again.\n\nWith use tax, that entire job falls on you. Nobody calculates it, nobody adds it to a receipt, and nobody automatically sends it to the state. You have to know you owe it, figure out the amount, and report it yourself.\n\nStates that belong to the [Streamlined Sales Tax Governing Board](https://www.streamlinedsalestax.org/) agree to shared definitions and simplified rate structures, which is part of why far more out-of-state sellers now collect sales tax voluntarily than a decade ago. Even so, plenty of smaller sellers still fall outside that system.",
+      },
+      {
+        heading: "A $2,000 example: what you actually owe",
+        content:
+          "Here's how the math plays out on a real purchase. Say you buy a $2,000 sofa from an online retailer based in a state where it has no warehouses, no employees, and no sales tax obligation to your state.\n\nThe retailer ships the sofa and charges you $2,000 flat, with no sales tax line on the invoice. Your home state has a combined 7% sales tax rate. That means you owe $140 in use tax the moment the sofa arrives and you start using it.\n\nMost consumers never report that $140. There's no reminder, no bill, and no automatic deduction, just a single line buried in the state income tax instructions that almost nobody reads. Skipping it isn't a gray area; it's simply unpaid tax.\n\nStates have caught on. A growing number of Departments of Revenue now cross-reference shipping records and marketplace sales data to flag residents with large untaxed purchases, then send notices asking for the use tax owed. A $2,000 sofa is exactly the size of purchase that shows up on that kind of review.",
+      },
+      {
+        heading: "How to report and pay use tax",
+        content:
+          "Most states with a sales tax also build a use tax line into the personal income tax return. It's usually a single box asking for the total value of untaxed purchases made during the year.\n\nSome states, like the one covered by the [California Department of Tax and Fee Administration](https://www.cdtfa.ca.gov/taxes-and-fees/use-tax.htm), offer a lookup table that estimates use tax based on your income, so you can pay a flat estimated amount instead of tracking every small purchase. That table is meant for everyday items; big purchases like furniture, jewelry, or vehicles usually need to be reported at their actual value.\n\nBusinesses face the same rule but with far more scrutiny. A company that buys equipment out of state without paying sales tax has to self-assess and remit use tax, and unpaid use tax is one of the most common findings in a state sales tax audit.\n\nBecause there's no automatic collection, most individual filers simply skip the use tax line. That's technically noncompliance, even though enforcement against individuals has historically been light.",
+      },
+      {
+        heading: "Bottom line and practical tax tips",
+        content:
+          "Keep a running list of big purchases where no sales tax was charged: furniture, electronics, jewelry, and anything bought while traveling out of state. A short note in your phone with the date, item, and price is enough.\n\nCheck your state's income tax instructions for the use tax line before you file. Even a rough, good-faith estimate is better than ignoring the question entirely.\n\nIf you run a business, treat use tax as part of your regular sales tax compliance, not an afterthought. Auditors specifically look for equipment and supply purchases that slipped through without sales tax.\n\nThe sales tax vs. use tax distinction comes down to this: they're two collection methods for the same tax. One happens automatically at checkout, and the other depends entirely on you following through.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I really have to pay use tax on online purchases?",
+        answer:
+          "Yes. If an online seller doesn't charge sales tax in your state, you're legally required to report and pay the equivalent use tax on your state income tax return.",
+      },
+      {
+        question: "How is use tax different from sales tax if the rate is the same?",
+        answer:
+          "The rate matches, but the responsibility flips. A retailer collects and remits sales tax for you; with use tax, you calculate and pay it yourself because no one collected it at the time of purchase.",
+      },
+      {
+        question: "What happens if I don't pay use tax I owe?",
+        answer:
+          "You're technically out of compliance with state tax law, and interest or penalties can apply if the state later assesses the amount. Enforcement against individuals has been limited but is increasing as states use shipping and marketplace data to find large unreported purchases.",
+      },
+      {
+        question: "Does use tax apply to used items bought from a private seller?",
+        answer:
+          "Usually not for casual, one-off sales between individuals, like a garage sale find. Most states aim use tax at purchases from retailers and marketplaces rather than private person-to-person sales, though the exact rules vary by state.",
+      },
+      {
+        question: "Do all states have a use tax?",
+        answer:
+          "Nearly every state that charges sales tax also charges use tax, since one exists to backstop the other. The states with no general sales tax — Alaska, Delaware, Montana, New Hampshire, and Oregon — generally have no use tax either.",
+      },
+    ],
+    sources: [
+      { label: "Streamlined Sales Tax Governing Board", url: "https://www.streamlinedsalestax.org/" },
+      { label: "California Department of Tax and Fee Administration — Use Tax", url: "https://www.cdtfa.ca.gov/taxes-and-fees/use-tax.htm" },
+      { label: "Washington State Department of Revenue — Use Tax", url: "https://dor.wa.gov/taxes-rates/use-tax" },
+      { label: "Texas Comptroller of Public Accounts — Use Tax", url: "https://comptroller.texas.gov/taxes/sales/use-tax.php" },
+    ],
+    relatedComparisons: ["financial-advisor-vs-cpa", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [
+      { label: "Tax resolution resources", href: "/tax-resolution/" },
+      { label: "Budget calculator", href: "/budget/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

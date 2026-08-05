@@ -32,6 +32,7 @@ import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
 import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
 import InterestPerDayCalculator from "./InterestPerDayCalculator";
+import TaxableVsTaxDeferredCalculator from "./TaxableVsTaxDeferredCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -82,6 +83,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Interest per day — competitor-monitor pass (2026-08-03): daily interest earned/owed on any
   // balance, plus the effective annual yield (APY) once that daily rate compounds daily.
   "interest-per-day": InterestPerDayCalculator,
+  // Taxable vs. tax-deferred — competitor-monitor pass (2026-08-05): the dollar gap between a
+  // regular taxable account and a tax-deferred 401(k)/IRA for the same return and tax rate.
+  "taxable-vs-tax-deferred": TaxableVsTaxDeferredCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,
