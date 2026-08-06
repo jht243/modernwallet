@@ -12,10 +12,6 @@ Usage:
 
 Circuit breaker: --max-per-show caps episodes pulled per feed per run so a first
 run (or a long gap) does not ingest a whole back catalog at once.
-
-Only episodes whose RSS <item> carries a <podcast:transcript> tag are minable
-here (no speech-to-text). Feeds without transcript tags are silently skipped —
-worst case is a quiet week, never bad content.
 """
 from __future__ import annotations
 import argparse, json, os, re, html, sys, urllib.request, urllib.error
@@ -36,7 +32,7 @@ def get(url: str, timeout: int = 40) -> str:
 def load_ledger() -> dict:
     if LEDGER.exists():
         return json.loads(LEDGER.read_text())
-    return {"version": 1, "shows": {}, "shipped_slugs": [], "deferred_rows": []}
+    return {"version": 1, "shows": {}, "shipped_slugs": []}
 
 
 def save_ledger(led: dict) -> None:
@@ -59,11 +55,12 @@ def transcript_url(item: str):
 
 
 def to_text(raw: str, kind: str) -> str:
-    if "html" in (kind or ""):
-        raw = re.sub(r"<[^>]+>", " ", raw)
     raw = re.sub(r"WEBVTT.*?\n", "", raw)
     raw = re.sub(r"\d{2}:\d{2}:\d{2}[.,]\d{3}\s*-->\s*\d{2}:\d{2}:\d{2}[.,]\d{3}.*", "", raw)
     raw = re.sub(r"^\s*\d+\s*$", "", raw, flags=re.M)
+    # Strip ALL angle-bracket tags (HTML transcripts AND WebVTT voice/cue tags like
+    # <v Speaker>, </v>, <c>); transcripts carry no markup worth keeping.
+    raw = re.sub(r"</?[a-zA-Z][^>]*>", " ", raw)
     return re.sub(r"\s+", " ", html.unescape(raw)).strip()
 
 
@@ -85,7 +82,7 @@ def main() -> int:
     manifest = []
 
     for show in roster:
-        name, vertical, feed = show["name"], show["vertical"], show["feed"]
+        name, topic, feed = show["name"], show["topic"], show["feed"]
         sled = led["shows"].setdefault(name, {"processed_guids": []})
         seen = set(sled["processed_guids"])
         try:
@@ -112,9 +109,9 @@ def main() -> int:
                 continue
             title = field(it, "title")
             slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:60] or f"ep-{pulled}"
-            tp = out / "transcripts" / f"{vertical}__{slug}.txt"
+            tp = out / "transcripts" / f"{topic}__{slug}.txt"
             tp.write_text(text)
-            manifest.append({"show": name, "vertical": vertical, "title": title,
+            manifest.append({"show": name, "topic": topic, "title": title,
                              "guid": guid, "transcript": str(tp.relative_to(ROOT)),
                              "words": len(text.split())})
             sled["processed_guids"].append(guid)

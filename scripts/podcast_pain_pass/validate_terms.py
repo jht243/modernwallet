@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""Translate mined pain clusters into real search terms and SEMRUSH-validate them.
+"""Translate mined patient-pain clusters into real informational search terms and
+SEMRUSH-validate them.
 
-Stdlib only. Reads pain_clusters.json (per vertical -> theme -> count), expands
-each present (vertical, theme) into candidate SEARCH phrases (the calculator /
-how-much / X-vs-Y terms people actually type, not the pain phrasing), validates
-them on SEMRUSH (phrase_these + phrase_kdi), and writes validated_terms.json for
-the auto-approve chart step. Only terms at/above --floor survive.
-
-Consumer-personal-finance analogue of the source routine's software-term
-validator: the THEME_TERMS below encode "which money query answers this pain",
-and SEMRUSH filters to real demand.
+Stdlib only. Reads pain_clusters.json (theme -> count), expands each PRESENT theme
+into candidate SEARCH phrases (the questions/terms readers actually type — NOT the
+pain phrasing), validates them on SEMRUSH (phrase_these + phrase_kdi), and writes
+validated_terms.json for the auto-approve chart step. Only terms at/above --floor
+survive. Each term is tagged with the site hub used for internal linking.
 
 Needs SEMRUSH_API_KEY in the environment.
 
@@ -23,65 +20,33 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# vertical -> optional vocab for {v} templates (finance phrases rarely need it,
-# but kept for parity + a few "{v} calculator" style expansions).
-VOCAB = {
-    "investing": ["investment"],
-    "retirement": ["retirement"],
-    "debt": ["debt"],
-    "personal-finance": ["money"],
+# theme -> the internal-linking hub on themodernwallet.com
+HUBS = {
+    "retirement": "/retirement",
+    "investing": "/investing",
+    "budget": "/budget",
+    "real-estate": "/real-estate",
+    "tax-estate": "/estate-planning",
+    "net-worth": "/net-worth",
 }
 
-# theme -> the money queries a listener with that pain actually searches.
-# Calculator / how-much / X-vs-Y intent. SEMRUSH then filters to real demand.
+# theme -> candidate informational search phrases. Encodes the pain->query insight;
+# SEMRUSH then filters to real demand. These are questions/terms people TYPE, not the
+# spoken pain from the transcript.
 THEME_TERMS = {
-    "mortgage-home-buying": ["how much house can i afford", "mortgage payoff calculator",
-                             "down payment calculator", "closing cost calculator",
-                             "refinance calculator", "biweekly mortgage calculator",
-                             "rent vs buy calculator"],
-    "retirement-savings": ["how much do i need to retire", "401k vs roth ira",
-                           "roth ira calculator", "retirement savings calculator",
-                           "how much to save for retirement", "401k calculator",
-                           "social security break even calculator"],
-    "debt-payoff": ["debt payoff calculator", "debt snowball vs avalanche",
-                    "credit card payoff calculator", "how long to pay off credit card",
-                    "student loan payoff calculator", "debt consolidation calculator",
-                    "pay off debt or invest"],
-    "budgeting-saving": ["50 30 20 budget calculator", "emergency fund calculator",
-                         "how much emergency fund", "savings goal calculator",
-                         "how much should i save each month", "paycheck budget calculator"],
-    "investing": ["compound interest calculator", "investment growth calculator",
-                  "how much to invest per month", "index fund vs etf",
-                  "roth ira vs brokerage account", "dividend calculator"],
-    "credit-score": ["credit utilization calculator", "how to raise credit score",
-                     "credit score to buy a house", "how long to build credit",
-                     "credit card interest calculator"],
-    "taxes": ["capital gains tax calculator", "tax bracket calculator",
-              "how much tax will i pay", "paycheck tax calculator",
-              "roth conversion calculator"],
-    "insurance-estate": ["net worth calculator", "how much life insurance do i need",
-                         "term vs whole life insurance", "will cost calculator",
-                         "estate tax calculator"],
-}
-
-# theme -> ModernWallet category hub (best guess; phase-1 resolves the exact
-# live route against the repo's actual category slugs before it lands in a row).
-THEME_HUB = {
-    "mortgage-home-buying": "mortgage",
-    "retirement-savings": "retirement",
-    "debt-payoff": "debt",
-    "budgeting-saving": "budget",
-    "investing": "investing",
-    "credit-score": "credit",
-    "taxes": "tax",
-    "insurance-estate": "estate-planning",
+    "retirement": ["how much do i need to retire", "roth vs traditional ira", "when to take social security", "coast fire calculator"],
+    "investing": ["how to start investing", "index funds vs etf", "dividend investing strategy", "portfolio rebalancing"],
+    "budget": ["how to make a budget", "emergency fund amount", "debt payoff strategy", "50 30 20 rule"],
+    "real-estate": ["mortgage payoff calculator", "rental property roi", "should i refinance", "closing costs explained"],
+    "tax-estate": ["estate planning basics", "how does probate work", "tax deductions checklist", "trust vs will"],
+    "net-worth": ["how to calculate net worth", "average net worth by age", "net worth milestones"],
 }
 
 
 def semrush_csv(key, params):
     q = {"key": key, "export_escape": 1, "export_decode": 1, **params}
     url = "https://api.semrush.com/?" + urllib.parse.urlencode(q)
-    req = urllib.request.Request(url, headers={"User-Agent": "ModernWallet-SEO-Research/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "modernwallet-SEO-Research/1.0"})
     try:
         with urllib.request.urlopen(req, timeout=45) as r:
             body = r.read().decode("utf-8", "replace")
@@ -108,22 +73,17 @@ def main():
     run = ROOT / args.run
     clusters = json.loads((run / "pain_clusters.json").read_text())
 
-    # build candidate set from present (vertical, theme) pairs
-    candidates = {}  # phrase -> {vertical, theme}
-    for vert, themes in clusters.items():
-        vocab = VOCAB.get(vert, [vert])
-        for theme in themes:
-            for tmpl in THEME_TERMS.get(theme, []):
-                phrases = [tmpl.replace("{v}", w) for w in vocab] if "{v}" in tmpl else [tmpl]
-                for p in phrases:
-                    candidates.setdefault(p, {"vertical": vert, "theme": theme})
+    # build candidate set from PRESENT themes only
+    candidates = {}  # phrase -> {theme}
+    for theme in clusters:
+        for p in THEME_TERMS.get(theme, []):
+            candidates.setdefault(p, {"theme": theme})
     phrases = list(candidates)
     if not phrases:
         (run / "validated_terms.json").write_text("[]")
         print("No candidate phrases generated.")
         return
 
-    # SEMRUSH batch (chunks of 100)
     these, kdi = {}, {}
     for i in range(0, len(phrases), 100):
         chunk = phrases[i:i + 100]
@@ -142,13 +102,12 @@ def main():
             continue
         out.append({"phrase": p, "volume": vol,
                     "kd": kdi.get(p.lower(), (r.get("Keyword Difficulty Index", "") if r else "")),
-                    "vertical": meta["vertical"], "theme": meta["theme"],
-                    "hub": f"/{THEME_HUB.get(meta['theme'], meta['vertical'])}/"})
+                    "theme": meta["theme"], "hub": HUBS.get(meta["theme"], "/")})
     out.sort(key=lambda x: -x["volume"])
     (run / "validated_terms.json").write_text(json.dumps(out, indent=1))
     print(f"Validated {len(out)}/{len(phrases)} candidate terms >= {args.floor} vol/mo")
     for e in out[:25]:
-        print(f"  {e['volume']:>6}  KD{e['kd']:<3}  {e['phrase']}  [{e['vertical']}/{e['theme']}]")
+        print(f"  {e['volume']:>6}  KD{e['kd']:<3}  {e['phrase']}  [{e['theme']}]")
     print(f"-> {run/'validated_terms.json'}")
 
 
