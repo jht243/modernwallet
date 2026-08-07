@@ -57,6 +57,21 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Prepaying means paying extra principal to shorten your term and cut interest while keeping the same monthly payment. Recasting re-amortizes your remaining balance over the original term to lower the monthly payment. Recasting does not save as much interest as prepaying the same amount.",
       },
+      {
+        question: "Why is my mortgage payoff amount higher than my last statement balance?",
+        answer:
+          "A mortgage payoff amount is higher than your statement balance because it adds interest and fees your statement doesn't yet show. It includes per-diem interest built up since your last statement, plus any recording or administrative fee your loan allows. Escrow adds another wrinkle. Some servicers apply your remaining escrow balance to lower the payoff number. Others refund escrow separately after your loan closes. Ask your servicer how they will handle yours before sending your final payment.",
+      },
+      {
+        question: "What does a mortgage payoff statement include, and how fast must my servicer send one?",
+        answer:
+          "A mortgage payoff statement lists the exact amount that fully satisfies your loan. It shows your remaining principal, interest accrued through a stated payoff date, and any fees the payoff includes. Federal mortgage servicing rules set a deadline for this response: your servicer must send an accurate payoff statement within seven business days of your written request, per the [CFPB](https://www.consumerfinance.gov/consumer-tools/mortgages/your-mortgage-servicer-must-comply-with-federal-rules/). If you have an escrow account, that balance is typically handled separately — federal rules require your servicer to refund any leftover escrow within 20 days of your full payoff, not counting weekends or holidays.",
+      },
+      {
+        question: "How long is a mortgage payoff quote good for, and what happens if I pay the wrong amount?",
+        answer:
+          "A mortgage payoff quote is only accurate through the specific date printed on the statement, because interest keeps accruing every day after that date. If you won't send payment by that date, ask your servicer for an updated payoff statement rather than guessing at the new total. Paying your last statement balance instead of the official payoff amount is a common mistake, since the payoff figure includes interest and fees the statement balance does not. That shortfall leaves a small balance still open on your loan, which can trigger continued interest, a late fee, or a delay in your lien being released. Always pay the exact figure from your payoff statement, sent the way your servicer specifies.",
+      },
     ],
     sources: [
       { label: "CFPB — How does paying down a mortgage work?", url: "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/" },
