@@ -2875,6 +2875,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Yes. Many lenders let you refinance a HELOC into a fixed-rate home equity loan, and some HELOCs offer a fixed-rate conversion option on part of the balance. This can lock in your rate if you worry about rising variable rates.",
       },
+      {
+        question: "Is there an option with no monthly payment at all?",
+        answer:
+          "Yes — a home equity investment (also called a home equity contract) pays a lump sum with no monthly bill, but you repay a share of your home's future value later instead of interest. The CFPB found the effective cost often runs higher than a HELOC or home equity loan; see our [home equity investment guide](/guides/home-equity-investment-guide/) for the full math.",
+      },
     ],
     sources: [
       { label: "CFPB: What You Should Know About Home Equity Lines of Credit", url: "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf" },

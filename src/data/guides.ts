@@ -2256,6 +2256,10 @@ export const GUIDES: Guide[] = [
         body: "Your plan options depend on when your loans were first disbursed, not on when you're reading this. Loans disbursed before July 1, 2026 generally keep access to the repayment options that existed under the prior system, subject to the transition rules servicers are applying. Loans first disbursed on or after July 1, 2026 choose between the new Tiered Standard Plan and RAP, the new income-driven option, as their primary choices going forward.\n\nBorrowers on legacy income-driven plans like Income-Contingent Repayment (ICR) or Pay As You Earn (PAYE) should know those plans are being phased out, with a full sunset date of July 1, 2028 under the law — your servicer will contact you before you're required to transition to one of the new options. Log into your account at [Federal Student Aid](https://studentaid.gov/) to confirm which plans you're currently eligible for; servicers are actively updating borrower options as the new system rolls out.",
       },
       {
+        heading: "My payment just went up — what should I do",
+        body: "A higher bill after the July 2026 transition usually means one of two things happened: your loan moved off an income-driven plan that's being phased out (like ICR or PAYE) and landed on a Standard-style plan by default, or your loans were recalculated under the new Tiered Standard Plan at a shorter term than you expected for your balance. Log into [studentaid.gov](https://studentaid.gov/) first to confirm which plan you're actually on now — borrowers report servicer messaging about the transition has been inconsistent, so don't assume the plan on your latest statement is the one you'd choose if you understood the alternatives.\n\nIf the new payment doesn't fit your budget, you have three real options, in order of speed: apply for RAP, the new income-driven plan, which recalculates your payment against your actual income instead of a fixed term; ask your servicer about a temporary forbearance or deferment while you sort out the right long-term plan, understanding interest still accrues during that pause; or run the [Federal Student Aid loan simulator](https://studentaid.gov/loan-simulator/) to compare your exact payment under every plan you're eligible for before switching, since moving to RAP resets your progress toward any forgiveness clock tied to your prior plan.",
+      },
+      {
         heading: "Is the Standard Plan right for you?",
         body: "Choose a Standard-style plan (legacy or tiered) when you want the lowest total interest cost and can comfortably afford the resulting monthly payment, since paying off the loan faster always saves money compared to a longer income-driven timeline. Both Standard-style plans front-load the payoff instead of stretching it, which suits borrowers whose income is stable and high enough relative to their balance.\n\nIf your income is lower relative to your balance, or your income varies year to year, RAP's income-based payment may fit better even though it takes longer to pay off, since it's specifically designed to keep payments affordable as your income changes. Run your numbers on the [Federal Student Aid loan simulator](https://studentaid.gov/loan-simulator/) before choosing, since the right plan depends entirely on your specific balance, income, and how much payment flexibility you actually need.",
       },
@@ -2271,6 +2275,8 @@ export const GUIDES: Guide[] = [
       { question: "Does the Tiered Standard Plan offer loan forgiveness?", answer: "No. Neither the legacy Standard Plan nor the new Tiered Standard Plan offers forgiveness at the end of the term — you pay off the full balance plus interest. Forgiveness after a set number of payments is a feature of income-driven plans like RAP, not the Standard-style plans." },
       { question: "What happened to Income-Contingent Repayment (ICR) and PAYE?", answer: "Both are being phased out under the One Big Beautiful Bill Act, with a full sunset date of July 1, 2028. Borrowers currently on ICR or PAYE will be transitioned to one of the new plans before that date; your loan servicer will contact you with your specific timeline and options." },
       { question: "How do I find out which repayment plan I'm currently on?", answer: "Log into your account at Federal Student Aid (studentaid.gov) to see your current plan and the options available to you. The site also offers a loan simulator that estimates your monthly payment and total cost under each plan you qualify for." },
+      { question: "Why did my student loan payment suddenly go up?", answer: "Usually because your loan moved off a phased-out income-driven plan (like ICR or PAYE) onto a Standard-style plan by default, or because the new Tiered Standard Plan set your term based on your balance. Confirm your actual current plan at studentaid.gov rather than assuming your latest statement reflects the plan you'd choose." },
+      { question: "I'm about to start grad school — how much can I borrow under these new rules?", answer: "Grad PLUS loans stopped accepting new borrowers on July 1, 2026. In their place, general graduate students can borrow up to $20,500 a year (aggregate $100,000) and professional students up to $50,000 a year (aggregate $200,000) in Direct Unsubsidized Loans. See our [guide to paying for grad school](/guides/how-to-pay-for-grad-school/) for the full funding order of operations." },
     ],
     sources: [
       { label: "Federal Student Aid (U.S. Department of Education) — studentaid.gov", url: "https://studentaid.gov/" },
@@ -5068,6 +5074,117 @@ export const GUIDES: Guide[] = [
       { label: "FSA Partners — FAFSA Simplification Act Changes for 2024-25", url: "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2023-08-04/fafsa-simplification-act-changes-implementation-2024-25" },
       { label: "SEC.gov — Accredited Investor Net Worth Standard", url: "https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/accredited-investor-net-worth-standard" },
       { label: "Investor.gov — Accredited Investors (Updated Investor Bulletin)", url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-3" },
+    ],
+  },
+
+  {
+    slug: "home-equity-investment-guide",
+    title: "Home Equity Investment: How It Works and What It Costs",
+    metaDescription:
+      "A home equity investment pays cash with no monthly bill — but CFPB research found effective costs of 19.5% to 22% a year. See the real math before you sign.",
+    h1: "Home Equity Investment: How It Works and What It Really Costs",
+    cardBlurb: "No monthly payment, but the payoff bill can run 19% to 22% a year — the CFPB math behind a home equity investment, worked through with real numbers.",
+    intro:
+      "A home equity investment (also sold as a home equity contract, home equity agreement, or shared-equity agreement) trades a lump sum of cash today for a slice of your home's future value. There's no monthly bill and no interest rate in the usual sense, which is exactly how these products are marketed. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-home-equity-contracts-market-overview/) took a closer look in January 2025 and found the real cost runs far higher than the marketing suggests. This guide breaks down how a home equity investment works, what it actually costs, and how it stacks up against the [HELOC and home equity loan](/compare/heloc-vs-home-equity-loan/) options most homeowners consider first.",
+    sections: [
+      {
+        heading: "What is a home equity investment?",
+        body: "A home equity investment is not a loan. A company gives you an upfront cash payment in exchange for a contractual claim on a share of your home's value, collected as a single lump sum when the contract ends — usually triggered by a sale, a refinance, or the end of a fixed term that commonly runs 10 to 30 years.\n\nBecause it isn't structured as a loan, these contracts have historically skipped the standard mortgage disclosures, ability-to-repay underwriting, and rate caps that apply to a HELOC or home equity loan. The CFPB has taken the legal position that many home equity contracts function as mortgage loans and should be covered by the [Truth in Lending Act (TILA)](https://www.consumerfinance.gov/rules-policy/regulations/1026/) regardless of how the contract is labeled, and filed an amicus brief arguing exactly that in Roberts v. Unlock Partnership Solutions.",
+      },
+      {
+        heading: "How a home equity investment works, step by step",
+        body: "The company first appraises your home to set a starting value, then offers you a cash amount in exchange for a percentage claim on the home's future value — often 10% to 30% of that value, depending on the company, your equity, and your credit. The percentage is set to compensate the investor for the risk they're taking on, not calculated the way a loan's interest rate is.\n\nYou keep living in the home and keep paying your existing mortgage, property taxes, insurance, and upkeep — none of that goes away. At the end of the term, or whenever you sell or refinance, you owe the company its percentage share of the home's value at that point, paid as one lump sum, not spread over the contract's life.",
+      },
+      {
+        heading: "What a home equity investment actually costs",
+        body: "This is where the marketing and the math diverge. The CFPB's Issue Spotlight found that the effective annual cost of these contracts can run 19.5% to 22% in the early years — well above a typical HELOC or mortgage rate, and in some cases above a credit card's rate.\n\nHere's why: say your home is worth $400,000 and a company offers you $40,000 for a 12% share of the home's future value. If your home appreciates to $460,000 over five years, you owe 12% of $460,000, which is $55,200 — not $40,000 plus a fixed rate, but $15,200 more than you received, on top of giving up the appreciation itself. Run that $15,200 gain over $40,000 borrowed across five years and it works out to an effective annual cost well into the double digits, before counting the origination fee most companies also charge upfront. The faster your home appreciates, the more expensive the contract becomes — the opposite of how a fixed-rate loan behaves.",
+      },
+      {
+        heading: "Home equity investment vs. HELOC vs. home equity loan",
+        body: "All three let you tap home equity without selling, but they split the cost differently. A [HELOC](/compare/heloc-vs-home-equity-loan/) charges variable interest only on what you draw and requires a monthly payment; a home equity loan charges fixed interest on a lump sum with a fixed monthly payment; a home equity investment charges no monthly payment at all but takes a cut of your home's appreciation, due in one lump sum later.",
+      },
+      {
+        heading: "How the three options compare",
+        body: "A HELOC charges variable interest only on what you draw, requires a monthly payment, and comes with standard mortgage disclosures and income-based underwriting. A home equity loan works the same way but with a fixed rate and a fixed monthly payment instead of a variable line. Both carry a predictable worst case: your payment rises if rates rise (HELOC) or stays fixed regardless of the market (home equity loan).\n\nA home equity investment skips the monthly payment and leans more on your equity and credit than your income to underwrite, and the CFPB found it does not consistently carry the same mortgage disclosures. Its best case — cheap financing — only happens if your home's value stays flat or drops during the contract. Its worst case is a home that appreciates normally, which the CFPB's research put at an effective annual cost of 19.5% to 22% in the early years.\n\nVerdict: a HELOC or home equity loan is cheaper for most homeowners who can qualify and handle a monthly payment. A home equity investment only wins financially if your home's value stays flat or falls during the contract, which is precisely the scenario the investor is protecting against, not the one they're betting on.",
+      },
+      {
+        heading: "Who typically qualifies, and the risk if you can't pay",
+        body: "Home equity investment companies generally care more about your equity position and credit than your income, since there's no monthly payment to underwrite against. That makes these contracts reachable for equity-rich, cash-poor homeowners — often retirees — who wouldn't qualify for a large HELOC on income alone.\n\nThe risk shows up at the end of the term. Because the payoff is a single lump sum, the CFPB warns that homeowners who can't refinance or otherwise raise the cash \"might be forced to sell their home or face foreclosure\" to settle the contract. A HELOC or home equity loan, by contrast, is repaid gradually the whole time you hold it, so there's no single balloon bill waiting at the end.",
+      },
+      {
+        heading: "Is a home equity investment worth it?",
+        body: "It can make sense if you need cash now, don't want a new monthly payment, and don't qualify for a HELOC or home equity loan on income or credit — for example, a retiree with strong equity but limited monthly income. It's a weaker fit if you expect your home to appreciate meaningfully over the contract term, since every dollar of appreciation you give away is a dollar the investor keeps, on top of whatever fee they charged upfront.\n\nBefore signing, get the exact percentage share and any fees in writing, run the payoff math at a few different appreciation scenarios (0%, 3%, 6% annual growth) the way the worked example above does, and compare that payoff to what a HELOC or home equity loan would have cost over the same period at current rates.",
+      },
+    ],
+    tools: [
+      { href: "/mortgage/", label: "Mortgage" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "Is a home equity investment a loan?", answer: "Not in the traditional sense — the company doesn't charge an interest rate and you don't make monthly payments. But the CFPB has argued in court that many of these contracts function as mortgage loans and should carry the same Truth in Lending Act disclosures, regardless of how the contract labels itself." },
+      { question: "What happens if I can't pay when the contract ends?", answer: "The lump sum is due when the term ends, you sell, or you refinance. The CFPB warns that homeowners unable to raise the cash through refinancing or other assets might be forced to sell the home or face foreclosure to satisfy the contract." },
+      { question: "How much of my home's future value do I give up?", answer: "Typically 10% to 30% of the home's value at payoff, depending on the company, your equity, and your credit — but each company calculates its share differently, and the CFPB found these formulas are not standardized, which makes comparing offers difficult." },
+      { question: "Is a home equity investment cheaper than a HELOC?", answer: "Usually not. CFPB research found effective annual costs of 19.5% to 22% in the early years of a typical contract, well above current HELOC and home equity loan rates. It can come out cheaper only if your home's value stays flat or declines during the term." },
+      { question: "Can I sell my home before the contract term ends?", answer: "Yes — a sale is one of the standard triggers that ends the contract early. You'll owe the company's percentage share of the sale price (or appraised value, depending on the contract) out of your sale proceeds at closing." },
+      { question: "Do I still have to pay my mortgage if I take a home equity investment?", answer: "Yes. A home equity investment doesn't replace or pay down your existing mortgage. You keep paying your mortgage, property taxes, insurance, and upkeep exactly as before; the investment is a separate claim layered on top of your equity." },
+    ],
+    sources: [
+      { label: "CFPB — Issue Spotlight: Home Equity Contracts: Market Overview (Jan. 2025)", url: "https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-home-equity-contracts-market-overview/" },
+      { label: "CFPB — What is a home equity line of credit (HELOC)?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-home-equity-line-of-credit-heloc-en-107/" },
+    ],
+  },
+
+  {
+    slug: "how-to-pay-for-grad-school",
+    title: "How to Pay for Grad School: Options Ranked by Cost",
+    metaDescription:
+      "Grad PLUS loans end for new borrowers on July 1, 2026. See the real order of operations for funding grad school under the new federal borrowing caps.",
+    h1: "How to Pay for Grad School: A Cost-Ranked Guide for 2026",
+    cardBlurb: "Grad PLUS loans are gone for new borrowers — here's the real order of operations for funding grad school under the new 2026 federal caps.",
+    intro:
+      "Paying for grad school changed on July 1, 2026. The Grad PLUS loan program, which used to let graduate and professional students borrow up to their full cost of attendance, stopped accepting new borrowers that day under the [One Big Beautiful Bill Act](https://www.congress.gov/bill/119th-congress/house-bill/1). This guide ranks every real funding source by cost — free money first, then the new federal loan caps, then private loans — so you borrow the least amount possible for the degree you're paying for. For how the new repayment rules affect the loans you do take out, see our [Tiered Standard Repayment Plan guide](/guides/student-loan-standard-repayment-plan/).",
+    sections: [
+      {
+        heading: "Start with free money: fellowships, assistantships, and grants",
+        body: "A fellowship pays you a stipend to study, with no work obligation attached, and is usually the most competitive but also the cheapest option since you owe nothing back. A graduate or teaching assistantship trades part-time work — teaching a section, grading, or running a lab — for a tuition waiver plus a stipend, and is far more common than a pure fellowship at most research universities.\n\nDepartment-level grants and need-based aid fill some of the remaining gap for many programs, particularly in the sciences. Apply directly through the graduate program's financial aid or graduate school office, not just the general [FAFSA](https://studentaid.gov/h/apply-for-aid/fafsa) process, since many of these awards are program-specific and have their own deadlines separate from federal aid.",
+      },
+      {
+        heading: "What actually changed: Grad PLUS loans end July 1, 2026",
+        body: "Under the One Big Beautiful Bill Act, the Grad PLUS loan program stopped issuing new loans to new borrowers as of July 1, 2026. Before that date, Grad PLUS let graduate and professional students borrow up to their full cost of attendance with no hard dollar cap, which is why its removal is the single biggest change to how grad school gets financed federally in over a decade.\n\nIn its place, Direct Unsubsidized Loans now carry fixed annual and lifetime caps by student type: general graduate students can borrow up to $20,500 a year with a $100,000 aggregate limit, while professional students (medicine, law, dentistry, and similar programs) can borrow up to $50,000 a year with a $200,000 aggregate limit. A combined lifetime cap of $257,500 across all federal student loans applies on top of those program-specific limits. If you already had a Direct Loan or Grad PLUS loan for your current program before July 1, 2026, a legacy provision generally lets you keep borrowing under the old rules for up to three more years or until you finish that specific program, whichever comes first.",
+      },
+      {
+        heading: "Filling the gap: private graduate loans",
+        body: "Once you've maxed out your federal unsubsidized loan cap for the year, the only borrowing options left are private lender loans, which are credit-based (often requiring a co-signer without an established credit history) and carry none of the borrower protections federal loans do — no income-driven repayment, no [Public Service Loan Forgiveness](https://studentaid.gov/manage-loans/forgiveness-cancellation/public-service) eligibility, and no guaranteed deferment options.\n\nGiven the new $100,000 / $200,000 federal caps, more students than before will need to fill a gap with private loans, especially in high-cost professional programs. Shop rates across multiple lenders before committing, since private-loan rates vary widely by credit profile and lender, unlike the fixed rate every borrower gets on a federal loan.",
+      },
+      {
+        heading: "Work through it: part-time work and employer tuition assistance",
+        body: "Working part-time while studying reduces how much you need to borrow overall, though it stretches out how long the degree takes to finish. Some employers offer tuition assistance as a benefit; under [IRS Section 127](https://www.irs.gov/newsroom/irs-updates-frequently-asked-questions-about-section-127-educational-assistance-programs), an employer can pay up to $5,250 a year toward your education tax-free to you, and that benefit now also covers principal and interest payments on existing student loans, not just new tuition.\n\nIf your employer offers this benefit, it's effectively free money on top of your salary — confirm the exact program terms with HR, since a Section 127 plan must be offered to employees on a nondiscriminatory basis and usually requires enrollment before the semester starts, not after you've already paid.",
+      },
+      {
+        heading: "Should you wait and save first?",
+        body: "Delaying enrollment by a year or two to save cash and pay down existing debt lowers how much you need to borrow, and can also strengthen a fellowship or assistantship application if you use the time to gain relevant research or work experience. This trade-off is worth running seriously against the new $100,000 / $200,000 federal caps: a student who would have covered a $150,000 program entirely with Grad PLUS now needs either savings, private debt, or both to close that same gap.\n\nRun your own numbers with our [budget calculator](/budget/) before deciding, factoring in both the cost of waiting (lost earning years with the advanced degree) and the cost of borrowing more under the new caps.",
+      },
+      {
+        heading: "Fellowship vs. assistantship vs. loans, side by side",
+        body: "A fellowship costs you nothing and comes with no repayment obligation, which is exactly why it's the most competitive option to win. An assistantship also costs nothing in cash, but the repayment obligation is your time — teaching or research hours — instead of money, and it's more attainable than a pure fellowship at most research programs.\n\nA federal unsubsidized loan, now capped at $20,500 to $50,000 a year depending on your program type, is interest-bearing and comes with a fixed monthly payment or an income-driven repayment option once you graduate — but you must qualify under standard federal aid eligibility rules to access it. A private loan is also interest-bearing, at a credit-based rate, with a fixed monthly payment and no income-driven option, and approval depends entirely on your (or a co-signer's) credit profile.\n\nVerdict: exhaust fellowships and assistantships first, use federal unsubsidized loans up to the new caps next, and treat private loans as the last resort for whatever gap remains — in that order, every time.",
+      },
+    ],
+    tools: [
+      { href: "/budget/", label: "Budget" },
+      { href: "/net-worth/", label: "Net worth" },
+    ],
+    faqs: [
+      { question: "Are Grad PLUS loans really gone?", answer: "Yes, for new borrowers. The Grad PLUS program stopped issuing new loans as of July 1, 2026, under the One Big Beautiful Bill Act. If you already had a Grad PLUS or Direct Loan for your current program before that date, a legacy provision generally lets you keep borrowing under the old rules for up to three more years or until you finish that program." },
+      { question: "How much can I now borrow federally for grad school?", answer: "General graduate students can borrow up to $20,500 a year in Direct Unsubsidized Loans, with a $100,000 aggregate limit. Professional students (medicine, law, dentistry, and similar) can borrow up to $50,000 a year, with a $200,000 aggregate limit. A combined lifetime cap of $257,500 applies across all federal student loans." },
+      { question: "What if I already have a Grad PLUS loan from before July 1, 2026?", answer: "You're generally covered by the legacy provision as long as you stay in the same program at the same school where you first borrowed before July 1, 2026. That lets you continue borrowing Grad PLUS for up to three more years or until you finish the program, whichever comes first." },
+      { question: "Is employer tuition assistance taxable?", answer: "Up to $5,250 a year is tax-free to you under IRS Section 127, covering tuition, fees, books, and now also student loan principal and interest payments. Anything your employer pays above that annual limit is generally taxable as income." },
+      { question: "What's the difference between a fellowship and an assistantship?", answer: "A fellowship pays a stipend with no work requirement attached, making it the most competitive but least obligated option. An assistantship trades part-time work, like teaching or research, for a tuition waiver plus a stipend, and is more widely available than a pure fellowship." },
+      { question: "Should I take out private loans for grad school?", answer: "Only after exhausting fellowships, assistantships, and your federal unsubsidized loan cap. Private loans are credit-based, don't offer income-driven repayment or Public Service Loan Forgiveness eligibility, and should be treated as the last resort for whatever funding gap remains." },
+    ],
+    sources: [
+      { label: "Congress.gov — H.R.1, One Big Beautiful Bill Act", url: "https://www.congress.gov/bill/119th-congress/house-bill/1" },
+      { label: "IRS — Updated FAQs on Section 127 Educational Assistance Programs", url: "https://www.irs.gov/newsroom/irs-updates-frequently-asked-questions-about-section-127-educational-assistance-programs" },
+      { label: "Federal Student Aid (U.S. Department of Education) — studentaid.gov", url: "https://studentaid.gov/" },
     ],
   },
 ];
