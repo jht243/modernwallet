@@ -1,0 +1,50 @@
+{
+ "budget": {
+  "count": 42,
+  "examples": [
+   "I didn't think, okay, well, like, how do I get this credit card into something that is, you know, lower interest rate while I'm paying, like I'm making payments on everything?",
+   "So grocery shopping, grocery bills, is like a huge thing for you that you struggle with and you spend a lot of money on.",
+   "I just know that I need to put 20% aside for taxes and I should probably save something and I don't know how to pay myself."
+  ]
+ },
+ "real-estate": {
+  "count": 17,
+  "examples": [
+   "Okay, it's going to alleviate how much we got to pay towards our mortgage or our rent or our car payment for February.",
+   "Who's like, oh, damn, I wish I didn't pay off this mortgage, right?",
+   "00:41:51 Speaker 2: It also matters, right, what those recurring monthly expenses are, Like, is there a mortgage, how much longer will that mortgage be around?"
+  ]
+ },
+ "tax-estate": {
+  "count": 50,
+  "examples": [
+   "A lot of times you'll hear people complaining about taxes and paying taxes, or how much taxes are coming out, and I don't know.",
+   "I just know that I need to put 20% aside for taxes and I should probably save something and I don't know how to pay myself.",
+   "What happens at tax time is you submit the forms to the government, you send them your W2, how much money was withheld?"
+  ]
+ },
+ "net-worth": {
+  "count": 13,
+  "examples": [
+   "How do I calculate my net worth and why is it important?",
+   "Net worth is how much you actually have, and earning is like how fast you're making money, but you also have to take account spending.",
+   "And it includes things like how much money the student makes, how much money the parents make, how many assets the student has and how many assets the parent has."
+  ]
+ },
+ "retirement": {
+  "count": 38,
+  "examples": [
+   "I'm a little bit confused between Traditional IRA and Roth IRA.",
+   "You sell them how much money you put into Iras and Roth IRS attritional Iras, the idea.",
+   "And it's going to tell you the percent chance of a likely successful retirement, how much money you'll have a retirement."
+  ]
+ },
+ "investing": {
+  "count": 103,
+  "examples": [
+   "And people don't want to talk about how much debt they have or what their investments are or, you know, how much money they make.",
+   "So you get the investing course, the personal finance course, how to money like a millionaire and the dead box course.",
+   "And you can type in your age, your income, how much money you currently have invested, how much money you're saving per month."
+  ]
+ }
+}

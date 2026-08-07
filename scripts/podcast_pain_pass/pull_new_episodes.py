@@ -66,7 +66,12 @@ def to_text(raw: str, kind: str) -> str:
 
 def field(item: str, tag: str) -> str:
     m = re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", item, re.S)
-    return html.unescape(re.sub(r"<[^>]+>", "", m.group(1)).strip()) if m else ""
+    if not m:
+        return ""
+    raw = m.group(1)
+    cdata = re.search(r"<!\[CDATA\[(.*?)\]\]>", raw, re.S)
+    raw = cdata.group(1) if cdata else re.sub(r"<[^>]+>", "", raw)
+    return html.unescape(raw.strip())
 
 
 def main() -> int:
@@ -82,7 +87,7 @@ def main() -> int:
     manifest = []
 
     for show in roster:
-        name, topic, feed = show["name"], show["topic"], show["feed"]
+        name, topic, feed = show["name"], show["vertical"], show["feed"]
         sled = led["shows"].setdefault(name, {"processed_guids": []})
         seen = set(sled["processed_guids"])
         try:
