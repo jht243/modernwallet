@@ -257,131 +257,17 @@
   "best-target-date-funds",
   "best-robo-advisors",
   "best-dividend-etfs-for-retirement",
-  "best-monthly-dividend-etfs"
+  "best-monthly-dividend-etfs",
+  "target-date-fund-vs-sp500",
+  "what-is-a-good-credit-score",
+  "voo-vs-spy",
+  "vanguard-vs-fidelity",
+  "how-much-do-i-need-to-retire-by-age",
+  "mega-backdoor-roth-401k",
+  "donor-advised-fund-vs-private-foundation",
+  "how-to-budget-for-teens-college-students",
+  "net-worth-for-fafsa-and-accredited-investor"
  ],
- "deferred_rows": [
-  {
-   "n": 1,
-   "slug": "target-date-fund-vs-sp500",
-   "format": "comparison",
-   "route": "/compare/target-date-fund-vs-sp500/",
-   "kw": "target date fund vs s&p 500",
-   "vol": 140,
-   "hub": "/investing/",
-   "note": "deferred from prior run, priority"
-  },
-  {
-   "n": 2,
-   "slug": "what-is-a-good-credit-score",
-   "format": "article",
-   "route": "/guides/what-is-a-good-credit-score/",
-   "kw": "what is a good credit score",
-   "vol": 60500,
-   "hub": "/guides/"
-  },
-  {
-   "n": 3,
-   "slug": "voo-vs-spy",
-   "format": "comparison",
-   "route": "/compare/voo-vs-spy/",
-   "kw": "voo vs spy",
-   "vol": 6600,
-   "hub": "/investing/"
-  },
-  {
-   "n": 4,
-   "slug": "vanguard-vs-fidelity",
-   "format": "comparison",
-   "route": "/compare/vanguard-vs-fidelity/",
-   "kw": "vanguard vs fidelity",
-   "vol": 3600,
-   "hub": "/investing/"
-  },
-  {
-   "n": 5,
-   "slug": "how-much-do-i-need-to-retire-by-age",
-   "format": "article",
-   "route": "/guides/how-much-do-i-need-to-retire-by-age/",
-   "kw": "how much do i need to retire at 55",
-   "vol": 1000,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 6,
-   "slug": "mega-backdoor-roth-401k",
-   "format": "article",
-   "route": "/guides/mega-backdoor-roth-401k/",
-   "kw": "mega backdoor roth 401k",
-   "vol": 390,
-   "hub": "/retirement/"
-  },
-  {
-   "n": 7,
-   "slug": "donor-advised-fund-vs-private-foundation",
-   "format": "comparison",
-   "route": "/compare/donor-advised-fund-vs-private-foundation/",
-   "kw": "donor advised fund vs private foundation",
-   "vol": 390,
-   "hub": "/estate-planning/"
-  },
-  {
-   "n": 8,
-   "slug": "how-to-budget-for-teens-college-students",
-   "format": "article",
-   "route": "/guides/how-to-budget-for-teens-college-students/",
-   "kw": "50 30 20 rule for teens",
-   "vol": 0,
-   "hub": "/budget/",
-   "note": "no tool volume - autocomplete evidence"
-  },
-  {
-   "n": 9,
-   "slug": "net-worth-for-fafsa-and-accredited-investor",
-   "format": "article",
-   "route": "/guides/net-worth-for-fafsa-and-accredited-investor/",
-   "kw": "how to calculate net worth for fafsa",
-   "vol": 0,
-   "hub": "/guides/",
-   "note": "no tool volume - autocomplete evidence"
-  },
-  {
-   "n": 10,
-   "slug": "net-worth-demographics-update",
-   "format": "body-update",
-   "route": "/net-worth/net-worth-by-age-calculator/",
-   "kw": "average net worth by age and income",
-   "vol": 20,
-   "hub": "/net-worth/"
-  },
-  {
-   "n": 11,
-   "slug": "coast-fire-tax-inflation-update",
-   "format": "body-update",
-   "route": "/coast-fire/",
-   "kw": "coast fire calculator with taxes",
-   "vol": 0,
-   "hub": "/coast-fire/",
-   "note": "no tool volume - autocomplete evidence"
-  },
-  {
-   "n": 12,
-   "slug": "mortgage-payoff-vs-balance-update",
-   "format": "body-update",
-   "route": "/mortgage/payoff-calculator/",
-   "kw": "why is my mortgage payoff higher than my balance",
-   "vol": 0,
-   "hub": "/mortgage/",
-   "note": "no tool volume - autocomplete evidence"
-  },
-  {
-   "n": 13,
-   "slug": "investing-no-money-update",
-   "format": "body-update",
-   "route": "/investing/",
-   "kw": "how to start investing with no money",
-   "vol": 20,
-   "hub": "/investing/"
-  }
- ],
+ "deferred_rows": [],
  "last_run": "2026-08-03"
 }
