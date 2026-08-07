@@ -6751,6 +6751,384 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Budget calculator", href: "/budget/" },
     ],
   },
+
+  {
+    slug: "voo-vs-spy",
+    title: "VOO vs SPY: Vanguard vs SPDR S&P 500 ETF",
+    metaDescription:
+      "VOO vs SPY compared: expense ratio, fund structure, and liquidity, so you can see which S&P 500 ETF fits your investing style.",
+    targetKeyword: "voo vs spy",
+    optionA: "VOO (Vanguard S&P 500 ETF)",
+    optionB: "SPY (SPDR S&P 500 ETF Trust)",
+    segment: "Investing",
+    h1: "VOO vs SPY: Which S&P 500 ETF Should You Buy?",
+    intro:
+      "VOO charges a 0.03% expense ratio and is built as an ETF share class of an open-end [Vanguard](https://investor.vanguard.com) mutual fund, while SPY charges 0.0945% and is structured as a unit investment trust with the deepest trading volume of any ETF in the world — so the better choice usually comes down to whether you're a buy-and-hold investor who wants the lowest cost or an active trader who needs maximum liquidity.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Expense ratio", a: "0.03%", b: "0.0945%" },
+        { dimension: "Fund structure", a: "Open-end fund (ETF share class of the Vanguard 500 Index Fund)", b: "Unit investment trust (UIT)" },
+        { dimension: "Inception date", a: "September 2010", b: "January 1993 — the first U.S.-listed ETF" },
+        { dimension: "Assets under management", a: "About $979 billion (ETF share class, June 2026)", b: "About $805 billion (August 2026)" },
+        { dimension: "Dividend handling", a: "Can reinvest dividends into the portfolio right away", b: "Holds dividends in cash until the quarterly payout" },
+        { dimension: "Securities lending", a: "Allowed — lending revenue can help offset costs", b: "Not allowed under UIT rules" },
+        { dimension: "Trading liquidity", a: "High, with tight spreads", b: "Highest of any ETF worldwide, with the deepest options market" },
+      ],
+    },
+    verdict:
+      "Neither ETF wins outright, because they're built for different jobs. SPY's unit investment trust structure makes it the default choice for options traders and large institutions moving big blocks of shares, since its trading volume and options open interest dwarf every other ETF. VOO's lower expense ratio and open-end fund structure — which allows dividend reinvestment and securities lending — make it the better pick for a buy-and-hold retail investor, since a 0.065-percentage-point cost gap compounds into real money over decades. If you're not trading options or moving institutional-size blocks, the cost difference usually outweighs SPY's liquidity edge.",
+    sections: [
+      {
+        heading: "The expense ratio gap, in real dollars",
+        content:
+          "VOO's 0.03% [expense ratio](/guides/what-is-a-good-expense-ratio/) costs about $3 a year on a $10,000 investment, while SPY's 0.0945% expense ratio costs about $9.45 a year on the same balance — both confirmed directly from Vanguard's and State Street's own fund fact sheets.\n\nThat 0.065-percentage-point gap looks tiny year to year, but it compounds. On a hypothetical $10,000 investment growing at 8% a year before fees for 30 years, VOO's lower cost leaves you with roughly $1,770 more than SPY, assuming both funds otherwise tracked the index identically.\n\nNeither fee is high by industry standards — both funds are far cheaper than the average actively managed fund. But between two funds tracking the exact same index, the cheaper one wins on cost alone whenever you don't need SPY's specific trading advantages.",
+      },
+      {
+        heading: "The real structural difference: open-end fund vs. unit investment trust",
+        content:
+          "VOO's 0.03% cost edge isn't the only structural difference, and for some investors the structure matters more than the fee. VOO is an ETF share class of the Vanguard 500 Index Fund, an open-end mutual fund, using the patented share-class structure Vanguard pioneered in 2001. Open-end funds are allowed to reinvest dividends into the portfolio right away and to lend out portfolio securities for extra income that helps offset costs.\n\nSPY is legally a [unit investment trust](https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy), a structure State Street chose in 1993 because it was the design regulators understood fastest at the time. A UIT can't lend its securities and can't reinvest the dividends it collects — it has to hold that cash until the next quarterly distribution, creating a small performance drag known as cash drag that shows up most in strong bull markets.\n\nFor a long-term holder, that structural gap plus the expense-ratio gap both point toward VOO. For a trader who needs SPY's specific liquidity profile, the structural tradeoff is usually worth accepting.",
+      },
+      {
+        heading: "Why professional traders still choose SPY",
+        content:
+          "SPY is the single most heavily traded ETF in the world, and that liquidity is the real reason institutions and options traders keep using it over VOO. Higher trading volume means tighter bid-ask spreads, which matters most to anyone trading in and out the same day or moving a large block of shares.\n\nSPY also carries by far the deepest options market of any equity ETF, with far more strike prices and expiration dates available than VOO offers. A trader hedging a portfolio or running an income strategy with covered calls needs that options depth — VOO's options market has grown but still doesn't match SPY's.\n\nNone of this liquidity edge matters if you're simply buying shares once a month and holding for 20 years. It matters a lot if you're an active trader or an institution moving size.",
+      },
+      {
+        heading: "Minimums, taxes, and dividends",
+        content:
+          "Both ETFs trade for the price of one share, so there's no meaningful minimum-investment difference between them — a real change from Vanguard's own mutual funds, which often require $3,000 or more to start. You can buy either ETF through the [investing hub](/investing/) with whatever cash you have.\n\nBoth funds pay dividends quarterly and are similarly tax-efficient in a taxable account, since both use the in-kind creation and redemption process that lets ETFs generally avoid passing capital gains distributions to shareholders. SPY's dividend-cash-drag from its UIT structure is a performance detail, not a tax difference — both funds' dividends are taxed the same way in your hands.\n\nIn a 401(k), IRA, or other tax-advantaged account, none of this matters much. Use the [S&P 500 calculator](/investing/sp500-calculator/) to project either fund's growth, and the [compound interest calculator](/investing/compound-interest-calculator/) to see how small fee differences compound over your own time horizon.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is VOO better than SPY?",
+        answer:
+          "For most buy-and-hold investors, yes — VOO's 0.03% expense ratio is lower than SPY's 0.0945%, and that gap compounds meaningfully over decades. SPY remains the better pick for active and options traders because of its much deeper trading volume and options market.",
+      },
+      {
+        question: "Why does SPY cost more than VOO if they track the same index?",
+        answer:
+          "SPY is structured as a unit investment trust, a legal structure from 1993 that can't reinvest dividends or lend securities the way VOO's open-end fund structure can. Those restrictions, plus SPY's older cost basis, leave it with a higher expense ratio: 0.0945% versus VOO's 0.03%.",
+      },
+      {
+        question: "Can VOO and SPY lose money?",
+        answer:
+          "Yes. Both funds track the S&P 500 Index and rise and fall with it — the index fell about 19% in 2022. Since they track the same 500 companies, VOO and SPY move by almost identical amounts in any given period, aside from the small cost of their fees.",
+      },
+      {
+        question: "Which is more liquid, VOO or SPY?",
+        answer:
+          "SPY. It's the most heavily traded ETF in the world, with a far deeper options market than VOO. That extra liquidity matters most to options traders and institutions moving large blocks of shares — it rarely matters to someone buying and holding for retirement.",
+      },
+      {
+        question: "Do VOO and SPY pay the same dividend?",
+        answer:
+          "They pay very similar dividend amounts because they hold the same 500 companies, though the exact per-share amount differs based on share price and each fund's expenses. Both distribute dividends quarterly; SPY holds the cash until the payout date because its unit investment trust structure doesn't allow reinvestment in between.",
+      },
+      {
+        question: "Which should I hold in a 401(k) or IRA?",
+        answer:
+          "Either works, since account-level tax treatment removes most of the tax-efficiency difference between them. VOO's lower expense ratio makes it the more common default for a buy-and-hold retirement account, unless your plan only offers SPY.",
+      },
+    ],
+    sources: [
+      { label: "Vanguard — VOO fund fact sheet (June 30, 2026)", url: "https://fund-docs.vanguard.com/F0968.pdf" },
+      { label: "State Street — SPY fund fact sheet (June 30, 2026)", url: "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spy.pdf" },
+      { label: "SEC — SPDR ETFs: Basics of Product Structure (State Street)", url: "https://www.sec.gov/Archives/edgar/data/1222333/000119312514287007/d766507dfwp.htm" },
+    ],
+    relatedComparisons: ["etf-vs-mutual-fund", "index-fund-vs-etf", "vanguard-vs-fidelity", "target-date-fund-vs-sp500"],
+    calculatorLinks: [
+      { label: "S&P 500 calculator", href: "/investing/sp500-calculator/" },
+      { label: "Compound interest calculator", href: "/investing/compound-interest-calculator/" },
+    ],
+  },
+
+  {
+    slug: "vanguard-vs-fidelity",
+    title: "Vanguard vs Fidelity: Which Brokerage Wins in 2026?",
+    metaDescription:
+      "Vanguard vs Fidelity compared: account minimums, index funds, robo-advisors, and fees, so you can see which brokerage fits your investing style.",
+    targetKeyword: "vanguard vs fidelity",
+    optionA: "Vanguard",
+    optionB: "Fidelity",
+    segment: "Brokerages",
+    h1: "Vanguard vs Fidelity: Which Brokerage Should You Choose?",
+    intro:
+      "[Vanguard](https://investor.vanguard.com) is owned by its own funds and their shareholders, which lets it run funds at cost, while [Fidelity](https://www.fidelity.com) is a privately held company known for building the first 0% expense ratio index funds — and the better brokerage for you depends on whether you value Vanguard's investor-owned structure or Fidelity's zero-minimum funds and broader trading platform.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum to open", a: "$0", b: "$0" },
+        { dimension: "Commission-free stock/ETF trades", a: "Yes", b: "Yes" },
+        { dimension: "Zero-expense-ratio index funds", a: "No proprietary 0% funds", b: "Yes — 4 Fidelity ZERO funds (FZROX, FZILX, FNILX, FZIPX)" },
+        { dimension: "Typical mutual fund minimum", a: "$1,000 (Target Retirement/STAR) to $3,000 for most other funds", b: "$0 on many Fidelity index funds" },
+        { dimension: "Robo-advisor", a: "Vanguard Digital Advisor — $100 minimum, 0.20%–0.25%/year depending on portfolio", b: "Fidelity Go — $0 minimum, free under $25,000, 0.35%/year above" },
+        { dimension: "Ownership structure", a: "Owned by its own funds and their shareholders", b: "Privately held; controlled by the Johnson family and employees" },
+        { dimension: "Annual account service fee", a: "$25/year (waivable via e-delivery or $1M+ in assets)", b: "None" },
+      ],
+    },
+    verdict:
+      "Neither brokerage is the outright winner, because they're optimized for different investors. Choose Vanguard if minimizing cost on index funds is your top priority and you're comfortable with a platform built primarily around long-term investing — its investor-owned structure has historically translated into some of the industry's lowest expense ratios. Choose Fidelity if you want $0 minimums across the board, Fidelity's proprietary zero-expense-ratio index funds, or a broader platform that also supports active trading, banking, and research tools. Many long-term investors end up holding accounts at both.",
+    sections: [
+      {
+        heading: "Account minimums and commissions",
+        content:
+          "Both brokerages charge $0 to open a brokerage account and $0 in commissions on online U.S. stock and ETF trades, so neither has an edge on the basics. Vanguard's own fee page confirms there's no fee or minimum to open an account, though it charges $25 a year per brokerage account unless you enroll in paperless statements or hold $1 million or more in qualifying assets.\n\nWhere the two split is mutual fund minimums. Most Vanguard Investor Shares mutual funds require $1,000 to $3,000 to start, and some actively managed Admiral Shares funds require $50,000. Fidelity's own index funds, including its flagship zero-fee funds, have no minimum at all — you can start with a single dollar.\n\nETFs erase most of this gap at either brokerage, since you can buy a single share of a Vanguard or Fidelity ETF for whatever that share costs that day.",
+      },
+      {
+        heading: "Fidelity's ZERO funds vs. Vanguard's low-cost lineup",
+        content:
+          "Fidelity built four mutual funds with a 0.00% expense ratio — FZROX (total market), FZILX (international), FNILX (large cap), and FZIPX (extended market) — confirmed directly in Fidelity's own SEC-filed prospectus, which states there's no purchase minimum for fund shares. These funds track Fidelity's own in-house indexes rather than licensed benchmarks like the S&P 500, which is how Fidelity avoids the licensing fee that other index funds pay.\n\nVanguard doesn't offer a true 0% fund, but its average expense ratio already sits far below the industry average, and funds like VOO (0.03%) come close enough that the practical cost difference against a Fidelity ZERO fund is a few dollars a year on a typical balance.\n\nThe real-world tradeoff most comparisons skip: Fidelity ZERO funds track Fidelity's proprietary indexes, which have a shorter track record and aren't portable if you ever move your account to another brokerage, since only Fidelity offers them. Vanguard funds track widely licensed indexes like the S&P 500 or CRSP total market indexes that you can replicate at any brokerage. See our [VOO vs SPY comparison](/compare/voo-vs-spy/) for how that portability plays out with actual S&P 500 funds.",
+      },
+      {
+        heading: "Robo-advisors: Digital Advisor vs. Fidelity Go",
+        content:
+          "Vanguard Digital Advisor requires at least $100 to enroll and charges up to roughly 0.20% to 0.25% a year depending on your portfolio option, built mostly from low-cost Vanguard index ETFs. Fidelity Go has no minimum to open an account, charges nothing for balances under $25,000, and moves to a 0.35% annual fee once your balance crosses $25,000, at which point you also unlock one-on-one coaching and tax-loss harvesting.\n\nFor a small starter balance, Fidelity Go's $0 fee under $25,000 is hard to beat. For a larger balance built mostly around index investing, Vanguard Digital Advisor's flat, lower fee schedule usually costs less over time. Run the numbers on either service with the [Roth IRA calculator](/investing/roth-ira-calculator/) to see how a small annual advisory fee compounds against your own balance.",
+      },
+      {
+        heading: "Ownership structure: why it actually matters",
+        content:
+          "Vanguard is owned by its own funds, which are in turn owned by fund shareholders — a structure Vanguard says lets it run funds at cost instead of generating profit for outside owners. That's the mechanical reason Vanguard funds tend to sit near the bottom of the industry on fees.\n\nFidelity remains privately held, controlled by the Johnson family and Fidelity employees rather than public shareholders. That structure has let Fidelity move quickly into strategies like zero-fee funds that might be harder to justify to outside investors focused on quarterly profit.\n\nNeither structure guarantees better investment results, and both brokerages offer well-regarded, broadly diversified index funds. What the ownership difference actually predicts is company incentives: Vanguard is structurally biased toward driving fees toward zero across its whole lineup, while Fidelity has more flexibility to subsidize a few flagship zero-fee funds while pricing other products more like a typical for-profit firm.",
+      },
+      {
+        heading: "Account types and where to go from here",
+        content:
+          "Both brokerages offer the full menu most investors need: individual and joint taxable brokerage accounts, traditional and Roth IRAs, SEP IRAs for the self-employed, 529 college savings plans, and custodial accounts for kids. Fidelity also offers a cash management account with a debit card and fee-free checkwriting, a banking-adjacent feature Vanguard doesn't match directly.\n\nIf you're weighing a specific IRA decision inside either platform, our [Roth IRA calculator](/investing/roth-ira-calculator/) can model your growth at either brokerage's typical fund lineup. For a bigger decision, like whether you need a human advisor instead of a robo-advisor, see our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/).\n\nFor most cost-focused, hands-off index investors, either brokerage is a reasonable home. The decision usually comes down to whether Fidelity's zero-minimum, zero-fee funds outweigh Vanguard's investor-owned fee philosophy for you personally, not which company is objectively superior.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Vanguard or Fidelity better for beginners?",
+        answer:
+          "Both work well for beginners, since each offers $0 account minimums and $0 commissions on stock and ETF trades. Fidelity has a slight edge for a very small first deposit because its ZERO index funds have no minimum at all, while many Vanguard mutual funds require $1,000 to $3,000 to start.",
+      },
+      {
+        question: "Does Fidelity really have $0 expense ratio funds?",
+        answer:
+          "Yes. Fidelity's ZERO funds — FZROX, FZILX, FNILX, and FZIPX — charge a 0.00% expense ratio and have no minimum investment, confirmed in Fidelity's own SEC-filed prospectus. They track Fidelity's own in-house indexes rather than licensed benchmarks, which is how Fidelity avoids index-licensing fees.",
+      },
+      {
+        question: "Is Vanguard cheaper than Fidelity overall?",
+        answer:
+          "Not necessarily. Vanguard's average fund expense ratio is very low, but Fidelity's ZERO funds beat it on cost for the specific funds Fidelity offers. Outside the ZERO fund lineup, Vanguard's and Fidelity's low-cost index funds are usually within a few hundredths of a percentage point of each other.",
+      },
+      {
+        question: "Can I have accounts at both Vanguard and Fidelity?",
+        answer:
+          "Yes, and many investors do. There's no rule against holding an IRA at one brokerage and a taxable brokerage account at the other. Consolidating at one firm can simplify tracking, but splitting accounts doesn't cost you anything beyond logging into two platforms.",
+      },
+      {
+        question: "Which has a better platform, Vanguard or Fidelity?",
+        answer:
+          "Both offer solid phone and online support, but Fidelity's platform tends to feel more full-featured, with banking tools, research, and active-trading features layered on top of investing. Vanguard's platform is built more narrowly around long-term index investing. Try each brokerage's tools before committing, since platform feel is subjective.",
+      },
+      {
+        question: "Does Vanguard or Fidelity have a robo-advisor?",
+        answer:
+          "Both do. Vanguard Digital Advisor requires a $100 minimum and charges up to about 0.20% to 0.25% a year depending on your portfolio option. Fidelity Go has no minimum, charges nothing under a $25,000 balance, and charges 0.35% a year above that threshold.",
+      },
+    ],
+    sources: [
+      { label: "Vanguard — Ownership structure", url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html" },
+      { label: "Vanguard — Mutual fund fees and minimums", url: "https://investor.vanguard.com/investment-products/mutual-funds/fees" },
+      { label: "Fidelity — Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
+      { label: "SEC — Fidelity ZERO Total Market Index Fund summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/819118/000081911825000478/filing10367.htm" },
+    ],
+    relatedComparisons: ["voo-vs-spy", "etf-vs-mutual-fund", "index-fund-vs-etf", "financial-advisor-vs-financial-planner"],
+    calculatorLinks: [
+      { label: "Investing hub", href: "/investing/" },
+      { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
+    ],
+  },
+
+  {
+    slug: "donor-advised-fund-vs-private-foundation",
+    title: "Donor-Advised Fund vs. Private Foundation Compared",
+    metaDescription:
+      "Donor-advised fund vs. private foundation: compare setup cost, payout rules, the 1.39% excise tax, deduction limits, and privacy for charitable giving.",
+    targetKeyword: "donor-advised fund vs private foundation",
+    optionA: "Donor-Advised Fund (DAF)",
+    optionB: "Private Foundation",
+    segment: "Estate Planning & Giving",
+    h1: "Donor-Advised Fund vs. Private Foundation: Which Should You Use?",
+    intro:
+      "A donor-advised fund can be opened in a day with no minimum at some sponsors and comes with no required annual payout, while a private foundation takes months to set up through the IRS, must distribute about 5% of its assets every year, and pays a 1.39% excise tax on its investment income — and the right structure depends mostly on how much control you need over your giving and how much administrative work you're willing to take on.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Setup time", a: "Same day to a few days", b: "Weeks to months (legal formation plus IRS review)" },
+        { dimension: "Setup cost", a: "Often $0 to open", b: "Typically thousands of dollars in legal and filing fees" },
+        { dimension: "Minimum funding", a: "$0 at some sponsors (Fidelity Charitable, DAFgiving360); $25,000 at Vanguard Charitable", b: "No federal minimum, though most practitioners suggest $1M+ to justify ongoing compliance costs" },
+        { dimension: "Annual excise tax", a: "None", b: "1.39% of net investment income" },
+        { dimension: "Required annual payout", a: "None under current federal law", b: "About 5% of the foundation's net investment assets" },
+        { dimension: "Control retained", a: "Advisory privileges only — the sponsor holds final legal control", b: "Full control — you can hire staff, set strategy, and pay reasonable compensation" },
+        { dimension: "Deduction limit for cash gifts", a: "Up to 60% of AGI", b: "Up to 30% of AGI" },
+        { dimension: "Privacy", a: "Can give anonymously", b: "Must file a public Form 990-PF, including donor names" },
+      ],
+    },
+    verdict:
+      "Choose a donor-advised fund if you want to start giving quickly, minimize paperwork, and don't need to control every operational decision — the sponsor holds legal title, but you keep advisory privileges over grants indefinitely. Choose a private foundation if you want full control over investment strategy, want to employ family members or staff, or plan to give at a scale, typically $1 million or more, where the extra cost and complexity are worth the control. Many large donors eventually use both: a DAF for anonymous, flexible giving, and a foundation for structured, ongoing philanthropy.",
+    sections: [
+      {
+        heading: "How fast and how cheap each one is to start",
+        content:
+          "A donor-advised fund can be opened the same day through a sponsoring organization like [Fidelity Charitable](https://www.fidelitycharitable.org/giving-account.html), which requires no minimum initial contribution to open an account. [DAFgiving360](https://www.dafgiving360.org/features/fees-and-minimums), the donor-advised fund platform formerly known as Schwab Charitable, also has no minimum for its core account. Vanguard Charitable is the outlier among the major sponsors, requiring a $25,000 minimum initial contribution and $5,000 for each additional gift.\n\nA private foundation is a different undertaking entirely. You have to form a legal entity, apply to the [IRS for tax-exempt status](https://www.irs.gov/charities-non-profits/application-for-recognition-of-exemption) using Form 1023, and set up ongoing accounting and compliance — a process that commonly takes weeks to months and thousands of dollars in legal and accounting fees before you make your first grant.\n\nThat setup gap is the main reason DAFs have become the default choice for donors who want to start giving without a major administrative project.",
+      },
+      {
+        heading: "The excise tax and payout rules that only apply to foundations",
+        content:
+          "A private foundation pays a 1.39% excise tax on its net investment income every year, confirmed directly on the [IRS's own page for this tax](https://www.irs.gov/charities-non-profits/private-foundations/tax-on-net-investment-income). A donor-advised fund pays no equivalent tax, since it isn't a separate tax-paying entity — it's a fund held inside the sponsoring public charity.\n\nPrivate foundations also face a real spending requirement. The [IRS requires a private foundation's minimum investment return](https://www.irs.gov/charities-non-profits/private-foundations/minimum-investment-return), which functions as its required annual payout, to equal at least 5% of the fair market value of its non-charitable-use assets. Miss that threshold and the foundation owes a separate tax on the shortfall.\n\nDonor-advised funds carry no equivalent federal payout requirement. The 5% minimum distribution rule applies specifically to private foundations, not to DAFs, so money can sit in a donor-advised fund indefinitely without triggering a penalty — a point of ongoing debate among charity-policy researchers, since it means DAF assets can grow tax-free for years before reaching a working charity.",
+      },
+      {
+        heading: "Deduction limits: 60% vs. 30% of AGI",
+        content:
+          "Cash gifts to a donor-advised fund are deductible up to 60% of your adjusted gross income, because the sponsoring organization is a public charity under [IRS Publication 526](https://www.irs.gov/publications/p526). Cash gifts to a private foundation are capped at 30% of AGI, a lower ceiling that applies to most non-operating private foundations.\n\nThat 30-percentage-point gap matters most for donors making a very large one-time gift, such as after selling a business. A donor giving cash equal to 50% of their AGI in a single year could deduct the full amount if it went to a DAF, but would have to carry forward the excess for up to five years if it went to a private foundation instead.\n\nNon-cash gifts, like appreciated stock or real estate, follow their own separate AGI limits and valuation rules for both structures — check Publication 526 or a tax professional before donating property.",
+      },
+      {
+        heading: "Control and privacy: the tradeoff most donors miss",
+        content:
+          "A donor-advised fund only gives you advisory privileges, not legal control. The sponsoring organization's board has final say over every grant, and most sponsors will step in and grant the money to a charity themselves if an account sits inactive for a few years.\n\nA private foundation gives you full legal control. You set the investment strategy, decide which charities receive money, and can even pay reasonable compensation to family members who work for the foundation — something a DAF never allows.\n\nPrivacy runs in the opposite direction. A DAF donor can request anonymity on every single grant, so a gift can show up at the receiving charity with no name attached. A private foundation has no equivalent option: it must file a public [Form 990-PF](https://www.irs.gov/charities-non-profits/public-disclosure-and-availability-of-exempt-organizations-returns-and-applications-requirements-for-private-foundations) every year, and unlike most other nonprofit tax filings, a foundation's 990-PF doesn't shield the names of its contributors from public view.",
+      },
+      {
+        heading: "Which structure fits your giving?",
+        content:
+          "Pick a donor-advised fund if you want to start giving this year, keep your name off individual gifts, or don't want to manage investment strategy and compliance yourself. It's also the practical choice for most donors giving under $1 million total, since a private foundation's fixed costs are hard to justify at a smaller scale.\n\nPick a private foundation if you want to employ your own staff, control every investment and grant decision, or build a giving vehicle you plan to run for decades, potentially across generations. The 1.39% excise tax and 5% payout requirement are real costs, but they come with real control in return.\n\nSome donors use both: a foundation for its structure and control, with a portion of its required 5% payout going into a DAF to give the family more time to choose specific grantees. For the broader estate-planning picture, see our [estate planning hub](/estate-planning/) and [tax tips guide](/guides/tax-tips/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a donor-advised fund or a private foundation better for taxes?",
+        answer:
+          "A donor-advised fund usually offers a better deduction, since cash gifts are deductible up to 60% of your AGI versus 30% for a private foundation. A private foundation also pays a 1.39% excise tax on investment income that a DAF doesn't pay, since a DAF isn't a separate taxable entity.",
+      },
+      {
+        question: "How much money do you need to start a private foundation?",
+        answer:
+          "There's no legal minimum, but most attorneys and wealth advisors suggest at least $1 million to justify the setup and ongoing compliance costs, which include legal fees, accounting, and the 1.39% excise tax. Below that scale, a donor-advised fund typically delivers similar giving power at a fraction of the cost.",
+      },
+      {
+        question: "Do donor-advised funds have to give away money every year?",
+        answer:
+          "No. There's currently no federal minimum payout requirement for donor-advised funds, unlike the 5% minimum distribution rule that applies to private foundations. Some individual DAF sponsors set their own inactivity policies, so check your sponsor's specific rules.",
+      },
+      {
+        question: "Can I control the investments in my donor-advised fund?",
+        answer:
+          "You can usually recommend an investment strategy from a menu of options, but the sponsoring organization holds legal control and makes the final decision. A private foundation gives you full control over investment strategy, which is one reason larger donors choose that structure instead.",
+      },
+      {
+        question: "Is a donor-advised fund anonymous?",
+        answer:
+          "Yes, you can request anonymity on individual grants, and the receiving charity won't see your name. A private foundation can't offer that privacy, because it must file a public Form 990-PF every year, and unlike most nonprofit filings, that form doesn't protect the names of its contributors.",
+      },
+      {
+        question: "Can a private foundation give money to a donor-advised fund?",
+        answer:
+          "Yes, and it's a common strategy. A grant from a private foundation to a DAF counts toward the foundation's required 5% annual payout, which gives the family more time to choose specific charities without missing the distribution deadline.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Tax on net investment income (private foundations)", url: "https://www.irs.gov/charities-non-profits/private-foundations/tax-on-net-investment-income" },
+      { label: "IRS — Minimum investment return (5% payout rule)", url: "https://www.irs.gov/charities-non-profits/private-foundations/minimum-investment-return" },
+      { label: "IRS Publication 526 — Charitable Contributions", url: "https://www.irs.gov/publications/p526" },
+      { label: "Fidelity Charitable — Giving Account", url: "https://www.fidelitycharitable.org/giving-account.html" },
+    ],
+    relatedComparisons: ["living-trust-vs-will", "revocable-vs-irrevocable-trust", "probate-vs-trust"],
+    calculatorLinks: [
+      { label: "Estate planning hub", href: "/estate-planning/" },
+      { label: "Tax tips guide", href: "/guides/tax-tips/" },
+    ],
+  },
+
+  {
+    slug: "target-date-fund-vs-sp500",
+    title: "Target-Date Fund vs. S&P 500 Index Fund: Compared",
+    metaDescription:
+      "Target-date fund vs. S&P 500 index fund: compare cost, diversification, and the glide path to decide which fits your 401(k) or IRA.",
+    targetKeyword: "target date fund vs sp500",
+    optionA: "Target-Date Fund",
+    optionB: "S&P 500 Index Fund",
+    segment: "Retirement accounts",
+    h1: "Target-Date Fund vs. S&P 500 Index Fund: Which Should You Hold?",
+    intro:
+      "A target-date fund automatically shifts from stocks toward bonds as your retirement year approaches and typically includes international stocks and bonds, while an S&P 500 index fund stays 100% invested in 500 large U.S. companies and costs less — and the choice comes down to whether you want a single, hands-off holding or you're willing to build and manage your own bond and international allocation to save on fees.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Diversification", a: "U.S. stocks, international stocks, and bonds in one fund", b: "500 large U.S. companies only — no bonds, no international stocks" },
+        { dimension: "Glide path", a: "Automatically shifts toward bonds as the target year nears", b: "Stays 100% invested in U.S. large-cap stocks indefinitely" },
+        { dimension: "Expense ratio (Vanguard example)", a: "0.08% — Target Retirement 2055 Fund", b: "0.03% — VOO" },
+        { dimension: "Expense ratio (Fidelity example)", a: "0.12% — Freedom Index 2055 Fund", b: "0.015% — FXAIX" },
+        { dimension: "Hands-on management required", a: "None — fully automatic", b: "You set and rebalance your own bond/international mix" },
+        { dimension: "Risk profile over time", a: "Decreases automatically as retirement nears", b: "Stays constant — full stock market risk at any age" },
+        { dimension: "Best for", a: "Investors who want one fund and no rebalancing", b: "Investors who want the lowest cost and full control over asset allocation" },
+      ],
+    },
+    verdict:
+      "Neither fund is better in the abstract, because they solve different problems. A target-date fund suits someone who wants to buy one fund, walk away, and trust the glide path to manage risk automatically as retirement gets closer; that convenience costs roughly 0.05 to 0.10 percentage points more per year than a plain S&P 500 fund at both Vanguard and Fidelity. An S&P 500 index fund suits someone who wants the lowest possible cost and is willing to add their own bond and international funds and rebalance that mix over time. If you're not sure you'll actually rebalance a DIY portfolio as you age, the target-date fund's automation is usually worth its small extra cost.",
+    sections: [
+      {
+        heading: "What a target-date fund actually holds",
+        content:
+          "A target-date fund is a single fund built from several other funds, automatically rebalanced to grow more conservative as your target retirement year approaches. Vanguard's Target Retirement 2055 Fund, for example, currently holds about 54% in a U.S. total stock market fund, 37% in international stocks, and the remaining roughly 9% split between U.S. and international bonds, based on Vanguard's own fund fact sheet.\n\nThat mix isn't fixed. As the fund approaches 2055, and for several years after, it will keep shifting a larger share of the portfolio into bonds, following a preset glide path. The fund's own literature describes the strategy as designed for investors planning to retire and leave the workforce in or within a few years of the target year.\n\nAn S&P 500 index fund does none of this. It holds the same 500 U.S. companies at every age, with no bonds and no international exposure, and the mix never shifts on its own.",
+      },
+      {
+        heading: "The cost gap between the two, at two major providers",
+        content:
+          "At [Vanguard](https://investor.vanguard.com), the Target Retirement 2055 Fund charges a 0.08% expense ratio, versus 0.03% for VOO, the Vanguard S&P 500 ETF — a gap of 0.05 percentage points, both confirmed directly from Vanguard's own fund fact sheets.\n\nAt [Fidelity](https://www.fidelity.com), the gap runs a bit wider: the Freedom Index 2055 Fund charges 0.12% versus just 0.015% for the Fidelity 500 Index Fund (FXAIX), a difference of about 0.105 percentage points, confirmed in Fidelity's own SEC-filed prospectuses.\n\nNeither gap is large in isolation, but it buys you real diversification and automatic rebalancing. The extra fee is effectively what you're paying someone else to manage your bond and international allocation and adjust it every year without you having to think about it.",
+      },
+      {
+        heading: "Diversification: what you're missing with an S&P 500-only portfolio",
+        content:
+          "An S&P 500 index fund excludes small-cap U.S. stocks, all international stocks, and every bond, which means its performance depends entirely on 500 large American companies. That concentration has worked well over long stretches of U.S. market history, but it means a downturn concentrated in large-cap U.S. tech, for example, hits your entire portfolio at once.\n\nA target-date fund spreads that risk across U.S. small- and mid-cap stocks, developed and emerging international markets, and a mix of government and corporate bonds. The bond allocation does most of the work of cushioning a portfolio's swings as retirement approaches, since bonds typically fall less than stocks during a market downturn.\n\nThe [asset allocation calculator](/portfolio/asset-allocation-calculator/) can help you see what a similar stock/bond/international mix would look like if you built it yourself instead of buying a target-date fund.",
+      },
+      {
+        heading: "The non-obvious risk of holding an S&P 500 fund alone",
+        content:
+          "The failure mode with an S&P 500-only strategy isn't the index itself — it's what happens if you never add anything else and never adjust as you age. A 25-year-old holding 100% S&P 500 stock exposure is taking on a reasonable amount of risk for a decades-long time horizon. That same 100% stock exposure at age 63, two years from retirement, is a very different risk, and nothing about an S&P 500 fund will warn you or adjust for you.\n\nA target-date fund's whole design exists to prevent that specific mistake: the glide path automatically reduces stock exposure as the target year approaches, without requiring you to remember to do it yourself or correctly judge when the time has come.\n\nIf you go the S&P 500-only route, the real commitment isn't picking the fund — it's actually adding bonds and rebalancing on a schedule as you age. Our [guide to picking a target-date fund](/guides/what-target-date-fund-should-i-choose/) walks through how to evaluate a target-date series if you decide the automation is worth the extra cost.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a target-date fund better than an S&P 500 fund?",
+        answer:
+          "Neither is universally better. A target-date fund suits someone who wants automatic diversification and rebalancing, while an S&P 500 fund suits someone who wants the lowest possible cost and is willing to build their own bond and international allocation. The right choice depends on whether you'll actually manage a DIY portfolio as you age.",
+      },
+      {
+        question: "How much more does a target-date fund cost than an S&P 500 fund?",
+        answer:
+          "At Vanguard, the Target Retirement 2055 Fund costs 0.08% versus 0.03% for the Vanguard S&P 500 ETF (VOO), a 0.05-percentage-point gap. At Fidelity, the Freedom Index 2055 Fund costs 0.12% versus 0.015% for the Fidelity 500 Index Fund (FXAIX), a wider 0.105-percentage-point gap.",
+      },
+      {
+        question: "Does a target-date fund include international stocks?",
+        answer:
+          "Most do. Vanguard's Target Retirement 2055 Fund, for example, currently holds roughly 37% of its stock allocation in international stocks alongside U.S. stocks and bonds. A plain S&P 500 index fund holds none of that — it's limited to 500 large U.S. companies.",
+      },
+      {
+        question: "Can I hold both a target-date fund and an S&P 500 fund?",
+        answer:
+          "You can, but it usually defeats the purpose of the target-date fund. Adding a separate S&P 500 fund on top increases your real stock allocation beyond what the target-date fund's glide path intends, since the target-date fund can only rebalance the money it directly holds.",
+      },
+      {
+        question: "Is an S&P 500 fund too risky for retirement savings?",
+        answer:
+          "Not inherently, but holding 100% stocks with no adjustment as you age raises your risk right when you can least afford a downturn. Many investors who choose an S&P 500 fund pair it with separate bond and international funds and manually shift the mix as retirement nears, which is exactly what a target-date fund does automatically.",
+      },
+      {
+        question: "Which is simpler for a beginner, a target-date fund or an S&P 500 fund?",
+        answer:
+          "A target-date fund is simpler, since it's a single, complete portfolio that rebalances itself. An S&P 500 fund is simple to buy but leaves diversification and rebalancing entirely up to you, which takes more ongoing attention as retirement gets closer.",
+      },
+    ],
+    sources: [
+      { label: "Vanguard — Target Retirement 2055 Fund fact sheet", url: "https://workplace.vanguard.com/iippdf/pdfs/FS1487.pdf" },
+      { label: "Vanguard — VOO fund fact sheet", url: "https://fund-docs.vanguard.com/F0968.pdf" },
+      { label: "SEC — Fidelity Freedom Index 2055 Fund summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/880195/000088019525000860/filing9673.htm" },
+      { label: "SEC — Fidelity 500 Index Fund (FXAIX) summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/819118/000081911825000146/filing8627.htm" },
+    ],
+    relatedComparisons: ["voo-vs-spy", "index-fund-vs-etf", "stocks-vs-bonds", "etf-vs-mutual-fund"],
+    calculatorLinks: [
+      { label: "S&P 500 calculator", href: "/investing/sp500-calculator/" },
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
