@@ -93,17 +93,25 @@ def freshest_date_with_data(session, property_id: str) -> str | None:
     return max(dates) if dates else None
 
 
-def top10_pages(session, property_id: str, day: str) -> list[dict]:
+def top_pages(session, property_id: str, start: str, end: str, top: int,
+              with_engagement: bool = False) -> list[dict]:
+    metrics = [
+        {"name": "screenPageViews"},
+        {"name": "sessions"},
+        {"name": "totalUsers"},
+    ]
+    if with_engagement:
+        metrics += [
+            {"name": "userEngagementDuration"},
+            {"name": "engagementRate"},
+            {"name": "bounceRate"},
+        ]
     body = {
-        "dateRanges": [{"startDate": day, "endDate": day}],
+        "dateRanges": [{"startDate": start, "endDate": end}],
         "dimensions": [{"name": "pagePath"}],
-        "metrics": [
-            {"name": "screenPageViews"},
-            {"name": "sessions"},
-            {"name": "totalUsers"},
-        ],
+        "metrics": metrics,
         "orderBys": [{"metric": {"metricName": "screenPageViews"}, "desc": True}],
-        "limit": 10,
+        "limit": top,
     }
     resp = run_report(session, property_id, body)
     rows = []
@@ -111,24 +119,66 @@ def top10_pages(session, property_id: str, day: str) -> list[dict]:
         page = row["dimensionValues"][0]["value"]
         m = row["metricValues"]
         views = int(m[0]["value"])
-        rows.append({
+        active_users = int(m[2]["value"])
+        out = {
             "page": page,
             "views": views,
             "sessions": int(m[1]["value"]),
-            "active_users": int(m[2]["value"]),
+            "active_users": active_users,
             # compatibility alias so the GSC-shaped Phase 1 trigger runs unchanged:
             "clicks": views,
-        })
-    return rows[:10]
+        }
+        if with_engagement:
+            eng_duration_s = float(m[3]["value"])
+            out["avg_eng_s"] = round(eng_duration_s / active_users, 1) if active_users else 0.0
+            out["engagement_rate"] = round(float(m[4]["value"]), 4)
+            out["bounce_rate"] = round(float(m[5]["value"]), 4)
+        rows.append(out)
+    return rows[:top]
 
 
-def channel_split(session, property_id: str, day: str, pages: list[str]) -> dict:
+def scrolled_pct_by_page(session, property_id: str, start: str, end: str,
+                          pages: list[dict]) -> None:
+    """Share of active users who fired the default 90%-scroll event, per page.
+
+    Mutates `pages` in place, adding scrolled_users / scrolled_pct. Silently
+    no-ops (leaves the fields absent) on properties without enhanced-measurement
+    scroll tracking — callers must treat scrolled_pct as optional.
+    """
+    body = {
+        "dateRanges": [{"startDate": start, "endDate": end}],
+        "dimensions": [{"name": "pagePath"}],
+        "metrics": [{"name": "activeUsers"}],
+        "dimensionFilter": {
+            "filter": {"fieldName": "eventName", "stringFilter": {"value": "scroll"}}
+        },
+        "limit": 200,
+    }
+    try:
+        resp = run_report(session, property_id, body)
+    except Exception as exc:  # noqa: BLE001 — best-effort, property may lack scroll tracking
+        print(f"WARNING: scroll-depth metric unavailable ({exc}); skipping scrolled_pct.",
+              file=sys.stderr)
+        return
+    scrolled = {
+        row["dimensionValues"][0]["value"]: int(row["metricValues"][0]["value"])
+        for row in resp.get("rows", [])
+    }
+    for p in pages:
+        su = scrolled.get(p["page"])
+        if su is None:
+            continue
+        p["scrolled_users"] = su
+        p["scrolled_pct"] = round(su / p["active_users"], 4) if p["active_users"] else 0.0
+
+
+def channel_split(session, property_id: str, start: str, end: str, pages: list[str]) -> dict:
     """Per-page sessions by default channel group (Direct/Referral/Organic/…),
-    scoped to the top-10 pages. This is where AI/Direct traffic becomes visible."""
+    scoped to the top pages. This is where AI/Direct traffic becomes visible."""
     if not pages:
         return {}
     body = {
-        "dateRanges": [{"startDate": day, "endDate": day}],
+        "dateRanges": [{"startDate": start, "endDate": end}],
         "dimensions": [{"name": "pagePath"}, {"name": "sessionDefaultChannelGroup"}],
         "metrics": [{"name": "sessions"}],
         "dimensionFilter": {
@@ -156,6 +206,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--sa-file", help="Service-account JSON path override.")
     ap.add_argument("--with-channels", action="store_true",
                     help="Add per-page channel split (Direct/Referral/etc.).")
+    ap.add_argument("--with-engagement", action="store_true",
+                    help="Add avg_eng_s, engagement_rate, bounce_rate, scrolled_pct per page.")
+    ap.add_argument("--days", type=int, default=1,
+                    help="Window size in days, ending on the freshest day with data (default 1).")
+    ap.add_argument("--top", type=int, default=10,
+                    help="Number of top pages to return, ranked by views (default 10).")
     ap.add_argument("--json", help="Write result to file instead of stdout.")
     args = ap.parse_args(argv)
 
@@ -166,16 +222,24 @@ def main(argv: list[str] | None = None) -> int:
     creds = _with_ga4_scope(load_credentials(args.sa_file))
     session = build_session(creds)
 
-    day = freshest_date_with_data(session, args.property_id)
-    if not day:
+    end = freshest_date_with_data(session, args.property_id)
+    if not end:
         print(f"ERROR: no GA4 data in the last 4 days for property {args.property_id}",
               file=sys.stderr)
         return 5
+    start = (date.fromisoformat(end) - timedelta(days=args.days - 1)).isoformat()
 
-    pages = top10_pages(session, args.property_id, day)
+    pages = top_pages(session, args.property_id, start, end, args.top,
+                       with_engagement=args.with_engagement)
+    if args.with_engagement:
+        scrolled_pct_by_page(session, args.property_id, start, end, pages)
+
     payload = {
         "property_id": args.property_id,
-        "data_date": day,
+        "data_date": end,
+        "window_start": start,
+        "window_end": end,
+        "window_days": args.days,
         "source": "ga4",
         "top_pages": pages,
         "top10_pages_total_views": sum(p["views"] for p in pages),
@@ -183,14 +247,14 @@ def main(argv: list[str] | None = None) -> int:
     }
     if args.with_channels:
         payload["channel_split"] = channel_split(
-            session, args.property_id, day, [p["page"] for p in pages]
+            session, args.property_id, start, end, [p["page"] for p in pages]
         )
 
     if args.json:
         Path(args.json).parent.mkdir(parents=True, exist_ok=True)
         with open(args.json, "w") as f:
             json.dump(payload, f, indent=2)
-        print(f"Wrote GA4 pull for {day} to {args.json}", file=sys.stderr)
+        print(f"Wrote GA4 pull for {start}..{end} to {args.json}", file=sys.stderr)
     else:
         json.dump(payload, sys.stdout, indent=2)
         sys.stdout.write("\n")
