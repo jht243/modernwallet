@@ -429,9 +429,9 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
   {
     calculator: "investing",
     slug: "withdrawal-calculator",
-    title: "Investment Withdrawal Calculator: How Long It Lasts",
+    title: "Withdrawal Calculator: How Long Will Your Money Last?",
     metaDescription:
-      "See how long your portfolio lasts at a given monthly withdrawal rate. Understand the 4% rule and sustainable withdrawal rates for retirement.",
+      "See how long your withdrawals last (also called a drawdown calculator) based on your balance, withdrawal amount, and expected return. Includes the 4% rule.",
     targetKeyword: "investment withdrawal calculator",
     estimatedVolume: 12100,
     estimatedKD: 41,
@@ -479,6 +479,11 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
         question: "Is this the same as a drawdown calculator?",
         answer:
           "Yes — \"drawdown\" is another common term for the same thing this calculator does: modeling how a portfolio balance shrinks (or grows) as you take regular withdrawals from it. Whether you search for \"withdrawal calculator\" or \"drawdown calculator,\" you're looking for the same projection — enter your balance, your withdrawal amount, and an expected return, and see how many years the money lasts.",
+      },
+      {
+        question: "What is an income withdrawal calculator?",
+        answer:
+          "\"Income withdrawal calculator\" is another common name for this same tool, usually used by people planning retirement paycheck income rather than a one-time payout. The math is identical either way: enter your balance, your planned withdrawal amount, and an expected return, and the projection shows how many years that income holds up — the same numbers work whether you think of the output as \"years remaining\" or as a monthly retirement paycheck.",
       },
     ],
     sources: [

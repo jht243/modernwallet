@@ -59,3 +59,7 @@
 | /roundup/best-401k-providers-for-small-business/ | 2026-07-28 | 1 | 0/1/1/1/0 | 0 |
 | /roundup/best-index-funds/ | 2026-07-29 | 0 | 0/0/1/1/0 | 0 |
 | /roundup/best-budgeting-apps-for-couples/ | 2026-07-29 | 1 | 0/0/0/1/0 | 0 |
+| / | 2026-08-08 | 1 | 0/0/0/0/0 | 0 |
+| /interest-per-day/ | 2026-08-08 | 2 | 0/0/1/0/0 | 0 |
+| /investing/withdrawal-calculator/ | 2026-08-08 | 2 | 0/0/1/1/0 | 1 |
+| /compare/401k-vs-roth-ira/ | 2026-08-08 | 1 | 0/1/1/0/0 | 1 |

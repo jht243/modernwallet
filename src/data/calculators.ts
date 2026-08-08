@@ -907,6 +907,16 @@ export const CALCULATORS: CalculatorDef[] = [
         answer:
           "Your stated interest rate is the simple annual rate before compounding. The annual percentage yield (APY) restates that same rate after accounting for how often it compounds — daily compounding means each day's interest starts earning its own interest, so the total collected over a year is slightly more than the simple rate alone would produce. The more frequently a rate compounds, the larger this gap becomes.",
       },
+      {
+        question: "What's the Excel formula for daily interest?",
+        answer:
+          "In Excel or Google Sheets, simple daily interest is =Principal*(Rate/365), where Rate is entered as a decimal (4.5% as 0.045). For $10,000 at 4.5%, that's =10000*(0.045/365), which returns $1.23 — matching the calculator above. To project a balance that compounds daily instead of just totaling flat daily interest, use =Principal*(1+Rate/365)^Days in place of simple multiplication.",
+      },
+      {
+        question: "How do I calculate interest that compounds daily?",
+        answer:
+          "Daily compounding uses A = P × (1 + r/365)^n, where P is the principal, r is the annual rate as a decimal, and n is the number of days. For $10,000 at 4.5% compounded daily over 365 days, that's 10000 × (1.000123)^365 ≈ $10,460 — the extra $460, versus $450 under simple interest, is exactly the APY gap this calculator's effective-yield figure shows.",
+      },
     ],
     sources: [
       { label: "Consumer Financial Protection Bureau — 12 CFR Part 1030 (Regulation DD), Appendix A: Annual Percentage Yield Calculation", url: "https://www.consumerfinance.gov/rules-policy/regulations/1030/A" },

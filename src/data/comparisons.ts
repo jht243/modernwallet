@@ -104,6 +104,21 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "You can withdraw your Roth IRA contributions (not earnings) at any time without penalty. To withdraw earnings tax-free, the account must be at least 5 years old and you must be 59½ or older.",
       },
+      {
+        question: "What are the 401(k) and Roth IRA contribution limits for 2026?",
+        answer:
+          "For 2026, the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the 401(k) employee contribution limit at $24,500 ($32,500 if you're 50 or older, or $35,750 for ages 60–63 under SECURE 2.0's enhanced catch-up), and the Roth IRA limit at $7,500 ($8,600 if 50 or older). The two limits are independent — contributing the max to one doesn't reduce how much you can put in the other.",
+      },
+      {
+        question: "Did 401(k) and Roth IRA limits go up for 2026?",
+        answer:
+          "Yes. The 401(k) limit rose from $23,500 in 2025 to $24,500 in 2026, and the IRA/Roth IRA limit rose from $7,000 to $7,500, per IRS guidance.",
+      },
+      {
+        question: "Is maxing out a 401(k) and Roth IRA enough for retirement?",
+        answer:
+          "For most savers, maxing both — $24,500 plus $7,500, or $32,000 a year at the 2026 limits — builds substantial retirement savings over a full career. Whether it's \"enough\" for you specifically also depends on your employer match, planned retirement age, and expected spending; run your own numbers with the [401(k) calculator](/retirement/401k-calculator/).",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) plan overview", url: "https://www.irs.gov/retirement-plans/401k-plans" },
@@ -113,6 +128,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     relatedComparisons: ["roth-401k-vs-traditional-401k", "brokerage-vs-ira", "529-vs-roth-ira", "rollover-ira-vs-roth-ira"],
     calculatorLinks: [
       { label: "Retirement calculator", href: "/retirement/" },
+      { label: "401(k) calculator", href: "/retirement/401k-calculator/" },
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Net worth calculator", href: "/net-worth/" },
     ],

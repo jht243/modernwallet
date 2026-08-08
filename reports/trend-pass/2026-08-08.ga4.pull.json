@@ -1,0 +1,55 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-08",
+  "window_start": "2026-08-08",
+  "window_end": "2026-08-08",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/interest-per-day/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/401k-vs-roth-ira/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/compare/401k-vs-roth-ira/": {
+      "Unassigned": 1
+    },
+    "/interest-per-day/": {
+      "Direct": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 1
+    }
+  }
+}
