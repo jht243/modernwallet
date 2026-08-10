@@ -29745,11 +29745,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/reviews/capital-one-quicksilver-cash-rewards-credit-card": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:e960599eae791e4d07b14397953c016f0b41100d8bf272add0c961fb8803ce7d",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T19:30:13+00:00",
+          "our_url": "",
           "outline": [
             "Advertiser Disclosure",
             "Share",
@@ -29799,7 +29803,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Capital One Quicksilver Cash Rewards Credit Card Review | Bankrate",
           "tool_io": []
         },
@@ -29852,11 +29856,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/reviews/capital-one-savor-card": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:86a6b939f453f2bc846231b98d6527934925feb2bd044716b209e2e19f86e718",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T19:39:22+00:00",
+          "our_url": "",
           "outline": [
             "Advertiser Disclosure",
             "Share",
@@ -29897,7 +29905,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Capital One Savor Cash Rewards Credit Card Review | Bankrate",
           "tool_io": []
         },
@@ -32395,11 +32403,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/reviews/td-bank-flexpay": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:276584af413108f2e2bf258569f47ca51684ffaab12fb35c61ec20955b5f77ef",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T19:32:32+00:00",
+          "our_url": "",
           "outline": [
             "Advertiser Disclosure",
             "Share",
@@ -32444,7 +32456,7 @@
             "credit",
             "save money"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "TD Bank FlexPay review | Bankrate",
           "tool_io": []
         },
@@ -131494,11 +131506,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/free-credit-report": {
+          "acted": true,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:29a00d65cda51565af8d99ac49f218d24bb73ad46bb0581b3651a6497cd0fe8e",
+          "disposition": "enriched",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2024-02-02T11:45:38-08:00",
+          "our_url": "/guides/what-is-a-good-credit-score/",
           "outline": [
             "Your free credit report with NerdWallet unlocks",
             "Trusted by 14M+ users like you",
@@ -131511,16 +131527,20 @@
             "credit",
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Get Your Free Credit Report From NerdWallet - NerdWallet",
           "tool_io": []
         },
         "https://www.nerdwallet.com/free-credit-score": {
+          "acted": true,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:e2f98df333076c52e6b9114f8335bfa1d83ca44883143c0614f305684d3dca4e",
+          "disposition": "enriched",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2024-02-02T11:41:48-08:00",
+          "our_url": "/guides/what-is-a-good-credit-score/",
           "outline": [
             "Track your credit score with the NerdWallet app",
             "Your free credit score with NerdWallet unlocks",
@@ -131533,7 +131553,7 @@
             "credit",
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Get Your Free Credit Score From NerdWallet - NerdWallet",
           "tool_io": []
         },
@@ -158652,11 +158672,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-august-10-2026": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:2d02d137eb29e1ca24b30b4637eb11a2958f4bbc7e0f5a29ddf870e0c9c1bf46",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T06:36:42-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -158671,7 +158695,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Monday, August 10: A Little Higher - NerdWallet",
           "tool_io": []
         },
@@ -162415,11 +162439,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/personal-loans/reviews/happen-bank-personal-loans": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:a5ec4208c601e3a996259991f710988df4a80197a7937dc080acf718201386c0",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "What to know about Happen Bank (formerly LendingClub) personal loans",
             "What we like most about Happen Bank (formerly LendingClub)",
@@ -162436,7 +162464,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Happen Bank (formerly LendingClub) 2026 Personal Loan Review - NerdWallet",
           "tool_io": []
         },
@@ -162632,11 +162660,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/personal-loans/reviews/patelco-personal-loans": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:f10716d621925920445fa3bc83493ca958eff73aa516d91bbe9bf24eb0ea2475",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "What to know about Patelco Credit Union\u2019s personal loans",
             "What we like most about Patelco",
@@ -162653,7 +162685,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Patelco Credit Union 2026 Personal Loan Review - NerdWallet",
           "tool_io": []
         },
@@ -290024,11 +290056,15 @@
           "tool_io": []
         },
         "https://www.omnicalculator.com/statistics/uncertainty": {
+          "acted": false,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:d74cdf1ea31de3fab039238f908174730c51902ab6e2ba14e0de77eebc05e2ab",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-10",
           "kind": "tool",
           "last_seen": "2026-08-10",
           "lastmod": "2026-08-10T14:17:45.947Z",
+          "our_url": "",
           "outline": [
             "What is uncertainty?",
             "How to calculate uncertainty",
@@ -290046,7 +290082,7 @@
           "relevance_hits": [
             "calculator"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Uncertainty Calculator",
           "tool_io": [
             "label: X",
@@ -325711,11 +325747,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/what-is-cfa": {
+          "acted": true,
+          "acted_date": "2026-08-10",
           "content_hash": "sha256:24359b99647a8210751e612fdd0114ade28fded708eb1a04b804b762463b2e66",
+          "disposition": "published",
           "first_seen": "2026-08-10",
           "kind": "page",
           "last_seen": "2026-08-10",
           "lastmod": "2026-03-20T04:24:14+00:00",
+          "our_url": "/guides/what-is-a-cfa/",
           "outline": [
             "What Is a Chartered Financial Analyst?",
             "Who\u2019s Eligible to Become a Chartered Financial Analyst?",
@@ -325728,7 +325768,7 @@
             "financial",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Chartered Financial Analyst (CFA)? - SmartAsset",
           "tool_io": []
         },
