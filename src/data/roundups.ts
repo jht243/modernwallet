@@ -1178,6 +1178,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "A money market account is a bank deposit product — FDIC insured, offered by banks and credit unions. A money market fund is a type of mutual fund that invests in short-term, high-quality debt securities — it is not FDIC insured but aims to maintain a stable $1 per share value. Both serve as cash-parking options, but they are regulated differently: bank accounts fall under FDIC rules, while money market funds are SEC-regulated investment products. For most savers prioritizing safety, a bank money market account is the simpler choice.",
       },
+      {
+        question: "How is APY calculated on a money market account?",
+        answer:
+          "APY (annual percentage yield) accounts for compounding — it's the total return you'd earn in a year including interest earned on previously credited interest, not just the stated interest rate. Most money market accounts compound daily and credit interest monthly, so a 4.00% APY with daily compounding pays slightly more over a year than a 4.00% simple interest rate would. Banks are required to advertise APY (not just the interest rate) so you can compare accounts on an apples-to-apples basis — always compare APY, not the underlying interest rate, when shopping between accounts.",
+      },
     ],
     sources: [
       { label: "FDIC — Deposit Insurance Coverage", url: "https://www.fdic.gov/resources/deposit-insurance/financial-products-insured/index.html" },
@@ -1187,6 +1192,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd"],
     calculatorLinks: [
       { label: "Investment Growth Calculator", href: "/investing/" },
+      { label: "High-Yield Savings Calculator", href: "/investing/high-yield-savings-calculator/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
     ],
   },

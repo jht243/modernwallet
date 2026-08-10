@@ -1,0 +1,126 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-09",
+  "window_start": "2026-08-09",
+  "window_end": "2026-08-09",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 9,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 8,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 8
+    },
+    {
+      "page": "/portfolio/asset-allocation-calculator/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/compare/529-vs-utma/",
+      "views": 3,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 3
+    },
+    {
+      "page": "/compare/trump-account-vs-529/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/compliance/colorado-cottage-foods-act-expansion/",
+      "views": 3,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    }
+  ],
+  "top10_pages_total_views": 45,
+  "top10_pages_total_clicks": 45,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 8,
+      "Unassigned": 4,
+      "Direct": 1
+    },
+    "/portfolio/asset-allocation-calculator/": {
+      "Direct": 6,
+      "Unassigned": 1
+    },
+    "/": {
+      "Referral": 5,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 4,
+      "Unassigned": 2
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/compare/trump-account-vs-529/": {
+      "Direct": 2,
+      "Unassigned": 2
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/compare/529-vs-utma/": {
+      "Organic Search": 1
+    },
+    "/compliance/colorado-cottage-foods-act-expansion/": {
+      "AI Assistant": 1,
+      "Unassigned": 1
+    },
+    "/guides/": {
+      "Direct": 1,
+      "Referral": 1
+    }
+  }
+}

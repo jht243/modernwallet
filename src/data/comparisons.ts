@@ -1829,9 +1829,9 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   {
     slug: "trump-account-vs-529",
-    title: "Trump Account vs 529 Plan: Which Wins for Kids?",
+    title: "Trump Account vs 529: What's the Difference?",
     metaDescription:
-      "Trump Account vs 529: the Trump Account is tax-deferred and usable for anything at 18; a 529 is tax-free but school-only. See which savings option fits.",
+      "Trump Account vs 529 (sometimes called a 530A account): one is tax-deferred and usable for anything at 18, the other is tax-free but school-only. Compare.",
     targetKeyword: "trump account vs 529",
     optionA: "Trump Account",
     optionB: "529 Plan",
@@ -1879,6 +1879,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "How much can a Trump Account grow by age 18?", answer: "A Trump Account's $1,000 seed alone grows to about $3,513 by age 18 at a 7% return. Adding $200 a month brings it to roughly $89,657, and contributing the $5,000 yearly maximum from birth reaches about $182,980. Run your own numbers with the [Trump Account calculator](/trump-account/)." },
       { question: "Does a Trump Account get a state tax deduction like a 529?", answer: "No, a Trump Account does not offer a state tax deduction. Contributions are after-tax and not deductible on either federal or state returns. Most 529 plans, by contrast, give residents a state income-tax deduction or credit on their contributions." },
       { question: "What happens to a 529 if the child skips college?", answer: "Unused 529 funds have several options if the child skips college. You can change the beneficiary to another family member, or roll up to $35,000 into the beneficiary's Roth IRA under SECURE 2.0 rules. Cashing out for non-education use triggers income tax plus a 10% penalty on the earnings." },
+      { question: "Is a Trump Account the same as a 530A account?", answer: "Yes. \"Trump Account\" is the common name; the account was codified into the tax code as new Internal Revenue Code Section 530A, so \"530A account\" and \"Trump Account\" refer to the same thing. It sits next to Section 530, which covers Coverdell education savings accounts — a separate account type from either a Trump Account or a 529 plan." },
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
@@ -2137,8 +2138,8 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   {
     slug: "529-vs-utma",
-    title: "529 vs UTMA: Which Kids Account Wins?",
-    metaDescription: "529 vs UTMA compared: a 529 is tax-free but education-only with a light FAFSA hit, while a UTMA is flexible but kiddie-taxed and becomes the child's at 18.",
+    title: "529 vs UTMA: Which Is Better for Your Child? (2026)",
+    metaDescription: "529 vs UTMA compared: taxes, financial aid impact, and contribution limits — plus can you convert a UTMA to a 529? See which account wins for your family.",
     targetKeyword: "529 vs utma",
     optionA: "529 Plan",
     optionB: "UTMA / Custodial Account",
@@ -2167,6 +2168,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "Does a UTMA hurt financial aid more than a 529?", answer: "Yes. A UTMA is counted as the student's asset and assessed at 20% on the FAFSA, while a parent-owned 529 is a parental asset assessed at up to 5.64%, so the same balance in a UTMA reduces aid more." },
       { question: "Can my child spend a UTMA on anything?", answer: "Yes, once your child reaches the age of majority (18 to 21, up to 25 in some states), they take full control of the UTMA and can legally spend the entire balance on anything. A 529 stays under the account owner's control." },
       { question: "What happens if I don't use 529 money for school?", answer: "Non-qualified 529 withdrawals owe income tax plus a 10% penalty on the earnings portion. You can avoid this by changing the beneficiary or rolling up to $35,000 of unused funds into the beneficiary's Roth IRA if the account is at least 15 years old." },
+      { question: "Can I convert a UTMA to a 529 plan?", answer: "Not directly — you can't roll UTMA assets into a 529 tax-free. The custodian sells the UTMA's holdings (which can trigger capital gains tax under the kiddie tax) and moves the cash into a custodial 529 plan for the same child. A custodial 529 still legally belongs to the child, unlike a standard parent-owned 529, so it becomes theirs at the age of majority just like the UTMA would have." },
     ],
     sources: [
       { label: "IRS Topic 313: Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
@@ -2267,9 +2269,9 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Custodial Roth IRA vs Brokerage Account (ga4-top-pages pass 2026-07-08) ──
   {
     slug: "custodial-roth-ira-vs-brokerage-account",
-    title: "Custodial Roth IRA vs Brokerage Account for Kids",
+    title: "Custodial Roth IRA vs Brokerage Account for Kids (2026)",
     metaDescription:
-      "Custodial Roth IRA vs brokerage account: the Roth needs a job but grows tax-free for retirement, while a brokerage account is taxable but unrestricted.",
+      "Custodial Roth IRA vs brokerage account: the Roth needs a job but grows tax-free; the brokerage account is taxable but open to anyone, no income rule.",
     targetKeyword: "custodial roth ira vs brokerage account",
     optionA: "Custodial Roth IRA",
     optionB: "Custodial Brokerage Account",
@@ -2338,6 +2340,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "A custodial brokerage account hurts financial aid more. It counts as the student's own asset on the FAFSA and is assessed at up to 20%. Retirement accounts, including a custodial Roth IRA, are not reported as assets on the FAFSA at all, making the Roth the gentler option for aid eligibility.",
       },
+      {
+        question: "Can my 18-year-old just open their own brokerage account instead?",
+        answer:
+          "Yes. Once a child turns 18 (the general age of majority for brokerage purposes), they can open a regular, non-custodial brokerage account in their own name with no custodian involved. That's different from a custodial Roth IRA, which has no age gate but does require documented earned income to fund — an 18-year-old with no job still can't contribute to a Roth, custodial or otherwise, until they earn money.",
+      },
     ],
     sources: [
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
@@ -2345,7 +2352,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
     ],
     relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira"],
-    calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
+    calculatorLinks: [ { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" }, { label: "Investment calculator", href: "/investing/" } ],
   },
 
   // ─── Custodial Roth IRA vs Traditional IRA (ga4-top-pages pass 2026-07-18) ──

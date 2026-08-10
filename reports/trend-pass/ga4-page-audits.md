@@ -63,3 +63,12 @@
 | /interest-per-day/ | 2026-08-08 | 2 | 0/0/1/0/0 | 0 |
 | /investing/withdrawal-calculator/ | 2026-08-08 | 2 | 0/0/1/1/0 | 1 |
 | /compare/401k-vs-roth-ira/ | 2026-08-08 | 1 | 0/1/1/0/0 | 1 |
+| /guides/trump-gold-coin/ | 2026-08-10 | 8 | 0/0/1/0/0 | 0 |
+| /portfolio/asset-allocation-calculator/ | 2026-08-10 | 7 | 1/0/2/0/0 | 1 |
+| /roundup/best-money-market-accounts/ | 2026-08-10 | 5 | 0/1/1/0/1 | 0 |
+| /compare/529-vs-utma/ | 2026-08-10 | 3 | 0/0/1/1/0 | 0 |
+| /compare/trump-account-vs-529/ | 2026-08-10 | 3 | 0/0/1/1/0 | 0 |
+| /compliance/colorado-cottage-foods-act-expansion/ | 2026-08-10 | 3 | 0/0/0/0/0 | 0 |
+| /guides/custodial-account-taxes-kiddie-tax/ | 2026-08-10 | 3 | 0/0/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-10 | 2 | 0/1/1/1/0 | 1 |
+| /guides/ | 2026-08-10 | 2 | 0/0/0/0/0 | 1 |
