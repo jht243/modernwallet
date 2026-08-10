@@ -220,7 +220,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
     intro:
       "Rental property depreciation lets you deduct the cost of the building — not the land — over 27.5 years using straight-line depreciation, as required by IRS Publication 527. This deduction reduces your taxable rental income each year without any out-of-pocket cost, making it one of the most valuable tax advantages of owning residential rental property. Use the calculator above to model your property's cash flow, then read on to understand how the depreciation deduction layers on top.",
     howItWorks:
-      "The IRS requires residential rental property to be depreciated over 27.5 years using straight-line depreciation (equal deductions each year). The depreciable basis is the purchase price plus acquisition costs minus the value allocated to land. Land is never depreciable — only the structure qualifies.\n\nFormula: Depreciable basis = (Purchase price + closing costs) × (1 − land value percentage). Annual depreciation = Depreciable basis ÷ 27.5.\n\nExample: a $300,000 property where land is 20% of value. Depreciable basis = $300,000 × 0.80 = $240,000. Annual depreciation deduction = $240,000 ÷ 27.5 = $8,727. That $8,727 deduction reduces your Schedule E taxable income each year for 27.5 years. The land-to-structure split is typically found in the county property tax assessment or a professional appraisal. IRS guidance allows you to use the assessed value ratio if a separate land appraisal is unavailable.",
+      "The IRS requires residential rental property to be depreciated over 27.5 years using straight-line depreciation (equal deductions each year). The depreciable basis is the purchase price plus acquisition costs minus the value allocated to land. Land is never depreciable — only the structure qualifies.\n\nFormula: Depreciable basis = (Purchase price + closing costs) × (1 − land value percentage). Annual depreciation = Depreciable basis ÷ 27.5.\n\nExample: a $300,000 property where land is 20% of value. Depreciable basis = $300,000 × 0.80 = $240,000. Annual depreciation deduction = $240,000 ÷ 27.5 = $8,727. That $8,727 deduction reduces your Schedule E taxable income each year for 27.5 years. The land-to-structure split is typically found in the county property tax assessment or a professional appraisal. IRS guidance allows you to use the assessed value ratio if a separate land appraisal is unavailable.\n\nThe 27.5-year schedule above is only for the building's own structure. Shorter-lived components inside it — appliances, carpeting, certain fencing and land improvements — carry their own, much shorter IRS recovery periods (often 5, 7, or 15 years) when broken out through a cost segregation study instead of being lumped into the 27.5-year building basis. The 2025 One Big Beautiful Bill Act (OBBBA) permanently reinstated 100% bonus depreciation for this kind of qualified property acquired after January 19, 2025, meaning a component with a recovery period of 20 years or less can be deducted in full the year it's placed in service rather than spread out. The IRS detailed the mechanics in Notice 2026-11, issued January 14, 2026.\n\nA related but separate provision — Qualified Improvement Property (QIP) — also now qualifies for the same 100% bonus rate, but QIP specifically covers interior, non-structural improvements to a NONresidential (commercial) building, not a residential rental's structure. If you also own commercial or mixed-use rental space, an interior renovation there can qualify; a residential rental's own structure still depreciates under the 27.5-year schedule calculated above regardless of the OBBBA change. Because cost segregation and QIP both involve reclassifying part of a purchase or renovation, confirm the split with a tax professional before claiming it.",
     commonMistakes: [
       "Depreciating the land value. The IRS explicitly prohibits depreciating land — only the structure (building) qualifies. Failing to separate land from structure in your basis calculation is an audit risk.",
       "Starting depreciation before the property is placed in service. Depreciation begins the day the property is available for rent, not the purchase date. If you buy in October but spend two months renovating, depreciation starts in December.",
@@ -256,6 +256,16 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
         answer:
           "Yes. Depreciation is a non-cash deduction that reduces your Schedule E taxable rental income each year for 27.5 years. For a property with an $8,727 annual depreciation deduction and an investor in the 24% bracket, that saves approximately $2,094 in federal taxes per year — with no money leaving your pocket.",
       },
+      {
+        question: "What did the 2025 One Big Beautiful Bill Act (OBBBA) change about real estate depreciation?",
+        answer:
+          "OBBBA permanently reinstated 100% bonus depreciation for qualified property acquired after January 19, 2025 (IRS Notice 2026-11, issued January 14, 2026). For a residential rental, that mainly helps shorter-lived components — appliances, carpeting, certain land improvements — that a cost segregation study breaks out of the 27.5-year building basis; those can now be fully deducted the year they're placed in service instead of depreciated over decades. It did not change the 27.5-year straight-line schedule for the residential structure itself, which this calculator models above.",
+      },
+      {
+        question: "What is Qualified Improvement Property (QIP), and does it apply to my rental?",
+        answer:
+          "Qualified Improvement Property is an interior, non-structural improvement to a NONresidential (commercial) building — think office or retail buildout, not a residential rental's structure. OBBBA made QIP eligible for the same 100% bonus depreciation described above. It applies if you own commercial or mixed-use rental space; a residential rental's own structure still follows the 27.5-year schedule calculated on this page regardless of the QIP change. Confirm with a tax professional whether a specific improvement qualifies as QIP versus ordinary residential capital improvement.",
+      },
     ],
     sources: [
       {
@@ -265,6 +275,10 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
       {
         label: "IRS Topic No. 704 — Depreciation",
         url: "https://www.irs.gov/taxtopics/tc704",
+      },
+      {
+        label: "IRS — Treasury, IRS issue guidance on the additional first year depreciation deduction amended as part of the One, Big, Beautiful Bill (Notice 2026-11)",
+        url: "https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill",
       },
     ],
     toolHeading: "Model your rental property's financials",

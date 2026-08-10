@@ -1,6 +1,6 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-06-30 — keyword-gap-pass appended 57 new gap keywords (see bottom section)._
+> _Updated: 2026-08-10 — keyword-gap-pass-auto appended 4 new gap keywords (see bottom section)._
 
 
 ## Autocomplete Discovery Log
@@ -7642,3 +7642,14 @@ First-ever Autocomplete mining of four already-live but never-mined clusters: es
 | merchant cash advance industry overview / history / market size | update existing body text | `bf-mca-hub.ts` | new-vertical | Autocomplete signal |
 | merchant cash advance application requirements | update existing body text | `bf-mca-hub.ts` | new-vertical | Autocomplete signal |
 | best merchant cash advance companies — additional lenders | update existing body text | `roundups-business.ts` → `best-merchant-cash-advance-companies` | new-vertical | Autocomplete signal |
+
+## 2026-08-10 keyword-gap-pass-auto — newly tracked gap keywords
+
+SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (see reports/keyword-pass/2026-08-10.md for the full reconciliation + exclusions). 4 actionable keywords survived classification + independent adversarial dedup review (0 rework needed); 38 candidates excluded as off-mission (Medicare cluster from a false-positive competitor, brand-specific/unverifiable, individualized-investment-advice scope) or already shipped (Trump Accounts vertical, existing best-ira-accounts roundup, existing retirement-income-calculator).
+
+| keyword | action | target | tier | volume |
+|---|---|---|---|---|
+| best retirement accounts | update existing body text | `roundups.ts` → `best-ira-accounts` (`/roundup/best-ira-accounts/`) | core | 1,600 |
+| qualified improvement property 2025 | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 140 |
+| irs real estate depreciation news | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 110 |
+| big beautiful bill real estate | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 210 |

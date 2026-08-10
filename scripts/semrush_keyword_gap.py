@@ -35,6 +35,7 @@ SEED_COMPETITORS = [
     "mortgagecalculator.org",
     "ramseysolutions.com",
     "fidelity.com",
+    "themodestwallet.com",
 ]
 
 # How many top keywords to pull per competitor (tight = cheap)
@@ -206,15 +207,21 @@ def main() -> None:
     live = live_competitors(OUR_DOMAIN, limit=10)
     print(f"[info] SEMRUSH returned {len(live)} live competitors: {live[:5]}...",
           file=sys.stderr)
+    # Seeds first so established authorities never get crowded out by small-overlap
+    # live discoveries (our own organic footprint is still thin, so `live` skews toward
+    # low-authority sites that happen to share a handful of keywords with us). Live
+    # discoveries still get their own slots — they're what keeps the set current.
     competitors = []
     seen = set()
-    for d in live + SEED_COMPETITORS:
-        d = d.lower().lstrip("www.")
+    for d in SEED_COMPETITORS + live:
+        d = d.lower()
+        if d.startswith("www."):
+            d = d[4:]
         if d and d not in seen and d != OUR_DOMAIN:
             competitors.append(d)
             seen.add(d)
-    # Cap at 8 to stay cheap
-    competitors = competitors[:8]
+    # Cap at 10 to stay cheap but keep the set tight (~6-12 per pass spec)
+    competitors = competitors[:10]
     print(f"[info] final competitor set ({len(competitors)}): {competitors}",
           file=sys.stderr)
 

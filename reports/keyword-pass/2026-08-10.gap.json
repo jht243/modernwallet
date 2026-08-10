@@ -1,0 +1,441 @@
+{
+  "our_domain": "themodernwallet.com",
+  "database": "us",
+  "competitors": [
+    "isemoneylife.com",
+    "thegoldpedia.com",
+    "trumpaccountspro.com",
+    "cashtopedia.com",
+    "mayrivermedicare.com",
+    "trumpaccounts.guide",
+    "incompassfp.com",
+    "themodestwallet.com"
+  ],
+  "our_organic_count": 172,
+  "tracked_count": 7528,
+  "gap_count": 42,
+  "core_count": 18,
+  "adjacent_count": 24,
+  "gaps": [
+    {
+      "keyword": "best ira accounts",
+      "volume": 6600,
+      "kd": 0.66,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 21,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "best ira",
+      "volume": 4400,
+      "kd": 0.66,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 24,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "reddit trump ira",
+      "volume": 2400,
+      "kd": 0.0,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 6,
+      "comp_url": "https://trumpaccounts.guide/blog/trump-accounts-reddit-questions",
+      "competitor": "trumpaccounts.guide"
+    },
+    {
+      "keyword": "best roth iras",
+      "volume": 1600,
+      "kd": 0.75,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 21,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "best retirement accounts",
+      "volume": 1600,
+      "kd": 0.61,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 29,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "fidelity advantage 401k",
+      "volume": 1300,
+      "kd": 0.31,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 43,
+      "comp_url": "https://thegoldpedia.com/fidelity-investment-401k",
+      "competitor": "thegoldpedia.com"
+    },
+    {
+      "keyword": "top roth ira accounts",
+      "volume": 480,
+      "kd": 0.67,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 13,
+      "comp_url": "https://themodestwallet.com/best-roth-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "best traditional ira accounts",
+      "volume": 480,
+      "kd": 0.72,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 9,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "traditional ira providers",
+      "volume": 320,
+      "kd": 0.33,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 83,
+      "comp_url": "https://cashtopedia.com/reviews/best-ira-accounts/",
+      "competitor": "cashtopedia.com"
+    },
+    {
+      "keyword": "fildeity 401k",
+      "volume": 210,
+      "kd": 0.03,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 33,
+      "comp_url": "https://thegoldpedia.com/fidelity-investment-401k",
+      "competitor": "thegoldpedia.com"
+    },
+    {
+      "keyword": "investing in venture capital",
+      "volume": 210,
+      "kd": 0.27,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 67,
+      "comp_url": "https://thegoldpedia.com/venture-investing-a-comprehensive-guide-for-beginners",
+      "competitor": "thegoldpedia.com"
+    },
+    {
+      "keyword": "big beautiful bill real estate",
+      "volume": 210,
+      "kd": 0.19,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 6,
+      "comp_url": "https://www.incompassfp.com/how-the-one-big-beautiful-bill-act-transforms-real-estate-investing-in-2025",
+      "competitor": "incompassfp.com"
+    },
+    {
+      "keyword": "best investment income retirement",
+      "volume": 170,
+      "kd": 0.58,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 77,
+      "comp_url": "https://thegoldpedia.com/best-retirement-investments",
+      "competitor": "thegoldpedia.com"
+    },
+    {
+      "keyword": "childrens investment account",
+      "volume": 140,
+      "kd": 0.51,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 56,
+      "comp_url": "https://trumpaccounts.guide/blog/best-accounts-for-kids-today",
+      "competitor": "trumpaccounts.guide"
+    },
+    {
+      "keyword": "qualified improvement property 2025",
+      "volume": 140,
+      "kd": 0.03,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 59,
+      "comp_url": "https://www.incompassfp.com/how-the-one-big-beautiful-bill-act-transforms-real-estate-investing-in-2025",
+      "competitor": "incompassfp.com"
+    },
+    {
+      "keyword": "gold companies to invest in",
+      "volume": 110,
+      "kd": 0.55,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 96,
+      "comp_url": "https://thegoldpedia.com/gold-stock",
+      "competitor": "thegoldpedia.com"
+    },
+    {
+      "keyword": "highest rated roth ira",
+      "volume": 110,
+      "kd": 0.63,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 60,
+      "comp_url": "https://cashtopedia.com/reviews/best-roth-ira-accounts/",
+      "competitor": "cashtopedia.com"
+    },
+    {
+      "keyword": "irs real estate depreciation news",
+      "volume": 110,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 5,
+      "comp_url": "https://www.incompassfp.com/how-the-one-big-beautiful-bill-act-transforms-real-estate-investing-in-2025",
+      "competitor": "incompassfp.com"
+    },
+    {
+      "keyword": "medicare part b",
+      "volume": 60500,
+      "kd": 0.4,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 42,
+      "comp_url": "https://mayrivermedicare.com/medicare-part-b/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "what is medicare part b",
+      "volume": 22200,
+      "kd": 0.3,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 34,
+      "comp_url": "https://mayrivermedicare.com/medicare-part-b/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "side hustle ideas",
+      "volume": 22200,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 47,
+      "comp_url": "https://themodestwallet.com/side-hustle-ideas/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "medicare mobile application",
+      "volume": 3600,
+      "kd": 0.5,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 19,
+      "comp_url": "https://mayrivermedicare.com/mobile-app-download-page/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "children's tax advantage account",
+      "volume": 2400,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 26,
+      "comp_url": "https://trumpaccounts.guide/blog/childrens-tax-advantage-account",
+      "competitor": "trumpaccounts.guide"
+    },
+    {
+      "keyword": "medicare advantage plans colorado",
+      "volume": 880,
+      "kd": 0.14,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 57,
+      "comp_url": "https://mayrivermedicare.com/medicare-plans-in-colorado/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "medicare mobile app",
+      "volume": 720,
+      "kd": 0.51,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 17,
+      "comp_url": "https://mayrivermedicare.com/mobile-app-download-page/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "are contributions to trump accounts tax deductible",
+      "volume": 590,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 89,
+      "comp_url": "https://trumpaccountspro.com/trump-account-taxes/",
+      "competitor": "trumpaccountspro.com"
+    },
+    {
+      "keyword": "how much does medicare cost a month",
+      "volume": 590,
+      "kd": 0.31,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 51,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "trump accounts vs 529",
+      "volume": 590,
+      "kd": 0.0,
+      "intent": "0,1",
+      "tier": "adjacent",
+      "comp_position": 28,
+      "comp_url": "https://www.incompassfp.com/trumpaccounts",
+      "competitor": "incompassfp.com"
+    },
+    {
+      "keyword": "medicare advantage plans in nebraska",
+      "volume": 480,
+      "kd": 0.21,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 52,
+      "comp_url": "https://mayrivermedicare.com/medicare-plans-in-nebraska/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "turbo tax trump account",
+      "volume": 480,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 75,
+      "comp_url": "https://trumpaccounts.guide/trump-accounts-taxes",
+      "competitor": "trumpaccounts.guide"
+    },
+    {
+      "keyword": "delaware medicare",
+      "volume": 390,
+      "kd": 0.43,
+      "intent": "1,2",
+      "tier": "adjacent",
+      "comp_position": 42,
+      "comp_url": "https://mayrivermedicare.com/medicare-plans-in-delaware/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "medicare disabilities",
+      "volume": 320,
+      "kd": 0.14,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 56,
+      "comp_url": "https://mayrivermedicare.com/medicare-on-disability/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "medicare brackets for 2025",
+      "volume": 260,
+      "kd": 0.04,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 52,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "federal guaranteed issue rights medicare policy 2026",
+      "volume": 260,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 21,
+      "comp_url": "https://mayrivermedicare.com/guaranteed-issue-rights-state-by-state/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "how much does medicare b cost",
+      "volume": 260,
+      "kd": 0.35,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 63,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "medicare.gov app",
+      "volume": 260,
+      "kd": 0.44,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 18,
+      "comp_url": "https://mayrivermedicare.com/mobile-app-download-page/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "what is the monthly cost for medicare part b",
+      "volume": 170,
+      "kd": 0.26,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 68,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "medicare dental and vision benefits",
+      "volume": 170,
+      "kd": 0.54,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 72,
+      "comp_url": "https://mayrivermedicare.com/dental-vision-coverage-that-works-with-your-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "how medicare part b premium calculated",
+      "volume": 140,
+      "kd": 0.21,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 67,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "trump accounts income limit",
+      "volume": 140,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 74,
+      "comp_url": "https://www.trumpaccounts.guide/trump-accounts-rules",
+      "competitor": "trumpaccounts.guide"
+    },
+    {
+      "keyword": "price of medicare",
+      "volume": 110,
+      "kd": 0.27,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 44,
+      "comp_url": "https://mayrivermedicare.com/costs-of-medicare/",
+      "competitor": "mayrivermedicare.com"
+    },
+    {
+      "keyword": "estimate medicare premiums",
+      "volume": 110,
+      "kd": 0.21,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 41,
+      "comp_url": "https://mayrivermedicare.com/medicare-cost-calculator/",
+      "competitor": "mayrivermedicare.com"
+    }
+  ]
+}

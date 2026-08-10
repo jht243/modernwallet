@@ -742,11 +742,17 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "If your employer offers a 401(k) match, contribute enough to get the full match first — that's an immediate 50–100% return on those dollars. After capturing the full match, most financial planners recommend maxing your IRA next (up to $7,000) before going back to contribute more to your 401(k). The reason: IRAs typically offer more investment flexibility and lower expense ratios than employer 401(k) plans. If you still have room to save after maxing both, return to the 401(k) for additional contributions.",
       },
+      {
+        question: "What's the best retirement account overall — not just the best IRA?",
+        answer:
+          "There's no single best retirement account for everyone, because a 401(k), an IRA, and an HSA each solve a different problem. An employer 401(k) with a match comes first for almost everyone — the match is an immediate, guaranteed return that no IRA provider on this page can match. After that, an IRA (Traditional or Roth — see the section above) usually wins on investment selection and fees, since a self-directed IRA opens the entire market rather than your employer's fund lineup. If you have a high-deductible health plan, a Health Savings Account (HSA) is arguably the single strongest account of the three for pure tax efficiency — IRS Publication 969 confirms a triple tax break (deductible contributions, tax-free growth, tax-free withdrawals for qualified medical costs), up to $4,400 self-only / $8,750 family for 2026 — though it's earmarked for healthcare spending, not general retirement income. Most savers end up using two or three of these accounts together rather than picking just one. See the [401k calculator](/retirement/401k-calculator/) to project your workplace plan alongside the IRA numbers above.",
+      },
     ],
     sources: [
       { label: "IRS — IRA Contribution Limits 2026", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
       { label: "IRS — Roth IRA Income Limits", url: "https://www.irs.gov/retirement-plans/amount-of-roth-ira-contributions-that-you-can-make-for-2025" },
       { label: "SIPC — What SIPC Protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" },
+      { label: "IRS — Publication 969: Health Savings Accounts", url: "https://www.irs.gov/publications/p969" },
     ],
     relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k"],
     calculatorLinks: [
