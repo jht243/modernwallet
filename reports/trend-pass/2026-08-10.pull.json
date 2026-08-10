@@ -1,0 +1,154 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-08-03",
+    "end": "2026-08-10",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "chase hotel portal",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "arm vs fixed-rate today",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 89.5
+    },
+    {
+      "query": "chase hotel points",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 44.5
+    },
+    {
+      "query": "chase reserve portal",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 70
+    },
+    {
+      "query": "chase rewards travel points",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "chase rewards travel portal",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 53
+    },
+    {
+      "query": "10-year standard repayment plan",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "401 k or roth",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "401k spreadsheet",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 40.79
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/military-retirement-vs-medical-retirement/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/fixed-vs-arm-mortgage/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 75.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-loan-payoff/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 60.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/401k-vs-brokerage-account/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    }
+  ],
+  "top10_pages_total_clicks": 0,
+  "top10_queries_total_clicks": 0
+}
