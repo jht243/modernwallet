@@ -190,6 +190,11 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
         answer:
           "They are close but not identical. With accounts receivable financing you typically keep control of collections. With factoring the buyer collects directly from your customer. Both advance cash against invoices and charge a fee tied to how long payment takes.",
       },
+      {
+        question: "Invoice factoring vs accounts receivable financing: which costs less?",
+        answer:
+          "Neither is inherently cheaper — both price the same way, an advance rate plus a fee tied to how long the invoice stays unpaid, so the cost difference on any given invoice usually comes down to the specific advance rate and fee your provider offers, not which structure you chose. The real difference is control and disclosure: factoring sells the invoice outright and the factor collects directly from your customer, who typically finds out; accounts receivable financing is usually structured as a loan secured by the receivable, so you keep collecting and your customer often never knows the invoice was financed. Most arrangements of both types are recourse, meaning you owe the money back if your customer never pays — confirm that term specifically before signing either one.",
+      },
     ],
     sources: [
       {

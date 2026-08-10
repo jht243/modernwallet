@@ -251,7 +251,12 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "What is the difference between lean FIRE, FIRE, and fat FIRE?",
         answer:
-          "Lean FIRE targets roughly 20 times annual expenses and assumes a frugal lifestyle with minimal discretionary spending. Standard FIRE targets 25 times expenses. Fat FIRE targets 33 times or more, providing a large cushion for higher spending or market downturns. Each simply reflects a different withdrawal rate assumption.",
+          "Lean FIRE targets roughly 20 times annual expenses and assumes a frugal lifestyle with minimal discretionary spending. Standard FIRE targets 25 times expenses. Fat FIRE targets 33 times or more, providing a large cushion for higher spending or market downturns. Each simply reflects a different withdrawal rate assumption. On $50,000 in annual spending, that's roughly a $1,000,000 lean FIRE number, a $1,250,000 standard FIRE number, and a $1,650,000+ fat FIRE number — the same income, three very different portfolio targets.",
+      },
+      {
+        question: "Should I plan for lean FIRE or fat FIRE?",
+        answer:
+          "Pick lean FIRE if you've already tested a frugal budget for a year or more and know you can sustain it, since a 20× multiple leaves little room for lifestyle creep, medical surprises, or a bad market early in retirement. Pick fat FIRE if you want a cushion for those risks, plan to travel or spend more freely, or you're retiring young enough that a 40- to 50-year horizon makes a lower withdrawal rate the safer bet. Most people land at standard FIRE (25×) as the realistic middle ground, then adjust up toward fat FIRE the longer their expected retirement runs.",
       },
       {
         question: "How do I access retirement savings before age 59½ without paying the 10% penalty?",

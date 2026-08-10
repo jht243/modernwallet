@@ -63,3 +63,32 @@ Legend: 🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 dup
 **Enriched (2 in-place edits):** guides/financial-advisor-worth-it (robo-advisor vs financial advisor sub-section + FAQ), roundup/best-retirement-accounts-for-self-employed (SEP IRA vs Traditional IRA sub-section + FAQ).
 **Dropped duplicate:** cpa-vs-enrolled-agent (subsumed by existing tax-attorney-vs-cpa-vs-enrolled-agent).
 **Dropped low-value/unwinnable (7):** personal-loan-vs-credit-card, 401k-loan-vs-personal-loan, business-line-of-credit-vs-term-loan, merchant-cash-advance-vs-business-line-of-credit, merchant-cash-advance-vs-sba-loan, invoice-factoring-vs-sba-loan.
+
+## Run 2026-08-10 (comparison-content-auto, autonomous) — refreshed facts
+- **Comparisons live at run start:** 85 in `src/data/comparisons.ts` + 7 in `src/data/comparisons-business.ts` = 92 total.
+- **SEO data:** Ahrefs MCP fully available. Site DR still ~2.6 — unchanged binding constraint; low-KD, low-competitive-SERP pairs remain the only realistically winnable ones regardless of nominal volume.
+- 22 candidates generated from under-covered verticals (elder-care/special-needs, tax resolution, broker comparisons, business-financing gaps) since the retirement/mortgage/insurance/Trump-account matrices are largely exhausted by prior runs.
+
+### Candidate Chart (Ahrefs US, live)
+| # | Comparison | Vol | KD | CPC | Coverage | Verdict |
+|---|---|---|---|---|---|---|
+| 1 | fidelity vs schwab | 2,500 | 6 | $5.00 | 🟢 new | Build — Tier 1 (DR6 site ranks #4 on live SERP) |
+| 2 | vanguard vs schwab | 700 | 1 | $3.00 | 🟢 new | Build — Tier 1 |
+| 3 | guardianship vs conservatorship | 1,000 | 5 | $0.05 | 🟢 new | Build — Tier 2 (topical-authority, near-zero CPC) |
+| 4 | traditional ira vs simple ira | 200 | 1 | $2.50 | 🟢 new | Build — Tier 2 |
+| 5 | special needs trust vs able account | 150 | 1 | $0.15 | 🟢 new | Build — Tier 2 (2026 ABLE Age Adjustment Act hook) |
+| 6 | usda loan vs fha loan | 150 | 1 | $0.10 | 🟢 new | Build — Tier 2 |
+| 7 | mega backdoor roth vs backdoor roth | 250 | 0 | $0.90 | 🟡 partial (guides/mega-backdoor-roth-401k) | Enrich |
+| 8 | debt consolidation loan vs balance transfer | 200 | 21 | $7.00 | 🟡 partial (/personal-loan/) | Enrich |
+| 9 | invoice factoring vs accounts receivable financing | — | — | — | 🟡 partial (/invoice-factoring/accounts-receivable-financing/) | Enrich |
+| 10 | lean fire vs fat fire | — | — | — | 🟡 partial (/retirement/fire-calculator/) | Enrich |
+| — | pension vs annuity | 700 | 3 | $0.30 | new | Drop — institutional-grade SERP despite low KD |
+| — | reit vs rental property | 90 | 1 | $0.09 | new | Drop — below reliable ROI bar |
+| — | 401k vs sep ira | 150 | 0 | $0.10 | new | Drop — cannibalizes sep-ira-vs-solo-401k |
+| — | reverse mortgage vs heloc | 600 | 2 | $1.20 | new | Drop — bank/govt-brand-entrenched SERP |
+| — | (7 more: sba-loan-vs-term-loan, revenue-based-financing-vs-sba-loan, equipment-financing-vs-business-line-of-credit, business-credit-card-vs-business-line-of-credit, offer-in-compromise-vs-installment-agreement, long-term-care-insurance-vs-medicaid, home-equity-investment-vs-heloc, working-capital-loan-vs-business-line-of-credit) | | | | | Drop — 0/low demand or no data |
+
+**Built (6 new pages):** fidelity-vs-schwab, vanguard-vs-schwab, guardianship-vs-conservatorship, traditional-ira-vs-simple-ira, special-needs-trust-vs-able-account, usda-loan-vs-fha-loan.
+**Enriched (4 in-place edits):** guides/mega-backdoor-roth-401k (backdoor-Roth comparison + FAQ), guides/how-to-choose-a-balance-transfer-credit-card (debt-consolidation-loan vs balance-transfer section + FAQ), spokes-business-financing/accounts-receivable-financing (factoring-vs-AR-financing FAQ), spokes-retirement/fire-calculator (lean/fat FIRE numeric example + FAQ).
+**Dropped (13):** see cache.json `dropped` entries dated 2026-08-10 for full reasons.
+**Audit fixes applied:** 4 titles lengthened into the 50–60 char range; SIMPLE IRA small-employer 50+ combined limit corrected ($21,850 → $21,950); USDA income-limit figures softened from a single hard national number to a county-varying range with a link to USDA's own lookup.

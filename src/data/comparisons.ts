@@ -7150,6 +7150,551 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
     ],
   },
+
+  {
+    slug: "fidelity-vs-schwab",
+    title: "Fidelity vs Schwab: Which Brokerage Really Wins in 2026?",
+    metaDescription:
+      "Fidelity vs Schwab compared: zero-fee index funds, account minimums, robo-advisors, and banking tools, so you can pick the right brokerage.",
+    targetKeyword: "fidelity vs schwab",
+    optionA: "Fidelity",
+    optionB: "Charles Schwab",
+    segment: "Brokerages",
+    h1: "Fidelity vs Schwab: Which Brokerage Should You Choose?",
+    intro:
+      "[Fidelity](https://www.fidelity.com) built the first mutual funds with a 0.00% expense ratio, while [Charles Schwab](https://www.schwab.com) built its business on pairing a large branch network with a bank-grade cash management account — and the better fit for you depends on whether a truly free index fund or in-person, full-service banking matters more to your day-to-day money.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum to open", a: "$0", b: "$0" },
+        { dimension: "Commission-free stock/ETF trades", a: "Yes", b: "Yes" },
+        { dimension: "Zero-expense-ratio index funds", a: "Yes — 4 Fidelity ZERO funds (FZROX, FZILX, FNILX, FZIPX)", b: "No 0% funds; Schwab index funds run 0.02%–0.03%" },
+        { dimension: "Options contract fee", a: "$0.65 per contract", b: "$0.65 per contract" },
+        { dimension: "Robo-advisor", a: "Fidelity Go — $0 minimum, free under $25,000, 0.35%/year above", b: "Schwab Intelligent Portfolios — $5,000 minimum, no advisory fee" },
+        { dimension: "Branch network", a: "About 200 investor centers", b: "About 400+ branches nationwide" },
+        { dimension: "Cash management / banking", a: "Fidelity Cash Management Account with debit card", b: "Schwab Bank High Yield Investor Checking, ATM fees rebated worldwide" },
+      ],
+    },
+    verdict:
+      "Choose Fidelity if a genuinely 0% expense ratio fund matters to you or you want a $0-minimum robo-advisor to start small. Choose Schwab if you want more in-person branches near you or Schwab's ATM-fee-rebated checking account paired directly with your brokerage. Both platforms are strong, low-cost, full-service choices — the deciding factor for most people is which local branch footprint or free-fund lineup fits how they actually bank and invest.",
+    sections: [
+      {
+        heading: "Account minimums and trading costs",
+        content:
+          "Both Fidelity and Schwab charge $0 to open a brokerage account and $0 in commissions on online U.S. stock and ETF trades. Neither has an edge on the basics that most self-directed investors use every day.\n\nOptions traders pay the same $0.65 per-contract fee at both firms, with no base commission on top. Where the two diverge is fund minimums: Fidelity's ZERO index funds require no minimum at all, while Schwab's low-cost index funds, like SWTSX, also carry no minimum — so this line is effectively a tie once you move past the flagship products.\n\nMutual funds outside each firm's proprietary lineup can still carry minimums in the hundreds or thousands of dollars, so check the specific fund's prospectus before assuming $0 applies everywhere.",
+      },
+      {
+        heading: "Fidelity's ZERO funds vs. Schwab's near-zero lineup",
+        content:
+          "Fidelity's four ZERO funds — FZROX, FZILX, FNILX, and FZIPX — charge a literal 0.00% expense ratio, confirmed in Fidelity's own SEC-filed prospectus. They track Fidelity's proprietary in-house indexes rather than licensed benchmarks like the S&P 500, which is how Fidelity avoids paying an index-licensing fee.\n\nSchwab doesn't offer a true 0% fund, but its Schwab Total Stock Market Index Fund (SWTSX) and Schwab S&P 500 Index Fund (SWPPX) both run around 0.02%, among the cheapest licensed-index funds in the industry.\n\nThe tradeoff most comparisons skip: Fidelity's ZERO funds aren't portable — only Fidelity offers them, so you can't hold the exact same fund if you move your account elsewhere. Schwab's index funds track widely licensed benchmarks you can replicate at almost any brokerage. See our [index fund vs ETF comparison](/compare/index-fund-vs-etf/) for how that portability question plays out with ETFs instead of mutual funds.",
+      },
+      {
+        heading: "Robo-advisors: Fidelity Go vs. Schwab Intelligent Portfolios",
+        content:
+          "Fidelity Go has no minimum to open, charges nothing for balances under $25,000, and moves to a 0.35% annual fee once your balance crosses $25,000 — at which point you also get one-on-one coaching. Schwab Intelligent Portfolios requires a $5,000 minimum but charges no advisory fee at all, no matter how large your balance grows.\n\nSchwab's robo does hold a meaningful cash allocation inside the portfolio, which is how it funds a $0 advisory fee — that cash sits at a lower yield than a fully invested portfolio would earn, so the real cost isn't zero, it's just paid through opportunity cost on the cash sleeve rather than a line-item fee.\n\nFor a first-time investor with under $5,000, Fidelity Go is the only option of the two that will even accept the account. For a larger, buy-and-hold balance where you're comfortable with Schwab's cash allocation, Intelligent Portfolios' $0 fee wins on paper. Run both scenarios through the [investment growth calculator](/investing/investment-growth-calculator/) before deciding.",
+      },
+      {
+        heading: "Branches, banking, and everyday cash",
+        content:
+          "Schwab operates a larger branch network — over 400 locations versus Fidelity's roughly 200 investor centers — so Schwab is more likely to have a branch near you if in-person service matters. Schwab Bank's High Yield Investor Checking account also rebates ATM fees worldwide with no minimum balance and no monthly fee, a feature aimed squarely at people who want one account to handle both investing and daily spending.\n\nFidelity's Cash Management Account competes closely, with no account fees and a debit card, but it doesn't carry Schwab's global ATM-fee-rebate guarantee. Neither account pays interest as high as a dedicated high-yield savings account, so use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) if the checking-account cash itself is meant to be a real savings vehicle rather than a spending buffer.",
+      },
+      {
+        heading: "Where the comparison actually turns on you, not the brokerage",
+        content:
+          "A detail investors rarely check before opening an account: Fidelity's ZERO funds and Schwab's near-zero funds only matter as much as the balance you're running them on. On a $10,000 balance, the gap between a 0.00% Fidelity ZERO fund and a 0.02% Schwab index fund is about $2 a year — real, but not decision-driving on its own.\n\nWhat actually should drive the decision for most people is the feature they'll use weekly, not annually: Schwab's branch network and rebated ATM fees for someone who banks in person, or Fidelity's $0-minimum robo-advisor for someone starting with a small first deposit. Treat the expense-ratio gap as a tiebreaker, not the headline.\n\nIf you're deciding between a taxable account and a retirement account first, that choice matters more than which of these two brokerages you pick — see our [brokerage vs IRA comparison](/compare/brokerage-vs-ira/) before opening either account.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Fidelity or Schwab better for beginners?",
+        answer:
+          "Both work well for beginners, since each charges $0 to open an account and $0 in commissions on stock and ETF trades. Fidelity has a slight edge for a very small first deposit because Fidelity Go, its robo-advisor, has no minimum, while Schwab Intelligent Portfolios requires $5,000 to start.",
+      },
+      {
+        question: "Does Fidelity or Schwab have zero-fee index funds?",
+        answer:
+          "Fidelity does. Its ZERO funds — FZROX, FZILX, FNILX, and FZIPX — charge a literal 0.00% expense ratio and track Fidelity's own in-house indexes. Schwab's cheapest index funds, like SWTSX and SWPPX, run around 0.02%, which is not 0% but is still among the lowest fees in the industry.",
+      },
+      {
+        question: "Which has more branches, Fidelity or Schwab?",
+        answer:
+          "Schwab has the larger branch footprint, with over 400 locations nationwide compared with roughly 200 Fidelity investor centers. If in-person service is a priority, check both firms' branch locators for your specific area before deciding.",
+      },
+      {
+        question: "Can I have accounts at both Fidelity and Schwab?",
+        answer:
+          "Yes. There's no rule against holding accounts at more than one brokerage, and many investors split accounts to compare tools or take advantage of each firm's specific strengths, such as Fidelity's ZERO funds and Schwab's rebated ATM checking account.",
+      },
+      {
+        question: "Is Schwab Intelligent Portfolios really free?",
+        answer:
+          "There's no advisory fee, but the portfolio holds a required cash allocation that earns less than a fully invested portfolio would, so the cost shows up as opportunity cost on that cash sleeve rather than as a line-item fee. A $5,000 minimum applies to open the account.",
+      },
+    ],
+    sources: [
+      { label: "Fidelity — Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
+      { label: "SEC — Fidelity ZERO Total Market Index Fund summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/819118/000081911825000478/filing10367.htm" },
+      { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
+      { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
+    ],
+    relatedComparisons: ["vanguard-vs-fidelity", "vanguard-vs-schwab", "voo-vs-spy", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Investing hub", href: "/investing/" },
+      { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+    ],
+  },
+
+  {
+    slug: "vanguard-vs-schwab",
+    title: "Vanguard vs Schwab: Which Brokerage Really Wins in 2026?",
+    metaDescription:
+      "Vanguard vs Schwab compared: fund fees, account minimums, robo-advisors, and banking tools, so you can see which brokerage fits you.",
+    targetKeyword: "vanguard vs schwab",
+    optionA: "Vanguard",
+    optionB: "Charles Schwab",
+    segment: "Brokerages",
+    h1: "Vanguard vs Schwab: Which Brokerage Should You Choose?",
+    intro:
+      "[Vanguard](https://investor.vanguard.com) is owned by its own funds and their shareholders, which its founder designed specifically to keep fund costs low, while [Charles Schwab](https://www.schwab.com) is a publicly traded, full-service brokerage with a much larger branch network — and the right choice depends on whether Vanguard's investor-owned fee philosophy or Schwab's broader in-person and banking footprint matters more to you.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum to open", a: "$0", b: "$0" },
+        { dimension: "Commission-free stock/ETF trades", a: "Yes", b: "Yes" },
+        { dimension: "Average index fund expense ratio", a: "Among the lowest in the industry (e.g. VOO 0.03%)", b: "Comparable — SWPPX/SWTSX around 0.02%" },
+        { dimension: "Typical mutual fund minimum", a: "$1,000–$3,000 for most Investor Shares funds", b: "$0 on Schwab's own index funds" },
+        { dimension: "Robo-advisor", a: "Vanguard Digital Advisor — $100 minimum, 0.20%–0.25%/year", b: "Schwab Intelligent Portfolios — $5,000 minimum, no advisory fee" },
+        { dimension: "Ownership structure", a: "Owned by its own funds and their shareholders", b: "Publicly traded company (NYSE: SCHW)" },
+        { dimension: "Branch network", a: "No retail branches", b: "400+ branches nationwide" },
+      ],
+    },
+    verdict:
+      "Choose Vanguard if you want the lowest possible ongoing cost on index funds and don't need a physical branch or integrated bank checking account. Choose Schwab if you want $0 minimums across its own fund lineup, a nearby branch, or a checking account built to sit next to your brokerage with rebated ATM fees. Vanguard wins narrowly on fund minimums avoided if you invest through ETFs instead of mutual funds; Schwab wins on everyday banking convenience.",
+    sections: [
+      {
+        heading: "Account minimums and fund costs",
+        content:
+          "Both brokerages charge $0 to open an account and $0 in commissions on online U.S. stock and ETF trades, so the basics are a tie. Vanguard's own fee page confirms no fee or minimum to open an account, though it does charge $25 a year per brokerage account unless you enroll in paperless statements or hold $1 million or more in qualifying assets — Schwab charges no comparable annual account fee.\n\nThe minimums split on mutual funds specifically. Most Vanguard Investor Shares mutual funds require $1,000 to $3,000 to start, while Schwab's own index funds, including SWTSX and SWPPX, have no minimum at all.\n\nBuy either brokerage's funds as an ETF instead of a mutual fund and the minimum gap disappears — you can buy a single ETF share for whatever it costs that day at either firm.",
+      },
+      {
+        heading: "Expense ratios: close enough to be a wash",
+        content:
+          "Vanguard's flagship S&P 500 ETF, VOO, charges a 0.03% expense ratio. Schwab's comparable fund, SWPPX, runs around 0.02%. On a $10,000 balance, that difference works out to roughly a dollar a year — not enough to drive a decision on its own.\n\nVanguard's investor-owned structure has historically pushed its average fund lineup toward some of the lowest fees in the industry, and that philosophy extends beyond just its flagship index funds to actively managed and international funds too. Schwab has matched Vanguard closely on its own core index products but doesn't apply the same investor-owned pricing model across its entire fund shelf.\n\nFor a simple three-fund portfolio built from either firm's core index ETFs, expect the total cost difference between Vanguard and Schwab to be negligible. See our [ETF vs mutual fund comparison](/compare/etf-vs-mutual-fund/) if you're still deciding which wrapper to use at either brokerage.",
+      },
+      {
+        heading: "Robo-advisors: Digital Advisor vs. Intelligent Portfolios",
+        content:
+          "Vanguard Digital Advisor requires at least $100 to enroll and charges roughly 0.20% to 0.25% a year depending on your portfolio option, built mostly from low-cost Vanguard index ETFs. Schwab Intelligent Portfolios requires a $5,000 minimum but charges no advisory fee at all.\n\nSchwab funds its $0 fee by holding a required cash allocation inside the portfolio, which earns less than a fully invested position would — so the real cost is paid as opportunity cost on that cash sleeve rather than an explicit fee line. Vanguard's fee is transparent and charged directly against your balance.\n\nFor a starter balance under $5,000, Vanguard Digital Advisor is the only one of the two you can even open. For a larger balance where you're comfortable with Schwab's cash-drag tradeoff, Intelligent Portfolios' $0 line-item fee can work out cheaper. Model either scenario with the [investment growth calculator](/investing/investment-growth-calculator/).",
+      },
+      {
+        heading: "Ownership structure and what it predicts",
+        content:
+          "Vanguard is owned by its own funds, which are in turn owned by fund shareholders — a structure Vanguard says lets it run funds at cost instead of generating profit for outside owners. Schwab is a publicly traded company on the New York Stock Exchange, answerable to shareholders separate from its brokerage customers.\n\nNeither structure guarantees better investment results, and both firms offer well-regarded, broadly diversified index funds at competitive prices. What the ownership difference predicts is company incentives: Vanguard is structurally biased toward driving fees toward zero across its entire lineup, while Schwab, as a public company, balances customer pricing against building the branch network, banking products, and advisory services that made it attractive enough to go public in the first place.\n\nThat tradeoff is visible in the product mix each firm offers: Vanguard stays narrowly focused on funds and brokerage accounts, while Schwab layers on banking, trading tools, and a much larger service footprint funded in part by its other business lines.",
+      },
+      {
+        heading: "Which to choose: fund cost vs. everyday convenience",
+        content:
+          "If your entire strategy is a low-cost, buy-and-hold index portfolio and you never plan to walk into a branch, Vanguard's investor-owned fee philosophy and slightly lower average expense ratios give it a small structural edge. If you want a bank-grade checking account tied to your brokerage, a nearby physical branch, or a $0-fee robo-advisor once you clear the $5,000 minimum, Schwab's broader footprint fits better.\n\nMany long-term investors end up holding accounts at both, splitting an IRA at one firm and a taxable brokerage or checking account at the other. If you're not sure which account type to prioritize first, our [brokerage vs IRA comparison](/compare/brokerage-vs-ira/) walks through that decision independent of which brokerage you choose.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Vanguard or Schwab cheaper overall?",
+        answer:
+          "They're close enough to be a rounding error for most portfolios. Vanguard's flagship S&P 500 ETF (VOO) charges 0.03%; Schwab's comparable fund (SWPPX) charges around 0.02%. On a typical balance the annual dollar difference is small — pick based on features like minimums, branches, and banking instead.",
+      },
+      {
+        question: "Does Vanguard have physical branches like Schwab?",
+        answer:
+          "No. Vanguard operates without a retail branch network, while Schwab has more than 400 branches nationwide. If in-person service matters to you, Schwab is the clear choice on this point alone.",
+      },
+      {
+        question: "Is Vanguard's robo-advisor cheaper than Schwab's?",
+        answer:
+          "Vanguard Digital Advisor charges roughly 0.20%–0.25% a year with a $100 minimum. Schwab Intelligent Portfolios charges no advisory fee but requires a $5,000 minimum and holds a required cash allocation that reduces your invested return. Which is actually cheaper depends on your balance and how much cash drag you're comfortable with.",
+      },
+      {
+        question: "Can I have accounts at both Vanguard and Schwab?",
+        answer:
+          "Yes, and many investors do — for example, holding an IRA at Vanguard for its low-cost index funds and a checking-linked brokerage account at Schwab for everyday banking. There's no rule against splitting accounts across firms.",
+      },
+      {
+        question: "Which brokerage is better for a beginner, Vanguard or Schwab?",
+        answer:
+          "Schwab has a slight edge for a very small first deposit, since its own index funds have no minimum and its robo-advisor accepts $5,000, versus Vanguard's $1,000–$3,000 typical mutual fund minimum. Vanguard's ETFs, however, have no minimum beyond the share price either.",
+      },
+    ],
+    sources: [
+      { label: "Vanguard — Ownership structure", url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html" },
+      { label: "Vanguard — Mutual fund fees and minimums", url: "https://investor.vanguard.com/investment-products/mutual-funds/fees" },
+      { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
+      { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
+    ],
+    relatedComparisons: ["vanguard-vs-fidelity", "fidelity-vs-schwab", "voo-vs-spy", "index-fund-vs-etf"],
+    calculatorLinks: [
+      { label: "Investing hub", href: "/investing/" },
+      { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+    ],
+  },
+
+  {
+    slug: "guardianship-vs-conservatorship",
+    title: "Guardianship vs Conservatorship: The Key Differences",
+    metaDescription:
+      "Guardianship vs conservatorship compared: who makes personal-care decisions vs financial ones, how each is granted, and which one you need.",
+    targetKeyword: "guardianship vs conservatorship",
+    optionA: "Guardianship",
+    optionB: "Conservatorship",
+    h1: "Guardianship vs Conservatorship: What's the Difference?",
+    intro:
+      "Guardianship gives someone legal authority over another person's day-to-day care and living decisions, while conservatorship gives someone legal authority over that person's finances and property — and many states appoint the same person to hold both roles for an adult who can no longer manage either.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it covers", a: "Personal care: healthcare, housing, daily needs", b: "Financial: bank accounts, bills, property, investments" },
+        { dimension: "Common term for the appointee", a: "Guardian (or \"guardian of the person\")", b: "Conservator (or \"guardian of the estate\")" },
+        { dimension: "Typical subject", a: "Minor children; incapacitated adults", b: "Incapacitated adults with assets to manage" },
+        { dimension: "Court oversight", a: "Periodic care-plan reporting to the court", b: "Annual accountings of income, expenses, and assets" },
+        { dimension: "Duration for a minor", a: "Usually ends at age 18", b: "N/A — conservatorship is almost always for adults" },
+        { dimension: "Duration for an incapacitated adult", a: "Can last the person's lifetime", b: "Can last the person's lifetime" },
+        { dimension: "Terminology by state", a: "\"Guardian\" in most states", b: "Some states use \"guardian of the estate\" instead of \"conservator\"" },
+      ],
+    },
+    verdict:
+      "You need guardianship when someone can no longer safely make decisions about their own healthcare, housing, or daily life. You need conservatorship when someone can no longer safely manage their own money, bills, or property. Many adults who lose capacity need both, and most states let a court appoint one person — or two different people — to fill both roles at once. Talk to an elder law or probate attorney in your state, since the exact terms and procedures vary by jurisdiction.",
+    sections: [
+      {
+        heading: "What a guardian actually does",
+        content:
+          "A guardian is legally responsible for someone's personal and care decisions, not their money. That includes choosing where the person lives, consenting to medical treatment, and arranging daily care.\n\nCourts appoint guardians most often for minor children whose parents have died or can't care for them, and for adults who've lost the mental capacity to make safe decisions about their own care — following a severe stroke, advanced dementia, or a traumatic brain injury, for example.\n\nA guardian typically files periodic reports with the court describing the ward's living situation and care plan, so the court can confirm the arrangement still serves the person's best interest. Our [elder law attorney vs estate planning attorney comparison](/compare/elder-law-attorney-vs-estate-planning-attorney/) covers which type of attorney usually handles a guardianship filing.",
+      },
+      {
+        heading: "What a conservator actually does",
+        content:
+          "A conservator manages someone's finances and property, not their personal care. That includes paying bills, managing bank and investment accounts, filing taxes, and handling real estate or other property on the person's behalf.\n\nUnlike a guardian, a conservator almost always has to file a detailed annual accounting with the court, itemizing every dollar of income, every expense, and the value of every asset under their control. That reporting requirement exists specifically to prevent financial abuse of a person who can no longer monitor their own accounts.\n\nSome states don't use the word \"conservator\" at all and instead call this role a \"guardian of the estate,\" which is functionally the same job under a different name. Check your state's probate court terminology before assuming the label matches what you're picturing.",
+      },
+      {
+        heading: "Can the same person be both guardian and conservator?",
+        content:
+          "Yes, in most states one person can hold both roles for the same individual, handling both personal care and financial decisions. A family member is often appointed to both roles when the arrangement is amicable and the family member is qualified and willing to take on both sets of duties.\n\nCourts can also split the roles between two different people — for example, appointing a family member as guardian for care decisions while appointing a professional fiduciary or bank trust department as conservator for a large or complex estate. Splitting the roles adds a built-in check, since the guardian and conservator have to coordinate rather than one person controlling everything.\n\nEither structure requires court approval, and the court retains ongoing supervisory authority over both roles for as long as the guardianship or conservatorship stays open.",
+      },
+      {
+        heading: "Guardianship and conservatorship terminology varies by state",
+        content:
+          "State law is not consistent on these terms, which is the single biggest source of confusion for families researching this topic. In California, guardianship applies specifically to minors, and conservatorship is reserved for incapacitated adults — the two words map to different ages, not different types of authority.\n\nOther states use \"guardian\" for both minors and incapacitated adults, and use \"conservator\" only for the financial role regardless of the ward's age. A handful of states skip the word \"conservator\" entirely and call the financial role a \"guardian of the estate\" instead.\n\nBecause the vocabulary shifts by jurisdiction, don't rely on the generic definitions above when you're actually filing a petition — confirm the exact terms your state's probate court uses, and consider whether a less restrictive alternative like a [durable power of attorney](/compare/power-of-attorney-vs-guardianship/) could avoid a court proceeding altogether.",
+      },
+      {
+        heading: "Before filing: less restrictive alternatives exist",
+        content:
+          "Courts generally require petitioners to show that a less restrictive alternative won't work before granting either guardianship or conservatorship, because both proceedings strip the person of significant legal rights. A validly executed durable power of attorney and healthcare proxy, set up while the person still has capacity, can often accomplish the same practical goals without a court case at all.\n\nA [revocable living trust](/compare/revocable-vs-irrevocable-trust/) can also handle asset management for someone who anticipates future incapacity, since a successor trustee can step in to manage trust assets without a conservatorship. This is why most estate planning attorneys recommend setting up powers of attorney and a trust well before a health crisis forces a court proceeding.\n\nOnce a person has already lost capacity without these documents in place, though, guardianship or conservatorship is often the only remaining legal option to protect them, since a power of attorney generally can't be signed after capacity is gone. Use the [estate planning hub](/estate-planning/) to compare the cost of setting up preventive documents now against the cost of a contested guardianship proceeding later.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is guardianship the same as conservatorship?",
+        answer:
+          "No. Guardianship covers personal and care decisions — healthcare, housing, daily needs. Conservatorship covers financial decisions — bank accounts, bills, and property. Some states appoint the same person to both roles, and some states use different terminology entirely, like calling the financial role a \"guardian of the estate.\"",
+      },
+      {
+        question: "Is conservatorship or guardianship for children?",
+        answer:
+          "Guardianship is the more common term for minor children, typically appointed when a parent dies or can't provide care. Conservatorship almost always applies to adults, most often an incapacitated adult with assets that need to be managed on their behalf.",
+      },
+      {
+        question: "Can one person be both a guardian and a conservator?",
+        answer:
+          "Yes, in most states a court can appoint the same person to serve as both guardian and conservator for one individual. Courts can also split the two roles between different people, which adds a layer of oversight since the two appointees have to coordinate.",
+      },
+      {
+        question: "How much oversight does a court have over a conservatorship vs a guardianship?",
+        answer:
+          "A conservator typically has to file a detailed annual accounting of every dollar handled, since financial abuse of a vulnerable person is the biggest risk courts try to prevent. A guardian typically files periodic care-plan updates instead, focused on the person's living situation and wellbeing rather than a dollar-by-dollar accounting.",
+      },
+      {
+        question: "How is conservatorship different from guardianship in California specifically?",
+        answer:
+          "California draws the line by age rather than by type of authority: guardianship applies to minors under 18, while conservatorship applies to incapacitated adults, covering both their person and their estate. This differs from states that use \"guardian\" for both minors and incapacitated adults.",
+      },
+      {
+        question: "Can guardianship or conservatorship be avoided?",
+        answer:
+          "Often, yes, if planning happens before a health crisis. A durable power of attorney, healthcare proxy, and revocable living trust set up while someone still has legal capacity can accomplish most of the same goals without a court proceeding. Once capacity is already lost, these documents generally can't be signed, and a court case becomes the main remaining option.",
+      },
+    ],
+    sources: [
+      { label: "National Academy of Elder Law Attorneys — Guardianship and Conservatorship", url: "https://www.naela.org/Web/Web/Resources_Tab/Consumer_Resources/Law_Topics/Guardianship_Conservatorship.aspx" },
+      { label: "Administration for Community Living — Guardianship", url: "https://acl.gov/programs/legal-issues/guardianship" },
+    ],
+    relatedComparisons: ["power-of-attorney-vs-guardianship", "elder-law-attorney-vs-estate-planning-attorney", "revocable-vs-irrevocable-trust", "living-trust-vs-will"],
+    calculatorLinks: [
+      { label: "Estate planning hub", href: "/estate-planning/" },
+      { label: "Elder care hub", href: "/elder-care/" },
+    ],
+  },
+
+  {
+    slug: "traditional-ira-vs-simple-ira",
+    title: "Traditional IRA vs SIMPLE IRA: 2026 Limits Compared",
+    metaDescription:
+      "Traditional IRA vs SIMPLE IRA compared: 2026 contribution limits, employer matching, and which account small-business employees should max first.",
+    targetKeyword: "traditional ira vs simple ira",
+    optionA: "Traditional IRA",
+    optionB: "SIMPLE IRA",
+    segment: "Retirement",
+    h1: "Traditional IRA vs SIMPLE IRA: Which Should You Max First?",
+    intro:
+      "A Traditional IRA is an account you open yourself, with a $7,500 contribution limit for 2026, while a SIMPLE IRA is a small-employer retirement plan with a $17,000 limit — or $18,100 at employers with 25 or fewer workers — plus a required employer match or contribution, which usually makes the SIMPLE IRA the better first stop if your employer offers one.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 contribution limit", a: "$7,500 ($8,600 if 50+)", b: "$17,000 standard plan ($21,000 if 50+); $18,100 at small employers with ≤25 employees ($21,950 if 50+)" },
+        { dimension: "Who can open one", a: "Anyone with earned income", b: "Only through an employer that sponsors a SIMPLE IRA plan" },
+        { dimension: "Employer contribution", a: "None — it's an individual account", b: "Mandatory: either a 3% match or a 2% nonelective contribution" },
+        { dimension: "Tax treatment", a: "Pre-tax; taxed on withdrawal (deduction may phase out if you're covered by a workplace plan)", b: "Pre-tax; taxed on withdrawal" },
+        { dimension: "Early withdrawal penalty", a: "10% before 59½", b: "25% if withdrawn within the first 2 years of participation, then 10%" },
+        { dimension: "Investment choice", a: "Any brokerage, unlimited investment options", b: "Limited to the plan provider's fund menu, set by the employer" },
+        { dimension: "Required minimum distributions", a: "Starting at age 73", b: "Starting at age 73" },
+      ],
+    },
+    verdict:
+      "If your employer offers a SIMPLE IRA, contribute enough to capture the full employer match first — that match is guaranteed money no Traditional IRA can replicate. Once you've captured the match, a Traditional IRA becomes useful as a second account with a wider choice of investments than most SIMPLE IRA plan menus offer. If you're self-employed or your employer doesn't offer a SIMPLE IRA, the Traditional IRA is simply your only option between the two.",
+    sections: [
+      {
+        heading: "How a Traditional IRA works",
+        content:
+          "A Traditional IRA is an individual retirement account you open directly with a brokerage, with no employer involved at all. For 2026, the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the contribution limit at $7,500, or $8,600 if you're 50 or older.\n\nYour contribution may be fully or partially tax-deductible depending on whether you or a spouse is covered by a workplace retirement plan, and your income. If neither of you is covered by a workplace plan, the full contribution is deductible regardless of income.\n\nBecause you open the account yourself at any brokerage, you get access to the full range of stocks, ETFs, and mutual funds that brokerage offers — a meaningfully wider menu than most employer-sponsored plans provide. Use the [retirement savings calculator](/retirement/retirement-savings-calculator/) to project how a Traditional IRA balance grows over your remaining working years.",
+      },
+      {
+        heading: "How a SIMPLE IRA works",
+        content:
+          "A SIMPLE IRA — Savings Incentive Match Plan for Employees — is a retirement plan designed for small businesses with 100 or fewer employees. For 2026, the standard employee contribution limit rose to $17,000, up from $16,500 in 2025; employers with 25 or fewer employees can offer a higher limit of $18,100.\n\nUnlike a Traditional IRA, a SIMPLE IRA requires the employer to contribute too — either matching up to 3% of the employee's compensation, or making a flat 2% nonelective contribution to every eligible employee's account whether they contribute or not.\n\nSIMPLE IRAs carry a steeper early-withdrawal penalty than most retirement accounts: 25% instead of the usual 10% if you withdraw within the first two years of participating in the plan. After that two-year mark, the penalty drops to the standard 10%.",
+      },
+      {
+        heading: "Why the employer match changes the math",
+        content:
+          "An employer match isn't optional upside — under SIMPLE IRA rules, the employer is legally required to contribute one of the two formulas every year the plan operates, which is what separates it from a Traditional IRA's purely individual structure.\n\nSay your employer offers the 3% match formula and you earn $60,000 a year. Contributing 3% of your salary ($1,800) captures a matching $1,800 from your employer — an instant 100% return on that portion of your contribution that no Traditional IRA, no matter how well invested, can replicate through market returns alone.\n\nThat's the specific reason financial planners almost universally recommend capturing a workplace match before funding an outside IRA: skipping the SIMPLE IRA match to prioritize a Traditional IRA means walking away from guaranteed money.",
+      },
+      {
+        heading: "Can you have both accounts at once?",
+        content:
+          "Yes. There's no rule preventing you from contributing to a SIMPLE IRA through your employer and a Traditional IRA on your own in the same year, though your Traditional IRA deduction may be limited if you're an active SIMPLE IRA participant and your income exceeds the IRS phase-out thresholds for that year.\n\nThe practical order most planners recommend: contribute enough to your SIMPLE IRA to capture the full employer match, then direct additional savings to a Traditional IRA (or Roth IRA, if you're eligible) for broader investment choice, then return to maxing the SIMPLE IRA if you have savings capacity left over.\n\nIf you're weighing a Roth IRA instead of a Traditional IRA as that second account, see our [Roth IRA vs Traditional IRA comparison](/compare/roth-ira-vs-traditional-ira/) for the tax tradeoffs involved.",
+      },
+      {
+        heading: "If you're self-employed instead of a small-business employee",
+        content:
+          "A SIMPLE IRA is only available if your employer sets one up — it isn't something a self-employed person can open for themselves in the way a Traditional IRA can. Self-employed savers who want the higher SIMPLE-style contribution limits and a workplace-style structure typically look at a Solo 401(k) or SEP IRA instead.\n\nOur [SEP IRA vs Solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) covers which of those two options fits a self-employed saver's contribution goals, since both allow substantially higher limits than either IRA discussed on this page.\n\nFor a business owner deciding what plan to offer employees in the first place — SIMPLE IRA versus a small-business 401(k) — the setup and administrative cost differences matter as much as the contribution limits, so budget time to compare providers before committing to either.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the 2026 Traditional IRA and SIMPLE IRA contribution limits?",
+        answer:
+          "For 2026, the Traditional IRA limit is $7,500 ($8,600 if you're 50 or older). The SIMPLE IRA limit is $17,000 at a standard employer ($21,000 if 50+), or $18,100 at an employer with 25 or fewer employees ($21,950 if 50+), per IRS guidance.",
+      },
+      {
+        question: "Can I contribute to a Traditional IRA and a SIMPLE IRA in the same year?",
+        answer:
+          "Yes, they have separate limits and you can fund both in the same year. Your Traditional IRA tax deduction may be reduced or phased out based on your income, since active SIMPLE IRA participation counts as workplace plan coverage for deduction purposes.",
+      },
+      {
+        question: "Is a SIMPLE IRA better than a Traditional IRA?",
+        answer:
+          "A SIMPLE IRA is usually the better first priority if your employer offers one, because of the required employer match or contribution — that's guaranteed money a Traditional IRA can't match. A Traditional IRA is better for investment choice, since you can open it at any brokerage instead of being limited to your employer's plan menu.",
+      },
+      {
+        question: "What is the SIMPLE IRA early withdrawal penalty?",
+        answer:
+          "A SIMPLE IRA charges a steep 25% penalty on withdrawals taken within your first two years of participating in the plan, compared with the standard 10% early-withdrawal penalty that applies to a Traditional IRA. After two years of participation, the SIMPLE IRA penalty drops to the standard 10%.",
+      },
+      {
+        question: "Can a self-employed person open a SIMPLE IRA?",
+        answer:
+          "A self-employed business owner can set up a SIMPLE IRA plan for their business, including for themselves as an employee. An individual working for someone else cannot open a SIMPLE IRA independently — it has to be sponsored by an employer, unlike a Traditional IRA.",
+      },
+    ],
+    sources: [
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — SIMPLE IRA plan", url: "https://www.irs.gov/retirement-plans/plan-sponsor/simple-ira-plan" },
+      { label: "IRS — Retirement topics: SIMPLE IRA contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
+    ],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "simple-ira-vs-401k", "roth-ira-vs-traditional-ira", "traditional-ira-vs-401k"],
+    calculatorLinks: [
+      { label: "Retirement hub", href: "/retirement/" },
+      { label: "Retirement savings calculator", href: "/retirement/retirement-savings-calculator/" },
+    ],
+  },
+
+  {
+    slug: "special-needs-trust-vs-able-account",
+    title: "Special Needs Trust vs ABLE Account: 2026 Guide for Families",
+    metaDescription:
+      "Special needs trust vs ABLE account compared: contribution limits, the 2026 age expansion to 46, Medicaid payback rules, and which to use first.",
+    targetKeyword: "special needs trust vs able account",
+    optionA: "Special Needs Trust",
+    optionB: "ABLE Account",
+    segment: "Disability & Elder Care",
+    h1: "Special Needs Trust vs ABLE Account: Which Do You Need?",
+    intro:
+      "A special needs trust can hold an unlimited amount of money for a person with a disability without any dollar cap, while an ABLE account is a tax-advantaged savings account capped at $20,000 in new contributions per year in 2026 — and most families end up using both, since a trust handles larger sums like an inheritance while an ABLE account handles everyday spending without disqualifying the beneficiary from SSI or Medicaid.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Annual contribution cap", a: "None — can hold any amount", b: "$20,000/year in 2026 (more if the beneficiary works and uses ABLE to Work)" },
+        { dimension: "Who can be the beneficiary", a: "Anyone the trust is written for", b: "Disability must have begun before age 46 (raised from 26, effective 2026)" },
+        { dimension: "Setup cost and complexity", a: "Requires an attorney to draft; typically $1,500–$5,000+", b: "Opened directly online through a state ABLE program, often free or low-cost" },
+        { dimension: "SSI resource limit protection", a: "Fully protected — trust assets aren't counted", b: "Protected up to $100,000; above that, SSI (not Medicaid) may pause" },
+        { dimension: "Medicaid payback on the beneficiary's death", a: "Required only for a first-party (self-funded) trust; not required for a third-party trust", b: "Required from remaining funds after death" },
+        { dimension: "Who controls spending", a: "A trustee, per the trust's terms", b: "The account owner or an authorized signer, more like a normal bank account" },
+        { dimension: "Best used for", a: "Large sums: inheritance, lawsuit settlement, life insurance payout", b: "Everyday and moderate expenses: housing, transportation, education, assistive technology" },
+      ],
+    },
+    verdict:
+      "Use an ABLE account first for everyday and moderate expenses — it's cheap to open, has no legal drafting cost, and gives the beneficiary or a family member direct control over spending. Use a special needs trust when a large lump sum is coming, such as an inheritance, a legal settlement, or life insurance proceeds, since a trust has no contribution cap and a first-party trust's Medicaid payback rules are built specifically for that situation. Many families fund an ABLE account from a special needs trust each year, using the trust as the long-term reservoir and the ABLE account as the spending account.",
+    sections: [
+      {
+        heading: "What a special needs trust actually protects",
+        content:
+          "A special needs trust holds assets for a person with a disability without those assets counting as the person's own resources for SSI or Medicaid eligibility. SSI cuts off eligibility once a person's countable resources exceed $2,000 — a threshold so low that even a modest inheritance paid directly to the beneficiary could end their benefits.\n\nA third-party special needs trust, funded with money that never belonged to the beneficiary — most often from parents or grandparents — has no dollar cap and no Medicaid payback requirement when the beneficiary dies. Remaining funds can go to other family members named in the trust.\n\nA first-party special needs trust, funded with the beneficiary's own money — a personal injury settlement is the most common source — must include a Medicaid payback provision by law. Without that provision, the trust doesn't qualify for the resource exclusion at all, and the beneficiary loses benefits. This is the single most important drafting requirement for a first-party trust, and it's why you need an attorney experienced specifically in special needs planning, not a generic estate planning template.",
+      },
+      {
+        heading: "What an ABLE account actually protects",
+        content:
+          "An ABLE account is a state-administered, tax-advantaged savings account created for people with disabilities, modeled after 529 college savings plans. For 2026, up to $20,000 can be contributed in a calendar year from any combination of the account owner, family, and friends — combined, not per person.\n\nA working account owner who doesn't participate in an employer retirement plan can contribute even more under the ABLE to Work provision — up to an additional $15,650 of their own earnings in most states for 2026. Investment growth inside the account is tax-free when used for qualified disability expenses: housing, transportation, education, employment training, assistive technology, and healthcare, among others.\n\nUnlike a special needs trust, an ABLE account functions much like a regular bank or brokerage account day-to-day, with no trustee required to approve each withdrawal. That accessibility is the tradeoff for its much lower contribution cap compared with a trust's unlimited capacity.",
+      },
+      {
+        heading: "The 2026 age expansion is the biggest recent change",
+        content:
+          "Starting January 1, 2026, the ABLE Age Adjustment Act raised the qualifying disability-onset age from before 26 to before 46 — what matters is when the disability began, not how old the person is now. The National Disability Institute projects roughly 6 million more adults now qualify to open an ABLE account for the first time.\n\nThis change specifically opens ABLE accounts to people whose disabling condition developed later in life — multiple sclerosis, a traumatic brain injury, or a chronic mental health condition diagnosed in their 30s or early 40s, for example — who were previously locked out entirely because of the old age-26 cutoff.\n\nIf you or a family member has a disability that began between ages 26 and 45, this is the first year an ABLE account is even an option, and it's worth opening one even with a modest first contribution, since the account itself — not the balance — is what unlocks the tax-free growth and benefit protection going forward.",
+      },
+      {
+        heading: "SSI vs Medicaid: the two programs treat ABLE balances differently",
+        content:
+          "ABLE account balances up to $100,000 don't count against the SSI resource limit at all. Above $100,000, SSI cash benefits pause (not terminate) until the balance drops back under the cap — but Medicaid eligibility is unaffected by the ABLE balance at any amount, since Medicaid doesn't apply the same $100,000 cap that SSI does.\n\nThat distinction matters for families deciding how aggressively to fund an ABLE account versus routing larger sums into a special needs trust instead: a beneficiary who depends heavily on SSI cash benefits has a real incentive to keep the ABLE balance under $100,000, while a beneficiary whose primary need is Medicaid-covered healthcare has more room before hitting a meaningful limit.\n\nWhen an ABLE account holder dies, remaining funds are subject to a Medicaid payback requirement for benefits received after the account was opened — similar to a first-party special needs trust's payback rule, but calculated only from the date the ABLE account existed rather than the beneficiary's entire lifetime.",
+      },
+      {
+        heading: "How to use both together",
+        content:
+          "The two tools aren't competitors — most special needs planning attorneys recommend using them together. A common structure: a third-party special needs trust holds the bulk of family-provided assets with no cap and no Medicaid payback, and the trustee distributes an annual amount from the trust into the beneficiary's ABLE account for spending.\n\nThis structure gives the beneficiary more day-to-day financial independence through the ABLE account's simple, bank-like access, while the trust protects larger sums and avoids the ABLE account's $20,000 annual contribution cap and $100,000 SSI resource threshold.\n\nOur [elder care hub](/elder-care/) includes a [special needs trust calculator](/elder-care/special-needs-trust-calculator/) to help estimate trust funding needs, and it's worth reviewing that alongside a conversation with an elder law or special needs planning attorney, since state ABLE program rules and trust drafting requirements both vary.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should I get a special needs trust or an ABLE account?",
+        answer:
+          "Most families use both. An ABLE account works well for everyday and moderate expenses with low setup cost and no legal drafting required. A special needs trust works better for large sums — an inheritance, settlement, or life insurance payout — since it has no contribution cap, unlike an ABLE account's $20,000 annual limit in 2026.",
+      },
+      {
+        question: "What is the 2026 ABLE account age change?",
+        answer:
+          "Starting January 1, 2026, the ABLE Age Adjustment Act raised the qualifying disability-onset age from before 26 to before 46. What matters is when the disability began, not the person's current age, and the change is projected to make roughly 6 million more adults newly eligible.",
+      },
+      {
+        question: "Does an ABLE account affect SSI or Medicaid?",
+        answer:
+          "ABLE balances up to $100,000 don't count against the SSI resource limit at all. Above $100,000, SSI cash benefits pause until the balance drops back under the cap, but Medicaid eligibility isn't affected by the ABLE balance at any amount.",
+      },
+      {
+        question: "Does a special needs trust require a Medicaid payback?",
+        answer:
+          "It depends on the funding source. A first-party trust, funded with the beneficiary's own money, legally must include a Medicaid payback provision. A third-party trust, funded with money that was never the beneficiary's, has no Medicaid payback requirement at all.",
+      },
+      {
+        question: "How much can I contribute to an ABLE account in 2026?",
+        answer:
+          "Up to $20,000 per year from all contributors combined — the account owner, family, and friends. A working account owner who doesn't participate in an employer retirement plan can contribute up to an additional $15,650 of their own earnings in most states under the ABLE to Work provision.",
+      },
+    ],
+    sources: [
+      { label: "Social Security Administration — SSI Spotlight on Resources", url: "https://www.ssa.gov/ssi/spotlights/spot-resources.htm" },
+      { label: "ABLE National Resource Center — Contribution limits", url: "https://www.ablenrc.org/able-account-contribution-limits-2025/" },
+      { label: "Administration for Community Living — ABLE accounts", url: "https://acl.gov/ABLE" },
+    ],
+    relatedComparisons: ["power-of-attorney-vs-guardianship", "living-trust-vs-will", "revocable-vs-irrevocable-trust", "custodial-account-vs-savings-account"],
+    calculatorLinks: [
+      { label: "Special needs trust calculator", href: "/elder-care/special-needs-trust-calculator/" },
+      { label: "Elder care hub", href: "/elder-care/" },
+    ],
+  },
+
+  {
+    slug: "usda-loan-vs-fha-loan",
+    title: "USDA Loan vs FHA Loan: Which Wins for You in 2026?",
+    metaDescription:
+      "USDA loan vs FHA loan compared: down payment, income limits, mortgage insurance, and eligibility, so you can pick the right zero-to-low-down loan.",
+    targetKeyword: "usda loan vs fha loan",
+    optionA: "USDA Loan",
+    optionB: "FHA Loan",
+    segment: "First-Time & Rural Buyers",
+    h1: "USDA Loan vs FHA Loan: Which Mortgage Should You Choose?",
+    intro:
+      "A USDA loan requires no down payment at all but only applies to eligible rural and suburban properties with household income under 115% of the area median, while an FHA loan allows a down payment as low as 3.5% and can be used almost anywhere — and the choice usually comes down to whether your property location and income qualify for USDA's more restrictive but cheaper terms.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Minimum down payment", a: "0%", b: "3.5% (with a 580+ credit score)" },
+        { dimension: "Property eligibility", a: "USDA-eligible rural/suburban areas only (about 97% of U.S. land, but excludes most major metro cores)", b: "Any location, urban or rural" },
+        { dimension: "Household income limit", a: "Yes — generally 115% of area median income", b: "None" },
+        { dimension: "Minimum credit score", a: "640 typical for automated approval (some lenders go lower with manual underwriting)", b: "500 with 10% down; 580 with 3.5% down" },
+        { dimension: "Mortgage insurance", a: "1% upfront guarantee fee + 0.35%/year annual fee", b: "1.75% upfront premium + 0.15%–0.75%/year annual premium (MIP)" },
+        { dimension: "How long mortgage insurance lasts", a: "Life of the loan", b: "Life of the loan if down payment is under 10%; 11 years if 10%+ down" },
+        { dimension: "Primary residence requirement", a: "Yes — primary residence only", b: "Yes — primary residence only" },
+      ],
+    },
+    verdict:
+      "Choose a USDA loan if your target property is in an eligible rural or suburban area and your household income falls under the local limit — the 0% down payment and lower ongoing mortgage insurance fee make it the cheaper option when you qualify. Choose an FHA loan if you're buying in a city or dense suburb outside USDA's eligible map, or if your income exceeds USDA's limit, since FHA has no location or income restriction at all. If you qualify for both, run the actual numbers, because USDA's lower annual fee usually beats FHA's over the life of the loan even though FHA allows a lower credit score in some cases.",
+    sections: [
+      {
+        heading: "USDA loan eligibility: location and income both matter",
+        content:
+          "A USDA loan, backed by the [U.S. Department of Agriculture's Rural Development program](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program), requires the property to sit inside a USDA-eligible rural or suburban area — roughly 97% of U.S. land qualifies, though that figure is misleading since it excludes the dense urban and inner-suburban areas where most Americans actually live and buy homes.\n\nOn top of the location rule, USDA counts total household income — every adult living in the home, not just the borrowers on the loan — against a limit set at 115% of the area median income for the specific county the property sits in. For 2026, that works out to roughly $112,000 to $124,000 for a 1–4 person household in most counties, and meaningfully higher in expensive metro-adjacent counties or for larger households. Because the limit is calculated county by county rather than as one flat national number, always look up the exact figure for your target county on USDA's own eligibility site rather than relying on a single nationwide number.\n\nBoth conditions have to be met at the same time: the right location and income under the limit. A borrower who qualifies on income but is buying in an ineligible metro area can't use USDA no matter how low their income is.",
+      },
+      {
+        heading: "FHA loan eligibility: no location or income limit",
+        content:
+          "An FHA loan, insured by the Federal Housing Administration, has no property-location restriction and no income limit at all — it can be used to buy a home anywhere in the country, urban, suburban, or rural, by a borrower at any income level.\n\nFHA's minimum down payment is 3.5% with a credit score of 580 or higher, or 10% down with a score as low as 500. That's a meaningfully lower credit bar than USDA's typical 640 threshold for automated approval, which is why FHA remains the more accessible option for buyers with a thinner or lower credit history.\n\nFHA does cap the loan amount itself through county-specific FHA loan limits, which vary by area cost of living, but that's a loan-size limit rather than a borrower-income limit — a high earner can still use FHA as long as the loan amount fits under the county cap.",
+      },
+      {
+        heading: "Mortgage insurance: USDA is cheaper long-term",
+        content:
+          "USDA charges a 1% upfront guarantee fee (which can be rolled into the loan) plus a 0.35% annual fee, both calculated on the loan balance. FHA charges a steeper 1.75% upfront premium plus an annual mortgage insurance premium (MIP) that ranges from 0.15% to 0.75% depending on your loan term, loan-to-value ratio, and loan amount.\n\nOn a $300,000 loan, USDA's annual fee works out to about $87.50 a month, while FHA's annual MIP at a typical 0.55% rate works out to about $137.50 a month — a difference of roughly $600 a year that compounds over the life of a 30-year loan.\n\nBoth programs' mortgage insurance lasts for the life of the loan if you put down USDA's standard 0% or FHA's minimum 3.5%–9.99%. FHA borrowers who put down 10% or more can drop mortgage insurance after 11 years; USDA offers no equivalent early removal regardless of down payment, since USDA loans have no down payment tier structure to begin with. Run your own numbers with the [FHA loan calculator](/mortgage/fha-calculator/) to compare total interest and insurance cost against a USDA scenario.",
+      },
+      {
+        heading: "Which one should you actually apply for?",
+        content:
+          "Start by checking your target property's USDA eligibility using the USDA's own eligibility map before assuming either loan is off the table — many buyers are surprised to learn a property just outside a city's dense core still qualifies as USDA-eligible.\n\nIf the property qualifies and your household income is under the local USDA limit, run both scenarios through a lender, since USDA's 0% down payment and lower ongoing fee usually beat FHA's 3.5% down payment and higher MIP over time, assuming your credit clears USDA's typical 640 bar.\n\nIf your credit score sits between 500 and 639, or your property or income doesn't fit USDA's rules, FHA remains the more accessible zero-to-low-down option. For a side-by-side against a third common low-down-payment option, see our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) and our [VA loan vs conventional loan comparison](/compare/va-loan-vs-conventional-loan/) if you or a co-borrower has military service.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a USDA loan better than an FHA loan?",
+        answer:
+          "USDA is usually cheaper when you qualify, thanks to its 0% down payment and lower 0.35% annual fee versus FHA's 3.5% minimum down payment and higher mortgage insurance premium. USDA only works for eligible rural/suburban properties under an income limit, though, so FHA remains the better fallback if either condition isn't met.",
+      },
+      {
+        question: "What credit score do I need for USDA vs FHA?",
+        answer:
+          "USDA typically requires a 640 credit score for automated approval, though some lenders will manually underwrite lower scores. FHA accepts scores as low as 500 with 10% down, or 580 with the standard 3.5% down payment — a meaningfully lower bar than USDA's typical threshold.",
+      },
+      {
+        question: "Can I use a USDA loan to buy a home in the suburbs?",
+        answer:
+          "Possibly. USDA eligibility is based on the USDA's own property map, not a strict rural-vs-urban label, and many suburban areas just outside a city's dense core do qualify. Check the specific address against USDA's eligibility map before assuming it doesn't qualify.",
+      },
+      {
+        question: "What is the 2026 USDA loan income limit?",
+        answer:
+          "USDA sets the limit at 115% of the area median income for the specific county your property is in, which works out to roughly $112,000 to $124,000 for a 1–4 person household in most counties for 2026, and higher in expensive metro-adjacent counties or for larger households. Because it's calculated county by county, check USDA's own eligibility lookup for your exact address rather than relying on one nationwide figure.",
+      },
+      {
+        question: "Does a USDA loan require mortgage insurance?",
+        answer:
+          "Yes, but USDA calls it a guarantee fee instead of mortgage insurance: a 1% upfront fee plus a 0.35% annual fee, both calculated on the loan balance. That combined cost is typically lower than FHA's 1.75% upfront premium plus its 0.15%–0.75% annual MIP.",
+      },
+    ],
+    sources: [
+      { label: "USDA Rural Development — Single Family Housing Guaranteed Loan Program", url: "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program" },
+      { label: "HUD — FHA Loan Basics", url: "https://www.hud.gov/buying-a-home/loans-federal-housing-administration-fha-mortgages" },
+    ],
+    relatedComparisons: ["fha-vs-conventional-loan", "fha-loan-vs-va-loan", "va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage"],
+    calculatorLinks: [
+      { label: "FHA loan calculator", href: "/mortgage/fha-calculator/" },
+      { label: "Mortgage affordability calculator", href: "/mortgage/affordability-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

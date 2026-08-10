@@ -1,77 +1,622 @@
 {
   "version": 1,
-  "lastRun": "2026-07-27",
+  "lastRun": "2026-08-10",
   "dropped": [
-    { "slug": "trump-account-vs-coverdell-esa", "format": "comparison", "reason": "0 Autocomplete demand (Trump pass 2026-07-08) — 'trump account vs X' space saturated", "score": 0 },
-    { "slug": "trump-account-vs-i-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-savings-bonds", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-whole-life-insurance", "format": "comparison", "reason": "~0 Autocomplete demand (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-iul", "format": "comparison", "reason": "1 Autocomplete mention, niche (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-cd", "format": "comparison", "reason": "0 Autocomplete demand (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-able-account", "format": "comparison", "reason": "1 mention, niche disability account (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-trust-fund", "format": "comparison", "reason": "1 mention (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-ugma", "format": "comparison", "reason": "DUPLICATE of trump-account-vs-custodial-account (2026-07-08)", "score": 0 },
-    { "slug": "trump-account-vs-custodial-roth-ira", "format": "comparison", "reason": "DUPLICATE of trump-account-vs-roth-ira (2026-07-08)", "score": 0 },
-    { "slug": "etf-vs-index-fund", "optionA": "ETF", "optionB": "Index Fund", "reason": "KD 37 — too competitive for current DR", "score": 0.393 },
-    { "slug": "heloc-vs-home-equity-loan", "optionA": "HELOC", "optionB": "Home Equity Loan", "reason": "KD 45 — high-authority incumbents dominate SERP", "score": 0.356 },
-    { "slug": "active-vs-passive-investing", "optionA": "Active Investing", "optionB": "Passive Investing", "reason": "KD 26 + low vol (600) — not enough return", "score": 0.318 },
-    { "slug": "dollar-cost-averaging-vs-lump-sum", "optionA": "Dollar-Cost Averaging", "optionB": "Lump Sum Investing", "reason": "KD 37 + vol 450 — too hard for the volume", "score": 0.255 },
-    { "slug": "heloc-vs-cash-out-refinance", "optionA": "HELOC", "optionB": "Cash-Out Refinance", "reason": "KD 46 — too competitive", "score": 0.200 },
-    { "slug": "rental-property-vs-stock-market", "optionA": "Rental Property", "optionB": "Stock Market", "reason": "Vol 40 — too low volume", "score": 0.119 },
-    { "slug": "auto-loan-vs-paying-cash", "optionA": "Auto Loan", "optionB": "Paying Cash", "reason": "Zero search volume reported", "score": 0 },
-    { "slug": "best-robo-advisors", "format": "roundup", "category": "robo-advisors", "angle": "best", "reason": "Tier 3 — KD 52, highly competitive SERP dominated by NerdWallet/Investopedia", "score": 0.290 },
-    { "slug": "best-credit-cards", "format": "roundup", "category": "credit cards", "angle": "best", "reason": "Tier 3 — KD 68, unreachable for current DR; affiliate-heavy SERP", "score": 0.280 },
-    { "slug": "best-personal-loans", "format": "roundup", "category": "personal loans", "angle": "best", "reason": "Tier 3 — KD 55 + dominated by LendingTree aggregators", "score": 0.270 },
-    { "slug": "best-checking-accounts", "format": "roundup", "category": "checking accounts", "angle": "best", "reason": "Tier 3 — KD 47, hub relevance weak (no checking calculator)", "score": 0.265 },
-    { "slug": "best-savings-accounts", "format": "roundup", "category": "savings accounts", "angle": "best", "reason": "Tier 3 — KD 49, too broad; HYSA angle partially covered by existing compare pages", "score": 0.258 },
-    { "slug": "best-student-loan-refinance", "format": "roundup", "category": "student loan refinance lenders", "angle": "best", "reason": "Tier 3 — KD 43, no student loan calculator hub to anchor internal links", "score": 0.245 },
-    { "slug": "best-high-yield-savings-accounts", "format": "roundup", "category": "high-yield savings accounts", "angle": "best", "reason": "Tier 3 — KD 41, adjacent to hysa-vs-money-market page (partial overlap risk)", "score": 0.238 },
-    { "slug": "best-cd-rates", "format": "roundup", "category": "CD rates", "angle": "best", "reason": "Tier 3 — KD 39 but extremely rate-sensitive; content would decay monthly", "score": 0.225 },
-    { "slug": "best-home-equity-loans", "format": "roundup", "category": "home equity loans", "angle": "best", "reason": "Tier 3 — KD 44, HELOC vs home-equity-loan compare page already covers intent", "score": 0.218 },
-    { "slug": "best-auto-insurance", "format": "roundup", "category": "auto insurance", "angle": "best", "reason": "Tier 3 — KD 58, outside core finance-calculator hub relevance", "score": 0.200 },
-    { "slug": "best-tax-software", "format": "roundup", "category": "tax software", "angle": "best", "reason": "Tier 3 — KD 51, seasonal content; no tax calculator hub", "score": 0.195 },
-    { "slug": "best-life-insurance", "format": "roundup", "category": "life insurance", "angle": "best", "reason": "Tier 3 — KD 55, YMYL compliance overhead high; no existing hub", "score": 0.188 },
-    { "slug": "best-estate-planning-software", "format": "roundup", "category": "estate planning software", "angle": "best", "reason": "Tier 3 — vol 150/mo — too low volume even at KD 9", "score": 0.155 },
-    { "slug": "best-real-estate-crowdfunding", "format": "roundup", "category": "real estate crowdfunding platforms", "angle": "best", "reason": "Tier 3 — vol 800 but KD 42; niche audience vs core calculator users", "score": 0.148 },
-    { "slug": "credit-card-vs-personal-loan", "format": "comparison", "optionA": "Credit Card", "optionB": "Personal Loan", "reason": "2026-07-20 run: live Ahrefs data now available (parent term 'personal loan vs credit card' Vol 800, KD 40). Dropped on winnability — SERP page 1 is NerdWallet/TD Bank/Investopedia/LendingTree/Experian/SoFi (DR72-95), unwinnable at site DR 2.6. Supersedes the 2026-07-13 heuristic-only drop with a confirmed data-based verdict.", "score": 0.18 },
-    { "slug": "traditional-ira-vs-roth-401k", "format": "comparison", "optionA": "Traditional IRA", "optionB": "Roth 401(k)", "reason": "2026-07-13 run: heuristic-only (Ahrefs units exhausted). Dropped on portfolio-saturation risk: site already has 4 pages covering this exact 4-entity matrix pairwise (401k-vs-roth-ira, roth-401k-vs-traditional-401k, traditional-ira-vs-401k, roth-ira-vs-traditional-ira) — a 5th permutation risks cannibalization for low incremental value.", "score": 0 },
-    { "slug": "sep-ira-vs-simple-ira", "format": "comparison", "optionA": "SEP IRA", "optionB": "SIMPLE IRA", "reason": "2026-07-13 run: DUPLICATE — already thoroughly covered (full differences table in prose + explicit verdict) in an H3 section titled 'SEP IRA vs. SIMPLE IRA: which plan fits your situation?' inside /roundup/best-retirement-accounts-for-self-employed/. Not a new page candidate; a pointer link to the new simple-ira-vs-401k comparison was added to that section instead.", "score": 0 },
-    { "slug": "401k-loan-vs-personal-loan", "format": "comparison", "optionA": "401(k) Loan", "optionB": "Personal Loan", "reason": "2026-07-20 run: live Ahrefs Vol 800, KD 53 — too competitive for site DR 2.6.", "score": 0.15 },
-    { "slug": "cpa-vs-enrolled-agent", "format": "comparison", "optionA": "CPA", "optionB": "Enrolled Agent", "reason": "2026-07-20 run: DUPLICATE — subsumed by existing 3-way /compare/tax-attorney-vs-cpa-vs-enrolled-agent/, which already covers this exact pair head-to-head plus a tax attorney.", "score": 0 },
-    { "slug": "merchant-cash-advance-vs-business-line-of-credit", "format": "comparison", "optionA": "Merchant Cash Advance", "optionB": "Business Line of Credit", "reason": "2026-07-20 run: live Ahrefs Vol 10 — below the reliable-demand floor.", "score": 0.02 },
-    { "slug": "merchant-cash-advance-vs-sba-loan", "format": "comparison", "optionA": "Merchant Cash Advance", "optionB": "SBA Loan", "reason": "2026-07-20 run: Ahrefs returned zero volume data for this term.", "score": 0 },
-    { "slug": "invoice-factoring-vs-sba-loan", "format": "comparison", "optionA": "Invoice Factoring", "optionB": "SBA Loan", "reason": "2026-07-20 run: Ahrefs returned zero volume data for this term.", "score": 0 },
-    { "slug": "business-line-of-credit-vs-term-loan", "format": "comparison", "optionA": "Business Line of Credit", "optionB": "Term Loan", "reason": "2026-07-20 run: Vol 90 (below reliable floor), KD not available, serp-overview returned no organic positions — insufficient live data to build this run; revisit if autocomplete/GSC signals demand later.", "score": 0.08 }
+    {
+      "slug": "trump-account-vs-coverdell-esa",
+      "format": "comparison",
+      "reason": "0 Autocomplete demand (Trump pass 2026-07-08) \u2014 'trump account vs X' space saturated",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-i-bonds",
+      "format": "comparison",
+      "reason": "0 Autocomplete demand (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-savings-bonds",
+      "format": "comparison",
+      "reason": "0 Autocomplete demand (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-whole-life-insurance",
+      "format": "comparison",
+      "reason": "~0 Autocomplete demand (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-iul",
+      "format": "comparison",
+      "reason": "1 Autocomplete mention, niche (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-cd",
+      "format": "comparison",
+      "reason": "0 Autocomplete demand (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-able-account",
+      "format": "comparison",
+      "reason": "1 mention, niche disability account (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-trust-fund",
+      "format": "comparison",
+      "reason": "1 mention (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-ugma",
+      "format": "comparison",
+      "reason": "DUPLICATE of trump-account-vs-custodial-account (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "trump-account-vs-custodial-roth-ira",
+      "format": "comparison",
+      "reason": "DUPLICATE of trump-account-vs-roth-ira (2026-07-08)",
+      "score": 0
+    },
+    {
+      "slug": "etf-vs-index-fund",
+      "optionA": "ETF",
+      "optionB": "Index Fund",
+      "reason": "KD 37 \u2014 too competitive for current DR",
+      "score": 0.393
+    },
+    {
+      "slug": "heloc-vs-home-equity-loan",
+      "optionA": "HELOC",
+      "optionB": "Home Equity Loan",
+      "reason": "KD 45 \u2014 high-authority incumbents dominate SERP",
+      "score": 0.356
+    },
+    {
+      "slug": "active-vs-passive-investing",
+      "optionA": "Active Investing",
+      "optionB": "Passive Investing",
+      "reason": "KD 26 + low vol (600) \u2014 not enough return",
+      "score": 0.318
+    },
+    {
+      "slug": "dollar-cost-averaging-vs-lump-sum",
+      "optionA": "Dollar-Cost Averaging",
+      "optionB": "Lump Sum Investing",
+      "reason": "KD 37 + vol 450 \u2014 too hard for the volume",
+      "score": 0.255
+    },
+    {
+      "slug": "heloc-vs-cash-out-refinance",
+      "optionA": "HELOC",
+      "optionB": "Cash-Out Refinance",
+      "reason": "KD 46 \u2014 too competitive",
+      "score": 0.2
+    },
+    {
+      "slug": "rental-property-vs-stock-market",
+      "optionA": "Rental Property",
+      "optionB": "Stock Market",
+      "reason": "Vol 40 \u2014 too low volume",
+      "score": 0.119
+    },
+    {
+      "slug": "auto-loan-vs-paying-cash",
+      "optionA": "Auto Loan",
+      "optionB": "Paying Cash",
+      "reason": "Zero search volume reported",
+      "score": 0
+    },
+    {
+      "slug": "best-robo-advisors",
+      "format": "roundup",
+      "category": "robo-advisors",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 52, highly competitive SERP dominated by NerdWallet/Investopedia",
+      "score": 0.29
+    },
+    {
+      "slug": "best-credit-cards",
+      "format": "roundup",
+      "category": "credit cards",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 68, unreachable for current DR; affiliate-heavy SERP",
+      "score": 0.28
+    },
+    {
+      "slug": "best-personal-loans",
+      "format": "roundup",
+      "category": "personal loans",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 55 + dominated by LendingTree aggregators",
+      "score": 0.27
+    },
+    {
+      "slug": "best-checking-accounts",
+      "format": "roundup",
+      "category": "checking accounts",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 47, hub relevance weak (no checking calculator)",
+      "score": 0.265
+    },
+    {
+      "slug": "best-savings-accounts",
+      "format": "roundup",
+      "category": "savings accounts",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 49, too broad; HYSA angle partially covered by existing compare pages",
+      "score": 0.258
+    },
+    {
+      "slug": "best-student-loan-refinance",
+      "format": "roundup",
+      "category": "student loan refinance lenders",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 43, no student loan calculator hub to anchor internal links",
+      "score": 0.245
+    },
+    {
+      "slug": "best-high-yield-savings-accounts",
+      "format": "roundup",
+      "category": "high-yield savings accounts",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 41, adjacent to hysa-vs-money-market page (partial overlap risk)",
+      "score": 0.238
+    },
+    {
+      "slug": "best-cd-rates",
+      "format": "roundup",
+      "category": "CD rates",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 39 but extremely rate-sensitive; content would decay monthly",
+      "score": 0.225
+    },
+    {
+      "slug": "best-home-equity-loans",
+      "format": "roundup",
+      "category": "home equity loans",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 44, HELOC vs home-equity-loan compare page already covers intent",
+      "score": 0.218
+    },
+    {
+      "slug": "best-auto-insurance",
+      "format": "roundup",
+      "category": "auto insurance",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 58, outside core finance-calculator hub relevance",
+      "score": 0.2
+    },
+    {
+      "slug": "best-tax-software",
+      "format": "roundup",
+      "category": "tax software",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 51, seasonal content; no tax calculator hub",
+      "score": 0.195
+    },
+    {
+      "slug": "best-life-insurance",
+      "format": "roundup",
+      "category": "life insurance",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 KD 55, YMYL compliance overhead high; no existing hub",
+      "score": 0.188
+    },
+    {
+      "slug": "best-estate-planning-software",
+      "format": "roundup",
+      "category": "estate planning software",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 vol 150/mo \u2014 too low volume even at KD 9",
+      "score": 0.155
+    },
+    {
+      "slug": "best-real-estate-crowdfunding",
+      "format": "roundup",
+      "category": "real estate crowdfunding platforms",
+      "angle": "best",
+      "reason": "Tier 3 \u2014 vol 800 but KD 42; niche audience vs core calculator users",
+      "score": 0.148
+    },
+    {
+      "slug": "credit-card-vs-personal-loan",
+      "format": "comparison",
+      "optionA": "Credit Card",
+      "optionB": "Personal Loan",
+      "reason": "2026-07-20 run: live Ahrefs data now available (parent term 'personal loan vs credit card' Vol 800, KD 40). Dropped on winnability \u2014 SERP page 1 is NerdWallet/TD Bank/Investopedia/LendingTree/Experian/SoFi (DR72-95), unwinnable at site DR 2.6. Supersedes the 2026-07-13 heuristic-only drop with a confirmed data-based verdict.",
+      "score": 0.18
+    },
+    {
+      "slug": "traditional-ira-vs-roth-401k",
+      "format": "comparison",
+      "optionA": "Traditional IRA",
+      "optionB": "Roth 401(k)",
+      "reason": "2026-07-13 run: heuristic-only (Ahrefs units exhausted). Dropped on portfolio-saturation risk: site already has 4 pages covering this exact 4-entity matrix pairwise (401k-vs-roth-ira, roth-401k-vs-traditional-401k, traditional-ira-vs-401k, roth-ira-vs-traditional-ira) \u2014 a 5th permutation risks cannibalization for low incremental value.",
+      "score": 0
+    },
+    {
+      "slug": "sep-ira-vs-simple-ira",
+      "format": "comparison",
+      "optionA": "SEP IRA",
+      "optionB": "SIMPLE IRA",
+      "reason": "2026-07-13 run: DUPLICATE \u2014 already thoroughly covered (full differences table in prose + explicit verdict) in an H3 section titled 'SEP IRA vs. SIMPLE IRA: which plan fits your situation?' inside /roundup/best-retirement-accounts-for-self-employed/. Not a new page candidate; a pointer link to the new simple-ira-vs-401k comparison was added to that section instead.",
+      "score": 0
+    },
+    {
+      "slug": "401k-loan-vs-personal-loan",
+      "format": "comparison",
+      "optionA": "401(k) Loan",
+      "optionB": "Personal Loan",
+      "reason": "2026-07-20 run: live Ahrefs Vol 800, KD 53 \u2014 too competitive for site DR 2.6.",
+      "score": 0.15
+    },
+    {
+      "slug": "cpa-vs-enrolled-agent",
+      "format": "comparison",
+      "optionA": "CPA",
+      "optionB": "Enrolled Agent",
+      "reason": "2026-07-20 run: DUPLICATE \u2014 subsumed by existing 3-way /compare/tax-attorney-vs-cpa-vs-enrolled-agent/, which already covers this exact pair head-to-head plus a tax attorney.",
+      "score": 0
+    },
+    {
+      "slug": "merchant-cash-advance-vs-business-line-of-credit",
+      "format": "comparison",
+      "optionA": "Merchant Cash Advance",
+      "optionB": "Business Line of Credit",
+      "reason": "2026-07-20 run: live Ahrefs Vol 10 \u2014 below the reliable-demand floor.",
+      "score": 0.02
+    },
+    {
+      "slug": "merchant-cash-advance-vs-sba-loan",
+      "format": "comparison",
+      "optionA": "Merchant Cash Advance",
+      "optionB": "SBA Loan",
+      "reason": "2026-07-20 run: Ahrefs returned zero volume data for this term.",
+      "score": 0
+    },
+    {
+      "slug": "invoice-factoring-vs-sba-loan",
+      "format": "comparison",
+      "optionA": "Invoice Factoring",
+      "optionB": "SBA Loan",
+      "reason": "2026-07-20 run: Ahrefs returned zero volume data for this term.",
+      "score": 0
+    },
+    {
+      "slug": "business-line-of-credit-vs-term-loan",
+      "format": "comparison",
+      "optionA": "Business Line of Credit",
+      "optionB": "Term Loan",
+      "reason": "2026-07-20 run: Vol 90 (below reliable floor), KD not available, serp-overview returned no organic positions \u2014 insufficient live data to build this run; revisit if autocomplete/GSC signals demand later.",
+      "score": 0.08
+    },
+    {
+      "slug": "pension-vs-annuity",
+      "reason": "2026-08-10 run: Vol 700, KD 3, but top-4 SERP positions are DR74-88 institutional sites (annuity.org, Schwab, PBGC, Santander) \u2014 nominal KD misleadingly low, unwinnable at DR 2.6",
+      "score": 0.22
+    },
+    {
+      "slug": "reit-vs-rental-property",
+      "reason": "2026-08-10 run: Vol 90, KD 1, CPC ~0 and volume too thin; not SERP-verified",
+      "score": 0.15
+    },
+    {
+      "slug": "401k-vs-sep-ira",
+      "reason": "2026-08-10 run: Vol 150, KD 0, but parent-topic cluster (Vol 1600 solo 401k vs sep ira) already owned by published sep-ira-vs-solo-401k page \u2014 cannibalization risk",
+      "score": 0.12
+    },
+    {
+      "slug": "home-equity-investment-vs-heloc",
+      "reason": "2026-08-10 run: Ahrefs KD no data; serp-overview returned zero organic positions \u2014 insufficient live data",
+      "score": 0.05
+    },
+    {
+      "slug": "working-capital-loan-vs-business-line-of-credit",
+      "reason": "2026-08-10 run: Vol 100, KD 12, but SERP incumbents (JPMorgan/ForaFinancial/CanCapital) capture thin traffic; not a distinct site entity",
+      "score": 0.1
+    },
+    {
+      "slug": "sba-loan-vs-term-loan",
+      "reason": "2026-08-10 run: Ahrefs returned zero search volume both orderings",
+      "score": 0
+    },
+    {
+      "slug": "revenue-based-financing-vs-sba-loan",
+      "reason": "2026-08-10 run: Ahrefs returned zero search volume (also tried vs bank loan)",
+      "score": 0
+    },
+    {
+      "slug": "equipment-financing-vs-business-line-of-credit",
+      "reason": "2026-08-10 run: Ahrefs returned zero search volume",
+      "score": 0
+    },
+    {
+      "slug": "business-credit-card-vs-business-line-of-credit",
+      "reason": "2026-08-10 run: Vol 20 \u2014 below the reliable-demand floor (Nq<50)",
+      "score": 0.02
+    },
+    {
+      "slug": "offer-in-compromise-vs-installment-agreement",
+      "reason": "2026-08-10 run: Vol 40 (10-40 across 3 alt phrasings tested) \u2014 below reliable-demand floor",
+      "score": 0.04
+    },
+    {
+      "slug": "long-term-care-insurance-vs-medicaid",
+      "reason": "2026-08-10 run: Vol 30 (40 as vs self funding) \u2014 below reliable-demand floor despite strong elder-care hub fit",
+      "score": 0.05
+    },
+    {
+      "slug": "reverse-mortgage-vs-heloc",
+      "reason": "2026-08-10 run: Vol 600, KD 2, but SERP is entirely bank/government brands (Chase, RocketMortgage DR80, PNC DR82, FTC.gov DR93) \u2014 zero low-DR footholds despite tempting nominal KD",
+      "score": 0.15
+    },
+    {
+      "slug": "mega-backdoor-roth-vs-roth-conversion",
+      "reason": "2026-08-10 run: zero Ahrefs data for this exact phrasing; real demand (\"mega backdoor roth vs backdoor roth\") routed to enrichment instead",
+      "score": 0
+    }
   ],
   "published": [
-    { "slug": "best-mortgage-lenders", "format": "roundup", "category": "mortgage lenders", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-index-funds", "format": "roundup", "category": "index funds", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-ira-accounts", "format": "roundup", "category": "IRA accounts", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-investment-apps-for-beginners", "format": "roundup", "category": "investment apps", "angle": "best", "segment": "beginners", "publishedAt": "2026-06-28" },
-    { "slug": "best-money-market-accounts", "format": "roundup", "category": "money market accounts", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-budgeting-apps-for-couples", "format": "roundup", "category": "budgeting apps", "angle": "best", "segment": "couples", "publishedAt": "2026-06-28" },
-    { "slug": "best-401k-providers-for-small-business", "format": "roundup", "category": "401(k) providers", "angle": "best", "segment": "small business", "publishedAt": "2026-06-28" },
-    { "slug": "best-net-worth-tracker", "format": "roundup", "category": "net worth trackers", "angle": "best", "publishedAt": "2026-06-28" },
-    { "slug": "best-retirement-accounts-for-self-employed", "format": "roundup", "category": "retirement accounts", "angle": "best", "segment": "self-employed", "publishedAt": "2026-06-28" },
-    { "slug": "hsa-vs-fsa", "format": "comparison", "optionA": "Health Savings Account (HSA)", "optionB": "Flexible Spending Account (FSA)", "publishedAt": "2026-06-29" },
-    { "slug": "va-loan-vs-conventional-loan", "format": "comparison", "optionA": "VA Loan", "optionB": "Conventional Loan", "publishedAt": "2026-06-29" },
-    { "slug": "trump-account-alternatives", "format": "alternatives", "subject": "Trump Account", "route": "/guides/trump-account-alternatives/", "publishedAt": "2026-07-08" },
-    { "slug": "fha-loan-vs-va-loan", "format": "comparison", "optionA": "FHA Loan", "optionB": "VA Loan", "publishedAt": "2026-07-13" },
-    { "slug": "simple-ira-vs-401k", "format": "comparison", "optionA": "SIMPLE IRA", "optionB": "401(k)", "publishedAt": "2026-07-13" },
-    { "slug": "annuity-vs-cd", "format": "comparison", "optionA": "Annuity", "optionB": "Certificate of Deposit (CD)", "publishedAt": "2026-07-13" },
-    { "slug": "heloc-vs-personal-loan", "format": "comparison", "optionA": "HELOC", "optionB": "Personal Loan", "publishedAt": "2026-07-13" },
-    { "slug": "power-of-attorney-vs-guardianship", "format": "comparison", "optionA": "Power of Attorney", "optionB": "Guardianship", "publishedAt": "2026-07-13" },
-    { "slug": "estate-tax-vs-inheritance-tax", "format": "enrichment", "route": "/estate-planning/estate-tax-calculator/", "note": "Added a head-to-head paragraph + FAQ to the existing estate-tax-calculator spoke page (PARTIAL from Phase 1b — was covered only in passing).", "publishedAt": "2026-07-13" },
-    { "slug": "roth-ira-vs-roth-401k", "format": "comparison", "optionA": "Roth IRA", "optionB": "Roth 401(k)", "publishedAt": "2026-07-20" },
-    { "slug": "401k-vs-brokerage-account", "format": "comparison", "optionA": "401(k)", "optionB": "Brokerage Account", "publishedAt": "2026-07-20" },
-    { "slug": "whole-life-vs-universal-life-insurance", "format": "comparison", "optionA": "Whole Life Insurance", "optionB": "Universal Life Insurance", "publishedAt": "2026-07-20" },
-    { "slug": "term-life-vs-universal-life-insurance", "format": "comparison", "optionA": "Term Life Insurance", "optionB": "Universal Life Insurance", "publishedAt": "2026-07-20" },
-    { "slug": "robo-advisor-vs-financial-advisor", "format": "enrichment", "route": "/guides/financial-advisor-worth-it/", "note": "Added a 'Robo-advisor vs. financial advisor' sub-section + FAQ to the existing guide (PARTIAL from Phase 1b — was covered only in passing).", "publishedAt": "2026-07-20" },
-    { "slug": "sep-ira-vs-traditional-ira", "format": "enrichment", "route": "/roundup/best-retirement-accounts-for-self-employed/", "note": "Added a 'SEP IRA vs. Traditional IRA' sub-section + FAQ to the existing roundup (PARTIAL from Phase 1b — both entities had individual profiles but no head-to-head treatment).", "publishedAt": "2026-07-20" },
-    { "slug": "403b-vs-401k", "format": "comparison", "optionA": "403(b)", "optionB": "401(k)", "publishedAt": "2026-07-27" },
-    { "slug": "tsp-vs-401k", "format": "comparison", "optionA": "Thrift Savings Plan (TSP)", "optionB": "401(k)", "segment": "Federal employees & military", "publishedAt": "2026-07-27" },
-    { "slug": "rollover-ira-vs-traditional-ira", "format": "comparison", "optionA": "Rollover IRA", "optionB": "Traditional IRA", "publishedAt": "2026-07-27" },
-    { "slug": "457b-vs-401k", "format": "comparison", "optionA": "457(b)", "optionB": "401(k)", "publishedAt": "2026-07-27" },
-    { "slug": "iul-vs-whole-life-insurance", "format": "enrichment", "route": "/compare/whole-life-vs-universal-life-insurance/", "note": "Added an 'IUL vs whole life: which guarantees actually protect you' sub-section + FAQ (PARTIAL from Phase 1b — IUL was only discussed as a universal-life variant, no head-to-head treatment against whole life).", "publishedAt": "2026-07-27" }
+    {
+      "slug": "best-mortgage-lenders",
+      "format": "roundup",
+      "category": "mortgage lenders",
+      "angle": "best",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-index-funds",
+      "format": "roundup",
+      "category": "index funds",
+      "angle": "best",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-ira-accounts",
+      "format": "roundup",
+      "category": "IRA accounts",
+      "angle": "best",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-investment-apps-for-beginners",
+      "format": "roundup",
+      "category": "investment apps",
+      "angle": "best",
+      "segment": "beginners",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-money-market-accounts",
+      "format": "roundup",
+      "category": "money market accounts",
+      "angle": "best",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-budgeting-apps-for-couples",
+      "format": "roundup",
+      "category": "budgeting apps",
+      "angle": "best",
+      "segment": "couples",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-401k-providers-for-small-business",
+      "format": "roundup",
+      "category": "401(k) providers",
+      "angle": "best",
+      "segment": "small business",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-net-worth-tracker",
+      "format": "roundup",
+      "category": "net worth trackers",
+      "angle": "best",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "best-retirement-accounts-for-self-employed",
+      "format": "roundup",
+      "category": "retirement accounts",
+      "angle": "best",
+      "segment": "self-employed",
+      "publishedAt": "2026-06-28"
+    },
+    {
+      "slug": "hsa-vs-fsa",
+      "format": "comparison",
+      "optionA": "Health Savings Account (HSA)",
+      "optionB": "Flexible Spending Account (FSA)",
+      "publishedAt": "2026-06-29"
+    },
+    {
+      "slug": "va-loan-vs-conventional-loan",
+      "format": "comparison",
+      "optionA": "VA Loan",
+      "optionB": "Conventional Loan",
+      "publishedAt": "2026-06-29"
+    },
+    {
+      "slug": "trump-account-alternatives",
+      "format": "alternatives",
+      "subject": "Trump Account",
+      "route": "/guides/trump-account-alternatives/",
+      "publishedAt": "2026-07-08"
+    },
+    {
+      "slug": "fha-loan-vs-va-loan",
+      "format": "comparison",
+      "optionA": "FHA Loan",
+      "optionB": "VA Loan",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "simple-ira-vs-401k",
+      "format": "comparison",
+      "optionA": "SIMPLE IRA",
+      "optionB": "401(k)",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "annuity-vs-cd",
+      "format": "comparison",
+      "optionA": "Annuity",
+      "optionB": "Certificate of Deposit (CD)",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "heloc-vs-personal-loan",
+      "format": "comparison",
+      "optionA": "HELOC",
+      "optionB": "Personal Loan",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "power-of-attorney-vs-guardianship",
+      "format": "comparison",
+      "optionA": "Power of Attorney",
+      "optionB": "Guardianship",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "estate-tax-vs-inheritance-tax",
+      "format": "enrichment",
+      "route": "/estate-planning/estate-tax-calculator/",
+      "note": "Added a head-to-head paragraph + FAQ to the existing estate-tax-calculator spoke page (PARTIAL from Phase 1b \u2014 was covered only in passing).",
+      "publishedAt": "2026-07-13"
+    },
+    {
+      "slug": "roth-ira-vs-roth-401k",
+      "format": "comparison",
+      "optionA": "Roth IRA",
+      "optionB": "Roth 401(k)",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "401k-vs-brokerage-account",
+      "format": "comparison",
+      "optionA": "401(k)",
+      "optionB": "Brokerage Account",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "whole-life-vs-universal-life-insurance",
+      "format": "comparison",
+      "optionA": "Whole Life Insurance",
+      "optionB": "Universal Life Insurance",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "term-life-vs-universal-life-insurance",
+      "format": "comparison",
+      "optionA": "Term Life Insurance",
+      "optionB": "Universal Life Insurance",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "robo-advisor-vs-financial-advisor",
+      "format": "enrichment",
+      "route": "/guides/financial-advisor-worth-it/",
+      "note": "Added a 'Robo-advisor vs. financial advisor' sub-section + FAQ to the existing guide (PARTIAL from Phase 1b \u2014 was covered only in passing).",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "sep-ira-vs-traditional-ira",
+      "format": "enrichment",
+      "route": "/roundup/best-retirement-accounts-for-self-employed/",
+      "note": "Added a 'SEP IRA vs. Traditional IRA' sub-section + FAQ to the existing roundup (PARTIAL from Phase 1b \u2014 both entities had individual profiles but no head-to-head treatment).",
+      "publishedAt": "2026-07-20"
+    },
+    {
+      "slug": "403b-vs-401k",
+      "format": "comparison",
+      "optionA": "403(b)",
+      "optionB": "401(k)",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "slug": "tsp-vs-401k",
+      "format": "comparison",
+      "optionA": "Thrift Savings Plan (TSP)",
+      "optionB": "401(k)",
+      "segment": "Federal employees & military",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "slug": "rollover-ira-vs-traditional-ira",
+      "format": "comparison",
+      "optionA": "Rollover IRA",
+      "optionB": "Traditional IRA",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "slug": "457b-vs-401k",
+      "format": "comparison",
+      "optionA": "457(b)",
+      "optionB": "401(k)",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "slug": "iul-vs-whole-life-insurance",
+      "format": "enrichment",
+      "route": "/compare/whole-life-vs-universal-life-insurance/",
+      "note": "Added an 'IUL vs whole life: which guarantees actually protect you' sub-section + FAQ (PARTIAL from Phase 1b \u2014 IUL was only discussed as a universal-life variant, no head-to-head treatment against whole life).",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "slug": "fidelity-vs-schwab",
+      "format": "comparison",
+      "optionA": "Fidelity",
+      "optionB": "Charles Schwab",
+      "reason": "2026-08-10 run: Vol 2500, KD 6 \u2014 DR6-class site ranks #4 on live SERP, proving winnability at DR 2.6",
+      "score": 0.9
+    },
+    {
+      "slug": "vanguard-vs-schwab",
+      "format": "comparison",
+      "optionA": "Vanguard",
+      "optionB": "Charles Schwab",
+      "reason": "2026-08-10 run: Vol 700, KD 1 \u2014 same DR6 site ranks #4 beating Forbes/Bogleheads",
+      "score": 0.85
+    },
+    {
+      "slug": "guardianship-vs-conservatorship",
+      "format": "comparison",
+      "optionA": "Guardianship",
+      "optionB": "Conservatorship",
+      "reason": "2026-08-10 run: Vol 1000, KD 5 \u2014 multiple DR4-29 solo-attorney blogs crack top 10; topical-authority pick (near-zero CPC)",
+      "score": 0.55
+    },
+    {
+      "slug": "traditional-ira-vs-simple-ira",
+      "format": "comparison",
+      "optionA": "Traditional IRA",
+      "optionB": "SIMPLE IRA",
+      "reason": "2026-08-10 run: Vol 200, KD 1 \u2014 clean fit into existing retirement-account matrix",
+      "score": 0.5
+    },
+    {
+      "slug": "special-needs-trust-vs-able-account",
+      "format": "comparison",
+      "optionA": "Special Needs Trust",
+      "optionB": "ABLE Account",
+      "reason": "2026-08-10 run: Vol 150, KD 1 \u2014 niche but real; anchored to the 2026 ABLE Age Adjustment Act (26->46) expansion",
+      "score": 0.45
+    },
+    {
+      "slug": "usda-loan-vs-fha-loan",
+      "format": "comparison",
+      "optionA": "USDA Loan",
+      "optionB": "FHA Loan",
+      "reason": "2026-08-10 run: Vol 150, KD 1 \u2014 rounds out govt-loan cluster (FHA-vs-VA, FHA-vs-conventional, VA-vs-conventional already live)",
+      "score": 0.45
+    }
   ]
 }
