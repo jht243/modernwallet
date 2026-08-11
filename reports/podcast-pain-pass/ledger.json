@@ -313,27 +313,11 @@
   "mega-backdoor-roth-401k",
   "donor-advised-fund-vs-private-foundation",
   "how-to-budget-for-teens-college-students",
-  "net-worth-for-fafsa-and-accredited-investor"
+  "net-worth-for-fafsa-and-accredited-investor",
+  "is-social-security-taxable",
+  "dscr-loan-requirements",
+  "portfolio-rebalancing"
  ],
- "deferred_rows": [
-  {
-   "slug": "is-social-security-taxable",
-   "route": "/guides/is-social-security-taxable/",
-   "bucket": "tax-estate",
-   "volume": 33100
-  },
-  {
-   "slug": "dscr-loan-requirements",
-   "route": "/guides/dscr-loan-requirements/",
-   "bucket": "real-estate",
-   "volume": 3600
-  },
-  {
-   "slug": "portfolio-rebalancing",
-   "route": "/guides/portfolio-rebalancing/",
-   "bucket": "investing",
-   "volume": 720
-  }
- ],
+ "deferred_rows": [],
  "last_run": "2026-08-11"
 }
