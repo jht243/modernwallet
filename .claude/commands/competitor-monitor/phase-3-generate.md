@@ -54,7 +54,8 @@ Google's February 2026 core update (Discover-focused) demoted sites mass-produci
 - Throat-clearing openers ("When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…").
 - The "it's not just X, it's Y" cadence; empty tricolons ("efficient, effective, and scalable"); hedged non-conclusions ("ultimately, the right choice depends on your needs").
 - Filler verbs/phrases: "delve into", "leverage" (verb), "navigate the complexities of", "unlock the power of", "it's worth noting that", "a testament to".
-- Monotonous em-dash rhythm and same-shape listicle padding.
+- Never call software, a model, a tool, pricing, or a verdict "honest"/"honestly" ("an honest read", "the honest caveat", "the honest answer", "to be honest") — software has no honesty. Say the point directly ("the caveat is…", "the short answer is…", "a straight read").
+- Em-dash cap: at most **2 em-dashes per page, and never two in the same section**. The em-dash-interrupted sentence shape repeating paragraph after paragraph is one of the loudest AI tells. Use commas, colons, periods, or parentheses instead, and vary sentence shape. Same-shape listicle padding is a separate tell — avoid it too.
 - Anthropomorphic "death" language for software/tech — never write that a demo, feature, product, tool, model, or technology "died", "is dead", was "killed", is "on life support", or "flatlined". Software does not die: say what literally happened — it never shipped, was abandoned, stopped being used, or lost support.
 - Vague abstractions — do not reach for an impressive-sounding phrase in place of the concrete thing ("clever one-off demos", "seamless synergy", "strategic inflection point", "holistic solution"). If a phrase cannot survive a "what does this literally mean?" test, replace it with the specific noun, number, or example.
 Write with concrete specifics, commit to a conclusion, and vary sentence shape.
