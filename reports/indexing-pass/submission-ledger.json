@@ -85,9 +85,10 @@
   },
   "https://www.themodernwallet.com/compare/elder-law-attorney-vs-estate-planning-attorney/": {
     "channels": [
-      "indexnow"
+      "indexnow",
+      "google-indexing-api"
     ],
-    "last_submitted": "2026-08-04"
+    "last_submitted": "2026-08-11"
   },
   "https://www.themodernwallet.com/compare/factor-rate-vs-interest-rate/": {
     "channels": [
@@ -97,9 +98,10 @@
   },
   "https://www.themodernwallet.com/compare/fha-loan-vs-va-loan/": {
     "channels": [
-      "indexnow"
+      "indexnow",
+      "google-indexing-api"
     ],
-    "last_submitted": "2026-08-04"
+    "last_submitted": "2026-08-11"
   },
   "https://www.themodernwallet.com/compare/fha-vs-conventional-loan/": {
     "channels": [
@@ -205,9 +207,10 @@
   },
   "https://www.themodernwallet.com/compare/power-of-attorney-vs-guardianship/": {
     "channels": [
-      "indexnow"
+      "indexnow",
+      "google-indexing-api"
     ],
-    "last_submitted": "2026-08-04"
+    "last_submitted": "2026-08-11"
   },
   "https://www.themodernwallet.com/compare/rollover-ira-vs-roth-ira/": {
     "channels": [
@@ -676,5 +679,236 @@
       "indexnow"
     ],
     "last_submitted": "2026-08-04"
+  },
+  "https://www.themodernwallet.com/compare/donor-advised-fund-vs-private-foundation/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/fidelity-vs-schwab/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/guardianship-vs-conservatorship/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/realized-vs-unrealized-gains/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/sales-tax-vs-use-tax/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/special-needs-trust-vs-able-account/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/target-date-fund-vs-sp500/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/traditional-ira-vs-simple-ira/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/usda-loan-vs-fha-loan/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/vanguard-vs-fidelity/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/vanguard-vs-schwab/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/compare/voo-vs-spy/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/asset-allocation-by-age/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/auto-lease-buyout-calculator/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/catch-up-on-retirement-savings-in-your-60s/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/commercial-mortgage-calculator-explained/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/common-tax-filing-mistakes/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/heloc-calculator-explained/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/home-equity-investment-guide/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/how-much-do-i-need-to-retire-by-age/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/how-to-budget-for-teens-college-students/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/how-to-pay-for-grad-school/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/how-to-retire-with-1-million/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/ira-contribution-limits-2026/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/is-a-money-market-account-worth-it/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/is-inheritance-marital-property/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/mega-backdoor-roth-401k/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/mortgage-early-payoff-tax-implications/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/net-worth-for-fafsa-and-accredited-investor/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/what-is-a-cfa/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/what-is-a-good-credit-score/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/taxable-vs-tax-deferred/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
+  },
+  "https://www.themodernwallet.com/guides/tax-tips/": {
+    "channels": [
+      "indexnow",
+      "google-indexing-api"
+    ],
+    "last_submitted": "2026-08-11"
   }
 }
