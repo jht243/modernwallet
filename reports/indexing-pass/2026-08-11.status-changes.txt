@@ -1,0 +1,1 @@
+# No redirect/error/status changes this run — no Phase 2 rows this pass (all actionable rows are add-internal-links / improve-thin-content buckets).
