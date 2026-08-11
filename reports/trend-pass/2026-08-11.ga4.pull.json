@@ -1,0 +1,35 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-11",
+  "window_start": "2026-08-11",
+  "window_end": "2026-08-11",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 1,
+  "top10_pages_total_clicks": 1,
+  "channel_split": {
+    "/": {
+      "Unassigned": 2,
+      "Cross-network": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Unassigned": 1
+    }
+  }
+}
