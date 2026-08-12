@@ -1,0 +1,440 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-12",
+  "window_start": "2026-07-16",
+  "window_end": "2026-08-12",
+  "window_days": 28,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 143,
+      "sessions": 130,
+      "active_users": 125,
+      "clicks": 143,
+      "avg_eng_s": 11.1,
+      "engagement_rate": 0.4077,
+      "bounce_rate": 0.5923,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.032
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 116,
+      "sessions": 110,
+      "active_users": 106,
+      "clicks": 116,
+      "avg_eng_s": 78.2,
+      "engagement_rate": 0.6455,
+      "bounce_rate": 0.3545,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.0472
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 88,
+      "sessions": 88,
+      "active_users": 88,
+      "clicks": 88,
+      "avg_eng_s": 62.2,
+      "engagement_rate": 0.5909,
+      "bounce_rate": 0.4091,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.0455
+    },
+    {
+      "page": "/estate-planning/will-cost-calculator/",
+      "views": 85,
+      "sessions": 83,
+      "active_users": 79,
+      "clicks": 85,
+      "avg_eng_s": 79.1,
+      "engagement_rate": 0.7349,
+      "bounce_rate": 0.2651,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.0506
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 53,
+      "sessions": 55,
+      "active_users": 47,
+      "clicks": 53,
+      "avg_eng_s": 86.4,
+      "engagement_rate": 0.5091,
+      "bounce_rate": 0.4909,
+      "scrolled_users": 6,
+      "scrolled_pct": 0.1277
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 39,
+      "sessions": 41,
+      "active_users": 36,
+      "clicks": 39,
+      "avg_eng_s": 54.6,
+      "engagement_rate": 0.4146,
+      "bounce_rate": 0.5854,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.1111
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 35,
+      "sessions": 36,
+      "active_users": 32,
+      "clicks": 35,
+      "avg_eng_s": 113.7,
+      "engagement_rate": 0.6389,
+      "bounce_rate": 0.3611,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.0938
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 33,
+      "sessions": 31,
+      "active_users": 31,
+      "clicks": 33,
+      "avg_eng_s": 80.7,
+      "engagement_rate": 0.7097,
+      "bounce_rate": 0.2903,
+      "scrolled_users": 6,
+      "scrolled_pct": 0.1935
+    },
+    {
+      "page": "/guides/trump-accounts/",
+      "views": 25,
+      "sessions": 25,
+      "active_users": 25,
+      "clicks": 25,
+      "avg_eng_s": 0.0,
+      "engagement_rate": 0.24,
+      "bounce_rate": 0.76,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.04
+    },
+    {
+      "page": "/guides/custodial-roth-ira-for-kids/",
+      "views": 24,
+      "sessions": 21,
+      "active_users": 19,
+      "clicks": 24,
+      "avg_eng_s": 24.1,
+      "engagement_rate": 0.2381,
+      "bounce_rate": 0.7619,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.0526
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 24,
+      "sessions": 22,
+      "active_users": 22,
+      "clicks": 24,
+      "avg_eng_s": 21.7,
+      "engagement_rate": 0.5455,
+      "bounce_rate": 0.4545,
+      "scrolled_users": 2,
+      "scrolled_pct": 0.0909
+    },
+    {
+      "page": "/guides/utma-custodial-account-explained/",
+      "views": 24,
+      "sessions": 21,
+      "active_users": 21,
+      "clicks": 24,
+      "avg_eng_s": 68.3,
+      "engagement_rate": 0.5714,
+      "bounce_rate": 0.4286,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.1429
+    },
+    {
+      "page": "/portfolio/70-30-portfolio-calculator/",
+      "views": 24,
+      "sessions": 22,
+      "active_users": 22,
+      "clicks": 24,
+      "avg_eng_s": 65.1,
+      "engagement_rate": 0.5909,
+      "bounce_rate": 0.4091,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.2273
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 23,
+      "sessions": 27,
+      "active_users": 20,
+      "clicks": 23,
+      "avg_eng_s": 19.9,
+      "engagement_rate": 0.2593,
+      "bounce_rate": 0.7407,
+      "scrolled_users": 2,
+      "scrolled_pct": 0.1
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 21,
+      "sessions": 19,
+      "active_users": 19,
+      "clicks": 21,
+      "avg_eng_s": 53.1,
+      "engagement_rate": 0.5263,
+      "bounce_rate": 0.4737,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.2105
+    },
+    {
+      "page": "/roundup/best-retirement-accounts-for-self-employed/",
+      "views": 21,
+      "sessions": 20,
+      "active_users": 20,
+      "clicks": 21,
+      "avg_eng_s": 104.6,
+      "engagement_rate": 0.75,
+      "bounce_rate": 0.25,
+      "scrolled_users": 2,
+      "scrolled_pct": 0.1
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 20,
+      "sessions": 15,
+      "active_users": 4,
+      "clicks": 20,
+      "avg_eng_s": 221.8,
+      "engagement_rate": 0.4,
+      "bounce_rate": 0.6,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.25
+    },
+    {
+      "page": "/compare/trump-account-vs-529/",
+      "views": 20,
+      "sessions": 20,
+      "active_users": 19,
+      "clicks": 20,
+      "avg_eng_s": 4.7,
+      "engagement_rate": 0.4,
+      "bounce_rate": 0.6
+    },
+    {
+      "page": "/roundup/best-online-will-makers/",
+      "views": 20,
+      "sessions": 22,
+      "active_users": 18,
+      "clicks": 20,
+      "avg_eng_s": 93.9,
+      "engagement_rate": 0.2727,
+      "bounce_rate": 0.7273,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.0556
+    },
+    {
+      "page": "/guides/250th-anniversary-coins/",
+      "views": 19,
+      "sessions": 21,
+      "active_users": 18,
+      "clicks": 19,
+      "avg_eng_s": 25.9,
+      "engagement_rate": 0.4762,
+      "bounce_rate": 0.5238,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.1667
+    },
+    {
+      "page": "/guides/utma-custodial-account-explained",
+      "views": 19,
+      "sessions": 19,
+      "active_users": 19,
+      "clicks": 19,
+      "avg_eng_s": 0.0,
+      "engagement_rate": 0.0,
+      "bounce_rate": 1.0
+    },
+    {
+      "page": "/mortgage/payoff-calculator/",
+      "views": 19,
+      "sessions": 17,
+      "active_users": 15,
+      "clicks": 19,
+      "avg_eng_s": 121.5,
+      "engagement_rate": 0.8824,
+      "bounce_rate": 0.1176,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.2
+    },
+    {
+      "page": "/compare/living-trust-vs-will/",
+      "views": 18,
+      "sessions": 17,
+      "active_users": 16,
+      "clicks": 18,
+      "avg_eng_s": 107.3,
+      "engagement_rate": 0.3529,
+      "bounce_rate": 0.6471
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 18,
+      "sessions": 18,
+      "active_users": 17,
+      "clicks": 18,
+      "avg_eng_s": 132.3,
+      "engagement_rate": 0.6667,
+      "bounce_rate": 0.3333,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.0588
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator/",
+      "views": 18,
+      "sessions": 17,
+      "active_users": 16,
+      "clicks": 18,
+      "avg_eng_s": 33.1,
+      "engagement_rate": 0.7647,
+      "bounce_rate": 0.2353,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.3125
+    }
+  ],
+  "top10_pages_total_views": 949,
+  "top10_pages_total_clicks": 949,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 93,
+      "Direct": 10,
+      "Organic Social": 7,
+      "Unassigned": 4
+    },
+    "/estate-planning/will-cost-calculator/": {
+      "Organic Search": 77,
+      "Direct": 5,
+      "AI Assistant": 1
+    },
+    "/": {
+      "Direct": 67,
+      "Referral": 58,
+      "Unassigned": 4,
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Organic Social": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 61,
+      "Direct": 20,
+      "Unassigned": 6,
+      "Cross-network": 4
+    },
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 39,
+      "Direct": 13,
+      "Unassigned": 5,
+      "Cross-network": 1
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 31,
+      "Direct": 2,
+      "AI Assistant": 1,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/guides/trump-accounts/": {
+      "Direct": 25
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 24,
+      "Direct": 11,
+      "AI Assistant": 4,
+      "Referral": 1,
+      "Unassigned": 1
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 20,
+      "Direct": 8,
+      "Unassigned": 2,
+      "AI Assistant": 1,
+      "Cross-network": 1
+    },
+    "/guides/utma-custodial-account-explained": {
+      "Organic Search": 19
+    },
+    "/guides/250th-anniversary-coins/": {
+      "Organic Search": 18,
+      "Direct": 3,
+      "Unassigned": 1
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Organic Search": 18,
+      "Unassigned": 1
+    },
+    "/compare/trump-account-vs-529/": {
+      "Direct": 16,
+      "AI Assistant": 2,
+      "Organic Search": 2
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 15
+    },
+    "/guides/utma-custodial-account-explained/": {
+      "Organic Search": 15,
+      "Direct": 5,
+      "Unassigned": 2
+    },
+    "/mortgage/payoff-calculator/": {
+      "Organic Search": 14,
+      "AI Assistant": 1,
+      "Cross-network": 1,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/portfolio/70-30-portfolio-calculator/": {
+      "Organic Search": 14,
+      "Direct": 8
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Organic Search": 14,
+      "Direct": 13
+    },
+    "/portfolio/60-40-portfolio-calculator/": {
+      "Organic Search": 13,
+      "Direct": 3,
+      "Referral": 1
+    },
+    "/guides/custodial-roth-ira-for-kids/": {
+      "Organic Search": 12,
+      "Direct": 7,
+      "Unassigned": 2,
+      "AI Assistant": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Direct": 12,
+      "Organic Search": 10
+    },
+    "/roundup/best-retirement-accounts-for-self-employed/": {
+      "Direct": 12,
+      "Organic Search": 7,
+      "Unassigned": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 11,
+      "Direct": 7,
+      "AI Assistant": 1,
+      "Unassigned": 1
+    },
+    "/roundup/best-online-will-makers/": {
+      "Direct": 10,
+      "Organic Search": 7,
+      "AI Assistant": 4,
+      "Unassigned": 1
+    },
+    "/compare/living-trust-vs-will/": {
+      "Organic Search": 9,
+      "Direct": 7,
+      "AI Assistant": 1
+    }
+  }
+}
