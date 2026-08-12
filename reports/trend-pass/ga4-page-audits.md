@@ -72,3 +72,4 @@
 | /guides/custodial-account-taxes-kiddie-tax/ | 2026-08-10 | 3 | 0/0/0/0/0 | 0 |
 | /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-10 | 2 | 0/1/1/1/0 | 1 |
 | /guides/ | 2026-08-10 | 2 | 0/0/0/0/0 | 1 |
+| /guides/529-leftover-money-options/ | 2026-08-12 | 1 | 0/0/0/0/0 | 0 |

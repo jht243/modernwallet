@@ -971,9 +971,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 5. Best Money Market Accounts ───────────────────────────────────────
   {
     slug: "best-money-market-accounts",
-    title: "Best Money Market Accounts (Updated August 2026): Top Picks Compared",
+    title: "Best Money Market Accounts (Updated July 2026): Top Picks Compared",
     metaDescription:
-      "Compare the best money market accounts for August 2026 by APY, fees, and FDIC coverage. Top picks include Ally, Discover, and UFB Direct for higher yields.",
+      "Compare the best money market accounts for July 2026 by APY, fees, and FDIC coverage. Top picks include Ally, Discover, and UFB Direct for higher yields.",
     targetKeyword: "best money market accounts",
     category: "money market accounts",
     angle: "best",
@@ -1193,142 +1193,6 @@ export const ROUNDUPS: RoundupEntry[] = [
     calculatorLinks: [
       { label: "Investment Growth Calculator", href: "/investing/" },
       { label: "High-Yield Savings Calculator", href: "/investing/high-yield-savings-calculator/" },
-      { label: "Net Worth Calculator", href: "/net-worth/" },
-    ],
-  },
-
-  // ── GA4 top-pages pass (2026-08-12) — Lane A/B off /roundup/best-money-market-accounts/ ──
-  {
-    slug: "best-money-market-funds",
-    title: "Best Money Market Funds (August 2026): Fidelity, Schwab & Vanguard",
-    metaDescription:
-      "Compare Fidelity SPAXX, Schwab SWVXX, and Vanguard VMFXX money market funds by expense ratio and holdings — not the same as a bank money market account.",
-    targetKeyword: "best money market funds",
-    category: "money market funds",
-    angle: "best",
-    h1: "Best Money Market Funds of 2026",
-    intro:
-      "A money market fund is not the same product as a money market account. A money market fund is an SEC-regulated mutual fund that holds short-term, high-quality debt — it is not FDIC insured, and it lives inside a brokerage account rather than a bank. If you want an FDIC-insured bank product instead, see our [best money market accounts](/roundup/best-money-market-accounts/) roundup.\n\nFor investors who already hold a brokerage account at Fidelity, Schwab, or Vanguard, a money market fund is usually the easiest place to park uninvested cash — it often pays more than the same broker's default cash sweep, with same-day liquidity for trading.",
-    rankingCriteria:
-      "Rankings prioritize expense ratio (the ongoing cost that comes directly out of your yield), portfolio composition (government-only funds hold almost exclusively Treasury and agency debt; prime funds add high-quality commercial paper and CDs for slightly more yield and slightly more credit risk), minimum investment, and same-broker convenience (using your own broker's fund avoids a transfer step).\n\nAll three funds seek to maintain a stable $1.00 per-share net asset value, though — like any money market fund — none guarantees it. Yield is not compared numerically here because it moves with the federal funds rate; check each fund's current 7-day yield directly before choosing.",
-    options: [
-      {
-        name: "Vanguard Federal Money Market Fund (VMFXX)",
-        bestFor: "Vanguard investors who want the lowest ongoing cost",
-        description:
-          "VMFXX is a government money market fund — it invests in U.S. government securities such as Treasury bills and repurchase agreements backed by Treasuries. Its 0.11% expense ratio is the lowest of the three funds compared here, which matters because a lower expense ratio flows straight through to a higher net yield.\n\nIt's available to any [Vanguard](https://investor.vanguard.com/) brokerage or retirement account and is commonly used as a settlement fund for uninvested cash.",
-        strengths: [
-          "Lowest expense ratio of the three (0.11%)",
-          "Government-only holdings — Treasuries and Treasury-backed repo",
-          "No minimum for most Vanguard brokerage accounts",
-          "Same-day liquidity for trading within a Vanguard account",
-        ],
-        limitations: [
-          "Not FDIC insured — it's an investment, not a bank deposit",
-          "Requires a Vanguard brokerage account to hold",
-          "No debit card, check-writing, or ATM access",
-        ],
-        pricing: "0.11% expense ratio. No minimum for most Vanguard brokerage accounts. Yield fluctuates — check Vanguard for the current 7-day yield.",
-      },
-      {
-        name: "Fidelity Government Money Market Fund (SPAXX)",
-        bestFor: "Fidelity account holders who want a set-and-forget core position",
-        description:
-          "SPAXX is [Fidelity's](https://www.fidelity.com/) government money market fund and, for most standard Fidelity brokerage accounts, one of the core-position options your uninvested cash sits in by default (Fidelity's Cash Management Account instead defaults to an FDIC-insured bank sweep, with SPAXX available as an alternative core position).\n\nBecause it's a mutual fund and not a bank deposit, SPAXX is not FDIC insured — assets are instead protected by SIPC against brokerage failure (not against market loss), up to $500,000 including a $250,000 cash sublimit.",
-        strengths: [
-          "Widely used as Fidelity's default or selectable core position — no setup step for most account types",
-          "Government-only holdings (Treasuries, Treasury-backed repo, agency paper)",
-          "No minimum investment",
-          "Same-day liquidity for trading within a Fidelity account",
-        ],
-        limitations: [
-          "0.42% expense ratio — noticeably higher than VMFXX or SWVXX",
-          "Not FDIC insured (SIPC-protected against brokerage failure only)",
-          "Requires a Fidelity account to hold",
-        ],
-        pricing: "0.42% expense ratio. No minimum. Yield fluctuates — check Fidelity for the current 7-day yield.",
-      },
-      {
-        name: "Schwab Prime Advantage Money Fund (SWVXX)",
-        bestFor: "Schwab account holders comfortable with a prime fund's slightly broader holdings",
-        description:
-          "SWVXX is [Schwab's](https://www.schwab.com/) prime money market fund. Unlike a government-only fund, a prime fund can also hold high-quality commercial paper and certificates of deposit alongside government debt — a mix that has historically paid a modest yield premium over government-only funds, in exchange for a small amount of additional credit risk (prime funds are the category that experienced the rare 2008 'breaking the buck' event, though reforms since then have significantly tightened prime-fund liquidity rules).\n\nSWVXX carries no minimum initial investment, so it's accessible to any Schwab brokerage account regardless of balance.",
-        strengths: [
-          "0.34% expense ratio — lower than SPAXX",
-          "No minimum initial investment",
-          "Prime holdings have historically offered a modest yield edge over government-only funds",
-          "Same-day liquidity for trading within a Schwab account",
-        ],
-        limitations: [
-          "Prime holdings (commercial paper, CDs) carry marginally more credit risk than a government-only fund",
-          "Not FDIC insured (SIPC-protected against brokerage failure only)",
-          "Requires a Schwab account to hold",
-        ],
-        pricing: "0.34% net expense ratio. No minimum to open. Yield fluctuates — check Schwab for the current 7-day yield.",
-      },
-    ],
-    comparisonTable: {
-      headers: ["Fund Type", "Expense Ratio", "Minimum", "FDIC Insured", "Broker"],
-      rows: [
-        { name: "Vanguard VMFXX", values: ["Government", "0.11%", "$0*", "No (SIPC)", "Vanguard"] },
-        { name: "Fidelity SPAXX", values: ["Government", "0.42%", "$0", "No (SIPC)", "Fidelity"] },
-        { name: "Schwab SWVXX", values: ["Prime", "0.34%", "$0", "No (SIPC)", "Schwab"] },
-      ],
-    },
-    verdict:
-      "For the lowest ongoing cost, Vanguard's VMFXX wins outright at a 0.11% expense ratio — roughly a quarter of what SPAXX charges. If you're not already a Vanguard client, opening an account just to chase that gap usually isn't worth the hassle for a cash position.\n\nFor most people, the simplest and best fund is whichever one your existing broker offers, since it lets you sweep uninvested cash without a transfer. SPAXX is the practical default at Fidelity, and SWVXX at Schwab — both are solid, and the 0.08–0.31 percentage-point expense-ratio gap between them is small relative to the convenience of staying in one account.\n\nIf you want a bank product instead — with a debit card, check-writing, or FDIC insurance — see our [best money market accounts](/roundup/best-money-market-accounts/) roundup instead. Always confirm the current 7-day yield directly with the fund before moving cash; expense ratios are stable, but yields move with Federal Reserve policy.",
-    sections: [
-      {
-        heading: "Money market fund vs. money market account: which do you actually want?",
-        content:
-          "A money market fund lives inside a brokerage account and is SEC-regulated; a money market account is a bank deposit product and is FDIC insured. If check-writing, a debit card, or FDIC insurance up to $250,000 matters to you, a bank money market account is the better fit — see our [best money market accounts](/roundup/best-money-market-accounts/) roundup.\n\nIf you already have a brokerage account and just want a place for uninvested cash to earn more than sitting idle, a money market fund at your existing broker is usually the more convenient choice, since it settles same-day for trades within that account.",
-      },
-      {
-        heading: "Government funds vs. prime funds",
-        content:
-          "A government money market fund (VMFXX, SPAXX) invests almost entirely in Treasury bills, Treasury-backed repurchase agreements, and other government-issued debt — the safest tier of money market holdings. A prime fund (SWVXX) also holds high-quality commercial paper and CDs, which historically pays a modest yield edge but adds a small amount of credit exposure.\n\nFor most retail investors parking an emergency fund or short-term cash, that difference is minor in practice — no major retail-facing money market fund has broken the $1.00 NAV since reforms tightened prime-fund rules after 2008. If you want the simplest, lowest-risk option, choose a government fund.",
-      },
-      {
-        heading: "Are money market funds safe?",
-        content:
-          "Money market funds are not FDIC insured — they are SEC-regulated investment products, not bank deposits. Instead, they're protected by SIPC against brokerage failure (not against market loss or a fund's NAV declining) up to $500,000 per customer, including a $250,000 limit specifically for cash.\n\nIn practice, money market funds are widely considered one of the lowest-risk cash-equivalent investments available, and government-only funds (VMFXX, SPAXX) carry the least credit risk of the category because their holdings are backed by the U.S. government.",
-      },
-    ],
-    faqs: [
-      {
-        question: "What is the difference between a money market fund and a money market account?",
-        answer:
-          "A money market fund is an SEC-regulated mutual fund held in a brokerage account — not FDIC insured, but typically SIPC-protected against brokerage failure. A money market account is a bank deposit product, FDIC insured up to $250,000, and usually comes with check-writing or debit card access. If you want the bank version, see our best money market accounts roundup instead.",
-      },
-      {
-        question: "Are money market funds FDIC insured?",
-        answer:
-          "No. Money market funds are investment products, not bank deposits, so they are not FDIC insured. They're instead covered by SIPC against brokerage failure — not against investment loss — up to $500,000 per customer, including a $250,000 sublimit for cash. Government money market funds like VMFXX and SPAXX still carry very low credit risk because their underlying holdings are Treasury and agency debt.",
-      },
-      {
-        question: "Which is the best money market fund: SPAXX, SWVXX, or VMFXX?",
-        answer:
-          "VMFXX (Vanguard) has the lowest expense ratio at 0.11%, followed by SWVXX (Schwab) at 0.34% and SPAXX (Fidelity) at 0.42%. In practice, the best choice is usually whichever fund your existing broker offers, since it lets you hold cash without opening a new account. VMFXX and SPAXX are government-only funds; SWVXX is a prime fund with slightly broader holdings.",
-      },
-      {
-        question: "Can a money market fund lose money?",
-        answer:
-          "It's possible but historically rare for a major retail money market fund. These funds aim to maintain a stable $1.00 net asset value, but that is a goal, not a guarantee — a fund's NAV can technically 'break the buck' if its holdings lose value, which happened during the 2008 financial crisis to one prime fund. Reforms since then have significantly tightened prime-fund liquidity and holdings rules, and government-only funds (which hold only Treasury and agency debt) carry the least risk of this happening.",
-      },
-      {
-        question: "Is SPAXX a good place to keep cash at Fidelity?",
-        answer:
-          "Yes, for most Fidelity account holders — SPAXX is a low-risk, government-only money market fund with no minimum investment and same-day liquidity for trading. Its 0.42% expense ratio is higher than some alternatives (like Vanguard's VMFXX at 0.11%), so if you hold a large cash balance and don't need same-broker convenience, comparing options is worth a few minutes. For most people, the convenience of not transferring cash outweighs a fraction of a percentage point in fees.",
-      },
-    ],
-    sources: [
-      { label: "SEC — Money Market Funds", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1" },
-      { label: "SIPC — What SIPC Protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" },
-      { label: "FDIC — Deposit Insurance Coverage", url: "https://www.fdic.gov/resources/deposit-insurance/financial-products-insured/index.html" },
-    ],
-    relatedComparisons: ["hysa-vs-money-market"],
-    calculatorLinks: [
-      { label: "Investment Growth Calculator", href: "/investing/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
     ],
   },
