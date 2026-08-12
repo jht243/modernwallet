@@ -62,7 +62,7 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
     intro:
       "A monthly budget calculator shows what's left after your income meets your expenses, and whether your spending lines up with proven targets. Enter your take-home pay and monthly costs in the calculator above to see your surplus or shortfall, your savings rate, and how each category compares to the 50/30/20 rule. On $4,500 a month, that rule points to $2,250 for needs, $1,350 for wants, and $900 for savings.",
     howItWorks:
-      "A monthly budget compares one month of take-home income to one month of planned spending. The calculator adds up your needs, wants, and savings, subtracts the total from your income, and shows the leftover — money you can still assign to a goal.\n\nIt also computes your savings rate: the share of take-home pay going to your emergency fund, retirement, and extra debt payoff. A higher savings rate is the single strongest predictor of long-term financial progress. To make the targets meaningful, the tool benchmarks your buckets against the 50/30/20 rule (50% needs, 30% wants, 20% savings), so an over-budget category stands out immediately. Build the surplus, then put it to work — see how to [grow it through investing](/investing/) or [track your net worth](/net-worth/) over time. If your income swings month to month or you earn across borders, [getzen.cash's digital-nomad money guides](https://getzen.cash/rankings/) cover budgeting and banking for remote and location-independent work.",
+      "A monthly budget compares one month of take-home income to one month of planned spending. The calculator adds up your needs, wants, and savings, subtracts the total from your income, and shows the leftover — money you can still assign to a goal.\n\nIt also computes your savings rate: the share of take-home pay going to your emergency fund, retirement, and extra debt payoff. A higher savings rate is the single strongest predictor of long-term financial progress. To make the targets meaningful, the tool benchmarks your buckets against the 50/30/20 rule (50% needs, 30% wants, 20% savings), so an over-budget category stands out immediately. That over/under number is the same actual-minus-budget calculation businesses call [budget variance](/guides/budget-variance-calculation-explained/), just applied to your own spending. Build the surplus, then put it to work — see how to [grow it through investing](/investing/) or [track your net worth](/net-worth/) over time. If your income swings month to month or you earn across borders, [getzen.cash's digital-nomad money guides](https://getzen.cash/rankings/) cover budgeting and banking for remote and location-independent work.",
     commonMistakes: [
       "Leaving out irregular bills. Annual or quarterly costs — insurance, car registration, holidays — should be divided by 12 and budgeted monthly.",
       "Budgeting from gross pay. Use take-home income so the plan matches what actually arrives.",
@@ -78,6 +78,8 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
       { question: "What is a good savings rate?", answer: "Aim for at least 20% of take-home pay across your emergency fund, retirement, and extra debt payoff — the savings target in the 50/30/20 rule. Saving more accelerates every financial goal, so treat 20% as a floor rather than a ceiling when your budget allows." },
       { question: "How is a monthly budget different from the 50/30/20 rule?", answer: "The 50/30/20 rule is one method for setting category targets; a monthly budget is the broader practice of matching income to expenses each month. This calculator combines both — it tracks your actual monthly plan and benchmarks it against the 50/30/20 targets." },
       { question: "How often should I update my budget?", answer: "Review it monthly. Checking in once a month catches changes in income, bills, and spending habits without becoming a chore, and keeps your savings rate trending in the right direction." },
+      { question: "How do I enter an hourly wage or annual salary into this calculator?", answer: "Convert it to monthly take-home pay first. For an hourly wage, multiply your hourly rate by your average weekly hours, then by 4.33 (the average weeks per month), then subtract taxes and any payroll deductions to get take-home pay. For an annual salary, divide your after-tax annual income by 12. The calculator needs that single monthly take-home number, not the hourly rate or the annual figure directly." },
+      { question: "How much of my budget should go toward retirement?", answer: "Retirement contributions count in the 20% savings bucket alongside your emergency fund and any extra debt payoff. If you contribute through payroll deduction, add that amount back into your take-home pay first, then include it as part of your savings line here so the 50/30/20 comparison reflects your full savings effort. See our [retirement savings calculator](/retirement/retirement-savings-calculator/) to check whether that contribution rate is on track for your retirement age." },
     ],
     sources: [
       { label: "Consumer Financial Protection Bureau — Making a budget", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/" },
@@ -90,7 +92,7 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
       mode: "50-30-20",
       amounts: { housing: 1300, utilities: 180, groceries: 400, transportation: 200, insurance: 120, minimumDebt: 50, dining: 350, entertainment: 150, shopping: 250, funMisc: 150, emergencyFund: 200, retirement: 500, extraDebt: 200 },
     },
-    relatedSlugs: ["50-30-20-budget-calculator", "zero-based-budget-calculator", "household-budget-calculator"],
+    relatedSlugs: ["student-budget-calculator", "50-30-20-budget-calculator", "zero-based-budget-calculator"],
   },
 
   {
@@ -134,7 +136,7 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
       mode: "zero-based",
       amounts: { housing: 1200, utilities: 180, groceries: 420, transportation: 250, insurance: 150, minimumDebt: 120, dining: 220, entertainment: 100, shopping: 150, funMisc: 90, emergencyFund: 200, retirement: 520, extraDebt: 400 },
     },
-    relatedSlugs: ["50-30-20-budget-calculator", "monthly-budget-calculator", "household-budget-calculator"],
+    relatedSlugs: ["student-budget-calculator", "50-30-20-budget-calculator", "monthly-budget-calculator"],
   },
 
   {
@@ -150,7 +152,7 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
     intro:
       "A household budget calculator combines your family's total take-home income and expenses to show where the money goes and how much you can save. Enter your household's monthly net pay and shared costs in the calculator above to see needs, wants, and savings targets based on the 50/30/20 rule. On a combined $7,500 take-home income, that means $3,750 for needs, $2,250 for wants, and $1,500 for savings.",
     howItWorks:
-      "A household budget works like an individual one, scaled to everyone under the roof. Add up all reliable take-home income — both partners' paychecks plus any steady side income — then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight — an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
+      "A household budget works like an individual one, scaled to everyone under the roof. Add up all reliable take-home income — both partners' paychecks plus any steady side income — then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight — an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers, comparing each bucket's actual spending against its target the same way our [budget variance guide](/guides/budget-variance-calculation-explained/) explains for a business budget. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
     commonMistakes: [
       "Counting income you don't reliably receive. Budget steady take-home pay; treat bonuses and variable side income as extra.",
       "Tracking only one partner's spending. A household budget needs every account and card in the picture.",
@@ -179,5 +181,47 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
       amounts: { housing: 2200, utilities: 320, groceries: 850, transportation: 450, insurance: 280, minimumDebt: 250, dining: 450, entertainment: 200, shopping: 350, funMisc: 300, emergencyFund: 400, retirement: 1000, extraDebt: 400 },
     },
     relatedSlugs: ["monthly-budget-calculator", "50-30-20-budget-calculator", "zero-based-budget-calculator"],
+  },
+
+  {
+    calculator: "budget",
+    slug: "student-budget-calculator",
+    title: "Student Budget Calculator: Budget on a Student Income",
+    metaDescription:
+      "Free student budget calculator. Enter your part-time job income and college costs to see if your plan balances, built for irregular student income.",
+    targetKeyword: "budget calculator for students",
+    h1: "Student Budget Calculator",
+    intro:
+      "A student budget calculator turns a part-time paycheck and a semester's worth of costs into one plan you can check every month. Switch the calculator above to zero-based mode, enter your monthly take-home pay from work, and list your rent, food, and other costs to see if your plan balances or runs short. Most students find their fixed costs eat a much bigger share of income than the standard 50/30/20 split assumes. That's normal on a part-time wage: the tool's job is to show you the actual gap, not to hit a textbook ratio.",
+    howItWorks:
+      "The calculator above uses the same zero-based engine as our other budget tools, just with student-sized numbers. You enter your monthly take-home income (usually a part-time job, work-study, or a steady allowance), then fill in what you actually spend across housing, food, transportation, and the rest. The tool adds it up and shows your leftover: positive means you have room to save, negative means the plan is short and something has to give.\n\nOne rule matters more for students than anyone else: only count income you can rely on every single month. A financial aid refund check is real money, but it typically lands once a semester, not monthly. Treat it as a lump sum you divide across the term, not as this month's income. Mixing a one-time refund into a monthly budget is the single most common way a student's budget looks fine on paper, then falls apart mid-semester once the check is long spent.",
+    commonMistakes: [
+      "Counting a semester's financial aid refund as monthly income. Divide it by the number of months it needs to cover, and budget that smaller number instead.",
+      "Leaving out irregular costs like textbooks, a parking permit, or a lab fee. These usually land at the start of the semester, so set aside a monthly slice ahead of time.",
+      "Underestimating food costs when a meal plan doesn't cover every day. Off-plan groceries and dining out add up fast on a student income.",
+      "Skipping any emergency fund because the amount feels too small to matter. Even $20 to $30 a month builds a real cushion before the next unplanned expense.",
+      "Using a credit card to cover a shortfall instead of trimming a want first. A revolving balance at typical student card rates can cost far more than the gap it covered.",
+    ],
+    workedExample:
+      "Take a student living off-campus with roommates, working part-time for $1,200 a month in take-home pay. Needs run $990 (rent $600, utilities $60, groceries $250, transportation $80): 82.5% of income, well above the standard 50% target, which is typical once rent enters the picture on a part-time wage. Wants total $250 (dining, entertainment, shopping, misc.), and the plan sets aside just $30 for an emergency fund with nothing left for investing. That's $1,270 in total spending against $1,200 income, a $70 monthly shortfall. The fix isn't panic. It means trimming $70 from the wants bucket, picking up a few extra work hours, or moving to a cheaper meal plan, then re-running the numbers above until the leftover reaches zero or better.",
+    faqs: [
+      { question: "Is there a budget calculator for students?", answer: "Yes. The calculator above is built for a student income. Switch it to zero-based mode, enter your part-time job or work-study take-home pay, and list your actual college-living costs to see whether your plan balances." },
+      { question: "Should I count my financial aid refund as monthly income?", answer: "No, not directly. A refund check usually arrives once a semester, so treat it as a lump sum and divide it across the months it needs to cover. Budgeting the full refund amount as if it repeats every month is the most common way a student budget runs out mid-semester." },
+      { question: "What if my student budget doesn't balance?", answer: "A shortfall is common on a part-time income once rent and food are in the picture. Our worked example above runs $70 short before any changes. Trim a want first, look for a cheaper housing or meal-plan option, or add part-time work hours, then re-run the calculator until the leftover reaches zero or better." },
+      { question: "How much should a student save each month?", answer: "Even a small, consistent amount, $20 to $30 a month, builds a real emergency fund over a school year and matters more than the exact dollar figure. Save what's left after covering needs and a modest wants budget, and raise the amount once income grows." },
+      { question: "Should I use a credit card to cover a budget gap?", answer: "Treat that as a last resort, not a plan. Covering a shortfall with a revolving credit card balance adds interest on top of the original gap, so it's cheaper to trim spending or pick up extra hours first. See our [debt snowball vs. avalanche comparison](/compare/debt-snowball-vs-avalanche/) if a balance has already built up." },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau: Making a budget", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/" },
+      { label: "U.S. Bureau of Labor Statistics: Consumer Expenditure Surveys", url: "https://www.bls.gov/cex/" },
+    ],
+    toolHeading: "Build your student budget",
+    toolSubheading: "Enter your part-time income and college living costs to see if your plan balances.",
+    preset: {
+      monthlyIncome: 1200,
+      mode: "zero-based",
+      amounts: { housing: 600, utilities: 60, groceries: 250, transportation: 80, insurance: 0, minimumDebt: 0, dining: 120, entertainment: 40, shopping: 60, funMisc: 30, emergencyFund: 30, retirement: 0, extraDebt: 0 },
+    },
+    relatedSlugs: ["monthly-budget-calculator", "zero-based-budget-calculator", "50-30-20-budget-calculator"],
   },
 ];

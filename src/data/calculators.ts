@@ -917,6 +917,16 @@ export const CALCULATORS: CalculatorDef[] = [
         answer:
           "Daily compounding uses A = P × (1 + r/365)^n, where P is the principal, r is the annual rate as a decimal, and n is the number of days. For $10,000 at 4.5% compounded daily over 365 days, that's 10000 × (1.000123)^365 ≈ $10,460 — the extra $460, versus $450 under simple interest, is exactly the APY gap this calculator's effective-yield figure shows.",
       },
+      {
+        question: "Does this work the same for a mortgage, auto loan, student loan, or credit card?",
+        answer:
+          "Yes. The annual-rate-divided-by-365 formula is identical across loan types; only the balance and rate change. A $250,000 mortgage balance at 6.5% accrues about $44.52 in interest that day. A $20,000 auto loan balance at 7% accrues about $3.84. A $5,000 credit card balance at 24% accrues about $3.29. Enter your own loan's balance and rate above for the exact figure, then see the [auto loan interest calculator](/auto-loan/interest-calculator/) or [mortgage amortization schedule](/mortgage/amortization-schedule/) for the full day-by-day payoff breakdown instead of a single day's snapshot.",
+      },
+      {
+        question: "How does my banking app calculate the 'interest per day' it shows me?",
+        answer:
+          "Any bank or savings app that displays a daily interest figure is running the same math this calculator does: your balance times the annual rate divided by 365 (or that same figure compounded daily for a running balance). If an app's number doesn't match what you compute here with your actual balance and stated rate, check whether it's compounding daily, weekly, or monthly, since that changes the total, or whether it's using a promotional rate on only part of your balance.",
+      },
     ],
     sources: [
       { label: "Consumer Financial Protection Bureau — 12 CFR Part 1030 (Regulation DD), Appendix A: Annual Percentage Yield Calculation", url: "https://www.consumerfinance.gov/rules-policy/regulations/1030/A" },
