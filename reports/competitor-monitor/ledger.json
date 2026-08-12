@@ -12287,11 +12287,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/banking": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:be98318762f76e91939a1401763f09d1ee7d76db3eb67f233e82a963963897c2",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "",
           "outline": [
             "Explore banking basics",
             "How to open a certificate of deposit (CD)",
@@ -12342,7 +12346,7 @@
             "interest",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Banking Information - Personal and Business Banking Tips | Bankrate.com",
           "tool_io": []
         },
@@ -17995,11 +17999,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/banking/reviews": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:efafeac816e0e8a0a488b6aeefa1d1814d2b1a0620ea5a8edb7e588c69897c84",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "",
           "outline": [
             "Featured reviews",
             "Bank and credit union reviews"
@@ -18007,7 +18015,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bank Reviews | Bankrate",
           "tool_io": []
         },
@@ -21586,11 +21594,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/calculators": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:a07ed2343266cd0e4600f77c26f214373123f38b76c3d6438efad5aa8ac4b704",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "",
           "outline": [
             "Crunch the right numbers for you",
             "Mortgage Calculators",
@@ -21618,7 +21630,7 @@
             "personal finance",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Financial Calculator | Free Online Calculators from Bankrate.com",
           "tool_io": [
             "input: siteSearchInput"
@@ -21801,11 +21813,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:6573c8a483e2e94783caf933635f610e2bd2cbe4c9bae7d3cd951783729c41d6",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "",
           "outline": [
             "Card Type",
             "Card Issuer",
@@ -21862,7 +21878,7 @@
             "personal finance",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Credit Cards: Find the Right Offer For You & Apply Online - Bankrate",
           "tool_io": []
         },
@@ -25141,11 +25157,15 @@
           "tool_io": []
         },
         "https://www.bankrate.com/credit-cards/building-credit/best-for-fair-credit": {
+          "acted": true,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:9236437d9e9ae586b6491fc065dc560651e1ec63256fe1b3e59e4aa910cd1008",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T18:18:19+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-credit-cards-for-fair-credit/",
           "outline": [
             "Advertiser Disclosure",
             "+ Show Summary",
@@ -25195,7 +25215,7 @@
             "credit",
             "debt"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Credit Cards for Fair/Average Credit of August 2026 | Bankrate",
           "tool_io": []
         },
@@ -25771,11 +25791,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/business/best-business-cards": {
+          "acted": true,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:9c54ea9a1ac37ce2a56b6daceb71486c8dd7ef662880c334bb26e913cf4b45e5",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T18:18:19+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-business-credit-cards/",
           "outline": [
             "Advertiser Disclosure",
             "+ Show Summary",
@@ -25825,7 +25849,7 @@
             "credit",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best business credit cards of August 2026",
           "tool_io": []
         },
@@ -29125,11 +29149,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/reviews": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:c799e23ea59092c8db1310c0f079c28aa8d56f24b44a8074bbcf3e169ccfb303",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "",
           "outline": [
             "Advertiser Disclosure",
             "Card Type",
@@ -29141,7 +29169,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Credit Card Reviews: Bankrate Editor\u2019s Take & Full Analysis",
           "tool_io": []
         },
@@ -34963,11 +34991,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/tools/credit-card-payoff-calculator": {
+          "acted": true,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:73d483437bb73ae3a4b7496c1c8df752d41d696eaa09d992de6447c8caabbb87",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "https://www.themodernwallet.com/credit-card-payoff/",
           "outline": [
             "How to use this calculator",
             "Factors that affect your credit card balance",
@@ -34981,7 +35013,7 @@
             "debt",
             "payoff"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What will it take to pay off my credit card? - Bankrate",
           "tool_io": [
             "input: siteSearchInput"
@@ -47307,11 +47339,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/mortgages/additional-mortgage-payment-calculator": {
+          "acted": false,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:3857448d258424a0d595b140db964bf5ef585eeafcf717f4975d5a130094a1b5",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T19:34:49+00:00",
+          "our_url": "https://www.themodernwallet.com/mortgage/extra-payment-calculator/",
           "outline": [
             "How to use this calculator",
             "Understanding your results",
@@ -47327,7 +47363,7 @@
             "mortgage",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Additional Payment Calculator",
           "tool_io": [
             "input: siteSearchInput"
@@ -55688,11 +55724,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/mortgages/what-are-40-year-mortgages": {
+          "acted": true,
+          "acted_date": "2026-08-12",
           "content_hash": "sha256:829326dd41fc4b0fedc41521daa9adcddb149867d9efb6934ba6a42198f52a8a",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-12",
           "lastmod": "2026-08-12T20:17:28-04:00",
+          "our_url": "https://www.themodernwallet.com/guides/40-year-mortgage-explained/",
           "outline": [
             "Key takeaways",
             "What is a 40-year mortgage?",
@@ -55709,7 +55749,7 @@
           "relevance_hits": [
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is A 40-Year Mortgage? | Bankrate",
           "tool_io": []
         },
