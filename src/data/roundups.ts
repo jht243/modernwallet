@@ -5328,6 +5328,202 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Best Credit Cards for Fair/Average Credit ────────────────────────────
+  // Competitor-monitor pass (2026-08-12): a genuinely new category for this site — no credit-card
+  // product roundup existed before this one. Card terms (APR, exact fees) change often, so this
+  // roundup deliberately sticks to structural facts (secured vs. unsecured, deposit required,
+  // bureau reporting, upgrade path) rather than quoting precise rates that go stale within weeks.
+  {
+    slug: "best-credit-cards-for-fair-credit",
+    title: "Best Credit Cards for Fair Credit (2026)",
+    metaDescription:
+      "The best credit cards for fair credit (FICO 580-669) in 2026, compared on deposit requirements, bureau reporting, upgrade paths, and fee structure.",
+    targetKeyword: "best credit cards for fair credit",
+    category: "credit cards for fair credit",
+    angle: "best",
+    h1: "Best Credit Cards for Fair Credit of 2026",
+    intro:
+      "A fair credit score, roughly 580 to 669 on the FICO scale, sits in the range where most premium rewards cards are out of reach but real options still exist. We compared six widely available cards on the factors that matter most for this credit tier: whether a security deposit is required, whether the issuer reports to all three credit bureaus, whether there is a real path to an unsecured card later, and how the fee structure works.\n\nNo issuer paid for placement in this roundup. Card APRs and fees change often, so treat every dollar figure below as directional and confirm the current terms on the issuer's own page before you apply. Run your own balance through the [credit card payoff calculator](/credit-card-payoff/) once you have a card, since the interest math matters more than the sign-up terms once you're carrying any balance month to month.",
+    rankingCriteria:
+      "Rankings weighted four factors that matter most for fair-credit applicants: whether all three major credit bureaus receive monthly reporting (25%, since building history is usually the main goal at this tier), deposit requirement and refundability for secured cards (25%), a documented path to graduate to an unsecured card or a higher limit (25%), and overall fee transparency, including whether the annual fee, if any, is clearly disclosed up front (25%). We did not weight rewards value heavily, since most fair-credit cards offer thin or no rewards, and a card that builds credit faster is worth more at this stage than a card offering 1% back on groceries.",
+    options: [
+      {
+        name: "Capital One Platinum Credit Card",
+        bestFor: "Best no-deposit option for average credit",
+        description:
+          "An unsecured card built specifically for fair-to-average credit, with no security deposit required to open the account. [Capital One](https://www.capitalone.com/credit-cards/platinum/) reports to all three major credit bureaus and reviews accounts for an automatic credit line increase starting around six months in, without requiring a call or a new application.",
+        strengths: [
+          "No security deposit required, unlike most cards in this tier",
+          "Reports to all three major credit bureaus",
+          "Automatic credit line review after building a payment history",
+          "No annual fee",
+        ],
+        limitations: [
+          "No rewards program",
+          "Interest rate runs on the higher end typical of this credit tier",
+          "Approval odds depend on Capital One's own internal scoring beyond FICO/VantageScore alone",
+        ],
+        pricing: "No annual fee. Standard variable APR for this credit tier; confirm the current rate on Capital One's site before applying.",
+      },
+      {
+        name: "Discover it® Secured Credit Card",
+        bestFor: "Best secured card that still pays rewards",
+        description:
+          "A secured card, meaning your credit limit typically equals a refundable security deposit, but unlike most secured cards, [Discover](https://www.discover.com/credit-cards/secured/) still pays cash back on purchases. Discover reports to all three bureaus monthly and automatically reviews the account starting around eight months in to consider a transition to an unsecured line, with the deposit refunded when that happens.",
+        strengths: [
+          "Cash back rewards on a secured card, which is unusual in this category",
+          "Automatic monthly account reviews toward an unsecured upgrade",
+          "Refundable security deposit once you graduate or close the account in good standing",
+          "No annual fee",
+        ],
+        limitations: [
+          "Requires an upfront refundable deposit most competitors in this specific niche also require",
+          "Deposit amount sets your starting credit limit, which can be a low limit if you deposit the minimum",
+        ],
+        pricing: "No annual fee. Refundable security deposit sets your credit limit; confirm current minimum/maximum deposit amounts on Discover's site.",
+      },
+      {
+        name: "Petal 2 \"Cash Back, No Fees\" Visa® Credit Card",
+        bestFor: "Best for thin credit files (little to no credit history)",
+        description:
+          "[Petal](https://www.petalcard.com/petal-2) underwrites using cash flow data (income and spending patterns) in addition to, or instead of, a traditional credit score, which can help applicants with a thin or no credit file who would be declined by score-only underwriting. The card is unsecured, meaning no deposit is required, and reports to all three bureaus.",
+        strengths: [
+          "Underwriting considers cash flow, not just a FICO/VantageScore number",
+          "No security deposit required",
+          "Cash back rewards on purchases",
+          "No annual fee, no foreign transaction fee",
+        ],
+        limitations: [
+          "Requires linking a bank account during application for cash-flow underwriting to work",
+          "Approval and starting limit vary more than a standard score-based card, since underwriting is less standardized",
+        ],
+        pricing: "No annual fee. Standard variable APR; confirm the current rate on Petal's site before applying.",
+      },
+      {
+        name: "Capital One QuicksilverOne Cash Rewards Credit Card",
+        bestFor: "Best rewards card realistically available at this tier",
+        description:
+          "One of the few cards genuinely available to fair-credit applicants that pays a flat cash back rate on every purchase, rather than the no-rewards structure most fair-credit cards use. [Capital One](https://www.capitalone.com/credit-cards/quicksilverone/) reports to all three bureaus and offers the same automatic credit line review as its Platinum card.",
+        strengths: [
+          "Flat cash back rate on every purchase, no rotating categories to track",
+          "Automatic credit line review starting around six months in",
+          "Reports to all three major credit bureaus",
+        ],
+        limitations: [
+          "Carries an annual fee, unlike the no-rewards Platinum card from the same issuer",
+          "Interest rate runs on the higher end typical of this credit tier, so rewards only make sense if you pay in full",
+        ],
+        pricing: "Annual fee applies (confirm current amount on Capital One's site). Standard variable APR for this credit tier.",
+      },
+      {
+        name: "Chime Card (formerly Credit Builder)",
+        bestFor: "Best for avoiding interest entirely while building credit",
+        description:
+          "A secured card from [Chime](https://www.chime.com/credit/credit-builder/) that works differently from a typical credit card: you move money into a secured account first, then spend only what you've moved over, which means there's no ability to carry a revolving balance or accrue interest. No credit check is required to apply, and no minimum security deposit is required to open the account.",
+        strengths: [
+          "No interest charges possible, since you can only spend what you've already secured",
+          "No credit check required to apply, and no minimum deposit to open the account",
+          "No annual fee",
+          "Reports payment history to all three major credit bureaus",
+        ],
+        limitations: [
+          "Requires an underlying Chime deposit account, so it's not a standalone card application",
+          "Spending power is capped by what you move over in advance, not a traditional credit line",
+          "Cash back rewards require meeting a qualifying monthly direct-deposit threshold; confirm the current requirement on Chime's site",
+        ],
+        pricing: "No annual fee, no interest (spend-what-you-secure structure). Requires an eligible Chime deposit account; some cash back tiers require a qualifying monthly direct deposit.",
+      },
+      {
+        name: "OpenSky® Secured Visa® Credit Card",
+        bestFor: "Best for no credit check at all, including bad or no history",
+        description:
+          "A secured card from [OpenSky](https://www.openskycc.com/) that does not require a credit check to apply, which makes it accessible to applicants with damaged credit or no credit history at all, not just the fair-credit range. The tradeoff is a modest annual fee and no rewards program.",
+        strengths: [
+          "No credit check required, the widest accessibility in this roundup",
+          "Reports to all three major credit bureaus",
+          "Refundable security deposit",
+        ],
+        limitations: [
+          "Carries an annual fee, unlike several no-fee options above",
+          "No rewards program",
+          "No linked checking account required, but also no cash-flow underwriting path to skip the deposit",
+        ],
+        pricing: "Modest annual fee applies (confirm current amount on OpenSky's site). Refundable security deposit sets your credit limit.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Deposit Required", "Reports to 3 Bureaus", "Rewards", "Annual Fee", "Credit Check to Apply"],
+      rows: [
+        { name: "Capital One Platinum", values: ["No", "Yes", "No", "No", "Yes"] },
+        { name: "Discover it Secured", values: ["Yes (refundable)", "Yes", "Cash back", "No", "Yes"] },
+        { name: "Petal 2", values: ["No", "Yes", "Cash back", "No", "Cash-flow based"] },
+        { name: "Capital One QuicksilverOne", values: ["No", "Yes", "Flat cash back", "Yes", "Yes"] },
+        { name: "Chime Card", values: ["Yes (spend-what-secured)", "Yes", "Cash back (conditional)", "No", "No"] },
+        { name: "OpenSky Secured Visa", values: ["Yes (refundable)", "Yes", "No", "Yes", "No"] },
+      ],
+    },
+    verdict:
+      "Capital One Platinum is the best all-around pick if you want an unsecured card with no deposit and no annual fee, and your credit is fair-to-average rather than damaged. Discover it Secured is the pick if you're comfortable putting down a refundable deposit in exchange for rare cash back rewards on a secured card. Petal 2 fits best if your file is thin rather than damaged, since cash-flow underwriting can approve applicants a score-only card would decline. Capital One QuicksilverOne is worth the annual fee only if you'll pay your balance in full and actually use the flat cash back rate. Chime Card is the safest structural choice if your goal is purely building payment history without any risk of carrying interest. OpenSky is the fallback when a credit check itself is the obstacle, since it's the only card here that skips one entirely. Whichever you choose, run the numbers on any balance you might carry through our [credit card payoff calculator](/credit-card-payoff/) before assuming a low limit keeps the interest cost small.",
+    sections: [
+      {
+        heading: "Secured vs. unsecured: which actually fits fair credit?",
+        content:
+          "A secured card requires a cash deposit that typically becomes your credit limit, and it exists specifically to approve applicants a standard unsecured card would decline. An unsecured card needs no deposit, but issuers that offer one to the fair-credit tier, like Capital One Platinum, generally charge a higher interest rate and offer thinner rewards to offset the added risk.\n\nFair credit, roughly 580 to 669 on the FICO scale, sits close enough to \"good\" that some issuers extend unsecured approval, while others still require a deposit. If you can qualify for an unsecured no-fee card without a deposit, it's usually the simpler choice. If you're declined, a secured card with automatic bureau reporting and a documented graduation path, like Discover it Secured, rebuilds the same credit history a deposit-free card would, just with cash tied up temporarily.",
+      },
+      {
+        heading: "What actually moves your score once you have the card",
+        content:
+          "Payment history is the single biggest factor in both the FICO and VantageScore models, so paying on time every month matters more than which card from this list you pick. Credit utilization, the share of your limit you're using, is the second-biggest factor, and it applies per card and across all your cards combined, so keeping balances low relative to your limit helps even on a card with a small starting limit.\n\nA hard inquiry from applying dings your score slightly and temporarily, which is one reason cash-flow underwriting products like Petal 2 or no-credit-check products like OpenSky can appeal to someone who has already applied for, and been declined by, a score-based card recently. Confirm which type of inquiry an issuer runs, soft or hard, before you apply if minimizing inquiries matters to your situation.",
+      },
+      {
+        heading: "How we ranked",
+        content:
+          "We weighted three-bureau reporting, deposit structure and refundability, a documented upgrade path, and fee transparency equally, and deliberately did not weight rewards value heavily, since most cards genuinely available at this credit tier offer thin or no rewards. No issuer paid for placement, and every card listed is a widely available national product rather than a regional or co-branded card with narrower eligibility. Where an issuer did not publish a specific number, such as an exact annual fee or deposit range, we noted that the figure changes and should be confirmed directly rather than importing a third-party estimate that may be outdated.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What credit score counts as fair credit?",
+        answer:
+          "Fair credit is roughly 580 to 669 on the FICO scale, one tier above poor (below 580) and one tier below good (670-739), according to myFICO, the company that publishes the FICO scoring model. VantageScore uses a similar 300-850 range that can score the same credit report slightly differently, so check which score type a card issuer is quoting.",
+      },
+      {
+        question: "Can I get approved for an unsecured card with fair credit?",
+        answer:
+          "Yes, some issuers approve fair-credit applicants for unsecured cards, though typically at a higher interest rate and with thinner rewards than a good-credit applicant would receive. Capital One Platinum and Petal 2 are both unsecured options widely available at this tier. If you're declined for an unsecured card, a secured card is the more reliable fallback.",
+      },
+      {
+        question: "How long does it take to build credit with a secured card?",
+        answer:
+          "Most issuers that offer a graduation path review accounts starting around six to eight months in, but the score improvement itself depends more on your payment history and utilization than on the calendar. Paying on time every month and keeping your balance low relative to your limit are the two factors that move your score fastest, regardless of which card you're using.",
+      },
+      {
+        question: "Do I get my deposit back on a secured credit card?",
+        answer:
+          "On the cards in this roundup, yes, the security deposit is refundable when you close the account in good standing or graduate to an unsecured card, though policies vary by issuer, so confirm the exact refund terms before you apply. A card that doesn't clearly disclose whether the deposit is refundable is a reason to look elsewhere.",
+      },
+      {
+        question: "Is it better to have no rewards or a rewards card with fair credit?",
+        answer:
+          "It depends on whether you'll carry a balance. A rewards card only pays off if you pay your statement in full each month, since the interest rate on a fair-credit card typically outweighs whatever cash back you'd earn on a carried balance. If you expect to carry any balance at all, a no-fee, no-rewards card that reports reliably to the bureaus is usually the better priority than a rewards card with an annual fee.",
+      },
+      {
+        question: "Will applying for one of these cards hurt my credit score?",
+        answer:
+          "A standard credit card application typically triggers a hard inquiry, which causes a small, temporary dip in your score. Cash-flow underwriting products like Petal 2 and some no-credit-check products may use a soft inquiry instead for a pre-qualification step, though a hard inquiry can still apply once you formally apply. Check each issuer's specific process, since it varies by product.",
+      },
+    ],
+    sources: [
+      { label: "myFICO — FICO Score Ranges", url: "https://www.myfico.com/credit-education/credit-scores" },
+      { label: "Consumer Financial Protection Bureau — What is a secured credit card?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-secured-credit-card-en-45/" },
+      { label: "Consumer Financial Protection Bureau — Key factors that affect your credit scores", url: "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/" },
+    ],
+    calculatorLinks: [
+      { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
+      { label: "Personal loan calculator", href: "/personal-loan/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 

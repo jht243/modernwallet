@@ -33,6 +33,7 @@ import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
 import InterestPerDayCalculator from "./InterestPerDayCalculator";
 import TaxableVsTaxDeferredCalculator from "./TaxableVsTaxDeferredCalculator";
+import CreditCardPayoffCalculator from "./CreditCardPayoffCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -86,6 +87,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Taxable vs. tax-deferred — competitor-monitor pass (2026-08-05): the dollar gap between a
   // regular taxable account and a tax-deferred 401(k)/IRA for the same return and tax rate.
   "taxable-vs-tax-deferred": TaxableVsTaxDeferredCalculator,
+  // Credit card payoff — competitor-monitor pass (2026-08-12): fixed-payment payoff timeline vs. a
+  // minimum-payment-only path computed side by side, using the issuer minimum-payment formula.
+  "credit-card-payoff": CreditCardPayoffCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,

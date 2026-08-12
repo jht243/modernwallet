@@ -1190,4 +1190,209 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       },
     ],
   },
+
+  // ── Best Business Credit Cards ────────────────────────────────────────────
+  // Competitor-monitor pass (2026-08-12): a genuinely new category for this site — no business
+  // credit card roundup existed before this one. Not added to BUSINESS_ROUNDUP_SLUGS: unlike MCA
+  // and invoice factoring, this is a direct-apply consumer product comparison, not a "get matched
+  // with a funder" lead-gen flow, so the funder-matching LeadForm would misrepresent what this page does.
+  {
+    slug: "best-business-credit-cards",
+    title: "Best Business Credit Cards of 2026: Compared by Structure",
+    metaDescription:
+      "The best business credit cards of 2026, compared on personal guarantee, spending limit type, and bureau reporting. No issuer paid for placement.",
+    targetKeyword: "best business credit cards",
+    category: "business credit cards",
+    angle: "best",
+    segment: "small business owners",
+    h1: "Best Business Credit Cards of 2026",
+    intro:
+      "The right business credit card depends less on the flashiest rewards multiplier and more on three structural questions: does it require a personal guarantee, does it report to your personal credit file or a business bureau (or both), and is it a traditional credit card or a charge card with no preset spending limit. We compared six widely available cards on those factors, plus fee transparency and who each one actually fits.\n\nNo card issuer paid for placement in this roundup. Card terms change often, so treat every dollar figure below as directional and confirm current terms on the issuer's own page before applying. If you're weighing a card against a term loan or line of credit instead, see our [business loan payoff calculator](/business-loan-payoff/) and [business line of credit calculator](/business-line-of-credit/) to compare the real cost side by side.",
+    rankingCriteria:
+      "Rankings weighted four factors: personal guarantee and personal-credit reporting practices (30%, since this is the single biggest structural difference between cards and the factor most reviews bury), fee and rewards transparency (25%), accessibility for newer or lower-revenue businesses (25%), and expense-management or spend-control features useful to a small team (20%). We did not weight welcome-offer size heavily, since a large sign-up bonus that requires a personal guarantee and heavy annual spend isn't automatically the best fit for every business stage.",
+    options: [
+      {
+        name: "Ink Business Unlimited® Credit Card",
+        bestFor: "Best flat-rate no-annual-fee card for straightforward spending",
+        description:
+          "A traditional business credit card from [Chase](https://creditcards.chase.com/business-credit-cards/ink/unlimited) that pays a flat cash back rate on every purchase, with no rotating categories to track and no annual fee. It requires a personal guarantee, meaning the primary applicant is personally liable for the balance, and Chase reports account activity to the business bureaus rather than the owner's personal credit file under normal payment behavior.",
+        strengths: [
+          "Flat cash back rate on every purchase, simple to track",
+          "No annual fee",
+          "Reports primarily to business credit bureaus, not personal credit, when paid as agreed",
+          "Widely available; straightforward approval criteria for an established personal credit profile",
+        ],
+        limitations: [
+          "Requires a personal guarantee",
+          "Traditional preset credit limit, not a charge card with flexible spending capacity",
+          "Missed payments can still affect the guarantor's personal credit",
+        ],
+        pricing: "No annual fee. Standard variable APR; confirm the current rate on Chase's site before applying.",
+      },
+      {
+        name: "American Express® Business Gold Card",
+        bestFor: "Best for businesses with concentrated spending in specific categories",
+        description:
+          "A rewards card from [American Express](https://www.americanexpress.com/us/credit-cards/business/business-gold-card/) that automatically adjusts bonus-earning categories each billing cycle to match your two highest-spend categories, which suits a business whose biggest expenses shift month to month. It carries an annual fee and generally requires a personal guarantee for most applicants.",
+        strengths: [
+          "Automatically adjusts bonus categories to match your actual top spending",
+          "Membership Rewards points transfer to numerous airline and hotel partners",
+          "Purchase and travel protections typical of premium Amex business cards",
+        ],
+        limitations: [
+          "Carries an annual fee",
+          "Requires a personal guarantee for most applicants",
+          "Rewards value depends on redeeming points well; cash-value redemptions are usually worth less than transfer redemptions",
+        ],
+        pricing: "Annual fee applies (confirm current amount on Amex's site). Standard variable APR.",
+      },
+      {
+        name: "Capital One Spark Cash Plus",
+        bestFor: "Best charge card for businesses that want no preset spending limit",
+        description:
+          "A charge card from [Capital One](https://www.capitalone.com/small-business/credit-cards/spark-cash-plus/) rather than a traditional revolving card, meaning there's no fixed credit limit; approved spending capacity flexes with your business's finances, and the balance is due in full each billing cycle rather than carried. It requires strong personal and business credit and an annual fee, offset by an unlimited flat cash back rate.",
+        strengths: [
+          "No preset spending limit; capacity adjusts to your business's finances",
+          "Unlimited flat cash back rate on every purchase",
+          "Reports to business credit bureaus, with more limited personal-credit reporting than a standard revolving card",
+        ],
+        limitations: [
+          "Requires the balance be paid in full each cycle (true charge card, not a revolving line)",
+          "Carries an annual fee",
+          "Requires excellent personal and business credit for approval",
+        ],
+        pricing: "Annual fee applies (confirm current amount on Capital One's site). Balance due in full each billing cycle; no revolving interest structure in the traditional sense.",
+      },
+      {
+        name: "Capital One Spark Classic for Business",
+        bestFor: "Best for average or building business credit",
+        description:
+          "A no-annual-fee option from [Capital One](https://www.capitalone.com/small-business/credit-cards/spark-classic/) built for business owners with average or fair personal credit rather than the excellent-credit bar most business rewards cards require. It still pays a flat cash back rate, just at a lower level than Capital One's premium Spark cards, in exchange for the more accessible approval bar.",
+        strengths: [
+          "Accessible to average/fair personal credit, unlike most business rewards cards",
+          "No annual fee",
+          "Flat cash back rate on every purchase",
+        ],
+        limitations: [
+          "Lower cash back rate than Capital One's premium business cards",
+          "Still requires a personal guarantee",
+          "Standard preset credit limit, typically lower for this credit tier",
+        ],
+        pricing: "No annual fee. Standard variable APR for this credit tier; confirm the current rate on Capital One's site.",
+      },
+      {
+        name: "Brex Card",
+        bestFor: "Best for funded startups and companies without a personal-guarantee applicant",
+        description:
+          "A corporate charge card from [Brex](https://www.brex.com/product/credit-card) underwritten primarily on the business's own cash balance and financials rather than the founder's personal credit, which means it typically requires no personal guarantee for qualifying companies. It's built for venture-funded or cash-strong startups more than a traditional small business with thin capitalization.",
+        strengths: [
+          "No personal guarantee required for qualifying businesses",
+          "Underwriting based on business financials, not a founder's personal FICO score",
+          "Built-in expense management and spend-control tools for teams",
+        ],
+        limitations: [
+          "Eligibility generally requires a meaningful cash balance or funding history, not accessible to every small business",
+          "Charge card structure means the balance is due in full each cycle, not carried",
+          "Less useful for a solo owner without a company bank balance backing the application",
+        ],
+        pricing: "No traditional annual fee structure disclosed the way a consumer card is; confirm current account requirements on Brex's site.",
+      },
+      {
+        name: "BILL Divvy Corporate Card",
+        bestFor: "Best for teams that need built-in budgeting and spend controls",
+        description:
+          "A corporate card and expense-management platform from [BILL](https://www.bill.com/product/corporate-cards) that pairs individual employee cards with real-time budgets set by the business, so a manager can cap spending by department or project before it happens rather than reviewing expense reports after the fact. Eligibility and personal-guarantee requirements vary by the business's financial profile.",
+        strengths: [
+          "Real-time, per-employee budget controls built into the card program",
+          "Useful for a growing team that needs to stop overspending before it happens, not just track it afterward",
+          "No traditional card annual fee for the core product",
+        ],
+        limitations: [
+          "Best fit for a business already issuing multiple employee cards, not a solo owner's only card",
+          "Approval terms, including any personal guarantee, depend on the business's financial profile",
+        ],
+        pricing: "No standard consumer-style annual fee; confirm current account and eligibility terms on BILL's site.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Personal Guarantee", "Card Type", "Annual Fee", "Best Stage"],
+      rows: [
+        { name: "Ink Business Unlimited", values: ["Yes", "Revolving credit card", "No", "Established, straightforward spending"] },
+        { name: "Amex Business Gold", values: ["Usually", "Revolving credit card", "Yes", "Concentrated category spending"] },
+        { name: "Capital One Spark Cash Plus", values: ["Yes", "Charge card, no preset limit", "Yes", "Strong credit, high spend"] },
+        { name: "Capital One Spark Classic", values: ["Yes", "Revolving credit card", "No", "Average/fair business credit"] },
+        { name: "Brex Card", values: ["Usually not (qualifying businesses)", "Charge card", "Varies", "Funded startups, cash-strong"] },
+        { name: "BILL Divvy", values: ["Varies", "Charge card + budgeting", "No standard fee", "Teams needing spend controls"] },
+      ],
+    },
+    verdict:
+      "Ink Business Unlimited is the best default pick for an established small business that wants a simple, no-fee, flat-rate card without needing a charge card's no-preset-limit structure. Amex Business Gold is worth its annual fee if your spending genuinely concentrates in a couple of categories that shift month to month. Capital One Spark Cash Plus fits a business with strong credit and higher, lumpier spending that a fixed limit would constrain. Capital One Spark Classic is the right call if your personal credit is average or fair rather than excellent and the premium cards above would decline you. Brex and BILL Divvy both fit a different profile entirely: a funded or fast-growing company that wants underwriting based on business financials and built-in spend controls, not a personal-guarantee-based consumer card. Before applying anywhere, check whether the card reports to your personal credit file, since that answer matters more to most owners than the rewards rate.",
+    sections: [
+      {
+        heading: "The question most reviews skip: personal guarantee and credit reporting",
+        content:
+          "A personal guarantee means the business owner is personally liable for the balance if the business can't pay, and most small business credit cards require one, regardless of what the marketing emphasizes about the business itself qualifying. That single fact matters more than the rewards rate for most owners, since it means a business card default can show up on the owner's personal credit report the same way a personal card default would.\n\nSeparately, and often confused with the guarantee question, is whether the issuer reports routine account activity to personal credit bureaus or only to business bureaus like Dun & Bradstreet, Experian Business, and Equifax Business. Most major issuers report to business bureaus for on-time payment and reserve personal-credit reporting mainly for missed payments or default, but policies differ by issuer and can change, so confirm directly with the card issuer rather than assuming.",
+      },
+      {
+        heading: "Revolving card vs. charge card: the difference that changes your cash flow plan",
+        content:
+          "A traditional revolving business credit card sets a fixed credit limit and lets you carry a balance month to month at interest, the same structure as a personal credit card. A charge card, like Capital One Spark Cash Plus or the corporate cards from Brex and BILL Divvy, has no preset spending limit tied to a fixed number, but requires the balance to be paid in full each billing cycle rather than carried.\n\nA charge card suits a business with predictable cash flow that wants flexible spending capacity without a hard ceiling, since spending power can adjust to the business's finances rather than staying fixed. A revolving card suits a business that occasionally needs to carry a balance for a few weeks or months, since a charge card generally doesn't allow that without triggering a late or default status.",
+      },
+      {
+        heading: "How we ranked",
+        content:
+          "We weighted personal-guarantee and credit-reporting transparency most heavily, since it's the factor most comparison content buries beneath rewards-rate marketing, followed by fee transparency, accessibility across credit tiers, and spend-control features useful to a growing team. No card issuer paid for placement. Where an issuer's exact current fee or rate wasn't independently confirmable at publish time, we noted that explicitly rather than importing a third-party estimate that may already be outdated.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do all business credit cards require a personal guarantee?",
+        answer:
+          "No, but most do, especially for a newer or smaller business without an established business credit file. Cards underwritten primarily on business financials, like Brex, typically waive the personal guarantee for qualifying companies, usually ones with a meaningful cash balance or funding history. Confirm this specific term directly with any issuer before assuming your business card won't affect your personal credit.",
+      },
+      {
+        question: "Will a business credit card affect my personal credit score?",
+        answer:
+          "It depends on the issuer's reporting practice and whether you default. Most major issuers report on-time payment activity to business credit bureaus rather than your personal file, but reserve personal-credit reporting for missed payments or default, and because most business cards carry a personal guarantee, a default can still land on your personal credit report even if routine activity doesn't.",
+      },
+      {
+        question: "What credit score do I need for a business credit card?",
+        answer:
+          "It varies widely by card. Premium charge cards and cards with rich rewards, like Capital One Spark Cash Plus or Amex Business Gold, generally expect good-to-excellent personal credit alongside business financials. Cards built for accessibility, like Capital One Spark Classic, are designed specifically for average or fair personal credit, so check a specific card's stated target credit tier rather than assuming a single universal minimum applies.",
+      },
+      {
+        question: "What's the difference between a business credit card and a charge card?",
+        answer:
+          "A business credit card sets a fixed credit limit and lets you carry a balance month to month at interest, like a personal credit card. A charge card has no preset spending limit, with capacity flexing to your business's finances, but requires the full balance be paid every billing cycle rather than carried over time.",
+      },
+      {
+        question: "Can I get a business credit card with no personal credit history?",
+        answer:
+          "It's difficult with a traditional issuer, since most standard business cards check personal credit as part of underwriting. Cards that underwrite primarily on business financials and cash balance, like Brex, are built specifically for this situation, though they typically require the business itself to show meaningful funding or revenue rather than skipping underwriting altogether.",
+      },
+      {
+        question: "Is a business credit card or a business line of credit better?",
+        answer:
+          "A credit card is usually simpler and faster to get for everyday purchases and short-term float, while a line of credit typically offers a larger available amount and can be a better fit for financing inventory, payroll gaps, or larger recurring needs. Compare the real cost of each directly using the [business line of credit calculator](/business-line-of-credit/) before deciding, since APR and fee structures differ meaningfully between the two products.",
+      },
+    ],
+    sources: [
+      {
+        label: "Consumer Financial Protection Bureau — Small business lending and credit resources",
+        url: "https://www.consumerfinance.gov/consumer-tools/",
+      },
+      {
+        label: "U.S. Small Business Administration — Business credit and financing basics",
+        url: "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances",
+      },
+      {
+        label: "Federal Reserve Banks — Small Business Credit Survey",
+        url: "https://www.fedsmallbusiness.org/",
+      },
+    ],
+    calculatorLinks: [
+      { label: "Business loan payoff calculator", href: "/business-loan-payoff/" },
+      { label: "Business line of credit calculator", href: "/business-line-of-credit/" },
+    ],
+  },
 ];

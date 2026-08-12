@@ -19,6 +19,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/retirement/", label: "Stay on track for retirement" },
     { href: "/guides/current-mortgage-rates-guide/", label: "What actually sets your rate" },
     { href: "/guides/lessons-from-2008-housing-crash/", label: "What the 2008 crash still teaches buyers" },
+    { href: "/guides/40-year-mortgage-explained/", label: "Considering a 40-year term?" },
   ],
   "real-estate": [
     { href: "/mortgage/", label: "Finance the purchase" },
@@ -70,8 +71,16 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   "personal-loan": [
     { href: "/budget/", label: "Does the payment fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/credit-card-payoff/", label: "Compare against paying the card down directly" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Compare a 0% balance transfer instead" },
     { href: "/guides/how-to-read-a-personal-loan-review/", label: "How to read a lender review" },
+  ],
+  "credit-card-payoff": [
+    { href: "/personal-loan/", label: "Compare a fixed-rate personal loan instead" },
+    { href: "/budget/", label: "Build a payoff plan into your budget" },
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/roundup/best-credit-cards-for-fair-credit/", label: "Rebuilding credit? Compare cards for fair credit" },
+    { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Consider a 0% balance transfer card" },
   ],
   "tax-resolution": [
     { href: "/guides/tax-tips/", label: "Proactive tax planning (if you're current)" },

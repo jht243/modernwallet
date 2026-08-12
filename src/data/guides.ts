@@ -1829,7 +1829,7 @@ export const GUIDES: Guide[] = [
       "A 0% intro APR credit card typically requires good to excellent credit — commonly a [FICO Score](https://www.myfico.com/credit-education/credit-scores) around 690 or higher — though your income, existing credit utilization, and recent credit inquiries matter almost as much as the score itself. This guide covers what issuers actually evaluate, realistic approval odds by score range, and a costly trap — deferred interest — that isn't the same thing as a true 0% intro APR offer.",
     sections: [
       { heading: "What \"0% intro APR\" actually means", body: "A 0% intro APR offer charges no interest on purchases, balance transfers, or both, for a set introductory period — commonly 12 to 21 months — after which the rate jumps to the card's standard variable APR on any remaining balance. Balance transfer offers almost always carry a separate transfer fee, typically 3% to 5% of the amount moved, charged upfront even though the interest itself is 0%.\n\nOnce the intro period ends, interest applies going forward on your remaining balance at the standard rate — it does not retroactively charge you for the intro period, as long as the card is a true 0% intro APR offer and not a deferred-interest offer." },
-      { heading: "The score range issuers typically look for", body: "Issuers generally reserve 0% intro APR cards for applicants in the good-to-excellent FICO Score range, commonly cited as 690 and above, with the most competitive offers — the longest 0% periods, no annual fee — going to scores closer to 720 and up. A score in the fair range, roughly 580-669, makes approval for a 0% intro card unlikely, though secured cards and cards built for building credit remain available at that range.\n\nThese ranges are general guidance, not a guarantee — individual issuers set their own underwriting criteria and can approve or deny outside these typical bands." },
+      { heading: "The score range issuers typically look for", body: "Issuers generally reserve 0% intro APR cards for applicants in the good-to-excellent FICO Score range, commonly cited as 690 and above, with the most competitive offers — the longest 0% periods, no annual fee — going to scores closer to 720 and up. A score in the fair range, roughly 580-669, makes approval for a 0% intro card unlikely, though [secured cards and cards built for building credit](/roundup/best-credit-cards-for-fair-credit/) remain available at that range.\n\nThese ranges are general guidance, not a guarantee — individual issuers set their own underwriting criteria and can approve or deny outside these typical bands." },
       { heading: "Your score isn't the only thing issuers check", body: "Income and existing debt matter as much as your score for a 0% intro APR approval, because issuers are extending a meaningful line of interest-free credit and want evidence you can repay it. A high score paired with high existing credit card utilization, a recent string of new-account inquiries, or a debt-to-income ratio that looks stretched can still result in a denial or a lower starting credit limit than expected.\n\nRecent applications matter too: opening several new cards in a short window can flag as risk to an issuer's underwriting model, independent of your score. Space out applications and pay down revolving balances before applying if your score is borderline." },
       { heading: "The deferred-interest trap: not the same as 0% APR", body: "A deferred-interest offer — common on store and retail cards — looks identical to a true 0% intro APR offer at checkout, but works very differently: if any balance remains unpaid when the promotional period ends, the issuer charges interest retroactively on the entire original purchase amount, back to the purchase date, not just on the remaining balance. A true 0% intro APR card only charges interest going forward on whatever balance is left.\n\nAlways read the specific terms before assuming an offer is true 0% APR — look for the words \"deferred interest\" in the disclosure, and if it's a deferred-interest offer, pay the full balance before the promotional period ends or you risk owing interest on the original purchase price in one lump sum." },
       { heading: "How to improve your approval odds", body: "Pay down existing card balances before applying, since utilization has an outsized effect on your score in the weeks before a new application. Avoid opening other new credit accounts in the months leading up to your application, since recent inquiries and new accounts can both lower your score and signal risk to underwriting.\n\nIf your score is borderline, consider applying with an issuer where you already have a strong banking relationship, since some issuers weigh existing account history favorably. Building a [budget](/budget/) that shows you can comfortably make more than the minimum payment also puts you in a stronger position if the issuer does a manual review." },
@@ -2526,7 +2526,7 @@ export const GUIDES: Guide[] = [
     },
     {
       heading: "How to calculate your payoff time",
-      body: "You can calculate payoff time with one formula when your payment stays fixed:\n\nmonths = -ln(1 - (r x B) / P) / ln(1 + r)\n\nHere B is your balance, P is your fixed monthly payment, and r is your monthly rate (APR divided by 12). The \"ln\" is the natural logarithm on any calculator. The formula assumes a fixed rate, a fixed payment, and no new charges.\n\nOne rule falls straight out of the math. If your payment is less than or equal to one month's interest, you never pay the card off. Your payment has to beat the interest before the balance can fall at all.",
+      body: "You can calculate payoff time with one formula when your payment stays fixed:\n\nmonths = -ln(1 - (r x B) / P) / ln(1 + r)\n\nHere B is your balance, P is your fixed monthly payment, and r is your monthly rate (APR divided by 12). The \"ln\" is the natural logarithm on any calculator. The formula assumes a fixed rate, a fixed payment, and no new charges.\n\nOne rule falls straight out of the math. If your payment is less than or equal to one month's interest, you never pay the card off. Your payment has to beat the interest before the balance can fall at all. To skip the manual formula, plug your own balance, APR, and payment into the [credit card payoff calculator](/credit-card-payoff/), which also runs the minimum-payment comparison automatically.",
     },
     {
       heading: "Worked example: $5,000 at 24% APR",
@@ -2542,6 +2542,7 @@ export const GUIDES: Guide[] = [
     },
   ],
   tools: [
+    { href: "/credit-card-payoff/", label: "Credit card payoff calculator" },
     { href: "/budget/monthly-budget-calculator/", label: "Monthly budget" },
     { href: "/budget/50-30-20-budget-calculator/", label: "50/30/20 budget" },
   ],
@@ -5519,6 +5520,99 @@ export const GUIDES: Guide[] = [
     sources: [
       { label: "U.S. Small Business Administration: Manage Your Finances", url: "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances" },
       { label: "Consumer Financial Protection Bureau: Making a budget", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/" },
+    ],
+  },
+
+  // Competitor-monitor pass (2026-08-12): 40-year mortgages are real but niche — non-QM lenders
+  // originate them, and Fannie/Freddie/FHA servicers also use a 40-year term as a loss-mitigation
+  // modification tool for borrowers already behind on payments. Most guides blur those two very
+  // different situations together; this one keeps them separate.
+  {
+    slug: "40-year-mortgage-explained",
+    title: "40-Year Mortgage Explained: Payment, Cost, and Who Qualifies",
+    metaDescription:
+      "A 40-year mortgage lowers your payment but adds over $200,000 in interest on a typical loan. See the real numbers and who actually qualifies.",
+    h1: "40-Year Mortgage: How It Works, the Real Cost, and Who Qualifies",
+    cardBlurb: "A lower monthly payment, a much bigger interest bill: the real math and who actually qualifies.",
+    intro:
+      "A 40-year mortgage stretches your home loan's principal and interest payments over 480 months instead of the standard 360, which lowers your monthly payment but adds years and a large amount of extra interest. On a $350,000 loan at 7% APR, a 40-year term costs $2,175.01 a month versus $2,328.56 on a 30-year term, a $153.55 monthly savings, but the 40-year loan costs $694,004.55 in total interest against $488,281.14 for the 30-year, a $205,723.41 difference. This guide covers how the math works, who actually qualifies for a purchase-money 40-year loan, and the separate case where a 40-year term shows up as a loan modification instead.",
+    sections: [
+      {
+        heading: "What a 40-year mortgage actually is",
+        body: "A 40-year mortgage is a home loan with a 480-month amortization schedule instead of the standard 360 months on a 30-year loan. The interest rate, down payment, and closing costs work the same way as any other mortgage. The only structural change is the extra 120 months spread across the payoff schedule.\n\nSpreading the same loan balance across more months lowers each individual payment, since you're dividing principal and interest across a longer timeline. It does not lower the total amount of interest you owe over the life of the loan. It raises it, because you're paying interest on a slowly-shrinking balance for a decade longer than a 30-year loan requires. See how that plays out on your own loan amount and rate with the [mortgage calculator](/mortgage/).",
+      },
+      {
+        heading: "How the payment and interest math works",
+        body: "A 40-year mortgage uses the same amortization formula as any fixed-rate loan: your payment is calculated so a level monthly amount covers both interest on the current balance and enough principal to zero out the loan by the final month. Stretching that same balance across 480 months instead of 360 lowers each month's required payment, since more months are splitting the cost.\n\nOn a $350,000 loan at 7% APR, the 30-year payment is $2,328.56 and the 40-year payment is $2,175.01, a $153.55 monthly difference. Over the full term, though, the 30-year loan pays $488,281.14 in total interest while the 40-year loan pays $694,004.55, a gap of $205,723.41. That gap exists because interest is charged on the remaining balance every month, and a 40-year loan keeps a meaningfully larger balance outstanding for far longer before it starts shrinking fast. Run your own loan amount and rate through the [mortgage payoff calculator](/mortgage/payoff-calculator/) to see the same tradeoff on your specific numbers.",
+      },
+      {
+        heading: "40-year vs. 30-year mortgage: the side-by-side numbers",
+        body: "On the same $350,000 loan at 7% APR, the 40-year term saves $153.55 a month up front but costs $205,723.41 more in interest over the life of the loan, meaning it takes about 111 months of monthly savings just to offset the extra interest, and the loan runs another 120 months beyond that. A 30-year loan builds equity faster in the early years too, since more of each payment goes to principal rather than interest, on top of finishing a full decade sooner.\n\nThe real case for a 40-year loan is qualification, not savings: if a lower required payment is what gets you approved for a home you can otherwise afford, the extra interest cost may be a reasonable tradeoff for that specific purchase. If the 30-year payment already fits your budget, a 40-year term rarely wins on the math. See our [15-year vs. 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/) for the other end of the term spectrum, where the tradeoff runs the opposite direction.",
+      },
+      {
+        heading: "Who actually qualifies for a 40-year mortgage",
+        body: "A 40-year term for a new home purchase or refinance is a non-QM (non-Qualified Mortgage) product. The Consumer Financial Protection Bureau's Ability-to-Repay/Qualified Mortgage rule caps a General Qualified Mortgage's term at 30 years, so a lender offering a 40-year purchase loan is stepping outside that federal safe-harbor category, which usually means tighter underwriting elsewhere to offset the risk.\n\nIn practice, that means 40-year mortgages are originated mainly by portfolio and non-QM lenders rather than [Fannie Mae](https://www.fanniemae.com/), [Freddie Mac](https://www.freddiemac.com/), or most [FHA](https://www.hud.gov/program_offices/housing/sfh)/VA programs, and they often come with a higher interest rate than a comparable 30-year QM loan to compensate the lender for holding a non-standard product. Expect to need strong income documentation, and in many cases a larger down payment or higher credit score than a standard 30-year conventional loan requires, since fewer lenders compete in this niche and each one sets its own bar.",
+      },
+      {
+        heading: "The other 40-year mortgage: a loan modification, not a new loan",
+        body: "A 40-year term also shows up in a completely different context: as a loss-mitigation tool your existing mortgage servicer offers if you've fallen behind on payments. Fannie Mae, Freddie Mac, and FHA all allow servicers to extend a struggling borrower's remaining term, sometimes to 40 years, as part of a loan modification that lowers the monthly payment enough to make the loan affordable again.\n\nThat is not the same product as shopping for a new 40-year purchase loan on the open market. It is offered directly by your current servicer, tied to a hardship, and generally not something you can request without documented financial difficulty. If you are behind on payments and exploring this option, work directly with your servicer's loss-mitigation department rather than a new lender, and see the [Consumer Financial Protection Bureau's guidance on avoiding foreclosure](https://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/) for the full range of workout options beyond a term extension.",
+      },
+      {
+        heading: "Pros and cons of a 40-year mortgage",
+        body: "The main advantage is qualification headroom: a lower required monthly payment can help a borrower's debt-to-income ratio clear a lender's threshold on a home that a 30-year term's higher payment would otherwise put out of reach. The lower payment can also free up monthly cash flow for other goals, if the borrower is disciplined enough to actually redirect that difference rather than spend it.\n\nThe drawbacks are real and compound over time. Total interest cost runs well over $200,000 higher on a typical loan balance, as shown above. Equity builds far more slowly in the early years, since a larger share of each payment goes to interest rather than principal. Non-QM 40-year loans also tend to carry a higher rate than a standard 30-year conventional loan, which widens the interest gap even further beyond what the term difference alone explains. And because the product sits outside the federal QM safe harbor, fewer lenders offer it, which typically means less rate competition and fewer shopping options than a standard 30-year loan.",
+      },
+      {
+        heading: "What to do before you consider one",
+        body: "Run the actual numbers on your specific loan amount and rate before assuming a 40-year term is your only path to an affordable payment. A larger down payment, a different property price point, or paying down other debt to improve your debt-to-income ratio can sometimes close the same qualification gap without adding a decade of extra interest. Use the [home affordability calculator](/mortgage/home-affordability-calculator/) to see what price range actually fits a 30-year payment you're comfortable with first.\n\nIf a 40-year loan is genuinely the only way to qualify for a home that fits your needs, treat the extra interest as a real cost of that choice, not a rounding error. Consider whether refinancing into a shorter term once your income grows or your credit improves is a realistic plan, and check that any non-QM lender you're evaluating discloses its full rate and fee structure clearly before you apply.",
+      },
+    ],
+    tools: [
+      { href: "/mortgage/", label: "Mortgage calculator" },
+      { href: "/mortgage/payoff-calculator/", label: "Mortgage payoff calculator" },
+      { href: "/mortgage/home-affordability-calculator/", label: "Home affordability calculator" },
+      { href: "/mortgage/extra-payment-calculator/", label: "Extra payment calculator" },
+    ],
+    faqs: [
+      {
+        question: "Is a 40-year mortgage a good idea?",
+        answer:
+          "It depends entirely on why you need one. If a 40-year term is what gets you approved for a home you can genuinely afford, the lower payment can be worth the tradeoff. If a 30-year payment already fits your budget, a 40-year term almost never wins: on a $350,000 loan at 7% APR, it costs $205,723.41 more in interest to save $153.55 a month.",
+      },
+      {
+        question: "Can I get a 40-year mortgage with a conventional loan?",
+        answer:
+          "Not through a standard Fannie Mae or Freddie Mac conventional purchase loan. Those follow the CFPB's Qualified Mortgage rule, which caps a General QM loan's term at 30 years. A 40-year purchase loan is a non-QM product, offered by portfolio and non-QM lenders rather than through the standard conventional pipeline.",
+      },
+      {
+        question: "How much does a 40-year mortgage really save per month?",
+        answer:
+          "On a $350,000 loan at 7% APR, the monthly savings versus a 30-year term is $153.55: $2,175.01 a month instead of $2,328.56. That gap changes with your specific loan amount and rate, so run your own numbers through the mortgage calculator above rather than assuming this figure applies to your loan.",
+      },
+      {
+        question: "Do 40-year mortgages have higher interest rates?",
+        answer:
+          "Often, yes. Because 40-year purchase loans fall outside the CFPB's Qualified Mortgage safe harbor and are offered by a smaller pool of non-QM lenders, they frequently carry a higher rate than a comparable 30-year conventional loan, on top of the extra interest cost the longer term itself already adds.",
+      },
+      {
+        question: "What credit score do I need for a 40-year mortgage?",
+        answer:
+          "There's no single published minimum, since 40-year loans are underwritten individually by portfolio and non-QM lenders rather than through standardized Fannie Mae or Freddie Mac guidelines. Expect requirements to run stricter than a standard 30-year conventional loan in at least one area, such as credit score, down payment, or income documentation, since each lender is pricing risk on a non-standard product with less market competition.",
+      },
+      {
+        question: "Is a 40-year loan modification the same as a new 40-year mortgage?",
+        answer:
+          "No. A 40-year loan modification is a hardship-based option your existing servicer offers if you've fallen behind on payments, extending your remaining term to lower the payment as part of a workout plan. A new 40-year purchase or refinance loan is a different product entirely, shopped on the open market from a non-QM lender, with no hardship requirement.",
+      },
+      {
+        question: "How much more does a 40-year mortgage cost in total interest?",
+        answer:
+          "On a $350,000 loan at 7% APR, the difference is $205,723.41 more in total interest over the life of the loan compared to a 30-year term at the same rate. That gap widens further if the 40-year loan also carries a higher rate, which is common for non-QM products. Use the mortgage payoff calculator above with your own balance and rate to see your specific gap.",
+      },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — Regulation Z, 12 CFR 1026.43: Ability-to-Repay/Qualified Mortgage rule", url: "https://www.consumerfinance.gov/rules-policy/regulations/1026/43/" },
+      { label: "Consumer Financial Protection Bureau — Help if you can't pay your mortgage", url: "https://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/" },
+      { label: "HUD — FHA Loss Mitigation Options", url: "https://www.hud.gov/topics/avoiding_foreclosure" },
     ],
   },
 ];

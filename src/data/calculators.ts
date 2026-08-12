@@ -996,6 +996,74 @@ export const CALCULATORS: CalculatorDef[] = [
       taxableSharePct: 30,
     },
   },
+  // Credit card payoff — competitor-monitor pass (2026-08-12): the gap most "credit card payoff
+  // calculator" tools leave out is the minimum-payment-only comparison. This one computes that path
+  // automatically, using the greater-of-$25-or-1%-plus-interest formula behind the minimum-payment
+  // warning box every card statement must show under Regulation Z, 12 CFR 1026.7(b)(12).
+  {
+    id: "credit-card-payoff",
+    islandId: "credit-card-payoff",
+    label: "Credit Card Payoff",
+    navOrder: 20,
+    metaTitle: "Credit Card Payoff Calculator: Time & Interest Cost",
+    metaDescription:
+      "Free credit card payoff calculator. See how long a balance takes to pay off and the interest it costs, versus paying only the minimum.",
+    targetKeyword: "credit card payoff calculator",
+    h1: "Credit Card Payoff Calculator",
+    intro:
+      "A credit card payoff calculator shows how long it takes to clear a balance and how much interest that costs, based on your APR and monthly payment. Enter your balance, APR, and either a monthly payment or a target payoff date in the calculator above. For example, a $6,000 balance at 24% APR paid at $250 a month is paid off in 34 months and costs $2,255.61 in interest. The calculator also runs the minimum-payment-only path automatically: at that same balance and rate, minimum payments alone take 252 months, about 21 years, and cost $10,886.92 in interest, over $8,600 more than the $250-a-month plan, for the same starting balance.",
+    howItWorks:
+      "Interest on a credit card accrues on the remaining balance each month, then whatever you pay above that interest reduces the principal. The calculator repeats that month by month: it takes your balance and APR, applies one month of interest, subtracts your payment, and moves to the next month until the balance hits zero. That is the same mechanic behind every amortization schedule, just without a fixed loan term forcing the math.\n\nThe minimum-payment comparison uses the formula behind most major issuers' minimum-payment box: the greater of $25 or 1% of the balance plus that month's interest. Because that minimum is recalculated every month against a shrinking balance, the required minimum payment also shrinks over time, which is exactly why minimum-only payoff stretches out for years. The [Truth in Lending Act's Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) requires every statement to disclose an estimated payoff time at minimum payments for this reason, but the disclosure is usually a single line buried near the payment coupon. Running your own numbers above puts the full month-by-month comparison in front of you instead.\n\nIf you enter a target payoff date instead of a payment amount, the calculator solves the problem in reverse: it finds the fixed monthly payment that clears the balance by that date, using the same standard amortization formula lenders use for a fixed-term loan.",
+    faqs: [
+      {
+        question: "How much interest will I pay on my credit card?",
+        answer:
+          "It depends on your balance, APR, and payment size. On a $6,000 balance at 24% APR, paying $250 a month costs $2,255.61 in total interest over 34 months. Enter your own numbers in the calculator above to see your exact figure. Even a $50 change in monthly payment can shift total interest by hundreds of dollars.",
+      },
+      {
+        question: "How long does it take to pay off a credit card at the minimum payment?",
+        answer:
+          "Far longer than most cardholders expect, because the minimum payment shrinks as the balance does. A $6,000 balance at 24% APR paid at the typical minimum (the greater of $25 or 1% of the balance plus interest) takes about 252 months, roughly 21 years, and costs $10,886.92 in interest, nearly double the original balance.",
+      },
+      {
+        question: "How much extra should I pay to get out of credit card debt faster?",
+        answer:
+          "Any amount above the minimum helps, but the payoff time drops fastest on the first extra dollars, since more of each payment starts going to principal instead of interest. Try a few payment amounts in the calculator above and compare the total interest column. The gap between $150 and $250 a month on a mid-size balance is often a difference of a year or more in payoff time.",
+      },
+      {
+        question: "What is a good APR for a credit card?",
+        answer:
+          "Rewards and travel cards for excellent credit often carry APRs in the high teens to low twenties, while cards built for building or rebuilding credit run higher, sometimes above 25%. Whatever your card's stated APR is, enter it directly in the calculator above. The payoff math depends on your exact rate, not a category average.",
+      },
+      {
+        question: "Should I pay off a credit card or save the money instead?",
+        answer:
+          "For most people, paying down a card with a double-digit APR beats saving the same money in an account earning a few percent, since the guaranteed 'return' of not paying that interest almost always outpaces a savings account's yield. The one exception is a fully-matched employer 401(k) contribution or a true emergency fund with zero cash cushion. Cover those first, then direct extra money at the card.",
+      },
+      {
+        question: "Does this calculator account for new purchases on the card?",
+        answer:
+          "No. It assumes no new charges are added while you pay down the existing balance, which is the only way a payoff date is predictable. Adding new purchases resets the math: interest keeps accruing on a bigger balance, and the payoff date shown above no longer applies. If you're actively using the card, re-run the calculator with your current balance each time it changes meaningfully.",
+      },
+      {
+        question: "Is a balance transfer or a personal loan better than just paying off the card directly?",
+        answer:
+          "Both can beat paying a high-APR card down directly if you qualify. A 0% intro APR balance transfer card eliminates interest for the promotional period, but only if you can clear the balance before it ends: see [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/). A fixed-rate personal loan trades a variable, often-higher card APR for a fixed rate and a fixed end date; compare the two directly with the [personal loan calculator](/personal-loan/).",
+      },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — Regulation Z, 12 CFR 1026.7(b)(12): Minimum payment disclosures", url: "https://www.consumerfinance.gov/rules-policy/regulations/1026/7/" },
+      { label: "Consumer Financial Protection Bureau — What the payoff box on your credit card statement means", url: "https://www.consumerfinance.gov/ask-cfpb/a-box-on-my-credit-card-bill-says-that-i-will-pay-off-the-balance-in-three-years-if-i-pay-a-certain-amount-what-does-that-mean-do-i-have-to-pay-that-much-if-i-pay-that-much-and-make-new-purchases-will-i-still-owe-nothing-after-three-years-en-36/" },
+      { label: "Federal Reserve — Consumer Credit (G.19), credit card interest rates", url: "https://www.federalreserve.gov/releases/g19/current/" },
+    ],
+    defaultPreset: {
+      balance: 6000,
+      aprPct: 24,
+      mode: "payment",
+      monthlyPayment: 250,
+      targetMonths: 24,
+    },
+  },
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,
