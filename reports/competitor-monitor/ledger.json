@@ -169027,11 +169027,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/personal-loans/calculators/true-apr": {
+          "acted": false,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:271551660798407adbba49be1e7c0310496ca4668cf6dd91aaa8e7cb2bb23f3b",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-14",
           "kind": "tool",
           "last_seen": "2026-08-14",
           "lastmod": "2026-08-14T00:00:00-07:00",
+          "our_url": "/personal-loan/",
           "outline": [
             "How to use this calculator",
             "APR and origination fees \u2014 what are they, and how do they relate to each other?",
@@ -169046,7 +169050,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "APR Calculator: Estimate Your True Borrowing Cost - NerdWallet",
           "tool_io": [
             "label: Credit cards",
@@ -229937,11 +229941,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/compound-interest": {
+          "acted": false,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:e561eed7da6f5573a2662a0c2e77bb42ee06999c88874a0757607087e52637ad",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-08-14",
           "lastmod": "2026-08-14T15:28:16.143Z",
+          "our_url": "/investing/compound-interest-calculator/",
           "outline": [
             "How to use the compound interest calculator",
             "Interest rate definition",
@@ -229969,7 +229977,7 @@
             "interest",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Compound Interest Calculator",
           "tool_io": [
             "label: Interest rate",
@@ -334726,11 +334734,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/ssi-and-inheritance": {
+          "acted": true,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:7a1ec76fbf89b20caf848512f6d8c286f9eafec981827fa04d1c00aa23e55dcd",
+          "disposition": "published",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-23T21:21:25+00:00",
+          "our_url": "/guides/ssi-and-inheritance/",
           "outline": [
             "SSI vs. Social Security: What\u2019s the Difference?",
             "Qualifying for SSI",
@@ -334745,7 +334757,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Will My Inheritance Affect My SSI Benefits?",
           "tool_io": []
         },
@@ -339343,11 +339355,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/5-must-do-moves-for-choosing-a-wealth-management-firm": {
+          "acted": false,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:f7714cfc014d3e251865f6afe6d8e97b1270829f1f2786ab23bdd75c70335bdf",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-23T19:47:22+00:00",
+          "our_url": "/guides/how-to-choose-a-financial-advisor/",
           "outline": [
             "What a Wealth Management Firm Does",
             "Choosing a Wealth Management Firm to Work With",
@@ -339365,7 +339381,7 @@
             "financial",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "6 Tips for Choosing a Wealth Management Firm",
           "tool_io": []
         },
@@ -353055,11 +353071,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/stock-bond-allocation-by-age": {
+          "acted": false,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:41fca18c9cf6e6a894ec1ff2e7b25d4ff22ebaed9d81ea3d1b17be36763fa1c1",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-24T21:45:26+00:00",
+          "our_url": "/guides/asset-allocation-by-age/",
           "outline": [
             "About Age-Based Asset Allocations",
             "Stock and Bond Allocation By Age",
@@ -353081,7 +353101,7 @@
             "investing",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Stock and Bond Allocations by Age",
           "tool_io": []
         },
@@ -373839,11 +373859,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/how-to-withdraw-from-401k": {
+          "acted": true,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:1ec5b97a9f091a41e44487f274d8384fb0881d8aedd450c4bd9309b600ca496a",
+          "disposition": "published",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-24T21:17:10+00:00",
+          "our_url": "/guides/how-to-withdraw-from-401k/",
           "outline": [
             "How to Withdraw From a 401(k) at 59 \u00bd Years Old",
             "When You\u2019re Required to Withdraw From a 401(k)",
@@ -373866,7 +373890,7 @@
             "retirement",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Withdraw Money From Your 401(k)",
           "tool_io": []
         },
@@ -382798,11 +382822,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/are-church-donations-tax-deductible": {
+          "acted": true,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:7fbd37e1a36a35541d4454a277911d5778b2e5811d4e5406787a65291adcbd61",
+          "disposition": "published",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-24T21:14:38+00:00",
+          "our_url": "/guides/are-church-donations-tax-deductible/",
           "outline": [
             "Which Donations Are Tax-Deductible",
             "When Church Donations May Not Be Tax-Deductible",
@@ -382817,7 +382845,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Are Church Donations Tax Deductible?",
           "tool_io": []
         },
@@ -382934,11 +382962,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/avoid-capital-gains-taxes-on-land-sale": {
+          "acted": true,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:6c79aedc7b1101d4bd04492ccb65cd9d7723375d69f36357e1178d299bce8b85",
+          "disposition": "published",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-24T17:32:29+00:00",
+          "our_url": "/guides/avoid-capital-gains-tax-on-land-sale/",
           "outline": [
             "How the Capital Gains Tax Works",
             "How to Avoid Paying Capital Gains Taxes on a Land Sale",
@@ -382956,7 +382988,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Avoid Capital Gains Taxes on Land Sale",
           "tool_io": []
         },
@@ -383201,11 +383233,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/capital-gains-exemption-for-seniors": {
+          "acted": true,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:06dd397a61218719060b7d4d028d660e638d3390ca858447e88f640cd089c9c6",
+          "disposition": "published",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-24T21:05:07+00:00",
+          "our_url": "/guides/capital-gains-tax-for-seniors/",
           "outline": [
             "How Capital Gains Taxes Work",
             "Capital Gains Taxes and Seniors",
@@ -383222,7 +383258,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Guide to Capital Gains Exemptions for Seniors",
           "tool_io": []
         },
@@ -386480,11 +386516,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/the-dangers-of-diy-estate-planning": {
+          "acted": false,
+          "acted_date": "2026-08-14",
           "content_hash": "sha256:d88166938e7bfec1bab1736de7581374372c1946224d7e55d4c2f0dbdb93b43a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-14",
           "kind": "page",
           "last_seen": "2026-08-14",
           "lastmod": "2026-03-23T20:24:40+00:00",
+          "our_url": "/guides/first-time-estate-planning/",
           "outline": [
             "What Is an Estate Plan?",
             "Elements of an Estate Plan",
@@ -386504,7 +386544,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "The Dangers of DIY Estate Planning",
           "tool_io": []
         },
