@@ -40,6 +40,21 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
   const set = (patch: Partial<AutoLoanInput>) => setInput((s) => ({ ...s, ...patch }));
   const num = (v: string) => (v === "" ? 0 : Math.max(0, Number(v.replace(/[^0-9.]/g, ""))));
 
+  const downloadScheduleCSV = () => {
+    const rows = [
+      ["Month", "Payment", "Principal", "Interest", "Balance"],
+      ...result.schedule.map((r) => [r.month, r.payment.toFixed(2), r.principal.toFixed(2), r.interest.toFixed(2), r.balance.toFixed(2)]),
+    ];
+    const csv = rows.map((row) => row.join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = mortgageMode ? "mortgage-amortization-schedule.csv" : "auto-loan-amortization-schedule.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   const priceLabel = mortgageMode ? "Home price" : "Vehicle price";
   const terms = mortgageMode ? MORTGAGE_TERMS : TERM_OPTIONS;
   const hasExtra = (input.extraMonthlyPayment ?? 0) > 0;
@@ -193,9 +208,14 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
           )}
 
           {result.schedule.length > 0 && (
-            <button style={S.toggle} onClick={() => setShowSchedule((v) => !v)} type="button">
-              {showSchedule ? "Hide" : "Show"} amortization schedule ({result.schedule.length} payments)
-            </button>
+            <div style={S.toggleRow}>
+              <button style={S.toggle} onClick={() => setShowSchedule((v) => !v)} type="button">
+                {showSchedule ? "Hide" : "Show"} amortization schedule ({result.schedule.length} payments)
+              </button>
+              <button style={S.toggle} onClick={downloadScheduleCSV} type="button">
+                Download full schedule (CSV)
+              </button>
+            </div>
           )}
         </div>
       </div>
@@ -314,8 +334,9 @@ const S: Record<string, React.CSSProperties> = {
     padding: "12px 14px", fontSize: "0.92rem", lineHeight: 1.5, color: "#5A4420",
   },
   savingsSub: { color: "#8A7340" },
+  toggleRow: { display: "flex", flexWrap: "wrap", gap: 10, marginTop: 4 },
   toggle: {
-    marginTop: 4, padding: "9px 12px", border: "1px solid #CFE3DC", background: "#fff",
+    padding: "9px 12px", border: "1px solid #CFE3DC", background: "#fff",
     borderRadius: 8, fontSize: "0.88rem", fontWeight: 600, color: PRIMARY, cursor: "pointer",
   },
   tableWrap: { marginTop: 18, overflowX: "auto", border: "1px solid #EAEFED", borderRadius: 10 },

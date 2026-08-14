@@ -1,0 +1,130 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-13",
+  "window_start": "2026-08-13",
+  "window_end": "2026-08-13",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/retirement/401k-calculator/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/auto-loan/amortization-schedule/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/529-vs-utma/",
+      "views": 2,
+      "sessions": 3,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    }
+  ],
+  "top10_pages_total_views": 32,
+  "top10_pages_total_clicks": 32,
+  "channel_split": {
+    "/retirement/401k-calculator/": {
+      "Direct": 5,
+      "Unassigned": 2,
+      "Organic Search": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 4,
+      "Cross-network": 2,
+      "Unassigned": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 3,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/": {
+      "Unassigned": 2,
+      "Cross-network": 1,
+      "Referral": 1
+    },
+    "/compare/529-vs-utma/": {
+      "Direct": 2,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 2,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 2,
+      "Cross-network": 1
+    },
+    "/auto-loan/amortization-schedule/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Cross-network": 1,
+      "Organic Search": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Cross-network": 1,
+      "Organic Search": 1
+    }
+  }
+}

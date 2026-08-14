@@ -89,9 +89,9 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   {
     calculator: "retirement",
     slug: "401k-calculator",
-    title: "401k Calculator: Project Your Retirement Growth",
+    title: "401k Calculator: How Much You'll Have at Retirement",
     metaDescription:
-      "Use our free 401k calculator to project how much your 401(k) will grow by retirement, based on your contributions, employer match, and returns.",
+      "See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.",
     targetKeyword: "401k calculator",
     estimatedVolume: 135000,
     estimatedKD: 58,
@@ -116,6 +116,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       { question: "How much does an employer match add over a career?", answer: "The impact is substantial. On a $50,000 salary with a 3% employer match, your employer contributes $1,500 per year. At a 7% annual return over 30 years, that $1,500 annual match alone grows to approximately $141,700 — without you contributing a single extra dollar. The match is also an instant 100% return on the dollars that trigger it, which is why always contributing enough to capture the full match is the highest-priority step in retirement planning. To model the combined effect of your contributions and the match, include both amounts in the monthly contribution field above, then compare the full projection in the [retirement savings calculator](/retirement/retirement-savings-calculator/)." },
       { question: "What return rate should I use?", answer: "Many planners use a fixed 7% annual return as a long-term stock market estimate. The calculator assumes this rate stays the same every year. Real returns vary, so treat the projection as an estimate and try a few different rates." },
       { question: "What if I withdraw from my 401(k) early?", answer: "Withdrawing before age 59½ usually costs a 10% penalty plus income tax, and it erases future growth. Estimate the damage first with our [401k early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) before cashing out." },
+      { question: "Can I use this calculator if I'm self-employed?", answer: "You can use it to project savings growth, but a workplace 401(k)'s $24,500 employee deferral limit doesn't reflect a self-employed saver's options. A solo 401(k) lets you contribute as both employee and employer, and a SEP-IRA has its own separate limit — see our [SEP-IRA vs. solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) for which fits your situation." },
     ],
     sources: [
       { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
@@ -318,9 +319,9 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   {
     calculator: "retirement",
     slug: "couples-retirement-calculator",
-    title: "Couples Retirement Calculator: Plan Together",
+    title: "Couples Retirement Calculator: Retirement Projection",
     metaDescription:
-      "Use our couples retirement calculator to project your combined nest egg, model different retirement ages, and maximize spousal Social Security benefits.",
+      "See your combined retirement savings projection as a couple, plus how spousal and survivor Social Security benefits can raise your household income.",
     targetKeyword: "couples retirement calculator",
     estimatedVolume: 2400,
     estimatedKD: 32,
@@ -368,6 +369,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "What is the best retirement calculator for married couples?",
         answer:
           "The best retirement calculator for a married couple is one that projects your combined household savings and also accounts for spousal and survivor Social Security rules — which is exactly what this joint couples retirement calculator and the guidance below are built to do. Enter both partners' total savings and monthly contributions as one combined figure in the calculator above for your joint household projection, then use the spousal-benefit and survivor-benefit notes below to layer in Social Security, since coordinating claiming ages between spouses is often worth more to a married couple's lifetime income than any single portfolio adjustment.",
+      },
+      {
+        question: "Does this calculator include pension income?",
+        answer:
+          "Not directly — like Social Security, the calculator projects portfolio savings and doesn't model a defined-benefit pension. If either partner expects a pension, estimate its monthly payout from your plan administrator's statement and add that figure on top of what your projected household savings can support in withdrawals.",
       },
     ],
     sources: [

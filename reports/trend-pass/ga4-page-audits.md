@@ -73,3 +73,6 @@
 | /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-10 | 2 | 0/1/1/1/0 | 1 |
 | /guides/ | 2026-08-10 | 2 | 0/0/0/0/0 | 1 |
 | /guides/529-leftover-money-options/ | 2026-08-12 | 1 | 0/0/0/0/0 | 0 |
+| /retirement/401k-calculator/ | 2026-08-14 | 6 | 0/0/1/1/0 | 0 |
+| /retirement/couples-retirement-calculator/ | 2026-08-14 | 3 | 0/0/1/1/0 | 0 |
+| /auto-loan/amortization-schedule/ | 2026-08-14 | 2 | 0/0/0/0/1 | 0 |
