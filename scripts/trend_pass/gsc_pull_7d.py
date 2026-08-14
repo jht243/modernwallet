@@ -32,13 +32,13 @@ from gsc_search_analytics import (  # noqa: E402
 )
 
 
-def top10(session, site_url: str, start: str, end: str, dimension: str) -> list[dict]:
+def top_rows(session, site_url: str, start: str, end: str, dimension: str, limit: int = 10) -> list[dict]:
     body = {
         "startDate": start,
         "endDate": end,
         "dimensions": [dimension],
         "dataState": "all",
-        "rowLimit": 25,
+        "rowLimit": max(limit, 25),
     }
     resp = query_search_analytics(session, site_url, body)
     rows = [{
@@ -49,7 +49,7 @@ def top10(session, site_url: str, start: str, end: str, dimension: str) -> list[
         "position": round(r.get("position", 0.0), 2),
     } for r in resp.get("rows", [])]
     rows.sort(key=lambda r: (r["clicks"], r["impressions"]), reverse=True)
-    return rows[:10]
+    return rows[:limit]
 
 
 def main(argv=None) -> int:
@@ -66,8 +66,11 @@ def main(argv=None) -> int:
 
     end = date.today()
     start = end - timedelta(days=args.days)
-    queries = top10(session, site_url, start.isoformat(), end.isoformat(), "query")
-    pages = top10(session, site_url, start.isoformat(), end.isoformat(), "page")
+    # Pull 20 queries once: the TREND lane uses the top 10 (locked, sharp signal);
+    # the COVERAGE lane (phase-1b) uses the full 20 to find uncovered demand.
+    queries20 = top_rows(session, site_url, start.isoformat(), end.isoformat(), "query", limit=20)
+    queries = queries20[:10]
+    pages = top_rows(session, site_url, start.isoformat(), end.isoformat(), "page", limit=10)
 
     if not queries and not pages:
         print(f"ERROR: no GSC data for {site_url} over last {args.days}d", file=sys.stderr)
@@ -77,6 +80,7 @@ def main(argv=None) -> int:
         "site_url": site_url,
         "window": {"start": start.isoformat(), "end": end.isoformat(), "days": args.days},
         "top_queries": queries,
+        "coverage_queries": queries20,
         "top_pages": pages,
         "top10_pages_total_clicks": sum(p["clicks"] for p in pages),
         "top10_queries_total_clicks": sum(q["clicks"] for q in queries),

@@ -1,6 +1,6 @@
 # Phase 4 — Dedup gate (automatic, adversarial)
 
-Every candidate (matrix + autocomplete) must clear ALL layers. There is no deferred/backlog queue feeding in.
+Every candidate must clear ALL layers, regardless of lane. Candidates come from THIS run's two lanes: the **trend lane** (matrix + autocomplete + SEMrush on a genuinely-new trend, when one fired) and the **coverage lane** (uncovered top-20 queries from Phase 1b + their expansion). On a trendless run the pool is coverage-only — that is normal, not empty. There is no deferred/backlog queue feeding in. As the site's coverage fills in, output self-saturates toward zero (a candidate built last run is now in the slug inventory, so Layer 1 drops it) — a run where dedup kills everything is a SUCCESS, say so in the digest.
 
 > **‼️ The ONLY drop reasons are content-existence and winner-protection.** Drop a candidate if the page already EXISTS (slug inventory / git / candidate ledger / near-dup) or if it would cannibalize a top-10 page. **"Another engine covers this surface" is NEVER a drop reason** — if the page doesn't exist and it's a good opportunity, BUILD it; overlap is mutual and self-resolving via existence dedup.
 
