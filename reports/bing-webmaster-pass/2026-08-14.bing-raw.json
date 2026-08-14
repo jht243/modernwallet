@@ -1,0 +1,19 @@
+{
+  "site": "https://themodernwallet.com/",
+  "tool": "bing_webmaster.py deep-dive",
+  "sections": {
+    "pageQueryStats": {}
+  },
+  "_errors": {
+    "crawlStats": "GetCrawlStats failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "crawlIssues": "GetCrawlIssues failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "rankAndTraffic": "GetRankAndTrafficStats failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "queryStats": "GetQueryStats failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "pageStats": "GetPageStats failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "linkCounts": "GetLinkCounts failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "blockedUrls": "GetBlockedUrls failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "queryParameters": "GetQueryParameters failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "feeds": "GetFeeds failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}",
+    "urlSubmissionQuota": "GetUrlSubmissionQuota failed after 3 attempt(s): HTTP 400: {\"ErrorCode\":14,\"Message\":\"ERROR!!! NotAuthorized\"}"
+  }
+}
