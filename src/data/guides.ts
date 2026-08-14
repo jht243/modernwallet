@@ -2031,6 +2031,7 @@ export const GUIDES: Guide[] = [
       { question: "Do I need a financial advisor to manage an inheritance?", answer: "It depends on the size and complexity. A simple inheritance you can pay off debt with, save, and invest in index funds usually doesn't need one. A large or complex inheritance — a concentrated stock position, a business interest, or multiple retirement accounts — is where professional advice tends to earn its cost." },
       { question: "How long do I have to decide what to do with an inherited retirement account?", answer: "Most non-spouse beneficiaries must empty an inherited 401(k) or IRA within 10 years under the SECURE Act, though some withdrawals may be required annually during that window. See our 401(k) beneficiary rules guide for the full breakdown, since the exact deadline and tax treatment depend on the account type and your relationship to the original owner." },
       { question: "Is my inheritance protected if I'm married?", answer: "An inheritance is separate property by default, even if you're married, but commingling it with joint funds can convert it to marital property. See [is an inheritance marital property](/guides/is-inheritance-marital-property/) for how to keep it protected." },
+      { question: "Does an inheritance affect government benefits like SSI?", answer: "It can, if you or someone in your household receives Supplemental Security Income. SSI has a strict $2,000 resource limit for an individual, and an inheritance you don't report or spend down in time can end that monthly payment. See [will an inheritance affect your SSI benefits](/guides/ssi-and-inheritance/) for the reporting deadline and how a special needs trust or ABLE account can protect the money." },
     ],
     sources: [
       { label: "IRS — Publication 551, Basis of Assets", url: "https://www.irs.gov/publications/p551" },
@@ -4734,6 +4735,11 @@ export const GUIDES: Guide[] = [
         answer:
           "Yes, file Form 1040-X to amend a return after you've filed it. Use it to correct your filing status, add income you forgot, or claim a credit or deduction you missed. You generally have three years from the original filing date to claim any refund tied to the fix.",
       },
+      {
+        question: "Is a common mistake claiming charitable gifts without proof?",
+        answer:
+          "Yes. Claiming a church or charity donation without the IRS-required paperwork is one of the most common deduction mistakes, and it's also one of the easiest to fix before you file. See [are church donations tax deductible](/guides/are-church-donations-tax-deductible/) for the $250 receipt rule and the new 2026 AGI floor that can quietly shrink your deduction.",
+      },
     ],
     sources: [
       { label: "IRS — Failure to File Penalty", url: "https://www.irs.gov/payments/failure-to-file-penalty" },
@@ -5260,6 +5266,7 @@ export const GUIDES: Guide[] = [
       { question: "What should my asset allocation be in my 50s?", answer: "Many investors in their 50s begin shifting from an aggressive mix toward something like 60/40 or 65/35 stocks-to-bonds as retirement comes into clearer view, though the right split depends on your actual retirement date, savings level, and other income sources — not age alone." },
       { question: "How much of my portfolio should be in stocks near retirement?", answer: "A common range for the early retirement years is 40-50% stocks, though this varies with how much you've saved relative to your spending needs. Going too conservative too fast is a common mistake — a 20-30 year retirement still needs some growth exposure to outpace inflation." },
       { question: "Is age-based asset allocation actually a good strategy?", answer: "It's a reasonable starting point but not a complete plan. Age-based rules ignore your actual time horizon for specific goals, other income sources, and your real tolerance for volatility. Two people the same age with different financial situations can reasonably hold very different allocations." },
+      { question: "Does turning a certain age lower my capital gains tax rate when I rebalance?", answer: "No. Capital gains tax rates depend on your taxable income and how long you held the asset, never your age. See [capital gains tax for seniors](/guides/capital-gains-tax-for-seniors/) for what actually lowers the bill in retirement, like landing in the 0% bracket or timing withdrawals carefully." },
     ],
     sources: [
       { label: "SEC Investor.gov — Beginners' Guide to Asset Allocation, Diversification, and Rebalancing", url: "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset" },

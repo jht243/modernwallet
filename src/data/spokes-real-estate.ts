@@ -511,6 +511,11 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
         answer:
           "Selling costs — real estate commissions, title fees, attorney fees, and other closing costs — reduce your net sale proceeds and therefore reduce your taxable gain. On a $380,000 sale with 6% in selling costs, $22,800 is subtracted before calculating the gain. Always include selling costs in your net proceeds estimate.",
       },
+      {
+        question: "Does depreciation recapture apply to selling raw or vacant land?",
+        answer:
+          "No. Depreciation recapture only applies to property you depreciated, which requires a structure in service, like a rental building. Raw land can't be depreciated, so a land sale skips that 25% layer entirely and is taxed only on the long-term capital gain. See [how to avoid capital gains tax on a land sale](/guides/avoid-capital-gains-tax-on-land-sale/) for the strategies that apply specifically to undeveloped land, including 1031 exchanges and installment sales.",
+      },
     ],
     sources: [
       {

@@ -34,6 +34,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       { question: "Are there exceptions to the 10% early withdrawal penalty?", answer: "Yes. The IRS waives the 10% penalty for several situations, including separation from service at age 55 or older, total disability, and large unreimbursed medical expenses. Important: these exceptions remove the penalty but not the income tax." },
       { question: "Will my 401(k) withholding cover my full tax bill?", answer: "Often not. Plans usually withhold 20% for federal tax by default, but your actual bill can be higher. It may also miss the 10% penalty and state tax, leaving a balance due at tax time." },
       { question: "Is a hardship withdrawal taxed and penalized?", answer: "Usually yes. According to the IRS, hardship distributions are subject to income tax and may also face the 10% additional tax on early distributions. A hardship reason does not automatically make the withdrawal tax-free." },
+      { question: "What about withdrawing from a 401(k) after age 59½?", answer: "The 10% penalty this calculator estimates no longer applies once you turn 59½. See [how to withdraw money from your 401(k)](/guides/how-to-withdraw-from-401k/) for required minimum distribution rules, how lump-sum versus periodic withdrawals are taxed, and when it pays to wait." },
     ],
     sources: [
       { label: "IRS Topic No. 558, Additional Tax on Early Distributions From Retirement Plans", url: "https://www.irs.gov/taxtopics/tc558" },
