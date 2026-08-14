@@ -7702,6 +7702,191 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Mortgage affordability calculator", href: "/mortgage/affordability-calculator/" },
     ],
   },
+
+  // ─── Pension vs Annuity ────────────────────────────────────────────────
+  {
+    slug: "pension-vs-annuity",
+    title: "Pension vs Annuity: Which Gives You More Guaranteed Income?",
+    metaDescription:
+      "Pension vs annuity compared: who backs the guarantee, how each is taxed, and when buying an annuity actually makes sense next to a workplace pension.",
+    targetKeyword: "pension vs annuity",
+    optionA: "Pension",
+    optionB: "Annuity",
+    h1: "Pension vs Annuity: Which Gives You More Guaranteed Income?",
+    intro:
+      "A pension is a guaranteed monthly benefit your employer funds and manages on your behalf, while an annuity is an insurance contract you buy yourself with a lump sum or a series of payments — and the two differ most in who backs the guarantee, how the income is taxed, and how much control you have over the payout.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who funds it", a: "Employer (defined-benefit plan)", b: "You, with your own money" },
+        { dimension: "Who backs the guarantee", a: "The employer's plan; PBGC insures private single-employer plans up to a capped monthly amount", b: "The insurance company; state guaranty associations back it if the insurer fails, typically up to $250,000 per owner per insurer" },
+        { dimension: "How it's taxed", a: "Fully taxable as ordinary income if funded entirely pre-tax (most pensions); partially taxable if you made after-tax contributions", b: "Non-qualified (after-tax money): only the earnings portion is taxed via the exclusion ratio. Qualified (IRA/401(k) money): fully taxable, same as a pension" },
+        { dimension: "Payout control", a: "Set by the plan; you typically choose among the options it offers (e.g. single-life vs. joint-and-survivor) at retirement", b: "You choose the type (immediate, deferred, fixed, variable, indexed) and often add optional riders, usually for an extra fee" },
+        { dimension: "Early access", a: "Generally none before the plan's retirement age; a lump-sum buyout, if offered, is the employer's choice", b: "Surrender charges apply if you withdraw beyond the free amount during the surrender period (commonly declining over several years); the IRS 10% early-withdrawal penalty applies before age 59½ either way" },
+        { dimension: "Who bears the investment risk", a: "The employer/plan", b: "Depends on the type — fixed and indexed annuities shift it to the insurer; variable annuities leave it with you" },
+      ],
+    },
+    verdict:
+      "If you have a traditional employer pension, you're not choosing between it and an annuity — you already have one, and the PBGC backstop (for private single-employer plans) makes it about as safe as a lump-sum-purchased annuity gets, without the sales commission or annual rider fees. An annuity makes the most sense when you don't have a pension and want to convert some of your own retirement savings into a guaranteed income stream — for example, rolling part of a 401(k) or IRA into an immediate annuity to cover essential expenses Social Security doesn't reach. Read the surrender schedule and any rider fees closely before buying; those costs are the main reason a self-funded annuity rarely matches an employer pension dollar-for-dollar on the same contribution.",
+    sections: [
+      {
+        heading: "How a pension actually works",
+        content:
+          "A traditional pension, formally a defined-benefit plan, pays you a set monthly amount for life based on a formula your employer sets — usually your years of service and salary history, not how the underlying investments performed. Your employer funds the plan and bears the investment risk; if the fund's investments underperform, the employer (not you) has to make up the shortfall.\n\nIf a private-sector single-employer pension plan terminates without enough money to pay promised benefits, the Pension Benefit Guaranty Corporation (PBGC) steps in and pays benefits up to a legal cap. For plans terminating in 2026, that cap is $93,477 a year ($7,789.77 a month) for a worker who starts benefits at 65 under a straight-life annuity; the exact cap is lower if you start before 65 and higher if you start after. Most workers' pension benefits fall well under this cap, so in practice the PBGC guarantee covers the typical retiree in full.\n\nMost pensions are funded entirely with pre-tax employer contributions, which makes the full monthly payment taxable as ordinary income when you receive it. If you made after-tax contributions of your own, the IRS's simplified method lets you exclude the portion of each payment that represents a return of that after-tax money.",
+      },
+      {
+        heading: "How an annuity actually works",
+        content:
+          "An annuity is a contract you buy from an insurance company, usually with a lump sum, in exchange for a stream of guaranteed payments — either starting right away (an immediate annuity) or years later (a deferred annuity). Unlike a pension, you choose the insurer, the payout structure, and often add optional riders (a guaranteed minimum income, inflation adjustment, or death benefit), each of which adds an ongoing fee.\n\nAnnuities are not backed by the federal government, the FDIC, or the SIPC. If the issuing insurer fails, protection comes from your state's guaranty association, a nonprofit safety net funded by the insurance industry, which typically covers up to $250,000 per owner per insurer — a lower and more variable ceiling than the pension world's PBGC backstop, and coverage limits differ by state.\n\nHow the payments are taxed depends on where the money came from. Fund the annuity with money that's already been taxed (a non-qualified annuity), and only the earnings portion of each payment is taxable — the IRS's exclusion ratio splits every payment into a tax-free return of your principal and a taxable earnings piece. Fund it with pre-tax retirement money (a qualified annuity, inside an IRA or 401(k)), and the entire payment is taxable, the same as a pension.",
+      },
+      {
+        heading: "The guarantee: PBGC vs. state guaranty associations",
+        content:
+          "This is the dimension retirees underestimate most. A private-sector single-employer pension's PBGC guarantee is a federal program with a published, inflation-adjusted cap — $93,477 a year for a 65-year-old in 2026 — and it has never failed to pay a guaranteed benefit since it was created in 1974.\n\nAn annuity's backstop is state-level and industry-funded, not federal. State guaranty associations pay claims if an insurer becomes insolvent, but coverage caps vary by state and are typically lower than the PBGC's, and by law an insurance agent isn't allowed to use the guaranty association as a selling point when pitching you the annuity — regulators treat it strictly as a last resort, not a marketed guarantee. Before buying an annuity for guaranteed income, check the issuing insurer's financial-strength rating (from AM Best, Moody's, or S&P) and your state's specific guaranty-association coverage limit.",
+      },
+      {
+        heading: "When buying an annuity next to a pension makes sense",
+        content:
+          "Very few workers today have a traditional pension at all — most retirement savings sit in a 401(k) or IRA, which pays out however you draw it down, not as a guaranteed monthly check. An annuity fills that gap: rolling part of an IRA or 401(k) balance into an immediate annuity converts a lump sum into pension-like guaranteed income for the rest of your life.\n\nThe tradeoff is cost and control. Annuities carry sales commissions, ongoing mortality and expense fees, and often rider fees on top, none of which a pension charges you directly (the employer absorbs the equivalent costs). A common approach: keep enough guaranteed income (Social Security plus any pension) to cover essential fixed expenses, and leave the rest invested for growth and flexibility rather than annuitizing all of it. Use the [Social Security calculator](/retirement/social-security-retirement-calculator/) and the [pension calculator](/retirement/pension-calculator/) to see how much guaranteed income you already have before deciding whether an annuity is worth adding.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a pension the same as an annuity?",
+        answer:
+          "No. A pension is an employer-funded defined-benefit plan you didn't buy — your employer sets the formula and bears the investment risk. An annuity is a contract you purchase yourself from an insurance company, and you choose the payout structure and any optional riders.",
+      },
+      {
+        question: "Which is safer, a pension or an annuity?",
+        answer:
+          "A private-sector single-employer pension is generally considered safer because the PBGC backs it with a federal guarantee up to $93,477 a year for a 65-year-old in 2026. An annuity's protection comes from state guaranty associations, which typically cap coverage around $250,000 per owner per insurer and vary by state — a real but lower and less centralized backstop.",
+      },
+      {
+        question: "Is pension income fully taxable?",
+        answer:
+          "Usually, yes. Most pensions are funded entirely with pre-tax employer contributions, so the full monthly payment is taxed as ordinary income. If you made after-tax contributions yourself, the IRS's simplified method lets you exclude the portion of each payment that represents a return of that after-tax money.",
+      },
+      {
+        question: "How is annuity income taxed differently from a pension?",
+        answer:
+          "It depends on how the annuity was funded. A non-qualified annuity, bought with already-taxed money, uses the exclusion ratio so only the earnings portion of each payment is taxable. A qualified annuity, bought with pre-tax retirement money inside an IRA or 401(k), is fully taxable — the same as a typical pension.",
+      },
+      {
+        question: "Should I buy an annuity if I already have a pension?",
+        answer:
+          "Not automatically. If your pension plus Social Security already covers your essential expenses, an added annuity mainly adds fees without adding much safety. An annuity is more useful for savers without a pension who want to convert part of a 401(k) or IRA into guaranteed lifetime income.",
+      },
+      {
+        question: "Can I lose money in an annuity the way I can with a pension underfunding?",
+        answer:
+          "The two failure modes are different, not directly comparable. A pension plan can become underfunded, but the PBGC guarantee covers most retirees' benefits up to its cap regardless. An annuity's principal is generally protected by the insurer's contractual guarantee (for fixed and indexed types), but surrender charges can cost you money if you withdraw early, and a variable annuity's investment sub-accounts can lose value.",
+      },
+    ],
+    sources: [
+      { label: "IRS Topic 410 — Pensions and Annuities", url: "https://www.irs.gov/taxtopics/tc410" },
+      { label: "PBGC — Estimating Your PBGC Guaranteed Benefit", url: "https://www.pbgc.gov/wr/benefits/guaranteed-benefits/estimating-your-pbgc-benefit" },
+      { label: "PBGC — Maximum Monthly Guarantee Tables", url: "https://www.pbgc.gov/employers-practitioners/rates/maximum-guarantee" },
+      { label: "FINRA — Fixed Annuities", url: "https://www.finra.org/investors/investing/investment-products/annuities/fixed-annuities" },
+    ],
+    relatedComparisons: ["pension-vs-401k", "annuity-vs-cd", "military-retirement-vs-va-disability"],
+    calculatorLinks: [
+      { label: "Pension calculator", href: "/retirement/pension-calculator/" },
+      { label: "Social Security calculator", href: "/retirement/social-security-retirement-calculator/" },
+      { label: "Retirement calculator", href: "/retirement/" },
+    ],
+  },
+
+  // ─── REIT vs Rental Property ───────────────────────────────────────────
+  {
+    slug: "reit-vs-rental-property",
+    title: "REIT vs Rental Property: Which Real Estate Investment Wins?",
+    metaDescription:
+      "REIT vs rental property compared: liquidity, minimum investment, management time, and tax treatment to help you pick your real estate exposure.",
+    targetKeyword: "reit vs rental property",
+    optionA: "REIT",
+    optionB: "Rental Property",
+    h1: "REIT vs Rental Property: Which Real Estate Investment Wins?",
+    intro:
+      "A REIT (real estate investment trust) lets you buy real estate exposure as a publicly traded share you can sell any market day, while a rental property is a physical asset you buy, finance, and manage directly — and the choice mostly comes down to how much liquidity, control, and hands-on time you're willing to trade for each investment's tax treatment.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Minimum investment", a: "The price of one share — often under $100", b: "A down payment plus closing costs, typically tens of thousands of dollars" },
+        { dimension: "Liquidity", a: "High — publicly traded REITs trade on an exchange like a stock, any market day", b: "Low — selling a property can take weeks to months, plus closing costs" },
+        { dimension: "Management", a: "None — professionally managed by the REIT", b: "Hands-on, or you pay a property manager (commonly around 8–10% of collected rent)" },
+        { dimension: "Diversification", a: "Instant — one share spreads exposure across many properties, markets, and property types", b: "Concentrated in a single property and location unless you buy several" },
+        { dimension: "Leverage you control directly", a: "None — you can't personally borrow against a REIT position the way you finance a property", b: "Yes — a mortgage lets you control a larger asset with less of your own cash" },
+        { dimension: "Tax treatment of income", a: "Dividends taxed as ordinary income (not the lower qualified-dividend rate); REITs must distribute ≥90% of taxable income", b: "Rental income taxed as ordinary income, but you can deduct mortgage interest and claim 27.5-year straight-line depreciation directly on your own return" },
+        { dimension: "Historical returns", a: "Exchange-traded Equity REITs have averaged roughly 11–12% a year over available 30-year periods, per Nareit", b: "No single national average — return depends heavily on financing, market, and hold period; model your own deal with a dedicated calculator" },
+      ],
+    },
+    verdict:
+      "Choose a REIT when you want real estate exposure without the phone calls, the leaky faucet, or the six-figure down payment — it's the better fit if liquidity and diversification matter more to you than control. Choose direct rental property when you want to use mortgage leverage yourself, claim depreciation and mortgage-interest deductions on your own return, and you're willing to trade liquidity and hands-on time (or a property manager's cut) for that control. Many investors hold both: REITs for liquid, diversified real estate exposure inside a retirement account, and a rental property for the leverage and tax benefits a REIT can't pass through directly.",
+    sections: [
+      {
+        heading: "How a REIT works",
+        content:
+          "A REIT is a company that owns and typically operates income-producing real estate — apartments, offices, warehouses, hotels, or mortgages on those properties — and sells shares to investors, the same way any public company does. By law, a REIT must distribute at least 90% of its taxable income to shareholders each year to keep its favorable tax status under IRC Section 857, which is why REITs are known for relatively high dividend yields.\n\nBecause most REIT distributions are taxed as ordinary income rather than at the lower qualified-dividend rate, holding REITs inside a tax-advantaged account like an IRA or 401(k) is often more tax-efficient than holding them in a regular brokerage account. Publicly traded REITs settle like any other stock, so you can buy or sell a position in seconds during market hours — a sharp contrast to selling a physical property.",
+      },
+      {
+        heading: "How owning a rental property works",
+        content:
+          "A rental property is real estate you buy directly — usually with a mortgage — and either manage yourself or hire a property manager to run for you. Your return comes from four sources: monthly cash flow after expenses, equity you build as the loan balance falls, appreciation if the property's value rises, and tax benefits like depreciation.\n\nThe IRS lets you depreciate a residential rental's building value (not the land) on a straight-line basis over 27.5 years, which shelters part of your rental income from tax without any extra out-of-pocket cost. You also deduct mortgage interest, property taxes, insurance, and operating expenses directly on Schedule E. None of those personal deductions pass through to a REIT shareholder — the REIT itself may claim depreciation, which can make part of its distribution a tax-deferred return of capital rather than fully taxable income, but you don't control that classification the way you control your own Schedule E.",
+      },
+      {
+        heading: "Liquidity and diversification: the biggest practical difference",
+        content:
+          "A publicly traded REIT can be sold in the time it takes to place a trade, and a single share gives you exposure spread across dozens or hundreds of properties, tenants, and often multiple property types and regions. That diversification is hard to replicate by buying individual rental properties, since most investors can only afford to own one or a handful in one or two markets.\n\nA rental property is the opposite: illiquid (a sale realistically takes weeks to months once you account for listing, closing, and transfer costs) and concentrated in a single asset. Non-traded REITs split the difference in a way that's worth flagging: they aren't listed on an exchange, so they generally can't be sold readily on the open market either, and they've historically carried high upfront fees (commonly around 9–10% of the investment). If liquidity is the reason you're considering a REIT over direct ownership, stick to exchange-traded REITs, not non-traded ones.",
+      },
+      {
+        heading: "Returns: what the numbers actually say",
+        content:
+          "Nareit, the REIT industry's own trade association, reports that exchange-traded Equity REITs have historically averaged roughly 11% to 12% a year in total return over the available 30-year periods — competitive with, and in many periods ahead of, the broad U.S. stock market.\n\nRental property doesn't have an equivalent single national benchmark, because the return depends on financing terms, local market appreciation, vacancy, and how long you hold, in a way a diversified REIT index doesn't. A thin cash-on-cash return in year one can still produce a strong multi-year return once appreciation and loan paydown are included. Rather than rely on a generic average, run your own numbers with the [rental property ROI calculator](/real-estate/roi-calculator/), which projects your specific deal's total return and IRR instead of a national figure that may not apply to your market.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a REIT better than owning a rental property?",
+        answer:
+          "Neither is universally better — they trade different things. A REIT offers liquidity, diversification, and zero hands-on management for a much lower minimum investment. A rental property offers direct control, mortgage leverage, and personal tax deductions like depreciation, at the cost of liquidity and management time.",
+      },
+      {
+        question: "Do REITs pay better dividends than rental property cash flow?",
+        answer:
+          "REITs must distribute at least 90% of their taxable income as dividends by law, which tends to produce relatively high, predictable yields. A rental property's cash flow depends entirely on your specific deal — rent, financing, and expenses — and can be thinner or stronger than a REIT's yield depending on the property.",
+      },
+      {
+        question: "How much money do I need to invest in a REIT versus a rental property?",
+        answer:
+          "A publicly traded REIT share often costs under $100, so you can start with almost any amount. A rental property typically requires a down payment plus closing costs, commonly tens of thousands of dollars, plus reserves for vacancy and repairs.",
+      },
+      {
+        question: "Are REIT dividends taxed the same as rental income?",
+        answer:
+          "Both are generally taxed as ordinary income, but rental property owners can offset that income with mortgage interest and depreciation deductions on their own tax return. REIT shareholders don't get those personal deductions, though part of a REIT's distribution can sometimes be classified as a tax-deferred return of capital.",
+      },
+      {
+        question: "Can I lose money in a REIT the way I can with a rental property?",
+        answer:
+          "Yes — both carry real risk. A publicly traded REIT's share price moves with the market and the REIT's own property performance, so it can decline. A rental property can lose value, sit vacant, or need costly repairs. Neither is a risk-free substitute for the other.",
+      },
+      {
+        question: "Should I own both REITs and rental property?",
+        answer:
+          "Many investors do, for different reasons. REITs provide liquid, diversified real estate exposure that's easy to hold inside a retirement account. A rental property adds leverage and personal tax benefits a REIT can't pass through, for investors willing to manage it directly.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Real Estate Investment Trusts (REITs)", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits" },
+      { label: "IRC Section 857 — Taxation of Real Estate Investment Trusts", url: "https://www.law.cornell.edu/uscode/text/26/857" },
+      { label: "Nareit — REIT Average & Historical Returns vs. U.S. Stocks", url: "https://www.reit.com/news/blog/market-commentary/reit-average--historical-returns-vs-us-stocks" },
+      { label: "IRS Publication 527 — Residential Rental Property", url: "https://www.irs.gov/publications/p527" },
+    ],
+    relatedComparisons: ["stocks-vs-bonds", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Rental property ROI calculator", href: "/real-estate/roi-calculator/" },
+      { label: "Cash flow calculator", href: "/real-estate/cash-flow-calculator/" },
+      { label: "Portfolio calculator", href: "/portfolio/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

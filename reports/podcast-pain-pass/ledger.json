@@ -36,7 +36,13 @@
     "Buzzsprout-18444375",
     "Buzzsprout-18426637",
     "Buzzsprout-18381517",
-    "Buzzsprout-18359221"
+    "Buzzsprout-18359221",
+    "Buzzsprout-18381569",
+    "Buzzsprout-18332987",
+    "Buzzsprout-18332317",
+    "Buzzsprout-18253564",
+    "Buzzsprout-18281820",
+    "Buzzsprout-18253549"
    ]
   },
   "How to Money": {
@@ -74,7 +80,13 @@
     "a920e229-4a18-46fc-8158-b41e01313d1e",
     "7a20d26c-7ea8-4d90-94e0-b440014efb1e",
     "bed911b5-dd6c-46a9-88a4-b45801328687",
-    "6b805930-4645-493c-b193-b433014d2a38"
+    "6b805930-4645-493c-b193-b433014d2a38",
+    "47ddd736-1246-4f9d-b13d-b4a501333219",
+    "99920e96-9d2e-4e99-b9b3-b48801319fab",
+    "0e4780b8-56e8-493c-aeb1-b43c01547a6e",
+    "e15018cd-a6d9-4413-8514-b44f0146c12e",
+    "3621be70-8a4b-4edc-87f8-b411013b2679",
+    "fdcf8007-fcb8-4166-bc79-b43b010174d5"
    ]
   },
   "Suze Orman's Women & Money": {
@@ -112,7 +124,13 @@
     "38bbc620-c2aa-4e10-bd5d-b4370119d254",
     "f3094964-75e6-4a1c-bd2d-b43500242066",
     "0af0d88d-0cc2-4bff-a62c-b430016b03cc",
-    "caf044b9-9e94-44a4-b46d-b42e0036ed32"
+    "caf044b9-9e94-44a4-b46d-b42e0036ed32",
+    "cab5ca90-0cf3-4dd6-b017-b4a4017d1b4a",
+    "21a7fda7-613e-4083-a716-b429012bebc9",
+    "c39a4d15-1949-4d1b-940c-b427002d62cd",
+    "282e518d-5712-42e6-92a4-b42201087764",
+    "80da737a-4813-4572-b6ef-b41f01890f3c",
+    "ccce1c1b-2041-4808-96b4-b41b01139c0e"
    ]
   },
   "The Better Budgeting Podcast": {
@@ -150,7 +168,13 @@
     "Buzzsprout-16181945",
     "Buzzsprout-16143764",
     "Buzzsprout-16098247",
-    "Buzzsprout-15988023"
+    "Buzzsprout-15988023",
+    "Buzzsprout-15945222",
+    "Buzzsprout-15906901",
+    "Buzzsprout-15860476",
+    "Buzzsprout-15823392",
+    "Buzzsprout-15784641",
+    "Buzzsprout-15736717"
    ]
   },
   "Catching Up to FI": {
@@ -166,7 +190,13 @@
     "7ae55b1f-18b4-4b47-9108-88132c963e3a",
     "66976901-75b4-4e5e-9396-fe2f52006ca0",
     "c7bef1d9-ccb8-48e6-ab53-cca91cf012df",
-    "8073a1ed-3e5f-406d-84c4-3f6620742279"
+    "8073a1ed-3e5f-406d-84c4-3f6620742279",
+    "91b4b3ab-63fc-4846-b2b6-0fa8b3580ba5",
+    "42ccf287-4856-4655-946a-f8a1a12bc0e6",
+    "9767a8d3-793c-41af-9824-73390e27a27d",
+    "55296521-839b-4e32-9866-d5a4721d108a",
+    "88c92543-6be9-42cb-9047-003f4a79e475",
+    "e616403c-c263-4952-96c6-9db7003b78ba"
    ]
   },
   "The Simply Investing Dividend Podcast": {
@@ -204,7 +234,13 @@
     "Buzzsprout-13453135",
     "Buzzsprout-13372663",
     "Buzzsprout-13370717",
-    "Buzzsprout-13334361"
+    "Buzzsprout-13334361",
+    "Buzzsprout-13290205",
+    "Buzzsprout-13248902",
+    "Buzzsprout-13162733",
+    "Buzzsprout-13162490",
+    "Buzzsprout-13121128",
+    "Buzzsprout-13079139"
    ]
   },
   "Rental Income Podcast With Dan Lane": {
@@ -242,7 +278,13 @@
     "https://api.spreaker.com/episode/69537133",
     "https://api.spreaker.com/episode/69420171",
     "https://api.spreaker.com/episode/69357870",
-    "https://api.spreaker.com/episode/69291044"
+    "https://api.spreaker.com/episode/69291044",
+    "https://api.spreaker.com/episode/69080840",
+    "https://api.spreaker.com/episode/68949207",
+    "https://api.spreaker.com/episode/68966131",
+    "https://api.spreaker.com/episode/68904033",
+    "https://api.spreaker.com/episode/68450988",
+    "https://api.spreaker.com/episode/68437440"
    ]
   },
   "The Personal Finance Club Show": {
@@ -316,8 +358,10 @@
   "net-worth-for-fafsa-and-accredited-investor",
   "is-social-security-taxable",
   "dscr-loan-requirements",
-  "portfolio-rebalancing"
+  "portfolio-rebalancing",
+  "pension-vs-annuity",
+  "reit-vs-rental-property"
  ],
  "deferred_rows": [],
- "last_run": "2026-08-11"
+ "last_run": "2026-08-14"
 }

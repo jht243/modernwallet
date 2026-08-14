@@ -1,0 +1,149 @@
+[
+ {
+  "phrase": "how to make a budget",
+  "volume": 1830000,
+  "kd": "58",
+  "theme": "budget",
+  "hub": "/budget"
+ },
+ {
+  "phrase": "how to calculate net worth",
+  "volume": 110000,
+  "kd": "41",
+  "theme": "net-worth",
+  "hub": "/net-worth"
+ },
+ {
+  "phrase": "how to start investing",
+  "volume": 40500,
+  "kd": "58",
+  "theme": "investing",
+  "hub": "/investing"
+ },
+ {
+  "phrase": "mortgage payoff calculator",
+  "volume": 40500,
+  "kd": "63",
+  "theme": "real-estate",
+  "hub": "/real-estate"
+ },
+ {
+  "phrase": "roth vs traditional ira",
+  "volume": 22200,
+  "kd": "58",
+  "theme": "retirement",
+  "hub": "/retirement"
+ },
+ {
+  "phrase": "50 30 20 rule",
+  "volume": 22200,
+  "kd": "58",
+  "theme": "budget",
+  "hub": "/budget"
+ },
+ {
+  "phrase": "coast fire calculator",
+  "volume": 18100,
+  "kd": "27",
+  "theme": "retirement",
+  "hub": "/retirement"
+ },
+ {
+  "phrase": "how much do i need to retire",
+  "volume": 12100,
+  "kd": "59",
+  "theme": "retirement",
+  "hub": "/retirement"
+ },
+ {
+  "phrase": "trust vs will",
+  "volume": 9900,
+  "kd": "32",
+  "theme": "tax-estate",
+  "hub": "/estate-planning"
+ },
+ {
+  "phrase": "average net worth by age",
+  "volume": 9900,
+  "kd": "47",
+  "theme": "net-worth",
+  "hub": "/net-worth"
+ },
+ {
+  "phrase": "index funds vs etf",
+  "volume": 3600,
+  "kd": "44",
+  "theme": "investing",
+  "hub": "/investing"
+ },
+ {
+  "phrase": "when to take social security",
+  "volume": 1300,
+  "kd": "56",
+  "theme": "retirement",
+  "hub": "/retirement"
+ },
+ {
+  "phrase": "emergency fund amount",
+  "volume": 1300,
+  "kd": "55",
+  "theme": "budget",
+  "hub": "/budget"
+ },
+ {
+  "phrase": "should i refinance",
+  "volume": 1300,
+  "kd": "53",
+  "theme": "real-estate",
+  "hub": "/real-estate"
+ },
+ {
+  "phrase": "how does probate work",
+  "volume": 1000,
+  "kd": "53",
+  "theme": "tax-estate",
+  "hub": "/estate-planning"
+ },
+ {
+  "phrase": "estate planning basics",
+  "volume": 720,
+  "kd": "47",
+  "theme": "tax-estate",
+  "hub": "/estate-planning"
+ },
+ {
+  "phrase": "portfolio rebalancing",
+  "volume": 720,
+  "kd": "61",
+  "theme": "investing",
+  "hub": "/investing"
+ },
+ {
+  "phrase": "dividend investing strategy",
+  "volume": 260,
+  "kd": "55",
+  "theme": "investing",
+  "hub": "/investing"
+ },
+ {
+  "phrase": "rental property roi",
+  "volume": 260,
+  "kd": "41",
+  "theme": "real-estate",
+  "hub": "/real-estate"
+ },
+ {
+  "phrase": "closing costs explained",
+  "volume": 210,
+  "kd": "36",
+  "theme": "real-estate",
+  "hub": "/real-estate"
+ },
+ {
+  "phrase": "debt payoff strategy",
+  "volume": 140,
+  "kd": "59",
+  "theme": "budget",
+  "hub": "/budget"
+ }
+]
