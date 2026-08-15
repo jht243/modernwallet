@@ -1,0 +1,40 @@
+{
+  "window": {"start": "2026-05-17", "end": "2026-08-15", "days": 90},
+  "n_requested": 20,
+  "selected": [
+    {"url": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/", "clicks": 15, "impressions": 615, "source_file": "src/data/comparisons.ts", "slug": "trump-account-vs-brokerage-account", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/compare/trump-account-vs-savings-account/", "clicks": 9, "impressions": 226, "source_file": "src/data/comparisons.ts", "slug": "trump-account-vs-savings-account", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/compare/trump-account-vs-baby-bonds/", "clicks": 5, "impressions": 61, "source_file": "src/data/comparisons.ts", "slug": "trump-account-vs-baby-bonds", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/trump-account/", "clicks": 3, "impressions": 429, "source_file": "src/data/calculators.ts", "slug": "trump-account", "type": "hub"},
+    {"url": "https://www.themodernwallet.com/investing/withdrawal-calculator/", "clicks": 2, "impressions": 200, "source_file": "src/data/spokes-investing.ts", "slug": "withdrawal-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/guides/trump-account-worth-it/", "clicks": 2, "impressions": 83, "source_file": "src/data/guides.ts", "slug": "trump-account-worth-it", "type": "guide"},
+    {"url": "https://www.themodernwallet.com/retirement/military-retirement-calculator/", "clicks": 2, "impressions": 3, "source_file": "src/data/spokes-retirement.ts", "slug": "military-retirement-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/roundup/best-ira-accounts/", "clicks": 1, "impressions": 1570, "source_file": "src/data/roundups.ts", "slug": "best-ira-accounts", "type": "roundup"},
+    {"url": "https://www.themodernwallet.com/investing/high-yield-savings-calculator/", "clicks": 1, "impressions": 437, "source_file": "src/data/spokes-investing.ts", "slug": "high-yield-savings-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/", "clicks": 1, "impressions": 170, "source_file": "src/data/spokes-net-worth.ts", "slug": "liquid-net-worth-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/", "clicks": 1, "impressions": 119, "source_file": "src/data/comparisons.ts", "slug": "custodial-roth-ira-vs-utma", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/roundup/best-estate-planning-software/", "clicks": 1, "impressions": 97, "source_file": "src/data/roundups.ts", "slug": "best-estate-planning-software", "type": "roundup"},
+    {"url": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/", "clicks": 1, "impressions": 89, "source_file": "src/data/comparisons.ts", "slug": "custodial-roth-ira-vs-brokerage-account", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/", "clicks": 1, "impressions": 51, "source_file": "src/data/spokes-portfolio.ts", "slug": "60-40-portfolio-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/compare/trump-account-vs-529/", "clicks": 1, "impressions": 39, "source_file": "src/data/comparisons.ts", "slug": "trump-account-vs-529", "type": "comparison"},
+    {"url": "https://www.themodernwallet.com/estate-planning/", "clicks": 1, "impressions": 28, "source_file": "src/data/calculators.ts", "slug": "estate-planning", "type": "hub"},
+    {"url": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/", "clicks": 1, "impressions": 6, "source_file": "src/data/spokes-retirement.ts", "slug": "couples-retirement-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/auto-loan/payoff-calculator/", "clicks": 0, "impressions": 853, "source_file": "src/data/spokes-auto.ts", "slug": "payoff-calculator", "type": "spoke"},
+    {"url": "https://www.themodernwallet.com/auto-loan/", "clicks": 0, "impressions": 553, "source_file": "src/data/calculators.ts", "slug": "auto-loan", "type": "hub"},
+    {"url": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/", "clicks": 0, "impressions": 498, "source_file": "src/data/comparisons.ts", "slug": "etf-vs-mutual-fund", "type": "comparison"}
+  ],
+  "skipped_noindexed": [
+    "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/iowa/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/louisiana/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/maryland/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
+    "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
+    "https://www.themodernwallet.com/tax-resolution/irs-payment-plan-calculator/",
+    "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/",
+    "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/hawaii/"
+  ],
+  "skip_reason": "spoke/state sub-pages under NOINDEX_PILLARS (src/data/noindex.ts) — noindex,nofollow, excluded from sitemap; enriching produces no organic-search benefit"
+}
