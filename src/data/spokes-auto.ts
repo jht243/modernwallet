@@ -22,7 +22,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     intro:
       "This auto loan payoff calculator shows exactly when your car loan will be paid off and how much faster extra payments get you there. Enter your balance, rate, term, and any extra monthly amount in the calculator above. It then maps your payoff date and the interest you save. Use it to test a plan before you commit a dollar.",
     howItWorks:
-      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).",
+      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.",
     commonMistakes: [
       "Assuming your extra payment automatically reduces principal. The CFPB notes lenders apply payments to fees and interest first. Some servicers hold the extra and apply it to your next scheduled payment unless you tell them in writing to apply it to principal.",
       "Forgetting to check for a prepayment penalty. Auto loans can carry one, especially on terms under five years. Review your contract and Truth in Lending disclosures before making a large lump-sum payment.",
@@ -31,7 +31,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       "Draining your emergency savings to pay off the car. Keep a cash cushion before sending every spare dollar to a low-rate loan.",
     ],
     workedExample:
-      "Say you owe $30,000 at 7.5% APR on a 60-month loan. Your scheduled payment is $601.14, and you would pay $6,068 in interest over the full term. Now add $100 a month toward principal. In month one, $187.50 covers interest and $513.64 cuts your balance. With that extra applied every month, you pay only $5,019 in interest and clear the loan in 50 months. That is $1,050 saved and 10 months gone. Test your own numbers with the [extra payment calculator](/auto-loan/extra-payment-calculator/).",
+      "Say you owe $30,000 at 7.5% APR on a 60-month loan. Your scheduled payment is $601.14, and you would pay $6,068 in interest over the full term. Now add $100 a month toward principal. In month one, $187.50 covers interest and $513.64 cuts your balance. With that extra applied every month, you pay only $5,019 in interest and clear the loan in 50 months. That is $1,050 saved and 10 months gone. Test your own numbers with the [extra payment calculator](/auto-loan/extra-payment-calculator/). If a lower rate might save you more than extra payments, compare it with the [auto loan refinance calculator](/auto-loan/refinance-calculator/).",
     faqs: [
       {
         question: "How does an auto loan payoff calculator work?",
@@ -46,7 +46,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       {
         question: "Do auto loans have prepayment penalties?",
         answer:
-          "Some do, so check before you pay extra. The CFPB confirms auto loans can carry prepayment penalties, more often on terms under five years. Read your contract and Truth in Lending disclosures, or ask your lender directly. If your loan has no penalty, paying ahead is free and only saves you interest.",
+          "Some do, so check before you pay extra. The CFPB confirms auto loans can carry prepayment penalties, more often on terms under five years. When a lender charges one, it's typically structured as a flat fee or as a percentage of the interest you would have paid had you kept the loan on schedule, rather than a fixed amount that applies to every borrower. Read your contract and Truth in Lending disclosures, or ask your lender directly, since the exact terms are set loan by loan. If your loan has no penalty, paying ahead is free and only saves you interest.",
       },
       {
         question: "How do I make sure extra payments go to principal?",
@@ -57,6 +57,21 @@ export const AUTO_SPOKES: SpokeEntry[] = [
         question: "Does paying off a car loan early hurt my credit?",
         answer:
           "Paying off a car loan early rarely hurts your credit in any lasting way. You may see a small, temporary dip because an active installment account closes. Your payment history stays on your report and continues to help. The benefit of being debt-free almost always outweighs a minor short-term change.",
+      },
+      {
+        question: "Is it better to make a lump sum payment or add extra to my payment every month?",
+        answer:
+          "A lump sum paid now saves more interest than the same total amount spread across future monthly extras, because it shrinks your balance from day one instead of gradually. This calculator models a recurring extra monthly amount, so to see a lump sum's effect, subtract the amount from your starting balance and enter that lower figure instead. Either way, extra money applied earlier in the loan beats the same amount added later.",
+      },
+      {
+        question: "How do I get a payoff quote for my auto loan?",
+        answer:
+          "Request your payoff quote directly from your lender or loan servicer, through their online account portal, app, or by phone. Ask for a quote good through a specific date, sometimes called a per diem or 10-day payoff quote, since interest keeps adding up daily until the loan is paid in full. This figure will differ from the balance on your last statement, which does not include interest accrued since your last payment.",
+      },
+      {
+        question: "Can I pay off my auto loan with a credit card, including a 0% intro APR card?",
+        answer:
+          "Most auto loan servicers do not accept credit card payments directly, and card issuers commonly code any transfer to a lender as a cash advance, which carries its own fee and starts accruing interest right away, even on a 0% intro APR card. If you're weighing a 0% intro card to help pay off debt faster, check [what credit score you typically need to qualify for one](/guides/credit-score-for-0-apr-credit-card/) and read the offer terms closely, since a deferred-interest offer can charge interest retroactively if the balance isn't cleared in time.",
       },
     ],
     sources: [
