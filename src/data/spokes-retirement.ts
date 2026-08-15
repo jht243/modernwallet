@@ -330,7 +330,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     intro:
       "Couples who plan retirement jointly typically accumulate more wealth and retire more securely than those who plan separately, because coordinating Social Security claiming ages, contribution timing, and survivor benefits can add tens of thousands of dollars in lifetime income. Enter your combined savings and contributions above to project your shared nest egg, then read below to see how to layer in spousal Social Security benefits.",
     howItWorks:
-      "The calculator projects your combined savings — enter both partners' balances and contributions as a single total — at your expected return until the earlier partner's retirement age. Use the notes below to add your Social Security estimate on top of the projected balance.\n\nWhere couples differ from single filers: Social Security (SSA) offers a spousal benefit equal to up to 50% of the higher earner's full retirement age (FRA) benefit, and survivor benefits that let the surviving spouse keep the larger of the two benefits for life. Coordinating these claiming decisions is one of the highest-value retirement planning levers available. For a breakdown of your workplace accounts, see the [401k calculator](/retirement/401k-calculator/).",
+      "The calculator projects your combined savings — enter both partners' balances and contributions as a single total — at your expected return until the earlier partner's retirement age. Use the notes below to add your Social Security estimate on top of the projected balance.\n\nWhere couples differ from single filers: [Social Security (SSA)](https://www.ssa.gov/benefits/retirement/planner/applying7.html) offers a spousal benefit equal to up to 50% of the higher earner's full retirement age (FRA) benefit, and survivor benefits that let the surviving spouse keep the larger of the two benefits for life. Coordinating these claiming decisions is one of the highest-value retirement planning levers available. For a breakdown of your workplace accounts, see the [401k calculator](/retirement/401k-calculator/).",
     commonMistakes: [
       "Claiming Social Security at the same age. Often the lower-earning spouse should claim earlier and the higher earner should delay to 70, maximizing the survivor benefit that will carry forward for life.",
       "Forgetting survivor benefits. When one spouse dies, the survivor keeps only the larger of the two Social Security checks — not both. If both partners claimed early at 62, the surviving spouse is left with a permanently reduced benefit.",
@@ -364,7 +364,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "Does this calculator include Social Security income?",
         answer:
-          "Not directly. The calculator projects portfolio growth; it does not fetch your SSA record. Estimate your Social Security benefit at ssa.gov using the SSA's Retirement Estimator, then add that monthly amount to the portfolio withdrawal your balance can support. See the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) for more guidance.",
+          "Not directly. The calculator projects portfolio growth; it does not fetch your SSA record. Estimate your Social Security benefit at ssa.gov using the SSA's Retirement Estimator, then add that monthly amount to the portfolio withdrawal your balance can support. See the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) for more guidance. Combined Social Security benefits can also be partly taxable for a married couple once your household income crosses IRS thresholds; see our [guide to Social Security taxation](/guides/is-social-security-taxable/) for the current numbers.",
       },
       {
         question: "What is the best retirement calculator for married couples?",
@@ -375,6 +375,21 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "Does this calculator include pension income?",
         answer:
           "Not directly — like Social Security, the calculator projects portfolio savings and doesn't model a defined-benefit pension. If either partner expects a pension, estimate its monthly payout from your plan administrator's statement and add that figure on top of what your projected household savings can support in withdrawals.",
+      },
+      {
+        question: "What if one spouse retires before the other?",
+        answer:
+          "The calculator projects to the earlier partner's retirement date, since that's when their contributions stop. The working spouse's extra contributions and salary after that date aren't included, so add those separately or re-run the projection once both partners have actually retired for the most accurate total household number.",
+      },
+      {
+        question: "Do we have to be legally married to claim a spousal Social Security benefit?",
+        answer:
+          "Yes. Social Security's spousal and survivor benefits require a legal marriage recognized by the Social Security Administration (SSA), including marriages that meet a state's common-law marriage rules; an unmarried partnership doesn't qualify no matter how long you've been together. Check your state's common-law marriage rules and SSA's own marital-status guidance at ssa.gov if you're unsure whether your relationship counts.",
+      },
+      {
+        question: "Can I claim Social Security on my ex-spouse's record if we're divorced?",
+        answer:
+          "Yes, if the marriage lasted at least 10 years and you're currently unmarried, you can claim a divorced-spouse benefit worth up to 50% of your ex's full retirement age (FRA) benefit, the same 50% floor married spouses get. Claiming on an ex's record doesn't reduce their own benefit or notify them, and a remarriage on their end doesn't block your claim either. Confirm your exact eligibility and amount with the SSA before you file.",
       },
     ],
     sources: [
@@ -481,7 +496,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     intro:
       "Military retirement combines two income streams that civilian workers rarely have together: a defined-benefit pension based on years of service and a Thrift Savings Plan (TSP) that works like a 401(k) — and the Blended Retirement System (BRS), introduced in 2018 by the Department of Defense, changed the terms for most service members entering after January 1, 2018. Use the calculator above to project your TSP growth, then add your pension estimate below to see the full picture.",
     howItWorks:
-      "This calculator projects your TSP balance — the defined-contribution side of military retirement. Enter your current TSP balance, monthly contributions (your own plus any BRS matching), expected return, and your target separation age.\n\nFor the pension side, use the formula that applies to your plan. Under the legacy High-3 system: pension = 2.5% × years of service × average of your three highest-pay years. A 20-year retiree receives 50% of High-3 pay. Under BRS: pension = 2.0% × years of service × High-3 average, plus a government TSP match of up to 5% of basic pay after three years of service, plus a one-time continuation pay bonus at the midpoint. For general retirement projection, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
+      "This calculator projects your TSP balance — the defined-contribution side of military retirement. Enter your current TSP balance, monthly contributions (your own plus any BRS matching), expected return, and your target separation age. If you will also have a civilian 401(k) later, compare the two accounts in [TSP vs 401(k)](/compare/tsp-vs-401k/).\n\nFor the pension side, use the formula that applies to your plan. Under the legacy High-3 system: pension = 2.5% × years of service × average of your three highest-pay years. A 20-year retiree receives 50% of High-3 pay. Under BRS: pension = 2.0% × years of service × High-3 average, plus a government TSP match of up to 5% of basic pay after three years of service, plus a one-time continuation pay bonus at the midpoint. If you separate early for a qualifying medical condition instead of reaching 20 years, Chapter 61 retirement uses a different formula; see our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison. For general retirement projection, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
     commonMistakes: [
       "Forgetting the 20-year cliff on the legacy High-3 plan. Under legacy rules, separating before 20 years of service means zero pension — you lose the entire defined-benefit, no matter how many years you served. The BRS was designed specifically to fix this cliff for the modern force.",
       "Not capturing the full BRS TSP match. BRS provides automatic 1% TSP contribution from the government after 60 days, then a dollar-for-dollar match on the next 3% and 50 cents on the next 2% after three years — a total of up to 5% matching. Service members who do not opt in above the 1% auto-contribution leave free money behind.",
@@ -535,7 +550,17 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "How is military retirement pay divided in a divorce?",
         answer:
-          "The [Uniformed Services Former Spouses' Protection Act (USFSPA)](https://www.dfas.mil/Garnishment/usfspa/legal/) permits — but doesn't require — state courts to treat military retired pay as marital property that can be divided in a divorce; the actual formula and percentage come from state law, not federal law. If the marriage overlapped at least 10 years of the member's creditable service (the '10/10 rule'), DFAS can pay the former spouse's court-awarded share directly, rather than requiring the service member to pay it themselves. Direct payments are capped at 50% of disposable retired pay, or up to 65% when combined with alimony or child-support garnishments. VA disability compensation, by contrast, generally cannot be divided as marital property.",
+          "The [Uniformed Services Former Spouses' Protection Act (USFSPA)](https://www.dfas.mil/Garnishment/usfspa/legal/) permits — but doesn't require — state courts to treat military retired pay as marital property that can be divided in a divorce; the actual formula and percentage come from state law, not federal law. If the marriage overlapped at least 10 years of the member's creditable service (the '10/10 rule'), DFAS can pay the former spouse's court-awarded share directly, rather than requiring the service member to pay it themselves. Direct payments are capped at 50% of disposable retired pay, or up to 65% when combined with alimony or child-support garnishments. VA disability compensation, by contrast, generally cannot be divided as marital property. Your TSP balance is a separate asset: it gets divided by its own court order sent to the TSP record keeper, not through USFSPA, so confirm both orders are filed correctly during your divorce.",
+      },
+      {
+        question: "Can I collect Social Security in addition to my military pension?",
+        answer:
+          "Yes. Military retired pay and [Social Security](https://www.ssa.gov/benefits/retirement/) are separate benefits, and drawing one does not reduce or disqualify you from the other. If you claim Social Security before your full retirement age while still working a civilian job, the SSA's earnings test can temporarily withhold part of your Social Security check, but it never touches your military pension. Check ssa.gov for the current earnings-test limits before you claim early.",
+      },
+      {
+        question: "Can I take a lump sum instead of full monthly pension under BRS?",
+        answer:
+          "Yes, but only under BRS. The Blended Retirement System lets you take a lump sum of either 25% or 50% of your future retired pay's discounted value at retirement, with your monthly pension reduced by that same percentage until you reach Social Security full retirement age. Legacy High-3 retirees do not have this option, and a lump sum forgoes future COLA growth on the amount you take upfront.",
       },
     ],
     sources: [
