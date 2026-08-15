@@ -708,7 +708,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "IRA contribution limits and deadlines for 2026",
         content:
-          "The 2026 IRA contribution limit is $7,000 per year ($8,000 if you are 50 or older). This limit applies across all your IRA accounts combined — if you have both a Roth IRA and a Traditional IRA, your total contributions to both cannot exceed $7,000.\n\nYou can contribute to your IRA for the prior tax year until the tax filing deadline — typically April 15. This means contributions made between January 1 and April 15, 2027 can count toward either the 2026 or 2027 limit, at your election.\n\nRoth IRA contributions phase out at higher income levels ($146,000–$161,000 for single filers and $230,000–$240,000 for married filing jointly in 2026, though these limits are adjusted annually by the IRS). If your income is above these limits, a Backdoor Roth conversion strategy may still allow you to fund a Roth IRA.",
+          "The 2026 IRA contribution limit is $7,000 per year ($8,000 if you are 50 or older). This limit applies across all your IRA accounts combined — if you have both a Roth IRA and a Traditional IRA, your total contributions to both cannot exceed $7,000.\n\nYou can contribute to your IRA for the prior tax year until the tax filing deadline — typically April 15. This means contributions made between January 1 and April 15, 2027 can count toward either the 2026 or 2027 limit, at your election.\n\nRoth IRA contributions phase out at higher income levels ($146,000–$161,000 for single filers and $230,000–$240,000 for married filing jointly in 2026, though these limits are adjusted annually by the IRS). If your income is above these limits, a Backdoor Roth conversion strategy may still allow you to fund a Roth IRA.\n\nContribute more than the limit and the IRS charges an excise tax on the excess amount for every year it stays in the account. See our [IRA contribution limits guide](/guides/ira-contribution-limits-2026/) for how to fix an excess contribution before the tax deadline.",
       },
       {
         heading: "How to transfer an existing IRA without triggering taxes",
@@ -730,7 +730,17 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "What happens to my IRA if the brokerage closes?",
         answer:
-          "IRA assets are protected by Securities Investor Protection Corporation (SIPC) insurance up to $500,000 in securities (including $250,000 in cash) if a brokerage fails. Critically, SIPC covers only brokerage failure — not investment losses from market declines. The underlying investments in your IRA (stocks, ETFs, mutual funds) are held in your name, not the brokerage's name, so they are not part of the brokerage's balance sheet if it becomes insolvent.",
+          "IRA assets are protected by Securities Investor Protection Corporation (SIPC) insurance up to $500,000 in securities (including $250,000 in cash) if a brokerage fails. Critically, SIPC covers only brokerage failure — not investment losses from market declines. The underlying investments in your IRA (stocks, ETFs, mutual funds) are held in your name, not the brokerage's name, so they are not part of the brokerage's balance sheet if it becomes insolvent. If you're planning for who inherits the account instead, see [401(k) vs. IRA beneficiary rules](/compare/401k-vs-ira-beneficiary-rules/) for how IRA beneficiary designations work.",
+      },
+      {
+        question: "Is my IRA FDIC insured?",
+        answer:
+          "No. FDIC insurance covers bank deposits like checking and savings accounts, not brokerage investment accounts. An IRA holding stocks, ETFs, or mutual funds is covered by SIPC instead, which protects against brokerage failure, not market losses. The exception is any uninvested cash sitting in an IRA's cash sweep program, which many brokerages route into partner banks for FDIC coverage on that cash portion specifically.",
+      },
+      {
+        question: "Can I open an IRA for a spouse who doesn't work?",
+        answer:
+          "Yes. A spousal IRA lets a working spouse contribute to an IRA opened in the name of a spouse with little or no earned income, as long as you file a joint tax return. The couple's combined IRA contributions still can't exceed the working spouse's total earned income, and each spouse's individual account is still capped at the standard $7,000 limit ($8,000 if 50 or older). You open it the same way as a regular IRA at any provider on this page.",
       },
       {
         question: "What are the penalties for withdrawing from an IRA early?",
@@ -745,7 +755,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "What's the best retirement account overall — not just the best IRA?",
         answer:
-          "There's no single best retirement account for everyone, because a 401(k), an IRA, and an HSA each solve a different problem. An employer 401(k) with a match comes first for almost everyone — the match is an immediate, guaranteed return that no IRA provider on this page can match. After that, an IRA (Traditional or Roth — see the section above) usually wins on investment selection and fees, since a self-directed IRA opens the entire market rather than your employer's fund lineup. If you have a high-deductible health plan, a Health Savings Account (HSA) is arguably the single strongest account of the three for pure tax efficiency — IRS Publication 969 confirms a triple tax break (deductible contributions, tax-free growth, tax-free withdrawals for qualified medical costs), up to $4,400 self-only / $8,750 family for 2026 — though it's earmarked for healthcare spending, not general retirement income. Most savers end up using two or three of these accounts together rather than picking just one. See the [401k calculator](/retirement/401k-calculator/) to project your workplace plan alongside the IRA numbers above.",
+          "There's no single best retirement account for everyone, because a 401(k), an IRA, and an HSA each solve a different problem. An employer 401(k) with a match comes first for almost everyone — the match is an immediate, guaranteed return that no IRA provider on this page can match. After that, an IRA (Traditional or Roth — see the section above) usually wins on investment selection and fees, since a self-directed IRA opens the entire market rather than your employer's fund lineup. If you have a high-deductible health plan, a Health Savings Account (HSA) is arguably the single strongest account of the three for pure tax efficiency — IRS Publication 969 confirms a triple tax break (deductible contributions, tax-free growth, tax-free withdrawals for qualified medical costs), up to $4,400 self-only / $8,750 family for 2026 — though it's earmarked for healthcare spending, not general retirement income. Most savers end up using two or three of these accounts together rather than picking just one. If you're self-employed, a [SEP IRA or Solo 401(k)](/roundup/best-retirement-accounts-for-self-employed/) usually beats a standard IRA on contribution room. See the [401k calculator](/retirement/401k-calculator/) to project your workplace plan alongside the IRA numbers above.",
       },
     ],
     sources: [
@@ -2783,7 +2793,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "What each document actually does",
         content:
-          "The four core documents cover four different scenarios. A last will and testament directs how your assets pass at death and (critically for parents) nominates a guardian for minor children. A revocable living trust holds title to your assets during life and bypasses probate at death — probate avoidance and privacy, not tax reduction. A durable power of attorney appoints someone to handle finances during any incapacity BEFORE death. An advance healthcare directive with HIPAA release appoints a healthcare agent and states your end-of-life wishes. Each software above bundles some subset of these; Trust & Will, FreeWill, Nolo Plus, and Mama Bear include POA and healthcare directive in the base package.",
+          "The four core documents cover four different scenarios. A last will and testament directs how your assets pass at death and (critically for parents) nominates a guardian for minor children. A revocable living trust holds title to your assets during life and bypasses probate at death, for probate avoidance and privacy, not tax reduction. The trust only works once you retitle your accounts and deeds into it; see [is a living trust worth it](/guides/is-a-living-trust-worth-it/) for what that funding step costs and why a skipped funding step is the most common reason a trust fails to avoid probate. A durable power of attorney appoints someone to handle finances during any incapacity BEFORE death. An advance healthcare directive with HIPAA release appoints a healthcare agent and states your end-of-life wishes. Each software above bundles some subset of these; Trust & Will, FreeWill, Nolo Plus, and Mama Bear include POA and healthcare directive in the base package.",
       },
       {
         heading: "State-specific rules that trip up online tools",
@@ -2821,6 +2831,21 @@ export const ROUNDUPS: RoundupEntry[] = [
         question: "Does estate planning software work in every state?",
         answer:
           "Yes — the major services (Trust & Will, LegalZoom, FreeWill, Nolo, Mama Bear, Rocket Lawyer) all serve every U.S. state plus DC. State-specific handling: Louisiana requires notarial testament (2 witnesses + notary under La. Civ. Code art. 1577); Ohio doesn't permit self-proving affidavits; Colorado and North Dakota accept notarization instead of witnesses; ~27 states recognize holographic wills as a fallback. Follow the state-specific signing instructions the service provides.",
+      },
+      {
+        question: "What happens if I die without any estate plan at all?",
+        answer:
+          "Your state's intestate succession law decides who inherits, following a fixed formula you don't control, usually your spouse and children in set shares. A probate court also appoints an estate administrator, and if you have minor children, a judge picks their guardian instead of you. Any of the software on this page fixes this for a simple estate by letting you name your own executor, guardian, and beneficiaries in a signed will.",
+      },
+      {
+        question: "Is my will still legally valid if the software company shuts down?",
+        answer:
+          "Yes. Once you print, sign, and execute your will with the required witnesses (and a notary where the state requires one), it becomes a valid legal document on its own, independent of the software that generated it. The company's platform only matters again if you want to log back in and make edits, so keep a signed paper copy somewhere your executor can find it.",
+      },
+      {
+        question: "How often should I update my estate plan after creating it?",
+        answer:
+          "Review your estate plan after any major life event: marriage, divorce, a new child, a death in the family, a move to a new state, or a significant change in assets. Outside of those events, a check every three to five years catches state law changes and confirms your named executor, guardian, and beneficiaries are still the people you'd choose today. Trust & Will's membership and FreeWill's free re-do both make updates easy; other providers may charge to regenerate documents, so check before assuming a change is free.",
       },
     ],
     sources: [
