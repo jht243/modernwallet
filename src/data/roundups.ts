@@ -708,7 +708,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "IRA contribution limits and deadlines for 2026",
         content:
-          "The 2026 IRA contribution limit is $7,000 per year ($8,000 if you are 50 or older). This limit applies across all your IRA accounts combined — if you have both a Roth IRA and a Traditional IRA, your total contributions to both cannot exceed $7,000.\n\nYou can contribute to your IRA for the prior tax year until the tax filing deadline — typically April 15. This means contributions made between January 1 and April 15, 2027 can count toward either the 2026 or 2027 limit, at your election.\n\nRoth IRA contributions phase out at higher income levels ($146,000–$161,000 for single filers and $230,000–$240,000 for married filing jointly in 2026, though these limits are adjusted annually by the IRS). If your income is above these limits, a Backdoor Roth conversion strategy may still allow you to fund a Roth IRA.\n\nContribute more than the limit and the IRS charges an excise tax on the excess amount for every year it stays in the account. See our [IRA contribution limits guide](/guides/ira-contribution-limits-2026/) for how to fix an excess contribution before the tax deadline.",
+          "The 2026 IRA contribution limit is $7,000 per year ($8,000 if you are 50 or older). This limit applies across all your IRA accounts combined — if you have both a Roth IRA and a Traditional IRA, your total contributions to both cannot exceed $7,000.\n\nYou can contribute to your IRA for the prior tax year until the tax filing deadline — typically April 15. This means contributions made between January 1 and April 15, 2027 can count toward either the 2026 or 2027 limit, at your election.\n\nRoth IRA contributions phase out at higher income levels ($146,000–$161,000 for single filers and $230,000–$240,000 for married filing jointly in 2026, though these limits are adjusted annually by the IRS). If your income is above these limits, a Backdoor Roth conversion strategy may still allow you to fund a Roth IRA.\n\nContribute more than the limit and the IRS charges an excise tax on the excess amount for every year it stays in the account until you fix it.",
       },
       {
         heading: "How to transfer an existing IRA without triggering taxes",
@@ -735,7 +735,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Is my IRA FDIC insured?",
         answer:
-          "No. FDIC insurance covers bank deposits like checking and savings accounts, not brokerage investment accounts. An IRA holding stocks, ETFs, or mutual funds is covered by SIPC instead, which protects against brokerage failure, not market losses. The exception is any uninvested cash sitting in an IRA's cash sweep program, which many brokerages route into partner banks for FDIC coverage on that cash portion specifically.",
+          "No. [FDIC](https://www.fdic.gov/deposit-insurance) insurance covers bank deposits like checking and savings accounts, not brokerage investment accounts. An IRA holding stocks, ETFs, or mutual funds is covered by SIPC instead, which protects against brokerage failure, not market losses. The exception is any uninvested cash sitting in an IRA's cash sweep program, which many brokerages route into partner banks for FDIC coverage on that cash portion specifically.",
       },
       {
         question: "Can I open an IRA for a spouse who doesn't work?",
