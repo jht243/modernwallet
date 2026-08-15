@@ -76,3 +76,9 @@
 | /retirement/401k-calculator/ | 2026-08-14 | 6 | 0/0/1/1/0 | 0 |
 | /retirement/couples-retirement-calculator/ | 2026-08-14 | 3 | 0/0/1/1/0 | 0 |
 | /auto-loan/amortization-schedule/ | 2026-08-14 | 2 | 0/0/0/0/1 | 0 |
+| / | 2026-08-15 | 3 | 0/0/0/0/0 | 0 |
+| /guides/401k-beneficiary-rules/ | 2026-08-15 | 3 | 0/1/2/0/0 | 0 |
+| /net-worth/net-worth-percentile-calculator/ | 2026-08-15 | 2 | 0/0/1/1/0 | 0 |
+| /about/ | 2026-08-15 | 1 | 0/0/0/0/0 | 0 |
+| /auto-loan/ | 2026-08-15 | 1 | 0/0/0/0/0 | 0 |
+| /compare/529-vs-roth-ira/ | 2026-08-15 | 1 | 0/0/1/1/0 | 0 |

@@ -136,9 +136,9 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   {
     calculator: "net-worth",
     slug: "net-worth-percentile-calculator",
-    title: "Net Worth Percentile Calculator: Where Do You Rank?",
+    title: "Net Worth Percentile Calculator — Rank vs $192K Median",
     metaDescription:
-      "See your wealth rank among U.S. households using Federal Reserve SCF 2022 data. Find where your net worth falls by percentile — median is $192,700.",
+      "Free net worth percentile calculator using Fed 2022 SCF data. Enter your numbers to instantly see your percentile rank vs the $192,700 U.S. median.",
     targetKeyword: "net worth percentile calculator",
     estimatedVolume: 8100,
     estimatedKD: 45,
@@ -181,6 +181,11 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
         question: "How do I compare my net worth to people my age?",
         answer:
           "For age-specific benchmarks, use the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/), which shows the 2022 SCF median for your age bracket. The overall percentile calculator here compares you to all U.S. households regardless of age.",
+      },
+      {
+        question: "Does net worth percentile include my home equity?",
+        answer:
+          "Yes — the Federal Reserve's Survey of Consumer Finances counts primary-residence equity as an asset in household net worth, so the percentile figures on this page include it, and this calculator's real estate field does too. If you'd rather see your rank without home equity — useful for comparing liquid, spendable wealth rather than total net worth — use the [liquid net worth calculator](/net-worth/liquid-net-worth-calculator/), which excludes real estate and other illiquid assets.",
       },
     ],
     sources: [

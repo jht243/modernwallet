@@ -790,9 +790,9 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 10. 529 vs Roth IRA ─────────────────────────────────────────────────
   {
     slug: "529-vs-roth-ira",
-    title: "529 vs Roth IRA for College Savings: Which Is Better?",
+    title: "529 vs Roth IRA: Which Saves More for College?",
     metaDescription:
-      "529 plan vs Roth IRA for college savings: tax treatment, financial aid impact, withdrawal rules, and which account to use for your child's education.",
+      "529 plan vs Roth IRA for college: see which wins on tax breaks, financial aid impact, and flexibility if your child skips college — plus the new rollover rule.",
     targetKeyword: "529 vs roth ira for college",
     optionA: "529 Plan",
     optionB: "Roth IRA",
@@ -855,11 +855,16 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "The 529 is better when your state offers a tax deduction (guaranteed return) and you're confident the funds will be used for education. The Roth IRA is better when college attendance is uncertain, or when you want unused funds to serve as retirement savings. Most families benefit from contributing to both.",
       },
+      {
+        question: "Does the 529-to-Roth IRA rollover require the beneficiary to have earned income?",
+        answer:
+          "Effectively yes. The rollover is capped each year by that year's regular Roth IRA contribution limit ($7,000 for most people, $8,000 if 50+), and a Roth IRA contribution — including one funded by a 529 rollover — can never exceed the account owner's earned income for the year. A beneficiary with $3,000 of summer-job income, for example, can only roll over up to $3,000 that year, even though the annual limit is higher. This is one of the most-missed rules in the new $35,000-lifetime 529-to-Roth rollover, since it can stretch a full rollover out over several years of the beneficiary actually working.",
+      },
     ],
     sources: [
       { label: "IRS — 529 plans (qualified tuition programs)", url: "https://www.irs.gov/taxtopics/tc313" },
       { label: "Federal Student Aid — FAFSA and assets", url: "https://studentaid.gov/resources/prepare-for-college/students/how-fafsa-works" },
-      { label: "IRS — SECURE 2.0 Act provisions", url: "https://www.irs.gov/retirement-plans/secure-20-act" },
+      { label: "GovInfo — Public Law 117-328, Consolidated Appropriations Act, 2023 (SECURE 2.0 Act, § 126)", url: "https://www.govinfo.gov/app/details/PLAW-117publ328" },
     ],
     relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "trump-account-vs-529", "529-vs-utma"],
     calculatorLinks: [
@@ -7885,6 +7890,93 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Rental property ROI calculator", href: "/real-estate/roi-calculator/" },
       { label: "Cash flow calculator", href: "/real-estate/cash-flow-calculator/" },
       { label: "Portfolio calculator", href: "/portfolio/" },
+    ],
+  },
+
+  // ─── 401(k) vs IRA Beneficiary Rules ──────────────────────────────────────
+  {
+    slug: "401k-vs-ira-beneficiary-rules",
+    title: "401(k) vs IRA Beneficiary Rules: Key Differences",
+    metaDescription:
+      "401(k) vs IRA beneficiary rules compared: spousal consent, the SECURE Act's 10-year rule, rollover flexibility, and creditor protection for heirs.",
+    targetKeyword: "401k vs ira beneficiary rules",
+    optionA: "401(k) Beneficiary Rules",
+    optionB: "IRA Beneficiary Rules",
+    h1: "401(k) vs IRA Beneficiary Rules: What Changes When You Inherit Each",
+    intro:
+      "A 401(k) and an IRA use the same SECURE Act 10-year withdrawal window for most beneficiaries, but they differ in who can be named beneficiary without a spouse's consent, how easily the account can be split among multiple heirs, and how well the money is shielded from the beneficiary's own creditors.",
+    comparisonTable: {
+      rows: [
+        { dimension: "10-year withdrawal rule (most beneficiaries)", a: "Applies, per the SECURE Act", b: "Applies, per the SECURE Act" },
+        { dimension: "Eligible designated beneficiaries (can stretch)", a: "Spouse, minor child, disabled/chronically ill, not >10 yrs younger", b: "Same categories" },
+        { dimension: "Spousal consent to name a non-spouse beneficiary", a: "Usually required in writing (ERISA/QJSA rules)", b: "Not required under federal law" },
+        { dimension: "Splitting among multiple beneficiaries", a: "Depends on the plan document; some force one lump sum", b: "Custodians generally allow separate inherited IRAs per heir" },
+        { dimension: "Moving the inherited account elsewhere", a: "Non-spouse heirs can roll it into an inherited IRA", b: "Already an IRA; transfers between custodians as inherited IRA" },
+        { dimension: "Protection from the beneficiary's own creditors", a: "Strong, if left in the plan (ERISA anti-alienation)", b: "None under federal bankruptcy law (Clark v. Rameker, 2014)" },
+        { dimension: "Investment choices available to the beneficiary", a: "Limited to the employer plan's fund menu", b: "Open — any investment the IRA custodian offers" },
+      ],
+    },
+    verdict:
+      "Neither account is \"better\" to inherit — you don't get to choose which one a family member left you. What matters is knowing which rules apply: an inherited 401(k) usually can't go to someone other than the spouse without the spouse's written consent, and it's worth rolling a non-spouse inheritance into an inherited IRA for more investment choice. An inherited IRA offers more flexibility to split among heirs but carries no federal creditor protection once it's inherited, so a beneficiary with creditor or lawsuit exposure should ask an estate attorney about state-level protection or a trust as beneficiary before taking a lump sum.",
+    sections: [
+      {
+        heading: "The 10-year rule applies to both, the same way",
+        content:
+          "The [SECURE Act](https://www.congress.gov/bill/116th-congress/house-bill/1994) replaced the old \"stretch\" rules for both 401(k)s and IRAs with the same 10-year withdrawal window for most non-spouse beneficiaries, and the same eligible-designated-beneficiary exceptions — a surviving spouse, a minor child of the owner, a beneficiary who is disabled or chronically ill, or a beneficiary not more than 10 years younger than the original owner — under [IRS Publication 590-B](https://www.irs.gov/publications/p590b) for IRAs and the parallel [401(k) RMD rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds) for employer plans. See our [401(k) beneficiary rules guide](/guides/401k-beneficiary-rules/) for the full breakdown of how the 10-year rule and eligible-designated-beneficiary exceptions work.\n\nWhere the two account types genuinely diverge is in the administrative rules layered on top of that shared federal timeline — who can be named beneficiary in the first place, how the account can be split, and what happens to the money once it's inherited.",
+      },
+      {
+        heading: "401(k) plans usually require spousal consent to name someone else",
+        content:
+          "Because most 401(k) plans are governed by [ERISA](https://www.dol.gov/general/topic/retirement/erisa), a married participant generally cannot name someone other than their spouse as primary beneficiary without the spouse's written, notarized consent. The [IRS explains this rule](https://www.irs.gov/retirement-plans/plan-sponsor/fixing-common-plan-mistakes-failure-to-obtain-spousal-consent) as part of the qualified joint and survivor annuity (QJSA) protections most defined-contribution plans carry — a small number of profit-sharing-style 401(k) plans are exempt if the plan document pays the full death benefit to the spouse by default, so check with the plan administrator if you're unsure which rule your plan follows.\n\nA traditional or Roth IRA is not an employer plan and isn't governed by ERISA, so there's no federal spousal-consent requirement — an IRA owner can name anyone as beneficiary without their spouse signing off. The one exception: residents of the nine community-property states (Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, and Wisconsin) may still need to address a spouse's community-property interest in IRA contributions made during the marriage, which is a state-law question separate from the federal ERISA rule." ,
+      },
+      {
+        heading: "Splitting the account among multiple beneficiaries",
+        content:
+          "When an IRA owner names multiple beneficiaries, custodians generally allow the account to be divided into separate inherited IRAs for each heir — commonly by December 31 of the year after the owner's death — so each beneficiary can apply their own 10-year clock or, if they qualify as an eligible designated beneficiary, their own life expectancy.\n\nA 401(k) plan's ability to split among multiple beneficiaries the same way depends entirely on the plan document. Some employer plans support separate accounting for each named beneficiary; others require a single, less flexible distribution. This is one of the most common reasons a non-spouse 401(k) beneficiary rolls the inherited balance into an inherited IRA soon after the plan administrator processes the claim — it converts the plan's own rules into the more flexible, custodian-driven IRA rules for splitting and investment choice, while the underlying 10-year (or life-expectancy) clock stays exactly the same.",
+      },
+      {
+        heading: "Creditor protection differs sharply once the account is inherited",
+        content:
+          "A 401(k) balance left inside the employer's plan carries strong federal protection from the beneficiary's own creditors under ERISA's anti-alienation rule, which generally shields plan assets from most creditor claims and lawsuits.\n\nAn inherited IRA carries no such federal protection. In [Clark v. Rameker](https://www.law.cornell.edu/supremecourt/text/13-299) (2014), the U.S. Supreme Court ruled unanimously that an inherited IRA is not \"retirement funds\" for bankruptcy-exemption purposes, because the beneficiary can withdraw the entire balance at any time, for any reason, without the early-withdrawal penalty that protects a true retirement account. That means an inherited IRA is exposed in a beneficiary's own bankruptcy or lawsuit unless their state provides its own statutory protection — protections vary widely by state, so a beneficiary with real creditor exposure should confirm their own state's rule before assuming the money is safe, and should discuss a trust as beneficiary with an estate attorney if protection matters." ,
+      },
+    ],
+    faqs: [
+      {
+        question: "Does the SECURE Act 10-year rule apply to both 401(k)s and IRAs?",
+        answer:
+          "Yes. The SECURE Act's 10-year withdrawal window, and the eligible-designated-beneficiary exceptions that allow a longer stretch, apply the same way to inherited 401(k)s and inherited IRAs. The rules that differ are administrative ones layered on top, like spousal consent and how easily the account can be split among multiple heirs.",
+      },
+      {
+        question: "Can I name someone other than my spouse as my 401(k) beneficiary?",
+        answer:
+          "Usually only with your spouse's written, notarized consent. Most 401(k) plans are governed by ERISA's spousal-protection rules, which require the spouse to consent before someone else can be named primary beneficiary. IRAs have no equivalent federal requirement, though a handful of community-property states treat the question differently under state law.",
+      },
+      {
+        question: "Should I roll an inherited 401(k) into an inherited IRA?",
+        answer:
+          "Many non-spouse beneficiaries do, because it typically unlocks a wider range of investments and easier splitting among multiple heirs than the original 401(k) plan allowed. The move doesn't change the underlying 10-year (or life-expectancy) withdrawal deadline — that clock is set by the original owner's date of death, not by when you roll the account over.",
+      },
+      {
+        question: "Is an inherited IRA protected from bankruptcy?",
+        answer:
+          "Not under federal law. The Supreme Court ruled in Clark v. Rameker (2014) that inherited IRAs are not \"retirement funds\" for federal bankruptcy-exemption purposes, since a beneficiary can withdraw the full balance at any time without penalty. Some states offer their own statutory protection for inherited IRAs, but coverage varies, so check your own state's rule.",
+      },
+      {
+        question: "Is a 401(k) safer from creditors than an inherited IRA?",
+        answer:
+          "If the balance is left inside the employer's plan, yes — ERISA's anti-alienation rule gives 401(k) assets strong federal protection from most creditor claims. That protection does not automatically carry over once the money is rolled into an inherited IRA, so a beneficiary worried about creditor exposure should get advice before moving the funds.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Publication 590-B, Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
+      { label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+      { label: "IRS — Fixing Common Plan Mistakes: Failure to Obtain Spousal Consent", url: "https://www.irs.gov/retirement-plans/plan-sponsor/fixing-common-plan-mistakes-failure-to-obtain-spousal-consent" },
+      { label: "Cornell Law School LII — Clark v. Rameker, 573 U.S. 122 (2014)", url: "https://www.law.cornell.edu/supremecourt/text/13-299" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "traditional-ira-vs-401k", "roth-ira-vs-traditional-ira"],
+    calculatorLinks: [
+      { label: "Estate planning calculator", href: "/estate-planning/" },
+      { label: "Retirement calculator", href: "/retirement/" },
     ],
   },
 ];
