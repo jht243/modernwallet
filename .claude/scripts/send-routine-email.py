@@ -45,8 +45,23 @@ SECRETS_PATHS = [
 ]
 RESEND_ENDPOINT = "https://api.resend.com/emails"
 
+# Fleet-wide run log. Every routine posts its run record here so the midday
+# /api/routine-digest can send ONE grouped email covering the last 24h instead
+# of ~15 separate ones landing all morning. Best-effort: a failure here never
+# fails the routine, and never suppresses the individual email (see main()).
+DEFAULT_INGEST_URL = "https://layer3labs-web.onrender.com/api/routine-run"
 
-SECRET_KEYS = ("RESEND_API_KEY", "RESEND_FROM", "RESEND_TO")
+
+SECRET_KEYS = (
+    "RESEND_API_KEY",
+    "RESEND_FROM",
+    "RESEND_TO",
+    # Digest wiring (all optional — unset = today's behavior, unchanged).
+    "ROUTINE_INGEST_URL",
+    "ROUTINE_INGEST_SECRET",
+    "ROUTINE_DIGEST_MODE",
+    "NURTURE_CRON_SECRET",   # fallback bearer, same as the endpoint's own fallback
+)
 
 
 def load_secrets() -> dict[str, str]:
@@ -116,6 +131,14 @@ REPO_PROJECTS = {
     "getzen_nomads": ("getZEN", "getzen"),
     "ven_biz_network": ("Venezuela Network", "venezuela"),
     "vet_tools": ("Vet Tools", "vettools"),
+    # Added 2026-08-15 — these five were falling through to the derived-from-host
+    # fallback, which gave them an inconsistent display name and would have
+    # grouped them under the wrong project heading in the midday digest.
+    "longevitybenchmark": ("Longevity Benchmark", "longevity"),
+    "thehoaguide": ("The HOA Guide", "hoaguide"),
+    "drones_and_defense": ("Drone & Defense", "dronedefense"),
+    "the_bot_scout": ("The Bot Scout", "botscout"),
+    "private-blue-book": ("Private Blue Book", "privatebluebook"),
 }
 
 # Human-readable name of what ran, shown in the body's "What ran" row / header.
@@ -128,6 +151,7 @@ SKILL_LABELS = {
     "question-gap-pass-auto": "Follow-up question gaps",
     "competitor-monitor-auto": "Competitor publishing monitor",
     "podcast-pain-pass-auto": "Podcast pain mining",
+    "amazon-gear-radar-auto": "Amazon best-seller deep dives",
 }
 
 # Short pass label for the SUBJECT line (kept tight so the outcome fits too).
@@ -143,9 +167,10 @@ SKILL_SHORT = {
     "download-promise-audit-auto": "Download audit",
     "page-quality-pass-auto": "Page quality",
     "bing-webmaster-pass-auto": "Bing technical",
+    "podcast-pain-pass-auto": "Podcast pain",
     "downloadable-asset-pass": "Asset build",
     "roundup-pass": "Roundup",
-    "podcast-pain-pass-auto": "Podcast mining",
+    "amazon-gear-radar-auto": "Amazon deep dives",
 }
 
 
@@ -377,6 +402,7 @@ _CHANGE_HEADINGS = (
     "enrich", "links added", "next-step link", "internal link", "tool",
     "metadata rewrite", "metadata fix", "fix", "consolidat", "redirect",
     "asset", "treatment", "what changed", "changes made", "updated", "blocker",
+    "verif",
 )
 _NOISE_HEADINGS = (
     "table", "verdict", "engagement", "per-page", "per page", "skipped",
@@ -452,6 +478,71 @@ def clean_details(md: str) -> str:
             out.extend(clean_body)
             out.append("")
     return "\n".join(out).strip()
+
+
+def post_run_record(
+    secrets: dict[str, str],
+    args: argparse.Namespace,
+    details_md: str,
+    details_html: str,
+    project_disp: str,
+) -> bool:
+    """Record this run in the fleet-wide log that feeds the midday digest.
+
+    Posts to /api/routine-run (bearer-authed), which writes the Supabase
+    `routine_runs` row. We send the ALREADY-CLEANED markdown and the ALREADY-
+    RENDERED html fragment, so the digest shows byte-identical content to the
+    individual email — clean_details() / markdown_to_html() / relative-route
+    linking all run exactly once, here, where they already live.
+
+    Returns True only on a confirmed 2xx. Every failure mode (no secret,
+    network, non-2xx, timeout, anything thrown) returns False and is swallowed:
+    this must NEVER fail a routine, and False makes main() fall back to sending
+    the individual email so a run can't vanish silently.
+    """
+    url = (secrets.get("ROUTINE_INGEST_URL") or DEFAULT_INGEST_URL).strip()
+    token = (secrets.get("ROUTINE_INGEST_SECRET") or secrets.get("NURTURE_CRON_SECRET") or "").strip()
+    if not url or not token:
+        return False
+
+    payload = json.dumps({
+        "skill": args.skill,
+        "skill_label": SKILL_LABELS.get(args.skill, args.skill),
+        "project": project_disp,
+        "site": args.site,
+        "repo": args.repo,
+        "branch": args.branch,
+        "status": args.status,
+        "summary": args.summary,
+        "details_md": details_md,
+        "details_html": details_html,
+        "commit_sha": args.commit_sha,
+        "commit_url": args.commit_url,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        url,
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            "User-Agent": "layer3-routines/1.0 (+https://layer3labs.io)",
+            "Accept": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            ok = 200 <= resp.status < 300
+            print(f"[send-routine-email] ingest {resp.status}")
+            return ok
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")[:200] if e.fp else ""
+        print(f"[send-routine-email] ingest HTTP {e.code} {body}", file=sys.stderr)
+        return False
+    except Exception as e:  # network, DNS, timeout, anything — never fatal
+        print(f"[send-routine-email] ingest failed: {e}", file=sys.stderr)
+        return False
 
 
 def build_html(args: argparse.Namespace, details_html: str, preheader: str = "", project_disp: str = "") -> str:
@@ -649,11 +740,41 @@ def main() -> int:
     details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
     body_html = build_html(args, details_html, preheader, project_disp)
 
+    # Record the run in the fleet-wide log (feeds the midday digest), then decide
+    # whether this run ALSO emails on its own.
+    #
+    #   ROUTINE_DIGEST_MODE = all      -> email every run (DEFAULT — unchanged behavior)
+    #                         failures -> email only hard failures; the rest live in the digest
+    #                         off      -> never email; the digest is the only report
+    #
+    # `all` is the default on purpose: this shipped alongside the existing
+    # per-routine emails so the digest can be checked for parity against them
+    # first. Flipping the whole 17-repo fleet to `failures` later is one env
+    # value in the shared cloud environment — no code change, no per-repo pass.
+    #
+    # The `not ingested` clause is load-bearing: if the ingest endpoint is down
+    # or unconfigured, the run emails regardless of mode. A run must never be
+    # silently lost between "didn't email" and "isn't in the digest either".
+    digest_mode = (secrets.get("ROUTINE_DIGEST_MODE") or "all").strip().lower()
+    ingested = False if args.dry_run else post_run_record(
+        secrets, args, details_md, details_html, project_disp
+    )
+    send_individual = (
+        digest_mode not in ("failures", "off")
+        or (digest_mode == "failures" and args.status == "failure")
+        or not ingested
+    )
+
     if args.dry_run:
         print("From:      " + sender)
         print("To:        " + recipient)
         print("Subject:   " + subject)
         print("Preheader: " + preheader)
+        print(f"Digest:    mode={digest_mode} (dry-run: no ingest posted)")
+        return 0
+
+    if not send_individual:
+        print(f"[send-routine-email] recorded for digest; individual email suppressed (mode={digest_mode})")
         return 0
 
     payload = json.dumps({
