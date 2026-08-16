@@ -50,8 +50,10 @@ Whenever a trend or an uncovered query centers on a discrete entity (product, br
 5. **YMYL caution** — for finance/legal/health/medical claims, ground facts in the repo's own sourced content; never invent figures, statutes, doses, or advice. If facts can't be grounded, flag instead of building.
 6. **Digest email passes the site voice standard** like every Resend report.
 
-## Email digest (ALWAYS sent) — write `/tmp/trend-pass-auto-<YYYY-MM-DD>.md` with EXACT headings (each present, "None this run" if empty):
-`## Trend verdict` · `## Coverage verdict (top-20 queries)` (covered / winner-protected / uncovered counts + the uncovered queries built) · `## SEMrush expansion` (status + keyword count, or "skipped — no key") · `## Pages shipped (N)` (title → live URL, lane: trend/coverage) · `## Flagged for the human (N)` (winner-protection / over-cap / non-groundable) · `## Ledger deltas` · `## Audit` · `## IndexNow` · `## Blocker`.
+## Email digest (ALWAYS sent) — write `/tmp/trend-pass-auto-<YYYY-MM-DD>.md` with EXACT headings, split into two top-level sections that mirror the two lanes (each heading present, "None this run" if empty; nothing pooled across lanes):
+**`# Trends` (Lane A):** `## Trend verdict` · `## Trend pages shipped (N)` (title → live URL) · `## Trend — flagged for the human (N)` (winner-protection / over-cap-dropped / non-groundable).
+**`# Query check` (Lane B — the top-20 uncovered-query check):** `## Coverage verdict (top-20 queries)` (covered / winner-protected / uncovered counts + the uncovered queries built) · `## Query-check pages shipped (N)` (title → live URL, coverage query "<query>") · `## Query-check — flagged for the human (N)` (winner-protection / over-cap-not-ledgered).
+**`# Run details` (shared):** `## SEMrush expansion` (status + keyword count, or "skipped — no key") · `## Ledger deltas` · `## Audit` · `## IndexNow` · `## Blocker`.
 
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
