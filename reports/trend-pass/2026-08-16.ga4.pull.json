@@ -1,0 +1,123 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-15",
+  "window_start": "2026-08-15",
+  "window_end": "2026-08-15",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 6,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 6,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 6
+    },
+    {
+      "page": "/portfolio/70-30-portfolio-calculator/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 5
+    },
+    {
+      "page": "/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 1,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/high-yield-savings-account-for-kids-and-teens/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/529-savings-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 42,
+  "top10_pages_total_clicks": 42,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 7,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 6,
+      "Unassigned": 1
+    },
+    "/": {
+      "Referral": 4,
+      "Unassigned": 1
+    },
+    "/portfolio/70-30-portfolio-calculator/": {
+      "Organic Search": 4,
+      "Unassigned": 4
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 3
+    },
+    "/guides/high-yield-savings-account-for-kids-and-teens/": {
+      "Organic Search": 3
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 3,
+      "Unassigned": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 3,
+      "Unassigned": 2
+    },
+    "/529-savings-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
