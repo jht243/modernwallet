@@ -129,7 +129,7 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "What is the current 30-year mortgage rate?",
         answer:
-          "The average 30-year fixed mortgage rate was 6.49% as of June 25, 2026, according to Freddie Mac. Rates change weekly, so use today's quoted rate in the calculator above for an accurate estimate. A small rate change moves your payment more than most people expect.",
+          "The average 30-year fixed mortgage rate was 6.69% as of August 6, 2026, according to Freddie Mac's Primary Mortgage Market Survey. Rates change weekly, so use today's quoted rate in the calculator above for an accurate estimate. A small rate change moves your payment more than most people expect.",
       },
       {
         question: "Why does so little of my early payment go to principal?",

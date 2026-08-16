@@ -1,6 +1,6 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-08-10 — keyword-gap-pass-auto appended 4 new gap keywords (see bottom section)._
+> _Updated: 2026-08-16 — keyword-gap-pass-auto appended 1 new gap keyword (see bottom section)._
 
 
 ## Autocomplete Discovery Log
@@ -8000,3 +8000,11 @@ SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (see reports/k
 | qualified improvement property 2025 | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 140 |
 | irs real estate depreciation news | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 110 |
 | big beautiful bill real estate | update existing body text | `spokes-real-estate.ts` → `depreciation-calculator` (`/real-estate/depreciation-calculator/`) | core | 210 |
+
+## 2026-08-16 keyword-gap-pass-auto — newly tracked gap keywords
+
+SEMRUSH quota was exhausted this run (`API UNITS BALANCE IS ZERO`); Lens 1 fell back to the connected Ahrefs MCP (8 competitors, tight pull — see `reports/keyword-pass/2026-08-16.ahrefs-fallback.json`). Lens 2 ran the Autocomplete miner on 2 previously-unmined seeds (tax-resolution-calculator, probate-calculator). Of ~200 competitor keyword rows + 112 autocomplete suggestions, only 1 genuinely actionable new-content gap survived dedup + independent adversarial review; a second finding was a stale published figure on an already-shipped FAQ (refreshed, not tracked as a new keyword — see `reports/keyword-pass/2026-08-16.md` for the full reconciliation).
+
+| keyword | action | target | tier | volume |
+|---|---|---|---|---|
+| what is a 401(k) | update existing body text | `spokes-retirement.ts` → `401k-calculator` (`/retirement/401k-calculator/`) | core | 75,000 |
