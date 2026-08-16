@@ -70,7 +70,7 @@
 | /compare/trump-account-vs-529/ | 2026-08-10 | 3 | 0/0/1/1/0 | 0 |
 | /compliance/colorado-cottage-foods-act-expansion/ | 2026-08-10 | 3 | 0/0/0/0/0 | 0 |
 | /guides/custodial-account-taxes-kiddie-tax/ | 2026-08-10 | 3 | 0/0/0/0/0 | 0 |
-| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-10 | 2 | 0/1/1/1/0 | 1 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-10 | 2 | 0/2/2/1/0 | 0 |
 | /guides/ | 2026-08-10 | 2 | 0/0/0/0/0 | 1 |
 | /guides/529-leftover-money-options/ | 2026-08-12 | 1 | 0/0/0/0/0 | 0 |
 | /retirement/401k-calculator/ | 2026-08-14 | 6 | 0/0/1/1/0 | 0 |
@@ -82,3 +82,7 @@
 | /about/ | 2026-08-15 | 1 | 0/0/0/0/0 | 0 |
 | /auto-loan/ | 2026-08-15 | 1 | 0/0/0/0/0 | 0 |
 | /compare/529-vs-roth-ira/ | 2026-08-15 | 1 | 0/0/1/1/0 | 0 |
+| /portfolio/70-30-portfolio-calculator/ | 2026-08-16 | 5 | 0/1/1/0/0 | 0 |
+| /guides/high-yield-savings-account-for-kids-and-teens/ | 2026-08-16 | 3 | 0/0/1/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-08-16 | 2 | 0/0/0/1/0 | 0 |
+| /529-savings-calculator/ | 2026-08-16 | 1 | 0/0/0/0/0 | 0 |

@@ -2375,6 +2375,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Yes. Once a child turns 18 (the general age of majority for brokerage purposes), they can open a regular, non-custodial brokerage account in their own name with no custodian involved. That's different from a custodial Roth IRA, which has no age gate but does require documented earned income to fund — an 18-year-old with no job still can't contribute to a Roth, custodial or otherwise, until they earn money.",
       },
+      {
+        question: "Which broker is best for a custodial Roth IRA?",
+        answer:
+          "Fidelity, Charles Schwab, Vanguard, and E*TRADE all offer a custodial Roth IRA for minors, each with no account minimum or clear annual fee. Merrill Edge, despite offering custodial UGMA/UTMA accounts, does not offer a custodial Roth IRA at all. See our [best custodial Roth IRA providers](/roundup/best-custodial-roth-ira-providers/) roundup for a full fee and feature comparison.",
+      },
     ],
     sources: [
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
@@ -8022,6 +8027,70 @@ export const COMPARISONS: ComparisonEntry[] = [
     calculatorLinks: [
       { label: "Estate planning calculator", href: "/estate-planning/" },
       { label: "Retirement calculator", href: "/retirement/" },
+    ],
+  },
+
+  // ─── 70/30 Portfolio vs 60/40 Portfolio (ga4-top-pages pass 2026-08-16) ──
+  {
+    slug: "70-30-vs-60-40-portfolio",
+    title: "70/30 vs 60/40 Portfolio: Which Mix Wins?",
+    metaDescription:
+      "70/30 vs 60/40 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+    targetKeyword: "70/30 vs 60/40 portfolio",
+    optionA: "70/30 Portfolio",
+    optionB: "60/40 Portfolio",
+    segment: "Portfolio allocation",
+    h1: "70/30 vs 60/40 Portfolio: Which Stock-Bond Mix Wins?",
+    intro:
+      "A 70/30 portfolio (70% stocks, 30% bonds) targets a higher expected return than the classic 60/40 mix, at the cost of more volatility along the way. On this site's own portfolio model, 70/30 shows an 8.20% expected return versus 60/40's 7.60%, but with 11.45% volatility versus 60/40's 10.00% — a real tradeoff, not a free upgrade.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Stock / bond split", a: "70% stocks / 30% bonds", b: "60% stocks / 40% bonds" },
+        { dimension: "Expected return (model)", a: "8.20%", b: "7.60%" },
+        { dimension: "Volatility (model)", a: "11.45%", b: "10.00%" },
+        { dimension: "Sharpe ratio (model, risk-adjusted return)", a: "0.50", b: "0.51" },
+        { dimension: "$100,000 over 30 years, no added contributions (model)", a: "≈$1,063,697", b: "≈$900,260" },
+        { dimension: "Best suited for", a: "Longer time horizon, higher risk tolerance", b: "Shorter time horizon or lower risk tolerance" },
+      ],
+    },
+    verdict:
+      "Choose 70/30 if your time horizon is long (10+ years) and you can stay invested through bigger short-term swings for a meaningfully higher expected balance. Choose 60/40 if you're closer to needing the money, or if 70/30's extra volatility would tempt you to sell during a downturn. Neither wins outright: 70/30 wins on model return, but 60/40 edges it on risk-adjusted return (a 0.51 Sharpe ratio versus 0.50), which is why many advisors still default to 60/40 as the 'balanced' benchmark.",
+    sections: [
+      {
+        heading: "Where these numbers actually come from",
+        content:
+          "Both figures use the same modeling assumptions: stocks are modeled at a 10% expected return with 16% volatility, and bonds at a 4% expected return with 5% volatility, per [SEC Investor.gov guidance](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) on long-run asset-class behavior. A 70/30 mix simply weights more of your money toward the higher-return, higher-volatility stock assumption; a 60/40 mix weights more toward the steadier bond assumption. These are long-run model estimates, not guarantees; real markets don't move in a straight line.\n\nWe built this comparison after noticing the gap directly in our own content-demand data: search interest comparing 70/30 to 60/40 outnumbers comparisons to 80/20 or 90/10 by a wide margin in the query data that feeds this site's content-gap tooling. That's why 60/40 (not a more aggressive split) is the mix most readers actually want to weigh 70/30 against.",
+      },
+      {
+        heading: "The volatility gap most calculators bury",
+        content:
+          "An 11.45% volatility means a 70/30 portfolio's returns can swing wider in a single year than a 60/40 portfolio's 10.00% volatility. In dollar terms on a $100,000 portfolio, a bad year at the low end of that range costs roughly $1,450 more in a 70/30 mix than in a 60/40 mix, purely from the extra stock weight (not counting how each mix's expected return also differs). That gap compounds both ways: it works for you in strong years and against you in weak ones, so it matters more the closer you are to needing the money.",
+      },
+      {
+        heading: "Sharpe ratio: why 60/40 barely edges out 70/30",
+        content:
+          "The Sharpe ratio measures return earned above a risk-free rate for each unit of risk taken. In this model, 60/40's 0.51 Sharpe ratio is marginally higher than 70/30's 0.50 — meaning 60/40 delivers slightly more return per unit of volatility, even though 70/30 wins on raw expected return. This is a nuance most 'which portfolio is better' comparisons skip entirely: a higher expected return doesn't automatically mean a more efficient portfolio once you account for the risk taken to get there.",
+      },
+      {
+        heading: "How to decide between them",
+        content:
+          "Start with your time horizon. A saver 15+ years from needing the money can typically absorb 70/30's extra volatility for the higher expected balance. A saver within 5 years of a goal is usually better served by 60/40's smaller swings, since a bad year right before you need the money is far more damaging than a bad year decades out.\n\nRisk tolerance matters just as much as horizon. If a 70/30 mix's bigger drawdowns would tempt you to sell during a downturn, 60/40's steadier ride is the better real-world choice even with a long horizon, because a plan you abandon in a crash underperforms a plan you actually stick to. Run your own numbers in the [70/30 portfolio calculator](/portfolio/70-30-portfolio-calculator/) and the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) to compare against your actual balance and timeline, or use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to test other splits.",
+      },
+    ],
+    faqs: [
+      { question: "Is 70/30 or 60/40 better for retirement?", answer: "It depends on how close you are to retirement. Investors still years from retirement often lean 70/30 for the higher expected return; investors near or in retirement, who need to start drawing on the portfolio, more often lean 60/40 for its smaller swings. Many investors also shift from 70/30 toward 60/40 as retirement approaches, rather than picking one mix for life." },
+      { question: "How much more does 70/30 return than 60/40 over 30 years?", answer: "In this site's model, $100,000 invested with no added contributions grows to about $1,063,697 in a 70/30 mix versus about $900,260 in a 60/40 mix over 30 years — a difference of roughly $163,000. That gap comes from 70/30's higher 8.20% expected return versus 60/40's 7.60%, compounded over three decades. Actual results will differ, since real returns vary year to year." },
+      { question: "What's the difference in risk between 70/30 and 60/40?", answer: "70/30 carries 11.45% modeled volatility versus 60/40's 10.00% — about 1.45 percentage points higher. In practice, that means 70/30's returns swing further above and below their average in any given year, since it holds more stocks, which are the more volatile asset in this model." },
+      { question: "Can I switch from 60/40 to 70/30 later, or the other way around?", answer: "Yes. Neither mix is permanent — most investors adjust their stock-bond split as their time horizon, risk tolerance, or life circumstances change. A common pattern is starting more aggressive (70/30 or higher) early in a career and gradually shifting toward 60/40 or more conservative mixes as a goal like retirement approaches." },
+      { question: "Which portfolio mix do most financial advisors recommend?", answer: "60/40 has long been treated as the default 'balanced' benchmark portfolio, but there's no universal recommendation — the right mix depends on your specific time horizon, risk tolerance, and goals. A 70/30 mix is a common step up in stock weight for investors with a longer runway who want more growth and can tolerate more volatility." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+    ],
+    calculatorLinks: [
+      { label: "70/30 portfolio calculator", href: "/portfolio/70-30-portfolio-calculator/" },
+      { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
     ],
   },
 ];

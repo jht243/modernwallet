@@ -284,9 +284,9 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 2. Best Index Funds ──────────────────────────────────────────────────
   {
     slug: "best-index-funds",
-    title: "8 Best Index Funds of 2026: Compare Expense Ratios",
+    title: "Best Index Funds to Invest In (2026): 8 Ranked by Cost",
     metaDescription:
-      "8 index funds ranked by expense ratio — from 0.03% (VOO) to 0.00% (FZROX) — plus coverage, minimums, and tax efficiency for long-term investors.",
+      "8 best index funds to invest in for 2026, ranked by expense ratio: 0.00% (FZROX) to 0.03% (VOO), plus coverage and minimums for long-term investors.",
     targetKeyword: "best index funds",
     category: "index funds",
     angle: "best",
@@ -5546,6 +5546,136 @@ export const ROUNDUPS: RoundupEntry[] = [
     calculatorLinks: [
       { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
       { label: "Personal loan calculator", href: "/personal-loan/" },
+    ],
+  },
+
+  // ── Best Custodial Roth IRA Providers (ga4-top-pages pass 2026-08-16) ────
+  {
+    slug: "best-custodial-roth-ira-providers",
+    title: "Best Custodial Roth IRA Providers for Kids (2026)",
+    metaDescription:
+      "Best custodial Roth IRA providers compared: Fidelity, Charles Schwab, Vanguard, and E*TRADE on fees, minimums, and fund options for a working teen.",
+    targetKeyword: "best custodial roth ira",
+    category: "custodial Roth IRA providers",
+    angle: "best",
+    segment: "Kids & family investing",
+    h1: "Best Custodial Roth IRA Providers for Kids",
+    intro:
+      "The best custodial Roth IRA providers charge no account minimum or maintenance fee, since a working teen's first IRA is often a small balance that a fee would eat into fast.\n\nWe compared four major brokers that actually offer a custodial Roth IRA for minors — not every large broker does. No broker paid for placement.",
+    rankingCriteria:
+      "Rankings prioritize account minimum, annual/maintenance fees, and whether the broker offers true zero-expense-ratio index fund options, since fees matter disproportionately on a small teen-sized balance. We also weighted how clearly each broker documents its custodial-IRA-specific terms versus burying them inside general IRA or general custodial-account pages.\n\nWe excluded brokers that only offer a custodial brokerage account (UGMA/UTMA) but not a custodial Roth IRA specifically — the two are different products with different tax treatment.",
+    options: [
+      {
+        name: "Fidelity — Roth IRA for Kids",
+        bestFor: "Families who want a $0 minimum and true zero-expense-ratio index funds",
+        description:
+          "[Fidelity](https://www.fidelity.com/)'s Roth IRA for Kids is a custodial Roth IRA opened by a parent or guardian in a child's name, requiring the child to have documented earned income. There's no minimum to open the account and no recurring custodial fee.\n\nFidelity is also the only broker on this list offering its own zero-expense-ratio funds — the Fidelity ZERO Total Market Index Fund (FZROX) and Fidelity ZERO International Index Fund (FZILX) both charge a 0.00% expense ratio, which matters more on a small teen balance than on a large adult account.",
+        strengths: [
+          "$0 account minimum and no recurring custodial fee",
+          "FZROX and FZILX charge a literal 0.00% expense ratio",
+          "Well-documented, dedicated 'Roth IRA for Kids' product page (not buried inside general IRA docs)",
+        ],
+        limitations: [
+          "The Fidelity ZERO funds are Fidelity-exclusive — moving to another broker later means selling out of them, which can trigger taxes on any gains",
+          "The Roth IRA for Kids product is separate from Fidelity's teen brokerage account, so a family wanting both needs to open two different account types",
+        ],
+        pricing: "$0 minimum to open. No recurring custodial fee. Fund expense ratios apply where relevant (as low as 0.00% for Fidelity ZERO funds).",
+      },
+      {
+        name: "Charles Schwab — Custodial Roth IRA",
+        bestFor: "Families who want $0 fees across the board and Schwab's full ETF/stock lineup",
+        description:
+          "[Charles Schwab](https://www.schwab.com/) charges no fee to open or maintain any IRA type, including a custodial Roth IRA, and generally has no account minimum or account-opening fee. Online stock and ETF trades are commission-free.\n\nSchwab's custodial fees apply only to non-publicly-traded IRA investments (things like private LLC units), which the average teen custodial account will never touch.",
+        strengths: [
+          "No fee to open or maintain the account, and generally no minimum balance",
+          "$0 commission on online stock and ETF trades",
+          "Broad, well-known platform if the family already banks or invests with Schwab",
+        ],
+        limitations: [
+          "Options trades still cost $0.65 per contract if the account ever uses them",
+          "No proprietary 0.00%-expense-ratio fund to match Fidelity's FZROX/FZILX (Schwab's own index funds run in the ~0.02–0.03% range)",
+        ],
+        pricing: "$0 minimum. No maintenance fee. $0 online stock/ETF commissions; $0.65/contract for options.",
+      },
+      {
+        name: "Vanguard — Custodial Roth IRA",
+        bestFor: "Buy-and-hold families already invested in Vanguard's own index funds",
+        description:
+          "[Vanguard](https://investor.vanguard.com/) offers custodial Roth (and traditional) IRAs for minors with earned income, opened and managed by a parent, relative, or guardian until the child reaches the age of majority. Vanguard is best known for its own low-cost index funds and ETFs, which the custodial IRA can hold directly.\n\nVanguard's public custodial-IRA page does not clearly spell out a separate account fee apart from its related UGMA/UTMA custodial brokerage product, which carries a $20/year fee waived with e-delivery of statements — confirm the IRA-specific fee schedule directly with Vanguard before opening, since it isn't laid out as clearly as Fidelity's or Schwab's.",
+        strengths: [
+          "Direct access to Vanguard's own low-cost index funds and ETFs inside the custodial IRA",
+          "No earned-income exception beyond the standard custodial Roth IRA rule",
+        ],
+        limitations: [
+          "Custodial-IRA-specific fees aren't clearly published separately from Vanguard's UGMA/UTMA product page — worth a direct call to confirm before opening",
+          "Vanguard's platform and app are generally considered less beginner-friendly than Fidelity's or Schwab's for a first-time teen user",
+        ],
+        pricing: "Contact Vanguard to confirm the custodial-IRA-specific fee schedule; its related UGMA/UTMA custodial account charges $20/year, waived with electronic statement delivery.",
+      },
+      {
+        name: "E*TRADE — IRA for Minors",
+        bestFor: "Families who also want a linked custodial brokerage account at the same firm",
+        description:
+          "[E*TRADE](https://us.etrade.com/)'s IRA for Minors is a custodial Roth (or traditional) IRA managed by one parent or legal guardian until the child reaches the state's age of termination. There are no annual IRA fees and no account minimums.\n\nE*TRADE also offers a separate custodial brokerage account (a standard UGMA/UTMA) at the same firm, which is useful for a family that wants both a retirement-focused custodial Roth IRA and a flexible, non-retirement custodial account in one place.",
+        strengths: [
+          "No annual IRA fee and no account minimum",
+          "A matching custodial UGMA/UTMA brokerage account is available at the same firm",
+        ],
+        limitations: [
+          "Only one guardian can be listed on the account",
+          "The account must be established by the tax-filing deadline (typically April 15, without extensions) for a given year's contributions to count for that tax year",
+        ],
+        pricing: "$0 minimum. No annual IRA fee. Standard trading commissions and fund expense ratios apply.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Provider", "Account Minimum", "Annual/Maintenance Fee", "0.00%-Expense-Ratio Funds"],
+      rows: [
+        { name: "Fidelity", values: ["$0", "$0", "Yes — FZROX, FZILX"] },
+        { name: "Charles Schwab", values: ["$0", "$0", "No — lowest-cost funds ~0.02–0.03%"] },
+        { name: "Vanguard", values: ["$0 (IRA); confirm directly", "Confirm directly (UGMA/UTMA product: $20/yr, waivable)", "No — own low-cost index funds/ETFs"] },
+        { name: "E*TRADE", values: ["$0", "$0", "No"] },
+      ],
+    },
+    verdict:
+      "For most families, Fidelity or Charles Schwab is the easiest starting point: both charge $0 to open or maintain a custodial Roth IRA, and Fidelity is the only one of these four with a true 0.00%-expense-ratio index fund. Choose Vanguard if the family already invests there and wants its specific fund lineup, but confirm the custodial-IRA fee schedule directly since Vanguard doesn't publish it as clearly as Fidelity or Schwab. Choose E*TRADE if you also want a linked, non-retirement custodial brokerage account (a UGMA/UTMA) at the same firm. Skip Merrill Edge for this specific goal — it's a large, well-known broker, but it does not offer a custodial Roth IRA for minors at all, only custodial UGMA/UTMA savings accounts.",
+    sections: [
+      {
+        heading: "What a custodial Roth IRA actually requires",
+        content:
+          "A custodial Roth IRA can only be funded with a child's own documented earned income: a summer job, babysitting, lawn mowing, or self-employment income the family can back up if the IRS ever asks. A child with no earned income cannot have a custodial Roth IRA funded at all, no matter which broker you choose, and the 2026 contribution limit is capped at the lesser of that earned income or $7,500. A parent, relative, or other adult can technically supply the cash as long as the contribution amount doesn't exceed what the child actually earned that year — a common approach for families who want to encourage saving without requiring every dollar to come directly from the child's paycheck.",
+      },
+      {
+        heading: "Why Merrill Edge isn't on this list",
+        content:
+          "[Merrill Edge](https://www.merrilledge.com/) is a large, well-known brokerage, and it's a natural first place many parents check. But Merrill Edge does not offer a custodial Roth IRA for minors — it offers custodial UGMA/UTMA accounts for general education-style savings, which is a different, fully taxable product with none of a Roth IRA's tax-free growth. A family that specifically wants the custodial Roth IRA structure needs to look at one of the four brokers above instead.",
+      },
+      {
+        heading: "Fees that actually matter on a small account",
+        content:
+          "A teen's first custodial Roth IRA often starts with a few hundred or a few thousand dollars, small enough that even a modest annual fee can meaningfully dent the balance. That's why every broker on this list either charges $0 to open and maintain the account, or (in Vanguard's case) doesn't publish a clear custodial-IRA-specific fee at all, which is itself worth confirming before you commit.\n\nOur own site-traffic data shows exactly this gap in action: 'best custodial roth ira' was already generating real search impressions against this site's existing custodial-Roth-IRA-vs-brokerage-account comparison page before any dedicated roundup like this one existed to answer the question directly — a sign the query was outrunning the content built to answer it.",
+      },
+      {
+        heading: "How to actually open one",
+        content:
+          "Start by picking a broker from the list above based on fees and fund selection, then have the parent or guardian complete the custodial IRA application, since the child cannot open the account alone as a minor. You'll typically need the child's Social Security number, your own identifying information as custodian, and a way to fund the initial contribution (often a linked bank account or a transfer from an existing family account).\n\nOnce it's open, contributions are capped each year at the lesser of the child's earned income or the annual IRA limit ($7,500 for 2026). The custodian manages the account (choosing investments, monitoring contributions) until the child reaches the state's age of majority, at which point control transfers to the now-adult child as their own Roth IRA.",
+      },
+    ],
+    faqs: [
+      { question: "Which brokers offer a custodial Roth IRA for kids?", answer: "Fidelity, Charles Schwab, Vanguard, and E*TRADE all offer a custodial Roth IRA for minors with documented earned income. Fidelity and Schwab charge no account minimum or maintenance fee; Vanguard and E*TRADE also charge no clear IRA-specific fee, though Vanguard's page is less explicit about it than the others." },
+      { question: "Does Merrill Edge offer a custodial Roth IRA?", answer: "No. Merrill Edge offers custodial UGMA/UTMA savings and brokerage accounts, but not a custodial Roth IRA for minors specifically. Families who want the Roth IRA's tax-free growth need to use one of the brokers that actually offers that account type, such as Fidelity, Schwab, Vanguard, or E*TRADE." },
+      { question: "Is there a minimum amount needed to open a custodial Roth IRA?", answer: "At Fidelity, Charles Schwab, and E*TRADE, there's no stated account minimum — you can open the account with any amount you're able to contribute, up to the child's earned income for the year. Vanguard doesn't clearly publish a custodial-IRA-specific minimum on its main page, so confirm directly before opening." },
+      { question: "What happens to a custodial Roth IRA when the child turns 18?", answer: "Control of the account transfers from the custodian (parent or guardian) to the child once they reach the age of majority in their state, which is typically 18 but runs as late as 21 or 25 in a handful of states. At that point it becomes the now-adult child's own Roth IRA, and they take over managing it." },
+      { question: "Can grandparents or other relatives contribute to a custodial Roth IRA?", answer: "Yes. Anyone can contribute money into a custodial Roth IRA on the child's behalf, as long as the total contributed for the year doesn't exceed the child's own documented earned income (or the annual IRA limit, whichever is lower). The contribution just can't exceed what the child actually earned, even if a grandparent is the one writing the check." },
+      { question: "Is a custodial Roth IRA the same as a custodial brokerage account (UTMA/UGMA)?", answer: "No. A custodial Roth IRA is a retirement account that requires the child's earned income and grows tax-free, with money generally locked in until retirement age (contributions can be withdrawn anytime; earnings before 59½ usually can't, without penalty). A custodial UTMA/UGMA brokerage account has no earned-income requirement, no contribution cap tied to income, is taxable under the kiddie tax, and can be spent on anything for the child's benefit at any age. See our [custodial Roth IRA vs brokerage account](/compare/custodial-roth-ira-vs-brokerage-account/) comparison for the full breakdown." },
+    ],
+    sources: [
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+    ],
+    relatedComparisons: ["custodial-roth-ira-vs-brokerage-account", "custodial-roth-ira-vs-529", "custodial-roth-ira-vs-utma"],
+    calculatorLinks: [
+      { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },
 
