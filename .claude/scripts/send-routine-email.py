@@ -152,6 +152,22 @@ SKILL_LABELS = {
     "competitor-monitor-auto": "Competitor publishing monitor",
     "podcast-pain-pass-auto": "Podcast pain mining",
     "amazon-gear-radar-auto": "Amazon best-seller deep dives",
+    # Completed 2026-08-15. These were missing, so they fell back to the raw
+    # slug — fine-ish in a single email's "What ran" row, but the midday digest
+    # uses this as the SECTION HEADING, where "ga4-top-pages-pass-auto" reads
+    # like a log line instead of a heading.
+    "trend-pass-auto": "Trend pass",
+    "ga4-top-pages-pass-auto": "GA4 top pages",
+    "page-quality-pass-auto": "Page quality",
+    "keyword-gap-pass-auto": "Keyword gap",
+    "search-gap-content-auto": "Visitor question gaps",
+    "content-request-fulfillment-auto": "Chatbot content requests",
+    "download-promise-audit-auto": "Download promise audit",
+    "bing-webmaster-pass-auto": "Bing technical pass",
+    "monetization-pass-auto": "Monetization pass",
+    "ahrefs_winner_loser_pass": "Ahrefs winners & losers",
+    "downloadable-asset-pass": "Downloadable asset build",
+    "roundup-pass": "Roundups",
 }
 
 # Short pass label for the SUBJECT line (kept tight so the outcome fits too).
