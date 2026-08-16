@@ -1,0 +1,21 @@
+{
+  "note": "SEMRUSH_API_KEY calls returned HTTP 403 'API UNITS BALANCE IS ZERO' for domain_organic pulls above ~20 rows (small pulls under the balance succeeded, larger ones failed — balance was effectively exhausted). Per credit discipline, SEMRUSH querying was stopped after confirming the quota error. Fell back to the connected Ahrefs MCP (site-explorer-organic-keywords) for Lens 1 competitor-gap data, since it was available this run.",
+  "semrush_error": "ERROR 403 :: ERROR 132 :: API UNITS BALANCE IS ZERO",
+  "ahrefs_units_before_run": 86154,
+  "ahrefs_units_limit": 100000,
+  "our_domain": "themodernwallet.com",
+  "our_domain_organic_keyword_rows": 0,
+  "competitors_pulled": [
+    "calculator.net", "bankrate.com", "nerdwallet.com", "smartasset.com",
+    "investopedia.com", "ramseysolutions.com", "fidelity.com", "themodestwallet.com"
+  ],
+  "pull_params": { "mode": "subdomains", "limit_per_competitor": 25, "select": "keyword,volume,keyword_difficulty,best_position,best_position_url", "order_by": "volume:desc", "date": "2026-08-16" },
+  "competitors_dropped_from_semrush_seed_list": {
+    "mortgagecalculator.org": "dropped to keep the Ahrefs fallback pull tight (credit discipline) — niche mortgage-only overlap already well covered by calculator.net + bankrate.com",
+    "wisemoneylife.com": "SEMRUSH live-discovered domain (domain_organic_organic overlap) but unclear authority/relevance before quota ran out — not pulled via Ahrefs fallback"
+  },
+  "semrush_live_discovered_competitors_seen_before_quota_exhausted": [
+    "wisemoneylife.com", "thegoldpedia.com", "cashtopedia.com", "trumpaccountspro.com", "mayrivermedicare.com"
+  ],
+  "result_summary": "Of ~200 competitor keyword rows pulled, the overwhelming majority were branded/navigational/off-mission (bank names, stock tickers, generic calculator.net brand terms, travel/entertainment). After cross-checking against target-keywords.md (7,870 already-tracked rows) and existing site pages, only 1 genuine actionable gap survived: a missing 'what is a 401(k)' definitional FAQ. A second candidate (current mortgage rate citation) turned out to already exist on-page but with a stale figure (6.49% as of 2026-06-25) — reclassified from 'new content' to 'refresh stale figure' after independent adversarial review confirmed the DROP-as-duplicate verdict for the 'add new' framing."
+}
