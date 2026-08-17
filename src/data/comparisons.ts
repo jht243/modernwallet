@@ -8247,6 +8247,236 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
     ],
   },
+
+  // ─── Vanguard vs Fidelity vs Schwab (3-way brokerage roundup) ────────────
+  // Competitor-monitor pass: this site already has vanguard-vs-fidelity, fidelity-vs-schwab, and
+  // vanguard-vs-schwab as separate pairwise pages. This is an additional 3-way roundup for a reader
+  // who hasn't narrowed to two firms yet, mirroring the site's stocks-vs-bonds / stocks-vs-bonds-vs-cash
+  // pattern. Structural facts only on fees/minimums per editorial guardrail — no invented current
+  // expense-ratio or fee figures.
+  {
+    slug: "vanguard-vs-fidelity-vs-schwab",
+    title: "Vanguard vs Fidelity vs Schwab: Which Broker Wins?",
+    metaDescription:
+      "Vanguard vs Fidelity vs Schwab compared: fees, fund selection, robo-advisors, mobile apps, and which brokerage fits your investing style best.",
+    targetKeyword: "vanguard vs fidelity vs schwab",
+    optionA: "Vanguard",
+    optionB: "Fidelity or Schwab",
+    segment: "Brokerages",
+    h1: "Vanguard vs Fidelity vs Schwab: Which Brokerage Should You Choose?",
+    intro:
+      "[Vanguard](https://investor.vanguard.com), [Fidelity](https://www.fidelity.com), and [Schwab](https://www.schwab.com) all charge $0 to open a taxable brokerage account, $0 commission on online U.S. stock and ETF trades, and offer at least one no-fee index fund option in the most common categories, so the old fee battles between these three brokerages are mostly settled. What still separates them is fund and ETF breadth, robo-advisor pricing, branch access, and which type of investor each platform is actually built around.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum to open a taxable brokerage account", a: "$0", b: "Fidelity: $0. Schwab: $0" },
+        { dimension: "Commission-free U.S. stock and ETF trades", a: "Yes", b: "Fidelity: Yes. Schwab: Yes" },
+        { dimension: "No-fee index fund options in core categories", a: "Yes, among the lowest-cost index lineups in the industry", b: "Fidelity: Yes, including its own zero-expense-ratio index funds. Schwab: Yes, near-zero-cost proprietary index funds" },
+        { dimension: "Fractional share investing", a: "Available on select ETFs, mainly through automatic investment plans", b: "Fidelity: Broad fractional share support across stocks and ETFs. Schwab: Available through Schwab Stock Slices" },
+        { dimension: "Robo-advisor", a: "Vanguard Digital Advisor", b: "Fidelity: Fidelity Go. Schwab: Schwab Intelligent Portfolios" },
+        { dimension: "Physical branch or investor center access", a: "None. No retail branch network.", b: "Fidelity: Yes, investor centers in many metro areas. Schwab: Yes, the largest branch network of the three." },
+        { dimension: "Banking integration with the brokerage account", a: "Minimal; no full banking product", b: "Fidelity: Cash management account with a debit card. Schwab: Bank checking account built to pair with the brokerage account." },
+        { dimension: "Best for", a: "Buy-and-hold index investors focused on the lowest ongoing cost", b: "Fidelity: Research-driven investors and beginners who want fractional shares with no minimum. Schwab: Investors who want in-person branches and integrated banking." },
+      ],
+    },
+    verdict:
+      "Choose Vanguard if your entire plan is buy-and-hold index investing and you never plan to set foot in a branch. Its fund lineup and pricing philosophy are built around minimizing cost for long-term holders, so you will not miss the branch network or the banking extras you never intended to use. Choose Fidelity if you are starting with a small deposit, want fractional shares on individual stocks, or want one account that also handles research and everyday cash management; its zero-minimum funds and robo-advisor make it the easiest of the three to start with almost no money. Choose Schwab if a nearby branch matters to you, or if you want a brokerage account and a full banking relationship, checking account included, under one roof; Schwab's branch network and integrated banking are real advantages if you actually use them, and irrelevant if you do not. If none of those three factors decide it for you, any of the three will serve a standard index-fund portfolio well; in that case, let the mobile app and account-opening experience make the call, since you will be looking at it for decades. Investors who cannot settle on just one often end up holding accounts at more than one of the three, which costs nothing beyond an extra login.",
+    sections: [
+      {
+        heading: "Where all three brokerages now look the same",
+        content:
+          "For most of the last decade, Vanguard, Fidelity, and Schwab competed hard on the price of a single stock trade. That competition is effectively over. All three now charge $0 commission on online U.S. stock and ETF trades, and none of them charges a fee to open a standard taxable brokerage account. If you only compared these three on trading costs, you would find a three-way tie.\n\nThe same is largely true of core index funds. Each brokerage offers at least one broad-market or S&P 500 index fund with a very low expense ratio, and in Fidelity's case, an outright zero-expense-ratio option on several of its own funds. A saver who wants nothing more than a total-market or S&P 500 index fund can build that portfolio at any of the three for close to the same annual cost.\n\nWhat this means in practice: fees alone are no longer a good reason to pick one of these three over another for a plain index-fund portfolio. The decision now comes down to everything fees used to obscure: which fund lineup fits your specific account, how the robo-advisor is priced, whether you want a nearby branch, and what the mobile app is actually built to do.",
+      },
+      {
+        heading: "Fund and ETF selection: how the menus differ",
+        content:
+          "All three brokerages let you buy funds and ETFs from other providers, not just their own, so none of them locks you into a narrow shelf. Where they differ is in what each firm builds itself. Vanguard's own fund lineup leans heavily toward low-cost, broadly diversified index funds and target-date funds, reflecting its investor-owned structure and its long history as an index-fund pioneer. Fidelity's own lineup is broader, spanning zero-fee index funds, actively managed mutual funds, and sector-specific funds, alongside a full menu of individual stocks and options for active traders. Schwab's own lineup sits closer to Fidelity's in breadth, with competitively priced index funds plus its own actively managed and thematic funds.\n\nFractional shares are the clearest practical gap. Fidelity supports fractional share purchases across a wide range of stocks and ETFs, which lets a new investor put a small dollar amount into a single share of an expensive stock instead of needing the full share price up front. Schwab offers a similar feature through Schwab Stock Slices. Vanguard's fractional support is narrower, mostly limited to select ETFs bought through automatic investment plans rather than one-off trades.\n\nFor a straightforward index-fund investor, this gap barely matters. For someone who wants to build a small, diversified position in individual companies without a large starting balance, Fidelity and Schwab currently offer more flexibility than Vanguard.",
+      },
+      {
+        heading: "Robo-advisors: three different pricing philosophies",
+        content:
+          "All three brokerages offer an automated, algorithm-managed portfolio option, but they are not priced the same way. Vanguard Digital Advisor charges a flat annual advisory fee assessed directly against your balance, built mostly from Vanguard's own low-cost index funds. Fidelity Go waives its advisory fee entirely below a certain balance threshold and starts charging once your account grows past that point, which makes it an easy, no-cost way for a beginner to try a managed portfolio before committing real money to the service. Schwab Intelligent Portfolios charges no explicit advisory fee at any balance, but funds that arrangement by holding a required allocation to cash inside the portfolio, cash that earns less than a fully invested position would.\n\nThe practical upshot: none of the three robo-advisors is simply free. Vanguard's cost shows up as a visible line-item fee. Fidelity's shows up only once your balance crosses its no-fee threshold. Schwab's shows up as a quieter opportunity cost on the cash sleeve rather than a fee you can see on a statement. Before picking a robo-advisor at any of the three, read the specific fee and cash-allocation disclosure on that provider's own site, since these structures and thresholds are exactly the kind of detail that changes from year to year.",
+      },
+      {
+        heading: "Mobile apps and online tools",
+        content:
+          "All three firms run mature, well-reviewed mobile apps that cover the basics well: checking balances, placing trades, depositing checks, and viewing account performance. Beyond the basics, each app leans into a different strength. Fidelity's app and website put more emphasis on research, screening tools, and news, reflecting Fidelity's broader push into active trading and analysis alongside its long-term investing tools. Schwab's app ties more tightly into its banking products, letting you view brokerage and checking balances side by side and manage transfers between them in one place. Vanguard's app is comparatively pared down, built around monitoring long-term holdings and retirement goals rather than active trading or day-to-day banking.\n\nNone of the three apps is a poor choice; the difference is closer to which one fits how you actually plan to use it. An investor who checks a brokerage balance twice a year and rarely trades will be equally well served by any of the three. An investor who wants deep charting, screening, or paper trading tools will likely find Fidelity's or Schwab's platform does more for them out of the box than Vanguard's.",
+      },
+      {
+        heading: "Customer service and branch access",
+        content:
+          "Vanguard has no retail branch network at all; every interaction happens by phone, chat, or through the app and website. That works fine for investors who never want in-person help, but it is a real limitation for anyone who prefers sitting across from a person to open an account or ask a question about a rollover.\n\nFidelity operates investor centers in many metro areas, giving customers in those cities a place to walk in for help with an account, though coverage thins out considerably once you leave a major metro. Schwab operates the largest branch network of the three, spread more broadly across the country, which makes it the most likely of the three to have a location within a reasonable drive no matter where you live.\n\nFor phone and chat support, all three brokerages are generally responsive during business hours, and none of them stands out as meaningfully worse than the others on this front. The real differentiator is branch access specifically: if in-person service matters to you at all, Schwab's footprint gives it a clear structural edge over the other two, with Fidelity a distant second and Vanguard offering none.",
+      },
+      {
+        heading: "A worked example: what a fee gap is actually worth over time",
+        content:
+          "Expense ratios sound small in isolation, but they compound the same way returns do, just in the opposite direction. Say you hold $50,000 in an index fund charging a 0.03% expense ratio: that costs about $15 a year. The same $50,000 in a fund charging 0.20% costs about $100 a year, a difference of $85. On its own, $85 a year does not sound like much.\n\nStretch that same gap over a longer holding period and a larger balance and the picture changes. A $500,000 balance held for 25 years, growing at an assumed 7% annual return, ends up meaningfully smaller if it is paying an extra 0.17 percentage points in fees every year along the way, because that drag compounds against your growth every single year, not just once. The exact dollar difference depends on your actual balance, actual fund choice, and actual return, which is why this is presented as an illustration of how fee gaps compound, not a claim about any specific fund at Vanguard, Fidelity, or Schwab. Before choosing a fund at any of the three, check that specific fund's current expense ratio on the provider's own fund page, and run your own numbers through the [investment growth calculator](/investing/) to see what a fee difference does to your specific balance and timeline.",
+      },
+      {
+        heading: "Who should actually use each brokerage",
+        content:
+          "Vanguard fits a specific type of investor best: someone with a long time horizon who wants a simple, low-cost index portfolio and does not need a branch, a bank account, or a wide menu of trading tools. If your entire strategy is a three-fund portfolio held for decades, Vanguard's investor-owned structure and index-first culture are built for exactly that.\n\nFidelity fits an investor who wants more flexibility from one account: research tools if you want to dig into individual stocks, zero-minimum funds if you are starting small, fractional shares if you want to build positions in expensive stocks gradually, and a cash management account that behaves more like a bank account than a typical brokerage sweep account.\n\nSchwab fits an investor who wants their investing and everyday banking to live under one roof, especially if a nearby branch and in-person support matter. Its combination of a large branch network, integrated checking, and a full-featured trading platform makes it the closest of the three to a one-stop financial relationship.\n\nMany investors do not pick just one. It is common to hold a Roth IRA at Vanguard for its low-cost funds while keeping a taxable account and checking at Schwab or Fidelity for convenience. Splitting accounts costs nothing beyond an extra login and a bit more to track at tax time.",
+      },
+      {
+        heading: "Want the head-to-head detail? Here's where to go",
+        content:
+          "This page compares all three brokerages side by side, but if you have already narrowed your choice to two of them, a dedicated head-to-head goes deeper on that specific matchup. See [Vanguard vs Fidelity](/compare/vanguard-vs-fidelity/) for a closer look at Vanguard's investor-owned pricing against Fidelity's zero-fee fund lineup, [Fidelity vs Schwab](/compare/fidelity-vs-schwab/) for how Fidelity's research tools stack up against Schwab's branch network and banking, and [Vanguard vs Schwab](/compare/vanguard-vs-schwab/) for Vanguard's low-cost index philosophy against Schwab's broader, publicly traded platform.\n\nWhichever brokerage you land on, the account type you choose inside it usually matters more to your long-term results than the brokerage itself. Our [brokerage account vs IRA comparison](/compare/brokerage-vs-ira/) walks through that decision independent of which of these three firms you pick, and the [Roth IRA calculator](/investing/roth-ira-calculator/) and [asset allocation calculator](/portfolio/asset-allocation-calculator/) let you model your actual numbers once you have.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which is cheapest: Vanguard, Fidelity, or Schwab?",
+        answer:
+          "For a plain index-fund portfolio, the three are close enough to call a tie. All three charge $0 to open a brokerage account and $0 commission on stock and ETF trades, and each offers at least one very low-cost or zero-fee index fund. The bigger cost differences show up in extras like robo-advisor pricing and account service fees, not in day-to-day trading.",
+      },
+      {
+        question: "Do I have to pick just one of Vanguard, Fidelity, or Schwab?",
+        answer:
+          "No. Many investors hold accounts at more than one of the three, for example an IRA at Vanguard for its low-cost funds and a taxable brokerage or checking account at Schwab or Fidelity for convenience. Splitting accounts costs nothing beyond an extra login and a little more bookkeeping at tax time.",
+      },
+      {
+        question: "Which brokerage is best for a beginner with a small first deposit?",
+        answer:
+          "Fidelity generally has the easiest on-ramp for a very small deposit, since its own index funds and robo-advisor carry no minimum to start. Schwab's own index funds also carry no minimum, though its robo-advisor requires a higher starting balance. Vanguard's mutual funds typically require a moderate minimum to start, though its ETFs can be bought for the price of a single share.",
+      },
+      {
+        question: "Which brokerage has the most branches?",
+        answer:
+          "Schwab operates the largest branch network of the three. Fidelity operates investor centers in many major metro areas but with less overall coverage than Schwab. Vanguard has no retail branch network at all and handles every interaction by phone, chat, or online.",
+      },
+      {
+        question: "Does it matter which brokerage I pick if I only buy index funds?",
+        answer:
+          "Less than it used to. Since all three now offer commission-free trading and at least one very low-cost index fund, a simple index-fund investor will get a similar outcome at any of the three. The decision matters more if you also want fractional shares, a robo-advisor, banking features, or in-person branch access, since those features differ meaningfully across the three firms.",
+      },
+      {
+        question: "Can I transfer an account from one of these brokerages to another?",
+        answer:
+          "Yes. All three support incoming account transfers, commonly through the standard ACATS transfer process used across the brokerage industry, which usually keeps your existing investments intact rather than forcing a sale. Confirm any transfer-out fees your current brokerage might charge, and check whether your destination brokerage offers a transfer-fee reimbursement, since that offer changes over time.",
+      },
+    ],
+    sources: [
+      { label: "Vanguard — Ownership structure", url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/why-vanguard/sets-us-apart/ownership.html" },
+      { label: "Fidelity — Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
+      { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
+    ],
+    relatedComparisons: ["vanguard-vs-fidelity", "fidelity-vs-schwab", "vanguard-vs-schwab", "brokerage-vs-ira"],
+    calculatorLinks: [
+      { label: "Investing hub", href: "/investing/" },
+      { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+    ],
+  },
+
+  // ─── Citi Diamond Preferred vs Citi Simplicity ───────────────────────────
+  // Competitor-monitor pass: both cards verified no-annual-fee via citi.com. Per editorial guardrail,
+  // this page deliberately omits exact intro-APR month counts, promo APR percentages, and dollar fee
+  // amounts, since those terms change and go stale — it describes the structural difference (longer
+  // 0% transfer window on Diamond Preferred vs. no late fee/no penalty APR on Simplicity) instead.
+  {
+    slug: "citi-diamond-preferred-vs-citi-simplicity",
+    title: "Citi Diamond Preferred vs Citi Simplicity Compared",
+    metaDescription:
+      "Citi Diamond Preferred vs Citi Simplicity compared: annual fee, balance transfer strength, and which no-fee Citi card forgives a missed payment.",
+    targetKeyword: "citi diamond preferred vs citi simplicity",
+    optionA: "Citi Diamond Preferred Card",
+    optionB: "Citi Simplicity Card",
+    segment: "Credit Cards",
+    h1: "Citi Diamond Preferred vs Citi Simplicity: Which No-Fee Card Wins?",
+    intro:
+      "The [Citi Diamond Preferred Card](https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card) and the [Citi Simplicity Card](https://www.citi.com/credit-cards/citi-simplicity-credit-card) both charge no annual fee and both lead with a long 0% introductory APR period on purchases and balance transfers, but they solve different problems. Diamond Preferred is built to give a balance-transfer shopper the longest 0% runway in Citi's current lineup, while Simplicity is built to protect someone who might occasionally miss a due date, since it is the only Citi card with no late fee and no penalty APR. Neither card earns rewards or points, so the right pick depends on whether a longer 0% window or forgiveness for a missed payment matters more to you.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Annual fee", a: "$0", b: "$0" },
+        { dimension: "Rewards program", a: "None. No points or cash back.", b: "None. No points or cash back." },
+        { dimension: "Welcome bonus", a: "None currently offered", b: "None currently offered" },
+        { dimension: "0% intro APR window on balance transfers", a: "The longest 0% balance-transfer window in Citi's current card lineup", b: "Shorter than Diamond Preferred, but still a genuine multi-month 0% window" },
+        { dimension: "0% intro APR on purchases", a: "Yes, for an introductory period", b: "Yes, for an introductory period" },
+        { dimension: "Late-payment policy", a: "A standard late fee and penalty APR can apply if a payment is missed", b: "No late fee and no penalty APR, even on a missed payment" },
+        { dimension: "Balance transfer fee", a: "A percentage of each transferred balance applies. Check citi.com for the current rate.", b: "A percentage of each transferred balance applies. Check citi.com for the current rate." },
+        { dimension: "Best for", a: "Moving a large balance and wanting the longest 0% runway to pay it down", b: "Anyone who wants protection against an occasional missed due date" },
+      ],
+    },
+    verdict:
+      "Pick the Citi Diamond Preferred Card when your main goal is moving an existing balance onto 0% and paying it off methodically: it carries the longest 0% balance-transfer window in Citi's current lineup, and every extra month at 0% is real money saved on interest if you are carrying a meaningful balance. Pick the Citi Simplicity Card when your bigger risk is not the balance itself but the chance a payment slips past its due date: it is the one Citi card that will not charge a late fee or trigger a penalty APR if that happens, which matters more than a slightly shorter 0% window for anyone juggling several bills or rebuilding a budget. If you are confident in autopay and only care about maximizing the 0% runway on a transferred balance, take Diamond Preferred. If you have been hit by a penalty APR before, or you know your bill-paying habits are not perfectly reliable, Simplicity's forgiveness is worth more than a few extra months at 0%. Either way, confirm the current intro APR length, balance transfer fee, and ongoing APR range directly on citi.com before you apply, since Citi adjusts these terms periodically and this page intentionally does not quote figures that go stale.",
+    sections: [
+      {
+        heading: "What these two cards have in common",
+        content:
+          "Both cards come from Citi and share the same basic pitch: no annual fee, ever, and a 0% introductory APR period on both purchases and balance transfers rather than just one or the other. Both also skip a rewards program entirely. Neither earns cash back, points, or miles, and neither currently offers a sign-up bonus, a deliberate trade-off since a rewards program and a long 0% APR period are expensive for an issuer to offer on the same card at once.\n\nThat shared design tells you who both cards are built for: someone focused on interest savings and cost control, not someone shopping for the biggest welcome bonus or the richest points-earning rate. If a cash-back or travel rewards card is what you actually want, neither of these two cards is the right starting point; look at a dedicated rewards card instead.\n\nWhere the two cards diverge is in exactly how they protect you. Diamond Preferred protects you from interest, for longer than Simplicity does. Simplicity protects you from fees and rate hikes triggered by a missed payment. Both forms of protection are valuable, but they solve different problems, and most people only really need one of the two.",
+      },
+      {
+        heading: "Diamond Preferred's strength: the longest 0% runway",
+        content:
+          "The Citi Diamond Preferred Card is positioned around one specific strength: its 0% introductory APR period on balance transfers runs longer than Citi Simplicity's, and longer than most other no-annual-fee balance-transfer cards on the market. That extra runway matters most for someone transferring a balance large enough that a few additional months at 0% translates into real interest savings, rather than a rounding error.\n\nThe tradeoff for that longer window is that Diamond Preferred is a more conventional credit card once the introductory period ends. It carries a standard variable ongoing APR based on your creditworthiness, and it can charge a late fee and apply a penalty APR if you miss a payment, the same as most other mainstream credit cards. Nothing about Diamond Preferred forgives a missed due date; it simply gives you more time to pay down a transferred balance at 0% before the ongoing terms kick in.\n\nCheck the exact current length of the 0% window, and the ongoing APR range, directly on [citi.com](https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card) before applying. Citi adjusts these terms periodically, and the specific numbers you see when you apply are the ones that actually govern your account, not any figure quoted elsewhere.",
+      },
+      {
+        heading: "Simplicity's strength: no late fee, no penalty APR",
+        content:
+          "The Citi Simplicity Card takes a different approach to reducing your risk. Rather than maximizing the length of its 0% window, Simplicity is built around removing two of the most expensive things that can happen on an ordinary credit card: a late fee charged the moment a payment is missed, and a penalty APR that can spike your interest rate for months or longer afterward. Citi markets Simplicity specifically as the one card in its lineup that carries neither.\n\nThat matters more than it might sound like at first. A single missed payment on a typical credit card can trigger a late fee immediately and, on many cards, a penalty APR that applies not just to new purchases but to your entire existing balance, turning a temporary cash-flow problem into a much more expensive one. Simplicity is built so that a missed due date costs you nothing beyond the interest that was already accruing.\n\nSimplicity's 0% introductory period on purchases and balance transfers is still meaningful, just shorter than Diamond Preferred's. For someone who values the safety net over the last few months of 0% runway, that trade is usually worth it. Confirm Simplicity's current intro APR length and terms on [citi.com](https://www.citi.com/credit-cards/citi-simplicity-credit-card) before applying.",
+      },
+      {
+        heading: "Balance transfer fees: what to budget for either card",
+        content:
+          "Both cards charge a balance transfer fee, calculated as a percentage of whatever amount you move over from another card, with a minimum dollar floor that applies to very small transfers. This fee is separate from the interest rate. You pay it once, at the time of the transfer, regardless of how quickly you pay the transferred balance off afterward.\n\nBecause the fee is a percentage, it scales with the size of your transfer. Moving a larger balance costs a larger transfer fee in raw dollars, even though the percentage rate stays the same. Before transferring a balance to either card, weigh the transfer fee against the interest you expect to save at 0%, since a very small transferred balance sometimes saves less in interest than the transfer fee itself costs, especially if you could pay that small balance off in a month or two anyway without transferring it at all.\n\nBoth Diamond Preferred and Simplicity publish their current transfer fee schedule on their own Citi pages. Confirm the exact percentage and minimum fee before you initiate a transfer, since it factors directly into whether transferring makes financial sense for your specific balance.",
+      },
+      {
+        heading: "A worked example: is a balance transfer worth it?",
+        content:
+          "Here is the kind of math worth running before you transfer anything. Say you are carrying a $6,000 balance on a card charging an illustrative 22% APR, roughly in line with recent national credit card interest rate averages. Left alone with no new charges and only minimum payments, that balance can take years to clear and cost more in interest than the original balance itself.\n\nNow say you move that same $6,000 to a 0% introductory APR card and commit to paying $500 a month toward it. At that pace, you would clear the balance well within a typical introductory window and pay $0 in interest during that stretch, aside from the one-time transfer fee charged up front. Even after subtracting a transfer fee in the low hundreds of dollars, you would still come out well ahead of paying 22% interest on a shrinking balance for the same period.\n\nThis example uses round, illustrative numbers, not Citi's specific published terms, because those terms change and the math only works if you run it against your own balance, your own payment capacity, and the current intro APR length and transfer fee posted on citi.com when you actually apply. Our [credit card payoff calculator](/credit-card-payoff/) lets you plug in your real balance and see exactly how many months it takes to pay off at different payment amounts, with a transfer fee added in.",
+      },
+      {
+        heading: "Neither card is built for rewards",
+        content:
+          "Neither Citi Diamond Preferred nor Citi Simplicity earns rewards. Both skip a cash-back or points program entirely, and neither currently offers a welcome bonus for new cardholders. If you want a card that pays you back on groceries or gas, look at a dedicated rewards card instead of either of these two.\n\nThat absence is deliberate, not an oversight. A card that earns rewards while also offering a long 0% intro APR and no annual fee would cost an issuer more to provide than most cards can support, so issuers that build a card around low-cost debt management tend to leave rewards out of the design from the start. Citi makes money on cards like these mainly through interchange fees paid by merchants and interest paid by cardholders who still carry a balance once the introductory period ends, not through an annual fee or a rewards giveaway.\n\nThat structure changes who actually benefits from either card. Someone transferring or carrying a balance short-term, who plans to pay it down and return to a separate rewards card for everyday spending, gets real value from either Diamond Preferred or Simplicity. Someone who pays their balance in full every single month gets comparatively little from either card and would likely come out ahead with a straightforward cash-back or points card instead.",
+      },
+      {
+        heading: "Which card fits which situation",
+        content:
+          "Start with how large a balance you are transferring and how confident you are in your ability to pay bills on time. A large transferred balance that will take most of the introductory period to pay off benefits the most from Diamond Preferred's longer 0% window, since every extra month at 0% is real interest saved on a meaningful amount of money.\n\nA smaller balance, or a history of occasionally missing a due date because of an irregular income or a busy schedule, tips the decision toward Simplicity. The value of never facing a late fee or a penalty APR is highest for exactly the person most likely to eventually trigger one, and a shorter 0% window matters less when the balance is smaller to begin with.\n\nCredit approval also plays a role neither card's marketing addresses directly. Both cards are generally aimed at applicants with good to excellent credit, so if your credit is still in the fair range, you may not qualify for either card yet. Our [roundup of the best credit cards for fair credit](/roundup/best-credit-cards-for-fair-credit/) covers options built for that credit tier, with a path to graduate toward a card like Diamond Preferred or Simplicity once your score improves.\n\nWhichever card you choose, build a payoff plan before the introductory period ends, not after. Our [credit card payoff calculator](/credit-card-payoff/) and [budget calculator](/budget/) can help you size a monthly payment that clears the balance before the ongoing APR applies, so the 0% period actually does its job instead of quietly running out.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do Citi Diamond Preferred and Citi Simplicity charge an annual fee?",
+        answer:
+          "No. Neither card charges an annual fee, in any year you hold it. That is true of both cards regardless of how you use them or how long you keep the account open.",
+      },
+      {
+        question: "Which Citi card has no late fee?",
+        answer:
+          "Citi Simplicity does not charge a late fee and does not apply a penalty APR, even if a payment is missed. Citi Diamond Preferred does not offer that same protection; a standard late fee and penalty APR can apply on Diamond Preferred if a payment is missed, the same as on most mainstream credit cards.",
+      },
+      {
+        question: "Which card has the longer 0% intro APR, Diamond Preferred or Simplicity?",
+        answer:
+          "Diamond Preferred carries the longer 0% introductory APR window on balance transfers of the two. Simplicity's introductory window is shorter, though still a genuine multi-month 0% period on both purchases and balance transfers. Confirm the current length of each on citi.com, since Citi adjusts these periods from time to time.",
+      },
+      {
+        question: "Do either of these cards earn rewards or a welcome bonus?",
+        answer:
+          "No. Neither Citi Diamond Preferred nor Citi Simplicity earns cash back, points, or miles, and neither currently offers a sign-up bonus. Both are built around interest savings and fee avoidance instead of a rewards program.",
+      },
+      {
+        question: "Can I have both a Citi Diamond Preferred card and a Citi Simplicity card?",
+        answer:
+          "Possibly, but issuer approval depends on your credit profile, income, and existing relationship with Citi, and Citi's own underwriting rules can change over time. Rather than assuming approval, check your pre-qualification odds directly on citi.com before applying for a second Citi card.",
+      },
+      {
+        question: "Is a balance transfer card the same as a rewards card?",
+        answer:
+          "No. A balance transfer card like Diamond Preferred or Simplicity is built to reduce interest on debt you are already carrying, usually in exchange for skipping a rewards program. A rewards card is built to earn cash back or points on new spending and typically carries a higher ongoing APR with no introductory 0% period on transfers. Most people are better served by one or the other, not by expecting both benefits from a single card.",
+      },
+    ],
+    sources: [
+      { label: "Citi — Citi Diamond Preferred Card", url: "https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card" },
+      { label: "Citi — Citi Simplicity Card", url: "https://www.citi.com/credit-cards/citi-simplicity-credit-card" },
+      { label: "Citi — No annual fee credit cards", url: "https://www.citi.com/credit-cards/no-annual-fee-credit-cards" },
+    ],
+    calculatorLinks: [
+      { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
+      { label: "Budget calculator", href: "/budget/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
