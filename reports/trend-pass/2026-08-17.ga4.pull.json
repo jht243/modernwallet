@@ -1,0 +1,124 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-16",
+  "window_start": "2026-08-16",
+  "window_end": "2026-08-16",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/net-worth/net-worth-by-age-calculator/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/roundup/best-budgeting-apps-for-couples/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 5
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 3,
+      "sessions": 5,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/mortgage/payoff-calculator/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/portfolio/80-20-portfolio-calculator/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/high-yield-savings-account-for-kids-and-teens/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    }
+  ],
+  "top10_pages_total_views": 42,
+  "top10_pages_total_clicks": 42,
+  "channel_split": {
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 5
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 5,
+      "Unassigned": 3
+    },
+    "/net-worth/net-worth-by-age-calculator/": {
+      "Direct": 5,
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 5,
+      "Unassigned": 3
+    },
+    "/roundup/best-budgeting-apps-for-couples/": {
+      "Direct": 5,
+      "Unassigned": 2,
+      "Organic Search": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 4,
+      "Unassigned": 2
+    },
+    "/portfolio/80-20-portfolio-calculator/": {
+      "Organic Search": 3,
+      "Unassigned": 2
+    },
+    "/guides/high-yield-savings-account-for-kids-and-teens/": {
+      "Organic Search": 2
+    },
+    "/mortgage/payoff-calculator/": {
+      "Organic Search": 2,
+      "Direct": 1
+    },
+    "/": {
+      "Direct": 1,
+      "Referral": 1
+    }
+  }
+}
