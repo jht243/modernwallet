@@ -86,3 +86,9 @@
 | /guides/high-yield-savings-account-for-kids-and-teens/ | 2026-08-16 | 3 | 0/0/1/0/0 | 0 |
 | /roundup/best-index-funds/ | 2026-08-16 | 2 | 0/0/0/1/0 | 0 |
 | /529-savings-calculator/ | 2026-08-16 | 1 | 0/0/0/0/0 | 0 |
+| /net-worth/net-worth-by-age-calculator/ | 2026-08-17 | 7 | 0/0/0/0/0 | 1 |
+| /roundup/best-budgeting-apps-for-couples/ | 2026-08-17 | 7 | 0/0/1/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-08-17 | 5 | 0/0/0/0/0 | 0 |
+| /investing/withdrawal-calculator/ | 2026-08-17 | 4 | 0/0/1/0/1 | 0 |
+| /mortgage/payoff-calculator/ | 2026-08-17 | 3 | 0/0/2/0/0 | 0 |
+| /portfolio/80-20-portfolio-calculator/ | 2026-08-17 | 3 | 0/1/1/0/0 | 0 |

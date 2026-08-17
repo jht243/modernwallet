@@ -1405,6 +1405,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Financial advisors most commonly recommend YNAB for couples who need to reduce debt or align on spending, because its zero-based approach forces explicit conversation about every budget category before money is spent. Monarch Money is increasingly recommended for couples with more stable finances who want a comprehensive financial dashboard rather than active budget management. The best choice depends on your current financial situation and how much active engagement you're both willing to put into budgeting.",
       },
+      {
+        question: "What's the best budgeting app for couples who keep separate accounts?",
+        answer:
+          "Honeydue is the strongest fit for couples who keep some or all accounts separate, since it lets each partner mark individual accounts 'mine only' while still sharing visibility into joint accounts and category spending limits. Copilot works similarly well for Apple-ecosystem couples who want each partner's accounts linked but not fully merged. YNAB, by contrast, shows all linked accounts to both partners with no privacy controls, so it fits best for couples who want full transparency rather than separate accounts with selective sharing.",
+      },
     ],
     sources: [
       { label: "CFPB — Managing Money in Relationships", url: "https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/financial-well-being/" },

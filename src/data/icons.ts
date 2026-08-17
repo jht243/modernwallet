@@ -80,6 +80,7 @@ const SPOKE_SHAPE: Record<string, string> = {
   "investing/investment-growth-calculator": "trending",
   "investing/high-yield-savings-calculator": "wallet",
   "investing/savings-goal-calculator": "target",
+  "investing/how-much-can-i-withdraw-calculator": "coins",
   "portfolio/asset-allocation-calculator": "pie",
   "portfolio/60-40-portfolio-calculator": "bars",
   "portfolio/expected-return-calculator": "trending",

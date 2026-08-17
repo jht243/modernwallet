@@ -8183,6 +8183,70 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
     ],
   },
+
+  {
+    slug: "80-20-vs-90-10-portfolio",
+    title: "80/20 vs 90/10 Portfolio: Which Mix Wins?",
+    metaDescription:
+      "80/20 vs 90/10 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+    targetKeyword: "80/20 vs 90/10 portfolio",
+    optionA: "80/20 Portfolio",
+    optionB: "90/10 Portfolio",
+    segment: "Portfolio allocation",
+    h1: "80/20 vs 90/10 Portfolio: Which Stock-Bond Mix Wins?",
+    intro:
+      "A 90/10 portfolio (90% stocks, 10% bonds) pushes further into stocks than the already-aggressive 80/20 mix, for a higher expected return and a wider range of outcomes. On this site's own portfolio model, 90/10 shows a 9.40% expected return versus 80/20's 8.80%, but with 14.46% volatility versus 80/20's 12.94% — both are aggressive, growth-focused mixes, and the gap between them is smaller than it looks on paper once volatility is priced in.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Stock / bond split", a: "80% stocks / 20% bonds", b: "90% stocks / 10% bonds" },
+        { dimension: "Expected return (model)", a: "8.80%", b: "9.40%" },
+        { dimension: "Volatility (model)", a: "12.94%", b: "14.46%" },
+        { dimension: "Sharpe ratio (model, risk-adjusted return)", a: "0.49", b: "0.48" },
+        { dimension: "$100,000 over 30 years, no added contributions (model)", a: "≈$1,255,645", b: "≈$1,480,879" },
+        { dimension: "Likely 1-year range on $100,000 (model, ±1 std dev)", a: "$95,862 – $121,738", b: "$94,941 – $123,859" },
+        { dimension: "Best suited for", a: "Very long horizon, high risk tolerance", b: "Longest horizon, highest risk tolerance" },
+      ],
+    },
+    verdict:
+      "Choose 90/10 only if your time horizon runs decades and a bad year genuinely won't change your plans — the extra 0.60 percentage points of expected return comes with 1.52 more points of volatility and a slightly lower Sharpe ratio (0.48 vs 0.49), meaning 80/20 is marginally more efficient per unit of risk taken. Choose 80/20 if you want nearly all of 90/10's growth with a narrower worst-case range: in a bad year, $100,000 in 80/20 has a modeled floor around $95,862 versus 90/10's $94,941, a small gap that widens as the bet compounds year after year. Neither is a conservative choice; this comparison is about how much further past 80/20 makes sense, not whether to hold bonds at all.",
+    sections: [
+      {
+        heading: "Where these numbers actually come from",
+        content:
+          "Both figures use the same modeling assumptions already live on this site's 80/20 and 70/30-vs-60/40 comparison pages: stocks at a 10% expected return with 16% volatility, and bonds at a 4% expected return with 5% volatility, per [SEC Investor.gov guidance](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) on long-run asset-class behavior. A 90/10 mix simply weights 10 more percentage points toward the higher-return, higher-volatility stock assumption than 80/20 does. These are long-run model estimates, not guarantees; real markets don't move in a straight line, and no bond allocation this thin meaningfully cushions a sharp downturn.",
+      },
+      {
+        heading: "The gap is smaller than the headline return suggests",
+        content:
+          "9.40% sounds meaningfully higher than 8.80%, but the risk-adjusted picture is closer to a wash. 90/10's Sharpe ratio (0.48) is actually a touch below 80/20's (0.49) in this model, meaning 80/20 delivers slightly more return per unit of volatility taken. The extra 10 percentage points of stock weight in 90/10 buys real upside in the model's $100,000-over-30-years line ($1,480,879 versus $1,255,645, a $225,234 gap) but also a lower modeled floor in a bad year ($94,941 versus $95,862 on the same starting balance).",
+      },
+      {
+        heading: "Why most investors stop at 80/20, not 90/10",
+        content:
+          "Our own portfolio-calculator engine, which powers every stock-bond comparison on this site, shows the same pattern every time we push the stock weight past roughly 80%: each additional 10 points of stocks adds less incremental Sharpe ratio while adding a similar-sized chunk of volatility, a textbook case of diminishing risk-adjusted returns near the aggressive end of the allocation spectrum. That is a modeling observation, not investment advice, but it's the mechanical reason many target-date and robo-advisor glide paths cap out around 80-90% stocks even for a 25-year-old investor decades from retirement, rather than running 100% stocks or higher.",
+      },
+      {
+        heading: "How to decide between them",
+        content:
+          "Start with how you'd react to a genuinely bad year, not just your years-to-goal number. Both mixes assume a very long horizon (20+ years) and high risk tolerance already; the question is whether the last 10 percentage points of bonds in 80/20 versus 90/10 changes your behavior during a downturn. If a wider worst-case range wouldn't tempt you to sell, 90/10's higher expected return is the more efficient bet on paper despite the slightly lower Sharpe ratio.\n\nIf you're unsure, 80/20 is the more defensible default: it captures the large majority of 90/10's expected growth with a narrower range of outcomes and a marginally better risk-adjusted return. Run your own numbers in the [80/20 portfolio calculator](/portfolio/80-20-portfolio-calculator/), or use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to test splits in between.",
+      },
+    ],
+    faqs: [
+      { question: "Is 90/10 too aggressive for retirement savings?", answer: "It depends entirely on your time horizon and how you'd react to a bad year. 90/10 carries 14.46% modeled volatility, the highest of any standard stock-bond split most investors consider, so it generally only fits a saver with 20+ years until they need the money and enough risk tolerance to sit through a sharp downturn without selling. Closer to retirement, most planners recommend shifting toward 80/20, 70/30, or more conservative mixes." },
+      { question: "How much more does 90/10 return than 80/20 over 30 years?", answer: "In this site's model, $100,000 invested with no added contributions grows to about $1,480,879 in a 90/10 mix versus about $1,255,645 in an 80/20 mix over 30 years — a difference of roughly $225,234. That gap comes from 90/10's higher 9.40% expected return versus 80/20's 8.80%, compounded over three decades. Actual results will differ, since real returns vary year to year." },
+      { question: "Which has the better risk-adjusted return, 80/20 or 90/10?", answer: "80/20 does, by a small margin, in this model: its 0.49 Sharpe ratio is marginally higher than 90/10's 0.48. That means 80/20 delivers slightly more return for each unit of volatility taken, even though 90/10 wins on raw expected return. The difference is small enough that either choice is reasonable for an investor with a long horizon." },
+      { question: "Should I go with 90/10 instead of 80/20 if I'm decades from retirement?", answer: "A 90/10 mix can make sense decades from retirement if you have high risk tolerance and won't be tempted to sell during a downturn, since the extra stock weight modestly raises expected long-run growth. Many investors get nearly all of that benefit from 80/20 with a narrower range of yearly outcomes, so 90/10 is a preference for investors who specifically want to push allocation as far as it reasonably goes, not a requirement for a long horizon." },
+      { question: "What's the difference in risk between 80/20 and 90/10?", answer: "90/10 carries 14.46% modeled volatility versus 80/20's 12.94% — about 1.52 percentage points higher. In practice, that means 90/10's returns swing further above and below their average in any given year, since it holds 10 more percentage points in stocks, the more volatile asset in this model." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+    ],
+    calculatorLinks: [
+      { label: "80/20 portfolio calculator", href: "/portfolio/80-20-portfolio-calculator/" },
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

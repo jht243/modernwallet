@@ -72,6 +72,11 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "A mortgage payoff quote is only accurate through the specific date printed on the statement, because interest keeps accruing every day after that date. If you won't send payment by that date, ask your servicer for an updated payoff statement rather than guessing at the new total. Paying your last statement balance instead of the official payoff amount is a common mistake, since the payoff figure includes interest and fees the statement balance does not. That shortfall leaves a small balance still open on your loan, which can trigger continued interest, a late fee, or a delay in your lien being released. Always pay the exact figure from your payoff statement, sent the way your servicer specifies.",
       },
+      {
+        question: "Should I use extra money to pay off my mortgage or invest it instead?",
+        answer:
+          "Paying off a mortgage early earns a guaranteed return equal to your interest rate, while investing the same money offers a higher potential return with real market risk attached. On the $300,000-at-6.5% example above, the $200 extra payment saves $103,449 in guaranteed interest; invested instead for the full 30-year term, that same $200 a month grows to roughly $221,236 to $243,994 at a 6.5% to 7% return, before taxes. See the full [mortgage payoff vs. investing comparison](/guides/pay-off-debt-or-invest/) for the complete numbers and how to weigh the guaranteed savings against the uncertain upside.",
+      },
     ],
     sources: [
       { label: "CFPB — How does paying down a mortgage work?", url: "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/" },

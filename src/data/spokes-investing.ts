@@ -502,6 +502,11 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
         answer:
           "No. The balance and withdrawal figures shown are gross, before any income tax you owe on traditional IRA or 401(k) withdrawals. Build in a buffer for your tax bracket, or reduce your monthly withdrawal amount by your estimated tax rate, so the after-tax cash you actually keep matches your budget.",
       },
+      {
+        question: "How much can I withdraw each month without running out?",
+        answer:
+          "That's the reverse question this calculator answers by testing withdrawal amounts against your years remaining. For a direct answer, use the [how much can I withdraw calculator](/investing/how-much-can-i-withdraw-calculator/), which solves for the maximum flat monthly amount your balance supports over a set number of years, instead of testing one withdrawal amount at a time.",
+      },
     ],
     sources: [
       { label: "DOL — Retirement savings and withdrawal guidance", url: "https://www.dol.gov/general/topic/retirement/retirementsavings" },
@@ -510,6 +515,82 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     toolHeading: "How long will your portfolio last?",
     toolSubheading: "Enter your balance and monthly withdrawal to see when the money runs out.",
     preset: { goalMode: false, currentBalance: 1000000, monthlyContribution: 0, annualReturnPct: 6, years: 30 },
-    relatedSlugs: ["compound-interest-calculator", "savings-goal-calculator", "high-yield-savings-calculator"],
+    relatedSlugs: ["compound-interest-calculator", "savings-goal-calculator", "how-much-can-i-withdraw-calculator"],
+  },
+
+  {
+    calculator: "investing",
+    slug: "how-much-can-i-withdraw-calculator",
+    islandId: "withdrawal-reverse",
+    title: "How Much Can I Withdraw in Retirement? Calculator",
+    metaDescription:
+      "Enter your balance, expected return, and years, and this calculator solves for the most you can withdraw each month before your money runs out.",
+    targetKeyword: "how much can i withdraw calculator",
+    estimatedVolume: 720,
+    estimatedKD: 32,
+    h1: "How Much Can I Withdraw in Retirement?",
+    intro:
+      "This calculator solves the reverse of a normal withdrawal projection. Instead of you guessing a monthly amount and checking how long it lasts, enter your balance, an expected annual return, and how many years the money needs to last. The calculator above returns the exact flat monthly withdrawal that brings your balance to zero right on schedule, not early and not with money left unspent.",
+    howItWorks:
+      "The math is the same formula lenders use to size a loan payment, run in reverse. A loan payment is the fixed amount that pays off a balance over a set number of months at a given interest rate. This calculator treats your savings balance the same way: it solves for the fixed monthly withdrawal that exactly pays your balance down to zero over your chosen number of years, given your expected annual return compounding monthly.\n\nThe formula is PMT = balance × i ÷ (1 − (1+i)^−n), where i is your monthly return and n is your total number of months. A higher assumed return raises the sustainable withdrawal, because the balance keeps earning money even as you draw it down. A longer time horizon lowers it, because the same balance has to stretch across more withdrawals.\n\nOur own GA4 top-pages growth routine, which audits real visitor traffic across a portfolio of finance sites every night, keeps surfacing the same pattern on retirement-withdrawal pages: a page ranks for \"withdrawal calculator\" and gets real clicks, but the interactive tool underneath was built to project savings growth, not to solve for a safe withdrawal amount, so the exact question the visitor typed never gets a direct answer. This page exists to close that specific gap with a dedicated reverse solver.",
+    commonMistakes: [
+      "Treating the solved number as a safe target instead of a maximum. This calculator's output withdraws the balance to exactly zero by design; a real plan needs a cushion below that number for a bad market year.",
+      "Assuming one fixed return every year. Real portfolios rise and fall, and a market drop in your first few withdrawal years does more damage than the same drop later, even if the average return over the full period ends up the same.",
+      "Comparing the result directly to the 4% rule without noting the difference. The 4% rule is calibrated to survive historically bad return sequences over 30 years; this calculator assumes one constant return with no down years, so its number often comes out higher than 4% of your balance.",
+      "Ignoring inflation. A flat monthly withdrawal buys less every year prices rise. Some retirees prefer to start below the solved maximum and increase the dollar amount over time instead of spending the full solved figure from year one.",
+      "Forgetting taxes on traditional retirement accounts. The withdrawal amount shown is gross, before income tax on a traditional 401(k) or IRA. A Roth withdrawal of qualified funds does not have this issue.",
+    ],
+    workedExample:
+      "Take a $500,000 balance, a 6% expected annual return, and a 30-year horizon. The calculator solves for a maximum sustainable withdrawal of $2,997.75 a month, or $35,973.03 a year — an initial withdrawal rate of about 7.19% of the starting balance. That is well above the commonly cited 4% rule's $1,666.67 a month on the same balance, because the 4% rule builds in a safety margin for bad market sequences that a single constant-return solve does not. A retiree using this calculator's output as a real spending plan, rather than a ceiling, should budget meaningfully below the solved number.",
+    faqs: [
+      {
+        question: "How much can I withdraw from my portfolio each month?",
+        answer:
+          "It depends on your balance, your expected return, and how many years the money needs to last. Enter those three numbers into the calculator above, and it solves for the exact flat monthly withdrawal that brings your balance to zero at the end of that period, using the same amortization math a loan payment uses in reverse.",
+      },
+      {
+        question: "Why is this calculator's number higher than the 4% rule?",
+        answer:
+          "This calculator assumes one constant annual return every year for the full period and solves for the maximum withdrawal that exactly reaches zero. The 4% rule, introduced by financial planner William Bengen in a 1994 Journal of Financial Planning paper, is calibrated against real historical market sequences, including bad ones, so it builds in a safety margin this calculator's single-rate math does not. Use this tool's output as an upper bound, not a target.",
+      },
+      {
+        question: "What return rate should I use?",
+        answer:
+          "A common planning range for a diversified, stock-heavy portfolio is 5% to 7% annually, after adjusting for typical inflation. Test a lower rate, like 4% or 5%, alongside your primary assumption to see how much the sustainable withdrawal drops if returns come in weaker than expected.",
+      },
+      {
+        question: "Does this calculator account for Social Security or a pension?",
+        answer:
+          "No. It solves purely for what your investment balance alone can sustain. If you expect Social Security, a pension, or other income in retirement, you generally need less from savings than the number shown here, since that income covers part of your spending directly.",
+      },
+      {
+        question: "Is this the same as a safe withdrawal rate calculator?",
+        answer:
+          "It answers a related but different question. A safe withdrawal rate calculator typically models random or historical year-to-year returns to find a rate that survives most market scenarios. This calculator solves a single deterministic scenario: one constant return, exactly depleting the balance on schedule. Use the 4% rule as a more conservative cross-check.",
+      },
+      {
+        question: "How is this different from the regular withdrawal calculator?",
+        answer:
+          "The [withdrawal calculator](/investing/withdrawal-calculator/) works forward: you pick a monthly withdrawal amount, and it shows how many years the balance lasts. This calculator works backward: you pick how many years the money needs to last, and it solves for the withdrawal amount. Both use the same underlying return assumption; they just start from opposite ends of the same math.",
+      },
+      {
+        question: "Should I spend the full amount this calculator shows?",
+        answer:
+          "Most planners would say no. The solved figure is the mathematical maximum for the exact return you entered, with zero room for a weak market year. A common approach is to withdraw a smaller amount in years the portfolio underperforms and let the surplus carry over in strong years, rather than locking in the solved maximum as a fixed monthly check.",
+      },
+      {
+        question: "Does the withdrawal amount change over time in this calculator?",
+        answer:
+          "No, it solves for one flat monthly amount held constant for the whole period. It does not increase for inflation the way some 4%-rule implementations do. If you want your spending power to keep pace with prices, plan to withdraw less than the solved number in early years so you have room to raise it later.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Planning for retirement", url: "https://www.investor.gov/additional-resources/retirement-toolkit" },
+      { label: "DOL — Retirement savings and withdrawal guidance", url: "https://www.dol.gov/general/topic/retirement/retirementsavings" },
+    ],
+    toolHeading: "Solve for your maximum sustainable withdrawal",
+    toolSubheading: "Enter your balance, return, and years — see the most you can take out each month.",
+    preset: { currentBalance: 500000, annualReturnPct: 6, years: 30 },
+    relatedSlugs: ["withdrawal-calculator", "savings-goal-calculator", "compound-interest-calculator"],
   },
 ];

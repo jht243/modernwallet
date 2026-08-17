@@ -115,3 +115,53 @@ export function monthlyNeededForGoal(
 
 function round2(n: number): number { return Math.round(n * 100) / 100; }
 function round4(n: number): number { return Math.round(n * 10000) / 10000; }
+
+/**
+ * Reverse withdrawal solver: the maximum flat monthly withdrawal a starting balance can sustain
+ * for exactly `years`, given an expected annual return, before the balance reaches zero. This is
+ * the ordinary-annuity amortization formula — the same shape as `monthlyNeededForGoal` above, but
+ * solving for a withdrawal that fully depletes a balance instead of a contribution that builds one
+ * toward a target. Pure addition: does not read or alter `computeInvestment` or any other export's
+ * behavior, so every existing page using this file is unaffected.
+ *
+ * PMT = balance · i / (1 − (1+i)^−n), monthly compounding to match the rest of this file.
+ */
+export function maxSustainableWithdrawal(
+  currentBalance: number, annualReturnPct: number, years: number, compoundsPerYear = 12,
+): number | null {
+  const months = Math.round(years) * 12;
+  if (!(months > 0) || !(currentBalance > 0)) return null;
+  const i = effectiveMonthlyRate(annualReturnPct, compoundsPerYear);
+  if (i <= -1) return null;
+  if (i === 0) return round2(currentBalance / months);
+  const annuityFactor = (1 - Math.pow(1 + i, -months)) / i;
+  if (!(annuityFactor > 0)) return null;
+  return round2(currentBalance / annuityFactor);
+}
+
+export interface WithdrawalYear {
+  year: number;
+  balance: number; // remaining balance at year end (floored at 0)
+  totalWithdrawn: number; // cumulative amount withdrawn through this year
+}
+
+/** Companion to `maxSustainableWithdrawal` — the year-by-year balance path at that solved rate,
+ *  for display. Balance should reach ~0 by the final year (rounding may leave a small residual). */
+export function withdrawalSchedule(
+  currentBalance: number, annualReturnPct: number, years: number, monthlyWithdrawal: number, compoundsPerYear = 12,
+): WithdrawalYear[] {
+  const yrs = Math.round(years);
+  if (!(yrs > 0) || !(currentBalance > 0)) return [];
+  const i = effectiveMonthlyRate(annualReturnPct, compoundsPerYear);
+  let balance = currentBalance;
+  let withdrawn = 0;
+  const schedule: WithdrawalYear[] = [];
+  for (let m = 1; m <= yrs * 12; m++) {
+    balance = Math.max(0, balance) * (1 + i) - monthlyWithdrawal;
+    withdrawn += monthlyWithdrawal;
+    if (m % 12 === 0) {
+      schedule.push({ year: m / 12, balance: round2(Math.max(0, balance)), totalWithdrawn: round2(withdrawn) });
+    }
+  }
+  return schedule;
+}

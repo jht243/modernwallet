@@ -34,6 +34,7 @@ import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
 import InterestPerDayCalculator from "./InterestPerDayCalculator";
 import TaxableVsTaxDeferredCalculator from "./TaxableVsTaxDeferredCalculator";
 import CreditCardPayoffCalculator from "./CreditCardPayoffCalculator";
+import WithdrawalReverseCalculator from "./WithdrawalReverseCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -97,6 +98,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,
+  // GA4 top-pages pass (2026-08-17): reverse withdrawal solver — the inverse of the forward
+  // /investing/withdrawal-calculator/ tool (balance + years → max sustainable monthly withdrawal).
+  "withdrawal-reverse": WithdrawalReverseCalculator,
 };
 
 interface Props {
