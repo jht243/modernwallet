@@ -7106,7 +7106,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Fidelity — Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
       { label: "SEC — Fidelity ZERO Total Market Index Fund summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/819118/000081911825000478/filing10367.htm" },
     ],
-    relatedComparisons: ["voo-vs-spy", "etf-vs-mutual-fund", "index-fund-vs-etf", "financial-advisor-vs-financial-planner"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "voo-vs-spy", "etf-vs-mutual-fund", "index-fund-vs-etf", "financial-advisor-vs-financial-planner"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
@@ -7388,7 +7388,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
       { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity", "vanguard-vs-schwab", "voo-vs-spy", "brokerage-vs-ira"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "voo-vs-spy", "brokerage-vs-ira"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
@@ -7480,7 +7480,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
       { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity", "fidelity-vs-schwab", "voo-vs-spy", "index-fund-vs-etf"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "fidelity-vs-schwab", "voo-vs-spy", "index-fund-vs-etf"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },

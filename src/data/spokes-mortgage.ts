@@ -466,6 +466,11 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Run the refinance break-even math above first — if refinancing clears it, that's usually the highest-value move since it lowers every future payment. If your rate is already competitive, compare your mortgage rate to what you'd earn investing: a mortgage rate above what you can safely earn elsewhere favors paying extra toward principal, while a low locked-in rate often favors investing the difference instead. See our [pay off mortgage early calculator](/mortgage/early-payoff-calculator/) and the [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide for the full decision framework.",
       },
+      {
+        question: "What exactly am I paying for inside refinance closing costs?",
+        answer:
+          "See [mortgage refinance closing costs](/guides/mortgage-refinance-closing-costs/) for a full line-item breakdown of appraisal, title, origination, and prepaid-item fees, plus how a no-closing-cost refinance trades a lower upfront bill for a higher rate or larger balance.",
+      },
     ],
     sources: [
       { label: "CFPB — Should I refinance my mortgage?", url: "https://www.consumerfinance.gov/ask-cfpb/when-is-it-a-good-time-to-refinance-my-mortgage-en-1939/" },

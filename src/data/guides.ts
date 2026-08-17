@@ -129,6 +129,7 @@ export const GUIDES: Guide[] = [
       { question: "How much can I contribute to my 401(k) in 2026?", answer: "You can contribute up to $24,500 to a 401(k) in 2026. If you are 50 or older, you can add an $8,000 catch-up for $32,500 total. Always contribute enough to capture your full employer match first." },
       { question: "What is sequence-of-returns risk?", answer: "Sequence-of-returns risk is the danger of poor investment returns early in retirement. Big losses in your first few years, combined with withdrawals, can permanently reduce how long your money lasts. The same average return in a different order of years can produce very different outcomes." },
       { question: "What happens if I withdraw retirement funds before 59½?", answer: "Withdrawing from most retirement accounts before age 59½ usually triggers a 10% early-withdrawal penalty plus income tax. Some exceptions apply, but the penalty can meaningfully cut your savings. Planning your withdrawal timing helps you avoid this cost." },
+      { question: "Should health, not just money, factor into my retirement age?", answer: "Yes — the numbers only tell half the story. See our [ideal retirement age for your health](/guides/ideal-retirement-age-for-your-health/) guide for how physical demands, chronic conditions, and caregiving responsibilities can push the right retirement age earlier or later than your savings alone would suggest." },
     ],
     sources: [
       { label: "IRS — Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
@@ -2037,6 +2038,7 @@ export const GUIDES: Guide[] = [
       { question: "Do I need a financial advisor to manage an inheritance?", answer: "It depends on the size and complexity. A simple inheritance you can pay off debt with, save, and invest in index funds usually doesn't need one. A large or complex inheritance — a concentrated stock position, a business interest, or multiple retirement accounts — is where professional advice tends to earn its cost." },
       { question: "How long do I have to decide what to do with an inherited retirement account?", answer: "Most non-spouse beneficiaries must empty an inherited 401(k) or IRA within 10 years under the SECURE Act, though some withdrawals may be required annually during that window. See our 401(k) beneficiary rules guide for the full breakdown, since the exact deadline and tax treatment depend on the account type and your relationship to the original owner." },
       { question: "Is my inheritance protected if I'm married?", answer: "An inheritance is separate property by default, even if you're married, but commingling it with joint funds can convert it to marital property. See [is an inheritance marital property](/guides/is-inheritance-marital-property/) for how to keep it protected." },
+      { question: "What if the inheritance includes a house I plan to sell?", answer: "You'll likely owe little or no capital gains tax if you sell soon after inheriting, since most inherited real estate gets a step-up in basis to its value on the date of death. See [capital gains tax on inherited property](/guides/capital-gains-tax-on-inherited-property/) for exactly how that basis reset is calculated and what counts as 'soon.'" },
       { question: "Does an inheritance affect government benefits like SSI?", answer: "It can, if you or someone in your household receives Supplemental Security Income. SSI has a strict $2,000 resource limit for an individual, and an inheritance you don't report or spend down in time can end that monthly payment. See [will an inheritance affect your SSI benefits](/guides/ssi-and-inheritance/) for the reporting deadline and how a special needs trust or ABLE account can protect the money." },
     ],
     sources: [
@@ -2182,6 +2184,7 @@ export const GUIDES: Guide[] = [
       { question: "Does applying for a balance transfer card hurt my credit score?", answer: "A formal application triggers a hard inquiry, which typically causes a small, temporary dip. Checking your prequalification odds first uses a soft pull instead, which doesn't affect your score at all." },
       { question: "Why was I approved for a lower limit than my balance?", answer: "Issuers set your limit based on your full credit profile, not just the size of the debt you're trying to move, so a lower-than-expected limit is common even with a decent score. If this happens, you can transfer what fits and leave the rest on your original card, or consider splitting the balance across two offers." },
       { question: "What's next if my balance transfer application is denied?", answer: "Read the adverse action notice for the specific reason, since it's usually tied to utilization, credit history length, or debt-to-income ratio rather than the score alone. Paying down existing balances before reapplying, or exploring a personal loan or nonprofit credit counseling in the meantime, are the most common next steps." },
+      { question: "Which balance transfer cards should I actually compare once I know my odds?", answer: "See our [best balance transfer credit cards](/roundup/best-balance-transfer-credit-cards/) roundup for a side-by-side of intro-APR windows, transfer fees, and late-fee policies across issuers, once you have a sense of the score range you're likely to qualify in." },
     ],
     sources: [
       { label: "myFICO — Credit Score Education", url: "https://www.myfico.com/credit-education/credit-scores" },
@@ -2236,6 +2239,7 @@ export const GUIDES: Guide[] = [
       { question: "What's the difference between true 0% APR and deferred interest on a balance transfer?", answer: "A true 0% intro APR card charges interest only on the remaining balance going forward once the period ends. A deferred-interest offer can charge interest retroactively on the full original amount if any balance is left — check your card's specific terms for the words \"deferred interest\" to know which one you have." },
       { question: "Should I choose a balance transfer card or a personal loan?", answer: "A balance transfer card can be cheaper if you can pay off the balance within the 0% window, since a personal loan charges interest from day one. If you need longer than the intro period to pay it off, a fixed-rate [personal loan](/personal-loan/) often ends up cheaper — run both scenarios before deciding." },
       { question: "Is a debt consolidation loan or a balance transfer card better?", answer: "A balance transfer card is usually cheaper if you can pay off the full balance inside the 0% intro period, since you avoid interest entirely during that window. A debt consolidation loan is usually the better fit for a larger balance, a longer payoff timeline, or a credit profile that won't qualify for the best 0% offers, since loan approval weighs income and debt-to-income ratio more heavily than a single credit score cutoff." },
+      { question: "How do two well-known no-fee balance transfer cards actually compare?", answer: "See [Citi Diamond Preferred vs Citi Simplicity](/compare/citi-diamond-preferred-vs-citi-simplicity/) for a head-to-head of a longer 0% transfer window against a no-late-fee, no-penalty-APR design — a good illustration of the tradeoff between a longer runway and built-in forgiveness." },
     ],
     sources: [
       { label: "CFPB — Credit Cards", url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/" },
@@ -2583,6 +2587,11 @@ export const GUIDES: Guide[] = [
       question: "Is it better to pay off my credit card or invest?",
       answer:
         "Paying off a high-APR credit card usually wins, because avoiding 24% interest works like a guaranteed 24% return with no risk. Capture any employer 401(k) match first, then focus on the card. See our guide on whether to pay off debt or invest for the full tradeoff.",
+    },
+    {
+      question: "What if I fall behind and a collector contacts me about the balance?",
+      answer:
+        "You have specific rights under federal law once a card balance goes to collections, including the right to a written debt validation notice and limits on when and how often a collector can call. See [how to deal with debt collectors](/guides/how-to-deal-with-debt-collectors/) for the exact steps to protect yourself.",
     },
   ],
   sources: [
