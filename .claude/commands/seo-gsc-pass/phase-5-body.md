@@ -21,6 +21,18 @@ The `/seo-gsc-pass` run has EXACTLY TWO human stops, and this phase is NOT one o
 Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going until you reach Stop 2 (Phase 8).
 
 
+## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
+
+Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. The Phase 4 audit only re-reviews net-new pages — it does **not** re-scan body edits — so a tell you introduce here ships unaudited. Before finalizing any added section/sentence, strip these:
+- Throat-clearing openers ("When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…").
+- The "it's not just X, it's Y" cadence; empty tricolons ("efficient, effective, and scalable"); hedged non-conclusions ("ultimately, the right choice depends on your needs").
+- Filler verbs/phrases: "delve into", "leverage" (verb), "navigate the complexities of", "unlock the power of", "it's worth noting that", "a testament to".
+- Never call software, a model, a tool, pricing, or a verdict "honest"/"honestly" — software has no honesty. Say the point directly ("the caveat is…", "the short answer is…"). `grep -inE "\bhonest"` your added text and cut every tech-context hit.
+- Em-dash cap: at most **2 em-dashes per page, never two in the same section**. COUNT them in your added prose (`grep -o "—" | wc -l`); recast with commas, colons, periods, or parentheses and vary sentence shape.
+- Anthropomorphic "death" language for software/tech — never write that a demo, feature, product, tool, model, or technology "died", "is dead", was "killed", is "on life support", or "flatlined". Say what literally happened — it never shipped, was abandoned, stopped being used, or lost support.
+- Vague abstractions — if a phrase cannot survive a "what does this literally mean?" test, replace it with the specific noun, number, or example.
+Write with concrete specifics and vary sentence shape.
+
 ## First-mention company link rule (MANDATORY — workflow-wide, added 2026-07-07)
 
 **Writers (new content, body/enrich edits, tools):** the FIRST time a page names ANY external company, product, tool, model, standard, or cited study, that mention MUST link to its official primary source (the vendor's/regulator's own site — never an aggregator). Link only the first mention of each entity. **Exception — render-time auto-linking:** if THIS project auto-links entities at render time (an ENTITY_LINKS-style registry — check `src/utils/` or the templates before writing), those registered entities must stay PLAIN TEXT to avoid double-linking; **check the registry — never assume an entity is in it.** If the project has no auto-linker, or the entity is not registered, hand-link it inline. If an entity will recur across many pages and the project HAS a registry, extend the registry instead (preferred) and keep the name plain. Never hand-write a referral URL.

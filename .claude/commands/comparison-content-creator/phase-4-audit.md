@@ -51,6 +51,16 @@ A page with any/all of these notes and no hard-fail issues still passes audit.
 
 ---
 
+## ‼️ DEPTH GATE — deterministic, blocks the phase (MANDATORY — added 2026-08-17, ported from `/new-site` via seo-gsc-pass)
+
+**Not a reviewer judgment call — no subagent opinion overrides it.** Applies to **net-new `article`-format pages** created in Phase 3 only; in-place **Phase 3b enrichment edits are additive by rule and judged on edit discipline, never against a whole-page floor.**
+
+**Measure from source** (or run `npm run check-depth` if Phase 0 found it — a non-zero exit blocks this phase): for each net-new page, concatenate the reader-facing prose (intro + section bodies + FAQ answers + verdict), excluding title, meta description, schema, `inlineCta`/CTA boilerplate, and code blocks, and word-count it with an actual command (`wc -w`), never by eye.
+
+**Floors** (from `.claude/commands/seo-gsc-pass/phase-3-new-content.md`): comparison/review 1,500 · persona 1,400 · hub/worth-it/explainer 1,200 · cost 1,000 · editorial 600; **explainer 1,200 is the default**. A comparison / alternatives / roundup page is a **comparison-type page → 1,500 floor.** Any net-new page under its floor is a **HARD FAIL** — hand back to Phase 3 for expansion with real substance and re-measure. Not fixable by padding: the anti-AI-filler and proprietary-anchor bars still apply on the same pass, so expansion must add real information. On runs of 3+ net-new article pages, also print `passing / failing / median`.
+
+---
+
 On any failure, hand specific notes back to the writer logic and re-run — **Phase-3 logic for a net-new page, Phase-3b logic for an enrichment edit.** **Max 2 rework attempts**, then STOP and escalate. In this autonomous workflow, "escalate" means: for a **net-new page**, mark it `draft: true` (noindex, excluded from sitemap + IndexNow), record the reason, and continue; for an **enrichment edit** that can't pass, **revert that page's edit** (`git checkout -- <file>` so the original stays intact), record the reason, and continue. One failing item never blocks the others. Auto-continue to Phase 5.
 
 

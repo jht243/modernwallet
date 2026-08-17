@@ -39,6 +39,20 @@ A page with any/all of these notes and no hard-fail issues still passes audit.
 
 ---
 
+## ‼️ DEPTH GATE — deterministic, blocks the phase (MANDATORY — added 2026-08-17, ported from `/new-site` via mindmap-pass)
+
+**This is not a reviewer judgment call and no subagent opinion overrides it.** Run it as the FIRST action of this phase and again as the last. It applies to `article` format rows only — spec-only (non-article) rows are exempt, since their deliverable is a spec, not prose.
+
+**Measurement — use the first rung that applies:**
+1. **If Phase 0 found a `check-depth` script in this repo** (`npm run check-depth`, installed by `/new-site`): run it. A non-zero exit **blocks this phase**. This is authoritative — it measures the built output, so it catches thinness the source view can miss.
+2. **Otherwise, measure from source.** For each new page record, concatenate every reader-facing prose field (intro + section bodies + FAQ answers + verdict) — excluding title, meta description, schema, `inlineCta`, CTA boilerplate, and code blocks — and word-count it. Do this with an actual command (e.g. pipe the extracted text through `wc -w`), never by eyeballing length.
+
+**Verdict:** compare each page against the floors table in `phase-3-new-content.md` (comparison/review 1,500 · persona 1,400 · hub/worth-it/explainer 1,200 · cost 1,000 · editorial 600; **explainer 1,200 is the default** for anything that doesn't clearly match another type). Any page under its floor is a **HARD FAIL** — hand it back to Phase 3 for expansion with real substance, and re-measure. It is not fixable by padding: a page that clears the floor but trips the AI-filler gate below fails anyway, so expansion must add actual information.
+
+**Report the distribution, not per-page verdicts.** Print `passing / failing / median` across all article pages this run. Page-by-page review is structurally blind to run-wide thinness — a 300-word page reads as concise and on-intent in isolation, and only the distribution shows that every page is one. On runs of 3+ article pages, a median sitting within 10% of the floor is itself a finding: record it as `depth: median {N} barely clears floor {F}` in the summary even when every page individually passes.
+
+---
+
 On any failure, hand specific notes back to Phase-3 logic and re-run. Max 2 rework attempts, then STOP and escalate.
 
 ---

@@ -33,6 +33,23 @@ Before writing, research the topic using search tools. Gather current statistics
 - Make sure all new pages are properly linked within the correct hub/spoke structure.
 - Don't dismiss a keyword just because tools show zero monthly searches — real demand often appears in GSC impressions weeks before search-volume tools register it. When a question-format zero-volume variant is genuinely the best fit for a heading or FAQ — i.e. no stronger, more-relevant keyword belongs in that slot — use it as the H2/H3 or FAQ question to capture long-tail demand. Sources: Google Autocomplete, People Also Ask, and the natural language customers use (e.g. "Can [tool] handle HIPAA compliance for small clinics?"). This is an OPTION to widen long-tail coverage, NOT a quota: never force a zero-volume keyword into a slot a better-targeted keyword belongs in. The 2–3 primary-keyword heading slots above remain non-negotiable.
 
+**Depth floors (MANDATORY — added 2026-08-17, ported from `/new-site` via mindmap-pass):**
+- Every article page has a **minimum body word count** by page type. These are **floors, not targets** — a page under its floor does not compete, and Phase 4 hard-fails it. Body words = reader-facing prose only (intro + section bodies + FAQ answers + verdict); title, meta, nav/header/footer, schema, CTA boilerplate, and code blocks do NOT count.
+
+  | Page type | Floor (body words) |
+  |---|---|
+  | comparison (`X vs Y`) | 1,500 |
+  | review | 1,500 |
+  | persona / audience page (`for [audience]`) | 1,400 |
+  | hub / section index | 1,200 |
+  | worth-it | 1,200 |
+  | explainer / how-to / spoke (**the default for anything else**) | 1,200 |
+  | cost / pricing | 1,000 |
+  | editorial (about / methodology) | 600 |
+
+- Hitting the floor with padding is a **worse** failure than missing it — the anti-AI-filler bar and the proprietary-anchor bar still apply in full, and Phase 4 checks them on the same pass. If you cannot reach the floor without filler, the topic is too thin for its own page: STOP and flag the row for merging into a related page rather than shipping a padded one.
+- Record the final body word count for each page you write and hand it to Phase 4 with the page.
+
 **Content Quality:**
 - Match search intent fully.
 - Write accurate, original, useful content with practical advice.
