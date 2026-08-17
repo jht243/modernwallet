@@ -35,6 +35,7 @@ import InterestPerDayCalculator from "./InterestPerDayCalculator";
 import TaxableVsTaxDeferredCalculator from "./TaxableVsTaxDeferredCalculator";
 import CreditCardPayoffCalculator from "./CreditCardPayoffCalculator";
 import WithdrawalReverseCalculator from "./WithdrawalReverseCalculator";
+import PtoCashoutCalculator from "./PtoCashoutCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -91,6 +92,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Credit card payoff — competitor-monitor pass (2026-08-12): fixed-payment payoff timeline vs. a
   // minimum-payment-only path computed side by side, using the issuer minimum-payment formula.
   "credit-card-payoff": CreditCardPayoffCalculator,
+  // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
+  // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
+  "pto-cashout": PtoCashoutCalculator,
   // Business Financing pillar — MCA, invoice factoring, business line of credit.
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,

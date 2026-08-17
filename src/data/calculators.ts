@@ -1085,6 +1085,69 @@ export const CALCULATORS: CalculatorDef[] = [
       targetMonths: 24,
     },
   },
+  {
+    id: "pto-cashout",
+    islandId: "pto-cashout",
+    label: "PTO Cash-Out",
+    navOrder: 33,
+    metaTitle: "PTO Cash-Out Calculator: Sell Back Leave Days",
+    metaDescription:
+      "Free PTO cash-out calculator. See your gross payout, an estimated net-of-tax payout, and what selling leave days is really worth versus taking time off.",
+    targetKeyword: "pto cash out calculator",
+    h1: "PTO Cash-Out Calculator",
+    intro:
+      "A PTO cash-out calculator turns unused paid time off, vacation, or leave days into a dollar amount by finding your daily pay rate and multiplying it by the number of days you choose to sell back. Enter your salary or hourly rate, how many leave days you have available, and how many you want to cash out, and the calculator above returns the gross payout, an estimated net payout after a simple flat tax-rate estimate, and what those same days would have been worth as paid time off instead. For example, someone earning $72,000 a year on a standard five-day work week has a daily rate of about $276.92, so selling 5 days produces a gross payout of about $1,384.62, or roughly $1,080 after a 22% tax-rate estimate.",
+    howItWorks:
+      "Selling back leave days works on one simple idea: your employer already pays you a certain amount for each day you work, so cashing out a day of leave pays that same daily rate instead of the day being spent resting. The calculator's job is to find that daily rate accurately, then do the multiplication for you.\n\nIf you're paid an annual salary, the calculator divides your salary by the number of paid work days in a year. It assumes a fixed number of work days per week, all year, with no unpaid weeks and no overtime folded in: work days per week times 52 weeks. A $72,000 salary on a standard five-day week gives 260 work days a year, so the daily rate is $72,000 divided by 260, which comes out to $276.92. Selling 5 days at that rate gives a gross payout of $276.92 times 5, or $1,384.62. If you're paid monthly, the calculator first multiplies your monthly salary by 12 to get an annual figure, then runs the same formula. If you're paid hourly, the daily rate is simpler: your hourly rate times your standard hours in one workday, typically 8. A $35-an-hour employee on an 8-hour day has a daily rate of $280, with no overtime premium included in that figure.\n\nOnce the calculator has a daily rate, the gross payout is just that rate times the number of days you sell. There's no rounding trick and no bonus for selling more days at once. It's a straight multiplication, the same way most employer payroll systems price out a leave-day cash-out or an unused-vacation payment at termination.\n\nThe improvement over a plain gross-payout number is the net estimate. A PTO cash-out is usually paid as a separate, lump-sum item on a paycheck rather than blended into your regular salary, and the [IRS](https://www.irs.gov/publications/p15) treats amounts like this as \"supplemental wages.\" Employers are generally required to withhold supplemental wages at a flat rate, currently 22% for most employees (37% only applies once an employee's supplemental wages for the year pass $1 million), rather than using your regular paycheck's withholding formula. That flat rate is often higher or lower than what you'd actually owe once your full year's income is taxed, so the number on your pay stub the week you cash out leave isn't necessarily your final tax bill on that money. It's just what gets withheld up front. Entering a tax-rate estimate above lets the calculator show a rough net figure using the same idea: gross payout times one minus the rate you enter. On the $1,384.62 example above, a 22% estimate withholds about $304.62, leaving roughly $1,080.00 net. This is a simplified planning number, not a payroll calculation — it doesn't account for Social Security or Medicare withholding, state tax rules, or your employer's specific payroll setup, all of which can shift the real number in either direction.\n\nThe calculator also shows what those same days would have been worth as paid time off, using the identical daily rate. That number matches the gross payout exactly, on purpose. Selling a leave day doesn't manufacture extra value or lose any either. Your employer pays you the same daily rate whether you take the day off or exchange it for cash. The actual decision isn't a math problem; it's a tradeoff between having cash now and having rest, flexibility, or a buffer of paid days later. Someone who is already stretched thin on time off, or who expects a slow season where those days would go unused anyway, tends to lean toward selling. Someone who values the recovery time, or who is worried about being able to take leave later in the year, tends to lean toward keeping the days. The calculator's only job is to make sure both sides of that tradeoff are priced the same way, so the decision comes down to what you actually need rather than a guess about which option pays more.\n\nTwo more assumptions worth naming plainly: the calculator does not model overtime pay, shift differentials, commissions, or bonuses on top of a base rate, and it does not apply any state-specific tax or leave-payout rules. Some employers cap how many days can be sold in a year, some only allow a cash-out during a specific open-enrollment window, and some public-sector and military leave-sale programs have their own eligibility rules and formulas set by policy rather than a simple daily-rate calculation. Check your own employer's leave policy or HR department for the rules that actually apply to your payout.",
+    faqs: [
+      {
+        question: "Can I sell back unused PTO?",
+        answer:
+          "It depends entirely on your employer's policy. There's no general legal right to cash out unused paid time off in most private-sector jobs. Some employers offer a \"PTO sell-back\" or \"vacation buyback\" option, often once a year or tied to a use-it-or-lose-it deadline, letting employees convert a limited number of days into pay instead of losing them. Others don't offer any cash-out option at all and simply carry leave over, cap it, or forfeit it. Check your employee handbook or ask HR whether a sell-back program exists and how many days it allows.",
+      },
+      {
+        question: "Is a PTO cash-out taxed differently than my regular paycheck?",
+        answer:
+          "The total tax you owe for the year is calculated the same way regardless of how the income arrived, but the amount withheld up front often isn't. A PTO cash-out is commonly treated as a \"supplemental wage\" for withholding purposes, and the [IRS](https://www.irs.gov/publications/p15) generally has employers withhold supplemental wages at a flat rate, 22% for most employees as of the current rate, rather than running it through your regular paycheck's withholding formula. That can make the check look smaller or larger than expected compared to a normal paycheck of the same size. Your actual tax liability gets reconciled when you file your return; the flat withholding rate is just what's taken out at the time of payment.",
+      },
+      {
+        question: "Does selling leave days affect my other benefits?",
+        answer:
+          "It can, depending on how your employer structures benefits and accruals. Some plans calculate future PTO accrual, retirement contribution matching, or short-term disability pay using your leave balance or a rolling average of pay that includes lump-sum leave payments, in which case a cash-out could nudge those numbers slightly. Others treat a leave sell-back as a one-time payment with no effect on ongoing benefit calculations. Because this varies a lot by employer and plan design, ask your HR or benefits team directly before selling a large number of days if you're relying on any benefit that's tied to your leave balance or average pay.",
+      },
+      {
+        question: "What is a holiday purchase scheme?",
+        answer:
+          "A holiday purchase scheme runs the opposite direction from a PTO cash-out: instead of trading unused leave days for cash, an employee pays to buy extra paid leave days on top of their standard allowance, usually through a payroll deduction spread across the year. These schemes are more common outside the U.S., particularly in the U.K. and Ireland, where many employers offer an annual window to buy or sell a set number of holiday days as part of flexible-benefits enrollment. The math is the same daily-rate idea in reverse: the cost of buying a day is typically close to that day's normal pay rate, deducted from future paychecks instead of added to one.",
+      },
+      {
+        question: "How many PTO days can employers let you sell back?",
+        answer:
+          "There's no universal number. It's set entirely by each employer's policy, and many cap it well below your full leave balance to make sure employees still take some time off. A common structure allows selling back only the days earned beyond a minimum carryover amount, or a flat cap like five or ten days per year, often tied to a specific enrollment period rather than being available year-round. Some public-sector and military leave-sale programs work differently again, with their own statutory limits; for example, federal employees who separate from service receive a lump-sum payment for unused annual leave under rules set by the Office of Personnel Management, a different mechanism from a private-employer sell-back program. Always check your specific plan's cap before assuming a number.",
+      },
+      {
+        question: "Should I sell my leave days or take the time off?",
+        answer:
+          "There's no universally correct answer, because the dollar value is identical either way. The calculator above deliberately shows the same daily rate on both sides. The decision comes down to what you need more right now: cash for a specific expense, debt payoff, or savings goal, versus rest, flexibility, or a buffer of paid days for later in the year. Check whether your employer caps how many days you can carry over or requires you to use leave by a certain deadline, since a use-it-or-lose-it policy can make selling the more practical choice even if you'd otherwise prefer the time off.",
+      },
+    ],
+    sources: [
+      { label: "IRS Publication 15 (Circular E) — Employer's Tax Guide, Section 7: Supplemental wages", url: "https://www.irs.gov/publications/p15" },
+      { label: "U.S. Office of Personnel Management — Fact Sheet: Lump-Sum Payments for Annual Leave", url: "https://www.opm.gov/policy-data-oversight/pay-leave/leave-administration/fact-sheets/lump-sum-payments-for-annual-leave/" },
+    ],
+    defaultPreset: {
+      payBasis: "annual",
+      annualSalary: 72000,
+      monthlySalary: 6000,
+      hourlyRate: 35,
+      hoursPerWeek: 40,
+      hoursPerDay: 8,
+      workDaysPerWeek: 5,
+      daysAvailable: 15,
+      daysToSell: 5,
+      taxRatePct: 22,
+    },
+  },
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,

@@ -82,6 +82,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/roundup/best-credit-cards-for-fair-credit/", label: "Rebuilding credit? Compare cards for fair credit" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Consider a 0% balance transfer card" },
   ],
+  "pto-cashout": [
+    { href: "/budget/", label: "Plan where the payout goes in your budget" },
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/investing/savings-goal-calculator/", label: "Build an emergency fund instead" },
+    { href: "/personal-loan/", label: "Comparing a personal loan instead of cashing out leave?" },
+  ],
   "tax-resolution": [
     { href: "/guides/tax-tips/", label: "Proactive tax planning (if you're current)" },
     { href: "/mortgage/home-affordability-calculator/", label: "Back taxes and mortgage approval" },

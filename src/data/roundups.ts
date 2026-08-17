@@ -5684,6 +5684,209 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Best Balance Transfer Credit Cards (competitor-monitor pass 2026-08-17) ─
+  {
+    slug: "best-balance-transfer-credit-cards",
+    title: "Best Balance Transfer Credit Cards of 2026",
+    metaDescription:
+      "The best balance transfer credit cards compared across six issuers: intro APR window, fee structure, late-fee policy, and rewards. No issuer paid for placement.",
+    targetKeyword: "best balance transfer credit cards",
+    category: "balance transfer credit cards",
+    angle: "best",
+    h1: "Best Balance Transfer Credit Cards of 2026",
+    intro:
+      "A balance transfer credit card can eliminate a big chunk of your credit card interest for a year or more, but only if you pick a card that fits your balance size, payoff timeline, and credit profile. Many roundups on this topic stick to a single issuer's lineup, which skips issuers known for longer intro windows, stronger forgiveness policies, or rewards you can earn while you pay debt down.\n\nWe compared six widely available balance transfer cards from six different issuers: Citi, Wells Fargo, Chase, Discover, Bank of America, and U.S. Bank. Balance transfer offers change often. Intro APR length, transfer fees, and annual fees can shift with little notice, so treat every description below as directional and confirm the current offer on the issuer's own site before you apply. No issuer paid for placement in this roundup.\n\nNot sure you'll qualify yet? See [balance transfer approval odds by credit score](/guides/balance-transfer-credit-card-approval-odds/) before you apply. And if you're weighing a dedicated transfer card against a rewards card with a transfer offer, [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) walks through the decision.",
+    rankingCriteria:
+      "We ranked these six cards on five factors that determine how much a balance transfer actually saves you: the length of the 0% intro APR window relative to the rest of the market, the transfer fee structure, forgiveness features like late-fee and penalty-APR policies, how accessible the card is across credit profiles, and whether you earn rewards on the card during the transfer period.\n\nIntro-window length and fee structure carried the most weight, since those two factors drive most of the real dollar savings on a typical transfer. Forgiveness features came next, because a single missed payment on a card without those protections can trigger a penalty APR that erases much of the value of the 0% offer. Rewards earned during the transfer period, and overall approval accessibility, weighed less, since they only matter once the core math already works in your favor. No issuer paid for placement, and we did not accept compensation from any card issuer for ranking placement in this roundup.",
+    options: [
+      {
+        name: "Citi Simplicity® Card",
+        bestFor: "No late fees or penalty APR, ever",
+        description:
+          "The [Citi Simplicity® Card](https://www.citi.com/credit-cards/citi-simplicity-credit-card) is built around forgiveness rather than rewards. Citi markets this card with no late fees and no penalty APR at any point, which matters if you're worried a single missed due date could wreck the value of your 0% offer. It also carries no annual fee.\n\nSimplicity has historically offered one of the longer 0% intro windows among no-annual-fee balance transfer cards, though the exact length shifts over time, so confirm the current offer before applying. There's no rewards program, fitting a card built for debt payoff rather than ongoing spending.",
+        strengths: [
+          "No late fees, ever, per Citi's own card terms",
+          "No penalty APR, so a missed payment doesn't blow up your rate",
+          "No annual fee",
+          "Historically one of the longer 0% intro balance transfer windows among no-fee cards",
+        ],
+        limitations: [
+          "No rewards program of any kind",
+          "Not the right card if you want to keep earning on it after the balance is paid off",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length, ongoing APR, and balance transfer fee on Citi's site before applying, since balance transfer promotions change frequently.",
+      },
+      {
+        name: "Wells Fargo Reflect® Card",
+        bestFor: "Longest realistic runway to a debt-free payoff",
+        description:
+          "The [Wells Fargo Reflect® Card](https://www.wellsfargo.com/credit-cards/reflect-visa/) is consistently marketed around one of the longer 0% intro APR windows available on a no-annual-fee balance transfer card, and Wells Fargo has structured it so on-time payments during the intro period can extend that window further. That combination makes it a strong fit for a large balance that needs more time than a typical shorter offer allows.\n\nThe card also includes cell phone protection when you pay your monthly cell phone bill with the card, a benefit unusual on a card built primarily for debt payoff. It carries no annual fee and no rewards program.",
+        strengths: [
+          "Marketed around one of the longer 0% intro windows in the balance-transfer category",
+          "On-time payments during the intro period can extend the promotional window further, per Wells Fargo's current terms",
+          "No annual fee",
+          "Cell phone protection benefit when you pay your cell phone bill with the card",
+        ],
+        limitations: [
+          "No rewards program",
+          "The extended intro window depends on making every payment on time, so it isn't guaranteed",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length, extension terms, and balance transfer fee on Wells Fargo's site, since these terms are updated periodically.",
+      },
+      {
+        name: "Chase Slate Edge®",
+        bestFor: "Building toward a lower ongoing rate while you pay down debt",
+        description:
+          "The [Chase Slate Edge®](https://creditcards.chase.com/credit-building-credit-cards/edge) card is built for cardholders who want more than a static intro offer. Chase reviews eligible accounts annually for a possible APR reduction and a higher credit limit based on your payment history, which can lower your ongoing rate even after the 0% intro period ends.\n\nSlate Edge carries no annual fee and no rewards program, keeping the focus on debt payoff and improving your terms over time rather than earning points or cash back.",
+        strengths: [
+          "Annual review for a potential ongoing APR reduction, not just a one-time intro rate",
+          "Automatic annual credit limit review for qualifying accounts",
+          "No annual fee",
+          "Comes from a mainstream national issuer, useful if you already bank with Chase",
+        ],
+        limitations: [
+          "No rewards program",
+          "The APR reduction and credit limit reviews are not guaranteed and depend on your payment history",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length and balance transfer fee on Chase's site before applying.",
+      },
+      {
+        name: "Discover it® Cash Back",
+        bestFor: "Earning rewards while you pay down debt",
+        description:
+          "The [Discover it® Cash Back](https://www.discover.com/credit-cards/cash-back/it-card/) card pairs a 0% intro offer on balance transfers and purchases with an active rewards program, unusual among cards commonly used for debt payoff. You earn cash back on purchases during the intro period, and Discover automatically matches all the cash back you've earned at the end of your first year as a new cardholder, with no cap on the match amount.\n\nThe card carries no annual fee. Because it's a full-featured rewards card rather than a stripped-down transfer-only product, it's a reasonable card to keep using long after the transferred balance is paid off.",
+        strengths: [
+          "Earns cash back on purchases during the transfer period, unusual for this use case",
+          "Uncapped first-year cash back match for new cardholders",
+          "No annual fee",
+          "A card worth keeping after the balance is paid off, unlike several transfer-only options",
+        ],
+        limitations: [
+          "Late-fee and penalty-APR policy isn't spelled out on the main product page, so confirm it in the full cardmember agreement",
+          "Rewards terms and the first-year match are specific to new cardholders and can change",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length, balance transfer fee, and late-fee/penalty-APR policy on Discover's site, since the first-year match applies only to new cardholders.",
+      },
+      {
+        name: "BankAmericard® credit card",
+        bestFor: "A no-frills card focused purely on the transfer",
+        description:
+          "The [BankAmericard® credit card](https://www.bankofamerica.com/credit-cards/products/bankamericard-credit-card/) skips rewards entirely and focuses on a straightforward 0% offer on balance transfers and purchases with no annual fee. That simplicity can be an advantage if you don't want to track a rewards program and just want the most direct path to paying off a balance.\n\nBank of America customers enrolled in Preferred Rewards may qualify for additional benefits tied to their broader banking relationship, though the card itself carries no built-in rewards program.",
+        strengths: [
+          "Simple, no-rewards structure focused entirely on the 0% offer",
+          "No annual fee",
+          "Potential added value for existing Bank of America Preferred Rewards members",
+          "Backed by one of the largest U.S. banks, useful if you already bank there",
+        ],
+        limitations: [
+          "No rewards program of any kind",
+          "No standout forgiveness feature like a guaranteed no-penalty-APR policy",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length and balance transfer fee on Bank of America's site before applying.",
+      },
+      {
+        name: "U.S. Bank Shield® Visa® Card",
+        bestFor: "Maximizing total time before interest kicks back in",
+        description:
+          "The [U.S. Bank Shield® Visa® Card](https://www.usbank.com/credit-cards/visa-platinum-credit-card.html) is regularly positioned among the longer 0% intro APR windows available on a no-annual-fee card, covering both balance transfers and new purchases. For a balance large enough that a shorter offer feels tight, the extra runway can matter more than any single other feature.\n\nThe card includes cell phone protection when you pay your monthly cell phone bill with it and carries no rewards program, keeping the focus on the length of the 0% window itself.",
+        strengths: [
+          "Regularly marketed with one of the longer 0% intro windows in the category",
+          "No annual fee",
+          "Cell phone protection benefit when you pay your cell phone bill with the card",
+          "0% intro applies to both balance transfers and new purchases",
+        ],
+        limitations: [
+          "No rewards program",
+          "A long intro window only helps if you actually stick to a payoff plan, since an unpaid balance just sits there without shrinking on its own",
+          "Approval generally requires good to excellent credit",
+        ],
+        pricing:
+          "No annual fee. Confirm the current intro APR length and balance transfer fee on U.S. Bank's site, since this is one of the terms most likely to change between marketing periods.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Intro APR Window (Tier)", "Transfer Fee Tier", "Annual Fee", "Late-Fee / Penalty APR Policy", "Rewards During Transfer", "Best For"],
+      rows: [
+        { name: "Citi Simplicity", values: ["Long", "Typical for category", "$0", "No late fees, no penalty APR", "None", "No late fees or penalty APR, ever"] },
+        { name: "Wells Fargo Reflect", values: ["Longer, extendable with on-time payments", "Typical for category", "$0", "Standard penalty APR policy applies", "None", "Longest realistic payoff runway"] },
+        { name: "Chase Slate Edge", values: ["Standard-to-long", "Typical for category", "$0", "Standard penalty APR policy applies", "None (annual APR/limit reviews instead)", "Building toward a lower ongoing rate"] },
+        { name: "Discover it Cash Back", values: ["Standard-to-long", "Typical for category", "$0", "Confirm in cardmember agreement", "Cash back + uncapped first-year match", "Earning rewards during payoff"] },
+        { name: "BankAmericard", values: ["Standard-to-long", "Typical for category", "$0", "Standard penalty APR policy applies", "None", "Simple, no-frills transfer"] },
+        { name: "U.S. Bank Shield Visa", values: ["Longer", "Typical for category", "$0", "Standard penalty APR policy applies", "None", "Maximizing total 0% runway"] },
+      ],
+    },
+    verdict:
+      "Overall pick: Wells Fargo Reflect. Pairing one of the longer 0% windows in the category with an on-time-payment extension option gives you the most realistic shot at zeroing out a large balance before interest returns, all with no annual fee. Confirm the current window length and extension terms before applying, since Wells Fargo updates them periodically.\n\nRunner-up for forgiveness: Citi Simplicity, if your bigger risk isn't the balance size but the fear that one missed due date could wreck everything else. No late fees and no penalty APR mean a slip-up costs you far less than it would on a typical card.\n\nRunner-up for rewards: Discover it Cash Back, if you want to earn something while you pay the balance down instead of treating the card as pure overhead. The uncapped first-year cash back match adds real value on top of the transfer itself, and it's a card worth keeping afterward.\n\nChase Slate Edge and BankAmericard are both solid, credible cards, just not the top pick for most people's core need of the longest 0% runway at the lowest total cost. Consider Slate Edge if you want Chase's annual APR-review feature specifically, or BankAmericard if you want the simplest possible no-rewards structure. U.S. Bank Shield Visa is worth a direct look if Wells Fargo Reflect doesn't approve you or doesn't offer a strong enough limit, since it competes directly on intro-window length.",
+    sections: [
+      {
+        heading: "How a balance transfer actually works",
+        content:
+          "A balance transfer moves an existing credit card balance from one card to another, usually to take advantage of a lower or 0% introductory interest rate on the new card. You apply for the new card, request the transfer (either during the application or shortly after), and the new issuer pays off the old balance directly, up to your approved credit limit.\n\nAlmost every balance transfer charges an upfront fee, commonly in the 3% to 5% range of the amount moved industry-wide, charged once at the time of the transfer regardless of the 0% rate. That fee is the real cost of the offer, and it's worth comparing against the interest you'd otherwise pay before assuming any transfer automatically saves you money. Read the terms carefully, since some cards apply the 0% rate to transfers only, purchases only, or both.",
+      },
+      {
+        heading: "A worked example: what a 0% window is actually worth",
+        content:
+          "Consider a $7,000 balance sitting on a card charging 22% APR, a common rate for cards carrying revolving debt. Left in place and paid down slowly, that balance generates roughly $1,540 in interest over a year if it stays close to $7,000 the whole time. This is an illustrative example, not a specific card's exact math, since your real interest depends on how fast you pay the balance down.\n\nMove that same $7,000 to a 0% intro card, and a 4% transfer fee (again, an illustrative industry-typical figure, not tied to any single card above) costs $280 upfront. If you pay the balance off in full before the intro period ends, your total cost is roughly $280 instead of roughly $1,540, a savings of more than $1,200 on this one balance alone. The math works in your favor as long as you clear most or all of the balance before the 0% window closes. If a chunk is still outstanding when the intro rate expires, standard interest starts on whatever's left, which can erase much of the benefit.",
+      },
+      {
+        heading: "Forgiveness features matter more than the headline number",
+        content:
+          "A card's advertised intro APR length only tells part of the story. What happens if you're late on a single payment matters just as much, since some issuers respond to a missed due date by ending the promotional rate and applying the card's regular, much higher APR.\n\nCiti Simplicity's no-late-fee, no-penalty-APR structure removes that risk almost entirely, which can make it a stronger choice than a card with a longer headline intro window but a harsher penalty policy, if you think there's any real chance you'll miss a due date. Set up autopay for at least the minimum payment on whichever card you choose. A forgiving card still benefits from an on-time payment history, and a less forgiving card depends on it.",
+      },
+      {
+        heading: "How we ranked",
+        content:
+          "We weighed intro-APR-window length, fee structure, forgiveness features, credit-profile accessibility, and rewards earned during the transfer period. We deliberately did not treat rewards as a major factor, since a card that saves you more in avoided interest is worth more than one that pays a small percentage back on new spending you might not even make during a debt payoff period.\n\nEvery card in this roundup is a widely available national product from a major issuer, not a regional or co-branded card with narrow eligibility. No issuer paid for placement, and every description above should be checked against the issuer's current terms before you apply, since balance transfer promotions are some of the most frequently updated terms in the credit card industry. Once you have a card, run your actual numbers through the [credit card payoff calculator](/credit-card-payoff/) to see your real payoff date, and see [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) for the underlying math on interest and minimum payments.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How does a balance transfer fee work?",
+        answer:
+          "Almost every balance transfer charges a one-time upfront fee, commonly in the 3% to 5% range of the amount moved industry-wide, charged when the transfer completes regardless of the 0% intro rate. On a $5,000 transfer, a 4% fee costs $200, charged once, not monthly. Compare that fee against the interest you'd otherwise pay on the original card before assuming the transfer is worth it, though with a real intro period it usually is.",
+      },
+      {
+        question: "Does a balance transfer hurt your credit score?",
+        answer:
+          "Applying for a new card triggers a hard inquiry, which typically causes a small, temporary dip in your score, and opening a new account can slightly lower your average account age. Over time, a balance transfer often helps your score, since it can lower your credit utilization on the old card and, if you pay the new card down as planned, reduce your overall revolving debt.",
+      },
+      {
+        question: "What happens if I don't pay off the balance before the intro period ends?",
+        answer:
+          "Whatever balance remains starts accruing interest at the card's standard ongoing APR, which is often well above what you were paying on the original card. A true 0% intro offer charges interest only going forward on the remaining balance, not retroactively, but check your specific card's terms for the words deferred interest, since some promotional offers work differently and can charge interest back to the original transfer date.",
+        },
+      {
+        question: "Can I do multiple balance transfers?",
+        answer:
+          "Yes. You can transfer balances from more than one existing card onto a single new card, as long as the combined amount fits within your approved credit limit and the issuer's transfer window (often the first 60 to 90 days after account opening) hasn't closed. You can also open a second balance transfer card later and move a remaining balance to it once a card's intro period ends, though each new application triggers its own hard inquiry.",
+      },
+      {
+        question: "Can I transfer a balance between two cards from the same bank?",
+        answer:
+          "Usually no. Most issuers won't let you transfer a balance from one of their own cards to another card from the same bank, since that wouldn't actually reduce their risk. You generally need a new card from a different issuer than the one holding your current balance.",
+      },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — What is a balance transfer fee?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balance-transfer-fee-can-a-balance-transfer-fee-be-charged-on-a-zero-percent-interest-rate-offer-en-53/" },
+      { label: "Consumer Financial Protection Bureau — How long can I keep a low rate on a balance transfer?", url: "https://www.consumerfinance.gov/ask-cfpb/how-long-can-i-keep-a-low-rate-on-a-balance-transfer-or-other-introductory-rate-en-15/" },
+      { label: "myFICO — Credit Score Ranges", url: "https://www.myfico.com/credit-education/credit-scores" },
+    ],
+    calculatorLinks: [
+      { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
+      { label: "Personal loan calculator", href: "/personal-loan/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
