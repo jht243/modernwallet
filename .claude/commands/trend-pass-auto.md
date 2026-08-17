@@ -60,7 +60,7 @@ REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py --status <success|failure|no-changes> \
   --skill trend-pass-auto --site "<BASE_URL>" --repo "$REPO" --branch "$BRANCH" \
-  --summary "<RESULT: e.g. 'NEW trend <theme>: shipped 3 pages; pushed + IndexNow.' or 'Trend already caught <date> — no work.' or 'No clear trend in 7d top-10s.'>" \
+  --summary "Trend: <NO — no clear trend / YES — <theme>>. Query check: <NO — all top-20 already covered / YES — N page(s): <titles>>.<deploy/verify note if anything shipped>" \
   --details-file /tmp/trend-pass-auto-$(date +%Y-%m-%d).md \
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
