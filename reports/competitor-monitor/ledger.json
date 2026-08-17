@@ -115050,11 +115050,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/best-citi-balance-transfer-credit-cards": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:d7ac486127f1633711ef4ced704c00a1597df445dea02494d7c071a92dd3a181",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-06T09:44:46-07:00",
+          "our_url": "/roundup/best-balance-transfer-credit-cards/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Citi\u00ae Diamond Preferred\u00ae Card",
@@ -115069,7 +115073,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Citi Credit Cards With Balance Transfer Offers - NerdWallet",
           "tool_io": []
         },
@@ -118058,11 +118062,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/credit-cards/learn/citi-diamond-preferred-vs-citi-simplicity": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:4591a688e532b9c1b577dfa7fdfd9e494315297787e4ac2f53f2c11f3dd4158c",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-06T09:44:46-07:00",
+          "our_url": "/compare/citi-diamond-preferred-vs-citi-simplicity/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "How the cards compare",
@@ -118082,7 +118090,7 @@
             "interest",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Citi Simplicity vs. Citi Diamond Preferred - NerdWallet",
           "tool_io": []
         },
@@ -121262,11 +121270,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/credit-cards/learn/good-credit-0-interest-card": {
+          "acted": false,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:a11652f7faade0477e22146533b7e34bad5c7e259702075aca30e831474b38ea",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-06T09:44:46-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Better credit = better 0% APR cards",
@@ -121279,7 +121291,7 @@
             "credit",
             "interest"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Credit Score do You Need to Get a 0% APR Card? - NerdWallet",
           "tool_io": []
         },
@@ -124719,11 +124731,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/rejected-for-credit-card-call-issuer": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:a2658b55f678fc35d47989a66bbff7d4dc6a942aa89f5a0b3956b3a26d0fc826",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-06T09:44:46-07:00",
+          "our_url": "/guides/credit-card-issuer-goodwill-call-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Appealing a denial",
@@ -124735,7 +124751,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Need a Favor From a Credit Card Issuer? Make a Call - NerdWallet",
           "tool_io": []
         },
@@ -134848,11 +134864,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/learn/how-to-deal-with-debt-collectors": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:8f8822741b650a37e49c47487d5c244075942df5d8a717d69cb586098344d408",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-17T00:00:00-07:00",
+          "our_url": "/guides/how-to-deal-with-debt-collectors/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Meet MoneyNerd, your weekly news decoder",
@@ -134870,7 +134890,7 @@
             "finance",
             "payoff"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Dealing With Debt Collectors: Your Rights and How to Protect Yourself - NerdWallet",
           "tool_io": []
         },
@@ -166624,11 +166644,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/learn/refinance-closing-costs": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:4fd45c989d3eeedf0dabd723efef8dab3314848002287cb4e387368c04acf291",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-17T00:00:00-07:00",
+          "our_url": "/guides/mortgage-refinance-closing-costs/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Refinance closing costs: How much will I pay?",
@@ -166640,7 +166664,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Does It Cost To Refinance a Mortgage? - NerdWallet",
           "tool_io": []
         },
@@ -166965,11 +166989,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/learn/va-loans-vs-conventional-loans": {
+          "acted": false,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:86bf458745408039647666e638c805e7697e21735533f66a21a7fb92e070842a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-14T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "VA loans vs. conventional loans",
@@ -166981,7 +167009,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "VA Loans vs. Conventional Loans - NerdWallet",
           "tool_io": []
         },
@@ -237395,11 +237423,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/selling-leave-days": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:3b76e3be5f8adb02869b95707a6d754e3f5e8a6334b68dbb509b598f1234ed6e",
+          "disposition": "published",
           "first_seen": "2026-08-17",
           "kind": "tool",
           "last_seen": "2026-08-17",
           "lastmod": "2026-08-17T10:11:52.397Z",
+          "our_url": "/pto-cashout/",
           "outline": [
             "What does it mean to sell your leave days? \u2014 PTO buyback explained",
             "How many leave days can I sell?",
@@ -237422,7 +237454,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Selling Leave Days Calculator",
           "tool_io": [
             "label: Base pay per month",
@@ -358374,11 +358406,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/vanguard-vs-fidelity-vs-schwab": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:01fbc75d49bd703e2dae5929dfd7a78bf3637661eeace405102ef2c7ccde35ae",
+          "disposition": "published",
           "first_seen": "2026-08-17",
           "kind": "comparison",
           "last_seen": "2026-08-17",
           "lastmod": "2026-03-25T05:28:28+00:00",
+          "our_url": "/compare/vanguard-vs-fidelity-vs-schwab/",
           "outline": [
             "Overview of Vanguard vs. Fidelity vs. Schwab",
             "Vanguard vs. Fidelity vs. Schwab: Fees",
@@ -358391,7 +358427,7 @@
           "relevance_hits": [
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Vanguard vs. Fidelity vs. Schwab",
           "tool_io": []
         },
@@ -373099,11 +373135,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/best-age-to-retire-for-longevity": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:ebbe047479a0fd41a4cbd3e7c892f6cee5967f9a462221399f85b96733431f10",
+          "disposition": "published",
           "first_seen": "2026-08-17",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-03-25T03:49:36+00:00",
+          "our_url": "/guides/ideal-retirement-age-for-your-health/",
           "outline": [
             "How Retirement Age Impacts Longevity",
             "Health Factors That Can Influence Retirement Decisions",
@@ -373115,7 +373155,7 @@
           "relevance_hits": [
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What&#x27;s the Ideal Age to Retire for Longevity?",
           "tool_io": []
         },
@@ -387237,11 +387277,15 @@
           "tool_io": []
         },
         "https://smartasset.com/taxes/capital-gains-on-inherited-property": {
+          "acted": true,
+          "acted_date": "2026-08-17",
           "content_hash": "sha256:c5409771c8c822bc043ca985d6de459ee9054dc16a8f5c0a180d159c26e56175",
+          "disposition": "published",
           "first_seen": "2026-08-17",
           "kind": "page",
           "last_seen": "2026-08-17",
           "lastmod": "2026-03-25T04:22:29+00:00",
+          "our_url": "/guides/capital-gains-tax-on-inherited-property/",
           "outline": [
             "If You Inherit Property, You Won\u2019t Necessarily Pay Taxes",
             "Capital Gains and the Stepped-Up Basis",
@@ -387253,7 +387297,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Capital Gains on Inherited Property",
           "tool_io": []
         },
