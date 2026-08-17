@@ -5614,6 +5614,96 @@ export const COMPARISONS: ComparisonEntry[] = [
   },
 
   {
+    slug: "medical-retirement-vs-disability-severance-pay",
+    title: "Chapter 61 Retirement vs Disability Severance Pay",
+    metaDescription:
+      "Chapter 61 medical retirement pays a monthly pension for life. Disability severance pays a one-time check. See the 30% rating that decides which one you get.",
+    targetKeyword: "chapter 61 retirement vs disability severance pay",
+    optionA: "Chapter 61 Medical Retirement",
+    optionB: "Disability Severance Pay",
+    segment: "Military retirement",
+    h1: "Chapter 61 Medical Retirement vs Disability Severance Pay",
+    intro:
+      "Chapter 61 medical retirement pays a monthly pension for life once a Physical Evaluation Board rates you 30% or more unfit for duty, while disability severance pay is a one-time lump sum for troops rated below 30% with fewer than 20 years of service. Both come from [DFAS](https://www.dfas.mil/RetiredMilitary/), and both start with the same Physical Evaluation Board finding. The disability rating is what splits a service member onto one path or the other. See our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison for how Chapter 61 works alongside a standard 20-year retirement.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Disability rating required", a: "30% or higher (or any rating with 20+ years of service)", b: "Below 30%" },
+        { dimension: "Minimum years of service", a: "None below 20 years if rated 30%+", b: "Not required to qualify, but the payout formula counts a minimum of 3 years (6 years if the disability happened in a combat zone)" },
+        { dimension: "Payment type", a: "Monthly retired pay for life", b: "One-time lump sum" },
+        { dimension: "Legal basis", a: "Title 10, Chapter 61", b: "10 U.S.C. § 1212" },
+        { dimension: "Retiree status (TRICARE, commissary, ID card)", a: "Yes, full military retiree benefits", b: "No, one payment and you separate with no retiree status" },
+        { dimension: "Can you switch to the other later for the same condition", a: "Not applicable, already retired", b: "No, taking severance closes the door on Chapter 61 retirement for that condition" },
+      ],
+    },
+    verdict:
+      "You don't pick between these two paths. A Physical Evaluation Board's disability rating decides it for you. Rated 30% or higher, or you already have 20 years in, you get Chapter 61 retirement and its lifetime monthly pension. Rated below 30% with fewer than 20 years, you get a one-time severance check instead, and you leave without retiree status. The rating threshold is the entire decision.",
+    sections: [
+      {
+        heading: "Why the same medical board leads to two different outcomes",
+        content:
+          "A Physical Evaluation Board (PEB) reviews every service member found unfit for duty and assigns a disability rating. That single number decides which pay you get.\n\nA rating of 30% or higher sends you to Chapter 61 medical retirement, with a monthly pension for life. A rating below 30%, with fewer than 20 years of service, sends you to disability severance pay instead: a one-time check with no ongoing retiree status.\n\nThe rating threshold matters more than almost anything else in your case. Two service members with similar conditions can land on opposite sides of it, and the financial outcome differs for the rest of their lives.",
+      },
+      {
+        heading: "How disability severance pay is calculated",
+        content:
+          "Disability severance pay uses a fixed formula set by [10 U.S.C. § 1212](https://www.law.cornell.edu/uscode/text/10/1212): twice your monthly basic pay, multiplied by your years of service.\n\nYears of service has a floor and a ceiling. The formula counts at least 3 years of service, or 6 years if the disability happened in a combat zone or during combat-related duty. It never counts more than 19 years, since 20 years would normally trigger a standard retirement instead.\n\nA sergeant with 8 years in and monthly basic pay of $4,200 would receive 2 times $4,200 times 8, or $67,200, before taxes and any offset described below.",
+      },
+      {
+        heading: "The offset most service members miss",
+        content:
+          "Disability severance pay usually gets deducted, dollar for dollar, from any future VA disability compensation for the same condition. This surprises many veterans who assume the two payments stack.\n\nDFAS withholds VA compensation payments until the VA has recouped the full severance amount, sometimes taking years. One exception applies: no offset if the disability was incurred in the line of duty in a combat zone or during combat-related operations.\n\nA less obvious catch: severance is a one-time exit from military disability status for that condition. You cannot later apply for Chapter 61 retirement based on the same disability, even if it worsens after you separate. That tradeoff is easy to miss when a lump sum looks appealing in the moment.",
+      },
+      {
+        heading: "Taxes: severance usually isn't automatic",
+        content:
+          "Disability severance pay is taxable income by default, the same as any wage. It gets reported on your W-2 and withheld like regular pay.\n\nTwo exceptions make it tax-free: a combat-related disability, or official VA notification that you qualify for disability compensation for the same condition. If either applies and tax was withheld anyway, you can file for a refund.\n\nThe [Combat-Injured Veterans Tax Fairness Act of 2016](https://www.irs.gov/newsroom/time-is-running-out-for-some-combat-injured-veterans-to-claim-tax-refunds-of-up-to-3200) gave an estimated 130,000 veterans back pay improperly withheld between 1991 and 2016. If you separated with severance pay and never checked whether tax should have applied, confirm with a tax professional before assuming the withholding was correct.",
+      },
+      {
+        heading: "Chapter 61 retirement's ongoing benefits severance doesn't include",
+        content:
+          "Chapter 61 retirement comes with everything a standard 20-year retirement carries: a monthly pension for life, TRICARE health coverage, commissary and exchange access, and a retiree ID card.\n\nSeverance pay ends your relationship with the military the day you separate. There's no ongoing pension, no TRICARE, and no retiree privileges, just the one payment.\n\nFor a full breakdown of how Chapter 61's own pension formula works once you clear the 30% threshold, see our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What disability rating do I need to get Chapter 61 retirement instead of severance pay?",
+        answer:
+          "You need a disability rating of 30% or higher from a Physical Evaluation Board, or you already have 20 or more years of service regardless of rating. Below 30% with fewer than 20 years, you receive disability severance pay instead.",
+      },
+      {
+        question: "Is disability severance pay taxable?",
+        answer:
+          "Yes, by default. It's taxed as ordinary wages unless your disability is combat-related or the VA has officially approved disability compensation for the same condition, either of which makes it tax-free.",
+      },
+      {
+        question: "Does the VA subtract my severance pay from my disability compensation?",
+        answer:
+          "Usually yes. The VA withholds disability compensation payments until it has recouped the full severance amount, dollar for dollar. The one exception is a disability incurred in a combat zone or during combat-related operations, where no offset applies.",
+      },
+      {
+        question: "Can I get Chapter 61 retirement later if my condition worsens after taking severance?",
+        answer:
+          "No. Once you separate with disability severance pay, you cannot later apply for Chapter 61 retirement based on that same condition, even if it gets worse. The severance closes that door for good.",
+      },
+      {
+        question: "How many years of service count toward the severance pay formula?",
+        answer:
+          "At least 3 years, or 6 years if your disability happened in a combat zone or during combat-related duty. The formula never counts more than 19 years of service.",
+      },
+    ],
+    sources: [
+      { label: "DFAS — Disability Severance Pay", url: "https://www.dfas.mil/RetiredMilitary/plan/separation-payments/disability-severance-pay/" },
+      { label: "10 U.S.C. § 1212 — Disability Severance Pay (Cornell Law LII)", url: "https://www.law.cornell.edu/uscode/text/10/1212" },
+      { label: "IRS — Combat-Injured Veterans Tax Fairness Act refund claims", url: "https://www.irs.gov/newsroom/time-is-running-out-for-some-combat-injured-veterans-to-claim-tax-refunds-of-up-to-3200" },
+      { label: "DFAS — Qualifying for a Disability Retirement", url: "https://www.dfas.mil/RetiredMilitary/disability/disability/" },
+    ],
+    relatedComparisons: ["military-retirement-vs-medical-retirement", "military-retirement-vs-va-disability"],
+    calculatorLinks: [
+      { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
+    ],
+  },
+
+  {
     slug: "military-retirement-vs-medical-retirement",
     title: "Military Retirement vs Medical Retirement: Chapter 61",
     metaDescription:

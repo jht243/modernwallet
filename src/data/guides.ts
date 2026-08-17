@@ -5386,6 +5386,43 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    slug: "is-military-disability-retirement-pay-taxable",
+    title: "Is Military Disability Retirement Pay Taxable?",
+    metaDescription:
+      "Regular military retired pay is taxed as income. Chapter 61 disability retired pay can be tax-free if it is combat-related. See the CRDP vs CRSC tax gap.",
+    h1: "Is Military Disability Retirement Pay Taxable?",
+    cardBlurb: "The combat-related exclusion, the pre-1975 grandfather rule, and why CRDP and CRSC are taxed differently for the same disability.",
+    intro:
+      "Military disability retirement pay is taxable in most cases, the same as a standard pension, but a real exception excludes part or all of it for some Chapter 61 retirees. The exclusion turns on whether your disability is combat-related, not on your VA rating alone. This guide covers who qualifies for the exclusion under [26 U.S.C. § 104](https://www.law.cornell.edu/uscode/text/26/104), and a detail that surprises many retirees: CRDP and CRSC, the two programs that restore VA disability pay alongside retired pay, are not taxed the same way. See our [Chapter 61 medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison for how the underlying retirement works.",
+    sections: [
+      { heading: "The default rule: taxable like any other pension", body: "Chapter 61 disability retired pay is taxable federal income by default, reported each year on a 1099-R from [DFAS](https://www.dfas.mil/RetiredMilitary/), the same as a standard length-of-service pension.\n\nThis surprises some new retirees, since the pay is tied to a disability rating. The rating decides your eligibility and pension formula, not whether the government taxes the result. Most Chapter 61 retirees owe federal income tax on their monthly retired pay just like any other retiree." },
+      { heading: "The combat-related exclusion under Section 104", body: "A real exclusion applies if your disability is combat-related. [26 U.S.C. § 104(a)(4)](https://www.law.cornell.edu/uscode/text/26/104) excludes from taxable income any pension paid for a personal injury or sickness resulting from active military service, when that injury meets the combat-related definition.\n\nA combat-related disability means one caused by armed conflict, extra-hazardous duty, conditions that simulate war, or an instrument of war such as an IED or a training accident with military equipment. The exclusion applies regardless of when you entered service, as long as the disability itself is combat-related." },
+      { heading: "The pre-1975 grandfather rule", body: "Service members who entered before September 25, 1975 get a broader exclusion. Their disability retired pay is excluded from income for any service-connected condition, combat-related or not.\n\nAnyone who entered on or after that date only qualifies for the same broad exclusion if the disability isn't combat-related but the VA would also grant disability compensation for the same condition. Combat-related disabilities are excluded either way, regardless of entry date." },
+      { heading: "How the exclusion actually reduces your tax bill", body: "The exclusion works by shrinking your taxable retired pay, not by sending you a separate check. DFAS reduces your gross retired pay first by any amount waived for VA compensation, then by the portion excluded under Section 104(a)(4), before calculating what you owe tax on.\n\nA retiree whose full retired pay would otherwise be taxable, but whose disability qualifies for the Section 104(a)(4) exclusion, sees that qualifying amount removed from the 1099-R taxable-income figure DFAS reports to the IRS." },
+      { heading: "Why CRDP is taxed but CRSC often isn't, for the same disability", body: "This is the detail most retirees miss. Concurrent Retirement and Disability Pay (CRDP) restores your full retired pay alongside VA compensation, but the restored retired-pay portion stays taxable, just like regular retired pay.\n\nCombat-Related Special Compensation (CRSC), the other concurrent-receipt program, pays out as compensation for a combat-related disability, and is tax-free the way VA disability compensation is. See our [military retirement vs VA disability](/compare/military-retirement-vs-va-disability/) comparison for how CRDP and CRSC eligibility works.\n\nA retiree who qualifies for both programs on the same combat-related disability can end up keeping more monthly cash under CRSC than under CRDP, even when the gross CRDP number looks larger on paper, purely because CRSC isn't taxed. DFAS pays whichever program you elect, so it's worth comparing the after-tax amount of each, not just the sticker figure, before choosing." },
+      { heading: "If you already paid tax you shouldn't have", body: "The IRS lets you file an amended return, [Form 1040-X](https://www.irs.gov/forms-pubs/about-form-1040x), if you paid tax on disability retired pay or disability severance pay that should have been excluded.\n\nThe [Combat-Injured Veterans Tax Fairness Act of 2016](https://www.irs.gov/newsroom/time-is-running-out-for-some-combat-injured-veterans-to-claim-tax-refunds-of-up-to-3200) specifically addressed this for disability severance pay going back to 1991, after the Department of Defense identified roughly 130,000 veterans who had tax improperly withheld. If you think your Chapter 61 retired pay was taxed when it should have been excluded, confirm the specifics with a tax professional before filing an amended return." },
+    ],
+    tools: [
+      { href: "/retirement/military-retirement-calculator/", label: "Military retirement calculator" },
+      { href: "/compare/military-retirement-vs-va-disability/", label: "CRDP & CRSC comparison" },
+    ],
+    faqs: [
+      { question: "Is military disability retirement pay tax-free?", answer: "Not automatically. It's taxable by default, the same as a standard pension. It becomes tax-free, in whole or in part, only if your disability is combat-related, or you entered service before September 25, 1975 and the VA would grant disability compensation for the same condition." },
+      { question: "What counts as a combat-related disability for the tax exclusion?", answer: "A disability caused by armed conflict, extra-hazardous duty, conditions that simulate war, or an instrument of war such as an IED or a training accident with military equipment. The Section 104(a)(4) exclusion applies to these disabilities regardless of when you entered service." },
+      { question: "Is CRSC taxable?", answer: "No. Combat-Related Special Compensation is paid as compensation for a combat-related disability and is tax-free, the same as VA disability compensation. CRDP, the other concurrent-receipt program, restores taxable retired pay instead, so it stays taxable even for the same disability." },
+      { question: "Can I get a refund if I already paid tax on disability severance pay?", answer: "Possibly. The Combat-Injured Veterans Tax Fairness Act of 2016 lets eligible veterans file Form 1040-X for a refund on disability severance pay taxed between 1991 and 2016 if the disability was combat-related. Confirm your eligibility and deadline with a tax professional." },
+      { question: "Does a higher VA disability rating make more of my retired pay tax-free?", answer: "Not directly. The exclusion depends on whether your disability is combat-related or, for pre-1975 entrants, service-connected, not on the rating percentage itself. A high VA rating can still come with fully taxable retired pay if the underlying disability isn't combat-related and you entered after September 25, 1975." },
+    ],
+    sources: [
+      { label: "IRS — Publication 525, Taxable and Nontaxable Income", url: "https://www.irs.gov/publications/p525" },
+      { label: "26 U.S.C. § 104 (Cornell Law LII)", url: "https://www.law.cornell.edu/uscode/text/26/104" },
+      { label: "DFAS — Concurrent Retirement and Disability Pay (CRDP)", url: "https://www.dfas.mil/RetiredMilitary/disability/crdp/" },
+      { label: "DFAS — Combat-Related Special Compensation (CRSC)", url: "https://www.dfas.mil/RetiredMilitary/disability/crsc/" },
+      { label: "IRS — Combat-Injured Veterans Tax Fairness Act refund claims", url: "https://www.irs.gov/newsroom/time-is-running-out-for-some-combat-injured-veterans-to-claim-tax-refunds-of-up-to-3200" },
+    ],
+  },
+
+  {
     slug: "dscr-loan-requirements",
     title: "DSCR Loan Requirements: What Investors Need to Qualify",
     metaDescription:
