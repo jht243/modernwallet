@@ -45,6 +45,7 @@ Google's February 2026 core update (Discover-focused) demoted sites mass-produci
 - Filler verbs/phrases: "delve into", "leverage" (verb), "navigate the complexities of", "unlock the power of", "it's worth noting that", "a testament to".
 - Monotonous em-dash rhythm and same-shape listicle padding.
 - Anthropomorphic "death" language for software/tech — never write that a demo, feature, product, tool, model, or technology "died", "is dead", was "killed", is "on life support", or "flatlined". Software does not die: say what literally happened — it never shipped, was abandoned, stopped being used, or lost support.
+- Search-intent / answer-scaffold narration — never write about the reader's own search or about the page itself: "which is the reason this search exists", "that's why you're here", "if you're (still) reading this", "the short answer (is)", "here's the thing/catch/reality", "you might be wondering". State the fact directly instead (e.g. "Figure 03 isn't sold to the public; it ships to enterprise partners under private agreements."). A single instance is enough to strike.
 - Vague abstractions — do not reach for an impressive-sounding phrase in place of the concrete thing ("clever one-off demos", "seamless synergy", "strategic inflection point", "holistic solution"). If a phrase cannot survive a "what does this literally mean?" test, replace it with the specific noun, number, or example.
 Write with concrete specifics, commit to a conclusion, and vary sentence shape.
 

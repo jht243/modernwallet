@@ -30,6 +30,7 @@ Body-text updates are additive prose, held to the **same** anti-AI-language bar 
 - Never call software, a model, a tool, pricing, or a verdict "honest"/"honestly" — software has no honesty. Say the point directly ("the caveat is…", "the short answer is…"). `grep -inE "\bhonest"` your added text and cut every tech-context hit.
 - Em-dash cap: at most **2 em-dashes per page, never two in the same section**. COUNT them in your added prose (`grep -o "—" | wc -l`); recast with commas, colons, periods, or parentheses and vary sentence shape.
 - Anthropomorphic "death" language for software/tech — never write that a demo, feature, product, tool, model, or technology "died", "is dead", was "killed", is "on life support", or "flatlined". Say what literally happened — it never shipped, was abandoned, stopped being used, or lost support.
+- Search-intent / answer-scaffold narration — never write about the reader's own search or about the page itself: "which is the reason this search exists", "that's why you're here", "if you're (still) reading this", "the short answer (is)", "here's the thing/catch/reality", "you might be wondering". State the fact directly instead (e.g. "Figure 03 isn't sold to the public; it ships to enterprise partners under private agreements."). A single instance is enough to strike.
 - Vague abstractions — if a phrase cannot survive a "what does this literally mean?" test, replace it with the specific noun, number, or example.
 Write with concrete specifics and vary sentence shape.
 
