@@ -1,0 +1,296 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-08-11",
+    "end": "2026-08-18",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "financial chatbot",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "cottage food law colorado",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 84.5
+    },
+    {
+      "query": "etf vs mutual fund",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 95.25
+    },
+    {
+      "query": "chapter 61 military retirement",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71.5
+    },
+    {
+      "query": "dod medical retirement",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "10 usc chapter 61",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "advantage of trump account",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "are trump accounts a grift",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "arm vs fixed rate today",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "financial chatbot",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 61
+    },
+    {
+      "query": "cottage food law colorado",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 84.5
+    },
+    {
+      "query": "etf vs mutual fund",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 95.25
+    },
+    {
+      "query": "chapter 61 military retirement",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 71.5
+    },
+    {
+      "query": "dod medical retirement",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "10 usc chapter 61",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "advantage of trump account",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "are trump accounts a grift",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "query": "arm vs fixed rate today",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "arm vs fixed-rate today",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "can you have a traditional and roth 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "cdrp military",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 95
+    },
+    {
+      "query": "chapter 61 medical retirement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "chapter 61 retirees",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "crdp military",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "crdp va disability",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "do medically retired military get a pension",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 79
+    },
+    {
+      "query": "downsides of trump account",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 97
+    },
+    {
+      "query": "drawbacks of trump account",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 93.59
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 68.6
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/fixed-vs-arm-mortgage/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 82.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/529-savings-calculator/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
+    }
+  ],
+  "top10_pages_total_clicks": 0,
+  "top10_queries_total_clicks": 0
+}
