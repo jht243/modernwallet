@@ -16,9 +16,12 @@ Usage:
 """
 from __future__ import annotations
 import argparse, csv, json, os, urllib.parse, urllib.request, urllib.error
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+from keyword_data import volumes, passes_floor, score_volume, notes  # noqa: E402
 
 # theme -> the internal-linking hub on themodernwallet.com
 HUBS = {
@@ -43,32 +46,12 @@ THEME_TERMS = {
 }
 
 
-def semrush_csv(key, params):
-    q = {"key": key, "export_escape": 1, "export_decode": 1, **params}
-    url = "https://api.semrush.com/?" + urllib.parse.urlencode(q)
-    req = urllib.request.Request(url, headers={"User-Agent": "modernwallet-SEO-Research/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=45) as r:
-            body = r.read().decode("utf-8", "replace")
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f"SEMrush HTTP {e.code}")
-    if body.startswith("ERROR 50"):
-        return []
-    if body.lower().startswith(("error", "not enough", "wrong")):
-        raise RuntimeError(body[:160])
-    lines = [l for l in body.splitlines() if l.strip()]
-    return list(csv.DictReader(lines, delimiter=";")) if len(lines) >= 2 else []
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", required=True)
     ap.add_argument("--floor", type=int, default=70, help="min monthly volume to keep")
     ap.add_argument("--database", default=os.environ.get("SEMRUSH_DATABASE", "us"))
     args = ap.parse_args()
-    key = os.environ.get("SEMRUSH_API_KEY")
-    if not key:
-        raise SystemExit("SEMRUSH_API_KEY unset — cannot validate. Aborting (no fabricated volume).")
 
     run = ROOT / args.run
     clusters = json.loads((run / "pain_clusters.json").read_text())
@@ -84,27 +67,32 @@ def main():
         print("No candidate phrases generated.")
         return
 
-    these, kdi = {}, {}
-    for i in range(0, len(phrases), 100):
-        chunk = phrases[i:i + 100]
-        for r in semrush_csv(key, {"type": "phrase_these", "database": args.database,
-                                   "phrase": ";".join(chunk), "export_columns": "Ph,Nq,Cp,Co,Kd"}):
-            these[r["Keyword"].lower()] = r
-        for r in semrush_csv(key, {"type": "phrase_kdi", "database": args.database,
-                                   "phrase": ";".join(chunk), "export_columns": "Ph,Kd"}):
-            kdi[r["Keyword"].lower()] = r.get("Keyword Difficulty Index", "")
+    # Volume validation via the shared fallback ladder (never blocks on a dry key)
+    rows = volumes(phrases, database=args.database)
 
     out = []
     for p, meta in candidates.items():
-        r = these.get(p.lower())
-        vol = int(float(r["Search Volume"])) if r and r.get("Search Volume") else 0
-        if vol < args.floor:
+        r = rows.get(p.lower())
+        if not r or not passes_floor(r, args.floor):
             continue
+        vol = r.get("volume", 0)
         out.append({"phrase": p, "volume": vol,
-                    "kd": kdi.get(p.lower(), (r.get("Keyword Difficulty Index", "") if r else "")),
+                    "kd": r.get("kd", ""), "source": r.get("source", ""),
+                    "confidence": r.get("confidence", ""),
+                    "volume_low": r.get("volume_low"),
+                    "volume_high": r.get("volume_high"),
+                    "scored_volume": score_volume(r),
                     "theme": meta["theme"], "hub": HUBS.get(meta["theme"], "/")})
-    out.sort(key=lambda x: -x["volume"])
+    out.sort(key=lambda x: -x["scored_volume"])
     (run / "validated_terms.json").write_text(json.dumps(out, indent=1))
+    (run / "keyword_data_notes.json").write_text(json.dumps(notes(), indent=1))
+    _src = {}
+    for _e in out:
+        _src[_e["source"]] = _src.get(_e["source"], 0) + 1
+    print(f"Sources: {_src}")
+    if _src.get("estimate"):
+        print("NOTE: estimate rows carry a volume BAND, not measured volume — "
+              "label them as estimated in the chart.")
     print(f"Validated {len(out)}/{len(phrases)} candidate terms >= {args.floor} vol/mo")
     for e in out[:25]:
         print(f"  {e['volume']:>6}  KD{e['kd']:<3}  {e['phrase']}  [{e['theme']}]")

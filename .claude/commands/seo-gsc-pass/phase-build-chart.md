@@ -20,7 +20,7 @@ If you need either API, prefix the call so the key never appears in the shell hi
 Help me find SEO updates based on recent GSC data (see 5 images attached — these are the only data inputs; we may have access to Ahrefs, GSC tools, or live ranking data).
 
 AHREFS api = `$AHREFS_API_KEY` (read from environment; do not embed)
-Semrush API = `$SEMRUSH_API_KEY` (read from environment; do not embed)
+Keyword data = `scripts/lib/keyword_data.py` — SEMRUSH → Ahrefs → public-source estimate (keys from the environment; never embed). Never block on a dry key; see `.claude/commands/_keyword-demand-ladder.md`.
 
 Use those APIs sparingly and only when needed, to save on credits.
 

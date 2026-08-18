@@ -10,7 +10,7 @@ Turns a podcast-mining run into an unattended weekly routine. It mines TRANSCRIP
 > **‼️ RUN-WIDE RULE.** Fully autonomous — NO human gates. Every phase auto-continues. The only stops are the deterministic safety gates (empty week → no-op email; >20 survivors → circuit-breaker hold + email). Never ask the user anything.
 
 ## Pre-flight (abort cleanly + email `failure` if any hard dep is missing)
-- `SEMRUSH_API_KEY` set (else abort — never fabricate volume).
+- Keyword demand via `scripts/lib/keyword_data.py` — SEMRUSH → Ahrefs → public-source estimate. **No key is a precondition and the run NEVER aborts for a dry key**; it demotes a rung and labels estimated rows. See `.claude/commands/_keyword-demand-ladder.md`.
 - Git tree clean; capture `origin/main` base. Cloud runs on an ephemeral `claude/*` branch.
 - Resend keys resolvable by the repo's send-routine-email helper (best-effort; never fail the run on email).
 - No pip installs needed: every helper in `scripts/podcast_pain_pass/` is stdlib-only (SEMRUSH via urllib).

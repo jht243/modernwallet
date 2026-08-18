@@ -11,7 +11,8 @@ Input: `$RUN/brief.md` from Phase 0. This phase is a faithful duplicate of the g
 ### Lens 1 — Direct intent (what the podcasts literally surfaced)
 Run the baseline validator over the mined themes:
 ```bash
-SEMRUSH_API_KEY="$SEMRUSH_API_KEY" python3 scripts/podcast_pain_pass/validate_terms.py --run "$RUN" --floor 70
+python3 scripts/podcast_pain_pass/validate_terms.py --run "$RUN" --floor 70
+# Reads keys from the env via the ladder; runs on estimates if every key is dry.
 ```
 This validates the per-theme seed phrases (volume + KD) → `$RUN/validated_terms.json`. These are the direct-intent candidates.
 

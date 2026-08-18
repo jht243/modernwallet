@@ -8,7 +8,7 @@ This phase produces the file Phase 0 then loads. Once it is saved, control retur
 
 ## API key (read from environment — NEVER embed in this file or the saved chart)
 - `$SEMRUSH_API_KEY` — Semrush Analytics API. The project reads this from `.env` (`SEMRUSH_API_KEY=...`, with optional `SEMRUSH_DATABASE=us`) via `src/config.py`.
-- If the key is unset, the gap script will error. STOP and tell the user: "Set `SEMRUSH_API_KEY` in `.env` (or export it) and re-run — I won't hardcode the key into a command file." Do not invent gap data to work around a missing key.
+- If the key is unset or dry, do **NOT** stop. Fall through the demand ladder (`.claude/commands/_keyword-demand-ladder.md`): Ahrefs via `scripts/lib/keyword_data.py`, then public-source estimates. Label estimated rows and report which rung ran. Never hardcode a key, never invent gap data.
 
 ## API budget discipline (SEMRUSH costs credits — use it moderately)
 Be deliberately economical; do not hammer the API. Concretely:
