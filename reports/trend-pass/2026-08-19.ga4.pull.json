@@ -1,0 +1,24 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-19",
+  "window_start": "2026-08-19",
+  "window_end": "2026-08-19",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/custodial-roth-ira-vs-529/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 1,
+  "top10_pages_total_clicks": 1,
+  "channel_split": {
+    "/compare/custodial-roth-ira-vs-529/": {
+      "Cross-network": 1
+    }
+  }
+}

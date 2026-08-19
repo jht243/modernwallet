@@ -92,3 +92,4 @@
 | /investing/withdrawal-calculator/ | 2026-08-17 | 4 | 0/0/1/0/1 | 0 |
 | /mortgage/payoff-calculator/ | 2026-08-17 | 3 | 0/0/2/0/0 | 0 |
 | /portfolio/80-20-portfolio-calculator/ | 2026-08-17 | 3 | 0/1/1/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-529/ | 2026-08-19 | 1 | 0/0/0/0/0 | 0 |
