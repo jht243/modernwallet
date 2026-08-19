@@ -1003,11 +1003,22 @@ export const CALCULATORS: CalculatorDef[] = [
         answer:
           "Most financial planners suggest capturing any employer 401(k) match first, since that's an immediate guaranteed return, then weighing a taxable account against further tax-advantaged contributions based on when you'll need the money. See our [401(k) vs. brokerage account comparison](/compare/401k-vs-brokerage-account/) for the full tradeoff, including access before retirement age.",
       },
+      {
+        question: "What's the difference between tax-deferred and tax-exempt?",
+        answer:
+          "Tax-deferred means the tax bill is postponed, not eliminated: a traditional 401(k) or IRA skips tax on the way in and during growth, then the IRS taxes the full withdrawal as ordinary income later. Tax-exempt means the growth is never taxed again once it's in the account: a Roth IRA is funded with money you've already paid tax on, so qualified withdrawals in retirement owe nothing further. This calculator models the taxable-vs-tax-deferred pairing only; run the numbers for the tax-exempt side with the [Roth IRA calculator](/investing/roth-ira-calculator/).",
+      },
+      {
+        question: "How do taxable, tax-deferred, and tax-exempt accounts compare side by side?",
+        answer:
+          "Taxable, tax-deferred, and tax-exempt describe when the IRS takes its cut, not whether it does. A taxable brokerage account is taxed annually on realized gains, dividends, and interest, and again when you eventually sell. A tax-deferred account (traditional 401(k)/IRA) owes nothing until withdrawal, then the entire amount is taxed as ordinary income. A tax-exempt account (Roth IRA) is taxed once, up front, and qualified withdrawals afterward are tax-free. For the same contribution and return, tax-exempt and tax-deferred accounts usually end up close in after-tax value when your tax rate stays flat; tax-exempt pulls ahead if your tax rate is higher in retirement than it is now, and tax-deferred pulls ahead if it's lower.",
+      },
     ],
     sources: [
       { label: "IRS — Retirement Topics: Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-tax-on-early-distributions" },
       { label: "IRS — Topic no. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
       { label: "IRS — Publication 550, Investment Income and Expenses (dividends and interest)", url: "https://www.irs.gov/publications/p550" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
     ],
     defaultPreset: {
       startingBalance: 10000,
@@ -1035,7 +1046,7 @@ export const CALCULATORS: CalculatorDef[] = [
     intro:
       "A credit card payoff calculator shows how long it takes to clear a balance and how much interest that costs, based on your APR and monthly payment. Enter your balance, APR, and either a monthly payment or a target payoff date in the calculator above. For example, a $6,000 balance at 24% APR paid at $250 a month is paid off in 34 months and costs $2,255.61 in interest. The calculator also runs the minimum-payment-only path automatically: at that same balance and rate, minimum payments alone take 252 months, about 21 years, and cost $10,886.92 in interest, over $8,600 more than the $250-a-month plan, for the same starting balance.",
     howItWorks:
-      "Interest on a credit card accrues on the remaining balance each month, then whatever you pay above that interest reduces the principal. The calculator repeats that month by month: it takes your balance and APR, applies one month of interest, subtracts your payment, and moves to the next month until the balance hits zero. That is the same mechanic behind every amortization schedule, just without a fixed loan term forcing the math.\n\nThe minimum-payment comparison uses the formula behind most major issuers' minimum-payment box: the greater of $25 or 1% of the balance plus that month's interest. Because that minimum is recalculated every month against a shrinking balance, the required minimum payment also shrinks over time, which is exactly why minimum-only payoff stretches out for years. The [Truth in Lending Act's Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) requires every statement to disclose an estimated payoff time at minimum payments for this reason, but the disclosure is usually a single line buried near the payment coupon. Running your own numbers above puts the full month-by-month comparison in front of you instead.\n\nIf you enter a target payoff date instead of a payment amount, the calculator solves the problem in reverse: it finds the fixed monthly payment that clears the balance by that date, using the same standard amortization formula lenders use for a fixed-term loan.",
+      "Interest on a credit card accrues on the remaining balance each month, then whatever you pay above that interest reduces the principal. The calculator repeats that month by month: it takes your balance and APR, applies one month of interest, subtracts your payment, and moves to the next month until the balance hits zero. That is the same mechanic behind every amortization schedule, just without a fixed loan term forcing the math.\n\nThe minimum-payment comparison uses the formula behind most major issuers' minimum-payment box: the greater of $25 or 1% of the balance plus that month's interest. Because that minimum is recalculated every month against a shrinking balance, the required minimum payment also shrinks over time, which is exactly why minimum-only payoff stretches out for years. The [Truth in Lending Act's Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) requires every statement to disclose an estimated payoff time at minimum payments for this reason, but the disclosure is usually a single line buried near the payment coupon. Running your own numbers above puts the full month-by-month comparison in front of you instead.\n\nIf you enter a target payoff date instead of a payment amount, the calculator solves the problem in reverse: it finds the fixed monthly payment that clears the balance by that date, using the same standard amortization formula lenders use for a fixed-term loan.\n\nPutting extra money toward the balance compounds because every dollar of principal you clear early stops accruing interest for every remaining month. On the $6,000-at-24%-APR example above, raising the payment from $250 to $300 a month, $50 more, cuts the payoff from 34 months to 26 months and drops total interest from $2,255.61 to $1,739.24, a savings of over $500 for an 8-month-shorter payoff. A biweekly schedule works the same way through a different mechanism: paying $125 every two weeks instead of $250 once a month adds up to 26 payments a year instead of 12 monthly payments, the equivalent of one extra full payment annually. On the same balance, that pattern pays it off in 30 months and costs $2,005.98 in interest. Enter whichever fixed payment you'd actually make (biweekly total, or your regular payment plus a lump sum) as the monthly payment above to see your own numbers.",
     faqs: [
       {
         question: "How much interest will I pay on my credit card?",
@@ -1071,6 +1082,11 @@ export const CALCULATORS: CalculatorDef[] = [
         question: "Is a balance transfer or a personal loan better than just paying off the card directly?",
         answer:
           "Both can beat paying a high-APR card down directly if you qualify. A 0% intro APR balance transfer card eliminates interest for the promotional period, but only if you can clear the balance before it ends: see [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/). A fixed-rate personal loan trades a variable, often-higher card APR for a fixed rate and a fixed end date; compare the two directly with the [personal loan calculator](/personal-loan/).",
+      },
+      {
+        question: "What if I have more than one credit card to pay off?",
+        answer:
+          "Run each card through this calculator separately, then decide which one to attack first with any extra money once all the minimums are covered. The two standard orderings are the avalanche method, highest APR first, which minimizes total interest, and the snowball method, smallest balance first, which clears individual cards faster and can be easier to stick with. See [debt snowball vs. avalanche](/compare/debt-snowball-vs-avalanche/) for a full worked comparison of both orderings on the same set of balances.",
       },
     ],
     sources: [
@@ -1110,6 +1126,11 @@ export const CALCULATORS: CalculatorDef[] = [
         question: "Is a PTO cash-out taxed differently than my regular paycheck?",
         answer:
           "The total tax you owe for the year is calculated the same way regardless of how the income arrived, but the amount withheld up front often isn't. A PTO cash-out is commonly treated as a \"supplemental wage\" for withholding purposes, and the [IRS](https://www.irs.gov/publications/p15) generally has employers withhold supplemental wages at a flat rate, 22% for most employees as of the current rate, rather than running it through your regular paycheck's withholding formula. That can make the check look smaller or larger than expected compared to a normal paycheck of the same size. Your actual tax liability gets reconciled when you file your return; the flat withholding rate is just what's taken out at the time of payment.",
+      },
+      {
+        question: "Is my employer legally required to pay out unused PTO when I leave?",
+        answer:
+          "It depends on your state, and it's a different question from whether your employer offers a sell-back program while you're still working. A handful of states treat earned vacation as wages you've already earned, so it can't be forfeited: California ([Labor Code §227.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=227.3.)) bans use-it-or-lose-it policies outright and requires payout in the final paycheck; Colorado (Colorado Wage Act) and Illinois (820 ILCS 115/5) similarly bar forfeiture of vacation pay earned under the employer's own policy. Most other states, including Texas and Florida, have no such law — the [federal Fair Labor Standards Act](https://www.dol.gov/general/topic/workhours/holidays) doesn't require payment for unused vacation at all, so whether you're paid out on separation comes down entirely to your employer's written policy or contract. Check your own state's labor department and your employee handbook before assuming either way.",
       },
       {
         question: "Does selling leave days affect my other benefits?",
