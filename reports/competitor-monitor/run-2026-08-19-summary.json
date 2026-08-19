@@ -1,0 +1,102 @@
+[
+  {
+    "competitor_url": "https://www.bankrate.com/credit-cards/issuers/citi",
+    "competitor_name": "Bankrate",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/roundup/best-citi-credit-cards/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Built as a ROUNDUP entry (project's 'best X' content type) rather than a guide, since it best matches the format. Covers 4 currently-open Citi cards (Double Cash, Strata Premier, Strata, Diamond Preferred). Original information gain over the competitor: verified via primary source that Citi stopped accepting new Custom Cash applications as of May 28, 2026 and excluded it from the option list, with a dedicated section explaining why (the competitor's own scraped outline still lists Custom Cash as current). Ranking criteria, ThankYou Points redemption-value section, flat-rate-vs-category worked math, and a fair-credit fallback section added beyond the competitor's outline. 1,525 body words, 0 em-dashes in prose, all first-mention company links verified against citi.com."
+  },
+  {
+    "competitor_url": "https://www.bankrate.com/loans/personal-loans/reviews/prosper",
+    "competitor_name": "Bankrate",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/is-prosper-a-good-personal-loan-lender/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Written as a decision-focused guide, not a promotional review. Facts (APR 8.99-35.99%, origination fee 1-9.99%, $2k-$50k, 640 min score, 2-6yr terms) verified live against prosper.com. Proprietary anchor: original worked joint-application example with real computed amortization math ($10k/19%/6%-fee vs 12%/3%-fee scenarios, verified by hand). Prosper's official site linked on first mention only; not double-linked. 1,209 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.bankrate.com/loans/personal-loans/reviews/possible-finance",
+    "competitor_name": "Bankrate",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/is-possible-finance-a-good-personal-loan-option/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Decision-focused guide. Verified live (possiblefinance.com + secondary sourcing) that the product does not disclose an APR on its own site; translated its flat $10-25-per-$100 fee into an effective 65-163% APR range and showed the annualization math ($300/$15-per-$100 -> ~98% APR) as the proprietary anchor. Names a cheaper real alternative (NCUA Payday Alternative Loans, 28% APR cap) sourced from mycreditunion.gov. 1,213 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.bankrate.com/mortgages/15-year-mortgage-rates",
+    "competitor_name": "Bankrate",
+    "kind": "comparison",
+    "disposition": "DUPLICATE",
+    "our_url_or_route": null,
+    "draft": null,
+    "audit_result": null,
+    "notes": "Dropped at the Phase 1b/2 coverage-check gate before any generation. The decision-content Bankrate's outline covers (should you get a 15-year mortgage, pros/cons, refinancing into one, is it right for you) is already substantively covered by the existing /compare/15-year-vs-30-year-mortgage/ comparison page. The remaining unique part of Bankrate's page (live daily rate figures) is a rate-tracker format this DR~2.6 site cannot win or maintain (per prior discovery.md notes marking rate-tracker pages as institutional-SERP-dominated and unwinnable), so it was not pursued as a PARTIAL enrichment either. No content generated; no AI spend on this candidate."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/finance/learn/august-money-questions-answered",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/is-driving-around-for-cheaper-gas-worth-it/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "The competitor page was a 3-topic weekly column (gas price shopping, 'do I need a budget', 'loud budgeting'); built as one focused decision guide on the primary topic (gas-price detour math) with the other two checklist items covered as dedicated FAQs, satisfying the outline's full topic checklist without copying its column format. Facts grounded in live AAA national average ($4.07/gal, Aug 2026) and DOE fueleconomy.gov (15-30% mileage loss from aggressive driving), both verified via WebFetch. Proprietary anchor: original worked break-even math on a 12-gallon fill-up at a 20-cent gap. 1,203 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/student-loans/learn/what-happens-if-you-never-pay-your-student-loans",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/what-happens-if-you-dont-pay-your-student-loans/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Facts verified live against studentaid.gov/articles/default/ (270-day default trigger, 15% AWG cap, Treasury Offset Program, 65-day-to-bureaus reporting, rehabilitation vs consolidation) plus a live search confirming the January 2026 AWG resume/pause developments, which the competitor's own outline (scraped same-day) does not appear to reference. Proprietary anchor: an original calendar-walkthrough worked example of the 270-day timeline. 1,231 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/finance/learn/how-to-make-money-without-a-job",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "PARTIAL",
+    "our_url_or_route": "/guides/side-hustle-ideas/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Existing guide already covered gig/task apps, resale, freelancing/tutoring, digital products, tax rules, and scam red flags -- substantial topical overlap with the competitor's 17-item list. Enriched in place (targeted Edit only, everything else byte-for-byte unchanged) with one new section covering the genuinely missing angles: paid market research, renting out owned assets, housesitting, cash-back apps, gift-card resale, product reviews, and hobby-to-content income (photography/podcast/streaming) -- plus one new FAQ. No new route; sitemap lastmod only."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/credit-cards/learn/nibbles-credit-card",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/should-you-get-the-nibbles-credit-card/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Facts verified live against nibbles.com (issuer Lead Bank, $20k/70%/$950-deductible policy terms, 3x/1x rewards, dog<8/cat<10 age eligibility). Proprietary anchor: original worked claim example ($2,500 vet bill) computing the exact dollar gap between the card's $950-deductible bundled policy and a $250-deductible standalone policy ($1,415 vs $925 out of pocket), math independently verified. 1,250 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/business/loans/learn/how-to-get-a-business-loan-with-bad-credit",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/how-to-get-a-business-loan-with-bad-credit/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Added to guides-business.ts and registered in BUSINESS_GUIDE_SLUGS (lead-form gate). Facts verified live (SBA Microloan credit floor 575-620+, sba.gov; Fed 2025 Small Business Credit Survey 42/36/22 approval split, reusing the site's existing citation). Proprietary anchor: original worked 3-way $20,000 cost comparison (SBA Microloan vs fintech line of credit vs MCA) with hand-verified amortization math. Covers every item in the competitor's outline (revenue/collateral/cosigner/smaller-ask/explain-the-credit/business-advisor moves; microloan/online-loan/equipment/factoring/MCA financing types). 1,486 body words, 0 em-dashes in prose."
+  },
+  {
+    "competitor_url": "https://www.nerdwallet.com/credit-cards/learn/discount-tire-credit-card",
+    "competitor_name": "NerdWallet",
+    "kind": "page",
+    "disposition": "NEW",
+    "our_url_or_route": "/guides/should-you-get-the-discount-tire-credit-card/",
+    "draft": false,
+    "audit_result": "PASS",
+    "notes": "Facts verified live (issuer Synchrony Bank, 34.99% purchase APR / 39.99% penalty APR effective 7/31/25, ~620 credit floor, common 6mo/$199 and 12mo/$799 deferred-interest offers). Proprietary anchor: original worked deferred-interest-trap example computing the retroactive interest on a missed final payment ($900 purchase, ~$170 in retroactive interest, hand-verified via the daily-balance/APR method). Covers all 5 outline checklist items (instant use, no rewards, promo-financing risk, ongoing APR, prequalification). 1,228 body words, 0 em-dashes in prose."
+  }
+]

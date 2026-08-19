@@ -11,6 +11,8 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/mortgage/", label: "Buying a home too?" },
     { href: "/guides/is-extended-car-warranty-worth-it/", label: "Is an extended warranty worth it?" },
+    { href: "/guides/is-driving-around-for-cheaper-gas-worth-it/", label: "Is chasing cheaper gas actually worth it?" },
+    { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Read this first" },
   ],
   "mortgage": [
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
@@ -74,13 +76,18 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/credit-card-payoff/", label: "Compare against paying the card down directly" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Compare a 0% balance transfer instead" },
     { href: "/guides/how-to-read-a-personal-loan-review/", label: "How to read a lender review" },
+    { href: "/guides/is-prosper-a-good-personal-loan-lender/", label: "Considering Prosper? Read the real cost first" },
+    { href: "/guides/is-possible-finance-a-good-personal-loan-option/", label: "Considering Possible Finance? Check the real APR" },
   ],
   "credit-card-payoff": [
     { href: "/personal-loan/", label: "Compare a fixed-rate personal loan instead" },
     { href: "/budget/", label: "Build a payoff plan into your budget" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/roundup/best-credit-cards-for-fair-credit/", label: "Rebuilding credit? Compare cards for fair credit" },
+    { href: "/roundup/best-citi-credit-cards/", label: "Comparing Citi cards? See the full lineup" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Consider a 0% balance transfer card" },
+    { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Check the deferred-interest math first" },
+    { href: "/guides/should-you-get-the-nibbles-credit-card/", label: "Considering a pet-insurance credit card?" },
   ],
   "pto-cashout": [
     { href: "/budget/", label: "Plan where the payout goes in your budget" },
@@ -103,16 +110,19 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/business-line-of-credit/", label: "Compare a business line of credit" },
     { href: "/merchant-cash-advance/", label: "How a merchant cash advance compares" },
     { href: "/compare/invoice-factoring-vs-merchant-cash-advance/", label: "Factoring vs MCA" },
+    { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Damaged credit? See financing that weighs revenue instead" },
   ],
   "business-line-of-credit": [
     { href: "/invoice-factoring/", label: "Factor invoices for faster cash" },
     { href: "/merchant-cash-advance/", label: "When speed matters: MCA" },
     { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
+    { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Below a 620 score? Start here" },
   ],
   "business-loan-payoff": [
     { href: "/business-line-of-credit/", label: "Need more credit instead?" },
     { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
     { href: "/net-worth/", label: "Track your net worth" },
+    { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Bad credit? See which financing types still qualify" },
   ],
   "estate-planning": [
     { href: "/retirement/", label: "Have a retirement plan — now protect it" },

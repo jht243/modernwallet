@@ -24,4 +24,5 @@ export const BUSINESS_GUIDE_SLUGS = new Set<string>([
   "small-business-financing-guide",
   "how-revenue-affects-business-loan-approval",
   "how-to-account-for-invoice-factoring",
+  "how-to-get-a-business-loan-with-bad-credit",
 ]);

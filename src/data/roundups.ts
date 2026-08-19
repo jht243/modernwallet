@@ -5887,6 +5887,145 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // -- competitor-monitor pass 2026-08-19 --
+  {
+    slug: "best-citi-credit-cards",
+    title: "Best Citi Credit Cards of 2026: Compared by Fit",
+    metaDescription:
+      "The best Citi credit cards for 2026: Double Cash, Strata Premier, Strata, and Diamond Preferred compared by annual fee, rewards, and who each one fits.",
+    targetKeyword: "best citi credit cards",
+    category: "Citi credit cards",
+    angle: "best",
+    h1: "Best Citi Credit Cards of 2026",
+    intro:
+      "Citi's current card lineup splits cleanly into two lanes: no-fee cash back for everyday spending, and a $95-fee travel card built around Citi Travel bonus categories. We compared the four Citi cards actively open to new applicants on annual fee, rewards structure, and the specific spender each one fits, rather than ranking them on a single overall score.\n\nOne note before the comparisons: Citi stopped accepting new applications for the Citi Custom Cash Card as of May 28, 2026, and now directs new applicants to Double Cash instead. If you see Custom Cash recommended elsewhere, confirm it's still open to new applicants before applying, since that status can change again. No card issuer paid for placement in this roundup, and every dollar figure below should be confirmed on Citi's own site before you apply, since card terms change.",
+    rankingCriteria:
+      "We weighted four factors: whether the annual fee is justified by the rewards rate for a realistic spender (35%), how flexible the rewards are to redeem (25%, since a card that only pays out well through one narrow channel is worth less than one with broad redemption options), the strength of any 0% intro APR offer for a spender who needs one (20%), and bonus-category fit for common spending patterns like groceries, gas, and dining (20%). We did not weight sign-up bonus size heavily, since bonus offers change frequently and shouldn't be the deciding factor for a card you'll hold for years.",
+    options: [
+      {
+        name: "Citi Double Cash® Card",
+        bestFor: "Best flat-rate card for simple, no-annual-fee cash back",
+        description:
+          "[Citi Double Cash](https://www.citi.com/credit-cards/citi-double-cash-credit-card) earns an unlimited 2% cash back on every purchase, split as 1% when you buy and 1% as you pay it off, with no annual fee and no category tracking required. Booking travel through Citi Travel bumps select bookings to 5% total (3% travel bonus on top of the base 2%).",
+        strengths: [
+          "Flat 2% cash back on every purchase, no categories to track or activate",
+          "No annual fee",
+          "Simple structure: works the same whether you spend on groceries, gas, or anything else",
+        ],
+        limitations: [
+          "No bonus categories above the flat rate outside Citi Travel bookings",
+          "The second 1% only posts once you pay off that portion of the balance, so a carried balance delays part of your reward",
+        ],
+        pricing: "No annual fee. Confirm the current intro APR offer and ongoing variable APR on Citi's site before applying.",
+      },
+      {
+        name: "Citi Strata Premier® Card",
+        bestFor: "Best for households that spend heavily on travel, dining, and groceries",
+        description:
+          "[Citi Strata Premier](https://www.citi.com/credit-cards/citi-strata-premier-credit-card) carries a $95 annual fee and earns 3x points on air travel and hotels, restaurants, supermarkets, and gas and EV charging stations, plus 10x points on hotels, car rentals, and attractions booked through Citi Travel, with 1x on everything else. Points transfer to airline and hotel partners including American, JetBlue, Virgin Atlantic, Cathay, Eva Air, and more.",
+        strengths: [
+          "3x points across four everyday categories most households already spend in",
+          "10x points on Citi Travel bookings for hotels, cars, and attractions",
+          "Points transfer to multiple airline and hotel partners, not just Citi Travel",
+          "No foreign transaction fees",
+        ],
+        limitations: [
+          "$95 annual fee needs roughly $3,200/year in 3x-category spending just to offset, before counting the sign-up bonus",
+          "Annual hotel benefit and travel protections add value mainly for households that actually travel",
+        ],
+        pricing: "$95 annual fee. Confirm the current sign-up bonus terms on Citi's site, since the exact spend threshold and bonus size change periodically.",
+      },
+      {
+        name: "Citi Strata℠ Card",
+        bestFor: "Best no-fee starter card with bonus categories",
+        description:
+          "Citi Strata carries no annual fee and earns bonus points on supermarkets, gas stations, restaurants, and a rotating set of other everyday categories, positioned as a no-fee entry point into Citi's ThankYou® Points ecosystem for someone not ready to pay Strata Premier's $95 fee.",
+        strengths: [
+          "No annual fee while still earning bonus points on common categories",
+          "Points pool with other ThankYou®-earning Citi cards, useful if you plan to add Strata Premier later",
+          "Low intro APR offer available on qualifying purchases",
+        ],
+        limitations: [
+          "Bonus categories and rates run below Strata Premier's 3x tier",
+          "Best used as a stepping-stone card or a simple no-fee option, not the top pick for a heavy spender who travels often",
+        ],
+        pricing: "No annual fee. Confirm current bonus categories and intro APR terms on Citi's site.",
+      },
+      {
+        name: "Citi® Diamond Preferred® Card",
+        bestFor: "Best for a long 0% intro APR on purchases and balance transfers, no rewards",
+        description:
+          "Citi Diamond Preferred carries no annual fee and earns no rewards at all; its entire purpose is a long 0% introductory APR window on both purchases and balance transfers, aimed at someone paying down debt or financing a large purchase interest-free rather than earning cash back or points. See our [Citi Diamond Preferred vs Citi Simplicity](/compare/citi-diamond-preferred-vs-citi-simplicity/) comparison if you're weighing it against Citi's other no-fee, no-rewards balance-transfer card.",
+        strengths: [
+          "No annual fee",
+          "One of the longer 0% intro APR windows among no-fee Citi cards on both purchases and balance transfers",
+          "Citi Flex Pay lets you split an eligible purchase into a fixed payment plan",
+        ],
+        limitations: [
+          "Earns no rewards of any kind, so it's a poor fit once the intro period ends and you're using it for everyday spending",
+          "Standard late fees and a penalty APR can apply if a payment is missed, unlike Citi Simplicity's no-late-fee design",
+        ],
+        pricing: "No annual fee. Confirm the current 0% intro APR length and the ongoing variable APR on Citi's site before transferring a balance.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Annual Fee", "Best Category Rate", "0% Intro APR Focus", "Foreign Transaction Fee"],
+      rows: [
+        { name: "Citi Double Cash", values: ["$0", "2% flat (all purchases)", "Balance transfers", "Applies"] },
+        { name: "Citi Strata Premier", values: ["$95", "10x (Citi Travel hotels/cars)", "No", "None"] },
+        { name: "Citi Strata", values: ["$0", "Bonus categories (varies)", "Purchases", "Applies"] },
+        { name: "Citi Diamond Preferred", values: ["$0", "None (no rewards)", "Purchases & balance transfers", "Applies"] },
+      ],
+    },
+    verdict:
+      "Citi Double Cash is the right default for most people: a flat 2% with no annual fee beats a category card for anyone who doesn't want to track bonus spending. Move up to Citi Strata Premier only if your real annual spending on travel, dining, groceries, and gas is high enough to clear the $95 fee with room to spare, which the 3x categories make achievable for a household that cooks and travels regularly. Citi Strata is the reasonable middle ground if you want some bonus-category earning without a fee, though it won't out-earn Double Cash's flat rate on categories outside its own bonus list. Skip Diamond Preferred entirely unless you specifically need a long 0% intro period on a purchase or a balance transfer, since it earns nothing once that window closes. And if you're comparing Custom Cash because you saw it recommended elsewhere, confirm on Citi's own site that it's still accepting new applicants first, since Citi stopped issuing new ones as of May 28, 2026.",
+    sections: [
+      {
+        heading: "Why Citi Custom Cash isn't in this roundup",
+        content:
+          "Citi Custom Cash earned 5% cash back in your top eligible spending category each billing cycle, up to $500 in spend per quarter, with no annual fee, and it was a genuinely strong card while it was open. Citi confirmed it stopped accepting new applications for Custom Cash as of May 28, 2026, and now directs prospective applicants to Double Cash instead.\n\nIf you already hold a Custom Cash card, your account and its rewards structure continue as normal; this discontinuation only affects new applicants. For anyone applying today, Double Cash's flat 2% is the closest current equivalent, though it trades Custom Cash's rotating 5% top-category rate for simplicity and a rate that never requires you to track which category qualifies each cycle.",
+      },
+      {
+        heading: "Flat rate vs. category cards: the real math",
+        content:
+          "A flat-rate card like Double Cash wins whenever your spending is spread evenly across many categories, since no single category card can beat 2% on purchases outside its own bonus list. A category card like Strata Premier wins when a large share of your spending concentrates in its 3x categories: travel, dining, groceries, and gas.\n\nRun the actual numbers before assuming the bigger multiplier wins. Spend $500 a month on groceries and gas combined and Strata Premier's 3x earns 15 points per dollar equivalent value (assuming roughly 1 cent per point in standard redemption), versus Double Cash's 2%, or $10, on the same spend; that gap, worth a few dollars a month, needs to clear the $95 annual fee across a full year before Strata Premier actually comes out ahead of a no-fee flat-rate card for that specific spending pattern.",
+      },
+      {
+        heading: "How we compared these cards",
+        content:
+          "We evaluated only Citi cards currently open to new applicants as of this writing, weighting annual fee justification, redemption flexibility, intro APR strength, and everyday bonus-category fit as described in our ranking criteria above. No issuer paid for placement, and every dollar figure was checked against Citi's own product pages rather than third-party estimates. Citi periodically changes fees, bonus categories, and intro APR terms, so confirm the current details on citi.com before applying, since a card's terms the day you apply are the ones that actually govern your account.",
+      },
+      {
+        heading: "ThankYou® Points: what they're actually worth",
+        content:
+          "Every card in this roundup outside Diamond Preferred earns Citi ThankYou® Points, and the redemption method you choose changes their real value more than most cardholders realize. Redeeming through the standard ThankYou Travel Center or as a statement credit generally lands around 1 cent per point, the baseline most issuers use.\n\nTransferring points to an airline or hotel partner, available on Strata Premier, can push the value meaningfully higher for a specific premium redemption, like a business-class flight or a peak-season hotel stay, where the partner's own award chart prices the seat or room below what the points-per-dollar math implies through the standard redemption. That gap is exactly why Strata Premier's transfer partner list, not just its 3x earning rate, is part of what justifies its $95 fee for a traveler who actually uses transfer partners rather than always cashing points out as a flat statement credit." },
+      {
+        heading: "If your credit isn't strong enough for any of these yet",
+        content:
+          "Every card in this roundup targets good-to-excellent credit; Citi does not currently market a secured or fair-credit-tier card in this lineup the way some issuers do. If your credit sits below what these approval odds typically require, building credit first on a card built for that tier, then moving to Double Cash or Strata Premier once your score improves, is usually a faster path than repeatedly applying and getting declined by cards outside your current tier. See our [best credit cards for fair credit](/roundup/best-credit-cards-for-fair-credit/) roundup for options built specifically for that stage, and check your real numbers with our [credit card payoff calculator](/credit-card-payoff/) if you're carrying a balance anywhere else while you build toward a better Citi card." },
+    ],
+    faqs: [
+      { question: "What is the best Citi credit card overall?", answer: "For most people, Citi Double Cash is the best default: a flat 2% cash back with no annual fee beats a category card for anyone who doesn't want to track bonus spending. Citi Strata Premier can out-earn it for a household with high travel, dining, and grocery spending, but only once that spending clears the $95 annual fee." },
+      { question: "Is Citi Custom Cash still available?", answer: "No, Citi stopped accepting new applications for the Citi Custom Cash Card as of May 28, 2026, and now directs new applicants to Citi Double Cash instead. Existing Custom Cash cardholders keep their account and rewards structure; the change only affects new applicants." },
+      { question: "Is Citi Strata Premier's $95 annual fee worth it?", answer: "It depends on your spending in the 3x categories: air travel and hotels, restaurants, supermarkets, and gas and EV charging. A household spending roughly $3,200 or more a year across those categories generally earns enough extra value over Double Cash's flat 2% to offset the fee, before counting the sign-up bonus or travel protections." },
+      { question: "Does Citi Diamond Preferred earn rewards?", answer: "No, Citi Diamond Preferred earns no rewards of any kind. Its entire value is a long 0% introductory APR window on purchases and balance transfers, aimed at debt payoff or a large interest-free purchase, not everyday spending." },
+      { question: "Which Citi card has no foreign transaction fee?", answer: "Citi Strata Premier charges no foreign transaction fee, making it the pick among these four for international travel. Double Cash, Strata, and Diamond Preferred all apply a standard foreign transaction fee on purchases made outside the U.S." },
+      { question: "Can I have more than one Citi credit card?", answer: "Yes, and Citi's ThankYou® Points-earning cards, including Strata and Strata Premier, pool points into a shared account, which can be useful if you hold a no-fee card for daily spending and add the $95-fee Strata Premier specifically for its stronger transfer partners and travel redemptions." },
+      { question: "What credit score do I need to get approved for a Citi card?", answer: "Citi doesn't publish a hard minimum, but Double Cash and Strata are generally attainable with good credit (roughly 670+), while Strata Premier's stronger rewards and travel benefits typically go to good-to-excellent applicants (roughly 690-700+). See our [best credit cards for fair credit](/roundup/best-credit-cards-for-fair-credit/) roundup if your score sits below that range." },
+      { question: "Does Citi increase credit limits automatically?", answer: "Citi periodically reviews accounts in good standing for a credit limit increase, but the timing and amount aren't guaranteed or published; you can also request a review directly through your online account, which sometimes triggers a soft rather than a hard credit check depending on the request type." },
+    ],
+    sources: [
+      { label: "Citi — Compare Credit Cards", url: "https://www.citi.com/credit-cards" },
+      { label: "Citi — Citi Double Cash Card", url: "https://www.citi.com/credit-cards/citi-double-cash-credit-card" },
+      { label: "Citi — Citi Strata Premier Card", url: "https://www.citi.com/credit-cards/citi-strata-premier-credit-card" },
+    ],
+    relatedComparisons: ["citi-diamond-preferred-vs-citi-simplicity"],
+    calculatorLinks: [
+      { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
+      { label: "Personal loan calculator", href: "/personal-loan/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 

@@ -24,7 +24,7 @@ export const BUSINESS_GUIDES: Guide[] = [
       {
         heading: "Start with SBA and bank loans for the lowest cost",
         body:
-          "SBA and bank loans almost always cost the least, so start there if you have time. The SBA's 7(a) program guarantees loans up to $5 million through banks and credit unions. Its Microloan program lends up to $50,000, with an average loan near $13,000.\n\nThese loans carry the lowest rates but the slowest process. Approval can take weeks and needs strong credit, tax returns, and often collateral. If you can wait and you qualify, this is the cheapest money you will find. Already carrying one? Use our [business loan payoff calculator](/business-loan-payoff/) to see how much an extra monthly payment saves in interest.\n\nWhen a bank says no or the timeline is too long, the alternatives below fill the gap. They cost more but move faster. The rest of this guide helps you choose among them.",
+          "SBA and bank loans almost always cost the least, so start there if you have time. The SBA's 7(a) program guarantees loans up to $5 million through banks and credit unions. Its Microloan program lends up to $50,000, with an average loan near $13,000.\n\nThese loans carry the lowest rates but the slowest process. Approval can take weeks and needs strong credit, tax returns, and often collateral. If you can wait and you qualify, this is the cheapest money you will find. Already carrying one? Use our [business loan payoff calculator](/business-loan-payoff/) to see how much an extra monthly payment saves in interest. If a low credit score is what's holding you back, see our [guide to getting a business loan with bad credit](/guides/how-to-get-a-business-loan-with-bad-credit/) for the SBA Microloan's looser floor and the revenue-based options that skip a credit check entirely.\n\nWhen a bank says no or the timeline is too long, the alternatives below fill the gap. They cost more but move faster. The rest of this guide helps you choose among them.",
       },
       {
         heading: "The decision framework: speed vs. cost vs. receivables",
@@ -268,6 +268,68 @@ export const BUSINESS_GUIDES: Guide[] = [
         label: "FASB — About the FASB",
         url: "https://fasb.org/about-us/facts",
       },
+    ],
+  },
+
+  // -- competitor-monitor pass 2026-08-19 --
+  {
+    slug: "how-to-get-a-business-loan-with-bad-credit",
+    title: "How to Get a Business Loan With Bad Credit in 2026",
+    metaDescription:
+      "Business loan options for bad credit: SBA Microloans, revenue-based lenders, and five moves that improve approval odds even below a 620 score.",
+    h1: "How to Get a Business Loan With Bad Credit",
+    cardBlurb: "SBA Microloans, revenue-focused lenders, and five concrete moves that improve approval odds when your credit score is working against you.",
+    intro:
+      "A credit score below 620 rules out the cheapest bank and SBA 7(a) financing, but it does not rule out every legitimate financing option. This guide covers the specific loan types that weigh business revenue over personal credit, the SBA program built for exactly this situation, and five moves that measurably improve your approval odds without waiting years to rebuild your score first.",
+    sections: [
+      {
+        heading: "What 'bad credit' actually means to a lender",
+        body:
+          "Most small business lenders weigh two separate scores: your personal FICO score and, for many but not all loan types, your business's own credit profile, commonly the FICO SBSS score used by the [Small Business Administration](https://www.sba.gov/) and many banks. A personal score below roughly 620 is the practical line where SBA 7(a) loans and most bank term loans become very difficult to qualify for, though it is not always a hard automatic decline.\n\nBusiness revenue and time in business matter more than most owners expect. A lender evaluating a two-year-old business with $30,000 in monthly revenue and a 580 personal credit score is looking at a fundamentally different risk profile than a brand-new business with the same score and no revenue history, and several of the options below are built specifically around that revenue-first evaluation.",
+      },
+      {
+        heading: "SBA Microloans: the most accessible SBA path",
+        body:
+          "SBA Microloans, funded up to $50,000 through nonprofit intermediary lenders rather than banks directly, carry meaningfully looser credit requirements than the SBA's larger 7(a) program. Many microloan intermediaries accept scores in the 575 to 620 range, and some will consider an application as low as 540 to 575 when the business shows strong offsetting factors: consistent monthly revenue, low existing debt, real business experience, or a credible business plan.\n\nThe trade-off for that flexibility is loan size and speed. A $50,000 cap and nonprofit-intermediary underwriting means the process usually takes longer than a same-day online lender, and the average SBA Microloan lands closer to $13,000 than the $50,000 ceiling. If your capital need fits inside that range, a Microloan is worth applying for before turning to a more expensive alternative lender, since the rate is typically far lower than what a revenue-based or merchant cash advance product will offer at a comparable credit tier.",
+      },
+      {
+        heading: "Financing that weighs revenue over your credit score",
+        body:
+          "If your credit sits below the Microloan floor, or you need more than $50,000, several financing types are underwritten primarily on business cash flow rather than personal credit. [Invoice factoring](/invoice-factoring/) sells your unpaid B2B invoices for cash now, and approval leans on your customers' creditworthiness, not yours, which makes it accessible even to a business owner with damaged personal credit as long as the business itself invoices other companies. A [business line of credit](/business-line-of-credit/) from a fintech lender can also work at a lower credit tier than a bank would accept, though typically at a higher rate that reflects the added risk.\n\nA merchant cash advance is the fastest and most credit-lenient option of the three, since approval weighs your daily card sales more than your credit score at all, but it is also the most expensive per dollar borrowed of any option on this list. Treat it as a short-term bridge, not a standing financing strategy, and compare its real cost against a business line of credit or invoice factoring using our [small business financing guide](/guides/small-business-financing-guide/) before committing.",
+      },
+      {
+        heading: "A worked example: $20,000, three ways",
+        body:
+          "Run the same $20,000 need through three paths to see why lender type matters as much as your score. An SBA Microloan at a representative 10% APR over 4 years, if your local intermediary approves a 590 score with strong revenue, costs roughly $507 a month and about $4,348 in total interest over the term.\n\nA fintech business line of credit at a representative 30% APR drawn as a 12-month installment costs roughly $1,950 a month and about $3,397 in interest, less total interest than the Microloan since the balance is repaid far faster, but requires no fixed collateral and often funds within days rather than weeks. A merchant cash advance on the same $20,000 at a 1.35 factor rate costs $27,000 total regardless of how fast you repay it, meaning $7,000 in fees, before any daily holdback timing risk on slow-revenue weeks. The line of credit and the Microloan land within roughly $1,000 of each other in total interest here, so speed and collateral requirements, not just rate, decide between them; the MCA is the clear outlier, costing $2,600 to $3,600 more in total fees than either one, which is exactly why it belongs in the 'fast bridge' category, not the default choice.",
+      },
+      {
+        heading: "Five moves that improve your approval odds",
+        body:
+          "Choose the right lender type first. A bank or SBA 7(a) lender screens hardest on personal credit; a revenue-based or invoice-factoring lender screens hardest on cash flow, so applying to the wrong lender type for your specific weak point wastes a hard credit inquiry for nothing. If your business owns or is buying equipment, equipment financing is worth a specific look here too: the equipment itself serves as collateral, which routinely qualifies at a lower credit threshold than an unsecured loan of the same size.\n\nAsk for less money: a lender evaluating a smaller, more conservative request is taking on less risk, which can be the difference between an approval and a decline at a borderline credit score. Consider a co-signer with stronger personal credit, understanding that a co-signer is equally liable for the debt if your business can't repay it. And write a short, direct explanation of what caused the bad credit (a specific past event, not a vague excuse) in your application; underwriters read these, and a clear, honest account of a resolved past problem reads very differently than silence on the topic. A free session with a [SCORE](https://www.score.org/) or Small Business Development Center advisor before you apply can also help you match your specific situation to the right lender type, at no cost.",
+      },
+      {
+        heading: "Build credit for your next round of financing",
+        body:
+          "Every payment you make on whichever financing you choose here is an opportunity to build the credit profile that gets you a cheaper loan next time. On-time payments on a Microloan, a factoring arrangement, or a business line of credit typically get reported to business credit bureaus, and a stronger business credit file can qualify your company for SBA 7(a) or conventional bank financing at a fraction of today's cost within a year or two.\n\nThe [Federal Reserve's Small Business Credit Survey](https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms) found that 42% of applicants received the full amount of financing they sought, 36% received some or most of it, and 22% received none at all, so a partial approval or a more expensive first loan is a common starting point, not a sign you did something wrong. Run your specific numbers, loan amount, rate, and term, through our [business loan payoff calculator](/business-loan-payoff/) once you have an offer in hand, so you know the real total cost before you sign.",
+      },
+    ],
+    tools: [
+      { href: "/business-loan-payoff/", label: "Business loan payoff" },
+      { href: "/invoice-factoring/", label: "Invoice factoring" },
+      { href: "/business-line-of-credit/", label: "Business line of credit" },
+    ],
+    faqs: [
+      { question: "What credit score do I need for a business loan?", answer: "It depends heavily on the loan type. SBA 7(a) and most bank term loans generally need a personal score around 620 or higher, while SBA Microloans work with many applicants in the 575 to 620 range, and revenue-based options like invoice factoring or a merchant cash advance can work with an even lower score since they weigh business cash flow more heavily." },
+      { question: "Can I get an SBA loan with bad credit?", answer: "An SBA 7(a) loan is difficult below roughly a 620 personal score, but an SBA Microloan, capped at $50,000 and issued through nonprofit intermediary lenders, has meaningfully looser requirements and can work for scores in the 575 to 620 range, or lower with strong offsetting business fundamentals." },
+      { question: "What is the fastest business loan option with bad credit?", answer: "A merchant cash advance is typically the fastest, often funding within a day or two, since approval weighs your daily card sales rather than your credit score. It's also the most expensive option per dollar borrowed, so it fits best as a short-term bridge rather than a standing financing plan." },
+      { question: "Does invoice factoring require good credit?", answer: "No. Invoice factoring is approved primarily on your customers' creditworthiness, since the factor is buying your unpaid invoices and getting repaid when your customer pays, not lending directly against your own credit profile. This makes it one of the more accessible options for a business owner with damaged personal credit." },
+      { question: "Will a co-signer help me qualify for a business loan?", answer: "Often, yes, if the co-signer has stronger personal credit than you do, since the lender is now underwriting against the better of the two profiles. A co-signer takes on equal legal responsibility for the debt, so only add one who could and would repay the loan if your business could not." },
+      { question: "How can I build business credit after getting a bad-credit loan?", answer: "Make every payment on time on whatever financing you start with; most lenders, including Microloan intermediaries and factoring companies, report payment history to business credit bureaus. A stronger business credit profile after a year or two of on-time payments typically qualifies you for cheaper financing, including SBA 7(a) or conventional bank loans, the next time you need capital." },
+      { question: "Should I explain my bad credit in a loan application?", answer: "Yes, a short, specific, honest account of what caused the credit damage (a past medical bill, a prior business setback, a documented one-time event) generally reads better to an underwriter than leaving the application silent on it. Pair the explanation with evidence the underlying issue is resolved, such as several months of on-time payments since." },
+    ],
+    sources: [
+      { label: "U.S. Small Business Administration — Loans", url: "https://www.sba.gov/funding-programs/loans" },
+      { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
     ],
   },
 ];
