@@ -1,0 +1,9 @@
+IndexNow submission — 2026-08-20 (ga4-top-pages-pass)
+Endpoint: https://api.indexnow.org/indexnow
+Key: dc557f6bfced447aa1a71771d8a0d24a (project-wide fallback key)
+HTTP status: 200
+
+URLs submitted:
+https://www.themodernwallet.com/portfolio/90-10-portfolio-calculator/
+https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/
+https://www.themodernwallet.com/compare/hysa-vs-money-market/
