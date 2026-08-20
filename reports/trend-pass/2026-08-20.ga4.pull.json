@@ -1,0 +1,65 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-20",
+  "window_start": "2026-08-20",
+  "window_end": "2026-08-20",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/hysa-vs-money-market/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/80-20-portfolio-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-budgeting-apps-for-couples",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 7,
+  "top10_pages_total_clicks": 7,
+  "channel_split": {
+    "/portfolio/60-40-portfolio-calculator/": {
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/compare/hysa-vs-money-market/": {
+      "Organic Search": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 1
+    },
+    "/portfolio/80-20-portfolio-calculator/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-budgeting-apps-for-couples": {
+      "Direct": 1
+    }
+  }
+}

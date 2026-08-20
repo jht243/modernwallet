@@ -81,6 +81,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       { question: "Is the 60/40 portfolio good for retirement?", answer: "It can be, but retirees typically weight it differently than someone still saving. The 60/40 split is often used during the working years for growth with some stability; near or in retirement, many investors shift toward more bonds to reduce how much a downturn can shrink withdrawals. Use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to test a more conservative mix against your own retirement timeline. If you'd rather not manage that shift by hand, a target-date fund automates it; see how that approach compares in our [target-date fund vs. S&P 500 comparison](/compare/target-date-fund-vs-sp500/)." },
       { question: "Are there fees for running a 60/40 portfolio?", answer: "A 60/40 split has no fee of its own. The cost comes from the expense ratio of the stock and bond funds you use to build it, plus any brokerage trading fees. Low-cost, broad index funds keep this cost small, but expense ratios vary by fund, so check them before you buy." },
       { question: "Does a 60/40 portfolio protect against inflation?", answer: "A 60/40 portfolio offers only partial inflation protection. Stocks have historically outpaced inflation over long stretches, but bonds are more exposed, since their fixed interest payments buy less when prices rise unexpectedly. Some investors offset this by shifting part of the bond allocation into inflation-linked bonds like [TIPS](/compare/i-bonds-vs-tips/)." },
+      { question: "How does 60/40 compare to a more aggressive 90/10 split?", answer: "In the model, a 90/10 mix has a meaningfully higher expected return (9.40% vs 7.60%) and higher volatility (14.46% vs 10.00%) than 60/40. Over 30 years with no added contributions, $100,000 grows to about $1,480,879 in a 90/10 mix versus about $900,260 in a 60/40 mix — roughly $580,000 more, in exchange for a much wider range of possible one-year outcomes. Run your own numbers in the [90/10 portfolio calculator](/portfolio/90-10-portfolio-calculator/)." },
     ],
     sources: [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
@@ -254,5 +255,45 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     toolSubheading: "See the expected return, risk, and growth of an 80% stock, 20% bond mix.",
     preset: { stocks: 80000, bonds: 20000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30 },
     relatedSlugs: ["70-30-portfolio-calculator", "60-40-portfolio-calculator", "portfolio-risk-calculator"],
+  },
+
+  {
+    calculator: "portfolio",
+    slug: "90-10-portfolio-calculator",
+    title: "90/10 Portfolio Calculator: Return, Risk & Growth",
+    metaDescription:
+      "Use this 90/10 portfolio calculator to see the expected return, risk, and long-run growth of a 90% stock, 10% bond mix for long time horizons.",
+    targetKeyword: "90/10 portfolio calculator",
+    h1: "90/10 Portfolio Calculator",
+    intro:
+      "The 90/10 portfolio holds 90% stocks and 10% bonds, the most stock-heavy fixed mix on this site, built for investors with a very long time horizon. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
+    howItWorks:
+      "A 90/10 portfolio keeps only a thin bond slice, leaning almost entirely on stocks for growth. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To see a more balanced split, try the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
+    commonMistakes: [
+      "Treating the 10% stock and 4% bond figures as guaranteed. They are long-run model assumptions, and real returns vary widely year to year.",
+      "Holding 90/10 with a short time horizon. A 10% bond cushion barely dampens a stock selloff, so this mix needs years to recover from a bad stretch.",
+      "Skipping the volatility check. A 90/10 mix carries the highest swing of any fixed split on this site, and the extra expected return over 80/20 is small.",
+      "Never rebalancing. With only a 10% bond weight to start, a strong bull market can push a 90/10 mix to nearly all stocks within a few years.",
+      "Assuming more stock weight always pays off. The Sharpe ratio — return per unit of risk — can actually be lower at 90/10 than at a less extreme mix; check both numbers, not just the expected return.",
+    ],
+    workedExample:
+      "Say you invest $90,000 in stocks and $10,000 in bonds, for $100,000 total. That is a 90% stock, 10% bond split. The calculator shows an expected return of 9.40% and volatility of 14.46%, giving a Sharpe ratio of 0.48. Held for 30 years with no extra contributions, that $100,000 grows to about $1,480,879 in the model — the highest projected balance of any fixed mix on this site, and also the widest one-year range.",
+    faqs: [
+      { question: "What is a 90/10 portfolio?", answer: "A 90/10 portfolio holds 90% in stocks and 10% in bonds. It's the most aggressive fixed mix on this site, keeping only a thin bond cushion, and it typically suits investors with a very long time horizon and a high tolerance for swings." },
+      { question: "What return does the 90/10 portfolio calculator assume?", answer: "The calculator models stocks at a 10% return with 16% volatility and bonds at a 4% return with 5% volatility. For a 90/10 mix, that gives an expected return of 9.40% and volatility of 14.46%. These are long-run estimates, not promises." },
+      { question: "Is 90/10 too aggressive?", answer: "It depends on your time horizon and how you'd react to a large drawdown. In the model, 90/10 carries 14.46% volatility, the highest of any fixed mix on this site, for a Sharpe ratio of 0.48 — slightly below 80/20's 0.49. For a saver decades from needing the money, the extra risk is often an acceptable tradeoff; for most others, a less extreme mix delivers nearly the same growth with a smoother ride." },
+      { question: "How much can a 90/10 portfolio grow over 30 years?", answer: "In the model, $100,000 split 90/10 with no added contributions grows to about $1,480,879 over 30 years, using a 9.40% expected return. Actual results will differ because real markets rise and fall, sometimes sharply." },
+      { question: "90/10 vs 60/40 portfolio: what's the tradeoff?", answer: "In the model, 90/10 has a meaningfully higher expected return (9.40% vs 7.60%) and higher volatility (14.46% vs 10.00%) than 60/40. Over 30 years with no added contributions, $100,000 grows to about $1,480,879 in a 90/10 mix versus about $900,260 in a 60/40 mix — roughly $580,000 more, in exchange for a much wider range of possible one-year outcomes. Run your own numbers in the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/)." },
+      { question: "90/10 vs 80/20 portfolio: is the extra stock weight worth it?", answer: "In the model, 90/10 edges out 80/20 on raw expected return (9.40% vs 8.80%) but actually has a slightly lower Sharpe ratio (0.48 vs 0.49), meaning 80/20 delivers marginally more return per unit of risk taken. See the full [80/20 vs 90/10 portfolio comparison](/compare/80-20-vs-90-10-portfolio/) for the complete numbers, including the 30-year growth gap and the worst-case 1-year range for each." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+      { label: "FINRA — Know Your Risk Tolerance", url: "https://www.finra.org/investors/insights/know-your-risk-tolerance" },
+    ],
+    toolHeading: "Analyze the aggressive 90/10 portfolio",
+    toolSubheading: "See the expected return, risk, and growth of a 90% stock, 10% bond mix.",
+    preset: { stocks: 90000, bonds: 10000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30 },
+    relatedSlugs: ["80-20-portfolio-calculator", "60-40-portfolio-calculator", "portfolio-risk-calculator"],
   },
 ];

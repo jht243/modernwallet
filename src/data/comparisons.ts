@@ -289,6 +289,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Rates on both accounts are variable and typically move with the Federal Reserve's federal funds rate. When the Fed raises rates, banks usually raise deposit rates (with some lag). When the Fed cuts rates, deposit rates fall. Rates are not locked in like a CD.",
       },
+      {
+        question: "Is a money market account the same as a money market fund?",
+        answer:
+          "No, and mixing them up is a common, costly mistake. A money market account (what this page compares against a HYSA) is a bank deposit product: it's FDIC-insured up to $250,000 and its principal cannot go down from market moves. A money market fund is a mutual fund registered with the [SEC](https://www.sec.gov/) that invests in short-term debt like Treasury bills and commercial paper — it's not FDIC insured, and while these funds aim to hold a stable $1.00 share price, that's not guaranteed. Money market funds are typically bought inside a brokerage account, often as the default \"cash\" holding, and can sometimes edge out bank rates. If safety of principal matters most to you, the money market account (or a HYSA) is the simpler, insured choice.",
+      },
     ],
     sources: [
       { label: "FDIC — National deposit rates", url: "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/banklist.html" },
@@ -297,6 +302,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["hysa-vs-cd", "stocks-vs-bonds", "brokerage-vs-ira"],
     calculatorLinks: [
+      { label: "High-yield savings calculator", href: "/investing/high-yield-savings-calculator/" },
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Net worth calculator", href: "/net-worth/" },
     ],
