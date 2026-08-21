@@ -55,11 +55,14 @@ Whenever a trend or an uncovered query centers on a discrete entity (product, br
 **`# Query check` (Lane B — the top-20 uncovered-query check):** `## Coverage verdict (top-20 queries)` (covered / winner-protected / uncovered counts + the uncovered queries built) · `## Query-check pages shipped (N)` (title → live URL, coverage query "<query>") · `## Query-check — flagged for the human (N)` (winner-protection / over-cap-not-ledgered).
 **`# Run details` (shared):** `## SEMrush expansion` (status + keyword count, or "skipped — no key") · `## Ledger deltas` · `## Audit` · `## IndexNow` · `## Blocker`.
 
+**Email SUBJECT is fixed for this routine.** It is always `Trend (yes|no) / Query (yes|no)` and nothing else — pass it verbatim as `--headline`, substituting each lane's own verdict: `yes` = that lane shipped at least one page this run, `no` = it shipped none. The `--summary` stays the longer one-liner (it becomes the inbox preview).
+
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py --status <success|failure|no-changes> \
   --skill trend-pass-auto --site "<BASE_URL>" --repo "$REPO" --branch "$BRANCH" \
+  --headline "Trend (<yes|no>) / Query (<yes|no>)" \
   --summary "Trend: <NO — no clear trend / YES — <theme>>. Query check: <NO — all top-20 already covered / YES — N page(s): <titles>>.<deploy/verify note if anything shipped>" \
   --details-file /tmp/trend-pass-auto-$(date +%Y-%m-%d).md \
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"

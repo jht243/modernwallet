@@ -26,6 +26,7 @@ import argparse
 import html
 import json
 import os
+import re
 import subprocess
 import sys
 import urllib.error
@@ -188,6 +189,36 @@ SKILL_SHORT = {
     "roundup-pass": "Roundup",
     "amazon-gear-radar-auto": "Amazon deep dives",
 }
+
+
+# Trend pass gets a FIXED subject shape, by owner instruction: the only thing
+# the inbox needs from that routine is whether each of its two lanes fired, so
+# the subject is always "Trend (yes|no) / Query (yes|no)" — nothing else.
+TREND_SUBJECT_RE = re.compile(r"^Trend \((yes|no)\) / Query \((yes|no)\)$", re.I)
+TREND_LANE_RE = re.compile(r"\btrends?\b[^.\n]{0,24}?\b(yes|no)\b", re.I)
+QUERY_LANE_RE = re.compile(r"\bquer(?:y|ies)\b[^.\n]{0,24}?\b(yes|no)\b", re.I)
+
+
+def trend_pass_outcome(headline: str, summary: str) -> str:
+    """Build the trend pass subject outcome: "Trend (yes|no) / Query (yes|no)".
+
+    Prefers a headline/summary already in that exact shape (what the skill is
+    told to pass). Otherwise it recovers each lane's verdict from the wording
+    the skill used ("Trend: NO — ... Query check: YES — ..."), so an older repo
+    copy of the skill still produces the required subject. A lane that can't be
+    read renders "?" — never a made-up "no", which would hide a shipped page.
+    """
+    for cand in (headline, summary):
+        c = (cand or "").strip()
+        if TREND_SUBJECT_RE.match(c):
+            return c
+    text = f"{headline or ''} {summary or ''}"
+
+    def lane(rx):
+        m = rx.search(text)
+        return m.group(1).lower() if m else "?"
+
+    return f"Trend ({lane(TREND_LANE_RE)}) / Query ({lane(QUERY_LANE_RE)})"
 
 
 def _slugify(text: str) -> str:
@@ -742,7 +773,11 @@ def main() -> int:
     if not outcome:
         outcome = {"success": "done", "failure": "failed",
                    "no-op": "no changes", "no-changes": "no changes"}.get(args.status, "done")
-    subject = f"{icon} {short_pass} · {outcome[:64]}"
+    if args.skill == "trend-pass-auto":
+        # Fixed shape — no pass label, no free-text outcome (see trend_pass_outcome).
+        subject = f"{icon} {trend_pass_outcome(args.headline, args.summary)}"
+    else:
+        subject = f"{icon} {short_pass} · {outcome[:64]}"
 
     # Inbox preview: the specifics that don't fit the subject (+ the commit).
     preheader = (args.preheader or args.summary or "").strip()
