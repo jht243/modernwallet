@@ -1422,6 +1422,10 @@ export const GUIDES: Guide[] = [
       {
         question: "Is a custodial account better than a 529 for taxes?",
         answer: "For education, a 529 usually wins on taxes because its growth and qualified withdrawals are tax-free, while a custodial account is taxed yearly under the kiddie tax. A custodial account offers more spending flexibility. Compare them in our 529 vs UTMA guide."
+      },
+      {
+        question: "At what age does the kiddie tax stop applying?",
+        answer: "The kiddie tax stops applying once a child turns 24, or earlier if their own earned income covers more than half their support. Until then, it applies to a child under 18, an 18-year-old who doesn't meet that support test, or a full-time student age 19 through 23 in the same situation."
       }
     ],
     sources: [

@@ -1,0 +1,75 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-21",
+  "window_start": "2026-08-21",
+  "window_end": "2026-08-21",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/70-30-portfolio-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-index-funds",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-online-will-makers/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 8,
+  "top10_pages_total_clicks": 8,
+  "channel_split": {
+    "/guides/custodial-account-taxes-kiddie-tax": {
+      "Organic Search": 3
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/portfolio/70-30-portfolio-calculator/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-index-funds": {
+      "Direct": 1
+    },
+    "/roundup/best-online-will-makers/": {
+      "Unassigned": 1
+    }
+  }
+}

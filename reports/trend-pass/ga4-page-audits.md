@@ -95,3 +95,5 @@
 | /compare/custodial-roth-ira-vs-529/ | 2026-08-19 | 1 | 0/0/0/0/0 | 0 |
 | /portfolio/60-40-portfolio-calculator/ | 2026-08-20 | 2 | 1/0/1/0/0 | 0 |
 | /compare/hysa-vs-money-market/ | 2026-08-20 | 1 | 0/0/1/0/1 | 0 |
+| /guides/custodial-account-taxes-kiddie-tax/ | 2026-08-21 | 4 | 0/0/1/0/0 | 0 |
+| /roundup/best-online-will-makers/ | 2026-08-21 | 1 | 0/0/0/0/0 | 0 |
