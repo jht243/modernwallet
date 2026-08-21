@@ -3185,6 +3185,7 @@ export const COMPARISONS: ComparisonEntry[] = [
         { dimension: "Expense ratios", a: "Very low for broad index funds", b: "Very low for broad index ETFs, often similar" },
         { dimension: "Where you can buy them", a: "Fund company or broker; common in 401(k) plans", b: "Any brokerage account or IRA that trades stocks" },
         { dimension: "Best fit account", a: "401(k), or taxable with automatic contributions", b: "Taxable brokerage or IRA, active buyers" },
+        { dimension: "Best fit for Roth IRA contributions", a: "Small or automatic monthly Roth contributions", b: "Lump-sum Roth contributions or active trading" },
       ],
     },
     verdict:
@@ -3214,6 +3215,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         heading: "How to Decide Between an Index Fund and an ETF",
         content:
           "Choose based on your account and your investing style, since the underlying index exposure is nearly identical.\n\nPick an index mutual fund if you invest automatically, prefer exact dollar amounts, or only have a 401(k). Pick an ETF if you want intraday trading, no minimum beyond one share, or you invest in a taxable account and want the tax-efficiency edge — see [realized vs. unrealized gains](/compare/realized-vs-unrealized-gains/) for exactly why that edge matters at tax time.\n\nDecision rule: in a taxable account, lean ETF for tax efficiency; in a retirement account with auto-contributions, lean index mutual fund for convenience. Either way, keep the expense ratio low and your contributions consistent. Build the full allocation with our [portfolio tool](/portfolio/).",
+      },
+      {
+        heading: "Index Fund or ETF Inside a Roth IRA?",
+        content:
+          "Tax efficiency does not decide the index fund vs ETF choice inside a Roth IRA. Every dollar in a Roth grows and comes out tax-free, no matter which wrapper you pick. The real choice comes down to how you fund the account and how much control you want over trade timing.\n\nFractional-share and dollar-amount investing usually favors the index mutual fund. Most Roth IRA custodians let you schedule a recurring buy in an exact dollar amount, like $300 every payday, and the fund fills fractional shares automatically. An ETF can do this too, but only if your broker supports fractional-share purchases and automatic investing, a feature that still varies by provider. Trading flexibility flips the advantage to the ETF. You can place a limit order, buy at a specific price during the day, or react to a market move right away. An index mutual fund cannot do any of that, since it only fills at the day's closing NAV. Expense ratios are usually close to a wash for broad-market index funds and ETFs that track the same benchmark, so cost rarely breaks the tie inside a Roth.\n\nFor the common case, small and automatic Roth IRA contributions favor the index fund. The 2026 IRS limit is $7,500 for savers under 50 and $8,600 for those 50 and older, an amount most people fund gradually across the year rather than all at once. Spreading a modest annual limit into monthly buys is exactly what an index fund's automatic-dollar investing is built for. A lump-sum contributor, or someone who wants to actively time entries with limit orders, may prefer an ETF instead. Either way, match the fund itself, not just the wrapper, to your [Roth IRA vs traditional IRA](/compare/roth-ira-vs-traditional-ira/) plan, and model the growth with our [retirement calculator](/retirement/).",
       },
     ],
     faqs: [
@@ -3247,13 +3253,19 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "They can be very close. Broad index mutual funds and index ETFs often have similarly low expense ratios. Always compare the specific fund's expense ratio, since costs vary by provider and index.",
       },
+      {
+        question: "Should I use an index fund or ETF in my Roth IRA?",
+        answer:
+          "For most Roth IRA savers, an index fund is the easier default. It supports automatic recurring contributions in exact dollar amounts and fills fractional shares without a broker-dependent workaround. Tax efficiency does not apply here, since a Roth already grows and withdraws tax-free no matter which wrapper you choose. Pick an ETF instead if you fund the account with a lump sum, want to place limit orders, or trade intraday. Expense ratios for broad index funds and index ETFs are usually close enough that cost rarely decides it. The 2026 Roth IRA contribution limit is $7,500 under age 50 and $8,600 at 50 or older, so plan your contribution schedule first, then pick the wrapper that matches it.",
+      },
     ],
     sources: [
       { label: "SEC Investor.gov — Mutual Funds and ETFs", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1" },
       { label: "SEC Investor.gov — Exchange-Traded Funds (ETFs)", url: "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/exchange-traded-funds-etfs" },
       { label: "FINRA — Exchange-Traded Funds and Notes", url: "https://www.finra.org/investors/investing/investment-products/exchange-traded-funds-and-notes" },
+      { label: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" },
     ],
-    relatedComparisons: ["etf-vs-mutual-fund", "brokerage-vs-ira", "stocks-vs-bonds"],
+    relatedComparisons: ["etf-vs-mutual-fund", "brokerage-vs-ira", "stocks-vs-bonds", "roth-ira-vs-traditional-ira"],
     calculatorLinks: [
       { label: "Investment Growth Calculator", href: "/investing/" },
       { label: "Portfolio Allocation Tool", href: "/portfolio/" },

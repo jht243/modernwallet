@@ -1,0 +1,50 @@
+{
+ "budget": {
+  "count": 31,
+  "examples": [
+   "How much can I actually spend without running out of money?",
+   "Let's see how much they can spend.",
+   "What we started to see is how much could they start to spend on other things like travel or home renovation."
+  ]
+ },
+ "retirement": {
+  "count": 16,
+  "examples": [
+   "How much of that is covered by things like Social Security or pension or rental income?",
+   "So taking inflation into account, how much did you pay into Social Security every single year?",
+   "Social Security then uses all that and it goes through a calculation that helps them calculate or helps them determine how much you are eligible for at your full retirement age."
+  ]
+ },
+ "real-estate": {
+  "count": 9,
+  "examples": [
+   "How much of that is covered by things like Social Security or pension or rental income?",
+   ", And then consult with you about how to pay off your mortgage as quickly as possible.",
+   "Walk me through how you how you find properties and then figure out how much you need to spend to fix the property up."
+  ]
+ },
+ "investing": {
+  "count": 24,
+  "examples": [
+   "This is how much we need to be in a position to take out of Tina and John's portfolio to ensure they can support the lifestyle they want to live.",
+   "How much can we spend before we start getting to the point where our withdrawal rate is too high and it might cause us to spin down our portfolio too soon.",
+   "So no matter how much money you give to them, it'll just all of a sudden be spent rather than invested."
+  ]
+ },
+ "net-worth": {
+  "count": 8,
+  "examples": [
+   "I mean, folks, you have to realize that fifty I didn't know what a net worth was.",
+   "How do I get my assets to my beneficiaries without probate the fastest?",
+   "Then what is investing, which has things like asset allocation or related to how to rebalance your portfolio, like different investment options that are available."
+  ]
+ },
+ "tax-estate": {
+  "count": 14,
+  "examples": [
+   "How do I get my assets to my beneficiaries without probate the fastest?",
+   "You have to be very careful because 100% of that account, I don't know how much is in it, will be taxed to you as ordinary income at that time.",
+   "The structure is tested and the older daughter KT will know exactly what to do, and they can fund it with as little as $10, $100, or a small investment."
+  ]
+ }
+}

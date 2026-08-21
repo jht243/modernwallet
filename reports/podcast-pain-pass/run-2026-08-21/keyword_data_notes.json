@@ -1,0 +1,5 @@
+[
+ "SEMRUSH unavailable (HTTP 403) \u2014 falling back to Ahrefs",
+ "Ahrefs unavailable (no AHREFS_API_KEY) \u2014 falling back to public-source estimates",
+ "Estimating 23 phrases from public sources (Google Autocomplete)"
+]
