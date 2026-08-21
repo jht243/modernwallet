@@ -132527,11 +132527,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/news/walmart-to-allow-tap-to-pay-at-checkout": {
+          "acted": false,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:a983ddc1bb3d49e6286b680666e2db97e8bdbe211d4b3a7b9029b46ae40b1953",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-21T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Find the right credit card for you."
@@ -132539,7 +132543,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Walmart, Sam&#39;s Club to Allow Tap to Pay at Checkout - NerdWallet",
           "tool_io": []
         },
@@ -137374,11 +137378,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/learn/how-can-I-stop-living-paycheck-to-paycheck": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:5d172dd9046f6a3f7d23928280fd094bd6f21cbe4f276f922d89a9e0e1bd6855",
+          "disposition": "published",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-20T06:00:29-07:00",
+          "our_url": "/guides/how-to-stop-living-paycheck-to-paycheck/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Prioritize saving",
@@ -137391,7 +137399,7 @@
           "relevance_hits": [
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Asked on Reddit: How Can I Stop Living Paycheck to Paycheck? - NerdWallet",
           "tool_io": []
         },
@@ -142584,11 +142592,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/studies/financial-security-gut-checks": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:5e872b255870dd6b8fbe48eb745d4f99e2bcbcb9d6dc4538c572e9d16d8fb00b",
+          "disposition": "enriched",
           "first_seen": "2026-08-21",
           "kind": "comparison",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-20T06:00:37-07:00",
+          "our_url": "/guides/how-much-emergency-fund/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Could you cover an unexpected $1,000 expense?",
@@ -142600,7 +142612,7 @@
             "finance",
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Feeling Secure vs. Being Secure: 3 Gut Checks for Your Finances - NerdWallet",
           "tool_io": []
         },
@@ -171401,11 +171413,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-august-21-2026": {
+          "acted": false,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:e34d54e9e6927f34d778df81c06c1f65185de0db43c639dad83dd173d1aef8ca",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-21T06:30:32-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -171421,7 +171437,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Friday, August 21: A Bit Higher - NerdWallet",
           "tool_io": []
         },
@@ -171751,11 +171767,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-thursday-august-20-2026": {
+          "acted": false,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:ec78b9732bce244b224546366236eeb3bae3dd3009a75259cecf1edff60c896c",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-20T05:28:54-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -171771,7 +171791,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Thursday, August 20: Down Again - NerdWallet",
           "tool_io": []
         },
@@ -172741,11 +172761,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/weekly-mortgage-rates-8-20-26": {
+          "acted": false,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:b07683cc9e00da58cc0db356cee65cb0ecb6bb95df00a348ffe0e36b2512a7e6",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-20T11:01:15-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "\ud83e\udd13 Kate on Rates: August 20, 2026",
@@ -172756,7 +172780,7 @@
           "relevance_hits": [
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Are Lower This Week. Could They Drop Further? - NerdWallet",
           "tool_io": []
         },
@@ -176334,11 +176358,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/personal-loans/reviews/splash-personal-loans": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:69f0994cd1c5a91b212451aa453576dbae741da6b23e9a4036148dd7f49ffa3a",
+          "disposition": "published",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-08-21T00:00:00-07:00",
+          "our_url": "/guides/is-splash-financial-a-good-personal-loan-lender/",
           "outline": [
             "What to know about Splash personal loans",
             "What we like most about Splash Financial",
@@ -176356,7 +176384,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Splash Financial 2026 Personal Loan Review - NerdWallet",
           "tool_io": []
         },
@@ -327627,11 +327655,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/estate-planning/advanced-estate-planning-for-real-estate-and-investment-portfolios": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:f1694fc9b06865d925543b82c6c713b0b62cb93c3cc183889a6b3b109a131dc1",
+          "disposition": "published",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-04-01T21:47:45+00:00",
+          "our_url": "/guides/advanced-estate-planning-strategies/",
           "outline": [
             "How Real Estate and Investment Portfolios Are Taxed at Death",
             "Estate Tax Exemptions By State",
@@ -327654,7 +327686,7 @@
             "investment",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Advanced Estate Planning: Real Estate and Investment Portfolio Examples",
           "tool_io": []
         },
@@ -336232,11 +336264,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/ask-an-advisor-taxes-when-inheriting-ira": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:e8e895c47900b85c52c12b24dc53624f2cc2346ad833eb1d6bfdd33ee2fb3557",
+          "disposition": "published",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-04-13T10:00:00+00:00",
+          "our_url": "/guides/inherited-ira-taxes-explained/",
           "outline": [
             "Inheritance Tax on IRAs",
             "Income Tax on IRA Withdrawals",
@@ -336251,7 +336287,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Ask an Advisor: What Taxes Will My Daughter and Granddaughter Pay When They Inherit My IRA?",
           "tool_io": []
         },
@@ -369053,11 +369089,15 @@
           "tool_io": []
         },
         "https://smartasset.com/investing/what-is-the-rule-of-72": {
+          "acted": true,
+          "acted_date": "2026-08-21",
           "content_hash": "sha256:4ead6949f89659735cb32adcd2e2bb173d00b8c6abd90dad307100e3db074926",
+          "disposition": "enriched",
           "first_seen": "2026-08-21",
           "kind": "page",
           "last_seen": "2026-08-21",
           "lastmod": "2026-04-01T20:11:19+00:00",
+          "our_url": "/investing/compound-interest-calculator/",
           "outline": [
             "What Is the Rule of 72?",
             "How You Can Use the Rule of 72",
@@ -369070,7 +369110,7 @@
           "relevance_hits": [
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "The Rule of 72: What Is It, and How Can You Use It?",
           "tool_io": []
         },
