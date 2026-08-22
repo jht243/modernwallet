@@ -1504,6 +1504,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Often, yes — they're complements, not either/or. A common structure: revocable living trust holds the household's day-to-day assets for probate avoidance during life and privacy at death, while irrevocable trusts hold specific assets targeted for tax reduction (ILIT for life insurance, dynasty for generational transfer) or asset protection (MAPT for Medicaid, DAPT for creditor protection). Above the federal $15M exemption or a state estate tax threshold, most estate plans use both. Below those thresholds, a revocable trust alone is usually enough.",
       },
+      {
+        question: "Can an irrevocable trust be changed or dissolved after it's signed?",
+        answer:
+          "Sometimes, through four routes that fall short of the outright revocation a revocable trust allows. A non-judicial settlement agreement lets all beneficiaries and the trustee agree to a change without going to court, available in most states that adopted UTC §111. If the trust names a trust protector, that person can amend narrow terms (a successor trustee, an administrative provision) exactly as the trust document authorizes. Decanting lets the trustee pour the trust's assets into a new trust with updated terms, without a court filing in most states. And if every beneficiary consents and the change doesn't conflict with a material purpose of the trust, UTC §411 allows modification or full termination by consent alone; without unanimous consent, a court can still modify or terminate the trust under UTC §412 if circumstances the grantor didn't anticipate make the original terms unworkable. None of these let the original grantor unilaterally take assets back: the point of an irrevocable trust is that changes go through the trust's own beneficiaries, trustee, or a court, never through you alone.",
+      },
     ],
     sources: [
       { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
@@ -1511,14 +1516,111 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "42 U.S.C. §1396p — Medicaid 5-year lookback", url: "https://www.law.cornell.edu/uscode/text/42/1396p" },
       { label: "ACTEC — American College of Trust and Estate Counsel", url: "https://www.actec.org/" },
       { label: "Medicaid.gov — Estate Recovery", url: "https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery/index.html" },
+      { label: "Uniform Law Commission — Uniform Trust Code", url: "https://www.uniformlaws.org/committees/community-home?CommunityKey=193ff839-7955-4846-8f3c-ce74ac23938d" },
     ],
-    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer", "living-trust-vs-lady-bird-deed"],
+    relatedComparisons: ["living-trust-vs-will", "online-will-vs-lawyer", "living-trust-vs-lady-bird-deed", "irrevocable-trust-vs-llc"],
     calculatorLinks: [
       { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
       { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
       { label: "Estate planning calculator", href: "/estate-planning/" },
       { label: "Medicaid spend-down calculator", href: "/elder-care/medicaid-spend-down-calculator/" },
       { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
+    ],
+  },
+
+  // ─── Irrevocable Trust vs LLC (ga4-top-pages pass 2026-08-22) ─────────────
+  {
+    slug: "irrevocable-trust-vs-llc",
+    title: "Irrevocable Trust vs LLC: Which Protects Assets Better?",
+    metaDescription:
+      "Irrevocable trust vs LLC compared: creditor protection, control, estate tax, cost, and the single-member LLC gap most asset-protection plans miss.",
+    targetKeyword: "irrevocable trust vs llc",
+    optionA: "Irrevocable Trust",
+    optionB: "LLC (Limited Liability Company)",
+    segment: "Estate Planning",
+    h1: "Irrevocable Trust vs LLC: Which Protects Your Assets Better?",
+    intro:
+      "An irrevocable trust protects assets by permanently transferring legal ownership out of your name, so a creditor has nothing of yours left to reach. An LLC protects assets by limiting a creditor's remedy to a charging order, while you keep managing the assets as a member. The trust trades away control for a harder shield; the LLC keeps control but leaves a narrower, state-dependent gap a creditor can sometimes still reach, especially if you are the LLC's only member.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who controls the assets", a: "Trustee only, you give up legal ownership and management", b: "You, as managing member; day-to-day control stays yours" },
+        { dimension: "How it blocks a creditor", a: "Creditor has no asset to reach; you no longer own it", b: "Charging order limits the creditor to future distributions only" },
+        { dimension: "Protection if you are the sole owner", a: "Full protection: a single grantor doesn't weaken an irrevocable trust", b: "Weaker in several states; some courts allow foreclosure of a single-member interest" },
+        { dimension: "Removes assets from your taxable estate", a: "Yes, once funded and outside the 3-year lookback for certain transfers", b: "No, unless you separately gift membership interests out" },
+        { dimension: "Can be changed or unwound", a: "No, with narrow exceptions (decanting, court modification, beneficiary consent)", b: "Yes, members can amend the operating agreement or dissolve the LLC" },
+        { dimension: "Ongoing tax filing", a: "Separate Form 1041 return in most cases", b: "Pass-through to your personal return (Schedule C/E or partnership K-1s)" },
+        { dimension: "Typical setup cost", a: "$2,500–$6,000+ attorney-drafted, entity-dependent", b: "$700–$2,500 for state filing plus a professionally drafted operating agreement" },
+        { dimension: "Best for", a: "Removing assets entirely from your estate and reach: Medicaid, estate tax, litigation exposure", b: "Actively managed assets (rental property, a business) where you still need to run things" },
+      ],
+    },
+    verdict:
+      "Choose an irrevocable trust when the goal is to put assets permanently beyond your own reach and your creditors': Medicaid planning, estate tax reduction, or protection against a lawsuit you can already see coming. Choose an LLC when you need to keep managing an asset (a rental property, a small business, an investment portfolio) while limiting what a future creditor can take from it. Most attorneys who build serious asset-protection plans don't pick just one; they put the LLC's membership interests inside the irrevocable trust, so the trust holds ownership while the LLC still isolates each asset's liability and, in a multi-member structure, keeps the trust's interest bound by the stronger charging-order rule instead of the weaker single-member exception.",
+    sections: [
+      {
+        heading: "The control tradeoff, in practice",
+        content:
+          "An irrevocable trust and an LLC solve the same underlying problem, keeping assets away from a future creditor, with opposite tradeoffs on control. Fund an irrevocable trust and you are done making decisions about that asset: a trustee (who cannot be you, in most structures that actually work) manages it under the terms you wrote into the trust document, and you cannot vote yourself back in.\n\nAn LLC keeps you in the driver's seat. As the managing member, you can still sign leases on a rental property, hire and fire in a small business, or rebalance an investment account held inside the LLC. The protection comes from the entity wrapper, not from you stepping away. A court can generally order you, as the debtor, to satisfy a judgment from your own distributions, but it usually cannot force you to hand over management or liquidate the LLC's underlying assets outright.\n\nThat difference decides which one fits a given asset. A rental property that needs a landlord, a small business that needs an owner, or a brokerage account you actively rebalance all need someone making live decisions, and an irrevocable trust's loss of control is a poor fit there unless you're comfortable handing that job to a trustee permanently. Assets that don't need day-to-day management (a paid-off second home you're not renting out, a life insurance policy, cash set aside for a future Medicaid need) give up little by moving into a trust and gain the stronger protection.",
+      },
+      {
+        heading: "How each one actually blocks a creditor",
+        content:
+          "A funded irrevocable trust blocks a creditor by removing the asset from your ownership entirely: there is nothing titled in your name for a court to attach. That is the strongest form of protection available, but it only works if the transfer happened before the creditor's claim arose; a transfer made to dodge an existing or foreseeable judgment is a fraudulent conveyance and a court can unwind it.\n\nAn LLC blocks a creditor through the charging order, a court order that lets the creditor collect distributions if and when the LLC pays them, but does not hand over your membership interest, your voting rights, or force the LLC to liquidate assets to pay the debt. Multi-member LLCs get this as their sole and exclusive remedy in most states, which is what makes the structure useful for actively managed assets you don't want to give up.",
+      },
+      {
+        heading: "The single-member LLC gap most comparisons skip",
+        content:
+          "Most write-ups treat \"LLC\" as one uniform level of protection. It isn't. The charging-order rule exists to protect innocent co-owners from being dragged into someone else's lawsuit, a rationale that stops applying the moment you are the LLC's only member. Florida's Supreme Court reached exactly that conclusion in [Olmstead v. FTC](https://www.courtlistener.com/opinion/2510651/olmstead-v-federal-trade-commission/), and the legislature's fix, [Fla. Stat. §605.0503](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html), now lets a court order foreclosure of a single-member interest when a charging order alone won't satisfy the judgment in a reasonable time. Georgia and Colorado allow similar remedies; only a handful of states (Alaska, Delaware, Nevada, South Dakota, and Wyoming) extend full charging-order protection to single-member LLCs by statute.\n\nThe common fix is structural, not geographic: add a second member. An irrevocable trust is the second member attorneys reach for most often, because it avoids bringing in another person who has their own creditors, divorce, or estate to worry about. That is also the reason serious asset-protection plans end up combining both entities instead of picking just one.",
+      },
+      {
+        heading: "Estate tax: the LLC needs an extra step the trust doesn't",
+        content:
+          "A properly funded irrevocable trust removes assets from your taxable estate the moment the transfer clears. That's most of the point of using one instead of a revocable trust, which stays fully countable. An LLC by itself does nothing for estate tax; membership interests you still hold are still yours at death, dollar for dollar.\n\nThe estate tax lever with an LLC is a separate, deliberate gifting strategy: a family LLC lets you gift minority, non-controlling membership interests to your children or heirs over time, using each year's $19,000 gift tax annual exclusion. A minority interest in a company you still control is worth less on paper than its proportional share of the underlying assets (no vote, no easy market to sell into), so appraisers apply lack-of-control and lack-of-marketability discounts that can run 20–40% combined. Gift a $100,000 slice of the LLC at a 35% discount and only $65,000 counts against your exclusion. The IRS has successfully challenged these discounts when the family ignored the LLC's own formalities or made transfers on a deathbed; keeping real operating agreements, real distributions, and real management meetings is what makes the discount hold up.",
+      },
+      {
+        heading: "Cost and ongoing complexity",
+        content:
+          "An LLC is the cheaper entity to start: state filing fees run $35–$500, and a professionally drafted operating agreement (essential for a family LLC meant to hold real assets, not a generic template) adds $500–$1,500 with an attorney, for a typical all-in cost of $700–$2,500. Ongoing cost is mostly an annual state report fee and, for a multi-member LLC, a partnership tax return.\n\nAn irrevocable trust costs more to draft because the document has to precisely give up the rights that would otherwise pull the assets back into your estate. Get that language wrong and you lose the tax or protection benefit entirely. Expect $2,500–$6,000+ depending on the structure (an asset-protection trust or Medicaid Asset Protection Trust runs toward the higher end), plus $500–$2,000 a year for the trust's own Form 1041 return once it holds income-producing assets. See our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) for the full cost breakdown by trust type and state.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an irrevocable trust or an LLC better for asset protection?",
+        answer:
+          "An irrevocable trust generally protects assets more completely, because the assets are no longer legally yours: there's nothing left for a creditor to attach. An LLC protects assets while you keep managing them, but the protection runs through the charging-order remedy, which is weaker for a single-member LLC in many states. The two aren't mutually exclusive: many asset-protection plans have an irrevocable trust hold the membership interests in an LLC, combining the trust's ownership shield with the LLC's per-asset liability isolation.",
+      },
+      {
+        question: "Does an LLC protect my personal assets the same way a trust does?",
+        answer:
+          "No. An LLC's charging-order protection limits what a creditor can take FROM the LLC. It does not shield assets you hold personally outside the LLC, and multi-member LLCs get materially stronger protection than single-member ones in most states. An irrevocable trust protects whatever is actually retitled into it, personal or business, because ownership itself has moved out of your name.",
+      },
+      {
+        question: "Can a single-member LLC lose its asset protection?",
+        answer:
+          "Yes, in several states. Because the charging-order rule exists to protect co-owners who didn't cause the lawsuit, courts in Florida, Georgia, and Colorado have allowed creditors to reach further into a single-member LLC than a multi-member one, including, in Florida under Fla. Stat. §605.0503, foreclosure of the membership interest itself. Alaska, Delaware, Nevada, South Dakota, and Wyoming are the main states that extend full charging-order protection to single-member LLCs by statute. Adding a second member, often an irrevocable trust, closes this gap in weaker states.",
+      },
+      {
+        question: "How much does it cost to set up an LLC compared to an irrevocable trust?",
+        answer:
+          "An LLC costs $700–$2,500 all-in: $35–$500 in state filing fees plus $500–$1,500 for a professionally drafted operating agreement. An irrevocable trust costs more, typically $2,500–$6,000 or higher depending on the structure, because the drafting has to precisely disclaim retained rights that would otherwise defeat the tax or protection benefit. Add $500–$2,000/year for the trust's own Form 1041 tax return once it holds income-producing assets; a multi-member LLC files a simpler partnership return.",
+      },
+      {
+        question: "Can I use both an irrevocable trust and an LLC together?",
+        answer:
+          "Yes, and it's the standard approach for anyone with real exposure: a business, rental real estate, or a net worth above their state's estate tax threshold. The LLC holds the operating asset and isolates its liability from your other assets; the irrevocable trust holds the LLC's membership interests, which removes them from your estate and, as a second member, protects a single-owner LLC from the weaker single-member charging-order exception described above.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "IRS — Gift Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/gift-tax" },
+      { label: "Olmstead v. FTC, 44 So. 3d 76 (Fla. 2010)", url: "https://www.courtlistener.com/opinion/2510651/olmstead-v-federal-trade-commission/" },
+      { label: "Fla. Stat. §605.0503 — Rights of judgment creditor", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html" },
+      { label: "ACTEC — American College of Trust and Estate Counsel", url: "https://www.actec.org/" },
+    ],
+    relatedComparisons: ["revocable-vs-irrevocable-trust", "living-trust-vs-will", "probate-vs-trust"],
+    calculatorLinks: [
+      { label: "Living trust cost calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+      { label: "Estate tax calculator", href: "/estate-planning/estate-tax-calculator/" },
+      { label: "Estate planning calculator", href: "/estate-planning/" },
     ],
   },
 
