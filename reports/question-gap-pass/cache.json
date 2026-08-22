@@ -23,36 +23,103 @@
     "/retirement/couples-retirement-calculator/"
   ],
   "sections_added": {
-    "/compare/trump-account-vs-brokerage-account/": ["How much would I keep after taxes vs. investing in a brokerage account?", "Can I transfer/roll over money between a brokerage account and a Trump Account?", "Is my child's money in a brokerage account protected if the firm fails?"],
-    "/compare/trump-account-vs-savings-account/": ["Trump account vs. savings for a near-18 teenager, not a newborn"],
-    "/compare/trump-account-vs-baby-bonds/": ["Which states besides CT/CA have a baby-bonds program", "Is enrollment automatic or do I need to apply", "Does my child need citizenship for a state baby bond", "What happens to a baby bond if we move states", "Does a baby bond count against SNAP/Medicaid eligibility"],
-    "/estate-planning/living-trust-cost-calculator/": ["Step-by-step process to set up a living trust", "How long does setup take", "Who should I name as successor trustee"],
-    "/investing/withdrawal-calculator/": ["Does this account for RMDs at 73", "Should I subtract investment fees before entering my return"],
-    "/guides/trump-account-worth-it/": ["Still worth opening if my child was born before 2025 (no seed)"],
-    "/retirement/military-retirement-calculator/": ["Does High-3 include BAH/BAS or only base pay", "Double-dipping: military + federal civilian pension", "Can I change my SBP beneficiary after divorce/remarriage"],
-    "/roundup/best-ira-accounts/": ["How do I roll over an old 401(k) into one of these IRAs"],
-    "/investing/high-yield-savings-calculator/": ["How long does a HYSA transfer take"],
-    "/net-worth/liquid-net-worth-calculator/": ["Taxes/fees when converting liquid assets to cash", "Does paying off debt raise liquid net worth like cash does"],
-    "/compare/custodial-roth-ira-vs-utma/": ["2026 contribution limit + kiddie-tax threshold — SKIPPED, no verified 2026 kiddie-tax figure found, avoided fabrication"],
-    "/roundup/best-estate-planning-software/": ["Remote online notarization (RON) support", "What happens if I make a drafting mistake", "Is my will valid if I move states after signing"],
-    "/portfolio/60-40-portfolio-calculator/": ["60/40 vs. 100% stocks", "Does the 30-yr projection reflect inflation/taxes or is it nominal"],
-    "/tax-resolution/irs-payment-plan-calculator/": ["Does an installment agreement stop/release a tax lien", "What happens if I miss a payment or default", "Will the IRS keep my refund while I'm on a plan"],
-    "/elder-care/special-needs-trust-calculator/": ["Who should be the trustee", "Family member vs. professional/bank trustee"]
+    "/compare/trump-account-vs-brokerage-account/": [
+      "How much would I keep after taxes vs. investing in a brokerage account?",
+      "Can I transfer/roll over money between a brokerage account and a Trump Account?",
+      "Is my child's money in a brokerage account protected if the firm fails?"
+    ],
+    "/compare/trump-account-vs-savings-account/": [
+      "Trump account vs. savings for a near-18 teenager, not a newborn"
+    ],
+    "/compare/trump-account-vs-baby-bonds/": [
+      "Which states besides CT/CA have a baby-bonds program",
+      "Is enrollment automatic or do I need to apply",
+      "Does my child need citizenship for a state baby bond",
+      "What happens to a baby bond if we move states",
+      "Does a baby bond count against SNAP/Medicaid eligibility"
+    ],
+    "/estate-planning/living-trust-cost-calculator/": [
+      "Step-by-step process to set up a living trust",
+      "How long does setup take",
+      "Who should I name as successor trustee"
+    ],
+    "/investing/withdrawal-calculator/": [
+      "Does this account for RMDs at 73",
+      "Should I subtract investment fees before entering my return"
+    ],
+    "/guides/trump-account-worth-it/": [
+      "Still worth opening if my child was born before 2025 (no seed)"
+    ],
+    "/retirement/military-retirement-calculator/": [
+      "Does High-3 include BAH/BAS or only base pay",
+      "Double-dipping: military + federal civilian pension",
+      "Can I change my SBP beneficiary after divorce/remarriage"
+    ],
+    "/roundup/best-ira-accounts/": [
+      "How do I roll over an old 401(k) into one of these IRAs"
+    ],
+    "/investing/high-yield-savings-calculator/": [
+      "How long does a HYSA transfer take"
+    ],
+    "/net-worth/liquid-net-worth-calculator/": [
+      "Taxes/fees when converting liquid assets to cash",
+      "Does paying off debt raise liquid net worth like cash does"
+    ],
+    "/compare/custodial-roth-ira-vs-utma/": [
+      "2026 contribution limit + kiddie-tax threshold \u2014 SKIPPED, no verified 2026 kiddie-tax figure found, avoided fabrication"
+    ],
+    "/roundup/best-estate-planning-software/": [
+      "Remote online notarization (RON) support",
+      "What happens if I make a drafting mistake",
+      "Is my will valid if I move states after signing"
+    ],
+    "/portfolio/60-40-portfolio-calculator/": [
+      "60/40 vs. 100% stocks",
+      "Does the 30-yr projection reflect inflation/taxes or is it nominal"
+    ],
+    "/tax-resolution/irs-payment-plan-calculator/": [
+      "Does an installment agreement stop/release a tax lien",
+      "What happens if I miss a payment or default",
+      "Will the IRS keep my refund while I'm on a plan"
+    ],
+    "/elder-care/special-needs-trust-calculator/": [
+      "Who should be the trustee",
+      "Family member vs. professional/bank trustee"
+    ]
   },
   "strengthened": {
-    "/trump-account/": ["Real-world over-contribution penalty beyond the calculator's own trim/warning"],
-    "/estate-planning/living-trust-cost-calculator/": ["DIY-online funding effort vs. attorney-drafted", "One joint trust or two separate trusts for spouses"],
-    "/investing/withdrawal-calculator/": ["Does the withdrawal amount grow with inflation each year"],
-    "/retirement/military-retirement-calculator/": ["BRS continuation-pay bonus amount/timing", "Is SBP worth it vs. private life insurance"],
-    "/portfolio/60-40-portfolio-calculator/": ["60/40 vs. target-date fund", "Worst-case one-year loss for 60/40 (kept qualitative after audit fix)"],
-    "/compare/trump-account-vs-529/": ["Can I change the Trump Account beneficiary like redirecting a 529"],
-    "/elder-care/special-needs-trust-calculator/": ["Ongoing/annual trustee-fee cost"],
-    "/retirement/couples-retirement-calculator/": ["Survivor SS if the higher earner dies before claiming"]
+    "/trump-account/": [
+      "Real-world over-contribution penalty beyond the calculator's own trim/warning"
+    ],
+    "/estate-planning/living-trust-cost-calculator/": [
+      "DIY-online funding effort vs. attorney-drafted",
+      "One joint trust or two separate trusts for spouses"
+    ],
+    "/investing/withdrawal-calculator/": [
+      "Does the withdrawal amount grow with inflation each year"
+    ],
+    "/retirement/military-retirement-calculator/": [
+      "BRS continuation-pay bonus amount/timing",
+      "Is SBP worth it vs. private life insurance"
+    ],
+    "/portfolio/60-40-portfolio-calculator/": [
+      "60/40 vs. target-date fund",
+      "Worst-case one-year loss for 60/40 (kept qualitative after audit fix)"
+    ],
+    "/compare/trump-account-vs-529/": [
+      "Can I change the Trump Account beneficiary like redirecting a 529"
+    ],
+    "/elder-care/special-needs-trust-calculator/": [
+      "Ongoing/annual trustee-fee cost"
+    ],
+    "/retirement/couples-retirement-calculator/": [
+      "Survivor SS if the higher earner dies before claiming"
+    ]
   },
   "audit_findings_fixed": [
     "spokes-portfolio.ts: removed a fabricated 'double-digit percentage loss' drawdown figure not produced by the site's portfolio model",
-    "spokes-retirement.ts (couples-retirement-calculator): removed a stale claim that the Government Pension Offset 'can reduce or even eliminate' a spousal/survivor benefit — GPO/WEP were repealed by the Social Security Fairness Act (Jan 2025), so this pass's own addition was corrected; NOTE two pre-existing, out-of-scope occurrences of the same stale GPO/WEP claim remain elsewhere in this file (military-retirement-calculator FAQs, ~lines 714 and 733) and on /retirement/pension-calculator/ — flagged for a future pass, not touched here since they predate this run's diff"
+    "spokes-retirement.ts (couples-retirement-calculator): removed a stale claim that the Government Pension Offset 'can reduce or even eliminate' a spousal/survivor benefit \u2014 GPO/WEP were repealed by the Social Security Fairness Act (Jan 2025), so this pass's own addition was corrected; NOTE two pre-existing, out-of-scope occurrences of the same stale GPO/WEP claim remain elsewhere in this file (military-retirement-calculator FAQs, ~lines 714 and 733) and on /retirement/pension-calculator/ \u2014 flagged for a future pass, not touched here since they predate this run's diff"
   ],
-  "commit_sha": "pending",
-  "deployed_to_main": "pending"
+  "commit_sha": "35d59f8",
+  "deployed_to_main": true
 }
