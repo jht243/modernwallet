@@ -334,9 +334,9 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       "The calculator projects your combined savings — enter both partners' balances and contributions as a single total — at your expected return until the earlier partner's retirement age. Use the notes below to add your Social Security estimate on top of the projected balance.\n\nWhere couples differ from single filers: Social Security offers a spousal benefit equal to up to 50% of the higher earner's full retirement age (FRA) benefit, and survivor benefits that let the surviving spouse keep the larger of the two benefits for life. Coordinating these claiming decisions is one of the highest-value retirement planning levers available. For a breakdown of your workplace accounts, see the [401k calculator](/retirement/401k-calculator/).",
     commonMistakes: [
       "Claiming Social Security at the same age. Often the lower-earning spouse should claim earlier and the higher earner should delay to 70, maximizing the survivor benefit that will carry forward for life.",
-      "Forgetting survivor benefits. When one spouse dies, the survivor keeps only the larger of the two Social Security checks — not both. If both partners claimed early at 62, the surviving spouse is left with a permanently reduced benefit.",
-      "Treating each partner's account separately. Enter combined savings for an accurate projection of the total household portfolio.",
-      "Overlooking the spousal benefit floor. A spouse with little or no work history is entitled to up to 50% of the higher earner's FRA benefit, regardless of their own earnings record, per SSA rules.",
+      "Forgetting survivor benefits. When one spouse dies, the survivor keeps only the larger of the two Social Security checks — not both. If both partners claimed early at 62, the surviving spouse is left with a permanently reduced benefit. This applies even if the higher earner dies before ever claiming: the surviving spouse can generally step up to the deceased spouse's full earned benefit amount (or keep their own, whichever is larger) as a survivor benefit.",
+      "Treating each partner's account separately. Enter combined savings for an accurate projection of the total household portfolio; when one spouse dies, what happens to their 401(k) or IRA depends on how the surviving spouse chooses to receive it, so check our [401(k) beneficiary rules guide](/guides/401k-beneficiary-rules/) for how a spousal rollover differs from an inherited account.",
+      "Overlooking the spousal benefit floor. A spouse with little or no work history is entitled to up to 50% of the higher earner's FRA benefit, regardless of their own earnings record, per SSA rules. If either spouse also draws a pension from work not covered by Social Security, see our [pension calculator](/retirement/pension-calculator/) for how a non-covered pension factors into the household's Social Security picture.",
       "Ignoring the age gap. If one partner is 5 or more years younger, the retirement runway is longer and the projection should extend further, requiring a higher savings target.",
     ],
     workedExample:
@@ -380,7 +380,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "What if one spouse retires before the other?",
         answer:
-          "The calculator projects to the earlier partner's retirement date, since that's when their contributions stop. The working spouse's extra contributions and salary after that date aren't included, so add those separately or re-run the projection once both partners have actually retired for the most accurate total household number.",
+          "The calculator projects to the earlier partner's retirement date, since that's when their contributions stop. The working spouse's extra contributions and salary after that date aren't included, so add those separately or re-run the projection once both partners have actually retired for the most accurate total household number. Staggered retirement can also open a health-coverage gap: our [early retirement calculator guide](/retirement/early-retirement-calculator/) covers staying on a still-working spouse's employer health plan, and our [guide to retiring at 67](/guides/how-to-retire-at-67/) covers the Medicare enrollment timing gap when spouses aren't the same age.",
       },
       {
         question: "Do we have to be legally married to claim a spousal Social Security benefit?",
@@ -391,6 +391,21 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "Can I claim Social Security on my ex-spouse's record if we're divorced?",
         answer:
           "Yes, if the marriage lasted at least 10 years and you're currently unmarried, you can claim a divorced-spouse benefit worth up to 50% of your ex's full retirement age (FRA) benefit, the same 50% floor married spouses get. Claiming on an ex's record doesn't reduce their own benefit or notify them, and a remarriage on their end doesn't block your claim either. Confirm your exact eligibility and amount with the SSA before you file.",
+      },
+      {
+        question: "Can a stay-at-home or lower-earning spouse contribute to an IRA (spousal IRA)?",
+        answer:
+          "Yes. A spousal IRA lets a non-earning or lower-earning spouse contribute based on the working spouse's earned income, as long as the couple files a joint tax return. The contribution is still subject to the same annual IRA limit as anyone else — it just lets a household with one income fund two IRAs instead of one.",
+      },
+      {
+        question: "How does divorce affect our 401(k) or IRA — do we have to split retirement accounts?",
+        answer:
+          "Dividing a 401(k) in divorce typically requires a Qualified Domestic Relations Order (QDRO), a separate court order that lets the plan pay a portion directly to the ex-spouse without triggering an early-withdrawal penalty to the account owner. IRAs work differently: they're divided through a transfer incident to divorce specified in the divorce decree, which doesn't require a QDRO.",
+      },
+      {
+        question: "Can I switch from my own Social Security benefit to a spousal benefit later, or vice versa?",
+        answer:
+          "Generally, no — since a 2015 rule change, most people can't freely switch between their own benefit and a spousal benefit at will. When you file, you're typically deemed to be filing for both at once and simply receive whichever is higher. A narrow exception still exists for people born before January 2, 1954, who reached certain ages under the older rules; check with the SSA directly to see if you qualify.",
       },
     ],
     sources: [
@@ -497,7 +512,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     intro:
       "Military retirement combines two income streams that civilian workers rarely have together: a defined-benefit pension based on years of service and a Thrift Savings Plan (TSP) that works like a 401(k) — and the Blended Retirement System (BRS), introduced in 2018 by the Department of Defense, changed the terms for most service members entering after January 1, 2018. Use the calculator above to project your TSP growth, then add your pension estimate below to see the full picture.",
     howItWorks:
-      "This calculator projects your TSP balance — the defined-contribution side of military retirement. Enter your current TSP balance, monthly contributions (your own plus any BRS matching), expected return, and your target separation age. If you will also have a civilian 401(k) later, compare the two accounts in [TSP vs 401(k)](/compare/tsp-vs-401k/).\n\nFor the pension side, use the formula that applies to your plan. Under the legacy High-3 system: pension = 2.5% × years of service × average of your three highest-pay years. A 20-year retiree receives 50% of High-3 pay. Under BRS: pension = 2.0% × years of service × High-3 average, plus a government TSP match of up to 5% of basic pay after three years of service, plus a one-time continuation pay bonus at the midpoint. If you separate early for a qualifying medical condition instead of reaching 20 years, Chapter 61 retirement uses a different formula; see our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison. For general retirement projection, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
+      "This calculator projects your TSP balance — the defined-contribution side of military retirement. Enter your current TSP balance, monthly contributions (your own plus any BRS matching), expected return, and your target separation age. If you will also have a civilian 401(k) later, compare the two accounts in [TSP vs 401(k)](/compare/tsp-vs-401k/).\n\nFor the pension side, use the formula that applies to your plan. Under the legacy High-3 system: pension = 2.5% × years of service × average of your three highest-pay years. A 20-year retiree receives 50% of High-3 pay. Under BRS: pension = 2.0% × years of service × High-3 average, plus a government TSP match of up to 5% of basic pay after three years of service, plus a one-time continuation pay bonus paid around the 12-year mark as an incentive to continue serving to 20 years; the exact multiple of monthly basic pay varies by service branch and specialty, so check your service's current continuation pay table rather than assuming a fixed amount. If you separate early for a qualifying medical condition instead of reaching 20 years, Chapter 61 retirement uses a different formula; see our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison. For general retirement projection, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
     commonMistakes: [
       "Forgetting the 20-year cliff on the legacy High-3 plan. Under legacy rules, separating before 20 years of service means zero pension — you lose the entire defined-benefit, no matter how many years you served. The BRS was designed specifically to fix this cliff for the modern force.",
       "Not capturing the full BRS TSP match. BRS provides automatic 1% TSP contribution from the government after 60 days, then a dollar-for-dollar match on the next 3% and 50 cents on the next 2% after three years — a total of up to 5% matching. Service members who do not opt in above the 1% auto-contribution leave free money behind.",
@@ -531,12 +546,12 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "What is the Survivor Benefit Plan and should I elect it?",
         answer:
-          "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. For most married retirees, SBP is worth evaluating carefully against commercial life insurance alternatives. For a deeper breakdown of military pay, VA benefits, and survivor protections, see [rankandpay.org's military retirement guide](https://rankandpay.org/military-retirement/).",
+          "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. The core tradeoff against commercial life insurance: SBP premiums come out pre-tax, coverage is guaranteed regardless of your health with no medical exam, and a private insurer can't cancel it on you — but a healthy applicant can sometimes buy comparable term life coverage from a private insurer for less than SBP's premium, especially earlier in life, so it's worth getting a term quote before you elect SBP by default. For a deeper breakdown of military pay, VA benefits, and survivor protections, see [rankandpay.org's military retirement guide](https://rankandpay.org/military-retirement/).",
       },
       {
         question: "Does the pension formula differ by branch — Army, Navy, Air Force, Marine Corps, or National Guard?",
         answer:
-          "No — the High-3 and BRS pension formulas are set by federal law and DoD-wide policy, so the math is identical whether you served in the Army, Navy, Air Force, Marine Corps, or Space Force. What differs is the path to eligibility: active-duty members in any branch can retire after 20 years of active service, while National Guard and Reserve members generally need 20 'good years' — each requiring at least 50 retirement points — and typically can't start drawing retired pay until age 60, though qualifying active-duty mobilizations can lower that age. Whichever branch you served in, DFAS (the Defense Finance and Accounting Service) is the single agency that calculates and issues your monthly retired pay, not your individual service. VA disability compensation is a separate benefit administered by the Department of Veterans Affairs and can be received alongside military retired pay, subject to offset rules like Concurrent Retirement and Disability Pay (CRDP).",
+          "No — the High-3 and BRS pension formulas are set by federal law and DoD-wide policy, so the math is identical whether you served in the Army, Navy, Air Force, Marine Corps, or Space Force. What differs is the path to eligibility: active-duty members in any branch can retire after 20 years of active service, while National Guard and Reserve members generally need 20 'good years' — each requiring at least 50 retirement points — and typically can't start drawing retired pay until age 60, though qualifying active-duty mobilizations can lower that age. Whichever branch you served in, DFAS (the Defense Finance and Accounting Service) is the single agency that calculates and issues your monthly retired pay, not your individual service. VA disability compensation is a separate benefit administered by the Department of Veterans Affairs and can be received alongside military retired pay, subject to offset rules like Concurrent Retirement and Disability Pay (CRDP); see our [military retirement vs. VA disability](/compare/military-retirement-vs-va-disability/) breakdown for how CRDP and Combat-Related Special Compensation (CRSC) actually work.",
       },
       {
         question: "Is military retirement pay taxable?",
@@ -562,6 +577,21 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "Can I take a lump sum instead of full monthly pension under BRS?",
         answer:
           "Yes, but only under BRS. The Blended Retirement System lets you take a lump sum of either 25% or 50% of your future retired pay's discounted value at retirement, with your monthly pension reduced by that same percentage until you reach Social Security full retirement age. Legacy High-3 retirees do not have this option, and a lump sum forgoes future COLA growth on the amount you take upfront.",
+      },
+      {
+        question: "Does my High-3 pension calculation include BAH and BAS, or only base pay?",
+        answer:
+          "Only base pay counts toward your High-3 average. Basic Allowance for Housing (BAH) and Basic Allowance for Subsistence (BAS) are tax-free allowances, not base pay, so DFAS excludes both from the pension calculation entirely — even though they can make up a large share of your total take-home pay while serving.",
+      },
+      {
+        question: "Can I collect both a military pension and a federal civilian pension if I take a federal job after retiring?",
+        answer:
+          "In most cases, yes — military retired pay and a separate federal civilian pension (FERS or CSRS) are two distinct retirement systems, and collecting both is often called 'double-dipping' informally, but there's no automatic offset between them the way VA disability and military retired pay can interact. Rules can still vary by agency and by whether you're under FERS or the older CSRS system, so confirm your specific situation with your federal HR or benefits office before you count on both checks.",
+      },
+      {
+        question: "Can I change my Survivor Benefit Plan (SBP) beneficiary later, for example after a divorce or remarriage?",
+        answer:
+          "Changing an existing SBP election after retirement (adding or switching a beneficiary following a divorce or remarriage, for example) is possible only in limited circumstances defined by DFAS, tied to a qualifying life event and a specific window to act. Because that window and the required paperwork can change, contact DFAS directly for the current process rather than assuming a specific deadline; the initial SBP election itself still can't be made after retirement.",
       },
     ],
     sources: [

@@ -122,7 +122,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       "Assuming a revocable trust saves estate tax. It doesn't. A revocable trust is a probate-avoidance tool; the assets remain in your taxable estate. Only irrevocable trusts move assets out of the taxable estate.",
       "Missing the Medicaid 5-year lookback. Transfers into a MAPT within 5 years of applying for Medicaid trigger a penalty period. Plan MAPT funding at least 5 years before any anticipated long-term-care need.",
       "Trying to DIY an irrevocable trust. ILIT, MAPT, and dynasty trusts require attorney-drafted documents — the wrong language can void the tax or asset-protection benefit or unintentionally trigger a taxable gift.",
-      "Forgetting community property funding. In community property states (AZ, CA, ID, LA, NV, NM, TX, WA, WI), a joint trust preserves community-property basis-adjustment status for both halves at the first spouse's death (IRC §1014(b)(6)) — separate trusts lose that benefit.",
+      "Forgetting community property funding. In community property states (AZ, CA, ID, LA, NV, NM, TX, WA, WI), a joint trust preserves community-property basis-adjustment status for both halves at the first spouse's death (IRC §1014(b)(6)) — separate trusts lose that benefit. In common-law states, or for blended families with separate beneficiaries, couples often choose two separate trusts instead, for cleaner control over each spouse's own property.",
       "Not updating beneficiary designations. 401(k), IRA, and life-insurance beneficiary forms override BOTH your will and your trust. Retitling accounts into the trust isn't enough — update the beneficiary form too.",
     ],
     workedExample:
@@ -144,6 +144,16 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
           "A revocable living trust (RLT) can be changed or dissolved by you at any time; you retain full control. Its only purpose is probate avoidance — the assets stay in your taxable estate. An irrevocable trust transfers ownership out of your control (mostly) and can serve tax or asset-protection goals: an ILIT removes life insurance from the taxable estate, a Medicaid Asset Protection Trust shields assets from a future spend-down (5-year lookback applies), and a dynasty trust transfers wealth across generations without generation-skipping tax. Irrevocable trusts require attorney-drafted documents.",
       },
       {
+        question: "What's the step-by-step process to set up a living trust?",
+        answer:
+          "Setting up a living trust follows five steps: (1) consult an estate planning attorney, or choose a DIY/online service, and gather a full list of your assets; (2) draft the trust document and name your successor trustee; (3) sign and notarize the trust, since witness requirements vary by state; (4) fund the trust by retitling deeds and financial accounts into the trust's name; and (5) update beneficiary designations on retirement accounts and life insurance, which pass outside the trust regardless of funding. A pour-over will (see [living trust vs. will](/compare/living-trust-vs-will/)) catches any asset you forget to retitle in step 4, but it still goes through probate before reaching the trust. Funding it correctly the first time is what actually avoids probate.",
+      },
+      {
+        question: "How long does it take to set up a living trust, from consultation to signing?",
+        answer:
+          "Timeline depends on complexity and whether you use an attorney or an online service. Attorney-drafted trusts take longer: plan on several weeks of back-and-forth as you gather your asset list, review drafts, and schedule signing. Online DIY services can produce a signed-ready trust document in a single sitting. Either path still requires funding afterward (retitling deeds and financial accounts), which takes additional time and isn't included in either estimate.",
+      },
+      {
         question: "How much does it cost to fund a living trust?",
         answer:
           "Trust funding — retitling deeds and accounts into the trust — costs $500 to $2,000 additional on top of drafting. Each real-estate deed runs $200 to $500 attorney-recorded (or $50 to $150 DIY), and retitling brokerage/bank accounts runs $300 to $1,500 depending on how many institutions are involved. Trust funding is where most DIY living trusts fail — an unfunded trust provides zero probate protection because the assets are still in your name at death.",
@@ -156,12 +166,17 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       {
         question: "Can I set up a living trust online?",
         answer:
-          "Yes, for a revocable living trust with straightforward facts. Trust & Will ($499 individual, $599 couple), LegalZoom Living Trust (~$279), and Nolo Quicken WillMaker Plus ($139, includes RLT template) all produce valid RLTs. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning, blended families with complex distributions, business interests, or cross-state property. Attorney-drafted becomes worth it when the facts stop fitting a fill-in-the-blank template.",
+          "Yes, for a revocable living trust with straightforward facts. Trust & Will ($499 individual, $599 couple), LegalZoom Living Trust (~$279), and Nolo Quicken WillMaker Plus ($139, includes RLT template) all produce valid RLTs. These packages draft the trust document itself; funding it (retitling deeds and financial accounts into the trust's name) is typically left to you afterward, regardless of price tier, unless the service explicitly advertises funding assistance. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning, blended families with complex distributions, business interests, or cross-state property. Attorney-drafted becomes worth it when the facts stop fitting a fill-in-the-blank template. See [what's bundled in each online trust package](/roundup/best-living-trust-services/) before choosing one.",
       },
       {
         question: "How much does it cost to maintain a living trust after it's set up?",
         answer:
           "A revocable living trust has no mandatory annual fee and needs no separate tax return while you're alive — it's a grantor trust, so it uses your own Social Security number and is reported on your personal Form 1040, unlike an irrevocable trust, which must file its own Form 1041. Ongoing costs are occasional rather than annual: retitling any asset you acquire after the trust is signed (a new house, a refinanced property, a new brokerage account) costs the same $200–$500 per deed or $300–$1,500 per account as the original funding step. An amendment to update beneficiaries or add a provision typically runs $300–$1,000 with an attorney. If you name a corporate trustee instead of a family member, expect an annual fee of roughly 0.5%–1.5% of trust assets — a cost most families avoid by serving as their own trustee while they're able.",
+      },
+      {
+        question: "Who should I name as successor trustee?",
+        answer:
+          "Your successor trustee should be someone, or an institution, you trust to manage the trust competently and carry out your instructions after you're gone or incapacitated. Most people name an adult child or another trusted family member or friend as their first choice. For complex estates, contentious family situations, or when no individual is a good fit, a corporate or professional trustee is the alternative, at the roughly 0.5%–1.5% annual fee noted above. Whoever you choose, confirm they're willing to serve before you sign the trust.",
       },
       {
         question: "Is a living trust worth the cost?",

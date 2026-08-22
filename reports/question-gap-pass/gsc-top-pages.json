@@ -1,178 +1,176 @@
 {
   "site_url": "sc-domain:themodernwallet.com",
-  "window": {
-    "start": "2026-05-17",
-    "end": "2026-08-15",
-    "days": 90
-  },
+  "window_days": 90,
+  "start": "2026-05-22",
+  "end": "2026-08-20",
   "top_pages": [
     {
       "page": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/",
       "clicks": 15,
-      "impressions": 615,
-      "ctr": 0.0244,
-      "position": 9.26
+      "impressions": 616,
+      "ctr": 0.024350649350649352,
+      "position": 9.366883116883116
     },
     {
       "page": "https://www.themodernwallet.com/compare/trump-account-vs-savings-account/",
       "clicks": 9,
-      "impressions": 226,
-      "ctr": 0.0398,
-      "position": 7.83
+      "impressions": 227,
+      "ctr": 0.039647577092511016,
+      "position": 8.092511013215859
     },
     {
       "page": "https://www.themodernwallet.com/compare/trump-account-vs-baby-bonds/",
       "clicks": 5,
       "impressions": 61,
-      "ctr": 0.082,
-      "position": 7.02
+      "ctr": 0.08196721311475409,
+      "position": 7.016393442622951
     },
     {
       "page": "https://www.themodernwallet.com/trump-account/",
       "clicks": 3,
-      "impressions": 429,
-      "ctr": 0.007,
-      "position": 9.81
+      "impressions": 430,
+      "ctr": 0.0069767441860465115,
+      "position": 9.82325581395349
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/",
       "clicks": 3,
-      "impressions": 122,
-      "ctr": 0.0246,
-      "position": 33.76
+      "impressions": 126,
+      "ctr": 0.023809523809523808,
+      "position": 35.43650793650794
     },
     {
       "page": "https://www.themodernwallet.com/investing/withdrawal-calculator/",
       "clicks": 2,
       "impressions": 200,
       "ctr": 0.01,
-      "position": 46.45
+      "position": 46.455
     },
     {
       "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
       "clicks": 2,
-      "impressions": 83,
-      "ctr": 0.0241,
-      "position": 53.47
+      "impressions": 97,
+      "ctr": 0.020618556701030927,
+      "position": 57.51546391752577
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/new-mexico/",
       "clicks": 2,
       "impressions": 26,
-      "ctr": 0.0769,
+      "ctr": 0.07692307692307693,
       "position": 9
     },
     {
       "page": "https://www.themodernwallet.com/retirement/military-retirement-calculator/",
       "clicks": 2,
       "impressions": 3,
-      "ctr": 0.6667,
-      "position": 43.33
+      "ctr": 0.6666666666666666,
+      "position": 43.333333333333336
     },
     {
       "page": "https://www.themodernwallet.com/roundup/best-ira-accounts/",
       "clicks": 1,
-      "impressions": 1570,
-      "ctr": 0.0006,
-      "position": 60.89
+      "impressions": 1571,
+      "ctr": 0.0006365372374283895,
+      "position": 60.873965626989175
     },
     {
       "page": "https://www.themodernwallet.com/investing/high-yield-savings-calculator/",
       "clicks": 1,
       "impressions": 437,
-      "ctr": 0.0023,
-      "position": 9.58
+      "ctr": 0.002288329519450801,
+      "position": 9.581235697940503
     },
     {
       "page": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/",
       "clicks": 1,
       "impressions": 170,
-      "ctr": 0.0059,
-      "position": 6.79
+      "ctr": 0.0058823529411764705,
+      "position": 6.788235294117647
     },
     {
       "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
       "clicks": 1,
-      "impressions": 119,
-      "ctr": 0.0084,
-      "position": 16.25
+      "impressions": 122,
+      "ctr": 0.00819672131147541,
+      "position": 17.557377049180328
     },
     {
       "page": "https://www.themodernwallet.com/roundup/best-estate-planning-software/",
       "clicks": 1,
-      "impressions": 97,
-      "ctr": 0.0103,
-      "position": 60.15
+      "impressions": 99,
+      "ctr": 0.010101010101010102,
+      "position": 60.06060606060606
     },
     {
       "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
       "clicks": 1,
-      "impressions": 89,
-      "ctr": 0.0112,
-      "position": 25.71
+      "impressions": 90,
+      "ctr": 0.011111111111111112,
+      "position": 26.488888888888887
     },
     {
       "page": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/",
       "clicks": 1,
       "impressions": 51,
-      "ctr": 0.0196,
-      "position": 9.55
+      "ctr": 0.0196078431372549,
+      "position": 9.549019607843137
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/washington/",
       "clicks": 1,
       "impressions": 49,
-      "ctr": 0.0204,
-      "position": 8.43
+      "ctr": 0.02040816326530612,
+      "position": 8.428571428571429
     },
     {
       "page": "https://www.themodernwallet.com/compare/trump-account-vs-529/",
       "clicks": 1,
       "impressions": 39,
-      "ctr": 0.0256,
-      "position": 26.13
+      "ctr": 0.02564102564102564,
+      "position": 26.128205128205128
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/iowa/",
       "clicks": 1,
       "impressions": 34,
-      "ctr": 0.0294,
-      "position": 7.41
+      "ctr": 0.029411764705882353,
+      "position": 7.411764705882353
     },
     {
       "page": "https://www.themodernwallet.com/tax-resolution/irs-payment-plan-calculator/",
       "clicks": 1,
       "impressions": 31,
-      "ctr": 0.0323,
-      "position": 17.48
+      "ctr": 0.03225806451612903,
+      "position": 17.483870967741936
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/",
       "clicks": 1,
-      "impressions": 28,
-      "ctr": 0.0357,
-      "position": 41.93
+      "impressions": 29,
+      "ctr": 0.034482758620689655,
+      "position": 40.96551724137931
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/louisiana/",
       "clicks": 1,
       "impressions": 23,
-      "ctr": 0.0435,
-      "position": 7.43
+      "ctr": 0.043478260869565216,
+      "position": 7.434782608695652
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/maryland/",
       "clicks": 1,
       "impressions": 23,
-      "ctr": 0.0435,
-      "position": 9.61
+      "ctr": 0.043478260869565216,
+      "position": 9.608695652173912
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/missouri/",
       "clicks": 1,
       "impressions": 14,
-      "ctr": 0.0714,
-      "position": 5.57
+      "ctr": 0.07142857142857142,
+      "position": 5.571428571428571
     },
     {
       "page": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/oregon/",
@@ -192,7 +190,7 @@
       "page": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/",
       "clicks": 1,
       "impressions": 6,
-      "ctr": 0.1667,
+      "ctr": 0.16666666666666666,
       "position": 29
     },
     {
@@ -203,88 +201,88 @@
       "position": 5.5
     },
     {
+      "page": "https://www.themodernwallet.com/real-estate/",
+      "clicks": 0,
+      "impressions": 1487,
+      "ctr": 0,
+      "position": 72.88096839273706
+    },
+    {
       "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
       "clicks": 0,
-      "impressions": 853,
+      "impressions": 854,
       "ctr": 0,
-      "position": 81.78
+      "position": 81.72833723653396
+    },
+    {
+      "page": "https://www.themodernwallet.com/mortgage/payoff-calculator/",
+      "clicks": 0,
+      "impressions": 819,
+      "ctr": 0,
+      "position": 85.26617826617827
     },
     {
       "page": "https://www.themodernwallet.com/auto-loan/",
       "clicks": 0,
-      "impressions": 553,
+      "impressions": 554,
       "ctr": 0,
-      "position": 84.23
+      "position": 84.10830324909747
     },
     {
       "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
       "clicks": 0,
-      "impressions": 498,
+      "impressions": 522,
       "ctr": 0,
-      "position": 50.67
+      "position": 52.75095785440613
     },
     {
       "page": "https://www.themodernwallet.com/compare/va-loan-vs-conventional-loan/",
       "clicks": 0,
-      "impressions": 441,
+      "impressions": 443,
       "ctr": 0,
-      "position": 72.29
+      "position": 72.3002257336343
     },
     {
-      "page": "https://www.themodernwallet.com/compare/529-vs-coverdell-esa/",
+      "page": "https://www.themodernwallet.com/investing/savings-goal-calculator/",
       "clicks": 0,
-      "impressions": 186,
+      "impressions": 290,
       "ctr": 0,
-      "position": 61.9
+      "position": 65.2448275862069
     },
     {
-      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+      "page": "https://www.themodernwallet.com/investing/compound-interest-calculator/",
       "clicks": 0,
-      "impressions": 151,
+      "impressions": 264,
       "ctr": 0,
-      "position": 53.81
+      "position": 84.18560606060606
     },
     {
-      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "page": "https://www.themodernwallet.com/guides/trump-account-alternatives/",
       "clicks": 0,
-      "impressions": 135,
+      "impressions": 225,
       "ctr": 0,
-      "position": 65.16
+      "position": 9.697777777777778
     },
     {
-      "page": "https://www.themodernwallet.com/compare/utma-vs-ugma/",
+      "page": "https://www.themodernwallet.com/guides/529-qualified-expenses/",
       "clicks": 0,
-      "impressions": 100,
+      "impressions": 203,
       "ctr": 0,
-      "position": 55.26
+      "position": 81.44334975369458
     },
     {
-      "page": "https://www.themodernwallet.com/compare/stocks-vs-bonds/",
+      "page": "https://www.themodernwallet.com/net-worth/",
       "clicks": 0,
-      "impressions": 92,
+      "impressions": 203,
       "ctr": 0,
-      "position": 85.21
+      "position": 69.00492610837438
     },
     {
-      "page": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+      "page": "https://www.themodernwallet.com/net-worth/how-to-calculate-net-worth/",
       "clicks": 0,
-      "impressions": 91,
+      "impressions": 189,
       "ctr": 0,
-      "position": 54.98
-    },
-    {
-      "page": "https://www.themodernwallet.com/business-line-of-credit/",
-      "clicks": 0,
-      "impressions": 68,
-      "ctr": 0,
-      "position": 62.74
-    },
-    {
-      "page": "https://www.themodernwallet.com/compare/hysa-vs-money-market/",
-      "clicks": 0,
-      "impressions": 54,
-      "ctr": 0,
-      "position": 38.48
+      "position": 80.7936507936508
     }
   ]
 }
