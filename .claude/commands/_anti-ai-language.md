@@ -37,6 +37,17 @@ The overall standard: every sentence must parse on the first read and carry info
 - **Fake-profound kicker** — a final "deep" line that turns the point into a metaphor, aphorism, or mic-drop. Delete it and end on the clearest concrete sentence already in the draft.
 - **Summary-recap ending** — "In conclusion", "Ultimately", "Overall", or a closing paragraph that restates the piece. End on the last concrete point, takeaway, or next action.
 
+### Headline tells (any one occurrence is a failure — applies to H1, SEO title, subtitle/deck, and section headings)
+
+- **Presupposed change.** "still", "no longer", "now", "these days", "has become", "in the age of" used to imply the reader knows some earlier state. The reader arrived cold and has no before-picture. "What the Vendor Still Publishes" tells a first-time visitor that something changed and leaves them guessing what. Name the current state flatly instead.
+- **The coy abstraction where a name belongs.** "the vendor", "this platform", "one major provider", "a leading tool" in a headline whose subject you already named. If the H1 says Clio, the next clause says Clio, not "the Vendor".
+- **The two-clause headline formula.** "X, and What You Have to Ask For" / "X, and Why It Matters" / "X: What It Is and How to Choose". A comma or colon splicing a topic to a second promise is the default LLM headline shape. Write one clause that says the thing.
+- **Headline tricolon.** A subtitle or deck built as three parallel items ("the one figure X lists, why Y disagree, and the line items that move your bill"). Two items, or one specific claim, reads as written by a person.
+- **"actually" / "really" / "truly" as the insight.** "what actually drives your bill", "what it really costs". The word is doing the work a fact should do. Cut it, or replace the headline with the fact itself.
+- **Question headlines the page then answers.** "Is X Worth It?" as an H1 is acceptable when it matches a real query. "But What About Y?" as a section heading is not.
+- **Colon-drama in a heading.** "The Catch:", "The Result:", "The Real Story:".
+- **Curiosity-gap headlines** that withhold the answer to force a click: "What Nobody Tells You About X", "The One Thing X Won't Say". State the finding in the heading.
+
 ### Overloaded sentences (any one is a failure)
 
 - One idea per sentence. A sentence fails if it packs three or more ideas, chains clauses with commas / "and" / "from X to Y to Z", runs past ~30 words, or needs a second read. Split it into two or three short sentences.
@@ -87,6 +98,7 @@ Write with concrete specifics, commit to a conclusion, and vary sentence shape.
 - **Rhetorical setup** — "What if I told you…", "Think about it:", "Plot twist:", self-answered "Question? Answer."
 - **Fake-profound kicker** — a final metaphor/aphorism/mic-drop line instead of ending on a concrete sentence.
 - **Summary-recap ending** — "In conclusion", "Ultimately", "Overall", or a closing paragraph restating the piece.
+- **Headline tell (scan the headline fields SEPARATELY from body prose — they are the most commonly unchecked text on the page).** Extract the H1, SEO title, meta description, subtitle/deck, every section heading, and every FAQ question, then check each for: presupposed change ("still", "no longer", "now", "these days", "in the age of"); a coy abstraction ("the vendor", "this platform") where the page already names the subject; the two-clause "X, and Why/What/How Y" formula spliced by a comma or colon; a three-item headline tricolon; "actually"/"really"/"truly" standing in for a fact; colon-drama ("The Catch:", "The Result:"); or a curiosity-gap headline that withholds the finding. Any one occurrence FAILS. Report as `headline-tell: [field] "[text]"`. The fix rewrites that field only.
 - **Formatting slop** — emoji in a heading, mid-sentence bold for emphasis, a bullet list where prose reads better, or a header over a two-sentence section.
 - **Inflated word from the extended list** — foster, utilize, facilitate, empower, streamline, tapestry, beacon, multifaceted, meticulous, intricate, embark, elevate, transformative (as filler).
 
@@ -104,6 +116,10 @@ A page can carry one isolated phrasing tell and still pass; two or more is the f
 
 ## SCOPE
 
-Applies to reader-facing **prose** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
+Applies to all reader-facing **text** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
+
+**HEADLINES ARE IN SCOPE. This is the most commonly missed part of this file.** Every tell below applies to the H1, the SEO title, the meta description, the subtitle/deck/standfirst, every section heading, every FAQ question, and CTA copy — exactly as it applies to body paragraphs. These are the most-read text on the page and the text an AI extractor quotes first.
+
+Do not confuse two different exclusions. Headings and metadata are excluded from **body word counts** so they cannot pad a depth floor. They are NOT excluded from **this scan**. An audit that extracts body prose for word-counting and then scans only that extract has left every headline unchecked, which is how a tell reaches the top of a live page. Scan the headline fields separately and explicitly.
 
 Body edits are explicitly in scope. The audit phase re-reviews only net-new pages and does **not** re-scan body edits, so a tell introduced during a body edit ships unaudited unless the writer catches it here.
