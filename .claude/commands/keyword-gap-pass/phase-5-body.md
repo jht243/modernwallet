@@ -23,16 +23,7 @@ Everything between those two — including this phase — runs automatically. Th
 
 ## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
 
-Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. The Phase 4 audit only re-reviews net-new pages — it does **not** re-scan body edits — so a tell you introduce here ships unaudited. Before finalizing any added section/sentence, strip these:
-- Throat-clearing openers ("When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…").
-- The "it's not just X, it's Y" cadence; empty tricolons ("efficient, effective, and scalable"); hedged non-conclusions ("ultimately, the right choice depends on your needs").
-- Filler verbs/phrases: "delve into", "leverage" (verb), "navigate the complexities of", "unlock the power of", "it's worth noting that", "a testament to".
-- Never call software, a model, a tool, pricing, or a verdict "honest"/"honestly" — software has no honesty. Say the point directly ("the caveat is…", "the short answer is…"). `grep -inE "\bhonest"` your added text and cut every tech-context hit.
-- Em-dash cap: at most **2 em-dashes per page, never two in the same section**. COUNT them in your added prose (`grep -o "—" | wc -l`); recast with commas, colons, periods, or parentheses and vary sentence shape.
-- Anthropomorphic "death" language for software/tech — never write that a demo, feature, product, tool, model, or technology "died", "is dead", was "killed", is "on life support", or "flatlined". Say what literally happened — it never shipped, was abandoned, stopped being used, or lost support.
-- Search-intent / answer-scaffold narration — never write about the reader's own search or about the page itself: "which is the reason this search exists", "that's why you're here", "if you're (still) reading this", "the short answer (is)", "here's the thing/catch/reality", "you might be wondering". State the fact directly instead (e.g. "Figure 03 isn't sold to the public; it ships to enterprise partners under private agreements."). A single instance is enough to strike.
-- Vague abstractions — if a phrase cannot survive a "what does this literally mean?" test, replace it with the specific noun, number, or example.
-Write with concrete specifics and vary sentence shape.
+Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. The Phase 4 audit only re-reviews net-new pages — it does **not** re-scan body edits — so a tell you introduce here ships unaudited. Load `.claude/commands/_anti-ai-language.md` and apply its **WRITER** section to every sentence you add. If the file is missing, STOP and report it.
 
 ## First-mention company link rule (MANDATORY — workflow-wide, added 2026-07-07)
 
