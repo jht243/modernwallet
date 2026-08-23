@@ -19,6 +19,18 @@ For every `🔴 missing` and weak `🟡 partial`, check it against the **full co
 - If another page **answers it well** → record that route in **Answered elsewhere?**. The action becomes **`Link`**: the fix is an internal link from this page to the one that already answers it — **never re-write the answer here.** Duplicating an answer across two pages cannibalizes both; linking concentrates authority and is the correct, deliberate choice.
 - If **no** page answers it → `Answered elsewhere? = —`; it's a real site-wide gap eligible for a new section.
 
+## Step 2b — Weight by where the question came from
+
+Phase 2 tags every question `paa` / `related` / `generated`. That tag is evidence, so it changes the ranking:
+
+- **`paa` questions are measured demand** — Google published them because people ask them. At equal Value, a `paa` question outranks a `generated` one, and a `paa` question is never dropped as "low value" on a hunch.
+- **`generated` questions are inference.** Keep them, but when the chart has to be trimmed, they are what gets trimmed first.
+- **A `🔴 missing` question whose answer Google is citing from a competitor** (the page's `ai_overview_cited_domains` from Phase 2) is automatically **High** value — Google is answering our visitors from someone else's page. Name the cited domain in the chart's evidence cell.
+- **If the SERP came back `forum_dominated`**, note it on the page's rows: the enrichment must read as lived experience, not vendor explanation, or it will not win the click even once it ranks.
+- **If a `featured_snippet` exists**, the enrichment for that page's top question should match its shape (definition block / numbered steps / table).
+
+Rows whose page returned `"verdict": "unread"` carry no SERP evidence — mark them so the reader knows the page was ranked on generated questions alone.
+
 ## Step 3 — Value: rank each question's worth
 
 Score `Value` using the service/lead mapping from Phase 0:
