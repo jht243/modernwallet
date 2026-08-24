@@ -9240,7 +9240,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Ordinary Income vs Capital Gains Tax ───────────────────────────────
   {
     slug: "ordinary-income-vs-capital-gains-tax",
-    title: "Ordinary Income vs Capital Gains Tax Rates",
+    title: "Ordinary Income vs Capital Gains Tax Rates for 2026",
     metaDescription:
       "See exactly how ordinary income and capital gains tax differ for 2026, with real bracket math on a $10,000 wages vs. gains example and ways to cut what you owe.",
     targetKeyword: "ordinary income vs capital gains tax",
@@ -9266,7 +9266,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "What Counts as Ordinary Income",
         content:
-          "Ordinary income is any money the Internal Revenue Service (IRS) taxes at your regular marginal rate, the same rate that applies to your paycheck. It covers wages, salary, tips, bonuses, and net income from a small business or freelance work.\n\nIt also covers interest from a savings account or a CD, non-qualified dividends, and any gain on an asset you held for one year or less. Rent from a property you manage yourself falls into this bucket too, though depreciation can shrink the taxable amount.\n\nWithdrawals from a traditional 401(k) or a traditional individual retirement account (IRA) count as ordinary income as well, no matter what the money was invested in. The [IRS](https://www.irs.gov/publications/p525) lists the full range of taxable income types in Publication 525.",
+          "Ordinary income is any money the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p525) taxes at your regular marginal rate, the same rate that applies to your paycheck. It covers wages, salary, tips, bonuses, and net income from a small business or freelance work.\n\nIt also covers interest from a savings account or a CD, non-qualified dividends, and any gain on an asset you held for one year or less. Rent from a property you manage yourself falls into this bucket too, though depreciation can shrink the taxable amount.\n\nWithdrawals from a traditional 401(k) or a traditional individual retirement account (IRA) count as ordinary income as well, no matter what the money was invested in. Publication 525 lists the full range of taxable income types.",
       },
       {
         heading: "What Counts as a Capital Gain",
@@ -9281,7 +9281,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Ordinary Income vs Capital Gains Tax Rates for 2026",
         content:
-          "For 2026, ordinary income is taxed across seven brackets that run from 10% to 37%, and a long-term capital gain uses just three rates instead: 0%, 15%, or 20%. Both scales run off your total taxable income, but the IRS fills the ordinary brackets first and stacks any capital gain on top of that. That means wages can push a gain into a higher capital-gains bracket, even though the reverse never happens.\n\nTake a single filer with $90,000 of taxable income in the 22% ordinary bracket. An extra $10,000 in wages stays inside that same bracket, so the IRS taxes all of it at 22%, a $2,200 bill.\n\nThe same $10,000 arriving as a long-term capital gain stacks on top of that $90,000 instead. It lands in the 15% bracket, since the wages already used up the $49,450 of 0% room, so the tax comes to $1,500.\n\nThat's a $700 difference on the exact same $10,000, at the exact same income level, with nothing else about the filer changed. The gap widens further for anyone in a higher ordinary bracket, since the ordinary rate keeps climbing past 22% while the capital-gains rate tops out at 20%.\n\nHigh earners face one more wrinkle: a surtax that applies to investment income like this capital gain, but never to wages directly. The next section covers exactly when it kicks in.",
+          "For 2026, ordinary income is taxed across seven brackets that run from 10% to 37%, and a long-term capital gain uses just three rates instead: 0%, 15%, or 20%. Both scales run off your total taxable income. The IRS fills the ordinary brackets first, then stacks any capital gain on top of that. That means wages can push a gain into a higher capital-gains bracket, even though the reverse never happens.\n\nTake a single filer with $90,000 of taxable income in the 22% ordinary bracket. An extra $10,000 in wages stays inside that same bracket, so the IRS taxes all of it at 22%, a $2,200 bill.\n\nThe same $10,000 arriving as a long-term capital gain stacks on top of that $90,000 instead. It lands in the 15% bracket, since the wages already used up the $49,450 of 0% room, so the tax comes to $1,500.\n\nThat's a $700 difference on the exact same $10,000, at the exact same income level. Nothing else about the filer changed. The gap widens further for anyone in a higher ordinary bracket, since the ordinary rate keeps climbing past 22% while the capital-gains rate tops out at 20%.\n\nHigh earners face one more wrinkle: a surtax that applies to investment income like this capital gain, but never to wages directly. The next section covers exactly when it kicks in.",
       },
       {
         heading: "Where Qualified Dividends and the Net Investment Income Tax Fit In",
