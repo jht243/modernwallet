@@ -1637,6 +1637,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Yes, but none of the seven providers above are built for it. A true self-directed 401(k) — one that holds real estate, private equity, or other alternative assets — requires a specialized custodian, not a mainstream provider; Fidelity's and Vanguard's solo 401(k) plans, for example, are limited to their standard brokerage lineups. If alternative-asset investing is a priority, look specifically for providers marketing 'self-directed solo 401(k)' plans, and confirm IRS prohibited-transaction rules before using the account to hold assets you or a disqualified person will personally use.",
       },
+      {
+        question: "What are the alternatives to a 401(k) for a small business?",
+        answer:
+          "A 401(k) isn't the only retirement plan a small business can offer. A SIMPLE IRA trades a lower employee deferral limit ($16,500 in 2025, plus a $3,500 catch-up) for far less administrative overhead — no Form 5500 filing, no nondiscrimination testing — in exchange for a mandatory employer match (or 2% non-elective contribution) every year; see our [SIMPLE IRA vs. 401(k)](/compare/simple-ira-vs-401k/) breakdown for the full contribution and admin-cost comparison. If you're self-employed with no full-time employees, a SEP IRA or Solo 401(k) usually beats either option: a Solo 401(k) allows the highest combined contribution room (up to $70,000 in 2025 across employee and employer contributions) plus a Roth option, while a SEP IRA is the simpler of the two to administer — our [SEP IRA vs. Solo 401(k)](/compare/sep-ira-vs-solo-401k/) guide walks through which fits your situation.",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) Plans for Small Businesses", url: "https://www.irs.gov/retirement-plans/401k-plans" },
