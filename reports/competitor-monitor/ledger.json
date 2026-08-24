@@ -172545,11 +172545,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-august-24-2026": {
+          "acted": false,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:8438c7b3ac1403223250e211c276061d33a4d3bbc34d938db135460103c91ca4",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-08-24T06:55:13-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -172565,7 +172569,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Monday, August 24: A Little Higher - NerdWallet",
           "tool_io": []
         },
@@ -287072,11 +287076,15 @@
           ]
         },
         "https://www.omnicalculator.com/physics/diametral-pitch": {
+          "acted": false,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:2f3e8afd520d2c50d95f223b0c0fbd77fbe8c7374533bbea5514c08cbe171b7d",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-24",
           "kind": "tool",
           "last_seen": "2026-08-24",
           "lastmod": "2026-08-24T12:20:31.937Z",
+          "our_url": "",
           "outline": [
             "Diametral pitch",
             "How do you calculate diametral pitch of spur gear?",
@@ -287089,7 +287097,7 @@
           "relevance_hits": [
             "calculator"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Diametral Pitch Calculator",
           "tool_io": [
             "label: Pitch circle diameter (D)",
@@ -340285,11 +340293,15 @@
           "tool_io": []
         },
         "https://smartasset.com/financial-advisor/certified-trust-and-financial-advisor-ctfa": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:39e7134cb356fb58b12f43390ee8313a5c5883906136e98eca0d80350428fc77",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T00:59:32+00:00",
+          "our_url": "/guides/what-is-a-ctfa/",
           "outline": [
             "What Is a Certified Trust and Financial Advisor?",
             "Services a CTFA Offers",
@@ -340304,7 +340316,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Certified Trust and Financial Advisor (CTFA)?",
           "tool_io": []
         },
@@ -375828,11 +375840,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/mortgage/how-much-should-i-spend-on-rent": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:5cd6ba3e285bc3e39fdcc6e7c59be35e23b28c8192a8626597ee2fb69bb95b37",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-01T23:49:38+00:00",
+          "our_url": "/guides/how-much-should-i-spend-on-rent/",
           "outline": [
             "How Much Rent Can You Afford?",
             "Spend 30% or Less of Your Income On Rent",
@@ -375846,7 +375862,7 @@
             "mortgage",
             "rent"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Should I Spend on Rent? - SmartAsset",
           "tool_io": []
         },
@@ -381003,11 +381019,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/personal-finance/how-much-to-have-in-a-college-savings-account-by-age": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:e0505c0d711c96e347ae80713067e1685c041be40b7e0906feaeca805cbaeb31",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T00:19:27+00:00",
+          "our_url": "/guides/college-savings-by-age/",
           "outline": [
             "The Rising Cost of College",
             "College Savings by Age",
@@ -381023,7 +381043,7 @@
             "savings",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much to Have in a College Savings Account By Age",
           "tool_io": []
         },
@@ -384448,11 +384468,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/average-hsa-balance-by-age": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:3bbc935356be8b1f7863777aef05174b136ba48139cbc0fe3a0108ab3daea6c5",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T00:50:10+00:00",
+          "our_url": "/guides/average-hsa-balance-by-age/",
           "outline": [
             "What Is the Average HSA Balance By Age?",
             "What If I Have a Below-Average HSA Balance for My Age?",
@@ -384468,7 +384492,7 @@
             "retirement",
             "roth"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Average HSA Balance By Age",
           "tool_io": []
         },
@@ -400599,11 +400623,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/hr-block-vs-turbotax": {
+          "acted": false,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:6cf0956582457618bc996de135f8c493d5064825c771f5d27f3ff93deef89da4",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-24",
           "kind": "comparison",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T16:12:43+00:00",
+          "our_url": "",
           "outline": [
             "A Quick Look at H&amp;R Block",
             "H&amp;R Block Filing Options",
@@ -400623,7 +400651,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "H&amp;R Block vs. TurboTax (Updated for 2026)",
           "tool_io": []
         },
@@ -401231,11 +401259,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/ordinary-income-vs-capital-gains-tax": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:951edd8145afb574ef9286bcd84c1ac0690bc6115aba79493de5b4b74626c9b2",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "comparison",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T17:08:32+00:00",
+          "our_url": "/compare/ordinary-income-vs-capital-gains-tax/",
           "outline": [
             "Ordinary Income Tax",
             "Capital Gains Tax",
@@ -401250,7 +401282,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Ordinary Income vs. Capital Gains Tax",
           "tool_io": []
         },
@@ -401874,11 +401906,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/tax-allowances": {
+          "acted": true,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:ffd9cc92d178f3e7a71eb052be9f0b642e9931e04adec3f0db1a41259247dced",
+          "disposition": "published",
           "first_seen": "2026-08-24",
           "kind": "page",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T16:09:47+00:00",
+          "our_url": "/guides/w-4-withholding-allowances/",
           "outline": [
             "What You Should Know About Tax Withholding",
             "What Were Tax Allowances?",
@@ -401898,7 +401934,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Can You Claim Allowances on Your Taxes?",
           "tool_io": []
         },
@@ -402665,11 +402701,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/turbotax-deluxe-vs-premier-plan-comparison": {
+          "acted": false,
+          "acted_date": "2026-08-24",
           "content_hash": "sha256:e4ca16439fcfafedcba9f20a5c74df95fd25ec88d1d43a8ae9ca93733c8d14d9",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-24",
           "kind": "comparison",
           "last_seen": "2026-08-24",
           "lastmod": "2026-04-02T16:52:44+00:00",
+          "our_url": "",
           "outline": [
             "How to Get Started With TurboTax",
             "What Is TurboTax Deluxe?",
@@ -402687,7 +402727,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "TurboTax Deluxe vs. Premier (Updated for 2026)",
           "tool_io": []
         },
