@@ -92,3 +92,29 @@ Legend: 🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 dup
 **Enriched (4 in-place edits):** guides/mega-backdoor-roth-401k (backdoor-Roth comparison + FAQ), guides/how-to-choose-a-balance-transfer-credit-card (debt-consolidation-loan vs balance-transfer section + FAQ), spokes-business-financing/accounts-receivable-financing (factoring-vs-AR-financing FAQ), spokes-retirement/fire-calculator (lean/fat FIRE numeric example + FAQ).
 **Dropped (13):** see cache.json `dropped` entries dated 2026-08-10 for full reasons.
 **Audit fixes applied:** 4 titles lengthened into the 50–60 char range; SIMPLE IRA small-employer 50+ combined limit corrected ($21,850 → $21,950); USDA income-limit figures softened from a single hard national number to a county-varying range with a link to USDA's own lookup.
+
+## Run 2026-08-24 (comparison-content-auto, autonomous) — refreshed facts
+- **Comparisons live at run start:** 100 in `src/data/comparisons.ts` + 7 in `src/data/comparisons-business.ts` = 107 total.
+- **SEO data:** Ahrefs MCP workspace units exhausted this run (99,981/100,000 used by other fleet routines; resets 2026-09-18) and no SEMRUSH_API_KEY configured. Per `_keyword-demand-ladder`, demoted to rung 3 (Google Autocomplete, keyless, public-source) — every row below is an **estimate band**, not measured volume; `source: estimate (autocomplete)`. No SERP/KD data was available this run, so winnability calls were made on prior-run heuristics (niche low-competition topics favored over brand-vs-brand or flagship-product battles).
+
+### Candidate Chart (Google Autocomplete estimate, US)
+| # | Comparison | Vol (est. band) | KD | CPC | Coverage | Verdict |
+|---|---|---|---|---|---|---|
+| 1 | rmd vs qcd | 500-5000 (est.) | — | — | 🟢 new | Build — retirement tax-mechanics gap |
+| 2 | bridge loan vs heloc | 500-5000 (est.) | — | — | 🟢 new | Build — distinct "buy before sell" intent |
+| 3 | 1099 vs w2 | 500-5000 (est.) | — | — | 🟢 new | Build — gig/contractor tax decision |
+| 4 | 1031 exchange vs opportunity zone | 75-750 (est.) | — | — | 🟢 new | Build — capital-gains deferral gap |
+| 5 | final expense insurance vs whole life insurance | 75-750 (est.) | — | — | 🟢 new | Build — senior/elder-care niche |
+| 6 | citi custom cash vs citi double cash | 250-2500 (est.) | — | — | 🔴 duplicate (roundup/best-citi-credit-cards already covers this exact comparison + the card's 2026-05-28 new-applicant discontinuation) | Drop — duplicate |
+| 7 | assumable mortgage vs refinance | 20-200 (est.) | — | — | 🟢 new | Build — high-rate-environment relevance |
+| 8 | dscr loan vs conventional loan | 10-100 (est.) | — | — | 🟢 new | Build — investor niche, low competition expected |
+| 9 | capital one venture vs chase sapphire preferred | 250-2500 (est.) | — | — | 🟢 new | Drop — Tier 3, flagship travel-card SERP unwinnable at this DR |
+| 10 | backdoor roth vs mega backdoor roth | 10-100 (est.) | — | — | 🔴 duplicate (enriched into guides/mega-backdoor-roth-401k on 2026-08-10) | Drop — duplicate |
+| 11 | term life vs final expense insurance | 10-100 (est.) | — | — | 🔴 duplicate (same-run cannibalization with #5) | Drop — duplicate |
+| — | spousal ira vs traditional ira | — (FAQ already exists) | — | — | 🟡 partial (roundups.ts, spokes-retirement.ts) | Drop — nonsense pair (a spousal IRA is typically a traditional/Roth IRA, not an alternative to one) + already FAQ-covered |
+
+**Built (7 new pages):** dscr-loan-vs-conventional-loan, 1031-exchange-vs-opportunity-zone, bridge-loan-vs-heloc, assumable-mortgage-vs-refinance, final-expense-insurance-vs-whole-life-insurance, rmd-vs-qcd, 1099-vs-w2.
+**Enriched:** none this run (0 PARTIAL survivors reached Phase 3b).
+**Dropped (5):** citi-custom-cash-vs-citi-double-cash (duplicate), capital-one-venture-vs-chase-sapphire-preferred (unwinnable), backdoor-roth-vs-mega-backdoor-roth (duplicate), term-life-vs-final-expense-insurance (same-run cannibalization), spousal-ira-vs-traditional-ira (nonsense pair).
+**Audit fixes applied:** bridge-loan-vs-heloc title lengthened from 44 to 51 chars; assumable-mortgage-vs-refinance got FHA/VA/USDA hand-linked at their true first mention (the verdict, which the template renders before the sections).
+**Build:** green — Node 22, `npx tsc --noEmit` clean, `npm run build` 653 pages. All 7 new `/compare/<slug>/` routes confirmed present in `dist/`.

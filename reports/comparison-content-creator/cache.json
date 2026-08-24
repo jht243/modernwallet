@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-08-10",
+  "lastRun": "2026-08-24",
   "dropped": [
     {
       "slug": "trump-account-vs-coverdell-esa",
@@ -359,6 +359,36 @@
       "slug": "mega-backdoor-roth-vs-roth-conversion",
       "reason": "2026-08-10 run: zero Ahrefs data for this exact phrasing; real demand (\"mega backdoor roth vs backdoor roth\") routed to enrichment instead",
       "score": 0
+    },
+    {
+      "slug": "citi-custom-cash-vs-citi-double-cash",
+      "format": "comparison",
+      "reason": "2026-08-24 run: DUPLICATE \u2014 subsumed by the existing best-citi-credit-cards roundup, which already has a dedicated 'Why Citi Custom Cash isn't in this roundup' section + FAQ covering the exact comparison; Custom Cash also stopped accepting new applicants 2026-05-28, killing the either/or commercial intent",
+      "score": 0
+    },
+    {
+      "slug": "capital-one-venture-vs-chase-sapphire-preferred",
+      "format": "comparison",
+      "reason": "2026-08-24 run: est. 250-2500/mo but Tier 3 \u2014 flagship travel-rewards card SERP dominated by NerdWallet/Forbes Advisor/WalletHub at DR90+, unwinnable at this site's DR (same logic as the prior personal-loan-vs-credit-card / 401k-loan-vs-personal-loan drops)",
+      "score": 0.1
+    },
+    {
+      "slug": "backdoor-roth-vs-mega-backdoor-roth",
+      "format": "comparison",
+      "reason": "2026-08-24 run: DUPLICATE \u2014 already handled as an enrichment (mega-backdoor-roth-vs-backdoor-roth) inside guides/mega-backdoor-roth-401k on 2026-08-10",
+      "score": 0
+    },
+    {
+      "slug": "term-life-vs-final-expense-insurance",
+      "format": "comparison",
+      "reason": "2026-08-24 run: dropped to avoid same-run cannibalization with final-expense-insurance-vs-whole-life-insurance \u2014 final expense is a whole-life subtype, not a term-life alternative; the whole-life framing is the correct owning page",
+      "score": 0.1
+    },
+    {
+      "slug": "spousal-ira-vs-traditional-ira",
+      "format": "comparison",
+      "reason": "2026-08-24 run: dropped as a nonsense pair \u2014 a spousal IRA is typically a traditional or Roth IRA opened under the spousal-contribution rule, not an alternative account type; already adequately covered as an FAQ in roundups.ts and spokes-retirement.ts",
+      "score": 0.1
     }
   ],
   "published": [
@@ -617,6 +647,62 @@
       "optionB": "FHA Loan",
       "reason": "2026-08-10 run: Vol 150, KD 1 \u2014 rounds out govt-loan cluster (FHA-vs-VA, FHA-vs-conventional, VA-vs-conventional already live)",
       "score": 0.45
+    },
+    {
+      "slug": "dscr-loan-vs-conventional-loan",
+      "format": "comparison",
+      "optionA": "DSCR Loan",
+      "optionB": "Conventional Loan",
+      "reason": "2026-08-24 run: est. 10-100/mo (Autocomplete, Ahrefs/SEMrush units exhausted) \u2014 real-estate investor niche, fits existing DSCR guide/calculator",
+      "score": 0.55
+    },
+    {
+      "slug": "1031-exchange-vs-opportunity-zone",
+      "format": "comparison",
+      "optionA": "1031 Exchange",
+      "optionB": "Opportunity Zone",
+      "reason": "2026-08-24 run: est. 75-750/mo \u2014 capital-gains deferral decision for real-estate/large-gain sellers, no existing head-to-head coverage",
+      "score": 0.6
+    },
+    {
+      "slug": "bridge-loan-vs-heloc",
+      "format": "comparison",
+      "optionA": "Bridge Loan",
+      "optionB": "HELOC",
+      "reason": "2026-08-24 run: est. 500-5000/mo \u2014 buy-before-you-sell timing decision, distinct from existing heloc-vs-home-equity-loan/heloc-vs-personal-loan/cash-out-refinance-vs-heloc pages",
+      "score": 0.65
+    },
+    {
+      "slug": "assumable-mortgage-vs-refinance",
+      "format": "comparison",
+      "optionA": "Assumable Mortgage",
+      "optionB": "Refinance",
+      "reason": "2026-08-24 run: est. 20-200/mo \u2014 timely in a high-rate environment, rounds out the VA/FHA loan cluster",
+      "score": 0.5
+    },
+    {
+      "slug": "final-expense-insurance-vs-whole-life-insurance",
+      "format": "comparison",
+      "optionA": "Final Expense Insurance",
+      "optionB": "Whole Life Insurance",
+      "reason": "2026-08-24 run: est. 75-750/mo \u2014 senior/elder-care-audience niche, complements existing whole-life-vs-term-life and whole-life-vs-universal-life pages",
+      "score": 0.5
+    },
+    {
+      "slug": "rmd-vs-qcd",
+      "format": "comparison",
+      "optionA": "RMD",
+      "optionB": "QCD",
+      "reason": "2026-08-24 run: est. 500-5000/mo \u2014 retirement tax-mechanics gap; QCD/RMD interaction only ever discussed in passing across 3 other guides, no dedicated head-to-head",
+      "score": 0.6
+    },
+    {
+      "slug": "1099-vs-w2",
+      "format": "comparison",
+      "optionA": "1099 (Independent Contractor)",
+      "optionB": "W-2 (Employee)",
+      "reason": "2026-08-24 run: est. 500-5000/mo \u2014 gig/contractor pay-and-tax decision, fits tax-resolution vertical, only passing 1099/W-2 mentions existed (document-reconciliation context, not a classification comparison)",
+      "score": 0.55
     }
   ]
 }
