@@ -39,6 +39,10 @@ The edited working tree + per-page change manifest (files touched, sections rewr
 > **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 3 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
 
 
+> **HOW TO LOAD (MANDATORY — this is the only sanctioned way).** Run:
+> `bash .claude/tools/load-standards.sh "<routine-name>" "<this-phase>"`
+> and treat its ENTIRE output as the standard. The script prints `_content-standard.md`, `_anti-ai-language.md`, and `_experience.md` in full and appends the load receipt to `reports/standards-ledger.jsonl` in the same action — reading and proving-you-read are one step, so never open the files another way. `git add reports/standards-ledger.jsonl` with the run. If the script or any file is missing, STOP and report it.
+
 **Load `.claude/commands/_content-standard.md` and apply it IN FULL. **Start with its `## PREFLIGHT` section** — it lists the twelve failure modes that most often reach the audit, arranged by the moment they happen, with wrong/right pairs.** It is the single source of truth for the medium gate, SEO requirements and required page elements, depth floors, the quality and sourcing bar, readability, voice and register, comparison, linking, the proprietary anchor, and the neutrality rule. There is no cherry-picking and no substituting your own standard.
 
 **Also load `.claude/commands/_experience.md`.** It defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on.
