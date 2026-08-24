@@ -12,6 +12,7 @@ Use only the data sources Phase 0 found connected. For each `NEW` candidate's `p
 - **GSC MCP** (if present): `gsc-keywords` / `gsc-pages` → are we already getting **impressions** for this pair or a near variant? Latent impressions we don't yet serve = strong, cheap opportunity.
 - **SEMrush export** (if a keyword-gap CSV was found): use it for competitor-gap corroboration — pairs competitors rank for and we don't.
 - **Brand Radar** (if present): the LLM-citation angle — does comparison content already surface in AI answers for this pair? High AI-citation potential is a tie-breaker up.
+- **Keyword demand ladder (REQUIRED backup before any heuristic scoring):** if the Ahrefs MCP is absent, dry, or erroring for a candidate, get volume/KD/CPC from `scripts/lib/keyword_data.py` instead (`volumes()` -- reads `DATAFORSEO_B64`/`SEMRUSH_API_KEY`/`AHREFS_API_KEY` from the environment and resolves the best usable provider per field; see `.claude/commands/_keyword-demand-ladder.md`). Only when the ladder itself returns `source: estimate` may a candidate be scored heuristically -- measured data from ANY rung always beats internal signals.
 
 Batch calls sensibly; cap total candidates scored to a reasonable ceiling (e.g. 30) — rank by a cheap heuristic first and only pull live data for the most promising, to bound API spend further.
 
