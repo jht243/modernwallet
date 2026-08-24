@@ -8806,7 +8806,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // --- 103. bridge loan vs heloc---
   {
     slug: "bridge-loan-vs-heloc",
-    title: "Bridge Loan vs HELOC: Buying Before You Sell",
+    title: "Bridge Loan vs HELOC: Which Wins When Buying First?",
     metaDescription:
       "Bridge loan vs HELOC for buying a new home before selling your current one: rates, speed to close, fees, and which fits your timeline.",
     targetKeyword: "bridge loan vs heloc",
@@ -8918,7 +8918,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       ],
     },
     verdict:
-      "Assume the seller's loan when three things line up. The loan is FHA, VA, or USDA. Your credit clears the lender's assumption underwriting. And the rate gap between the old loan and today's market is worth the extra paperwork, generally a point and a half or more. Refinance instead when the existing loan is conventional, since most conventional loans cannot be assumed at all. Refinance too when the equity gap is too large to cover in cash, or when you need to pull cash out of the property rather than just buy it. A veteran seller who wants full VA entitlement restored should confirm the buyer is VA-eligible before agreeing to an assumption. A non-veteran buyer can still assume the loan. But the seller's entitlement stays tied to that property until the loan is paid off or refinanced.",
+      "Assume the seller's loan when three things line up. The loan is [FHA](/compare/fha-vs-conventional-loan/), [VA](/compare/va-loan-vs-conventional-loan/), or [USDA](/compare/usda-loan-vs-fha-loan/). Your credit clears the lender's assumption underwriting. And the rate gap between the old loan and today's market is worth the extra paperwork, generally a point and a half or more. Refinance instead when the existing loan is conventional, since most conventional loans cannot be assumed at all. Refinance too when the equity gap is too large to cover in cash, or when you need to pull cash out of the property rather than just buy it. A veteran seller who wants full VA entitlement restored should confirm the buyer is VA-eligible before agreeing to an assumption. A non-veteran buyer can still assume the loan. But the seller's entitlement stays tied to that property until the loan is paid off or refinanced.",
     sections: [
       {
         heading: "How Assumable Mortgage Assumption Works",
