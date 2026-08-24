@@ -9237,6 +9237,131 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["tax-attorney-vs-cpa-vs-enrolled-agent", "sep-ira-vs-solo-401k"],
   },
+  // ─── Ordinary Income vs Capital Gains Tax ───────────────────────────────
+  {
+    slug: "ordinary-income-vs-capital-gains-tax",
+    title: "Ordinary Income vs Capital Gains Tax Rates",
+    metaDescription:
+      "See exactly how ordinary income and capital gains tax differ for 2026, with real bracket math on a $10,000 wages vs. gains example and ways to cut what you owe.",
+    targetKeyword: "ordinary income vs capital gains tax",
+    optionA: "Ordinary Income",
+    optionB: "Capital Gains Tax",
+    h1: "Ordinary Income vs Capital Gains Tax",
+    intro:
+      "Ordinary income is taxed at your regular federal rate, up to 37% in 2026. A long-term capital gain on that same money is taxed separately, at 0%, 15%, or 20% instead.\n\nIt's the split our calculators are built to walk through anytime a reader is deciding when to sell an investment or how to take a bonus. Which bucket a dollar lands in can matter more than how much of it you earn.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What generates it", a: "Wages, salary, tips, self-employment income, interest, and gains on assets held 1 year or less", b: "Profit from selling a capital asset, like stock or real estate, held more than 1 year" },
+        { dimension: "2026 federal tax rates", a: "7 brackets from 10% to 37%, based on total taxable income", b: "Just 3 rates: 0%, 15%, or 20%, based on total taxable income" },
+        { dimension: "Holding period required", a: "None. The length of time you own something never matters", b: "More than 1 year (366 days or more) to qualify for the lower rate" },
+        { dimension: "How it's reported", a: "Form W-2 or Schedule C, plus Schedule 1 for interest and other income", b: "Schedule D and Form 8949" },
+        { dimension: "Extra 3.8% investment-income surtax", a: "Never applies to wages directly. Can apply to interest and non-qualified dividends", b: "Applies once income tops $200,000 single / $250,000 married filing jointly" },
+        { dimension: "Inside a traditional 401(k) or IRA", a: "Withdrawals are always taxed as ordinary income", b: "The lower rate never survives. Withdrawals come out taxed as ordinary income too" },
+        { dimension: "Losses against the other type", a: "Capital losses offset up to $3,000 of ordinary income per year", b: "Losses offset capital gains dollar for dollar first, then up to $3,000 of ordinary income" },
+      ],
+    },
+    verdict:
+      "Lean toward treating a gain as long-term whenever you have a real choice about when to sell. Then let account type do the rest: pre-tax accounts for assets that throw off ordinary income, taxable accounts for long-term holdings and qualified dividends. That combination beats chasing either income type in isolation for most investors with more than a token amount at stake.\n\nSkip the strategy if you're a short-term trader who can't control holding periods, or if your investing already happens entirely inside a 401(k) or IRA. It's also not worth the effort when the amount involved is too small to justify the planning. Run your own numbers through ModernWallet's [investing tools](/investing/) before you decide when to sell.",
+    sections: [
+      {
+        heading: "What Counts as Ordinary Income",
+        content:
+          "Ordinary income is any money the Internal Revenue Service (IRS) taxes at your regular marginal rate, the same rate that applies to your paycheck. It covers wages, salary, tips, bonuses, and net income from a small business or freelance work.\n\nIt also covers interest from a savings account or a CD, non-qualified dividends, and any gain on an asset you held for one year or less. Rent from a property you manage yourself falls into this bucket too, though depreciation can shrink the taxable amount.\n\nWithdrawals from a traditional 401(k) or a traditional individual retirement account (IRA) count as ordinary income as well, no matter what the money was invested in. The [IRS](https://www.irs.gov/publications/p525) lists the full range of taxable income types in Publication 525.",
+      },
+      {
+        heading: "What Counts as a Capital Gain",
+        content:
+          "A capital gain is the profit you make when you sell a capital asset for more than you paid for it. Stocks, bonds, mutual fund shares, real estate, and even a business you built and later sold all qualify as capital assets.\n\nThe gain only becomes taxable once you actually sell, a rule called realization. You can watch a stock double in value and owe nothing in tax as long as you keep holding it, per the [IRS](https://www.irs.gov/taxtopics/tc409) guide to capital gains and losses.\n\nSell it, and the profit gets classified one of two ways based entirely on how long you owned the asset first. That single detail, the holding period, decides whether the gain gets taxed like a paycheck or at a separate, lower rate built for long-term investors.",
+      },
+      {
+        heading: "Short-Term vs Long-Term Capital Gains",
+        content:
+          "Hold an asset for one year or less before selling, and the profit counts as a short-term capital gain, taxed at the same rate as your wages. Hold it for more than one year, and the profit becomes a long-term capital gain, taxed at the separate 0%, 15%, or 20% rate instead.\n\nThe clock starts the day after you buy the asset and ends the day you sell it. If you bought on March 1, you have to wait until March 2 of the following year to sell and still qualify for the long-term rate. Selling on March 1 itself is one day too early.\n\nThat single extra day carries real money. A single filer in the 32% bracket sells a stock position with a $15,000 gain one day short of the one-year mark. The IRS taxes that gain as ordinary income, for a $4,800 federal bill.\n\nWait until day 366, and the same $15,000 gain drops into the 15% long-term rate for a $2,250 bill. That's a savings of $2,550 for changing nothing but the sale date.",
+      },
+      {
+        heading: "Ordinary Income vs Capital Gains Tax Rates for 2026",
+        content:
+          "For 2026, ordinary income is taxed across seven brackets that run from 10% to 37%, and a long-term capital gain uses just three rates instead: 0%, 15%, or 20%. Both scales run off your total taxable income, but the IRS fills the ordinary brackets first and stacks any capital gain on top of that. That means wages can push a gain into a higher capital-gains bracket, even though the reverse never happens.\n\nTake a single filer with $90,000 of taxable income in the 22% ordinary bracket. An extra $10,000 in wages stays inside that same bracket, so the IRS taxes all of it at 22%, a $2,200 bill.\n\nThe same $10,000 arriving as a long-term capital gain stacks on top of that $90,000 instead. It lands in the 15% bracket, since the wages already used up the $49,450 of 0% room, so the tax comes to $1,500.\n\nThat's a $700 difference on the exact same $10,000, at the exact same income level, with nothing else about the filer changed. The gap widens further for anyone in a higher ordinary bracket, since the ordinary rate keeps climbing past 22% while the capital-gains rate tops out at 20%.\n\nHigh earners face one more wrinkle: a surtax that applies to investment income like this capital gain, but never to wages directly. The next section covers exactly when it kicks in.",
+      },
+      {
+        heading: "Where Qualified Dividends and the Net Investment Income Tax Fit In",
+        content:
+          "Qualified dividends get taxed at the same 0%, 15%, or 20% rate as a long-term capital gain, not at your ordinary rate. That preferential rate applies as long as you held the stock for more than 60 days during the 121-day period surrounding the dividend's ex-dividend date.\n\nA dividend that fails that test is called a non-qualified dividend. It gets taxed at your regular marginal rate instead, per the [IRS](https://www.irs.gov/taxtopics/tc404) guide to dividends and other corporate distributions.\n\nAbove certain income levels, both types of investment income can trigger the Net Investment Income Tax (NIIT), an extra 3.8% surtax on top of whatever rate already applies. It kicks in once your modified adjusted gross income (MAGI) passes $200,000 for a single filer or $250,000 for a married couple filing jointly. The [IRS](https://www.irs.gov/individuals/net-investment-income-tax) has kept those two thresholds fixed since 2013, unlike most tax figures, rather than adjusting them yearly for inflation.\n\nWages never trigger the NIIT directly, since it only applies to net investment income: interest, dividends, capital gains, and rental income. A high earner instead pays a parallel 0.9% [Additional Medicare Tax](https://www.irs.gov/taxtopics/tc560) on wages above those same $200,000 and $250,000 thresholds. Both income types face an extra surtax past that line, just under different names.\n\nAdd the NIIT to the earlier example, and a high earner's long-term capital gain can face 18.8% instead of 15%. Equivalent wages, meanwhile, face their ordinary bracket rate plus the 0.9% Medicare add-on. The two systems run more parallel than most people realize, but the capital-gains side still comes out lower in nearly every real bracket comparison.",
+      },
+      {
+        heading: "How a 401(k), IRA, or Roth Account Changes the Math",
+        content:
+          "A traditional 401(k) or traditional IRA erases the ordinary-versus-capital-gains distinction entirely, but not in your favor. Every dollar you pull out in retirement is taxed as ordinary income. That's true even if the account grew entirely from stock gains that would have qualified for the lower long-term rate in a regular brokerage account.\n\nA Roth IRA erases the same distinction the opposite way. Once you're 59 and a half, and the account has been open five years, every qualified withdrawal comes out completely tax-free. It no longer matters whether the growth inside came from contributions, dividends, or capital gains.\n\nBecause of that, where you hold an asset can matter as much as what the asset is. Investments that throw off ordinary-taxed income, like bonds, real estate investment trusts (REITs), and actively traded funds, tend to do less damage inside a 401(k) or IRA.\n\nStocks and funds you plan to hold for years already earn the lower capital-gains rate in a taxable account. They often keep more of that edge by staying in a regular [brokerage account](/compare/brokerage-vs-ira/) instead.\n\nOne more wrinkle favors the taxable side. Assets you still own at death generally get a stepped-up cost basis, wiping out the capital gain for your heirs entirely.\n\nA traditional 401(k) or IRA gets no such reset, so heirs still owe ordinary income tax on every dollar they withdraw. Our [401(k) vs Roth IRA](/compare/401k-vs-roth-ira/) and [Roth IRA vs Traditional IRA](/compare/roth-ira-vs-traditional-ira/) comparisons cover the contribution-side tradeoffs in more depth.",
+      },
+      {
+        heading: "Ways to Reduce the Tax You Owe on Either Type of Income",
+        content:
+          "Most of the tax you owe on either income type is controllable, through timing and account choice rather than the tax code itself.\n\nHold winning positions past the one-year mark before selling. As the math above showed, moving a gain from short-term to long-term treatment alone can cut the tax bill by a third or more. Nothing about the investment itself has to change.\n\nHarvest losses against gains before December 31. Selling a losing position offsets a winning one dollar for dollar. Once losses exceed gains, up to $3,000 of the excess offsets ordinary income each year, with anything left over carried forward to future years.\n\nSell into the 0% long-term rate during a low-income year. A gap year between jobs, a year funded mostly by savings, or the first year of retirement before Social Security starts can all create room to use it. That room sits under the $49,450 single or $98,900 married threshold, enough to realize a gain completely tax-free.\n\nGive appreciated stock directly to a charity instead of cash. You skip the capital-gains tax on the appreciation entirely, and if you itemize, you can still deduct the stock's full market value. That combination usually beats selling the stock and donating the after-tax proceeds instead.\n\nPut ordinary-income-generating assets inside a 401(k) or IRA, and keep long-term holdings in a taxable account, following the asset-location split covered above. An investor selling a rental property can also look at a [1031 exchange or opportunity zone fund](/compare/1031-exchange-vs-opportunity-zone/) to defer the gain instead of realizing it right away.",
+      },
+      {
+        heading: "Who This Approach Does Not Fit",
+        content:
+          "Active planning around this split fits an investor with real control over the timing of a sale and a gain worth the effort. It also assumes the investment sits in a taxable account, not a retirement account.\n\nIt's not worth much attention if most of your investing already happens inside a 401(k) or IRA. None of these rates apply until you withdraw the money, and the withdrawal counts as ordinary income either way.\n\nIt's also not worth chasing over a small gain. Saving a few percentage points on a $500 position is a few dollars, not an outcome worth planning around.\n\nSkip it if timing a sale around tax rates means holding an investment you no longer believe in, or missing money you genuinely need now. A stock you'd sell today for other reasons rarely becomes worth holding for a few more weeks just to save on taxes.\n\nIt also doesn't apply to day traders or anyone running a pattern of frequent, short-term trades. Every gain in that pattern is short-term by definition, so there's no holding-period lever to pull, and loss harvesting and account location are the only real levers left.",
+      },
+      {
+        heading: "What Would Change This Answer",
+        content:
+          "Two changes would shift the guidance above. If Congress ever taxed long-term capital gains at the same rate as ordinary income, the entire incentive to hold past one year would disappear. Only the NIIT and loss-harvesting strategies above would still matter.\n\nThe other is a bracket move on your end. Someone who expects to retire into the 0% long-term rate, with little other income, gets far more value from holding appreciated stock in a taxable account.\n\nSelling it slowly in retirement usually beats selling now to pay off debt or fund a big purchase. Model your own numbers with ModernWallet's [capital gains tax calculator](/real-estate/capital-gains-calculator/) before you decide when to sell.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the main difference between ordinary income and capital gains tax?",
+        answer:
+          "Ordinary income, like wages and interest, is taxed at your regular marginal rate, which runs from 10% to 37% in 2026. A capital gain on an asset held more than one year gets taxed separately, at a flat 0%, 15%, or 20%. That's usually the lower of the two rates for the same amount of money.",
+      },
+      {
+        question: "Are dividends taxed as ordinary income or capital gains?",
+        answer:
+          "It depends on the dividend. A qualified dividend, paid on stock you've held for more than 60 days around the ex-dividend date, gets the same 0%, 15%, or 20% rate as a long-term capital gain. A non-qualified dividend gets taxed at your regular ordinary rate instead.",
+      },
+      {
+        question: "What are the 2026 long-term capital gains tax brackets?",
+        answer:
+          "For 2026, the 0% rate applies up to $49,450 of taxable income for single filers and $98,900 for married couples filing jointly. The 15% rate covers the range above that up to $545,500 single or $613,700 married, and the 20% rate applies above those thresholds, per the [IRS](https://www.irs.gov/taxtopics/tc409).",
+      },
+      {
+        question: "Do capital losses offset ordinary income?",
+        answer:
+          "Yes, but only up to $3,000 a year, or $1,500 if married filing separately. A capital loss first offsets any capital gains you realized that year, dollar for dollar. Only the leftover amount can reduce ordinary income, and anything beyond $3,000 carries forward to future tax years.",
+      },
+      {
+        question: "Does selling exactly one year after buying count as long-term?",
+        answer:
+          "No, the IRS requires you to hold the asset for more than one year, not exactly one year. If you bought on March 1, you must wait until March 2 of the next year to sell and qualify for the long-term rate. Selling on March 1 itself is one day too early and counts as short-term.",
+      },
+      {
+        question: "How does the Net Investment Income Tax affect capital gains?",
+        answer:
+          "The NIIT adds an extra 3.8% on top of your regular capital-gains rate once your MAGI passes $200,000 for a single filer or $250,000 for a married couple filing jointly. A long-term gain that would otherwise face a 15% rate effectively costs 18.8% once the NIIT applies, though it never applies to wages directly.",
+      },
+      {
+        question: "What's the simplest way to see my own capital gains tax bill?",
+        answer:
+          "Plug your purchase price, sale price, and holding period into ModernWallet's [capital gains tax calculator](/real-estate/capital-gains-calculator/) to see the exact rate and dollar amount before you sell. Run the numbers before the trade, not after, so you can actually choose between selling now and waiting for the long-term rate.",
+      },
+    ],
+    sources: [
+      { label: "IRS: Topic No. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS: Publication 525, Taxable and Nontaxable Income", url: "https://www.irs.gov/publications/p525" },
+      { label: "IRS: Topic No. 404, Dividends and Other Corporate Distributions", url: "https://www.irs.gov/taxtopics/tc404" },
+      { label: "IRS: Net Investment Income Tax", url: "https://www.irs.gov/individuals/net-investment-income-tax" },
+      { label: "IRS: Topic No. 560, Additional Medicare Tax", url: "https://www.irs.gov/taxtopics/tc560" },
+      { label: "IRS: Tax Inflation Adjustments for Tax Year 2026", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "brokerage-vs-ira", "reit-vs-rental-property", "1031-exchange-vs-opportunity-zone"],
+    calculatorLinks: [
+      { label: "Capital Gains Tax Calculator", href: "/real-estate/capital-gains-calculator/" },
+      { label: "Investment Calculator", href: "/investing/" },
+      { label: "Retirement Calculator", href: "/retirement/" },
+      { label: "Net Worth Calculator", href: "/net-worth/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
