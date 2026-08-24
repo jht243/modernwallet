@@ -41,7 +41,7 @@ The original skill stops at Phase 0 for the user to approve the chart. The auto 
 |---|---|---|
 | 0 actionable rows (everything was duplicate / already-covered) | skip remaining phases | `no-changes` |
 | many actionable rows | process **ALL** of them — no cap | (continue) |
-| All rows have `no data` from SEMrush (heuristic-only mode) AND the project has Ahrefs MCP available | re-score the survivors against Ahrefs MCP `keywords-explorer-overview` instead of skipping | (continue, note in details) |
+| All rows have `no data` from SEMrush (heuristic-only mode) | re-score the survivors through the keyword demand ladder -- `scripts/lib/keyword_data.py` `volumes()` (resolves the best usable provider per field incl. DataForSEO; see `.claude/commands/_keyword-demand-ladder.md`) -- falling back to Ahrefs MCP `keywords-explorer-overview` only if the ladder helper is missing. Rows stay `no data` only when every rung returns `source: estimate` | (continue, note in details) |
 | Otherwise | auto-approve, continue to Phase 1 | (continue) |
 
 **No volume cap** — act on every actionable row the chart produced.
