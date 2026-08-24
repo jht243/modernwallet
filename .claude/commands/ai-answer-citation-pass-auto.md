@@ -8,16 +8,17 @@ argument-hint: "(no arguments — fully autonomous)"
 **‼️ UNBREAKABLE INVARIANT — writer output is never final without its audit.** No phase that writes or rewrites reader-facing text may be marked complete, and nothing it produced may be published, served, committed as final, screenshotted, or shown to the user, until the adversarial audit phase has run on that exact output and passed. A rewrite (including one that fixes an audit finding) voids any prior pass and re-triggers the audit. This holds in autonomous runs, manual runs, tests, demos, and single-page one-offs alike. See `.claude/commands/_content-standard.md` (PHASE 4 IS NOT OPTIONAL).
 
 
-> **‼️ PIN THE DEPLOY BASE FIRST — before Phase 0 and before ANY commit.** Run this once, now:
+> **‼️ PIN THE DEPLOY BASE FIRST — before Phase 0 and before ANY commit.** Only if this repo HAS the helper:
 > ```
-> .claude/scripts/deploy-run-to-main.sh mark
+> [ -f .claude/scripts/deploy-run-to-main.sh ] && .claude/scripts/deploy-run-to-main.sh mark
 > ```
-> It records the branch tip you inherited so that, at deploy time, ONLY the commits THIS run adds are
-> replayed onto `main` — even if the branch already carried another routine's commits (a shared/stale
-> `worktree-agent-*` branch). The deploy step below calls `.claude/scripts/deploy-run-to-main.sh push`,
-> which replays `RUN_BASE..HEAD` onto the latest `origin/main` and, on a genuine conflict, aborts (never
-> force-pushes `main`) so you fall back to pushing the ephemeral branch + emailing a manual-merge note.
-> Skipping `mark` reintroduces the 2026-07-20 comparison-content-auto failure (30+ spurious conflicts).
+> Where the helper exists it records the branch tip you inherited so that, at deploy time, ONLY the commits
+> THIS run adds are replayed onto `main` (the deploy step below calls `.claude/scripts/deploy-run-to-main.sh
+> push`, which replays `RUN_BASE..HEAD` onto latest `origin/main` and aborts on a genuine conflict — never
+> force-pushes). **If this repo has NO `deploy-run-to-main.sh`** (some Astro/Render auto-deploy sites don't),
+> SKIP this pin — at deploy time you publish with a plain `git fetch origin main && git rebase origin/main &&
+> git push origin HEAD:main` instead (retry 3x, never force-push, else push the ephemeral branch + a
+> manual-merge note). Either way, never force-push `main`.
 > **‼️ RUN-WIDE RULE — READ FIRST.** Fully autonomous, NO human checkpoint anywhere. Never print "Want me to proceed?" or any question at any phase boundary. If a hard blocker fires, you **still finish** by sending an email report and exiting 0. The cloud routine has no human watching; any blocking question silently kills it.
 
 > **‼️ NEVER TOUCH `.claude/` AT RUNTIME — not create, edit, delete, `mkdir`, `rm`, `git checkout`, or `mv`.** ANY write/delete under `.claude/` (tools, commands, scripts, settings, or a `__pycache__` inside them) triggers the harness's sensitive-file permission prompt, which PAUSES the unattended run and kills the automation. Rules:

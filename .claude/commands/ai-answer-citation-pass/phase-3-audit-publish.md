@@ -31,7 +31,7 @@ git diff --cached HEAD --numstat   # NO deletions you didn't make
 ```
 Any staged deletion of an untouched file = stale base — fix before committing. Single commit:
 `ai-answer-citation-pass <date>: S answer-block rewrites across P STEAL pages, defend-ledger refreshed (D defended)`
-Deploy per the launcher's Git model: `.claude/scripts/deploy-run-to-main.sh push` (main is the authorized nightly deploy path; 3 rebased retries, then push the ephemeral branch + email a manual-merge note; never force-push).
+Deploy: **if** `.claude/scripts/deploy-run-to-main.sh` exists, `.claude/scripts/deploy-run-to-main.sh push`; **otherwise** `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Main is the authorized deploy path; 3 rebased retries, then push the ephemeral branch + email a manual-merge note; never force-push.
 
 ## 5. Verify 200s + IndexNow
 After the deploy settles, `curl -s -o /dev/null -w "%{http_code}"` every treated URL — an edited page that no longer 200s is a **rollback** (revert that page, re-push), not a skip. Then submit changed URLs to IndexNow (fallback-key block in the launcher). Non-200 on something this run didn't touch → digest + skip from IndexNow, don't roll back the run.

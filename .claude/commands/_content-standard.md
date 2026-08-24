@@ -100,7 +100,7 @@ A prior audit pass covers only the exact bytes it reviewed. The moment you edit,
 
 **Before you hand off**
 - Re-read once at reading speed. Any sentence you must re-read fails, however short.
-- Word-count your sentences. No 5 in a row within 3 words of each other; no 10-sentence run in one length band.
+- Word-count your sentences. No 5 in a row within 3 words of each other; no 10-sentence run in one length band. Do not invent a short stub to pass the mix.
 - Count body words against the floor for the `page type:` you recorded.
 - Then run Phase 4. A rewrite voids any earlier pass.
 
@@ -213,9 +213,9 @@ Before writing, research the topic using search tools. Gather current statistics
 ## STYLE
 
 - Use simple, everyday language at a 7th–8th grade reading level.
-- Keep sentences short enough to parse on the first read. One idea per sentence. A clear sentence a person would say aloud can run past 20 words. Do not split a natural sentence just to hit a count. Do not write a 30-word stack.
+- Keep sentences easy enough to parse on the first read. One idea per sentence. A clear sentence a person would say aloud can run 20 to 28 words. Do not split a natural sentence just to hit a count. Do not write a 30-word stack.
 - Use active voice.
-- Write one main idea per sentence.
+- Write one main idea per sentence. One idea may take 22 words. That is still one idea.
 - Keep paragraphs to 3 sentences max.
 - **Lists for parallel items, prose for a story.** If you announce three or more items of the same job (steps, checks, tests, criteria), put them in a list. Numbered when sequence or a count matters; bullets when it does not. A one-sentence lead-in ("Check five things.") may stay prose. A closer that is a different job stays a paragraph after the list. Two related sentences, or a story that uses "first … then …", stay prose. Do not write "First, … Second, … Third, …" as body paragraphs when the items are parallel, and do not turn a pair into a list to look structured. If this project's page record has a list field (`bullets` on a section), put the items there. Do not fake a list inside body `content`.
 - Add subheadings every 200–300 words.
@@ -224,10 +224,10 @@ Before writing, research the topic using search tools. Gather current statistics
 - Use transition words naturally.
 - Keep the tone helpful, clear, and professional.
 
-**Vary sentence length on purpose.** Uniform sentence length is the single most reliable signal that text was machine-produced, and it makes a page monotonous to read even when every sentence is correct. Sugarman edits specifically for rhythm; do the same. Working bands: **short (1 to 8 words), medium (9 to 14), long (15 or more)**. Two concrete rules:
-- Any run of 10 consecutive sentences uses at least **two** bands, and at least one short sentence.
+**Vary sentence length on purpose.** Uniform sentence length is the single most reliable signal that text was machine-produced, and it makes a page monotonous to read even when every sentence is correct. Sugarman edits specifically for rhythm; do the same. Working bands: **short (1 to 8 words), medium (9 to 14), long (15 or more)**. A long spoken sentence is often 20 to 28 words. That is allowed. Two concrete rules:
+- Any run of 10 consecutive sentences uses at least **two** bands. It does **not** have to include a 1-to-8 word sentence.
 - Never write **5 consecutive sentences** whose lengths sit within 3 words of each other.
-Short sentences carry emphasis. Spend them on the point that matters, not evenly.
+Short sentences carry emphasis. Spend them on the actual point, when you have one. Do not invent a short sentence to hit the mix. Do not split a natural sentence into a stub and a follow-up. A page of clear 12-to-24 word sentences a person would say is better than a page of 5-word stubs manufactured for the count.
 
 **The opening sentence earns the second one.** The first sentence of the page exists to get the next one read. Keep it short and easy: no multisyllabic throat-clearing, no clause stack. Sugarman's slippery-slide test applies down the whole page. Each sentence should make stopping feel like an interruption.
 
@@ -296,7 +296,7 @@ Not a rewrite pass. A voice instruction buried in a long prompt loses to word co
 
 ## EXAMPLES
 
-These passages teach English: short, specific, human. Convincing without hype. Warm without jokes-as-filler. They are not article templates and not a license to say "I". Copy the *move* (a picture, a number, a clock). Do not swap this page's nouns into their sentences, and do not import their nouns onto this page. "You" in 1 to 3 is the reader, or an "if you" role. It is not an ownership claim about this page's subject. Example 4 is the reporter register: third person, news first, no "we". Copy that register, not the news story. VOICE, STYLE, and `_anti-ai-language.md` still govern the page you ship. Only sentences that already clear those rules are quoted.
+These passages teach English: specific, human. Convincing without hype. Warm without jokes-as-filler. Some sentences are short. Some are one spoken thought that runs past 20 words. They are not article templates and not a license to say "I". Copy the *move* (a picture, a number, a clock). Do not swap this page's nouns into their sentences, and do not import their nouns onto this page. "You" in 1 to 3 and 5 is the reader, or an "if you" role. It is not an ownership claim about this page's subject. Example 4 is the reporter register: third person, news first, no "we". Copy that register, not the news story. Example 5 is a long spoken sentence that still reads once. VOICE, STYLE, and `_anti-ai-language.md` still govern the page you ship. Only sentences that already clear those rules are quoted.
 
 ### 1. Derek Sivers on CD Baby (story with numbers)
 
@@ -349,6 +349,16 @@ Sentence 1 is what happened. Third person. A date or a number if you have one. N
 > Benefit payments originally due on Monday 31 August 2026 will be paid early on Friday 28 August 2026.
 
 The move: who, what, when. When the row is reporter, write like a notice. Do not wrap it in "we". Do not import this benefits story onto another page.
+
+### 5. A long sentence that still reads once (CFPB on payday loans)
+
+One thought, said in one breath, with a number in it. Not a 5-word stub and then the fact. Source: [consumerfinance.gov](https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/).
+
+> A typical two-week payday loan with a $15 per $100 fee equates to an annual percentage rate (APR) of almost 400 percent. By comparison, APRs on credit cards can range from about 12 percent to about 30 percent.
+>
+> If you don't repay the loan on or before the due date, the lender can cash the check or electronically withdraw money from your account.
+
+The move: 22 words, then 16, then 25. Each is one idea a person would say. Do not split any of them into a stub. Do not import this payday-loan story onto another page.
 
 ---
 
@@ -428,7 +438,7 @@ Apply these gates in addition to the `## AUDITOR` section of `_anti-ai-language.
 - **GATE — Links.** Run this as an explicit pass, not an impression. Extract every proper noun on the page that names an organisation — vendors, competitors, cited sources, aggregator and comparison sites, publications, research outfits, standards bodies, regulators — and for each, find its FIRST occurrence. That occurrence must be either a markdown link to the organisation's own site, or a bare name covered by the project's auto-link registry. Anything else → FAIL, note `unlinked-company: "[name]"`. Exempt from this gate: `metaTitle` and `metaDescription`, which are plain-text SEO fields where a markdown link would render as literal brackets in the search result. Name companies freely there; the linking obligation attaches to the on-page mention. Also exempt: text that is ALREADY a link. A company name used as the label of an internal `relatedLinks` entry, a nav item, or a breadcrumb is a link by construction and needs no second one. The gate covers prose, headings, FAQ answers, table cells, and CTA copy. Cited sources are the most commonly missed case: naming an aggregator as the origin of a figure and not linking it fails exactly like an unlinked vendor. The fix is additive: link the first occurrence, or register the entity. This is a hard fail, never an advisory note.
 - **GATE — Naming and directives.** A generic stand-in ("the vendor", "the platform", "this provider", "the company", "the tool") on a page that names its subject → FAIL, note `coy-abstraction: "[text]"`. A sentence telling the reader to verify, confirm, or check something with no link to the exact page that answers it → FAIL, note `unlinked-directive: "[text]"`. A directive linked only to a vendor homepage when a specific sub-page answers it → FAIL. Scan body prose, FAQ answers, CTA copy, and every heading field.
 - **GATE — Medium and row records.** Each row must carry all three records: `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>`. Any one missing → FAIL. An image or video asset promised → FAIL.
-- **GATE — Sentence rhythm.** Measure, do not eyeball. Extract the body prose, split into sentences, and word-count each. FAIL if any run of 10 consecutive sentences uses only one length band (short 1-8 / medium 9-14 / long 15+), or if 5 or more consecutive sentences fall within 3 words of each other. Report as `monotone-rhythm: sentences N-M, lengths [..]`. Also report the overall distribution across bands so run-wide monotony is visible. The fix varies real sentences; never pad, truncate, or split a clear spoken sentence to hit a count.
+- **GATE — Sentence rhythm.** Measure, do not eyeball. Extract the body prose, split into sentences, and word-count each. FAIL if any run of 10 consecutive sentences uses only one length band (short 1-8 / medium 9-14 / long 15+), or if 5 or more consecutive sentences fall within 3 words of each other. Report as `monotone-rhythm: sentences N-M, lengths [..]`. Also report the overall distribution across bands so run-wide monotony is visible. The fix varies real sentences; never pad, truncate, or split a clear spoken sentence to hit a count. Do **not** fail a page for lacking a 1-to-8 word sentence. Do **not** fail a clear spoken sentence of 20 to 28 words.
 - **GATE — Bare feature with no consequence.** For each named feature, capability, spec, or product attribute, confirm the same or the next sentence states what it does for the reader. A capability list where the reader must infer the value → FAIL, note `bare-feature: "[text]"`. The fix adds the concrete consequence, not an adjective.
 - **GATE — Opening sentence.** The page's first body sentence (the answer on operator pages, the news on reporter pages) must be short and easy enough that reading the next sentence is automatic. FAIL a page whose opener is a clause stack, opens on throat-clearing, or needs a second read. Note `weak-opener: "[text]"`. Do not fail a clear spoken sentence for sitting a few words over 20. Order is GATE Tee-up. Section openers are the AEO check, not this one.
 - **GATE — Depth.** Deterministic, and no reviewer opinion overrides it. Run it as the FIRST action of the audit and again as the last. Applies to `article` rows only; spec-only rows are exempt, since their deliverable is a spec, not prose.
