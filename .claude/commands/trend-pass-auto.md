@@ -15,7 +15,7 @@ argument-hint: "(no arguments — fully autonomous)"
 3. **GSC credentials** present (`$GOOGLE_REPORTING_SA_JSON` / SA file). Missing → email failure.
 4. **Ledgers exist** (`reports/trend-pass/trends.md` + `ledger.md`). Missing → email failure.
 5. **Resend secrets** best-effort: present → email; absent → do the work, print report, skip email only.
-6. **SEMrush key** best-effort (NOT a gate): `$SEMRUSH_API_KEY` (from `~/.claude/secrets.env`). Absent/dry → Phase 3 demotes a rung on the demand ladder (SEMRUSH → Ahrefs → public-source estimate) rather than skipping; autocomplete runs regardless. Note the rung in the digest (`Keyword data: ahrefs (SEMRUSH units exhausted)`). Never block the run on this. See `.claude/commands/_keyword-demand-ladder.md`.
+6. **SEMrush key** best-effort (NOT a gate): `$SEMRUSH_API_KEY` (from `~/.claude/secrets.env`). Absent/dry → Phase 3 demotes a rung on the demand ladder (the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate) rather than skipping; autocomplete runs regardless. Note the rung in the digest (`Keyword data: ahrefs (SEMRUSH units exhausted)`). Never block the run on this. See `.claude/commands/_keyword-demand-ladder.md`.
 
 ## Site facts (discover in this repo)
 - BASE_URL / GSC property: use the `--base-url` given in the trigger; property is `sc-domain:<host>`.

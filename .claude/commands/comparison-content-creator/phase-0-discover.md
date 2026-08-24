@@ -31,10 +31,11 @@ Auto-discover every project fact by inspecting the repo. **Hardcode nothing**; p
   - **GSC MCP** (gsc-keywords, gsc-pages).
   - **SEMrush export** — look for a keyword-gap CSV at `reports/comparison-content-creator/semrush-gap.csv` (or ask the user for a path). SEMrush is a manual export, not an MCP.
   - **Brand Radar** (brand-radar-* tools) for the LLM-citation angle.
+  - **Keyword demand ladder (ALWAYS available -- treat as a connected source):** `scripts/lib/keyword_data.py` resolves the best usable provider per field from environment keys (`DATAFORSEO_B64` / `SEMRUSH_API_KEY` / `AHREFS_API_KEY`) and always adds live Google Autocomplete. Record `keyword_data.provider_status()` here. See `.claude/commands/_keyword-demand-ladder.md`.
 
 ## Hard-blocker checks (STOP only on these)
 - **No comparison/content system found** → STOP; report what you searched (data dirs, content dirs, sitemaps) and ask where comparison content should live.
-- **No SEO data source connected** AND the user did not pass `--heuristic` → STOP; tell them to connect Ahrefs/GSC or drop a SEMrush export, or re-run with `--heuristic` to score on internal signals only.
+- **No SEO data source connected** -> this is NOT a blocker on its own. The keyword demand ladder is always available, so continue and let Phase 2 score through it. STOP only if `keyword_data.provider_status()` shows every rung unusable AND the user did not pass `--heuristic`; then say which rungs failed and why.
 - **Working tree not safe to publish onto** (`git status` shows unrelated uncommitted changes) → STOP; ask the user to stash/commit first.
 
 ## Output

@@ -16,7 +16,7 @@ This command runs end-to-end from a competitor keyword-gap analysis. This file i
 Run Step 1 UNLESS one of these is true:
 - The user passed a chart path as an argument → skip building, use that chart.
 - A chart for today already exists at `reports/keyword-pass/<TODAY>.md` → skip building, use it (do not overwrite).
-- No chart exists → build one through the keyword demand ladder (`.claude/commands/_keyword-demand-ladder.md`): SEMRUSH → Ahrefs → public-source estimate. Do **not** stop for a missing/dry `SEMRUSH_API_KEY`; demote a rung, label estimated rows, and say which rung ran. (Do not invent a chart.)
+- No chart exists → build one through the keyword demand ladder (`.claude/commands/_keyword-demand-ladder.md`): the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate. Do **not** stop for a missing/dry `SEMRUSH_API_KEY`; demote a rung, label estimated rows, and say which rung ran. (Do not invent a chart.)
 
 Once the chart file exists, continue to Phase 0, which loads it, discovers project facts, and presents the manifest gate. **Do not skip ahead to any edit phase until the chart is built/loaded and the manifest is approved.**
 
