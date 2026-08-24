@@ -38,4 +38,12 @@ A page with any/all of these notes and no hard-fail issues still passes audit.
 ## ▶ WHEN THIS PHASE PASSES — AUTO-CONTINUE. DO NOT ASK THE USER.
 The moment the audit PASSES, immediately begin Phase 6 in the SAME turn. Do NOT stop or ask. The only human stops are Stop 1 (Phase 0 manifest) and Stop 2 (Phase 8 summary).
 
+## Content standard — audit gates
 
+**Load `.claude/commands/_content-standard.md` and apply its `## AUDITOR` section in full.** It is the single source of truth for the content gates: register and voice, tee-up, experience truth, required page elements, byline-in-body, the proprietary anchor, neutrality, disclaimer placement, depth floors, first-mention links, and the row records.
+
+**Also load `.claude/commands/_experience.md`** — every first-person experience claim on a page must be traceable to it; anything it does not license is an invented claim and fails.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
+
+If any of those files is missing, FAIL the run and report it — never substitute your own gates.

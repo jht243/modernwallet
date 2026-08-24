@@ -75,4 +75,12 @@ On any failure, hand specific notes back to the writer logic and re-run — **Ph
 - **Grounded lineage:** the page never claims a version, release order, or predecessor relationship that cannot be traced to a real source. An invented lineage or version number is a **HARD FAIL**.
 - **Reversed-order FAQ** (`{prior} vs {new}`) present; no thin alias-duplicate page for the same matchup.
 
+## Content standard — audit gates
 
+**Load `.claude/commands/_content-standard.md` and apply its `## AUDITOR` section in full.** It is the single source of truth for the content gates: register and voice, tee-up, experience truth, required page elements, byline-in-body, the proprietary anchor, neutrality, disclaimer placement, depth floors, first-mention links, and the row records.
+
+**Also load `.claude/commands/_experience.md`** — every first-person experience claim on a page must be traceable to it; anything it does not license is an invented claim and fails.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
+
+If any of those files is missing, FAIL the run and report it — never substitute your own gates.
