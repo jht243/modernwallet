@@ -2,6 +2,17 @@
 
 This phase **executes** every `PARTIAL` from Phase 1b instead of leaving it as a recommendation. A PARTIAL is a pair the site already covers *in passing* inside an existing page (a guide, vertical, or another comparison) but without a real head-to-head treatment. Phase 3 creates net-new pages; **this phase makes targeted spot-edits to the existing page** so the pair is covered properly. `git add` your work but do NOT commit — Phase 5 stages. Phase 4 is the gate for this phase too.
 
+
+## Content standard
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
 > **‼️ NOT NET-NEW, NOT A REGENERATION.** This phase never creates a route and never rebuilds a page. It edits an existing file in place, adding only the missing comparison coverage the Phase 1b work-item called out. Everything else on the page stays byte-for-byte unchanged.
 
 ## What you act on

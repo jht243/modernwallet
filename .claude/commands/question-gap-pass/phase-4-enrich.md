@@ -2,6 +2,17 @@
 
 Execute the actions the user approved at the Phase 3 gate — and **only** those rows. `git add` your work but do NOT commit (Phase 6 stages). Phase 5 is the gate for this phase.
 
+
+## Content standard
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
 > **‼️ NOT NET-NEW, NOT A REGENERATION.** This phase never creates a route and never rebuilds a page. It edits each existing top page in place, adding only the approved missing answer. Everything else on the page stays byte-for-byte unchanged.
 
 ## What you act on

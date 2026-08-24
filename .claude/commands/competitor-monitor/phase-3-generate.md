@@ -2,6 +2,17 @@
 
 For every surviving candidate from Phase 2, produce an **original, improved** page for this project. The competitor's `outline` (and `tool_io` for tools, handled in Phase 3c) is the **minimum coverage/structure floor** — our page must cover everything they cover and beat it. `git add` your work but do NOT commit (Phase 5 stages). Phase 4 is the gate.
 
+
+## Content standard
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
 > **`tool` candidates are NOT handled here** — they go to Phase 3c. This phase handles `page` (→ guide) and `comparison` (→ comparison page) candidates only.
 
 ## Route each candidate to the reused generator

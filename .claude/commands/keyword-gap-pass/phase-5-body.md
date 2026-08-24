@@ -2,6 +2,17 @@
 
 Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, or H1s (that was Phase 2). Internal linking is handled separately in Phase 6 — do not add links here beyond what a body section naturally contains. `git add` your work but do NOT commit.
 
+
+## Content standard
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
 ---
 
 Update the body text now, but I don't want you to totally recreate the page using scripts. I'd like you to keep the same page, but update it with your suggestions you identified prior. DO NOT recreate the page via script, only make updates where needed.
