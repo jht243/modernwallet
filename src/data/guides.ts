@@ -234,6 +234,7 @@ export const GUIDES: Guide[] = [
       { href: "/retirement/", label: "Retirement" },
       { href: "/investing/", label: "Investing" },
       { href: "/net-worth/", label: "Net worth" },
+      { href: "/guides/what-is-a-ctfa/", label: "What is a CTFA" },
     ],
     faqs: [
       { question: "How do I choose a financial advisor?", answer: "Choose a financial advisor by starting with the fiduciary standard, then the fee model, then credentials. A fee-only fiduciary who holds the CFP credential is a strong starting point. Always verify their record on SEC IAPD or FINRA BrokerCheck before you sign anything." },
@@ -5785,6 +5786,7 @@ export const GUIDES: Guide[] = [
       { href: "/real-estate/capital-gains-calculator/", label: "Capital gains tax" },
       { href: "/retirement/", label: "Retirement" },
       { href: "/estate-planning/estate-tax-calculator/", label: "Estate tax" },
+      { href: "/compare/ordinary-income-vs-capital-gains-tax/", label: "Ordinary income vs capital gains tax" },
     ],
     faqs: [
       { question: "Is there a special capital gains tax exemption for seniors?", answer: "No, federal law does not lower the capital gains rate for someone just because they reached a certain age. An old one-time home-sale exclusion for sellers over 55 existed before 1997. The Taxpayer Relief Act of 1997 repealed it. Today's Section 121 home-sale exclusion applies equally to sellers of any age." },
@@ -6491,6 +6493,7 @@ export const GUIDES: Guide[] = [
       { href: "/budget/zero-based-budget-calculator/", label: "Zero-based budget" },
       { href: "/budget/50-30-20-budget-calculator/", label: "50/30/20 budget" },
       { href: "/investing/savings-goal-calculator/", label: "Savings goal" },
+      { href: "/guides/w-4-withholding-allowances/", label: "W-4 withholding allowances" },
     ],
     faqs: [
       { question: "What does it mean to live paycheck to paycheck?", answer: "It means your income is fully spent before your next paycheck arrives, with little or nothing left to save. It can happen at almost any income level, since spending tends to rise to meet whatever comes in. The fix is a spending plan that assigns savings a place before the rest of the money gets spent." },

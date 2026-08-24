@@ -790,6 +790,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Mortgage calculator", href: "/mortgage/" },
       { label: "Rental property calculator", href: "/real-estate/" },
       { label: "Net worth calculator", href: "/net-worth/" },
+      { label: "How much to spend on rent", href: "/guides/how-much-should-i-spend-on-rent/" },
     ],
   },
 
@@ -877,6 +878,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
       { label: "Net worth calculator", href: "/net-worth/" },
+      { label: "College savings by age", href: "/guides/college-savings-by-age/" },
     ],
   },
 
@@ -1061,6 +1063,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Net worth calculator", href: "/net-worth/" },
       { label: "Retirement calculator", href: "/retirement/" },
+      { label: "Average HSA balance by age", href: "/guides/average-hsa-balance-by-age/" },
     ],
   },
 
