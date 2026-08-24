@@ -5,12 +5,21 @@
 
 ## DOMAIN
 
-The Modern Wallet publishes free personal-finance calculators and plain-language money guides. Our reader is making one concrete decision: a car loan, a mortgage, a retirement contribution, or a rent-versus-buy call. We give an accurate number and explain what moves it.
+The Modern Wallet (themodernwallet.com) is a personal-finance site built around free calculators and plain-language money guides, with 400-plus pages spanning auto loans, mortgages, retirement, investing, rentals, and net worth. Our reader is making one concrete decision and wants an accurate number, fast, with no signup. We show the math, name what moves it, and explain the tradeoff.
+
+**General framings this section licenses** (editorial "we", no client roster required):
+
+- "In the guides we publish here..."
+- "What we see readers get wrong most often is..."
+- "Every guide we write starts from..."
+- "When we reviewed this ourselves..."
+
+These license a real editorial observation about work on this site. They never license a fabricated specific.
 
 ---
 
 ## SPECIFICS
 
-_(Optional. Concrete, true, citable claims this site may make about itself. Empty is fine.)_
+_(No named-client claims. This is a content property; the editorial "we" above is the voice.)_
 
 ---
