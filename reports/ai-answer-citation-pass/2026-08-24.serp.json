@@ -1,0 +1,343 @@
+{
+ "pages": {
+  "/compare/etf-vs-mutual-fund/": {
+   "query": "etf vs mutual fund",
+   "paa": [
+    "What does Warren Buffett say about ETFs?",
+    "What are the disadvantages of ETFs?",
+    "How much do I need to invest in ETFs to get $1000 a month?",
+    "Which 3 ETFs should I buy?",
+    "What are 3 ETFs I can buy and hold forever?",
+    "Is ETF better than mutual fund?"
+   ],
+   "related_searches": [
+    "ETF vs mutual fund vs index fund",
+    "ETF vs mutual fund which is better",
+    "ETF vs mutual fund which is better for long-term",
+    "ETF vs mutual fund for beginners",
+    "ETF vs mutual fund which is safer",
+    "ETF vs mutual fund vs stock",
+    "ETF vs mutual fund fees",
+    "ETF vs mutual fund example",
+    "Etf vs mutual fund vanguard"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.schwab.com",
+    "www.reddit.com",
+    "investor.vanguard.com",
+    "www.usbank.com",
+    "www.troweprice.com",
+    "www.navyfederal.org",
+    "www.westernsouthern.com",
+    "www.youtube.com",
+    "www.investopedia.com",
+    "www.ally.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.schwab.com",
+    "investor.vanguard.com",
+    "www.finra.org",
+    "www.fidelity.com",
+    "www.navyfederal.org",
+    "www.reddit.com",
+    "www.troweprice.com",
+    "www.americancentury.com",
+    "www.ssga.com",
+    "www.usbank.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/": {
+   "query": "nerd wallet mortgage calculator",
+   "paa": [],
+   "related_searches": [
+    "NerdWallet mortgage calculator how much can I afford",
+    "NerdWallet mortgage calculator with PMI",
+    "NerdWallet mortgage rates",
+    "NerdWallet mortgage calculator payoff",
+    "Nerdwallet mortgage calculator with extra payments",
+    "NerdWallet mortgage calculator refinance",
+    "Nerdwallet mortgage calculator texas",
+    "NerdWallet affordability calculator",
+    "Nerdwallet mortgage calculator extra payment"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.reddit.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/custodial-roth-ira-vs-utma/": {
+   "query": "utma to roth ira",
+   "paa": [
+    "Can I open a Roth IRA for my 5 year old child?",
+    "Can I transfer funds out of an UTMA?",
+    "Who pays taxes on gains in the UTMA account?",
+    "Is a UTMA or Roth IRA better for a child?",
+    "Can an UTMA account be converted to a Roth IRA?",
+    "What are the disadvantages of an UTMA account?"
+   ],
+   "related_searches": [
+    "Utma to roth ira reddit",
+    "Utma to roth ira fidelity",
+    "UTMA vs Roth IRA",
+    "UTMA to IRA",
+    "UTMA vs Roth IRA for kids",
+    "Custodial Roth IRA",
+    "Convert UTMA to individual account",
+    "UTMA account"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "meetfabric.com",
+    "www.bogleheads.org",
+    "www.fidelity.com",
+    "www.wellsfargo.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.merceradvisors.com",
+    "meetfabric.com",
+    "www.protective.com",
+    "www.justanswer.com",
+    "www.bogleheads.org",
+    "www.fidelity.com",
+    "www.facebook.com",
+    "mai.capital",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/auto-loan/payoff-calculator/": {
+   "query": "auto loan early payoff calculator",
+   "paa": [
+    "Is it smart to payoff a car loan early?",
+    "How can I calculate the early payoff amount for my car loan?",
+    "How to pay off a 6 year car loan in 2 years?",
+    "How to pay a 5 year car loan off early?",
+    "Is there a downside to paying off a loan early?",
+    "What is the smartest way to pay off your car loan?"
+   ],
+   "related_searches": [
+    "Pay off loan early calculator with extra payments",
+    "Auto loan early payoff calculator NerdWallet",
+    "Auto loan early payoff calculator excel",
+    "Pay off car loan early calculator with extra payments",
+    "Auto loan early payoff calculator chase",
+    "Early loan payoff calculator",
+    "Bankrate auto loan early payoff calculator",
+    "Car loan payoff calculator ramsey"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.flagstar.com",
+    "www.marketusafcu.com",
+    "www.bankfirstfed.com",
+    "www.myeecu.org",
+    "www.isabellabank.com",
+    "content.commonwealth.com",
+    "www.ecu.org",
+    "www.bhfcu.com",
+    "www.kohlercu.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/custodial-account-vs-savings-account/": {
+   "query": "what is a custodial savings account",
+   "paa": [
+    "What are the cons of a custodial account?",
+    "What happens to the custodial account when a child turns 18?",
+    "Which bank is best for a custodial account?",
+    "Do parents pay taxes on custodial accounts?",
+    "Can I give my kids $100,000 tax-free?",
+    "How much interest can a child earn before paying taxes?"
+   ],
+   "related_searches": [
+    "What is a custodial savings account vs utma",
+    "Types of custodial accounts",
+    "What is a custodial savings account fidelity",
+    "Custodial savings account for child",
+    "What banks offer custodial accounts",
+    "How to open a custodial account",
+    "What is a custodial savings account wells far",
+    "Custodial account for adults"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.chase.com",
+    "www.pnc.com",
+    "www.schwabmoneywise.com",
+    "dfhlaw.com",
+    "finaid.org",
+    "heritagefcu.com",
+    "www.schwab.com",
+    "www.ally.com",
+    "www.wellsfargo.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/business-loan-payoff/": {
+   "query": "pay off a business loan",
+   "paa": [
+    "How does paying off a business loan work?",
+    "What is the monthly payment on a $50,000 business loan?",
+    "What happens if I can't pay back a small business loan?",
+    "What is the payment on a $1,000,000 business loan?",
+    "What is the payment on a $300,000 business loan?",
+    "How much would a payment be on a $250000 business loan?"
+   ],
+   "related_searches": [
+    "Pay off a business loan reddit",
+    "Pay off a business loan sba",
+    "Pay off a business loan online",
+    "200k business loan monthly payment",
+    "500k business loan monthly payment",
+    "2 million business loan monthly payment",
+    "150k business loan monthly payment",
+    "400k business loan monthly payment"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.sba.gov",
+    "www.reddit.com",
+    "www.calculator.net",
+    "www.anbbank.com",
+    "businessimpactnw.org",
+    "www.bankrate.com",
+    "www.forafinancial.com",
+    "www.flagstar.com",
+    "504capital.com",
+    "www.nationalfunding.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/529-vs-brokerage-account/": {
+   "query": "529 plan vs brokerage account",
+   "paa": [
+    "What does Dave Ramsey say about 529?",
+    "Which is better for my child, a 529 plan or a brokerage account?",
+    "What is the downside of 529 accounts?",
+    "Why are people boycotting 529 plans?",
+    "What happens to 529 if the stock market crashes?",
+    "Is 500 a month too much for 529?"
+   ],
+   "related_searches": [
+    "529 plan vs brokerage account reddit",
+    "529 plan vs brokerage account taxes",
+    "Best 529 plan vs brokerage account",
+    "Fidelity 529 plan vs brokerage account",
+    "529 vs brokerage account calculator",
+    "Best 529 plans",
+    "529 account",
+    "529 brokerage"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.savingforcollege.com",
+    "www.farther.com",
+    "blog.acadviser.com",
+    "slpwealth.com",
+    "www.schwab.com",
+    "augustuswealth.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.farther.com",
+    "www.savingforcollege.com",
+    "slpwealth.com",
+    "useorigin.com",
+    "blog.acadviser.com",
+    "www.morningstar.com",
+    "augustuswealth.com",
+    "augustuswealth.com",
+    "districtcapitalmanagement.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/401k-vs-brokerage-account/": {
+   "query": "401k vs brokerage account calculator",
+   "paa": [
+    "Is it better to put money in a 401k or brokerage account?",
+    "How much will $100,000 in a 401k be worth in 10 years?",
+    "How many Americans have $1,000,000 in their 401k?",
+    "Can I retire at 62 with $400,000 in 401k?",
+    "How many Americans have $500,000 in 401k?",
+    "How long will $750,000 last in retirement at 62?"
+   ],
+   "related_searches": [
+    "401k vs brokerage account calculator with taxes",
+    "401k vs brokerage account calculator fidelity",
+    "401k calculator",
+    "Taxable vs tax-deferred calculator",
+    "Investment calculator",
+    "Compound interest calculator",
+    "Roth vs taxable account calculator",
+    "Taxable investment calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.aarp.org",
+    "www.reddit.com",
+    "www.citizensbank.com",
+    "smartasset.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.americancentury.com",
+    "www.aarp.org",
+    "www.reddit.com",
+    "www.calcxml.com",
+    "www.financialmentor.com",
+    "equitable.com",
+    "www.citizensbank.com",
+    "www.ramseysolutions.com",
+    "smartasset.com",
+    "www.fidelity.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 8 calls, $0.03305 of $2.00 budget"
+}

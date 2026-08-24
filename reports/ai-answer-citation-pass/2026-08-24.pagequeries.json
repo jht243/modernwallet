@@ -1,0 +1,728 @@
+[
+  {
+    "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 38,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 93.84
+    },
+    "top_queries": [
+      {
+        "query": "etf funds vs mutual funds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98
+      },
+      {
+        "query": "etf or mutual fund",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 99
+      },
+      {
+        "query": "etf vs mutual fund",
+        "impressions": 17,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 97.76
+      },
+      {
+        "query": "etf vs. mutual fund",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98
+      },
+      {
+        "query": "exchange-traded fund vs mutual fund",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 96
+      },
+      {
+        "query": "mutual fund vs etf",
+        "impressions": 5,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98.6
+      },
+      {
+        "query": "mutual funds vs etf",
+        "impressions": 8,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 99.12
+      },
+      {
+        "query": "should i invest in etfs or mutual funds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 78
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 93.8, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 38,
+      "position": 93.84,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 32,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 39.38
+    },
+    "top_queries": [
+      {
+        "query": "founders calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 72
+      },
+      {
+        "query": "nerd wallet mortgage calculator",
+        "impressions": 7,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 46
+      },
+      {
+        "query": "nerdwallet calculator",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 47.75
+      },
+      {
+        "query": "nerdwallet calculators",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 48
+      },
+      {
+        "query": "nerdwallet mortage calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 47
+      },
+      {
+        "query": "nerdwallet mortgage calculator",
+        "impressions": 6,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 45.33
+      },
+      {
+        "query": "nerdwallet net worth calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 52
+      },
+      {
+        "query": "nerwallet mortgage calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 44
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 39.4, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 32,
+      "position": 39.38,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 60.45
+    },
+    "top_queries": [
+      {
+        "query": "convert utma to roth ira",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 47
+      },
+      {
+        "query": "utma to roth ira",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 51.5
+      },
+      {
+        "query": "utma vs roth ira",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 60.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 11,
+      "position": 60.45,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 62.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 62.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 6,
+      "position": 62.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 24.2
+    },
+    "top_queries": [
+      {
+        "query": "auto loan early payoff calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 8
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 24.2, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 5,
+      "position": 24.2,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 65
+    },
+    "top_queries": [
+      {
+        "query": "what is a custodial savings account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 99
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 65.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 5,
+      "position": 65,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/budget/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.25
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 6.2 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 4,
+      "position": 6.25,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/business-loan-payoff/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 44
+    },
+    "top_queries": [
+      {
+        "query": "pay off a business loan",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 94
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 44.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 4,
+      "position": 44,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/calculators/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.25
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 8.2 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 4,
+      "position": 8.25,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 40
+    },
+    "top_queries": [
+      {
+        "query": "529 plan vs brokerage account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 17
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 40.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 4,
+      "position": 40,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 79
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 79.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 4,
+      "position": 79,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/about/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 11.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 11.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 11.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/auto-loan/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 15.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 15.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 15.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/business-line-of-credit/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 31
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 31.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 31,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/coast-fire/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 12.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 12.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 12.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 84.67
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 84.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 84.67,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 60.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 60.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 60.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/bilt-rewards-vs-chase-ultimate-rewards/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 86.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 86.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 86.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/coast-fire-vs-barista-fire/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 49.67
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 49.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 49.67,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 84.67
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 84.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 3,
+      "position": 84.67,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/529-savings-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 28.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 28.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 2,
+      "position": 28.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/401k-vs-brokerage-account/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 59
+    },
+    "top_queries": [
+      {
+        "query": "401k vs brokerage account calculator",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 77
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 59.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 2,
+      "position": 59,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-traditional-ira/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 2,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 60.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 60.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 2,
+      "position": 60.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 57
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 57.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 1,
+      "position": 57,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/debt-snowball-vs-avalanche/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 62
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 62.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 1,
+      "position": 62,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  }
+]
