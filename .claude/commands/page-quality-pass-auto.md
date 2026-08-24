@@ -25,7 +25,7 @@ This is a thin orchestrator. ALL phases live at `.claude/commands/page-quality-p
 If any check fails → skip the run, email a failure report (see Email section), exit 0. No commit, no push.
 
 1. **Working tree must be clean.** `git status --porcelain` non-empty → skip, email failure.
-2. **Branch is committable.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit there, then deploy to `main` per the Git model below. Only abort on detached HEAD with no branch name.
+2. **Branch is committable.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit there, then deploy to `main` per the Git model below. **A detached HEAD is NOT an abort condition** — the clean-tree check above already guarantees nothing is at risk. If `git rev-parse --abbrev-ref HEAD` prints `HEAD`, run `git checkout -b claude/page-quality-pass-$(date -u +%Y%m%d-%H%M%S)`, note the recovery in the email digest, and continue the run.
 3. **Credentials.** `python3 -c "import google.oauth2.service_account"` must succeed (else `pip install google-auth requests`), and one of `$GOOGLE_REPORTING_SA_JSON` / `$GOOGLE_REPORTING_SA_FILE` / `~/.claude/secrets/gsc-service-account.json` must exist. The SAME service account serves GA4 (auto re-scoped to `analytics.readonly`) and GSC (`webmasters.readonly`). Missing → email failure, exit 0. **Do NOT fall back to Ahrefs/any MCP in cron runs.**
 4. **Ledgers (self-bootstrapping):** this pass's page ledger `reports/page-quality-pass/page-quality-audits.md` and the shared candidate ledger `reports/trend-pass/ledger.md`. **If missing, CREATE them** with a header row. Absence is NOT a blocker.
 5. **Resend secrets (best-effort, NOT a gate).** Absent → do the work, print the report to stdout, skip only the email.

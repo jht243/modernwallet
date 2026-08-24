@@ -23,7 +23,7 @@ This is a thin orchestrator. It does **not** duplicate the reused phase instruct
 If any check fails, **skip the run** and email a failure report explaining why. Do not commit, do not push.
 
 1. **Working tree clean.** `git status --porcelain` must be empty → else skip + email failure ("Working tree dirty").
-2. **Branch committable; deploy target is `main`.** `git rev-parse --abbrev-ref HEAD`. Cloud routines run on an ephemeral `claude/*` branch — that is the **expected** case; commit on that branch, then deploy to `main`. The ONLY abort is detached HEAD. Never abort merely because the branch is not `main`. Throughout, "push" means `git fetch origin main && git rebase origin/main && git push origin HEAD:main`.
+2. **Branch committable; deploy target is `main`.** `git rev-parse --abbrev-ref HEAD`. Cloud routines run on an ephemeral `claude/*` branch — that is the **expected** case; commit on that branch, then deploy to `main`. **A detached HEAD is NOT an abort condition** — the clean-tree check above already guarantees nothing is at risk. If `git rev-parse --abbrev-ref HEAD` prints `HEAD`, run `git checkout -b claude/competitor-monitor-$(date -u +%Y%m%d-%H%M%S)`, note the recovery in the email digest, and continue the run. Never abort merely because the branch is not `main`. Throughout, "push" means `git fetch origin main && git rebase origin/main && git push origin HEAD:main`.
 3. **Python available.** `python3 --version` must succeed (the scraper needs it) → else skip + email failure.
 4. **Resend secrets (best-effort, NOT a gate).** Check `$RESEND_API_KEY` (env) or `.claude/routines.config` / `.claude/secrets.env`. If absent, do the full run and push anyway; just skip the email and print the report to stdout.
 
@@ -56,7 +56,7 @@ Apply top to bottom; first match wins.
 
 | Condition | Decision | Email status |
 |---|---|---|
-| Pre-flight failed (dirty tree / detached HEAD / no python) | skip, no commit | `failure` |
+| Pre-flight failed (dirty tree / no python) | skip, no commit | `failure` |
 | First run, or 0 new/updated candidates | commit seeded/updated ledger, no content | `no-changes` |
 | All candidates DUPLICATE after Phase 2 | record dispositions, commit ledger, no content | `no-changes` |
 | Phase 5 typecheck/build failed | `git reset --hard HEAD~1`, no push | `failure` |
