@@ -1,0 +1,122 @@
+{
+  "social security survivor benefits": {
+    "keyword": "social security survivor benefits",
+    "volume": 27100,
+    "volume_low": 27100,
+    "volume_high": 27100,
+    "kd": 17,
+    "cpc": 0.52,
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 10,
+      "corroborates": true
+    }
+  },
+  "social security survivor benefits for child": {
+    "keyword": "social security survivor benefits for child",
+    "volume": 50,
+    "volume_low": 50,
+    "volume_high": 500,
+    "kd": "",
+    "cpc": "",
+    "source": "estimate",
+    "confidence": "low",
+    "evidence": "Google Autocomplete \u2014 partial prefix match + broad completion set (est. 50-500/mo, NOT measured)",
+    "autocomplete": {
+      "completions": 10,
+      "corroborates": true
+    }
+  },
+  "social security survivor benefits for widow": {
+    "keyword": "social security survivor benefits for widow",
+    "volume": 8100,
+    "volume_low": 8100,
+    "volume_high": 8100,
+    "kd": 20,
+    "cpc": 0.59,
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 10,
+      "corroborates": true
+    }
+  },
+  "how long do social security survivor benefits last": {
+    "keyword": "how long do social security survivor benefits last",
+    "volume": 140,
+    "volume_low": 140,
+    "volume_high": 140,
+    "kd": 17,
+    "cpc": 0.71,
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 8,
+      "corroborates": true
+    }
+  },
+  "social security survivor benefits amount": {
+    "keyword": "social security survivor benefits amount",
+    "volume": 90,
+    "volume_low": 90,
+    "volume_high": 90,
+    "kd": 61,
+    "cpc": 0.02,
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 10,
+      "corroborates": true
+    }
+  },
+  "social security survivor benefits and remarriage": {
+    "keyword": "social security survivor benefits and remarriage",
+    "volume": 50,
+    "volume_low": 50,
+    "volume_high": 50,
+    "kd": 14,
+    "cpc": 0.03,
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 10,
+      "corroborates": true
+    }
+  },
+  "social security survivor benefits back pay": {
+    "keyword": "social security survivor benefits back pay",
+    "volume": 10,
+    "volume_low": 10,
+    "volume_high": 10,
+    "kd": 54,
+    "cpc": "",
+    "source": "dataforseo",
+    "confidence": "high",
+    "kd_source": "dataforseo",
+    "autocomplete": {
+      "completions": 7,
+      "corroborates": true
+    }
+  },
+  "social security child benefits age limit": {
+    "keyword": "social security child benefits age limit",
+    "volume": 10,
+    "volume_low": 10,
+    "volume_high": 100,
+    "kd": "",
+    "cpc": "",
+    "source": "estimate",
+    "confidence": "low",
+    "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 10-100/mo, NOT measured)",
+    "autocomplete": {
+      "completions": 6,
+      "corroborates": false
+    }
+  }
+}
