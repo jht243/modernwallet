@@ -513,12 +513,18 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Yes — low-cost, broad-market index funds are a standard core holding inside retirement accounts like a 401(k) or IRA, because their low expense ratios and broad diversification let more of the market's return compound over decades rather than going to fees. Most retirement investors gradually shift a portion of their portfolio from stock index funds toward bond index funds as retirement approaches, to reduce exposure to a market downturn right when withdrawals begin. See our <a href=\"/investing/\">investment growth calculator</a> to model how contributions and returns compound over time.",
       },
+      {
+        question: "How are index funds and index mutual funds taxed?",
+        answer:
+          "In a taxable brokerage account, an index fund's dividends are taxed the year you receive them. Selling shares for a gain owes capital gains tax too, at the long-term rate past a year of holding or the higher short-term rate before that. An index mutual fund can also pass through a year-end capital gains distribution even if you never sold a share, though this happens far less often than with an actively managed fund because index funds trade their holdings so rarely. Holding the same fund inside a 401(k), IRA, or other tax-advantaged account defers or eliminates that yearly tax bill, which is one more reason index funds are a common default for retirement accounts.",
+      },
     ],
     sources: [
       { label: "S&P SPIVA Report — Active vs. Passive Scorecard", url: "https://www.spglobal.com/spdji/en/research-insights/spiva/" },
       { label: "Investment Company Institute — 2024 Fact Book (expense ratios)", url: "https://www.ici.org/research/idc/factbook" },
       { label: "Vanguard — VOO Fund Details", url: "https://investor.vanguard.com/etf/profile/VOO" },
       { label: "Fidelity — FZROX Fund Details", url: "https://fundresearch.fidelity.com/mutual-funds/summary/31635T708" },
+      { label: "IRS — Topic No. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
     ],
     relatedComparisons: ["etf-vs-mutual-fund", "stocks-vs-bonds", "brokerage-vs-ira"],
     calculatorLinks: [

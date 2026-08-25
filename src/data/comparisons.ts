@@ -2496,13 +2496,19 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Fidelity, Charles Schwab, Vanguard, and E*TRADE all offer a custodial Roth IRA for minors, each with no account minimum or clear annual fee. Merrill Edge, despite offering custodial UGMA/UTMA accounts, does not offer a custodial Roth IRA at all. See our [best custodial Roth IRA providers](/roundup/best-custodial-roth-ira-providers/) roundup for a full fee and feature comparison.",
       },
+      {
+        question: "Can a custodial Roth IRA be used for college?",
+        answer:
+          "Contributions come out of a custodial Roth IRA anytime, tax- and penalty-free, so a family can tap them for tuition in a pinch. Earnings are different: withdrawing earnings before age 59½ normally owes tax plus a 10% penalty, but the IRS waives the 10% penalty (not the tax) when the money pays for the account owner's qualified higher-education expenses. A custodial brokerage account has no such carve-out, so any of its gains sold to pay tuition are simply taxed under the kiddie tax that year.",
+      },
     ],
     sources: [
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
       { label: "IRS — Topic No. 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)", url: "https://www.irs.gov/taxtopics/tc553" },
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
+      { label: "IRS — Publication 590-B, Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
     ],
-    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira"],
+    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira", "custodial-roth-ira-vs-trump-account"],
     calculatorLinks: [ { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" }, { label: "Investment calculator", href: "/investing/" } ],
   },
 
@@ -9363,6 +9369,116 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Investment Calculator", href: "/investing/" },
       { label: "Retirement Calculator", href: "/retirement/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
+    ],
+  },
+
+  // ─── GA4 top-pages pass (2026-08-25) — Lane B for winner
+  // /compare/custodial-roth-ira-vs-brokerage-account/: autocomplete showed real,
+  // repeated "custodial roth ira vs trump account" demand; the site's existing
+  // trump-account-vs-custodial-account page compares the Trump Account against a
+  // general UTMA/UGMA brokerage account only, not the earned-income-gated custodial
+  // Roth IRA, so this is a genuinely distinct pairing. register: operator ·
+  // medium: text → text · page type: comparison (1500-word floor). ───────────
+  {
+    slug: "custodial-roth-ira-vs-trump-account",
+    title: "Custodial Roth IRA vs Trump Account: Which Is Better?",
+    metaDescription:
+      "Custodial Roth IRA vs Trump Account: the Roth needs a job but grows tax-free forever; the Trump Account needs no job and hands your child a free $1,000.",
+    targetKeyword: "custodial roth ira vs trump account",
+    optionA: "Custodial Roth IRA",
+    optionB: "Trump Account",
+    segment: "Kids & family investing",
+    h1: "Custodial Roth IRA vs Trump Account: Which Is Better for Your Child?",
+    intro:
+      "A custodial Roth IRA needs your child's own earned income but grows completely tax-free for retirement, while a Trump Account needs no income at all and comes with a free $1,000 federal seed, taxed like a traditional IRA once your child turns 18 and withdraws it. Pick the Roth once your child has real, documented wages and you want every dollar of growth untaxed for good. Pick the Trump Account for a newborn or any child too young to work, since it is the only one of the two they can have funded at all.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who can fund it", a: "Only the child's own documented earned income", b: "Family, relatives, friends, and an employer, up to $5,000/year combined" },
+        { dimension: "Free federal money", a: "None", b: "$1,000 federal seed for U.S.-citizen kids born 2025–2028" },
+        { dimension: "2026 contribution cap", a: "Lesser of earned income or $7,500 ($8,600 at 50+, though a minor rarely nears that)", b: "$5,000/year combined (employer portion capped at $2,500 inside that limit; the seed doesn't count against it)" },
+        { dimension: "Investment choice", a: "Broad — stocks, ETFs, mutual funds inside an IRA wrapper", b: "S&P 500 or similar U.S.-stock index fund only, no other choice" },
+        { dimension: "Tax on growth", a: "Tax-free growth; qualified withdrawals owe no tax at all", b: "Tax-deferred growth; withdrawals after 18 taxed as ordinary income, like a traditional IRA" },
+        { dimension: "Access before adulthood", a: "Contributions withdrawable anytime, tax- and penalty-free; earnings restricted before 59½ (exceptions apply)", b: "Fully locked until January 1 of the year the child turns 18, no exceptions" },
+        { dimension: "Who can have one", a: "Any minor with earned income, no birth-year rule", b: "Almost any U.S. child under 18 with a Social Security number (the seed itself needs the 2025–2028 birth window)" },
+        { dimension: "FAFSA treatment", a: "Not reported as an asset at all", b: "Retirement-style account, lighter aid treatment than a standard brokerage account" },
+      ],
+    },
+    verdict:
+      "Choose a custodial Roth IRA once your child has real, documented earned income and you want every dollar of growth to compound completely tax-free, with full control over what it's invested in. Choose a Trump Account for a newborn, a toddler, or any child too young to work, since it needs no income at all and hands an eligible child a free $1,000 to start. The two are not competitors so much as different life stages: fund the Trump Account from birth, then add a custodial Roth IRA the year your child earns their first real paycheck.",
+    sections: [
+      {
+        heading: "Why These Two Accounts Get Compared",
+        content:
+          "Both a custodial Roth IRA and a Trump Account are tax-advantaged accounts opened for a minor and built around long-term, retirement-style growth rather than a near-term expense like college or a car. That shared shape is exactly why families search for one against the other: the two solve a similar problem in almost opposite ways.\n\nA custodial Roth IRA is decades old, run under standard IRS Roth rules with a custodian standing in for a minor who can't yet open an account alone. A Trump Account is new: the program was created by the 2025 One Big Beautiful Bill and opened for enrollment on July 4, 2026, funded through TrumpAccounts.gov. See [what a Trump Account is](/guides/trump-accounts/) for the full background if you're new to the program.",
+      },
+      {
+        heading: "The Earned-Income Wall Only One of Them Has",
+        content:
+          "A custodial Roth IRA can only be funded with money your child actually earned, whether from a summer job, babysitting, lawn mowing, or documented self-employment income. No earned income means no contribution room that year, no matter how much a parent or grandparent wants to gift into it. That single rule is why most custodial Roth IRAs belong to a working teenager, not a baby.\n\nA Trump Account has no such rule. Any parent, relative, friend, or employer can fund it, up to the shared $5,000 annual cap, and the $1,000 federal seed itself requires nothing from your child but citizenship and a Social Security number. This is the real decision point for most families: a newborn or a 10-year-old cannot have a custodial Roth IRA funded at all, but can have a Trump Account open and growing from day one. See our [custodial Roth IRA for kids guide](/guides/custodial-roth-ira-for-kids/) for how families document a child's earned income correctly.",
+      },
+      {
+        heading: "Tax-Deferred vs Truly Tax-Free",
+        content:
+          "A custodial Roth IRA grows completely tax-free, and qualified withdrawals in retirement owe no tax at all, not on the contributions and not on decades of compounding. Because a child's money can sit invested for 50 or more years before retirement, that tax-free treatment compounds into a far larger gap than the same growth rate would suggest.\n\nA Trump Account grows tax-deferred instead, which is a real benefit but a different one. You owe no tax year to year while the money is invested, but once your child turns 18 and eventually withdraws the money, the account is taxed like a traditional IRA: every withdrawal counts as ordinary income.\n\nRun the numbers to see the gap. $5,000 a year for 10 years at 7% grows to roughly $73,000 in either account by the time your child turns 18. Left untouched for another 40 years to age 58, that balance can compound to well over $1 million. Pulled from a custodial Roth IRA in retirement, that whole amount comes out tax-free. Pulled from a Trump Account, the same balance is taxed as ordinary income on the way out, the same as a traditional IRA or a 401(k). Compare the two paths side by side with our [Trump Account calculator](/trump-account/) and the [Roth IRA calculator](/investing/roth-ira-calculator/) using your own numbers.",
+      },
+      {
+        heading: "Investment Choice and How Much You Can Put In",
+        content:
+          "A custodial Roth IRA lets you invest in nearly anything an ordinary IRA can hold, including individual stocks, index funds, and ETFs, with a 2026 contribution cap of $7,500, or your child's actual earned income if it's lower. A working teenager rarely earns close to $7,500 in a year, so in practice the earned-income limit, not the IRS cap, decides how much goes in.\n\nA Trump Account offers no such choice. Every dollar, from the $1,000 seed to your own contributions, goes into the same S&P 500 or similar U.S.-stock index fund; there is no menu to pick from. In exchange, the account allows a much higher combined cap of $5,000 a year from any source, with no earned-income test attached to it. A family that wants to save more than a young child could ever earn will find more room in the Trump Account, even without the choice of what it's invested in.",
+      },
+      {
+        heading: "Which Should You Choose (or Use Both)?",
+        content:
+          "Open a Trump Account first if your child is a baby, a toddler, or any age below where they can realistically earn documented income. It costs nothing to open, needs no job, and an eligible child gets $1,000 from the federal government just for having one. Our [Trump Account calculator](/trump-account/) shows the $1,000 seed alone growing to about $3,513 by age 18 at a 7% return, and to roughly $89,657 with $200 a month added on top.\n\nAdd a custodial Roth IRA the moment your child has a real paycheck, even a small one. Funding the Roth up to their documented earned income locks in decades of completely tax-free growth that a Trump Account's tax-deferred structure can't match. A family can run both accounts side by side: the Trump Account keeps compounding on its own S&P 500 track, while the custodial Roth IRA grows in whatever mix of stocks and funds you choose.\n\nA teenager with a summer job is the clearest case for opening both. Say your 16-year-old earns $3,000 mowing lawns; that whole amount can go into a custodial Roth IRA, where it compounds tax-free for the 45-plus years until their own retirement. Meanwhile, their existing Trump Account, opened years earlier, keeps growing on its own separate S&P 500 track, funded by family contributions that never depended on the child having a job at all. Neither account displaces the other's contribution room, since a Trump Account's $5,000 family cap and a Roth's earned-income cap are entirely separate limits. For the general custodial-account landscape beyond these two, see [custodial Roth IRA vs a brokerage account](/compare/custodial-roth-ira-vs-brokerage-account/) and [the best investment account for kids](/guides/best-investment-account-for-kids/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can my child have both a custodial Roth IRA and a Trump Account?",
+        answer:
+          "Yes. There's no rule against holding both, and many families do, since a Trump Account needs no earned income while a custodial Roth IRA needs your child's own documented wages. The common pattern is opening a Trump Account at birth, then adding a custodial Roth IRA once your child starts earning real money.",
+      },
+      {
+        question: "Which grows more, a custodial Roth IRA or a Trump Account?",
+        answer:
+          "It depends on contributions and returns far more than on the account type. A Trump Account can receive up to $5,000/year from any source with no job required, while a custodial Roth IRA is capped at a working child's actual earned income, which is usually far less for a young teen. A heavily funded Trump Account can out-grow a lightly funded Roth in dollar terms, even though the Roth's tax-free withdrawals make each of its dollars worth more in retirement.",
+      },
+      {
+        question: "Does a Trump Account count as a Roth IRA?",
+        answer:
+          "No. A Trump Account is taxed like a traditional IRA, not a Roth: growth is tax-deferred, and withdrawals after your child turns 18 are taxed as ordinary income. A custodial Roth IRA is the only one of the two where qualified withdrawals are entirely tax-free.",
+      },
+      {
+        question: "Can a baby have a custodial Roth IRA instead of a Trump Account?",
+        answer:
+          "No. A custodial Roth IRA can only be funded with a child's own earned income, and a baby has none, so a newborn cannot have a funded custodial Roth IRA at all. A Trump Account has no such requirement, which is why it, not the Roth, is the account most families open for a newborn.",
+      },
+      {
+        question: "Is the Trump Account's $1,000 seed better than a Roth IRA contribution?",
+        answer:
+          "They aren't really comparable, since a Trump Account's $1,000 seed is free federal money with no earned-income requirement, while every dollar in a custodial Roth IRA has to come from a child's own documented wages. The seed is a head start for an infant; the Roth's advantage is tax-free growth for a working teen, and the two apply at different ages.",
+      },
+      {
+        question: "What happens to a custodial Roth IRA or Trump Account when my child turns 18?",
+        answer:
+          "A custodial Roth IRA converts into your child's own Roth IRA, with the same tax-free growth rules that applied all along. A Trump Account becomes accessible on January 1 of the year your child turns 18, and from that point it is administered like a traditional IRA, so future withdrawals are taxed as ordinary income.",
+      },
+      {
+        question: "Does a custodial Roth IRA or a Trump Account hurt financial aid more?",
+        answer:
+          "Neither hurts financial aid the way a standard custodial brokerage account does. A custodial Roth IRA isn't reported as an asset on the FAFSA at all, since retirement accounts are excluded outright. A Trump Account gets retirement-style treatment too, which is lighter than the 20% assessment a UTMA or UGMA custodial account faces, though the exact FAFSA formula for a Trump Account is still being finalized as the program rolls out.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Notice 2025-68 (full text, PDF)", url: "https://www.irs.gov/pub/irs-drop/n-25-68.pdf" },
+      { label: "Federal Student Aid — How Aid Is Calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+    ],
+    relatedComparisons: ["custodial-roth-ira-vs-brokerage-account", "trump-account-vs-custodial-account", "custodial-roth-ira-vs-utma", "trump-account-vs-roth-ira"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },
 ];

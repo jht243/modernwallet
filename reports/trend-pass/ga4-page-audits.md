@@ -99,3 +99,12 @@
 | /roundup/best-online-will-makers/ | 2026-08-21 | 1 | 0/0/0/0/0 | 0 |
 | /compare/revocable-vs-irrevocable-trust/ | 2026-08-22 | 1 | 0/1/1/0/0 | 0 |
 | /roundup/best-401k-providers-for-small-business/ | 2026-08-24 | 1 | 0/0/1/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-08-25 | 15 | 0/0/1/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-08-25 | 7 | 0/0/0/0/0 | 0 |
+| /trump-account/ | 2026-08-25 | 3 | 1/0/1/0/0 | 1 |
+| / | 2026-08-25 | 2 | 0/0/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-08-25 | 2 | 0/1/1/0/0 | 2 |
+| /guides/trump-account-eligibility/ | 2026-08-25 | 2 | 0/0/0/0/0 | 1 |
+| /roundup/best-index-funds/ | 2026-08-25 | 2 | 0/0/1/0/0 | 2 |
+| /roundup/best-money-market-accounts/ | 2026-08-25 | 2 | 0/0/0/0/0 | 2 |
+| /roundup/best-target-date-funds/ | 2026-08-25 | 2 | 0/0/0/0/0 | 1 |
