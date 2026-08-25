@@ -1,0 +1,129 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-24",
+  "window_start": "2026-08-24",
+  "window_end": "2026-08-24",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 7,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 7
+    },
+    {
+      "page": "/trump-account/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 3,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/trump-account-eligibility/",
+      "views": 2,
+      "sessions": 4,
+      "active_users": 3,
+      "clicks": 2
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 2,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 2
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 2,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 2
+    },
+    {
+      "page": "/roundup/best-target-date-funds/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    }
+  ],
+  "top10_pages_total_views": 39,
+  "top10_pages_total_clicks": 39,
+  "channel_split": {
+    "/guides/how-to-open-a-trump-account/": {
+      "Cross-network": 9,
+      "Unassigned": 4,
+      "Organic Search": 3,
+      "Direct": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 5,
+      "Unassigned": 4,
+      "Cross-network": 2
+    },
+    "/": {
+      "Referral": 3,
+      "Unassigned": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Unassigned": 3,
+      "Organic Search": 2
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-eligibility/": {
+      "Organic Search": 2,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 2,
+      "Direct": 1
+    },
+    "/roundup/best-target-date-funds/": {
+      "Unassigned": 2,
+      "AI Assistant": 1
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Cross-network": 1,
+      "Direct": 1
+    },
+    "/trump-account/": {
+      "Cross-network": 1,
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
