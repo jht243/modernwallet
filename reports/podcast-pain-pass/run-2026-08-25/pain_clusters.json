@@ -1,0 +1,47 @@
+{
+ "retirement": {
+  "count": 30,
+  "examples": [
+   "The real skill is allocating how much goes to each of these jobs so that you can protect your retirement lifestyle and keep that money growing throughout your retirement.",
+   "How much do you need to live on your portfolio for the first five years of retirement?",
+   "Versus how much did my spouse earn and what benefit are they eligible for at their full retirement age?"
+  ]
+ },
+ "investing": {
+  "count": 20,
+  "examples": [
+   "How do we design a custom allocation to say, how do we know how much to put into root reserves to protect stocks?",
+   "How much do you need to live on your portfolio for the first five years of retirement?",
+   "And it doesn't matter how much we model out the fact that your investments can support this, you can get other medical coverage."
+  ]
+ },
+ "tax-estate": {
+  "count": 16,
+  "examples": [
+   "But outside of that, it's her decision of when she collects that actually determines how much more or less than that she will receive.",
+   "It's absolutely the most tax efficient, optimized way to go about doing it, but depending on your medical spending and how much you're prioritizing your other accounts.",
+   "And there are a lot of real estate influencers out there who talk about how much size matters and if you don't have eighty two units, then you're just not doing it right."
+  ]
+ },
+ "budget": {
+  "count": 36,
+  "examples": [
+   "If you're in your 40s, your 50s, your 60s, you've probably seen some of those online charts that show you how much you need to have saved by your age.",
+   "Instead of looking at arbitrary benchmarks or how much should you have saved at certain ages, here's something that you can do that's gonna be much more custom to you.",
+   "What's the difference between how much you want to spend and how much is coming in and non-portfolio income sources?"
+  ]
+ },
+ "real-estate": {
+  "count": 4,
+  "examples": [
+   "We're talking pretty small scale, but I want to do it right and specific questions I have one, how do I determine whether an area is a good place to buy a property.",
+   "Okay, So you've got seventeen thousand dollars a month in rent, which is undermarket, but how much are your mortgage payments every month?"
+  ]
+ },
+ "net-worth": {
+  "count": 2,
+  "examples": [
+   "I didn't know what a net worth was when I was 50 years old."
+  ]
+ }
+}
