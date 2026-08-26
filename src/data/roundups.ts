@@ -6057,6 +6057,446 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Personal Loan Rates by Lender ────────────────────────────────────────
+  {
+    slug: "personal-loan-rates-by-lender",
+    title: "Personal Loan Rates by Lender (2026)",
+    metaDescription:
+      "Personal loan rates by lender: Discover, SoFi, Wells Fargo, PNC, US Bank, Navy Federal, and PenFed, sourced to each lender's own page.",
+    targetKeyword: "personal loan rates by lender",
+    category: "personal loan lenders",
+    angle: "rate comparison",
+    segment: "borrowers comparing personal loan lenders",
+    h1: "Personal Loan Rates by Lender",
+    intro:
+      "Personal loan rates vary a lot by lender, and most banks and credit unions won't give you a real number until you check your rate or apply. This page pulls together what each of the seven lenders below actually publishes about its own personal loan product: typical APR range or cap, loan amount, fees, and who qualifies, so you can see them side by side.\n\nThis is a terms comparison, not a ranking of \"best.\" Several of these lenders don't publish a specific APR range online at all, and we say so plainly instead of guessing. Where a lender does publish a number, we cite the page it came from. ModernWallet is not a lender and takes no placement fees, and no lender paid to appear here or to be listed in a particular order.",
+    rankingCriteria:
+      "This page is compiled directly from each lender's own publicly disclosed personal loan terms, not a paid ranking, and no lender paid for placement or order. We listed lenders in the order they appear in live search demand: Discover, SoFi, Wells Fargo, PNC, US Bank, Navy Federal, and PenFed, not by rate.\n\nFor each lender we checked its own personal loan page for the rate basis (a published range, a stated cap, or unpublished), the loan amount range, fees, funding speed, and any membership or existing-customer requirement. Where a lender publishes an actual annual percentage rate (APR) range, we quote it directly from that lender's own page. Where a lender doesn't disclose a number, that's noted as \"not publicly disclosed\" rather than estimated, since actual pricing depends on your credit, income, and the term you choose, and can only be confirmed by checking your rate.",
+    options: [
+      {
+        name: "Discover",
+        bestFor: "A no-fee loan with next-business-day funding",
+        description:
+          "[Discover](https://www.discover.com/personal-loans/) is best known as a card issuer, but it has run an unsecured personal loan business for years, with amounts from $2,500 to $40,000 and terms up to 84 months. Discover's own page advertises no fees of any kind, including no origination fee, no application fee, and no prepayment penalty, regardless of your credit profile.\n\nYour actual rate depends on your credit and the term you pick. Discover's own rate and payment calculator generally spans a wide band, from around the high single digits up into the mid-20s in APR, so two applicants with different credit files can see very different quotes. A minimum household income of $25,000 applies, and Discover backs every loan with a 30-day return guarantee: return the funds within 30 days and you pay no interest at all.",
+        strengths: [
+          "No fees of any kind: no origination fee, application fee, or prepayment penalty",
+          "Funds can arrive as early as the next business day after acceptance",
+          "A 30-day return guarantee lets you cancel and pay no interest if you change your mind",
+          "Terms run all the way to 84 months, longer than several lenders on this list",
+        ],
+        limitations: [
+          "A minimum household income of $25,000 is required to qualify",
+          "The top of Discover's published rate band runs into the mid-20s APR",
+          "No branch network, so support is limited to online and phone",
+        ],
+        pricing:
+          "Loan amounts $2,500 to $40,000, terms up to 84 months. No origination, application, or prepayment fee. APR varies by credit and term. Source: discover.com.",
+      },
+      {
+        name: "SoFi",
+        bestFor: "The highest loan ceiling, plus autopay and member rate discounts",
+        description:
+          "[SoFi](https://www.sofi.com/personal-loans/) offers unsecured personal loans from $5,000 to $100,000, the highest ceiling of any lender in this comparison. SoFi's own rates page states a fixed APR range of 6.99% to 35.49%, where the lower end already includes a 0.25% autopay discount and a 0.25% member rate discount stacked on top of your base credit-based rate.\n\nSoFi charges no late fees, and its standard no-fee term options carry no origination fee either. Some fee-based term structures do carry an origination fee, deducted from your loan proceeds rather than billed separately, so check which term you're quoted before assuming yours is fee-free. Terms run from two to seven years, and SoFi operates entirely online with no branches to visit.",
+        strengths: [
+          "Loan amounts run up to $100,000, well above most banks on this list",
+          "Autopay and member rate discounts can shave up to half a point off your quoted APR",
+          "No late fees on any SoFi personal loan",
+          "Same-day funding is available for many approved borrowers",
+        ],
+        limitations: [
+          "The published APR band tops out at 35.49%, higher than several bank competitors' stated caps",
+          "Some term and fee structures carry an origination fee deducted from your proceeds",
+          "No physical branch, so support is online and phone only",
+        ],
+        pricing:
+          "Loan amounts $5,000 to $100,000, terms two to seven years. APR 6.99% to 35.49% fixed, with autopay and member rate discounts applied at the low end. Source: sofi.com.",
+      },
+      {
+        name: "Wells Fargo",
+        bestFor: "Existing customers with a Wells Fargo account open 12+ months",
+        description:
+          "[Wells Fargo](https://www.wellsfargo.com/personal-loans/) limits its personal loan to existing customers only. You need a qualifying Wells Fargo consumer account that has been open for at least 12 months before you can apply. Loan amounts run from $3,000 to $100,000 with terms from 12 to 84 months, and Wells Fargo's page states no origination fee, no closing fee, and no prepayment penalty.\n\nBecause the loan is existing-customer-only, Wells Fargo doesn't publish a general rate range for the public to compare before opening an account. Your quote comes from your actual banking relationship and credit file when you check your rate. Wells Fargo does advertise a rate discount for autopay from a qualifying account, and most approved borrowers get funds the same day.",
+        strengths: [
+          "No origination fee, closing fee, or prepayment penalty",
+          "Autopay from a Wells Fargo account earns a published rate discount",
+          "Same-day funding for most approved applicants",
+          "Loan amounts scale up to $100,000, useful for a large consolidation",
+        ],
+        limitations: [
+          "Open only to existing customers with an account 12 or more months old",
+          "No general rate range published for prospective customers to compare",
+          "The $3,000 minimum loan amount is higher than several online-only lenders",
+        ],
+        pricing:
+          "Existing customers only, account 12+ months old. Loan amounts $3,000 to $100,000, terms 12 to 84 months. No origination, closing, or prepayment fee. Rate quoted per applicant. Source: wellsfargo.com.",
+      },
+      {
+        name: "PNC",
+        bestFor: "A stated APR ceiling before you apply",
+        description:
+          "[PNC](https://www.pnc.com/en/personal-banking/borrowing/personal-loans/unsecured-personal-loan1.html) offers an unsecured personal loan from $5,000 to $35,000 with terms from 12 to 60 months. PNC is unusual among the bank lenders here in stating an actual ceiling on the rate: your APR will not exceed just over 25%, and lower rates go to borrowers who qualify.\n\nPNC charges no origination or application fee and requires no collateral. The loan isn't available everywhere. PNC's page notes it's offered in select states only and asks applicants who aren't already a customer to call and confirm availability before applying.",
+        strengths: [
+          "Publishes an APR ceiling (just over 25%) instead of staying silent on pricing",
+          "No origination or application fee",
+          "No collateral required",
+          "A familiar online-to-branch signing flow for existing PNC customers",
+        ],
+        limitations: [
+          "The $35,000 loan cap is lower than most other lenders in this comparison",
+          "Availability is limited by state, so you have to call to confirm eligibility",
+          "A rate ceiling just over 25% still leaves a wide possible range depending on credit",
+        ],
+        pricing:
+          "Loan amounts $5,000 to $35,000, terms 12 to 60 months. No origination or application fee. APR capped at just over 25%. Available in select states. Source: pnc.com.",
+      },
+      {
+        name: "US Bank",
+        bestFor: "Existing checking customers who want a small amount fast",
+        description:
+          "[US Bank](https://www.usbank.com/loans-credit-lines/personal-loans-and-lines-of-credit.html) offers a standard unsecured personal loan from $1,000 to $50,000, plus a separate Simple Loan built for existing account holders with an eligible checking account, who can borrow as little as $100 up to $25,000. Neither product requires collateral.\n\nCurrent US Bank customers get the best of what's on offer: longer repayment terms up to 84 months, funding that can arrive within hours rather than days, and access to the Simple Loan's flat fee with no annual charge. New-to-bank applicants can still apply for the standard personal loan, but the fastest funding and longest terms go to people who already bank there.",
+        strengths: [
+          "The Simple Loan lets existing checking customers borrow as little as $100",
+          "Existing customers can unlock terms up to 84 months and funding within hours",
+          "No collateral required on either the standard loan or the Simple Loan",
+          "No annual fee on the Simple Loan",
+        ],
+        limitations: [
+          "The longest terms and fastest funding require an existing US Bank relationship",
+          "The Simple Loan caps at $25,000, well below the standard loan's $50,000 ceiling",
+          "Pricing depends on the specific product and relationship rather than one quoted range",
+        ],
+        pricing:
+          "Standard loan $1,000 to $50,000. Simple Loan (existing checking customers) $100 to $25,000, no annual fee. Existing customers can access terms up to 84 months. Source: usbank.com.",
+      },
+      {
+        name: "Navy Federal Credit Union",
+        bestFor: "Military members, veterans, DoD employees, and their families",
+        description:
+          "[Navy Federal Credit Union](https://www.navyfederal.org/loans-cards/personal-loans.html) is the largest credit union in the United States by membership, but it's only open to active duty and retired service members, veterans, Department of Defense civilian employees and retirees, and their immediate family. Once you're a member, its personal loan runs from $250 up to $50,000 for most purposes, or up to $150,000 specifically for a home improvement loan.\n\nNavy Federal states it has no minimum credit score and no minimum income requirement for its personal loan, which is unusual among the lenders in this comparison. It also charges no application, origination, or early prepayment fee. Membership, once you qualify, is a one-time setup rather than a recurring cost.",
+        strengths: [
+          "No minimum credit score or minimum income requirement published",
+          "No application, origination, or prepayment fee",
+          "Loan amounts start as low as $250, useful for a small, specific expense",
+          "Home improvement loans go up to $150,000, well above the general $50,000 cap",
+        ],
+        limitations: [
+          "Membership is restricted to military affiliation, so most civilians can't join",
+          "No published APR range for readers to compare before applying",
+          "As a credit union, in-person service is limited to its own branch footprint",
+        ],
+        pricing:
+          "Membership required (military, DoD, or family affiliation). Loan amounts $250 to $50,000, up to $150,000 for home improvement. No application, origination, or prepayment fee. Source: navyfederal.org.",
+      },
+      {
+        name: "PenFed Credit Union",
+        bestFor: "Credit union pricing without a military connection",
+        description:
+          "[PenFed Credit Union](https://www.penfed.org/personal-loans) started as a military-affiliated credit union, but membership is now open to anyone, with no service requirement at all. You don't need to join before you apply. If your loan is approved, PenFed opens the membership for you as part of closing, funded by a minimum $5 deposit.\n\nPenFed's personal loan runs from $600 to $50,000, and its page states no balance transfer fee, no early payoff fee, and no origination fee. You can check your rate first using a soft credit pull that doesn't affect your score, before deciding whether to move forward with a full application.",
+        strengths: [
+          "Open to anyone. No military or employer affiliation required despite the credit union structure",
+          "No origination fee, balance transfer fee, or early payoff fee",
+          "Rate checks use a soft pull and don't affect your credit score",
+          "Membership is created automatically at closing, so it's not a separate barrier",
+        ],
+        limitations: [
+          "The $50,000 loan cap is on the lower end of this comparison",
+          "No general APR range published on PenFed's own personal loan page",
+          "Even the $600 minimum loan requires opening a PenFed membership with a $5 deposit",
+        ],
+        pricing:
+          "Loan amounts $600 to $50,000. No origination, balance transfer, or early payoff fee. Membership open to anyone, created at closing. Source: penfed.org.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Best For", "Loan Amount", "Rate (if Disclosed)", "Fees", "Funding Speed"],
+      rows: [
+        { name: "Discover", values: ["No-fee loan, fast funding", "$2,500 to $40,000", "High single digits to mid-20s APR", "None disclosed", "Next business day"] },
+        { name: "SoFi", values: ["Largest loan ceiling", "$5,000 to $100,000", "6.99% to 35.49% APR (published)", "None on no-fee terms", "Same day for many"] },
+        { name: "Wells Fargo", values: ["Existing customers only", "$3,000 to $100,000", "Not published, quoted per applicant", "None disclosed", "Same day for most"] },
+        { name: "PNC", values: ["Stated rate ceiling", "$5,000 to $35,000", "Capped just over 25% APR", "None disclosed", "Not stated"] },
+        { name: "US Bank", values: ["Existing customers, small amounts", "$1,000 to $50,000 (Simple Loan $100 to $25,000)", "Not published, quoted per applicant", "None on Simple Loan", "Within hours for existing customers"] },
+        { name: "Navy Federal", values: ["Military-affiliated members", "$250 to $50,000 ($150,000 for home improvement)", "Not published", "None disclosed", "Not stated"] },
+        { name: "PenFed", values: ["Open membership, no military tie", "$600 to $50,000", "Not published", "None disclosed", "Not stated"] },
+      ],
+    },
+    verdict:
+      "If you already bank with Wells Fargo, PNC, or US Bank and your account is old enough to qualify, checking your rate there first costs nothing and can surface a relationship discount or faster funding you won't get as a new customer elsewhere.\n\nIf you're starting from scratch, Discover and SoFi are the two lenders here that actually publish a rate range or cap, so you can compare a real number before you apply. SoFi's higher ceiling fits a larger consolidation, while Discover's 30-day return guarantee gives you a way out if you change your mind after funding.\n\nIf you or an immediate family member has military, Department of Defense, or veteran status, check Navy Federal first. It publishes no minimum credit score or income requirement, which can matter if your credit file is thin. If that affiliation doesn't apply to you but you still want credit union pricing, PenFed's open membership gets you a similar structure without it.",
+    sections: [
+      {
+        heading: "How Personal Loan Rates Are Actually Set",
+        content:
+          "Your personal loan rate comes from four things a lender checks before it approves you: your credit score, your income relative to your existing debt, the loan term you pick, and whether the lender uses a fixed or variable structure. A shorter term usually earns a lower rate because the lender is exposed to your risk for less time, while a longer term spreads payments thinner but usually costs more in total interest.\n\nCredit score does the heaviest lifting. A borrower with a strong credit file can qualify for a rate near the bottom of a lender's published range, while a borrower with limited or damaged credit history often lands near the top, if they're approved at all. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/personal-loans/) notes that a lender has to show you the total cost of the loan, including the APR, before you sign, which is the number that actually captures fees on top of the interest rate.\n\nDiscover and SoFi publish an actual range here, so you can gauge roughly where you'll land before you apply. Others generate your specific number only after you check your rate or apply: Wells Fargo, Navy Federal, and PenFed publish no range at all, and PNC publishes only a ceiling rather than a full range.",
+      },
+      {
+        heading: "Who Should Skip a Lender-by-Lender Comparison",
+        content:
+          "A personal loan makes sense when you know the exact amount you need and want one fixed payment until it's paid off. It's the wrong tool if you don't yet know how much you need, since applying resets the clock every time your number changes and can trigger another hard credit check.\n\nSkip this comparison if your credit score sits well below what any of these seven lenders typically approve. Rather than applying repeatedly and collecting hard inquiries that push your score down further, spend a few months building credit first, through on-time payments and lower credit utilization, then come back once your file can actually clear a personal loan's underwriting bar.\n\nThis page also isn't the right stop if you need cash today. None of these seven lenders promises same-hour funding for a first-time applicant. If your need is that urgent, compare your real timeline against the funding-speed column in the table above before applying, since a rejected same-day expectation often costs you a hard credit inquiry for nothing.",
+      },
+      {
+        heading: "Credit Union Membership Loans vs Bank Personal Loans",
+        content:
+          "A credit union personal loan and a bank personal loan solve the same problem through a different structure. Navy Federal and PenFed are both credit unions, which means you technically become a member and part-owner of the institution rather than just a customer. The [National Credit Union Administration (NCUA)](https://ncua.gov/consumers) calls the rule that determines who can join a credit union its field of membership, and that's what unlocks each credit union's loan pricing here.\n\nThe tradeoff runs in both directions. Navy Federal's military-only membership and PenFed's open, anyone-can-join membership both skip the minimum credit score requirement that several banks in this comparison apply, but neither publishes an APR range, so you can't compare a real number until you're already partway into the application. Discover and SoFi, by contrast, publish their ranges up front, so you know roughly where you'll land before you commit to a hard credit check.\n\nIf you already qualify for Navy Federal through military or family affiliation, its no-minimum-credit-score policy is worth checking first, since it may approve you where a bank with a published range would decline you outright. If that affiliation doesn't apply to you but you still want credit union pricing, PenFed's open membership gets you a similar structure without it.",
+      },
+      {
+        heading: "How to Compare Loan Offers Fairly",
+        content:
+          "The interest rate alone doesn't tell you the true cost of a loan. Look at the APR instead, since it folds in any origination fee or other upfront charge alongside the interest rate itself, which is why two loans with the same interest rate can still cost different amounts.\n\nRun the same loan amount and term through each lender's own rate-check tool before you compare numbers side by side. Most of the lenders on this page, including Discover, SoFi, Wells Fargo, and PNC, let you check your rate with a soft credit pull that doesn't affect your score, so there's no cost to comparing more than one before you commit to a full application.\n\nOnce you have a real rate quoted, run it through our [personal loan calculator](/personal-loan/) to see your actual monthly payment and total interest over the full term. If you're weighing a personal loan against paying down a credit card balance instead, our [credit card payoff calculator](/credit-card-payoff/) shows the same math for that debt side by side.",
+      },
+      {
+        heading: "What Would Change This Comparison",
+        content:
+          "This comparison would look different if a major bank that currently skips personal loans re-entered the market. Chase, Bank of America, and Capital One don't currently offer a general-purpose personal loan, and if any of the three launches one, it would belong on this page next to the seven lenders here.\n\nIt would also change if any of the lenders that don't publish a rate range today start disclosing one. Wells Fargo, US Bank, Navy Federal, and PenFed currently quote your rate only after you check it or apply, and a published range from any of them would make this comparison more useful on the page itself rather than sending you to check your own rate first.\n\nRates, fees, and loan caps on this page reflect what each lender's own site states as of this writing. Lenders change pricing and terms without much notice, so confirm the current number on the lender's own page linked above before you apply.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which lender has the lowest personal loan rate?",
+        answer:
+          "No single lender consistently has the lowest rate for every borrower. SoFi and Discover publish the widest rate ranges here, and where you land in that range depends on your credit score, income, and the term you choose. Checking your rate at two or three lenders on the same day, using the same loan amount and term, is the only way to find your actual lowest offer.",
+      },
+      {
+        question: "Do all these lenders charge an origination fee?",
+        answer:
+          "No. Discover, SoFi's no-fee term options, Wells Fargo, PNC, Navy Federal, and PenFed all state no origination fee on their own pages. Some of SoFi's fee-based term structures do carry one, deducted from your loan proceeds, so check which term you're quoted before assuming your loan is fee-free.",
+      },
+      {
+        question: "Can I get a personal loan without joining a credit union?",
+        answer:
+          "Yes. Five of the seven lenders on this page, Discover, SoFi, Wells Fargo, PNC, and US Bank, are banks, not credit unions, so no membership is required. Only Navy Federal and PenFed require you to join, and PenFed's membership is open to anyone and created automatically if your loan is approved.",
+      },
+      {
+        question: "What credit score do I need for a personal loan?",
+        answer:
+          "It depends on the lender. Each of these seven applies its own minimum, and most don't publish the exact number. Navy Federal is the outlier: it states no minimum credit score requirement at all for its personal loan. For the rest, the only way to know where you stand is to check your rate, which typically uses a soft credit pull that doesn't affect your score.",
+      },
+      {
+        question: "How fast can I actually get the money?",
+        answer:
+          "Funding speed varies by lender and by whether you're already a customer. Discover funds as early as the next business day after acceptance. SoFi and Wells Fargo both offer same-day funding for many approved borrowers. Existing US Bank customers can sometimes get funds within hours. None of the seven lenders on this page promises same-hour funding for a first-time applicant.",
+      },
+      {
+        question: "Is a personal loan or a credit card better for debt consolidation?",
+        answer:
+          "A personal loan gives you one fixed payment and a fixed payoff date, which makes budgeting simpler than a revolving credit card balance. A 0% intro-APR balance transfer card can beat a personal loan's rate for the length of the intro period, but only if you can pay off the full balance before that period ends and the rate jumps back up. Run both scenarios through our [credit card payoff calculator](/credit-card-payoff/) and [personal loan calculator](/personal-loan/) before deciding, since the better option depends on your specific balance, rate, and how fast you can realistically pay it down.",
+      },
+    ],
+    sources: [
+      { label: "CFPB: Personal Loans", url: "https://www.consumerfinance.gov/consumer-tools/personal-loans/" },
+      { label: "NCUA: Consumer Resources", url: "https://ncua.gov/consumers" },
+    ],
+    relatedComparisons: ["heloc-vs-personal-loan"],
+    calculatorLinks: [
+      { label: "Personal Loan Calculator", href: "/personal-loan/" },
+      { label: "Credit Card Payoff Calculator", href: "/credit-card-payoff/" },
+    ],
+  },
+
+  // ── Best Net Worth Tracking Tools ────────────────────────────────────────
+  {
+    slug: "best-net-worth-tracking-tools",
+    title: "Best Net Worth Tracking Tools (2026)",
+    metaDescription:
+      "Compare net worth tracking tools: free calculators, linked-account apps like Empower and Monarch Money, and a DIY spreadsheet, and which fits you.",
+    targetKeyword: "best net worth tracking tools",
+    category: "net worth tracking tools",
+    angle: "best",
+    segment: "people tracking net worth over time",
+    h1: "Best Net Worth Tracking Tools",
+    intro:
+      "The best net worth tracking tool depends on how much ongoing work you're willing to do, and whether you're comfortable linking your bank and investment accounts to get it. A one-time calculator gets you a single accurate number in a few minutes with nothing linked. A linked-account app keeps that number updated automatically, in exchange for handing your account credentials to a third party.\n\nWe compared six approaches here: three free calculators (ours, Bankrate's, and NerdWallet's), two linked-account apps (Empower and Monarch Money), and a plain spreadsheet. We scored each on cost, privacy, and how much upkeep it actually demands, and no company paid for placement or ranking order.",
+    rankingCriteria:
+      "We looked at what each tool actually requires from you: whether it needs your bank credentials or just a handful of numbers you already know, what it costs today, and how much you'd need to keep updating it yourself for the number to stay accurate. A tool that requires linking every account gets more convenience in exchange for handing a company your account credentials, so we weighed that tradeoff directly rather than assuming automatic is always better.\n\nFor the two paid or freemium apps, we noted the actual current price, including where a free tier exists and what it excludes. For the calculators and the spreadsheet, we noted what data you have to gather yourself and how each handles a value that changes constantly, like a home price or a brokerage balance.",
+    options: [
+      {
+        name: "ModernWallet Net Worth Calculator",
+        bestFor: "A one-time, private snapshot with nothing to link and nothing to sign up for",
+        description:
+          "Our own [net worth calculator](/net-worth/) asks for your assets and liabilities directly: cash, investments, retirement accounts, real estate, and vehicles on one side, credit cards, loans, and a mortgage balance on the other, then does the subtraction instantly. Nothing gets linked, stored, or sent anywhere. You close the tab and the numbers are gone.\n\nThat tradeoff cuts both ways. You get a real number in a couple of minutes with zero setup and zero privacy risk, but you also have to type in your balances by hand each time you want an updated figure, since nothing here syncs automatically.",
+        strengths: [
+          "No signup, no linked accounts, and no data stored anywhere",
+          "A full number in a couple of minutes, with no setup step",
+          "Free, with no upsell to a paid tier",
+          "Works the same whether you check it once or every month",
+        ],
+        limitations: [
+          "No automatic updates. You re-enter your balances by hand each time",
+          "No historical chart of how your net worth has changed over time",
+          "Best for a single snapshot, not ongoing daily tracking",
+        ],
+        pricing: "Free, with no signup and no linked accounts required.",
+      },
+      {
+        name: "Bankrate Net Worth Calculator",
+        bestFor: "A quick calculator with a built-in multi-year projection",
+        description:
+          "[Bankrate](https://www.bankrate.com/personal-finance/personal-net-worth-calculator/)'s net worth calculator works the same way ours does: you enter assets and liabilities and it does the math. Bankrate adds a projection feature that estimates how your net worth could grow or shrink over the next several years based on the numbers you enter, which our calculator doesn't attempt.\n\nLike our calculator, nothing is linked or saved between visits, so you're re-entering your figures every time you want a fresh number. Bankrate's page also carries the surrounding content and ads typical of a media site, rather than a standalone tool.",
+        strengths: [
+          "Free, with no signup required",
+          "Includes a multi-year projection, not just a current snapshot",
+          "No accounts to link",
+          "Backed by Bankrate's broader library of personal finance explainers",
+        ],
+        limitations: [
+          "No automatic saving between visits, same as any one-time calculator",
+          "The projection is only as accurate as the growth rate you assume",
+          "Surrounded by ads and other content, not a dedicated tool page",
+        ],
+        pricing: "Free, with no signup and no linked accounts required.",
+      },
+      {
+        name: "NerdWallet Net Worth Calculator",
+        bestFor: "A calculator paired with educational context on what your number means",
+        description:
+          "[NerdWallet](https://www.nerdwallet.com/investing/calculators/net-worth-calculator)'s net worth calculator follows the same basic format, assets minus liabilities, with a simple form and an instant result. NerdWallet pairs the calculator with explanatory content on what counts as an asset or liability and how your number compares to typical benchmarks by age.\n\nAs with the other calculators here, nothing is linked or stored, so the number reflects a single moment rather than an ongoing balance you can watch change.",
+        strengths: [
+          "Free, with no signup required",
+          "Clear explanations of what to count as an asset or a liability",
+          "No accounts to link",
+          "Useful if you're calculating net worth for the first time and want the definitions alongside the math",
+        ],
+        limitations: [
+          "No automatic saving or updating between visits",
+          "No projection feature the way Bankrate's version has",
+          "Part of a larger site with unrelated financial products advertised nearby",
+        ],
+        pricing: "Free, with no signup and no linked accounts required.",
+      },
+      {
+        name: "Empower Personal Dashboard",
+        bestFor: "Ongoing, automatic tracking across every linked account, for free",
+        description:
+          "[Empower](https://www.empower.com/tools/net-worth) (formerly Personal Capital) links your bank, credit card, loan, and investment accounts, then keeps a running net worth figure updated automatically every time a balance changes. It shows the trend over time as a chart, not just a single number, and it can pull an estimated home value and mortgage balance in as well.\n\nThe dashboard itself is free. Empower makes money on a separate paid wealth management service, and creating a free account means giving Empower read access to your linked accounts through a data aggregation service, which some readers may not want regardless of the convenience.",
+        strengths: [
+          "Updates automatically once your accounts are linked, no manual re-entry",
+          "Shows your net worth trend as a chart over time, not just one number",
+          "Free to use for net worth tracking, with no cost to see your dashboard",
+          "Can estimate home value and pull your mortgage balance automatically",
+        ],
+        limitations: [
+          "Requires linking your bank, credit, loan, and investment accounts",
+          "The free dashboard exists partly to market Empower's paid wealth management service",
+          "Setup takes longer than a calculator, since you're connecting multiple accounts",
+        ],
+        pricing: "The dashboard is free. Paid portfolio management, a separate product, charges an annual fee based on assets managed.",
+      },
+      {
+        name: "Monarch Money",
+        bestFor: "Couples who want net worth tracking bundled with budgeting",
+        description:
+          "[Monarch Money](https://www.monarchmoney.com/) links your accounts the same way Empower does, but it's built primarily as a budgeting app, with net worth tracking as one part of a larger dashboard that also covers spending, cash flow, and goals. Two people can share one household view, which Empower's individual dashboard doesn't offer in the same way.\n\nMonarch charges an annual subscription, currently around $100 a year for its entry-level plan, after a short free trial. If you only want net worth tracking and don't need the budgeting and goal-setting features, that's a real ongoing cost for something the calculators above give you free.",
+        strengths: [
+          "Shared household view for couples tracking net worth together",
+          "Budgeting, cash flow, and net worth all live in one linked-account dashboard",
+          "Automatic updates once your accounts are connected",
+          "Regularly adds features on top of the core account-linking product",
+        ],
+        limitations: [
+          "Costs roughly $100 a year after the free trial, unlike every other option here",
+          "Requires linking your accounts, the same privacy tradeoff as Empower",
+          "Overkill if net worth is the only thing you actually want to track",
+        ],
+        pricing: "Around $100 a year for the entry-level plan, after a short free trial. Confirm the current price on Monarch's own site before subscribing.",
+      },
+      {
+        name: "A DIY Spreadsheet",
+        bestFor: "Full control over the categories and formulas, with nothing shared",
+        description:
+          "A spreadsheet in Google Sheets or Excel is the oldest version of this tool, and it's still a real option. You build your own columns for each asset and liability, write a simple subtraction formula, and add a new row or tab each month to build your own history.\n\nNothing is linked, so there's no account-credential risk at all, and you can track categories a pre-built tool doesn't offer, like a specific collectible or a business you own a stake in. The cost is entirely your own time: every balance update is manual, and a formula mistake can throw off your number silently until you catch it.",
+        strengths: [
+          "Complete control over categories, formulas, and layout",
+          "No linked accounts and no data shared with any company",
+          "Free, using a tool you likely already have",
+          "Builds a real month-over-month history if you keep updating it",
+        ],
+        limitations: [
+          "Every balance update is manual. Nothing syncs automatically",
+          "A formula error can silently throw off your number until you notice",
+          "Takes real setup time to build something as clean as a pre-built calculator",
+        ],
+        pricing: "Free, using Google Sheets or Microsoft Excel.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Best For", "Cost", "Accounts Linked?", "Updates", "Setup Time"],
+      rows: [
+        { name: "ModernWallet Calculator", values: ["Private one-time snapshot", "Free", "No", "Manual, on demand", "A couple of minutes"] },
+        { name: "Bankrate Calculator", values: ["Quick calculator with a projection", "Free", "No", "Manual, on demand", "A couple of minutes"] },
+        { name: "NerdWallet Calculator", values: ["Calculator with definitions built in", "Free", "No", "Manual, on demand", "A couple of minutes"] },
+        { name: "Empower Personal Dashboard", values: ["Free automatic tracking", "Free (paid tier is separate)", "Yes", "Automatic", "10 to 15 minutes to link accounts"] },
+        { name: "Monarch Money", values: ["Couples budgeting plus net worth", "About $100 a year after trial", "Yes", "Automatic", "10 to 15 minutes to link accounts"] },
+        { name: "DIY Spreadsheet", values: ["Full control, nothing shared", "Free", "No", "Manual, on your schedule", "30+ minutes to build"] },
+      ],
+    },
+    verdict:
+      "If you want a real number today and don't want to link anything, start with our [net worth calculator](/net-worth/). It's free, it asks for numbers you likely already know, like your account balances and any loan payoff amounts, and nothing you enter gets stored or shared. Bankrate's and NerdWallet's versions work the same way and are worth trying if you want a projection or more explanation alongside the math.\n\nIf you want your number to update itself without any manual work, Empower's free dashboard is the strongest option here. It costs nothing to track your net worth, updates automatically as your linked balances change, and shows your trend as a chart instead of a single point in time. The real cost is handing Empower read access to your accounts, a tradeoff only you can decide is worth it.\n\nMonarch Money makes sense specifically if you also want budgeting and cash flow tracking bundled with net worth, and especially if you're managing money as a couple. Paying roughly $100 a year only makes sense if you'll actually use the budgeting side, not just the net worth number.\n\nA spreadsheet is worth building if you have a category none of these tools handle well, like a business stake or a specific collectible, or if avoiding any third-party data link matters more to you than convenience.",
+    sections: [
+      {
+        heading: "What a Linked-Account App Sees That a Calculator Doesn't",
+        content:
+          "A linked-account app like Empower or Monarch Money connects to your bank, credit card, loan, and investment accounts through a data aggregation service, then pulls your balances automatically every time they change. That's the entire value of the automatic update: the app can see a balance the moment it moves, without you opening a single statement.\n\nA calculator sees only what you type in, at the exact moment you type it. That's less convenient over time, but it also means a calculator has nothing to leak if a company's systems are ever breached, since it never stored your account credentials or balances in the first place.\n\nNeither approach is wrong. The tradeoff is convenience against how many places your financial data lives, and that's a personal call, not a technical one.",
+      },
+      {
+        heading: "Who Should Stick With a Calculator Instead of an App",
+        content:
+          "A calculator is the better fit if you check your net worth occasionally, maybe once a quarter or once a year, rather than wanting a live number you glance at daily. Linking every account for an occasional check is more setup than the benefit is worth.\n\nIt's also the better fit if you're not comfortable handing your bank login credentials to a third-party aggregation service, even one with a strong security track record. That discomfort is a legitimate reason to skip Empower and Monarch entirely, not a reason to feel you're doing net worth tracking wrong.\n\nSkip a calculator, though, if you specifically want to see your number change day to day without touching anything. That's exactly what Empower's automatic updates and Monarch's shared household view are built for, and re-entering your balances by hand every week to get the same effect would waste more time than the app's setup takes.",
+      },
+      {
+        heading: "Is It Safe to Link Your Accounts to a Net Worth App",
+        content:
+          "Linking your accounts to a service like Empower or Monarch Money means connecting through a data aggregation service that reads your account balances and transaction history, and depending on how a specific aggregator works, that can involve sharing your actual online banking login credentials rather than a separate token. Reputable aggregators encrypt that connection and can't move money out of your accounts, only read balances and transactions.\n\nThat said, every additional company holding a copy of your financial data is one more place a breach could expose it. Financial institutions are required to protect the privacy of your financial data under federal law, and the [Federal Trade Commission (FTC)](https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/financial-privacy) is one of the agencies that enforces those protections, though enforcement doesn't erase the tradeoff you're making by linking an account in the first place.\n\nIf that risk doesn't sit well with you, a calculator or a spreadsheet gives you the same net worth number with nothing to link at all.",
+      },
+      {
+        heading: "How Often You Should Actually Check Your Net Worth",
+        content:
+          "Checking your net worth once a month is frequent enough to catch a real trend without obsessing over normal daily swings in your investment balances. A brokerage account can move a few percent in a single week for reasons that have nothing to do with your actual financial decisions, and checking daily mostly just shows you noise.\n\nQuarterly is enough for most people who use a calculator rather than an automatic app, since it's frequent enough to catch a problem, like debt creeping up, before it gets large, without becoming a chore you start skipping. If you're using an automatic app, the update happens whether you look or not, so the real decision is how often you check the dashboard, not how often the number changes.",
+      },
+      {
+        heading: "What Would Change This Recommendation",
+        content:
+          "This recommendation would shift if Empower or Monarch Money changed their pricing model. Empower's core dashboard is free today, and Monarch charges an annual subscription. If either flips that structure, the cost comparison in the table above would need a fresh look.\n\nIt would also change if you decide budgeting matters as much to you as net worth tracking. This page ranks these six options specifically for net worth, and Monarch Money's budgeting and cash flow features, which this comparison barely touches, might tip the decision in its favor for a reader who wants both in one place.\n\nConfirm the current price and feature list on each company's own site before you commit, since app pricing and free-tier limits change more often than a calculator's math does.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Empower Personal Dashboard really free?",
+        answer:
+          "Yes, the net worth tracking dashboard itself is free with no signup fee. Empower makes its money from a separate paid wealth management service, and creating a free dashboard account does put you on a list Empower may contact about that paid service.",
+      },
+      {
+        question: "How much does Monarch Money cost?",
+        answer:
+          "Monarch's entry-level plan currently runs around $100 a year after a short free trial, with a higher-priced plan for people who want more advanced budgeting and planning features. Confirm the current price on Monarch's own site before subscribing, since subscription pricing changes more often than a calculator's math does.",
+      },
+      {
+        question: "Do I have to link my bank accounts to track net worth?",
+        answer:
+          "No. Our calculator, Bankrate's, and NerdWallet's all calculate net worth from numbers you type in yourself, with nothing linked or stored. Linking is only required if you want the number to update automatically, which is what Empower and Monarch Money are built for.",
+      },
+      {
+        question: "What's a good net worth for my age?",
+        answer:
+          "It depends heavily on your income, location, and whether you're carrying debt like student loans or a mortgage. Our [net worth by age calculator](/net-worth/net-worth-by-age-calculator/) breaks down typical ranges by age bracket so you can see where you stand relative to others in your own age group.",
+      },
+      {
+        question: "How is net worth actually calculated?",
+        answer:
+          "Net worth is everything you own minus everything you owe: add up your cash, investments, retirement accounts, and property, then subtract your credit card balances, loans, and any mortgage. Our [how to calculate net worth guide](/net-worth/how-to-calculate-net-worth/) walks through exactly what counts on each side.",
+      },
+      {
+        question: "Can I track net worth for free without any app at all?",
+        answer:
+          "Yes. A calculator like ours, Bankrate's, or NerdWallet's gives you a real number in a couple of minutes for free, and a spreadsheet in Google Sheets or Excel costs nothing and lets you build your own month-over-month history. Neither requires linking an account or paying a subscription.",
+      },
+    ],
+    sources: [
+      { label: "Federal Trade Commission: Financial Privacy", url: "https://www.ftc.gov/news-events/topics/protecting-consumer-privacy-security/financial-privacy" },
+    ],
+    calculatorLinks: [
+      { label: "Net Worth Calculator", href: "/net-worth/" },
+      { label: "Net Worth by Age Calculator", href: "/net-worth/net-worth-by-age-calculator/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
