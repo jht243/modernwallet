@@ -141,6 +141,21 @@ export const CALCULATORS: CalculatorDef[] = [
         answer:
           "Adding extra money to your monthly payment goes straight to principal and shortens your loan. Because early payments are mostly interest, extra principal early saves the most interest over the life of the loan. Run the numbers with our [mortgage extra payment calculator](/mortgage/extra-payment-calculator/), [pay off mortgage early calculator](/mortgage/early-payoff-calculator/), and [mortgage payoff calculator](/mortgage/payoff-calculator/).",
       },
+      {
+        question: "What is a mortgage calculator?",
+        answer:
+          "A mortgage calculator is a tool that estimates your monthly principal and interest (P&I) payment on a home loan from four inputs: home price, down payment, interest rate, and loan term. Enter those figures in the calculator above and it returns your monthly payment plus a full amortization schedule breaking down interest versus principal for every payment.",
+      },
+      {
+        question: "How does a mortgage calculator work?",
+        answer:
+          "A mortgage calculator applies the standard amortization formula: M = P × [r(1+r)^n] ÷ [(1+r)^n − 1], where M is the monthly payment, P is your loan principal, r is your monthly interest rate (annual rate ÷ 12), and n is your total number of payments (loan term in years × 12). For the $320,000 loan at 6.5% over 30 years described above, r is 0.5417% and n is 360, and running those numbers through the formula returns the $2,022.62 monthly P&I payment shown in the example. Plug the same formula into a spreadsheet if you want to check the calculator's math yourself.",
+      },
+      {
+        question: "Is a mortgage calculator accurate?",
+        answer:
+          "This calculator accurately estimates your monthly principal and interest payment from the numbers you enter, using the same amortization math your lender applies. What it can't know is your actual lender-quoted APR or your final closing costs, since those depend on your specific lender, your credit profile, and points or fees that vary deal to deal. Treat the number above as a solid planning estimate, then confirm your real rate and fees on a [Loan Estimate](https://www.consumerfinance.gov/owning-a-home/loan-estimate/) from an actual lender before you commit.",
+      },
     ],
     sources: [
       { label: "Freddie Mac — Primary Mortgage Market Survey (current rates)", url: "https://www.freddiemac.com/pmms" },
