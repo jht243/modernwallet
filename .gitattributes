@@ -1,0 +1,6 @@
+# Append-only run ledgers: every routine adds its own line(s) at the same spot, so a
+# plain 3-way merge conflicts on every concurrent run and the whole run gets discarded
+# as a phantom "deploy conflict". These files have no semantics beyond "one record per
+# line", so union (keep both sides' lines) is always the correct resolution.
+reports/standards-ledger.jsonl merge=union
+reports/**/ledger.md           merge=union
