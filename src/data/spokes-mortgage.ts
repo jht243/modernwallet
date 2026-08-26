@@ -255,11 +255,18 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Recasting applies a lump sum to principal and lowers your monthly payment while keeping the same term. Paying off early sends extra money toward principal to shorten the term instead. Recasting eases your budget, while prepaying gets you debt-free sooner.",
       },
+      {
+        question: "Should I pay off my mortgage early or invest the difference?",
+        answer:
+          "Paying extra principal earns a guaranteed return equal to your mortgage rate. Investing offers a historically higher, uncertain one instead. The S&P 500 has averaged close to 10% a year since 1957, before inflation, per [S&P Dow Jones Indices](https://www.spglobal.com/spdji/en/indices/equity/sp-500/). Check today's average on [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/series/MORTGAGE30US), since mortgage rates move too. A rate near or above that average favors paying down principal. A rate well below it favors investing instead. Either way, a historical average is not a guarantee for the years ahead.",
+      },
     ],
     sources: [
       { label: "CFPB — Can I be charged a penalty for paying off my mortgage early?", url: "https://www.consumerfinance.gov/ask-cfpb/can-i-be-charged-a-penalty-for-paying-off-my-mortgage-early-en-204/" },
       { label: "CFPB — What is a prepayment penalty?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/" },
       { label: "CFPB — An essential guide to building an emergency fund", url: "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/" },
+      { label: "S&P Dow Jones Indices — S&P 500", url: "https://www.spglobal.com/spdji/en/indices/equity/sp-500/" },
+      { label: "Federal Reserve Economic Data (FRED) — 30-Year Fixed Rate Mortgage Average", url: "https://fred.stlouisfed.org/series/MORTGAGE30US" },
     ],
     toolHeading: "Should you pay off your mortgage early?",
     toolSubheading: "Enter your balance as the home price, set down payment to $0, and add an extra payment.",
@@ -326,12 +333,18 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "No. Running numbers through a mortgage calculator, including this one, does not pull your credit report or affect your score in any way — it's a math tool, not a loan application. Your score is only affected once a lender runs a hard credit inquiry as part of an actual preapproval or application.",
       },
+      {
+        question: "Does PITI vary by state?",
+        answer:
+          "Yes. The T and the I in PITI move with your state and county. The P&I portion does not. Property taxes alone range from under 0.3% of assessed value in Hawaii to over 2.1% in New Jersey, well outside the 1.1% national average, per the Tax Foundation. Insurance adds another layer of variation. The [National Association of Insurance Commissioners (NAIC)](https://content.naic.org/article/naic-releases-first-its-kind-national-analysis-homeowners-insurance-market-trends) found inflation-adjusted premiums rising 18.3% to 43.3% across U.S. regions between 2018 and 2024 in its own market analysis. Pull your county's actual tax bill and a real insurance quote before you trust any PITI estimate for your target home.",
+      },
     ],
     sources: [
       { label: "CFPB — What is private mortgage insurance?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/" },
       { label: "CFPB — Understand loan options", url: "https://www.consumerfinance.gov/owning-a-home/loan-options/" },
       { label: "Tax Foundation — Property Taxes by State", url: "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/" },
       { label: "CFPB — What are closing costs?", url: "https://www.consumerfinance.gov/ask-cfpb/what-are-closing-costs-en-183/" },
+      { label: "NAIC — National Analysis of Homeowners Insurance Market Trends", url: "https://content.naic.org/article/naic-releases-first-its-kind-national-analysis-homeowners-insurance-market-trends" },
     ],
     toolHeading: "Calculate your PITI mortgage payment",
     toolSubheading: "Enter your home price and down payment to see principal and interest, then add taxes and insurance for your full PITI.",
@@ -398,6 +411,16 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "The math above (28% front-end, 36% back-end) is the same underlying formula lenders use for jumbo and USDA loans, but both have different limits worth knowing. Jumbo loans are anything above the [FHFA conforming loan limit](https://www.fhfa.gov/data/conforming-loan-limit) ($832,750 in most counties for 2026) and typically require a larger down payment and stronger credit. USDA loans use a stricter 29/41 DTI cap and a 1% upfront guarantee fee, per the [USDA Single Family Housing Guaranteed Loan Program](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program), but allow 0% down in eligible rural areas.",
       },
+      {
+        question: "How do I find my max home price from a target monthly payment?",
+        answer:
+          "Subtract your estimated taxes and insurance from your target monthly payment to find your P&I budget. Then work that budget backward through the loan formula. Say you want to cap your total payment at $2,300 a month. Subtract $350 for taxes and $125 for insurance, which leaves a $1,825 P&I budget. That budget supports roughly a $281,000 loan at 6.75% over 30 years. Add a $70,000 down payment and your target price comes out to about $351,000.",
+      },
+      {
+        question: "Does affordability change for a second home?",
+        answer:
+          "Yes, second-home financing carries stricter down payment and pricing rules than a primary residence. [Freddie Mac](https://sf.freddiemac.com/general/maximum-ltv-tltv-htltv-ratio-requirements-for-conforming-and-super-conforming-mortgages) caps second-home purchase loans at a 90% loan-to-value ratio, which sets your minimum down payment at 10% of the price. That's a bigger down payment than many primary-residence loans require, including FHA's 3.5% minimum. [Fannie Mae](https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types) also applies a separate loan-level price adjustment to second homes, so the rate typically runs higher than an identical primary-residence loan. You also cannot count rental income from the property toward the 28/36 DTI ratios above. Fannie Mae requires the owner to keep exclusive control of a second home and bars using its rental income to qualify.",
+      },
     ],
     sources: [
       { label: "CFPB — How do lenders decide how much to lend?", url: "https://www.consumerfinance.gov/ask-cfpb/how-do-lenders-decide-how-much-money-to-lend-me-en-19/" },
@@ -405,6 +428,8 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       { label: "HUD — FHA Loan Eligibility", url: "https://www.hud.gov/buying/loans" },
       { label: "FHFA — Conforming Loan Limit Values", url: "https://www.fhfa.gov/data/conforming-loan-limit" },
       { label: "USDA — Single Family Housing Guaranteed Loan Program", url: "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program" },
+      { label: "Freddie Mac — Maximum LTV/TLTV/HTLTV Ratio Requirements", url: "https://sf.freddiemac.com/general/maximum-ltv-tltv-htltv-ratio-requirements-for-conforming-and-super-conforming-mortgages" },
+      { label: "Fannie Mae — Selling Guide: Occupancy Types (Second Home)", url: "https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types" },
     ],
     toolHeading: "See what your target home price costs monthly",
     toolSubheading: "Enter a home price and down payment to find the P&I payment, then apply the 28% front-end rule to check affordability.",
