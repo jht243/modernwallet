@@ -177,7 +177,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "What is a mortgage amortization calculator?",
         answer:
-          "A mortgage amortization calculator builds a month-by-month schedule showing how each payment splits between principal and interest, plus your remaining balance. It reveals how slowly your balance falls in the early years and how equity builds over time.",
+          "A mortgage amortization calculator builds a month-by-month schedule showing how each payment splits between principal and interest, plus your remaining balance. It reveals how slowly your balance falls in the early years and how equity builds over time. Want to build the same schedule yourself in a spreadsheet? See our [mortgage amortization Excel template guide](/guides/mortgage-amortization-schedule-excel-template/) for the formula.",
       },
       {
         question: "Why does most of my early payment go to interest?",
