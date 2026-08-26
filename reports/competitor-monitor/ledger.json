@@ -43240,11 +43240,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/financial-macros-cash-back": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:d097c0e209e7ca93be69548255c9d3d7d8d8505fa40507154592f277d7cb4b0e",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T17:31:46+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-cash-back-credit-cards/",
           "outline": [
             "Chase Freedom Flex&#174;",
             "Capital One Savor Cash Rewards Credit Card",
@@ -43258,16 +43262,20 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
         "https://www.bankrate.com/financial-macros-travel-cards": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:02b690e0fa7afe492a0a471081b90ffb01a5fb2edc3f2ab50f6df5f77b8f9e57",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T17:28:58+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-travel-credit-cards/",
           "outline": [
             "Delta SkyMiles\u00ae Reserve American Express Card",
             "American Express Platinum Card\u00ae",
@@ -43281,7 +43289,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
@@ -45199,11 +45207,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/liv-yun-build-your-credit-on-your-own-terms": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:25081f3d0c707f24863dddf95727acc707f9407d2d048c855bc37fe1a28dd89e",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T18:39:52+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-secured-credit-cards/",
           "outline": [
             "Capital One Platinum Secured Credit Card",
             "The secured Self Visa&reg; Credit Card1",
@@ -45216,16 +45228,20 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
         "https://www.bankrate.com/liv-yun-cash-back-for-the-girls": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:599b59e653535a08e64df965c51f7db8f20bcfdb884f316d4468b4ea806c81f2",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T18:37:51+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-cash-back-credit-cards/",
           "outline": [
             "Chase Freedom Unlimited\u00ae",
             "Wells Fargo Active Cash\u00ae Card",
@@ -45237,16 +45253,20 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
         "https://www.bankrate.com/liv-yun-for-the-girls-planning-their-next-trip": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:8b5cf1a1e7bc19c09009118a551517abbd54205ceab4f91bb05abaebd789afbd",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T18:38:49+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-travel-credit-cards/",
           "outline": [
             "Chase Sapphire Preferred\u00ae Card",
             "Capital One VentureOne Rewards Credit Card",
@@ -45258,16 +45278,20 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
         "https://www.bankrate.com/liv-yun-your-first-big-girl-card": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:d6b968c177c9b422a7a7970f1b4f885745ecb9e5056b636199a7b64066b0c241",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T18:36:08+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-student-credit-cards/",
           "outline": [
             "Discover it&#174; Student Cash Back",
             "Capital One Savor Student Cash Rewards Credit Card",
@@ -45279,7 +45303,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
@@ -132368,11 +132392,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/credit-cards/learn/travel-credit-card-apr-how-to-compare": {
+          "acted": true,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:eb42562ed6f1b15aa4227834624a3a89eeced19cd1b32327bca752ad0466d486",
+          "disposition": "published",
           "first_seen": "2026-08-26",
           "kind": "comparison",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T06:47:00-07:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-travel-credit-cards/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "What to look for in a travel card instead",
@@ -132387,7 +132415,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Yes, Travel Credit Card APRs Are High \u2014 but the Lowest Doesn&#39;t Always Win - NerdWallet",
           "tool_io": []
         },
@@ -176386,11 +176414,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-tuesday-august-25-2026": {
+          "acted": false,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:7560ca3633c4411dc53ddc8cded3fa130ce9b52cf072606a11b5ba87fbc33663",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-26",
           "kind": "page",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-25T06:25:00-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -176406,7 +176438,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Tuesday, August 25: Mostly the Same - NerdWallet",
           "tool_io": []
         },
@@ -176590,11 +176622,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-wednesday-august-26-2026": {
+          "acted": false,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:d48509a291c18857cdb0576285377ce576cab2cea5414affceda3682e724977a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-26",
           "kind": "page",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-26T06:49:56-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -176610,7 +176646,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Wednesday, August 26: A Little Higher - NerdWallet",
           "tool_io": []
         },
@@ -177851,11 +177887,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/reviews/third-federal-savings-and-loan-heloc-review": {
+          "acted": false,
+          "acted_date": "2026-08-26",
           "content_hash": "sha256:29b13c24e10011ad8cb0f2fd13986d2066ba99995fc32520c2b0d3a5007997cb",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-08-26",
           "kind": "page",
           "last_seen": "2026-08-26",
           "lastmod": "2026-08-25T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "Our Take",
             "Pros",
@@ -177872,7 +177912,7 @@
             "loan",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Third Federal Savings &amp; Loan HELOC Review 2026 - NerdWallet",
           "tool_io": []
         },
