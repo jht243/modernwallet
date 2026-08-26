@@ -49,7 +49,8 @@ Confirmed against `src/components/CalculatorIsland.tsx`'s `ISLANDS` map: nothing
 ## 4. Primary and secondary keywords
 
 - **Primary:** "net price calculator college"
-- **Secondary (pulled from the chart's raw autocomplete cluster — 57 raw rows, FAFSA/by-university variants):** "college net price calculator," "net price calculator FAFSA," "net price calculator estimate," "college cost after financial aid calculator," "expected family contribution calculator," "student aid index calculator"
+- **Secondary, autocomplete-evidenced (verified present in `2026-08-26.autocomplete.net-worth-calculator.csv`'s 57-row "net price" cluster):** "college net price calculator" (line 51, literal match), "net price calculator FAFSA" (defensible merge — "fafsa" appears in the same cluster attached to "net worth calculator for fafsa," not literally paired with "net price calculator," so treat this pairing as inferred rather than a direct autocomplete hit)
+- **Secondary, suggested expansion — NOT autocomplete-evidenced (standard net-price-calculator terminology a builder should still consider, but do not represent these as measured demand from this run's data; the raw cluster is almost entirely per-university brand variants — harvard, princeton, rutgers, yale, etc. — plus "quick start guide / questions / template / accurate" modifiers):** "net price calculator estimate," "college cost after financial aid calculator," "expected family contribution calculator," "student aid index calculator"
 
 ## 5. Word count / scope estimate
 

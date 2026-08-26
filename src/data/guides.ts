@@ -6902,6 +6902,7 @@ export const GUIDES: Guide[] = [
   },
 
   // -- keyword-pass 2026-08-26: mortgage-amortization-schedule-excel-template --
+  // register: operator · medium: text → text · page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     slug: "mortgage-amortization-schedule-excel-template",
     title: "Mortgage Amortization Schedule: Build It in Excel",
@@ -6959,6 +6960,7 @@ export const GUIDES: Guide[] = [
   },
 
   // -- keyword-pass 2026-08-26: investment-appraisal-methods-npv-irr --
+  // register: operator · medium: text → text · page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     slug: "investment-appraisal-methods-npv-irr",
     title: "Investment Appraisal Methods: NPV, IRR, and Payback",
@@ -7012,6 +7014,7 @@ export const GUIDES: Guide[] = [
   },
 
   // -- keyword-pass 2026-08-26: how-to-choose-an-investment-calculator --
+  // register: operator · medium: text → text · page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     slug: "how-to-choose-an-investment-calculator",
     title: "How to Choose an Investment Calculator",
@@ -7036,7 +7039,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Tax-Aware Calculators: What the IRS Actually Takes",
-        body: "A tax-aware calculator accounts for the fact that a dollar in a Roth IRA, a traditional 401(k), and a taxable brokerage account are not worth the same amount once you actually withdraw them. Traditional retirement accounts are taxed as ordinary income on withdrawal, and most owners face required minimum distributions (RMDs) starting at a set age. The [IRS explains the RMD rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds) directly, including the ages and penalties involved. Roth accounts skip that entirely, since qualified withdrawals are tax-free.\n\nA calculator that ignores account type is implicitly assuming every dollar it projects arrives tax-free, which overstates what a traditional account actually delivers after tax. If most of your savings sits in a 401(k) or traditional IRA, a tax-aware tool, or at minimum a manual haircut applied to a generic projection, gives you a more honest starting number.\n\nRun the numbers on a $100,000 balance to see the size of the gap. Withdraw it from a traditional 401(k) at a 22% marginal federal tax rate, and you net about $78,000 after tax. Withdraw the same $100,000 from a Roth IRA, and you keep the full amount, since qualified Roth withdrawals are not taxed. A calculator that lists both balances as an identical $100,000 line item is overstating the traditional account by roughly $22,000 in this example.",
+        body: "A tax-aware calculator accounts for the fact that a dollar in a Roth IRA, a traditional 401(k), and a taxable brokerage account are not worth the same amount once you actually withdraw them. Traditional retirement accounts are taxed as ordinary income on withdrawal, and most owners face required minimum distributions (RMDs) starting at a set age. The [IRS explains the RMD rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds) directly, including the ages and penalties involved. Roth accounts skip that entirely, since qualified withdrawals are tax-free.\n\nA calculator that ignores account type is implicitly assuming every dollar it projects arrives tax-free, which overstates what a traditional account actually delivers after tax. If most of your savings sits in a 401(k) or traditional IRA, a tax-aware tool, or at minimum a manual haircut applied to a generic projection, gives you a more accurate starting number.\n\nRun the numbers on a $100,000 balance to see the size of the gap. Withdraw it from a traditional 401(k) at a 22% marginal federal tax rate, and you net about $78,000 after tax. Withdraw the same $100,000 from a Roth IRA, and you keep the full amount, since qualified Roth withdrawals are not taxed. A calculator that lists both balances as an identical $100,000 line item is overstating the traditional account by roughly $22,000 in this example.",
       },
       {
         heading: "Four Questions to Ask Before You Trust Any Result",
@@ -7071,6 +7074,7 @@ export const GUIDES: Guide[] = [
   },
 
   // -- keyword-pass 2026-08-26: net-worth-calculator-spreadsheet-template --
+  // register: operator · medium: text → text · page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     slug: "net-worth-calculator-spreadsheet-template",
     title: "Net Worth Calculator Spreadsheet Template (Sheets)",
@@ -7079,7 +7083,7 @@ export const GUIDES: Guide[] = [
     h1: "Build Your Own Net Worth Calculator Spreadsheet Template",
     cardBlurb: "Copy the assets-minus-liabilities formula into Google Sheets or Excel and track your net worth every month without a login.",
     intro:
-      "A net worth calculator spreadsheet template is just two columns, assets and liabilities, subtracted from each other and tracked over time. You can build one yourself in Google Sheets or Excel in about ten minutes, then update it every month or quarter with a few new numbers. This guide walks through the exact formula and layout, row by row, so the sheet keeps a running history instead of a single snapshot. There is no file to download here, since your account list and balances are unique to you. Typing the formula yourself keeps the sheet built around your own accounts and balances. Prefer not to build one? Our free [net worth calculator](/net-worth/) runs the same math instantly and benchmarks your result against Federal Reserve data.",
+      "A net worth calculator spreadsheet template is just two columns, assets and liabilities, subtracted from each other and tracked over time. You can build one yourself in Google Sheets or Excel in about ten minutes, then update it every month or quarter with a few new numbers. This guide walks through the exact formula and layout, row by row, so the sheet keeps a running history instead of a single snapshot. There is no file to download here, since your account list and balances are unique to you. Typing the formula yourself keeps the sheet built around your own accounts and balances. Prefer not to build one? Our free [net worth calculator](/net-worth/) runs the same math instantly and benchmarks your result against [Federal Reserve](https://www.federalreserve.gov/econres/scfindex.htm) data.",
     sections: [
       {
         heading: "The Net Worth Formula in One Line",

@@ -6058,6 +6058,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   },
 
   // ── Personal Loan Rates by Lender ────────────────────────────────────────
+  // keyword-pass 2026-08-26. register: operator · medium: text → text · page type: comparison (1500-word floor).
   {
     slug: "personal-loan-rates-by-lender",
     title: "Personal Loan Rates by Lender (2026)",
@@ -6069,9 +6070,9 @@ export const ROUNDUPS: RoundupEntry[] = [
     segment: "borrowers comparing personal loan lenders",
     h1: "Personal Loan Rates by Lender",
     intro:
-      "Personal loan rates vary a lot by lender, and most banks and credit unions won't give you a real number until you check your rate or apply. This page pulls together what each of the seven lenders below actually publishes about its own personal loan product. That means typical APR range or cap, loan amount, fees, and who qualifies, laid out side by side.\n\nThis is a terms comparison, not a ranking of \"best.\" Several of these lenders don't publish a specific APR range online at all, and we say so plainly instead of guessing. Where a lender does publish a number, we cite the page it came from. ModernWallet is not a lender and takes no placement fees, and no lender paid to appear here or to be listed in a particular order.",
+      "Personal loan rates vary a lot by lender, and most banks and credit unions won't give you a real number until you check your rate or apply. This page pulls together what each of the seven lenders below actually publishes about its own personal loan product. That means typical APR range or cap, loan amount, fees, and who qualifies, laid out side by side.\n\nThis is a terms comparison, not a ranking of \"best.\" Several of these lenders don't publish a specific APR range online at all, and we say so plainly instead of guessing. Where a lender does publish a number, we cite the page it came from.",
     rankingCriteria:
-      "This page is compiled directly from each lender's own publicly disclosed personal loan terms, not a paid ranking, and no lender paid for placement or order. We listed lenders in the order they appear in live search demand: Discover, SoFi, Wells Fargo, PNC, US Bank, Navy Federal, and PenFed, not by rate.\n\nFor each lender we checked its own personal loan page for the rate basis: a published range, a stated cap, or unpublished. We also noted the loan amount range, fees, funding speed, and any membership or existing-customer requirement. Where a lender publishes an actual annual percentage rate (APR) range, we quote it directly from that lender's own page. Where a lender doesn't disclose a number, that's noted as \"not publicly disclosed\" rather than estimated. Actual pricing depends on your credit, income, and the term you choose. You can only confirm it by checking your rate.",
+      "This page is compiled directly from each lender's own publicly disclosed personal loan terms. We listed lenders in the order they appear in live search demand: Discover, SoFi, Wells Fargo, PNC, US Bank, Navy Federal, and PenFed, not by rate.\n\nFor each lender we checked its own personal loan page for the rate basis: a published range, a stated cap, or unpublished. We also noted the loan amount range, fees, funding speed, and any membership or existing-customer requirement. Where a lender publishes an actual annual percentage rate (APR) range, we quote it directly from that lender's own page. Where a lender doesn't disclose a number, that's noted as \"not publicly disclosed\" rather than estimated. Actual pricing depends on your credit, income, and the term you choose. You can only confirm it by checking your rate.",
     options: [
       {
         name: "Discover",
@@ -6245,7 +6246,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "What Would Change This Comparison",
         content:
-          "This comparison would look different if a major bank that currently skips personal loans re-entered the market. Chase, Bank of America, and Capital One don't currently offer a general-purpose personal loan. If any of the three launches one, it would belong on this page next to the seven lenders here.\n\nIt would also change if any of the lenders that don't publish a rate range today start disclosing one. Wells Fargo, US Bank, Navy Federal, and PenFed currently quote your rate only after you check it or apply. A published range from any of them would make this comparison more useful on the page itself, rather than sending you to check your own rate first.\n\nRates, fees, and loan caps on this page reflect what each lender's own site states as of this writing. Lenders change pricing and terms without much notice. Confirm the current number on the lender's own page linked above before you apply.",
+          "This comparison would look different if a major bank that currently skips personal loans re-entered the market. [Chase](https://www.chase.com/), [Bank of America](https://www.bankofamerica.com/), and [Capital One](https://www.capitalone.com/) don't currently offer a general-purpose personal loan. If any of the three launches one, it would belong on this page next to the seven lenders here.\n\nIt would also change if any of the lenders that don't publish a rate range today start disclosing one. Wells Fargo, US Bank, Navy Federal, and PenFed currently quote your rate only after you check it or apply. A published range from any of them would make this comparison more useful on the page itself, rather than sending you to check your own rate first.\n\nRates, fees, and loan caps on this page reflect what each lender's own site states as of this writing. Lenders change pricing and terms without much notice. Confirm the current number on the lender's own page linked above before you apply.",
       },
     ],
     faqs: [
@@ -6292,6 +6293,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   },
 
   // ── Best Net Worth Tracking Tools ────────────────────────────────────────
+  // keyword-pass 2026-08-26. register: operator · medium: text → text · page type: comparison (1500-word floor).
   {
     slug: "best-net-worth-tracking-tools",
     title: "Best Net Worth Tracking Tools (2026)",
@@ -6303,7 +6305,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     segment: "people tracking net worth over time",
     h1: "Best Net Worth Tracking Tools",
     intro:
-      "The best net worth tracking tool depends on how much ongoing work you're willing to do, and whether you're comfortable linking your bank and investment accounts to get it. A one-time calculator gets you a single accurate number in a few minutes with nothing linked. A linked-account app keeps that number updated automatically, in exchange for handing your account credentials to a third party.\n\nWe compared six approaches here: three free calculators (ours, Bankrate's, and NerdWallet's), two linked-account apps (Empower and Monarch Money), and a plain spreadsheet. We scored each on cost, privacy, and how much upkeep it actually demands, and no company paid for placement or ranking order.",
+      "The best net worth tracking tool depends on how much ongoing work you're willing to do, and whether you're comfortable linking your bank and investment accounts to get it. A one-time calculator gets you a single accurate number in a few minutes with nothing linked. A linked-account app keeps that number updated automatically, in exchange for handing your account credentials to a third party.\n\nWe compared six approaches here: three free calculators (ours, Bankrate's, and NerdWallet's), two linked-account apps (Empower and Monarch Money), and a plain spreadsheet. We scored each on cost, privacy, and how much upkeep it actually demands.",
     rankingCriteria:
       "We looked at what each tool actually requires from you. Does it need your bank credentials, or just a handful of numbers you already know? What does it cost today, and how much upkeep does it take for the number to stay accurate? A tool that requires linking every account gets more convenience in exchange for handing a company your account credentials. We weighed that tradeoff directly, rather than assuming automatic is always better.\n\nFor the two paid or freemium apps, we noted the actual current price, including where a free tier exists and what it excludes. For the calculators and the spreadsheet, we noted what data you have to gather yourself. We also checked how each one handles a value that changes constantly, like a home price or a brokerage balance.",
     options: [

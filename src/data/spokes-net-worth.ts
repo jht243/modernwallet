@@ -403,6 +403,8 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     ],
   },
 
+  // -- keyword-pass 2026-08-26: net-worth-calculator-international -- register: operator · medium: text → text ·
+  // page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     calculator: "net-worth",
     slug: "net-worth-calculator-international",
@@ -418,7 +420,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     commonMistakes: [
       "Comparing your number to the U.S. median instead of your own country's benchmark. A CA$519,700 median in Canada and a $192,700 median in the U.S. come from two different populations, currencies, and survey years.",
       "Converting a foreign benchmark into U.S. dollars at today's exchange rate and treating the result as a fair comparison. Exchange rates move week to week, and a benchmark set a year or two ago in a different currency won't line up cleanly even after conversion.",
-      "Assuming every country measures net worth exactly like the Federal Reserve's Survey of Consumer Finances does. Some national surveys value home equity differently, some exclude pensions entirely, and some run every few years instead of every three.",
+      "Assuming every country measures net worth exactly like the [Federal Reserve](https://www.federalreserve.gov/econres/scfindex.htm)'s Survey of Consumer Finances does. Some national surveys value home equity differently, some exclude pensions entirely, and some run every few years instead of every three.",
       "Ignoring the local cost of living. A CA$300,000 net worth goes further in a lower-cost Canadian province than the same amount does in Toronto or Vancouver, the same way $300,000 stretches further in Ohio than in California.",
       "Citing an old survey year as if it were current. Statistics Canada, the UK's Office for National Statistics, and similar agencies release these figures every few years rather than every year, so check the publication date before repeating a number.",
     ],

@@ -56,7 +56,8 @@ Confirmed against `src/components/CalculatorIsland.tsx`'s import/`ISLANDS` list 
 ## 4. Primary and secondary keywords
 
 - **Primary:** "net income calculator"
-- **Secondary (pulled from the chart's raw autocomplete cluster — 58 raw rows):** "net income calculator hourly," "net income calculator salary," "net income calculator by state," "net income calculator by city," "take home pay calculator," "paycheck calculator," "net income calculator with tax," "net pay calculator"
+- **Secondary, autocomplete-evidenced (verified present in `2026-08-26.autocomplete.net-worth-calculator.csv`'s 58-row "net income" cluster):** "net income calculator hourly," "net income calculator by state" / "by city" (the cluster contains many state/city-name variants — california, hawaii, texas, virginia, utah / nyc, los angeles, toronto, vancouver — generalized to this form)
+- **Secondary, suggested expansion — NOT autocomplete-evidenced (standard paycheck-calculator terminology a builder should still consider, but do not represent these as measured demand from this run's data):** "take home pay calculator," "paycheck calculator," "net pay calculator," "net income calculator with tax," "net income calculator salary." Note: "salary paycheck calculator" already appears as a separate, unbuilt row targeting a `/paycheck/` route in the 2026-06-30 chart (`reports/keyword-pass/2026-06-30.md`) — worth checking for duplication before building either.
 
 ## 5. Word count / scope estimate
 
