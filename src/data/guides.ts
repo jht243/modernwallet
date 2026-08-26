@@ -6900,6 +6900,232 @@ export const GUIDES: Guide[] = [
       { label: "FTC — Report Fraud", url: "https://reportfraud.ftc.gov/" },
     ],
   },
+
+  // -- keyword-pass 2026-08-26: mortgage-amortization-schedule-excel-template --
+  {
+    slug: "mortgage-amortization-schedule-excel-template",
+    title: "Mortgage Amortization Schedule: Build It in Excel",
+    metaDescription:
+      "Build your own mortgage amortization schedule in Excel or Google Sheets. Learn the payment formula and the interest and principal split, step by step.",
+    h1: "Build a Mortgage Amortization Schedule in Excel",
+    cardBlurb: "Copy the payment formula into Excel or Google Sheets to see exactly how much of each payment goes to interest versus principal.",
+    intro:
+      "A mortgage amortization schedule shows how much of each payment goes toward interest and how much pays down your loan balance, month by month. You can build one yourself in Excel or Google Sheets with two formulas: one that finds your fixed monthly payment, and one that splits each payment into interest and principal. This walkthrough covers both formulas cell by cell, using a $400,000 loan at 6.5% over 30 years as the running example, so you can swap in your own numbers and watch the whole schedule recalculate. There is no downloadable file to grab here, since every loan has a different balance, rate, and term. You type the formulas yourself so the schedule matches your exact loan. Prefer to skip the spreadsheet entirely? Our free [mortgage amortization schedule](/mortgage/amortization-schedule/) calculator runs the same math instantly.",
+    sections: [
+      {
+        heading: "What the Amortization Formula Actually Does",
+        body: "A fixed-rate loan charges interest only on the balance you still owe, so the payment splits differently every month even though the dollar amount never changes. Interest dominates the early payments, because the balance is largest right after closing. The Consumer Financial Protection Bureau (CFPB) explains it plainly: lenders use a standard formula so a fixed payment retires the loan exactly at the end of the term, with the interest-to-principal ratio drifting the entire way.\n\nThree numbers drive that formula: the loan amount, the interest rate, and the term in months. Change any one of them and the entire schedule shifts underneath you. That is the whole mechanism behind [mortgage amortization](https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/), and it is exactly what the next three steps rebuild in a spreadsheet.\n\nThis same formula also reveals the total interest you will pay over the life of the loan. On the $400,000 loan at 6.5% over 30 years, 360 payments of about $2,528 add up to roughly $910,080 paid in total. Subtract the $400,000 you borrowed, and interest alone accounts for about $510,000 of that. Seeing that figure spelled out often pushes a reader to look seriously at a shorter term or an extra-payment plan.",
+      },
+      {
+        heading: "Step 1: Calculate the Fixed Monthly Payment",
+        body: "Open a blank sheet and label five input cells: loan amount, annual rate, term in years, monthly rate, and total payments. Put your loan amount in B1 (400000 for the example), your annual rate in B2 as a decimal (0.065 for 6.5%), and your term in years in B3 (30).\n\nIn B4, find the monthly rate with =B2/12. In B5, find the total number of payments with =B3*12. In B6, calculate the fixed payment with the built-in [PMT function](https://support.google.com/docs/answer/3093185): =PMT(B4,B5,-B1). The negative sign on the loan amount is required, since PMT returns a negative number without it.\n\nFor the $400,000 loan at 6.5% over 30 years, B6 returns roughly $2,528. That single number is the payment every row of your schedule references.",
+      },
+      {
+        heading: "Step 2: Split Each Payment into Interest and Principal",
+        body: "Build a new table with six headers across row 1: Month, Starting Balance, Payment, Interest, Principal, Ending Balance. In row 2, enter 1 for Month and =$B$1 for Starting Balance, so it pulls your loan amount.\n\nFor Payment, reference the fixed payment you already calculated: =$B$6. For Interest, multiply that row's starting balance by the monthly rate: =C2*$B$4. For Principal, subtract interest from the payment: =D2-E2. For Ending Balance, subtract principal from the starting balance: =C2-F2.\n\nExcel and Google Sheets also offer [IPMT](https://support.google.com/docs/answer/3093175) and [PPMT](https://support.google.com/docs/answer/3093187) functions that calculate this same split in one cell each, if you would rather skip the manual subtraction.",
+      },
+      {
+        heading: "Step 3: Copy the Formula Down the Full Schedule",
+        body: "In row 3, set Month to 2 and Starting Balance to the prior row's Ending Balance: =G2. Select the formulas in row 3 and drag the fill handle down through row 361, since a 30-year loan runs 360 monthly payments.\n\nYour final row's Ending Balance should land at or extremely close to zero. That confirms the schedule pays the loan off exactly on schedule. The payment formula is built to guarantee exactly that.\n\nAdd a running-total column with =SUM($E$2:E2) copied down every row if you want to see cumulative interest paid at any point in the loan. That column answers a question the payment figure alone never does: how much interest a specific payoff date actually costs you.",
+      },
+      {
+        heading: "Common Mistakes That Break the Schedule",
+        body: "We see one mistake most often when readers build this formula themselves: using the annual rate instead of the monthly rate in the interest calculation. That single swap inflates every interest figure by roughly 12 times, and it is the most common error in a homemade schedule.\n\nTwo other errors show up almost as often. Forgetting to lock a reference with a dollar sign, such as $B$4, lets the formula drift as you copy it down hundreds of rows. Rounding the payment to the nearest dollar early creates a small mismatch that compounds into a real gap by the final row.\n\nReconcile your work against the built-in [CUMIPMT function](https://support.google.com/docs/answer/3093211), which totals interest over a range of payments without a row-by-row table. If your running total and CUMIPMT disagree by more than a few dollars, check the rate and reference cells first.",
+      },
+      {
+        heading: "When the Live Calculator Beats a Spreadsheet",
+        body: "A spreadsheet is the right tool for understanding exactly how the math works, and for a loan that never changes. It is the wrong tool once you want to test an extra $200 a month toward principal, compare a 15-year term against a 30-year term, or see how a refinance offer changes your total interest, since each scenario means rebuilding rows by hand.\n\nOur free [mortgage amortization schedule](/mortgage/amortization-schedule/) calculator runs this same formula instantly and lets you test extra payments and different terms without touching a single cell reference. If you are deciding whether an extra payment plan is worth it in the first place, the [mortgage payoff calculator](/mortgage/payoff-calculator/) shows the years and interest it would save.\n\nBuild the spreadsheet once to understand the mechanism. Reach for the calculator every time after that.",
+      },
+    ],
+    tools: [
+      { href: "/mortgage/amortization-schedule/", label: "Amortization schedule" },
+      { href: "/mortgage/payoff-calculator/", label: "Mortgage payoff" },
+      { href: "/mortgage/", label: "Mortgage calculator" },
+    ],
+    faqs: [
+      { question: "What is the mortgage amortization formula?", answer: "The fixed monthly payment formula is M = P times [r(1+r)^n] divided by [(1+r)^n minus 1], where P is the loan amount, r is the monthly interest rate, and n is the total number of payments. Excel and Google Sheets calculate the same result with the built-in PMT function: =PMT(rate, nper, -pv)." },
+      { question: "How do I calculate a mortgage payment in Excel?", answer: "Enter your monthly rate, total number of payments, and loan amount, then use =PMT(monthly_rate, total_payments, -loan_amount). The negative sign on the loan amount is required for the function to return a positive payment." },
+      { question: "How much of my first mortgage payment goes to interest?", answer: "Most of it. On a $400,000 loan at 6.5% over 30 years, the first payment of about $2,528 includes roughly $2,167 in interest and only $361 in principal, because interest is calculated on the full starting balance." },
+      { question: "Does the amortization formula change for a 15-year loan instead of a 30-year loan?", answer: "The formula stays the same. Only the term input changes, from 360 monthly payments to 180. A shorter term produces a higher monthly payment, but a much smaller share of each payment goes to interest, since the balance shrinks faster." },
+      { question: "Can I model extra principal payments in this spreadsheet?", answer: "Yes, by adding an Extra Payment column and subtracting it from the Ending Balance formula each month, though the schedule then runs fewer than 360 rows and needs a formula that stops once the balance hits zero. Our [mortgage payoff calculator](/mortgage/payoff-calculator/) models extra payments without any spreadsheet work." },
+      { question: "Is there a downloadable amortization schedule file I can just open?", answer: "No. This guide teaches the formulas so you can build a schedule for your own exact loan amount, rate, and term, since a generic downloadable file would not match your numbers. Prefer not to build one? The free [mortgage amortization schedule](/mortgage/amortization-schedule/) calculator generates your full schedule instantly online." },
+      { question: "Does this formula work for an adjustable-rate mortgage?", answer: "Only between rate changes. An adjustable-rate mortgage (ARM) uses this exact formula for each fixed-rate period, but once the rate resets, you have to recalculate the payment using the loan's remaining balance, the new rate, and the remaining term as new inputs. A fixed-rate loan never needs that recalculation, which is one reason the formula is easiest to learn on a fixed-rate example first." },
+      { question: "Does a biweekly payment schedule use the same formula?", answer: "Not directly. Paying half your monthly payment every two weeks results in 26 half-payments a year, the equivalent of 13 full monthly payments instead of 12, which this formula does not account for on its own. Our [mortgage payoff calculator](/mortgage/payoff-calculator/) models a biweekly schedule and the extra payment it effectively adds each year." },
+    ],
+    sources: [
+      { label: "CFPB — How does paying down a mortgage work?", url: "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/" },
+      { label: "Google Docs Editors Help — PMT function", url: "https://support.google.com/docs/answer/3093185" },
+    ],
+  },
+
+  // -- keyword-pass 2026-08-26: investment-appraisal-methods-npv-irr --
+  {
+    slug: "investment-appraisal-methods-npv-irr",
+    title: "Investment Appraisal Methods: NPV, IRR, and Payback",
+    metaDescription:
+      "Net present value, internal rate of return, and payback period explained with worked numeric examples, so you can size up any investment with real numbers.",
+    h1: "Investment Appraisal Methods: NPV, IRR, and Payback Period",
+    cardBlurb: "Net present value, internal rate of return, and payback period, the three methods used to decide whether an investment is worth the cash it costs.",
+    intro:
+      "Net present value (NPV), internal rate of return (IRR), and payback period are the three most common ways to judge whether an investment is worth its cost. NPV converts every future cash flow into today's dollars and adds them up. IRR asks what discount rate would make that total exactly zero. Payback period simply counts how many years it takes to get your original money back, with no discounting at all. This guide walks through all three using the same worked numbers, so you can see where they agree and where they pull apart. See our [investment calculator](/investing/) if you want to project a lump sum or regular contribution rather than appraise a single project's cash flows.",
+    sections: [
+      {
+        heading: "What NPV Actually Measures",
+        body: "Net present value (NPV) is the discounted, monetized value of an investment's expected benefits minus its costs, converted into today's dollars. A dollar received five years from now is worth less than a dollar in hand today, because money in hand can earn a return in the meantime. NPV accounts for that gap directly.\n\nThe [U.S. Office of Management and Budget (OMB)](https://obamawhitehouse.archives.gov/omb/circulars_a094) uses this same logic to evaluate federal projects, in guidance called Circular A-94: programs with a positive NPV are generally worth pursuing, and programs with a negative NPV generally are not. The same rule applies to a personal or business decision. A positive NPV means the investment returns more than your chosen discount rate. A negative NPV means it does not.",
+      },
+      {
+        heading: "Worked Example: Calculating NPV by Hand",
+        body: "Say a rental property costs $50,000 upfront and is expected to produce $15,000 a year in net cash flow for four years. Choose a discount rate first, the annual return you could earn elsewhere on money of similar risk. Use 8% for this example.\n\nDiscount each year's $15,000 by dividing it by 1.08 raised to that year's power: $13,889 for year one, $12,860 for year two, $11,908 for year three, and $11,026 for year four. Add the four discounted amounts together for a present value of $49,683, then subtract the $50,000 upfront cost.\n\nNPV comes out to about negative $317. At an 8% discount rate, this specific deal returns slightly less than the 8% you could earn elsewhere. A 7% discount rate instead would push the NPV positive, which shows how much the discount rate you pick can move the verdict.",
+      },
+      {
+        heading: "What IRR Actually Measures",
+        body: "Internal rate of return (IRR) is the discount rate that makes NPV exactly zero for a given set of cash flows. Instead of picking a discount rate and checking whether NPV is positive, IRR works backward and solves for the rate itself.\n\n[OMB Circular A-94](https://obamawhitehouse.archives.gov/omb/circulars_a094) defines it the same way, as the discount rate that sets a project's net present value to zero. A higher IRR generally signals a more attractive investment, since it represents the annualized return the cash flows actually produce.",
+      },
+      {
+        heading: "Worked Example: Calculating IRR by Hand",
+        body: "Using the same rental property, $50,000 upfront and $15,000 a year for four years, IRR is the rate at which those four discounted payments sum to exactly $50,000. Spreadsheets solve this by testing rates internally. In Excel or Google Sheets, list the cash flows as −50000, 15000, 15000, 15000, 15000 in one column, then use =IRR(range).\n\nFor these numbers, IRR comes out to about 7.7%. That lines up with the NPV example: an 8% discount rate produced a slightly negative NPV, and 7.7% sits just under 8%, so any discount rate above 7.7% turns this deal negative.\n\nIRR carries a real limitation. OMB Circular A-94 itself warns that IRR does not generally provide an acceptable decision criterion on its own, mainly because a project with cash flows that switch between positive and negative more than once can produce more than one mathematically valid IRR, or none at all.",
+      },
+      {
+        heading: "Payback Period: The Simplest, Least Complete Method",
+        body: "Payback period counts the years until the cash flows return your original investment, with no discounting applied at all. For the rental property, $50,000 divided by $15,000 a year comes to 3.33 years, so you get your money back partway through year four.\n\nThat simplicity is also the method's biggest weakness. Payback period ignores every dollar that arrives after the payback point, and it never accounts for the time value of money the way NPV and IRR both do. Two investments with the same 3.33-year payback can produce very different total returns if one keeps paying out for another ten years and the other stops cold.\n\nPayback period still earns its place, because it answers a question NPV and IRR do not: how long your cash stays tied up and exposed to risk. A shorter payback period means less time for something to go wrong before you at least break even.",
+      },
+      {
+        heading: "Which Method Should Decide Your Answer",
+        body: "NPV is the strongest default whenever you can estimate cash flows several years out and you have a defensible discount rate to use. It is the only one of the three that directly compares dollar amounts across time. In the guides we publish here, we default to NPV as the tiebreaker whenever it and IRR disagree, for exactly that reason.\n\nSkip relying on IRR alone for a project whose cash flows switch between positive and negative more than once, since the math can produce a misleading or multiple answers in that case. Check it alongside NPV instead. Payback period is not for anyone comparing long-lived investments with very different total lifespans, since it ignores everything that happens after the money comes back. It earns a real role whenever getting the cash back matters more than maximizing the total return, such as a small business owner who needs cash back within two years no matter what the long-run return looks like.\n\nTest the math at a couple of different discount rates before you commit to one number. Raising the rate lowers every NPV. Lowering it raises every NPV. If you are projecting how a lump sum or regular contribution grows over time, rather than appraising a specific project's cash flows, our [investment calculator](/investing/) handles that compounding math directly, and our [net worth calculator](/net-worth/) tracks the assets these appraisal methods are meant to grow.",
+      },
+    ],
+    tools: [
+      { href: "/investing/", label: "Investing calculator" },
+      { href: "/net-worth/", label: "Net worth calculator" },
+    ],
+    faqs: [
+      { question: "What is the difference between NPV and IRR?", answer: "NPV converts future cash flows into today's dollars using a discount rate you choose, then tells you the dollar amount of value created. IRR instead solves for the discount rate that would make NPV exactly zero, giving you a percentage return instead of a dollar figure." },
+      { question: "What is a good IRR for an investment?", answer: "There is no single good IRR. It depends on what you could otherwise earn on money of similar risk, sometimes called your discount rate or hurdle rate. An IRR above your hurdle rate generally signals a worthwhile investment, and an IRR below it generally does not." },
+      { question: "How do you calculate NPV by hand?", answer: "Discount each future cash flow by dividing it by 1 plus your discount rate, raised to the power of the year it arrives. Add the discounted amounts together, then subtract the upfront cost. A positive result means the investment clears your chosen discount rate. A negative result means it does not." },
+      { question: "Why does OMB Circular A-94 use a 7% discount rate?", answer: "OMB Circular A-94 states that a 7% real discount rate approximates the average pretax rate of return on private-sector investment, and federal agencies use it as a default for evaluating the cost-effectiveness of public investments and regulations. A personal or business decision can use a different rate that reflects what you could otherwise earn." },
+      { question: "What is the payback period formula?", answer: "Payback period equals the upfront investment divided by the annual cash flow it produces, assuming even yearly amounts. It tells you how many years it takes to recover your original money, without adjusting for the time value of money." },
+      { question: "Should I use NPV, IRR, or payback period?", answer: "Use NPV as your primary answer whenever you can, since it is the only method built around actual dollar value. Check IRR alongside it as a percentage sanity check, and use payback period as a secondary measure of how long your cash stays at risk." },
+    ],
+    sources: [
+      { label: "OMB Circular A-94 — Guidelines and Discount Rates", url: "https://obamawhitehouse.archives.gov/omb/circulars_a094" },
+    ],
+  },
+
+  // -- keyword-pass 2026-08-26: how-to-choose-an-investment-calculator --
+  {
+    slug: "how-to-choose-an-investment-calculator",
+    title: "How to Choose an Investment Calculator",
+    metaDescription:
+      "Investment calculators don't all compute the same thing. See what growth, goal-planning, drawdown, and tax-aware tools each measure before you pick one.",
+    h1: "How to Choose the Right Investment Calculator",
+    cardBlurb: "What compound-growth, goal-planning, drawdown, and tax-aware calculators each actually compute, and how to match one to your real question.",
+    intro:
+      "An investment calculator only answers the exact question it was built to answer, and most confusion around these tools comes from using the wrong type for your question. A basic compound-growth calculator projects a balance forward. It cannot tell you whether that balance will actually cover your retirement. A goal-planning tool works backward from a target instead. A drawdown or retirement modeler adds withdrawals and longevity risk into the mix. A tax-aware calculator accounts for what the IRS actually takes out of your specific account type. This guide walks through what each category computes, so you know which one to open before you start typing in numbers. Try our own [investment calculator](/investing/) once you know which question you are actually asking.",
+    sections: [
+      {
+        heading: "Compound-Growth Calculators: The Simplest Category",
+        body: "A compound-growth calculator takes a starting balance, a contribution amount, and an assumed annual return, then projects a single ending balance. Our own [investment calculator](/investing/) and [compound interest calculator](/investing/compound-interest-calculator/) fall into this category: enter your numbers, and the tool multiplies your money forward year by year.\n\nThis type answers one question well: how big could this specific pile of money get, given these specific assumptions. It does not tell you whether that ending balance is enough for anything in particular, and it does not model withdrawals, taxes, or a change in your contribution schedule. Treat the output as a projection built on your assumed return. Real markets do not deliver one fixed number every year, so an actual balance will land above or below the projection.",
+      },
+      {
+        heading: "Goal-Planning Calculators: Working Backward from a Target",
+        body: "A goal-planning calculator flips the compound-growth question around. Instead of asking what balance a given contribution produces, it starts with a target number, such as $1 million or a specific monthly retirement income, and solves for the contribution or time needed to reach it.\n\nOur [savings goal calculator](/investing/savings-goal-calculator/) works this way: set the dollar target and the years you have, and it returns the monthly contribution required to get there at your assumed return. This category is the right starting point whenever your real question begins with a target number instead of a balance you already have saved.",
+      },
+      {
+        heading: "Drawdown and Retirement Modelers: What Happens After You Stop Contributing",
+        body: "A drawdown or retirement modeler adds a second phase that compound-growth calculators skip entirely: what happens once you stop contributing and start withdrawing. It has to account for sequence-of-returns risk, the danger that a few bad years right when withdrawals begin can permanently shrink how long the money lasts, along with how long you might actually live.\n\nOur [retirement calculator](/retirement/) and [withdrawal calculator](/investing/withdrawal-calculator/) fall into this category, modeling contributions, a retirement date, and a withdrawal rate together instead of stopping at a single ending balance. The federal government runs a version of this same category for its own employees: the [Thrift Savings Plan's calculators](https://www.tsp.gov/calculators/) include a Retirement Income Modeler that projects withdrawal income from a TSP balance specifically. A compound-growth calculator cannot answer how long your money will last through retirement. A drawdown modeler is built for exactly that question.",
+      },
+      {
+        heading: "Tax-Aware Calculators: What the IRS Actually Takes",
+        body: "A tax-aware calculator accounts for the fact that a dollar in a Roth IRA, a traditional 401(k), and a taxable brokerage account are not worth the same amount once you actually withdraw them. Traditional retirement accounts are taxed as ordinary income on withdrawal, and most owners face required minimum distributions (RMDs) starting at a set age. The [IRS explains the RMD rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds) directly, including the ages and penalties involved. Roth accounts skip that entirely, since qualified withdrawals are tax-free.\n\nA calculator that ignores account type is implicitly assuming every dollar it projects arrives tax-free, which overstates what a traditional account actually delivers after tax. If most of your savings sits in a 401(k) or traditional IRA, a tax-aware tool, or at minimum a manual haircut applied to a generic projection, gives you a more honest starting number.\n\nRun the numbers on a $100,000 balance to see the size of the gap. Withdraw it from a traditional 401(k) at a 22% marginal federal tax rate, and you net about $78,000 after tax. Withdraw the same $100,000 from a Roth IRA, and you keep the full amount, since qualified Roth withdrawals are not taxed. A calculator that lists both balances as an identical $100,000 line item is overstating the traditional account by roughly $22,000 in this example.",
+      },
+      {
+        heading: "Four Questions to Ask Before You Trust Any Result",
+        body: "Every guide we write starts from the same question: what is the reader actually trying to answer, before we point them at any specific tool. Run that same test on a calculator before you trust its output.\n\nDoes the tool project forward from savings, or solve backward from a goal? Does it model withdrawals and longevity, or stop at a single ending balance? Does it account for your specific account type's tax treatment, or assume every dollar is tax-free? Does it let you change the assumed return, or lock you into one number with no way to test a worse scenario?\n\nRun your numbers through more than one tool type when the decision is a large one, such as when to retire or how much to save monthly. A goal-planning calculator and a drawdown modeler answering the same underlying question from opposite directions is worth the extra ten minutes on a decision that size.",
+      },
+      {
+        heading: "Matching the Tool to Your Actual Question",
+        body: "A compound-growth calculator is not for anyone already close to retirement and trying to plan withdrawals, since it stops exactly where that question begins. A drawdown modeler picks up from there. A goal-planning calculator is not for someone who already has a specific balance and return in mind and just wants to see where it lands. A plain compound-growth calculator handles that instead.\n\nThe shape of your actual question decides which calculator you should open. A number you are trying to hit calls for a goal-planning tool. A number you already have calls for compound growth. A plan to live off the money calls for a drawdown modeler. A mix of account types calls for something tax-aware, or at least a tax-adjusted estimate layered on top.\n\nOnce you know which category fits, our [investing hub](/investing/) links to the specific calculator built for that job, from [compound interest](/investing/compound-interest-calculator/) and [savings goals](/investing/savings-goal-calculator/) to [withdrawals](/investing/withdrawal-calculator/) and [dollar-cost averaging](/investing/dollar-cost-averaging-calculator/).",
+      },
+    ],
+    tools: [
+      { href: "/investing/", label: "Investing calculator" },
+      { href: "/investing/savings-goal-calculator/", label: "Savings goal" },
+      { href: "/investing/withdrawal-calculator/", label: "Withdrawal calculator" },
+      { href: "/retirement/", label: "Retirement calculator" },
+      { href: "/investing/sp500-calculator/", label: "S&P 500 calculator" },
+    ],
+    faqs: [
+      { question: "What's the difference between a compound-growth calculator and a goal-planning calculator?", answer: "A compound-growth calculator starts with what you already have and projects forward to an ending balance. A goal-planning calculator starts with a target number and solves backward for the contribution or time needed to reach it." },
+      { question: "Do I need a retirement calculator or a regular investment calculator?", answer: "Use a regular investment calculator, like a compound-growth or goal-planning tool, while you are still contributing and years from retirement. Switch to a retirement or drawdown calculator once your real question becomes how long your savings will last through withdrawals." },
+      { question: "Why does account type matter for an investment calculator's result?", answer: "Traditional 401(k) and IRA withdrawals are taxed as ordinary income and come with required minimum distributions starting at a set age, per IRS rules, while Roth account withdrawals are tax-free once qualified. A calculator that ignores this difference overstates what a traditional account actually delivers after tax." },
+      { question: "Can I trust the default return assumption in an investment calculator?", answer: "No calculator can guarantee a future return. Treat the assumed rate as one estimate, and lean toward a lower, more conservative number if the decision you are making is a large one." },
+      { question: "What is sequence-of-returns risk, and which calculator type accounts for it?", answer: "It is the risk that a few poor years right when withdrawals begin can permanently shrink how long savings last, even if the average return over time looks fine. Drawdown and retirement modelers are built to account for this. Basic compound-growth calculators are not." },
+      { question: "Is a free online investment calculator accurate enough to plan with?", answer: "A calculator is only as accurate as its assumptions and its category fit for your question. Match the tool type to what you are actually trying to answer first, then treat the output as an estimate you revisit as your real contributions, returns, and goals change." },
+      { question: "Why do two investment calculators give different results for the same numbers?", answer: "The two tools are almost always using different assumed return rates, different compounding frequencies (monthly versus annual), or a different calculator category entirely, such as one projecting forward while the other solves backward from a goal. Check each calculator's stated assumptions before comparing the two results side by side." },
+      { question: "What if I do not know what return to assume?", answer: "Run the projection twice, once with a conservative return and once with a more optimistic one, so you see a range instead of a single number. Our [S&P 500 calculator](/investing/sp500-calculator/) shows the historical range for one common benchmark to help anchor that assumption." },
+    ],
+    sources: [
+      { label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+      { label: "Thrift Savings Plan — Calculators", url: "https://www.tsp.gov/calculators/" },
+    ],
+  },
+
+  // -- keyword-pass 2026-08-26: net-worth-calculator-spreadsheet-template --
+  {
+    slug: "net-worth-calculator-spreadsheet-template",
+    title: "Net Worth Calculator Spreadsheet Template (Sheets)",
+    metaDescription:
+      "Build a net worth calculator spreadsheet template in Google Sheets or Excel. Track assets minus liabilities every month with these exact formulas.",
+    h1: "Build Your Own Net Worth Calculator Spreadsheet Template",
+    cardBlurb: "Copy the assets-minus-liabilities formula into Google Sheets or Excel and track your net worth every month without a login.",
+    intro:
+      "A net worth calculator spreadsheet template is just two columns, assets and liabilities, subtracted from each other and tracked over time. You can build one yourself in Google Sheets or Excel in about ten minutes, then update it every month or quarter with a few new numbers. This guide walks through the exact formula and layout, row by row, so the sheet keeps a running history instead of a single snapshot. There is no file to download here, since your account list and balances are unique to you. Typing the formula yourself keeps the sheet built around your own accounts and balances. Prefer not to build one? Our free [net worth calculator](/net-worth/) runs the same math instantly and benchmarks your result against Federal Reserve data.",
+    sections: [
+      {
+        heading: "The Net Worth Formula in One Line",
+        body: "Net worth equals everything you own minus everything you owe, full stop. The Consumer Financial Protection Bureau's own [Your Money, Your Goals](https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/) financial education materials use this same assets-minus-liabilities framing to help people see where they actually stand.\n\nThe entire spreadsheet you are about to build is one implementation of that single formula, repeated every month so you can watch the number move instead of calculating it once and setting it aside.",
+      },
+      {
+        heading: "Set Up Your Asset and Liability Columns",
+        body: "Open a blank sheet and create two side-by-side sections. On the left, label rows for Assets: Cash, Checking, Savings, Taxable Investments, Retirement Accounts, Home Value, and Vehicles. On the right, label rows for Liabilities: Mortgage, Auto Loans, Student Loans, and Credit Cards.\n\nEnter your current balance for each line item next to its label. Use your most recent statement balance for each account rather than a rough guess, since a spreadsheet you update casually loses its value fast if the starting numbers are already off.\n\nLeave one blank cell below each section, labeled Total Assets and Total Liabilities. Those two cells are what the rest of the sheet references.",
+      },
+      {
+        heading: "The Subtraction Formula, Cell by Cell",
+        body: "In your Total Assets cell, sum every asset row with the SUM function. If your asset values sit in cells B2 through B8, the formula is =SUM(B2:B8). Do the same for Total Liabilities, summing whatever range holds your debt figures.\n\nIn a new cell labeled Net Worth, subtract Total Liabilities from Total Assets: if Total Assets sits in B10 and Total Liabilities sits in D6, the formula is =B10-D6. That single cell is your full net worth, recalculated instantly any time you change an account balance above it.\n\nAdd a Liquid Net Worth cell too, if you want one: sum only the assets you could convert to cash quickly, like checking, savings, and taxable investments, and subtract your same Total Liabilities figure. Home equity and retirement accounts stay out of that second total, since neither converts to spendable cash without a real cost or delay.\n\nHere is a full worked example with sample numbers. Assets of $10,000 cash, $3,000 checking, $15,000 savings, $40,000 taxable investments, $120,000 retirement, $350,000 home value, and $20,000 in vehicles add up to $558,000 in Total Assets. Liabilities of a $250,000 mortgage, $18,000 auto loan, $22,000 in student loans, and $6,000 in credit cards add up to $296,000 in Total Liabilities. Net Worth comes out to $558,000 minus $296,000, or $262,000.",
+      },
+      {
+        heading: "Turn Your Net Worth Number into a Running History",
+        body: "A single net worth number tells you where you stand today, but it cannot tell you whether you are moving in the right direction. Turn your one-time calculation into a running history by adding a new row underneath each time you update, rather than overwriting the row above.\n\nLabel a fresh block of rows with a Date column next to your Net Worth formula, then copy the whole formula pattern down each time you add an entry. When we reviewed this ourselves, the running-history habit made a bigger difference than any single account balance, since a trend line catches a debt creeping up long before any one month's snapshot would. After six or eight entries, a simple line chart built from the Date and Net Worth columns shows the trend at a glance.",
+      },
+      {
+        heading: "What to Update Monthly vs. Quarterly",
+        body: "Update your liquid accounts, cash, checking, savings, and taxable investments, every month, since those balances change with every paycheck and purchase. Retirement account balances are also worth a monthly glance if your platform shows them, though a small daily swing in the stock market matters less than the overall trend.\n\nUpdate your home value and any other illiquid asset on a quarterly basis instead of monthly. Home values do not move fast enough to justify a monthly re-estimate, and pulling a new number too often just adds noise to your running history rather than real information. A vehicle's value belongs on the same quarterly schedule, since a car depreciates steadily rather than in sudden jumps, and checking it monthly wastes time better spent elsewhere.\n\nA typo is the most common way this sheet goes wrong. Adding a stray zero to a $15,000 savings balance turns it into $150,000 and throws off every total beneath it, so a sudden jump in your net worth history is usually worth a second look at the row you just entered before you trust the new number.",
+      },
+      {
+        heading: "When the Calculator Does the Benchmarking for You",
+        body: "A spreadsheet is the right tool if you want full control over which accounts count and how the history is stored, and you do not mind updating each balance yourself. It is the wrong tool if you want your net worth benchmarked against real Federal Reserve data for your age bracket, since building that comparison yourself takes an extra step our [net worth calculator](/net-worth/) already includes.\n\nTwo things tend to push readers toward the calculator instead of the sheet. One is wanting a [liquid net worth](/net-worth/liquid-net-worth-calculator/) figure and a full net worth figure side by side without building two separate formulas. The other is wanting to see how a number compares with the [net worth by age](/net-worth/net-worth-by-age-calculator/) benchmarks without looking them up manually.\n\nBuild the spreadsheet if you want full control over your own trend line. Use the calculator when you want the benchmarking done for you.",
+      },
+    ],
+    tools: [
+      { href: "/net-worth/", label: "Net worth calculator" },
+      { href: "/net-worth/liquid-net-worth-calculator/", label: "Liquid net worth" },
+      { href: "/net-worth/net-worth-by-age-calculator/", label: "Net worth by age" },
+    ],
+    faqs: [
+      { question: "What is the net worth formula?", answer: "Net worth equals total assets minus total liabilities. Add up everything you own with cash value, then subtract everything you owe, and the result is your net worth." },
+      { question: "How do I set up a net worth spreadsheet in Google Sheets?", answer: "List your assets and liabilities in two separate columns with a balance for each account, sum each column with the SUM function, then subtract the liabilities total from the assets total in one final cell. That final cell is your net worth." },
+      { question: "How often should I update my net worth spreadsheet?", answer: "Update liquid accounts like checking, savings, and investments monthly, since those balances move often. Update illiquid figures like your home value on a quarterly basis instead, since they change too slowly to justify a monthly re-estimate." },
+      { question: "What counts as an asset versus a liability on this spreadsheet?", answer: "Assets are anything with cash value you own: cash, bank accounts, investments, retirement accounts, real estate, and vehicles. Liabilities are debts you owe: mortgages, auto loans, student loans, and credit card balances." },
+      { question: "Should my net worth spreadsheet track history, or just my current number?", answer: "Track history. Add a new dated row each time you update instead of overwriting the last entry, so a simple chart can show the trend over time instead of just today's number." },
+      { question: "Is there a downloadable net worth spreadsheet template file?", answer: "No. This guide walks through the exact formula and layout so you can build a sheet around your own specific accounts and balances. Prefer not to build one? The free [net worth calculator](/net-worth/) runs the same assets-minus-liabilities math instantly and benchmarks your result against Federal Reserve data." },
+      { question: "What if my net worth spreadsheet shows a negative number?", answer: "A negative net worth means your Total Liabilities cell is larger than your Total Assets cell, which is common for recent graduates carrying student loans or new homeowners who just closed on a mortgage. Track it the same way as a positive number: update it on the same schedule and watch whether the negative figure is shrinking toward zero over time." },
+      { question: "Should couples track net worth together or separately?", answer: "Either works, as long as you stay consistent from one update to the next. A combined sheet with both people's accounts in one Assets and Liabilities list gives a single household number. Two separate sheets let you also see each person's individual position, which matters more if you keep some accounts separate." },
+    ],
+    sources: [
+      { label: "CFPB — Your Money, Your Goals", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/" },
+      { label: "Federal Reserve — Survey of Consumer Finances", url: "https://www.federalreserve.gov/econres/scfindex.htm" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));
