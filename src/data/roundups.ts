@@ -6499,6 +6499,819 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Best Secured Credit Cards (competitor-monitor pass 2026-08-26) ────
+  {
+    slug: "best-secured-credit-cards",
+    title: "Best Secured Credit Cards for Bad or No Credit (2026)",
+    metaDescription:
+      "Best secured credit cards for no credit history or damaged credit, compared on deposit, bureau reporting, and the path to an unsecured card.",
+    targetKeyword: "best secured credit cards",
+    category: "secured credit cards",
+    angle: "best",
+    segment: "Building credit from scratch",
+    h1: "Best Secured Credit Cards for Building Credit from Scratch",
+    intro:
+      "The best secured credit card for most readers building credit from zero is the [Capital One](https://www.capitalone.com/credit-cards/secured-mastercard/) Platinum Secured Credit Card. Its deposit can start as low as $49, its credit line still opens at $200 or more, and it reports to all three major credit bureaus every month. No single card wins for every situation here, though. A reader with no credit file at all needs something different from a reader with a recently damaged score, or one who already got declined for a standard unsecured card.\n\nWe researched five widely available secured cards on deposit structure, bureau reporting, rewards, and whether there's a real path to an unsecured card later. Deposit amounts vary a lot across these five, from $49 at the low end to $5,000 at the high end, so the right pick depends heavily on how much cash you can set aside today. If your score already sits in the 580 to 669 fair credit range, our [best credit cards for fair credit](/roundup/best-credit-cards-for-fair-credit/) roundup covers cards built specifically for that tier; this roundup covers the wider group of readers with no credit history, recently damaged credit, or a recent decline elsewhere. Run any balance you carry through our [credit card payoff calculator](/credit-card-payoff/) once you have a card, since the interest math matters more than the sign-up terms once you're carrying a balance month to month.",
+    rankingCriteria:
+      "Rankings weighted four factors that matter most when you're starting from zero or rebuilding after damage: whether the issuer reports monthly to all three major credit bureaus, since incomplete reporting quietly wastes months of on-time payments; how accessible the deposit structure is, including whether a low starting deposit is possible and whether a hard credit check is required to apply; whether there's a documented path to an unsecured card or a deposit refund; and fee transparency, including whether the annual fee, if any, is disclosed clearly. We did not weight rewards heavily, since a reader with no credit history or damaged credit benefits far more from reliable reporting and an accessible deposit than from a small cash-back rate.",
+    options: [
+      {
+        name: "Capital One Platinum Secured Credit Card",
+        bestFor: "Best for a low starting deposit with room to grow",
+        description:
+          "[Capital One](https://www.capitalone.com/credit-cards/secured-mastercard/) sets your minimum deposit at $49, $99, or $200, and even the $49 tier opens your account with a starting credit line of at least $200. You can also deposit more, up to $1,000, to open with a higher limit from day one. Capital One reports your account to all three major credit bureaus, considers eligible accounts for a credit line increase in as little as six months, and with responsible use, some cardholders earn back their deposit and upgrade to the standard unsecured Platinum card.",
+        strengths: [
+          "Deposit can start at $49 while your credit limit still opens at $200 or more",
+          "Reports to all three major credit bureaus",
+          "Considered for a credit line increase in as little as six months",
+          "No annual fee",
+        ],
+        limitations: [
+          "No rewards program",
+          "A credit check is required to apply, so it won't help if a hard inquiry itself is the obstacle",
+          "Interest rate runs on the higher end typical of a secured card, so any carried balance costs more",
+        ],
+        pricing:
+          "No annual fee. Minimum deposit of $49, $99, or $200 opens a credit line of at least $200; confirm your specific deposit tier and the current annual percentage rate (APR) on Capital One's site before applying.",
+      },
+      {
+        name: "Discover it® Secured Credit Card",
+        bestFor: "Best for earning cash back while you rebuild",
+        description:
+          "[Discover](https://www.discover.com/credit-cards/secured/) requires a refundable deposit of $49, $99, or $200 based on your creditworthiness, and your credit limit is set at a minimum of $200 once that deposit posts. Unlike most secured cards, Discover it Secured still pays cash back: 5% on rotating quarterly categories up to the quarterly cap, and 1% on everything else, and Discover matches all the cash back you earn in your first year. The account reports to all three bureaus monthly, and Discover reviews eligible accounts for a transition to the unsecured Discover it Cash Back card, refunding the deposit when that happens.",
+        strengths: [
+          "Cash back rewards on a secured card, which is unusual for this category",
+          "First-year cashback match doubles whatever you earn in year one",
+          "Reports to all three major credit bureaus",
+          "No annual fee",
+        ],
+        limitations: [
+          "Requires an upfront refundable deposit, same as most competitors in this category",
+          "Deposit amount sets your starting limit, so the $49 tier still means a thin credit line to manage carefully",
+        ],
+        pricing:
+          "No annual fee. Refundable deposit of $49, $99, or $200 sets a credit limit of at least $200; confirm your specific deposit tier and current APR on Discover's site.",
+      },
+      {
+        name: "Citi® Secured Mastercard®",
+        bestFor: "Best for a larger starting credit line",
+        description:
+          "[Citi](https://www.citi.com/credit-cards/citi-secured-credit-card) lets you choose a deposit anywhere from $200 to $2,500, in $100 increments, and your credit limit equals whatever you deposit. That range runs well past what most secured cards allow, so it suits a reader who can front a bigger deposit and wants a limit to match. Citi holds the deposit in a collateral account for up to 18 months, then reviews your account for eligibility to have that deposit returned or to upgrade to the unsecured Citi Diamond Preferred Credit Card, with an early review possible around month nine.",
+        strengths: [
+          "Deposit range up to $2,500 supports a much higher starting credit limit than most secured cards",
+          "No annual fee",
+          "Documented review timeline for a deposit return or unsecured upgrade",
+        ],
+        limitations: [
+          "Citi's own card page doesn't name all three bureaus individually, so confirm reporting details before applying if that matters to you",
+          "No ongoing rewards program; Citi offers occasional statement credits through Merchant Offers instead",
+          "The deposit sits in a non-interest-bearing collateral account for up to 18 months",
+        ],
+        pricing:
+          "No annual fee. Deposit ranges from $200 to $2,500 in $100 increments and sets your credit limit; confirm the current APR on Citi's site.",
+      },
+      {
+        name: "Self Visa® Credit Card",
+        bestFor: "Best for no credit history at all, without a hard credit check",
+        description:
+          "[Self](https://www.self.inc/visa-secured-credit-card) pairs the card with a Credit Builder Account, a small installment loan you pay down while the funds are held in reserve, a structure the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/what-are-some-ways-to-start-or-rebuild-a-good-credit-history-en-2155/) describes as building credit and savings at the same time. The account itself starts with a minimum deposit of $100, and Self reports those payments to all three credit bureaus while you build it. Once you qualify, based on your payment history plus income and expense checks Self runs during signup, you can apply for the Self Visa Credit Card with no separate upfront deposit, since your savings progress already covers it. Applying for the card itself does not require a hard credit inquiry, which makes Self one of the few options here genuinely built for a completely blank credit file.",
+        strengths: [
+          "No hard credit inquiry to apply for the card itself",
+          "No separate upfront deposit needed once you qualify, since your Credit Builder Account savings cover it",
+          "The underlying Credit Builder Account reports to all three major credit bureaus",
+          "No annual fee in year one",
+        ],
+        limitations: [
+          "Requires opening and paying into a Credit Builder Account before the card becomes available, which is slower than applying for a card directly",
+          "Carries a $25 annual fee starting in year two",
+          "Self doesn't publish an exact number of payments or timeline required before you qualify for the card, so approval timing is less predictable than a standard secured card",
+        ],
+        pricing:
+          "No annual fee for the first year, then $25 annually. Credit Builder Account starts with a $100 minimum deposit; confirm current plan pricing and card eligibility criteria on Self's site.",
+      },
+      {
+        name: "U.S. Bank Secured Visa® Card",
+        bestFor: "Best for a large deposit-to-limit ceiling with interest on your deposit",
+        description:
+          "[U.S. Bank](https://www.usbank.com/credit-cards/secured-visa-credit-card.html) accepts a deposit anywhere from $300 to $5,000, the widest ceiling in this roundup, and your credit limit matches whatever you put down. That deposit sits in an account insured by the [Federal Deposit Insurance Corporation](https://www.fdic.gov/) and earns interest while your card stays open and in good standing, a feature few competitors in this roundup offer. U.S. Bank reports your account to all three major credit bureaus, and returns the deposit if you close the account in good standing or upgrade to an unsecured card.",
+        strengths: [
+          "Deposit ceiling up to $5,000 supports the highest credit limit in this roundup",
+          "Deposit earns interest while your account stays open, unusual among secured cards",
+          "Reports to all three major credit bureaus",
+          "No annual fee",
+        ],
+        limitations: [
+          "$300 minimum deposit is higher than every other card here, so it's a poor fit if you need to start with less cash",
+          "U.S. Bank doesn't publish a specific graduation timeline or unsecured-upgrade criteria the way Capital One and Citi do",
+          "No rewards program",
+        ],
+        pricing:
+          "No annual fee. Deposit ranges from $300 to $5,000 and sets your credit limit; confirm the current APR and deposit process on U.S. Bank's site.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Deposit Range", "Reports to 3 Bureaus", "Rewards", "Annual Fee", "Credit Check to Apply"],
+      rows: [
+        { name: "Capital One Platinum Secured", values: ["$49 to $200 (up to $1,000 for a higher limit)", "Yes", "No", "No", "Yes"] },
+        { name: "Discover it Secured", values: ["$49 to $200", "Yes", "Cash back", "No", "Yes"] },
+        { name: "Citi Secured Mastercard", values: ["$200 to $2,500", "Not itemized by Citi", "Merchant Offers credits", "No", "Yes"] },
+        { name: "Self Visa", values: ["$100+ via Credit Builder Account, no separate card deposit", "Yes", "No", "No (year 1), then $25", "No hard inquiry"] },
+        { name: "U.S. Bank Secured Visa", values: ["$300 to $5,000", "Yes", "No", "No", "Yes"] },
+      ],
+    },
+    verdict:
+      "Capital One Platinum Secured is the strongest all-around pick if you can pass a standard credit check and want the lowest possible deposit floor alongside a documented path back to an unsecured card. Discover it Secured fits best if you want that same low deposit range but would rather earn cash back while you rebuild, especially with the first-year match doubling what you earn. Self Visa is the better starting point if you have no credit history at all and want to avoid a hard inquiry entirely, since it builds toward the card through a small loan instead of requiring cash upfront. Citi Secured Mastercard and U.S. Bank Secured Visa both suit a reader who can put down more cash for a bigger starting limit, with U.S. Bank's interest-earning deposit and $5,000 ceiling the better fit if you have that much to set aside.\n\nNone of these five is right if a credit check itself is the obstacle and you also don't want to open a new deposit account first. That reader should look at a no-credit-check secured card outside this roundup, or start with a credit-builder loan alone before applying for any card. A reader who wants no deposit at all should look at an unsecured fair-credit card instead, once their score clears roughly 580, rather than any option in this roundup. Our answer would change if an issuer here dropped its credit check requirement, cut its deposit floor below Capital One's $49, or published a faster graduation timeline than what's confirmed today. Check each issuer's own page for the current terms before you apply, since deposit tiers and APRs shift more often than card features do.",
+    sections: [
+      {
+        heading: "How a Secured Card Builds Your Credit",
+        content:
+          "A secured card requires a cash deposit that typically becomes your credit limit, and it exists specifically to approve applicants a standard unsecured card would decline. The [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-is-a-secured-credit-card-en-45/) describes the mechanism plainly: you deposit an amount like $500, spend up to that limit, and your available balance resets each time you pay the bill. The deposit itself doesn't build your credit. Reporting your on-time payments to the bureaus does. A secured card only helps if the issuer reports your payment history to the three major credit bureaus, Equifax, Experian, and TransUnion, every month, since a debit card or prepaid card never reports at all, no matter how responsibly you use it.\n\nMost issuers hold your deposit in a non-interest-bearing account for as long as the card stays secured, though a few, like U.S. Bank's version, pay interest on it while you wait. Either way, the deposit only sets your spending room. It has no direct effect on your score beyond what utilization and payment history already measure.",
+      },
+      {
+        heading: "Why Self Pairs a Loan with the Card Instead of an Upfront Deposit",
+        content:
+          "Self takes a different approach than a typical secured card by building your deposit gradually instead of requiring it all at once. The CFPB's other main credit-building product, a credit-builder loan, works by holding your borrowed funds in reserve while you make small payments over a set term, then releasing the money once you finish paying it off. These loans typically run 6 to 24 months, which means Self's underlying account can take longer to reach than simply applying for and using a standard secured card right away. Self's Credit Builder Account follows that same loan structure, and it reports your payments to the bureaus while you build it, before you ever qualify for the card. That matters if you have no credit history at all, since a completely blank file can get you declined by score-based underwriting before you ever reach a deposit-based secured card. Pairing the two products means your first few months of payment history come from the loan, and by the time you're approved for the card, you already have a small track record built.",
+      },
+      {
+        heading: "What Moves Your Score Once You Have the Card",
+        content:
+          "Payment history is the single biggest factor in both the FICO and VantageScore models, so paying on time every month matters more than which card from this list you pick. Credit utilization, the share of your limit you're using, ranks second, and it applies to each card individually and to all your cards combined. Keeping your balance under 30% of your limit, and under 10% if you want to move faster, helps even on a $200 line. New credit inquiries and the length of your credit history round out the remaining factors in both scoring models, which is why closing a secured card the moment you qualify for something better can shorten your average account age right when you need it most. A hard inquiry from applying dings your score slightly and temporarily, according to [myFICO](https://www.myfico.com/credit-education/credit-scores), the company that publishes the FICO scoring model, which is one reason a no-hard-inquiry product like Self can appeal if you've already been declined recently elsewhere.",
+      },
+      {
+        heading: "Common Mistakes That Slow Down a Rebuild",
+        content:
+          "Maxing out a low starting limit within the first billing cycle is the most common misstep. A $200 limit run up to $180 posts a utilization rate above 30% the moment your statement cuts, even if you pay it off before the due date, since most issuers report the statement balance rather than your final paid amount. Spend a smaller share of the limit and pay down before the statement closes if you want utilization to look low on your report.\n\nApplying for several cards in a short window causes a different problem. Each hard inquiry causes a small, temporary dip, and multiple inquiries close together can read as risk-seeking to an automated underwriting model, even when every application gets approved. Pick one card from this list, use it for six months, and let the reporting build before you apply for a second product.\n\nClosing the account too early erases progress you already made. Length of credit history is a real factor in your score, and a secured card you close the moment you graduate wipes out months of history you spent time building. Keep the account open, even at a small balance, unless the annual fee outweighs what it's still doing for your file.\n\nForgetting to confirm your deposit refund after closing an account is a smaller but real mistake. Some issuers apply it automatically as a statement credit once you graduate, while others require you to request a check. Confirm the exact refund process on your issuer's page before you close the account.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What's the difference between a secured and unsecured credit card?",
+        answer:
+          "A secured card requires a cash deposit that typically sets your credit limit, while an unsecured card needs no deposit at all. Issuers use the deposit to offset the risk of approving someone with no credit history or a damaged score, which is why secured cards approve applicants an unsecured card would decline.",
+      },
+      {
+        question: "Do I get my deposit back on a secured credit card?",
+        answer:
+          "On every card in this roundup, the deposit is refundable when you close the account in good standing, pay off any balance, or graduate to an unsecured card. Exact refund timing varies by issuer. Citi reviews accounts for a return or upgrade around 18 months in, while U.S. Bank returns the deposit at closure or upgrade without publishing a fixed timeline. Capital One and Discover both apply the refund as a statement credit once you graduate to an unsecured card, rather than mailing a check. Confirm the current process on the issuer's own page before you apply.",
+      },
+      {
+        question: "Can I build credit with no credit history using a secured card?",
+        answer:
+          "Yes, and a secured card is one of the more reliable ways to do it, since the deposit lets an issuer approve you without an existing score to evaluate. Self Visa goes a step further for a completely blank file, since it doesn't require a hard credit inquiry to apply for the card itself, building your deposit gradually through a small loan instead.",
+      },
+      {
+        question: "How long does it take to graduate to an unsecured card?",
+        answer:
+          "Capital One considers eligible accounts for a credit line increase in as little as six months, and Citi offers an early review around month nine, though most issuers extend that review annually afterward if you're not approved right away. Discover and U.S. Bank don't publish a fixed month count at all, reviewing accounts on their own schedule instead. The timeline depends more on your payment history and utilization than on the calendar, so paying on time and keeping your balance low moves you toward graduation faster than simply waiting out the clock.",
+      },
+      {
+        question: "Will applying for a secured card hurt my credit score?",
+        answer:
+          "A standard credit card application typically triggers a hard inquiry, which causes a small, temporary dip in your score. Self's card application does not require one, which can matter if you've already applied for, and been declined by, another card recently. Check each issuer's specific process before you apply, since it varies by product.",
+      },
+      {
+        question: "What if I've already been declined for a secured card?",
+        answer:
+          "A decline usually means the issuer's underwriting flagged something beyond your score, like income it couldn't verify, so start by requesting the adverse action notice the issuer is required to send you, since it states the specific reason. From there, a product like Self that builds toward the card gradually through a Credit Builder Account, or one that skips a hard credit check entirely, is often a better second attempt than reapplying for a similar deposit-based card right away.",
+      },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — Ways to Start or Rebuild a Good Credit History", url: "https://www.consumerfinance.gov/ask-cfpb/what-are-some-ways-to-start-or-rebuild-a-good-credit-history-en-2155/" },
+      { label: "Consumer Financial Protection Bureau — What is a secured credit card?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-secured-credit-card-en-45/" },
+      { label: "myFICO — Credit Score Ranges and Key Factors", url: "https://www.myfico.com/credit-education/credit-scores" },
+      { label: "Capital One — Platinum Secured Credit Card", url: "https://www.capitalone.com/credit-cards/secured-mastercard/" },
+      { label: "Discover — Secured Credit Card", url: "https://www.discover.com/credit-cards/secured/" },
+      { label: "Citi — Secured Mastercard", url: "https://www.citi.com/credit-cards/citi-secured-credit-card" },
+      { label: "Self — Visa Secured Credit Card", url: "https://www.self.inc/visa-secured-credit-card" },
+      { label: "U.S. Bank — Secured Visa Card", url: "https://www.usbank.com/credit-cards/secured-visa-credit-card.html" },
+    ],
+    relatedComparisons: [],
+    calculatorLinks: [
+      { label: "Credit card payoff calculator", href: "/credit-card-payoff/" },
+    ],
+  },
+
+  // ── Best Travel Credit Cards (competitor-monitor pass 2026-08-26) ─────
+  {
+  slug: "best-travel-credit-cards",
+  title: "Best Travel Credit Cards in 2026",
+  metaDescription: "Compare 6 real travel credit cards, from no-fee starters to premium picks like Chase Sapphire Reserve, on earn rate, fees, and benefits that matter.",
+  targetKeyword: "best travel credit cards",
+  category: "Credit Cards",
+  angle: "best",
+  h1: "The Best Travel Credit Cards in 2026",
+  intro: "The best travel credit card for most people is the [Chase Sapphire Preferred](https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred), because its $95 annual fee buys a wide earning structure, transferable points, and no foreign transaction fees without requiring the travel volume that premium metal cards demand. That said, the right pick depends heavily on how often you fly, whether you would ever carry a balance, and whether you want a card with no annual fee at all. We compared six real travel cards spanning that range, from no-fee starters to a nearly $800-a-year premium card, on earn rate, redemption value, and the benefits you would actually use, not the number printed on the rate table.",
+  rankingCriteria: "We weighed five factors for each card: the earn rate on travel and everyday spend, how flexible and valuable the points or miles are at redemption, whether the annual fee is offset by benefits a typical cardholder will realistically use, foreign transaction fees, and how the card treats someone who occasionally carries a balance. We did not weight the advertised APR heavily, and we explain why below: a travel card is built around being paid off monthly, so the interest rate matters far less than what you earn and redeem.",
+  options: [
+    {
+      name: "Chase Sapphire Preferred®",
+      bestFor: "Most travelers who want one well-rounded card",
+      description: "The [Chase Sapphire Preferred](https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred) card charges a $95 annual fee and earns 5 points per dollar on travel booked through Chase Travel, 3 points on dining and select streaming and grocery purchases, and 2 points on other travel, so most regular spending lands in an elevated category instead of a flat 1x rate. Points transfer 1:1 to more than a dozen airline and hotel partners, which means a redemption can be worth meaningfully more than a cent apiece if you book strategically instead of cashing out for a flat statement credit. There is no foreign transaction fee, and the card includes a Global Entry or TSA PreCheck application fee credit every four years plus a DashPass subscription, benefits that are easy to use even if you only travel a couple of times a year.",
+      strengths: [
+        "5x points on Chase Travel bookings and 3x on dining, streaming, and grocery",
+        "Points transfer 1:1 to 11+ airline and hotel loyalty partners",
+        "No foreign transaction fees on any purchase"
+      ],
+      limitations: [
+        "$95 annual fee applies from year one with no waiver",
+        "The hotel credit only applies to bookings made through Chase Travel",
+        "Lounge access and travel credits are thinner than on the Sapphire Reserve"
+      ],
+      pricing: "$95 annual fee. Variable APR is roughly 19% to 30%; confirm the current range on Chase's site."
+    },
+    {
+      name: "Chase Sapphire Reserve®",
+      bestFor: "Frequent travelers who will use lounge access and travel credits",
+      description: "The [Chase Sapphire Reserve](https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve) carries a $795 annual fee, steep enough that it only pencils out if you will actually use what it includes: an annual travel credit worth up to $300 that applies broadly to flights, hotels, parking, tolls, and even campgrounds, plus Priority Pass and Chase Sapphire Lounge access for you and up to two guests. Earning is strong for a metal card, at 8 points per dollar on Chase Travel bookings, 4 points on flights and hotels booked directly, and 3 points on dining anywhere in the world, so heavy travelers accumulate transferable points fast. The travel credit alone offsets a large chunk of the fee for anyone who was going to book that much travel anyway, but if you fly once or twice a year and skip the lounges, you are paying for perks you will not touch.",
+      strengths: [
+        "8x points on Chase Travel and 3x on dining worldwide",
+        "Priority Pass and Chase Sapphire Lounge access for you and two guests",
+        "Broad annual travel credit that applies to flights, hotels, parking, and tolls"
+      ],
+      limitations: [
+        "Annual fee near $800 requires real travel volume to break even",
+        "Value depends on actually using the lounge and credit benefits",
+        "Occasional travelers overpay for perks built for frequent flyers"
+      ],
+      pricing: "$795 annual fee (raised from $550 in 2025; confirm the current fee on Chase's site). Variable APR is roughly 19% to 30%."
+    },
+    {
+      name: "Capital One Venture Rewards Credit Card",
+      bestFor: "Simple flat-rate earning without a spending-category chart",
+      description: "[Capital One Venture Rewards](https://www.capitalone.com/credit-cards/venture/) keeps earning simple: 2 miles per dollar on every purchase with no bonus categories to track, plus 5 miles per dollar on hotels, vacation rentals, and rental cars booked through Capital One Travel. That flat structure means you do not have to remember which category a purchase falls into to get a decent rate, which suits someone who does not want to plan spending around a rewards chart. The $95 annual fee comes with a Global Entry or TSA PreCheck fee credit and Hertz Five Star status, and miles transfer to more than 15 airline and hotel partners, though that partner list leans more useful for international travel than for domestic-only flyers.",
+      strengths: [
+        "Flat 2x miles on every purchase with no categories to track",
+        "Miles transfer to 15+ airline and hotel partners",
+        "Global Entry/TSA PreCheck credit and Hertz status included"
+      ],
+      limitations: [
+        "Lower category multipliers than Sapphire Preferred for dining and travel",
+        "Transfer partners lean international, less useful for domestic-only flyers",
+        "$95 fee with a narrower benefits list than Chase's comparable card"
+      ],
+      pricing: "$95 annual fee. Variable APR is roughly 19.5% to 28.5%; confirm the current range on Capital One's site."
+    },
+    {
+      name: "Capital One VentureOne Rewards Credit Card",
+      bestFor: "No-annual-fee starter card for occasional travelers",
+      description: "[Capital One VentureOne](https://www.capitalone.com/credit-cards/ventureone/) has no annual fee, which makes it one of the lowest-commitment ways to start earning travel miles. You get 1.25 miles per dollar on everyday purchases and 5 miles per dollar on hotels and rental cars booked through Capital One Travel, plus no foreign transaction fees, so it works fine as a backup international card even though it is not the strongest earner on this list. There is no lounge access or annual travel credit here. It is a card to hold indefinitely at no cost, not one to build a travel strategy around.",
+      strengths: [
+        "$0 annual fee, nothing to justify holding it long-term",
+        "1.25x miles on everyday spend, 5x on hotels/cars via Capital One Travel",
+        "No foreign transaction fees"
+      ],
+      limitations: [
+        "Lower earn rate than every fee-charging card in this list",
+        "No lounge access or annual travel credit",
+        "Redemption value tops out near 1 cent per mile for cash or statement credit"
+      ],
+      pricing: "$0 annual fee. 0% intro APR for 15 months on purchases and balance transfers, then roughly 18.5% to 28.5% variable; confirm current figures on Capital One's site."
+    },
+    {
+      name: "Bank of America® Travel Rewards Credit Card",
+      bestFor: "Bank of America customers, especially Preferred Rewards members",
+      description: "[Bank of America Travel Rewards](https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/) charges no annual fee and earns an unlimited 1.5 points per dollar on every purchase, with no foreign transaction fees. If you already bank with Bank of America and qualify for Preferred Rewards, you can earn a points bonus on top of that base rate, which is worth checking against your existing relationship before you apply elsewhere. Redemption is straightforward: points offset travel purchases as a statement credit at a fixed value rather than transferring to airline or hotel partners, so the ceiling on value is lower than a transferable-points card, but the simplicity is real.",
+      strengths: [
+        "$0 annual fee with unlimited 1.5 points per dollar on everything",
+        "No foreign transaction fees",
+        "Preferred Rewards members can earn a bonus on top of the base rate"
+      ],
+      limitations: [
+        "Flat rate lags cards with bonus categories for dining and travel",
+        "No airport lounge access or annual travel credit",
+        "Points redeem as a fixed-value statement credit, not transferable partners"
+      ],
+      pricing: "$0 annual fee. Variable APR is roughly 17% to 27%; confirm the current range on Bank of America's site."
+    },
+    {
+      name: "Discover it® Miles",
+      bestFor: "Building travel rewards while credit is still developing",
+      description: "The [Discover it Miles](https://www.discover.com/credit-cards/travel/) card earns 1.5 miles per dollar on every purchase for no annual fee, and Discover automatically matches all the miles you have earned at the end of your first year with no cap, which effectively doubles your first-year earn rate to 3 miles per dollar. There is no foreign transaction fee, but Discover's card network has thinner acceptance abroad than Visa or Mastercard, so it works better as a secondary international card than your only one. Miles redeem as a statement credit against travel purchases or convert to cash without losing value, which keeps things simple if you do not want to think about transfer partners.",
+      strengths: [
+        "First-year miles match with no cap, doubling year-one earnings",
+        "$0 annual fee and 1.5x miles on every purchase",
+        "No foreign transaction fees"
+      ],
+      limitations: [
+        "Thinner international acceptance than Visa or Mastercard networks",
+        "No lounge access, travel credit, or premium benefits",
+        "Ongoing earn rate after year one is modest compared to fee-charging cards"
+      ],
+      pricing: "$0 annual fee. 0% intro APR for 15 months on purchases and balance transfers, then roughly 17.5% to 26.5% variable; confirm current figures on Discover's site."
+    }
+  ],
+  comparisonTable: {
+    headers: ["Card", "Annual Fee", "Base Earn Rate", "Foreign Transaction Fee", "Best For"],
+    rows: [
+      { name: "Chase Sapphire Preferred®", values: ["$95", "2x other travel, 3x dining, 5x Chase Travel", "None", "Most well-rounded travelers"] },
+      { name: "Chase Sapphire Reserve®", values: ["$795", "1x other, 3x dining, 4x direct flights/hotels, 8x Chase Travel", "None", "Frequent flyers using lounges and credits"] },
+      { name: "Capital One Venture Rewards", values: ["$95", "2x flat, 5x Capital One Travel hotels/cars", "None", "Simple flat-rate earners"] },
+      { name: "Capital One VentureOne", values: ["$0", "1.25x flat, 5x Capital One Travel hotels/cars", "None", "No-fee starter card"] },
+      { name: "Bank of America Travel Rewards", values: ["$0", "1.5x flat", "None", "BofA banking customers"] },
+      { name: "Discover it Miles", values: ["$0", "1.5x flat, matched 1st year", "None", "Occasional travelers building credit"] }
+    ]
+  },
+  verdict: "For most people who travel a few times a year and want one card that covers dining, flights, and hotels without a steep fee, the Chase Sapphire Preferred is the strongest all-around pick: the earn rate covers real spending categories, the points transfer to real airline miles, and the $95 fee is easy to justify against just a couple of transferred redemptions. If you fly frequently enough to use airport lounges and would book $300 or more of travel a year anyway, the Chase Sapphire Reserve's credit and lounge access can make its far larger fee worth paying, but only for that traveler. The Sapphire Preferred is not for you if you rarely travel; in that case a no-fee card holds more value than a rewards structure you will not fully use. Capital One VentureOne or Discover it Miles cost nothing to hold and still earn a respectable flat rate, with Discover it Miles' first-year match giving new cardholders an unusually strong opening year. Bank of America Travel Rewards is worth a look specifically if you already bank there and qualify for a Preferred Rewards bonus, since that changes its math relative to the other no-fee options. What would change this recommendation: if your everyday spending genuinely clears $1,000 a month in travel-adjacent categories and you would use airport lounges more than a handful of times a year, the math shifts toward the Sapphire Reserve despite its fee. And if you sometimes carry a balance instead of paying in full, none of the premium cards make sense; move to whichever no-fee card has the lowest APR range for your credit profile, because interest charges will erase any point value faster than you can earn it back.",
+  sections: [
+    {
+      heading: "No-fee starter cards vs. annual-fee travel cards",
+      content: "A travel card's annual fee works like a prepayment for benefits you need to actually use to come out ahead. Capital One VentureOne and Discover it Miles charge nothing and still earn a real rate on every purchase, which makes them a safe default if you are not sure how much you will travel this year or if you are building credit history and do not want a fee attached to that process. Fee-charging cards like the Sapphire Preferred and Capital One Venture Rewards make sense once your spending in bonus categories, dining, or travel booked through the issuer's portal, is high enough that the extra points outearn the fee within a few months. Run the math before you apply: multiply your typical monthly spend in each bonus category by the rate difference between a no-fee card and the fee card you are considering, then see how many months it takes to clear the annual fee. If the answer is under six months, the fee card is probably worth it; if it is closer to twelve, stick with a no-fee card until your travel spending grows into it."
+    },
+    {
+      heading: "Why the APR is usually the wrong number to compare cards on",
+      content: "Every travel card lists an APR range, and it is tempting to treat the lower number as a tiebreaker between two otherwise similar cards. That instinct is backwards for a card you are using the way these cards are designed to be used: paid in full every month. Per the [CFPB's explanation of grace periods](https://www.consumerfinance.gov/ask-cfpb/what-is-a-grace-period-for-a-credit-card-en-47/), you avoid interest entirely on purchases if you pay your statement balance in full by the due date, on any of these cards, regardless of whether the printed APR is 18% or 30%. If you never carry a balance, the APR is a number you will never actually pay, so it should carry close to zero weight in your decision. Here is the worked comparison. Say you spend $6,000 a year on travel-adjacent purchases and pay your card in full every month. On the Chase Sapphire Reserve, that spend earns meaningful points at 3x to 8x in bonus categories, and the card's roughly $300 travel credit covers travel you were going to book anyway, so the effective annual cost of the $795 fee drops closer to $495 once you use the credit, before you even count the lounge access or the points themselves. On the Capital One VentureOne, the same spend earns a flat 1.25 miles per dollar with no credit to offset anything, but you would save on the lower end of its APR range if you ever slipped and carried a balance one month. If you are confident you will pay in full, the Sapphire Reserve's higher APR costs you nothing while its benefits and earn rate are worth real money; the VentureOne's lower APR is a feature you are paying to never use. Now flip the scenario. If there is a real chance you will carry a balance some months, an irregular income, a large unplanned expense, or just inconsistent budgeting, the calculus reverses completely. A single month of carrying a balance on the Sapphire Reserve at a rate near 29% can cost more in interest than a full year of its travel credit and points are worth. In that case, the VentureOne's or Discover it Miles' lower APR range and $0 annual fee protect you far better than any premium card's perks, and no amount of lounge access offsets an interest charge that size. If carrying a balance is even a possibility for you, run the numbers on our [credit card payoff calculator](/credit-card-payoff/) before applying for a card that markets its rewards ahead of its rate; it will show you what a carried balance actually costs against what the rewards are worth."
+    },
+    {
+      heading: "Foreign transaction fees and everyday spending abroad",
+      content: "None of the six cards in this comparison charge a foreign transaction fee, which was a baseline requirement for us to even consider a card a real travel card. That is not always true of Discover cards broadly, so we checked the Discover it Miles terms specifically rather than assuming; it confirms no foreign transaction fee, though Discover's card network has meaningfully thinner acceptance outside the US than Visa or Mastercard, so pack a Visa or Mastercard as backup if you are relying on it abroad. Foreign transaction fees typically run 1% to 3% of each purchase on cards that charge them, which adds up fast on a trip where you are putting hotels, meals, and transportation on a card daily; avoiding that fee on $3,000 of trip spending is worth $30 to $90 on its own, before you even count the rewards earned on the same purchases. This is a spec worth checking on any card you consider outside this list too: a card with a strong domestic earn rate can still cost you more on an international trip than a weaker card with no foreign transaction fee, once you run the math on total spend."
+    },
+    {
+      heading: "How redemption value actually differs between these cards",
+      content: "The points or miles you earn are only worth what you can turn them into, and that varies more between these six cards than the printed earn rates suggest. Cards with fixed-value redemption, Bank of America Travel Rewards, Capital One VentureOne, and Discover it Miles among them, let you apply points or miles as a statement credit against travel purchases at a set rate, usually near 1 cent per point, which is predictable but caps your upside. Transferable-points cards, the Sapphire Preferred and Sapphire Reserve, let you move points to airline and hotel loyalty programs at a 1:1 ratio, and a well-chosen transfer can be worth 1.5 to 2 cents per point or more, though it takes more research and flexibility on dates and destinations to capture that value. Capital One Venture Rewards and VentureOne sit in between: you can redeem miles as a flat statement credit, or transfer to Capital One's airline and hotel partners for potentially higher value if you are willing to do the extra step. If you book whatever flight is convenient and want to redeem in two clicks, the fixed-value cards will serve you better than their earn rate alone suggests; if you are willing to research award charts and transfer timing, the transferable-points cards can meaningfully outearn their printed rate."
+    }
+  ],
+  faqs: [
+    {
+      question: "What's the best travel credit card with no annual fee?",
+      answer: "Among no-fee options, Discover it Miles and Capital One VentureOne are the strongest starting points: both earn 1.5x or 1.25x on every purchase with no foreign transaction fee, and Discover's first-year miles match gives new cardholders an unusually strong opening year. Bank of America Travel Rewards is worth adding to that list specifically if you already bank with Bank of America and qualify for a Preferred Rewards points bonus."
+    },
+    {
+      question: "Is a high-APR travel credit card worth it if I pay my balance in full?",
+      answer: "Yes, in most cases, because the APR only applies to a balance you carry past your due date, and none of these cards charge interest on purchases you pay off in full within the grace period. A premium card's high APR is irrelevant to someone who never carries a balance; what matters instead is the earn rate, the redemption value, and whether you will use benefits like lounge access or an annual travel credit. If there is a real chance you will carry a balance some months, the calculation flips, and a lower APR on a no-fee card becomes the more important number."
+    },
+    {
+      question: "Chase Sapphire Preferred or Capital One Venture Rewards, which is better?",
+      answer: "It depends on how you spend. The Chase Sapphire Preferred earns more in specific bonus categories, dining, streaming, and travel booked through Chase, and transfers to a wider set of airline partners useful to US-based flyers. Capital One Venture Rewards earns a flat 2 miles per dollar on everything with no categories to track, which suits someone who does not spend heavily in Chase's bonus categories but still wants an above-average flat rate. Both charge a $95 annual fee and no foreign transaction fee, so the choice comes down to whether your spending fits Chase's categories or you would rather not think about categories at all."
+    },
+    {
+      question: "Do any of these travel cards charge foreign transaction fees?",
+      answer: "No. All six cards in this comparison, from the no-fee Discover it Miles and Capital One VentureOne up through the $795-fee Chase Sapphire Reserve, charge no foreign transaction fee, which we treated as a baseline requirement for a card to qualify as a real travel card in this list."
+    },
+    {
+      question: "How much travel spending do I need to justify a $95 or higher annual fee?",
+      answer: "Divide the annual fee by the rate difference between the fee card and a no-fee alternative on your typical spending categories. For example, if a fee card earns 3 points more per dollar than a no-fee card in a category where you spend $200 a month, that is roughly $6 a month in extra points value at a conservative 1 cent per point, which clears a $95 fee in about a year and a half; heavier spenders in bonus categories break even much faster. If your travel and dining spending is light and irregular, a no-fee card usually wins until that spending grows."
+    },
+    {
+      question: "What should change my mind about which travel card to pick?",
+      answer: "Two things: how much you actually spend in each card's bonus categories, and whether you are at real risk of carrying a balance in a given month. If your spending is concentrated in a fee card's top categories and you always pay in full, the fee card usually wins on math alone. If you are not sure you will pay in full every month, prioritize the lowest APR range you can find among the no-fee cards over any rewards structure, since interest charges outpace what rewards points are worth almost immediately."
+    }
+  ],
+  sources: [
+    { label: "CFPB: What is a grace period for a credit card?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-grace-period-for-a-credit-card-en-47/" },
+    { label: "CFPB: Credit cards key terms", url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/answers/key-terms/" },
+    { label: "Chase Sapphire Preferred official page", url: "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred" },
+    { label: "Chase Sapphire Reserve official page", url: "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve" },
+    { label: "Capital One Venture Rewards official page", url: "https://www.capitalone.com/credit-cards/venture/" },
+    { label: "Capital One VentureOne official page", url: "https://www.capitalone.com/credit-cards/ventureone/" },
+    { label: "Bank of America Travel Rewards official page", url: "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/" },
+    { label: "Discover it Miles official page", url: "https://www.discover.com/credit-cards/travel/" }
+  ],
+  relatedComparisons: [],
+  calculatorLinks: [
+    { label: "Credit Card Payoff Calculator", href: "/credit-card-payoff/" }
+  ]
+},
+
+  // ── Best Cash Back Credit Cards (competitor-monitor pass 2026-08-26) ──
+  {
+  slug: "best-cash-back-credit-cards",
+  title: "Best Cash Back Credit Cards of 2026",
+  metaDescription: "We checked issuer terms on six top cash back cards, from flat 2% picks to rotating 5% categories, to find the one that fits how you spend.",
+  targetKeyword: "best cash back credit cards",
+  category: "Credit Cards",
+  angle: "best",
+  h1: "Best Cash Back Credit Cards",
+  intro: "The best cash back credit card for most people is a flat-rate card like the [Citi Double Cash Card](https://www.citi.com/credit-cards/citi-double-cash-credit-card) or the [Wells Fargo Active Cash Card](https://creditcards.wellsfargo.com/active-cash-credit-card/), because both pay 2% on every purchase with nothing to activate and no category math to run. In the guides we publish here, we start from what a card actually pays after redemption friction, not the headline rate in the ad. That said, a category card can out-earn a flat-rate card once your spending concentrates in dining, groceries, or rotating bonus categories, and we lay out the exact math below so you can check your own spending against it. We pulled the terms below directly from each issuer's own card page rather than from a comparison site, and card terms change, so treat the rates here as the structure and confirm the current numbers before you apply. Six cards cover the real spread available today: two flat-rate cards, one rotating-category card, one fixed dining and grocery card, and one card built around three specific everyday categories, so the comparison below is not six versions of the same idea.",
+  rankingCriteria: "We ranked these six cards on five things: the real annual percentage return after redemption, whether an annual fee eats into that return, whether the top rate requires quarterly activation or a spending cap, how flexible redemption is (statement credit, direct deposit, or a narrower option), and how the issuer's own terms page states the deal today rather than what an older review still repeats. A card with a higher advertised rate that requires more effort to capture, or that caps out fast, can lose to a plainer flat-rate card once you run the numbers on your own spending.",
+  options: [
+    {
+      name: "Citi Double Cash Card",
+      bestFor: "A flat 2% with zero categories to track",
+      description: "The [Citi Double Cash Card](https://www.citi.com/credit-cards/citi-double-cash-credit-card) pays 2% cash back on every purchase, split into 1% when you buy and another 1% once you pay it off, so the second percent only lands for people who actually clear the charge. It carries no annual fee, and it earns Citi ThankYou Points, which you can pair with a points-earning Citi card to move the cash back into travel transfers instead of a flat statement credit.",
+      strengths: [
+        "2% on every purchase with nothing to activate, so the rate never depends on remembering a category",
+        "No annual fee, so the full return reaches you instead of paying off a yearly charge first",
+        "The 1% payment bonus rewards paying in full, which keeps you out of interest that would erase the reward anyway",
+      ],
+      limitations: [
+        "Foreign transactions carry a fee, so it is a poor pick for travel spending abroad",
+        "A balance carried past the due date effectively drops the card to 1%, since the second percent needs the payment to post",
+        "No bonus category rate, so a household spending heavily on groceries or dining can beat 2% with a category card",
+      ],
+      pricing: "$0 annual fee. Confirm the current welcome offer and standard purchase APR on Citi's own card page, since both change over time.",
+    },
+    {
+      name: "Chase Freedom Unlimited",
+      bestFor: "Frequent restaurant and drugstore spending, plus Chase Travel",
+      description: "The [Chase Freedom Unlimited](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) card pays 5% on travel booked through Chase Travel, 3% on dining including takeout and eligible delivery, 3% at drugstores, and 1.5% on everything else, with none of the categories capped. If you also hold a Chase card that earns Ultimate Rewards points, such as the Sapphire Preferred, the cash back this card earns can convert into those points and be transferred to airline and hotel partners instead of staying as flat cash.",
+      strengths: [
+        "3% at restaurants covers a category most households spend in every month, not just a seasonal quarter",
+        "The bonus categories have no spending cap, so a big month at the drugstore or a restaurant still earns the full rate",
+        "A 0% introductory APR window on purchases and balance transfers gives new cardholders room to pay down a transferred balance without interest",
+      ],
+      limitations: [
+        "The base rate on everything outside dining, drugstores, and Chase Travel is 1.5%, a full half point under the flat-rate leaders",
+        "It charges a foreign transaction fee, so it is not the card to carry overseas",
+        "The 5% travel rate only applies inside the Chase Travel portal, not to airfare or hotels booked directly with the airline or hotel",
+      ],
+      pricing: "$0 annual fee. Confirm the current welcome bonus, spending requirement, and post-intro APR range on Chase's own card page before you apply.",
+    },
+    {
+      name: "Wells Fargo Active Cash Card",
+      bestFor: "The simplest possible flat rate",
+      description: "The [Wells Fargo Active Cash Card](https://creditcards.wellsfargo.com/active-cash-credit-card/) pays 2% cash rewards on every net purchase, with no bonus categories, no activation, and no annual fee. It is close to a mirror image of the Citi Double Cash Card, except the 2% posts in one step rather than splitting across the purchase and the payment.",
+      strengths: [
+        "2% cash rewards on everything, credited without waiting on a second payment step",
+        "A 0% introductory APR period on purchases and qualifying balance transfers helps if you are moving debt off a higher-rate card",
+        "Redemption is straightforward: statement credit, direct deposit, or a paper check, with no separate points program to learn",
+      ],
+      limitations: [
+        "A 3% foreign transaction fee applies, so it is not built for spending outside the U.S.",
+        "There is no bonus category, so grocery- or dining-heavy spenders leave money on the table compared to a category card",
+        "The standard APR after the introductory period runs on the higher end of this list, which matters if you expect to carry a balance later",
+      ],
+      pricing: "$0 annual fee. Confirm the current welcome bonus and the post-intro variable APR range on Wells Fargo's own card page.",
+    },
+    {
+      name: "Discover it Cash Back",
+      bestFor: "Readers willing to activate categories for a higher return",
+      description: "The [Discover it Cash Back](https://www.discover.com/credit-cards/cash-back/it-card/) card pays 5% cash back on rotating categories you activate each quarter, up to $1,500 in combined spending in those categories per quarter, then 1% after that cap. Everything outside the quarter's categories earns a flat 1%. New cardholders also get an automatic dollar-for-dollar match of all the cash back earned in the first year, so a card that earned $300 in its first year effectively pays out $600.",
+      strengths: [
+        "5% in the active quarter's categories is the highest rate on this list, on categories that often include gas, groceries, or restaurants",
+        "The first-year Cashback Match doubles everything earned in year one automatically, with no cap on the match itself",
+        "No foreign transaction fee, which is unusual for a rotating-category card",
+      ],
+      limitations: [
+        "You must activate each quarter's categories yourself. Forgetting means that quarter earns only 1% instead of 5%",
+        "The 5% rate stops at $1,500 in combined quarterly spending, after which the same purchases drop to 1%",
+        "The categories rotate and are not guaranteed to match your actual spending in any given quarter, so the average return over a year usually lands well under 5%",
+      ],
+      pricing: "$0 annual fee. Confirm the current quarter's categories and the standard APR range on Discover's own card page before you activate.",
+    },
+    {
+      name: "Capital One SavorOne Cash Rewards",
+      bestFor: "Households heavy on dining, groceries, and streaming",
+      description: "The [Capital One SavorOne Cash Rewards](https://www.capitalone.com/credit-cards/savorone/) card pays 3% cash back on dining, entertainment, popular streaming services, and grocery stores, plus 5% on hotels and rental cars booked through Capital One Travel, with 1% on everything else. Capital One added a $39 annual fee to this card, which is a change from the fee-free version many older reviews still describe, so it now needs to clear that fee before it beats a no-fee flat-rate card.",
+      strengths: [
+        "3% covers four categories many households already spend heavily in, without needing to activate anything each quarter",
+        "No foreign transaction fee, so it travels better than most fixed-category cards on this list",
+        "The 5% Capital One Travel rate on hotels and rental cars adds a real bonus for booked trips",
+      ],
+      limitations: [
+        "The $39 annual fee means the card needs roughly $1,300 a year in bonus-category spending just to break even against a no-fee 2% flat-rate card",
+        "The 3% categories exclude gas stations and most everyday retail, which still earn the plain 1% rate",
+        "The 5% Capital One Travel rate is only useful if you actually book hotels and rental cars through that specific portal",
+      ],
+      pricing: "$39 annual fee. Confirm the current welcome offer and standard APR range on Capital One's own card page, since the fee and terms have changed recently.",
+    },
+    {
+      name: "Blue Cash Everyday from American Express",
+      bestFor: "Families with high grocery, gas, and online retail spending",
+      description: "The [Blue Cash Everyday Card from American Express](https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/) pays 3% cash back at U.S. supermarkets, on U.S. online retail purchases, and at U.S. gas stations, each capped separately at $6,000 in spending per year before dropping to 1%. Everything outside those three categories, including dining, earns the flat 1% rate, and the card carries no annual fee.",
+      strengths: [
+        "Three separate 3% categories, each with its own $6,000 annual cap, cover roughly $500 a month per category before the rate drops",
+        "No annual fee, so the entire bonus-category return is kept rather than offset by a yearly charge",
+        "The online retail category is broader than most cards' grocery or dining buckets, since it covers general online shopping, not just one merchant type",
+      ],
+      limitations: [
+        "Dining and general retail outside the three bonus categories earn only 1%, the same as a card with no categories at all",
+        "Each $6,000 cap is tracked separately, so a family that spends heavily in only one category, like groceries, hits that cap without the other two categories helping",
+        "American Express is accepted at fewer merchants than Visa or Mastercard networks, which matters for smaller shops and some international merchants",
+      ],
+      pricing: "$0 annual fee. Confirm the current welcome offer and standard APR range on American Express's own card page before you apply.",
+    },
+  ],
+  comparisonTable: {
+    headers: ["Card", "Annual Fee", "Top Cash Back Rate", "Base Rate", "Category Cap"],
+    rows: [
+      {
+        name: "Citi Double Cash Card",
+        values: ["$0", "2% (1% when you buy, 1% when you pay)", "2% on everything", "None"],
+      },
+      {
+        name: "Chase Freedom Unlimited",
+        values: ["$0", "5% Chase Travel, 3% dining and drugstores", "1.5% on everything else", "None on bonus rates"],
+      },
+      {
+        name: "Wells Fargo Active Cash",
+        values: ["$0", "2% flat on every purchase", "2% on everything", "None"],
+      },
+      {
+        name: "Discover it Cash Back",
+        values: ["$0", "5% rotating (activation required)", "1% on everything else", "$1,500 combined spending per quarter"],
+      },
+      {
+        name: "Capital One SavorOne",
+        values: ["$39", "5% hotels/rental cars via Capital One Travel, 3% dining, entertainment, streaming, grocery", "1% on everything else", "None stated on the 3% categories"],
+      },
+      {
+        name: "Blue Cash Everyday",
+        values: ["$0", "3% U.S. supermarkets, online retail, gas stations", "1% on everything else", "$6,000 per year, per category, then 1%"],
+      },
+    ],
+  },
+  verdict: "Pick the Citi Double Cash Card or the Wells Fargo Active Cash Card if you want the simplest possible math: 2% on everything, no activation, no annual fee. Pick the Chase Freedom Unlimited card if restaurants and drugstores make up a real share of your monthly spending and you might eventually pair it with a Chase points card for travel transfers. Pick the Discover it Cash Back card only if you will actually remember to activate each quarter's categories, since the first-year match makes the first twelve months unusually strong but the ongoing return depends entirely on whether the rotating categories match your spending. Pick the Capital One SavorOne Cash Rewards card if dining, groceries, and streaming already dominate your budget by enough to clear its $39 fee. Pick the Blue Cash Everyday Card from American Express if groceries, gas, and online shopping are your three biggest categories and you rarely eat out. This ranking is not for someone who carries a balance most months. Interest on a carried balance typically runs far higher than any cash back rate on this list, so a lower-APR card or a payoff plan matters more than the rewards rate in that case. It also is not for someone who wants airline miles or hotel points instead of cash, since every card here optimizes for cash back over travel redemption value. What would change this verdict: if Capital One raised the SavorOne fee again or narrowed its categories, the Blue Cash Everyday and flat-rate cards would move ahead of it for most households. If Citi or Wells Fargo added an annual fee to their flat-rate cards, the calculus for low-effort spenders would shift toward whichever no-fee flat card remained.",
+  sections: [
+    {
+      heading: "Rotating Categories Beat Flat Rate Only When You Concentrate Spending",
+      content: "A 5% or 3% category rate only beats a flat 2% card once enough of your spending actually falls inside that category, and the break-even point is higher than most people assume. Take a household spending $2,500 a month where groceries and dining together are $450, spread thin across a $2,500 budget. A flat 2% card earns $50 that month. A 3% dining-and-grocery card earns 3% on the $450 and 1% on the remaining $2,050, for $13.50 plus $20.50, or $34, well behind the flat card. Now take a household where groceries and dining together are $1,600 of that same $2,500 budget. The 3% card earns 3% on $1,600 plus 1% on $900, for $48 plus $9, or $57, ahead of the flat card's $50. The Capital One SavorOne card only pulls ahead once bonus-category spending clears roughly 55 to 60 percent of the monthly total, and its $39 annual fee pushes that threshold slightly higher still. The Discover it Cash Back card runs the same test at a steeper angle: its 5% rate is capped at $1,500 in combined quarterly spending, so even a household that pours its entire grocery and gas budget into an active quarter tops out at $75 in bonus cash back for those three months, or $300 across a full year of well-matched quarters. Compare that $300 ceiling against a flat 2% card earning 2% on the same spending with no ceiling at all, and the rotating card only wins the quarters where its category genuinely lines up with a big chunk of your budget. Run your own last three credit card statements through this math before assuming a category card pays more just because the advertised rate is higher.",
+    },
+    {
+      heading: "How Cash Back Redemption Works",
+      content: "Cash back on these cards lands as a statement credit, a direct deposit to a bank account, or occasionally a paper check, and the value of a percent earned is the same across all three on every card in this roundup. That is a real advantage over airline miles or hotel points, where the same 50,000 points can be worth $250 on one flight and $900 on another. Citi is the one exception worth knowing: its cash back is earned as ThankYou Points that convert to cash at a flat rate, but those same points can instead move into Citi's travel program if you hold a second Citi card that earns transferable points, which opens up a redemption path the other cards on this list do not have. None of these six cards impose a minimum redemption threshold that meaningfully delays access to your cash back, unlike some store or airline cards that hold rewards until you cross a set dollar amount.",
+    },
+    {
+      heading: "Category Caps Limit How Much You Earn",
+      content: "A capped bonus category turns into the base rate the moment you cross the cap, and three cards on this list cap differently enough that it changes which one wins for a heavy spender. Discover it Cash Back caps its 5% categories at $1,500 in combined quarterly spending, or $6,000 a year, after which the same purchases drop straight to 1%. The Blue Cash Everyday Card from American Express caps each of its three 3% categories separately at $6,000 a year, so a family spending $9,000 a year on groceries still earns 3% on the first $6,000 and only 1% on the remaining $3,000. The Capital One SavorOne card, by contrast, states no cap on its 3% dining, grocery, entertainment, and streaming categories, which matters if any single category regularly runs high. That gap in cap design is why a family with one dominant category, such as a large household's grocery bill, should read the fine print on caps as closely as the headline rate. A $9,000 annual grocery bill against Blue Cash Everyday's $6,000 grocery cap loses $90 a year to the 1% fallback rate on the last $3,000, an amount that a no-cap card like SavorOne would keep earning at the full 3% rate instead. Before choosing a card for one big category, check your own annual spending in that category against the cap, not just the monthly amount.",
+    },
+    {
+      heading: "A Carried Balance Cancels Out the Rewards",
+      content: "Cash back only helps if you pay the statement in full, because every card on this list charges a standard APR well above what any rewards rate can offset. The [Consumer Financial Protection Bureau](https://files.consumerfinance.gov/f/documents/cfpb_credit-card-rewards_issue-spotlight_2024-05.pdf) has flagged that consumers who carry a revolving balance often pay far more in interest than they ever recover in rewards, and the math here is not close: a card charging 20 percent or more in interest erases a 2% or even 5% cash back rate within a single missed payment cycle. If you expect to carry a balance most months, a card's introductory 0% APR window matters more than its cash back rate, and paying down existing debt should come before optimizing which card earns the most. Use our [credit card payoff calculator](/credit-card-payoff/) to see how long a carried balance would take to clear and what it costs in interest before you pick a card based on its rewards rate alone.",
+    },
+  ],
+  faqs: [
+    {
+      question: "What is the best cash back credit card if I don't want to track categories?",
+      answer: "The Citi Double Cash Card and the Wells Fargo Active Cash Card are the simplest options, both paying a flat 2% on every purchase with no activation and no annual fee. Neither requires tracking a rotating calendar or watching a spending cap, so the rate you see is the rate you get every month.",
+    },
+    {
+      question: "Is Discover it Cash Back's rotating category system worth the effort?",
+      answer: "It is worth it if you will reliably activate each quarter's categories and if those categories tend to overlap with how you already spend. The card's first-year Cashback Match makes year one unusually strong, doubling whatever you earn, but from year two onward the return depends entirely on whether that quarter's 5% categories, capped at $1,500 in combined spending, line up with your budget.",
+    },
+    {
+      question: "Do any of these cash back cards charge an annual fee?",
+      answer: "Five of the six carry no annual fee: the Citi Double Cash Card, Chase Freedom Unlimited, Wells Fargo Active Cash Card, Discover it Cash Back, and Blue Cash Everyday. The Capital One SavorOne Cash Rewards card carries a $39 annual fee, a change from the fee-free version some older reviews still describe, so confirm the current fee on Capital One's own card page before applying.",
+    },
+    {
+      question: "How does cash back get paid out on these cards?",
+      answer: "Most of these cards pay cash back as a statement credit, a direct deposit, or a paper check, all worth the same flat dollar value. Citi is the exception in that its cash back accrues as ThankYou Points, which redeem for cash at a flat rate or can move into Citi's travel program if you also hold a points-earning Citi card.",
+    },
+    {
+      question: "Will carrying a balance wipe out the cash back I earn?",
+      answer: "Yes, in almost every case. The standard APR on these cards runs well above any cash back rate, so interest on a carried balance typically costs more in a single month than a year of 2% cash back would return. Pay the statement in full each month, or prioritize a lower-APR card and a payoff plan over chasing the highest rewards rate.",
+    },
+    {
+      question: "What credit score do I need to qualify for these cards?",
+      answer: "All six cards in this roundup are generally marketed toward applicants with good to excellent credit, though each issuer weighs income, existing debt, and credit history alongside the score itself. Check the specific eligibility guidance on each issuer's own application page, since approval odds depend on your full credit profile, not a single number.",
+    },
+  ],
+  sources: [
+    { label: "Citi Double Cash Card, official terms", url: "https://www.citi.com/credit-cards/citi-double-cash-credit-card" },
+    { label: "Chase Freedom Unlimited, official terms", url: "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited" },
+    { label: "Wells Fargo Active Cash Card, official terms", url: "https://creditcards.wellsfargo.com/active-cash-credit-card/" },
+    { label: "Discover it Cash Back, official terms", url: "https://www.discover.com/credit-cards/cash-back/it-card/" },
+    { label: "Capital One SavorOne Cash Rewards, official terms", url: "https://www.capitalone.com/credit-cards/savorone/" },
+    { label: "Blue Cash Everyday Card from American Express, official terms", url: "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/" },
+    { label: "CFPB, Credit Card Rewards Issue Spotlight", url: "https://files.consumerfinance.gov/f/documents/cfpb_credit-card-rewards_issue-spotlight_2024-05.pdf" },
+  ],
+  relatedComparisons: [],
+  calculatorLinks: [
+    { label: "See how long a carried balance takes to pay off", href: "/credit-card-payoff/" },
+  ],
+},
+
+  // ── Best Student Credit Cards (competitor-monitor pass 2026-08-26) ───
+  {
+    slug: "best-student-credit-cards",
+    title: "Best Student Credit Cards of 2026",
+    metaDescription:
+      "Compare the best student credit cards of 2026, including options with no credit history required, no annual fee, and real cash back rewards.",
+    targetKeyword: "best student credit cards",
+    category: "student credit cards",
+    angle: "best",
+    segment: "College students / first-time cardholders",
+    h1: "Best Student Credit Cards of 2026",
+    intro:
+      "The [Discover it® Student Cash Back](https://www.discover.com/credit-cards/student-credit-card/it-card/) card is the best student credit card for most first-time cardholders, because it charges no annual fee, states plainly that no credit score is required to apply, and automatically matches every dollar of cash back you earn during your first cardmember year. It is not the right fit for every student, though, and five other cards on this page deserve a look depending on how you spend and whether an existing bank relationship helps you.\n\nWe compared six student credit cards currently open to new applicants: Discover it® Student Cash Back, Capital One Savor Rewards for Students, Capital One Quicksilver Rewards for Students, Chase Freedom Rise℠, Bank of America® Travel Rewards for Students, and Bank of America® Customized Cash Rewards for Students. Every card here reports to all three major credit bureaus, charges $0 in annual fees, and is built specifically for a thin or empty credit file rather than an established borrower.",
+    rankingCriteria:
+      "We weighed five factors that matter to a first-time cardholder specifically: whether the issuer requires an existing credit score to apply, the annual fee, how the rewards rate lines up with typical student spending on dining, groceries, streaming, and rideshares, the strength of any starter bonus or cash back match, and how clearly the issuer offers a path to a stronger non-student card later on. We did not weight sign-up bonus size heavily on its own, since a bonus that requires spending more than a typical student spends in three months is not really available to the reader this page is written for.\n\nA card that requires a Social Security number with no alternative path, or that has stopped accepting new applicants, was excluded outright. That is why the once-popular Deserve® EDU Mastercard, built for international students without an SSN, does not appear here: Deserve stopped issuing new cards and began closing existing accounts in 2025 into 2026, so recommending it today would send you toward a card you can no longer open.",
+    options: [
+      {
+        name: "Discover it® Student Cash Back",
+        bestFor: "No credit score required, plus a first-year cash back match",
+        description:
+          "[Discover it® Student Cash Back](https://www.discover.com/credit-cards/student-credit-card/it-card/) is built around one standout mechanic: Discover automatically matches all the cash back you earn during your first cardmember year, dollar for dollar, with no cap and no enrollment step required. Earn $150 in cash back in year one and Discover adds another $150 on top.\n\nThe base rewards rate is 1% on everything, stepping up to 5% in categories that rotate quarterly, such as grocery stores, restaurants, or gas stations, up to a spending cap once you activate them each quarter. Discover states outright that no credit score is required to apply, which matters if this is genuinely your first credit product. The card carries no annual fee and no foreign transaction fee.",
+        strengths: [
+          "No credit score needed to apply, so a completely blank credit file is not a disqualifier",
+          "The first-year cash back match effectively doubles your rewards rate for twelve months",
+          "No foreign transaction fee, useful if you study abroad for a semester",
+          "Discover reports to all three credit bureaus, so on-time payments start building your file immediately",
+        ],
+        limitations: [
+          "The 5% categories rotate quarterly and require activation each time, which is easy to forget",
+          "The 1% base rate on non-bonused spending trails a flat-rate card like Quicksilver's 1.5%",
+          "Fewer merchants accept Discover internationally than Visa or Mastercard",
+        ],
+        pricing:
+          "$0 annual fee. A variable APR applies to purchases after an introductory 0% period; confirm the current APR range and promotional length directly on Discover's card page, since both change over time.",
+      },
+      {
+        name: "Capital One Savor Rewards for Students",
+        bestFor: "Dining, grocery, and streaming spenders",
+        description:
+          "[Capital One Savor Rewards for Students](https://www.capitalone.com/credit-cards/savorone-student/), which Capital One also markets under the SavorOne Student Cash Rewards name, targets the categories a student actually spends in. Dining out, grocery stores, entertainment, and popular streaming subscriptions all earn 3% cash back, with 1% on everything else.\n\nCapital One defines student eligibility broadly: you qualify if you are currently enrolled, or admitted and planning to enroll within the next three months, at an accredited college, university, or community college. The card carries no annual fee, and Capital One lets you check your approval odds before formally applying without triggering a hard inquiry on your credit report.",
+        strengths: [
+          "3% cash back on dining, groceries, entertainment, and streaming covers most of a typical student budget",
+          "The eligibility check runs a soft inquiry only, so you can gauge your odds before a hard pull hits your file",
+          "No annual fee and no foreign transaction fee, so nothing quietly erodes what you earn or spend abroad",
+          "Capital One's app includes a free credit-score tracking tool, useful for watching your progress",
+        ],
+        limitations: [
+          "The grocery bonus excludes big-box superstores like Walmart and Target, where many students actually shop",
+          "The 1% base rate applies to everything outside the four bonus categories",
+          "The welcome bonus requires a minimum spend some students will not clear in three months",
+        ],
+        pricing:
+          "$0 annual fee. A welcome bonus, structured as cash back after a minimum purchase amount in the first three months, is typically available; confirm the current dollar figures on Capital One's own page, since promotional offers change.",
+      },
+      {
+        name: "Capital One Quicksilver Rewards for Students",
+        bestFor: "A flat rate with zero categories to track",
+        description:
+          "[Capital One Quicksilver Rewards for Students](https://www.capitalone.com/credit-cards/quicksilver-student/) skips categories altogether. Every purchase earns 1.5% cash back, whether it is textbooks, rent, or a coffee run, and that simplicity is the entire pitch for a first-time cardholder who does not want to track rotating categories or remember a quarterly activation deadline.\n\nThe same eligibility rules as the Savor card above apply, and the same soft-pull eligibility check lets you preview your odds first. The card charges no annual fee and no foreign transaction fee, and Capital One reports payment history to all three credit bureaus every month.",
+        strengths: [
+          "A flat 1.5% cash back rate on every purchase means no categories to track or activate",
+          "The soft-pull eligibility check lets you preview approval odds before a formal application",
+          "No annual fee and no foreign transaction fee",
+          "Simple enough for someone managing a credit card for the first time to never get tripped up by fine print",
+        ],
+        limitations: [
+          "A flat 1.5% rate leaves value on the table compared with Savor's 3% on dining and groceries for a heavy category spender",
+          "No bonus categories means no way to boost your rate around a big back-to-school or exam-season spending month",
+          "The standard variable APR applies once any introductory period ends, so a carried balance still costs money",
+        ],
+        pricing:
+          "$0 annual fee. Confirm the current welcome bonus terms and ongoing APR on Capital One's own page before applying, since both are promotional and subject to change.",
+      },
+      {
+        name: "Chase Freedom Rise℠",
+        bestFor: "Truly no credit history, with a path to a stronger Chase card later",
+        description:
+          "[Chase Freedom Rise℠](https://creditcards.chase.com/cash-back-credit-cards/freedom/rise) solves the same problem Discover's and Capital One's student cards solve: how an issuer extends a real credit card to someone the credit bureaus have no file on at all. Chase does not require prior credit history to qualify, and the card earns a flat 1.5% cash back on purchases.\n\nWhat sets Freedom Rise℠ apart is the built-in upgrade path. Chase says cardholders may become eligible for a credit line increase after as little as six months of responsible use, and may eventually be offered an upgrade to the Chase Freedom Unlimited® card without submitting a new application. Keeping at least $250 in a linked Chase checking or savings account is not a hard requirement, but Chase states it can improve your approval odds, which is worth knowing before you apply.",
+        strengths: [
+          "No prior credit history required at all, closing the same gap Discover's and Capital One's student cards target",
+          "A built-in path toward a credit line increase and a potential upgrade to a stronger Chase card down the line",
+          "A flat 1.5% cash back rate plus periodic bonus categories Chase runs for a limited time",
+          "No annual fee",
+        ],
+        limitations: [
+          "Approval odds improve with a linked Chase checking or savings account, which not every student already has",
+          "Bonus category offers, like elevated dining cash back, are time-limited promotions rather than permanent card features",
+          "A newer product than Discover's or Capital One's student cards, so it carries a shorter long-term track record",
+        ],
+        pricing:
+          "$0 annual fee. Chase periodically runs limited-time bonus categories and a small bonus for enrolling in autopay; confirm what is currently active on Chase's card page.",
+      },
+      {
+        name: "Bank of America® Travel Rewards for Students",
+        bestFor: "A student planning to travel, with points that never expire",
+        description:
+          "[Bank of America® Travel Rewards for Students](https://www.bankofamerica.com/credit-cards/products/student-rewards-credit-card/) earns 1.5 points per dollar on everyday purchases and 3 points per dollar on travel booked through the Bank of America Travel Center, and those points do not expire as long as the account stays open. For a student already planning a semester abroad or regular flights home, that structure can out-earn a flat cash back card over time.\n\nThe card charges no annual fee and no foreign transaction fee, both of which matter for a cardholder who travels. Bank of America also offers an introductory 0% APR window on purchases and on balance transfers made within the first couple of months, though the exact number of billing cycles and the ongoing APR range should be confirmed directly on Bank of America's page, since both are adjusted periodically.",
+        strengths: [
+          "No foreign transaction fee, a meaningful saver on study-abroad or travel spending",
+          "Points never expire while the account stays open, unlike rewards tied to rotating quarterly categories",
+          "3 points per dollar on travel booked through Bank of America's own travel portal",
+          "Existing Bank of America customers can apply through the banking app they already use",
+        ],
+        limitations: [
+          "1.5 points per dollar on everyday spending is a modest baseline next to Savor's 3% on dining and groceries",
+          "Redemption value depends on how you redeem points, and travel-portal bookings are not always the cheapest option available",
+          "Best suited to a student who will actually book travel, not one who mostly spends on groceries and streaming",
+        ],
+        pricing:
+          "$0 annual fee. Confirm the current welcome bonus point total and required minimum spend on Bank of America's own card page, since promotional bonuses are adjusted periodically.",
+      },
+      {
+        name: "Bank of America® Customized Cash Rewards for Students",
+        bestFor: "Choosing your own 3% category month to month",
+        description:
+          "[Bank of America® Customized Cash Rewards for Students](https://www.bankofamerica.com/credit-cards/products/student-cash-back-credit-card/) lets you pick which category earns 3% cash back from a list that includes gas, online shopping, dining, travel, drug stores, and home improvement, and you can change your choice once per calendar month through the app. On top of that, you earn 2% at grocery stores and wholesale clubs and 1% on everything else.\n\nThe 3% and 2% categories share a combined quarterly spending cap, after which purchases in those categories drop to the 1% base rate. That cap is worth understanding before you lean on this card heavily for a single category of spending, since a big month could push you past it faster than you expect.",
+        strengths: [
+          "You choose the 3% category yourself and can change it monthly, unlike cards with fixed bonus categories",
+          "2% at grocery stores and wholesale clubs covers a cost most students pay every single month",
+          "No annual fee",
+          "A parent's Bank of America Preferred Rewards tier, if applicable, can boost your earn rate further",
+        ],
+        limitations: [
+          "The combined 3%-plus-2% spending cap resets quarterly and limits how much you can earn at the higher rates",
+          "Choosing and remembering to update your category adds a step a flat-rate card like Quicksilver skips entirely",
+          "Category selection happens through the online account or app, an extra setup step right after approval",
+        ],
+        pricing:
+          "$0 annual fee. Confirm the current combined quarterly spending cap dollar amount and welcome bonus on Bank of America's own card page, since Bank of America adjusts both periodically.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Card", "Annual Fee", "Credit History Required?", "Best Category Rate", "Foreign Transaction Fee", "Welcome Offer"],
+      rows: [
+        {
+          name: "Discover it® Student Cash Back",
+          values: ["$0", "No credit score required", "5% rotating quarterly categories (activation + cap)", "None", "Dollar-for-dollar cash back match after year one"],
+        },
+        {
+          name: "Capital One Savor Rewards for Students",
+          values: ["$0", "Soft-pull eligibility check available", "3% dining, groceries, entertainment, streaming", "None", "Cash bonus after minimum spend (confirm current terms)"],
+        },
+        {
+          name: "Capital One Quicksilver Rewards for Students",
+          values: ["$0", "Soft-pull eligibility check available", "1.5% flat on everything", "None", "Cash bonus after minimum spend (confirm current terms)"],
+        },
+        {
+          name: "Chase Freedom Rise℠",
+          values: ["$0", "No prior credit history required", "1.5% flat, plus limited-time bonus categories", "Confirm on Chase's page", "Autopay bonus + limited-time offers"],
+        },
+        {
+          name: "Bank of America® Travel Rewards for Students",
+          values: ["$0", "Standard credit application", "3 points per $1 on travel via BofA Travel Center", "None", "Points bonus after minimum spend (confirm current terms)"],
+        },
+        {
+          name: "Bank of America® Customized Cash Rewards for Students",
+          values: ["$0", "Standard credit application", "3% in a category you choose + 2% grocery/wholesale club", "Confirm on BofA's page", "Cash bonus after minimum spend (confirm current terms)"],
+        },
+      ],
+    },
+    verdict:
+      "[Discover it® Student Cash Back](https://www.discover.com/credit-cards/student-credit-card/it-card/) is our top pick for a student applying for a first credit card with no existing score, because the no-credit-score policy removes the single biggest barrier a first-time applicant faces, and the first-year cash back match adds real value on top of that. Pick [Capital One Savor Rewards for Students](https://www.capitalone.com/credit-cards/savorone-student/) instead if dining, groceries, and streaming make up most of your monthly spending, since its 3% rate beats Discover's 1% base rate on anything outside a rotating quarter. Choose [Capital One Quicksilver Rewards for Students](https://www.capitalone.com/credit-cards/quicksilver-student/) if you would rather not think about categories at all and just want a flat rate that never changes.\n\n[Chase Freedom Rise℠](https://creditcards.chase.com/cash-back-credit-cards/freedom/rise) is the strongest option if Discover declines you, since Chase explicitly does not require prior credit history and pairs the card with a stated path toward a credit line increase and a future upgrade. Pick one of the two Bank of America student cards if you or a parent already bank there: [Travel Rewards for Students](https://www.bankofamerica.com/credit-cards/products/student-rewards-credit-card/) if you travel, [Customized Cash Rewards for Students](https://www.bankofamerica.com/credit-cards/products/student-cash-back-credit-card/) if you would rather pick your own bonus category month to month.\n\nThis ranking is not for you if you already carry an established score from a year or more as an authorized user or on a secured card. At that point, a general-market rewards card with a stronger earning rate and no enrollment requirement usually beats every card on this page, since student cards exist to solve an approval problem you no longer have. What would change our answer here is any of these issuers tightening the policies that make them viable for a genuine first-time applicant, or a new entrant undercutting Discover's cash back match; we would revisit this list if either happened.",
+    sections: [
+      {
+        heading: "How a student with no credit history gets approved at all",
+        content:
+          "Every issuer runs an underwriting model, and a completely empty credit file usually reads as unscorable rather than risky, which is why these six cards lean on alternative signals instead of a FICO score. Discover states outright that no credit score is required to apply, relying instead on income, existing bank relationships, and enrollment status to decide. Chase takes a similar approach with Freedom Rise℠, and both Capital One student cards let you check your approval odds with a soft inquiry before you formally apply, so a decline never shows up as a hard pull on your credit report.\n\nFederal law adds a real constraint here. Under the CARD Act's ability-to-pay rule, an applicant under 21 must either show independent income sufficient to make the payments or have a co-signer age 21 or older who agrees to be liable for the debt. A parent or guardian is the most common co-signer, but the rule allows any adult who can demonstrate the ability to repay. If you are under 21 with only financial aid or scholarship income and no job, expect an issuer to ask for a co-signer, since aid money generally does not count as independent income for this purpose.\n\nMaintaining a linked checking or savings account with the issuing bank, as Chase and Bank of America both suggest, is not a legal requirement, but it gives an issuer something concrete to underwrite against beyond a blank credit file. Opening one and keeping a modest balance there before you apply is a low-cost way to improve your odds.",
+      },
+      {
+        heading: "The habits that actually build a score fast",
+        content:
+          "Two factors drive roughly two-thirds of a FICO score, and both are entirely within your control from the day the card arrives: payment history and credit utilization. Paying the full statement balance by the due date every single month matters more than any other habit on this list. A missed payment can knock a meaningful number of points off your score and can remain on your credit report for up to seven years.\n\nUtilization, the share of your credit limit you carry a balance on, matters almost as much. Keeping reported utilization under 30% is the common rule of thumb, and under 10% tends to help further. Paying down your balance before the statement closing date, not just before the due date, is what actually lowers the number the bureaus see, because issuers typically report your balance as of the statement date rather than the due date.\n\nBecoming an authorized user on a parent's older, well-managed card before you ever apply for your own can be a legitimate shortcut. Many issuers report the full account history, including its age, to the authorized user's credit file, which can hand a brand-new applicant a longer average account age than the few weeks since their own card arrived. It is not guaranteed to help, since not every issuer reports authorized-user history the same way, so confirm with the specific issuing bank a parent's card is from before counting on it.\n\nOne more mechanical detail is worth knowing. A hard inquiry from formally applying dings your score slightly and temporarily. Several issuers on this page, including Capital One, offer a pre-approval check that runs only a soft inquiry, so use that step whenever it is available before you submit a full application.",
+      },
+      {
+        heading: "When a non-student card is the smarter first card",
+        content:
+          "A student credit card exists to solve one problem: getting approved with a thin or empty credit file. Once that file exists and shows a year or more of on-time payments, the math changes, and a general-market rewards card frequently out-earns anything labeled for students.\n\nIf you spent a year as an authorized user on a parent's card, or you held a secured card and graduated off it, you may already have a real score in the 650 to 700 range by the time you start college. In that case, run the numbers on a standard cash back or travel card from the same issuer's lineup. The rewards rate is often identical or better, and the card carries no enrollment status to keep proving. Several issuers, including Chase with Freedom Rise℠, plan for exactly this by offering an upgrade path once you have used the starter card responsibly for a while, so ask whether that option exists before you shop for a second card from scratch.",
+      },
+      {
+        heading: "Fees that catch a first-time cardholder off guard",
+        content:
+          "Every card on this page charges $0 in annual fees, but that is not the same as being free to use carelessly. A late payment fee applies if your payment does not arrive by the due date, typically in the $30 to $41 range depending on the issuer and whether it is a first or repeat offense, and a late payment can also trigger a penalty APR that applies to your entire balance going forward.\n\nCash advances, meaning using your credit card to withdraw cash from an ATM, sit in a separate and more expensive category on nearly every card. They typically carry a higher APR than regular purchases, start accruing interest immediately with no grace period, and often add a flat cash advance fee on top. Treat your student card as a purchase tool only and you avoid this cost entirely.\n\nA 0% introductory APR on purchases, where offered, applies only for a set number of billing cycles before a variable rate takes over. Carrying a balance past that window means interest accrues on whatever is left. If you expect to carry a balance rather than pay in full each month, run the math with our [credit card payoff calculator](/credit-card-payoff/) before deciding which card's ongoing APR range matters most to you.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need a credit score to get a student credit card?",
+        answer:
+          "No, not for every card on this list. Discover states plainly that no credit score is required to apply for the Discover it® Student Cash Back card, and Chase takes the same approach with Freedom Rise℠. Capital One's two student cards let you check your approval odds with a soft inquiry first, so you can see where you stand before a formal application creates a hard inquiry on your file.",
+      },
+      {
+        question: "Will my parent need to cosign my student credit card?",
+        answer:
+          "Only if you are under 21 and cannot show independent income sufficient to cover the payments. The CARD Act's ability-to-pay rule requires either verifiable income or a co-signer age 21 or older for applicants under 21, and scholarships or financial aid generally do not count as independent income for this purpose. If you are 21 or older, none of the cards on this page require a co-signer.",
+      },
+      {
+        question: "What happened to the Deserve® EDU Mastercard?",
+        answer:
+          "Deserve stopped issuing new EDU Mastercards and began closing existing accounts in 2025 into 2026, so it is no longer available to new applicants and does not appear in our comparison. It was popular with international students because it accepted an ITIN in place of a Social Security number. Among the cards here, Capital One's student cards and Chase Freedom Rise℠ can often be applied for with an ITIN, though you should confirm current documentation requirements directly with the issuer before applying.",
+      },
+      {
+        question: "How fast can a student card actually build a credit score?",
+        answer:
+          "Most scoring models need three to six months of reported payment history before a score can even be calculated for a new file. With on-time payments and low utilization every month from the start, it is realistic to have a usable score, often in the high 600s to low 700s, within about six months to a year, though the exact number depends on your full credit profile, not just this one card.",
+      },
+      {
+        question: "Can international students get one of these cards without a Social Security number?",
+        answer:
+          "Some can. Several major issuers, including Capital One and Chase, accept an Individual Taxpayer Identification Number (ITIN) in place of an SSN for certain applicants, though policies vary and are not always advertised clearly on the general product page. Call the issuer directly or check with your school's international student office before assuming any specific card will accept an ITIN application.",
+      },
+      {
+        question: "Should I close my student card after I graduate?",
+        answer:
+          "Generally no. Closing a card shortens your average account age and reduces your total available credit, and both of those can lower your score. If the card has no annual fee, as every card on this page does, keeping it open with an occasional small purchase usually helps your credit file more than closing it would. Ask the issuer directly about upgrading to a non-student version of the same card instead of closing the account outright.",
+      },
+    ],
+    sources: [
+      {
+        label: "CFPB: Regulation Z, § 1026.51 Ability to Pay (credit card applicants under 21)",
+        url: "https://www.consumerfinance.gov/rules-policy/regulations/1026/51/",
+      },
+      {
+        label: "CFPB: Getting a credit card and using it wisely",
+        url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/getting-credit-card-and-using-it-wisely/",
+      },
+      { label: "Discover it® Student Cash Back (official card page)", url: "https://www.discover.com/credit-cards/student-credit-card/it-card/" },
+      { label: "Capital One Savor Rewards for Students (official card page)", url: "https://www.capitalone.com/credit-cards/savorone-student/" },
+      { label: "Capital One Quicksilver Rewards for Students (official card page)", url: "https://www.capitalone.com/credit-cards/quicksilver-student/" },
+      { label: "Chase Freedom Rise℠ (official card page)", url: "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise" },
+      {
+        label: "Bank of America® Travel Rewards for Students (official card page)",
+        url: "https://www.bankofamerica.com/credit-cards/products/student-rewards-credit-card/",
+      },
+      {
+        label: "Bank of America® Customized Cash Rewards for Students (official card page)",
+        url: "https://www.bankofamerica.com/credit-cards/products/student-cash-back-credit-card/",
+      },
+    ],
+    relatedComparisons: [],
+    calculatorLinks: [{ label: "Credit Card Payoff Calculator", href: "/credit-card-payoff/" }],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
