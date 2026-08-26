@@ -1,0 +1,45 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-26",
+  "window_start": "2026-08-26",
+  "window_end": "2026-08-26",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/roundup/best-investment-apps-for-beginners",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-ira-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 2,
+      "Unassigned": 2
+    },
+    "/roundup/best-investment-apps-for-beginners": {
+      "Direct": 1
+    },
+    "/roundup/best-ira-accounts/": {
+      "Referral": 1
+    }
+  }
+}
