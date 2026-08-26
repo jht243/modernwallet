@@ -50,6 +50,11 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
         answer:
           "Usually no. With most merchant cash advances you owe the full factor rate times advance no matter when you pay. Ask your provider directly whether the contract offers a prepayment discount before you plan to pay early.",
       },
+      {
+        question: "Does an MCA have an interest rate?",
+        answer:
+          "No. A merchant cash advance does not carry an interest rate in the traditional sense. It is priced as a factor rate applied once to the whole advance, not a rate that accrues over time. You can still convert that factor rate into an effective APR to compare it against a loan, which is exactly what this calculator does. On our $100,000 example, a 1.4 factor rate over a 9-month term converts to roughly a 95% effective APR once the payback is spread across daily payments.",
+      },
     ],
     sources: [
       {

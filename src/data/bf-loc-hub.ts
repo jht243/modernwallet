@@ -70,6 +70,27 @@ export const LOC_HUB: CalculatorDef = {
       answer:
         "Rates and fee structures vary widely by lender, and most banks won't quote a real number until you apply. Our [business line of credit rates by lender](/roundup/business-line-of-credit-rates-by-lender/) roundup pulls together what Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, CIBC, Amex, and Bluevine each publish on their own sites, so you can compare the rate structure and fees side by side before you plug your own numbers into the calculator above.",
     },
+    {
+      question: "How do I calculate business line of credit payments in Excel?",
+      answer:
+        "You can replicate this calculator's monthly payment with the standard loan amortization formula: PMT = P × r ÷ (1 − (1 + r)^-n). P is your draw amount, r is your monthly interest rate, your APR divided by 12, and n is your total number of payments. In our default example, a $50,000 draw at 12% APR over 24 months, r equals 0.01 and n equals 24, and the formula returns $2,353.67, the same payment this calculator shows. In Excel or Google Sheets, skip the manual formula and use the built-in PMT function instead: =PMT(0.12/12, 24, -50000) returns that same $2,353.67. Add your draw fee as a separate line, since PMT covers only the amortized principal and interest, not upfront fees.",
+    },
+    {
+      question:
+        "Does this calculator work for Chase, Amex, Bank of America, or other specific lenders?",
+      answer:
+        "Yes. This calculator isn't tied to any one lender: it runs the same draw, APR, term, and fee math no matter which bank or lender you borrow from. Enter the draw amount, APR, term, and draw fee your own lender quotes, whether that's [Chase](https://www.chase.com/business/banking/loans/business-line-of-credit), [Bank of America](https://www.bankofamerica.com/smallbusiness/business-financing/unsecured-business-line-of-credit/), a credit union, or an online lender, and the calculator returns the same monthly payment and effective APR breakdown. American Express is one exception. Its [Business Blueprint](https://www.americanexpress.com/en-us/business/blueprint/business-line-of-credit/) line prices with a flat monthly fee instead of an APR, so convert that fee into an equivalent rate before you enter it here. For the actual rate, fee, and credit-limit numbers each lender publishes, see our [business line of credit rates by lender](/roundup/business-line-of-credit-rates-by-lender/) roundup.",
+    },
+    {
+      question: "Is a fixed or prime-rate based line of credit better?",
+      answer:
+        "Most business lines of credit use a variable rate tied to the prime rate, not a fixed rate. The prime rate is a benchmark U.S. banks set off the [Federal Reserve's](https://www.federalreserve.gov/releases/h15/) federal funds rate, and it moves whenever the Fed changes that rate. A lender then quotes your line as prime plus a margin, for example prime plus 2%, so your payment can rise when the Fed raises rates and fall when it cuts them. A fixed-rate line locks that number instead, trading a potentially lower starting rate for protection against future rate hikes. Neither is automatically better. A variable, prime-based rate usually costs less if rates hold steady or fall. A fixed rate protects you if you expect rates to climb during your repayment term. Check whether the rate your lender quotes is fixed or variable before you enter it into this calculator, since a variable rate can change your real payment mid-term.",
+    },
+    {
+      question: "Does this calculator apply to a commercial line of credit secured by real estate?",
+      answer:
+        "Yes. A commercial line of credit secured by real estate or business equipment amortizes the same way once you start drawing against it. This calculator's draw, APR, term, and fee math works for a secured commercial line just as it does for an unsecured one. Collateral changes what you qualify for. It does not change how the calculator computes your payment. Pledging real estate or equipment typically gets you a larger credit limit and a lower rate. The lender's risk drops when it can seize a specific asset if you default. Confirm your actual draw period and repayment period with your lender, since a secured commercial line sometimes runs on a different schedule than this calculator's default 24-month term. Enter your real numbers here to see the payment and effective APR.",
+    },
   ],
 
   sources: [

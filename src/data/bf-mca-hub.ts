@@ -95,6 +95,11 @@ export const MCA_HUB: CalculatorDef = {
       answer:
         "Most providers ask for the same core paperwork: 3 to 6 months of business bank statements, proof you've been in business for a minimum period (often 6 months to 1 year), a minimum monthly revenue threshold, and a signed application. Larger advances typically also require a signed personal guarantee. Because underwriting leans on your recent bank statements and revenue rather than a lengthy credit file, approval and funding can move in a day or two once your documents are in. Applications are handled entirely online or by phone — there is no merchant cash advance office to visit, so searching for one \"near me\" won't turn up a physical branch the way a bank might.",
     },
+    {
+      question: "What fees does an MCA carry beyond the factor rate?",
+      answer:
+        "The factor rate is not the only cost. Most MCA providers also charge an origination fee, deducted from your advance before you receive it. That means less than the full $50,000 may hit your account even before repayment starts. Many providers separately charge an underwriting or administrative fee to cover reviewing your application and bank statements. If your provider collects payments through daily ACH withdrawals, expect a per-transaction ACH or processing fee on top of each payment. None of these fees show up in the factor-rate math this calculator runs. Add them to the $65,000 payback in our example to find your true out-of-pocket cost. Ask any provider for a written, itemized fee schedule before you sign, since fee names and amounts vary a lot by provider.",
+    },
   ],
 
   sources: [
