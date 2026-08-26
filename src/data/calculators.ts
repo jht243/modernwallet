@@ -101,9 +101,9 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "mortgage", // not yet registered → "upcoming" until Phase 2
     label: "Mortgage",
     navOrder: 2,
-    metaTitle: "Mortgage Payment Calculator: Home Loan Estimator",
+    metaTitle: "Free Mortgage Calculator: Instant Home Loan Estimate",
     metaDescription:
-      "Use our free mortgage payment calculator to estimate your monthly principal and interest, see your full amortization, and learn how a home loan really works.",
+      "Use our free, simple mortgage calculator to instantly estimate your monthly principal and interest, see full amortization, and learn how a home loan works.",
     targetKeyword: "mortgage calculator",
     h1: "Mortgage Calculator",
     intro:
@@ -165,7 +165,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 3,
     metaTitle: "Retirement Calculator: Are You On Track to Retire?",
     metaDescription:
-      "Use our free retirement calculator to see how much you'll have saved, what you can spend each year, and whether your money lasts through retirement.",
+      "Use our free retirement calculator to project your investment growth, see how much you'll have saved, and whether your money lasts through retirement.",
     targetKeyword: "retirement calculator",
     h1: "Retirement Calculator: See If You're On Track",
     intro:
@@ -292,7 +292,7 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "net-worth",
     label: "Net Worth",
     navOrder: 7,
-    metaTitle: "Net Worth Calculator: Free Tool With Age Benchmarks",
+    metaTitle: "Net Worth Calculator: Quick, Easy & Free",
     metaDescription:
       "Free net worth calculator. Add assets, subtract debts, and compare your total to Federal Reserve median net worth by age.",
     targetKeyword: "net worth calculator",
@@ -664,7 +664,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 13,
     metaTitle: "Trump Account Calculator: $1,000 Value at 18",
     metaDescription:
-      "See what a Trump Account — also called a Trump savings or baby account — could be worth at 18. Project the $1,000 federal seed plus your yearly contributions.",
+      "See what a Trump Account investment could be worth at 18 — also called a Trump savings or baby account. Project the $1,000 federal seed plus your contributions.",
     targetKeyword: "trump account calculator",
     h1: "Trump Account Calculator",
     intro:
@@ -702,7 +702,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 14,
     metaTitle: "529 Calculator: College Savings Projection",
     metaDescription:
-      "Free 529 calculator: project your college savings balance at age 18, compare it to inflated college costs, and see the monthly amount to fully fund it.",
+      "Free 529 calculator: project your college savings investment growth to 18, compare it to inflated college costs, and see the monthly amount to fully fund it.",
     targetKeyword: "529 savings calculator",
     h1: "529 Savings Calculator",
     intro:
@@ -819,7 +819,7 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "personal-loan",
     label: "Personal Loan",
     navOrder: 17,
-    metaTitle: "Personal Loan Calculator: True Cost With Fees",
+    metaTitle: "U.S. Personal Loan Calculator: True Cost With Fees",
     metaDescription:
       "Free personal loan calculator: see your monthly payment plus the real effective APR once the lender's origination fee is factored in — not just the stated rate.",
     targetKeyword: "personal loan calculator",

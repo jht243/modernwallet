@@ -313,9 +313,9 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   {
     calculator: "net-worth",
     slug: "net-worth-projection-calculator",
-    title: "Net Worth Projection Calculator: See Your Future",
+    title: "Net Worth Projection Calculator: Future Net Worth Predictor",
     metaDescription:
-      "Project your net worth 10–20 years out. See when you'll hit $1M and how savings rate and investment return change the timeline.",
+      "Project your net worth by year, 10-20 years out, with compound growth from your investments. See when you'll hit $1M and how savings rate changes the timeline.",
     targetKeyword: "net worth projection calculator",
     estimatedVolume: 3600,
     estimatedKD: 38,

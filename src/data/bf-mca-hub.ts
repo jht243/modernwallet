@@ -9,7 +9,7 @@ export const MCA_HUB: CalculatorDef = {
   // ---- Hub-page SEO ----
   metaTitle: "MCA Calculator: Merchant Cash Advance Cost & APR",
   metaDescription:
-    "Free MCA calculator. Enter your advance, factor rate, and term to see the total payback, daily payment, cost of capital, and true effective APR.",
+    "Free MCA calculator (not technically a loan). Enter your advance, factor rate, and term to see the total payback, daily payment, and true effective APR.",
   targetKeyword: "mca calculator",
   h1: "MCA Calculator: True Cost of a Merchant Cash Advance",
 
