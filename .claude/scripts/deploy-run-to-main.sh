@@ -72,9 +72,14 @@ case "$cmd" in
 
     # Isolate this run's commits onto the latest main. A conflict here is a genuine
     # overlap with concurrent work -> abort and let the caller do the safe fallback.
-    if ! git rebase --onto origin/main "$run_base" HEAD; then
+    # rebase.autoStash: a routine's working tree is often still dirty at deploy time
+    # (generated ledgers, rebuilt dist/, lockfiles the run never staged). Without this,
+    # git refuses with "cannot rebase: You have unstaged changes" and the whole run is
+    # thrown away as a phantom "conflict". Autostash parks those files, replays our
+    # commits, then restores them.
+    if ! git -c rebase.autoStash=true rebase --onto origin/main "$run_base" HEAD; then
       git rebase --abort 2>/dev/null || true
-      echo "[deploy] CONFLICT: this run's commits overlap concurrent work on main." >&2
+      echo "[deploy] CONFLICT: could not replay this run's commits onto latest main (see git error above)." >&2
       exit 3
     fi
     # HEAD is now: latest-origin/main + only-this-run's-commits.
@@ -90,7 +95,7 @@ case "$cmd" in
       fi
       echo "[deploy] push rejected (base moved); rebasing + retrying (${attempt}/3)." >&2
       git fetch origin main || true
-      if ! git rebase origin/main; then
+      if ! git -c rebase.autoStash=true rebase origin/main; then
         git rebase --abort 2>/dev/null || true
         echo "[deploy] CONFLICT on retry rebase; aborting." >&2
         exit 3
