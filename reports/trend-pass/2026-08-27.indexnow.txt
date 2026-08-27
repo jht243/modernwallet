@@ -1,0 +1,7 @@
+IndexNow submission — 2026-08-27 (trend-pass-auto, coverage lane)
+Endpoint: https://api.indexnow.org/indexnow
+Key: dc557f6bfced447aa1a71771d8a0d24a (project-wide fallback key)
+HTTP status: 200
+
+URLs submitted:
+https://www.themodernwallet.com/guides/can-an-enrolled-agent-represent-you-in-tax-court/
