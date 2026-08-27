@@ -292,15 +292,15 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     h1: "Best Index Funds of 2026",
     intro:
-      "The best index funds deliver broad market exposure at the lowest possible cost — so more of your return compounds over time instead of going to fund fees.\n\nWe evaluated eight widely available index funds on expense ratio, index tracked, assets under management, tracking error, minimum investment, and tax efficiency. No fund family sponsored this list.",
+      "The best index funds deliver broad market exposure at the lowest possible cost — so more of your return compounds over time instead of going to fund fees.\n\nWe evaluated eight widely available index funds on expense ratio, index tracked, assets under management, tracking error, minimum investment, and tax efficiency. No fund family sponsored this list. Once you've narrowed it down, our [investment growth calculator](/investing/) shows how a fee gap this small compounds on your own numbers.",
     rankingCriteria:
-      "Rankings prioritize expense ratio (the single most controllable return factor), index coverage breadth, and accessibility (minimum investment, availability across brokerages). We also weighted tracking error — how closely the fund mirrors its index — and tax efficiency (capital gains distribution history).\n\nFunds are organized by primary strategy rather than strict rank, because the 'best' fund depends on which asset class you're targeting. We include U.S. total-market, S&P 500, international, and bond index options.",
+      "Rankings prioritize expense ratio (the single most controllable return factor), index coverage breadth, and accessibility (minimum investment, availability across brokerages). We also weighted tracking error — how closely the fund mirrors its index — and tax efficiency (capital gains distribution history).\n\nFunds are organized by primary strategy rather than strict rank, because the 'best' fund depends on which asset class you're targeting. We include U.S. total-market, S&P 500, international, and bond index options. Still deciding between the ETF and mutual fund version of the same index? See our [ETF vs. mutual fund comparison](/compare/etf-vs-mutual-fund/) first — it affects which of the funds below you can actually buy where you already have an account.",
     options: [
       {
         name: "Vanguard S&P 500 ETF (VOO)",
         bestFor: "Long-term buy-and-hold investors seeking core U.S. equity exposure",
         description:
-          "VOO tracks the S&P 500 Index — 500 of the largest U.S. companies by market cap. With a 0.03% expense ratio and over $550 billion in assets (as of early 2026), it is one of the largest and most liquid ETFs in the world.\n\nVOO is available at any brokerage that trades ETFs. It distributes dividends quarterly and has an extremely low tracking error against the S&P 500.",
+          "VOO tracks the S&P 500 Index — 500 of the largest U.S. companies by market cap. With a 0.03% expense ratio and over $550 billion in assets (as of early 2026), it is one of the largest and most liquid ETFs in the world.\n\nVOO is available at any brokerage that trades ETFs. It distributes dividends quarterly and has an extremely low tracking error against the S&P 500. Before adding new money to it, run our [portfolio analyzer](/portfolio/) to check how a VOO-heavy allocation balances against bonds and international funds.",
         strengths: [
           "0.03% expense ratio — near the lowest available",
           "Massive AUM ($550B+) provides exceptional liquidity",
