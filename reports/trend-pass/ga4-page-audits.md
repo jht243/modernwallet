@@ -110,3 +110,4 @@
 | /roundup/best-target-date-funds/ | 2026-08-25 | 2 | 0/0/0/0/0 | 1 |
 | /roundup/best-investment-apps-for-beginners | 2026-08-26 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-ira-accounts/ | 2026-08-26 | 1 | 0/0/0/0/0 | 1 |
+| /guides/coast-fire-guide/ | 2026-08-27 | 1 | 0/0/1/0/0 | 0 |
