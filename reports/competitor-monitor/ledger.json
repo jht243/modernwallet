@@ -148485,11 +148485,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/financial-advisors/learn/types-financial-advisors": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:ef7022c873c6c5044b3449c031dedc5a9a4f02645d14061eba664fc18bdb72f7",
+          "disposition": "enriched",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-28",
           "lastmod": "2026-08-27T00:00:00-07:00",
+          "our_url": "/guides/how-to-choose-a-financial-advisor/",
           "outline": [
             "The main types of financial advisors",
             "Investment advisors",
@@ -148512,7 +148516,7 @@
             "financial",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Types of Financial Advisors: Which One Do I Need? - NerdWallet",
           "tool_io": []
         },
@@ -167999,11 +168003,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/learn/charles-schwab-vs-robinhood": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:95e9542006cbc233e4410db0f9050b3e75712ccc5b77d60dd684728f72e63140",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-08-28",
           "lastmod": "2026-08-27T00:00:00-07:00",
+          "our_url": "/compare/charles-schwab-vs-robinhood/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Where Schwab and Robinhood differ the most",
@@ -168016,7 +168024,7 @@
             "investing",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Charles Schwab vs. Robinhood: 2026 Comparison - NerdWallet",
           "tool_io": []
         },
@@ -180324,11 +180332,15 @@
           ]
         },
         "https://www.nerdwallet.com/personal-loans/calculators/loan-payoff": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:f2835ab1a6f87ddc6d4421cd3575f4da58847bf14159352c8e6bbfffeb25225c",
+          "disposition": "published",
           "first_seen": "2026-08-28",
           "kind": "tool",
           "last_seen": "2026-08-28",
           "lastmod": "2026-08-28T00:00:00-07:00",
+          "our_url": "/personal-loan/extra-payment-calculator/",
           "outline": [
             "Enter your loan details",
             "How to use this calculator",
@@ -180346,7 +180358,7 @@
             "payment",
             "payoff"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Personal Loan Extra Payment Calculator - NerdWallet",
           "tool_io": [
             "label: Credit cards",
@@ -185362,11 +185374,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/student-loans/learn/know-college-financial-aid-applications": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:599b27ab08dbaf17c9f247929b1d0c284b4145337c1154c22df7959dca34b727",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-08-28",
           "lastmod": "2026-08-28T00:00:00-07:00",
+          "our_url": "/compare/css-profile-vs-fafsa/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "CSS Profile vs. FAFSA",
@@ -185380,7 +185396,7 @@
             "financial",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "CSS Profile vs. FAFSA: How Are They Different? - NerdWallet",
           "tool_io": []
         },
@@ -186087,11 +186103,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/student-loans/learn/student-loan-refinancing-faq": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:172f5b81d0e3800d4014f1efc2141302b8bbe6bc09e153e565df51d83cb99804",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-08-28",
           "lastmod": "2026-08-26T00:00:00-07:00",
+          "our_url": "/guides/should-you-refinance-student-loans/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Should you refinance federal student loans?",
@@ -186103,7 +186123,7 @@
             "loans",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Should You Refinance Student Loans? What to Know Before You Decide - NerdWallet",
           "tool_io": []
         },
@@ -360845,11 +360865,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/what-constitutes-a-high-net-worth-individual": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:a616caf3fa961e671ea9051cefc7566214f41a96d0f5da112aacc4d59f7e523e",
+          "disposition": "published",
           "first_seen": "2026-08-28",
           "kind": "page",
           "last_seen": "2026-08-28",
           "lastmod": "2026-04-08T04:04:18+00:00",
+          "our_url": "/guides/what-is-a-high-net-worth-individual/",
           "outline": [
             "What Is a High-Net-Worth Individual?",
             "What Do Financial Advisors Consider High-Net-Worth Clients?",
@@ -360868,7 +360892,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Constitutes a High-Net-Worth Individual?",
           "tool_io": []
         },
@@ -403892,11 +403916,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/roth-ira-conversion-ladder": {
+          "acted": false,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:9e23461487b328e0c85ed71b7c906c1a1a4e9307a0a0b5c49f6c1170156a3a75",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-08-28",
           "kind": "page",
           "last_seen": "2026-08-28",
           "lastmod": "2026-04-08T22:36:44+00:00",
+          "our_url": "/guides/roth-conversion-ladder/",
           "outline": [
             "How a Roth IRA Works",
             "Roth IRA Contribution and Income Limits",
@@ -403912,7 +403940,7 @@
             "retirement",
             "roth"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How a Roth IRA Conversion Ladder Works",
           "tool_io": []
         },
@@ -414363,11 +414391,15 @@
           "tool_io": []
         },
         "https://smartasset.com/taxes/taxact-vs-turbotax": {
+          "acted": true,
+          "acted_date": "2026-08-28",
           "content_hash": "sha256:da69eb4b801418f9e614ccd2fbf8d0afba03eef8f029483e77da7fddc513e96e",
+          "disposition": "published",
           "first_seen": "2026-08-28",
           "kind": "comparison",
           "last_seen": "2026-08-28",
           "lastmod": "2026-04-09T02:59:44+00:00",
+          "our_url": "/compare/turbotax-vs-taxact/",
           "outline": [
             "Pros and Cons of TaxAct",
             "Pros",
@@ -414385,7 +414417,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "TaxAct vs. TurboTax (Updated for 2026)",
           "tool_io": []
         },
