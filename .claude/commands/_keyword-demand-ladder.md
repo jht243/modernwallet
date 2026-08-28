@@ -16,6 +16,7 @@ field for the whole run:
 | **kd** | `ahrefs` → `semrush` → `dataforseo` | Ahrefs KD is calibrated against a real link graph and is the industry reference. DataForSEO Labs KD is **modeled** and the least proven of the three. |
 | **expand** | `ahrefs` → `semrush` → `dataforseo` | Ahrefs/SEMRUSH have larger, cleaner idea databases, and SEMRUSH ships a dedicated questions report. |
 | **SERP** | `dataforseo` only | No other vendor sells live SERP with PAA text and AI Overview citations at any price. Not a ladder — see `scripts/lib/serp.py`. |
+| **technical site audit** | `ahrefs` → `dataforseo` | Ahrefs' crawler sees what a page alone cannot (backlink-driven issues, crawl depth, orphan pages). DataForSEO OnPage covers every issue the auto-fix table can act on, at ~$0.00015/URL — see `scripts/lib/site_audit.py`, which emits **Ahrefs' issue slugs** so nothing downstream changes. |
 
 **One provider per field, for the whole run.** Every row's volume comes from one
 vendor and every row's KD comes from one vendor, so rows stay comparable to each
@@ -36,6 +37,24 @@ A provider is skipped automatically on `ERROR 132 :: API UNITS BALANCE IS ZERO`,
 `API units limit reached`, HTTP 401/402/403, or a missing key — the exact
 condition that killed the podcast-pain runs on 2026-08-18, and the condition
 Ahrefs and SEMRUSH are BOTH in as of 2026-08-23.
+
+### The rule generalizes beyond keywords
+
+This file is named for keyword demand because that is where it started, but the
+standing rule is about **vendors, not fields**: no routine in this fleet ends
+because one vendor's meter ran out. When you add a data source to any routine,
+give it a rung below and a way to say which rung answered.
+
+Two corollaries learned the hard way:
+
+- **A check that did not run is not a pass.** A fallback with narrower coverage
+  must report what it could not see (`unavailable_on_this_source`), never let a
+  silent omission read as a clean bill of health.
+- **Normalize at the source, not downstream.** `site_audit.py` translates
+  DataForSEO's checks into Ahrefs' issue slugs inside the helper, so the fix
+  table, gates and email are untouched. Compare the winner/loser pass, whose two
+  Ahrefs sources need a field-mapping table in the skill itself — that mapping is
+  a cost you pay on every future edit.
 
 ### DataForSEO specifics
 

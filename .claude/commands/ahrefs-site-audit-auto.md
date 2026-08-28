@@ -13,8 +13,52 @@ argument-hint: "[optional Ahrefs site-audit project ID — auto-discovers by BAS
 
 1. **Working tree clean** — `git status --porcelain` empty.
 2. **Branch is committable; deploy target is `main`.** Cloud routines run on an ephemeral `claude/*` branch — expected. Commit on the current branch, then deploy to `main` with `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Never `git checkout main`, never create a new branch, never abort just because the branch isn't `main`. Resend key resolves from `$RESEND_API_KEY` (env) or `~/.claude/secrets.env`; if absent, skip email but still complete + push.
-3. **Ahrefs MCP available** — verify the `mcp__*__site-audit-issues` tool is callable. If not → skip, email failure ("Ahrefs MCP not connected — enable it in the Claude Code MCP config").
+3. **An auditor is reachable** -- verify the `mcp__*__site-audit-issues` tool is callable. If it is not, or the workspace is out of units, that is **NOT a reason to skip**: fall to the DataForSEO rung per "Data source" below. Only skip + email failure if **both** rungs are unavailable, naming which failed and why.
 4. **Resend secrets present** in `~/.claude/secrets.env`.
+
+## ‼️ Data source: Ahrefs Site Audit preferred, DataForSEO OnPage fallback
+
+**A dry vendor must never end this run.** Ahrefs' workspace units are a metered
+monthly allowance that hits a cliff (99,981/100,000 used as of 2026-08-23), and
+this routine used to email failure and skip when it did. Resolve the source
+once, at the start of STEP 2, then never re-resolve mid-run:
+
+1. **Ahrefs Site Audit (preferred).** Its crawler sees things we cannot compute
+   from a page alone -- backlink-driven issues, crawl depth, orphan pages -- and
+   Rank-Tracker-adjacent context. Use it whenever the MCP answers.
+   - MCP callable **and** a project matches `BASE_URL` -> use it, proceed normally.
+   - MCP missing, erroring, or out of units (`API units limit reached`, HTTP
+     401/402/403) -> **fall through, do not fail the run.**
+   - MCP fine but **0 site-audit projects match** `BASE_URL` -> fall through too.
+     A missing Ahrefs project is a setup gap, not a reason to audit nothing.
+2. **DataForSEO OnPage (fallback -- always available, pay-as-you-go).**
+   ```
+   python3 scripts/lib/site_audit.py audit \
+     --base-url <BASE_URL> --sitemap <BASE_URL>/sitemap.xml \
+     --cap 300 --out reports/site-audit/<TODAY>.dataforseo.json
+   ```
+   Reads the sitemap (index-aware), audits each URL, and emits issues **already
+   translated into the Ahrefs slugs the fix table below keys on**. ~$0.00015 per
+   URL, so a 300-page site is ~$0.05. Key resolves like every other fleet key;
+   the cloud trigger passes `DATAFORSEO_B64` inline.
+
+**No field-mapping work is needed downstream** -- unlike the winner/loser pass's
+two sources, `site_audit.py` does the translation itself, so STEP 4's fix table,
+severity ordering, gates, commit and email are **identical** on either rung.
+
+**What the fallback cannot see.** DataForSEO's OnPage payload has no verdict for
+`canonical_to_redirect`, `canonical_to_4xx`, `redirect_loop`, `hreflang_*`,
+`lang_missing`, `noindex_in_sitemap`. The report lists these under
+`unavailable_on_this_source`. **Never report them as clean** -- a check that did
+not run is not a pass. Say so in the email's source line.
+
+**Pages that failed to audit are not clean either.** `pages_failed` carries a
+reason per URL; surface the count in the email rather than quietly auditing fewer
+pages than the sitemap holds.
+
+**Record which rung ran** in the email's first line and in the report frontmatter:
+`source: ahrefs` or `source: dataforseo (Ahrefs <reason>)`, plus the DataForSEO
+cost when it ran. Cost stays visible, exactly like the winner/loser pass.
 
 ## STEP 1 — Discover project facts
 
@@ -31,7 +75,7 @@ Do NOT call any Ahrefs tools yet.
 If `$ARGUMENTS` is a project ID, use it. Otherwise:
 1. Call `mcp__*__site-audit-projects` to list available site-audit projects.
 2. Find the one whose target domain matches `BASE_URL` (strip `www.`, compare case-insensitive).
-3. If 0 match → skip, email failure ("No Ahrefs site-audit project found for `<BASE_URL>` — create one in Ahrefs → Site Audit and re-run").
+3. If 0 match -> **do not skip.** Fall to the DataForSEO rung (see "Data source" above) and note in the email that no Ahrefs project exists for `<BASE_URL>`.
 4. If >1 match → take the most recently crawled one, note the ambiguity in the email details.
 
 ## STEP 3 — Pull the issues
