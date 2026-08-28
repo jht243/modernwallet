@@ -4954,7 +4954,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Wealth Manager",
     h1: "Financial Advisor vs Wealth Manager: Which One Actually Fits You?",
     intro:
-      "A financial advisor typically works with a broad range of clients and focuses on investment management, while a wealth manager serves almost exclusively high-net-worth clients and bundles investment management with tax, estate, and legacy planning, often behind a minimum-asset requirement of $500,000 or more. The right choice usually comes down to your investable assets and how coordinated your financial life needs to be.",
+      "A financial advisor typically works with a broad range of clients and focuses on investment management, while a wealth manager serves almost exclusively [high-net-worth](/guides/what-is-a-high-net-worth-individual/) clients and bundles investment management with tax, estate, and legacy planning, often behind a minimum-asset requirement of $500,000 or more. The right choice usually comes down to your investable assets and how coordinated your financial life needs to be.",
     comparisonTable: {
       rows: [
         { dimension: "Typical client", a: "Broad range, from beginning savers to high earners", b: "High-net-worth households, often $1M+ investable assets" },
@@ -7539,7 +7539,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
       { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "voo-vs-spy", "brokerage-vs-ira"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "charles-schwab-vs-robinhood", "voo-vs-spy", "brokerage-vs-ira"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
@@ -7631,7 +7631,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
       { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "fidelity-vs-schwab", "voo-vs-spy", "index-fund-vs-etf"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "fidelity-vs-schwab", "charles-schwab-vs-robinhood", "voo-vs-spy", "index-fund-vs-etf"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
@@ -9546,7 +9546,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Who Can Actually Apply",
         content:
-          "The FAFSA requires U.S. citizenship or eligible-noncitizen status, per [Federal Student Aid's own eligibility rules](https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens), so an international student generally cannot file one at all. The CSS Profile carries no citizenship requirement of its own, which is exactly why hundreds of private colleges also use it to consider international applicants for their own need-based aid.\n\nThat gap makes the CSS Profile the only realistic path to college financial aid for many international students, since federal aid through the FAFSA was never open to them in the first place. A U.S. citizen or eligible noncitizen still qualifies to file both forms, so citizenship status decides access to the FAFSA specifically, not the CSS Profile.",
+          "The FAFSA requires U.S. citizenship or eligible-noncitizen status, per [Federal Student Aid's own eligibility rules](https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens), so an international student generally cannot file one at all. The CSS Profile carries no citizenship requirement of its own, which is exactly why hundreds of private colleges also use it to consider international applicants for their own need-based aid.\n\nThat gap makes the CSS Profile the only realistic path to college financial aid for many international students, since federal aid through the FAFSA was never open to them in the first place. A U.S. citizen or eligible noncitizen still qualifies to file both forms. Citizenship status only ever gates the FAFSA.",
       },
       {
         heading: "Who Can Skip the CSS Profile",

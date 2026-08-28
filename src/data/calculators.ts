@@ -895,7 +895,7 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "Can I pay more than my scheduled monthly payment on a personal loan?",
         answer:
-          "Most personal loans allow it, and extra payments go toward principal the same way they do on a standard amortizing loan, which reduces your total interest and can shorten your payoff timeline. Confirm two things with your lender first: that there's no prepayment penalty, and that extra amounts are actually applied to principal rather than just counted as an early payment toward next month's bill.",
+          "Most personal loans allow it, and extra payments go toward principal the same way they do on a standard amortizing loan, which reduces your total interest and can shorten your payoff timeline. Confirm two things with your lender first: that there's no prepayment penalty, and that extra amounts are actually applied to principal rather than just counted as an early payment toward next month's bill. See our [personal loan extra payment calculator](/personal-loan/extra-payment-calculator/) to see exactly how much a specific extra amount saves.",
       },
       {
         question: "What is a personal loan calculator?",
