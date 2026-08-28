@@ -9481,6 +9481,324 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },
+
+  // ─── CSS Profile vs FAFSA ────────────────────────────────────────────────
+  {
+    slug: "css-profile-vs-fafsa",
+    title: "CSS Profile vs. FAFSA: Which Form You Need",
+    metaDescription:
+      "CSS Profile vs. FAFSA compared: cost, what each measures, who requires the CSS Profile, and how to file both without missing a deadline.",
+    targetKeyword: "css profile vs fafsa",
+    optionA: "CSS Profile",
+    optionB: "FAFSA",
+    h1: "CSS Profile vs. FAFSA: Which Financial Aid Form Do You Need?",
+    intro:
+      "The CSS Profile is a paid financial aid form that about 250 mostly private colleges use to award their own scholarships and grants, while the FAFSA is a free federal form that almost every U.S. college requires for federal aid, most state aid, and often institutional aid too. A student applying only to public, in-state schools can usually file the FAFSA alone. A student with even one private college on the list needs both forms, filed separately, often on different deadlines.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Who runs it", a: "Federal Student Aid, part of the U.S. Department of Education", b: "College Board, the nonprofit that also runs the SAT" },
+        { dimension: "Cost", a: "Free, every year, for every school", b: "$25 for the first college, $16 for each additional one" },
+        { dimension: "What it unlocks", a: "Pell Grants, federal student loans, work-study, most state aid", b: "A college's own institutional grants and scholarships" },
+        { dimension: "Colleges that require it", a: "Nearly all ~6,000 U.S. colleges that accept federal aid", b: "About 250 colleges, mostly private, for 2026-27" },
+        { dimension: "What it measures", a: "Income plus a simplified asset picture, producing one Student Aid Index (SAI)", b: "Income plus home equity, a family business, and often a non-custodial parent's finances" },
+        { dimension: "Divorced or separated parents", a: "Usually only the custodial parent reports", b: "Often both parents report, in separate submissions" },
+        { dimension: "Opens", a: "October 1 for the next award year", b: "Also October 1, though some early-decision deadlines fall as early as November 1" },
+      ],
+    },
+    verdict:
+      "File the FAFSA every year, for every school on your list, since it costs nothing and covers federal aid, most state aid, and often institutional aid too. Add the CSS Profile only for the specific colleges that actually require it, and file both close to the October 1 opening so a private school's earlier deadline doesn't catch you off guard. Skip the CSS Profile entirely if your list is all public, in-state schools. Add it back the moment a private college with its own aid budget joins that list.",
+    sections: [
+      {
+        heading: "How the CSS Profile and FAFSA Differ",
+        content:
+          "The FAFSA (Free Application for Federal Student Aid) is run by [Federal Student Aid](https://studentaid.gov/h/apply-for-aid/fafsa), an office of the U.S. Department of Education. It decides what federal aid you can get: Pell Grants, federal student loans, and work-study, plus most state grant programs that piggyback on the same data.\n\nThe CSS Profile is run by [College Board](https://cssprofile.collegeboard.org/fee-waivers), the same nonprofit that administers the SAT. Colleges use it to hand out their own money instead of federal money, so the aid it unlocks comes straight from a school's own endowment and scholarship budget.\n\nThat difference in who pays explains almost everything else about the two forms. The FAFSA has to work the same way for every taxpayer-funded program nationwide, so it sticks to one standardized formula. The CSS Profile can ask whatever a specific college wants to know, because that college is deciding how to spend its own money on its own applicants.",
+      },
+      {
+        heading: "What Information You Have to Submit",
+        content:
+          "The FAFSA mainly asks about income, pulling tax data straight from the IRS through a built-in transfer tool, plus a simplified look at savings and investment accounts. It turns all of that into a Student Aid Index (SAI), one number every college on your list then plugs into its own aid formula.\n\nThe CSS Profile asks for the same income data plus a much deeper look at assets. It typically counts home equity on your primary residence, the value of a family-owned small business or farm, and any real estate beyond your main home. Some colleges also give credit for high medical or dental expenses, or for private-school tuition paid for other children in the family, factors the FAFSA formula ignores outright.\n\nThe sharpest difference shows up when parents are divorced or separated. The FAFSA generally needs financial information only from the custodial parent, the one you lived with most over the past year. The CSS Profile usually wants a separate, non-custodial parent form from the other parent too, since many of the colleges that require it want the fuller financial picture before committing their own scholarship money.\n\nHome equity shows the gap most clearly. Say two families each have $200,000 in equity built up in their home. The FAFSA formula doesn't ask about home equity at all, so it plays no role in either family's SAI. A CSS Profile college can and often does count part of that equity as an asset available to pay for tuition, which can lower the aid it offers compared to a family with the same income but no home equity to report.",
+      },
+      {
+        heading: "Who Actually Requires the CSS Profile",
+        content:
+          "Only around 250 colleges required the CSS Profile for the 2026-27 admissions cycle, and most of them are private, selective schools with the endowment money to fund generous aid packages that can run well past what federal Pell Grants alone provide. Nearly every one of the roughly 6,000 U.S. colleges that accept federal aid requires the FAFSA instead.\n\nCheck each school's own financial aid page before assuming anything based on its size or reputation. Some large private universities skip the CSS Profile and rely on the FAFSA alone, while a number of smaller private colleges still require it. Your specific list of schools decides which forms you actually have to file, not a general rule about public versus private.",
+      },
+      {
+        heading: "Why the Fee Is Usually Worth Paying",
+        content:
+          "A maximum federal Pell Grant runs a little over $7,000 a year, a fixed ceiling no CSS Profile college can raise on its own. Institutional aid at the schools that actually require the CSS Profile works on a different scale entirely, since a single school's own grant offer can run $30,000 to $60,000 a year or more once its full aid formula factors in family income, assets, and the size of its endowment.\n\nWeighed against that range, a $25 to $41 CSS Profile fee for one or two schools is a small bet next to what a strong aid offer from one of those colleges can be worth. The fee only stops making sense when none of your target schools requires the form at all, since paying it for a college that never asked for it buys nothing.",
+      },
+      {
+        heading: "What Filing Each Form Costs",
+        content:
+          "Filing the FAFSA costs nothing, no matter how many colleges you send it to. The federal government built it to be free specifically so cost never blocks a student from applying for aid.\n\nThe CSS Profile charges $25 for your first college and $16 for each additional one, per [College Board's fee schedule](https://cssprofile.collegeboard.org/fee-waivers). A family with an adjusted gross income under $100,000, a student who already qualified for an SAT fee waiver, or an orphan or ward of the court under 24 can file it free at every school on their list. Apply for that waiver before you submit. College Board does not refund the fee afterward.",
+      },
+      {
+        heading: "When You Need to File Each Form",
+        content:
+          "Both forms open on October 1 for the school year that starts the following fall, so you can file the FAFSA and the CSS Profile for the same admissions cycle on the same day. Early-decision applicants often face a CSS Profile deadline as early as November 1, well before most schools even set a FAFSA priority date.\n\nMiss a CSS Profile deadline and you can still submit it late, but a college's own aid budget may already be committed to students who filed on time. The FAFSA has more room built in, since federal aid formulas don't run out of money the way one college's fixed scholarship budget can.",
+      },
+      {
+        heading: "How You Actually Apply",
+        content:
+          "You file the FAFSA by creating an account directly at [studentaid.gov](https://studentaid.gov/h/apply-for-aid/fafsa), where the site can pull your tax data automatically once you consent, cutting most of the manual entry out of the process. A parent creates a separate login of their own to contribute financial information to your form.\n\nThe CSS Profile works through a College Board account, where you build one master application and send copies to every college on your list. Add a non-custodial parent, and that parent needs their own login and their own submission, kept separate from what the custodial parent reports.\n\nSome CSS Profile schools go a step further and also require the College Board's IDOC service, a document upload portal for W-2s, tax returns, and other verification paperwork. IDOC is a separate step from the CSS Profile form itself, so check each school's aid checklist for it once your CSS Profile submissions are in, rather than assuming the form alone finishes the process.",
+      },
+      {
+        heading: "Who Can Skip the CSS Profile",
+        content:
+          "A student applying only to public, in-state universities and community colleges can usually skip the CSS Profile entirely, since almost none of them require it and the FAFSA already covers every federal and state dollar on the table. Filing it anyway wastes the fee and adds paperwork with no aid to show for it.\n\nThat changes the moment even one private or highly selective school lands on your list. Check that school's own financial aid page for its CSS Profile deadline before assuming the FAFSA alone is enough, since a missed CSS Profile deadline can cost real institutional grant money even after your FAFSA is already filed and processed.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need to file both the CSS Profile and the FAFSA?",
+        answer:
+          "Only if a college on your list requires the CSS Profile, since it always sits on top of the FAFSA rather than replacing it. Check each school's own financial aid page. Roughly 250 colleges, mostly private, required the CSS Profile for the 2026-27 cycle, while the FAFSA underlies aid at nearly every one of the roughly 6,000 U.S. colleges that accept federal money.",
+      },
+      {
+        question: "Is the CSS Profile more accurate than the FAFSA?",
+        answer:
+          "Neither form is more accurate. They measure different things for different purposes. The FAFSA calculates eligibility for a fixed set of federal and state programs using one standardized formula. The CSS Profile lets each college apply its own judgment about assets like home equity or a family business, because that college is deciding how to award its own scholarship money.",
+      },
+      {
+        question: "Does the CSS Profile cost more if my parents are divorced?",
+        answer:
+          "The base fee stays the same, but a non-custodial parent filing a separate CSS Profile section pays a fee for that submission too. The FAFSA usually needs only the custodial parent's information, so a divorced family often pays more in both fees and paperwork once a CSS Profile college lands on the list.",
+      },
+      {
+        question: "Can I get a CSS Profile fee waiver?",
+        answer:
+          "Yes, if your family's adjusted gross income is under $100,000, if you already qualified for an SAT fee waiver, or if you are an orphan or ward of the court under 24. Apply for the waiver on [College Board's fee waiver page](https://cssprofile.collegeboard.org/fee-waivers) before you submit, since the fee is not refunded after the fact.",
+      },
+      {
+        question: "Which colleges require the CSS Profile?",
+        answer:
+          "About 250 colleges required it for the 2026-27 cycle, mostly private and often selective schools with large endowments to fund their own aid. Check the specific college's financial aid page rather than guessing from its size or reputation, since some large private universities rely on the FAFSA alone.",
+      },
+    ],
+    sources: [
+      { label: "Federal Student Aid — How to Fill Out the FAFSA", url: "https://studentaid.gov/h/apply-for-aid/fafsa" },
+      { label: "Federal Student Aid — How Aid Is Calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
+      { label: "College Board — CSS Profile Fee Waivers", url: "https://cssprofile.collegeboard.org/fee-waivers" },
+    ],
+  },
+
+  // ─── Charles Schwab vs Robinhood ─────────────────────────────────────────
+  {
+    slug: "charles-schwab-vs-robinhood",
+    title: "Charles Schwab vs. Robinhood: Which Broker Fits You",
+    metaDescription:
+      "Charles Schwab vs. Robinhood compared: fees, the IRA match, investment selection, and which broker fits a beginner versus an active investor.",
+    targetKeyword: "charles schwab vs robinhood",
+    optionA: "Charles Schwab",
+    optionB: "Robinhood",
+    h1: "Charles Schwab vs. Robinhood: Which Broker Should You Use?",
+    intro:
+      "Charles Schwab is a full-service broker with a complete lineup of investment types, in-house mutual funds, banking, and human financial advisors, while Robinhood is a mobile-first broker built around a simpler app, fractional shares from $1, and a retirement account match most competitors don't offer. Robinhood usually fits a newer or smaller-balance investor who wants speed and a low cost of entry. Schwab usually fits an investor who wants one account to hold everything, from a taxable brokerage to a retirement portfolio to a linked bank account.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum", a: "$0 to open a brokerage or IRA", b: "$0 to open a brokerage or IRA" },
+        { dimension: "Commission on stock/ETF trades", a: "$0", b: "$0" },
+        { dimension: "Fractional shares", a: "From $5 per slice, S&P 500 stocks and ETFs", b: "From $1, thousands of stocks and ETFs" },
+        { dimension: "IRA match", a: "None", b: "1% on contributions and rollovers, 3% with Robinhood Gold ($5/month)" },
+        { dimension: "Investment selection", a: "Stocks, ETFs, options, mutual funds, bonds, CDs, Treasuries", b: "Stocks, ETFs, options, and cryptocurrency" },
+        { dimension: "Human financial advice", a: "Available, plus a no-fee robo-advisor tier", b: "Not available (self-directed only)" },
+        { dimension: "Customer support", a: "Phone, chat, and in-person branches nationwide", b: "24/7 phone and chat, no physical branches" },
+      ],
+    },
+    verdict:
+      "Choose Robinhood if you're starting with a small balance, want the simplest app, or want the IRA match to boost this year's retirement contribution. Choose Schwab if you want mutual funds, bonds, or Treasuries alongside your stocks, want a human advisor available if you ever need one, or want a linked bank account and a nearby branch. An investor who wants mutual funds or professional portfolio management should not expect Robinhood to cover that. Robinhood doesn't offer either one.",
+    sections: [
+      {
+        heading: "Where Schwab and Robinhood Differ Most",
+        content:
+          "[Charles Schwab](https://www.schwab.com) built its business as a full-service broker, so one account can hold a taxable brokerage, an IRA, a checking account, and a managed portfolio all at once. [Robinhood](https://robinhood.com) built its business as a mobile-first broker, so the app strips the experience down to placing a trade quickly and checking a balance, with fewer account types layered on top.\n\nThat founding difference still shapes both platforms today. Schwab's product list reads like a menu built over five decades of adding services: mutual funds, bond trading, banking, and both robo and human advice. Robinhood's product list reads like a company that started with one job, commission-free stock trading, and has been adding features, like its IRA match and cryptocurrency trading, one at a time since.",
+      },
+      {
+        heading: "What Each One Actually Charges",
+        content:
+          "Neither broker charges a commission on stock or ETF trades, and neither requires a minimum balance to open a brokerage account or an IRA. On the surface, the cost of trading itself is identical.\n\nThe real cost difference sits in Robinhood Gold, a $5-a-month subscription that unlocks the full 3% IRA match instead of the base 1% every Robinhood user already gets for free. Run the math on a full 2026 IRA contribution of $7,000: the 3% match adds $210, against $60 in Gold fees for the year, a net gain of $150 even before any investment growth. You do have to keep Gold active for a year and hold the matched money in the account for five years to keep the full match, so the trade-off only pays off for a saver who plans to leave the account alone.",
+      },
+      {
+        heading: "Investment Selection: Why One Offers Crypto and the Other Doesn't",
+        content:
+          "Schwab's investment menu covers stocks, ETFs, options, mutual funds, individual bonds, CDs, and Treasury securities bought directly, plus its own line of low-cost index funds. Schwab does not let you trade cryptocurrency directly inside a brokerage account.\n\nRobinhood covers stocks, ETFs, options, and direct cryptocurrency trading, but it does not offer mutual funds, individual bonds, or a Treasury-buying tool the way Schwab does. An investor who wants to build a classic three-fund portfolio of stocks, bonds, and cash equivalents inside one account will find that easier at Schwab. An investor who wants to hold both stocks and crypto without a second app will find that only at Robinhood.",
+      },
+      {
+        heading: "Fractional Shares and the Trading Experience",
+        content:
+          "Robinhood's $1 minimum for fractional shares beats Schwab's $5 minimum, which matters most to an investor starting with a small amount who wants to spread it across several expensive stocks the same week. On a $50 deposit, that gap is the difference between owning slices of ten different S&P 500 stocks on Robinhood versus roughly ten on Schwab too, since $5 slices already stretch a small balance reasonably far.\n\nThe bigger practical difference shows up in the trading tools themselves. Schwab also offers thinkorswim, an advanced trading platform built for active traders who chart options strategies and watch multiple positions at once. Robinhood's app stays deliberately simple, with none of thinkorswim's depth, which suits a buy-and-hold investor better than someone running complex options trades.",
+      },
+      {
+        heading: "Options Trading Costs More at One of Them",
+        content:
+          "Schwab charges $0.65 per options contract on top of its $0 base commission, so a 10-contract trade costs $6.50 before the trade itself makes or loses a cent. Robinhood charges no commission and no per-contract fee on equity and ETF options, which makes that same 10-contract trade free.\n\nThe gap narrows for index options like the S&P 500 index, where Robinhood passes through a $0.50 per-contract fee that exchanges and clearinghouses charge on that specific product. An options trader running frequent, multi-contract equity trades saves real money on Robinhood over a year. An investor who trades options occasionally, in small size, will barely notice Schwab's per-contract fee either way.",
+      },
+      {
+        heading: "Retirement Accounts and Human Advice",
+        content:
+          "Schwab offers Traditional, Roth, SEP, SIMPLE, custodial, and rollover IRAs, plus a $0-fee robo-advisor tier and paid access to a human financial advisor once your balance qualifies. Robinhood offers Traditional and Roth IRAs, along with a retirement account built for self-employed and gig workers, but no path to a human advisor at any balance.\n\nThe IRA match is Robinhood's clearest edge here, since Schwab offers no equivalent bonus for moving money into an IRA. Schwab's edge is the advisor path: an investor whose situation gets more complicated, a windfall, an inheritance, a business sale, has someone to call. A Robinhood user facing that same complexity has to solve it alone or open a second account somewhere that offers advice.\n\nSchwab also links a checking account to the same login, and that checking account rebates ATM fees worldwide with no minimum balance required. That matters most to an investor who travels often or wants their spending cash and their investments under one roof. Robinhood offers its own cash management features, including a debit card and a savings-style cash sweep, but nothing that reaches Schwab's global ATM rebate.",
+      },
+      {
+        heading: "How Both Protect Your Money",
+        content:
+          "Both brokers are [SIPC](https://www.sipc.org/for-investors/what-sipc-protects) members, which protects customer securities and cash up to $500,000 per account, including a $250,000 limit on the cash portion, if the broker itself fails. SIPC does not protect against a stock losing value. It only steps in when a broker cannot return assets it was supposed to be holding.\n\nRobinhood has [added a private insurance policy](https://robinhood.com/us/en/support/articles/Account-protection-with-SIPC/) on top of its SIPC coverage, covering securities and cash up to a combined $1 billion across all customers, capped at $50 million in securities and $1.9 million in cash for any one customer. Schwab carries its own supplemental coverage through a private insurer as well. For most retail account balances, the base SIPC limit alone already covers the full account, so this excess layer matters mainly to investors holding well into seven figures at one broker.",
+      },
+      {
+        heading: "Who Robinhood Doesn't Fit",
+        content:
+          "Robinhood doesn't fit an investor who wants mutual funds, a bond ladder, or Treasury bills bought directly inside their brokerage account, since none of those exist on the platform today. It also doesn't fit anyone who wants the option to call a human advisor later, even if they don't need one yet.\n\nThat calculus changes only if Robinhood adds mutual funds, bond trading, or human advice to its lineup, none of which the company offers as of 2026. Until then, an investor who wants that breadth in one account is better served opening it at Schwab from the start, rather than managing two brokers to get everything they need.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Charles Schwab better than Robinhood?",
+        answer:
+          "Neither is better across the board. Each is built for a different kind of investor. Schwab fits someone who wants mutual funds, bonds, banking, and the option of a human advisor in one account. Robinhood fits someone who wants the simplest possible app, the lowest fractional-share minimum, and an IRA match on this year's contribution.",
+      },
+      {
+        question: "Does Robinhood's IRA match actually pay for Robinhood Gold?",
+        answer:
+          "For most savers making a full IRA contribution, yes. A 2026 contribution of $7,000 earns a $210 match with Gold's 3% rate, against $60 in Gold subscription fees for the year, a net gain of $150 before any investment growth. The match requires keeping Gold active for a year and the matched funds in the account for five years, so it favors a saver who isn't planning to withdraw soon.",
+      },
+      {
+        question: "Can I buy mutual funds on Robinhood?",
+        answer:
+          "No. Robinhood's investment menu covers stocks, ETFs, options, and cryptocurrency, but not mutual funds, individual bonds, or Treasury securities. An investor who wants mutual funds needs to use Schwab or another full-service broker for that part of their portfolio.",
+      },
+      {
+        question: "Can I trade cryptocurrency at Charles Schwab?",
+        answer:
+          "No. Schwab does not offer direct cryptocurrency trading inside a brokerage account. Robinhood does, alongside stocks, ETFs, and options, which is one of the clearest feature differences between the two brokers.",
+      },
+      {
+        question: "Which broker charges less for options trading?",
+        answer:
+          "Robinhood charges no commission and no per-contract fee on equity and ETF options, while Schwab charges $0.65 per contract on top of its $0 base commission. A 10-contract equity options trade costs $6.50 at Schwab and nothing at Robinhood. Both pass through a small per-contract fee on index options like the S&P 500 index, since that fee comes from the exchange, not the broker.",
+      },
+      {
+        question: "Is my money safe at Robinhood or Schwab if the broker fails?",
+        answer:
+          "Both brokers are SIPC members, protecting customer securities and cash up to $500,000 per account, including a $250,000 cash sublimit. Robinhood also carries private excess coverage up to a combined $1 billion across customers, and Schwab carries its own supplemental coverage through a private insurer. SIPC protects against a broker failure, not against an investment losing value.",
+      },
+    ],
+    sources: [
+      { label: "SIPC — What SIPC Protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" },
+      { label: "Robinhood — Account Protection With SIPC", url: "https://robinhood.com/us/en/support/articles/Account-protection-with-SIPC/" },
+      { label: "Charles Schwab — Account Protection", url: "https://www.schwab.com/legal/account-protection" },
+      { label: "Robinhood — IRA Match FAQ", url: "https://robinhood.com/us/en/support/articles/ira-match-faq/" },
+      { label: "Robinhood — Fee Schedule (PDF)", url: "https://cdn.robinhood.com/assets/robinhood/legal/RHF+Fee+Schedule.pdf" },
+    ],
+    relatedComparisons: ["fidelity-vs-schwab", "vanguard-vs-schwab"],
+  },
+
+  // ─── TurboTax vs TaxAct ───────────────────────────────────────────────────
+  {
+    slug: "turbotax-vs-taxact",
+    title: "TurboTax vs. TaxAct: Which Tax Software Fits You",
+    metaDescription:
+      "TurboTax vs. TaxAct compared: pricing at every tier, free-filing limits, live expert help, and which one costs less for your actual return.",
+    targetKeyword: "turbotax vs taxact",
+    optionA: "TurboTax",
+    optionB: "TaxAct",
+    h1: "TurboTax vs. TaxAct: Which Tax Software Should You Use?",
+    intro:
+      "TurboTax charges more at nearly every paid tier but pairs that price with a more guided interview and the deepest live-expert tiers in the category, while TaxAct charges less at every comparable tier and backs its numbers with a $100,000 accuracy guarantee. A simple W-2-only return filed free costs $0 on both. Add a Schedule C, itemized deductions, or investment income, and TaxAct usually costs less than the matching TurboTax tier for the same return.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Federal cost, simple W-2 return", a: "Free (Form 1040 only, limited credits)", b: "Free" },
+        { dimension: "State cost with the free tier", a: "Free, for a qualifying simple return", b: "$4.95, even on the free federal tier" },
+        { dimension: "Federal cost, itemized or self-employed", a: "Roughly $39 to $89, depending on tier", b: "Roughly $29.99 to $64.99, depending on tier" },
+        { dimension: "Live human help", a: "TurboTax Live tiers, priced per situation", b: "Xpert Assist add-on, about $60 flat for unlimited access" },
+        { dimension: "Accuracy guarantee", a: "100% Accurate Calculations Guarantee", b: "$100,000 Accuracy Guarantee" },
+        { dimension: "Import options", a: "Prior-year returns, W-2s, many payroll and investment accounts", b: "Prior-year returns, W-2s, major payroll and investment accounts" },
+        { dimension: "Best fit", a: "A filer who wants the most guided, hand-held interview", b: "A confident filer who wants the lowest price at every tier" },
+      ],
+    },
+    verdict:
+      "Pick TaxAct if your return is straightforward enough that you don't need much hand-holding, since it charges less at nearly every comparable tier and backs its math with a $100,000 guarantee. Pick TurboTax if you want the most polished interview experience or plan to add a live expert to review or file your return, since its guided flow and live-help tiers are the most built out in the category. A filer with a genuinely simple W-2-only return pays $0 on either one, so the price gap only shows up once your return gets more complex than that.",
+    sections: [
+      {
+        heading: "What a Simple Return Costs on Each",
+        content:
+          "[TurboTax](https://turbotax.intuit.com/personal-taxes/online/) and [TaxAct](https://www.taxact.com/taxes-online/file-your-own-taxes) both offer a free federal tier for a simple return, so a filer with only W-2 income and a standard deduction pays $0 in federal filing fees on either product. TurboTax's Free Edition covers only Form 1040 with a narrow set of credits: the Earned Income Tax Credit, the Child Tax Credit, student loan interest, and a handful of others.\n\nThe state return is where the two split even at the free tier. TurboTax's Free Edition includes a free state return for a qualifying simple filer, while TaxAct charges $4.95 for a state return no matter which federal tier you use, including its own free tier. A filer whose return truly qualifies as simple on both platforms pays less overall on TurboTax specifically because of that free state filing, even though TaxAct wins on price at every paid tier above it.",
+      },
+      {
+        heading: "What a More Complex Return Costs",
+        content:
+          "Add a Schedule C for freelance or gig income, itemized deductions, or investment sales, and both products move you into a paid tier. TurboTax's paid online tiers run roughly $39 to $89 for the federal return, plus $64 for each state return outside the free tier. TaxAct's comparable tiers run roughly $29.99 to $64.99 for the federal return, with state filing priced separately at $4.95 online or $9.99 per state through its desktop software.\n\nStack a federal return plus one state return at the top tier on each platform, and TaxAct typically comes in $20 to $40 cheaper than the matching TurboTax tier for the same tax situation. Neither company holds its published price steady all season. Both tend to raise prices as the mid-April deadline gets closer, so filing early usually costs less on either one.",
+      },
+      {
+        heading: "What Happens If Your Return Gets Audited",
+        content:
+          "TurboTax includes its Audit Support Guarantee free with every return: a trained tax professional walks you through an IRS or state notice and answers your questions about it, with two hours of collection assistance available if a covered audit results in additional tax due. TurboTax also sells paid Audit Defense, provided by [TaxAudit](https://www.turbotaxauditdefense.com/), where a certified professional communicates with the IRS and drafts response letters on your behalf.\n\nTaxAct's equivalent is [Protection Plus](https://www.taxact.com/audit-defense), a paid add-on that covers your return for three full years and provides full-service assistance with both federal and state audits, handling correspondence with the taxing agency for you. Neither platform's free guidance replaces the paid, full-service option if you actually get audited. The free tier on both explains the notice. The paid tier handles the audit itself.",
+      },
+      {
+        heading: "Getting Live Help From a Real Person",
+        content:
+          "TurboTax Live comes in tiers of its own, from a one-time expert review of a return you prepared yourself up to a full-service option where a credentialed preparer does the entire return for you, with pricing that climbs with the complexity of your situation. TaxAct's equivalent is Xpert Assist, a single add-on priced around $60 that gives unlimited access to a credentialed, U.S.-based tax expert while you prepare your own return.\n\nTurboTax's tiered structure fits someone who wants to choose exactly how much of the work they hand off, from a quick second opinion to letting someone else file the whole return. TaxAct's flat add-on fits someone who wants occasional expert input at one predictable price rather than a menu of service levels to compare first.",
+      },
+      {
+        heading: "How Each Backs Its Numbers",
+        content:
+          "TaxAct's headline guarantee is specific: if an error in its software produces a smaller refund or larger tax bill than the same data would produce elsewhere, TaxAct reimburses the difference up to $100,000 plus your software cost, based on its own comparison against TurboTax's paid consumer online pricing. TurboTax backs its own math with a 100% Accurate Calculations Guarantee, covering IRS or state penalties and interest caused by a calculation error in the software.\n\nBoth guarantees only cover a software error, not a mistake in the numbers you typed in or a position you took on a gray area of the tax code. Neither guarantee replaces double-checking your own entries against your actual tax documents before you file.",
+      },
+      {
+        heading: "Where the Two Are Basically the Same",
+        content:
+          "Both platforms walk you through an interview-style series of questions instead of handing you a blank IRS form, both e-file directly with the IRS and every state that supports it, and both import a prior year's return along with current-year W-2s and many investment or payroll accounts. Filing speed and the core mechanics of getting a return submitted are close enough on both that the real decision usually comes down to price and how much guidance you want along the way.\n\nBoth also cover the same range of tax situations once you're on a paid tier: rental income, investment sales, small-business income, and multi-state returns are all supported by TurboTax and TaxAct alike. Neither one forces you onto a third-party product to handle a more complicated return, so the choice rarely comes down to whether a given tax situation is supported at all.",
+      },
+      {
+        heading: "Which One Actually Costs Less for You",
+        content:
+          "Run the numbers for a freelancer with a Schedule C and a handful of itemized deductions. On TaxAct, that return typically lands in the $64.99 federal tier plus $4.95 for one state return, for a total near $70. On TurboTax, the comparable tier runs closer to $89 federal plus $64 for one state return, for a total near $153, more than double.\n\nThe gap narrows fast if you also add live help. TaxAct's Xpert Assist adds a flat $60 to that $70 total. TurboTax's live tiers price per situation and typically run well above a flat $60 add-on, so the cost gap between the two usually gets wider, not narrower, once you bring in expert help on both sides.",
+      },
+      {
+        heading: "Who TaxAct Doesn't Fit",
+        content:
+          "TaxAct doesn't fit a first-time filer who finds tax terminology genuinely confusing and wants the most hand-held experience available, since TurboTax's interview and help content are more built out at every step. It also doesn't fit someone who has already decided they want a specific TurboTax Live service tier and is only comparing price after that decision.\n\nThat calculus flips the moment cost becomes the deciding factor for a return you feel reasonably confident preparing yourself. At that point, TaxAct's lower price at nearly every paid tier, backed by the same core guarantee protection, usually outweighs TurboTax's more polished interface for a return that isn't especially complicated.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is TaxAct as accurate as TurboTax?",
+        answer:
+          "Both platforms guarantee their own calculations, and both are built to handle the same IRS forms and current tax-year rules. TaxAct backs its numbers with a $100,000 Accuracy Guarantee against a software error, while TurboTax's 100% Accurate Calculations Guarantee covers penalties and interest caused by a calculation error. Neither guarantee covers a mistake in the information you entered yourself.",
+      },
+      {
+        question: "Can I file completely free on both TurboTax and TaxAct?",
+        answer:
+          "Only if your return is simple enough to qualify for each platform's free tier, generally W-2 income with a standard deduction and a narrow set of credits. TurboTax's Free Edition includes a free state return for a qualifying simple filer, while TaxAct charges $4.95 for a state return even on its free federal tier, so TurboTax can end up cheaper for the simplest possible return.",
+      },
+      {
+        question: "Is TurboTax Live worth the extra cost over TaxAct's Xpert Assist?",
+        answer:
+          "It depends on how much of the work you want to hand off. TurboTax Live's tiers let you choose anywhere from a one-time review to a preparer filing the entire return for you, at a price that climbs with each tier. TaxAct's Xpert Assist is a single flat add-on, around $60, for unlimited expert questions while you prepare the return yourself, which usually costs less if you only need occasional guidance.",
+      },
+      {
+        question: "Which is cheaper for a self-employed filer, TurboTax or TaxAct?",
+        answer:
+          "TaxAct is typically cheaper for a self-employed filer with a Schedule C. Its top online tier runs roughly $64.99 federal, compared with roughly $89 for TurboTax's comparable tier, and TaxAct's state filing fee of $4.95 is well below TurboTax's $64 state fee outside the free tier.",
+      },
+      {
+        question: "What happens if TurboTax or TaxAct users get audited?",
+        answer:
+          "TurboTax includes its Audit Support Guarantee free with every return, giving you guidance from a tax professional on any IRS or state notice. Both platforms also sell a full-service audit defense add-on, where a professional actually handles correspondence with the IRS for you: TurboTax through TaxAudit, and TaxAct through Protection Plus, which covers your return for three years and manages both federal and state audits.",
+      },
+      {
+        question: "Do TurboTax and TaxAct prices change during tax season?",
+        answer:
+          "Yes. Both companies typically raise their published prices as the mid-April filing deadline approaches, and you're charged whatever price is listed on the day you actually pay, not the day you started your return. Filing earlier in the season, once the IRS opens e-file, usually locks in a lower price on either platform.",
+      },
+    ],
+    sources: [
+      { label: "TaxAct — File Your Own Taxes", url: "https://www.taxact.com/taxes-online/file-your-own-taxes" },
+      { label: "TaxAct — Guarantees", url: "https://www.taxact.com/lp/guaranteed" },
+      { label: "TaxAct — Xpert Assist", url: "https://www.taxact.com/tax-xpert-assist/unlimited-xpert-assist" },
+      { label: "TurboTax — Online Pricing", url: "https://turbotax.intuit.com/personal-taxes/online/" },
+      { label: "TurboTax — Compare Online Products", url: "https://turbotax.intuit.com/personal-taxes/compare/online/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

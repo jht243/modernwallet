@@ -28,6 +28,7 @@ import CollegeSavings529Calculator from "./CollegeSavings529Calculator";
 import CoastFireCalculator from "./CoastFireCalculator";
 import BusinessLoanPayoffCalculator from "./BusinessLoanPayoffCalculator";
 import PersonalLoanCalculator from "./PersonalLoanCalculator";
+import PersonalLoanPayoffCalculator from "./PersonalLoanPayoffCalculator";
 import MerchantCashAdvanceCalculator from "./MerchantCashAdvanceCalculator";
 import InvoiceFactoringCalculator from "./InvoiceFactoringCalculator";
 import BusinessLineOfCreditCalculator from "./BusinessLineOfCreditCalculator";
@@ -83,6 +84,10 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Personal loan — competitor-monitor pass (2026-07-20): amortizing personal-loan payment +
   // origination-fee-aware effective APR (the gap most basic personal loan calculators skip).
   "personal-loan": PersonalLoanCalculator,
+  // Personal loan extra-payment / payoff — competitor-monitor pass (2026-08-28): payoff timeline
+  // for a personal loan you already have, distinct from the origination-fee/effective-APR tool
+  // above (which prices a NEW loan). Per-spoke override island (mirrors business-loan-payoff).
+  "personal-loan-payoff": PersonalLoanPayoffCalculator,
   // Interest per day — competitor-monitor pass (2026-08-03): daily interest earned/owed on any
   // balance, plus the effective annual yield (APY) once that daily rate compounds daily.
   "interest-per-day": InterestPerDayCalculator,
