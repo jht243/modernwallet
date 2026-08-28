@@ -1,0 +1,44 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-28",
+  "window_start": "2026-08-28",
+  "window_end": "2026-08-28",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/investing/dividend-calculator",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/net-worth/net-worth-percentile-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-net-worth-tracking-tools/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 3,
+  "top10_pages_total_clicks": 3,
+  "channel_split": {
+    "/investing/dividend-calculator": {
+      "Direct": 1
+    },
+    "/net-worth/net-worth-percentile-calculator/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-net-worth-tracking-tools/": {
+      "Organic Search": 1
+    }
+  }
+}
