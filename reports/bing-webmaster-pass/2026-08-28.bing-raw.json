@@ -1,0 +1,4827 @@
+{
+  "site": "https://themodernwallet.com/",
+  "tool": "bing_webmaster.py deep-dive",
+  "sections": {
+    "crawlStats": [
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 56,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 4,
+        "Date": "2026-06-30T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 50,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 3,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 64,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 29,
+        "Date": "2026-07-01T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 55,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 74,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 79,
+        "Date": "2026-07-02T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 68,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 82,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 77,
+        "Date": "2026-07-03T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 76,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 6,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 99,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 81,
+        "Date": "2026-07-04T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 87,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 8,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 97,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 45,
+        "Date": "2026-07-05T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 97,
+        "InLinks": 1
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 9,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 115,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 104,
+        "Date": "2026-07-06T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 111,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 10,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 119,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 146,
+        "Date": "2026-07-07T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 121,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 11,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 138,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 185,
+        "Date": "2026-07-08T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 137,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 9,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 144,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 163,
+        "Date": "2026-07-09T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 145,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 14,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 163,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 162,
+        "Date": "2026-07-10T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 165,
+        "InLinks": 165
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 13,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 165,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 158,
+        "Date": "2026-07-11T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 166,
+        "InLinks": 313
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 15,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 165,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 233,
+        "Date": "2026-07-12T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 168,
+        "InLinks": 313
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 19,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 161,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 241,
+        "Date": "2026-07-13T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 170,
+        "InLinks": 313
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 23,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 157,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 245,
+        "Date": "2026-07-14T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 170,
+        "InLinks": 313
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 28,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 157,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 257,
+        "Date": "2026-07-15T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 175,
+        "InLinks": 313
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 24,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 187,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 353,
+        "Date": "2026-07-16T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 183,
+        "InLinks": 517
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 22,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 283,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 8,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 10,
+        "CrawledPages": 383,
+        "Date": "2026-07-17T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 293,
+        "InLinks": 517
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 23,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 390,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 429,
+        "Date": "2026-07-18T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 399,
+        "InLinks": 577
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 27,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 393,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 2,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 3,
+        "CrawledPages": 335,
+        "Date": "2026-07-19T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 404,
+        "InLinks": 577
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 22,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 398,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 316,
+        "Date": "2026-07-20T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 406,
+        "InLinks": 577
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 21,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 404,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 364,
+        "Date": "2026-07-21T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 410,
+        "InLinks": 719
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 19,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 418,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 354,
+        "Date": "2026-07-22T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 422,
+        "InLinks": 719
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 25,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 421,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 324,
+        "Date": "2026-07-23T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 428,
+        "InLinks": 719
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 54,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 432,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 395,
+        "Date": "2026-07-24T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 443,
+        "InLinks": 718
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 88,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 430,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 4,
+        "CrawledPages": 331,
+        "Date": "2026-07-25T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 445,
+        "InLinks": 718
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 67,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 453,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 373,
+        "Date": "2026-07-26T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 462,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 45,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 476,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 324,
+        "Date": "2026-07-27T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 486,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 42,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 479,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 372,
+        "Date": "2026-07-28T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 487,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 52,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 470,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 536,
+        "Date": "2026-07-29T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 488,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 54,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 468,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 440,
+        "Date": "2026-07-30T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 489,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 71,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 451,
+        "Code301": 0,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 455,
+        "Date": "2026-07-31T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 479,
+        "InLinks": 896
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 33,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 549,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 243,
+        "Date": "2026-08-22T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 360,
+        "InLinks": 1304
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 46,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 551,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 266,
+        "Date": "2026-08-23T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 362,
+        "InLinks": 1339
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 45,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 552,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 234,
+        "Date": "2026-08-24T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 354,
+        "InLinks": 1339
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 36,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 560,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 2,
+        "CrawledPages": 222,
+        "Date": "2026-08-25T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 359,
+        "InLinks": 1339
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 38,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 559,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 1,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 1,
+        "CrawledPages": 222,
+        "Date": "2026-08-26T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 355,
+        "InLinks": 1339
+      },
+      {
+        "__type": "CrawlStats:#Microsoft.Bing.Webmaster.Api",
+        "AllOtherCodes": 40,
+        "BlockedByRobotsTxt": 0,
+        "Code2xx": 560,
+        "Code301": 1,
+        "Code302": 0,
+        "Code4xx": 0,
+        "Code5xx": 0,
+        "ConnectionTimeout": 0,
+        "ContainsMalware": 0,
+        "CrawlErrors": 0,
+        "CrawledPages": 238,
+        "Date": "2026-08-27T07:00:00Z",
+        "DnsFailures": 0,
+        "InIndex": 353,
+        "InLinks": 1340
+      }
+    ],
+    "crawlIssues": [],
+    "rankAndTraffic": [
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-28T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-29T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-06-30T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "2026-07-01T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-02T07:00:00Z",
+        "Impressions": 31
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 5
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-04T07:00:00Z",
+        "Impressions": 8
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-05T07:00:00Z",
+        "Impressions": 10
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-06T07:00:00Z",
+        "Impressions": 16
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "2026-07-07T07:00:00Z",
+        "Impressions": 35
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "2026-07-08T07:00:00Z",
+        "Impressions": 51
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-07-09T07:00:00Z",
+        "Impressions": 45
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 43
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "2026-07-11T07:00:00Z",
+        "Impressions": 42
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "2026-07-12T07:00:00Z",
+        "Impressions": 35
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "2026-07-13T07:00:00Z",
+        "Impressions": 106
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "2026-07-14T07:00:00Z",
+        "Impressions": 185
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "2026-07-15T07:00:00Z",
+        "Impressions": 197
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 9,
+        "Date": "2026-07-16T07:00:00Z",
+        "Impressions": 250
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 5,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 250
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 8,
+        "Date": "2026-07-18T07:00:00Z",
+        "Impressions": 119
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 6,
+        "Date": "2026-07-19T07:00:00Z",
+        "Impressions": 181
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 11,
+        "Date": "2026-07-20T07:00:00Z",
+        "Impressions": 408
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 20,
+        "Date": "2026-07-21T07:00:00Z",
+        "Impressions": 717
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 15,
+        "Date": "2026-07-22T07:00:00Z",
+        "Impressions": 515
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 19,
+        "Date": "2026-07-23T07:00:00Z",
+        "Impressions": 418
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 10,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 422
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 11,
+        "Date": "2026-07-25T07:00:00Z",
+        "Impressions": 332
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 8,
+        "Date": "2026-07-26T07:00:00Z",
+        "Impressions": 439
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 21,
+        "Date": "2026-07-27T07:00:00Z",
+        "Impressions": 602
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 16,
+        "Date": "2026-07-28T07:00:00Z",
+        "Impressions": 561
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "2026-08-20T07:00:00Z",
+        "Impressions": 0
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 24,
+        "Date": "2026-08-21T07:00:00Z",
+        "Impressions": 5042
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 29,
+        "Date": "2026-08-22T07:00:00Z",
+        "Impressions": 4684
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 28,
+        "Date": "2026-08-23T07:00:00Z",
+        "Impressions": 4707
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 44,
+        "Date": "2026-08-24T07:00:00Z",
+        "Impressions": 3846
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 36,
+        "Date": "2026-08-25T07:00:00Z",
+        "Impressions": 2532
+      }
+    ],
+    "queryStats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "retirement calculator with military pension and 401k"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 4,
+        "Query": "money market account rates comparison"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "interest calculation for reduced loan term when paying off mortgage early in 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "should i pay off my mortgage early if rent covers the mortgage payment?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what are money market deposit accounts?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to calculate expected returns"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "stock dividend compound interest calculation formula"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "weekly s&p 500 investment of $500: yield calculation"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "30-year fixed investment compound interest returns and maximum drawdown calculation"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "rental property sale capital gains calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "loan amortization"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "roughly how much to make to afford $200/mo car"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "$600,000 invested at 4% today, and $5,000 withdrawn monthly lasts how long"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to avoid withdrawal symptoms after exiting investments"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "liquid net worth calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retirement pension calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "should i use hysa vs money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "net worth percentile calculator 2022 estimate social security payout dates"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much money can i expect to have when i retire if i start investing in a pension fund at age 50 with a contribution of 19,930 yuan?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "method for calculating weighted average return"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "spend assets to avoid nursing home private paycosts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is 40k liquid net worth but 8k credit card debt at 19 good or bad"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what happens when you regegister a utma account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "2026 how much do you need in liquid net worth at age 70 to afford $ 250,000 porsche"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "utma vs brokerage account owned by parents"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "trump account vs parental brokerage account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 3,
+        "Query": "benefits of trump account vs brokerage"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 3,
+        "Query": "difference between trump account and 529"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "pr fee calculator probate"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "navy retirement calculator high 3"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "medicaid mltc spenddown calculatr"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "military high 3 retirement calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does a will cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retirement calculator for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "529 college savings plan vs roth ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "dividend reinvestment results after thirty years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "if i invest 55,000 and withdraw 1,000amonth, howlong willitlast"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "rated net worth tracker tools free comparison"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what are the estimated returns of a 60/40 portfolio for the next 15 years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is my personal medicaid spend-down amount p the medicaid or social security or other appropriate office?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "fha mortgage calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "couple combined retirement calculator with social security benefits"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "top rated net worth tracker tools free"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "i-owe-back-taxes-to-the-irs.cstimetq.com"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "most detailed retirement calculator for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "s&p 500 investment duration"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "investment calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "couples retirement calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "printable auto loan amortization calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best 401 k plan providers for small business"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "estate planning costs and fees"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "investment calculator that models withdrawls aginst"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "does a child need income for custodial roth ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "i have 70000 - how much do i need to add each month so it's 200000 in 10 years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "hysa vs money market account for one years expenses"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "the relationship between withdrawal rate and exit rate"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "money market accounts with best interest rate"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "the relationship between dividend compound interest and initial stock price in retirement investment"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how is a trump account better than a regular brokerage account other than the $1k"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "googleforms"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much money is the average monthly withdrawal from a $3 million investment in the nasdaq fund?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "couple combined retirement calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "comparison of fund dividend reinvestment returns vs waiting for price drops to buy"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "завод оберег новосибирская официальный сайт"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "calculate car loan amortization schedule"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "utma kiddie tax 2025"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "money market or hysa"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "investment calculator s&p 500"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "child brokerage account vs 529"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what will happen to my 1.47m invested 60/40 us international equities ovee next 5 years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "mortgage early payoff calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "+detailed retirement calculator for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does a will coast"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "couple combined retirement calculator with social security"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 2,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "80 year old monthly % withdrawn from $4.6m portfolio"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 2,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much will a will cost + attorney, i rent, for low in come attorney"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 7,
+        "Query": "how much does a will cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "medicaid countable assets calculator for georgia"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what is better for young people, utma accounts or roth ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "custodial roth ira versus custodial brokerage"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what happens with leftover funds in a 529"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "selling my rental after 20 years and recapture and capital gains calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much to get a will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "survivor benefit plan pooled snt"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much cost to set simple will and benificial"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "wha is the maximum deposit to a trump account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much to have estate will made"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much to do will and testament with local attorney"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of a will with an attorney"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of making will in usa"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "are there alternative trump type investment accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "529 money done with school leftover balance move it to an ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retirement calculator for married couple retiring at different ages"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "medicaid spending allowances"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is rge average cost to have a will drawn uo along with healt care power of artieney and living will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is cost of having will and living will done cincinnati"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 8,
+        "Query": "best money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 5,
+        "Query": "managing shared finances with joint checking apps"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "trump account vs brokerage account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "what is utma vs roth ira for kids"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "529 leftover options"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "ally bank rates forvmoney market account vs hysa account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "retirement calculator for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "can 529 left over funds be used for other things by beneficiary"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how does probate work when someone dies"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "revocable vs irrevocable trust pros and cons"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "who are the best 401k providers for small businesses?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "utma account explained"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "long-term regular investment return calculation for s&p 500 equal weight index qdii and nikkei 225 index fund"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best money market accounts rates"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "comparison of index fund vs etf link fund tracking error"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to dollar-cost average after csi 500 or nasdaq falls 20%"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "college savings 529 vs brokerage account safety"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "estimated monthly payment for irs payment plan for $50000?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "if you withdraw 5% per annum on a portfolio over 20 years, 10% chance you will run out of money"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "hysa calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "advance merchant settlement calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best index funds for 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "smart investment plan for s&p 500 index fund with weekly $50 contributions from 2015 to 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "roth ira vs. traditional ira comparison chart risk"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is utma account?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best pension vs 401k comparison"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "trust & will revocable living trust cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "programmatic split be 60/40"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "where does a 40m liquid net worth place me"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "method for calculating downward trend dollar-cost averaging yield"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "which is better the trump accounts for children or a brokerage account for children"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to choose money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "long-term investment effects of a 60:40 equity-bond portfolio with 10% gold allocation"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "compound interest results from dividend reinvestment of high-dividend stocks with $300,000 investment in 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "7000 in a custodial roth ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "highest money market user account price"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what bank has the best money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "ndx100 dollar-cost averaging for 5 years with $100 daily investment"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to read a car loan amortization schedule"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "investment calculator including withdrawals"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what are money market deposit accounts?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best budgeting apps for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "couple 37 with net worth of $1.6m"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is the total deposit limit for a trump account in one year"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much profit can be made from ndx100 dividend reinvestment plus compound interest?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does a living trust cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "military high three retirement calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "2022 survey of consumer finances median net worth $192,700 overall"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "probability of 3-year loss for s&p 500 index fund regular investment in 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 60,
+        "Query": "best money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "calculate illinois’ medical spenddown program,"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much does a will cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much is the gold 1$ trump coin"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of setting up a living trust vs a will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 8,
+        "Query": "trump gold coin price today"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 6,
+        "Query": "trump gold coin worth today"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "trump gold coin price"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 4,
+        "Query": "how much does a will cost with a lawyer"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 4,
+        "Query": "living trust vs will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 4,
+        "Query": "velez, j. (2026). modernwallet expected return calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "amortiation schedual for auto"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "cost of a will with an attorney"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "ira early withdrawal calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "investment drawdown calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what happens if you have leftover 529 money"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "michigan medicaid spend down calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much does a new will cost going through an attorney"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much should a will cost for two people no kids"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what banks allow you to use a money market like a debit card"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "indiana  probate fee calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "ri medicaid disallowance for spend down calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much do wills cost from a reputable lawyer"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how does it cost to get a will made"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does it cost to make a will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "recommended retirement plans for self-employed"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "csra amount medicaid iowa 2026 calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much for simple will from layer 2"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "better business bureau is trump 250 coin real gold"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of will, poa, amd"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does it cost to make a will?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much dies a will cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what does a will cost to make"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "largest equity index funds 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of revocable living trust attorney cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cost of simple will.in elmira ny"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 485,
+        "Query": "how to choose a financial advisor"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 10,
+        "Query": "managing shared finances with joint checking apps"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 7,
+        "Query": "best index funds for 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 7,
+        "Query": "revocable vs irrevocable trust"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 6,
+        "Query": "best budgeting apps for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "revocable trust compare irrevocable trust"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "utma account explained"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "best free net worth tracking tools"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what is utma account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how return is calculated: portfolio expected return = weighted average of the assets’ expected returns.#N##N#why it became more practical: etfs made diversification across many asset classes easier and cheaper."
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much is the trump gold coin going to cost to manufacture"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "top performing index funds 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "vehicle amortization schedule"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "what can you pay for with 529"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how to protect assets from nursing home costs"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "utma account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what college expenses does a 529 plan cover"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is 1$ trump coin real gold"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "sandp 500 index projection calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "educational saving plan 529: what happens if there is resudual money after the education is completed?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what would 3600 a year in s&p500 look like in 30 years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "cash out 401k calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to calculate medicaid spend down"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "find information about highest yielding money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "most accurate net worth site"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "sp500 calc"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "﹥＜／rwozzwuyzy"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best money market deals"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "calculate my investment portfolio using monthly withdrawals"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "with the 5% draw down rule in finance how many years will my money last"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "mobile financial tracking apps for couples on ios"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "529 eligible expenses"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best expense tracker for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "irrevocable trust compare living trust"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retirement calculator 2025 for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "budget apps for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "contribution limit to children roth ira"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "pooled snt"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "who has the best money market in the world"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "donald trump gold coin worth"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "portfolio totals#N##N#       #N##N#            500,736"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "mobile finacial tracking apps for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "index fund newly started in 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "rebel finance school 2026 net worth tracker"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "house percentile net worth"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 1,
+        "Query": "retire calculator for couples"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 2,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "401k calculator with spouse"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 2,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "how much does it cost to make a will"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 24,
+        "Query": "best money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 4,
+        "Query": "high interest money market user account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "how much does a will cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "how much does a will cost with a lawyer"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "cost of a will poa and hcd in california state"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "mo medicaid spenddown calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "i project my retirment portfolio to grow at 7%.  it's 70/30 ... kindo of.. it' sbeen growign at 13%"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "how much does it cost to prepare a will for my son?"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "best tax relief companies"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "which is living trust online is best for estate with property, stocks and childless couple"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "maryland medicaid spend down calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is the charge to have a will drawn up"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "trump. 99999 gold dollar coin"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "can you get a debit card for a money mnarket"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is there a donald trump gold coin"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how long can you hold on to a trump account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how to manage a kids roth"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "trump coin just released where to buy"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best money market rate for existing customers"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "withdrawals of investment at given rate"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is there a fee to use a money market debit card"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "projected returns for 70/30 portfolio next 10 years"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "529 asset mix 2 years before need date"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does a will for one person cost"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does paying extra on a car loan lower the intrest rate"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much are the trump gold coins and how do you get one"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "trump gold coin value"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "complete guide to highest interest money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 493,
+        "Query": "how to choose a financial advisor"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 7,
+        "Query": "managing shared finances with joint checking apps"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 4,
+        "Query": "irrevocable trust vs revocable trust"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 4,
+        "Query": "what is utma"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "utma account explained"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "best index funds for 2026"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "retirement calculator jul - 2026 - google sheets"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "ira early withdrawal calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "utma"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "what is a utma account information"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "best tax relief company"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "fha credit compare conventional"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "utma account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "best online will maker"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "recommended retirement plans for self-employed"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "high yield kids savings account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best interest rates for money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "highest yield money market user account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "high yielding money market account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "recommended interest money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is cost of online wills in u.s."
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "401k small company plans comparable to employee fiduciary"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "is fha better than conventional"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "fha vs fh"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is utma account"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "money market debit"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "details about 401k providers for small business"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "best interest money market accounts"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how much does a will cost in alameda county california"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "probate fees in arizona"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "investment withdrawal calculator"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what are probate fees in arizona"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "what is utma in banking"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "how return is calculated: portfolio expected return = weighted average of the assets’ expected returns.#N##N#why it became more practical: etfs made diversification across many asset classes easier and cheaper."
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "ira for kids"
+      }
+    ],
+    "pageStats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/retirement/military-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 6,
+        "Query": "https://www.themodernwallet.com/portfolio/expected-return-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/net-worth/net-worth-percentile-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/investing/dividend-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/retirement/pension-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/investing/sp500-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/hysa-vs-money-market/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/retirement/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/money-market-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/mortgage/amortization-schedule/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-03T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/how-to-protect-assets-from-nursing-home/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 2,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/guides/utma-custodial-account-explained/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 8,
+        "Query": "https://www.themodernwallet.com/investing/dividend-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 8,
+        "Query": "https://www.themodernwallet.com/investing/dollar-cost-averaging-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 7,
+        "Query": "https://www.themodernwallet.com/retirement/military-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 7,
+        "Query": "https://www.themodernwallet.com/guides/custodial-account-taxes-kiddie-tax/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/compare/trump-account-vs-custodial-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/guides/probate-process-guide/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/roundup/best-net-worth-tracker/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/compare/hysa-vs-money-market/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/investing/withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/probate/fee-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/investing/sp500-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/mortgage/payoff-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/first-time-estate-planning/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/mortgage/fha-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/back-taxes-guide/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/529-vs-roth-ira/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/net-worth/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-10T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/net-worth/net-worth-by-age-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 12,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 149,
+        "Query": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 2,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 15,
+        "Query": "https://www.themodernwallet.com/guides/529-leftover-money-options/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 2,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/investing/withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 32,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 12,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 8,
+        "Query": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/guides/trump-account-rules/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/compare/living-trust-vs-will/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/real-estate/capital-gains-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/trump-account-alternatives/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 49,
+        "Query": "https://www.themodernwallet.com/guides/utma-custodial-account-explained/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 22,
+        "Query": "https://www.themodernwallet.com/guides/custodial-roth-ira-for-kids/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 19,
+        "Query": "https://www.themodernwallet.com/guides/529-qualified-expenses/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 16,
+        "Query": "https://www.themodernwallet.com/roundup/best-budgeting-apps-for-couples/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 16,
+        "Query": "https://www.themodernwallet.com/compare/revocable-vs-irrevocable-trust/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 15,
+        "Query": "https://www.themodernwallet.com/investing/dollar-cost-averaging-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 11,
+        "Query": "https://www.themodernwallet.com/roundup/best-index-funds/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 11,
+        "Query": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 11,
+        "Query": "https://www.themodernwallet.com/guides/custodial-account-taxes-kiddie-tax/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 6,
+        "Query": "https://www.themodernwallet.com/net-worth/net-worth-percentile-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 6,
+        "Query": "https://www.themodernwallet.com/auto-loan/amortization-schedule/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/investing/sp500-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/investing/dividend-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/tax-resolution/irs-payment-plan-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/retirement/military-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/mortgage/amortization-schedule/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/roundup/best-net-worth-tracker/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/pension-vs-401k/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-17T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/compare/roth-ira-vs-traditional-ira/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 22,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 410,
+        "Query": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 21,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 238,
+        "Query": "https://www.themodernwallet.com/guides/trump-gold-coin/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 4,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 175,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 4,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 76,
+        "Query": "https://www.themodernwallet.com/compare/living-trust-vs-will/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 16,
+        "Query": "https://www.themodernwallet.com/investing/withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 8,
+        "Query": "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/illinois/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 2,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 75,
+        "Query": "https://www.themodernwallet.com/guides/utma-custodial-account-explained/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 36,
+        "Query": "https://www.themodernwallet.com/roundup/best-index-funds/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 19,
+        "Query": "https://www.themodernwallet.com/roundup/best-net-worth-tracker/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 6,
+        "Query": "https://www.themodernwallet.com/mortgage/payoff-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/iowa/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/retirement/ira-early-withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 489,
+        "Query": "https://www.themodernwallet.com/guides/how-to-choose-a-financial-advisor/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 54,
+        "Query": "https://www.themodernwallet.com/compare/revocable-vs-irrevocable-trust/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 42,
+        "Query": "https://www.themodernwallet.com/roundup/best-budgeting-apps-for-couples/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 41,
+        "Query": "https://www.themodernwallet.com/guides/529-qualified-expenses/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 32,
+        "Query": "https://www.themodernwallet.com/elder-care/medicaid-spend-down-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 25,
+        "Query": "https://www.themodernwallet.com/guides/custodial-account-taxes-kiddie-tax/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 7,
+        "Query": "https://www.themodernwallet.com/guides/custodial-roth-ira-for-kids/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/net-worth/net-worth-percentile-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 5,
+        "Query": "https://www.themodernwallet.com/retirement/401k-early-withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/investing/sp500-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/elder-care/special-needs-trust-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/portfolio/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "2026-07-24T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/portfolio/expected-return-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 22,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 276,
+        "Query": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 9,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 86,
+        "Query": "https://www.themodernwallet.com/guides/trump-gold-coin/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 4,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 104,
+        "Query": "https://www.themodernwallet.com/roundup/best-money-market-accounts/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 3,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 10,
+        "Query": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 3,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 10,
+        "Query": "https://www.themodernwallet.com/guides/money-market-account-debit-card/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 2,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 136,
+        "Query": "https://www.themodernwallet.com/guides/529-leftover-money-options/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 2,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 28,
+        "Query": "https://www.themodernwallet.com/portfolio/70-30-portfolio-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 57,
+        "Query": "https://www.themodernwallet.com/compare/living-trust-vs-will/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 17,
+        "Query": "https://www.themodernwallet.com/investing/withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 16,
+        "Query": "https://www.themodernwallet.com/guides/how-to-open-a-trump-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 12,
+        "Query": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/guides/custodial-roth-ira-for-kids/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 3,
+        "Query": "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 1,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/money-market-account/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 498,
+        "Query": "https://www.themodernwallet.com/guides/how-to-choose-a-financial-advisor/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 106,
+        "Query": "https://www.themodernwallet.com/guides/utma-custodial-account-explained/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 66,
+        "Query": "https://www.themodernwallet.com/compare/revocable-vs-irrevocable-trust/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 46,
+        "Query": "https://www.themodernwallet.com/guides/custodial-account-taxes-kiddie-tax/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 38,
+        "Query": "https://www.themodernwallet.com/compare/fha-vs-conventional-loan/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 33,
+        "Query": "https://www.themodernwallet.com/roundup/best-index-funds/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 15,
+        "Query": "https://www.themodernwallet.com/portfolio/asset-allocation-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 12,
+        "Query": "https://www.themodernwallet.com/estate-planning/living-trust-cost-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 10,
+        "Query": "https://www.themodernwallet.com/roundup/best-budgeting-apps-for-couples/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 9,
+        "Query": "https://www.themodernwallet.com/real-estate/capital-gains-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 4,
+        "Query": "https://www.themodernwallet.com/retirement/ira-early-withdrawal-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/estate-planning/will-cost-calculator/california/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 2,
+        "Query": "https://www.themodernwallet.com/guides/high-yield-savings-account-for-kids-and-teens/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/portfolio/expected-return-calculator/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/guides/retirement-calculator-spreadsheet-template/"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "2026-07-31T07:00:00Z",
+        "Impressions": 1,
+        "Query": "https://www.themodernwallet.com/probate/fee-calculator/arizona/"
+      }
+    ],
+    "linkCounts": {
+      "__type": "LinkCounts:#Microsoft.Bing.Webmaster.Api",
+      "Links": [],
+      "TotalPages": 0
+    },
+    "blockedUrls": [],
+    "queryParameters": [],
+    "feeds": [
+      {
+        "__type": "Feed:#Microsoft.Bing.Webmaster.Api",
+        "Compressed": false,
+        "FileSize": 0,
+        "LastCrawled": "2026-08-26T00:55:20Z",
+        "Status": "Success",
+        "Submitted": "2026-07-25T04:57:02Z",
+        "Type": "Sitemap Index",
+        "Url": "https://www.themodernwallet.com/sitemap-index.xml",
+        "UrlCount": 393
+      }
+    ],
+    "urlSubmissionQuota": {
+      "__type": "UrlSubmissionQuota:#Microsoft.Bing.Webmaster.Api",
+      "DailyQuota": 100,
+      "MonthlyQuota": 400
+    },
+    "pageQueryStats": {}
+  },
+  "_errors": {}
+}
