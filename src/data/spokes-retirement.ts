@@ -329,7 +329,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     estimatedKD: 32,
     h1: "Couples Retirement Calculator: Plan Your Retirement Together",
     intro:
-      "Couples who plan retirement jointly typically accumulate more wealth and retire more securely than those who plan separately, because coordinating [Social Security (SSA)](https://www.ssa.gov/benefits/retirement/planner/applying7.html) claiming ages, contribution timing, and survivor benefits can add tens of thousands of dollars in lifetime income. Enter your combined savings and contributions above to project your shared nest egg, then read below to see how to layer in spousal Social Security benefits.",
+      "Couples who plan retirement jointly typically accumulate more wealth and retire more securely than those who plan separately, because coordinating [Social Security (SSA)](https://www.ssa.gov/benefits/retirement/planner/applying7.html) claiming ages, contribution timing, and survivor benefits can add tens of thousands of dollars in lifetime income. Enter your combined savings and contributions above to project your shared nest egg, then read below to see how to layer in spousal Social Security benefits. If you're not sure whether your current savings are on track, see [how much a household should have saved by age 50 or 60](/guides/how-much-to-save-for-retirement-average-earner/) for benchmark figures.",
     howItWorks:
       "The calculator projects your combined savings — enter both partners' balances and contributions as a single total — at your expected return until the earlier partner's retirement age. Use the notes below to add your Social Security estimate on top of the projected balance.\n\nWhere couples differ from single filers: Social Security offers a spousal benefit equal to up to 50% of the higher earner's full retirement age (FRA) benefit, and survivor benefits that let the surviving spouse keep the larger of the two benefits for life. Coordinating these claiming decisions is one of the highest-value retirement planning levers available. For a breakdown of your workplace accounts, see the [401k calculator](/retirement/401k-calculator/).",
     commonMistakes: [
@@ -406,6 +406,16 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "Can I switch from my own Social Security benefit to a spousal benefit later, or vice versa?",
         answer:
           "Generally, no — since a 2015 rule change, most people can't freely switch between their own benefit and a spousal benefit at will. When you file, you're typically deemed to be filing for both at once and simply receive whichever is higher. A narrow exception still exists for people born before January 2, 1954, who reached certain ages under the older rules; check with the SSA directly to see if you qualify.",
+      },
+      {
+        question: "Should we combine our retirement accounts as a couple, or can we have a joint IRA?",
+        answer:
+          "No, retirement accounts stay individually owned. IRAs and 401(k)s cannot be merged into one joint account, even for a married couple filing jointly, because each account is tied to one person's Social Security number. Entering a combined total in the calculator above is only a shortcut for projecting your household's total savings; behind that number, each spouse still has a separate IRA and 401(k), and each account follows that owner's own contribution limits, beneficiary designations, and required minimum distribution rules.",
+      },
+      {
+        question: "Is Social Security going to run out before we retire?",
+        answer:
+          "No, Social Security is not projected to run out entirely. The Social Security trust fund is projected to be able to pay full scheduled benefits only through a specific future year that the Social Security Administration updates annually, and after that point a majority of scheduled benefits, not zero, would still be payable from ongoing payroll tax revenue even if Congress makes no changes before then. For the current projected year and payable percentage, see the [SSA Trustees Report](https://www.ssa.gov/oact/TR/) directly, since those figures shift with each year's release. Coordinating your own claiming ages, as covered above, matters for your household regardless of how that debate plays out.",
       },
     ],
     sources: [
@@ -592,6 +602,16 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         question: "Can I change my Survivor Benefit Plan (SBP) beneficiary later, for example after a divorce or remarriage?",
         answer:
           "Changing an existing SBP election after retirement (adding or switching a beneficiary following a divorce or remarriage, for example) is possible only in limited circumstances defined by DFAS, tied to a qualifying life event and a specific window to act. Because that window and the required paperwork can change, contact DFAS directly for the current process rather than assuming a specific deadline; the initial SBP election itself still can't be made after retirement.",
+      },
+      {
+        question: "What is the military retirement pay chart for 2026?",
+        answer:
+          "There's no single 'retirement pay chart' you can look up directly. The official 2026 military basic pay chart, which feeds into the retirement formula, is published by the Department of Defense at [militarypay.defense.gov](https://militarypay.defense.gov/Pay/Basic-Pay/). Your actual retired pay comes from applying the High-3 (2.5%) or BRS (2.0%) multiplier, times your years of service, to the average of your three highest-paid years, so use the current pay chart there for your base-pay inputs and the calculator above to project the resulting pension.",
+      },
+      {
+        question: "What happens to my military retirement pay when I turn 65?",
+        answer:
+          "Your military retired pay itself doesn't change at 65. It continues on the same schedule with the same annual cost-of-living adjustment (COLA) it already receives. Health coverage does change: most retirees become eligible for Medicare Part A and Part B at 65, and once you have both parts, TRICARE For Life automatically takes over as your supplement to Medicare, with no separate enrollment needed. See the official [TRICARE For Life](https://www.tricare.mil/Plans/HealthPlans/TFL) page for the current coverage details.",
       },
     ],
     sources: [
