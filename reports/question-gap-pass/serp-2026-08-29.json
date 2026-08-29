@@ -1,0 +1,871 @@
+{
+ "pages": {
+  "/compare/trump-account-vs-brokerage-account/": {
+   "query": "trump account vs taxable brokerage",
+   "paa": [
+    "How is a Trump Account different than a brokerage account?",
+    "Is there a tax advantage to a Trump Account?",
+    "Is it worth it to have a taxable brokerage account?",
+    "Are Trump accounts better than IRAs?",
+    "Are Trump accounts worth it?",
+    "Can a Trump Account be converted to an IRA?"
+   ],
+   "related_searches": [
+    "Trump account tax advantages",
+    "Trump account vs 529",
+    "Trump account withdrawal rules",
+    "Trump account vs custodial account",
+    "Trump account vs UTMA",
+    "Trump account investment options",
+    "Are Trump account contributions tax-deductible",
+    "Are Trump accounts worth it"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "bipartisanpolicy.org",
+    "www.reddit.com",
+    "www.cato.org",
+    "www.fidelity.com",
+    "www.monotelo.com",
+    "www.congress.gov",
+    "www.schwab.com",
+    "skwealth.com",
+    "finance.yahoo.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.monotelo.com",
+    "www.reddit.com",
+    "bipartisanpolicy.org",
+    "www.schwab.com",
+    "crr.bc.edu",
+    "www.acorns.com",
+    "adamnmichel.substack.com",
+    "www.congress.gov",
+    "www.fidelity.com",
+    "skwealth.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/compare/trump-account-vs-savings-account/": {
+   "query": "trump account vs high yield savings",
+   "paa": [
+    "Are the Trump accounts worth it?",
+    "What's better than a high-yield savings account?",
+    "How much money will $10,000 make in a high-yield savings account?",
+    "Are Trump accounts FDIC insured?",
+    "Who is eligible for a Trump Account?",
+    "Can I convert my Trump Account to a Roth IRA?"
+   ],
+   "related_searches": [
+    "Trump account tax advantages",
+    "Trump account vs brokerage",
+    "Trump account vs IRA",
+    "Trump account investment options",
+    "Trump account withdrawal rules",
+    "Trump account interest rate",
+    "Trump Account calculator",
+    "Trump account $250"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.franklintempleton.com",
+    "bipartisanpolicy.org",
+    "taxfoundation.org",
+    "www.schwab.com",
+    "stories.wf.com",
+    "www.youtube.com",
+    "www.brookings.edu"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cnn.com",
+    "bipartisanpolicy.org",
+    "www.franklintempleton.com",
+    "www.investor.gov",
+    "am.jpmorgan.com",
+    "www.youtube.com",
+    "www.brookings.edu",
+    "www.fidelity.com",
+    "www.congress.gov",
+    "www.schwab.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/compare/trump-account-vs-baby-bonds/": {
+   "query": "trump accounts vs baby bonds",
+   "paa": [
+    "Is there a downside to Trump accounts?",
+    "Is there any advantage to a Trump account?",
+    "Is Trump richer or poorer since taking office?",
+    "Are Trump accounts interest bearing?",
+    "Who owns the money in a Trump account?",
+    "Has Trump benefited financially from being president?"
+   ],
+   "related_searches": [
+    "How to open a Trump account for baby",
+    "How to open Trump account",
+    "Trump account $250",
+    "Trump account for newborns",
+    "Trump account vs 529",
+    "Trump account for older kids",
+    "IRS Trump account",
+    "Who is eligible for Trump Accounts"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.brookings.edu",
+    "ctmirror.org",
+    "www.youtube.com",
+    "www.pbs.org",
+    "www.whitehouse.gov",
+    "www.fidelity.com",
+    "www.schwab.com",
+    "www.usbank.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.brookings.edu",
+    "www.irs.gov",
+    "www.forbes.com",
+    "www.youtube.com",
+    "www.schwab.com",
+    "crr.bc.edu",
+    "am.jpmorgan.com",
+    "www.newsfromthestates.com",
+    "www.congress.gov",
+    "www.fidelity.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/trump-account/": {
+   "query": "how much will a $1000 trump account be worth in 18 years",
+   "paa": [
+    "Does the Trump account grow in value?",
+    "How much will $1000 grow in 20 years?",
+    "Can I withdraw the 1000 dollars from my Trump account?",
+    "How much can $1000 grow in 18 years?",
+    "Should I enroll my child in my Trump account?",
+    "What if I invested $1000 in Coca-Cola 10 years ago?"
+   ],
+   "related_searches": [
+    "Trump account withdrawal rules",
+    "Trump Account calculator",
+    "Trump account vs 529",
+    "Trump Account growth calculator",
+    "Trump account interest rate",
+    "Can I open a Trump Account at Schwab",
+    "Trump account investment options",
+    "Trump savings account for kids under 8"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.schwab.com",
+    "www.kcra.com",
+    "finance.yahoo.com",
+    "www.wbaltv.com",
+    "trumpaccounts.guide",
+    "www.freep.com",
+    "www.facebook.com",
+    "www.pennytime.app",
+    "www.irs.gov",
+    "www.myexpattaxes.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/withdrawal-calculator/": {
+   "query": "drawdown calculator",
+   "paa": [
+    "How do you calculate drawdown?",
+    "What percentage of Americans retire with $1,000,000?",
+    "How long will $3 million last in retirement?",
+    "What is a realistic amount of money to retire with?",
+    "What is considered a good retirement nest egg?",
+    "How much do you have to make to get $3,000 a month in Social Security?"
+   ],
+   "related_searches": [
+    "Retirement drawdown calculator",
+    "Drawdown calculator fidelity",
+    "Drawdown calculator with taxes",
+    "Simple retirement Drawdown calculator",
+    "Free drawdown calculator",
+    "Best drawdown calculator",
+    "Best retirement withdrawal calculator",
+    "Savings drawdown calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.noelwhittaker.com.au",
+    "www.key.com",
+    "www.calcxml.com",
+    "www.advancedwealth.com",
+    "www.fidelity.co.uk",
+    "www.mackenzieinvestments.com",
+    "guidedinvestor.com.au",
+    "www.umcu.org",
+    "www.cnbankpa.com",
+    "www.bankrate.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/guides/trump-account-worth-it/": {
+   "query": "are the trump accounts a good idea",
+   "paa": [
+    "What's the catch with Trump accounts?",
+    "Are Trump accounts safe to use?",
+    "How does the $1000 Trump account work?",
+    "Who is funding the Trump account?",
+    "Has Donald Trump ever given any money to charity?",
+    "Did Trump actually graduate from college?"
+   ],
+   "related_searches": [
+    "Trump account tax advantages",
+    "Trump account pros and cons",
+    "Trump account vs 529",
+    "Is Trump account worth it reddit",
+    "Trump account withdrawal rules",
+    "Who can contribute to a Trump account",
+    "Trump account vs Roth IRA",
+    "Trump account vs IRA"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cato.org",
+    "www.reddit.com",
+    "www.schwab.com",
+    "www.fidelity.com",
+    "bipartisanpolicy.org",
+    "adamnmichel.substack.com",
+    "searcyfinancial.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "crr.bc.edu"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/retirement/military-retirement-calculator/": {
+   "query": "military retirement calculator",
+   "paa": [
+    "How much is E7 retirement pay with 20 years?",
+    "How much is a 20 year pension worth in the military?",
+    "How much does a retired military make a month?",
+    "What is the military retirement pay chart for 2026?",
+    "What happens to my military retirement pay when I turn 65?",
+    "How do I calculate my military retirement pay?"
+   ],
+   "related_searches": [
+    "Military retirement calculator monthly",
+    "Military retirement pay Chart",
+    "20 year military retirement calculator",
+    "Best military retirement calculator monthly",
+    "Military High-3 retirement calculator",
+    "Military retirement calculator army",
+    "Military retirement Calculator app",
+    "Simple military retirement calculator",
+    "30 year military retirement calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "militarypay.defense.gov",
+    "www.dfas.mil",
+    "myarmybenefits.us.army.mil",
+    "mybaseguide.com",
+    "www.militarytransitiontoolkit.com",
+    "www.youtube.com",
+    "myairforcebenefits.us.af.mil"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "militarypay.defense.gov",
+    "veteran.com",
+    "militarypay.defense.gov",
+    "militarypay.defense.gov",
+    "myairforcebenefits.us.af.mil",
+    "www.militaryonesource.mil",
+    "militaryretirementcalc.com",
+    "usaaef.org",
+    "myarmybenefits.us.army.mil",
+    "www.dfas.mil"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-ira-accounts/": {
+   "query": "best bank for ira",
+   "paa": [
+    "What bank has the best IRA rates?",
+    "What is the best bank to open an IRA account?",
+    "Is it better to open an IRA at a bank?",
+    "How much will $10,000 in a Roth IRA be worth in 20 years?",
+    "Is $200 a month enough for Roth IRA?",
+    "How long will $750,000 last in retirement at 62?"
+   ],
+   "related_searches": [
+    "Best bank for ira reddit",
+    "Best bank for ira fidelity",
+    "Best IRA accounts for beginners",
+    "Should I open an IRA with my bank",
+    "Best IRA accounts for rollover",
+    "Best bank for ira roth ira",
+    "Best IRA accounts 2026",
+    "Best IRA accounts to rollover 401k"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.schwab.com",
+    "www.nerdwallet.com",
+    "www.ally.com",
+    "www.cnbc.com",
+    "money.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.schwab.com",
+    "www.nerdwallet.com",
+    "www.ally.com",
+    "www.bankofamerica.com",
+    "www.wellsfargo.com",
+    "www.cnbc.com",
+    "www.regions.com",
+    "www.wellsfargoadvisors.com",
+    "www.investopedia.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/investing/high-yield-savings-calculator/": {
+   "query": "high yield savings calculator",
+   "paa": [
+    "How much will $10,000 make in a high-yield savings?",
+    "How much will $100,000 make in a high-yield savings account?",
+    "How much is $100 at 10% interest at the end of each year forever worth today?",
+    "How much will $20,000 make in a Hysa?",
+    "What is the downside of a high-yield savings account?",
+    "How much money do I need to make $1000 a month in interest?"
+   ],
+   "related_searches": [
+    "Saving account interest calculator monthly",
+    "High-yield savings account monthly calculator",
+    "Best high yield savings",
+    "High-yield savings calculator Amex",
+    "High-yield savings account calculator compounded monthly",
+    "High-yield savings calculator Capital One",
+    "How much will $50,000 make in a high-yield savings account",
+    "Discover high-yield savings calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.sofi.com",
+    "bell.bank",
+    "www.marcus.com",
+    "www.firstcitycu.org",
+    "www.cit.com",
+    "www.nerdwallet.com",
+    "www.ally.com",
+    "finred.usalearning.gov",
+    "www.usnews.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/net-worth/liquid-net-worth-calculator/": {
+   "query": "liquid net worth calculator",
+   "paa": [
+    "How do you calculate your liquid net worth?",
+    "Is a 401k considered part of liquid net worth?",
+    "How many Americans have $1,000,000 in liquid assets?",
+    "Is 2 million liquid net worth rich?",
+    "What percent of Americans have $2 million?",
+    "What net worth is considered upper class at retirement?"
+   ],
+   "related_searches": [
+    "Liquid net worth calculator with steps",
+    "Liquid net worth examples",
+    "Liquid net worth vs net worth",
+    "Liquid net worth percentile",
+    "Does liquid net worth include 401k",
+    "Liquid net worth by age",
+    "Average liquid net worth",
+    "What is total net worth"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.americanexpress.com",
+    "www.omnicalculator.com",
+    "ajelix.com",
+    "www.sofi.com",
+    "www.wsj.com",
+    "blog.kikoff.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.omnicalculator.com",
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "www.ramseysolutions.com",
+    "www.wsj.com",
+    "investor.sebi.gov.in",
+    "ajelix.com",
+    "wealthtender.com",
+    "www.fivestarcu.com",
+    "files.crisesnotes.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/custodial-roth-ira-vs-utma/": {
+   "query": "custodial roth ira vs utma",
+   "paa": [
+    "Is a UTMA or Roth IRA better for a child?",
+    "What is the disadvantage of a custodial Roth IRA?",
+    "What are the disadvantages of an UTMA account?",
+    "Do parents pay taxes on UTMA?",
+    "How to avoid kiddie tax in UTMA?",
+    "Can I give my daughter $50,000 tax-free?"
+   ],
+   "related_searches": [
+    "Custodial roth ira vs utma reddit",
+    "Custodial roth ira vs utma fidelity",
+    "Custodial roth ira vs utma taxes",
+    "UGMA vs UTMA",
+    "Custodial Roth IRA rules",
+    "Roth IRA for child with no income",
+    "UGMA vs 529",
+    "UTMA vs Roth IRA",
+    "UTMA vs custodial account"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "meetfabric.com",
+    "www.protective.com",
+    "www.fidelity.com",
+    "www.northwesternmutual.com",
+    "slpwealth.com",
+    "www.acorns.com",
+    "www.empower.com",
+    "www.youtube.com",
+    "mai.capital"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "meetfabric.com",
+    "www.protective.com",
+    "www.fidelity.com",
+    "www.youtube.com",
+    "www.howeandrusling.com",
+    "www.instagram.com",
+    "www.finder.com",
+    "www.justanswer.com",
+    "investor.vanguard.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/roundup/best-estate-planning-software/": {
+   "query": "best estate planning software",
+   "paa": [
+    "Which child should be executor?",
+    "What does Dave Ramsey say about estate planning?",
+    "How much does Quicken WillMaker and trust cost?",
+    "What is the 5 by 5 rule in estate planning?",
+    "What are five assets that should never be included in a living trust?",
+    "Is it better to put your estate in a trust or a will?"
+   ],
+   "related_searches": [
+    "Best estate planning software reddit",
+    "Best estate planning software free",
+    "Best estate planning software for attorneys",
+    "Best estate planning software for individuals",
+    "Quicken WillMaker & Trust",
+    "Lipman estate planning software",
+    "Estate planning software for financial advisors",
+    "Best will and trust software"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.cnbc.com",
+    "www.ncoa.org",
+    "www.e-stateplanner.com",
+    "www.wealthcounsel.com",
+    "www.youtube.com",
+    "store.nolo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.ncoa.org",
+    "www.lawyerswithpurpose.com",
+    "www.wealthcounsel.com",
+    "www.aaepa.com",
+    "store.nolo.com",
+    "www.amazon.com",
+    "www.clio.com",
+    "www.willmaker.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/custodial-roth-ira-vs-brokerage-account/": {
+   "query": "best custodial roth ira",
+   "paa": [
+    "Is a custodial Roth IRA a good idea?",
+    "How much will $10,000 in a Roth IRA be worth in 20 years?",
+    "Which Roth IRA is best for kids?",
+    "Can I open a Roth IRA for my 5 year old child?",
+    "Can I gift $7000 to my grandchild for him to open Roth IRA?",
+    "What is the disadvantage of a Roth IRA for kids?"
+   ],
+   "related_searches": [
+    "Best custodial roth ira reddit",
+    "Fidelity custodial Roth IRA",
+    "Fidelity custodial account",
+    "Roth IRA for child with no income",
+    "Vanguard custodial Roth IRA",
+    "Best custodial roth ira fidelity",
+    "Fidelity custodial IRA",
+    "Best custodial Roth IRA for kids"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.businessinsider.com",
+    "www.schwab.com",
+    "www.kidvestors.co",
+    "finance.yahoo.com",
+    "www.stockbrokers.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.investopedia.com",
+    "www.nerdwallet.com",
+    "www.fidelity.com",
+    "verdence.com",
+    "www.reddit.com",
+    "www.businessinsider.com",
+    "www.kidvestors.co",
+    "finance.yahoo.com",
+    "www.schwab.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/portfolio/60-40-portfolio-calculator/": {
+   "query": "60/40 portfolio calculator",
+   "paa": [
+    "What should a 60/40 portfolio return?",
+    "Is the 60/40 portfolio outdated?",
+    "What was Warren Buffett's 90/10 rule?",
+    "Is a 60/40 portfolio good for retirement?",
+    "How many Americans have $1,000,000 in retirement accounts?",
+    "What is Warren Buffett's recommended retirement portfolio?"
+   ],
+   "related_searches": [
+    "60 40 portfolio calculator vanguard",
+    "Best 60 40 portfolio calculator",
+    "60 40 portfolio calculator 2021",
+    "60 40 portfolio calculator 2022",
+    "60 40 portfolio calculator mutual fund",
+    "Portfolio allocation calculator",
+    "$10,000 invested in S&P 500 calculator",
+    "Asset allocation calculator by age"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.wealthmeta.com",
+    "smartasset.com",
+    "www.nerdwallet.com",
+    "www.calculator.net",
+    "quantstart.com",
+    "www.ramseysolutions.com",
+    "www.portfoliovisualizer.com",
+    "curvo.eu",
+    "www.americancentury.com",
+    "www.paulmerriman.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/trump-account-vs-529/": {
+   "query": "trump account for kids vs 529",
+   "paa": [
+    "Is a 529 plan better than a Trump Account?",
+    "What are the advantages of a Trump Account compared to a 529 plan?",
+    "Why are people boycotting 529 plans?",
+    "Can my kid have a 529 and a Trump Account?",
+    "What's the catch with Trump accounts?",
+    "How much money should a 5 year old have in 529?"
+   ],
+   "related_searches": [
+    "Trump account vs 529 vs UTMA",
+    "Trump account vs 529 which is better",
+    "Trump account vs 529 vs Roth IRA",
+    "Trump account vs 529 pros and cons",
+    "Trump account for kids vs Roth IRA",
+    "Trump Account vs 529 vs custodial",
+    "Trump account vs 529 reddit",
+    "Trump account vs IRA",
+    "Can you have both 529 and Trump account"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "am.jpmorgan.com",
+    "www.reddit.com",
+    "www.fidelity.com",
+    "www.collegewell.com",
+    "theeducationplan.com",
+    "www.ifa.com",
+    "www.facebook.com",
+    "www.thebump.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "am.jpmorgan.com",
+    "www.reddit.com",
+    "www.cpabr.com",
+    "theeducationplan.com",
+    "www.fidelity.com",
+    "www.youtube.com",
+    "stories.wf.com",
+    "www.collegewell.com",
+    "www.ifa.com",
+    "www.myfloridaprepaid.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/estate-planning/": {
+   "query": "estate planning calculator",
+   "paa": [
+    "What is the 5 by 5 rule in estate planning?",
+    "How much can you inherit from your parents without paying taxes?",
+    "What is the three year rule in estate planning?",
+    "What is considered high net worth for estate planning?",
+    "What are the six worst assets to inherit?",
+    "What percentage of Americans have $1,000,000 net worth?"
+   ],
+   "related_searches": [
+    "Free estate planning calculator",
+    "Estate planning calculator 2022",
+    "Estate planning calculator california",
+    "Estate tax calculator 2026",
+    "Federal estate tax calculator",
+    "Estate planning calculator texas",
+    "State estate tax calculator",
+    "Nys estate tax calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.corebridgefinancial.com",
+    "illinoisattorneygeneral.gov",
+    "www.jhadvancedmarkets.com",
+    "www.merrilledge.com",
+    "www.pacificlife.com",
+    "jptlawchambers.com",
+    "www.irs.gov",
+    "www.aarp.org",
+    "www.corebridgefinancial.com",
+    "www.revenue.state.mn.us"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/retirement/couples-retirement-calculator/": {
+   "query": "retirement projection with spouse",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "unread",
+   "error": "SERP read failed: task 40101 Internal SE Server Error."
+  },
+  "/roundup/best-money-market-accounts/": {
+   "query": "apy money market",
+   "paa": [
+    "How much will $10,000 make in a money market account?",
+    "Which bank gives 7% interest on savings accounts?",
+    "How much will $50,000 make in a money market account?",
+    "Where can I get 7% interest on my money?",
+    "What is 5% APY on $1000 monthly?",
+    "Which 5 banks have the highest rate of interest?"
+   ],
+   "related_searches": [
+    "Apy money market interest rate",
+    "Apy money market withdrawal limit",
+    "Apy money market withdrawal",
+    "Bank of America money market rates",
+    "Highest money market rates",
+    "Money market account minimum balance",
+    "Credit Union Money Market rates",
+    "Money market account typical interest rate"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.nerdwallet.com",
+    "www.citizensbank.com",
+    "www.everbank.com",
+    "www.cnbc.com",
+    "finance.yahoo.com",
+    "www.investopedia.com",
+    "www.youtube.com",
+    "www.salliemae.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.macu.com",
+    "www.bankrate.com",
+    "www.citizensbank.com",
+    "www.bankfivenine.com",
+    "www.navyfederal.org",
+    "www.salliemae.com",
+    "www.everbank.com",
+    "www.usbank.com",
+    "www.key.com",
+    "www.nerdwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-index-funds/": {
+   "query": "10 best index funds",
+   "paa": [
+    "What are currently the best index funds to invest in?",
+    "What is the best index fund to invest in right now?",
+    "What is Warren Buffett's favorite index fund?",
+    "What are the big 3 index funds?",
+    "What are the 5 best index funds?",
+    "Is a $300,000 investment better in Vanguard or in Fidelity?"
+   ],
+   "related_searches": [
+    "10 best index funds reddit",
+    "10 best index funds to invest in",
+    "Best performing index funds last 10 years",
+    "10 best index funds for roth ira",
+    "Best index funds for dividends",
+    "Morningstar best Index funds",
+    "Top index funds 2026",
+    "Best index funds to buy and hold"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.morningstar.com",
+    "www.sofi.com",
+    "www.nerdwallet.com",
+    "qz.com",
+    "money.usnews.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.morningstar.com",
+    "www.nerdwallet.com",
+    "www.sofi.com",
+    "qz.com",
+    "finance.yahoo.com",
+    "www.forbes.com",
+    "www.youtube.com",
+    "www.marketwatch.com",
+    "money.usnews.com",
+    "www.reddit.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-401k-providers-for-small-business/": {
+   "query": "401 k for small business",
+   "paa": [
+    "Is a 401k worth it for a small business?",
+    "How much does it cost for a small business to offer a 401k?",
+    "Can a small business set up a 401(k)?",
+    "Which 401(k) plan is best for small businesses?",
+    "How does a small business offer a 401k?",
+    "How much do I need in a 401k to get $1000 a month?"
+   ],
+   "related_searches": [
+    "401k for small business less than 10 employees",
+    "Cheapest 401k for small business",
+    "Vanguard small business 401k",
+    "401k for small business 5 employees",
+    "Small Business retirement plans comparison chart",
+    "Best 401k plans for small business",
+    "Best retirement plans for small business owners without employees",
+    "Safe harbor 401k for small business"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.adp.com",
+    "www.schwab.com",
+    "www.fidelityworkplace.com",
+    "www.reddit.com",
+    "www.employeefiduciary.com",
+    "www.ascensus.com",
+    "www.myubiquity.com",
+    "www.paychex.com",
+    "www.troweprice.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.dol.gov",
+    "www.schwab.com",
+    "www.employeefiduciary.com",
+    "www.adp.com",
+    "www.fidelityworkplace.com",
+    "www.irs.gov",
+    "www.ascensus.com",
+    "www.paychex.com",
+    "www.merrilledge.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 20 calls, $0.08085 of $2.00 budget"
+}
