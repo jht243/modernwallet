@@ -1,0 +1,1929 @@
+{
+  "/compare/trump-account-vs-brokerage-account/": {
+    "title": "Trump Account vs Brokerage Account: Which Is Better for Your Kid?",
+    "clicks": 15,
+    "impressions": 618,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "How is a Trump Account different than a brokerage account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Whole page is built around this exact question (intro + comparison table + 4 sections)."
+      },
+      {
+        "question": "Is there a tax advantage to a Trump Account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 1 explicitly contrasts tax-deferred Trump Account growth vs. yearly-taxed brokerage dividends/gains."
+      },
+      {
+        "question": "Is it worth it to have a taxable brokerage account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Section 4 'A simple decision rule' directly answers when a brokerage is the better fit."
+      },
+      {
+        "question": "Are Trump accounts better than IRAs?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/compare/trump-account-vs-roth-ira/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This page never mentions IRAs/Roth IRAs at all. A dedicated comparison page already exists and answers this directly — add a contextual link."
+      },
+      {
+        "question": "Are Trump accounts worth it?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Page argues Trump Account wins vs. brokerage but never gives the standalone 'worth it overall' verdict; the dedicated guide does. High real demand (also a related-search match)."
+      },
+      {
+        "question": "Can a Trump Account be converted to an IRA?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed here. /guides/trump-account-worth-it/ has a direct FAQ: 'Can a Trump Account be converted to a Roth IRA?'"
+      },
+      {
+        "question": "Are Trump account contributions tax-deductible",
+        "source": "related",
+        "coverage": "missing",
+        "answered_elsewhere": "/trump-account/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not stated on this page. /trump-account/ FAQ ('Is Trump Account growth taxed?') and the worth-it guide both state contributions are after-tax and non-deductible."
+      },
+      {
+        "question": "Are there any fees to open or maintain a Trump Account compared to a brokerage account?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Fee question isn't addressed on this comparison page. /guides/trump-account-worth-it/ FAQ covers Trump Account fees directly; brokerage fees vary by provider so can't be stated generically."
+      },
+      {
+        "question": "Does a brokerage account charge trading commissions?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Provider-specific and changes constantly; not central to the Trump-Account-vs-brokerage decision this page is built around."
+      },
+      {
+        "question": "How long does it take to open a taxable brokerage account for a child?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Process/logistics question, not a decision-gating one for this comparison; not covered site-wide."
+      },
+      {
+        "question": "Which account is better for saving toward my child's college?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": "/compare/trump-account-vs-529/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Section 3 name-drops the 529 comparison in passing but doesn't answer the college question directly; the dedicated page does. Strengthen the existing mention into a clearer pointer."
+      },
+      {
+        "question": "What if my child isn't seed-eligible for the Trump Account — does the brokerage win by default?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 4 states this outright: 'If you might need the money sooner... or your child isn't seed-eligible, a taxable brokerage is the better fit.'"
+      },
+      {
+        "question": "How do I actually open a taxable brokerage account for my kid — custodial or parent-owned?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Page mentions both options exist (section 2) but not a how-to; out of scope for a comparison page."
+      },
+      {
+        "question": "Is a Trump Account protected by SIPC insurance the same way a brokerage account is?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This page's FAQ covers SIPC for the brokerage side only. /guides/trump-account-worth-it/ FAQ ('Is a Trump Account safe...') states the brokerage holding the shares is typically SIPC-protected but that doesn't cover market losses — a real trust/safety gap worth linking."
+      },
+      {
+        "question": "What happens to a Trump Account if my child dies before turning 18?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Rare edge case; not covered anywhere on the site and not central to the comparison."
+      },
+      {
+        "question": "Does a custodial brokerage account for my child get hit by the kiddie tax each year?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/compare/trump-account-vs-custodial-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Real, recurring tax cost of the 'brokerage/custodial' side that this page never mentions. IRS kiddie-tax treatment is covered in detail at /compare/trump-account-vs-custodial-account/ (cites IRS Topic 553)."
+      },
+      {
+        "question": "Is there an income limit on who can open or contribute to a Trump Account?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not stated on this page. Confirmed elsewhere: 'no income limit on who can open an account or qualify for the seed.'"
+      },
+      {
+        "question": "Is TrumpAccounts.gov legit, or is it a scam?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/trump-account/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed on this comparison page; /trump-account/ has a direct FAQ on this plus a scams guide."
+      },
+      {
+        "question": "Can I open both a Trump Account and a brokerage account?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Already an FAQ on this exact page."
+      },
+      {
+        "question": "If the market drops right before my child turns 18, can I leave the Trump Account invested longer instead of withdrawing?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Genuine site-wide gap. This page already discusses the -19%-in-2022-style market-risk of the Trump Account's forced S&P 500 allocation (FAQ: 'Can I lose money in a Trump Account?') and the 18-year lock date, making it the natural place to add one sentence: the account isn't required to be withdrawn immediately at 18, so a parent worried about a crash right at the deadline isn't forced to sell at a loss. No dollar figures need inventing — this is a mechanics/sequence-risk clarification, not found on any Trump Account page site-wide. Verify against IRS/Treasury guidance on Trump Account distribution timing before writing."
+      },
+      {
+        "question": "Is my child's money in a brokerage account protected if the brokerage firm itself goes out of business?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Already an FAQ on this exact page (SIPC coverage explained)."
+      }
+    ]
+  },
+  "/compare/trump-account-vs-savings-account/": {
+    "title": "Trump Account vs Savings Account: Which Is Better for Kids?",
+    "clicks": 9,
+    "impressions": 228,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "Are the Trump accounts worth it?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Page argues Trump Account wins for long-term goals but never gives the full pros/cons 'worth it' verdict that the dedicated guide gives."
+      },
+      {
+        "question": "What's better than a high-yield savings account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The whole page argues the Trump Account beats a HYSA for long-term growth, and states clearly when the HYSA wins instead (short-term/emergency money)."
+      },
+      {
+        "question": "How much money will $10,000 make in a high-yield savings account?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/investing/high-yield-savings-calculator/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This page's HYSA numbers are generic (~4%) with no $10,000 worked example. The dedicated calculator has an exact worked example: $10,000 + $300/mo at 4.5% APY over 10 years = $61,029."
+      },
+      {
+        "question": "Are Trump accounts FDIC insured?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ on this page: 'Is money in a Trump account FDIC-insured like a savings account? No.'"
+      },
+      {
+        "question": "Who is eligible for a Trump Account?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-eligibility/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Only the comparison table mentions birth-year eligibility for the $1,000 seed in passing; the dedicated eligibility guide covers the full two-layer rule (who can open vs. who gets the seed)."
+      },
+      {
+        "question": "Can I convert my Trump Account to a Roth IRA?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed here; covered as a direct FAQ on the worth-it guide."
+      },
+      {
+        "question": "Are there any fees for a kids savings account or HYSA?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Provider-specific and not verifiable from the page's own data without risking a fabricated fee figure."
+      },
+      {
+        "question": "Is there a minimum balance required for a kids HYSA?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Provider-specific; no verified figure to cite."
+      },
+      {
+        "question": "Should I split money between a Trump Account and a savings account?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ on this page: 'Should I use both a Trump account and a savings account? Yes...'"
+      },
+      {
+        "question": "Which is better for a short-term goal like a car or trip?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Section 'When a savings account still wins' covers exactly this scenario."
+      },
+      {
+        "question": "How do I open a savings account for my child?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Process/how-to question outside this comparison page's scope; no dedicated guide found site-wide."
+      },
+      {
+        "question": "Can I lose money in a Trump Account the way I could in the stock market generally?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": "/compare/trump-account-vs-brokerage-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This page only says growth 'comes with market risk' generically. The vs-brokerage comparison gives the concrete magnitude (index dropped ~19% in 2022) — worth linking so the risk isn't abstract."
+      },
+      {
+        "question": "Is savings account interest taxable every year?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Comparison table and section 3 state this directly."
+      },
+      {
+        "question": "Does the Trump Account require any annual tax filing while the money is just growing?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Genuine site-wide gap (tax-deferred growth implies nothing to report yearly, but this isn't stated explicitly anywhere), but secondary to this page's core savings-vs-invested framing."
+      },
+      {
+        "question": "Can a teenager who already has a savings account still get a Trump Account?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-eligibility/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This page's teenager FAQ addresses account fit but not whether they can still open a Trump Account without the seed; the eligibility guide states almost any child under 18 can have one opened."
+      },
+      {
+        "question": "Is a Trump Account safer than keeping money in a savings account?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 1 ('The core trade-off: growth vs. safety') frames this explicitly, with savings accounts as the safer, FDIC-insured option."
+      },
+      {
+        "question": "Which grows more over time, a Trump Account or a HYSA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ on this exact page with the $3,513/$89,657 figures."
+      },
+      {
+        "question": "If I only have a few years before my child turns 18, should I move money from a Trump Account into a savings account to protect it?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/compare/trump-account-vs-brokerage-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Not addressed on this page. The vs-brokerage comparison states the account 'can only hold an S&P 500 or U.S.-equity index fund' — meaning it legally CANNOT be de-risked into cash/bonds as 18 approaches, a fact worried parents landing on this savings comparison would want to know."
+      },
+      {
+        "question": "Does my income affect whether I can open a Trump Account or a savings account for my child?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not stated on this page. Elsewhere confirmed: 'no income limit on who can open an account.'"
+      },
+      {
+        "question": "Does opening a Trump Account cost anything, unlike a free savings account?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed here; the worth-it guide's fee FAQ answers this directly."
+      },
+      {
+        "question": "Is a Trump Account FDIC-insured or SIPC-protected instead?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Covered by the same FDIC FAQ already on this page."
+      },
+      {
+        "question": "Who owns a kids savings account, me or my child?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page."
+      }
+    ]
+  },
+  "/compare/trump-account-vs-baby-bonds/": {
+    "title": "Trump Account vs Baby Bonds: What's the Difference?",
+    "clicks": 5,
+    "impressions": 61,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "Is there a downside to Trump accounts?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This page only briefly mentions market risk in passing (linked to the vs-brokerage page). The dedicated worth-it guide has a full 'honest cons and limits' section covering taxation, lock-up, and the modest cap."
+      },
+      {
+        "question": "Is there any advantage to a Trump account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 2 and the verdict lay out the seed, tax deferral, and near-universal eligibility as clear advantages."
+      },
+      {
+        "question": "Is Trump richer or poorer since taking office?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic PAA bleed-through about Donald Trump personally, unrelated to the financial product; out of scope for this page."
+      },
+      {
+        "question": "Are Trump accounts interest bearing?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-savings-account/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This page describes the account as invested in an index fund but never explicitly says it is NOT interest-bearing. The trump-savings-account guide states this directly: 'pays no fixed interest rate.'"
+      },
+      {
+        "question": "Who owns the money in a Trump account?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/trump-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Not addressed on this page. /trump-account/ FAQ states clearly: 'the money legally belongs to the child, not the parent.'"
+      },
+      {
+        "question": "Has Trump benefited financially from being president?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic political PAA bleed-through, unrelated to the account product; out of scope."
+      },
+      {
+        "question": "How to open a Trump account for baby",
+        "source": "related",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/how-to-open-a-trump-account/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This comparison page doesn't cover opening steps at all; /guides/how-to-open-a-trump-account/ and /guides/trump-account-for-newborns/ cover it directly."
+      },
+      {
+        "question": "Who is eligible for Trump Accounts",
+        "source": "related",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 2 states the eligibility rule in full: U.S.-citizen child born 2025–2028 with an SSN."
+      },
+      {
+        "question": "Does it cost anything to open a Trump Account or apply for a state baby bond?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed on this page; Trump Account fee info lives in the worth-it guide. Baby bonds are government-funded so there's no cost to the family by design (already implied by 'families are not expected to contribute')."
+      },
+      {
+        "question": "Which is better, a Trump Account or a baby bond, for a low-income family?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 4 explicitly covers this: both can apply, and a lower-income family in a state like Connecticut could get both."
+      },
+      {
+        "question": "How do I apply for a state baby bond program like Connecticut's?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Page appropriately hedges and directs readers to their own state treasurer's office rather than fabricating a universal process, since rules vary by state — this is the responsible answer, not a gap."
+      },
+      {
+        "question": "What happens to Trump Account money if the child dies before 18?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Rare edge case, not found anywhere on the site, and secondary to this page's baby-bonds framing."
+      },
+      {
+        "question": "Can Congress cancel or defund the Trump Account program after it's already started?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Genuine site-wide gap. This is the natural page to raise it, since the page's entire argument rests on 'enacted law' (Trump Account) vs. 'still a proposal' (baby bonds) — a skeptical reader's obvious next question is whether enacted law can later be repealed. No fabrication needed: state plainly that, like any federal law, it could be amended or repealed by a future Congress, but funds already deposited into an existing account belong to the child regardless. Cross-references the same gap flagged on /guides/trump-account-worth-it/ — implement once, link from the other page."
+      },
+      {
+        "question": "Do baby bond funds count as taxable income when the child withdraws them?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — state baby-bond tax treatment varies too much by program to state a general rule without risking a wrong or fabricated claim."
+      },
+      {
+        "question": "If I live in a state without a baby bond program, is there anything similar I can do myself?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The page's own verdict effectively answers this: open a Trump Account, since it's near-universal and doesn't depend on your state."
+      },
+      {
+        "question": "Is the Trump Account real, or is this fake news / a hoax?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Section 1 and 2 establish this is enacted federal law (2025 One Big Beautiful Bill, IRC Section 530A) with IRS sourcing."
+      },
+      {
+        "question": "Are baby bonds a Democrat or Republican policy idea?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Political-framing question; page already names the bill's sponsors (Booker, Pressley) neutrally without editorializing — appropriate scope boundary."
+      },
+      {
+        "question": "Can my child have both a Trump Account and a baby bond?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Already a direct FAQ on this page."
+      },
+      {
+        "question": "Which states besides Connecticut and California have a baby bonds program?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Already a direct FAQ on this page, appropriately hedged (varies by state, check locally)."
+      },
+      {
+        "question": "Does receiving a state baby bond affect SNAP or Medicaid eligibility?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Already a direct, appropriately-hedged FAQ on this page."
+      }
+    ]
+  },
+  "/trump-account/": {
+    "title": "Trump Account Calculator",
+    "clicks": 3,
+    "impressions": 432,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "Does the Trump account grow in value?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks fully explains index-fund growth mechanics with example figures."
+      },
+      {
+        "question": "How much will $1000 grow in 20 years?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/investing/compound-interest-calculator/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This calculator only projects to age 18 (the account's lock date), not a generic 20-year horizon. A generic compounding question like this is better served by the site's compound-interest calculator."
+      },
+      {
+        "question": "Can I withdraw the 1000 dollars from my Trump account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks states withdrawals are 'generally blocked until January 1 of the year the child turns 18.'"
+      },
+      {
+        "question": "How much can $1000 grow in 18 years?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Exact figure given: ~$3,513 at a 7% return."
+      },
+      {
+        "question": "Should I enroll my child in my Trump account?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This calculator page projects numbers but doesn't give an enrollment verdict; the dedicated worth-it guide does."
+      },
+      {
+        "question": "What if I invested $1000 in Coca-Cola 10 years ago?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic PAA bleed-through, unrelated to the Trump Account product."
+      },
+      {
+        "question": "Can I open a Trump Account at Schwab",
+        "source": "related",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/how-to-open-a-trump-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Not mentioned on this calculator page at all. The how-to guide names Schwab, Fidelity, Vanguard, and Bank of America as approved trustees alongside initial trustee Robinhood."
+      },
+      {
+        "question": "Are there any fees built into this Trump Account calculator's projection?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/trump-account-worth-it/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed here; the worth-it guide's fee FAQ states there's no government fee to open, though a trustee's own account fees can apply."
+      },
+      {
+        "question": "How often does the calculator compound — monthly or yearly?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks states contributions are added 'in monthly steps' and compounded monthly."
+      },
+      {
+        "question": "Is the 7% return assumption realistic for a Trump Account?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Page uses 7% consistently but never sources or justifies the assumption (e.g., as a long-run S&P 500 average); a soft methodology footnote, not a decision-gating gap."
+      },
+      {
+        "question": "Can I change the default assumptions in the calculator, like the return rate or contribution amount?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Interactive calculator explicitly supports changing 'the return you choose' and contribution amounts."
+      },
+      {
+        "question": "What if the actual return is lower than 7%, like 4% or 5%?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "The interactive calculator itself already lets a visitor test any return rate; no written example needed beyond the tool."
+      },
+      {
+        "question": "Can the Trump Account balance actually go down, not just grow slower?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/compare/trump-account-vs-brokerage-account/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "This calculator page's howItWorks focuses entirely on growth and never mentions downside/market risk. The vs-brokerage comparison states the index dropped ~19% in 2022 as a concrete example — an important honesty gap for a page whose whole job is projecting future value."
+      },
+      {
+        "question": "Do I need to update my contributions every year as the cap changes with inflation?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/trump-savings-account/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This page states the $5,000 cap but not that it's 'indexed to inflation after 2027' — that detail lives in the trump-savings-account guide."
+      },
+      {
+        "question": "Does the calculator work for a child who isn't eligible for the $1,000 seed?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ: 'Set the seed to $0 in the calculator if your child isn't eligible.'"
+      },
+      {
+        "question": "Can I use this calculator for more than one child?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Minor usability question; tool is clearly single-child by design and re-running it per child is self-evident."
+      },
+      {
+        "question": "Where do these growth numbers come from — is this an official government calculator?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Reasonable trust question but likely handled by a site-wide disclaimer rather than needing a dedicated FAQ; not a specific factual gap."
+      },
+      {
+        "question": "Is TrumpAccounts.gov legit, or is it a scam?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Already a direct FAQ on this exact page."
+      },
+      {
+        "question": "How does the Trump Account calculator compare to just using a regular investment calculator?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks explicitly cross-references the investment calculator as using 'the same compounding math.'"
+      },
+      {
+        "question": "Does this calculator reflect the actual official Trump Account rules, including the $5,000 cap enforcement?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks explicitly states the calculator 'enforces the $5,000 yearly contribution cap... trimming anything you enter above the limits and showing a warning.'"
+      }
+    ]
+  },
+  "/investing/withdrawal-calculator/": {
+    "title": "Investment Withdrawal Calculator",
+    "clicks": 2,
+    "impressions": 200,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": false,
+    "questions": [
+      {
+        "question": "How do you calculate drawdown?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks and the 'is this the same as a drawdown calculator' FAQ explain the mechanics directly."
+      },
+      {
+        "question": "What percentage of Americans retire with $1,000,000?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — no verified figure for this specific statistic found in the site's own data; avoided fabricating a percentage."
+      },
+      {
+        "question": "How long will $3 million last in retirement?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "The page's only worked example uses a $1,000,000 balance. A visitor with $2M or $3M gets no direct worked answer despite this being a top PAA question. This is answerable purely by re-running the page's own existing 4%-rule/withdrawal-rate math at additional balances ($1.5M, $2M, $3M) — no new facts or figures need to be invented, just extending the existing methodology into a small reference table."
+      },
+      {
+        "question": "What is a realistic amount of money to retire with?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/am-i-ready-to-retire/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This page frames the 4% rule as a sustainability test but doesn't address a 'realistic nest egg' benchmark; the site's retirement-readiness guide is the better home for that broader question."
+      },
+      {
+        "question": "What is considered a good retirement nest egg?",
+        "source": "paa",
+        "coverage": "partial",
+        "answered_elsewhere": "/guides/am-i-ready-to-retire/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Same underlying gap as the question above — better served by linking to the retirement-readiness guide than duplicating benchmark content on a withdrawal-mechanics page."
+      },
+      {
+        "question": "How much do you have to make to get $3,000 a month in Social Security?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic for a portfolio withdrawal/drawdown calculator — this is a Social Security earnings question, not a withdrawal-rate question."
+      },
+      {
+        "question": "Does this calculator factor in taxes on my withdrawals?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already states results are gross, pre-tax, and to build in a buffer."
+      },
+      {
+        "question": "Does this calculator account for investment management fees?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already instructs entering a net-of-fees return."
+      },
+      {
+        "question": "Is this calculator better than a free drawdown calculator from Fidelity or Vanguard?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Comparative superiority claim against named competitors isn't something to assert without fabricating a basis for comparison."
+      },
+      {
+        "question": "What's the best retirement withdrawal calculator?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Self-promotional framing, not a real content gap for this page."
+      },
+      {
+        "question": "How do I use this calculator if I have multiple accounts (401k, IRA, taxable)?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "The 'which account to withdraw from first' FAQ addresses sequencing but not multi-account aggregation for a single balance input — a minor usability nuance, not decision-gating."
+      },
+      {
+        "question": "What if the stock market crashes in my first year of retirement?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "commonMistakes explicitly covers sequence-of-returns risk with a link to the retirement savings calculator."
+      },
+      {
+        "question": "What happens if I withdraw too much and run out of money?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already answers this."
+      },
+      {
+        "question": "Should I adjust my withdrawal amount every year for inflation?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "commonMistakes covers this at length, distinguishing the flat-nominal calculator behavior from the inflation-adjusted 4% rule."
+      },
+      {
+        "question": "Do I need to recalculate this every year as my balance changes?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Minor usability question, self-evident for an interactive tool."
+      },
+      {
+        "question": "Can I use this calculator for a 401k, IRA, or just a regular brokerage account?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Implied clearly enough via the RMD and account-order FAQs that it works for tax-advantaged and taxable accounts alike."
+      },
+      {
+        "question": "Is the 4% rule outdated or too conservative in 2026?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ ('Is the 4% rule still valid?') addresses researcher views on adjusting the rate."
+      },
+      {
+        "question": "What withdrawal rate should I use if I have a pension in addition to my portfolio?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Only Social Security is addressed explicitly; the same logic (reduce withdrawal need by other income) generalizes to a pension closely enough that a dedicated FAQ isn't essential."
+      },
+      {
+        "question": "Should I use a fixed dollar amount or a percentage of my portfolio each year?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Covered via the 4% rule discussion and the inflation-adjustment common mistake."
+      },
+      {
+        "question": "Does this withdrawal calculator work if I haven't retired yet and I'm just planning ahead?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Tool is clearly usable for forward planning; self-evident from its framing."
+      }
+    ]
+  },
+  "/guides/trump-account-worth-it/": {
+    "title": "Are Trump Accounts Worth It? Should You Open One for Your Child?",
+    "clicks": 2,
+    "impressions": 125,
+    "serp_verdict": "winnable",
+    "forum_dominated": true,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "What's the catch with Trump accounts?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ and full 'honest cons and limits' section."
+      },
+      {
+        "question": "Are Trump accounts safe to use?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ: 'Is a Trump Account safe, or can you lose money?'"
+      },
+      {
+        "question": "How does the $1000 Trump account work?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "'Are Trump Accounts a scam?' section plus calculator numbers explain the mechanics fully."
+      },
+      {
+        "question": "Who is funding the Trump account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "'Genuine pros' section states the government seeds $1,000 and families/employers can add more."
+      },
+      {
+        "question": "Has Donald Trump ever given any money to charity?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic PAA bleed-through about Donald Trump personally, unrelated to the account; out of scope."
+      },
+      {
+        "question": "Did Trump actually graduate from college?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic political PAA bleed-through; out of scope for a financial-product page."
+      },
+      {
+        "question": "Who can contribute to a Trump account",
+        "source": "related",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "'Genuine pros' section: 'Anyone can chip in. Parents, grandparents, and even an employer can add contributions.'"
+      },
+      {
+        "question": "Why is it called a 'Trump' account — is this just political branding, and does that affect whether it's a legitimate program?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "This page is explicitly written as a forum-competing, no-hype, honest voice ('An Honest Look'), yet never addresses the skepticism driving a lot of the real search demand around this topic — the AI Overview and top-10 results for related Trump Account queries are dominated by Reddit and policy-institute commentary (Cato, Bipartisan Policy Center), and forum_dominated is true for this exact page. A short, neutral paragraph — the name comes from the enacting law (2025 One Big Beautiful Bill / IRC 530A), and the program's legitimacy doesn't depend on its name — closes a real trust gap without fabricating anything. Write in the page's existing first-person, balanced voice, not a vendor-explainer tone."
+      },
+      {
+        "question": "What if Congress changes or repeals the Trump Account law later?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Same durability/trust question flagged on /compare/trump-account-vs-baby-bonds/ — arguably belongs here even more, since this page's whole premise is a balanced 'is it worth it' verdict. State plainly that federal law can be amended by a future Congress like any other law, but money already in an account belongs to the child regardless. No fabrication needed. Implement once between this page and the baby-bonds comparison, then link the other to it."
+      },
+      {
+        "question": "Do I need to do anything each year to keep the Trump Account compliant, like filing taxes?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Cross-cutting gap (tax-deferred growth implies nothing to report yearly) but secondary to this page's core worth-it framing."
+      },
+      {
+        "question": "Is a Trump Account worth it if I already max out a 529 for my kid?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "The 'who should open one' section explicitly says to compare a 529 first if college is the goal, and the Trump Account still makes sense as a no-strings supplement."
+      },
+      {
+        "question": "Is a Trump Account worth it for a family with multiple kids?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Multi-child logistics aren't discussed anywhere on the site; niche and not decision-gating (each child simply gets their own account and seed)."
+      },
+      {
+        "question": "What do real parents on Reddit say about whether Trump Accounts are worth it?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — cannot fabricate testimonial or forum quotes. The forum-dominance signal here is better addressed through an experience-led tone rewrite of existing sections (a Phase 4/editorial concern) than a new sourced FAQ fact."
+      },
+      {
+        "question": "Is a Trump Account worth it compared to just investing directly for my kid myself outside any special account?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'how it stacks up' section already links directly to the brokerage-account comparison for exactly this framing."
+      },
+      {
+        "question": "Is it really free to get the $1,000, no strings attached?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Multiple FAQs and the 'genuine pros' section confirm the seed costs nothing to claim."
+      },
+      {
+        "question": "How long before I see meaningful growth in a Trump Account?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Implicitly covered via the age-18 growth trajectory numbers already on the page; a dedicated FAQ would be low incremental value."
+      },
+      {
+        "question": "Should I open a Trump Account for my child?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page."
+      },
+      {
+        "question": "Are Trump Accounts a scam?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page and the whole first section."
+      },
+      {
+        "question": "What are the disadvantages of a Trump Account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page, matching the 'honest cons' section."
+      },
+      {
+        "question": "Is it still worth opening a Trump Account if my child was born before 2025?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page."
+      }
+    ]
+  },
+  "/retirement/military-retirement-calculator/": {
+    "title": "Military Retirement Calculator: Project TSP Growth and Pension",
+    "clicks": 2,
+    "impressions": 3,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "How much is E7 retirement pay with 20 years?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — a rank-specific dollar figure requires the current DFAS pay table, which isn't in the site's own data; avoided fabricating a pay figure. The page's formula (High-3 average × multiplier) already lets a reader compute this themselves with their own pay data."
+      },
+      {
+        "question": "How much is a 20 year pension worth in the military?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks gives both formulas (2.5%×YOS legacy, 2.0%×YOS BRS) and the workedExample shows concrete dollar results for a $72,000 High-3 average under both systems."
+      },
+      {
+        "question": "How much does a retired military make a month?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "workedExample shows a full combined-income scenario (pension + TSP-derived income) in monthly terms."
+      },
+      {
+        "question": "What is the military retirement pay chart for 2026?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Real, repeated demand (also appears in related_searches as 'Military retirement pay Chart' twice). The page shouldn't fabricate a pay chart with invented dollar figures, but it can add a short paragraph directing readers to the official 2026 pay chart at militarypay.defense.gov (already cited elsewhere as a source) alongside a reminder of the page's own formula — this satisfies the demand without inventing numbers."
+      },
+      {
+        "question": "What happens to my military retirement pay when I turn 65?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Genuine gap: none of the page's 14 existing FAQs address age-65 interactions (Medicare eligibility, TRICARE For Life, or simply confirming COLA-adjusted pay continues unchanged). This is a real, commonly-asked, non-obvious question distinct from everything already covered. Verify against DFAS/TRICARE official guidance before writing — do not assume specifics."
+      },
+      {
+        "question": "How do I calculate my military retirement pay?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks gives the exact formulas for both legacy High-3 and BRS."
+      },
+      {
+        "question": "Does military retirement pay increase with cost of living each year?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "commonMistakes #4 covers COLA adjustments directly."
+      },
+      {
+        "question": "Could I have opted into BRS if I joined before 2018?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "The one-time BRS opt-in window closed December 31, 2018 and is now historical, not actionable for a 2026 calculator user."
+      },
+      {
+        "question": "What happens to my TSP if I get medically retired instead of completing 20 years?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks explicitly links to the military-retirement-vs-medical-retirement comparison for Chapter 61 retirement."
+      },
+      {
+        "question": "Do I need to update my TSP contribution elections separately from my retirement calculator inputs?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Minor tool-usage question, not a real content gap."
+      },
+      {
+        "question": "Is TSP the same as a 401k?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Intro states TSP 'works like a 401(k)' and howItWorks links directly to the dedicated TSP vs 401(k) comparison."
+      },
+      {
+        "question": "How much should I contribute to my TSP to get the full match?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "commonMistakes #2 gives the exact BRS match structure (1% auto + dollar-for-dollar on 3% + 50¢ on next 2%)."
+      },
+      {
+        "question": "Do reservists get the same TSP match as active duty?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Niche nuance within an already very thorough National Guard/Reserve FAQ; diminishing returns on an already-deep page."
+      },
+      {
+        "question": "Is military retirement pay enough to live on alone, without other income?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The workedExample's whole structure (BRS total income vs. legacy-only) implicitly demonstrates why TSP supplementation matters."
+      },
+      {
+        "question": "Does BAH count toward my TSP contributions calculation?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Strongly implied by the existing FAQ that BAH/BAS are excluded from High-3 base-pay calculations; same principle applies to TSP contribution base."
+      },
+      {
+        "question": "Are there fees on TSP investments?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — TSP is well known for very low fees, but no verified current expense-ratio figure is in the site's own data; avoided fabricating a specific number."
+      },
+      {
+        "question": "How long do I have to serve to get any military retirement at all under BRS if I don't hit 20 years?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ: 'What happens to my TSP if I separate before 20 years under BRS?' covers this exactly."
+      },
+      {
+        "question": "Can my military pension be garnished or reduced for debts other than divorce?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Niche edge case beyond the divorce/USFSPA scenario already covered in depth."
+      },
+      {
+        "question": "Is military retirement pay taxable?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page, including state-by-state nuance and a link to the VA disability comparison."
+      },
+      {
+        "question": "How does military retirement work for National Guard and Reserve members?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct, detailed FAQ already on this page (points system, 'good years,' age-60 floor, Reduced Age Retirement)."
+      }
+    ]
+  },
+  "/roundup/best-ira-accounts/": {
+    "title": "Best IRA Accounts of 2026",
+    "clicks": 1,
+    "impressions": 1572,
+    "serp_verdict": "winnable",
+    "forum_dominated": true,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "What bank has the best IRA rates?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Real conflation the page never resolves: 'IRA rate' implies a fixed bank rate, but an IRA is a tax wrapper, not a rate product — none of the 7 profiled providers (mostly brokerages) are framed this way. Given this page's very high impressions (1,572) but near-invisible ranking (position ~61) against forum/vendor competitors, directly resolving this common misconception — an IRA's 'rate' depends on what you hold inside it; if you want a guaranteed bank rate inside an IRA, look for an IRA CD or IRA money market account — is a strong, non-fabricated, on-target addition."
+      },
+      {
+        "question": "What is the best bank to open an IRA account?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Same underlying gap as above — most of this page's picks (Fidelity, Schwab, Vanguard, Betterment, E*TRADE, Wealthfront) are brokerages, not banks; only Merrill Edge is bank-affiliated. Fold into the same new section clarifying bank-IRA vs. brokerage-IRA trade-offs."
+      },
+      {
+        "question": "Is it better to open an IRA at a bank?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Same theme a third time (also matches the related search 'Should I open an IRA with my bank') — strong signal this exact question needs one clear, unified answer: bank IRAs (CDs/savings) trade growth potential for FDIC safety and typically lag brokerage IRA returns over time; consolidate all three PAA hits into one new section."
+      },
+      {
+        "question": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/investing/roth-ira-calculator/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Not addressed on this roundup page; the dedicated Roth IRA calculator answers this precisely for any input, including $10,000/20 years."
+      },
+      {
+        "question": "Is $200 a month enough for Roth IRA?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/investing/roth-ira-calculator/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Same — better answered by pointing to the interactive Roth IRA calculator than adding a static example to a provider-comparison page."
+      },
+      {
+        "question": "How long will $750,000 last in retirement at 62?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/investing/withdrawal-calculator/",
+        "value": "High",
+        "action": "Link",
+        "evidence": "Off-topic for a provider-ranking page but directly answerable by the site's own withdrawal calculator."
+      },
+      {
+        "question": "Should I open an IRA with my bank",
+        "source": "related",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Duplicate framing of the PAA cluster above — reinforces that this is the single highest-value gap on the page."
+      },
+      {
+        "question": "What does it cost to open or maintain an IRA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Every provider profile and the comparison table's 'Annual Fee' column cover this directly."
+      },
+      {
+        "question": "Should I choose a robo-advisor or pick my own investments in my IRA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "The verdict section directly frames Betterment/Wealthfront (automation) against Fidelity/Schwab/Vanguard (DIY)."
+      },
+      {
+        "question": "Which IRA provider has the best customer service?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Subjective superlative claim beyond what the page can verify; avoided asserting an unranked opinion as fact."
+      },
+      {
+        "question": "How do I actually open an IRA account step by step?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Out of scope for a provider-comparison roundup; no step-by-step guide found site-wide, but not central to this page's job."
+      },
+      {
+        "question": "Can I lose money in an IRA?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Implied by the 'what can you invest in' section (stocks/ETFs carry market risk) but never stated directly; minor gap, not decision-gating given the page's audience already knows they're investing."
+      },
+      {
+        "question": "What if I pick the wrong IRA provider — can I switch later?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "The 'how to transfer an existing IRA' section covers this directly."
+      },
+      {
+        "question": "Do I have to actively manage my IRA investments every year?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Robo-advisor vs. DIY framing throughout the page addresses this."
+      },
+      {
+        "question": "Can I open an IRA if I don't have a job?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The spousal IRA FAQ implies the general earned-income requirement by describing its one exception."
+      },
+      {
+        "question": "Are online-only IRA providers like Betterment and Wealthfront trustworthy/safe?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The SIPC FAQ applies to all brokerages on the list, addressing this."
+      },
+      {
+        "question": "Which IRA provider is actually the cheapest over 10 years?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Reasonably inferable from the strengths/limitations sections (DIY $0-fee providers are cheapest) without a dedicated cumulative-cost projection."
+      },
+      {
+        "question": "Is a robo-advisor worth the 0.25% fee compared to just picking index funds myself?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Limitations sections for Betterment/Wealthfront explicitly flag the fee 'erodes returns vs. self-directed.'"
+      },
+      {
+        "question": "Is there an income limit to open a Traditional IRA (not just Roth)?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The Roth-vs-Traditional section states this directly."
+      },
+      {
+        "question": "What's the minimum amount of money I need to open an IRA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Comparison table's 'Min to Open' column covers every provider."
+      },
+      {
+        "question": "If I already have a 401k at work, do I still need an IRA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQs ('max out 401k or IRA first' and 'best retirement account overall') cover this."
+      }
+    ]
+  },
+  "/investing/high-yield-savings-calculator/": {
+    "title": "High Yield Savings Calculator",
+    "clicks": 1,
+    "impressions": 437,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": false,
+    "questions": [
+      {
+        "question": "How much will $10,000 make in a high-yield savings?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "workedExample uses exactly this: $10,000 + $300/mo at 4.5% APY over 10 years = $61,029."
+      },
+      {
+        "question": "How much will $100,000 make in a high-yield savings account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "The interactive calculator above the fold answers this instantly for any balance — that's the tool's whole purpose."
+      },
+      {
+        "question": "How much is $100 at 10% interest at the end of each year forever worth today?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Off-topic PAA bleed-through — a perpetuity/present-value finance question unrelated to a HYSA calculator's function."
+      },
+      {
+        "question": "How much will $20,000 make in a Hysa?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Same as $100k above — the interactive tool answers any balance instantly."
+      },
+      {
+        "question": "What is the downside of a high-yield savings account?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "The 'is it actually worth it' FAQ and commonMistakes list cover variable-rate risk and inflation risk directly."
+      },
+      {
+        "question": "How much money do I need to make $1000 a month in interest?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Add section",
+        "evidence": "Genuine gap and a strong PAA signal. Directly answerable from the page's own existing 4.5% APY assumption with pure arithmetic (no new rate to invent): at 4.5% APY, roughly $266,667 generates $12,000/year (~$1,000/month) in interest — framed explicitly as illustrative at that specific APY, since real rates vary. Add as a new FAQ using the page's own already-stated rate."
+      },
+      {
+        "question": "Do I have to pay a fee to open a high-yield savings account?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'how do you open a HYSA' FAQ states most online banks charge no monthly fee and require no minimum."
+      },
+      {
+        "question": "HYSA vs CD — which is better?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks links directly to the dedicated HYSA vs. CD comparison page."
+      },
+      {
+        "question": "HYSA vs money market account — which is better?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks links directly to the money market account guide for this comparison."
+      },
+      {
+        "question": "Should I put my emergency fund in a HYSA or invest it in the stock market?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "commonMistakes and the 'is it worth it' FAQ both address this trade-off directly."
+      },
+      {
+        "question": "How often is interest paid out or compounded in a HYSA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks states the calculator compounds monthly and explains that APY already reflects compounding frequency."
+      },
+      {
+        "question": "Can a high-yield savings account lose money?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Multiple FAQs confirm principal never falls (FDIC-insured, unlike an investment)."
+      },
+      {
+        "question": "Will my HYSA rate change without notice?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ: 'Do high-yield savings rates change? Yes... bank can raise or lower the APY at any time.'"
+      },
+      {
+        "question": "Is there a minimum age to open a HYSA?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The kids/teens FAQ addresses custodial/joint account requirements for minors and links to a dedicated guide."
+      },
+      {
+        "question": "Which banks currently offer the highest HYSA APY?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The page deliberately avoids naming one 'best' (since rates change constantly) and links instead to the dedicated roundup of current providers — the right call, not a gap."
+      },
+      {
+        "question": "Is a high-yield savings account better than keeping cash under my mattress?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Rhetorical/trivial framing, not a genuine content gap."
+      },
+      {
+        "question": "Are HYSA APYs the same at every online bank right now?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'which is best' FAQ explains rates vary and change often, directing readers to shop around."
+      },
+      {
+        "question": "What's the real (inflation-adjusted) return on a HYSA right now?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'is it worth it' FAQ explicitly discusses inflation risk to real purchasing power."
+      },
+      {
+        "question": "Do I need to report HYSA interest even if the bank doesn't send a 1099-INT?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ states this exact nuance already, with an IRS citation."
+      },
+      {
+        "question": "Is my money in a high-yield savings account safe?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already covers FDIC coverage limits in detail."
+      }
+    ]
+  },
+  "/net-worth/liquid-net-worth-calculator/": {
+    "title": "Liquid Net Worth Calculator",
+    "clicks": 1,
+    "impressions": 170,
+    "serp_verdict": "winnable",
+    "forum_dominated": false,
+    "ai_overview_present": true,
+    "questions": [
+      {
+        "question": "How do you calculate your liquid net worth?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "howItWorks gives the full formula and what counts/doesn't count as liquid."
+      },
+      {
+        "question": "Is a 401k considered part of liquid net worth?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ with IRS Topic 558 citation."
+      },
+      {
+        "question": "How many Americans have $1,000,000 in liquid assets?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "SKIPPED — no verified liquid-assets-specific statistic exists in the site's data (the Fed SCF percentile data the site cites elsewhere covers total net worth, not a liquid-only breakdown); using that figure here would misrepresent it."
+      },
+      {
+        "question": "Is 2 million liquid net worth rich?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'should I compare by age' FAQ already explains there's no official liquid-only percentile scale and gives a practical target (3–6 months of expenses) instead of a fabricated benchmark — the honest answer, not a gap."
+      },
+      {
+        "question": "What percent of Americans have $2 million?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": "/net-worth/net-worth-percentile-calculator/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "This is a total-net-worth question, off-topic for a liquid-net-worth-specific page. The percentile calculator (Fed SCF data: top 10% ≈ $1.46M, top 1% ≈ $11.1M) is the right place for it."
+      },
+      {
+        "question": "What net worth is considered upper class at retirement?",
+        "source": "paa",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Off-topic scope creep for a liquidity-focused calculator; not a liquid-net-worth question specifically."
+      },
+      {
+        "question": "Are there any costs to figuring out my liquid net worth?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Trivial — calculating your own net worth is free by definition."
+      },
+      {
+        "question": "Should I keep more money liquid, or invest it for growth instead?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The commonMistakes list and emergency-fund FAQ imply the 3–6 month liquid target with the remainder invested."
+      },
+      {
+        "question": "Is a high liquid net worth always better than a high total net worth?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Asset-allocation opportunity-cost question that's out of scope for a calculator whose specific job is measuring safety, not giving allocation advice."
+      },
+      {
+        "question": "How often should I recalculate my liquid net worth?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Minor usability question, not a real content gap."
+      },
+      {
+        "question": "What's the actual risk of having a negative liquid net worth if I have good credit and a stable job?",
+        "source": "generated",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "The 'risk of low/negative' FAQ covers this generally."
+      },
+      {
+        "question": "Is there a 'good' liquid net worth target for someone who is self-employed vs. a W-2 employee?",
+        "source": "generated",
+        "coverage": "partial",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Strengthen",
+        "evidence": "The existing 'how much liquid net worth should I have' FAQ gives one general target (3–6 months per CFPB) but doesn't branch by income stability — self-employed/variable-income households commonly need a larger buffer (widely-cited planning norm, e.g. 6–12 months), a real and unaddressed nuance not found anywhere on the site. Extend the existing FAQ rather than write a new fact from scratch; no specific dollar figures need inventing."
+      },
+      {
+        "question": "Does my liquid net worth change every time I pay a bill or get paid?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Low",
+        "action": "Skip — low value",
+        "evidence": "Trivial/obvious, not worth a dedicated answer."
+      },
+      {
+        "question": "Does liquid net worth include the cash value of a life insurance policy?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": "/guides/borrowing-against-life-insurance/",
+        "value": "Med",
+        "action": "Link",
+        "evidence": "Not addressed on this page (only crypto gets this same 'can I convert it quickly' treatment). The mechanics of accessing whole/universal life cash value are covered in the site's borrowing-against-life-insurance guide, close enough to link rather than duplicate."
+      },
+      {
+        "question": "Does liquid net worth include a HELOC or other available credit as a safety net?",
+        "source": "generated",
+        "coverage": "missing",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — low value",
+        "evidence": "Real conceptual nuance (unused credit isn't an owned asset) but secondary in priority to the self-employed-buffer gap already flagged above; keeping this page's Strengthen list focused."
+      },
+      {
+        "question": "Can my liquid net worth be negative?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page."
+      },
+      {
+        "question": "How is this different from regular net worth?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ with a link to the broader net-worth calculation guide."
+      },
+      {
+        "question": "Does liquid net worth include cryptocurrency?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "High",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ already on this page, including the cold-storage/staking caveat."
+      },
+      {
+        "question": "Can liquid net worth be higher than total net worth?",
+        "source": "paa",
+        "coverage": "clear",
+        "answered_elsewhere": null,
+        "value": "Med",
+        "action": "Skip — already clear",
+        "evidence": "Direct FAQ with a full worked example already on this page."
+      }
+    ]
+  }
+}

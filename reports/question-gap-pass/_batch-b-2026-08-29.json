@@ -1,0 +1,1956 @@
+{
+ "/compare/custodial-roth-ira-vs-utma/": {
+  "title": "Custodial Roth IRA vs UTMA: Which Account Is Better for Your Child?",
+  "clicks": 1,
+  "impressions": 122,
+  "serp_verdict": "winnable",
+  "forum_dominated": true,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "Is a UTMA or Roth IRA better for a child?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Verdict + dedicated FAQ 'Custodial Roth IRA vs UTMA \u2014 which is better?' answer this directly."
+   },
+   {
+    "question": "What is the disadvantage of a custodial Roth IRA?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Strengthen",
+    "evidence": "Earned-income requirement and $7,000 cap are stated but scattered across 'core trade-off' and 'when it isn't even possible' sections, never consolidated as a direct 'disadvantages' answer. Not better covered elsewhere (custodial-roth-ira-for-kids guide's FAQs also lack a dedicated cons list)."
+   },
+   {
+    "question": "What are the disadvantages of an UTMA account?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/utma-custodial-account-explained/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Kiddie tax, irrevocability, and loss of control at majority are touched here, but /guides/utma-custodial-account-explained/ has a dedicated 'The cons families underestimate' section \u2014 better answered there."
+   },
+   {
+    "question": "Do parents pay taxes on UTMA?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Comparison table notes kiddie tax generically ('taxed at parent's rate') but doesn't explain the mechanism. /guides/custodial-account-taxes-kiddie-tax/ has a dedicated 'Who pays tax on a custodial account?' section."
+   },
+   {
+    "question": "How to avoid kiddie tax in UTMA?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on this page at all. /guides/custodial-account-taxes-kiddie-tax/ has a dedicated FAQ 'How can I lower custodial account taxes?'. Real measured PAA demand; AI Overview for this cluster cites meetfabric.com and protective.com (wealth/insurance sites) for kiddie-tax strategy content."
+   },
+   {
+    "question": "Can I give my daughter $50,000 tax-free?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "The ~$19,000/yr gift-tax exclusion is stated in the comparison table, but the page doesn't address this specific dollar scenario. Tangential to page purpose; adding a precise gift-tax-filing answer risks drifting from the page's own verified figures. SKIPPED \u2014 page states the exclusion amount already; a $50k-specific worked answer isn't warranted here."
+   },
+   {
+    "question": "UGMA vs UTMA",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section 'UTMA vs UGMA vs custodial brokerage' plus a link to /compare/utma-vs-ugma/ for the deeper split."
+   },
+   {
+    "question": "Should I choose a UTMA or a 529 plan instead?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/529-vs-utma/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not compared on this page. /compare/529-vs-utma/ is a dedicated, purpose-built comparison."
+   },
+   {
+    "question": "What are the custodial Roth IRA contribution rules?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Contribution cap, earned-income rule, and over-contribution penalty are all covered directly in the FAQs."
+   },
+   {
+    "question": "Are there fees to open a custodial Roth IRA or a UTMA account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not mentioned on this page. /roundup/best-custodial-roth-ira-providers/ has a dedicated 'Fees that actually matter on a small account' section (Roth side)."
+   },
+   {
+    "question": "How long does it take to open a custodial Roth IRA or UTMA account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not a decision-gating question; standard account-opening friction, not specific to this comparison."
+   },
+   {
+    "question": "Can a grandparent open a custodial Roth IRA or UTMA for a grandchild?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not addressed here. /roundup/best-custodial-roth-ira-providers/ has a dedicated FAQ 'Can grandparents or other relatives contribute to a custodial Roth IRA?'."
+   },
+   {
+    "question": "How do I actually open a custodial Roth IRA?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/custodial-roth-ira-for-kids/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "This page only explains the decision, not the mechanics. /guides/custodial-roth-ira-for-kids/ has a dedicated 'How to open a custodial Roth IRA' section."
+   },
+   {
+    "question": "How do I actually open a UTMA account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/how-to-open-a-custodial-brokerage-account-for-kids/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not covered here. /guides/how-to-open-a-custodial-brokerage-account-for-kids/ is a dedicated step-by-step guide."
+   },
+   {
+    "question": "What happens to the account if the custodian dies before the child turns 18?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Genuine site-wide gap \u2014 checked /guides/utma-custodial-account-explained/ and /guides/custodial-roth-ira-for-kids/ headings/FAQs directly; neither covers successor-custodian or death-of-custodian scenarios. This is a real risk/failure question a parent naturally asks. Answerable from well-known public UTMA/UGMA statute structure (a named successor custodian, or court-appointed one, takes over) without inventing figures."
+   },
+   {
+    "question": "Do I need to manage or rebalance a custodial Roth IRA or UTMA over time?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not core to the comparison decision."
+   },
+   {
+    "question": "Does my child need a Social Security number for either account?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Implied via earned-income documentation language but never stated explicitly; not high-value enough to warrant a dedicated section."
+   },
+   {
+    "question": "Can a non-relative, like a family friend, open a UTMA for a child?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Edge-case eligibility question, not core to the comparison."
+   },
+   {
+    "question": "Is a custodial Roth IRA or UTMA a real, IRS-recognized account type?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 already clear",
+    "evidence": "IRS and SEC Investor.gov sources are cited directly; framing throughout treats both as standard, recognized account types."
+   },
+   {
+    "question": "Does a UTMA or custodial Roth IRA affect the parent's own tax return?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Only the child's kiddie-tax exposure is discussed; /guides/custodial-account-taxes-kiddie-tax/ explains the parent-return election (Form 8814) angle directly."
+   }
+  ]
+ },
+ "/roundup/best-estate-planning-software/": {
+  "title": "Best Estate Planning Software of 2026",
+  "clicks": 1,
+  "impressions": 99,
+  "serp_verdict": "winnable",
+  "forum_dominated": true,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "Which child should be executor?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not about software selection (this page's job); a parenting/family-dynamics question better suited to a dedicated guide, not this roundup's FAQ set."
+   },
+   {
+    "question": "What does Dave Ramsey say about estate planning?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified Ramsey quote/citation available on this page or site; attributing a specific claim to a named public figure without a verified source risks misquoting him."
+   },
+   {
+    "question": "How much does Quicken WillMaker and trust cost?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Directly answered: 'Starter $99, Plus $139 (adds RLT template), All Access $209' with full pricing table row."
+   },
+   {
+    "question": "What is the 5 by 5 rule in estate planning?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Real measured PAA demand, but it's a technical irrevocable-trust distribution provision unrelated to choosing consumer will/trust software \u2014 out of scope for this roundup; not found answered elsewhere on the site either."
+   },
+   {
+    "question": "What are five assets that should never be included in a living trust?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Genuine gap: page discusses trust FUNDING generally ('the trust only works once you retitle your accounts...') but never lists which assets to keep OUT of a trust (retirement accounts, HSAs, life-insurance-with-beneficiary, vehicles in some states). This is a common, costly DIY mistake and directly relevant to anyone about to use trust software. Answerable from well-established public guidance, no fabricated figures needed."
+   },
+   {
+    "question": "Is it better to put your estate in a trust or a will?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": "/compare/living-trust-vs-will/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page's 'What each document actually does' section explains both but doesn't do a head-to-head verdict. /compare/living-trust-vs-will/ is a dedicated comparison built for exactly this question."
+   },
+   {
+    "question": "Is there estate planning software built for attorneys, not consumers?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Different product category and audience (legal practice-management software like Clio/WealthCounsel) than this consumer-facing roundup; a different search intent, not a same-page fix."
+   },
+   {
+    "question": "Is estate planning software worth it for individuals?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The entire intro, ranking criteria, and 'when you outgrow software' section address exactly this."
+   },
+   {
+    "question": "Is there a genuinely free estate planning software option?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "FreeWill's $0 pricing and nonprofit-partnership monetization model are explained in detail, plus a dedicated 'Should I use FreeWill or Trust & Will?' FAQ."
+   },
+   {
+    "question": "How long does it take to complete an estate plan using software?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed and not high-value enough (process friction, not a real blocker) to warrant a dedicated section."
+   },
+   {
+    "question": "Trust & Will vs LegalZoom vs FreeWill \u2014 which should I pick?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table, verdict, and a dedicated 'Should I use FreeWill or Trust & Will?' FAQ cover this directly."
+   },
+   {
+    "question": "Can I switch estate planning software providers later if I change my mind?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Edge case, not decision-gating for a first-time chooser."
+   },
+   {
+    "question": "What happens if I make a mistake filling out estate planning software?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Real fear-based objection before buying DIY legal software (invalid execution, wrong beneficiary, missed witness requirement). Not covered anywhere on this page or found in a dedicated guide elsewhere on the site."
+   },
+   {
+    "question": "How often should I update my estate plan?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ answers this directly with the standard life-event triggers."
+   },
+   {
+    "question": "Is my estate too complicated for software \u2014 do I need a lawyer instead?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated 'When you outgrow estate planning software' section plus a matching FAQ give explicit net-worth and complexity thresholds."
+   },
+   {
+    "question": "Are online estate planning documents actually legally valid?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "FAQs 'Is my will still legally valid if the software company shuts down?' and 'Does estate planning software work in every state?' cover this directly."
+   },
+   {
+    "question": "Should I hire an attorney instead of using software?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Covered via the outgrow-software section and net-worth/complexity thresholds."
+   },
+   {
+    "question": "How much does an attorney cost compared to software?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Direct dollar comparisons are given throughout (e.g., '$300-$800 simple will' vs software's $0-$299)."
+   },
+   {
+    "question": "Do I need a notary or witnesses for a will made with software?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "State-specific witness/notary quirks (Louisiana, Ohio, Colorado, North Dakota) are covered, but there's no single direct 'do I need X' answer \u2014 reasonably addressed already, not high-value enough to prioritize."
+   },
+   {
+    "question": "Does estate planning software include life insurance or beneficiary planning?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not covered and not central to the software-comparison decision."
+   },
+   {
+    "question": "Which estate planning software has the best customer reviews?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Strengths/limitations are given per provider but no third-party review aggregation; low priority."
+   },
+   {
+    "question": "Can I use estate planning software if I have a blended family or a business?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Explicitly listed as a reason to skip software in the 'outgrow' section."
+   }
+  ]
+ },
+ "/compare/custodial-roth-ira-vs-brokerage-account/": {
+  "title": "Custodial Roth IRA vs Brokerage Account: Which Is Better for Your Child?",
+  "clicks": 1,
+  "impressions": 90,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "Is a custodial Roth IRA a good idea?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Verdict and a dedicated 'which is better' FAQ answer this directly."
+   },
+   {
+    "question": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": "/investing/roth-ira-calculator/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "No compounding worked example on this page. The page's own calculatorLinks point to /investing/roth-ira-calculator/, which is built for exactly this projection."
+   },
+   {
+    "question": "Which Roth IRA is best for kids?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ names Fidelity, Schwab, Vanguard, and E*TRADE, and flags that Merrill Edge does not offer one."
+   },
+   {
+    "question": "Can I open a Roth IRA for my 5 year old child?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "FAQ 'Can my child have a custodial Roth IRA without a job?' directly explains the earned-income wall, which answers this."
+   },
+   {
+    "question": "Can I gift $7,000 to my grandchild for him to open a Roth IRA?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Combination of the earned-income-wall FAQ and the 'family matching' strategy explains that a gift can fund the Roth only up to the child's own documented earned income."
+   },
+   {
+    "question": "What is the disadvantage of a Roth IRA for kids?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Strengthen",
+    "evidence": "Earned-income requirement, contribution cap, and early-withdrawal-of-earnings penalty are scattered across sections but never consolidated into a direct 'disadvantages' answer. Not better covered elsewhere (custodial-roth-ira-for-kids guide's FAQ list also lacks a dedicated cons list)."
+   },
+   {
+    "question": "Does Fidelity or Vanguard offer a custodial Roth IRA?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Broker FAQ explicitly lists Fidelity, Schwab, Vanguard, and E*TRADE."
+   },
+   {
+    "question": "Does Fidelity offer a custodial brokerage (UTMA/UGMA) account, not just a Roth?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Only Roth-specific broker recommendations are given; UTMA-specific broker guidance isn't a strong match elsewhere either, and it's a secondary detail relative to the page's core tax/eligibility comparison."
+   },
+   {
+    "question": "Are there fees for a custodial Roth IRA vs a custodial brokerage account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on this page. /roundup/best-custodial-roth-ira-providers/ has a dedicated 'Fees that actually matter on a small account' section."
+   },
+   {
+    "question": "How long does it take to open either account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Standard account-opening friction, not decision-gating for this comparison."
+   },
+   {
+    "question": "Should I choose a custodial Roth IRA or a 529 plan instead?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/custodial-roth-ira-vs-529/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page only compares Roth vs brokerage account. /compare/custodial-roth-ira-vs-529/ is a dedicated, purpose-built comparison."
+   },
+   {
+    "question": "How do I actually open a custodial brokerage account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/how-to-open-a-custodial-brokerage-account-for-kids/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not covered here. /guides/how-to-open-a-custodial-brokerage-account-for-kids/ is a dedicated step-by-step guide."
+   },
+   {
+    "question": "What happens to either account if the custodian dies before the child turns 18?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Same genuine site-wide gap identified on /compare/custodial-roth-ira-vs-utma/ \u2014 checked custodial-roth-ira-for-kids and how-to-open-a-custodial-brokerage-account-for-kids guides directly; neither addresses custodian death/succession."
+   },
+   {
+    "question": "Do I need to actively manage a custodial account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not core to the comparison."
+   },
+   {
+    "question": "Does my child need a Social Security number for either account?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Implied but not explicit; not high-value enough to prioritize."
+   },
+   {
+    "question": "Is a custodial brokerage account legit and regulated by the SEC?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "SEC Investor.gov is cited directly and the UTMA/UGMA framing is treated as a standard, recognized account type."
+   },
+   {
+    "question": "What is the best age to open a custodial Roth IRA?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ: no minimum age, only a documented-earned-income requirement."
+   },
+   {
+    "question": "How much can I contribute to a custodial brokerage account each year?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table and FAQ state no cap, with the ~$19,000/yr gift-tax exclusion noted."
+   },
+   {
+    "question": "Can a working teen have both a custodial Roth IRA and a brokerage account?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section 'The smart move for a working teen: fund both' plus matching FAQ."
+   },
+   {
+    "question": "Can a custodial Roth IRA or brokerage account lose money?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "General market-risk disclosure isn't this page's core decision driver (tax/eligibility is); no clean dedicated match elsewhere either."
+   },
+   {
+    "question": "Can a non-U.S.-citizen child have a custodial Roth IRA or brokerage account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Edge-case eligibility question."
+   },
+   {
+    "question": "Which brokers don't offer a custodial Roth IRA?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "FAQ explicitly calls out that Merrill Edge does not offer one despite offering custodial UGMA/UTMA accounts."
+   }
+  ]
+ },
+ "/portfolio/60-40-portfolio-calculator/": {
+  "title": "60/40 Portfolio Calculator",
+  "clicks": 1,
+  "impressions": 51,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "What should a 60/40 portfolio return?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ states the model's 7.60% expected return and how it's derived (10% stocks / 4% bonds weighted)."
+   },
+   {
+    "question": "Is the 60/40 portfolio outdated?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/is-60-40-portfolio-dead/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page's FAQ touches it briefly, but /guides/is-60-40-portfolio-dead/ is a dedicated deep-dive (2022 losses, the rebound, whether it's still a reasonable default) already linked once in the commonMistakes prose \u2014 worth surfacing as its own FAQ entry too."
+   },
+   {
+    "question": "What was Warren Buffett's 90/10 rule?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "The 90/10 split's return/volatility numbers are covered in a dedicated FAQ, but the page never attributes it to Buffett or explains the anecdote. Low priority; attributing a specific quote/anecdote to Buffett without re-verifying the source risks inaccuracy \u2014 better to leave unattributed than guess."
+   },
+   {
+    "question": "Is a 60/40 portfolio good for retirement?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly addresses this, including linking to the asset allocation calculator for a more conservative retirement mix."
+   },
+   {
+    "question": "How many Americans have $1,000,000 in retirement accounts?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified figure on this page or elsewhere on the site; unrelated trivia stat, risk of citing an outdated or fabricated percentage."
+   },
+   {
+    "question": "What is Warren Buffett's recommended retirement portfolio?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Same fabrication-risk concern as the 90/10 question above; not worth guessing at specific attributed advice."
+   },
+   {
+    "question": "How should asset allocation change with age?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/portfolio/asset-allocation-calculator/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on this page. /portfolio/asset-allocation-calculator/ has a dedicated 'How should asset allocation change by decade' FAQ and age-based glide-path guidance."
+   },
+   {
+    "question": "What mutual funds or ETFs make up a 60/40 portfolio?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-index-funds/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Page discusses the % split and returns but never names actual funds to buy. /roundup/best-index-funds/ covers the building-block funds (e.g., VTI/VOO for the stock sleeve, BND for the bond sleeve)."
+   },
+   {
+    "question": "What would $10,000 invested in the S&P 500 grow to?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Off-scope for a 60/40-specific calculator; better fits a single-asset growth tool, not a decision-gating question here."
+   },
+   {
+    "question": "Are there fees for running a 60/40 portfolio?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ explains that the 60/40 split itself has no fee \u2014 cost comes from the underlying fund expense ratios."
+   },
+   {
+    "question": "60/40 vs 100% stocks \u2014 which is better?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ with volatility and long-run tradeoff comparison."
+   },
+   {
+    "question": "60/40 vs 90/10 \u2014 which is better?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ with a full return/volatility/30-year dollar comparison."
+   },
+   {
+    "question": "How does 60/40 compare to a 70/30 split?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/70-30-vs-60-40-portfolio/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Only referenced once in the commonMistakes prose linking to /compare/70-30-vs-60-40-portfolio/ and /portfolio/70-30-portfolio-calculator/; no dedicated FAQ."
+   },
+   {
+    "question": "How do I actually build a 60/40 portfolio myself?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Real gap: the page is entirely analytical (return/risk/growth) but never walks through the execution step \u2014 e.g., pick one broad stock fund + one bond fund at a brokerage. No dedicated 'how to build' page found elsewhere on the site."
+   },
+   {
+    "question": "What happens to a 60/40 portfolio in a market crash?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/is-60-40-portfolio-dead/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Touched briefly via the 2022 commonMistakes example; /guides/is-60-40-portfolio-dead/ covers 'What actually happened in 2022' in full dedicated depth."
+   },
+   {
+    "question": "How often should I rebalance a 60/40 portfolio?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/portfolio-rebalancing/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Only mentioned in passing ('forgetting to rebalance') with a link to /guides/portfolio-rebalancing/, which has a dedicated 'How often should I rebalance my portfolio?' FAQ."
+   },
+   {
+    "question": "Where do the 10% stock / 4% bond return assumptions come from?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Page explicitly discloses these are 'long-run model estimates, not guarantees' and cites SEC/FINRA sources."
+   },
+   {
+    "question": "Is a 60/40 portfolio right for someone in their 30s vs near retirement?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Age-based guidance lives on /portfolio/asset-allocation-calculator/ (already captured above); not worth a second flag on this page."
+   },
+   {
+    "question": "Is a 60/40 portfolio better held in a taxable account or a retirement account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed and no dedicated elsewhere match specific to 60/40 tax location; niche relative to the page's core purpose."
+   }
+  ]
+ },
+ "/compare/trump-account-vs-529/": {
+  "title": "Trump Account vs 529 Plan",
+  "clicks": 1,
+  "impressions": 39,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "Is a 529 plan better than a Trump Account?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Verdict and a dedicated FAQ directly answer this."
+   },
+   {
+    "question": "What are the advantages of a Trump Account compared to a 529 plan?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table and verdict lay out the free $1,000 seed and post-18 flexibility as the Trump Account's advantages."
+   },
+   {
+    "question": "Why are people boycotting 529 plans?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified basis for a '529 boycott' found on this page or elsewhere on the site; this looks like a PAA misfire or refers to an unverified claim, and asserting one would risk fabricating a controversy."
+   },
+   {
+    "question": "Can my kid have a 529 and a Trump Account?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ: 'Yes, you can open both... Many families claim the free seed and also fund a 529.'"
+   },
+   {
+    "question": "What's the catch with Trump accounts?",
+    "source": "paa",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/trump-account-worth-it/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page implies the catch (tax-deferred, not tax-free; locked until 18) across sections but never states it as a direct 'catch' answer. /guides/trump-account-worth-it/ has the exact dedicated FAQ \"What's the catch with a Trump Account?\"."
+   },
+   {
+    "question": "How much money should a 5-year-old have in a 529?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified savings benchmark on this page or site; citing a specific dollar target here would be a fabricated figure."
+   },
+   {
+    "question": "Trump Account vs 529 vs UTMA \u2014 how do all three compare?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/trump-account-vs-529-vs-utma/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page only compares two of the three. /compare/trump-account-vs-529-vs-utma/ is a dedicated 3-way comparison already built for this exact query."
+   },
+   {
+    "question": "Trump Account vs 529 vs Roth IRA \u2014 how do all three compare?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/trump-account-vs-roth-ira/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "No dedicated 3-way page exists for this combination, but /compare/trump-account-vs-roth-ira/ covers the closest missing leg."
+   },
+   {
+    "question": "How much does it cost to open a 529 or a Trump Account?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Trump Account's free seed is covered; 529 plan fees are only mentioned in passing ('the underlying funds' fees vary by plan'). Not core enough to the tax/flexibility tradeoff this page is built around to prioritize."
+   },
+   {
+    "question": "How long does it take to open a Trump Account or a 529 plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/how-to-open-a-trump-account/",
+    "value": "Med",
+    "action": "Link",
+    "evidence": "Not covered here. /guides/how-to-open-a-trump-account/ has a dedicated step-by-step process."
+   },
+   {
+    "question": "Can I roll 529 money into a Trump Account or vice versa?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly states there is no rollover between the two account types."
+   },
+   {
+    "question": "Can I lose money in a Trump Account or a 529 plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/trump-account-worth-it/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Investment-risk disclosure isn't addressed on this page (only tax treatment is). /guides/trump-account-worth-it/ has a dedicated FAQ 'Is a Trump Account safe, or can you lose money?'."
+   },
+   {
+    "question": "Do Trump Accounts or 529 plans need ongoing management?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not core to this comparison's decision."
+   },
+   {
+    "question": "Is my child eligible for the $1,000 Trump Account seed if born outside 2025-2028?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table and sections state the eligibility window and citizenship requirement explicitly."
+   },
+   {
+    "question": "Is the Trump Account a real government program or a scam?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/trump-account-worth-it/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page treats the program factually without addressing skepticism directly. /guides/trump-account-worth-it/ has a dedicated section 'Are Trump Accounts a scam? No \u2014 it's a real federal program.'"
+   },
+   {
+    "question": "Which is better for a lower-income family \u2014 529 or Trump Account?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Real angle but risks an income-specific recommendation beyond what the page's verified figures support; not prioritized."
+   },
+   {
+    "question": "Does a Trump Account or 529 affect financial aid (FAFSA)?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated 'Impact on college financial aid' section covers both account types directly."
+   }
+  ]
+ },
+ "/estate-planning/": {
+  "title": "Estate Planning Calculator: What Do You Actually Need?",
+  "clicks": 1,
+  "impressions": 29,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "What is the 5 by 5 rule in estate planning?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Real PAA demand, but a technical irrevocable-trust distribution provision unrelated to this hub's job of routing net worth/family facts to a plan tier; not found answered elsewhere on the site."
+   },
+   {
+    "question": "How much can you inherit from your parents without paying taxes?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Directly answered: federal $15M exemption, plus the five inheritance-tax states (KY, MD, NE, NJ, PA) that hit beneficiaries directly."
+   },
+   {
+    "question": "What is the three year rule in estate planning?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "IRC \u00a72035 gift-lookback rule for life insurance transfers; a niche technical provision not central to this hub's plan-tier routing and not found answered elsewhere."
+   },
+   {
+    "question": "What is considered high net worth for estate planning?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The hub's entire tiering logic maps specific net-worth thresholds (federal $15M exemption, state thresholds as low as Oregon's $1M) directly to plan complexity."
+   },
+   {
+    "question": "What are the six worst assets to inherit?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Real PAA demand but about the beneficiary/inheriting side, not the planner/hub's job of choosing a plan tier; a better fit for a dedicated guide than this hub's FAQ set, and not found elsewhere on the site."
+   },
+   {
+    "question": "What percentage of Americans have $1,000,000 net worth?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified figure on this page or elsewhere; unrelated trivia stat, risk of citing an outdated or fabricated percentage."
+   },
+   {
+    "question": "Is there a dedicated estate tax calculator?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/estate-planning/estate-tax-calculator/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "The hub itself doesn't mention or link to /estate-planning/estate-tax-calculator/ in its intro or howItWorks, even though that dedicated spoke calculator exists on the site (referenced from the probate hub's copy) and is exactly what 'estate tax calculator 2026' / 'federal estate tax calculator' searchers want."
+   },
+   {
+    "question": "Does the estate planning calculator work for my specific state (CA, TX, etc.)?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The tool itself takes state as an input, and a dedicated FAQ ('Does estate planning work the same way in every state?') confirms state-specific handling."
+   },
+   {
+    "question": "How much does estate planning cost?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ gives detailed attorney and online-service cost bands by tier."
+   },
+   {
+    "question": "How long does it take to create an estate plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed; not a strong decision-gating factor relative to the hub's core plan-tier logic."
+   },
+   {
+    "question": "Do I need a will or a trust?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly answers this with the specific triggers for needing a trust."
+   },
+   {
+    "question": "Do I need a lawyer for estate planning?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Covered via the 'Can I do estate planning online?' FAQ and the tier framework's attorney-required thresholds."
+   },
+   {
+    "question": "What happens if I die without an estate plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-estate-planning-software/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on the hub itself. /roundup/best-estate-planning-software/ has the exact dedicated FAQ 'What happens if I die without any estate plan at all?'."
+   },
+   {
+    "question": "When should I update my estate plan?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ lists the standard life-event triggers."
+   },
+   {
+    "question": "Do I need estate planning if I'm young, healthy, and unmarried with no kids?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": "/guides/first-time-estate-planning/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Tier 1 implies a single person with no kids still needs a simple will, but this common objection isn't addressed head-on. /guides/first-time-estate-planning/ has a dedicated FAQ 'At what age should I do estate planning?'."
+   },
+   {
+    "question": "Is a free online estate plan legally valid?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Covered via the 'Can I do estate planning online?' FAQ and reinforced on the linked roundup page."
+   },
+   {
+    "question": "What is the difference between a simple will and a living trust?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Tier 1 vs Tier 4 descriptions plus a dedicated FAQ cover this directly."
+   },
+   {
+    "question": "How does marriage or having kids change what I need for estate planning?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Tiers 2 and 3 explicitly differentiate by marital status and children."
+   },
+   {
+    "question": "What if I own property in two different states?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Tier 4 explicitly triggers a revocable living trust for exactly this scenario, with a link to the ancillary-probate cost comparison."
+   }
+  ]
+ },
+ "/retirement/couples-retirement-calculator/": {
+  "title": "Couples Retirement Calculator: Plan Your Retirement Together",
+  "clicks": 1,
+  "impressions": 6,
+  "serp_verdict": "unread",
+  "forum_dominated": false,
+  "ai_overview_present": false,
+  "questions": [
+   {
+    "question": "Should we combine our retirement accounts as a couple, or can we have a joint IRA?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Genuine gap: the 'How should a couple enter data' FAQ tells users to combine totals FOR THE CALCULATOR, but never clarifies that IRAs/401(k)s are always individually owned and can't legally be merged into one joint account \u2014 a common misconception. Not covered elsewhere on the site."
+   },
+   {
+    "question": "What if we have different target retirement ages in mind?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "The 'What if one spouse retires before the other' FAQ addresses staggered retirement dates and the calculator mechanics reasonably well already."
+   },
+   {
+    "question": "What happens to our retirement savings if we divorce after retiring?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ on QDROs and IRA transfer-incident-to-divorce covers this directly."
+   },
+   {
+    "question": "What happens to Social Security if my spouse dies before claiming?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The commonMistakes section and survivor-benefit FAQ explicitly cover this, including the case where the higher earner dies before ever claiming."
+   },
+   {
+    "question": "How often should a couple revisit their retirement plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed; general maintenance cadence, not high-value enough to prioritize."
+   },
+   {
+    "question": "Does this calculator work for same-sex married couples?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "The 'legally married' FAQ says spousal/survivor benefits require 'a legal marriage recognized by the SSA' without excluding same-sex marriage \u2014 legally a non-issue since federal law recognizes all legal marriages equally, so explicit callout is low priority."
+   },
+   {
+    "question": "Does this calculator work for unmarried couples or domestic partners?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ explicitly states 'an unmarried partnership doesn't qualify no matter how long you've been together.'"
+   },
+   {
+    "question": "Is Social Security going to run out before we retire?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "A major trust/anxiety-driven question directly relevant to a couple's claiming-strategy decisions; not addressed on this page or found anywhere else on the site. Answerable from well-known, publicly reported SSA Trustees Report projections (fund depletion date and the percentage of benefits still payable after) \u2014 verify the current-year figures from the SSA Trustees Report before writing rather than reusing an old date/percentage."
+   },
+   {
+    "question": "How much should a couple have saved for retirement by age 50 or 60?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/how-much-to-save-for-retirement-average-earner/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on this page. /guides/how-much-to-save-for-retirement-average-earner/ has dedicated benchmark guidance (not couple-specific, but the closest existing match)."
+   },
+   {
+    "question": "Should we use one retirement calculator for both of us, or two separate ones?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ instructs entering combined totals as one household figure."
+   },
+   {
+    "question": "How do we account for one spouse having a pension and the other not?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ 'Does this calculator include pension income?' with a link to the pension calculator."
+   },
+   {
+    "question": "What if my spouse dies before we've saved enough \u2014 is life insurance a backup?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Survivor Social Security and inherited-401(k) rules are covered; life insurance as an income-replacement backup is tangential to this calculator's scope."
+   },
+   {
+    "question": "Is it better for a couple to both work part-time in retirement, or have one retire fully?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Lifestyle/niche question, not core to the calculator's purpose."
+   },
+   {
+    "question": "Can we use this calculator if only one spouse worked and earned Social Security?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The spousal-benefit-floor FAQ directly covers a non-earning or lower-earning spouse."
+   },
+   {
+    "question": "How does required minimum distribution (RMD) work for a married couple with separate IRAs?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed and no dedicated RMD guide found on the site; niche relative to this page's core projection purpose."
+   },
+   {
+    "question": "Should the lower earner or higher earner claim Social Security first?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Directly covered by the 'Should both spouses retire at the same age?' FAQ and the commonMistakes section on delayed claiming."
+   },
+   {
+    "question": "What is the break-even age for delaying Social Security?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ states the ~age-81 break-even for claiming at 70 vs. FRA."
+   },
+   {
+    "question": "Can I claim Social Security on my ex-spouse's record if we're divorced?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ covers the 10-year-marriage rule and the 50% benefit floor."
+   },
+   {
+    "question": "Can a stay-at-home or lower-earning spouse contribute to an IRA?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ on spousal IRAs answers this directly."
+   },
+   {
+    "question": "Does divorce require splitting our 401(k) or IRA?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ explains QDRO for 401(k)s vs. transfer-incident-to-divorce for IRAs."
+   },
+   {
+    "question": "Is there a fee to use this couples retirement calculator?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Trivial \u2014 sitewide free-tool convention, not a real content gap."
+   },
+   {
+    "question": "What information do we need before using this calculator?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "howItWorks explains entering combined current savings and monthly contributions."
+   }
+  ]
+ },
+ "/roundup/best-money-market-accounts/": {
+  "title": "Best Money Market Accounts of 2026",
+  "clicks": 0,
+  "impressions": 3619,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "How much will $10,000 make in a money market account?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/money-market-account/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page gives an APY range (3.5-5.0%) but no worked dollar example. /guides/money-market-account/ has the exact dedicated FAQ 'How much would $10,000 earn in a year in a money market account?'."
+   },
+   {
+    "question": "Which bank gives 7% interest on savings accounts?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no bank on this page's verified list offers a flat 7% rate; asserting a specific bank/rate claim here would be a fabricated or quickly-stale promotional-rate figure."
+   },
+   {
+    "question": "How much will $50,000 make in a money market account?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Same type of gap as the $10,000 version above but lower priority as a near-duplicate; the APY range already given lets a reader estimate."
+   },
+   {
+    "question": "Where can I get 7% interest on my money?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 same fabrication risk as the 7% question above; current top picks are in the 3.5-5.0% APY range per this page's own FAQ."
+   },
+   {
+    "question": "What is 5% APY on $1,000 monthly?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Ambiguous compounding question needing a calculator, not a canned answer; not covered and not worth fabricating a specific compounding result without a tool."
+   },
+   {
+    "question": "Which 5 banks have the highest rate of interest?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The page deliberately avoids a fixed 'top 5 by rate' ranking because APYs fluctuate, instead pointing to UFB Direct/CIT as typically highest-yielding and telling readers to verify current rates \u2014 a reasonable, already-stated position."
+   },
+   {
+    "question": "What is the minimum balance for a money market account?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table's 'Min Balance' column gives this per provider ($0 for most, $100 for CIT)."
+   },
+   {
+    "question": "Do credit unions offer good money market account rates?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Genuine gap: this roundup ranks only banks (UFB, Sallie Mae, Discover, Ally, CIT, Vanguard, TIAA) \u2014 no credit union option (e.g., Navy Federal, Alliant) appears anywhere, despite credit unions being a common competitive alternative for this exact query. No dedicated credit-union-MMA content found elsewhere on the site."
+   },
+   {
+    "question": "What is a typical money market account interest rate?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ gives the 2026 range (3.5-5.0%) with context on how it moves with Fed policy."
+   },
+   {
+    "question": "Are there fees for these money market accounts?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table, a dedicated FAQ, and a full 'lowest fees' section cover this directly."
+   },
+   {
+    "question": "Money market account vs high-yield savings account \u2014 which should I choose?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section plus a link to /compare/hysa-vs-money-market/ cover this directly."
+   },
+   {
+    "question": "Money market account vs CD \u2014 which pays more?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/cd-vs-money-market/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not compared on this page. /compare/cd-vs-money-market/ is a dedicated, purpose-built comparison."
+   },
+   {
+    "question": "How do I open one of these money market accounts?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Standard online sign-up process; not a real content gap for a comparison-format roundup."
+   },
+   {
+    "question": "Can I lose money in a money market account?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly distinguishes FDIC-insured bank accounts from uninsured money market funds."
+   },
+   {
+    "question": "What happens to my money market account if the bank fails?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "FDIC insurance up to $250,000 is covered in a dedicated 'Is a money market account safe?' section and FAQ."
+   },
+   {
+    "question": "How often does the APY on a money market account change?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section explains the link to Federal Reserve policy and how quickly rates move."
+   },
+   {
+    "question": "Is there a minimum deposit to open a money market account?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table shows $0 minimums for most providers."
+   },
+   {
+    "question": "Are online-only banks like UFB Direct or Sallie Mae safe to use?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "FDIC coverage is explained generally, which effectively answers the underlying safety concern already; a distinct 'online bank legitimacy' framing isn't a high enough priority to add."
+   },
+   {
+    "question": "Should I keep my emergency fund in a money market account or invest it instead?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly recommends money market/HYSA for emergency funds over investing them."
+   },
+   {
+    "question": "Does a money market account compound interest?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ on how APY accounts for daily compounding."
+   },
+   {
+    "question": "What's the difference between a money market account and a money market fund?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ, and Vanguard's VMFXX fund is included in the comparison table specifically to illustrate the distinction."
+   },
+   {
+    "question": "How long does it take to withdraw money from a money market account?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Withdrawal COUNT limits (Reg D) are covered; literal transfer speed/timing isn't, but this is a minor detail relative to the page's core purpose."
+   }
+  ]
+ },
+ "/roundup/best-index-funds/": {
+  "title": "Best Index Funds of 2026",
+  "clicks": 0,
+  "impressions": 2326,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "What are currently the best index funds to invest in?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The entire page/ranking directly answers this."
+   },
+   {
+    "question": "What is the best index fund to invest in right now?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Duplicate of the above; the ranking and verdict answer it."
+   },
+   {
+    "question": "What is Warren Buffett's favorite index fund?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "It's well known Buffett has publicly recommended a low-cost S&P 500 index fund (e.g., in Berkshire shareholder letters), but attributing a specific current fund/ticker to him risks inaccuracy without re-verifying the exact source quote \u2014 skip rather than guess at the specific attribution."
+   },
+   {
+    "question": "What are the big 3 index funds?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "This PAA likely refers to the 'Big Three' asset managers (Vanguard/BlackRock/State Street) \u2014 a market-structure/concentration topic, not this page's per-fund ranking; different intent, not a same-page fix."
+   },
+   {
+    "question": "What are the 5 best index funds?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The page's 8-fund ranking subsumes any 'top 5' framing."
+   },
+   {
+    "question": "Is a $300,000 investment better in Vanguard or Fidelity?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/vanguard-vs-fidelity/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page ranks funds, not brokerage platforms. /compare/vanguard-vs-fidelity/ is a dedicated, purpose-built comparison."
+   },
+   {
+    "question": "What are the best-performing index funds over the last 10 years?",
+    "source": "related",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "The page gives long-run historical averages (~10%/yr for S&P 500 funds) but not a specific trailing-10-year performance table; a frequently-stale specific figure is better avoided than added without a live data source."
+   },
+   {
+    "question": "What are the best index funds for a Roth IRA?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated 'Are index funds good for retirement?' FAQ ties the picks directly to tax-advantaged accounts."
+   },
+   {
+    "question": "What are the best index funds for dividend income?",
+    "source": "related",
+    "coverage": "missing",
+    "answered_elsewhere": "/roundup/best-dividend-etfs-for-retirement/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page only briefly notes that most funds pay dividends; it doesn't rank by yield. /roundup/best-dividend-etfs-for-retirement/ is a dedicated, purpose-built roundup for this exact angle."
+   },
+   {
+    "question": "What are the best index funds to buy and hold long-term?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The verdict's entire framing is buy-and-hold ('choosing one and staying invested consistently')."
+   },
+   {
+    "question": "How much does it cost to buy an index fund?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Expense ratio is the page's primary ranking criterion, documented per-fund in detail."
+   },
+   {
+    "question": "Index fund vs ETF \u2014 which should I buy?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/compare/index-fund-vs-etf/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "This page mixes ETFs and mutual funds without contrasting the vehicle types directly. /compare/index-fund-vs-etf/ is a dedicated, purpose-built comparison."
+   },
+   {
+    "question": "Index fund vs actively managed fund \u2014 which is better?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ and section cite the SPIVA scorecard directly."
+   },
+   {
+    "question": "How do I actually buy one of these index funds?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Implied via brokerage-specific notes per fund; not a strong gap for a ranking-format roundup."
+   },
+   {
+    "question": "Can you lose money in an index fund?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ addresses market-decline risk directly."
+   },
+   {
+    "question": "Do I need to rebalance if I only hold index funds?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": "/guides/portfolio-rebalancing/",
+    "value": "High",
+    "action": "Link",
+    "evidence": "Not addressed on this page. /guides/portfolio-rebalancing/ is a dedicated guide with a direct 'How often should I rebalance' FAQ."
+   },
+   {
+    "question": "Is there a minimum investment to buy these index funds?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table's 'Min Investment' column covers this per fund."
+   },
+   {
+    "question": "Are index funds protected if the fund company goes bankrupt?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Real investor-protection/trust question not addressed on this page. The closest sitewide match, /roundup/best-ira-accounts/'s 'What happens to my IRA if the brokerage closes?' FAQ, covers brokerage/SIPC failure, not fund-company failure specifically \u2014 an imperfect match, so this is better treated as a genuine gap on this page."
+   },
+   {
+    "question": "How many index funds should I own?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ directly answers this."
+   },
+   {
+    "question": "Are index funds taxed differently than individual stocks?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ on index fund taxation."
+   },
+   {
+    "question": "S&P 500 fund or total market fund \u2014 which is better?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section gives a full side-by-side breakdown and a clear verdict."
+   }
+  ]
+ },
+ "/roundup/best-401k-providers-for-small-business/": {
+  "title": "Best 401(k) Providers for Small Business in 2026",
+  "clicks": 0,
+  "impressions": 1534,
+  "serp_verdict": "winnable",
+  "forum_dominated": false,
+  "ai_overview_present": true,
+  "questions": [
+   {
+    "question": "Is a 401k worth it for a small business?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Covered via the tax-advantage section and overall framing."
+   },
+   {
+    "question": "How much does it cost for a small business to offer a 401k?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ plus the comparison table's fee columns."
+   },
+   {
+    "question": "Can a small business set up a 401(k)?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ on the minimum employee count (a business of one qualifies)."
+   },
+   {
+    "question": "Which 401(k) plan is best for small businesses?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Verdict and the full ranking answer this directly."
+   },
+   {
+    "question": "How does a small business offer a 401k?",
+    "source": "paa",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The 'How to choose a 401(k) provider' section walks through payroll sync, fiduciary coverage, setup effort, and SECURE 2.0 timing."
+   },
+   {
+    "question": "How much do I need in a 401k to get $1,000 a month?",
+    "source": "paa",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 low value",
+    "evidence": "Off-topic for this page's audience (a business owner selecting a PROVIDER, not personal withdrawal math); would need a calculator-based, individual answer rather than a canned figure."
+   },
+   {
+    "question": "What's the best 401(k) option for a business with fewer than 10 employees?",
+    "source": "related",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Reasonably inferable already: Fidelity/Vanguard Solo 401(k) for zero-employee businesses, Guideline/Human Interest for small teams \u2014 not consolidated into one explicit answer but not a high-value gap."
+   },
+   {
+    "question": "What is the cheapest 401(k) for a small business?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Fidelity Solo 401(k)'s $0 fees are explicit, and the comparison table gives cost columns for all seven providers."
+   },
+   {
+    "question": "Does Vanguard offer a small business 401(k)?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated provider entry covers this."
+   },
+   {
+    "question": "Is there a comparison chart of small business retirement plans?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Comparison table plus the 'alternatives to a 401(k)' FAQ (SIMPLE IRA, SEP IRA, Solo 401(k)) cover this."
+   },
+   {
+    "question": "What's the best retirement plan for a small business owner with no employees?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Fidelity and Vanguard Solo 401(k) sections plus the verdict explicitly target this case."
+   },
+   {
+    "question": "What is a Safe Harbor 401(k) for a small business?",
+    "source": "related",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated section explains this directly."
+   },
+   {
+    "question": "What is the SECURE 2.0 tax credit for starting a small business 401(k)?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Mentioned twice: in the 'how to choose' section and in the setup-cost FAQ, both citing up to $5,000/year for three years."
+   },
+   {
+    "question": "401(k) vs SIMPLE IRA for a small business \u2014 which is better?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated FAQ links directly to /compare/simple-ira-vs-401k/."
+   },
+   {
+    "question": "How long does it take to set up a small business 401(k)?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The 'how to choose' section gives a concrete timeline (a few weeks digital onboarding, start a quarter ahead)."
+   },
+   {
+    "question": "What happens if a small business 401(k) plan fails nondiscrimination testing?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Skip \u2014 already clear",
+    "evidence": "Dedicated Safe Harbor section explains the refund consequence of failing NDT."
+   },
+   {
+    "question": "What are the penalties for a small business that misses the Form 5500 filing deadline?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "SKIPPED \u2014 no verified current per-day DOL penalty figure on this page or elsewhere on the site; citing a specific penalty amount risks being wrong or outdated."
+   },
+   {
+    "question": "Do I have to do anything ongoing once the 401(k) plan is set up?",
+    "source": "generated",
+    "coverage": "partial",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Compliance automation is discussed as a provider FEATURE (implying ongoing NDT/Form 5500 needs), but not framed as a direct 'what do I have to do every year' answer \u2014 not high-value enough to prioritize."
+   },
+   {
+    "question": "Do part-time or seasonal employees have to be included in a 401(k) plan?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "High",
+    "action": "Add section",
+    "evidence": "Genuine, high-value compliance gap: SECURE 2.0's long-term part-time employee eligibility rule is a real, common small-business question not addressed anywhere on this page or found elsewhere on the site. Verify the current exact hours/years eligibility threshold from IRS/DOL guidance before writing rather than reusing a possibly-outdated figure."
+   },
+   {
+    "question": "Are these small business 401(k) providers legitimate?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Low",
+    "action": "Skip \u2014 already clear",
+    "evidence": "All are well-established, widely known companies (Fidelity, Vanguard, ADP, Paychex, etc.); no explicit trust FAQ is needed."
+   },
+   {
+    "question": "Can I switch 401(k) providers later if I'm not happy?",
+    "source": "generated",
+    "coverage": "missing",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 low value",
+    "evidence": "Not addressed; a real but secondary question relative to initial provider selection."
+   },
+   {
+    "question": "Do employees pay any of the 401(k) provider fees themselves?",
+    "source": "generated",
+    "coverage": "clear",
+    "answered_elsewhere": null,
+    "value": "Med",
+    "action": "Skip \u2014 already clear",
+    "evidence": "The 'what fees to watch for' section explains that fund expense ratios are paid by employees, distinct from employer-side fees."
+   }
+  ]
+ }
+}
