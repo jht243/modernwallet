@@ -410,12 +410,12 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "Should we combine our retirement accounts as a couple, or can we have a joint IRA?",
         answer:
-          "No, retirement accounts stay individually owned. IRAs and 401(k)s cannot be merged into one joint account, even for a married couple filing jointly, because each account is tied to one person's Social Security number. Entering a combined total in the calculator above is only a shortcut for projecting your household's total savings; behind that number, each spouse still has a separate IRA and 401(k), and each account follows that owner's own contribution limits, beneficiary designations, and required minimum distribution rules.",
+          "No, retirement accounts stay individually owned. IRAs and 401(k)s cannot be merged into one joint account, even for a married couple filing jointly, because each account is tied to one person's Social Security number. Entering a combined total in the calculator above is only a shortcut for projecting your household's total savings. Behind that number, each spouse still has a separate IRA and 401(k), and each account follows that owner's own contribution limits, beneficiary designations, and required minimum distribution rules.",
       },
       {
         question: "Is Social Security going to run out before we retire?",
         answer:
-          "No, Social Security is not projected to run out entirely. The Social Security trust fund is projected to be able to pay full scheduled benefits only through a specific future year that the Social Security Administration updates annually, and after that point a majority of scheduled benefits, not zero, would still be payable from ongoing payroll tax revenue even if Congress makes no changes before then. For the current projected year and payable percentage, see the [SSA Trustees Report](https://www.ssa.gov/oact/TR/) directly, since those figures shift with each year's release. Coordinating your own claiming ages, as covered above, matters for your household regardless of how that debate plays out.",
+          "No, Social Security is not projected to run out entirely. The Social Security trust fund is projected to be able to pay full scheduled benefits only through a specific future year that the Social Security Administration updates annually. After that year, if Congress makes no changes, ongoing payroll tax revenue is still projected to cover most of the scheduled benefit amount. For the current projected year and payable percentage, see the [SSA Trustees Report](https://www.ssa.gov/oact/TR/) directly, since those figures shift with each year's release. Coordinating your own claiming ages, as covered above, matters for your household regardless of how that debate plays out.",
       },
     ],
     sources: [

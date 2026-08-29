@@ -521,7 +521,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Are index funds protected if the fund company goes bankrupt?",
         answer:
-          "Yes, the fund's holdings stay protected because a mutual fund or ETF's assets are legally segregated from the fund company's own assets and held by an independent custodian, not commingled with the manager's balance sheet. If a fund company like Vanguard or Fidelity were to fail, the stocks and bonds inside your index fund would not become part of that company's bankruptcy estate, because you own a share of the fund's underlying assets, not a claim against the manager itself. That is a different protection than SIPC coverage, which instead protects your account if the brokerage firm holding it fails.",
+          "Yes, the fund's holdings stay protected because a mutual fund or ETF's assets are legally segregated from the fund company's own assets. An independent custodian holds those assets, separate from the manager's own balance sheet. If a fund company like Vanguard or Fidelity were to fail, the stocks and bonds inside your index fund would not become part of that company's bankruptcy estate. You own a share of the fund's underlying assets, and that ownership is separate from any claim against the fund company itself. This protection works differently from SIPC coverage, which instead protects your account if the brokerage firm holding it fails.",
       },
     ],
     sources: [
@@ -1666,7 +1666,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Do part-time or seasonal employees have to be included in a 401(k) plan?",
         answer:
-          "Yes, in some cases. SECURE 2.0 requires 401(k) plans to let certain long-term part-time employees make their own salary-deferral contributions once they meet a service-length and hours-worked threshold, even if they never cross the plan's regular full-time eligibility rule. That threshold has changed as the law has phased in, so check the current service-length and hours requirement at [irs.gov's retirement plans guidance](https://www.irs.gov/retirement-plans) before assuming a seasonal or part-time employee is excluded. Several of the providers above build this SECURE 2.0 eligibility tracking into their automated compliance, which removes the need to track it by hand.",
+          "Yes, in some cases. SECURE 2.0 requires 401(k) plans to let certain long-term part-time employees make their own salary-deferral contributions once they meet a service-length and hours-worked threshold. That rule applies even if the employee never crosses the plan's regular full-time eligibility rule. The threshold has changed as the law has phased in, so check the current service-length and hours requirement at [irs.gov's retirement plans guidance](https://www.irs.gov/retirement-plans) before assuming a seasonal or part-time employee is excluded. Several of the providers above build this SECURE 2.0 eligibility tracking into their automated compliance, which removes the need to track it by hand.",
       },
     ],
     sources: [
@@ -2906,7 +2906,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "What are five assets that should never be included in a living trust?",
         answer:
-          "Five kinds of assets generally stay out of a revocable living trust: retirement accounts like a 401(k) or IRA, health savings accounts, life insurance policies with a named beneficiary, accounts already held jointly with rights of survivorship, and, in some states, vehicles. Each of these already has its own beneficiary or survivorship mechanism that passes it directly to the named person outside of probate, so retitling one into the trust adds paperwork without adding a benefit, and moving a retirement account or HSA into a trust can trigger an unintended taxable distribution. A living trust is still the right tool for real estate, taxable brokerage accounts, and business interests, which have no built-in beneficiary designation of their own.",
+          "Five kinds of assets generally stay out of a revocable living trust: retirement accounts like a 401(k) or IRA, health savings accounts, life insurance policies with a named beneficiary, accounts already held jointly with rights of survivorship, and, in some states, vehicles. Each of these already has its own beneficiary or survivorship mechanism that passes it directly to the named person outside of probate. Retitling one into the trust adds paperwork without adding a benefit, and moving a retirement account or HSA into a trust can trigger an unintended taxable distribution. A living trust is still the right tool for real estate, taxable brokerage accounts, and business interests, since none of those has a built-in beneficiary designation of its own.",
       },
     ],
     sources: [
