@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 55,
+      "ctr": 0,
+      "position": 94.07
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 32.81
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 65.15
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 61.43
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 9.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/payoff-calculator/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 26
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.17
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-line-of-credit/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 23
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.17
+    },
+    {
+      "page": "https://www.themodernwallet.com/coast-fire/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 12.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 15.2
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-loan-payoff/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 40.6
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 73.4
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-529/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "page": "https://www.themodernwallet.com/529-savings-calculator/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 24.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 81.75
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/401k-vs-roth-ira/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 59.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/529-vs-brokerage-account/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 47.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/bilt-rewards-vs-chase-ultimate-rewards/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 83.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/coast-fire-vs-barista-fire/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 51.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-brokerage-account/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 84.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/401k-vs-brokerage-account/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 57
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-traditional-ira/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/debt-snowball-vs-avalanche/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    }
+  ]
+}
