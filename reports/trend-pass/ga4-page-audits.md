@@ -114,3 +114,5 @@
 | /investing/dividend-calculator | 2026-08-28 | 1 | 0/0/0/0/0 | 0 |
 | /net-worth/net-worth-percentile-calculator/ | 2026-08-28 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-net-worth-tracking-tools/ | 2026-08-28 | 1 | 0/0/0/0/0 | 0 |
+| /guides/250th-anniversary-coins/ | 2026-08-29 | 1 | 0/0/1/0/0 | 0 |
+| /roundup/best-tax-relief-companies/ | 2026-08-29 | 0 | 0/0/0/0/0 | 0 |

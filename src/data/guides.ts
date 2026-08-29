@@ -1759,11 +1759,14 @@ export const GUIDES: Guide[] = [
       { question: "Are the 250th anniversary coins worth money?", answer: "Circulating 250th anniversary coins are generally worth their face value plus a small collector premium. Special proof or silver sets from the U.S. Mint cost more. Be wary of sellers claiming any 2026 coin is a rare investment worth thousands." },
       { question: "Where can I buy 2026 semiquincentennial coins?", answer: "Buy them from the official United States Mint at usmint.gov, which sells annual sets, bags, and rolls. Circulating quarters also appear in everyday change. Buying direct is the best way to avoid overpriced novelty coins." },
       { question: "Is the Trump coin part of the 250th anniversary coins?", answer: "Yes. The $1 Trump coin is a separate part of the 2026 semiquincentennial program, added by the Treasury under the same 2020 law. It is more disputed because it shows a living president. See our Trump gold coin guide for details." },
+      { question: "When are the 250th anniversary coins being released?", answer: "The Mint is releasing the coins in stages through 2026. Three of the five quarter designs, Mayflower Compact, Revolutionary War, and Declaration of Independence, are already in circulation. The other two quarters, honoring the Constitution and the Gettysburg Address, are set to enter circulation later in the year. The Mint has not formally announced exact dates for the rest of the 2026 lineup, including the redesigned dime and half dollar. Dealers who track the Mint's release calendar say the schedule can still change." },
     ],
     sources: [
       { label: "U.S. Mint — Semiquincentennial Coins", url: "https://www.usmint.gov/coins/coin-programs/semiquincentennial/" },
       { label: "U.S. Mint — Semiquincentennial Circulating Coin Program Designs Unveiled", url: "https://www.usmint.gov/news/press-releases/united-states-mint-semiquincentennial-circulating-coin-program-designs-unveiled" },
       { label: "Congress.gov — Circulating Collectible Coin Redesign Act of 2020 (H.R. 1923, Pub. L. 116-330)", url: "https://www.congress.gov/bill/116th-congress/house-bill/1923" },
+      { label: "The Philadelphia Inquirer — U.S. Mint releases new nickels, dimes, quarters, and half-dollar for 250th (2026-07-02)", url: "https://www.inquirer.com/business/us-mint-nickels-dimes-quarters-semiquincentennial-update-20260702.html" },
+      { label: "GovMint — United States Mint 2026 Coin Release Schedule", url: "https://www.govmint.com/learn/post/united-states-mint-2026-coin-release-schedule" },
     ],
   },
 
