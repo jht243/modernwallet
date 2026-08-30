@@ -1,0 +1,182 @@
+{
+ "private placement life insurance companies": {
+  "keyword": "private placement life insurance companies",
+  "volume": 10,
+  "volume_low": 10,
+  "volume_high": 10,
+  "kd": 0,
+  "cpc": "",
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 8,
+   "corroborates": true
+  }
+ },
+ "private placement life insurance disadvantages": {
+  "keyword": "private placement life insurance disadvantages",
+  "volume": 10,
+  "volume_low": 10,
+  "volume_high": 10,
+  "kd": 0,
+  "cpc": "",
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 4,
+   "corroborates": true
+  }
+ },
+ "infinite banking pros and cons": {
+  "keyword": "infinite banking pros and cons",
+  "volume": 50,
+  "volume_low": 50,
+  "volume_high": 50,
+  "kd": 13,
+  "cpc": 9.28,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 5,
+   "corroborates": true
+  }
+ },
+ "ppli alternatives": {
+  "keyword": "ppli alternatives",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 50,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "private placement life insurance alternatives": {
+  "keyword": "private placement life insurance alternatives",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 25,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "ppli cost": {
+  "keyword": "ppli cost",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 50,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 2,
+   "corroborates": true
+  }
+ },
+ "ppli tax benefits": {
+  "keyword": "ppli tax benefits",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 1500,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 4,
+   "corroborates": true
+  }
+ },
+ "ppli explained": {
+  "keyword": "ppli explained",
+  "volume": 20,
+  "volume_low": 20,
+  "volume_high": 200,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 5,
+   "corroborates": true
+  }
+ },
+ "7702 plan explained": {
+  "keyword": "7702 plan explained",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 50,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "is a 7702 plan legit": {
+  "keyword": "is a 7702 plan legit",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 25,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "tax free retirement account rules": {
+  "keyword": "tax free retirement account rules",
+  "volume": 0,
+  "volume_low": 0,
+  "volume_high": 25,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "infinite banking vs whole life": {
+  "keyword": "infinite banking vs whole life",
+  "volume": 50,
+  "volume_low": 50,
+  "volume_high": 500,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 partial prefix match + broad completion set (est. 50-500/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 8,
+   "corroborates": true
+  }
+ }
+}

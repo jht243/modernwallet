@@ -213,7 +213,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       {
         question: "What is a Roth IRA?",
         answer:
-          "A Roth IRA is a retirement account funded with after-tax dollars, so qualified withdrawals in retirement, both the money you put in and everything it earns, come out completely tax-free. You get no tax break the year you contribute. In exchange, IRS Publication 590-B exempts qualified distributions from tax entirely, unlike a 401(k) or traditional IRA, where every withdrawal is taxed as ordinary income. Run your own numbers in the calculator above to see how much that tax-free growth is worth over your own time horizon.",
+          "A Roth IRA is a retirement account funded with after-tax dollars, so qualified withdrawals in retirement, both the money you put in and everything it earns, come out completely tax-free. You get no tax break the year you contribute. In exchange, IRS Publication 590-B exempts qualified distributions from tax entirely, unlike a 401(k) or traditional IRA, where every withdrawal is taxed as ordinary income. Indexed universal life insurance is often sold as a tax-free alternative to it, and our [IUL vs Roth IRA](/compare/iul-vs-roth-ira/) comparison puts the same annual contribution through both. Run your own numbers in the calculator above to see how much that tax-free growth is worth over your own time horizon.",
       },
       {
         question: "What is the Roth IRA contribution limit for 2026?",
