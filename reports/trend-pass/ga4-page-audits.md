@@ -116,3 +116,7 @@
 | /roundup/best-net-worth-tracking-tools/ | 2026-08-28 | 1 | 0/0/0/0/0 | 0 |
 | /guides/250th-anniversary-coins/ | 2026-08-29 | 1 | 0/0/1/0/0 | 0 |
 | /roundup/best-tax-relief-companies/ | 2026-08-29 | 0 | 0/0/0/0/0 | 0 |
+| /guides/401k-beneficiary-rules/ | 2026-08-30 | 1 | 0/0/2/0/0 | 0 |
+| /guides/trump-account-rules/ | 2026-08-30 | 1 | 0/0/2/0/0 | 0 |
+| /portfolio/ | 2026-08-30 | 1 | 0/0/0/0/0 | 1 |
+| /retirement/military-retirement-calculator/ | 2026-08-30 | 0 | 0/0/1/0/0 | 0 |

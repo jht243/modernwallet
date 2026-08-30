@@ -613,6 +613,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         answer:
           "Your military retired pay itself doesn't change at 65. It continues on the same schedule with the same annual cost-of-living adjustment (COLA) it already receives. Health coverage does change: most retirees become eligible for Medicare Part A and Part B at 65, and once you have both parts, TRICARE For Life automatically takes over as your supplement to Medicare, with no separate enrollment needed. See the official [TRICARE For Life](https://www.tricare.mil/Plans/HealthPlans/TFL) page for the current coverage details.",
       },
+      {
+        question: "How is REDUX different from BRS or legacy High-3?",
+        answer:
+          "REDUX (formally the Career Status Bonus/REDUX program) was a third retirement option offered only to service members who entered before 2018. It isn't available to anyone entering under BRS. Around the 15-year mark, an eligible member could elect a one-time $30,000 Career Status Bonus in exchange for two long-term reductions versus legacy High-3: a lower pension multiplier at 20 years of service, and a reduced annual COLA (roughly CPI minus one percentage point) that only resets to match full CPI in the year the retiree turns 62, then reduces again after that. That reduced-COLA gap compounds over a long retirement, which is why REDUX retirees who took the bonus can end up meaningfully behind a legacy High-3 retiree of the same rank and years of service over time. If you're not sure which of the three systems (legacy High-3, REDUX, or BRS) applies to you, check with DFAS or your service's retirement office, since it depends on your specific entry date and whether you made a REDUX election.",
+      },
     ],
     sources: [
       {
