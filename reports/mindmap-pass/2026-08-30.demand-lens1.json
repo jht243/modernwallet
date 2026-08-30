@@ -1,0 +1,272 @@
+{
+ "private placement life insurance": {
+  "keyword": "private placement life insurance",
+  "volume": 1900,
+  "volume_low": 1900,
+  "volume_high": 1900,
+  "kd": 16,
+  "cpc": 14.73,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "ppli": {
+  "keyword": "ppli",
+  "volume": 1600,
+  "volume_low": 1600,
+  "volume_high": 1600,
+  "kd": 23,
+  "cpc": 37.81,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "tax free investing": {
+  "keyword": "tax free investing",
+  "volume": 1300,
+  "volume_low": 1300,
+  "volume_high": 1300,
+  "kd": 20,
+  "cpc": 9.51,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "cash value life insurance": {
+  "keyword": "cash value life insurance",
+  "volume": 12100,
+  "volume_low": 12100,
+  "volume_high": 12100,
+  "kd": 58,
+  "cpc": 12.07,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "infinite banking": {
+  "keyword": "infinite banking",
+  "volume": 3600,
+  "volume_low": 3600,
+  "volume_high": 3600,
+  "kd": 35,
+  "cpc": 9.2,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "indexed universal life insurance": {
+  "keyword": "indexed universal life insurance",
+  "volume": 6600,
+  "volume_low": 6600,
+  "volume_high": 6600,
+  "kd": 37,
+  "cpc": 11.94,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "7702 plan": {
+  "keyword": "7702 plan",
+  "volume": 480,
+  "volume_low": 480,
+  "volume_high": 480,
+  "kd": 13,
+  "cpc": 7.75,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "backdoor roth ira": {
+  "keyword": "backdoor roth ira",
+  "volume": 27100,
+  "volume_low": 27100,
+  "volume_high": 27100,
+  "kd": 46,
+  "cpc": 3.05,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "mega backdoor roth": {
+  "keyword": "mega backdoor roth",
+  "volume": 22200,
+  "volume_low": 22200,
+  "volume_high": 22200,
+  "kd": 19,
+  "cpc": 2.57,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "life insurance retirement plan": {
+  "keyword": "life insurance retirement plan",
+  "volume": 880,
+  "volume_low": 880,
+  "volume_high": 880,
+  "kd": 33,
+  "cpc": 19.64,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "overfunded life insurance": {
+  "keyword": "overfunded life insurance",
+  "volume": 110,
+  "volume_low": 110,
+  "volume_high": 110,
+  "kd": 12,
+  "cpc": 9.38,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "is life insurance a good investment": {
+  "keyword": "is life insurance a good investment",
+  "volume": 320,
+  "volume_low": 320,
+  "volume_high": 320,
+  "kd": 34,
+  "cpc": 4.57,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "tax free retirement account": {
+  "keyword": "tax free retirement account",
+  "volume": 2400,
+  "volume_low": 2400,
+  "volume_high": 2400,
+  "kd": 22,
+  "cpc": 6.26,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "how to invest tax free": {
+  "keyword": "how to invest tax free",
+  "volume": 40,
+  "volume_low": 40,
+  "volume_high": 40,
+  "kd": 0,
+  "cpc": 6.15,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "variable universal life insurance": {
+  "keyword": "variable universal life insurance",
+  "volume": 5400,
+  "volume_low": 5400,
+  "volume_high": 5400,
+  "kd": 38,
+  "cpc": 13.24,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "private placement life insurance cost": {
+  "keyword": "private placement life insurance cost",
+  "volume": 10,
+  "volume_low": 10,
+  "volume_high": 10,
+  "kd": 0,
+  "cpc": 14.08,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 4,
+   "corroborates": true
+  }
+ },
+ "high net worth tax strategies": {
+  "keyword": "high net worth tax strategies",
+  "volume": 90,
+  "volume_low": 90,
+  "volume_high": 90,
+  "kd": 24,
+  "cpc": 29.37,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "roth ira alternatives": {
+  "keyword": "roth ira alternatives",
+  "volume": 90,
+  "volume_low": 90,
+  "volume_high": 90,
+  "kd": 31,
+  "cpc": 7.15,
+  "source": "dataforseo",
+  "confidence": "high",
+  "kd_source": "semrush",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ }
+}

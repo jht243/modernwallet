@@ -476,7 +476,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "When do RMDs start and how do they affect my drawdown plan?",
         answer:
-          "Required minimum distributions from traditional IRAs and 401(k)s begin at age 73 under IRS rules. The IRS sets the amount based on your account balance and a life expectancy table. RMDs can force you to withdraw more than you planned, increasing your taxable income. Use the [RMD calculator](/retirement/rmd-calculator/) to estimate your first required withdrawal.",
+          "Required minimum distributions from traditional IRAs and 401(k)s begin at age 73 under IRS rules. The IRS sets the amount based on your account balance and a life expectancy table. RMDs can force you to withdraw more than you planned, increasing your taxable income. A Roth account or an HSA is exempt, so the share of your savings held in [accounts that pay out untaxed](/guides/tax-free-retirement-account/) decides how much of each year's withdrawal you keep. Use the [RMD calculator](/retirement/rmd-calculator/) to estimate your first required withdrawal.",
       },
       {
         question: "Should I include Social Security in this calculation?",

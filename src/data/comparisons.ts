@@ -65,12 +65,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Which account saves more in taxes?",
         content:
-          "The answer depends on whether your tax rate is higher now or in retirement. Traditional 401(k) wins if you're in a high bracket today and expect a lower rate later. Roth IRA wins if you're in a lower bracket now and expect taxes to rise.\n\nFor a 30-year-old in the 22% bracket saving $7,000/year, choosing Roth IRA over Traditional 401(k) can save $200,000+ in lifetime taxes if retirement rates end up higher — but cost you $50,000+ if rates fall.\n\nWhen in doubt, diversify: hold some pre-tax money (401k/Traditional IRA) and some after-tax money (Roth IRA) so you can draw from whichever bucket is taxed more favorably each year.",
+          "The answer depends on whether your tax rate is higher now or in retirement. Traditional 401(k) wins if you're in a high bracket today and expect a lower rate later. Roth IRA wins if you're in a lower bracket now and expect taxes to rise.\n\nFor a 30-year-old in the 22% bracket saving $7,000/year, choosing Roth IRA over Traditional 401(k) can save $200,000+ in lifetime taxes if retirement rates end up higher — but cost you $50,000+ if rates fall.\n\nWhen in doubt, diversify: hold some pre-tax money (401k/Traditional IRA) and some after-tax money (Roth IRA) so you can draw from whichever bucket is taxed more favorably each year. The list of accounts that pay out untaxed is short, and our guide to [which retirement accounts are genuinely tax-free](/guides/tax-free-retirement-account/) covers what belongs on it and what only gets marketed that way.",
       },
       {
         heading: "401(k) vs Roth IRA: can you have both?",
         content:
-          "Yes — and most financial planners recommend it. There's no rule against having a 401(k) and a Roth IRA at the same time. The two accounts have separate, independent contribution limits.\n\nThe optimal order is usually: contribute to the 401(k) up to the full employer match → max out the Roth IRA → go back and max the 401(k) with any remaining savings.\n\nIf you're self-employed, a SEP-IRA or Solo 401(k) can replace the employer plan with even higher limits. The [retirement calculator](/retirement/) lets you model multiple account scenarios side by side. When you're ready to open a Roth IRA, our [best IRA accounts](/roundup/best-ira-accounts/) roundup compares where to hold it.",
+          "Yes — and most financial planners recommend it. There's no rule against having a 401(k) and a Roth IRA at the same time. The two accounts have separate, independent contribution limits.\n\nThe optimal order is usually: contribute to the 401(k) up to the full employer match → max out the Roth IRA → go back and max the 401(k) with any remaining savings.\n\nIf you're self-employed, a SEP-IRA or Solo 401(k) can replace the employer plan with even higher limits. If someone has offered you a cash-value life insurance policy as a third option, our [IUL vs 401(k)](/compare/iul-vs-401k/) comparison prices the policy's charges against the match you already have. The [retirement calculator](/retirement/) lets you model multiple account scenarios side by side. When you're ready to open a Roth IRA, our [best IRA accounts](/roundup/best-ira-accounts/) roundup compares where to hold it.",
       },
       {
         heading: "The break-even tax rate: exactly when Roth wins",
@@ -2970,7 +2970,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Which retirement account should you choose?",
         content:
-          "Choose a Roth IRA if you expect to pay higher taxes in retirement than you do today. Young savers and people early in their careers often fit this profile. Tax-free withdrawals later can be worth far more than a small deduction now.\n\nChoose a Traditional IRA if you want to cut your tax bill this year. High earners in peak years often benefit most. This works best if you expect a lower tax rate after you stop working.\n\nYou do not always have to pick just one. Splitting contributions spreads your tax risk across both outcomes. If a Roth is off-limits due to income, explore the [401k vs Roth IRA comparison](/compare/401k-vs-roth-ira/) and the backdoor Roth strategy. Once you've picked a type, compare providers in our [best IRA accounts](/roundup/best-ira-accounts/) roundup.",
+          "Choose a Roth IRA if you expect to pay higher taxes in retirement than you do today. Young savers and people early in their careers often fit this profile. Tax-free withdrawals later can be worth far more than a small deduction now.\n\nChoose a Traditional IRA if you want to cut your tax bill this year. High earners in peak years often benefit most. This works best if you expect a lower tax rate after you stop working.\n\nYou do not always have to pick just one. Splitting contributions spreads your tax risk across both outcomes. If a Roth is off-limits due to income, explore the [401k vs Roth IRA comparison](/compare/401k-vs-roth-ira/) and the backdoor Roth strategy. Savers priced out of a Roth also get pitched cash-value life insurance, and our [IUL vs Roth IRA comparison](/compare/iul-vs-roth-ira/) shows what the policy deducts before any of it grows. Once you've picked a type, compare providers in our [best IRA accounts](/roundup/best-ira-accounts/) roundup.",
       },
     ],
     faqs: [
@@ -4027,7 +4027,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When whole life insurance actually makes sense",
         content:
-          "Whole life insurance makes sense when your need for coverage will never end. Because it pays out whenever you die, it suits goals that outlast a fixed term. It costs more, so it should solve a specific lifelong problem.\n\nGood fits include estate-tax liquidity, where heirs need cash to pay taxes without selling property. It also helps families with a lifelong or special-needs dependent who will always require financial support. Business owners sometimes use it to fund a buy-sell agreement between partners.\n\nWhole life can also guarantee final-expense coverage and let you borrow against the cash value later. But policy loans reduce the death benefit if unpaid, so borrow with care. If these narrow needs apply, coordinate coverage with your broader [estate planning](/estate-planning/).",
+          "Whole life insurance makes sense when your need for coverage will never end. Because it pays out whenever you die, it suits goals that outlast a fixed term. It costs more, so it should solve a specific lifelong problem.\n\nGood fits include estate-tax liquidity, where heirs need cash to pay taxes without selling property. It also helps families with a lifelong or special-needs dependent who will always require financial support. Business owners sometimes use it to fund a buy-sell agreement between partners.\n\nWhole life can also guarantee final-expense coverage and let you borrow against the cash value later. But policy loans reduce the death benefit if unpaid, so borrow with care. A policy built specifically for that borrowing is sold as [infinite banking](/guides/infinite-banking/), and it is funded well above the required premium so cash value arrives sooner. If these narrow needs apply, coordinate coverage with your broader [estate planning](/estate-planning/).",
       },
       {
         heading: "How to decide between term and whole life",
@@ -5149,7 +5149,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The income limit is the biggest practical difference",
         content:
-          "A Roth 401(k) has no income limit — anyone whose employer offers one can contribute, regardless of salary. A Roth IRA does: for 2026, direct contributions phase out between $153,000 and $168,000 of modified adjusted gross income for single filers, and between $242,000 and $252,000 for married couples filing jointly, per the [IRS](https://www.irs.gov/retirement-plans/roth-comparison-chart).\n\nHigh earners shut out of a direct Roth IRA contribution can still get money into one through a backdoor Roth IRA conversion — contribute to a nondeductible Traditional IRA, then convert it — but that adds a tax-filing step (Form 8606) and can trigger pro-rata tax complications if you already hold other pre-tax IRA money. The Roth 401(k) sidesteps all of that by simply having no income test.",
+          "A Roth 401(k) has no income limit — anyone whose employer offers one can contribute, regardless of salary. A Roth IRA does: for 2026, direct contributions phase out between $153,000 and $168,000 of modified adjusted gross income for single filers, and between $242,000 and $252,000 for married couples filing jointly, per the [IRS](https://www.irs.gov/retirement-plans/roth-comparison-chart).\n\nHigh earners shut out of a direct Roth IRA contribution can still get money into one through a backdoor Roth IRA conversion — contribute to a nondeductible Traditional IRA, then convert it — but that adds a tax-filing step (Form 8606) and can trigger pro-rata tax complications if you already hold other pre-tax IRA money. The Roth 401(k) sidesteps all of that by simply having no income test. Insurance agents work the same income limit, offering an indexed universal life policy as the workaround instead. Our [IUL vs 401(k) comparison](/compare/iul-vs-401k/) sets that policy's annual charges beside a workplace plan's fees.",
       },
       {
         heading: "How the employer match complicates a Roth 401(k)",
@@ -5342,7 +5342,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Indexed and variable universal life: two more flexible variants",
         content:
-          "Indexed universal life (IUL) ties the credited interest rate to a market index like the S&P 500, usually with a cap on the upside and a floor (often 0%) protecting against a negative crediting rate — it is still universal life, not a separate product, and is frequently marketed and discussed as if it were distinct.\n\nVariable universal life (VUL) goes further, letting you invest the cash value directly in mutual-fund-like sub-accounts, which shifts real market risk — including the risk of loss — onto the policyholder. Confirm which variant you're being offered before comparing quotes, since the risk profile differs meaningfully between standard, indexed, and variable universal life.",
+          "Indexed universal life (IUL) ties the credited interest rate to a market index like the S&P 500, usually with a cap on the upside and a floor (often 0%) protecting against a negative crediting rate — it is still universal life, not a separate product, and is frequently marketed and discussed as if it were distinct.\n\nVariable universal life (VUL) goes further, letting you invest the cash value directly in mutual-fund-like sub-accounts, which shifts real market risk — including the risk of loss — onto the policyholder. [Private placement life insurance](/guides/private-placement-life-insurance/) is a variable universal life contract sold privately to accredited investors, with institutional pricing and hedge fund or private credit strategies inside the cash value. Confirm which variant you're being offered before comparing quotes, since the risk profile differs meaningfully between standard, indexed, and variable universal life.",
       },
       {
         heading: "The illustration trap: why universal life needs a second look every year",
@@ -5352,7 +5352,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "IUL vs whole life: which guarantees actually protect you",
         content:
-          "Indexed universal life (IUL) is frequently marketed head-to-head against whole life insurance, so it's worth a direct comparison rather than treating IUL as just a footnote. Whole life's cash value grows at a guaranteed minimum rate written into the contract, with a fixed premium for life and no downside in a bad year — the guaranteed rate applies regardless of markets. IUL's cash value instead grows based on an index's performance, subject to a cap (often in the 8%–12% range) and a floor (usually 0%), on top of the flexible, sometimes-underfunded premium structure standard universal life shares.\n\nThat means IUL can outperform whole life in a strong index year but can also credit nothing at all in a flat or down year — no negative return, but no growth either. The cap rate itself is not guaranteed: insurers can and do lower an IUL policy's cap over time, so an illustration run at today's cap can overstate what the policy actually credits years later, compounding the same illustration risk standard universal life already carries. Whole life has no equivalent exposure — its guaranteed minimum rate is contractual and can't be revised downward by the insurer mid-policy.\n\nPick whole life when you want the cash-value guarantee itself, not just downside protection — it's the only one of the two where the growth rate can't be revised down later. Pick IUL only if you're comfortable reviewing an in-force illustration regularly and treating any upside as a bonus, not a plan.",
+          "Indexed universal life (IUL) is frequently marketed head-to-head against whole life insurance, so it's worth a direct comparison rather than treating IUL as just a footnote. Whole life's cash value grows at a guaranteed minimum rate written into the contract, with a fixed premium for life and no downside in a bad year — the guaranteed rate applies regardless of markets. IUL's cash value instead grows based on an index's performance, subject to a cap (often in the 8%–12% range) and a floor (usually 0%), on top of the flexible, sometimes-underfunded premium structure standard universal life shares.\n\nThat means IUL can outperform whole life in a strong index year but can also credit nothing at all in a flat or down year — no negative return, but no growth either. The cap rate itself is not guaranteed: insurers can and do lower an IUL policy's cap over time, so an illustration run at today's cap can overstate what the policy actually credits years later, compounding the same illustration risk standard universal life already carries. Whole life has no equivalent exposure — its guaranteed minimum rate is contractual and can't be revised downward by the insurer mid-policy.\n\nPick whole life when you want the cash-value guarantee itself, not just downside protection — it's the only one of the two where the growth rate can't be revised down later. Pick IUL only if you're comfortable reviewing an in-force illustration regularly and treating any upside as a bonus, not a plan. Some agents pitch an IUL as a replacement for a workplace retirement plan rather than as insurance, and our [IUL vs 401(k)](/compare/iul-vs-401k/) comparison runs the same premium through both.",
+      },
+      {
+        heading: "Cost of Insurance Rises with Age and Drains an IUL's Cash Value",
+        content:
+          "An indexed universal life policy deducts a cost of insurance (COI) charge from the cash value every month, and that charge rises as the insured gets older. Early on, the credited interest covers it easily. Thirty years later it often cannot.\n\nThis is the usual mechanism behind a universal life lapse. A contract funded at or near the minimum premium never builds much cash value. Once the COI charge outgrows what the index credits, the account balance shrinks month by month.\n\nThe policy can run dry in the owner's seventies or eighties, decades after the first premium was paid. Coverage ends at the age it was most likely to be needed.\n\nAsk the insurer for an in-force illustration run at the guaranteed maximum charges as well as the current scale. The [NAIC Life Insurance Illustrations Model Regulation](https://content.naic.org/sites/default/files/model-law-582.pdf) requires an insurer to furnish one on request, once a year, at no charge. It also makes the illustration show the year coverage would cease under each set of assumptions.\n\nRead the guaranteed column first, since it names the earliest year the policy could run out of money. Then fund above the minimum. Paying more than the smallest premium the illustration allows builds a cash-value cushion that absorbs the higher charges later and keeps the policy in force.\n\nAnyone weighing IUL vs whole life should add that extra funding to the IUL side before treating the two premiums as comparable. Our [indexed universal life insurance guide](/guides/indexed-universal-life-insurance/) walks through the charges an IUL statement lists.",
       },
     ],
     faqs: [
@@ -5375,6 +5380,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         question: "Is IUL better than whole life insurance?",
         answer:
           "Neither is universally better. Whole life offers a guaranteed minimum growth rate that the insurer can't revise downward. IUL can credit more in strong index years but the cap rate that limits its upside is not guaranteed either — insurers can lower it over time, so an optimistic illustration can overstate real long-run performance.",
+      },
+      {
+        question: "Why does the cost of insurance in an IUL policy go up over time?",
+        answer:
+          "Because the charge is priced on the insured's age, and the risk of dying in any given year rises as you get older. The insurer deducts that charge from the cash value every month. A policy holding only a thin cash value can be drained by it late in life. Fund above the minimum premium to build a cushion. Then request an in-force illustration on the guaranteed maximum charges, which shows the year the policy would run out under those assumptions.",
       },
       {
         question: "Can I convert term life insurance to whole or universal life?",
@@ -5545,7 +5555,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The 'buy term, invest the difference' math — when it wins and when it doesn't",
         content:
-          "Buying term and investing the premium difference in a 401(k), IRA, or brokerage account usually outperforms a universal life policy's credited rate over long periods, since the invested money isn't also paying for a cost-of-insurance charge every month. But the strategy only wins if the difference is actually invested consistently, not spent — the single biggest reason it fails in practice isn't the math, it's follow-through.\n\nThe other real trade-off: once the term ends, there's no coverage left at any price if you've become uninsurable in the meantime, while a permanent policy would still be in force. Buyers with a family history of serious illness sometimes weigh that risk deliberately, even knowing term is cheaper on paper.",
+          "Buying term and investing the premium difference in a 401(k), IRA, or brokerage account usually outperforms a universal life policy's credited rate over long periods, since the invested money isn't also paying for a cost-of-insurance charge every month. The version quoted against that math is usually [indexed universal life insurance](/guides/indexed-universal-life-insurance/), which credits interest off a stock index behind a cap the insurer can lower later. But the strategy only wins if the difference is actually invested consistently, not spent — the single biggest reason it fails in practice isn't the math, it's follow-through.\n\nThe other real trade-off: once the term ends, there's no coverage left at any price if you've become uninsurable in the meantime, while a permanent policy would still be in force. Buyers with a family history of serious illness sometimes weigh that risk deliberately, even knowing term is cheaper on paper.",
       },
     ],
     faqs: [
@@ -9811,6 +9821,240 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "TaxAct — Xpert Assist", url: "https://www.taxact.com/tax-xpert-assist/unlimited-xpert-assist" },
       { label: "TurboTax — Online Pricing", url: "https://turbotax.intuit.com/personal-taxes/online/" },
       { label: "TurboTax — Compare Online Products", url: "https://turbotax.intuit.com/personal-taxes/compare/online/" },
+    ],
+  },
+  // ─── IUL vs 401(k) ────────────────────────────────────────────────────────
+  {
+    slug: "iul-vs-401k",
+    title: "IUL vs 401k Comes Down to the Employer Match",
+    metaDescription:
+      "IUL vs 401k compared on employer match, 2026 IRS limits, cost of insurance, fees, and taxes, plus when an indexed universal life policy earns its price.",
+    targetKeyword: "iul vs 401k",
+    optionA: "Indexed Universal Life (IUL)",
+    optionB: "401(k)",
+    h1: "IUL vs 401k for Building Retirement Income",
+    intro:
+      "In IUL vs 401k, the 401(k) wins for nearly every US saver. What we see readers get wrong most often is comparing an IUL illustration against a 401(k) with no match in it. An indexed universal life (IUL) policy is permanent life insurance whose cash value earns interest tied to a market index. A floor limits your losses. A cap limits your gains. A 401(k) is an employer plan that lets you set aside part of your pay, invest it, and in most plans collect a matching contribution on top. Indexed universal life vs 401k becomes a real question only after you have taken every matched dollar and filled the tax-advantaged accounts you qualify for.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "Employer retirement plan funded from your pay" },
+        { dimension: "2026 contribution cap", a: "No federal contribution cap, but bounded by IRC 7702 premium limits and the MEC line", b: "$24,500 employee deferral, $72,000 total under IRC 415(c)" },
+        { dimension: "Employer money", a: "None", b: "A match, where the plan offers one" },
+        { dimension: "Tax on the way in", a: "After-tax premium", b: "Pre-tax deferral, or after-tax in a Roth 401(k)" },
+        { dimension: "Ongoing costs", a: "Cost of insurance plus admin and rider charges, taken from cash value", b: "Fund expense ratios plus any plan administration fee" },
+        { dimension: "How growth is credited", a: "Index-linked credit with a floor and a cap or participation rate set by the carrier", b: "The market return of the funds you pick, with no floor and no cap" },
+        { dimension: "Getting money out early", a: "Policy loan or withdrawal, with surrender charges in the early years", b: "Taxed as income, plus 10% additional tax before 59½ with exceptions" },
+        { dimension: "At death", a: "Death benefit passes income-tax-free to your beneficiary", b: "Balance passes to your beneficiary and is taxable to them as income" },
+        { dimension: "Verdict", a: "Earns a place after every tax-advantaged account is full and permanent coverage is needed", b: "Fund it to the full match first, every year" },
+      ],
+    },
+    verdict:
+      "Fund your 401(k) to the full employer match before you pay a single IUL premium. A matched dollar is the one place in a retirement plan that hands you an immediate return on investment (ROI). No index credit competes with it, subject only to your plan's vesting schedule. After the match, keep going in the 401(k) toward the 2026 employee deferral limit of $24,500, then fill a Roth IRA or a health savings account if you qualify. An IUL earns a place after all of that, for someone who needs a permanent death benefit and will fund the policy well above the minimum premium. Anyone who has not filled those accounts, or who is buying an indexed universal life policy mainly as an investment, should not own one.",
+    sections: [
+      {
+        heading: "How an Indexed Universal Life Policy Works",
+        content:
+          "An indexed universal life policy is permanent life insurance with a cash value account. The interest that account earns is tied to an index such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) rather than to shares you own. The carrier credits interest using a floor, commonly 0 percent, and a cap or participation rate that limits how much of an index gain reaches your account. You are not invested in the market. You hold an insurance contract whose interest formula refers to the market.\n\nEvery premium splits three ways. Part buys the death benefit, part pays administration and rider charges, and whatever is left goes to cash value. [FINRA](https://www.finra.org/investors/investing/investment-products/insurance) states the mechanic plainly: the cost of your insurance protection, and in some cases other costs, are deducted from the policy account value.\n\nThat structure is why the early years matter so much. A policy funded at the minimum premium sends very little to cash value at the start. That leaves a small balance to compound and a thin cushion when charges climb later.",
+      },
+      {
+        heading: "What the 2026 Federal Limits Let You Put into a 401(k)",
+        content:
+          "The [Internal Revenue Service](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits) (IRS) caps 2026 401(k) employee deferrals at $24,500. Total additions from you and your employer combined are capped at $72,000 under Internal Revenue Code (IRC) section 415(c). At age 50 or older you can add an $8,000 catch-up on top. Savers aged 60 to 63 get a larger catch-up of $11,250 instead, confirmed in [IRS Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf).\n\nAn IUL has no IRS contribution limit, which is the feature most sales conversations open with. It carries two other limits in place of one. [IRC section 7702](https://www.law.cornell.edu/uscode/text/26/7702) sets how much premium a contract can absorb and still count as life insurance. IRC section 7702A sets the modified endowment contract (MEC) line at the seven-pay test.\n\nBoth caps move. Confirm the current-year deferral and catch-up figures on the [IRS 401(k) contribution limits page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits) before you set your payroll election, because the IRS adjusts them for inflation most years.",
+      },
+      {
+        heading: "Why the Employer Match Decides IUL vs 401k",
+        content:
+          "An unmatched dollar of IUL premium competes against a 401(k) dollar your employer may increase by 50 to 100 percent on the day you contribute it. Run it with a plan that matches 50 cents on the dollar up to 6 percent of pay. On a $100,000 salary, your $6,000 deferral lands in the account as $9,000.\n\nThat is a 50 percent gain before the money buys a single share of anything. A plan that matches dollar for dollar turns the same $6,000 into $12,000. Send that $6,000 to an IUL instead and it arrives as $6,000, less the policy charges taken in year one.\n\nNo cap, floor, or tax feature closes a gap that size. The match is also the piece a carrier illustration cannot show you, because the carrier does not know your plan's formula. If your plan offers a match, find the formula in your summary plan description, then put both numbers side by side in the [401(k) calculator](/retirement/401k-calculator/).",
+      },
+      {
+        heading: "What Cost of Insurance Does to an IUL Over Time",
+        content:
+          "The cost of insurance (COI) inside an IUL rises as you age, because the carrier is charging for a death benefit on an older life each year. Those charges come out of cash value rather than a separate bill. So the same balance that earns index credits is also paying a charge that grows every year you hold the policy.\n\nTwo outcomes follow from how you fund it. A policy funded well above the minimum premium builds enough cash value to absorb rising COI for decades. A policy funded at or near the minimum can run short, and once cash value cannot cover the monthly charges, the policy lapses.\n\nA lapse costs more than the coverage. If a policy loan is outstanding when the contract ends, the gain becomes taxable income that year, and there is no cash value left to pay the tax with. Fund the policy at a level the carrier's guaranteed-rate column supports, and that failure mode goes away.",
+      },
+      {
+        heading: "Getting Your Money Out of Each Account",
+        content:
+          "Both accounts are hard to reach before retirement, for different reasons. A 401(k) restricts access by rule. Taking money before age 59½ generally means ordinary income tax plus an additional 10 percent tax, with the exceptions the IRS lists in [Topic 558](https://www.irs.gov/taxtopics/tc558). Many plans also let you borrow against your balance and repay through payroll.\n\nAn IUL restricts access by charge. Surrender charges apply in the early policy years and decline on a schedule written into the contract. Cancel in year three and you usually get back far less than you paid in premium. Ask the carrier for that surrender schedule in writing before you sign, since it varies by product and by your age at issue.\n\nNeither one holds money you might need next year. Keep that money in a savings account and let both of these run for decades, which is the only time frame either was built for.",
+      },
+      {
+        heading: "How Policy Loans and 401(k) Withdrawals Are Taxed",
+        content:
+          "A policy loan from a non-MEC IUL is not taxable income while the policy stays in force, and that is the strongest tax argument the product has. You borrow against cash value, the carrier charges loan interest, and nothing gets reported as income. Any loan you never repay reduces the death benefit your beneficiary receives.\n\nA traditional 401(k) withdrawal is ordinary income in the year you take it, at your marginal rate. A Roth 401(k) withdrawal comes out tax-free once you are 59½ and the account has been open five years. Neither gives you the borrow-without-reporting mechanic an IUL does, which is a real advantage worth pricing against the policy charges that pay for it.\n\nThe catch sits in the phrase non-MEC. Overfund past the seven-pay test in [IRC section 7702A](https://www.law.cornell.edu/uscode/text/26/7702A) and the contract becomes a modified endowment contract. Loans and withdrawals are then taxed gain first, with a 10 percent additional tax before age 59½. Your carrier tracks that limit, so ask for the MEC premium figure in writing and stay under it. Our guide to [borrowing against life insurance](/guides/borrowing-against-life-insurance/) walks through how a policy loan gets repaid.",
+      },
+      {
+        heading: "When an IUL Genuinely Beats More 401k Contributions",
+        content:
+          "An IUL makes sense for a household that has already filled every tax-advantaged account, needs a permanent death benefit, and can fund the policy far above its minimum premium. All three have to be true at once. Miss the third and you have bought the lapse risk described above.\n\nThe clearest fit is a family with a reason to hold coverage that never ends. Two business owners funding a buy-sell agreement qualify. So does a parent of a special-needs dependent who will need money after both parents are gone. So does an estate that needs cash at death to avoid a forced sale. Level term life covers a temporary need for a fraction of the premium, so an IUL only earns its price when the need has no end date.\n\nA second fit is a high earner who has taken the full match and maxed the $24,500 deferral. Add a [mega backdoor Roth 401(k)](/guides/mega-backdoor-roth-401k/) and a health savings account, and there may still be money left to place. For that saver the absent contribution cap is a genuine feature, because the next stop is a taxable brokerage account. The mechanics are in our guide to [indexed universal life insurance](/guides/indexed-universal-life-insurance/).",
+      },
+      {
+        heading: "Who Should Skip an IUL",
+        content:
+          "Skip an IUL if you are not already maxing a 401(k) and an IRA. Skip it if you only need coverage while children are at home. Skip it if you would fund the policy at or near its minimum premium. Any one of them is enough.\n\nBuy level term life when the need has an end date, and put the premium difference into the 401(k). A 20-year term policy covers the years your income supports someone else, which is the risk most households need to cover.\n\nSkip it too if the agent will not show you the guaranteed-rate column of the illustration. Every illustration has one. If the policy only works at the illustrated rate, the guaranteed column is telling you what the contract obliges the carrier to deliver.",
+      },
+      {
+        heading: "What Would Change Our Answer",
+        content:
+          "Take the employer match away and this comparison gets close. A plan with no match, a narrow fund menu, and high administration fees loses the one advantage that makes the 401(k) hard to beat. On those facts, an IUL for someone who also wants permanent coverage becomes defensible.\n\nThree other changes would move us. One is a carrier crediting an uncapped index gain with a real floor. Another is a cut to the 401(k) deferral limit. The third is a rewrite of the section 7702 premium rules that lets a contract absorb far more premium.\n\nNone of those holds in 2026, so fill the match first. Use your real match formula, and model any policy at its guaranteed rate rather than its illustrated one. Run your own IUL vs 401k comparison in the [401(k) calculator](/retirement/401k-calculator/) before you sign a policy application.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an IUL better than a 401k plan?",
+        answer:
+          "No, not for most people, because a 401(k) can come with an employer match and an IUL never does. A plan matching 50 cents on the dollar turns a $6,000 deferral into $9,000 immediately. Nothing inside an IUL makes up that difference. An IUL becomes the better use of a dollar only after the match is fully captured, the $24,500 deferral limit is used, and you need a permanent death benefit.",
+      },
+      {
+        question: "What are the downsides of an IUL?",
+        answer:
+          "The main downsides are a rising cost of insurance, capped index credits, surrender charges, and lapse risk on an underfunded policy. Cost of insurance charges are deducted from cash value and grow as you age, so a policy funded near its minimum premium can run out of value and lapse. A lapse with an outstanding loan turns the gain into taxable income in that year. Caps and participation rates also mean a policy credits only part of an index gain.",
+      },
+      {
+        question: "How much do I need in my 401k to get $1,000 a month?",
+        answer:
+          "About $300,000 at a 4 percent withdrawal rate, or about $240,000 at 5 percent. The arithmetic is simple: $1,000 a month is $12,000 a year, so divide $12,000 by the withdrawal rate you plan to use. A traditional 401(k) pays that $12,000 as ordinary income, so your spendable amount is lower after tax, while the same balance in a Roth 401(k) delivers the full $1,000. Model your own number in the [401(k) calculator](/retirement/401k-calculator/).",
+      },
+      {
+        question: "Why do wealthy people use IUL?",
+        answer:
+          "Because an IUL has no IRS contribution cap and its death benefit passes to beneficiaries income-tax-free. A household that has already maxed a 401(k), an IRA, and a health savings account has run out of tax-advantaged room. An indexed universal life policy accepts far more money than any of those. Policy loans also give access to cash value without a taxable distribution, and an irrevocable life insurance trust can hold the policy outside the taxable estate.",
+      },
+      {
+        question: "Is it smart to get an IUL?",
+        answer:
+          "It is smart in one situation: you have filled every tax-advantaged account, you need permanent life insurance, and you will fund the policy well above its minimum premium. Outside that situation it usually is not, because you are paying insurance charges for a savings vehicle you could match with a 401(k) and a brokerage account. If your need for coverage ends when your children finish school, level term life does the same job for far less.",
+      },
+      {
+        question: "What is the average IUL rate of return?",
+        answer:
+          "There is no reliable average, because the credit you receive depends on the index, the cap, the participation rate, and the floor your specific contract sets. Illustrated rates are also constrained by rules the [National Association of Insurance Commissioners](https://content.naic.org/cmte_a_latf_iul_illustration_sg.htm) (NAIC) wrote into Actuarial Guideline 49-A. That makes an illustration a regulated projection rather than a track record. Ask the carrier for the guaranteed-rate column instead, which shows what the contract obliges it to credit.",
+      },
+    ],
+    sources: [
+      { label: "IRS: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
+      { label: "IRS: Notice 2025-67 (2026 retirement plan limits)", url: "https://www.irs.gov/pub/irs-drop/n-25-67.pdf" },
+      { label: "Legal Information Institute: 26 U.S. Code § 7702A", url: "https://www.law.cornell.edu/uscode/text/26/7702A" },
+      { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
+    ],
+    relatedComparisons: ["401k-vs-roth-ira", "iul-vs-roth-ira", "whole-life-vs-universal-life-insurance", "term-life-vs-universal-life-insurance"],
+    calculatorLinks: [
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
+    ],
+  },
+  // ─── IUL vs Roth IRA ──────────────────────────────────────────────────────
+  {
+    slug: "iul-vs-roth-ira",
+    title: "IUL vs Roth IRA Turns on Income and Contribution Caps",
+    metaDescription:
+      "IUL vs Roth IRA compared on 2026 IRS limits, income phase-outs, fees, and withdrawal access, plus when an indexed universal life policy earns its premium.",
+    targetKeyword: "iul vs roth ira",
+    optionA: "Indexed Universal Life (IUL)",
+    optionB: "Roth IRA",
+    h1: "IUL vs Roth IRA for Tax-Free Retirement Money",
+    intro:
+      "In IUL vs Roth IRA, the Roth IRA wins for almost every saver who is allowed to fund one. What we see readers get wrong most often is treating the Roth IRA income phase-out as a permanent lockout, when a backdoor Roth reopens it. A Roth IRA is an individual retirement arrangement (IRA) you fund with after-tax money and invest as you choose, and qualified withdrawals come out tax-free. An indexed universal life (IUL) policy is a life insurance contract whose cash value earns a credit tied to a stock index without ever holding the index. The carrier sets a floor under the loss and a cap over the gain. Both can deliver tax-free money later. The IUL also charges you for a death benefit the whole way there.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "A retirement account you own and invest yourself" },
+        { dimension: "2026 contribution cap", a: "No federal contribution cap, bounded by IRC 7702 premium limits and the MEC line", b: "$7,500, or $8,600 at age 50 and older" },
+        { dimension: "Income limit to contribute", a: "None", b: "Phases out at $153,000 to $168,000 single, $242,000 to $252,000 joint" },
+        { dimension: "Ongoing cost", a: "Cost of insurance plus admin and rider charges, deducted from cash value", b: "Only the expense ratio of the funds you buy" },
+        { dimension: "What you can hold", a: "The carrier's index crediting formula, with a cap or participation rate", b: "Any stock, bond, or index fund your broker offers" },
+        { dimension: "Getting money out early", a: "Policy loan or withdrawal, with surrender charges in the early years", b: "Contributions out at any age, with no tax and no penalty" },
+        { dimension: "At death", a: "Death benefit passes income-tax-free to your beneficiary", b: "Balance passes tax-free, and most heirs must empty it within 10 years" },
+        { dimension: "Verdict", a: "Earns a place after every tax-advantaged account is full and permanent coverage is needed", b: "Fund it every year you qualify, directly or through the back door" },
+      ],
+    },
+    verdict:
+      "Fund a Roth IRA to the 2026 limit of $7,500 before you consider an IUL premium. It costs you nothing beyond the expense ratio of the funds you buy, and you can take your contributions back out at any time without tax or penalty. An IUL earns a place after that, for a household that has filled every tax-advantaged account and needs a death benefit with no end date. It also has to fund the policy well above the minimum. A high income is not a reason to buy one, because a backdoor Roth still gets $7,500 a year into the account. Anyone shopping an IUL mainly as a Roth IRA substitute should open the Roth IRA first.",
+    sections: [
+      {
+        heading: "What an IUL and a Roth IRA Each Do with Your Money",
+        content:
+          "A Roth IRA is an account you own, while an IUL is a contract you buy from an insurance carrier. Money in a Roth IRA sits in whatever you bought with it. The [Internal Revenue Service](https://www.irs.gov/retirement-plans/roth-iras) (IRS) taxes none of the growth as long as you follow the distribution rules.\n\nAn IUL premium is not fully invested. The carrier deducts insurance, administration, and rider charges from the policy account value first, as the [Financial Industry Regulatory Authority](https://www.finra.org/investors/investing/investment-products/insurance) (FINRA) describes.\n\nSo a Roth IRA dollar compounds from the day it lands. An IUL dollar compounds after the charges come out, and only up to the carrier's cap or participation rate.",
+      },
+      {
+        heading: "What the 2026 IRS Limits Let You Put into a Roth IRA",
+        content:
+          "The IRS caps 2026 Roth IRA contributions at $7,500, or $8,600 if you are 50 or older. Both figures come from the IRS announcement of the [2026 retirement plan limits](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), which raised the base amount from $7,000.\n\nThat ceiling is low against a whole retirement plan. Fifteen years of maxed contributions at $7,500 puts $112,500 of your own money into the account before any growth at all. The cap also applies across every IRA you own combined, so a traditional IRA contribution uses up the same $7,500.\n\nThe number moves most years with inflation. Confirm the current figure on the [IRS IRA contribution limits page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) before you set an automatic monthly transfer, so you do not over-contribute.",
+      },
+      {
+        heading: "How IUL vs Roth IRA Changes above the Income Phase-Out",
+        content:
+          "Above the Roth IRA income limit you cannot contribute directly, and an IUL sales pitch is built to fill that gap. For 2026 the IRS phases out direct Roth IRA contributions between $153,000 and $168,000 of modified adjusted gross income (MAGI) for single filers and heads of household. For married couples filing jointly the range runs from $242,000 to $252,000, and a married person filing separately phases out between $0 and $10,000.\n\nThe door reopens through a backdoor Roth. You contribute to a traditional IRA, then convert that money to a Roth IRA, and no income limit restricts the conversion. Our guide to [Roth conversion rules](/guides/roth-conversion-rules/) covers the pro-rata rule that decides how much of your conversion is taxable.\n\nA workplace plan can move far more than $7,500. A [mega backdoor Roth 401(k)](/guides/mega-backdoor-roth-401k/) routes after-tax 401(k) money into Roth treatment, well past the IRA cap. Work through both before you price a policy.",
+      },
+      {
+        heading: "Why the Contribution Ceiling Is the Strongest IUL Argument",
+        content:
+          "An IUL has no IRS contribution limit, and for a saver who has run out of tax-advantaged room that is a real advantage. The comparison is $7,500 a year against whatever premium a carrier is willing to accept. Nothing else about an IUL favors it by anything close to that margin.\n\nTwo tax rules bound the premium in place of the IRS. Internal Revenue Code (IRC) [section 7702](https://www.law.cornell.edu/uscode/text/26/7702) caps what a contract can take in and still be treated as life insurance. [IRC section 7702A](https://www.law.cornell.edu/uscode/text/26/7702A) reclassifies anything past the seven-pay test as a modified endowment contract (MEC).\n\nA MEC keeps the death benefit and loses the tax treatment you bought the policy for. Money you pull out comes gain first and gets taxed, plus a 10 percent additional tax if you are under 59½. Ask your carrier for the seven-pay limit in writing, then fund under it.",
+      },
+      {
+        heading: "Where the Roth IRA Beats an IUL on Cost and Access",
+        content:
+          "A Roth IRA carries no insurance charge, no surrender schedule, and no restriction on what you buy inside it. Hold a broad index fund for a few basis points a year and you keep the rest of the return. An IUL charges cost of insurance, administration, and rider fees against cash value every month you own it.\n\nAccess is the sharper difference. You can withdraw your Roth IRA contributions at any age, for any reason, with no tax and no penalty, because you already paid tax on that money. Earnings are the part that waits for age 59½ and the five-year clock, and the ordering rules sit in [IRS Publication 590-B](https://www.irs.gov/publications/p590b).\n\nAn IUL gives cash value back through a policy loan or a withdrawal, and an early surrender returns less than you paid in premium. The surrender mechanics sit in our [IUL vs 401k comparison](/compare/iul-vs-401k/), including what to ask the carrier for before you sign. Money you might need inside ten years belongs in a savings account rather than in either one.",
+      },
+      {
+        heading: "Why Cost of Insurance Has No Roth IRA Equivalent",
+        content:
+          "Cost of insurance (COI) inside an IUL climbs every year you hold it, because the carrier is pricing a death benefit on an older life. The charge is taken from cash value instead of billed to you. Underfund the policy and those charges can drain it until the contract ends and the gain turns taxable, which our [IUL vs 401k comparison](/compare/iul-vs-401k/) works through in detail. A Roth IRA has no equivalent failure, because stopping your contributions simply leaves the balance invested.",
+      },
+      {
+        heading: "When an IUL Fits Alongside a Roth IRA",
+        content:
+          "An IUL fits a household that already maxes a Roth IRA every year and has filled its workplace plan and health savings account. That household also needs a death benefit with no end date and will pay far more than the minimum premium. Miss that last condition and you have bought the lapse risk without the benefit that pays for it.\n\nThe need has to outlast you. An estate that would otherwise sell a building to cover what it owes at death has that need. So does a parent of a special-needs child, whose support has to continue after both parents are gone.\n\nLevel term life covers a temporary need for a small fraction of the premium. Our guide to [indexed universal life insurance](/guides/indexed-universal-life-insurance/) walks through how the crediting formula works. [Private placement life insurance](/guides/private-placement-life-insurance/) covers the version sold to accredited investors, which is where the comparison to a Roth IRA first came from.",
+      },
+      {
+        heading: "Who Should Not Buy an IUL",
+        content:
+          "Skip an IUL if you have not maxed a Roth IRA and your workplace plan first. Skip it if your coverage need ends when your children finish school. Skip it if the most you would ever pay is the carrier's minimum premium, because that version lapses most often.\n\nA high MAGI is not a reason on its own. Do a backdoor Roth, add a mega backdoor Roth if your plan allows one, then use a taxable brokerage account. If your plan also offers an employer match, our [IUL vs 401k comparison](/compare/iul-vs-401k/) covers why that dollar comes ahead of both.\n\nAsk for the guaranteed-rate column of the illustration before you sign. It shows the credit the contract obliges the carrier to pay, while the sales presentation runs on an assumed rate. Compare that column against a plain index fund in a Roth IRA.",
+      },
+      {
+        heading: "What Would Change Our Answer on IUL vs Roth IRA",
+        content:
+          "Closing the backdoor Roth by statute would change our answer more than anything else. High earners would lose the workaround that makes the income phase-out survivable, and an IUL would become one of the few places left to put tax-free money.\n\nTwo smaller changes would also move us. A large increase to the $7,500 IRA limit would shrink the ceiling argument that carries the IUL. A carrier crediting an uncapped index gain over a real floor would change the return side.\n\nNone of that holds in 2026. Model any policy at its guaranteed rate before you sign an application, and run your own IUL vs Roth IRA numbers in the [Roth IRA calculator](/investing/roth-ira-calculator/) first.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the downside to IUL?",
+        answer:
+          "Against a Roth IRA, the biggest downside is that you pay for insurance you may not need. Insurance, administration, and rider charges come out of cash value every month, while a Roth IRA index fund costs a few basis points a year. A cap also keeps part of any index gain, and money you take out early runs into a surrender charge. If the coverage is not the point, buy level term life and send the difference to the Roth IRA.",
+      },
+      {
+        question: "How much money do I need to open an IUL?",
+        answer:
+          "Most carriers will issue an IUL on a few hundred dollars a month. The premium that makes the policy work is much higher than the premium that opens it. A contract funded at its minimum sends very little to cash value and lapses most often. Ask for two numbers before you apply: the minimum premium that keeps the contract in force, and the maximum allowed before it becomes a modified endowment contract. Fund near the top of that range or put the money in a Roth IRA instead.",
+      },
+      {
+        question: "Do wealthy people use IUL?",
+        answer:
+          "Yes, though usually as the account after a Roth IRA rather than instead of one. The Roth IRA stops at $7,500 a year, which a household earning several hundred thousand dollars fills without noticing. An IUL takes premium the Roth IRA cannot. An irrevocable life insurance trust can also hold the policy outside the taxable estate, so the appeal is estate planning more than investment return. If you still have unused Roth IRA room this year, none of that reasoning reaches you.",
+      },
+      {
+        question: "How much will $10,000 in a Roth IRA be worth in 20 years?",
+        answer:
+          "At an assumed 7 percent annual return, $10,000 grows to about $38,700 in 20 years. The arithmetic is $10,000 multiplied by 1.07 to the 20th power, and 1.07 to the 20th is roughly 3.87. Treat that 7 percent as an assumption rather than a forecast. At 5 percent the same $10,000 reaches about $26,500, and at 9 percent about $56,000. Run your own rate in the [Roth IRA calculator](/investing/roth-ira-calculator/).",
+      },
+      {
+        question: "How long will $750,000 last in retirement at 62?",
+        answer:
+          "About 25 years at $30,000 a year, if the portfolio only keeps pace with inflation. That $30,000 is a 4 percent withdrawal rate, and retiring at 62 means planning for 30 years or more, so 4 percent sits at the aggressive end for that age. The account it comes from changes what you can spend. A $30,000 draw from a Roth IRA costs no income tax, while the same $30,000 from a traditional 401(k) is taxed as ordinary income.",
+      },
+      {
+        question: "Is $200 a month enough for Roth IRA?",
+        answer:
+          "Yes, $200 a month is a solid Roth IRA contribution, and it adds up to $2,400 a year against the 2026 limit of $7,500. Raising it to $625 a month fills the account. If $200 a month is what you have, ask whether an IUL premium would take the same $200. A policy funded at that level sits near its minimum premium, which is the version most likely to lapse.",
+      },
+    ],
+    sources: [
+      { label: "IRS: 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS: Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "Legal Information Institute: 26 U.S. Code § 7702", url: "https://www.law.cornell.edu/uscode/text/26/7702" },
+      { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
+    ],
+    relatedComparisons: ["iul-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "whole-life-vs-universal-life-insurance"],
+    calculatorLinks: [
+      { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },
 ];
