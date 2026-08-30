@@ -1,0 +1,65 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-30",
+  "window_start": "2026-08-30",
+  "window_end": "2026-08-30",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-target-date-funds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/retirement/military-retirement-calculator/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 4,
+  "top10_pages_total_clicks": 4,
+  "channel_split": {
+    "/guides/401k-beneficiary-rules/": {
+      "Direct": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/portfolio/": {
+      "Direct": 1
+    },
+    "/retirement/military-retirement-calculator/": {
+      "Unassigned": 1
+    },
+    "/roundup/best-target-date-funds/": {
+      "Direct": 1
+    }
+  }
+}
