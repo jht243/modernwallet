@@ -1,6 +1,6 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-08-30 — keyword-gap-pass-auto appended 5 new gap keywords + 12 already-shipped supporting keywords (see bottom section)._
+> _Updated: 2026-08-30 — keyword-gap-pass-auto shipped 3 new gap keywords + 12 already-shipped supporting keywords; 2 more were written but rolled back on a failed content audit (see bottom section)._
 
 
 ## Autocomplete Discovery Log
@@ -8479,7 +8479,7 @@ SEMRUSH quota was exhausted this run (`API UNITS BALANCE IS ZERO`); Lens 1 fell 
 
 ## 2026-08-30 keyword-gap-pass-auto — newly tracked gap keywords
 
-SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (added `wisemoneylife.com`; see `reports/keyword-pass/2026-08-30.md` for the full reconciliation). 91 raw gap rows (53 core / 38 adjacent) reduced to 5 actionable rows after: 68 branded/off-mission exclusions, 12 already-shipped-but-under-tracked keywords (added below as supporting keywords, not new rows), 9 rows requiring live rate/quote data this pass will not fabricate, and 3 rows dropped by an independent adversarial dedup review as already substantively covered (`how to create a budget`, `figure mortgage payoff`/`early mortgage payoff calculator`, the high-yield-savings "current rates" cluster). Two gaps (income-tax-calculator vertical, HELOC payment calculator) are flagged "left for human" — both need new calculator engines this content-only pass should not improvise.
+SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (added `wisemoneylife.com`; see `reports/keyword-pass/2026-08-30.md` for the full reconciliation). 91 raw gap rows (53 core / 38 adjacent) reduced to 5 actionable rows after: 68 branded/off-mission exclusions, 12 already-shipped-but-under-tracked keywords (added below as supporting keywords, not new rows), 9 rows requiring live rate/quote data this pass will not fabricate, and 3 rows dropped by an independent adversarial dedup review as already substantively covered (`how to create a budget`, `figure mortgage payoff`/`early mortgage payoff calculator`, the high-yield-savings "current rates" cluster). Of the 5 actionable rows, only the 3 body-text rows below shipped — the 2 create-new-content rows (`what is a family trust`, `how to pay off debt`/`debt consolidation`) were written, reworked twice, and still hard-failed the Phase 4 audit on unsplit FAQ-answer sentences, so per the retry-limit rule they were rolled back and are NOT tracked as done; they're listed under "left for human" in `reports/keyword-pass/2026-08-30.md` instead, pending a follow-up run. Two other gaps (income-tax-calculator vertical, HELOC payment calculator) are separately flagged "left for human" — both need new calculator engines this content-only pass should not improvise.
 
 | keyword | action | target | tier | volume |
 |---|---|---|---|---|
@@ -8487,8 +8487,11 @@ SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (added `wisemo
 | mortgage quote / mortgage rate calculator / monthly mortgage payment calculator / home mortgage estimator / mortgage payment estimator | update existing body text | `calculators.ts` → `mortgage` (`/mortgage/`) | core | 165,000 + 27,100 + 9,900 + 9,900 + 6,600 |
 | 30 year mortgage rates | update existing body text (stale-figure correction, folded into mortgage-hub FAQ above) | `calculators.ts` → `mortgage` (`/mortgage/`) | core | 135,000 |
 | car loan payment calculator | update existing body text | `calculators.ts` → `auto-loan` (`/auto-loan/`) | core | 60,500 |
-| what is a family trust | create new content | `guides.ts` → `what-is-a-family-trust` (`/guides/what-is-a-family-trust/`) | adjacent | 110,000 |
-| how to pay off debt / debt consolidation | create new content | `guides.ts` → `how-to-pay-off-debt` (`/guides/how-to-pay-off-debt/`) | adjacent | 450,000 + 1,220,000 |
+
+### Left for human — audit-blocked, NOT shipped (do not re-propose without checking these first)
+
+- `what is a family trust` (110,000/mo) — draft existed at `guides.ts` → `what-is-a-family-trust`, rolled back after 2 failed Phase 4 rework attempts (unsplit long FAQ-answer sentences). Content was otherwise sound (sourced to IRS/SSA/ABA); a follow-up run can likely ship it with one mechanical FAQ-sentence-splitting pass.
+- `how to pay off debt` / `debt consolidation` (450,000 + 1,220,000/mo) — same outcome at `guides.ts` → `how-to-pay-off-debt`, same root cause (5 of 7 FAQ answers had unsplit long sentences), same fix needed.
 
 ### Already-shipped, now tracked as supporting keywords (no page edit this run)
 
