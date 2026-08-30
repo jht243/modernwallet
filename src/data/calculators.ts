@@ -26,6 +26,11 @@ export const CALCULATORS: CalculatorDef[] = [
       "Your monthly car payment is set by three things: the loan amount, the APR, and the loan term. The loan amount is the price minus your down payment and trade-in. In the example above, $35,000 minus $5,000 down leaves a $30,000 loan.\n\nEach payment is split between interest and principal through a process called amortization. Early on, more of your money goes to interest. In month one, the $601.14 payment splits into $187.50 of interest and $413.64 of principal. Over the full 60 months, you pay $6,068 in interest, for a total of $36,068.\n\nTo see the full month-by-month breakdown, use the [auto loan amortization calculator](/auto-loan/amortization-schedule/). To see how a higher payment cuts your interest, try the [auto loan extra payment calculator](/auto-loan/extra-payment-calculator/). Not sure how much car fits your budget first? Start with the [car affordability calculator](/auto-loan/car-affordability-calculator/). Already have a loan and wondering if a lower rate is out there? Run your numbers through the [auto loan refinance calculator](/auto-loan/refinance-calculator/).",
     faqs: [
       {
+        question: "Is this the same as a car loan payment calculator?",
+        answer:
+          "Yes. An auto loan calculator and a car loan payment calculator solve the same problem: your monthly payment from a price, a down payment, an APR, and a term. Enter those four numbers in the calculator above and it returns your payment instantly, plus the full amortization schedule most bare payment calculators skip.",
+      },
+      {
         question: "What is a good interest rate on an auto loan in 2026?",
         answer:
           "A good rate depends on your credit and whether the car is new or used. In mid-2025, the average new-car APR was about 6.8%, and the average used-car APR was about 11.5%, according to Experian. Borrowers with strong credit often qualify for rates below these averages. Always compare offers from a bank or credit union before you visit the dealer.",
@@ -129,7 +134,12 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "What is the current 30-year mortgage rate?",
         answer:
-          "The average 30-year fixed mortgage rate was 6.69% as of August 6, 2026, according to Freddie Mac's Primary Mortgage Market Survey. Rates change weekly, so use today's quoted rate in the calculator above for an accurate estimate. A small rate change moves your payment more than most people expect.",
+          "The average 30-year fixed mortgage rate was 6.66% as of August 27, 2026, according to Freddie Mac's Primary Mortgage Market Survey. Rates change weekly, so use today's quoted rate in the calculator above for an accurate estimate. A small rate change moves your payment more than most people expect.",
+      },
+      {
+        question: "Is a mortgage calculator the same as a mortgage quote or a mortgage estimator?",
+        answer:
+          "A mortgage calculator, a mortgage quote, and a mortgage estimator all point at the same question: what will this loan cost me each month? A quote from a lender is the real, binding version, built from your actual credit and the property. The calculator above is the free, instant version you run before you talk to anyone, using your own home price, down payment, rate, and term to estimate that same monthly principal and interest payment.",
       },
       {
         question: "Why does so little of my early payment go to principal?",

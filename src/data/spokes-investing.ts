@@ -211,6 +211,11 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       "Suppose you open a Roth IRA at age 35 with $10,000 already saved and contribute $583 per month (roughly $7,000 per year, the 2026 limit) for 30 years, earning an average of 7% annually. By age 65 the calculator projects a balance of approximately $730,000. Your total out-of-pocket contributions over that period are about $219,800. The remaining $510,000-plus is tax-free compounded growth — income you will never owe federal tax on in retirement, unlike a traditional IRA or 401(k), where every dollar withdrawn is taxable.",
     faqs: [
       {
+        question: "What is a Roth IRA?",
+        answer:
+          "A Roth IRA is a retirement account funded with after-tax dollars, so qualified withdrawals in retirement, both the money you put in and everything it earns, come out completely tax-free. You get no tax break the year you contribute. In exchange, IRS Publication 590-B exempts qualified distributions from tax entirely, unlike a 401(k) or traditional IRA, where every withdrawal is taxed as ordinary income. Run your own numbers in the calculator above to see how much that tax-free growth is worth over your own time horizon.",
+      },
+      {
         question: "What is the Roth IRA contribution limit for 2026?",
         answer:
           "The 2026 Roth IRA contribution limit is $7,000, or $8,000 if you are age 50 or older — the same as 2024 and 2025 levels per IRS Publication 590-A. The IRS adjusts limits for inflation periodically, so check IRS.gov each year for the current figure.",

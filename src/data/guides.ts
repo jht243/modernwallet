@@ -7293,6 +7293,112 @@ export const GUIDES: Guide[] = [
       { label: "Federal Student Aid — 2026-27 Direct Loan Interest Rates", url: "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027" },
     ],
   },
+
+  {
+    slug: "what-is-a-family-trust",
+    title: "What Is a Family Trust? A Plain-Language Explainer",
+    metaDescription:
+      "What is a family trust? It's usually a revocable living trust that holds assets for your family and skips probate court. See how it works and who needs one.",
+    h1: "What Is a Family Trust?",
+    cardBlurb: "A revocable living trust that holds your assets for your family and skips probate court, if you actually fund it.",
+    intro:
+      "A family trust is a legal arrangement, almost always a revocable living trust, that holds your assets during your lifetime and passes them to the family members you name once you die, without those assets going through probate court. What we see readers get wrong most often is treating the signed trust document as the finished job, when the step that actually makes a trust work, retitling your home, accounts, and other property into the trust's name, is the one people skip. A trust nobody funded still leaves everything in probate, the exact outcome the trust was supposed to prevent.\n\n\"Family trust\" is not a distinct legal category with its own rules. It is a plain-English label for a trust built to benefit your spouse, children, or other relatives, and the trust underneath that label is typically the same revocable living trust described in our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) and [living trust break-even guide](/guides/is-a-living-trust-worth-it/). Some families also use an irrevocable trust for a narrower job, like keeping life insurance proceeds out of a taxable estate. This guide covers how the common revocable version works, where it beats a will, where it doesn't, and what would change that answer for your own situation.",
+    sections: [
+      {
+        heading: "How a Family Trust Actually Works",
+        body: "A family trust holds legal title to your property while you keep full control of it as trustee during your lifetime. You can buy, sell, spend, or give away anything inside the trust exactly as you could before, because a revocable trust is not a separate entity you lose access to. The trust document names a successor trustee, usually a spouse or adult child, who steps in automatically if you become incapacitated or when you die.\n\nThat successor trustee then distributes the trust's assets to your named beneficiaries following your written instructions, without asking a probate court's permission first. Probate is the court process that validates a will, pays remaining debts, and formally transfers what is left; it typically runs several months to over a year and is a matter of public record in most states. A funded revocable trust skips that court process entirely for anything titled in the trust's name.\n\nFunding is the step that decides whether any of that works. You fund a trust by changing the title on your house deed, your bank and brokerage accounts, and any other titled property from your own name to the trust's name. The IRS treats a revocable living trust as a disregarded entity for federal income tax purposes while you're alive, so you keep reporting the trust's income on your own return using your own Social Security number. Nothing about funding the trust changes your taxes; it only changes who legally holds the property.",
+      },
+      {
+        heading: "Family Trust vs. a Will",
+        body: "A will and a family trust both say who gets your property, but they hand it over through different paths. A will only takes effect after you die and only after a probate court approves it, so it does nothing for you while you're alive. A funded revocable trust works the moment your successor trustee needs to act, whether that's because you died or because you became incapacitated and can no longer manage your own finances.\n\nA will still does two things a revocable trust cannot. It names a guardian for minor children, and it can catch any asset you forgot to title into the trust through a \"pour-over\" clause that sends leftover property into the trust at death, though that leftover property still passes through probate first. Most people who set up a family trust keep a simple pour-over will alongside it for exactly this reason, rather than relying on the trust alone.",
+      },
+      {
+        heading: "Revocable vs. Irrevocable: Two Different Jobs",
+        body: "A revocable family trust, the version most people mean by the term, can be changed or canceled by you at any time while you're competent to do so, which is why it offers no asset-protection or estate-tax benefit: the IRS and your creditors still treat trust assets as yours because you can take them back. An irrevocable trust gives up that control permanently in exchange for a specific benefit, most often keeping a large life insurance payout, a family business, or other assets out of your taxable estate.\n\nAn irrevocable life insurance trust (ILIT) is the most common irrevocable version built for a family. It owns your life insurance policy so the death benefit passes to your beneficiaries outside your taxable estate, which only matters if your estate is large enough to face federal estate tax under IRC Section 2001, a threshold that sits in the tens of millions of dollars per person as of 2026 and adjusts for inflation most years. For nearly every family below that threshold, the revocable version covers the actual goal: skip probate, plan for incapacity, and keep the plan private.",
+      },
+      {
+        heading: "Who a Family Trust Is Not For",
+        body: "A family trust is not worth the setup cost for everyone. If your estate is small enough to qualify for your state's simplified small-estate probate process, often available for estates under a set dollar threshold that varies by state, a full trust may cost more to set up than probate would have cost your heirs to begin with. The same goes for someone whose major assets, a 401(k), an IRA, a life insurance policy, or a jointly owned home, already pass outside probate through a beneficiary designation or survivorship, since a trust adds little for property that was never going to see a courtroom.\n\nSee our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) to compare a $1,500 to $5,000 attorney-drafted setup cost against what probate would actually cost your specific estate, and our [living trust break-even guide](/guides/is-a-living-trust-worth-it/) for the full math behind that comparison.",
+      },
+      {
+        heading: "What Would Change the Answer",
+        body: "Three situations tend to flip a family trust from optional to genuinely worth it. Owning real estate in more than one state is the clearest one: without a trust, your family faces a separate probate proceeding, called ancillary probate, in every state where you own property, and a single trust holding all of it avoids each of those extra proceedings. A blended family, where you want your assets to support a current spouse for their lifetime and then pass to children from an earlier marriage, is another, since a trust can sequence that handoff in a way a simple will cannot. A beneficiary with a disability who receives means-tested government benefits is a third: leaving them an inheritance directly can disqualify them from Medicaid or SSI, while a properly drafted special needs trust preserves both the inheritance and the benefits.\n\nIf none of those three apply and your estate is simple, a will alone, paired with correct beneficiary designations, is often the more cost-effective plan.",
+      },
+    ],
+    tools: [
+      { href: "/estate-planning/living-trust-cost-calculator/", label: "Living trust cost calculator" },
+      { href: "/estate-planning/", label: "Estate planning calculator" },
+      { href: "/estate-planning/will-cost-calculator/", label: "Will cost calculator" },
+      { href: "/net-worth/", label: "Net worth calculator" },
+    ],
+    faqs: [
+      { question: "Is a family trust the same as a living trust?", answer: "Almost always, yes. \"Family trust\" describes who the trust is for, usually a spouse, children, or other relatives, while \"living trust\" describes the legal structure: a trust created and funded during your lifetime rather than at death. Most trusts marketed as a family trust are revocable living trusts naming family members as beneficiaries." },
+      { question: "Does a family trust avoid estate taxes?", answer: "A revocable family trust does not reduce estate taxes, because you still control the assets and the IRS treats them as part of your taxable estate. Only an irrevocable trust, where you permanently give up control, can move assets outside your taxable estate, and that only matters if your estate approaches the federal estate tax exemption under IRC Section 2001." },
+      { question: "How much does it cost to set up a family trust?", answer: "An attorney-drafted revocable living trust typically runs $1,500 to $5,000 depending on your state and how complex your assets are, while online services can run lower for a straightforward, single-state estate. See our living trust cost calculator to compare options against what probate would otherwise cost your estate." },
+      { question: "Do I still need a will if I have a family trust?", answer: "Yes. A pour-over will works alongside a family trust to name a guardian for minor children and to catch any asset you forgot to retitle into the trust, sending it into the trust through probate as a backstop rather than leaving it to state intestacy law." },
+      { question: "What happens if I never fund my family trust?", answer: "An unfunded trust protects nothing. If you never retitle your house, accounts, or other property into the trust's name, those assets stay in your own name and go through probate at your death exactly as if you had never created the trust, while you're still out the setup cost." },
+      { question: "Can I be my own trustee of a family trust?", answer: "Yes, and most people are. You typically serve as your own trustee, keeping full control of your assets, while naming a successor trustee, often a spouse or adult child, to take over only if you become incapacitated or when you die." },
+    ],
+    sources: [
+      { label: "IRS — Abusive Trust Tax Evasion Schemes (grantor trust rules)", url: "https://www.irs.gov/businesses/small-businesses-self-employed/abusive-trust-tax-evasion-schemes-questions-and-answers" },
+      { label: "IRS — Estate Tax (IRC Section 2001 exemption)", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "Social Security Administration — Special Needs Trusts and SSI", url: "https://www.ssa.gov/ssi/spotlights/spot-trusts.htm" },
+      { label: "American Bar Association — Estate Planning FAQ", url: "https://www.americanbar.org/groups/real_property_trust_estate/resources/estate_planning/" },
+    ],
+  },
+
+  {
+    slug: "how-to-pay-off-debt",
+    title: "How to Pay Off Debt: Snowball, Avalanche, or Consolidation",
+    metaDescription:
+      "How to pay off debt fast: run the interest math, avoid the minimum-payment trap, then pick snowball, avalanche, or consolidation for your own numbers.",
+    h1: "How to Pay Off Debt",
+    cardBlurb: "Run the interest math, avoid the minimum-payment trap, then pick the payoff method that actually fits your numbers.",
+    intro:
+      "Paying off debt fast comes down to one mechanical fact: any dollar above the minimum payment goes straight to principal, and the order you send those extra dollars to your different debts is the only real decision left to make. What we see readers get stuck on is not the math, it's picking a method and starting, because the debt snowball, the debt avalanche, and a consolidation loan or balance transfer all work, just at different speeds and for different kinds of willpower. This guide covers the part those individual pages don't: how to size up your own debt first, the minimum-payment trap that keeps balances from shrinking at all, and the two options, credit counseling and bankruptcy, that belong in the conversation once the debt is larger than any payoff method can realistically clear.",
+    sections: [
+      {
+        heading: "Size Up Your Debt Before Picking a Method",
+        body: "List every debt with its balance, its annual percentage rate (APR), and its minimum payment before you choose anything. This single list is what makes the avalanche and snowball methods possible, and most people who feel stuck have never actually written it down in one place.\n\nAdd up your total minimum payments and compare that number to your monthly income using our [budget calculator](/budget/) to see how much you can realistically send toward extra debt payments each month. A high-interest card charging 24% APR costs you roughly $240 a year for every $1,000 you carry on it, which is why the size of the rate, not just the size of the balance, decides how urgent a debt actually is.",
+      },
+      {
+        heading: "The Minimum-Payment Trap",
+        body: "A minimum payment is set just high enough to cover that month's interest plus a small sliver of principal, which is why a card paid only at the minimum can take decades to clear. The Consumer Financial Protection Bureau (CFPB) requires card statements to show how long that path actually takes and what paying a larger fixed amount would save, a disclosure most cardholders skim past without reading the number.\n\nIf a payment is ever too low to cover the interest that accrued that month, the balance grows even though you're paying every bill on time, a trap called negative amortization. Confirm your own payment clears this bar with our [credit card payoff calculator](/credit-card-payoff/) before you assume the minimum is doing anything for you at all.",
+      },
+      {
+        heading: "Snowball, Avalanche, or Consolidation: Which Fits You",
+        body: "The debt avalanche sends every spare dollar to your highest-APR balance first, which mathematically minimizes total interest paid across every method. The debt snowball sends it to your smallest balance first regardless of rate, trading some of that interest savings for the faster, motivating win of closing an account sooner. Our [debt snowball vs. avalanche comparison](/compare/debt-snowball-vs-avalanche/) walks through both methods on the same set of sample balances if you want the full worked math before you choose.\n\nConsolidation replaces several debts with a single new one, either a personal loan or a 0% introductory-APR balance transfer card, and it helps only when the new rate is genuinely lower than the blended rate you're paying now. Our [personal loans for excellent credit guide](/guides/personal-loans-for-excellent-credit/) covers exactly when a consolidation loan beats a balance transfer card and when it doesn't. Consolidation without a real rate improvement, or without also cutting the spending that created the balances, tends to just add a new due date to the same problem.",
+      },
+      {
+        heading: "Who Debt Consolidation Is Not For",
+        body: "Consolidation is a poor fit if your credit doesn't qualify you for a rate meaningfully below your current cards, since a new loan at a similar or higher rate just adds an origination fee on top of the same debt. It's also the wrong move for anyone who has consolidated before and run the old cards back up afterward, because a consolidation loan does nothing about the spending pattern that created the balance in the first place; the snowball or avalanche, paired with a hard look at the budget, addresses that directly instead.",
+      },
+      {
+        heading: "When the Debt Is Bigger Than Any Payoff Method",
+        body: "Credit counseling and bankruptcy are the two options every debt guide skips, and they belong in this one because sometimes the honest math says a payoff plan alone won't work. A nonprofit credit counseling agency accredited by the National Foundation for Credit Counseling can set up a debt management plan (DMP): you make one monthly payment to the agency, and it distributes payments to your creditors, often at a reduced interest rate the agency negotiated on your behalf. A DMP typically runs three to five years and usually requires closing the enrolled credit accounts.\n\nBankruptcy is a federal legal process, and the two versions consumers use work differently. Chapter 7 can discharge most unsecured debt within a few months but requires passing a means test tied to your state's median income. Chapter 13 sets up a three-to-five-year repayment plan for filers who don't qualify for Chapter 7 or who want to keep an asset like a house that a Chapter 7 filing would put at risk. The United States Courts' own bankruptcy basics page and a consultation with a bankruptcy attorney are the right next step once your total unsecured debt is large enough, relative to your income, that even the avalanche method would take a decade or more to clear.",
+      },
+    ],
+    tools: [
+      { href: "/credit-card-payoff/", label: "Credit card payoff calculator" },
+      { href: "/budget/", label: "Budget calculator" },
+      { href: "/personal-loan/", label: "Personal loan calculator" },
+      { href: "/net-worth/", label: "Net worth calculator" },
+    ],
+    faqs: [
+      { question: "What is the fastest way to pay off debt?", answer: "The debt avalanche, paying extra toward your highest-APR balance first while covering minimums on the rest, clears debt fastest in dollar terms because it minimizes total interest paid. The debt snowball is usually faster in practice for someone who needs an early win to stay motivated, even though it isn't the mathematically optimal order." },
+      { question: "Is debt consolidation a good idea?", answer: "Debt consolidation is a good idea only when the new loan or balance-transfer rate is meaningfully lower than what you're paying now and you've addressed the spending that created the balances. Without both of those, consolidation just moves the debt to a new account rather than reducing what you owe." },
+      { question: "Should I pay off debt or invest first?", answer: "Match your employer's 401(k) contribution first, since that's an immediate return no debt payoff can beat, then compare your debt's interest rate to your expected investment return. Our pay-off-debt-or-invest guide walks through the full decision, but a debt charging more than roughly 7% to 8% is usually worth clearing before you invest beyond the match." },
+      { question: "What is a debt management plan?", answer: "A debt management plan is an agreement, set up through a nonprofit credit counseling agency accredited by the National Foundation for Credit Counseling, that consolidates your payments into one monthly amount the agency distributes to your creditors, often at a reduced interest rate. It typically runs three to five years and usually requires closing the accounts involved." },
+      { question: "When should I consider bankruptcy instead of a payoff plan?", answer: "Bankruptcy is worth discussing with an attorney when your total unsecured debt, relative to your income, would take a decade or more to clear even under the avalanche method, or when a state means test qualifies you for a Chapter 7 discharge in a few months rather than years of repayment." },
+      { question: "Does paying more than the minimum always help?", answer: "Yes, any amount above the minimum payment goes straight to reducing principal rather than covering that month's interest, which shrinks both the balance and the interest that accrues on it going forward. The size of the extra payment decides how much faster the debt clears, which our credit card payoff calculator can show for your own balance and rate." },
+      { question: "Will paying off debt hurt my credit score?", answer: "No, paying down a balance lowers your credit utilization ratio, the amount you owe divided by your total available credit, which both FICO and VantageScore weigh heavily and reward almost immediately. The one step that can backfire is closing the account right after payoff. Keeping a paid-off card open, even unused, preserves that available credit and keeps your utilization ratio low, while closing it shrinks your total available credit and can push the ratio, and your score, in the wrong direction." },
+    ],
+    sources: [
+      { label: "Consumer Financial Protection Bureau — Credit Card Minimum Payment Warning", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-minimum-payment-warning-en-45/" },
+      { label: "National Foundation for Credit Counseling — Debt Management Plans", url: "https://www.nfcc.org/resources/debt-management-plans/" },
+      { label: "United States Courts — Bankruptcy Basics", url: "https://www.uscourts.gov/services-forms/bankruptcy/bankruptcy-basics" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

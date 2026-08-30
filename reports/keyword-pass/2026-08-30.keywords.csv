@@ -1,0 +1,12 @@
+keyword,action,target_page_or_new_url,lens,tier,volume,notes
+what is a roth ira,update existing body,/investing/roth-ira-calculator/,lens1-competitor-gap,core,165000,vs fidelity.com #1; add exact-match FAQ
+mortgage quote,update existing body,/mortgage/,lens1-competitor-gap,core,165000,vs mortgagecalculator.org #1; synonym FAQ
+30 year mortgage rates,update existing body,/mortgage/,lens1-competitor-gap,core,135000,vs bankrate.com #2; folded into stale-rate FAQ correction (6.69%->6.66% per Freddie Mac PMMS Aug 27 2026)
+mortgage rate calculator,update existing body,/mortgage/,lens1-competitor-gap,core,27100,vs mortgagecalculator.org #2; synonym FAQ
+car loan payment calculator,update existing body,/auto-loan/,lens1-competitor-gap,core,60500,vs bankrate.com #2; synonym FAQ
+monthly mortgage payment calculator,update existing body,/mortgage/,lens1-competitor-gap,core,9900,vs mortgagecalculator.org #1; synonym FAQ
+home mortgage estimator,update existing body,/mortgage/,lens1-competitor-gap,core,9900,vs mortgagecalculator.org #1; synonym FAQ
+mortgage payment estimator,update existing body,/mortgage/,lens1-competitor-gap,core,6600,vs mortgagecalculator.org #1; synonym FAQ
+what is a family trust,create new content,/guides/what-is-a-family-trust/,lens1-competitor-gap,adjacent,110000,vs smartasset.com #9; new explainer guide
+how to pay off debt,create new content,/guides/how-to-pay-off-debt/,lens1-competitor-gap,adjacent,450000,vs ramseysolutions.com #8; new decision-framework guide
+debt consolidation,create new content,/guides/how-to-pay-off-debt/,lens1-competitor-gap,adjacent,1220000,vs nerdwallet.com #1; folded into same new guide as a major section

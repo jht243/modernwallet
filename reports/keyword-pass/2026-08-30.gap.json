@@ -1,0 +1,933 @@
+{
+  "our_domain": "themodernwallet.com",
+  "database": "us",
+  "competitors": [
+    "calculator.net",
+    "bankrate.com",
+    "nerdwallet.com",
+    "smartasset.com",
+    "investopedia.com",
+    "mortgagecalculator.org",
+    "ramseysolutions.com",
+    "fidelity.com",
+    "themodestwallet.com",
+    "wisemoneylife.com"
+  ],
+  "our_organic_count": 176,
+  "tracked_count": 8332,
+  "gap_count": 91,
+  "core_count": 53,
+  "adjacent_count": 38,
+  "gaps": [
+    {
+      "keyword": "refinance rates",
+      "volume": 1220000,
+      "kd": 0.03,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/refinance-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage rates today",
+      "volume": 1000000,
+      "kd": 0.38,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "rocket mortgage",
+      "volume": 823000,
+      "kd": 0.49,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 5,
+      "comp_url": "https://www.bankrate.com/mortgages/reviews/rocket-mortgage/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage rates",
+      "volume": 550000,
+      "kd": 0.37,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "how to budget",
+      "volume": 550000,
+      "kd": 0.36,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 7,
+      "comp_url": "https://www.ramseysolutions.com/budgeting/how-to-budget",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "real estate",
+      "volume": 368000,
+      "kd": 0.24,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 4,
+      "comp_url": "https://www.investopedia.com/terms/r/realestate.asp",
+      "competitor": "investopedia.com"
+    },
+    {
+      "keyword": "current mortgage rates",
+      "volume": 301000,
+      "kd": 0.49,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "roth ira",
+      "volume": 301000,
+      "kd": 0.55,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/retirement/roth-ira",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "mortgage quote",
+      "volume": 165000,
+      "kd": 0.24,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "fidelity 401k",
+      "volume": 165000,
+      "kd": 0.03,
+      "intent": "2,3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://netbenefits.fidelity.com/",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "what is a roth ira",
+      "volume": 165000,
+      "kd": 0.27,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/learning-center/smart-money/how-does-a-roth-ira-work",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "30 year mortgage rates",
+      "volume": 135000,
+      "kd": 0.25,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.bankrate.com/mortgages/30-year-mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "mortgage",
+      "volume": 135000,
+      "kd": 0.29,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "roth ira calculator",
+      "volume": 110000,
+      "kd": 0.12,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/investing/calculators/roth-ira-calculator",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "best free budget templates",
+      "volume": 110000,
+      "kd": 0.55,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/finance/learn/free-budget-spreadsheets-templates",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "how to create a budget",
+      "volume": 110000,
+      "kd": 0.49,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 6,
+      "comp_url": "https://www.ramseysolutions.com/budgeting/how-to-budget",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "zillow mortgage calculator",
+      "volume": 74000,
+      "kd": 0.33,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "bankrate mortgage calculator",
+      "volume": 60500,
+      "kd": 0.33,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "car loan payment calculator",
+      "volume": 60500,
+      "kd": 0.3,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.bankrate.com/loans/auto-loans/auto-loan-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "401k fidelity",
+      "volume": 49500,
+      "kd": 0.03,
+      "intent": "2,3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://netbenefits.fidelity.com/",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "nerdwallet mortgage calculator",
+      "volume": 40500,
+      "kd": 0.03,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/mortgages/calculators/mortgage-calculator",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "nerdwallet auto loan calculator",
+      "volume": 33100,
+      "kd": 0.01,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/auto-loans/calculators/auto-loan-calculator",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "nerdwallet mortgage rates",
+      "volume": 33100,
+      "kd": 0.04,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/mortgages/mortgage-rates",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "mortgage rate calculator",
+      "volume": 27100,
+      "kd": 0.35,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 2,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "figure mortgage payoff",
+      "volume": 27100,
+      "kd": 0.04,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "dave ramsey investment calculator",
+      "volume": 22200,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "bankrate mortgage rates",
+      "volume": 18100,
+      "kd": 0.01,
+      "intent": "2,3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/mortgages/mortgage-rates/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "dave ramsey retirement calculator",
+      "volume": 18100,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/retirement-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "payment calculator home equity line",
+      "volume": 14800,
+      "kd": 0.66,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/calcs/heloc-repayment.php",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "ramsey investment calculator",
+      "volume": 14800,
+      "kd": 0.02,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "best roth ira accounts",
+      "volume": 14800,
+      "kd": 0.71,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 35,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "dave ramsey mortgage calculator",
+      "volume": 12100,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "ramsey retirement calculator",
+      "volume": 12100,
+      "kd": 0.02,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/retirement-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "ramsey invest calc",
+      "volume": 12100,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/retirement/investment-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "bankrate auto loan calculator",
+      "volume": 9900,
+      "kd": 0.33,
+      "intent": "3",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.bankrate.com/loans/auto-loans/auto-loan-calculator/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "home mortgage estimator",
+      "volume": 9900,
+      "kd": 0.42,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "monthly mortgage payment calculator",
+      "volume": 9900,
+      "kd": 0.51,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "mortgage payment calculator mortgage payment calculator",
+      "volume": 8100,
+      "kd": 0.34,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "ramsey mortgage calculator",
+      "volume": 8100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "early mortgage payoff calculator",
+      "volume": 8100,
+      "kd": 0.05,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "mortgage payment estimator",
+      "volume": 6600,
+      "kd": 0.62,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.mortgagecalculator.org/",
+      "competitor": "mortgagecalculator.org"
+    },
+    {
+      "keyword": "best ira accounts",
+      "volume": 6600,
+      "kd": 0.66,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 25,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "best ira",
+      "volume": 4400,
+      "kd": 0.66,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 27,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "smartasset retirement calculator",
+      "volume": 2900,
+      "kd": 0.01,
+      "intent": "2",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/retirement/retirement-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "ramsey mortgage payoff calculator",
+      "volume": 2900,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "dave ramsey mortgage payoff calculator",
+      "volume": 2900,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "core",
+      "comp_position": 1,
+      "comp_url": "https://www.ramseysolutions.com/real-estate/mortgage-payoff-calculator",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "best traditional ira accounts",
+      "volume": 480,
+      "kd": 0.72,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 9,
+      "comp_url": "https://themodestwallet.com/best-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "top roth ira accounts",
+      "volume": 480,
+      "kd": 0.67,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 13,
+      "comp_url": "https://themodestwallet.com/best-roth-ira-accounts/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "highest yield savings account rates",
+      "volume": 320,
+      "kd": 0.66,
+      "intent": "0,1",
+      "tier": "core",
+      "comp_position": 71,
+      "comp_url": "https://wisemoneylife.com/high-yield-savings-accounts/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "traditional ira providers",
+      "volume": 320,
+      "kd": 0.33,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 91,
+      "comp_url": "https://wisemoneylife.com/best-ira-accounts/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "who has the highest high yield savings account",
+      "volume": 170,
+      "kd": 0.78,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 86,
+      "comp_url": "https://wisemoneylife.com/high-yield-savings-accounts/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "high yield savings account current rates",
+      "volume": 110,
+      "kd": 0.74,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 77,
+      "comp_url": "https://wisemoneylife.com/high-yield-savings-accounts/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "best ira for rollover",
+      "volume": 110,
+      "kd": 0.64,
+      "intent": "0",
+      "tier": "core",
+      "comp_position": 88,
+      "comp_url": "https://wisemoneylife.com/best-ira-accounts/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "credit cards",
+      "volume": 1830000,
+      "kd": 0.26,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 5,
+      "comp_url": "https://www.bankrate.com/credit-cards/",
+      "competitor": "bankrate.com"
+    },
+    {
+      "keyword": "life insurance",
+      "volume": 1830000,
+      "kd": 0.04,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 5,
+      "comp_url": "https://www.nerdwallet.com/insurance/life/life-insurance-quotes",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "car insurance quotes",
+      "volume": 1830000,
+      "kd": 0.19,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 11,
+      "comp_url": "https://www.nerdwallet.com/insurance/auto/car-insurance",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "debt consolidation",
+      "volume": 1220000,
+      "kd": 0.07,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/personal-loans/learn/what-is-debt-consolidation",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "term life insurance",
+      "volume": 1220000,
+      "kd": 0.04,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/wealth/term-life-insurance",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "whole life insurance",
+      "volume": 1220000,
+      "kd": 0.04,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 7,
+      "comp_url": "https://www.investopedia.com/terms/w/wholelife.asp",
+      "competitor": "investopedia.com"
+    },
+    {
+      "keyword": "car insurance",
+      "volume": 1000000,
+      "kd": 0.68,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 6,
+      "comp_url": "https://www.nerdwallet.com/insurance/auto/car-insurance",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "best credit cards",
+      "volume": 673000,
+      "kd": 0.74,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "best insurance",
+      "volume": 550000,
+      "kd": 0.57,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 7,
+      "comp_url": "https://www.nerdwallet.com/insurance/auto/best-car-insurance-companies",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "how to pay off debt",
+      "volume": 450000,
+      "kd": 0.54,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 8,
+      "comp_url": "https://www.ramseysolutions.com/debt/how-to-pay-off-debt",
+      "competitor": "ramseysolutions.com"
+    },
+    {
+      "keyword": "renters insurance quotes",
+      "volume": 246000,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/insurance/renters/renters-insurance-quotes",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "what is a family trust",
+      "volume": 110000,
+      "kd": 0.2,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 9,
+      "comp_url": "https://smartasset.com/financial-advisor/family-trust",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "renters insurance quote",
+      "volume": 90500,
+      "kd": 0.06,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://www.nerdwallet.com/insurance/renters/renters-insurance-quotes",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "best credit cards 2025",
+      "volume": 60500,
+      "kd": 0.67,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "nerdwallet best credit cards",
+      "volume": 33100,
+      "kd": 0.61,
+      "intent": "0,2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards/best",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "nerdwallet credit cards",
+      "volume": 33100,
+      "kd": 0.43,
+      "intent": "0,2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.nerdwallet.com/credit-cards",
+      "competitor": "nerdwallet.com"
+    },
+    {
+      "keyword": "income tax estimator",
+      "volume": 33100,
+      "kd": 0.07,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 3,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "fidelity credit card",
+      "volume": 33100,
+      "kd": 0.05,
+      "intent": "1,3",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/spend-save/visa-signature-card",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "salary calculator arkansas",
+      "volume": 27100,
+      "kd": 0.33,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 2,
+      "comp_url": "https://smartasset.com/taxes/arkansas-paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "fidelity hsa",
+      "volume": 27100,
+      "kd": 0.02,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://www.fidelity.com/go/hsa/why-hsa",
+      "competitor": "fidelity.com"
+    },
+    {
+      "keyword": "federal tax calculator",
+      "volume": 14800,
+      "kd": 0.01,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "figure federal tax",
+      "volume": 12100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "california income tax calculator",
+      "volume": 12100,
+      "kd": 0.01,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/california-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "side hustle ideas to make extra money",
+      "volume": 12100,
+      "kd": 0.0,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 44,
+      "comp_url": "https://themodestwallet.com/side-hustle-ideas/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "federal income tax rate calculator",
+      "volume": 9900,
+      "kd": 0.02,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "new york income tax calculator",
+      "volume": 8100,
+      "kd": 0.33,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/new-york-tax-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "side hustle ideas from home",
+      "volume": 8100,
+      "kd": 0.38,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 43,
+      "comp_url": "https://themodestwallet.com/side-hustle-ideas/",
+      "competitor": "themodestwallet.com"
+    },
+    {
+      "keyword": "smartasset tax calculator",
+      "volume": 6600,
+      "kd": 0.33,
+      "intent": "2,3",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "smartasset income tax calculator",
+      "volume": 5400,
+      "kd": 0.33,
+      "intent": "2,3",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/income-taxes",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "smartasset salary calculator",
+      "volume": 2900,
+      "kd": 0.33,
+      "intent": "2",
+      "tier": "adjacent",
+      "comp_position": 1,
+      "comp_url": "https://smartasset.com/taxes/paycheck-calculator",
+      "competitor": "smartasset.com"
+    },
+    {
+      "keyword": "capital one quicksilver cash rewards credit card:",
+      "volume": 1300,
+      "kd": 0.02,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 78,
+      "comp_url": "https://wisemoneylife.com/the-capital-one-quicksilver-cash-rewards-credit-card/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "best credit card for airport lounges",
+      "volume": 880,
+      "kd": 0.71,
+      "intent": "0",
+      "tier": "adjacent",
+      "comp_position": 69,
+      "comp_url": "https://wisemoneylife.com/best-airport-lounge-credit-card/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "capital one quicksilver one cash rewards credit card",
+      "volume": 390,
+      "kd": 0.06,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 78,
+      "comp_url": "https://wisemoneylife.com/the-capital-one-quicksilver-cash-rewards-credit-card/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "credit needed for fha loan",
+      "volume": 320,
+      "kd": 0.44,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 93,
+      "comp_url": "https://wisemoneylife.com/fha-loan/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "credit for chase sapphire reserve",
+      "volume": 260,
+      "kd": 0.16,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 87,
+      "comp_url": "https://wisemoneylife.com/chase-sapphire-reserve-credit-card-comes-with-unbelievable-benefits/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "benefits of chase sapphire credit card",
+      "volume": 260,
+      "kd": 0.26,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 82,
+      "comp_url": "https://wisemoneylife.com/chase-sapphire-reserve-credit-card-comes-with-unbelievable-benefits/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "usda income requirements",
+      "volume": 210,
+      "kd": 0.11,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 80,
+      "comp_url": "https://wisemoneylife.com/usda/",
+      "competitor": "wisemoneylife.com"
+    },
+    {
+      "keyword": "sapphire credit",
+      "volume": 110,
+      "kd": 0.63,
+      "intent": "1",
+      "tier": "adjacent",
+      "comp_position": 46,
+      "comp_url": "https://wisemoneylife.com/chase-sapphire-reserve-credit-card-comes-with-unbelievable-benefits/",
+      "competitor": "wisemoneylife.com"
+    }
+  ]
+}
