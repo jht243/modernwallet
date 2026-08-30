@@ -38,7 +38,10 @@ def top_rows(session, site_url: str, start: str, end: str, dimension: str, limit
         "endDate": end,
         "dimensions": [dimension],
         "dataState": "all",
-        "rowLimit": max(limit, 25),
+        # Full row set (GSC caps at 25k). A small rowLimit makes GSC return an
+        # arbitrary/alphabetical slice, NOT the top rows — sort locally over
+        # everything, then cut to `limit`.
+        "rowLimit": 25000,
     }
     resp = query_search_analytics(session, site_url, body)
     rows = [{
