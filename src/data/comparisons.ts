@@ -9937,6 +9937,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["401k-vs-roth-ira", "iul-vs-roth-ira", "whole-life-vs-universal-life-insurance", "term-life-vs-universal-life-insurance"],
     calculatorLinks: [
+      { label: "Run your own IUL projection", href: "/iul-calculator/" },
       { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
       { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
     ],
@@ -10054,6 +10055,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["iul-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "whole-life-vs-universal-life-insurance"],
     calculatorLinks: [
+      { label: "Run your own IUL projection", href: "/iul-calculator/" },
       { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },

@@ -1224,6 +1224,98 @@ export const CALCULATORS: CalculatorDef[] = [
       taxRatePct: 22,
     },
   },
+  {
+    id: "iul-calculator",
+    islandId: "iul-calculator",
+    label: "IUL",
+    navOrder: 21,
+    metaTitle: "IUL Calculator: What the Cap and Fees Cost",
+    metaDescription:
+      "Free IUL calculator projects indexed universal life cash value year by year, showing what the cap and the rising cost of insurance take out.",
+    targetKeyword: "iul calculator",
+    h1: "IUL Calculator",
+    intro:
+      "This IUL calculator projects an indexed universal life policy year by year and shows what the cap and the cost of insurance actually take out of it. Every guide we write here starts from the math, and on an indexed universal life policy the math turns on charges the sales illustration tends to leave in the footnotes.\n\nEnter your premium, the death benefit, and the cap and participation rate you were quoted. The calculator projects cash value, surrender value, and the death benefit to the age you pick. It runs the same premium into a 401(k) or a taxable brokerage account beside it so you can see both paths at once.\n\nOn the numbers loaded above, a 40-year-old paying $12,000 a year for 20 years into a $500,000 policy reaches a surrender value of $583,785 at age 70. The same policy with no cap would have reached $1,277,172. The cap cost $693,386, and the cost of insurance took another $49,109.",
+    howItWorks:
+      "An indexed universal life policy credits interest tied to a stock index, but it does not own the index and it does not pay you the index return. Three settings decide what actually lands in your account. The participation rate is the share of the index move you start with. The cap is the ceiling on that credited rate in a good year. The floor, usually 0%, is what you get in a year the index falls.\n\nThe cap is the setting that costs the most and gets the least attention. In the projection above, year 1 has the index up 19.7% while the policy credits 9%, the cap. That single year hands back $1,207. Repeat it across 30 years and the gap compounds: $583,785 with the cap against $1,277,172 without it. The calculator shows both, because one number without the other is a sales illustration rather than a projection.\n\nCost of insurance is the charge that ends policies. It is billed against the net amount at risk, which is the death benefit minus your cash value, at a rate per $1,000 that rises every year you age. It comes out of cash value. You never write a check for it, so it is easy to miss. While you are still paying premiums it is invisible, because the premium is larger than the charge. After the premiums stop, it is the only thing moving.\n\nThe 0% floor gets misread here. It sets a minimum on the credited rate. It does not set a minimum on your balance. In year 23 of the projection above, the index falls 8.3% and the policy credits 0%, exactly as advertised. Cash value still drops $1,370 that year, because the $1,250 cost of insurance and the $120 annual admin fee are deducted regardless. A floor is not a guarantee that your money cannot go down.\n\nSurrender value is what you would actually walk away with, and for the first several years it is meaningfully less than the cash value. The surrender charge starts at a percentage of cash value and grades to zero over a set number of years. In year 1 above, cash value is $10,956 while surrender value is $9,860, against $12,000 of premium paid. Most of the loss in an indexed universal life policy comes from cancelling early.\n\nThe baseline column runs your premium dollars into a 401(k) with an employer match or a taxable brokerage account instead. With a 50% match, the 401(k) reaches $1,520,634 against the policy's $583,785. Against a taxable brokerage at the same 7% return, the policy trails by $130,639. The match is doing most of that work. Our [IUL vs 401k comparison](/compare/iul-vs-401k/) treats the match as the deciding fact, and our [IUL vs Roth IRA comparison](/compare/iul-vs-roth-ira/) turns on the contribution ceiling instead.\n\nThe defaults loaded above are illustrative assumptions. No carrier's published rates, real cap, or cost-of-insurance table is built into this tool. Ask for an in-force illustration run at the guaranteed maximum charges, then enter those figures here.",
+    faqs: [
+      {
+        question: "Is an IUL a good investment?",
+        answer:
+          "An indexed universal life policy is life insurance with a savings component. It is usually a poor substitute for a retirement account. On the projection above, the policy ends at $583,785 while the same dollars in a 401(k) with a 50% match reach $1,520,634. It fits a narrow case: someone already maxing every tax-advantaged account who also needs a permanent death benefit and will fund the policy well above its minimum. If you are choosing between a policy and an unfunded 401(k) match, the match wins on arithmetic that is not close.",
+      },
+      {
+        question: "How much does an IUL cost per month?",
+        answer:
+          "There is no standard monthly cost, because the charge depends on your age, health, the death benefit, and the carrier's own rate table. The shape is predictable: the cost of insurance is charged on the death benefit minus your cash value, and the rate per $1,000 rises every year you age. On the assumptions loaded above, the annual charge starts at $1,219 and totals $49,109 over 30 years. Ask any agent for the policy's guaranteed maximum charges. The illustrated ones are not the number to plan on. Enter the guaranteed figures here.",
+      },
+      {
+        question: "What happens if I stop paying premiums on an IUL?",
+        answer:
+          "The charges keep coming out of cash value until the cash value runs out, and then the policy lapses and the coverage ends. This is the most common way an indexed universal life policy fails. Set the premium low against a large death benefit in the calculator above and you can watch it happen. At $2,400 a year against a $750,000 death benefit, the policy lapses in year 7, at age 46, after $16,800 of premiums. If a lapsed policy has gain in it, a tax bill can follow the loss of coverage.",
+      },
+      {
+        question: "Can the insurance company lower my cap rate?",
+        answer:
+          "Yes, on most products, and this is the single most important question to ask before you sign. The cap is typically declared by the carrier and can be reset on a policy already in force. The rate in your illustration is not a rate you are owed. Two things are contractual. The guaranteed minimum floor and the guaranteed maximum charges hold. Ask which elements of your specific policy are guaranteed in writing, then run this calculator again with the cap lowered to see what the downside looks like.",
+      },
+      {
+        question: "What is the 0% floor protecting?",
+        answer:
+          "The floor sets a minimum on the credited interest rate. It does not set one on your balance. In a year the index falls, the policy credits 0% instead of a negative number, which is real protection against market loss. The policy charges are still deducted from cash value that same year. Toggle the year-by-year table and watch a 0% year after your premiums stop. The balance still shrinks. The floor stops a negative credit and does nothing about the charges.",
+      },
+      {
+        question: "Is this the same as an infinite banking calculator?",
+        answer:
+          "Infinite banking usually describes an overfunded whole life policy rather than an indexed universal life one, so the crediting mechanics differ. The cost structure is the same idea: premiums go in, charges come out of cash value, and you borrow against what is left. A policy loan is not free money. It is a loan against your own cash value that accrues interest and reduces the death benefit if you never repay it. Our [infinite banking guide](/guides/infinite-banking/) works through the break-even math, and our [guide to borrowing against life insurance](/guides/borrowing-against-life-insurance/) covers the loan mechanics.",
+      },
+      {
+        question: "Why is the surrender value lower than the cash value?",
+        answer:
+          "A surrender charge applies for the first several policy years. It grades down to zero on a schedule written into the contract. Cash value is the account balance. Surrender value is what the carrier would pay you to cancel. On the numbers above, year 1 shows $10,956 of cash value against $9,860 of surrender value, after $12,000 of premium. Ask for the surrender-charge schedule in writing before you sign, because it varies by product and by your age at issue.",
+      },
+      {
+        question: "How does an IUL compare to a Roth IRA or a 401(k)?",
+        answer:
+          "Both accounts beat the policy on cost and access, and the 401(k) adds an employer match the policy cannot match. An indexed universal life policy has no federal contribution cap. A saver who has already filled every tax-advantaged account can keep putting money in. That is a real advantage for a small number of people. Our [IUL vs 401k comparison](/compare/iul-vs-401k/) and [IUL vs Roth IRA comparison](/compare/iul-vs-roth-ira/) work through each decision, and the [taxable vs tax-deferred calculator](/taxable-vs-tax-deferred/) shows the three-way tax math on ordinary accounts.",
+      },
+      {
+        question: "Does this calculator model taxes on the policy?",
+        answer:
+          "No. It models the policy's cash value, charges, and surrender value, and it applies a tax rate only to the taxable brokerage baseline. It does not model modified endowment contract status, the IRC section 7702 premium limits, or how a policy loan is taxed. Each of those can change the outcome for a specific policy. It does approximate the section 7702 corridor that keeps a death benefit above cash value, because ignoring it would understate the cost of insurance. Treat every figure here as an illustration of the assumptions you entered.",
+      },
+    ],
+    sources: [
+      { label: "NAIC — Life Insurance Illustrations Model Regulation", url: "https://content.naic.org/sites/default/files/model-law-582.pdf" },
+      { label: "NAIC — Life Insurance Consumer Information", url: "https://content.naic.org/consumer/life-insurance.htm" },
+      { label: "FINRA — Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
+      { label: "Legal Information Institute — 26 U.S. Code 7702", url: "https://www.law.cornell.edu/uscode/text/26/7702" },
+      { label: "Wisconsin Office of the Commissioner of Insurance — Consumer Alert on Universal Life Insurance", url: "https://oci.wi.gov/Pages/Regulation/CA20211203UniversalLifeInsurance.aspx" },
+    ],
+    defaultPreset: {
+      annualPremium: 12000,
+      yearsFunded: 20,
+      currentAge: 40,
+      projectToAge: 70,
+      deathBenefit: 500000,
+      capRatePct: 9,
+      participationRatePct: 100,
+      floorPct: 0,
+      assumedIndexReturnPct: 7,
+      variableReturns: true,
+      coiPerThousand: 2.5,
+      coiEscalationPct: 8,
+      premiumLoadPct: 6,
+      monthlyAdminFee: 10,
+      surrenderChargePct: 10,
+      surrenderChargeYears: 10,
+      baseline: "401k",
+      baselineReturnPct: 7,
+      baselineExpenseRatioPct: 0.1,
+      employerMatchPct: 50,
+      taxRatePct: 24,
+    },
+  },
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,
