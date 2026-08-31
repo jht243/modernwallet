@@ -1392,6 +1392,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         content:
           "Trust & Will offers a $299 attorney review add-on. Rocket Lawyer's membership includes attorney consultations. LegalZoom Premium ($299 individual / $399 couple) includes attorney consultation. These hybrid options give you attorney eyes on an online-drafted document at meaningfully lower cost than full attorney drafting. They're a reasonable middle path when your situation is close to but not clearly in the DIY-appropriate box.",
       },
+      {
+        heading: "Testamentary Trust vs. Living Trust: Which Belongs in Your Plan?",
+        content:
+          "A will that creates a testamentary trust only funds and activates that trust after death, once the will itself goes through probate — the trust exists on paper the whole time but holds nothing until a judge admits the will. A living trust is funded and active while you're alive, so assets titled into it skip probate entirely and pass to beneficiaries directly under the trust's terms.\n\nCost follows that same split. A will with a testamentary trust provision is the cheaper document to draft up front, but every asset it controls still passes through probate at death, with the time and court fees that involves in your state. A living trust costs more to set up, since you're also retitling assets into it, but a well-funded one avoids probate on everything it holds.\n\nFor most families, a testamentary trust is the right, cheaper tool when the only real need is age-based distributions to minor children — say, releasing an inheritance at 25 instead of 18 — and the estate is modest enough that probate's cost and delay aren't a serious concern. A living trust earns its higher setup cost when privacy matters (a will becomes a public probate record; a trust generally doesn't), when the estate is large enough that probate delay would be genuinely costly, or when you own property in more than one state, since a testamentary trust can't prevent a second, ancillary probate in a state where you hold real estate.",
+      },
     ],
     faqs: [
       {
@@ -1418,6 +1423,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         question: "Can I do a will and living trust online?",
         answer:
           "Yes for both, though the trust is more complex. Trust & Will's trust plan ($499 individual / $599 couple) produces a valid revocable living trust plus a pour-over will and supporting documents. LegalZoom Living Trust is ~$279. Nolo Quicken WillMaker Plus ($139) includes an RLT template. Online is not appropriate for irrevocable trusts (ILIT, MAPT, dynasty), Medicaid planning, or estates above state tax exemption thresholds where credit-shelter planning is needed. For those, attorney-drafted is warranted.",
+      },
+      {
+        question: "What's the difference between a testamentary trust and a living trust?",
+        answer:
+          "A testamentary trust is created inside a will and only funds after death, once the will clears probate — it's cheaper to set up but doesn't avoid probate on the assets it controls. A living trust is funded while you're alive, so assets titled into it skip probate entirely, at the cost of more setup work and higher up-front fees to retitle those assets.",
       },
     ],
     sources: [
@@ -5566,6 +5576,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         content:
           "Buying term and investing the premium difference in a 401(k), IRA, or brokerage account usually outperforms a universal life policy's credited rate over long periods, since the invested money isn't also paying for a cost-of-insurance charge every month. The version quoted against that math is usually [indexed universal life insurance](/guides/indexed-universal-life-insurance/), which credits interest off a stock index behind a cap the insurer can lower later. But the strategy only wins if the difference is actually invested consistently, not spent — the single biggest reason it fails in practice isn't the math, it's follow-through.\n\nThe other real trade-off: once the term ends, there's no coverage left at any price if you've become uninsurable in the meantime, while a permanent policy would still be in force. Buyers with a family history of serious illness sometimes weigh that risk deliberately, even knowing term is cheaper on paper.",
       },
+      {
+        heading: "Term Life vs. Indexed Universal Life (IUL), Specifically",
+        content:
+          "Indexed universal life is the version of universal life most often pitched against term as an \"investment,\" so it's worth pricing the two side by side rather than lumping IUL into universal life generically. Premium: term runs a fixed, level rate for the length of the term, while IUL's premium is flexible but must cover a rising cost-of-insurance charge as you age, or the policy can lapse. Growth: term has no cash value at all, while IUL credits interest tied to an index like the S&P 500, capped at a rate the insurer sets and can lower at renewal, with a 0% floor that prevents a market-loss year from reducing your credited interest. Liquidity: term pays nothing if you outlive it, while IUL cash value can be borrowed against, though an outstanding loan reduces the death benefit and can trigger a taxable lapse if the policy runs out of value. Cost transparency: term's price is a single quoted premium, while IUL bundles cost-of-insurance, cap rate, and policy charges into one credited-rate number that's harder to audit year to year.\n\nOur [IUL vs. VUL](/compare/iul-vs-vul/) comparison goes deeper on how IUL's capped, floored growth compares to a variable policy's uncapped market exposure, for a reader who has already ruled out term and is choosing between permanent options.",
+      },
     ],
     faqs: [
       {
@@ -5593,13 +5608,18 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "A common starting point is 10 to 15 times your annual income, adjusted for outstanding debts like a mortgage, years until kids are financially independent, and any existing savings. A term policy sized to that number, for the years you actually need it, is usually the most cost-effective approach.",
       },
+      {
+        question: "Is IUL better than term life insurance?",
+        answer:
+          "For pure income replacement, no — term is dramatically cheaper for the same death benefit and doesn't depend on an insurer's cap rate holding steady. IUL earns its higher cost only for a genuinely lifelong need, where its 0% floor and capped index-linked growth trade upside for downside protection that term can't offer at any price.",
+      },
     ],
     sources: [
       { label: "National Association of Insurance Commissioners (NAIC) — Life Insurance Buyer's Guide", url: "https://content.naic.org/consumer/life-insurance.htm" },
       { label: "Insurance Information Institute — Types of Life Insurance Policies", url: "https://www.iii.org/article/what-are-different-types-life-insurance-policies" },
       { label: "Consumer Financial Protection Bureau — Life Insurance", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-life-insurance-en-1751/" },
     ],
-    relatedComparisons: ["whole-life-vs-term-life-insurance", "whole-life-vs-universal-life-insurance", "401k-vs-brokerage-account"],
+    relatedComparisons: ["whole-life-vs-term-life-insurance", "whole-life-vs-universal-life-insurance", "401k-vs-brokerage-account", "iul-vs-vul"],
     calculatorLinks: [
       { label: "Net Worth Tracker", href: "/net-worth/" },
       { label: "Budget Planner", href: "/budget/" },
