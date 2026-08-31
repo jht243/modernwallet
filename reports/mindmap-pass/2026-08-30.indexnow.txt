@@ -16,3 +16,7 @@ https://www.themodernwallet.com/guides/what-is-a-high-net-worth-individual/
 https://www.themodernwallet.com/guides/net-worth-for-fafsa-and-accredited-investor/
 https://www.themodernwallet.com/investing/roth-ira-calculator/
 https://www.themodernwallet.com/taxable-vs-tax-deferred/
+
+# SUBMITTED 2026-08-30 after merge (1b64c25) + deploy + 200-verify.
+# All 18 URLs returned HTTP 200 before submission. IndexNow POST -> HTTP 200.
+# key: dc557f6bfced447aa1a71771d8a0d24a (challenge file live, HTTP 200)
