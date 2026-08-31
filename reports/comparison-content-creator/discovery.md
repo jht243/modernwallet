@@ -118,3 +118,34 @@ Legend: 🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 dup
 **Dropped (5):** citi-custom-cash-vs-citi-double-cash (duplicate), capital-one-venture-vs-chase-sapphire-preferred (unwinnable), backdoor-roth-vs-mega-backdoor-roth (duplicate), term-life-vs-final-expense-insurance (same-run cannibalization), spousal-ira-vs-traditional-ira (nonsense pair).
 **Audit fixes applied:** bridge-loan-vs-heloc title lengthened from 44 to 51 chars; assumable-mortgage-vs-refinance got FHA/VA/USDA hand-linked at their true first mention (the verdict, which the template renders before the sections).
 **Build:** green — Node 22, `npx tsc --noEmit` clean, `npm run build` 653 pages. All 7 new `/compare/<slug>/` routes confirmed present in `dist/`.
+
+## Run 2026-08-31 (comparison-content-auto, autonomous) — refreshed facts
+- **Comparisons live at run start:** 114 in `src/data/comparisons.ts` + 7 in `src/data/comparisons-business.ts` = 121 total.
+- **SEO data:** Ahrefs MCP still exhausted (99,981/100,000 workspace units, resets 2026-09-18). No SEMRUSH_API_KEY. Per `_keyword-demand-ladder`, demoted to rung 2: **DataForSEO** (`DATAFORSEO_B64` supplied inline by the routine, balance $31.58) — real measured Google Ads volume + modeled KD for 10/13 candidates, autocomplete-band estimate for the other 3. Live SERP pulled via `scripts/lib/serp.py` (DataForSEO SERP, $0.046 of $2.00 budget) for the 11 highest-value candidates — every one came back `verdict: winnable`, several forum/community-dominated (Reddit/Bogleheads own top spots), which shaped voice (experience-led, not vendor-brochure) rather than blocking selection.
+
+### Candidate Chart (DataForSEO US, live)
+| # | Comparison | Vol | KD | CPC | Coverage | Verdict |
+|---|---|---|---|---|---|---|
+| 1 | freetaxusa vs turbotax | 8,100 | 0 | $4.52 | 🟢 new | Build — Tier 1 |
+| 2 | medicare advantage vs medigap | 9,900 | 10 | $5.13 | 🟢 new | Build — Tier 1 |
+| 3 | turbotax vs h&r block | 1,000 | 0 | $9.07 | 🟢 new | Build — Tier 1 |
+| 4 | buying vs leasing a car | 1,000 | 8 | — | 🟢 new | Build — Tier 1 (self-flagged gap: `spokes-auto.ts` code comment deferred "lease vs loan") |
+| 5 | etrade vs fidelity | 720 | 12 | $29.91 | 🟢 new | Build — Tier 1 (extends existing 5-page broker cluster) |
+| 6 | construction loan vs mortgage | 480 | 0 | $5.72 | 🟢 new | Build — Tier 2 |
+| 7 | iul vs vul | 320 | 0 | $7.43 | 🟢 new | Build — Tier 2 (extends existing 3-page IUL cluster) |
+| 8 | chapter 7 vs chapter 13 bankruptcy | 250–2,500 (est.) | — | — | 🟢 new | Build — Tier 2 (featured-snippet opportunity; new sub-vertical, no dedicated hub) |
+| 9 | solo 401k vs simple ira | 110 | 0 | $4.92 | 🟢 new | Build — Tier 2 (fills real gap in self-employed-retirement matrix) |
+| 10 | sofi invest vs robinhood | 110 | 0 | $9.73 | 🟢 new | Build — Tier 2 |
+| — | direct indexing vs index fund | 30 | 20 | — | new | Drop — below reliable-volume floor (Nq<50) |
+| — | 529 plan vs prepaid tuition plan | 10–100 (est.) | — | — | new | Drop — below reliable-volume floor |
+| — | debt management plan vs debt consolidation loan | 75–750 (est.) | — | — | new (borderline) | Drop — low value, overlaps recently-enriched debt-consolidation-loan-vs-balance-transfer vertical |
+| — | treasurydirect vs fidelity | — | — | — | duplicate | Drop — subsumed by `/roundup/best-brokers-for-treasury-bonds/` |
+| — | sep ira vs simple ira | — | — | — | duplicate | Drop — already dropped 2026-07-13, subsumed by self-employed-retirement roundup |
+| — | credit card vs personal loan | — | — | — | duplicate | Drop — already dropped twice (unwinnable, KD40, DR72-95 SERP) |
+| — | money market account vs hysa | — | — | — | duplicate | Drop — exact reverse of live `hysa-vs-money-market` |
+
+**Built (10 new pages):** turbotax-vs-hr-block, freetaxusa-vs-turbotax, buying-vs-leasing-a-car, construction-loan-vs-traditional-mortgage, medicare-advantage-vs-medigap, etrade-vs-fidelity, sofi-invest-vs-robinhood, iul-vs-vul, solo-401k-vs-simple-ira, chapter-7-vs-chapter-13-bankruptcy.
+**Enriched (5 in-place edits):** guides/how-to-protect-assets-from-nursing-home (LTC insurance vs. hybrid life insurance sub-section + 2 FAQs), guides/money-market-account (T-bills vs. HYSA heading promoted + tax-asymmetry note + FAQ), spokes-elder-care special-needs-trust-calculator (first-party vs. third-party SNT sub-section + FAQ), compare/term-life-vs-universal-life-insurance (term vs. IUL specifically sub-section + FAQ), compare/online-will-vs-lawyer (testamentary trust vs. living trust sub-section + FAQ).
+**Dropped (7):** direct-indexing-vs-index-fund, 529-vs-prepaid-tuition-plan, debt-management-plan-vs-debt-consolidation-loan (below floor or low value), treasurydirect-vs-fidelity, sep-ira-vs-simple-ira, credit-card-vs-personal-loan, money-market-account-vs-hysa (duplicates).
+**Audit fixes applied (2 rework passes):** all 10 new titles lengthened into the 50–60 char range; all 10 got the missing `register/medium/page type` row-record comment added; removed an aphoristic one-line verdict fragment (buying-vs-leasing-a-car); removed a hype verb "unlock" from a FAQ (sofi-invest-vs-robinhood); relocated a "not legal advice" disclaimer out of the intro, where it's a banned placement (chapter-7-vs-chapter-13-bankruptcy — the verdict already carried an attorney-consultation note, and the sitewide footer disclaimer independently covers YMYL requirements); added a 3rd internal link to 3 thin-linked pages (turbotax-vs-hr-block, freetaxusa-vs-turbotax, medicare-advantage-vs-medigap); rewrote an unrenderable markdown pipe-table as labeled prose in the LTC guides.ts enrichment (this template has no table component); removed 5 em-dashes, 1 clause-joining semicolon, and split 1 run-on sentence across the two comparisons.ts enrichments.
+**Build:** green — Node 22, `npx tsc --noEmit` clean, `npm run build` 699 pages. All 10 new `/compare/<slug>/` routes confirmed present in `dist/`.

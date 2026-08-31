@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-08-24",
+  "lastRun": "2026-08-31",
   "dropped": [
     {
       "slug": "trump-account-vs-coverdell-esa",
@@ -389,6 +389,48 @@
       "format": "comparison",
       "reason": "2026-08-24 run: dropped as a nonsense pair \u2014 a spousal IRA is typically a traditional or Roth IRA opened under the spousal-contribution rule, not an alternative account type; already adequately covered as an FAQ in roundups.ts and spokes-retirement.ts",
       "score": 0.1
+    },
+    {
+      "slug": "direct-indexing-vs-index-fund",
+      "format": "comparison",
+      "reason": "DataForSEO volume 30/mo, below reliable floor (Nq<50) (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "529-vs-prepaid-tuition-plan",
+      "format": "comparison",
+      "reason": "Autocomplete-estimate only, 10-100/mo, below reliable floor (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "debt-management-plan-vs-debt-consolidation-loan",
+      "format": "comparison",
+      "reason": "Autocomplete-estimate only, 75-750/mo; overlaps recently-enriched debt-consolidation-loan-vs-balance-transfer vertical (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "treasurydirect-vs-fidelity",
+      "format": "comparison",
+      "reason": "DUPLICATE - subsumed by /roundup/best-brokers-for-treasury-bonds/ (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "sep-ira-vs-simple-ira",
+      "format": "comparison",
+      "reason": "DUPLICATE - already dropped 2026-07-13, subsumed by /roundup/best-retirement-accounts-for-self-employed/ (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "credit-card-vs-personal-loan",
+      "format": "comparison",
+      "reason": "DUPLICATE - already dropped twice (unwinnable, KD40, DR72-95 SERP) (2026-08-31)",
+      "score": 0
+    },
+    {
+      "slug": "money-market-account-vs-hysa",
+      "format": "comparison",
+      "reason": "DUPLICATE - exact reverse of live hysa-vs-money-market (2026-08-31)",
+      "score": 0
     }
   ],
   "published": [
@@ -703,6 +745,56 @@
       "optionB": "W-2 (Employee)",
       "reason": "2026-08-24 run: est. 500-5000/mo \u2014 gig/contractor pay-and-tax decision, fits tax-resolution vertical, only passing 1099/W-2 mentions existed (document-reconciliation context, not a classification comparison)",
       "score": 0.55
+    },
+    {
+      "slug": "turbotax-vs-hr-block",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "freetaxusa-vs-turbotax",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "buying-vs-leasing-a-car",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "construction-loan-vs-traditional-mortgage",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "medicare-advantage-vs-medigap",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "etrade-vs-fidelity",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "sofi-invest-vs-robinhood",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "iul-vs-vul",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "solo-401k-vs-simple-ira",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "chapter-7-vs-chapter-13-bankruptcy",
+      "format": "comparison",
+      "publishedAt": "2026-08-31"
     }
   ]
 }
