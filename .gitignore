@@ -10,6 +10,7 @@ node_modules/
 !.claude/commands/
 !.claude/scripts/
 !.claude/tools/
+!.claude/settings.json
 .claude/**/.venv/
 .claude/**/__pycache__/
 .claude/secrets.env
