@@ -1188,6 +1188,10 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
         label: "Business line of credit calculator",
         href: "/business-line-of-credit/",
       },
+      {
+        label: "Business line of credit requirements by lender type",
+        href: "/guides/business-line-of-credit-requirements/",
+      },
     ],
   },
 

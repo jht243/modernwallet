@@ -1,0 +1,24 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-08-31",
+  "window_start": "2026-08-31",
+  "window_end": "2026-08-31",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/roundup/business-line-of-credit-rates-by-lender/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 1,
+  "top10_pages_total_clicks": 1,
+  "channel_split": {
+    "/roundup/business-line-of-credit-rates-by-lender/": {
+      "Organic Search": 1
+    }
+  }
+}

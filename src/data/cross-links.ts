@@ -130,6 +130,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/merchant-cash-advance/", label: "When speed matters: MCA" },
     { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
     { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Below a 620 score? Start here" },
+    { href: "/guides/business-line-of-credit-requirements/", label: "Credit score and document checklist by lender" },
   ],
   "business-loan-payoff": [
     { href: "/business-line-of-credit/", label: "Need more credit instead?" },

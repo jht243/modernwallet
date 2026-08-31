@@ -332,4 +332,99 @@ export const BUSINESS_GUIDES: Guide[] = [
       { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
     ],
   },
+
+  // ga4-top-pages-pass (2026-08-31) — Lane A spoke off the /roundup/business-line-of-credit-rates-by-lender/
+  // winner. Requirements/qualification intent (Vol 590, KD 39, DataForSEO) has no dedicated page on-site;
+  // the hub calculator and the rate roundup each touch qualification in passing but neither owns the intent.
+  {
+    slug: "business-line-of-credit-requirements",
+    title: "Business Line of Credit Requirements by Lender Type",
+    metaDescription:
+      "Business line of credit requirements: the credit score, time in business, documents, and collateral rules banks and online lenders each set.",
+    h1: "Business Line of Credit Requirements by Lender Type",
+    cardBlurb:
+      "The credit score, time-in-business, and document rules banks and online lenders set for a business line of credit, plus what to do if you fall short.",
+    intro:
+      "Most lenders want a personal credit score in the 600s, some operating history, and steady revenue before approving a business line of credit. The credit-score bar tends to run higher at a traditional bank than at a fintech or online lender, which prices for the added risk instead of screening it out. Revenue and time in business, by contrast, vary by lender more than by lender type. A lender also wants specific paperwork before it will quote a rate: bank statements, tax returns, and proof of ownership. Run your own numbers on ModernWallet's [business line of credit calculator](/business-line-of-credit/) once you know which credit tier you're likely to qualify for.",
+    sections: [
+      {
+        heading: "The Short Answer: Credit Score, Time in Business, and Documents",
+        body:
+          "A business line of credit application comes down to four things: credit score, time in business, revenue and cash flow, and collateral.\n\n[Chase](https://www.chase.com/business/banking/loans/business-line-of-credit) requires a 660-plus FICO score and $100,000 or more in annual revenue for its unsecured line, and [Wells Fargo](https://www.wellsfargo.com/biz/business-credit/lines-of-credit/) sets its guarantor floor at roughly 680. [Bluevine](https://www.bluevine.com/business-loans/line-of-credit), an online lender, accepts scores from 625.\n\nTime in business doesn't split cleanly along the same bank-versus-online line. Wells Fargo, a bank, asks for six months or more in business. Bluevine, an online lender, asks for twelve. Each lender sets its own floor, so check the specific lender's stated minimum rather than assuming banks always ask for longer.",
+      },
+      {
+        heading: "Credit Score: What Banks Want vs. What Online Lenders Accept",
+        body:
+          "A bank's minimum credit score for a business line of credit usually sits at 660 or higher, and the strongest pricing goes to borrowers well above that floor. Wells Fargo requires the guarantor, the owner personally backing the line, to carry a score typically at 680 or above, according to its own published terms.\n\nOnline and fintech lenders price for the added risk instead of screening it out entirely. Bluevine's stated minimum is 625. Several other lenders in our [business line of credit rates by lender](/roundup/business-line-of-credit-rates-by-lender/) roundup don't publish a minimum at all. They weigh credit as one input among several rather than a hard cutoff.\n\nIf your score sits in the high 500s to low 600s, an online lender is realistically your best path to a revolving line right now. The [SBA Microloan](https://www.sba.gov/funding-programs/loans/microloans) program is also worth checking if you need less than $50,000, since it weighs cash flow more than your credit score. Our guide to [getting a business loan with bad credit](/guides/how-to-get-a-business-loan-with-bad-credit/) covers both options in detail.",
+      },
+      {
+        heading: "Secured vs. Unsecured: When Collateral Changes the Requirements",
+        body:
+          "An unsecured business line of credit doesn't require you to pledge a specific asset. It still comes with a personal guarantee in nearly every case, and it caps out at a lower limit than a secured line from the same lender. A secured line, backed by equipment, inventory, receivables, or real estate, generally unlocks a larger credit limit and a lower rate. The lender can seize the pledged asset on default instead of relying only on your credit and revenue.\n\nWhich one you can get depends on what your business owns free and clear. A newer business with no unencumbered assets is effectively limited to an unsecured line. An established business with paid-off equipment or property has a real choice between a lower rate and keeping that asset unpledged. Model both scenarios on the [business line of credit calculator](/business-line-of-credit/) before you apply, since the fee and rate difference changes your real monthly payment more than most owners expect.",
+      },
+      {
+        heading: "The Documents a Lender Asks For",
+        body:
+          "Most lenders ask for the same core set of documents before they underwrite a business line of credit. Expect to provide two to three years of business tax returns and three to six months of business bank statements. You'll also need a copy of your EIN or business license, plus a personal financial statement from every owner with 20% or more equity.\n\nA bank usually also wants a current profit and loss statement and balance sheet. Several online lenders will underwrite from bank statements alone when your revenue history is short.\n\nGather these before you apply rather than after a lender asks. A slow document turnaround is one of the most common reasons an otherwise-qualified applicant loses weeks in underwriting. If your tax returns show heavy write-offs that make your cash flow look worse than it is, keep your bank statements ready to make that case directly. Several lenders weigh deposits over reported net income when the two disagree.",
+      },
+      {
+        heading: "What a Personal Guarantee Requires From You",
+        body:
+          "A personal guarantee makes you personally liable for the line's balance if the business can't repay it. A lender can pursue your personal assets on default, separate from anything the business itself owns. Nearly every bank and most online lenders require one from any owner holding a meaningful stake, regardless of whether the line itself is secured or unsecured. The guarantee lets the lender extend revolving credit to a legal entity that could otherwise dissolve with the debt unpaid.\n\nA personal guarantee is not the same thing as pledging collateral. Collateral gives the lender a specific asset to claim. A guarantee gives it a legal claim against you personally, with no asset attached until a court order says otherwise. A handful of lenders, mostly ones underwriting heavily on business cash flow rather than the owner's credit, will waive the guarantee for a well-qualified business with a strong balance sheet. That stays the exception rather than the standard term.",
+      },
+      {
+        heading: "Bank vs. Online Lender Requirements, Side by Side",
+        body:
+          "A bank sets the higher credit-score floor, usually 660 or above, and asks for the fuller paperwork: tax returns, a profit and loss statement, and a balance sheet. In exchange it typically funds in one to three weeks and quotes the lower rate once you clear that bar.\n\nAn online or fintech lender accepts a wider credit range, from the mid-500s up to 625 or higher depending on the lender, and several publish no minimum at all. It often underwrites from bank statements alone and funds in one to three business days. A personal guarantee is standard at both, with only rare exceptions from lenders that underwrite almost entirely on cash flow.\n\nA bank fits a business that already clears its credit bar and can wait a few weeks for a lower rate. An online lender fits a business that needs the line faster, sits below a bank's credit floor, or would rather submit bank statements than a full financial package. A bank wins on rate once you clear its bar. An online lender wins on speed and access below that bar.",
+      },
+      {
+        heading: "If You Do Not Qualify Yet",
+        body:
+          "A declined application is not necessarily a dead end. If your credit score is the barrier, the SBA Microloan program and several revenue-based lenders weigh cash flow more heavily than your personal score. Our guide to getting a business loan with bad credit covers both in detail. If revenue or time in business is the barrier, building six to twelve months of clean, consistent bank statements before you reapply measurably improves your odds at the same lender.\n\nEvery on-time payment you make on whatever financing you start with today builds the credit and banking history that gets you a better rate the next time you apply. Run the numbers on a smaller starting line first with the [business line of credit calculator](/business-line-of-credit/), so you know your real payment before you commit to anything. Revisit the larger request once your file looks stronger.",
+      },
+    ],
+    tools: [
+      { href: "/business-line-of-credit/", label: "Business line of credit calculator" },
+      { href: "/roundup/business-line-of-credit-rates-by-lender/", label: "Business line of credit rates by lender" },
+      { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Business loan with bad credit" },
+    ],
+    faqs: [
+      {
+        question: "What credit score do I need for a business line of credit?",
+        answer:
+          "A bank typically wants 660 or higher. Wells Fargo sets its guarantor floor at roughly 680. Online lenders price for more risk instead of screening it out: Bluevine's published minimum is 625, and several others in our lender roundup don't publish a minimum at all.",
+      },
+      {
+        question: "Do I need collateral for a business line of credit?",
+        answer:
+          "Not always. An unsecured line skips a specific pledged asset but still requires a personal guarantee. A secured line, backed by equipment, inventory, or real estate, typically unlocks a larger limit and a lower rate.",
+      },
+      {
+        question: "How long does my business need to be operating to qualify?",
+        answer:
+          "It depends on the specific lender rather than on whether it's a bank or an online lender. Wells Fargo, a bank, asks for six months or more. Bluevine, an online lender, asks for twelve. Check the stated minimum for the lender you're applying to instead of assuming a pattern.",
+      },
+      {
+        question: "What documents do I need to apply for a business line of credit?",
+        answer:
+          "Plan on two to three years of business tax returns, three to six months of bank statements, and your EIN or business license. Add a personal financial statement from every owner with 20% or more equity. Banks often also want a current profit and loss statement and balance sheet.",
+      },
+      {
+        question: "Is a personal guarantee required for a business line of credit?",
+        answer:
+          "In nearly every case, yes, from any owner with a meaningful stake, whether the line is secured or unsecured. A small number of lenders that underwrite heavily on business cash flow will waive it for a well-qualified business, though that stays the exception.",
+      },
+      {
+        question: "Can I get a business line of credit with bad credit?",
+        answer:
+          "It is harder but not impossible. Revenue-based online lenders and the SBA Microloan program weigh cash flow and time in business more heavily than a bank does. Both are covered in our guide to getting a business loan with bad credit.",
+      },
+    ],
+    sources: [
+      { label: "U.S. Small Business Administration — Microloan Program", url: "https://www.sba.gov/funding-programs/loans/microloans" },
+      { label: "Chase — Business Line of Credit", url: "https://www.chase.com/business/banking/loans/business-line-of-credit" },
+      { label: "Wells Fargo — BusinessLine Line of Credit", url: "https://www.wellsfargo.com/biz/business-credit/lines-of-credit/" },
+      { label: "Bluevine — Business Line of Credit", url: "https://www.bluevine.com/business-loans/line-of-credit" },
+    ],
+  },
 ];

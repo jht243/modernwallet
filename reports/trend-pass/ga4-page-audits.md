@@ -120,3 +120,4 @@
 | /guides/trump-account-rules/ | 2026-08-30 | 1 | 0/0/2/0/0 | 0 |
 | /portfolio/ | 2026-08-30 | 1 | 0/0/0/0/0 | 1 |
 | /retirement/military-retirement-calculator/ | 2026-08-30 | 0 | 0/0/1/0/0 | 0 |
+| /roundup/business-line-of-credit-rates-by-lender/ | 2026-08-31 | 1 | 1/0/0/0/0 | 0 |
