@@ -5,6 +5,13 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  "iul-calculator": [
+    { href: "/retirement/", label: "Project retirement with a real account" },
+    { href: "/investing/", label: "Compare to ordinary investing" },
+    { href: "/taxable-vs-tax-deferred/", label: "See the three-way tax math" },
+    { href: "/compare/iul-vs-401k/", label: "IUL vs 401(k): which wins" },
+    { href: "/compare/iul-vs-roth-ira/", label: "IUL vs Roth IRA" },
+  ],
   "auto-loan": [
     { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
     { href: "/budget/", label: "Does this fit your budget?" },
@@ -30,6 +37,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   ],
   "retirement": [
     { href: "/investing/", label: "Grow your investments" },
+    { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/net-worth/", label: "Track your net worth" },
     { href: "/portfolio/", label: "Check your asset mix" },
     { href: "/coast-fire/", label: "Could you stop saving already?" },
@@ -42,6 +50,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
   ],
   "investing": [
+    { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/retirement/", label: "Plan your retirement" },
     { href: "/portfolio/", label: "Balance your portfolio" },
     { href: "/net-worth/", label: "Track your net worth" },
