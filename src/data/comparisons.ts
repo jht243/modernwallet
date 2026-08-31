@@ -3209,7 +3209,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "CFPB — Cancelling private mortgage insurance (PMI)", url: "https://www.consumerfinance.gov/ask-cfpb/how-can-i-cancel-my-private-mortgage-insurance-pmi-en-202/" },
       { label: "FHFA — Conforming Loan Limit Values for 2025", url: "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-values-for-2025" },
     ],
-    relatedComparisons: ["va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "fha-loan-vs-va-loan"],
+    relatedComparisons: ["va-loan-vs-conventional-loan", "15-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "fha-loan-vs-va-loan", "construction-loan-vs-traditional-mortgage"],
     calculatorLinks: [
       { label: "Mortgage Payment Calculator", href: "/mortgage/" },
       { label: "Net Worth Tracker", href: "/net-worth/" },
@@ -3504,7 +3504,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "FTC — Debt Collection FAQs", url: "https://consumer.ftc.gov/articles/debt-collection-faqs" },
       { label: "Federal Reserve — Economic Well-Being of U.S. Households (2023)", url: "https://www.federalreserve.gov/publications/2024-economic-well-being-of-us-households-in-2023-executive-summary.htm" },
     ],
-    relatedComparisons: ["renting-vs-buying", "fixed-vs-arm-mortgage"],
+    relatedComparisons: ["renting-vs-buying", "fixed-vs-arm-mortgage", "chapter-7-vs-chapter-13-bankruptcy"],
     calculatorLinks: [
       { label: "Auto Loan Calculator", href: "/auto-loan/" },
       { label: "Budget Calculator", href: "/budget/" },
@@ -3698,7 +3698,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS: SEP Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps" },
       { label: "IRS: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "gusto-401k-vs-paychex-401k", "simple-ira-vs-401k"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "gusto-401k-vs-paychex-401k", "simple-ira-vs-401k", "solo-401k-vs-simple-ira"],
     calculatorLinks: [
       { label: "Retirement Savings Calculator", href: "/retirement/" },
       { label: "Investing Growth Calculator", href: "/investing/" },
@@ -4322,7 +4322,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — SIMPLE IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
       { label: "DOL — Understanding Your Retirement Plan Fees", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees" },
     ],
-    relatedComparisons: ["sep-ira-vs-solo-401k", "401k-vs-roth-ira", "pension-vs-401k"],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "401k-vs-roth-ira", "pension-vs-401k", "solo-401k-vs-simple-ira"],
     calculatorLinks: [
       { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
       { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
@@ -5410,7 +5410,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "National Association of Insurance Commissioners (NAIC) — Life Insurance Buyer's Guide", url: "https://content.naic.org/consumer/life-insurance.htm" },
       { label: "Insurance Information Institute — Types of Life Insurance Policies", url: "https://www.iii.org/article/what-are-different-types-life-insurance-policies" },
     ],
-    relatedComparisons: ["whole-life-vs-term-life-insurance", "term-life-vs-universal-life-insurance", "annuity-vs-cd"],
+    relatedComparisons: ["whole-life-vs-term-life-insurance", "term-life-vs-universal-life-insurance", "annuity-vs-cd", "iul-vs-vul"],
     calculatorLinks: [
       { label: "Net Worth Tracker", href: "/net-worth/" },
       { label: "Budget Planner", href: "/budget/" },
@@ -5785,7 +5785,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "DFAS — VA Waiver and Retired Pay: CRDP & CRSC", url: "https://www.dfas.mil/RetiredMilitary/disability/VA-Waiver-and-Retired-Pay-CRDP-CRSC/" },
       { label: "VA — Disability Compensation", url: "https://www.va.gov/disability/" },
     ],
-    relatedComparisons: ["military-retirement-vs-medical-retirement"],
+    relatedComparisons: ["military-retirement-vs-medical-retirement", "chapter-7-vs-chapter-13-bankruptcy"],
     calculatorLinks: [
       { label: "Military Retirement Calculator", href: "/retirement/military-retirement-calculator/" },
       { label: "Retirement Savings Calculator", href: "/retirement/retirement-savings-calculator/" },
@@ -7285,7 +7285,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Fidelity — Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
       { label: "SEC — Fidelity ZERO Total Market Index Fund summary prospectus", url: "https://www.sec.gov/Archives/edgar/data/819118/000081911825000478/filing10367.htm" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "voo-vs-spy", "etf-vs-mutual-fund", "index-fund-vs-etf", "financial-advisor-vs-financial-planner"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "voo-vs-spy", "etf-vs-mutual-fund", "index-fund-vs-etf", "financial-advisor-vs-financial-planner", "etrade-vs-fidelity"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" },
@@ -7567,7 +7567,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Charles Schwab — Pricing", url: "https://www.schwab.com/pricing" },
       { label: "Charles Schwab — Schwab Intelligent Portfolios", url: "https://www.schwab.com/intelligent-portfolios" },
     ],
-    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "charles-schwab-vs-robinhood", "voo-vs-spy", "brokerage-vs-ira"],
+    relatedComparisons: ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "charles-schwab-vs-robinhood", "voo-vs-spy", "brokerage-vs-ira", "etrade-vs-fidelity", "sofi-invest-vs-robinhood"],
     calculatorLinks: [
       { label: "Investing hub", href: "/investing/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
@@ -9722,7 +9722,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Robinhood — IRA Match FAQ", url: "https://robinhood.com/us/en/support/articles/ira-match-faq/" },
       { label: "Robinhood — Fee Schedule (PDF)", url: "https://cdn.robinhood.com/assets/robinhood/legal/RHF+Fee+Schedule.pdf" },
     ],
-    relatedComparisons: ["fidelity-vs-schwab", "vanguard-vs-schwab"],
+    relatedComparisons: ["fidelity-vs-schwab", "vanguard-vs-schwab", "sofi-invest-vs-robinhood", "etrade-vs-fidelity"],
   },
 
   // ─── TurboTax vs TaxAct ───────────────────────────────────────────────────
@@ -9831,6 +9831,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "TurboTax — Online Pricing", url: "https://turbotax.intuit.com/personal-taxes/online/" },
       { label: "TurboTax — Compare Online Products", url: "https://turbotax.intuit.com/personal-taxes/compare/online/" },
     ],
+    relatedComparisons: ["turbotax-vs-hr-block", "freetaxusa-vs-turbotax"],
   },
   // ─── IUL vs 401(k) ────────────────────────────────────────────────────────
   {
@@ -9945,7 +9946,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Legal Information Institute: 26 U.S. Code § 7702A", url: "https://www.law.cornell.edu/uscode/text/26/7702A" },
       { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "iul-vs-roth-ira", "whole-life-vs-universal-life-insurance", "term-life-vs-universal-life-insurance"],
+    relatedComparisons: ["401k-vs-roth-ira", "iul-vs-roth-ira", "whole-life-vs-universal-life-insurance", "term-life-vs-universal-life-insurance", "iul-vs-vul"],
     calculatorLinks: [
       { label: "Run your own IUL projection", href: "/iul-calculator/" },
       { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
@@ -10064,10 +10065,1117 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Legal Information Institute: 26 U.S. Code § 7702", url: "https://www.law.cornell.edu/uscode/text/26/7702" },
       { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
     ],
-    relatedComparisons: ["iul-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "whole-life-vs-universal-life-insurance"],
+    relatedComparisons: ["iul-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "whole-life-vs-universal-life-insurance", "iul-vs-vul"],
     calculatorLinks: [
       { label: "Run your own IUL projection", href: "/iul-calculator/" },
       { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
+    ],
+  },
+{
+  slug: "turbotax-vs-hr-block",
+  updated: "2026-08-31",
+  draft: false,
+  title: "TurboTax vs H&R Block: Which Tax Software Wins?",
+  metaDescription:
+    "TurboTax vs H&R Block compared: filing tiers, pricing, in-person support, audit guarantees, refund advance, and which one fits your tax return.",
+  targetKeyword: "turbotax vs h&r block",
+  optionA: "TurboTax",
+  optionB: "H&R Block",
+  segment: "Tax software",
+  h1: "TurboTax vs H&R Block: Which Tax Software Should You Use?",
+  intro:
+    "H&R Block wins if you want the option of walking into a physical office, and TurboTax wins if you'd rather stay online and want the more polished self-guided interview. In the guides we publish here, we see readers default to whichever brand they used last year without checking whether their return actually changed enough to matter. [TurboTax](https://turbotax.intuit.com/personal-taxes/online/) now organizes its online product around a free Do It Yourself edition for simple returns, a paid Do It Yourself tier priced once it scans your forms, and Expert Assist or Expert Full Service add-ons that bring in a credentialed preparer. [H&R Block](https://www.hrblock.com/online-tax-filing/) keeps four named tiers with published prices instead: Free Online, Deluxe, Premium, and Self-Employed, plus in-person filing at its retail offices. A simple W-2-only return costs $0 on both, so the price gap only opens once your return needs a schedule beyond the basics.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Filing structure", a: "Free Do It Yourself edition, a paid Do It Yourself tier priced by your forms, plus Expert Assist and Expert Full Service add-ons", b: "Four named tiers with posted prices: Free Online, Deluxe, Premium, Self-Employed" },
+      { dimension: "Simple W-2 return cost", a: "$0 federal, $0 state (Free Edition covers roughly 37% of filers)", b: "$0 federal, $0 state (Free Online)" },
+      { dimension: "Return with self-employment income", a: "Price set after you enter your forms. Check the current online pricing page", b: "Self-Employed tier: $130 federal, plus $49 per state" },
+      { dimension: "In-person filing", a: "Not offered. Online and mobile app only", b: "Yes, at H&R Block's retail tax offices nationwide" },
+      { dimension: "Live expert help", a: "Expert Assist (on-demand review) and Expert Full Service (a preparer files for you)", b: "Unlimited expert help bundled into every paid tier, plus an AI Tax Assist chat feature" },
+      { dimension: "Audit support", a: "Free guidance included, plus a paid add-on where a professional handles IRS correspondence for you", b: "Free guidance included, plus a paid add-on with optional representation by an H&R Block enrolled agent" },
+      { dimension: "Refund advance", a: "Up to $4,000, advertised at 0% annual percentage rate (APR) with no loan fees", b: "$250 to $4,000, repaid automatically from your refund" },
+      { dimension: "Best fit", a: "A filer who wants to handle everything online and skip an office visit", b: "A filer who wants the option to sit down with someone in person" },
+    ],
+  },
+  verdict:
+    "Pick H&R Block if you want the choice of sitting across from a preparer in a physical office, because its retail locations are the one thing TurboTax cannot match at any price. Pick TurboTax if you're comfortable filing entirely online and want the more guided self-run interview, especially once you add Expert Assist for a professional's final review before you submit. A filer with a plain W-2 return and no extra schedules pays $0 either way. The real decision comes down to whether an in-person option is worth paying for once your return gets more complicated. Skip both if your return stays simple year after year, and use the [IRS Free File](https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free) program, run by the Internal Revenue Service (IRS), through a partner such as [FreeTaxUSA](https://www.freetaxusa.com/) instead, at no cost and with far less upselling along the way.",
+  sections: [
+    {
+      heading: "What a Simple W-2 Return Costs on Each",
+      content:
+        "A filer with only W-2 income and the standard deduction pays $0 in federal and state fees on both platforms. TurboTax's Free Edition covers a simple Form 1040 with a narrow set of credits: the Earned Income Tax Credit, the Child Tax Credit, student loan interest, and retirement plan distributions, and Intuit puts the share of filers who qualify at roughly 37%.\n\nH&R Block's Free Online tier draws its line in nearly the same place. It handles Form 1040 with no schedules beyond that same short list of credits. Add a Schedule C for freelance income, a rental property, or investment sales, and both companies move you off the free tier and onto a paid one.",
+    },
+    {
+      heading: "What Each Charges Once Your Return Gets More Complex",
+      content:
+        "H&R Block prices the jump up front. Its Deluxe tier runs $65 federal plus $49 per state, Premium runs $105 federal plus $49 per state for investors and landlords, and Self-Employed runs $130 federal plus $49 per state, all listed on H&R Block's own pricing page. Confirm the exact figure there before you file, since online tax prices can move during the season.\n\nTurboTax handles pricing differently for 2025 filings. Its paid Do It Yourself tier discloses a price only after CompleteCheck, its built-in error scan, has read your actual forms, so the fee scales to your situation rather than sitting on a published tier chart. That makes TurboTax harder to price-shop before you start, and it means the only reliable way to compare the two on a complex return is to run your real numbers through TurboTax's estimator and set that figure beside H&R Block's posted tier price.",
+    },
+    {
+      heading: "Getting Help From a Real Person In an Office",
+      content:
+        "H&R Block operates retail tax offices across the country, staffed by certified tax professionals who prepare your return in person while you wait or drop off your documents and pick up the finished return later. That in-person option covers a filer who wants someone to physically review a stack of paper W-2s and 1099s, or who simply doesn't want to type a tax return into a browser.\n\nTurboTax has no retail locations. Every service it offers, including its expert-review and full-service tiers, happens through a screen share or a video call rather than a desk across from you. That's a real gap for anyone who has never filed online before and wants a person in the room the first time.",
+    },
+    {
+      heading: "What Happens If the IRS Audits Your Return",
+      content:
+        "Both companies include free audit guidance with every return. TurboTax's Audit Support Guarantee gives you a tax professional who walks you through an IRS or state notice and answers questions about it, plus up to two hours of collection assistance if a covered audit results in tax due. TurboTax also sells paid Audit Defense, handled by [TaxAudit](https://www.turbotaxauditdefense.com/), where a certified professional communicates with the IRS and drafts your response letters.\n\nH&R Block's version is called [Worry-Free Audit Support](https://www.hrblock.com/online-tax-filing/guarantees/worry-free-audit-support/), a paid add-on for online filers that comes free if you buy H&R Block's tax software instead. It covers IRS correspondence and audit preparation, and you can request that an H&R Block enrolled agent represent you if an actual audit happens, though an enrolled agent handles tax matters only, not legal representation. Neither company's free tier covers you if the error was in the numbers you typed rather than the software's math, so double-check your own entries against your actual documents before you file either way.",
+    },
+    {
+      heading: "Live Expert Review Without Leaving Home",
+      content:
+        "TurboTax sells expert help as a separate add-on. Expert Assist gives you unlimited, on-demand access to a tax expert while you prepare the return yourself, plus a final review before you file. Expert Full Service goes further: a dedicated preparer handles the entire return from intake to signature, at a price that climbs with the complexity of your situation.\n\nH&R Block bundles its help instead of selling it separately. Every paid tier, from Deluxe up through Self-Employed, already includes unlimited expert help alongside an AI Tax Assist chat feature for quick questions. That difference matters for a filer who plans to use expert help anyway: paying once for a tier that already includes it usually costs less than paying for the software and then adding help on top.",
+    },
+    {
+      heading: "Refund Advance: Getting Part of Your Refund Early",
+      content:
+        "Both companies will front you part of your expected refund as a short-term loan while the IRS processes your actual return. TurboTax advertises its Refund Advance at up to $4,000, at 0% APR with no loan fees, deposited once your return is accepted. H&R Block's version runs $250 to $4,000 and is repaid automatically once your real refund arrives, though its current interest and fee terms are worth confirming directly on H&R Block's site before you apply, since loan terms are the kind of detail that changes without much notice.\n\nNeither advance is guaranteed. Approval depends on your expected refund amount and a quick credit check, and a smaller-than-expected refund from the IRS can leave you owing the difference.",
+    },
+    {
+      heading: "The Interview Flow and Filing From Your Phone",
+      content:
+        "Both platforms walk you through a question-by-question interview rather than handing you a blank IRS form, and both let you snap a photo of a W-2 to auto-fill most of the fields. TurboTax has long been the more praised of the two for how smoothly that interview flows from one question to the next, especially on a return with several different income types.\n\nH&R Block has closed most of that gap with its own redesigned flow and the AI Tax Assist feature, which answers plain-language questions about a line item without making you leave the screen you're on. The practical difference now is smaller than it was a few years ago, and most filers who try both will find either one workable for a normal return.",
+    },
+    {
+      heading: "Who Should Skip Each One",
+      content:
+        "Skip TurboTax if you specifically want to sit down with a preparer in person, since it has no offices to visit at any price point. Skip H&R Block's paid tiers if your return is genuinely simple and you're only paying because you didn't check whether you qualified for the free tier first.\n\nSkip both if you're a confident filer with a return that rarely changes year to year. Our [FreeTaxUSA vs TurboTax](/compare/freetaxusa-vs-turbotax/) comparison covers a cheaper alternative that still e-files directly with the IRS, and it's worth reading before you pay full retail price at either TurboTax or H&R Block for a return you could file free elsewhere.",
+    },
+    {
+      heading: "What Would Change This Recommendation",
+      content:
+        "If TurboTax opened retail locations, its one real disadvantage against H&R Block would disappear, and the choice would come down almost entirely to price and interview quality. If H&R Block started undercutting TurboTax's per-form pricing by a wide enough margin on complex returns, the value case would flip even for a filer who never plans to visit an office.\n\nA broader expansion of the IRS's own free Direct File tool into more states and more tax situations would change the calculus for both companies at once, since a free option that files straight with the IRS beats a paid one for any return it actually covers. Check your state's current Direct File eligibility before assuming either TurboTax or H&R Block is your only option this season.",
+    },
+  ],
+  faqs: [
+    {
+      question: "Is it better to go through TurboTax or H&R Block?",
+      answer:
+        "Neither is better across the board. H&R Block is the better pick if you want the option of in-person help at a retail office, and TurboTax is the better pick if you're comfortable filing entirely online and want its more guided interview. For a simple W-2 return, both cost $0 in federal and state fees, so the choice comes down to how you want to file rather than what it costs.",
+    },
+    {
+      question: "Does H&R Block give a bigger refund than TurboTax?",
+      answer:
+        "No. Both companies calculate your refund from the same IRS tax rules applied to the same numbers you enter, so neither one produces a larger legitimate refund from an identical return. A different result between the two almost always traces back to a data-entry difference, a missed deduction, or a credit one interview caught and the other didn't, not to the software itself finding extra money.",
+    },
+    {
+      question: "What is the best alternative to TurboTax?",
+      answer:
+        "FreeTaxUSA is the strongest low-cost alternative for a confident filer, since it charges nothing for federal filing and a flat, low fee for state filing regardless of how complex your return is. [TaxAct](https://www.taxact.com/) is a close second, priced between FreeTaxUSA and TurboTax at every paid tier. See our [FreeTaxUSA vs TurboTax](/compare/freetaxusa-vs-turbotax/) and [TurboTax vs TaxAct](/compare/turbotax-vs-taxact/) comparisons for the tradeoffs against each.",
+    },
+    {
+      question: "How much does H&R Block charge compared to TurboTax for a self-employed return?",
+      answer:
+        "H&R Block's Self-Employed tier is priced at $130 federal plus $49 per state on its own pricing page. TurboTax doesn't publish a flat number for the same tier. It calculates your price after CompleteCheck reads your entered forms, so the only reliable comparison is running your actual numbers through both and comparing the totals before you file with either.",
+    },
+    {
+      question: "Can I get my refund early with either TurboTax or H&R Block?",
+      answer:
+        "Yes. Both offer a refund advance loan, generally $250 to $4,000, paid out once the IRS accepts your e-filed return and repaid automatically from your actual refund. TurboTax advertises its version at 0% APR with no loan fees. Approval for either depends on your expected refund size and a quick credit check, so confirm the current terms before you count on the money.",
+    },
+    {
+      question: "Do TurboTax and H&R Block both offer free filing for simple returns?",
+      answer:
+        "Yes, both have a free tier for a simple Form 1040 with W-2 income and a short list of credits like the Earned Income Tax Credit and the Child Tax Credit. Add a Schedule C, rental income, or investment sales, and both companies move your return to a paid tier, so check your own situation against each company's free-tier rules before assuming you qualify.",
+    },
+  ],
+  sources: [
+    { label: "TurboTax: Online Pricing", url: "https://turbotax.intuit.com/personal-taxes/online/" },
+    { label: "H&R Block: Online Tax Filing", url: "https://www.hrblock.com/online-tax-filing/" },
+    { label: "H&R Block: Worry-Free Audit Support", url: "https://www.hrblock.com/online-tax-filing/guarantees/worry-free-audit-support/" },
+    { label: "IRS: Free File: Do Your Federal Taxes for Free", url: "https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free" },
+    { label: "IRS: 2026 Tax Filing Season Opens With Several Free Filing Options Available", url: "https://www.irs.gov/newsroom/2026-tax-filing-season-opens-with-several-free-filing-options-available" },
+  ],
+  relatedComparisons: ["turbotax-vs-taxact", "freetaxusa-vs-turbotax"],
+},
+{
+  slug: "freetaxusa-vs-turbotax",
+  updated: "2026-08-31",
+  draft: false,
+  title: "FreeTaxUSA vs TurboTax: Which Fits Your Return?",
+  metaDescription:
+    "FreeTaxUSA vs TurboTax compared: pricing, support quality, accuracy guarantees, IRS Free File status, and who should skip the cheaper option.",
+  targetKeyword: "freetaxusa vs turbotax",
+  optionA: "FreeTaxUSA",
+  optionB: "TurboTax",
+  segment: "Budget-conscious filers",
+  h1: "FreeTaxUSA vs TurboTax: Which One Should You File With?",
+  intro:
+    "FreeTaxUSA wins on price for almost every filer, and TurboTax wins on hand-holding for someone who wants more guidance along the way. What we see readers get wrong most often is assuming [FreeTaxUSA](https://www.freetaxusa.com/) must be missing forms or cutting corners because it's free at the federal level. It isn't. FreeTaxUSA charges $0 for federal filing no matter how many forms your return needs, plus a flat state fee, while [TurboTax](https://turbotax.intuit.com/personal-taxes/online/)'s free tier only covers a plain W-2 return and its paid tier prices up once you add a Schedule C, investment sales, or rental income. The real tradeoff shows up in support and interview design, not in which forms each one can handle. TurboTax's interview reads like a conversation with someone who assumes you know less. FreeTaxUSA's reads like a form that assumes you already know roughly what you're doing.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Federal filing cost", a: "$0, at every complexity level, from a plain W-2 up through self-employment income", b: "$0 only on the Free Edition for a simple W-2 return. A priced tier applies once you add a schedule" },
+      { dimension: "State filing cost", a: "A flat fee per state, around $15 regardless of complexity (check FreeTaxUSA's current price)", b: "Free with a qualifying simple federal return, otherwise priced alongside your paid federal tier" },
+      { dimension: "Support model", a: "Email support on the free tier. Live chat and priority answers require the paid Deluxe upgrade", b: "Built-in guidance on every tier, plus paid Expert Assist and Expert Full Service for live help" },
+      { dimension: "Interview style", a: "Form-driven and efficient, assumes you roughly know what each line is asking for", b: "More guided, plain-language interview built for a first-time filer" },
+      { dimension: "Accuracy guarantee", a: "100% Accuracy Guarantee, reimburses penalties and interest caused by a software calculation error", b: "100% Accurate Calculations Guarantee, the same core coverage" },
+      { dimension: "Audit help", a: "Deluxe adds audit assist, which is guidance on responding to a notice, not representation", b: "Free guidance on every return, plus a paid add-on where a third-party professional handles full IRS representation" },
+      { dimension: "Free File program status", a: "Yes, a current Free File Alliance partner for filers under the income cap", b: "No, Intuit withdrew TurboTax from the program in 2021 and now runs a separate free tier it sets the rules for" },
+      { dimension: "Best fit", a: "A confident filer who knows their forms and wants the lowest total price", b: "A filer who wants more guidance, live help, or reassurance on an unfamiliar return" },
+    ],
+  },
+  verdict:
+    "Pick FreeTaxUSA if your return has more than a plain W-2 in it and you're reasonably confident reading a tax form, because federal filing stays free at every complexity level and a state return runs a flat, low fee either way. Pick TurboTax if you're filing for the first time, don't recognize half the line items on your own documents, or want a live person reviewing your return before you submit it, because its guided interview and paid expert tiers are built for exactly that. Skip FreeTaxUSA if you have a multi-state return with unfamiliar state-specific credits, foreign income, or a K-1 you don't fully understand, since its free-tier support is email-first and its interview won't slow down to explain a term you don't recognize. Guessing gets expensive on that kind of return. A confident filer with a Schedule C and one state return typically pays under $25 total on FreeTaxUSA, well below what the equivalent paid tier costs on TurboTax once a state return is added.",
+  sections: [
+    {
+      heading: "What FreeTaxUSA and TurboTax Charge",
+      content:
+        "FreeTaxUSA's pricing model is the simplest in the category: federal filing is free for every situation, including self-employment income, rental property, and investment sales, and every state return costs the same flat fee no matter how complicated your federal return got. That fee runs around $15 per state. Confirm the exact current figure on [FreeTaxUSA's own pricing page](https://www.freetaxusa.com/prices) before you file, since it can move between tax seasons.\n\nTurboTax works differently. Its Free Edition covers a simple Form 1040 only, and Intuit puts the share of filers who qualify at roughly 37%. Add one schedule beyond that and you move to a paid Do It Yourself tier priced after TurboTax's CompleteCheck tool reads your actual forms, so there's no flat number to quote until you've entered your real situation. The two pricing philosophies point at different filers: FreeTaxUSA rewards someone who already knows their return is complicated and just wants a flat, predictable cost, while TurboTax's per-form pricing rewards someone whose return might turn out to be simpler than they expected.",
+    },
+    {
+      heading: "What FreeTaxUSA Doesn't Do As Well As TurboTax",
+      content:
+        "FreeTaxUSA's interview is efficient rather than explanatory. It asks for the number on a specific line of a specific form and moves on, with far less plain-language context around unusual situations than TurboTax provides. A filer who has never seen a Schedule K-1 or isn't sure whether a 1099-NEC counts as self-employment income can end up guessing at an answer instead of getting a clear explanation of what the question is actually asking.\n\nThat gap shows up most on a return with something genuinely unusual in it, like a first-year Schedule C, a multi-state move mid-year, or a large stock sale with cost-basis complications. Filers comparing platforms on forums like [Reddit](https://www.reddit.com/) and [Bogleheads](https://www.bogleheads.org/) routinely recommend running an unusual return through more than one program and comparing the bottom-line numbers before trusting either result outright. That habit costs nothing beyond time, and it catches the rare case where a single answer got entered differently between the two.",
+    },
+    {
+      heading: "The Support Gap: Email vs Live Help",
+      content:
+        "FreeTaxUSA's free tier includes email support, and that's it. Get stuck on a line item at nine o'clock on a Tuesday, and you're writing an email and waiting for a reply rather than getting an answer in the moment. The paid Deluxe upgrade adds live chat with priority handling, available on a set weekday schedule, plus unlimited amended returns and basic audit assistance.\n\nTurboTax builds help into the product itself at every tier, with contextual explanations next to most questions, and then layers paid live help on top through Expert Assist and Expert Full Service. If you know you'll need to ask a real person a question mid-return, that gap is the single biggest reason to pay more for TurboTax instead of adding FreeTaxUSA's Deluxe upgrade and hoping it covers what you need.",
+    },
+    {
+      heading: "Accuracy Guarantees Compared",
+      content:
+        "Both platforms back their own math with a 100% accuracy guarantee that reimburses [Internal Revenue Service](https://www.irs.gov/) (IRS) or state penalties and interest caused by a calculation error in the software itself. Neither guarantee extends to a number you typed in wrong or a position you took on a gray area of the tax code, so double-checking your own entries against your actual documents still matters no matter which one you use.\n\nWhere the two diverge is what happens after the guarantee, if the IRS contacts you. FreeTaxUSA's Deluxe tier includes audit assist, which is guidance on how to respond to a notice, not someone handling the correspondence for you. TurboTax's free guidance works the same way, but its paid Audit Defense add-on, run through [TaxAudit](https://www.turbotaxauditdefense.com/), gets you a professional who actually communicates with the IRS on your behalf. That's a meaningfully bigger service than either platform's free-tier guidance.",
+    },
+    {
+      heading: "Why FreeTaxUSA Is an IRS Free File Partner and TurboTax Isn't",
+      content:
+        "FreeTaxUSA is one of the [IRS Free File](https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free) Alliance's current guided-software partners, meaning a qualifying filer under the program's adjusted gross income (AGI) cap, $89,000 for the 2025 tax year, can file through the IRS's own portal and land on FreeTaxUSA's product at no cost under IRS-set eligibility rules rather than FreeTaxUSA's own.\n\nTurboTax isn't part of that program anymore. Intuit withdrew TurboTax from IRS Free File in October 2021 after years of criticism, documented by [ProPublica](https://www.propublica.org/article/turbotax-maker-intuit-will-leave-free-tax-filing-partnership-with-irs), that its free-tier marketing steered eligible filers toward paid upgrades. TurboTax still offers a free tier today, but Intuit sets that tier's eligibility rules itself, separate from the IRS's income-based cap, which is why the two companies' free offers no longer line up the way they once did.",
+    },
+    {
+      heading: "Who Should Not Use FreeTaxUSA",
+      content:
+        "Skip FreeTaxUSA if this is your first time filing without a parent or a professional doing it for you and you don't yet know what most of the tax terms on your documents mean. Its efficient, form-driven interview won't slow down to explain a concept the way TurboTax's does.\n\nSkip it too if you're filing a genuinely complicated multi-state or foreign-income return and want real-time explanation rather than an email reply, or if audit representation, not just guidance, matters enough to you that you'd rather pay for TurboTax's Audit Defense up front. For everyone else, meaning most filers with a domestic W-2, a side gig, some investment activity, or a straightforward home sale, FreeTaxUSA's flat pricing usually wins.",
+    },
+    {
+      heading: "The Cheapest Way to File a Complex Return",
+      content:
+        "Take a freelancer with a Schedule C, a handful of 1099s, and one state return. On FreeTaxUSA, that return costs $0 federal plus roughly $15 for the state return, or around $23 total if you add the Deluxe upgrade for live chat and audit assist. On TurboTax, the same return lands on a paid Do It Yourself tier priced after the software reads your forms, and once a state return is added, that total commonly runs well past $100 based on the tier structure TurboTax has used across recent filing seasons.\n\nThe gap narrows only if you specifically need TurboTax's live-expert review or full-service filing, since FreeTaxUSA's paid add-on tops out at chat support and basic audit guidance rather than a preparer doing any part of the work for you.",
+    },
+    {
+      heading: "What Would Change This Recommendation",
+      content:
+        "If FreeTaxUSA raised its flat state fee sharply or added complexity-based pricing, its price advantage over TurboTax would shrink fast, since that flat fee is the whole case for choosing it on a complicated return. If TurboTax published flat, predictable tier prices the way FreeTaxUSA does instead of pricing after the fact, the two would become much easier to compare before you start either one.\n\nA genuinely live-help option added to FreeTaxUSA's free tier, not just Deluxe's chat window, would remove most of TurboTax's remaining advantage for a filer who occasionally needs to ask someone a question. None of that is true today, so weigh your own comfort reading a tax form against how much a live expert is worth to you before picking either one this season.",
+    },
+  ],
+  faqs: [
+    {
+      question: "Which one is better, FreeTaxUSA or TurboTax?",
+      answer:
+        "It depends on how much guidance you want. FreeTaxUSA is better on price for almost any return, since federal filing stays free no matter how complex your forms are and state filing is a flat, low fee. TurboTax is better for a filer who wants a more guided interview or live expert help, since its questions explain more and its paid tiers add a real person to review or file your return.",
+    },
+    {
+      question: "How reputable is FreeTaxUSA?",
+      answer:
+        "FreeTaxUSA has filed federal returns since 2001 and is one of the current IRS Free File Alliance partners, a status the IRS only grants to companies that meet its security and accuracy standards. It backs its own math with a 100% Accuracy Guarantee covering penalties and interest from a software calculation error, the same core protection TurboTax and most major competitors offer.",
+    },
+    {
+      question: "Does the IRS approve FreeTaxUSA?",
+      answer:
+        "Yes. FreeTaxUSA is listed as a current guided tax software partner in the IRS Free File program, which lets a qualifying filer under the program's income cap file for free through the IRS's own site. That's a higher bar than simply being allowed to e-file, since Free File partners agree to specific IRS security and service requirements to keep that status.",
+    },
+    {
+      question: "What is the best free tax filing program?",
+      answer:
+        "For most filers, FreeTaxUSA offers the broadest free federal coverage, since its $0 federal price applies no matter how many forms your return needs. A filer under the IRS Free File income cap has other IRS-approved options too, including [TaxAct](https://www.taxact.com/) and several smaller partners. TurboTax's free tier is the most limited of the major names, covering only a simple W-2 return.",
+    },
+    {
+      question: "Is FreeTaxUSA accurate for a Schedule C or investment income return?",
+      answer:
+        "Yes, FreeTaxUSA supports Schedule C self-employment income and 1099-B investment sales at no added federal cost, and its 100% Accuracy Guarantee covers a software calculation error the same way it would on a simple return. The guarantee doesn't cover a number you entered incorrectly yourself, so double-check your entries against your actual 1099s and brokerage statements before you file, on FreeTaxUSA or any other platform.",
+    },
+  ],
+  sources: [
+    { label: "FreeTaxUSA: Pricing", url: "https://www.freetaxusa.com/prices" },
+    { label: "FreeTaxUSA: Deluxe Support", url: "https://www.freetaxusa.com/deluxe/" },
+    { label: "IRS: Free File: Do Your Federal Taxes for Free", url: "https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free" },
+    { label: "ProPublica: TurboTax-Maker Intuit Will Leave Free Tax Filing Partnership With IRS", url: "https://www.propublica.org/article/turbotax-maker-intuit-will-leave-free-tax-filing-partnership-with-irs" },
+    { label: "TurboTax: Online Pricing", url: "https://turbotax.intuit.com/personal-taxes/online/" },
+  ],
+  relatedComparisons: ["turbotax-vs-taxact", "turbotax-vs-hr-block"],
+},
+{
+  slug: "buying-vs-leasing-a-car",
+  updated: "2026-08-31",
+  draft: false,
+  title: "Buying vs Leasing a Car: The Real 3-Year Cost",
+  metaDescription:
+    "Buying vs leasing a car compared with a real worked example: monthly cost, mileage caps, money factor, residual value, and who each option fits.",
+  targetKeyword: "buying vs leasing a car",
+  optionA: "Buying",
+  optionB: "Leasing",
+  h1: "Buying vs Leasing a Car: Which Costs Less?",
+  intro:
+    "Buying usually costs less over 3 years once you count the equity you keep, and leasing usually costs less each month while you're driving the car. In the guides we publish here, we see readers compare only the monthly payment and skip the equity number that actually decides which option wins. On a $35,000 vehicle financed over 5 years, a typical loan payment runs around $624 a month. The same car leased over 3 years commonly runs closer to $420 a month. The loan payment is higher because you're financing the entire purchase price. The lease payment is lower because you're only financing the vehicle's expected depreciation, plus a finance charge, over a shorter term.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Typical monthly payment", a: "Higher, since you finance the full purchase price", b: "Lower, since you finance only the expected depreciation plus a finance charge" },
+      { dimension: "Cash due upfront", a: "A down payment, commonly 10% to 20% of the purchase price", b: "Due-at-signing fees plus any cap cost reduction, often less than a loan down payment" },
+      { dimension: "Mileage", a: "Unlimited. High mileage just lowers resale value later", b: "Capped, typically 10,000 to 15,000 miles a year, with a per-mile fee over the limit" },
+      { dimension: "What you have when the term ends", a: "A car you own outright and can keep driving payment-free", b: "Nothing, unless you buy it at its residual value or sign a new lease" },
+      { dimension: "Repairs once the term ends", a: "Your responsibility once the manufacturer's warranty runs out", b: "Not applicable. You're usually still under warranty for the full lease" },
+      { dimension: "Wear and tear", a: "No inspection. Wear just lowers what the car is worth when you sell it", b: "Charged at lease-end if the leasing company judges the damage beyond normal wear" },
+      { dimension: "Best fit", a: "A driver who racks up miles, or who keeps a car well past the loan term", b: "A driver under about 12,000 miles a year who wants a new car every few years" },
+    ],
+  },
+  verdict:
+    "Buy if you plan to keep the car past the loan term, drive more than about 12,000 miles a year, or want the equity to count toward your next car instead of disappearing at lease-end. Lease if you drive a predictable, lower number of miles, always want a car under warranty, or run a business that can write off the lease payment. Mileage is the tell either way. Skip leasing entirely if you tend to go over mileage limits, modify your vehicles, or don't want to hand a car back in exactly the condition someone else defines as acceptable. Skip buying with a long loan term if you trade in every 2 to 3 years anyway, since a 6- or 7-year loan on a car you don't keep that long usually leaves you owing more than the car is worth when you trade it in.",
+  sections: [
+    {
+      heading: "What a $35,000 Car Costs You Over 3 Years",
+      content:
+        "Run the same $35,000 vehicle both ways over a 3-year window. Financed with $3,500 down at 7% annual percentage rate (APR) over 60 months, the loan payment runs about $624 a month, or roughly $22,450 paid over 36 months on top of the down payment, for about $25,950 in total cash out. After 3 years the loan balance sits near $13,930. The [Bureau of Labor Statistics](https://www.bls.gov/opub/mlr/2024/highcharts/data/autos-chart-1.stm) (BLS) tracks new-vehicle depreciation at roughly 11% in year one and around 10% to 14% in each of the next two years, which puts this car's value near $23,800 after 3 years. Subtract the loan balance from that value and the buyer holds about $9,870 in equity, which brings the real 3-year cost down to roughly $16,080.\n\nLease the same car over 36 months with a $2,000 due-at-signing payment, a residual value around 58% of the original price, and a money factor equal to roughly 3% APR, and the payment lands near $419 a month, or about $17,100 in total cash out including the signing fee. At the end of the lease there's no equity to subtract, because the car goes back. In this example, buying edges out leasing on 3-year cost, and that gap only widens in year four and beyond, once the loan is paid off and the owner drives payment-free while a leaser who wants to keep driving a car has to sign another lease.",
+    },
+    {
+      heading: "Why Lease Payments Are Lower Than Loan Payments",
+      content:
+        "A loan payment covers the entire price of the car, because you're buying all of it. A lease payment covers only the gap between the car's price today and what it's expected to be worth when the lease ends, plus a finance charge on that gap. That's why the same car, at the same price, produces a noticeably smaller monthly number on a lease than on a loan.\n\nThe tradeoff is what that lower payment buys you. A loan payment builds equity with every dollar. A lease payment buys temporary use of a car you're required to return, with no equity building at all, which is the core of the [Consumer Financial Protection Bureau (CFPB)](https://consumerfinance.gov/ask-cfpb/what-should-i-know-about-the-differences-between-leasing-and-buying-a-vehicle-en-815)'s guidance that a lease payment functions like rent rather than an installment toward ownership.",
+    },
+    {
+      heading: "Money Factor and Residual Value, Explained Plainly",
+      content:
+        "A money factor is a lease's version of an interest rate, shown as a small decimal like .00125 instead of a percentage. Multiply it by 2,400 to get a rough equivalent APR, so .00125 works out to about 3%. A dealer can quote a low-sounding money factor while marking up the car's price, so compare the total lease cost, not just the money factor, before you sign.\n\nResidual value is the leasing company's prediction of what the car will be worth when the lease ends, set as a percentage of its original price. A higher residual value means a smaller gap between price and residual, which means a lower monthly payment, because you're financing less depreciation. Residual value is set by the leasing company up front and doesn't move with the actual used-car market, which is why some leases signed during unusual used-car price swings turned out to be unusually good or unusually bad deals in hindsight.",
+    },
+    {
+      heading: "Mileage Caps and What Happens If You Go Over",
+      content:
+        "Most leases cap annual mileage at 10,000 to 15,000 miles, and going over that limit triggers a per-mile fee at lease-end, on top of whatever your payment already was. A driver who commutes long distances or takes regular road trips can blow past a 12,000-mile cap without noticing until the final bill arrives.\n\nBuying carries no mileage limit at all. High mileage still costs you, just differently: it lowers what the car is worth when you eventually sell or trade it in, rather than showing up as a specific fee at a specific deadline. If your annual mileage is genuinely unpredictable, that difference alone is often reason enough to buy instead of lease.",
+    },
+    {
+      heading: "When Leasing Genuinely Wins",
+      content:
+        "Leasing wins for a driver who reliably stays under the mileage cap and would rather trade every few years than deal with a used-car sale. It also wins for someone who wants to be under a manufacturer's warranty for essentially the entire time they own the car, since most leases run shorter than typical warranty coverage.\n\nA self-employed person or business owner who uses the vehicle for work has another real reason to lease: a portion of the lease payment can often be written off as a business expense, which changes the math in ways a personal loan payment doesn't. Confirm your specific deduction with a tax professional before assuming it applies to your situation, since the rules depend on business-use percentage and the vehicle itself.",
+    },
+    {
+      heading: "When Buying Wins",
+      content:
+        "Buying wins for anyone who drives more than the typical 12,000-to-15,000-mile lease cap, since there's no penalty for putting real miles on a car you own. It also wins for anyone who tends to keep a car for 7, 8, or more years, because once the loan is paid off, the payments stop entirely while a leaser who wants to keep having a car is signing a new agreement.\n\nBuying is also the better fit for anyone who wants to build equity toward the next vehicle instead of starting from zero every lease cycle. Our [car affordability calculator](/auto-loan/car-affordability-calculator/) and [how to buy a car](/guides/how-to-buy-a-car/) guide both walk through setting a realistic budget before you shop, which matters more on a purchase than on a lease since you're committing to the full price either way.",
+    },
+    {
+      heading: "Why Dave Ramsey Tells People Not to Lease",
+      content:
+        "[Ramsey Solutions](https://www.ramseysolutions.com/debt/how-does-a-car-lease-work) argues that leasing bundles a car's depreciation, the dealer's profit, and an interest charge into one monthly number without disclosing the effective interest rate the way a loan legally has to, since a lease isn't classified as a loan under federal law. That's a real structural point: a lease's true cost of capital is harder for an average shopper to compare against a loan's published APR.\n\nRamsey's broader objection is behavioral as much as mathematical. A driver who leases car after car never stops making a payment, while a driver who buys and pays off a loan eventually drives payment-free for however long the car lasts after that. Whether that tradeoff matters to you depends on whether you'd actually keep driving the paid-off car or trade it in anyway once it's out of warranty.",
+    },
+    {
+      heading: "5 Real Disadvantages of Leasing a Car",
+      content:
+        "Leasing carries five downsides worth weighing against its lower monthly payment. No equity is the biggest one. Every payment goes toward use of the car, not ownership of it, so you have nothing to show for it once the lease ends. Mileage penalties are the most common surprise. Go over your annual cap and you pay a per-mile fee at turn-in, often between 15 and 30 cents a mile.\n\nWear-and-tear charges hit next, and the leasing company decides what counts as excessive, a judgment made only after you've already returned the car. Early-termination costs add another risk: ending a lease before its term is up typically costs more than finishing it out, which makes a lease a poor fit if your situation might change. Maintenance rounds out the list, since oil changes, tires, and brakes are still your responsibility on most leases, the same as if you owned the car outright.",
+    },
+    {
+      heading: "What Would Change This Recommendation",
+      content:
+        "If used-car values stayed unusually high the way they did during recent supply disruptions, buying's equity advantage would grow even larger, since a car would hold more of its value than the BLS's typical depreciation curve predicts. If a lease residual value was set unusually high relative to the car's real expected value, the monthly lease payment would drop further and the math could tilt back toward leasing even for a longer-term driver.\n\nA business owner with a genuine, documented deduction on the lease payment should run their own after-tax numbers, since that single factor can flip this comparison on its own. For most personal drivers without that write-off, run your own numbers through the [auto loan calculator](/auto-loan/) before deciding between buying vs leasing a car, since the 60/40 split in this example moves with your own rate, term, and mileage.",
+    },
+  ],
+  faqs: [
+    {
+      question: "Is it generally better to lease or buy a car?",
+      answer:
+        "Buying is generally the better financial choice over the long run, because every payment builds equity and the payments stop once the loan is paid off. Leasing wins for a driver who stays under the mileage cap, always wants a newer car, or has a genuine business write-off on the payment. Run your own numbers, since the gap depends heavily on your mileage, how long you keep a car, and the specific lease terms offered.",
+    },
+    {
+      question: "Why does Dave Ramsey say not to lease a car?",
+      answer:
+        "Ramsey Solutions argues that a lease bundles depreciation, dealer profit, and a finance charge into one payment without disclosing an APR the way a loan is legally required to, since a lease isn't classified as a loan. Ramsey also points out that a driver who leases repeatedly never stops making a car payment, while a driver who buys eventually owns the car outright and drives payment-free.",
+    },
+    {
+      question: "What are 5 disadvantages of leasing a car?",
+      answer:
+        "The main disadvantages are no equity when the lease ends, mileage penalties for exceeding your annual cap, wear-and-tear charges decided by the leasing company, expensive early-termination fees if your situation changes, and maintenance costs that are usually still your responsibility. Weigh those against the lower monthly payment leasing typically offers before deciding.",
+    },
+    {
+      question: "Is it better to lease or buy a car in 2026?",
+      answer:
+        "The same fundamentals from prior years still apply in 2026: buying tends to win for high-mileage or long-term drivers because of the equity it builds, and leasing tends to win for lower-mileage drivers who want a new car every few years. Current interest rates and lease money factors shift the exact numbers year to year, so run your own loan and lease quotes before assuming either side automatically wins this year.",
+    },
+    {
+      question: "How much does going over your lease mileage limit cost?",
+      answer:
+        "Most leases charge somewhere between 15 and 30 cents per mile over your contracted limit, charged as a lump sum when you return the car. Driving 3,000 miles over a 12,000-mile-a-year cap on a 3-year lease could add several hundred dollars or more to your final bill, so estimate your actual annual mileage as accurately as you can before choosing a mileage tier.",
+    },
+  ],
+  sources: [
+    { label: "Consumer Financial Protection Bureau: Leasing vs. Buying a Vehicle", url: "https://consumerfinance.gov/ask-cfpb/what-should-i-know-about-the-differences-between-leasing-and-buying-a-vehicle-en-815" },
+    { label: "Bureau of Labor Statistics: Depreciation Rates by Automobile Age", url: "https://www.bls.gov/opub/mlr/2024/highcharts/data/autos-chart-1.stm" },
+    { label: "Federal Reserve: Excessive Wear-and-Tear Charges on a Vehicle Lease", url: "https://www.federalreserve.gov/pubs/leasing/resource/consider/endopen_info10.htm" },
+    { label: "Ramsey Solutions: How Does a Car Lease Work?", url: "https://www.ramseysolutions.com/debt/how-does-a-car-lease-work" },
+  ],
+  calculatorLinks: [
+    { label: "Auto Loan Calculator", href: "/auto-loan/" },
+    { label: "Car Affordability Calculator", href: "/auto-loan/car-affordability-calculator/" },
+  ],
+},
+{
+  slug: "construction-loan-vs-traditional-mortgage",
+  updated: "2026-08-31",
+  draft: false,
+  title: "Construction Loan vs Mortgage: Key Differences",
+  metaDescription:
+    "Construction loan vs traditional mortgage compared: how draws work, interest-only payments, down payment rules, closings, and which one fits your build.",
+  targetKeyword: "construction loan vs mortgage",
+  optionA: "Construction Loan",
+  optionB: "Traditional Mortgage",
+  segment: "Home financing",
+  h1: "Construction Loan vs Traditional Mortgage: What's the Difference?",
+  intro:
+    "A construction loan pays your builder in stages as the work gets done, while a traditional mortgage hands the seller the full purchase price in one lump sum at closing. In the guides we publish here, we see readers assume a construction loan works like a mortgage with a different name, then get surprised by draw inspections, interest-only payments, and a bigger down payment requirement. A construction loan typically charges interest only on the amount actually drawn so far, and it usually requires a larger down payment and a detailed builder contract before a lender approves it. A traditional mortgage amortizes principal and interest from your very first payment, against a home that already exists and can be appraised as-is today.",
+  comparisonTable: {
+    rows: [
+      { dimension: "How the money is paid out", a: "Released in draws as construction milestones are completed and inspected", b: "A lump sum paid to the seller at closing" },
+      { dimension: "Payments during the loan", a: "Interest-only on the amount drawn so far during the build", b: "Amortizing principal and interest from month one" },
+      { dimension: "Number of closings", a: "One with a construction-to-permanent loan, two with a stand-alone construction loan", b: "One" },
+      { dimension: "Typical down payment", a: "Often 20% or more on a conventional construction loan, as low as 3.5% on an FHA construction-to-permanent loan", b: "As low as 3% to 5% on many conventional programs, 3.5% on FHA" },
+      { dimension: "What gets appraised", a: "The home's projected value once construction is complete, based on plans and a builder's contract", b: "The home as it exists today" },
+      { dimension: "Builder requirements", a: "A licensed, insured builder and a detailed construction contract are typically required before approval", b: "None. You're buying a structure that already exists" },
+      { dimension: "Rate during the loan", a: "Often higher, and sometimes variable, during the interest-only construction phase", b: "Fixed or adjustable, set once at closing" },
+      { dimension: "Best fit", a: "Building a custom home, or a major ground-up rebuild", b: "Buying a home that already exists" },
+    ],
+  },
+  verdict:
+    "Choose a construction loan only if you're actually building. It's built around draws, inspections, and a builder contract that a home purchase doesn't need. Within that choice, a one-time-close construction-to-permanent loan beats a stand-alone construction loan for most borrowers, because it avoids a second closing, a second round of closing costs, and a second credit check once the home is finished. Choose a traditional mortgage for any home that already exists, since it qualifies faster, needs a smaller down payment on most programs, and carries a rate that's set once instead of shifting between a construction phase and a permanent phase. Skip a construction loan if you don't yet have a licensed builder and a firm contract in hand. Most lenders won't even start underwriting a construction loan application without both.",
+  sections: [
+    {
+      heading: "How a Construction Loan Pays Out",
+      content:
+        "A construction loan releases money in stages called draws, tied to specific milestones like the foundation, framing, and roofing. A lender or an inspector confirms each stage is actually complete before releasing the next draw, so the builder gets paid for finished work rather than the full budget up front.\n\nA traditional mortgage works nothing like that. The lender wires the full loan amount to the seller at closing, in one payment, because the home already exists and there's nothing left to inspect in stages. That single difference is why a construction loan takes more paperwork and more back-and-forth with the lender than buying a finished home ever does.",
+    },
+    {
+      heading: "Interest-Only Construction Payments vs a Regular Mortgage Payment",
+      content:
+        "During the build, most construction loans charge interest only on the portion of the loan actually drawn so far, not on the full approved amount. Draw $80,000 of a $400,000 construction loan in month two, and you're paying interest on $80,000 that month, not $400,000, which keeps early payments manageable while the home is still unfinished and not yet generating any value to live in.\n\nA traditional mortgage starts amortizing immediately: every payment from day one includes both principal and interest, calculated against the entire loan balance. Once a construction loan converts to permanent financing, it starts behaving like that same amortizing mortgage. The interest-only period is temporary by design, not a long-term feature.",
+    },
+    {
+      heading: "One-Time Close vs a Stand-Alone Construction Loan",
+      content:
+        "A construction-to-permanent loan, sometimes called a one-time close, combines the construction phase and the permanent mortgage into a single closing and a single set of closing costs. [Fannie Mae](https://singlefamily.fanniemae.com/learning-center/construction-permanent-financing)'s guidelines cap the construction period at 12 months for a single phase and 18 months total, after which the loan converts automatically into a standard amortizing mortgage.\n\nA stand-alone construction loan works differently and costs more in the process. You close on a short-term construction loan first, and once the home is finished, you apply separately for a permanent mortgage to pay off the construction loan, with its own approval, appraisal, and closing costs. Rates can move between those two closings, so a stand-alone loan carries real interest rate risk that a one-time-close loan avoids entirely.",
+    },
+    {
+      heading: "Down Payment and Qualification Are Both Tougher",
+      content:
+        "A conventional construction loan commonly requires 20% down or more, calculated against the home's appraised value once complete, not just the cost written into your builder's contract. That's a meaningfully bigger check than most buyers write for a home that already exists, where conventional programs can go as low as 3% to 5% down.\n\nA Federal Housing Administration ([FHA](https://www.hud.gov/sites/dfiles/OCHCO/documents/19-08ml.pdf)) construction-to-permanent loan is the exception, allowing as little as 3.5% down with a qualifying credit score, the same threshold as a standard FHA purchase mortgage. Either way, a construction loan application needs more than income and credit: lenders also want a licensed, insured builder, a detailed construction contract, cost breakdowns, and a full set of building plans before they'll approve anything, since the collateral they're lending against doesn't exist yet.",
+    },
+    {
+      heading: "Why Construction Loan Rates Run Higher",
+      content:
+        "A construction loan's interest-only phase often carries a higher rate than a comparable mortgage rate, and sometimes a variable one, because the lender is financing an unfinished asset with real project risk attached: a builder could fall behind schedule, go over budget, or run into a permitting delay before the home is even livable.\n\nOnce the loan converts to permanent financing, the rate situation depends on how your loan is structured. Fannie Mae's automatic conversion option keeps your original rate, loan amount, and payment unchanged straight through to the permanent phase. Its modification agreement option lets you adjust the rate, term, or switch from an adjustable rate to a fixed one at conversion, though that flexibility means resubmitting the loan for underwriting a second time. Ask your lender which structure your loan uses before you lock a rate at the start.",
+    },
+    {
+      heading: "The Timeline From Groundbreaking to Move-In",
+      content:
+        "A traditional mortgage closes and you can move in within days, since there's no building left to do. A construction loan's timeline stretches across the entire build, commonly 6 to 12 months depending on the home's size and how smoothly permitting and inspections go, and payments on an FHA construction-to-permanent loan typically begin around 60 days after the certificate of occupancy or final inspection, whichever comes later.\n\nThat gap matters for anyone currently renting or carrying a separate mortgage during the build, since you're covering interest-only construction payments on top of your current housing cost for the entire build period, not just the last few weeks before move-in. Budget for both housing costs running at once for however long the project realistically takes, not just the contractor's best-case schedule.",
+    },
+    {
+      heading: "Construction Loans Are Harder to Get Than a Standard Mortgage",
+      content:
+        "Yes, more so than a standard mortgage. Fewer lenders offer construction loans at all, and the ones that do ask for more documentation: a vetted, licensed builder, a signed construction contract, detailed plans, and a line-item budget, in addition to the income and credit checks a regular mortgage already requires.\n\nA local or regional bank, or a lender who specifically markets construction lending, is usually a better starting point than a large national mortgage lender, since construction underwriting is a specialized skill many big lenders don't keep in-house. Start that search well before you sign a contract with a builder, since your lender's requirements can shape which builders and contract terms actually qualify.",
+    },
+    {
+      heading: "Who Should Skip a Construction Loan",
+      content:
+        "Skip a construction loan if you don't have a licensed, insured builder and a signed contract yet, since most lenders won't begin underwriting without both in hand. Skip it too if a 20%-plus down payment isn't realistic for you and you don't qualify for FHA's lower-down-payment construction-to-permanent option.\n\nA buyer who wants a custom home but can't clear either bar is usually better off buying an existing home with a traditional mortgage and renovating later, financed through a separate renovation loan once you've built equity. Our [FHA vs conventional loan](/compare/fha-vs-conventional-loan/) comparison covers that more common path in detail.",
+    },
+    {
+      heading: "What Would Change This Recommendation",
+      content:
+        "If more conventional lenders started offering construction loans at 5% to 10% down instead of 20%, the qualification gap between a construction loan and a standard mortgage would shrink considerably, and building would become realistic for more buyers. A wider rollout of FHA-style low-down-payment construction-to-permanent programs among conventional lenders would do the same.\n\nA sharp rise in mortgage rates during a long stand-alone construction project would also change this math, since that structure exposes you to a second-closing rate you can't lock in advance. Confirm whether your lender offers a true one-time-close construction-to-permanent loan before you compare construction loan vs mortgage costs any further, since that single structural choice affects your rate risk more than almost anything else in this comparison.",
+    },
+  ],
+  faqs: [
+    {
+      question: "Is a construction loan cheaper than a mortgage?",
+      answer:
+        "No, a construction loan usually costs more than a traditional mortgage for the same home value. Interest-only construction financing often carries a higher rate than a comparable mortgage rate, and the larger down payment most construction loans require ties up more of your cash up front. Once the loan converts to permanent financing, ongoing costs move closer to a standard mortgage.",
+    },
+    {
+      question: "What are the cons of a construction loan?",
+      answer:
+        "The main downsides are a bigger down payment, stricter qualification tied to a licensed builder and detailed plans, a higher interest-only rate during the build, and a longer timeline before you can move in. A stand-alone construction loan adds a second closing and a second round of closing costs, plus exposure to rate changes between the construction and permanent phases.",
+    },
+    {
+      question: "Do I have to put 20% down on a construction loan?",
+      answer:
+        "Not always, though 20% or more is the common requirement on a conventional construction loan. An FHA construction-to-permanent loan allows as little as 3.5% down with a qualifying credit score, the same threshold used on a standard FHA purchase mortgage. Ask any lender you're considering which down payment tier applies to their specific construction loan program.",
+    },
+    {
+      question: "Are construction loans hard to get?",
+      answer:
+        "Yes, harder than a standard mortgage. Fewer lenders offer them, and approval requires a licensed, insured builder, a signed construction contract, detailed building plans, and a line-item budget on top of the usual income and credit checks. A local or regional lender that specifically offers construction financing is often an easier path than a large national mortgage lender.",
+    },
+    {
+      question: "What is a construction-to-permanent loan?",
+      answer:
+        "A construction-to-permanent loan, also called a one-time close, combines a short-term construction loan and a long-term mortgage into a single closing. It funds the build in draws with interest-only payments, then converts automatically into a standard amortizing mortgage once construction is finished, without the second closing and second credit check a stand-alone construction loan requires.",
+    },
+  ],
+  sources: [
+    { label: "Fannie Mae: Construction-to-Permanent Financing", url: "https://singlefamily.fanniemae.com/learning-center/construction-permanent-financing" },
+    { label: "Fannie Mae Selling Guide: Single-Closing Construction-to-Permanent Transactions", url: "https://selling-guide.fanniemae.com/sel/b5-3.1-02/conversion-construction-permanent-financing-single-closing-transactions" },
+    { label: "HUD: FHA Construction-to-Permanent Mortgage Programs (Mortgagee Letter 2019-08)", url: "https://www.hud.gov/sites/dfiles/OCHCO/documents/19-08ml.pdf" },
+    { label: "CFPB: Piloting Disclosures for Construction Loans", url: "https://www.consumerfinance.gov/about-us/blog/piloting-disclosures-for-construction-loans/" },
+  ],
+  relatedComparisons: ["fha-vs-conventional-loan", "fixed-vs-arm-mortgage", "15-year-vs-30-year-mortgage"],
+  calculatorLinks: [
+    { label: "Mortgage Payment Calculator", href: "/mortgage/" },
+  ],
+},
+{
+  slug: "medicare-advantage-vs-medigap",
+  updated: "2026-08-31",
+  title: "Medicare Advantage vs Medigap: Which Costs Less?",
+  metaDescription:
+    "Medicare Advantage vs Medigap compared: premiums, networks, drug coverage, and the enrollment window that decides whether you can switch later.",
+  targetKeyword: "medicare advantage vs medigap",
+  optionA: "Medicare Advantage",
+  optionB: "Medigap",
+  segment: "Near-retirees & elder care",
+  h1: "Medicare Advantage vs Medigap: Which Should You Choose?",
+  intro:
+    "Medicare Advantage replaces Original Medicare with a private insurer's plan that bundles Part A (hospital coverage), Part B (medical coverage), and usually Part D (prescription drug coverage) into one network-based plan. Medigap keeps you on Original Medicare and pays a share of what it doesn't cover, so you can see any doctor nationwide who accepts Medicare, with no network at all. The right pick usually comes down to three things: how much premium you can carry every month, how often you travel or need care outside a local network, and whether you can still pass medical underwriting if you decide to switch later.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Monthly premium", a: "Many plans run $0 a month. Plans with more extras can cost more", b: "No standard price. Each insurer sets its own rate by state, age, and plan letter, commonly in the low hundreds monthly" },
+      { dimension: "Provider network", a: "Network-based. Referrals and prior approval are common for specialists", b: "No network. Works with any provider nationwide that accepts Medicare" },
+      { dimension: "Annual out-of-pocket cap", a: "Required every plan year. Once you hit it, the plan pays 100% of covered Part A and Part B costs", b: "Not needed the same way. Medigap already covers most of the gap Original Medicare alone leaves open" },
+      { dimension: "Prescription drug coverage", a: "Usually bundled into the plan itself", b: "Not included. Requires a separate, stand-alone Part D plan" },
+      { dimension: "Extra benefits (dental, vision, hearing)", a: "Often included, though specifics vary by plan", b: "Not included. You'd buy separate dental, vision, or hearing coverage" },
+      { dimension: "Guaranteed acceptance if you switch", a: "Yes, every fall during the Annual Election Period, Oct. 15 to Dec. 7", b: "Only during your one-time, 6-month Medigap Open Enrollment Period at 65. After that, most states allow medical underwriting" },
+    ],
+  },
+  verdict:
+    "Choose Medigap if you travel often, split time between two homes, or want to keep a specific doctor no matter what network they're in, and you can carry a steady premium on top of Part B. Choose Medicare Advantage if the lower monthly premium matters more to you than network flexibility, you're in reasonably good health, and you're comfortable with the tradeoff that switching to Medigap later may mean passing medical underwriting. Someone who wants zero cost surprises is usually better served by Medigap, even when the average cost runs a bit higher. Someone stretching a fixed income who rarely needs specialty care outside their area is usually better served by Medicare Advantage.",
+  sections: [
+    {
+      heading: "How Medicare Advantage and Medigap Are Built",
+      content:
+        "Medicare Advantage is a private plan that takes over your Medicare benefits entirely. Also called Part C, it's sold by an insurer under contract with Medicare, and it replaces Original Medicare rather than working alongside it.\n\nMost Medicare Advantage plans also fold in Part D, the prescription drug benefit, so you carry one card and one insurer for hospital, medical, and drug coverage. Many build their network as a Health Maintenance Organization (HMO) or Preferred Provider Organization (PPO), which is how they control cost enough to often charge a $0 premium.\n\nMedigap works the opposite way. You keep Original Medicare exactly as it is, Part A for hospital stays and Part B for outpatient care, and Medigap sits on top of it as a supplemental policy.\n\nIt pays some or all of the coinsurance, copayments, and deductibles Original Medicare leaves you owing. Medigap never replaces Original Medicare and never includes drug coverage, so a Part D plan is a separate purchase either way.\n\nThat structural split explains almost every other difference on this page. A private plan that controls your whole benefit can build a network and negotiate rates.\n\nA supplement riding on top of an already-open system can't do that. It just pays the bill Original Medicare leaves behind.",
+    },
+    {
+      heading: "What You Pay Monthly Versus What You Pay at the Doctor",
+      content:
+        "Medicare Advantage usually wins on the sticker price. A large share of Medicare Advantage plans charge a $0 monthly premium beyond what you already pay for Part B, since the insurer earns its revenue from Medicare's per-member payment instead of your premium. The tradeoff shows up later, in copays, coinsurance, and a deductible you owe each time you actually use care.\n\nMedigap flips that order. You pay a real premium every month, and in exchange most of your point-of-care costs drop close to zero. A Medigap Plan G policyholder, for example, owes nothing out of pocket for a hospital stay or a specialist visit once the annual Part B deductible is met.\n\nRun the two structures side by side over a full year, not one visit. A healthy retiree who rarely sees a doctor often comes out ahead on Medicare Advantage's $0 premium. A retiree managing a chronic condition, with frequent specialist visits and a hospital stay some years, often comes out ahead on Medigap's flat, predictable premium instead, because copay after copay adds up fast.",
+    },
+    {
+      heading: "Enrollment Windows and the Underwriting Risk If You Switch Later",
+      content:
+        "Both types of coverage have a window where insurers must accept you no matter your health. For Medicare Advantage, that's the Annual Election Period every fall, October 15 through December 7, when anyone can join, switch, or drop a plan for the following year. Current Medicare Advantage members also get a second, narrower Medicare Advantage Open Enrollment Period from January 1 through March 31, letting them make one plan change or return to Original Medicare.\n\nMedigap works differently, and this is the part that trips people up. You get a one-time, six-month Medigap Open Enrollment Period that starts the first month you're 65 or older and enrolled in Part B.\n\nDuring that window, an insurer can't deny you a policy or charge you more because of a health condition, under [Medicare.gov](https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when)'s guaranteed-issue rules. Miss that window, and in most states an insurer can run medical underwriting on a new Medigap application, deny coverage outright, or charge a higher premium based on your health history.\n\nThat asymmetry is the real risk in this decision. Moving from Medigap to Medicare Advantage is guaranteed every single fall. Moving the other way, from Medicare Advantage back to Medigap after your first year, is not guaranteed in most states unless you qualify for a specific guaranteed-issue right, such as your plan leaving your service area, or you use a trial right within your first 12 months on the plan.",
+    },
+    {
+      heading: "Prescription Drug Coverage Isn't Automatic on Either One",
+      content:
+        "Prescription drug coverage is the piece most new Medicare enrollees assume comes with everything. It doesn't, and the two paths handle it in opposite ways. Most Medicare Advantage plans bundle Part D directly into the plan, sometimes called an MA-PD plan, so one enrollment covers your drugs along with your medical care.\n\nMedigap never includes drug coverage under any plan letter. Pairing Medigap with Original Medicare means enrolling in a separate, stand-alone Part D plan from a third insurer, which adds a third monthly premium on top of Part B and your Medigap policy. Skip Part D entirely under either path, with no other creditable drug coverage, and you risk a late-enrollment penalty added to your premium for as long as you stay enrolled.",
+    },
+    {
+      heading: "Why Some Doctors Push Back on Medicare Advantage",
+      content:
+        "What we see near-retirees comparing these two get wrong most often is treating a network restriction as a minor inconvenience rather than a real gatekeeper on care. Medicare Advantage insurers submitted nearly 53 million prior authorization requests on behalf of their members in 2024, up from 49.8 million in 2023, according to [KFF](https://www.kff.org/medicare/medicare-advantage-insurers-made-nearly-53-million-prior-authorization-determinations-in-2024/)'s analysis of federal data. Original Medicare, by contrast, requires prior authorization for very few services.\n\nThat volume is why some physician practices limit how many Medicare Advantage patients they take, or drop specific plans' networks entirely. A doctor billing Original Medicare, with or without a Medigap-covered patient, gets paid Medicare's set rate with no prior authorization step for most visits. A doctor billing a Medicare Advantage plan may need approval before a scan, a procedure, or a referral goes through, which adds staff time nobody pays them extra for.\n\nNone of this means Medicare Advantage care is worse care. It means the administrative friction is real, and it sits mostly on the Medicare Advantage side of this comparison, not spread evenly across both.",
+    },
+    {
+      heading: "When a Network Change Should Flip Your Decision",
+      content:
+        "Medicare Advantage doesn't fit someone who spends part of the year in a second state, since most plans only cover routine, non-emergency care inside their service area. It also doesn't fit someone managing a serious chronic condition who wants to keep a specific out-of-network specialist regardless of cost, since that specialist may not be reachable through the plan's network at any price.\n\nA few events should flip this verdict once you've made it. A plan network dropping your doctor mid-year, a move to a new service area the plan doesn't cover, or a new diagnosis that turns occasional care into frequent specialist visits are all real reasons to use the next Annual Election Period to switch, and to weigh Medigap's guaranteed-issue rules before that window closes. Run the numbers on your own situation before you commit either way with our [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/), since a gap in coverage costs far more than the premium difference between Medicare Advantage and Medigap.",
+    },
+  ],
+  faqs: [
+    {
+      question: "What are the disadvantages of having a Medicare Advantage plan?",
+      answer:
+        "The main disadvantages are network restrictions, referral requirements, and prior authorization delays. You're limited to the plan's network for non-emergency care, many specialist visits need a referral first, and the plan can require approval before covering a scan, procedure, or hospital stay. Coverage also usually stops working normally outside your plan's service area, so it fits a homebound retiree better than a frequent traveler.",
+    },
+    {
+      question: "What is the downside of Medigap?",
+      answer:
+        "Medigap's downside is the monthly premium, which you pay every month whether you use care or not. It also never includes prescription drug coverage, so you need a separate Part D plan and a third premium alongside Part B. And if you miss your one-time enrollment window, an insurer can use medical underwriting to deny you or charge more in most states.",
+    },
+    {
+      question: "Why would I choose Medigap over Medicare Advantage?",
+      answer:
+        "Choose Medigap if you travel frequently, split time between two states, or want the freedom to see any doctor nationwide who accepts Medicare without a referral or network check. It also fits someone who wants a predictable monthly cost instead of variable copays and coinsurance that add up with every visit.",
+    },
+    {
+      question: "Do doctors prefer Medigap or Medicare Advantage?",
+      answer:
+        "Many doctors prefer treating patients on Original Medicare with Medigap, since it pays Medicare's set rate with no prior authorization step for most services. Medicare Advantage insurers submitted nearly 53 million prior authorization requests in 2024, according to KFF's analysis of federal data, and some practices limit how many Medicare Advantage plans they accept because of the added administrative work it creates.",
+    },
+    {
+      question: "Can I switch from Medicare Advantage back to Medigap without medical underwriting?",
+      answer:
+        "Only in specific situations. If you're within your first 12 months on a Medicare Advantage plan, a trial right lets you return to Medigap with guaranteed acceptance. Outside that trial period, you generally need a qualifying event, such as your plan leaving your service area, unless your state offers broader guaranteed-issue protections than federal law requires.",
+    },
+    {
+      question: "Can I have both Medicare Advantage and Medigap at the same time?",
+      answer:
+        "No. Medigap is built to work alongside Original Medicare, and it's generally against federal rules for an insurer to sell you a Medigap policy while you're enrolled in Medicare Advantage, unless you're actively switching back to Original Medicare in the process. You have to pick one structure or the other. Carrying both isn't an option Medicare allows.",
+    },
+  ],
+  sources: [
+    { label: "Medicare.gov: Medigap basics", url: "https://www.medicare.gov/health-drug-plans/medigap/basics" },
+    { label: "Medicare.gov: When can I buy a Medigap policy?", url: "https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/when" },
+    { label: "Medicare.gov: Medicare costs", url: "https://www.medicare.gov/basics/costs/medicare-costs" },
+    { label: "Medicare.gov: Special enrollment periods", url: "https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods" },
+    { label: "KFF: Medicare Advantage insurers made nearly 53 million prior authorization determinations in 2024", url: "https://www.kff.org/medicare/medicare-advantage-insurers-made-nearly-53-million-prior-authorization-determinations-in-2024/" },
+  ],
+  calculatorLinks: [
+    { label: "Elder care hub", href: "/elder-care/" },
+    { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
+  ],
+},
+{
+  slug: "etrade-vs-fidelity",
+  updated: "2026-08-31",
+  title: "E*TRADE vs Fidelity: Which Broker Fits You?",
+  metaDescription:
+    "E*TRADE vs Fidelity compared: options and futures fees, robo-advisor cost, research tools, and who owns each platform, so you can pick the right broker.",
+  targetKeyword: "etrade vs fidelity",
+  optionA: "E*TRADE",
+  optionB: "Fidelity",
+  segment: "Brokerages",
+  h1: "E*TRADE vs Fidelity: Which Broker Should You Choose?",
+  intro:
+    "[E*TRADE](https://us.etrade.com) and [Fidelity](https://www.fidelity.com) both charge $0 for online stock and ETF trades. The real differences show up in who owns each platform, what the robo-advisor costs, and how deep the research tools go.\n\n[Morgan Stanley](https://www.morganstanley.com) owns E*TRADE and built its active-trader tools around Power E*TRADE. Fidelity stays independently owned and pairs its trading platform with genuinely free index funds and a far larger research library. If you trade options or futures often, or want a big-brand advisor relationship behind your account, that ownership difference alone can tip the decision.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Commission on stock/ETF trades", a: "$0", b: "$0" },
+      { dimension: "Options contract fee", a: "$0.65 per contract, or $0.50 for accounts placing 30+ trades a quarter", b: "$0.65 per contract, flat" },
+      { dimension: "Futures trading", a: "Yes, 8 market categories including equity indices and crypto futures, from $1.50/contract", b: "Not offered for direct retail trading" },
+      { dimension: "Robo-advisor", a: "Core Portfolios: $500 minimum, 0.30%/year on every balance", b: "Fidelity Go: $0 minimum, free under $25,000, 0.35%/year above" },
+      { dimension: "Fractional shares", a: "From $5, an expanding list built around S&P 100 stocks and ETFs", b: "From $1, roughly 7,000 stocks and ETFs (Stocks by the Slice)" },
+      { dimension: "Zero-expense-ratio index funds", a: "No 0% funds offered", b: "Yes, 4 Fidelity ZERO funds (FZROX, FZILX, FNILX, FZIPX)" },
+      { dimension: "Parent company", a: "Morgan Stanley (acquired 2020)", b: "Independently owned (Johnson family since 1946)" },
+      { dimension: "Default uninvested cash yield", a: "A bank-style cash sweep by default, generally lower-yielding, though competitive money market funds are available if selected manually", b: "A money market fund by default (commonly SPAXX), which tracks prevailing short-term rates automatically" },
+    ],
+  },
+  verdict:
+    "Choose Fidelity if research depth, a genuinely free index fund lineup, or a $0-minimum robo-advisor matter most to you, especially as a buy-and-hold investor who rarely touches options. Choose E*TRADE if you trade options or futures regularly and want Power E*TRADE's dedicated tools, or you're comfortable banking under the Morgan Stanley umbrella for a future advisor relationship. An investor who wants direct futures trading inside the same account as their stocks shouldn't expect that from Fidelity. Fidelity doesn't offer it. Someone who wants a fund priced at an actual 0.00% expense ratio shouldn't expect that from E*TRADE either. Only Fidelity's ZERO funds hit exactly 0%.",
+  sections: [
+    {
+      heading: "Who Owns Each Platform",
+      content:
+        "Morgan Stanley completed its acquisition of E*TRADE in October 2020, folding the discount broker into its larger wealth-management business. That ownership shapes E*TRADE today: Morgan Stanley's own research, and, for qualifying balances, access to a Morgan Stanley financial advisor, now sit behind the E*TRADE login.\n\nFidelity has stayed privately held and independently run since its founding in 1946, with the Johnson family still controlling the company. That independence shows up in decisions like Fidelity's ZERO index funds, priced at an actual 0.00% expense ratio, a pricing move a publicly accountable parent company would find harder to justify.\n\nNeither structure is automatically better. An investor who eventually wants a human advisor relationship might value Morgan Stanley's reach behind E*TRADE. An investor who wants a firm's incentives pointed only at its own brokerage clients might prefer Fidelity's independence instead.",
+    },
+    {
+      heading: "Options and Futures Cost Different Amounts at Each",
+      content:
+        "E*TRADE and Fidelity both charge $0.65 per options contract on top of a $0 base commission, so an occasional options trader pays roughly the same at either firm. E*TRADE discounts that rate to $0.50 per contract for accounts placing 30 or more trades a quarter, a volume discount Fidelity doesn't match.\n\nFutures trading is the sharper split. E*TRADE offers futures across eight market categories, including equity indices, energy, currencies, and Bitcoin and Ether futures, priced at $1.50 per contract per side plus exchange fees. Fidelity doesn't offer direct futures contract trading to retail investors, though it has launched a managed futures ETF for investors who want futures-style exposure without opening a dedicated futures account.\n\nAn active options trader clearing 30-plus trades a quarter saves real money at E*TRADE over a year. Anyone who wants to trade futures contracts directly has exactly one of these two firms to pick.",
+    },
+    {
+      heading: "Core Portfolios Versus Fidelity Go",
+      content:
+        "E*TRADE's Core Portfolios requires a $500 minimum and charges a flat 0.30% annual advisory fee on every balance, no matter how large the account grows. Fidelity Go charges nothing for balances under $25,000, needs no minimum to open, and moves to a 0.35% annual fee once your balance crosses $25,000, at which point you also gain access to one-on-one coaching.\n\nA new investor with a small balance starts for less at Fidelity Go, since $0 beats any account that requires $500 to even open. Once a balance grows large enough, Core Portfolios' flat 0.30% eventually runs cheaper than Fidelity Go's 0.35% tier, so the cheaper robo-advisor really depends on where your balance sits today and where you expect it to land.",
+    },
+    {
+      heading: "Research Tools and the Trading Platforms Themselves",
+      content:
+        "Power E*TRADE is built for active traders, with options-specific analytics, a strategy scanner, and, since the Morgan Stanley acquisition, access to Morgan Stanley's own research alongside E*TRADE's existing third-party providers. It's a platform designed around watching positions and executing trades quickly.\n\nFidelity's research library reaches wider. Independent research from firms like [Zacks](https://www.zacks.com/) and [CFRA](https://www.cfraresearch.com/) sits alongside Fidelity's own analysts inside Active Trader Pro, Fidelity's advanced desktop platform, next to a large education center for investors still learning the basics. An investor who wants to read several independent analysts' takes on one stock before buying generally finds more of that depth at Fidelity.\n\nBoth firms' mobile apps are well reviewed. Power E*TRADE's mobile app is built specifically for options and futures traders, while Fidelity's general app is frequently ranked among the top overall investing apps across a broader range of account types.",
+    },
+    {
+      heading: "Fractional Shares and Everyday Investing",
+      content:
+        "Fidelity's Stocks by the Slice lets you buy a slice of roughly 7,000 stocks and ETFs starting at $1. You enter a dollar amount instead of a share count. E*TRADE's fractional-share program covers a narrower, expanding list built around S&P 100 stocks and ETFs, with a $5 minimum notional amount per trade.\n\nOn a $100 monthly investment split across five different stocks, Fidelity's broader list and lower minimum make it easier to build a diversified basket of smaller positions. E*TRADE's list skips the smallest names. It still covers most of the largest, most commonly traded stocks, so the gap matters more to an investor chasing a specific smaller-cap name than to one sticking with well-known blue chips.",
+    },
+    {
+      heading: "Where Uninvested Cash Earns Something",
+      content:
+        "Fidelity defaults new brokerage accounts into a money market fund, most commonly SPAXX (Fidelity Government Money Market Fund), which pays a yield close to prevailing short-term rates rather than a low, fixed bank rate. That default applies automatically. Cash sitting in the account between trades keeps earning close to what a dedicated money market fund pays, with no extra step required.\n\nE*TRADE's default cash sweep historically pays less than Fidelity's money market default, and independent brokerage reviews have flagged it as one of the lower-paying cash sweep options in the industry. E*TRADE does give account holders access to a wider shelf of third-party money market funds, including options from [Federated Hermes](https://www.federatedhermes.com/) and [American Century](https://www.americancentury.com/), but capturing that higher yield means manually moving cash into one of those funds instead of leaving it in the default sweep.\n\nCheck each firm's current published rate before assuming either default is competitive, since money market and bank sweep rates move with short-term interest rates. The structural point holds regardless of the exact number: Fidelity's default requires no action to earn a market-linked rate, while E*TRADE's default does.",
+    },
+    {
+      heading: "Where Fidelity Falls Short for an Active Trader",
+      content:
+        "Fidelity doesn't offer direct futures trading. Its options tools inside Active Trader Pro also don't match the dedicated strategy scanner and options analytics built into Power E*TRADE. An investor running frequent, complex options strategies, or one who wants futures contracts in the same account as their stocks, finds E*TRADE's tools built more specifically for that job.\n\nThat gap would close only if Fidelity adds direct futures trading or expands Active Trader Pro's options analytics to match Power E*TRADE, and neither has happened as of 2026. Start at E*TRADE if futures matter to you now.\n\nManaging two brokers just to cover both needs rarely pays off. Compare the two side by side with our [investment growth calculator](/investing/investment-growth-calculator/) before you commit, since the robo-advisor fee gap alone compounds meaningfully over a long holding period.",
+    },
+  ],
+  faqs: [
+    {
+      question: "What are the disadvantages of e-trade?",
+      answer:
+        "E*TRADE doesn't offer direct cryptocurrency trading, only crypto futures for eligible margin accounts, and its fractional-share program covers fewer names than Fidelity's roughly 7,000-stock list. Independent brokerage reviews also flag E*TRADE's default cash sweep as one of the lower-paying options in the industry, though moving uninvested cash into one of E*TRADE's third-party money market funds fixes that. Since Morgan Stanley's 2020 acquisition, some longtime users also say the brand feels less like a standalone discount broker and more like an entry point into a larger wealth-management relationship.",
+    },
+    {
+      question: "What is the downside of Fidelity?",
+      answer:
+        "Fidelity doesn't offer direct futures trading, and its options tools inside Active Trader Pro are less specialized than Power E*TRADE's dedicated options analytics and strategy scanner. An investor who wants futures contracts inside the same brokerage account as their stocks needs to look elsewhere, since Fidelity doesn't support that today.",
+    },
+    {
+      question: "Which brokerage account is better for me, Fidelity or E*TRADE?",
+      answer:
+        "It depends on how you trade. Fidelity usually fits a buy-and-hold investor who wants deep independent research, a $0-minimum robo-advisor, and genuinely free index funds. E*TRADE usually fits an active trader who wants futures alongside stocks and options, or who values Morgan Stanley's research and advisor network behind the account.",
+    },
+    {
+      question: "What are the top 3 brokerage firms?",
+      answer:
+        "There's no single official ranking, but Fidelity, [Charles Schwab](https://www.schwab.com), and [Vanguard](https://investor.vanguard.com) are the three U.S. brokerages most often cited as the largest by client assets, each managing several trillion dollars for its own customers. E*TRADE is smaller by that measure, though it remains one of the most-used online brokers for options and futures trading specifically.",
+    },
+    {
+      question: "Is my money protected if E*TRADE or Fidelity ever failed?",
+      answer:
+        "Yes. Both firms are members of the [Securities Investor Protection Corporation (SIPC)](https://www.sipc.org/for-investors/what-sipc-protects), which protects customer securities and cash up to $500,000 per account, including a $250,000 cash sublimit, if the brokerage itself fails. SIPC doesn't protect against an investment losing value. It only steps in when a broker can't return assets it was holding for you.",
+    },
+    {
+      question: "Does E*TRADE offer cryptocurrency trading?",
+      answer:
+        "Not directly. E*TRADE offers cryptocurrency exposure only through Bitcoin and Ether futures contracts in a margin-enabled account, not spot crypto trading the way some other brokers allow. An investor who wants to buy and hold actual coins, rather than trade futures contracts tied to their price, needs a dedicated crypto platform alongside either E*TRADE or Fidelity, since neither broker offers direct spot crypto trading today.",
+    },
+    {
+      question: "Can I transfer my account from E*TRADE to Fidelity, or the other way around?",
+      answer:
+        "Yes. Both firms accept an Automated Customer Account Transfer (ACAT), which moves your existing positions from one broker to the other without selling anything, typically within about a week. Selling first at your old broker before transferring can trigger capital gains taxes you'd otherwise avoid, so an ACAT transfer is almost always the better route if you're switching between E*TRADE and Fidelity.",
+    },
+  ],
+  sources: [
+    { label: "E*TRADE: Rates and fees", url: "https://us.etrade.com/what-we-offer/pricing-and-rates" },
+    { label: "E*TRADE: Futures trading", url: "https://us.etrade.com/what-we-offer/investment-choices/futures" },
+    { label: "E*TRADE: Fractional shares", url: "https://us.etrade.com/what-we-offer/investment-choices/fractional-shares" },
+    { label: "Morgan Stanley: Morgan Stanley closes acquisition of E*TRADE", url: "https://www.morganstanley.com/press-releases/morgan-stanley-closes-acquisition-of-e-trade" },
+    { label: "Fidelity: Open an account (minimums and commissions)", url: "https://www.fidelity.com/open-account/overview" },
+    { label: "Fidelity: Fractional shares (Stocks by the Slice)", url: "https://www.fidelity.com/trading/fractional-shares" },
+    { label: "Fidelity: Earn more on uninvested cash", url: "https://www.fidelity.com/go/manage-cash-rising-costs" },
+    { label: "SIPC: What SIPC protects", url: "https://www.sipc.org/for-investors/what-sipc-protects" },
+  ],
+  relatedComparisons: ["fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-fidelity-vs-schwab", "charles-schwab-vs-robinhood"],
+  calculatorLinks: [
+    { label: "Investing hub", href: "/investing/" },
+    { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+  ],
+},
+{
+  slug: "sofi-invest-vs-robinhood",
+  updated: "2026-08-31",
+  title: "SoFi Invest vs Robinhood: Which Fits You?",
+  metaDescription:
+    "SoFi Invest vs Robinhood compared: IRA match rates, crypto access, fractional shares, and support, so beginner investors pick the right app to start with.",
+  targetKeyword: "sofi invest vs robinhood",
+  optionA: "SoFi Invest",
+  optionB: "Robinhood",
+  segment: "Beginner investors",
+  h1: "SoFi Invest vs Robinhood: Which Should You Choose?",
+  intro:
+    "SoFi Invest is one piece of SoFi's all-in-one banking and investing app. Robinhood is built around a single job: fast, simple stock and options trading.\n\n[SoFi](https://www.sofi.com) rewards you for using more of its products together, through its SoFi Plus membership tier. [Robinhood](https://robinhood.com) rewards you for trading more on the one product it does, through Robinhood Gold. Which one fits depends less on fees, since both charge $0 commission, and more on whether you want one app running your whole financial life or one app built purely around trading.",
+  comparisonTable: {
+    rows: [
+      { dimension: "Core focus", a: "All-in-one banking, borrowing, and investing app", b: "Trading-first app, with banking and crypto added over time" },
+      { dimension: "IRA match on contributions", a: "1% standard match on new contributions and rollovers", b: "1% standard match, 3% with Robinhood Gold ($5/month)" },
+      { dimension: "Cryptocurrency trading", a: "Not offered directly since SoFi exited crypto trading in 2023", b: "Offered directly, dozens of coins in the same account" },
+      { dimension: "Fractional shares", a: "From $1 (Stock Bits)", b: "From $1" },
+      { dimension: "Options trading", a: "Commission-free, requires approval", b: "Commission-free, requires approval" },
+      { dimension: "Premium membership tier", a: "SoFi Plus, $10/month: 2% Invest match for members, boosted savings rate, free financial-planner calls", b: "Robinhood Gold, $5/month: 3% IRA match, margin access, bigger instant deposits" },
+      { dimension: "Customer support", a: "Phone, chat, and in-app support, backed by SoFi's bank operations", b: "24/7 phone and chat support, no physical branches" },
+      { dimension: "Robo-advisor", a: "SoFi Automated Investing, $50 minimum, 0.25%/year", b: "Not offered, self-directed trading only" },
+    ],
+  },
+  verdict:
+    "Choose SoFi Invest if you want banking, borrowing, and investing under one login, plan to use SoFi Plus's other perks anyway, and don't need to trade crypto directly. Choose Robinhood if you want the simplest possible trading app, want to hold crypto directly instead of through a separate account, or want the higher 3% individual retirement account (IRA) match that Robinhood Gold offers. Someone who wants one app to replace their whole banking relationship should lean SoFi. Someone who wants the biggest match on this year's IRA contribution, and is willing to pay $5 a month for it, should lean Robinhood Gold instead.",
+  sections: [
+    {
+      heading: "Two Different Ideas Behind Each App",
+      content:
+        "SoFi built its investing product as one piece of a bigger app. The same login covers a high-yield checking and savings account, personal loans, and SoFi Invest, so a deposit into savings and a stock purchase happen in the same place. Robinhood built the opposite way, starting as a single-purpose stock-trading app and layering in banking-style features, crypto, and retirement accounts afterward.\n\nThat founding choice still shapes both apps. SoFi's product menu reads like a bank that added investing, with cross-product perks that reward using several SoFi products at once. Robinhood's product menu reads like a trading app that added a checking account and an IRA, with fewer features tying it to anything outside investing itself.",
+    },
+    {
+      heading: "SoFi Plus Versus Robinhood Gold",
+      content:
+        "SoFi Plus costs $10 a month and bundles more than 20 perks, including a 2% match on new deposits into a SoFi Invest account, a boosted savings rate up to 4.50% annual percentage yield (APY) on part of your balance, and free calls with a financial planner. Without SoFi Plus, SoFi still matches 1% on IRA contributions and rollovers for every user.\n\nRobinhood Gold costs $5 a month and raises your IRA match from the base 1% every Robinhood user gets to 3%, on top of margin access and bigger instant deposits. Run the math on a full IRA contribution: Robinhood Gold's extra 2 percentage points of match is worth more than its $60-a-year subscription cost for most savers, which is why the math favors Gold for anyone planning to max out an IRA and leave the match in place for the required holding period.\n\nSoFi Plus is the broader membership, built to reward using multiple SoFi products together. Robinhood Gold is narrower and cheaper, built almost entirely around trading perks and the IRA match.",
+    },
+    {
+      heading: "Why SoFi Exited Direct Crypto Trading",
+      content:
+        "SoFi shut down direct cryptocurrency trading in December 2023, after regulators tied the requirement to SoFi's bank charter. When the [Office of the Comptroller of the Currency](https://www.occ.gov/) approved SoFi as a bank holding company in January 2022, it barred SoFi from continuing crypto trading under that charter, so SoFi transitioned customer crypto holdings to [Blockchain.com](https://www.blockchain.com) rather than closing the door on crypto entirely.\n\nRobinhood took the opposite path and kept crypto trading in-house, covering dozens of coins directly inside the same account as stocks and options. An investor who wants to hold Bitcoin or Ether alongside a stock portfolio in one login only gets that at Robinhood today. A SoFi user has to open a second account elsewhere for direct crypto exposure.",
+    },
+    {
+      heading: "Fractional Shares and Options Work Almost the Same on Both",
+      content:
+        "Both platforms let you buy a slice of a stock starting at $1, so a small deposit still buys a piece of an expensive stock like a mega-cap tech name. SoFi calls this Stock Bits. Robinhood just calls it fractional shares, and neither charges extra for the fraction itself.\n\nOptions trading is commission-free at both, and both require you to apply for options approval before you can place a trade, based on your experience and account details. The bigger practical difference isn't the fee. Robinhood's options screen is built to be simple and fast, while SoFi's options interface is a newer addition to a platform still built primarily around straightforward stock investing.",
+    },
+    {
+      heading: "How Each Company Handles Customer Support",
+      content:
+        "SoFi's support runs through the infrastructure of an actual bank, with phone, chat, and in-app messaging backed by the same operations team that handles SoFi's checking and lending products. That backing matters most when a problem touches more than one product at once, like a failed transfer between SoFi Checking and SoFi Invest.\n\nRobinhood added 24/7 phone support in 2021, a direct response to years of criticism that its app-only support left traders stranded during high-volatility trading days. Reaching a person now takes requesting a callback through the app rather than dialing a number directly, which still beats the email-only support Robinhood offered in its early years.\n\nNeither company runs physical branches. If in-person help matters to you, both fall short compared with a full-service brokerage like [Fidelity](https://www.fidelity.com) or [Charles Schwab](https://www.schwab.com).",
+    },
+    {
+      heading: "Why Robinhood Faced Record Regulatory Fines",
+      content:
+        "Robinhood paid the [Securities and Exchange Commission (SEC)](https://www.sec.gov/newsroom/press-releases/2020-321) $65 million in December 2020 to settle charges that it misled customers about payment for order flow, its main revenue source at the time, and failed to get customers the best available trade execution. What we see beginner investors get wrong most often is assuming a settlement like that only affects a company's balance sheet, when it also explains features on today's app, like clearer trade-execution disclosures.\n\nIn June 2021, the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf) ordered Robinhood to pay a combined $57 million in fines plus roughly $12.6 million in restitution, its largest penalty on record at the time, over outages, misleading options-approval practices, and inadequate supervision of its own systems. Robinhood's later move to add 24/7 phone support and tighten its options-approval process traces directly back to that case.\n\nSoFi carries a cleaner regulatory record on its trading platform specifically, though it operates under the tighter ongoing oversight that comes with holding an actual bank charter. Neither history should be the only factor in your decision. Past fines are public record, and checking them before you fund an account beats finding out about them afterward.",
+    },
+    {
+      heading: "Who Each Platform Fits",
+      content:
+        "SoFi Invest doesn't fit an investor who wants to trade cryptocurrency directly in the same account as stocks, since that path closed when SoFi exited crypto trading in 2023. It also doesn't fit someone who wants the single fastest, no-frills trading screen, since SoFi's app carries the weight of banking and lending features Robinhood's doesn't.\n\nRobinhood doesn't fit someone who wants one login for banking, lending, and investing together, or someone who values SoFi Plus's broader bundle of perks over Robinhood Gold's narrower, trading-focused one. It also doesn't fit an investor who weighs a firm's regulatory history heavily and wants the cleanest possible track record on that specific point.\n\nA couple of changes would flip this verdict: Robinhood adding a comparable all-in-one banking bundle, or SoFi bringing crypto trading back in-house the way it operated before 2023. Until either happens, base your choice on what you actually want in one app. Feature-list bragging rights this year rarely hold up next year. Compare what a small monthly contribution actually grows into with our [investment growth calculator](/investing/investment-growth-calculator/) before deciding which platform's match or fee structure serves you best.",
+    },
+  ],
+  faqs: [
+    {
+      question: "What's better, Robinhood or SoFi?",
+      answer:
+        "Neither is better across the board. Each is built for a different habit. Robinhood fits someone who wants the simplest possible trading screen and direct crypto access. SoFi fits someone who wants banking, borrowing, and investing under one login and is willing to pay for SoFi Plus to unlock the bigger match and higher savings rate.",
+    },
+    {
+      question: "Is it good to invest through SoFi?",
+      answer:
+        "Yes, for the right investor. SoFi Invest charges no commission on stock and ETF trades, offers fractional shares from $1, and matches IRA contributions, all backed by an app that also runs your checking and savings. It fits best if you're already using or considering SoFi's other products, less well if direct crypto trading matters to you, since SoFi exited that in 2023.",
+    },
+    {
+      question: "What is the downside to SoFi?",
+      answer:
+        "SoFi Invest doesn't offer direct cryptocurrency trading anymore, its options trading tools are newer and less developed than Robinhood's, and its IRA match tops out at 1% for every user, compared with Robinhood Gold's 3%. The tradeoff is that SoFi bundles more products under one login than Robinhood does.",
+    },
+    {
+      question: "Why stay away from Robinhood?",
+      answer:
+        "Robinhood's regulatory history is the main reason some investors avoid it: a $65 million SEC settlement in 2020 over misleading customers about payment for order flow, and a $57 million FINRA fine plus roughly $12.6 million in restitution in 2021 over outages and options-approval failures. Robinhood has since added 24/7 phone support and tightened its options-approval process, but the fines are part of the public record worth weighing against its lower-cost trading tools.",
+    },
+    {
+      question: "Can I trade crypto directly on SoFi Invest?",
+      answer:
+        "No. SoFi discontinued direct cryptocurrency trading in December 2023 after its bank charter required it to exit the business, and existing customer holdings moved to Blockchain.com. Robinhood still offers direct crypto trading inside the same account as stocks and options, so an investor who wants both under one login needs Robinhood, not SoFi Invest.",
+    },
+    {
+      question: "Does SoFi Invest have a robo-advisor?",
+      answer:
+        "Yes. [SoFi](https://www.sofi.com/invest/automated/) offers Automated Investing alongside its self-directed SoFi Invest account, a $50-minimum robo-advisor that builds and rebalances a portfolio for a 0.25% annual advisory fee. Robinhood has no robo-advisor at all, only self-directed trading, so an investor who wants a hands-off, professionally built portfolio has that option only at SoFi.",
+    },
+    {
+      question: "Can I transfer my account between SoFi Invest and Robinhood?",
+      answer:
+        "Yes. Both platforms accept an Automated Customer Account Transfer (ACAT), which moves your existing positions from one broker to the other without selling anything, typically within about a week. Selling first at your old broker before transferring can trigger capital gains taxes you'd otherwise avoid, so an ACAT transfer is almost always the better route if you're switching between SoFi Invest and Robinhood.",
+    },
+  ],
+  sources: [
+    { label: "SEC - SEC charges Robinhood Financial with misleading customers about revenue sources", url: "https://www.sec.gov/newsroom/press-releases/2020-321" },
+    { label: "FINRA - Robinhood Financial AWC settlement document", url: "https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf" },
+    { label: "SoFi - An update on SoFi's crypto services", url: "https://www.sofi.com/blog/sofi-crypto-update/" },
+    { label: "SoFi - SoFi Plus", url: "https://www.sofi.com/plus-331/" },
+    { label: "SoFi - SoFi Plus 2% Invest Match", url: "https://www.sofi.com/sofiplus/invest/" },
+    { label: "SoFi - Automated Investing", url: "https://www.sofi.com/invest/automated/" },
+    { label: "Robinhood - Introducing 24/7 phone support", url: "https://robinhood.com/us/en/newsroom/introducing-24-7-phone-support/" },
+  ],
+  relatedComparisons: ["charles-schwab-vs-robinhood", "fidelity-vs-schwab"],
+  calculatorLinks: [
+    { label: "Investing hub", href: "/investing/" },
+    { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
+  ],
+},
+{
+    slug: "iul-vs-vul",
+    updated: "2026-08-31",
+    draft: false,
+    title: "IUL vs VUL: Capped Floor vs Full Market Risk",
+    metaDescription:
+      "IUL vs VUL compared: index floor and cap versus sub-account market risk, real fee differences, and which cash-value life insurance fits you.",
+    targetKeyword: "iul vs vul",
+    optionA: "Indexed Universal Life (IUL)",
+    optionB: "Variable Universal Life (VUL)",
+    segment: "Permanent life insurance",
+    h1: "IUL vs VUL Comes Down to Who Takes the Market Risk",
+    intro:
+      "Indexed Universal Life (IUL) protects your cash value with a floor and caps your upside, while Variable Universal Life (VUL) invests cash value directly in the market with no floor and no cap. What we see readers get wrong most often is treating this as an investment choice, when both products are life insurance built to fund a permanent death benefit first.\n\nIUL credits interest tied to a market index such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) without ever owning the index. VUL puts your premium into mutual-fund-like sub-accounts that hold real securities, so the account value moves with the market directly. Search results for both terms lean heavily on forum threads rather than seller pages, and much of that discussion is skeptical of buying either product mainly as an investment.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "Permanent life insurance with cash value invested directly in sub-accounts" },
+        { dimension: "How cash value grows", a: "Credited interest tied to an index, subject to a cap and a participation rate", b: "Direct market return of the sub-accounts you choose" },
+        { dimension: "Downside floor", a: "Usually 0% on the index credit in a down year", b: "None. A market decline reduces cash value directly" },
+        { dimension: "Upside potential", a: "Capped by the carrier's cap or participation rate, which can be lowered over time", b: "Uncapped. The full market gain flows to cash value" },
+        { dimension: "Fee structure", a: "Cost of insurance and admin charges, with the cap itself acting as an implicit cost", b: "Cost of insurance, admin and mortality-and-expense charges, plus each sub-account's own fund expense ratio" },
+        { dimension: "Ongoing attention needed", a: "Low. The crediting formula runs on its own each policy year", b: "High. You choose and rebalance sub-accounts like a brokerage account" },
+        { dimension: "Regulation", a: "Insurance product. State insurance department oversight", b: "Classified as a security. Requires a prospectus and a licensed securities representative" },
+        { dimension: "Verdict", a: "Fits a buyer who wants downside protection and accepts a capped return", b: "Fits a buyer comfortable with market risk who wants full upside and will monitor allocations" },
+      ],
+    },
+    verdict:
+      "Choose an IUL if losing cash value to a market drop is the outcome you most want to avoid, and you are willing to give up part of the upside in exchange for that floor. Choose a VUL if you are already comfortable holding stock funds directly, want the full market gain a cap would otherwise cut off, and will actually check and rebalance your sub-accounts instead of leaving them on autopilot.\n\nNeither product fits someone who has not yet captured a 401(k) match or maxed an IRA, since both charge for a death benefit most young families can buy far more cheaply as level term life. A buyer torn between the two is often better served asking whether they need permanent coverage at all before picking a crediting method.",
+    sections: [
+      {
+        heading: "How an IUL's Index-Linked Growth Actually Works",
+        content:
+          "An IUL does not invest your premium in the stock market. It credits interest to your cash value based on the change in an index, measured over a set period, usually one year. Three settings decide what you actually receive.\n\nThe participation rate sets what share of the index move counts toward your credit. The cap sets the maximum credited rate in a strong year, commonly in the 8% to 12% range. The floor, usually 0%, sets the minimum, so a falling index credits nothing rather than a loss.\n\nA policy quoted at a 9% cap and a 100% participation rate credits the full index gain up to 9%, then stops. An index that returns 20% in that period still only credits 9% to your cash value. Illustrations for both IUL and VUL follow standards the [National Association of Insurance Commissioners](https://content.naic.org/cmte_a_latf_iul_illustration_sg.htm) (NAIC) wrote into Actuarial Guideline 49-A, meant to keep an illustrated cap from looking better than what the contract can realistically deliver.",
+      },
+      {
+        heading: "How a VUL's Sub-Account Investing Actually Works",
+        content:
+          "A VUL sends your premium, after charges, into sub-accounts you select from a menu the carrier offers. Those sub-accounts function like mutual funds, holding stocks, bonds, or a mix of both. Your cash value rises and falls with the sub-accounts you picked, the same way a brokerage account would.\n\nThere is no floor. A sub-account invested in stocks can lose 20% in a bad year, and your cash value drops with it. The [SEC](https://www.investor.gov/introduction-investing/investing-basics/glossary/variable-life-insurance) classifies variable life insurance as a security for this reason, and buying one requires a prospectus and a [FINRA](https://www.finra.org/investors/investing/investment-products/insurance)-licensed insurance representative, a requirement an IUL sale does not carry because an IUL is not classified as a security.",
+      },
+      {
+        heading: "Where the Real Cost Sits in Each Policy",
+        content:
+          "A VUL's costs are mostly visible on the statement. Cost of insurance and administrative charges come out of cash value, and each sub-account also carries its own fund expense ratio, layered on top of a mortality and expense (M&E) risk charge the carrier adds for offering the death benefit alongside market exposure. Add those up and a VUL's all-in annual cost can run well above what the same money would cost inside a plain brokerage account.\n\nAn IUL's cost is harder to see, because part of it is not a line-item charge at all. The cap and participation rate are themselves a cost, paid in foregone upside rather than a fee on a statement. A policy that would have earned 20% in the index but caps at 9% has given up 11 points of return, and no statement itemizes that number the way a fund expense ratio is itemized.",
+      },
+      {
+        heading: "Capped Growth Against Full Market Exposure",
+        content:
+          "An IUL's upside stops at the cap or the participation-rate ceiling, whichever binds first, no matter how strong the index performs. That ceiling is also not fixed for life. A carrier can lower the cap on future policy years, so a policy sold with a 10% cap can be repriced down to 7% or 8% years later, inside the same contract.\n\nA VUL carries no such ceiling. A sub-account that tracks a strong index passes the full gain straight through to cash value, year after year, with no carrier adjustment capping it. That full exposure runs in both directions, which is the trade a VUL buyer accepts in exchange for giving up the floor.",
+      },
+      {
+        heading: "Who an IUL Actually Fits",
+        content:
+          "An IUL fits a buyer who wants a permanent death benefit and cannot stomach a cash-value account that loses money in a market downturn. The floor removes that specific fear, at the cost of a capped return most years. It suits someone who wants the crediting formula to run itself, without logging in to rebalance anything.\n\nIt also fits a buyer who has already filled a 401(k) match, an IRA, and other tax-advantaged accounts and wants a downside-protected place for additional permanent-insurance premium. Our [IUL vs 401k comparison](/compare/iul-vs-401k/) covers why the employer match should come first regardless of which cash-value policy you are weighing.",
+      },
+      {
+        heading: "Who a VUL Actually Fits",
+        content:
+          "A VUL fits a buyer who is already comfortable holding stock funds directly and wants that same market exposure inside a life insurance contract, usually for the tax treatment on cash-value growth or a policy loan. It suits someone willing to review sub-account performance and rebalance the way they would a brokerage account, because a VUL left on autopilot in an unfavorable allocation can underperform for years before anyone notices.\n\nIt fits less well for a buyer who wants to set a premium and never think about it again. A VUL that is not monitored can also run short of cash value faster than an IUL in a sustained downturn, since there is no floor absorbing the bad years.",
+      },
+      {
+        heading: "Can an IUL or a VUL Lose Money",
+        content:
+          "A VUL can lose money directly. Its cash value is invested in sub-accounts that hold real securities, and a market decline reduces that value the same way a stock fund decline would, with no floor to stop it.\n\nAn IUL cannot lose cash value to a market drop, because the floor sets a minimum credited rate, usually 0%, on the index-linked portion. That is not the same as saying an IUL cannot lose money at all. Cost of insurance and administrative charges still come out of cash value every month, in a good index year or a flat one.\n\nA policy funded at or near its minimum premium can see its cash value shrink even in a year the index credits 0%, because those charges do not pause. Surrender the policy in its early years and the surrender charge can also return less than the premium paid in.",
+      },
+      {
+        heading: "Who Should Skip Both an IUL and a VUL",
+        content:
+          "Skip either one if you have not yet captured your full 401(k) match or maxed a Roth IRA. Skip both if your coverage need has a clear end date, such as the years until children are financially independent, since level term life covers that need for a fraction of either premium. Skip a VUL specifically if you know you will not review sub-account statements at least once a year, since an unmonitored allocation is where a VUL underperforms most.\n\nSkip an IUL specifically if an agent will not show you the guaranteed-rate column of the illustration, the one built on the carrier's contractual minimum rather than an assumed cap. Every illustration carries one.",
+      },
+      {
+        heading: "What Would Change Our Answer",
+        content:
+          "A carrier crediting an uncapped index gain over a real floor would close most of the gap between these two products, and no carrier currently offers that combination. A large, sustained bull market would also favor the VUL buyer who stayed invested and rebalanced, the same way it favors any long-term equity investor. A prolonged bear market would do the opposite, favoring the IUL buyer whose floor kept cash value from falling alongside the index.\n\nNeither condition changes the baseline advice. Fill your tax-advantaged retirement accounts first, buy permanent coverage only for a need with no end date, and ask for the guaranteed-rate column before signing either contract.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Why is IUL not a good investment?",
+        answer:
+          "An IUL is not built to be an investment first. It is a life insurance contract, and every premium pays for cost of insurance and administrative charges before any money reaches cash value. Even where it credits growth, a cap or participation rate limits the gain, so an IUL rarely keeps pace with a low-cost index fund held outside a policy over long periods.\n\nIt becomes a reasonable purchase for the death benefit, once every tax-advantaged account is full and the buyer needs permanent coverage. It is a poor purchase for anyone shopping it mainly as a way to grow money.",
+      },
+      {
+        question: "Is a VUL a good investment?",
+        answer:
+          "A VUL can be a reasonable choice for someone who already wants stock-market exposure and specifically values the tax treatment or the death benefit attached to it, but the layered fees, cost of insurance plus fund expense ratios plus an M&E charge, make it an expensive way to simply own stock funds. A taxable brokerage account or a Roth IRA usually delivers the same market exposure for far less. A VUL earns a place only after those accounts are full and permanent coverage is the actual goal.",
+      },
+      {
+        question: "Can an IUL lose money?",
+        answer:
+          "Not to a market drop. The floor, usually 0%, prevents a negative index credit.\n\nAn IUL can still lose cash value from cost of insurance and administrative charges, which come out every month regardless of what the index does. A policy funded near its minimum premium can see cash value fall even in a year the index credits nothing, and an early surrender can return less than the premium paid in.",
+      },
+      {
+        question: "What is better than an IUL?",
+        answer:
+          "For most savers, a 401(k) up to the full employer match, then a Roth IRA, beats an IUL on cost and on growth, because neither carries a cap or a cost-of-insurance charge. Level term life then covers the death benefit those accounts do not provide, for a fraction of an IUL premium.\n\nAn IUL only starts to make sense after those accounts are maxed and the buyer specifically needs permanent coverage with no end date. Run your own numbers in the [IUL calculator](/iul-calculator/) before comparing a real policy quote against either path.",
+      },
+    ],
+    sources: [
+      { label: "SEC Investor.gov: Variable Life Insurance", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/variable-life-insurance" },
+      { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
+      { label: "NAIC: Life Insurance Buyer's Guide", url: "https://content.naic.org/consumer/life-insurance.htm" },
+      { label: "NAIC: Actuarial Guideline 49-A (IUL Illustrations)", url: "https://content.naic.org/cmte_a_latf_iul_illustration_sg.htm" },
+    ],
+    relatedComparisons: ["iul-vs-401k", "iul-vs-roth-ira", "whole-life-vs-universal-life-insurance", "whole-life-vs-term-life-insurance"],
+    calculatorLinks: [
+      { label: "Run your own IUL projection", href: "/iul-calculator/" },
+      { label: "Net Worth Tracker", href: "/net-worth/" },
+    ],
+  },
+{
+    slug: "solo-401k-vs-simple-ira",
+    updated: "2026-08-31",
+    draft: false,
+    title: "Solo 401(k) vs SIMPLE IRA: 2025 Guide for Owners",
+    metaDescription:
+      "Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.",
+    targetKeyword: "solo 401k vs simple ira",
+    optionA: "Solo 401(k)",
+    optionB: "SIMPLE IRA",
+    segment: "Self-employed retirement",
+    h1: "Solo 401(k) vs SIMPLE IRA Comes Down to Employees",
+    intro:
+      "A Solo 401(k) works only if you have zero full-time employees besides a spouse, while a SIMPLE IRA lets you cover employees but locks you into a mandatory yearly contribution for each one. What we see readers get wrong most often is comparing the two plans on contribution limits first, when the employee-eligibility rule usually decides the question before any limit does.\n\nA Solo 401(k) is a one-participant 401(k) plan built for an owner-only business. A SIMPLE IRA, short for Savings Incentive Match Plan for Employees individual retirement account, is built for a small business with up to 100 employees. Hire your first non-spouse full-time employee and the Solo 401(k) comes off the table immediately, which is the fact that should open this comparison rather than end it.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Employee eligibility", a: "Owner and spouse only. No other full-time employees allowed", b: "Any eligible employee. Works for a business with up to 100 employees earning $5,000+" },
+        { dimension: "2025 employee deferral limit", a: "$23,500 ($31,000 if 50+, up to $34,750 if 60-63)", b: "$16,500 ($20,000 if 50+)" },
+        { dimension: "Employer contribution", a: "Optional profit-sharing, up to the combined $70,000 cap", b: "Mandatory: 3% dollar-for-dollar match or 2% nonelective for every eligible employee" },
+        { dimension: "2025 combined maximum", a: "$70,000 ($77,500 if 50+, up to $81,250 if 60-63)", b: "$16,500 employee deferral plus the mandatory match, with no combined cap like a 401(k)'s" },
+        { dimension: "Roth option", a: "Yes, Roth deferrals allowed", b: "Yes, at participating providers under a recent law change" },
+        { dimension: "Plan loans", a: "Allowed if the plan document permits", b: "Not allowed" },
+        { dimension: "Setup and admin", a: "Plan document required, Form 5500-EZ once assets top $250,000", b: "Simple adoption agreement, no annual federal filing requirement" },
+        { dimension: "Verdict", a: "Fits an owner-only business that wants to save the most and may want a loan", b: "Fits a business with employees that wants the lowest possible admin burden" },
+      ],
+    },
+    verdict:
+      "Choose a Solo 401(k) if you are the only employee of your business, aside from a working spouse, and you want to save the most, add Roth dollars, or borrow against the plan. Choose a SIMPLE IRA if you have or plan to hire employees, since a Solo 401(k) stops being an option the moment you add your first non-spouse full-time hire.\n\nA SIMPLE IRA also fits an owner-only business that wants the lowest possible paperwork and is comfortable funding a mandatory 3% match every year, even in a lean one. Confirm the current-year contribution limits at [IRS.gov](https://www.irs.gov/retirement-plans) before you set up either plan, since both figures move most years with inflation.",
+    sections: [
+      {
+        heading: "The Employee Rule That Decides This Comparison",
+        content:
+          "A Solo 401(k) is a one-participant 401(k) plan, and the [IRS](https://www.irs.gov/retirement-plans/one-participant-401k-plans) allows it only for a business owner and a spouse who also works in the business. Hire a single non-spouse full-time employee and the plan no longer qualifies. You would have to convert to a standard 401(k) that covers everyone eligible, or close the Solo 401(k) and open a different plan.\n\nA SIMPLE IRA carries no such restriction. It covers any eligible employee earning at least $5,000, and works for a business with up to 100 employees.\n\nThat single rule usually settles a Solo 401(k) vs SIMPLE IRA question before either plan's contribution limit ever matters. Decide whether you plan to hire before you compare the numbers.",
+      },
+      {
+        heading: "What a Solo 401(k) Lets You Contribute for 2025",
+        content:
+          "A Solo 401(k) lets you contribute in two roles at once. As the employee, you can defer up to $23,500 for the 2025 tax year, plus a $7,500 catch-up if you are 50 or older, or an $11,250 catch-up if you are 60 to 63 under the [SECURE 2.0 Act](https://www.govinfo.gov/app/details/PLAW-117publ328)'s enhanced catch-up rule. As the employer, your business can add a profit-sharing contribution on top.\n\nBoth roles combined are capped at $70,000 for 2025, or $77,500 with the standard catch-up, or $81,250 in the 60-to-63 window. Confirm the current-year figures at [IRS.gov](https://www.irs.gov/retirement-plans/one-participant-401k-plans) before you set your contribution, since these numbers are adjusted for inflation most years.",
+      },
+      {
+        heading: "What a SIMPLE IRA Lets You Contribute for 2025",
+        content:
+          "A SIMPLE IRA caps the employee deferral at $16,500 for 2025, with a $3,500 catch-up for participants 50 and older. There is no separate profit-sharing layer the way a Solo 401(k) has. Instead, the employer contribution is fixed by formula rather than by choice.\n\nThe employer must either match each participant's deferral dollar for dollar up to 3% of compensation, or make a flat 2% nonelective contribution to every eligible employee, whether they defer or not. That contribution is mandatory every year the plan runs, which is the tradeoff for the plan's lighter paperwork. Verify the exact current-year limits at the [IRS SIMPLE IRA contribution page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits) before you set up payroll deductions.",
+      },
+      {
+        heading: "Why the Solo 401(k) Usually Wins on Pure Savings Room",
+        content:
+          "At almost any income level, a Solo 401(k) lets an owner-only business set aside more money than a SIMPLE IRA. The gap comes from the profit-sharing layer. A SIMPLE IRA has no equivalent, so its ceiling is the $16,500 deferral plus whatever match formula applies, well short of the Solo 401(k)'s combined $70,000 cap.\n\nRun the two side by side on a real income figure. A self-employed owner earning $100,000 in net profit can often defer the full $23,500 employee amount in a Solo 401(k), then add a meaningful profit-sharing contribution on top.\n\nThe same owner in a SIMPLE IRA is capped at $16,500 in deferrals plus a 3% match, a few thousand dollars at that income. Model your own numbers in the [retirement savings calculator](/retirement/).",
+      },
+      {
+        heading: "Administrative Work: A Plan Document Against a Short Adoption Agreement",
+        content:
+          "A Solo 401(k) requires a formal plan document, which most providers supply as part of setup. Once plan assets pass $250,000, the IRS requires an annual Form 5500-EZ filing, a short form but a real annual obligation you have to remember.\n\nA SIMPLE IRA skips most of that. Setup is usually a short adoption agreement with the provider, and there is no annual IRS filing at any asset level. That lighter footprint is the main reason a business with employees, where a Solo 401(k) is not even legally available, still finds a SIMPLE IRA appealing even after it grows large enough to qualify for a full 401(k).",
+      },
+      {
+        heading: "How Your Net Self-Employment Income Changes the Math",
+        content:
+          "The $23,500 employee deferral is straightforward for a solo owner running payroll through an S corporation, since it applies to W-2 wages the same way it would for any employee. It gets more complicated for a sole proprietor or a single-member LLC taxed as a sole proprietorship, because the contribution limit runs off net self-employment earnings, not gross revenue.\n\nStart with net profit from Schedule C, then subtract half of your self-employment tax. That adjusted figure, not your top-line revenue, is what both the employee deferral and the employer profit-sharing contribution are calculated against in a Solo 401(k). A business that shows $80,000 in gross revenue but nets less after expenses and the self-employment tax adjustment has a lower real contribution ceiling than the headline $70,000 cap suggests.\n\nA SIMPLE IRA runs off the same adjusted net-earnings figure for a sole proprietor, so the calculation quirk applies to both plans equally. A Solo 401(k) provider's contribution calculator, or your accountant, can run the exact number against your actual tax return.",
+      },
+      {
+        heading: "Loans: A Feature One Plan Has and the Other Does Not",
+        content:
+          "A Solo 401(k) can allow you to borrow against your own balance if the plan document permits it, typically up to the lesser of $50,000 or half your vested balance. You repay yourself with interest on a set schedule, and the loan does not show up as a taxable distribution as long as you repay it on time.\n\nA SIMPLE IRA allows no loan provision at all. Any withdrawal before age 59½ is treated as an early distribution, and withdrawals taken within the plan's first two years carry a steeper 25% additional tax instead of the usual 10%. If access to your own contributions in an emergency matters to you, weigh that difference before you pick a plan.",
+      },
+      {
+        heading: "Who Should Not Choose a Solo 401(k)",
+        content:
+          "Skip a Solo 401(k) the moment you have, or plan to hire, a non-spouse full-time employee. The plan simply is not available to you at that point, regardless of how much you would rather save through it. Skip it too if you know you will not want the annual Form 5500-EZ obligation once assets grow, or if you want the lowest administrative load from day one.\n\nA business that already has staff, or expects to add staff within a year or two, is usually better served starting with a SIMPLE IRA or a standard 401(k) built to cover employees from the outset, rather than setting up a Solo 401(k) it will have to unwind.",
+      },
+      {
+        heading: "What Would Change Our Answer",
+        content:
+          "A change to the employee-eligibility rule for one-participant plans would move this comparison the most, and nothing in current law suggests that is coming. A significant increase to the SIMPLE IRA deferral limit, closing more of the gap with the Solo 401(k)'s combined cap, would also change the savings-room argument, though recent increases have kept the two plans roughly the same distance apart.\n\nThe practical answer stays the same either way. Decide first whether you will ever hire a non-spouse full-time employee.\n\nIf the answer is no, the Solo 401(k) usually lets you save more. If the answer is yes, or already yes, a SIMPLE IRA is the plan actually available to you.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the downside of a solo 401k?",
+        answer:
+          "The main downside is that a Solo 401(k) becomes unavailable the moment you hire a non-spouse full-time employee, so it is not a plan you can grow into if hiring is part of your business plan. It also carries more paperwork than a SIMPLE IRA, including Form 5500-EZ once plan assets top $250,000. Its combined $70,000 contribution cap for 2025 requires enough net self-employment income to actually use, so a lower-income owner may not benefit from the higher ceiling in practice.",
+      },
+      {
+        question: "Which is better, a SIMPLE IRA or a 401(k)?",
+        answer:
+          "It depends on whether you have employees and how much you want to save. A 401(k), including a Solo 401(k) for an owner-only business, usually allows a higher contribution and more plan features like loans and a Roth option. A SIMPLE IRA costs less to run and fits a business with employees that wants to avoid the paperwork of a full 401(k), even though its savings cap is lower.",
+      },
+      {
+        question: "Can I have a solo 401k and a regular IRA?",
+        answer:
+          "Yes. A Solo 401(k) and a traditional or Roth IRA are separate accounts with separate contribution limits, so funding both is allowed. Your ability to deduct a traditional IRA contribution can be reduced once you are covered by a workplace plan like a Solo 401(k), depending on your income, so check the current-year phase-out range at [IRS.gov](https://www.irs.gov/retirement-plans/ira-deduction-limits) before assuming the full deduction applies.",
+      },
+      {
+        question: "Is a Solo 401k a SIMPLE IRA?",
+        answer:
+          "No, they are different account types with different rules. A Solo 401(k) is a one-participant 401(k) plan available only to an owner-only business, with a higher combined contribution cap, a Roth option, and loan availability. A SIMPLE IRA is a separate plan type built for a small business with employees, with a lower deferral limit, a mandatory employer contribution, and no loan provision.\n\nThe names are sometimes confused because both target self-employed and small-business savers, but the IRS treats them as distinct plan types with distinct rules. Model your own contribution room for each in the [retirement savings calculator](/retirement/) before you set up either one.",
+      },
+    ],
+    sources: [
+      { label: "IRS: One-Participant 401(k) Plans", url: "https://www.irs.gov/retirement-plans/one-participant-401k-plans" },
+      { label: "IRS: SIMPLE IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
+      { label: "IRS: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
+      { label: "IRS: IRA Deduction Limits", url: "https://www.irs.gov/retirement-plans/ira-deduction-limits" },
+    ],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "simple-ira-vs-401k", "401k-vs-roth-ira"],
+    calculatorLinks: [
+      { label: "Retirement Savings Calculator", href: "/retirement/" },
+      { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+    ],
+  },
+{
+    slug: "chapter-7-vs-chapter-13-bankruptcy",
+    updated: "2026-08-31",
+    draft: false,
+    title: "Chapter 7 vs Chapter 13 Bankruptcy Explained",
+    metaDescription:
+      "Chapter 7 vs Chapter 13 bankruptcy compared: liquidation against a repayment plan, means test eligibility, credit report impact, and what debt survives each.",
+    targetKeyword: "chapter 7 vs chapter 13 bankruptcy",
+    optionA: "Chapter 7 Bankruptcy",
+    optionB: "Chapter 13 Bankruptcy",
+    segment: "Debt and bankruptcy",
+    h1: "Chapter 7 vs Chapter 13 Bankruptcy Comes Down to What You Own",
+    intro:
+      "Chapter 7 bankruptcy sells your non-exempt assets to erase most unsecured debt in three to six months, while Chapter 13 bankruptcy reorganizes debt into a three-to-five-year repayment plan that lets you keep assets like a home. What we see readers get wrong most often is assuming Chapter 7 is always the faster, cheaper option and Chapter 13 is only a fallback, when the actual pick usually comes down to what you own and how much you earn.\n\nAccording to the [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), Chapter 7 is a liquidation case: a court-appointed trustee sells anything you own above your state's exemption limits and pays creditors with the proceeds. Chapter 13, covered in the courts' own [Chapter 13 basics guide](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics), is a reorganization case: you propose a repayment plan and pay what you can from income over three to five years while keeping your property.\n\nBoth wipe out debt differently, and both leave certain debts, like most student loans and recent taxes, still owed when the case closes. This is general information, not legal advice for your specific situation, so confirm the details that matter most to you with a bankruptcy attorney licensed in your state.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Process type", a: "Liquidation: a trustee sells your non-exempt property to pay creditors", b: "Reorganization: you keep property and repay creditors from income over time" },
+        { dimension: "Typical timeline to discharge", a: "3 to 6 months", b: "3 to 5 years, discharge comes at the end of the plan" },
+        { dimension: "Eligibility test", a: "Means test based on income against your state's median", b: "Regular income, plus secured and unsecured debt under limits the law adjusts periodically" },
+        { dimension: "What happens to assets", a: "Non-exempt assets are sold. Exempt assets like a car, tools, or some home equity are protected by state or federal limits", b: "You keep all assets as long as you keep paying into the plan" },
+        { dimension: "Protection from foreclosure", a: "Temporary. The automatic stay pauses collection but does not cure a mortgage default", b: "Ongoing. The plan lets you catch up on missed mortgage or car payments over time" },
+        { dimension: "Credit report impact", a: "Stays on your credit report up to 10 years from the filing date", b: "Stays on your credit report up to 7 years from the filing date" },
+        { dimension: "What's typically discharged", a: "Most unsecured debt: credit cards, medical bills, personal loans", b: "Unsecured debt not fully repaid under the plan, once the plan is complete" },
+        { dimension: "What survives both", a: "Most student loans, recent taxes, child support, most court fines", b: "Most student loans, recent taxes, child support, most court fines" },
+      ],
+    },
+    verdict:
+      "Chapter 7 usually fits someone whose income falls under their state's median, who owns little beyond exempt property, and who wants unsecured debt gone in months rather than years. Chapter 13 usually fits someone who is behind on a mortgage or car payment and wants to keep the asset, who earns too much to pass the Chapter 7 means test, or who has debt that Chapter 7 cannot touch on its own but Chapter 13 can spread across the plan.\n\nNeither chapter erases federal student loans or most recent tax debt in the typical case, and neither is the right call for someone whose problem is a single, temporary cash shortfall rather than debt they cannot realistically repay. A bankruptcy attorney licensed in your state can run the means test and the property exemptions against your actual numbers, which is the only way to know which chapter you would even qualify for.",
+    sections: [
+      {
+        heading: "What Happens in a Chapter 7 Liquidation",
+        content:
+          "Chapter 7 opens with a court-appointed trustee reviewing everything you own against your state's exemption list. Property above the exemption limits gets sold, and the proceeds go to creditors in the order the [U.S. Bankruptcy Code](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) sets.\n\nMost filers keep everything, since exemptions typically cover a primary vehicle, basic household goods, and a portion of home equity. A meeting of creditors happens 21 to 40 days after you file, and most Chapter 7 cases discharge remaining unsecured debt 60 to 90 days after that meeting, putting the whole process at roughly three to six months start to finish. The speed is the trade you make for handing over any non-exempt property.",
+      },
+      {
+        heading: "What Happens in a Chapter 13 Repayment Plan",
+        content:
+          "Chapter 13 replaces liquidation with a court-approved repayment plan lasting three to five years. If your income falls below your state's median, the plan generally runs three years. Above the median, it runs five, according to the U.S. Courts' Chapter 13 basics guide.\n\nYou keep your property throughout, and you pay what the plan requires from your income instead of surrendering assets. Whatever unsecured debt is left when the plan finishes gets discharged.\n\nMiss payments during the plan, and the case can be dismissed, which removes the bankruptcy protection you filed for in the first place.",
+      },
+      {
+        heading: "The Means Test: Who Qualifies for Chapter 7",
+        content:
+          "Chapter 7 is not available to everyone. If your household income exceeds your state's median for a family your size, you have to pass a means test that measures your income against allowed monthly expenses over a five-year period. Fail it, and the court presumes your Chapter 7 filing is abusive, meaning you likely have enough income to repay something and belong in a Chapter 13 instead.\n\nYou can rebut that presumption with documented special circumstances, such as a medical emergency or a job loss the standard formula does not capture. Below the median income, you generally skip the means test calculation entirely and qualify for Chapter 7 without it.",
+      },
+      {
+        heading: "Why Chapter 13 Protects a Home from Foreclosure",
+        content:
+          "Filing either chapter triggers an automatic stay, which immediately stops collection calls, wage garnishment, and a pending foreclosure or repossession. In a Chapter 7 case, that pause is temporary. It buys time, but it does not cure a mortgage default, so the foreclosure typically resumes once the case closes unless you catch up on your own.\n\nChapter 13 is built for exactly that gap. The repayment plan lets you spread missed mortgage or car payments across the plan's three to five years, while staying current on payments that come due after you file. That structure is the main reason someone facing foreclosure who wants to keep the house chooses Chapter 13 over Chapter 7, even though it takes years instead of months.",
+      },
+      {
+        heading: "What Neither Chapter Wipes Out",
+        content:
+          "Most federal student loans survive both chapters, discharged only in the rare case where a borrower proves undue hardship through a separate adversary proceeding, a high bar few filers clear. Recent income taxes, generally those due within the last three years, also usually survive. Child support, alimony, most court fines, and debts from certain fraud or willful injury claims survive both chapters as well.\n\nBefore filing either chapter expecting a specific debt to disappear, confirm with a bankruptcy attorney whether that debt falls into one of these carve-outs. Filing and later discovering the debt you most wanted gone was never dischargeable is a common and avoidable disappointment.",
+      },
+      {
+        heading: "How Each Chapter Shows Up on Your Credit Report",
+        content:
+          "A Chapter 7 filing stays on your credit report for up to 10 years from the filing date, according to [Experian](https://www.experian.com/blogs/ask-experian/bankruptcy-chapter-7-vs-chapter-13/). A Chapter 13 filing stays for up to seven years from the same starting point, three years shorter.\n\nThat gap exists because Chapter 13 involves an actual repayment effort, even a partial one, while Chapter 7 discharges debt with no repayment at all. In practice, both hurt your credit score sharply at filing, and both scores tend to recover over the following two to three years as you rebuild a positive payment history, regardless of which chapter is still listed on the report.",
+      },
+      {
+        heading: "Who Should Not File Either Chapter",
+        content:
+          "Skip bankruptcy entirely if your problem is a single, temporary cash shortfall, such as one missed paycheck, rather than debt you cannot realistically repay over any reasonable timeline. A [budget](/budget/) rebuild or a direct negotiation with creditors often resolves that kind of gap without a bankruptcy filing on your record for years.\n\nSkip Chapter 7 specifically if you own significant non-exempt property you are not willing to lose, or if your income is too high to pass the means test. Skip Chapter 13 specifically if you have no regular income to fund a plan, since the court will not approve a repayment plan with nothing behind it.",
+      },
+      {
+        heading: "How to Decide Which Chapter Fits Your Situation",
+        content:
+          "Start with the means test. If your income is below your state's median, Chapter 7 is usually available, and its three-to-six-month timeline is hard to beat when your goal is a clean unsecured-debt discharge. If you are above the median, Chapter 13 is often the only chapter open to you.\n\nThen weigh what you own. Someone behind on a mortgage who wants to keep the house almost always needs Chapter 13's repayment structure, since Chapter 7's automatic stay only delays foreclosure rather than curing it. A bankruptcy attorney licensed in your state can confirm your state's exemption amounts and run the actual means test math, since both vary enough by state that a general rule can point you the wrong direction.",
+      },
+      {
+        heading: "What Would Change Our Answer",
+        content:
+          "A change to the federal means test income thresholds would shift how many filers can even choose Chapter 7, since those figures are the gate that decides eligibility before any other factor. A change to state exemption amounts, which some states raise periodically, would change how much property a Chapter 7 filer actually risks losing, potentially making Chapter 7 more attractive relative to Chapter 13 in states that expand what filers can keep.\n\nNeither of those is something a filer controls, so the practical approach stays the same regardless. Confirm your state's current exemption list and your household's position against the means test before assuming either chapter fits, and get that confirmation from a bankruptcy attorney rather than a general rule of thumb.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What assets do you lose in Chapter 7?",
+        answer:
+          "You lose any property above your state's exemption limits, which the trustee sells to pay creditors. Most filers keep a primary vehicle up to its exemption value, basic household goods and clothing, tools of the trade, and a portion of home equity, since state exemption lists are built to protect the property most people actually need to keep working and living. What actually gets sold depends heavily on your state, since exemption amounts vary widely and a few states let filers choose between state and federal exemption schedules.",
+      },
+      {
+        question: "Will Chapter 13 leave me broke?",
+        answer:
+          "Not by design. A Chapter 13 plan is built around your actual budget: the court requires the plan to leave you enough income to cover reasonable living expenses before the remainder goes to creditors. The plan can still feel tight for three to five years, since it is meant to direct your disposable income toward debt rather than discretionary spending.\n\nIf a proposed plan payment genuinely leaves you unable to cover housing or food, that plan should not be approved as written, and a bankruptcy attorney can push back on the numbers before you commit to it.",
+      },
+      {
+        question: "Why is Chapter 7 better than 13?",
+        answer:
+          "Chapter 7 is not universally better. It usually wins on speed, discharging most unsecured debt in three to six months against Chapter 13's three to five years, and it requires no ongoing repayment once the case closes.\n\nIt loses to Chapter 13 for anyone who owns significant non-exempt property they want to keep, or who is behind on a mortgage and needs the repayment structure to catch up without losing the home. Which one is better depends entirely on what you own and what you are trying to protect, not on one chapter being generally superior.",
+      },
+      {
+        question: "Does Chapter 7 wipe out all debt?",
+        answer:
+          "No. Chapter 7 discharges most unsecured debt, such as credit cards, medical bills, and personal loans, but several categories survive regardless of which chapter you file.\n\nMost federal student loans, recent income taxes, child support, alimony, and most court fines and restitution are not discharged in a typical Chapter 7 case. Confirm which of your specific debts fall into those carve-outs with a bankruptcy attorney before filing, so the debt you most want gone is actually the debt the filing will erase.",
+      },
+    ],
+    sources: [
+      { label: "U.S. Courts: Chapter 7 Bankruptcy Basics", url: "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics" },
+      { label: "U.S. Courts: Chapter 13 Bankruptcy Basics", url: "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics" },
+      { label: "Experian: Chapter 7 vs Chapter 13 Bankruptcy", url: "https://www.experian.com/blogs/ask-experian/bankruptcy-chapter-7-vs-chapter-13/" },
+      { label: "Federal Reserve Bank of St. Louis: The Difference Between Chapter 7 & 13 Bankruptcy", url: "https://www.stlouisfed.org/open-vault/2019/september/difference-between-chapter-7-chapter-13-bankruptcy" },
+    ],
+    relatedComparisons: ["secured-vs-unsecured-loan", "debt-snowball-vs-avalanche"],
+    calculatorLinks: [
+      { label: "Budget Calculator", href: "/budget/" },
+      { label: "Monthly Budget Calculator", href: "/budget/monthly-budget-calculator/" },
     ],
   },
 ];
