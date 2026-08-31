@@ -1,0 +1,9 @@
+IndexNow submission — 2026-08-31 (ga4-top-pages-pass-auto)
+Endpoint: https://api.indexnow.org/indexnow
+Key: dc557f6bfced447aa1a71771d8a0d24a (project-wide fallback key)
+HTTP status: 200
+
+URLs submitted:
+https://www.themodernwallet.com/guides/business-line-of-credit-requirements/
+https://www.themodernwallet.com/business-line-of-credit/
+https://www.themodernwallet.com/roundup/business-line-of-credit-rates-by-lender/
