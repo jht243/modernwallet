@@ -1395,7 +1395,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Testamentary Trust vs. Living Trust: Which Belongs in Your Plan?",
         content:
-          "A will that creates a testamentary trust only funds and activates that trust after death, once the will itself goes through probate — the trust exists on paper the whole time but holds nothing until a judge admits the will. A living trust is funded and active while you're alive, so assets titled into it skip probate entirely and pass to beneficiaries directly under the trust's terms.\n\nCost follows that same split. A will with a testamentary trust provision is the cheaper document to draft up front, but every asset it controls still passes through probate at death, with the time and court fees that involves in your state. A living trust costs more to set up, since you're also retitling assets into it, but a well-funded one avoids probate on everything it holds.\n\nFor most families, a testamentary trust is the right, cheaper tool when the only real need is age-based distributions to minor children — say, releasing an inheritance at 25 instead of 18 — and the estate is modest enough that probate's cost and delay aren't a serious concern. A living trust earns its higher setup cost when privacy matters (a will becomes a public probate record; a trust generally doesn't), when the estate is large enough that probate delay would be genuinely costly, or when you own property in more than one state, since a testamentary trust can't prevent a second, ancillary probate in a state where you hold real estate.",
+          "A will that creates a testamentary trust only funds and activates that trust after death, once the will itself goes through probate. The trust exists on paper the whole time but holds nothing until a judge admits the will. A living trust is funded and active while you're alive, so assets titled into it skip probate entirely and pass to beneficiaries directly under the trust's terms.\n\nCost follows that same split. A will with a testamentary trust provision is the cheaper document to draft up front, but every asset it controls still passes through probate at death, with the time and court fees that involves in your state. A living trust costs more to set up, since you're also retitling assets into it, but a well-funded one avoids probate on everything it holds.\n\nFor most families, a testamentary trust is the right, cheaper tool when the only real need is age-based distributions to minor children, such as releasing an inheritance at 25 instead of 18, and the estate is modest enough that probate's cost and delay aren't a serious concern. A living trust earns its higher setup cost in three situations. Privacy matters to you: a will becomes a public probate record, while a trust generally doesn't. The estate is large enough that probate delay would be genuinely costly. Or you own property in more than one state, since a testamentary trust can't prevent a second, ancillary probate in a state where you hold real estate.",
       },
     ],
     faqs: [
@@ -1427,7 +1427,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "What's the difference between a testamentary trust and a living trust?",
         answer:
-          "A testamentary trust is created inside a will and only funds after death, once the will clears probate — it's cheaper to set up but doesn't avoid probate on the assets it controls. A living trust is funded while you're alive, so assets titled into it skip probate entirely, at the cost of more setup work and higher up-front fees to retitle those assets.",
+          "A testamentary trust is created inside a will and only funds after death, once the will clears probate. It's cheaper to set up but doesn't avoid probate on the assets it controls. A living trust is funded while you're alive, so assets titled into it skip probate entirely, at the cost of more setup work and higher up-front fees to retitle those assets.",
       },
     ],
     sources: [
@@ -5611,7 +5611,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Is IUL better than term life insurance?",
         answer:
-          "For pure income replacement, no — term is dramatically cheaper for the same death benefit and doesn't depend on an insurer's cap rate holding steady. IUL earns its higher cost only for a genuinely lifelong need, where its 0% floor and capped index-linked growth trade upside for downside protection that term can't offer at any price.",
+          "For pure income replacement, no. Term is dramatically cheaper for the same death benefit and doesn't depend on an insurer's cap rate holding steady. IUL earns its higher cost only for a genuinely lifelong need, where its 0% floor and capped index-linked growth trade upside for downside protection that term can't offer at any price.",
       },
     ],
     sources: [
