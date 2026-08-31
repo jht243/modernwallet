@@ -8,3 +8,6 @@ https://www.themodernwallet.com/compare/sofi-invest-vs-robinhood/
 https://www.themodernwallet.com/compare/iul-vs-vul/
 https://www.themodernwallet.com/compare/solo-401k-vs-simple-ira/
 https://www.themodernwallet.com/compare/chapter-7-vs-chapter-13-bankruptcy/
+
+# Submitted 2026-08-31 to https://api.indexnow.org/indexnow — HTTP 200
+# All 10 URLs confirmed live (200) before submission
