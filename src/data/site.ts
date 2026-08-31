@@ -43,4 +43,4 @@ export const REVIEWER = {
 } as const;
 
 // Sitewide "last updated" stamp. Bump when content is materially revised.
-export const LAST_UPDATED = "2026-08-30";
+export const LAST_UPDATED = "2026-06-25";

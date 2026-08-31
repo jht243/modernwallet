@@ -437,6 +437,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   {
     calculator: "retirement",
     slug: "retirement-income-calculator",
+    updated: "2026-08-30",
     title: "Retirement Income Calculator: How Long Savings Last",
     metaDescription:
       "Our retirement income calculator shows how long your savings will last in retirement, models withdrawal rates, and flags sequence-of-returns risk.",

@@ -80,11 +80,18 @@ export interface CalculatorDef {
   /** Authoritative primary sources cited on the page (E-E-A-T). */
   sources?: Source[];
 
+  /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
+   *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
+  updated?: string;
+
   /** Initial inputs for the hub's live calculator. Shape is calculator-specific. */
   defaultPreset: Record<string, unknown>;
 }
 
 export interface SpokeEntry {
+  /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
+   *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
+  updated?: string;
   /** which calculator/category this belongs under, e.g. "auto-loan" */
   calculator: string;
   /** intent slug → /<calculator>/<slug>, e.g. "payoff-calculator" */

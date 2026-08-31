@@ -9,6 +9,9 @@ export interface GuideSection { heading: string; body: string; }
 export interface GuideTool { href: string; label: string; }
 
 export interface Guide {
+  /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
+   *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
+  updated?: string;
   slug: string;
   title: string;
   metaDescription: string;
@@ -2475,6 +2478,7 @@ export const GUIDES: Guide[] = [
   // -- podcast-pain-pass 2026-07-21: how-much-life-insurance-do-i-need --
 {
   slug: "how-much-life-insurance-do-i-need",
+    updated: "2026-08-30",
   title: "How Much Life Insurance Do I Need? (DIME Method)",
   metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your exact coverage.",
   h1: "How Much Life Insurance Do I Need?",
@@ -3758,6 +3762,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "borrowing-against-life-insurance",
+    updated: "2026-08-30",
     title: "Borrowing Against Life Insurance: How Policy Loans Work",
     metaDescription:
       "Borrowing against life insurance uses your cash value as collateral. Learn how policy loans accrue interest, cut the death benefit, and can trigger tax.",
@@ -5066,6 +5071,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "mega-backdoor-roth-401k",
+    updated: "2026-08-30",
     title: "Mega Backdoor Roth 401(k): How It Actually Works",
     metaDescription:
       "A mega backdoor Roth 401(k) converts after-tax contributions above the deferral limit into Roth money. See the 2026 IRS limits and who can use it.",
@@ -5145,6 +5151,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "net-worth-for-fafsa-and-accredited-investor",
+    updated: "2026-08-30",
     title: "Net Worth for FAFSA vs. Accredited Investor Rules",
     metaDescription:
       "FAFSA net worth and accredited investor net worth are different tests. See what FAFSA excludes, what the SEC's $1 million test counts, and why it matters.",
@@ -7187,6 +7194,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "what-is-a-high-net-worth-individual",
+    updated: "2026-08-30",
     title: "What Is a High-Net-Worth Individual?",
     metaDescription:
       "See the exact dollar threshold for a high-net-worth individual, how it differs from an accredited investor, and what changes once you cross it.",
@@ -7301,6 +7309,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "private-placement-life-insurance",
+    updated: "2026-08-30",
     title: "Private Placement Life Insurance (PPLI): How It Works",
     metaDescription:
       "Private placement life insurance lets the ultra-wealthy grow hedge fund gains tax-free inside a policy. How PPLI works, what it costs, and who can buy one.",
@@ -7368,6 +7377,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "indexed-universal-life-insurance",
+    updated: "2026-08-30",
     title: "Indexed Universal Life Insurance Pros and Cons for 2026",
     metaDescription:
       "Indexed universal life insurance pros and cons: caps, floors, and rising cost-of-insurance charges decide whether an IUL is worth funding.",
@@ -7430,6 +7440,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "tax-free-retirement-account",
+    updated: "2026-08-30",
     title: "Tax Free Retirement Account Choices Ranked for 2026",
     metaDescription:
       "No US account is named a tax free retirement account. Four vehicles qualify: the 2026 IRS limits, who each fits, and the insurance pitch using the name.",
@@ -7505,6 +7516,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "infinite-banking",
+    updated: "2026-08-30",
     title: "Infinite Banking Works Only for a Narrow Set of Buyers",
     metaDescription:
       "Infinite banking uses an overfunded whole life policy and policy loans. The mechanics are real, the costs land early, and the break-even takes years.",

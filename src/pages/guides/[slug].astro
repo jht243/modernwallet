@@ -40,7 +40,8 @@ const jsonLdArticle = articleSchema({
   headline: guide.h1,
   description: guide.metaDescription,
   url: canonicalUrl,
-  datePublished: LAST_UPDATED,
+  datePublished: guide.updated ?? LAST_UPDATED,
+  dateModified: guide.updated ?? LAST_UPDATED,
   sources: guide.sources,
 });
 ---
@@ -59,7 +60,7 @@ const jsonLdArticle = articleSchema({
 
     <header class="hero">
       <h1>{guide.h1}</h1>
-      <Byline />
+      <Byline updated={guide.updated} />
       {paragraphs(guide.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 

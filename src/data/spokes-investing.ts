@@ -189,6 +189,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
   {
     calculator: "investing",
     slug: "roth-ira-calculator",
+    updated: "2026-08-30",
     title: "Roth IRA Calculator: Project Tax-Free Growth",
     metaDescription:
       "Project your Roth IRA balance using 2026 contribution limits. See how post-tax contributions grow tax-free over decades. Includes income phase-out info.",

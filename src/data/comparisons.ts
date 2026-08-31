@@ -4,6 +4,9 @@ import type { FAQ, Source } from "./types";
 import { BUSINESS_COMPARISONS } from "./comparisons-business";
 
 export interface ComparisonEntry {
+  /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
+   *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
+  updated?: string;
   slug: string;
   title: string;            // ≤60 chars — both entities named
   metaDescription: string;  // ≤160 chars
@@ -29,6 +32,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 1. 401(k) vs Roth IRA ───────────────────────────────────────────────
   {
     slug: "401k-vs-roth-ira",
+    updated: "2026-08-30",
     title: "401(k) vs Roth IRA: Which Retirement Account Wins?",
     metaDescription:
       "401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.",
@@ -2928,6 +2932,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Comparison Content Creator — 2026-07-06 batch (SEMrush-scored) ───────
   {
     slug: "roth-ira-vs-traditional-ira",
+    updated: "2026-08-30",
     title: "Roth IRA vs Traditional IRA: 2025 Comparison",
     metaDescription:
       "Roth IRA vs Traditional IRA: compare 2025 tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.",
@@ -3990,6 +3995,7 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   {
     slug: "whole-life-vs-term-life-insurance",
+    updated: "2026-08-30",
     title: "Term Life vs Whole Life Insurance: Which Wins?",
     metaDescription:
       "Term life vs whole life insurance compared: cost, cash value, coverage length, and who each fits. See why most families pick term and invest the rest.",
@@ -5123,6 +5129,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Roth IRA vs Roth 401(k) ─────────────────────────────────────────────
   {
     slug: "roth-ira-vs-roth-401k",
+    updated: "2026-08-30",
     title: "Roth IRA vs Roth 401(k): Which Should You Max First?",
     metaDescription:
       "Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.",
@@ -5307,6 +5314,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Whole Life vs Universal Life Insurance ──────────────────────────────
   {
     slug: "whole-life-vs-universal-life-insurance",
+    updated: "2026-08-30",
     title: "Whole Life vs Universal Life Insurance: Key Differences",
     metaDescription:
       "Whole life vs universal life insurance compared: fixed vs flexible premiums, guaranteed vs variable cash value growth, and which fits your goals.",
@@ -5515,6 +5523,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── Term Life vs Universal Life Insurance ───────────────────────────────
   {
     slug: "term-life-vs-universal-life-insurance",
+    updated: "2026-08-30",
     title: "Term Life vs Universal Life Insurance: Which to Buy?",
     metaDescription:
       "Term life vs universal life insurance compared: cost, coverage length, cash value, and flexibility — see which policy actually fits your needs.",
@@ -9826,6 +9835,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── IUL vs 401(k) ────────────────────────────────────────────────────────
   {
     slug: "iul-vs-401k",
+    updated: "2026-08-30",
     title: "IUL vs 401k Comes Down to the Employer Match",
     metaDescription:
       "IUL vs 401k compared on employer match, 2026 IRS limits, cost of insurance, fees, and taxes, plus when an indexed universal life policy earns its price.",
@@ -9945,6 +9955,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── IUL vs Roth IRA ──────────────────────────────────────────────────────
   {
     slug: "iul-vs-roth-ira",
+    updated: "2026-08-30",
     title: "IUL vs Roth IRA Turns on Income and Contribution Caps",
     metaDescription:
       "IUL vs Roth IRA compared on 2026 IRS limits, income phase-outs, fees, and withdrawal access, plus when an indexed universal life policy earns its premium.",

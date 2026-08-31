@@ -83,7 +83,8 @@ const jsonLdArticle = articleSchema({
   headline: h1,
   description: metaDescription,
   url: canonicalUrl,
-  datePublished: LAST_UPDATED,
+  datePublished: entry.updated ?? LAST_UPDATED,
+  dateModified: entry.updated ?? LAST_UPDATED,
   sources: combinedSources,
   reviewedBy: reviewer,
 });
@@ -130,7 +131,7 @@ const related = relatedSpokes(entry, 3);
 
     <header class="hero">
       <h1>{h1}</h1>
-      <Byline reviewer={reviewer} />
+      <Byline reviewer={reviewer} updated={entry.updated} />
       {paragraphs(stateIntro).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 

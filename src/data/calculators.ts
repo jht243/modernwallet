@@ -1019,6 +1019,7 @@ export const CALCULATORS: CalculatorDef[] = [
   // stays unrealized until you sell.
   {
     id: "taxable-vs-tax-deferred",
+    updated: "2026-08-30",
     islandId: "taxable-vs-tax-deferred",
     label: "Taxable vs. Tax-Deferred",
     navOrder: 19,
@@ -1226,6 +1227,7 @@ export const CALCULATORS: CalculatorDef[] = [
   },
   {
     id: "iul-calculator",
+    updated: "2026-08-30",
     islandId: "iul-calculator",
     label: "IUL",
     navOrder: 21,

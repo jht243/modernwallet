@@ -11,6 +11,9 @@ export interface RoundupOption {
 }
 
 export interface RoundupEntry {
+  /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
+   *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
+  updated?: string;
   slug: string;
   title: string;
   metaDescription: string;

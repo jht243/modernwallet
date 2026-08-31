@@ -9,10 +9,13 @@
 import { AUTHOR, LAST_UPDATED } from "../data/site";
 import type { Reviewer } from "../data/types";
 
-interface Props { reviewer?: Reviewer; }
-const { reviewer } = Astro.props as Props;
+// `updated` is the page's OWN last-updated date (ISO yyyy-mm-dd). Pages that have never been
+// revised since launch omit it and fall back to the site-wide LAST_UPDATED. A routine that edits a
+// page sets the field on that page's record, so a content pass no longer restamps the whole site.
+interface Props { reviewer?: Reviewer; updated?: string; }
+const { reviewer, updated: updatedProp } = Astro.props as Props;
 
-const updated = new Date(LAST_UPDATED + "T00:00:00Z").toLocaleDateString("en-US", {
+const updated = new Date((updatedProp ?? LAST_UPDATED) + "T00:00:00Z").toLocaleDateString("en-US", {
   year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
 });
 ---
