@@ -20,3 +20,7 @@ https://www.themodernwallet.com/taxable-vs-tax-deferred/
 # SUBMITTED 2026-08-30 after merge (1b64c25) + deploy + 200-verify.
 # All 18 URLs returned HTTP 200 before submission. IndexNow POST -> HTTP 200.
 # key: dc557f6bfced447aa1a71771d8a0d24a (challenge file live, HTTP 200)
+
+# IUL CALCULATOR BUILD, submitted 2026-08-30 after merge (6c684da) + deploy + 200-verify:
+# /iul-calculator/ (new), /compare/iul-vs-401k/, /compare/iul-vs-roth-ira/,
+# /retirement/, /investing/, /taxable-vs-tax-deferred/  -> all HTTP 200, IndexNow HTTP 200.
