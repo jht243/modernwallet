@@ -10071,11 +10071,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
     ],
   },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "turbotax-vs-hr-block",
   updated: "2026-08-31",
   draft: false,
-  title: "TurboTax vs H&R Block: Which Tax Software Wins?",
+  title: "TurboTax vs H&R Block: Which Tax Software Fits You?",
   metaDescription:
     "TurboTax vs H&R Block compared: filing tiers, pricing, in-person support, audit guarantees, refund advance, and which one fits your tax return.",
   targetKeyword: "turbotax vs h&r block",
@@ -10103,7 +10104,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     {
       heading: "What a Simple W-2 Return Costs on Each",
       content:
-        "A filer with only W-2 income and the standard deduction pays $0 in federal and state fees on both platforms. TurboTax's Free Edition covers a simple Form 1040 with a narrow set of credits: the Earned Income Tax Credit, the Child Tax Credit, student loan interest, and retirement plan distributions, and Intuit puts the share of filers who qualify at roughly 37%.\n\nH&R Block's Free Online tier draws its line in nearly the same place. It handles Form 1040 with no schedules beyond that same short list of credits. Add a Schedule C for freelance income, a rental property, or investment sales, and both companies move you off the free tier and onto a paid one.",
+        "A filer with only W-2 income and the standard deduction pays $0 in federal and state fees on both platforms. TurboTax's Free Edition covers a simple Form 1040 with a narrow set of credits: the Earned Income Tax Credit, the Child Tax Credit, student loan interest, and retirement plan distributions, and Intuit puts the share of filers who qualify at roughly 37%.\n\nH&R Block's Free Online tier draws its line in nearly the same place. It handles Form 1040 with no schedules beyond that same short list of credits. Add a Schedule C for freelance income, a rental property, or investment sales, and both companies move you off the free tier and onto a paid one. Not sure which bracket that pushes you into? Our [how much tax will I pay](/guides/how-much-tax-will-i-pay/) guide walks through the bracket math both platforms automate for you.",
     },
     {
       heading: "What Each Charges Once Your Return Gets More Complex",
@@ -10187,11 +10188,12 @@ export const COMPARISONS: ComparisonEntry[] = [
   ],
   relatedComparisons: ["turbotax-vs-taxact", "freetaxusa-vs-turbotax"],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "freetaxusa-vs-turbotax",
   updated: "2026-08-31",
   draft: false,
-  title: "FreeTaxUSA vs TurboTax: Which Fits Your Return?",
+  title: "FreeTaxUSA vs TurboTax: Which One Fits Your Return?",
   metaDescription:
     "FreeTaxUSA vs TurboTax compared: pricing, support quality, accuracy guarantees, IRS Free File status, and who should skip the cheaper option.",
   targetKeyword: "freetaxusa vs turbotax",
@@ -10224,7 +10226,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     {
       heading: "What FreeTaxUSA Doesn't Do As Well As TurboTax",
       content:
-        "FreeTaxUSA's interview is efficient rather than explanatory. It asks for the number on a specific line of a specific form and moves on, with far less plain-language context around unusual situations than TurboTax provides. A filer who has never seen a Schedule K-1 or isn't sure whether a 1099-NEC counts as self-employment income can end up guessing at an answer instead of getting a clear explanation of what the question is actually asking.\n\nThat gap shows up most on a return with something genuinely unusual in it, like a first-year Schedule C, a multi-state move mid-year, or a large stock sale with cost-basis complications. Filers comparing platforms on forums like [Reddit](https://www.reddit.com/) and [Bogleheads](https://www.bogleheads.org/) routinely recommend running an unusual return through more than one program and comparing the bottom-line numbers before trusting either result outright. That habit costs nothing beyond time, and it catches the rare case where a single answer got entered differently between the two.",
+        "FreeTaxUSA's interview is efficient rather than explanatory. It asks for the number on a specific line of a specific form and moves on, with far less plain-language context around unusual situations than TurboTax provides. A filer who has never seen a Schedule K-1 or isn't sure whether a 1099-NEC counts as self-employment income can end up guessing at an answer instead of getting a clear explanation of what the question is actually asking.\n\nThat gap shows up most on a return with something genuinely unusual in it, like a first-year Schedule C, a multi-state move mid-year, or a large stock sale with cost-basis complications. Filers comparing platforms on forums like [Reddit](https://www.reddit.com/) and [Bogleheads](https://www.bogleheads.org/) routinely recommend running an unusual return through more than one program and comparing the bottom-line numbers before trusting either result outright. That habit costs nothing beyond time, and it catches the rare case where a single answer got entered differently between the two. Our [common tax filing mistakes](/guides/common-tax-filing-mistakes/) guide covers the errors that trip up filers on either platform, unusual return or not.",
     },
     {
       heading: "The Support Gap: Email vs Live Help",
@@ -10293,11 +10295,12 @@ export const COMPARISONS: ComparisonEntry[] = [
   ],
   relatedComparisons: ["turbotax-vs-taxact", "turbotax-vs-hr-block"],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "buying-vs-leasing-a-car",
   updated: "2026-08-31",
   draft: false,
-  title: "Buying vs Leasing a Car: The Real 3-Year Cost",
+  title: "Buying vs Leasing a Car: The Real 3-Year Cost Compared",
   metaDescription:
     "Buying vs leasing a car compared with a real worked example: monthly cost, mileage caps, money factor, residual value, and who each option fits.",
   targetKeyword: "buying vs leasing a car",
@@ -10318,7 +10321,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
   verdict:
-    "Buy if you plan to keep the car past the loan term, drive more than about 12,000 miles a year, or want the equity to count toward your next car instead of disappearing at lease-end. Lease if you drive a predictable, lower number of miles, always want a car under warranty, or run a business that can write off the lease payment. Mileage is the tell either way. Skip leasing entirely if you tend to go over mileage limits, modify your vehicles, or don't want to hand a car back in exactly the condition someone else defines as acceptable. Skip buying with a long loan term if you trade in every 2 to 3 years anyway, since a 6- or 7-year loan on a car you don't keep that long usually leaves you owing more than the car is worth when you trade it in.",
+    "Buy if you plan to keep the car past the loan term, drive more than about 12,000 miles a year, or want the equity to count toward your next car instead of disappearing at lease-end. Lease if you drive a predictable, lower number of miles, always want a car under warranty, or run a business that can write off the lease payment. Your actual annual mileage is usually the single fact that decides which side you land on. Skip leasing entirely if you tend to go over mileage limits, modify your vehicles, or don't want to hand a car back in exactly the condition someone else defines as acceptable. Skip buying with a long loan term if you trade in every 2 to 3 years anyway, since a 6- or 7-year loan on a car you don't keep that long usually leaves you owing more than the car is worth when you trade it in.",
   sections: [
     {
       heading: "What a $35,000 Car Costs You Over 3 Years",
@@ -10404,11 +10407,12 @@ export const COMPARISONS: ComparisonEntry[] = [
     { label: "Car Affordability Calculator", href: "/auto-loan/car-affordability-calculator/" },
   ],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "construction-loan-vs-traditional-mortgage",
   updated: "2026-08-31",
   draft: false,
-  title: "Construction Loan vs Mortgage: Key Differences",
+  title: "Construction Loan vs Mortgage: The Key Differences",
   metaDescription:
     "Construction loan vs traditional mortgage compared: how draws work, interest-only payments, down payment rules, closings, and which one fits your build.",
   targetKeyword: "construction loan vs mortgage",
@@ -10517,10 +10521,11 @@ export const COMPARISONS: ComparisonEntry[] = [
     { label: "Mortgage Payment Calculator", href: "/mortgage/" },
   ],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "medicare-advantage-vs-medigap",
   updated: "2026-08-31",
-  title: "Medicare Advantage vs Medigap: Which Costs Less?",
+  title: "Medicare Advantage vs Medigap: Which Costs You Less?",
   metaDescription:
     "Medicare Advantage vs Medigap compared: premiums, networks, drug coverage, and the enrollment window that decides whether you can switch later.",
   targetKeyword: "medicare advantage vs medigap",
@@ -10571,7 +10576,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     {
       heading: "When a Network Change Should Flip Your Decision",
       content:
-        "Medicare Advantage doesn't fit someone who spends part of the year in a second state, since most plans only cover routine, non-emergency care inside their service area. It also doesn't fit someone managing a serious chronic condition who wants to keep a specific out-of-network specialist regardless of cost, since that specialist may not be reachable through the plan's network at any price.\n\nA few events should flip this verdict once you've made it. A plan network dropping your doctor mid-year, a move to a new service area the plan doesn't cover, or a new diagnosis that turns occasional care into frequent specialist visits are all real reasons to use the next Annual Election Period to switch, and to weigh Medigap's guaranteed-issue rules before that window closes. Run the numbers on your own situation before you commit either way with our [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/), since a gap in coverage costs far more than the premium difference between Medicare Advantage and Medigap.",
+        "Medicare Advantage doesn't fit someone who spends part of the year in a second state, since most plans only cover routine, non-emergency care inside their service area. It also doesn't fit someone managing a serious chronic condition who wants to keep a specific out-of-network specialist regardless of cost, since that specialist may not be reachable through the plan's network at any price.\n\nA few events should flip this verdict once you've made it. A plan network dropping your doctor mid-year, a move to a new service area the plan doesn't cover, or a new diagnosis that turns occasional care into frequent specialist visits are all real reasons to use the next Annual Election Period to switch, and to weigh Medigap's guaranteed-issue rules before that window closes. Run the numbers on your own situation before you commit either way with our [long-term care cost calculator](/elder-care/long-term-care-cost-calculator/), since a gap in coverage costs far more than the premium difference between Medicare Advantage and Medigap. Neither plan covers custodial long-term care once a Skilled Nursing Facility stay passes day 100 — our [protecting assets from a nursing home](/guides/how-to-protect-assets-from-nursing-home/) guide covers what actually pays for care after Medicare stops.",
     },
   ],
   faqs: [
@@ -10618,10 +10623,11 @@ export const COMPARISONS: ComparisonEntry[] = [
     { label: "Long-term care cost calculator", href: "/elder-care/long-term-care-cost-calculator/" },
   ],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "etrade-vs-fidelity",
   updated: "2026-08-31",
-  title: "E*TRADE vs Fidelity: Which Broker Fits You?",
+  title: "E*TRADE vs Fidelity: Which Brokerage Actually Fits You?",
   metaDescription:
     "E*TRADE vs Fidelity compared: options and futures fees, robo-advisor cost, research tools, and who owns each platform, so you can pick the right broker.",
   targetKeyword: "etrade vs fidelity",
@@ -10735,10 +10741,11 @@ export const COMPARISONS: ComparisonEntry[] = [
     { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
   ],
 },
+  // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
   slug: "sofi-invest-vs-robinhood",
   updated: "2026-08-31",
-  title: "SoFi Invest vs Robinhood: Which Fits You?",
+  title: "SoFi Invest vs Robinhood: Which One Actually Fits You?",
   metaDescription:
     "SoFi Invest vs Robinhood compared: IRA match rates, crypto access, fractional shares, and support, so beginner investors pick the right app to start with.",
   targetKeyword: "sofi invest vs robinhood",
@@ -10803,7 +10810,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     {
       question: "What's better, Robinhood or SoFi?",
       answer:
-        "Neither is better across the board. Each is built for a different habit. Robinhood fits someone who wants the simplest possible trading screen and direct crypto access. SoFi fits someone who wants banking, borrowing, and investing under one login and is willing to pay for SoFi Plus to unlock the bigger match and higher savings rate.",
+        "Neither is better across the board. Each is built for a different habit. Robinhood fits someone who wants the simplest possible trading screen and direct crypto access. SoFi fits someone who wants banking, borrowing, and investing under one login and is willing to pay for SoFi Plus to get the bigger match and higher savings rate.",
     },
     {
       question: "Is it good to invest through SoFi?",
@@ -10851,11 +10858,12 @@ export const COMPARISONS: ComparisonEntry[] = [
     { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },
   ],
 },
+    // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
     slug: "iul-vs-vul",
     updated: "2026-08-31",
     draft: false,
-    title: "IUL vs VUL: Capped Floor vs Full Market Risk",
+    title: "IUL vs VUL Life Insurance: Capped Floor or Full Market Risk?",
     metaDescription:
       "IUL vs VUL compared: index floor and cap versus sub-account market risk, real fee differences, and which cash-value life insurance fits you.",
     targetKeyword: "iul vs vul",
@@ -10960,11 +10968,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Net Worth Tracker", href: "/net-worth/" },
     ],
   },
+    // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
     slug: "solo-401k-vs-simple-ira",
     updated: "2026-08-31",
     draft: false,
-    title: "Solo 401(k) vs SIMPLE IRA: 2025 Guide for Owners",
+    title: "Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners",
     metaDescription:
       "Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.",
     targetKeyword: "solo 401k vs simple ira",
@@ -11069,11 +11078,12 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
     ],
   },
+    // register: operator · medium: text → text · page type: comparison (1500-word floor)
 {
     slug: "chapter-7-vs-chapter-13-bankruptcy",
     updated: "2026-08-31",
     draft: false,
-    title: "Chapter 7 vs Chapter 13 Bankruptcy Explained",
+    title: "Chapter 7 vs Chapter 13 Bankruptcy: How They Differ",
     metaDescription:
       "Chapter 7 vs Chapter 13 bankruptcy compared: liquidation against a repayment plan, means test eligibility, credit report impact, and what debt survives each.",
     targetKeyword: "chapter 7 vs chapter 13 bankruptcy",
@@ -11082,7 +11092,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Debt and bankruptcy",
     h1: "Chapter 7 vs Chapter 13 Bankruptcy Comes Down to What You Own",
     intro:
-      "Chapter 7 bankruptcy sells your non-exempt assets to erase most unsecured debt in three to six months, while Chapter 13 bankruptcy reorganizes debt into a three-to-five-year repayment plan that lets you keep assets like a home. What we see readers get wrong most often is assuming Chapter 7 is always the faster, cheaper option and Chapter 13 is only a fallback, when the actual pick usually comes down to what you own and how much you earn.\n\nAccording to the [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), Chapter 7 is a liquidation case: a court-appointed trustee sells anything you own above your state's exemption limits and pays creditors with the proceeds. Chapter 13, covered in the courts' own [Chapter 13 basics guide](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics), is a reorganization case: you propose a repayment plan and pay what you can from income over three to five years while keeping your property.\n\nBoth wipe out debt differently, and both leave certain debts, like most student loans and recent taxes, still owed when the case closes. This is general information, not legal advice for your specific situation, so confirm the details that matter most to you with a bankruptcy attorney licensed in your state.",
+      "Chapter 7 bankruptcy sells your non-exempt assets to erase most unsecured debt in three to six months, while Chapter 13 bankruptcy reorganizes debt into a three-to-five-year repayment plan that lets you keep assets like a home. What we see readers get wrong most often is assuming Chapter 7 is always the faster, cheaper option and Chapter 13 is only a fallback, when the actual pick usually comes down to what you own and how much you earn.\n\nAccording to the [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), Chapter 7 is a liquidation case: a court-appointed trustee sells anything you own above your state's exemption limits and pays creditors with the proceeds. Chapter 13, covered in the courts' own [Chapter 13 basics guide](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics), is a reorganization case: you propose a repayment plan and pay what you can from income over three to five years while keeping your property.\n\nBoth wipe out debt differently, and both leave certain debts, like most student loans and recent taxes, still owed when the case closes.",
     comparisonTable: {
       rows: [
         { dimension: "Process type", a: "Liquidation: a trustee sells your non-exempt property to pay creditors", b: "Reorganization: you keep property and repay creditors from income over time" },
