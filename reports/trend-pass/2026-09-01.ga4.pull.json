@@ -1,0 +1,35 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-01",
+  "window_start": "2026-09-01",
+  "window_end": "2026-09-01",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/investing/dividend-calculator",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/asset-allocation-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 2,
+  "top10_pages_total_clicks": 2,
+  "channel_split": {
+    "/investing/dividend-calculator": {
+      "Direct": 1
+    },
+    "/portfolio/asset-allocation-calculator/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
