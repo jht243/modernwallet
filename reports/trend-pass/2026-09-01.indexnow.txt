@@ -1,0 +1,7 @@
+IndexNow submission — 2026-09-01 (trend-pass-auto, trend lane)
+Endpoint: https://api.indexnow.org/indexnow
+Key: dc557f6bfced447aa1a71771d8a0d24a (project-wide fallback key, already present at public/)
+HTTP status: 200
+
+URLs submitted:
+https://www.themodernwallet.com/guides/401k-contribution-limits-2026/
