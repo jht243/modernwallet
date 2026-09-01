@@ -1,0 +1,47 @@
+{
+ "investing": {
+  "count": 18,
+  "examples": [
+   "Number one, as it's not just how big of a portfolio you have, it's how much that portfolio has to support you, or Andrew and Ellen in this example in those early years.",
+   "Not how much more can I spend or how much more can I grow my portfolio, but instead ask what would that extra money actually buy me?",
+   "How do we design a custom allocation to say, how do we know how much to put into root reserves to protect stocks?"
+  ]
+ },
+ "budget": {
+  "count": 31,
+  "examples": [
+   "Not just how much more could you spend, but where does that translate to in terms of extra lifestyle?",
+   "Not how much more can I spend or how much more can I grow my portfolio, but instead ask what would that extra money actually buy me?",
+   "If you're in your 40s, your 50s, your 60s, you've probably seen some of those online charts that show you how much you need to have saved by your age."
+  ]
+ },
+ "retirement": {
+  "count": 20,
+  "examples": [
+   "The real skill is allocating how much goes to each of these jobs so that you can protect your retirement lifestyle and keep that money growing throughout your retirement.",
+   "How much do you need to live on your portfolio for the first five years of retirement?",
+   "Versus how much did my spouse earn and what benefit are they eligible for at their full retirement age?"
+  ]
+ },
+ "tax-estate": {
+  "count": 14,
+  "examples": [
+   "But outside of that, it's her decision of when she collects that actually determines how much more or less than that she will receive.",
+   "It's like, so how do I get started making money in real estate?",
+   "It's absolutely the most tax efficient, optimized way to go about doing it, but depending on your medical spending and how much you're prioritizing your other accounts."
+  ]
+ },
+ "net-worth": {
+  "count": 2,
+  "examples": [
+   "I didn't know what a net worth was when I was 50 years old."
+  ]
+ },
+ "real-estate": {
+  "count": 3,
+  "examples": [
+   "We're talking pretty small scale, but I want to do it right and specific questions I have one, how do I determine whether an area is a good place to buy a property.",
+   "Okay, So you've got seventeen thousand dollars a month in rent, which is undermarket, but how much are your mortgage payments every month?"
+  ]
+ }
+}

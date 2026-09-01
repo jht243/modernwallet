@@ -1,0 +1,138 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] volume: using semrush (quality order ahrefs > dataforseo > semrush)
+[keyword_data] semrush returned volume for 7/8 phrases
+[keyword_data] kd: using semrush (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 1 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 7/8 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "qlac",
+   "volume": 3600,
+   "volume_low": 3600,
+   "volume_high": 3600,
+   "kd": "26",
+   "cpc": "2.01",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "qlac rmd",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": "39",
+   "cpc": "1.49",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "qlac 2026 limit",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how does a qlac work",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": "24",
+   "cpc": "1.7",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "qlac taxation",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "qlac death benefit",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best qlac providers",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "does a qlac reduce rmd",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 100,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 10-100/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using semrush (quality order ahrefs > dataforseo > semrush)",
+  "semrush returned volume for 7/8 phrases",
+  "kd: using semrush (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 7/8 rows corroborated live"
+ ]
+}

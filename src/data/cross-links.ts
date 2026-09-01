@@ -43,6 +43,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/coast-fire/", label: "Could you stop saving already?" },
     { href: "/guides/how-to-retire-at-40/", label: "Thinking about retiring early?" },
     { href: "/guides/is-3-million-enough-to-retire-at-40/", label: "Is $3 million enough?" },
+    { href: "/guides/qlac-qualified-longevity-annuity-contract/", label: "Shelter money from RMDs with a QLAC" },
   ],
   "coast-fire": [
     { href: "/retirement/", label: "Full retirement projection with contributions" },
