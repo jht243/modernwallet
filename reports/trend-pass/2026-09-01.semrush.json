@@ -1,0 +1,130 @@
+{
+  "status": "ok",
+  "seeds": [
+    "401k contribution limit 2026"
+  ],
+  "database": "us",
+  "sources": {
+    "dataforseo": 10
+  },
+  "provider_notes": [
+    "ahrefs unusable (no AHREFS_API_KEY)",
+    "semrush unusable (no SEMRUSH_API_KEY)",
+    "expand: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+    "dataforseo expanded '401k contribution limit 2026' -> 10 ideas",
+    "Autocomplete added 9 live ideas '401k contribution limit 2026' (dataforseo missed them)"
+  ],
+  "keywords": [
+    {
+      "keyword": "401k 2026 contribution limit irs",
+      "volume": 49500,
+      "volume_low": 49500,
+      "volume_high": 49500,
+      "kd": 42,
+      "cpc": 2.83,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 contribution limit",
+      "volume": 14800,
+      "volume_low": 14800,
+      "volume_high": 14800,
+      "kd": 27,
+      "cpc": 2.71,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 contribution limit over 50",
+      "volume": 8100,
+      "volume_low": 8100,
+      "volume_high": 8100,
+      "kd": 25,
+      "cpc": 4.92,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k contribution limit 2026",
+      "volume": 2400,
+      "volume_low": 2400,
+      "volume_high": 2400,
+      "kd": 25,
+      "cpc": 4.26,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "total 401k contribution limit 2026",
+      "volume": 390,
+      "volume_low": 390,
+      "volume_high": 390,
+      "kd": 25,
+      "cpc": "",
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "what is 401k contribution limit for 2026",
+      "volume": 320,
+      "volume_low": 320,
+      "volume_high": 320,
+      "kd": 24,
+      "cpc": 5.79,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 contribution limit irs over 50",
+      "volume": 320,
+      "volume_low": 320,
+      "volume_high": 320,
+      "kd": 43,
+      "cpc": "",
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 catch-up contribution limit irs",
+      "volume": 320,
+      "volume_low": 320,
+      "volume_high": 320,
+      "kd": 50,
+      "cpc": 0.05,
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 contribution limit irs catch-up",
+      "volume": 260,
+      "volume_low": 260,
+      "volume_high": 260,
+      "kd": 43,
+      "cpc": "",
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    },
+    {
+      "keyword": "401k 2026 contribution limit irs catch up",
+      "volume": 260,
+      "volume_low": 260,
+      "volume_high": 260,
+      "kd": 43,
+      "cpc": "",
+      "source": "dataforseo",
+      "confidence": "high",
+      "seed": "401k contribution limit 2026"
+    }
+  ],
+  "errors": []
+}
