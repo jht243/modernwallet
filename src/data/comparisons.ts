@@ -4867,6 +4867,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Often, yes — but usually at different life stages rather than at the same time. A typical sequence is an estate planning attorney drafting a will and revocable living trust earlier in life, then an elder law attorney adding Medicaid and long-term-care planning once nursing home or assisted living risk becomes realistic — generally when care is likely within the next five years, since Medicaid Asset Protection Trusts need that lead time under the 5-year lookback to be effective. If your situation involves both a large estate and near-term long-term-care risk, some firms cover both specialties under one roof.",
       },
+      {
+        question: "Does elder-law planning include trusts and estates (T&E) work?",
+        answer:
+          "Only partially. Most elder-law attorneys draft basic wills, powers of attorney, and revocable living trusts alongside their Medicaid and long-term-care work, which overlaps with core T&E practice. But complex T&E work, like ILITs, dynasty trusts, and valuation discounts for a closely held business, typically sits with a dedicated estate planning attorney instead. A household that needs both elder-law protection and sophisticated wealth-transfer planning often works with an attorney from each specialty, rather than one generalist covering both.",
+      },
     ],
     sources: [
       { label: "42 U.S.C. §1396p — Medicaid transfers, home equity, estate recovery", url: "https://www.ssa.gov/OP_Home/ssact/title19/1917.htm" },
