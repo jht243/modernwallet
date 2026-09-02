@@ -7548,6 +7548,120 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // -- keyword-gap-pass 2026-09-02: best-portfolio-backtesting-and-analysis-tools --
+  // register: operator · medium: text → text · page type: hub/section index (roundup, 1200-word floor).
+  {
+    slug: "best-portfolio-backtesting-and-analysis-tools",
+    title: "Best Portfolio Backtesting and Analysis Tools",
+    metaDescription:
+      "Portfolio Visualizer, Portfolio Charts, lazy-portfolio resources, and brokerage-native tools compared on whether each one runs a real historical backtest.",
+    targetKeyword: "portfolio backtesting tool",
+    category: "portfolio backtesting and analysis tools",
+    angle: "best",
+    segment: "Investors who want to test an allocation against real historical market data",
+    h1: "Best Portfolio Backtesting and Analysis Tools",
+    intro:
+      "Portfolio Visualizer is the tool most investors land on for real portfolio backtesting, running an actual allocation against real market returns going back decades rather than a model estimate. What we see readers get wrong most often is assuming any portfolio calculator that shows expected return and risk is also backtesting real history, when the two are built to answer different questions entirely. A backtester replays what a specific allocation actually would have earned across real historical periods, drawdowns included. A forward-looking estimator, the kind our own [portfolio calculator](/portfolio/) runs, projects a return and risk range from long-run model assumptions instead, which is faster to use but never claims to show what actually happened in 2008 or 2022.",
+    rankingCriteria:
+      "We grouped these tools into two categories: dedicated backtesters and lazy-portfolio resources built on real historical return data, and account-native tools brokerages already give their own customers for free. Within each group, we looked at whether the tool runs an actual historical simulation with real drawdowns, whether it requires an account or subscription, and how far back its data actually goes, since a tool testing only the last ten years tells a very different story than one covering the 1970s stagflation era or the 2008 financial crisis.",
+    options: [
+      {
+        name: "Portfolio Visualizer",
+        bestFor: "Free, detailed historical backtesting on a specific fund or ETF combination",
+        description: "[Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) runs a real historical backtest on several assets at once, using actual monthly or annual returns rather than a modeled estimate, and reports the resulting CAGR (compound annual growth rate), maximum drawdown, and Sharpe ratio for the exact period you select. Its data commonly reaches back to the 1970s for major U.S. asset classes, letting you test an allocation through stagflation, the 2008 financial crisis, and the 2022 stock-and-bond decline in the same run.",
+        strengths: ["Runs genuine historical simulations rather than model-based projections", "Free tier covers most backtesting needs without a paid account", "Data depth reaches back decades for major U.S. asset classes"],
+        limitations: ["Some advanced features, Monte Carlo simulation and factor regression among them, sit behind a paid subscription", "Past historical performance is not a projection of future returns, a limitation shared by every backtester on this list"],
+        pricing: "Free tier covers standard backtesting. A paid subscription unlocks Monte Carlo simulation, tactical allocation testing, and additional analysis tools.",
+      },
+      {
+        name: "Portfolio Charts",
+        bestFor: "Comparing well-known lazy portfolios on safe withdrawal rate and long-term resilience",
+        description: "[Portfolio Charts](https://portfoliocharts.com/portfolios/) documents dozens of named lazy portfolios, the Golden Butterfly and the Permanent Portfolio among them, with visual comparisons of safe withdrawal rate, worst-case drawdown, and long-term real return using the same historical dataset across every portfolio it covers. It is built specifically around comparing pre-built strategies against each other rather than testing a custom fund lineup.",
+        strengths: ["Purpose-built for comparing named lazy-portfolio strategies side by side", "Visualizes safe withdrawal rate, a figure most retirement-focused backtesters skip", "Entirely free with no account required"],
+        limitations: ["Limited to the specific pre-built portfolios the site documents, not a custom fund-by-fund backtest", "Fewer customization options than a dedicated backtester like Portfolio Visualizer"],
+        pricing: "Free, no account required.",
+      },
+      {
+        name: "Bogleheads Lazy Portfolios",
+        bestFor: "Understanding the reasoning behind well-known lazy allocations before backtesting one",
+        description: "The [Bogleheads](https://www.bogleheads.org/wiki/Lazy_portfolios) wiki catalogs dozens of lazy portfolios, three-fund, four-fund, and more complex variants, with the reasoning and historical performance discussion behind each one, maintained by the community built around John Bogle's index-investing philosophy. It functions as a reference and discussion resource rather than an interactive calculator.",
+        strengths: ["Explains the reasoning behind each named portfolio, not just its historical numbers", "Active community forum for questions about a specific allocation choice", "Completely free, community-maintained resource"],
+        limitations: ["Not an interactive backtesting tool, so numbers still need to be run through Portfolio Visualizer or Portfolio Charts separately", "Wiki content quality and currency varies by page, since it is community-edited"],
+        pricing: "Free.",
+      },
+      {
+        name: "Fidelity Full View",
+        bestFor: "Fidelity customers who want asset-allocation tracking across all their linked accounts",
+        description: "[Fidelity](https://www.fidelity.com/go/monitoring-your-financial-portfolio) Full View aggregates a customer's Fidelity and outside accounts into one asset-allocation and performance view, showing current exposure across U.S. equities, international equities, bonds, and cash. It is a live account-monitoring tool built for Fidelity's own customers, not a standalone historical backtester open to the public.",
+        strengths: ["Aggregates outside accounts alongside Fidelity accounts in one view", "No separate signup required for an existing Fidelity customer", "Ties directly into Fidelity's own retirement planning tools"],
+        limitations: ["Requires a Fidelity account relationship to access", "Built for tracking current allocation and performance, not for testing a hypothetical allocation against decades of historical data"],
+        pricing: "Free for Fidelity account holders.",
+      },
+      {
+        name: "Vanguard Portfolio Watch",
+        bestFor: "Vanguard customers checking their current asset allocation against a target mix",
+        description: "[Vanguard](https://investor.vanguard.com/investor-resources-education/portfolio-management/performance-details) Portfolio Watch shows a logged-in customer's current asset allocation, including non-Vanguard holdings entered manually, and flags when that mix drifts from a stated target. Like Fidelity's tool, it reports current and historical account performance rather than backtesting a hypothetical allocation against historical market data.",
+        strengths: ["Flags allocation drift against your own stated target automatically", "Includes non-Vanguard holdings if entered manually", "No cost for existing Vanguard account holders"],
+        limitations: ["Requires a Vanguard account login to access", "Reports performance of the account you actually hold, not a hypothetical historical backtest of a different allocation"],
+        pricing: "Free for Vanguard account holders.",
+      },
+      {
+        name: "Schwab Portfolio Checkup",
+        bestFor: "Schwab customers who want a diagnostic read on diversification and concentration risk",
+        description: "[Charles Schwab's](https://www.schwab.com/portfolio-evaluation) Portfolio Checkup tool diagnoses an existing Schwab account's asset allocation, sector concentration, and fixed-income quality, surfacing where a portfolio has drifted or concentrated risk. It evaluates the account you currently hold rather than simulating how a different historical allocation would have performed.",
+        strengths: ["Flags sector and single-stock concentration risk specifically, a detail many allocation tools skip", "Built into the existing Schwab account dashboard, no separate tool needed", "No additional cost for Schwab account holders"],
+        limitations: ["Requires an active Schwab brokerage account", "Diagnostic tool for your current holdings, not a historical backtest of a hypothetical allocation"],
+        pricing: "Free for Schwab account holders.",
+      },
+      {
+        name: "Questrade",
+        bestFor: "Canadian investors who want portfolio analytics inside their existing trading platform",
+        description: "[Questrade's](https://www.questrade.com/self-directed-investing/tools) IQ Edge platform includes portfolio and risk analytics tools alongside its trading software, available to Questrade account holders in Canada. It is built as a trading-platform feature rather than a public historical-backtesting tool, so its analysis is scoped to the account it is attached to.",
+        strengths: ["Analytics tools live in the same platform used for trading, no separate login", "Free to Questrade account holders", "Useful for Canadian investors, an audience most U.S.-built backtesters do not serve well"],
+        limitations: ["Restricted to Questrade account holders and the Canadian market", "Not a public historical-backtesting tool for a hypothetical allocation the way Portfolio Visualizer is"],
+        pricing: "Free for Questrade account holders.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Real Historical Backtest?", "Account Required?", "Best For"],
+      rows: [
+        { name: "Portfolio Visualizer", values: ["Yes, decades of real data", "No", "Custom fund-by-fund backtesting"] },
+        { name: "Portfolio Charts", values: ["Yes, on pre-built portfolios", "No", "Comparing named lazy portfolios"] },
+        { name: "Bogleheads Lazy Portfolios", values: ["No, reference only", "No", "Understanding the reasoning behind a strategy"] },
+        { name: "Fidelity Full View", values: ["No, current tracking only", "Fidelity account", "Fidelity customers tracking live allocation"] },
+        { name: "Vanguard Portfolio Watch", values: ["No, current tracking only", "Vanguard account", "Vanguard customers checking drift"] },
+        { name: "Schwab Portfolio Checkup", values: ["No, current diagnostic only", "Schwab account", "Concentration and diversification checks"] },
+        { name: "Questrade", values: ["No, current tracking only", "Questrade account", "Canadian investors in their trading platform"] },
+      ],
+    },
+    verdict:
+      "[Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) is the strongest starting point if you want to see how a specific fund combination actually performed through real historical periods, including the 2008 and 2022 declines, and its free tier covers that need for most individual investors. Add [Portfolio Charts](https://portfoliocharts.com/portfolios/) if you are choosing between named lazy portfolios rather than building a custom fund lineup, since it visualizes safe withdrawal rate in a way a general backtester does not. If you already hold your investments at Fidelity, Vanguard, Schwab, or Questrade, that brokerage's own native tool is worth checking first simply because it is already tracking your real account, even though none of the four run a true historical backtest on a hypothetical allocation.\n\nThis roundup is not useful if you have already run your backtest and just need a fast, forward-looking estimate for a specific dollar amount and contribution schedule, since a model-based tool like our own [portfolio calculator](/portfolio/) answers that question faster than re-running a multi-decade historical simulation. It would also matter less if every brokerage eventually built a true historical-backtesting feature directly into its own native app, which none of the four brokerage tools above currently do.",
+    sections: [
+      {
+        heading: "Why Backtesting and a Model Estimate Answer Different Questions",
+        content:
+          "A historical backtest answers one very specific question: what would this exact allocation have earned, with this exact sequence of real returns, over this specific stretch of history? Change the start date by even a few years and the backtested result can shift meaningfully, since a portfolio that started right before 2008 or 2022 lived through a very different sequence than one that started five years earlier or later. That sequence-dependence is a real limitation of backtesting, not a flaw unique to any one tool. It is the nature of using one actual historical path to predict a different, unknown future path.\n\nA model-based estimate, the kind our own [portfolio calculator](/portfolio/) runs, sidesteps sequence-of-returns risk by using long-run average assumptions instead of any one historical sequence. It cannot tell you what your specific allocation would have earned starting in January 2008, because it was never built to replay that specific stretch of history. What it can tell you quickly is a reasonable expected range for a given mix, useful for a first-pass comparison before you commit to running a full historical backtest on the finalists.",
+      },
+      {
+        heading: "What ModernWallet's Portfolio Calculator Does Differently",
+        content:
+          "ModernWallet's [portfolio calculator](/portfolio/) is a forward-looking estimator built on long-run historical averages as model assumptions, not a historical backtester running your allocation against actual past market data the way Portfolio Visualizer does. Enter a stock, bond, real estate, and cash mix and it returns an expected return, a volatility figure, and a Sharpe ratio in seconds, without requiring an account, a login, or a specific start and end date to select.\n\nThat speed is a real tradeoff, not a hidden catch. A true backtester shows you a specific, real historical outcome, drawdowns and all, for the exact period you choose. A model-based tool like ours shows you a faster, general estimate built from long-run averages, useful for quickly comparing two or three candidate allocations before deciding which ones are worth the extra step of a full historical backtest. Run your allocation through the [portfolio calculator](/portfolio/) for a fast first estimate, then confirm the finalists with a full portfolio backtest on Portfolio Visualizer before committing new money.",
+      },
+    ],
+    faqs: [
+      { question: "What is the best free portfolio backtesting tool?", answer: "Portfolio Visualizer is the most widely used free portfolio backtesting tool, running a real historical simulation on a custom fund combination with data commonly reaching back to the 1970s for major U.S. asset classes. Its free tier covers standard backtesting, including CAGR (compound annual growth rate), maximum drawdown, and Sharpe ratio, for most individual investors' needs." },
+      { question: "Is my brokerage's portfolio tool the same as a backtester?", answer: "No. Fidelity Full View, Vanguard Portfolio Watch, Schwab Portfolio Checkup, and Questrade's platform analytics all track and diagnose the account you currently hold. None of the four runs a true historical backtest showing how a different, hypothetical allocation would have performed across past decades." },
+      { question: "What is a lazy portfolio?", answer: "A lazy portfolio is a simple, low-maintenance allocation built from just a few index funds, designed to need only occasional rebalancing rather than active management. Portfolio Charts and the Bogleheads wiki both document dozens of named lazy portfolios, the three-fund portfolio and the Golden Butterfly among them, with historical performance data for each." },
+      { question: "Does ModernWallet's portfolio calculator backtest against real market history?", answer: "No. ModernWallet's [portfolio calculator](/portfolio/) estimates expected return, volatility, and the Sharpe ratio using long-run historical averages as model assumptions, not a backtest of a specific allocation against actual past returns. For a true historical backtest, Portfolio Visualizer or Portfolio Charts are the tools built for that job." },
+      { question: "How far back does portfolio backtesting data go?", answer: "It depends on the tool and the asset class. Portfolio Visualizer commonly offers data back to the 1970s for major U.S. stock and bond indices, letting you test an allocation through stagflation, the 2008 financial crisis, and the 2022 decline. International and alternative-asset data often starts later, so check the specific data range a tool offers for the assets in your own allocation before trusting a backtest that quietly starts mid-history." },
+    ],
+    relatedComparisons: [],
+    calculatorLinks: [
+      { label: "Portfolio Calculator", href: "/portfolio/" },
+      { label: "Portfolio Risk Calculator", href: "/portfolio/portfolio-risk-calculator/" },
+    ],
+  },
+
   ...BUSINESS_ROUNDUPS,
 ];
 
