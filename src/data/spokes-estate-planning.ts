@@ -265,7 +265,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       {
         question: "What deductions reduce a taxable estate on Form 706?",
         answer:
-          "The taxable estate is gross estate minus allowable deductions, not net worth. The marital deduction (IRC §2056) is unlimited for property passing to a surviving spouse who is a US citizen. The charitable deduction (IRC §2055) removes charitable bequests dollar-for-dollar. Administration expenses — executor and attorney fees, court costs, and the decedent's enforceable debts — are deductible under IRC §2053. Together these deductions are why a Form 706 taxable estate often runs well below gross asset value, even before the $15M exemption is applied.",
+          "The taxable estate is gross estate minus allowable deductions, not net worth. The marital deduction (IRC §2056) is unlimited for property passing to a surviving spouse who is a US citizen. The charitable deduction (IRC §2055) removes charitable bequests dollar-for-dollar. Administration expenses — executor and attorney fees, court costs, and the decedent's enforceable debts — are deductible under IRC §2053. Together these deductions are why a Form 706 taxable estate often runs well below gross asset value, even before the $15M exemption is applied. That unlimited marital deduction doesn't apply when the surviving spouse isn't a US citizen — see [US estate tax for non-citizens](/estate-planning/us-estate-tax-for-non-citizens/) for the $60,000 exemption a nonresident alien gets instead.",
       },
       {
         question: "What is the penalty for filing Form 706 late?",

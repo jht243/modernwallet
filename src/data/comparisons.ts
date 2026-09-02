@@ -3474,7 +3474,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Which Loan Should You Choose?",
         content:
-          "Choose a secured loan when you need a large sum, want the lowest rate, or have limited credit and need easier approval. It is the standard path for homes and cars.\n\nChoose an unsecured loan when the amount is modest, you want no asset exposed, or you value speed and simplicity. Strong credit makes an unsecured loan far more affordable.\n\nAlways read the default terms before signing. Know exactly what the lender can take and how fast. If you are financing a vehicle, an [auto loan calculator](/auto-loan/) shows the true monthly cost. For borrowers rebuilding credit, a secured option often opens the door that an unsecured lender keeps shut.",
+          "Choose a secured loan when you need a large sum, want the lowest rate, or have limited credit and need easier approval. It is the standard path for homes and cars.\n\nChoose an unsecured loan when the amount is modest, you want no asset exposed, or you value speed and simplicity. Strong credit makes an unsecured loan far more affordable.\n\nAlways read the default terms before signing. Know exactly what the lender can take and how fast. If you are financing a vehicle, an [auto loan calculator](/auto-loan/) shows the true monthly cost, and our [personal loan vs auto loan comparison](/compare/personal-loan-vs-auto-loan/) works through exactly when the unsecured option is worth the higher rate. For borrowers rebuilding credit, a secured option often opens the door that an unsecured lender keeps shut.",
       },
     ],
     faqs: [

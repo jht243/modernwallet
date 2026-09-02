@@ -299,7 +299,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       {
         question: "How does the loan term change my total interest?",
         answer:
-          "A longer term lowers your monthly payment but raises your total interest. A $30,000 loan at 7.5% costs $6,068 in interest over 60 months, but $7,347 over 72 months. That longer term saves about $82 per month yet costs $1,278 more overall.",
+          "A longer term lowers your monthly payment but raises your total interest. A $30,000 loan at 7.5% costs $6,068 in interest over 60 months, but $7,347 over 72 months. That longer term saves about $82 per month yet costs $1,278 more overall. Our guide to [how long a car loan should be](/guides/how-long-should-a-car-loan-be/) works through the full 36- to 84-month comparison.",
       },
       {
         question: "What is the difference between APR and interest rate?",
@@ -356,10 +356,10 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       "The calculator above starts with the monthly payment you choose, not a car price. It adds your down payment and uses your APR and loan term to find the largest loan that fits that payment. Then it shows the top car price within reach.\n\nA popular rule of thumb is the 20/4/10 rule: put 20% down, finance for no more than 4 years, and keep total vehicle costs at or below 10% of your gross income. Treat it as a guideline, not a hard limit. The CFPB also stresses adding insurance, taxes, registration, fuel, and maintenance on top of your loan payment. Once you settle on a price, see the [auto loan interest calculator](/auto-loan/interest-calculator/) for the true cost of borrowing, or the [auto loan payoff calculator](/auto-loan/payoff-calculator/) to plan an early payoff.",
     commonMistakes: [
       "Budgeting only for the loan payment. Insurance, fuel, registration, taxes, and maintenance stack on top and can rival the payment itself.",
-      "Stretching the loan term to 72 or 84 months to lower the payment. A longer term lets you afford a pricier car but costs far more interest.",
+      "Stretching the loan term to 72 or 84 months to lower the payment. A longer term lets you afford a pricier car but costs far more interest — see [how long a car loan should be](/guides/how-long-should-a-car-loan-be/) for the exact interest gap at each term.",
       "Confusing the financed sticker price with your true budget. The price the calculator shows does not include ongoing ownership costs.",
       "Skipping a down payment. A small or zero down payment raises the loan amount and the risk of owing more than the car is worth.",
-      "Using an optimistic APR. Your real rate depends on your credit, so confirm offers before trusting the affordability estimate.",
+      "Using an optimistic APR. Your real rate depends on your credit, so confirm offers before trusting the affordability estimate. A manufacturer's advertised 0% APR deal is real for some buyers, but it usually requires top-tier credit and may force you to skip a cash rebate — see our [0% APR car loan guide](/guides/0-percent-apr-car-loan-explained/) before assuming it applies to you.",
     ],
     workedExample:
       "Say your monthly payment budget is $450, you have $3,000 to put down, no trade-in, a 7.5% APR, and a 60-month loan. The calculator above estimates a max car price of about $25,457, made up of your $3,000 down payment plus a loan of about $22,457. Over the full 60 months you would pay about $4,543 in interest, and your total of payments would be $27,000. That interest is the real cost of borrowing, and a longer term would push it higher.",
@@ -369,7 +369,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       { question: "Does the financed price include all the costs of owning a car?", answer: "No. The car price you can finance is only part of the picture. The CFPB notes that taxes, registration, insurance, fuel, and maintenance add to your true cost of ownership. Budget for these on top of your loan payment so the car stays affordable." },
       { question: "Does a longer loan term let me afford more car?", answer: "Yes, but it costs you. A longer term lowers the monthly payment, so you can finance a pricier car for the same budget. However, you pay far more interest over time, and the CFPB warns that long loans raise the risk of owing more than the car is worth. Compare terms with our [auto loan calculator](/auto-loan/)." },
       { question: "How big a down payment should I make?", answer: "A larger down payment lowers your loan amount, your monthly payment, and your total interest. The CFPB lists a down payment and a trade-in as factors that reduce how much you need to borrow. The 20/4/10 rule of thumb suggests aiming for about 20% down." },
-      { question: "How long should a car loan be? Is 72 or 84 months too long?", answer: "The 20/4/10 rule points to 48 months (4 years) or less. A 72- or 84-month loan isn't automatically a mistake, but the CFPB warns that longer terms raise the odds of owing more than the car is worth (negative equity) for years, since the car depreciates faster than an 84-month loan pays it down. If a longer term is the only way to fit a car into your budget, that's usually a sign to look at a less expensive car instead of a longer loan." },
+      { question: "How long should a car loan be? Is 72 or 84 months too long?", answer: "The 20/4/10 rule points to 48 months (4 years) or less. A 72- or 84-month loan isn't automatically a mistake, but the CFPB warns that longer terms raise the odds of owing more than the car is worth (negative equity) for years, since the car depreciates faster than an 84-month loan pays it down. If a longer term is the only way to fit a car into your budget, that's usually a sign to look at a less expensive car instead of a longer loan. See our full breakdown of [how long a car loan should be](/guides/how-long-should-a-car-loan-be/) for the interest cost at each common term." },
     ],
     sources: [
       { label: "CFPB — How much can I afford to borrow for a car or auto loan?", url: "https://www.consumerfinance.gov/ask-cfpb/how-much-can-i-afford-to-borrow-for-a-car-or-auto-loan-en-751/" },
