@@ -6320,6 +6320,266 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Best Student Loans for Bad Credit or No Credit ───────────────────────
+  // competitor-monitor pass 2026-09-02. register: operator · medium: text → text · page type: review (1500-word floor).
+  {
+    slug: "best-student-loans-bad-credit",
+    title: "Best Student Loans for Bad Credit of 2026",
+    metaDescription:
+      "Compare the best student loans for bad or no credit in 2026: federal loans with no credit check, plus 6 private lenders that skip the cosigner.",
+    targetKeyword: "best student loans for bad credit",
+    category: "student loans",
+    angle: "best",
+    h1: "Best Student Loans for Bad Credit or No Credit of 2026",
+    intro:
+      "The best student loan for bad or no credit is a federal Direct Loan. In the guides we publish here, we rank federal aid ahead of any private lender every time, since the government option almost always carries better protections and a lower fixed rate. Most federal loans also skip the credit check entirely, which is the biggest reason to try them first.\n\nOnce you've used up every dollar of federal aid, the private market splits into two lanes. A handful of lenders skip the credit check and the cosigner altogether, judging you instead on your school, your major, your GPA (grade point average), or your projected income after graduation. Everyone else still wants a cosigner with strong credit. That route is faster and cheaper if one is available to you.\n\nWe evaluated one federal loan program and six private lenders on five criteria. Those criteria are whether a credit check happens at all, whether a cosigner is required, the published APR (annual percentage rate) range, the loan's repayment flexibility while you're still in school, and whether on-time payments get reported to build your credit file. A lender that hides its rate behind a phone call, or that quietly excludes most applicants, lost points.",
+    rankingCriteria:
+      "Credit-check policy and cosigner requirement carried the most weight, since those two factors decide whether you can even apply. We sorted every option into one of three groups: no credit check at all, no cosigner but still a credit pull of some kind, and outcomes-based underwriting that looks at your school and academic record instead of a credit file.\n\nWe also weighed published APR ranges against loan limits, repayment flexibility (can you pay interest while in school, or does it capitalize until you graduate), and whether the lender reports in-school payments to the credit bureaus. A lender that requires an application before it will show you a rate, or that doesn't say plainly who it serves, scored lower even when its headline number looked competitive.",
+    options: [
+      {
+        name: "Federal Direct Subsidized and Unsubsidized Loans",
+        bestFor: "Any undergraduate or graduate student who hasn't yet maxed out federal aid",
+        description:
+          "The U.S. Department of Education's Direct Subsidized and Direct Unsubsidized Loans, through [Federal Student Aid](https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized), require no credit check for either loan type. Eligibility runs on your FAFSA (Free Application for Federal Student Aid), your enrollment status, and, for subsidized loans, demonstrated financial need. A damaged credit history and no credit history qualify for the same loan. The terms are identical either way.\n\nFor loans first disbursed between July 1, 2026 and June 30, 2027, the fixed rate is 6.52% for undergraduate Direct Loans and 8.07% for graduate Direct Unsubsidized Loans, per the Department of Education's [interest rate notice](https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027). Both carry a 1.057% origination fee, deducted before the money reaches your school, so a $10,000 loan disburses about $9,894 while you still owe the full $10,000. Annual borrowing caps run from $5,500 for a dependent freshman up to $20,500 a year for graduate students, with a $57,500 lifetime cap for independent undergraduates and a combined $257,500 lifetime cap across all federal loan types.",
+        strengths: [
+          "No credit check for either loan type, so a thin or damaged credit file never disqualifies you",
+          "Fixed rate for the life of the loan, set once a year rather than by your credit profile",
+          "Access to income-driven repayment, deferment, and forbearance that no private lender matches on the same terms",
+          "Subsidized loans don't accrue interest while you're enrolled at least half-time",
+        ],
+        limitations: [
+          "Annual and lifetime borrowing limits rarely cover the full cost of a four-year degree on their own",
+          "Graduate Unsubsidized Loans charge a full percentage point more than undergraduate loans",
+          "The origination fee is deducted up front, so you receive slightly less than you actually borrow",
+        ],
+        pricing:
+          "6.52% fixed APR for undergraduate Direct Loans and 8.07% for graduate Direct Unsubsidized Loans (loans first disbursed July 1, 2026 through June 30, 2027), plus a 1.057% origination fee. Confirm the current rate and fee at [studentaid.gov](https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized) before you borrow, since both reset every July.",
+      },
+      {
+        name: "Direct PLUS Loan with an Endorser",
+        bestFor: "Graduate students or parents who've hit the Direct Unsubsidized limit and were denied for adverse credit history",
+        description:
+          "A [Direct PLUS Loan](https://studentaid.gov/understand-aid/types/loans/plus) is the only federal loan that actually checks your credit, though not the way a private lender does. The Department of Education looks for an adverse credit history in roughly the past two years: a bankruptcy discharge, a foreclosure, a repossession, a wage garnishment, a tax lien, or one or more debts totaling more than $2,085 that are 90 or more days delinquent, in collection, or charged off. Your three-digit score never enters into it.\n\nIf you have one of those marks, [the loan is denied but not permanently](https://studentaid.gov/articles/plus-loans-denied-adverse-credit/). You can add an endorser, which is Federal Student Aid's term for a cosigner, or document extenuating circumstances with your loan servicer and reapply. Graduate and professional students can borrow up to their full cost of attendance minus other aid. Parents can do the same for a dependent undergraduate.",
+        strengths: [
+          "An endorser only has to pass the same adverse-credit check, a lighter bar than a full income or DTI (debt-to-income) underwrite",
+          "Covers the gap between Direct Unsubsidized limits and your actual cost of attendance",
+          "Comes with the same federal deferment and discharge protections as other Direct Loans",
+        ],
+        limitations: [
+          "9.07% fixed rate runs well above undergraduate Direct Loan pricing",
+          "4.228% origination fee is roughly four times the Direct Loan fee",
+          "An endorser is legally on the hook for the full balance if you stop paying",
+        ],
+        pricing:
+          "9.07% fixed APR for loans first disbursed July 1, 2026 through June 30, 2027, plus a 4.228% origination fee. Review your specific denial reason and endorser requirements at [studentaid.gov's PLUS Loan guidance](https://studentaid.gov/articles/plus-loans-denied-adverse-credit/).",
+      },
+      {
+        name: "Ascent Non-Cosigned Outcomes-Based Loan",
+        bestFor: "Juniors and seniors with little or no credit history who don't have a cosigner available",
+        description:
+          "[Ascent](https://www.ascentfunding.com/college-loans/no-cosigner/) runs two no-cosigner tracks. Its non-cosigned credit-based loan still wants two-plus years of credit history and a qualifying score, which defeats the purpose for most bad-credit borrowers. The one that actually fits a bad-credit borrower is Ascent's non-cosigned outcomes-based loan, open to full-time juniors and seniors, or students enrolled at least half-time within nine months of graduating, who are meeting their school's Satisfactory Academic Performance standard with a 3.0-plus GPA.\n\nApplicants with less than two years of credit history aren't tested against income or debt-to-income requirements at all. Ascent evaluates school, program, major, and GPA instead. The loan tops out at $20,000 a year with a $200,000 aggregate cap shared across all your Ascent loans, and it comes with only one repayment option before graduation: fully deferred, with payments starting up to nine months after you leave school.",
+        strengths: [
+          "No credit history and no cosigner required for eligible juniors and seniors",
+          "A 1% cash-back reward for eligible graduates, up to a $500 aggregate limit",
+          "Checking your eligibility uses a soft pull that doesn't affect your credit score",
+        ],
+        limitations: [
+          "Limited to juniors, seniors, and near-graduates, so freshmen and sophomores must look elsewhere",
+          "Deferred repayment is the only option, so interest capitalizes onto your balance before your first payment",
+          "Ascent doesn't publish a specific APR range for this product, so you have to check your own rate to see one",
+        ],
+        pricing:
+          "Ascent advertises rates starting from 1.94% APR site-wide, but that headline rate requires a cosigner, the shortest term, and its most creditworthy applicants, none of which apply to the outcomes-based track. Check your actual rate at [ascentfunding.com](https://www.ascentfunding.com/college-loans/no-cosigner/) before you commit to anything.",
+      },
+      {
+        name: "Funding U",
+        bestFor: "Undergraduates with no credit file who want a lender that never asks for a cosigner",
+        description:
+          "[Funding U](https://www.funding-u.com/no-cosigner-student-loans/) built its underwriting model around students who don't have a cosigner and don't have a credit history worth evaluating. Funding U says plainly that it will not accept a cosigner under any circumstance, even a willing one, and instead scores your GPA, your major, your school, and your projected earnings after graduation. Checking your eligibility uses a soft pull with no impact to your credit score.\n\nFor the 2025-2026 school year, Funding U's own site lists fixed rates from 8.49% to 13.99% APR, with an optional 0.5-point discount for automatic payments. In-school payments are required but reduced, either a flat $20 a month or an interest-only amount, and Funding U reports those payments to the credit bureaus, which is one of the few ways a bad-credit or no-credit borrower can start building a credit file while still enrolled.",
+        strengths: [
+          "Never requires or accepts a cosigner, at any point in the application",
+          "Reports in-school payments to credit bureaus, so on-time payments start building your credit history early",
+          "No minimum FICO score, and a soft pull checks eligibility without touching your credit score",
+        ],
+        limitations: [
+          "The lowest 8.49% rate is reserved for upperclassmen with strong academic records, a bar most typical applicants won't clear",
+          "Only available for undergraduates at eligible non-profit four-year schools",
+          "Requires a modest in-school payment, so you can't fully defer the way an outcomes-based loan allows",
+        ],
+        pricing:
+          "8.49% to 13.99% fixed APR for the 2025-2026 school year, with a 0.5% autopay discount. Rates reset each school year, so confirm the current range at [funding-u.com](https://www.funding-u.com/no-cosigner-student-loans/).",
+      },
+      {
+        name: "MPOWER Financing",
+        bestFor: "International students and DACA recipients with no U.S. credit file, once new applications reopen",
+        description:
+          "[MPOWER Financing](https://www.mpowerfinancing.com/) lends to international students from more than 150 countries attending eligible U.S. and Canadian schools, plus DACA recipients, all without a cosigner or collateral. Its underwriting leans on your school, program, and future earning potential rather than a credit history most international borrowers simply don't have in the U.S. yet.\n\nAs of this writing, MPOWER's own site says it has reached its funding capacity and is not accepting new loan applications for 2026, directing interested borrowers to a waitlist instead. That status can change, so treat MPOWER as a lender to watch rather than one to count on for an upcoming semester, and check its site directly before you build a financing plan around it.",
+        strengths: [
+          "No cosigner or collateral required, built specifically for borrowers without U.S. credit history",
+          "Loan amounts run from $2,001 up to $100,000",
+          "A 0.25% discount is available for automatic payments",
+        ],
+        limitations: [
+          "Not currently accepting new applications as of this writing, since funding capacity has been reached for 2026",
+          "Only covers a defined list of eligible schools and programs, a narrower list than the broader college market",
+          "Rates start at 9.99% (10.89% APR), higher than Funding U's or Ascent's range",
+        ],
+        pricing:
+          "Rates start at 9.99% (10.89% APR) with a 0.25% autopay discount, for loans between $2,001 and $100,000. MPOWER's [own site](https://www.mpowerfinancing.com/) has the current application status and waitlist.",
+      },
+      {
+        name: "Edly",
+        bestFor: "Students who want their payment tied to their income instead of a fixed bill",
+        description:
+          "[Edly](https://edly.com/student-loans) issues its loans through TAB Bank and offers a dedicated no-cosigner track: Income-Based Repayment (IBR) loans where your monthly payment is calculated as a percentage of what you actually earn after school, rather than a fixed dollar amount. Edly's own site confirms no hard credit pull to prequalify and no cosigner required on that track, available at more than 1,500 supported schools.\n\nIf your income drops below $30,000 a year, or you lose your job, Edly lets you apply for forbearance instead of defaulting. In-school payments run as low as $10 a month. The trade-off is that a payment tied to income means you can't compute your total cost in advance the way you can with a fixed-rate loan. It depends entirely on what you end up earning.",
+        strengths: [
+          "No hard credit pull to prequalify, and no cosigner required on the IBR No Cosigner track",
+          "Payments adjust to your actual income and pause below a $30,000 annual income threshold",
+          "In-school payments as low as $10 a month keep the balance from growing too fast before graduation",
+        ],
+        limitations: [
+          "Edly doesn't publish a fixed APR range for the no-cosigner track, so your real cost is hard to compare upfront",
+          "Only available at supported schools, a limited list rather than every college in the country",
+          "Income-based payments mean a strong post-graduation salary can end up costing more than a fixed-rate loan would have",
+        ],
+        pricing:
+          "Edly doesn't post a standard rate card for its no-cosigner IBR loan. Pricing is quoted per applicant after you check your terms at [edly.com](https://edly.com/student-loans), with no hard credit pull required to see an offer.",
+      },
+      {
+        name: "Prodigy Finance",
+        bestFor: "International students starting a master's degree abroad with no cosigner and no collateral",
+        description:
+          "[Prodigy Finance](https://prodigyfinance.com/student-loans/) finances master's degrees for international students at supported schools, using a future-earnings model instead of a credit check or a cosigner. You apply, get a non-binding provisional offer within days, and pay only a $500 processing fee once your loan is confirmed.\n\nProdigy's own site advertises master's loans starting from 10.74% interest, with a representative example of 13.26% APR on a $40,000 loan repaid over 180 months, once a 4.2% administration fee is added to the balance at disbursement. That admin fee is financed into the loan itself, so you don't pay it out of pocket up front, but it does mean you're paying interest on the fee for the life of the loan.",
+        strengths: [
+          "No cosigner or collateral required for eligible international master's students",
+          "A non-binding offer arrives before you've accepted admission, so you can plan financing early",
+          "Only one upfront out-of-pocket cost, a $500 processing fee, since the admin fee is rolled into the loan",
+        ],
+        limitations: [
+          "Only master's and select professional programs qualify. Undergraduate programs aren't eligible.",
+          "Only available at Prodigy's supported schools, a defined list rather than every graduate program",
+          "The 4.2% administration fee financed into the loan adds real interest cost over 180 months",
+        ],
+        pricing:
+          "Rates start from 10.74% interest, with a representative example of 13.26% APR on a $40,000 loan over 180 months, per [Prodigy Finance's own rate example](https://prodigyfinance.com/student-loans/). A $500 processing fee is due before your loan is finalized.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Best For", "Credit Check", "Cosigner", "Rate", "Standout Feature"],
+      rows: [
+        { name: "Federal Direct Subsidized and Unsubsidized Loans", values: ["Undergrad and grad borrowers, first", "None", "Not required", "6.52% / 8.07% fixed", "No credit check, ever"] },
+        { name: "Direct PLUS Loan with an Endorser", values: ["Denied for adverse credit history", "Adverse-history only", "Endorser if denied", "9.07% fixed", "Covers full cost of attendance"] },
+        { name: "Ascent Non-Cosigned Outcomes-Based Loan", values: ["Juniors/seniors, no credit history", "Not required", "Never accepted", "Check your rate", "$500 aggregate cash-back"] },
+        { name: "Funding U", values: ["Undergrads with no cosigner", "Soft pull only", "Never accepted", "8.49% to 13.99%", "Reports payments to build credit"] },
+        { name: "MPOWER Financing", values: ["International and DACA students", "Not required", "Not required", "From 9.99%", "Paused for new loans in 2026"] },
+        { name: "Edly", values: ["Income-based payments", "No hard pull to prequalify", "Not required (IBR track)", "Check your terms", "Payments pause under $30K income"] },
+        { name: "Prodigy Finance", values: ["International master's students", "Not required", "Not required", "From 10.74%", "$500 processing fee only"] },
+      ],
+    },
+    verdict:
+      "Start with federal Direct Loans first. Look at a private lender only after that. File the FAFSA, take every dollar of subsidized and unsubsidized loan you qualify for, and shop private options only for the gap that's left. If you're a graduate student or a parent denied a Direct PLUS Loan for adverse credit, adding an endorser is almost always cheaper than walking away from federal borrowing entirely.\n\nFor the private gap, match the lender to your situation instead of chasing the lowest headline rate. Funding U and Ascent's outcomes-based loan both fit a U.S. undergraduate with no credit file and no cosigner, though Funding U's published rate range makes it easier to compare against a federal loan before you apply. MPOWER Financing and Prodigy Finance are built for international students with no U.S. credit history. Check MPOWER's application status first, since it's currently paused. Edly is worth a look if a fixed payment feels risky and you'd rather have your bill shrink in a lean year.\n\nNone of these loans are for you if a parent, relative, or other adult with strong credit is willing to cosign. A cosigned private loan routinely prices several points lower, because the lender is underwriting two credit files instead of a school transcript. Get quotes from a cosigned lender first. Compare the APR directly against Funding U's published range before you rule that option out. Our answer here would also change if MPOWER lifts its funding pause, if Ascent publishes a firm rate range for its outcomes-based loan, or if federal loan limits shift again, since any of those would reshuffle where the best deal actually sits.",
+    sections: [
+      {
+        heading: "How to Compare Student Loans for Bad Credit",
+        content:
+          "Start by sorting every offer into one of three buckets: no credit check at all, no cosigner but still a credit pull of some kind, and outcomes-based underwriting that skips credit and looks at your school and academic record instead. Only federal Direct Loans sit in the first bucket. Funding U, Ascent's outcomes-based loan, MPOWER, Edly, and Prodigy Finance sit in the second or third, since each one still reviews something about you, even when that something isn't a credit score.\n\nOnce you know which bucket a lender is in, compare the rate range, the loan limit, and what happens to interest while you're in school. A loan that fully defers payments until after graduation feels easier month to month, but interest capitalizes onto your balance the whole time you're not paying it down, which raises your real cost more than the sticker rate suggests. A loan with even a small in-school payment, like Funding U's $20 minimum, keeps that growth in check.",
+      },
+      {
+        heading: "No Credit and Bad Credit Aren't the Same Application",
+        content:
+          "No credit means your file is essentially empty. There's nothing bad in it, there's just nothing there yet, which is normal for an 18-year-old heading to college straight from high school. Bad credit means there's an actual history of late payments, collections, or worse. Lenders treat the two differently, and mixing them up costs you options.\n\nA thin-or-no-file borrower is exactly who Funding U, Ascent's outcomes-based loan, and Direct Loans are built for, since none of them dock you for having nothing on file. A borrower with a real delinquency or default in their history has a narrower path: federal Direct Loans still don't care, but most private no-cosigner lenders will factor that history in even when they don't require a hard credit-score minimum, because they're still assessing repayment risk some other way.",
+      },
+      {
+        heading: "What Bad-Credit Student Loan Rates Cost You",
+        content:
+          "The gap between a federal rate and a private no-cosigner rate is bigger than it looks on paper. Borrow $10,000 at the federal undergraduate rate of 6.52% on a standard 10-year term and you'll pay about $3,638 in interest, for a total near $13,638. Borrow that same $10,000 at 13.99%, the top of Funding U's published range, and the interest bill jumps to about $8,625, for a total near $18,625, close to $5,000 more for identical principal.\n\nOrigination fees add a smaller but real cost on top. A federal Direct Loan's 1.057% fee means a $10,000 loan disburses about $9,894, though you still owe the full $10,000. Most private no-cosigner lenders don't charge a separate origination fee, which is one spot they can actually beat a federal loan, even while losing badly on the rate itself.",
+      },
+      {
+        heading: "The Real Tradeoff Behind No-Credit-Check Loans",
+        content:
+          "Skipping the credit check or the cosigner almost always means giving something else up, and the deferred-repayment structure is the part borrowers notice too late. Ascent's non-cosigned outcomes-based loan, for example, offers exactly one repayment option before graduation: fully deferred, with your first payment due up to nine months after you leave school. Every dollar of interest that accrues during that stretch capitalizes onto your balance, so repayment starts with you owing more than you actually borrowed.\n\nA credit-based loan with a cosigner usually lets you choose an interest-only or immediate-repayment option while you're still enrolled, which keeps the balance close to what you actually borrowed. That's the real price of a no-credit-check, no-cosigner loan: not just a higher rate, but often a repayment structure that lets interest grow for years before your first payment is even due.",
+      },
+      {
+        heading: "Can a Student Loan Build Your Credit",
+        content:
+          "Yes, but only if the lender reports your payments while you're still in school. Funding U reports in-school payments to the credit bureaus, so a borrower with no credit file starts building one with every on-time payment, months or years before graduation. Federal Direct Loans build your credit too, just later, since most borrowers don't start repayment until after they leave school.\n\nAscent's non-cosigned outcomes-based loan defers all payments until after graduation, so it doesn't hand you that early credit-building window the same way. If building credit during school matters to you as much as the rate does, that's a real point in Funding U's favor over an outcomes-based loan with a similar profile.",
+      },
+      {
+        heading: "How to Get a Student Loan with Bad Credit",
+        content:
+          "File the FAFSA first, every year, even when you're sure you'll be turned down for aid. It's the only way to unlock Direct Subsidized and Unsubsidized Loans, and most schools won't discuss other aid with you until it's on file. Next, take every dollar of federal loan you're offered before you look anywhere else, since nothing in the private market beats a federal rate for a borrower with bad or no credit.\n\nOnly after federal aid runs out should you check rates with two or three no-cosigner private lenders, using each one's soft-pull prequalification tool so you're not taking a hard inquiry just to compare numbers. Read the repayment terms as closely as the rate, since two lenders quoting a similar APR can differ enormously on whether interest capitalizes while you're in school.",
+      },
+      {
+        heading: "Can You Get a Student Loan with No Credit Check at All",
+        content:
+          "Yes. Direct Subsidized and Direct Unsubsidized Loans require no credit check of any kind, for any borrower, regardless of score or history. That's the one true no-credit-check guarantee among every option here. Even the private lenders that don't require a cosigner still evaluate something about you: your GPA, your school, your projected income, or a soft pull that doesn't touch your score until you actually accept an offer.\n\nThe only federal loan that checks credit is the Direct PLUS Loan, and even then it's checking for adverse history rather than pulling a score.",
+      },
+      {
+        heading: "Will Applying Hurt Your Credit Score",
+        content:
+          "Checking your eligibility with lenders like Funding U, Ascent, and Edly uses a soft pull that doesn't affect your score, so you can compare several offers before committing to any one of them. A hard inquiry typically only happens once you move forward with a full application.\n\nEven then, the damage is smaller than most borrowers assume. FICO's own scoring model treats every student-loan inquiry within a 45-day window as a single inquiry, according to [myFICO](https://www.myfico.com/credit-education/blog/rate-shop), specifically so rate shopping doesn't get punished the way opening several unrelated credit accounts would. Compare your options inside that window and the credit-score cost of shopping around stays close to zero.",
+      },
+      {
+        heading: "What to Do Next with Bad or No Credit",
+        content:
+          "Get a student loan for bad or no credit when federal aid alone doesn't cover your cost of attendance and no cosigner is available to you. Skip it, or at least delay it, if a parent or relative with strong credit is willing to cosign, since a cosigned private loan will almost always beat every no-cosigner rate above on price alone.\n\nRun the FAFSA first if you haven't already, then use our [student budget calculator](/budget/student-budget-calculator/) to see exactly how much of a monthly payment you can realistically absorb once repayment starts, before you sign for any of these loans.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What credit score do I need for a student loan?",
+        answer:
+          "You need no credit score at all for federal Direct Subsidized and Unsubsidized Loans, since neither one runs a credit check. Among the private no-cosigner lenders here, Funding U and Ascent's outcomes-based loan evaluate your GPA and school instead of a minimum FICO number. A cosigned private loan is different: cosigners with scores in the good range and above, generally 670 or higher on the standard [FICO scale](https://www.myfico.com/credit-education/credit-scores), get the strongest offers.",
+      },
+      {
+        question: "Can I get a student loan with no credit check?",
+        answer:
+          "Yes. Direct Subsidized and Direct Unsubsidized Loans never run a credit check, for undergraduate or graduate borrowers. Several private lenders, including Ascent's outcomes-based loan and MPOWER Financing, don't require established credit history either, though they still review other factors like your school, program, or future earning potential.",
+      },
+      {
+        question: "Can you be denied a student loan for bad credit?",
+        answer:
+          "Not for Direct Subsidized or Unsubsidized Loans. Those never check credit, so bad credit can't disqualify you there. A Direct PLUS Loan can be denied for adverse credit history, like a recent bankruptcy or a 90-day delinquency over $2,085, though adding an endorser or documenting extenuating circumstances can still get it approved. Private lenders can and do deny applicants, even ones marketed as bad-credit friendly, if you don't meet their non-credit criteria like GPA or enrollment status.",
+      },
+      {
+        question: "Does applying for a student loan hurt your credit score?",
+        answer:
+          "Filing the FAFSA never affects your credit score, and neither does checking your rate through most private lenders' prequalification tools, which use a soft pull. A hard inquiry only happens once you formally apply, and FICO groups multiple student-loan inquiries within a 45-day window into one, so comparing two or three lenders back to back costs you far less than it would for unrelated credit accounts.",
+      },
+      {
+        question: "Can a student loan help build my credit?",
+        answer:
+          "Yes, if the lender reports your payments while you're in school. Funding U reports in-school payments to the credit bureaus, so on-time payments start building your credit history before you graduate. Federal loans build credit too, generally once repayment begins after you leave school.",
+      },
+      {
+        question: "Should I take a private student loan with bad credit, or wait?",
+        answer:
+          "Exhaust federal aid first in every case. Nothing in the private no-cosigner market matches a federal Direct Loan's rate or protections for a bad-credit or no-credit borrower. Once federal aid is maxed out, a private no-cosigner loan makes sense to cover a genuine gap. It rarely makes sense to skip federal aid altogether in favor of a private loan, even one advertising a low headline rate.",
+      },
+      {
+        question: "What's the difference between a no-credit-check loan and a no-cosigner loan?",
+        answer:
+          "A no-credit-check loan, like a federal Direct Loan, never looks at your credit file at all. A no-cosigner loan, like Funding U or Ascent's outcomes-based option, doesn't require a second borrower, but the lender still reviews something about you, whether that's your GPA, your school, or a soft credit pull. The two terms get used interchangeably in marketing, but they describe different underwriting.",
+      },
+      {
+        question: "What if I already have bad credit and can't find a cosigner?",
+        answer:
+          "Start with federal Direct Loans, since neither your credit history nor a missing cosigner disqualifies you there. For any remaining gap, Funding U and Ascent's outcomes-based loan are built for exactly this situation, and MPOWER Financing or Prodigy Finance fit if you're an international student with no U.S. credit file. Compare each one's repayment structure as closely as its rate, since some defer all payments until after graduation, which lets interest grow before you make your first payment.",
+      },
+    ],
+    sources: [
+      { label: "Federal Student Aid: Direct Subsidized and Unsubsidized Loans", url: "https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized" },
+      { label: "Federal Student Aid: 2026-27 Direct Loan interest rates", url: "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027" },
+      { label: "Federal Student Aid: PLUS Loans denied for adverse credit", url: "https://studentaid.gov/articles/plus-loans-denied-adverse-credit/" },
+      { label: "CFPB: Choosing a student loan", url: "https://www.consumerfinance.gov/paying-for-college/choose-a-student-loan/" },
+      { label: "CFPB: Tips for student loan cosigners", url: "https://www.consumerfinance.gov/paying-for-college/repay-student-debt/student-loan-cosigners/" },
+      { label: "myFICO: How to rate shop and minimize the impact to your FICO Scores", url: "https://www.myfico.com/credit-education/blog/rate-shop" },
+    ],
+    calculatorLinks: [
+      { label: "Student Budget Calculator", href: "/budget/student-budget-calculator/" },
+    ],
+  },
+
   // ── Best Net Worth Tracking Tools ────────────────────────────────────────
   // keyword-pass 2026-08-26. register: operator · medium: text → text · page type: comparison (1500-word floor).
   {
