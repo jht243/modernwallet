@@ -1,6 +1,8 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-08-30 — keyword-gap-pass-auto shipped 3 new gap keywords + 12 already-shipped supporting keywords; 2 more were written but rolled back on a failed content audit (see bottom section)._
+> _Updated: 2026-09-02 — autocomplete-pass-auto mined 6 seeds (iul, auto loan, portfolio, elder care, estate planning, business loan payoff calculators), shipped 16 new pages + 6 asset specs, 18 metadata rewrites, 29 body updates. See `## 2026-09-02 autocomplete-pass — newly classified keywords` below for the full list._
+>
+> _Prior: 2026-08-30 — keyword-gap-pass-auto shipped 3 new gap keywords + 12 already-shipped supporting keywords; 2 more were written but rolled back on a failed content audit (see bottom section)._
 
 
 ## Autocomplete Discovery Log
