@@ -11208,6 +11208,83 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Monthly Budget Calculator", href: "/budget/monthly-budget-calculator/" },
     ],
   },
+
+  // -- keyword-gap-pass 2026-09-02: personal-loan-vs-auto-loan --
+  // register: operator · medium: text → text · page type: comparison (1500-word floor).
+  {
+    slug: "personal-loan-vs-auto-loan",
+    title: "Personal Loan vs Auto Loan for Buying a Car",
+    metaDescription:
+      "Personal loan vs auto loan compared with real payment math: why the auto loan's collateral usually wins, and when a personal loan is worth it instead.",
+    targetKeyword: "personal loan vs auto loan",
+    optionA: "Personal Loan",
+    optionB: "Auto Loan",
+    h1: "Personal Loan vs Auto Loan for Buying a Car",
+    intro:
+      "A personal loan is unsecured money you can spend on almost anything, while an auto loan is secured by the car itself and can only fund a vehicle purchase. What we see readers get wrong most often is treating the two as interchangeable ways to pay for a car, when the collateral behind an auto loan is the reason it almost always carries a lower rate than an unsecured personal loan for the exact same purchase.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Collateral", a: "None. Unsecured against your credit alone", b: "The vehicle itself secures the loan" },
+        { dimension: "What it can fund", a: "Anything, including a car a lender won't otherwise finance", b: "A vehicle purchase only" },
+        { dimension: "Typical APR range", a: "About 8.5% to 15% for 700+ credit, 15% to 25% for 640-699 credit", b: "About 6.8% average new, 11.5% average used (Experian)" },
+        { dimension: "How funds are disbursed", a: "Cash deposited into your account", b: "Paid directly to the dealer or seller" },
+        { dimension: "If you stop paying", a: "Collections, credit damage, possible lawsuit and judgment", b: "Repossession, then pursuit for any deficiency balance" },
+        { dimension: "Amount available", a: "Not tied to a vehicle's appraised value", b: "Typically capped near the car's value" },
+        { dimension: "Verdict", a: "Worth the higher rate only when the auto loan's restrictions rule it out", b: "The lower-cost default for a standard car purchase" },
+      ],
+    },
+    verdict:
+      "Pick the auto loan first for a standard car purchase from a dealer or a lender-eligible private sale, since the collateral lowers the rate and the savings run into hundreds or thousands of dollars over the life of the loan on a typical amount financed. Pick the personal loan only when the auto loan's own restrictions rule it out: a private-party purchase the seller cannot structure around a title-transfer process, a vehicle type or salvage title an auto lender will not finance, or a genuine need to keep the title lien-free from day one.\n\nThis verdict is not for a buyer who has already been denied an auto loan outright and has no lender-eligible alternative, since a personal loan may be the only realistic path to the purchase regardless of the rate gap. It would also change if a specific lender's personal loan rate, after fees, actually undercuts the auto loan rate a buyer's credit qualifies for, which happens occasionally for the strongest credit profiles and is worth checking rather than assuming away. Run both offers through our calculators side by side before signing either one.",
+    sections: [
+      {
+        heading: "How Each Loan Works",
+        content:
+          "An auto loan is secured debt: the lender places a lien on the vehicle's title, and if you stop paying, the lender can repossess the car to recover its money. That collateral lowers the lender's risk, which is the entire reason auto loan rates run below personal loan rates for a comparable borrower.\n\nA personal loan is unsecured debt. No asset backs it, so the lender's only recourse if you stop paying is collections activity, credit damage, and potentially a lawsuit for the balance, never repossession of a specific item. Because the lender is taking on more risk with nothing to reclaim, personal loan rates price that risk in from the start.\n\nUnderwriting reflects that same split. An auto lender weighs the vehicle's value alongside your credit, since the car itself backstops part of the risk. A personal loan lender weighs your credit score, income, and existing debt almost entirely on their own, with no asset to fall back on if those numbers turn out wrong.",
+      },
+      {
+        heading: "What Each One Costs",
+        content:
+          "[Experian's](https://www.experian.com/blogs/ask-experian/auto-loan-rates-financing/) own mid-2025 data put the average new-car auto loan APR at 6.8% and the average used-car APR at 11.5%. Personal loan rates run in a wider band above both: roughly 8.5% to 15% APR for borrowers with credit scores above 700, and 15% to 25% for fair-credit borrowers in the 640 to 699 range, consistent with the [Federal Reserve's Consumer Credit (G.19)](https://www.federalreserve.gov/releases/g19/current/) release, which tracks personal loan finance rates running consistently above both mortgage and auto-loan averages because no asset secures the debt.\n\nRun a $20,000 used-car purchase both ways over 60 months. At an 11.5% auto loan rate, the payment is $439.85 a month and total interest comes to $6,391.13. At a 13% personal loan rate, roughly the middle of the good-credit range, the payment is $455.06 and total interest reaches $7,303.69, about $913 more over the life of the loan for financing the identical car. Run your own numbers in our [auto loan calculator](/auto-loan/) and [personal loan calculator](/personal-loan/) side by side before assuming either rate applies to your specific credit profile.\n\nShopping both loan types also affects your credit differently while you compare. [myFICO](https://www.myfico.com/credit-education/whats-in-your-credit-score) notes that FICO scoring models generally treat multiple auto loan inquiries made within a short window, typically 14 to 45 days depending on the scoring version, as a single inquiry for scoring purposes, since the model assumes you are rate shopping one loan rather than opening several. Personal loan inquiries do not always receive that same rate-shopping treatment across every scoring model, so pulling several personal loan quotes in the same window can ding your score more than pulling several auto loan quotes does.",
+      },
+      {
+        heading: "What Each Loan Can Be Used For",
+        content:
+          "An auto loan can only fund a vehicle purchase, and the lender typically pays the dealer or seller directly rather than depositing cash into your account. Some lenders also restrict which vehicles qualify, ruling out very old cars, salvage titles, or private-party sales that do not meet their underwriting criteria.\n\nA personal loan deposits cash directly into your account, with no restriction on how you spend it. That flexibility is the entire appeal for a car purchase an auto lender will not finance, and it comes at the cost of the lower, purpose-specific rate an auto loan gets for financing exactly one kind of asset.",
+      },
+      {
+        heading: "What Happens If You Stop Paying",
+        content:
+          "Miss enough payments on an auto loan and the lender can repossess the car, sell it, and pursue you for any remaining deficiency balance if the sale does not cover what you owed. The vehicle itself is always at direct risk the moment payments stop.\n\nMiss enough payments on a personal loan and there is no specific asset to seize, but the consequences are not mild. The lender or a collections agency can pursue you for the full balance, report the default to the credit bureaus, and in many states obtain a court judgment that allows wage garnishment or a lien against other assets you own. Unsecured does not mean consequence-free. It means the consequence is not tied to one specific possession.",
+      },
+      {
+        heading: "Why an Auto Loan Usually Wins for Buying a Car",
+        content:
+          "For a straightforward car purchase, from a dealer or a private seller a lender is willing to finance, an auto loan almost always costs less than a personal loan for the same amount and term, because the lower rate from the collateral outweighs the flexibility a personal loan offers. The worked example above shows roughly $913 in extra interest choosing the unsecured option on a routine $20,000 purchase, money that buys nothing extra for the buyer.\n\nThat gap grows with the loan amount and shrinks with a shorter term, so run your own numbers rather than assuming the roughly $900 figure above applies to every purchase. Our [how long should a car loan be](/guides/how-long-should-a-car-loan-be/) guide covers how term length changes the total interest on either loan type.",
+      },
+      {
+        heading: "When a Personal Loan Makes Sense for a Car",
+        content:
+          "A personal loan fits a narrower set of cases where the auto loan's collateral requirement gets in the way rather than saving money. A private-party purchase from a seller who cannot wait for a title-transfer process an auto lender requires. An older vehicle, a salvage title, or another asset type an auto lender will not finance at all. A buyer who wants no lien on the title from day one, perhaps to sell or modify the vehicle freely without lender approval. And a purchase where the amount needed exceeds the vehicle's appraised value, since an auto loan is typically capped at what the car is actually worth, while a personal loan is not.\n\nNone of these cases are common for a typical car purchase, which is why the personal loan route usually costs more without buying the borrower anything beyond flexibility they may not actually need.\n\nA concrete example: a buyer purchasing a 15-year-old car directly from a private seller for $6,000 may find several auto lenders decline to finance a vehicle that old at all. A $6,000 personal loan at 15% APR over 36 months costs about $208 a month and roughly $1,488 in total interest, a real cost, but a workable one when no auto loan is available on that specific car in the first place.",
+      },
+    ],
+    faqs: [
+      { question: "Is a personal loan or auto loan better for buying a car?", answer: "An auto loan is almost always cheaper for a standard car purchase, because the lender's collateral, the car itself, lowers the rate compared to an unsecured personal loan. On a $20,000 used car over 60 months, an 11.5% auto loan costs about $913 less in total interest than a 13% personal loan for the same amount. A personal loan only wins when the auto loan's restrictions, like financeable vehicle type or title requirements, rule it out entirely." },
+      { question: "Can I use a personal loan to buy a car instead of an auto loan?", answer: "Yes. A personal loan deposits cash into your account with no restriction on how you spend it, so it can fund a car purchase an auto lender will not finance, such as certain private-party sales or older vehicles. It usually costs more in interest than an auto loan for the same amount, since it carries no collateral to lower the rate." },
+      { question: "What happens if I stop paying an auto loan versus a personal loan?", answer: "An auto lender can repossess the car and pursue you for any remaining balance after selling it. A personal loan lender cannot seize a specific asset, but can send the account to collections, report the default to the credit bureaus, and in many states pursue a court judgment for wage garnishment. Both paths damage your credit and can result in owing money after the fact." },
+      { question: "Why do personal loans have higher interest rates than auto loans?", answer: "Because no collateral backs a personal loan, the lender has nothing to reclaim if you stop paying, so the rate prices in that added risk from the start. An auto loan is secured by the vehicle itself, which lowers the lender's risk and, in turn, the rate. The Federal Reserve's own Consumer Credit data shows personal loan finance rates running consistently above auto-loan averages for this exact reason." },
+      { question: "Can I get a personal loan for a car with no down payment?", answer: "Often yes, since a personal loan is not tied to the vehicle's appraised value the way an auto loan typically is, and some lenders do not require one. Skipping a down payment increases the total amount financed and the total interest paid either way, so run the math on your specific loan amount before deciding the convenience is worth the added cost." },
+    ],
+    sources: [
+      { label: "Experian — Auto Loan Rates and Financing", url: "https://www.experian.com/blogs/ask-experian/auto-loan-rates-financing/" },
+      { label: "Federal Reserve — Consumer Credit (G.19)", url: "https://www.federalreserve.gov/releases/g19/current/" },
+      { label: "myFICO — What's in my FICO Scores?", url: "https://www.myfico.com/credit-education/whats-in-your-credit-score" },
+    ],
+    relatedComparisons: ["secured-vs-unsecured-loan"],
+    calculatorLinks: [
+      { label: "Auto Loan Calculator", href: "/auto-loan/" },
+      { label: "Personal Loan Calculator", href: "/personal-loan/" },
+    ],
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(
