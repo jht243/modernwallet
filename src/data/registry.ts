@@ -13,4 +13,5 @@
 // Competitor-monitor pass (2026-08-12): "credit-card-payoff".
 // Competitor-monitor pass (2026-08-17): "pto-cashout".
 // Mindmap pass (2026-08-30): "iul-calculator" — indexed universal life cash-value projection.
-export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator", "coast-fire", "business-loan-payoff", "personal-loan", "merchant-cash-advance", "invoice-factoring", "business-line-of-credit", "interest-per-day", "taxable-vs-tax-deferred", "credit-card-payoff", "pto-cashout", "iul-calculator"]);
+// Competitor-monitor pass (2026-09-02): "zakat" — nisab-aware zakat calculator.
+export const LIVE_IDS = new Set<string>(["auto-loan", "mortgage", "real-estate", "retirement", "investing", "portfolio", "net-worth", "budget", "tax-resolution", "estate-planning", "probate", "elder-care", "trump-account", "529-savings-calculator", "coast-fire", "business-loan-payoff", "personal-loan", "merchant-cash-advance", "invoice-factoring", "business-line-of-credit", "interest-per-day", "taxable-vs-tax-deferred", "credit-card-payoff", "pto-cashout", "iul-calculator", "zakat"]);
