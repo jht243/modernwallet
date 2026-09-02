@@ -378,4 +378,92 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     relatedSlugs: ["will-cost-calculator", "living-trust-cost-calculator"],
     // 50 state subpages authored in a follow-on session slice.
   },
+
+  // keyword-gap-pass 2026-09-02, batch D. register: operator · teeup-exempt: dense YMYL legal
+  // topic where a "we've done this a lot" tee-up would read as filler ahead of the exemption
+  // figures — the sourced facts carry the trust here, not first-person framing. medium: text →
+  // text · page type: explainer (1200-word floor). The embedded calculator above still runs the
+  // US-citizen $15M/$30M exemption; it does NOT model the $60,000 NRA exemption — the body is
+  // explicit about that gap and does the real NRA math in prose instead. Every figure below is
+  // hand-computed against the standard IRC §2001(c) graduated rate table (18%–40%, unchanged in
+  // structure for decades) and clearly labeled as an illustrative worked example.
+  {
+    calculator: "estate-planning",
+    slug: "us-estate-tax-for-non-citizens",
+    islandId: "estate-tax",
+    title: "US Estate Tax for Non-Citizens: The $60,000 Exemption",
+    metaDescription:
+      "Nonresident aliens get a $60,000 US estate tax exemption, not the $15M citizen exemption. See the US-situs asset rules and US-Canada treaty relief.",
+    targetKeyword: "US estate tax for non-citizens",
+    estimatedVolume: 320,
+    estimatedKD: 22,
+    h1: "US Estate Tax for Non-Citizens: The $60,000 Exemption",
+    intro:
+      "A nonresident alien, someone who is neither a US citizen nor a US resident, gets a US estate tax exemption of just $60,000 on US-situs assets, meaning property located in or connected to the United States. That is a small fraction of the $15,000,000 exemption a US citizen or resident receives, and the gap catches many Canadian retirees and snowbirds by surprise, since it applies even to a single Florida condo or a US brokerage account holding ordinary US stocks. The [Internal Revenue Service (IRS)](https://www.irs.gov/instructions/i706na) requires an estate representative to file Form 706-NA once a nonresident alien's US-situs assets exceed that $60,000 threshold. The US-Canada tax treaty can raise the effective exemption for a Canadian resident's estate through a mechanism covered below, but it does not eliminate the gap on its own. The [estate tax calculator](/estate-planning/estate-tax-calculator/) built into this hub still applies the $15,000,000 citizen exemption instead of the $60,000 NRA figure. It's the wrong tool for an NRA's real number, which the sections below work out instead.",
+    howItWorks:
+      "US-situs assets are the only assets counted in a nonresident alien's (NRA's) US taxable estate, and the situs rules often catch people off guard. US real estate counts, including a vacation condo or rental property. Tangible personal property physically located in the United States counts too, a car, a boat, art hanging in a US home. Stock in a US corporation counts as US-situs even if the shares sit in a Canadian brokerage account and were never physically in the United States, a rule that surprises many Canadian investors holding ordinary US blue-chip stocks through their home-country broker.\n\nSome common holdings are excluded. US bank deposit accounts not connected to a US trade or business are generally excluded from an NRA's US gross estate under Internal Revenue Code (IRC) §2105(b). Life insurance proceeds on the life of a nonresident alien are also excluded under IRC §2105(a), regardless of which insurer issued the policy. A US brokerage account holding US-company stock is the single most common trap, since many Canadian snowbirds don't realize simply owning shares of an ordinary US company through a US or Canadian brokerage pulls that value into their US taxable estate.\n\nThe $60,000 exemption works through a fixed $13,000 unified credit under IRC §2102(b)(1), an amount that has not been adjusted for inflation since 1988 and applies no matter how large a US citizen's own exemption grows. That credit shields the practical equivalent of the first $60,000 of US-situs assets from tax. The full US-situs gross estate is taxed using the same graduated rate table that applies to a US citizen's estate under IRC §2001(c), starting at 18% and reaching a top rate of 40% on US-situs assets above $1,000,000, before the $13,000 credit is subtracted from the tentative tax.\n\nA Canadian resident who owns a $700,000 Florida condo and nothing else in the United States has a $700,000 US-situs gross estate. Running that amount through the IRC §2001(c) rate table produces a tentative tax of $229,800. Subtracting the $13,000 unified credit leaves a US federal estate tax bill of $216,800, before any treaty relief. The identical condo owned by a US citizen would trigger no federal estate tax at all, since $700,000 sits far under the $15,000,000 citizen exemption.\n\nThe [United States-Canada Income Tax Convention](https://www.irs.gov/pub/irs-trty/canada.pdf), specifically Article XXIX B, lets a Canadian resident's estate claim a larger unified credit than the flat $60,000 exemption allows, calculated as a proportion of the full US citizen exemption based on how much of the worldwide estate sits in the United States. In broad terms, if half of a Canadian resident's worldwide estate is US-situs property, the treaty can prorate roughly half of the full $15,000,000 citizen-level credit to that estate instead of the bare $13,000 NRA credit, a meaningfully larger shield for anyone whose US property is a small slice of a larger worldwide estate. Article XXIX B also provides an additional marital credit when US-situs property passes to a surviving spouse.\n\nThe exact computation depends on the full worldwide estate value, which the treaty requires the estate to disclose even though only the US-situs portion gets taxed, and it is not something to work out without a cross-border estate attorney. Claiming the treaty benefit also requires filing Form 706-NA and attaching the treaty computation, not just checking a box. If you hold US property as a Canadian resident, treat this as a reason to call an attorney who handles cross-border estates specifically, not as a formula to run yourself.\n\nAn estate must file Form 706-NA, United States Estate (and Generation-Skipping Transfer) Tax Return, Estate of a Nonresident Not a Citizen of the United States, whenever the decedent's US-situs gross estate exceeds $60,000, even if the treaty ultimately reduces the tax owed to zero. The [IRS instructions for Form 706-NA](https://www.irs.gov/instructions/i706na) set the filing deadline at nine months after death, the same window that applies to a citizen's Form 706, with a six-month extension available on Form 4768.\n\nMissing the deadline exposes the estate to the same failure-to-file and failure-to-pay penalties that apply to a citizen's estate, plus interest accruing from the original due date. Because the US-situs asset rules and the treaty computation both take real time to work out, especially for an estate holding US brokerage stock alongside real estate, start gathering the US asset list well before the nine-month clock runs out rather than waiting for a final appraisal.\n\nThe [estate tax calculator](/estate-planning/estate-tax-calculator/) linked above and embedded on this page runs the math for a US citizen or resident, applying the $15,000,000 individual exemption and up to $30,000,000 for a married couple through portability. It does not model the $60,000 NRA exemption, the US-situs asset rules, or the treaty proration described above, since those are a different calculation entirely, not a variation on the citizen formula the tool already runs. Use the calculator above only to see what the identical US-situs value would owe a US citizen or resident, as a point of comparison. For an NRA's actual number, work through the $60,000 exemption and the graduated rate table above, or better, run the full picture past a cross-border estate attorney who can apply the treaty proration correctly for your specific worldwide estate value.\n\nThis entire calculation applies only to someone who is neither a US citizen nor a US resident for estate tax purposes, a status the IRS determines by domicile, meaning where you live with the intent to stay indefinitely, not by immigration status or how many days you spend in the country each year. A green card holder, or someone who has established US domicile even without a green card, is generally taxed under the citizen rules instead, with the full $15,000,000 exemption, not the $60,000 NRA figure.\n\nTwo changes would raise an NRA's effective exemption above the bare $60,000: qualifying for the US-Canada treaty proration described above, or restructuring US holdings before death, moving US brokerage stock into a non-US holding company, for example, so it's no longer US-situs property, though that kind of restructuring carries its own tax consequences and needs to happen well before death with professional guidance, not as a last-minute move. Selling US real estate outright removes it from the US-situs estate too, but triggers its own US capital gains exposure under the [Foreign Investment in Real Property Tax Act (FIRPTA)](https://www.irs.gov/individuals/international-taxpayers/firpta-withholding) withholding rules on the sale itself. Talk to a cross-border estate attorney before making any of these moves, since the timing and the paperwork both affect whether they reduce the final bill.",
+    commonMistakes: [
+      "Assuming the $15,000,000 citizen exemption applies just because you're a longtime snowbird. Only US citizens and US domiciliaries get that exemption. An NRA's exemption is $60,000 regardless of how many winters were spent in Florida.",
+      "Not realizing US-company stock is US-situs even when held through a Canadian brokerage account. A $400,000 US-stock position, purchased and held entirely from Canada, still counts as US-situs and erodes the $60,000 exemption just like a Florida condo does.",
+      "Skipping Form 706-NA because the treaty reduced the tax to zero. Filing is required once the gross US-situs estate exceeds $60,000, regardless of the final tax bill after treaty relief.",
+      "Running personal net worth through the citizen-focused estate tax calculator above and treating the output as an NRA's real number. It shows only the citizen-exemption comparison, not an NRA's actual exposure.",
+      "Waiting until near death to restructure US holdings. A move into a non-US holding company or a sale of US real estate both carry their own tax consequences and need lead time and professional structuring, not a last-minute scramble.",
+    ],
+    workedExample:
+      "Take a Canadian resident who owns a $700,000 Florida condo and a $150,000 US brokerage account holding shares of US companies, and nothing else in the United States. The US-situs gross estate is $850,000: the real estate counts under the situs rules, and the US-company stock counts too, even though the brokerage account is Canadian. Running $850,000 through the IRC §2001(c) graduated rate table produces a tentative tax of $155,800 (the tax on the first $500,000) plus 37% of the remaining $350,000 ($129,500), for $285,300 total. Subtracting the $13,000 unified credit leaves $272,300 in US federal estate tax, before any US-Canada treaty relief is applied. An identical $850,000 in US assets owned by a US citizen would owe $0 federal estate tax, since it sits far under the $15,000,000 citizen exemption. The treaty computation described above could meaningfully lower that $272,300 figure depending on the estate's full worldwide value, which is exactly the calculation a cross-border estate attorney should run before the estate settles, not after.",
+    faqs: [
+      {
+        question: "What is the US estate tax exemption for non-citizens?",
+        answer:
+          "A nonresident alien's US estate tax exemption is $60,000, delivered through a fixed $13,000 unified credit under IRC §2102(b)(1) that has not been adjusted for inflation since 1988. That is a fraction of the $15,000,000 exemption a US citizen or resident receives, and it applies only to US-situs assets, property located in or connected to the United States.",
+      },
+      {
+        question: "What counts as a US-situs asset for a nonresident alien?",
+        answer:
+          "US real estate, tangible personal property physically located in the United States, and stock in a US corporation, even if held through a foreign brokerage account, all count as US-situs assets. US bank deposit accounts not connected to a US trade or business, and life insurance proceeds on the life of a nonresident alien, are generally excluded under IRC §2105.",
+      },
+      {
+        question: "Does the US-Canada tax treaty increase the $60,000 exemption?",
+        answer:
+          "Yes, potentially. Article XXIX B of the United States-Canada Income Tax Convention lets a Canadian resident's estate claim a larger, prorated unified credit based on how much of the worldwide estate sits in the United States, plus an additional marital credit for property passing to a surviving spouse. The exact computation depends on the full worldwide estate value and needs a cross-border estate attorney, not a DIY calculation.",
+      },
+      {
+        question: "Do I need to file Form 706-NA if my US assets are under $60,000?",
+        answer:
+          "No. Form 706-NA is required only once the US-situs gross estate exceeds $60,000. Below that threshold, no return is required, though keeping documentation of asset values is still smart in case of an IRS inquiry.",
+      },
+      {
+        question: "What's the difference between an NRA's exemption and a green card holder's exemption?",
+        answer:
+          "A green card holder is generally taxed under the citizen rules, with the full $15,000,000 exemption, because US estate tax residency turns on domicile, where you live with the intent to stay indefinitely, not on immigration status alone. A nonresident alien who has never established US domicile gets the $60,000 exemption regardless of how much time is spent in the country each year.",
+      },
+      {
+        question: "Can a Canadian avoid this tax by owning US property through a corporation?",
+        answer:
+          "Sometimes, since shares of a non-US holding company generally aren't US-situs property themselves, but this needs to be structured correctly and well in advance, and it carries real tradeoffs, including losing certain US tax benefits and creating its own compliance requirements. It is a strategy to discuss with a cross-border estate attorney before buying US property, not a fix to apply after the fact.",
+      },
+      {
+        question: "How much does US estate tax cost a Canadian owning a $500,000 Florida condo?",
+        answer:
+          "Running $500,000 through the IRC §2001(c) graduated rate table produces a tentative tax of $155,800. Subtracting the $13,000 unified credit leaves $142,800 in US federal estate tax before any treaty relief, a bill that would be $0 for a US citizen owning the identical condo, since $500,000 sits far under the $15,000,000 citizen exemption.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Instructions for Form 706-NA", url: "https://www.irs.gov/instructions/i706na" },
+      { label: "IRS — Some Nonresidents With US Assets Must File Estate Tax Returns", url: "https://www.irs.gov/individuals/international-taxpayers/some-nonresidents-with-us-assets-must-file-estate-tax-returns" },
+      { label: "IRS — United States-Canada Income Tax Convention", url: "https://www.irs.gov/pub/irs-trty/canada.pdf" },
+      { label: "IRC §2102 — Credits Against Tax", url: "https://www.law.cornell.edu/uscode/text/26/2102" },
+      { label: "IRC §2105 — Property Without the United States", url: "https://www.law.cornell.edu/uscode/text/26/2105" },
+      { label: "IRS — FIRPTA Withholding", url: "https://www.irs.gov/individuals/international-taxpayers/firpta-withholding" },
+    ],
+    toolHeading: "See the Citizen Exemption for Comparison",
+    toolSubheading: "This tool applies the $15 million citizen exemption. See your actual $60,000 NRA exemption math below.",
+    preset: {
+      netWorth: 850_000,
+      state: "florida",
+      filingStatus: "single",
+    },
+    relatedSlugs: ["estate-tax-calculator", "will-cost-calculator", "living-trust-cost-calculator"],
+    // No state subpages — US-situs rules apply uniformly; state only affects the citizen-benchmark comparison above.
+  },
 ];

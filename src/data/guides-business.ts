@@ -427,4 +427,115 @@ export const BUSINESS_GUIDES: Guide[] = [
       { label: "Bluevine — Business Line of Credit", url: "https://www.bluevine.com/business-loans/line-of-credit" },
     ],
   },
+
+  // keyword-gap-pass 2026-09-02, batch D. register: operator · medium: text → text ·
+  // page type: explainer (1200-word floor). Qualification/affordability intent, distinct from
+  // /business-loan-payoff/'s payoff math and from the existing revenue/bad-credit guides above,
+  // which this cross-links rather than duplicates.
+  {
+    slug: "how-much-business-loan-can-i-qualify-for",
+    title: "How Much Business Loan Can You Qualify For?",
+    metaDescription:
+      "See what lenders check: revenue, time in business, credit score, and DSCR. Typical thresholds by loan type, plus how to estimate your own borrowing capacity.",
+    h1: "How Much Business Loan Can You Qualify For?",
+    cardBlurb: "What lenders check on revenue, time in business, credit score, and DSCR, plus how to estimate your own borrowing capacity before you apply.",
+    intro:
+      "Most lenders qualify a business loan amount using four factors: your revenue, how long you've been in business, your credit score, and your debt service coverage ratio (DSCR), the ratio of your cash flow to your total debt payments. What we see business owners get wrong most often is applying for a round number instead of a number their own cash flow can actually support, which is one of the fastest ways to get approved for less than requested. Revenue and time in business largely determine the maximum amount available. Credit score and DSCR decide whether you qualify for it and at what rate. The sections below cover typical qualification thresholds by loan type, SBA loan, term loan, line of credit, and merchant cash advance (MCA), and a simple way to estimate your own borrowing capacity before you apply.",
+    sections: [
+      {
+        heading: "How Revenue Sets Your Borrowing Limit",
+        body: "Revenue sets the outer limit on how much a lender will offer, since a loan payment has to come out of cash the business generates each month. Most lenders size a request against a multiple of monthly or annual revenue rather than approving whatever amount is requested, so a business with $50,000 in monthly revenue is a different underwriting conversation than one with $10,000, even at identical credit scores.\n\nGrowth trend matters alongside the revenue level itself. Our [guide to how revenue affects business loan approval](/guides/how-revenue-affects-business-loan-approval/) breaks down the Federal Reserve's Small Business Credit Survey data on this in detail, including the wide range in what applicants actually get approved for versus what they request. The short version: a smaller, well-documented request tied to a specific business need clears underwriting far more easily than a large round number based on what you'd like to have available.",
+      },
+      {
+        heading: "Time in Business: the Threshold by Lender Type",
+        body: "Time in business is a hard cutoff for many lenders, not just a factor weighed alongside others. Bank and [Small Business Administration (SBA)](https://www.sba.gov/funding-programs/loans) loans generally want at least two years of operating history and two years of business tax returns, since that history lets an underwriter evaluate real cash flow instead of a projection. Newer businesses aren't automatically shut out. The SBA's Microloan program, funded through nonprofit intermediary lenders rather than banks directly, works with businesses that have far less history, sometimes under a year, when the fundamentals otherwise check out.\n\nOnline lenders sit at the other end. Many will fund a term loan or line of credit with as little as six months to one year in business, trading a lower time-in-business bar for a higher rate. A merchant cash advance (MCA) sits at the loosest end of the range, often available to businesses with as little as three to six months of card or bank revenue history, since approval leans almost entirely on recent daily revenue rather than a multi-year track record.",
+      },
+      {
+        heading: "Credit Score Thresholds by Loan Type",
+        body: "Most lenders check two separate scores, your personal FICO score and, for many loan types, the business's own FICO SBSS score, and each loan type sets its bar differently. SBA 7(a) loans and most bank term loans get difficult below roughly a 620 personal score, per standard SBA lender eligibility guidance and typical bank underwriting practice. SBA Microloan intermediaries typically work with a lower range, often 575 to 620, and sometimes further down with strong offsetting revenue.\n\nOnline term loans and lines of credit generally accept a wider band, often 600 to 650 depending on the lender, in exchange for a higher rate than a bank would charge at the same score. A merchant cash advance rarely sets a hard credit-score floor at all, since the advance is priced and approved primarily against your daily card or bank deposit history rather than your credit file.",
+      },
+      {
+        heading: "Debt Service Coverage Ratio (DSCR): the Number That Decides the Rate",
+        body: "Debt service coverage ratio (DSCR) measures whether your cash flow can cover a new loan payment on top of what you already owe, calculated as net operating income divided by total debt service, meaning all loan and lease payments due in a year, including the new loan being requested. A DSCR of 1.0 means cash flow exactly covers the payments with nothing left over, too thin a margin for most lenders to accept.\n\nMost lenders set a minimum DSCR somewhere between 1.15 and 1.25, meaning your cash flow needs to run 15% to 25% above your total debt payments before a lender will approve the loan. A business with $180,000 in annual net operating income and $120,000 in total debt payments, including the loan being requested, has a DSCR of 1.5, comfortably above that range. Drop that business's net operating income to $132,000 and the DSCR falls to 1.1, likely below what most lenders will accept, even though revenue and credit look unchanged.",
+      },
+      {
+        heading: "Estimate Your Own Borrowing Capacity Before You Apply",
+        body: "Estimate your own number by starting with net operating income and working backward from the DSCR floor lenders typically use. Divide your annual net operating income by 1.25, a common lender minimum, to see the maximum total annual debt payment your cash flow can support. Subtract any debt payments you already carry, and what's left is roughly the annual payment capacity available for a new loan.\n\nA business with $150,000 in annual net operating income and no existing debt payments can support up to $120,000 a year in total debt service at a 1.25 DSCR ($150,000 ÷ 1.25). At a representative 10% [SBA 7(a)](https://www.sba.gov/funding-programs/loans/7a-loans) rate over a 10-year term, that payment level supports a loan of roughly $757,000, before accounting for collateral, down payment, or other underwriting requirements a specific lender might add on top. Run the reverse math on your own numbers before applying, so the request you submit matches what your cash flow can carry, not just what you'd like to receive.",
+      },
+      {
+        heading: "The Qualification Snapshot by Loan Type",
+        body: "Four loan types serve very different qualification profiles, and matching your own numbers to the right one saves a wasted application and a hard credit inquiry.\n\n- **SBA 7(a) or bank term loan:** roughly 620+ personal credit, 2+ years in business, DSCR of 1.15 to 1.25 or higher, the lowest rate and the slowest approval timeline.\n- **SBA Microloan:** roughly 575 to 620 personal credit, under 2 years in business accepted with strong revenue, capped at $50,000, funded through nonprofit intermediaries rather than a bank.\n- **Online term loan or line of credit:** roughly 600 to 650 personal credit, 6 months to 1 year in business, a higher rate than a bank in exchange for faster funding and a lower revenue-history bar.\n- **Merchant cash advance:** little to no hard credit-score floor, 3 to 6 months of card or bank revenue history, priced by a fixed factor rate rather than an interest rate, and the most expensive option per dollar borrowed.\n\nStart with the option your current numbers already clear, then reassess the cheaper options again once your revenue history and credit both improve. Our [small business financing guide](/guides/small-business-financing-guide/) walks through the cost tradeoff between a line of credit, factoring, and an MCA in more depth once you know which qualification tier fits.",
+      },
+    ],
+    tools: [
+      { href: "/business-loan-payoff/", label: "Business loan payoff" },
+      { href: "/business-line-of-credit/", label: "Business line of credit" },
+      { href: "/merchant-cash-advance/", label: "Merchant cash advance" },
+      { href: "/invoice-factoring/", label: "Invoice factoring" },
+    ],
+    faqs: [
+      { question: "How much of a business loan will I qualify for?", answer: "It depends on your revenue, time in business, credit score, and DSCR, and it varies widely by lender and loan type. A rough starting estimate: divide your annual net operating income by 1.25, a common lender minimum DSCR, to see the maximum annual debt payment your cash flow supports, then work backward to a loan amount from there." },
+      { question: "What is a good DSCR for a business loan?", answer: "1.25 or higher is a comfortable margin most lenders accept without hesitation. A DSCR between 1.0 and 1.15 is thin and likely to be declined by many lenders, even with strong revenue and credit, since it leaves little room for a slow month before a payment gets missed." },
+      { question: "Can I get a business loan with less than a year in business?", answer: "Yes, through an SBA Microloan, an online term loan or line of credit, or a merchant cash advance, each of which accepts a shorter operating history than a bank or SBA 7(a) loan requires. A bank or SBA 7(a) loan generally wants at least two years of tax returns to evaluate real cash flow instead of a projection." },
+      { question: "What credit score do I need to qualify for a business loan?", answer: "Roughly 620 or higher for an SBA 7(a) loan or a bank term loan, 575 to 620 for an SBA Microloan, and often 600 to 650 for an online term loan or line of credit. A merchant cash advance rarely sets a hard credit-score floor, since approval leans on daily card or bank revenue instead." },
+      { question: "Does my personal credit matter if my business has strong revenue?", answer: "Yes, but less for some loan types than others. A bank or SBA 7(a) lender weighs personal credit heavily. Revenue-based options like a merchant cash advance or invoice factoring weigh your cash flow and, for factoring, your customers' credit far more than your own score." },
+      { question: "How is DSCR different from a credit score?", answer: "A credit score measures your history of repaying debt reliably. DSCR measures whether your current cash flow can cover a new loan payment on top of what you already owe. A business can carry an excellent credit score and still fail a DSCR test if it's already carrying heavy debt, or the reverse: a thinner credit file with strong, low-debt cash flow." },
+    ],
+    sources: [
+      { label: "U.S. Small Business Administration — Loans", url: "https://www.sba.gov/funding-programs/loans" },
+      { label: "U.S. Small Business Administration — 7(a) loans", url: "https://www.sba.gov/funding-programs/loans/7a-loans" },
+      { label: "Federal Reserve — Small Business Credit Survey", url: "https://www.fedsmallbusiness.org/reports/survey" },
+    ],
+  },
+
+  // keyword-gap-pass 2026-09-02, batch D. register: operator · medium: text → text ·
+  // page type: explainer (1200-word floor). Worked payment-math example computed directly
+  // (standard amortization formula), not sourced — flagged as illustrative throughout.
+  {
+    slug: "balloon-payment-business-loan-explained",
+    title: "Balloon Payment Business Loans Explained",
+    metaDescription:
+      "A balloon payment business loan has small payments for years, then one large final payment due at once. See the payment math and the refinance risk.",
+    h1: "Balloon Payment Business Loans Explained",
+    cardBlurb: "How a balloon structure differs from a standard amortizing loan, the refinance risk at the balloon date, and a full worked payment-math example.",
+    intro:
+      "A balloon payment business loan charges small monthly payments for a set number of years, then requires one large lump-sum payment, the balloon, to clear the remaining balance all at once. The mistake we see most often is treating the balloon date like a formality instead of a real deadline that requires refinancing, selling, or paying off the balance in cash. Commercial real estate and equipment loans use this structure often, since it keeps the monthly payment low while the lender avoids locking in today's rate for the loan's full amortization period. The payment math and the refinance risk at the balloon date both need to be worked out before you sign, not after.",
+    sections: [
+      {
+        heading: "How a Balloon Structure Differs from a Standard Amortizing Loan",
+        body: "A standard amortizing loan pays itself off completely by the end of its term, with every monthly payment covering interest plus a slice of principal until the balance hits zero on the final payment. A balloon loan uses the same monthly payment math, calculated as if the loan amortized over a longer period, often 20 or 25 years, but the loan actually matures much sooner, often in 5 or 7 years, at which point the entire remaining balance comes due at once, what the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-en-102/) defines as a balloon payment.\n\nThat mismatch between the amortization period used to calculate the payment and the loan's real term keeps the monthly payment low. It also leaves a large balance still owed when the loan matures. Our [business loan payoff calculator](/business-loan-payoff/) models a standard fully-amortizing loan, useful for comparing what a balloon structure's low payment is trading away against a loan that pays itself off completely instead.",
+      },
+      {
+        heading: "The Worked Payment Math",
+        body: "Take a $250,000 commercial loan at a 7% annual interest rate, with a monthly payment calculated as if the loan amortized over 20 years (240 months), but a 5-year balloon term (60 months). The standard amortization formula puts the monthly payment at about $1,938, the same payment a fully 20-year loan at that rate and balance would carry.\n\nAfter 60 monthly payments, the loan has paid down only about $34,350 of the original $250,000 principal, since interest makes up most of each early payment on a 20-year schedule. The remaining balance, the balloon due at month 60, comes to roughly $215,650. Total payments made over those 5 years add up to $116,280 ($1,938 × 60), of which about $81,930 went to interest and only $34,350 reduced principal.\n\nA fully amortizing 5-year loan on the same $250,000 balance would instead pay off completely by month 60, with no balloon at all, but at a monthly payment of roughly $4,950, nearly two and a half times higher than the balloon structure's $1,938. That gap is the real price of the low balloon-loan payment: a large lump sum waiting at the end instead of a higher payment spread evenly across the same 5 years.",
+      },
+      {
+        heading: "Why Lenders Structure Loans This Way",
+        body: "Lenders offer a balloon structure mainly to manage their own interest rate risk, not as a favor to the borrower's cash flow, though the lower payment is real. Locking in a 20 or 25-year interest rate on a commercial loan exposes a lender to decades of rate risk if market rates rise, so shortening the loan's actual term to 5 or 7 years while still amortizing the payment over a longer period lets the lender reset the rate at maturity instead of carrying that risk for the full amortization period.\n\nCommercial real estate loans commonly use a 5-year or 7-year balloon on a 20 or 25-year amortization schedule, a structure distinct from the [SBA 504 loan program](https://www.sba.gov/funding-programs/loans/504-loans), which finances commercial real estate and major equipment through a fully amortizing structure instead of a balloon. Equipment loans outside the SBA 504 program sometimes use a shorter balloon, a 2- or 3-year term, since equipment depreciates faster than real estate. Either way, the low payment during the loan's active years is the upside. The balloon due date is the tradeoff, not a separate, unrelated feature of the loan.",
+      },
+      {
+        heading: "The Refinance Risk at the Balloon Date",
+        body: "The balloon date creates one real risk: needing to refinance, sell, or pay off a large balance at a moment you don't fully control, since the calendar decides when the balloon comes due, not your business's readiness. Three things can go wrong at once. Interest rates may have risen since the original loan closed, raising the cost of any refinance. Your business's revenue or credit profile may have weakened since underwriting, making a new lender's approval harder to get. Or the collateral itself, a commercial property, specialized equipment, may be worth less than it was at closing, creating a loan-to-value problem a refinance lender won't ignore.\n\nAny one of these alone can turn a routine refinance into a rushed, expensive one. All three at once, which tends to happen during a broader economic downturn exactly when many balloon loans across an industry mature at the same time, can make refinancing unavailable altogether, forcing a default or a distressed sale instead.",
+      },
+      {
+        heading: "How to Manage the Balloon Date Before It Arrives",
+        body: "Start the refinance conversation 6 to 12 months before the balloon date, not the month it's due, since underwriting a new loan takes real time and a late start removes your ability to shop multiple lenders if the first one says no. Keep financial statements current and clean throughout the loan's term rather than scrambling to assemble them right before refinancing, since a lender evaluating a refinance wants to see the same clean cash-flow history a lender would want for a brand-new loan.\n\nAsk about extension or renewal options when you first sign the loan, not when the balloon date is already close, since some lenders build in a renewal option at the original rate structure or a modest adjustment, which can remove the refinance risk entirely if your lender offers one. Setting aside a portion of monthly cash flow specifically earmarked for the eventual balloon, even informally, is another way to reduce the risk that the payment depends entirely on refinancing working out on schedule.",
+      },
+    ],
+    tools: [
+      { href: "/business-loan-payoff/", label: "Business loan payoff" },
+    ],
+    faqs: [
+      { question: "What is a balloon payment on a business loan?", answer: "A balloon payment is the large, single lump-sum payment due at the end of a loan's term to clear the remaining balance, after years of smaller payments calculated as if the loan amortized over a much longer period. It's common on commercial real estate and equipment loans, where a 5- or 7-year balloon often sits on top of a 20- or 25-year amortization schedule." },
+      { question: "Why is a balloon loan payment so much lower than a regular loan payment?", answer: "Because the monthly payment is calculated as if the loan paid off over a longer amortization period, often 20 or 25 years, even though the loan actually matures in 5 or 7 years. On a $250,000, 7% loan, that structure puts the payment at about $1,938 a month, versus roughly $4,950 for a loan that fully pays off in the same 5 years." },
+      { question: "What happens if I can't pay off or refinance a balloon payment?", answer: "The lender can call the loan in default, which can trigger foreclosure on real estate collateral or repossession of equipment, or force a distressed sale of the asset to cover the balance. This is the core risk of a balloon structure, and it's why starting the refinance process 6 to 12 months before the balloon date matters." },
+      { question: "Can I pay off a balloon loan early instead of waiting for the due date?", answer: "Usually yes, but confirm there's no prepayment penalty first, since some commercial loans carry one. Our [business loan payoff calculator](/business-loan-payoff/) models how extra payments toward principal on a standard amortizing loan reduce the balance and the interest owed, useful for planning how fast you could pay down a balloon loan's balance ahead of the maturity date." },
+      { question: "Is a balloon loan a bad idea for a small business?", answer: "Not inherently. It fits a business planning to sell, refinance, or pay off the property or equipment well before the balloon date, since the lower payment frees up cash in the meantime. It's a poor fit for a business with no clear plan for the balloon date, since a rate increase, a credit setback, or a drop in the collateral's value can all make refinancing harder exactly when it's needed most." },
+      { question: "What loan types commonly use a balloon structure?", answer: "Commercial real estate loans and equipment loans are the most common, along with some seller-financing arrangements in a business acquisition. The SBA 504 loan program is a notable exception built specifically as a fully amortizing alternative for commercial real estate and major equipment, with no balloon payment on its government-backed portion." },
+    ],
+    sources: [
+      { label: "CFPB — What is a balloon payment?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-en-102/" },
+      { label: "U.S. Small Business Administration — 504 Loans", url: "https://www.sba.gov/funding-programs/loans/504-loans" },
+    ],
+  },
 ];
