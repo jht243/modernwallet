@@ -1,0 +1,128 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-01",
+  "window_start": "2026-09-01",
+  "window_end": "2026-09-01",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 8,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 8
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 7,
+      "sessions": 9,
+      "active_users": 8,
+      "clicks": 7
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 6,
+      "sessions": 7,
+      "active_users": 2,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 6,
+      "sessions": 7,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 4,
+      "sessions": 8,
+      "active_users": 5,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/compare/401k-vs-roth-ira/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/compare/529-vs-utma/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 2,
+      "clicks": 3
+    }
+  ],
+  "top10_pages_total_views": 57,
+  "top10_pages_total_clicks": 57,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 8,
+      "Unassigned": 3
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 7
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 7,
+      "Unassigned": 1
+    },
+    "/": {
+      "Unassigned": 5,
+      "Direct": 4,
+      "Referral": 4,
+      "Organic Search": 2
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Organic Search": 5,
+      "Unassigned": 1
+    },
+    "/compare/529-vs-utma/": {
+      "Organic Search": 4
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 4,
+      "Cross-network": 3,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 4,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 4,
+      "Unassigned": 1
+    },
+    "/compare/401k-vs-roth-ira/": {
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Direct": 1
+    }
+  }
+}

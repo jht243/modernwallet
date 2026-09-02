@@ -122,3 +122,12 @@
 | /retirement/military-retirement-calculator/ | 2026-08-30 | 0 | 0/0/1/0/0 | 0 |
 | /roundup/business-line-of-credit-rates-by-lender/ | 2026-08-31 | 1 | 1/0/0/0/0 | 0 |
 | /portfolio/asset-allocation-calculator/ | 2026-09-01 | 1 | 0/0/2/0/0 | 1 |
+| / | 2026-09-02 | 10 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-09-02 | 8 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-09-02 | 7 | 0/0/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-09-02 | 6 | 0/0/0/0/0 | 2 |
+| /retirement/couples-retirement-calculator/ | 2026-09-02 | 6 | 0/0/0/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-09-02 | 4 | 0/0/0/0/0 | 2 |
+| /roundup/best-money-market-accounts/ | 2026-09-02 | 4 | 0/0/0/0/0 | 2 |
+| /compare/401k-vs-roth-ira/ | 2026-09-02 | 3 | 0/0/0/0/0 | 1 |
+| /compare/529-vs-utma/ | 2026-09-02 | 3 | 0/0/0/0/0 | 0 |
