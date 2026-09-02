@@ -22,7 +22,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     intro:
       "This auto loan payoff calculator shows exactly when your car loan will be paid off and how much faster extra payments get you there. Enter your balance, rate, term, and any extra monthly amount in the calculator above. It then maps your payoff date and the interest you save. Use it to test a plan before you commit a dollar.",
     howItWorks:
-      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.",
+      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Enter your current balance, and the payoff date it returns tells you exactly how many months you have left. The schedule below that date shows your exact remaining balance after any payment number you pick. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.",
     commonMistakes: [
       "Assuming your extra payment automatically reduces principal. The CFPB notes lenders apply payments to fees and interest first. Some servicers hold the extra and apply it to your next scheduled payment unless you tell them in writing to apply it to principal.",
       "Forgetting to check for a prepayment penalty. Auto loans can carry one, especially on terms under five years. Review your contract and Truth in Lending disclosures before making a large lump-sum payment.",
@@ -317,6 +317,11 @@ export const AUTO_SPOKES: SpokeEntry[] = [
           "Put more money down, choose the shortest term you can afford, and shop multiple lenders for a lower APR. You can also pay the loan off faster. Try our [extra payment calculator](/auto-loan/extra-payment-calculator/) or [early payoff calculator](/auto-loan/early-payoff-calculator/) to see the savings.",
       },
       {
+        question: "What APR should I expect based on my credit score, including with bad credit?",
+        answer:
+          "Your credit score moves your APR more than anything else in the loan, including the term or which lender you use. Experian's Q1 2026 data on used-car loans shows average APRs of 6.30% for super-prime borrowers (781+), 8.77% for prime (661-780), 14.03% for near-prime (601-660), and 19.42% or higher for subprime borrowers below 600. A subprime buyer financing the same $20,000 car as a super-prime buyer pays thousands more in total interest for the identical vehicle. Enter your own quoted APR into the calculator above to see exactly what your credit tier costs over the full loan.",
+      },
+      {
         question: "Does this calculator include sales tax, fees, or trade-in value?",
         answer:
           "Enter your vehicle price net of any trade-in credit, since sales tax and fees vary too much by state and dealer to build into a single number. To see the true amount you're financing, add your state's sales tax to the price and subtract your trade-in's value before entering it as the vehicle price, then enter your actual cash down payment separately.",
@@ -326,6 +331,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       { label: "CFPB — What is the difference between a loan interest rate and the APR?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/" },
       { label: "CFPB — How do I compare auto loan offers?", url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/" },
       { label: "Experian — Auto Loan Rates and Financing", url: "https://www.experian.com/blogs/ask-experian/auto-loan-rates-financing/" },
+      { label: "Experian — Average Car Loan Interest Rates by Credit Score", url: "https://www.experian.com/blogs/ask-experian/average-car-loan-interest-rates-by-credit-score/" },
     ],
     toolHeading: "How much interest will you pay?",
     toolSubheading: "Enter your loan to see total interest, then try different rates and terms.",

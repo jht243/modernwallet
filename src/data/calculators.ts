@@ -23,7 +23,7 @@ export const CALCULATORS: CalculatorDef[] = [
     intro:
       "An auto loan calculator estimates your monthly car payment and the total cost of financing a vehicle. The calculator above does this in seconds. Enter the vehicle price, your down payment, the interest rate (APR), and the loan term to see your numbers. For example, a $35,000 car with $5,000 down at 7.5% APR over 60 months gives a $601.14 monthly payment.",
     howItWorks:
-      "Your monthly car payment is set by three things: the loan amount, the APR, and the loan term. The loan amount is the price minus your down payment and trade-in. In the example above, $35,000 minus $5,000 down leaves a $30,000 loan.\n\nEach payment is split between interest and principal through a process called amortization. Early on, more of your money goes to interest. In month one, the $601.14 payment splits into $187.50 of interest and $413.64 of principal. Over the full 60 months, you pay $6,068 in interest, for a total of $36,068.\n\nTo see the full month-by-month breakdown, use the [auto loan amortization calculator](/auto-loan/amortization-schedule/). To see how a higher payment cuts your interest, try the [auto loan extra payment calculator](/auto-loan/extra-payment-calculator/). Not sure how much car fits your budget first? Start with the [car affordability calculator](/auto-loan/car-affordability-calculator/). Already have a loan and wondering if a lower rate is out there? Run your numbers through the [auto loan refinance calculator](/auto-loan/refinance-calculator/).",
+      "Your monthly car payment is set by three things: the loan amount, the APR, and the loan term. The loan amount is the price minus your down payment and trade-in. In the example above, $35,000 minus $5,000 down leaves a $30,000 loan. To calculate it yourself, start with the vehicle price. Subtract your down payment and any trade-in credit to get the loan amount. Then apply the APR and loan term to that amount using a fixed-payment amortization formula, the same one lenders use. The calculator above runs that formula the instant you change a number, so you can test a different down payment or term without doing the math by hand.\n\nEach payment is split between interest and principal through a process called amortization. Early on, more of your money goes to interest. In month one, the $601.14 payment splits into $187.50 of interest and $413.64 of principal. Over the full 60 months, you pay $6,068 in interest, for a total of $36,068.\n\nTo see the full month-by-month breakdown, use the [auto loan amortization calculator](/auto-loan/amortization-schedule/). To see how a higher payment cuts your interest, try the [auto loan extra payment calculator](/auto-loan/extra-payment-calculator/). Not sure how much car fits your budget first? Start with the [car affordability calculator](/auto-loan/car-affordability-calculator/). Already have a loan and wondering if a lower rate is out there? Run your numbers through the [auto loan refinance calculator](/auto-loan/refinance-calculator/).",
     faqs: [
       {
         question: "Is this the same as a car loan payment calculator?",
@@ -36,9 +36,24 @@ export const CALCULATORS: CalculatorDef[] = [
           "A good rate depends on your credit and whether the car is new or used. In mid-2025, the average new-car APR was about 6.8%, and the average used-car APR was about 11.5%, according to Experian. Borrowers with strong credit often qualify for rates below these averages. Always compare offers from a bank or credit union before you visit the dealer.",
       },
       {
+        question: "Does this work as a used car loan calculator?",
+        answer:
+          "Yes. Enter a used car's price, your down payment, and its APR the same way you would for a new one, since the calculator runs the identical amortization math either way. The one thing to change is the rate you enter. Experian's mid-2025 data put the average used-car APR at 11.5%, well above the 6.8% average for new cars, because used vehicles carry more lending risk. Quote your own used-car rate from a bank or credit union rather than assuming the new-car average applies.",
+      },
+      {
+        question: "Are auto loan rates going up or down right now?",
+        answer:
+          "Auto loan rates track the [Federal Reserve's](https://www.federalreserve.gov/monetarypolicy/openmarket.htm) federal funds rate, the benchmark most lenders price their own rates against. Experian's mid-2025 data put the average new-car APR near 6.8% and the average used-car APR near 11.5%. Those averages shift a little each time the Fed moves its target rate. Your own quote still depends far more on your credit score and your lender than on that general trend. Get a current rate quote from your bank or credit union, then plug it into the calculator above to see your exact payment.",
+      },
+      {
         question: "How does this auto loan calculator estimate my payment?",
         answer:
           "The auto loan calculator uses your loan amount, APR, and term to compute a fixed monthly payment. It applies a standard amortization formula, the same math lenders use. The result shows your principal and interest payment. It does not include taxes, registration, or insurance, so budget extra for those costs.",
+      },
+      {
+        question: "Are car loan interest rates annual or monthly, and are they fixed or variable?",
+        answer:
+          "Car loan rates are quoted as an annual percentage, called the APR, even though interest is calculated and charged against your balance every month. The APR includes the interest rate plus any lender fees rolled into the loan, per the CFPB, so it's usually the slightly higher number on your paperwork. Nearly every auto loan carries a fixed rate. The APR you sign for stays the same for the full term, unlike a variable-rate loan that moves up or down with the market. That fixed rate is why the calculator above returns one stable monthly payment instead of a range.",
       },
       {
         question: "Should I choose a longer loan term to lower my payment?",
@@ -54,6 +69,16 @@ export const CALCULATORS: CalculatorDef[] = [
         question: "How much does a bigger down payment help?",
         answer:
           "A bigger down payment lowers your loan amount, which lowers both your payment and your total interest. It also reduces the risk of going underwater on the loan. Many buyers aim for at least 20% down on a new car and 10% on a used car. Even a small increase in your down payment can save you money over the life of the loan.",
+      },
+      {
+        question: "Does this calculator include sales tax, fees, and my trade-in?",
+        answer:
+          "Yes for your trade-in. Enter its value and any amount you still owe in the calculator above, and it nets the two against your vehicle price the same way a dealer would. Sales tax and title fees are left out of the total, since they vary too much by state, county, and dealer to build into one number. Add your own state's sales tax rate to the vehicle price before you enter it, and the result comes close to your true out-the-door price. That's also why a calculator built for one specific state wouldn't be any more accurate than this one. The trade-in and tax math is identical everywhere. Only the tax rate itself changes, and you're the one who already knows your own rate.",
+      },
+      {
+        question: "Are auto loans a good idea?",
+        answer:
+          "An auto loan is a reasonable way to buy a car you can't pay cash for. It works in your favor when the payment fits your budget and the rate isn't inflated by a dealer markup. Financing also keeps your cash free for emergencies instead of tied up in one asset that loses value the moment you drive it home. The loan becomes a bad idea when the term stretches past 60 months just to chase a lower payment. That longer term raises both your total interest and your odds of owing more than the car is worth. Run your own numbers through the calculator above before you decide, and weigh that payment against the rest of your monthly budget.",
       },
       {
         question: "Can I save money by paying off my car loan early?",
@@ -85,6 +110,7 @@ export const CALCULATORS: CalculatorDef[] = [
       { label: "Consumer Financial Protection Bureau — Auto Loans", url: "https://www.consumerfinance.gov/consumer-tools/auto-loans/" },
       { label: "CFPB — What is a dealer markup?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-dealer-markup-en-799/" },
       { label: "Experian — Auto Loan Rates and Financing", url: "https://www.experian.com/blogs/ask-experian/auto-loan-rates-financing/" },
+      { label: "Federal Reserve — Open Market Operations (federal funds rate)", url: "https://www.federalreserve.gov/monetarypolicy/openmarket.htm" },
     ],
     defaultPreset: {
       vehiclePrice: 35000,
