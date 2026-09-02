@@ -19212,11 +19212,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/banking/reviews/axos-bank": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:5bc78d0f7bbc696be3a44e274eee90401064ad7f5c4fc5cbfb1bd5964a1403d2",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T21:04:12+00:00",
+          "our_url": "/guides/axos-bank-review/",
           "outline": [
             "Advertiser Disclosure",
             "How We Make Money",
@@ -19246,7 +19250,7 @@
           "relevance_hits": [
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Axos Bank Review 2026 | Bankrate",
           "tool_io": []
         },
@@ -27655,11 +27659,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/business/get-business-card-with-ein": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:0cef8fc54328a1859fb2a801fc0345824eac3e9323e81f5f02c8f36c3f6683dc",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T16:44:53-04:00",
+          "our_url": "/guides/business-credit-card-with-ein-only/",
           "outline": [
             "Key takeaways",
             "How to apply for a business credit card with an EIN",
@@ -27675,7 +27683,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How To Get A Business Credit Card With An EIN Only | Bankrate",
           "tool_io": []
         },
@@ -42770,11 +42778,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/credit-cards/zero-interest/good-apr-for-credit-card": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:b5eed0d1a869192cd3ca7658e4c991b023dd95334bf0bde55386f1b21c253f39",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T19:21:13-04:00",
+          "our_url": "/guides/good-apr-for-credit-card/",
           "outline": [
             "Key takeaways",
             "How is your APR determined?",
@@ -42789,7 +42801,7 @@
             "credit",
             "interest"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What&#039;s A Good APR For A Credit Card? | Bankrate",
           "tool_io": []
         },
@@ -55013,11 +55025,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/bad-credit-loans": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:0dbe343cb4db52f8cdb60cbb48fae3fdf97d8861ea609a9b567a6c05aba5ee9d",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T20:13:39+00:00",
+          "our_url": "/roundup/best-student-loans-bad-credit/",
           "outline": [
             "Unlock student loan offers for bad credit",
             "How Bankrate works",
@@ -55057,7 +55073,7 @@
             "loans",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Student Loans For Bad Credit Or No Credit In August 2025 | Bankrate",
           "tool_io": []
         },
@@ -56373,11 +56389,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/refinance-rates": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:04c6ec5c821bf5df2f7512e136dd74e13133203444f71af121b20b8cc3e677a2",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T19:36:44+00:00",
+          "our_url": "/roundup/best-student-loan-refinance/",
           "outline": [
             "Get matched with student refinance loans",
             "Filter results",
@@ -56430,7 +56450,7 @@
             "payment",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Refinance Student Loans In 2026 | Bankrate",
           "tool_io": []
         },
@@ -58916,11 +58936,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/mortgages/analysis/mortgage-rates-september-2-2026": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:b8aca91efcfc30588ad66940a450addd48544a4934544738eed4d100a4348fa7",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-02",
           "kind": "page",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T19:40:00-04:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "Current mortgage rates",
             "Shop smarter for mortgage rates",
@@ -58934,7 +58958,7 @@
             "mortgage",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Dip, Still Near One-Year Peak | Bankrate",
           "tool_io": []
         },
@@ -253017,11 +253041,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/avc": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:06c1b1ebd5217eb8ea076c567d4c5146fe5a631ad74a8b208235081485f94a70",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:09.111Z",
+          "our_url": "",
           "outline": [
             "What&#x27;s the average variable cost formula, and how to use it?",
             "What is average variable cost, and why should we care?",
@@ -253032,7 +253060,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Average Variable Cost Calculator",
           "tool_io": [
             "label: Total Output (Q)",
@@ -253048,11 +253076,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/average-fixed-cost": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:9efc0b2e117fda6fad6e7419194eba6faa0a2ea9a5a4fad3d78b06941f4acb32",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:14.331Z",
+          "our_url": "",
           "outline": [
             "What is average fixed cost?",
             "How to calculate average fixed cost \u2014 Average fixed cost formula",
@@ -253068,7 +253100,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Average Fixed Cost Calculator",
           "tool_io": [
             "label: Number of units",
@@ -253930,11 +253962,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/consumer-surplus": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:824029547dbdf672cd02bd193bcd08d006174edfed1f5e31876ae5d6f79305d5",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:19.767Z",
+          "our_url": "",
           "outline": [
             "What is consumer surplus?",
             "What is the the consumer surplus formula?",
@@ -253947,7 +253983,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Consumer Surplus Calculator",
           "tool_io": [
             "label: Willing price",
@@ -254295,11 +254331,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/deadweight-loss": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:cd9b3115a619f8e5c8e9e47c6b5a85b6990574ace7a19b46cbeaf476b72b5e90",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:28.349Z",
+          "our_url": "",
           "outline": [
             "What is deadweight loss?",
             "How to calculate deadweight loss?",
@@ -254310,7 +254350,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Deadweight Loss Calculator",
           "tool_io": [
             "label: New price",
@@ -256388,11 +256428,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/marginal-cost": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:a1c930ac40b4f0b5d00a93c77a3ca72938fd11492030c3325519a728ebdebd7c",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:35.867Z",
+          "our_url": "",
           "outline": [
             "How to calculate the marginal cost",
             "Marginal cost formula",
@@ -256407,7 +256451,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Marginal Cost Calculator",
           "tool_io": [
             "label: Change in quantity",
@@ -256415,11 +256459,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/marginal-revenue": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:7517fee97868fa114bc365ec5152e77bfd9014ac81f7f34c9337466991d6d918",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:41.411Z",
+          "our_url": "",
           "outline": [
             "Marginal revenue definition",
             "Marginal revenue formula",
@@ -256430,7 +256478,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Marginal Revenue Calculator",
           "tool_io": [
             "label: Final revenue",
@@ -257163,11 +257211,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/optimal-price": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:6742b39b501ec93786802bd189181f2f5ce220c5ee30e35e3e785562b9ddfb99",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:47.349Z",
+          "our_url": "",
           "outline": [
             "What is the optimal price?",
             "How to find the optimal price",
@@ -257177,7 +257229,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Optimal Price Calculator",
           "tool_io": [
             "label: Marginal revenue",
@@ -257682,11 +257734,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/price-elasticity-demand": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:8bb58e2a5a6133afbc9e2be4a59924f58db48fc2d4df4ed9ba51de2264013210",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:54.793Z",
+          "our_url": "",
           "outline": [
             "What is the price elasticity of demand?",
             "Midpoint formula for elasticity of demand",
@@ -257704,7 +257760,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Price Elasticity of Demand Calculator",
           "tool_io": [
             "label: Initial quantity",
@@ -257717,11 +257773,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/price-elasticity-supply": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:b2eb091bb0d900f04fd13c053317efa3715528b682388cb47b694673243bb375",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:29:59.456Z",
+          "our_url": "",
           "outline": [
             "What is price elasticity of supply?",
             "How do I calculate price elasticity of supply?",
@@ -257738,7 +257798,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Price Elasticity of Supply Calculator",
           "tool_io": [
             "label: Price in Period 1",
@@ -258741,11 +258801,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/savings-interest-rate": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:7b7cd70d8dbac8bdd7d90ab81b6747c61fa961414bf3977e0114f7842847f996",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:07:12.782Z",
+          "our_url": "/investing/high-yield-savings-calculator/",
           "outline": [
             "Why are interest rates so low on savings accounts?",
             "How to calculate the interest rate on a savings account",
@@ -258758,7 +258822,7 @@
             "interest",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Savings Interest Rate Calculator",
           "tool_io": [
             "label: Initial saving balance",
@@ -258772,11 +258836,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/savings-plan": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:27244515a156b086327ef2970028313587f9fd8b60ba29730a95e77e9fb67b42",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:07:20.312Z",
+          "our_url": "/investing/savings-goal-calculator/",
           "outline": [
             "The savings plan formula for a simple 52-week money challenge",
             "How to use the savings plan calculator",
@@ -258792,7 +258860,7 @@
             "finance",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Savings Plan Calculator",
           "tool_io": [
             "label: Planning for...",
@@ -258803,11 +258871,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/savings-withdrawal": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:7e98b79abcc00096304557f07a1f921d07e388f67b72e87a6414d61a1ad0850a",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:07:27.424Z",
+          "our_url": "/investing/withdrawal-calculator/",
           "outline": [
             "What is a savings account?",
             "Types of savings account: what is the difference between a checking and savings account?",
@@ -258821,7 +258893,7 @@
             "finance",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Savings Withdrawal Calculator",
           "tool_io": [
             "label: Balance of your savings",
@@ -259728,11 +259800,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/zakat": {
+          "acted": true,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:9c9e98f30e03f1ce75fdb80ed012c5e74a653aa36386ca0b3c94131b74747971",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:07:34.220Z",
+          "our_url": "/zakat/",
           "outline": [
             "What is zakat?",
             "What is nisab?",
@@ -259753,7 +259829,7 @@
             "net worth",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Zakat Calculator",
           "tool_io": [
             "label: Rate per tola",
@@ -323715,11 +323791,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/sports/duckworth-lewis": {
+          "acted": false,
+          "acted_date": "2026-09-02",
           "content_hash": "sha256:d59fa04be7cc372a1176b47bca0a612727a7fce79ca6fb64a6f56ffc584ec888",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-02",
           "lastmod": "2026-09-02T09:59:28.656Z",
+          "our_url": "",
           "outline": [
             "What problem does the Duckworth Lewis method attempt to solve? DLS explained",
             "How the Duckworth Lewis method works \u2013 What is DLS?",
@@ -323733,7 +323813,7 @@
           "relevance_hits": [
             "calculator"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Duckworth Lewis Calculator",
           "tool_io": [
             "label: Maximum overs",
