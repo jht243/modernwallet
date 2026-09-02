@@ -94,7 +94,7 @@ export default function ZakatCalculator({ initialData, heading, subheading }: Pr
             <MoneyInput value={input.metalPricePerGram} onChange={(v) => set({ metalPricePerGram: v })} cents />
           </Field>
           <p style={S.hint}>
-            Prices move daily. This page cites a live bullion-price tracker in its sources — update this field with today's price before you rely on the result.
+            Prices move daily. Update this field with today's price before you rely on the result.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export default function ZakatCalculator({ initialData, heading, subheading }: Pr
           </div>
 
           <div style={{ ...S.aprBox, ...(result.meetsNisab ? S.aprWarn : S.aprOk) }}>
-            <span style={S.aprLabel}>{result.meetsNisab ? "Above nisab — zakat is due" : "Below nisab — no zakat due"}</span>
+            <span style={S.aprLabel}>{result.meetsNisab ? "Above nisab: zakat is due" : "Below nisab: no zakat due"}</span>
             <span style={S.aprNote}>
               {result.meetsNisab
                 ? "This applies once this wealth (or more) has been held for one full lunar year (the hawl). If you only crossed nisab partway through the year, most scholars still count from the date you first met or exceeded it."
@@ -123,7 +123,7 @@ export default function ZakatCalculator({ initialData, heading, subheading }: Pr
           </div>
 
           <div style={S.disclaimer}>
-            Estimate only, using the standard 2.5% rate on net zakatable assets held for one lunar year. Rulings on which specific assets count (e.g. a primary home, a retirement account, jewelry worn regularly) vary by school of thought — this tool is not a fatwa. Confirm edge cases with a qualified scholar or your local Islamic center.
+            Estimate only, using the standard 2.5% rate on net zakatable assets held for one lunar year.
           </div>
         </div>
       </div>

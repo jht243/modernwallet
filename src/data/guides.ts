@@ -8253,6 +8253,81 @@ export const GUIDES: Guide[] = [
       { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
     ],
   },
+
+  {
+    slug: "axos-bank-review",
+    updated: "2026-09-02",
+    title: "Axos Bank Review 2026: High APYs and No Monthly Fees",
+    metaDescription:
+      "Our Axos Bank review breaks down the Summit Savings APY, Axos Checking fees, FDIC insurance limits, and who should bank somewhere with a branch instead.",
+    h1: "Axos Bank Review: High APYs, No Monthly Fees",
+    cardBlurb: "Summit Savings APY, Axos Checking fees, FDIC coverage, and whether a branchless bank fits you.",
+    intro:
+      "[Axos Bank](https://www.axosbank.com/) is worth it if you want a high savings rate and zero fees without a physical branch. In the guides we publish here, the accounts worth recommending are the ones with no games in the fee schedule. Axos Bank's savings and checking accounts clear that bar. Axos Bank has run as a branchless online bank since 2000. Every deposit account carries [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance up to the standard $250,000 per depositor. Its top savings account pays an annual percentage yield (APY) well above the national average, and its checking account carries no monthly fee and no minimum balance. What you give up is a teller window, in-person cash deposit, and a customer-service reputation reviewers call inconsistent.\n\nAxos's savings and checking lineup is the draw. Branch access and consistent customer support are the weak points. Run Axos's advertised Summit Savings rate through our [high-yield savings calculator](/investing/high-yield-savings-calculator/) to see what it actually earns, or set a target with the [savings goal calculator](/investing/savings-goal-calculator/).",
+    sections: [
+      {
+        heading: "What Axos Bank Offers",
+        body: "Axos Bank is an online-only bank based in San Diego that has run continuously since July 2000, when it launched as Bank of Internet USA. It has no retail branches, so every account opens, funds, and operates through the website or mobile app.\n\nThe bank operates as a subsidiary of [Axos Financial](https://investors.axosfinancial.com/corporate-profile/default.aspx), a publicly traded company with more than $28 billion in assets. That scale matters for a branchless bank. It means Axos isn't a fly-by-night startup, even though you'll never see a branch sign.\n\nThe current product lineup covers four jobs. Summit Savings is the standalone high-yield account. Axos ONE bundles checking and savings into one relationship. Axos Checking handles everyday spending with no fees. Certificates of deposit (CDs) lock in a fixed rate for a set term, from three months to five years.",
+      },
+      {
+        heading: "Axos Bank Pros and Cons",
+        body: "Axos Bank's biggest strength is pairing a high APY with a fee structure that stays out of your way. Its biggest weakness is the one every online bank shares: no branch to walk into when something goes wrong.\n\nWhat works in Axos Bank's favor:\n- A Summit Savings APY that runs about 10 times the national average.\n- No monthly fee, no minimum balance, and no minimum opening deposit on its core accounts.\n- Unlimited domestic automated teller machine (ATM) fee reimbursement on Axos Checking.\n- FDIC insurance up to $250,000, with an optional InsureGuard+ program that extends coverage well past that limit for larger balances.\n- A mobile app that handles check deposits, transfers, and bill pay without a branch visit.\n\nWhat works against it:\n- No physical branches, so cash deposits and in-person help aren't options.\n- Customer-service reviews are mixed, with deposit-hold delays and app glitches showing up repeatedly in independent reviews.\n- The advertised APY is variable and can drop at Axos's discretion, sometimes with little notice.\n- Axos ONE's top savings rate requires meeting direct-deposit and balance conditions that many casual savers won't hit.",
+      },
+      {
+        heading: "Axos Bank Savings and CD Accounts",
+        body: "Axos Bank's Summit Savings account pays 3.75% APY on every dollar, with no minimum balance and no fees, as of September 2026. That rate applies whether your balance is $1 or $150,000, and Axos requires no opening deposit to start earning it. Like any high-yield rate, it's variable. Axos can raise or lower it at its own discretion, so confirm the current number on [Axos Bank's Summit Savings page](https://www.axosbank.com/personal/bank/savings-accounts/summit-savings) before you open one.\n\nThat spread adds up fast in real dollars. Keep $10,000 in Axos Summit Savings at 3.75% APY for a year and you earn about $375. Keep the same $10,000 at the FDIC's national average savings rate of 0.38%, and you earn about $38. Picking the higher-rate account is worth roughly $337 a year on that balance, for doing nothing but picking the account that holds it.\n\nSummit Savings isn't Axos's only savings option. Axos ONE bundles checking and savings into one relationship, paying up to 4.21% APY on the savings side once you meet its direct-deposit and balance requirements. Axos also runs a money market account with check-writing and debit-card access, plus CDs running from three months to five years with a $1,000 minimum deposit. Confirm the current money market and CD rates directly on [Axos Bank's savings and CD pages](https://www.axosbank.com/personal/bank/savings-accounts), since both move often.\n\nFor a similar FDIC-insured cash option worth comparing before you commit, see our [money market account guide](/guides/money-market-account/).",
+      },
+      {
+        heading: "Axos Checking Account Fees and Features",
+        body: "Axos Checking is Axos Bank's fee-free checking account, paying up to 1.00% APY once you set up qualifying monthly direct deposit. Without a qualifying deposit, the account still charges no monthly fee and needs no minimum balance. You still bank for free even without hitting the APY requirement.\n\nAxos Checking carries no overdraft fee and no non-sufficient-funds fee, and it reimburses ATM fees at any domestic machine with no cap. Unlimited ATM reimbursement functions like a nationwide branch network, without Axos operating a single machine of its own.\n\nAxos also runs Axos ONE for customers who want checking and savings under one relationship. It suits anyone willing to meet its direct-deposit and balance thresholds for the top rate on both sides. If you just want checking without those conditions, Axos Checking is the simpler pick.",
+      },
+      {
+        heading: "Axos Bank Customer Support and Reviews",
+        body: "Axos Bank runs support by phone, live chat, and email instead of a teller window, and reviews of that support are mixed. The [Better Business Bureau (BBB)](https://www.bbb.org/us/ca/san-diego/profile/bank/axos-bank-1126-172002332) has accredited Axos Bank since 2011 and currently rates it A+. That grade measures how the bank responds to formal complaints. It isn't a customer-satisfaction score. Independent reviews outside the BBB report a similar split: praise for individual support reps sits next to recurring complaints about deposit-hold times and mobile-app bugs.\n\nThe fix, if you hit either problem, is straightforward. Fund a new account with a bank transfer instead of a mobile check deposit for the first few weeks. Transfers clear faster and trigger fewer holds. For app issues, keep the desktop site bookmarked as a backup. Most reported glitches are mobile-specific.\n\nA branchless bank is the wrong tool if you need a same-day cash deposit, a notarized document, or in-person help with a complex issue. No rate makes up for that. The gap comes from the online-only model itself, and no support upgrade closes it.",
+      },
+      {
+        heading: "How Axos Bank Compares to Ally Bank",
+        body: "Axos Bank and [Ally Bank](https://www.ally.com/bank/savings-account-rates/) are both branchless online banks. The real difference comes down to rate versus ATM access.\n\n| | Axos Bank | Ally Bank |\n|---|---|---|\n| Standalone savings APY | 3.75% (Sept. 2026) | 3.00% (Sept. 2026) |\n| Minimum balance | None | None |\n| Monthly fee | None | None |\n| ATM reimbursement | Unlimited at any domestic ATM | Free at Allpoint/MoneyPass, plus up to $10 per cycle elsewhere |\n| Branches | None | None |\n| Verdict | Higher savings rate | Bigger free-ATM network, lower rate |\n\nChoose Axos Bank if the extra APY on Summit Savings matters more than a large built-in free-ATM network. Choose Ally Bank if you rely on Allpoint or MoneyPass machines already. A little less rate is a fair trade for that convenience.",
+      },
+      {
+        heading: "Who Should Skip Axos Bank",
+        body: "Axos Bank is a poor fit for anyone who deposits cash regularly or wants a banker to sit across from. There's no branch, so there's no way to hand over paper currency directly. A tip-based worker or a landlord who collects cash rent needs a separate branch-based account, or a cash-to-card service, just to get that money into the bank.\n\nIt's also a weak fit if you want in-person financial advice, a notary, or a safe-deposit box. None of those exist without a physical location. A traditional community bank or a regional bank with local branches serves that need better, even at a lower savings rate.\n\nIf you already keep every account at one bank for a single login and one statement, adding Axos just for a higher APY may not be worth it. The extra login and transfer schedule usually isn't worth chasing a few hundred dollars a year on a modest balance.",
+      },
+      {
+        heading: "What Would Change Our Verdict on Axos Bank",
+        body: "Our verdict on Axos Bank would flip if its core rate stopped beating the market or if it added the fees it currently skips. Summit Savings clears the national average by a wide enough margin today to justify the switch. If that gap narrowed to a point or two above average for a while, the case for choosing Axos over a bigger, established competitor would weaken fast.\n\nA second trigger is fees. Axos currently charges no monthly fee and no minimum balance on its core accounts. Adding either would erase much of what makes the accounts worth recommending, since a fee-free structure is half the pitch.\n\nA third trigger is regulatory. Axos Bank's accounts are FDIC insured today, the same as any chartered U.S. bank. If that status ever changed, no APY would be worth the risk, and the recommendation would reverse completely.",
+      },
+      {
+        heading: "The Verdict on Axos Bank",
+        body: "Axos Bank earns its recommendation for savers and everyday spenders who are comfortable banking entirely online. Summit Savings beats the national average by a wide margin. Axos Checking charges nothing to hold or use. FDIC insurance covers both up to the standard limit.\n\nWhat you give up matches every online bank's tradeoff: no branch, and a support setup that independent reviews describe as hit-or-miss. Neither should stop you if your banking is simple. Both are reasons to keep a local account open too if it isn't.\n\nIf the numbers above look worth it, open a Summit Savings account directly on [Axos Bank's savings page](https://www.axosbank.com/personal/bank/savings-accounts/summit-savings). Run your expected balance through our [high-yield savings calculator](/investing/high-yield-savings-calculator/) first, so you know exactly what today's rate would earn you before you commit.",
+      },
+    ],
+    tools: [
+      { href: "/investing/high-yield-savings-calculator/", label: "High-yield savings" },
+      { href: "/investing/savings-goal-calculator/", label: "Savings goal" },
+      { href: "/budget/", label: "Budget" },
+    ],
+    faqs: [
+      { question: "Is Axos Bank a real, legitimate bank?", answer: "Yes. Axos Bank is a real, federally chartered bank that has operated online since 2000 and carries FDIC insurance up to $250,000 per depositor. It operates as a subsidiary of Axos Financial, a publicly traded company with more than $28 billion in assets." },
+      { question: "What is the current Axos Bank Summit Savings APY?", answer: "Axos Bank's Summit Savings account pays 3.75% APY as of September 2026, with no minimum balance and no fees. The rate is variable, so check [Axos Bank's savings page](https://www.axosbank.com/personal/bank/savings-accounts/summit-savings) for the live number before you open an account." },
+      { question: "Does Axos Bank charge monthly fees?", answer: "No. Summit Savings and Axos Checking both carry no monthly maintenance fee, no minimum balance, and no minimum opening deposit. CDs also charge no fee to open or hold, though breaking one before its term ends typically costs an early-withdrawal penalty, as it does at any bank." },
+      { question: "Does Axos Bank have branches or ATMs?", answer: "Axos Bank has no physical branches. Axos Checking reimburses ATM fees at any domestic ATM with no cap, so you can use nearly any machine without paying a surcharge." },
+      { question: "Is my money safe at Axos Bank?", answer: "Yes, up to the standard coverage limit. The FDIC insures deposits at Axos Bank up to $250,000 per depositor, per ownership category, the same protection every insured U.S. bank carries. Axos also offers an optional InsureGuard+ program that extends coverage well past that limit for larger balances." },
+      { question: "What's the difference between Axos Checking and Axos ONE?", answer: "Axos Checking is a standalone checking account that pays up to 1.00% APY with qualifying direct deposit and charges no fees. Axos ONE bundles checking and savings into one relationship, paying a higher savings APY once you meet its direct-deposit and balance requirements." },
+      { question: "How do I open an Axos Bank account?", answer: "You apply directly on Axos Bank's website with a government ID and your Social Security number. You'll also need a way to fund it, either a bank transfer or a check. Most personal accounts open in a few minutes with no opening deposit required." },
+      { question: "How does Axos Bank compare to Ally Bank?", answer: "Axos Bank's Summit Savings account pays a higher APY than Ally Bank's standard savings account, while Ally offers a wider free ATM network through Allpoint and MoneyPass. Both are branchless, FDIC-insured, and charge no monthly fee or minimum balance. The choice comes down to whether the extra APY or the wider ATM network matters more to you." },
+    ],
+    sources: [
+      { label: "Axos Bank — Summit Savings", url: "https://www.axosbank.com/personal/bank/savings-accounts/summit-savings" },
+      { label: "Axos Bank — Personal Checking Accounts", url: "https://www.axosbank.com/personal/bank/checking-accounts" },
+      { label: "Axos Bank — About Us", url: "https://www.axosbank.com/about-us" },
+      { label: "FDIC — Understanding Deposit Insurance ($250,000 coverage)", url: "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance" },
+      { label: "FDIC — National Rates and Rate Caps", url: "https://www.fdic.gov/national-rates-and-rate-caps" },
+      { label: "Better Business Bureau — Axos Bank Profile", url: "https://www.bbb.org/us/ca/san-diego/profile/bank/axos-bank-1126-172002332" },
+      { label: "Ally Bank — Savings Account Rates", url: "https://www.ally.com/bank/savings-account-rates/" },
+      { label: "Axos Financial, Inc. — Corporate Profile", url: "https://investors.axosfinancial.com/corporate-profile/default.aspx" },
+    ],
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

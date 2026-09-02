@@ -538,4 +538,111 @@ export const BUSINESS_GUIDES: Guide[] = [
       { label: "U.S. Small Business Administration — 504 Loans", url: "https://www.sba.gov/funding-programs/loans/504-loans" },
     ],
   },
+
+  // Competitor-monitor pass (2026-09-02) — genuinely new topic for this site (no prior EIN-only
+  // coverage). register: operator | medium: text -> text | page type: explainer / spoke (floor
+  // 1,200 body words). Verified directly against issuer sites: Brex and Ramp both state no
+  // personal guarantee / no personal credit check on their own pages; Ramp's own eligibility page
+  // states the $25,000 cash-balance and entity-type requirements. Capital on Tap's own
+  // personal-guaranty page confirms it still requires a guarantee despite a soft-pull application,
+  // used as the contrast case. IRS.gov sourced for the EIN definition.
+  {
+    slug: "business-credit-card-with-ein-only",
+    title: "Business Credit Cards You Can Get With Just an EIN",
+    metaDescription:
+      "True EIN-only business credit cards skip a personal credit check, but only a few issuers offer one. See who qualifies and what to do if you don't yet.",
+    h1: "Business Credit Cards You Can Get With Just an EIN",
+    cardBlurb:
+      "What EIN-only underwriting really requires, two issuers that verify no personal guarantee, and what to do first if your numbers don't clear the bar yet.",
+    intro:
+      "A true EIN-only business credit card exists, but only a handful of issuers actually offer one. What we see readers get wrong most often in the financing guides we publish here is assuming EIN-only is a marketing label rather than a real underwriting bar. Most business cards still pull the owner's personal credit report and require a personal guarantee, even when the application form only asks for an Employer Identification Number (EIN). An EIN is the nine-digit number the [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers) issues to identify a business for tax purposes. The genuine exceptions are corporate charge cards that underwrite the business's own revenue, cash balance, or funding instead of the owner's [FICO score](https://www.myfico.com/credit-education/credit-scores). Those numbers set a real bar, and a brand-new business with no revenue history usually cannot clear it yet.",
+    sections: [
+      {
+        heading: "What EIN-Only Underwriting Means",
+        body:
+          "EIN-only underwriting means an issuer approves a business credit card using the company's EIN, bank data, and revenue. It skips the owner's personal credit pull and drops the personal guarantee tied to the account. Most business credit cards do not work this way. They ask for an EIN somewhere on the application, then still run the owner's Social Security number through a personal credit bureau. That person stays liable for the balance if the business cannot pay. The EIN field alone does not change how a card gets underwritten.\n\nA card that reports payment activity to a business bureau, such as [Dun & Bradstreet](https://www.dnb.com/), [Experian Business](https://www.experian.com/small-business/), or [Equifax Business](https://www.equifax.com/business/), is a separate feature from EIN-only underwriting. The two get confused often. A card can report to a business bureau while still requiring a personal guarantee and a hard personal credit check to open the account in the first place. EIN-only status describes how the issuer decides whether to approve you. It says nothing about which bureau later receives the payment history.",
+      },
+      {
+        heading: "How to Apply for a Business Credit Card With Just Your EIN",
+        body:
+          "Applying for an EIN-only card starts with getting the business itself ready to qualify. The owner's personal credit file rarely factors into that step.\n\n1. Form a legal entity the issuer accepts. Most EIN-only issuers require an LLC, corporation, or LP. A sole proprietorship usually will not qualify even with a valid EIN, since the underwriting model assumes a registered company with its own bank history.\n2. Get an EIN from the [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online) directly. The application is free and usually takes minutes online. Never pay a third-party site to file it for you.\n3. Open a dedicated business bank account and route real revenue through it. Issuers verify cash balance and cash flow straight from the linked bank account. A credit bureau never enters the picture at this step. A personal account mixed with business deposits will not satisfy the check.\n4. Confirm the issuer's minimum revenue or cash-reserve threshold before applying. These vary by issuer and can be steep for a company only a few months old.\n5. Apply directly with an issuer that states EIN-only or no-personal-guarantee underwriting in its own terms. Never assume a mainstream bank card works this way just because the form doesn't ask for a Social Security number up front.\n\nEach application still leaves a mark somewhere. A hard pull, if one happens, typically lands on the business's file rather than the owner's. Confirm that directly with the issuer before you apply, since policies differ and change.",
+      },
+      {
+        heading: "The Kinds of Business Credit That Accept an EIN-Only Application",
+        body:
+          "Three products realistically fit an EIN-only application, and only one of them skips a personal guarantee outright. Corporate charge cards from fintech issuers underwrite the business's cash balance, revenue, or funding round. They genuinely drop the personal guarantee for companies that qualify. Secured business credit cards still check the owner's personal credit and usually still require a guarantee. They accept thinner files because a cash deposit backs the limit, which makes them a realistic on-ramp rather than a true EIN-only product.\n\nVendor trade credit lines are the third path, and they are easy to overlook. A supplier that extends Net-30 terms tied to the business's EIN, not the owner's Social Security number, functions as an EIN-only credit line even though it isn't a card. Paying those invoices on time can build a business credit file with the same bureaus a credit card would report to, without any personal credit pull along the way.",
+      },
+      {
+        heading: "EIN-Only Cards vs. Personal-Guarantee Cards vs. Secured Cards",
+        body:
+          "The three paths trade approval difficulty for personal liability in different ways. Seeing them side by side makes the tradeoff concrete.\n\n| | EIN-only charge card | Traditional PG card | Secured card |\n|---|---|---|---|\n| Personal credit check | No | Yes | Usually yes |\n| Personal guarantee | No, for qualifying companies | Yes | Usually yes |\n| Approval bar | High: revenue, cash balance, entity type | Moderate: personal credit score | Low: cash deposit covers the risk |\n| Balance structure | Charge card, paid in full each cycle | Revolving, can carry a balance | Revolving, can carry a balance |\n| Realistic fit | Established company with real cash flow | Most small businesses today | Brand-new business building credit |\n\nAn EIN-only charge card protects the owner's personal liability completely. It demands the most from the business up front. A secured card asks the least of the business and the most of the owner's cash, since the deposit is what makes approval possible. Most owners land in the middle, on a traditional card that still requires a personal guarantee, simply because it's the option their current numbers clear.",
+      },
+      {
+        heading: "What Brex and Ramp Check Before Waiving a Personal Guarantee",
+        body:
+          "Brex and Ramp both state directly on their own sites that they underwrite the business rather than the owner. Each still runs a real check before approving a card. [Brex](https://www.brex.com/product/credit-card) says it does not require a personal guarantee or a personal credit check. It bases the credit limit instead on the company's revenue, amount raised, or cash balance, and it's open to U.S.-incorporated companies, including startups and LLCs. [Ramp](https://ramp.com/corporate-cards) makes the same no-personal-guarantee, no-personal-credit-check claim. Its own eligibility page adds specifics: the business must be a corporation, LLC, or LP, and it must carry at least $25,000 in a linked U.S. business bank account. It also needs a valid EIN and a physical U.S. address rather than a P.O. box or virtual office.\n\nThat $25,000 detail is easy to miss, and it's the real failure mode to plan around. A brand-new LLC formed last month can have a perfectly valid EIN and a clean cap table, and still get declined by both issuers. That's not because of a credit check. It's because the company hasn't built up the cash balance or revenue history the underwriting requires. EIN-only removes the personal credit check. It does not remove underwriting.\n\nThe confusion runs the other way too. [Capital on Tap](https://www.capitalontap.com/us/legal/personal-guaranty/) markets a soft-pull application that doesn't dent the owner's personal credit score just to apply, which sounds close to EIN-only. Its own personal guaranty agreement still makes the signer liable, instead of or in addition to the business, for the full balance. Its account terms also authorize the bank to pull credit reports on an ongoing basis. A soft pull at application is not the same thing as no personal guarantee, even though the two claims get marketed in ways that blur together.",
+      },
+      {
+        heading: "The Pros and Cons of an EIN-Only Business Credit Card",
+        body:
+          "The upside is real for a business that qualifies. The downside is that few businesses do, at least early on.\n\n- Protects the owner's personal credit and assets from the business's balance, since no guarantee ties the debt back to a person.\n- Builds a business credit file independent of the owner's Social Security number, useful for future financing that checks the business bureaus directly rather than the owner's personal file.\n- Often bundles per-employee spending limits and virtual cards, which lets a manager cap what each employee can spend before the swipe happens instead of catching it after.\n- Sets a steep approval bar: real revenue, a meaningful cash balance, and an accepted entity type rule out most new businesses.\n- Almost always structures as a charge card, so the full balance comes due each billing cycle instead of carrying like a revolving card.\n- Narrows the field sharply. A handful of issuers offer this today, against a wide market of cards that require a personal guarantee.",
+      },
+      {
+        heading: "Who an EIN-Only Card Is Not For",
+        body:
+          "A brand-new business with no revenue history and no business bank balance is not a fit for a true EIN-only card, regardless of how clean the EIN application was. Neither is a solo owner running as a sole proprietorship, since most EIN-only issuers require an incorporated entity before they'll even review an application.\n\nStart somewhere else instead. A secured business credit card, backed by a cash deposit that becomes the limit, still checks the owner's personal credit but accepts a much thinner file. Net-30 vendor trade accounts build a business credit file with no personal pull at all. Either path, run for six months to a year, tends to produce the revenue history and business credit file an EIN-only issuer wants to see on a second attempt. Our [small business financing guide](/guides/small-business-financing-guide/) covers the wider set of financing options while that history builds.",
+      },
+      {
+        heading: "What Would Change This Answer",
+        body:
+          "This verdict shifts once a business can show six months to a year of real bank deposits and a cash balance near an issuer's stated minimum. That gap is exactly what separates a decline from an approval today. It would also shift if a mainstream bank started underwriting business cards on company financials the way Brex and Ramp already do, rather than leaving that approach to fintech issuers alone. That single change would widen a field that's currently narrow by design. A lower cash-reserve threshold from an existing issuer would have the same effect for a smaller company sooner.\n\nNone of that has happened broadly yet. Until it does, EIN-only credit stays a product for an established, cash-positive business rather than a shortcut around a thin credit file.",
+      },
+      {
+        heading: "The Next Step If You Want an EIN-Only Card",
+        body:
+          "Pull your business bank statements from the last six months and compare the average balance against Ramp's stated $25,000 minimum before you apply anywhere. That single number predicts most EIN-only declines better than anything else on the application. If your numbers clear it, apply directly with Brex or Ramp rather than a card that only implies EIN-only status in its marketing. If they don't clear it yet, a secured card or vendor trade credit builds the file you need in the meantime. Our [business line of credit calculator](/business-line-of-credit/) can help size how much revolving credit your current cash flow can support while you wait. See our full [roundup of the best business credit cards](/roundup/best-business-credit-cards/) for a wider set of options across every credit tier.",
+      },
+    ],
+    tools: [
+      { href: "/business-line-of-credit/", label: "Business line of credit" },
+    ],
+    faqs: [
+      {
+        question: "Can a new LLC get a business credit card with just an EIN?",
+        answer:
+          "Usually not right away. Most issuers that skip a personal guarantee still require six months to a year of real revenue, plus a cash balance near their stated minimum. A brand-new LLC rarely has either yet. A secured business card or a Net-30 vendor account builds the track record an EIN-only issuer wants to see on a later application.",
+      },
+      {
+        question: "Do EIN-only business credit cards hurt my personal credit?",
+        answer:
+          "No, not the ones that genuinely qualify as EIN-only. Issuers like Brex and Ramp state directly that they don't pull personal credit or require a personal guarantee. On-time payments and the balance itself stay off the owner's personal credit report. A card that offers only a soft pull at application, without also dropping the personal guarantee, can still affect personal credit if the business defaults.",
+      },
+      {
+        question: "What credit score do I need for an EIN-only business credit card?",
+        answer:
+          "None, technically, since these issuers don't check a personal credit score at all. They check the business instead: entity type, cash balance, revenue, and sometimes funding raised. A strong personal score won't offset a thin business bank balance, and a weak personal score won't count against an application that clears the business thresholds.",
+      },
+      {
+        question: "Is a business credit card with no personal guarantee the same as a secured business card?",
+        answer:
+          "No. A secured card still checks the owner's personal credit and usually still requires a guarantee, but accepts a thinner file because a cash deposit backs the credit limit. A true no-personal-guarantee card skips both the personal check and the guarantee, in exchange for a much higher revenue and cash-balance bar.",
+      },
+      {
+        question: "Can a sole proprietor apply for an EIN-only business credit card?",
+        answer:
+          "Rarely, with the issuers that offer true EIN-only underwriting today. Ramp and Brex both require an incorporated entity, an LLC, corporation, or LP, before they'll review an application. That rules out most sole proprietorships even when the owner has a valid EIN. Incorporating the business is usually the first step. The credit application comes after.",
+      },
+      {
+        question: "What happens if my business defaults on an EIN-only charge card?",
+        answer:
+          "The business's own credit and banking relationship take the hit. The owner's personal credit stays untouched, since no personal guarantee ties the debt to an individual. That is the entire trade a genuine EIN-only card makes: a much steeper approval bar in exchange for keeping the business's risk separate from the owner's.",
+      },
+    ],
+    sources: [
+      { label: "IRS: Employer identification numbers", url: "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers" },
+      { label: "Brex: Business credit card (personal guarantee and underwriting)", url: "https://www.brex.com/product/credit-card" },
+      { label: "Ramp: Corporate credit cards", url: "https://ramp.com/corporate-cards" },
+      { label: "Capital on Tap: Personal guaranty terms", url: "https://www.capitalontap.com/us/legal/personal-guaranty/" },
+    ],
+  },
 ];
