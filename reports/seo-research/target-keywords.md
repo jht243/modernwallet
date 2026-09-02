@@ -8546,6 +8546,9 @@
 - 60/40 portfolio calculator → /portfolio/60-40-portfolio-calculator/
 - expected return calculator → /portfolio/expected-return-calculator/
 - portfolio risk calculator → /portfolio/portfolio-risk-calculator/
+- portfolio longevity calculator (proposed, 2026-09-02 autocomplete-pass) → /portfolio/portfolio-longevity-calculator/
+- dividend income calculator (proposed, 2026-09-02 autocomplete-pass) → /portfolio/dividend-income-calculator/
+- portfolio comparison calculator (proposed, 2026-09-02 autocomplete-pass) → /portfolio/portfolio-comparison-calculator/
 
 ---
 
@@ -8706,3 +8709,85 @@ SEMRUSH Lens-1 competitor-gap pass, live-refreshed competitor set (added `wisemo
 ### Already-shipped, now tracked as supporting keywords (no page edit this run)
 
 `mortgage rates`, `how to budget`, `current mortgage rates`, `roth ira`, `roth ira calculator`, `best ira accounts`, `best ira`, `credit cards`, `life insurance`, `term life insurance`, `whole life insurance`, `best credit cards` — all found live on-site during this run's ground-truth check but were under-tracked in this document until now.
+
+## 2026-09-02 autocomplete-pass — newly classified keywords
+
+Second Autocomplete mining of 6 seeds (iul calculator — live but never mined; auto loan calculator, portfolio calculator — both have `## <Hub> — /route/` clusters above, new spokes added there; elder care planning, estate planning calculator — remined after the 2026-07-08 pass; business loan payoff calculator — never mined). 878 raw suggestions merged/clustered → 75 actionable rows (28 new content, 18 metadata, 29 body) after: 115 IUL-seed autocomplete keyword-collisions ("oil calculator"/"il calculator" — Google fuzzy-matched "iul"→"oil"/"il", unrelated verticals), 33 navigational specific-third-party-business queries, 8 already-shipped/exact-duplicate drops, and 4 misc noise/malformed drops. Full detail incl. all member-keyword variants, gate decisions, and exclusions: `reports/keyword-pass/2026-09-02.md`.
+
+| keyword | action | target | tier | volume |
+|---|---|---|---|---|
+| allianz iul calculator (+6 variants) | create new content | `/guides/iul-illustrations-by-carrier/` | new-vertical | Autocomplete signal |
+| iul commission calculator | create new content | `/guides/iul-agent-commission-explained/` | new-vertical | Autocomplete signal |
+| iul loan calculator | create new content | `/iul-calculator/loan-calculator/` | new-vertical | Autocomplete signal |
+| iul income calculator (+1 variant) | create new content | `/iul-calculator/retirement-income-calculator/` | new-vertical | Autocomplete signal |
+| iul calculator for kids | create new content | `/guides/iul-for-kids-child-life-insurance/` | new-vertical | Autocomplete signal |
+| how many months is a typical car loan (+12 variants) | create new content | `/guides/how-long-should-a-car-loan-be/` | new-vertical | Autocomplete signal |
+| auto loan calculator america first (+94 variants) | create new content | `/roundup/best-auto-loan-calculators-by-bank-and-credit-union/` | new-vertical | Autocomplete signal |
+| auto loan calculator dubai (+29 variants) | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| auto loan calculator zero interest (+2 variants) | create new content | `/guides/0-percent-apr-car-loan-explained/` | new-vertical | Autocomplete signal |
+| auto loan calculator personal | create new content | `/compare/personal-loan-vs-auto-loan/` | new-vertical | Autocomplete signal |
+| how calculate portfolio beta (+23 variants) | create new content | `/guides/portfolio-metrics-formulas-explained/` | new-vertical | Autocomplete signal |
+| how long will my portfolio last calculator (+8 variants) | create new content | `/portfolio/portfolio-longevity-calculator/` | new-vertical | Autocomplete signal |
+| what is portfolio yield (+12 variants) | create new content | `/portfolio/dividend-income-calculator/` | new-vertical | Autocomplete signal |
+| portfolio backtest calculator (+11 variants) | create new content | `/roundup/best-portfolio-backtesting-and-analysis-tools/` | new-vertical | Autocomplete signal |
+| portfolio margin calculator (+6 variants) | create new content | `/guides/portfolio-margin-and-leverage-explained/` | new-vertical | Autocomplete signal |
+| portfolio calculator crypto | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| portfolio diversification calculator india (+10 variants) | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| portfolio comparison calculator (+4 variants) | create new content | `/portfolio/portfolio-comparison-calculator/` | new-vertical | Autocomplete signal |
+| portfolio mortgage calculator | create new content | `/guides/portfolio-loan-mortgage-explained/` | new-vertical | Autocomplete signal |
+| how to make a care plan for the elderly (+4 variants) | create new content | `/guides/elder-care-planning-checklist/` | new-vertical | Autocomplete signal |
+| aged care planning australia (+19 variants) | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| real estate tax calculator by zip code (+7 variants) | create new content | `/real-estate/property-tax-calculator/` | new-vertical | Autocomplete signal |
+| financial planning calculator app (+10 variants) | create new content | `/guides/financial-planning-calculator/` | new-vertical | Autocomplete signal |
+| estate tax calculator alberta (+27 variants) | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| us estate tax calculator for canadian residents (+1 variant) | create new content | `/estate-planning/us-estate-tax-for-non-citizens/` | new-vertical | Autocomplete signal |
+| business loan calculator how much can i borrow | create new content | `/guides/how-much-business-loan-can-i-qualify-for/` | new-vertical | Autocomplete signal |
+| business loan repayment calculator with balloon | create new content | `/guides/balloon-payment-business-loan-explained/` | new-vertical | Autocomplete signal |
+| business loan repayment calculator australia (+23 variants) | create new content | `n/a — logged, no dedicated page planned this pass` | new-vertical | Autocomplete signal |
+| how much auto loan can i afford (+2 variants) | update existing metadata | `/auto-loan/car-affordability-calculator/` | new-vertical | Autocomplete signal |
+| auto loan calculator amortization (+9 variants) | update existing metadata | `/auto-loan/amortization-schedule/` | new-vertical | Autocomplete signal |
+| auto loan calculator biweekly (+8 variants) | update existing metadata | `/auto-loan/extra-payment-calculator/` | new-vertical | Autocomplete signal |
+| auto loan calculator early payoff (+5 variants) | update existing metadata | `/auto-loan/payoff-calculator/ + /auto-loan/early-payoff-calculator/` | new-vertical | Autocomplete signal |
+| auto loan calculator interest (+8 variants) | update existing metadata | `/auto-loan/interest-calculator/` | new-vertical | Autocomplete signal |
+| auto loan calculator for refinance (+1 variant) | update existing metadata | `/auto-loan/refinance-calculator/` | new-vertical | Autocomplete signal |
+| portfolio risk calculator excel (+6 variants) | update existing metadata | `/portfolio/portfolio-risk-calculator/` | new-vertical | Autocomplete signal |
+| portfolio beta calculator (+9 variants) | update existing metadata | `/portfolio/portfolio-risk-calculator/` | new-vertical | Autocomplete signal |
+| portfolio calculator expected return (+19 variants) | update existing metadata | `/portfolio/expected-return-calculator/` | new-vertical | Autocomplete signal |
+| portfolio calculator asset allocation (+21 variants) | update existing metadata | `/portfolio/asset-allocation-calculator/` | new-vertical | Autocomplete signal |
+| portfolio calculator app (+5 variants) | update existing metadata | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio sharpe calculator | update existing metadata | `/portfolio/` | new-vertical | Autocomplete signal |
+| elder care insurance cost (+1 variant) | update existing metadata | `/elder-care/long-term-care-cost-calculator/` | new-vertical | Autocomplete signal |
+| elder care medicaid planning (+1 variant) | update existing metadata | `/elder-care/medicaid-spend-down-calculator/` | new-vertical | Autocomplete signal |
+| estate tax calculator federal (+24 variants) | update existing metadata | `/estate-planning/estate-tax-calculator/` | new-vertical | Autocomplete signal |
+| how much does it cost to estate planning (+6 variants) | update existing metadata | `/estate-planning/will-cost-calculator/` | new-vertical | Autocomplete signal |
+| can you pay off a business loan early (+2 variants) | update existing metadata | `/business-loan-payoff/` | new-vertical | Autocomplete signal |
+| commercial loan payment calculator with amortization (+1 variant) | update existing metadata | `/business-loan-payoff/` | new-vertical | Autocomplete signal |
+| best iul calculator (+13 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| what is iul calculator (+6 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| is iul worth it (+2 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul calculator excel (+2 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul death benefit calculator | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul cost calculator (+3 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul calculator cash value (+1 variant) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul growth calculator (+6 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| iul illustration calculator (+4 variants) | update existing body text | `/iul-calculator/` | new-vertical | Autocomplete signal |
+| what is auto loan calculator (+25 variants) | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| what auto loan rates (+23 variants) | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| are car loan interest rates annual or monthly (+5 variants) | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| how much longer on my car loan (+2 variants) | update existing body text | `/auto-loan/payoff-calculator/` | new-vertical | Autocomplete signal |
+| are auto loans a good idea | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| auto loan calculator based on credit score (+5 variants) | update existing body text | `/auto-loan/interest-calculator/` | new-vertical | Autocomplete signal |
+| auto loan calculator that includes taxes and fees (+48 variants) | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| auto loan calculator used car (+1 variant) | update existing body text | `/auto-loan/` | new-vertical | Autocomplete signal |
+| how diversified is my portfolio calculator (+3 variants) | update existing body text | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio tax calculator | update existing body text | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio performance calculator (+22 variants) | update existing body text | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio calculator for retirement (+1 variant) | update existing body text | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio cost calculator (+1 variant) | update existing body text | `/portfolio/` | new-vertical | Autocomplete signal |
+| portfolio rebalancing calculator excel (+2 variants) | update existing body text | `/guides/portfolio-rebalancing/` | new-vertical | Autocomplete signal |
+| what is elder care planning (+4 variants) | update existing body text | `/elder-care/` | new-vertical | Autocomplete signal |
+| who can do advance care planning (+1 variant) | update existing body text | `/guides/first-time-estate-planning/` | new-vertical | Autocomplete signal |
+| elder care planning attorney (+16 variants) | update existing body text | `/guides/how-to-protect-assets-from-nursing-home/` | new-vertical | Autocomplete signal |
+| does elder law planning include t&e lawyers | update existing body text | `/compare/elder-law-attorney-vs-estate-planning-attorney/` | new-vertical | Autocomplete signal |
+| at what age should you do estate planning (+2 variants) | update existing body text | `/estate-planning/` | new-vertical | Autocomplete signal |
+| how do you calculate loan payoff (+8 variants) | update existing body text | `/business-loan-payoff/` | new-vertical | Autocomplete signal |
