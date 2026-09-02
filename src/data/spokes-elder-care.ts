@@ -17,7 +17,7 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
     islandId: "medicaid-spend-down",
     title: "Medicaid Spend-Down Calculator: Your Exact Target by State",
     metaDescription:
-      "Get your exact Medicaid spend-down target by state, free. See countable assets, CSRA + MMMNA for your spouse, home equity limit, and income cap check for 2026.",
+      "Get your exact Medicaid spend-down target for elder care planning, by state, free. See countable assets, CSRA, MMMNA, home equity limit & income cap.",
     targetKeyword: "medicaid spend down calculator",
     estimatedVolume: 5400,
     estimatedKD: 32,
@@ -201,7 +201,7 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
     islandId: "long-term-care-cost",
     title: "Long-Term Care Cost Calculator: Nursing Home & Home Care",
     metaDescription:
-      "Free long-term care cost calculator. Projected nursing home, assisted living, and home aide cost by state + inflation + Medicare gap + Medicaid likelihood.",
+      "Free long-term care cost & insurance calculator. Projected nursing home, assisted living, and home aide cost by state + inflation + Medicare + Medicaid.",
     targetKeyword: "long term care cost calculator",
     estimatedVolume: 6600,
     estimatedKD: 28,

@@ -12,7 +12,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     slug: "asset-allocation-calculator",
     title: "Asset Allocation Calculator: Stocks, Bonds & Cash",
     metaDescription:
-      "Use this asset allocation calculator to split your portfolio across stocks, bonds, real estate, and cash. See expected return, risk, and 25-year growth.",
+      "Use this asset allocation calculator to split, weight, and balance your portfolio mix across stocks, bonds, real estate, and cash — see return and risk.",
     targetKeyword: "asset allocation calculator",
     estimatedVolume: 8100,
     estimatedKD: 48,
@@ -103,9 +103,9 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   {
     calculator: "portfolio",
     slug: "expected-return-calculator",
-    title: "Expected Return Calculator: Portfolio Weighted Average",
+    title: "Expected Return Calculator: Portfolio Growth & ROI Forecast",
     metaDescription:
-      "Use this expected return calculator to find your portfolio's weighted average return across stocks, bonds, real estate, and cash in seconds.",
+      "Use this expected return calculator to forecast your portfolio's growth, ROI, and weighted-average return across stocks, bonds, real estate, and cash.",
     targetKeyword: "expected return calculator",
     estimatedVolume: 2400,
     estimatedKD: 40,
@@ -143,9 +143,9 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   {
     calculator: "portfolio",
     slug: "portfolio-risk-calculator",
-    title: "Portfolio Risk Calculator: Volatility & Sharpe Ratio",
+    title: "Portfolio Risk Calculator: Variance, Beta & Sharpe Ratio",
     metaDescription:
-      "Use this portfolio risk calculator to measure volatility and the Sharpe ratio, then compare risk-adjusted returns across two sample portfolios.",
+      "Free online portfolio risk calculator — measure variance (SD), beta, correlation, drawdown, CAGR, and XIRR instantly, no spreadsheet required.",
     targetKeyword: "portfolio risk calculator",
     estimatedVolume: 1300,
     estimatedKD: 38,

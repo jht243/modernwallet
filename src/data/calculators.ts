@@ -263,7 +263,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 5,
     metaTitle: "Portfolio Calculator: Return, Risk & Growth",
     metaDescription:
-      "Free portfolio calculator: enter your stocks, bonds, real estate, and cash to estimate expected return, risk, Sharpe ratio, and long-term growth.",
+      "Free online portfolio calculator — no app or spreadsheet needed. Enter stocks, bonds, real estate, and cash to estimate return, risk, Sharpe ratio, and growth.",
     targetKeyword: "portfolio calculator",
     h1: "Portfolio Calculator",
     intro:
@@ -812,9 +812,9 @@ export const CALCULATORS: CalculatorDef[] = [
     islandId: "business-loan-payoff",
     label: "Business Loan Payoff",
     navOrder: 16,
-    metaTitle: "Business Loan Payoff Calculator: Save on Interest",
+    metaTitle: "Business Loan Payoff Calculator: Early Payoff & Schedule",
     metaDescription:
-      "Free business loan payoff calculator: see how an extra monthly payment shortens your payoff date and interest cost on a standard amortizing term loan.",
+      "Free business loan payoff calculator: see your full amortization schedule and how early extra payments cut your payoff date and interest cost instantly.",
     targetKeyword: "business loan payoff calculator",
     h1: "Business Loan Payoff Calculator",
     intro:

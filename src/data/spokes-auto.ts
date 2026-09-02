@@ -14,7 +14,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "payoff-calculator",
     title: "Auto Loan Payoff Calculator: See Your Payoff Date Fast",
     metaDescription:
-      "Use our free auto loan payoff calculator to find your payoff date and see how much extra payments save in interest. Get instant, accurate results.",
+      "Use our free auto loan payoff calculator to find your payoff date and full payment schedule, and see how much extra payments save in interest instantly.",
     targetKeyword: "auto loan payoff calculator",
     estimatedVolume: 8100,
     estimatedKD: 48,
@@ -88,9 +88,9 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   {
     calculator: "auto-loan",
     slug: "extra-payment-calculator",
-    title: "Auto Loan Extra Payment Calculator: Interest Savings",
+    title: "Auto Loan Extra Payment Calculator: Biweekly vs Extra",
     metaDescription:
-      "Use this auto loan extra payment calculator to see how much extra monthly payments save you in interest and how many months they cut from your car loan.",
+      "Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.",
     targetKeyword: "auto loan extra payment calculator",
     estimatedVolume: 1300,
     estimatedKD: 40,
@@ -151,7 +151,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "early-payoff-calculator",
     title: "Pay Off Car Loan Early Calculator: Interest & Time Saved",
     metaDescription:
-      "Use our pay off car loan early calculator to see how extra payments cut your interest and shorten your loan. Free, instant results with a real example.",
+      "Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.",
     targetKeyword: "pay off car loan early calculator",
     estimatedVolume: 1000,
     estimatedKD: 38,
@@ -212,7 +212,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "amortization-schedule",
     title: "Auto Loan Amortization Calculator & Schedule",
     metaDescription:
-      "Use this free auto loan amortization calculator to see a month-by-month schedule of principal, interest, and balance. Know exactly where each payment goes.",
+      "Use this free auto loan amortization calculator — like an Excel schedule — to see a year-by-year breakdown of principal, interest, and balance for your loan.",
     targetKeyword: "auto loan amortization calculator",
     estimatedVolume: 1600,
     estimatedKD: 44,
@@ -272,7 +272,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "interest-calculator",
     title: "Auto Loan Interest Calculator: Total Interest in 2026",
     metaDescription:
-      "Use our auto loan interest calculator to see total interest by rate, term, and down payment. See how a longer loan quietly costs you more.",
+      "Use our auto loan interest calculator to see total interest paid by rate, term, and down payment. See how a longer loan quietly costs you more.",
     targetKeyword: "auto loan interest calculator",
     estimatedVolume: 880,
     estimatedKD: 36,
@@ -338,7 +338,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "car-affordability-calculator",
     title: "Car Affordability Calculator: How Much Car Can I Afford?",
     metaDescription:
-      "Use our car affordability calculator to turn a monthly budget into a real price. See how much car you can afford, plus the 20/4/10 rule explained.",
+      "Use our car affordability calculator to turn your monthly payment budget into a real price. See how much car you can afford, plus the 20/4/10 rule explained.",
     targetKeyword: "car affordability calculator",
     estimatedVolume: 6600,
     estimatedKD: 39,

@@ -11,9 +11,9 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     calculator: "estate-planning",
     slug: "will-cost-calculator",
     islandId: "will-cost",
-    title: "Average Cost of a Will Calculator — 2026 State Prices",
+    title: "Estate Planning & Will Cost Calculator — 2026 State Prices",
     metaDescription:
-      "Average cost of a will: $300 to $7,500+ attorney-drafted, or as low as $99 online. Free calculator compares your state's price by complexity.",
+      "See the real cost of estate planning and an estate planner: wills run $300 to $7,500+ attorney-drafted, or as low as $99 online. Free state calculator.",
     targetKeyword: "will cost calculator",
     estimatedVolume: 6400,
     estimatedKD: 38,
@@ -210,9 +210,9 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
     calculator: "estate-planning",
     slug: "estate-tax-calculator",
     islandId: "estate-tax",
-    title: "Estate Tax Calculator 2026: Federal + State Exposure",
+    title: "Federal + State Estate Tax Calculator: All 50 States, 2026",
     metaDescription:
-      "Free estate tax calculator. See your federal ($15M) and state estate tax exposure for 2026, including the NY 105% cliff and 5 inheritance-tax states.",
+      "Free estate tax calculator: federal ($15M) + all 12 state + 5 inheritance-tax exposure for 2026, with the exact formula, NY's 105% cliff, and penalty math.",
     targetKeyword: "estate tax calculator",
     estimatedVolume: 8100,
     estimatedKD: 42,
