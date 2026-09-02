@@ -1,4 +1,4 @@
-# Competitor Monitor — Discovery (2026-08-31 run)
+# Competitor Monitor — Discovery (2026-09-02 run)
 
 Reuses `reports/comparison-content-creator/discovery.md` for BASE_URL, framework, content formats, entity universe, publish conventions. Key facts:
 
@@ -12,7 +12,7 @@ Reuses `reports/comparison-content-creator/discovery.md` for BASE_URL, framework
 
 - **Roster:** `scripts/competitor_monitor/competitors.json` — 12 enabled competitors (Calculator.net, Omni Calculator, The Calculator Site, MortgageCalculator.org, SmartAsset, Bankrate, NerdWallet, CalcXML, Dinkytown, Financial Mentor, Investor.gov, Investopedia).
 - **Ledger:** `reports/competitor-monitor/ledger.json` (~16MB) — 12 competitors already tracked (not a first run).
-- **Previous baseline chart:** `reports/competitor-monitor/baseline-2026-08-28.md/.json` (3 days ago). This run's chart diffs against it.
+- **Previous baseline chart:** `reports/competitor-monitor/baseline-2026-08-31.md/.json` (2 days ago). This run's chart diffs against it.
 - **Existing tools/interactives:** project has multiple calculator hub routes/components (`src/lib/*`, `src/components/*`) — Phase 3c mirrors this pattern.
 - **Tools sitemap:** auto-generated via `@astrojs/sitemap`, no separate file.
 
