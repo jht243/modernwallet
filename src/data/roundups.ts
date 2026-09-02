@@ -6580,6 +6580,295 @@ export const ROUNDUPS: RoundupEntry[] = [
     ],
   },
 
+  // ── Best Student Loan Refinance Companies ───────────────────────────────
+  // competitor-monitor 2026-09-02. register: operator · medium: text → text · page type: review (1500-word floor).
+  {
+    slug: "best-student-loan-refinance",
+    title: "Best Student Loan Refinance Companies of 2026: Compare Rates",
+    metaDescription:
+      "Compare the best student loan refinance companies of 2026 by rate, fees, and requirements, and see what refinancing costs you if you have federal loans.",
+    targetKeyword: "best student loan refinance companies",
+    category: "student loan refinance companies",
+    angle: "best",
+    h1: "Best Student Loan Refinance Companies of 2026",
+    intro:
+      "The best student loan refinance company for you depends on your credit profile. It also depends on whether you want one direct lender or a marketplace that shops several at once. In the guides we publish here, we check the federal trade-off before we check the rate, because it usually matters more.\n\nRefinancing a federal loan into a private one means giving up income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), and federal forbearance. None of it comes back later. Your income or job situation can change. The loan terms will not.\n\nWe checked seven active lenders and marketplaces directly against their own sites. We scored each one on its published rate range, its minimum credit and income requirements, its fee structure, and what happens if your income drops after you refinance. A lender that has quietly stopped offering the product didn't make the cut. Neither did one that hides its rate behind a phone call.",
+    rankingCriteria:
+      "We scored each lender on five things: rate transparency, minimum credit and income requirements, fee structure, income-drop protections, and cosigner release. A lender that only shows a real rate after a full application lost points. So did one that turned out to have quietly exited the refinance market.\n\nA competitive headline number couldn't make up for either problem. Transparency counted for as much as price.",
+    options: [
+      {
+        name: "SoFi",
+        bestFor: "Borrowers who want a large direct lender with member perks built in",
+        description:
+          "[SoFi](https://www.sofi.com/refinance-student-loan/) is one of the largest direct-to-consumer refinance lenders. Its own site advertises fixed rates starting at 3.99% APR (annual percentage rate) for well-qualified borrowers. You need at least $5,000 in eligible student loans to refinance. SoFi charges no origination fee, no prepayment penalty, and no late fee on the loan itself.\n\nRefinancing with SoFi also opens up its SoFi Coach tools: free credit score monitoring and a budget planner, both tied to the same account as your loan. That bundle matters most if you want one login for everything. It matters less if you're purely chasing the lowest possible number.",
+        strengths: [
+          "Fixed rates start at 3.99% APR for well-qualified borrowers, per SoFi's own site",
+          "No origination fee, prepayment penalty, or late fee, so the APR you're quoted is close to your real cost",
+          "SoFi Coach bundles credit monitoring and a budget planner into the same account as your loan",
+        ],
+        limitations: [
+          "SoFi doesn't publish a minimum credit score, so you won't know where you stand until you check your rate",
+          "The member perks matter less if you don't plan to use SoFi's other banking products",
+          "Refinancing any federal balance here still forfeits federal protections, the same trade-off as any other private lender",
+        ],
+        pricing:
+          "Fixed rates from 3.99% APR as of this writing. No origination fee, no prepayment penalty, no late fee. Confirm your personal rate at [sofi.com](https://www.sofi.com/refinance-student-loan/), since it depends on your credit, income, and the term you pick.",
+      },
+      {
+        name: "Earnest",
+        bestFor: "Borrowers who want a direct lender backed by Navient's balance sheet",
+        description:
+          "[Earnest](https://www.earnest.com/refinance-student-loans) has operated as a Navient brand since 2017, per [Navient's own acquisition announcement](https://news.navient.com/news-releases/news-release-details/navient-announces-agreement-acquire-earnest-leading-financial). It still runs its own underwriting and pricing rather than folding into Navient's other loan products. Earnest's own site advertises fixed rates starting at 4.45% APR for its refinance loan.\n\nEarnest doesn't publish its variable-rate range, minimum credit score, or full fee schedule anywhere we could confirm directly. Check your own terms once you start an application. Treat the 4.45% APR figure as a starting point. It's not a locked-in number for your situation.",
+        strengths: [
+          "Fixed rates start at 4.45% APR per Earnest's own site, competitive with the other direct lenders here",
+          "Backed by Navient's financial resources while keeping its own brand, underwriting, and customer service",
+          "A straightforward direct-lender application, without your information going out to multiple partners the way a marketplace application does",
+        ],
+        limitations: [
+          "Earnest doesn't publish its variable-rate range, minimum credit score, or fee schedule anywhere we could confirm",
+          "You have to start an application to see your real numbers, the same friction as most direct lenders here",
+          "A history of servicing problems with Navient on other loans is worth weighing before you sign with an affiliated brand",
+        ],
+        pricing:
+          "Fixed rates from 4.45% APR as of this writing, per Earnest's own site. Confirm your full rate range, term options, and any fees directly at [earnest.com](https://www.earnest.com/refinance-student-loans) before signing anything.",
+      },
+      {
+        name: "ELFI",
+        bestFor: "Bachelor's-degree borrowers who want a fixed minimum loan size and a named advisor",
+        description:
+          "[ELFI](https://www.elfi.com/refinance-student-loans/) (Education Loan Finance) sets a clear bar on its own site. You need at least $10,000 in student loan debt and a bachelor's degree or higher. On top of that: a minimum credit score of 680, at least 36 months of credit history, and a minimum income of $35,000. Fixed rates start at 4.29% APR and variable rates start at 4.74% APR. There's no application fee, no origination fee, and no prepayment penalty.\n\nEvery ELFI applicant gets a named Student Loan Advisor who stays with the loan through funding. There's no rotating call queue. That structure suits a borrower who wants one point of contact more than it suits someone chasing the single lowest rate across every lender at once.",
+        strengths: [
+          "Fixed rates start at 4.29% APR, among the lowest fixed starting rates we confirmed directly on a lender's own site",
+          "A named Student Loan Advisor stays on your file, so you're not starting over with a new person each call",
+          "No application fee, origination fee, or prepayment penalty, confirmed on ELFI's own site",
+        ],
+        limitations: [
+          "The $10,000 minimum loan size rules out anyone refinancing a smaller balance",
+          "A bachelor's degree or higher is required, so an associate-degree or some-college borrower doesn't qualify here",
+          "The $35,000 minimum income and 680 minimum credit score are stricter than several other lenders on this list",
+        ],
+        pricing:
+          "Fixed rates from 4.29% APR and variable rates from 4.74% APR, per ELFI's own site. No application, origination, or prepayment fees. Confirm your rate at [elfi.com](https://www.elfi.com/refinance-student-loans/), since it depends on your term and credit profile.",
+      },
+      {
+        name: "Splash Financial",
+        bestFor: "Borrowers who want to compare several lenders' offers from one application",
+        description:
+          "[Splash Financial](https://www.splashfinancial.com/) isn't a direct lender. It's a marketplace that shops your application across a network of bank and credit union partners and shows you multiple offers from one soft credit pull. Its own site lists fixed rates from 3.99% APR to 11.24% APR and variable rates from 4.74% APR to 11.24% APR. There's no application fee, no origination fee, and no prepayment penalty on the refinance product itself.\n\nSplash Financial's own site names 700 as the credit score its partner lenders generally prefer. Income and citizenship status factor in too. Because a partner lender actually funds your loan, its specific protections and hardship options come from that partner. Splash itself doesn't set them, so read the partner's terms before you sign.",
+        strengths: [
+          "Comparing multiple lenders' offers from one soft pull saves the separate hard inquiries each direct application would cost",
+          "Rates span from 3.99% APR at the low end to 11.24% APR, covering a wide range of credit profiles",
+          "No application fee, origination fee, or prepayment penalty on the refinance loan itself",
+        ],
+        limitations: [
+          "The lender that actually funds your loan varies by application, so your terms depend on which partner picks you up",
+          "A preferred credit score of 700 or higher means thinner-credit borrowers may see fewer partner offers",
+          "Because Splash isn't the lender, its customer service can only go so far once your loan funds with a partner",
+        ],
+        pricing:
+          "Fixed rates from 3.99% APR to 11.24% APR and variable rates from 4.74% APR to 11.24% APR, per Splash Financial's own site. No fees on the marketplace side. Check your personalized offers at [splashfinancial.com](https://www.splashfinancial.com/).",
+      },
+      {
+        name: "College Ave",
+        bestFor: "Borrowers who want a straightforward, fee-free direct refinance without a marketplace step",
+        description:
+          "[College Ave](https://www.collegeave.com/student-loans/refinance/) refinances loans starting at $5,000. Fixed and variable rates both run 6.99% APR to 13.99% APR including its autopay discount, per its own site. There's no application fee and no origination fee. Its maximum loan size scales with your degree: up to $150,000 for most degrees, $300,000 for other graduate or professional degrees, and $500,000 for medical, dental, pharmacy, or veterinary doctorates.\n\nThose higher graduate caps make College Ave worth checking if you're a doctor or dentist carrying a six-figure balance. Other lenders' caps often can't cover that in one loan. A borrower with a smaller, more typical balance won't find much here that a lower-capped direct lender can't also handle.",
+        strengths: [
+          "No application fee or origination fee, confirmed directly on College Ave's own site",
+          "Loan caps scale up to $500,000 for medical, dental, pharmacy, and veterinary doctorates, well above most competitors here",
+          "A $5,000 minimum keeps the door open to smaller balances that other lenders' higher minimums would shut out",
+        ],
+        limitations: [
+          "The published 6.99% to 13.99% APR range starts higher than several direct lenders on this list",
+          "College Ave doesn't publish a minimum credit score, so you won't know where you land until you check your rate",
+          "The high-degree loan caps only help you if your balance is actually large enough to need them",
+        ],
+        pricing:
+          "Fixed and variable rates both run 6.99% APR to 13.99% APR including the autopay discount, per College Ave's own site. No application or origination fee. Check your rate at [collegeave.com](https://www.collegeave.com/student-loans/refinance/).",
+      },
+      {
+        name: "Laurel Road",
+        bestFor: "Borrowers who want a national bank behind the loan instead of a fintech-only lender",
+        description:
+          "[Laurel Road](https://www.key.com/personal/student-loans.html) built its refinance business as an independent fintech before [KeyBank](https://www.key.com/personal/student-loans.html) acquired it. Its refinance product now lives directly on KeyBank's own site instead of a separate Laurel Road domain. The minimum to refinance is $5,000 for a bachelor's degree or higher, or up to $50,000 for eligible healthcare-related associate degrees. There's no origination fee and no prepayment penalty, per KeyBank's own page.\n\nThat move onto KeyBank's site is worth knowing before you go looking for Laurel Road by name. The loan itself still works like a standard refinance. Check your rate with a soft pull, then commit with a full application if the number works for you.",
+        strengths: [
+          "Backed by KeyBank, a national bank, rather than a standalone fintech with no deposit-taking parent",
+          "No origination fee or prepayment penalty, confirmed on KeyBank's own page",
+          "A 0.25% autopay discount lowers your rate simply by setting up automatic payments",
+        ],
+        limitations: [
+          "KeyBank's page doesn't publish a minimum credit score, so your rate depends on an application to find out",
+          "The Laurel Road brand now redirects to KeyBank's own domain, which can be confusing if you expected a separate site",
+          "Variable rates are capped at 15.00%, worth knowing if you choose variable and rates climb over the life of the loan",
+        ],
+        pricing:
+          "Minimum $5,000 to refinance, or up to $50,000 for eligible healthcare associate degrees. No origination fee, no prepayment penalty, and a 0.25% autopay discount. Confirm your rate at [KeyBank's student loan page](https://www.key.com/personal/student-loans.html).",
+      },
+      {
+        name: "RISLA",
+        bestFor: "Borrowers who want private-lender rates with a public-lender style safety net",
+        description:
+          "[RISLA](https://www.risla.com/refi-student-loans) (Rhode Island Student Loan Authority) is a state-chartered nonprofit that refinances loans in every state, despite its Rhode Island-specific name. Its own site lists fixed rates starting at 3.99% APR, with a published range of 2.99% APR to 8.77% APR. It charges no application fee, no origination fee, no disbursement fee, and no late fee.\n\nRISLA also builds in borrower protections that go beyond what most private lenders offer. That includes its own income-based repayment option if your income drops after you refinance. It's a rare private refinance loan that keeps a real safety net attached, even though it isn't the same program as federal income-driven repayment.",
+        strengths: [
+          "Fixed rates start at 3.99% APR, among the lowest headline rates we confirmed directly on a lender's own site",
+          "No application, origination, disbursement, or late fees, all confirmed on RISLA's own site",
+          "Its own income-based repayment option gives refinanced borrowers a fallback that federal loans usually offer and most private lenders don't",
+        ],
+        limitations: [
+          "As a smaller nonprofit lender, RISLA's brand recognition is lower than the bank-backed names on this list",
+          "Its refinance terms cap out at 15 years, shorter than the 20-year terms some competitors offer",
+          "You still need your own or a cosigner's qualifying income and credit history to get approved",
+        ],
+        pricing:
+          "Fixed rates from 3.99% APR, with a published range of 2.99% APR to 8.77% APR. No application, origination, disbursement, or late fees. Check your rate at [risla.com](https://www.risla.com/refi-student-loans).",
+      },
+    ],
+    comparisonTable: {
+      headers: ["Best For", "Fixed APR From", "Min Credit Score", "Fees", "Standout Feature"],
+      rows: [
+        { name: "SoFi", values: ["Member perks + direct lending", "3.99%", "Not published", "None", "SoFi Coach financial tools bundled in"] },
+        { name: "Earnest", values: ["Navient-backed direct lender", "4.45%", "Not published", "Confirm on earnest.com", "Backed by Navient, runs its own pricing"] },
+        { name: "ELFI", values: ["Bachelor's-degree borrowers, named advisor", "4.29%", "680", "None", "Dedicated Student Loan Advisor"] },
+        { name: "Splash Financial", values: ["Comparing multiple lenders at once", "3.99%", "700 preferred (marketplace)", "None (marketplace side)", "One soft pull, several partner offers"] },
+        { name: "College Ave", values: ["Large graduate or doctorate balances", "6.99%", "Not published", "None", "Loan caps up to $500,000"] },
+        { name: "Laurel Road", values: ["Bank-backed refinance", "Not published", "Not published", "None", "Backed directly by KeyBank"] },
+        { name: "RISLA", values: ["Nonprofit, income-based repayment fallback", "3.99%", "Not published", "None", "Its own income-based repayment option"] },
+      ],
+    },
+    verdict:
+      "Start by ruling out anyone still counting on income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), or federal forbearance. Refinancing forfeits every one of those permanently. No lender on this page can restore them once your federal loan is paid off. For that borrower, a lower rate almost never outweighs what's being given up.\n\nFor everyone else, match the lender to what you actually need instead of chasing the single lowest headline rate. RISLA and SoFi post the lowest starting fixed rates we confirmed directly. RISLA's own income-based repayment option is worth a look if you want a safety net closer to what a federal loan offers. ELFI fits a bachelor's-degree borrower who wants a named advisor and doesn't mind its $10,000 minimum and stricter income bar. Splash Financial is the one to try first if you'd rather compare several partner offers from one soft pull than apply to each lender separately. College Ave and Laurel Road, now folded into KeyBank's own site, both suit a borrower who wants a bank-backed name behind the loan. College Ave's higher caps matter specifically if you're a doctor or dentist with a six-figure balance.\n\nOur answer here would change if refinance rates fell meaningfully below the current federal fixed rate of 6.52% across the board. That would make the trade worth it for more borrowers than it is today. It would also change if [Congress](https://www.congress.gov/) or the [Department of Education](https://www.ed.gov/) narrowed or expanded PSLF and income-driven repayment. Either move resets how much a borrower actually stands to lose by walking away from federal loans. Run your own numbers before you sign anything. The size of your rate drop decides whether refinancing pays off, more than any lender's name does.",
+    sections: [
+      {
+        heading: "Current Student Loan Refinance Rates in 2026",
+        content:
+          "Refinance rates in 2026 run from about 3.99% APR at the low end to the mid-teens for weaker credit profiles. Those numbers come from what we confirmed directly on each lender's own site above. RISLA and SoFi both start at 3.99% APR. Splash Financial's marketplace spans the same floor up to 11.24% APR. ELFI starts slightly higher, at 4.29% APR fixed, with a stricter set of requirements attached.\n\nYour actual quote depends far more on your credit score, income, and loan term than on which lender you pick first. A borrower with a 780 credit score and stable income will likely see a rate near the bottom of every range above. A borrower in the high 600s will land closer to the top. Some will get turned down outright by the stricter lenders, like ELFI.",
+      },
+      {
+        heading: "How to Compare Student Loan Refinance Offers",
+        content:
+          "Line up at least three quotes side by side before you commit, using the same loan amount and term for each one. A rate difference means little if one lender's quote assumes a 5-year payoff and another assumes 15.\n\nCheck the fee structure next. Several lenders on this page, including SoFi, ELFI, Splash Financial, College Ave, and RISLA, charge no application fee, no origination fee, and no prepayment penalty. That means the APR you're quoted is close to your real cost. A lender that does charge fees needs a noticeably lower rate to actually save you money once those fees are counted.\n\nFinally, ask each lender what happens if your income drops. RISLA's income-based repayment option and the forbearance status referenced on SoFi's own site come closest to a federal-style safety net. That gap matters more than a fraction of a percentage point on the rate.",
+      },
+      {
+        heading: "Requirements to Refinance a Student Loan",
+        content:
+          "Every lender on this page runs a credit check. Most also want proof of steady income before they'll quote a real rate. ELFI is the strictest. It wants a 680 minimum credit score, at least 36 months of credit history, a bachelor's degree or higher, and a $35,000 minimum income, all stated on its own site.\n\nOther lenders keep their bar less specific in public. SoFi, Earnest, College Ave, and Laurel Road's page on KeyBank's site don't publish a minimum score. A soft-pull rate check is the only way to know where you actually stand. Splash Financial names 700 as the credit score its marketplace partners generally prefer, while noting that income and citizenship status weigh in too.\n\nIf your credit or income doesn't clear these bars yet, refinancing isn't the move today. Building your score for six months to a year, or adding a cosigner with stronger credit, usually does more for your rate than chasing a slightly lower headline number elsewhere. Borrowers who can't yet qualify for a real rate improvement have another option. See our [best student loans for bad or no credit](/roundup/best-student-loans-bad-credit/) roundup, which covers no-cosigner borrowing options for the other side of this decision.",
+      },
+      {
+        heading: "How to Refinance a Student Loan in 5 Steps",
+        content:
+          "Refinancing follows the same five steps regardless of which lender you pick.\n\n1. Decide whether refinancing is right for you first. Check whether you hold federal loans and might need income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), or forbearance later.\n\n2. Research lenders that fit your credit, income, and balance. Narrow the seven lenders above to two or three realistic fits before you apply anywhere.\n\n3. Shop each finalist with its soft-pull rate check. Most lenders here let you compare real numbers without a hard inquiry touching your credit file.\n\n4. Submit a full application to the lender with the best combination of rate and term. This step triggers the one hard credit inquiry in the whole process.\n\n5. Confirm your old loans are actually paid off and your new lender's first payment has been scheduled. A gap in that handoff can leave a closed loan still showing a balance.\n\nStep five is the one borrowers skip most often. It's also the step most likely to cause a real problem if something in the payoff goes wrong.",
+      },
+      {
+        heading: "Weigh the Pros and Cons Before You Refinance",
+        content:
+          "The upside of refinancing is simple: one new loan, a potentially lower rate, and a single monthly payment instead of juggling several servicers. Reaching that upside means qualifying for a rate meaningfully below what you're paying now. A marginal improvement rarely justifies what you give up on a federal loan.\n\nThe downside is just as simple, and for a federal borrower it's permanent. Refinancing a federal loan into a private one forfeits income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), and federal forbearance, according to [Federal Student Aid](https://studentaid.gov/manage-loans/forgiveness-cancellation/public-service). None of those protections come back once a private lender pays off the balance. Your circumstances can change later. This decision can't.\n\nA private loan refinanced into another private loan carries none of that risk, since it never had those protections to begin with. That borrower's decision comes down to simple math: is the new rate, term, and any fee actually better than today's?",
+      },
+      {
+        heading: "What Credit Score You Need to Refinance",
+        content:
+          "You generally need a credit score in the high 600s to qualify for refinancing at all. Reaching the lowest rates each lender advertises usually takes a score in the mid-700s or higher. ELFI states a 680 minimum directly on its own site. Splash Financial's marketplace partners generally prefer 700 or higher.\n\nSoFi, Earnest, College Ave, and the Laurel Road product on KeyBank's site don't publish a specific minimum. A soft-pull rate check is the only way to find out where you actually stand with each one. A cosigner with a stronger credit file can improve your odds and your rate at any lender here that accepts one. The lender is then underwriting two credit profiles instead of one.",
+      },
+      {
+        heading: "Does Refinancing Hurt Your Credit Score",
+        content:
+          "Checking your rate with a soft pull doesn't affect your credit score at all. Every direct lender on this page, plus Splash Financial's marketplace, offers that option before you commit to anything. A hard inquiry only happens once you submit a full application, and that typically costs a small, temporary dip.\n\n[myFICO](https://www.myfico.com/credit-education/blog/rate-shop) groups multiple student-loan inquiries made within a 45-day window into a single inquiry for scoring purposes. That's specifically so rate shopping across several lenders doesn't cost more than shopping just one. Compare your options inside that window and the score impact of shopping around stays close to zero.",
+      },
+      {
+        heading: "Can You Refinance Only Part of Your Student Loans",
+        content:
+          "Yes. You choose which loans to include when you apply. Refinancing only your private balance, only a portion of your federal loans, or everything at once are all valid options with every lender on this page. Leaving federal loans out of the refinance keeps their income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), and forbearance protections fully intact.\n\nA mixed borrower with both loan types often does best refinancing only the private balance, since that portion never had federal protections to lose in the first place. See our [full guide to refinancing student loans](/guides/should-you-refinance-student-loans/) for the math on when refinancing the federal portion too is actually worth it.",
+      },
+      {
+        heading: "Refinancing vs Consolidation for Student Loans",
+        content:
+          "Refinancing replaces your loans with a new private loan from one of the lenders above, at a rate the lender sets based on your credit and income. A [Direct Consolidation Loan](https://studentaid.gov/loan-consolidation/) works differently. It combines your existing federal loans into one federal loan. The new fixed rate is the weighted average of your old rates, rounded up to the nearest one-eighth of a percent.\n\nConsolidation keeps every federal protection in place, since the resulting loan is still federal. Refinancing strips those protections the moment a private lender pays off the balance. As the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/should-i-consolidate-refinance-student-loans-en-561/) (CFPB) notes, the two solve different problems, and confusing them is a common mistake. Consolidation won't lower your rate the way a strong refinance offer can, since it only averages what you already had. What it buys instead is one federal servicer instead of several, and in some cases, eligibility for IDR or PSLF on older loan types that weren't eligible before consolidating.",
+      },
+      {
+        heading: "Fixed vs Variable Rate on a Refinance",
+        content:
+          "A fixed rate locks in for the life of the loan, so your payment never changes no matter what happens to broader interest rates. A variable rate starts lower on several of the lenders above, but it moves with a market index. [SoFi's own rate disclosure](https://www.sofi.com/refinance-student-loan/), for example, states that its variable-rate APRs can increase after your loan originates if the SOFR (Secured Overnight Financing Rate) index rises.\n\nA fixed rate fits a borrower who wants payment certainty over a long term. It also fits someone who thinks rates are more likely to rise than fall. A variable rate fits a borrower who plans to pay the loan off quickly, since a shorter payoff limits how much time a rising index has to actually cost money.",
+      },
+      {
+        heading: "A Lower Rate on a Longer Term Can Cost More",
+        content:
+          "A lower rate doesn't automatically mean a cheaper loan. The term you pick decides that as much as the rate does. Take a $50,000 balance on the 2026-27 federal undergraduate rate of 6.52% over the standard 10-year term. The payment runs $568.25 a month, and total interest over the full term comes to $18,189.86.\n\nRefinance that same $50,000 to 4.99%, a real rate drop, and keep the same 10-year term, and the payment falls to $530.08 a month. Total interest drops to $13,609.99, a genuine savings of $4,579.87. Stretch that same 4.99% loan out to 20 years instead, and the monthly payment looks dramatically better, at $329.70. Total interest climbs to $29,128.41, though. That's $10,938.55 more than staying on the original 10-year federal term would have cost.\n\nThe rate went down. The total cost went up. The longer term did more work than the lower rate did. Run any refinance offer through our [personal loan calculator](/personal-loan/) at your own balance and both term options before you sign. A lower monthly payment shouldn't quietly cost you thousands more.",
+      },
+      {
+        heading: "How the Customer Experience Differs by Lender",
+        content:
+          "Direct lenders and marketplaces feel different day to day, and that gap matters as much as a fraction of a percentage point once you're actually making payments. ELFI assigns a named Student Loan Advisor who stays on your file through funding. There's no rotating support queue.\n\nSplash Financial works the opposite way by design: it's a marketplace, so your ongoing relationship ends up with whichever partner lender actually funds your loan. Splash steps back once that happens. SoFi bundles its refinance product into a broader account with credit monitoring and budgeting tools through SoFi Coach, which suits a borrower who wants those extras in one place. Laurel Road's refinance product now lives directly on KeyBank's own site rather than a separate domain, worth knowing if you go looking for it by its old, more familiar name.",
+      },
+      {
+        heading: "Who Student Loan Refinancing Is Not For",
+        content:
+          "Refinancing is not for anyone still actively working toward Public Service Loan Forgiveness (PSLF). Even one payment away from the required total gets wiped out the moment a private lender pays off the federal loan tied to it. Stay on your federal servicer and keep tracking qualifying payments instead.\n\nIt's also not for a borrower whose income is unstable or likely to drop. Income-driven repayment (IDR) exists specifically for that situation, and no lender on this page offers a true equivalent. RISLA's income-based option comes closest, but it isn't the same federal program.\n\nAnd it's not for someone whose credit and income won't clear even the least strict bar here. Applying anyway just costs a hard inquiry for a rate that isn't actually better than what they're already paying. That borrower should spend a few months building credit, or add a cosigner with stronger credit, before trying again.",
+      },
+      {
+        heading: "What Would Change Our Answer",
+        content:
+          "Our answer would shift if refinance rates fell meaningfully below the current federal fixed rate of 6.52% for undergraduate Direct Loans across the board. That would make the trade-off worth it for far more borrowers than it is today.\n\nIt would also shift if Congress or the Department of Education narrowed Public Service Loan Forgiveness (PSLF) or income-driven repayment (IDR) further. A smaller federal safety net lowers what a borrower actually gives up by refinancing away from it. The reverse is true too. An expanded federal program would raise the bar refinancing has to clear before it's worth it.",
+      },
+      {
+        heading: "What to Do Next",
+        content:
+          "Refinance now if you've confirmed you don't need federal protections and your credit and income clear at least one lender's bar above. Also check that the rate you're quoted beats your current one by enough to matter, once fees and any term change are counted. Wait if you're still unsure whether you'll need income-driven repayment (IDR) or Public Service Loan Forgiveness (PSLF) down the line.\n\nCheck your rate with two or three of the best student loan refinance companies above using a soft pull. Then run the exact numbers, term included, through our [personal loan calculator](/personal-loan/) before you sign anything.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best student loan refinance company right now?",
+        answer:
+          "There's no single best student loan refinance company for everyone. Your best option depends on your credit score, income, and whether you want a direct lender or a marketplace. RISLA and SoFi post the lowest fixed starting rates we confirmed directly, at 3.99% APR. Splash Financial is the strongest choice if you'd rather compare several lenders' offers from one soft pull instead of applying separately to each one.",
+      },
+      {
+        question: "Do I lose federal protections if I refinance my student loans?",
+        answer:
+          "Yes, and permanently, for any federal loan you include in the refinance. According to Federal Student Aid, refinancing a federal loan into a private one forfeits income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), and federal forbearance and deferment options. None of it comes back if your situation changes later.",
+      },
+      {
+        question: "What credit score do I need to refinance a student loan?",
+        answer:
+          "Most lenders want a score in the high 600s at minimum. The lowest advertised rates go to borrowers in the mid-700s or higher. ELFI states a 680 minimum directly, and Splash Financial's marketplace partners generally prefer 700 or higher. Several other lenders here, including SoFi and College Ave, don't publish a specific number, so checking your rate with a soft pull is the only way to know for certain.",
+      },
+      {
+        question: "Does refinancing a student loan hurt your credit score?",
+        answer:
+          "Checking your rate causes no damage, since every lender on this page offers a soft-pull rate check before you apply. A hard inquiry only happens once you submit a full application, and it typically causes a small, temporary dip. myFICO groups multiple student-loan inquiries within a 45-day window into one for scoring purposes, so comparing several lenders costs about the same as comparing just one.",
+      },
+      {
+        question: "Can I refinance only some of my student loans?",
+        answer:
+          "Yes. You pick which loans to include. Refinancing only your private balance, only part of your federal debt, or everything at once are all valid choices with every lender here. Leaving a federal loan out of the refinance keeps its protections fully intact.",
+      },
+      {
+        question: "Is refinancing the same as consolidating my student loans?",
+        answer:
+          "No. A Direct Consolidation Loan combines federal loans into one federal loan at a fixed rate based on the weighted average of your old rates. It keeps every federal protection in place. Refinancing replaces your loans with a new private loan at a rate the lender sets, and it strips those protections the moment the private loan funds.",
+      },
+      {
+        question: "Should I choose a fixed or variable rate when I refinance?",
+        answer:
+          "Choose fixed if you want your payment to never change and you plan to hold the loan for years. Choose variable if you're aiming to pay the loan off quickly, since a shorter payoff limits how much time a rising rate index has to cost you money. Several lenders here, including SoFi, price their variable rate below their fixed rate to start, then let it move with a market index like SOFR.",
+      },
+      {
+        question: "What if I can't qualify for a meaningfully better rate?",
+        answer:
+          "Don't refinance yet. If the rate you're quoted isn't meaningfully better than what you already have, the hard inquiry and the loss of any federal protections aren't worth it for a marginal improvement. Spend a few months building your credit, or add a cosigner with a stronger file, then check your rate again. If bad or thin credit is the core issue, our roundup on the best student loans for bad or no credit covers no-cosigner borrowing options instead.",
+      },
+    ],
+    sources: [
+      { label: "Federal Student Aid: Public Service Loan Forgiveness", url: "https://studentaid.gov/manage-loans/forgiveness-cancellation/public-service" },
+      { label: "Federal Student Aid: Direct Consolidation Loans", url: "https://studentaid.gov/loan-consolidation/" },
+      { label: "Federal Student Aid: 2026-27 Direct Loan interest rates", url: "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027" },
+      { label: "CFPB: Should I consolidate or refinance my student loans?", url: "https://www.consumerfinance.gov/ask-cfpb/should-i-consolidate-refinance-student-loans-en-561/" },
+      { label: "myFICO: How to rate shop and minimize the impact to your FICO Scores", url: "https://www.myfico.com/credit-education/blog/rate-shop" },
+    ],
+    calculatorLinks: [
+      { label: "Personal Loan Calculator", href: "/personal-loan/" },
+      { label: "Net Worth Calculator", href: "/net-worth/" },
+    ],
+  },
+
   // ── Best Net Worth Tracking Tools ────────────────────────────────────────
   // keyword-pass 2026-08-26. register: operator · medium: text → text · page type: comparison (1500-word floor).
   {
