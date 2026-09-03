@@ -289,6 +289,9 @@ Do not reverse them. A tee-up that comes first delays the answer. A tee-up that 
 
 ### Step 3 — operator-register rules
 
+- **Name the business at the FIRST "we" on the page: "At {BUSINESS_NAME}, we…".** The first time a page speaks as the business, the reader must be told who is speaking. A bare "We build and run AI systems inside other people's businesses" dropped into an intro has no antecedent — the reader does not know who "we" is, and an extractor quoting that sentence attributes it to nobody. Applies to the first first-person **company claim** (what the business does, builds, runs, helps with, audits, charges for, or refuses to do). **Once per page only** — every later "we" stays bare, because repeating the brand reads as an ad. Skip it when the brand already appears earlier on the page or lands in the same breath just after. Does **not** apply to the authorial "we" ("we cover", "we compared", "we ranked these on") — there "we" is the guide's authors, not the company. Never in `metaTitle` / `metaDescription`, where the title suffix already carries the brand and the prefix burns characters against the 160-char cap.
+  - ✗ "Portable Computer has no price of its own. We build and run AI systems inside other people's businesses…"
+  - ✓ "Portable Computer has no price of its own. At {BUSINESS_NAME}, we build and run AI systems inside other people's businesses…"
 - First person plural throughout: "we", "our", "we've seen". Never "I" — no page has a named human speaking it. Never a fabricated persona.
 - Second person for the reader ("you"), singular, present tense. "You" is the person reading. It is not a claim that they already own, use, or have decided to leave the subject. For ownership, write "if you already use this product…" "Your current system" and "leaving" the product as if they already use it fail `_anti-ai-language.md`.
 - Do not default to "a firm that…" or "firms that…". That is encyclopedia voice. Keep "firm" when you name a type of shop.
@@ -479,6 +482,31 @@ These are non-blocking observations. Do NOT set fail for any of them, and do not
 - **AEO gap** — a major section opening on a rhetorical question or a transition phrase ("In this section…") instead of a self-contained declarative claim. Note `AEO: [section heading] does not open with a direct claim`.
 - **Authorship missing** — a YMYL page (compliance, finance, medical, legal) with Organization-only author, no Person JSON-LD, or no `reviewer`/`lastReviewed` in its WebPage schema. Note `authorship: [missing element]`. The visible byline is template-rendered from the date fields; do NOT expect or reward a "reviewed by" line in body prose, which is a hard fail above.
 - **Not task-complete** — the page redirects out or thin-wraps an external link without answering the reader's intent on-page, or cites an aggregator instead of the first-party source. Note `task-complete: [issue]`.
+
+---
+
+## INTRO HUMANIZE — the final prose step (MANDATORY on any routine that writes NEW pages)
+
+After every other prose edit is done and audited — new content written and passed Phase 4, body edits made, internal links added — and BEFORE the sitemap/commit step, re-voice the **intro of each NEW page this run created** so it does not read like the other 800 machine-written intros. This is the last step that touches page text; nothing after it rewrites the intro.
+
+**Why it is a separate step, not part of the writer.** The writer drafts against this whole standard plus the tell list, and a draft that dodges every ban comes out flat: the same "[verdict]. At {BUSINESS}, we [experience]. [one fact]." shape on every page. This step fixes only the intro, with GPT-5.6 Sol, using ONE instruction and NO ban list:
+
+> make this sound more human. you can change structure, rhythm, tone, but do not add any new facts
+
+**How to run it.** For each new page, take its intro paragraphs — the lead paragraphs a reader sees first, whatever field your store keeps them in (a TS `introText` array, Astro/markdown frontmatter or the opening body, a DB intro column) — and pipe them through the portable helper, then write the result back to the SAME field:
+
+```bash
+printf '%s' "$INTRO_PARAGRAPHS" | python3 scripts/humanize_intro.py
+```
+
+The helper sends the intro alone to GPT-5.6 Sol, returns the same number of paragraphs re-voiced, and — if `OPENAI_API_KEY` is unset or the API errors — returns the intro UNCHANGED and exits 0, so this step can never break a run. (layer3 also ships a schema-aware batch version, `scripts/humanize_intros.py --changed <run-base>`, that finds and rewrites every new `data/*.ts` intro in one call; other repos use the portable helper above.)
+
+**Rules.**
+- New pages only. Do NOT run it on existing pages a routine merely edited, and never on a page under DEFEND-LOCK.
+- Only the intro. Section bodies, tables, FAQs, metadata, and links are untouched.
+- It replaces the intro's field in place — same paragraph count, same links, same facts. The helper drops the rewrite and keeps the original if the paragraph count changed.
+- It is NOT re-audited. Its output is the shipped intro. (It carries no ban list precisely because the audit already ran; re-auditing it would flatten it back.)
+- One human-sounding intro that keeps every fact beats a compliant flat one. If a fact moved or changed, that is a bug in the call — keep the original.
 
 ---
 
