@@ -1,0 +1,306 @@
+{
+ "source": "dataforseo",
+ "base_url": "https://www.themodernwallet.com",
+ "pages_requested": 300,
+ "pages_audited": 300,
+ "pages_failed": [],
+ "issue_count": 56,
+ "by_kind": {
+  "meta_desc_too_long": 38,
+  "low_text_html_ratio": 8,
+  "low_word_count": 4,
+  "mixed_content_link": 3,
+  "title_too_short": 3
+ },
+ "issues": [
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/529-savings-calculator/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/about/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/auto-loan/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/auto-loan/car-affordability-calculator/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/compare/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/compare/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/70-30-vs-60-40-portfolio/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/70-30-vs-80-20-portfolio/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/80-20-vs-90-10-portfolio/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/529-vs-roth-ira/",
+   "detail": "159 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/assumable-mortgage-vs-refinance/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/chapter-7-vs-chapter-13-bankruptcy/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+   "detail": "158 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/heloc-vs-home-equity-loan/",
+   "detail": "160 chars"
+  },
+  {
+   "kind": "mixed_content_link",
+   "url": "https://www.themodernwallet.com/compare/irrevocable-trust-vs-llc/",
+   "detail": "dataforseo:https_to_http_links"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/living-trust-vs-lady-bird-deed/",
+   "detail": "160 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/medical-retirement-vs-disability-severance-pay/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/ordinary-income-vs-capital-gains-tax/",
+   "detail": "160 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/pension-vs-401k/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "mixed_content_link",
+   "url": "https://www.themodernwallet.com/compare/probate-vs-trust/",
+   "detail": "dataforseo:https_to_http_links"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/compare/roth-ira-vs-traditional-ira/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "title_too_short",
+   "url": "https://www.themodernwallet.com/contact/",
+   "detail": "dataforseo:title_too_short"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/contact/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/contact/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "title_too_short",
+   "url": "https://www.themodernwallet.com/editorial-policy/",
+   "detail": "dataforseo:title_too_short"
+  },
+  {
+   "kind": "title_too_short",
+   "url": "https://www.themodernwallet.com/guides/",
+   "detail": "dataforseo:title_too_short"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/guides/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/guides/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/250th-anniversary-coins/",
+   "detail": "159 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/401k-beneficiary-rules/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/advanced-estate-planning-strategies/",
+   "detail": "158 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/best-investment-account-for-kids/",
+   "detail": "159 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/can-an-enrolled-agent-represent-you-in-tax-court/",
+   "detail": "158 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/home-equity-investment-guide/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-long-to-pay-off-credit-card/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-much-business-loan-can-i-qualify-for/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-much-emergency-fund/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-much-life-insurance-do-i-need/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-much-tax-will-i-pay/",
+   "detail": "158 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-to-choose-a-financial-advisor/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-to-deal-with-debt-collectors/",
+   "detail": "158 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/how-to-protect-assets-from-nursing-home/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/is-3-million-enough-to-retire-at-40/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/iul-for-kids-child-life-insurance/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/passive-income-ideas/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/pay-off-debt-or-invest/",
+   "detail": "157 chars"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/portfolio-rebalancing/",
+   "detail": "156 chars"
+  },
+  {
+   "kind": "mixed_content_link",
+   "url": "https://www.themodernwallet.com/guides/probate-process-guide/",
+   "detail": "dataforseo:https_to_http_links"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/real-estate-investment-options/",
+   "detail": "157 chars"
+  }
+ ],
+ "unavailable_on_this_source": [
+  "canonical_to_redirect",
+  "canonical_to_4xx",
+  "redirect_loop",
+  "hreflang_mismatch",
+  "lang_missing",
+  "noindex_in_sitemap"
+ ],
+ "cost_usd": 0.045
+}

@@ -146,7 +146,7 @@ export const GUIDES: Guide[] = [
     slug: "passive-income-ideas",
     title: "Passive Income Ideas: Realistic Streams That Actually Work",
     metaDescription:
-      "Honest passive income ideas with the math: dividends, REITs, high-yield savings, rental property, and digital products. What's truly passive and what isn't.",
+      "Passive income ideas with the math: dividends, REITs, high-yield savings, rental property, and digital products. What's truly passive and what isn't.",
     h1: "Passive Income Ideas: A Math-Honest Guide to What Really Works",
     cardBlurb: "Dividends, REITs, HYSAs, rentals, digital products — with the setup work and taxes each one really takes.",
     intro:
@@ -221,7 +221,7 @@ export const GUIDES: Guide[] = [
     slug: "how-to-choose-a-financial-advisor",
     title: "How to Choose a Financial Advisor: A Decision Guide",
     metaDescription:
-      "How to choose a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
+      "Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
     h1: "How to Choose a Financial Advisor: A Step-by-Step Decision Guide",
     cardBlurb: "Fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify a real advisor.",
     intro:
@@ -502,7 +502,7 @@ export const GUIDES: Guide[] = [
     slug: "can-an-enrolled-agent-represent-you-in-tax-court",
     title: "Can an Enrolled Agent Represent You in Tax Court?",
     metaDescription:
-      "Can an Enrolled Agent represent you in U.S. Tax Court? Only if separately admitted under the Tax Court's own Rule 200, a step most Enrolled Agents never take.",
+      "Can an Enrolled Agent represent you in U.S. Tax Court? Only if separately admitted under the Tax Court's Rule 200, a step most Enrolled Agents never take.",
     h1: "Can an Enrolled Agent Represent You in U.S. Tax Court?",
     cardBlurb: "Circular 230 gives an Enrolled Agent full IRS practice rights, but U.S. Tax Court is a separate court with its own admission exam almost no Enrolled Agent passes.",
     intro:
@@ -721,7 +721,7 @@ export const GUIDES: Guide[] = [
       { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
       { label: "Cal. Prob. Code §9100 — creditor claim period", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9100&lawCode=PROB" },
       { label: "Cal. Prob. Code §13100 — small-estate affidavit", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13100&lawCode=PROB" },
-      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
       { label: "Tex. Est. Code §401.001 — independent administration", url: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.401.htm" },
       { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
       { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
@@ -734,7 +734,7 @@ export const GUIDES: Guide[] = [
     slug: "how-to-protect-assets-from-nursing-home",
     title: "How to Protect Assets From Nursing Home Costs",
     metaDescription:
-      "Protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — see an elder-law attorney.",
+      "Protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — see an elder-law pro.",
     h1: "How to Protect Assets From Nursing Home Costs",
     cardBlurb: "Medicaid Asset Protection Trusts, the 5-year lookback, home protection, and CSRA — the legal tools that actually work.",
     intro:
@@ -1369,7 +1369,7 @@ export const GUIDES: Guide[] = [
   {
     slug: "best-investment-account-for-kids",
     title: "Best Investment Account for Kids (2026 Guide)",
-    metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and how to layer them.",
+    metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and layer them.",
     h1: "The Best Investment Account for Kids: How to Choose (and Layer) Them",
     cardBlurb: "A decision framework across every kid account type — Trump Account, 529, custodial brokerage, custodial Roth IRA — with a clear which-to-pick matrix.",
     intro: "The best investment account for kids is usually not one account — it is a layered stack: the free $1,000 Trump Account seed everyone eligible should claim, a 529 for college, and a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so picking only one leaves money on the table. This guide compares all six main kid account types side by side, then gives you a plain decision rule for which to open first. The non-obvious takeaway: most families should stack accounts, not choose between them.",
@@ -1772,7 +1772,7 @@ export const GUIDES: Guide[] = [
     slug: "250th-anniversary-coins",
     title: "250th Anniversary Coins: 2026 Semiquincentennial Guide",
     metaDescription:
-      "A plain-English guide to America's 250th anniversary coins: the 2026 semiquincentennial quarters, dime, half dollar, and $1 coin, and how to buy the real ones.",
+      "A plain-English guide to America's 250th anniversary coins: the 2026 semiquincentennial quarters, dime, half dollar, and $1 coin, and how to buy real ones.",
     h1: "250th Anniversary Coins: America's 2026 Semiquincentennial Coin Guide",
     cardBlurb: "Every coin the U.S. Mint is releasing for America's 250th birthday — and how to tell the official ones from novelties.",
     intro:
@@ -1945,7 +1945,7 @@ export const GUIDES: Guide[] = [
     slug: "401k-beneficiary-rules",
     title: "What Happens to a 401(k) When You Die: Beneficiary Rules",
     metaDescription:
-      "401(k) beneficiary rules explained: the SECURE Act 10-year rule for non-spouse heirs, the spousal rollover option, and how taxes work on an inherited 401(k).",
+      "401(k) beneficiary rules: the SECURE Act 10-year rule for non-spouse heirs, the spousal rollover option, and how taxes work on an inherited 401(k).",
     h1: "What Happens to a 401(k) When You Die: Beneficiary Rules and Taxes",
     cardBlurb: "Who inherits your 401(k), the SECURE Act's 10-year rule, and how taxes work for the beneficiary.",
     intro:
@@ -2024,7 +2024,7 @@ export const GUIDES: Guide[] = [
     slug: "real-estate-investment-options",
     title: "Real Estate Investment Options: 5 Ways to Invest",
     metaDescription:
-      "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs of each.",
+      "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs.",
     h1: "Real Estate Investment Options: 5 Ways to Invest in Real Estate Without Just Being a Landlord",
     cardBlurb: "Landlording, short-term rentals, flipping, REITs, and crowdfunding — the tax and liquidity tradeoffs of each.",
     intro:
@@ -2506,7 +2506,7 @@ export const GUIDES: Guide[] = [
   slug: "how-much-life-insurance-do-i-need",
     updated: "2026-08-30",
   title: "How Much Life Insurance Do I Need? (DIME Method)",
-  metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your exact coverage.",
+  metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your coverage.",
   h1: "How Much Life Insurance Do I Need?",
   cardBlurb: "A needs-based way to size your coverage, from the 10 to 12 times income rule to the DIME method.",
   intro: "How much life insurance you need is usually 10 to 12 times your yearly income. That simple multiple is a fast starting point for most families.\n\nYour real need is the money your family would lose if your paycheck stopped. A needs-based method adds up those exact costs, so you buy enough without overpaying.\n\nThis guide covers two ways to size your coverage. It explains why term insurance usually beats whole life for pure protection, and why your need shrinks as you age.",
@@ -2578,7 +2578,7 @@ export const GUIDES: Guide[] = [
     slug: "how-much-emergency-fund",
     title: "How Much Emergency Fund Do I Need? (3-6 Months Rule)",
     metaDescription:
-      "How much emergency fund do you need? A common rule is 3 to 6 months of your essential expenses -- not your income. See a worked example and where to keep it.",
+      "How much emergency fund do you need? A common rule is 3 to 6 months of essential expenses -- not income. See a worked example and where to keep it.",
     h1: "How Much Emergency Fund Do I Need?",
     cardBlurb: "How much to save in an emergency fund -- sized on essential expenses, not income -- plus where to keep it and how to build it.",
     intro:
@@ -2618,7 +2618,7 @@ export const GUIDES: Guide[] = [
   slug: "how-long-to-pay-off-credit-card",
   title: "How Long to Pay Off Credit Card: The Real Math",
   metaDescription:
-    "How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to clear it faster.",
+    "How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to pay faster.",
   h1: "How Long Will It Take to Pay Off My Credit Card?",
   cardBlurb:
     "See how balance, APR, and payment set your payoff date -- and why a small fixed payment beats the minimum by years.",
@@ -2702,7 +2702,7 @@ export const GUIDES: Guide[] = [
 {
   slug: "how-much-tax-will-i-pay",
   title: "How Much Tax Will I Pay? Estimate Your 2026 Bill",
-  metaDescription: "How much tax will you pay? Learn how tax brackets stack, why your marginal rate is not your effective rate, and how FICA adds on top -- with a worked example.",
+  metaDescription: "How much tax will you pay? Learn how tax brackets stack, why your marginal rate isn't your effective rate, and how FICA adds on top -- worked example.",
   h1: "How Much Tax Will I Pay? Estimating Your Federal Income Tax",
   cardBlurb: "See why your top tax bracket is not the rate you actually pay -- and estimate your 2026 federal income tax with a clear worked example.",
   intro: "How much tax you will pay depends on your taxable income, your filing status, and the fact that only your last dollars hit your top rate.\n\nThe United States uses a progressive system. Your income is split into bands called brackets, and each band is taxed at its own rate.\n\nSo your top bracket, called your marginal rate, is not the rate you pay on your whole income. Your real rate, called the effective rate, is almost always lower.\n\nThis guide shows you how to estimate your 2026 federal income tax by hand, plus the Social Security and Medicare taxes that come out on top.",
@@ -2777,7 +2777,7 @@ export const GUIDES: Guide[] = [
   slug: "pay-off-debt-or-invest",
   title: "Pay Off Debt or Invest? A Simple Decision Framework",
   metaDescription:
-    "Deciding whether to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.",
+    "Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.",
   h1: "Should You Pay Off Debt or Invest? A Simple Decision Framework",
   cardBlurb: "Compare your debt's interest rate to your expected return, then follow the order: match, emergency fund, high-rate debt, invest.",
   intro:
@@ -3450,7 +3450,7 @@ export const GUIDES: Guide[] = [
     slug: "is-3-million-enough-to-retire-at-40",
     title: "Is $3 Million Enough to Retire at 40?",
     metaDescription:
-      "Is $3 million enough to retire at 40? See what it supports at a safe withdrawal rate, how a family vs. single lifestyle changes the math, and the real risks.",
+      "Is $3 million enough to retire at 40? See what it supports at a safe withdrawal rate, how a family vs. single lifestyle changes the math, and the risks.",
     h1: "Is $3 Million Enough to Retire at 40?",
     cardBlurb: "What $3 million actually supports at a safe withdrawal rate, how location and family size change the math, and the risks worth planning around.",
     intro:
@@ -5256,7 +5256,7 @@ export const GUIDES: Guide[] = [
     slug: "home-equity-investment-guide",
     title: "Home Equity Investment: How It Works and What It Costs",
     metaDescription:
-      "A home equity investment pays cash with no monthly bill — but CFPB research found effective costs of 19.5% to 22% a year. See the real math before you sign.",
+      "A home equity investment pays cash with no monthly bill — but CFPB research found effective costs of 19.5% to 22% a year. See the math before you sign.",
     h1: "Home Equity Investment: How It Works and What It Really Costs",
     cardBlurb: "No monthly payment, but the payoff bill can run 19% to 22% a year — the CFPB math behind a home equity investment, worked through with real numbers.",
     intro:
@@ -5617,7 +5617,7 @@ export const GUIDES: Guide[] = [
     slug: "portfolio-rebalancing",
     title: "Portfolio Rebalancing: When and How to Do It",
     metaDescription:
-      "Portfolio rebalancing keeps your asset mix on target. See calendar vs. threshold rebalancing, the tax cost in a taxable account, and a simple decision rule.",
+      "Portfolio rebalancing keeps your asset mix on target. See calendar vs. threshold rebalancing, the tax cost in a taxable account, and a simple rule.",
     h1: "Portfolio Rebalancing: When and How to Reset Your Asset Mix",
     cardBlurb: "Calendar vs. threshold rebalancing, the tax cost of selling winners in a taxable account, and a simple rule for when it's actually worth doing.",
     intro:
@@ -6079,7 +6079,7 @@ export const GUIDES: Guide[] = [
     slug: "how-to-deal-with-debt-collectors",
     title: "How to Deal With Debt Collectors and Know Your Rights",
     metaDescription:
-      "Learn your rights when a debt collector calls: FDCPA rules, how to demand debt validation, what to do about a court summons, and how to file a CFPB complaint.",
+      "Your rights when a debt collector calls: FDCPA rules, how to demand debt validation, what to do about a court summons, and how to file a CFPB complaint.",
     h1: "How to Deal With Debt Collectors: Know Your Rights",
     cardBlurb: "The FDCPA rules collectors must follow, how to demand written proof of a debt, and what to do if you get sued.",
     intro:
@@ -6690,7 +6690,7 @@ export const GUIDES: Guide[] = [
     slug: "advanced-estate-planning-strategies",
     title: "Advanced Estate Planning Strategies for Real Estate",
     metaDescription:
-      "Advanced estate planning strategies for real estate and investment portfolios: QPRTs, FLPs, GRATs, IDGTs, ILITs, the step-up in basis, and the 2026 exemption.",
+      "Advanced estate planning strategies for real estate and investments: QPRTs, FLPs, GRATs, IDGTs, ILITs, the step-up in basis, and the 2026 exemption.",
     h1: "Advanced Estate Planning Strategies for Real Estate and Investment Portfolios",
     cardBlurb: "QPRTs, FLPs, GRATs, IDGTs, and ILITs explained in plain terms, plus a real step-up-in-basis example and the 2026 exemption.",
     intro:
@@ -7812,7 +7812,7 @@ export const GUIDES: Guide[] = [
     slug: "iul-for-kids-child-life-insurance",
     title: "What an IUL for Kids Costs a Healthy Child",
     metaDescription:
-      "A juvenile IUL runs the same charges as an adult policy on a healthy child with no debt to protect, and a 529 or custodial account usually compounds faster.",
+      "A juvenile IUL runs the same charges as an adult policy on a healthy child with no debt to protect, and a 529 or custodial account usually grows faster.",
     h1: "What an IUL for Kids Costs a Healthy Child",
     cardBlurb: "What juvenile IUL costs a healthy child, the real risks behind the sales pitch, and how a 529 or custodial account usually compares.",
     intro:

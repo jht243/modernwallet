@@ -212,7 +212,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "amortization-schedule",
     title: "Auto Loan Amortization Calculator & Schedule",
     metaDescription:
-      "Use this free auto loan amortization calculator — like an Excel schedule — to see a year-by-year breakdown of principal, interest, and balance for your loan.",
+      "Free auto loan amortization calculator — like an Excel schedule — showing a year-by-year breakdown of principal, interest, and balance for your loan.",
     targetKeyword: "auto loan amortization calculator",
     estimatedVolume: 1600,
     estimatedKD: 44,
@@ -344,7 +344,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     slug: "car-affordability-calculator",
     title: "Car Affordability Calculator: How Much Car Can I Afford?",
     metaDescription:
-      "Use our car affordability calculator to turn your monthly payment budget into a real price. See how much car you can afford, plus the 20/4/10 rule explained.",
+      "Turn your monthly payment budget into a real price with our car affordability calculator. See how much car you can afford, plus the 20/4/10 rule.",
     targetKeyword: "car affordability calculator",
     estimatedVolume: 6600,
     estimatedKD: 39,

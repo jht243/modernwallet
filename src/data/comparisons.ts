@@ -803,7 +803,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "529-vs-roth-ira",
     title: "529 vs Roth IRA: Which Saves More for College?",
     metaDescription:
-      "529 plan vs Roth IRA for college: see which wins on tax breaks, financial aid impact, and flexibility if your child skips college — plus the new rollover rule.",
+      "529 plan vs Roth IRA for college: see which wins on tax breaks, financial aid impact, and flexibility if your child skips college, plus the rollover rule.",
     targetKeyword: "529 vs roth ira for college",
     optionA: "529 Plan",
     optionB: "Roth IRA",
@@ -1586,7 +1586,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The single-member LLC gap most comparisons skip",
         content:
-          "Most write-ups treat \"LLC\" as one uniform level of protection. It isn't. The charging-order rule exists to protect innocent co-owners from being dragged into someone else's lawsuit, a rationale that stops applying the moment you are the LLC's only member. Florida's Supreme Court reached exactly that conclusion in [Olmstead v. FTC](https://www.courtlistener.com/opinion/2510651/olmstead-v-federal-trade-commission/), and the legislature's fix, [Fla. Stat. §605.0503](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html), now lets a court order foreclosure of a single-member interest when a charging order alone won't satisfy the judgment in a reasonable time. Georgia and Colorado allow similar remedies; only a handful of states (Alaska, Delaware, Nevada, South Dakota, and Wyoming) extend full charging-order protection to single-member LLCs by statute.\n\nThe common fix is structural, not geographic: add a second member. An irrevocable trust is the second member attorneys reach for most often, because it avoids bringing in another person who has their own creditors, divorce, or estate to worry about. That is also the reason serious asset-protection plans end up combining both entities instead of picking just one.",
+          "Most write-ups treat \"LLC\" as one uniform level of protection. It isn't. The charging-order rule exists to protect innocent co-owners from being dragged into someone else's lawsuit, a rationale that stops applying the moment you are the LLC's only member. Florida's Supreme Court reached exactly that conclusion in [Olmstead v. FTC](https://www.courtlistener.com/opinion/2510651/olmstead-v-federal-trade-commission/), and the legislature's fix, [Fla. Stat. §605.0503](https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html), now lets a court order foreclosure of a single-member interest when a charging order alone won't satisfy the judgment in a reasonable time. Georgia and Colorado allow similar remedies; only a handful of states (Alaska, Delaware, Nevada, South Dakota, and Wyoming) extend full charging-order protection to single-member LLCs by statute.\n\nThe common fix is structural, not geographic: add a second member. An irrevocable trust is the second member attorneys reach for most often, because it avoids bringing in another person who has their own creditors, divorce, or estate to worry about. That is also the reason serious asset-protection plans end up combining both entities instead of picking just one.",
       },
       {
         heading: "Estate tax: the LLC needs an extra step the trust doesn't",
@@ -1630,7 +1630,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
       { label: "IRS — Gift Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/gift-tax" },
       { label: "Olmstead v. FTC, 44 So. 3d 76 (Fla. 2010)", url: "https://www.courtlistener.com/opinion/2510651/olmstead-v-federal-trade-commission/" },
-      { label: "Fla. Stat. §605.0503 — Rights of judgment creditor", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html" },
+      { label: "Fla. Stat. §605.0503 — Rights of judgment creditor", url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0605/Sections/0605.0503.html" },
       { label: "ACTEC — American College of Trust and Estate Counsel", url: "https://www.actec.org/" },
     ],
     relatedComparisons: ["revocable-vs-irrevocable-trust", "living-trust-vs-will", "probate-vs-trust"],
@@ -1646,7 +1646,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "living-trust-vs-lady-bird-deed",
     title: "Living Trust vs Lady Bird Deed: Which Is Cheaper?",
     metaDescription:
-      "Living trust vs lady bird deed: a lady bird deed costs a few hundred dollars and covers one house, while a living trust costs more but covers your whole estate.",
+      "Living trust vs lady bird deed: a lady bird deed costs a few hundred dollars and covers one house, while a living trust costs more but covers your estate.",
     targetKeyword: "living trust vs lady bird deed",
     optionA: "Revocable Living Trust",
     optionB: "Lady Bird Deed (Enhanced Life Estate Deed)",
@@ -1903,7 +1903,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     sources: [
       { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
-      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
       { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
       { label: "LegalZoom — Cost to Set Up a Living Trust (2026)", url: "https://www.legalzoom.com/articles/cost-to-set-up-a-living-trust" },
       { label: "IRS — Estate Tax", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
@@ -2113,7 +2113,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "custodial-account-vs-savings-account",
     title: "Custodial Account vs Savings Account: Kids' Money",
     metaDescription:
-      "Custodial account vs savings account for a child: a UTMA/UGMA invests and is irrevocably the child's, while a savings account stays simple, liquid, and yours.",
+      "Custodial account vs savings account for a child: a UTMA/UGMA invests and is irrevocably theirs, while a savings account stays simple, liquid, and yours.",
     targetKeyword: "custodial account vs savings account",
     optionA: "Custodial Account (UTMA/UGMA)",
     optionB: "Savings Account",
@@ -2375,7 +2375,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   {
     slug: "custodial-roth-ira-vs-utma",
     title: "Custodial Roth IRA vs UTMA: Which for Your Kid?",
-    metaDescription: "Custodial Roth IRA vs UTMA (or UGMA): the Roth grows tax-free but needs a job; a UTMA has no income rule or cap. See which custodial account fits your child.",
+    metaDescription: "Custodial Roth IRA vs UTMA (or UGMA): the Roth grows tax-free but needs a job; a UTMA has no income rule or cap. See which one fits your child best.",
     targetKeyword: "custodial roth ira vs utma",
     optionA: "Custodial Roth IRA",
     optionB: "UTMA / Custodial Account",
@@ -2945,7 +2945,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     updated: "2026-08-30",
     title: "Roth IRA vs Traditional IRA: 2025 Comparison",
     metaDescription:
-      "Roth IRA vs Traditional IRA: compare 2025 tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.",
+      "Roth IRA vs Traditional IRA: compare tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.",
     targetKeyword: "roth ira vs traditional ira",
     optionA: "Roth IRA",
     optionB: "Traditional IRA",
@@ -3037,7 +3037,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "heloc-vs-home-equity-loan",
     title: "HELOC vs. Home Equity Loan: Which Is Better?",
     metaDescription:
-      "HELOC vs home equity loan compared: a HELOC is a variable-rate revolving line; a home equity loan is a fixed-rate lump sum. See rates, costs, and which to pick.",
+      "HELOC vs home equity loan: a HELOC is a variable-rate revolving line; a home equity loan is a fixed-rate lump sum. See rates, costs, and which to pick.",
     targetKeyword: "heloc vs home equity loan",
     optionA: "HELOC",
     optionB: "Home Equity Loan",
@@ -3231,7 +3231,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "pension-vs-401k",
     title: "Pension vs 401(k): Key Differences (2025)",
     metaDescription:
-      "Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance. Compare both.",
+      "Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance instead.",
     targetKeyword: "pension vs 401k",
     optionA: "Pension",
     optionB: "401(k)",
@@ -5821,7 +5821,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "medical-retirement-vs-disability-severance-pay",
     title: "Chapter 61 Retirement vs Disability Severance Pay",
     metaDescription:
-      "Chapter 61 medical retirement pays a monthly pension for life. Disability severance pays a one-time check. See the 30% rating that decides which one you get.",
+      "Chapter 61 medical retirement pays a monthly pension for life. Disability severance pays a one-time check. See the 30% rating that decides which you get.",
     targetKeyword: "chapter 61 retirement vs disability severance pay",
     optionA: "Chapter 61 Medical Retirement",
     optionB: "Disability Severance Pay",
@@ -8329,7 +8329,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "70-30-vs-60-40-portfolio",
     title: "70/30 vs 60/40 Portfolio: Which Mix Wins?",
     metaDescription:
-      "70/30 vs 60/40 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+      "70/30 vs 60/40 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth — pick the right stock-bond mix.",
     targetKeyword: "70/30 vs 60/40 portfolio",
     optionA: "70/30 Portfolio",
     optionB: "60/40 Portfolio",
@@ -8392,7 +8392,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "80-20-vs-90-10-portfolio",
     title: "80/20 vs 90/10 Portfolio: Which Mix Wins?",
     metaDescription:
-      "80/20 vs 90/10 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+      "80/20 vs 90/10 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth — pick the right stock-bond mix.",
     targetKeyword: "80/20 vs 90/10 portfolio",
     optionA: "80/20 Portfolio",
     optionB: "90/10 Portfolio",
@@ -8457,7 +8457,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "70-30-vs-80-20-portfolio",
     title: "70/30 vs 80/20 Portfolio: Which Mix Wins?",
     metaDescription:
-      "70/30 vs 80/20 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+      "70/30 vs 80/20 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth — pick the right stock-bond mix.",
     targetKeyword: "70/30 vs 80/20 portfolio",
     optionA: "70/30 Portfolio",
     optionB: "80/20 Portfolio",
@@ -9027,7 +9027,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "assumable-mortgage-vs-refinance",
     title: "Assumable Mortgage vs Refinance: Which Saves More?",
     metaDescription:
-      "Assumable mortgage vs refinance compared: FHA, VA, and USDA eligibility, the equity-gap cash requirement, closing costs, and which wins when rates are high.",
+      "Assumable mortgage vs refinance: FHA, VA, and USDA eligibility, the equity-gap cash requirement, closing costs, and which wins when rates are high.",
     targetKeyword: "assumable mortgage vs refinance",
     optionA: "Assumable Mortgage",
     optionB: "Refinance",
@@ -9370,7 +9370,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     slug: "ordinary-income-vs-capital-gains-tax",
     title: "Ordinary Income vs Capital Gains Tax Rates for 2026",
     metaDescription:
-      "See exactly how ordinary income and capital gains tax differ for 2026, with real bracket math on a $10,000 wages vs. gains example and ways to cut what you owe.",
+      "See how ordinary income and capital gains tax differ for 2026, with real bracket math on a $10,000 wages vs. gains example and ways to cut what you owe.",
     targetKeyword: "ordinary income vs capital gains tax",
     optionA: "Ordinary Income",
     optionB: "Capital Gains Tax",
@@ -11176,7 +11176,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     draft: false,
     title: "Chapter 7 vs Chapter 13 Bankruptcy: How They Differ",
     metaDescription:
-      "Chapter 7 vs Chapter 13 bankruptcy compared: liquidation against a repayment plan, means test eligibility, credit report impact, and what debt survives each.",
+      "Chapter 7 vs Chapter 13 bankruptcy: liquidation against a repayment plan, means test eligibility, credit report impact, and what debt survives each.",
     targetKeyword: "chapter 7 vs chapter 13 bankruptcy",
     optionA: "Chapter 7 Bankruptcy",
     optionB: "Chapter 13 Bankruptcy",

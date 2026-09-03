@@ -17,7 +17,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 1,
     metaTitle: "Auto Loan Calculator: Enter Any Amount, Instant Payment",
     metaDescription:
-      "Enter any car loan amount and APR to see your exact monthly payment instantly. Free auto loan calculator with amortization, refinance tools, and 2026 rates.",
+      "Enter any car loan amount and APR to see your exact monthly payment instantly. Free calculator with amortization, refinance tools, and 2026 rates.",
     targetKeyword: "auto loan calculator",
     h1: "Auto Loan Calculator",
     intro:
@@ -627,7 +627,7 @@ export const CALCULATORS: CalculatorDef[] = [
     ],
     sources: [
       { label: "Cal. Prob. Code §10810 — attorney statutory schedule", url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10810&lawCode=PROB" },
-      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
+      { label: "Fla. Stat. §733.6171 — attorney presumed reasonable", url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0733/Sections/0733.6171.html" },
       { label: "Iowa Code §633.197 — executor commission", url: "https://www.legis.iowa.gov/docs/code/633.197.pdf" },
       { label: "Mo. Rev. Stat. §473.153 — statutory fee", url: "https://revisor.mo.gov/main/OneSection.aspx?section=473.153" },
       { label: "NY SCPA §2307 — executor commissions", url: "https://www.nysenate.gov/legislation/laws/SCP/2307" },
@@ -768,7 +768,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 14,
     metaTitle: "529 Calculator: College Savings Projection",
     metaDescription:
-      "Free 529 calculator: project your college savings investment growth to 18, compare it to inflated college costs, and see the monthly amount to fully fund it.",
+      "Free 529 calculator: project your college savings growth to 18, compare it to inflated college costs, and see the monthly amount to fully fund it.",
     targetKeyword: "529 savings calculator",
     h1: "529 Savings Calculator",
     intro:

@@ -436,7 +436,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     slug: "how-much-business-loan-can-i-qualify-for",
     title: "How Much Business Loan Can You Qualify For?",
     metaDescription:
-      "See what lenders check: revenue, time in business, credit score, and DSCR. Typical thresholds by loan type, plus how to estimate your own borrowing capacity.",
+      "See what lenders check: revenue, time in business, credit score, and DSCR. Typical thresholds by loan type, plus how to estimate your borrowing capacity.",
     h1: "How Much Business Loan Can You Qualify For?",
     cardBlurb: "What lenders check on revenue, time in business, credit score, and DSCR, plus how to estimate your own borrowing capacity before you apply.",
     intro:
