@@ -8452,6 +8452,72 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── 70/30 Portfolio vs 80/20 Portfolio (ga4-top-pages pass 2026-09-03) ──
+  {
+    slug: "70-30-vs-80-20-portfolio",
+    title: "70/30 vs 80/20 Portfolio: Which Mix Wins?",
+    metaDescription:
+      "70/30 vs 80/20 portfolio compared on the same model: expected return, volatility, Sharpe ratio, and 30-year growth, so you can pick the right stock-bond mix.",
+    targetKeyword: "70/30 vs 80/20 portfolio",
+    optionA: "70/30 Portfolio",
+    optionB: "80/20 Portfolio",
+    segment: "Portfolio allocation",
+    h1: "70/30 vs 80/20 Portfolio: Which Stock-Bond Mix Wins?",
+    intro:
+      "An 80/20 portfolio (80% stocks, 20% bonds) pushes further into stocks than a 70/30 mix, for a higher expected return and a wider range of outcomes. On this site's own portfolio model, 80/20 shows an 8.80% expected return versus 70/30's 8.20%, but with 12.94% volatility versus 70/30's 11.45%. The extra return comes with genuinely more risk taken on to get it.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Stock / bond split", a: "70% stocks / 30% bonds", b: "80% stocks / 20% bonds" },
+        { dimension: "Expected return (model)", a: "8.20%", b: "8.80%" },
+        { dimension: "Volatility (model)", a: "11.45%", b: "12.94%" },
+        { dimension: "Sharpe ratio (model, risk-adjusted return)", a: "0.50", b: "0.49" },
+        { dimension: "$100,000 over 30 years, no added contributions (model)", a: "≈$1,063,697", b: "≈$1,255,645" },
+        { dimension: "Likely 1-year range on $100,000 (model, ±1 std dev)", a: "$96,752 – $119,648", b: "$95,862 – $121,738" },
+        { dimension: "Best suited for", a: "Long horizon, high risk tolerance", b: "Very long horizon, higher risk tolerance" },
+      ],
+    },
+    verdict:
+      "Choose 80/20 if your time horizon runs 15+ years and you can stay invested through wider swings for a meaningfully higher expected balance. Over 30 years on $100,000, that's roughly $191,948 more than 70/30 in this model. Choose 70/30 if you want nearly all of that growth with a narrower worst-case range and a slightly better risk-adjusted return. 70/30's 0.50 Sharpe ratio edges out 80/20's 0.49, meaning it delivers marginally more return per unit of risk taken even though 80/20 wins on raw expected return.",
+    sections: [
+      {
+        heading: "Where these numbers actually come from",
+        content:
+          "Both figures use the same modeling assumptions already live on this site's 70/30-vs-60/40 and 80/20-vs-90/10 comparison pages: stocks at a 10% expected return with 16% volatility, and bonds at a 4% expected return with 5% volatility, per [SEC Investor.gov guidance](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) on long-run asset-class behavior. An 80/20 mix simply weights 10 more percentage points toward the higher-return, higher-volatility stock assumption than 70/30 does. These are long-run model estimates. Real markets don't move in a straight line.",
+      },
+      {
+        heading: "The volatility gap in dollar terms",
+        content:
+          "A 12.94% volatility means an 80/20 portfolio's returns can swing wider in a single year than 70/30's 11.45%. On a $100,000 portfolio, the modeled one-year floor drops from $96,752 in a 70/30 mix to $95,862 in an 80/20 mix. That's a gap of about $890, small on paper but one that widens every year the portfolio compounds, since a bad year lands on a larger base as the balance grows.",
+      },
+      {
+        heading: "Sharpe ratio: why 70/30 is marginally more efficient",
+        content:
+          "The Sharpe ratio measures return earned above a risk-free rate for each unit of risk taken. In this model, 70/30's 0.50 Sharpe ratio sits a touch above 80/20's 0.49. That means 70/30 delivers slightly more return per unit of volatility, even though 80/20 wins on raw expected return. Our own portfolio-calculator engine shows this same pattern every time we push stock weight higher. Each additional 10 points of stocks adds real dollars to the 30-year projection, but adds slightly more volatility than it adds risk-adjusted return, a mild case of diminishing returns that shows up well before an investor reaches 90/10 or 100% stocks.",
+      },
+      {
+        heading: "How to decide between them",
+        content:
+          "Start with your time horizon. A saver 15+ years from needing the money can typically absorb 80/20's extra volatility for the higher expected balance. A saver with a shorter runway, or one who knows a wider bad-year range would tempt them to sell, is usually better served by 70/30's narrower swings and marginally better risk-adjusted return.\n\nBoth mixes are growth-tilted, so neither is a conservative default. If you want less volatility than either, the [70/30 vs 60/40 comparison](/compare/70-30-vs-60-40-portfolio/) covers a more balanced step down. Run your own numbers in the [70/30 portfolio calculator](/portfolio/70-30-portfolio-calculator/) and the [80/20 portfolio calculator](/portfolio/80-20-portfolio-calculator/) to compare against your actual balance and timeline, or use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to test splits in between.",
+      },
+    ],
+    faqs: [
+      { question: "Is 80/20 too aggressive if I'm already comfortable with 70/30?", answer: "Not necessarily. 80/20 is a modest step up from 70/30, adding 10 percentage points of stocks. In this model that raises volatility from 11.45% to 12.94% and expected return from 8.20% to 8.80%. It's a reasonable move for an investor with a long horizon who wants more growth, but if 70/30 already fits your risk tolerance, there's no requirement to push further." },
+      { question: "How much more does 80/20 return than 70/30 over 30 years?", answer: "In this site's model, $100,000 invested with no added contributions grows to about $1,255,645 in an 80/20 mix versus about $1,063,697 in a 70/30 mix over 30 years, a difference of roughly $191,948. That gap comes from 80/20's higher 8.80% expected return versus 70/30's 8.20%, compounded over three decades. Actual results will differ, since real returns vary year to year." },
+      { question: "Which has the better risk-adjusted return, 70/30 or 80/20?", answer: "70/30 does, by a small margin, in this model: its 0.50 Sharpe ratio is marginally higher than 80/20's 0.49. That means 70/30 delivers slightly more return for each unit of volatility taken, even though 80/20 wins on raw expected return. The difference is small enough that either choice is reasonable for an investor with a long time horizon." },
+      { question: "What's the difference in risk between 70/30 and 80/20?", answer: "80/20 carries 12.94% modeled volatility versus 70/30's 11.45%, about 1.49 percentage points higher. In practice, that means 80/20's returns swing further above and below their average in any given year, since it holds 10 more percentage points in stocks, the more volatile asset in this model." },
+      { question: "Should I go straight to 90/10 instead of 80/20?", answer: "Only if your time horizon is even longer and your risk tolerance is even higher. The [80/20 vs 90/10 comparison](/compare/80-20-vs-90-10-portfolio/) shows the same pattern repeating: more expected return, more volatility, and a slightly lower Sharpe ratio at each step further into stocks. Most investors get the large majority of the growth benefit by 80/20 without pushing all the way to 90/10." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+    ],
+    relatedComparisons: ["70-30-vs-60-40-portfolio", "80-20-vs-90-10-portfolio"],
+    calculatorLinks: [
+      { label: "70/30 portfolio calculator", href: "/portfolio/70-30-portfolio-calculator/" },
+      { label: "80/20 portfolio calculator", href: "/portfolio/80-20-portfolio-calculator/" },
+    ],
+  },
+
   // ─── Vanguard vs Fidelity vs Schwab (3-way brokerage roundup) ────────────
   // Competitor-monitor pass: this site already has vanguard-vs-fidelity, fidelity-vs-schwab, and
   // vanguard-vs-schwab as separate pairwise pages. This is an additional 3-way roundup for a reader

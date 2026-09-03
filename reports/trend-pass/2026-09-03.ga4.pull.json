@@ -1,0 +1,136 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-02",
+  "window_start": "2026-09-02",
+  "window_end": "2026-09-02",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 413,
+      "sessions": 282,
+      "active_users": 272,
+      "clicks": 413
+    },
+    {
+      "page": "/net-worth/",
+      "views": 23,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 23
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 13,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 13
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 10,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 10
+    },
+    {
+      "page": "/portfolio/70-30-portfolio-calculator/",
+      "views": 6,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 6
+    },
+    {
+      "page": "/auto-loan/interest-calculator/",
+      "views": 5,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 5
+    },
+    {
+      "page": "/guides/250th-anniversary-coins/",
+      "views": 5,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 5
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 4,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 4
+    }
+  ],
+  "top10_pages_total_views": 488,
+  "top10_pages_total_clicks": 488,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Unassigned": 131,
+      "Organic Search": 130,
+      "Cross-network": 125,
+      "Direct": 5,
+      "AI Assistant": 1,
+      "Referral": 1
+    },
+    "/guides/250th-anniversary-coins/": {
+      "Cross-network": 4,
+      "Unassigned": 4,
+      "Organic Search": 1
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Unassigned": 4,
+      "Cross-network": 3,
+      "Organic Search": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Cross-network": 4,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/": {
+      "Unassigned": 3,
+      "Direct": 1,
+      "Referral": 1
+    },
+    "/net-worth/": {
+      "Unassigned": 3,
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Direct": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Cross-network": 2,
+      "Direct": 2,
+      "Organic Search": 2
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/auto-loan/interest-calculator/": {
+      "Cross-network": 1,
+      "Organic Search": 1
+    },
+    "/portfolio/70-30-portfolio-calculator/": {
+      "Cross-network": 1,
+      "Organic Search": 1
+    }
+  }
+}

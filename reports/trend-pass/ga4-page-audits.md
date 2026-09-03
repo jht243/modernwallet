@@ -131,3 +131,8 @@
 | /roundup/best-money-market-accounts/ | 2026-09-02 | 4 | 0/0/0/0/0 | 2 |
 | /compare/401k-vs-roth-ira/ | 2026-09-02 | 3 | 0/0/0/0/0 | 1 |
 | /compare/529-vs-utma/ | 2026-09-02 | 3 | 0/0/0/0/0 | 0 |
+| /net-worth/ | 2026-09-03 | 23 | 0/0/0/0/0 | 0 |
+| /guides/custodial-account-taxes-kiddie-tax/ | 2026-09-03 | 10 | 0/0/0/0/0 | 0 |
+| /portfolio/70-30-portfolio-calculator/ | 2026-09-03 | 6 | 0/1/0/0/0 | 0 |
+| /auto-loan/interest-calculator/ | 2026-09-03 | 5 | 0/0/0/0/0 | 0 |
+| /guides/529-leftover-money-options/ | 2026-09-03 | 5 | 0/0/0/0/0 | 0 |
