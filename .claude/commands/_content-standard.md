@@ -503,6 +503,7 @@ The helper sends the intro alone to GPT-5.6 Sol, returns the same number of para
 
 **Rules.**
 - New pages only. Do NOT run it on existing pages a routine merely edited, and never on a page under DEFEND-LOCK.
+- **Never send a byline or a disclosure paragraph to the model.** Before piping, drop any intro paragraph that is a reviewer/author line (`Reviewed by…`, `Last updated…`) or affiliate/FTC disclosure copy (`…may earn a referral commission…`, `…at no extra cost to you…`), then put those paragraphs back verbatim, in their original position, after the rewrite. That text is attribution and legal copy, not voice; a reworded disclosure is a compliance change nobody asked for. (On 2026-09-03 the pass reworded the disclosure on 6 layer3 pages and had to be restored from git.)
 - Only the intro. Section bodies, tables, FAQs, metadata, and links are untouched.
 - It replaces the intro's field in place — same paragraph count, same links, same facts. The helper drops the rewrite and keeps the original if the paragraph count changed.
 - It is NOT re-audited. Its output is the shipped intro. (It carries no ban list precisely because the audit already ran; re-auditing it would flatten it back.)
