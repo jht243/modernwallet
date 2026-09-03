@@ -115,14 +115,18 @@ def humanize(text: str, verbose: bool = False) -> str:
 
     body = {"model": MODEL,
             "messages": [{"role": "user", "content": f"{PROMPT}\n\n" + "\n\n".join(editable)}]}
+    # ensure_ascii + explicit utf-8: the cloud sandbox's default locale is ASCII, and an
+    # intro containing an em-dash or curly quote raised UnicodeEncodeError here, which the
+    # bail path swallowed as "unchanged" - i.e. those pages silently never got humanized.
     req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions", data=json.dumps(body).encode(), method="POST",
+        "https://api.openai.com/v1/chat/completions",
+        data=json.dumps(body, ensure_ascii=True).encode("utf-8"), method="POST",
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=180) as r:
             out = json.loads(r.read())["choices"][0]["message"]["content"].strip()
     except Exception as e:  # noqa: BLE001 - this step must never break a run
-        return bail(f"api error: {type(e).__name__}")
+        return bail(f"api error: {type(e).__name__}: {str(e)[:120]}")
 
     new = [_house_style(p) for p in _paras(out)]
     if not new:
@@ -142,7 +146,14 @@ def main() -> int:
     args = [a for a in sys.argv[1:]]
     verbose = "--verbose" in args
     args = [a for a in args if a != "--verbose"]
-    text = Path(args[1]).read_text() if args[:1] == ["--file"] else sys.stdin.read()
+    # Never depend on the ambient locale: read, write and decode as UTF-8 explicitly.
+    for stream in (sys.stdout, sys.stderr, sys.stdin):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:  # noqa: BLE001 - older/odd streams
+            pass
+    text = (Path(args[1]).read_text(encoding="utf-8", errors="replace")
+            if args[:1] == ["--file"] else sys.stdin.read())
     sys.stdout.write(humanize(text, verbose=verbose))
     return 0
 
