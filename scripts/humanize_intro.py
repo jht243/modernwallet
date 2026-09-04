@@ -88,9 +88,16 @@ def _house_style(s: str) -> str:
     """Fold the model's typography into house style. Ranges keep their meaning."""
     s = (s.replace("’", "'").replace("‘", "'")
            .replace("“", '"').replace("”", '"').replace("…", "..."))
+    # A verse or statute reference keeps a plain hyphen. "Hebrews 1:1-4" must never become
+    # "Hebrews 1:1 to 4" (Find A Prayer, 2026-09-04: 33 scripture citations corrupted).
+    s = re.sub(r"(\d+:\d+)\s*[–—]\s*(\d+)", r"\1-\2", s)
     # A dash between numbers is a RANGE -> "to". Handles "$20–$30", "20–30", "25–45%".
     s = re.sub(r"(\d%?)\s*[–—]\s*([$£€]?\d)", r"\1 to \2", s)
-    s = re.sub(r"\s*[–—]\s*", ", ", s)                   # remaining dashes -> comma
+    # A dash sitting TIGHT between word characters is a compound modifier, not a clause
+    # break: "Fannie Mae-approved condos". Turning it into a comma produced the garbled
+    # "a list of Fannie Mae, approved condos" (The HOA Guide, 2026-09-04).
+    s = re.sub(r"(?<=[A-Za-z0-9])[–—](?=[A-Za-z0-9])", "-", s)
+    s = re.sub(r"\s*[–—]\s*", ", ", s)                   # a real clause dash -> comma
     s = re.sub(r",\s*,", ",", s)
     s = re.sub(r"\s+,", ",", s)
     s = re.sub(r",\s*\.", ".", s)
@@ -147,6 +154,13 @@ def humanize(text: str, verbose: bool = False) -> str:
         return bail(f"api error: {type(e).__name__}: {str(e)[:120]}")
 
     new = [_house_style(p) for p in _paras(out)]
+    # Some stores render introText as PLAIN TEXT, so markdown the model invented shows up
+    # literally on the page (Find A Prayer, 2026-09-04: 20 pages shipped *eucharistia*).
+    # Only strip emphasis the INPUT did not already use; a markdown repo keeps its own.
+    if not re.search(r"(\*\*|(?<!\*)\*(?!\*)|^>\s)", text, re.M):
+        new = [re.sub(r"\*\*([^*]+)\*\*", r"\1", p) for p in new]
+        new = [re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"\1", p) for p in new]
+        new = [re.sub(r"(?m)^>\s?", "", p) for p in new]
     if not new:
         return bail("empty response")
 
