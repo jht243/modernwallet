@@ -8387,7 +8387,7 @@ export const GUIDES: Guide[] = [
     h1: "Is Interest on Savings Accounts and CDs Taxable?",
     cardBlurb: "How the IRS taxes savings and CD interest, what a 1099-INT reports, and the few accounts that dodge the bill.",
     introText:
-      "Interest from a savings account or a certificate of deposit (CD) is taxable as ordinary income the year it's paid or credited, even if you never touch it or roll it straight into a new CD. The mistake we see most often is treating a CD's maturity date as the tax event, when a CD with a term longer than one year gets taxed on the interest it credits each year, not just the year it finally pays out. Banks report it on Form 1099-INT once it clears $10, breaking a CD early adds a penalty that's separately deductible, and only a handful of account types skip the tax entirely.",
+      "Interest from a savings account or certificate of deposit (CD) is taxable as ordinary income in the year it's paid or credited, even if you never touch the money or roll it directly into a new CD. The mistake we see most often is treating the CD's maturity date as the tax event. For a CD with a term longer than one year, you're taxed on the interest credited each year, not only in the year the CD finally pays out. Banks report the interest on Form 1099-INT once it clears $10. If you break a CD early, the penalty is separately deductible, and only a handful of account types avoid the tax entirely.",
     sections: [
       {
         heading: "How Savings and CD Interest Gets Taxed",
@@ -8442,7 +8442,7 @@ export const GUIDES: Guide[] = [
     h1: "Social Security Survivor Benefits and the Earnings Limit",
     cardBlurb: "The 2026 earnings-test numbers for survivor benefits, and why withheld money isn't actually gone.",
     introText:
-      "Working while you collect a Social Security survivor benefit before your own full retirement age (FRA) can shrink your monthly check, because the same earnings test that applies to retirement benefits also applies to survivor benefits. The mistake we see most often is assuming survivor benefits work by a different set of rules entirely, when the [Social Security Administration](https://www.ssa.gov/) (SSA) runs both through one earnings test, with one exception: survivor benefits use their own FRA table, which can land a few months earlier than your retirement FRA depending on your birth year.",
+      "If you work while collecting a Social Security survivor benefit before reaching your own full retirement age (FRA), the earnings test can reduce your monthly check. It's the same test that applies to retirement benefits. The mistake we see most often is assuming that survivor benefits follow an entirely different set of rules. In fact, the [Social Security Administration](https://www.ssa.gov/) (SSA) applies one earnings test to both, with one exception: survivor benefits have their own FRA table, which, depending on your birth year, can fall a few months earlier than your retirement FRA.",
     sections: [
       {
         heading: "The 2026 Earnings Limits",
@@ -8499,7 +8499,7 @@ export const GUIDES: Guide[] = [
     h1: "Trust Tax Rates Hit 37% at Just $16,000 in 2026",
     cardBlurb: "Why a trust hits the 37% bracket at $16,000, and the deduction that lets most trusts avoid it.",
     introText:
-      "A non-grantor trust that keeps its own income hits the top 37% federal tax bracket once its taxable income passes just $16,000 in 2026, compared to $640,600 or more before a single individual reaches that same rate. The mistake we see most often is applying that compressed bracket to every trust, when a grantor trust doesn't pay income tax at the trust level at all. Its income flows straight onto the person who created it and gets taxed at their individual rate instead.",
+      "In 2026, a non-grantor trust that keeps its own income reaches the top 37% federal tax bracket once its taxable income exceeds just $16,000. By comparison, a single individual does not reach that rate until their taxable income is $640,600 or more.\n\nThe mistake we see most often is applying that compressed bracket to every trust. But a grantor trust does not pay income tax at the trust level at all. Instead, its income flows directly to the person who created it and is taxed at their individual rate.",
     sections: [
       {
         heading: "The 2026 Trust Income Tax Brackets",
@@ -8557,7 +8557,7 @@ export const GUIDES: Guide[] = [
     h1: "The 2026 Child Tax Credit Is $2,200 per Child",
     cardBlurb: "Who qualifies for the 2026 Child Tax Credit, the income phase-out, and how the refundable portion actually works.",
     introText:
-      "The Child Tax Credit (CTC) is worth up to $2,200 per qualifying child on your 2026 tax return, and up to $1,700 of that amount is refundable even if you owe no federal tax. The mistake we see most often is assuming the credit phases out at a low income, when the reduction doesn't start until $200,000 for a single filer or $400,000 for a married couple filing jointly, well above what most families earn.",
+      "The Child Tax Credit (CTC) is worth up to $2,200 for each qualifying child on your 2026 tax return. Up to $1,700 of that amount is refundable, even if you owe no federal tax. The mistake we see most often is assuming the credit phases out at a low income. In fact, the reduction doesn't start until $200,000 for a single filer or $400,000 for a married couple filing jointly, well above what most families earn.",
     sections: [
       {
         heading: "Who Qualifies for the Child Tax Credit",
