@@ -93,10 +93,13 @@ def _house_style(s: str) -> str:
     s = re.sub(r"(\d+:\d+)\s*[–—]\s*(\d+)", r"\1-\2", s)
     # A dash between numbers is a RANGE -> "to". Handles "$20–$30", "20–30", "25–45%".
     s = re.sub(r"(\d%?)\s*[–—]\s*([$£€]?\d)", r"\1 to \2", s)
-    # A dash sitting TIGHT between word characters is a compound modifier, not a clause
+    # An EN dash sitting tight between word characters is a compound modifier, not a clause
     # break: "Fannie Mae-approved condos". Turning it into a comma produced the garbled
     # "a list of Fannie Mae, approved condos" (The HOA Guide, 2026-09-04).
-    s = re.sub(r"(?<=[A-Za-z0-9])[–—](?=[A-Za-z0-9])", "-", s)
+    # An EM dash is a clause break even with no spaces around it, so it is NOT included here:
+    # treating it as a compound produced "many communities-but it is also" on 82 units of the
+    # same site. Em dashes all fall through to the comma rule below.
+    s = re.sub(r"(?<=[A-Za-z0-9])\u2013(?=[A-Za-z0-9])", "-", s)
     s = re.sub(r"\s*[–—]\s*", ", ", s)                   # a real clause dash -> comma
     s = re.sub(r",\s*,", ",", s)
     s = re.sub(r"\s+,", ",", s)
