@@ -1,0 +1,128 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-03",
+  "window_start": "2026-09-03",
+  "window_end": "2026-09-03",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 103,
+      "sessions": 134,
+      "active_users": 132,
+      "clicks": 103
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 1,
+      "clicks": 4
+    },
+    {
+      "page": "/mortgage/extra-payment-calculator/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/auto-loan/amortization-schedule/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/250th-anniversary-coins/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/personal-loans-for-excellent-credit/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    }
+  ],
+  "top10_pages_total_views": 138,
+  "top10_pages_total_clicks": 138,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 60,
+      "Unassigned": 49,
+      "Cross-network": 45,
+      "Direct": 5
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 4
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 4,
+      "Cross-network": 2,
+      "Unassigned": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 3,
+      "Cross-network": 2,
+      "Unassigned": 1
+    },
+    "/auto-loan/amortization-schedule/": {
+      "Cross-network": 2,
+      "Organic Search": 1
+    },
+    "/guides/250th-anniversary-coins/": {
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Cross-network": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Cross-network": 2,
+      "Organic Search": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 2,
+      "Direct": 1,
+      "Organic Search": 1
+    },
+    "/guides/personal-loans-for-excellent-credit/": {
+      "Direct": 2
+    },
+    "/mortgage/extra-payment-calculator/": {
+      "Direct": 2,
+      "Organic Search": 1
+    }
+  }
+}

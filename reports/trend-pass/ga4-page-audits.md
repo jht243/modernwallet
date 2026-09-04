@@ -136,3 +136,7 @@
 | /portfolio/70-30-portfolio-calculator/ | 2026-09-03 | 6 | 0/1/0/0/0 | 0 |
 | /auto-loan/interest-calculator/ | 2026-09-03 | 5 | 0/0/0/0/0 | 0 |
 | /guides/529-leftover-money-options/ | 2026-09-03 | 5 | 0/0/0/0/0 | 0 |
+| /mortgage/extra-payment-calculator/ | 2026-09-04 | 4 | 0/0/1/0/0 | 0 |
+| /guides/personal-loans-for-excellent-credit/ | 2026-09-04 | 3 | 0/0/1/0/0 | 0 |
+| /auto-loan/amortization-schedule/ | 2026-09-04 | 3 | 0/0/1/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-09-04 | 3 | 0/0/0/0/0 | 1 |

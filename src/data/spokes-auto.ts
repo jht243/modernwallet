@@ -256,6 +256,11 @@ export const AUTO_SPOKES: SpokeEntry[] = [
         answer:
           "Because early payments are mostly interest, your principal drops slowly at first. After a year or two, your remaining balance is higher than you might expect. Check the schedule above before you sell or refinance early.",
       },
+      {
+        question: "Which bank or credit union has the best auto loan calculator?",
+        answer:
+          "Several banks and credit unions publish their own auto loan calculators, but they vary in what they actually show — some skip the full amortization breakdown this calculator gives you. See our [roundup of the best auto loan calculators by bank and credit union](/roundup/best-auto-loan-calculators-by-bank-and-credit-union/) to compare what each one offers before you rely on it.",
+      },
     ],
     sources: [
       { label: "CFPB — What is amortization and how could it affect my auto loan?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-amortization-and-how-could-it-affect-my-auto-loan-en-771/" },

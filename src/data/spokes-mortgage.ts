@@ -138,6 +138,11 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Both reach the same goal, but doing it yourself is free. Third-party biweekly plans can charge setup or service fees. You can match the result by adding one extra payment a year on your own, or using the calculator above to set a monthly extra amount.",
       },
+      {
+        question: "Should I pay extra on my mortgage or invest the money instead?",
+        answer:
+          "It depends on your rate. Prepaying a 6.5% mortgage is a guaranteed 6.5% return, while investing that same money is a real edge only if the market beats your rate over your full time horizon, with no guarantee it will. A sub-4% mortgage tips the math toward investing instead. See the full worked comparison, side by side, in our guide on whether to [pay off debt or invest](/guides/pay-off-debt-or-invest/).",
+      },
     ],
     sources: [
       { label: "CFPB — What is a prepayment penalty?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/" },
