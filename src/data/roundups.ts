@@ -22,7 +22,7 @@ export interface RoundupEntry {
   angle: string;
   segment?: string;
   h1: string;
-  intro: string;
+  introText: string;
   rankingCriteria: string;
   options: RoundupOption[];
   comparisonTable: {
@@ -49,7 +49,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "mortgage lenders",
     angle: "best",
     h1: "Best Mortgage Lenders of 2026",
-    intro:
+    introText:
       "The best mortgage lender for you depends on your loan type, credit profile, and whether you prefer a digital-first process or in-person support.\n\nWe evaluated eight leading lenders on interest rate transparency, origination fees, loan-type variety, online tools, and customer satisfaction scores. No lender paid for placement — rankings reflect independent analysis only.",
     rankingCriteria:
       "We scored each lender on five criteria: rate competitiveness (based on published rate ranges and third-party surveys), origination fee structure, loan-type breadth (conventional, FHA, VA, jumbo, USDA), digital experience quality, and J.D. Power customer satisfaction scores where available.\n\nLenders with opaque fee structures or that required a hard credit pull before showing rates were penalized. Specialized lenders (VA-focused, first-time buyer specialists) earned bonus weight in their lane.",
@@ -294,7 +294,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "index funds",
     angle: "best",
     h1: "Best Index Funds of 2026",
-    intro:
+    introText:
       "The best index funds deliver broad market exposure at the lowest possible cost — so more of your return compounds over time instead of going to fund fees.\n\nWe evaluated eight widely available index funds on expense ratio, index tracked, assets under management, tracking error, minimum investment, and tax efficiency. No fund family sponsored this list. Where you hold one of these funds matters almost as much as which one you pick — see our [brokerage account vs. IRA comparison](/compare/brokerage-vs-ira/) before you buy. If you're unsure whether to buy an index fund or an ETF version of the same exposure, see [index fund vs ETF](/compare/index-fund-vs-etf/) for the practical differences.",
     rankingCriteria:
       "Rankings prioritize expense ratio (the single most controllable return factor), index coverage breadth, and accessibility (minimum investment, availability across brokerages). We also weighted tracking error — how closely the fund mirrors its index — and tax efficiency (capital gains distribution history).\n\nFunds are organized by primary strategy rather than strict rank, because the 'best' fund depends on which asset class you're targeting. We include U.S. total-market, S&P 500, international, and bond index options. If you're weighing how much of that mix should sit in equities versus bonds, our [stocks vs. bonds comparison](/compare/stocks-vs-bonds/) breaks down the trade-off.",
@@ -551,7 +551,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "IRA accounts",
     angle: "best",
     h1: "Best IRA Accounts of 2026",
-    intro:
+    introText:
       "The best IRA account depends on whether you want to pick your own investments, use a robo-advisor, or trade actively — and how much you care about fees, investment selection, and the quality of educational tools.\n\nWe evaluated seven leading IRA providers on account fees, investment options, ease of opening, trading costs, automatic investment tools, and customer support. The contribution limit for 2026 is $7,000 ($8,000 if you're 50 or older), and the best provider is the one where you'll actually contribute regularly.",
     rankingCriteria:
       "We prioritized account fees (annual fees, inactivity fees, closure fees), investment accessibility (minimum to open, minimum per fund), investment option breadth, automated investing capability, and the quality of educational resources for retirement-focused investors.\n\nRobo-advisors and DIY platforms were evaluated separately, since their value propositions are fundamentally different — we included both so you can match the right model to your investing style.",
@@ -806,7 +806,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "beginners",
     h1: "Best Investment Apps for Beginners in 2026",
-    intro:
+    introText:
       "The best investment apps for beginners combine low (or zero) fees with clear guidance — so you can start investing without needing a finance degree.\n\nWe evaluated seven widely used apps on account minimums, fee structure, ease of setup, investment selection, educational content quality, and how well each supports beginner needs like automatic investing and goal tracking. No app sponsored this ranking.",
     rankingCriteria:
       "We weighted account minimums (lower is better), fee transparency, beginner-specific onboarding experience, quality of educational content, automation features (round-ups, auto-invest), and the clarity of the investing interface.\n\nApps that obscure fees or use complex interfaces were penalized. Apps with built-in financial education, goal-setting, or guided portfolio options earned bonus weight for beginner suitability.",
@@ -1012,7 +1012,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "money market accounts",
     angle: "best",
     h1: "Best Money Market Accounts of 2026",
-    intro:
+    introText:
       "The best money market accounts pay significantly more than traditional savings accounts while keeping your money accessible — typically with check-writing privileges and debit card access.\n\nWe evaluated seven money market accounts on annual percentage yield (APY), fees, FDIC coverage, minimum balance requirements, and ease of access. Rates fluctuate with Federal Reserve policy — verify current APYs before opening any account.",
     rankingCriteria:
       "Rankings prioritize APY (the primary reason to choose a money market account over a traditional savings account), fee structure (monthly fees eliminate rate advantage), FDIC or NCUA insurance coverage, minimum balance requirements, and account accessibility features (check-writing, debit card, ATM access).\n\nOnline-only institutions often offer higher rates because they have lower overhead costs than brick-and-mortar banks. This makes them legitimate for emergency funds and short-term savings if you're comfortable with digital-only access.",
@@ -1247,7 +1247,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "couples",
     h1: "Best Budgeting Apps for Couples in 2026",
-    intro:
+    introText:
       "The best budgeting apps for couples make it easy to see each other's spending in real time, agree on shared goals, and avoid the money tension that comes from financial blind spots.\n\nWe evaluated seven apps on shared account support, real-time transaction sync, joint goal-setting, bill tracking, and how well each handles the complexity of two people with potentially separate and joint accounts. Budgeting solo, or just want the broader field? See our [best budgeting apps](/roundup/best-budgeting-apps/) roundup for picks evaluated on general-purpose features.",
     rankingCriteria:
       "We prioritized: multi-user support (both partners get app access under one subscription), real-time sync across linked accounts, shared goal and budget category visibility, and ease of setup for couples with both joint and individual accounts.\n\nApps designed from the ground up for couples (like Honeydue) earned consideration even if their feature set is narrower, because purpose-built tools often solve couple-specific friction better than general-purpose apps retrofitted with a second-user feature.",
@@ -1461,7 +1461,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "small business",
     h1: "Best 401(k) Providers for Small Business in 2026",
-    intro:
+    introText:
       "The best 401(k) provider for a small business minimizes compliance burden, keeps fees low enough to preserve employee returns, and integrates cleanly with your payroll system.\n\nWe evaluated seven providers on monthly plan cost, per-employee fees, investment options, payroll integration, automated compliance (Form 5500, nondiscrimination testing), and setup complexity. No provider paid for placement in this ranking.",
     rankingCriteria:
       "We prioritized total plan cost (employer fees + fund expense ratios passed to employees), automated compliance support, payroll integration depth, quality of investment lineup, and ease of setup. Providers that hide fees in fund expense ratios or require manual compliance work were penalized.\n\nSize of business matters significantly here: a solo 401(k) at Fidelity is ideal for self-employed individuals, while Guideline or Human Interest suit teams of 2–50. Larger small businesses (50–100 employees) may need ADP or Paychex for the added HR integration.",
@@ -1694,7 +1694,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "net worth trackers",
     angle: "best",
     h1: "Best Net Worth Trackers of 2026",
-    intro:
+    introText:
       "The best net worth tracker links all your accounts — bank, investment, real estate, and debt — in one place so you can see your true financial picture at a glance.\n\nWe evaluated seven trackers on account aggregation breadth, investment portfolio visibility, net worth history tracking, ease of setup, security practices, and cost. Several are free; the paid options add financial planning depth that justifies the cost for the right user.",
     rankingCriteria:
       "Rankings prioritize completeness of net worth calculation (does it handle investment accounts, real estate estimates, and liabilities accurately?), data aggregation quality (how many account types does it support with live sync?), and historical tracking (can you see your net worth trend over months and years?).\n\nSecurity practices earned weight: any app that aggregates financial accounts must use strong encryption and ideally read-only access (not storing login credentials). We also evaluated ease of manual entry for accounts that can't sync automatically.",
@@ -1917,7 +1917,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "self-employed",
     h1: "Best Retirement Accounts for Self-Employed in 2026",
-    intro:
+    introText:
       "Self-employed individuals have access to more powerful retirement account options than most employees — but choosing the wrong structure can cost tens of thousands in missed tax deductions or unnecessary complexity.\n\nWe compare seven retirement account types available to self-employed individuals and small business owners on contribution limits, tax treatment, setup complexity, and best-fit income level. These are account structures, not product vendors — the right account type determines how much you can save and when you pay taxes.",
     rankingCriteria:
       "Rankings consider maximum annual contribution limit (higher = more tax-sheltered savings), flexibility of contribution timing, administrative complexity, tax treatment (pre-tax vs. Roth vs. after-tax), income requirements, and whether the account works for business owners with employees.\n\nFor self-employed individuals, contribution limits are the primary differentiator — the ability to shelter more income from taxes each year has compounding effects that dwarf differences in investment returns.",
@@ -2156,7 +2156,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Tax Resolution",
     h1: "Best Tax Relief Companies of 2026",
-    intro:
+    introText:
       "The best tax relief companies are the ones with the cleanest BBB record, verifiable staff credentials, transparent pricing, and no recent FTC action — and by that standard the category has fewer safe picks than most reviews suggest. We evaluated six national firms on years in business, BBB accreditation and complaint volume, staff mix (tax attorneys / CPAs / Enrolled Agents), pricing model, minimum debt threshold, and regulatory history. The FTC's consumer alert on tax-relief companies at consumer.ftc.gov/articles/tax-relief-companies remains live in 2026 with its core guidance unchanged: don't pay a full fee upfront, most taxpayers don't qualify for the OIC or hardship program advertised, and the recommended first step is a direct payment plan with the IRS.\n\nBefore you engage any firm below, run your numbers through the [tax resolution calculator](/tax-resolution/), the [Offer in Compromise calculator](/tax-resolution/offer-in-compromise-calculator/), and the [IRS payment plan calculator](/tax-resolution/irs-payment-plan-calculator/) — most cases at $50,000 or less don't need any of these companies at all, and knowing what the IRS's own math shows keeps you from overpaying.",
     rankingCriteria:
       "Rankings weighted: years in business (10%), BBB rating and complaint volume (25%), verified staff credentials (20%), pricing transparency (15%), minimum debt threshold and case fit (15%), regulatory history — FTC actions, class actions, state bar complaints (15%). No company paid for placement. Optima Tax Relief is included despite the 2022 FTC settlement to give readers the full picture; the settlement is disclosed in its listing below.",
@@ -2357,7 +2357,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Estate Planning",
     h1: "Best Online Will Makers of 2026",
-    intro:
+    introText:
       "The best online will makers produce legally valid last wills and testaments in every U.S. state at prices 60-95% below attorney rates. We evaluated six services on published pricing, state coverage, execution instructions, and included documents (POA, healthcare directive). Trust & Will leads on features and clarity ($199 individual / $299 couple / $499-$599 trust). LegalZoom Basic is cheapest at meaningful scale ($129/$229). FreeWill is genuinely free ($0) for simple-to-moderate cases. Nolo Quicken WillMaker is the strongest desktop-software option ($99-$209).\n\nBefore committing, verify your specific numbers with our [will cost calculator](/estate-planning/will-cost-calculator/) — attorney-drafted may make sense for blended families, business interests, or Louisiana (which requires a notarial testament under La. Civ. Code art. 1577 that some online tools don't default to).",
     rankingCriteria:
       "Rankings weighted: published pricing transparency (20%), state coverage including Louisiana + holographic-will states (20%), included supporting documents — POA and healthcare directive (20%), attorney-review add-on availability (15%), self-proving affidavit generation (10%), and update/versioning options (15%). No service paid for placement.",
@@ -2549,7 +2549,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Estate Planning",
     h1: "Best Living Trust Services of 2026",
-    intro:
+    introText:
       "The best living trust services produce a valid revocable living trust for a straightforward household at 60-90% below attorney rates. We evaluated three online services (Trust & Will, LegalZoom Living Trust, Nolo Quicken WillMaker Plus) against a national attorney benchmark. Trust & Will is the leader at $499 individual / $599 couple with clear funding instructions. LegalZoom Living Trust is ~$279 (verify current) but lighter on funding guidance. Nolo Plus is the cheapest path at $139 (RLT template included). Attorney-drafted revocable trusts run $1,500-$5,000 typical, $5,000-$10,000+ in California and HNW metros.\n\nBefore choosing, model your specific numbers with our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/). A revocable living trust does NOT reduce estate tax — for that, an irrevocable trust (attorney-only) is required.",
     rankingCriteria:
       "Rankings weighted: trust document quality (30%), state coverage (20%), funding instructions and support (20%), attorney-review option (15%), and price transparency (15%). No service paid for placement. Attorney-drafted comparison included for reference.",
@@ -2707,7 +2707,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Estate Planning",
     h1: "Best Estate Planning Software of 2026",
-    intro:
+    introText:
       "The best estate planning software covers the four core documents (will, revocable living trust, durable POA, advance healthcare directive) with state-specific execution instructions and clear funding guidance. We evaluated Trust & Will, LegalZoom, Nolo Quicken WillMaker, FreeWill, Mama Bear Legal Forms, and Rocket Lawyer on document breadth, state coverage, pricing transparency, and attorney-review availability. Trust & Will leads for households needing both a will and a trust. FreeWill is genuinely $0 for simple-to-moderate estates. Nolo Plus at $139 is the cheapest RLT-included path. LegalZoom Premium is the best budget attorney-consultation bundle.\n\nBefore choosing, verify your specific plan tier with our [estate planning calculator](/estate-planning/) — it maps family and asset situation to the right document set.",
     rankingCriteria:
       "Rankings weighted: document breadth (will + trust + POA + healthcare directive; 25%), state coverage including Louisiana + holographic + notarization-only states (20%), pricing transparency (15%), attorney-review option (15%), update/versioning model (15%), and desktop/web/mobile format (10%). No service paid for placement.",
@@ -2938,7 +2938,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "budgeting apps",
     angle: "best",
     h1: "Best Budgeting Apps of 2026",
-    intro:
+    introText:
       "The best budgeting app is the one you'll actually open every week — not the one with the most features. We ranked seven apps across free and paid tiers, manual-entry and bank-synced options, and different budgeting methods so you can match the tool to how you actually think about money.\n\nWe evaluated each app on setup time, how clearly it shows what's left to spend, bank-sync reliability, bill and subscription tracking, and whether the free tier is actually usable or just a paywall preview. Budgeting as a household with a partner? See our [best budgeting apps for couples](/roundup/best-budgeting-apps-for-couples/) roundup for picks ranked on shared-account and joint-goal features specifically.",
     rankingCriteria:
       "We prioritized apps that show a clear, real-time answer to \"how much can I spend right now\" without manual spreadsheet work, plus how well each handles recurring bills and subscriptions — the single biggest source of budget leakage for most people.\n\nWe also weighed whether a genuinely useful free tier exists, since many budgeting apps only became useful after a paywall in recent years.",
@@ -3141,7 +3141,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "treasury bonds",
     angle: "best",
     h1: "Best Brokers for Buying Treasury Bills, Notes & Bonds",
-    intro:
+    introText:
       "U.S. Treasury bills, notes, and bonds are backed by the full faith and credit of the federal government, and you can buy them with zero fees directly from the U.S. Treasury itself — no brokerage required.\n\nThat fee-free option is real, but it isn't automatically the best fit for everyone. We compared [TreasuryDirect.gov](https://www.treasurydirect.gov/) against the major brokerages that also let you buy Treasuries, weighing cost transparency, how easily you can sell before maturity, minimum investment, and how well each option fits alongside the rest of your portfolio.",
     rankingCriteria:
       "We ranked each option on five factors: fee and markup transparency (a visible commission versus a spread built into the price), minimum investment required to get started, secondary-market liquidity (how easily you can sell before maturity and at what cost), auto-roll and reinvestment options, and integration with existing brokerage and retirement accounts.\n\nWe did not rank any option on a specific promised yield, since Treasury yields are set at auction or by the secondary market and are identical for the same security regardless of where you buy it — the yield itself isn't a variable a broker controls. What differs is cost, convenience, and liquidity around that yield, which is what these rankings actually measure.",
@@ -3319,7 +3319,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "brokerage accounts",
     angle: "best",
     h1: "Best Brokerage Accounts for Interest on Uninvested Cash",
-    intro:
+    introText:
       "The best brokerage accounts for interest on cash pay you something on money sitting between trades instead of letting it earn nothing. How much depends less on the brand and more on the underlying mechanism — a money market sweep, an FDIC bank sweep, or a dedicated high-yield cash program — since each structure prices differently and moves with the Fed funds rate on a different schedule.\n\nWe compared seven major brokerages on how their cash sweep actually works, what (if anything) it costs, and what to check before you count on the rate. Rates change frequently — always confirm the current APY on the provider's own page before deciding where to park cash.",
     rankingCriteria:
       "Rankings weigh the sweep mechanism itself (a money market fund and an FDIC bank sweep behave differently, and that matters more long-term than this week's headline rate), any fee or subscription required to unlock the best rate, minimum balance requirements, and FDIC or SIPC coverage on the swept cash.\n\nA promotional rate that reverts to a much lower standard rate after a set period, or that requires a paid subscription tier, was weighted down relative to a durable, fee-free default rate — the sustainable rate matters more than a headline number that expires in a year.",
@@ -3517,7 +3517,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "retirement calculators",
     angle: "best",
     h1: "Best Retirement Calculators of 2026",
-    intro:
+    introText:
       "The best retirement calculator for you depends less on the brand name and more on what it actually models. Some tools run a simple fixed-rate projection; others run thousands of randomized market scenarios (Monte Carlo simulation) to score your odds of not running out of money.\n\nWe compared nine widely used retirement calculators on methodology — not made-up accuracy scores — looking at whether each one models market volatility, Social Security, taxes, and inflation, and whether it's free. No provider paid for placement on this list.",
     rankingCriteria:
       "This list is compiled from each provider's own published methodology pages, help-center documentation, and public calculator interfaces — not a paid placement or an aggregator's ranking. We did not assign a numeric \"accuracy\" score to any tool, because two calculators built on different methodologies aren't measuring the same thing.\n\nInstead, we checked five factual questions for each tool wherever the provider discloses it: (1) does it run a Monte Carlo simulation across many possible market outcomes, or a single fixed-rate projection; (2) does it estimate or let you enter Social Security income; (3) does it factor in taxes; (4) does it adjust for inflation; and (5) is it free to use. Where a provider didn't publish enough detail to answer one of these confidently, we say so rather than guess.",
@@ -3779,7 +3779,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "high-yield savings accounts",
     angle: "best",
     h1: "Best High-Yield Savings Accounts of 2026",
-    intro:
+    introText:
       "The best high-yield savings account (HYSA) pays several times the national average, charges no monthly fee, and doesn't bury your rate behind a large minimum balance. Beyond that, the \"best\" one depends on whether you value the single highest available APY, a sign-up bonus, or a bank you can also walk into a branch for.\n\nWe compared ten of the most-searched HYSA providers on APY range, fees, minimum balance, and any current sign-up offer. Every rate below was checked against the bank's own site — HYSA rates are variable and change often, so treat any specific number here as a snapshot, not a promise, and always confirm the live rate before opening an account. No bank paid for placement on this list.",
     rankingCriteria:
       "This ranking is compiled from each bank's own publicly available rate pages, fee schedules, and account terms — not a paid placement, and not an aggregator's re-packaged list. We did not invent a specific APY for any provider; where we found a current, bank-published rate, we cite it with the date we checked it, and where a bank's rate page renders dynamically and didn't show a fixed number to us, we say to check the bank's own site for today's figure.\n\nWe weighed four factors: the bank's typical APY range relative to the FDIC national average, whether there's a monthly fee or minimum balance to earn the top rate, any current, verifiable sign-up or referral bonus, and account-opening friction (branch access, transfer speed, mobile app quality). Promotional rates that expire after a few months were noted as promotional, not treated as the account's durable rate.",
@@ -4056,7 +4056,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "dividend ETFs",
     angle: "best",
     h1: "Best Dividend ETFs of 2026",
-    intro:
+    introText:
       "The best dividend ETFs pair a low expense ratio with a published, repeatable rule for which dividend payers they hold. Among widely held U.S. funds, annual costs run from 0.04% (VIG and VYM) up to 0.38% (DVY), per each fund's own SEC filing or fact sheet.\n\nWe reviewed eight dividend-focused ETFs from Vanguard, Schwab, iShares, State Street, and JPMorgan. Every fee below comes from the issuer's summary prospectus or published fact sheet. No fund company paid for placement or reviewed this page.\n\nDividend ETFs are not one product. Some chase the highest current yield. Others screen for companies that keep raising payouts. A few generate income from options instead of dividends. Those designs behave very differently, and they are taxed differently too.",
     rankingCriteria:
       "The order below is set by one number: total annual expense ratio, cheapest first. That is the only figure every fund here discloses on the same basis, and it is the one cost you control.\n\nTwo pairs tie on cost. When two funds charge the same, we place the one with the lower published portfolio turnover first, because turnover drives trading costs and taxable events. If only one of the two publishes turnover, we place the rules-based index fund ahead of the actively managed one.\n\nWe deliberately did not rank on yield. Yield moves inversely with price, so ranking by it rewards funds whose share prices have fallen. Only five of these eight funds publish a 30-day SEC yield, and they publish it as of different dates, so a cross-fund yield ranking would rest on partial, non-comparable data. Where we cite a yield, we give the figure with the date the issuer published it and leave the comparison to you.\n\nRead the order as a cost ladder, not a fitness ranking. A cheaper fund is not automatically the better fit. What each fund is built to do sits in its Best For line and in the comparison table, and that is where the real decision gets made.",
@@ -4316,7 +4316,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "target-date funds",
     angle: "best",
     h1: "Best Target Date Funds of 2026",
-    intro:
+    introText:
       "The best target date funds hold an entire diversified portfolio inside one fund and charge about 0.10% a year or less.\n\nA target date fund picks a stock and bond mix for you, then shifts it toward bonds as the fund's year approaches. We ranked eight real fund families on cost, whether the series is index-tracking or actively managed, and how the glide path behaves at retirement. Every expense ratio below was read from the fund's own SEC summary prospectus or the issuer's fund page. No fund company paid for placement.",
     rankingCriteria:
       "The list order follows one number: the net expense ratio of the cheapest broadly available share class of each family's 2055 fund. Fees are the one input you fully control, so they set the ranking. Where two families tie on net cost, the lower gross expense ratio breaks the tie, because gross cost is what you would pay if a fee waiver lapsed.\n\nThree further criteria shape the write-ups and the verdict, but not the order. Whether the series tracks indexes or is actively managed, since that drives most of the fee gap. Glide path clarity, meaning whether the fund stops shifting at the target year or keeps shifting past it, and whether the issuer says so plainly. And access, meaning minimums and which share classes an ordinary investor can actually buy.\n\nWe priced the 2055 vintage of every family, so the comparison is apples to apples. Fees on other vintages in the same series can differ. Sales loads and account fees are noted in each entry.",
@@ -4579,7 +4579,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "robo-advisors",
     angle: "best",
     h1: "Best Robo Advisors of 2026",
-    intro:
+    introText:
       "The best robo advisor for a standalone taxable account is the one whose advisory fee, account minimum, and tax-loss harvesting threshold all match the balance you actually plan to invest.\n\nWe compared seven robo-advisors on five things that change your net cost: the advisory fee, the minimum to open, whether tax-loss harvesting is included and at what balance, the yield treatment of cash, and what it costs to reach a human CFP. Every fee and minimum below was checked against the provider's own pricing page or its SEC Form ADV. No provider paid for placement.\n\nThis page covers taxable brokerage accounts only. For retirement accounts, see our [best IRA accounts roundup](/roundup/best-ira-accounts/). If you are still deciding between automation and picking funds yourself, start with [best investment apps for beginners](/roundup/best-investment-apps-for-beginners/). If you are weighing a robo against a human planner, read [is a financial advisor worth it](/guides/financial-advisor-worth-it/).",
     rankingCriteria:
       "We scored each robo-advisor on five criteria, applied the same way to every option: (1) the stated advisory fee and how it is charged, (2) the minimum to open and keep the account, (3) whether tax-loss harvesting is included and the balance you need to get it, (4) how the service treats cash inside the portfolio, and (5) the cost and minimum to reach a human CFP.\n\nCriterion 1 is deliberately overridden by criterion 3 in one specific case. This page is about taxable accounts, so a paid service that harvests losses at any balance can rank above a cheaper service that gates harvesting behind $25,000 or $50,000. That is why Wealthfront at 0.25% sits above Schwab at $0 and Fidelity Go at $0 under $25,000. If you have no gains or income to offset, that override does not apply to you and the cheaper option wins.\n\nServices were penalized for fee structures that punish small balances, for tax-loss harvesting locked behind a high balance, and for revenue models that hide the real cost in a cash allocation. We did not score past investment performance, because portfolios differ and past returns do not predict future results.\n\nAll fees below sit on top of the expense ratios of the underlying ETFs. Nobody's advisory fee is your all-in cost.",
@@ -4855,7 +4855,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "retirees / income in retirement",
     h1: "Best Dividend ETFs for Retirement Income",
-    intro:
+    introText:
       "The best dividend ETFs for retirement are the ones with durable, rules-based payouts and shallow drawdowns, not the ones with the highest current yield.\n\nThat is a different test than the one most dividend lists use. A retiree spends the distributions. So payout durability, downturn behavior, payment timing, and which account holds the fund matter more than a headline yield number.\n\nWe ranked seven real, currently offered dividend ETFs on those retirement-specific axes. Every expense ratio below was read from the fund's own SEC summary prospectus. For the general cost-and-index ranking across a broad audience, see our [best dividend ETFs roundup](/roundup/best-dividend-etfs/), which also covers broad funds like VYM that we left off this page because a retirement lens adds nothing to them. No fund company paid for placement.",
     rankingCriteria:
       "We scored each fund on five criteria, weighted in this order.\n\n1. Payout durability, weighted heaviest. Does the index screen for the ability to keep paying, or does it simply buy whatever yields the most today? Yield-first screens tend to load up on stressed companies.\n\n2. Downturn behavior. We used the worst calendar quarter each fund reports in its own summary prospectus. Six of the seven funds share the same worst quarter, Q1 2020, which makes that a clean side-by-side test.\n\n3. Payment cadence, judged on what the issuer actually publishes rather than on what a fund happened to pay last year.\n\n4. Tax location. Funds whose income is mostly qualified dividends behave differently in a taxable brokerage account than funds whose income comes from option premium or REIT rent.\n\n5. Cost, used only as a tiebreaker between funds that score similarly above.\n\nBeing explicit about one ranking decision: NOBL has the longest dividend-raise-streak requirement on this page, so criterion 1 alone would put it first. It sits at number three because its 0.35% expense ratio is roughly six times SCHD's, and criterion 5 breaks the tie against it over a 30-year retirement. Cost never moved a fund past one that beat it on durability and drawdown.\n\nWe deliberately did not rank on trailing yield. Yields move daily, and a fund's yield can rise simply because its price fell.",
@@ -5107,7 +5107,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "monthly dividend ETFs",
     angle: "best",
     h1: "Best Monthly Dividend ETFs of 2026",
-    intro:
+    introText:
       "The best monthly dividend ETFs are funds that distribute income twelve times a year instead of four. That schedule is a cash-flow convenience. It does not make a fund pay more in total.\n\nWe screened for ETFs whose monthly schedule is confirmed on the issuer's own fund page, fact sheet, or SEC filing, then compared them on expense ratio and on what actually generates the cash. No fund company paid for placement.\n\nFor rankings that are not built around payout timing, see our [best dividend ETFs](/roundup/best-dividend-etfs/) roundup and our [best dividend ETFs for retirement](/roundup/best-dividend-etfs-for-retirement/) list.",
     rankingCriteria:
       "Every fund here had to clear one hard gate first: the issuer's own fund page, fact sheet, or SEC filing lists the distribution schedule as monthly. Funds we could not confirm as monthly payers were dropped, no matter how popular. Where an issuer's website would not render the data, we went to the fund's filings instead of guessing.\n\nAfter that gate, we grouped funds by what produces the cash - bond interest, preferred securities, common stock dividends, real estate distributions, or option premium - and ordered them by expense ratio inside each group. Expense ratio is the spine of this list because it is the one number that does not move with markets.\n\nWe also record the tax character of the payout and each fund's net assets, with the date the issuer published each figure. Yields are quoted only as 30-day SEC yields with their published as-of date, because yields change constantly. A fund's distribution rate is not part of the ranking, for reasons the page explains below.",
@@ -5431,7 +5431,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "credit cards for fair credit",
     angle: "best",
     h1: "Best Credit Cards for Fair Credit of 2026",
-    intro:
+    introText:
       "A fair credit score, roughly 580 to 669 on the FICO scale, sits in the range where most premium rewards cards are out of reach but real options still exist. We compared six widely available cards on the factors that matter most for this credit tier: whether a security deposit is required, whether the issuer reports to all three credit bureaus, whether there is a real path to an unsecured card later, and how the fee structure works.\n\nNo issuer paid for placement in this roundup. Card APRs and fees change often, so treat every dollar figure below as directional and confirm the current terms on the issuer's own page before you apply. Run your own balance through the [credit card payoff calculator](/credit-card-payoff/) once you have a card, since the interest math matters more than the sign-up terms once you're carrying any balance month to month.",
     rankingCriteria:
       "Rankings weighted four factors that matter most for fair-credit applicants: whether all three major credit bureaus receive monthly reporting (25%, since building history is usually the main goal at this tier), deposit requirement and refundability for secured cards (25%), a documented path to graduate to an unsecured card or a higher limit (25%), and overall fee transparency, including whether the annual fee, if any, is clearly disclosed up front (25%). We did not weight rewards value heavily, since most fair-credit cards offer thin or no rewards, and a card that builds credit faster is worth more at this stage than a card offering 1% back on groceries.",
@@ -5624,7 +5624,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Kids & family investing",
     h1: "Best Custodial Roth IRA Providers for Kids",
-    intro:
+    introText:
       "The best custodial Roth IRA providers charge no account minimum or maintenance fee, since a working teen's first IRA is often a small balance that a fee would eat into fast.\n\nWe compared four major brokers that actually offer a custodial Roth IRA for minors — not every large broker does. No broker paid for placement.",
     rankingCriteria:
       "Rankings prioritize account minimum, annual/maintenance fees, and whether the broker offers true zero-expense-ratio index fund options, since fees matter disproportionately on a small teen-sized balance. We also weighted how clearly each broker documents its custodial-IRA-specific terms versus burying them inside general IRA or general custodial-account pages.\n\nWe excluded brokers that only offer a custodial brokerage account (UGMA/UTMA) but not a custodial Roth IRA specifically — the two are different products with different tax treatment.",
@@ -5753,7 +5753,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "balance transfer credit cards",
     angle: "best",
     h1: "Best Balance Transfer Credit Cards of 2026",
-    intro:
+    introText:
       "A balance transfer credit card can eliminate a big chunk of your credit card interest for a year or more, but only if you pick a card that fits your balance size, payoff timeline, and credit profile. Many roundups on this topic stick to a single issuer's lineup, which skips issuers known for longer intro windows, stronger forgiveness policies, or rewards you can earn while you pay debt down.\n\nWe compared six widely available balance transfer cards from six different issuers: Citi, Wells Fargo, Chase, Discover, Bank of America, and U.S. Bank. Balance transfer offers change often. Intro APR length, transfer fees, and annual fees can shift with little notice, so treat every description below as directional and confirm the current offer on the issuer's own site before you apply. No issuer paid for placement in this roundup.\n\nNot sure you'll qualify yet? See [balance transfer approval odds by credit score](/guides/balance-transfer-credit-card-approval-odds/) before you apply. And if you're weighing a dedicated transfer card against a rewards card with a transfer offer, [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) walks through the decision.",
     rankingCriteria:
       "We ranked these six cards on five factors that determine how much a balance transfer actually saves you: the length of the 0% intro APR window relative to the rest of the market, the transfer fee structure, forgiveness features like late-fee and penalty-APR policies, how accessible the card is across credit profiles, and whether you earn rewards on the card during the transfer period.\n\nIntro-window length and fee structure carried the most weight, since those two factors drive most of the real dollar savings on a typical transfer. Forgiveness features came next, because a single missed payment on a card without those protections can trigger a penalty APR that erases much of the value of the 0% offer. Rewards earned during the transfer period, and overall approval accessibility, weighed less, since they only matter once the core math already works in your favor. No issuer paid for placement, and we did not accept compensation from any card issuer for ranking placement in this roundup.",
@@ -5956,7 +5956,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "Citi credit cards",
     angle: "best",
     h1: "Best Citi Credit Cards of 2026",
-    intro:
+    introText:
       "Citi's current card lineup splits cleanly into two lanes: no-fee cash back for everyday spending, and a $95-fee travel card built around Citi Travel bonus categories. We compared the four Citi cards actively open to new applicants on annual fee, rewards structure, and the specific spender each one fits, rather than ranking them on a single overall score.\n\nOne note before the comparisons: Citi stopped accepting new applications for the Citi Custom Cash Card as of May 28, 2026, and now directs new applicants to Double Cash instead. If you see Custom Cash recommended elsewhere, confirm it's still open to new applicants before applying, since that status can change again. No card issuer paid for placement in this roundup, and every dollar figure below should be confirmed on Citi's own site before you apply, since card terms change.",
     rankingCriteria:
       "We weighted four factors: whether the annual fee is justified by the rewards rate for a realistic spender (35%), how flexible the rewards are to redeem (25%, since a card that only pays out well through one narrow channel is worth less than one with broad redemption options), the strength of any 0% intro APR offer for a spender who needs one (20%), and bonus-category fit for common spending patterns like groceries, gas, and dining (20%). We did not weight sign-up bonus size heavily, since bonus offers change frequently and shouldn't be the deciding factor for a card you'll hold for years.",
@@ -6097,7 +6097,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "rate comparison",
     segment: "borrowers comparing personal loan lenders",
     h1: "Personal Loan Rates by Lender",
-    intro:
+    introText:
       "Personal loan rates vary a lot by lender, and most banks and credit unions won't give you a real number until you check your rate or apply. This page pulls together what each of the seven lenders below actually publishes about its own personal loan product. That means typical APR range or cap, loan amount, fees, and who qualifies, laid out side by side.\n\nThis is a terms comparison, not a ranking of \"best.\" Several of these lenders don't publish a specific APR range online at all, and we say so plainly instead of guessing. Where a lender does publish a number, we cite the page it came from.",
     rankingCriteria:
       "This page is compiled directly from each lender's own publicly disclosed personal loan terms. We listed lenders in the order they appear in live search demand: Discover, SoFi, Wells Fargo, PNC, US Bank, Navy Federal, and PenFed, not by rate.\n\nFor each lender we checked its own personal loan page for the rate basis: a published range, a stated cap, or unpublished. We also noted the loan amount range, fees, funding speed, and any membership or existing-customer requirement. Where a lender publishes an actual annual percentage rate (APR) range, we quote it directly from that lender's own page. Where a lender doesn't disclose a number, that's noted as \"not publicly disclosed\" rather than estimated. Actual pricing depends on your credit, income, and the term you choose. You can only confirm it by checking your rate.",
@@ -6331,7 +6331,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "student loans",
     angle: "best",
     h1: "Best Student Loans for Bad Credit or No Credit of 2026",
-    intro:
+    introText:
       "The best student loan for bad or no credit is a federal Direct Loan. In the guides we publish here, we rank federal aid ahead of any private lender every time, since the government option almost always carries better protections and a lower fixed rate. Most federal loans also skip the credit check entirely, which is the biggest reason to try them first.\n\nOnce you've used up every dollar of federal aid, the private market splits into two lanes. A handful of lenders skip the credit check and the cosigner altogether, judging you instead on your school, your major, your GPA (grade point average), or your projected income after graduation. Everyone else still wants a cosigner with strong credit. That route is faster and cheaper if one is available to you.\n\nWe evaluated one federal loan program and six private lenders on five criteria. Those criteria are whether a credit check happens at all, whether a cosigner is required, the published APR (annual percentage rate) range, the loan's repayment flexibility while you're still in school, and whether on-time payments get reported to build your credit file. A lender that hides its rate behind a phone call, or that quietly excludes most applicants, lost points.",
     rankingCriteria:
       "Credit-check policy and cosigner requirement carried the most weight, since those two factors decide whether you can even apply. We sorted every option into one of three groups: no credit check at all, no cosigner but still a credit pull of some kind, and outcomes-based underwriting that looks at your school and academic record instead of a credit file.\n\nWe also weighed published APR ranges against loan limits, repayment flexibility (can you pay interest while in school, or does it capitalize until you graduate), and whether the lender reports in-school payments to the credit bureaus. A lender that requires an application before it will show you a rate, or that doesn't say plainly who it serves, scored lower even when its headline number looked competitive.",
@@ -6591,7 +6591,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     category: "student loan refinance companies",
     angle: "best",
     h1: "Best Student Loan Refinance Companies of 2026",
-    intro:
+    introText:
       "The best student loan refinance company for you depends on your credit profile. It also depends on whether you want one direct lender or a marketplace that shops several at once. In the guides we publish here, we check the federal trade-off before we check the rate, because it usually matters more.\n\nRefinancing a federal loan into a private one means giving up income-driven repayment (IDR), Public Service Loan Forgiveness (PSLF), and federal forbearance. None of it comes back later. Your income or job situation can change. The loan terms will not.\n\nWe checked seven active lenders and marketplaces directly against their own sites. We scored each one on its published rate range, its minimum credit and income requirements, its fee structure, and what happens if your income drops after you refinance. A lender that has quietly stopped offering the product didn't make the cut. Neither did one that hides its rate behind a phone call.",
     rankingCriteria:
       "We scored each lender on five things: rate transparency, minimum credit and income requirements, fee structure, income-drop protections, and cosigner release. A lender that only shows a real rate after a full application lost points. So did one that turned out to have quietly exited the refinance market.\n\nA competitive headline number couldn't make up for either problem. Transparency counted for as much as price.",
@@ -6881,7 +6881,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "people tracking net worth over time",
     h1: "Best Net Worth Tracking Tools",
-    intro:
+    introText:
       "The best net worth tracking tool depends on how much ongoing work you're willing to do, and whether you're comfortable linking your bank and investment accounts to get it. A one-time calculator gets you a single accurate number in a few minutes with nothing linked. A linked-account app keeps that number updated automatically, in exchange for handing your account credentials to a third party.\n\nWe compared six approaches here: three free calculators (ours, Bankrate's, and NerdWallet's), two linked-account apps (Empower and Monarch Money), and a plain spreadsheet. We scored each on cost, privacy, and how much upkeep it actually demands.",
     rankingCriteria:
       "We looked at what each tool actually requires from you. Does it need your bank credentials, or just a handful of numbers you already know? What does it cost today, and how much upkeep does it take for the number to stay accurate? A tool that requires linking every account gets more convenience in exchange for handing a company your account credentials. We weighed that tradeoff directly, rather than assuming automatic is always better.\n\nFor the two paid or freemium apps, we noted the actual current price, including where a free tier exists and what it excludes. For the calculators and the spreadsheet, we noted what data you have to gather yourself. We also checked how each one handles a value that changes constantly, like a home price or a brokerage balance.",
@@ -7087,7 +7087,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Building credit from scratch",
     h1: "Best Secured Credit Cards for Building Credit from Scratch",
-    intro:
+    introText:
       "The best secured credit card for most readers building credit from zero is the [Capital One](https://www.capitalone.com/credit-cards/secured-mastercard/) Platinum Secured Credit Card. We researched five widely available secured cards on deposit structure, bureau reporting, rewards, and whether there's a real path to an unsecured card later. Its deposit can start as low as $49, its credit line still opens at $200 or more, and it reports to all three major credit bureaus every month. No single card wins for every situation here, though. A reader with no credit file at all needs something different from a reader with a recently damaged score, or one who already got declined for a standard unsecured card.\n\nDeposit amounts vary a lot across these five, from $49 at the low end to $5,000 at the high end, so the right pick depends heavily on how much cash you can set aside today. If your score already sits in the 580 to 669 fair credit range, our [best credit cards for fair credit](/roundup/best-credit-cards-for-fair-credit/) roundup covers cards built specifically for that tier. This roundup covers the wider group of readers with no credit history, recently damaged credit, or a recent decline elsewhere. Run any balance you carry through our [credit card payoff calculator](/credit-card-payoff/) once you have a card, since the interest math matters more than the sign-up terms once you're carrying a balance month to month.",
     rankingCriteria:
       "Rankings weighted four factors that matter most when you're starting from zero or rebuilding after damage. The first is whether the issuer reports monthly to all three major credit bureaus, since incomplete reporting quietly wastes months of on-time payments. The second is how accessible the deposit structure is, including whether a low starting deposit is possible and whether a hard credit check is required to apply. The third is whether there's a documented path to an unsecured card or a deposit refund. The fourth is fee transparency, including whether the annual fee, if any, is disclosed clearly. We did not weight rewards heavily, since a reader with no credit history or damaged credit benefits far more from reliable reporting and an accessible deposit than from a small cash-back rate.",
@@ -7277,7 +7277,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   category: "Credit Cards",
   angle: "best",
   h1: "The Best Travel Credit Cards in 2026",
-  intro: "The best travel credit card for most people is the [Chase Sapphire Preferred](https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred). Its $95 annual fee buys a wide earning structure, transferable points, and no foreign transaction fees, without requiring the travel volume that premium metal cards demand. We compared six real travel cards spanning that range, from no-fee starters to a nearly $800-a-year premium card, on earn rate, redemption value, and the benefits you would actually use, not the number printed on the rate table. The right pick depends heavily on how often you fly, whether you would ever carry a balance, and whether you want a card with no annual fee at all.",
+  introText: "The best travel credit card for most people is the [Chase Sapphire Preferred](https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred). Its $95 annual fee buys a wide earning structure, transferable points, and no foreign transaction fees, without requiring the travel volume that premium metal cards demand. We compared six real travel cards spanning that range, from no-fee starters to a nearly $800-a-year premium card, on earn rate, redemption value, and the benefits you would actually use, not the number printed on the rate table. The right pick depends heavily on how often you fly, whether you would ever carry a balance, and whether you want a card with no annual fee at all.",
   rankingCriteria: "We weighed five factors for each card. The earn rate on travel and everyday spend matters most, followed by how flexible and valuable the points or miles are at redemption. We also checked whether the annual fee is offset by benefits a typical cardholder will realistically use, what the card charges in foreign transaction fees, and how it treats someone who occasionally carries a balance. We did not weight the advertised APR heavily, and we explain why below. A travel card is built around being paid off monthly, so the interest rate matters far less than what you earn and redeem.",
   options: [
     {
@@ -7458,7 +7458,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   category: "Credit Cards",
   angle: "best",
   h1: "Best Cash Back Credit Cards",
-  intro: "The best cash back credit card for most people is a flat-rate card like the [Citi Double Cash Card](https://www.citi.com/credit-cards/citi-double-cash-credit-card) or the [Wells Fargo Active Cash Card](https://creditcards.wellsfargo.com/active-cash-credit-card/). Both pay 2% on every purchase with nothing to activate and no category math to run. In the guides we publish here, we start from what a card actually pays after redemption friction, not the headline rate in the ad. That said, a category card can out-earn a flat-rate card once your spending concentrates in dining, groceries, or rotating bonus categories, and we lay out the exact math below so you can check your own spending against it. We pulled the terms below directly from each issuer's own card page rather than from a comparison site, and card terms change, so treat the rates here as the structure and confirm the current numbers before you apply. Six cards cover the real spread available today: two flat-rate cards, one rotating-category card, one fixed dining and grocery card, and one card built around three specific everyday categories, so the comparison below is not six versions of the same idea.",
+  introText: "The best cash back credit card for most people is a flat-rate card like the [Citi Double Cash Card](https://www.citi.com/credit-cards/citi-double-cash-credit-card) or the [Wells Fargo Active Cash Card](https://creditcards.wellsfargo.com/active-cash-credit-card/). Both pay 2% on every purchase with nothing to activate and no category math to run. In the guides we publish here, we start from what a card actually pays after redemption friction, not the headline rate in the ad. That said, a category card can out-earn a flat-rate card once your spending concentrates in dining, groceries, or rotating bonus categories, and we lay out the exact math below so you can check your own spending against it. We pulled the terms below directly from each issuer's own card page rather than from a comparison site, and card terms change, so treat the rates here as the structure and confirm the current numbers before you apply. Six cards cover the real spread available today: two flat-rate cards, one rotating-category card, one fixed dining and grocery card, and one card built around three specific everyday categories, so the comparison below is not six versions of the same idea.",
   rankingCriteria: "We ranked these six cards on five things. The real annual percentage return after redemption matters most, and whether an annual fee eats into that return matters almost as much. We also checked whether the top rate requires quarterly activation or a spending cap, how flexible redemption is, whether it pays out as a statement credit, direct deposit, or a narrower option, and how the issuer's own terms page states the deal today rather than what an older review still repeats. A card with a higher advertised rate that requires more effort to capture, or that caps out fast, can lose to a plainer flat-rate card once you run the numbers on your own spending.",
   options: [
     {
@@ -7658,7 +7658,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "College students / first-time cardholders",
     h1: "Best Student Credit Cards of 2026",
-    intro:
+    introText:
       "The [Discover it® Student Cash Back](https://www.discover.com/credit-cards/student-credit-card/it-card/) card is the best student credit card for most first-time cardholders. We compared six student credit cards currently open to new applicants, and Discover's version charges no annual fee, states plainly that no credit score is required to apply, and automatically matches every dollar of cash back you earn during your first cardmember year. It is not the right fit for every student, though, and five other cards on this page deserve a look depending on how you spend and whether an existing bank relationship helps you.\n\nEvery card in this roundup reports to all three major credit bureaus, charges $0 in annual fees, and is built specifically for a thin or empty credit file rather than an established borrower. We named each one and linked its own official page in the options below.",
     rankingCriteria:
       "We weighed five factors that matter to a first-time cardholder specifically. The most important is whether the issuer requires an existing credit score to apply, followed by the annual fee. We also checked how the rewards rate lines up with typical student spending on dining, groceries, streaming, and rideshares, the strength of any starter bonus or cash back match, and how clearly the issuer offers a path to a stronger non-student card later on. We did not weight sign-up bonus size heavily on its own, since a bonus that requires spending more than a typical student spends in three months is not really available to the reader this page is written for.\n\nA card that requires a Social Security number with no alternative path, or that has stopped accepting new applicants, was excluded outright. That is why the once-popular [Deserve® EDU Mastercard](https://www.deserve.com/), built for international students without an SSN, does not appear here. Deserve stopped issuing new cards and began closing existing accounts in 2025 into 2026, so recommending it today would send you toward a card you can no longer open.",
@@ -7902,7 +7902,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Car buyers comparing lender-specific calculators",
     h1: "Best Auto Loan Calculators by Bank and Credit Union",
-    intro:
+    introText:
       "The bank or credit union calculator tied to your own account is the one that comes closest to your real approved rate, because it is often built to pull your actual membership pricing rather than a generic market average. What we see readers get wrong most often is assuming every auto loan calculator online is running the same math, when the real difference between them is not the arithmetic, it is whether the number behind the rate field reflects your actual credit, your actual lender, or a generic placeholder.",
     rankingCriteria:
       "We grouped roughly 90 distinct bank, credit union, automaker-finance, and marketplace calculator searches into 17 entities by what each tool actually shows: whether it pulls your real membership or account rate, whether it requires a login or credit pull to use, and whether it is a standalone calculator or a lead-generation front end for a loan application. Multiple regional credit unions and lesser-known tools that run the same underlying engine, most often [Dinkytown's](https://www.dinkytown.net/), are grouped under that engine rather than listed separately, since the math and behavior are identical regardless of which bank's logo sits on top of it.",
@@ -8109,7 +8109,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     angle: "best",
     segment: "Investors who want to test an allocation against real historical market data",
     h1: "Best Portfolio Backtesting and Analysis Tools",
-    intro:
+    introText:
       "[Portfolio Visualizer](https://www.portfoliovisualizer.com/backtest-portfolio) is the tool most investors land on for real portfolio backtesting, running an actual allocation against real market returns going back decades rather than a model estimate. What we see readers get wrong most often is assuming any portfolio calculator that shows expected return and risk is also backtesting real history, when the two are built to answer different questions entirely. A backtester replays what a specific allocation actually would have earned across real historical periods, drawdowns included. A forward-looking estimator, the kind our own [portfolio calculator](/portfolio/) runs, projects a return and risk range from long-run model assumptions instead, which is faster to use but never claims to show what actually happened in 2008 or 2022.",
     rankingCriteria:
       "We grouped these tools into two categories: dedicated backtesters and lazy-portfolio resources built on real historical return data, and account-native tools brokerages already give their own customers for free. Within each group, we looked at whether the tool runs an actual historical simulation with real drawdowns, whether it requires an account or subscription, and how far back its data actually goes, since a tool testing only the last ten years tells a very different story than one covering the 1970s stagflation era or the 2008 financial crisis.",

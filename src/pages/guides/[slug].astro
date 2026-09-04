@@ -61,7 +61,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{guide.h1}</h1>
       <Byline updated={guide.updated} />
-      {paragraphs(guide.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {paragraphs(guide.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
     <section class="tools" aria-label="Tools for this journey">

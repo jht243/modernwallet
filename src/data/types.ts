@@ -48,7 +48,7 @@ export interface StateOverride {
   /** H1 heading. */
   h1?: string;
   /** State-specific intro paragraph — replaces the templated wrapper around the parent spoke intro. */
-  intro?: string;
+  introText?: string;
   /** State-specific law + cost context — replaces `state.lawContext` on the page. */
   lawContext?: string;
   /** Any state-specific additional FAQs. Merged with the parent spoke's faqs on the state page. */
@@ -72,7 +72,7 @@ export interface CalculatorDef {
   targetKeyword: string; // the head term, e.g. "auto loan calculator"
   h1: string;
   /** AEO: opens with a complete, self-contained sentence. */
-  intro: string;
+  introText: string;
 
   // ---- Hub-page content ----
   howItWorks: string;
@@ -106,7 +106,7 @@ export interface SpokeEntry {
 
   // ---- Page content ----
   h1: string;
-  intro: string;
+  introText: string;
   /** "How it's calculated" — the methodology, in plain language. */
   howItWorks: string;
   commonMistakes: string[];

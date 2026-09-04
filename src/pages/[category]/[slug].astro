@@ -120,7 +120,7 @@ const jsonLdApp = {
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline reviewer={reviewer} updated={entry.updated} />
-      {paragraphs(entry.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
       {stats.length > 0 && (
         <div class="proof">
           {stats.map((s) => (

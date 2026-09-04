@@ -13,7 +13,7 @@ export const LOC_HUB: CalculatorDef = {
 
   h1: "Business Line of Credit Calculator",
 
-  intro:
+  introText:
     "This business line of credit calculator shows your monthly payment and the true cost of the money you draw. Enter how much you draw, your APR, your repayment term, and any draw fee. A line of credit is revolving, so you pay interest only on the amount you actually draw — not your full credit limit. Draw $50,000 at a 12% APR over 24 months with a 2% draw fee, and your monthly payment is $2,353.67. You pay $6,488.17 in interest plus a $1,000 draw fee. That brings the total cost of the money to $7,488.17, an effective APR of 14.05% once the fee is counted.",
 
   howItWorks:

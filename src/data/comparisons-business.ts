@@ -15,7 +15,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Business Loan",
     segment: "Business Financing",
     h1: "Merchant Cash Advance vs Loan: Which Costs Less?",
-    intro:
+    introText:
       "A merchant cash advance vs loan comparison comes down to speed versus cost: an MCA funds in days but can carry a much higher price, while a bank or SBA loan is slower yet far cheaper. A 1.30 factor-rate MCA repaid over about 12 months works out to roughly a 54.81% effective APR. A bank or SBA term loan often lands between 8% and 30% APR. One more key difference: an MCA is legally a sale of your future receivables, not a loan at all.",
     comparisonTable: {
       rows: [
@@ -99,7 +99,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Interest Rate (APR)",
     segment: "Business Financing",
     h1: "Factor Rate vs Interest Rate: What's the Difference?",
-    intro:
+    introText:
       "The core of factor rate vs interest rate is this: a factor rate is a fixed multiplier that never changes, while an interest rate accrues on your balance and falls as you repay. A 1.40 factor rate on a $100,000 advance is a flat $40,000 cost — about a 95% effective APR over roughly 9 months. An interest rate does the opposite: it charges you only on the money you still owe, so the cost drops as the balance shrinks. That single difference is why a factor rate can cost far more than its number suggests.",
     comparisonTable: {
       rows: [
@@ -183,7 +183,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Merchant Cash Advance",
     segment: "Business Financing",
     h1: "Invoice Factoring vs Merchant Cash Advance: Which Is Cheaper?",
-    intro:
+    introText:
       "Invoice factoring vs merchant cash advance usually favors factoring on cost, because it is tied to real, unpaid invoices rather than a bet on future sales. Factoring a $100,000 invoice at an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. A merchant cash advance for the same business often runs 50% to 150% APR. Both give fast cash, but factoring's link to actual receivables typically makes it the cheaper and lower-risk choice.",
     comparisonTable: {
       rows: [
@@ -267,7 +267,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Business Line of Credit",
     segment: "Business Financing",
     h1: "Invoice Factoring vs Business Line of Credit: Which Is Cheaper?",
-    intro:
+    introText:
       "Invoice factoring vs business line of credit usually comes down to whether you already have unpaid invoices or just need flexible access to cash. Factoring a $100,000 invoice at an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. A business line of credit drawing $50,000 at a 12% APR over 24 months with a 2% draw fee costs about 14.05% effective APR. A line of credit is usually cheaper, but it requires qualifying for approval upfront, while factoring approval leans on your customer's credit instead of yours.",
     comparisonTable: {
       rows: [
@@ -354,7 +354,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Invoice Discounting",
     segment: "Business Financing",
     h1: "Invoice Factoring vs Invoice Discounting: What's the Real Difference?",
-    intro:
+    introText:
       "Invoice factoring and invoice discounting both advance cash against unpaid invoices, but the difference is who collects the money and whether your customer finds out. With factoring, the factoring company takes over collections and your customer usually pays the factor directly, so the arrangement is visible. With invoice discounting, you keep collecting payments yourself under your own name, your customer is typically unaware a lender is involved, and you carry more of the credit-control responsibility in exchange for confidentiality.",
     comparisonTable: {
       rows: [
@@ -434,7 +434,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "SBA Loan",
     segment: "Business Financing",
     h1: "Business Line of Credit vs SBA Loan: Which Should You Choose?",
-    intro:
+    introText:
       "A business line of credit vs SBA loan comparison comes down to speed versus cost: a line of credit is revolving and can fund in days, while an SBA 7(a) loan is a lump-sum term loan capped by government rate rules that often makes it the cheaper long-term option. Drawing $50,000 on a line of credit at a 12% APR with a 2% draw fee costs about 14.05% effective APR. An SBA 7(a) loan's rate is capped by the U.S. [Small Business Administration](https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility) at the base rate plus roughly 3.0% to 6.5%, but approval commonly takes 30 to 90 days versus days to about two weeks for a line of credit. Which wins depends on how fast you need the money and how much collateral and paperwork you can supply.",
     comparisonTable: {
       rows: [
@@ -528,7 +528,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     optionB: "Revenue-Based Financing",
     segment: "Business Financing",
     h1: "Merchant Cash Advance vs Revenue-Based Financing: What's the Difference?",
-    intro:
+    introText:
       "Merchant cash advance vs revenue-based financing comes down to how the repayment actually moves: an MCA sells a slice of your future receivables for a fixed daily or weekly debit set at signing, while revenue-based financing (RBF) is a financing agreement repaid as a percentage of your actual monthly revenue until a pre-agreed repayment cap is reached. Both structures set a fixed total cost upfront instead of charging a standard interest rate, but they are not the same product. An MCA is priced with a factor rate and leans on card and bank-deposit history; RBF is priced with a repayment-cap multiple and often leans on recurring revenue metrics like monthly recurring revenue (MRR), which is why it shows up more often at SaaS, subscription, and ecommerce companies than at card-heavy retail shops.",
     comparisonTable: {
       rows: [

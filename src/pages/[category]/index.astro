@@ -117,7 +117,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{calc.h1}</h1>
       <Byline reviewer={reviewer} updated={calc.updated} />
-      {paragraphs(calc.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {paragraphs(calc.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
     <section class="tool-section" aria-label="Interactive calculator">

@@ -13,7 +13,7 @@ export const PERSONAL_LOAN_SPOKES: SpokeEntry[] = [
     targetKeyword: "personal loan extra payment calculator",
     h1: "Personal Loan Extra Payment Calculator",
     islandId: "personal-loan-payoff",
-    intro:
+    introText:
       "A personal loan extra payment calculator shows how much faster you clear the loan, and how much interest you skip, once you add even a small amount to your normal monthly payment. Enter your remaining balance, rate, and term above, add an extra monthly amount or switch to picking a payoff date instead, and the calculator shows the new timeline next to your original one. Extra payments work because a personal loan charges interest only on what you still owe, so every extra dollar toward principal now stops earning the lender interest for every month that follows.",
     howItWorks:
       "The calculator above takes your remaining balance, interest rate, and remaining term to find your scheduled monthly payment, the same fully amortizing math your lender uses. From there it runs two payoff schedules side by side: one at your normal payment, and one with your extra amount added straight to principal every month, then shows the gap between them in dollars and months.\n\nSwitch to \"I want a payoff date\" mode, and the calculator works backward instead. Pick how many months you want left on the loan, and it solves for the exact extra payment that gets you there, using the same amortization formula in reverse. Either direction, the underlying math never changes. Every dollar that goes to principal early stops accruing interest for every remaining month of the loan, which is why even a modest extra payment can meaningfully shorten a multi-year loan.",

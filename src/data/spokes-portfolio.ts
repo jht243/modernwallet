@@ -17,7 +17,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 8100,
     estimatedKD: 48,
     h1: "Asset Allocation Calculator",
-    intro:
+    introText:
       "The asset allocation calculator above shows how to split your money across stocks, bonds, real estate, and cash. Enter your balances and time horizon to see your portfolio's expected return, volatility, and long-run growth. Your mix of asset classes drives most of your return swings over time, often more than which individual stocks you pick. This tool helps you find a blend that fits your goals and your tolerance for risk.",
     howItWorks:
       "The asset allocation calculator weighs each asset class by the dollars you assign to it. Each class carries a long-run return and volatility estimate: stocks 10% return at 16% volatility, bonds 4% at 5%, real estate 8% at 15%, and cash 2.5% at 1%. These are model assumptions, not guarantees, and real results will vary year to year.\n\nThe tool then combines those weights into one expected return and one portfolio volatility. Because assets that do not move together offset each other, your blended risk lands below the simple average of the parts. The calculator also reports a Sharpe ratio, which measures return earned per unit of risk above a 2.5% risk-free rate. To compare risk-adjusted mixes, see the [portfolio risk calculator](/portfolio/portfolio-risk-calculator/).",
@@ -62,7 +62,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 2900,
     estimatedKD: 36,
     h1: "60/40 Portfolio Calculator",
-    intro:
+    introText:
       "The 60/40 portfolio holds 60% stocks and 40% bonds, a classic balanced mix. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your stock and bond amounts to see the numbers for your own money. These figures are long-run model estimates, not guarantees. How much to hold in stocks versus bonds can also change as you age. See the [asset allocation calculator](/portfolio/asset-allocation-calculator/) for how that mix should shift over time.",
     howItWorks:
       "A 60/40 portfolio blends the growth of stocks with the steadier nature of bonds. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility. Both sides are commonly built with a single broad index fund. See our [best index funds](/roundup/best-index-funds/) roundup for specific picks.\n\nThe tool then combines these to find your portfolio's expected return, its volatility, and its Sharpe ratio. The Sharpe ratio measures return earned above a 2.5% risk-free rate per unit of risk. Higher is better. The growth projection compounds your expected return over the years you choose. To try other splits, use the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
@@ -110,7 +110,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 2400,
     estimatedKD: 40,
     h1: "Expected Return Calculator",
-    intro:
+    introText:
       "The expected return calculator above estimates your portfolio's long-run return by taking a weighted average of each holding's expected return. It weights every asset by its dollar amount, so your largest position drives the result. Enter how much you hold in stocks, bonds, real estate, and cash to see your blended figure. Remember: expected return is a long-run estimate, not a promise of what you will earn next year.",
     howItWorks:
       "Expected return is the weighted average of each holding's expected return. The calculator above multiplies each asset's portfolio weight by its assumed long-run return, then adds the pieces together. The formula is simple: (weight of asset A × return of A) + (weight of asset B × return of B), and so on.\n\nThese return figures are model assumptions, not guarantees. This tool uses long-run estimates of 10% for stocks, 4% for bonds, 8% for real estate, and 2.5% for cash. Because the math weights by dollars, your biggest holding has the most influence on the final number. To weigh that return against its risk, see the [portfolio risk calculator](/portfolio/portfolio-risk-calculator/).",
@@ -150,7 +150,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 1300,
     estimatedKD: 38,
     h1: "Portfolio Risk Calculator",
-    intro:
+    introText:
       "This portfolio risk calculator measures how much your mix could swing and how much return you earn for that risk. Enter your stock, bond, and cash amounts in the calculator above. It reports expected return, volatility, and the Sharpe ratio in seconds. Higher return does not always mean a better deal, and this page shows why. To plan the mix itself, try the [asset allocation calculator](/portfolio/asset-allocation-calculator/). If most of that risk sits in one stock rather than a diversified mix, see [concentrated stock position risk](/guides/concentrated-stock-position-risk/) for how to size and reduce it.",
     howItWorks:
       "Volatility is the standard deviation of returns. It measures how far results tend to swing above and below the average. A higher number means a bumpier ride. The portfolio risk calculator blends the volatility of each holding to estimate your portfolio's overall swing.\n\nThe Sharpe ratio measures return per unit of risk. The formula is (expected return − risk-free rate) ÷ volatility. We use a 2.5% risk-free rate. A higher Sharpe ratio means you are paid more for each unit of risk you take. The figures here are long-run model assumptions: stocks 10% return and 16% volatility, bonds 4% and 5%, cash 2.5% and 1%. They are estimates, not guarantees. To go deeper, see the [expected return calculator](/portfolio/expected-return-calculator/) or test the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/).",
@@ -191,7 +191,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       "Use this 70/30 portfolio calculator to see the expected return, risk, and long-run growth of a 70% stock, 30% bond mix versus the classic 60/40.",
     targetKeyword: "70/30 portfolio calculator",
     h1: "70/30 Portfolio Calculator",
-    intro:
+    introText:
       "The 70/30 portfolio holds 70% stocks and 30% bonds, a growth-tilted step up from the classic 60/40 mix. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
     howItWorks:
       "A 70/30 portfolio leans further into stocks than the 60/40 mix, trading some stability for more expected growth. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To compare against a more balanced split, use the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
@@ -232,7 +232,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       "Use this 80/20 portfolio calculator to see the expected return, risk, and long-run growth of an 80% stock, 20% bond mix for longer time horizons.",
     targetKeyword: "80/20 portfolio calculator",
     h1: "80/20 Portfolio Calculator",
-    intro:
+    introText:
       "The 80/20 portfolio holds 80% stocks and 20% bonds, an aggressive mix built for investors with a long time horizon. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
     howItWorks:
       "An 80/20 portfolio leans heavily into stocks, keeping only a small bond cushion. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To see a more balanced split, try the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
@@ -273,7 +273,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       "Use this 90/10 portfolio calculator to see the expected return, risk, and long-run growth of a 90% stock, 10% bond mix for long time horizons.",
     targetKeyword: "90/10 portfolio calculator",
     h1: "90/10 Portfolio Calculator",
-    intro:
+    introText:
       "The 90/10 portfolio holds 90% stocks and 10% bonds, the most stock-heavy fixed mix on this site, built for investors with a very long time horizon. The calculator above shows its expected return, its risk, and how it might grow over time. Enter your own stock and bond amounts to see the numbers for your money. These figures are long-run model estimates, not guarantees.",
     howItWorks:
       "A 90/10 portfolio keeps only a thin bond slice, leaning almost entirely on stocks for growth. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility.\n\nThe tool combines these into your portfolio's expected return, its volatility, and its Sharpe ratio, which measures return earned above a 2.5% risk-free rate per unit of risk. The growth projection compounds your expected return over the years you choose. To see a more balanced split, try the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) or the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",

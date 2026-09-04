@@ -13,7 +13,7 @@ export const MCA_HUB: CalculatorDef = {
   targetKeyword: "mca calculator",
   h1: "MCA Calculator: True Cost of a Merchant Cash Advance",
 
-  intro:
+  introText:
     "This mca calculator shows the real cost of a merchant cash advance in seconds. Enter your advance amount, factor rate, and estimated term. The tool returns your total payback, cost of capital, and true effective APR.\n\nHere is the default example. A $50,000 advance at a 1.30 factor rate over an estimated 12-month term means a $65,000 total payback. That is $15,000 in cost of capital. Repaid through daily payments of $257.94 (about $5,416.67 per month across 252 payments), the effective APR works out to 54.81%.",
 
   howItWorks:

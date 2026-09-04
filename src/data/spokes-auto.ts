@@ -19,7 +19,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 8100,
     estimatedKD: 48,
     h1: "Auto Loan Payoff Calculator",
-    intro:
+    introText:
       "This auto loan payoff calculator shows exactly when your car loan will be paid off and how much faster extra payments get you there. Enter your balance, rate, term, and any extra monthly amount in the calculator above. It then maps your payoff date and the interest you save. Use it to test a plan before you commit a dollar.",
     howItWorks:
       "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Enter your current balance, and the payoff date it returns tells you exactly how many months you have left. The schedule below that date shows your exact remaining balance after any payment number you pick. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.",
@@ -95,7 +95,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 1300,
     estimatedKD: 40,
     h1: "Auto Loan Extra Payment Calculator",
-    intro:
+    introText:
       "This auto loan extra payment calculator shows how much adding extra to your monthly car payment saves in interest and time. Enter your balance, rate, term, and a recurring extra amount in the calculator above. It instantly compares your original payoff to a faster one. You see your total interest saved and the months you shave off your loan.",
     howItWorks:
       "Extra payments work by reducing your loan principal, which is the amount you still owe. On a simple-interest auto loan, interest is charged on your outstanding balance each day or month. So a smaller balance means less interest going forward. The calculator above takes your scheduled payment and adds your extra amount, applying the full extra to principal. It then rebuilds your payoff schedule month by month.\n\nThe savings compound over time. Each extra dollar cuts the balance, so the next month's interest is a little lower. That frees up even more of your normal payment to attack principal, speeding up the loan with every cycle. To compare a one-time lump sum instead, try the [auto loan payoff calculator](/auto-loan/payoff-calculator/).",
@@ -156,7 +156,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 1000,
     estimatedKD: 38,
     h1: "Pay Off Car Loan Early Calculator",
-    intro:
+    introText:
       "This pay off car loan early calculator shows how much interest and time you save by adding extra to each car payment. Enter your balance, APR, term, and a monthly extra amount in the calculator above. It instantly returns your new payoff date and total interest savings. Use it to decide whether paying your car loan off early is worth it for you.",
     howItWorks:
       "The calculator estimates your savings by applying your extra payment straight to the loan principal each month. A smaller principal means less interest accrues, so the loan ends sooner. It compares your original schedule against the faster one and reports the gap in dollars and months. Because most of each early payment goes to interest, attacking the principal early has the biggest effect.",
@@ -217,7 +217,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 1600,
     estimatedKD: 44,
     h1: "Auto Loan Amortization Calculator",
-    intro:
+    introText:
       "This auto loan amortization calculator shows exactly how each car payment splits between principal and interest. Enter your loan amount, rate, and term, and the calculator above builds a full month-by-month schedule. You will see your balance drop, payment by payment, until it reaches zero. The early rows reveal a fact most drivers miss: at first, most of your money pays interest, not the car.",
     howItWorks:
       "Amortization means paying off a loan with fixed payments that slowly shrink what you owe. Each month, the lender first charges interest on your current balance. Your monthly rate is simply the APR divided by 12. Whatever is left of your payment then reduces the principal. Because your balance is highest at the start, early payments are mostly interest. As the balance falls, less interest accrues, so more of each fixed payment attacks the principal. By the final year, nearly every dollar goes to principal. The calculator above runs this math for all 60 months and lists each line for you.",
@@ -277,7 +277,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedVolume: 880,
     estimatedKD: 36,
     h1: "Auto Loan Interest Calculator: See What Your Car Loan Really Costs",
-    intro:
+    introText:
       "An auto loan interest calculator shows the total interest you will pay on a car loan over its full term. Enter your loan amount, APR, and term in the calculator above to see your monthly payment and lifetime interest in seconds. For example, a $30,000 loan at 7.5% APR over 60 months costs $6,068 in total interest. That brings the total of all payments to $36,068.",
     howItWorks:
       "The calculator multiplies your loan balance by your APR each month, then splits every payment into interest and principal. Early on, more of each payment goes to interest, and less to paying down the loan. With a $30,000 loan at 7.5% APR, the very first payment of $601.14 includes $187.50 in interest and $413.64 in principal. The term you pick changes the math more than most buyers expect. That same $30,000 loan at 7.5% costs $6,068 in interest over 60 months, but $7,347 over 72 months. The 72-month loan lowers your payment to $518.70, yet it costs $1,278 more in interest. A lower monthly payment can hide a higher total cost.",
@@ -350,7 +350,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     estimatedKD: 39,
     h1: "Car Affordability Calculator: How Much Car Can I Afford?",
     islandId: "affordability",
-    intro:
+    introText:
       "This car affordability calculator works backward from your monthly budget to the car price you can actually buy. Enter your target payment, down payment, APR, and loan term, and the calculator above estimates your max price and loan amount. It answers the real question: how much car can I afford without straining my budget? Remember, the sticker price you can finance is not your true cost.",
     howItWorks:
       "The calculator above starts with the monthly payment you choose, not a car price. It adds your down payment and uses your APR and loan term to find the largest loan that fits that payment. Then it shows the top car price within reach.\n\nA popular rule of thumb is the 20/4/10 rule: put 20% down, finance for no more than 4 years, and keep total vehicle costs at or below 10% of your gross income. Treat it as a guideline, not a hard limit. The CFPB also stresses adding insurance, taxes, registration, fuel, and maintenance on top of your loan payment. Once you settle on a price, see the [auto loan interest calculator](/auto-loan/interest-calculator/) for the true cost of borrowing, or the [auto loan payoff calculator](/auto-loan/payoff-calculator/) to plan an early payoff.",
@@ -390,7 +390,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       "See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.",
     targetKeyword: "auto loan refinance calculator",
     h1: "Auto Loan Refinance Calculator",
-    intro:
+    introText:
       "An auto loan refinance calculator compares your current car loan to a new one, showing your new monthly payment and how much you save (or lose) in total interest. Enter your current balance, APR, and months remaining, plus the new APR and term a lender is offering, into the calculator above to see both loans side by side. For example, refinancing a $22,000 balance with 42 months left from 9.5% APR down to 6.5% APR on a new 42-month loan drops the payment from $617.76 to $587.06 a month and saves $1,289.41 in interest over the life of the loan.",
     howItWorks:
       "Refinancing swaps your current auto loan for a new one, ideally at a lower APR, a shorter remaining term, or both. The calculator above rebuilds both loans' amortization schedules using the same balance: your current loan finishing out its remaining months, and a new loan starting fresh at the new APR and term. It then compares scheduled payment and total interest side by side. According to Experian, the average refinanced auto loan carried an 8.45% APR as of June 2025, about 2 percentage points below the 10.45% average rate borrowers held on the loan before refinancing. A lower APR, an improved credit score since your original loan, or wanting to remove a co-borrower are the most common reasons to refinance. See the [auto loan interest calculator](/auto-loan/interest-calculator/) to check how your current rate compares to today's typical APR by credit tier.\n\nPairing a lower rate with a longer term can erase most of the interest savings you were expecting. Take that same $22,000 balance at 9.5% APR with 42 months left, but refinance it into a 6.5% APR loan stretched to 60 months instead of 42. The payment falls further, from $617.76 to $430.46, a $187.31 monthly drop. But total interest on the new loan is $3,827.32, barely below the $3,945.99 you would pay by keeping the original loan. Stretching the term ate almost all of the savings a lower rate should have delivered.",

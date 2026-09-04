@@ -13,7 +13,7 @@ export const FACTORING_HUB: CalculatorDef = {
 
   h1: "Invoice Factoring Calculator",
 
-  intro:
+  introText:
     "This invoice factoring calculator shows exactly how much cash you get now and what a factoring deal really costs. Enter your invoice amount, advance rate, factoring fee, and how fast your customer pays. The tool returns your upfront cash, the reserve held back, total fees, and your true annual cost. For a $100,000 invoice at an 85% advance rate and a 1.5% fee per 30 days, you get $85,000 in cash now and hold a $15,000 reserve. When your customer pays in 45 days, the total factoring fee is $3,000, your $12,000 rebate is released, and your net proceeds are $97,000 — an effective APR of 28.63%.",
 
   howItWorks:

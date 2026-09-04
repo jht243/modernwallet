@@ -92,7 +92,7 @@ const relatedEntries = entry.relatedComparisons
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline updated={entry.updated} />
-      {paragraphs(entry.intro).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
     {entry.rankingCriteria && (

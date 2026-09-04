@@ -11,7 +11,7 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
     estimatedVolume: 20,
     estimatedKD: 0,
     h1: "Factor Rate Calculator",
-    intro:
+    introText:
       "This factor rate calculator turns a merchant cash advance factor rate into the real dollars you repay and the effective APR behind it.\nA factor rate is a decimal, like 1.4, that you multiply by your advance to get total payback. It is not an interest rate, so it hides the true yearly cost. Enter your advance amount, factor rate, and term below to see what the deal actually costs.\n\nThis tool sits under our [merchant cash advance hub](/merchant-cash-advance/). To compare the same offer against a bank loan, also try our [merchant cash advance payoff calculator](/merchant-cash-advance/merchant-cash-advance-payoff-calculator/).",
     howItWorks:
       "A factor rate calculator multiplies your advance by the factor rate to find total payback, then works backward to an effective APR.\nThe math is simple. Total payback equals advance times factor rate. Your cost is the payback minus the advance. To find the effective APR, the tool spreads that cost across your real payment schedule, since MCAs pull money daily or weekly. That schedule is why a small-looking factor rate becomes a very large APR.\n\nThe key lesson: a 1.4 factor rate is roughly a 95% APR. The factor rate is not interest. Two offers with the same factor rate can carry very different APRs if one has a shorter term, because you pay the same fee back faster. Always convert the factor rate to an APR before you sign.",
@@ -86,7 +86,7 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
     estimatedVolume: 70,
     estimatedKD: 20,
     h1: "Merchant Cash Advance Payoff Calculator",
-    intro:
+    introText:
       "This merchant cash advance payoff calculator shows your total payoff amount, your daily payment, and whether paying early saves you anything.\nA merchant cash advance payoff is set by the factor rate, not by remaining interest, so the math works differently from a normal loan. Enter your advance, factor rate, and term below to see the full balance you owe and how fast the daily payments pull it down.\n\nThis tool lives under our [merchant cash advance hub](/merchant-cash-advance/). To convert a raw factor rate into an APR, use our [factor rate calculator](/merchant-cash-advance/factor-rate-calculator/).",
     howItWorks:
       "A merchant cash advance payoff calculator multiplies your advance by the factor rate to fix the total balance, then divides it across daily payments.\nUnlike a bank loan, an MCA payoff is not reduced by unpaid interest. The total you owe is locked the moment you sign: advance times factor rate. The calculator takes that fixed number, subtracts what you have already paid, and shows the remaining balance plus the daily draw against your sales.\n\nHere is the non-obvious insight most owners miss: paying an MCA off early usually does not save money. You owe the full factor rate times advance regardless of timing, so early payoff just hands over the same fee sooner. The one exception is a contract with a prepayment discount. Those exist but are not standard, so ask your provider in writing before you assume early payoff helps.",
@@ -156,7 +156,7 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
     estimatedVolume: 2400,
     estimatedKD: 31,
     h1: "Accounts Receivable Financing Calculator",
-    intro:
+    introText:
       "This accounts receivable financing calculator shows how much cash you get today, what you pay in fees, and the real effective APR on an invoice.\nAccounts receivable financing lets a business turn unpaid invoices into immediate cash by advancing most of the invoice value now. Enter your invoice amount, advance rate, factor fee, and expected days until payment below to see your advance, reserve, and net proceeds.\n\nThis tool sits under our [invoice factoring hub](/invoice-factoring/). To size the fee alone on a single invoice, use our [factoring fee calculator](/invoice-factoring/factoring-fee-calculator/). Once you've run the numbers, see our guide on [how to account for invoice factoring](/guides/how-to-account-for-invoice-factoring/) for the GAAP journal entries behind the advance, reserve, and rebate shown here.",
     howItWorks:
       "Accounts receivable financing advances a percentage of your invoice now, holds the rest in reserve, and charges a fee when your customer pays.\nThe calculator starts with the advance: invoice amount times the advance rate. The remaining slice becomes the reserve, held back until your customer settles the invoice. When payment lands, the financer keeps a factor fee and rebates the rest of the reserve to you. Net proceeds are your advance plus that rebate.\n\nThe non-obvious point is timing. Because the fee is charged over a short collection window, a fee that looks small as a percentage becomes a large annualized APR. A 2% fee on a 60-day invoice is not 2% a year. Spread across the real days-until-paid, that same fee works out to roughly a 30% effective APR, which is the number that matters for comparison.",
@@ -231,7 +231,7 @@ export const BUSINESS_FINANCING_SPOKES: SpokeEntry[] = [
     estimatedVolume: 90,
     estimatedKD: 20,
     h1: "Factoring Fee Calculator",
-    intro:
+    introText:
       "This factoring fee calculator shows the exact fee, cash advance, and effective APR when you factor a single invoice.\nA factoring fee is the discount a factor keeps for advancing cash against your invoice before your customer pays. Enter your invoice amount, advance rate, factor fee, and days until payment below to see your advance, reserve, rebate, and net proceeds in seconds.\n\nThis tool lives under our [invoice factoring hub](/invoice-factoring/). To model an ongoing financing arrangement instead of one invoice, use our [accounts receivable financing calculator](/invoice-factoring/accounts-receivable-financing/).",
     howItWorks:
       "A factoring fee calculator multiplies your invoice by the advance rate for cash now, then applies the factor fee against the full invoice.\nThe tool first finds your advance: invoice amount times the advance rate. The rest is the reserve, held until your customer pays. The factoring fee is charged on the invoice value, and once the customer settles, you get the reserve back minus that fee. Net proceeds are the advance plus the rebate.\n\nThe insight worth catching is that a higher advance rate does not lower your fee. A 90% advance simply gives you more cash up front, but the fee still applies to the whole invoice. And because the fee is charged over a short window, a 3% fee on a 30-day invoice becomes roughly a 40% effective APR. Short terms make small fees expensive on an annualized basis.",

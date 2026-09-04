@@ -18,7 +18,7 @@ export interface Guide {
   h1: string;
   /** Short label + blurb for the guide index / cards. */
   cardBlurb: string;
-  intro: string;
+  introText: string;
   sections: GuideSection[];
   /** The calculators this journey uses, shown as a "Tools for this journey" panel. */
   tools: GuideTool[];
@@ -34,7 +34,7 @@ export const GUIDES: Guide[] = [
       "A clear first time home buyer guide: figure out affordability, save your down payment, budget closing costs, and check that you're financially ready.",
     h1: "First Time Home Buyer Guide: Your Step-by-Step Path to Buying",
     cardBlurb: "Affordability, down payment, closing costs, and getting financially ready — step by step.",
-    intro:
+    introText:
       "This first time home buyer guide walks you through buying your first home one step at a time. You will learn how much house you can afford, how to save a down payment, and how to budget for closing costs. Each step links to a free ModernWallet calculator so you can run your own numbers. Take it slow, and check that you are financially ready before you buy.",
     sections: [
       { heading: "Step 1: Figure out how much house you can afford", body: "Start by working out a home price that fits your income and debts. Lenders look at your debt-to-income ratio, which is all your monthly debt payments divided by your gross monthly income. A common guideline is the 28/36 rule: keep housing costs near 28% of gross income and total debt near 36%.\n\nUse our [home affordability calculator](/mortgage/home-affordability-calculator/) to apply the 28/36 rule to your own numbers. It shows a realistic price range before you start shopping. Knowing your limit keeps you from falling for a home you cannot comfortably afford." },
@@ -73,7 +73,7 @@ export const GUIDES: Guide[] = [
       "Learn how to buy a car the smart way. This car buying guide walks you through budget, financing, interest, payoff, and the traps to avoid.",
     h1: "How to Buy a Car: A Smart Step-by-Step Guide",
     cardBlurb: "Set a real budget, get preapproved, know the interest, and dodge the dealership traps.",
-    intro:
+    introText:
       "Learning how to buy a car starts with one idea: the sticker price is not the real price. This car buying guide walks you through each step, from setting a budget to signing the loan. You will learn what a car truly costs and how to avoid the most common traps. Run the numbers yourself at every stage with the free tools linked below.",
     sections: [
       { heading: "Step 1: Set a realistic budget before you shop", body: "Your car budget should cover far more than the monthly payment. A common rule is 20/4/10: put 20% down, finance for no more than four years, and keep total car costs under 10% of your income. The CFPB warns that the true cost of ownership also includes insurance, registration, gas, maintenance, and repairs.\n\nFigure out a safe price range before you fall in love with a car. Use our [car affordability calculator](/auto-loan/car-affordability-calculator/) to see what you can comfortably spend. Knowing your ceiling keeps you from stretching the loan to fit the car. Already leasing and thinking about keeping the car instead? The buying math is different — see our [auto lease buyout calculator guide](/guides/auto-lease-buyout-calculator/) for what you'd actually pay. Still deciding between the two paths in the first place? Our [buying vs. leasing a car](/compare/buying-vs-leasing-a-car/) comparison breaks down the real cost difference with a worked example." },
@@ -110,7 +110,7 @@ export const GUIDES: Guide[] = [
       "Am I ready to retire? Walk through five steps to test your retirement readiness, from savings projections to RMDs and Social Security timing.",
     h1: "Am I Ready to Retire? A Step-by-Step Retirement Readiness Guide",
     cardBlurb: "Five steps to test if your money lasts — projections, 401(k), net worth, withdrawals, and timing.",
-    intro:
+    introText:
       "You are ready to retire when your savings, income, and spending plan can support you for life. This retirement readiness guide walks you through five clear steps to test that. You will project whether your money lasts, maximize savings, check your net worth, plan withdrawals, and dodge timing risks. Each step links a free calculator so you can run your own numbers.",
     sections: [
       { heading: "Step 1: Project whether your savings will last", body: "Start by projecting whether your savings will last through retirement. This is the core test of retirement readiness. You need to know your expected balance at retirement and how long it can fund your spending.\n\nA common starting point is the 4% guideline. It suggests withdrawing about 4% of your balance in year one, then adjusting for inflation. Run your own numbers with our [retirement calculator](/retirement/) to see if your projected balance covers your needs. The Department of Labor notes that retirees often need 70% to 90% of their pre-retirement income to keep their standard of living. If you're not sure that target is realistic on your income, see [how much the average earner should actually save](/guides/how-much-to-save-for-retirement-average-earner/)." },
@@ -149,7 +149,7 @@ export const GUIDES: Guide[] = [
       "Passive income ideas with the math: dividends, REITs, high-yield savings, rental property, and digital products. What's truly passive and what isn't.",
     h1: "Passive Income Ideas: A Math-Honest Guide to What Really Works",
     cardBlurb: "Dividends, REITs, HYSAs, rentals, digital products — with the setup work and taxes each one really takes.",
-    intro:
+    introText:
       "The best passive income ideas share one honest truth: nothing is fully passive at the start. Most streams need real money, real setup work, or both before income shows up. The IRS defines passive activities narrowly, and many popular ideas fail that test on your tax return. This guide walks through five realistic streams, the math behind each, and how to pick one that fits your money and time.",
     sections: [
       { heading: "What 'passive income' actually means", body: "'Passive income' sounds hands-off, but the IRS defines the term much more strictly. IRS Topic No. 425 treats passive activities as businesses in which you do not materially participate. Rental real estate is generally passive by default, even if you manage it yourself.\n\nOther streams people call passive, like dividends and interest, are usually classified as portfolio income by the IRS, not passive income. That distinction matters at tax time because passive losses can only offset passive income. Before you chase a stream, know how the IRS will label it and how you will be taxed." },
@@ -186,7 +186,7 @@ export const GUIDES: Guide[] = [
       "Practical tax tips: retirement account contributions, HSAs, tax-loss harvesting, brackets, and standard vs itemized. General information, not tax advice.",
     h1: "Tax Tips: A Practical Checklist of Planning Moves to Consider",
     cardBlurb: "Retirement accounts, HSAs, tax-loss harvesting, brackets, and standard vs itemized — the moves people often miss.",
-    intro:
+    introText:
       "These tax tips cover practical planning moves individuals often miss during the year, not just at filing time. You will learn how retirement accounts, HSAs, and tax-loss harvesting can lower your bill, plus how brackets and the standard deduction shape every decision. This guide is general information, not tax advice. Rules change, and your situation may need a CPA or enrolled agent to review. Once these moves are in place, see [TurboTax vs. TaxAct](/compare/turbotax-vs-taxact/) for which filing software actually applies them correctly at the lowest cost.",
     sections: [
       { heading: "Tip 1: Fund tax-advantaged accounts first", body: "The biggest tax break most people miss is simply funding tax-advantaged accounts up to the annual limit. For 2026, the IRS lets you contribute up to $24,500 to a 401(k), plus an $8,000 catch-up at age 50 or older. Traditional 401(k) contributions lower your taxable income today.\n\nIRAs offer a smaller but useful boost. The [2026 IRA contribution limit](/guides/ira-contribution-limits-2026/) is $7,500, with a $1,100 catch-up at age 50 or older. Use our [401k calculator](/retirement/401k-calculator/) and [Roth IRA calculator](/investing/roth-ira-calculator/) to see how each choice grows over time. Always contribute enough to your 401(k) to capture the full employer match first, because that is a 100% return that you cannot get anywhere else." },
@@ -224,7 +224,7 @@ export const GUIDES: Guide[] = [
       "Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
     h1: "How to Choose a Financial Advisor: A Step-by-Step Decision Guide",
     cardBlurb: "Fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify a real advisor.",
-    intro:
+    introText:
       "Learning how to choose a financial advisor starts with the standard they follow, not the pitch they give. Some advisors are fiduciaries who must put your interests first. Others only need to recommend something suitable, which is a weaker rule. This guide walks you through the standards, the fee models, the CFP credential, how to verify an advisor, and the questions to ask on your first call.",
     sections: [
       { heading: "Know Which Type of Financial Professional You're Talking To", body: "\"Financial advisor\" is a loose umbrella term, and the specific job title someone uses often says more about how they're paid and regulated than the word \"advisor\" itself does. An investment adviser registers with the SEC or a state regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under management. A broker-dealer representative can also call themselves a financial advisor, but is held only to Regulation Best Interest, the weaker standard covered in that same step, and is often paid a commission on what they sell.\n\nA few other titles are worth naming directly. A wealth advisor usually follows the same fiduciary model as an investment adviser, aimed at [higher-net-worth clients with higher account minimums](/compare/financial-advisor-vs-wealth-manager/). A financial coach or financial counselor typically focuses on budgeting, debt payoff, and money habits rather than managing investments, and often isn't licensed to manage a portfolio at all. A [CPA who also advises on investments](/compare/financial-advisor-vs-cpa/) needs a separate license to do so legally, since the CPA credential itself covers tax and accounting work, not investment management. A robo-advisor replaces the human with an algorithm that builds and rebalances a portfolio automatically, usually at a much lower fee. Our [robo-advisor vs. financial advisor breakdown](/guides/financial-advisor-worth-it/) covers when that trade-off makes sense.\n\nTwo more titles show up mostly at larger firms or in specific situations. A portfolio or asset manager runs the investment decisions inside a fund or a large account. That person often never speaks directly to the end client, since a financial advisor is usually the relationship-facing role sitting between that manager and you. A financial therapist works on the emotional and behavioral side of money instead, like anxiety around spending or conflict with a partner over finances. That role typically isn't licensed to manage investments or give specific investment advice at all.\n\nThe CFP credential from Step 3 below cuts across most of these titles, and so does the related but less common ChFC (Chartered Financial Consultant) designation. Each is a personal qualification a person earns, separate from which of the business models above they actually work under. A CFP or ChFC can work as a fee-only investment adviser, inside a wealth-management firm, or, less commonly, as a broker-dealer representative, and the fiduciary duty from Step 1 tracks that underlying role every time." },
@@ -265,7 +265,7 @@ export const GUIDES: Guide[] = [
       "Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.",
     h1: "Is a Financial Advisor Worth It? What the Research Actually Shows",
     cardBlurb: "What advisors cost, what Vanguard's research says about the value they add, and when DIY investing wins instead.",
-    intro:
+    introText:
       "A financial advisor is worth the cost when the value they add — through smarter investment behavior, tax-aware moves, and a plan you actually follow — is bigger than the fee you pay, and [Vanguard](https://advisors.vanguard.com/content/dam/fas/pdfs/IARCQAA.pdf)'s own research puts that potential value at close to 3% a year for many investors. This guide breaks down what advisors actually cost, what the research says about the value they can add, and the specific situations where paying for one is worth it, or where doing it yourself is the smarter call.",
     sections: [
       { heading: "Step 1: What a financial advisor actually costs", body: "Most fee-only financial advisors charge a percentage of assets under management (AUM), commonly around 1% a year. On a $250,000 portfolio, that is $2,500 a year; on $1,000,000, it is $10,000 a year — real money that compounds against you the same way investment growth compounds for you.\n\nFlat-fee and hourly advisors are a growing alternative. Flat annual retainers commonly run $2,000 to $7,500 depending on complexity, and hourly planning runs roughly $150 to $400 an hour for a handful of sessions. Robo-advisors sit at the low end, often charging around 0.25% of assets with no dedicated human advisor attached. See our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) for how fee models compare in more detail." },
@@ -301,7 +301,7 @@ export const GUIDES: Guide[] = [
       "Is the 60/40 portfolio dead? See how it performed in the historic 2022 downturn and the years since, then decide if it still fits your own plan.",
     h1: "Is the 60/40 Portfolio Dead? What the Historical Data Actually Shows",
     cardBlurb: "The 2022 downturn that sparked the debate, the recovery since, and whether the classic 60/40 mix still earns a place in your plan.",
-    intro:
+    introText:
       "The 60/40 portfolio is not dead — it had its worst year in decades in 2022, then rebounded sharply, and its long-run role as a balance between growth and stability is intact for most investors. This guide walks through what actually happened in 2022, how the portfolio has performed since, and how to decide whether 60/40 still fits your own plan.",
     sections: [
       { heading: "Step 1: What actually happened in 2022", body: "In 2022, the 60/40 portfolio delivered its worst performance since 1937 and one of its worst in roughly 200 years, according to [Morgan Stanley Investment Management](https://www.morganstanley.com/im/publication/insights/articles/article_bigpicturereturnofthe6040_ltr.pdf)'s own analysis of the strategy. Stocks and bonds fell together as the Federal Reserve raised interest rates aggressively to fight inflation, which broke the usual pattern where bonds cushion a stock selloff.\n\nThat simultaneous decline is exactly why the '60/40 is dead' narrative took hold. Bonds are supposed to zig when stocks zag; in 2022 they zagged together, and a strategy built on that offset looked broken for the first time in most investors' memory." },
@@ -335,7 +335,7 @@ export const GUIDES: Guide[] = [
       "What a money market account is, how it differs from a high-yield savings account and CDs, FDIC coverage rules, and when to use each for your cash.",
     h1: "Money Market Account: A Practical Guide to MMAs vs HYSAs and CDs",
     cardBlurb: "How money market accounts work, MMA vs HYSA vs CD, FDIC coverage, and when to use each.",
-    intro:
+    introText:
       "A money market account is a bank deposit account that usually pays a higher interest rate than a regular savings account. The CFPB explains that MMAs may allow limited check writing and debit card use, unlike most savings accounts. This guide covers how MMAs work, how they compare to high-yield savings accounts and CDs, what FDIC coverage protects, and when each account is the right choice for your cash.",
     sections: [
       { heading: "What a money market account is", body: "A money market account (MMA) is an interest-bearing deposit account at a bank or credit union. The CFPB describes MMAs as savings-style accounts that tend to pay higher interest than plain savings accounts. They often allow limited check writing and [debit card use](/guides/money-market-account-debit-card/), which regular savings accounts usually do not.\n\nMost MMAs require a higher minimum balance than a basic savings account, sometimes $1,000 or more. Some banks pay a higher rate only if you keep a balance above a set threshold. Read the fee schedule before opening one, because monthly fees can wipe out the extra interest on smaller balances." },
@@ -382,7 +382,7 @@ export const GUIDES: Guide[] = [
       "Do money market accounts come with debit cards? How MMA debit access works, which banks offer it, transaction limits, and when checking fits better.",
     h1: "Money Market Accounts With Debit Cards: What to Know Before You Open One",
     cardBlurb: "Which money market accounts offer debit cards, how transaction limits work, and when checking is the better tool.",
-    intro:
+    introText:
       "Some money market accounts come with a debit card, but not all of them do — and the ones that do usually cap how often you can use it. A money market account with a debit card gives you savings-level interest plus ATM and purchase access, which no regular savings account offers. This guide explains how MMA debit access works, how to find accounts that offer it, the transaction limits to expect, and when a checking account is still the right tool for spending.",
     sections: [
       { heading: "Do money market accounts come with debit cards?", body: "Some do, some don't — a debit card is a feature of the specific account, not of money market accounts as a category. The CFPB notes that MMAs may allow limited check writing and debit card access, which sets them apart from regular savings accounts. But each bank decides whether to issue a card at all.\n\nIn practice, you'll see three setups. Some banks issue a full debit card that works at ATMs and for purchases. Others issue an ATM-only card that withdraws cash but can't be swiped at a register. Many, especially online banks competing on rate, issue no card and route access through transfers and checks.\n\nBefore you open an account, confirm which setup you're getting. The account's fee schedule and disclosures will say 'debit card,' 'ATM card,' or neither. Don't assume — the difference decides whether the account can act as an emergency-spending backstop." },
@@ -416,7 +416,7 @@ export const GUIDES: Guide[] = [
       "A step-by-step back taxes guide: what happens if you don't file, how to catch up, IRS relief programs, and when to hire a professional. Not tax advice.",
     h1: "Back Taxes Guide: What to Do When You Owe the IRS",
     cardBlurb: "Unfiled returns, IRS notices, and relief programs — a step-by-step guide for when you're behind.",
-    intro:
+    introText:
       "This back taxes guide walks you through the practical playbook for handling IRS debt — from the moment you realize you have unfiled returns or an unpaid balance to picking the right relief program and knowing when to hire a professional. It covers what the IRS actually does when you don't pay (predictable and slower than most people expect), your five statutory relief options under the Internal Revenue Code, and the specific cost bands for tax attorneys, CPAs, and Enrolled Agents. It is general information, not tax advice.",
     sections: [
       {
@@ -505,7 +505,7 @@ export const GUIDES: Guide[] = [
       "Can an Enrolled Agent represent you in U.S. Tax Court? Only if separately admitted under the Tax Court's Rule 200, a step most Enrolled Agents never take.",
     h1: "Can an Enrolled Agent Represent You in U.S. Tax Court?",
     cardBlurb: "Circular 230 gives an Enrolled Agent full IRS practice rights, but U.S. Tax Court is a separate court with its own admission exam almost no Enrolled Agent passes.",
-    intro:
+    introText:
       "An Enrolled Agent can represent you in [U.S. Tax Court](https://www.ustaxcourt.gov/) only if that Enrolled Agent has separately passed the Tax Court's own exam for non-attorneys. Most Enrolled Agents never take that exam. [Circular 230](https://www.irs.gov/tax-professionals/circular-230-tax-professionals) gives Enrolled Agents unlimited authority to handle audits, collections, and administrative appeals before the [Internal Revenue Service (IRS)](https://www.irs.gov). The Tax Court is a federal court that stands apart from the IRS and sets its own rules for who can argue a case before its judges. That distinction matters mainly for the small share of disputes that never settle, since most Tax Court petitions resolve before trial.",
     sections: [
       { heading: "What Circular 230 Covers", body: "Circular 230 is the [U.S. Treasury](https://home.treasury.gov/) regulation that licenses Enrolled Agents to represent taxpayers before the IRS. It grants the same unlimited practice rights an attorney or a Certified Public Accountant (CPA) holds for that same work. An Enrolled Agent earns the license by passing the IRS's three-part Special Enrollment Examination, or by working at least five years in a qualifying IRS position. The license is federal, so it carries into all 50 states without a separate application. Unlimited practice rights cover every stage of a dispute that stays inside the agency itself. That includes an audit, a collections case, an offer in compromise, penalty abatement, and a hearing before the IRS's [Independent Office of Appeals](https://www.irs.gov/appeals). None of that requires a law degree or a state bar card. That is also why an Enrolled Agent's hourly rate for this work, commonly $150 to $300, runs well below a tax attorney's $300 to $600 or more." },
@@ -542,7 +542,7 @@ export const GUIDES: Guide[] = [
       "A first-time estate planning guide: which documents you need, when to DIY vs hire an attorney, what it costs, and 2026 estate tax rules. Not legal advice.",
     h1: "First Time Estate Planning: Documents, Costs, and Order of Operations",
     cardBlurb: "The core 4 documents, DIY vs attorney costs by state, and the 2026 estate tax rules — step by step.",
-    intro:
+    introText:
       "What actually counts as estate planning? It's the small set of legal documents and account setups that control what happens to your money, your property, and your medical care if you become incapacitated or die: a last will and testament, a durable power of attorney, an advance healthcare directive, your beneficiary designations on retirement and life insurance accounts, and — for some households — a revocable or irrevocable trust. Most people only need the first four; the trust becomes relevant only in specific situations (multi-state property, a special-needs dependent, or a desire for probate avoidance and privacy).\n\nThis first-time estate planning guide covers what you actually need at each net-worth tier, what it costs, and the order to tackle the documents. Below the federal $15M estate tax exemption and any state exemption, estate planning is about probate avoidance, guardianship for minors, and decision-making during incapacity — not about saving taxes. Above those thresholds, the analysis flips to tax planning, and attorney-drafted irrevocable trusts become essential.",
     sections: [
       {
@@ -633,7 +633,7 @@ export const GUIDES: Guide[] = [
       "Probate process guide: what happens after death, executor duties, timeline by state, small-estate procedures, and how to avoid probate. Not legal advice.",
     h1: "Probate Process Guide: What to Do After Someone Dies",
     cardBlurb: "Executor duties, timeline, small-estate procedures, and how to avoid probate — step by step.",
-    intro:
+    introText:
       "This probate process guide walks through what happens after a death: the initial 30-day tasks (funeral, notifying agencies, locating the will), opening probate (petition, letters testamentary), the executor's duties (inventory, notice, creditor claims, tax returns), distribution, and closing. It also covers when a small-estate procedure can bypass full probate and how a revocable living trust drafted during life would have avoided the whole process. Not legal advice — consult a licensed attorney in the decedent's state.",
     sections: [
       {
@@ -737,7 +737,7 @@ export const GUIDES: Guide[] = [
       "Protect assets from nursing home costs: 5-year Medicaid lookback, MAPT, spend-down, home protection, and CSRA. Not legal advice — see an elder-law pro.",
     h1: "How to Protect Assets From Nursing Home Costs",
     cardBlurb: "Medicaid Asset Protection Trusts, the 5-year lookback, home protection, and CSRA — the legal tools that actually work.",
-    intro:
+    introText:
       "Nursing home care runs $115,000-$132,000/year in 2026 and inflates at ~4.5%/year. Without protection, a couple's life savings can be gone in 3-5 years — Medicaid takes over only after spend-down under 42 U.S.C. §1396p, and by then the well spouse has little left. This guide covers the actual tools that work: Medicaid Asset Protection Trusts funded 5+ years before application, transfers that avoid the lookback penalty, the Community Spouse Resource Allowance that protects half a couple's assets, home-equity limits and protection deeds, and the estate recovery rules that determine what's left for heirs. Not legal advice — every strategy here requires an elder-law attorney in your state, and timing is the difference between full protection and a wasted trust.",
     sections: [
       {
@@ -855,7 +855,7 @@ export const GUIDES: Guide[] = [
     h1: "What Is a Trump Account? Rules, Eligibility & How to Open",
     cardBlurb:
       "A tax-advantaged investment account for children, with a $1,000 federal seed for kids born 2025–2028 and up to $5,000 a year in family contributions.",
-    intro:
+    introText:
       "A Trump Account is a tax-advantaged investment account for a child, created by the 2025 Working Families Tax Cuts law, that holds S&P 500 index funds and can receive a one-time $1,000 federal seed for U.S.-citizen kids born between 2025 and 2028. The money grows tax-deferred until the child turns 18, when the account is treated like a traditional IRA. This guide covers who qualifies, how much you can add, how the taxes work, and exactly how to open one at [TrumpAccounts.gov](/trump-account/).\n\nUse our [Trump Account calculator](/trump-account/) to project the balance for your child. Then compare it against other options with our guides on [Trump Account vs 529](/compare/trump-account-vs-529/) plans and whether [Trump Accounts are worth it](/guides/trump-account-worth-it/).",
     sections: [
       { heading: "What a Trump Account is", body: "A Trump Account is a new kind of tax-advantaged investment account built for children. Congress created it in the 2025 tax law, the One Big Beautiful Bill, also called the Working Families Tax Cuts. In the tax code it lives under new section 530A.\n\nThink of it as a starter retirement account for a kid. Money goes in after tax, gets invested in a U.S. stock index fund, and grows without yearly tax bills. The account holds one investment type: a low-cost fund that tracks the S&P 500 or a similar U.S.-equity index.\n\nThe program went live on July 4, 2026. Before that date, no contributions could be made. The goal is simple. Give American children a long runway to build wealth through the stock market.\n\nWant the numbers behind that runway? Run your child's details through our [Trump Account calculator](/trump-account/)." },
@@ -900,7 +900,7 @@ export const GUIDES: Guide[] = [
     h1: "Are Trump Accounts Worth It? Should You Open One for Your Child?",
     cardBlurb:
       "A balanced, no-hype verdict on Trump Accounts: the free $1,000 seed, the real catches, and who should skip them.",
-    intro:
+    introText:
       "Trump Accounts are worth it for the free $1,000 federal seed almost every eligible child should claim, but adding money beyond that seed only makes sense for some families. This page gives you an honest, balanced answer. A Trump Account is a real federal program, not a scam. But it has real limits: money is locked until age 18, and withdrawals are taxed as ordinary income. Below we cover the genuine pros, the honest cons, and who should fund other accounts first.",
     sections: [
       { heading: "Are Trump Accounts a scam? No — it's a real federal program", body: "Trump Accounts are a legitimate federal program, not a scam. Congress created them in the 2025 tax law under Internal Revenue Code section 530A. The [IRS runs the program](/guides/trump-accounts/) and administers the accounts.\n\nHere is how it works. The government seeds $1,000 into an account for each U.S.-citizen child born from 2025 through 2028. Family members and employers can add money later. The funds must be invested in a U.S.-equity index fund, such as one tracking the S&P 500.\n\nSo why do people ask if it's a scam? The honest reason is the fine print, not fraud. Withdrawals get taxed as ordinary income, and the money stays locked until the child turns 18. Those are real trade-offs. But the program itself is genuine, and the $1,000 seed is guaranteed money." },
@@ -944,7 +944,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "The Trump savings account is the federal Trump Account. See how it works, the $1,000 seed, eligibility, contribution limits, taxes, and if it's worth it.",
     h1: "The Trump Savings Account: How It Works and Who Qualifies",
     cardBlurb: "\"Trump savings account\" is just a nickname for the federal Trump Account. Here's the $1,000 seed, the rules, the taxes, and whether it's worth opening.",
-    intro: "The Trump savings account is not a bank account at all — it is the federal Trump Account under a friendlier name. Same product, same rules, same $1,000 seed for eligible newborns. People call it a \"savings account\" because it holds money for a child, but it pays no fixed interest rate. Instead it invests in a low-cost stock index fund and grows with the market. This guide explains what it is, who qualifies, how much you can add, how it is taxed, and whether it is worth opening. For the deeper explainer, see [what a Trump Account is](/guides/trump-accounts/), and run the numbers with our [Trump Account calculator](/trump-account/).",
+    introText: "The Trump savings account is not a bank account at all — it is the federal Trump Account under a friendlier name. Same product, same rules, same $1,000 seed for eligible newborns. People call it a \"savings account\" because it holds money for a child, but it pays no fixed interest rate. Instead it invests in a low-cost stock index fund and grows with the market. This guide explains what it is, who qualifies, how much you can add, how it is taxed, and whether it is worth opening. For the deeper explainer, see [what a Trump Account is](/guides/trump-accounts/), and run the numbers with our [Trump Account calculator](/trump-account/).",
     sections: [
       { heading: "Is the Trump savings account a real savings account?", body: "No — the \"Trump savings account\" is not a bank savings account and pays no fixed interest rate. It is a nickname for the federal Trump Account, a tax-deferred investment account for children created by the 2025 \"One Big Beautiful Bill.\"\n\nYou may also hear it called a \"Trump baby account\" or a \"Trump investment account.\" These are all informal names for the same thing. The law lives under Internal Revenue Code section 530A.\n\nUnlike a savings account, the money is invested in a stock index fund, not held at a fixed rate. That means it can grow faster over time — but its value can also rise and fall with the market." },
       { heading: "What is the Trump savings account?", body: "The Trump savings account is a long-term investment account that a parent opens for a child and funds with after-tax dollars. The program went live on July 4, 2026, and no contributions were allowed before that date.\n\nIts headline feature is a one-time $1,000 federal seed for qualifying newborns. The government deposits that money to start the account.\n\nThe balance is invested in a fund that tracks a U.S. stock index, and it grows tax-deferred until the child turns 18. Think of it as a starter retirement-style account rather than a place to park cash. Learn more in our pillar on [what a Trump Account is](/guides/trump-accounts/)." },
@@ -980,7 +980,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Yes, the Trump account for newborns is real: a $1,000 federal seed for U.S. babies born 2025–2028. See who qualifies and how to open one.",
     h1: "Trump Account for Newborns: The $1,000 Baby Seed",
     cardBlurb: "Babies born 2025–2028 get a free $1,000 federal seed. Here is how the Trump account for newborns works and how to open one.",
-    intro: "The Trump account for newborns is real, and it comes with a free $1,000 federal seed for eligible babies. Congress created it in the 2025 \"One Big Beautiful Bill,\" the Working Families Tax Cuts law.\n\nThe headline benefit is a one-time $1,000 the government deposits for your child. You do not pay it back, and it is not a loan.\n\nThis page focuses on newborns and babies specifically. You will learn if it is real, who qualifies by birth year, whether it is automatic, and how to open one for your baby. For the bigger picture, see [what a Trump Account is](/guides/trump-accounts/).",
+    introText: "The Trump account for newborns is real, and it comes with a free $1,000 federal seed for eligible babies. Congress created it in the 2025 \"One Big Beautiful Bill,\" the Working Families Tax Cuts law.\n\nThe headline benefit is a one-time $1,000 the government deposits for your child. You do not pay it back, and it is not a loan.\n\nThis page focuses on newborns and babies specifically. You will learn if it is real, who qualifies by birth year, whether it is automatic, and how to open one for your baby. For the bigger picture, see [what a Trump Account is](/guides/trump-accounts/).",
     sections: [
       { heading: "Is the Trump baby account real?", body: "Yes, the Trump baby account is real and written into federal law. It was created by the 2025 \"One Big Beautiful Bill\" (the Working Families Tax Cuts law) under IRC section 530A.\n\nThe program goes live on July 4, 2026. No money can go in before that date, so there is nothing to fund yet in 2025 or early 2026.\n\n\"Trump baby account\" and \"Trump newborn savings account\" are informal nicknames. The real product is the federal Trump Account, a tax-deferred investment account. It is not a bank savings account, and it does not sit at your local bank." },
       { heading: "The $1,000 newborn seed explained", body: "The newborn seed is a one-time $1,000 the federal government deposits into your baby's Trump Account. It is the single biggest reason to open one early.\n\nThe seed is free money that does not count against the yearly contribution cap. That cap is $5,000 per year combined, and an employer can add up to $2,500 inside it. The cap adjusts for inflation after 2027.\n\nThe money is invested in a low-cost S&P 500 or U.S.-equity index fund. It grows tax-deferred, so you owe no tax until your child withdraws it after age 18. Want to model the growth? Try the [Trump Account calculator](/trump-account/)." },
@@ -1016,7 +1016,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Learn how to open a Trump Account in minutes at TrumpAccounts.gov. Step-by-step: gather documents, pick a trustee, and fund your child's account safely.",
     h1: "How to Open a Trump Account: A Step-by-Step Guide",
     cardBlurb: "The step-by-step path to opening your child's Trump Account — the official site, documents, trustees, and funding.",
-    intro: "Learning how to open a Trump Account takes only a few minutes online. You open one at TrumpAccounts.gov or the official Trump Accounts app, using your child's basic details. This guide walks you through each step, from gathering documents to picking a trustee to funding the account. First, it helps to understand [what a Trump Account is](/guides/trump-accounts/): a tax-deferred savings account for kids created by the 2025 One Big Beautiful Bill. If you want to model growth before you start, try our [Trump Account calculator](/trump-account/).",
+    introText: "Learning how to open a Trump Account takes only a few minutes online. You open one at TrumpAccounts.gov or the official Trump Accounts app, using your child's basic details. This guide walks you through each step, from gathering documents to picking a trustee to funding the account. First, it helps to understand [what a Trump Account is](/guides/trump-accounts/): a tax-deferred savings account for kids created by the 2025 One Big Beautiful Bill. If you want to model growth before you start, try our [Trump Account calculator](/trump-account/).",
     sections: [
       { heading: "Step 1: Go to the official Trump Account source", body: "Open a Trump Account only at TrumpAccounts.gov or the official Trump Accounts app. These are the government's channels, and they are the safe place to sign up. Opening takes only a few minutes once you have your child's details ready.\n\nThe program went live on July 4, 2026, so no accounts or contributions existed before then. If you opted in while filing your 2025 taxes, an account may already be started for you. In that case, log in through the official site to check and finish setup.\n\nBe careful, because scammers copy government pages to steal personal data. Never enter your child's Social Security number on a random third-party site. Type the official web address yourself instead of clicking links from ads, texts, or emails." },
       { heading: "Step 2: Gather the documents you need to sign up", body: "You need three things to open a Trump Account: the child's Social Security number, date of birth, and address. Have these ready before you start so the process moves quickly. With them on hand, signing up takes just a few minutes.\n\nAny parent can open an account, no matter their own immigration status. The child is the account owner, so their details are what the form asks for. Double-check the Social Security number, since a typo can delay your application.\n\nKeep this information private during and after setup. The official site is secure, but you should still avoid sharing these details anywhere else. To confirm your child qualifies, review [who qualifies](/guides/trump-account-eligibility/) before you apply." },
@@ -1052,7 +1052,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Trump Account eligibility explained: nearly any U.S. child under 18 with an SSN can open one, but only kids born 2025-2028 get the $1,000 seed.",
     h1: "Trump Account Eligibility: Who Qualifies?",
     cardBlurb: "Two eligibility rules, not one: who can open a Trump Account, and who gets the free $1,000 seed. Plus the checklist to know where your child stands.",
-    intro: "Trump Account eligibility comes in two layers, and mixing them up is the single most common mistake parents make. One rule decides who can open an account. A separate rule decides who gets the free $1,000 federal seed.\n\nThese are not the same test. A child can qualify to open and fund an account while still missing out on the seed. This guide keeps the two apart so you know exactly where your child stands.\n\nWe cover citizenship, Social Security numbers, the birth-year window, older kids, adults, and the fact that there is no parental income limit. Start with [what a Trump Account is](/guides/trump-accounts/) if the basics are still fuzzy.",
+    introText: "Trump Account eligibility comes in two layers, and mixing them up is the single most common mistake parents make. One rule decides who can open an account. A separate rule decides who gets the free $1,000 federal seed.\n\nThese are not the same test. A child can qualify to open and fund an account while still missing out on the seed. This guide keeps the two apart so you know exactly where your child stands.\n\nWe cover citizenship, Social Security numbers, the birth-year window, older kids, adults, and the fact that there is no parental income limit. Start with [what a Trump Account is](/guides/trump-accounts/) if the basics are still fuzzy.",
     sections: [
       { heading: "Trump Account Eligibility: The Two Rules That Matter", body: "Trump Account eligibility splits into two separate questions. First, who can open an account. Second, who gets the one-time $1,000 seed.\n\nAlmost any U.S. child under 18 with a Social Security number can have an account opened. The seed is narrower. Only U.S.-citizen children born in a specific window receive it.\n\nHold these two rules apart as you read. A child can clear the first test, open an account, invest for years, and still not get the seed. That is normal, and it is not a rejection." },
       { heading: "Who Qualifies to Open an Account?", body: "Nearly any U.S. child under 18 with a valid Social Security number qualifies to open a Trump Account. The SSN is the key requirement. Without it, the account cannot be opened.\n\nAny parent can open one, regardless of the parent's immigration status. Your status does not block your child. The account belongs to the child, not to you.\n\nThere is no lottery and no waiting list. If your child is under 18 and has an SSN, you can move forward. See [how to open one](/guides/how-to-open-a-trump-account/) for the step-by-step." },
@@ -1088,7 +1088,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Trump account rules explained: the $5,000 annual cap, $1,000 seed, employer limits, S&P 500-only investing, and the lock-until-18 withdrawal rule.",
     h1: "Trump Account Rules: Limits, Deposits, and Access",
     cardBlurb: "The clean rulebook: contribution caps, seed money, who can pay in, investment limits, and when the money unlocks.",
-    intro: "Trump account rules set one combined $5,000 annual contribution cap, an S&P 500-only investment limit, and a lock on the money until the child turns 18. The program was created by the 2025 One Big Beautiful Bill under IRC 530A. It goes live on July 4, 2026, and no contributions are allowed before then.\n\nThis page is the operating manual. It covers the deposit limits, the $1,000 federal seed, who can contribute, where the money is invested, and how withdrawals work. For the basics, start with [what a Trump Account is](/guides/trump-accounts/).",
+    introText: "Trump account rules set one combined $5,000 annual contribution cap, an S&P 500-only investment limit, and a lock on the money until the child turns 18. The program was created by the 2025 One Big Beautiful Bill under IRC 530A. It goes live on July 4, 2026, and no contributions are allowed before then.\n\nThis page is the operating manual. It covers the deposit limits, the $1,000 federal seed, who can contribute, where the money is invested, and how withdrawals work. For the basics, start with [what a Trump Account is](/guides/trump-accounts/).",
     sections: [
       { heading: "Trump account rules at a glance", body: "Trump account rules boil down to a few hard limits you cannot exceed. Learn these first, and the rest falls into place.\n\n- Combined contributions are capped at $5,000 per year.\n- The federal $1,000 seed is separate and does not count against that cap.\n- Money must be invested in a low-cost S&P 500 index fund.\n- Funds are locked until January 1 of the year the child turns 18.\n- After 18, the account is treated like a traditional IRA.\n\nContributions are made with after-tax dollars and are not deductible. Growth inside the account is tax-deferred. To see how the numbers grow, use the [Trump Account calculator](/trump-account/)." },
       { heading: "Trump account contribution limits", body: "The Trump account contribution limit is $5,000 per year, combined across everyone who pays in. That single cap covers deposits from family, relatives, and friends together.\n\nThe $5,000 limit is indexed to inflation after 2027, so it should rise over time. Before then, it stays fixed at $5,000. No single person gets their own separate cap.\n\nEvery deposit counts toward the same annual total. If one grandparent adds $3,000, only $2,000 of room is left for the year. Deposits must wait until the program opens on July 4, 2026." },
@@ -1126,7 +1126,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Trump account taxes explained: contributions are not deductible and growth is tax-deferred, not tax-free. See how withdrawals after 18 are taxed.",
     h1: "Trump Account Taxes: Is It Deductible and How Is It Taxed?",
     cardBlurb: "How a Trump Account is taxed: not deductible, not tax-free, just tax-deferred. See what you owe and when.",
-    intro: "Trump account taxes confuse most parents, so start with the big correction. A Trump Account is tax-DEFERRED, not tax-free. Your contributions are not tax-deductible either.\n\nThat means you fund it with after-tax dollars, the money grows without a yearly tax bill, and taxes come due later. After the child turns 18, it works like a traditional IRA.\n\nThis guide breaks down every tax question in plain terms. For the basics first, see [what a Trump Account is](/guides/trump-accounts/) and [the rules](/guides/trump-account-rules/).",
+    introText: "Trump account taxes confuse most parents, so start with the big correction. A Trump Account is tax-DEFERRED, not tax-free. Your contributions are not tax-deductible either.\n\nThat means you fund it with after-tax dollars, the money grows without a yearly tax bill, and taxes come due later. After the child turns 18, it works like a traditional IRA.\n\nThis guide breaks down every tax question in plain terms. For the basics first, see [what a Trump Account is](/guides/trump-accounts/) and [the rules](/guides/trump-account-rules/).",
     sections: [
       { heading: "Are Trump Account contributions tax-deductible?", body: "No, Trump Account contributions are not tax-deductible. You fund the account with after-tax dollars, so contributions never lower your taxable income.\n\nThis is a key difference from a traditional IRA. A traditional IRA contribution can often be deducted. A Trump Account contribution cannot.\n\nDo not expect a write-off for the money you put in. The annual cap is $5,000, and none of it reduces your tax bill. Employers can add up to $2,500, but that sits inside the same $5,000 limit." },
       { heading: "Is a Trump Account tax-free or just tax-deferred?", body: "A Trump Account is tax-deferred, not tax-free. The growth avoids yearly taxes, but the government still collects later.\n\nWhile the money stays invested, you owe no tax on gains or dividends each year. That lets the balance compound faster than a taxable account.\n\nThe trade-off is timing, not forgiveness. Tax-deferred means you delay the tax bill. Tax-free would mean you never pay it, and that is not how this account works." },
@@ -1162,7 +1162,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "What are Trump Accounts invested in? One low-cost S&P 500 U.S. stock index fund only. See the rules, restrictions, and long-run growth context.",
     h1: "What Are Trump Accounts Invested In?",
     cardBlurb: "Every Trump Account holds one low-cost S&P 500 index fund. Here is why it is restricted and what that means for growth.",
-    intro: "What are Trump Accounts invested in? Every Trump Account must hold one low-cost fund that tracks the S&P 500 or a similar broad U.S. stock index. You cannot pick individual stocks, bonds, or international funds. The money simply follows the U.S. stock market.\n\nThat single-fund design keeps fees low and the strategy simple. A \"Trump investment account\" is just another name for the same account. This guide explains what the money buys, why the choices are limited, and how that shapes long-run growth.",
+    introText: "What are Trump Accounts invested in? Every Trump Account must hold one low-cost fund that tracks the S&P 500 or a similar broad U.S. stock index. You cannot pick individual stocks, bonds, or international funds. The money simply follows the U.S. stock market.\n\nThat single-fund design keeps fees low and the strategy simple. A \"Trump investment account\" is just another name for the same account. This guide explains what the money buys, why the choices are limited, and how that shapes long-run growth.",
     sections: [
       { heading: "What are Trump Accounts invested in?", body: "Every Trump Account is invested in one low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. That is the only allowed holding. There are no other investment choices to make.\n\nThe S&P 500 is a basket of about 500 large U.S. companies. Buying an index fund means you own a slice of all of them at once. Your balance rises and falls with the broad U.S. stock market.\n\nThis is a hands-off design. You do not build a portfolio or trade inside the account. One broad index fund does the work. Learn more about [what a Trump Account is](/guides/trump-accounts/) if you are new to the program." },
       { heading: "Trump account investment restrictions: what you cannot buy", body: "Trump account investment restrictions are strict: you can only hold one broad U.S. index fund. You cannot pick individual stocks like a single tech company. You cannot add bonds, international funds, or sector bets.\n\nThe account is not self-directed. That means no day trading, no crypto, and no custom mix. Your only real choice is which qualifying S&P 500-style fund the provider offers.\n\nThese limits are the same for every child. The law, IRC 530A, requires a low-cost fund tracking a U.S.-equity index. See [the rules](/guides/trump-account-rules/) for the full contribution and eligibility details." },
@@ -1199,7 +1199,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Compare the 6 best Trump Account alternatives - 529, custodial Roth IRA, UTMA, Coverdell, HYSA, I bonds - ranked by goal, including kids born before 2025.",
     h1: "Trump Account Alternatives: 6 Better Ways to Save for a Child",
     cardBlurb: "No seed money for a kid born before 2025? Compare the six best Trump Account alternatives and see which fits your goal.",
-    intro: "The best Trump Account alternatives are a 529 plan, a custodial brokerage account, a custodial Roth IRA, a Coverdell ESA, a high-yield savings account, and I bonds. Each one fixes a limit the Trump Account can't.\n\nThe [Trump Account](/guides/trump-accounts/) only hands a $1,000 seed to U.S.-citizen kids born in 2025 through 2028. If your child was born before 2025, you get no seed at all — so the account's main draw disappears.\n\nThe Trump Account also locks the money until the year your child turns 18, taxes it as ordinary income, caps contributions at $5,000 a year, and holds only an S&P 500 index fund. Those limits are why families look elsewhere.\n\nThis guide ranks six alternatives by goal. Pick the one that matches what you want most: tax-free growth, flexibility, or safety. If you're still deciding, see whether a [Trump Account is worth it](/guides/trump-account-worth-it/) first.",
+    introText: "The best Trump Account alternatives are a 529 plan, a custodial brokerage account, a custodial Roth IRA, a Coverdell ESA, a high-yield savings account, and I bonds. Each one fixes a limit the Trump Account can't.\n\nThe [Trump Account](/guides/trump-accounts/) only hands a $1,000 seed to U.S.-citizen kids born in 2025 through 2028. If your child was born before 2025, you get no seed at all — so the account's main draw disappears.\n\nThe Trump Account also locks the money until the year your child turns 18, taxes it as ordinary income, caps contributions at $5,000 a year, and holds only an S&P 500 index fund. Those limits are why families look elsewhere.\n\nThis guide ranks six alternatives by goal. Pick the one that matches what you want most: tax-free growth, flexibility, or safety. If you're still deciding, see whether a [Trump Account is worth it](/guides/trump-account-worth-it/) first.",
     sections: [
       { heading: "Why families look past the Trump Account", body: "Families seek Trump Account alternatives because the account is rigid and, for many kids, no longer free. The $1,000 seed only applies to children born in 2025 through 2028.\n\nIf your child was born before 2025, you can still open a Trump Account — but you get zero seed money. At that point it competes with every other account on its own merits, and it usually loses.\n\nThe other drawbacks apply to everyone. The money is tax-deferred, not tax-free, so withdrawals after age 18 are taxed as ordinary income like a traditional IRA. It stays locked until the year your child turns 18.\n\nContributions are capped at $5,000 a year, and you can only buy a U.S.-equity index fund. Check the [Trump Account eligibility rules](/guides/trump-account-eligibility/) if you're unsure whether your child qualifies for the seed.\n\nThe alternatives below beat the Trump Account on at least one of these fronts: taxes, flexibility, liquidity, or safety." },
       { heading: "1. 529 plan — best for college", body: "A 529 plan is the best Trump Account alternative if you're saving for education. Growth and withdrawals are completely tax-free when used for qualified education costs.\n\nThat tax-free treatment beats the Trump Account's ordinary-income tax. You contribute after-tax dollars, the money grows tax-free, and qualified withdrawals are never taxed.\n\n- Best for: parents focused on college or K–12 tuition.\n- Watch out for: non-education withdrawals face income tax plus a 10% penalty on earnings.\n\nLeftover money is no longer trapped. Under SECURE 2.0, you can roll up to $35,000 of unused 529 funds into the beneficiary's Roth IRA, subject to a 15-year account-age rule.\n\nSee the [full comparison of a Trump Account vs a 529](/compare/trump-account-vs-529/) and the list of [529 qualified expenses](/guides/529-qualified-expenses/) before you open one." },
@@ -1239,7 +1239,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Have 529 leftover money? You can change the beneficiary, roll up to $35,000 to a Roth IRA, use it for grad school, or withdraw it. Here are all 5 options.",
     h1: "What Happens to Leftover 529 Money: Your 5 Options",
     cardBlurb: "Five ways to use unused 529 funds without wasting them — including the new $35,000 Roth IRA rollover.",
-    intro: "Leftover 529 money is rarely lost — you can change the beneficiary, roll up to $35,000 into a Roth IRA, spend it on more school, or take it out and pay tax plus a 10% penalty on the earnings only. A 529 plan does not expire, and the funds stay yours until you decide. The scariest-sounding path, a non-qualified withdrawal, penalizes only the growth, never your original contributions. And thanks to a 2024 rule, over-saving is far less risky than it once was. Here is how each option works, and how to pick.",
+    introText: "Leftover 529 money is rarely lost — you can change the beneficiary, roll up to $35,000 into a Roth IRA, spend it on more school, or take it out and pay tax plus a 10% penalty on the earnings only. A 529 plan does not expire, and the funds stay yours until you decide. The scariest-sounding path, a non-qualified withdrawal, penalizes only the growth, never your original contributions. And thanks to a 2024 rule, over-saving is far less risky than it once was. Here is how each option works, and how to pick.",
     sections: [
       {
         heading: "Option 1: Change the beneficiary",
@@ -1307,7 +1307,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "529 qualified expenses: tuition, fees, books, room & board, computers, K-12 tuition up to $20,000/yr, apprenticeships, and up to $10,000 in student loans.",
     h1: "529 Qualified Expenses: What a 529 Plan Can Pay For Tax-Free",
     cardBlurb: "A plain-English list of what a 529 can and cannot cover tax-free — plus the room & board rule most families miss.",
-    intro: "529 qualified expenses are the education costs you can pay from a 529 plan with no federal tax on the earnings. These include college tuition, fees, books, required supplies, room & board (if the student is enrolled at least half-time), and computers or internet used for school. A 529 can also cover K-12 tuition up to $20,000 per year in 2026, registered apprenticeship costs, and up to $10,000 lifetime toward student loans. Spend on anything else and the earnings portion gets hit with income tax plus a 10% penalty. This guide shows exactly what counts, what does not, and the one room & board rule most families miss.",
+    introText: "529 qualified expenses are the education costs you can pay from a 529 plan with no federal tax on the earnings. These include college tuition, fees, books, required supplies, room & board (if the student is enrolled at least half-time), and computers or internet used for school. A 529 can also cover K-12 tuition up to $20,000 per year in 2026, registered apprenticeship costs, and up to $10,000 lifetime toward student loans. Spend on anything else and the earnings portion gets hit with income tax plus a 10% penalty. This guide shows exactly what counts, what does not, and the one room & board rule most families miss.",
     sections: [
       {
         heading: "The core list: what a 529 pays for tax-free",
@@ -1372,7 +1372,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and layer them.",
     h1: "The Best Investment Account for Kids: How to Choose (and Layer) Them",
     cardBlurb: "A decision framework across every kid account type — Trump Account, 529, custodial brokerage, custodial Roth IRA — with a clear which-to-pick matrix.",
-    intro: "The best investment account for kids is usually not one account — it is a layered stack: the free $1,000 Trump Account seed everyone eligible should claim, a 529 for college, and a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so picking only one leaves money on the table. This guide compares all six main kid account types side by side, then gives you a plain decision rule for which to open first. The non-obvious takeaway: most families should stack accounts, not choose between them.",
+    introText: "The best investment account for kids is usually not one account — it is a layered stack: the free $1,000 Trump Account seed everyone eligible should claim, a 529 for college, and a custodial Roth IRA once a teen has a job. Each account wins at a different goal, so picking only one leaves money on the table. This guide compares all six main kid account types side by side, then gives you a plain decision rule for which to open first. The non-obvious takeaway: most families should stack accounts, not choose between them.",
     sections: [
       {
         heading: "The six kid account types, at a glance",
@@ -1447,7 +1447,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "How custodial account taxes work and how the kiddie tax hits a child's unearned income in 2025 — brackets, filing rules, and planning tips.",
     h1: "Custodial Account Taxes and the Kiddie Tax Explained",
     cardBlurb: "Who pays tax on a custodial account, the 2025 kiddie-tax brackets, and how to keep a child's investment income under the threshold.",
-    intro: "Custodial account taxes fall on the child, not the parent, because the assets legally belong to the minor — but the kiddie tax can push some of that income up to the parents' marginal rate. A custodial account (UTMA or UGMA) is taxed each year on its investment income, and the kiddie tax sets how much is tax-free, how much is taxed at the child's low rate, and how much is taxed at the parents' higher rate. In 2025 the first $1,350 of unearned income is tax-free and the next $1,350 is taxed at the child's rate. Everything above $2,700 is taxed at the parents' marginal rate. This guide explains who files, the brackets, earned vs unearned income, and how to keep the bill small.",
+    introText: "Custodial account taxes fall on the child, not the parent, because the assets legally belong to the minor — but the kiddie tax can push some of that income up to the parents' marginal rate. A custodial account (UTMA or UGMA) is taxed each year on its investment income, and the kiddie tax sets how much is tax-free, how much is taxed at the child's low rate, and how much is taxed at the parents' higher rate. In 2025 the first $1,350 of unearned income is tax-free and the next $1,350 is taxed at the child's rate. Everything above $2,700 is taxed at the parents' marginal rate. This guide explains who files, the brackets, earned vs unearned income, and how to keep the bill small.",
     sections: [
       {
         heading: "Who pays tax on a custodial account?",
@@ -1520,7 +1520,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "A custodial Roth IRA lets a working child grow money tax-free. Learn the earned-income rule, 2025 limits, and how to open one.",
     h1: "Custodial Roth IRA for Kids: How It Works",
     cardBlurb: "A tax-free retirement account for kids who earn income — plus the one rule that decides whether they qualify.",
-    intro: "A custodial Roth IRA for kids is a retirement account an adult opens and manages for a minor who has earned income. The child owns the account; the adult controls it until the child reaches the age of majority. Money grows tax-free, and qualified withdrawals in retirement are tax-free too. But there is one hard gate: the child must have earned income to contribute. No earned income means no funding — full stop.",
+    introText: "A custodial Roth IRA for kids is a retirement account an adult opens and manages for a minor who has earned income. The child owns the account; the adult controls it until the child reaches the age of majority. Money grows tax-free, and qualified withdrawals in retirement are tax-free too. But there is one hard gate: the child must have earned income to contribute. No earned income means no funding — full stop.",
     sections: [
       {
         heading: "What a custodial Roth IRA is",
@@ -1587,7 +1587,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "How to open a custodial brokerage account for kids: what a UTMA/UGMA is, what you need, choosing a broker, funding, and the kiddie tax explained.",
     h1: "How to Open a Custodial Brokerage Account for Kids",
     cardBlurb: "A step-by-step guide to opening, funding, and managing a UTMA/UGMA custodial brokerage account for your child.",
-    intro: "To open a custodial brokerage account for kids, an adult opens a UTMA or UGMA account in the child's name at a broker, provides the child's Social Security number and their own ID, and funds it. The account is legally the child's, but you manage the investments as custodian. Most major brokers let you open one online in about 15 minutes with no minimum and no account fees. The catch worth knowing up front: your child takes full control at the age of majority, and you cannot take the money back. This guide walks through each step, from what you need to the [kiddie tax](/guides/custodial-account-taxes-kiddie-tax/) at the end.",
+    introText: "To open a custodial brokerage account for kids, an adult opens a UTMA or UGMA account in the child's name at a broker, provides the child's Social Security number and their own ID, and funds it. The account is legally the child's, but you manage the investments as custodian. Most major brokers let you open one online in about 15 minutes with no minimum and no account fees. The catch worth knowing up front: your child takes full control at the age of majority, and you cannot take the money back. This guide walks through each step, from what you need to the [kiddie tax](/guides/custodial-account-taxes-kiddie-tax/) at the end.",
     sections: [
       {
         heading: "What a custodial (UTMA/UGMA) brokerage account is",
@@ -1660,7 +1660,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "A UTMA account lets an adult invest for a child until they come of age. See how custodial accounts work, the real pros and cons, and who they fit.",
     h1: "UTMA Custodial Account Explained: How It Works, Pros & Cons",
     cardBlurb: "A plain-English guide to UTMA custodial accounts — how they work, the tradeoffs, and who they suit.",
-    intro: "A UTMA account is a custodial investment account an adult opens and manages for a child until the child legally owns it at the age of majority. UTMA stands for the Uniform Transfers to Minors Act. There is no contribution cap and you can invest in almost anything. But the money is the child's for good, and they take full control between 18 and 21 in most states. This guide covers how it works, the honest pros and cons, and who a custodial account fits.",
+    introText: "A UTMA account is a custodial investment account an adult opens and manages for a child until the child legally owns it at the age of majority. UTMA stands for the Uniform Transfers to Minors Act. There is no contribution cap and you can invest in almost anything. But the money is the child's for good, and they take full control between 18 and 21 in most states. This guide covers how it works, the honest pros and cons, and who a custodial account fits.",
     sections: [
       {
         heading: "What a UTMA custodial account is",
@@ -1733,7 +1733,7 @@ export const GUIDES: Guide[] = [
       "The Trump gold coin is a real 2026 US Mint $1 coin, but it's gold-colored base metal, not solid gold. See what it's worth, when it's out, and where to buy it.",
     h1: "Trump Gold Coin: Is It Real, and What Is It Worth?",
     cardBlurb: "The new $1 US Mint coin featuring Trump — is it real gold, what it costs, when it drops, and how to avoid the fakes.",
-    intro:
+    introText:
       "The Trump gold coin is real: on July 15, 2026, Treasury Secretary Scott Bessent announced the [U.S. Mint](https://www.usmint.gov/) will strike a new $1 coin featuring President Trump for America's 250th anniversary. But \"gold\" describes its color, not its metal. The coin has a gold-like finish over a non-precious base metal, and its face value is one dollar. This guide explains what the coin actually is, what it is worth, when and where you can buy it, and how to avoid the novelty knockoffs already flooding the market.",
     sections: [
       { heading: "Is the Trump gold coin real?", body: "Yes, the Trump gold coin is a real U.S. Mint product, not a hoax. Treasury Secretary Scott Bessent unveiled the design on July 15, 2026, and reporting from [CBS News](https://www.cbsnews.com/news/1-gold-coin-trump-face-us-mint/) and [The Hill](https://thehill.com/homenews/administration/5969240-scott-bessent-donald-trump-america-250-gold-coin/) confirms production has already begun in Philadelphia.\n\nThe coin marks the country's 250th birthday, the semiquincentennial. Its front shows Trump beneath the word \"LIBERTY,\" with the dual date \"1776-2026\" and \"IN GOD WE TRUST.\" The back carries the presidential seal, the number \"250,\" and \"ONE DOLLAR.\" An earlier draft that showed Trump on both sides with the words \"FIGHT FIGHT FIGHT\" was dropped.\n\nSo the announcement is genuine. Whether the coin should exist at all is a separate, contested question covered below." },
@@ -1775,7 +1775,7 @@ export const GUIDES: Guide[] = [
       "A plain-English guide to America's 250th anniversary coins: the 2026 semiquincentennial quarters, dime, half dollar, and $1 coin, and how to buy real ones.",
     h1: "250th Anniversary Coins: America's 2026 Semiquincentennial Coin Guide",
     cardBlurb: "Every coin the U.S. Mint is releasing for America's 250th birthday — and how to tell the official ones from novelties.",
-    intro:
+    introText:
       "The 250th anniversary coins are the special U.S. coins struck in 2026 to mark 250 years of American independence, known as the semiquincentennial. The [U.S. Mint](https://www.usmint.gov/) is redesigning circulating coins, including five new quarters, a new dime, and a Statue of Liberty half dollar, all dual-dated \"1776-2026.\" This guide explains which coins are being released, where they come from, and how to make sure any coin you buy is genuine.",
     sections: [
       { heading: "What are the 250th anniversary coins?", body: "The 250th anniversary coins are U.S. coins issued in 2026 to celebrate the country's semiquincentennial, its 250th birthday. Congress authorized them through the [Circulating Collectible Coin Redesign Act of 2020](https://www.congress.gov/bill/116th-congress/house-bill/1923), which lets the Treasury put special anniversary designs on circulating coins during 2026.\n\nThese are official coins from the [United States Mint](https://www.usmint.gov/), not private collectibles. Most carry a dual date of \"1776-2026\" so you can spot the anniversary year at a glance. You can see the full lineup on the Mint's [semiquincentennial coin page](https://www.usmint.gov/coins/coin-programs/semiquincentennial/)." },
@@ -1811,7 +1811,7 @@ export const GUIDES: Guide[] = [
       "Coast FIRE means your savings can grow into a full retirement number without more contributions. See how the math works and how to know if you're there.",
     h1: "Coast FIRE: What It Is and How to Tell When You've Reached It",
     cardBlurb: "The retirement milestone where your existing savings can grow into your full number on their own — no more contributions required.",
-    intro:
+    introText:
       "Coast FIRE is the point where your current retirement savings, left untouched, will grow into a full retirement nest egg by the time you plan to retire. Once you hit it, you can stop adding new money to retirement and instead put your income toward other goals, because compound growth alone will finish the job. This guide explains how the math works, why the idea has caught on, and the real trade-offs people skip before declaring themselves \"coasted.\"",
     sections: [
       { heading: "What Coast FIRE actually means", body: "Coast FIRE means you have already saved enough that, without a single additional contribution, compound growth alone will carry your retirement savings to your full number by your target retirement age. It sits between two more familiar ideas: regular retirement saving, where you keep contributing every paycheck until you retire, and full FIRE (Financial Independence, Retire Early), where you already have enough to live off withdrawals today.\n\nReaching Coast FIRE does not mean you stop working. Most people who hit it keep their job or income, but they no longer need to save for retirement specifically — that money is now free for a mortgage payoff, a career change, part-time work, or simply more spending today. Use our [Coast FIRE calculator](/coast-fire/) to see your own number: it works backward from your desired retirement spending to tell you exactly what you need invested today to coast." },
@@ -1849,7 +1849,7 @@ export const GUIDES: Guide[] = [
       "A credit card cash advance skips the grace period and charges a higher APR plus an upfront fee. See what it really costs and cheaper ways to get cash fast.",
     h1: "Credit Card Cash Advance: Why It Costs More Than You Think",
     cardBlurb: "Cash advance fees, interest, and credit-score effects — plus cheaper ways to get cash fast.",
-    intro:
+    introText:
       "A credit card cash advance lets you withdraw cash against your card's credit limit, but it comes with an upfront fee, a higher interest rate than purchases, and no grace period — interest starts the moment the cash leaves the ATM. This guide breaks down the real cost, a common trap that catches people who don't realize they took one, and cheaper alternatives for getting cash fast.",
     sections: [
       { heading: "What actually counts as a cash advance", body: "A cash advance is any transaction your credit card issuer treats as cash rather than a purchase, and it includes more than ATM withdrawals. The category also covers cash-equivalent transactions: buying money orders, wiring money, purchasing casino chips or lottery tickets, and using convenience checks your issuer mails you.\n\nThe one most people miss: funding a peer-to-payment app like [Venmo](https://venmo.com/), [Cash App](https://cash.app/), or [PayPal](https://www.paypal.com/) with a credit card, then sending that money to yourself or someone else, is often coded by the issuer as a cash advance rather than a purchase — even though it doesn't feel like withdrawing cash. Check your card's terms for how it classifies these transfers before relying on your credit card to fund one, since the fee and interest hit the same way an ATM withdrawal would." },
@@ -1883,7 +1883,7 @@ export const GUIDES: Guide[] = [
       "Zero fraud liability, free credit scores, metal cards — many credit card perks are now standard. See which ones matter and which are just marketing.",
     h1: "Credit Card Perks: Which Ones Are Actually Worth Paying For?",
     cardBlurb: "Most \"premium\" credit card perks are now standard across nearly every card — here's how to tell real value from marketing.",
-    intro:
+    introText:
       "Many credit card perks marketed as premium benefits — zero fraud liability, a free credit score, contactless pay, a metal card — are now standard across nearly every major card, not a special reason to choose one card over another or pay an annual fee. This guide breaks down which perks are genuinely valuable, which are baseline features every issuer now offers, and how to actually calculate whether an annual-fee card pays for itself.",
     sections: [
       { heading: "Some \"perks\" are network rules, not card benefits", body: "Zero fraud liability for unauthorized charges is not a special benefit any single card offers — it's a baseline protection required by the major card networks ([Visa](https://www.visa.com/), [Mastercard](https://www.mastercard.com/), [American Express](https://www.americanexpress.com/), and [Discover](https://www.discover.com/)) on essentially every consumer credit card. The same is largely true of contactless tap-to-pay, which became a standard feature across nearly all new cards once issuers rolled out chip-and-contactless technology under the [EMV](https://www.emvco.com/) standard industry-wide.\n\nWhen a card's marketing highlights these as reasons to choose it, treat that as a sign the card may not have a genuinely differentiated benefit worth an annual fee — you likely already have the same protection on the free card in your wallet." },
@@ -1915,7 +1915,7 @@ export const GUIDES: Guide[] = [
       "0% intro APR cards generally need good-to-excellent credit, but income matters too. See the score range to expect and the deferred-interest trap to avoid.",
     h1: "What Credit Score Do You Need for a 0% APR Credit Card?",
     cardBlurb: "Score ranges, what issuers actually check beyond your score, and the deferred-interest trap that isn't the same as true 0% APR.",
-    intro:
+    introText:
       "A 0% intro APR credit card typically requires good to excellent credit — commonly a [FICO Score](https://www.myfico.com/credit-education/credit-scores) around 690 or higher — though your income, existing credit utilization, and recent credit inquiries matter almost as much as the score itself. This guide covers what issuers actually evaluate, realistic approval odds by score range, and a costly trap — deferred interest — that isn't the same thing as a true 0% intro APR offer.",
     sections: [
       { heading: "What \"0% intro APR\" actually means", body: "A 0% intro APR offer charges no interest on purchases, balance transfers, or both, for a set introductory period — commonly 12 to 21 months — after which the rate jumps to the card's standard variable APR on any remaining balance. Balance transfer offers almost always carry a separate transfer fee, typically 3% to 5% of the amount moved, charged upfront even though the interest itself is 0%.\n\nOnce the intro period ends, interest applies going forward on your remaining balance at the standard rate — it does not retroactively charge you for the intro period, as long as the card is a true 0% intro APR offer and not a deferred-interest offer." },
@@ -1948,7 +1948,7 @@ export const GUIDES: Guide[] = [
       "401(k) beneficiary rules: the SECURE Act 10-year rule for non-spouse heirs, the spousal rollover option, and how taxes work on an inherited 401(k).",
     h1: "What Happens to a 401(k) When You Die: Beneficiary Rules and Taxes",
     cardBlurb: "Who inherits your 401(k), the SECURE Act's 10-year rule, and how taxes work for the beneficiary.",
-    intro:
+    introText:
       "When you die with money in a 401(k), the account passes directly to whoever you named as beneficiary — bypassing your will entirely — and how quickly they must withdraw it, and how much tax they owe, depends on their relationship to you. This guide covers the spousal rollover option, the 10-year rule most other beneficiaries face, and the taxes and deadlines a beneficiary needs to know. Already received the funds and wondering what to do next? See our [what to do with an inheritance](/guides/what-to-do-with-an-inheritance/) guide for the full decision order.",
     sections: [
       { heading: "Your 401(k) passes by beneficiary designation, not your will", body: "A 401(k) account transfers to whoever you named on your beneficiary designation form, regardless of what your will says — this is one of the most common estate-planning mistakes, since people update their will but forget the separate form on file with their plan administrator. If no beneficiary is on file, the account typically passes according to the plan's default order, often the estate itself, which can trigger a slower, more expensive probate process and worse tax outcomes.\n\nReview your beneficiary designations any time your life changes — marriage, divorce, a new child, or a beneficiary's death — since the form on file controls, not your will or any verbal wishes. See our [estate planning calculator](/estate-planning/) for how beneficiary designations fit into your broader plan." },
@@ -1992,7 +1992,7 @@ export const GUIDES: Guide[] = [
       "Compare age-based (glide path) and static 529 investment options, see example allocations by age, and learn the rule that limits how often you can switch.",
     h1: "529 Investment Strategy by Age: Age-Based vs. Static Portfolios",
     cardBlurb: "How age-based glide-path portfolios work, when a static option makes more sense, and the twice-a-year rule on switching.",
-    intro:
+    introText:
       "Most 529 college savings plans offer two ways to invest: an age-based portfolio that automatically shifts from stocks to bonds as your child nears college, or a static portfolio with a fixed allocation you manage yourself — and the right choice depends mostly on how hands-on you want to be and how many years remain until enrollment. This guide compares both, shows example age-based allocations, and covers a federal rule that limits how often you can change your investment choice.",
     sections: [
       { heading: "What a 529 plan actually is, briefly", body: "A 529 plan is a state-sponsored, tax-advantaged account for education savings: contributions grow tax-free, and withdrawals are tax-free when used for qualified education expenses like tuition, fees, and room and board. Every state offers at least one 529 plan, and you're not required to use your own state's plan, though some states offer a state income tax deduction only for contributions to their own plan. Use our [529 savings calculator](/529-savings-calculator/) to project your own balance and funding gap." },
@@ -2027,7 +2027,7 @@ export const GUIDES: Guide[] = [
       "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs.",
     h1: "Real Estate Investment Options: 5 Ways to Invest in Real Estate Without Just Being a Landlord",
     cardBlurb: "Landlording, short-term rentals, flipping, REITs, and crowdfunding — the tax and liquidity tradeoffs of each.",
-    intro:
+    introText:
       "Real estate investment options go far beyond buying a rental house and finding tenants. Being a landlord is one path, but short-term rentals, house flipping, REITs, and real estate crowdfunding all let you invest in property with very different amounts of cash, time, and risk. This guide compares all five, including the tax rules and liquidity tradeoffs most overviews skip, so you can pick the option that actually fits your money and your schedule.",
     sections: [
       { heading: "Option 1: Being a landlord", body: "Being a landlord means buying a property and renting it out for monthly income, the most hands-on option on this list. You collect rent, pay the mortgage, taxes, and insurance, and keep what's left as cash flow, while tenants slowly pay down your loan and build your equity. The [IRS](https://www.irs.gov/publications/p527) also lets you depreciate the building over 27.5 years, which can shelter real rental income from tax on paper.\n\nThe tradeoff is real, ongoing work: tenant screening, repairs, vacancies, and the occasional late-night maintenance call, unless you pay a property manager 8% to 12% of rent to handle it. Landlording rewards people who run the numbers before they buy, not just people who like the idea of owning property.\n\nModernWallet already covers this option in depth. Run your own numbers with our [rental cash flow calculator](/real-estate/cash-flow-calculator/) and [cap rate calculator](/real-estate/cap-rate-calculator/) before you make an offer — a property with negative cash flow is a bet on appreciation, not an investment that pays you today." },
@@ -2066,7 +2066,7 @@ export const GUIDES: Guide[] = [
       "What is an IPO? Learn how a company goes public, why it isn't always a win, and the lockup, allocation, and hype risks retail IPO investors face.",
     h1: "What Is an IPO? How Going Public Works and What It Means for Investors",
     cardBlurb: "Private vs public, the IPO process, why going public can backfire, and the lockup and allocation risks retail investors face.",
-    intro:
+    introText:
       "An IPO, or initial public offering, is the first time a private company sells shares to the public and lists on a stock exchange. Going public raises cash and creates a tradable stock, but it also adds cost, disclosure, and outside pressure a private company never faces. This guide covers how a company actually goes public, the real benefits and downsides of doing it, and the parts most overviews skip: lockup expirations, why retail investors rarely get first-day access, and how to avoid chasing IPO hype.",
     sections: [
       { heading: "Private companies vs public companies", body: "A private company is owned by a small group — founders, employees, and private investors — and has no obligation to disclose its finances to the public. A public company sells shares on a stock exchange that anyone can buy, and in exchange it must regularly file detailed financial reports with the [SEC](https://www.sec.gov/), including quarterly and annual reports.\n\nGoing from private to public changes more than who owns the stock. It exposes the company's financials, strategy, and executive pay to competitors, analysts, and short sellers, all watching every quarterly report. Some founders treat that scrutiny as the price of access to public capital; others see it as a reason to stay private as long as they can." },
@@ -2102,7 +2102,7 @@ export const GUIDES: Guide[] = [
       "What to do with an inheritance: a 7-step order of operations covering debt, emergency savings, investing, real estate, taxes, and hiring an advisor.",
     h1: "What to Do With an Inheritance: A Step-by-Step Plan for Windfall Money",
     cardBlurb: "A step-by-step order of operations for inherited money — debt, savings, investing, real estate, taxes, and when to get help.",
-    intro:
+    introText:
       "Receiving an inheritance is one of the few times in life a large sum of money lands all at once, and that suddenness is exactly why so many people mishandle it. This isn't a tax-rules explainer — we already cover [inherited 401(k) rules](/guides/401k-beneficiary-rules/) in detail elsewhere — it's a decision framework: the order in which to make each move, so a windfall builds lasting security instead of disappearing within a few years.",
     sections: [
       { heading: "Step 1: Pause before you spend or invest anything", body: "The single best first move with any inheritance is to do nothing major for 30 to 90 days. Park the money in a [high-yield savings account](/investing/high-yield-savings-calculator/) or money market account while you grieve, gather paperwork, and think clearly, since decisions made in the first weeks after a loss are the ones people regret most.\n\nUse this window to confirm how the money actually arrived — a lump sum from an estate, a beneficiary designation on a retirement account, or a piece of real estate — since the account type materially changes what you're allowed to do with it, and by when." },
@@ -2144,7 +2144,7 @@ export const GUIDES: Guide[] = [
       "Concentrated stock position risk explained: the rule of thumb for how much is too much, the RSU/ESPP failure mode, and 5 ways to reduce your exposure.",
     h1: "Concentrated Stock Position Risk: How to Tell If You Have Too Much in One Stock",
     cardBlurb: "How much company stock is too much, the RSU/ESPP failure mode, and ways to reduce a concentrated position without a tax disaster.",
-    intro:
+    introText:
       "A concentrated stock position is when a large share of your net worth sits in a single company's stock, and it's one of the most common — and most avoidable — ways investors take on risk they didn't intend. This guide covers how to tell if your position is actually concentrated, why the risk is worse than it looks for employees paid partly in company stock, and the specific strategies people use to reduce it without triggering an unnecessary tax bill.",
     sections: [
       { heading: "How much company stock counts as 'concentrated'?", body: "There's no single legal definition of a concentrated stock position, but many financial advisors flag anything above 10% to 15% of your net worth in a single stock as a level worth actively managing. Above that threshold, one company's bad quarter, lawsuit, or scandal can meaningfully dent your entire financial picture, not just one line on a statement.\n\nThe threshold should tighten, not loosen, if the stock is also your employer's, since your paycheck is already tied to that same company's fortunes. Check your own number first: add up every account that holds the stock — brokerage, 401(k), and any unvested awards — and divide by your total [net worth](/net-worth/) to see where you actually stand." },
@@ -2184,7 +2184,7 @@ export const GUIDES: Guide[] = [
       "See the personal loan rate range excellent credit (720+) typically qualifies for, what lenders check beyond your score, and the risks worth knowing.",
     h1: "Personal Loans for Excellent Credit: What Rate Can You Actually Get?",
     cardBlurb: "Realistic rate ranges for 720+ scores, why a high score doesn't guarantee the best offer, and the fine print worth reading first.",
-    intro:
+    introText:
       "Excellent credit — generally a [FICO Score](https://www.myfico.com/credit-education/credit-scores) of 720 or higher — puts you in line for a personal loan's lowest advertised rates, but it does not guarantee them. Lenders also weigh your income, your existing debt, and your debt-to-income ratio before quoting a final number. This guide covers the realistic rate range excellent credit unlocks, the requirements lenders check beyond your score, and the risks that catch even strong-credit borrowers off guard.",
     sections: [
       {
@@ -2239,7 +2239,7 @@ export const GUIDES: Guide[] = [
       "What credit score and income you realistically need to get approved for a balance transfer credit card — plus what to do if you're denied.",
     h1: "Balance Transfer Credit Card Approval Odds: What It Really Takes",
     cardBlurb: "The score and income issuers actually look for, why a good score alone isn't enough, and your next move if you're declined.",
-    intro:
+    introText:
       "Approval for a balance transfer credit card depends on more than your credit score — issuers weigh your income, your existing utilization, and how much room they're willing to give a card that's about to absorb someone else's debt. This guide covers realistic approval odds by credit tier, what issuers check beyond the score, and what to do next if you're declined. Once you have a realistic sense of your odds, see [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) to pick between a dedicated 0% card and a rewards card with a transfer offer.",
     sections: [
       {
@@ -2289,7 +2289,7 @@ export const GUIDES: Guide[] = [
       "How to pick between a dedicated 0% balance transfer card and a rewards card with a transfer offer — based on your score, timeline, and payoff plan.",
     h1: "How to Choose a Balance Transfer Credit Card",
     cardBlurb: "Dedicated 0% card vs a rewards card with a transfer offer — the four questions that actually decide it.",
-    intro:
+    introText:
       "The right balance transfer credit card depends less on which offer looks flashiest and more on four specific answers: your credit score, how much you're moving, how long you genuinely need to pay it off, and whether you want anything beyond debt payoff from the card. This guide walks through the decision so you pick a card that matches your actual payoff timeline, not just its advertised intro period. Not sure you'll qualify yet? Check [balance transfer approval odds by credit score](/guides/balance-transfer-credit-card-approval-odds/) first.",
     sections: [
       {
@@ -2343,7 +2343,7 @@ export const GUIDES: Guide[] = [
       "The federal Standard Repayment Plan changed in 2026. See how the new Tiered Standard Plan differs from the legacy 10-year plan and which one applies to you.",
     h1: "Student Loan Standard Repayment Plan: What Changed in 2026",
     cardBlurb: "Legacy 10-year Standard Plan vs the new balance-based Tiered Standard Plan — and which one your loans actually fall under.",
-    intro:
+    introText:
       "Federal student loan repayment changed for new borrowers starting July 1, 2026, when the [One Big Beautiful Bill Act](https://www.congress.gov/bill/119th-congress/house-bill/1) replaced the old menu of repayment plans with two options: a new Tiered Standard Repayment Plan and a new income-driven plan called the Repayment Assistance Plan (RAP). This guide explains how the legacy Standard Repayment Plan worked, what's different about the new Tiered Standard Plan, and which one applies to your loans.",
     sections: [
       {
@@ -2400,7 +2400,7 @@ export const GUIDES: Guide[] = [
       "Side hustle ideas grouped by real hourly pay and startup effort — plus the tax rules (1099s, self-employment tax) most guides leave out.",
     h1: "Side Hustle Ideas: What Actually Pays, and What It Really Costs You in Time",
     cardBlurb: "Side hustles grouped by how fast you get paid and what they really net after expenses — plus the tax rules most lists skip.",
-    intro:
+    introText:
       "The right side hustle depends less on a long list of ideas and more on one honest trade-off: how fast you need cash versus how much of your own time and money you're willing to put in first. This guide groups realistic side hustles by that trade-off — quick cash for your time, selling what you already own, selling a skill, and building an asset that pays later — and covers the tax rules on side income that most lists skip entirely.",
     sections: [
       {
@@ -2459,7 +2459,7 @@ export const GUIDES: Guide[] = [
       "How the Chase Travel portal values your Ultimate Rewards points, which cards unlock Points Boost, and when transferring to a partner beats the portal.",
     h1: "Chase Travel Portal: How It Works and When to Use It",
     cardBlurb: "Baseline point value, which cards unlock Points Boost, and when transferring to an airline or hotel partner beats booking through the portal.",
-    intro:
+    introText:
       "The [Chase Travel](https://www.chase.com/personal/credit-cards/education/basics/how-to-use-chase-ultimate-rewards-travel-portal) portal lets Ultimate Rewards cardholders book flights and hotels directly with points, at a baseline value of 1 cent per point for every eligible card, with select bookings tagged Points Boost worth more. This guide covers how the portal prices your points, which cards unlock the higher Points Boost value, and when transferring points to an airline or hotel partner instead of booking through the portal gets you more for the same points.",
     sections: [
       {
@@ -2509,7 +2509,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your coverage.",
   h1: "How Much Life Insurance Do I Need?",
   cardBlurb: "A needs-based way to size your coverage, from the 10 to 12 times income rule to the DIME method.",
-  intro: "How much life insurance you need is usually 10 to 12 times your yearly income. That simple multiple is a fast starting point for most families.\n\nYour real need is the money your family would lose if your paycheck stopped. A needs-based method adds up those exact costs, so you buy enough without overpaying.\n\nThis guide covers two ways to size your coverage. It explains why term insurance usually beats whole life for pure protection, and why your need shrinks as you age.",
+  introText: "How much life insurance you need is usually 10 to 12 times your yearly income. That simple multiple is a fast starting point for most families.\n\nYour real need is the money your family would lose if your paycheck stopped. A needs-based method adds up those exact costs, so you buy enough without overpaying.\n\nThis guide covers two ways to size your coverage. It explains why term insurance usually beats whole life for pure protection, and why your need shrinks as you age.",
   sections: [
     {
       heading: "The 10 to 12 Times Income Rule",
@@ -2581,7 +2581,7 @@ export const GUIDES: Guide[] = [
       "How much emergency fund do you need? A common rule is 3 to 6 months of essential expenses -- not income. See a worked example and where to keep it.",
     h1: "How Much Emergency Fund Do I Need?",
     cardBlurb: "How much to save in an emergency fund -- sized on essential expenses, not income -- plus where to keep it and how to build it.",
-    intro:
+    introText:
       "How much emergency fund you need is 3 to 6 months of your essential monthly expenses, not your total income. Sizing the fund on needs alone, rather than your full paycheck, often cuts the target in half. This guide shows you how to set the number and when to hold more or less. You will also see where to keep the cash and how to build it.",
     sections: [
       { heading: "Size it on essential expenses, not income", body: "Your emergency fund should cover essential monthly expenses, not your whole income. Essentials are the bills you cannot skip: rent or mortgage, utilities, groceries, insurance, transportation, and minimum debt payments.\n\nLeave out the extras. Dining out, travel, subscriptions, and shopping are wants, not needs. In a real emergency, you pause those costs, so your fund does not have to replace them.\n\nThis is the point most people miss. Sizing a fund on gross income can nearly double the target for no reason. Add up your true essentials first -- our [budget tools](/budget/) make that quick -- then multiply by the number of months you want to cover." },
@@ -2622,7 +2622,7 @@ export const GUIDES: Guide[] = [
   h1: "How Long Will It Take to Pay Off My Credit Card?",
   cardBlurb:
     "See how balance, APR, and payment set your payoff date -- and why a small fixed payment beats the minimum by years.",
-  intro:
+  introText:
     "How long it takes to pay off a credit card depends on three things: your balance, your APR, and your monthly payment. This guide shows the exact math with a clear example. The big lesson is simple. Paying only the minimum can trap you in debt for a decade or more. A small, steady payment above the minimum can clear the same card in a few years. Run your own numbers with the free tools below.",
   sections: [
     {
@@ -2705,7 +2705,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "How much tax will you pay? Learn how tax brackets stack, why your marginal rate isn't your effective rate, and how FICA adds on top -- worked example.",
   h1: "How Much Tax Will I Pay? Estimating Your Federal Income Tax",
   cardBlurb: "See why your top tax bracket is not the rate you actually pay -- and estimate your 2026 federal income tax with a clear worked example.",
-  intro: "How much tax you will pay depends on your taxable income, your filing status, and the fact that only your last dollars hit your top rate.\n\nThe United States uses a progressive system. Your income is split into bands called brackets, and each band is taxed at its own rate.\n\nSo your top bracket, called your marginal rate, is not the rate you pay on your whole income. Your real rate, called the effective rate, is almost always lower.\n\nThis guide shows you how to estimate your 2026 federal income tax by hand, plus the Social Security and Medicare taxes that come out on top.",
+  introText: "How much tax you will pay depends on your taxable income, your filing status, and the fact that only your last dollars hit your top rate.\n\nThe United States uses a progressive system. Your income is split into bands called brackets, and each band is taxed at its own rate.\n\nSo your top bracket, called your marginal rate, is not the rate you pay on your whole income. Your real rate, called the effective rate, is almost always lower.\n\nThis guide shows you how to estimate your 2026 federal income tax by hand, plus the Social Security and Medicare taxes that come out on top.",
   sections: [
     {
       heading: "Start with taxable income, not your salary",
@@ -2780,7 +2780,7 @@ export const GUIDES: Guide[] = [
     "Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.",
   h1: "Should You Pay Off Debt or Invest? A Simple Decision Framework",
   cardBlurb: "Compare your debt's interest rate to your expected return, then follow the order: match, emergency fund, high-rate debt, invest.",
-  intro:
+  introText:
     "Whether to pay off debt or invest comes down to one simple comparison. You weigh your debt's interest rate against the return you can expect from investing. Paying off a debt earns a guaranteed, risk-free return equal to its interest rate. Investing might beat that, but the return is never promised. This guide gives you the priority order most planners agree on. Each step links to a free ModernWallet calculator so you can run your own numbers.",
   sections: [
     { heading: "Paying off debt is a guaranteed return", body: "Paying off debt gives you a guaranteed, risk-free return equal to the loan's interest rate. Wipe out a card charging 21%, and you effectively earn 21% -- with zero risk. No investment can promise that.\n\nThe U.S. stock market has historically returned roughly 10% a year before inflation. But that long-run average hides big swings, and some years it drops 20% or more. Your future return is uncertain; the debt payoff is not.\n\nSo the real question is simple. Does your debt cost more than you can reliably earn? If yes, paying off the debt wins. Credit cards recently averaged about 21% APR, far above any safe return (Federal Reserve, May 2026)." },
@@ -2820,7 +2820,7 @@ export const GUIDES: Guide[] = [
       "Build a retirement calculator spreadsheet template in Google Sheets or Excel. Copy the compound growth and safe withdrawal rate formulas step by step.",
     h1: "Build Your Own Retirement Calculator Spreadsheet Template",
     cardBlurb: "Copy these compound growth and withdrawal formulas into Google Sheets or Excel to build your own retirement projection.",
-    intro:
+    introText:
       "This retirement calculator spreadsheet template teaches you to build your own retirement projection by hand. You will copy real formulas into Google Sheets or Excel, cell by cell. Each formula uses compound growth to project your balance and a safe withdrawal rate to estimate retirement income. Prefer not to build one yourself? Our free [retirement calculator](/retirement/) runs the same math instantly.",
     sections: [
       { heading: "Why build your own spreadsheet", body: "A spreadsheet you build yourself shows every assumption in plain view. You can see exactly how a change in your contribution or return rate moves your final number.\n\nThis matters because online calculators often hide their formulas behind a single result box. A spreadsheet you control lets you test your own what-if scenarios for years to come.\n\nYou only need two things to start: Google Sheets or Microsoft Excel, and about 15 minutes." },
@@ -2855,7 +2855,7 @@ export const GUIDES: Guide[] = [
       "Thinking about a bitcoin retirement calculator? See the real risks: volatility, no yield, crypto tax rules, and why diversification still matters.",
     h1: "Bitcoin Retirement Calculator: What to Know Before You Rely on Crypto",
     cardBlurb: "The real risks of funding retirement with bitcoin or crypto — volatility, taxes, and no guaranteed yield.",
-    intro:
+    introText:
       "A bitcoin retirement calculator cannot promise you a number, because bitcoin's price swings far more than stocks or bonds. This guide is not investment advice and makes no price prediction. Instead, it walks through the real risks of leaning on crypto for retirement: volatility, the lack of built-in income, how the [IRS](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions) taxes your gains, and why spreading your money across assets still matters. Our free [retirement calculator](/retirement/) and [FIRE calculator](/retirement/fire-calculator/) can model a retirement plan built around traditional, diversified investments.",
     sections: [
       { heading: "Bitcoin is far more volatile than stocks", body: "Bitcoin's price swings are much larger than the stock market's, on average. Research from [Fidelity Digital Assets](https://www.fidelitydigitalassets.com/research-and-insights/closer-look-bitcoins-volatility) has found bitcoin's annualized volatility has historically run several times higher than the S&P 500's.\n\nThat volatility has come down somewhat since bitcoin's early years, but it still moves far more than a diversified stock and bond portfolio. A retirement plan built on a volatile single asset can lose a large share of its value in a short window.\n\nIf that drop happens right before or during retirement, the damage can be permanent, since you may need to sell at the bottom to cover living expenses." },
@@ -2890,7 +2890,7 @@ export const GUIDES: Guide[] = [
       "Looking for an international retirement calculator? Ours covers U.S. rules only — find your country's own official pension planning tool instead.",
     h1: "International Retirement Calculators: Find Your Country's Official Tool",
     cardBlurb: "Our calculator models U.S. rules. Here's where to find official retirement resources for the UK, Canada, India, Australia, and New Zealand.",
-    intro:
+    introText:
       "Our [retirement calculator](/retirement/) is built around U.S. tax law and Social Security rules, so it will not give you an accurate answer if you live outside the United States. Each country runs its own pension system, with its own rules, ages, and formulas. Below are the official government resources for the UK, Canada, India, Australia, and New Zealand, so you land somewhere genuinely useful.",
     sections: [
       { heading: "Why a U.S. retirement calculator doesn't work abroad", body: "Retirement calculators are built around a specific country's tax code, retirement accounts, and government benefit formulas. Ours models U.S. 401(k) and IRA rules, U.S. federal tax brackets, and the Social Security benefit formula.\n\nNone of those rules apply outside the United States. A UK reader has no 401(k) or Social Security; they have workplace pensions and the State Pension instead. Using a U.S. tool with non-U.S. numbers gives you a meaningless result." },
@@ -2926,7 +2926,7 @@ export const GUIDES: Guide[] = [
       "How to open a high-yield savings account for kids, teens, and college students. Custodial rules, joint accounts, and age limits explained.",
     h1: "High-Yield Savings Accounts for Kids, Teens, and College Students",
     cardBlurb: "Custodial rules, joint accounts, and age limits for opening a HYSA for a child, teen, college student, or small business.",
-    intro:
+    introText:
       "A high-yield savings account for kids works differently than one for an adult, mainly because of one rule: banks require an adult owner until the child turns 18. This guide walks through custodial and joint account options for kids, teens, college students, and even small businesses. Once you understand the age rules, you can compare real rates with our [high-yield savings calculator](/investing/high-yield-savings-calculator/).",
     sections: [
       { heading: "The core rule: minors need an adult on the account", body: "Most banks require you to be 18 to open a savings account entirely on your own. Below that age, a child's high-yield savings account must be a joint account, with a parent or legal guardian as a co-owner.\n\nThe [FDIC's Youth Banking Resource Center](https://www.fdic.gov/consumer-resource-center/youth-banking-resource-center) confirms that banks typically structure these accounts with an adult as a joint owner or custodian until the child turns 18, since a minor generally cannot sign a binding account agreement alone.\n\nThe parent or guardian on a joint account typically keeps full access and control, while the child builds a savings habit and, at many banks, gets a linked debit card with adult oversight." },
@@ -2961,7 +2961,7 @@ export const GUIDES: Guide[] = [
       "Our high-yield savings guides cover FDIC-insured U.S. accounts. International savers: find your own country's official deposit protection scheme here.",
     h1: "International High-Yield Savings Accounts: Find Your Own Deposit Protection",
     cardBlurb: "Our HYSA content covers FDIC-insured U.S. accounts. Here's where non-U.S. savers can check their own country's deposit protection scheme.",
-    intro:
+    introText:
       "ModernWallet's high-yield savings account content is built around U.S., [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured banks. If you live outside the United States, FDIC insurance does not apply to your deposits at all, even if a foreign bank shares a name or brand with a U.S. one. This guide points you toward your own country's official deposit protection scheme instead.",
     sections: [
       { heading: "Why FDIC insurance is a U.S.-only protection", body: "FDIC insurance covers deposits at FDIC-insured U.S. banks up to $250,000 per depositor, per bank, for each account ownership category. It is a U.S. federal program and does not extend to banks headquartered or operating outside the United States.\n\nEvery country with a modern banking system runs its own, separate deposit protection scheme, usually through its central bank or a dedicated deposit insurance agency. The coverage limits, currencies, and rules are set independently by each country." },
@@ -2997,7 +2997,7 @@ export const GUIDES: Guide[] = [
       "How mortgage rates are actually set (Fed policy, Treasury yields, your credit) and a concrete process for shopping and locking the best rate today.",
     h1: "Current Mortgage Rates: How They're Set and How to Get the Best One",
     cardBlurb: "What actually moves your rate, and a same-day process for shopping, points, and locking that beats waiting for 'the right time.'",
-    intro:
+    introText:
       "Mortgage rates are not set by the Federal Reserve directly — they track the 10-year Treasury yield plus a spread that lenders add for risk and profit, a spread that has run wider than its historical 1.5-to-2-point norm in recent years. This guide explains what actually drives the rate you're quoted, how your credit score and loan type move it more than timing ever will, and a concrete process for estimating your payment, shopping, using points, and locking that beats waiting around for 'the right time' to buy.",
     sections: [
       { heading: "What actually sets your mortgage rate", body: "The Federal Reserve's rate-setting committee, the FOMC, controls the federal funds rate, a short-term rate banks charge each other overnight. Mortgage rates track something different: the 10-year Treasury yield. That's because most fixed-rate mortgages get bundled into mortgage-backed securities that investors hold for years, so they price closer to a 10-year bond than an overnight rate. You can check the [Fed's own meeting calendar](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm) to see when the next rate decision could move that relationship.\n\nOn top of the 10-year yield, lenders add a spread to cover prepayment risk, credit risk, and their own margin. That spread has historically run around 1.5 to 2 percentage points but has been wider than that in recent years as investor demand for mortgage bonds shifted. [Freddie Mac's Primary Mortgage Market Survey](https://www.freddiemac.com/pmms) publishes the actual national average every Thursday — check it directly rather than trusting a number in any article, since it's stale the moment it's published.\n\nInflation expectations move the 10-year yield, and inflation expectations move for reasons that have nothing to do with housing — a spike in oil prices, a surprise CPI report, or a weak Treasury auction can all push yields, and mortgage rates, higher within days. That volatility is normal, not a sign the market is broken." },
@@ -3038,7 +3038,7 @@ export const GUIDES: Guide[] = [
       "What ChatGPT, Gemini, and Claude get right and wrong on money questions, plus a framework to prompt well, verify answers, and know when to see a human.",
     h1: "AI Chatbots for Financial Advice: What They Get Right, What They Get Wrong",
     cardBlurb: "What chatbots are good at, where they go wrong on money, and a framework for prompting, verifying, and knowing when to call a human instead.",
-    intro:
+    introText:
       "As of mid-2026, 44% of U.S. adults say they've used [ChatGPT](https://chatgpt.com/), according to Pew Research Center, more than double the share when Pew first asked in 2023, and a growing number of them are asking it money questions it was never built to get right every time. This guide covers what AI chatbots handle well, where they fail on personal finance specifically, and a concrete framework for prompting, verifying, and protecting your data when you use one.",
     sections: [
       { heading: "What AI chatbots are actually good at", body: "Chatbots like ChatGPT, [Gemini](https://gemini.google.com/), and [Claude](https://claude.ai/) are genuinely useful for explaining concepts in plain language: what a Roth IRA is, how amortization works, what the difference is between a 401(k) and a brokerage account. They're also decent at drafting a first-pass structure, like a rough monthly budget outline or a list of pros and cons for options you've already researched yourself.\n\nThey're fast and they don't judge. You can ask a question about credit card debt or a low emergency fund at midnight without the discomfort of asking a person, and that alone gets some people to engage with a money problem they'd otherwise avoid. Treat that as the real value: a low-friction first pass, not a final answer." },
@@ -3078,7 +3078,7 @@ export const GUIDES: Guide[] = [
       "What the 2008 housing crash actually teaches today's buyers and investors: patience over panic, equity isn't guaranteed, and why cash reserves matter.",
     h1: "What the 2008 Housing Crash Still Teaches Buyers and Investors",
     cardBlurb: "Home prices fell about 30% nationally from 2006 to 2009. Here's what that crash actually teaches today's buyers and investors.",
-    intro:
+    introText:
       "National home prices fell roughly 30% from their mid-2006 peak to their mid-2009 trough, according to the [Federal Reserve's own history of the crisis](https://www.federalreservehistory.org/essays/great-recession-of-200709), and it took most metro areas years longer to fully recover. This guide pulls the durable lessons out of that crash: why patience beat panic-selling, why home equity was never guaranteed, and how a cash cushion changes what a downturn actually costs you.",
     sections: [
       { heading: "What actually happened, briefly", body: "Subprime and adjustable-rate lending expanded who could borrow and how much, often through low introductory 'teaser' rates that reset much higher after two or three years. Those loans worked as long as home prices kept rising, since a borrower who couldn't afford the reset payment could simply refinance using their built-up equity. When prices stopped rising in 2006 and began falling, that refinancing escape hatch closed, and defaults rose fast.\n\nThose mortgages had been bundled into securities held throughout the financial system, so the wave of defaults became a banking crisis, not just a housing one. Congress created the [Troubled Asset Relief Program (TARP)](https://home.treasury.gov/data/troubled-asset-relief-program) in October 2008 to stabilize banks, ultimately spending $443.5 billion with a final lifetime cost of about $31.1 billion after repayments. In 2010, Congress passed the Dodd-Frank Act, which [created the Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/research-reports/building-the-cfpb/) specifically to regulate consumer mortgage lending going forward, consolidating oversight that had previously been split across seven different federal agencies." },
@@ -3119,7 +3119,7 @@ export const GUIDES: Guide[] = [
       "A math-based framework for whether an extended car warranty is worth it: real coverage, cost ranges, self-insuring math, and red flags to avoid.",
     h1: "Is an Extended Car Warranty Worth It? Do the Math First",
     cardBlurb: "What a vehicle service contract actually covers, real cost ranges, the self-insure math, and how to vet any provider before you sign.",
-    intro:
+    introText:
       "An 'extended car warranty' is not actually a warranty — it's a vehicle service contract, a separate paid product sold by a dealer, manufacturer, or third-party administrator, and the [FTC has taken enforcement action](https://www.ftc.gov/news-events/news/press-releases/2023/07/ftc-action-leads-industry-bans-operators-extended-vehicle-warranty-scam) against sellers who blur that distinction with 'bumper-to-bumper' claims that don't hold up. This guide walks through what these contracts really cover, what they typically cost, the math for self-insuring instead, and how to check any provider before you pay.",
     sections: [
       { heading: "What an extended warranty (vehicle service contract) actually is", body: "A factory warranty is included free by the manufacturer, runs for a defined number of years or miles, and covers manufacturing defects. A vehicle service contract, often marketed as an 'extended warranty,' is a separate contract you pay for, from the dealer, the manufacturer, or a third-party administrator, that covers certain repairs after the factory warranty ends or for issues it doesn't cover.\n\nCoverage comes in tiers. An exclusionary or 'bumper-to-bumper' contract is the broadest, covering everything not specifically listed as excluded. A powertrain contract is far narrower, typically limited to the engine, transmission, and drivetrain. Named-component contracts fall somewhere in between. The [FTC specifically warns](https://consumer.ftc.gov/articles/auto-warranties-and-auto-service-contracts) that a marketing name like 'bumper to bumper' doesn't guarantee blanket coverage — read the exclusions list in the actual contract, not the name on the brochure." },
@@ -3159,7 +3159,7 @@ export const GUIDES: Guide[] = [
       "How state sales tax holidays work, what typically qualifies, the real math on savings, and how to find your state's exact dates each year.",
     h1: "Sales Tax Holidays: What They Cover and Whether They're Worth It",
     cardBlurb: "The real math on what a tax-free weekend saves, what usually qualifies, and where to find your state's actual dates each year.",
-    intro:
+    introText:
       "A sales tax holiday only saves you the state's sales tax rate — an 8% holiday on a $1,000 laptop saves $80, nothing more — so the real question is whether that's worth planning a purchase around. This guide covers what these holidays typically exempt, the category and price caps to expect, honest math on how much you actually save, and why you should confirm exact dates on your own state's Department of Revenue site rather than any article, since dates and rules change every year.",
     sections: [
       { heading: "What a sales tax holiday actually is", body: "A sales tax holiday is a set period, usually a long weekend, during which a state temporarily suspends its sales tax on specific categories of goods. Back-to-school holidays covering clothing and school supplies are the most common, and some states also run separate holidays for hurricane or emergency preparedness supplies, or for qualifying Energy Star appliances.\n\nNot every state runs one. A handful of states have no statewide sales tax at all, so there's nothing to exempt, and among states that do collect sales tax, only some choose to hold a holiday. Which categories qualify, and whether a holiday exists at all, is decided state by state and can change from year to year, so a neighboring state's rules tell you nothing reliable about your own." },
@@ -3196,7 +3196,7 @@ export const GUIDES: Guide[] = [
       "Is a living trust worth it? Compare the $1,500-$5,000 setup cost to what probate would actually cost your estate, then run your own break-even math.",
     h1: "Is a Living Trust Worth It? Compare the Setup Cost to What Probate Would Cost Instead",
     cardBlurb: "The $1,500-$5,000 setup cost versus what probate actually costs an estate — and when the trust math clearly wins.",
-    intro:
+    introText:
       "A living trust is worth it when the probate cost and delay it avoids is bigger than what the trust costs to set up and fund, and for any middle-class-or-larger estate, that math usually favors the trust. This guide breaks down what a living trust actually costs, what probate would cost the same estate instead, and the specific situations where paying for a trust is worth it, or where a simple will is enough.",
     sections: [
       { heading: "Step 1: What a living trust actually costs", body: "A revocable living trust runs $1,500 to $5,000 attorney-drafted for typical facts, or $5,000 to $10,000+ in California and other high-cost metros, per our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/). Online alternatives are cheaper: Trust & Will charges $499 individual or $599 for a couple, and Nolo Quicken WillMaker Plus includes a trust template for $139. Add $500 to $2,000 for trust funding — retitling deeds and accounts into the trust's name — which is a separate step most people forget and the reason an unfunded trust provides zero probate protection." },
@@ -3231,7 +3231,7 @@ export const GUIDES: Guide[] = [
       "A personal loan review checklist: how to find the real APR with fees included, match qualification requirements to your profile, and vet borrower reviews.",
     h1: "How to Read a Personal Loan Lender Review Without Getting Fooled",
     cardBlurb: "The real cost behind the advertised rate, matching requirements to your profile, and how to tell a trustworthy review from marketing copy.",
-    intro:
+    introText:
       "A personal loan review is only useful if you know which numbers to check first — the advertised rate is rarely the rate you'll actually pay. This guide walks through the six things worth checking in any lender review, whether you're reading it on a comparison site or a lender's own page, so you can tell a genuinely good fit from a page optimized to look impressive.",
     sections: [
       { heading: "Start with the real cost, not the advertised rate", body: "A lender's advertised \"rates as low as\" figure describes the best rate it offers, not the rate most applicants receive. The number that actually matters is the effective APR once fees are counted, since many online lenders charge an origination fee — commonly 1% to 10% of the loan amount — deducted from your payout before you see the cash.\n\nA $15,000 loan at a 12.5% stated rate with a 3% origination fee only pays out $14,550, while your payment is still calculated on the full $15,000 — pushing your real effective APR above 14%. Run any offer through our [personal loan calculator](/personal-loan/) before comparing lenders on the headline rate alone; it's the only way to see what a loan actually costs you." },
@@ -3268,7 +3268,7 @@ export const GUIDES: Guide[] = [
       "Helping family with money? Learn the 4 steps to protect your own finances first — emergency fund, gift vs. loan, written rules, and non-cash help.",
     h1: "Lending Money to Family: How to Set Boundaries Before It Costs You",
     cardBlurb: "Four steps to protect your own finances first — emergency fund, gift-or-loan decision, written rules, and non-cash ways to help.",
-    intro:
+    introText:
       "Helping a family member with money is safest when you protect your own finances first, decide upfront whether the money is a gift or a loan, and put the terms in writing before you hand over a dollar. This guide walks through four steps that keep a single request for help from turning into a recurring drain on your own financial plan, plus the non-monetary options that solve the same problem without touching your savings.",
     sections: [
       { heading: "Step 1: Protect your own emergency fund before you say yes", body: "Your emergency fund exists to cover your own job loss, medical bill, or car repair — not a family member's. Before agreeing to help, check that giving or lending the requested amount still leaves you with the 3 to 6 months of expenses most planners recommend; see our [emergency fund guide](/guides/how-much-emergency-fund/) to check your own number.\n\nIf covering the request would drain your cushion below that line, that's a signal to offer a smaller amount, a longer timeline, or a non-cash form of help instead — not to hand over money you can't afford to be without. You cannot rescue someone else's finances by wrecking your own; if anything happens to your income next, no one is covering your gap." },
@@ -3304,7 +3304,7 @@ export const GUIDES: Guide[] = [
       "How much to save for retirement if you're not a high earner: a realistic savings-rate target, what to do if 15% feels impossible, and where to get advice.",
     h1: "How Much Should the Average Earner Save for Retirement?",
     cardBlurb: "A realistic savings-rate target for a typical income, what to do if 15% feels out of reach, and where to find advice that isn't AUM-priced.",
-    intro:
+    introText:
       "Most financial planners point to roughly 15% of gross income, including any employer match, as a workable retirement savings target for a typical earner starting in their 20s or 30s — but that number is a target to grow into, not a bar you have to clear on day one. This guide covers where that 15% figure comes from, what to do if it feels out of reach right now, and how to find real financial advice when your balance is still too small for a traditional advisor's fee structure.",
     sections: [
       { heading: "The savings-rate guideline, and why it isn't all-or-nothing", body: "The commonly cited 15%-of-income guideline assumes decades of compounding and is built to get a typical earner to a comfortable retirement income without requiring an unusually high savings rate late in life. It includes your employer match, so if your employer contributes 4%, you personally need to save closer to 11% to hit the combined target.\n\nStarting below 15% is not a failure — it's the normal starting point for most people. The number that matters most isn't your current percentage, it's whether that percentage is moving up over time, ideally with every raise, until it reaches the target range." },
@@ -3341,7 +3341,7 @@ export const GUIDES: Guide[] = [
       "How to retire at 40, honestly assessed: the real savings target for a 50-year retirement, three practical paths to get there, and the two gaps to plan for.",
     h1: "How to Retire at 40: Is It Really Possible?",
     cardBlurb: "The real savings target for a 50-year retirement, three practical paths to get there, and the healthcare and Social Security gaps to plan around.",
-    intro:
+    introText:
       "Retiring at 40 is mathematically possible but requires saving far more aggressively than a standard retirement timeline, because a 50-year retirement needs a bigger cushion and a lower withdrawal rate than the traditional 30-year model most retirement advice assumes. This guide covers the real savings target for that longer horizon, three practical paths people actually use to reach it, and the two coverage gaps — healthcare and Social Security — every 40-year-old retiree has to plan around.",
     sections: [
       { heading: "The real math: why 40 needs a bigger number than 65", body: "The standard 4% withdrawal guideline (spend 4% of your portfolio in year one, adjust for inflation after) was built around a roughly 30-year retirement. Retiring at 40 can mean a 50-year or longer horizon, and research following the [original Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable) suggests a more conservative 3% to 3.5% withdrawal rate holds up better across that much longer span.\n\nThat lower withdrawal rate translates to a bigger target: instead of 25 times your annual expenses (the 4%-rule multiple), a 40-year-old retiree should target closer to 29 to 33 times annual expenses. On $60,000 a year in planned spending, that's the difference between a $1.5 million target and roughly $1.8 to $2 million — a gap worth planning for explicitly rather than discovering after you've already quit your job. If a decades-early retirement isn't the goal, see our guide on [how to retire at 67](/guides/how-to-retire-at-67/) for the Social Security, Medicare, and RMD math that applies at the standard full retirement age instead." },
@@ -3378,7 +3378,7 @@ export const GUIDES: Guide[] = [
       "How to invest $200k: three portfolio allocations by risk level, why account placement matters as much as fund choice, and lump sum vs. investing gradually.",
     h1: "How to Invest $200k: Three Portfolio Models and the Tax Move Most People Skip",
     cardBlurb: "Three sample allocations by risk level, the asset-location move that quietly saves on taxes, and lump sum vs. investing gradually.",
-    intro:
+    introText:
       "Investing $200,000 well starts with your timeline and risk tolerance, not a single 'best' fund — a 5-year goal, a 20-year goal, and a fully retired investor should each land on a meaningfully different allocation. This guide walks through three sample portfolio models by risk level, the often-skipped step of deciding which account holds which asset, and the honest tradeoff between investing the full amount now versus spreading it in over time.",
     sections: [
       { heading: "Start with your timeline, not a target return", body: "Before choosing any allocation, separate $200,000 by when you'll actually need it. Money needed within 1 to 3 years belongs in cash or a [high-yield savings account](/investing/high-yield-savings-calculator/), not the market, since a downturn right before you need the funds could force you to sell at a loss. Money you won't touch for 10-plus years can absorb far more short-term volatility in exchange for higher expected long-run growth.\n\nMany people investing a lump sum this size are combining several goals at once — a home down payment in 3 years, retirement in 25 — and the right move is to split the $200,000 across separate buckets with separate timelines, rather than choosing one allocation for the entire amount." },
@@ -3416,7 +3416,7 @@ export const GUIDES: Guide[] = [
       "Financial planning for 30 year olds: the right order for emergency fund, investing, debt payoff, insurance, and 529s — with the numbers for each step.",
     h1: "Financial Planning for 30 Year Olds: What to Do First",
     cardBlurb: "The right order for emergency fund, investing, good vs. bad debt, insurance, and 529s — with the actual numbers behind each step.",
-    intro:
+    introText:
       "Financial planning in your 30s works best in a specific order: emergency fund, then employer match, then debt by interest rate, then protection, because doing them out of order — like buying life insurance before you have 3 months of expenses saved — leaves bigger risks uncovered while smaller ones get handled first. This guide walks through that order with the numbers behind each step, so a 30-year-old with a typical mix of income, some debt, and maybe kids can see exactly where to focus next.",
     sections: [
       { heading: "Step 1: Build the emergency fund before anything else compounds", body: "A 30-year-old's first priority is 3 to 6 months of essential expenses in an accessible account, not invested in the market — see our [emergency fund guide](/guides/how-much-emergency-fund/) for the exact math on your own number. Without this cushion, an unexpected job loss or medical bill often gets paid for with high-interest credit card debt, undoing months of other progress in a single event.\n\nA [high-yield savings account](/investing/high-yield-savings-calculator/) is the right home for this money — accessible within a day or two, [FDIC-insured](https://www.fdic.gov/resources/deposit-insurance/) up to $250,000, and earning meaningfully more than a traditional checking or savings account while you build it up." },
@@ -3453,7 +3453,7 @@ export const GUIDES: Guide[] = [
       "Is $3 million enough to retire at 40? See what it supports at a safe withdrawal rate, how a family vs. single lifestyle changes the math, and the risks.",
     h1: "Is $3 Million Enough to Retire at 40?",
     cardBlurb: "What $3 million actually supports at a safe withdrawal rate, how location and family size change the math, and the risks worth planning around.",
-    intro:
+    introText:
       "Three million dollars supports roughly $90,000 to $105,000 a year in spending for a 40-year-old retiree, using the more conservative 3% to 3.5% withdrawal rate appropriate for a 50-plus-year retirement horizon — whether that's enough depends entirely on your actual expenses, location, and whether you're supporting a family or just yourself. This guide runs the real numbers, compares a few household scenarios, and covers the risks that can erode even a $3 million cushion faster than the math above suggests.",
     sections: [
       { heading: "The starting math: what $3 million actually generates", body: "A 40-year-old retiree faces a much longer withdrawal period than the 30-year retirement the standard 4% rule was built around, so a more conservative 3% to 3.5% withdrawal rate — the range suggested by research following the [original Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable) for retirements lasting 40 to 50-plus years — is the more defensible starting point. At 3.5%, $3 million supports about $105,000 a year before tax; at a more conservative 3%, that drops to $90,000.\n\nBoth figures assume the portfolio stays invested and grows through retirement rather than sitting entirely in cash, and both are pre-tax numbers — your actual spendable amount depends on which accounts (taxable, traditional, or Roth) the $3 million sits in, since traditional 401(k) and IRA withdrawals are taxed as ordinary income." },
@@ -3493,7 +3493,7 @@ export const GUIDES: Guide[] = [
       "How to retire in 10 years with no savings today: the honest math on the savings rate required, who it actually fits, and the downsides worth knowing first.",
     h1: "How to Retire in 10 Years With No Savings Today",
     cardBlurb: "The honest math on the savings rate this takes, who it actually fits, and the downsides most 'retire in 10 years' plans skip.",
-    intro:
+    introText:
       "Retiring in 10 years starting from zero savings is mathematically possible, but it requires saving 50% to 75% of your income for a full decade — a rate that's genuinely achievable for a high earner with low fixed costs, and genuinely unrealistic for a median earner with typical expenses. This guide walks through what that savings rate actually demands, the steps that make it possible, and the downsides worth understanding before you commit to the plan.",
     sections: [
       { heading: "Why your starting income matters more than your motivation", body: "The single biggest factor in whether this plan works isn't willpower, it's your starting income relative to your fixed costs. Someone earning $200,000 with a $2,500-a-month mortgage can plausibly save $10,000 or more a month while still living comfortably. Someone earning $50,000 faces a fundamentally different math problem: saving 75% of that income leaves just over $1,000 a month for every living expense combined, which is not realistic in most parts of the country.\n\nBe honest about which category you're in before committing to a 10-year plan built on an extreme savings rate. For many median earners, a 15-to-20-year timeline at a more sustainable 30% to 40% savings rate reaches the same destination with far less risk of burning out and abandoning the plan halfway through." },
@@ -3529,7 +3529,7 @@ export const GUIDES: Guide[] = [
       "How long it takes to turn $100k into $1 million at different return rates, how monthly contributions speed it up, and the behavioral risks that derail it.",
     h1: "How to Invest $100k and Turn It Into $1 Million",
     cardBlurb: "How long it actually takes at different return rates, how monthly contributions speed it up, and the behavioral mistakes that derail the plan.",
-    intro:
+    introText:
       "Turning $100,000 into $1 million takes about 24 years at a 10% average annual return with no further contributions, or roughly 23 years if you also add $500 a month — the math is straightforward compounding, and the real risk to the plan is rarely the return rate, it's the behavioral mistakes that interrupt compounding along the way. This guide covers the actual timeline at different return assumptions, how contributions change it, and the specific mistakes that derail this kind of long-run growth most often.",
     sections: [
       { heading: "The timeline at different return rates", body: "With no additional contributions, $100,000 compounding at a 10% average annual return — roughly the S&P 500's long-run nominal average with dividends reinvested, per [S&P Dow Jones Indices](https://www.spglobal.com/spdji/en/research-insights/spiva/) data — reaches $1 million in about 24 years. At a more conservative 8% assumption, it takes closer to 30 years. Using a 7% real (inflation-adjusted) return, which reflects actual future purchasing power rather than a nominal dollar figure, it takes about 34 years.\n\nWhich number applies to you depends on what you're actually trying to answer: use the higher, nominal figures if you want to know how many dollars you'll see on a statement, or the lower, real figure if you want to know what that future amount will actually buy in today's purchasing power. Model your own timeline with either assumption in the [S&P 500 calculator](/investing/sp500-calculator/)." },
@@ -3569,7 +3569,7 @@ export const GUIDES: Guide[] = [
       "Coast FIRE for couples: how to combine two incomes and two balances into one household number, plus why pooling finances can move your date up.",
     h1: "Coast FIRE for Couples: Calculating Your Number Together",
     cardBlurb: "How to combine two incomes, two balances, and one retirement goal into a single household Coast FIRE number.",
-    intro:
+    introText:
       "Coast FIRE for couples means running the calculation on your combined household numbers instead of two separate ones, because pooling your savings and spending goal almost always changes the answer. A couple with $140,000 in combined retirement savings, contributing $1,500 a month together, and wanting $80,000 a year in retirement needs about $214,469 invested today at a 7% expected return to coast — reaching that at roughly age 36 and 9 months if they keep contributing at the current pace. Use the [Coast FIRE calculator](/coast-fire/) with your combined numbers to run your own household figure.",
     sections: [
       {
@@ -3621,7 +3621,7 @@ export const GUIDES: Guide[] = [
       "The Roth conversion rules people miss: the pro-rata rule, filling your tax bracket, the ban on undoing a conversion, and the RMD you must take first.",
     h1: "Roth Conversion Rules: The Four That Trip People Up",
     cardBlurb: "Pro-rata math, bracket timing, the no-undo rule, and the RMD that has to come out first.",
-    intro:
+    introText:
       "Four Roth conversion rules cause most mistakes: the pro-rata rule, bracket timing, the no-do-over rule, and required minimum distributions. Each one can turn a good plan into a surprise tax bill. This page walks through all four, with a worked example and the IRS form that does the math. It is general information, not advice about your own situation.",
     sections: [
       {
@@ -3701,7 +3701,7 @@ export const GUIDES: Guide[] = [
       "A Roth conversion ladder converts IRA money each year so you can tap it penalty-free five years later. See the schedule, tax cost, and alternatives.",
     h1: "Roth Conversion Ladder: The Early Retirement Bridge, Step by Step",
     cardBlurb: "Convert one year of expenses at a time, five years ahead of needing it, and bridge the gap to 59 1/2.",
-    intro:
+    introText:
       "A Roth conversion ladder moves money from a traditional IRA to a Roth IRA one year at a time. Each converted amount can then come out without the 10% early-withdrawal tax five years later. Early retirees use it to reach retirement money long before age 59 1/2. The strategy only works if you already have five years of spending saved elsewhere. This guide walks through the five-year rule, a year-by-year schedule, the tax bill, and the alternatives.",
     sections: [
       {
@@ -3794,7 +3794,7 @@ export const GUIDES: Guide[] = [
       "Borrowing against life insurance uses your cash value as collateral. Learn how policy loans accrue interest, cut the death benefit, and can trigger tax.",
     h1: "Borrowing Against Life Insurance: How a Policy Loan Works",
     cardBlurb: "How a policy loan works, what the interest does, and why an unpaid loan shrinks the death benefit.",
-    intro:
+    introText:
       "Borrowing against life insurance means taking a loan from your insurer, using your policy's cash value as collateral. Only permanent policies build that cash value, so whole life and universal life qualify and term life does not. The money is a loan, not a withdrawal, and your cash value stays inside the policy.\n\nThe tradeoffs are real. Interest accrues on the balance, and unpaid interest is usually added to what you owe. Any loan still outstanding when you die is subtracted from what your beneficiaries receive.\n\nThis guide explains the mechanics, the lapse risk, and the tax bill a lapsed policy loan can create.",
     sections: [
       {
@@ -3874,7 +3874,7 @@ export const GUIDES: Guide[] = [
       "What is a good expense ratio? See competitive ranges by fund type, from index funds to money market funds, plus the costs the ratio leaves out.",
     h1: "What Is a Good Expense Ratio? Benchmarks by Fund Type",
     cardBlurb: "Competitive fee ranges for index funds, target-date funds, bond funds, sector ETFs, and money market funds.",
-    intro:
+    introText:
       "What is a good expense ratio depends on fund type: under 0.10% is competitive for a broad-market index fund. A number that looks cheap for an actively managed fund can look expensive for an index fund doing the same job. The expense ratio is the yearly percentage a fund charges to run itself. This guide gives you a benchmark for each fund type, shows you where to find the real number, and covers the costs the ratio leaves out.",
     sections: [
       {
@@ -3929,7 +3929,7 @@ export const GUIDES: Guide[] = [
       "What target date fund should I choose? Learn how the fund year, the to vs through glide path, index vs active, and share class change what you actually own.",
     h1: "What Target Date Fund Should I Choose? How to Pick Yours",
     cardBlurb: "Pick the year, read the glide path, look for the word Index, check the share class, and hold just one.",
-    intro:
+    introText:
       "The answer to what target date fund should I choose is usually the year closest to your retirement. But the year on the label is doing more work than most people realize. It sets how much stock you own today and how fast that shrinks. Two funds carrying the same year can hold very different mixes. This guide walks through the four things that actually decide the answer: the fund year, the glide path, the index or active version, and the share class.",
     sections: [
       { heading: "Start with the year you plan to retire", body: "The default rule is short. Pick the fund whose year sits closest to the year you plan to stop working. FINRA gives the same starting point, telling investors to choose the fund with the name closest to the date they plan to retire.\n\nIf you aim to retire at 65, find the year you turn 65. Someone born in 1990 turns 65 in 2055, so a 2055 fund is the starting point. Series do not offer every single year, so take the nearest one on the menu.\n\nThat is a starting point, not a verdict. The SEC's investor bulletin says you may decide another year suits you better. Its own example: even if you plan to retire in 2060, a 2050 or 2070 fund may be more appropriate for you, based on your objectives, risk tolerance, and other assets. Not sure what year you are aiming at? Map your own timeline with our [retirement savings calculator](/retirement/retirement-savings-calculator/)." },
@@ -3969,7 +3969,7 @@ export const GUIDES: Guide[] = [
       "How to build a dividend portfolio step by step: the yield math, screening rules, position sizing, taxes, and why a very high yield is a warning sign.",
     h1: "How to Build a Dividend Portfolio: The Math, the Screens, the Taxes",
     cardBlurb: "Yield math, income targets, screening rules, position caps, taxes, and DRIPs, with no stock picks.",
-    intro:
+    introText:
       "How to build a dividend portfolio breaks into four steps: set a target, screen payers, cap positions, reinvest. This guide teaches the method, not a list of stocks to buy. You will see the yield arithmetic worked out, the numbers that separate a durable dividend from a fragile one, and how the IRS taxes what you collect. Every figure here is illustrative and used only to show the math. Nothing on this page is a recommendation to buy any security.",
     sections: [
       { heading: "Step 1: Start with the yield math", body: "Dividend yield is the annual dividend per share divided by the share price. It tells you what share of your money comes back as cash each year.\n\nHere is the arithmetic with illustrative numbers. Suppose a stock trades at $50 and pays $2.00 in dividends over a year. Divide $2.00 by $50 and you get 0.04, or a 4% yield. Portfolio yield works the same way. Add the yearly dividends from every holding, then divide by the account value.\n\nThose numbers are made up to show the formula. They are not a market figure or a forecast. Run your own inputs through our [dividend calculator](/investing/dividend-calculator/) to see what a real balance would pay." },
@@ -4008,7 +4008,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "See the real math on how fast a 401(k) grows to $1 million, 2026 IRS contribution limits, employer match costs, and fee traps to avoid.",
   h1: "How to Become a 401(k) Millionaire",
   cardBlurb: "The real math behind hitting $1 million in your 401(k), from contribution limits to the true cost of fees.",
-  intro: "Someone who invests $500 a month in a 401(k) starting at age 25, earning a 7% average annual return, crosses $1 million around age 61. Start at age 35 instead, and you need closer to $820 a month to hit $1 million by 65. Becoming a 401(k) millionaire comes down to three levers: how early you start, how much you contribute, and how much you keep after fees. This guide walks through the real math, the 2026 IRS contribution limits, and the mistakes that quietly cost people the most money.",
+  introText: "Someone who invests $500 a month in a 401(k) starting at age 25, earning a 7% average annual return, crosses $1 million around age 61. Start at age 35 instead, and you need closer to $820 a month to hit $1 million by 65. Becoming a 401(k) millionaire comes down to three levers: how early you start, how much you contribute, and how much you keep after fees. This guide walks through the real math, the 2026 IRS contribution limits, and the mistakes that quietly cost people the most money.",
   sections: [
     {
       heading: "The Real Math: How Long It Takes to Hit $1 Million",
@@ -4092,7 +4092,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "See what $1,000 invested monthly grows to at 6%, 8%, and 10% returns over 10, 20, and 30 years, plus how fees and taxes change the total.",
   h1: "How Much Does Investing $1,000 a Month Grow To?",
   cardBlurb: "Real math on what $1,000 a month becomes after 10, 20, and 30 years of compounding.",
-  intro: "Investing $1,000 a month for 30 years grows to about $1,004,518 at a 6% annual return, $1,490,360 at 8%, or $2,260,488 at 10%, before taxes and fees. Your real number depends on how long you invest, how consistently you contribute, and what you earn after costs. This guide runs the exact math at three realistic return rates over 10, 20, and 30 years, then breaks down the fees, taxes, and account choices that change your outcome. Test your own numbers in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/).",
+  introText: "Investing $1,000 a month for 30 years grows to about $1,004,518 at a 6% annual return, $1,490,360 at 8%, or $2,260,488 at 10%, before taxes and fees. Your real number depends on how long you invest, how consistently you contribute, and what you earn after costs. This guide runs the exact math at three realistic return rates over 10, 20, and 30 years, then breaks down the fees, taxes, and account choices that change your outcome. Test your own numbers in our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/).",
   sections: [
     {
       heading: "What $1,000 a month actually grows to",
@@ -4172,7 +4172,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "See the real dollar math for Social Security at 62 vs. 67 vs. 70, Medicare enrollment timing, RMD rules, and a full savings plan for retiring at 67.",
   h1: "How to Retire at 67: A Step-by-Step Plan",
   cardBlurb: "The exact Social Security, Medicare, and RMD math behind a full-length retirement at 67.",
-  intro: "Retiring at 67 means claiming your full Social Security benefit right away, with Medicare already in place. Required minimum distributions do not start for another six to eight years, depending on your birth year. This guide covers the real dollar math on Social Security claiming ages and Medicare timing. It also covers RMD rules and how much you need saved for a normal-length retirement.",
+  introText: "Retiring at 67 means claiming your full Social Security benefit right away, with Medicare already in place. Required minimum distributions do not start for another six to eight years, depending on your birth year. This guide covers the real dollar math on Social Security claiming ages and Medicare timing. It also covers RMD rules and how much you need saved for a normal-length retirement.",
   sections: [
     {
       heading: "How Much Money Do You Need to Retire at 67?",
@@ -4252,7 +4252,7 @@ export const GUIDES: Guide[] = [
   "metaDescription": "Real mortgage refinancing lessons: when rates are low enough, why resetting your loan term can cost more, and what \"no-closing-cost\" really means.",
   "h1": "Mortgage Refinancing Lessons Every Homeowner Should Know",
   "cardBlurb": "Real math on refinance break-even points, loan term resets, and what a \"no-closing-cost\" refinance actually costs.",
-  "intro": "Most refinances pay for themselves in 24 to 40 months, once you divide closing costs by monthly savings. A full 1 or 2 percentage point rate drop is not required — even a 0.5 to 0.75 point gap can be worth taking if you plan to stay past the break-even point. This guide covers the math lenders rarely spell out: how resetting your loan term can raise total interest even at a lower rate, and how a \"no-closing-cost\" refinance quietly shifts fees into your rate or balance. Run your own numbers with [our refinance calculator](/mortgage/refinance-calculator/) before signing anything.",
+  "introText": "Most refinances pay for themselves in 24 to 40 months, once you divide closing costs by monthly savings. A full 1 or 2 percentage point rate drop is not required — even a 0.5 to 0.75 point gap can be worth taking if you plan to stay past the break-even point. This guide covers the math lenders rarely spell out: how resetting your loan term can raise total interest even at a lower rate, and how a \"no-closing-cost\" refinance quietly shifts fees into your rate or balance. Run your own numbers with [our refinance calculator](/mortgage/refinance-calculator/) before signing anything.",
   "sections": [
     {
       "heading": "The Right Time to Refinance Might Be Now, Not Later",
@@ -4313,7 +4313,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "Credit card rewards apps use game design to push spending. Learn the psychology behind bonus thresholds and streaks, plus a test to spot the trap.",
   h1: "Is Credit Card Gamification Designed to Make You Spend More?",
   cardBlurb: "Bonus thresholds, streaks, and badges aren't neutral fun — they're built to make you spend more than you planned.",
-  intro: "Credit card issuers use game mechanics — bonus thresholds, streaks, and badges — because they measurably change how much you charge. A common design pays 5% back only after you spend $1,500 in a quarter. Chasing that threshold with $300 of new spending earns $63 more in rewards, a loss if you didn't need that spending anyway. This guide covers the psychology behind these mechanics, the real math on the bonus trap, and a simple test to spot it.",
+  introText: "Credit card issuers use game mechanics — bonus thresholds, streaks, and badges — because they measurably change how much you charge. A common design pays 5% back only after you spend $1,500 in a quarter. Chasing that threshold with $300 of new spending earns $63 more in rewards, a loss if you didn't need that spending anyway. This guide covers the psychology behind these mechanics, the real math on the bonus trap, and a simple test to spot it.",
   sections: [
     {
       heading: "What is credit card gamification?",
@@ -4395,7 +4395,7 @@ export const GUIDES: Guide[] = [
   "metaDescription": "Grocery prices rose 2.7% and shelter costs rose 3.3% in 2026. Learn to spot habit creep, target big spending categories, and set real budget caps.",
   "h1": "How to Budget When Prices Keep Rising",
   "cardBlurb": "A CPI-backed method for telling real inflation apart from habit creep and setting budget caps that actually hold.",
-  "intro": "Grocery prices rose 2.7% and shelter costs rose 3.3% over the year ending June 2026, according to the [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm). Overall prices climbed 3.5% in the same period, and wages for most workers grew slower. The fix is not cutting out your morning coffee. It is comparing your own spending growth to the official inflation rate for each category, then setting caps that match how each price actually behaves.",
+  "introText": "Grocery prices rose 2.7% and shelter costs rose 3.3% over the year ending June 2026, according to the [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm). Overall prices climbed 3.5% in the same period, and wages for most workers grew slower. The fix is not cutting out your morning coffee. It is comparing your own spending growth to the official inflation rate for each category, then setting caps that match how each price actually behaves.",
   "sections": [
     {
       "heading": "Which Costs Are Rising Fastest in 2026",
@@ -4474,7 +4474,7 @@ export const GUIDES: Guide[] = [
   metaDescription: "Learn how to budget with irregular income using a real baseline month, a variability-based buffer fund, and quarterly estimated tax planning.",
   h1: "How to Budget With Irregular Income",
   cardBlurb: "A step-by-step way to budget, save, and pay taxes when your paycheck changes every month.",
-  intro: "Budget your irregular income around your lowest realistic month, not your average month. A freelancer earning $2,800 to $6,200 a month should build core spending on a $2,800 baseline, then layer in taxes, a buffer fund, and retirement savings from whatever comes in above that. This guide walks through picking a real baseline number, sizing a buffer fund with actual math, paying quarterly estimated taxes, and covering health care and retirement without an employer plan.",
+  introText: "Budget your irregular income around your lowest realistic month, not your average month. A freelancer earning $2,800 to $6,200 a month should build core spending on a $2,800 baseline, then layer in taxes, a buffer fund, and retirement savings from whatever comes in above that. This guide walks through picking a real baseline number, sizing a buffer fund with actual math, paying quarterly estimated taxes, and covering health care and retirement without an employer plan.",
   sections: [
     {
       heading: "How Do You Find a Realistic Baseline Income When Pay Changes Every Month?",
@@ -4560,7 +4560,7 @@ export const GUIDES: Guide[] = [
       "See how much you can borrow with a HELOC, what draw-period vs. repayment-period payments cost, and a worked example using CFPB borrowing rules.",
     h1: "HELOC Calculator: How Much You Can Borrow and What It Costs",
     cardBlurb: "Combined loan-to-value limits, draw-period vs. repayment-period payments, and the payment jump most borrowers don't see coming.",
-    intro:
+    introText:
       "A home equity line of credit (HELOC) calculation starts with two separate questions: how much you can borrow, and what the payment actually costs once you draw on it. Lenders answer the first question with a combined loan-to-value (CLTV) formula. The second question has two different answers depending on whether you are in the draw period or the repayment period, and that difference catches a lot of borrowers off guard. This guide walks through both with real numbers, using our [mortgage](/mortgage/) and [net worth](/net-worth/) calculators to model the rest of your picture.",
     sections: [
       {
@@ -4610,7 +4610,7 @@ export const GUIDES: Guide[] = [
       "Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.",
     h1: "Commercial Mortgage Calculator: Payment, DSCR, and the Balloon Due at Term End",
     cardBlurb: "DSCR qualification, amortization vs. term length, and the balloon payment residential mortgage calculators don't model.",
-    intro:
+    introText:
       "A commercial mortgage calculation looks similar to a home loan at first glance — principal, rate, and term — but two things make it fundamentally different. Lenders qualify you on debt service coverage ratio (DSCR), not your personal debt-to-income ratio, and the loan's amortization schedule often runs longer than the term itself, leaving a balloon payment due at maturity. This guide walks through both with real numbers.",
     sections: [
       {
@@ -4660,7 +4660,7 @@ export const GUIDES: Guide[] = [
       "Calculate your lease buyout cost — residual value, purchase-option fee, and sales tax — then compare it to financing a used car or leasing again.",
     h1: "Auto Lease Buyout Calculator: Is It Worth It?",
     cardBlurb: "Residual value, purchase-option fees, sales tax, and a side-by-side against financing a comparable used car.",
-    intro:
+    introText:
       "A lease buyout price is not simply the residual value printed on your lease contract. It's the residual value plus a purchase-option fee and, in most states, sales tax on that amount — and if you're buying out early, the math gets more complex still. This guide breaks down where the number comes from and how to decide whether buying out beats turning the car in.",
     sections: [
       {
@@ -4710,7 +4710,7 @@ export const GUIDES: Guide[] = [
       "The 2026 IRA contribution limit is $7,500 ($8,600 if you're 50+). See Roth income limits, deduction rules, and what happens if you contribute too much.",
     h1: "IRA Contribution Limits for 2026: Rules, Deadlines, and Deductions",
     cardBlurb: "The 2026 IRA limit is $7,500 ($8,600 with catch-up), plus Roth income limits, deduction rules, and excess-contribution fixes.",
-    intro:
+    introText:
       "The IRA contribution limit for 2026 is $7,500, up from $7,000 in 2025, with an extra $1,100 catch-up contribution allowed for savers age 50 and older, for a total of $8,600. This limit applies across all your traditional and Roth IRAs combined, not to each account separately. This guide covers the 2026 IRA contribution limits, Roth IRA income phase-outs, which contributions are tax-deductible, and what to do if you contribute more than the law allows.",
     sections: [
       { heading: "IRA Contribution Limits for 2026", body: "The IRA contribution limit for 2026 is $7,500 for anyone under 50. Savers who turn 50 or older by the end of the year can add a $1,100 catch-up contribution, for a total of $8,600. That's up from a $7,000 base limit and a $1,000 catch-up in 2025.\n\nThis limit is a combined cap, not a per-account number. If you contribute $4,000 to a traditional IRA and $3,500 to a Roth IRA in the same year, you've hit the full $7,500 limit and can't add more to either account.\n\nYou also need earned income to contribute. The [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) caps your IRA contribution at the smaller of the annual limit or your total taxable compensation for the year, so a saver who earns $5,000 in wages can only contribute up to $5,000, even though the 2026 limit is higher.\n\nThe deadline to contribute for 2026 is the tax filing deadline in April 2027, not December 31. That gives you extra months after the year ends to fund an account, even a new one you open in early 2027 for the prior tax year." },
@@ -4748,7 +4748,7 @@ export const GUIDES: Guide[] = [
       "The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.",
     h1: "401(k) Contribution Limits for 2026: One Combined Cap for Roth and Traditional",
     cardBlurb: "The 2026 401(k) limit is $24,500, plus catch-up rules and why the Roth and Traditional sides share one number, not two.",
-    intro:
+    introText:
       "The 401(k) contribution limit for 2026 is $24,500, up from $23,500 in 2025. What we see readers get wrong most often is treating the Roth and Traditional sides as separate limits, when the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits) (Internal Revenue Service) treats them as one shared number. Workers 50 and older get a catch-up on top of that cap, and workers 60 to 63 get a bigger one under the [SECURE 2.0 Act](https://www.govinfo.gov/app/details/PLAW-117publ328).",
     sections: [
       { heading: "The 401(k) Contribution Limit for 2026", body: "The 2026 401(k) employee contribution limit is $24,500, according to the IRS. That number covers your own paycheck deferrals only, whether you route them to a Traditional 401(k), a Roth 401(k), or split between the two.\n\nContributions have to reach your plan through payroll by December 31. An IRA (Individual Retirement Account) gives you until the following April's tax deadline to fund the prior year, but a 401(k) does not. Miss the calendar year and that year's room is gone.\n\nThe limit moves almost every year with inflation. It rose from $23,000 in 2024 to $23,500 in 2025 to $24,500 in 2026, a bigger jump than most years because inflation ran higher. Check the [IRS's own contribution-limit page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits) before you set next year's payroll deferral, rather than relying on a number from an old article." },
@@ -4786,7 +4786,7 @@ export const GUIDES: Guide[] = [
       "The real tax implications of paying off your mortgage early: the deduction you lose, retirement withdrawal taxes, and the payoff-vs-invest math worked out.",
     h1: "The Tax Implications of Paying Off Your Mortgage Early",
     cardBlurb: "What you gain and lose at tax time when you pay off your mortgage early, plus the real math on prepaying versus investing instead.",
-    intro:
+    introText:
       "The tax implications of paying off your mortgage early are smaller than most homeowners expect, and they often work against you rather than for you. You lose the mortgage interest deduction, but under 2026 tax rules most homeowners were not benefiting from it anyway. This guide covers exactly what changes on your tax return, the real cost of tapping retirement money to pay off a loan, and a worked example comparing extra mortgage payments against investing the same money, using our [mortgage payoff calculator](/mortgage/) and [investment calculator](/investing/).",
     sections: [
       { heading: "What it means to pay off a mortgage early", body: "Paying off a mortgage early means sending extra money toward your loan's principal, the amount you still owe. You pay it down faster than your required schedule, which shrinks the balance interest gets charged on. That cuts your total interest paid over the life of the loan.\n\nYou can prepay in a few ways. Send steady extra payments each month, or an occasional lump sum from a bonus or refund. A single large payment can close the loan entirely.\n\nRecasting works differently. It uses a lump sum to lower your monthly payment while keeping your original term. Prepaying keeps your payment the same but shortens the term — what most people mean by 'paying off early.'\n\nBoth changes matter less at tax time than homeowners often assume. The deduction people worry about losing usually was not helping them much anyway." },
@@ -4824,7 +4824,7 @@ export const GUIDES: Guide[] = [
       "Learn the 9 most common tax mistakes, from missing 1099 income to missed deadlines, and simple ways to avoid IRS penalties, interest, and audit risk.",
     h1: "9 Common Tax Mistakes and How to Avoid Them",
     cardBlurb: "Nine tax filing errors that trigger IRS penalties and audits, plus the habits that keep your return accurate and on time.",
-    intro:
+    introText:
       "Common tax mistakes cost taxpayers real money every year, in penalties, interest, and delayed refunds. The [IRS](https://www.irs.gov/) processes more than 160 million individual returns each year, and a small error on any one of them triggers the same automated penalty and interest calculations as a large one. Most of these mistakes are avoidable once you know what to check before you file. This guide walks through nine common tax mistakes, the real dollar cost of one of them, and the specific steps that keep your return accurate.",
     sections: [
       {
@@ -4911,7 +4911,7 @@ export const GUIDES: Guide[] = [
       "See if $1 million is enough to retire on. The 4% rule, Social Security math, healthcare costs, and a real income example using ModernWallet's calculator.",
     h1: "How to Retire With $1 Million: Is It Really Enough?",
     cardBlurb: "What $1 million actually pays you in retirement, using the 4% rule, Social Security, and a real income example.",
-    intro:
+    introText:
       "You can retire with $1 million if you keep annual withdrawals near $40,000 to $45,000 and add Social Security on top. That combination, using the widely cited 4% withdrawal guideline, typically produces $56,000 to $90,000 a year in total income, depending on your claiming age and whether you retire alone or as a couple. Whether that number is enough depends on where you live, how early you retire, and how you plan for healthcare costs. This guide breaks down the real math behind retiring with $1 million, from how to build the balance to how to spend it safely once you get there.",
     sections: [
       { heading: "Start Saving Early: The Power of Compounding Toward $1 Million", body: "Time is the biggest lever in reaching $1 million. A 25-year-old who invests $500 a month at a 7% average annual return crosses $1 million by around age 61. Wait until 35 to start the same habit, and that same $500 a month only reaches about $610,000 by 65.\n\nCompounding rewards early dollars far more than late ones. Every year you delay, you need to save more per month to catch up to the same target. A 45-year-old chasing $1 million by 65 typically needs to save two to three times as much per month as a 25-year-old with the same goal.\n\nRun your own timeline and monthly savings rate through ModernWallet's [retirement calculator](/retirement/) to see what your specific start date and contribution actually produce. If you're still years from retiring, [how much the average earner should save](/guides/how-much-to-save-for-retirement-average-earner/) breaks down realistic savings rates by age and income.\n\nAn employer 401(k) match speeds up the timeline more than almost anything else. If your employer matches 50 cents per dollar up to 6% of pay, that match is an instant, guaranteed return you can't get from the market. Skipping it to pay down low-interest debt or save elsewhere usually costs you more than it saves." },
@@ -4949,7 +4949,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "Behind on retirement savings in your 60s? See 2026 catch-up limits, a $200k worked example, and real tactics to close the gap fast.",
     h1: "How to Catch Up on Retirement Savings in Your 60s",
     cardBlurb: "Exact 2026 catch-up limits, a $200k worked example, and real tactics for closing a retirement savings gap in your 60s.",
-    intro: "Catching up on retirement savings in your 60s is possible, even if your balance today is far short of where you hoped. This guide covers the specific tactics that close a savings gap fastest: 2026 catch-up contribution limits, delayed Social Security, downsizing, and phased retirement. It also runs a real worked example through ModernWallet's own retirement calculator, so you can see what these moves actually add up to in dollars. This is a different plan than a standard retirement timeline, so if your savings are already on track, see our guide on [how to retire at 67](/guides/how-to-retire-at-67/) instead.",
+    introText: "Catching up on retirement savings in your 60s is possible, even if your balance today is far short of where you hoped. This guide covers the specific tactics that close a savings gap fastest: 2026 catch-up contribution limits, delayed Social Security, downsizing, and phased retirement. It also runs a real worked example through ModernWallet's own retirement calculator, so you can see what these moves actually add up to in dollars. This is a different plan than a standard retirement timeline, so if your savings are already on track, see our guide on [how to retire at 67](/guides/how-to-retire-at-67/) instead.",
     sections: [
       {
         heading: "How Much Should You Have Saved by Your 60s?",
@@ -5023,7 +5023,7 @@ export const GUIDES: Guide[] = [
       "Is inheritance marital property? Usually no — it's separate property. See when commingling, joint titling, or your state's law can convert it.",
     h1: "Is an Inheritance Considered Marital Property in a Divorce?",
     cardBlurb: "Inheritances usually stay separate property, but commingling, joint titling, or your state's law can convert them. Here's how that happens.",
-    intro:
+    introText:
       "An inheritance is not marital property in most cases — it starts out as separate property that belongs only to the person who received it. That default can change, though, depending on what you do with the money after you get it and which state you live in. This guide walks through exactly when an inheritance stays separate, when it converts to marital property, and the concrete steps that keep it protected.",
     sections: [
       { heading: "The default answer: inheritances start as separate property", body: "An inheritance is legally classified as separate property the moment you receive it, not marital property, in nearly every U.S. state. This holds true even if you received the money or asset while already married, and even if your spouse never contributed anything toward it.\n\nThe reasoning is simple: an inheritance comes from a specific person, usually a parent or relative, and is meant for one heir. Courts treat it differently from income earned during the marriage, which both spouses generally have a claim to.\n\nBut 'starts as separate' is not the same as 'stays separate.' What you do with an inherited asset after you receive it determines whether it keeps that separate-property status through a divorce, and that's the part most people get wrong." },
@@ -5060,7 +5060,7 @@ export const GUIDES: Guide[] = [
       "A good credit score is 670 to 739 on the FICO scale. See all 5 score ranges, the 5 factors behind your score, and what you need for a mortgage or top card.",
     h1: "What Is a Good Credit Score? The FICO Ranges Explained",
     cardBlurb: "The 5 FICO score ranges, the 5 factors that build your score, and the tiers lenders actually look for on a mortgage, auto loan, or rewards card.",
-    intro:
+    introText:
       "A good credit score on the FICO scale is 670 to 739 — one tier below \"very good\" and two tiers below \"exceptional.\" This guide breaks down all five FICO score ranges, the five factors that build your score, how to check it for free, and the score tiers lenders actually look for on a mortgage, auto loan, or top rewards card.",
     sections: [
       { heading: "The Five FICO Score Ranges", body: "FICO scores run from 300 to 850, split into five ranges. [myFICO](https://www.myfico.com/credit-education/credit-scores), the company that publishes the FICO scoring model, defines them as poor (300-579), fair (580-669), good (670-739), very good (740-799), and exceptional (800-850).\n\nMost lenders treat \"good\" as the point where credit becomes meaningfully easier and cheaper. Below 670, you can often still qualify for a loan or card, but usually at a higher rate or a smaller limit. Above 740, the rate difference from one lender to the next starts to shrink, since most already treat you as low-risk.\n\nFICO is not the only score in use. [VantageScore](https://vantagescore.com/), built by the three credit bureaus, uses a similar 300-850 range but can score the same credit report slightly differently. Check which score type a lender is quoting before you compare offers." },
@@ -5101,7 +5101,7 @@ export const GUIDES: Guide[] = [
       "How much you need to retire depends on spending, not age alone. See what changes at 50, 55, 60, 62, and 65, plus Fidelity's income-based savings multiples.",
     h1: "How Much Do I Need to Retire? By Age and Income",
     cardBlurb: "What actually changes at 50, 55, 60, 62, and 65, Fidelity's income-based savings multiples, and why to run your real spending, not a round number.",
-    intro:
+    introText:
       "How much you need to retire depends on your own spending, not just your age or income — but published benchmarks can tell you whether you're roughly on track. This guide covers what changes at each retirement age from 50 to 65, Fidelity's age-based salary-multiple guidelines, and why your income alone, whether that's $80,000 or $150,000 a year, can't produce a single \"right\" retirement number on its own. Use ModernWallet's own [retirement savings calculator](/retirement/retirement-savings-calculator/) and [early retirement calculator](/retirement/early-retirement-calculator/) to run your actual numbers instead of relying on a generic figure.",
     sections: [
       { heading: "Why There's No Single \"Retirement Number\" for Everyone", body: "The amount you need to retire is a function of your annual spending, not a fixed dollar figure that applies to everyone at a given age. Two people retiring at the same age, with the same income history, can need very different amounts if one spends $40,000 a year and the other spends $90,000.\n\nA generic answer to \"how much do I need to retire at 55\" or \"at 62\" can't account for your mortgage status, your health, where you plan to live, or whether a pension or rental income covers part of your costs. That's why this guide focuses on what changes at each age and income level, rather than handing you one number to chase.\n\nThe only way to get a real number is to run your own spending and timeline through a calculator. Start with ModernWallet's [retirement savings calculator](/retirement/retirement-savings-calculator/) to project your balance, then stress-test an earlier date with the [early retirement calculator](/retirement/early-retirement-calculator/)." },
@@ -5141,7 +5141,7 @@ export const GUIDES: Guide[] = [
       "A mega backdoor Roth 401(k) converts after-tax contributions above the deferral limit into Roth money. See the 2026 IRS limits and who can use it.",
     h1: "Mega Backdoor Roth 401(k): How It Actually Works",
     cardBlurb: "After-tax 401(k) contributions above the deferral limit, converted to Roth — the 2026 IRS limits, the plan features you need, and who this is for.",
-    intro:
+    introText:
       "A mega backdoor Roth lets some 401(k) savers convert after-tax contributions — money added on top of the standard $24,500 employee deferral limit — into a Roth account, using the IRS's much higher combined contribution limit. It only works if your specific employer plan allows both after-tax contributions and an in-plan Roth conversion or in-service withdrawal, and many plans allow neither. This guide covers the exact 2026 IRS limits, the two plan features you need to check for, and how this differs from the more common \"backdoor Roth\" IRA strategy.",
     sections: [
       { heading: "The Two Contribution Limits That Make This Work", body: "Two separate IRS limits create the room a mega backdoor Roth uses. The first is the employee elective deferral limit under IRC section 402(g), which caps your own pretax and Roth 401(k) contributions at [$24,500 for 2026](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500).\n\nThe second is the much larger combined limit under IRC section 415(c), which caps everything added to your account each year from every source — your own contributions, your employer's match and profit sharing, and any after-tax contributions — at $72,000 for 2026, according to [IRS Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf).\n\nThe gap between those two numbers is the room a mega backdoor Roth fills. If your employer contributes $10,000 in match and profit sharing and you defer the full $24,500, you have roughly $37,500 of additional room under the $72,000 total before you hit the 415(c) ceiling — room that after-tax contributions can use." },
@@ -5183,7 +5183,7 @@ export const GUIDES: Guide[] = [
       "How to budget for teens and college students: a percentage framework for irregular pay and aid, dorm and textbook costs, and the debt traps to avoid.",
     h1: "How to Budget for Teens and College Students",
     cardBlurb: "A student-scaled percentage framework for irregular paychecks and aid refunds, dorm costs, and the two debt traps that catch first-timers.",
-    intro:
+    introText:
       "Budgeting as a teen or college student means working with irregular money — a part-time paycheck, a financial aid refund, or cash from family — instead of one steady salary. This guide covers a simplified percentage framework scaled for a student budget, how to handle irregular income and aid disbursements, the two traps that catch the most first-time credit card and subscription users, and how to start an emergency fund habit before you need one.",
     sections: [
       { heading: "Why a Student Budget Looks Different From an Adult Budget", body: "A student budget skips the biggest line items in a typical household budget, like a mortgage or a 401(k) contribution, and replaces them with costs unique to this stage of life. Dorm fees, a meal plan, textbooks, and splitting a lease with roommates take the place of rent and a full grocery budget.\n\nIncome looks different too. Instead of one predictable paycheck, a student's money often comes from several irregular sources: a part-time job, a twice-a-year financial aid refund, or occasional support from family. Building a budget around a single \"monthly income\" number, the way an adult budget does, usually doesn't fit a student's real cash flow.\n\nThe goal at this stage isn't a perfect budget — it's building the habit of tracking money in and out before the stakes get higher. Every habit built now carries forward into the bigger budgets that come with a first full-time job." },
@@ -5221,7 +5221,7 @@ export const GUIDES: Guide[] = [
       "FAFSA net worth and accredited investor net worth are different tests. See what FAFSA excludes, what the SEC's $1 million test counts, and why it matters.",
     h1: "Net Worth for FAFSA vs. Accredited Investor Status",
     cardBlurb: "Two unrelated net-worth definitions: what FAFSA counts as a family asset, and the SEC's $1 million accredited-investor test.",
-    intro:
+    introText:
       "\"Net worth\" means two very different things depending on why you're calculating it: the FAFSA asks about a narrow slice of family assets to determine financial aid, while the SEC's accredited investor test asks about a much broader $1 million threshold to determine access to private investments. This guide covers both definitions separately, since confusing one for the other can lead to over-reporting assets on a financial aid form or misjudging your eligibility for a private investment.",
     sections: [
       { heading: "Net Worth for FAFSA: What Actually Counts as an Asset", body: "The FAFSA only counts a specific, narrow list of assets toward your Student Aid Index, not your full net worth. According to the [2026-2027 Federal Student Aid Handbook](https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2026-2027/application-and-verification-guide/ch3-student-aid-index-sai-and-pell-grant-eligibility), reportable assets include cash and savings, investments like stocks and bonds, and net business or farm value above certain thresholds.\n\nTwo of the biggest assets most families hold are explicitly left off the form. Your primary residence, the home you actually live in, is excluded from FAFSA assets entirely, even if it makes up most of your net worth. Retirement accounts, including a 401(k), a traditional or Roth IRA, and a pension, are also not reported as assets on the FAFSA.\n\nThis is a much narrower definition of net worth than the one used for most other financial purposes. A family with significant home equity and a well-funded 401(k) can have a modest FAFSA-reportable asset total even with a large true net worth, calculated the way our [net worth calculator](/net-worth/) or [how to calculate net worth guide](/net-worth/how-to-calculate-net-worth/) would." },
@@ -5259,7 +5259,7 @@ export const GUIDES: Guide[] = [
       "A home equity investment pays cash with no monthly bill — but CFPB research found effective costs of 19.5% to 22% a year. See the math before you sign.",
     h1: "Home Equity Investment: How It Works and What It Really Costs",
     cardBlurb: "No monthly payment, but the payoff bill can run 19% to 22% a year — the CFPB math behind a home equity investment, worked through with real numbers.",
-    intro:
+    introText:
       "A home equity investment (also sold as a home equity contract, home equity agreement, or shared-equity agreement) trades a lump sum of cash today for a slice of your home's future value. There's no monthly bill and no interest rate in the usual sense, which is exactly how these products are marketed. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-home-equity-contracts-market-overview/) took a closer look in January 2025 and found the real cost runs far higher than the marketing suggests. This guide breaks down how a home equity investment works, what it actually costs, and how it stacks up against the [HELOC and home equity loan](/compare/heloc-vs-home-equity-loan/) options most homeowners consider first.",
     sections: [
       {
@@ -5316,7 +5316,7 @@ export const GUIDES: Guide[] = [
       "Grad PLUS loans end for new borrowers on July 1, 2026. See the real order of operations for funding grad school under the new federal borrowing caps.",
     h1: "How to Pay for Grad School: A Cost-Ranked Guide for 2026",
     cardBlurb: "Grad PLUS loans are gone for new borrowers — here's the real order of operations for funding grad school under the new 2026 federal caps.",
-    intro:
+    introText:
       "Paying for grad school changed on July 1, 2026. The Grad PLUS loan program, which used to let graduate and professional students borrow up to their full cost of attendance, stopped accepting new borrowers that day under the [One Big Beautiful Bill Act](https://www.congress.gov/bill/119th-congress/house-bill/1). This guide ranks every real funding source by cost — free money first, then the new federal loan caps, then private loans — so you borrow the least amount possible for the degree you're paying for. For how the new repayment rules affect the loans you do take out, see our [Tiered Standard Repayment Plan guide](/guides/student-loan-standard-repayment-plan/).",
     sections: [
       {
@@ -5371,7 +5371,7 @@ export const GUIDES: Guide[] = [
       "Is a money market account worth it? An honest look at what you gain over a regular savings account, the real costs, and who should choose something else.",
     h1: "Is a Money Market Account Worth It?",
     cardBlurb: "A balanced verdict on money market accounts: what they actually add over a savings account, and who should look elsewhere.",
-    intro:
+    introText:
       "A money market account (MMA) is worth it for most people who want a safe place to hold cash and earn more than a traditional bank savings account, without giving up FDIC insurance or easy access to the money. It is not worth it if you can get an equal or better rate from a high-yield savings account with fewer restrictions, or if you are chasing yield on money you will not touch for years, where investing may serve you better. This page gives you a plain, no-hype verdict: what a money market account actually adds, what it costs you, and who should choose something else instead.",
     sections: [
       { heading: "What you actually gain over a regular savings account", body: "The main thing a money market account adds over a traditional bank savings account is yield. A typical big-bank savings account pays a fraction of a percent, while a competitive online money market account has paid several percentage points more in recent years — see our [best money market accounts](/roundup/best-money-market-accounts/) roundup for current top picks.\n\nMany money market accounts also add check-writing privileges and a debit card, which most savings accounts do not offer. That makes an MMA a reasonable middle ground between a fully liquid checking account and a pure savings account, useful for a large expense fund you access more than a few times a year." },
@@ -5406,7 +5406,7 @@ export const GUIDES: Guide[] = [
       "Asset allocation by age: how a typical stock/bond/cash split shifts from your 20s through retirement, with the \"110 minus age\" rule and real caveats.",
     h1: "Asset Allocation by Age: How Your Mix Should Shift Over Time",
     cardBlurb: "How a typical stock/bond/cash split changes from your 20s through retirement — and why your own timeline matters more than your birthday.",
-    intro:
+    introText:
       "Asset allocation by age is a rule-of-thumb approach to investing: as you get older and closer to needing your money, you generally shift from more stocks (higher growth, higher volatility) toward more bonds and cash (lower growth, more stability). The most common shorthand is \"110 minus your age\" in stocks, though the right number for you depends on your actual time horizon, other income sources, and comfort with risk — not just your birth year. This guide walks through a typical glide path by decade and the caveats every age-based rule glosses over.",
     sections: [
       { heading: "The \"110 minus your age\" rule, and its limits", body: "A common shorthand is to hold roughly (110 minus your age) percent in stocks, with the rest in bonds and cash. A 30-year-old would target about 80% stocks; a 60-year-old about 50%. It's a starting point, not a personalized plan — the SEC's own guidance emphasizes time horizon and risk tolerance over age alone.\n\nThe rule assumes you're saving for a single, distant goal like traditional retirement. It says nothing about other income (a pension, rental income, Social Security), how much you've already saved relative to your goal, or how you'd actually react to a 30% portfolio drop. Two 45-year-olds with identical account balances can reasonably hold very different allocations. Test your own mix in the [asset allocation calculator](/portfolio/asset-allocation-calculator/) rather than applying the rule blindly." },
@@ -5441,7 +5441,7 @@ export const GUIDES: Guide[] = [
       "What is a CFA? See the exam structure, real pass rates, total cost, eligibility rules, and when the charter actually matters for choosing an advisor.",
     h1: "What Is a Chartered Financial Analyst (CFA)? The Exam, Cost, and What the Charter Means",
     cardBlurb: "The three exam levels, real pass rates and total cost, what charterholders actually do, and when a CFA matters more than a CFP for your money.",
-    intro:
+    introText:
       "A Chartered Financial Analyst, or CFA, is a professional who has passed all three levels of the CFA Program, logged 4,000 hours of qualifying investment work experience, and joined [CFA Institute](https://www.cfainstitute.org/) as a member bound by its Code of Ethics and Standards of Professional Conduct. It's a credential, not a license — earning it takes most candidates three to four years and roughly 900 hours of study, but it does not by itself authorize anyone to manage your money. This guide covers who's eligible, what the exam actually tests, what charterholders do for a living, and how to tell whether a CFA matters for your own decision to hire (or not hire) a financial advisor.",
     sections: [
       {
@@ -5503,7 +5503,7 @@ export const GUIDES: Guide[] = [
       "Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.",
     h1: "Is Social Security Taxable? The IRS Combined-Income Formula Explained",
     cardBlurb: "The exact combined-income formula and thresholds that decide whether the IRS taxes up to 85% of your Social Security benefit.",
-    intro:
+    introText:
       "Social Security benefits become federally taxable once your \"combined income\" — adjusted gross income, tax-exempt interest, and half your Social Security benefit — passes $25,000 for single filers or $32,000 for married couples filing jointly, according to the [Social Security Administration](https://www.ssa.gov/benefits/retirement/planner/taxes.html). Up to 50% of your benefit is taxable between the lower and upper thresholds, and up to 85% is taxable above $34,000 single or $44,000 married, per the [IRS](https://www.irs.gov/faqs/social-security-income). This guide walks through the exact formula, why these thresholds catch more retirees every year, and how to plan around them. Run your own benefit estimate first with ModernWallet's [Social Security retirement calculator](/retirement/social-security-retirement-calculator/).",
     sections: [
       { heading: "The Short Answer: It Depends on Your Combined Income", body: "Social Security benefits are federally taxable once your combined income crosses $25,000 for single filers or $32,000 for married couples filing jointly, according to the Social Security Administration. Below those amounts, none of your benefit is taxable. Between the lower and upper threshold, up to 50% of your benefit can be added to taxable income; above the upper threshold — $34,000 single or $44,000 married — up to 85% can be taxed, per the IRS.\n\nThis isn't a special Social Security tax rate. The taxable portion of your benefit is added to your other income and taxed at your regular federal income tax bracket, the same as wages or a 401(k) withdrawal." },
@@ -5544,7 +5544,7 @@ export const GUIDES: Guide[] = [
       "Regular military retired pay is taxed as income. Chapter 61 disability retired pay can be tax-free if it is combat-related. See the CRDP vs CRSC tax gap.",
     h1: "Is Military Disability Retirement Pay Taxable?",
     cardBlurb: "The combat-related exclusion, the pre-1975 grandfather rule, and why CRDP and CRSC are taxed differently for the same disability.",
-    intro:
+    introText:
       "Military disability retirement pay is taxable in most cases, the same as a standard pension, but a real exception excludes part or all of it for some Chapter 61 retirees. The exclusion turns on whether your disability is combat-related, not on your VA rating alone. This guide covers who qualifies for the exclusion under [26 U.S.C. § 104](https://www.law.cornell.edu/uscode/text/26/104), and a detail that surprises many retirees: CRDP and CRSC, the two programs that restore VA disability pay alongside retired pay, are not taxed the same way. See our [Chapter 61 medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison for how the underlying retirement works.",
     sections: [
       { heading: "The default rule: taxable like any other pension", body: "Chapter 61 disability retired pay is taxable federal income by default, reported each year on a 1099-R from [DFAS](https://www.dfas.mil/RetiredMilitary/), the same as a standard length-of-service pension.\n\nThis surprises some new retirees, since the pay is tied to a disability rating. The rating decides your eligibility and pension formula, not whether the government taxes the result. Most Chapter 61 retirees owe federal income tax on their monthly retired pay just like any other retiree." },
@@ -5581,7 +5581,7 @@ export const GUIDES: Guide[] = [
       "DSCR loan requirements for investors: no personal income verification, but a debt service coverage ratio near 1.0–1.25, 20–25% down, and 620+ credit.",
     h1: "DSCR Loan Requirements: What Real Estate Investors Actually Need",
     cardBlurb: "How a debt service coverage ratio loan qualifies you on the property's rent instead of your paycheck — the ratio, down payment, credit, and occupancy rules.",
-    intro:
+    introText:
       "A DSCR (debt service coverage ratio) loan qualifies an investment property purchase using the property's own rental income instead of the borrower's pay stubs or tax returns. There's no single federal minimum the way there is for an FHA or VA loan — each lender sets its own bar — but most currently require a DSCR near 1.0 to 1.25, a down payment of 20% to 25%, and a credit score of at least 620 to 660. This guide covers exactly how DSCR is calculated, why these loans skip personal income verification, and the occupancy and property rules that apply. Run the debt-coverage math on a specific deal with ModernWallet's [rental property ROI calculator](/real-estate/roi-calculator/).",
     sections: [
       { heading: "The Short Answer: Rent Covers the Loan, Not Your Paycheck", body: "A DSCR loan qualifies you based on whether a rental property's income covers its own mortgage payment, not your personal income, tax returns, or employment history. Lenders calculate DSCR by dividing the property's net operating income by its annual debt service (the total yearly loan payment); a DSCR of 1.0 means rent exactly covers the payment, and most lenders want a ratio above that as a cushion.\n\nBecause qualification runs through the property instead of the borrower, DSCR loans are popular with self-employed investors, people who already own several rental properties, and anyone whose tax returns show heavy write-offs that make personal income look lower than it really is." },
@@ -5620,7 +5620,7 @@ export const GUIDES: Guide[] = [
       "Portfolio rebalancing keeps your asset mix on target. See calendar vs. threshold rebalancing, the tax cost in a taxable account, and a simple rule.",
     h1: "Portfolio Rebalancing: When and How to Reset Your Asset Mix",
     cardBlurb: "Calendar vs. threshold rebalancing, the tax cost of selling winners in a taxable account, and a simple rule for when it's actually worth doing.",
-    intro:
+    introText:
       "Portfolio rebalancing means selling some of your best-performing assets and buying more of your underperforming ones to bring your portfolio back to its original target mix, according to the SEC's [investor.gov](https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset). Left alone, a portfolio drifts: strong stock returns can push a 60/40 stock-bond split to 65/35 or higher within a few years, quietly taking on more risk than you originally chose. This guide covers the two standard rebalancing methods, why rebalancing costs nothing in a 401(k) or IRA but can trigger real capital gains tax in a taxable account, and a simple rule for how often it's actually worth doing. Model your own target mix first with ModernWallet's [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
     sections: [
       { heading: "The Short Answer: Rebalancing Resets Your Risk Back to Target", body: "Portfolio rebalancing is the practice of buying and selling assets to bring your portfolio back to its intended target allocation, according to the SEC's investor.gov. Because different asset classes grow at different rates, your actual mix drifts away from your original plan over time — rebalancing is the correction, not an attempt to time the market or chase returns.\n\nThe SEC's own guidance frames the mechanical effect directly: by cutting back on the current \"winners\" and adding more of the current so-called \"losers,\" rebalancing forces you to buy low and sell high — a discipline that runs opposite to how most investors feel about their portfolio in the moment." },
@@ -5661,7 +5661,7 @@ export const GUIDES: Guide[] = [
       "Real estate transfer tax explained: what it is, who typically pays it, and worked NJ and NY examples so you know roughly what to expect at closing.",
     h1: "Real Estate Transfer Tax Explained",
     cardBlurb: "What it is, who pays it, and worked examples from New Jersey and New York.",
-    intro:
+    introText:
       "Real estate transfer tax is a one-time government fee charged when ownership of real property changes hands, calculated as a percentage or flat rate of the sale price. It shows up on the closing disclosure as a separate line from your down payment and lender fees, and in some states it runs into the thousands of dollars on an ordinary sale. This guide explains what it is, who typically pays it, and walks through real New Jersey and New York examples so you know roughly what to budget before you get to the closing table.",
     sections: [
       { heading: "What real estate transfer tax actually is", body: "A real estate transfer tax (sometimes called a conveyance tax, deed tax, or recordation fee) is charged by a state or local government when a deed is recorded transferring ownership of real property. It is a one-time charge triggered by the sale itself, not an ongoing bill.\n\nThis is the key thing that trips people up: transfer tax is not the same as property tax. Property tax is billed every year based on the home's assessed value, whether or not it ever sells. Transfer tax is paid once, at closing, and is tied to the sale price. Some states charge no transfer tax at all, and the ones that do all set their own rates and rules, so the first step is confirming whether your state and county charge one before you assume a number." },
@@ -5699,7 +5699,7 @@ export const GUIDES: Guide[] = [
       "Budget variance calculation explained in plain terms: the formula, favorable vs unfavorable variance, a worked example, and how to apply it at home.",
     h1: "Budget Variance Calculation Explained",
     cardBlurb: "The formula, favorable vs unfavorable variance, and a worked example.",
-    intro:
+    introText:
       "Budget variance is the gap between what you planned to spend or earn and what actually happened, expressed in dollars or as a percentage. Businesses run this calculation every month to catch a runaway expense line before it becomes a real problem. The formula is simple: variance equals actual minus budget. This guide walks through that formula, how to read a favorable variance versus an unfavorable one, and a worked example, then shows the same math already running quietly inside our own household budget calculators.",
     sections: [
       { heading: "The budget variance formula", body: "Dollar variance equals actual minus budget: subtract the planned (budgeted) amount from what actually happened. Percentage variance takes that same difference and divides it by the budgeted amount, then multiplies by 100.\n\nSo if a department budgeted $10,000 for the month and actually spent $11,500, the dollar variance is $11,500 minus $10,000, or $1,500 over. The percentage variance is $1,500 divided by $10,000, times 100: 15%. Both numbers matter. The dollar figure tells you the real cash impact; the percentage tells you how far off the plan was, relative to its size." },
@@ -5738,7 +5738,7 @@ export const GUIDES: Guide[] = [
       "A 40-year mortgage lowers your payment but adds over $200,000 in interest on a typical loan. See the real numbers and who actually qualifies.",
     h1: "40-Year Mortgage: How It Works, the Real Cost, and Who Qualifies",
     cardBlurb: "A lower monthly payment, a much bigger interest bill: the real math and who actually qualifies.",
-    intro:
+    introText:
       "A 40-year mortgage stretches your home loan's principal and interest payments over 480 months instead of the standard 360, which lowers your monthly payment but adds years and a large amount of extra interest. On a $350,000 loan at 7% APR, a 40-year term costs $2,175.01 a month versus $2,328.56 on a 30-year term, a $153.55 monthly savings, but the 40-year loan costs $694,004.55 in total interest against $488,281.14 for the 30-year, a $205,723.41 difference. This guide covers how the math works, who actually qualifies for a purchase-money 40-year loan, and the separate case where a 40-year term shows up as a loan modification instead.",
     sections: [
       {
@@ -5826,7 +5826,7 @@ export const GUIDES: Guide[] = [
       "Find out how SSI and inheritance rules interact in 2026: the resource limit, the 10-day reporting rule, special needs trusts, and ABLE accounts explained.",
     h1: "Will an Inheritance Affect Your SSI Benefits?",
     cardBlurb: "See how SSI treats an inheritance, when to report it, and which tool protects it, step by step.",
-    intro:
+    introText:
       "An inheritance can end your Supplemental Security Income if you handle it the wrong way. SSI is a needs-based program with strict income and savings limits. A sudden windfall can push you over the line fast. The good news is that you have real options. This matters whether you already receive SSI or expect to inherit money for a family member who does. This guide covers how SSI treats an inheritance and what you must report, and when. It also covers which legal tools protect the money without costing you your monthly check.",
     sections: [
       { heading: "SSI vs. Social Security: Why the Difference Matters", body: "SSI is a needs-based benefit. It supports people who are 65 or older, blind, or disabled and have limited income and resources. Social Security retirement and disability (SSDI) are earned benefits tied to your work history instead. Only SSI has an income and resource test. An inheritance threatens SSI in a way it never threatens SSDI or retirement benefits.\n\nSSDI and Social Security retirement pay out based on what you paid into the system through payroll taxes. Social Security does not check your bank account or assets before sending that check. It pays out no matter how large your inheritance is. Medicare, the health coverage tied to SSDI, works the same way and never checks your assets.\n\nIf you receive both SSI and SSDI at the same time, only the SSI portion is at risk. Your SSDI payment stays the same regardless of what you inherit." },
@@ -5863,7 +5863,7 @@ export const GUIDES: Guide[] = [
       "Selling raw land can trigger a large tax bill. Learn how capital gains tax on land sale works and 6 IRS-backed ways to legally reduce or defer it in 2026.",
     h1: "How to Avoid Capital Gains Tax When You Sell Land",
     cardBlurb: "Six IRS-backed ways to defer, reduce, or avoid capital gains tax on a land sale, plus a real-number installment sale vs. 1031 exchange comparison.",
-    intro:
+    introText:
       "Selling land can trigger a large capital gains tax bill, especially if you have owned it for years. The good news is you have several legal ways to reduce, defer, or even avoid that tax. This guide covers six IRS-allowed strategies and the exact 2026 tax rates and thresholds you need. It also includes a worked example comparing an installment sale with a 1031 exchange. The numbers are realistic but based on a hypothetical mid-size land parcel, not a real sale.",
     sections: [
       { heading: "How Capital Gains Tax Works on a Land Sale", body: "Long-term capital gains tax applies when you sell land you owned for more than one year. The rate depends on your taxable income and filing status. In 2026, single filers pay 0% up to $49,450, 15% up to $545,500, and 20% above that, according to the [IRS](https://www.irs.gov/taxtopics/tc409). Married couples filing jointly pay 0% up to $98,900, 15% up to $613,700, and 20% above that. Land held one year or less is taxed as short-term gain, at your regular income tax rate instead.\n\nYour taxable gain equals the sale price minus your basis. Basis is what you paid for the land, plus eligible improvement costs. You can estimate your exact gain and tax with ModernWallet's [capital gains tax calculator](/real-estate/capital-gains-calculator/). Many sellers assume the Section 121 home-sale exclusion will help. That exclusion is worth $250,000 (single) or $500,000 (married), but generally does not apply to a standalone land sale. The exclusion can cover adjacent vacant land in limited cases. You must sell the land and the home within two years of each other. You must also treat both sales as one transaction, per [IRS Publication 523](https://www.irs.gov/publications/p523).\n\nHigh earners may also owe the Net Investment Income Tax, a 3.8% surtax on investment income. It applies once your MAGI passes $200,000 (single) or $250,000 (joint), per [IRS Topic 559](https://www.irs.gov/taxtopics/tc559). You report and pay the capital gains tax with your federal return for the year of the sale. If your gain is large, you may need to make quarterly estimated tax payments to avoid an underpayment penalty." },
@@ -5900,7 +5900,7 @@ export const GUIDES: Guide[] = [
       "There is no special capital gains tax exemption for seniors under federal law. See what actually lowers the bill: the 0% bracket, Section 121, and QCDs.",
     h1: "Capital Gains Tax for Seniors: What the Law Really Says",
     cardBlurb: "Seniors get no special capital gains tax break, but several legal strategies can still shrink the bill in retirement.",
-    intro:
+    introText:
       "Many people search for a senior capital gains exemption that no longer exists. Federal tax law treats capital gains the same way at every age. This guide explains how capital gains tax works for older filers. It also lists the real, legal ways to pay less.",
     sections: [
       { heading: "How Capital Gains Taxes Work", body: "Capital gains tax applies to the profit you make when you sell an asset for more than you paid. Common examples include stock, mutual funds, and a home. Hold the asset for more than one year, and the gain counts as long-term. Long-term gains get taxed at lower rates than your regular income. Sell within a year, and the gain counts as short-term, taxed at your ordinary income rate instead.\n\nFor 2026, the long-term rates are 0%, 15%, or 20%, based on your taxable income. Single filers pay 0% on gains up to $49,450 of taxable income. The rate rises to 15% up to $545,500, then 20% above that. Married couples filing jointly pay 0% up to $98,900 and 15% up to $613,700. You can estimate your own bill with the [capital gains tax calculator](/real-estate/capital-gains-calculator/)." },
@@ -5938,7 +5938,7 @@ export const GUIDES: Guide[] = [
       "Are church donations tax deductible in 2026? Learn the AGI limits, new 0.5% floor, $250 receipt rule, and how bunching can beat the standard deduction.",
     h1: "Are Church Donations Tax Deductible in 2026?",
     cardBlurb: "A 2026 breakdown of when church donations are deductible, the new 0.5% AGI floor, and how bunching can beat the higher standard deduction.",
-    intro:
+    introText:
       "Church donations are tax deductible when you itemize your return and the church qualifies as a tax-exempt organization. Most donors, though, no longer get an extra tax break for tithing. The 2026 standard deduction jumped sharply under a new federal tax law. Fewer households now clear the itemizing threshold. This guide covers what counts, what does not, and the new 2026 IRS rules. It also covers the planning moves that still work. Every figure below comes from IRS Publication 526 and related IRS guidance.",
     sections: [
       { heading: "Which Church Donations Are Tax-Deductible", body: "A church donation is tax-deductible when you itemize on Schedule A and the church is a qualified tax-exempt group. Churches automatically qualify as 501(c)(3) organizations, so they do not need separate IRS approval like most other charities. Cash gifts, checks, payroll-deducted offerings, and online tithes all count as cash contributions.\n\nNon-cash gifts count too. Donated clothing, furniture, or a used car qualifies at fair market value, which is what a willing buyer would pay. If you drive to church events as a volunteer, you can deduct 14 cents per mile plus parking and tolls. You can also deduct unreimbursed costs tied to volunteer work, like supplies you buy for a church program.\n\nKnowing what qualifies is only half the picture. See [how much tax you'll actually pay](/guides/how-much-tax-will-i-pay/) this year to judge whether a deduction meaningfully lowers your bill." },
@@ -5975,7 +5975,7 @@ export const GUIDES: Guide[] = [
       "Learn how to withdraw money from your 401k the right way: RMD age rules, lump-sum vs. periodic withdrawals, taxes owed, and hardship or loan tradeoffs.",
     h1: "How to Withdraw Money From Your 401(k) After 59½",
     cardBlurb: "A plain-English breakdown of 401(k) RMDs, withdrawal methods, taxes, and pre-retirement options like the Rule of 55, hardship withdrawals, and 401(k) loans.",
-    intro:
+    introText:
       "Withdrawing from a 401(k) works differently before and after age 59½. This guide covers the post-59½ side: required minimum distributions and how each withdrawal method gets taxed. It also covers when a loan or the Rule of 55 makes sense before retirement. For the exact 10% early-withdrawal penalty math, use the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) instead of re-deriving it here.",
     sections: [
       { heading: "When You're Required to Withdraw From a 401(k)", body: "You must start required minimum distributions, or RMDs, from a traditional 401(k) at age 73. That age rises to 75 for anyone born in 1960 or later, under the SECURE 2.0 Act. If you were born between 1951 and 1959, your RMD age stays at 73. This rule applies to traditional 401(k) balances only. SECURE 2.0 removed the RMD requirement for Roth 401(k) balances starting in 2024, so that money can now stay invested for as long as you like.\n\nYour first RMD is due by April 1 of the year after you turn the required age. Every RMD after that is due by December 31. Some plans let you delay RMDs past 73 if you keep working there, unless you own 5% or more of the company. The [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds) calculates your RMD by dividing your account balance from December 31 of the prior year by a life-expectancy factor from its Uniform Lifetime Table. Use the [401(k) calculator](/retirement/401k-calculator/) to see how your balance and future RMDs might grow.\n\nMissing an RMD triggers a steep tax penalty. The IRS charges a 25% excise tax on the amount you should have withdrawn. That penalty drops to 10% if you fix the shortfall within two years and file Form 5329." },
@@ -6012,7 +6012,7 @@ export const GUIDES: Guide[] = [
       "Inheriting a house doesn't create an automatic tax bill. Learn how the stepped-up basis resets your cost basis at death, with a real-number example.",
     h1: "Capital Gains Tax on Inherited Property: How the Stepped-Up Basis Works",
     cardBlurb: "Inheriting real estate resets your cost basis to date-of-death value, so you're only taxed on gains after that point. Here's the exact math.",
-    intro:
+    introText:
       "Inheriting a house does not create an automatic tax bill. The IRS resets your cost basis to the property's fair market value on the date the original owner died, a rule called the stepped-up basis. That reset means you generally owe capital gains tax only on the growth that happens after you inherit, not on decades of appreciation the original owner never paid tax on. This guide walks through how the stepped-up basis works, what happens with multiple heirs, and the exact math on a worked example before you sell.",
     sections: [
       { heading: "You Don't Owe Tax Just for Inheriting Property", body: "Inheriting real estate is not a taxable event on its own. The [IRS](https://www.irs.gov/publications/p559) does not tax you simply for receiving a house, land, or other property from someone's estate. Tax only enters the picture if and when you sell the property for more than your basis.\n\nThis surprises a lot of heirs. Many assume they owe tax on the property's full value the moment it passes to them, the way an inheritance of cash might feel like income. Your tax bill actually depends entirely on your basis and your eventual sale price, not on the property's value at the moment you inherit it.\n\nA separate tax, the federal estate tax, can apply to very large estates before assets even reach heirs. The 2026 federal exemption is $15,000,000 per individual, so it affects almost no families. Five states also charge a separate inheritance tax on beneficiaries directly: Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. Check where a large estate stands with our [estate tax calculator](/estate-planning/estate-tax-calculator/) if the estate is large or you inherited property in one of those states." },
@@ -6048,7 +6048,7 @@ export const GUIDES: Guide[] = [
       "Retirement age affects your health in real, researched ways. See what studies on retirement and longevity show, and how to find your own ideal age.",
     h1: "What's the Ideal Retirement Age for Your Health?",
     cardBlurb: "Retirement age and health are genuinely linked, but the research is mixed. Here's how to weigh your job, your body, and your money together.",
-    intro:
+    introText:
       "Retirement age affects your health, but not in one single direction. Research on the topic is genuinely mixed: some studies link continued work to better mental health and lower dementia risk, while others link earlier retirement to less stress and better sleep. The right answer depends heavily on your specific job, your health today, and what you plan to do with your time once you stop working. This guide covers what the research actually shows, the health factors worth weighing before you pick a date, and how to combine that with your own numbers.",
     sections: [
       { heading: "How Retirement Age Impacts Longevity", body: "Retiring later is linked to lower mortality in some large studies, but the picture is not simple. The [Health and Retirement Study](https://www.nia.nih.gov/research/resource/health-and-retirement-study-hrs), a long-running survey of more than 20,000 Americans over age 50 backed by the National Institute on Aging, has tracked how work and health change together as people age. A [systematic review of longitudinal studies](https://pmc.ncbi.nlm.nih.gov/articles/PMC4029767/) on retirement and health found genuinely inconsistent results: some studies show physical and mental health improving after retirement, while others show declines in physical functioning and cognitive performance.\n\nThat inconsistency matters more than any single headline number. Whether retirement helps or hurts your health seems to depend heavily on why you retired. Someone who retires voluntarily, with a plan for their time and enough savings, tends to fare differently than someone forced out by a layoff or a health crisis.\n\nLife expectancy data adds useful context, even though it does not predict any one person's outcome. According to the [CDC](https://www.cdc.gov/nchs/fastats/life-expectancy.htm), a person who reaches age 65 today can expect to live close to another 20 years on average, with women averaging a couple of years longer than men. That is a longer runway than most retirement plans from a generation ago assumed, and it means health decisions made at 62 or 67 can shape two full decades, not just a few years." },
@@ -6082,7 +6082,7 @@ export const GUIDES: Guide[] = [
       "Your rights when a debt collector calls: FDCPA rules, how to demand debt validation, what to do about a court summons, and how to file a CFPB complaint.",
     h1: "How to Deal With Debt Collectors: Know Your Rights",
     cardBlurb: "The FDCPA rules collectors must follow, how to demand written proof of a debt, and what to do if you get sued.",
-    intro:
+    introText:
       "A debt collector cannot legally harass, threaten, or lie to you, no matter how much you owe. The [Fair Debt Collection Practices Act](https://www.consumerfinance.gov/consumer-tools/debt-collection/) sets firm rules for what a collector can and cannot do, and the CFPB enforces those rules. This guide covers your rights the moment a collector contacts you, how to demand proof of the debt, what to do if you get sued, and how to report a collector who breaks the law.",
     sections: [
       { heading: "Your Rights Start With the First Contact", body: "Federal law protects you starting with the very first phone call or letter. The Fair Debt Collection Practices Act covers debt collectors, meaning companies that collect debts on behalf of someone else, and it bans abusive, unfair, or deceptive collection tactics. It applies whether the debt is a credit card, medical bill, or old utility account.\n\nDo not let pressure on that first call push you into agreeing to anything. A collector may push for an immediate payment or a fast verbal commitment, but you are allowed to say you need time to review your records before you discuss the debt further. Get the collector's name, company, and a callback number, then hang up if you need to." },
@@ -6119,7 +6119,7 @@ export const GUIDES: Guide[] = [
       "How much does refinancing a mortgage cost? See the real refinance closing cost breakdown, no-closing-cost tradeoffs, and a worked break-even example.",
     h1: "Mortgage Refinance Closing Costs: What You'll Actually Pay",
     cardBlurb: "The real closing cost breakdown for a refinance, how it differs from a purchase, and the break-even math that decides if it's worth it.",
-    intro:
+    introText:
       "Refinancing a mortgage typically costs 2% to 5% of your new loan amount in closing costs, paid again even though you already paid closing costs once when you bought the home. On a $320,000 refinance, that works out to roughly $6,400 to $16,000. This guide breaks down exactly what those refinance closing costs cover, how they differ from the closing costs you paid at purchase, what a no-closing-cost refinance actually does to your rate, and how to calculate whether refinancing is worth it at all.",
     sections: [
       { heading: "How Refinance Closing Costs Differ From Purchase Closing Costs", body: "Refinance closing costs are not the same bill as purchase closing costs, even though several line items overlap. Both include an origination fee, an appraisal, title insurance, and recording fees. But a refinance has no down payment and no real estate agent commission, since you are not buying a new property.\n\nA refinance also often includes a fresh escrow account setup, sometimes called a reserve deposit, which can add a meaningful chunk to your upfront cost. Your old escrow balance, covering prepaid property tax and insurance, typically gets refunded separately after the new loan closes, but the new lender still requires its own reserve cushion at closing. If you have not already worked through the closing costs on a purchase, see our [closing cost calculator](/mortgage/closing-cost-calculator/) for the purchase-specific version of this math." },
@@ -6154,7 +6154,7 @@ export const GUIDES: Guide[] = [
       "Get denied for a credit card, hit with a late fee, or want a higher limit? Real scripts for reconsideration calls, product changes, and goodwill waivers.",
     h1: "How to Call Your Credit Card Issuer and Actually Get a Yes",
     cardBlurb: "Exact scripts for a denial reconsideration call, a product change, a credit limit increase, and a late-fee goodwill waiver.",
-    intro:
+    introText:
       "Calling a credit card issuer directly can reverse a denial, waive a late fee, or unlock a higher credit limit far more often than most applicants expect. Issuers keep dedicated reconsideration lines and retention teams with real authority to make exceptions the automated system cannot. This guide gives you the exact scripts and reasoning to use for four common situations: a denied application, a request to change your card, a credit limit increase, and a late-fee goodwill waiver.",
     sections: [
       { heading: "Appealing a Denied Application", body: "A denial letter is not always the final word. Under the [Equal Credit Opportunity Act](https://www.consumerfinance.gov/rules-policy/regulations/1002/9/), an issuer that rejects your application must send an adverse action notice explaining the specific reason, whether that is income, credit history length, utilization, or something else. That reason is your starting point for a reconsideration call, not a dead end.\n\nCall the reconsideration line printed on your denial letter rather than general customer service, since that team is specifically trained to review borderline applications a computer rejected. Explain, calmly and specifically, why the stated reason does not tell the full story. If the denial cites low income, mention income the application may have missed, like a bonus, freelance work, or a spouse's earnings if you share expenses.\n\nHere is a sample script. Say: 'I received a denial for the [card name] application, and I'd like this reviewed manually. The letter listed [reason] as the factor. My situation is [specific detail], which I believe should change the outcome. Can you take another look?' Keep your explanation to two or three sentences, since a rambling case is harder for the agent to act on than a tight one.\n\nIf the reconsideration line still declines you, ask directly what would need to change for a future approval, such as a lower utilization ratio or more time since your last new account. Reapplying blind after a denial risks another hard inquiry and another rejection, so use that answer to fix the actual issue first. Our guide on [balance transfer approval odds by credit score](/guides/balance-transfer-credit-card-approval-odds/) covers a similar approach for a different card type." },
@@ -6190,7 +6190,7 @@ export const GUIDES: Guide[] = [
       "Prosper personal loans explained: real rate and fee ranges, the 640 credit score floor, and how the origination fee changes what you actually receive.",
     h1: "Is Prosper a Good Personal Loan Lender?",
     cardBlurb: "Prosper's real rate range, its origination fee math, who actually qualifies, and what to compare it against before you apply.",
-    intro:
+    introText:
       "[Prosper](https://prosper.com/personal-loans) is a peer-to-peer personal loan marketplace, not a bank, and that structure explains both its strengths and its real cost. This guide breaks down what Prosper actually charges once the origination fee is counted, who realistically qualifies, and the specific situations where a different lender beats it.",
     sections: [
       {
@@ -6239,7 +6239,7 @@ export const GUIDES: Guide[] = [
       "Possible Finance loans explained: real APR range (65%-163%), how the 4-payment structure works, and cheaper alternatives worth checking first.",
     h1: "Is Possible Finance a Good Personal Loan Option?",
     cardBlurb: "The real cost behind Possible Finance's small-dollar loans, who it actually fits, and cheaper alternatives to check first.",
-    intro:
+    introText:
       "[Possible Finance](https://www.possiblefinance.com/) markets itself as a friendlier alternative to a payday loan, and on several specific points, like no late fees and free rescheduling, that claim holds up. What its own marketing does not lead with is the annual percentage rate, which this guide translates from the flat per-$100 fee into the number that lets you compare it against every other borrowing option you have.",
     sections: [
       {
@@ -6287,7 +6287,7 @@ export const GUIDES: Guide[] = [
       "The real math on scouting a lower gas price: when the drive pays for itself, when it costs more than it saves, and a faster way to cut your fuel bill.",
     h1: "Is Driving Around for Cheaper Gas Worth It?",
     cardBlurb: "The break-even math on chasing a cheaper gas station, plus faster ways to cut your fuel bill without the detour.",
-    intro:
+    introText:
       "Scouting a lower gas price only pays off once you count the cost of getting there, and most drivers never run that math. This guide breaks down the actual break-even distance for a typical price gap, when a budgeting app or a rewards card beats the detour entirely, and what actually moves your gas bill more than station-hopping does.",
     sections: [
       {
@@ -6333,7 +6333,7 @@ export const GUIDES: Guide[] = [
       "What happens when you don't pay student loans: the 270-day default timeline, wage garnishment, tax refund offset, and how to get out of default.",
     h1: "What Happens If You Don't Pay Your Student Loans?",
     cardBlurb: "The real default timeline, wage garnishment and tax offset rules, and the two paths (rehabilitation vs consolidation) back out.",
-    intro:
+    introText:
       "Missing a single federal student loan payment does not trigger default. Missing payments for 270 straight days does, and that single date change starts a chain of consequences most borrowers underestimate until collection actually begins. This guide walks through the real timeline, what the government can and cannot take, and the two ways out.",
     sections: [
       {
@@ -6380,7 +6380,7 @@ export const GUIDES: Guide[] = [
       "The Nibbles credit card's built-in pet insurance, rewards, eligibility limits, and APR explained, plus when a standalone policy is the better buy.",
     h1: "Should You Get the Nibbles Credit Card?",
     cardBlurb: "What the built-in pet insurance actually covers, who's excluded, and when a standalone policy or a plain cash-back card beats it.",
-    intro:
+    introText:
       "The [Nibbles card](https://nibbles.com/) bundles pet insurance into a no-annual-fee Mastercard, which sounds like an easy win until you check the eligibility rules and the coverage limits against what a standalone policy offers. This guide breaks down what's actually included, who the built-in insurance excludes, and when skipping the bundle is the smarter move.",
     sections: [
       {
@@ -6429,7 +6429,7 @@ export const GUIDES: Guide[] = [
       "Discount Tire credit card explained: deferred-interest promo financing, the 34.99% ongoing APR, and when a personal loan or 0% card beats it.",
     h1: "Should You Get the Discount Tire Credit Card?",
     cardBlurb: "The deferred-interest trap most store cards don't explain clearly, the real ongoing APR, and cheaper ways to pay for new tires.",
-    intro:
+    introText:
       "The [Discount Tire](https://www.discounttire.com/) credit card can put new tires on your car with no interest today, but the deferred-interest financing behind that offer works very differently from a true 0% APR card, and getting it wrong is expensive. This guide covers exactly how the promotional financing works, the ongoing APR once it ends, and when a personal loan is the safer route to the same tires.",
     sections: [
       {
@@ -6478,7 +6478,7 @@ export const GUIDES: Guide[] = [
       "Learn how to start investing with no experience: open the right account, pick a low-cost index fund, and automate contributions step by step.",
     h1: "How to Start Investing: A Step-by-Step Guide for Beginners",
     cardBlurb: "Open the right account, pick your first fund, and automate contributions: the beginner's path to investing, step by step.",
-    intro:
+    introText:
       "Learning how to start investing comes down to three moves: open the right account, choose one broad, low-cost fund, and automate your contributions so investing happens before you can spend the money. You do not need a lot of savings, a finance degree, or stock-picking skill to begin; many brokerages let you start with $1 and a fractional share. This guide walks through the process in order, from opening an account to avoiding the mistakes that trip up first-year investors, with a free calculator linked at each step so you can run your own numbers.",
     sections: [
       { heading: "Why starting to invest now beats waiting for a bigger paycheck", body: "Every year you wait to invest is a year your money misses out on compounding. Compounding means your investment returns start earning their own returns, so growth builds faster the longer the money stays invested. A modest amount invested in your 20s has decades to grow before you need it, while the same amount invested a decade later has far less time to do the same work.\n\nWaiting for a \"better time\" or a bigger paycheck is the most common reason people delay. The [SEC's Investor.gov roadmap](https://www.investor.gov/introduction-investing/investing-basics/save-and-invest) lists paying down high-interest debt and building a small emergency cushion before you invest, but it does not suggest waiting until you feel completely secure. Start with whatever amount fits your budget today, then raise it as your income grows." },
@@ -6518,7 +6518,7 @@ export const GUIDES: Guide[] = [
       "A tax deductions checklist for 2026: compare the standard deduction to itemizing, then check mortgage interest, SALT, medical, and retirement write-offs.",
     h1: "Your 2026 Tax Deductions Checklist: What You Can Actually Claim",
     cardBlurb: "Standard vs. itemized, the $40,400 SALT cap, mortgage interest, medical expenses, and the above-the-line write-offs you get either way.",
-    intro:
+    introText:
       "A tax deductions checklist for 2026 lists the common write-offs an individual taxpayer can claim this year. Most filers take the standard deduction, a fixed amount that needs no receipts. Itemizing only pays off once your qualifying expenses add up to more than that fixed amount. This guide walks through both paths, then lists the deductions worth checking for your 2026 return. None of this is personalized tax advice. Confirm your own numbers with a tax professional or the relevant IRS publication before you file.",
     sections: [
       { heading: "Standard Deduction vs. Itemized Deductions: The First Step in Your Tax Deductions Checklist", body: "The standard deduction is a fixed dollar amount every taxpayer can subtract from income, with no paperwork required. For 2026, it is $16,100 for single filers and those married filing separately, $24,150 for heads of household, and $32,200 for married couples filing jointly, per the IRS. Filers who are 65 or older, or blind, can add an extra amount on top of that base figure.\n\nItemizing means adding up specific deductible expenses on Schedule A instead of taking the flat amount. You should itemize only when your total qualifying expenses exceed your standard deduction. If your itemized total falls short, the standard deduction saves you more, and the rest of this checklist has no effect on your return that year.\n\nRun rough numbers before you assume either way. Add up your likely mortgage interest, state and local taxes, and charitable gifts first. If that estimate sits near your standard deduction, work through the full checklist below before you decide. See [how much tax you'll actually pay](/guides/how-much-tax-will-i-pay/) this year to understand how a deduction changes your bracket and your bill." },
@@ -6561,7 +6561,7 @@ export const GUIDES: Guide[] = [
       "Splash Financial personal loans explained: the real 8.99%-35.99% APR range, the 0%-15% origination fee, the 680 credit score guideline, and cheaper picks.",
     h1: "Is Splash Financial a Good Personal Loan Lender?",
     cardBlurb: "Splash Financial's marketplace model explained: real APR and fee ranges, who actually qualifies, and how it stacks up against two other lenders.",
-    intro:
+    introText:
       "[Splash Financial](https://www.splashfinancial.com) built its name on student loan refinancing before expanding into personal loans, and that marketplace model shapes almost everything about the product. Instead of lending its own money, Splash routes your application to a network of bank and credit union partners, so your actual rate, fee, and terms depend on which partner picks up your file. This guide breaks down what a Splash Financial personal loan really costs once the origination fee is counted, who realistically qualifies, and how the offer compares to two other lenders we've reviewed.",
     sections: [
       { heading: "What Splash Financial actually is", body: "Splash Financial launched in 2013 in Cleveland, Ohio, originally as a student loan refinancing platform. A small team frustrated with their own loan options built it, then the company later expanded into personal loans using the same core idea: shop one application across a network of lenders instead of funding loans from its own balance sheet.\n\nThat marketplace structure means Splash Financial is not a direct lender for personal loans. When you apply, Splash routes your profile to partner banks and credit unions, and you choose from whichever offers come back. The loan itself is funded and serviced by that partner, not by Splash directly, so two applicants with similar credit can land with two different lenders and two different rate sheets." },
@@ -6603,7 +6603,7 @@ export const GUIDES: Guide[] = [
     h1: "How to Stop Living Paycheck to Paycheck",
     cardBlurb:
       "A step-by-step plan to stop living paycheck to paycheck, with a worked budget example and a habit that beats impulse spending.",
-    intro:
+    introText:
       "Stopping the paycheck-to-paycheck cycle starts with a spending plan that puts savings first, not last. Most people who feel broke every month are not earning too little. They are spending every dollar before they decide where it should go.\n\nThis guide walks through eight concrete steps, in order, with a full worked example using real numbers. You will also see how to handle the pressure that makes overspending feel normal. Do the steps in order and you will have a plan, not just good intentions.",
     sections: [
       { heading: "Step 1: Track every dollar for one month", body: "You cannot fix a leak you cannot see. Before you change anything, track every dollar you spend for one full month. Include small purchases, like coffee and app subscriptions.\n\nPull your last 30 days of bank and card statements. Sort each charge into a simple category: rent, groceries, transportation, debt payments, dining out, subscriptions, and shopping. Most banking apps will do this sorting for you automatically.\n\nThis step alone changes behavior. Seeing $340 spent on takeout in black and white hits harder than a rough guess. Once you have real numbers, plug them into our [monthly budget calculator](/budget/monthly-budget-calculator/) to see exactly where your income goes." },
@@ -6647,7 +6647,7 @@ export const GUIDES: Guide[] = [
       "How an inherited IRA is taxed: the 10-year rule, RMD requirements, spousal vs. non-spousal rules, and Roth vs. traditional withdrawals, per IRS guidance.",
     h1: "How Is an Inherited IRA Taxed? The Complete Guide",
     cardBlurb: "The current IRS rules for inherited IRA taxes: the 10-year rule, RMDs, spousal vs. non-spousal beneficiaries, and Roth vs. traditional withdrawals.",
-    intro:
+    introText:
       "An inherited IRA is taxed differently than money you inherit outright. The rules changed under the SECURE Act, and they changed again under 2024 [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary) guidance. Most non-spouse beneficiaries must now empty the account within 10 years. Some of those years also carry a required withdrawal of their own.\n\nA spouse gets far more flexibility. The account type, traditional or Roth, changes what you owe when you withdraw. This guide covers the federal and state taxes that can apply to an inherited IRA, the current 10-year rule and its RMD requirement, how spousal and other special beneficiaries get more time, and a worked example comparing spread-out withdrawals to a lump sum.",
     sections: [
       { heading: "Does the IRS Tax You Just for Inheriting an IRA?", body: "Inheriting an IRA does not create an inheritance tax bill on its own for most people. Two separate taxes could apply instead, one federal, one state. Both work differently than the income tax you'll eventually owe on withdrawals.\n\nThe federal estate tax applies to the estate itself, not to you as the beneficiary. For 2026, the IRS sets the exemption at $15 million per person, or $30 million for a married couple. A traditional or Roth IRA counts toward that total, but very few estates come close to that size.\n\nFive states charge a separate inheritance tax, paid by the person who receives the money: Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. The rate depends on your relationship to the original owner. A spouse or child usually pays little or nothing, while a more distant relative or friend can owe a real percentage of the account.\n\nNeither tax is usually the biggest cost. Income tax on the withdrawals themselves is what actually shapes the bill for most beneficiaries, and it applies no matter which state you live in." },
@@ -6693,7 +6693,7 @@ export const GUIDES: Guide[] = [
       "Advanced estate planning strategies for real estate and investments: QPRTs, FLPs, GRATs, IDGTs, ILITs, the step-up in basis, and the 2026 exemption.",
     h1: "Advanced Estate Planning Strategies for Real Estate and Investment Portfolios",
     cardBlurb: "QPRTs, FLPs, GRATs, IDGTs, and ILITs explained in plain terms, plus a real step-up-in-basis example and the 2026 exemption.",
-    intro:
+    introText:
       "If you already have a will, a living trust, and updated beneficiary forms, you have covered the basics. If you have not, see our [first-time estate planning guide](/guides/first-time-estate-planning/) first, since these strategies build on those documents.\n\nThis guide is for households with real estate, investment portfolios, or both. Here the planning goal shifts from avoiding probate to reducing tax. Two facts drive that shift.\n\nFirst, appreciated property gets a valuable tax reset at death, called the step-up in basis. How you transfer an asset changes whether your heirs keep that reset. Second, a concentrated portfolio can cross a state estate tax threshold years before it nears the federal exemption.\n\nBelow, we cover the tools higher-net-worth households actually use. For a house, that is a Qualified Personal Residence Trust (QPRT). For a portfolio of properties, that is a Family Limited Partnership (FLP) or family LLC.\n\nFor appreciating investments, that is a Grantor Retained Annuity Trust (GRAT) or an Intentionally Defective Grantor Trust (IDGT). For a life insurance policy, that is an Irrevocable Life Insurance Trust (ILIT). Each tool trades some control for a real tax benefit, and each carries its own risk.\n\nThis guide is general information, not legal or tax advice. Work through your own numbers with a licensed estate planning attorney and a financial advisor before you sign anything. For probate-avoidance basics, see our [living trust vs will](/compare/living-trust-vs-will/) comparison.",
     sections: [
       { heading: "How real estate and investment portfolios are taxed at death", body: "Two separate tax rules apply when you pass on real estate or a brokerage account: the step-up in basis and the federal estate tax. They work differently, and mixing them up leads to bad decisions.\n\nThe step-up in basis resets an asset's cost basis to its fair market value on the date of death. Cost basis is what you paid for something, plus improvements, minus any depreciation you already claimed. If your heir sells the asset soon after inheriting it, there is little or no taxable gain, because the gain is measured from the new, stepped-up value, not your original purchase price. This rule applies to nearly every capital asset, whether or not your estate owes any estate tax. The [IRS](https://www.irs.gov/taxtopics/tc703) covers the mechanics in Topic 703, and Publication 551 covers inherited property in more detail.\n\nThe federal estate tax is a separate, much rarer tax. It only applies once your total estate, including real estate and investments at current fair market value, exceeds the federal exemption. For 2026, that exemption is $15,000,000 per individual, so most households never owe federal estate tax even with a valuable property portfolio. The two rules interact at the top of the wealth range: an estate large enough to owe estate tax still gets the basis step-up on the assets that pass through it, so planning usually focuses on staying under the exemption while keeping the step-up wherever possible." },
@@ -6744,7 +6744,7 @@ export const GUIDES: Guide[] = [
       "No, the IRS retired W-4 withholding allowances in 2020. See how the current dollar-based form changes what lands in your paycheck.",
     h1: "Can You Claim Allowances on Your Taxes?",
     cardBlurb: "Withholding allowances are gone. Form W-4 uses dollar amounts instead. See how it works and what to enter for your job.",
-    intro:
+    introText:
       "No. What we see readers get wrong most often is treating the redesigned Form W-4 like the old allowance-based version. The [Internal Revenue Service (IRS)](https://www.irs.gov/) eliminated withholding allowances when it redesigned [Form W-4](https://www.irs.gov/forms-pubs/about-form-w-4) in 2020, and the form has kept that same five-step structure ever since.\n\nThe current form asks for your filing status, a dollar figure for dependents, and any extra amount you want held back each paycheck. It never asks for a count of allowances. Fill it out with real numbers, and your withholding lines up with what you actually owe.",
     sections: [
       {
@@ -6806,7 +6806,7 @@ export const GUIDES: Guide[] = [
       "What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.",
     h1: "What Is a Certified Trust and Fiduciary Advisor (CTFA)?",
     cardBlurb: "What it takes to earn a CTFA, and when you need one instead of a CFP.",
-    intro:
+    introText:
       "A Certified Trust and Fiduciary Advisor (CTFA) is a professional certification for bankers and wealth managers who specialize in trust and estate work. What we see readers get wrong most often is treating every advisor credential as interchangeable. A CTFA covers a narrower, more technical job than a Certified Financial Planner (CFP) or a Chartered Financial Analyst (CFA). The [American Bankers Association (ABA)](https://www.aba.com/training-events/certifications/certified-trust-and-fiduciary-advisor) designs and awards the CTFA to recognize tested knowledge of trust administration, estate settlement, and fiduciary wealth management. ABA renamed the designation from Certified Trust and Financial Advisor to Certified Trust and Fiduciary Advisor in 2020. The CTFA letters and the underlying requirements stayed the same.",
     sections: [
       { heading: "What the CTFA Credential Signals to a Client", body: "The CTFA credential signals that an advisor passed a demanding, ABA-graded exam in trust and fiduciary work. A CTFA is a certification. It is not a state or federal license, and it never replaces the legal registration a bank or advisory firm must hold to manage client money.\n\nABA designs, administers, and grades the exam through its ABA Professional Certifications division, the same group behind several other banking specialty credentials.\n\nThe certification targets people already working inside trust departments, private banks, and wealth management teams. It is rarely an entry-level credential, since most candidates need years of hands-on fiduciary work before they even qualify to sit the exam. ABA built the exam around real trust and estate administration rather than general financial planning theory.\n\nFor a client, the letters signal that the advisor passed a demanding exam covering fiduciary law, taxation, and estate settlement. They also signal an ongoing commitment, since a CTFA has to keep earning continuing education to keep the letters active.\n\nThe letters alone do not prove the advisor is a fiduciary on every account you hold with them. State and federal law creates that fiduciary duty. No single credential can create it on its own." },
@@ -6847,7 +6847,7 @@ export const GUIDES: Guide[] = [
       "See average HSA balances by age from real industry data, and how the invest-and-wait strategy changes the math.",
     h1: "Average HSA Balance by Age: How Much Is Typical",
     cardBlurb: "Real balance data by age, plus the invest-and-wait strategy that changes the math.",
-    intro:
+    introText:
       "Average health savings account (HSA) balances stay low at every age, from around $1,150 for people under 25 to roughly $9,000 for people 65 and older. What we see readers get wrong most often is comparing that number only to the national average instead of to their own age and years of contributing. The real reason balances stay thin is simple. Most people spend their HSA like a checking account instead of investing it and letting it compound. A better target than the raw national average is the balance a fully invested HSA could reach if you started contributing consistently at your current age.",
     sections: [
       { heading: "What Counts as a Good HSA Balance by Age", body: "A good HSA balance roughly tracks how long you have been contributing, since account size follows tenure far more than any single windfall. [Devenir Research](https://www.devenir.com/research/2025-year-end-devenir-hsa-research-report/), a firm that tracks HSA account data industry-wide, found that accounts opened in 2004 averaged nearly $35,000 by the end of 2025. Accounts opened in 2025 averaged only about $2,181 over that same stretch. That twenty-year head start explains almost the entire gap.\n\nThe [Employee Benefit Research Institute (EBRI)](https://www.ebri.org/content/health-savings-account-balances--contributions--distributions--and-other-vital-statistics--2023--evidence-from-the-ebri-hsa-database) breaks the same pattern out by age. Accountholders under 25 average roughly $1,150.\n\nThat figure climbs to about $4,400 by ages 35 to 44 and reaches roughly $9,000 for accountholders 65 and older. EBRI does not publish exact figures for every ten-year bracket in between. But the trend holds steady: balances rise with age mainly because the money has more years to sit and compound.\n\nUse those figures as a reference point for where you stand today. A number below your age bracket usually reflects how the account has been used. It rarely reflects how much money was ever available to save in the first place." },
@@ -6884,7 +6884,7 @@ export const GUIDES: Guide[] = [
     metaDescription: "See how much to have in a college savings account by age 5, 10, 15, and 18, for both in-state public and private targets, plus what to do if you're behind.",
     h1: "How Much College Savings You Should Have by Age",
     cardBlurb: "Age-based savings checkpoints for public and private college costs, and what to do if you fall behind.",
-    intro: "Have roughly half of your total college cost goal saved by the time your child turns 10, and the rest saved by 18. What we see families get wrong most often is aiming at one national sticker price instead of the real target for their own path, public or private. The gap between the two is not small. An in-state public degree and a private degree can differ by well over $100,000 in today's dollars. This college-savings-by-age benchmark turns either number into checkpoints at ages 5, 10, 15, and 18, so you can tell early whether you are on pace or already behind.",
+    introText: "Have roughly half of your total college cost goal saved by the time your child turns 10, and the rest saved by 18. What we see families get wrong most often is aiming at one national sticker price instead of the real target for their own path, public or private. The gap between the two is not small. An in-state public degree and a private degree can differ by well over $100,000 in today's dollars. This college-savings-by-age benchmark turns either number into checkpoints at ages 5, 10, 15, and 18, so you can tell early whether you are on pace or already behind.",
     sections: [
       {
         heading: "The College Savings by Age Rule of Thumb",
@@ -6939,7 +6939,7 @@ export const GUIDES: Guide[] = [
       "Rent should stay at or under 28% of gross income, less with debt. See the formula and two worked income examples.",
     h1: "How Much Should You Spend on Rent?",
     cardBlurb: "A debt-adjusted 28/36 formula for a real rent ceiling, with worked numbers at two income levels.",
-    intro:
+    introText:
       "Rent should stay at or under 28% of your gross income, and less than that once you factor in other debt. What we see readers get wrong most often is applying the 30% rule without checking it against debt payments or take-home pay.\n\nThat 28% figure comes from the same debt-adjusted 28/36 math lenders use to size a mortgage, applied here to a rent payment instead of a loan. In an expensive metro that number is not always realistic, and the usual fix is a roommate, a smaller unit, or a longer commute, not a bigger rent budget.",
     sections: [
       { heading: "Where the 30% Rule Came From", body: "The 30% rule started as a federal housing benchmark. It was never built as personal budgeting advice. The U.S. Department of Housing and Urban Development ([HUD](https://www.hud.gov/program_offices/comm_planning/affordablehousing/)) uses 30% of gross income as the line for what it calls \"cost burdened\" housing. A household above that line qualifies as burdened, and HUD labels anything above 50% severely burdened.\n\nThat threshold was built to flag households in housing distress for federal assistance programs, not to tell an individual renter what a comfortable budget looks like. Over the decades landlords, budgeting apps, and finance writers borrowed the number anyway. The original purpose, spotting severe cost burden for public assistance, got lost along the way." },
@@ -6981,7 +6981,7 @@ export const GUIDES: Guide[] = [
       "Yes, TrumpAccounts.gov is the real site for the $1,000 federal Trump Account. See the official sign-up steps and the scam red flags already circulating.",
     h1: "Is TrumpAccounts.gov Legit? How to Avoid Trump Account Scams",
     cardBlurb: "The real sign-up site versus the copycats: fake texts, fake apps, and the fee no legitimate Trump Account contact ever charges.",
-    intro:
+    introText:
       "Yes, TrumpAccounts.gov is the real, official site for opening a Trump Account. What we see readers run into most often is a copycat site, a phishing text, or an app that looks official but was never approved by the Treasury. Below are the real sign-up channels, the scams already circulating, and what a legitimate contact never asks for.",
     sections: [
       {
@@ -7037,7 +7037,7 @@ export const GUIDES: Guide[] = [
       "Build your own mortgage amortization schedule in Excel or Google Sheets. Learn the payment formula and the interest and principal split, step by step.",
     h1: "Build a Mortgage Amortization Schedule in Excel",
     cardBlurb: "Copy the payment formula into Excel or Google Sheets to see exactly how much of each payment goes to interest versus principal.",
-    intro:
+    introText:
       "A mortgage amortization schedule shows how much of each payment goes toward interest and how much pays down your loan balance, month by month. You can build one yourself in Excel or Google Sheets with two formulas: one that finds your fixed monthly payment, and one that splits each payment into interest and principal. This walkthrough covers both formulas cell by cell, using a $400,000 loan at 6.5% over 30 years as the running example, so you can swap in your own numbers and watch the whole schedule recalculate. There is no downloadable file to grab here, since every loan has a different balance, rate, and term. You type the formulas yourself so the schedule matches your exact loan. Prefer to skip the spreadsheet entirely? Our free [mortgage amortization schedule](/mortgage/amortization-schedule/) calculator runs the same math instantly.",
     sections: [
       {
@@ -7095,7 +7095,7 @@ export const GUIDES: Guide[] = [
       "Net present value, internal rate of return, and payback period explained with worked numeric examples, so you can size up any investment with real numbers.",
     h1: "Investment Appraisal Methods: NPV, IRR, and Payback Period",
     cardBlurb: "Net present value, internal rate of return, and payback period, the three methods used to decide whether an investment is worth the cash it costs.",
-    intro:
+    introText:
       "Net present value (NPV), internal rate of return (IRR), and payback period are the three most common ways to judge whether an investment is worth its cost. NPV converts every future cash flow into today's dollars and adds them up. IRR asks what discount rate would make that total exactly zero. Payback period simply counts how many years it takes to get your original money back, with no discounting at all. This guide walks through all three using the same worked numbers, so you can see where they agree and where they pull apart. See our [investment calculator](/investing/) if you want to project a lump sum or regular contribution rather than appraise a single project's cash flows.",
     sections: [
       {
@@ -7149,7 +7149,7 @@ export const GUIDES: Guide[] = [
       "Investment calculators don't all compute the same thing. See what growth, goal-planning, drawdown, and tax-aware tools each measure before you pick one.",
     h1: "How to Choose the Right Investment Calculator",
     cardBlurb: "What compound-growth, goal-planning, drawdown, and tax-aware calculators each actually compute, and how to match one to your real question.",
-    intro:
+    introText:
       "An investment calculator only answers the exact question it was built to answer, and most confusion around these tools comes from using the wrong type for your question. A basic compound-growth calculator projects a balance forward. It cannot tell you whether that balance will actually cover your retirement. A goal-planning tool works backward from a target instead. A drawdown or retirement modeler adds withdrawals and longevity risk into the mix. A tax-aware calculator accounts for what the IRS actually takes out of your specific account type. This guide walks through what each category computes, so you know which one to open before you start typing in numbers. Try our own [investment calculator](/investing/) once you know which question you are actually asking.",
     sections: [
       {
@@ -7209,7 +7209,7 @@ export const GUIDES: Guide[] = [
       "Build a net worth calculator spreadsheet template in Google Sheets or Excel. Track assets minus liabilities every month with these exact formulas.",
     h1: "Build Your Own Net Worth Calculator Spreadsheet Template",
     cardBlurb: "Copy the assets-minus-liabilities formula into Google Sheets or Excel and track your net worth every month without a login.",
-    intro:
+    introText:
       "A net worth calculator spreadsheet template is just two columns, assets and liabilities, subtracted from each other and tracked over time. You can build one yourself in Google Sheets or Excel in about ten minutes, then update it every month or quarter with a few new numbers. This guide walks through the exact formula and layout, row by row, so the sheet keeps a running history instead of a single snapshot. There is no file to download here, since your account list and balances are unique to you. Typing the formula yourself keeps the sheet built around your own accounts and balances. Prefer not to build one? Our free [net worth calculator](/net-worth/) runs the same math instantly and benchmarks your result against [Federal Reserve](https://www.federalreserve.gov/econres/scfindex.htm) data.",
     sections: [
       {
@@ -7265,7 +7265,7 @@ export const GUIDES: Guide[] = [
       "See the exact dollar threshold for a high-net-worth individual, how it differs from an accredited investor, and what changes once you cross it.",
     h1: "What Counts as a High-Net-Worth Individual?",
     cardBlurb: "The exact dollar threshold, how it differs from being an accredited investor, and what changes once you cross it.",
-    intro:
+    introText:
       "A high-net-worth individual is someone with at least $1 million in investable assets, not counting their primary home, collectibles, or everyday personal property. What we see readers mix up most often is treating that threshold the same as being an \"accredited investor,\" a separate legal status with its own dollar test. The two overlap for plenty of people, but they measure different things for different purposes, and knowing which one actually applies to you decides what doors open.",
     sections: [
       {
@@ -7322,7 +7322,7 @@ export const GUIDES: Guide[] = [
       "Refinancing student loans can save money or cost you PSLF and income-driven repayment for good. See the math on when it's worth it.",
     h1: "Should You Refinance Your Student Loans?",
     cardBlurb: "When a lower rate is worth it, and when refinancing quietly costs you protections you can't get back.",
-    intro:
+    introText:
       "Refinancing a federal student loan into a private loan permanently gives up income-driven repayment, Public Service Loan Forgiveness (PSLF), and federal forbearance, so it only makes sense when the rate drop is large enough to be worth losing those protections for good. What we see readers get wrong most often is refinancing for a small rate improvement without first checking whether they might ever need one of those federal safety nets. Private student loans carry none of those protections to begin with, so refinancing them is a simpler, usually safer decision.",
     sections: [
       {
@@ -7380,7 +7380,7 @@ export const GUIDES: Guide[] = [
       "Private placement life insurance lets the ultra-wealthy grow hedge fund gains tax-free inside a policy. How PPLI works, what it costs, and who can buy one.",
     h1: "Private Placement Life Insurance: How PPLI Works",
     cardBlurb: "A Roth account reproduces the same tax result for everyone under eight figures.",
-    intro:
+    introText:
       "Private placement life insurance (PPLI) is a life insurance policy the ultra-wealthy use as a tax-free wrapper around hedge funds and private credit. In the guides we publish here, we see readers reach for an insurance wrapper years before they have filled the tax-free accounts they could open this afternoon.\n\nPPLI is not a retail product. You generally have to clear two securities tests set by the [U.S. Securities and Exchange Commission](https://www.sec.gov/) (SEC) and commit several million dollars of premiums before a carrier will write one.\n\nThe tax result also depends on rules from the [Internal Revenue Service](https://www.irs.gov/) (IRS) that are easy to break. Break one and the policy stops being taxed as life insurance, and the owner pays ordinary income tax on the gains every single year.",
     sections: [
       {
@@ -7448,7 +7448,7 @@ export const GUIDES: Guide[] = [
       "Indexed universal life insurance pros and cons: caps, floors, and rising cost-of-insurance charges decide whether an IUL is worth funding.",
     h1: "Indexed Universal Life Insurance Pros and Cons",
     cardBlurb: "Caps, floors, and rising cost-of-insurance charges decide whether an IUL is worth funding.",
-    intro:
+    introText:
       "Indexed universal life insurance (IUL) is permanent life insurance whose cash value earns interest tied to a stock index. Every guide we write here starts from the math, and on an IUL the math turns on charges more than on the index. Gains are capped. A 0% floor keeps an index drop from cutting the credited rate, and the policy's own charges come out either way.\n\nFor most readers, an IUL is the wrong home for retirement money. Fill an employer match and a Roth account first. Indexed universal life insurance earns its place in a narrow set of situations, and every one of them starts with a permanent need for a death benefit.",
     sections: [
       {
@@ -7511,7 +7511,7 @@ export const GUIDES: Guide[] = [
       "No US account is named a tax free retirement account. Four vehicles qualify: the 2026 IRS limits, who each fits, and the insurance pitch using the name.",
     h1: "Tax Free Retirement Account Options Ranked by Fit",
     cardBlurb: "The four genuinely tax-free US accounts, ranked by who each one fits.",
-    intro:
+    introText:
       "No account in the United States tax code is named a tax free retirement account. What we see readers get wrong most often is treating the phrase as one product they can go open. It is a category, and one specific use of the phrase is a life insurance sales pitch.\n\nFour vehicles genuinely deliver tax-free money in retirement: a Roth individual retirement account (IRA), a Roth 401(k), a health savings account (HSA), and municipal bonds. The fifth thing sold under this name is cash value life insurance, which works differently from all four and costs more.\n\nMost readers should fill the first four in a set order and stop there. That order starts with an employer match and puts cash value life insurance last.",
     sections: [
       {
@@ -7587,7 +7587,7 @@ export const GUIDES: Guide[] = [
       "Infinite banking uses an overfunded whole life policy and policy loans. The mechanics are real, the costs land early, and the break-even takes years.",
     h1: "Infinite Banking Works Only for a Narrow Set of Buyers",
     cardBlurb: "The mechanics are real. Commissions, loan interest, and the break-even year decide whether it fits you.",
-    intro:
+    introText:
       "Infinite banking is a real strategy built on a real product, and it fits far fewer people than its marketing suggests. Every guide we write here starts from the math, and on this one the math turns on costs the sales page leaves out.\n\nYou overfund a dividend-paying whole life insurance policy, build cash value inside it, then borrow against that cash value instead of borrowing from a bank.\n\nCommissions and policy charges come out of the early years, so cash value trails the premiums you have paid for a long stretch. Anyone who might stop funding the policy inside that stretch should not start one.\n\nThere are faster ways to borrow against what you own. A securities-backed line of credit (SBLOC) or a home equity line of credit (HELOC) gives you the same borrowing power years earlier, and each carries a different risk.",
     sections: [
       {
@@ -7655,7 +7655,7 @@ export const GUIDES: Guide[] = [
       "A QLAC lets you shelter up to $210,000 from required withdrawals until age 85. See the 2026 IRS limit, which accounts qualify, and who it fits.",
     h1: "What Is a QLAC (Qualified Longevity Annuity Contract)?",
     cardBlurb: "How a QLAC shields up to $210,000 from required withdrawals, the 2026 IRS limit, and who it helps.",
-    intro:
+    introText:
       "A Qualified Longevity Annuity Contract (QLAC) lets you shelter up to $210,000 of retirement money from required minimum distributions by buying an annuity with it. In the guides we publish here, retirement-account rules are the topic readers ask us to untangle most, and the QLAC sits near the top of that list. Payments from the annuity can wait as late as age 85, and the [Internal Revenue Service](https://www.irs.gov/) (IRS) sets the dollar limit again every year. [Congress](https://www.congress.gov/) rewrote the QLAC rules in 2023 to make the contract more useful than the original 2014 version.",
     sections: [
       { heading: "A QLAC Is an Annuity That Delays Part of Your RMDs", body: "A QLAC is a deferred income annuity you buy with money from a qualified retirement account. It changes your required minimum distribution (RMD) math. Once you turn 73, the IRS normally requires you to withdraw a percentage of every traditional IRA and 401(k) balance each year, whether you need the cash or not. Money used to buy a QLAC comes out of that calculation entirely. The insurance company holds the premium. In exchange, it promises to pay you a fixed income later in life, for as long as you live, starting on a date you pick when you buy the contract.\n\nThat structure makes a QLAC a longevity hedge. It is not built to grow your money. The payout is set at purchase. It does not track the stock market, so a QLAC is not the place to put money you are counting on to grow. Its job is narrower. It guarantees that a slice of your retirement income keeps arriving even if you live well past your own planning horizon, while it shrinks the RMD bill you owe in the years before that income starts." },
@@ -7698,7 +7698,7 @@ export const GUIDES: Guide[] = [
       "Allianz, National Life Group, Nationwide, F&G, and Transamerica IUL illustrations compared against what each contract guarantees.",
     h1: "What IUL Illustrations by Carrier Show",
     cardBlurb: "Allianz, National Life Group, Nationwide, F&G, and Transamerica compared on the guaranteed-charge column their illustrations bury.",
-    intro:
+    introText:
       "Every carrier's IUL illustration carries two numbers, not one. What we see readers get wrong most often is judging a policy by the column an agent points at, called the illustrated rate, instead of the column further back in the packet that the carrier is actually bound to deliver, called the guaranteed rate. Both numbers sit in the same document for every one of the carriers people search for by name: [Allianz Life](https://www.allianzlife.com/), [National Life Group](https://www.nationallifegroup.com/), [Nationwide](https://www.nationwide.com/), [F&G](https://www.fglife.com/), and [Transamerica](https://www.transamerica.com/) among them, plus a digital agency called [Amplify](https://www.getamplifylife.com/) that sells policies from other carriers under its own brand.",
     sections: [
       {
@@ -7761,7 +7761,7 @@ export const GUIDES: Guide[] = [
       "How IUL agent commissions work, why first-year pay is front-loaded on target premium, and why that can push illustrations toward a higher cap.",
     h1: "How IUL Agent Commission Works",
     cardBlurb: "Target premium, the renewal-year cliff, and why the incentive can push an illustration toward the highest cap it can legally show.",
-    intro:
+    introText:
       "An IUL agent's commission is paid almost entirely in year one, calculated against a number called the target premium rather than against whatever you actually pay. What we see readers get wrong most often is assuming a bigger illustrated number costs the agent nothing and helps the sale, when the two are connected: the illustration that closes the largest policy also pays the largest first-year check, on the same target-premium base, regardless of whether the cap rate shown ever holds up.",
     sections: [
       {
@@ -7815,7 +7815,7 @@ export const GUIDES: Guide[] = [
       "A juvenile IUL runs the same charges as an adult policy on a healthy child with no debt to protect, and a 529 or custodial account usually grows faster.",
     h1: "What an IUL for Kids Costs a Healthy Child",
     cardBlurb: "What juvenile IUL costs a healthy child, the real risks behind the sales pitch, and how a 529 or custodial account usually compares.",
-    intro:
+    introText:
       "A juvenile IUL is an indexed universal life policy a parent or grandparent buys on a child's life, and it runs the same cap, floor, and rising cost-of-insurance mechanics as an adult policy, just starting on a much smaller body. What we see readers get wrong most often is treating \"guaranteed insurability\" and \"a head start on cash value\" as reasons the account beats a plain investment account for a child, when a 529 or custodial account usually grows faster with none of the insurance charges eating into the balance.",
     sections: [
       {
@@ -7865,7 +7865,7 @@ export const GUIDES: Guide[] = [
       "How long should a car loan be? See what 60, 72, 84, and 96 months cost in interest, and the underwater-loan risk CFPB data ties to longer terms.",
     h1: "How Long Should a Car Loan Be?",
     cardBlurb: "What 60, 72, 84, and 96 months cost in interest, and the underwater-loan risk CFPB data ties directly to longer terms.",
-    intro:
+    introText:
       "A car loan should run 60 months or less for most buyers, since every extra year beyond that trades a smaller monthly payment for real money in interest and a longer stretch of owing more than the car is worth. What we see readers get wrong most often is picking a term to hit a monthly payment number instead of running the total interest and the underwater-risk window at each length before choosing.",
     sections: [
       {
@@ -7915,7 +7915,7 @@ export const GUIDES: Guide[] = [
       "How 0% APR car financing works, why it usually requires top-tier credit, and the worked math on when a cash rebate beats it instead.",
     h1: "0% APR Car Loan Explained",
     cardBlurb: "How the manufacturer subsidizes 0% financing, and the exact math for when a cash rebate beats it instead.",
-    intro:
+    introText:
       "A 0% APR car loan charges no interest at all, and the manufacturer's own finance arm, not the dealer, absorbs that cost as a sales incentive. What we see readers get wrong most often is assuming 0% is automatically the best deal on the table, when most manufacturers make you choose between the 0% rate and a cash rebate on the same vehicle, and the math behind that choice depends on the loan amount, the term, and the rebate size, not on 0% always winning by default.",
     sections: [
       {
@@ -7965,7 +7965,7 @@ export const GUIDES: Guide[] = [
       "The exact formulas for portfolio beta, turnover, NAV, gamma, weighted return, and variance, each worked through with real numbers.",
     h1: "Portfolio Metrics Formulas Explained",
     cardBlurb: "The exact math behind beta, turnover, NAV, gamma, weighted return, and variance, worked through with real numbers.",
-    intro:
+    introText:
       "Portfolio beta, turnover, net asset value (NAV), and portfolio variance each have one standard formula, and every one of them is built from the weight of each holding in your total portfolio. What we see readers get wrong most often is treating each metric as its own unrelated calculation. Five of the seven formulas below share that same weighted-average starting point. Each section gives the exact formula, a worked example with real numbers, and a link to where it fits next to a live calculator on this site. None of them require a data terminal or a paid subscription, only your own position values and a calculator.",
     sections: [
       {
@@ -8036,7 +8036,7 @@ export const GUIDES: Guide[] = [
       "How broker portfolio margin differs from Reg T, how securities-based lending works, and the leverage risk behind both, sourced from FINRA and SEC rules.",
     h1: "Portfolio Margin and Leverage Explained",
     cardBlurb: "How risk-based portfolio margin differs from standard Reg T margin, and what securities-based lending risks.",
-    intro:
+    introText:
       "Portfolio margin is a risk-based alternative to the standard margin rules most brokerage accounts use, and it can let an eligible trader borrow more against the same portfolio than a standard account allows. [FINRA](https://www.finra.org/rules-guidance/key-topics/margin-accounts) and the [U.S. Securities and Exchange Commission](https://www.sec.gov/) (SEC) oversee two separate margin systems: Regulation T (Reg T), the standard system most brokerage accounts use, and portfolio margin, a separate framework built on stress-testing an entire portfolio rather than pricing each position at a fixed percentage. Securities-based lending adds a third borrowing structure on top of either one, using an investment account itself as loan collateral outside the standard margin system entirely. All three carry a form of leverage risk that a plain stock-bond-cash split does not carry.",
     sections: [
       {
@@ -8090,7 +8090,7 @@ export const GUIDES: Guide[] = [
       "What a portfolio loan (or portfolio mortgage) is, why lenders keep some in-house instead of selling to Fannie Mae or Freddie Mac, and what it costs you.",
     h1: "Portfolio Loan and Portfolio Mortgage Explained",
     cardBlurb: "Why a lender keeps some mortgages in-house instead of selling them, and what that flexibility costs you.",
-    intro:
+    introText:
       "A portfolio loan is a mortgage the lender keeps and services itself instead of selling it to [Fannie Mae](https://www.fanniemae.com/), [Freddie Mac](https://www.freddiemac.com/), or another investor on the secondary mortgage market. In the guides we publish here, portfolio loans come up most often from readers who do not fit a conventional mortgage box: self-employed income, a jumbo loan amount, a non-warrantable condo, or an investment property with too many other financed properties already on the books. Because the lender never sells the loan, it never has to meet Fannie Mae or Freddie Mac's purchase requirements, which gives it far more room to set its own underwriting rules. That flexibility is the entire reason portfolio loans exist, and it cuts both ways: more approval paths for a borrower who does not fit the standard box, and typically a higher rate or stricter terms in exchange for that flexibility.",
     sections: [
       {
@@ -8142,7 +8142,7 @@ export const GUIDES: Guide[] = [
       "A step-by-step elder care checklist: care assessment, legal documents, a financial review, housing, and family communication, before a crisis forces it.",
     h1: "Elder Care Planning Checklist: 6 Steps to Take Now",
     cardBlurb: "The 6-step order that works: care assessment, legal documents, financial review, housing, and family communication, before a crisis forces a decision.",
-    intro:
+    introText:
       "An elder care planning checklist covers five areas in order: a care needs assessment, the legal documents that let someone act for your parent, a full financial review, a housing decision made before a crisis forces it, and a family communication plan. What we see readers get wrong most often is starting with the paperwork instead of the assessment, which produces documents that don't match the care your parent actually needs. This checklist assumes your parent can still understand and sign documents. If a stroke or dementia diagnosis already took that away, skip to the capacity question in the FAQ below, since a few steps here work differently once legal capacity is gone. Work through the six steps in order below, then use our own [elder care planning calculator](/elder-care/) for the Medicaid and asset-protection side of the picture, a separate and more technical track this checklist doesn't cover.",
     sections: [
       {
@@ -8202,7 +8202,7 @@ export const GUIDES: Guide[] = [
       "A financial planning calculator turns your income and goals into one number: your savings rate, retirement readiness, or net worth. Free tools inside.",
     h1: "How to Use a Financial Planning Calculator",
     cardBlurb: "What these tools calculate, the numbers worth tracking first, and where each one lives among ModernWallet's own free calculators.",
-    intro:
+    introText:
       "A financial planning calculator turns your income, savings, and goals into one concrete number: a savings rate, a retirement-readiness projection, or your net worth today. Every calculator we publish here works the same way. You enter your numbers and get the result immediately, with no signup and no email gate. The sections below cover what these tools calculate, the numbers worth tracking first, and where to find each one among ModernWallet's own free calculators.",
     sections: [
       {
@@ -8262,7 +8262,7 @@ export const GUIDES: Guide[] = [
       "Our Axos Bank review breaks down the Summit Savings APY, Axos Checking fees, FDIC insurance limits, and who should bank somewhere with a branch instead.",
     h1: "Axos Bank Review: High APYs, No Monthly Fees",
     cardBlurb: "Summit Savings APY, Axos Checking fees, FDIC coverage, and whether a branchless bank fits you.",
-    intro:
+    introText:
       "[Axos Bank](https://www.axosbank.com/) is worth it if you want a high savings rate and zero fees without a physical branch. In the guides we publish here, the accounts worth recommending are the ones with no games in the fee schedule. Axos Bank's savings and checking accounts clear that bar. Axos Bank has run as a branchless online bank since 2000. Every deposit account carries [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance up to the standard $250,000 per depositor. Its top savings account pays an annual percentage yield (APY) well above the national average, and its checking account carries no monthly fee and no minimum balance. What you give up is a teller window, in-person cash deposit, and a customer-service reputation reviewers call inconsistent.\n\nAxos's savings and checking lineup is the draw. Branch access and consistent customer support are the weak points. Run Axos's advertised Summit Savings rate through our [high-yield savings calculator](/investing/high-yield-savings-calculator/) to see what it actually earns, or set a target with the [savings goal calculator](/investing/savings-goal-calculator/).",
     sections: [
       {
@@ -8336,7 +8336,7 @@ export const GUIDES: Guide[] = [
       "What's a good APR for a credit card? See the current average APR, how issuers set your rate, the different APR types, and how to qualify for a lower one.",
     h1: "What's a Good APR for a Credit Card?",
     cardBlurb: "The current average APR, how issuers actually set your rate, and the dollar cost of even a 5-point difference on a real balance.",
-    intro:
+    introText:
       "A good annual percentage rate (APR) for a credit card sits at or below the national average. We track that average in the guides we publish here, because it decides whether a balance is cheap or expensive to carry. The [Federal Reserve](https://www.federalreserve.gov/releases/g19/current/) tracks it every month, and its data, published through the [FRED database](https://fred.stlouisfed.org/series/TERMCBCCALLNS), put the average rate on all credit card accounts at 20.94% in May 2026. APR is the yearly cost of carrying a balance on a card, shown as a percentage. Anything meaningfully under 21% counts as a strong rate today. A rate in the high 20s or above is expensive. That gap only matters once you carry a balance past your due date. Someone who pays the statement in full every month never accrues interest at all, no matter what number sits on the card.",
     sections: [
       { heading: "Key Takeaways", body: "- A good APR sits at or below the market average, about 21% as of 2026, per the Federal Reserve.\n- Below 15% counts as a strong rate. Above the high 20s is expensive.\n- Your APR comes from an index rate plus a margin the issuer sets based on your credit profile.\n- A single card can carry up to four separate APRs: purchase, cash advance, penalty, and a temporary promotional rate.\n- APR costs real money only once you carry a balance past the due date. Paying in full every month makes the number close to irrelevant.\n- A 5-percentage-point APR gap on a $5,000 balance paid at $200 a month costs about $558 more in interest." },
