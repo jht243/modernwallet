@@ -1,0 +1,14 @@
+IndexNow submission — 2026-09-04 (ga4-top-pages-pass-auto)
+Endpoint: https://api.indexnow.org/indexnow
+Key: dc557f6bfced447aa1a71771d8a0d24a (project-wide fallback key)
+HTTP status: 200
+
+Live verification (before submission):
+https://www.themodernwallet.com/mortgage/extra-payment-calculator/ -> 200
+https://www.themodernwallet.com/guides/personal-loans-for-excellent-credit/ -> 200
+https://www.themodernwallet.com/auto-loan/amortization-schedule/ -> 200
+
+URLs submitted:
+https://www.themodernwallet.com/mortgage/extra-payment-calculator/
+https://www.themodernwallet.com/guides/personal-loans-for-excellent-credit/
+https://www.themodernwallet.com/auto-loan/amortization-schedule/
