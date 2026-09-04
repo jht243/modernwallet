@@ -393,6 +393,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
           "Yes, if the marriage lasted at least 10 years and you're currently unmarried, you can claim a divorced-spouse benefit worth up to 50% of your ex's full retirement age (FRA) benefit, the same 50% floor married spouses get. Claiming on an ex's record doesn't reduce their own benefit or notify them, and a remarriage on their end doesn't block your claim either. Confirm your exact eligibility and amount with the SSA before you file.",
       },
       {
+        question: "Does working reduce a survivor benefit before full retirement age?",
+        answer:
+          "Yes. A surviving spouse collecting a survivor benefit before their own full retirement age is subject to the same Social Security earnings test as a retirement-benefit claimant, which can withhold part or all of the check depending on income. See our [Social Security survivor benefits and the earnings limit](/guides/social-security-survivor-benefits-and-working/) guide for the current-year limits and a worked example.",
+      },
+      {
         question: "Can a stay-at-home or lower-earning spouse contribute to an IRA (spousal IRA)?",
         answer:
           "Yes. A spousal IRA lets a non-earning or lower-earning spouse contribute based on the working spouse's earned income, as long as the couple files a joint tax return. The contribution is still subject to the same annual IRA limit as anyone else — it just lets a household with one income fund two IRAs instead of one.",

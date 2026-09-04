@@ -380,6 +380,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "In mid-2024, the highest HYSA rates were in the 5.00–5.15% APY range, offered mainly by online banks. Rates change frequently — always compare using a current source like Bankrate or NerdWallet for today's top rates.",
       },
+      {
+        question: "Is interest from a HYSA or CD taxable?",
+        answer:
+          "Yes, both are taxed as ordinary income the year the interest is paid or credited, whether or not you withdraw it. See our [full breakdown of how savings and CD interest gets taxed](/guides/is-savings-and-cd-interest-taxable/) for the 1099-INT rules and the few account types that avoid this tax.",
+      },
     ],
     sources: [
       { label: "FDIC — Deposit insurance overview", url: "https://www.fdic.gov/resources/deposit-insurance/" },
@@ -622,12 +627,23 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "A backdoor Roth IRA is a strategy for high earners who exceed the Roth IRA income limits. You contribute to a nondeductible Traditional IRA (no income limit), then immediately convert it to a Roth IRA. As long as you have no pre-existing Traditional IRA balances, this creates Roth tax benefits regardless of income.",
       },
+      {
+        question: "What are the exceptions to the IRA early withdrawal penalty?",
+        answer:
+          "The IRS waives the 10% early withdrawal penalty for several specific situations: unreimbursed medical expenses above 7.5% of your adjusted gross income, health insurance premiums while unemployed, qualified higher education expenses, up to $10,000 for a first-time home purchase, up to $5,000 for a birth or adoption, disability, death, and a series of substantially equal periodic payments under Section 72(t). Regular income tax on a Traditional IRA withdrawal still applies even when the penalty is waived.",
+      },
+      {
+        question: "What happens if I miss a required minimum distribution?",
+        answer:
+          "Missing an RMD triggers an excise tax under the [SECURE 2.0 Act](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs), reduced from the old 50% penalty to 25% of the amount not withdrawn, and further reduced to 10% if you correct the missed distribution within two years and file Form 5329. Withdraw the missed amount as soon as you catch the error, since correcting it within that window brings the penalty down from 25% to 10%.",
+      },
     ],
     sources: [
       { label: "IRS — Traditional and Roth IRAs", url: "https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras" },
       { label: "IRS — Topic No. 409 Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
+      { label: "IRS — Retirement Topics: Exceptions to Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-tax-on-early-distributions" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account", "trump-account-vs-brokerage-account", "401k-vs-brokerage-account"],
+    relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "stocks-vs-bonds", "trump-account-vs-custodial-account", "trump-account-vs-brokerage-account", "401k-vs-brokerage-account", "rmd-vs-qcd"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Retirement calculator", href: "/retirement/" },
@@ -1520,6 +1536,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         question: "Do I need both a revocable and irrevocable trust?",
         answer:
           "Often, yes — they're complements, not either/or. A common structure: revocable living trust holds the household's day-to-day assets for probate avoidance during life and privacy at death, while irrevocable trusts hold specific assets targeted for tax reduction (ILIT for life insurance, dynasty for generational transfer) or asset protection (MAPT for Medicaid, DAPT for creditor protection). Above the federal $15M exemption or a state estate tax threshold, most estate plans use both. Below those thresholds, a revocable trust alone is usually enough.",
+      },
+      {
+        question: "Do revocable and irrevocable trusts pay income tax differently?",
+        answer:
+          "Yes. A revocable trust is a grantor trust, so its income is taxed on the grantor's own return at their individual rate. An irrevocable trust that keeps its own income instead of distributing it is typically a non-grantor trust, taxed at compressed brackets that hit the top 37% rate at just $16,000 of income. See our [trust tax rates guide](/guides/trust-tax-rates-explained/) for the full bracket breakdown and how distributing income changes the bill.",
       },
       {
         question: "Can an irrevocable trust be changed or dissolved after it's signed?",
@@ -5312,13 +5333,18 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Many plans allow it, typically capped at the lesser of $50,000 or 50% of your vested balance, repaid via payroll deduction. It's a workaround for short-term liquidity, but leaving your job often accelerates repayment, and an unpaid balance becomes a taxable, penalized distribution.",
       },
+      {
+        question: "Should I buy index funds inside my 401(k) or in a brokerage account?",
+        answer:
+          "This isn't a true 401(k)-versus-index-fund choice, since an index fund is an investment you hold, not an account type competing with a 401(k). Inside a 401(k), you're limited to whatever index funds the plan's menu offers, usually a handful of low-cost options. In a brokerage account, you can buy any index fund or ETF on the market, but you'll owe tax on its dividends every year, something the 401(k) defers until withdrawal.",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
       { label: "IRS — Topic No. 409, Capital Gains and Losses", url: "https://www.irs.gov/taxtopics/tc409" },
       { label: "IRS — Retirement topics: Required minimum distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "stocks-vs-bonds"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "stocks-vs-bonds", "index-fund-vs-etf"],
     calculatorLinks: [
       { label: "401(k) calculator", href: "/retirement/401k-calculator/" },
       { label: "Investment growth calculator", href: "/investing/investment-growth-calculator/" },

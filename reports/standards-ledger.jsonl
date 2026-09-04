@@ -90,3 +90,4 @@
 {"ts":"2026-09-02T21:52:19+00:00","routine":"competitor-monitor-auto","phase":"phase-3-generate","via":"load-script","cs":"4b1b2af1","aa":"010ce9b0","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}
 {"ts": "2026-09-03T09:32:30+00:00", "routine": "claude-session", "phase": "read:_content-standard.md", "via": "hook", "cs": "79b23559", "aa": "010ce9b0", "exp": "31d70e56", "domain": "The Modern Wallet (themodernwallet.com) is a personal-financ"}
 {"ts": "2026-09-03T09:32:30+00:00", "routine": "claude-session", "phase": "read:_anti-ai-language.md", "via": "hook", "cs": "79b23559", "aa": "010ce9b0", "exp": "31d70e56", "domain": "The Modern Wallet (themodernwallet.com) is a personal-financ"}
+{"ts":"2026-09-04T21:24:41+00:00","routine":"competitor-monitor-auto","phase":"phase-3-generate","via":"load-script","cs":"87426414","aa":"71a2ad6a","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}
