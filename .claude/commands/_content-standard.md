@@ -499,6 +499,8 @@ The one exception is a FACT problem: a number, date, claim, or link that changed
 
 > make this sound more human. you can change structure, rhythm, tone, but do not add any new facts
 
+**The field is called `introText`.** Every repo in the fleet names its lead-prose field `introText`, so this step reads and writes one known field instead of guessing where a page's intro ends. It holds the paragraphs a reader sees before the first heading; the body starts at that heading. Shape varies by repo and does not matter here: layer3 uses `string[]`, one paragraph per element, and several sites use a single string the renderer splits on blank lines. If a repo you are working in still has a page type with no `introText`, treat that as a bug worth reporting in the run email, and fall back to the opening body paragraphs for this run only. Never invent a second intro on a page that already has one.
+
 **How to run it.** For each new page, take its intro paragraphs — the lead paragraphs a reader sees first, whatever field your store keeps them in (a TS `introText` array, Astro/markdown frontmatter or the opening body, a DB intro column) — and pipe them through the portable helper, then write the result back to the SAME field:
 
 ```bash
