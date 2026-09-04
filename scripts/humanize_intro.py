@@ -7,8 +7,16 @@ list. It does not know or care how this repo stores content — the routine that
 reads the new page's intro paragraphs from its own store (TS data file, Astro/markdown
 frontmatter, DB row, whatever), pipes them in here, and writes the result back.
 
-  PROMPT: make this sound more human. you can change structure, rhythm, tone,
-          but do not add any new facts
+  PROMPT: make this sound more human ... but do not change what it means, keep every
+          hedge as strong or as weak as it already is, and add nothing that is not there.
+
+  The meaning clause was added 2026-09-04 after audits of a fleet-wide run found a CHANGED
+  CLAIM on roughly a third of pages: an efficacy hedge deleted on an unproven treatment, FDA
+  "cleared" swapped for "approved", a bankruptcy test moved from when fees were incurred to
+  when they were charged, a closed list of legal grounds turned into examples, and a sidewalk
+  duty shifted off the abutting owner. The old prompt banned ADDING facts and nothing else,
+  so none of that violated it. On a replay of eight real regressions the old prompt held the
+  meaning twice; this one holds it eight times.
 
 WHAT IT PROTECTS (learned from the 2026-09-03 layer3 run of 467 pages):
   * Bylines and disclosures are never sent to the model. A reviewer line ("Reviewed by…")
@@ -41,7 +49,10 @@ import sys
 import urllib.request
 from pathlib import Path
 
-PROMPT = "make this sound more human. you can change structure, rhythm, tone, but do not add any new facts"
+PROMPT = (
+    "make this sound more human. you can change structure, rhythm, tone, and word choice, but do not "
+    "change what it means. keep every fact, number, name and link. keep every hedge exactly as strong or as weak as it already is: if it says may, can, often, most, almost never, or usually, it must still say something just as tentative. do not make a statement firmer or softer than it is, do not turn an example list into a complete one or a complete list into examples, do not swap a term of art for a near-synonym, and add nothing that is not already there"
+)
 MODEL = os.environ.get("HUMANIZE_MODEL", "gpt-5.6-sol")
 
 # Attribution / legal copy: never sent to the model, restored in place afterwards.
@@ -52,7 +63,11 @@ PROTECTED = re.compile(
     re.I,
 )
 _NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
-_LINK = re.compile(r"\]\(([^)]+)\)")
+# Links come in two shapes across the fleet. Markdown, in Astro/markdown repos, and raw
+# <a href> in the repos that store intros as HTML (Humidorist, Metabolic Journal). Guarding
+# only the markdown form left those repos with NO link protection at all, which a run on
+# Trecklist caught on 2026-09-04.
+_LINK = re.compile(r"\]\(([^)]+)\)|<a[^>]+href=[\"\']([^\"\']+)[\"\']", re.I)
 
 
 def _load_env(p: Path) -> None:
@@ -87,7 +102,10 @@ def _facts_lost(before: str, after: str) -> list[str]:
     a_plain = after.replace(",", "")
     lost = [n for n in set(_NUM.findall(before))
             if n not in after and n.replace(",", "") not in a_plain]
-    lost += [u for u in set(_LINK.findall(before)) if u not in after]
+    # findall returns a tuple per match because the pattern has two alternatives; take
+    # whichever group matched.
+    urls = {g for m in _LINK.findall(before) for g in (m if isinstance(m, tuple) else (m,)) if g}
+    lost += [u for u in urls if u not in after]
     return lost
 
 
