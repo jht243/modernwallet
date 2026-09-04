@@ -105,10 +105,19 @@ def _house_style(s: str) -> str:
 
 
 def _facts_lost(before: str, after: str) -> list[str]:
-    """Numbers and links that the rewrite dropped. Comma-formatting differences ignored."""
+    """Facts the rewrite broke, in EITHER direction.
+
+    Checking only for LOST facts lets an INVENTED one through silently, which is the more
+    dangerous failure: a number the source never contained now reads as sourced. Found on the
+    Metabolic Journal run, 2026-09-04. A number that merely gained or lost comma grouping, or
+    that got spelled out as a word, is not a change.
+    """
     a_plain = after.replace(",", "")
+    b_plain = before.replace(",", "")
     lost = [n for n in set(_NUM.findall(before))
             if n not in after and n.replace(",", "") not in a_plain]
+    lost += ["invented:" + n for n in set(_NUM.findall(after))
+             if n not in before and n.replace(",", "") not in b_plain]
     # findall returns a tuple per match because the pattern has two alternatives; take
     # whichever group matched.
     urls = {g for m in _LINK.findall(before) for g in (m if isinstance(m, tuple) else (m,)) if g}
