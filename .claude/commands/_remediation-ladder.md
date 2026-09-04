@@ -37,6 +37,13 @@ The lint covers **only black-and-white rules**: em-dash, exclamation mark, headi
 
 Lint findings **never reach the reviewer, never count as a rework attempt, and never trigger a standard reload.** If the writer phase skipped the lint, run it here first — do not start the reviewer checklist on a page that still fails it.
 
+**The depth gate is a Rung 0 check too, and it must never stall the phase.** Where the audit phase says to run `npm run check-depth`, that script measures BUILT output, so it needs a build, and a routine sandbox starts with no `node_modules` (the 2026-09-04 shavingschool audit died chasing `astro: not found`). Run it in this order and take the first rung that works:
+
+1. `[ -d node_modules ] || npm ci --no-audit --no-fund` (fall back to `npm install --no-audit --no-fund` if there is no lockfile), then `npm run build`, then `npm run check-depth` on the new routes. Exit 0 = pass; non-zero = the named pages are under their floor.
+2. If the install or the build fails for any reason, do NOT keep debugging the toolchain. Measure from source instead: concatenate each new page's reader-facing prose (intro, section bodies, FAQ answers, verdict; not title, meta, schema, CTA boilerplate, or code) and count it with a real command (`wc -w`), then compare against the floors table. Record `depth: measured from source (build unavailable: <one-line reason>)` in the run email.
+
+Either way the verdict is the same deterministic floor check. A build failure is a note in the email, never a reason for the audit to stop, and never a reason to dispatch anything in the background and wait for it.
+
 **If this repo has no lint script**, the reviewer performs the same mechanical checks itself as an explicit FIRST pass, reports them as `MECHANICAL`, and the orchestrator applies those fixes directly. Mechanical findings still never count as a rework attempt. Do not add judgment gates (neutrality, "honest", inflated adjectives, register, depth) to a lint script — those need a reader and belong to the reviewer.
 
 ### Rung 1 — FIX-IN-PLACE (reviewer supplies the replacement; no writer round-trip)
