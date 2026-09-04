@@ -16,7 +16,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Merchant Cash Advance vs Loan: Which Costs Less?",
     introText:
-      "A merchant cash advance vs loan comparison comes down to speed versus cost: an MCA funds in days but can carry a much higher price, while a bank or SBA loan is slower yet far cheaper. A 1.30 factor-rate MCA repaid over about 12 months works out to roughly a 54.81% effective APR. A bank or SBA term loan often lands between 8% and 30% APR. One more key difference: an MCA is legally a sale of your future receivables, not a loan at all.",
+      "Comparing a merchant cash advance vs loan comes down to speed versus cost. An MCA can provide funding in days, but at a much higher price. A bank or SBA loan is slower, yet far cheaper. For example, a 1.30 factor-rate MCA repaid over about 12 months works out to roughly a 54.81% effective APR, while a bank or SBA term loan often falls between 8% and 30% APR. Another key difference is that an MCA is legally a sale of your future receivables, not a loan at all.",
     comparisonTable: {
       rows: [
         { dimension: "Legal structure", a: "Sale of future receivables (not a loan)", b: "A loan with a fixed principal and interest" },
@@ -100,7 +100,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Factor Rate vs Interest Rate: What's the Difference?",
     introText:
-      "The core of factor rate vs interest rate is this: a factor rate is a fixed multiplier that never changes, while an interest rate accrues on your balance and falls as you repay. A 1.40 factor rate on a $100,000 advance is a flat $40,000 cost — about a 95% effective APR over roughly 9 months. An interest rate does the opposite: it charges you only on the money you still owe, so the cost drops as the balance shrinks. That single difference is why a factor rate can cost far more than its number suggests.",
+      "Here's the key difference between factor rate vs interest rate: a factor rate is a fixed multiplier that never changes. An interest rate, by contrast, accrues on your balance and falls as you repay. With a 1.40 factor rate, a $100,000 advance comes with a flat $40,000 cost, about a 95% effective APR over roughly 9 months. An interest rate works the opposite way: it charges you only on the money you still owe, so the cost drops as your balance shrinks. That one difference is why a factor rate can cost far more than its number suggests.",
     comparisonTable: {
       rows: [
         { dimension: "What it is", a: "A fixed multiplier (e.g. 1.40)", b: "A percentage charged on the balance" },
@@ -184,7 +184,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Invoice Factoring vs Merchant Cash Advance: Which Is Cheaper?",
     introText:
-      "Invoice factoring vs merchant cash advance usually favors factoring on cost, because it is tied to real, unpaid invoices rather than a bet on future sales. Factoring a $100,000 invoice at an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. A merchant cash advance for the same business often runs 50% to 150% APR. Both give fast cash, but factoring's link to actual receivables typically makes it the cheaper and lower-risk choice.",
+      "Invoice factoring usually costs less than a merchant cash advance because it is tied to real, unpaid invoices rather than a bet on future sales. Factoring a $100,000 invoice with an 85% advance and a 1.5% fee per 30 days works out to an effective APR of about 28.63%. For the same business, a merchant cash advance often carries an APR of 50% to 150%. Both provide fast cash, but because factoring is linked to actual receivables, it is typically the cheaper, lower-risk choice.",
     comparisonTable: {
       rows: [
         { dimension: "What backs it", a: "A real, unpaid invoice you already issued", b: "A bet on your future sales" },
@@ -268,7 +268,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Invoice Factoring vs Business Line of Credit: Which Is Cheaper?",
     introText:
-      "Invoice factoring vs business line of credit usually comes down to whether you already have unpaid invoices or just need flexible access to cash. Factoring a $100,000 invoice at an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. A business line of credit drawing $50,000 at a 12% APR over 24 months with a 2% draw fee costs about 14.05% effective APR. A line of credit is usually cheaper, but it requires qualifying for approval upfront, while factoring approval leans on your customer's credit instead of yours.",
+      "Choosing between invoice factoring and a business line of credit usually comes down to one question: Do you already have unpaid invoices, or do you just need flexible access to cash?\n\nFactoring a $100,000 invoice with an 85% advance and a 1.5% fee per 30 days works out to about a 28.63% effective APR. By comparison, drawing $50,000 from a business line of credit at a 12% APR over 24 months, with a 2% draw fee, costs about 14.05% effective APR.\n\nA line of credit is usually cheaper, but you have to qualify for approval upfront. Factoring approval, on the other hand, leans on your customer's credit instead of yours.",
     comparisonTable: {
       rows: [
         { dimension: "What backs it", a: "A real, unpaid invoice you already issued", b: "Your business's own credit and revenue history" },
@@ -355,7 +355,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Invoice Factoring vs Invoice Discounting: What's the Real Difference?",
     introText:
-      "Invoice factoring and invoice discounting both advance cash against unpaid invoices, but the difference is who collects the money and whether your customer finds out. With factoring, the factoring company takes over collections and your customer usually pays the factor directly, so the arrangement is visible. With invoice discounting, you keep collecting payments yourself under your own name, your customer is typically unaware a lender is involved, and you carry more of the credit-control responsibility in exchange for confidentiality.",
+      "Invoice factoring and invoice discounting both give you cash advances against unpaid invoices. The key difference is who collects the money, and whether your customer knows about the arrangement.\n\nWith factoring, the factoring company handles collections, and your customer usually pays the factor directly, making the arrangement visible. With invoice discounting, you continue collecting payments under your own name. Your customer is typically unaware that a lender is involved, and you take on more of the credit-control responsibility in exchange for confidentiality.",
     comparisonTable: {
       rows: [
         { dimension: "Who collects the invoice", a: "The factoring company contacts and collects from your customer", b: "You continue collecting under your own business name" },
@@ -435,7 +435,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Business Line of Credit vs SBA Loan: Which Should You Choose?",
     introText:
-      "A business line of credit vs SBA loan comparison comes down to speed versus cost: a line of credit is revolving and can fund in days, while an SBA 7(a) loan is a lump-sum term loan capped by government rate rules that often makes it the cheaper long-term option. Drawing $50,000 on a line of credit at a 12% APR with a 2% draw fee costs about 14.05% effective APR. An SBA 7(a) loan's rate is capped by the U.S. [Small Business Administration](https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility) at the base rate plus roughly 3.0% to 6.5%, but approval commonly takes 30 to 90 days versus days to about two weeks for a line of credit. Which wins depends on how fast you need the money and how much collateral and paperwork you can supply.",
+      "Comparing a business line of credit vs SBA loan ultimately comes down to speed versus cost. A line of credit is revolving and can fund in days, while an SBA 7(a) loan is a lump-sum term loan with rates capped by government rules, often making it the cheaper long-term option.\n\nIf you draw $50,000 on a line of credit at a 12% APR and pay a 2% draw fee, the effective APR is about 14.05%. An SBA 7(a) loan's rate is capped by the U.S. [Small Business Administration](https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility) at the base rate plus roughly 3.0% to 6.5%. However, approval commonly takes 30 to 90 days, compared with days to about two weeks for a line of credit.\n\nWhich one wins depends on how quickly you need the money and how much collateral and paperwork you can supply.",
     comparisonTable: {
       rows: [
         { dimension: "Structure", a: "Revolving credit line — draw, repay, draw again", b: "Lump-sum term loan, government-guaranteed" },
@@ -529,7 +529,7 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
     segment: "Business Financing",
     h1: "Merchant Cash Advance vs Revenue-Based Financing: What's the Difference?",
     introText:
-      "Merchant cash advance vs revenue-based financing comes down to how the repayment actually moves: an MCA sells a slice of your future receivables for a fixed daily or weekly debit set at signing, while revenue-based financing (RBF) is a financing agreement repaid as a percentage of your actual monthly revenue until a pre-agreed repayment cap is reached. Both structures set a fixed total cost upfront instead of charging a standard interest rate, but they are not the same product. An MCA is priced with a factor rate and leans on card and bank-deposit history; RBF is priced with a repayment-cap multiple and often leans on recurring revenue metrics like monthly recurring revenue (MRR), which is why it shows up more often at SaaS, subscription, and ecommerce companies than at card-heavy retail shops.",
+      "The difference between a merchant cash advance and revenue-based financing comes down to how repayment works. With an MCA, you sell a portion of your future receivables in exchange for a fixed daily or weekly debit set at signing. Revenue-based financing (RBF), by contrast, is a financing agreement repaid as a percentage of your actual monthly revenue until you reach a pre-agreed repayment cap.\n\nBoth structures set a fixed total cost upfront rather than charging a standard interest rate, but they are not the same product. An MCA uses a factor rate and relies on card and bank-deposit history. RBF uses a repayment-cap multiple and often relies on recurring revenue metrics such as monthly recurring revenue (MRR). That is why RBF appears more often at SaaS, subscription, and ecommerce companies than at card-heavy retail shops.",
     comparisonTable: {
       rows: [
         { dimension: "Legal structure", a: "Sale of future receivables (not a loan in most states)", b: "Typically a loan or financing agreement; some providers structure it as a revenue-share purchase" },

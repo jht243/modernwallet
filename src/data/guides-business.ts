@@ -14,7 +14,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     cardBlurb:
       "Compare factoring, merchant cash advances, and lines of credit by speed, cost, and fit — with free calculators for each.",
     introText:
-      "Small business financing is money you borrow or advance to run or grow your business, repaid over time with interest or fees. This guide helps you pick the right option by weighing three things: how fast you need cash, what it truly costs, and whether you have unpaid B2B invoices. You will compare a merchant cash advance, invoice factoring, and a business line of credit. Each section links to a free ModernWallet calculator so you can run your own numbers. It also flags a costly trap the FTC has sued over, so you sign nothing blind.",
+      "Small business financing is money you borrow or receive as an advance to run or grow your business, then repay over time with interest or fees. This guide helps you choose the right option by weighing three things: how quickly you need the cash, what it truly costs, and whether you have unpaid B2B invoices.\n\nYou'll compare a merchant cash advance, invoice factoring, and a business line of credit. Each section includes a link to a free ModernWallet calculator, so you can run the numbers yourself. The guide also highlights a costly trap the FTC has sued over, helping you avoid signing anything blind.",
     sections: [
       {
         heading: "What counts as small business financing",
@@ -121,7 +121,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     h1: "How Revenue Affects the Business Loan Amount You Can Get",
     cardBlurb: "The funding gap by revenue size, why growth rate matters as much as revenue level, and how to size a request lenders actually approve.",
     introText:
-      "Revenue is one of the strongest signals a lender uses to size a business loan approval, but it isn't the only one — growth trend and lender type shift your odds of getting the full amount you ask for. This guide covers how revenue level and growth affect approval, where the funding gap is widest, and how to size a loan request that matches what a lender is actually likely to approve.",
+      "Revenue is one of the strongest signals lenders use to determine the size of a business loan approval, but it isn't the only one. Your growth trend and the type of lender also affect your odds of getting the full amount you request. This guide explains how revenue level and growth affect approval, where the funding gap is widest, and how to size your loan request based on what a lender is actually likely to approve.",
     sections: [
       {
         heading: "Why working capital needs rise with revenue",
@@ -184,7 +184,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     cardBlurb:
       "Sale or loan? The GAAP journal entries, reserve accounting, and balance-sheet treatment for factored invoices, with a worked example.",
     introText:
-      "Invoice factoring changes your books differently depending on how the deal is written. A factoring deal is either a sale of your receivables or a secured loan under GAAP (Generally Accepted Accounting Principles). That choice drives every journal entry you make.\n\nThe [Financial Accounting Standards Board (FASB)](https://fasb.org/about-us/facts) sets this rule in [ASC 860](https://storage.fasb.org/ASU2009-16.pdf), the standard for transfers of financial assets. This guide shows the debit and credit entries for both cases. It also covers the reserve, the rebate, and a worked $25,000 invoice example.",
+      "How invoice factoring affects your books depends on how the deal is structured. Under GAAP (Generally Accepted Accounting Principles), a factoring deal is treated as either a sale of your receivables or a secured loan. That classification determines every journal entry you make.\n\nThe [Financial Accounting Standards Board (FASB)](https://fasb.org/about-us/facts) sets this rule in [ASC 860](https://storage.fasb.org/ASU2009-16.pdf), the standard for transfers of financial assets. This guide walks through the debit and credit entries for both cases, including the reserve, the rebate, and a worked example using a $25,000 invoice.",
     sections: [
       {
         heading: "Is invoice factoring a sale or a loan?",
@@ -280,7 +280,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     h1: "How to Get a Business Loan With Bad Credit",
     cardBlurb: "SBA Microloans, revenue-focused lenders, and five concrete moves that improve approval odds when your credit score is working against you.",
     introText:
-      "A credit score below 620 rules out the cheapest bank and SBA 7(a) financing, but it does not rule out every legitimate financing option. This guide covers the specific loan types that weigh business revenue over personal credit, the SBA program built for exactly this situation, and five moves that measurably improve your approval odds without waiting years to rebuild your score first.",
+      "A credit score below 620 rules out the cheapest bank and SBA 7(a) financing, but not every legitimate financing option. This guide explains which loan types prioritize business revenue over personal credit, the SBA program designed for exactly this situation, and five moves that measurably improve your approval odds without requiring you to spend years rebuilding your score first.",
     sections: [
       {
         heading: "What 'bad credit' actually means to a lender",
@@ -345,7 +345,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     cardBlurb:
       "The credit score, time-in-business, and document rules banks and online lenders set for a business line of credit, plus what to do if you fall short.",
     introText:
-      "Most lenders want a personal credit score in the 600s, some operating history, and steady revenue before approving a business line of credit. The credit-score bar tends to run higher at a traditional bank than at a fintech or online lender, which prices for the added risk instead of screening it out. Revenue and time in business, by contrast, vary by lender more than by lender type. A lender also wants specific paperwork before it will quote a rate: bank statements, tax returns, and proof of ownership. Run your own numbers on ModernWallet's [business line of credit calculator](/business-line-of-credit/) once you know which credit tier you're likely to qualify for.",
+      "Before approving a business line of credit, most lenders look for a personal credit score in the 600s, some operating history, and steady revenue. Traditional banks tend to set a higher credit-score bar than fintech or online lenders, which price for the added risk rather than screening it out. Revenue and time in business, on the other hand, vary more by individual lender than by lender type.\n\nBefore quoting a rate, a lender also wants specific paperwork: bank statements, tax returns, and proof of ownership. Once you know which credit tier you're likely to qualify for, run your numbers through ModernWallet's [business line of credit calculator](/business-line-of-credit/).",
     sections: [
       {
         heading: "The Short Answer: Credit Score, Time in Business, and Documents",
@@ -440,7 +440,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     h1: "How Much Business Loan Can You Qualify For?",
     cardBlurb: "What lenders check on revenue, time in business, credit score, and DSCR, plus how to estimate your own borrowing capacity before you apply.",
     introText:
-      "Most lenders qualify a business loan amount using four factors: your revenue, how long you've been in business, your credit score, and your debt service coverage ratio (DSCR), the ratio of your cash flow to your total debt payments. What we see business owners get wrong most often is applying for a round number instead of a number their own cash flow can actually support, which is one of the fastest ways to get approved for less than requested. Revenue and time in business largely determine the maximum amount available. Credit score and DSCR decide whether you qualify for it and at what rate. The sections below cover typical qualification thresholds by loan type, [SBA](https://www.sba.gov/funding-programs/loans) loan, term loan, line of credit, and merchant cash advance (MCA), and a simple way to estimate your own borrowing capacity before you apply.",
+      "Most lenders look at four factors when qualifying a business loan amount: your revenue, how long you've been in business, your credit score, and your debt service coverage ratio (DSCR), the ratio of your cash flow to your total debt payments.\n\nWhat we see business owners get wrong most often is applying for a round number rather than an amount their own cash flow can actually support. That's one of the fastest ways to get approved for less than requested.\n\nRevenue and time in business largely determine the maximum amount available. Your credit score and DSCR determine whether you qualify for that amount and at what rate.\n\nThe sections below cover typical qualification thresholds for each loan type ([SBA](https://www.sba.gov/funding-programs/loans) loan, term loan, line of credit, and merchant cash advance (MCA)) along with a simple way to estimate your own borrowing capacity before you apply.",
     sections: [
       {
         heading: "How Revenue Sets Your Borrowing Limit",
@@ -499,7 +499,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     h1: "Balloon Payment Business Loans Explained",
     cardBlurb: "How a balloon structure differs from a standard amortizing loan, the refinance risk at the balloon date, and a full worked payment-math example.",
     introText:
-      "A balloon payment business loan charges small monthly payments for a set number of years, then requires one large lump-sum payment, the balloon, to clear the remaining balance all at once. The mistake we see most often is treating the balloon date like a formality instead of a real deadline that requires refinancing, selling, or paying off the balance in cash. Commercial real estate and equipment loans use this structure often, since it keeps the monthly payment low while the lender avoids locking in today's rate for the loan's full amortization period. The payment math and the refinance risk at the balloon date both need to be worked out before you sign, not after.",
+      "A balloon payment business loan starts with small monthly payments over a set number of years. Then, at the end, you must make one large lump-sum payment (the balloon) to clear the remaining balance all at once.\n\nThe mistake we see most often is treating the balloon date as a formality rather than a real deadline that requires refinancing, selling, or paying off the balance in cash. Commercial real estate and equipment loans often use this structure because it keeps monthly payments low while allowing the lender to avoid locking in today's rate for the loan's full amortization period.\n\nBefore you sign (not after) you need to work out both the payment math and the refinancing risk at the balloon date.",
     sections: [
       {
         heading: "How a Balloon Structure Differs from a Standard Amortizing Loan",
@@ -555,7 +555,7 @@ export const BUSINESS_GUIDES: Guide[] = [
     cardBlurb:
       "What EIN-only underwriting really requires, two issuers that verify no personal guarantee, and what to do first if your numbers don't clear the bar yet.",
     introText:
-      "A true EIN-only business credit card exists, but only a handful of issuers actually offer one. What we see readers get wrong most often in the financing guides we publish here is assuming EIN-only is a marketing label rather than a real underwriting bar. Most business cards still pull the owner's personal credit report and require a personal guarantee, even when the application form only asks for an Employer Identification Number (EIN). An EIN is the nine-digit number the [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers) issues to identify a business for tax purposes. The genuine exceptions are corporate charge cards that underwrite the business's own revenue, cash balance, or funding instead of the owner's [FICO score](https://www.myfico.com/credit-education/credit-scores). Those numbers set a real bar, and a brand-new business with no revenue history usually cannot clear it yet.",
+      "True EIN-only business credit cards do exist, but only a handful of issuers offer them. In the financing guides we publish here, one of the mistakes we see readers make most often is treating \"EIN-only\" as a marketing label rather than a real underwriting bar.\n\nMost business cards still pull the owner's personal credit report and require a personal guarantee, even if the application asks only for an Employer Identification Number (EIN). An EIN is the nine-digit number the [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers) issues to identify a business for tax purposes.\n\nThe genuine exceptions are corporate charge cards that underwrite the business's own revenue, cash balance, or funding instead of the owner's [FICO score](https://www.myfico.com/credit-education/credit-scores). Those numbers create a real bar, and a brand-new business with no revenue history usually cannot clear it yet.",
     sections: [
       {
         heading: "What EIN-Only Underwriting Means",

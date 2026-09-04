@@ -41,7 +41,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Roth IRA",
     h1: "401(k) vs Roth IRA: Which Retirement Account Is Right for You?",
     introText:
-      "A 401(k) lets you contribute up to $23,000 pre-tax in 2024 and often includes an employer match, while a Roth IRA allows $7,000 in after-tax dollars with tax-free withdrawals in retirement — and the right choice depends mostly on your current tax rate versus your expected rate in retirement.",
+      "A 401(k) lets you contribute up to $23,000 pre-tax in 2024 and often comes with an employer match. A Roth IRA, meanwhile, allows $7,000 in after-tax contributions and offers tax-free withdrawals in retirement. The right choice depends mostly on how your current tax rate compares with the rate you expect in retirement.",
     comparisonTable: {
       rows: [
         { dimension: "2024 contribution limit", a: "$23,000 ($30,500 if 50+)", b: "$7,000 ($8,000 if 50+)" },
@@ -149,7 +149,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Bonds",
     h1: "Stocks vs Bonds: Returns, Risk, and the Right Balance for Your Portfolio",
     introText:
-      "Stocks have historically returned about 10% per year and drive long-term growth, while bonds average 3–5% per year with much less volatility — and most investors benefit from holding both, adjusting the mix as they age.",
+      "Historically, stocks have returned about 10% per year and driven long-term growth, while bonds have averaged 3 to 5% per year with much less volatility. Most investors benefit from holding both and adjusting the mix as they age.",
     comparisonTable: {
       rows: [
         { dimension: "Historical average annual return", a: "~10% (S&P 500 long-run)", b: "~3–5% (investment-grade)" },
@@ -236,7 +236,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Money Market Account",
     h1: "HYSA vs Money Market Account: Which Earns More Interest?",
     introText:
-      "A high-yield savings account (HYSA) typically pays the highest APY on flexible savings — often 4.5–5.0% in 2024 — while a money market account pairs a competitive rate (4.0–4.8%) with check-writing and debit access, making it a better fit if you need to spend directly from the account.",
+      "A high-yield savings account (HYSA) typically offers the highest APY on flexible savings, often 4.5 to 5.0% in 2024. A money market account, meanwhile, combines a competitive rate of 4.0 to 4.8% with check-writing and debit access, making it a better fit if you need to spend directly from the account.",
     comparisonTable: {
       rows: [
         { dimension: "Typical APY (mid-2024)", a: "4.50–5.10%", b: "4.00–4.80%" },
@@ -323,7 +323,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Certificate of Deposit (CD)",
     h1: "HYSA vs CD: Which Account Earns More Interest?",
     introText:
-      "A high-yield savings account (HYSA) earns a variable rate you can access anytime, while a CD locks your money for a set term (3 months to 5 years) in exchange for a fixed rate that can be slightly higher — the right choice depends entirely on when you need the money.",
+      "A high-yield savings account (HYSA) earns a variable rate and lets you access your money anytime, while a CD locks it away for a set term (anywhere from 3 months to 5 years) in exchange for a fixed rate that can be slightly higher. The right choice depends entirely on when you need the money.",
     comparisonTable: {
       rows: [
         { dimension: "Typical APY (mid-2024)", a: "4.50–5.10% (variable)", b: "4.80–5.40% (1-year, fixed)" },
@@ -403,7 +403,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Traditional 401(k)",
     h1: "Roth 401(k) vs Traditional 401(k): Which Version Wins?",
     introText:
-      "A Roth 401(k) takes contributions after tax so your withdrawals in retirement are tax-free, while a Traditional 401(k) reduces your taxable income today — and the right choice hinges on whether your tax rate is higher now or when you retire.",
+      "With a Roth 401(k), you contribute after-tax dollars and make tax-free withdrawals in retirement. A Traditional 401(k), by contrast, reduces your taxable income today. The right choice depends on whether your tax rate is higher now or in retirement.",
     comparisonTable: {
       rows: [
         { dimension: "Contribution tax timing", a: "After-tax (no deduction now)", b: "Pre-tax (reduces taxable income now)" },
@@ -484,7 +484,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "30-Year Mortgage",
     h1: "15-Year vs 30-Year Mortgage: Total Cost, Monthly Payment, and Which Wins",
     introText:
-      "On a $300,000 loan, a 15-year mortgage at 6.5% costs about $2,620/month and saves over $150,000 in total interest compared to a 30-year loan at 7.0% ($1,996/month) — but only if your budget can absorb the higher payment.",
+      "On a $300,000 loan, a 15-year mortgage at 6.5% costs about $2,620 a month and saves more than $150,000 in total interest compared with a 30-year loan at 7.0%, which costs $1,996 a month, but only if your budget can handle the higher payment.",
     comparisonTable: {
       rows: [
         { dimension: "Monthly payment ($300k loan)", a: "~$2,613 at 6.5%", b: "~$1,996 at 7.0%" },
@@ -565,7 +565,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "IRA",
     h1: "Brokerage Account vs IRA: Which Account Should You Invest In First?",
     introText:
-      "A brokerage account has no contribution limits, no withdrawal restrictions, and is taxed annually on dividends and capital gains — while an IRA offers tax advantages ($7,000/year limit) that can save tens of thousands in taxes over a career, making the IRA the right first choice for most long-term investors.",
+      "A brokerage account has no contribution limits or withdrawal restrictions, but dividends and capital gains are taxed annually. An IRA, on the other hand, offers tax advantages and has a $7,000 annual limit. Those tax advantages can save tens of thousands of dollars over a career, making an IRA the right first choice for most long-term investors.",
     comparisonTable: {
       rows: [
         { dimension: "Annual contribution limit", a: "None", b: "$7,000 ($8,000 if 50+) in 2024" },
@@ -646,7 +646,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Adjustable-Rate Mortgage (ARM)",
     h1: "Fixed vs ARM Mortgage: Which Rate Is Better for Your Home Loan?",
     introText:
-      "A fixed-rate mortgage locks your interest rate for the life of the loan — protecting you from rising rates — while an ARM starts with a lower rate that adjusts after an initial period (typically 5, 7, or 10 years), making it cheaper up front but riskier over time.",
+      "A fixed-rate mortgage locks in your interest rate for the life of the loan, protecting you from rising rates. An ARM starts with a lower rate that adjusts after an initial period (typically 5, 7, or 10 years) so it's cheaper up front but riskier over time.",
     comparisonTable: {
       rows: [
         { dimension: "Rate stability", a: "Same rate for life of loan", b: "Fixed for 3–10 years, then adjusts" },
@@ -726,7 +726,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Buying",
     h1: "Renting vs Buying a Home: The True Cost Comparison",
     introText:
-      "Buying a home builds equity and can be cheaper than renting over 7+ years in most markets — but renting wins on flexibility, lower upfront costs, and in high-price markets where monthly ownership costs far exceed rent on comparable properties.",
+      "Buying a home builds equity and can cost less than renting over 7+ years in most markets. But renting offers more flexibility and lower upfront costs, and it can be the better choice in high-price markets where monthly ownership costs far exceed rent for comparable properties.",
     comparisonTable: {
       rows: [
         { dimension: "Upfront cost", a: "Low (first+last month, deposit ~$3–6k)", b: "High (3–20% down + 2–5% closing costs)" },
@@ -809,7 +809,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Roth IRA",
     h1: "529 vs Roth IRA for College Savings: Which Account Should You Use?",
     introText:
-      "A 529 plan is purpose-built for education savings with state tax deductions and tax-free qualified withdrawals — but a Roth IRA's flexibility to serve double duty for both college costs and retirement makes it a strong backup, especially when it's uncertain whether the child will attend college.",
+      "A 529 plan is designed specifically for education savings, offering state tax deductions and tax-free qualified withdrawals. But a Roth IRA can pull double duty for both college costs and retirement, making it a strong backup, especially when it's unclear whether the child will attend college.",
     comparisonTable: {
       rows: [
         { dimension: "Primary purpose", a: "Education expenses", b: "Retirement (college is secondary use)" },
@@ -897,7 +897,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Mutual Fund",
     h1: "ETF vs Mutual Fund: Which Is the Better Investment?",
     introText:
-      "ETFs and mutual funds both pool investor money into a diversified portfolio — but ETFs trade like stocks, typically have lower expense ratios, and are more tax-efficient, while mutual funds offer automatic investing and true fractional shares, making them still the better choice for certain retirement account investors.",
+      "ETFs and mutual funds both pool investors' money in a diversified portfolio. But ETFs trade like stocks, typically have lower expense ratios, and are more tax-efficient. Mutual funds, on the other hand, offer automatic investing and true fractional shares, so they're still the better choice for certain retirement account investors.",
     comparisonTable: {
       rows: [
         { dimension: "How it trades", a: "Intraday on an exchange (like a stock)", b: "Priced once daily at market close" },
@@ -994,7 +994,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Flexible Spending Account (FSA)",
     h1: "HSA vs FSA: Which Pre-Tax Health Account Is Right for You?",
     introText:
-      "An HSA lets you save pre-tax money for medical costs, rolls over every year, and can be invested for long-term growth — but it requires a high-deductible health plan — while an FSA also provides pre-tax savings without that eligibility restriction, though a \"use it or lose it\" rule means unspent balances are forfeited at year-end, making the HSA the better long-term choice for those who qualify.",
+      "An HSA lets you save pre-tax money for medical costs, invest it for long-term growth, and roll over the balance each year. However, you need a high-deductible health plan to qualify. An FSA also offers pre-tax savings without that eligibility restriction, but its \"use it or lose it\" rule means any unspent balance is forfeited at year-end. For those who qualify, that makes an HSA the better long-term choice.",
     comparisonTable: {
       rows: [
         { dimension: "2025 contribution limit", a: "$4,300 individual / $8,550 family", b: "$3,300 (healthcare FSA)" },
@@ -1082,7 +1082,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Conventional Loan",
     h1: "VA Loan vs Conventional Loan: Which Mortgage Is Better for Veterans?",
     introText:
-      "A VA loan gives eligible veterans and service members 0% down payment and no monthly PMI — two features that save thousands upfront and hundreds per month — while a conventional loan is available to anyone but requires 3–20% down and PMI until 20% equity is reached, making the VA loan the financially superior choice for most eligible borrowers.",
+      "A VA loan offers eligible veterans and service members a 0% down payment and no monthly PMI, two features that can save thousands upfront and hundreds per month. A conventional loan is available to anyone, but it requires 3 to 20% down and PMI until 20% equity is reached. For most eligible borrowers, that makes a VA loan the financially superior choice.",
     comparisonTable: {
       rows: [
         { dimension: "Minimum down payment", a: "0% — no down payment required", b: "3% for first-time buyers; 5% for repeat buyers (conventional conforming)" },
@@ -1165,7 +1165,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Tax Resolution",
     h1: "Tax Attorney vs CPA vs Enrolled Agent: Who to Hire for What",
     introText:
-      "A tax attorney is a bar-admitted lawyer who adds attorney-client privilege and can represent you in U.S. Tax Court; a CPA is a state-licensed accountant whose strength is broad accounting and financial-statement depth; and an Enrolled Agent is a federally licensed IRS specialist who is often the most affordable option for straightforward representation. All three have unlimited practice rights before the IRS under Circular 230, but the right choice depends on the shape of your tax problem: criminal or high-stakes litigation calls for a tax attorney, bookkeeping or business tax planning calls for a CPA, and IRS collection cases (installment agreements, Offers in Compromise, penalty abatement) typically call for an EA at $150–$300 per hour.",
+      "A tax attorney is a bar-admitted lawyer who brings attorney-client privilege and can represent you in U.S. Tax Court. A CPA is a state-licensed accountant with broad expertise in accounting and financial statements, while an Enrolled Agent is a federally licensed IRS specialist who is often the most affordable option for straightforward representation. All three have unlimited practice rights before the IRS under Circular 230, but the right choice depends on the shape of your tax problem. Criminal or high-stakes litigation calls for a tax attorney; bookkeeping or business tax planning calls for a CPA; and IRS collection cases (installment agreements, Offers in Compromise, penalty abatement) typically call for an EA at $150 to $300 per hour.",
     comparisonTable: {
       rows: [
         { dimension: "Credential source", a: "Bar admission (state supreme court); often J.D. + LL.M. in taxation", b: "CPA: state board + college coursework + Uniform CPA Exam. EA: IRS federal license via Special Enrollment Examination or 5+ years IRS experience" },
@@ -1263,7 +1263,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Living Trust vs Will: Which One Do You Actually Need?",
     introText:
-      "A living trust avoids probate entirely and keeps your estate settlement private, but costs $1,500–$5,000 attorney-drafted (or $499–$599 online); a will is cheaper ($300–$2,500 attorney or $0–$299 online) and easier to update, but goes through public probate at your death. Neither reduces federal estate tax (the 2026 $15M exemption is the same either way). You need a living trust when you own real estate in more than one state, have a special-needs dependent, or want to avoid probate for privacy or speed reasons — for most households below the estate tax exemption, a will is enough.",
+      "A living trust avoids probate entirely and keeps your estate settlement private, but it costs $1,500 to $5,000 when attorney-drafted, or $499 to $599 online. A will is cheaper ($300 to $2,500 through an attorney or $0 to $299 online) and easier to update, but it goes through public probate when you die.\n\nNeither option reduces federal estate tax; the 2026 $15M exemption is the same either way. You need a living trust if you own real estate in more than one state, have a special-needs dependent, or want to avoid probate for privacy or speed reasons. For most households below the estate tax exemption, a will is enough.",
     comparisonTable: {
       rows: [
         { dimension: "Probate at death", a: "Avoided (assets in trust bypass probate)", b: "Public probate proceeding required" },
@@ -1354,7 +1354,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Online Will vs Lawyer: When Each Is the Right Choice",
     introText:
-      "An online will from Trust & Will, LegalZoom, FreeWill, or Nolo produces a legally valid last will and testament in every U.S. state (with Louisiana requiring an extra notary step under La. Civ. Code art. 1577), costs $0–$299 for the will itself, and works for most simple-to-moderate estates. A lawyer costs $300–$7,500+ depending on state and complexity, and is worth it for blended families, business interests, testamentary trusts with age-based distributions, or estates above state estate tax thresholds. The trap most people miss isn't which tool — it's whether the will was executed with the state's required formalities (witnesses, signing sequence, self-proving affidavit).",
+      "An online will from Trust & Will, LegalZoom, FreeWill, or Nolo costs $0 to $299 for the will itself and works for most simple-to-moderate estates. It produces a legally valid last will and testament in every U.S. state, though Louisiana requires an extra notary step under La. Civ. Code art. 1577.\n\nA lawyer costs $300 to $7,500+, depending on the state and the estate's complexity, and is worth it for blended families, business interests, testamentary trusts with age-based distributions, or estates above state estate tax thresholds.\n\nBut the trap most people miss isn't which tool they use. It's whether the will was executed with the state's required formalities: witnesses, signing sequence, and a self-proving affidavit.",
     comparisonTable: {
       rows: [
         { dimension: "Cost — simple will", a: "$0–$299 (FreeWill / Trust & Will / LegalZoom Basic)", b: "$300–$800 attorney-drafted" },
@@ -1456,7 +1456,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Revocable vs Irrevocable Trust: What's the Difference?",
     introText:
-      "A revocable trust (also called a revocable living trust or RLT) can be changed or dissolved by you at any time — you retain full control, and it avoids probate but does NOT reduce estate tax, protect assets from creditors, or shield assets from Medicaid. An irrevocable trust permanently transfers ownership out of your control and, in exchange, can achieve real tax and asset-protection goals: an ILIT removes life insurance from your taxable estate, a Medicaid Asset Protection Trust (MAPT) shields assets from long-term-care spend-down (subject to the 5-year lookback), and a dynasty trust transfers wealth across generations. Cost: revocable $1,500–$5,000; ILIT $2,500–$4,000; MAPT $3,000–$6,000; dynasty $5,000–$10,000+.",
+      "A revocable trust (also called a revocable living trust or RLT) can be changed or dissolved by you at any time. You retain full control, and the trust avoids probate. However, it does NOT reduce estate tax, protect assets from creditors, or shield assets from Medicaid.\n\nAn irrevocable trust permanently transfers ownership out of your control. In exchange, it can achieve real tax and asset-protection goals: an ILIT removes life insurance from your taxable estate; a Medicaid Asset Protection Trust (MAPT) shields assets from long-term-care spend-down, subject to the 5-year lookback; and a dynasty trust transfers wealth across generations.\n\nCost: revocable $1,500 to $5,000; ILIT $2,500 to $4,000; MAPT $3,000 to $6,000; dynasty $5,000 to $10,000+.",
     comparisonTable: {
       rows: [
         { dimension: "Control during life", a: "You retain full control (trustee + beneficiary)", b: "Permanently transferred to trustee (with limits)" },
@@ -1557,7 +1557,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Irrevocable Trust vs LLC: Which Protects Your Assets Better?",
     introText:
-      "An irrevocable trust protects assets by permanently transferring legal ownership out of your name, so a creditor has nothing of yours left to reach. An LLC protects assets by limiting a creditor's remedy to a charging order, while you keep managing the assets as a member. The trust trades away control for a harder shield; the LLC keeps control but leaves a narrower, state-dependent gap a creditor can sometimes still reach, especially if you are the LLC's only member.",
+      "An irrevocable trust protects assets by permanently transferring legal ownership out of your name, leaving a creditor with nothing of yours to reach. An LLC works differently: it protects assets by limiting a creditor's remedy to a charging order, while you continue managing the assets as a member. The trust gives up control in exchange for a harder shield. The LLC lets you keep control, but leaves a narrower, state-dependent gap that a creditor can sometimes still reach, especially if you are the LLC's only member.",
     comparisonTable: {
       rows: [
         { dimension: "Who controls the assets", a: "Trustee only, you give up legal ownership and management", b: "You, as managing member; day-to-day control stays yours" },
@@ -1653,7 +1653,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Living Trust vs Lady Bird Deed: Which Avoids Probate for Less?",
     introText:
-      "A lady bird deed (also called an enhanced life estate deed) is a real-estate-only document that costs a few hundred dollars and lets your home skip probate and pass directly to named beneficiaries, but it is only available in a handful of states. A revocable living trust costs more — typically $1,500 to $5,000 attorney-drafted — but covers your entire estate, not just one property, and works in every state. If you own a single home in Florida, Texas, Michigan, Vermont, or West Virginia and have little else to plan for, a lady bird deed can be the cheaper, simpler choice; a living trust is the broader tool for everyone else.",
+      "A lady bird deed, also known as an enhanced life estate deed, is a real-estate-only document that typically costs a few hundred dollars. It allows your home to skip probate and pass directly to named beneficiaries, but it is available in only a handful of states.\n\nA revocable living trust costs more (typically $1,500 to $5,000 when attorney-drafted) but it covers your entire estate rather than just one property and works in every state.\n\nIf you own a single home in Florida, Texas, Michigan, Vermont, or West Virginia and have little else to plan for, a lady bird deed can be the cheaper, simpler option. For everyone else, a living trust is the broader tool.",
     comparisonTable: {
       rows: [
         { dimension: "What it covers", a: "Your entire estate — real estate, accounts, and other property you retitle into it", b: "One piece of real estate named on the deed" },
@@ -1740,7 +1740,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning",
     h1: "Prenup vs Postnup: Timing, Cost, and Enforceability",
     introText:
-      "A prenuptial agreement is signed before marriage and is enforceable in every U.S. state under the Uniform Premarital Agreement Act (UPAA, ~28 states) or state case law; a postnuptial agreement is signed after marriage and is enforceable under a stricter standard because spouses owe each other a fiduciary duty by then, making full disclosure and independent counsel effectively mandatory. Both cost roughly the same per party ($1,500–$10,000+ depending on state), but postnups face higher enforcement risk. California requires a 7-day waiting period before signing prenups (Cal. Fam. Code §1615(c)(2)(B)) and independent counsel for waivers — rules that apply to postnups too under §1615(c). If you're already married, the postnup is still available; if you're not yet married, the prenup is easier to enforce.",
+      "A prenuptial agreement is signed before marriage and is enforceable in every U.S. state under either the Uniform Premarital Agreement Act (UPAA, ~28 states) or state case law. A postnuptial agreement is signed after marriage and is enforceable under a stricter standard because, by then, spouses owe each other a fiduciary duty. That makes full disclosure and independent counsel effectively mandatory.\n\nBoth cost roughly the same per party ($1,500 to $10,000+, depending on the state) but postnups face a higher enforcement risk. California requires a 7-day waiting period before signing prenups (Cal. Fam. Code §1615(c)(2)(B)) and independent counsel for waivers. Under §1615(c), those rules apply to postnups too.\n\nIf you're already married, a postnup is still available. If you're not yet married, a prenup is easier to enforce.",
     comparisonTable: {
       rows: [
         { dimension: "Timing", a: "Signed before marriage", b: "Signed after marriage" },
@@ -1830,7 +1830,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Probate",
     h1: "Probate vs Trust: What Each One Actually Costs",
     introText:
-      "Probate is the default court process for settling an estate at death — attorney fees, executor commission, court costs, and 6-24 months of settlement time, running roughly 3-8% of gross estate. A revocable living trust is the standard alternative — $1,500-$5,000 attorney or $499-$599 online, set up during life, and it avoids probate entirely because trust assets don't pass through court. For estates above the state's small-estate threshold (California $208,850; Arizona $200,000; Oregon $275,000), the trust math wins decisively: a $750,000 California estate faces $36,000+ in statutory probate fees vs $2,025-$6,750 for a revocable living trust that would have avoided it entirely.",
+      "Probate is the default court process for settling an estate at death. It typically takes 6-24 months and costs roughly 3-8% of the gross estate, including attorney fees, executor commission, and court costs.\n\nThe standard alternative is a revocable living trust. It is set up during life and costs $1,500-$5,000 through an attorney or $499-$599 online. Because trust assets don't pass through court, it avoids probate entirely.\n\nFor estates above the state's small-estate threshold (California: $208,850; Arizona: $200,000; Oregon: $275,000) the trust math wins decisively. A $750,000 California estate faces $36,000+ in statutory probate fees, compared with $2,025-$6,750 for a revocable living trust that would have avoided probate entirely.",
     comparisonTable: {
       rows: [
         { dimension: "When you pay", a: "At death (deducted from estate)", b: "During life (one-time setup)" },
@@ -1928,7 +1928,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Baby Bonds",
     segment: "Kids & family investing",
     h1: "Trump Account vs Baby Bonds: What's the Difference?",
-    introText: "A Trump Account and a baby bond are not the same thing. The Trump Account is enacted federal law that gives most U.S. newborns a $1,000 seeded investment account. \"Baby bonds\" is a separate policy idea: government-funded, income-targeted accounts for lower-income kids. At the federal level, baby bonds are still just a proposal. A handful of states, led by Connecticut, have launched their own baby-bond programs. So one is real and nationwide today, while the other is mostly a plan. This guide shows exactly how they differ and which one your child can actually get.",
+    introText: "A Trump Account and a baby bond are not the same thing. The Trump Account is enacted federal law that provides most U.S. newborns with a seeded $1,000 investment account. \"Baby bonds\" are a separate policy idea: government-funded, income-targeted accounts for lower-income kids. At the federal level, baby bonds remain just a proposal, though a handful of states, led by Connecticut, have launched their own baby-bond programs. In short, one is real and available nationwide today, while the other is mostly a plan. This guide explains exactly how they differ and which one your child can actually get.",
     comparisonTable: {
       rows: [
         { dimension: "Legal status", a: "Enacted federal law; accounts live July 4, 2026.", b: "Federal version is a proposal (not law). Some states have enacted their own." },
@@ -1984,7 +1984,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "family savings",
     h1: "Trump Account vs 529 Plan",
     introText:
-      "In the Trump Account vs 529 debate, the core trade is taxes versus flexibility: a Trump Account grows tax-deferred and can be used for anything at 18, while a 529 plan grows tax-free but only for education. A Trump Account gives U.S.-citizen children born in 2025–2028 a free $1,000 federal seed and caps contributions at $5,000 a year. A 529 plan has no federal annual limit, often earns a state tax break, and pays for tuition, books, and room and board tax-free. For paying for college, a 529 usually wins on taxes. For open-ended savings that don't require school, the Trump Account has the edge.",
+      "At the heart of the Trump Account vs 529 debate is a trade-off between taxes and flexibility. A Trump Account grows tax-deferred and can be used for anything at 18. It also gives U.S.-citizen children born in 2025 to 2028 a free $1,000 federal seed, with contributions capped at $5,000 a year.\n\nA 529 plan, on the other hand, grows tax-free, but only for education. It has no federal annual limit, often comes with a state tax break, and can pay for tuition, books, and room and board tax-free.\n\nFor paying for college, a 529 usually wins on taxes. For open-ended savings that don't require school, the Trump Account has the edge.",
     comparisonTable: {
       rows: [
         { dimension: "What it's for", a: "Anything after the child turns 18", b: "Qualified education costs only" },
@@ -2053,7 +2053,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Kids & family investing",
     h1: "Trump Account vs Custodial Account (UTMA/UGMA): Which Is Better for Your Child?",
     introText:
-      "In a Trump account vs custodial account (UTMA/UGMA) comparison, the Trump Account gives a free $1,000 federal seed plus tax-deferred, index-only growth locked until age 18, while a custodial account offers no contribution cap, any investment, and money you can use for the child anytime. The Trump Account is best when you want a hands-off head start. A custodial account wins when you need flexibility and control. Many families open both. This guide breaks down the rules, taxes, and financial-aid impact so you can choose.",
+      "When comparing a Trump Account with a custodial account (UTMA/UGMA), the Trump Account provides a free $1,000 federal seed, along with tax-deferred, index-only growth locked until age 18. A custodial account has no contribution cap, allows any investment, and lets you use the money for the child at any time. The Trump Account is best if you want a hands-off head start, while a custodial account wins if you need flexibility and control. Many families open both. This guide explains the rules, taxes, and financial-aid impact to help you choose.",
     comparisonTable: {
       rows: [
         { dimension: "Free starter money", a: "$1,000 federal seed for U.S.-citizen kids born 2025–2028", b: "None — you fund it yourself" },
@@ -2120,7 +2120,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Kids & family investing",
     h1: "Custodial Account vs Savings Account: Which Is Better for Your Child's Money?",
     introText:
-      "A custodial account (UTMA/UGMA) invests a child's money in stocks, funds, or other assets that irrevocably belong to the child, while a regular savings account for a child just holds cash at a bank or credit union, stays in a parent's control, and earns whatever interest rate the account pays. Choose the custodial account when you want growth over many years and are comfortable giving up control at the age of majority. Choose a savings account when you want simple, fully liquid money you can spend on the child anytime, with no market risk and no irrevocable gift.",
+      "A custodial account (UTMA/UGMA) invests a child's money in stocks, funds, or other assets that irrevocably belong to the child. A regular savings account for a child, by contrast, holds cash at a bank or credit union, remains under a parent's control, and earns whatever interest rate the account pays.\n\nChoose a custodial account if you want growth over many years and are comfortable giving up control at the age of majority. Choose a savings account if you want simple, fully liquid money that you can spend on the child anytime, with no market risk and no irrevocable gift.",
     comparisonTable: {
       rows: [
         { dimension: "What it holds", a: "Stocks, ETFs, mutual funds, and (UTMA) other property", b: "Cash only" },
@@ -2206,7 +2206,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Brokerage Account",
     segment: "Kids & family investing",
     h1: "529 vs Brokerage Account: Which Is Better for College Savings?",
-    introText: "A 529 plan beats a taxable brokerage account when you are confident the money goes toward education, because the 529 grows and pays out tax-free for school. A regular parent-owned brokerage account has no tax break, but it stays fully flexible for any goal. You keep control of the brokerage for life, unlike a custodial account. The right pick depends on how sure you are the child attends college. This guide compares both so you can choose. See the [best investment account for kids](/guides/best-investment-account-for-kids/) for the full lineup.",
+    introText: "A 529 plan beats a taxable brokerage account when you're confident the money will go toward education because it grows and pays out tax-free for school. A regular parent-owned brokerage account doesn't offer a tax break, but it remains fully flexible for any goal. Unlike a custodial account, you keep control of the brokerage for life. The right choice depends on how sure you are that the child will attend college. This guide compares both options to help you choose. For the full lineup, see the [best investment account for kids](/guides/best-investment-account-for-kids/).",
     comparisonTable: { rows: [
       { dimension: "Tax on growth", a: "Tax-free if used for qualified education", b: "Taxed yearly on dividends and at sale on gains" },
       { dimension: "State tax break", a: "Most states give a deduction or credit", b: "None" },
@@ -2251,7 +2251,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Coverdell ESA",
     segment: "Kids & family investing",
     h1: "529 vs Coverdell ESA: Which Education Account Is Better?",
-    introText: "For most families, a 529 plan beats a Coverdell ESA because it has no real annual contribution cap, no income limits, and now covers up to $20,000/yr in K-12 tuition. Both accounts grow tax-free and pay tax-free for qualified education. But the Coverdell caps you at just $2,000 per year and phases out at higher incomes. Its one real edge is broader, self-directed investment choice. This guide shows exactly when each account wins.",
+    introText: "For most families, a 529 plan comes out ahead of a Coverdell ESA. It has no real annual contribution cap, no income limits, and now covers up to $20,000/yr in K-12 tuition. Both accounts grow tax-free and pay tax-free for qualified education. The Coverdell, however, caps contributions at just $2,000 per year and phases out at higher incomes. Its one real advantage is broader, self-directed investment choice. This guide explains exactly when each account wins.",
     comparisonTable: { rows: [
       { dimension: "Annual contribution limit", a: "No federal cap; gift-tax exclusion (~$19,000/yr) and state aggregate caps ($235k–$550k+) apply", b: "$2,000/yr total per beneficiary, across all accounts" },
       { dimension: "Income limits to contribute", a: "None", b: "Yes — contributor income phase-outs apply" },
@@ -2293,7 +2293,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "UTMA / Custodial Account",
     segment: "Kids & family investing",
     h1: "529 vs UTMA: Which Account Is Best for Your Child?",
-    introText: "The 529 vs UTMA choice comes down to one trade: a 529 plan grows tax-free but only for education, while a UTMA (custodial) account can fund anything but is taxed every year. A parent-owned 529 stays under your control and barely dents financial aid. A UTMA becomes your child's property outright, and they can spend it on anything once they reach the age of majority. Pick the 529 if college is the goal; pick the UTMA only if you truly need spending freedom. This guide breaks down taxes, control, and the two hidden costs most parents miss.",
+    introText: "Choosing between a 529 and a UTMA comes down to one trade-off: a 529 plan grows tax-free but can only be used for education, while a UTMA (custodial) account can pay for anything but is taxed every year.\n\nA parent-owned 529 stays under your control and barely affects financial aid. A UTMA becomes your child's property outright, and once they reach the age of majority, they can spend it on anything.\n\nIf college is the goal, choose the 529. Choose the UTMA only if you truly need spending freedom. This guide explains the taxes, control, and two hidden costs most parents miss.",
     comparisonTable: { rows: [
       { dimension: "Purpose of funds", a: "Education only for tax-free treatment", b: "Any purpose the custodian (then child) chooses" },
       { dimension: "Tax treatment", a: "Growth and withdrawals tax-free for qualified education", b: "Kiddie tax yearly: unearned income over $2,700 taxed at parent rates (2025)" },
@@ -2336,7 +2336,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "529 Plan",
     segment: "Kids & family investing",
     h1: "Custodial Roth IRA vs 529 Plan: How to Choose",
-    introText: "A custodial Roth IRA vs 529 plan comes down to one gate: a custodial Roth IRA requires the child to have earned income, while a 529 plan does not. The custodial Roth grows tax-free for retirement (or flexible early use), but caps contributions at the child's earnings or $7,000 a year, whichever is less. A 529 plan grows tax-free for education, has no earned-income rule, and allows far larger contributions plus a likely state tax break. Many families use both: a 529 for college and a custodial Roth for a working teen's retirement head start. This guide shows which account fits which goal.",
+    introText: "Choosing between a custodial Roth IRA and a 529 plan comes down to one key requirement: a custodial Roth IRA requires the child to have earned income, while a 529 plan does not.\n\nA custodial Roth grows tax-free for retirement (or flexible early use) but contributions are capped at the child's earnings or $7,000 a year, whichever is less. A 529 plan grows tax-free for education, has no earned-income rule, allows far larger contributions, and comes with a likely state tax break.\n\nMany families use both: a 529 for college and a custodial Roth to give a working teen a head start on retirement. This guide shows which account fits which goal.",
     comparisonTable: { rows: [
       { dimension: "Main purpose", a: "Tax-free retirement savings (flexible)", b: "Tax-free savings for education" },
       { dimension: "Earned-income requirement", a: "Yes — child must have a job or self-employment", b: "No — anyone can fund it" },
@@ -2381,7 +2381,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "UTMA / Custodial Account",
     segment: "Kids & family investing",
     h1: "Custodial Roth IRA vs UTMA: Which Account Is Better for Your Child?",
-    introText: "In a custodial Roth IRA vs UTMA choice, pick the custodial Roth IRA when your child has a job, because its growth is fully tax-free — but fund a UTMA (or the older UGMA version) when they have no earned income, need money before retirement, or want to save more than the Roth allows. A custodial Roth IRA can only be funded with a child's earned income, up to $7,000 in 2025. A UTMA custodial account has no earned-income rule and no contribution cap, but its investment gains face the kiddie tax. This page compares both, including how a custodial brokerage account stacks up.",
+    introText: "When choosing between a custodial Roth IRA and a UTMA, pick the custodial Roth IRA if your child has a job, since its growth is fully tax-free. Fund a UTMA (or the older UGMA version) if they have no earned income, need money before retirement, or want to save more than the Roth allows.\n\nA custodial Roth IRA can only be funded with a child's earned income, up to $7,000 in 2025. A UTMA custodial account has no earned-income rule and no contribution cap, but its investment gains face the kiddie tax. This page compares both options, including how a custodial brokerage account stacks up.",
     comparisonTable: { rows: [
       { dimension: "Earned income required?", a: "Yes — child must have a job or self-employment", b: "No — anyone can gift money to it" },
       { dimension: "Contribution limit (2025)", a: "Lesser of earned income or $7,000", b: "No cap (gift-tax exclusion ~$19,000/yr applies)" },
@@ -2429,7 +2429,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Kids & family investing",
     h1: "Custodial Roth IRA vs Brokerage Account: Which Is Better for Your Child?",
     introText:
-      "A custodial Roth IRA grows completely tax-free for retirement but only accepts a child's own earned income, while a custodial brokerage account (a UTMA or UGMA) accepts money from anyone, has no contribution cap, and can be spent on anything — at the cost of yearly kiddie-tax exposure. Pick the Roth when your child has documented wages and you want tax-free compounding over 50+ years. Pick the brokerage account when the child has no job yet, or when you want money available before retirement age.",
+      "A custodial Roth IRA grows completely tax-free for retirement, but contributions can come only from the child's own earned income. A custodial brokerage account (a UTMA or UGMA) can accept money from anyone, has no contribution cap, and can be used for anything, though it comes with yearly kiddie-tax exposure.\n\nChoose the Roth if your child has documented wages and you want tax-free compounding for 50+ years. Choose the brokerage account if the child doesn't have a job yet or if you want the money available before retirement age.",
     comparisonTable: {
       rows: [
         { dimension: "Funding source", a: "Only the child's own earned income", b: "Anyone can gift or contribute" },
@@ -2539,7 +2539,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Kids & family investing",
     h1: "Custodial Roth IRA vs Traditional IRA: Which Is Better for Your Child?",
     introText:
-      "A custodial Roth IRA beats a custodial Traditional IRA for almost every working child, because a minor's low earned income already erases most or all of the Traditional IRA's upfront tax deduction, while the Roth's decades of tax-free growth remain fully intact. Both accounts share the same earned-income rule and the same 2025 contribution ceiling — the lesser of the child's earned income or $7,000. The real difference is what happens to the money later: a custodial Roth IRA is funded with after-tax dollars and never taxed again, while a custodial Traditional IRA is funded with a deduction that is often worth close to nothing to a low-earning teen, then taxed as ordinary income decades later.",
+      "For almost every working child, a custodial Roth IRA beats a custodial Traditional IRA. That's because a minor's low earned income already wipes out most or all of the Traditional IRA's upfront tax deduction, while the Roth still gets decades of tax-free growth.\n\nBoth accounts follow the same earned-income rule and have the same 2025 contribution ceiling: the lesser of the child's earned income or $7,000. The key difference is what happens later. A custodial Roth IRA is funded with after-tax dollars and is never taxed again. A custodial Traditional IRA offers a deduction that is often worth close to nothing for a low-earning teen, but the money is taxed as ordinary income decades later.",
     comparisonTable: {
       rows: [
         { dimension: "Earned income required?", a: "Yes — child must have documented earned income", b: "Yes — same earned-income rule applies" },
@@ -2621,7 +2621,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "529 vs UTMA",
     segment: "Kids & family investing",
     h1: "Trump Account vs 529 vs UTMA: Which Kids' Account Wins?",
-    introText: "In the Trump Account vs 529 vs UTMA choice, the Trump Account gives a free $1,000 federal seed but locks the money until 18, a 529 grows tax-free for college, and a UTMA offers full flexibility but the heaviest tax and aid cost. These are not either-or accounts. The free Trump seed is worth claiming for every eligible child, then you layer a 529 or UTMA on top based on your goal. This page breaks down all three side by side so you can pick the right mix. See our [best investment account for kids](/guides/best-investment-account-for-kids/) guide for the full lineup.",
+    introText: "When choosing between a Trump Account, 529, and UTMA, each has distinct advantages: a Trump Account provides a free $1,000 federal seed but locks the money until age 18; a 529 grows tax-free for college; and a UTMA offers full flexibility but comes with the heaviest tax and aid cost.\n\nThese accounts aren't either-or. Claiming the free Trump seed is worthwhile for every eligible child, and you can then layer a 529 or UTMA on top based on your goal. This page compares all three side by side to help you choose the right mix. For the full lineup, see our [best investment account for kids](/guides/best-investment-account-for-kids/) guide.",
     comparisonTable: { rows: [
       { dimension: "Free money to start", a: "$1,000 federal seed for kids born 2025-2028", b: "529: none · UTMA: none" },
       { dimension: "Tax treatment of growth", a: "Tax-deferred; withdrawals taxed as ordinary income", b: "529: tax-free for school · UTMA: kiddie-taxed yearly" },
@@ -2666,7 +2666,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Brokerage Account",
     segment: "Kids & family investing",
     h1: "Trump Account vs Brokerage Account: Which Is Better for Your Kid?",
-    introText: "A Trump Account beats a taxable brokerage account when you can leave the money invested until your child turns 18, but a brokerage wins when you need flexibility or liquidity before then. The Trump Account hands you a free $1,000 federal seed and lets the money grow tax-deferred. The catch: it can only hold an S&P 500 index fund and stays locked until January 1 of the year your child turns 18. A taxable brokerage account has no seed and gets taxed every year, but you can invest in anything, withdraw anytime, and use the money for any purpose. This guide compares the trade-offs so you can pick the right home for your child's money.",
+    introText: "A Trump Account comes out ahead of a taxable brokerage account if you can leave the money invested until your child turns 18. But if you need flexibility or access to the money before then, a brokerage account wins.\n\nWith a Trump Account, you get a free $1,000 federal seed, and the money grows tax-deferred. The catch is that it can only hold an S&P 500 index fund, and the money stays locked up until January 1 of the year your child turns 18.\n\nA taxable brokerage account doesn't come with a seed and is taxed every year. In return, you can invest in anything, withdraw the money anytime, and use it for any purpose.\n\nThis guide breaks down those trade-offs to help you choose the right home for your child's money.",
     comparisonTable: {
       rows: [
         { dimension: "Free money", a: "$1,000 federal seed for kids born 2025-2028", b: "None" },
@@ -2769,7 +2769,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Roth IRA (custodial)",
     segment: "Kids & family investing",
     h1: "Trump Account vs Roth IRA for Kids: A Clear Comparison",
-    introText: "A Trump Account gives any eligible child a free $1,000 federal seed with no job required, while a custodial Roth IRA offers tax-free growth but only for a child who has earned income. The Trump Account grows tax-deferred and is taxed as ordinary income at withdrawal, like a traditional IRA. A custodial Roth IRA grows and pays out tax-free, and contributions can come out anytime. The earned-income rule is the deciding factor, and the two accounts are not mutually exclusive. This guide shows which fits your child and when to use both.",
+    introText: "A Trump Account gives every eligible child a free $1,000 federal seed, with no job required. A custodial Roth IRA also offers tax-free growth, but only if the child has earned income.\n\nLike a traditional IRA, a Trump Account grows tax-deferred, and withdrawals are taxed as ordinary income. A custodial Roth IRA grows tax-free, pays out tax-free, and allows contributions to be withdrawn anytime.\n\nThe deciding factor is the earned-income rule, and the two accounts are not mutually exclusive. This guide explains which account fits your child and when it makes sense to use both.",
     comparisonTable: { rows: [
       { dimension: "Earned income required?", a: "No — any eligible child can be funded, even a newborn", b: "Yes — the child must have documented earned income" },
       { dimension: "Free money", a: "$1,000 federal seed for U.S.-citizen kids born 2025–2028", b: "None" },
@@ -2814,7 +2814,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Kids Savings Account (HYSA)",
     segment: "Kids & family investing",
     h1: "Trump Account vs Savings Account: Which Is Better for Kids?",
-    introText: "A Trump account vs savings account choice comes down to invested growth versus guaranteed safety. A Trump account puts your child's money in an S&P 500 index fund, adds a $1,000 federal seed, and grows tax-deferred, but locks the money until age 18. A kids savings account or high-yield savings account (HYSA) is FDIC-insured, fully liquid, and never loses principal, but pays only about 4% and gets taxed every year. The right pick depends on whether the money is long-term (college, wealth) or short-term (an emergency fund your child can touch).",
+    introText: "Choosing between a Trump account and a savings account comes down to invested growth versus guaranteed safety. A Trump account invests your child's money in an S&P 500 index fund, includes a $1,000 federal seed, and grows tax-deferred, but the money is locked up until age 18. A kids savings account or high-yield savings account (HYSA), on the other hand, is FDIC-insured, fully liquid, and never loses principal, but it pays only about 4% and is taxed every year. The right choice depends on whether the money is for the long term, such as college or wealth, or the short term, such as an emergency fund your child can access.",
     comparisonTable: {
       rows: [
         { dimension: "What it holds", a: "S&P 500 / U.S. equity index fund (invested)", b: "Bank cash deposit" },
@@ -2904,7 +2904,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "UGMA",
     segment: "Kids & family investing",
     h1: "UTMA vs UGMA: What's the Difference?",
-    introText: "UTMA vs UGMA comes down to what the account can hold and when the child takes control: UTMA can hold almost any property and often transfers later, while UGMA holds only financial assets like cash, stocks, and funds. Both are custodial accounts, where an adult manages money that legally belongs to the child. Both are taxed the same way under the kiddie tax, and both count as the student's asset on the FAFSA. In practice, the account type is usually decided for you by your state and your broker, not by a choice you make. Most brokers today open UTMA accounts by default.",
+    introText: "The difference between UTMA and UGMA comes down to what the account can hold and when the child takes control. UTMA can hold almost any property and often transfers later, while UGMA is limited to financial assets like cash, stocks, and funds.\n\nBoth are custodial accounts: an adult manages money that legally belongs to the child. They're taxed the same way under the kiddie tax, and both count as the student's asset on the FAFSA.\n\nIn practice, your state and broker usually decide the account type for you, it's not a choice you make. Most brokers today open UTMA accounts by default.",
     comparisonTable: { rows: [
       { dimension: "Full name", a: "Uniform Transfers to Minors Act", b: "Uniform Gifts to Minors Act" },
       { dimension: "What it can hold", a: "Almost any property: cash, securities, real estate, art, patents", b: "Financial assets only: cash, stocks, bonds, mutual funds" },
@@ -2952,7 +2952,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "Roth IRA vs Traditional IRA: Which Should You Pick?",
     introText:
-      "A Roth IRA is usually better if you expect a higher tax rate in retirement, while a Traditional IRA wins if you want a tax deduction now. Both accounts let you invest for retirement with tax advantages. The core difference is timing. A Roth IRA taxes your money before you contribute. A Traditional IRA taxes your money when you withdraw it. Your current tax rate versus your future tax rate drives the choice. This guide compares the 2025 rules side by side so you can decide with confidence.",
+      "A Roth IRA is usually the better choice if you expect your tax rate to be higher in retirement. A Traditional IRA may be better if you want a tax deduction now. Both accounts offer tax advantages for retirement investing, but the key difference is when you pay taxes. With a Roth IRA, your money is taxed before you contribute it. With a Traditional IRA, your money is taxed when you withdraw it. The choice comes down to your current tax rate versus your future tax rate. This guide compares the 2025 rules side by side so you can decide with confidence.",
     comparisonTable: {
       rows: [
         { dimension: "Contribution limit (2025)", a: "$7,000, or $8,000 if age 50+", b: "$7,000, or $8,000 if age 50+" },
@@ -3044,7 +3044,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Home financing",
     h1: "HELOC vs. Home Equity Loan: How to Choose",
     introText:
-      "Choose a HELOC if you want flexible, borrow-as-needed access at a variable rate, and a home equity loan if you want a fixed-rate lump sum with predictable payments. Both let you tap your home's equity, and both use your home as collateral. The right pick depends on whether you need one known amount now or ongoing access over time.",
+      "Choose a HELOC if you want flexible, borrow-as-needed access at a variable rate. Choose a home equity loan if you want a fixed-rate lump sum with predictable payments. Both let you tap your home's equity, and both use your home as collateral. The right choice depends on whether you need one known amount now or ongoing access over time.",
     comparisonTable: {
       rows: [
         { dimension: "Rate type", a: "Variable, tied to the prime rate", b: "Fixed for the life of the loan" },
@@ -3146,7 +3146,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Mortgages",
     h1: "FHA vs Conventional Loan: Which Mortgage Is Better?",
     introText:
-      "An FHA loan is better for lower credit scores and small down payments, while a conventional loan is better for strong-credit buyers who want to drop mortgage insurance. FHA loans are government-insured through HUD and accept credit scores as low as 580 with 3.5% down. Conventional loans follow Fannie Mae and Freddie Mac rules, usually need a 620 score, and let you cancel mortgage insurance once you build 20% equity. This guide compares both loans on cost, credit, and long-term value for 2025 and 2026 buyers.",
+      "An FHA loan is better suited to buyers with lower credit scores and small down payments, while a conventional loan is better for buyers with strong credit who want to drop mortgage insurance. FHA loans are government-insured through HUD and accept credit scores as low as 580 with 3.5% down. Conventional loans follow Fannie Mae and Freddie Mac rules, usually require a 620 score, and allow you to cancel mortgage insurance once you build 20% equity. This guide compares both loan types on cost, credit, and long-term value for buyers in 2025 and 2026.",
     comparisonTable: {
       rows: [
         { dimension: "Minimum down payment", a: "3.5% with a 580+ credit score (10% for scores 500-579)", b: "As low as 3% on some programs; 5% is common" },
@@ -3238,7 +3238,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "Pension vs 401(k): Which Retirement Plan Is Better?",
     introText:
-      "A pension is usually better if you value guaranteed lifetime income, while a 401(k) is better if you value control, portability, and growth potential. A pension (a defined-benefit plan) pays a set monthly check for life, and your employer bears the investment risk. A 401(k) (a defined-contribution plan) builds a balance you own and invest, so you bear the risk and keep the upside. Most private jobs now offer a 401(k), not a pension.",
+      "A pension is usually the better choice if you value guaranteed lifetime income. A 401(k), on the other hand, is better if you value control, portability, and growth potential.\n\nA pension, or defined-benefit plan, provides a set monthly check for life, with your employer bearing the investment risk. A 401(k), or defined-contribution plan, builds a balance that you own and invest, so you bear the risk but also keep the upside. Most private jobs now offer a 401(k) rather than a pension.",
     comparisonTable: {
       rows: [
         { dimension: "Plan type", a: "Defined benefit (guaranteed payout)", b: "Defined contribution (balance you build)" },
@@ -3332,7 +3332,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Investing",
     h1: "Index Fund vs ETF: Which Should You Choose?",
     introText:
-      "An index fund and an ETF can track the same index, but an index fund is a mutual fund priced once a day, while an ETF trades intraday on an exchange like a stock. Choose an index mutual fund if you want automatic recurring investing in exact dollar amounts. Choose an ETF if you want intraday trading, no minimum beyond one share, and slightly better tax efficiency in a taxable account.",
+      "An index fund and an ETF can track the same index, but they work differently. An index fund is a mutual fund priced once a day, while an ETF trades intraday on an exchange like a stock.\n\nChoose an index mutual fund if you want to set up automatic recurring investments in exact dollar amounts. Choose an ETF if you want intraday trading, no minimum beyond one share, and slightly better tax efficiency in a taxable account.",
     comparisonTable: {
       rows: [
         { dimension: "How it trades", a: "Priced once daily at NAV after market close", b: "Trades intraday on an exchange like a stock" },
@@ -3441,7 +3441,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Borrowing & debt",
     h1: "Secured vs Unsecured Loan: Key Differences Explained",
     introText:
-      "The difference between a secured vs unsecured loan is collateral: a secured loan is backed by an asset the lender can seize if you stop paying, while an unsecured loan is not. That one difference shapes your interest rate, how much you can borrow, and how easy approval is. Secured loans (mortgages, auto loans, HELOCs) usually cost less because the lender has a safety net. Unsecured loans (most personal loans, credit cards, student loans) cost more and rely on your credit. Choose based on how much rate you can save versus how much you would lose if you default.",
+      "The difference between a secured vs unsecured loan comes down to collateral. A secured loan is backed by an asset the lender can seize if you stop paying; an unsecured loan is not. That distinction affects your interest rate, how much you can borrow, and how easy it is to get approved.\n\nSecured loans (mortgages, auto loans, and HELOCs) usually cost less because the lender has a safety net. Unsecured loans (most personal loans, credit cards, and student loans) cost more and rely on your credit. When choosing, weigh how much you can save on the rate against how much you would lose if you default.",
     comparisonTable: {
       rows: [
         { dimension: "Collateral required", a: "Yes — car, home, or savings backs the loan", b: "No — nothing is pledged" },
@@ -3533,7 +3533,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Home financing",
     h1: "Cash-Out Refinance vs HELOC: Which Should You Choose?",
     introText:
-      "The core difference in cash-out refinance vs HELOC is what happens to your first mortgage. A cash-out refinance replaces your existing mortgage with a new, larger loan and pays you the difference in cash. A HELOC leaves your first mortgage untouched and adds a second, revolving line of credit on top. Choose a cash-out refinance when today's rates are near or below your current rate. Choose a HELOC when your existing rate is low and you want to protect it.",
+      "The core difference between a cash-out refinance and a HELOC is what happens to your first mortgage. A cash-out refinance replaces your existing mortgage with a new, larger loan, then pays you the difference in cash. A HELOC keeps your first mortgage intact and adds a second, revolving line of credit on top of it.\n\nChoose a cash-out refinance when today's rates are near or below your current rate. Choose a HELOC when your existing rate is low and you want to protect it.",
     comparisonTable: {
       rows: [
         { dimension: "Loan structure", a: "New, larger first mortgage that replaces your old one", b: "Second loan that sits behind your first mortgage" },
@@ -3630,7 +3630,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Self-employed retirement",
     h1: "SEP-IRA vs Solo 401(k): Which Retirement Plan Wins?",
     introText:
-      "In the SEP-IRA vs Solo 401(k) choice, pick a Solo 401(k) if you want to save the most or add Roth money, and pick a SEP-IRA if you want the simplest setup. Both are tax-advantaged retirement plans built for self-employed people and small-business owners. The big difference is how you fund them. A SEP-IRA uses employer contributions only. A Solo 401(k) lets you add an employee deferral on top of an employer contribution, so it often lets you save more at the same income.",
+      "When choosing between a SEP-IRA and a Solo 401(k), go with a Solo 401(k) if you want to save the most or contribute Roth money. Choose a SEP-IRA if you want the simplest setup. Both are tax-advantaged retirement plans for self-employed people and small-business owners, but they're funded differently. A SEP-IRA allows employer contributions only, while a Solo 401(k) lets you make an employee deferral in addition to an employer contribution. As a result, a Solo 401(k) often lets you save more at the same income.",
     comparisonTable: {
       rows: [
         { dimension: "Who can contribute", a: "Employer only (the business funds it)", b: "You as employee plus you as employer" },
@@ -3727,7 +3727,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Investing",
     h1: "Index Fund vs Mutual Fund: Which Should You Choose?",
     introText:
-      "An index fund is itself a type of mutual fund, so the real choice is between a passive index fund and an actively managed mutual fund. A passive index fund copies a benchmark like the S&P 500 at a very low cost. An actively managed fund pays a manager to pick stocks and try to beat the market, which costs more. For most long-term investors, a low-cost index fund wins because most active funds fail to beat their benchmark over 10 to 15 years. Active funds mainly make sense in narrow, less-efficient corners of the market.",
+      "An index fund is a type of mutual fund, so the real choice is between a passive index fund and an actively managed mutual fund. A passive index fund tracks a benchmark like the S&P 500 at a very low cost. An actively managed fund costs more because it pays a manager to pick stocks and try to beat the market. For most long-term investors, a low-cost index fund comes out ahead because most active funds fail to beat their benchmark over 10 to 15 years. Active funds mainly make sense in narrow, less-efficient corners of the market.",
     comparisonTable: {
       rows: [
         { dimension: "Management style", a: "Passive; tracks a market index", b: "Active; a manager picks holdings" },
@@ -3820,7 +3820,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "Traditional IRA vs 401(k): Which to Fund First",
     introText:
-      "In the traditional IRA vs 401(k) decision, fund your 401(k) up to the full employer match first, then a traditional IRA. Both accounts are pre-tax and grow tax-deferred. But a 401(k) may hand you free matching money, while a traditional IRA gives you far more investment choice. Most people use both, in a set order, to get the best of each.",
+      "When deciding between a traditional IRA and a 401(k), start by funding your 401(k) up to the full employer match, then contribute to a traditional IRA. Both accounts are pre-tax and grow tax-deferred. A 401(k) may come with free matching money, while a traditional IRA offers far more investment choice. Most people use both in that order to get the best of each.",
     comparisonTable: {
       rows: [
         { dimension: "2025 contribution limit", a: "$7,000 ($8,000 if 50+)", b: "$23,500 employee ($31,000 if 50+)" },
@@ -3918,7 +3918,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Savings",
     h1: "CD vs Money Market Account: How to Choose",
     introText:
-      "Choose a CD when you can lock money away for a set term and want a guaranteed fixed rate; choose a money market account when you need easy access and a rate that can rise with the market. That is the core of the CD vs money market decision. A CD (certificate of deposit) trades access for a locked rate. A money market account keeps your cash liquid but pays a variable rate. Both are deposit products insured by the FDIC or NCUA up to $250,000 per depositor, per institution.",
+      "Choose a CD if you can lock your money away for a set term and want a guaranteed fixed rate. Choose a money market account if you need easy access and a rate that can rise with the market. That's the heart of the CD vs. money market decision.\n\nA CD (certificate of deposit) trades access for a locked rate, while a money market account keeps your cash liquid but pays a variable rate. Both are deposit products insured by the FDIC or NCUA up to $250,000 per depositor, per institution.",
     comparisonTable: {
       rows: [
         { dimension: "Rate type", a: "Fixed for the full term", b: "Variable; moves with the market" },
@@ -4015,7 +4015,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Life insurance",
     h1: "Term Life vs Whole Life Insurance: Which Is Right for You?",
     introText:
-      "For most families, term life insurance is the better choice because it costs far less and covers you when your dependents need it most. Whole life insurance lasts your entire life and builds cash value, but it can cost 5 to 15 times more per dollar of coverage. This guide breaks down the term life vs whole life insurance decision so you can match the right policy to your goals and budget.",
+      "For most families, term life insurance is the better choice. It costs far less and provides coverage when your dependents need it most. Whole life insurance lasts your entire life and builds cash value, but it can cost 5 to 15 times more per dollar of coverage. This guide breaks down the term life vs whole life insurance decision to help you match the right policy to your goals and budget.",
     comparisonTable: {
       rows: [
         { dimension: "Coverage length", a: "Set term of 10, 20, or 30 years", b: "Your entire life, as long as premiums are paid" },
@@ -4107,7 +4107,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "small business owners choosing a 401(k) provider",
     h1: "Gusto vs Paychex 401(k): Which Small Business Plan Fits You?",
     introText:
-      "[Gusto](https://gusto.com/) and [Paychex](https://www.paychex.com/retirement-services) take opposite approaches to the small business 401(k). Gusto does not run a retirement plan itself — it connects your payroll to [Guideline](https://www.guideline.com/), an independent recordkeeper with published flat-fee pricing and built-in fiduciary coverage. Paychex runs its 401(k) in-house as part of its payroll and HR platform, with pricing set by quote. The right choice comes down to how much you value published pricing and automated fiduciary coverage versus a single vendor that bundles payroll, HR, and retirement under one contract.",
+      "[Gusto](https://gusto.com/) and [Paychex](https://www.paychex.com/retirement-services) take very different approaches to small business 401(k)s. Gusto does not manage retirement plans itself. Instead, it connects your payroll to [Guideline](https://www.guideline.com/), an independent recordkeeper that offers published flat-fee pricing and built-in fiduciary coverage. Paychex manages its 401(k) in-house through its payroll and HR platform, with pricing available by quote. The better fit depends on what matters more to you: published pricing and automated fiduciary coverage, or one vendor that bundles payroll, HR, and retirement under a single contract.",
     comparisonTable: {
       rows: [
         { dimension: "Who runs the plan", a: "Guideline, an independent recordkeeper synced to Gusto payroll", b: "Paychex itself — recordkeeping, payroll, and HR under one roof" },
@@ -4176,7 +4176,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "veterans and first-time buyers",
     h1: "FHA Loan vs. VA Loan: Which Mortgage Is Better?",
     introText:
-      "An FHA loan requires just 3.5% down and accepts credit scores as low as 580, while a VA loan lets eligible veterans and service members buy with 0% down and no monthly mortgage insurance at all — and for anyone who qualifies for VA, it is almost always the cheaper mortgage over time despite FHA's smaller-looking upfront cost.",
+      "An FHA loan requires just 3.5% down and accepts credit scores as low as 580. A VA loan, meanwhile, lets eligible veterans and service members buy with 0% down and no monthly mortgage insurance at all. For anyone who qualifies for VA, it is almost always the cheaper mortgage over time, despite FHA's smaller-looking upfront cost.",
     comparisonTable: {
       rows: [
         { dimension: "Minimum down payment", a: "3.5% (10% if credit score is 500–579)", b: "0% — no down payment required" },
@@ -4264,7 +4264,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "small business owners",
     h1: "SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business?",
     introText:
-      "A SIMPLE IRA lets small businesses offer a retirement plan with almost no paperwork and a mandatory employer contribution capped near 3% of pay, while a 401(k) costs more to administer but lets employees save nearly 50% more per year and gives owners far more plan-design flexibility — and the right choice depends mostly on your headcount and how much administrative cost you're willing to take on.",
+      "A SIMPLE IRA allows small businesses to offer a retirement plan with almost no paperwork and requires an employer contribution capped near 3% of pay. A 401(k) costs more to administer, but it lets employees save nearly 50% more each year and gives owners far more flexibility in plan design. The right choice depends mostly on your headcount and how much administrative cost you're willing to take on.",
     comparisonTable: {
       rows: [
         { dimension: "2026 employee contribution limit", a: "$17,000 ($21,000 if 50+)", b: "$24,500 ($32,500 if 50+; up to $35,750 if 60–63)" },
@@ -4351,7 +4351,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Certificate of Deposit (CD)",
     h1: "Annuity vs. CD: Which Is the Better Place for Your Retirement Savings?",
     introText:
-      "A fixed annuity typically pays 1 to 2 percentage points more than a comparable-term CD in 2026 and defers taxes on the growth until you withdraw, while a CD is simpler, fully [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured up to $250,000, and lets you access your money without an insurer's surrender charge — and the right pick depends on your time horizon, tax bracket, and whether you want guaranteed lifetime income.",
+      "In 2026, a fixed annuity typically pays 1 to 2 percentage points more than a comparable-term CD and defers taxes on growth until you withdraw. A CD, meanwhile, is simpler, fully [FDIC](https://www.fdic.gov/resources/deposit-insurance/)-insured up to $250,000, and lets you access your money without an insurer's surrender charge. The right choice depends on your time horizon, tax bracket, and whether you want guaranteed lifetime income.",
     comparisonTable: {
       rows: [
         { dimension: "2026 typical rate", a: "Multi-year guaranteed annuities (MYGAs) around 5.5%–6.3% for 3–10 year terms", b: "Top CDs around 4.0%–4.4% for comparable terms" },
@@ -4438,7 +4438,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Home financing",
     h1: "HELOC vs. Personal Loan: Which Should You Use for Home Improvement?",
     introText:
-      "A HELOC uses your home as collateral for a lower variable rate — typically 8.5% to 9.5% in 2026 — while a personal loan needs no collateral but charges 8.5% to 25% depending on your credit, and funds in days instead of weeks; for projects over roughly $25,000, the HELOC almost always costs less over time despite its slower, more paperwork-heavy approval process.",
+      "A HELOC uses your home as collateral and typically has a lower variable rate, 8.5% to 9.5% in 2026. A personal loan doesn't require collateral, but it charges 8.5% to 25%, depending on your credit, and provides funds in days rather than weeks. For projects over roughly $25,000, a HELOC almost always costs less over time, despite a slower, more paperwork-heavy approval process.",
     comparisonTable: {
       rows: [
         { dimension: "2026 typical rate", a: "8.5%–9.5%, variable, tied to the prime rate", b: "8.5%–25%, fixed, based on credit" },
@@ -4525,7 +4525,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Guardianship",
     h1: "Power of Attorney vs. Guardianship: What's the Difference?",
     introText:
-      "A power of attorney is a document you sign yourself, while you're still capable, to name someone to handle your finances or health decisions — it typically costs $150 to $700 and takes days to set up. Guardianship is a court process a judge imposes only after you can no longer make decisions and haven't named an agent, and it typically costs thousands of dollars and takes weeks or months to establish.",
+      "A power of attorney is a document you sign while you're still capable, naming someone to handle your finances or health decisions. It typically costs $150 to $700 and takes days to set up. Guardianship, by contrast, is a court process imposed by a judge only after you can no longer make decisions and haven't named an agent. It typically costs thousands of dollars and takes weeks or months to establish.",
     comparisonTable: {
       rows: [
         { dimension: "Who sets it up", a: "You — while you still have legal capacity", b: "A court — after you've already lost capacity" },
@@ -4612,7 +4612,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "20-Year Mortgage or 30-Year Mortgage",
     h1: "15-Year vs 20-Year vs 30-Year Mortgage: Total Cost, Monthly Payment, and Which Wins",
     introText:
-      "A 15-year mortgage pays off fastest and cheapest in total interest but carries the highest monthly payment; a 30-year mortgage has the lowest payment but costs the most in interest over time; and a 20-year mortgage sits in between on both — a smaller monthly step up from the 30-year than the full jump to a 15-year, while still cutting total interest well below the 30-year's cost. On a $300,000 loan, the 15-year runs about $2,613/month at 6.5%, the 30-year about $1,996/month at 7.0%, and a 20-year lands around $2,281/month using an illustrative 6.75% rate — a worked example, not a quote, since 20-year rates vary more by lender than the other two terms.",
+      "A 15-year mortgage is paid off the fastest and costs the least in total interest, but it comes with the highest monthly payment. A 30-year mortgage has the lowest monthly payment but costs the most in interest over time. A 20-year mortgage falls between the two: the monthly payment is a smaller step up from the 30-year than the full jump to a 15-year, while total interest remains well below the 30-year's cost.\n\nOn a $300,000 loan, the 15-year payment is about $2,613/month at 6.5%, while the 30-year payment is about $1,996/month at 7.0%. A 20-year mortgage comes to around $2,281/month using an illustrative 6.75% rate. That's a worked example, not a quote, since 20-year rates vary more by lender than rates for the other two terms.",
     comparisonTable: {
       rows: [
         { dimension: "Monthly payment ($300k loan, illustrative rates)", a: "~$2,613 at 6.5%", b: "20-year: ~$2,281 at 6.75%. 30-year: ~$1,996 at 7.0%" },
@@ -4705,7 +4705,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Bonds & Cash",
     h1: "Stocks vs Bonds vs Cash: How to Split Your Money",
     introText:
-      "Stocks aim for the highest long-term growth but swing the most in value, bonds sit in the middle with moderate risk and steady income, and cash offers the most safety and instant access to your money but the weakest long-run protection against inflation — most people benefit from holding some combination of all three, weighted toward stocks when the money won't be needed for years and toward cash and bonds as that need gets closer.",
+      "Stocks offer the strongest long-term growth potential, but their value fluctuates the most. Bonds fall in the middle, providing moderate risk and steady income. Cash offers the greatest safety and immediate access to your money, but the weakest long-run protection against inflation. Most people benefit from holding a mix of all three, with more weight in stocks when the money won't be needed for years and more in cash and bonds as the time to use it gets closer.",
     comparisonTable: {
       rows: [
         { dimension: "Long-run historical average return", a: "~10%/year (S&P 500 long-run average; varies widely year to year)", b: "Bonds: ~3–5%/year (investment-grade, long-run average). Cash: near 0% real return after inflation over time" },
@@ -4799,7 +4799,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Elder Law",
     h1: "Elder Law Attorney vs. Estate Planning Attorney: What's the Difference?",
     introText:
-      "An elder law attorney specializes in the legal problems that come with aging — Medicaid planning and spend-down, long-term-care planning, guardianship, and protecting assets from nursing-home costs — while an estate planning (trusts & estates) attorney specializes in wills, trusts, estate tax minimization, and passing wealth to the next generation. The two fields overlap heavily: most elder law attorneys also draft wills and powers of attorney, and most estate planning attorneys handle basic Medicaid questions, but only an elder law attorney typically has deep, current knowledge of your state's Medicaid rules, and only an estate planning attorney typically has deep experience with estate-tax-driven trust structures. Which one you need depends on whether your most urgent problem is aging and long-term care, or wealth transfer and tax.",
+      "An elder law attorney focuses on the legal challenges that come with aging, including Medicaid planning and spend-down, long-term-care planning, guardianship, and protecting assets from nursing-home costs. An estate planning (trusts & estates) attorney focuses on wills, trusts, estate tax minimization, and passing wealth to the next generation.\n\nThe two fields overlap heavily. Most elder law attorneys also draft wills and powers of attorney, and most estate planning attorneys handle basic Medicaid questions. But only an elder law attorney typically has deep, current knowledge of your state's Medicaid rules, while only an estate planning attorney typically has deep experience with estate-tax-driven trust structures.\n\nWhich one you need depends on your most urgent concern: aging and long-term care, or wealth transfer and tax.",
     comparisonTable: {
       rows: [
         { dimension: "Primary focus", a: "Aging, incapacity, and long-term care: Medicaid eligibility, spend-down, guardianship, elder abuse", b: "Wealth transfer at death: wills, trusts, estate tax minimization, probate avoidance" },
@@ -4900,7 +4900,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Financial Planner",
     h1: "Financial Advisor vs Financial Planner: What's the Real Difference?",
     introText:
-      "\"Financial advisor\" and \"financial planner\" are both unregulated job titles that anyone can use, but a financial planner more often signals a holistic, goal-based approach — and the [CFP credential](https://www.cfp.net/certification-process) is the clearest way to verify real planning expertise behind either title. Neither title alone tells you whether someone is a fiduciary, how they're paid, or what they actually do for you.",
+      "\"Financial advisor\" and \"financial planner\" are both unregulated job titles that anyone can use. However, \"financial planner\" more often suggests a holistic, goal-based approach, and the [CFP credential](https://www.cfp.net/certification-process) is the clearest way to verify genuine planning expertise behind either title. On its own, neither title tells you whether someone is a fiduciary, how they're paid, or what they actually do for you.",
     comparisonTable: {
       rows: [
         { dimension: "Regulatory status", a: "Unregulated title — anyone can use it", b: "Unregulated title — anyone can use it" },
@@ -4984,7 +4984,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Wealth Manager",
     h1: "Financial Advisor vs Wealth Manager: Which One Actually Fits You?",
     introText:
-      "A financial advisor typically works with a broad range of clients and focuses on investment management, while a wealth manager serves almost exclusively [high-net-worth](/guides/what-is-a-high-net-worth-individual/) clients and bundles investment management with tax, estate, and legacy planning, often behind a minimum-asset requirement of $500,000 or more. The right choice usually comes down to your investable assets and how coordinated your financial life needs to be.",
+      "Financial advisors typically work with a broad range of clients and focus on investment management. Wealth managers, by contrast, serve almost exclusively [high-net-worth](/guides/what-is-a-high-net-worth-individual/) clients, combining investment management with tax, estate, and legacy planning, often with a minimum-asset requirement of $500,000 or more. The right choice usually depends on your investable assets and how coordinated your financial life needs to be.",
     comparisonTable: {
       rows: [
         { dimension: "Typical client", a: "Broad range, from beginning savers to high earners", b: "High-net-worth households, often $1M+ investable assets" },
@@ -5068,7 +5068,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "CPA",
     h1: "Financial Advisor vs CPA: Who Should You Hire for What",
     introText:
-      "A financial advisor focuses on investment management and building a portfolio, while a CPA is a state-licensed accountant whose core strength is tax preparation, tax strategy, and accounting, and the two roles overlap most in a CPA who also holds the [AICPA](https://www.aicpa-cima.com/membership/landing/personal-financial-specialist-pfs-credential)'s Personal Financial Specialist (PFS) credential. Most households eventually need both; the question is usually who to hire first.",
+      "A financial advisor focuses on investment management and portfolio building. A CPA, meanwhile, is a state-licensed accountant whose core strengths are tax preparation, tax strategy, and accounting. The two roles overlap most when a CPA also holds the [AICPA](https://www.aicpa-cima.com/membership/landing/personal-financial-specialist-pfs-credential)'s Personal Financial Specialist (PFS) credential. Most households eventually need both; the question is usually which one to hire first.",
     comparisonTable: {
       rows: [
         { dimension: "Licensing", a: "No universal license; Series 65/RIA registration if managing money", b: "State board of accountancy license; 150 semester hours + Uniform CPA Exam" },
@@ -5153,7 +5153,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Roth 401(k)",
     h1: "Roth IRA vs Roth 401(k): Which Should You Prioritize?",
     introText:
-      "A Roth 401(k) lets you contribute up to $24,500 in 2026 (plus an $8,000 catch-up at 50+) with no income limit at all, while a Roth IRA caps contributions at $7,500 ($8,600 at 50+) and cuts off entirely once your income crosses $168,000 single or $252,000 married — so the right first move depends mainly on whether your employer offers a Roth 401(k) with a match and whether you're under the Roth IRA's income ceiling.",
+      "A Roth 401(k) lets you contribute up to $24,500 in 2026, plus an $8,000 catch-up if you're 50 or older, with no income limit. A Roth IRA, by contrast, caps contributions at $7,500 (or $8,600 if you're 50 or older) and cuts them off entirely once your income exceeds $168,000 if you're single or $252,000 if you're married. So your best first move depends mainly on whether your employer offers a Roth 401(k) with a match and whether your income falls below the Roth IRA ceiling.",
     comparisonTable: {
       rows: [
         { dimension: "2026 contribution limit", a: "$7,500 ($8,600 if 50+)", b: "$24,500 ($32,500 if 50+; $35,750 if 60–63)" },
@@ -5245,7 +5245,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Brokerage Account",
     h1: "401(k) vs Brokerage Account: Which Should You Fund First?",
     introText:
-      "A 401(k) is a tax-advantaged retirement account with a $24,500 contribution limit in 2026 and a 10% penalty on withdrawals before age 59½, while a taxable brokerage account has no contribution limit, no withdrawal penalty, and no age restriction — but you pay tax on dividends, interest, and gains as they happen instead of deferring or avoiding it. The right split depends mostly on whether you've captured your full employer match and how soon you might need the money.",
+      "A 401(k) is a tax-advantaged retirement account with a $24,500 contribution limit in 2026 and a 10% penalty for withdrawals before age 59½. A taxable brokerage account, on the other hand, has no contribution limit, withdrawal penalty, or age restriction, but you pay tax on dividends, interest, and gains as they happen, rather than deferring or avoiding it. The right split depends mostly on whether you've captured your full employer match and how soon you might need the money.",
     comparisonTable: {
       rows: [
         { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+)", b: "None" },
@@ -5338,7 +5338,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Universal Life Insurance",
     h1: "Whole Life vs Universal Life Insurance: Which Fits Your Goals?",
     introText:
-      "Whole life insurance locks in a fixed premium and a guaranteed minimum cash-value growth rate for life, while universal life insurance lets you adjust your premium and death benefit within limits and credits interest that can rise or fall with market rates — so the choice comes down to whether you want predictability or flexibility. Both are permanent policies that build cash value, unlike term life, which expires with no payout if you outlive it.",
+      "Whole life insurance gives you a fixed premium and a guaranteed minimum cash-value growth rate for life. Universal life insurance, by contrast, lets you adjust your premium and death benefit within limits, while crediting interest that can rise or fall with market rates. The choice, then, comes down to whether you want predictability or flexibility. Both are permanent policies that build cash value, unlike term life insurance, which expires with no payout if you outlive it.",
     comparisonTable: {
       rows: [
         { dimension: "Premium structure", a: "Fixed — the same amount for life", b: "Flexible — adjust amount and timing within plan limits" },
@@ -5444,7 +5444,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Chase Ultimate Rewards",
     h1: "Bilt Rewards vs Chase Ultimate Rewards: Which Points Program Is Worth It?",
     introText:
-      "[Bilt Rewards](https://www.bilt.com/) is built around one mechanic no other major card matches: the Bilt Mastercard earns points on rent paid to a participating landlord or property manager with no added processing fee, while [Chase Ultimate Rewards](https://www.chase.com/personal/credit-cards/ultimate-rewards) is earned through Chase's own card lineup — Freedom, Sapphire Preferred, and Sapphire Reserve — on everyday bonus categories like dining and travel, with no rent-specific earning at all.",
+      "[Bilt Rewards](https://www.bilt.com/) centers on one mechanic no other major card matches: the Bilt Mastercard earns points on rent paid to a participating landlord or property manager without an added processing fee. By contrast, [Chase Ultimate Rewards](https://www.chase.com/personal/credit-cards/ultimate-rewards) is earned through Chase's own card lineup (Freedom, Sapphire Preferred, and Sapphire Reserve) on everyday bonus categories like dining and travel, with no rent-specific earning at all.",
     comparisonTable: {
       rows: [
         { dimension: "Core earning mechanic", a: "Points on rent (no fee) plus dining, travel, and other spend on the Bilt Mastercard", b: "Points on bonus categories (dining, travel, groceries, etc.) across the Chase card family" },
@@ -5547,7 +5547,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Universal Life Insurance",
     h1: "Term Life vs Universal Life Insurance: Which Should You Buy?",
     introText:
-      "Term life insurance covers you for a set period, typically 10 to 30 years, at the lowest premium available and pays nothing if you outlive the term, while universal life insurance covers you for life, builds cash value, and lets you adjust your premium and death benefit — but can cost several times more for the same death benefit. Most people need term's low cost for pure income replacement; universal life fits a narrower set of lifelong, flexible-premium needs.",
+      "Term life insurance covers you for a set period (typically 10 to 30 years) at the lowest available premium. It pays nothing if you outlive the term. Universal life insurance, by contrast, covers you for life, builds cash value, and lets you adjust your premium and death benefit, but it can cost several times more for the same death benefit. Most people need term insurance's low cost for pure income replacement, while universal life fits a narrower range of lifelong, flexible-premium needs.",
     comparisonTable: {
       rows: [
         { dimension: "Coverage length", a: "Fixed term — 10, 20, or 30 years", b: "Lifelong, as long as adequately funded" },
@@ -5644,7 +5644,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   optionB: "Debt Avalanche",
   h1: "Debt Snowball vs Avalanche: Which Method Wins?",
   introText:
-    "Debt snowball vs avalanche comes down to one tradeoff: motivation versus math. The snowball pays your smallest balance first for fast, motivating wins. The avalanche pays your highest interest rate first to save the most money. Both make minimum payments on every debt. Both then aim every spare dollar at one target debt. The avalanche almost always pays less interest. It is also at least as fast to debt-free. The snowball gives a quicker first win, which helps many people finish. The best method is the one you will actually stick with.",
+    "Debt snowball vs. avalanche comes down to one tradeoff: motivation versus math.\n\nWith the snowball, you pay off your smallest balance first, giving you fast, motivating wins. With the avalanche, you tackle the highest interest rate first, saving the most money.\n\nBoth methods require minimum payments on every debt, then direct every spare dollar toward one target debt. The avalanche almost always costs less in interest and gets you debt-free at least as fast. The snowball delivers a quicker first win, which helps many people finish.\n\nUltimately, the best method is the one you will actually stick with.",
   comparisonTable: {
     rows: [
       { dimension: "Order of attack", a: "Smallest balance first", b: "Highest APR first" },
@@ -5738,7 +5738,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Military retirement",
     h1: "Military Retirement vs VA Disability: Do They Overlap?",
     introText:
-      "Military retired pay and VA disability compensation are two separate benefits that historically reduced each other dollar-for-dollar, but Concurrent Retirement and Disability Pay (CRDP) and Combat-Related Special Compensation (CRSC) now let many retirees keep both in full. Retired pay comes from the [Defense Finance and Accounting Service (DFAS)](https://www.dfas.mil/RetiredMilitary/) and is taxable federal income; VA disability compensation comes from the [Department of Veterans Affairs](https://www.va.gov/disability/) and is entirely tax-free. Whether you keep both in full depends on your VA disability rating and how you separated from service.",
+      "Military retired pay and VA disability compensation are separate benefits. Historically, they reduced each other dollar-for-dollar, but Concurrent Retirement and Disability Pay (CRDP) and Combat-Related Special Compensation (CRSC) now allow many retirees to keep both in full.\n\nRetired pay is issued by the [Defense Finance and Accounting Service (DFAS)](https://www.dfas.mil/RetiredMilitary/) and counts as taxable federal income. VA disability compensation comes from the [Department of Veterans Affairs](https://www.va.gov/disability/) and is entirely tax-free. Whether you can keep both benefits in full depends on your VA disability rating and how you separated from service.",
     comparisonTable: {
       rows: [
         { dimension: "Paying agency", a: "DFAS (Defense Finance and Accounting Service)", b: "Department of Veterans Affairs (VA)" },
@@ -5828,7 +5828,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Military retirement",
     h1: "Chapter 61 Medical Retirement vs Disability Severance Pay",
     introText:
-      "Chapter 61 medical retirement pays a monthly pension for life once a Physical Evaluation Board rates you 30% or more unfit for duty, while disability severance pay is a one-time lump sum for troops rated below 30% with fewer than 20 years of service. Both come from [DFAS](https://www.dfas.mil/RetiredMilitary/), and both start with the same Physical Evaluation Board finding. The disability rating is what splits a service member onto one path or the other. See our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison for how Chapter 61 works alongside a standard 20-year retirement.",
+      "Chapter 61 medical retirement provides a monthly pension for life when a Physical Evaluation Board rates you 30% or more unfit for duty. Disability severance pay, by contrast, is a one-time lump sum for troops rated below 30% who have fewer than 20 years of service.\n\nBoth payments come from [DFAS](https://www.dfas.mil/RetiredMilitary/), and both begin with the same Physical Evaluation Board finding. The disability rating determines which path a service member takes. See our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison to learn how Chapter 61 works alongside a standard 20-year retirement.",
     comparisonTable: {
       rows: [
         { dimension: "Disability rating required", a: "30% or higher (or any rating with 20+ years of service)", b: "Below 30%" },
@@ -5918,7 +5918,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Military retirement",
     h1: "Military Retirement vs Medical (Chapter 61) Retirement",
     introText:
-      "Regular military retirement requires 20 or more years of service and pays a pension based on years served, while Chapter 61 medical retirement can begin at any point in a career once a medical evaluation board rates a service member unfit for duty at 30% disability or higher. Both retirements pay a [DFAS](https://www.dfas.mil/RetiredMilitary/) pension under Title 10 of the U.S. Code, but Chapter 61 uses whichever of two formulas pays more: years of service or disability rating.",
+      "Regular military retirement requires at least 20 years of service and pays a pension based on the number of years served. Chapter 61 medical retirement, by contrast, can begin at any point in a career if a medical evaluation board finds a service member unfit for duty with a disability rating of 30% or higher. Both types of retirement provide a [DFAS](https://www.dfas.mil/RetiredMilitary/) pension under Title 10 of the U.S. Code, but Chapter 61 uses the higher-paying of two formulas: years of service or disability rating.",
     comparisonTable: {
       rows: [
         { dimension: "Legal basis", a: "Title 10, standard longevity retirement", b: "Title 10, Chapter 61 (disability retirement)" },
@@ -6007,7 +6007,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "401(k)",
     h1: "403(b) vs 401(k): What's the Real Difference?",
     introText:
-      "A 403(b) and a 401(k) share the same 2026 contribution limit of $24,500 ($32,500 if you're 50+, $35,750 if you're 60–63) and nearly identical tax rules, but a 403(b) is only offered by public schools, hospitals, and 501(c)(3) nonprofits, while a 401(k) comes from for-profit (and some nonprofit) employers — and the two differ in ways that matter, from fund menus to an extra catch-up rule only the 403(b) has.",
+      "A 403(b) and a 401(k) have the same 2026 contribution limit: $24,500, or $32,500 if you're 50+ and $35,750 if you're 60 to 63. Their tax rules are nearly identical, but a 403(b) is only offered by public schools, hospitals, and 501(c)(3) nonprofits, while a 401(k) is offered by for-profit employers and some nonprofit employers. They also differ in meaningful ways, including their fund menus and an extra catch-up rule available only with a 403(b).",
     comparisonTable: {
       rows: [
         { dimension: "Who can offer it", a: "Public schools, hospitals, churches, 501(c)(3) nonprofits", b: "For-profit employers (and some nonprofits)" },
@@ -6095,7 +6095,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Federal employees & military",
     h1: "TSP vs 401(k): Which Retirement Plan Wins?",
     introText:
-      "The Thrift Savings Plan (TSP) is the federal government's retirement plan for civilian employees and uniformed service members, and it shares the same 2026 contribution limit as a 401(k) — $24,500, or $32,500 at 50+ — but wins on cost, charging roughly 0.05% in administrative fees versus a typical 401(k)'s 0.4%–1%, while offering a far narrower five-fund menu in exchange.",
+      "The Thrift Savings Plan (TSP), the federal government's retirement plan for civilian employees and uniformed service members, has the same 2026 contribution limit as a 401(k): $24,500, or $32,500 at 50+. It wins on cost, charging roughly 0.05% in administrative fees compared with 0.4% to 1% for a typical 401(k), but offers a far narrower five-fund menu in exchange.",
     comparisonTable: {
       rows: [
         { dimension: "Who can use it", a: "Federal civilian employees and uniformed military", b: "Private-sector (and some nonprofit) employees" },
@@ -6182,7 +6182,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Traditional IRA",
     h1: "Rollover IRA vs Traditional IRA: What's Actually Different?",
     introText:
-      "A rollover IRA is legally a traditional IRA — same tax rules, same contribution limits, same [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) treatment since the Pension Protection Act of 2006 — and the only reason the label exists is that some savers keep former-401(k) money in its own account to preserve stronger bankruptcy protection and easier future rollovers, not because the tax code treats the two differently.",
+      "A rollover IRA is legally a traditional IRA, with the same tax rules, contribution limits, and [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) treatment since the Pension Protection Act of 2006. The label exists only because some savers keep former-401(k) money in a separate account to preserve stronger bankruptcy protection and make future rollovers easier, not because the tax code treats the two differently.",
     comparisonTable: {
       rows: [
         { dimension: "Legal/tax classification", a: "Identical — a rollover IRA IS a traditional IRA under IRS rules", b: "Identical — same account type" },
@@ -6267,7 +6267,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "401(k)",
     h1: "457(b) vs 401(k): What Public and Nonprofit Employees Should Know",
     introText:
-      "A governmental 457(b) plan shares the same 2026 contribution limit as a 401(k) — $24,500, or $32,500 at 50+ — but uses a completely separate limit, so public employees with both can max out each account in the same year, and a 457(b) skips the 401(k)'s 10% early-withdrawal penalty entirely once you've left your job, at any age.",
+      "A governmental 457(b) plan has the same 2026 contribution limit as a 401(k) ($24,500, or $32,500 for those 50+) but the limit is completely separate. That means public employees with both can max out each account in the same year. And once you've left your job, a 457(b) skips the 401(k)'s 10% early-withdrawal penalty entirely, regardless of your age.",
     comparisonTable: {
       rows: [
         { dimension: "Who can offer it", a: "State/local governments; select nonprofit \"top-hat\" plans for management/highly compensated employees", b: "For-profit employers and most nonprofits, broadly eligible" },
@@ -6355,7 +6355,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "Rollover IRA vs. Roth IRA: Should You Convert Your Old 401(k)?",
     introText:
-      "A rollover IRA moves an old 401(k) into a traditional IRA tax-free, while sending that same money into a Roth IRA instead — a Roth conversion — adds the entire pretax balance to your taxable income the year you do it, so the real choice is between paying no tax now and full ordinary tax later, or paying tax now for tax-free withdrawals for life.",
+      "A rollover IRA lets you move an old 401(k) into a traditional IRA tax-free. Moving that same money into a Roth IRA instead (a Roth conversion) adds the entire pretax balance to your taxable income for that year. So the real choice is between paying no tax now and full ordinary tax later, or paying tax now in exchange for tax-free withdrawals for life.",
     comparisonTable: {
       rows: [
         { dimension: "Tax bill at the time of the move", a: "None — a like-kind transfer from 401(k) to traditional IRA", b: "The full pretax amount converted is added to your taxable income that year" },
@@ -6452,7 +6452,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Barista FIRE",
     h1: "Coast FIRE vs. Barista FIRE: How the Numbers Actually Differ",
     introText:
-      "Coast FIRE vs Barista FIRE comes down to one question: are you taking money out of your portfolio now, or letting it grow untouched until retirement? Coast FIRE means you keep your current job (or any full-time income) and stop adding to retirement, letting compound growth alone carry your existing balance to your full number by retirement age. Barista FIRE means you step back to part-time work now — often specifically for a job with health benefits, the namesake being a [Starbucks](https://www.starbucks.com/careers/working-at-starbucks/benefits-and-perks/) barista position — and start withdrawing from your portfolio today to cover the gap between that part-time income and your full expenses. Because Barista FIRE requires withdrawals starting now instead of decades of untouched growth, it takes a meaningfully larger portfolio to reach than Coast FIRE does, even for the exact same person and the exact same eventual retirement age.",
+      "Coast FIRE vs. Barista FIRE comes down to one question: Are you taking money out of your portfolio now, or are you leaving it untouched to grow until retirement?\n\nWith Coast FIRE, you keep your current job (or any full-time income) and stop contributing to retirement. From there, compound growth alone carries your existing balance to your full number by retirement age.\n\nWith Barista FIRE, you step back to part-time work now, often specifically for a job with health benefits, the namesake is a [Starbucks](https://www.starbucks.com/careers/working-at-starbucks/benefits-and-perks/) barista position, and start withdrawing from your portfolio today to cover the gap between your part-time income and your full expenses.\n\nBecause Barista FIRE requires you to start making withdrawals now rather than giving your portfolio decades of untouched growth, it takes a meaningfully larger portfolio to reach than Coast FIRE does, even for the exact same person with the exact same eventual retirement age.",
     comparisonTable: {
       rows: [
         { dimension: "Work status once you get there", a: "Keep full-time income (same job or any job)", b: "Step back to part-time, often specifically for benefits" },
@@ -6542,7 +6542,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "403(b)",
     h1: "457(b) vs 403(b): Which One Should You Fund First?",
     introText:
-      "If your employer offers both, fund the 403(b) up to the full employer match first, then send the rest to a governmental 457(b), because a governmental 457(b) is the only one of the two you can spend before age 59 1/2 without the 10% early-withdrawal tax.\n\nThe two plans do not share a contribution limit. In 2026 you can defer $24,500 to each, or $49,000 combined, before any catch-up contributions. Most of the rest looks alike: pre-tax or Roth contributions, tax-deferred growth, and required withdrawals starting at 73.\n\nThe differences that decide the order are early access, catch-up rules, and, for one version of the 457(b), whether the money is legally yours at all.",
+      "If your employer offers both plans, start by funding the 403(b) enough to receive the full employer match. Then direct the rest to a governmental 457(b), because it's the only one of the two that you can use before age 59 1/2 without paying the 10% early-withdrawal tax.\n\nThe plans have separate contribution limits. In 2026, you can defer $24,500 to each plan (or $49,000 combined) before any catch-up contributions. Most other features are similar: pre-tax or Roth contributions, tax-deferred growth, and required withdrawals starting at 73.\n\nWhat determines the order is early access, catch-up rules, and (for one version of the 457(b)) whether the money is legally yours at all.",
     comparisonTable: {
       rows: [
         { dimension: "Who offers it", a: "State and local governments, plus \"top-hat\" plans at some hospitals and 501(c)(3) employers", b: "Public schools, colleges, churches, and 501(c)(3) nonprofits" },
@@ -6640,7 +6640,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "457(b) vs Roth IRA: Pre-Tax, After-Tax, and Which to Fund Next",
     introText:
-      "A 457(b) and a Roth IRA are not an either/or choice, because their contribution limits are completely separate. For 2026 you can defer up to $24,500 into a 457(b) and still put $7,500 into a Roth IRA in the same year, as long as your income sits below the Roth IRA phase-out range. The real decision is not which account to pick. It is which one earns the next dollar once you understand two things: a governmental 457(b) escapes the 10% early-withdrawal penalty entirely after you leave the job, and a Roth IRA lets you pull your own contributions back out at any time.",
+      "A 457(b) and a Roth IRA aren't an either/or choice, their contribution limits are completely separate. In 2026, you can defer up to $24,500 into a 457(b) and still contribute $7,500 to a Roth IRA in the same year, as long as your income is below the Roth IRA phase-out range.\n\nThe real question isn't which account to choose. It's where the next dollar should go once you understand two things: after you leave the job, a governmental 457(b) avoids the 10% early-withdrawal penalty entirely, while a Roth IRA lets you withdraw your own contributions at any time.",
     comparisonTable: {
       rows: [
         { dimension: "2026 contribution limit", a: "$24,500 elective deferral; $32,500 at 50+ and $35,750 at ages 60-63 in governmental plans only", b: "$7,500; $8,600 at 50 or older" },
@@ -6742,7 +6742,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Series EE Bonds",
     h1: "I Bonds vs EE Bonds: Rates, the 20-Year Guarantee, and Which to Buy",
     introText:
-      "Series I bonds pay a rate that resets with inflation every six months, while Series EE bonds pay one flat fixed rate plus a Treasury guarantee that the bond is worth at least double what you paid at exactly 20 years.\n\nFor bonds issued May 1, 2026 through October 31, 2026, I bonds carry a 4.26% composite rate and EE bonds carry a 2.40% fixed rate. That gap looks decisive, but it is misleading. The EE guarantee is worth about 3.5% a year, and you only collect it by holding the bond for the full 20 years.\n\nBoth series are backed by the U.S. Treasury, both cap you at $10,000 per person per calendar year, and both earn interest for 30 years.",
+      "Here's the key difference: Series I bonds pay a rate that resets with inflation every six months. Series EE bonds pay one flat fixed rate, plus a Treasury guarantee that the bond will be worth at least double what you paid at exactly 20 years.\n\nFor bonds issued from May 1, 2026 through October 31, 2026, I bonds carry a 4.26% composite rate, while EE bonds carry a 2.40% fixed rate. That gap may look decisive, but it's misleading. The EE guarantee is worth about 3.5% a year, and you only collect it if you hold the bond for the full 20 years.\n\nBoth series are backed by the U.S. Treasury. Both cap you at $10,000 per person per calendar year, and both earn interest for 30 years.",
     comparisonTable: {
       rows: [
         { dimension: "How the rate is set", a: "Fixed rate + inflation rate, combined into a composite rate", b: "One fixed rate set before you buy" },
@@ -6844,7 +6844,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "TIPS",
     h1: "I Bonds vs TIPS: How Two Inflation-Protected Treasuries Differ",
     introText:
-      "I bonds and TIPS both protect savings from inflation, but I bonds add an inflation rate on top of a fixed rate, while TIPS adjust the principal itself with CPI-U and pay a fixed coupon on that adjusted principal.\n\nThat single mechanical split drives everything else. An I bond grows in value and never falls. A TIPS balance moves up and down with the index, and the cash payment moves with it.\n\nThe practical differences are limits, access, and taxes. You can buy only $10,000 of electronic I bonds per Social Security Number per calendar year. TIPS have no equivalent calendar-year cap, but selling one is slower than most savers expect.\n\nTaxes are the part most people miss. TIPS principal increases are taxed in the year they happen, even though no cash reaches you. I bond federal tax can wait until you cash the bond.",
+      "I bonds and TIPS both protect savings from inflation, but they work differently. I bonds add an inflation rate on top of a fixed rate. TIPS adjust the principal itself with CPI-U, then pay a fixed coupon on that adjusted principal.\n\nThat one mechanical difference drives everything else. An I bond grows in value and never falls. A TIPS balance moves up and down with the index, and its cash payment moves with it.\n\nIn practice, the main differences come down to limits, access, and taxes. You can buy only $10,000 in electronic I bonds per Social Security Number per calendar year. TIPS have no equivalent calendar-year cap, but selling one takes longer than most savers expect.\n\nTaxes are what most people miss. TIPS principal increases are taxed in the year they happen, even though you receive no cash. Federal tax on an I bond can wait until you cash the bond.",
     comparisonTable: {
       rows: [
         { dimension: "How inflation protection works", a: "Inflation rate is added to a fixed rate; value accrues inside the bond", b: "CPI-U adjusts the principal; fixed coupon is paid on the adjusted principal" },
@@ -6946,7 +6946,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Unrealized Gains",
     h1: "Realized vs. Unrealized Gains: Tax Rules Explained",
     introText:
-      "A realized gain is profit you lock in the moment you sell an asset for more than you paid, and it's taxable that year, while an unrealized gain is a paper profit on an asset you still own that the IRS does not tax until you sell.",
+      "A realized gain is the profit you lock in when you sell an asset for more than you paid, and it's taxable that year. An unrealized gain is a paper profit on an asset you still own, which the IRS does not tax until you sell.",
     comparisonTable: {
       rows: [
         { dimension: "Definition", a: "Profit locked in after you sell", b: "Paper profit on an asset you still hold" },
@@ -7043,7 +7043,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Use Tax",
     h1: "Sales Tax vs. Use Tax: What's the Real Difference?",
     introText:
-      "Sales tax is collected by a retailer at checkout and sent to the state, while use tax is the same tax rate owed directly by the buyer when no sales tax was charged — and the sales tax vs. use tax question matters most for online and out-of-state purchases, where sellers often collect nothing at all.",
+      "Retailers collect sales tax at checkout and send it to the state. Use tax is owed directly by the buyer at the same rate when no sales tax was charged. The sales tax vs. use tax question matters most for online and out-of-state purchases, where sellers often collect nothing at all.",
     comparisonTable: {
       rows: [
         { dimension: "Who collects it", a: "The retailer, at checkout", b: "No one — it's self-reported by the buyer" },
@@ -7140,7 +7140,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Investing",
     h1: "VOO vs SPY: Which S&P 500 ETF Should You Buy?",
     introText:
-      "VOO charges a 0.03% expense ratio and is built as an ETF share class of an open-end [Vanguard](https://investor.vanguard.com) mutual fund, while SPY charges 0.0945% and is structured as a unit investment trust with the deepest trading volume of any ETF in the world — so the better choice usually comes down to whether you're a buy-and-hold investor who wants the lowest cost or an active trader who needs maximum liquidity.",
+      "VOO has a 0.03% expense ratio and is structured as an ETF share class of an open-end [Vanguard](https://investor.vanguard.com) mutual fund. SPY, by contrast, charges 0.0945% and is structured as a unit investment trust with the deepest trading volume of any ETF in the world. So the better choice usually depends on whether you're a buy-and-hold investor looking for the lowest cost or an active trader who needs maximum liquidity.",
     comparisonTable: {
       rows: [
         { dimension: "Expense ratio", a: "0.03%", b: "0.0945%" },
@@ -7231,7 +7231,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Brokerages",
     h1: "Vanguard vs Fidelity: Which Brokerage Should You Choose?",
     introText:
-      "[Vanguard](https://investor.vanguard.com) is owned by its own funds and their shareholders, which lets it run funds at cost, while [Fidelity](https://www.fidelity.com) is a privately held company known for building the first 0% expense ratio index funds — and the better brokerage for you depends on whether you value Vanguard's investor-owned structure or Fidelity's zero-minimum funds and broader trading platform.",
+      "[Vanguard](https://investor.vanguard.com) is owned by its funds and their shareholders, allowing it to run funds at cost. [Fidelity](https://www.fidelity.com), meanwhile, is a privately held company known for creating the first index funds with a 0% expense ratio. The better brokerage for you depends on what you value more: Vanguard's investor-owned structure or Fidelity's zero-minimum funds and broader trading platform.",
     comparisonTable: {
       rows: [
         { dimension: "Account minimum to open", a: "$0", b: "$0" },
@@ -7328,7 +7328,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Estate Planning & Giving",
     h1: "Donor-Advised Fund vs. Private Foundation: Which Should You Use?",
     introText:
-      "A donor-advised fund can be opened in a day with no minimum at some sponsors and comes with no required annual payout, while a private foundation takes months to set up through the [IRS](https://www.irs.gov/charities-non-profits/private-foundations), must distribute about 5% of its assets every year, and pays a 1.39% excise tax on its investment income — and the right structure depends mostly on how much control you need over your giving and how much administrative work you're willing to take on.",
+      "A donor-advised fund can be opened in a day with no minimum at some sponsors, and comes with no required annual payout. A private foundation, by contrast, takes months to set up through the [IRS](https://www.irs.gov/charities-non-profits/private-foundations), must distribute about 5% of its assets each year, and pays a 1.39% excise tax on its investment income. The right structure depends mostly on how much control you want over your giving and how much administrative work you're willing to take on.",
     comparisonTable: {
       rows: [
         { dimension: "Setup time", a: "Same day to a few days", b: "Weeks to months (legal formation plus IRS review)" },
@@ -7426,7 +7426,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement accounts",
     h1: "Target-Date Fund vs. S&P 500 Index Fund: Which Should You Hold?",
     introText:
-      "A target-date fund automatically shifts from stocks toward bonds as your retirement year approaches and typically includes international stocks and bonds, while an S&P 500 index fund stays 100% invested in 500 large U.S. companies and costs less — and the choice comes down to whether you want a single, hands-off holding or you're willing to build and manage your own bond and international allocation to save on fees.",
+      "A target-date fund automatically shifts from stocks to bonds as your retirement year gets closer and typically includes international stocks and bonds. An S&P 500 index fund, by contrast, stays 100% invested in 500 large U.S. companies and costs less. The choice comes down to whether you want a single, hands-off holding or are willing to build and manage your own bond and international allocation to save on fees.",
     comparisonTable: {
       rows: [
         { dimension: "Diversification", a: "U.S. stocks, international stocks, and bonds in one fund", b: "500 large U.S. companies only — no bonds, no international stocks" },
@@ -7518,7 +7518,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Brokerages",
     h1: "Fidelity vs Schwab: Which Brokerage Should You Choose?",
     introText:
-      "[Fidelity](https://www.fidelity.com) built the first mutual funds with a 0.00% expense ratio, while [Charles Schwab](https://www.schwab.com) built its business on pairing a large branch network with a bank-grade cash management account — and the better fit for you depends on whether a truly free index fund or in-person, full-service banking matters more to your day-to-day money.",
+      "[Fidelity](https://www.fidelity.com) built the first mutual funds with a 0.00% expense ratio. [Charles Schwab](https://www.schwab.com), meanwhile, built its business by pairing a large branch network with a bank-grade cash management account. The better fit depends on what matters more to your day-to-day money: a truly free index fund or in-person, full-service banking.",
     comparisonTable: {
       rows: [
         { dimension: "Account minimum to open", a: "$0", b: "$0" },
@@ -7610,7 +7610,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Brokerages",
     h1: "Vanguard vs Schwab: Which Brokerage Should You Choose?",
     introText:
-      "[Vanguard](https://investor.vanguard.com) is owned by its own funds and their shareholders, which its founder designed specifically to keep fund costs low, while [Charles Schwab](https://www.schwab.com) is a publicly traded, full-service brokerage with a much larger branch network — and the right choice depends on whether Vanguard's investor-owned fee philosophy or Schwab's broader in-person and banking footprint matters more to you.",
+      "[Vanguard](https://investor.vanguard.com) is owned by its funds and their shareholders, a structure its founder designed specifically to keep fund costs low. [Charles Schwab](https://www.schwab.com), meanwhile, is a publicly traded, full-service brokerage with a much larger branch network. The right choice comes down to what matters more to you: Vanguard's investor-owned fee philosophy or Schwab's broader in-person and banking footprint.",
     comparisonTable: {
       rows: [
         { dimension: "Account minimum to open", a: "$0", b: "$0" },
@@ -7701,7 +7701,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Conservatorship",
     h1: "Guardianship vs Conservatorship: What's the Difference?",
     introText:
-      "Guardianship gives someone legal authority over another person's day-to-day care and living decisions, while conservatorship gives someone legal authority over that person's finances and property — and many states appoint the same person to hold both roles for an adult who can no longer manage either.",
+      "Guardianship gives someone legal authority to make decisions about another person's day-to-day care and living arrangements, while conservatorship gives someone legal authority over that person's finances and property. In many states, the same person is appointed to both roles when an adult can no longer manage either.",
     comparisonTable: {
       rows: [
         { dimension: "What it covers", a: "Personal care: healthcare, housing, daily needs", b: "Financial: bank accounts, bills, property, investments" },
@@ -7796,7 +7796,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Retirement",
     h1: "Traditional IRA vs SIMPLE IRA: Which Should You Max First?",
     introText:
-      "A Traditional IRA is an account you open yourself, with a $7,500 contribution limit for 2026, while a SIMPLE IRA is a small-employer retirement plan with a $17,000 limit — or $18,100 at employers with 25 or fewer workers — plus a required employer match or contribution, which usually makes the SIMPLE IRA the better first stop if your employer offers one.",
+      "A Traditional IRA is an account you open on your own, with a 2026 contribution limit of $7,500. A SIMPLE IRA, on the other hand, is a small-employer retirement plan with a $17,000 limit (or $18,100 at employers with 25 or fewer workers) plus a required employer match or contribution. That usually makes the SIMPLE IRA the better first stop if your employer offers one.",
     comparisonTable: {
       rows: [
         { dimension: "2026 contribution limit", a: "$7,500 ($8,600 if 50+)", b: "$17,000 standard plan ($21,000 if 50+); $18,100 at small employers with ≤25 employees ($21,950 if 50+)" },
@@ -7887,7 +7887,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Disability & Elder Care",
     h1: "Special Needs Trust vs ABLE Account: Which Do You Need?",
     introText:
-      "A special needs trust can hold an unlimited amount of money for a person with a disability without any dollar cap, while an ABLE account is a tax-advantaged savings account capped at $20,000 in new contributions per year in 2026 — and most families end up using both, since a trust handles larger sums like an inheritance while an ABLE account handles everyday spending without disqualifying the beneficiary from SSI or Medicaid.",
+      "A special needs trust can hold an unlimited amount of money for a person with a disability, with no dollar cap. An ABLE account, by contrast, is a tax-advantaged savings account capped at $20,000 in new contributions per year in 2026. Most families end up using both: the trust handles larger sums, like an inheritance, while the ABLE account covers everyday spending without disqualifying the beneficiary from SSI or Medicaid.",
     comparisonTable: {
       rows: [
         { dimension: "Annual contribution cap", a: "None — can hold any amount", b: "$20,000/year in 2026 (more if the beneficiary works and uses ABLE to Work)" },
@@ -7978,7 +7978,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "First-Time & Rural Buyers",
     h1: "USDA Loan vs FHA Loan: Which Mortgage Should You Choose?",
     introText:
-      "A USDA loan requires no down payment at all but only applies to eligible rural and suburban properties with household income under 115% of the area median, while an FHA loan allows a down payment as low as 3.5% and can be used almost anywhere — and the choice usually comes down to whether your property location and income qualify for USDA's more restrictive but cheaper terms.",
+      "A USDA loan requires no down payment, but it's limited to eligible rural and suburban properties and households with income under 115% of the area median. An FHA loan, on the other hand, allows a down payment as low as 3.5% and can be used almost anywhere. The choice usually comes down to whether your property location and income qualify for USDA's more restrictive but cheaper terms.",
     comparisonTable: {
       rows: [
         { dimension: "Minimum down payment", a: "0%", b: "3.5% (with a 580+ credit score)" },
@@ -8063,7 +8063,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Annuity",
     h1: "Pension vs Annuity: Which Gives You More Guaranteed Income?",
     introText:
-      "A pension is a guaranteed monthly benefit your employer funds and manages on your behalf, while an annuity is an insurance contract you buy yourself with a lump sum or a series of payments — and the two differ most in who backs the guarantee, how the income is taxed, and how much control you have over the payout.",
+      "A pension is a guaranteed monthly benefit funded and managed by your employer on your behalf. An annuity, by contrast, is an insurance contract you purchase yourself with either a lump sum or a series of payments. The biggest differences are who backs the guarantee, how the income is taxed, and how much control you have over the payout.",
     comparisonTable: {
       rows: [
         { dimension: "Who funds it", a: "Employer (defined-benefit plan)", b: "You, with your own money" },
@@ -8155,7 +8155,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Rental Property",
     h1: "REIT vs Rental Property: Which Real Estate Investment Wins?",
     introText:
-      "A REIT (real estate investment trust) lets you buy real estate exposure as a publicly traded share you can sell any market day, while a rental property is a physical asset you buy, finance, and manage directly — and the choice mostly comes down to how much liquidity, control, and hands-on time you're willing to trade for each investment's tax treatment.",
+      "A REIT (real estate investment trust) gives you exposure to real estate through publicly traded shares that you can sell on any market day. A rental property, by contrast, is a physical asset that you buy, finance, and manage directly. The choice mostly comes down to how much liquidity, control, and hands-on time you're willing to trade for each investment's tax treatment.",
     comparisonTable: {
       rows: [
         { dimension: "Minimum investment", a: "The price of one share — often under $100", b: "A down payment plus closing costs, typically tens of thousands of dollars" },
@@ -8248,7 +8248,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "IRA Beneficiary Rules",
     h1: "401(k) vs IRA Beneficiary Rules: What Changes When You Inherit Each",
     introText:
-      "A 401(k) and an IRA use the same SECURE Act 10-year withdrawal window for most beneficiaries, but they differ in who can be named beneficiary without a spouse's consent, how easily the account can be split among multiple heirs, and how well the money is shielded from the beneficiary's own creditors.",
+      "A 401(k) and an IRA both use the SECURE Act's 10-year withdrawal window for most beneficiaries. However, they differ in who can be named as a beneficiary without a spouse's consent, how easily the account can be divided among multiple heirs, and how well the funds are protected from the beneficiary's own creditors.",
     comparisonTable: {
       rows: [
         { dimension: "10-year withdrawal rule (most beneficiaries)", a: "Applies, per the SECURE Act", b: "Applies, per the SECURE Act" },
@@ -8336,7 +8336,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Portfolio allocation",
     h1: "70/30 vs 60/40 Portfolio: Which Stock-Bond Mix Wins?",
     introText:
-      "A 70/30 portfolio (70% stocks, 30% bonds) targets a higher expected return than the classic 60/40 mix, at the cost of more volatility along the way. On this site's own portfolio model, 70/30 shows an 8.20% expected return versus 60/40's 7.60%, but with 11.45% volatility versus 60/40's 10.00% — a real tradeoff, not a free upgrade.",
+      "A 70/30 portfolio (70% stocks and 30% bonds) targets a higher expected return than the classic 60/40 mix, but comes with more volatility along the way. This site's portfolio model puts the expected return at 8.20% for 70/30, compared with 7.60% for 60/40. Volatility is also higher: 11.45% versus 10.00%. It's a real tradeoff, not a free upgrade.",
     comparisonTable: {
       rows: [
         { dimension: "Stock / bond split", a: "70% stocks / 30% bonds", b: "60% stocks / 40% bonds" },
@@ -8399,7 +8399,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Portfolio allocation",
     h1: "80/20 vs 90/10 Portfolio: Which Stock-Bond Mix Wins?",
     introText:
-      "A 90/10 portfolio (90% stocks, 10% bonds) pushes further into stocks than the already-aggressive 80/20 mix, for a higher expected return and a wider range of outcomes. On this site's own portfolio model, 90/10 shows a 9.40% expected return versus 80/20's 8.80%, but with 14.46% volatility versus 80/20's 12.94% — both are aggressive, growth-focused mixes, and the gap between them is smaller than it looks on paper once volatility is priced in.",
+      "A 90/10 portfolio (90% stocks and 10% bonds) leans further into stocks than the already-aggressive 80/20 mix, offering a higher expected return but a wider range of outcomes. According to this site's portfolio model, 90/10 has a 9.40% expected return, compared with 8.80% for 80/20, but also 14.46% volatility versus 12.94%. Both are aggressive, growth-focused mixes, and once volatility is priced in, the difference between them is smaller than it appears on paper.",
     comparisonTable: {
       rows: [
         { dimension: "Stock / bond split", a: "80% stocks / 20% bonds", b: "90% stocks / 10% bonds" },
@@ -8464,7 +8464,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Portfolio allocation",
     h1: "70/30 vs 80/20 Portfolio: Which Stock-Bond Mix Wins?",
     introText:
-      "An 80/20 portfolio (80% stocks, 20% bonds) pushes further into stocks than a 70/30 mix, for a higher expected return and a wider range of outcomes. On this site's own portfolio model, 80/20 shows an 8.80% expected return versus 70/30's 8.20%, but with 12.94% volatility versus 70/30's 11.45%. The extra return comes with genuinely more risk taken on to get it.",
+      "An 80/20 portfolio (80% stocks and 20% bonds) leans further into stocks than a 70/30 mix, offering a higher expected return but a wider range of outcomes. According to this site's portfolio model, the 80/20 portfolio has an expected return of 8.80%, compared with 8.20% for the 70/30 portfolio. Its volatility is also higher: 12.94% versus 11.45%. That extra expected return comes from taking on genuinely more risk.",
     comparisonTable: {
       rows: [
         { dimension: "Stock / bond split", a: "70% stocks / 30% bonds", b: "80% stocks / 20% bonds" },
@@ -8535,7 +8535,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Brokerages",
     h1: "Vanguard vs Fidelity vs Schwab: Which Brokerage Should You Choose?",
     introText:
-      "[Vanguard](https://investor.vanguard.com), [Fidelity](https://www.fidelity.com), and [Schwab](https://www.schwab.com) all charge $0 to open a taxable brokerage account, $0 commission on online U.S. stock and ETF trades, and offer at least one no-fee index fund option in the most common categories, so the old fee battles between these three brokerages are mostly settled. What still separates them is fund and ETF breadth, robo-advisor pricing, branch access, and which type of investor each platform is actually built around.",
+      "[Vanguard](https://investor.vanguard.com), [Fidelity](https://www.fidelity.com), and [Schwab](https://www.schwab.com) each charge $0 to open a taxable brokerage account and $0 commission on online U.S. stock and ETF trades. They also offer at least one no-fee index fund option in the most common categories. That means the old fee battles among these three brokerages are mostly settled. What still sets them apart is the breadth of their funds and ETFs, robo-advisor pricing, branch access, and the type of investor each platform is actually built around.",
     comparisonTable: {
       rows: [
         { dimension: "Account minimum to open a taxable brokerage account", a: "$0", b: "Fidelity: $0. Schwab: $0" },
@@ -8653,7 +8653,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Credit Cards",
     h1: "Citi Diamond Preferred vs Citi Simplicity: Which No-Fee Card Wins?",
     introText:
-      "The [Citi Diamond Preferred Card](https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card) and the [Citi Simplicity Card](https://www.citi.com/credit-cards/citi-simplicity-credit-card) both charge no annual fee and both lead with a long 0% introductory APR period on purchases and balance transfers, but they solve different problems. Diamond Preferred is built to give a balance-transfer shopper the longest 0% runway in Citi's current lineup, while Simplicity is built to protect someone who might occasionally miss a due date, since it is the only Citi card with no late fee and no penalty APR. Neither card earns rewards or points, so the right pick depends on whether a longer 0% window or forgiveness for a missed payment matters more to you.",
+      "The [Citi Diamond Preferred Card](https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card) and the [Citi Simplicity Card](https://www.citi.com/credit-cards/citi-simplicity-credit-card) both have no annual fee and offer a long 0% introductory APR period on purchases and balance transfers. But they're designed to solve different problems. Diamond Preferred gives balance-transfer shoppers the longest 0% runway in Citi's current lineup. Simplicity, meanwhile, is designed for someone who might occasionally miss a due date: It's the only Citi card with no late fee and no penalty APR. Neither card earns rewards or points, so the better choice comes down to what matters more to you, a longer 0% window or forgiveness for a missed payment.",
     comparisonTable: {
       rows: [
         { dimension: "Annual fee", a: "$0", b: "$0" },
@@ -8759,7 +8759,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Real Estate Investors",
     h1: "DSCR Loan vs Conventional Loan: Which Wins for Real Estate Investors?",
     introText:
-      "A Debt Service Coverage Ratio (DSCR) loan qualifies you on your rental property's income. Most lenders want a DSCR of 1.0x to 1.25x, calculated by dividing the property's rent by its full monthly payment. A conventional loan instead qualifies you on your personal income, tax returns, and debt-to-income (DTI) ratio. For real estate investors, especially self-employed buyers or those already carrying several mortgages, that difference often decides whether a deal closes at all.",
+      "A Debt Service Coverage Ratio (DSCR) loan qualifies you based on your rental property's income. Most lenders look for a DSCR of 1.0x to 1.25x, calculated by dividing the property's rent by its full monthly payment. A conventional loan, by contrast, qualifies you based on your personal income, tax returns, and debt-to-income (DTI) ratio. For real estate investors (especially self-employed buyers or those already carrying several mortgages) that difference often determines whether a deal closes at all.",
     comparisonTable: {
       rows: [
         { dimension: "Qualifies on", a: "Property's rental income (DSCR ratio)", b: "Borrower's personal income, W-2s, tax returns (DTI ratio)" },
@@ -8846,7 +8846,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Real Estate & Capital Gains Tax Planning",
     h1: "1031 Exchange vs Opportunity Zone: Which Defers Your Capital Gains Tax?",
     introText:
-      "A 1031 exchange defers [capital gains tax](/guides/avoid-capital-gains-tax-on-land-sale/) on investment real estate by rolling the sale proceeds into a new like-kind property. You have 45 days to identify that property and 180 days to close, working through a qualified intermediary who holds the funds the whole time. A Qualified Opportunity Fund (QOF) investment defers tax on any capital gain, real estate or not, and can erase tax on new growth after a 10-year hold. The right pick depends on where your gain comes from, how long you can lock up the money, and whether you plan to keep trading real estate for decades.",
+      "A 1031 exchange lets you defer [capital gains tax](/guides/avoid-capital-gains-tax-on-land-sale/) on investment real estate by rolling the sale proceeds into a new like-kind property. You have 45 days to identify the property and 180 days to close, and a qualified intermediary must hold the funds the entire time.\n\nA Qualified Opportunity Fund (QOF) investment, on the other hand, defers tax on any capital gain, whether it comes from real estate or not. It can also erase tax on new growth after a 10-year hold.\n\nWhich option is right for you depends on where the gain comes from, how long you can lock up the money, and whether you plan to keep trading real estate for decades.",
     comparisonTable: {
       rows: [
         { dimension: "what gains qualify", a: "Real property held for investment or business use only", b: "Any capital gain: real estate, stocks, crypto, or a business sale" },
@@ -8943,7 +8943,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Homeowners buying a new home before their current one sells",
     h1: "Bridge Loan vs HELOC: Which Covers a Home Purchase Before You Sell?",
     introText:
-      "A bridge loan is a short-term loan, usually 6 to 12 months, secured by the equity in your current home. It funds the down payment on a new home before your old one sells, and sometimes pays off your existing mortgage in the same closing. A home equity line of credit (HELOC) taps that same equity through a revolving credit line. It typically costs less, but it takes longer to open, and it cannot retire your existing mortgage the way a bridge loan can. Pick the bridge loan when your closing date is weeks away and speed matters more than price. Pick the HELOC when you have several weeks of lead time and want the lower-cost option.",
+      "A bridge loan is a short-term loan (usually 6 to 12 months) secured by the equity in your current home. It can fund the down payment on a new home before your old one sells and sometimes pays off your existing mortgage at the same closing.\n\nA home equity line of credit (HELOC) uses that same equity through a revolving credit line. It typically costs less, but takes longer to open and cannot retire your existing mortgage the way a bridge loan can.\n\nChoose a bridge loan if your closing date is only weeks away and speed matters more than price. Choose a HELOC if you have several weeks of lead time and want the lower-cost option.",
     comparisonTable: {
       rows: [
         { dimension: "Speed to close", a: "1 to 3 weeks, built for a tight purchase deadline", b: "2 to 6 weeks, requires appraisal and underwriting" },
@@ -9034,7 +9034,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "High Mortgage-Rate Environment",
     h1: "Assumable Mortgage vs Refinance: Which Wins When Rates Are High?",
     introText:
-      "An assumable mortgage lets a buyer take over the seller's existing loan. The buyer keeps the seller's rate, term, and remaining balance instead of opening a new loan. A refinance works the opposite way. It pays off an existing loan and replaces it with a new one priced at today's rate. Assumption gets attention mainly in one situation: when the seller's rate sits well below current rates. The buyer then inherits that cheaper payment instead of borrowing at whatever the market charges now. It is not automatically the better deal, though. Only certain loan types qualify. The buyer still has to pass the lender's credit check. And the gap between the home's price and the remaining loan balance can erase the rate savings before closing.",
+      "An assumable mortgage allows a buyer to take over the seller's existing loan, keeping the same rate, term, and remaining balance rather than opening a new loan.\n\nRefinancing works the other way: it pays off the existing loan and replaces it with a new one priced at today's rate.\n\nA mortgage assumption gets the most attention when the seller's rate is well below current rates. In that situation, the buyer inherits the cheaper payment instead of borrowing at the rate the market charges now.\n\nStill, it is not automatically the better deal. Only certain loan types qualify, the buyer must pass the lender's credit check, and the gap between the home's price and the remaining loan balance can wipe out the rate savings before closing.",
     comparisonTable: {
       rows: [
         { dimension: "Eligible loan types", a: "FHA, VA, and USDA loans only", b: "Any loan type, including conventional, jumbo, FHA, VA, and USDA" },
@@ -9119,7 +9119,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       "Seniors and near-retirees shopping for a small policy to cover funeral and burial costs, including applicants who may not qualify for traditional whole life due to health.",
     h1: "Final Expense Insurance vs Whole Life Insurance: Which Is Right for You?",
     introText:
-      "Final expense insurance is a small whole life policy built for guaranteed or simplified acceptance, usually $5,000 to $25,000 in coverage with few or no health questions. Standard whole life insurance is the same basic product scaled up: full medical underwriting, six-figure face values, and a lower price per $1,000 of coverage for anyone healthy enough to qualify. The final expense insurance vs whole life insurance choice usually comes down to two questions: can you pass a medical exam, and do you need more than $25,000 in coverage?",
+      "Final expense insurance is a small whole life policy designed for guaranteed or simplified acceptance. It usually provides $5,000 to $25,000 in coverage and asks few or no health questions.\n\nStandard whole life insurance is the same basic product on a larger scale, with full medical underwriting, six-figure face values, and a lower price per $1,000 of coverage for anyone healthy enough to qualify.\n\nThe choice between final expense insurance vs whole life insurance usually comes down to two questions: Can you pass a medical exam, and do you need more than $25,000 in coverage?",
     comparisonTable: {
       rows: [
         { dimension: "Typical face value range", a: "$5,000 to $25,000, capped by the insurer", b: "$100,000 and up, often $1M+ with underwriting" },
@@ -9205,7 +9205,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       "Retirees age 70½ and older with traditional IRA balances who give to charity and want their required withdrawal handled tax-efficiently",
     h1: "RMD vs QCD: How a Qualified Charitable Distribution Can Satisfy Your Required Withdrawal",
     introText:
-      "A Qualified Charitable Distribution (QCD) can satisfy a Required Minimum Distribution (RMD) dollar for dollar. An RMD is the amount the IRS forces you to withdraw each year from a traditional IRA or 401(k), starting at age 73. A QCD sends that money directly from your IRA to a qualifying charity instead, so it never counts as taxable income, and it still satisfies that year's RMD up to the QCD's annual cap.",
+      "A Qualified Charitable Distribution (QCD) can satisfy a Required Minimum Distribution (RMD) dollar for dollar. Starting at age 73, the IRS forces you to withdraw a certain amount each year from a traditional IRA or 401(k). With a QCD, that money goes directly from your IRA to a qualifying charity instead, so it never counts as taxable income while still satisfying that year's RMD, up to the QCD's annual cap.",
     comparisonTable: {
       rows: [
         { dimension: "What it is", a: "A mandatory annual withdrawal the IRS forces from traditional retirement accounts", b: "A voluntary transfer of IRA funds straight to a qualifying charity" },
@@ -9296,7 +9296,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Workers comparing a contractor offer to a W-2 job",
     h1: "1099 vs W-2: Which Pay Wins After Taxes and Benefits?",
     introText:
-      "A 1099 contractor takes home more per invoice, but covers both halves of Social Security and Medicare tax and self-funds every benefit. A W-2 employee has that tax withheld automatically and often gets health insurance and a 401(k) match already built into the offer. Comparing the two rates at face value favors 1099. Comparing them after taxes and benefits almost always narrows the gap.",
+      "A 1099 contractor takes home more from each invoice but pays both halves of Social Security and Medicare tax and funds every benefit themselves. A W-2 employee has that tax withheld automatically and often receives health insurance and a 401(k) match as part of the offer. At face value, the comparison favors 1099. After taxes and benefits, the gap almost always narrows.",
     comparisonTable: {
       rows: [
         { dimension: "Tax withholding", a: "None, you owe the full amount yourself", b: "Employer withholds income tax and FICA from every paycheck" },
@@ -9376,7 +9376,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Capital Gains Tax",
     h1: "Ordinary Income vs Capital Gains Tax",
     introText:
-      "Ordinary income is taxed at your regular federal rate, up to 37% in 2026. A long-term capital gain on that same money is taxed separately, at 0%, 15%, or 20% instead.\n\nIt's the split our calculators are built to walk through anytime a reader is deciding when to sell an investment or how to take a bonus. Which bucket a dollar lands in can matter more than how much of it you earn.",
+      "Ordinary income is taxed at your regular federal rate, up to 37% in 2026. A long-term capital gain on that same money is taxed separately at 0%, 15%, or 20%.\n\nThat's the distinction our calculators walk readers through when they're deciding when to sell an investment or how to take a bonus. The bucket a dollar falls into can matter more than how much of it you earn.",
     comparisonTable: {
       rows: [
         { dimension: "What generates it", a: "Wages, salary, tips, self-employment income, interest, and gains on assets held 1 year or less", b: "Profit from selling a capital asset, like stock or real estate, held more than 1 year" },
@@ -9509,7 +9509,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Kids & family investing",
     h1: "Custodial Roth IRA vs Trump Account: Which Is Better for Your Child?",
     introText:
-      "A custodial Roth IRA needs your child's own earned income but grows completely tax-free for retirement, while a Trump Account needs no income at all and comes with a free $1,000 federal seed, taxed like a traditional IRA once your child turns 18 and withdraws it. Pick the Roth once your child has real, documented wages and you want every dollar of growth untaxed for good. Pick the Trump Account for a newborn or any child too young to work, since it is the only one of the two they can have funded at all.",
+      "A custodial Roth IRA requires your child to have their own earned income, but it grows completely tax-free for retirement. A Trump Account requires no income at all and includes a free $1,000 federal seed. Once your child turns 18 and withdraws the money, it is taxed like a traditional IRA.\n\nChoose the Roth once your child has real, documented wages and you want every dollar of growth to remain untaxed for good. Choose the Trump Account for a newborn or any child too young to work, since it is the only one of the two that can be funded for them at all.",
     comparisonTable: {
       rows: [
         { dimension: "Who can fund it", a: "Only the child's own documented earned income", b: "Family, relatives, friends, and an employer, up to $5,000/year combined" },
@@ -9612,7 +9612,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "FAFSA",
     h1: "CSS Profile vs. FAFSA: Which Financial Aid Form Do You Need?",
     introText:
-      "The CSS Profile is a paid financial aid form that about 250 mostly private colleges use to award their own scholarships and grants, while the FAFSA is a free federal form that almost every U.S. college requires for federal aid, most state aid, and often institutional aid too. A student applying only to public, in-state schools can usually file the FAFSA alone. A student with even one private college on the list needs both forms, filed separately, often on different deadlines.",
+      "The CSS Profile is a paid financial aid form used by about 250 mostly private colleges to award their own scholarships and grants. The FAFSA, by contrast, is a free federal form that almost every U.S. college requires for federal aid, most state aid, and often institutional aid too.\n\nA student applying only to public, in-state schools can usually file just the FAFSA. But a student with even one private college on the list needs to file both forms separately, often by different deadlines.",
     comparisonTable: {
       rows: [
         { dimension: "Who runs it", a: "Federal Student Aid, part of the U.S. Department of Education", b: "College Board, the nonprofit that also runs the SAT" },
@@ -9718,7 +9718,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Robinhood",
     h1: "Charles Schwab vs. Robinhood: Which Broker Should You Use?",
     introText:
-      "Charles Schwab is a full-service broker with a complete lineup of investment types, in-house mutual funds, banking, and human financial advisors, while Robinhood is a mobile-first broker built around a simpler app, fractional shares from $1, and a retirement account match most competitors don't offer. Robinhood usually fits a newer or smaller-balance investor who wants speed and a low cost of entry. Schwab usually fits an investor who wants one account to hold everything, from a taxable brokerage to a retirement portfolio to a linked bank account.",
+      "Charles Schwab is a full-service broker offering a complete lineup of investment types, in-house mutual funds, banking, and human financial advisors. Robinhood, by contrast, is a mobile-first broker built around a simpler app, fractional shares starting at $1, and a retirement account match that most competitors don't offer.\n\nRobinhood usually suits newer investors or those with smaller balances who want speed and a low cost of entry. Schwab usually suits investors who want one account for everything, from a taxable brokerage and retirement portfolio to a linked bank account.",
     comparisonTable: {
       rows: [
         { dimension: "Account minimum", a: "$0 to open a brokerage or IRA", b: "$0 to open a brokerage or IRA" },
@@ -9827,7 +9827,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "TaxAct",
     h1: "TurboTax vs. TaxAct: Which Tax Software Should You Use?",
     introText:
-      "TurboTax charges more at nearly every paid tier but pairs that price with a more guided interview and the deepest live-expert tiers in the category, while TaxAct charges less at every comparable tier and backs its numbers with a $100,000 accuracy guarantee. A simple W-2-only return filed free costs $0 on both. Add a Schedule C, itemized deductions, or investment income, and TaxAct usually costs less than the matching TurboTax tier for the same return. Whichever you pick, our [common tax filing mistakes](/guides/common-tax-filing-mistakes/) guide covers the errors that trip up both software users and paper filers alike.",
+      "TurboTax costs more at nearly every paid tier, but it offers a more guided interview and the deepest live-expert tiers in the category. TaxAct costs less at every comparable tier and backs its numbers with a $100,000 accuracy guarantee. A simple W-2-only return costs $0 with either service. Once you add a Schedule C, itemized deductions, or investment income, TaxAct usually costs less than the comparable TurboTax tier for the same return. No matter which one you choose, our [common tax filing mistakes](/guides/common-tax-filing-mistakes/) guide covers the errors that trip up software users and paper filers alike.",
     comparisonTable: {
       rows: [
         { dimension: "Federal cost, simple W-2 return", a: "Free (Form 1040 only, limited credits)", b: "Free" },
@@ -9936,7 +9936,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "401(k)",
     h1: "IUL vs 401k for Building Retirement Income",
     introText:
-      "In IUL vs 401k, the 401(k) wins for nearly every US saver. What we see readers get wrong most often is comparing an IUL illustration against a 401(k) with no match in it. An indexed universal life (IUL) policy is permanent life insurance whose cash value earns interest tied to a market index. A floor limits your losses. A cap limits your gains. A 401(k) is an employer plan that lets you set aside part of your pay, invest it, and in most plans collect a matching contribution on top. Indexed universal life vs 401k becomes a real question only after you have taken every matched dollar and filled the tax-advantaged accounts you qualify for.",
+      "In the IUL vs 401k debate, the 401(k) wins for nearly every US saver. The mistake we see readers make most often is comparing an IUL illustration with a 401(k) that includes no employer match.\n\nAn indexed universal life (IUL) policy is permanent life insurance with a cash value that earns interest tied to a market index. A floor limits your losses, while a cap limits your gains. A 401(k), by contrast, is an employer plan that lets you set aside part of your pay, invest it, and, in most plans, receive a matching contribution on top.\n\nIndexed universal life vs 401k becomes a real question only after you have taken every matched dollar and filled the tax-advantaged accounts you qualify for.",
     comparisonTable: {
       rows: [
         { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "Employer retirement plan funded from your pay" },
@@ -10056,7 +10056,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Roth IRA",
     h1: "IUL vs Roth IRA for Tax-Free Retirement Money",
     introText:
-      "In IUL vs Roth IRA, the Roth IRA wins for almost every saver who is allowed to fund one. What we see readers get wrong most often is treating the Roth IRA income phase-out as a permanent lockout, when a backdoor Roth reopens it. A Roth IRA is an individual retirement arrangement (IRA) you fund with after-tax money and invest as you choose, and qualified withdrawals come out tax-free. An indexed universal life (IUL) policy is a life insurance contract whose cash value earns a credit tied to a stock index without ever holding the index. The carrier sets a floor under the loss and a cap over the gain. Both can deliver tax-free money later. The IUL also charges you for a death benefit the whole way there.",
+      "In the IUL vs. Roth IRA debate, the Roth IRA wins for almost every saver who is allowed to fund one. The mistake we see readers make most often is treating the Roth IRA income phase-out as a permanent lockout, even though a backdoor Roth reopens it.\n\nA Roth IRA is an individual retirement arrangement (IRA) funded with after-tax money. You invest that money as you choose, and qualified withdrawals are tax-free. An indexed universal life (IUL) policy, by contrast, is a life insurance contract whose cash value earns a credit tied to a stock index without ever holding the index. The carrier puts a floor under the loss and a cap over the gain.\n\nBoth can provide tax-free money later. But with an IUL, you also pay for a death benefit the whole way there.",
     comparisonTable: {
       rows: [
         { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "A retirement account you own and invest yourself" },
@@ -10176,7 +10176,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Tax software",
   h1: "TurboTax vs H&R Block: Which Tax Software Should You Use?",
   introText:
-    "H&R Block wins if you want the option of walking into a physical office, and TurboTax wins if you'd rather stay online and want the more polished self-guided interview. In the guides we publish here, we see readers default to whichever brand they used last year without checking whether their return actually changed enough to matter. [TurboTax](https://turbotax.intuit.com/personal-taxes/online/) now organizes its online product around a free Do It Yourself edition for simple returns, a paid Do It Yourself tier priced once it scans your forms, and Expert Assist or Expert Full Service add-ons that bring in a credentialed preparer. [H&R Block](https://www.hrblock.com/online-tax-filing/) keeps four named tiers with published prices instead: Free Online, Deluxe, Premium, and Self-Employed, plus in-person filing at its retail offices. A simple W-2-only return costs $0 on both, so the price gap only opens once your return needs a schedule beyond the basics.",
+    "H&R Block wins if you want the option to walk into a physical office. TurboTax wins if you'd rather handle everything online and want a more polished self-guided interview. In the guides we publish here, we often see readers default to whichever brand they used last year without checking whether their return changed enough to matter.\n\n[TurboTax](https://turbotax.intuit.com/personal-taxes/online/) now structures its online product around a free Do It Yourself edition for simple returns, a paid Do It Yourself tier that's priced once it scans your forms, and Expert Assist or Expert Full Service add-ons that bring in a credentialed preparer. [H&R Block](https://www.hrblock.com/online-tax-filing/) instead keeps four named tiers with published prices: Free Online, Deluxe, Premium, and Self-Employed. It also offers in-person filing at its retail offices.\n\nA simple W-2-only return costs $0 with either service, so the price gap only appears once your return requires a schedule beyond the basics.",
   comparisonTable: {
     rows: [
       { dimension: "Filing structure", a: "Free Do It Yourself edition, a paid Do It Yourself tier priced by your forms, plus Expert Assist and Expert Full Service add-ons", b: "Four named tiers with posted prices: Free Online, Deluxe, Premium, Self-Employed" },
@@ -10293,7 +10293,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Budget-conscious filers",
   h1: "FreeTaxUSA vs TurboTax: Which One Should You File With?",
   introText:
-    "FreeTaxUSA wins on price for almost every filer, and TurboTax wins on hand-holding for someone who wants more guidance along the way. What we see readers get wrong most often is assuming [FreeTaxUSA](https://www.freetaxusa.com/) must be missing forms or cutting corners because it's free at the federal level. It isn't. FreeTaxUSA charges $0 for federal filing no matter how many forms your return needs, plus a flat state fee, while [TurboTax](https://turbotax.intuit.com/personal-taxes/online/)'s free tier only covers a plain W-2 return and its paid tier prices up once you add a Schedule C, investment sales, or rental income. The real tradeoff shows up in support and interview design, not in which forms each one can handle. TurboTax's interview reads like a conversation with someone who assumes you know less. FreeTaxUSA's reads like a form that assumes you already know roughly what you're doing.",
+    "FreeTaxUSA wins on price for almost every filer, while TurboTax wins on hand-holding for anyone who wants more guidance along the way. The mistake we see readers make most often is assuming that, because [FreeTaxUSA](https://www.freetaxusa.com/) is free at the federal level, it must be missing forms or cutting corners. It isn't.\n\nFreeTaxUSA charges $0 for federal filing, no matter how many forms your return requires, plus a flat state fee. [TurboTax](https://turbotax.intuit.com/personal-taxes/online/), by contrast, limits its free tier to a plain W-2 return, and its paid tier prices go up once you add a Schedule C, investment sales, or rental income.\n\nThe real tradeoff isn't which forms each service can handle. It's support and interview design. TurboTax's interview feels like a conversation with someone who assumes you know less. FreeTaxUSA's feels more like a form that assumes you already know roughly what you're doing.",
   comparisonTable: {
     rows: [
       { dimension: "Federal filing cost", a: "$0, at every complexity level, from a plain W-2 up through self-employment income", b: "$0 only on the Free Edition for a simple W-2 return. A priced tier applies once you add a schedule" },
@@ -10399,7 +10399,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   optionB: "Leasing",
   h1: "Buying vs Leasing a Car: Which Costs Less?",
   introText:
-    "Buying usually costs less over 3 years once you count the equity you keep, and leasing usually costs less each month while you're driving the car. In the guides we publish here, we see readers compare only the monthly payment and skip the equity number that actually decides which option wins. On a $35,000 vehicle financed over 5 years, a typical loan payment runs around $624 a month. The same car leased over 3 years commonly runs closer to $420 a month. The loan payment is higher because you're financing the entire purchase price. The lease payment is lower because you're only financing the vehicle's expected depreciation, plus a finance charge, over a shorter term.",
+    "Buying usually costs less over 3 years once you factor in the equity you keep, while leasing usually costs less each month while you're driving the car. In the guides we publish here, we often see readers focus only on the monthly payment and overlook the equity number that actually decides which option wins.\n\nFor a $35,000 vehicle financed over 5 years, a typical loan payment is around $624 a month. Leasing that same car over 3 years commonly costs closer to $420 a month. The loan payment is higher because you're financing the entire purchase price. The lease payment is lower because you're financing only the vehicle's expected depreciation, plus a finance charge, over a shorter term.",
   comparisonTable: {
     rows: [
       { dimension: "Typical monthly payment", a: "Higher, since you finance the full purchase price", b: "Lower, since you finance only the expected depreciation plus a finance charge" },
@@ -10512,7 +10512,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Home financing",
   h1: "Construction Loan vs Traditional Mortgage: What's the Difference?",
   introText:
-    "A construction loan pays your builder in stages as the work gets done, while a traditional mortgage hands the seller the full purchase price in one lump sum at closing. In the guides we publish here, we see readers assume a construction loan works like a mortgage with a different name, then get surprised by draw inspections, interest-only payments, and a bigger down payment requirement. A construction loan typically charges interest only on the amount actually drawn so far, and it usually requires a larger down payment and a detailed builder contract before a lender approves it. A traditional mortgage amortizes principal and interest from your very first payment, against a home that already exists and can be appraised as-is today.",
+    "A construction loan pays your builder in stages as the work progresses. A traditional mortgage, by contrast, pays the seller the full purchase price in one lump sum at closing.\n\nIn the guides we publish here, we often see readers assume a construction loan is just a mortgage with a different name. They're then surprised by draw inspections, interest-only payments, and the larger down payment requirement.\n\nWith a construction loan, you typically pay interest only on the amount drawn so far. Before approving it, a lender usually requires a larger down payment and a detailed builder contract. A traditional mortgage amortizes principal and interest from your very first payment and is secured against a home that already exists and can be appraised as-is today.",
   comparisonTable: {
     rows: [
       { dimension: "How the money is paid out", a: "Released in draws as construction milestones are completed and inspected", b: "A lump sum paid to the seller at closing" },
@@ -10625,7 +10625,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Near-retirees & elder care",
   h1: "Medicare Advantage vs Medigap: Which Should You Choose?",
   introText:
-    "Medicare Advantage replaces Original Medicare with a private insurer's plan that bundles Part A (hospital coverage), Part B (medical coverage), and usually Part D (prescription drug coverage) into one network-based plan. Medigap keeps you on Original Medicare and pays a share of what it doesn't cover, so you can see any doctor nationwide who accepts Medicare, with no network at all. The right pick usually comes down to three things: how much premium you can carry every month, how often you travel or need care outside a local network, and whether you can still pass medical underwriting if you decide to switch later.",
+    "Medicare Advantage replaces Original Medicare with a private insurer's network-based plan. It bundles Part A (hospital coverage), Part B (medical coverage), and usually Part D (prescription drug coverage). Medigap works differently: you stay on Original Medicare, and Medigap pays a share of what Original Medicare doesn't cover. That means you can see any doctor nationwide who accepts Medicare, with no network at all.\n\nThe right choice usually comes down to three things: how much premium you can afford each month, how often you travel or need care outside a local network, and whether you can still pass medical underwriting if you choose to switch later.",
   comparisonTable: {
     rows: [
       { dimension: "Monthly premium", a: "Many plans run $0 a month. Plans with more extras can cost more", b: "No standard price. Each insurer sets its own rate by state, age, and plan letter, commonly in the low hundreds monthly" },
@@ -10727,7 +10727,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Brokerages",
   h1: "E*TRADE vs Fidelity: Which Broker Should You Choose?",
   introText:
-    "[E*TRADE](https://us.etrade.com) and [Fidelity](https://www.fidelity.com) both charge $0 for online stock and ETF trades. The real differences show up in who owns each platform, what the robo-advisor costs, and how deep the research tools go.\n\n[Morgan Stanley](https://www.morganstanley.com) owns E*TRADE and built its active-trader tools around Power E*TRADE. Fidelity stays independently owned and pairs its trading platform with genuinely free index funds and a far larger research library. If you trade options or futures often, or want a big-brand advisor relationship behind your account, that ownership difference alone can tip the decision.",
+    "[E*TRADE](https://us.etrade.com) and [Fidelity](https://www.fidelity.com) both charge $0 for online stock and ETF trades. Where they really differ is in who owns the platform, how much the robo-advisor costs, and the depth of their research tools.\n\n[Morgan Stanley](https://www.morganstanley.com) owns E*TRADE, which built its active-trader tools around Power E*TRADE. Fidelity remains independently owned and combines its trading platform with genuinely free index funds and a far larger research library. If you often trade options or futures, or want a big-brand advisor relationship behind your account, that ownership difference alone can tip the decision.",
   comparisonTable: {
     rows: [
       { dimension: "Commission on stock/ETF trades", a: "$0", b: "$0" },
@@ -10845,7 +10845,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   segment: "Beginner investors",
   h1: "SoFi Invest vs Robinhood: Which Should You Choose?",
   introText:
-    "SoFi Invest is one piece of SoFi's all-in-one banking and investing app. Robinhood is built around a single job: fast, simple stock and options trading.\n\n[SoFi](https://www.sofi.com) rewards you for using more of its products together, through its SoFi Plus membership tier. [Robinhood](https://robinhood.com) rewards you for trading more on the one product it does, through Robinhood Gold. Which one fits depends less on fees, since both charge $0 commission, and more on whether you want one app running your whole financial life or one app built purely around trading.",
+    "SoFi Invest is part of SoFi's all-in-one banking and investing app. Robinhood, by contrast, is built around one job: fast, simple stock and options trading.\n\n[SoFi](https://www.sofi.com) rewards you for using more of its products together through its SoFi Plus membership tier. [Robinhood](https://robinhood.com) rewards you for trading more on its one product through Robinhood Gold. Since both charge $0 commission, the right fit depends less on fees and more on what you want: one app to run your whole financial life, or one built purely around trading.",
   comparisonTable: {
     rows: [
       { dimension: "Core focus", a: "All-in-one banking, borrowing, and investing app", b: "Trading-first app, with banking and crypto added over time" },
@@ -10963,7 +10963,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Permanent life insurance",
     h1: "IUL vs VUL Comes Down to Who Takes the Market Risk",
     introText:
-      "Indexed Universal Life (IUL) protects your cash value with a floor and caps your upside, while Variable Universal Life (VUL) invests cash value directly in the market with no floor and no cap. What we see readers get wrong most often is treating this as an investment choice, when both products are life insurance built to fund a permanent death benefit first.\n\nIUL credits interest tied to a market index such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) without ever owning the index. VUL puts your premium into mutual-fund-like sub-accounts that hold real securities, so the account value moves with the market directly. Search results for both terms lean heavily on forum threads rather than seller pages, and much of that discussion is skeptical of buying either product mainly as an investment.",
+      "The key difference is this: Indexed Universal Life (IUL) protects your cash value with a floor and caps your upside. Variable Universal Life (VUL), by contrast, invests your cash value directly in the market, with no floor and no cap. What we see readers get wrong most often is treating this as an investment choice. Both products are life insurance, built first to fund a permanent death benefit.\n\nIUL credits interest tied to a market index, such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/), without ever owning the index. VUL puts your premium into mutual-fund-like sub-accounts that hold real securities, so the account value moves directly with the market. Search results for both terms lean heavily on forum threads rather than seller pages, and much of that discussion is skeptical of buying either product mainly as an investment.",
     comparisonTable: {
       rows: [
         { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "Permanent life insurance with cash value invested directly in sub-accounts" },
@@ -11073,7 +11073,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Self-employed retirement",
     h1: "Solo 401(k) vs SIMPLE IRA Comes Down to Employees",
     introText:
-      "A Solo 401(k) works only if you have zero full-time employees besides a spouse, while a SIMPLE IRA lets you cover employees but locks you into a mandatory yearly contribution for each one. What we see readers get wrong most often is comparing the two plans on contribution limits first, when the employee-eligibility rule usually decides the question before any limit does.\n\nA Solo 401(k) is a one-participant 401(k) plan built for an owner-only business. A SIMPLE IRA, short for Savings Incentive Match Plan for Employees individual retirement account, is built for a small business with up to 100 employees. Hire your first non-spouse full-time employee and the Solo 401(k) comes off the table immediately, which is the fact that should open this comparison rather than end it.",
+      "The first thing to compare isn't contribution limits, it's employee eligibility. What we see readers get wrong most often is starting with the limits, even though the employee-eligibility rule usually decides the question before any limit does.\n\nA Solo 401(k) works only if you have zero full-time employees besides a spouse. It's a one-participant 401(k) plan built for an owner-only business. A SIMPLE IRA (short for Savings Incentive Match Plan for Employees individual retirement account) is built for a small business with up to 100 employees. It lets you cover employees but locks you into a mandatory yearly contribution for each one.\n\nOnce you hire your first non-spouse full-time employee, the Solo 401(k) comes off the table immediately. That fact should open this comparison, not end it.",
     comparisonTable: {
       rows: [
         { dimension: "Employee eligibility", a: "Owner and spouse only. No other full-time employees allowed", b: "Any eligible employee. Works for a business with up to 100 employees earning $5,000+" },
@@ -11183,7 +11183,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     segment: "Debt and bankruptcy",
     h1: "Chapter 7 vs Chapter 13 Bankruptcy Comes Down to What You Own",
     introText:
-      "Chapter 7 bankruptcy sells your non-exempt assets to erase most unsecured debt in three to six months, while Chapter 13 bankruptcy reorganizes debt into a three-to-five-year repayment plan that lets you keep assets like a home. What we see readers get wrong most often is assuming Chapter 7 is always the faster, cheaper option and Chapter 13 is only a fallback, when the actual pick usually comes down to what you own and how much you earn.\n\nAccording to the [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), Chapter 7 is a liquidation case: a court-appointed trustee sells anything you own above your state's exemption limits and pays creditors with the proceeds. Chapter 13, covered in the courts' own [Chapter 13 basics guide](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics), is a reorganization case: you propose a repayment plan and pay what you can from income over three to five years while keeping your property.\n\nBoth wipe out debt differently, and both leave certain debts, like most student loans and recent taxes, still owed when the case closes.",
+      "Chapter 7 bankruptcy sells your non-exempt assets to erase most unsecured debt in three to six months. Chapter 13 bankruptcy, by contrast, reorganizes your debt into a three-to-five-year repayment plan and lets you keep assets like a home. The mistake we see readers make most often is assuming Chapter 7 is always faster and cheaper, while Chapter 13 is only a fallback. In reality, the right choice usually comes down to what you own and how much you earn.\n\nAccording to the [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), Chapter 7 is a liquidation case. A court-appointed trustee sells anything you own above your state's exemption limits, then uses the proceeds to pay creditors. Chapter 13 is a reorganization case, as explained in the courts' own [Chapter 13 basics guide](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics). You propose a repayment plan, pay what you can from your income over three to five years, and keep your property.\n\nBoth wipe out debt, but they do so differently. Both also leave certain debts (like most student loans and recent taxes) still owed when the case closes.",
     comparisonTable: {
       rows: [
         { dimension: "Process type", a: "Liquidation: a trustee sells your non-exempt property to pay creditors", b: "Reorganization: you keep property and repay creditors from income over time" },
@@ -11292,7 +11292,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionB: "Auto Loan",
     h1: "Personal Loan vs Auto Loan for Buying a Car",
     introText:
-      "A personal loan is unsecured money you can spend on almost anything, while an auto loan is secured by the car itself and can only fund a vehicle purchase. What we see readers get wrong most often is treating the two as interchangeable ways to pay for a car, when the collateral behind an auto loan is the reason it almost always carries a lower rate than an unsecured personal loan for the exact same purchase.",
+      "A personal loan is unsecured money you can use for almost anything, while an auto loan is secured by the car itself and can only be used to purchase a vehicle. The mistake we see readers make most often is treating the two as interchangeable ways to pay for a car. But the collateral behind an auto loan is exactly why it almost always has a lower rate than an unsecured personal loan used for the same purchase.",
     comparisonTable: {
       rows: [
         { dimension: "Collateral", a: "None. Unsecured against your credit alone", b: "The vehicle itself secures the loan" },
