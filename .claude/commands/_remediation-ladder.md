@@ -17,6 +17,9 @@ The audit itself is not the problem and does not get weaker here. On 2026-08-22 
 
 ---
 
+
+**Out of scope: a humanized intro.** The intro of a new page is re-voiced by the INTRO HUMANIZE step after every audit and lint gate has run (see `## INTRO HUMANIZE` in `_content-standard.md`). This ladder does not apply to it. Do not fix, polish, or rework a finding raised against a humanized intro; the only allowed action is restoring the original intro if a fact or link was lost.
+
 ## THE LADDER
 
 A finding is fixed at the **cheapest rung that can fix it**. Never send a one-line fix through a full writer re-run and a full re-audit of every page.

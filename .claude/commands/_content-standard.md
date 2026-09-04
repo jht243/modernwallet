@@ -485,9 +485,15 @@ These are non-blocking observations. Do NOT set fail for any of them, and do not
 
 ---
 
-## INTRO HUMANIZE — the final prose step (MANDATORY on any routine that writes NEW pages)
+## INTRO HUMANIZE — the LAST prose step (MANDATORY on any routine that writes NEW pages)
 
-After every other prose edit is done and audited — new content written and passed Phase 4, body edits made, internal links added — and BEFORE the sitemap/commit step, re-voice the **intro of each NEW page this run created** so it does not read like the other 800 machine-written intros. This is the last step that touches page text; nothing after it rewrites the intro.
+**Order, non-negotiable.** This step runs AFTER everything that judges prose: the Phase 4 audit, the anti-ai-language tell list, `content_lint.py`, the sentence-length and rhythm gates, and any polish pass. Those gates run against the DRAFTED intro. This step then re-voices that intro, and the run goes straight to sitemap/commit. Nothing between this step and the commit touches the intro.
+
+**Who runs it.** The routine's top-level orchestrator, as its own step, once all writer and audit subagents have returned. NEVER a Phase 3 or Phase 5 writer subagent, and never mid-draft. A writer that pipes its own draft through the helper and then keeps editing has defeated the step: it just fed the gates back over the result. If you are a writer subagent, do not call `humanize_intro.py` at all. Hand your intro back as drafted.
+
+**Nothing edits the intro afterwards.** Once the helper returns, that text ships. Do not re-run the tell list, the lint, the word-count or rhythm checks, or a "quick polish" over it, and do not split its sentences, expand its abbreviations, or trim it to a length target. The step carries no ban list precisely because the gates already ran; re-applying them flattens it back to what it was written to fix. If a mechanical gate flags the humanized intro on STYLE (sentence length, cadence, a dash, a word on the tell list), that flag is expected. Let it stand and note it in the run email.
+
+The one exception is a FACT problem: a number, date, claim, or link that changed or disappeared. Then discard the rewrite and keep the ORIGINAL intro verbatim. Never hand-repair the humanized text.
 
 **Why it is a separate step, not part of the writer.** The writer drafts against this whole standard plus the tell list, and a draft that dodges every ban comes out flat: the same "[verdict]. At {BUSINESS}, we [experience]. [one fact]." shape on every page. This step fixes only the intro, with GPT-5.6 Sol, using ONE instruction and NO ban list:
 
@@ -505,8 +511,8 @@ The helper sends the intro alone to GPT-5.6 Sol, returns the same number of para
 - New pages only. Do NOT run it on existing pages a routine merely edited, and never on a page under DEFEND-LOCK.
 - **Never send a byline or a disclosure paragraph to the model.** Before piping, drop any intro paragraph that is a reviewer/author line (`Reviewed by…`, `Last updated…`) or affiliate/FTC disclosure copy (`…may earn a referral commission…`, `…at no extra cost to you…`), then put those paragraphs back verbatim, in their original position, after the rewrite. That text is attribution and legal copy, not voice; a reworded disclosure is a compliance change nobody asked for. (On 2026-09-03 the pass reworded the disclosure on 6 layer3 pages and had to be restored from git.)
 - Only the intro. Section bodies, tables, FAQs, metadata, and links are untouched.
-- It replaces the intro's field in place — same paragraph count, same links, same facts. The helper drops the rewrite and keeps the original if the paragraph count changed.
-- It is NOT re-audited. Its output is the shipped intro. (It carries no ban list precisely because the audit already ran; re-auditing it would flatten it back.)
+- It replaces the intro's field in place — same links, same facts. The model may split a long paragraph, which is fine. The helper drops the rewrite and keeps the original if a number or link went missing.
+- It is NOT re-audited and NOT re-linted. Its output is the shipped intro, byte for byte.
 - One human-sounding intro that keeps every fact beats a compliant flat one. If a fact moved or changed, that is a bug in the call — keep the original.
 
 ---
