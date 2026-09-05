@@ -39,6 +39,9 @@ import WithdrawalReverseCalculator from "./WithdrawalReverseCalculator";
 import PtoCashoutCalculator from "./PtoCashoutCalculator";
 import IulCalculator from "./IulCalculator";
 import ZakatCalculator from "./ZakatCalculator";
+import SelfEmploymentTaxCalculator from "./SelfEmploymentTaxCalculator";
+import MileageDeductionCalculator from "./MileageDeductionCalculator";
+import FreelanceRateCalculator from "./FreelanceRateCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -111,6 +114,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "merchant-cash-advance": MerchantCashAdvanceCalculator,
   "invoice-factoring": InvoiceFactoringCalculator,
   "business-line-of-credit": BusinessLineOfCreditCalculator,
+  // Self-employed / 1099 silo (2026-09-05): SE tax + set-aside share, the 2026 split-rate mileage
+  // deduction, and a reverse-solved freelance rate. The SE-tax island also serves every
+  // per-platform gig spoke through its preset.
+  "self-employment-tax": SelfEmploymentTaxCalculator,
+  "mileage-deduction": MileageDeductionCalculator,
+  "freelance-rate": FreelanceRateCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

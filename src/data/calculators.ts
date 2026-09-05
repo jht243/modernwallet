@@ -4,6 +4,7 @@ import { LIVE_IDS } from "./registry";
 import { MCA_HUB } from "./bf-mca-hub";
 import { FACTORING_HUB } from "./bf-factoring-hub";
 import { LOC_HUB } from "./bf-loc-hub";
+import { SELF_EMPLOYMENT_TAX_HUB, MILEAGE_DEDUCTION_HUB, FREELANCE_RATE_HUB } from "./se-hubs";
 
 // The 7 calculator hubs. Each targets a head term; its spokes (in src/data/spokes*.ts) target the
 // winnable long-tail. A calculator is "live" (gets built pages) only once its island is registered
@@ -1462,6 +1463,9 @@ export const CALCULATORS: CalculatorDef[] = [
   MCA_HUB,
   FACTORING_HUB,
   LOC_HUB,
+  SELF_EMPLOYMENT_TAX_HUB,
+  MILEAGE_DEDUCTION_HUB,
+  FREELANCE_RATE_HUB,
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(
