@@ -5,6 +5,27 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // Self-employed / 1099 silo (2026-09-05). The three tools are a loop: what you owe, the deduction
+  // that changes what you owe, and the rate that has to cover both.
+  "self-employment-tax": [
+    { href: "/mileage-deduction/", label: "Price your business miles" },
+    { href: "/freelance-rate/", label: "What should you charge?" },
+    { href: "/compare/1099-vs-w2/", label: "1099 vs W-2: which is better?" },
+    { href: "/guides/how-to-budget-with-irregular-income/", label: "Budgeting when income varies" },
+    { href: "/budget/", label: "Build a monthly budget" },
+  ],
+  "mileage-deduction": [
+    { href: "/self-employment-tax/", label: "What you owe after the deduction" },
+    { href: "/self-employment-tax/doordash-taxes/", label: "DoorDash taxes explained" },
+    { href: "/auto-loan/", label: "Financing the car you drive for work" },
+    { href: "/guides/is-driving-around-for-cheaper-gas-worth-it/", label: "Is chasing cheaper gas worth it?" },
+  ],
+  "freelance-rate": [
+    { href: "/self-employment-tax/", label: "Tax on what you charge" },
+    { href: "/compare/1099-vs-w2/", label: "1099 vs W-2 compared" },
+    { href: "/guides/how-to-budget-with-irregular-income/", label: "Budgeting when income varies" },
+    { href: "/retirement/", label: "Retirement without an employer plan" },
+  ],
   "iul-calculator": [
     { href: "/retirement/", label: "Project retirement with a real account" },
     { href: "/investing/", label: "Compare to ordinary investing" },
