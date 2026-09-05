@@ -1,0 +1,177 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Byline from "../../components/Byline.astro";
+import Sources from "../../components/Sources.astro";
+import { SITE, LAST_UPDATED } from "../../data/site";
+import { TEMPLATES } from "../../data/templates";
+import { linkify, plain, paragraphs } from "../../lib/richtext";
+import { personSchema, articleSchema } from "../../lib/jsonld";
+
+export function getStaticPaths() {
+  return TEMPLATES.map((tpl) => ({ params: { slug: tpl.slug }, props: { tpl } }));
+}
+
+const { tpl } = Astro.props;
+const canonicalUrl = new URL(`/templates/${tpl.slug}/`, Astro.site).toString();
+const downloadHref = `/downloads/${tpl.file.filename}`;
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Templates", item: new URL("/templates/", Astro.site).toString() },
+    { "@type": "ListItem", position: 3, name: tpl.h1, item: canonicalUrl },
+  ],
+};
+const jsonLdFaq = tpl.faqs.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: tpl.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: plain(f.answer) },
+      })),
+    }
+  : null;
+// The download itself is the primary entity here, so it gets its own schema alongside the article.
+const jsonLdDownload = {
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  name: tpl.h1,
+  description: tpl.file.contains,
+  url: canonicalUrl,
+  encodingFormat:
+    tpl.file.format === "DOCX"
+      ? "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      : "text/csv",
+  isAccessibleForFree: true,
+  fileFormat: tpl.file.format,
+};
+const jsonLdPerson = personSchema();
+const jsonLdArticle = articleSchema({
+  headline: tpl.h1,
+  description: tpl.metaDescription,
+  url: canonicalUrl,
+  datePublished: tpl.updated ?? LAST_UPDATED,
+  dateModified: tpl.updated ?? LAST_UPDATED,
+  sources: tpl.sources,
+});
+---
+<BaseLayout title={tpl.title} description={tpl.metaDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdDownload)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
+
+  <main class="page">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <a href="/templates/">Templates</a> <span>/</span>
+      <span class="crumb-current">{tpl.h1}</span>
+    </nav>
+
+    <header class="hero">
+      <h1>{tpl.h1}</h1>
+      <Byline updated={tpl.updated} />
+      {paragraphs(tpl.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
+    </header>
+
+    <section class="download">
+      <div class="download-body">
+        <span class="download-label">Free download · {tpl.file.format} · no email required</span>
+        <p class="download-contains">{tpl.file.contains}</p>
+      </div>
+      <a class="download-btn" href={downloadHref} download>
+        Download the {tpl.file.format}
+      </a>
+    </section>
+
+    <section class="section">
+      <h2>What's in the template</h2>
+      <ul class="includes">
+        {tpl.includes.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+
+    {tpl.tools && tpl.tools.length > 0 && (
+      <section class="tools" aria-label="Related calculators">
+        <span class="tools-title">Related calculators</span>
+        <div class="tool-pills">
+          {tpl.tools.map((t) => (
+            <a class="tool-pill" href={t.href}>{t.label}<span class="arrow" aria-hidden="true">→</span></a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {tpl.sections.map((s) => (
+      <section class="section">
+        <h2>{s.heading}</h2>
+        {s.body.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
+      </section>
+    ))}
+
+    <section class="section">
+      <h2>Frequently asked questions</h2>
+      <div class="faqs">
+        {tpl.faqs.map((f) => (
+          <details class="faq">
+            <summary><h3>{f.question}</h3></summary>
+            <p set:html={linkify(f.answer)} />
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <Sources sources={tpl.sources} />
+
+    {tpl.disclaimer && (
+      <aside class="disclaimer">
+        <strong>Not legal advice.</strong> {tpl.disclaimer}
+      </aside>
+    )}
+  </main>
+
+  <style>
+    .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb a:hover { text-decoration: underline; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
+    .lede { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
+    .lede:last-of-type { margin-bottom: 0; }
+    .download { margin: 18px 0 4px; padding: 20px 22px; background: linear-gradient(180deg,#F4FAF8 0%,#FFFFFF 100%); border: 1px solid #D8EEE6; border-radius: 14px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .download-body { flex: 1 1 320px; }
+    .download-label { display: block; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--primary-dark); margin-bottom: 8px; }
+    .download-contains { margin: 0; font-size: 0.95rem; color: #444; line-height: 1.6; }
+    .download-btn { flex: 0 0 auto; display: inline-flex; align-items: center; padding: 13px 22px; border-radius: 999px; background: var(--primary-dark); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.98rem; transition: transform 120ms ease, box-shadow 120ms ease; }
+    .download-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 22px -14px rgba(0,0,0,0.5); }
+    .tools { margin: 6px 0 4px; padding: 18px 20px; background: #F8FBFA; border: 1px solid #E4EFEB; border-radius: 14px; }
+    .tools-title { display: block; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--primary-dark); margin-bottom: 12px; }
+    .tool-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tool-pill { display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 999px; border: 1px solid #D8EEE6; background: #fff; color: var(--primary-dark); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 120ms ease, border-color 120ms ease, transform 120ms ease; }
+    .tool-pill:hover { background: #E4F4EF; border-color: var(--primary); transform: translateY(-1px); }
+    .tool-pill .arrow { transition: transform 150ms ease; }
+    .tool-pill:hover .arrow { transform: translateX(2px); }
+    .section { padding: 26px 0; border-top: 1px solid #EEF2F0; }
+    .section > *:last-child { margin-bottom: 0; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .section p { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; margin: 0 0 18px; }
+    .includes { margin: 0; padding-left: 22px; color: #2c2c2c; font-size: 1.05rem; line-height: 1.8; }
+    .includes li { margin-bottom: 8px; }
+    .faqs { display: flex; flex-direction: column; gap: 8px; }
+    .faq { border: 1px solid #eee; border-radius: 8px; padding: 16px 18px; background: #fff; }
+    .faq summary { cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; font-weight: 600; }
+    .faq[open] summary h3 { color: var(--primary-dark); }
+    .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
+    .disclaimer { margin-top: 28px; padding: 16px 18px; border: 1px solid #F0DEB4; background: #FBF7EC; border-radius: 10px; font-size: 0.93rem; color: #5c5340; line-height: 1.7; }
+    @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .section h2 { font-size: 1.28rem; } .download-btn { width: 100%; justify-content: center; } }
+  </style>
+</BaseLayout>

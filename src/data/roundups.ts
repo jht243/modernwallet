@@ -1,5 +1,6 @@
 import type { FAQ, Source } from "./types";
 import { BUSINESS_ROUNDUPS } from "./roundups-business";
+import { SELF_EMPLOYED_ROUNDUPS } from "./roundups-self-employed";
 
 export interface RoundupOption {
   name: string;
@@ -8212,6 +8213,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   },
 
   ...BUSINESS_ROUNDUPS,
+  ...SELF_EMPLOYED_ROUNDUPS,
 ];
 
 export const ROUNDUP_BY_SLUG = Object.fromEntries(

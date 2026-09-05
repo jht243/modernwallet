@@ -47,9 +47,22 @@ const year = 2026;
         </div>
       </nav>
 
+      <nav class="ftr-links" aria-label="Footer templates">
+        <span class="grp-title">Free Templates</span>
+        <div class="links-grid links-grid--cmp links-grid--single">
+          <a href="/templates/">All templates</a>
+          <a href="/templates/freelance-invoice-template/">Freelance Invoice</a>
+          <a href="/templates/freelance-contract-template/">Freelance Contract</a>
+          <a href="/templates/statement-of-work-template/">Statement of Work</a>
+          <a href="/templates/retainer-agreement-template/">Retainer Agreement</a>
+          <a href="/templates/mileage-log-template/">Mileage Log</a>
+          <a href="/templates/expense-report-template/">Expense Report</a>
+        </div>
+      </nav>
+
       <nav class="ftr-links" aria-label="Footer guides">
         <span class="grp-title">Guides &amp; Best-of</span>
-        <div class="links-grid links-grid--cmp">
+        <div class="links-grid links-grid--cmp links-grid--single">
           <a href="/roundup/">All best-of roundups</a>
           <a href="/guides/first-time-home-buyer-guide/">First-Time Home Buyer</a>
           <a href="/guides/how-to-buy-a-car/">How to Buy a Car</a>
@@ -58,6 +71,9 @@ const year = 2026;
           <a href="/roundup/best-money-market-accounts/">Best Money Market Accounts</a>
           <a href="/roundup/best-net-worth-tracker/">Best Net Worth Trackers</a>
           <a href="/roundup/best-retirement-accounts-for-self-employed/">Best Retirement Accounts</a>
+          <a href="/roundup/best-mileage-tracker-apps/">Best Mileage Tracker Apps</a>
+          <a href="/roundup/best-accounting-software-for-freelancers/">Best Freelance Accounting Software</a>
+          <a href="/roundup/best-invoicing-apps-for-freelancers/">Best Invoicing Apps</a>
         </div>
       </nav>
     </div>
@@ -98,11 +114,18 @@ const year = 2026;
   .ftr-navs { margin-left: auto; display: flex; gap: 36px 48px; flex-wrap: wrap; align-items: flex-start; }
   .ftr-links { }
   .grp-title { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: #5A726A; font-weight: 700; margin-bottom: 10px; }
+  /* `grid-auto-flow: column` with a fixed row count adds a new COLUMN for every extra link, so a
+     4-row grid holding 30 calculator links renders 8 columns wide and pushes the page past the
+     viewport. Ten rows keeps this column to three, which fits 1280px with room to spare. */
   .links-grid {
-    display: grid; grid-auto-flow: column; grid-template-rows: repeat(4, auto);
+    display: grid; grid-auto-flow: column; grid-template-rows: repeat(10, auto);
     gap: 8px 48px;
   }
   .links-grid--cmp { grid-template-rows: repeat(5, auto); gap: 8px 36px; }
+  /* A column whose link count grows must not widen the footer row: `grid-auto-flow: column`
+     with a fixed row count adds columns without bound. These two groups are the ones that
+     grow as the site adds templates and roundups, so they stay a single column. */
+  .links-grid--single { grid-auto-flow: row; grid-template-rows: none; }
   .links-grid a { color: #C2D2CC; text-decoration: none; font-size: 0.88rem; white-space: nowrap; }
   .links-grid a:hover { color: #fff; }
   .ftr-legal {
@@ -115,6 +138,9 @@ const year = 2026;
   .ftr-legal .dot { color: #33433C; }
   .ftr-legal a { color: #7B948C; text-decoration: none; }
   .ftr-legal a:hover { color: #fff; text-decoration: underline; }
+  @media (max-width: 1100px) {
+    .links-grid { grid-auto-flow: row; grid-template-rows: none; }
+  }
   @media (max-width: 560px) {
     .ftr-inner { gap: 24px; }
     .ftr-navs { margin-left: 0; }

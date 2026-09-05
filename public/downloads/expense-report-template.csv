@@ -1,0 +1,8 @@
+# 2026 BUSINESS EXPENSE LOG for Schedule C. One row per expense; keep the receipt.
+# Category should match a Schedule C line so the year-end totals map straight onto the form.
+"# Business use % matters for anything shared with personal use (phone, internet, laptop)."
+# Deductible amount = Amount x Business use %. Delete the sample rows before use.
+
+Date,Vendor,Description,Schedule C category,Amount,Business use %,Deductible amount,Receipt kept?
+2026-02-09,Adobe,Creative Cloud subscription,Office expense,59.99,100,59.99,Yes
+2026-02-28,Mobile carrier,Phone plan,Utilities,85.00,60,51.00,Yes

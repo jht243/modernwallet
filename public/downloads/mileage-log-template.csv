@@ -1,0 +1,8 @@
+"# 2026 MILEAGE LOG - IRS requires a contemporaneous record: date, miles, destination, purpose."
+"# 2026 has TWO business rates: 72.5 cents/mile Jan 1-Jun 30, and 76 cents/mile Jul 1-Dec 31."
+# Enter the date on every row so miles fall in the right rate period. An annual total cannot be split.
+# Commuting from home to a regular workplace is NOT deductible. Delete the sample rows before use.
+
+Date,Start location,Destination,Business purpose,Odometer start,Odometer end,Business miles
+2026-03-14,Home office,"Client site, Austin TX",Client meeting,41230,41258,28
+2026-08-02,Home office,"Supplier, Round Rock TX",Collect materials,44110,44149,39
