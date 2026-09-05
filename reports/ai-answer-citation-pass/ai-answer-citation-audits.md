@@ -18,3 +18,9 @@
 | /compare/custodial-account-vs-savings-account/ | 2026-08-29 | what is a custodial savings account | ABSENT | no | (no cited domains extracted) | none | n/a |
 | /529-savings-calculator/ | 2026-08-29 | 529 investment calculator | none (no AIO) | n/a | n/a | none | n/a |
 | /compare/401k-vs-brokerage-account/ | 2026-08-29 | 401k vs brokerage account calculator | ABSENT | no | reddit.com/americancentury.com/citizensbank.com (+3 more) | none | n/a |
+| / | 2026-09-05 | nerd wallet mortgage calculator | none (no AIO) | n/a | n/a | none | n/a |
+| /529-savings-calculator/ | 2026-09-05 | 529 estimated growth calculator | ABSENT | no | savingforcollege.com/path2college529.com/scholarshare529.com (+6 more) | none | n/a |
+| /business-loan-payoff/ | 2026-09-05 | pay off a business loan | ABSENT | no | (no cited domains extracted) | none | n/a |
+| /compare/401k-vs-brokerage-account/ | 2026-09-05 | 401k vs brokerage account calculator | ABSENT | no | americancentury.com/reddit.com/citizensbank.com (+2 more) | none | n/a |
+| /compare/custodial-account-vs-savings-account/ | 2026-09-05 | what is a custodial savings account | ABSENT | no | fidelity.com/chase.com/pnc.com (+7 more) | none | n/a |
+| /compare/custodial-roth-ira-vs-utma/ | 2026-09-05 | utma to roth ira | ABSENT | no | reddit.com/meetfabric.com/vanguard.com (+2 more) | none | n/a |
