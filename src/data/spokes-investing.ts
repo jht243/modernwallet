@@ -482,7 +482,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       {
         question: "How long will $500,000 last in retirement at 62?",
         answer:
-          "At a 4% initial withdrawal rate, a $500,000 portfolio supports about $20,000 a year, or roughly $1,667 a month, with the same 30-year sustainability the 4% rule targets for any starting balance. Retiring at 62 means planning for a longer stretch than that 30-year design point, since Medicare eligibility doesn't start until 65 and full Social Security retirement age falls later still, so a lower rate around 3 to 3.5%, or a plan to add part-time income in the early years, is worth modeling instead. Enter $500,000 in the calculator above with your own withdrawal amount to see the exact years it lasts at your expected return.",
+          "At a 4% initial withdrawal rate, a $500,000 portfolio supports about $20,000 a year, or roughly $1,667 a month, with the same 30-year sustainability the 4% rule targets for any starting balance. Retiring at 62 means planning for a longer stretch than that 30-year design point. Medicare eligibility doesn't start until 65, and full Social Security retirement age falls later still. A lower rate around 3 to 3.5%, or a plan to add part-time income in the early years, is worth modeling instead. Enter $500,000 in the calculator above with your own withdrawal amount to see the exact years it lasts at your expected return.",
       },
       {
         question: "What is the 7% withdrawal rule?",

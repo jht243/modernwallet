@@ -159,12 +159,12 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
       {
         question: "How much money can a special needs trust hold?",
         answer:
-          "There is no dollar cap on how much a properly drafted special needs trust can hold. That's the key difference from a [ABLE account](/compare/special-needs-trust-vs-able-account/), which caps annual contributions. Under POMS SI 01120.200, an SNT's assets are excluded as a countable SSI and Medicaid resource regardless of size, as long as the trust meets the federal requirements for its type.",
+          "There is no dollar cap on how much a properly drafted special needs trust can hold. That's the key difference from an [ABLE account](/compare/special-needs-trust-vs-able-account/), which caps annual contributions. Under POMS SI 01120.200, an SNT's assets are excluded as a countable SSI and Medicaid resource regardless of size, as long as the trust meets the federal requirements for its type.",
       },
       {
         question: "What is the downside of a special needs trust?",
         answer:
-          "Every distribution has to go through the trustee instead of straight to the beneficiary, because cash paid directly to the beneficiary or shelter costs like rent can reduce SSI. A first-party SNT adds a Medicaid payback obligation at the beneficiary's death, up to the trust balance, which a third-party SNT doesn't carry. Ongoing trustee fees run roughly 1% of assets a year if you use a professional or corporate trustee instead of a family member. See the setup-cost FAQ above for what drafting itself runs.",
+          "The biggest downside is a loss of direct control: every distribution has to go through the trustee instead of straight to the beneficiary, so a spontaneous purchase isn't possible the way it would be with the beneficiary's own money. A first-party SNT adds a further downside a third-party SNT doesn't carry, a Medicaid payback obligation at the beneficiary's death, up to the trust balance.",
       },
       {
         question: "What can a special needs trust pay for?",
