@@ -1,0 +1,24 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-05",
+  "window_start": "2026-09-05",
+  "window_end": "2026-09-05",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 0,
+  "top10_pages_total_clicks": 0,
+  "channel_split": {
+    "/": {
+      "Unassigned": 1
+    }
+  }
+}
