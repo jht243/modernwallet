@@ -133,6 +133,8 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       { question: "Does opening a high-yield savings account affect my credit score?", answer: "No, in almost all cases. Opening a savings account, including a HYSA, typically triggers only a soft inquiry or a routine identity-verification check, not a hard credit pull, so it doesn't lower your credit score. A hard inquiry usually applies to credit products, like a loan or credit card, not a deposit account." },
       { question: "How long does a transfer into or out of a high-yield savings account actually take?", answer: "A standard ACH transfer between your HYSA and an external bank account typically takes 1 to 3 business days in either direction. Some banks offer instant or same-day transfers when both accounts are held at that same bank, so moving money between two accounts at the same institution is often faster than an external ACH transfer." },
       { question: "How much money do I need to make $1,000 a month in interest?", answer: "At this page's example APY of 4.5%, you'd need about $266,667 sitting in the account to generate roughly $12,000 a year, or about $1,000 a month, in interest. That figure moves with the rate: a higher APY needs less principal to hit the same $1,000 a month, and a lower APY needs more, so treat $266,667 as illustrative for this page's example rate rather than a fixed target, since real HYSA rates change over time. Plug your own APY into the calculator above to find the exact balance $1,000 a month in interest would take at your bank's current rate." },
+      { question: "How much will $10,000, $20,000, or $100,000 make in a high-yield savings account?", answer: "At this page's example 4.5% APY with no further deposits, $10,000 earns about $450 in the first year, $20,000 earns about $900, and $100,000 earns about $4,500, compounding monthly means the exact figure runs slightly above those simple estimates. These are lump-sum numbers with nothing added afterward, unlike the calculator's own worked example, which mixes a $10,000 start with a $300 monthly deposit. Enter your own balance above with the monthly deposit set to zero to see the precise lump-sum figure at your bank's current APY." },
+      { question: "Should I put money in a high-yield savings account or pay off debt first?", answer: "Compare the two rates before choosing: a HYSA earning 4.5% loses to paying down any debt charging a higher rate, like most credit cards, but loses more clearly the higher that debt's rate runs. Money you might need soon still belongs in a HYSA for safety and access, even while you're also paying down debt. Our [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide walks through the rate comparison for other debt types in more detail." },
     ],
     sources: [
       { label: "FDIC — National Rates and Rate Caps", url: "https://www.fdic.gov/national-rates-and-rate-caps" },
@@ -478,6 +480,21 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
           "At a 4% initial withdrawal rate, a $3 million portfolio supports about $120,000 a year (roughly $10,000 a month) with the same 30-year sustainability the 4% rule describes for any balance, since the rule is a percentage of the starting portfolio rather than a fixed dollar figure. The same math scales down to about $80,000 a year (roughly $6,667 a month) on a $2 million portfolio, or $60,000 a year (about $5,000 a month) on $1.5 million. Enter your own balance in the calculator above to see the exact number of years your portfolio is projected to last at your expected return.",
       },
       {
+        question: "How long will $500,000 last in retirement at 62?",
+        answer:
+          "At a 4% initial withdrawal rate, a $500,000 portfolio supports about $20,000 a year (roughly $1,667 a month) with the same 30-year sustainability the 4% rule targets, the same percentage-of-starting-balance math used above for larger portfolios. Retiring at 62 stretches the horizon closer to 35 years once Social Security and Medicare eligibility timing are factored in, which is longer than the 4% rule's 30-year design point, so a lower rate (3–3.5%) or a plan to add part-time or Social Security income sooner is worth modeling. Enter $500,000 in the calculator above with your own withdrawal amount to see the exact years it lasts at your expected return.",
+      },
+      {
+        question: "What is the 7% withdrawal rule?",
+        answer:
+          "A 7% withdrawal rule isn't a recognized retirement-planning standard the way the 4% rule is; it describes withdrawing 7% of a portfolio's starting value each year, well above what most research supports as sustainable over a 30-year retirement. This calculator's own worked example shows a 6% withdrawal rate on $1,000,000 depleting the portfolio in roughly 24 years, so a 7% rate would draw down faster than that, not slower. Enter your own balance and a 7%-equivalent monthly withdrawal in the calculator above to see how many years it actually lasts at your expected return, rather than assuming the rate is safe.",
+      },
+      {
+        question: "How much do I need in a 401(k) to get $3,000 a month in retirement?",
+        answer:
+          "Using the 4% rule's math, $3,000 a month is $36,000 a year, which a 4% withdrawal rate supports on a $900,000 balance ($36,000 ÷ 0.04). A more conservative 3.5% rate, appropriate for a longer retirement horizon, would need closer to $1,029,000 to produce the same $3,000 a month. Enter $900,000 (or your own target balance) in the calculator above to confirm how long it lasts at your expected return, and factor in Social Security or other income, which lowers how much your 401(k) alone needs to cover.",
+      },
+      {
         question: "Is the 4% rule still valid?",
         answer:
           "It remains a useful starting point, but many researchers suggest adjusting it based on your circumstances. For a 30-year retirement with a balanced portfolio, 4% has held up historically. For a 40-year retirement or a period of low expected returns, 3–3.5% is more conservative. Flexible spending — reducing withdrawals in bad market years — can make a higher rate viable.",
@@ -536,6 +553,11 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
         question: "Should I subtract investment fees (expense ratios, advisor fees) from my expected return before entering it in the calculator?",
         answer:
           "Yes, enter your net expected return after subtracting fund expense ratios and any advisor fees, since the calculator has no separate field for costs. A 1% annual fee compounds meaningfully over a multi-decade retirement, quietly shrinking your ending balance and how long the money lasts even though it never appears as its own line in the projection.",
+      },
+      {
+        question: "Should I pay off my mortgage before I retire?",
+        answer:
+          "It depends on your mortgage rate versus your expected investment return, not a universal rule. A low fixed mortgage rate from prior years often loses to staying invested at this calculator's assumed return, while a higher-rate mortgage paid off before retirement lowers your monthly expenses and therefore how much you need to withdraw here each month. Our [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide walks through the rate comparison in detail before you decide.",
       },
     ],
     sources: [

@@ -157,6 +157,16 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
           "No, if properly drafted. Assets in an SNT are not countable resources under POMS SI 01120.200 for SSI or under equivalent state Medicaid rules. Distributions are treated per SSI ISM (in-kind support and maintenance) rules: food distributions no longer count (89 FR 21199, effective 9/30/2024); shelter distributions trigger PMV reduction of up to one-third SSI FBR ($331 in 2026) plus $20 general income exclusion; cash to the beneficiary is unearned income and reduces SSI dollar-for-dollar. Third-party payments for medical care, therapy, transportation, education, vacations, and non-shelter expenses are safe.",
       },
       {
+        question: "How much money can a special needs trust hold?",
+        answer:
+          "There is no dollar cap on how much a properly drafted special needs trust can hold, unlike an ABLE account's separate annual contribution limit. Under POMS SI 01120.200, the trust's assets are simply excluded as a countable resource for SSI and Medicaid regardless of size, as long as the trust meets the federal requirements for its type. Size does affect which structure makes sense: modest funding under about $100,000 usually fits a lower-cost pooled SNT, while larger amounts more often justify a standalone first-party or third-party trust.",
+      },
+      {
+        question: "What is the downside of a special needs trust?",
+        answer:
+          "The main downsides are cost and restriction, not risk to benefits. Setup runs $500 to $5,000 depending on the trust type, plus ongoing trustee fees of roughly 1% of assets a year if you use a professional or corporate trustee. A first-party SNT adds a Medicaid payback obligation at the beneficiary's death, up to the trust balance, and cash paid directly to the beneficiary or shelter costs like rent can reduce SSI, so every distribution has to go through the trustee rather than straight to the beneficiary. Self-drafting is not a safe way around these costs, since Medicaid and SSA routinely reject self-drafted SNTs.",
+      },
+      {
         question: "What can a special needs trust pay for?",
         answer:
           "SNTs can pay third parties directly for: medical care not covered by Medicaid, therapy (physical, occupational, speech), transportation and adaptive vehicles, education and tutoring, vacations and entertainment, personal care attendants beyond what Medicaid covers, electronics and internet, pets and hobbies, and (as of 9/30/2024) food. SNTs cannot: give cash to the beneficiary (reduces SSI dollar-for-dollar); pay rent, mortgage, utilities, or property taxes without triggering PMV (up to ~$311/mo SSI reduction). Structure distributions through third-party payment, never through the beneficiary.",

@@ -180,6 +180,16 @@ export const TAX_RESOLUTION_SPOKES: SpokeEntry[] = [
         answer:
           "An IRS installment agreement itself does not directly lower your credit score. Tax liens have been excluded from consumer credit reports since 2018, but back taxes can still affect a mortgage application, a passport renewal, or a background check depending on your balance and lien status. The [back taxes impact calculator](/tax-resolution/back-taxes-impact-calculator/) walks through the credit, mortgage, and passport impact for your specific numbers.",
       },
+      {
+        question: "Is it a good idea to do a payment plan with the IRS?",
+        answer:
+          "Yes, if you can't pay in full now, a payment plan is usually a good idea because it stops active collection and cuts the failure-to-pay penalty in half the day it's approved, from 0.5% to 0.25% per month. It isn't free: interest keeps accruing at the current 7% annual rate for the life of the plan, which is why the calculator's own $32,000 example totals about $41,622 repaid over 72 months, roughly 30% more than the original balance. If you can afford a shorter term than the calculator's default, choosing it cuts that total cost, since less interest and penalty accrue along the way.",
+      },
+      {
+        question: "What if I can't afford any IRS payment plan, even the smallest one?",
+        answer:
+          "If your allowable living expenses meet or exceed your income under the IRS Collection Financial Standards, ask the IRS to place your account in Currently Not Collectible status instead of forcing a payment plan you can't sustain. Active collection pauses while you're in that status, and the 10-year Collection Statute Expiration Date keeps running, so the debt can expire before your finances improve. The [tax resolution hub](/tax-resolution/) covers how Currently Not Collectible status compares with an Offer in Compromise and the other relief paths.",
+      },
     ],
     sources: [
       { label: "IRS — Payment plans (installment agreements)", url: "https://www.irs.gov/payments/payment-plans-installment-agreements" },

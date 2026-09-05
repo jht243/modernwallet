@@ -745,7 +745,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "What happens to my IRA if the brokerage closes?",
         answer:
-          "IRA assets are protected by Securities Investor Protection Corporation (SIPC) insurance up to $500,000 in securities (including $250,000 in cash) if a brokerage fails. Critically, SIPC covers only brokerage failure — not investment losses from market declines. The underlying investments in your IRA (stocks, ETFs, mutual funds) are held in your name, not the brokerage's name, so they are not part of the brokerage's balance sheet if it becomes insolvent. If you're planning for who inherits the account instead, see [401(k) vs. IRA beneficiary rules](/compare/401k-vs-ira-beneficiary-rules/) for how IRA beneficiary designations work.",
+          "IRA assets are protected by Securities Investor Protection Corporation (SIPC) insurance up to $500,000 in securities (including $250,000 in cash) if a brokerage fails. Critically, SIPC covers only brokerage failure — not investment losses from market declines. The underlying investments in your IRA (stocks, ETFs, mutual funds) are held in your name, not the brokerage's name, so they are not part of the brokerage's balance sheet if it becomes insolvent. That's a different protection from a lawsuit or bankruptcy shielding your IRA from creditors; our [rollover IRA vs traditional IRA](/compare/rollover-ira-vs-traditional-ira/) comparison covers how bankruptcy protection differs between the two. If you're planning for who inherits the account instead, see [401(k) vs. IRA beneficiary rules](/compare/401k-vs-ira-beneficiary-rules/) for how IRA beneficiary designations work.",
       },
       {
         question: "Is my IRA FDIC insured?",
@@ -781,6 +781,21 @@ export const ROUNDUPS: RoundupEntry[] = [
         question: "What bank has the best IRA rates?",
         answer:
           "An IRA is a tax wrapper that holds whatever investments you choose, so its \"rate\" depends on what's inside it rather than on which bank or brokerage offers the account itself. Most of the providers on this page, including Fidelity, Charles Schwab, and Vanguard, are brokerages rather than banks, and inside an IRA at any of them you can hold stocks, ETFs, or index funds instead of a fixed rate. If you want a guaranteed rate inside an IRA the way a bank account pays one, the product to look for is an IRA CD or an IRA money market account, which several banks and credit unions offer directly.",
+      },
+      {
+        question: "Is it better to put money in a CD or an IRA?",
+        answer:
+          "A CD and an IRA answer different questions, so the comparison isn't really either-or: a CD is an investment that pays a fixed rate for a set term, while an IRA is a tax wrapper that can hold a CD, stocks, ETFs, or index funds inside it. You can open what's called an IRA CD, which puts a CD's fixed rate inside an IRA's tax-deferred or tax-free treatment, combining both. The real decision is whether you want your retirement money in a fixed-rate product like a CD or in the market, not whether to choose a CD instead of an IRA.",
+      },
+      {
+        question: "Where can I get 7% interest on my money?",
+        answer:
+          "No FDIC-insured bank account or CD guarantees 7% interest; that figure on this page refers to a long-run average stock-market return assumption used for retirement projections, not a rate any bank or credit union currently offers on a deposit. A 7%-or-higher average is realistic only for money invested in the market over a long horizon inside an account like the IRAs on this page, and it comes with normal market risk rather than the guarantee a CD or savings account carries. Run your own numbers with the [Roth IRA calculator](/investing/roth-ira-calculator/) to see what that assumption means for your own contributions.",
+      },
+      {
+        question: "Where can I put $10,000 to make the most money?",
+        answer:
+          "Where $10,000 makes the most money depends on your time horizon and whether you can leave it invested, not on a single best account for everyone. The 2026 IRA contribution limit is $7,000 ($8,000 if you're 50 or older), so a $10,000 lump sum exceeds what you can put into an IRA in a single year; the excess either waits for next year's contribution or goes into a taxable brokerage account in the meantime. For money you can leave invested for retirement, maxing this year's and next year's IRA contribution captures the tax advantage fastest; for money you might need sooner, a high-yield savings account keeps it liquid while still earning a rate. Run the numbers for either path with our [investment calculator](/investing/).",
       },
     ],
     sources: [
@@ -2911,6 +2926,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         question: "What are five assets that should never be included in a living trust?",
         answer:
           "Five kinds of assets generally stay out of a revocable living trust: retirement accounts like a 401(k) or IRA, health savings accounts, life insurance policies with a named beneficiary, accounts already held jointly with rights of survivorship, and, in some states, vehicles. Each of these already has its own beneficiary or survivorship mechanism that passes it directly to the named person outside of probate. Retitling one into the trust adds paperwork without adding a benefit, and moving a retirement account or HSA into a trust can trigger an unintended taxable distribution. A living trust is still the right tool for real estate, taxable brokerage accounts, and business interests, since none of those has a built-in beneficiary designation of its own.",
+      },
+      {
+        question: "Which child should I name as executor?",
+        answer:
+          "Name the child who is organized, willing to serve, and lives close enough to handle court filings and property tasks in person, not automatically the oldest or the one who asks first. When two or more children are equally capable and you're worried about hurt feelings, most of this page's software lets you name co-executors or a corporate/professional executor instead, which sidesteps the tie-breaking problem entirely. Confirm your choice is actually willing before you sign; a named executor can decline to serve, which forces the court to appoint someone else.",
       },
     ],
     sources: [

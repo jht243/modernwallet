@@ -156,7 +156,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       {
         question: "How much does it cost to fund a living trust?",
         answer:
-          "Trust funding — retitling deeds and accounts into the trust — costs $500 to $2,000 additional on top of drafting. Each real-estate deed runs $200 to $500 attorney-recorded (or $50 to $150 DIY), and retitling brokerage/bank accounts runs $300 to $1,500 depending on how many institutions are involved. Trust funding is where most DIY living trusts fail — an unfunded trust provides zero probate protection because the assets are still in your name at death.",
+          "Trust funding — retitling deeds and accounts into the trust — costs $500 to $2,000 additional on top of drafting. Each real-estate deed runs $200 to $500 attorney-recorded (or $50 to $150 DIY), and retitling brokerage/bank accounts runs $300 to $1,500 depending on how many institutions are involved. Trust funding is where most DIY living trusts fail — an unfunded trust provides zero probate protection because the assets are still in your name at death. Not every asset belongs in the trust either; our [best estate planning software](/roundup/best-estate-planning-software/) roundup lists the specific assets that should stay out.",
       },
       {
         question: "Does a living trust protect assets from Medicaid?",
@@ -182,6 +182,16 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         question: "Is a living trust worth the cost?",
         answer:
           "It depends on what probate would otherwise cost your estate. In California, a $750,000 estate faces roughly $36,000 in combined attorney and executor probate fees under Cal. Prob. Code §10810/§10800 — a $1,500–$5,000 trust (or $599 online) pays for itself many times over. For a smaller estate that would qualify for a state's simplified small-estate probate procedure, the trust's main benefit disappears and a will is the better spend. See [is a living trust worth it](/guides/is-a-living-trust-worth-it/) for the full break-even math by state.",
+      },
+      {
+        question: "What is the downside of having a living trust?",
+        answer:
+          "The main downside is that a revocable living trust does nothing for estate tax or creditor protection, since the assets stay legally yours and remain in your taxable estate while you're alive. The second downside is the funding burden: the trust provides zero probate benefit until you actually retitle deeds and financial accounts into it, a $500–$2,000 step people routinely skip after paying for the document itself. It also adds an upfront cost, $1,500–$10,000+ depending on complexity and state, that a will-only plan doesn't carry. None of these apply to an irrevocable trust, which trades your control for the tax or asset-protection benefit a revocable trust can't provide.",
+      },
+      {
+        question: "What is the \"7-year rule\" for trusts?",
+        answer:
+          "There is no U.S. federal or state \"7-year rule\" that applies to a revocable or irrevocable living trust the way this question sometimes assumes. The phrase comes from UK inheritance-tax law, where a gift outside a trust generally falls out of the estate after 7 years, and it doesn't carry over to U.S. trust or estate-tax rules. The lookback period that does apply here is Medicaid's 5-year lookback on transfers into a Medicaid Asset Protection Trust, covered above, which is a different rule for a different purpose.",
       },
     ],
     sources: [
