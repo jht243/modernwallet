@@ -1,0 +1,716 @@
+{
+ "rows": [
+  {
+   "keyword": "llc vs s corp",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.uschamber.com",
+    "www.wolterskluwer.com",
+    "stripe.com",
+    "www.legalshield.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.uschamber.com",
+    "www.wolterskluwer.com",
+    "www.reddit.com",
+    "www.legalshield.com",
+    "www.youtube.com",
+    "www.barrettlaw.com",
+    "stripe.com",
+    "tax.thomsonreuters.com",
+    "www.districtlegalgroup.com",
+    "www.woodslaw.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the biggest disadvantage of an LLC?",
+    "What are the pros and cons of S corp?",
+    "Should my startup be an LLC or S corp?",
+    "Why would you go from LLC to S corp?",
+    "What is the 5 year rule for S-Corp?",
+    "Who pays more taxes, LLC or S-Corp?"
+   ],
+   "related_searches": [
+    "Llc vs s corp reddit",
+    "Llc vs s corp taxes",
+    "LLC vs S corp vs C corp",
+    "LLC vs S Corp for dummies",
+    "LLC vs Corp",
+    "Llc vs s corp which is better",
+    "LLC vs S corp tax benefits",
+    "Llc vs s corp tax return"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.uschamber.com, www.wolterskluwer.com, stripe.com, www.legalshield.com",
+   "se_results_count": 133
+  },
+  {
+   "keyword": "sole proprietorship vs llc",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.uschamber.com",
+    "www.irs.gov",
+    "www.wolterskluwer.com",
+    "www.legalshield.com",
+    "www.reddit.com",
+    "www.adp.com",
+    "www.citizensbank.com",
+    "www.youtube.com",
+    "www.insureon.com",
+    "www.incorp.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to be an LLC or sole proprietor?",
+    "What are the disadvantages of a sole proprietorship?",
+    "Do you pay more taxes as a sole proprietor?",
+    "What is the biggest disadvantage of an LLC?",
+    "At what income is an LLC worth it?",
+    "What names to avoid for LLC?"
+   ],
+   "related_searches": [
+    "Sole proprietorship vs llc taxes",
+    "Sole proprietorship vs LLC vs S corp",
+    "Sole proprietorship vs LLC reddit",
+    "Sole proprietorship vs LLC tax benefits",
+    "Is an LLC a sole proprietorship or corporation",
+    "Sole proprietorship vs LLC PayPal",
+    "Sole proprietorship vs LLC insurance",
+    "Sole proprietorship vs llc for small business"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 129
+  },
+  {
+   "keyword": "self employment tax calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.jacksonhewitt.com",
+    "www.hrblock.com",
+    "pilot.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.taxact.com",
+    "www.irs.gov",
+    "www.jacksonhewitt.com",
+    "www.securityplusfcu.org",
+    "www.umb.com",
+    "www.calcxml.com",
+    "www.nationwide.com",
+    "www.midflorida.com",
+    "turbotax.intuit.com",
+    "www.thehartford.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate my self-employed taxes?",
+    "How much tax will I pay on self-employed?",
+    "What percentage of tax should I pay for self-employment?",
+    "How much should I set aside for taxes if I'm self-employed?",
+    "How to avoid self-employment tax?",
+    "Who gets the new $6000 tax break?"
+   ],
+   "related_searches": [
+    "Self-employment tax calculator free",
+    "1099 self-employment tax calculator",
+    "Self-employment tax calculator with deductions",
+    "Self-employment tax calculator 2026",
+    "Self employment tax calculator 2022",
+    "Self employment tax calculator california",
+    "Self employment tax calculator texas",
+    "IRS self-employment tax calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.irs.gov, www.jacksonhewitt.com, www.hrblock.com, pilot.com",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "1099 tax calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.keepertax.com",
+    "www.everlance.com",
+    "indeedflex.com",
+    "www.libertytax.com",
+    "pilot.com",
+    "www.usetabby.com",
+    "www.nationwide.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apps.irs.gov",
+    "www.keepertax.com",
+    "www.everlance.com",
+    "mytax.adp.com",
+    "www.jacksonhewitt.com",
+    "www.nationwide.com",
+    "www.libertytax.com",
+    "pilot.com",
+    "mileiq.com",
+    "turbotax.intuit.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much tax will I pay on a 1099?",
+    "How much should I put aside for taxes 1099?",
+    "How do I avoid owing taxes on my 1099?",
+    "Do you have to file a 1099 if you made less than $20,000?",
+    "How much can I earn on 1099 without paying taxes?",
+    "How much federal tax should I pay on $22,000?"
+   ],
+   "related_searches": [
+    "1099 tax calculator with deductions",
+    "1099 tax calculator 2026",
+    "1099 tax calculator california",
+    "IRS 1099 tax calculator",
+    "1099 tax calculator federal and state",
+    "1099 tax calculator 2025",
+    "1099 tax calculator with dependents",
+    "H&R Block 1099 tax calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.keepertax.com, www.everlance.com, indeedflex.com, www.libertytax.com",
+   "se_results_count": 80
+  },
+  {
+   "keyword": "qbi deduction",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "tax.thomsonreuters.com",
+    "www.nerdwallet.com",
+    "www.thrivent.com",
+    "slpwealth.com",
+    "www.sdocpa.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "tax.thomsonreuters.com",
+    "www.thrivent.com",
+    "actecfoundation.org",
+    "www.reddit.com",
+    "ambrook.com",
+    "slpwealth.com",
+    "www.becker.com",
+    "ramp.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "product_considerations": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who is not eligible for QBI deduction?",
+    "How do I calculate the QBI deduction?",
+    "How do I know if I qualify for QBI deduction?",
+    "How do I maximize my QBI deduction?",
+    "What is the 20% Qualified business income deduction (QBI) and who qualifies for it?",
+    "Does QBI reduce gross income?"
+   ],
+   "related_searches": [
+    "QBI deduction calculator",
+    "QBI deduction phase out",
+    "What business does not qualify for QBI deduction",
+    "QBI deduction phase out 2026",
+    "QBI deduction example",
+    "Who is eligible for QBI deduction",
+    "QBI deduction Form",
+    "TurboTax QBI deduction"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.irs.gov, turbotax.intuit.com, tax.thomsonreuters.com, www.nerdwallet.com",
+   "se_results_count": 126
+  },
+  {
+   "keyword": "home office deduction",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "turbotax.intuit.com",
+    "www.uschamber.com",
+    "www.jacksonhewitt.com",
+    "fmtrust.bank",
+    "www.criadv.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "www.reddit.com",
+    "www.irs.gov",
+    "www.hrblock.com",
+    "www.uschamber.com",
+    "fmtrust.bank",
+    "www.nerdwallet.com",
+    "www.sdocpa.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it worth taking a home office deduction?",
+    "Can you get a tax deduction for a home office?",
+    "How does the new $6000 tax deduction work?",
+    "How much can I claim on my taxes for a home office?",
+    "What are the IRS requirements for a home office?",
+    "What are common home office deduction mistakes?"
+   ],
+   "related_searches": [
+    "Home office deduction IRS",
+    "Home office deduction Form",
+    "Home office deduction calculator",
+    "Home office deduction simplified method",
+    "Home office deduction reddit",
+    "Home office deduction requirements",
+    "Home office deduction 2026",
+    "IRS home office deduction Worksheet PDF"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.nerdwallet.com, turbotax.intuit.com, www.uschamber.com, www.jacksonhewitt.com",
+   "se_results_count": 133
+  },
+  {
+   "keyword": "how to pay yourself llc",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.axosbank.com",
+    "www.youtube.com",
+    "www.legalshield.com",
+    "www.wolterskluwer.com",
+    "gusto.com",
+    "www.patriotsoftware.com",
+    "www.surepayroll.com",
+    "www.joinhomebase.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "www.reddit.com",
+    "www.axosbank.com",
+    "www.wolterskluwer.com",
+    "www.legalshield.com",
+    "www.hiscox.com",
+    "www.joinhomebase.com",
+    "www.paychex.com",
+    "www.northwestregisteredagent.com",
+    "lifelonglawyers.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Is it better to pay yourself through an LLC?",
+    "How much can I pay myself through my LLC?",
+    "Can I take cash out of my business account to pay myself?",
+    "What is it called when I pay myself from my LLC?",
+    "How do you legally pay yourself from your LLC?",
+    "What happens if my LLC makes no money?"
+   ],
+   "related_searches": [
+    "How to pay yourself llc reddit",
+    "How to pay yourself single member llc",
+    "How much should I pay myself from my LLC",
+    "How to pay yourself llc for taxes",
+    "How much should I pay myself calculator",
+    "How to pay yourself from an LLC partnership",
+    "Can you pay yourself a W2 with an LLC",
+    "How to pay myself from my LLC QuickBooks"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.axosbank.com, www.youtube.com, www.legalshield.com, www.wolterskluwer.com",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "solo 401k vs sep ira",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.employeefiduciary.com",
+    "www.investopedia.com",
+    "institutional.fidelity.com",
+    "humaninterest.com",
+    "www.thrivent.com",
+    "www.innovativecpagroup.com",
+    "fraimcpa.com",
+    "www.youtube.com",
+    "insights.larsongross.com",
+    "www.mysolo401k.net"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.employeefiduciary.com",
+    "institutional.fidelity.com",
+    "insights.larsongross.com",
+    "www.thrivent.com",
+    "www.forusall.com",
+    "www.youtube.com",
+    "www.whitecoatinvestor.com",
+    "humaninterest.com",
+    "www.sofi.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the downside of a Solo 401k?",
+    "Can I have both a SEP IRA and Solo 401k?",
+    "How many Americans have $1,000,000 in their 401k?",
+    "What is the downside of SEP IRA?",
+    "What is better, a SEP IRA or a 401k?",
+    "What is the 3 of 5 year rule for SEP IRAs?"
+   ],
+   "related_searches": [
+    "Solo 401k vs sep ira reddit",
+    "Solo 401k vs sep ira pros and cons",
+    "Solo 401k vs SEP IRA contribution limits",
+    "Solo 401k vs sep ira fidelity",
+    "Solo 401k vs SEP IRA for S Corp",
+    "Solo 401k vs sep ira taxes",
+    "Solo 401k contribution limits",
+    "SEP IRA vs 401k for small business"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.employeefiduciary.com, www.investopedia.com, institutional.fidelity.com, humaninterest.com",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "s corp reasonable salary calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "slpwealth.com",
+    "evergreensmallbusiness.com",
+    "www.madsencpa.com",
+    "support.gusto.com",
+    "thewashingtonco.com",
+    "embedded.gusto.com",
+    "taxstra.com",
+    "www.blockadvisors.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "slpwealth.com",
+    "www.sdocpa.com",
+    "thewashingtonco.com",
+    "support.gusto.com",
+    "www.reddit.com",
+    "evergreensmallbusiness.com",
+    "taxstra.com",
+    "www.youtube.com",
+    "www.madsencpa.com",
+    "www.blockadvisors.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How to calculate reasonable salary for S-Corp?",
+    "What is the 60/40 rule for S corporations?",
+    "How does IRS determine reasonable compensation for S-Corp?",
+    "What is the 2% rule for S-Corp?",
+    "What is the 5 year rule for S corp?",
+    "What are common S corp mistakes to avoid?"
+   ],
+   "related_searches": [
+    "s corp reasonable salary calculator near california",
+    "s corp reasonable salary calculator near texas",
+    "S Corp reasonable salary percentage",
+    "S Corp reasonable salary physician",
+    "S Corp salary 60/40 rule",
+    "S Corp salary 60/40 rule calculator",
+    "Gusto reasonable salary calculator",
+    "S corp reasonable salary calculator california"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites slpwealth.com, evergreensmallbusiness.com, www.madsencpa.com, support.gusto.com",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "quarterly estimated tax calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apps.irs.gov",
+    "www.taxoutreach.org",
+    "www.keepertax.com",
+    "www.irs.gov",
+    "mytax.adp.com",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "www.bench.co",
+    "www.schwabmoneywise.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate my quarterly estimated taxes?",
+    "How to calculate estimated quarterly tax payments for 2026?",
+    "Is it better to pay estimated taxes quarterly or yearly?",
+    "How much money should I set aside for quarterly taxes?",
+    "How do you avoid the 22% tax bracket?",
+    "Is it mandatory to pay estimated quarterly taxes?"
+   ],
+   "related_searches": [
+    "Estimated quarterly tax calculator 2026",
+    "Self-employed quarterly tax calculator",
+    "Quarterly estimated tax calculator california",
+    "Pay estimated taxes online",
+    "IRS estimated tax payment",
+    "1099 quarterly estimated tax calculator",
+    "Estimated quarterly taxes",
+    "Estimated tax payments"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 112
+  },
+  {
+   "keyword": "big beautiful bill tax deductions",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.hrblock.com",
+    "www.fidelity.com",
+    "turbotax.intuit.com",
+    "www.mcafeetaft.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "www.hrblock.com",
+    "www.fidelity.com",
+    "www.calt.iastate.edu",
+    "www.americanprogress.org",
+    "taxfoundation.org",
+    "turbotax.intuit.com",
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "webster.house.gov"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com",
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Does the Big Beautiful bill reduce my taxes?",
+    "How does the new $6000 tax deduction work?",
+    "What is the most overlooked tax break?",
+    "What deductions will we get in the new tax regime?",
+    "What are the new deductions for income tax?",
+    "What deductions are allowed under the new tax regime for income year 2026-27?"
+   ],
+   "related_searches": [
+    "Big beautiful bill tax deductions calculator",
+    "Big beautiful bill increase taxes on low income",
+    "Big Beautiful Bill taxes explained",
+    "Big Beautiful Bill tax cuts for middle-class",
+    "Big beautiful bill tax deductions california",
+    "When does Big Beautiful Bill tax Cuts go into effect",
+    "Big Beautiful Bill tax brackets",
+    "SALT deduction Big Beautiful bill"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (turbotax.intuit.com, turbotax.intuit.com); AI Overview present, cites www.irs.gov, www.hrblock.com, www.fidelity.com, turbotax.intuit.com",
+   "se_results_count": 134
+  },
+  {
+   "keyword": "self employed tax deductions list",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "turbotax.intuit.com",
+    "gusto.com",
+    "www.irs.gov",
+    "www.experian.com",
+    "quickbooks.intuit.com",
+    "www.firstcitizens.com",
+    "www.surepayroll.com",
+    "www.heytaxman.com",
+    "www.bench.co",
+    "www.thepaystubs.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "turbotax.intuit.com",
+    "www.irs.gov",
+    "www.sdocpa.com",
+    "gusto.com",
+    "www.lendio.com",
+    "www.insureon.com",
+    "www.irs.gov",
+    "www.blockadvisors.com",
+    "www.firstcitizens.com",
+    "www.heytaxman.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the 10 most overlooked tax deductions?",
+    "What expenses can self-employed deduct?",
+    "Who qualifies for the extra $6000 standard deduction?",
+    "What deduction can I claim without receipts?",
+    "What personal expenses can I write off?",
+    "What is the $1000 instant tax deduction?"
+   ],
+   "related_searches": [
+    "Self-employed tax deductions worksheet PDF",
+    "1099 tax deductions list",
+    "Small business tax deductions checklist",
+    "1099 tax deductions list 2025",
+    "1099 tax deductions list 2026",
+    "Tax deductions list for individuals",
+    "Small business tax deductions checklist PDF",
+    "Business tax deductions list"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites turbotax.intuit.com, gusto.com, www.irs.gov, www.experian.com",
+   "se_results_count": 134
+  }
+ ],
+ "cost": "DataForSEO: 12 calls, $0.04980 of $2.00 budget"
+}
