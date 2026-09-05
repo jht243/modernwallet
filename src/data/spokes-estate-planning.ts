@@ -186,12 +186,12 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
       {
         question: "What is the downside of having a living trust?",
         answer:
-          "The main downside is that a revocable living trust does nothing for estate tax or creditor protection, since the assets stay legally yours and remain in your taxable estate while you're alive. The second downside is the funding burden: the trust provides zero probate benefit until you actually retitle deeds and financial accounts into it, a $500–$2,000 step people routinely skip after paying for the document itself. It also adds an upfront cost, $1,500–$10,000+ depending on complexity and state, that a will-only plan doesn't carry. None of these apply to an irrevocable trust, which trades your control for the tax or asset-protection benefit a revocable trust can't provide.",
+          "The main downside is that a revocable living trust does nothing for estate tax or creditor protection, since the assets stay legally yours and remain in your taxable estate while you're alive. The second downside is the funding burden: the trust provides zero probate benefit until you actually retitle deeds and financial accounts into it, a $500 to $2,000 step people routinely skip after paying for the document itself. It also adds an upfront cost, $1,500 to $10,000 or more depending on complexity and state, that a [will-only plan](/compare/living-trust-vs-will/) doesn't carry. None of these apply to an irrevocable trust, which trades your control for the tax or asset-protection benefit a revocable trust can't provide.",
       },
       {
         question: "What is the \"7-year rule\" for trusts?",
         answer:
-          "There is no U.S. federal or state \"7-year rule\" that applies to a revocable or irrevocable living trust the way this question sometimes assumes. The phrase comes from UK inheritance-tax law, where a gift outside a trust generally falls out of the estate after 7 years, and it doesn't carry over to U.S. trust or estate-tax rules. The lookback period that does apply here is Medicaid's 5-year lookback on transfers into a Medicaid Asset Protection Trust, covered above, which is a different rule for a different purpose.",
+          "There is no U.S. federal or state \"7-year rule\" that applies to a revocable or irrevocable living trust. The phrase comes from UK inheritance-tax law, where a gift outside a trust generally falls out of the estate after 7 years, and it doesn't carry over to U.S. trust or estate-tax rules. The lookback period that does apply to a U.S. trust is Medicaid's 5-year lookback on transfers into a Medicaid Asset Protection Trust, a different rule for a different purpose.",
       },
     ],
     sources: [

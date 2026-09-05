@@ -159,12 +159,12 @@ export const ELDER_CARE_SPOKES: SpokeEntry[] = [
       {
         question: "How much money can a special needs trust hold?",
         answer:
-          "There is no dollar cap on how much a properly drafted special needs trust can hold, unlike an ABLE account's separate annual contribution limit. Under POMS SI 01120.200, the trust's assets are simply excluded as a countable resource for SSI and Medicaid regardless of size, as long as the trust meets the federal requirements for its type. Size does affect which structure makes sense: modest funding under about $100,000 usually fits a lower-cost pooled SNT, while larger amounts more often justify a standalone first-party or third-party trust.",
+          "There is no dollar cap on how much a properly drafted special needs trust can hold. That's the key difference from a [ABLE account](/compare/special-needs-trust-vs-able-account/), which caps annual contributions. Under POMS SI 01120.200, an SNT's assets are excluded as a countable SSI and Medicaid resource regardless of size, as long as the trust meets the federal requirements for its type.",
       },
       {
         question: "What is the downside of a special needs trust?",
         answer:
-          "The main downsides are cost and restriction, not risk to benefits. Setup runs $500 to $5,000 depending on the trust type, plus ongoing trustee fees of roughly 1% of assets a year if you use a professional or corporate trustee. A first-party SNT adds a Medicaid payback obligation at the beneficiary's death, up to the trust balance, and cash paid directly to the beneficiary or shelter costs like rent can reduce SSI, so every distribution has to go through the trustee rather than straight to the beneficiary. Self-drafting is not a safe way around these costs, since Medicaid and SSA routinely reject self-drafted SNTs.",
+          "Every distribution has to go through the trustee instead of straight to the beneficiary, because cash paid directly to the beneficiary or shelter costs like rent can reduce SSI. A first-party SNT adds a Medicaid payback obligation at the beneficiary's death, up to the trust balance, which a third-party SNT doesn't carry. Ongoing trustee fees run roughly 1% of assets a year if you use a professional or corporate trustee instead of a family member. See the setup-cost FAQ above for what drafting itself runs.",
       },
       {
         question: "What can a special needs trust pay for?",
