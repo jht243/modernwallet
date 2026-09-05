@@ -12,13 +12,20 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/freelance-rate/", label: "What should you charge?" },
     { href: "/compare/1099-vs-w2/", label: "1099 vs W-2: which is better?" },
     { href: "/guides/how-to-budget-with-irregular-income/", label: "Budgeting when income varies" },
-    { href: "/budget/", label: "Build a monthly budget" },
+    { href: "/s-corp-tax/", label: "Would an S-corp election save you money?" },
   ],
   "mileage-deduction": [
     { href: "/self-employment-tax/", label: "What you owe after the deduction" },
     { href: "/self-employment-tax/doordash-taxes/", label: "DoorDash taxes explained" },
     { href: "/auto-loan/", label: "Financing the car you drive for work" },
     { href: "/guides/is-driving-around-for-cheaper-gas-worth-it/", label: "Is chasing cheaper gas worth it?" },
+  ],
+  "s-corp-tax": [
+    { href: "/self-employment-tax/", label: "What you pay without an election" },
+    { href: "/compare/llc-vs-s-corp/", label: "LLC vs S corp compared" },
+    { href: "/compare/sole-proprietorship-vs-llc/", label: "Do you even need an LLC?" },
+    { href: "/guides/how-to-pay-yourself-llc/", label: "How to pay yourself" },
+    { href: "/guides/qbi-deduction-explained/", label: "The QBI deduction an election shrinks" },
   ],
   "freelance-rate": [
     { href: "/self-employment-tax/", label: "Tax on what you charge" },

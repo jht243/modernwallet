@@ -226,3 +226,85 @@ export const FREELANCE_RATE_HUB: CalculatorDef = {
     totalHoursPerWeek: 40,
   },
 };
+
+// -------------------------------------------------------------------------------------------------
+// Business-structure pillar (2026-09-05). Created to host the LLC / S-corp entity cluster, which
+// does not belong under self-employment tax: it is a structure decision, not a tax calculation.
+// Head term "s corp tax calculator" (1,300/mo, KD 12); the spokes under it run KD 3–7.
+// -------------------------------------------------------------------------------------------------
+
+const IRS_SCORP_COMP: { label: string; url: string } = {
+  label: "IRS — S corporation compensation and medical insurance issues",
+  url: "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues",
+};
+const IRS_2553: { label: string; url: string } = {
+  label: "IRS — Instructions for Form 2553",
+  url: "https://www.irs.gov/instructions/i2553",
+};
+const IRS_SCORP: { label: string; url: string } = {
+  label: "IRS — S corporations",
+  url: "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations",
+};
+
+export const S_CORP_TAX_HUB: CalculatorDef = {
+  id: "s-corp-tax",
+  islandId: "s-corp-tax",
+  label: "S-Corp Tax",
+  navOrder: 38,
+  updated: "2026-09-05",
+
+  metaTitle: "S Corp Tax Calculator: Is an Election Worth It?",
+  metaDescription:
+    "Free S corp tax calculator. See the net saving after payroll costs and the QBI deduction you give up — the two offsets most S-corp calculators leave out.",
+  targetKeyword: "s corp tax calculator",
+  h1: "S Corp Tax Calculator: What an Election Actually Saves",
+  introText:
+    "An S corporation election lets you split business profit into a salary, which pays payroll tax, and a distribution, which does not. The saving is real, but it is smaller than the usual pitch suggests, because two costs come off it: running payroll, and the qualified business income deduction you give up on every dollar moved into salary.\n\nOn $120,000 of profit with a $60,000 salary, the election avoids $7,775 of payroll tax — but forfeits an $8,242 QBI deduction and costs $1,200 in payroll. The honest net saving is $4,171.",
+
+  howItWorks:
+    "By default, a sole proprietor or single-member LLC pays self-employment tax on all of their net profit: 15.3% on 92.35% of it. An S corporation election changes the shape of the income rather than the amount. You become an employee of your own business, take part of the profit as a W-2 salary, and take the rest as a distribution. Payroll tax applies to the salary and not to the distribution.\n\nThat is where most explanations stop, and it is why the saving is routinely overstated. Three things push the real number down.\n\nThe first is the QBI deduction. Wages are not qualified business income, so every dollar you move from pass-through profit into salary is a dollar removed from the §199A base. You give up a 20% deduction on that dollar to avoid 15.3% of payroll tax on it. At $120,000 of profit the forfeited QBI deduction is larger than the payroll tax avoided — the election still wins overall, but by far less than the gross figure implies.\n\nThe second is that payroll is not free. An S-corp has to run genuine payroll, withhold and remit, file employment tax returns, and file a separate Form 1120-S for the business. A payroll service plus the extra return commonly runs several hundred to a couple of thousand dollars a year, and it recurs annually.\n\nThe third is that the employer half of FICA is a business expense, so it comes out of the profit passed through on your K-1. The distribution is smaller than profit minus salary.\n\nPut together, the threshold where an election starts to pay is higher than the internet suggests and depends heavily on the salary you can defend. Holding salary at half of profit, the election clears $1,000 a year of net saving at around $35,000 of profit. Hold salary at 60% of profit — a more conservative and more defensible position for a one-person service business — and the threshold rises to about $52,000. At $90,000 of profit with a $70,000 salary, the election actually costs $1,530 a year.\n\nThat salary is the whole ballgame, and it is not yours to set freely. The IRS requires reasonable compensation for services before non-wage distributions are made, and it is explicit that there is no safe harbor and no formula. The 60/40 split and the 2% rule that circulate online are not IRS positions. What the IRS actually examines is where the corporation's gross receipts come from: if they come from your own services, that value belongs in wages.\n\nIf the numbers work, the election is made on Form 2553, and the timing is unforgiving: no more than two months and 15 days after the beginning of the tax year it takes effect, or any time in the preceding year. Miss it and late-election relief under Rev. Proc. 2013-30 is available with reasonable cause, but it is a filing you would rather not need.",
+
+  faqs: [
+    {
+      question: "How much does an S corp election actually save?",
+      answer:
+        "Less than the gross payroll tax figure suggests. On $120,000 of profit with a $60,000 salary, the election avoids $7,775 of payroll tax but forfeits an $8,242 QBI deduction and costs $1,200 to run payroll — a net saving of $4,171. The saving grows with profit: about $2,283 at $60,000 and $5,131 at $150,000, holding salary at half of profit.",
+    },
+    {
+      question: "At what income is an S corp worth it?",
+      answer:
+        "It depends on the salary you can defend, not on income alone. Holding salary at 50% of profit, the election clears $1,000 a year of net saving at roughly $35,000 of profit. At a more conservative 60% salary the threshold rises to about $52,000. Below those points the payroll cost and the forfeited QBI deduction outweigh the payroll tax avoided — and state franchise taxes, which this calculator excludes, push the real threshold higher still.",
+    },
+    {
+      question: "What is a reasonable salary for an S corp owner?",
+      answer:
+        "There is no safe harbor and no percentage formula — the IRS says so directly. It weighs your training and experience, duties and responsibilities, time and effort, what comparable businesses pay for similar services, and dividend history. The controlling question is where the corporation's gross receipts come from: receipts generated by your own services should be paid as wages. The 60/40 and 2% \"rules\" found online are folklore, not IRS guidance.",
+    },
+    {
+      question: "Does an S corp election reduce my QBI deduction?",
+      answer:
+        "Yes, and it is the offset most calculators omit. The qualified business income deduction applies to pass-through business profit, and W-2 wages are not qualified business income. Every dollar you take as salary instead of distribution removes a dollar from the §199A base, so you trade a 20% deduction for avoiding 15.3% of payroll tax on that dollar. It is why the net saving is much smaller than the gross, and why an election can cost money at modest profit.",
+    },
+    {
+      question: "When do I have to file Form 2553?",
+      answer:
+        "No more than two months and 15 days after the beginning of the tax year the election is to take effect, or at any time during the preceding tax year. If you miss it, late-election relief under Rev. Proc. 2013-30 is available where there was reasonable cause, the corporation intended S status from the effective date, and Form 2553 is filed within three years and 75 days of that date — with \"FILED PURSUANT TO REV. PROC. 2013-30\" written at the top.",
+    },
+    {
+      question: "Do I need an LLC before electing S corp status?",
+      answer:
+        "You need an eligible entity — commonly an LLC or a corporation. S-corp is a tax election, not an entity type, so an LLC can elect to be taxed as an S corporation while remaining an LLC legally. That is the usual route for a one-person business, because it keeps the simpler LLC formalities while changing how profit is taxed. See our [LLC vs S corp comparison](/compare/llc-vs-s-corp/) for what changes and what does not.",
+    },
+  ],
+
+  sources: [IRS_SCORP, IRS_SCORP_COMP, IRS_2553, IRS_SE_TAX],
+
+  defaultPreset: {
+    netProfit: 120000,
+    reasonableSalary: 60000,
+    filingStatus: "single",
+    otherIncome: 0,
+    payrollCost: 1200,
+    applyQbi: true,
+  },
+};

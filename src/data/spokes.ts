@@ -18,6 +18,7 @@ import { GIG_DRIVER_SPOKES } from "./spokes-gig-drivers";
 import { GIG_ONLINE_SPOKES } from "./spokes-gig-online";
 import { MILEAGE_SPOKES } from "./spokes-mileage";
 import { FREELANCE_RATE_SPOKES } from "./spokes-freelance-rate";
+import { S_CORP_SPOKES, QUARTERLY_SPOKE } from "./spokes-s-corp";
 
 // Aggregator for all spoke pages across calculators. Phase 2 adds one spokes-*.ts file per
 // calculator and spreads it here. Pillar 1 = tax-resolution; Pillar 2 = estate-planning;
@@ -43,6 +44,9 @@ export const SPOKES: SpokeEntry[] = [
   ...GIG_ONLINE_SPOKES,
   ...MILEAGE_SPOKES,
   ...FREELANCE_RATE_SPOKES,
+  // Business-structure pillar + the quarterly spoke that belongs under self-employment tax.
+  ...S_CORP_SPOKES,
+  ...QUARTERLY_SPOKE,
 ];
 
 export const SPOKE_BY_PATH: Record<string, SpokeEntry> = Object.fromEntries(
