@@ -140,3 +140,4 @@
 | /guides/personal-loans-for-excellent-credit/ | 2026-09-04 | 3 | 0/0/1/0/0 | 0 |
 | /auto-loan/amortization-schedule/ | 2026-09-04 | 3 | 0/0/1/0/0 | 0 |
 | /guides/is-social-security-taxable/ | 2026-09-04 | 3 | 0/0/0/0/0 | 1 |
+| /guides/is-inheritance-marital-property/ | 2026-09-06 | 1 | 0/0/2/0/0 | 0 |

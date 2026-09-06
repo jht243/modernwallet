@@ -1,0 +1,35 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-06",
+  "window_start": "2026-09-06",
+  "window_end": "2026-09-06",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-inheritance-marital-property/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 2,
+  "top10_pages_total_clicks": 2,
+  "channel_split": {
+    "/guides/is-inheritance-marital-property/": {
+      "Organic Search": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Direct": 1,
+      "Unassigned": 1
+    }
+  }
+}
