@@ -138,8 +138,12 @@ Phase 5 by hand keep their existing rules.)
 
 | Routine | Status |
 |---|---|
-| `mindmap-pass` (layer3) | pilot — migrated |
-| `comparison-content-auto`, `trend-pass-auto` (layer3) | pilot — pending |
-| remaining layer3 content routines | after pilot |
-| fleet repos (sync via `scripts/sync-content-gen.sh`) | after layer3 |
+| `mindmap-pass` | migrated (pilot shipped a live page 2026-09-06) |
+| `keyword-gap-pass`, `seo-gsc-pass` (+ `autocomplete-pass`, `amazon-gear-radar`, `ahrefs_winner_loser_pass`, `-rank-tracker` by inheritance) | migrated — Phase 3 regenerated from the mindmap version |
+| `podcast-pain-pass`, `seminar-pass` (writer-standard) | migrated |
+| `content-request-fulfillment-auto`, `search-gap-content-auto`, `youtube-video-pass` | migrated by delegation to mindmap-pass Phase 3 |
+| `comparison-content-creator` (+ `roundup-pass`, `vertical-roundup-auto`, `comparison-content-auto`), `trend-pass`, `ga4-top-pages-pass`, `competitor-monitor`, `downloadable-asset-pass`, `amazon-gear-radar`, `indexing-issues-gsc-pass` (Mode B), `pdf-for-sale` (product page) | migrated — governing block at the top of each writer phase; new-page lanes only |
+| **Enrichment-only** — `question-gap-pass`, `page-quality-pass`, `ai-answer-citation-pass`, `*/phase-3b-enrich.md`, `*/phase-5-body.md`, indexing Mode A | NOT migrated — section-level edits of existing pages; needs a separate section contract |
+| `new-ai-model-pass` | stays on its own `model_radar` pipeline for now (radar track) |
+| fleet repos | generator + contract + mindmap Phase 3 synced 2026-09-06; the other routine phases sync in the next fleet pass |
 | client routines (getopt, harmonica) | NOT yet — hold |

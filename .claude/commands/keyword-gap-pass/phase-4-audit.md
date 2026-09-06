@@ -14,7 +14,9 @@ This phase IS the gate for Phase 3. It checks **only the net-new pages created i
 - A placeholder exists at the target route (if the framework expects a route file) ✓/✗
 A spec that passes all seven points is a **PASS** — the human builds the asset in a follow-up; that is by design. Missing items are hard-fail rework.
 
-**For `article` format rows:** apply the standard checklist below.
+**For `article` format rows — and for `comparison table/database` rows that Phase 3 generated as REAL pages (a `<slug>.meta.json` exists):** apply the standard checklist below. A generated comparison is a page, not a spec.
+
+**API-generated pages (the normal case — see `_content-generation.md`):** hand the auditor the run's **closed fact list(s)** (`reports/<routine>/<TODAY>/prompts/<slug>.prompt.md`) and **`allowed-urls.txt`** alongside the drafts, plus each draft's `meta.guards`. An auditor working from a trimmed fact set will flag TRUE sourced facts as fabrication. Before acting on any "unsupported claim" finding, verify it against the source; keep confirmed facts, cut only what no source supports. Findings are actionable only with the exact quoted text; fixes follow the remediation ladder (mechanical in place first).
 
 ---
 
