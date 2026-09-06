@@ -487,6 +487,12 @@ These are non-blocking observations. Do NOT set fail for any of them, and do not
 
 ## INTRO HUMANIZE — the LAST prose step (MANDATORY on any routine that writes NEW pages)
 
+> **EXEMPT: pages generated end-to-end through `scripts/lib/content_gen.py` per
+> `.claude/commands/_content-generation.md`.** Those pages are already written in voice by the
+> writer model, and the generator carries this step's fact guard and house-style rules itself.
+> Running the re-voice on them is a defect (a second call, a second chance to drift a claim).
+> This step still applies to pages the running agent wrote in-context.
+
 **Order, non-negotiable.** This step runs AFTER everything that judges prose: the Phase 4 audit, the anti-ai-language tell list, `content_lint.py`, the sentence-length and rhythm gates, and any polish pass. Those gates run against the DRAFTED intro. This step then re-voices that intro, and the run goes straight to sitemap/commit. Nothing between this step and the commit touches the intro.
 
 **Who runs it.** The routine's top-level orchestrator, as its own step, once all writer and audit subagents have returned. NEVER a Phase 3 or Phase 5 writer subagent, and never mid-draft. A writer that pipes its own draft through the helper and then keeps editing has defeated the step: it just fed the gates back over the result. If you are a writer subagent, do not call `humanize_intro.py` at all. Hand your intro back as drafted.
