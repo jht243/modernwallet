@@ -75,6 +75,7 @@ FORCE_FALLBACK = os.environ.get("CONTENT_FORCE_FALLBACK") == "1"   # test hook
 GEMINI_MODE = os.environ.get("GEMINI_API_MODE", "aistudio").lower()
 GEMINI_PROJECT = os.environ.get("GEMINI_PROJECT", "")
 GEMINI_LOCATION = os.environ.get("GEMINI_LOCATION", "global")
+JSON_MODE = False   # set by complete(json_mode=True): ask the provider for a JSON object
 
 # USD per 1M tokens (input, output). Thinking bills as output. Override per run with
 # CONTENT_RATE_IN / CONTENT_RATE_OUT. Gemini 3.8 Flash intro rate doubles 2027-01-01.
@@ -178,6 +179,8 @@ def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         headers = {"x-goog-api-key": key, "Content-Type": "application/json"}
     gen = {"temperature": 0.7, "maxOutputTokens": max_tokens}
+    if JSON_MODE:
+        gen["responseMimeType"] = "application/json"
     if thinking in ("low", "medium", "high"):
         gen["thinkingConfig"] = {"thinkingLevel": thinking}
     elif thinking.lstrip("-").isdigit():
@@ -208,6 +211,8 @@ def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking:
                "max_output_tokens": max_tokens}
     if thinking in ("low", "medium", "high"):
         payload["reasoning"] = {"effort": thinking}
+    if JSON_MODE:
+        payload["text"] = {"format": {"type": "json_object"}}
     resp = _post("https://api.openai.com/v1/responses",
                  {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, payload)
     text = resp.get("output_text") or ""
@@ -286,7 +291,7 @@ def generate(system: str, prompt: str) -> dict:
 
 # ───────────────────────────── in-process API (for crons / radars) ─────────────────────────────
 def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = None,
-             thinking: str = None, fallback: str = None) -> str:
+             thinking: str = None, fallback: str = None, json_mode: bool = False) -> str:
     """One-call text completion for Python pipelines (the Render radar crons).
 
     Same chain as `write`: primary model then the fallback (logged to stderr), truncation retried
@@ -296,9 +301,10 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
         from lib.content_gen import complete           # after sys.path.insert(0, "scripts")
         text = complete(system_prompt, user_prompt)    # was: _llm(...) -> OpenAI directly
     """
-    global MODEL, FALLBACK, MAX_TOKENS, THINKING
-    saved = (MODEL, FALLBACK, MAX_TOKENS, THINKING)
+    global MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE
+    saved = (MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE)
     try:
+        JSON_MODE = bool(json_mode)
         if model: MODEL = model
         if fallback is not None: FALLBACK = fallback
         if max_tokens: MAX_TOKENS = int(max_tokens)
@@ -306,9 +312,9 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
         r = generate(system or "", prompt)
         if r.get("fallback_used"):
             log(f"complete(): FALLBACK USED -> {r['model']} ({r['fallback_reason']})")
-        return r["text"]
+        return strip_fences(r["text"])
     finally:
-        MODEL, FALLBACK, MAX_TOKENS, THINKING = saved
+        MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE = saved
 
 
 # ───────────────────────────── verify stage ─────────────────────────────
