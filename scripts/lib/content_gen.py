@@ -308,11 +308,33 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
         if model: MODEL = model
         if fallback is not None: FALLBACK = fallback
         if max_tokens: MAX_TOKENS = int(max_tokens)
+        if json_mode:
+            MAX_TOKENS = max(MAX_TOKENS, 8000)   # a thinking model spends its cap before writing
         if thinking: THINKING = thinking
         r = generate(system or "", prompt)
         if r.get("fallback_used"):
             log(f"complete(): FALLBACK USED -> {r['model']} ({r['fallback_reason']})")
-        return strip_fences(r["text"])
+        text = strip_fences(r["text"])
+        if json_mode:
+            # JSON mode must never hand a caller non-JSON: validate; regenerate once on the
+            # same model; then force the fallback model; only then return unparsed (logged).
+            def _ok(s):
+                try: json.loads(s, strict=False); return True
+                except Exception: return False
+            if not _ok(text):
+                log(f"complete(): json_mode output not parseable from {r['model']} — regenerating once")
+                r2 = generate(system or "", prompt); t2 = strip_fences(r2["text"])
+                if _ok(t2): return t2
+                if FALLBACK and FALLBACK != MODEL:
+                    log(f"complete(): still not JSON — trying fallback {FALLBACK}")
+                    m0 = MODEL; MODEL = FALLBACK
+                    try:
+                        r3 = generate(system or "", prompt); t3 = strip_fences(r3["text"])
+                    finally:
+                        MODEL = m0
+                    if _ok(t3): return t3
+                log("complete(): returning non-JSON text after all attempts (caller must handle)")
+        return text
     finally:
         MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE = saved
 
