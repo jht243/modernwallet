@@ -284,6 +284,33 @@ def generate(system: str, prompt: str) -> dict:
     raise RuntimeError("all models failed: " + " | ".join(errors))
 
 
+# ───────────────────────────── in-process API (for crons / radars) ─────────────────────────────
+def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = None,
+             thinking: str = None, fallback: str = None) -> str:
+    """One-call text completion for Python pipelines (the Render radar crons).
+
+    Same chain as `write`: primary model then the fallback (logged to stderr), truncation retried
+    once at double the cap. Returns the raw text; the caller keeps its own parsing/templating.
+    Model/effort default to the CONTENT_* env config so a cron switches models by env alone:
+
+        from lib.content_gen import complete           # after sys.path.insert(0, "scripts")
+        text = complete(system_prompt, user_prompt)    # was: _llm(...) -> OpenAI directly
+    """
+    global MODEL, FALLBACK, MAX_TOKENS, THINKING
+    saved = (MODEL, FALLBACK, MAX_TOKENS, THINKING)
+    try:
+        if model: MODEL = model
+        if fallback is not None: FALLBACK = fallback
+        if max_tokens: MAX_TOKENS = int(max_tokens)
+        if thinking: THINKING = thinking
+        r = generate(system or "", prompt)
+        if r.get("fallback_used"):
+            log(f"complete(): FALLBACK USED -> {r['model']} ({r['fallback_reason']})")
+        return r["text"]
+    finally:
+        MODEL, FALLBACK, MAX_TOKENS, THINKING = saved
+
+
 # ───────────────────────────── verify stage ─────────────────────────────
 _NUM = re.compile(r"(?<![\w.])\d[\d,]*(?:\.\d+)?%?")
 _EXT = re.compile(r"https?://[^\s)\"'<>\]]+")
