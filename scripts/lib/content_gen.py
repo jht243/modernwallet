@@ -271,13 +271,15 @@ def generate(system: str, prompt: str) -> dict:
             continue
         if r["finish"] == "MAX_TOKENS":
             # Cheapest rung first: the SAME model with double the cap, once, before falling back.
-            log(f"{model}: truncated at MAX_TOKENS={MAX_TOKENS} — retrying once with {MAX_TOKENS * 2}")
+            cap = {"gemini": 65536, "openai": 128000, "anthropic": 64000}[provider_for(model)]
+            retry_tokens = min(MAX_TOKENS * 2, cap)
+            log(f"{model}: truncated at MAX_TOKENS={MAX_TOKENS} — retrying once with {retry_tokens} (provider ceiling {cap})")
             try:
-                r = CALLERS[provider_for(model)](model, system, prompt, MAX_TOKENS * 2, THINKING)
+                r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, THINKING)
             except Exception as e:  # noqa: BLE001
                 errors.append(f"{model}: retry failed: {str(e)[:160]}"); continue
             if r["finish"] == "MAX_TOKENS" or not r["text"].strip():
-                errors.append(f"{model}: still truncated at {MAX_TOKENS * 2}")
+                errors.append(f"{model}: still truncated at {retry_tokens}")
                 continue
             r["retried_for_truncation"] = True
         if not r["text"].strip():
@@ -285,6 +287,11 @@ def generate(system: str, prompt: str) -> dict:
             continue
         r["fallback_used"] = i > 0
         r["fallback_reason"] = "; ".join(errors) if i > 0 else None
+        # Always log a successful generation: a silent success is invisible in cron logs, and
+        # "did this run actually use Gemini?" must be answerable from the log alone.
+        log(f"ok model={r['model']} in={r.get('input_tokens')} out={r.get('output_tokens')} "
+            f"think={r.get('thinking_tokens')} cost≈${est_cost(r['model'], r.get('input_tokens'), r.get('output_tokens'), r.get('thinking_tokens'))}"
+            f"{' FALLBACK' if i > 0 else ''}")
         return r
     raise RuntimeError("all models failed: " + " | ".join(errors))
 
@@ -575,6 +582,20 @@ def verify_markdown(text: str, a) -> tuple[str, dict]:
         if removed:
             report["repairs"].append(f"removed {len(removed)} off-list link(s), kept the text")
             report["flags"].append(f"auditor: verify the sentences that cited {removed[:3]} are still supported")
+    if getattr(a, "cmd", "") == "section":
+        # A SECTION is spliced into an existing page: it never carries the page's H1, and it
+        # must not re-create a heading the page already has (the agent would then have two).
+        h1 = [l for l in text.split("\n") if re.match(r"^#\s", l)]
+        if h1:
+            text = "\n".join(l for l in text.split("\n") if not re.match(r"^#\s", l)).strip()
+            report["repairs"].append(f"dropped {len(h1)} H1 line(s) — a section has no page title")
+        if getattr(a, "page", ""):
+            page_heads = {re.sub(r"^#+\s*", "", l).strip().lower()
+                          for l in pathlib.Path(a.page).read_text().split("\n") if re.match(r"^#{2,}\s", l)}
+            dup = [l for l in text.split("\n") if re.match(r"^#{2,}\s", l)
+                   and re.sub(r"^#+\s*", "", l).strip().lower() in page_heads]
+            if dup:
+                report["flags"].append(f"auditor: section repeats existing page heading(s) {dup[:3]} — merge, do not duplicate")
     words = len(text.split()); report["words"] = words
     if a.floor and words < a.floor:
         report["flags"].append(f"{words} words < depth floor {a.floor}")
@@ -611,7 +632,7 @@ def cmd_write(a) -> int:
         page, report = verify(r["text"], a)
         out.write_text(json.dumps(page, ensure_ascii=False, indent=2))
     meta = {
-        "slug": a.slug, "schema": a.schema,
+        "slug": a.slug, "schema": a.schema, "kind": a.cmd,
         "model": r["model"], "provider": r["provider"], "requested_model": MODEL,
         "fallback_used": r["fallback_used"], "fallback_reason": r["fallback_reason"],
         "retried_for_truncation": r.get("retried_for_truncation", False),
@@ -645,8 +666,24 @@ def main(argv=None) -> int:
                    help="json = a page object (TS/JSON stores); markdown = a whole page file (Astro/markdown/MDX stores)")
     w.add_argument("--allowed-urls", dest="allowed_urls", default="")
     w.add_argument("--facts", default="")
+    # section: an ENRICHMENT of an existing page (FAQ answer, new section, body paragraphs, an
+    # answer block, a rewritten section). Same models, same ladder, same meta.json; output is
+    # always markdown prose the agent splices in (for TS/JSON stores it maps paragraphs to the
+    # page's content[] strings). --page is the CURRENT page text: sent by the agent inside the
+    # prompt as context, and used here to catch a duplicated heading.
+    s = sub.add_parser("section", help="generate a section/paragraphs to add to an EXISTING page")
+    s.add_argument("--system", required=True)
+    s.add_argument("--prompt", required=True)
+    s.add_argument("--out", required=True)
+    s.add_argument("--slug", required=True, help="<page-slug>--<section-id>")
+    s.add_argument("--page", default="", help="file holding the page's current text (heading dedup)")
+    s.add_argument("--floor", type=int, default=0)
+    s.add_argument("--allowed-urls", dest="allowed_urls", default="")
+    s.add_argument("--facts", default="")
     a = ap.parse_args(argv)
-    return {"preflight": cmd_preflight, "write": cmd_write}[a.cmd](a)
+    if a.cmd == "section":
+        a.format, a.schema = "markdown", "none"
+    return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write}[a.cmd](a)
 
 
 if __name__ == "__main__":
