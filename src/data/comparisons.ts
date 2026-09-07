@@ -5661,6 +5661,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["whole-life-vs-term-life-insurance", "whole-life-vs-universal-life-insurance", "401k-vs-brokerage-account", "iul-vs-vul"],
     calculatorLinks: [
+      { label: "Life Insurance Needs Calculator", href: "/life-insurance-needs/" },
       { label: "Net Worth Tracker", href: "/net-worth/" },
       { label: "Budget Planner", href: "/budget/" },
       { label: "Estate Planning Guide", href: "/estate-planning/" },
@@ -9226,6 +9227,9 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Consumer Financial Protection Bureau (CFPB) — What Is Life Insurance", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-life-insurance-en-1751/" },
     ],
     relatedComparisons: ["whole-life-vs-term-life-insurance", "whole-life-vs-universal-life-insurance"],
+    calculatorLinks: [
+      { label: "Life Insurance Needs Calculator", href: "/life-insurance-needs/" },
+    ],
   },
   // --- 106. rmd vs qcd---
   {
