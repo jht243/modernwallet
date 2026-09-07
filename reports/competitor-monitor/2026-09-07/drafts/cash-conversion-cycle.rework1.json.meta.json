@@ -1,0 +1,41 @@
+{
+ "slug": "cash-conversion-cycle",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1489,
+ "floor": 1200,
+ "input_tokens": 17327,
+ "output_tokens": 2160,
+ "thinking_tokens": 27061,
+ "est_cost_usd": 0.1226,
+ "guards": {
+  "repairs": [
+   "slug None -> 'cash-conversion-cycle'"
+  ],
+  "flags": [],
+  "words": 1489,
+  "numbers_not_in_facts": [
+   "120",
+   "45",
+   "95"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15813
+  }
+ },
+ "seconds": 73.1,
+ "response_id": "zTafavCPC-SN_PUPsIipkQ8",
+ "generated_at": "2026-09-07T22:13:41+0000"
+}

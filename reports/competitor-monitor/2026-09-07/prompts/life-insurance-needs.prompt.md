@@ -98,3 +98,22 @@ which has no URL; prefer linking this site's own related pages instead)
   in introText, operator register with ONE "At ModernWallet, we…" first-person company claim
   somewhere in introText or howItWorks, show real arithmetic (QUALITY/DEPTH), no fabricated facts.
 - No em-dashes. No banned anti-AI phrases.
+
+---
+# CORRECTIONS FROM THE PHASE 4 AUDIT (regeneration — apply all of these)
+
+1. **Overloaded sentence, hard fail.** The previous draft's introText opened its worked example
+   as one 54-word sentence ("For example, if you earn $70,000 a year and need 15 years of income
+   replacement, carry $10,000 in other debt, owe $250,000 on a mortgage, budget $15,000 for final
+   expenses, and allocate $60,000 for a child's education fund, your total obligations reach
+   $1,170,655 when your income stream is discounted at a 3% real rate."). Split any sentence like
+   this into two: state the inputs in one sentence, the result in the next. Read every sentence
+   once at reading speed before finalizing; if it needs a second read, split it.
+2. **Sentence-rhythm hard fail (this is the main defect to fix).** The previous draft ran long
+   monotone stretches: long runs of consecutive sentences all in the 15+ word band with almost no
+   short sentences anywhere (0 short sentences out of 56 total). Deliberately vary sentence
+   length throughout: mix in genuine short sentences (1-8 words) to carry emphasis, medium
+   sentences (9-14 words), and long sentences (15-28 words, never a 30+ word run-on). No run of
+   10 consecutive sentences may sit in only one length band. Do not achieve this by chopping
+   every long sentence into fragments — some real long sentences are fine, just not back-to-back
+   with no variation. Reread the whole draft once for rhythm alone before returning it.

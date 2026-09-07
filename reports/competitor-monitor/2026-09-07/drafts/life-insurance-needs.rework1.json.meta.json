@@ -1,0 +1,42 @@
+{
+ "slug": "life-insurance-needs",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1376,
+ "floor": 1200,
+ "input_tokens": 17563,
+ "output_tokens": 2077,
+ "thinking_tokens": 22382,
+ "est_cost_usd": 0.1049,
+ "guards": {
+  "repairs": [
+   "slug None -> 'life-insurance-needs'"
+  ],
+  "flags": [],
+  "words": 1376,
+  "numbers_not_in_facts": [
+   "1050000",
+   "11.94",
+   "400000",
+   "55"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15813
+  }
+ },
+ "seconds": 67.8,
+ "response_id": "iTafasb9G7iHjrEPuOmRgAI",
+ "generated_at": "2026-09-07T22:12:28+0000"
+}

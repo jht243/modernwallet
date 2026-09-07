@@ -131,3 +131,44 @@ source page. Where a fact is contested or varies by person, say so and present i
   with the concrete fix, and close the page on a concrete next action (run your own numbers
   through the linked calculator).
 - No fabricated facts. No em-dashes. No banned anti-AI phrases.
+
+---
+# CORRECTIONS FROM THE PHASE 4 AUDIT (regeneration — apply all of these)
+
+1. **Overloaded sentence, hard fail.** The previous draft's "Saving Too Little and Delaying Your
+   Start" section had a 41-word sentence ("That gap is the cost of ten years of missing
+   compounding, and it means a 35-year-old chasing the same $1 million target typically needs to
+   save two to three times as much per month as the 25-year-old with an identical goal."). Split
+   any sentence like this into two shorter ones. Read every sentence once at reading speed before
+   finalizing; if it needs a second read, split it.
+2. **Sentence-rhythm hard fail (this is the main defect to fix).** The previous draft ran long
+   monotone stretches: 81 sentences total, ZERO in the short 1-8 word band, 70 of 81 in the 15+
+   word band, with long runs of 10+ consecutive sentences all sitting in that same long band.
+   Deliberately vary sentence length throughout: mix in genuine short sentences (1-8 words) to
+   carry emphasis, medium sentences (9-14 words), and long sentences (15-28 words, never a 30+
+   word run-on). No run of 10 consecutive sentences may sit in only one length band. Do not
+   achieve this by chopping every long sentence into fragments — some real long sentences are
+   fine, just not back-to-back with no variation anywhere in an 81-sentence piece. Reread the
+   whole draft once for rhythm alone before returning it.
+
+---
+# CORRECTIONS FROM THE PHASE 4 AUDIT, ROUND 2 (regeneration attempt 2/2)
+
+**Math error in the "Saving Too Little and Delaying Your Start" section.** Round 1 invented a new
+$300/month example ("$300/month at 7% grows to roughly $720,000 by 65... a 35-year-old needs
+about $610/month") that does not check out arithmetically under standard monthly-compounding
+annuity math (verified by hand: $300/month for 40 years at 7% annually, compounded monthly,
+actually grows to about $787,000, not $720,000).
+
+**Use this EXACT already-verified example instead — do not compute your own numbers for this
+one, copy these figures exactly:** "A 25-year-old who invests $500 a month at a 7% average
+annual return crosses $1 million by around age 61. Wait until 35 to start that same $500-a-month
+habit, and the balance reaches only about $610,000 by 65." (This is the same real, hand-verified
+figure already published on this site's own how-to-become-a-401k-millionaire guide — reusing it
+here is consistent, not repetitive, since it appears in a different article with a different
+point being made.) Follow it with your own original sentence(s) drawing the mistake-avoidance
+lesson from it (e.g., the two-to-three-times-the-monthly-contribution point), in your own words,
+varying sentence length per the Round 1 rhythm correction below.
+
+Keep everything else from Round 1's rhythm improvement — that part worked well. Just fix this one
+section's numbers.

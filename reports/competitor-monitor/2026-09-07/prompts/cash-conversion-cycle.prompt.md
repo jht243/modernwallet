@@ -37,9 +37,9 @@ academic ratio analysis. Never reference or name the competitor on the page.
 COGS: $600,000/year. Average inventory: $90,000. Revenue: $1,000,000/year. Average receivables:
 $110,000. Average payables: $70,000. Period: 365 days.
 -> DIO = (90,000 / 600,000) x 365 = 54.8 days.
--> DSO = (110,000 / 1,000,000) x 365 = 40.1 days.
+-> DSO = (110,000 / 1,000,000) x 365 = 40.2 days.
 -> DPO = (70,000 / 600,000) x 365 = 42.6 days.
--> CCC = 54.8 + 40.1 - 42.6 = 52.3 days.
+-> CCC = 54.8 + 40.2 - 42.6 = 52.4 days.
 State this as an illustrative example with the calculator's default numbers.
 
 ### What the coverage-floor questions should say (no invented facts)
@@ -88,3 +88,22 @@ State this as an illustrative example with the calculator's default numbers.
   in introText, operator register with ONE "At ModernWallet, we…" first-person company claim
   somewhere in introText or howItWorks, show real arithmetic, no fabricated facts.
 - No em-dashes. No banned anti-AI phrases.
+
+---
+# CORRECTIONS FROM THE PHASE 4 AUDIT (regeneration — apply all of these)
+
+1. **Math error, now fixed above.** The worked example above was corrected: DSO = 40.2 days
+   (not 40.1) and CCC = 52.4 days (not 52.3). Use ONLY the corrected figures above throughout
+   introText, howItWorks, and any FAQ that repeats the worked example (e.g., the "shorten
+   collection by 10 days" example: DSO drops from 40.2 to 30.2, cycle drops from 52.4 to 42.4).
+2. **Overloaded sentence, hard fail.** Rewrite any single sentence over ~30 words into two
+   sentences. Read every sentence once at reading speed before finalizing; if it needs a second
+   read, split it.
+3. **Sentence-rhythm hard fail (this is the main defect to fix).** The previous draft ran long
+   monotone stretches: many consecutive sentences all sitting in the 15+ word band, several runs
+   of 5+ consecutive sentences within 3 words of each other. Deliberately vary sentence length
+   throughout: mix in genuine short sentences (1-8 words) to carry emphasis, medium sentences
+   (9-14 words), and long sentences (15-28 words, never a 30+ word run-on). No run of 10
+   consecutive sentences may sit in only one length band. Do not achieve this by chopping every
+   long sentence into fragments — some real long sentences are fine, just not back-to-back with
+   no variation. Reread the whole draft once for rhythm alone before returning it.
