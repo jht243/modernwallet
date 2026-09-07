@@ -338,8 +338,18 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
 CALLERS = {"gemini": call_gemini, "openai": call_openai, "anthropic": call_anthropic}
 
 
+LAST_SCOPE = {}   # what writer_scope dropped on the most recent generate() — read by cmd_write for meta
+
+
 def generate(system: str, prompt: str) -> dict:
     """Primary model, then the fallback. Truncation/empty count as failures worth falling back on."""
+    global LAST_SCOPE
+    # Every caller — write, section, complete() from crons, the client bridges — sends the
+    # writer only what a writer can use. Files on disk are never touched.
+    system, LAST_SCOPE = writer_scope(system or "")
+    if LAST_SCOPE["dropped_sections"] or LAST_SCOPE["html_comments_dropped"]:
+        log(f"writer scope: dropped ≈{LAST_SCOPE['tokens_dropped_est']:,} tokens from the system prompt "
+            f"({', '.join(LAST_SCOPE['dropped_sections'])[:160]}); ≈{LAST_SCOPE['tokens_sent_est']:,} sent")
     chain = [MODEL] + ([FALLBACK] if FALLBACK and FALLBACK != MODEL else [])
     errors = []
     for i, model in enumerate(chain):
@@ -787,12 +797,7 @@ def cmd_write(a) -> int:
             CALLER = parts[parts.index("reports") + 1]
     system = pathlib.Path(a.system).read_text()
     prompt = pathlib.Path(a.prompt).read_text()
-    # Send the WRITER only what a writer can use (files on disk untouched; see writer_scope).
-    system, scope = writer_scope(system)
-    if scope["dropped_sections"] or scope["html_comments_dropped"]:
-        log(f"writer scope: dropped ≈{scope['tokens_dropped_est']:,} tokens from the system prompt "
-            f"({', '.join(scope['dropped_sections'])[:160]}); ≈{scope['tokens_sent_est']:,} sent")
-    t0 = time.time()
+    t0 = time.time()   # writer scoping happens inside generate(), for every caller
     try:
         r = generate(system, prompt)
     except RuntimeError as e:
@@ -818,7 +823,7 @@ def cmd_write(a) -> int:
         "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"],
         "thinking_tokens": r["thinking_tokens"],
         "est_cost_usd": est_cost(r["model"], r["input_tokens"], r["output_tokens"], r["thinking_tokens"]),
-        "guards": {**report, "writer_scope": scope}, "seconds": round(time.time() - t0, 1),
+        "guards": {**report, "writer_scope": LAST_SCOPE}, "seconds": round(time.time() - t0, 1),
         "response_id": r["response_id"],
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }
