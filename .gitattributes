@@ -4,3 +4,4 @@
 # line", so union (keep both sides' lines) is always the correct resolution.
 reports/standards-ledger.jsonl merge=union
 reports/**/ledger.md           merge=union
+reports/content-gen-usage.jsonl merge=union

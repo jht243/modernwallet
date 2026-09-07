@@ -165,6 +165,14 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
         p.parent.mkdir(parents=True, exist_ok=True)
         with open(p, "a") as f:
             f.write(json.dumps(row) + "\n")
+        # Stage it: a routine commits with `git add <paths>; git commit`, so a file that is already
+        # staged rides along in that commit without the routine knowing about the ledger. Never
+        # commits, never raises, no-op outside a repo or for a ledger outside the repo.
+        root = _repo_root()
+        if root and str(p.resolve()).startswith(str(root)) and os.environ.get("CONTENT_LEDGER_STAGE", "1") != "0":
+            import subprocess
+            subprocess.run(["git", "-C", str(root), "add", "--", str(p.resolve())],
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=20)
     except Exception as e:  # noqa: BLE001
         print(f"[content_gen] usage ledger unavailable ({type(e).__name__}) — call still ran", file=sys.stderr)
 
@@ -691,6 +699,12 @@ def verify_markdown(text: str, a) -> tuple[str, dict]:
 
 
 def cmd_write(a) -> int:
+    global CALLER
+    if not CALLER:
+        # Routines write under reports/<routine>/<date>/drafts/… — the routine name IS the caller.
+        parts = pathlib.Path(a.out).resolve().parts
+        if "reports" in parts and parts.index("reports") + 1 < len(parts):
+            CALLER = parts[parts.index("reports") + 1]
     system = pathlib.Path(a.system).read_text()
     prompt = pathlib.Path(a.prompt).read_text()
     t0 = time.time()
