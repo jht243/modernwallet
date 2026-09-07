@@ -1,0 +1,7 @@
+## Four Input Assumptions That Sway Any Retirement Calculation
+
+Four planning assumptions alter a retirement projection far more than the underlying software code: life expectancy, spending patterns, inflation, and investment returns. Most tools require a target age, yet planning too short creates severe risk when [Social Security Administration](https://www.ssa.gov/) data gives a 65-year-old woman a roughly 1-in-3 chance of reaching age 90. Annual spending also breaks the flat averages tools assume, typically peaking during active early travel years, declining in mid-retirement, and surging late in life to cover healthcare costs.
+
+A flat inflation rate obscures substantial real-world volatility. Over the past two decades, U.S. inflation has swung widely from low single digits to over 9% at its 2022 peak, so projections require periodic updates. Assumed annual returns act as the single biggest lever in any projection, where slight percentage shifts compound into vast balance discrepancies and amplify [sequence-of-returns risk](/retirement/retirement-income-calculator/).
+
+Test your plan under several scenarios before trusting the bottom line. Alongside a baseline calculation on our [retirement calculator](/retirement/) or any platform reviewed above, run a conservative test that pairs an older target age with higher spending and lower returns. Evaluating that stressed scenario against your primary projection reveals whether your savings plan can absorb real-world market shocks before you choose a final retirement date.

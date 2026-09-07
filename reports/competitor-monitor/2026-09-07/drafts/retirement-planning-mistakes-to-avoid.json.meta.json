@@ -1,0 +1,41 @@
+{
+ "slug": "retirement-planning-mistakes-to-avoid",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1799,
+ "floor": 1200,
+ "input_tokens": 18355,
+ "output_tokens": 2923,
+ "thinking_tokens": 11716,
+ "est_cost_usd": 0.0687,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1799,
+  "numbers_not_in_facts": [
+   "15000",
+   "25",
+   "35",
+   "500"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16380
+  }
+ },
+ "seconds": 40.8,
+ "response_id": "bC2favfyCemw_PUP4vfYiAI",
+ "generated_at": "2026-09-07T21:33:08+0000"
+}

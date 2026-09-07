@@ -1,0 +1,75 @@
+{
+  "slug": "retirement-planning-mistakes-to-avoid",
+  "metaTitle": "Retirement Planning Mistakes: 10 Major Traps to Avoid",
+  "metaDescription": "Avoid common retirement planning mistakes. Learn how to fix savings gaps, manage taxes, cut fund fees, and set a sustainable withdrawal rate.",
+  "h1": "Retirement Planning Mistakes and How to Avoid Them",
+  "subtitle": "A practical breakdown of savings gaps, tax missteps, withdrawal risks, and investment traps that threaten long-term wealth.",
+  "introText": "The most damaging retirement planning mistakes occur when savers delay contributions, ignore investment fees, and withdraw funds without a written distribution strategy. At ModernWallet, we build financial tools to show how everyday contribution rates and investment costs shape real balances over decades. A secure future does not require guessing market returns or timing economic cycles.\n\nInstead, preventing common retirement planning errors requires understanding contribution limits, budgeting for health expenses before Medicare, and setting realistic withdrawal targets. Taking control of these controllable factors protects your portfolio and allows you to retire on your own terms.",
+  "sections": [
+    {
+      "heading": "Retirement Planning Mistakes in Baseline Calculations",
+      "content": "A functional retirement plan requires three specific numbers rather than vague financial goals. You need a target retirement age, an estimated monthly spending target, and a defined monthly savings rate. Operating without these three figures leaves you unable to calculate your required nest egg or measure progress over time.\n\nMany savers skip this arithmetic because predicting expenses decades into the future feels imprecise. You can start by assuming your baseline living costs will resemble your current budget minus work-related expenses and mortgage payments. Run your baseline numbers through our [retirement calculator](/retirement/) to see whether your current monthly contribution pace closes your projected income gap."
+    },
+    {
+      "heading": "Saving Too Little and Delaying Your Start",
+      "content": "Delaying retirement savings by even a single decade dramatically increases the monthly cash required to build an adequate balance. Compounding returns generate the majority of a mature portfolio, but compound growth requires time to work. When you start late, your own paycheck must make up for years of missing market compounding.\n\nA 25-year-old who invests $500 a month at a 7% average annual return crosses $1 million by around age 61. Wait until 35 to start that same $500-a-month habit, and the balance reaches only about $610,000 by 65. That gap is the cost of ten years of missing compounding, and it means a 35-year-old chasing the same $1 million target typically needs to save two to three times as much per month as the 25-year-old with an identical goal. Review our guide on [how much to save for retirement as an average earner](/guides/how-much-to-save-for-retirement-average-earner/) to benchmark your own savings rate against practical career milestones."
+    },
+    {
+      "heading": "Counting on Social Security or a Pension to Fill the Gap",
+      "content": "Social Security and employer pensions rarely replace enough pre-retirement earnings to maintain your standard of living on their own. The [U.S. Department of Labor (DOL)](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/what-you-should-know-about-your-retirement-plan) notes that most retirees need roughly 70% to 90% of their pre-retirement income to maintain their standard of living. Depending on public benefits to provide the bulk of that income leaves your budget exposed to future policy changes outside your control.\n\nTraditional defined-benefit pensions have also grown scarce in the private sector, placing investment risk entirely on the worker. Log in to the [Social Security Administration (SSA)](https://www.ssa.gov/) to review your verified earnings record and estimated monthly benefit. Treat that projected benefit as a supplemental safety net while building your personal investment accounts to cover your primary living costs."
+    },
+    {
+      "heading": "Leaving Tax-Advantaged Room on the Table",
+      "content": "Failing to use annual tax-advantaged account limits forfeits compounding growth that is shielded from immediate income taxes. Every dollar inside a workplace plan or Individual Retirement Account (IRA) grows without annual tax drag from dividends and capital gains distributions. Skipping these accounts in favor of standard taxable brokerage accounts increases your annual tax bill and slows portfolio growth.\n\nFor 2026, the [Internal Revenue Service (IRS)](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) sets the employee contribution limit for 401(k) plans at $24,500. Workers aged 50 and older can contribute an additional $8,000 catch-up amount, while savers aged 60 to 63 qualify for a higher $11,250 catch-up limit under SECURE 2.0 rules. The 2026 IRA contribution limit is $7,500 across traditional and Roth accounts combined.\n\nReview the contribution guidelines in our guide to [401(k) contribution limits for 2026](/guides/401k-contribution-limits-2026/). If you are approaching retirement, read our guide on how to [catch up on retirement savings in your 60s](/guides/catch-up-on-retirement-savings-in-your-60s/). Remember that traditional pre-tax accounts trigger Required Minimum Distributions (RMDs) beginning at age 73, which you can project using our [RMD calculator](/retirement/rmd-calculator/)."
+    },
+    {
+      "heading": "Cashing Out a 401(k) During a Job Change",
+      "content": "Taking a cash payout from a 401(k) when changing employers triggers immediate taxes, penalty fees, and permanent losses in compound growth. Many workers treat small balances from previous employers as spare cash rather than dedicated retirement capital. Cashing out small accounts repeatedly throughout a career resets your savings timeline to zero.\n\nIf you withdraw money from a traditional retirement account before age 59\u00bd, the IRS imposes a 10% early-withdrawal penalty alongside ordinary federal and state income taxes. On a $15,000 balance, the 10% penalty alone withholds $1,500 before income tax is even applied, and the remaining amount is then taxed at your ordinary federal (and, in most states, state) income tax rate, a combined hit that commonly claims a quarter or more of the original balance. Direct your previous plan administrator to execute a direct rollover to your new employer plan or an IRA, and read our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/) to understand the rules."
+    },
+    {
+      "heading": "Underestimating Health Care Costs Before Medicare",
+      "content": "Retiring prior to Medicare eligibility requires funding private health insurance premiums entirely out of pocket. Medicare coverage does not begin until age 65, regardless of when you choose to leave your career. Leaving work at age 60 creates a five-year gap where you must secure individual coverage, obtain continuation coverage through COBRA, or join a spouse's policy.\n\nIndividual market premiums, deductibles, and co-pays often total thousands of dollars per year for older adults. Because health costs vary widely by location, household income, and existing conditions, do not rely on generalized averages. Check eligibility requirements and plan details on [Medicare](https://www.medicare.gov/) and price local private exchange policies before establishing an early retirement date."
+    },
+    {
+      "heading": "Withdrawal Rates and Retirement Planning Mistakes",
+      "content": "Setting an unsustainable withdrawal rate in the first few years of retirement raises the odds of depleting your portfolio early by a wide margin. The traditional 4% rule provides a helpful baseline: withdrawing roughly 4% of your initial portfolio value, adjusted annually for inflation, historically funded a 30-year retirement across most market environments. However, withdrawing fixed amounts during an extended market downturn introduces severe sequence-of-returns risk.\n\nSequence-of-returns risk occurs when poor market returns strike early in retirement, forcing you to liquidate depressed shares to cover routine bills. Selling shares during a market slump locks in paper losses and permanently weakens your portfolio's ability to recover when markets rebound. Model flexible spending rates and test different initial balances using our [retirement income calculator](/retirement/retirement-income-calculator/)."
+    },
+    {
+      "heading": "Assuming You Will Work Indefinitely or Retire Abruptly",
+      "content": "Treating retirement as an abrupt, all-or-nothing transition ignores both practical health realities and the financial flexibility of phased bridge work. Many workers fail to save adequately because they assume they will simply keep working into their 70s. Unexpected layoffs, health issues, or family caregiving obligations often cut working careers short well before anticipated retirement dates.\n\nConversely, retiring overnight with no routine or purposeful activity can create an unexpected psychological shock. Transitioning into part-time consulting or bridge employment offers a balanced alternative. Earning even modest income in early retirement reduces portfolio withdrawals, keeps emergency cash intact, and provides social engagement while your investments continue to compound."
+    },
+    {
+      "heading": "Asset Allocation and Retirement Planning Mistakes",
+      "content": "Holding an asset allocation that does not match your time horizon exposes your savings to either severe market downturns or steady purchasing-power erosion. An overly conservative portfolio heavy in cash and short-term debt struggles to outpace long-term inflation. According to mortality data from the Social Security Administration, a 65-year-old woman has roughly a 1-in-3 chance of reaching age 90, meaning savings must often support three full decades of living costs.\n\nAt the same time, maintaining an all-stock portfolio on the day you retire exposes your living expenses to painful market shocks. Most planners use a gradual glide path, holding equities for growth during accumulation years and expanding bond and cash allocations as retirement nears. Evaluate sustainable portfolio allocations using the Trinity Study principles embedded in our [FIRE calculator](/retirement/fire-calculator/)."
+    },
+    {
+      "heading": "Buying Layered Variable Annuities Instead of Low-Fee Funds",
+      "content": "Purchasing a variable annuity often burdens your retirement savings with layered administrative expenses, mortality fees, and surrender charges. A variable annuity wraps mutual fund investments inside an insurance contract, promising tax deferral and optional guaranteed income riders. However, these complex insurance features frequently carry annual costs that exceed 2% to 3% of your balance.\n\nHigh ongoing fees silently erode your compounding growth and reduce your future monthly income. Surrender charges also lock up your principal, restricting access to your money for several years after purchase. Most retirement savers achieve superior long-term results by holding straightforward, low-cost index funds within traditional IRAs or workplace plans.\n\nCompare low-cost fund structures directly in our [ETF vs mutual fund comparison](/compare/etf-vs-mutual-fund/) to keep expense ratios under control. Run your current savings numbers through our retirement income tools to catch and resolve these retirement planning mistakes before you leave the workforce."
+    }
+  ],
+  "ctaTitle": "Run your personal retirement numbers today",
+  "ctaText": "Use our free retirement tools to calculate your target savings rate, project income, and avoid costly distribution errors.",
+  "ctaButton": "Try the Retirement Calculator",
+  "faqItems": [
+    {
+      "question": "What is the biggest retirement planning mistake?",
+      "answer": "The biggest retirement planning mistake is operating without a written plan that identifies your target spending, retirement age, and required savings rate. Without these baseline metrics, you cannot determine if your current contributions are sufficient or whether your asset allocation matches your timeline."
+    },
+    {
+      "question": "How much should I have saved for retirement by age 40, 50, and 60?",
+      "answer": "Savings benchmarks depend on your individual income and spending goals, but popular industry guidelines suggest targeting multiples of your annual income across major career milestones. Review our detailed guide on how much to save for retirement as an average earner to map realistic contribution targets for your age group."
+    },
+    {
+      "question": "Is it too late to fix a retirement plan in my 50s?",
+      "answer": "No, your 50s give you a real window to accelerate savings through higher tax-advantaged contribution limits and debt reduction. In 2026, the Internal Revenue Service permits workers aged 50 and older to contribute an extra $8,000 in catch-up funds to their 401(k) accounts, providing ten to fifteen years of concentrated tax-advantaged growth."
+    },
+    {
+      "question": "Should I roll over my 401(k) when I change jobs?",
+      "answer": "Rolling over an old 401(k) directly into an Individual Retirement Account or a new employer plan is generally preferable to leaving it behind or taking a cash distribution. A direct rollover avoids mandatory tax withholding and early-withdrawal penalties while keeping your retirement capital fully invested in the market."
+    },
+    {
+      "question": "What is sequence-of-returns risk and why does it matter for a retirement plan?",
+      "answer": "Sequence-of-returns risk is the danger that severe market drops occur in the earliest years of your retirement while you are taking regular portfolio withdrawals. Selling equities at depressed prices locks in portfolio losses and depletes your principal faster, reducing how long your savings will last."
+    }
+  ]
+}

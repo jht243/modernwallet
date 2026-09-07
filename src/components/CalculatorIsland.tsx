@@ -43,6 +43,9 @@ import SelfEmploymentTaxCalculator from "./SelfEmploymentTaxCalculator";
 import MileageDeductionCalculator from "./MileageDeductionCalculator";
 import FreelanceRateCalculator from "./FreelanceRateCalculator";
 import SCorpTaxCalculator from "./SCorpTaxCalculator";
+import LifeInsuranceNeedsCalculator from "./LifeInsuranceNeedsCalculator";
+import OperatingCashFlowCalculator from "./OperatingCashFlowCalculator";
+import CashConversionCycleCalculator from "./CashConversionCycleCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -124,6 +127,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Business-structure pillar (2026-09-05): S-corp election net saving after payroll cost and
   // the forfeited QBI deduction — the two offsets vendor calculators leave out.
   "s-corp-tax": SCorpTaxCalculator,
+  "life-insurance-needs": LifeInsuranceNeedsCalculator,
+  "operating-cash-flow": OperatingCashFlowCalculator,
+  "cash-conversion-cycle": CashConversionCycleCalculator,
   // Per-spoke override islands (buyer-journey tools)
   "affordability": AffordabilityCalculator,
   "mortgage-extras": MortgageExtrasCalculator,

@@ -1,0 +1,5 @@
+## Monte Carlo Simulation vs. Fixed-Rate Projection: What the Difference Actually Means
+
+A fixed-rate projection (used by Bankrate, NerdWallet, SmartAsset, and our own [retirement calculator](/retirement/)) assumes one steady annual return every year between now and retirement. It's fast and easy to understand, but it can't show you what happens if the market drops 20% five years before you retire, a real risk called sequence-of-returns risk.
+
+Monte Carlo simulation (used by Fidelity, Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower, and Boldin's paid tier) instead runs your plan through hundreds or thousands of randomized market paths built from historical volatility data, then reports the percentage of paths where your money lasted. A 90% probability-of-success score means your plan survived 90 out of 100 (or 900 out of 1,000) simulated market histories, a range of outcomes, not a single number. Neither approach is wrong; a fixed-rate tool is a fine first-pass gut check, while a Monte Carlo tool is better once you're deciding when to actually retire.

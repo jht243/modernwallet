@@ -1,0 +1,46 @@
+{
+ "slug": "build-a-retirement-plan-in-8-steps",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1964,
+ "floor": 1200,
+ "input_tokens": 18088,
+ "output_tokens": 3100,
+ "thinking_tokens": 19920,
+ "est_cost_usd": 0.0999,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1964,
+  "numbers_not_in_facts": [
+   "1000000",
+   "1250000",
+   "15000",
+   "1500000",
+   "20000",
+   "40000",
+   "50000",
+   "60000",
+   "95"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16380
+  }
+ },
+ "seconds": 59.6,
+ "response_id": "JS6favfnGcav39IPmPqiwAg",
+ "generated_at": "2026-09-07T21:36:32+0000"
+}

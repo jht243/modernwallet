@@ -3531,6 +3531,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 17. Best Retirement Calculators ──────────────────────────────────────
   {
     slug: "best-retirement-calculators",
+    updated: "2026-09-07",
     title: "Best Retirement Calculators of 2026: Compared by Method",
     metaDescription:
       "The best retirement calculators of 2026, compared by methodology — Monte Carlo vs simple projection, Social Security, taxes, and cost.",
@@ -3742,6 +3743,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         heading: "A five-minute checklist before you trust any retirement calculator's number",
         content:
           "First, confirm which methodology you're looking at — fixed-rate projection or Monte Carlo — since the two answer different questions and shouldn't be compared to each other as if they were the same kind of number. Second, check whether Social Security is auto-estimated or something you typed in yourself, and sanity-check that figure against ssa.gov. Third, note whether taxes are included; if the tool says no (most do), treat the output as pre-tax. Fourth, check the inflation assumption and make sure you're reading the inflation-adjusted (today's-dollars) figure if the tool offers one, not just the larger future nominal number. Fifth, run the same inputs through at least two calculators with different methodologies — a fixed-rate tool like our [retirement calculator](/retirement/) for a fast target, and a Monte Carlo tool like Empower or Fidelity for a probability check — before making a real decision based on either one alone.",
+      },
+      {
+        heading: "Four Input Assumptions That Sway Any Retirement Calculation",
+        content:
+          "Four planning assumptions alter a retirement projection far more than the underlying software code: life expectancy, spending patterns, inflation, and investment returns. Most tools require a target age, yet planning too short creates severe risk when [Social Security Administration](https://www.ssa.gov/) data gives a 65-year-old woman a roughly 1-in-3 chance of reaching age 90. Annual spending also breaks the flat averages tools assume, typically peaking during active early travel years, declining in mid-retirement, and surging late in life to cover healthcare costs.\n\nA flat inflation rate obscures substantial real-world volatility. Over the past two decades, U.S. inflation has swung widely from low single digits to over 9% at its 2022 peak, so projections require periodic updates. Assumed annual returns act as the single biggest lever in any projection, where slight percentage shifts compound into vast balance discrepancies and amplify [sequence-of-returns risk](/retirement/retirement-income-calculator/).\n\nTest your plan under several scenarios before trusting the bottom line. Alongside a baseline calculation on our [retirement calculator](/retirement/) or any platform reviewed above, run a conservative test that pairs an older target age with higher spending and lower returns. Evaluating that stressed scenario against your primary projection reveals whether your savings plan can absorb real-world market shocks before you choose a final retirement date.",
       },
     ],
     faqs: [

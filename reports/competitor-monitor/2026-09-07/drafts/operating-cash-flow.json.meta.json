@@ -1,0 +1,49 @@
+{
+ "slug": "operating-cash-flow",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1837,
+ "floor": 1200,
+ "input_tokens": 17017,
+ "output_tokens": 2487,
+ "thinking_tokens": 18170,
+ "est_cost_usd": 0.0902,
+ "guards": {
+  "repairs": [
+   "slug None -> 'operating-cash-flow'"
+  ],
+  "flags": [],
+  "words": 1837,
+  "numbers_not_in_facts": [
+   "1.25",
+   "15",
+   "200000",
+   "30",
+   "4.8",
+   "50000",
+   "60",
+   "7.2",
+   "72",
+   "75",
+   "90"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15813
+  }
+ },
+ "seconds": 55.7,
+ "response_id": "jjCfav6dOqa3_PUP1Z32yAI",
+ "generated_at": "2026-09-07T21:46:45+0000"
+}
