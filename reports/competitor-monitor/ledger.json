@@ -93855,11 +93855,15 @@
           ]
         },
         "https://www.financialmentor.com/calculator/best-retirement-calculator": {
+          "acted": false,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:f3c6eda16296704c9e7bf68900021bf844f3b76dc8acd847e992ea4dc4eb9725",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-04T19:48:42+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-retirement-calculators/",
           "outline": [
             "Calculate How Much You Need To Save, How Long Your Money Will Last, And How Soon You Can Retire",
             "Ultimate Retirement Calculator",
@@ -93885,7 +93889,7 @@
             "calculator",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Retirement Calculator: Simple, Free, Powerful",
           "tool_io": [
             "label: i Enter age at end of current year:",
@@ -95418,11 +95422,15 @@
           "status": "baseline"
         },
         "https://www.financialmentor.com/calculator/life-insurance-calculator": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:28967c57cba2eb3367c2688b2df2f167b76fbdb5d0b1929923acb165d1390d4d",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-04T20:00:35+00:00",
+          "our_url": "https://www.themodernwallet.com/life-insurance-needs/",
           "outline": [
             "Figure Out How Much Life Insurance You Need",
             "How Much Life Insurance Do You Need?",
@@ -95443,7 +95451,7 @@
             "financial",
             "personal finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Life Insurance Calculator: How Much Life Insurance Do I Need?",
           "tool_io": [
             "label: Website",
@@ -96343,11 +96351,15 @@
           ]
         },
         "https://www.financialmentor.com/calculator/retirement-withdrawal-calculator": {
+          "acted": false,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:8dcdced293c2691e4b83c437ab00798076e520df4e49dd7d824006dec3863837",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-04T19:42:06+00:00",
+          "our_url": "https://www.themodernwallet.com/retirement/retirement-income-calculator/",
           "outline": [
             "Calculate Savings Required to Withdraw a Specified Annual Income",
             "Retirement Withdrawal Calculator Insights",
@@ -96362,7 +96374,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Retirement Withdrawal Calculator",
           "tool_io": [
             "label: Website",
@@ -96627,15 +96639,15 @@
           ]
         },
         "https://www.financialmentor.com/calculator/taxable-vs-tax-deferred-calculator": {
-          "acted": true,
-          "acted_date": "2026-08-05",
+          "acted": false,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:c451a1c9358200a5cbae3850b72e7dc7fab709b9ce72c92f986284ffbcb2bf06",
-          "disposition": "published",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T21:17:20+00:00",
-          "our_url": "/taxable-vs-tax-deferred/",
+          "our_url": "https://www.themodernwallet.com/taxable-vs-tax-deferred/",
           "outline": [
             "How To Calculate The Differece Between Tax-Deferred Versus Taxable Investment Growth",
             "Taxable Vs. Tax-Deferred Investment Growth",
@@ -96657,7 +96669,7 @@
             "savings",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Taxable vs. Tax Deferred Investment Growth Calculator",
           "tool_io": [
             "label: Website",
@@ -98244,11 +98256,15 @@
           "status": "baseline"
         },
         "https://www.financialmentor.com/retirement-planning/early-retirement/how-anyone-can-retire-in-10-years-or-less/5474": {
+          "acted": false,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:68aafa18e2f012816b70422b56eb4d3980775ac0a5fd98f9e128b5386f536e26",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T21:43:18+00:00",
+          "our_url": "https://www.themodernwallet.com/retirement/fire-calculator/",
           "outline": [
             "Anyone Can Retire Early, But Few Succeed. Here's Why&#8230;",
             "Key Ideas",
@@ -98267,7 +98283,7 @@
           "relevance_hits": [
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Anyone Can Retire Early In 10 Years (Or Less!)",
           "tool_io": []
         },
@@ -98320,11 +98336,15 @@
           "status": "baseline"
         },
         "https://www.financialmentor.com/retirement-planning/how-much-money-do-i-need-to-retire/retirement-calculators-2/17130": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:4159a2197ce79e68486d97732b209521db070b7c92776e3fae4f9bc551603299",
+          "disposition": "enriched",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T22:02:12+00:00",
+          "our_url": "https://www.themodernwallet.com/roundup/best-retirement-calculators/",
           "outline": [
             "Reveals The Dangerous Assumptions Hiding Behind Your Retirement Estimate And Provides 5 Simple Steps To Solve The Problem",
             "Key Ideas",
@@ -98346,7 +98366,7 @@
             "financial",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "5 Reasons Why Retirement Calculators Can&#039;t Be Trusted",
           "tool_io": []
         },
@@ -98375,11 +98395,15 @@
           "status": "baseline"
         },
         "https://www.financialmentor.com/retirement-planning/mistakes/18212": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:652690bdb4eb4f5e6b1555629e7d4999c0b4e0f206a33b0861b52215c2d7a17f",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T22:17:58+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/retirement-planning-mistakes-to-avoid/",
           "outline": [
             "Key Ideas",
             "Get This Article Sent to Your Inbox as a PDF\u2026",
@@ -98408,7 +98432,7 @@
             "retirement",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "The Dirty Dozen Retirement Planning Mistakes to Avoid | Financial Mentor",
           "tool_io": []
         },
@@ -98509,11 +98533,15 @@
           "status": "baseline"
         },
         "https://www.financialmentor.com/retirement-planning/simple-retirement-plan/18180": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:44dbfec7fb476091f4af6b2f50e12c884a5031629dd81730d77f63b873ec8dd8",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T21:52:51+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/build-a-retirement-plan-in-8-steps/",
           "outline": [
             "A Simple Retirement Plan In 8 Steps (For Those Who Want Retirement Planning Made Easy)",
             "Key Ideas",
@@ -98538,7 +98566,7 @@
             "savings",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "8 Shortcuts For A Simple Retirement Plan In Record Time | Financial Mentor",
           "tool_io": []
         },
@@ -256057,11 +256085,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/cash-conversion-cycle": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:67f96bac79673f2481c74a7957c61575644c6e1786f4bf2b2a28064e0d4c6ea1",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T00:57:30.746Z",
+          "our_url": "https://www.themodernwallet.com/cash-conversion-cycle/",
           "outline": [
             "What is the cash conversion cycle?",
             "Cash conversion cycle formula",
@@ -256075,7 +256107,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Cash Conversion Cycle Calculator | CCC",
           "tool_io": [
             "label: Total revenues",
@@ -259673,11 +259705,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/operating-cash-flow": {
+          "acted": true,
+          "acted_date": "2026-09-07",
           "content_hash": "sha256:4888f2860e8de570e7459cc04fe804845b00b86d41029e46ca2327ee0f3e7ee6",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-07",
           "lastmod": "2026-09-05T00:57:30.801Z",
+          "our_url": "https://www.themodernwallet.com/operating-cash-flow/",
           "outline": [
             "What is operating cash flow?",
             "How to calculate the operating cash flow?",
@@ -259699,7 +259735,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Operating Cash Flow Calculator",
           "tool_io": [
             "label: Depreciation",
