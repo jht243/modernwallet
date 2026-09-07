@@ -1,0 +1,34 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-07",
+  "window_start": "2026-09-07",
+  "window_end": "2026-09-07",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 2,
+  "top10_pages_total_clicks": 2,
+  "channel_split": {
+    "/guides/how-to-open-a-trump-account/": {
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 1
+    }
+  }
+}
