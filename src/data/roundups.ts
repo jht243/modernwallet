@@ -634,7 +634,7 @@ export const ROUNDUPS: RoundupEntry[] = [
           "No individual stock or bond selection",
         ],
         pricing:
-          "Betterment Digital: 0.25%/year AUM (or $4/month if your balance is below $20,000 and you don't have a recurring deposit). Betterment Premium (financial advisors): 0.40%/year with $100,000 minimum.",
+          "Betterment Digital: 0.25%/year AUM (or $5/month if your balance is below $24,000 and you don't have a $200+ recurring monthly deposit). Betterment Premium (financial advisors): 0.65%/year with $100,000 minimum.",
       },
       {
         name: "E*TRADE",
@@ -896,7 +896,7 @@ export const ROUNDUPS: RoundupEntry[] = [
           "No ability to buy individual stocks",
           "Less educational content than Fidelity or Schwab about how to invest",
         ],
-        pricing: "Betterment Digital: 0.25%/year (or $4/month if balance under $20,000 without a recurring deposit). No minimum to open.",
+        pricing: "Betterment Digital: 0.25%/year (or $5/month if balance under $24,000 without a $200+ recurring monthly deposit). No minimum to open.",
       },
       {
         name: "Acorns",
