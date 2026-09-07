@@ -391,7 +391,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "FDIC — Deposit insurance overview", url: "https://www.fdic.gov/resources/deposit-insurance/" },
       { label: "Federal Reserve — Federal funds rate decisions", url: "https://www.federalreserve.gov/monetarypolicy/openmarket.htm" },
     ],
-    relatedComparisons: ["hysa-vs-money-market", "stocks-vs-bonds", "401k-vs-roth-ira"],
+    relatedComparisons: ["hysa-vs-money-market", "stocks-vs-bonds", "401k-vs-roth-ira", "cd-vs-treasury-bill"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Net worth calculator", href: "/net-worth/" },
@@ -1079,7 +1079,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "IRS — Publication 502: Medical and Dental Expenses", url: "https://www.irs.gov/publications/p502" },
       { label: "IRS — HSA contribution limits 2025", url: "https://www.irs.gov/newsroom/irs-announces-2025-hsa-limits" },
     ],
-    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "hysa-vs-money-market"],
+    relatedComparisons: ["401k-vs-roth-ira", "brokerage-vs-ira", "hysa-vs-money-market", "hsa-vs-roth-ira"],
     calculatorLinks: [
       { label: "Investment growth calculator", href: "/investing/" },
       { label: "Net worth calculator", href: "/net-worth/" },
@@ -4025,7 +4025,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
       { label: "NCUA — Share Insurance Coverage", url: "https://ncua.gov/consumers/share-insurance-coverage" },
     ],
-    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd", "annuity-vs-cd"],
+    relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd", "annuity-vs-cd", "cd-vs-treasury-bill"],
     calculatorLinks: [
       { label: "Investing Calculator", href: "/investing/" },
       { label: "Net Worth Calculator", href: "/net-worth/" },
