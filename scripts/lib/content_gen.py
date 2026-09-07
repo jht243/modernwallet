@@ -48,6 +48,7 @@ Exit codes: 0 ok; 2 config/credential; 3 API failure (after fallback); 4 draft r
 from __future__ import annotations
 
 import argparse
+import atexit
 import json
 import os
 import pathlib
@@ -103,6 +104,80 @@ def die(code: int, msg: str) -> None:
 
 def log(msg: str) -> None:
     print(f"[content_gen] {msg}", file=sys.stderr)
+
+
+# ───────────────────────────── usage ledger ─────────────────────────────
+# Every billable call is recorded, whatever the entry point (write / section / complete). The
+# cron path used to go through complete(), which wrote no meta.json, so radar spend was
+# invisible and $16.76 of one day's bill could not be attributed (2026-09-07). Recording at
+# generate() — the single choke point — fixes that for every caller at once.
+#
+#   CONTENT_CALLER      what to attribute the call to (routine/cron name). Crons MUST set it.
+#   CONTENT_USAGE_LOG   ledger path; default <repo>/reports/content-gen-usage.jsonl,
+#                       else ~/.claude/content-gen-usage.jsonl
+#
+# TOKENS are the ground truth here; `cost` is null when no rate is known for the model, so a
+# missing rate never hides the usage. Discarded attempts (a truncated call whose output we throw
+# away, then retry) are recorded too — they bill, and they were the expensive invisible ones.
+CALLER = os.environ.get("CONTENT_CALLER", "").strip() or None
+_RUN = {"calls": 0, "in": 0, "out": 0, "think": 0, "cost": 0.0, "billable_no_rate": 0}
+
+
+def _repo_root():
+    d = pathlib.Path.cwd().resolve()
+    for c in [d] + list(d.parents):
+        if (c / ".git").exists():
+            return c
+    return None
+
+
+def usage_log_path() -> pathlib.Path:
+    p = os.environ.get("CONTENT_USAGE_LOG", "").strip()
+    if p:
+        return pathlib.Path(p).expanduser()
+    root = _repo_root()
+    if root and (root / "reports").is_dir():
+        return root / "reports" / "content-gen-usage.jsonl"
+    return pathlib.Path.home() / ".claude" / "content-gen-usage.jsonl"
+
+
+def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> None:
+    """Append one billable call to the ledger. Never raises — accounting must not break a run."""
+    try:
+        it, ot, tt = r.get("input_tokens"), r.get("output_tokens"), r.get("thinking_tokens")
+        cost = est_cost(r.get("model", "?"), it, ot, tt)
+        _RUN["calls"] += 1
+        _RUN["in"] += it or 0; _RUN["out"] += ot or 0; _RUN["think"] += tt or 0
+        if cost is None and (it or ot):
+            _RUN["billable_no_rate"] += 1
+        else:
+            _RUN["cost"] += cost or 0.0
+        row = {
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+            "caller": CALLER, "kind": kind, "model": r.get("model"),
+            "provider": r.get("provider"), "input_tokens": it, "output_tokens": ot,
+            "thinking_tokens": tt, "cost_usd": cost, "thinking": THINKING,
+            "fallback_used": bool(r.get("fallback_used")), "finish": r.get("finish"),
+            "discarded": discarded, "note": note, "repo": (_repo_root().name if _repo_root() else None),
+            "response_id": r.get("response_id"),
+        }
+        p = usage_log_path()
+        p.parent.mkdir(parents=True, exist_ok=True)
+        with open(p, "a") as f:
+            f.write(json.dumps(row) + "\n")
+    except Exception as e:  # noqa: BLE001
+        print(f"[content_gen] usage ledger unavailable ({type(e).__name__}) — call still ran", file=sys.stderr)
+
+
+def _run_total() -> None:
+    if not _RUN["calls"]:
+        return
+    unknown = f" ({_RUN['billable_no_rate']} call(s) with no known rate)" if _RUN["billable_no_rate"] else ""
+    log(f"RUN TOTAL caller={CALLER or '-'} calls={_RUN['calls']} in={_RUN['in']:,} "
+        f"out={_RUN['out']:,} think={_RUN['think']:,} cost≈${_RUN['cost']:.4f}{unknown}")
+
+
+atexit.register(_run_total)
 
 
 def load_secrets() -> None:
@@ -274,6 +349,8 @@ def generate(system: str, prompt: str) -> dict:
             cap = {"gemini": 65536, "openai": 128000, "anthropic": 64000}[provider_for(model)]
             retry_tokens = min(MAX_TOKENS * 2, cap)
             log(f"{model}: truncated at MAX_TOKENS={MAX_TOKENS} — retrying once with {retry_tokens} (provider ceiling {cap})")
+            record(r, kind="truncated-discarded", discarded=True,
+                   note=f"output thrown away; retried at {retry_tokens}")
             try:
                 r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, THINKING)
             except Exception as e:  # noqa: BLE001
@@ -292,6 +369,7 @@ def generate(system: str, prompt: str) -> dict:
         log(f"ok model={r['model']} in={r.get('input_tokens')} out={r.get('output_tokens')} "
             f"think={r.get('thinking_tokens')} cost≈${est_cost(r['model'], r.get('input_tokens'), r.get('output_tokens'), r.get('thinking_tokens'))}"
             f"{' FALLBACK' if i > 0 else ''}")
+        record(r, kind=os.environ.get("CONTENT_KIND", "generate"))
         return r
     raise RuntimeError("all models failed: " + " | ".join(errors))
 
@@ -651,10 +729,57 @@ def cmd_write(a) -> int:
     return 0
 
 
+def cmd_usage(a) -> int:
+    """The chart: what each caller actually spent, from the ledger."""
+    p = pathlib.Path(a.log).expanduser() if a.log else usage_log_path()
+    if not p.exists():
+        print(f"[content_gen] no ledger at {p} — nothing has been recorded yet"); return 0
+    rows = []
+    for line in p.read_text().splitlines():
+        try: d = json.loads(line)
+        except Exception: continue
+        if a.since and (d.get("ts") or "") < a.since: continue
+        rows.append(d)
+    if not rows:
+        print(f"[content_gen] ledger {p}: no rows{' since ' + a.since if a.since else ''}"); return 0
+    key = (lambda d: d.get(a.by) or "-")
+    agg = {}
+    for d in rows:
+        k = key(d)
+        s = agg.setdefault(k, {"calls": 0, "in": 0, "out": 0, "think": 0, "cost": 0.0,
+                               "norate": 0, "disc": 0, "fb": 0})
+        s["calls"] += 1
+        s["in"] += d.get("input_tokens") or 0
+        s["out"] += d.get("output_tokens") or 0
+        s["think"] += d.get("thinking_tokens") or 0
+        if d.get("cost_usd") is None: s["norate"] += 1
+        else: s["cost"] += d["cost_usd"]
+        if d.get("discarded"): s["disc"] += 1
+        if d.get("fallback_used"): s["fb"] += 1
+    w = max(len(str(k)) for k in agg) + 1
+    print(f"ledger: {p}")
+    print(f"{a.by.upper():{w}} {'calls':>6} {'discard':>8} {'fallbk':>7} {'input':>12} {'output':>10} {'thinking':>10} {'cost $':>9}")
+    tot = {"calls": 0, "in": 0, "out": 0, "think": 0, "cost": 0.0, "norate": 0, "disc": 0, "fb": 0}
+    for k, s in sorted(agg.items(), key=lambda kv: -kv[1]["cost"]):
+        print(f"{k:{w}} {s['calls']:6} {s['disc']:8} {s['fb']:7} {s['in']:12,} {s['out']:10,} {s['think']:10,} {s['cost']:9.3f}")
+        for f in tot: tot[f] += s[f]
+    print(f"{'TOTAL':{w}} {tot['calls']:6} {tot['disc']:8} {tot['fb']:7} {tot['in']:12,} {tot['out']:10,} {tot['think']:10,} {tot['cost']:9.3f}")
+    if tot["think"]:
+        print(f"\nthinking is {tot['think']/max(tot['out']+tot['think'],1)*100:.0f}% of billed output "
+              f"(≈${tot['think']*3.75/1e6:.2f} at the gemini-3.8-flash rate)")
+    if tot["norate"]:
+        print(f"{tot['norate']} call(s) have no rate for their model — tokens are recorded, cost is not.")
+    return 0
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("preflight")
+    u = sub.add_parser("usage", help="per-caller spend from the usage ledger")
+    u.add_argument("--log", default="", help="ledger path (default: the run's own)")
+    u.add_argument("--since", default="", help="ISO date prefix, e.g. 2026-09-07")
+    u.add_argument("--by", default="caller", choices=["caller", "model", "kind", "repo", "ts"])
     w = sub.add_parser("write")
     w.add_argument("--system", required=True)
     w.add_argument("--prompt", required=True)
@@ -683,7 +808,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     if a.cmd == "section":
         a.format, a.schema = "markdown", "none"
-    return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write}[a.cmd](a)
+    return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write,
+            "usage": cmd_usage}[a.cmd](a)
 
 
 if __name__ == "__main__":
