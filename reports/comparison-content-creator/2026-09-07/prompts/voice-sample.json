@@ -1,0 +1,50 @@
+{
+  "slug": "fidelity-vs-schwab",
+  "metaTitle": "Fidelity vs Schwab: Which Brokerage Really Wins in 2026?",
+  "metaDescription": "Fidelity vs Schwab compared: zero-fee index funds, account minimums, robo-advisors, and banking tools, so you can pick the right brokerage.",
+  "h1": "Fidelity vs Schwab: Which Brokerage Should You Choose?",
+  "subtitle": "Fidelity vs Schwab, compared on fund fees, minimums, robo-advisors, and banking so you can pick the right brokerage.",
+  "optionAName": "Fidelity",
+  "optionBName": "Charles Schwab",
+  "introText": "[Fidelity](https://www.fidelity.com) built the first mutual funds with a 0.00% expense ratio. [Charles Schwab](https://www.schwab.com), meanwhile, built its business by pairing a large branch network with a bank-grade cash management account. The better fit depends on what matters more to your day-to-day money: a truly free index fund or in-person, full-service banking.",
+  "comparisonTable": {
+    "rows": [
+      { "dimension": "Account minimum to open", "a": "$0", "b": "$0" },
+      { "dimension": "Commission-free stock/ETF trades", "a": "Yes", "b": "Yes" },
+      { "dimension": "Zero-expense-ratio index funds", "a": "Yes, 4 Fidelity ZERO funds (FZROX, FZILX, FNILX, FZIPX)", "b": "No 0% funds; Schwab index funds run 0.02% to 0.03%" },
+      { "dimension": "Options contract fee", "a": "$0.65 per contract", "b": "$0.65 per contract" },
+      { "dimension": "Robo-advisor", "a": "Fidelity Go, $0 minimum, free under $25,000, 0.35%/year above", "b": "Schwab Intelligent Portfolios, $5,000 minimum, no advisory fee" },
+      { "dimension": "Branch network", "a": "About 200 investor centers", "b": "About 400+ branches nationwide" },
+      { "dimension": "Cash management / banking", "a": "Fidelity Cash Management Account with debit card", "b": "Schwab Bank High Yield Investor Checking, ATM fees rebated worldwide" }
+    ]
+  },
+  "verdict": "Choose Fidelity if a genuinely 0% expense ratio fund matters to you or you want a $0-minimum robo-advisor to start small. Choose Schwab if you want more in-person branches near you or Schwab's ATM-fee-rebated checking account paired directly with your brokerage. Both platforms are strong, low-cost, full-service choices, the deciding factor for most people is which local branch footprint or free-fund lineup fits how they actually bank and invest.",
+  "sections": [
+    {
+      "heading": "Account Minimums and Trading Costs",
+      "content": "Both Fidelity and Schwab charge $0 to open a brokerage account and $0 in commissions on online U.S. stock and ETF trades. Neither has an edge on the basics that most self-directed investors use every day.\n\nOptions traders pay the same $0.65 per-contract fee at both firms, with no base commission on top. Where the two diverge is fund minimums: Fidelity's ZERO index funds require no minimum at all, while Schwab's low-cost index funds, like SWTSX, also carry no minimum, so this line is effectively a tie once you move past the flagship products.\n\nMutual funds outside each firm's proprietary lineup can still carry minimums in the hundreds or thousands of dollars, so check the specific fund's prospectus before assuming $0 applies everywhere."
+    },
+    {
+      "heading": "Fidelity's ZERO Funds vs. Schwab's Near-Zero Lineup",
+      "content": "Fidelity's four ZERO funds, FZROX, FZILX, FNILX, and FZIPX, charge a literal 0.00% expense ratio, confirmed in Fidelity's own SEC-filed prospectus. They track Fidelity's proprietary in-house indexes rather than licensed benchmarks like the S&P 500, which is how Fidelity avoids paying an index-licensing fee.\n\nSchwab doesn't offer a true 0% fund, but its Schwab Total Stock Market Index Fund (SWTSX) and Schwab S&P 500 Index Fund (SWPPX) both run around 0.02%, among the cheapest licensed-index funds in the industry.\n\nThe tradeoff most comparisons skip: Fidelity's ZERO funds aren't portable, only Fidelity offers them, so you can't hold the exact same fund if you move your account elsewhere. Schwab's index funds track widely licensed benchmarks you can replicate at almost any brokerage."
+    },
+    {
+      "heading": "Robo-Advisors: Fidelity Go vs. Schwab Intelligent Portfolios",
+      "content": "Fidelity Go has no minimum to open, charges nothing for balances under $25,000, and moves to a 0.35% annual fee once your balance crosses $25,000, at which point you also get one-on-one coaching. Schwab Intelligent Portfolios requires a $5,000 minimum but charges no advisory fee at all, no matter how large your balance grows.\n\nSchwab's robo does hold a meaningful cash allocation inside the portfolio, which is how it funds a $0 advisory fee, that cash sits at a lower yield than a fully invested portfolio would earn, so the real cost isn't zero, it's just paid through opportunity cost on the cash sleeve rather than a line-item fee.\n\nFor a first-time investor with under $5,000, Fidelity Go is the only option of the two that will even accept the account. For a larger, buy-and-hold balance where you're comfortable with Schwab's cash allocation, Intelligent Portfolios' $0 fee wins on paper."
+    },
+    {
+      "heading": "Branches, Banking, and Everyday Cash",
+      "content": "Schwab operates a larger branch network, over 400 locations versus Fidelity's roughly 200 investor centers, so Schwab is more likely to have a branch near you if in-person service matters. Schwab Bank's High Yield Investor Checking account also rebates ATM fees worldwide with no minimum balance and no monthly fee, a feature aimed squarely at people who want one account to handle both investing and daily spending.\n\nFidelity's Cash Management Account competes closely, with no account fees and a debit card, but it doesn't carry Schwab's global ATM-fee-rebate guarantee. Neither account pays interest as high as a dedicated high-yield savings account."
+    },
+    {
+      "heading": "Where the Comparison Actually Turns on You, Not the Brokerage",
+      "content": "A detail investors rarely check before opening an account: Fidelity's ZERO funds and Schwab's near-zero funds only matter as much as the balance you're running them on. On a $10,000 balance, the gap between a 0.00% Fidelity ZERO fund and a 0.02% Schwab index fund is about $2 a year, real, but not decision-driving on its own.\n\nWhat actually should drive the decision for most people is the feature they'll use weekly, not annually: Schwab's branch network and rebated ATM fees for someone who banks in person, or Fidelity's $0-minimum robo-advisor for someone starting with a small first deposit. Treat the expense-ratio gap as a tiebreaker, not the headline."
+    }
+  ],
+  "faqItems": [
+    { "question": "Is Fidelity or Schwab better for beginners?", "answer": "Both work well for beginners, since each charges $0 to open an account and $0 in commissions on stock and ETF trades. Fidelity has a slight edge for a very small first deposit because Fidelity Go, its robo-advisor, has no minimum, while Schwab Intelligent Portfolios requires $5,000 to start." },
+    { "question": "Does Fidelity or Schwab have zero-fee index funds?", "answer": "Fidelity does. Its ZERO funds, FZROX, FZILX, FNILX, and FZIPX, charge a literal 0.00% expense ratio and track Fidelity's own in-house indexes. Schwab's cheapest index funds, like SWTSX and SWPPX, run around 0.02%, which is not 0% but is still among the lowest fees in the industry." },
+    { "question": "Which has more branches, Fidelity or Schwab?", "answer": "Schwab has the larger branch footprint, with over 400 locations nationwide compared with roughly 200 Fidelity investor centers. If in-person service is a priority, check both firms' branch locators for your specific area before deciding." }
+  ],
+  "relatedLinks": ["vanguard-vs-fidelity-vs-schwab", "vanguard-vs-fidelity", "vanguard-vs-schwab", "etrade-vs-fidelity"]
+}
