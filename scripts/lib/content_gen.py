@@ -699,6 +699,85 @@ def verify_markdown(text: str, a) -> tuple[str, dict]:
     return text, report
 
 
+# ───────────────────────────── writer scope (what the WRITER is sent) ─────────────────────────────
+# The standards files are the source of truth for writers, auditors AND orchestrators, so they carry
+# sections the WRITER can do nothing with: the auditor's pass/fail checklists, the preflight, the
+# retired intro-humanize step, defend-lock, scope notes, sync banners. Measured 2026-09-07: those were
+# 10.6k of a 28–32k-token system prompt (~35% of input) on runs that pasted the files whole.
+# NOTHING is changed on disk — this only decides what goes into the model call. Every dropped
+# section is named in meta.guards.writer_scope so the omission is visible, never silent.
+WRITER_SKIP_HEADINGS = (
+    "AUDITOR",                          # both files: the reviewer's checklist (anti-AI dupe; standard's hard fails)
+    "Hard fails", "Advisory notes",     # standard → AUDITOR children (in case they appear alone)
+    "INTRO HUMANIZE",                   # retired for API-written pages; instructs the orchestrator
+    "PREFLIGHT",                        # routine setup checks
+    "DEFEND-LOCK",                      # "check before you EDIT an existing page"
+    "SCOPE",                            # who must read the file
+    "Step 4 — read it back before hand-off",   # hand-off instruction to the agent
+)
+_HEAD = re.compile(r"^(#{1,6})\s+(.*)$")
+
+
+def writer_scope(text: str) -> tuple[str, dict]:
+    """Return the system text with writer-useless sections and HTML comment banners removed."""
+    lines = text.split("\n"); out = []; dropped = []; skip_level = None; skip_name = None; dropped_tokens = 0
+    for l in lines:
+        m = _HEAD.match(l)
+        if m:
+            level, title = len(m.group(1)), m.group(2).strip()
+            if skip_level is not None and level <= skip_level:
+                skip_level = skip_name = None           # left the skipped section
+            if skip_level is None and any(title.startswith(h) or title.upper().startswith(h.upper()) for h in WRITER_SKIP_HEADINGS):
+                skip_level, skip_name = level, title
+                dropped.append(title[:60]); continue
+        if skip_level is not None:
+            dropped_tokens += len(l) // 4; continue
+        out.append(l)
+    body = "\n".join(out)
+    # HTML comment banners (sync/source-of-truth notes) — never instructions for a writer
+    comments = re.findall(r"<!--.*?-->", body, flags=re.S)
+    if comments:
+        dropped_tokens += sum(len(c) // 4 for c in comments)
+        body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+    # the retired intro-humanize step is also described in a bold paragraph inside the WRITER rules
+    carve = re.findall(r"^\*\*THE INTRO HUMANIZE CARVE-OUT\.\*\*.*?(?=\n\s*\n|\Z)", body, flags=re.S | re.M)
+    if carve:
+        dropped_tokens += sum(len(c) // 4 for c in carve); dropped.append("INTRO HUMANIZE carve-out paragraph")
+        body = re.sub(r"^\*\*THE INTRO HUMANIZE CARVE-OUT\.\*\*.*?(?=\n\s*\n|\Z)", "", body, flags=re.S | re.M)
+    body = re.sub(r"\n{4,}", "\n\n\n", body)
+    return body, {"dropped_sections": dropped, "html_comments_dropped": len(comments),
+                  "tokens_dropped_est": dropped_tokens, "tokens_sent_est": len(body) // 4}
+
+
+def cmd_system(a) -> int:
+    """Build system.md deterministically from the standards (files untouched), writer-scoped."""
+    root = _repo_root() or pathlib.Path.cwd()
+    C = root / ".claude" / "commands"
+    parts = []
+    if a.voice:
+        parts.append("## VOICE SAMPLE — imitate this page (same site, same page type)\n\n" + pathlib.Path(a.voice).read_text().strip())
+    if a.contract:
+        parts.append("## OUTPUT CONTRACT\n\n" + pathlib.Path(a.contract).read_text().strip())
+    anti = C / "_anti-ai-language.md"
+    if anti.exists():
+        parts.append("## RULES THAT OUTRANK EVERYTHING BELOW (anti-AI language, WRITER section)\n\n" + anti.read_text().strip())
+    exp = C / "_experience.md"
+    if exp.exists():
+        parts.append("## DOMAIN — who \"we\" are (the only source for any first-person claim)\n\n" + exp.read_text().strip())
+    local = C / "_content-standard.local.md"
+    if local.exists():
+        parts.append("## LOCAL STANDARD (this site)\n\n" + local.read_text().strip())
+    std = C / "_content-standard.md"
+    if std.exists():
+        parts.append("## STRUCTURE, SEO, DEPTH, SOURCING, STYLE RULES (content standard)\n\n" + std.read_text().strip())
+    text, rep = writer_scope("\n\n".join(parts))
+    out = pathlib.Path(a.out); out.parent.mkdir(parents=True, exist_ok=True); out.write_text(text)
+    log(f"system.md built: ≈{rep['tokens_sent_est']:,} tokens sent; dropped ≈{rep['tokens_dropped_est']:,} "
+        f"({len(rep['dropped_sections'])} sections, {rep['html_comments_dropped']} comment banners) — files untouched")
+    for s in rep["dropped_sections"]: log(f"   - {s}")
+    return 0
+
+
 def cmd_write(a) -> int:
     global CALLER
     if not CALLER:
@@ -708,6 +787,11 @@ def cmd_write(a) -> int:
             CALLER = parts[parts.index("reports") + 1]
     system = pathlib.Path(a.system).read_text()
     prompt = pathlib.Path(a.prompt).read_text()
+    # Send the WRITER only what a writer can use (files on disk untouched; see writer_scope).
+    system, scope = writer_scope(system)
+    if scope["dropped_sections"] or scope["html_comments_dropped"]:
+        log(f"writer scope: dropped ≈{scope['tokens_dropped_est']:,} tokens from the system prompt "
+            f"({', '.join(scope['dropped_sections'])[:160]}); ≈{scope['tokens_sent_est']:,} sent")
     t0 = time.time()
     try:
         r = generate(system, prompt)
@@ -734,7 +818,7 @@ def cmd_write(a) -> int:
         "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"],
         "thinking_tokens": r["thinking_tokens"],
         "est_cost_usd": est_cost(r["model"], r["input_tokens"], r["output_tokens"], r["thinking_tokens"]),
-        "guards": report, "seconds": round(time.time() - t0, 1),
+        "guards": {**report, "writer_scope": scope}, "seconds": round(time.time() - t0, 1),
         "response_id": r["response_id"],
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
     }
@@ -820,11 +904,15 @@ def main(argv=None) -> int:
     s.add_argument("--floor", type=int, default=0)
     s.add_argument("--allowed-urls", dest="allowed_urls", default="")
     s.add_argument("--facts", default="")
+    sy = sub.add_parser("system", help="build a writer-scoped system.md from the standards (files untouched)")
+    sy.add_argument("--voice", default="", help="file with the real page to imitate (JSON or markdown)")
+    sy.add_argument("--contract", default="", help="file with the output contract for this page shape")
+    sy.add_argument("--out", required=True)
     a = ap.parse_args(argv)
     if a.cmd == "section":
         a.format, a.schema = "markdown", "none"
     return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write,
-            "usage": cmd_usage}[a.cmd](a)
+            "usage": cmd_usage, "system": cmd_system}[a.cmd](a)
 
 
 if __name__ == "__main__":

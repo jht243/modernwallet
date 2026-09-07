@@ -67,6 +67,21 @@ standing rule here (retyping them is how they go missing). It carries:
 - what to cover, section by section; the FAQ questions (verbatim PAA where available)
 - for comparisons: `optionAName`/`optionBName`, the table dimensions, the objectivity rule
 
+### What the writer is actually sent (2026-09-07)
+
+The standards files are shared by writers, auditors and orchestrators, so they carry sections a
+writer cannot use. **Nothing is removed from the files.** At send time the generator drops, by
+heading name, the AUDITOR checklists (both files), PREFLIGHT, DEFEND-LOCK, SCOPE, INTRO HUMANIZE,
+"Step 4 — read it back before hand-off", and `<!-- -->` sync banners — and lists every dropped
+section in `meta.guards.writer_scope`. The voice sample, output contract, anti-AI WRITER rules,
+`_experience.md`, the local standard and every writing rule in the standard go through whole.
+Build `system.md` with the builder instead of pasting files by hand:
+
+```bash
+python3 scripts/lib/content_gen.py system --voice <real page file> --contract <contract file> \
+  --out reports/<routine>/<TODAY>/prompts/system.md      # reads .claude/commands/_*.md, files untouched
+```
+
 ## Step 2 — generate, one row at a time
 
 ```bash
