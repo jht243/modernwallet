@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-08-31",
+  "lastRun": "2026-09-07",
   "dropped": [
     {
       "slug": "trump-account-vs-coverdell-esa",
@@ -431,6 +431,30 @@
       "format": "comparison",
       "reason": "DUPLICATE - exact reverse of live hysa-vs-money-market (2026-08-31)",
       "score": 0
+    },
+    {
+      "slug": "sofi-vs-discover-personal-loan",
+      "format": "comparison",
+      "reason": "DataForSEO volume 10/mo, below reliable-volume floor",
+      "score": 0
+    },
+    {
+      "slug": "navy-federal-vs-penfed-personal-loan",
+      "format": "comparison",
+      "reason": "no DataForSEO volume; autocomplete estimate 0-25/mo, below reliable-volume floor",
+      "score": 0
+    },
+    {
+      "slug": "tiered-standard-repayment-plan-vs-standard-repayment-plan",
+      "format": "comparison",
+      "reason": "duplicate \u2014 already fully covered by /guides/student-loan-standard-repayment-plan/ (literal 'Legacy Standard vs Tiered Standard, side by side' section + FAQ); successor/predecessor lane check resolved DUPLICATE",
+      "score": 0
+    },
+    {
+      "slug": "40-year-mortgage-vs-30-year-mortgage",
+      "format": "comparison",
+      "reason": "duplicate \u2014 already fully covered by /guides/40-year-mortgage-explained/ ('40-year vs. 30-year mortgage' worked-example section + verdict)",
+      "score": 0
     }
   ],
   "published": [
@@ -795,6 +819,41 @@
       "slug": "chapter-7-vs-chapter-13-bankruptcy",
       "format": "comparison",
       "publishedAt": "2026-08-31"
+    },
+    {
+      "slug": "hsa-vs-roth-ira",
+      "format": "comparison",
+      "category": "hsa vs roth ira",
+      "angle": "compare",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "slug": "cd-vs-treasury-bill",
+      "format": "comparison",
+      "category": "cd vs treasury bill",
+      "angle": "compare",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "slug": "schd-vs-vym",
+      "format": "comparison",
+      "category": "schd vs vym",
+      "angle": "compare",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "slug": "dgro-vs-vig",
+      "format": "comparison",
+      "category": "dgro vs vig",
+      "angle": "compare",
+      "publishedAt": "2026-09-07"
+    },
+    {
+      "slug": "betterment-vs-wealthfront",
+      "format": "comparison",
+      "category": "betterment vs wealthfront",
+      "angle": "compare",
+      "publishedAt": "2026-09-07"
     }
   ]
 }
