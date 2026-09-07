@@ -1,0 +1,30 @@
+{
+ "slug": "day-rate-calculator--vs-hourly",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 213,
+ "floor": 120,
+ "input_tokens": 25026,
+ "output_tokens": 301,
+ "thinking_tokens": 11930,
+ "est_cost_usd": 0.0646,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 213,
+  "numbers_not_in_facts": []
+ },
+ "seconds": 36.8,
+ "response_id": "yHeeaonOCoW-_uMPpOjT8Qw",
+ "generated_at": "2026-09-07T08:38:04+0000"
+}

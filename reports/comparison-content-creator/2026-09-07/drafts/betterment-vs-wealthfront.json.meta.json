@@ -1,0 +1,38 @@
+{
+ "slug": "betterment-vs-wealthfront",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1982,
+ "floor": 1500,
+ "input_tokens": 25788,
+ "output_tokens": 3472,
+ "thinking_tokens": 17402,
+ "est_cost_usd": 0.0976,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1982,
+  "numbers_not_in_facts": [
+   "2.75",
+   "2000",
+   "3000"
+  ]
+ },
+ "seconds": 58.2,
+ "response_id": "9XWeaor-IKyzjrEPu4OHkQY",
+ "generated_at": "2026-09-07T08:30:39+0000"
+}

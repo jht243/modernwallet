@@ -1,0 +1,97 @@
+{
+  "slug": "cd-vs-treasury-bill",
+  "metaTitle": "CD vs Treasury Bill: Which Cash Option Wins in 2026?",
+  "metaDescription": "CD vs Treasury bill compared: see how Certificate of Deposit (CD) rules, T-bill state tax perks, and yields determine where you should keep cash.",
+  "h1": "CD vs Treasury Bill: Which Cash Option Should You Choose?",
+  "subtitle": "Compare certificates of deposit and short-term Treasury bills on state taxes, liquidity, and safety to choose the right place for your cash.",
+  "optionAName": "Certificate of Deposit (CD)",
+  "optionBName": "Treasury Bill (T-Bill)",
+  "introText": "A Certificate of Deposit (CD) provides a fixed return backed by bank deposit insurance, while a Treasury bill (T-bill) provides a state-tax-exempt return backed directly by the U.S. government. At ModernWallet, we evaluate cash options by calculating after-tax yields and comparing withdrawal penalties so savers can preserve capital without leaving money on the table. Your tax bracket, current market yields, and required investment timeline determine which vehicle provides the higher effective return.\n\nChecking the headline rate is not enough when you compare a CD vs Treasury bill. A saver living in a high-tax state often pockets more cash from a lower-yielding Treasury bill than from a higher-yielding bank deposit once state tax agencies claim their share. Comparing the two products requires looking past gross yields to examine net earnings, early withdrawal penalties, and secondary market liquidity.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Backing and safety",
+        "a": "FDIC or NCUA insurance up to $250,000 per depositor, per institution, per ownership category",
+        "b": "Direct backing from the full faith and credit of the U.S. government"
+      },
+      {
+        "dimension": "Common term lengths",
+        "a": "A few months up to 5 years",
+        "b": "4, 8, 13, 17, 26, and 52 weeks"
+      },
+      {
+        "dimension": "How return is paid",
+        "a": "Fixed interest rate paid periodically or credited at maturity",
+        "b": "Sold at a discount to par value; full face value paid at maturity"
+      },
+      {
+        "dimension": "Early access rules",
+        "a": "Early withdrawal penalty equal to a set number of months of interest",
+        "b": "Secondary market sale through a brokerage with price subject to rate movements"
+      },
+      {
+        "dimension": "State and local income tax",
+        "a": "Fully taxable at federal, state, and local levels",
+        "b": "Exempt from state and local income tax; subject to federal income tax"
+      },
+      {
+        "dimension": "Minimum investment",
+        "a": "Varies by bank or credit union (often $0 to $1,000)",
+        "b": "$100 minimum at TreasuryDirect in $100 increments"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "How a Certificate of Deposit Works",
+      "content": "A Certificate of Deposit (CD) is a bank deposit account that pays a fixed interest rate in exchange for keeping your principal locked for a stated term. Banks and credit unions issue these accounts to secure stable funding. In return, you receive a guaranteed yield for periods ranging from a few months to five years.\n\nSafety comes from federal deposit insurance. Commercial bank deposits carry backing from the [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov), while credit union deposits receive coverage through the [National Credit Union Administration (NCUA)](https://www.ncua.gov). Both agencies protect up to $250,000 per depositor, per institution, for each ownership category.\n\nTaking money out early costs you. Guidance from the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov) notes that banks establish their own penalty formulas based on a specified number of months of interest. That penalty can consume your earned interest or reduce your initial deposit if you exit within the first few weeks.\n\nLocking up money requires careful planning. If you want to compare fixed bank deposits against variable accounts, read our guide on [CD vs Money Market Account](/compare/cd-vs-money-market/) or examine [High-Yield Savings vs CD](/compare/hysa-vs-cd/)."
+    },
+    {
+      "heading": "How a Treasury Bill Works and Pays Returns",
+      "content": "A Treasury bill (T-bill) is a short-term debt obligation issued directly by the U.S. Department of the Treasury that sells at a discount to its face value instead of paying regular interest. You pay less than face value upfront. When the bill matures, the federal government pays you the full face value, and that difference between purchase price and par value forms your total return.\n\nThe Treasury issues bills in six standard maturities: 4, 8, 13, 17, 26, and 52 weeks. Consider a common discount scenario. You might pay $980 for a 26-week bill with a $1,000 face value, and the government returns the full $1,000 at the end of the term.\n\nBuying these securities is straightforward. Individual investors can buy bills through [TreasuryDirect](https://www.treasurydirect.gov) or through a standard brokerage account. TreasuryDirect requires a $100 minimum deposit, with additional purchases permitted in $100 increments."
+    },
+    {
+      "heading": "Deposit Insurance and Government Backing in the CD vs Treasury Bill Decision",
+      "content": "Certificates of deposit rely on agency insurance programs, while Treasury bills carry the direct backing of the U.S. government. That difference changes how large balances are protected. A bank CD is covered by the FDIC and a credit union CD is covered by the NCUA up to $250,000 per depositor per institution.\n\nTreasury bills do not use bank insurance agencies. Instead, every bill carries the direct backing of the full faith and credit of the United States. Because the federal government holds taxation power and controls the national currency, financial markets treat the risk of sovereign default as virtually zero.\n\nThis distinction matters for larger cash allocations. A saver placing $500,000 into certificates of deposit must open accounts at two separate banks to maintain full FDIC insurance. In contrast, an investor can hold millions of dollars in Treasury bills within a single brokerage account without exceeding any insurance ceiling."
+    },
+    {
+      "heading": "The State Tax Exemption in the CD vs Treasury Bill Comparison",
+      "content": "Interest earned on Treasury bills is exempt from state and local income taxes under federal law, whereas interest earned on certificates of deposit is fully taxable at all government levels. Both investments face ordinary federal income tax. The [Internal Revenue Service (IRS)](https://www.irs.gov) taxes your earnings from both assets as ordinary income, but federal law prevents state revenue departments from taxing Treasury securities.\n\nState tax rules shift your net return. For a saver in a state like California, New York, or Minnesota, a Treasury bill can generate more take-home interest than a bank CD even when the CD's published rate is somewhat higher, once the state tax bite on the CD is factored in. The higher your state tax rate, the greater your after-tax benefit from holding Treasury debt.\n\nResidents of zero-tax states face different math. In states like Florida, Texas, or Washington, where personal income tax does not exist, the Treasury tax exemption provides zero financial advantage. Savers in those states should compare both choices purely on published yields and terms.\n\nCalculating tax equivalence is simple. Take the Treasury bill yield and divide it by one minus your state income tax rate. If that adjusted figure beats the bank CD rate, the Treasury bill produces higher net cash for your household."
+    },
+    {
+      "heading": "Early Withdrawal Penalties and Secondary Market Liquidity",
+      "content": "Exiting a certificate of deposit early triggers a mandatory bank penalty, whereas exiting a Treasury bill before maturity requires selling it on the secondary market. Breaking a bank CD imposes a predictable cost. Banks calculate their penalty as a set number of months of interest, giving you an exact calculation of what an early exit will cost before you commit funds.\n\nTreasury bills trade under different liquidity rules. When you purchase a T-bill through a brokerage firm, you can sell that security on the secondary market at any time before its scheduled maturity date. That sale carries price risk.\n\nSecondary market bond prices move in the opposite direction of interest rates. If market interest rates increase after your purchase, your existing bill loses value, meaning you could receive less money than you originally invested. Conversely, falling interest rates increase the market price of your bill, allowing you to sell at a profit.\n\nHolding a bill to maturity eliminates market risk completely. The government pays you the full par value at maturity regardless of rate fluctuations during the holding period. If you need immediate access to cash without market fluctuations or withdrawal penalties, compare the [Best Money Market Accounts](/roundup/best-money-market-accounts/) for daily flexibility."
+    },
+    {
+      "heading": "Account Minimums, Term Options, and Purchasing Channels",
+      "content": "Investors can buy Treasury bills through TreasuryDirect or brokerage accounts starting at $100, while certificates of deposit are opened through commercial banks and credit unions with deposit minimums set by each institution. Bank CD minimums vary significantly across the industry. Many online banks let you open a CD with zero dollars, whereas traditional branch banks often require a higher minimum, so check the specific bank's current CD rate page before assuming a figure.\n\nTreasury bills offer rigid maturity cycles. Because bills are sold in standard terms of 4, 8, 13, 17, 26, and 52 weeks, they fit neatly into rolling cash ladders. You can schedule automatic reinvestment on TreasuryDirect to roll maturing principal into newly issued bills without manual intervention.\n\nCertificates of deposit support longer commitments. Banks routinely offer CD maturities stretching two, three, or five years, letting you lock in a specific rate for a longer timeline. Treasury debt beyond one year requires purchasing Treasury notes or bonds instead of bills.\n\nAccount management also differs. Opening CDs at multiple banks creates administrative overhead with separate account logins and multiple annual tax statements. Holding Treasury bills inside a brokerage consolidates your cash beside your equity portfolio, and our [investing hub](/investing/) covers how to integrate cash reserves with your broader investment plan."
+    }
+  ],
+  "verdict": "Choose a Treasury bill if you live in a state with income taxes. It also fits savers managing balances above the $250,000 FDIC limit or those who prefer keeping cash inside an existing brokerage account. Choose a Certificate of Deposit if an insured bank offers an elevated promotional yield that beats Treasury rates after state taxes. A CD is also the better option when you want to lock in a fixed return for two to five years. Neither option works well for savers who need immediate emergency access. If you need cash on short notice, keep your money in an accessible savings vehicle instead. Our recommendation flips toward the CD if you reside in a state with no income tax and your bank offers a higher gross yield. Before choosing a CD vs Treasury bill, compare your bank's current rate against recent Treasury auction yields to verify which account delivers the higher after-tax return.",
+  "faqItems": [
+    {
+      "question": "Are Treasury bills safer than CDs?",
+      "answer": "Both options offer virtually zero default risk when held to maturity, but their backing structures operate differently. A Certificate of Deposit (CD) is protected up to $250,000 per depositor per institution by the FDIC or NCUA. A Treasury bill (T-bill) carries the direct backing of the U.S. government with no dollar cap. For balances below $250,000, safety is practically identical. For balances above $250,000, T-bills are simpler because they do not require opening accounts across multiple banks."
+    },
+    {
+      "question": "Do I pay state tax on Treasury bill interest?",
+      "answer": "No, Treasury bill interest is completely exempt from state and local income taxes under federal law. You must still pay federal income tax on your earnings. In contrast, interest earned from a certificate of deposit is subject to both federal and state income taxes. This statutory exemption makes T-bills particularly advantageous for investors residing in states with high state income tax brackets."
+    },
+    {
+      "question": "Can I lose money on a Treasury bill?",
+      "answer": "You cannot lose money on a Treasury bill if you hold it until its scheduled maturity date. The U.S. Treasury will pay you the full par value when the term ends. However, if you purchase a bill through a brokerage and sell it on the secondary market before maturity, you could receive less than you paid. That price drop happens if market interest rates increase after your purchase date."
+    },
+    {
+      "question": "What is the minimum amount required to buy a Treasury bill?",
+      "answer": "The minimum purchase amount for a Treasury bill is $100 when buying through TreasuryDirect or a brokerage account. Investors can purchase additional amounts in increments of $100. Minimum deposit requirements for certificates of deposit vary by institution. Some online banks allow you to open a CD with zero dollars, while traditional brick-and-mortar banks often require a higher minimum, so check the specific bank's current rate page before assuming a figure."
+    },
+    {
+      "question": "Is a CD or a Treasury bill better right now?",
+      "answer": "Neither option is universally better because yields fluctuate weekly based on macroeconomic conditions and individual bank deposit needs. A Treasury bill generally produces higher net income for savers in high-tax states because of its federal exemption from state taxes. A bank CD can win if a specific bank offers a high promotional yield that outpaces Treasury rates, or if you live in a state with zero income tax."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

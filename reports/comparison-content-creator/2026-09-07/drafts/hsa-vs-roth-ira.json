@@ -1,0 +1,98 @@
+{
+  "slug": "hsa-vs-roth-ira",
+  "metaTitle": "HSA vs Roth IRA: Which Account Should You Fund First?",
+  "metaDescription": "HSA vs Roth IRA compared on 2026 limits, tax perks, withdrawal rules, and retirement strategy so you know which account to fund first.",
+  "h1": "HSA vs Roth IRA: Which Account Should You Prioritize?",
+  "subtitle": "A comparison of contribution limits, tax advantages, withdrawal flexibility, and long-term retirement strategies for both accounts.",
+  "optionAName": "HSA (Health Savings Account)",
+  "optionBName": "Roth IRA",
+  "introText": "An HSA wins on pure tax math when you have access to a qualifying high-deductible health plan because it offers three separate tax exemptions on the same deposit. At ModernWallet, we evaluate savings accounts by measuring their upfront tax reduction against their long-term withdrawal flexibility. A Roth IRA (Individual Retirement Account) works better if you lack eligible health insurance or need penalty-free access to your contributions. It also serves as the natural landing spot once you max out your health plan. Deciding between an HSA (Health Savings Account) and a Roth IRA comes down to your health plan, your cash reserves, and your timeline for retirement.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "2026 Contribution limit",
+        "a": "$4,400 self-only; $8,750 family (+$1,000 catch-up if age 55 or older)",
+        "b": "$7,500 (+$1,100 catch-up if age 50 or older, total $8,600)"
+      },
+      {
+        "dimension": "Tax treatment of contributions",
+        "a": "Pre-tax through payroll or tax-deductible on your tax return",
+        "b": "After-tax (no upfront tax deduction)"
+      },
+      {
+        "dimension": "Tax treatment of qualified withdrawals",
+        "a": "Tax-free at any age for qualified medical expenses",
+        "b": "Tax-free after age 59½ and meeting the 5-year account holding rule"
+      },
+      {
+        "dimension": "Non-qualified withdrawal penalties",
+        "a": "Ordinary income tax plus a 20% penalty (penalty waived after age 65)",
+        "b": "Original contributions withdrawn tax-free anytime; earnings face income tax and 10% penalty before 59½ unless an exception applies"
+      },
+      {
+        "dimension": "Eligibility requirements",
+        "a": "Enrolled in an HDHP with no disqualifying health coverage",
+        "b": "Taxable earned income; MAGI under $168,000 single or $252,000 married joint for 2026"
+      },
+      {
+        "dimension": "Required minimum distributions (RMDs)",
+        "a": "None at any age",
+        "b": "None during the original account owner's lifetime"
+      },
+      {
+        "dimension": "Rollover and portability rules",
+        "a": "Balances roll over indefinitely with no expiration; portable between employers",
+        "b": "Balances remain in the account indefinitely with no expiration; completely portable"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Tax Treatment and the Triple Tax Advantage of an HSA",
+      "content": "A Health Savings Account (HSA) delivers three separate tax breaks that make it one of the most efficient savings vehicles in the tax code. Contributions enter pre-tax through payroll deductions or as an above-the-line deduction on your tax return. That upfront deduction reduces your adjusted gross income (AGI) immediately. You do not need to itemize deductions on Schedule A to claim this tax break.\n\nOnce your money sits inside the account, it grows tax-free. You pay no annual taxes on interest, dividends, or capital gains. When you withdraw money for qualified medical expenses, those distributions come out tax-free as well. That three-tier tax exemption is known as the triple tax advantage.\n\nTo open and fund an HSA, you must enroll in a high-deductible health plan (HDHP) and carry no disqualifying secondary insurance. Under [Internal Revenue Service (IRS)](https://www.irs.gov) Revenue Procedure 2025-19, the 2026 HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage. Account holders aged 55 or older can contribute an additional $1,000 catch-up amount. For married couples where both spouses are 55 or older, each spouse must maintain a separate HSA to claim both catch-up amounts.\n\nThe withdrawal rules shift once you turn 65. If you take a non-medical withdrawal before age 65, the IRS charges ordinary income tax plus a 20% penalty. That penalty erases your gains. After age 65, the 20% penalty disappears. Non-medical distributions after age 65 face ordinary income tax alone, functioning like a traditional retirement account. For a direct comparison with employer-funded health accounts, see our guide on [HSA vs FSA](/compare/hsa-vs-fsa/)."
+    },
+    {
+      "heading": "Roth IRA Contribution Rules, Withdrawals, and Phase-Out Limits",
+      "content": "A Roth IRA provides tax-free withdrawals in retirement funded with money you have already paid taxes on today. You receive no upfront tax deduction when you deposit money into a Roth IRA. In exchange, your investments compound tax-free over the years. When you take qualified distributions in retirement, you pay zero federal income tax on your earnings. To qualify for tax-free earnings withdrawals, you must reach age 59½ and satisfy the five-year account aging rule.\n\nThe 2026 Roth IRA contribution limit is $7,500 for individuals under age 50. Savers aged 50 and older can add a $1,100 catch-up contribution. This adjustment raises their annual limit to $8,600. For a side-by-side view of pre-tax individual accounts, read our breakdown of [Roth IRA vs Traditional IRA](/compare/roth-ira-vs-traditional-ira/). If you have access to a Roth account at your job, compare options with our review of [Roth IRA vs Roth 401(k)](/compare/roth-ira-vs-roth-401k/).\n\nUnlike an HSA, a Roth IRA restricts contributions based on your income. For 2026, direct contributions phase out between $153,000 and $168,000 of modified adjusted gross income (MAGI) for single filers. Married couples filing jointly face a phase-out range between $242,000 and $252,000. Earners above those caps cannot make direct contributions, although a backdoor Roth conversion offers a separate legal workaround.\n\nA standout feature of the Roth IRA is contribution liquidity. You can withdraw your direct contributions at any time without taxes or penalties. That flexibility provides an emergency cushion. In addition, the Roth IRA carries no required minimum distributions (RMDs) during your lifetime."
+    },
+    {
+      "heading": "The Stealth IRA Strategy for Long-Term Growth",
+      "content": "An HSA functions as an auxiliary retirement account when you pay current medical bills out of pocket and leave your balance invested. Most account holders treat an HSA as a short-term clearinghouse for prescription costs and doctor copays. They deposit cash, claim the tax deduction, and spend the balance within weeks. That pattern saves money on taxes, but it limits long-term wealth accumulation.\n\nCompounding works best over decades. If you have adequate cash flow in your everyday budget, you can pay medical bills with regular income while your HSA remains fully invested in diversified mutual funds or exchange-traded funds. The IRS places no time limit on when you must reimburse yourself for past qualified medical expenses. You can pay an eligible hospital bill this year, store the receipt, let the investments grow for thirty years, and then withdraw that reimbursed amount tax-free in retirement.\n\nTrack every receipt carefully. You must maintain clear records, explanation of benefits statements, and itemized receipts to prove each expense was qualified if the IRS audits your return.\n\nTo implement this strategy, you must select an HSA custodian that supports investment accounts. Many HSA custodians require account holders to maintain a specific cash balance before they can move funds into investment options. That cash threshold varies by HSA provider, so review your specific plan details to see how much cash you must keep uninvested. To learn how asset allocation models fit long-term portfolios, explore our [Investing hub](/investing/)."
+    },
+    {
+      "heading": "Account Funding Priority When You Cannot Maximize Both",
+      "content": "You should prioritize an HSA ahead of a Roth IRA whenever you are enrolled in an HDHP and have enough cash to cover your deductible. That priority order relies on tax math. The HSA gives you an immediate tax deduction that lowers your tax bill this year, plus tax-free growth and tax-free withdrawals later. A Roth IRA only provides two of those three benefits because deposits are made with after-tax money.\n\nStart by capturing any 401(k) employer match offered at your job. An employer match represents an immediate return on your investment that no standalone account can match. After securing the full employer match, direct your next savings dollars into your HSA until you reach the annual cap of $4,400 for single coverage or $8,750 for family coverage.\n\nOnce your HSA is fully funded, allocate remaining investment dollars toward your Roth IRA up to the $7,500 limit. This sequence pairs the triple tax protection of an HSA with the flexible liquidity of a Roth IRA. If you do not have an HDHP, you must skip the HSA step entirely and direct your savings straight into the Roth IRA. If you want to plan your broader savings sequence, visit our [Retirement hub](/retirement/) for complete allocation models."
+    },
+    {
+      "heading": "Eligibility Constraints and Future Coverage Changes",
+      "content": "Changes in your health insurance status determine whether you can contribute to an HSA, but your accumulated balance remains yours forever. HSA funds roll over from year to year without expiration dates. There is no use-it-or-lose-it rule. The account belongs to you rather than your employer, meaning the balance moves with you if you change jobs or retire.\n\nIf you switch from an HDHP to a standard health plan, your ability to make new contributions stops immediately. However, your existing balance stays invested. You can continue to spend that money on qualified medical expenses tax-free for the rest of your life. You can also let the balance compound until age 65, when non-medical withdrawals become penalty-free under ordinary income tax rates.\n\nA Roth IRA does not depend on your healthcare choices. As long as you have taxable earned income and remain below the annual MAGI phase-out boundaries, you can contribute every year. Both accounts offer broad investment flexibility across stocks, bonds, and mutual funds. Federal guidance from [Investor.gov](https://www.investor.gov) explains how low-cost index funds help long-term investors reduce management expenses across both types of tax-sheltered accounts. Compare both fee structures before opening an account."
+    }
+  ],
+  "verdict": "Choose an HSA first if you are enrolled in an eligible high-deductible health plan and have enough savings to pay medical bills out of pocket. The triple tax advantage delivers superior tax savings by eliminating taxes on contributions, investment gains, and qualified medical withdrawals. Choose a Roth IRA first if you lack HDHP coverage, want penalty-free access to your contributions, or have already maxed out your HSA limit. This funding sequence is not for savers with ongoing, high-cost health conditions who cannot afford the high deductibles required by an HDHP. In those situations, a traditional low-deductible health plan often saves more total money than an HSA tax shelter can produce. Our recommendation would change if you lose your HDHP eligibility, enroll in Medicare, or experience a major drop in taxable income. In a zero-bracket year, an upfront HSA tax deduction provides little value compared with the penalty-free liquidity of a Roth IRA. Check your health plan documents to confirm your HDHP eligibility, review your expected out-of-pocket medical expenses, and establish automatic contributions before the tax filing deadline.",
+  "faqItems": [
+    {
+      "question": "Can I contribute to both an HSA and a Roth IRA in the same year?",
+      "answer": "Yes, you can contribute to both an HSA and a Roth IRA in the same tax year if you meet the separate eligibility criteria for each account. You must have coverage under an eligible high-deductible health plan to fund an HSA. You must also have taxable earned income and a modified adjusted gross income below the IRS phase-out limits to fund a Roth IRA directly. If you have the savings capacity, funding both accounts gives you dedicated tax-free funds for healthcare alongside flexible, tax-free retirement wealth."
+    },
+    {
+      "question": "What happens to my HSA if I lose my HDHP coverage?",
+      "answer": "If you lose your HDHP coverage, you cannot make new contributions to your HSA, but you keep all the money already in the account. The account belongs to you rather than your employer or health insurance company. You can leave the existing balance invested in mutual funds or ETFs, and you can continue to withdraw funds tax-free for qualified medical expenses at any time in the future. Once you enroll in an eligible HDHP again, you can resume contributions."
+    },
+    {
+      "question": "Is an HSA really better than a Roth IRA for retirement?",
+      "answer": "An HSA offers better tax efficiency than a Roth IRA when the funds are used for healthcare expenses in retirement. An HSA is funded with pre-tax dollars, grows tax-free, and permits tax-free withdrawals for medical bills. A Roth IRA is funded with after-tax dollars. However, the Roth IRA is better for general living expenses before age 65 because non-medical HSA distributions before age 65 trigger income taxes plus a 20% penalty. After age 65, the HSA penalty disappears, leveling the playing field for non-medical expenses."
+    },
+    {
+      "question": "Can I use HSA funds for anything besides medical expenses?",
+      "answer": "You can spend HSA funds on non-medical expenses, but the tax consequences depend on your age. If you withdraw money for non-medical reasons before age 65, you must pay ordinary income tax plus a 20% penalty on the distribution. After you turn 65, the 20% penalty is eliminated. At that stage, the account operates identically to a traditional IRA for general retirement spending, requiring only ordinary income tax on non-medical distributions."
+    },
+    {
+      "question": "What is the penalty for a non-qualified HSA withdrawal before age 65?",
+      "answer": "The penalty for a non-qualified HSA withdrawal taken before age 65 is 20% of the distributed amount, assessed in addition to regular income tax. For example, if you withdraw $5,000 for a non-medical purchase before age 65, you owe a $1,000 penalty plus your marginal income tax rate on that $5,000. This 20% penalty is significantly higher than the 10% early withdrawal penalty applied to traditional IRAs and 401(k) plans."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

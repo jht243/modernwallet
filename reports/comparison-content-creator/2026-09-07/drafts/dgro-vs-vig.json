@@ -1,0 +1,110 @@
+{
+  "slug": "dgro-vs-vig",
+  "metaTitle": "DGRO vs VIG: Which Dividend Growth ETF Wins in 2026?",
+  "metaDescription": "DGRO vs VIG compared on expense ratios, turnover, index screens, and holdings breadth so you can pick the right dividend growth ETF.",
+  "h1": "DGRO vs VIG: Which Dividend Growth ETF Fits Your Portfolio?",
+  "subtitle": "A direct comparison of DGRO and VIG covering expense ratios, index rules, portfolio turnover, and diversification for long-term investors.",
+  "optionAName": "iShares Core Dividend Growth ETF (DGRO)",
+  "optionBName": "Vanguard Dividend Appreciation ETF (VIG)",
+  "introText": "Vanguard Dividend Appreciation ETF (VIG) is the stronger choice for most taxable brokerage accounts due to its lower expense ratio and minimal portfolio turnover, while iShares Core Dividend Growth ETF (DGRO) works better for investors seeking broader diversification across roughly 390 holdings. At ModernWallet, we evaluate core index funds to help long-term investors make disciplined allocation decisions based on verifiable data.\n\nWhen comparing DGRO and VIG, understand that both exchange-traded funds (ETFs) follow a dividend growth investing strategy rather than a high-yield approach. Both funds require a documented history of regular dividend increases instead of simply buying stocks with the highest current payout.\n\nThe [iShares Core Dividend Growth ETF (DGRO)](https://www.ishares.com) casts a wide net across dividend payers, holding roughly 390 stocks for an annual fee of 0.08%. The [Vanguard Dividend Appreciation ETF (VIG)](https://investor.vanguard.com) screens more strictly, eliminating real estate stocks and keeping portfolio turnover at 8% with an expense ratio of just 0.04%.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Underlying index tracked",
+        "a": "Morningstar US Dividend Growth Index",
+        "b": "S&P U.S. Dividend Growers Index"
+      },
+      {
+        "dimension": "Total annual operating expense ratio",
+        "a": "0.08% per summary prospectus",
+        "b": "0.04% (0.03% management fee + 0.01% other expenses)"
+      },
+      {
+        "dimension": "Number of equity holdings",
+        "a": "Roughly 390 holdings (389 to 390 across recent fact sheets)",
+        "b": "Tighter, concentrated portfolio of qualified dividend growers"
+      },
+      {
+        "dimension": "Portfolio turnover rate",
+        "a": "Higher turnover driven by five-year screening rebalances",
+        "b": "8% (lowest among widely held dividend ETFs in our review)"
+      },
+      {
+        "dimension": "Real estate investment trust (REIT) exposure",
+        "a": "Includes eligible dividend-growing equities across sectors",
+        "b": "Strictly excludes REITs by index construction rule"
+      },
+      {
+        "dimension": "Distribution schedule",
+        "a": "Quarterly distributions",
+        "b": "Quarterly distributions"
+      },
+      {
+        "dimension": "Worst calendar quarter drawdown",
+        "a": "-21.91% (quarter ended March 31, 2020)",
+        "b": "Check Vanguard's official fund page for historical stress metrics"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Index Methodology and Stock Screening Rules",
+      "content": "DGRO tracks the Morningstar US Dividend Growth Index, which applies a quantitative screen to select U.S. equities with sustained dividend growth. Unlike traditional dividend aristocrat indexes that demand twenty-five consecutive years of dividend hikes, DGRO uses a five-year qualification window. This shorter streak requirement permits younger, fast-growing technology and healthcare firms to enter the fund once they initiate and raise dividends.\n\nThe index also excludes companies whose payout ratios exceed 75%, which prevents firms with strained cash flows from remaining in the portfolio. That screen protects the fund from declining businesses that borrow money to maintain an unsustainable payout.\n\nVIG tracks the S&P U.S. Dividend Growers Index, which applies a stricter ten-year minimum requirement of uninterrupted dividend increases. In addition to that ten-year hurdle, the index excludes the top 25% highest-yielding qualifying stocks to eliminate potential value traps. A company whose yield has spiked due to a plunging stock price will not pass that filter.\n\nAnother structural contrast lies in how each fund treats the real estate sector. VIG explicitly excludes Real Estate Investment Trusts (REITs) from its underlying index by rule. DGRO permits qualifying dividend-growing companies across a broader set of sectors. If you want a diversified portfolio that includes dividend-growing real estate equities, DGRO accommodates that preference, while VIG intentionally leaves real estate out.\n\nIndex providers occasionally revise these screening thresholds. Confirm the exact current rules on Morningstar's and S&P's own published index methodology documents before assuming a specific cutoff still applies."
+    },
+    {
+      "heading": "Expense Ratios and Long-Term Cost in DGRO vs VIG",
+      "content": "VIG holds a distinct cost advantage with a total annual operating expense ratio of 0.04%, compared to DGRO at 0.08%. Vanguard's summary prospectus dated May 28, 2026 breaks down that 0.04% fee into a 0.03% management fee and 0.01% in other expenses. DGRO's summary prospectus lists a flat 0.08% total annual operating expense ratio.\n\nOn a modest initial balance, the dollar difference between these two funds looks tiny. A $10,000 investment in VIG costs $4 per year, whereas the same balance in DGRO costs $8 annually. That four-dollar annual spread will not alter your financial future in the early years of saving.\n\nThe compounding effect over decades changes the math considerably. Consider a $200,000 balance compounding at 7% annually over a thirty-year horizon. That four basis point fee gap, left alone to compound, can add up to a few thousand dollars in foregone growth over that horizon, a real cost, though a rough illustration rather than a guaranteed figure since actual returns vary. In low-cost index investing, saving basis points is one of the few guaranteed advantages an investor can secure. For cost-conscious investors comparing DGRO and VIG, Vanguard provides that edge directly."
+    },
+    {
+      "heading": "Portfolio Turnover and Taxes: DGRO vs VIG in Brokerage Accounts",
+      "content": "VIG delivers exceptional tax efficiency in non-retirement accounts thanks to an 8% portfolio turnover rate. That 8% figure represents the lowest turnover rate among widely held dividend funds in our [Best Dividend ETFs of 2026](/roundup/best-dividend-etfs/) review. Low turnover means the fund manager replaces fewer stocks annually, reducing the likelihood of realizing taxable capital gains within the portfolio.\n\nDGRO experiences higher portfolio rebalancing activity because its five-year dividend screen covers a broader, faster-shifting universe. When companies adjust their capital allocation policies, names enter and exit DGRO's index more frequently than they do in VIG's ten-year basket. More trades inside the fund create more potential transaction drag and rebalancing friction.\n\nIn a standard taxable brokerage account, tax drag can quietly erode after-tax returns. While both ETFs use customized creation and redemption baskets to purge low-basis shares without triggering capital gains distributions, a fund with an 8% turnover rate remains easier to hold in taxable accounts. If you hold these assets in a tax-advantaged account like an Individual Retirement Account (IRA), internal turnover ceases to be a tax concern."
+    },
+    {
+      "heading": "Holdings Breadth, Diversification, and Capital Allocation",
+      "content": "DGRO provides broader portfolio diversification by holding roughly 390 stocks across various market capitalizations. iShares' fund fact sheet dated June 30, 2026 reported 389 holdings with net assets of approximately $41.2 billion, while its July 31, 2026 fact sheet listed 390 holdings. The fund spreads its assets across a wider mix of mid-cap and large-cap companies.\n\nVIG holds a more concentrated portfolio that focuses on established blue-chip dividend payers. Because VIG requires a full decade of consistent dividend growth, its portfolio leans heavily toward mature corporations with durable business models. This conservative selection screen creates a portfolio that behaves somewhat more like a traditional large-cap core fund.\n\nDGRO launched on June 10, 2014, and has grown into one of the core building blocks for self-directed dividend investors on our [investing hub](/investing/). Its wider holdings count means that single-stock blowups have a smaller relative footprint on total fund performance. Investors who prefer maximum single-company risk dilution often favor DGRO's wider 390-stock roster."
+    },
+    {
+      "heading": "Downside Risk and Historical Drawdowns Under Market Stress",
+      "content": "Dividend growth strategies generally aim to moderate portfolio drawdowns during broad equity market selloffs. DGRO experienced a worst calendar quarter on record of -21.91% for the quarter ended March 31, 2020, during the rapid onset of the COVID-19 pandemic drop. That figure demonstrates that dividend growth funds remain fully exposed to broad equity market downturns.\n\nVIG's comparable quarterly drawdown figure from that specific historical quarter is not cataloged on this page's closed data set. Investors should examine Vanguard's official fund performance page to review historical drawdown metrics across identical stress windows. Comparing performance across multiple market cycles provides context on how defensive screens hold up when market liquidity dries up.\n\nCompanies with long records of growing dividends often possess stronger balance sheets and more predictable cash flows than the broader market. That financial stability can help cushion share price declines relative to non-dividend growth stocks. However, neither ETF behaves like a bond fund or a cash equivalent during a panic. You must be prepared for equity-level volatility during severe economic shocks."
+    },
+    {
+      "heading": "Dividend Growth Strategy Compared with High Current Yield",
+      "content": "Neither DGRO nor VIG is engineered to generate maximum immediate cash distributions today. Both funds prioritize dividend growth rate over current payout yield, screening for companies that reinvest capital to expand payouts year after year. If your financial plan requires maximizing immediate income to cover living expenses, you will likely find these funds disappointing on day one.\n\nInvestors seeking immediate cash flow often compare high-yield options, such as those evaluated in our [SCHD vs VYM](/compare/schd-vs-vym/) analysis. High-yield funds screen for current dividend yield, resulting in higher current income distributions but potentially lower dividend growth rates over time. DGRO and VIG trade current yield for higher long-term dividend trajectory and capital appreciation potential.\n\nNeither fund's current 30-day Securities and Exchange Commission (SEC) yield is published on this static comparison page because market yields fluctuate daily. We advise you to check each fund's official fact sheet to review current yield numbers before allocating capital. Evaluating current yield alongside dividend growth history ensures that your choice matches your timeline."
+    },
+    {
+      "heading": "Account Placement and Portfolio Strategy Considerations",
+      "content": "The decision between DGRO and VIG often becomes clear once you determine where the fund will reside. In a taxable brokerage account, VIG holds the structural upper hand with its 0.04% expense ratio and its 8% portfolio turnover. Lower operating expenses and minimal rebalancing activity help keep after-tax compounding intact.\n\nIn a tax-deferred account, such as a traditional IRA or a solo 401(k), the tax consequences of turnover vanish completely. In that tax-sheltered environment, DGRO's broader ~390-holding portfolio and five-year dividend qualification screen can shine. DGRO gives you greater exposure to dividend-paying companies that have not yet achieved VIG's mandatory ten-year payout track record.\n\nBoth funds distribute dividends on a quarterly schedule, giving you regular income to reinvest or withdraw. If you use automated dividend reinvestment plans, both funds compound smoothly over multi-year holding periods. Your decision should reflect whether you want maximum large-cap concentration or broader multi-sector equity exposure."
+    },
+    {
+      "heading": "Where the DGRO vs VIG Decision Turns for Your Portfolio",
+      "content": "A four-basis-point difference in expense ratios is not enough by itself to justify an abrupt portfolio overhaul. What truly drives this decision is the underlying portfolio construction and the exclusion rules each index enforces. If you believe real estate investment trusts belong in a diversified equity allocation, VIG will not satisfy you because its index excludes them entirely.\n\nIf you want a fund that excludes potential yield traps by cutting out the highest-yielding quartile of stocks, VIG provides that automated discipline. DGRO's methodology is more permissive, granting entry to newer dividend payers and keeping exposure broad across roughly 390 companies. Both approaches have delivered reliable dividend growth, but they cater to slightly different risk tolerances.\n\nBefore executing a trade between DGRO and VIG, inspect the top ten holdings on each fund's fact sheet to confirm how their sector weightings align with your broader asset allocation."
+    }
+  ],
+  "verdict": "Choose Vanguard Dividend Appreciation ETF (VIG) if you want the lowest annual fee at 0.04% and minimal 8% portfolio turnover, especially when investing inside a taxable brokerage account. Choose iShares Core Dividend Growth ETF (DGRO) if you prefer broader diversification across roughly 390 companies and want exposure to newer dividend growers with five-year track records. This comparison is not for investors who need maximum immediate cash flow right now to pay living expenses; those investors should look at dedicated high-current-yield funds instead. Our verdict would change in favor of DGRO for taxable accounts if iShares reduced DGRO's expense ratio below 0.04% and lowered its turnover, or if Vanguard altered VIG's underlying index to eliminate its historical tax efficiency advantage.",
+  "faqItems": [
+    {
+      "question": "Is DGRO or VIG better for dividend growth investing?",
+      "answer": "VIG is generally better for cost-focused investors and taxable accounts due to its 0.04% expense ratio and low 8% turnover, while DGRO is better for investors seeking broader diversification across roughly 390 holdings. Both funds successfully execute a dividend growth strategy, but VIG uses a stricter ten-year dividend growth screen compared to DGRO's five-year screen. Your choice depends on whether you prefer lower ongoing fund expenses or broader multi-cap exposure."
+    },
+    {
+      "question": "Which fund has the lower expense ratio between DGRO and VIG?",
+      "answer": "VIG has the lower expense ratio at 0.04%, compared to DGRO's expense ratio of 0.08%. Vanguard's summary prospectus dated May 28, 2026 lists VIG's fee as a 0.03% management fee plus 0.01% in other expenses. DGRO's summary prospectus lists a total annual operating expense ratio of 0.08%. Over decades of investing, that four basis point cost difference compounds into meaningful dollar savings on large balances."
+    },
+    {
+      "question": "Do DGRO and VIG hold real estate investment trusts?",
+      "answer": "DGRO can hold eligible real estate companies that meet its dividend growth criteria, whereas VIG strictly excludes Real Estate Investment Trusts (REITs) by index rule. VIG tracks the S&P U.S. Dividend Growers Index, which mandates the total exclusion of REITs from the portfolio. If you want exposure to real estate dividend payers within your core dividend ETF, DGRO accommodates that goal, while VIG intentionally omits the sector."
+    },
+    {
+      "question": "Why does portfolio turnover matter when comparing DGRO and VIG?",
+      "answer": "Portfolio turnover measures how frequently a fund buys and sells holdings, which directly impacts trading costs and tax efficiency. VIG reported an 8% portfolio turnover rate, the lowest among the widely held dividend ETFs in our review. Lower turnover helps minimize realized capital gains distributions in taxable brokerage accounts. DGRO experiences higher turnover due to its broader, five-year dividend screening rules."
+    },
+    {
+      "question": "Should an investor choose DGRO or VIG over high-yield dividend funds?",
+      "answer": "Investors should choose DGRO or VIG if their goal is long-term dividend growth, capital appreciation, and inflation protection rather than immediate income. Neither DGRO nor VIG is designed to maximize current yield today. If your primary objective is receiving the largest possible cash payout immediately, high-yield options like SCHD or VYM may suit your needs better. Check each fund's current fact sheet to review its 30-day SEC yield before making an allocation."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

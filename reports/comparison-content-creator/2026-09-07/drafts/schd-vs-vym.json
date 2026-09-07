@@ -1,0 +1,97 @@
+{
+  "slug": "schd-vs-vym",
+  "metaTitle": "SCHD vs VYM: Which Dividend Fund Wins in 2026?",
+  "metaDescription": "SCHD vs VYM compared: analyze index screening, expense ratios, portfolio concentration, and holdings to choose the right dividend fund for your portfolio.",
+  "h1": "SCHD vs VYM: Schwab U.S. Dividend Equity vs Vanguard High Dividend Yield",
+  "subtitle": "A guide to how screening rules, expense ratios, and portfolio concentration separate Schwab and Vanguard's flagship dividend funds.",
+  "optionAName": "Schwab U.S. Dividend Equity ETF (SCHD)",
+  "optionBName": "Vanguard High Dividend Yield ETF (VYM)",
+  "introText": "The Schwab U.S. Dividend Equity exchange-traded fund (ETF), known as SCHD, applies a quality screen on top of yield, while the Vanguard High Dividend Yield ETF, known as VYM, offers broader high-yield exposure at an even lower fee.\n\nAt ModernWallet, we evaluate index rules and prospectuses to show how portfolio mechanics shape long-term returns. The central decision driver is whether you want a curated portfolio of 100 financially vetted dividend payers or the broadest, cheapest exposure to above-average market yields.\n\nBoth funds trade commission-free across major brokerage platforms, making transaction fees a non-factor. [Schwab Asset Management](https://www.schwabassetmanagement.com) charges a 0.06% annual expense ratio for SCHD, while [Vanguard](https://investor.vanguard.com) charges 0.04% for VYM. Because dividend yields shift every trading day with stock price movements, understanding index construction matters far more than comparing a snapshot of recent payouts.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Underlying index tracked",
+        "a": "Dow Jones U.S. Dividend 100 Index",
+        "b": "FTSE High Dividend Yield Index"
+      },
+      {
+        "dimension": "Total annual operating expenses",
+        "a": "0.06% per summary prospectus",
+        "b": "0.04% per summary prospectus (dated February 27, 2026)"
+      },
+      {
+        "dimension": "Quality screening criteria",
+        "a": "10-year dividend history, cash flow to total debt, return on equity (ROE), yield, 5-year dividend growth",
+        "b": "None; ranks common stocks by forecast yield with no financial health screens"
+      },
+      {
+        "dimension": "Portfolio holdings count",
+        "a": "Fixed roster of 100 stocks",
+        "b": "Broad basket holding several hundred stocks"
+      },
+      {
+        "dimension": "Portfolio concentration limits",
+        "a": "Maximum 4% per stock and 25% per sector at rebalance",
+        "b": "Market-cap weighted with no individual stock cap beyond index rules"
+      },
+      {
+        "dimension": "Excluded asset classes",
+        "a": "Real Estate Investment Trusts (REITs), MLPs, preferred stocks, convertibles",
+        "b": "Real Estate Investment Trusts (REITs)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Index Rules and Stock Selection Screens",
+      "content": "SCHD selects its holdings through a multi-factor financial health screen, whereas VYM selects stocks purely by ranking them by forecast dividend yield. To qualify for SCHD, a stock must have paid regular dividends for at least 10 consecutive years. The Dow Jones U.S. Dividend 100 Index then evaluates qualifying dividend payers across four fundamental metrics: cash flow to total debt, return on equity (ROE), dividend yield, and five-year dividend growth.\n\nEligible securities are ranked by an equal-weighted composite score of those four metrics to form a fixed portfolio of 100 stocks. The index methodology excludes Real Estate Investment Trusts (REITs), master limited partnerships (MLPs), preferred shares, and convertible debt. This mechanical barrier eliminates financially troubled businesses that artificially boost their yields as their underlying share prices decline.\n\nVYM takes an entirely different approach by tracking the FTSE High Dividend Yield Index. This index ranks U.S. common stocks by forecast dividend yield and includes the highest-yielding names with no dividend payment streak requirement or balance-sheet quality screen. The FTSE index excludes REITs, and Vanguard's summary prospectus notes that the fund invests at least 80% of net assets in index constituents."
+    },
+    {
+      "heading": "Portfolio Concentration and Sector Limits",
+      "content": "SCHD enforces strict single-stock and sector limits, whereas VYM weights its positions by market capitalization across several hundred companies. Under SCHD's index rules, no single stock can exceed 4% of the fund and no individual sector can exceed 25% at the time of construction or rebalancing. These caps prevent any single industry or troubled corporation from overwhelming the broader portfolio during an unexpected economic shock.\n\nBecause SCHD concentrates its capital into exactly 100 stocks, its top 10 positions typically make up a sizable share of the fund's total assets. Check the fund's current fact sheet for the exact figure, since it shifts at each rebalance. Investors receive focused exposure to companies that pass stringent cash-flow checks, but that focus carries higher company-specific concentration than an unscreened fund. You can explore how asset concentration shapes portfolio risk across the resources in our [Investing hub](/investing/).\n\nVYM distributes its assets across several hundred stocks, creating far greater single-company diversification. The fund weights holdings strictly by market capitalization, allowing heavyweight blue-chip corporations to occupy its top spots while hundreds of smaller holdings sit in the tail. This structure eliminates single-stock blowup risk, but it also spreads your money across hundreds of names that may possess weaker balance sheets."
+    },
+    {
+      "heading": "Expense Ratios and Long-Term Fund Costs",
+      "content": "VYM holds a measurable fee advantage with an annual operating expense ratio of 0.04% compared to SCHD's 0.06%. Vanguard's summary prospectus, dated February 27, 2026, confirms the 0.04% fee, which remains tied for the lowest cost among widely held dividend funds. Schwab Asset Management publishes an annual expense ratio of 0.06% in SCHD's summary prospectus, keeping both funds near the lowest pricing band in the asset management industry.\n\nThe cost difference originates in the mechanical requirements of running each fund. VYM tracks an unscreened market-cap index with minimal rebalancing turnover, allowing Vanguard to run the portfolio with bare-bones operating overhead. SCHD requires continuous accounting verification across four fundamental financial metrics alongside strict quarterly rebalancing to maintain its 4% single-stock and 25% sector caps.\n\nIn actual dollar terms, this two-basis-point difference amounts to $2 per year on a $10,000 balance, or $20 annually on a $100,000 balance. You can calculate how small basis-point fee variations compound over multi-decade holding periods with our [investment growth calculator](/investing/investment-growth-calculator/). Because a $20 annual gap on a $100,000 portfolio is so narrow, the screening criteria and resulting portfolio holdings should drive your decision rather than the fee alone."
+    },
+    {
+      "heading": "Quality Screens Versus Broad Market Yield",
+      "content": "SCHD's multi-factor screen prevents high-yielding companies with deteriorating balance sheets from entering the portfolio. When businesses experience dropping revenues and declining share prices, their dividend yields rise artificially, luring yield-focused investors into troubled situations. By requiring healthy return on equity and substantial cash flow relative to total debt, SCHD removes companies that pay distributions using borrowed money.\n\nThis balance-sheet protection comes with an obvious trade-off. By demanding 10 consecutive years of dividend payments, SCHD excludes newer dividend-paying enterprises and capital-intensive companies that carry higher debt loads. Cyclical producers, restructuring corporations, and high-yielding utilities that fall just short of the strict return-on-equity bar are left out completely.\n\nVYM embraces this broader market reality by buying high-yielding common stocks without judging corporate balance sheets or historic payment streaks. This design lets VYM participate in cyclical recoveries and capture distributions across sectors that SCHD avoids. We compare how screening rules and portfolio turnover influence total return across different market environments in our guide to the [Best Dividend ETFs of 2026](/roundup/best-dividend-etfs/)."
+    },
+    {
+      "heading": "Portfolio Overlap and the Cost of Holding Both",
+      "content": "Owning both SCHD and VYM in the same investment account creates substantial portfolio overlap without delivering genuine asset diversification. Because both funds invest in large-cap domestic dividend payers, their top holdings frequently include many of the same major pharmaceutical, industrial, and financial corporations. Holding both simultaneously means you are paying two management fees for significant duplicate equity exposure.\n\nInvestors considering holding both should examine the top holdings disclosed on each fund's official website. Comparing the published top-10 lists on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) demonstrates how closely their major positions mirror one another. When a substantial portion of top assets overlaps between two funds, dividing your capital between them simply dilutes your intended investment strategy.\n\nHolding both funds also creates conflicting portfolio mechanics. If you favor SCHD's strict debt and cash-flow screens, allocating capital to VYM introduces unscreened, leveraged companies that weaken that thesis. If you want VYM's broad market-cap exposure, allocating capital to SCHD concentrates your money back into 100 stocks and defeats the broad-basket strategy."
+    },
+    {
+      "heading": "Matching Each Fund to Your Income Strategy",
+      "content": "Choosing the right fund depends on whether you value a curated list of high-quality balance sheets or broad, market-cap-weighted yield coverage. Investors seeking dependable corporate fundamentals and steady historical dividend growth find a natural home in SCHD. The fund's 100-stock roster provides focused exposure to profitable companies that generate enough cash flow to service debt while raising their shareholder distributions.\n\nInvestors who want wide market representation with minimal tracking complexity should select VYM instead. By holding several hundred stocks, VYM absorbs dividend reductions from individual distressed companies without suffering dramatic drops in fund-level distribution yield. The lower 0.04% expense ratio also makes VYM ideal for hands-off indexers seeking the cheapest broad dividend basket available.\n\nBefore committing new investment dollars, consult each fund's official fact sheet to evaluate its current 30-day SEC yield and sector weighting. Because share prices and dividend yields shift continuously throughout the trading year, reviewing current prospectus disclosures ensures your allocation reflects accurate market numbers. Reviewing those disclosures alongside your existing brokerage holdings helps you avoid unintentionally overweighting specific market sectors or companies."
+    }
+  ],
+  "verdict": "Choose SCHD if you want a disciplined index that demands strong balance sheets, robust cash flows, and 10 consecutive years of dividend payments before including a stock. The compromise is a concentrated 100-holding portfolio that places heavier weight on individual companies. Choose VYM if you prefer the lowest possible expense ratio and broad, market-cap-weighted exposure across several hundred dividend payers without exclusionary screens.\n\nNeither fund is the right choice for investors seeking aggressive dividend growth rather than current income yield. If your objective is rapid future distribution expansion over current yield, dedicated dividend-growth funds such as Vanguard Dividend Appreciation ETF (VIG) or iShares Core Dividend Growth ETF (DGRO) serve that goal better. Our verdict would flip if Schwab or Vanguard altered either fund's screening criteria, expense ratios, or portfolio concentration rules in a future prospectus update.\n\nTo make your final decision between SCHD and VYM, check each fund's official fact sheet on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) to compare current 30-day SEC yields and top-10 holdings.",
+  "faqItems": [
+    {
+      "question": "Is SCHD or VYM better for dividend income?",
+      "answer": "Neither fund guarantees higher dividend income because dividend yields fluctuate continuously with stock prices. VYM captures a broad market of higher-yielding U.S. common stocks, while SCHD filters for 100 dividend payers with strong cash flows and balance sheets. Investors should check the current 30-day SEC yield on each fund's official fact sheet to compare current income distributions."
+    },
+    {
+      "question": "Do SCHD and VYM overlap in holdings?",
+      "answer": "SCHD and VYM share substantial portfolio overlap because both funds select from large-cap U.S. dividend-paying equities. While VYM holds several hundred stocks and SCHD holds exactly 100, many top holdings appear in both portfolios. You can confirm the exact degree of overlap by comparing the top-10 holdings published on each fund's respective fact sheet."
+    },
+    {
+      "question": "Which has the lower expense ratio, SCHD or VYM?",
+      "answer": "VYM features the lower expense ratio at 0.04% annually, as confirmed in Vanguard's summary prospectus dated February 27, 2026. SCHD charges 0.06% per its Schwab summary prospectus. The two-basis-point difference equals $2 per year for every $10,000 invested, making both funds exceptionally low-cost options for long-term investors."
+    },
+    {
+      "question": "Should I hold both SCHD and VYM at the same time?",
+      "answer": "Holding both funds simultaneously is generally redundant for individual investors. Because both ETFs target large-cap U.S. dividend payers, owning both leads to duplicated corporate holdings and overlapping sector exposure. Investors generally achieve cleaner portfolio construction by picking either SCHD for balance-sheet quality or VYM for broad market diversification."
+    },
+    {
+      "question": "Is SCHD or VYM better for dividend growth?",
+      "answer": "SCHD provides a stronger structural tilt toward dividend growth because its index requires a 10-year payment history and screens for five-year dividend growth. VYM ranks stocks by forecast dividend yield without requiring historic dividend growth or balance-sheet screens. However, investors prioritizing rapid distribution growth should evaluate dedicated dividend-growth funds like VIG or DGRO alongside these high-yield options."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

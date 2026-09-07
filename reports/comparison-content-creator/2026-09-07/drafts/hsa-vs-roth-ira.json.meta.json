@@ -1,0 +1,37 @@
+{
+ "slug": "hsa-vs-roth-ira",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2178,
+ "floor": 1500,
+ "input_tokens": 25928,
+ "output_tokens": 3512,
+ "thinking_tokens": 17612,
+ "est_cost_usd": 0.0987,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2178,
+  "numbers_not_in_facts": [
+   "1100",
+   "5000"
+  ]
+ },
+ "seconds": 63.9,
+ "response_id": "G3Seas6QG_K2_PUP9eWOqA4",
+ "generated_at": "2026-09-07T08:22:50+0000"
+}

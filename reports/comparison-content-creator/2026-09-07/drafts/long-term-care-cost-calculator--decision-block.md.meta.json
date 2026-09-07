@@ -1,0 +1,30 @@
+{
+ "slug": "long-term-care-cost-calculator--decision-block",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 218,
+ "floor": 150,
+ "input_tokens": 25205,
+ "output_tokens": 333,
+ "thinking_tokens": 26853,
+ "est_cost_usd": 0.1209,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 218,
+  "numbers_not_in_facts": []
+ },
+ "seconds": 76.8,
+ "response_id": "LXeeauDVD8jg_uMPj_aq6A0",
+ "generated_at": "2026-09-07T08:36:09+0000"
+}

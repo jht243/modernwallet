@@ -11396,6 +11396,485 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Personal Loan Calculator", href: "/personal-loan/" },
     ],
   },
+  {
+    slug: "hsa-vs-roth-ira",
+    updated: "2026-09-07",
+    title: "HSA vs Roth IRA: Which Account Should You Fund First?",
+    metaDescription:
+      "HSA vs Roth IRA compared on 2026 limits, tax perks, withdrawal rules, and retirement strategy so you know which account to fund first.",
+    targetKeyword: "hsa vs roth ira",
+    optionA: "HSA (Health Savings Account)",
+    optionB: "Roth IRA",
+    h1: "HSA vs Roth IRA: Which Account Should You Prioritize?",
+    introText:
+      "An HSA wins on pure tax math when you have access to a qualifying high-deductible health plan because it offers three separate tax exemptions on the same deposit. At ModernWallet, we evaluate savings accounts by measuring their upfront tax reduction against their long-term withdrawal flexibility. A Roth IRA (Individual Retirement Account) works better if you lack eligible health insurance or need penalty-free access to your contributions. It also serves as the natural landing spot once you max out your health plan. Deciding between an HSA (Health Savings Account) and a Roth IRA comes down to your health plan, your cash reserves, and your timeline for retirement.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 Contribution limit", a: "$4,400 self-only; $8,750 family (+$1,000 catch-up if age 55 or older)", b: "$7,500 (+$1,100 catch-up if age 50 or older, total $8,600)" },
+        { dimension: "Tax treatment of contributions", a: "Pre-tax through payroll or tax-deductible on your tax return", b: "After-tax (no upfront tax deduction)" },
+        { dimension: "Tax treatment of qualified withdrawals", a: "Tax-free at any age for qualified medical expenses", b: "Tax-free after age 59½ and meeting the 5-year account holding rule" },
+        { dimension: "Non-qualified withdrawal penalties", a: "Ordinary income tax plus a 20% penalty (penalty waived after age 65)", b: "Original contributions withdrawn tax-free anytime; earnings face income tax and 10% penalty before 59½ unless an exception applies" },
+        { dimension: "Eligibility requirements", a: "Enrolled in an HDHP with no disqualifying health coverage", b: "Taxable earned income; MAGI under $168,000 single or $252,000 married joint for 2026" },
+        { dimension: "Required minimum distributions (RMDs)", a: "None at any age", b: "None during the original account owner's lifetime" },
+        { dimension: "Rollover and portability rules", a: "Balances roll over indefinitely with no expiration; portable between employers", b: "Balances remain in the account indefinitely with no expiration; completely portable" },
+      ],
+    },
+    verdict:
+      "Choose an HSA first if you are enrolled in an eligible high-deductible health plan and have enough savings to pay medical bills out of pocket. The triple tax advantage delivers superior tax savings by eliminating taxes on contributions, investment gains, and qualified medical withdrawals. Choose a Roth IRA first if you lack HDHP coverage, want penalty-free access to your contributions, or have already maxed out your HSA limit. This funding sequence is not for savers with ongoing, high-cost health conditions who cannot afford the high deductibles required by an HDHP. In those situations, a traditional low-deductible health plan often saves more total money than an HSA tax shelter can produce. Our recommendation would change if you lose your HDHP eligibility, enroll in Medicare, or experience a major drop in taxable income. In a zero-bracket year, an upfront HSA tax deduction provides little value compared with the penalty-free liquidity of a Roth IRA. Check your health plan documents to confirm your HDHP eligibility, review your expected out-of-pocket medical expenses, and establish automatic contributions before the tax filing deadline.",
+    sections: [
+      {
+        heading: "Tax Treatment and the Triple Tax Advantage of an HSA",
+        content:
+          "A Health Savings Account (HSA) delivers three separate tax breaks that make it one of the most efficient savings vehicles in the tax code. Contributions enter pre-tax through payroll deductions or as an above-the-line deduction on your tax return. That upfront deduction reduces your adjusted gross income (AGI) immediately. You do not need to itemize deductions on Schedule A to claim this tax break.\n\nOnce your money sits inside the account, it grows tax-free. You pay no annual taxes on interest, dividends, or capital gains. When you withdraw money for qualified medical expenses, those distributions come out tax-free as well. That three-tier tax exemption is known as the triple tax advantage.\n\nTo open and fund an HSA, you must enroll in a high-deductible health plan (HDHP) and carry no disqualifying secondary insurance. Under [Internal Revenue Service (IRS)](https://www.irs.gov) Revenue Procedure 2025-19, the 2026 HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage. Account holders aged 55 or older can contribute an additional $1,000 catch-up amount. For married couples where both spouses are 55 or older, each spouse must maintain a separate HSA to claim both catch-up amounts.\n\nThe withdrawal rules shift once you turn 65. If you take a non-medical withdrawal before age 65, the IRS charges ordinary income tax plus a 20% penalty. That penalty erases your gains. After age 65, the 20% penalty disappears. Non-medical distributions after age 65 face ordinary income tax alone, functioning like a traditional retirement account. For a direct comparison with employer-funded health accounts, see our guide on [HSA vs FSA](/compare/hsa-vs-fsa/).",
+      },
+      {
+        heading: "Roth IRA Contribution Rules, Withdrawals, and Phase-Out Limits",
+        content:
+          "A Roth IRA provides tax-free withdrawals in retirement funded with money you have already paid taxes on today. You receive no upfront tax deduction when you deposit money into a Roth IRA. In exchange, your investments compound tax-free over the years. When you take qualified distributions in retirement, you pay zero federal income tax on your earnings. To qualify for tax-free earnings withdrawals, you must reach age 59½ and satisfy the five-year account aging rule.\n\nThe 2026 Roth IRA contribution limit is $7,500 for individuals under age 50. Savers aged 50 and older can add a $1,100 catch-up contribution. This adjustment raises their annual limit to $8,600. For a side-by-side view of pre-tax individual accounts, read our breakdown of [Roth IRA vs Traditional IRA](/compare/roth-ira-vs-traditional-ira/). If you have access to a Roth account at your job, compare options with our review of [Roth IRA vs Roth 401(k)](/compare/roth-ira-vs-roth-401k/).\n\nUnlike an HSA, a Roth IRA restricts contributions based on your income. For 2026, direct contributions phase out between $153,000 and $168,000 of modified adjusted gross income (MAGI) for single filers. Married couples filing jointly face a phase-out range between $242,000 and $252,000. Earners above those caps cannot make direct contributions, although a backdoor Roth conversion offers a separate legal workaround.\n\nA standout feature of the Roth IRA is contribution liquidity. You can withdraw your direct contributions at any time without taxes or penalties. That flexibility provides an emergency cushion. In addition, the Roth IRA carries no required minimum distributions (RMDs) during your lifetime.",
+      },
+      {
+        heading: "The Stealth IRA Strategy for Long-Term Growth",
+        content:
+          "An HSA functions as an auxiliary retirement account when you pay current medical bills out of pocket and leave your balance invested. Most account holders treat an HSA as a short-term clearinghouse for prescription costs and doctor copays. They deposit cash, claim the tax deduction, and spend the balance within weeks. That pattern saves money on taxes, but it limits long-term wealth accumulation.\n\nCompounding works best over decades. If you have adequate cash flow in your everyday budget, you can pay medical bills with regular income while your HSA remains fully invested in diversified mutual funds or exchange-traded funds. The IRS places no time limit on when you must reimburse yourself for past qualified medical expenses. You can pay an eligible hospital bill this year, store the receipt, let the investments grow for thirty years, and then withdraw that reimbursed amount tax-free in retirement.\n\nTrack every receipt carefully. You must maintain clear records, explanation of benefits statements, and itemized receipts to prove each expense was qualified if the IRS audits your return.\n\nTo implement this strategy, you must select an HSA custodian that supports investment accounts. Many HSA custodians require account holders to maintain a specific cash balance before they can move funds into investment options. That cash threshold varies by HSA provider, so review your specific plan details to see how much cash you must keep uninvested. To learn how asset allocation models fit long-term portfolios, explore our [Investing hub](/investing/).",
+      },
+      {
+        heading: "Account Funding Priority When You Cannot Maximize Both",
+        content:
+          "You should prioritize an HSA ahead of a Roth IRA whenever you are enrolled in an HDHP and have enough cash to cover your deductible. That priority order relies on tax math. The HSA gives you an immediate tax deduction that lowers your tax bill this year, plus tax-free growth and tax-free withdrawals later. A Roth IRA only provides two of those three benefits because deposits are made with after-tax money.\n\nStart by capturing any 401(k) employer match offered at your job. An employer match represents an immediate return on your investment that no standalone account can match. After securing the full employer match, direct your next savings dollars into your HSA until you reach the annual cap of $4,400 for single coverage or $8,750 for family coverage.\n\nOnce your HSA is fully funded, allocate remaining investment dollars toward your Roth IRA up to the $7,500 limit. This sequence pairs the triple tax protection of an HSA with the flexible liquidity of a Roth IRA. If you do not have an HDHP, you must skip the HSA step entirely and direct your savings straight into the Roth IRA. If you want to plan your broader savings sequence, visit our [Retirement hub](/retirement/) for complete allocation models.",
+      },
+      {
+        heading: "Eligibility Constraints and Future Coverage Changes",
+        content:
+          "Changes in your health insurance status determine whether you can contribute to an HSA, but your accumulated balance remains yours forever. HSA funds roll over from year to year without expiration dates. There is no use-it-or-lose-it rule. The account belongs to you rather than your employer, meaning the balance moves with you if you change jobs or retire.\n\nIf you switch from an HDHP to a standard health plan, your ability to make new contributions stops immediately. However, your existing balance stays invested. You can continue to spend that money on qualified medical expenses tax-free for the rest of your life. You can also let the balance compound until age 65, when non-medical withdrawals become penalty-free under ordinary income tax rates.\n\nA Roth IRA does not depend on your healthcare choices. As long as you have taxable earned income and remain below the annual MAGI phase-out boundaries, you can contribute every year. Both accounts offer broad investment flexibility across stocks, bonds, and mutual funds. Federal guidance from [Investor.gov](https://www.investor.gov) explains how low-cost index funds help long-term investors reduce management expenses across both types of tax-sheltered accounts. Compare both fee structures before opening an account.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I contribute to both an HSA and a Roth IRA in the same year?",
+        answer:
+          "Yes, you can contribute to both an HSA and a Roth IRA in the same tax year if you meet the separate eligibility criteria for each account. You must have coverage under an eligible high-deductible health plan to fund an HSA. You must also have taxable earned income and a modified adjusted gross income below the IRS phase-out limits to fund a Roth IRA directly. If you have the savings capacity, funding both accounts gives you dedicated tax-free funds for healthcare alongside flexible, tax-free retirement wealth.",
+      },
+      {
+        question: "What happens to my HSA if I lose my HDHP coverage?",
+        answer:
+          "If you lose your HDHP coverage, you cannot make new contributions to your HSA, but you keep all the money already in the account. The account belongs to you rather than your employer or health insurance company. You can leave the existing balance invested in mutual funds or ETFs, and you can continue to withdraw funds tax-free for qualified medical expenses at any time in the future. Once you enroll in an eligible HDHP again, you can resume contributions.",
+      },
+      {
+        question: "Is an HSA really better than a Roth IRA for retirement?",
+        answer:
+          "An HSA offers better tax efficiency than a Roth IRA when the funds are used for healthcare expenses in retirement. An HSA is funded with pre-tax dollars, grows tax-free, and permits tax-free withdrawals for medical bills. A Roth IRA is funded with after-tax dollars. However, the Roth IRA is better for general living expenses before age 65 because non-medical HSA distributions before age 65 trigger income taxes plus a 20% penalty. After age 65, the HSA penalty disappears, leveling the playing field for non-medical expenses.",
+      },
+      {
+        question: "Can I use HSA funds for anything besides medical expenses?",
+        answer:
+          "You can spend HSA funds on non-medical expenses, but the tax consequences depend on your age. If you withdraw money for non-medical reasons before age 65, you must pay ordinary income tax plus a 20% penalty on the distribution. After you turn 65, the 20% penalty is eliminated. At that stage, the account operates identically to a traditional IRA for general retirement spending, requiring only ordinary income tax on non-medical distributions.",
+      },
+      {
+        question: "What is the penalty for a non-qualified HSA withdrawal before age 65?",
+        answer:
+          "The penalty for a non-qualified HSA withdrawal taken before age 65 is 20% of the distributed amount, assessed in addition to regular income tax. For example, if you withdraw $5,000 for a non-medical purchase before age 65, you owe a $1,000 penalty plus your marginal income tax rate on that $5,000. This 20% penalty is significantly higher than the 10% early withdrawal penalty applied to traditional IRAs and 401(k) plans.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Publication 969, Health Savings Accounts", url: "https://www.irs.gov/publications/p969" },
+      { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+    ],
+    relatedComparisons: ["hsa-vs-fsa", "roth-ira-vs-traditional-ira", "roth-ira-vs-roth-401k"],
+    calculatorLinks: [
+      { label: "Retirement hub", href: "/retirement/" },
+      { label: "Investing hub", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "cd-vs-treasury-bill",
+    updated: "2026-09-07",
+    title: "CD vs Treasury Bill: Which Cash Option Wins in 2026?",
+    metaDescription:
+      "CD vs Treasury bill compared: see how Certificate of Deposit (CD) rules, T-bill state tax perks, and yields determine where you should keep cash.",
+    targetKeyword: "cd vs treasury bill",
+    optionA: "Certificate of Deposit (CD)",
+    optionB: "Treasury Bill (T-Bill)",
+    h1: "CD vs Treasury Bill: Which Cash Option Should You Choose?",
+    introText:
+      "A Certificate of Deposit (CD) provides a fixed return backed by bank deposit insurance, while a Treasury bill (T-bill) provides a state-tax-exempt return backed directly by the U.S. government. At ModernWallet, we evaluate cash options by calculating after-tax yields and comparing withdrawal penalties so savers can preserve capital without leaving money on the table. Your tax bracket, current market yields, and required investment timeline determine which vehicle provides the higher effective return.\n\nChecking the headline rate is not enough when you compare a CD vs Treasury bill. A saver living in a high-tax state often pockets more cash from a lower-yielding Treasury bill than from a higher-yielding bank deposit once state tax agencies claim their share. Comparing the two products requires looking past gross yields to examine net earnings, early withdrawal penalties, and secondary market liquidity.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Backing and safety", a: "FDIC or NCUA insurance up to $250,000 per depositor, per institution, per ownership category", b: "Direct backing from the full faith and credit of the U.S. government" },
+        { dimension: "Common term lengths", a: "A few months up to 5 years", b: "4, 8, 13, 17, 26, and 52 weeks" },
+        { dimension: "How return is paid", a: "Fixed interest rate paid periodically or credited at maturity", b: "Sold at a discount to par value; full face value paid at maturity" },
+        { dimension: "Early access rules", a: "Early withdrawal penalty equal to a set number of months of interest", b: "Secondary market sale through a brokerage with price subject to rate movements" },
+        { dimension: "State and local income tax", a: "Fully taxable at federal, state, and local levels", b: "Exempt from state and local income tax; subject to federal income tax" },
+        { dimension: "Minimum investment", a: "Varies by bank or credit union (often $0 to $1,000)", b: "$100 minimum at TreasuryDirect in $100 increments" },
+      ],
+    },
+    verdict:
+      "Choose a Treasury bill if you live in a state with income taxes. It also fits savers managing balances above the $250,000 FDIC limit or those who prefer keeping cash inside an existing brokerage account. Choose a Certificate of Deposit if an insured bank offers an elevated promotional yield that beats Treasury rates after state taxes. A CD is also the better option when you want to lock in a fixed return for two to five years. Neither option works well for savers who need immediate emergency access. If you need cash on short notice, keep your money in an accessible savings vehicle instead. Our recommendation flips toward the CD if you reside in a state with no income tax and your bank offers a higher gross yield. Before choosing a CD vs Treasury bill, compare your bank's current rate against recent Treasury auction yields to verify which account delivers the higher after-tax return.",
+    sections: [
+      {
+        heading: "How a Certificate of Deposit Works",
+        content:
+          "A Certificate of Deposit (CD) is a bank deposit account that pays a fixed interest rate in exchange for keeping your principal locked for a stated term. Banks and credit unions issue these accounts to secure stable funding. In return, you receive a guaranteed yield for periods ranging from a few months to five years.\n\nSafety comes from federal deposit insurance. Commercial bank deposits carry backing from the [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov), while credit union deposits receive coverage through the [National Credit Union Administration (NCUA)](https://www.ncua.gov). Both agencies protect up to $250,000 per depositor, per institution, for each ownership category.\n\nTaking money out early costs you. Guidance from the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov) notes that banks establish their own penalty formulas based on a specified number of months of interest. That penalty can consume your earned interest or reduce your initial deposit if you exit within the first few weeks.\n\nLocking up money requires careful planning. If you want to compare fixed bank deposits against variable accounts, read our guide on [CD vs Money Market Account](/compare/cd-vs-money-market/) or examine [High-Yield Savings vs CD](/compare/hysa-vs-cd/).",
+      },
+      {
+        heading: "How a Treasury Bill Works and Pays Returns",
+        content:
+          "A Treasury bill (T-bill) is a short-term debt obligation issued directly by the U.S. Department of the Treasury that sells at a discount to its face value instead of paying regular interest. You pay less than face value upfront. When the bill matures, the federal government pays you the full face value, and that difference between purchase price and par value forms your total return.\n\nThe Treasury issues bills in six standard maturities: 4, 8, 13, 17, 26, and 52 weeks. Consider a common discount scenario. You might pay $980 for a 26-week bill with a $1,000 face value, and the government returns the full $1,000 at the end of the term.\n\nBuying these securities is straightforward. Individual investors can buy bills through [TreasuryDirect](https://www.treasurydirect.gov) or through a standard brokerage account. TreasuryDirect requires a $100 minimum deposit, with additional purchases permitted in $100 increments.",
+      },
+      {
+        heading: "Deposit Insurance and Government Backing in the CD vs Treasury Bill Decision",
+        content:
+          "Certificates of deposit rely on agency insurance programs, while Treasury bills carry the direct backing of the U.S. government. That difference changes how large balances are protected. A bank CD is covered by the FDIC and a credit union CD is covered by the NCUA up to $250,000 per depositor per institution.\n\nTreasury bills do not use bank insurance agencies. Instead, every bill carries the direct backing of the full faith and credit of the United States. Because the federal government holds taxation power and controls the national currency, financial markets treat the risk of sovereign default as virtually zero.\n\nThis distinction matters for larger cash allocations. A saver placing $500,000 into certificates of deposit must open accounts at two separate banks to maintain full FDIC insurance. In contrast, an investor can hold millions of dollars in Treasury bills within a single brokerage account without exceeding any insurance ceiling.",
+      },
+      {
+        heading: "The State Tax Exemption in the CD vs Treasury Bill Comparison",
+        content:
+          "Interest earned on Treasury bills is exempt from state and local income taxes under federal law, whereas interest earned on certificates of deposit is fully taxable at all government levels. Both investments face ordinary federal income tax. The [Internal Revenue Service (IRS)](https://www.irs.gov) taxes your earnings from both assets as ordinary income, but federal law prevents state revenue departments from taxing Treasury securities.\n\nState tax rules shift your net return. For a saver in a state like California, New York, or Minnesota, a Treasury bill can generate more take-home interest than a bank CD even when the CD's published rate is somewhat higher, once the state tax bite on the CD is factored in. The higher your state tax rate, the greater your after-tax benefit from holding Treasury debt.\n\nResidents of zero-tax states face different math. In states like Florida, Texas, or Washington, where personal income tax does not exist, the Treasury tax exemption provides zero financial advantage. Savers in those states should compare both choices purely on published yields and terms.\n\nCalculating tax equivalence is simple. Take the Treasury bill yield and divide it by one minus your state income tax rate. If that adjusted figure beats the bank CD rate, the Treasury bill produces higher net cash for your household.",
+      },
+      {
+        heading: "Early Withdrawal Penalties and Secondary Market Liquidity",
+        content:
+          "Exiting a certificate of deposit early triggers a mandatory bank penalty, whereas exiting a Treasury bill before maturity requires selling it on the secondary market. Breaking a bank CD imposes a predictable cost. Banks calculate their penalty as a set number of months of interest, giving you an exact calculation of what an early exit will cost before you commit funds.\n\nTreasury bills trade under different liquidity rules. When you purchase a T-bill through a brokerage firm, you can sell that security on the secondary market at any time before its scheduled maturity date. That sale carries price risk.\n\nSecondary market bond prices move in the opposite direction of interest rates. If market interest rates increase after your purchase, your existing bill loses value, meaning you could receive less money than you originally invested. Conversely, falling interest rates increase the market price of your bill, allowing you to sell at a profit.\n\nHolding a bill to maturity eliminates market risk completely. The government pays you the full par value at maturity regardless of rate fluctuations during the holding period. If you need immediate access to cash without market fluctuations or withdrawal penalties, compare the [Best Money Market Accounts](/roundup/best-money-market-accounts/) for daily flexibility.",
+      },
+      {
+        heading: "Account Minimums, Term Options, and Purchasing Channels",
+        content:
+          "Investors can buy Treasury bills through TreasuryDirect or brokerage accounts starting at $100, while certificates of deposit are opened through commercial banks and credit unions with deposit minimums set by each institution. Bank CD minimums vary significantly across the industry. Many online banks let you open a CD with zero dollars, whereas traditional branch banks often require a higher minimum, so check the specific bank's current CD rate page before assuming a figure.\n\nTreasury bills offer rigid maturity cycles. Because bills are sold in standard terms of 4, 8, 13, 17, 26, and 52 weeks, they fit neatly into rolling cash ladders. You can schedule automatic reinvestment on TreasuryDirect to roll maturing principal into newly issued bills without manual intervention.\n\nCertificates of deposit support longer commitments. Banks routinely offer CD maturities stretching two, three, or five years, letting you lock in a specific rate for a longer timeline. Treasury debt beyond one year requires purchasing Treasury notes or bonds instead of bills.\n\nAccount management also differs. Opening CDs at multiple banks creates administrative overhead with separate account logins and multiple annual tax statements. Holding Treasury bills inside a brokerage consolidates your cash beside your equity portfolio, and our [investing hub](/investing/) covers how to integrate cash reserves with your broader investment plan.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Are Treasury bills safer than CDs?",
+        answer:
+          "Both options offer virtually zero default risk when held to maturity, but their backing structures operate differently. A Certificate of Deposit (CD) is protected up to $250,000 per depositor per institution by the FDIC or NCUA. A Treasury bill (T-bill) carries the direct backing of the U.S. government with no dollar cap. For balances below $250,000, safety is practically identical. For balances above $250,000, T-bills are simpler because they do not require opening accounts across multiple banks.",
+      },
+      {
+        question: "Do I pay state tax on Treasury bill interest?",
+        answer:
+          "No, Treasury bill interest is completely exempt from state and local income taxes under federal law. You must still pay federal income tax on your earnings. In contrast, interest earned from a certificate of deposit is subject to both federal and state income taxes. This statutory exemption makes T-bills particularly advantageous for investors residing in states with high state income tax brackets.",
+      },
+      {
+        question: "Can I lose money on a Treasury bill?",
+        answer:
+          "You cannot lose money on a Treasury bill if you hold it until its scheduled maturity date. The U.S. Treasury will pay you the full par value when the term ends. However, if you purchase a bill through a brokerage and sell it on the secondary market before maturity, you could receive less than you paid. That price drop happens if market interest rates increase after your purchase date.",
+      },
+      {
+        question: "What is the minimum amount required to buy a Treasury bill?",
+        answer:
+          "The minimum purchase amount for a Treasury bill is $100 when buying through TreasuryDirect or a brokerage account. Investors can purchase additional amounts in increments of $100. Minimum deposit requirements for certificates of deposit vary by institution. Some online banks allow you to open a CD with zero dollars, while traditional brick-and-mortar banks often require a higher minimum, so check the specific bank's current rate page before assuming a figure.",
+      },
+      {
+        question: "Is a CD or a Treasury bill better right now?",
+        answer:
+          "Neither option is universally better because yields fluctuate weekly based on macroeconomic conditions and individual bank deposit needs. A Treasury bill generally produces higher net income for savers in high-tax states because of its federal exemption from state taxes. A bank CD can win if a specific bank offers a high promotional yield that outpaces Treasury rates, or if you live in a state with zero income tax.",
+      },
+    ],
+    sources: [
+      { label: "TreasuryDirect — Treasury Bills", url: "https://www.treasurydirect.gov/marketable-securities/treasury-bills/" },
+      { label: "FDIC — Deposit Insurance", url: "https://www.fdic.gov/resources/deposit-insurance/" },
+      { label: "CFPB — Certificates of deposit", url: "https://www.consumerfinance.gov" },
+    ],
+    relatedComparisons: ["cd-vs-money-market", "hysa-vs-cd"],
+    calculatorLinks: [
+      { label: "Investing hub", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "schd-vs-vym",
+    updated: "2026-09-07",
+    title: "SCHD vs VYM: Which Dividend Fund Wins in 2026?",
+    metaDescription:
+      "SCHD vs VYM compared: analyze index screening, expense ratios, portfolio concentration, and holdings to choose the right dividend fund for your portfolio.",
+    targetKeyword: "schd vs vym",
+    optionA: "Schwab U.S. Dividend Equity ETF (SCHD)",
+    optionB: "Vanguard High Dividend Yield ETF (VYM)",
+    segment: "Investing",
+    h1: "SCHD vs VYM: Schwab U.S. Dividend Equity vs Vanguard High Dividend Yield",
+    introText:
+      "The Schwab U.S. Dividend Equity exchange-traded fund (ETF), known as SCHD, applies a quality screen on top of yield, while the Vanguard High Dividend Yield ETF, known as VYM, offers broader high-yield exposure at an even lower fee.\n\nAt ModernWallet, we evaluate index rules and prospectuses to show how portfolio mechanics shape long-term returns. The central decision driver is whether you want a curated portfolio of 100 financially vetted dividend payers or the broadest, cheapest exposure to above-average market yields.\n\nBoth funds trade commission-free across major brokerage platforms, making transaction fees a non-factor. [Schwab Asset Management](https://www.schwabassetmanagement.com) charges a 0.06% annual expense ratio for SCHD, while [Vanguard](https://investor.vanguard.com) charges 0.04% for VYM. Because dividend yields shift every trading day with stock price movements, understanding index construction matters far more than comparing a snapshot of recent payouts.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Underlying index tracked", a: "Dow Jones U.S. Dividend 100 Index", b: "FTSE High Dividend Yield Index" },
+        { dimension: "Total annual operating expenses", a: "0.06% per summary prospectus", b: "0.04% per summary prospectus (dated February 27, 2026)" },
+        { dimension: "Quality screening criteria", a: "10-year dividend history, cash flow to total debt, return on equity (ROE), yield, 5-year dividend growth", b: "None; ranks common stocks by forecast yield with no financial health screens" },
+        { dimension: "Portfolio holdings count", a: "Fixed roster of 100 stocks", b: "Broad basket holding several hundred stocks" },
+        { dimension: "Portfolio concentration limits", a: "Maximum 4% per stock and 25% per sector at rebalance", b: "Market-cap weighted with no individual stock cap beyond index rules" },
+        { dimension: "Excluded asset classes", a: "Real Estate Investment Trusts (REITs), MLPs, preferred stocks, convertibles", b: "Real Estate Investment Trusts (REITs)" },
+      ],
+    },
+    verdict:
+      "Choose SCHD if you want a disciplined index that demands strong balance sheets, robust cash flows, and 10 consecutive years of dividend payments before including a stock. The compromise is a concentrated 100-holding portfolio that places heavier weight on individual companies. Choose VYM if you prefer the lowest possible expense ratio and broad, market-cap-weighted exposure across several hundred dividend payers without exclusionary screens.\n\nNeither fund is the right choice for investors seeking aggressive dividend growth rather than current income yield. If your objective is rapid future distribution expansion over current yield, dedicated dividend-growth funds such as Vanguard Dividend Appreciation ETF (VIG) or iShares Core Dividend Growth ETF (DGRO) serve that goal better. Our verdict would flip if Schwab or Vanguard altered either fund's screening criteria, expense ratios, or portfolio concentration rules in a future prospectus update.\n\nTo make your final decision between SCHD and VYM, check each fund's official fact sheet on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) to compare current 30-day SEC yields and top-10 holdings.",
+    sections: [
+      {
+        heading: "Index Rules and Stock Selection Screens",
+        content:
+          "SCHD selects its holdings through a multi-factor financial health screen, whereas VYM selects stocks purely by ranking them by forecast dividend yield. To qualify for SCHD, a stock must have paid regular dividends for at least 10 consecutive years. The Dow Jones U.S. Dividend 100 Index then evaluates qualifying dividend payers across four fundamental metrics: cash flow to total debt, return on equity (ROE), dividend yield, and five-year dividend growth.\n\nEligible securities are ranked by an equal-weighted composite score of those four metrics to form a fixed portfolio of 100 stocks. The index methodology excludes Real Estate Investment Trusts (REITs), master limited partnerships (MLPs), preferred shares, and convertible debt. This mechanical barrier eliminates financially troubled businesses that artificially boost their yields as their underlying share prices decline.\n\nVYM takes an entirely different approach by tracking the FTSE High Dividend Yield Index. This index ranks U.S. common stocks by forecast dividend yield and includes the highest-yielding names with no dividend payment streak requirement or balance-sheet quality screen. The FTSE index excludes REITs, and Vanguard's summary prospectus notes that the fund invests at least 80% of net assets in index constituents.",
+      },
+      {
+        heading: "Portfolio Concentration and Sector Limits",
+        content:
+          "SCHD enforces strict single-stock and sector limits, whereas VYM weights its positions by market capitalization across several hundred companies. Under SCHD's index rules, no single stock can exceed 4% of the fund and no individual sector can exceed 25% at the time of construction or rebalancing. These caps prevent any single industry or troubled corporation from overwhelming the broader portfolio during an unexpected economic shock.\n\nBecause SCHD concentrates its capital into exactly 100 stocks, its top 10 positions typically make up a sizable share of the fund's total assets. Check the fund's current fact sheet for the exact figure, since it shifts at each rebalance. Investors receive focused exposure to companies that pass stringent cash-flow checks, but that focus carries higher company-specific concentration than an unscreened fund. You can explore how asset concentration shapes portfolio risk across the resources in our [Investing hub](/investing/).\n\nVYM distributes its assets across several hundred stocks, creating far greater single-company diversification. The fund weights holdings strictly by market capitalization, allowing heavyweight blue-chip corporations to occupy its top spots while hundreds of smaller holdings sit in the tail. This structure eliminates single-stock blowup risk, but it also spreads your money across hundreds of names that may possess weaker balance sheets.",
+      },
+      {
+        heading: "Expense Ratios and Long-Term Fund Costs",
+        content:
+          "VYM holds a measurable fee advantage with an annual operating expense ratio of 0.04% compared to SCHD's 0.06%. Vanguard's summary prospectus, dated February 27, 2026, confirms the 0.04% fee, which remains tied for the lowest cost among widely held dividend funds. Schwab Asset Management publishes an annual expense ratio of 0.06% in SCHD's summary prospectus, keeping both funds near the lowest pricing band in the asset management industry.\n\nThe cost difference originates in the mechanical requirements of running each fund. VYM tracks an unscreened market-cap index with minimal rebalancing turnover, allowing Vanguard to run the portfolio with bare-bones operating overhead. SCHD requires continuous accounting verification across four fundamental financial metrics alongside strict quarterly rebalancing to maintain its 4% single-stock and 25% sector caps.\n\nIn actual dollar terms, this two-basis-point difference amounts to $2 per year on a $10,000 balance, or $20 annually on a $100,000 balance. You can calculate how small basis-point fee variations compound over multi-decade holding periods with our [investment growth calculator](/investing/investment-growth-calculator/). Because a $20 annual gap on a $100,000 portfolio is so narrow, the screening criteria and resulting portfolio holdings should drive your decision rather than the fee alone.",
+      },
+      {
+        heading: "Quality Screens Versus Broad Market Yield",
+        content:
+          "SCHD's multi-factor screen prevents high-yielding companies with deteriorating balance sheets from entering the portfolio. When businesses experience dropping revenues and declining share prices, their dividend yields rise artificially, luring yield-focused investors into troubled situations. By requiring healthy return on equity and substantial cash flow relative to total debt, SCHD removes companies that pay distributions using borrowed money.\n\nThis balance-sheet protection comes with an obvious trade-off. By demanding 10 consecutive years of dividend payments, SCHD excludes newer dividend-paying enterprises and capital-intensive companies that carry higher debt loads. Cyclical producers, restructuring corporations, and high-yielding utilities that fall just short of the strict return-on-equity bar are left out completely.\n\nVYM embraces this broader market reality by buying high-yielding common stocks without judging corporate balance sheets or historic payment streaks. This design lets VYM participate in cyclical recoveries and capture distributions across sectors that SCHD avoids. We compare how screening rules and portfolio turnover influence total return across different market environments in our guide to the [Best Dividend ETFs of 2026](/roundup/best-dividend-etfs/).",
+      },
+      {
+        heading: "Portfolio Overlap and the Cost of Holding Both",
+        content:
+          "Owning both SCHD and VYM in the same investment account creates substantial portfolio overlap without delivering genuine asset diversification. Because both funds invest in large-cap domestic dividend payers, their top holdings frequently include many of the same major pharmaceutical, industrial, and financial corporations. Holding both simultaneously means you are paying two management fees for significant duplicate equity exposure.\n\nInvestors considering holding both should examine the top holdings disclosed on each fund's official website. Comparing the published top-10 lists on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) demonstrates how closely their major positions mirror one another. When a substantial portion of top assets overlaps between two funds, dividing your capital between them simply dilutes your intended investment strategy.\n\nHolding both funds also creates conflicting portfolio mechanics. If you favor SCHD's strict debt and cash-flow screens, allocating capital to VYM introduces unscreened, leveraged companies that weaken that thesis. If you want VYM's broad market-cap exposure, allocating capital to SCHD concentrates your money back into 100 stocks and defeats the broad-basket strategy.",
+      },
+      {
+        heading: "Matching Each Fund to Your Income Strategy",
+        content:
+          "Choosing the right fund depends on whether you value a curated list of high-quality balance sheets or broad, market-cap-weighted yield coverage. Investors seeking dependable corporate fundamentals and steady historical dividend growth find a natural home in SCHD. The fund's 100-stock roster provides focused exposure to profitable companies that generate enough cash flow to service debt while raising their shareholder distributions.\n\nInvestors who want wide market representation with minimal tracking complexity should select VYM instead. By holding several hundred stocks, VYM absorbs dividend reductions from individual distressed companies without suffering dramatic drops in fund-level distribution yield. The lower 0.04% expense ratio also makes VYM ideal for hands-off indexers seeking the cheapest broad dividend basket available.\n\nBefore committing new investment dollars, consult each fund's official fact sheet to evaluate its current 30-day SEC yield and sector weighting. Because share prices and dividend yields shift continuously throughout the trading year, reviewing current prospectus disclosures ensures your allocation reflects accurate market numbers. Reviewing those disclosures alongside your existing brokerage holdings helps you avoid unintentionally overweighting specific market sectors or companies.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is SCHD or VYM better for dividend income?",
+        answer:
+          "Neither fund guarantees higher dividend income because dividend yields fluctuate continuously with stock prices. VYM captures a broad market of higher-yielding U.S. common stocks, while SCHD filters for 100 dividend payers with strong cash flows and balance sheets. Investors should check the current 30-day SEC yield on each fund's official fact sheet to compare current income distributions.",
+      },
+      {
+        question: "Do SCHD and VYM overlap in holdings?",
+        answer:
+          "SCHD and VYM share substantial portfolio overlap because both funds select from large-cap U.S. dividend-paying equities. While VYM holds several hundred stocks and SCHD holds exactly 100, many top holdings appear in both portfolios. You can confirm the exact degree of overlap by comparing the top-10 holdings published on each fund's respective fact sheet.",
+      },
+      {
+        question: "Which has the lower expense ratio, SCHD or VYM?",
+        answer:
+          "VYM features the lower expense ratio at 0.04% annually, as confirmed in Vanguard's summary prospectus dated February 27, 2026. SCHD charges 0.06% per its Schwab summary prospectus. The two-basis-point difference equals $2 per year for every $10,000 invested, making both funds exceptionally low-cost options for long-term investors.",
+      },
+      {
+        question: "Should I hold both SCHD and VYM at the same time?",
+        answer:
+          "Holding both funds simultaneously is generally redundant for individual investors. Because both ETFs target large-cap U.S. dividend payers, owning both leads to duplicated corporate holdings and overlapping sector exposure. Investors generally achieve cleaner portfolio construction by picking either SCHD for balance-sheet quality or VYM for broad market diversification.",
+      },
+      {
+        question: "Is SCHD or VYM better for dividend growth?",
+        answer:
+          "SCHD provides a stronger structural tilt toward dividend growth because its index requires a 10-year payment history and screens for five-year dividend growth. VYM ranks stocks by forecast dividend yield without requiring historic dividend growth or balance-sheet screens. However, investors prioritizing rapid distribution growth should evaluate dedicated dividend-growth funds like VIG or DGRO alongside these high-yield options.",
+      },
+    ],
+    sources: [
+      { label: "Schwab Asset Management — SCHD", url: "https://www.schwabassetmanagement.com" },
+      { label: "Vanguard — VYM", url: "https://investor.vanguard.com" },
+    ],
+    relatedComparisons: ["dgro-vs-vig"],
+    calculatorLinks: [
+      { label: "Best Dividend ETFs of 2026", href: "/roundup/best-dividend-etfs/" },
+      { label: "Investing hub", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "dgro-vs-vig",
+    updated: "2026-09-07",
+    title: "DGRO vs VIG: Which Dividend Growth ETF Wins in 2026?",
+    metaDescription:
+      "DGRO vs VIG compared on expense ratios, turnover, index screens, and holdings breadth so you can pick the right dividend growth ETF.",
+    targetKeyword: "dgro vs vig",
+    optionA: "iShares Core Dividend Growth ETF (DGRO)",
+    optionB: "Vanguard Dividend Appreciation ETF (VIG)",
+    segment: "Investing",
+    h1: "DGRO vs VIG: Which Dividend Growth ETF Fits Your Portfolio?",
+    introText:
+      "Vanguard Dividend Appreciation ETF (VIG) is the stronger choice for most taxable brokerage accounts due to its lower expense ratio and minimal portfolio turnover, while iShares Core Dividend Growth ETF (DGRO) works better for investors seeking broader diversification across roughly 390 holdings. At ModernWallet, we evaluate core index funds to help long-term investors make disciplined allocation decisions based on verifiable data.\n\nWhen comparing DGRO and VIG, understand that both exchange-traded funds (ETFs) follow a dividend growth investing strategy rather than a high-yield approach. Both funds require a documented history of regular dividend increases instead of simply buying stocks with the highest current payout.\n\nThe [iShares Core Dividend Growth ETF (DGRO)](https://www.ishares.com) casts a wide net across dividend payers, holding roughly 390 stocks for an annual fee of 0.08%. The [Vanguard Dividend Appreciation ETF (VIG)](https://investor.vanguard.com) screens more strictly, eliminating real estate stocks and keeping portfolio turnover at 8% with an expense ratio of just 0.04%.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Underlying index tracked", a: "Morningstar US Dividend Growth Index", b: "S&P U.S. Dividend Growers Index" },
+        { dimension: "Total annual operating expense ratio", a: "0.08% per summary prospectus", b: "0.04% (0.03% management fee + 0.01% other expenses)" },
+        { dimension: "Number of equity holdings", a: "Roughly 390 holdings (389 to 390 across recent fact sheets)", b: "Tighter, concentrated portfolio of qualified dividend growers" },
+        { dimension: "Portfolio turnover rate", a: "Higher turnover driven by five-year screening rebalances", b: "8% (lowest among widely held dividend ETFs in our review)" },
+        { dimension: "Real estate investment trust (REIT) exposure", a: "Includes eligible dividend-growing equities across sectors", b: "Strictly excludes REITs by index construction rule" },
+        { dimension: "Distribution schedule", a: "Quarterly distributions", b: "Quarterly distributions" },
+        { dimension: "Worst calendar quarter drawdown", a: "-21.91% (quarter ended March 31, 2020)", b: "Check Vanguard's official fund page for historical stress metrics" },
+      ],
+    },
+    verdict:
+      "Choose Vanguard Dividend Appreciation ETF (VIG) if you want the lowest annual fee at 0.04% and minimal 8% portfolio turnover, especially when investing inside a taxable brokerage account. Choose iShares Core Dividend Growth ETF (DGRO) if you prefer broader diversification across roughly 390 companies and want exposure to newer dividend growers with five-year track records. This comparison is not for investors who need maximum immediate cash flow right now to pay living expenses; those investors should look at dedicated high-current-yield funds instead. Our verdict would change in favor of DGRO for taxable accounts if iShares reduced DGRO's expense ratio below 0.04% and lowered its turnover, or if Vanguard altered VIG's underlying index to eliminate its historical tax efficiency advantage.",
+    sections: [
+      {
+        heading: "Index Methodology and Stock Screening Rules",
+        content:
+          "DGRO tracks the Morningstar US Dividend Growth Index, which applies a quantitative screen to select U.S. equities with sustained dividend growth. Unlike traditional dividend aristocrat indexes that demand twenty-five consecutive years of dividend hikes, DGRO uses a five-year qualification window. This shorter streak requirement permits younger, fast-growing technology and healthcare firms to enter the fund once they initiate and raise dividends.\n\nThe index also excludes companies whose payout ratios exceed 75%, which prevents firms with strained cash flows from remaining in the portfolio. That screen protects the fund from declining businesses that borrow money to maintain an unsustainable payout.\n\nVIG tracks the S&P U.S. Dividend Growers Index, which applies a stricter ten-year minimum requirement of uninterrupted dividend increases. In addition to that ten-year hurdle, the index excludes the top 25% highest-yielding qualifying stocks to eliminate potential value traps. A company whose yield has spiked due to a plunging stock price will not pass that filter.\n\nAnother structural contrast lies in how each fund treats the real estate sector. VIG explicitly excludes Real Estate Investment Trusts (REITs) from its underlying index by rule. DGRO permits qualifying dividend-growing companies across a broader set of sectors. If you want a diversified portfolio that includes dividend-growing real estate equities, DGRO accommodates that preference, while VIG intentionally leaves real estate out.\n\nIndex providers occasionally revise these screening thresholds. Confirm the exact current rules on Morningstar's and S&P's own published index methodology documents before assuming a specific cutoff still applies.",
+      },
+      {
+        heading: "Expense Ratios and Long-Term Cost in DGRO vs VIG",
+        content:
+          "VIG holds a distinct cost advantage with a total annual operating expense ratio of 0.04%, compared to DGRO at 0.08%. Vanguard's summary prospectus dated May 28, 2026 breaks down that 0.04% fee into a 0.03% management fee and 0.01% in other expenses. DGRO's summary prospectus lists a flat 0.08% total annual operating expense ratio.\n\nOn a modest initial balance, the dollar difference between these two funds looks tiny. A $10,000 investment in VIG costs $4 per year, whereas the same balance in DGRO costs $8 annually. That four-dollar annual spread will not alter your financial future in the early years of saving.\n\nThe compounding effect over decades changes the math considerably. Consider a $200,000 balance compounding at 7% annually over a thirty-year horizon. That four basis point fee gap, left alone to compound, can add up to a few thousand dollars in foregone growth over that horizon, a real cost, though a rough illustration rather than a guaranteed figure since actual returns vary. In low-cost index investing, saving basis points is one of the few guaranteed advantages an investor can secure. For cost-conscious investors comparing DGRO and VIG, Vanguard provides that edge directly.",
+      },
+      {
+        heading: "Portfolio Turnover and Taxes: DGRO vs VIG in Brokerage Accounts",
+        content:
+          "VIG delivers exceptional tax efficiency in non-retirement accounts thanks to an 8% portfolio turnover rate. That 8% figure represents the lowest turnover rate among widely held dividend funds in our [Best Dividend ETFs of 2026](/roundup/best-dividend-etfs/) review. Low turnover means the fund manager replaces fewer stocks annually, reducing the likelihood of realizing taxable capital gains within the portfolio.\n\nDGRO experiences higher portfolio rebalancing activity because its five-year dividend screen covers a broader, faster-shifting universe. When companies adjust their capital allocation policies, names enter and exit DGRO's index more frequently than they do in VIG's ten-year basket. More trades inside the fund create more potential transaction drag and rebalancing friction.\n\nIn a standard taxable brokerage account, tax drag can quietly erode after-tax returns. While both ETFs use customized creation and redemption baskets to purge low-basis shares without triggering capital gains distributions, a fund with an 8% turnover rate remains easier to hold in taxable accounts. If you hold these assets in a tax-advantaged account like an Individual Retirement Account (IRA), internal turnover ceases to be a tax concern.",
+      },
+      {
+        heading: "Holdings Breadth, Diversification, and Capital Allocation",
+        content:
+          "DGRO provides broader portfolio diversification by holding roughly 390 stocks across various market capitalizations. iShares' fund fact sheet dated June 30, 2026 reported 389 holdings with net assets of approximately $41.2 billion, while its July 31, 2026 fact sheet listed 390 holdings. The fund spreads its assets across a wider mix of mid-cap and large-cap companies.\n\nVIG holds a more concentrated portfolio that focuses on established blue-chip dividend payers. Because VIG requires a full decade of consistent dividend growth, its portfolio leans heavily toward mature corporations with durable business models. This conservative selection screen creates a portfolio that behaves somewhat more like a traditional large-cap core fund.\n\nDGRO launched on June 10, 2014, and has grown into one of the core building blocks for self-directed dividend investors on our [investing hub](/investing/). Its wider holdings count means that single-stock blowups have a smaller relative footprint on total fund performance. Investors who prefer maximum single-company risk dilution often favor DGRO's wider 390-stock roster.",
+      },
+      {
+        heading: "Downside Risk and Historical Drawdowns Under Market Stress",
+        content:
+          "Dividend growth strategies generally aim to moderate portfolio drawdowns during broad equity market selloffs. DGRO experienced a worst calendar quarter on record of -21.91% for the quarter ended March 31, 2020, during the rapid onset of the COVID-19 pandemic drop. That figure demonstrates that dividend growth funds remain fully exposed to broad equity market downturns.\n\nVIG's comparable quarterly drawdown figure from that specific historical quarter is not cataloged on this page's closed data set. Investors should examine Vanguard's official fund performance page to review historical drawdown metrics across identical stress windows. Comparing performance across multiple market cycles provides context on how defensive screens hold up when market liquidity dries up.\n\nCompanies with long records of growing dividends often possess stronger balance sheets and more predictable cash flows than the broader market. That financial stability can help cushion share price declines relative to non-dividend growth stocks. However, neither ETF behaves like a bond fund or a cash equivalent during a panic. You must be prepared for equity-level volatility during severe economic shocks.",
+      },
+      {
+        heading: "Dividend Growth Strategy Compared with High Current Yield",
+        content:
+          "Neither DGRO nor VIG is engineered to generate maximum immediate cash distributions today. Both funds prioritize dividend growth rate over current payout yield, screening for companies that reinvest capital to expand payouts year after year. If your financial plan requires maximizing immediate income to cover living expenses, you will likely find these funds disappointing on day one.\n\nInvestors seeking immediate cash flow often compare high-yield options, such as those evaluated in our [SCHD vs VYM](/compare/schd-vs-vym/) analysis. High-yield funds screen for current dividend yield, resulting in higher current income distributions but potentially lower dividend growth rates over time. DGRO and VIG trade current yield for higher long-term dividend trajectory and capital appreciation potential.\n\nNeither fund's current 30-day Securities and Exchange Commission (SEC) yield is published on this static comparison page because market yields fluctuate daily. We advise you to check each fund's official fact sheet to review current yield numbers before allocating capital. Evaluating current yield alongside dividend growth history ensures that your choice matches your timeline.",
+      },
+      {
+        heading: "Account Placement and Portfolio Strategy Considerations",
+        content:
+          "The decision between DGRO and VIG often becomes clear once you determine where the fund will reside. In a taxable brokerage account, VIG holds the structural upper hand with its 0.04% expense ratio and its 8% portfolio turnover. Lower operating expenses and minimal rebalancing activity help keep after-tax compounding intact.\n\nIn a tax-deferred account, such as a traditional IRA or a solo 401(k), the tax consequences of turnover vanish completely. In that tax-sheltered environment, DGRO's broader ~390-holding portfolio and five-year dividend qualification screen can shine. DGRO gives you greater exposure to dividend-paying companies that have not yet achieved VIG's mandatory ten-year payout track record.\n\nBoth funds distribute dividends on a quarterly schedule, giving you regular income to reinvest or withdraw. If you use automated dividend reinvestment plans, both funds compound smoothly over multi-year holding periods. Your decision should reflect whether you want maximum large-cap concentration or broader multi-sector equity exposure.",
+      },
+      {
+        heading: "Where the DGRO vs VIG Decision Turns for Your Portfolio",
+        content:
+          "A four-basis-point difference in expense ratios is not enough by itself to justify an abrupt portfolio overhaul. What truly drives this decision is the underlying portfolio construction and the exclusion rules each index enforces. If you believe real estate investment trusts belong in a diversified equity allocation, VIG will not satisfy you because its index excludes them entirely.\n\nIf you want a fund that excludes potential yield traps by cutting out the highest-yielding quartile of stocks, VIG provides that automated discipline. DGRO's methodology is more permissive, granting entry to newer dividend payers and keeping exposure broad across roughly 390 companies. Both approaches have delivered reliable dividend growth, but they cater to slightly different risk tolerances.\n\nBefore executing a trade between DGRO and VIG, inspect the top ten holdings on each fund's fact sheet to confirm how their sector weightings align with your broader asset allocation.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is DGRO or VIG better for dividend growth investing?",
+        answer:
+          "VIG is generally better for cost-focused investors and taxable accounts due to its 0.04% expense ratio and low 8% turnover, while DGRO is better for investors seeking broader diversification across roughly 390 holdings. Both funds successfully execute a dividend growth strategy, but VIG uses a stricter ten-year dividend growth screen compared to DGRO's five-year screen. Your choice depends on whether you prefer lower ongoing fund expenses or broader multi-cap exposure.",
+      },
+      {
+        question: "Which fund has the lower expense ratio between DGRO and VIG?",
+        answer:
+          "VIG has the lower expense ratio at 0.04%, compared to DGRO's expense ratio of 0.08%. Vanguard's summary prospectus dated May 28, 2026 lists VIG's fee as a 0.03% management fee plus 0.01% in other expenses. DGRO's summary prospectus lists a total annual operating expense ratio of 0.08%. Over decades of investing, that four basis point cost difference compounds into meaningful dollar savings on large balances.",
+      },
+      {
+        question: "Do DGRO and VIG hold real estate investment trusts?",
+        answer:
+          "DGRO can hold eligible real estate companies that meet its dividend growth criteria, whereas VIG strictly excludes Real Estate Investment Trusts (REITs) by index rule. VIG tracks the S&P U.S. Dividend Growers Index, which mandates the total exclusion of REITs from the portfolio. If you want exposure to real estate dividend payers within your core dividend ETF, DGRO accommodates that goal, while VIG intentionally omits the sector.",
+      },
+      {
+        question: "Why does portfolio turnover matter when comparing DGRO and VIG?",
+        answer:
+          "Portfolio turnover measures how frequently a fund buys and sells holdings, which directly impacts trading costs and tax efficiency. VIG reported an 8% portfolio turnover rate, the lowest among the widely held dividend ETFs in our review. Lower turnover helps minimize realized capital gains distributions in taxable brokerage accounts. DGRO experiences higher turnover due to its broader, five-year dividend screening rules.",
+      },
+      {
+        question: "Should an investor choose DGRO or VIG over high-yield dividend funds?",
+        answer:
+          "Investors should choose DGRO or VIG if their goal is long-term dividend growth, capital appreciation, and inflation protection rather than immediate income. Neither DGRO nor VIG is designed to maximize current yield today. If your primary objective is receiving the largest possible cash payout immediately, high-yield options like SCHD or VYM may suit your needs better. Check each fund's current fact sheet to review its 30-day SEC yield before making an allocation.",
+      },
+    ],
+    sources: [
+      { label: "iShares — DGRO", url: "https://www.ishares.com" },
+      { label: "Vanguard — VIG", url: "https://investor.vanguard.com" },
+    ],
+    relatedComparisons: ["schd-vs-vym"],
+    calculatorLinks: [
+      { label: "Best Dividend ETFs of 2026", href: "/roundup/best-dividend-etfs/" },
+      { label: "Investing hub", href: "/investing/" },
+    ],
+  },
+
+  {
+    slug: "betterment-vs-wealthfront",
+    updated: "2026-09-07",
+    title: "Betterment vs Wealthfront: Robo-Advisor Fees Compared",
+    metaDescription:
+      "Betterment vs Wealthfront compared on management fees, account minimums, direct indexing, and advisor access so you can pick the right robo-advisor.",
+    targetKeyword: "betterment vs wealthfront",
+    optionA: "Betterment",
+    optionB: "Wealthfront",
+    segment: "Robo-advisors",
+    h1: "Betterment vs Wealthfront: Which Robo-Advisor Fits Your Balance?",
+    introText:
+      "[Betterment](https://www.betterment.com) charges a flat $5 monthly fee that shifts to 0.25% a year once your balance crosses $24,000 or you deposit $200 each month, while [Wealthfront](https://www.wealthfront.com) charges a flat 0.25% annual fee on every balance from its $500 opening minimum. At ModernWallet, we review automated portfolio managers and model account costs so investors know what remains in their pocket after advisory deductions.\n\nYour decision between these two automated investing accounts depends on your starting deposit, your monthly savings habits, and whether you want access to human financial planners. Both automated investment services build diversified portfolios of exchange-traded funds (ETFs). Their fee structures reward different balances.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Account minimum to open", a: "$0", b: "$500" },
+        { dimension: "Base management fee", a: "$5 per month under $24,000; 0.25% a year with $200 monthly deposits or $24,000 balance", b: "0.25% a year across all balances" },
+        { dimension: "Tax-loss harvesting minimum", a: "Included at every balance level with no separate dollar threshold", b: "Included at every balance level with no separate dollar threshold" },
+        { dimension: "Direct indexing access", a: "None (relies entirely on exchange-traded funds)", b: "US Direct Indexing available at a $100,000 balance" },
+        { dimension: "Human financial advisor access", a: "Betterment Premium at 0.65% a year with a $100,000 minimum", b: "No human financial advisor access at any balance tier" },
+        { dimension: "High-balance pricing discounts", a: "0.15% from $1M to $2M; 0.10% above $2M (first $1M at standard rate)", b: "0.25% standard rate; Smart Beta added at $500,000 at no extra fee" },
+      ],
+    },
+    verdict:
+      "Choose Wealthfront if you have at least $500 to invest, prefer a completely automated software experience, and expect to build a taxable balance above $100,000 where US Direct Indexing harvests tax losses from individual stocks. Choose Betterment if you want to start investing with less than $500, or if you want an established path to consult human Certified Financial Planner professionals through Betterment Premium once your balance crosses $100,000. Neither Betterment nor Wealthfront fits an active trader who wants to buy individual stocks on margin, trade options contracts, or execute short-term market timing strategies. If either company changes its published fee schedule, account minimums, or direct indexing eligibility rules on its official pricing page, our recommendation between these two automated investing accounts could change.",
+    sections: [
+      {
+        heading: "How Betterment Fees Work across Account Balances",
+        content:
+          "Betterment structures its base pricing as a flat $5 monthly charge for investors who hold smaller account balances without recurring deposits. That fixed monthly fee equals $60 a year on any balance below the qualifying threshold. Betterment switches your account to a 0.25% annual rate once you maintain a $24,000 balance or establish monthly deposits of $200 or more.\n\nFor investors with larger balances, Betterment provides two higher service tiers that alter the standard rate. Betterment Premium charges a 0.65% annual fee on your first $1,000,000 in assets and requires a minimum of $100,000 in eligible household assets. That tier gives you direct phone access to Certified Financial Planner (CFP) professionals for personalized advice.\n\nIf your balance exceeds $1,000,000 in the core service, Betterment applies a tiered discount structure. Dollars between $1,000,000 and $2,000,000 cost 0.15% annually, while dollars above $2,000,000 cost 0.10% annually. Your first $1,000,000 remains at the standard rate.\n\nInvestors transferring assets away from Betterment must account for an administrative processing charge. Betterment charges a $75 flat fee for each outbound account transfer sent to another financial firm. Check [Betterment's pricing page](https://www.betterment.com) to confirm current fee thresholds before you fund an account.",
+      },
+      {
+        heading: "How Wealthfront Fees and Account Tiers Function",
+        content:
+          "Wealthfront charges a straightforward 0.25% annual advisory fee on its Automated Investing Account, calculated as a percentage of your assets rather than a fixed monthly charge. You need an initial deposit of at least $500 to open and fund that account. Wealthfront never charges a flat monthly dollar fee, which protects small balances from high percentage drains.\n\nWealthfront expands its automated feature set as your account balance crosses designated asset thresholds. When your taxable automated account reaches $100,000, Wealthfront activates US Direct Indexing to purchase individual stocks rather than broad index funds. At a $500,000 balance, Wealthfront adds Smart Beta to adjust stock weightings for enhanced risk-adjusted returns at no additional management fee.\n\nWealthfront also provides specialized self-directed index portfolios for investors who want concentrated market exposure. An S&P 500 Direct account holds individual index equities directly for a 0.09% annual fee with a $5,000 minimum. Wealthfront also offers a Nasdaq-100 Direct account at 0.12% and an Automated Bond Ladder at a 0.15% annual advisory charge.\n\nThose targeted accounts give investors lower fee options for specific asset allocations. Wealthfront handles all rebalancing and dividend reinvestment through automated algorithms. Verify the latest account minimums and portfolio rules directly on [Wealthfront's pricing page](https://www.wealthfront.com).",
+      },
+      {
+        heading: "Betterment vs Wealthfront Fee Math and Break-Even Points",
+        content:
+          "The annual cost comparison between Betterment and Wealthfront shifts at a $24,000 balance for investors who do not deposit new money each month. Betterment's $5 monthly charge totals exactly $60 each year in fixed maintenance costs. Wealthfront's 0.25% fee on a $24,000 balance also equals exactly $60 each year.\n\nOn balances below $24,000 without recurring deposits, Betterment's flat monthly fee creates a much higher effective annual expense percentage. Paying $60 a year on a $2,000 balance at Betterment translates to an effective fee of 3.00% annually. Wealthfront charges 0.25% on that same $2,000 balance, which equals only $5 per year.\n\nEstablishing a $200 recurring monthly deposit at Betterment eliminates that cost penalty immediately. With that monthly deposit in place, Betterment bills your account at the same 0.25% rate that Wealthfront charges. At that point, the ongoing advisory cost between both services becomes identical until your balance reaches seven figures.\n\nYou can calculate how recurring fees and compounding returns influence your portfolio over decades using our [investment growth calculator](/investing/investment-growth-calculator/). A 2.75% difference in fees on small accounts noticeably slows your early wealth accumulation. We examine how these two independent providers rank against traditional brokerage services in our review of the [best robo-advisors of 2026](/roundup/best-robo-advisors/).",
+      },
+      {
+        heading: "Robo-Advisor Tax-Loss Harvesting and Direct Indexing in Betterment vs Wealthfront",
+        content:
+          "Both Betterment and Wealthfront provide automated tax-loss harvesting on all taxable accounts without requiring a minimum portfolio balance. Tax-loss harvesting monitors your investments for declining assets, sells those positions to realize capital losses, and replaces them with similar securities. Those realized losses can offset capital gains elsewhere and deduct up to $3,000 of ordinary income on your federal tax return.\n\nThe primary technical difference between the two services appears once your taxable balance crosses $100,000. Wealthfront enables US Direct Indexing at that $100,000 threshold, purchasing individual American equities instead of a single broad market ETF. Accounts holding over $500,000 at Wealthfront simply hold a larger roster of individual stocks directly.\n\nHarvesting losses among individual equities creates more tax-saving opportunities than trading whole index funds. Even when the broader stock market index posts a gain, dozens of individual corporate components experience declines during the year. Betterment conducts its tax-loss harvesting exclusively with ETFs across all balance levels, without an individual-stock direct indexing alternative.\n\nTax-loss harvesting carries specific regulatory boundaries that automated services like Betterment and Wealthfront must follow. Wealthfront's Form ADV explains that the software prevents wash sales across your internal Wealthfront accounts, but cannot track trades made in outside brokerage accounts. You can learn more about portfolio structures and asset allocation methods inside our [investing hub](/investing/).",
+      },
+      {
+        heading: "Human Financial Advisor Access and Support",
+        content:
+          "Betterment provides an optional upgrade to human Certified Financial Planner professionals, whereas Wealthfront offers no human advisor access at any balance level. Betterment Premium costs a 0.65% annual fee and requires a $100,000 minimum balance in eligible household accounts. That fee covers ongoing guidance for major financial milestones, estate questions, and employer equity packages.\n\nWealthfront relies strictly on software algorithms and automated tools to manage client money. You cannot schedule a call with a human advisor or consult an investment specialist at Wealthfront. Wealthfront designs its mobile interface and self-guided planning software to address common retirement questions without human intervention.\n\nSome investors prefer resolving questions through interactive digital dashboards. Wealthfront tailors its entire user experience around self-directed money management without sales calls or advisor meetings. That hands-off software approach keeps account maintenance frictionless for self-reliant investors.\n\nOther investors find immense comfort in discussing family finances with an experienced professional during stressful market corrections. Betterment gives those investors an accessible upgrade path once their assets accumulate. If you anticipate wanting human guidance as your wealth expands, Betterment Premium supplies a resource that Wealthfront does not replicate.",
+      },
+      {
+        heading: "Selecting the Better Fit for Your Personal Finances",
+        content:
+          "Choosing between Betterment and Wealthfront depends on your opening deposit size, your monthly contribution schedule, and your interest in human financial planning. Betterment permits you to open an account with $0, making it accessible for absolute beginners. You should immediately automate a $200 monthly deposit at Betterment to secure the favorable 0.25% management rate.\n\nWealthfront requires a $500 starting minimum, but it delivers immediate value through its flat 0.25% fee on all account balances. Wealthfront is especially attractive for taxable balances over $100,000 because US Direct Indexing extracts extra tax alpha from individual stocks. Reaching $500,000 at Wealthfront unlocks Smart Beta optimization without adding any extra management cost.\n\nBetterment stands out if you plan to hire a dedicated professional once your assets reach $100,000. Paying 0.65% for Betterment Premium gives you unlimited consultations while keeping your daily portfolio management automated. Consider your preference for human advice versus digital tools before allocating your capital.\n\nExamine your current account size and projected contributions to determine which pricing model saves you more money over your first year. A disciplined $200 monthly saver can use either platform at 0.25%, making secondary features like direct indexing or human advice the ultimate deciding factor. Before opening an account, compare your projected balance against both fee models on each firm's website to see whether Betterment vs Wealthfront delivers the lower cost for your current financial situation.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Betterment or Wealthfront cheaper?",
+        answer:
+          "Wealthfront is cheaper on balances under $24,000 if you do not establish monthly recurring deposits. Wealthfront charges a flat 0.25% annual management fee, whereas Betterment charges a flat $5 monthly fee that equates to a higher percentage on small balances. Once you deposit at least $200 each month or reach a $24,000 balance at Betterment, both services charge the identical 0.25% annual rate.",
+      },
+      {
+        question: "Does Wealthfront have a human financial advisor?",
+        answer:
+          "Wealthfront does not offer human financial advisors or Certified Financial Planner professionals at any account balance. Wealthfront relies entirely on software algorithms and digital planning tools. If you want access to human advisors, Betterment Premium provides direct telephone consultations for a 0.65% annual fee on accounts with at least $100,000 in eligible household assets.",
+      },
+      {
+        question: "What is Wealthfront's minimum to open an account?",
+        answer:
+          "Wealthfront requires a minimum initial deposit of $500 to open its Automated Investing Account. Wealthfront also offers specialized accounts with different deposit rules, such as its S&P 500 Direct account which requires a $5,000 minimum opening balance. Betterment requires no minimum balance to open its core investing account.",
+      },
+      {
+        question: "Do Betterment and Wealthfront both offer tax-loss harvesting?",
+        answer:
+          "Both Betterment and Wealthfront include automated tax-loss harvesting on all taxable accounts with no separate account minimum required. Betterment executes tax-loss harvesting using exchange-traded funds across all balance tiers. Wealthfront adds US Direct Indexing at a $100,000 balance, which harvests losses at the individual-stock level to capture more tax-saving opportunities.",
+      },
+      {
+        question: "What happens if my Betterment balance is under $24,000?",
+        answer:
+          "If your Betterment balance is under $24,000, Betterment charges a flat fee of $5 every month unless you set up recurring deposits of $200 or more per month. Establishing that $200 recurring monthly deposit removes the $5 monthly charge and switches your account to Betterment's standard 0.25% annual management rate.",
+      },
+    ],
+    sources: [
+      { label: "Betterment — Pricing", url: "https://www.betterment.com" },
+      { label: "Wealthfront — Pricing", url: "https://www.wealthfront.com" },
+    ],
+    relatedComparisons: ["fidelity-vs-schwab"],
+    calculatorLinks: [
+      { label: "Best Robo Advisors of 2026", href: "/roundup/best-robo-advisors/" },
+      { label: "Investing hub", href: "/investing/" },
+    ],
+  },
   ...BUSINESS_STRUCTURE_COMPARISONS,
 ];
 

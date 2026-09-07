@@ -1,0 +1,97 @@
+{
+  "slug": "betterment-vs-wealthfront",
+  "metaTitle": "Betterment vs Wealthfront: Robo-Advisor Fees Compared",
+  "metaDescription": "Betterment vs Wealthfront compared on management fees, account minimums, direct indexing, and advisor access so you can pick the right robo-advisor.",
+  "h1": "Betterment vs Wealthfront: Which Robo-Advisor Fits Your Balance?",
+  "subtitle": "Compare Betterment and Wealthfront on account minimums, fee tiers, tax-loss harvesting rules, and access to human advisors.",
+  "optionAName": "Betterment",
+  "optionBName": "Wealthfront",
+  "introText": "[Betterment](https://www.betterment.com) charges a flat $5 monthly fee that shifts to 0.25% a year once your balance crosses $24,000 or you deposit $200 each month, while [Wealthfront](https://www.wealthfront.com) charges a flat 0.25% annual fee on every balance from its $500 opening minimum. At ModernWallet, we review automated portfolio managers and model account costs so investors know what remains in their pocket after advisory deductions.\n\nYour decision between these two automated investing accounts depends on your starting deposit, your monthly savings habits, and whether you want access to human financial planners. Both automated investment services build diversified portfolios of exchange-traded funds (ETFs). Their fee structures reward different balances.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Account minimum to open",
+        "a": "$0",
+        "b": "$500"
+      },
+      {
+        "dimension": "Base management fee",
+        "a": "$5 per month under $24,000; 0.25% a year with $200 monthly deposits or $24,000 balance",
+        "b": "0.25% a year across all balances"
+      },
+      {
+        "dimension": "Tax-loss harvesting minimum",
+        "a": "Included at every balance level with no separate dollar threshold",
+        "b": "Included at every balance level with no separate dollar threshold"
+      },
+      {
+        "dimension": "Direct indexing access",
+        "a": "None (relies entirely on exchange-traded funds)",
+        "b": "US Direct Indexing available at a $100,000 balance"
+      },
+      {
+        "dimension": "Human financial advisor access",
+        "a": "Betterment Premium at 0.65% a year with a $100,000 minimum",
+        "b": "No human financial advisor access at any balance tier"
+      },
+      {
+        "dimension": "High-balance pricing discounts",
+        "a": "0.15% from $1M to $2M; 0.10% above $2M (first $1M at standard rate)",
+        "b": "0.25% standard rate; Smart Beta added at $500,000 at no extra fee"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "How Betterment Fees Work across Account Balances",
+      "content": "Betterment structures its base pricing as a flat $5 monthly charge for investors who hold smaller account balances without recurring deposits. That fixed monthly fee equals $60 a year on any balance below the qualifying threshold. Betterment switches your account to a 0.25% annual rate once you maintain a $24,000 balance or establish monthly deposits of $200 or more.\n\nFor investors with larger balances, Betterment provides two higher service tiers that alter the standard rate. Betterment Premium charges a 0.65% annual fee on your first $1,000,000 in assets and requires a minimum of $100,000 in eligible household assets. That tier gives you direct phone access to Certified Financial Planner (CFP) professionals for personalized advice.\n\nIf your balance exceeds $1,000,000 in the core service, Betterment applies a tiered discount structure. Dollars between $1,000,000 and $2,000,000 cost 0.15% annually, while dollars above $2,000,000 cost 0.10% annually. Your first $1,000,000 remains at the standard rate.\n\nInvestors transferring assets away from Betterment must account for an administrative processing charge. Betterment charges a $75 flat fee for each outbound account transfer sent to another financial firm. Check [Betterment's pricing page](https://www.betterment.com) to confirm current fee thresholds before you fund an account."
+    },
+    {
+      "heading": "How Wealthfront Fees and Account Tiers Function",
+      "content": "Wealthfront charges a straightforward 0.25% annual advisory fee on its Automated Investing Account, calculated as a percentage of your assets rather than a fixed monthly charge. You need an initial deposit of at least $500 to open and fund that account. Wealthfront never charges a flat monthly dollar fee, which protects small balances from high percentage drains.\n\nWealthfront expands its automated feature set as your account balance crosses designated asset thresholds. When your taxable automated account reaches $100,000, Wealthfront activates US Direct Indexing to purchase individual stocks rather than broad index funds. At a $500,000 balance, Wealthfront adds Smart Beta to adjust stock weightings for enhanced risk-adjusted returns at no additional management fee.\n\nWealthfront also provides specialized self-directed index portfolios for investors who want concentrated market exposure. An S&P 500 Direct account holds individual index equities directly for a 0.09% annual fee with a $5,000 minimum. Wealthfront also offers a Nasdaq-100 Direct account at 0.12% and an Automated Bond Ladder at a 0.15% annual advisory charge.\n\nThose targeted accounts give investors lower fee options for specific asset allocations. Wealthfront handles all rebalancing and dividend reinvestment through automated algorithms. Verify the latest account minimums and portfolio rules directly on [Wealthfront's pricing page](https://www.wealthfront.com)."
+    },
+    {
+      "heading": "Betterment vs Wealthfront Fee Math and Break-Even Points",
+      "content": "The annual cost comparison between Betterment and Wealthfront shifts at a $24,000 balance for investors who do not deposit new money each month. Betterment's $5 monthly charge totals exactly $60 each year in fixed maintenance costs. Wealthfront's 0.25% fee on a $24,000 balance also equals exactly $60 each year.\n\nOn balances below $24,000 without recurring deposits, Betterment's flat monthly fee creates a much higher effective annual expense percentage. Paying $60 a year on a $2,000 balance at Betterment translates to an effective fee of 3.00% annually. Wealthfront charges 0.25% on that same $2,000 balance, which equals only $5 per year.\n\nEstablishing a $200 recurring monthly deposit at Betterment eliminates that cost penalty immediately. With that monthly deposit in place, Betterment bills your account at the same 0.25% rate that Wealthfront charges. At that point, the ongoing advisory cost between both services becomes identical until your balance reaches seven figures.\n\nYou can calculate how recurring fees and compounding returns influence your portfolio over decades using our [investment growth calculator](/investing/investment-growth-calculator/). A 2.75% difference in fees on small accounts noticeably slows your early wealth accumulation. We examine how these two independent providers rank against traditional brokerage services in our review of the [best robo-advisors of 2026](/roundup/best-robo-advisors/)."
+    },
+    {
+      "heading": "Robo-Advisor Tax-Loss Harvesting and Direct Indexing in Betterment vs Wealthfront",
+      "content": "Both Betterment and Wealthfront provide automated tax-loss harvesting on all taxable accounts without requiring a minimum portfolio balance. Tax-loss harvesting monitors your investments for declining assets, sells those positions to realize capital losses, and replaces them with similar securities. Those realized losses can offset capital gains elsewhere and deduct up to $3,000 of ordinary income on your federal tax return.\n\nThe primary technical difference between the two services appears once your taxable balance crosses $100,000. Wealthfront enables US Direct Indexing at that $100,000 threshold, purchasing individual American equities instead of a single broad market ETF. Accounts holding over $500,000 at Wealthfront simply hold a larger roster of individual stocks directly.\n\nHarvesting losses among individual equities creates more tax-saving opportunities than trading whole index funds. Even when the broader stock market index posts a gain, dozens of individual corporate components experience declines during the year. Betterment conducts its tax-loss harvesting exclusively with ETFs across all balance levels, without an individual-stock direct indexing alternative.\n\nTax-loss harvesting carries specific regulatory boundaries that automated services like Betterment and Wealthfront must follow. Wealthfront's Form ADV explains that the software prevents wash sales across your internal Wealthfront accounts, but cannot track trades made in outside brokerage accounts. You can learn more about portfolio structures and asset allocation methods inside our [investing hub](/investing/)."
+    },
+    {
+      "heading": "Human Financial Advisor Access and Support",
+      "content": "Betterment provides an optional upgrade to human Certified Financial Planner professionals, whereas Wealthfront offers no human advisor access at any balance level. Betterment Premium costs a 0.65% annual fee and requires a $100,000 minimum balance in eligible household accounts. That fee covers ongoing guidance for major financial milestones, estate questions, and employer equity packages.\n\nWealthfront relies strictly on software algorithms and automated tools to manage client money. You cannot schedule a call with a human advisor or consult an investment specialist at Wealthfront. Wealthfront designs its mobile interface and self-guided planning software to address common retirement questions without human intervention.\n\nSome investors prefer resolving questions through interactive digital dashboards. Wealthfront tailors its entire user experience around self-directed money management without sales calls or advisor meetings. That hands-off software approach keeps account maintenance frictionless for self-reliant investors.\n\nOther investors find immense comfort in discussing family finances with an experienced professional during stressful market corrections. Betterment gives those investors an accessible upgrade path once their assets accumulate. If you anticipate wanting human guidance as your wealth expands, Betterment Premium supplies a resource that Wealthfront does not replicate."
+    },
+    {
+      "heading": "Selecting the Better Fit for Your Personal Finances",
+      "content": "Choosing between Betterment and Wealthfront depends on your opening deposit size, your monthly contribution schedule, and your interest in human financial planning. Betterment permits you to open an account with $0, making it accessible for absolute beginners. You should immediately automate a $200 monthly deposit at Betterment to secure the favorable 0.25% management rate.\n\nWealthfront requires a $500 starting minimum, but it delivers immediate value through its flat 0.25% fee on all account balances. Wealthfront is especially attractive for taxable balances over $100,000 because US Direct Indexing extracts extra tax alpha from individual stocks. Reaching $500,000 at Wealthfront unlocks Smart Beta optimization without adding any extra management cost.\n\nBetterment stands out if you plan to hire a dedicated professional once your assets reach $100,000. Paying 0.65% for Betterment Premium gives you unlimited consultations while keeping your daily portfolio management automated. Consider your preference for human advice versus digital tools before allocating your capital.\n\nExamine your current account size and projected contributions to determine which pricing model saves you more money over your first year. A disciplined $200 monthly saver can use either platform at 0.25%, making secondary features like direct indexing or human advice the ultimate deciding factor. Before opening an account, compare your projected balance against both fee models on each firm's website to see whether Betterment vs Wealthfront delivers the lower cost for your current financial situation."
+    }
+  ],
+  "verdict": "Choose Wealthfront if you have at least $500 to invest, prefer a completely automated software experience, and expect to build a taxable balance above $100,000 where US Direct Indexing harvests tax losses from individual stocks. Choose Betterment if you want to start investing with less than $500, or if you want an established path to consult human Certified Financial Planner professionals through Betterment Premium once your balance crosses $100,000. Neither Betterment nor Wealthfront fits an active trader who wants to buy individual stocks on margin, trade options contracts, or execute short-term market timing strategies. If either company changes its published fee schedule, account minimums, or direct indexing eligibility rules on its official pricing page, our recommendation between these two automated investing accounts could change.",
+  "faqItems": [
+    {
+      "question": "Is Betterment or Wealthfront cheaper?",
+      "answer": "Wealthfront is cheaper on balances under $24,000 if you do not establish monthly recurring deposits. Wealthfront charges a flat 0.25% annual management fee, whereas Betterment charges a flat $5 monthly fee that equates to a higher percentage on small balances. Once you deposit at least $200 each month or reach a $24,000 balance at Betterment, both services charge the identical 0.25% annual rate."
+    },
+    {
+      "question": "Does Wealthfront have a human financial advisor?",
+      "answer": "Wealthfront does not offer human financial advisors or Certified Financial Planner professionals at any account balance. Wealthfront relies entirely on software algorithms and digital planning tools. If you want access to human advisors, Betterment Premium provides direct telephone consultations for a 0.65% annual fee on accounts with at least $100,000 in eligible household assets."
+    },
+    {
+      "question": "What is Wealthfront's minimum to open an account?",
+      "answer": "Wealthfront requires a minimum initial deposit of $500 to open its Automated Investing Account. Wealthfront also offers specialized accounts with different deposit rules, such as its S&P 500 Direct account which requires a $5,000 minimum opening balance. Betterment requires no minimum balance to open its core investing account."
+    },
+    {
+      "question": "Do Betterment and Wealthfront both offer tax-loss harvesting?",
+      "answer": "Both Betterment and Wealthfront include automated tax-loss harvesting on all taxable accounts with no separate account minimum required. Betterment executes tax-loss harvesting using exchange-traded funds across all balance tiers. Wealthfront adds US Direct Indexing at a $100,000 balance, which harvests losses at the individual-stock level to capture more tax-saving opportunities."
+    },
+    {
+      "question": "What happens if my Betterment balance is under $24,000?",
+      "answer": "If your Betterment balance is under $24,000, Betterment charges a flat fee of $5 every month unless you set up recurring deposits of $200 or more per month. Establishing that $200 recurring monthly deposit removes the $5 monthly charge and switches your account to Betterment's standard 0.25% annual management rate."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}
