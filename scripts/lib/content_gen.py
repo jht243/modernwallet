@@ -153,7 +153,7 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
         else:
             _RUN["cost"] += cost or 0.0
         row = {
-            "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),   # UTC, so --since filters match Google's day buckets
             "caller": CALLER, "kind": kind, "model": r.get("model"),
             "provider": r.get("provider"), "input_tokens": it, "output_tokens": ot,
             "thinking_tokens": tt, "cost_usd": cost, "thinking": THINKING,
@@ -617,6 +617,7 @@ def cmd_preflight(a) -> int:
             if not r["text"].strip():
                 raise RuntimeError(f"empty reply (finish={r['finish']}) — model id/mode wrong or output starved")
             print(f"[content_gen] {m:22} OK  key={name}(…{key[-4:]}) replied={r['text'].strip()[:12]!r}")
+            record(r, kind="preflight")   # a real billable call on every routine run — never invisible
             usable.append(m)
         except Exception as e:  # noqa: BLE001
             print(f"[content_gen] {m:22} FAIL — {str(e)[:160]}")
