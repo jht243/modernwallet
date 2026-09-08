@@ -1,0 +1,50 @@
+{
+ "tax-estate": {
+  "count": 20,
+  "examples": [
+   "What you do there impacts how much taxes you pay.",
+   "I'm looking at how much of that$7 million portfolio is in a pre-tax account.",
+   "You can actually just like scroll through their website And they will tell you exactly how much it's going to cost."
+  ]
+ },
+ "investing": {
+  "count": 22,
+  "examples": [
+   "Why do I say your portfolio?",
+   "There's all kinds of rules of thumb or research that shows how much you can spend from your portfolio without running out of money in retirement.",
+   "That was very much based upon how much she was taken from her IRA this year and from her brokerage account this year."
+  ]
+ },
+ "budget": {
+  "count": 25,
+  "examples": [
+   "Identity, purpose, and learning how to spend after a lifetime of saving were the real challenges that Donovan faced.",
+   "How much do I need to save?",
+   "There's all kinds of rules of thumb or research that shows how much you can spend from your portfolio without running out of money in retirement."
+  ]
+ },
+ "retirement": {
+  "count": 24,
+  "examples": [
+   "In today's episode, we break down the four core buckets of retirement and we learn how to test retirement before you dive right in.",
+   "You know, I was sharing with you before we started recording that the journey to retirement so often starts with understanding, well, what's my number?",
+   "There's all kinds of rules of thumb or research that shows how much you can spend from your portfolio without running out of money in retirement."
+  ]
+ },
+ "real-estate": {
+  "count": 12,
+  "examples": [
+   "But I think for most, People who listen to How to Money, they realize they're going to make, hopefully, a better decision than paying off their mortgage.",
+   "So there's so much that goes into that where where people thinking well, the other thing too is like how do I get the right rental property?",
+   "You're a listener of the Rental Income podcast and you emailed me with the question what's going on?"
+  ]
+ },
+ "net-worth": {
+  "count": 9,
+  "examples": [
+   "49% of How to Money listeners are on the track to real early retirement, which is retiring at age 50.",
+   "You know income, but you learn stuff as well in regards to how to build wealth.",
+   "Know where it is, where it's going, track it, how to invest it."
+  ]
+ }
+}

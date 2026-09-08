@@ -1,0 +1,8 @@
+[
+ "ahrefs unusable (no AHREFS_API_KEY)",
+ "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+ "dataforseo returned volume for 23/23 phrases",
+ "semrush unusable (HTTP 403)",
+ "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+ "Autocomplete: 23/23 rows corroborated live"
+]
