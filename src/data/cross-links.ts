@@ -147,6 +147,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/business-line-of-credit/", label: "A cheaper alternative: business line of credit" },
     { href: "/invoice-factoring/", label: "Turn unpaid invoices into cash instead" },
     { href: "/compare/merchant-cash-advance-vs-loan/", label: "MCA vs a business loan" },
+    { href: "/compare/merchant-cash-advance-vs-revenue-based-financing/", label: "MCA vs revenue-based financing" },
   ],
   "invoice-factoring": [
     { href: "/business-line-of-credit/", label: "Compare a business line of credit" },
@@ -157,6 +158,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   "business-line-of-credit": [
     { href: "/invoice-factoring/", label: "Factor invoices for faster cash" },
     { href: "/merchant-cash-advance/", label: "When speed matters: MCA" },
+    { href: "/compare/merchant-cash-advance-vs-revenue-based-financing/", label: "MCA vs revenue-based financing" },
     { href: "/guides/small-business-financing-guide/", label: "Compare every financing option" },
     { href: "/guides/how-to-get-a-business-loan-with-bad-credit/", label: "Below a 620 score? Start here" },
     { href: "/guides/business-line-of-credit-requirements/", label: "Credit score and document checklist by lender" },

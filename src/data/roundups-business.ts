@@ -439,6 +439,7 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     relatedComparisons: [
       "merchant-cash-advance-vs-loan",
       "invoice-factoring-vs-merchant-cash-advance",
+      "merchant-cash-advance-vs-revenue-based-financing",
     ],
     calculatorLinks: [
       {
