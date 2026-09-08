@@ -9,9 +9,9 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   {
     calculator: "net-worth",
     slug: "how-to-calculate-net-worth",
-    title: "How to Calculate Net Worth: Step-by-Step Guide",
+    title: "How to Calculate Net Worth for a Person (Step-by-Step)",
     metaDescription:
-      "Learn how to calculate net worth in minutes. Add your assets, subtract your debts, and see where you stand vs. peers — with a worked example.",
+      "See how to calculate net worth for a person: add up assets like cash and investments, subtract debts, and check your number against a worked example.",
     targetKeyword: "how to calculate net worth",
     estimatedVolume: 90500,
     estimatedKD: 55,
@@ -19,7 +19,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     introText:
       "Calculating your net worth is simple: add up everything you own, then subtract everything you owe. The result is your financial scorecard at a single point in time. Use the calculator above to run your own figures, then keep reading to learn what counts, what to skip, and how to interpret your result.",
     howItWorks:
-      "Net worth equals total assets minus total liabilities. Assets are things you own that have real cash value today: checking and savings, taxable brokerage balances, retirement accounts like 401(k)s and IRAs, the current market value of your home, vehicles, and other property you could sell.\n\nLiabilities are what you owe right now: the remaining balance on your mortgage, auto loans, student loans, credit card debt, personal loans, and any unpaid medical bills. Use today's payoff amount for each debt, not the original loan size. The Federal Reserve uses this same framework in its Survey of Consumer Finances. For age-based benchmarks, see the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/). If a credit card balance keeps climbing, check whether a [credit card cash advance](/guides/credit-card-cash-advance-guide/) is quietly part of it — the fee and interest stack up faster than a regular purchase.",
+      "Net worth equals total assets minus total liabilities. Assets are things you own that have real cash value today: checking and savings, taxable brokerage balances, retirement accounts like 401(k)s and IRAs, the current market value of your home, vehicles, and other property you could sell.\n\nLiabilities are what you owe right now: the remaining balance on your mortgage, auto loans, student loans, credit card debt, personal loans, and any unpaid medical bills. Use today's payoff amount for each debt, not the original loan size. The Federal Reserve uses this same framework in its Survey of Consumer Finances. For age-based benchmarks, see the [net worth by age calculator](/net-worth/net-worth-by-age-calculator/). If a credit card balance keeps climbing, check whether a [credit card cash advance](/guides/credit-card-cash-advance-guide/) is quietly part of it — the fee and interest stack up faster than a regular purchase. FAFSA and the SEC's accredited-investor test each exclude different things from the general formula above: see [net worth for FAFSA vs. accredited investor rules](/guides/net-worth-for-fafsa-and-accredited-investor/).",
     commonMistakes: [
       "Using the purchase price of your home instead of its current market value — net worth tracks today's reality, not what you paid years ago.",
       "Subtracting the original mortgage amount instead of the remaining balance owed.",
