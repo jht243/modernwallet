@@ -1,0 +1,9 @@
+## Which One Should You Get, and Can You Use Both?
+
+Pick a Bilt card if rent or a mortgage is your largest monthly expense, and choose Chase Ultimate Rewards if you do not pay housing costs by card. You can also carry both. Using Bilt for housing alongside a Chase Sapphire card for dining and travel lets you earn rewards across your entire budget without paying duplicate fees.
+
+Bilt discontinued its original Mastercard on February 6, 2026, and replaced it with three distinct options. You can choose the [Bilt Blue Card](https://www.bilt.com/card) at $0, the [Bilt Obsidian Card](https://www.bilt.com/card) at $95, or the [Bilt Palladium Card](https://www.bilt.com/card/palladium) at $495. All three cards waive foreign transaction fees and permit fee-free rent or mortgage payments.
+
+Your choice among them depends on your non-housing budget. Bilt Blue is the simplest choice if you want zero annual overhead, while the $95 Obsidian and $495 Palladium cards require heavier retail spending to justify their annual fees. Map out your monthly expenses in our [budget planner](/budget/) to see how much of your total spending falls outside of housing. The section below on Bilt Card 2.0's limitations covers exactly how the current tier system and Bilt Cash rules work before you commit to a tier.
+
+Chase Ultimate Rewards remains the superior choice if you do not pay rent or a mortgage by card. Without housing expenses, Chase category bonuses deliver higher overall value. Confirm the current tier thresholds and point-earning terms on [Bilt's card lineup page](https://www.bilt.com/card) before you apply.

@@ -1,0 +1,34 @@
+{
+  "slug": "term-life-vs-universal-life-insurance",
+  "title": "Term Life vs Universal Life Insurance: Which to Buy?",
+  "metaDescription": "Term life vs universal life insurance compared: cost, coverage length, cash value, and flexibility — see which policy actually fits your needs.",
+  "optionA": "Term Life Insurance",
+  "optionB": "Universal Life Insurance",
+  "h1": "Term Life vs Universal Life Insurance: Which Should You Buy?",
+  "introText": "Term life insurance covers you for a set period (typically 10 to 30 years) at the lowest available premium. It pays nothing if you outlive the term. Universal life insurance, by contrast, covers you for life, builds cash value, and lets you adjust your premium and death benefit, but it can cost several times more for the same death benefit. Most people need term insurance's low cost for pure income replacement, while universal life fits a narrower range of lifelong, flexible-premium needs.",
+  "verdict": "Buy term life insurance for the vast majority of income-replacement needs — it's dramatically cheaper and covers the years your family actually depends on your income, like while a mortgage is outstanding or kids are still at home. Consider universal life insurance only for a genuinely lifelong need: estate-tax liquidity, a permanent dependent, or a business buy-sell agreement that must be funded no matter when you die.",
+  "sections": [
+    {
+      "heading": "What happens when term coverage ends",
+      "content": "When a term policy's level period ends, you can typically renew annually at a sharply higher, attained-age rate, or convert to a permanent policy if your term includes a conversion option, usually without new medical underwriting if exercised before a deadline. If you do nothing and let the term simply expire, coverage stops entirely and there's no payout, regardless of how much you paid in over the years.\n\nMany buyers no longer need coverage once the term ends — the mortgage is paid off, kids are financially independent — which is exactly the scenario term life is designed for."
+    },
+    {
+      "heading": "Where universal life genuinely earns its higher cost",
+      "content": "Universal life fits needs that don't have an end date: covering estate taxes so heirs aren't forced to sell assets, funding lifelong support for a special-needs dependent, or guaranteeing a business buy-sell agreement gets funded whenever a partner dies, not just within a 20- or 30-year window. In each case, the buyer specifically needs coverage that cannot expire, which term structurally cannot provide.\n\nFor these narrow, genuinely lifelong needs, universal life's higher premium buys something term life doesn't offer at any price: certainty of a payout, whenever death occurs. See our [whole life vs universal life insurance](/compare/whole-life-vs-universal-life-insurance/) comparison for how to choose between the two permanent options."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is term life insurance always cheaper than universal life?",
+      "answer": "For the same death benefit, yes — term life is priced on mortality risk alone, while universal life also funds a cash-value component, making it typically 5 to 15 times more expensive depending on age and health at issue."
+    },
+    {
+      "question": "Can I convert term life insurance into universal life insurance later?",
+      "answer": "Many term policies include a conversion option letting you switch to a permanent policy like universal life without new medical underwriting, usually before a set age or within a specific number of years. Check your policy's conversion window and deadline directly with your insurer."
+    }
+  ],
+  "sources": [
+    { "label": "National Association of Insurance Commissioners (NAIC) — Life Insurance Buyer's Guide", "url": "https://content.naic.org/consumer/life-insurance.htm" },
+    { "label": "Consumer Financial Protection Bureau — Life Insurance", "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-life-insurance-en-1751/" }
+  ]
+}

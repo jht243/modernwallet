@@ -1,0 +1,14 @@
+{
+  "dispositions": {
+    "https://www.nerdwallet.com/insurance/medicare/learn": { "disposition": "skipped-low-value", "our_url": "" },
+    "https://www.nerdwallet.com/finance/news/sept-11-economic-aftershocks": { "disposition": "skipped-low-value", "our_url": "" },
+    "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-wednesday-september-9-2026": { "disposition": "skipped-low-value", "our_url": "" },
+    "https://www.nerdwallet.com/credit-cards/news/navy-federal-flagship-premier": { "disposition": "skipped-low-value", "our_url": "" },
+    "https://www.nerdwallet.com/finance/learn/how-much-should-i-spend-on-rent": { "disposition": "skipped-duplicate", "our_url": "/guides/how-much-should-i-spend-on-rent/" },
+    "https://www.nerdwallet.com/student-loans/learn/cosign-student-loan-bad-credit": { "disposition": "skipped-duplicate", "our_url": "/roundup/best-student-loans-bad-credit/" },
+    "https://www.nerdwallet.com/credit-cards/learn/bilt-cards-unusual-features": { "disposition": "enriched", "our_url": "/compare/bilt-rewards-vs-chase-ultimate-rewards/" },
+    "https://www.nerdwallet.com/personal-loans/best/medical-loans-finance-health-care": { "disposition": "published", "our_url": "/guides/medical-loan-explained/" },
+    "https://www.nerdwallet.com/personal-loans/best/secured-personal-loans-lenders": { "disposition": "published", "our_url": "/guides/secured-personal-loans-explained/" },
+    "https://www.nerdwallet.com/credit-cards/news/capital-one-venture-limited-time-bonus-september-2026": { "disposition": "skipped-low-value", "our_url": "" }
+  }
+}

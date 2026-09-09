@@ -1,0 +1,38 @@
+{
+ "slug": "bilt-rewards-vs-chase-ultimate-rewards--how-it-works",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 187,
+ "floor": 0,
+ "input_tokens": 16706,
+ "output_tokens": 276,
+ "thinking_tokens": 30546,
+ "est_cost_usd": 0.1281,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "auditor: section repeats existing page heading(s) ['## How Bilt Rewards Actually Works'] \u2014 merge, do not duplicate"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 187,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15940
+  }
+ },
+ "seconds": 81.3,
+ "response_id": "rtOhaoeuFKeZjrEP467kwAU",
+ "generated_at": "2026-09-09T21:47:42+0000"
+}

@@ -1,0 +1,38 @@
+{
+ "slug": "bilt-rewards-vs-chase-ultimate-rewards--limitations",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 209,
+ "floor": 0,
+ "input_tokens": 16743,
+ "output_tokens": 396,
+ "thinking_tokens": 25983,
+ "est_cost_usd": 0.1115,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 209,
+  "numbers_not_in_facts": [
+   "31"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15940
+  }
+ },
+ "seconds": 72.6,
+ "response_id": "r9Shatm0E8X9jrEP7b23yAg",
+ "generated_at": "2026-09-09T21:51:50+0000"
+}

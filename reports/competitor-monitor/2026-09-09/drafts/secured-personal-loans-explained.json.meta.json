@@ -1,0 +1,50 @@
+{
+ "slug": "secured-personal-loans-explained",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2008,
+ "floor": 1200,
+ "input_tokens": 20233,
+ "output_tokens": 3184,
+ "thinking_tokens": 19139,
+ "est_cost_usd": 0.0989,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2008,
+  "numbers_not_in_facts": [
+   "1.5",
+   "200",
+   "24",
+   "3000",
+   "54.71",
+   "7.5"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17582
+  }
+ },
+ "seconds": 55.4,
+ "response_id": "6dGhasakDOjV1MkPp4jH6Ao",
+ "generated_at": "2026-09-09T21:39:43+0000"
+}
