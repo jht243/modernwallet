@@ -142,3 +142,8 @@
 | /guides/is-social-security-taxable/ | 2026-09-04 | 3 | 0/0/0/0/0 | 1 |
 | /guides/is-inheritance-marital-property/ | 2026-09-06 | 1 | 0/0/2/0/0 | 0 |
 | /net-worth/how-to-calculate-net-worth/ | 2026-09-08 | 1 | 0/0/1/1/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-09-09 | 1 | 0/0/0/0/0 | 0 |
+| /portfolio/ | 2026-09-09 | 1 | 0/0/0/0/0 | 1 |
+| / | 2026-09-09 | 0 | 0/0/0/0/0 | 0 |
+| /guides/high-yield-savings-account-for-kids-and-teens/ | 2026-09-09 | 0 | 0/0/0/0/0 | 0 |
+| /guides/how-to-invest-100k-to-1-million/ | 2026-09-09 | 0 | 0/0/0/0/0 | 1 |
