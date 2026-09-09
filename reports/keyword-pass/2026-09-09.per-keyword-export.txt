@@ -1,0 +1,83 @@
+2026-09-09 autocomplete-pass-auto — per-keyword export (72 new suggestions, 5 seeds)
+keyword | proposed action | target
+
+--- retirement calculator (22) ---
+this is money retirement calculator | dropped — already covered (roundup FAQ) | /retirement/
+retirement calculator adjusted for inflation | dropped — already covered (intro + FAQ1) | /retirement/
+retirement calculator bank | dropped — noise/fragment | —
+retirement calculator calculator.net | dropped — already covered (roundup FAQ) | /retirement/
+retirement calculator dinkytown | dropped — already covered (roundup FAQ) | /retirement/
+retirement calculator dual income | create new content (grouped) | /guides/retirement-calculator-couples-pension-social-security/
+retirement calculator edward | dropped — already covered (roundup FAQ) | /retirement/
+retirement calculator for couples with pension and social security | create new content (grouped) | /guides/retirement-calculator-couples-pension-social-security/
+retirement calculator guardrails | update existing body text | /retirement/
+retirement calculator government of india | dropped — already covered (intl guide FAQ) | /retirement/
+retirement calculator how much will my money grow | dropped — already covered (FAQ1/2) | /retirement/
+retirement calculator including pension and social security | create new content (grouped) | /guides/retirement-calculator-couples-pension-social-security/
+retirement calculator in today's dollars | dropped — already covered (intro + FAQ1) | /retirement/
+retirement calculator if i stop contributing | update existing body text | /retirement/
+retirement calculator job | dropped — noise/fragment | —
+retirement calculator key | dropped — noise/fragment | —
+retirement calculator mutual of omaha | dropped — already covered (roundup FAQ) | /retirement/
+retirement calculator military high 3 | create new content (grouped) | /guides/military-federal-pension-calculator-explained/
+retirement calculator opm fers | create new content (grouped) | /guides/military-federal-pension-calculator-explained/
+retirement calculator planning | dropped — duplicate of hub's own head term | /retirement/
+nys retirement quick calculator | create new content (grouped, brief mention) | /guides/military-federal-pension-calculator-explained/
+zero1 retirement calculator | dropped — noise/unclear | —
+
+--- credit card payoff calculator (5) ---
+credit card payoff calculator calendar | update existing body text | /credit-card-payoff/
+credit card payoff calculator no interest | dropped — already covered (FAQ7) | /credit-card-payoff/
+credit card payment calculator navy federal | dropped — already covered (FAQ4) | /credit-card-payoff/
+credit card payment calculator tesco | dropped — already covered (FAQ4) | /credit-card-payoff/
+credit card payoff calculator with minimum payment | dropped — already covered (FAQ2) | /credit-card-payoff/
+
+--- rental property calculator (18) ---
+how do you determine the value of rental property | update existing body text | /real-estate/
+rental property assessment calculator | update existing body text (grouped) | /real-estate/
+rental property borrowing calculator | update existing body text (grouped) | /real-estate/
+rental income tax calculator cyprus | dropped — already covered ("How is rental income taxed?") | /real-estate/
+rental income tax calculator canada | dropped — already covered | /real-estate/
+rental.income calculator for tenants | dropped — already covered | /real-estate/
+rental property calculator google sheets | update existing body text (grouped into valuation FAQ) | /real-estate/
+rental income from house property calculator | dropped — already covered | /real-estate/
+rental value of property calculator india | dropped — already covered | /real-estate/
+rental income tax calculator nz | dropped — already covered | /real-estate/
+cash damming rental property calculator ontario | update existing body text | /real-estate/
+online rental property calculator | dropped — duplicate of hub's own coverage | /real-estate/
+rental house profit calculator | dropped — duplicate of hub's own coverage | /real-estate/
+rental property return calculator | dropped — duplicate of hub's own coverage | /real-estate/
+rental house roi calculator | dropped — duplicate of hub's own coverage | /real-estate/
+rental income required calculator | update existing body text (grouped) | /real-estate/
+rental property calculator with income tax | dropped — already covered ("How is rental income taxed?") | /real-estate/
+rental property formula value | update existing body text (grouped into valuation FAQ) | /real-estate/
+
+--- life insurance needs calculator (23) ---
+life insurance needs calculator free | dropped — already covered (FAQ1) | /life-insurance-needs/
+life insurance needs calculator excel | update existing body text (grouped) | /life-insurance-needs/
+life insurance needs calculator canada | update existing body text (grouped) | /life-insurance-needs/
+how much life insurance do i need calculator | dropped — already covered (FAQ1) | /life-insurance-needs/
+how do you figure out how much life insurance you need | dropped — already covered (FAQ1) | /life-insurance-needs/
+how much term life insurance do i need calculator | dropped — already covered (FAQ3) | /life-insurance-needs/
+how much term life insurance do i need | dropped — already covered (FAQ3) | /life-insurance-needs/
+how much life insurance need calculator | dropped — already covered (FAQ1) | /life-insurance-needs/
+how do you decide how much life insurance you need | dropped — already covered (FAQ1) | /life-insurance-needs/
+how much should my life insurance cover | dropped — already covered (FAQ1) | /life-insurance-needs/
+how to calculate how much life insurance you need | dropped — already covered (FAQ1) | /life-insurance-needs/
+life insurance needs analysis calculator | dropped — same methodology page already uses | /life-insurance-needs/
+life insurance needs analysis calculator excel | update existing body text (grouped) | /life-insurance-needs/
+needs approach life insurance calculator | dropped — same methodology page already uses | /life-insurance-needs/
+life insurance calculator cost | update existing body text | /life-insurance-needs/
+cash value of life insurance calculator | update existing body text (grouped) | /life-insurance-needs/
+how much life insurance can i get for $25 a month | dropped — already covered (FAQ "Where should I buy...") | /life-insurance-needs/
+best life insurance needs calculator | dropped — already covered (FAQ2) | /life-insurance-needs/
+state farm life insurance needs calculator | dropped — already covered (FAQ2 differentiation) | /life-insurance-needs/
+life insurance needs calculator life happens | dropped — already covered (FAQ2 differentiation) | /life-insurance-needs/
+o https lifehappens org life insurance needs calculator | dropped — noise/malformed URL | —
+prudential life insurance needs calculator | dropped — already covered (FAQ2 differentiation) | /life-insurance-needs/
+va life insurance needs calculator | create new content | /guides/va-life-insurance-sgli-vgli-guide/
+voya life insurance needs calculator | dropped — already covered (FAQ2 differentiation) | /life-insurance-needs/
+average cash value of life insurance | update existing body text (grouped) | /life-insurance-needs/
+
+--- invoice factoring calculator (1) ---
+invoice discounting cost calculator | update existing body text | /invoice-factoring/
