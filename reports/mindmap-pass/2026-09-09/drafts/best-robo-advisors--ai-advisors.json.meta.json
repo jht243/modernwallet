@@ -1,0 +1,31 @@
+{
+ "slug": "best-robo-advisors--ai-advisors",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 320,
+ "floor": 180,
+ "input_tokens": 25956,
+ "output_tokens": 556,
+ "thinking_tokens": 12004,
+ "est_cost_usd": 0.0666,
+ "guards": {
+  "repairs": [
+   "slug None -> 'best-robo-advisors--ai-advisors'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 320,
+  "numbers_not_in_facts": []
+ },
+ "seconds": 35.7,
+ "response_id": "YeyhapT1Naj_qtsPpenqgAk",
+ "generated_at": "2026-09-09T18:32:20-0500"
+}

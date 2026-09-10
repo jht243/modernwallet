@@ -1,0 +1,167 @@
+{
+ "new_pages": {
+  "roundup/best-ai-investing-apps": {
+   "inbound": 3,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/ai-investing-vs-robo-advisors",
+    "guides/ai-stock-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides/ai-stock-trading-explained",
+     "anchor": "best AI investing apps"
+    },
+    {
+     "from": "compare/ai-investing-vs-robo-advisors",
+     "anchor": "best AI investing apps"
+    },
+    {
+     "from": "roundup",
+     "anchor": "AI investing apps Best AI Investing Apps of 2026: Ranked and Reviewed"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "roundup/best-ai-trading-bots": {
+   "inbound": 2,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/ai-stock-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides/ai-stock-trading-explained",
+     "anchor": "best AI trading bots"
+    },
+    {
+     "from": "roundup",
+     "anchor": "AI investing apps Best AI Trading Bots of 2026: Tested Software and Scam Warnings"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "roundup/best-ai-stock-pickers": {
+   "inbound": 2,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/ai-stock-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides/ai-stock-trading-explained",
+     "anchor": "best AI stock pickers"
+    },
+    {
+     "from": "roundup",
+     "anchor": "ai investing Best AI Stock Picker: 5 Tools Tested and Compared for 2026"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "roundup/robinhood-agentic-trading-alternatives": {
+   "inbound": 2,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/robinhood-agentic-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides/robinhood-agentic-trading-explained",
+     "anchor": "roundup of Robinhood agentic trading alternatives"
+    },
+    {
+     "from": "roundup",
+     "anchor": "AI investing Robinhood Agentic Trading Alternatives: AI Brokers Compared"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/robinhood-agentic-trading-explained": {
+   "inbound": 2,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/ai-stock-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides",
+     "anchor": "Robinhood Agentic Trading and AI Tools Explained Learn how Robinhood agentic trading and Cortex work, how the ring-fenced wallet isolates risk, and what automated trading costs. 2 tools \u00b7 7 steps"
+    },
+    {
+     "from": "guides/ai-stock-trading-explained",
+     "anchor": "Robinhood agentic trading explained"
+    }
+   ],
+   "unlinked_mentions": [
+    {
+     "page": "roundup/robinhood-agentic-trading-alternatives",
+     "mentions": 4
+    }
+   ]
+  },
+  "guides/ai-stock-trading-explained": {
+   "inbound": 3,
+   "distinct_anchors": 3,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/ai-investing-vs-robo-advisors",
+    "guides/robinhood-agentic-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides",
+     "anchor": "How AI Stock Trading Works for Everyday Investors Understand the difference between AI research screeners, intraday scanners, and automated agentic trading tools before putting money on the line. 3 tools \u00b7 6 steps"
+    },
+    {
+     "from": "guides/robinhood-agentic-trading-explained",
+     "anchor": "guide to AI stock trading"
+    },
+    {
+     "from": "compare/ai-investing-vs-robo-advisors",
+     "anchor": "AI stock trading explained"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "compare/ai-investing-vs-robo-advisors": {
+   "inbound": 2,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/ai-stock-trading-explained"
+   ],
+   "links": [
+    {
+     "from": "guides/ai-stock-trading-explained",
+     "anchor": "AI investing vs. robo-advisors"
+    },
+    {
+     "from": "compare",
+     "anchor": "AI investing apps vs Robo-advisors AI Investing vs Robo-Advisor: Which Fits Your Goals?"
+    }
+   ],
+   "unlinked_mentions": []
+  }
+ },
+ "target_inbound": 3
+}

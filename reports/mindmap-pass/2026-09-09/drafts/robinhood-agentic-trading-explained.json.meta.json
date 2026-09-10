@@ -1,0 +1,29 @@
+{
+ "slug": "robinhood-agentic-trading-explained",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2352,
+ "floor": 1500,
+ "input_tokens": 21145,
+ "output_tokens": 3723,
+ "thinking_tokens": 16642,
+ "est_cost_usd": 0.0922,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2352,
+  "numbers_not_in_facts": []
+ },
+ "seconds": 63.1,
+ "response_id": "NOuhaoqPI5_-qtsP3tGRsA0",
+ "generated_at": "2026-09-09T18:27:46-0500"
+}

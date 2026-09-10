@@ -1,0 +1,44 @@
+{
+ "slug": "best-ai-trading-bots",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2877,
+ "floor": 1400,
+ "input_tokens": 26281,
+ "output_tokens": 5054,
+ "thinking_tokens": 7978,
+ "est_cost_usd": 0.0686,
+ "guards": {
+  "repairs": [
+   "stripped markdown code fence"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2877,
+  "numbers_not_in_facts": [
+   "00",
+   "10000",
+   "2.64",
+   "2000",
+   "250",
+   "264",
+   "30",
+   "30.48",
+   "3048",
+   "500",
+   "5000",
+   "60.96"
+  ]
+ },
+ "seconds": 44.5,
+ "response_id": "NOuhaq7hDuiCmtkPgf69kQ0",
+ "generated_at": "2026-09-09T18:27:28-0500"
+}

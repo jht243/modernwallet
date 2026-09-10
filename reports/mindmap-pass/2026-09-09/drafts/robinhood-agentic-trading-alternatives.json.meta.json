@@ -1,0 +1,34 @@
+{
+ "slug": "robinhood-agentic-trading-alternatives",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2640,
+ "floor": 1400,
+ "input_tokens": 26140,
+ "output_tokens": 4709,
+ "thinking_tokens": 5992,
+ "est_cost_usd": 0.0597,
+ "guards": {
+  "repairs": [
+   "stripped markdown code fence"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2640,
+  "numbers_not_in_facts": [
+   "1068",
+   "2268"
+  ]
+ },
+ "seconds": 38.1,
+ "response_id": "NOuhasDFI8XVz7IPwdaruAg",
+ "generated_at": "2026-09-09T18:27:21-0500"
+}

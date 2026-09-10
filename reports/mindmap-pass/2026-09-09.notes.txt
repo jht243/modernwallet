@@ -1,0 +1,18 @@
+[keyword_data] ahrefs unusable (HTTP 403 {
+  "error": "API units limit reached. Expected usage: 50, API units left: 19."
+})
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 24/25 phrases
+[keyword_data] semrush unusable (HTTP 403)
+[keyword_data] kd: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 1 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 25/25 rows corroborated live
+[keyword_data] ahrefs unusable (HTTP 403 {
+  "error": "API units limit reached. Expected usage: 50, API units left: 19."
+})
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 15/25 phrases
+[keyword_data] semrush unusable (HTTP 403)
+[keyword_data] kd: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 10 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 17/25 rows corroborated live

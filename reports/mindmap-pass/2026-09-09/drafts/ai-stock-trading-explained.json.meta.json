@@ -1,0 +1,32 @@
+{
+ "slug": "ai-stock-trading-explained",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2373,
+ "floor": 1500,
+ "input_tokens": 21023,
+ "output_tokens": 3811,
+ "thinking_tokens": 23626,
+ "est_cost_usd": 0.1187,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2373,
+  "numbers_not_in_facts": [
+   "60",
+   "90"
+  ]
+ },
+ "seconds": 78.8,
+ "response_id": "NOuhavWXCuuCz7IPzoSqoAw",
+ "generated_at": "2026-09-09T18:28:02-0500"
+}

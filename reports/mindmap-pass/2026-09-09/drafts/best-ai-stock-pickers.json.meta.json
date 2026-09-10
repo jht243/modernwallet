@@ -1,0 +1,34 @@
+{
+ "slug": "best-ai-stock-pickers",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3017,
+ "floor": 1400,
+ "input_tokens": 26136,
+ "output_tokens": 5209,
+ "thinking_tokens": 8093,
+ "est_cost_usd": 0.0695,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3017,
+  "numbers_not_in_facts": [
+   "2026",
+   "250",
+   "500",
+   "90"
+  ]
+ },
+ "seconds": 43.7,
+ "response_id": "NOuhatTnC-ikqtsP_-qJwAU",
+ "generated_at": "2026-09-09T18:27:27-0500"
+}

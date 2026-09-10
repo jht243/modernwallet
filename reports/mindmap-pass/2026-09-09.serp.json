@@ -1,0 +1,663 @@
+{
+ "rows": [
+  {
+   "keyword": "ai stock trading",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.stockhero.ai",
+    "www.forex.com",
+    "business.fiu.edu",
+    "www.stockbrokers.com",
+    "www.binance.com",
+    "www.wsj.com",
+    "www.prnewswire.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.stockhero.ai",
+    "innotechtoday.com",
+    "business.fiu.edu",
+    "www.trade-ideas.com",
+    "www.finder.com",
+    "www.forex.com",
+    "www.britannica.com",
+    "www.ig.com",
+    "danelfin.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "product_considerations": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Does AI actually work for stock trading?",
+    "Is there an AI that will trade stocks?",
+    "Which AI trader is the best?",
+    "Which AI is best for the stock market?",
+    "Can I make $1000 per day from trading?",
+    "Can I use ChatGPT for trading?"
+   ],
+   "related_searches": [
+    "Ai stock trading for beginners",
+    "Ai stock trading reddit",
+    "AI stock trading bot free",
+    "Free AI stock trading",
+    "Free AI stock trading app",
+    "Ai stock trading app",
+    "Ai stock trading bot",
+    "AI stock trading platform"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.stockhero.ai, www.forex.com",
+   "se_results_count": 1150
+  },
+  {
+   "keyword": "ai trading bot",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.cftc.gov",
+    "innotechtoday.com",
+    "coinrule.com",
+    "www.stockbrokers.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "apps.apple.com",
+    "play.google.com",
+    "innotechtoday.com",
+    "tickeron.com",
+    "www.stockbrokers.com",
+    "www.stockhero.ai",
+    "coinrule.com",
+    "algobuilder.com",
+    "goodcrypto.app"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "product_considerations": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Is there a legit AI trading bot?",
+    "Can AI trading make you money?",
+    "How much do AI trading bots cost?",
+    "What are the most successful trading bots?",
+    "Can Chatgpt build a trading bot?",
+    "Which AI trading platform is best for beginners?"
+   ],
+   "related_searches": [
+    "AI trading bot free",
+    "AI trading bot Telegram",
+    "AI trading bot Quotex",
+    "AI trading bot Forex",
+    "AI trading bot github",
+    "AI trading bot online",
+    "Ai trading bot crypto",
+    "Best AI trading bot"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; 2/10 major platforms (apps.apple.com, play.google.com); AI Overview present, cites www.reddit.com, www.youtube.com, www.cftc.gov, innotechtoday.com",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "ai investing app",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "money.usnews.com",
+    "barebone.ai",
+    "public.com",
+    "www.prospero.ai",
+    "investingintheweb.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apps.apple.com",
+    "play.google.com",
+    "magnifi.com",
+    "barebone.ai",
+    "www.prospero.ai",
+    "money.usnews.com",
+    "www.youtube.com",
+    "www.reddit.com",
+    "play.google.com",
+    "www.alphaai.capital"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "play.google.com",
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Do AI investing apps actually work?",
+    "How to earn $5000 per day from the stock market?",
+    "Is AI trading really profitable?",
+    "What are the best AI investing tools?",
+    "What is the most successful AI investing app?",
+    "Can I make $1000 per day from trading?"
+   ],
+   "related_searches": [
+    "Best ai investing app",
+    "Ai investing app for android",
+    "Ai investing app free",
+    "Ai investing app review",
+    "Ai investing app $20",
+    "AI investing app for beginners",
+    "Best free AI investing app",
+    "Best AI investing app for beginners"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "3/10 major platforms (apps.apple.com, play.google.com, play.google.com); AI Overview present, cites money.usnews.com, barebone.ai, public.com, www.prospero.ai",
+   "se_results_count": 148
+  },
+  {
+   "keyword": "robinhood agentic trading",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "robinhood.com",
+    "www.reddit.com",
+    "robinhood.com",
+    "robinhood.com",
+    "www.facebook.com",
+    "medium.com",
+    "www.finder.com",
+    "ryandoser.com",
+    "x.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "medium.com",
+    "x.com"
+   ],
+   "serp_feature_mix": {
+    "discussions_and_forums": 1,
+    "organic": 16,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Does Robinhood allow agentic trading?",
+    "Is Robinhood agentic trading good?",
+    "How to use agentic trading in Robinhood?",
+    "Does Robinhood have AI trading?",
+    "Why stay away from Robinhood?",
+    "Which AI trading agent is best for Robinhood?"
+   ],
+   "related_searches": [
+    "Robinhood agentic trading reddit",
+    "Robinhood agentic trading overview",
+    "Robinhood Agentic Trading documentation",
+    "Robinhood Agentic Trading account",
+    "Robinhood agentic trading review",
+    "Robinhood agentic trading strategy",
+    "Robinhood Agentic Trading github",
+    "Robinhood Agentic trading prompts"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, medium.com, x.com)",
+   "se_results_count": 103
+  },
+  {
+   "keyword": "best ai investing app",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "money.usnews.com",
+    "magnifi.com",
+    "www.dubapp.com",
+    "investingintheweb.com",
+    "www.prospero.ai"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "play.google.com",
+    "magnifi.com",
+    "money.usnews.com",
+    "apps.apple.com",
+    "www.prospero.ai",
+    "www.reddit.com",
+    "danelfin.com",
+    "barebone.ai",
+    "play.google.com",
+    "www.cnbc.com"
+   ],
+   "major_domains": [
+    "play.google.com",
+    "apps.apple.com",
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Do AI investment apps actually work?",
+    "Can I make $1000 per day from trading?",
+    "How to turn $5000 into $1 million?",
+    "What is the best AI app for buying stocks?",
+    "What is the most successful AI stock trading app?",
+    "How to earn $5000 per day from the stock market?"
+   ],
+   "related_searches": [
+    "Best ai investing app reddit",
+    "Best ai investing app free",
+    "Best ai investing app for beginners",
+    "Best ai investing app for android",
+    "Automatic AI investment app",
+    "Best AI stock investing app",
+    "AI investing bot",
+    "Magnifi AI investing"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "3/10 major platforms (play.google.com, apps.apple.com, play.google.com); AI Overview present, cites money.usnews.com, magnifi.com, www.dubapp.com, investingintheweb.com",
+   "se_results_count": 142
+  },
+  {
+   "keyword": "automated investing app",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.acorns.com",
+    "www.nerdwallet.com",
+    "www.wealthfront.com",
+    "www.cnbc.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apps.apple.com",
+    "www.betterment.com",
+    "play.google.com",
+    "thecollegeinvestor.com",
+    "www.reddit.com",
+    "apps.apple.com",
+    "www.investmentnews.com",
+    "www.schwab.com",
+    "www.ally.com",
+    "us.etrade.com"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "play.google.com",
+    "apps.apple.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the best automated investment app?",
+    "How to turn $1000 into $10000 in one month?",
+    "How much money do I need to invest to make $3,000 a month?",
+    "What is the best app for automated AI investing?",
+    "Do AI investing apps really work?",
+    "Can I make $1000 per day from trading?"
+   ],
+   "related_searches": [
+    "Automated investing app reddit",
+    "Best automated investing app",
+    "Automated investing app free",
+    "Automated investing app for beginners",
+    "Automated investing app for android",
+    "Automatic AI investment app",
+    "Autopilot investment app review",
+    "Best automated investing app for beginners"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "3/10 major platforms (apps.apple.com, play.google.com, apps.apple.com); AI Overview present, cites www.acorns.com, www.nerdwallet.com, www.wealthfront.com, www.cnbc.com",
+   "se_results_count": 143
+  },
+  {
+   "keyword": "ai financial advisor",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "useorigin.com",
+    "mitsloan.mit.edu",
+    "advisors.vanguard.com",
+    "portfoliopilot.com",
+    "www.wealthenhancement.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "useorigin.com",
+    "mitsloan.mit.edu",
+    "www.reddit.com",
+    "www.wealthenhancement.com",
+    "portfoliopilot.com",
+    "advisors.vanguard.com",
+    "www.quinnadvisor.com",
+    "www.whistl.app",
+    "www.youtube.com",
+    "play.google.com"
+   ],
+   "major_domains": [
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "Can I use AI as a financial advisor?",
+    "How much do AI financial advisors cost?",
+    "Is ChatGPT a good financial advisor?",
+    "Which AI investment advisor is considered the best?",
+    "Is there a free AI financial advisor service available?",
+    "What is a normal fee for a financial advisor to charge?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (play.google.com); AI Overview present, cites www.reddit.com, useorigin.com, mitsloan.mit.edu, advisors.vanguard.com",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "ai stock picker",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.gsb.stanford.edu",
+    "danelfin.com",
+    "www.kavout.com",
+    "money.usnews.com",
+    "www.tradealgo.com",
+    "altindex.com",
+    "m.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "danelfin.com",
+    "www.reddit.com",
+    "www.gsb.stanford.edu",
+    "www.kavout.com",
+    "money.usnews.com",
+    "www.prospero.ai",
+    "www.screener.in",
+    "play.google.com",
+    "altindex.com",
+    "altindex.com"
+   ],
+   "major_domains": [
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the best app for picking stocks?",
+    "Can ChatGPT pick stocks?",
+    "How much does an AI stock picker cost?",
+    "What are the top AI stock picks?",
+    "Who has the best AI stock picker?",
+    "Who are the big 4 of AI?"
+   ],
+   "related_searches": [
+    "Best ai stock picker",
+    "Free AI stock picker",
+    "Ai stock picker review",
+    "Ai stock picker reddit",
+    "Best free ai stock picker",
+    "Ai stock picker app",
+    "Danelfin",
+    "Danelfin AI"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (play.google.com); AI Overview present, cites www.gsb.stanford.edu, danelfin.com, www.kavout.com, money.usnews.com",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "robinhood cortex",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "www.reddit.com",
+    "robinhood.com",
+    "www.robinhood.com",
+    "robinhood.com",
+    "cdn.robinhood.com",
+    "x.com",
+    "www.investmentnews.com",
+    "robinhood.com",
+    "www.instagram.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "x.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Is it safe to have $1 million in Robinhood?",
+    "What was the Robinhood stock scandal?",
+    "Is Robinhood stock a strong buy?",
+    "Is it safe to keep more than $500,000 in stocks or crypto in Robinhood?",
+    "Why can't I withdraw my money out of Robinhood?",
+    "Does Robinhood report to the IRS?"
+   ],
+   "related_searches": [
+    "Robinhood cortex demo",
+    "Robinhood Cortex assistant",
+    "Robinhood AI Cortex",
+    "Robinhood Cortex release date",
+    "Robinhood Cortex how to access",
+    "Robinhood Cortex review",
+    "Robinhood cortex reddit",
+    "Robinhood cortex how to use"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present",
+   "se_results_count": 109
+  },
+  {
+   "keyword": "agentic trading",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "robinhood.com",
+    "www.reddit.com",
+    "corporateinsight.com",
+    "www.finder.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "www.reddit.com",
+    "corporateinsight.com",
+    "robinhood.com",
+    "nansen.ai",
+    "www.finder.com",
+    "www.opensee.io",
+    "www.webull.com",
+    "automatedtradingstrategies.substack.com",
+    "crosstrade.io"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "automatedtradingstrategies.substack.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Which AI is best for agentic trading?",
+    "Is Robinhood agentic trading good?",
+    "How to set up agentic trading in Robinhood?",
+    "Can I use agentic AI to make money?",
+    "How does agentic trading work?",
+    "Can I use AI to make me rich?"
+   ],
+   "related_searches": [
+    "Robinhood agentic trading",
+    "Agentic trading AI",
+    "Claude agentic trading",
+    "Robinhood agentic trading reddit",
+    "Agentic trading github",
+    "Agentic trading reddit",
+    "Agentic trading strategy",
+    "Agentic trading reviews"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.youtube.com, robinhood.com, www.reddit.com, corporateinsight.com",
+   "se_results_count": 126
+  },
+  {
+   "keyword": "ai wealth management",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.weforum.org",
+    "www.mckinsey.com",
+    "www.salesforce.com",
+    "aws.amazon.com",
+    "www.ubs.com",
+    "neurons-lab.com",
+    "www.itransition.com",
+    "www.linkedin.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "sequoiacap.com",
+    "www.mckinsey.com",
+    "www.salesforce.com",
+    "www.aiwealth.eu",
+    "clearingcustody.fidelity.com",
+    "aws.amazon.com",
+    "www.scalevp.com",
+    "www.itransition.com",
+    "www.coursera.org",
+    "www.reddit.com"
+   ],
+   "major_domains": [
+    "www.mckinsey.com",
+    "www.salesforce.com",
+    "aws.amazon.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What AI company is Warren Buffett investing in?",
+    "Can AI actually manage your money?",
+    "How is AI being used in wealth management?",
+    "Can I use ChatGPT as a financial advisor?",
+    "What did Warren Buffett say about financial advisors?",
+    "How much do AI financial advisors cost?"
+   ],
+   "related_searches": [
+    "Ai wealth management review",
+    "Ai wealth management app",
+    "AI wealth management companies",
+    "AI in wealth management examples",
+    "AI wealth management startups",
+    "Ai wealth management reddit",
+    "AI Wealth company",
+    "McKinsey AI wealth management",
+    "Nevis AI wealth management"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "3/10 major platforms (www.mckinsey.com, www.salesforce.com, aws.amazon.com); AI Overview present, cites www.weforum.org, www.mckinsey.com, www.salesforce.com, aws.amazon.com",
+   "se_results_count": 102
+  }
+ ],
+ "cost": "DataForSEO: 11 calls, $0.04565 of $2.00 budget"
+}

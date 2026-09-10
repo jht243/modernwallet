@@ -1,0 +1,41 @@
+{
+ "slug": "best-ai-investing-apps",
+ "schema": "none",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3464,
+ "floor": 1400,
+ "input_tokens": 26365,
+ "output_tokens": 5822,
+ "thinking_tokens": 8664,
+ "est_cost_usd": 0.0741,
+ "guards": {
+  "repairs": [
+   "stripped markdown code fence"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3464,
+  "numbers_not_in_facts": [
+   "1000",
+   "10000",
+   "168",
+   "2.5",
+   "2026",
+   "3.3",
+   "400000",
+   "5000",
+   "75"
+  ]
+ },
+ "seconds": 45.5,
+ "response_id": "4OqhaviKL7mc6dkPkNLvuA4",
+ "generated_at": "2026-09-09T18:26:05-0500"
+}
