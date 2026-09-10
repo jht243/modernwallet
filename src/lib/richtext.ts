@@ -12,16 +12,36 @@ function escapeHtml(s: string): string {
 
 const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
 
+import { ROBINHOOD_URL, PARTNER_REL } from "../data/partners";
+
+const _rhAnchor = `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">Robinhood</a>`;
+
+/** Point Robinhood at our referral link everywhere it's mentioned in body prose:
+ *  (1) rewrite any existing robinhood.com anchor to the referral URL + sponsored rel,
+ *  (2) auto-link bare "Robinhood" mentions that aren't already inside an anchor. */
+function robinhoodize(html: string): string {
+  html = html.replace(
+    /<a href="https?:\/\/(?:www\.)?robinhood\.com[^"]*"[^>]*>/gi,
+    `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">`,
+  );
+  // Split on existing anchors so we never link text that's already a link.
+  return html
+    .split(/(<a\b[^>]*>.*?<\/a>)/gis)
+    .map((seg, i) => (i % 2 === 1 ? seg : seg.replace(/\bRobinhood\b/g, _rhAnchor)))
+    .join("");
+}
+
 /** Escape HTML, then render [text](url) as anchors. Internal links (starting "/") stay normal;
  *  external (http) get rel="noopener". Content is first-party/trusted (we generate it). */
 export function linkify(input: string): string {
   const escaped = escapeHtml(input);
-  return escaped.replace(LINK_RE, (_m, text: string, url: string) => {
+  const html = escaped.replace(LINK_RE, (_m, text: string, url: string) => {
     const isExternal = /^https?:\/\//i.test(url);
     const rel = isExternal ? ' rel="noopener"' : "";
     const target = isExternal ? ' target="_blank"' : "";
     return `<a href="${url}"${target}${rel}>${text}</a>`;
   });
+  return robinhoodize(html);
 }
 
 /** Strip [text](url) down to text. For meta descriptions and JSON-LD answer text. */

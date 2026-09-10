@@ -2,6 +2,7 @@
 // Compact footer: brand + browse links (live calculators + guides) + legal.
 import { SITE } from "../data/site";
 import { liveCalculators } from "../data/calculators";
+import { AFFILIATE_DISCLOSURE } from "../data/partners";
 const calcs = liveCalculators();
 const year = 2026;
 ---
@@ -102,6 +103,8 @@ const year = 2026;
       <span>Powered by <a href="https://www.layer3labs.io" target="_blank" rel="noopener noreferrer">Layer3Labs</a></span>
     </div>
   </div>
+
+  <div class="ftr-disclosure"><p>{AFFILIATE_DISCLOSURE}</p></div>
 </footer>
 
 <style>
@@ -141,6 +144,8 @@ const year = 2026;
   .ftr-legal .dot { color: #33433C; }
   .ftr-legal a { color: #7B948C; text-decoration: none; }
   .ftr-legal a:hover { color: #fff; text-decoration: underline; }
+  .ftr-disclosure { max-width: 1000px; margin: 0 auto; padding: 0 20px 18px; }
+  .ftr-disclosure p { font-size: 0.72rem; line-height: 1.5; color: #4C5F58; margin: 0; }
   @media (max-width: 1100px) {
     .links-grid { grid-auto-flow: row; grid-template-rows: none; }
   }
