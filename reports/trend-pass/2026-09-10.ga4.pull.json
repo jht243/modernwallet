@@ -1,0 +1,44 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-10",
+  "window_start": "2026-09-10",
+  "window_end": "2026-09-10",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/cash-conversion-cycle/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/chase-travel-portal-guide/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-account-alternatives",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 3,
+  "top10_pages_total_clicks": 3,
+  "channel_split": {
+    "/cash-conversion-cycle/": {
+      "Direct": 1
+    },
+    "/guides/chase-travel-portal-guide/": {
+      "Direct": 1
+    },
+    "/guides/trump-account-alternatives": {
+      "Direct": 1
+    }
+  }
+}

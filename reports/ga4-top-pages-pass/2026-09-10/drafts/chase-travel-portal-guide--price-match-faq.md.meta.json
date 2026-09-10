@@ -1,0 +1,36 @@
+{
+ "slug": "chase-travel-portal-guide--price-match-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 111,
+ "floor": 0,
+ "input_tokens": 17422,
+ "output_tokens": 180,
+ "thinking_tokens": 14735,
+ "est_cost_usd": 0.069,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 111,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17260
+  }
+ },
+ "seconds": 45.6,
+ "response_id": "c3qiauWfGYSf9MoP7KCtWA",
+ "generated_at": "2026-09-10T09:38:40+0000"
+}

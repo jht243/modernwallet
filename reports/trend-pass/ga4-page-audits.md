@@ -147,3 +147,6 @@
 | / | 2026-09-09 | 0 | 0/0/0/0/0 | 0 |
 | /guides/high-yield-savings-account-for-kids-and-teens/ | 2026-09-09 | 0 | 0/0/0/0/0 | 0 |
 | /guides/how-to-invest-100k-to-1-million/ | 2026-09-09 | 0 | 0/0/0/0/0 | 1 |
+| /cash-conversion-cycle/ | 2026-09-10 | 1 | 0/0/0/0/0 | 0 |
+| /guides/chase-travel-portal-guide/ | 2026-09-10 | 1 | 1/0/1/0/0 | 0 |
+| /guides/trump-account-alternatives/ | 2026-09-10 | 1 | 0/0/0/0/0 | 0 |
