@@ -1,0 +1,583 @@
+{
+ "rows": {
+  "cybercab": {
+   "keyword": "cybercab",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": 28,
+   "cpc": 2.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab ownership": {
+   "keyword": "cybercab ownership",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "cybercab fleet": {
+   "keyword": "cybercab fleet",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  "cybercab business model": {
+   "keyword": "cybercab business model",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  "how to buy a cybercab": {
+   "keyword": "how to buy a cybercab",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 21,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  "can you buy a cybercab": {
+   "keyword": "can you buy a cybercab",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 13,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab price": {
+   "keyword": "cybercab price",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 8,
+   "cpc": 0.23,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab cost": {
+   "keyword": "cybercab cost",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": 11,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab release date": {
+   "keyword": "cybercab release date",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 20,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "tesla robotaxi": {
+   "keyword": "tesla robotaxi",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": 52,
+   "cpc": 2.49,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "tesla robotaxi fleet": {
+   "keyword": "tesla robotaxi fleet",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 17,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "robotaxi business": {
+   "keyword": "robotaxi business",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab vs waymo": {
+   "keyword": "cybercab vs waymo",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  "cybercab vs robotaxi": {
+   "keyword": "cybercab vs robotaxi",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 20,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  "waymo vs uber": {
+   "keyword": "waymo vs uber",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "how much do uber drivers make": {
+   "keyword": "how much do uber drivers make",
+   "volume": 22200,
+   "volume_low": 22200,
+   "volume_high": 22200,
+   "kd": 4,
+   "cpc": 6.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "uber driver income": {
+   "keyword": "uber driver income",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 18,
+   "cpc": 30.13,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "tesla robotaxi investment": {
+   "keyword": "tesla robotaxi investment",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  "rent out your tesla": {
+   "keyword": "rent out your tesla",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": 3.12,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  "turo passive income": {
+   "keyword": "turo passive income",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 0,
+   "cpc": 0.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  "cybercab jobs": {
+   "keyword": "cybercab jobs",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "tesla robotaxi passive income": {
+   "keyword": "tesla robotaxi passive income",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "robotaxi passive income": {
+   "keyword": "robotaxi passive income",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "how much can you make with a robotaxi": {
+   "keyword": "how much can you make with a robotaxi",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "tesla robotaxi owner": {
+   "keyword": "tesla robotaxi owner",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 8 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  "add tesla to robotaxi fleet": {
+   "keyword": "add tesla to robotaxi fleet",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 100,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 10-100/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": false
+   }
+  },
+  "robotaxi side hustle": {
+   "keyword": "robotaxi side hustle",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  "cybercab vs uber": {
+   "keyword": "cybercab vs uber",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  "is cybercab cheaper than uber": {
+   "keyword": "is cybercab cheaper than uber",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  "cybercab ride cost": {
+   "keyword": "cybercab ride cost",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  "robotaxi alternatives": {
+   "keyword": "robotaxi alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  "will robotaxis replace uber drivers": {
+   "keyword": "will robotaxis replace uber drivers",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  "self driving cars gig economy": {
+   "keyword": "self driving cars gig economy",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  "is uber driving still worth it": {
+   "keyword": "is uber driving still worth it",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": false
+   }
+  },
+  "future of rideshare drivers": {
+   "keyword": "future of rideshare drivers",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": false
+   }
+  },
+  "is cybercab a good investment": {
+   "keyword": "is cybercab a good investment",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  "passive income cars": {
+   "keyword": "passive income cars",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 9 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  "car sharing passive income": {
+   "keyword": "car sharing passive income",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  }
+ },
+ "notes": [
+  "ahrefs unusable (HTTP 403 {\n  \"error\": \"API units limit reached. Expected usage: 50, API units left: 19.\"\n})",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 20/38 phrases",
+  "semrush unusable (HTTP 403)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 18 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 32/38 rows corroborated live"
+ ]
+}

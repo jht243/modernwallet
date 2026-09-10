@@ -1,0 +1,615 @@
+{
+ "rows": [
+  {
+   "keyword": "how much do uber drivers make",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.uber.com",
+    "www.levispires.com",
+    "www.youtube.com",
+    "therideshareguy.com",
+    "www.indeed.com",
+    "gridwise.io",
+    "www.youtube.com",
+    "www.quora.com",
+    "tallo.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Can you make $1000 a week with Uber?",
+    "Can Uber drivers make $500 a day?",
+    "Can you make $100 a day doing Uber?",
+    "Do Uber drivers make good money?",
+    "How much can I make in 2 hours with Uber?",
+    "Is driving for Uber worth it?"
+   ],
+   "related_searches": [
+    "How much do uber drivers make per hour",
+    "How much do uber drivers make per mile",
+    "How much do uber drivers make per day",
+    "How much do uber drivers make on a $50 ride",
+    "How much money do Uber drivers make per ride",
+    "How much do uber drivers make a week",
+    "How much do Uber drivers make in tips",
+    "How much do uber drivers make a month"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.quora.com) incl. #1; AI Overview present",
+   "se_results_count": 102
+  },
+  {
+   "keyword": "cybercab price",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.tesla.com",
+    "www.tesla.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "en.wikipedia.org",
+    "www.abstractocean.com",
+    "www.autoblog.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [
+    "en.wikipedia.org"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can you buy a Tesla Cybercab?",
+    "How much does a Cybercab cost?",
+    "Will Cybercab be available to the public?",
+    "Where is Tesla Cybercab operating?",
+    "How do I order a Cybercab?",
+    "What car does Elon Musk drive?"
+   ],
+   "related_searches": [
+    "Cybercab price in usa",
+    "Tesla Robotaxi rules",
+    "App store tesla robotaxi",
+    "Tesla robotaxi texas",
+    "How to get off Robotaxi waitlist",
+    "Tesla Fleet integration",
+    "Tesla convertible for sale",
+    "Tesla fire safety"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com); 1/10 major platforms (en.wikipedia.org); AI Overview present",
+   "se_results_count": 168
+  },
+  {
+   "keyword": "can you buy a cybercab",
+   "verdict": "contested",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.facebook.com",
+    "www.youtube.com",
+    "evwire.com",
+    "techcrunch.com",
+    "www.newsweek.com",
+    "www.tesla.com",
+    "electrek.co"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.tesla.com",
+    "www.reddit.com",
+    "techcrunch.com",
+    "www.tesla.com",
+    "evwire.com",
+    "en.wikipedia.org",
+    "www.forbes.com",
+    "www.youtube.com",
+    "www.newsweek.com",
+    "x.com"
+   ],
+   "major_domains": [
+    "techcrunch.com",
+    "en.wikipedia.org",
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "x.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 16,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "How much will Cybercab cost?",
+    "Can anyone buy the Cybercab?",
+    "Can you buy a Cybercab for personal use?",
+    "When can I buy a Tesla Cybercab?",
+    "How do I order a Cybercab?",
+    "Will the Tesla Cybercab be available to the public?"
+   ],
+   "related_searches": [
+    "Can you buy a cybercab reddit",
+    "Can you buy a cybercab in usa",
+    "How to get off Robotaxi waitlist",
+    "How to buy Tesla for business",
+    "Tesla Robotaxi rules",
+    "Tesla Fleet integration",
+    "Tesla convertible for sale",
+    "Tesla fire safety"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, x.com); 3/10 major platforms (techcrunch.com, en.wikipedia.org, www.forbes.com); AI Overview present, cites www.facebook.com, www.youtube.com, evwire.com, techcrunch.com",
+   "se_results_count": 171
+  },
+  {
+   "keyword": "cybercab cost",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.tesla.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "en.wikipedia.org",
+    "www.facebook.com",
+    "www.yahoo.com",
+    "www.youtube.com",
+    "eletric-vehicles.com",
+    "www.abstractocean.com",
+    "unchartedterritories.tomaspueyo.com"
+   ],
+   "major_domains": [
+    "en.wikipedia.org"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can you buy a Tesla Cybercab?",
+    "Will Cybercab be available to the public?",
+    "How does Cybercab charge?",
+    "Is Robotaxi cheaper than Uber?",
+    "Which is cheaper, Waymo or robotaxi?",
+    "Can I purchase a Tesla robotaxi?"
+   ],
+   "related_searches": [
+    "Tesla Robotaxi rules",
+    "How to get off Robotaxi waitlist",
+    "Tesla Robotaxi Austin hours",
+    "Tesla Fleet integration",
+    "App store tesla robotaxi",
+    "Tesla convertible for sale",
+    "Tesla fire safety",
+    "FSD accidents"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com); 1/10 major platforms (en.wikipedia.org); AI Overview present",
+   "se_results_count": 169
+  },
+  {
+   "keyword": "cybercab vs uber",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "unchartedterritories.tomaspueyo.com",
+    "www.youtube.com",
+    "www.instagram.com",
+    "www.basenor.com",
+    "www.investors.com",
+    "www.tradingview.com",
+    "finance.yahoo.com",
+    "www.facebook.com",
+    "coastaljournal.substack.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "unchartedterritories.tomaspueyo.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.tradingview.com",
+    "www.instagram.com",
+    "discussion.fool.com",
+    "www.yahoo.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.nxsmediawire.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 15,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "Is Cybercab cheaper than Uber?",
+    "Who is Uber's biggest competitor?",
+    "Can you make $6,000 a month with Uber?",
+    "Is Robotaxi cheaper than Waymo?",
+    "Can a cop pull over a Waymo?",
+    "How much does robotaxi charge per mile?"
+   ],
+   "related_searches": [
+    "Cybercab vs uber reddit",
+    "Cybercab vs uber vs tesla",
+    "Cybercab vs uber cost",
+    "Waymo vehicle cost",
+    "Robotaxis are here",
+    "Robotaxi economics"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com); AI Overview present, cites unchartedterritories.tomaspueyo.com, www.youtube.com, www.instagram.com, www.basenor.com",
+   "se_results_count": 280
+  },
+  {
+   "keyword": "cybercab vs waymo",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.autonews.com",
+    "techcrunch.com",
+    "www.facebook.com",
+    "seekingalpha.com",
+    "oaklandside.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "unchartedterritories.tomaspueyo.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.autonews.com",
+    "www.forbes.com",
+    "www.basenor.com",
+    "www.instagram.com",
+    "techcrunch.com",
+    "www.facebook.com",
+    "www.quora.com"
+   ],
+   "major_domains": [
+    "www.forbes.com",
+    "techcrunch.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 15,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Is Cybercab cheaper than Uber?",
+    "Who is Waymo's biggest competitor?",
+    "What does Elon Musk think of Waymo?",
+    "Has a cop ever pulled over a Waymo?",
+    "Can you get trapped in Waymo?",
+    "How many fatal crashes has Waymo had?"
+   ],
+   "related_searches": [
+    "Cybercab vs waymo reddit",
+    "Cybercab vs waymo vs tesla",
+    "Cybercab vs waymo price",
+    "Cybercab vs waymo cost",
+    "Waymo vs Uber lawsuit",
+    "Waymo vs Uber price",
+    "Tesla robotaxi vs cybercab",
+    "Tesla Cybercab"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com); 2/10 major platforms (www.forbes.com, techcrunch.com); AI Overview present, cites www.reddit.com, www.youtube.com, www.autonews.com, techcrunch.com",
+   "se_results_count": 225
+  },
+  {
+   "keyword": "tesla robotaxi fleet",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.tesla.com",
+    "www.facebook.com",
+    "en.wikipedia.org",
+    "electrek.co",
+    "www.tesla.com",
+    "techcrunch.com",
+    "www.instagram.com",
+    "www.instagram.com",
+    "www.tesla.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [
+    "en.wikipedia.org",
+    "techcrunch.com"
+   ],
+   "forum_domains": [
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "How many cars does Tesla Robotaxi have?",
+    "Is Tesla Robotaxi cheaper than Uber?",
+    "Why can't Teslas be sold in Texas?",
+    "How much does a Tesla Robotaxi ride cost?",
+    "Can anyone buy a Tesla robotaxi?",
+    "Does Tesla make money on robotaxi?"
+   ],
+   "related_searches": [
+    "Tesla Cybercab",
+    "Tesla robotaxi fleet price",
+    "Robotaxi Tesla release date",
+    "Can I buy a Tesla Robotaxi",
+    "Tesla Robotaxi for sale",
+    "Where is Tesla Robotaxi available",
+    "Tesla robotaxi fleet for sale",
+    "Tesla Robotaxi fleet size"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (en.wikipedia.org, techcrunch.com)",
+   "se_results_count": 139
+  },
+  {
+   "keyword": "is cybercab a good investment",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "electrek.co",
+    "seekingalpha.com",
+    "www.investing.com",
+    "www.investors.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "evaccess.io",
+    "www.abstractocean.com",
+    "electrek.co",
+    "techcrunch.com",
+    "www.forbes.com",
+    "www.investing.com",
+    "aaronsmet.medium.com"
+   ],
+   "major_domains": [
+    "techcrunch.com",
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "aaronsmet.medium.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 15,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "Why is no one buying Cybertruck?",
+    "What did Elon Musk say about self-driving cars?",
+    "How much is a Tesla Cybercab?",
+    "Why is Tesla Robotaxi so cheap?",
+    "Will Tesla Robotaxi make money?",
+    "What is the crash rate of Tesla Robotaxis?"
+   ],
+   "related_searches": [
+    "Is cybercab a good investment reddit",
+    "Cybercab ownership",
+    "Will Cybercab be for sale",
+    "Will you be able to buy a Cybercab",
+    "Cybercab timeline"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com, aaronsmet.medium.com) incl. #1; 2/10 major platforms (techcrunch.com, www.forbes.com); AI Overview present, cites www.youtube.com, electrek.co, seekingalpha.com, www.investing.com",
+   "se_results_count": 120
+  },
+  {
+   "keyword": "will robotaxis replace uber drivers",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.entrepreneur.com",
+    "www.quora.com",
+    "www.businessinsider.com",
+    "www.facebook.com",
+    "www.forbes.com",
+    "www.forbes.com",
+    "discussion.fool.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [
+    "www.forbes.com",
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Will robotaxi replace Uber?",
+    "Will Uber drivers be replaced by AI?",
+    "Why are drivers quitting Uber?",
+    "Is robotaxi a threat to Uber?",
+    "How much cheaper will robotaxi be than Uber?",
+    "What is replacing Uber?"
+   ],
+   "related_searches": [
+    "Will robotaxis replace uber drivers reddit",
+    "Uber stock",
+    "Waymo"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com) incl. #1; 2/10 major platforms (www.forbes.com, www.forbes.com); AI Overview present",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "turo passive income",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "turo.com",
+    "www.reddit.com",
+    "autoflowcarrental.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "turo.com",
+    "www.reddit.com",
+    "turo.com",
+    "turo.com",
+    "turo.com",
+    "autoflowcarrental.com",
+    "turo.com",
+    "www.facebook.com",
+    "turo.com",
+    "www.businessinsider.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can I earn passive income from Turo?",
+    "How much money can you realistically make on Turo?",
+    "Can I really make money on Turo?",
+    "Is Turo still profitable in 2026?",
+    "What car is most profitable on Turo?",
+    "Is Turo a good side hustle?"
+   ],
+   "related_searches": [
+    "Turo passive income reddit",
+    "Turo passive income reviews",
+    "Turo passive income calculator",
+    "Turo passive income dashboard",
+    "Turo calculator",
+    "Turo management services near me",
+    "Turo co host program",
+    "Turo car rental"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites turo.com, www.reddit.com, autoflowcarrental.com",
+   "se_results_count": 105
+  }
+ ],
+ "cost": "DataForSEO: 10 calls, $0.04150 of $2.00 budget"
+}

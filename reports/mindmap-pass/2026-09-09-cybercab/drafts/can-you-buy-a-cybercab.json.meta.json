@@ -1,0 +1,43 @@
+{
+ "slug": "can-you-buy-a-cybercab",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1802,
+ "floor": 1200,
+ "input_tokens": 20127,
+ "output_tokens": 3185,
+ "thinking_tokens": 8458,
+ "est_cost_usd": 0.0588,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1802,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [
+    "DEFEND-LOCK \u2014 check before you edit any existing page",
+    "PREFLIGHT",
+    "Step 4 \u2014 read it back before hand-off",
+    "AUDITOR",
+    "INTRO HUMANIZE \u2014 the LAST prose step (MANDATORY on any routi",
+    "SCOPE"
+   ],
+   "html_comments_dropped": 2,
+   "tokens_dropped_est": 6493,
+   "tokens_sent_est": 17219
+  }
+ },
+ "seconds": 38.4,
+ "response_id": "qSWiaqbMI9PBqtsPquvD0A8",
+ "generated_at": "2026-09-09T22:36:47-0500"
+}

@@ -1,0 +1,43 @@
+{
+ "slug": "passive-income-ideas--vehicle",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 250,
+ "floor": 0,
+ "input_tokens": 19888,
+ "output_tokens": 385,
+ "thinking_tokens": 5920,
+ "est_cost_usd": 0.0386,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 250,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [
+    "DEFEND-LOCK \u2014 check before you edit any existing page",
+    "PREFLIGHT",
+    "Step 4 \u2014 read it back before hand-off",
+    "AUDITOR",
+    "INTRO HUMANIZE \u2014 the LAST prose step (MANDATORY on any routi",
+    "SCOPE"
+   ],
+   "html_comments_dropped": 2,
+   "tokens_dropped_est": 6493,
+   "tokens_sent_est": 17219
+  }
+ },
+ "seconds": 19.7,
+ "response_id": "Lyiiav_CPP6lmtkPpfCKqAo",
+ "generated_at": "2026-09-09T22:47:15-0500"
+}

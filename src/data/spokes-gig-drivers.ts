@@ -96,7 +96,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "uber-driver-taxes",
-    updated: "2026-09-05",
+    updated: "2026-09-09",
     title: "Uber Driver Taxes: 1099-K, Fees, and Mileage",
     metaDescription:
       "Uber driver taxes in 2026: your 1099-K shows gross fares before Uber's fees, so deduct them. See what you owe after mileage at the 2026 IRS rates.",
@@ -105,7 +105,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
     estimatedKD: 24,
     h1: "Uber Driver Taxes: Why Your 1099-K Looks Too Big",
     introText:
-      "The number on an Uber driver's 1099-K is almost always far larger than what reached their bank account, and misreading that gap is the most expensive mistake in rideshare tax. The form reports gross fares — everything riders paid — before Uber's service fee comes out.\n\nDeduct those fees and your mileage and the picture changes completely. A driver with $48,000 of gross fares, $14,000 of Uber fees, and 26,000 business miles has about $13,760 of profit and owes $1,944.23 — all self-employment tax.",
+      "The number on an Uber driver's 1099-K is almost always far larger than what reached their bank account, and misreading that gap is the most expensive mistake in rideshare tax. The form reports gross fares — everything riders paid — before Uber's service fee comes out.\n\nDeduct those fees and your mileage and the picture changes completely. For what that leaves per hour worked, see [how much Uber drivers make](/guides/how-much-do-uber-drivers-make/) after vehicle costs and self-employment tax. A driver with $48,000 of gross fares, $14,000 of Uber fees, and 26,000 business miles has about $13,760 of profit and owes $1,944.23 — all self-employment tax.",
     howItWorks:
       "Uber issues two different forms and they cover different money. The 1099-K reports your on-trip gross earnings, which Uber defines as the total amount paid by riders and Uber Eats users. The 1099-NEC covers non-trip money: promotions, referrals, and other incentives.\n\n" +
       UBER_GROSS_TRAP +

@@ -1,0 +1,43 @@
+{
+ "slug": "cybercab-vs-uber",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2594,
+ "floor": 1500,
+ "input_tokens": 22335,
+ "output_tokens": 4613,
+ "thinking_tokens": 9635,
+ "est_cost_usd": 0.0702,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2594,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [
+    "DEFEND-LOCK \u2014 check before you edit any existing page",
+    "PREFLIGHT",
+    "Step 4 \u2014 read it back before hand-off",
+    "AUDITOR",
+    "INTRO HUMANIZE \u2014 the LAST prose step (MANDATORY on any routi",
+    "SCOPE"
+   ],
+   "html_comments_dropped": 2,
+   "tokens_dropped_est": 6493,
+   "tokens_sent_est": 19949
+  }
+ },
+ "seconds": 45.5,
+ "response_id": "SCaiatDyKoCc6dkP97Gm6A0",
+ "generated_at": "2026-09-09T22:39:33-0500"
+}

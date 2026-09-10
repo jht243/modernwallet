@@ -1,0 +1,48 @@
+{
+ "slug": "how-much-do-uber-drivers-make",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2686,
+ "floor": 1500,
+ "input_tokens": 20726,
+ "output_tokens": 4719,
+ "thinking_tokens": 20919,
+ "est_cost_usd": 0.1117,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2686,
+  "numbers_not_in_facts": [
+   "14500",
+   "42",
+   "506.26",
+   "7.65"
+  ],
+  "writer_scope": {
+   "dropped_sections": [
+    "DEFEND-LOCK \u2014 check before you edit any existing page",
+    "PREFLIGHT",
+    "Step 4 \u2014 read it back before hand-off",
+    "AUDITOR",
+    "INTRO HUMANIZE \u2014 the LAST prose step (MANDATORY on any routi",
+    "SCOPE"
+   ],
+   "html_comments_dropped": 2,
+   "tokens_dropped_est": 6493,
+   "tokens_sent_est": 17219
+  }
+ },
+ "seconds": 81.9,
+ "response_id": "HCeiap6dKMf9qtsPgZPm6Qw",
+ "generated_at": "2026-09-09T22:43:41-0500"
+}

@@ -28,6 +28,291 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── Cybercab / gig-economy pass 2026-09-09 ──
+  {
+    "slug": "can-you-buy-a-cybercab",
+    "updated": "2026-09-09",
+    "title": "Can You Buy a Cybercab Today and Who Is Eligible",
+    "metaDescription": "An individual cannot buy a Tesla Cybercab today. Tesla opened an interest form for commercial fleets, but consumer sales and pricing remain unannounced.",
+    "h1": "Can You Buy a Cybercab and How Access Works Today",
+    "cardBlurb": "Individuals cannot buy a Tesla Cybercab today. Tesla opened an interest form for fleet buyers, while consumer sales remain unannounced.",
+    "introText": "No, an individual cannot buy a Tesla Cybercab today. Tesla does not take consumer orders, has not opened a consumer reservation queue, and has published no delivery schedule for private motorists. The vehicle currently operates only as an internal corporate test fleet in Texas.\n\nOn September 3, 2026, Tesla published an intake form asking commercial operators to help build its robotaxi network. That questionnaire targets fleet businesses, mobility hubs, and infrastructure partners rather than retail car buyers. It provides no retail purchase agreement, no deposit option, and no consumer delivery timeline.\n\nAt ModernWallet, we look at vehicle announcements through the lens of cash flow, balance sheets, and contractual commitments. Elon Musk stated a target price of sub-$30,000 for the vehicle, but Tesla has published no confirmed consumer price. For details on potential operating expenses once hardware terms appear, review our guide on [Cybercab cost of ownership](/guides/cybercab-cost-of-ownership/). Everything surrounding private consumer access remains unconfirmed.",
+    "sections": [
+      {
+        "heading": "Can You Buy a Cybercab as an Individual",
+        "body": "An individual cannot purchase or reserve a Tesla Cybercab today because Tesla accepts inquiries only from commercial organizations. Tesla has created no consumer order portal, set no retail deposit amount, and assigned no delivery sequence to private drivers. The car remains unavailable through standard retail distribution channels.\n\nElon Musk unveiled the Cybercab on October 10, 2024, at Warner Bros. Studios in Burbank, California. During that event, Musk stated a target price of sub-$30,000, along with a production target of before 2027 and an eventual volume goal of at least 2 million units per year. Those statements represent aspirational targets rather than official consumer offerings. Tesla has not published an official consumer price or opened a consumer order window.\n\nMotorists looking to purchase a personal vehicle today must look at standard production models instead. To review the mechanics of budgeting for a standard car purchase, read our walkthrough on [buying a car](/guides/how-to-buy-a-car/). Cybercab remains an unreleased commercial concept for ordinary retail drivers."
+      },
+      {
+        "heading": "Commercial Fleet Intake Options",
+        "body": "Tesla published a business interest form on September 3, 2026, directed at commercial operators rather than retail consumers. The form went live on the same day as an invite-only Cybercab event in Austin, Texas. It sits under the header \"help us build our robotaxi network\" on [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest).\n\nThe intake questionnaire contains four selectable categories: Cybercab fleet purchasing, mobility hubs and infrastructure, event collaboration, and an \"other\" option. It also includes a field for the applicant's intended deployment region. The form asks for corporate contact details and operational scope, making it clear that Tesla is sourcing business partners rather than retail buyers.\n\n[TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/) reported that this form is not definitive proof that Tesla will sell its autonomous vehicles to third-party operators. TechCrunch characterized the intake as an indicator of longer-term planning. Tesla disclosed no pricing, delivery timelines, production dates, revenue-share terms, or fleet economics alongside the form, and no direct quote from Tesla or Musk accompanied the release."
+      },
+      {
+        "heading": "Full Self-Driving Owner Expectations",
+        "body": "Existing Tesla owners who purchased Full Self-Driving cannot place their personal vehicles into the Tesla robotaxi network. Tesla previously marketed Full Self-Driving in part on the concept that consumer vehicles could generate autonomous ride-hailing income in the future. That integration does not exist today, and private owners have no way to dispatch their cars for paid driverless trips.\n\n[Electrek](https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/) reported that Full Self-Driving buyers remain excluded from commercial network operations. Electrek characterized the corporate interest form as a step toward restricting robotaxi vehicle ownership to commercial fleet buyers or to Tesla itself, leaving retail owners on the sidelines.\n\nIn a follow-up analysis on September 7, 2026, [Electrek argued](https://electrek.co/2026/09/07/tesla-cybercab-fleet-profitable-wouldnt-sell/) that if operating a Cybercab fleet were reliably profitable, Tesla would keep the vehicles rather than sell them. Under Electrek's argument, a sale moves the capital cost and depreciation onto the buyer while Tesla keeps the software margin and its cut of each fare. [Waymo](https://waymo.com/) follows that model already. It operates commercial robotaxis in several US cities through fleet-operations partners rather than selling vehicles to the public. To compare those structures, see our breakdown of [Cybercab compared with Waymo](/compare/cybercab-vs-waymo/)."
+      },
+      {
+        "heading": "Active Fleet Deployments and Production Numbers",
+        "body": "Tesla maintains an internal, company-owned fleet of roughly 45 Cybercabs as of August 2026. Tesla built its first production unit in February 2026 at Gigafactory Texas, and formal manufacturing began in April 2026. These initial builds remain dedicated to corporate research, software calibration, and company-managed testing.\n\nPaid public rides in a Cybercab began on September 4, 2026, in Austin, Texas. This followed an earlier robotaxi service that Tesla launched in June 2025, which relied on standard Model Y vehicles running Full Self-Driving software. All active deployments in Austin use Tesla-owned vehicles rather than independently purchased cars.\n\nThe Cybercab physical design differs sharply from standard consumer vehicles. It features two passenger seats, automatic scissor doors, a 48 kWh lithium-ion battery, and an estimated range of about 293 miles. Power comes from a single AC permanent-magnet motor rated at 219 hp (163 kW). The vehicle relies entirely on DC fast charging through a NACS port, with no AC charging equipment on board. It contains no steering wheel, pedals, side mirrors, or rear window, separating it from the cars people drive for [rideshare income](/guides/how-much-do-uber-drivers-make/)."
+      },
+      {
+        "heading": "Federal Safety Standards and Regulatory Inquiries",
+        "body": "The Cybercab is built without a steering wheel, pedals, side mirrors, or a rear window, equipment typically required under federal motor vehicle safety standards. In September 2026, the [National Highway Traffic Safety Administration](https://www.nhtsa.gov/) opened an investigation into Tesla's self-certification procedures. The investigation focuses on whether the vehicle complies with federal motor vehicle safety standards despite lacking conventional manual controls.\n\nFederal Motor Vehicle Safety Standards generally mandate components such as steering wheels, brake pedals, and exterior rear-view mirrors for passenger automobiles. The Cybercab omits that equipment, which is the point the investigation turns on. How it resolves has not been published.\n\nFor a prospective buyer waiting on delivery dates, this regulatory process represents an undefined timeline. An automaker cannot bypass federal certification hurdles regardless of factory capacity. Tesla has published no retail delivery date, and no consumer purchase channel exists while the investigation is open."
+      },
+      {
+        "heading": "Missing Terms on Pricing and Revenue",
+        "body": "Tesla has published no consumer retail price, fleet wholesale pricing, or commercial revenue-sharing terms for the Cybercab. While Elon Musk mentioned a sub-$30,000 target price, that figure remains an informal goal rather than an advertised price. Tesla has provided no breakdown of software licensing costs, fleet maintenance tiers, or battery warranty terms.\n\nOperational economics also remain undisclosed. Tesla has not published a durable public fare card, and reported ride fares have differed by market and changed since the Austin launch. Prospective operators have no official figures for platform fees, network dispatch splits, or dispatch availability. Anyone evaluating autonomous vehicles as a potential income stream should examine proven options in our guide to [passive income ideas](/guides/passive-income-ideas/) rather than unannounced commercial arrangements.\n\nBuilding an investment case without official terms is impossible. A buyer cannot calculate depreciation, debt service, or return on capital when Tesla has published neither the network's fees nor a vehicle invoice. To test standard financing scenarios for vehicles with established prices, use our [auto loan payment calculator](/auto-loan/)."
+      },
+      {
+        "heading": "Sensible Financial Decisions for Waiting Buyers",
+        "body": "Prospective buyers should avoid committing capital, reserving loan balances, or making business plans based on unannounced Cybercab specifications. This vehicle is not an option for retail commuters seeking a personal vehicle, gig workers needing immediate transportation, or individual investors looking for guaranteed cash flow. Commercial dispatch models like [Cybercab compared with Uber](/compare/cybercab-vs-uber/) operate under entirely different cost structures.\n\nOur assessment would change if Tesla introduces a binding retail order process with confirmed consumer pricing, or if federal safety regulators grant full certification exemptions for consumer road use. Until those milestones occur, private ownership remains purely theoretical.\n\nCommercial entities exploring fleet operations should submit their information directly through [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest). Individual consumers should focus on managing existing capital and tracking overall financial health using our [net worth calculator](/net-worth/) while monitoring official updates from [Tesla](https://www.tesla.com/robotaxi)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/auto-loan/",
+        "label": "Auto loan payment"
+      },
+      {
+        "href": "/net-worth/",
+        "label": "Net worth"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can anyone buy the Cybercab?",
+        "answer": "No, anyone cannot simply buy a Cybercab because Tesla does not sell the vehicle to individual consumers. In September 2026, Tesla published an interest form targeted strictly at commercial fleet buyers and infrastructure operators. There is currently no retail order portal, consumer pricing list, or reservation deposit available to the general public."
+      },
+      {
+        "question": "Can you buy a Cybercab for personal use?",
+        "answer": "No, you cannot buy a Cybercab for personal use today. The vehicle is built without a steering wheel, pedals, side mirrors, or a rear window, which prevents it from meeting current federal motor vehicle safety standards for retail passenger cars. Furthermore, Tesla has restricted all initial interest collection to commercial business fleets."
+      },
+      {
+        "question": "When can I buy a Tesla Cybercab?",
+        "answer": "There is no confirmed date for when an individual will be able to buy a Cybercab. Elon Musk stated a manufacturing goal of before 2027, but Tesla has not announced any delivery schedule for retail consumer orders. Any future consumer rollout depends on manufacturing scale and regulatory approval from federal agencies."
+      },
+      {
+        "question": "How do I order a Cybercab?",
+        "answer": "You cannot order a Cybercab as an individual consumer right now. Commercial operators interested in managing a fleet can register their organization through [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest). That form gathers business contact details and geographic interest, but it does not process binding vehicle orders or accept financial deposits."
+      },
+      {
+        "question": "Will the Cybercab be available to the public?",
+        "answer": "The public can ride in Cybercabs in select test locations, but Tesla has not confirmed whether private individuals will ever be allowed to purchase the car. Tesla launched paid public rides in Austin, Texas, in September 2026 using its own internal test fleet. Access may remain restricted to commercial fleet partners and company operations."
+      },
+      {
+        "question": "Can I put my own Tesla on the robotaxi network?",
+        "answer": "No, you cannot put your personal Tesla vehicle on the robotaxi network today. Although Tesla previously promoted Full Self-Driving by suggesting that customer cars could earn automated ride-hailing income, that network functionality has not been released. Current robotaxi operations rely exclusively on company-owned vehicles."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tesla Robotaxi Interest Portal",
+        "url": "https://www.tesla.com/robotaxi/interest"
+      },
+      {
+        "label": "TechCrunch, Tesla Fleet Inquiries",
+        "url": "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/"
+      },
+      {
+        "label": "Electrek, Fleet Sales and FSD Owners",
+        "url": "https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/"
+      },
+      {
+        "label": "National Highway Traffic Safety Administration",
+        "url": "https://www.nhtsa.gov/"
+      }
+    ]
+  },
+  {
+    "slug": "cybercab-cost-of-ownership",
+    "updated": "2026-09-09",
+    "title": "Cybercab Cost of Ownership: What Tesla Has Published",
+    "metaDescription": "Cybercab cost covers passenger fares, vehicle purchase price, and fleet operating expenses. Review the math, missing terms, and commercial ownership tradeoffs.",
+    "h1": "Cybercab Cost of Ownership and the Figures Tesla Has Not Published",
+    "cardBlurb": "Break down passenger ride fares, the sub-$30,000 purchase price target, charging expenses, and fleet operating costs.",
+    "introText": "Calculating the true Cybercab cost requires dividing the topic into three separate figures: passenger ride fares, the vehicle purchase price, and commercial operating expenses. For passengers, [Tesla](https://www.tesla.com/robotaxi) has not published a permanent fare card, meaning fares vary across trips and markets. For prospective buyers, Chief Executive Officer Elon Musk stated a target purchase price under $30,000, but Tesla has not published a confirmed consumer or fleet price. For potential fleet operators, annual ownership costs depend on commercial insurance, fast charging, depot maintenance, and platform revenue splits that remain unreleased.\n\nAt ModernWallet, we evaluate commercial vehicle expenses and mobility business models by calculating cash flow line items rather than relying on unverified corporate targets. Prospective buyers often conflate marketing announcements with actual balance sheet commitments. If you want to review consumer purchase eligibility and network restrictions, read our analysis on whether [you can buy a Cybercab today](/guides/can-you-buy-a-cybercab/).\n\nUnderstanding these cost distinctions protects both consumers and business owners from making premature financial commitments. A passenger budgeting for transportation needs predictable trip pricing, while an investor evaluating autonomous vehicles requires verified equipment, financing, and maintenance costs. ",
+    "sections": [
+      {
+        "heading": "Passenger Ride Pricing in the Tesla App",
+        "body": "Tesla has not published a durable public fare card for Cybercab rides. Tesla launched paid public rides in the Cybercab on September 4, 2026, in Austin, Texas, after running an earlier robotaxi pilot with Model Y vehicles starting in June 2025. Ride fares in the Austin deployment are not fixed by an official mileage or time schedule. Instead, reported trip costs have fluctuated since launch and differ across operating hours and pickup zones. Riders must open the Tesla robotaxi application to check the live fare for an individual trip before requesting a pickup.\n\nCommercial competitors operate under similar dynamic pricing constraints. [Waymo](https://waymo.com/) runs commercial autonomous rides in several US cities and lists its current service areas on its own site. For riders comparing the two US robotaxi networks, see [Cybercab compared with Waymo](/compare/cybercab-vs-waymo/). For riders comparing urban transit options, our guide on [Cybercab compared with Uber](/compare/cybercab-vs-uber/) evaluates how autonomous fleets compete with human-driven rideshare services. Riders should never assume a fixed per-mile cost until Tesla formally issues a binding, public fare matrix."
+      },
+      {
+        "heading": "The Sub-$30,000 Purchase Target",
+        "body": "The sub-$30,000 figure frequently cited for the Cybercab is an unconfirmed manufacturing target rather than a published retail price. Elon Musk stated a target price of \"sub-$30,000\" during the vehicle unveiling event at Warner Bros. Studios in Burbank, California, on October 10, 2024. That event also outlined a production timeline aiming for before 2027 and an eventual volume goal of at least 2 million units annually. The first production unit was assembled at Gigafactory Texas in February 2026, with formal production starting in April 2026. As of August 2026, roughly 45 Cybercabs were registered to Tesla's internal fleet.\n\nA stated production ambition is not a legal offer to sell a vehicle to the public at that price point. Tesla opened an interest form for fleet buyers at [tesla.com/robotaxi/interest](https://www.tesla.com/robotaxi/interest) on September 3, 2026, during an invite-only event in Austin. Reporting from [TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/) emphasized that this interest form is not definitive proof that Tesla will sell autonomous vehicles to third-party operators. Furthermore, [Electrek](https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/) reported that retail owners who previously bought Full Self-Driving (FSD) cannot operate their personal vehicles on the robotaxi network. Anyone building a business plan around a $30,000 acquisition cost is modeling an unverified goal."
+      },
+      {
+        "heading": "Line Items in the Cybercab Cost Model",
+        "body": "Operating a commercial autonomous vehicle involves seven distinct cost categories that determine total annual expenses. An accurate budget requires separating fixed capital expenses from variable running costs:\n\n- Purchase Price: Unconfirmed. The only existing figure is the sub-$30,000 target from 2024. No wholesale or fleet pricing has been published.\n- Financing: Market dependent. Borrowers must verify commercial vehicle lending rates. You can test different terms using our [auto loan calculator](/auto-loan/) and measure daily interest accrual with our [interest per day calculator](/interest-per-day/).\n- Commercial Insurance: Unconfirmed. The Cybercab has no steering wheel and no pedals, and Tesla has published no insurance arrangement for fleet buyers.\n- Electricity and Charging: Variable. The vehicle features a 48 kilowatt-hour (kWh) lithium-ion battery pack and a single 219 horsepower (163 kilowatt) alternating current permanent-magnet motor, delivering roughly 293 miles of range. Power expenses depend on commercial utility rates and public charging station fees.\n- Depot Handling and Cleaning: Variable. Without an onboard driver, operators must pay personnel or third-party facilities to clean passenger messes, inspect cabin sensors, and stage vehicles.\n- Maintenance: Variable. Tire replacement, brake fluid service, suspension wear, and sensor calibration represent ongoing physical costs. When reviewing vehicle upkeep risks, consult our guide on [extended warranty coverage considerations](/guides/is-extended-car-warranty-worth-it/).\n- Depreciation: Market dependent. Fleet asset write-downs depend heavily on vehicle lifespan, battery degradation, and regulatory permits.\n\nWhen reviewing these expense lines, commercial buyers must recognize what remains unverified. Tesla has published no commercial insurance terms for the Cybercab, and has published no insurance arrangement for fleet buyers on its [robotaxi page](https://www.tesla.com/robotaxi). Prospective operators negotiating fleet agreements must demand specific contractual quotes for depot services, warranty coverage, and hardware replacement before committing capital."
+      },
+      {
+        "heading": "Financial Impact of Fast-Charging Constraints",
+        "body": "The Cybercab relies exclusively on direct current fast charging, which eliminates low-cost overnight alternating current charging at home or private depots. Tesla engineered the Cybercab with a North American Charging Standard (NACS) port configured solely for direct current (DC) fast charging. The vehicle lacks onboard alternating current (AC) charging hardware. Standard electric vehicles can plug into typical Level 2 AC wall connectors overnight, drawing electricity at domestic residential rates or off-peak depot tariffs. The Cybercab cannot charge from an AC outlet, forcing all energy replenishment through DC fast chargers.\n\nThis design decision transforms power replenishment from a passive overnight baseline into an active commercial operating expense. DC fast charging infrastructure carries higher installation costs, demand charges from electric utilities, and premium retail pricing per kWh. Fleet managers must account for vehicle transit time to fast chargers, battery degradation from continuous rapid charging, and queuing delays during peak hours. If you are comparing vehicle acquisition structures for electric transport, see our analysis on [buying versus leasing a car](/compare/buying-vs-leasing-a-car/) to assess long-term operational flexibility."
+      },
+      {
+        "heading": "Depreciation and Regulatory Review Risks",
+        "body": "Vehicle depreciation for the Cybercab carries elevated risk due to an active federal safety investigation into its cabin design. In September 2026, the [National Highway Traffic Safety Administration (NHTSA)](https://www.nhtsa.gov/) opened a formal investigation into Tesla's self-certification of the Cybercab. The vehicle is manufactured without manual controls, lacking a steering wheel, accelerator and brake pedals, side exterior mirrors, and a rear window. Federal Motor Vehicle Safety Standards generally mandate these physical components for road-legal vehicles unless granted specific federal exemptions.\n\nRegulatory uncertainty directly affects asset resale value and financing viability. If NHTSA rules that the vehicle cannot operate across state lines or requires physical retrofits, initial units could face steep depreciation or stranded capital costs. A standard passenger car can be resold on the used market or rented out on a peer-to-peer service like [Turo](https://turo.com/). A two-seat Cybercab with no steering wheel has neither option if autonomous fleet permits are delayed."
+      },
+      {
+        "heading": "Break-Even Math for Fleet Operators",
+        "body": "Determining whether a Cybercab can generate a profit requires calculating the paid active hours needed to cover fixed financing and variable operating costs. A commercial operator must balance debt service, insurance, electricity, cleaning, and depot fees against net fare collections. Because Tesla has not published the revenue-share terms between a Cybercab owner and the robotaxi network, no valid net revenue figure exists today. In an analysis published on September 7, 2026, [Electrek](https://electrek.co/2026/09/07/tesla-cybercab-fleet-profitable-wouldnt-sell/) argued that if a Cybercab fleet were reliably profitable on its own, Tesla would retain all vehicles in its corporate fleet rather than selling them to third parties. Under Electrek's argument, selling vehicles would transfer the debt and depreciation to outside buyers while Tesla keeps the software margin and its cut of each fare.\n\nTo understand the baseline economics of commercial driving, consider benchmark data from human-operated gig mobility. According to the [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make) 2026 Annual Gig Mobility Report, the average [Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) driver earns $23.88 gross per active hour across roughly 21.2 active hours per week. An active hour includes only time en route or transporting passengers, excluding unpaid wait time.\n\nConsider the published-rate tax and expense math for a sole proprietor driving 20,000 business miles over 50 weeks in 2026, split evenly across both halves of the calendar year:\n\n- Gross revenue across 1,060 active hours: $25,312.80.\n- [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) standard mileage deduction: 10,000 miles at 72.5 cents per mile ($7,250) for January through June, plus 10,000 miles at 76 cents per mile ($7,600) for July through December. Total mileage deduction equals $14,850, yielding a blended rate of 74.25 cents per mile.\n- Net business profit reported on [IRS Schedule C](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040): $10,462.80.\n- [Self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes): $1,478.35, calculated at the effective rate of 14.13% on net profit.\n- Federal income tax for a single filer with no other income: $0, covered by the standard deduction.\n- Net take-home cash: $8,984.45, or about $8.48 per active hour.\n\nThis worked IRS example demonstrates how vehicle expenses erode gross mobility revenue. The standard mileage rate is a tax deduction that bundles fuel, insurance, maintenance, and vehicle depreciation into a single proxy for operating wear. An autonomous fleet operator must clear these exact real-world expenses before realizing any net profit. To review how commercial earnings impact overall personal balance sheets, use our [net worth calculator](/net-worth/)."
+      },
+      {
+        "heading": "Commercial Feasibility and Operator Tradeoffs",
+        "body": "Commercial robotaxi operations are unsuitable for individual retail investors looking for turn-key passive income. Operating an autonomous vehicle fleet is a capital-intensive transport enterprise. It is not an automated side income stream. The [IRS guidelines on passive activities in Topic No. 425](https://www.irs.gov/taxtopics/tc425) govern business participation and loss deductions, underscoring that equipment management carries strict tax obligations. If you are researching hands-off wealth building strategies, compare these operational demands against real-world options in our guide to [passive income ideas](/guides/passive-income-ideas/).\n\nThree published figures would change this assessment: a binding wholesale vehicle price, a retail sales contract for non-fleet buyers, and a network revenue split. Prospective fleet operators should register details on [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest) to monitor commercial terms, but avoid committing debt capital until Tesla issues a firm price and firm network terms."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/auto-loan/",
+        "label": "Auto loan payment"
+      },
+      {
+        "href": "/interest-per-day/",
+        "label": "Interest per day"
+      },
+      {
+        "href": "/net-worth/",
+        "label": "Net worth"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much will the Cybercab cost?",
+        "answer": "Tesla has not published an official purchase price for the Cybercab. Chief Executive Officer Elon Musk announced a target price under $30,000 at the October 2024 unveiling, but that figure remains an aspirational manufacturing goal. Tesla has not released wholesale fleet pricing or opened consumer vehicle ordering."
+      },
+      {
+        "question": "How much does a Tesla Robotaxi ride cost?",
+        "answer": "Tesla has not published a permanent public fare schedule for Cybercab rides. When passenger rides launched in Austin in September 2026, individual trip fares varied based on distance, pickup zone, and real-time demand. Passengers must check current pricing directly in the Tesla robotaxi app before booking."
+      },
+      {
+        "question": "How does the Cybercab charge?",
+        "answer": "The Cybercab charges exclusively through direct current fast charging using a North American Charging Standard port. The vehicle lacks onboard alternating current charging hardware, meaning it cannot plug into standard residential Level 2 wall outlets. All battery replenishment must occur at compatible commercial fast chargers."
+      },
+      {
+        "question": "Is a robotaxi cheaper than Uber?",
+        "answer": "Whether a robotaxi ride is cheaper than an Uber trip depends on real-time market demand and location. Neither Tesla nor Waymo publishes a fixed per-mile fare card, so the only reliable comparison is the live quote in each app for your specific route. Passengers should compare quotes directly between the Tesla robotaxi app and the Uber app for their specific route."
+      },
+      {
+        "question": "Is the Cybercab a good investment?",
+        "answer": "There is currently no financial data to support treating the Cybercab as a commercial investment. Tesla has not published vehicle purchase prices, commercial financing packages, or network revenue-share terms for fleet buyers. Without confirmed revenue splits and depot operating costs, calculating an expected rate of return is impossible."
+      },
+      {
+        "question": "What would it cost to run a Cybercab for a year?",
+        "answer": "Total annual operating costs for a Cybercab cannot be determined because commercial insurance, cleaning contracts, and depot fees remain unquoted. A complete budget must cover commercial vehicle financing, DC fast charging electricity, commercial liability insurance, fleet cleaning, tire maintenance, and asset depreciation. Until Tesla issues fleet service terms, annual operating costs remain unverified."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tesla, Robotaxi Network",
+        "url": "https://www.tesla.com/robotaxi"
+      },
+      {
+        "label": "NHTSA, National Highway Traffic Safety Administration",
+        "url": "https://www.nhtsa.gov/"
+      },
+      {
+        "label": "IRS, Standard Mileage Rates",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates"
+      }
+    ]
+  },
+  {
+    "slug": "how-much-do-uber-drivers-make",
+    "updated": "2026-09-09",
+    "title": "How Much Do Uber Drivers Make After Vehicle Expenses",
+    "metaDescription": "Gridwise reports Uber drivers gross $23.88 per active hour, but vehicle costs and self-employment tax reduce net take-home pay to about $8.48 an hour.",
+    "h1": "How Much Do Uber Drivers Make After Expenses and Taxes",
+    "cardBlurb": "Gridwise data shows $23.88 gross per active hour, but real vehicle costs and self-employment taxes leave about $8.48 per active hour.",
+    "introText": "Uber drivers gross an average of $23.88 per active hour according to the 2026 Annual Gig Mobility Report by [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make), which leaves about $8.48 per active hour after vehicle operating expenses and self-employment taxes. At ModernWallet, we evaluate rideshare economics through our tax and mileage modeling tools because published fare rates leave out the costs of commercial driving. Drivers routinely watch gross deposits reach their bank accounts and mistake total cash flow for taxable profit, only to face heavy repair costs and self-employment tax bills later.\n\nDriving for [Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) requires operating a vehicle that loses value with every mile driven on the road. That mechanical wear, combined with fuel, tires, routine maintenance, and commercial insurance coverage, acts as a continuous drain on revenue. Calculating a driver's true net hourly wage requires recording all business miles driven, including miles traveled between drop-offs and new pickups.\n\nTaxes create a second layer of expense that corporate employees rarely calculate on their own. As an independent contractor, a rideshare driver pays both halves of Social Security and Medicare taxes alongside applicable federal and state income taxes. Comparing net take-home earnings with gross platform fares clarifies whether driving delivers sustainable earnings or simply converts existing vehicle equity into immediate cash.",
+    "sections": [
+      {
+        "heading": "Active Hours Compared With Clock Hours",
+        "body": "Gross hourly pay figures published by rideshare platforms measure active trip time rather than total time spent on shift. The 2026 Annual Gig Mobility Report from Gridwise puts the average Uber driver at $23.88 gross per active hour, based on an average schedule of 21.2 active hours per week. An active hour includes only the minutes when a driver is either en route to pick up a passenger or actively transporting a rider to a destination.\n\nActive hours exclude the unpaid periods drivers spend waiting for ride requests or repositioning their vehicles. If an operator logs 30 total clock hours on the platform to accumulate 21.2 active hours, their total weekly gross revenue of $506.26 ($23.88 multiplied by 21.2 active hours) spreads across 30 hours of labor. That results in $16.88 gross per clock hour ($506.26 divided by 30 clock hours). Time spent waiting in designated airport staging areas, sitting in parking lots between ride pings, and cruising back toward downtown hubs after suburban drop-offs generates zero revenue.\n\nReviewing an app dashboard that shows $23.88 per hour creates an exaggerated impression of driver pay. Eight or nine hours of unpaid waiting time each week quietly drag down real earnings before vehicle expenses enter the equation. Drivers balancing variable shifts across multiple apps can review our guide on [budgeting on irregular income](/guides/how-to-budget-with-irregular-income/) to track total hours worked against net income."
+      },
+      {
+        "heading": "Vehicle Operating Costs and Depreciation",
+        "body": "Every business mile driven for a rideshare company permanently consumes vehicle equity through mechanical wear, maintenance, and depreciation. Drivers often complete a busy evening shift and celebrate a gross cash deposit without recognizing that their vehicle absorbed dozens or hundreds of highway miles. Personal auto insurance policies typically exclude commercial transportation activities, meaning drivers must secure rideshare endorsements or separate commercial policies that raise monthly operating expenses.\n\nThe Internal Revenue Service (IRS) business standard mileage rate serves as the most reliable published benchmark for passenger vehicle operating costs. This federal rate bundles gasoline, depreciation, routine maintenance, brake repairs, tires, and auto insurance into a single per-mile figure. The IRS rate is a tax write-off, not an out-of-pocket bill, and it reflects what a mile of driving costs the vehicle.\n\nWhen an automobile depreciates without a dedicated sinking fund, the operator turns vehicle value into short-term cash at the expense of long-term wealth. A driver who spends all gross earnings without reserving funds for replacement tires, oil changes, or transmission servicing eventually faces mechanical bills that wipe out earlier earnings. Exploring flexible [side hustle ideas](/guides/side-hustle-ideas/) that do not require personal vehicles can help workers compare opportunities that protect their personal assets from mechanical wear."
+      },
+      {
+        "heading": "The Two Standard Mileage Rates in 2026",
+        "body": "The Internal Revenue Service enacted two separate standard mileage rates for business driving during calendar year 2026. For travel from January 1 through June 30, 2026, the [IRS standard mileage rate](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) is 72.5 cents per mile. For business miles driven between July 1 and December 31, 2026, the rate increases to 76 cents per mile. Many rideshare guides and online forums cite only the earlier 72.5-cent figure, leading drivers to understate their deductions for the second half of the year.\n\nConsider a driver who travels 20,000 business miles distributed evenly across the calendar year. Logging 10,000 miles during the first half yields a deduction of $7,250 (10,000 miles multiplied by 72.5 cents), while 10,000 miles during the second half yields $7,600 (10,000 miles multiplied by 76 cents). Together, those periods produce an annual deduction of $14,850, creating a blended rate of 74.25 cents per mile. Applying the outdated 72.5-cent figure across all 20,000 miles produces a deduction of only $14,500, leaving $350 in lawful deductions on the table.\n\nLosing that $350 deduction artificially inflates taxable business profit, causing the driver to overpay both self-employment and income taxes. To capture the full deduction, drivers must maintain contemporaneous trip records with exact calendar dates rather than a single year-end odometer summary. Tax authorities require proof of when specific trips occurred to support the higher second-half rate. Drivers can calculate their deduction across both rate windows using our free [mileage deduction calculator](/mileage-deduction/)."
+      },
+      {
+        "heading": "Calculation of Self-Employment Tax",
+        "body": "Independent contractors must pay both the employer and employee portions of Social Security and Medicare taxes on their net business earnings. Traditional W-2 employees have 7.65% withheld from their wages under the Federal Insurance Contributions Act (FICA), while their employers contribute a matching 7.65%. Uber drivers operate as self-employed individuals, making them responsible for the combined 15.3% self-employment tax rate. That total comprises a 12.4% Social Security tax up to the 2026 Social Security wage base of $184,500, plus a 2.9% Medicare tax applied to all earnings.\n\nA common misunderstanding among gig workers is that self-employment tax takes 15.3% of total Schedule C profit. Under [IRS self-employment tax rules](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), the 15.3% rate applies to 92.35% of net business earnings rather than the full balance. Multiplying 15.3% by 92.35% produces an effective self-employment tax rate of 14.13% on net profit. Tax tools that apply 15.3% directly to Schedule C profit overstate a driver's tax liability by 1.17 percentage points.\n\nNet earnings are calculated on [IRS Schedule C (Form 1040)](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040) by subtracting allowable business deductions, including the standard mileage deduction, from gross platform revenue. Drivers do not pay self-employment taxes on gross fares, but only on the net profit left after deductions. Reviewing the rules for [Uber driver taxes](/self-employment-tax/uber-driver-taxes/) helps operators deduct legitimate expenses accurately. You can verify your exact quarterly tax liability using our [self-employment tax calculator](/self-employment-tax/)."
+      },
+      {
+        "heading": "The Complete Net Earnings Breakdown",
+        "body": "A complete annual worked example illustrates that average driving schedules produce about $8.48 per active hour after subtracting vehicle costs and self-employment taxes. Consider a driver earning the Gridwise benchmark of $23.88 per active hour across 21.2 active hours per week for 50 weeks in 2026. This driver works 1,060 active hours and generates $25,312.80 in gross annual fares. Driving 20,000 business miles split evenly between the first and second halves of the year yields a total mileage deduction of $14,850 ($7,250 for the first half plus $7,600 for the second half, achieving a blended 74.25 cents per mile).\n\nSubtracting the $14,850 mileage deduction from $25,312.80 in gross revenue leaves $10,462.80 in Schedule C net profit. Applying the effective 14.13% rate yields $1,478.35 in self-employment tax. For a single filer with no other household income, federal income tax is $0 because the standard deduction fully covers the remaining $10,462.80 of taxable profit. That leaves $8,984.45 in net earnings after paying self-employment tax.\n\nDividing $8,984.45 by 1,060 active hours leaves about $8.48 per active hour. Keeping $8,984.45 out of $25,312.80 in gross fares means this specific example produces a return of about 35 cents on the dollar, or roughly $355 for every $1,000 collected in gross fares under these stated assumptions. The standard mileage deduction serves as a proxy for vehicle wear, fuel, and depreciation rather than a direct cash invoice. An operator driving an inexpensive, fuel-efficient, paid-off car incurs lower real expenses and keeps more than this model shows, whereas someone operating an expensive financed vehicle keeps less."
+      },
+      {
+        "heading": "Variables That Move Driver Take-Home Pay",
+        "body": "The operating cost of the specific car a driver uses is the primary factor determining actual net income. An operator using an older, paid-off compact car with high gas mileage and low insurance rates spends less per mile than the IRS rate reflects. Conversely, operating a financed SUV with high monthly loan payments, high fuel consumption, and steep depreciation can push real operating expenses well above the standard mileage rate.\n\nDrivers should establish their vehicle's real cost per mile by compiling receipts for fuel, maintenance, insurance, and loan payments against their annual odometer total. You can model these figures in our [mileage deduction calculator](/mileage-deduction/) to evaluate actual expenses against the federal standard rate. The [Consumer Financial Protection Bureau auto loan resources](https://www.consumerfinance.gov/consumer-tools/auto-loans/) provide guidance on loan structures to avoid burdensome debt. Financing a car with high interest rates specifically for gig driving is a common trap that forces drivers to work long hours simply to service their auto loans.\n\nLocal market conditions and the proportion of uncompensated driving miles also alter take-home pay. Dense urban centers generate frequent ride requests with minimal deadhead miles, whereas suburban and rural routes require extensive unpaid driving between trips. Driving during peak demand hours raises gross earnings per active hour without adding miles to the odometer. Knowing your operating costs per mile helps you decide when taking trip requests generates real profit and when logging off preserves your vehicle."
+      },
+      {
+        "heading": "Long-Term Viability and Financial Next Steps",
+        "body": "The commercial rollout of autonomous robotaxi fleets creates long-term uncertainty for human rideshare drivers. Autonomous vehicle services are already carrying paying customers, with [Waymo](https://waymo.com/) running commercial operations in multiple cities and Tesla starting paid public rides in a Cybercab on September 4, 2026, in Austin, Texas. Tesla revealed the two-seat Cybercab in October 2024 with a target price of sub-$30,000 and a production target before 2027, though consumer pricing and revenue splits remain unpublished. On September 3, 2026, Tesla published an interest form at [Tesla's robotaxi interest page](https://www.tesla.com/robotaxi/interest), targeting commercial fleet buyers rather than individual retail purchasers, as noted by [TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/).\n\nDrivers planning their personal finances across a multi-year horizon must treat gig transportation as an income stream facing rapid technical disruption. Those evaluating vehicle investments can examine our comparison of [Cybercab compared with Uber](/compare/cybercab-vs-uber/) or our guide on [whether you can buy a Cybercab](/guides/can-you-buy-a-cybercab/). Peer-to-peer car sharing through [Turo](https://turo.com/) and diversified [passive income streams](/guides/passive-income-ideas/) represent alternative uses for capital that do not depend on human driving hours. In September 2026, the [National Highway Traffic Safety Administration](https://www.nhtsa.gov/) opened an investigation into Tesla's self-certification of the Cybercab because it lacks conventional manual controls, showing that regulatory hurdles remain active.\n\nDrivers should protect their financial stability today by establishing an emergency cash reserve, avoiding costly vehicle debt, and tracking every business mile. Build a reserve covering three to six months of expenses so sudden transmission repairs or engine failures do not force reliance on credit cards. Use our [budget calculator](/budget/) to build a spending plan that reserves cash for taxes and vehicle maintenance, and maintain detailed mileage logs so every valid tax deduction is on the books at filing time."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mileage-deduction/",
+        "label": "Mileage deduction"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-employment tax"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you make $1,000 a week driving for Uber?",
+        "answer": "Yes, a driver can make $1,000 a week in gross fares by working roughly 42 active driving hours, but net earnings after vehicle costs and taxes are far lower. Based on Gridwise data showing an average of $23.88 gross per active hour, hitting $1,000 in weekly gross revenue requires about 42 hours of passenger trips and pickups. Across 42 active hours, a driver typically spends additional uncompensated time waiting between requests. Furthermore, under the assumptions of our worked example, keeping roughly 35 cents on the dollar after mileage expenses and self-employment tax means $1,000 in gross revenue yields approximately $355 in true take-home earnings."
+      },
+      {
+        "question": "Do Uber drivers make good money?",
+        "answer": "Uber drivers generally earn modest take-home pay once vehicle depreciation, fuel, maintenance, and self-employment taxes are subtracted from gross fares. While Gridwise reports average gross earnings of $23.88 per active hour, net pay drops to $8.48 per active hour under our standardized 20,000-mile worked example. Drivers who operate older, highly fuel-efficient cars with low maintenance costs retain more of their gross receipts. Drivers with financed vehicles, high interest rates, or poor fuel economy keep less than the $8.48 per active hour this worked example produces."
+      },
+      {
+        "question": "How much do Uber drivers make per hour after expenses?",
+        "answer": "After vehicle expenses and self-employment taxes, an average Uber driver makes roughly $8.48 per active hour based on standard operating benchmarks. According to Gridwise, drivers gross an average of $23.88 per active hour over 21.2 active hours per week. In our worked example covering 20,000 annual business miles, the 2026 IRS standard mileage deduction of $14,850 reduces taxable profit to $10,462.80. After deducting $1,478.35 in self-employment tax, the remaining $8,984.45 divided by 1,060 active hours leaves about $8.48 per active hour. Factoring in unpaid waiting time between trips lowers that hourly return even further."
+      },
+      {
+        "question": "Is driving for Uber worth it?",
+        "answer": "Driving for Uber is worth it primarily as a short-term cash flow tool or flexible part-time income, rather than a reliable long-term career. Uber offers schedule flexibility and quick access to cash, making it useful for covering immediate financial emergencies or supplementing a primary job. However, converting vehicle equity into cash without accounting for future depreciation creates long-term financial strain. Given that autonomous robotaxi networks from Waymo and Tesla are expanding commercial service in cities like Austin, long-term rideshare profitability faces competition from fleets that carry no driver cost at all."
+      },
+      {
+        "question": "How much should an Uber driver set aside for taxes?",
+        "answer": "An Uber driver should set aside 14.13% of net business profit for self-employment tax, plus an additional percentage for federal income tax once profit exceeds the standard deduction. Self-employment tax applies at a 15.3% rate to 92.35% of Schedule C net profit, which equals an effective rate of 14.13%. Unlike W-2 employees, independent contractors must pay both employer and employee portions of Social Security and Medicare. If rideshare driving is your sole income source and net profit remains below the standard deduction, federal income tax is $0. If you have other income or higher profits, use our [self-employment tax calculator](/self-employment-tax/) to determine your exact quarterly estimated payments."
+      },
+      {
+        "question": "Why are drivers quitting Uber?",
+        "answer": "Drivers frequently quit Uber due to high vehicle operating costs, unpaid waiting time between trips, and diminishing net take-home earnings. While app earnings screens highlight gross fare totals, drivers eventually encounter major vehicle expenses such as new tires, brake replacements, and accelerated depreciation that consume their cash reserves. Unpaid time spent waiting for ride requests lowers effective pay per clock hour below headline rates. Tesla began paid public Cybercab rides in Austin on September 4, 2026, and Waymo runs commercial robotaxi service in several US cities, so drivers weighing a multi-year commitment are doing so against an expanding autonomous fleet."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS - Standard Mileage Rates",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates"
+      },
+      {
+        "label": "IRS - Self-Employment Tax (Social Security and Medicare Taxes)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "Gridwise - 2026 Gig Mobility Report",
+        "url": "https://gridwise.io/blog/how-much-do-uber-drivers-make"
+      },
+      {
+        "label": "Consumer Financial Protection Bureau - Auto Loans",
+        "url": "https://www.consumerfinance.gov/consumer-tools/auto-loans/"
+      }
+    ]
+  },
+
   // ── Coast FI pass 2026-09-09 ──
   {
     "updated": "2026-09-09",
@@ -419,19 +704,21 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "passive-income-ideas",
+    updated: "2026-09-09",
     title: "Passive Income Ideas: Realistic Streams That Actually Work",
     metaDescription:
-      "Passive income ideas with the math: dividends, REITs, high-yield savings, rental property, and digital products. What's truly passive and what isn't.",
+      "Passive income ideas with the math: dividends, REITs, high-yield savings, rentals, digital products, and car sharing. What's truly passive and what isn't.",
     h1: "Passive Income Ideas: A Math-Honest Guide to What Really Works",
-    cardBlurb: "Dividends, REITs, HYSAs, rentals, digital products — with the setup work and taxes each one really takes.",
+    cardBlurb: "Dividends, REITs, HYSAs, rentals, digital products, and your car, with the setup work and taxes each one really takes.",
     introText:
-      "The best passive income ideas have one thing in common: none are fully passive at the start. Most require real money, real setup work, or both before they begin generating income. The IRS defines passive activities narrowly, and many popular ideas don't meet that standard on your tax return. This guide covers five realistic streams, the math behind each one, and how to choose the right fit for your money and time.",
+      "The best passive income ideas have one thing in common: none are fully passive at the start. Most require real money, real setup work, or both before they begin generating income. The IRS defines passive activities narrowly, and many popular ideas don't meet that standard on your tax return. This guide covers the realistic streams, the math behind each one, and how to choose the right fit for your money and time.",
     sections: [
       { heading: "What 'passive income' actually means", body: "'Passive income' sounds hands-off, but the IRS defines the term much more strictly. IRS Topic No. 425 treats passive activities as businesses in which you do not materially participate. Rental real estate is generally passive by default, even if you manage it yourself.\n\nOther streams people call passive, like dividends and interest, are usually classified as portfolio income by the IRS, not passive income. That distinction matters at tax time because passive losses can only offset passive income. Before you chase a stream, know how the IRS will label it and how you will be taxed." },
       { heading: "Idea 1: Dividend investing", body: "A dividend is a share of a company's profit paid to shareholders, usually on a fixed schedule, per the SEC. You earn income by holding shares in companies that consistently pay dividends. Broad dividend index funds spread that income across many companies at a low cost.\n\nThe realistic math is simple. If a portfolio yields 3%, then $100,000 invested pays about $3,000 a year before tax. Qualified dividends are taxed at long-term capital gains rates, which are often lower than ordinary income rates. Model your own numbers with our [dividend calculator](/investing/dividend-calculator/) to see how yield and time change your income." },
       { heading: "Idea 2: REITs and rental property", body: "Real estate is one of the most popular passive income ideas, and one of the least truly passive. A REIT is a company that owns income-producing real estate and pays out most of its profits as dividends. REITs trade like stocks, so they need no landlord work at all.\n\nOwning a rental property is different. You handle tenants, repairs, and vacancies, or you pay a manager 8% to 12% of rent to do it. Model the cash flow before you buy with our [rental cash flow calculator](/real-estate/cash-flow-calculator/). A property with negative monthly cash flow is not passive income, it is a bet on price appreciation." },
       { heading: "Idea 3: High-yield savings and CDs", body: "A high-yield savings account (HYSA) pays interest on cash you keep in a bank. It is the most truly passive stream on this list because no setup skill is required. FDIC insurance covers deposits up to $250,000 per depositor, per insured bank.\n\nThe tradeoff is scale. Even at a 4% rate, $10,000 in an HYSA pays only about $400 a year, and that interest is taxed as ordinary income. Use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) to see what any balance and rate actually pays. HYSAs work best for emergency funds and short-term goals, not as your only income stream." },
       { heading: "Idea 4: Digital products and content", body: "Digital products like courses, ebooks, templates, and stock photos can pay for years after you make them. The upside is huge scale with no per-unit cost to produce a copy. The downside is the front-loaded work, which often takes hundreds of hours before the first dollar arrives.\n\nMost digital products earn very little. The realistic failure mode is spending months building an asset for a market that never buys. Validate demand first with a smaller free version or a paid pre-order. If a market pays for the prototype, the larger product is worth building." },
+      { heading: "Your car as an income asset", body: "Peer-to-peer car sharing allows an owner to list a personal vehicle on a marketplace like [Turo](https://turo.com/) so paying drivers can rent it. The financial return depends on the balance between booking utilization and vehicle depreciation. An idle car still loses resale value and incurs financing costs every month it sits unbooked. Frequent bookings generate cash flow, but they also accelerate mechanical wear and push down resale value.\n\nMany drivers ask whether autonomous robotaxis offer a hands-off income stream, but no consumer option exists today. On September 3, 2026, Tesla published an interest form at [Tesla's robotaxi interest page](https://www.tesla.com/robotaxi/interest) aimed at commercial fleet buyers rather than individual consumers. Tesla disclosed no retail price, delivery timeline, or revenue split with that form. At ModernWallet, we cover [whether you can buy a Cybercab](/guides/can-you-buy-a-cybercab/) in its own guide. Private owners cannot purchase a vehicle or run one on an autonomous network today.\n\nA financed vehicle is the least passive asset on this page. Unlike dividend index funds or savings accounts, a vehicle generates ongoing cash outflows for commercial insurance, cleaning, routine maintenance, and debt service even when it sits empty. Compare the numbers in our guide on [buying versus leasing a car](/compare/buying-vs-leasing-a-car/) and review [what driving pays after vehicle costs](/guides/how-much-do-uber-drivers-make/) before acquiring a vehicle for rental use. Treat any car-sharing plan as a small business that happens to own a car. It is not passive income, and you need to calculate your true cost per mile before spending money." },
       { heading: "The decision rule most guides skip", body: "Pick a stream that matches what you actually have. If you have money but not time, dividends, REITs, and HYSAs need no ongoing work. If you have time and skills but less money, digital products can scale without capital.\n\nRental property sits in the middle and needs both. Diversifying across two or three streams protects you when one underperforms, like when rates drop and HYSA yields fall. Start with the one that fits your situation, and expand only after it works." },
     ],
     tools: [
@@ -2677,6 +2964,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "side-hustle-ideas",
+    updated: "2026-09-09",
     title: "Side Hustle Ideas: Realistic Pay, Effort & Tax Rules",
     metaDescription:
       "Side hustle ideas grouped by real hourly pay and startup effort — plus the tax rules (1099s, self-employment tax) most guides leave out.",
@@ -2687,7 +2975,7 @@ export const GUIDES: Guide[] = [
     sections: [
       {
         heading: "Quick cash for your time: gig and task apps",
-        body: "Rideshare and delivery driving (passenger rides, food and grocery delivery) pay out within days and need no upfront investment beyond a vehicle you likely already own, but gas, vehicle wear, and insurance eat into the advertised per-trip rate more than most first-timers expect. Track your actual mileage from day one — the standard [IRS mileage rate](https://www.irs.gov/tax-professionals/standard-mileage-rates) is a real deduction against this income and materially changes your net pay per hour.\n\nTask and errand apps (moving help, furniture assembly, minor repairs) typically pay more per hour than driving apps because the work requires more skill or physical effort, and many let you set your own rate. Pet sitting and dog walking through a marketplace app fall in the same category: fast approval, modest but reliable pay, and almost no startup cost.",
+        body: "Rideshare and delivery driving (passenger rides, food and grocery delivery) pay out within days and need no upfront investment beyond a vehicle you likely already own, but gas, vehicle wear, and insurance eat into the advertised per-trip rate more than most first-timers expect. Our guide to [how much Uber drivers make](/guides/how-much-do-uber-drivers-make/) works the gross fare down to take-home pay. Track your actual mileage from day one — the standard [IRS mileage rate](https://www.irs.gov/tax-professionals/standard-mileage-rates) is a real deduction against this income and materially changes your net pay per hour.\n\nTask and errand apps (moving help, furniture assembly, minor repairs) typically pay more per hour than driving apps because the work requires more skill or physical effort, and many let you set your own rate. Pet sitting and dog walking through a marketplace app fall in the same category: fast approval, modest but reliable pay, and almost no startup cost.",
       },
       {
         heading: "Selling what you already own",
@@ -2703,7 +2991,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Overlooked income you can add with almost no new effort",
-        body: "Paid online market research (survey panels and user-testing platforms that pay for opinions or a recorded 15-minute session) pays modestly per task, usually a few dollars to a few dollars an hour, but it layers on top of anything else on this list since it needs no dedicated time block, just spare minutes. Renting out something you already own, a car sitting idle most of the week, a parking spot, unused tools, or a spare room, can pay more per hour of actual effort than any task-app driving on this list, since the asset earns while you do something else entirely. Housesitting through a dedicated marketplace works the same way as pet sitting, trading a few days of your presence for pay plus free lodging, and needs no special skill to start.\n\nA cash-back shopping browser extension or app pays a small percentage back on purchases you were already going to make, which isn't really a side hustle so much as a way to stop leaving money on the table on routine spending, and some retailers separately pay a small credit for a detailed written product review after a verified purchase. Unused or unwanted gift cards can be resold on a dedicated marketplace for roughly 70% to 92% of face value depending on the retailer, turning a card that would otherwise sit forgotten in a drawer into cash within a few days. And a hobby you already have, photography, video, or simply talking through a topic you know well, can become a modest content-platform income (stock photo sales, a podcast, live streaming) once you treat it as the same validate-demand-first project described above under digital products, rather than a separate category with its own rules. None of these add up to a full income stream on their own, but stacked together they add real dollars for close to zero dedicated hours.",
+        body: "Paid online market research (survey panels and user-testing platforms that pay for opinions or a recorded 15-minute session) pays modestly per task, usually a few dollars to a few dollars an hour, but it layers on top of anything else on this list since it needs no dedicated time block, just spare minutes. Renting out something you already own, a car sitting idle most of the week, a parking spot, unused tools, or a spare room, can pay more per hour of actual effort than any task-app driving on this list, since the asset earns while you do something else entirely. Renting out a car is the version people ask about most, and our [passive income guide](/guides/passive-income-ideas/) covers what utilization and depreciation do to that return. Housesitting through a dedicated marketplace works the same way as pet sitting, trading a few days of your presence for pay plus free lodging, and needs no special skill to start.\n\nA cash-back shopping browser extension or app pays a small percentage back on purchases you were already going to make, which isn't really a side hustle so much as a way to stop leaving money on the table on routine spending, and some retailers separately pay a small credit for a detailed written product review after a verified purchase. Unused or unwanted gift cards can be resold on a dedicated marketplace for roughly 70% to 92% of face value depending on the retailer, turning a card that would otherwise sit forgotten in a drawer into cash within a few days. And a hobby you already have, photography, video, or simply talking through a topic you know well, can become a modest content-platform income (stock photo sales, a podcast, live streaming) once you treat it as the same validate-demand-first project described above under digital products, rather than a separate category with its own rules. None of these add up to a full income stream on their own, but stacked together they add real dollars for close to zero dedicated hours.",
       },
       {
         heading: "The tax rules most side hustle lists skip",

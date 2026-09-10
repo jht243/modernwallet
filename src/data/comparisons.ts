@@ -30,6 +30,282 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── Cybercab / gig-economy pass 2026-09-09 ──
+  {
+    "slug": "cybercab-vs-uber",
+    "updated": "2026-09-09",
+    "title": "Cybercab vs Uber: How Rides and Driver Earnings Compare",
+    "metaDescription": "Compare Tesla Cybercab vs Uber on passenger availability, fare structure, driver earnings, vehicle ownership costs, and federal regulatory status.",
+    "targetKeyword": "cybercab vs uber",
+    "optionA": "Tesla Cybercab",
+    "optionB": "Uber",
+    "h1": "Cybercab vs Uber: How Rides and Driver Earnings Compare",
+    "introText": "Uber provides immediate nationwide ride booking and flexible contract work for human drivers, while the Tesla Cybercab operates only as a limited, driverless two-seat pilot in Austin without open earning options for individuals.\n\nAt ModernWallet, we evaluate transportation networks by tracking real operating costs, vehicle limits, and practical earnings after taxes. Cybercab and Uber have to be judged from two seats: the passenger who needs a ride, and the gig worker weighing future income. Uber relies on independent contractors driving their own cars, while Tesla aims to deploy custom autonomous vehicles.\n\n[Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) matches riders with local drivers in most US metro areas, using dynamic pricing to balance supply and demand. In contrast, the [Tesla Cybercab](https://en.wikipedia.org/wiki/Tesla_Cybercab) eliminates the steering wheel and pedals entirely, running as an autonomous two-seat shuttle in limited test areas. Neither service offers fixed public fare rates, but each presents an entirely different financial model for riders and drivers.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Where you can book one today",
+          "a": "Limited service area in Austin, Texas, launched for paid rides on September 4, 2026",
+          "b": "Available in most US metro areas through the Uber app"
+        },
+        {
+          "dimension": "Who is driving",
+          "a": "Autonomous software with no human operator, steering wheel, or pedals",
+          "b": "Independent human contractor driving their personal vehicle"
+        },
+        {
+          "dimension": "What sets the price",
+          "a": "Tesla algorithm; pricing is dynamic, varies by market, and has no durable public fare card",
+          "b": "Uber dynamic pricing algorithm based on distance, local demand, and driver supply"
+        },
+        {
+          "dimension": "Vehicle and capacity",
+          "a": "Two passenger seats, no rear window, no side mirrors, and limited luggage volume",
+          "b": "Standard cars and SUVs with rear seats and a trunk"
+        },
+        {
+          "dimension": "Who can earn from it",
+          "a": "Tesla and prospective commercial fleet operators who submit corporate interest forms",
+          "b": "An individual driver accepted onto the Uber platform"
+        },
+        {
+          "dimension": "Who carries the vehicle cost",
+          "a": "Tesla today; whether fleet buyers ever carry it depends on a sales program Tesla has not announced",
+          "b": "Individual drivers who pay for vehicle purchase, maintenance, fuel, and depreciation"
+        },
+        {
+          "dimension": "Regulatory status",
+          "a": "Under investigation by federal regulators in September 2026 over self-certification",
+          "b": "Operates under existing state transportation network company rules"
+        },
+        {
+          "dimension": "Verdict",
+          "a": "Best for solo riders or couples in Austin testing autonomous transit options",
+          "b": "Best for riders needing immediate transit anywhere and workers needing immediate income"
+        }
+      ]
+    },
+    "verdict": "Choose Uber if you need a reliable ride today across any major metropolitan market or want to earn flexible income driving your own passenger vehicle. Choose the Tesla Cybercab if you live in Austin, travel alone or as a pair with minimal luggage, and want to experience fully autonomous transportation without a human driver. Uber remains the wrong choice for riders seeking an automated cabin experience without tipping, or for drivers who assume gig earnings carry zero hidden vehicle costs. The Tesla Cybercab is the wrong choice for groups larger than two, airport travelers with multiple suitcases, or gig workers hoping to buy a single car to generate passive taxi income. Our verdict would change if Tesla launched nationwide consumer vehicle sales with guaranteed revenue sharing on its dispatch network, or if federal safety regulators prohibited vehicles without manual controls from operating on public streets.",
+    "sections": [
+      {
+        "heading": "Passenger Booking Availability and Geographic Reach",
+        "content": "Uber operates a commercial rideshare network in most US metro areas, while the Tesla Cybercab provides paid rides only within a localized boundary in Austin, Texas.\n\nTesla unveiled the Cybercab on October 10, 2024, at Warner Bros. Studios in Burbank, California. Before rolling out the custom vehicle, Tesla ran an earlier robotaxi pilot launched in June 2025 using Model Y sport utility vehicles (SUVs) equipped with Full Self-Driving (FSD) software. Paid public rides in the purpose-built Cybercab officially began on September 4, 2026, in Austin. As of August 2026, roughly 45 Cybercabs were registered to Tesla's own fleet, keeping operations tightly restricted to select test neighborhoods.\n\nPassengers who want to hail a ride today face two completely different booking environments. Anyone can download the Uber smartphone app and find an active driver across almost any urban or suburban community in North America. To take a ride in a Cybercab, you must be physically present inside Tesla's Austin operational territory and request access through [Tesla's robotaxi app](https://www.tesla.com/robotaxi). If you travel outside of central Austin, the Cybercab is unavailable, making Uber the only functional option for daily regional transit."
+      },
+      {
+        "heading": "Cabin Design and Physical Vehicle Constraints",
+        "content": "The Tesla Cybercab accommodates a maximum of two passengers inside a cabin that eliminates all manual driving controls, whereas a standard Uber vehicle has rear seats and a trunk.\n\nTesla completed the first production unit of the Cybercab in February 2026 at Gigafactory Texas, with formal manufacturing starting in April 2026. The production vehicle features two passenger seats, automated scissor doors, and an open cabin with no steering wheel, accelerator pedals, brake pedals, side mirrors, or rear window. Mechanically, the vehicle uses a single Alternating Current (AC) permanent-magnet motor delivering 219 horsepower (163 kilowatts), powered by a 48 kilowatt-hour (kWh) lithium-ion battery. The vehicle provides an estimated driving range of about 293 miles and supports Direct Current (DC) fast charging through a North American Charging Standard (NACS) port, offering no support for AC charging.\n\nThese design choices impose hard constraints on everyday passenger use. With only two seats and no rear window, the Cybercab cannot transport families, groups of three or more friends, or parents traveling with young children who require car seats. The limited cargo area behind the front seats cannot accommodate multiple large suitcases for airport travel. In contrast, Uber offers several vehicle tiers with more seats and trunk space than a two-seat Cybercab, and Uber lists the seat count for each tier when you book. For group travel, family errands, or luggage-heavy trips, Uber remains the practical choice."
+      },
+      {
+        "heading": "Ride Cost Structures and Price Transparency",
+        "content": "Neither Tesla nor Uber publishes a durable public fare card with fixed per-mile prices, leaving riders subject to algorithmic dynamic pricing in both applications.\n\nRiders reasonably ask whether a Cybercab ride is cheaper than an Uber, but live pricing changes continuously on both. Tesla has not published a durable public fare card for its robotaxi service. Reported fares differ across pilot test markets and have changed since the initial Austin rollout. Tesla adjusts ride prices based on fleet availability, operational testing goals, and local route parameters.\n\nUber calculates fares using an upfront pricing algorithm that responds directly to route distance, estimated trip duration, traffic conditions, and local driver supply. During periods of heavy demand or bad weather, Uber activates surge pricing to encourage more independent drivers to log into the network. Because neither platform locks in a fixed rate per mile or minute, check the live fare for your destination in [Tesla's robotaxi app](https://www.tesla.com/robotaxi) and in the Uber app before requesting a pickup."
+      },
+      {
+        "heading": "Driver Earnings and Self-Employment Expenses",
+        "content": "Independent drivers generate immediate gross income through Uber, but vehicle depreciation and self-employment taxes reduce their take-home pay.\n\nData from the [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make) 2026 Annual Gig Mobility Report shows that the average Uber driver earns $23.88 gross per active hour, across approximately 21.2 active hours per week. An active hour includes only the time spent en route to pick up a passenger or completing a paid trip, excluding unpaid downtime spent waiting for trip dispatches. To see detailed income patterns across different markets, review our guide on [how much do Uber drivers make](/guides/how-much-do-uber-drivers-make/).\n\nTo calculate real net pay, a driver must account for operating costs and federal self-employment taxes. The [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) issued two standard business mileage rates for 2026: 72.5 cents per mile for January 1 to June 30, 2026, and 76 cents per mile for July 1 to December 31, 2026. This standard mileage rate bundles fuel, maintenance, insurance, and vehicle depreciation into a single calculation. It serves as a tax deduction, and it also represents the closest published proxy for what a mile of driving costs an owner.\n\nConsider what that leaves a driver earning the Gridwise average of $23.88 per active hour over 21.2 hours per week for 50 weeks, logging 20,000 business miles split evenly between the first and second halves of 2026, filing single with no other income:\n\n1. Annual gross earnings equal $25,312.80 across 1,060 active hours.\n2. The IRS standard mileage deduction totals $14,850, consisting of 10,000 miles at 72.5 cents ($7,250) and 10,000 miles at 76 cents ($7,600), creating an achieved blended rate of 74.25 cents per mile.\n3. Net profit reported on [Schedule C](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040) comes out to $10,462.80.\n4. [Self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) is 15.3% assessed on 92.35% of net profit, creating an effective tax rate of 14.13%, which equals $1,478.35.\n5. Federal income tax at this profit level is $0 because the standard deduction completely offsets taxable income.\n6. Take-home pay after self-employment tax stands at $8,984.45, or about $8.48 per active hour.\n\nThe standard mileage deduction is a tax write-off rather than an immediate cash bill, but it reflects real long-term vehicle wear. A driver whose true operating costs are lower keeps more money, while someone driving an expensive, depreciating car nets less. To project your quarterly tax liabilities accurately, consult our breakdown of [Uber driver taxes](/self-employment-tax/uber-driver-taxes/)."
+      },
+      {
+        "heading": "Fleet Ownership Economics in Cybercab vs Uber",
+        "content": "A robotaxi and an Uber differ most in who buys the car and who carries the risk on it.\n\nIn the Uber model, individual gig drivers absorb the entire vehicle purchase price, financing costs, insurance premiums, and daily mechanical depreciation. Drivers keep what remains of each fare after Uber collects its platform service fee. In contrast, the Tesla Cybercab has no driver seat and offers no path for gig workers to drive. On September 3, 2026, Tesla published an interest form headed \"help us build our robotaxi network\" on [Tesla's robotaxi interest page](https://www.tesla.com/robotaxi/interest), coinciding with an invite-only Cybercab event in Austin. The form lists categories for Cybercab fleet purchasing, mobility hubs and infrastructure, event collaboration, and regional deployment, targeted at commercial businesses rather than individual consumers.\n\nAs reported by [TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/), this corporate interest form is not definitive proof that Tesla will sell autonomous vehicles to third-party operators, serving instead as an early indicator of long-term planning. Tesla disclosed no pricing, delivery timelines, production dates, revenue-share terms, or fleet economics alongside the form. Furthermore, [Electrek](https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/) reported that individual owners who previously purchased Full Self-Driving on passenger models are not included, meaning private Tesla owners cannot deploy their personal vehicles on the robotaxi network.\n\nCapital risk remains the issue for prospective fleet owners. [Electrek argued on September 7, 2026](https://electrek.co/2026/09/07/tesla-cybercab-fleet-profitable-wouldnt-sell/), that if operating a Cybercab fleet were reliably profitable, Tesla would keep the vehicles rather than sell them to third parties. Under Electrek's argument, selling the cars moves the capital cost and depreciation onto the buyer. Tesla keeps the software margin and its cut of each fare. Musk has stated a target price of \"sub-$30,000\", production \"before 2027\", and a goal of at least 2 million units a year. Tesla has published no confirmed consumer price and no purchase agreement. For a realistic projection of potential ownership expenses, read our analysis on [whether you can buy a Cybercab](/guides/can-you-buy-a-cybercab/) and the estimated [Cybercab cost of ownership](/guides/cybercab-cost-of-ownership/)."
+      },
+      {
+        "heading": "Federal Regulatory Inquiries and Safety Certification",
+        "content": "The absence of conventional driving controls subjects the Tesla Cybercab to federal regulatory scrutiny that standard Uber vehicles never face.\n\nIn September 2026, the [National Highway Traffic Safety Administration (NHTSA)](https://www.nhtsa.gov/) opened a formal investigation into Tesla's self-certification of the Cybercab. Federal Motor Vehicle Safety Standards normally require passenger cars to carry physical steering controls, brake pedals, rearview mirrors, and standard driver-warning systems. Because the Cybercab omits all manual equipment, federal regulators are reviewing whether the vehicle meets mandatory motor vehicle safety laws or requires special statutory exemptions before broad deployment.\n\nThis federal inquiry creates real consequences for both passengers and potential commercial fleet operators. For passengers, ongoing regulatory reviews mean service expansions outside of Austin could experience sudden legal delays or operating halts if federal safety authorities challenge Tesla's operational safety data. For commercial businesses considering fleet purchases, regulatory delays create financial risk regarding vehicle delivery timelines and future resale values. In contrast, Uber operates within established state and municipal Transportation Network Company frameworks using street-legal consumer vehicles that satisfy existing federal safety standards. If you are assessing flexible earning alternatives that carry zero vehicle regulatory risk, review our guide to practical [side hustle ideas](/guides/side-hustle-ideas/) to evaluate your options."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is the Cybercab cheaper than Uber?",
+        "answer": "Neither service is permanently cheaper because Tesla and Uber both price rides with an algorithm that changes with local demand and route conditions. Tesla has not published a durable public fare card for the Cybercab, and reported fares differ across pilot test markets. Uber adjusts upfront trip pricing based on real-time driver supply, traffic, and distance. To find the cheaper option for a specific ride in Austin, compare the live quote in [Tesla's robotaxi app](https://www.tesla.com/robotaxi) against the Uber app quote for the same pickup and drop-off."
+      },
+      {
+        "question": "How much does a robotaxi charge per mile?",
+        "answer": "Robotaxi operators do not publish a durable, fixed per-mile fare card on public schedules. Both Tesla and autonomous competitors like [Waymo](https://waymo.com/) adjust pricing dynamically based on local operating conditions, time of day, route congestion, and fleet supply. Published robotaxi figures conflict and have changed repeatedly since launch. Check the live price quote in [Tesla's robotaxi app](https://www.tesla.com/robotaxi) or the Uber app before confirming a trip."
+      },
+      {
+        "question": "Will robotaxis replace Uber drivers?",
+        "answer": "Robotaxis will not replace Uber drivers in the near term due to narrow geographic boundaries, vehicle capacity limits, and regulatory scrutiny. As of August 2026, Tesla had roughly 45 Cybercabs registered to its fleet, operating exclusively in Austin, Texas. Furthermore, the two-seat Cybercab cannot accommodate groups, car seats, or oversized luggage, leaving group trips, car-seat trips and luggage trips to human drivers on Uber."
+      },
+      {
+        "question": "Can you book a Cybercab right now?",
+        "answer": "You can only book a paid Cybercab ride if you are located inside the designated pilot service zone in Austin, Texas. Tesla launched paid public rides in Austin on September 4, 2026, following an earlier pilot using Model Y vehicles running Full Self-Driving. If you are located outside of the Austin pilot boundary, Cybercab service is completely unavailable, and you must rely on standard rideshare networks like Uber."
+      },
+      {
+        "question": "Can I make money from a Cybercab the way I do from Uber?",
+        "answer": "No, individuals cannot purchase a Cybercab today to earn money as an independent driver or host. The Cybercab eliminates the driver seat and manual controls entirely. While Tesla published an interest form on September 3, 2026, for commercial fleet buyers, Tesla has not released retail consumer pricing, delivery dates, or revenue-sharing contracts. Individuals seeking flexible vehicle-based income must continue driving for Uber or listing personal cars on peer-to-peer marketplaces like [Turo](https://turo.com/)."
+      },
+      {
+        "question": "Is the Cybercab safe?",
+        "answer": "The commercial safety compliance of the Tesla Cybercab remains under active review by federal regulators. In September 2026, the National Highway Traffic Safety Administration (NHTSA) opened an investigation into Tesla's self-certification of the vehicle because it lacks steering wheels, pedals, and side mirrors typically mandated under Federal Motor Vehicle Safety Standards. While Tesla operates the vehicles autonomously in Austin, federal authorities continue to evaluate whether the design meets all statutory safety criteria."
+      }
+    ],
+    "sources": [
+      {
+        "label": "National Highway Traffic Safety Administration (NHTSA)",
+        "url": "https://www.nhtsa.gov/"
+      },
+      {
+        "label": "Gridwise 2026 Gig Mobility Report",
+        "url": "https://gridwise.io/blog/how-much-do-uber-drivers-make"
+      },
+      {
+        "label": "Internal Revenue Service - Standard Mileage Rates",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates"
+      },
+      {
+        "label": "Tesla Robotaxi Overview",
+        "url": "https://www.tesla.com/robotaxi"
+      }
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Self-employment tax",
+        "href": "/self-employment-tax/"
+      },
+      {
+        "label": "Auto loan payment",
+        "href": "/auto-loan/"
+      }
+    ],
+    "relatedComparisons": [
+      "cybercab-vs-waymo"
+    ]
+  },
+  {
+    "slug": "cybercab-vs-waymo",
+    "updated": "2026-09-09",
+    "title": "Cybercab vs Waymo: Which Robotaxi Can You Ride Today",
+    "metaDescription": "Compare Tesla Cybercab vs Waymo on vehicle design, commercial track records, ride pricing models, and private fleet ownership rules.",
+    "targetKeyword": "cybercab vs waymo",
+    "optionA": "Tesla Cybercab",
+    "optionB": "Waymo",
+    "h1": "Cybercab vs Waymo: Which Robotaxi Can You Ride Today?",
+    "introText": "Choose Waymo if you need an active commercial robotaxi ride today, and look to the Tesla Cybercab if you are tracking purpose-built autonomous vehicles and potential future commercial fleet purchases.\n\nAt ModernWallet, we review transportation technology through a financial lens, evaluating rider costs, operational safety, and whether an emerging network offers genuine income potential. When you compare the Cybercab vs Waymo, you are evaluating two fundamentally distinct approaches to autonomous mobility and commercial fleet operations.\n\nWaymo operates adapted production vehicles through fleet-operations partners with no public path for outside buyers to purchase cars and place them on the network. Tesla built the Cybercab as a dedicated two-passenger vehicle without steering wheels or pedals, opening an online interest form in September 2026 for commercial fleet buyers while keeping vehicle purchase prices and revenue terms undisclosed.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Vehicle",
+          "a": "Purpose-built two-seat vehicle with no steering wheel, pedals, side mirrors, or rear window",
+          "b": "Adapted production passenger vehicles fitted with exterior sensors and computing hardware"
+        },
+        {
+          "dimension": "How the car drives itself",
+          "a": "Tesla has not published the Cybercab's sensor configuration",
+          "b": "Waymo publishes its sensor configuration on waymo.com"
+        },
+        {
+          "dimension": "Where it runs",
+          "a": "Paid rides operating in Austin, Texas, with current coverage published on Tesla's robotaxi page",
+          "b": "Commercial operations across several metropolitan markets listed on Waymo's website"
+        },
+        {
+          "dimension": "What a ride costs",
+          "a": "Fares fluctuate by market and appear in the Tesla robotaxi app prior to booking",
+          "b": "Price shown in the Waymo One app before you confirm"
+        },
+        {
+          "dimension": "Can an outside party own the cars",
+          "a": "Tesla published a business fleet interest form in September 2026 with no pricing or terms",
+          "b": "No public purchase or private fleet hosting path exists on the commercial network"
+        },
+        {
+          "dimension": "Track record in commercial service",
+          "a": "Commercial Cybercab service launched September 4, 2026, with roughly 45 registered vehicles",
+          "b": "Commercial robotaxi service running in several US cities, listed on waymo.com"
+        },
+        {
+          "dimension": "Regulatory status",
+          "a": "Subject to a September 2026 NHTSA investigation regarding vehicle safety self-certification",
+          "b": "Operates commercially in the service areas it lists on waymo.com"
+        },
+        {
+          "dimension": "Verdict",
+          "a": "Better for early adopters in Austin tracking hardware innovation and future business fleet access",
+          "b": "Better for everyday passengers who need reliable autonomous transport in supported metro areas"
+        }
+      ]
+    },
+    "verdict": "Choose Waymo if you live in an active service region and want a driverless ride from an established commercial service. Choose the Tesla Cybercab if you live in Austin and want to experience a purpose-built autonomous vehicle without traditional controls like pedals or a steering wheel. Waymo is the wrong choice for entrepreneurs hoping to buy and operate an autonomous taxi, as Waymo maintains closed commercial operations. The Tesla Cybercab is the wrong choice for riders who need wide geographic availability or for individuals seeking immediate passive income, because Tesla has not published purchase prices, delivery dates, or revenue-sharing terms. Our verdict would change if Waymo opened vehicle ownership to private operators, or if Tesla achieved widespread regulatory clearance, expanded service nationwide, and published clear fleet economics.",
+    "sections": [
+      {
+        "heading": "Cybercab vs Waymo Hardware and Vehicle Architecture",
+        "content": "The Tesla Cybercab features a purpose-built two-passenger cabin with no mechanical controls, whereas Waymo deploys modified production passenger automobiles equipped with rooftop sensor suites.\n\nThe [Tesla Cybercab](https://en.wikipedia.org/wiki/Tesla_Cybercab) was unveiled on October 10, 2024, at Warner Bros. Studios in Burbank, California. Built from the ground up as a dedicated robotaxi, the vehicle seats two passengers and eliminates the steering wheel, accelerator pedal, brake pedal, side mirrors, and rear window entirely. Scissor doors open upward automatically to admit riders. Power comes from a single Alternating Current (AC) permanent-magnet electric motor producing 219 horsepower (hp), or 163 kilowatts (kW), paired with a 48 kilowatt-hour (kWh) lithium-ion battery pack that delivers approximately 293 miles of driving range. Charging occurs exclusively through Direct Current (DC) fast charging using the North American Charging Standard (NACS) port, with no support for AC Level 2 charging equipment.\n\n[Waymo](https://waymo.com/) takes an opposite design approach by integrating autonomous driving systems into mass-production passenger vehicles through fleet-operations partners. Waymo uses production passenger cars that keep their steering wheels, mirrors and rear seats. Waymo describes its current vehicles and sensor hardware on [waymo.com](https://waymo.com/).\n\nThis physical divergence dictates passenger utility. A rider traveling with luggage, multiple companions, or children will find the two-seat Cybercab restrictive. To model payments on a car you can actually buy, use our [auto loan calculator](/auto-loan/)."
+      },
+      {
+        "heading": "Commercial Operating History and Public Rider Access",
+        "content": "Waymo runs a commercial robotaxi service across several American metropolitan areas, while Tesla Cybercab commercial rides began in Austin on September 4, 2026.\n\nWaymo operates a commercial robotaxi service in several US cities. Waymo publishes its active service territories on [Waymo's website](https://waymo.com/), where passengers can download the Waymo One mobile application to hail vehicles inside approved operating perimeters.\n\nTesla's earlier automated ride-hailing pilot launched in June 2025 using standard Model Y sport utility vehicles running Full Self-Driving (FSD) software with human safety monitors. The first purpose-built Cybercab production unit rolled out of Gigafactory Texas in February 2026, with formal factory production starting in April 2026. Tesla started paid public rides in the Cybercab on September 4, 2026, within Austin, Texas. As of August 2026, public records showed roughly 45 Cybercabs registered to Tesla's own commercial fleet.\n\nA deployed fleet of roughly 45 vehicles means hailing a Cybercab remains a limited experience rather than a daily public transit alternative. Long wait times or restricted hailing zones occur when a small fleet meets general passenger demand. Passengers seeking automated transport outside Austin must consult [Tesla's robotaxi page](https://www.tesla.com/robotaxi) to verify active operating territories."
+      },
+      {
+        "heading": "Fleet Ownership and Private Earning Models",
+        "content": "Neither Waymo nor Tesla offers an open program for individual consumers to buy a robotaxi and generate passive revenue today.\n\nWaymo owns and operates its network through fleet-operations partners. No public path exists for an independent party to buy a Waymo vehicle and deploy it to collect fares.\n\nTesla published an online interest form on September 3, 2026, headed \"help us build our robotaxi network\" at [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest). The form debuted alongside an invite-only Cybercab event in Austin. However, the form is addressed to commercial businesses interested in purchasing Cybercab fleets, developing mobility hubs, supplying network infrastructure, or hosting events. It is not an individual consumer purchasing portal. As reported by [TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/), the intake form is not definitive proof that Tesla will sell autonomous vehicles to third-party operators, but serves as an indicator of broader fleet plans.\n\nFurthermore, Tesla published no purchase price, no production delivery date, no contract timeline, and no revenue-sharing terms with the form. Musk has stated a target price of \"sub-$30,000\", a goal of at least 2 million units a year, and production \"before 2027\". All three are stated targets, not confirmed terms. As [Electrek](https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/) reported, private owners who paid for Full Self-Driving (FSD) on personal Tesla vehicles remain excluded from adding their cars to the commercial network. For a complete analysis of retail availability, read our guide on [whether you can buy a Cybercab](/guides/can-you-buy-a-cybercab/)."
+      },
+      {
+        "heading": "Federal Safety Rules and Regulatory Scrutiny",
+        "content": "The National Highway Traffic Safety Administration opened a formal investigation in September 2026 regarding Tesla's self-certification of the Cybercab.\n\nFederal Motor Vehicle Safety Standards (FMVSS) in the United States require passenger cars to include steering wheels, foot pedals, exterior rearview mirrors, and windshield controls. The [National Highway Traffic Safety Administration (NHTSA)](https://www.nhtsa.gov/) launched an investigation because Tesla self-certified the Cybercab without installing these standard mechanical components or securing formal regulatory exemptions beforehand. The outcome is unresolved, and an open investigation creates practical hurdles now.\n\nAn active federal safety inquiry creates uncertainty around commercial fleet expansion, regional scaling permits, and secondary market resale rights. If regulators restrict deployments or require physical design revisions, commercial rollouts could pause or face geographic limits.\n\nWaymo operates commercially in the service areas it lists on [waymo.com](https://waymo.com/). Waymo publishes its current service areas on [waymo.com](https://waymo.com/). For riders and potential fleet purchasers, regulatory stability determines whether an autonomous vehicle network can provide reliable service week after week."
+      },
+      {
+        "heading": "Dynamic Ride Pricing and Platform Economics",
+        "content": "Neither Tesla nor Waymo publishes a flat, fixed fare card for autonomous rides.\n\nRide pricing across both networks shifts dynamically based on pickup location, local traffic congestion, time of day, and current passenger demand. Riders reasonably ask which robotaxi is cheaper, but neither company commits to a permanent per-mile or per-minute rate. Reported trip prices vary between markets, and Tesla has updated pricing figures multiple times since starting commercial operations in Texas.\n\nIf you are pricing an upcoming ride, compare the live quote in [Tesla's robotaxi app](https://www.tesla.com/robotaxi) against the quote in [Waymo One](https://waymo.com/) for the same trip. Waymo shows the price for a trip in its app, and publishes current service areas and booking details on [waymo.com](https://waymo.com/). Tesla displays current trip costs directly in the Tesla robotaxi hailing application. Rider demand patterns and weather conditions cause prices to fluctuate continuously.\n\nThe price comparison extends to human-driven rideshare services as well. To see how autonomous options compare with traditional platforms, read our guide to [Cybercab compared with Uber](/compare/cybercab-vs-uber/)."
+      },
+      {
+        "heading": "Vehicle Depreciation and Business Driver Math",
+        "content": "Operating any commercial passenger vehicle requires accounting for depreciation, power, insurance, and maintenance alongside gross passenger receipts.\n\nAs [Electrek](https://electrek.co/2026/09/07/tesla-cybercab-fleet-profitable-wouldnt-sell/) argued in September 2026, if a Cybercab fleet were reliably profitable on a per-mile basis, Tesla would keep the vehicles in its own fleet rather than sell them to third parties. Under Electrek's argument, a sale would move depreciation, charging and financing risk onto the buyer while Tesla keeps the software margin and its cut of each fare. Without published revenue-split terms or operating parameters, any financial return projection remains entirely theoretical. For projected vehicle expenses, see our guide to [what a Cybercab would cost to own](/guides/cybercab-cost-of-ownership/).\n\nTo understand the gap between gross revenue and true net income in commercial driving, examine the data for human operators. The [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make) 2026 Annual Gig Mobility Report shows that an average driver on [Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) generates $23.88 gross per active hour across 21.2 active hours per week. That active hour calculation reflects time spent on trip or en route to a pickup, meaning earnings per clock hour sit even lower.\n\nReal vehicle operating expenses consume a large portion of gross driving receipts. The [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) set two standard mileage rates for 2026: 72.5 cents per mile from January 1 to June 30, 2026, and 76 cents per mile from July 1 to December 31, 2026. This IRS benchmark bundles fuel, insurance, maintenance, and vehicle depreciation into a single per-mile deduction.\n\nConsider a driver who earns the Gridwise average of $23.88 per active hour across 21.2 hours weekly for 50 weeks, logging 20,000 commercial miles split evenly between the two halves of 2026. The gross income reaches $25,312.80 across 1,060 active hours. The IRS mileage deduction equals $7,250 for the first 10,000 miles and $7,600 for the second 10,000 miles, totaling $14,850 at a blended rate of 74.25 cents per mile.\n\nSubtracting that mileage deduction leaves a [Schedule C](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040) net profit of $10,462.80. Self-employment tax is 15.3% calculated on 92.35% of net profit, resulting in an effective tax rate of 14.13%, or $1,478.35. At this earnings level, federal income tax for a single filer equals $0 because the standard deduction absorbs the taxable profit. The remaining cash after self-employment tax is $8,984.45. Across 1,060 active hours, that works out to about $8.48 per active hour. While the mileage rate is a tax deduction rather than a direct cash invoice, it serves as the best published standard for what vehicle wear and fuel cost an owner. If you are researching alternative wealth-building strategies, review our guide to [passive income streams](/guides/passive-income-ideas/)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which is cheaper, Waymo or a Tesla robotaxi?",
+        "answer": "Neither Waymo nor the Tesla robotaxi has a permanent price advantage because both services use dynamic, fluctuating trip pricing. Trip costs change continuously based on pickup time, route distance, traffic volume, and immediate passenger demand. Tesla has not published a fixed fare card and has adjusted pricing since its Austin launch, while Waymo displays live trip prices inside the Waymo One application. Check the live quote for your trip in [Tesla's robotaxi app](https://www.tesla.com/robotaxi) and in [Waymo One](https://waymo.com/) before booking."
+      },
+      {
+        "question": "Can you buy a Waymo?",
+        "answer": "You cannot purchase a Waymo vehicle for personal or commercial use today. Waymo operates its autonomous fleet through fleet-operations partners rather than selling vehicles to individual drivers or third-party fleet operators."
+      },
+      {
+        "question": "Can you buy a Cybercab and put it on a network?",
+        "answer": "You cannot purchase a Cybercab and put it on an autonomous network today. While Tesla published an online fleet interest form on September 3, 2026, the form is aimed at commercial businesses and provides no vehicle pricing, delivery timeline, or revenue-sharing terms. Furthermore, individual owners of existing Tesla vehicles who purchased Full Self-Driving (FSD) cannot add their personal cars to the commercial robotaxi network."
+      },
+      {
+        "question": "Where does each service operate?",
+        "answer": "Waymo operates commercial driverless rides across several major US metropolitan areas, while paid public rides in the Tesla Cybercab operate exclusively in Austin, Texas. Waymo lists its active service areas on [Waymo's website](https://waymo.com/), allowing riders in supported cities to book trips. Tesla publishes updates regarding its operational boundaries and fleet deployments on [Tesla's robotaxi page](https://www.tesla.com/robotaxi)."
+      },
+      {
+        "question": "Which robotaxi has the longer safety record?",
+        "answer": "Waymo runs a commercial robotaxi service in several US cities. Paid Cybercab rides began September 4, 2026, in Austin, with roughly 45 Cybercabs registered to Tesla's fleet as of August 2026, and NHTSA opened an investigation into Tesla's self-certification in September 2026."
+      },
+      {
+        "question": "Is a robotaxi cheaper than Uber?",
+        "answer": "A robotaxi is not consistently cheaper than an Uber ride because all three platforms adjust trip fares using dynamic pricing algorithms. While robotaxis eliminate driver tip expenses, base trip rates fluctuate with weather, time of day, and local passenger demand. Price the same route in the Uber app, [Tesla's robotaxi app](https://www.tesla.com/robotaxi) and [Waymo One](https://waymo.com/) before requesting a ride."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Wikipedia - Tesla Cybercab Overview and Technical Specifications",
+        "url": "https://en.wikipedia.org/wiki/Tesla_Cybercab"
+      },
+      {
+        "label": "TechCrunch - Tesla Fleet Purchasing Intake Analysis",
+        "url": "https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/"
+      },
+      {
+        "label": "Electrek - Tesla Fleet Sales Interest Form and FSD Analysis",
+        "url": "https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/"
+      },
+      {
+        "label": "National Highway Traffic Safety Administration - Regulatory Oversight",
+        "url": "https://www.nhtsa.gov/"
+      }
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Auto loan payment",
+        "href": "/auto-loan/"
+      }
+    ],
+    "relatedComparisons": [
+      "cybercab-vs-uber"
+    ]
+  },
+
   // ── Coast FI pass 2026-09-09 ──
   {
     "updated": "2026-09-09",
@@ -11895,7 +12171,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Portfolio Overlap and the Cost of Holding Both",
         content:
-          "Owning both SCHD and VYM in the same investment account creates substantial portfolio overlap without delivering genuine asset diversification. Because both funds invest in large-cap domestic dividend payers, their top holdings frequently include many of the same major pharmaceutical, industrial, and financial corporations. Holding both simultaneously means you are paying two management fees for significant duplicate equity exposure.\n\nInvestors considering holding both should examine the top holdings disclosed on each fund's official website. Comparing the published top-10 lists on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) demonstrates how closely their major positions mirror one another. When a substantial portion of top assets overlaps between two funds, dividing your capital between them simply dilutes your intended investment strategy.\n\nHolding both funds also creates conflicting portfolio mechanics. If you favor SCHD's strict debt and cash-flow screens, allocating capital to VYM introduces unscreened, leveraged companies that weaken that thesis. If you want VYM's broad market-cap exposure, allocating capital to SCHD concentrates your money back into 100 stocks and defeats the broad-basket strategy.",
+          "Owning both SCHD and VYM in the same investment account creates substantial portfolio overlap without delivering genuine asset diversification. Because both funds invest in large-cap domestic dividend payers, their top holdings frequently include many of the same major pharmaceutical, industrial, and financial corporations. Holding both simultaneously means you are paying two management fees for significant duplicate equity exposure.\n\nInvestors considering holding both should examine the top holdings disclosed on each fund's official website. Comparing the published top-10 lists on [Schwab Asset Management](https://www.schwabassetmanagement.com) and [Vanguard](https://investor.vanguard.com) demonstrates how closely their major positions mirror one another. When a large portion of top assets overlaps between two funds, dividing your capital between them simply dilutes your intended investment strategy.\n\nHolding both funds also creates conflicting portfolio mechanics. If you favor SCHD's strict debt and cash-flow screens, allocating capital to VYM introduces unscreened, leveraged companies that weaken that thesis. If you want VYM's broad market-cap exposure, allocating capital to SCHD concentrates your money back into 100 stocks and defeats the broad-basket strategy.",
       },
       {
         heading: "Matching Each Fund to Your Income Strategy",

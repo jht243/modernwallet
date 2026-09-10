@@ -1,0 +1,93 @@
+{
+  "slug": "cybercab-cost-of-ownership",
+  "updated": "2026-09-09",
+  "title": "Cybercab Cost: Ride Fares, Purchase Price, and Ownership",
+  "metaDescription": "Cybercab cost covers passenger fares, vehicle purchase price, and fleet operating expenses. Review the math, missing terms, and commercial ownership tradeoffs.",
+  "h1": "Cybercab Cost: Fares, Purchase Price, and Ownership Math",
+  "cardBlurb": "Break down passenger ride fares, the sub-$30,000 purchase price target, charging expenses, and fleet operating costs.",
+  "introText": "Calculating the true Cybercab cost requires dividing the topic into three separate figures: passenger ride fares, the vehicle purchase price, and commercial operating expenses. For passengers, [Tesla](https://www.tesla.com/robotaxi) has not published a permanent fare card, meaning fares vary across trips and markets. For prospective buyers, Chief Executive Officer Elon Musk stated a target purchase price under $30,000, but Tesla has not published a confirmed consumer or fleet price. For potential fleet operators, annual ownership costs depend on commercial insurance, fast charging, depot maintenance, and platform revenue splits that remain unreleased.\n\nAt ModernWallet, we evaluate commercial vehicle expenses and mobility business models by calculating cash flow line items rather than relying on unverified corporate targets. Prospective buyers often conflate marketing announcements with actual balance sheet commitments. If you want to review consumer purchase eligibility and network restrictions, read our analysis on whether [you can buy a Cybercab today](/guides/can-you-buy-a-cybercab/).\n\nUnderstanding these cost distinctions protects both consumers and business owners from making premature financial commitments. A passenger budgeting for transportation needs predictable trip pricing, while an investor evaluating autonomous vehicles requires verified equipment, financing, and maintenance costs. The sections below analyze each financial dimension using published operational data, regulatory filings, and tax standards.",
+  "sections": [
+    {
+      "heading": "Passenger Ride Pricing in the Tesla App",
+      "body": "Tesla has not published a durable public fare card for Cybercab rides. The company launched paid public rides in the Cybercab on September 4, 2026, in Austin, Texas, after running an earlier robotaxi pilot with Model Y vehicles starting in June 2025. Ride fares in the Austin deployment are not fixed by an official mileage or time schedule. Instead, reported trip costs have fluctuated since launch and differ across operating hours and pickup zones. Riders must open the Tesla robotaxi application to check the live fare for an individual trip before requesting a pickup.\n\nCommercial competitors operate under similar dynamic pricing constraints. While [Waymo](https://waymo.com/) runs commercial autonomous rides in several metropolitan areas, trip prices shift based on passenger demand and distance rather than a static published schedule. For riders comparing urban transit options, our guide on [Cybercab compared with Uber](/compare/cybercab-vs-uber/) evaluates how autonomous fleets compete with human-driven rideshare services. Riders should never assume a fixed per-mile cost until Tesla formally issues a binding, public fare matrix."
+    },
+    {
+      "heading": "The Sub-$30,000 Purchase Target",
+      "body": "The sub-$30,000 figure frequently cited for the Cybercab is an unconfirmed manufacturing target rather than a published retail price. Elon Musk stated a target price of \"sub-$30,000\" during the vehicle unveiling event at Warner Bros. Studios in Burbank, California, on October 10, 2024. That event also outlined a production timeline aiming for before 2027 and an eventual volume goal of at least 2 million units annually. The first production unit was assembled at Gigafactory Texas in February 2026, with formal production starting in April 2026. As of August 2026, roughly 45 Cybercabs were registered to Tesla's internal fleet.\n\nA stated production ambition is not a legal offer to sell a vehicle to the public at that price point. Tesla opened an interest form for fleet buyers at [tesla.com/robotaxi/interest](https://www.tesla.com/robotaxi/interest) on September 3, 2026, during an invite-only event in Austin. Reporting from [TechCrunch](https://techcrunch.com/2026/09/03/tesla-is-asking-people-if-they-want-to-buy-and-run-cybercab-fleets/) emphasized that this interest form is not definitive proof that Tesla will sell autonomous vehicles to third-party operators. Furthermore, [Electrek](https://electrek.co/2026/09/03/tesla-opens-search-for-cybercab-fleet-sales-but-fsd-owners-are-still-left-out/) reported that retail owners who previously bought Full Self-Driving (FSD) cannot operate their personal vehicles on the robotaxi network. Anyone building a business plan around a $30,000 acquisition cost is modeling an unverified goal."
+    },
+    {
+      "heading": "Line Items in the Cybercab Cost Model",
+      "body": "Operating a commercial autonomous vehicle involves seven distinct cost categories that determine total annual expenses. An accurate budget requires separating fixed capital expenses from variable running costs:\n\n- Purchase Price: Unconfirmed. The only existing figure is the sub-$30,000 target from 2024. No wholesale or fleet pricing has been published.\n- Financing: Market dependent. Borrowers must verify commercial vehicle lending rates. You can test different terms using our [auto loan calculator](/auto-loan/) and measure daily interest accrual with our [interest per day calculator](/interest-per-day/).\n- Commercial Insurance: Unconfirmed. Insuring an autonomous vehicle with no steering wheel or pedals requires dedicated commercial policies that standard personal auto underwriters do not write.\n- Electricity and Charging: Variable. The vehicle features a 48 kilowatt-hour (kWh) lithium-ion battery pack and a single 219 horsepower (163 kilowatt) alternating current permanent-magnet motor, delivering roughly 293 miles of range. Power expenses depend on commercial utility rates and public charging station fees.\n- Depot Handling and Cleaning: Variable. Without an onboard driver, operators must pay personnel or third-party facilities to clean passenger messes, inspect cabin sensors, and stage vehicles.\n- Maintenance: Variable. Tire replacement, brake fluid service, suspension wear, and sensor calibration represent ongoing physical costs. When reviewing vehicle upkeep risks, consult our guide on [extended warranty coverage considerations](/guides/is-extended-car-warranty-worth-it/).\n- Depreciation: Market dependent. Fleet asset write-downs depend heavily on vehicle lifespan, battery degradation, and regulatory permits.\n\nWhen reviewing these expense lines, commercial buyers must recognize what remains unverified. No public insurer currently publishes an off-the-shelf commercial rate for driverless passenger Cybercabs. Prospective operators negotiating fleet agreements must demand specific contractual quotes for depot services, warranty coverage, and hardware replacement before committing capital."
+    },
+    {
+      "heading": "Financial Impact of Fast-Charging Constraints",
+      "body": "The Cybercab relies exclusively on direct current fast charging, which eliminates low-cost overnight alternating current charging at home or private depots. Tesla engineered the Cybercab with a North American Charging Standard (NACS) port configured solely for direct current (DC) fast charging. The vehicle lacks onboard alternating current (AC) charging hardware. Standard electric vehicles can plug into typical Level 2 AC wall connectors overnight, drawing electricity at domestic residential rates or off-peak depot tariffs. The Cybercab cannot charge from an AC outlet, forcing all energy replenishment through DC fast chargers.\n\nThis design decision transforms power replenishment from a passive overnight baseline into an active commercial operating expense. DC fast charging infrastructure carries higher installation costs, demand charges from electric utilities, and premium retail pricing per kWh. Fleet managers must account for vehicle transit time to fast chargers, battery degradation from continuous rapid charging, and queuing delays during peak hours. If you are comparing vehicle acquisition structures for electric transport, see our analysis on [buying versus leasing a car](/compare/buying-vs-leasing-a-car/) to assess long-term operational flexibility."
+    },
+    {
+      "heading": "Depreciation and Regulatory Review Risks",
+      "body": "Vehicle depreciation for the Cybercab carries elevated risk due to an active federal safety investigation into its cabin design. In September 2026, the [National Highway Traffic Safety Administration (NHTSA)](https://www.nhtsa.gov/) opened a formal investigation into Tesla's self-certification of the Cybercab. The vehicle is manufactured without manual controls, lacking a steering wheel, accelerator and brake pedals, side exterior mirrors, and a rear window. Federal Motor Vehicle Safety Standards generally mandate these physical components for road-legal vehicles unless granted specific federal exemptions.\n\nRegulatory uncertainty directly affects asset resale value and financing viability. If NHTSA rules that the vehicle cannot operate across state lines or requires physical retrofits, initial units could face steep depreciation or stranded capital costs. Unlike standard passenger vehicles that retain residual value on consumer used-car platforms like [Turo](https://turo.com/) or private retail markets, a dedicated two-seat vehicle without manual controls has zero alternative utility if autonomous fleet permits are restricted or delayed."
+    },
+    {
+      "heading": "Break-Even Math for Fleet Operators",
+      "body": "Determining whether a Cybercab can generate a profit requires calculating the paid active hours needed to cover fixed financing and variable operating costs. A commercial operator must balance debt service, insurance, electricity, cleaning, and depot fees against net fare collections. Because Tesla has not published the platform revenue-share terms between vehicle owners and the network, no valid net revenue figure exists today. In an analysis published on September 7, 2026, [Electrek](https://electrek.co/2026/09/07/tesla-cybercab-fleet-profitable-wouldnt-sell/) argued that if a Cybercab fleet were reliably profitable on its own, Tesla would retain all vehicles in its corporate fleet rather than selling them to third parties. Selling vehicles transfers vehicle debt and depreciation to outside buyers while Tesla captures software licensing fees and ride commissions.\n\nTo understand the baseline economics of commercial driving, consider benchmark data from human-operated gig mobility. According to the [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make) 2026 Annual Gig Mobility Report, the average [Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) driver earns $23.88 gross per active hour across roughly 21.2 active hours per week. An active hour includes only time en route or transporting passengers, excluding unpaid wait time.\n\nConsider the ground-truth tax and expense math for a sole proprietor driving 20,000 business miles over 50 weeks in 2026, split evenly across both halves of the calendar year:\n\n- Gross revenue across 1,060 active hours: $25,312.80.\n- [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) standard mileage deduction: 10,000 miles at 72.5 cents per mile ($7,250) for January through June, plus 10,000 miles at 76 cents per mile ($7,600) for July through December. Total mileage deduction equals $14,850, yielding a blended rate of 74.25 cents per mile.\n- Net business profit reported on [IRS Schedule C](https://www.irs.gov/forms-pubs/about-schedule-c-form-1040): $10,462.80.\n- [Self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes): $1,478.37, calculated at the effective rate of 14.13% on net profit.\n- Federal income tax for a single filer with no other income: $0, covered by the standard deduction.\n- Net take-home cash: $8,984.43, which works out to exactly $8.48 per active hour.\n\nThis worked IRS example demonstrates how vehicle expenses erode gross mobility revenue. The standard mileage rate is a tax deduction that bundles fuel, insurance, maintenance, and vehicle depreciation into a single proxy for operating wear. An autonomous fleet operator must clear these exact real-world expenses before realizing any net profit. To review how commercial earnings impact overall personal balance sheets, use our [net worth calculator](/net-worth/)."
+    },
+    {
+      "heading": "Commercial Feasibility and Operator Tradeoffs",
+      "body": "Commercial robotaxi operations are unsuitable for individual retail investors looking for turn-key passive income. Operating an autonomous vehicle fleet is a capital-intensive transport enterprise. It is not an automated side income stream. The [IRS guidelines on passive activities in Topic No. 425](https://www.irs.gov/taxtopics/tc425) govern business participation and loss deductions, underscoring that equipment management carries strict tax obligations. If you are researching hands-off wealth building strategies, compare these operational demands against real-world options in our guide to [passive income ideas](/guides/passive-income-ideas/).\n\nOur assessment of commercial fleet feasibility would change if Tesla published three missing figures: a binding wholesale vehicle price, an open retail sales contract for non-fleet buyers, and a transparent network revenue split that proves positive unit economics after depot costs. Prospective fleet operators should register details on [Tesla's robotaxi interest form](https://www.tesla.com/robotaxi/interest) to monitor commercial terms, but avoid committing debt capital until firm contracts exist to confirm the true cybercab cost."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/auto-loan/",
+      "label": "Auto loan payment"
+    },
+    {
+      "href": "/interest-per-day/",
+      "label": "Interest per day"
+    },
+    {
+      "href": "/net-worth/",
+      "label": "Net worth"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much will the Cybercab cost?",
+      "answer": "Tesla has not published an official purchase price for the Cybercab. Chief Executive Officer Elon Musk announced a target price under $30,000 at the October 2024 unveiling, but that figure remains an aspirational manufacturing goal. Tesla has not released wholesale fleet pricing or opened consumer vehicle ordering."
+    },
+    {
+      "question": "How much does a Tesla Robotaxi ride cost?",
+      "answer": "Tesla has not published a permanent public fare schedule for Cybercab rides. When passenger rides launched in Austin in September 2026, individual trip fares varied based on distance, pickup zone, and real-time demand. Passengers must check current pricing directly in the Tesla robotaxi app before booking."
+    },
+    {
+      "question": "How does the Cybercab charge?",
+      "answer": "The Cybercab charges exclusively through direct current fast charging using a North American Charging Standard port. The vehicle lacks onboard alternating current charging hardware, meaning it cannot plug into standard residential Level 2 wall outlets. All battery replenishment must occur at compatible commercial fast chargers."
+    },
+    {
+      "question": "Is a robotaxi cheaper than Uber?",
+      "answer": "Whether a robotaxi ride is cheaper than an Uber trip depends on real-time market demand and location. Neither Tesla nor Waymo publishes a fixed per-mile fare card, and pricing dynamically adjusts during peak hours. Passengers should compare quotes directly between the Tesla robotaxi app and the Uber app for their specific route."
+    },
+    {
+      "question": "Is the Cybercab a good investment?",
+      "answer": "There is currently no financial data to support treating the Cybercab as a commercial investment. Tesla has not published vehicle purchase prices, commercial financing packages, or network revenue-share terms for fleet buyers. Without confirmed revenue splits and depot operating costs, calculating an expected rate of return is impossible."
+    },
+    {
+      "question": "What would it cost to run a Cybercab for a year?",
+      "answer": "Total annual operating costs for a Cybercab cannot be determined because commercial insurance, cleaning contracts, and depot fees remain unquoted. A complete budget must cover commercial vehicle financing, DC fast charging electricity, commercial liability insurance, fleet cleaning, tire maintenance, and asset depreciation. Until Tesla issues fleet service terms, annual operating costs remain unverified."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Tesla, Robotaxi Network",
+      "url": "https://www.tesla.com/robotaxi"
+    },
+    {
+      "label": "NHTSA, National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/"
+    },
+    {
+      "label": "IRS, Standard Mileage Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates"
+    }
+  ]
+}
