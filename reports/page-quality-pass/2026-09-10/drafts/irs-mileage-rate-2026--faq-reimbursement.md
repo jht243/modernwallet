@@ -1,0 +1,2 @@
+**Q: Is my mileage reimbursement from my employer taxable?**
+Mileage reimbursement is not taxable if your employer pays it under an accountable plan at or below the Internal Revenue Service (IRS) standard mileage rate. An accountable plan requires a business connection, timely substantiation of dates and miles, and the return of any excess reimbursement. If your employer pays more than the IRS rate, only the excess amount is taxed as wages on Form W-2. Under a non-accountable plan, the full reimbursement is taxed as ordinary income.

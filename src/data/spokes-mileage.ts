@@ -64,6 +64,11 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Generally no. Unreimbursed employee business expenses, including mileage, are not deductible for most employees under current law. The standard mileage rate matters mainly to self-employed filers reporting on Schedule C, and to employers reimbursing employees — a reimbursement at or below the standard rate under an accountable plan is generally not taxable to the employee.",
       },
+      {
+        question: "Is my mileage reimbursement from my employer taxable?",
+        answer:
+          "Mileage reimbursement is not taxable if your employer pays it under an accountable plan at or below the IRS standard mileage rate. An accountable plan requires a business connection, timely substantiation of dates and miles, and the return of any excess reimbursement. If your employer pays more than the IRS rate, generally only the excess amount is taxed as wages on Form W-2. Under a non-accountable plan, the full reimbursement is taxed as ordinary income.",
+      },
     ],
     sources: [IRS_MILEAGE, IRS_PUB463, IRS_SE_TAX],
     toolHeading: "2026 mileage deduction",
