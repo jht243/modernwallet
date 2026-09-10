@@ -318,6 +318,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
 
   {
     calculator: "net-worth",
+    updated: "2026-09-09",
     slug: "net-worth-projection-calculator",
     title: "Net Worth Projection Calculator: Future Net Worth Predictor",
     metaDescription:
@@ -368,7 +369,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
       {
         question: "How does this projection relate to FIRE or Coast FIRE?",
         answer:
-          "A net worth projection and a FIRE (Financial Independence, Retire Early) target are the same math from different angles: FIRE asks what net worth you need before your investments alone can cover your spending, while this calculator projects what your net worth will actually be at a given savings rate and return. Coast FIRE narrows that further to whether your current balance alone, with zero more contributions, will grow to your retirement number by compounding. Use our [Coast FIRE calculator](/coast-fire/) to check that specific milestone against today's balance.",
+          "A net worth projection and a FIRE (Financial Independence, Retire Early) target are the same math from different angles: FIRE asks what net worth you need before your investments alone can cover your spending, while this calculator projects what your net worth will actually be at a given savings rate and return. Coast FIRE narrows that further to whether your current balance alone, with zero more contributions, will grow to your retirement number by compounding. Use our [Coast FIRE calculator](/coast-fire/) to check that specific milestone against today's balance, or read the [coast targets from 25 to 55](/guides/coast-fire-number-by-age/) to see roughly where your age sits before you run your own figures.",
       },
     ],
     sources: [

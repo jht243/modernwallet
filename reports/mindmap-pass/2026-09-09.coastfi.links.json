@@ -1,0 +1,35 @@
+{
+ "new_pages": {
+  "coast-fire-number-by-age": {
+   "inbound": 0,
+   "distinct_anchors": 0,
+   "orphan": true,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [],
+   "links": [],
+   "unlinked_mentions": []
+  },
+  "coast-fire-vs-fire": {
+   "inbound": 0,
+   "distinct_anchors": 0,
+   "orphan": true,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [],
+   "links": [],
+   "unlinked_mentions": []
+  },
+  "best-coast-fire-calculators": {
+   "inbound": 0,
+   "distinct_anchors": 0,
+   "orphan": true,
+   "below_target": true,
+   "single_anchor": false,
+   "siblings_linking_in": [],
+   "links": [],
+   "unlinked_mentions": []
+  }
+ },
+ "target_inbound": 3
+}

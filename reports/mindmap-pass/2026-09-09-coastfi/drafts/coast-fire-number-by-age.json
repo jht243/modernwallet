@@ -1,0 +1,83 @@
+{
+  "updated": "2026-09-09",
+  "slug": "coast-fire-number-by-age",
+  "title": "Coast FIRE Number by Age: Target Benchmarks",
+  "metaDescription": "See your coast FIRE number by age across spending targets from $40,000 to $100,000, learn how expected returns change the total, and test your own numbers.",
+  "h1": "Coast FIRE Number by Age: Target Benchmarks and Calculation Rules",
+  "cardBlurb": "A lookup grid of Coast FIRE targets by age from 25 to 55, showing how investment returns and annual spending goals move the required portfolio.",
+  "introText": "Your Coast Financial Independence, Retire Early (Coast FIRE) number is your full retirement target divided by the growth your money still has time to earn. Your spending goal sets that target. Age only decides how many compounding years are left. At ModernWallet, we build our projections on transparent arithmetic so savers can evaluate whether a baseline milestone matches their household goals. The benchmark figures assume full retirement at age 65, an average annual real return of 7 percent, and a 4 percent safe withdrawal rate (SWR), with all portfolio contributions stopping immediately.",
+  "sections": [
+    {
+      "heading": "Coast FIRE Number by Age Across Common Spending Levels",
+      "body": "A coast FIRE benchmark grid displays the exact balance required at each five-year age interval to reach complete retirement security by age 65 without additional savings.\n\nThe figures in the table below rest on five baseline parameters:\n\n- Retirement at age 65.\n- An expected annual investment return of 7 percent after inflation (a real return).\n- A 4 percent safe withdrawal rate.\n- Values stated in today's dollars.\n- Investment contributions stopping entirely.\n\nEach spending column discounts back from a full Financial Independence, Retire Early (FIRE) portfolio. A $40,000 annual spending goal requires a $1,000,000 balance, $60,000 requires $1,500,000, $80,000 requires $2,000,000, and $100,000 requires $2,500,000.\n\n| Current age | $40k/yr spending | $60k/yr spending | $80k/yr spending | $100k/yr spending |\n|---|---|---|---|---|\n| 25 | $66,780 | $100,171 | $133,561 | $166,951 |\n| 30 | $93,663 | $140,494 | $187,326 | $234,157 |\n| 35 | $131,367 | $197,051 | $262,734 | $328,418 |\n| 40 | $184,249 | $276,374 | $368,498 | $460,623 |\n| 45 | $258,419 | $387,629 | $516,838 | $646,048 |\n| 50 | $362,446 | $543,669 | $724,892 | $906,115 |\n| 55 | $508,349 | $762,524 | $1,016,699 | $1,270,873 |\n\nTo find your benchmark, locate your current age row and match it with your expected annual retirement spending column. For example, a 30-year-old targeting $60,000 in annual retirement expenses needs $140,494 invested today. That balance stays invested in an equity-oriented portfolio and compounds over 35 years until age 65. The table states its figures in today's dollars, so the balance in your row buys the lifestyle you priced when you picked your spending column. Getting there needs no further contribution from your paycheck.\n\nSavers routinely misread what the benchmark balance means. Hitting your coast number does not mean you can retire tomorrow or stop working altogether. It means your current retirement savings already possess enough runway to compound into your full retirement nest egg by age 65. You still must earn enough current income to cover your day-to-day living expenses until retirement age arrives. Savers exploring different work arrangements can compare this posture to alternatives in our analysis of [Coast FIRE vs. Barista FIRE](/compare/coast-fire-vs-barista-fire/) or review foundational mechanics in our [Coast FIRE guide](/guides/coast-fire-guide/)."
+    },
+    {
+      "heading": "The Exponential Rise in Target Balances with Age",
+      "body": "Target investment balances climb steeply with age because every lost decade cuts the compounding runway that asset growth relies on to multiply wealth.\n\nThe mathematical formula for the milestone is:\n\nCoast number today = FIRE number / (1 + r)^t\n\nIn this formula, r represents your expected annual investment return, and t equals the number of years remaining until your target retirement age. The core FIRE number equals your desired annual retirement spending divided by your safe withdrawal rate. Under a traditional 4 percent safe withdrawal rate, the retirement target equals 25 times your annual spending.\n\nConsider the worked example of a 35-year-old who plans to spend $60,000 per year and retire at age 65 under an expected 7 percent return. The baseline retirement target is $1,500,000 ($60,000 divided by 0.04). With 30 years remaining until retirement, the compounding growth factor is 1.07 raised to the 30th power, which equals 7.6123. Dividing the $1,500,000 goal by 7.6123 establishes a required balance of $197,051 today.\n\nThe gap between age bands widens fast. At a $60,000 annual spending level, the required target roughly doubles for every ten years of delay: $100,171 at age 25 becomes $197,051 at age 35, which then expands to $387,629 at age 45. For a 25-year-old targeting $60,000 in annual spending, the coast number of $100,171 represents about one-fifteenth of the $1,500,000 nest egg needed at age 65. By contrast, a 55-year-old targeting that same lifestyle needs $762,524. With four decades of growth ahead, market gains produce most of the ending balance. With ten years left, the starting balance has to cover about half the final $1,500,000. Couples coordinating combined portfolios can see joint milestones in our guide to [Coast FIRE for couples](/guides/coast-fire-for-couples/)."
+    },
+    {
+      "heading": "Impact of Investment Return Assumptions on Target Balances",
+      "body": "Small changes in the return assumption move the required balance by a lot, particularly for younger savers.\n\nThe table below isolates the sensitivity of the calculation to different rate-of-return assumptions. The figures track an annual retirement expenditure of $60,000 (representing a $1,500,000 full retirement target), retirement at age 65, and a 4 percent safe withdrawal rate across returns from 5 percent to 8 percent.\n\n| Current age | 5% return | 6% return | 7% return | 8% return |\n|---|---|---|---|---|\n| 25 | $213,069 | $145,833 | $100,171 | $69,046 |\n| 30 | $271,935 | $195,158 | $140,494 | $101,452 |\n| 35 | $347,066 | $261,165 | $197,051 | $149,066 |\n| 40 | $442,954 | $349,498 | $276,374 | $219,027 |\n| 45 | $565,334 | $467,707 | $387,629 | $321,822 |\n| 50 | $721,526 | $625,898 | $543,669 | $472,863 |\n| 55 | $920,870 | $837,592 | $762,524 | $694,790 |\n\nThe figures demonstrate why return expectations dictate the entire trajectory of early milestones. At age 25 with a $60,000 spending target, dropping the assumed annual return from 8 percent to 5 percent increases the required upfront balance from $69,046 to $213,069. That shift represents roughly a threefold increase in the capital you need in your twenties. At age 55, that same shift from 8 percent to 5 percent moves the requirement from $694,790 to $920,870, an increase of about one-third. The younger you are, the more your return assumption decides the outcome because the exponent in the formula spans decades.\n\nBecause static benchmark tables use fixed percentages, they cannot reflect your personal risk tolerance, portfolio asset allocation, or timeline. A general table is only a starting point. It cannot replace a plan built on your own numbers. You can model your exact timeline, custom returns, and specific savings amounts using our [Coast FIRE calculator](/coast-fire/). For a broader evaluation of tools, review our breakdown of the [best Coast FIRE calculators](/roundup/best-coast-fire-calculators/), or compare your milestone against total independence in our comparison of [Coast FIRE vs. FIRE](/compare/coast-fire-vs-fire/)."
+    },
+    {
+      "heading": "Retirement Factors Excluded from Standard Benchmark Grids",
+      "body": "Standard benchmark charts leave out three things on a real balance sheet: guaranteed retirement income, mortgage payoff timelines, and private healthcare expenses.\n\nGuaranteed future income streams represent the most common omission from baseline tables. If you anticipate receiving a pension or claiming Social Security benefits, your portfolio does not need to generate your entire income stream. To account for these payments, subtract your expected annual benefit from your projected spending goal before referencing the chart. For example, if your total living expenses equal $80,000 per year, but you project $20,000 in annual Social Security income, your investment portfolio only needs to support a $60,000 annual withdrawal. The official retirement age guidelines from the [Social Security Administration](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) outline how claiming earlier or later alters that annual entitlement.\n\nHousing debt also distorts benchmark numbers. Many savers carry a mortgage in their thirties and forties that will be fully satisfied prior to age 65. If your current living expenses include a $2,000 monthly mortgage payment that ends before retirement, reading a table column based on your current gross spending overstates your true retirement target by $24,000 per year.\n\nConversely, healthcare before Medicare creates an expense that baseline retirement charts frequently undercount. If coasting involves switching to part-time roles or freelancing without employer-sponsored coverage, you must fund health insurance out of pocket. You can check available policy costs through the [Health Insurance Marketplace](https://www.healthcare.gov/) to confirm your reduced earning plan covers premiums and deductibles before you halt retirement contributions."
+    },
+    {
+      "heading": "Application of the Target Balance to Long-Term Planning",
+      "body": "Recheck your milestone target whenever the market moves sharply, your earnings change, or you move your retirement date.\n\nReaching your target balance marks a milestone, but the number is not permanent. A market drop occurring shortly after you halt contributions can drag your portfolio below the required compounding trajectory. When equity valuations drop sharply, you may need to resume modest monthly contributions or delay reducing your working hours until the balance recovers. A big raise or a move to a costlier city changes what you will spend. If your annual retirement target rises from $60,000 to $80,000, your required balance today resets to the higher threshold.\n\nSafe withdrawal rate assumptions also require careful monitoring. The standard 4 percent figure comes from research published in 1998 that tested withdrawal rates across historical 30-year market periods, which our [FIRE calculator](/retirement/fire-calculator/) explains in full. In the FIRE community, Lean FIRE models commonly use 20 times annual expenses (about a 5 percent withdrawal rate), standard FIRE relies on 25 times annual expenses (a 4 percent rate), and Fat FIRE models budget 33 times annual expenses or more. However, a retirement span lasting longer than 30 years exceeds the assumptions of standard 4 percent research. If you plan to retire earlier than age 65, a withdrawal rate of 3 percent to 3.5 percent is more appropriate to protect against portfolio depletion. You can test withdrawal horizons on our [FIRE calculator](/retirement/fire-calculator/) or run broad projections on our [retirement savings calculator](/retirement/retirement-savings-calculator/).\n\nThis benchmark approach is not for savers who plan an ultra-early complete retirement in their thirties or forties, because the formulas here rely on investments compounding all the way until age 65. They have to save the whole nest egg first. Market growth cannot bridge a gap that long. Our analysis would change if you permanently moved your retirement target age. Shifting retirement from age 65 to age 55 removes ten years of compounding and raises your required balance today.\n\nRun your own numbers on our [Coast FIRE calculator](/coast-fire/) to see the target balance your own retirement age and return assumption produce."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/coast-fire/",
+      "label": "Coast FIRE calculator"
+    },
+    {
+      "href": "/retirement/fire-calculator/",
+      "label": "FIRE calculator"
+    },
+    {
+      "href": "/retirement/retirement-savings-calculator/",
+      "label": "Retirement savings calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What should my coast FIRE number be?",
+      "answer": "Your target balance depends directly on your expected annual retirement spending, your current age, your target retirement age, and your expected annual investment return. For example, assuming retirement at age 65 with an expected 7 percent return and a 4 percent safe withdrawal rate, a 30-year-old spending $60,000 per year needs $140,494 invested today. A 40-year-old with the same spending target needs $276,374. To find your specific number, identify your projected annual spending in retirement and discount that total back across the years remaining until you stop working."
+    },
+    {
+      "question": "What is my Coast FIRE number at 50 years old?",
+      "answer": "At 50, with retirement at 65, a 7 percent return and a 4 percent withdrawal rate, your target depends on your spending column: $362,446 at $40,000 a year, $543,669 at $60,000, $724,892 at $80,000, and $906,115 at $100,000. If your annual retirement budget is $60,000, you need $543,669 invested today because you have 15 years remaining for your assets to compound into the required $1,500,000 retirement nest egg."
+    },
+    {
+      "question": "How do you get your Coast FIRE number?",
+      "answer": "You calculate your milestone by dividing your full retirement target by your expected compounding growth factor: Coast number = FIRE number / (1 + r)^t. First, find your full retirement target by dividing your expected annual retirement spending by your safe withdrawal rate, such as dividing by 0.04 under the standard 25-times-spending rule. Next, calculate your growth factor by adding your expected return percentage to 1 and raising that figure to the power of the years remaining until retirement. Dividing your total target by that growth factor yields the amount required today."
+    },
+    {
+      "question": "Is a Coast FIRE benchmark table accurate for me?",
+      "answer": "A benchmark grid provides a standardized estimate based on static parameters, but it does not capture individual financial variables. Standard grids assume a fixed 7 percent annual investment return, retirement at exactly age 65, and zero external income. If you expect a pension, receive Social Security benefits, carry mortgage payments that will end before retirement, or intend to retire prior to age 65, your required balance will differ from the chart. Use a personalized calculator to input your exact timeline, asset allocation, and spending goals."
+    },
+    {
+      "question": "What is a good Coast FIRE number?",
+      "answer": "A good milestone balance is one that realistically funds your projected living expenses in retirement without requiring overly aggressive investment return assumptions. If you plan to spend $60,000 annually in retirement at age 65, having $197,051 invested by age 35 provides a solid foundation under a moderate 7 percent return assumption. If that balance requires an 8 percent or 9 percent return to reach your goal, your financial plan carries higher market risk than a conservative strategy that reaches independence under a 5 percent or 6 percent return."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Social Security Administration",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+    },
+    {
+      "label": "Health Insurance Marketplace",
+      "url": "https://www.healthcare.gov/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

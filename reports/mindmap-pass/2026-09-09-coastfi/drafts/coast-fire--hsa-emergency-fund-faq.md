@@ -1,0 +1,3 @@
+An emergency fund does not count toward this field, and a health savings account (HSA) belongs only if the balance is invested for retirement. This calculator projects liquid, invested assets compounding at a market return. Cash reserves cover short-term spending, so counting them makes you look closer to coasting than you are and assumes you would liquidate your cushion.
+
+An HSA counts only to the extent it is invested rather than sitting in the account's cash sweep. You must also plan to leave those investments untouched, because balances spent on current medical bills cannot compound toward retirement. Money you plan to spend before retirement does not belong in this field.

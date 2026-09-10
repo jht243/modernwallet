@@ -1,0 +1,39 @@
+{
+ "slug": "best-coast-fire-calculators",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2779,
+ "floor": 1500,
+ "input_tokens": 24389,
+ "output_tokens": 5249,
+ "thinking_tokens": 15201,
+ "est_cost_usd": 0.095,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2779,
+  "numbers_not_in_facts": [
+   "0.5",
+   "6.5"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 22736
+  }
+ },
+ "seconds": 56.6,
+ "response_id": "tCaiau-IM5DQz7IP_u-h2A4",
+ "generated_at": "2026-09-09T22:41:32-0500"
+}

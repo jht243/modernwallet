@@ -4,7 +4,7 @@ import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { ROUNDUPS } from "../../data/roundups";
-import { linkify, plain, paragraphs } from "../../lib/richtext";
+import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { COMPARISONS } from "../../data/comparisons";
 import LeadForm from "../../components/LeadForm.astro";
@@ -98,7 +98,7 @@ const relatedEntries = entry.relatedComparisons
     {entry.rankingCriteria && (
       <section class="section criteria-section" aria-label="How we ranked">
         <h2>How we ranked these {entry.category}</h2>
-        {paragraphs(entry.rankingCriteria).map((para) => <p set:html={linkify(para)} />)}
+        <Fragment set:html={richBody(entry.rankingCriteria)} />
       </section>
     )}
 
@@ -134,7 +134,9 @@ const relatedEntries = entry.relatedComparisons
           <tbody>
             {entry.comparisonTable.rows.map((row) => (
               <tr>
-                <th scope="row">{row.name}</th>
+                <th scope="row">{row.href
+                  ? <a href={row.href} {...(row.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}>{row.name}</a>
+                  : row.name}</th>
                 {row.values.map((v) => <td>{v}</td>)}
               </tr>
             ))}
@@ -153,7 +155,7 @@ const relatedEntries = entry.relatedComparisons
     {entry.sections.map((s) => (
       <section class="section">
         <h2>{s.heading}</h2>
-        {s.content.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
+        <Fragment set:html={richBody(s.content)} />
       </section>
     ))}
 
@@ -275,5 +277,20 @@ const relatedEntries = entry.relatedComparisons
       .cmp-table th, .cmp-table td { padding: 7px 9px; font-size: 0.87rem; }
       .pros-cons { grid-template-columns: 1fr; }
     }
-  </style>
+  
+    /* Markdown pipe tables rendered inside prose bodies (richBody).
+       :global() is required: richBody output is injected with set:html, so it never
+       receives Astro's scoping attribute and a scoped selector would not match it. */
+    :global(.table-wrap) { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0; }
+    :global(.prose-table) { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
+    :global(.prose-table th), :global(.prose-table td) { padding: 11px 14px; text-align: left; border: 1px solid #e2ece8; }
+    :global(.prose-table thead th) { background: #f0f8f5; font-weight: 700; color: #1a3a30; }
+    :global(.prose-table tbody tr:nth-child(even) td), :global(.prose-table tbody tr:nth-child(even) th) { background: #fafcfb; }
+    :global(.prose-table th[scope="row"]) { font-weight: 600; color: #333; }
+    @media (max-width: 640px) {
+      :global(.prose-table th), :global(.prose-table td) { padding: 8px 10px; font-size: 0.9rem; }
+    }
+    :global(.prose-list) { margin: 14px 0; padding-left: 22px; }
+    :global(.prose-list li) { margin: 6px 0; }
+</style>
 </BaseLayout>

@@ -1,0 +1,43 @@
+# Coast FIRE Explained: What It Is and How to Reach It
+
+Coast FIRE is the point when your current retirement savings, left untouched, will grow into a full retirement nest egg by your planned retirement date. Once you reach it, you can stop contributing new money to retirement and direct your income toward other goals, because compound growth alone will finish the job. This guide covers how the math works, why the idea has caught on, and the real trade-offs people often skip before declaring themselves \"coasted.\"
+
+## What Coast FIRE actually means
+Coast FIRE means you have already saved enough that, without a single additional contribution, compound growth alone will carry your retirement savings to your full number by your target retirement age. It sits between two more familiar ideas: regular retirement saving, where you keep contributing every paycheck until you retire, and full FIRE (Financial Independence, Retire Early), where you already have enough to live off withdrawals today.
+
+Reaching Coast FIRE does not mean you stop working. Most people who hit it keep their job or income, but they no longer need to save for retirement specifically — that money is now free for a mortgage payoff, a career change, part-time work, or simply more spending today. Use our [Coast FIRE calculator](/coast-fire/) to see your own number: it works backward from your desired retirement spending to tell you exactly what you need invested today to coast.
+
+## Why Coast FIRE caught on
+Coast FIRE gained traction because it offers a middle path between grinding toward full financial independence and the standard "work until 65" plan, at a moment when burnout and career flexibility became bigger priorities for many workers. Unlike full FIRE, which for most households requires roughly 25 times their annual spending saved before quitting entirely, a Coast FIRE number is smaller and reachable years earlier, because it still counts on decades of compounding to finish the job.
+
+The appeal is real optionality without an all-or-nothing bet. Someone who reaches Coast FIRE in their late 30s can downshift to a lower-stress, lower-paying job, take a sabbatical, or start a business with less financial pressure, while retirement stays on track in the background.
+
+## How the Coast FIRE number is calculated
+The calculation starts with your retirement number, not your savings. Take your desired annual retirement spending and divide it by a safe withdrawal rate — commonly 4%, which implies a target of 25 times your annual spending. A $60,000-a-year retirement goal implies a $1,500,000 nest egg.
+
+That retirement number is then discounted back to today using your years until retirement and your expected annual return. The result is your coast number: the amount you'd need invested right now, with zero more contributions, to compound into your full retirement number by your target age. If your current savings already meet or beat that coast number, you've reached Coast FIRE. If not, the gap tells you how much more you need before compounding alone can finish the job — see the [retirement calculator](/retirement/) for a full projection that includes your ongoing contributions.
+
+## The trade-offs most Coast FIRE guides skip
+The biggest overlooked risk is health insurance, not investment returns. If your plan to "coast" involves leaving a job with employer-sponsored coverage, you need a real budget for individual coverage through the [Health Insurance Marketplace](https://www.healthcare.gov/) or a part-time job that includes benefits — premiums for a mid-tier marketplace plan can run several hundred dollars a month per person before any subsidy, which changes how much income you actually need while coasting.
+
+Sequence-of-returns risk is the second trap. Coast FIRE assumes a smooth average return over many years, but a market downturn in the first few years after you stop contributing can shrink your compounding base, since there's no new money coming in to buy the dip. Someone who coasts right before a prolonged downturn may need to resume contributions or delay retirement to recover.
+
+A third, quieter risk: lifestyle creep on the money you free up. The whole point of reaching Coast FIRE is redirecting cash that used to go to retirement — if that money instead funds a bigger house payment or new debt, you've lost the flexibility Coast FIRE was supposed to buy you.
+
+## Signs you're not actually ready to coast yet
+Being technically "coast FIRE'd" on a spreadsheet does not mean it's the right time to stop contributing. Watch for these first: high-interest debt above roughly 7-8% still on the books, which almost always beats the expected return on new retirement contributions; an emergency fund under three to six months of expenses, since coasting removes some income cushion if you also cut work hours; and no clear health-insurance plan if coasting means fewer hours or a job change.
+
+It's also worth stress-testing your number with a lower expected return and a later retirement age. If your coast number only works at an optimistic 8-9% average return, a more conservative 5-6% assumption may show you're not quite there — run both in the [Coast FIRE calculator](/coast-fire/) before making a big income decision.
+
+## How to coast without quitting cold turkey
+Most people who reach Coast FIRE don't announce it or dramatically change their life overnight. A gradual approach works better in practice: verify your number with conservative assumptions, then redirect what used to be retirement contributions toward a specific goal — debt payoff, a home down payment, a cash buffer — rather than letting it disappear into daily spending. Track the freed-up cash in a [budget](/budget/) so you can see exactly where it's going.
+
+Check your coast number at least once a year, especially after a big market move, a raise, or a change in your target retirement age or spending goal — the calculation is sensitive to all three, and a number that worked at 35 may need revisiting at 40. Married or partnered? Run the math on your combined household numbers instead of two separate ones — see [Coast FIRE for couples](/guides/coast-fire-for-couples/) for a worked example of why pooling finances usually moves your date earlier. If the real goal is stepping back to part-time now rather than waiting until you fully retire, compare that path first: [Coast FIRE vs. Barista FIRE](/compare/coast-fire-vs-barista-fire/) quantifies why Barista FIRE needs a much bigger number saved today.
+
+## FAQ
+**What is Coast FIRE?** Coast FIRE is the point where your current retirement savings, growing untouched at your expected return, will reach your full retirement number by your target retirement age without any more contributions. Once you're there, you can stop saving for retirement specifically and redirect that money elsewhere.
+**How is a Coast FIRE number different from a full FIRE number?** A full FIRE number is what you need to retire and start withdrawing today — commonly 25 times your annual spending. A Coast FIRE number is smaller: it's what you need invested today so that, given years of compounding before your actual retirement age, it grows into that full FIRE number by itself.
+**What return should I use to calculate my Coast FIRE number?** A common planning range for a diversified, stock-heavy portfolio is 6% to 8% annually. A lower rate is more conservative and raises how much you need saved today; a higher rate lowers it but assumes more investment risk. Test a few rates in the calculator to see how sensitive your result is.
+**Does reaching Coast FIRE mean I should quit my job?** Not necessarily. Reaching Coast FIRE means retirement is funded by growth alone — it doesn't cover your current living expenses, health insurance, or other savings goals. Most people who reach it keep working, often in a lower-stress or lower-paying role, rather than stopping income entirely.
+**What's the biggest risk with a Coast FIRE plan?** A market downturn shortly after you stop contributing is the biggest risk, since there's no new money to offset a loss and your remaining growth years may not fully recover the average return you assumed. Losing employer health coverage without a replacement budget is the second most common planning gap.
+**Is Coast FIRE worth it?** For most people who reach it, yes. Retirement stays funded, and income that used to go to savings can go toward a mortgage payoff, a career change, or fewer hours instead. It only works if you already have a health-insurance budget for after employer coverage and no high-interest debt or thin emergency fund left to worry about.

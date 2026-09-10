@@ -87,3 +87,64 @@ export function paragraphs(input: string): string[] {
   if (buf) out.push(buf);
   return out;
 }
+
+/** True when a block is a GitHub-style pipe table: a header row, a |---|---| separator, then rows. */
+function isPipeTable(block: string): boolean {
+  const lines = block.trim().split("\n");
+  if (lines.length < 3) return false;
+  if (!lines.every((l) => l.trim().startsWith("|") && l.trim().endsWith("|"))) return false;
+  return /^\|[\s:-]*\|[\s:|-]*$/.test(lines[1].trim());
+}
+
+function cells(row: string): string[] {
+  return row.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+}
+
+/** Render a pipe table to real HTML. Cell text still goes through linkify, so inline links work. */
+function pipeTable(block: string): string {
+  const lines = block.trim().split("\n");
+  const head = cells(lines[0]);
+  const body = lines.slice(2).map(cells);
+  const th = head.map((c) => `<th scope="col">${linkify(c)}</th>`).join("");
+  const trs = body
+    .map((r) => `<tr>${r.map((c, i) => (i === 0 ? `<th scope="row">${linkify(c)}</th>` : `<td>${linkify(c)}</td>`)).join("")}</tr>`)
+    .join("");
+  return `<div class="table-wrap"><table class="prose-table"><thead><tr>${th}</tr></thead><tbody>${trs}</tbody></table></div>`;
+}
+
+const LIST_LINE = /^\s*(-|\d+\.)\s+/;
+
+/** Every line of the block is a list item (may be a single item). */
+function isListBlock(block: string): boolean {
+  return block.trim().split("\n").every((l) => LIST_LINE.test(l));
+}
+
+/** True when a block is a markdown list: more than one item, all list lines. */
+function isList(block: string): boolean {
+  const lines = block.trim().split("\n");
+  return lines.length > 1 && lines.every((l) => LIST_LINE.test(l));
+}
+
+function list(block: string): string {
+  const lines = block.trim().split("\n");
+  const ordered = /^\s*\d+\.\s+/.test(lines[0]);
+  const items = lines.map((l) => `<li>${linkify(l.replace(LIST_LINE, ""))}</li>`).join("");
+  return ordered ? `<ol class="prose-list">${items}</ol>` : `<ul class="prose-list">${items}</ul>`;
+}
+
+/** Render a section body: blank-line-separated blocks, each a paragraph, a pipe table or a list.
+ *  Use with a single <Fragment set:html={richBody(...)} />. */
+export function richBody(input: string): string {
+  const blocks = (input || "").split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
+  // A list written with a blank line between items arrives as several one-line blocks.
+  // Merge adjacent all-list-line blocks so it renders as ONE list, not N paragraphs.
+  const merged: string[] = [];
+  for (const b of blocks) {
+    const prev = merged[merged.length - 1];
+    if (prev && isListBlock(b) && isListBlock(prev)) merged[merged.length - 1] = `${prev}\n${b}`;
+    else merged.push(b);
+  }
+  return merged
+    .map((b) => (isPipeTable(b) ? pipeTable(b) : isList(b) ? list(b) : `<p>${linkify(b)}</p>`))
+    .join("");
+}

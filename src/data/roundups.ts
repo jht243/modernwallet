@@ -28,7 +28,8 @@ export interface RoundupEntry {
   options: RoundupOption[];
   comparisonTable: {
     headers: string[];
-    rows: Array<{ name: string; values: string[] }>;
+    /** `href` links the row's name to that vendor's own page (external) or an internal route. */
+    rows: Array<{ name: string; href?: string; values: string[] }>;
   };
   verdict: string;
   sections: Array<{ heading: string; content: string }>;
@@ -40,6 +41,273 @@ export interface RoundupEntry {
 }
 
 export const ROUNDUPS: RoundupEntry[] = [
+  // ── Coast FI pass 2026-09-09 ──
+  {
+    "updated": "2026-09-09",
+    "slug": "best-coast-fire-calculators",
+    "title": "Best Coast FIRE Calculators of 2026: Ranked and Reviewed",
+    "metaDescription": "Compare the best Coast FIRE calculators of 2026. Review tools by inflation inputs, investment fees, visual charts, and pricing to find your Coast FI number.",
+    "targetKeyword": "best coast fire calculator",
+    "category": "Coast FIRE calculators",
+    "angle": "Which Coast FIRE calculator to use, judged on the inputs it accepts, whether it shows its assumptions, and what it costs to get an answer.",
+    "h1": "Best Coast FIRE Calculators of 2026",
+    "introText": "The best Coast FIRE calculator for most savers is [coastfirecalc.com](https://coastfirecalc.com/) because it includes inputs for inflation, monthly contributions, and investment fees without requiring an account or email address.\n\nAt ModernWallet, we compared what each tool's own page says it does, on 2026-09-09. Coast Financial Independence, Retire Early (Coast FIRE) describes the point where your existing retirement savings will grow to cover your future retirement expenses through compound growth alone, without needing another dollar in contributions. Once you reach your Coast Financial Independence (Coast FI) milestone, your day-to-day employment only needs to cover your current living costs.\n\nTo understand the broader milestone framework, read our [Coast FIRE guide](/guides/coast-fire-guide/) and explore our benchmark grid in [Coast FIRE number by age](/guides/coast-fire-number-by-age/). If you want to see how this strategy compares to other financial independence movements, review [Coast FIRE vs FIRE](/compare/coast-fire-vs-fire/) and [Coast FIRE vs Barista FIRE](/compare/coast-fire-vs-barista-fire/). For standard retirement projections, use our free [FIRE calculator](/retirement/fire-calculator/) or our dedicated [Coast FIRE calculator](/coast-fire/).",
+    "rankingCriteria": "We judged every calculator on this page against four things.\n\n- Which inputs it takes. Inflation, monthly contributions, and investment fees each move the answer, and a calculator that omits one hides that movement from you.\n- Whether it shows its assumptions. A calculator that never says if its return is nominal or real leaves you unable to check its output.\n- What an answer costs, counting an email address as a cost.\n- Whether it plots the path or only names the milestone.\n\nA tool that lets you enter inflation and fees ranks above one assuming flat nominal returns. Every calculator here still runs on figures you supply, and none of them removes market volatility.",
+    "options": [
+      {
+        "name": "coastfirecalc.com",
+        "bestFor": "Savers who want to model investment fees alongside inflation without creating an account",
+        "description": "[coastfirecalc.com](https://coastfirecalc.com/) is a dedicated browser calculator designed to measure progress toward Coast Financial Independence, Retire Early (Coast FIRE). The interface accepts inputs for current age, retirement age, annual spending, current invested assets, monthly contributions, investment growth rate, inflation rate, safe withdrawal rate, and investment fees. It is the only tool in this review that provides an explicit input field for investment management fees. The application generates an immediate red or green verdict indicating whether you have reached Coast FIRE, alongside projected retirement savings, expected annual retirement income, and a visual graph of your savings trajectory.",
+        "strengths": [
+          "Dedicated input for investment fees captures the dragging effect of portfolio expenses",
+          "Provides an immediate red or green indicator showing whether current assets meet your Coast FIRE goal",
+          "Visual chart plots your projected asset accumulation against your milestone path over time",
+          "Free browser application requires no account creation or email submission"
+        ],
+        "limitations": [
+          "Relies on a single static return rate that does not account for annual market volatility"
+        ],
+        "pricing": "Free. No pricing published."
+      },
+      {
+        "name": "WalletBurst",
+        "bestFor": "Visual planners who want a clean trajectory chart comparing asset growth to target milestones",
+        "description": "The [WalletBurst](https://walletburst.com/tools/coast-fire-calc/) Coast FIRE calculator generates a visual comparison between your projected portfolio growth and your target milestone. The model accepts your current age, planned retirement age, annual retirement spending, current invested assets, investment rate of return, inflation rate, and safe withdrawal rate. Default values include a 7% nominal investment return, a 3% inflation rate, and a 4% safe withdrawal rate. The output displays a dual-line graph where a green line traces your net worth over time with monthly contributions, and a blue line maps the minimum balance required at each age to reach your Coast FIRE target.",
+        "strengths": [
+          "Dual-line chart plots net worth growth alongside the exact target needed at every age",
+          "Includes dedicated inputs for both inflation rate and safe withdrawal rate",
+          "Browser application runs immediately without requiring an account or email address",
+          "Clear default parameters provide a transparent starting baseline for new savers"
+        ],
+        "limitations": [
+          "Lacks a dedicated input field for annual investment management fees",
+          "Does not state on the page whether user input data is stored or discarded"
+        ],
+        "pricing": "Free. WalletBurst separately sells a Wealth Planning Toolkit for Google Sheets for $20, but the web calculator has no fee and requires no signup."
+      },
+      {
+        "name": "firenum",
+        "bestFor": "International savers who want multi-currency projections using conservative real-return defaults",
+        "description": "The [firenum](https://firenum.com/coast-fire) Coast FIRE calculator determines your required savings balance by age across 9 global currencies: United States Dollar (USD), Euro (EUR), British Pound (GBP), Japanese Yen (JPY), Canadian Dollar (CAD), Australian Dollar (AUD), Swiss Franc (CHF), Indian Rupee (INR), and New Zealand Dollar (NZD). You can switch currencies directly from a selector in the navigation bar. Where WalletBurst defaults to a 7% nominal return, firenum defaults to a 5% real return after inflation, paired with a 4% safe withdrawal rate and a retirement age of 65. The site displays instant charts and published age benchmarks, noting that a 25-year-old needs $170,455 to cover $4,000 in monthly expenses, while a 50-year-old needs $577,221 for the same lifestyle.",
+        "strengths": [
+          "Supports 9 global currencies switchable directly from the top navigation bar",
+          "Uses a 5% real return default to account for inflation without extra math",
+          "Generates instant visual charts without requiring an account, email address, or signup",
+          "Publishes transparent reference tables showing exact target numbers across multiple ages"
+        ],
+        "limitations": [
+          "Lacks a dedicated input field for investment management fees"
+        ],
+        "pricing": "Free. The site states that every calculator, planner, and simulation is fully usable with nothing locked behind a paid tier."
+      },
+      {
+        "name": "ModernWallet",
+        "bestFor": "Savers who want to calculate their timeline to Coast FIRE with ongoing monthly contributions",
+        "description": "The ModernWallet [Coast FIRE calculator](/coast-fire/) calculates your current savings gap and projects the timeline needed to reach your goal. The input form requests your current age, target retirement age, current retirement savings, ongoing monthly contribution amount, expected annual return percentage, desired annual retirement spending, and safe withdrawal rate percentage. When your portfolio meets the threshold, the ModernWallet calculator confirms you have reached Coast FIRE, displaying your projected balance at retirement and surplus. If a gap remains, it calculates your current coast target, your full FIRE number, your dollar deficit, and the exact age and timeframe required to bridge the difference at your current savings pace.",
+        "strengths": [
+          "Calculates the exact age and timeline to reach Coast FIRE based on monthly contributions",
+          "Displays total surplus or immediate capital gap alongside your primary FIRE milestone",
+          "Free tool runs directly in your web browser with zero signup or email gate"
+        ],
+        "limitations": [
+          "Lacks a dedicated input field for inflation rates",
+          "Lacks an input field for investment management fees",
+          "Does not generate a visual graphical chart"
+        ],
+        "pricing": "Free. No pricing published."
+      },
+      {
+        "name": "The Fioneers",
+        "bestFor": "Readers seeking a downloadable planning file who do not mind sharing their contact details",
+        "description": "The [The Fioneers](https://thefioneers.com/coast-fi-calculator/) Coast FI Calculator is distributed as a downloadable planning asset rather than an interactive browser tool. The live webpage contains promotional descriptions and an email opt-in form, stating that more than 4,000 people have downloaded the calculator. To access the file, you must submit your email address, after which the Coast FI Calculator file is delivered to your inbox. Because the calculation engine does not run on the webpage itself, visitors cannot generate instant figures or test different market assumptions without completing the download workflow.",
+        "strengths": [
+          "The Fioneers' own page says more than 4,000 people have downloaded the calculator",
+          "You keep the file once it arrives, so you can reuse it without returning to the site"
+        ],
+        "limitations": [
+          "Requires an email address submission before you can access or view the calculator",
+          "No interactive calculator runs directly on the live webpage",
+          "Lacks real-time in-browser scenario testing or instant chart generation"
+        ],
+        "pricing": "Free with email signup. No paid tier published."
+      },
+      {
+        "name": "ProjectionLab",
+        "bestFor": "Long-term planners who need multi-decade cash-flow modeling and backtesting",
+        "description": "[ProjectionLab](https://projectionlab.com/pricing) operates as a full-scale personal financial planning application rather than a dedicated Coast FIRE calculator. It runs Monte Carlo simulations, historical backtesting, forecasting, and flexible scenario modeling. Its published pricing structure includes a free Basic tier alongside paid Premium and Pro tiers. The software can simulate retirement trajectories, but its pricing page never mentions Coast FIRE, so it will not hand you a single coast number.",
+        "strengths": [
+          "Includes Monte Carlo simulations and historical backtesting on the free Basic tier",
+          "Enables flexible financial modeling and multi-year forecasting across complex life stages",
+          "Free Basic tier allows long-term planning without an immediate financial commitment"
+        ],
+        "limitations": [
+          "Pricing page makes no mention of Coast FIRE and the software is not a dedicated coast tool",
+          "Advanced features like cash-flow projections, tax optimization, and withdrawal strategies require paid tiers",
+          "Annual plans cost $129 for Premium or $549 for Pro, creating high costs for single-calculation needs"
+        ],
+        "pricing": "Basic is $0 per year, Premium is $129 per year, and Pro is $549 per year."
+      }
+    ],
+    "comparisonTable": {
+      "headers": [
+        "Inflation input",
+        "Fees input",
+        "Chart",
+        "Cost",
+        "Signup"
+      ],
+      "rows": [
+        {
+          "name": "coastfirecalc.com",
+          "values": [
+            "Yes",
+            "Yes",
+            "Yes",
+            "Free",
+            "No"
+          ],
+          "href": "https://coastfirecalc.com/"
+        },
+        {
+          "name": "WalletBurst",
+          "values": [
+            "Yes",
+            "No",
+            "Yes",
+            "Free",
+            "No"
+          ],
+          "href": "https://walletburst.com/tools/coast-fire-calc/"
+        },
+        {
+          "name": "firenum",
+          "values": [
+            "No (uses 5% real return default)",
+            "No",
+            "Yes",
+            "Free",
+            "No"
+          ],
+          "href": "https://firenum.com/coast-fire"
+        },
+        {
+          "name": "ModernWallet",
+          "values": [
+            "No",
+            "No",
+            "No",
+            "Free",
+            "No"
+          ],
+          "href": "/coast-fire/"
+        },
+        {
+          "name": "The Fioneers",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Free",
+            "Yes (email required)"
+          ],
+          "href": "https://thefioneers.com/coast-fi-calculator/"
+        },
+        {
+          "name": "ProjectionLab",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "$0 to $549 per year",
+            "Not published"
+          ],
+          "href": "https://projectionlab.com/pricing"
+        }
+      ]
+    },
+    "verdict": "If your goal is calculating an accurate Coast FIRE target without friction, coastfirecalc.com is our top recommendation because it accounts for inflation, ongoing savings, and investment management fees in a browser tool. However, if you need comprehensive multi-decade financial modeling with cash-flow projections, tax optimization, and historical backtesting, coastfirecalc.com is not the right tool. In that situation, you should use a broader planning platform like ProjectionLab instead.\n\nOur verdict would change in favor of WalletBurst if it added an investment fee input, and in favor of firenum if it added one too, since its 5% real default already handles inflation. We would also rank ModernWallet higher if we added inflation adjustments and interactive charting to our tool.\n\nYou should also avoid paid subscriptions or gated downloads if your sole goal is calculating a baseline Coast FIRE milestone. To find your number today, open [coastfirecalc.com](https://coastfirecalc.com/), enter your invested balance and your expected annual spending, and read the verdict it returns.",
+    "sections": [
+      {
+        "heading": "What Separates Coast FIRE Calculators: Inflation, Fees, and Real Returns",
+        "content": "The primary difference between Coast FIRE calculators is how each tool treats inflation, investment fees, and compound investment growth.\n\nMost standard calculators default to a nominal investment return of 7% and an inflation rate of 3%. When a calculator does not include an inflation input, users often enter a 7% nominal return without adjusting for purchasing power. Over a thirty-year compounding horizon, a 7% nominal return without inflation adjustments overstates future wealth. In contrast, the [firenum](https://firenum.com/coast-fire) calculator uses a 5% real return default. A real return deducts inflation before compounding, ensuring that projected future dollars reflect today's purchasing power.\n\nInvestment fees represent another quiet drag on compound growth. A 0.5% annual advisory or fund fee reduces a 7% nominal return to 6.5%. On a $197,051 balance left for 30 years, 7% grows it to about $1,500,000 and 6.5% to about $1,305,000, a difference of about $197,000. [coastfirecalc.com](https://coastfirecalc.com/) is the only tool in this roundup with an explicit input field for investment management fees. Model the fee and your target stops being too low."
+      },
+      {
+        "heading": "Does Fidelity Have a Dedicated Coast FIRE Calculator?",
+        "content": "Fidelity does not currently offer a dedicated Coast FIRE calculator among its official web tools.\n\nMany retail investors search specifically for a Fidelity Coast FIRE calculator because Fidelity is one of the largest brokerage firms in the United States. Fidelity publishes a wide selection of retirement planning tools and has published educational articles discussing the Financial Independence, Retire Early (FIRE) movement. When we looked on 2026-09-09, we did not find a dedicated Coast FIRE calculator among Fidelity's published tools.\n\nInvestors who want to review Fidelity's official planning tools can verify current offerings directly on the [Fidelity calculators and tools overview](https://www.fidelity.com/calculators-tools/overview) page. Standard retirement calculators on brokerage sites typically focus on traditional retirement ages and continuous monthly contributions. If you want to calculate your exact Coast FIRE milestone, use a specialized tool like [coastfirecalc.com](https://coastfirecalc.com/) or [WalletBurst](https://walletburst.com/tools/coast-fire-calc/)."
+      },
+      {
+        "heading": "When a Simple Calculator Is the Wrong Tool and You Need Full Financial Planning",
+        "content": "A simple Coast FIRE calculator is the wrong tool when your household finances involve irregular income, shifting tax brackets, or complex withdrawal strategies.\n\nDedicated Coast FIRE tools excel at answering one specific question: what lump sum do you need today to reach retirement without additional contributions? However, these calculators assume static conditions, including constant annual spending and fixed investment returns. They do not account for variable tax rates across taxable brokerage accounts, traditional Individual Retirement Accounts (IRAs), and Roth IRAs.\n\nFor households requiring comprehensive lifecycle modeling, [ProjectionLab](https://projectionlab.com/pricing) provides an alternative framework. ProjectionLab is a dedicated financial planning application that models Monte Carlo simulations, historical market backtesting, and modular cash-flow scenarios. ProjectionLab offers a free Basic tier, while its Premium plan costs $129 per year and its Pro plan costs $549 per year. The free Basic plan includes financial planning and backtesting, though advanced features like tax optimization and detailed cash-flow projections require a paid plan. Its pricing page makes no mention of Coast FIRE. ProjectionLab models a whole financial life rather than one milestone figure."
+      },
+      {
+        "heading": "The Shared Mathematical Limitation of Every Coast FIRE Calculator",
+        "content": "Every Coast FIRE calculator reviewed here shares the mathematical limitation of assuming a single fixed investment return year after year.\n\nIn financial reality, stock markets do not generate steady 5% or 7% returns on an annual schedule. Instead, equities experience volatile sequences of strong gains, sharp drawdowns, and multi-year flat periods. Assuming a constant compounding rate ignores sequence of returns risk, which occurs when negative market returns strike early in your compounding timeline.\n\nIf your portfolio experiences a major downturn during the first five years of coasting, your compound growth trajectory will fall behind schedule. For this reason, a calculator that incorporates inflation or defaults to conservative real returns provides a safer estimate. When using any Coast FIRE calculator, run multiple scenarios with conservative return rates to build a margin of safety into your financial timeline. The same fixed-return assumption is what sets the targets in our [table of coast numbers at every age from 25 to 55](/guides/coast-fire-number-by-age/), and [running one saver against both the coast target and the full retirement target](/compare/coast-fire-vs-fire/) shows how far apart those two numbers sit when the return you assume moves by a point."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the best Coast FIRE calculator?",
+        "answer": "The best Coast FIRE calculator is [coastfirecalc.com](https://coastfirecalc.com/) because it includes inputs for inflation, monthly savings, and investment fees without requiring account registration. For visual trajectory charts, [WalletBurst](https://walletburst.com/tools/coast-fire-calc/) is a good second choice that displays your projected portfolio growth alongside your milestone curve. International investors benefit most from [firenum](https://firenum.com/coast-fire), which supports 9 global currencies and defaults to a conservative 5% real return."
+      },
+      {
+        "question": "Is there a free Coast FIRE calculator?",
+        "answer": "Yes. Several run right in your browser with no account and no email. Both [coastfirecalc.com](https://coastfirecalc.com/) and [WalletBurst](https://walletburst.com/tools/coast-fire-calc/) offer completely free web tools. The [firenum](https://firenum.com/coast-fire) platform also provides a free calculator with zero paywalls, while the ModernWallet [Coast FIRE calculator](/coast-fire/) is completely free to use without registration."
+      },
+      {
+        "question": "Does Fidelity have a Coast FIRE calculator?",
+        "answer": "Not among the calculators Fidelity lists publicly. Fidelity publishes a wide range of retirement tools and has written about the Financial Independence, Retire Early (FIRE) movement, but we did not find a dedicated Coast FIRE calculator on 2026-09-09. Savers can check current tools on the [Fidelity calculators overview](https://www.fidelity.com/calculators-tools/overview) page or use dedicated third-party tools like [coastfirecalc.com](https://coastfirecalc.com/)."
+      },
+      {
+        "question": "What is the best Coast FIRE calculator on Reddit?",
+        "answer": "We did not survey Reddit threads, so we cannot tell you what that community currently favors. On the criteria this page ranks by, two tools stand out. [coastfirecalc.com](https://coastfirecalc.com/) is the only one here with an investment-fees input. [WalletBurst](https://walletburst.com/tools/coast-fire-calc/) charts your net worth against the target you need at each age. Both run in the browser with no account."
+      },
+      {
+        "question": "Do I need to enter inflation in a Coast FIRE calculator?",
+        "answer": "Yes, entering inflation or using an inflation-adjusted real return changes the number materially. If you use a nominal investment return of 7% to 10% without subtracting inflation, your projected retirement balance will appear large but will buy substantially less in the future. Tools like [WalletBurst](https://walletburst.com/tools/coast-fire-calc/) and [coastfirecalc.com](https://coastfirecalc.com/) include explicit inflation inputs, while [firenum](https://firenum.com/coast-fire) defaults to a 5% real return to handle inflation automatically."
+      }
+    ],
+    "sources": [
+      {
+        "label": "WalletBurst Coast FIRE Calculator",
+        "url": "https://walletburst.com/tools/coast-fire-calc/"
+      },
+      {
+        "label": "coastfirecalc.com",
+        "url": "https://coastfirecalc.com/"
+      },
+      {
+        "label": "firenum Coast FIRE Calculator",
+        "url": "https://firenum.com/coast-fire"
+      },
+      {
+        "label": "The Fioneers Coast FI Calculator",
+        "url": "https://thefioneers.com/coast-fi-calculator/"
+      },
+      {
+        "label": "ProjectionLab Pricing",
+        "url": "https://projectionlab.com/pricing"
+      },
+      {
+        "label": "Fidelity Calculators & Tools Overview",
+        "url": "https://www.fidelity.com/calculators-tools/overview"
+      }
+    ],
+    "relatedComparisons": [
+      "coast-fire-vs-fire",
+      "coast-fire-vs-barista-fire"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Coast FIRE Calculator",
+        "href": "/coast-fire/"
+      },
+      {
+        "label": "FIRE Calculator",
+        "href": "/retirement/fire-calculator/"
+      }
+    ]
+  },
+
   // ── AI investing pass 2026-09-09 ──
   {
     "updated": "2026-09-09",
@@ -4440,7 +4708,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── 17. Best Retirement Calculators ──────────────────────────────────────
   {
     slug: "best-retirement-calculators",
-    updated: "2026-09-07",
+    updated: "2026-09-09",
     title: "Best Retirement Calculators of 2026: Compared by Method",
     metaDescription:
       "The best retirement calculators of 2026, compared by methodology — Monte Carlo vs simple projection, Social Security, taxes, and cost.",
@@ -4631,7 +4899,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       ],
     },
     verdict:
-      "If you want a two-minute sanity check with no signup, Bankrate, NerdWallet, SmartAsset, and our own [retirement calculator](/retirement/) all give you a fast fixed-rate projection — pick the one whose default assumptions (return, inflation, life expectancy) you're comfortable with, and use SmartAsset if you specifically want a built-in Social Security estimate without a separate lookup.\n\nIf you want to know your probability of not running out of money, not just a single projected number, you need a tool that actually runs Monte Carlo simulation: Fidelity, Charles Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower (free, with linked accounts), or Boldin's paid PlannerPlus tier. Empower is the easiest free way to get there if you're comfortable linking accounts; Boldin is the deepest DIY option if you're willing to pay for it and enter your numbers by hand.\n\nNo calculator on this list — free or paid — fully models taxes, so treat every output here as a pre-tax planning estimate and pair it with a tax professional's advice once your plan gets specific enough to matter.",
+      "If you want a two-minute sanity check with no signup, Bankrate, NerdWallet, SmartAsset, and our own [retirement calculator](/retirement/) all give you a fast fixed-rate projection — pick the one whose default assumptions (return, inflation, life expectancy) you're comfortable with, and use SmartAsset if you specifically want a built-in Social Security estimate without a separate lookup.\n\nIf you want to know your probability of not running out of money, not just a single projected number, you need a tool that actually runs Monte Carlo simulation: Fidelity, Charles Schwab's Retirement Income Calculator, Vanguard's Nest Egg Calculator, Empower (free, with linked accounts), or Boldin's paid PlannerPlus tier. Empower is the easiest free way to get there if you're comfortable linking accounts; Boldin is the deepest DIY option if you're willing to pay for it and enter your numbers by hand.\n\nNo calculator on this list — free or paid — fully models taxes, so treat every output here as a pre-tax planning estimate and pair it with a tax professional's advice once your plan gets specific enough to matter. Coast FIRE is a different question from a full retirement projection, since it asks what you need invested today rather than what you need at 65, so we scored the coast-specific tools separately in [our review of the calculators built only for the coast number](/roundup/best-coast-fire-calculators/).",
     sections: [
       {
         heading: "Monte Carlo simulation vs. fixed-rate projection: what the difference actually means",

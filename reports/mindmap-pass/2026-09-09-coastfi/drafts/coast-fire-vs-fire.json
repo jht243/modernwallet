@@ -1,0 +1,136 @@
+{
+  "updated": "2026-09-09",
+  "slug": "coast-fire-vs-fire",
+  "title": "Coast FIRE vs FIRE: How the Two Paths Differ",
+  "metaDescription": "Compare Coast FIRE vs full Financial Independence, Retire Early (FIRE) to see the math at age 35, portfolio targets, risk profiles, and work requirements.",
+  "targetKeyword": "coast fire vs fire",
+  "optionA": "Coast FIRE",
+  "optionB": "Full FIRE",
+  "h1": "Coast FIRE vs FIRE: How the Two Paths Differ",
+  "introText": "Full Financial Independence, Retire Early (FIRE) means you already have enough invested to live on withdrawals right now. Coast FIRE means what you have will compound into that number by your retirement age, even if you never save another dollar.\n\nAt ModernWallet, we run both numbers the same way: the full target first, then what today's balance has to be for compounding to reach it. Coast FIRE is a stage on the way to full FIRE, and the same arithmetic produces both numbers.\n\nFull FIRE allows you to leave paid employment entirely, whereas Coast FIRE requires you to keep earning enough income to pay your current living expenses while your invested balance grows untouched. Understanding how the required portfolio math shifts between these two milestones helps you choose an achievable target for your financial plan.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "What the milestone means",
+        "a": "Current savings compound to your retirement target with no further contributions",
+        "b": "Invested assets cover full living expenses through portfolio withdrawals today"
+      },
+      {
+        "dimension": "Portfolio needed at age 35 for a $60,000 retirement",
+        "a": "$197,051 assuming a 7% return until age 65",
+        "b": "$1,500,000 using a 4% safe withdrawal rate"
+      },
+      {
+        "dimension": "Employment requirement",
+        "a": "Continue earning enough income to cover current living expenses",
+        "b": "Work becomes entirely optional because withdrawals cover living costs"
+      },
+      {
+        "dimension": "Portfolio withdrawals",
+        "a": "Zero withdrawals until you reach your target retirement age",
+        "b": "Immediate ongoing withdrawals to fund annual spending"
+      },
+      {
+        "dimension": "Health insurance coverage",
+        "a": "Maintained through active employer benefits or part-time work",
+        "b": "Self-funded through individual marketplace plans before Medicare eligibility at age 65"
+      },
+      {
+        "dimension": "Primary financial risk",
+        "a": "Assumption drift over decades of inflation and fluctuating market returns",
+        "b": "Sequence-of-returns risk depleting capital during early market downturns"
+      },
+      {
+        "dimension": "Outcome certainty",
+        "a": "Projected based on long-term compound growth assumptions",
+        "b": "Verified because the full capital base is already accumulated"
+      },
+      {
+        "dimension": "Best for",
+        "a": "Savers seeking immediate career flexibility without waiting decades to stop saving",
+        "b": "Investors wanting complete freedom from paid work right now"
+      }
+    ]
+  },
+  "verdict": "Choose Coast FIRE if you have built a substantial early investment balance, want to reduce career stress or downshift to lower-paying work, and feel comfortable earning enough to cover your current living costs without saving another dollar for the future. Choose Full FIRE if your ultimate goal is to permanently step away from paid employment, you have accumulated at least 25 times your annual spending, and you want complete control over your daily schedule. Coast FIRE is the wrong choice for someone who wants to stop working immediately or lacks the discipline to leave their portfolio completely untouched for decades. Full FIRE is the wrong choice for an exhausted worker who needs relief now and already has a balance compounding toward the target. Our verdict would change if healthcare access were decoupled from employment or if long-term market returns fell so low that compounding failed to bridge the gap to traditional retirement.",
+  "sections": [
+    {
+      "heading": "The Portfolio Math Behind Coast FIRE vs FIRE",
+      "content": "The difference between Coast FIRE and Full FIRE is which source closes the gap to your retirement number: compound growth, or contributions you still have to make.\n\nTo understand the gap, consider a 35-year-old saver who plans to spend $60,000 annually in retirement starting at age 65. Assuming a 4% safe withdrawal rate, their full FIRE number is $1,500,000, calculated by dividing $60,000 by 0.04. Reaching full FIRE at age 35 means that saver must already possess that entire $1,500,000 balance in their investment accounts.\n\nCoast FIRE requires a much smaller sum today because the money has 30 years to grow. Assuming a 7% expected annual return, you calculate the coast target by dividing the full $1,500,000 goal by 1.07 raised to the 30th power. That compounding factor equals roughly 7.6123, which produces a Coast FIRE target of $197,051. At age 35, the Coast FIRE number is approximately 13% of the full FIRE number, or roughly one seventh of the total. A saver with $197,051 invested can stop contributing to retirement entirely and let compound growth bridge the gap to $1,500,000 by age 65. You can test your personal numbers on our [Coast FIRE calculator](/coast-fire/).\n\nThe size of this gap depends on your age. When you are younger, compound growth has more decades to work, which keeps the coast requirement low. As you age, fewer compounding years remain, forcing the coast target closer to the full number:\n\n1. At age 25, a saver targeting the same $60,000 retirement at 65 needs a Coast FIRE number of $100,171 against the $1,500,000 full target.\n2. At age 35, that required coast figure rises to $197,051.\n3. At age 45, the coast target grows to $387,629.\n4. At age 55, the required balance reaches $762,524, which is roughly half of the full FIRE number.\n\nTo see how these targets shift across different ages and return assumptions, explore our [Coast FIRE number by age](/guides/coast-fire-number-by-age/) breakdown."
+    },
+    {
+      "heading": "Coast FIRE vs Lean FIRE and Spending Multiples",
+      "content": "Comparing Coast FIRE directly to Lean FIRE represents a category error because Lean FIRE is an ultimate spending target, whereas Coast FIRE is a progress checkpoint on the way to any retirement goal.\n\nLean FIRE sets how much you will spend. Coast FIRE measures how far along you are toward whatever spending target you picked. In the financial independence community, variations like Lean FIRE, Standard FIRE, and Fat FIRE describe how much money you plan to spend once you leave the workforce. Each variation uses a specific multiple of annual spending to establish your ultimate portfolio target:\n\n1. Lean FIRE is commonly modeled at 20 times annual expenses, which corresponds to roughly a 5% withdrawal rate for frugal lifestyles.\n2. Standard FIRE uses 25 times annual expenses, reflecting the traditional 4% safe withdrawal rate.\n3. Fat FIRE requires 33 times annual expenses or more to support higher discretionary spending in retirement.\n\nThese spending multiples dictate your final portfolio target, which directly shifts your coast requirement. For example, if you lower your target from a Standard FIRE goal to a Lean FIRE goal of 20 times expenses, your required full FIRE number drops, which simultaneously reduces your Coast FIRE requirement today. Conversely, choosing a Fat FIRE target of 33 times expenses raises both figures. You can compare these different spending multiples using our [FIRE calculator](/retirement/fire-calculator/)."
+    },
+    {
+      "heading": "Risk Factors in Coast FIRE vs FIRE",
+      "content": "The primary risks of Coast FIRE and Full FIRE stem from when and how market volatility interacts with your portfolio balance.\n\nA retiree who achieves Full FIRE faces immediate sequence-of-returns risk. If the stock market drops sharply during the first few years of early retirement, selling shares to pay living expenses permanently depletes the portfolio base. That capital cannot recover when the market eventually rebounds.\n\nA Coast FIRE saver avoids this specific problem because they do not take withdrawals during market downturns. However, Coast FIRE introduces its own sequence-of-returns limitation. Because a coaster has stopped contributing new money to retirement accounts, they miss the opportunity to buy depressed assets at lower valuations during a crash.\n\nCoast FIRE's own risk is assumption drift. When you declare Coast FIRE at age 30 or 35, you are making an aggressive bet that your projected annual return rate, future inflation, and personal spending targets will hold true across three or four decades. A full FIRE milestone carries far less forecasting risk because it is verified at the moment you quit working. Your money either covers your expenses today or it does not.\n\nBoth strategies rely on safe withdrawal rate assumptions, but those assumptions face limitations. The traditional 4% benchmark comes from 1998 research that tested portfolio survival across historical 30-year retirement windows, which our [FIRE calculator](/retirement/fire-calculator/) sets out. Retire in your thirties or forties and your retirement runs well past the 30-year window that research covered. Over a horizon that long, a withdrawal rate of 3% to 3.5% holds up better than 4%. Using a lower withdrawal rate increases your required portfolio multiple, which raises your full FIRE number and lifts your Coast FIRE target accordingly."
+    },
+    {
+      "heading": "Health Insurance and Employment Realities",
+      "content": "Health insurance is a major operational hurdle for Full FIRE retirees, whereas Coast FIRE savers typically resolve coverage through ongoing employment.\n\nBecause Coast FIRE requires you to earn enough money to pay for current living expenses, most coasters remain in traditional full-time or part-time employment. That ongoing work generally provides access to group health benefits, insulating the saver from the volatile pricing of private medical plans.\n\nFull FIRE retirees who step away from paid work decades before Medicare eligibility at age 65 must buy their own coverage through the [Health Insurance Marketplace](https://www.healthcare.gov/), and re-shop it every open enrollment. Premiums and out-of-pocket deductibles belong in the retirement spending target from the start.\n\nStopping paid work early also shrinks your eventual Social Security benefit, because the benefit is calculated from a long earnings history. The [Social Security Administration](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) sets out how your claiming age changes the monthly amount. A coaster who keeps working to cover daily living expenses keeps adding earnings years to their record.\n\nBarista FIRE sits between Coast FIRE and Full FIRE. You go part-time now, often for the health benefits, and start drawing on the portfolio straight away. That draw is why Barista FIRE needs a bigger balance than Coast FIRE, as our [Coast FIRE vs Barista FIRE](/compare/coast-fire-vs-barista-fire/) comparison sets out."
+    },
+    {
+      "heading": "Treating Coast FIRE as a Milestone Toward Full FIRE",
+      "content": "Rather than treating Coast FIRE and Full FIRE as competing paths, treat Coast FIRE as the checkpoint you pass on the way to full FIRE.\n\nReaching your Coast FIRE number provides an immediate psychological reset. Up to that point, a large portion of your monthly income was committed to aggressive retirement contributions. Once your existing portfolio is large enough to fund your future retirement through compound growth alone, you gain the freedom to redirect your cash flow.\n\nAt that milestone, you can choose between two clear paths. You can downshift your career, reduce your working hours, or switch into lower-stress employment that pays just enough to meet daily living costs. Alternatively, you can maintain your career momentum and continue investing your excess income. Continuing to contribute after reaching Coast FIRE simply accelerates your timeline, transforming your original traditional retirement date into an early full FIRE date.\n\nTo map out your personal timeline under both scenarios, use our [early retirement calculator](/retirement/early-retirement-calculator/) to project different savings rates. If you are exploring various modeling options, we ranked [the coast calculators that let you enter inflation and fees](/roundup/best-coast-fire-calculators/) against the ones that hide those assumptions. Our [Coast FIRE guide](/guides/coast-fire-guide/) works through the compounding step by step. Run both numbers on our [Coast FIRE calculator](/coast-fire/) and set the nearer one as your next milestone."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between FIRE and Coast FIRE?",
+      "answer": "The core difference between Full Financial Independence, Retire Early (FIRE) and Coast FIRE is whether you continue working for current living income. Full FIRE means you have accumulated enough money to stop working entirely and fund your life through portfolio withdrawals today. Coast FIRE means you have saved enough that your existing balance will grow to support traditional retirement on its own, allowing you to stop saving while continuing to earn enough to pay current living expenses."
+    },
+    {
+      "question": "Can you still retire early with Coast FIRE?",
+      "answer": "Yes, you can still retire early with Coast FIRE by choosing an earlier target age in your compound growth formula. For example, if you calculate your coast number based on retiring at age 55 instead of age 65, the required savings target today will be higher, but the accumulated balance will still compound to fund retirement at that earlier date without requiring additional contributions."
+    },
+    {
+      "question": "Why is it called coast FIRE?",
+      "answer": "It is called Coast FIRE because once your investment portfolio reaches the required threshold, you can coast the rest of the way to retirement. You no longer need to pedal by contributing fresh savings every month, because compound market returns handle the growth required to reach your ultimate financial goal."
+    },
+    {
+      "question": "What are the downsides of coast FIRE?",
+      "answer": "The main downside of Coast FIRE is assumption drift across long planning horizons. You are relying on decades of steady investment returns, stable inflation, and predictable spending, none of which can be guaranteed. Additionally, Coast FIRE still requires you to work to cover current living costs, and if you stop contributing, you miss the opportunity to buy stocks at lower prices during market downturns."
+    },
+    {
+      "question": "Is Coast FIRE the same as Coast FI?",
+      "answer": "Yes, Coast FIRE and Coast FI refer to the exact same milestone using two different spellings. Financial Independence (FI) emphasizes freedom from mandatory savings, while FIRE includes early retirement terminology, but both terms describe having sufficient invested assets to fund future retirement without making further contributions."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Social Security Administration - Early Retirement Planner",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+    },
+    {
+      "label": "Health Insurance Marketplace",
+      "url": "https://www.healthcare.gov/"
+    }
+  ],
+  "relatedComparisons": [
+    "coast-fire-vs-barista-fire"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Coast FIRE Calculator",
+      "href": "/coast-fire/"
+    },
+    {
+      "label": "FIRE Calculator",
+      "href": "/retirement/fire-calculator/"
+    },
+    {
+      "label": "Early Retirement Calculator",
+      "href": "/retirement/early-retirement-calculator/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

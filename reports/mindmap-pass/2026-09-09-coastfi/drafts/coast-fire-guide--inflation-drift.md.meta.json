@@ -1,0 +1,36 @@
+{
+ "slug": "coast-fire-guide--inflation-drift",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 227,
+ "floor": 0,
+ "input_tokens": 17488,
+ "output_tokens": 278,
+ "thinking_tokens": 24358,
+ "est_cost_usd": 0.1055,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 227,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17269
+  }
+ },
+ "seconds": 74.7,
+ "response_id": "ezGiarKDN6aAmtkPg-nvkAE",
+ "generated_at": "2026-09-09T23:27:49-0500"
+}
