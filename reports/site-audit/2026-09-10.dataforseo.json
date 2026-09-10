@@ -1,0 +1,104 @@
+{
+ "source": "dataforseo",
+ "base_url": "https://www.themodernwallet.com",
+ "pages_requested": 300,
+ "pages_audited": 300,
+ "pages_failed": [],
+ "issue_count": 16,
+ "by_kind": {
+  "low_text_html_ratio": 11,
+  "low_word_count": 3,
+  "meta_desc_too_long": 2
+ },
+ "issues": [
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/about/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/amortization-schedule/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/early-payoff-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/auto-loan/extra-payment-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/budget/50-30-20-budget-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/budget/zero-based-budget-calculator/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/compare/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/compare/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/contact/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/contact/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/editorial-policy/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/freelance-rate/",
+   "detail": "160 chars"
+  },
+  {
+   "kind": "low_text_html_ratio",
+   "url": "https://www.themodernwallet.com/guides/",
+   "detail": "dataforseo:low_content_rate"
+  },
+  {
+   "kind": "low_word_count",
+   "url": "https://www.themodernwallet.com/guides/",
+   "detail": "dataforseo:low_character_count"
+  },
+  {
+   "kind": "meta_desc_too_long",
+   "url": "https://www.themodernwallet.com/guides/is-savings-and-cd-interest-taxable/",
+   "detail": "171 chars"
+  }
+ ],
+ "unavailable_on_this_source": [
+  "canonical_to_redirect",
+  "canonical_to_4xx",
+  "redirect_loop",
+  "hreflang_mismatch",
+  "lang_missing",
+  "noindex_in_sitemap"
+ ],
+ "cost_usd": 0.045
+}

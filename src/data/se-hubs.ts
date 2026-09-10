@@ -171,7 +171,7 @@ export const FREELANCE_RATE_HUB: CalculatorDef = {
 
   metaTitle: "Freelance Rate Calculator: What to Charge",
   metaDescription:
-    "Free freelance rate calculator. Enter the take-home pay you want and see the hourly rate, day rate, and revenue you need after self-employment tax and overhead.",
+    "Free freelance rate calculator — enter your target take-home pay to find the hourly rate, day rate, and revenue needed after taxes and overhead.",
   targetKeyword: "freelance rate calculator",
   h1: "Freelance Rate Calculator: The Hourly Rate That Pays You",
   introText:

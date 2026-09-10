@@ -8666,7 +8666,7 @@ export const GUIDES: Guide[] = [
     slug: "is-savings-and-cd-interest-taxable",
     title: "Is Interest on Savings Accounts and CDs Taxable?",
     metaDescription:
-      "Yes, savings and CD interest is taxable as ordinary income the year it's paid. Here's how the 1099-INT works, what an early withdrawal changes, and what doesn't get taxed.",
+      "Yes, savings and CD interest is taxable as ordinary income the year it's paid. Here's how the 1099-INT works and what early withdrawal changes.",
     h1: "Is Interest on Savings Accounts and CDs Taxable?",
     cardBlurb: "How the IRS taxes savings and CD interest, what a 1099-INT reports, and the few accounts that dodge the bill.",
     introText:
