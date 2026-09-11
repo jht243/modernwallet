@@ -5160,6 +5160,176 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
   },
 
+  // ─── Power of Attorney vs Will ──────────────────────────────
+  {
+    slug: "power-of-attorney-vs-will",
+    updated: "2026-09-11",
+    title: "Power of Attorney vs. Will: You Likely Need Both",
+    metaDescription: "Power of attorney vs will explained. Learn the differences in timing, costs, and legal roles, and see why most estate plans require both documents.",
+    targetKeyword: "power of attorney vs will",
+    optionA: "Power of Attorney",
+    optionB: "Last Will and Testament",
+    h1: "Power of Attorney vs. Will: You Likely Need Both",
+    introText: "A power of attorney gives someone legal authority to handle your affairs while you are alive. In the guides we publish here at The Modern Wallet, what we see readers get wrong most often is assuming one document replaces the other. That assumption creates severe legal gaps.\n\nA last will and testament does not function while you live. Instead, a will takes effect only after death, directing how a probate court distributes your property and who raises minor children. A power of attorney expires at that exact moment.\n\nYou almost certainly need both.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Legal timing", a: "Active during life only", b: "Active after death only" },
+        { dimension: "Primary legal role", a: "Authorizes an agent to handle finances and medical decisions", b: "Distributes assets and nominates guardians for minor children" },
+        { dimension: "What happens upon death", a: "Authority ends automatically", b: "Enters probate court for legal validation" },
+        { dimension: "Court involvement", a: "None required to create or use", b: "Requires probate administration through court" },
+        { dimension: "Typical attorney-drafted cost", a: "$150 to $700", b: "$300 to $2,500" },
+        { dimension: "Typical online standalone cost", a: "Often bundled at no extra charge with online packages", b: "$0 to $299 depending on platform" },
+        { dimension: "Revocation process", a: "Written notice while having capacity", b: "New will or written codicil while having capacity" },
+        { dimension: "Protection against incapacity", a: "Avoids court-ordered guardianship", b: "Provides zero legal protection during life" },
+        { dimension: "Minor child guardianship", a: "No role or legal authority", b: "Directly nominates guardians" },
+      ],
+    },
+    verdict: "Most adults need both a durable power of attorney and a last will and testament. They govern two completely separate chapters of your life. Skip a power of attorney, and an unexpected accident could force your family into court for guardianship to manage your accounts.\n\nSkip a will, and state intestacy statutes decide who receives your property. A young adult with no dependents, minimal property, and named account beneficiaries might temporarily postpone drafting a will.\n\nEven then, that person still needs a power of attorney. Incapacity can happen at any age. Our recommendation would change if all your assets pass outside probate through beneficiary designations or joint tenancy, as detailed in our [living trust vs will](/compare/living-trust-vs-will/) guide.",
+    sections: [
+      {
+        heading: "The Core Difference: Authority During Life vs. Asset Distribution After Death",
+        content: "A power of attorney governs legal and financial authority while you are alive, whereas a last will and testament controls the distribution of your property after death. This timeline boundary is absolute. Under a power of attorney, you are the principal.\n\nYou appoint an agent, also called an attorney-in-fact, to handle business on your behalf. A durable power of attorney remains legally valid even if you lose mental capacity. That durability makes it foundational.\n\nPer guidance from the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/), your agent must always manage property in your best interest. Some powers of attorney take effect immediately upon signing. Others spring into effect only after a physician certifies your medical incapacity.\n\nYou control the scope of a power of attorney. You can keep the power narrow by limiting an agent to a single bank account or real estate sale. Alternatively, you can grant broad authority over all financial accounts and tax matters.\n\nCrucially, every power of attorney ends automatically at the moment of your death. The agent loses all legal authority instantly. At that second, your last will and testament steps forward.\n\nA will has no legal power during your lifetime. You can change or revoke it at any point while you maintain mental capacity. After death, the will directs asset distribution, designates an executor to settle debts, and nominates legal guardians for minor children.\n\nNeither document prevents your property from entering probate if accounts remain solely in your name. A will actually requires probate to take effect.",
+      },
+      {
+        heading: "What Happens If You Only Have One Document",
+        content: "Relying on only one estate planning document leaves you or your surviving family exposed to court intervention. That exposure takes two distinct forms. Consider the first scenario.\n\nYou execute a thorough will, but you fail to sign a durable power of attorney. If an illness leaves you incapacitated, your will sits useless in a drawer. It cannot authorize anyone to pay your mortgage or access your accounts.\n\nA spouse has no automatic right to manage accounts held solely in your name. Your family must then petition a probate court for legal guardianship. Guardianship proceedings are slow, stressful, and expensive.\n\nAs we explore in our [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship/) analysis, court hearings and legal filings easily cost thousands of dollars. The court appoints a guardian who might not be the person you would have picked. A durable power of attorney avoids that court intrusion entirely.\n\nNow look at the opposite problem. You establish a comprehensive durable power of attorney, but you never draft a will. Your agent can manage your bills smoothly while you recover from an injury.\n\nHowever, your agent's legal authority terminates instantly when you die. The agent cannot distribute your savings or transfer property. Because you left no will, your estate becomes intestate.\n\nState intestate succession statutes determine who inherits your property. The court follows a rigid statutory formula regardless of your personal wishes or family dynamics. Furthermore, a judge must appoint a guardian for your minor children without knowing your preference.",
+      },
+      {
+        heading: "Typical Costs and Bundling Options",
+        content: "Most consumers secure a will and a durable power of attorney together within a single legal bundle rather than paying for separate documents. Understanding the pricing structure helps prevent overpaying. A standalone attorney-drafted power of attorney typically runs between $150 and $700.\n\nDrafting a standalone will with an attorney usually costs more. A simple attorney-drafted will costs $300 to $800. A moderately complex will for married couples with children runs $750 to $2,500.\n\nHowever, law firms rarely sell these documents in isolation. Attorneys almost always package a will, a durable financial power of attorney, and a healthcare directive into a unified estate plan. That bundle provides complete lifetime and after-death legal protection.\n\nOnline platforms also use bundled packages. If you prefer digital tools, [FreeWill](https://www.freewill.com/) provides self-guided estate planning documents online for $0. Services like [Trust & Will](https://www.trustandwill.com/) charge $199 for an individual will package and $299 for couples.\n\nAt [LegalZoom](https://www.legalzoom.com/), basic will packages start at $129 for individuals and $229 for couples. Both platforms bundle a durable power of attorney into their core will tier at no extra charge. You do not need to purchase two separate products.\n\nUse our [will cost calculator](/estate-planning/will-cost-calculator/) to estimate package costs for your specific situation. For an evaluation of digital tools versus legal counsel, read our [online will vs lawyer](/compare/online-will-vs-lawyer/) breakdown. That comparison details when an attorney is worth the extra expense.",
+      },
+      {
+        heading: "State Execution Requirements and Legal Formalities",
+        content: "State laws impose much stricter execution formalities on a last will and testament than on a durable power of attorney. These legal formalities ensure validity in probate. Every state requires a will maker to possess legal capacity and sign before two witnesses.\n\nThe two witnesses must be physically present at the signing. In 48 states and the District of Columbia, signers attach a notarized self-proving affidavit to speed court probate. That affidavit allows the court to accept the will without tracking down the witnesses years later.\n\nLouisiana maintains unique statutory rules for wills. Under Louisiana Civil Code article 1577, residents must execute a notarial testament, a separate requirement on top of the standard two-witness process. Review the formalities tracked by the [Cornell Law School Legal Information Institute](https://www.law.cornell.edu/wex/holographic_will) for additional state standards.\n\nA power of attorney involves simpler execution. Most jurisdictions require only the principal's signature before a licensed notary public. You do not face the same strict multi-witness requirements imposed on testaments.\n\nRevoking either instrument requires mental capacity. You can revoke a power of attorney at any time by delivering written notice to your agent and financial institutions. Revoking a will requires executing a formal codicil or writing a new will that supersedes the prior document.\n\nNeither revocation requires a court appearance. As long as you maintain legal capacity, you retain complete authority to alter or cancel either document.",
+      },
+      {
+        heading: "Probate Realities and Asset Transfer Rules",
+        content: "A last will and testament does not avoid probate court, while a power of attorney operates entirely outside judicial oversight. Many people misunderstand this distinction. A power of attorney functions without court filings.\n\nYour agent simply presents the notarized document directly to banks or medical providers. A will works differently. A will serves as an instruction manual for the probate judge.\n\nThis court proceeding validates the document, settles debts with creditors, and oversees distributions. In most jurisdictions, probate takes 6 to 18 months. Total costs consume roughly 2% to 7% of estate value in administrative fees.\n\nYou can find comprehensive guidance on probate administration in our [probate hub](/probate/). Understanding these timelines helps families prepare for the settlement process.\n\nNeither document overrides non-probate asset transfers. Assets with beneficiary designations, such as a 401(k), Individual Retirement Account (IRA), or life insurance policy, bypass probate automatically. Property owned in joint tenancy with right of survivorship also transfers immediately to the surviving co-owner.\n\nA will has no say over those designated assets. If your will names your sibling but your retirement account names your ex-spouse, the institution pays the ex-spouse. Learn how trusts compare to wills in our [living trust vs will](/compare/living-trust-vs-will/) overview.",
+      },
+      {
+        heading: "Next Steps for Building Your Estate Plan",
+        content: "Building a complete estate plan means coordinating your lifetime protections with your posthumous distribution wishes. Start by taking inventory of your personal assets. List all real estate, bank accounts, and retirement funds.\n\nNext, choose your fiduciaries carefully. Your power of attorney agent needs financial diligence and proximity to handle immediate emergencies. Your will's executor requires organizational skills to manage probate court deadlines. They can be the same person, or you can appoint different individuals.\n\nVerify all beneficiary designations on your insurance and investment accounts. Those designations override any conflicting language in your will. Update them whenever major life events occur.\n\nIf you have minor children, name both a primary and an alternate guardian in your will. Failing to nominate a guardian leaves that sensitive decision entirely to a local judge.\n\nConsult our [estate planning hub](/estate-planning/) for guides on structuring your family documents. Understanding the balance of a power of attorney vs will allows you to protect your wealth today and your loved ones tomorrow.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need both a will and a power of attorney?",
+        answer: "Yes, virtually every adult needs both documents because they handle entirely different legal needs. A power of attorney (POA) provides an agent with legal authority to manage your medical decisions or finances while you are alive and incapacitated. A last will and testament only takes effect after your death to distribute your estate and nominate guardians for minor children. Relying on only a will leaves you unprotected during a medical emergency, while holding only a power of attorney leaves your estate subject to state intestacy laws after you pass away.",
+      },
+      {
+        question: "Does power of attorney end when I die?",
+        answer: "Yes, a power of attorney ends automatically at the exact moment of the principal's death. Once you pass away, the agent has no ongoing legal authority to access bank accounts, pay outstanding expenses, or transfer property. At that point, the executor named in your last will and testament takes over the legal responsibility of managing and distributing your estate through the probate process.",
+      },
+      {
+        question: "Can a will give someone power of attorney?",
+        answer: "No, a will cannot grant power of attorney authority to anyone. A last will and testament has zero legal power during your lifetime, meaning it cannot authorize an individual to handle financial or medical choices while you are alive. Instead, a will names an executor who only gains administrative power after your death once a probate court formally admits the will. If you want someone to manage your personal affairs during your life, you must sign a separate durable power of attorney.",
+      },
+      {
+        question: "How much does it cost to get a will and power of attorney together?",
+        answer: "Obtaining both documents together usually costs between $0 and $2,500 depending on the method you choose. Online estate planning platforms like FreeWill offer both documents for $0, while platforms such as Trust & Will and LegalZoom offer bundled packages ranging from $129 to $299. If you work with an estate planning attorney, a complete package bundling a will, a durable financial power of attorney, and a healthcare directive typically ranges from $750 to $2,500 for couples.",
+      },
+      {
+        question: "What happens if I have a will but become incapacitated and have no power of attorney?",
+        answer: "If you become incapacitated without a durable power of attorney, no family member has automatic legal authority to manage your finances or direct healthcare choices, even if you are married. Your family must file a petition with a local probate court to establish legal guardianship or conservatorship. This court process requires medical evaluations, formal hearings, and real legal fees, while your financial and medical affairs remain stalled until a judge issues an order appointing a guardian.",
+      },
+    ],
+    sources: [
+      { label: "CFPB, Managing Someone Else's Money", url: "https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/" },
+      { label: "Cornell Law School Legal Information Institute, Holographic and Attested Wills", url: "https://www.law.cornell.edu/wex/holographic_will" },
+    ],
+    relatedComparisons: ["power-of-attorney-vs-guardianship", "living-trust-vs-will", "online-will-vs-lawyer"],
+    calculatorLinks: [
+      { label: "Estate Planning Hub", href: "/estate-planning/" },
+      { label: "Will Cost Calculator", href: "/estate-planning/will-cost-calculator/" },
+    ],
+  },
+
+  // ─── Power of Attorney vs Trust ──────────────────────────────
+  {
+    slug: "power-of-attorney-vs-trust",
+    updated: "2026-09-11",
+    title: "Power of Attorney vs. Trust: A Trust Can't Replace It",
+    metaDescription: "Compare power of attorney vs trust: setup costs, probate rules, and funding gaps. See why a trust cannot replace a POA and how to pair both tools.",
+    targetKeyword: "power of attorney vs trust",
+    optionA: "Power of Attorney",
+    optionB: "Living Trust",
+    h1: "Power of Attorney vs. Trust: Most People Need Both",
+    introText: "A power of attorney gives someone legal authority to manage assets that remain titled in your own name. At The Modern Wallet, what we see readers get wrong most often is assuming one of these legal tools replaces the other. A revocable living trust, by contrast, holds legal title to assets that you formally transfer into the trust itself. Understanding power of attorney vs trust requires looking at how each tool treats asset ownership, incapacity, and death.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Primary purpose", a: "Managing property and accounts titled in your personal name", b: "Holding legal title to property and avoiding probate after death" },
+        { dimension: "Who holds legal title", a: "You retain title to your property", b: "The trustee holds title to trust assets" },
+        { dimension: "Typical attorney cost", a: "$150 to $700 attorney-drafted", b: "$1,500 to $5,000 attorney-drafted" },
+        { dimension: "Online preparation cost", a: "Often bundled free in online will packages", b: "$139 with Nolo, $499 to $599 with Trust & Will" },
+        { dimension: "Ongoing maintenance", a: "None required once signed", b: "Requires retitling new assets into the trust" },
+        { dimension: "Authority after death", a: "Ends automatically when the principal dies", b: "Continues seamlessly to distribute assets without probate" },
+        { dimension: "Probate avoidance", a: "None", b: "Bypasses probate court for funded assets" },
+        { dimension: "Healthcare decision-making", a: "Handled via separate healthcare power of attorney", b: "Not covered. Trusts manage only property and finances." },
+        { dimension: "Acceptance by financial institutions", a: "Banks sometimes request internal forms or legal certification", b: "Successor trustee typically accesses accounts already titled in the trust" },
+      ],
+    },
+    verdict: "Set up a durable power of attorney (POA) if your primary goal is affordable incapacity protection on accounts that stay in your own name. Establish a revocable living trust if you own real estate, hold assets across multiple states, or want your beneficiaries to skip probate court after you die. Most estate plans need both documents. A trust cannot manage unfunded property, while a POA ceases functioning the moment you die. This recommendation is not for someone with modest savings, simple finances, and no real estate. A durable POA alone covers that incapacity risk for far less expense. Broad probate reform would change our answer. If state probate courts offered free, instant asset transfers, the incentive to fund a trust would disappear. Until then, both tools serve distinct jobs.",
+    sections: [
+      {
+        heading: "What Each Document Controls in an Estate Plan",
+        content: "A power of attorney controls assets held in your individual name, while a revocable living trust controls only property retitled into the trust entity. When you sign a power of attorney (POA), you name an agent, also called an attorney-in-fact, to act on your behalf. Title does not change. You still own the accounts and real estate. Your agent simply gains legal permission to sign checks, pay bills, buy insurance, or manage investments for you. A durable POA remains active if you become incapacitated through illness or injury.\n\nA revocable living trust functions on ownership transfer. To bring property under trust control, you must formally execute deeds, change bank signature cards, and update ownership records into the trust name. During your lifetime, you typically serve as the initial trustee. You retain complete authority to buy, sell, spend, or amend trust property. If you lose mental capacity, your named successor trustee steps into the management role without court intervention.\n\nThis structural distinction defines how both tools operate day to day. A POA grants operational permission without shifting property title. In contrast, a living trust creates a distinct legal arrangement that holds ownership directly. Comparing a power of attorney vs living trust means recognizing that authority over an account is not the same as legal title. Both instruments allow someone you trust to manage your finances, but they accomplish that goal through completely different legal mechanisms.",
+      },
+      {
+        heading: "Why a Living Trust Does Not Replace a Power of Attorney",
+        content: "A living trust cannot replace a power of attorney because a trust only controls assets formally retitled into its name and cannot govern personal or medical decisions. People frequently ask: does a trust replace power of attorney documents completely? The answer is no. Most people acquire property over decades and forget to transfer every new asset to their trust. In addition, certain assets cannot easily be transferred to a trust during life, such as daily personal checking accounts, newly purchased vehicles, or government benefit checks. Unfunded assets remain exposed.\n\nIf you become incapacitated, your successor trustee cannot touch accounts left in your personal name. They have zero legal standing over an individually titled account, an uncashed check, or a safe deposit box leased in your personal name. Only an agent holding a durable POA can manage those outside items. Without a valid POA, your family might need a court-ordered conservatorship to reach those funds, as detailed in our guide on [Power of Attorney vs. Guardianship](/compare/power-of-attorney-vs-guardianship/). That court intervention brings unwanted expenses, public filings, and long delays.\n\nHealthcare decisions create another critical divide. Neither a financial POA nor a revocable living trust authorizes someone to make medical choices for you. Living trusts deal exclusively with property and finances. To name a trusted representative for medical emergencies, you need a separate healthcare directive or medical power of attorney. An effective incapacity plan pairs a trust for titled assets, a durable POA for outside finances, and a healthcare directive for medical care.",
+      },
+      {
+        heading: "Setup Costs and Funding Rules for a Power of Attorney vs Trust",
+        content: "A power of attorney costs significantly less to establish than a revocable living trust. An attorney-drafted POA typically runs $150 to $700, according to our guide on [Power of Attorney vs. Will](/compare/power-of-attorney-vs-will/). Many online legal platforms bundle durable financial and healthcare POAs free when you purchase an online will package. Because a POA is a private legal form requiring only notarization and signing, you avoid legal complexities during creation.\n\nLiving trusts require a larger financial investment. Attorney fees for a revocable living trust usually range from $1,500 to $5,000, rising to $5,000 to $10,000 or more in high-cost metro areas like California. Online platforms offer lower upfront prices. For example, [Trust & Will](https://www.trustandwill.com/) charges $499 to $599 for a trust package. A package through [Nolo](https://www.nolo.com/) Quicken WillMaker Plus costs $139 and includes a revocable living trust template. While online templates reduce upfront costs, establishing the trust document is only the first phase of the process.\n\nThe ongoing maintenance obligations also differ sharply. A POA requires no maintenance once signed. You sign the document, distribute copies to your agent, and store the original safely. A living trust requires retitling new accounts or deeds into the trust name whenever you acquire property. You must file new deeds with county recorders and update bank records throughout your life. Skip that retitling step, and the trust leaves the new property unprotected. To estimate document expenses for your household, explore our [Living Trust Cost Calculator](/estate-planning/living-trust-cost-calculator/).",
+      },
+      {
+        heading: "Bank Friction and Title Rules During Incapacity",
+        content: "Financial institutions scrutinize powers of attorney more strictly than accounts titled directly in a living trust. Banks occasionally delay transactions under a POA. Branch staff may demand internal bank forms or an attorney certification before letting an agent act. In some instances, financial institutions reject older POAs out of concern about potential fraud or revocation. Guidance from the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/) on managing someone else's money identifies this institutional resistance as a recurring obstacle for agents.\n\nTrust accounts follow a different path. Because the account is already titled to the trust, the institution treats the trust as the legal account owner. When a successor trustee steps in during incapacity, they present the trust agreement and proof of incapacity, such as physician letters required by the trust terms. That existing title structure often prevents friction at branch counters. The bank recognizes the trust relationship established years earlier rather than evaluating a third-party agent's authority over an individual account.\n\nTitle structure changes the administrative experience. A POA agent manages property that still belongs to someone else. A trustee manages property that belongs directly to the legal trust entity. Despite these practical differences, neither arrangement requires ongoing court supervision during your lifetime. Unlike a court-appointed guardianship, both a durable POA and a living trust operate privately without mandatory annual accounting filings or judge approvals.",
+      },
+      {
+        heading: "Probate and Continuity at Death for Power of Attorney vs Trust",
+        content: "A power of attorney terminates immediately upon death, whereas a revocable living trust continues seamlessly to transfer assets without probate court. This is the sharpest operational difference between the two instruments. The moment a principal dies, the agent's POA authority evaporates. An agent cannot write another check, access bank accounts, or distribute personal property using that document. Attempting to use a POA after the principal has died is invalid under state law.\n\nAssets left in the deceased individual's name must pass through probate, as explained in our guide comparing a [Living Trust vs Will](/compare/living-trust-vs-will/). Even if you had a valid POA in place for years, any property titled in your personal name at death freezes until a court validates your will or applies state intestacy laws. Probate takes time. It also generates court fees, legal costs, and public records. A revocable living trust avoids that entire proceeding for funded assets. The successor trustee distributes trust property directly to named beneficiaries without waiting for court approval.\n\nTaxes require realistic expectations. A revocable living trust does not reduce federal estate tax liabilities. Under rules from the [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax), assets in a revocable trust remain part of your gross taxable estate because you retained the right to revoke or amend the trust during your life. The trust secures probate avoidance, privacy, and administrative speed, not tax elimination.",
+      },
+      {
+        heading: "How to Pair Both Documents in Your Estate Plan",
+        content: "Pairing a durable power of attorney with a funded revocable living trust ensures complete coverage for both lifetime incapacity and asset distribution at death. Estate planners rarely treat these documents as competitors. They serve complementary roles. A funded trust manages your major real estate and investment accounts smoothly during incapacity and eliminates probate later. It acts as the central vehicle for wealth distribution.\n\nMeanwhile, a durable POA stands guard over everything else. It authorizes your agent to handle daily financial chores outside the trust boundary. Your agent can file annual tax returns, manage life insurance policies, cash government checks, or deal with utility providers. They can also transfer accidentally omitted assets into the trust using special trust-funding powers. You can even name the same trusted family member to serve as both successor trustee and financial agent.\n\nReview your assets to decide whether you need both tools. If you own real estate, calculate your setup expenses using our [Living Trust Cost Calculator](/estate-planning/living-trust-cost-calculator/). You can also compare traditional will strategies on our [Estate Planning Hub](/estate-planning/). To protect your family against sudden incapacity and probate delays, evaluate your power of attorney vs trust needs with an estate planning attorney today.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does a power of attorney avoid probate?",
+        answer: "No, a power of attorney does not avoid probate. A POA only gives your agent authority to act while you are alive. That authority ends automatically at death. Any assets remaining in your own name must go through probate court before passing to heirs.",
+      },
+      {
+        question: "Do I need a power of attorney if I have a living trust?",
+        answer: "Yes, you still need a durable power of attorney even if you maintain a living trust. A trust only controls assets retitled into its name. Your agent needs a POA to handle assets left outside the trust, such as retirement accounts or government checks. You also need a separate healthcare directive.",
+      },
+      {
+        question: "What happens to assets not in my trust if I become incapacitated?",
+        answer: "If you become incapacitated, assets outside your trust can only be managed if you have a durable power of attorney. Your successor trustee has no authority over accounts titled in your individual name. Without a valid POA, family members may be forced to petition a court for guardianship to access those funds. That court process is expensive.",
+      },
+      {
+        question: "Is a living trust more expensive than a power of attorney?",
+        answer: "Yes, a living trust is substantially more expensive to create than a power of attorney. A power of attorney usually costs $150 to $700 through an estate attorney. In contrast, hiring a lawyer to draft a revocable living trust typically costs $1,500 to $5,000. Costs can reach $10,000 in expensive metropolitan areas. Online services offer trust packages starting around $139 to $599, but that still exceeds a POA.",
+      },
+      {
+        question: "Can my trustee also be my power of attorney agent?",
+        answer: "Yes, you can name the same person as both your successor trustee and your power of attorney agent. Doing so is standard practice. Appointing one trusted person streamlines management across all accounts during incapacity. That individual acts as trustee for trust-titled assets, while using the POA to handle outside accounts. Make sure they are organized. They will manage distinct legal roles simultaneously.",
+      },
+    ],
+    sources: [
+      { label: "CFPB, Managing Someone Else's Money", url: "https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/" },
+      { label: "IRS, Estate Tax Guidance", url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax" },
+      { label: "Trust & Will", url: "https://www.trustandwill.com/" },
+      { label: "Nolo", url: "https://www.nolo.com/" },
+    ],
+    relatedComparisons: ["power-of-attorney-vs-guardianship", "living-trust-vs-will", "power-of-attorney-vs-will"],
+    calculatorLinks: [
+      { label: "Estate Planning Hub", href: "/estate-planning/" },
+      { label: "Living Trust Cost Calculator", href: "/estate-planning/living-trust-cost-calculator/" },
+    ],
+  },
+
   // ─── 15-Year vs 20-Year vs 30-Year Mortgage ──────────────────────────────
   {
     slug: "15-year-vs-20-year-vs-30-year-mortgage",
