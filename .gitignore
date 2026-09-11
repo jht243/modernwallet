@@ -22,3 +22,7 @@ __pycache__/
 
 # podcast-pain-pass: never commit copyrighted podcast transcripts
 reports/podcast-pain-pass/run-*/transcripts/
+
+# site-search: generated in prebuild from the page registries (scripts/build_search_index.mjs)
+public/search-index.json
+public/search-aliases.json

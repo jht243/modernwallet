@@ -4,6 +4,7 @@
 // menu: opens on hover (pointer) and on click/keyboard (all devices).
 import { SITE } from "../data/site";
 import { liveCalculators } from "../data/calculators";
+import NavSearch from "./NavSearch.astro";
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || (href !== "/" && path.startsWith(href));
 const navCalcs = liveCalculators();
@@ -43,6 +44,7 @@ const anyActive = isActive("/calculators/") || navCalcs.some((c) => isActive(`/$
           </div>
         </div>
       </div>
+      <NavSearch />
     </nav>
   </div>
 </header>
@@ -124,5 +126,10 @@ const anyActive = isActive("/calculators/") || navCalcs.some((c) => isActive(`/$
   }
   @media (max-width: 420px) {
     .nav-menu { min-width: min(320px, calc(100vw - 32px)); }
+    /* Make room for the search toggle beside the Calculators menu on narrow phones. */
+    .hdr-inner { padding: 10px 12px; gap: 8px; }
+    .primary-nav { gap: 6px; }
+    .brand-name { font-size: 1.05rem; }
+    .nav-trigger { padding: 8px 10px; }
   }
 </style>

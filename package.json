@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/build_search_index.mjs",
     "build": "astro build && node scripts/check-bundle-size.mjs",
     "preview": "astro preview",
     "astro": "astro"

@@ -1,0 +1,245 @@
+---
+/**
+ * NavSearch — Astro port of the Layer3Labs nav-search widget.
+ *
+ * Behaviour is a faithful copy of the reference (magnifier toggle, instant
+ * client-side results grouped by category, keyboard nav, debounced logging,
+ * alias/typo "did you mean" rescue). The load-bearing ranking + rescue logic is
+ * src/lib/searchMatch.ts, copied VERBATIM from the bundle — only the rendering
+ * layer is rewritten from React to vanilla JS, because this site has no React.
+ *
+ * Search is 100% client-side over the baked /search-index.json (built in
+ * prebuild). No runtime DB read — that keeps it fast AND egress-safe.
+ * Logging POSTs cross-origin to the companion API service via API_BASE.
+ */
+import { API_BASE } from '../lib/apiBase';
+---
+<div class="ns" data-api-base={API_BASE}>
+  <button class="ns__toggle" type="button" aria-expanded="false" aria-controls="ns-panel" aria-label="Search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+    </svg>
+  </button>
+
+  <div class="ns__panel" id="ns-panel" hidden>
+    <div class="ns__box">
+      <input class="ns__input" type="search" placeholder="Search calculators, guides…"
+             autocomplete="off" aria-label="Search the site"
+             role="combobox" aria-expanded="false" aria-controls="ns-results" />
+      <button class="ns__close" type="button" aria-label="Close search">&times;</button>
+    </div>
+    <div class="ns__results" id="ns-results" role="listbox"></div>
+  </div>
+</div>
+
+<style>
+  /* Site-token mapping: the widget's CSS is the fleet template verbatim; only the
+     tokens it reads are resolved here against this site's own variables. */
+  .ns {
+    --ink: var(--text);
+    --ground: #ffffff;
+    --ground-soft: #F1F8F5;
+    --rule: #ECECEC;
+    --chrome: #DCEEE6;
+    --ink-muted: var(--muted);
+    --ink-strong: var(--text);
+    --shadow-card: 0 16px 40px -16px rgba(0, 0, 0, 0.25);
+    --font-display: inherit;
+    --measure-wide: 1100px;
+    --gutter: 20px;
+    --s-2: 8px; --s-3: 12px; --s-5: 20px; --s-6: 24px;
+    --ls-caps: 0.08em;
+    --step-1: 1.05rem;
+    --step--1: 0.85rem;
+  }
+  .ns button { border: 0; background: none; cursor: pointer; font: inherit; }
+
+  .ns__toggle { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: var(--ink); }
+  .ns__toggle:hover { background: var(--ground-soft); }
+
+  .ns__panel { position: fixed; inset-block-start: 0; inset-inline: 0; background: var(--ground); border-block-end: 1px solid var(--rule); box-shadow: var(--shadow-card); z-index: 60; }
+  .ns__box { display: flex; align-items: center; gap: var(--s-3); max-width: var(--measure-wide); margin-inline: auto; padding: var(--s-5) var(--gutter); }
+  .ns__input { flex: 1; border: 0; border-block-end: 2px solid var(--chrome); background: none; font-family: var(--font-display); font-size: clamp(1.1rem, 3vw, 1.6rem); padding-block: var(--s-2); color: var(--ink-strong); }
+  .ns__input:focus { outline: none; border-block-end-color: var(--accent); }
+  .ns__close { font-size: 2rem; line-height: 1; color: var(--ink-muted); padding: 0 var(--s-2); }
+
+  .ns__results { max-width: var(--measure-wide); margin-inline: auto; padding: 0 var(--gutter) var(--s-6); max-height: 65vh; overflow-y: auto; }
+  /* Results are built with createElement/innerHTML, so they never carry Astro's
+     scoped attribute — reach them through the scoped .ns__results parent. */
+  .ns__results :global(.ns__group) { margin-block-start: var(--s-5); }
+  .ns__results :global(.ns__grouphead) { font-family: var(--font-display); font-size: 0.7rem; font-weight: 500; letter-spacing: var(--ls-caps); text-transform: uppercase; color: var(--ink-muted); padding-block-end: var(--s-2); border-block-end: 1px solid var(--rule); margin: 0; }
+  .ns__results :global(.ns__hit) { display: block; padding: var(--s-3) var(--s-2); text-decoration: none; border-block-end: 1px solid var(--rule); }
+  .ns__results :global(.ns__hit:hover), .ns__results :global(.ns__hit[aria-selected='true']) { background: var(--ground-soft); }
+  .ns__results :global(.ns__hit strong) { display: block; font-family: var(--font-display); font-weight: 500; font-size: var(--step-1); color: var(--ink-strong); }
+  .ns__results :global(.ns__hit span) { font-size: var(--step--1); color: var(--ink-muted); }
+  .ns__results :global(.ns__note) { padding-block: var(--s-5); color: var(--ink-muted); font-size: var(--step--1); }
+  .ns__results :global(.ns__note b) { color: var(--ink-strong); }
+</style>
+
+<script>
+  import { tokenize, normalizeAliasMap, rescueTerms, type AliasMap } from '../lib/searchMatch';
+
+  type Entry = { t: string; u: string; c: string; k: string; w: number };
+
+  const root = document.querySelector<HTMLElement>('.ns');
+  if (root) {
+    const apiBase = root.dataset.apiBase || '';
+    const toggle = root.querySelector<HTMLButtonElement>('.ns__toggle')!;
+    const panel = root.querySelector<HTMLElement>('.ns__panel')!;
+    const input = root.querySelector<HTMLInputElement>('.ns__input')!;
+    const closeBtn = root.querySelector<HTMLButtonElement>('.ns__close')!;
+    const results = root.querySelector<HTMLElement>('.ns__results')!;
+
+    let index: Entry[] | null = null;
+    let aliases: AliasMap = {};
+    let vocab = new Set<string>();
+    let cursor = -1;
+    let hits: Entry[] = [];
+    let logTimer: number | undefined;
+    let lastLogged = '';
+
+    async function load() {
+      if (index) return;
+      const [i, a] = await Promise.all([
+        fetch('/search-index.json').then((r) => r.json()).catch(() => []),
+        fetch('/search-aliases.json').then((r) => r.json()).catch(() => ({})),
+      ]);
+      index = i as Entry[];
+      aliases = normalizeAliasMap(a);
+      vocab = new Set(index.flatMap((e) => tokenize(`${e.t} ${e.k}`)));
+    }
+
+    /** Strict AND-match over the tokenised haystack, ranked by weight + position. */
+    function search(terms: string[]): Entry[] {
+      if (!index || !terms.length) return [];
+      const scored: Array<{ e: Entry; s: number }> = [];
+      for (const e of index) {
+        const hay = `${e.t} ${e.k}`.toLowerCase();
+        let score = e.w;
+        let all = true;
+        for (const t of terms) {
+          const at = hay.indexOf(t);
+          if (at === -1) { all = false; break; }
+          score += at === 0 ? 6 : 3;
+          if (e.t.toLowerCase().includes(t)) score += 4;
+        }
+        if (all) scored.push({ e, s: score });
+      }
+      return scored.sort((a, b) => b.s - a.s || a.e.t.length - b.e.t.length).slice(0, 12).map((x) => x.e);
+    }
+
+    function render(q: string, rescued: string | null) {
+      results.innerHTML = '';
+      if (!q.trim()) return;
+      if (!hits.length) {
+        results.innerHTML = `<p class="ns__note">Nothing here matches <b>${escapeHtml(q)}</b> yet. We log every empty search and write the missing guide.</p>`;
+        return;
+      }
+      if (rescued) {
+        const p = document.createElement('p');
+        p.className = 'ns__note';
+        p.innerHTML = `Showing results for <b>${escapeHtml(rescued)}</b>`;
+        results.appendChild(p);
+      }
+      const groups = new Map<string, Entry[]>();
+      for (const h of hits) {
+        if (!groups.has(h.c)) groups.set(h.c, []);
+        groups.get(h.c)!.push(h);
+      }
+      let i = 0;
+      for (const [cat, items] of groups) {
+        const g = document.createElement('div');
+        g.className = 'ns__group';
+        g.innerHTML = `<p class="ns__grouphead">${escapeHtml(cat)}</p>`;
+        for (const it of items) {
+          const a = document.createElement('a');
+          a.className = 'ns__hit';
+          a.href = `${it.u}/`.replace(/\/+$/, '/');
+          a.setAttribute('role', 'option');
+          a.dataset.i = String(i++);
+          a.innerHTML = `<strong>${escapeHtml(it.t)}</strong><span>${escapeHtml(it.u)}</span>`;
+          a.addEventListener('click', () => logSearch(input.value, hits.length, true));
+          g.appendChild(a);
+        }
+        results.appendChild(g);
+      }
+    }
+
+    const escapeHtml = (s: string) =>
+      s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+
+    /** Best-effort. Never blocks the UI, never throws into the page. */
+    function logSearch(term: string, count: number, immediate = false) {
+      const t = term.trim().toLowerCase();
+      if (!t || t.length < 2) return;
+      const key = `${t}|${count}`;
+      if (key === lastLogged) return;
+      lastLogged = key;
+      const body = JSON.stringify({ term: t, results_count: count, path: location.pathname, source: 'nav' });
+      try {
+        (window as any).gtag?.('event', 'view_search_results', { search_term: t, results_count: count });
+      } catch { /* analytics is optional */ }
+      try {
+        fetch(`${apiBase}/api/search-log`, {
+          method: 'POST', headers: { 'content-type': 'application/json' },
+          body, keepalive: true, mode: 'cors',
+        }).catch(() => {});
+      } catch { /* logging must never break search */ }
+      void immediate;
+    }
+
+    async function run() {
+      await load();
+      const q = input.value;
+      const terms = tokenize(q);
+      hits = search(terms);
+      let rescued: string | null = null;
+      if (!hits.length && terms.length) {
+        const alt = rescueTerms(terms, aliases, vocab);
+        if (alt) { const r = search(alt); if (r.length) { hits = r; rescued = alt.join(' '); } }
+      }
+      cursor = -1;
+      input.setAttribute('aria-expanded', String(hits.length > 0));
+      render(q, rescued);
+      window.clearTimeout(logTimer);
+      logTimer = window.setTimeout(() => logSearch(q, hits.length), 1000);
+    }
+
+    function open() {
+      panel.hidden = false;
+      toggle.setAttribute('aria-expanded', 'true');
+      input.focus();
+      void load();
+    }
+    function close() {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      input.value = '';
+      results.innerHTML = '';
+    }
+
+    toggle.addEventListener('click', () => (panel.hidden ? open() : close()));
+    closeBtn.addEventListener('click', close);
+    input.addEventListener('input', run);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && !panel.hidden === false && document.activeElement?.tagName !== 'INPUT') { e.preventDefault(); open(); }
+      if (e.key === 'Escape' && !panel.hidden) close();
+    });
+    input.addEventListener('keydown', (e) => {
+      const opts = [...results.querySelectorAll<HTMLAnchorElement>('.ns__hit')];
+      if (!opts.length) return;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        cursor = e.key === 'ArrowDown'
+          ? (cursor + 1) % opts.length
+          : (cursor - 1 + opts.length) % opts.length;
+        opts.forEach((o, i) => o.setAttribute('aria-selected', String(i === cursor)));
+        opts[cursor].scrollIntoView({ block: 'nearest' });
+      } else if (e.key === 'Enter' && cursor >= 0) {
+        e.preventDefault();
+        logSearch(input.value, hits.length, true);
+        location.href = opts[cursor].href;
+      }
+    });
+  }
+</script>
