@@ -36,6 +36,70 @@ Anything not on this list, you do not know. Never invent a price, limit, benchma
 The only external hrefs this page may use (also in allowed-urls.txt):
 - https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/ — CFPB guidance on POA / managing someone else's money
 - https://www.law.cornell.edu/wex/holographic_will — Cornell LII on will execution formalities
+- https://www.freewill.com/ — FreeWill (link on first mention)
+- https://www.trustandwill.com/ — Trust & Will (link on first mention)
+- https://www.legalzoom.com/ — LegalZoom (link on first mention)
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (rework attempt 1/2 — fix every item below)
+
+1. **Sentence rhythm — HARD FAIL.** The intro, verdict, and the first section's opening ran 14
+   consecutive long-band sentences (17-41 words each) with zero short/medium sentences breaking
+   the run, plus a separate 5-in-a-row cluster within 3 words of each other. Rewrite the intro,
+   the verdict, and Section 1 so short (1-8 words), medium (9-14), and long (15+) sentences
+   actually mix — no run of 10 consecutive sentences may sit in one band, and no 5 consecutive
+   sentences may fall within 3 words of each other. Do not pad in a stub sentence just to hit the
+   mix; vary real sentences. Also split this 41-word overloaded sentence in the probate section:
+   "In reality, a will serves as the instruction manual for the probate judge, requiring a formal
+   court process that typically takes 6 to 18 months and costs roughly 2% to 7% of the total
+   estate value in legal and administrative fees." — three facts stacked in one sentence.
+
+2. **Sentence 1 stacks both entities.** The offending sentence: "A power of attorney (POA) grants
+   an agent legal authority to manage your finances or healthcare while you are alive, whereas a
+   last will and testament distributes your property after you die." (32 words, a "whereas"
+   compound). Sentence 1 must answer for ONE entity only, short and easy — follow the sibling
+   page's own pattern (power-of-attorney-vs-guardianship opens on POA alone, then brings in the
+   second entity in sentence 2 or later).
+
+3. **Invented experience claim in the tee-up.** The offending sentence: "At The Modern Wallet, we
+   build financial planning tools and review estate planning workflows to help families organize
+   accounts before an emergency hits." `_experience.md`'s DOMAIN paragraph licenses calculators
+   and plain-language guides on auto loans, mortgages, retirement, investing, rentals, and net
+   worth — it does NOT license "review estate planning workflows" as a specific claimed activity.
+   Replace with a general framing actually licensed by `_experience.md`, e.g. drawing on "In the
+   guides we publish here..." or "What we see readers get wrong most often is..." — do not invent
+   a specific capability.
+
+4. **Invented number — "$50" is not on the closed fact list.** The offending table cell:
+   "Frequently bundled free or under $50 alone" (row "Typical online standalone cost", column a).
+   The fact list's only POA-cost figure is $150-$700, "often bundled at no extra charge with an
+   online will package" (fact 6). There is no separate standalone online POA price. Rewrite that
+   cell to state only what fact 6 actually supports — do not invent a number to fill the cell.
+
+5. **A fact from the SIBLING page's fact list leaked into this page's verdict.** The offending
+   text: "Our guidance would change if you place all your assets into a fully funded revocable
+   living trust. In that scenario, the trust manages your property during incapacity and
+   distributes it after death, reducing your will to a backup pour-over instrument." Trust
+   mechanics (funding, pour-over wills) are NOT on this page's closed fact list — that belongs to
+   the power-of-attorney-vs-trust page's own fact list. Replace with a "what would change our
+   answer" condition this page's OWN fact list actually supports (e.g. pointing the reader to
+   /compare/living-trust-vs-will/ for how a trust changes the picture, without asserting the trust
+   mechanics yourself on this page).
+
+6. **Unlinked companies — HARD FAIL, GATE Links.** FreeWill, Trust & Will, and LegalZoom are named
+   in the "Typical Costs" section and never linked. This repo has NO auto-link registry for
+   estate-planning vendors (checked `src/lib/richtext.ts`). Link each on its first mention to the
+   URL now added to THE CLOSED URL LIST above: FreeWill → https://www.freewill.com/, Trust & Will
+   → https://www.trustandwill.com/, LegalZoom → https://www.legalzoom.com/.
+
+7. **Minor fact-fidelity drift.** The offending text: "In practice, financial institutions freeze
+   an agent's access as soon as they receive notice of the principal's death." This specific
+   institutional-freeze-timing detail is not on the closed fact list (fact 3 only states authority
+   ends at death). Restate using only what fact 3 actually says — do not add the bank-notice
+   mechanism as if it were a sourced fact.
+
+Everything else in the prior draft passed (no em-dashes, no self-asserted neutrality, correct
+internal links, correct FAQ questions, correct comparison-table objectivity). Do not change
+anything that already passed — fix only the seven items above.
 
 ## INTERNAL LINKS this page may use (real routes only)
 - /compare/power-of-attorney-vs-guardianship/ — "Power of Attorney vs. Guardianship"

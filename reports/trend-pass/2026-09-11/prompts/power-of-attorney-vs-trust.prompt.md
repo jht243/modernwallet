@@ -35,6 +35,60 @@ Anything not on this list, you do not know. Never invent a price, limit, benchma
 The only external hrefs this page may use (also in allowed-urls.txt):
 - https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/ — CFPB guidance on POA / managing someone else's money and institutional friction honoring a POA
 - https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax — IRS estate tax page (for the "does not reduce estate tax" fact)
+- https://www.trustandwill.com/ — Trust & Will (link on first mention)
+- https://www.nolo.com/ — Nolo (link on first mention)
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (rework attempt 1/2 — fix every item below)
+
+1. **Sentence rhythm — HARD FAIL, two separate offending stretches.** (a) The back half of
+   "Setup Costs and Funding Rules" through "Bank Friction and Title Rules" ran 13 consecutive
+   long-band sentences (15-34 words) with no short/medium sentence anywhere in the stretch.
+   (b) The last two FAQ answers ran 10 consecutive long sentences the same way. Rewrite both
+   stretches so short (1-8 words), medium (9-14), and long (15+) sentences actually mix — no run
+   of 10 consecutive sentences may sit in one band, and no 5 consecutive sentences may fall within
+   3 words of each other. Vary real sentences; do not pad a stub just to hit the mix.
+
+2. **Sentence 1 stacks both entities in one 41-word sentence.** The offending sentence: "A power
+   of attorney authorizes an agent to manage assets that remain in your name during your life,
+   while a revocable living trust transfers legal title of your assets to a trustee to manage both
+   during incapacity and after your death." Sentence 1 must answer for ONE entity only, short and
+   easy — bring in the second entity in a later sentence, not the same one.
+
+3. **Invented experience claim in the tee-up.** The offending sentence: "At The Modern Wallet, we
+   build financial tools and guides to help families navigate estate planning without unnecessary
+   legal friction." `_experience.md`'s DOMAIN paragraph does not name "estate planning" as a
+   vertical and does not license "navigate ... without unnecessary legal friction" as a claimed
+   activity. Replace with a general framing actually licensed by `_experience.md` (e.g. drawing on
+   "In the guides we publish here..." or "What we see readers get wrong most often is...").
+
+4. **Invented durations not on the closed fact list.** The offending text: "...costs $150 to $700
+   attorney-drafted and takes days to sign..." and "...costs $1,500 to $5,000 with a lawyer, takes
+   weeks to fund..." — "takes days to sign" and "takes weeks to fund" are specific durations that
+   are not on the closed fact list. Drop them; state only the cost figures the fact list supports.
+
+5. **A semicolon joining two clauses — single-instance ban.** The offending table cell (row
+   "Healthcare decision-making", column b): "Not covered; trusts manage only property and
+   finances." Rewrite as two sentences: "Not covered. Trusts manage only property and finances."
+
+6. **Unlinked companies — HARD FAIL, GATE Links.** Trust & Will and Nolo are named in "Setup Costs
+   and Funding Rules" and never linked. Link each on first mention to the URL now added to THE
+   CLOSED URL LIST above: Trust & Will → https://www.trustandwill.com/, Nolo → https://www.nolo.com/.
+
+7. **Missing required page elements in the verdict field.** This page's "who this is not for" and
+   "what would change our answer" currently live only in Section 6 body prose, not in the verdict
+   field where this site's page shape requires them (the sibling power-of-attorney-vs-will page
+   puts both in its verdict). Rewrite the verdict to include, in addition to the existing pick-A /
+   pick-B / pair-both guidance already there: (a) who this recommendation is NOT for — someone
+   with a modest net worth, simple finances, and no real estate, for whom a POA alone covers the
+   incapacity risk for less money; (b) what would change the answer — if state probate courts
+   started offering free, instant asset transfers, that would remove the main reason to fund a
+   trust at all. Keep this additive to the verdict's existing content; you do not need to also
+   repeat it in Section 6, but Section 6 should not be the ONLY place either element appears.
+
+Everything else in the prior draft passed (no em-dashes, no self-asserted neutrality, correct
+internal links including the sibling cross-link, correct FAQ questions, correct comparison-table
+objectivity, correctly hedged CFPB/IRS sourcing). Do not change anything that already passed —
+fix only the seven items above.
 
 ## INTERNAL LINKS this page may use (real routes only)
 - /compare/power-of-attorney-vs-guardianship/ — "Power of Attorney vs. Guardianship"

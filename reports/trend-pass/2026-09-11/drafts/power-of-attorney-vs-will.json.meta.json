@@ -11,12 +11,12 @@
  "thinking": "high",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2354,
+ "words": 2222,
  "floor": 1500,
- "input_tokens": 19010,
- "output_tokens": 3586,
- "thinking_tokens": 12998,
- "est_cost_usd": 0.0764,
+ "input_tokens": 20228,
+ "output_tokens": 3654,
+ "thinking_tokens": 17633,
+ "est_cost_usd": 0.095,
  "guards": {
   "repairs": [
    "added relatedLinks: [] (undefined crashes next build)"
@@ -32,7 +32,7 @@
    "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
   "disallowed_urls_removed": [],
-  "words": 2354,
+  "words": 2222,
   "numbers_not_in_facts": [
    "09",
    "2026"
@@ -44,7 +44,7 @@
    "tokens_sent_est": 17427
   }
  },
- "seconds": 52.7,
- "response_id": "0LqjatH0Jtjf-sAPkLuX0Qw",
- "generated_at": "2026-09-11T08:25:40+0000"
+ "seconds": 66.3,
+ "response_id": "CL6jap-wIbau_PUPwPm6sQ8",
+ "generated_at": "2026-09-11T08:39:38+0000"
 }
