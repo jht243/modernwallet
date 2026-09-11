@@ -150,3 +150,5 @@
 | /cash-conversion-cycle/ | 2026-09-10 | 1 | 0/0/0/0/0 | 0 |
 | /guides/chase-travel-portal-guide/ | 2026-09-10 | 1 | 1/0/1/0/0 | 0 |
 | /guides/trump-account-alternatives/ | 2026-09-10 | 1 | 0/0/0/0/0 | 0 |
+| /compare/financial-advisor-vs-wealth-manager/ | 2026-09-11 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-brokerage-accounts-for-interest-on-cash/ | 2026-09-11 | 1 | 0/0/0/0/0 | 0 |
