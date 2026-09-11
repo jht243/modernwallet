@@ -1,0 +1,36 @@
+{
+ "slug": "current-mortgage-rates-guide--agent-advice",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 168,
+ "floor": 150,
+ "input_tokens": 15528,
+ "output_tokens": 219,
+ "thinking_tokens": 8716,
+ "est_cost_usd": 0.0452,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 168,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15215
+  }
+ },
+ "seconds": 26.9,
+ "response_id": "N3akao7eKsePjrEPrIiDyA4",
+ "generated_at": "2026-09-11T21:44:49+0000"
+}

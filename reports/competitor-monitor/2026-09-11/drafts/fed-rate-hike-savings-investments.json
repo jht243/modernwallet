@@ -1,0 +1,110 @@
+{
+  "slug": "fed-rate-hike-savings-investments",
+  "title": "Fed Rate Hike Savings and Investments Explained",
+  "metaDescription": "How a Federal Reserve (Fed) rate hike affects savings and investments, from bank deposit rates and bond prices to yields on newly issued debt.",
+  "h1": "Fed Rate Hike Savings and Investments",
+  "cardBlurb": "A rate hike lifts returns on newly issued cash and debt while cutting the resale value of bonds you already own.",
+  "introText": "A Federal Reserve rate hike increases returns on newly opened cash deposits. It also lowers the market value of bonds you already own. At ModernWallet, we see savers rethink their fed rate hike savings and investments strategy the moment a policy meeting concludes. When the central bank raises interest rates, the financial effects split in two directions: new yields rise, but existing fixed-rate securities drop in resale value. Your time horizon determines whether to act or hold steady.",
+  "sections": [
+    {
+      "heading": "The Federal Funds Rate Mechanism and Borrowing Costs",
+      "body": "The [Federal Open Market Committee](https://www.federalreserve.gov/monetarypolicy/fomc.htm) (FOMC) sets a target range for the federal funds rate at eight scheduled meetings each year. This benchmark governs the interest rate commercial banks charge one another for overnight loans. While the central bank does not set retail loan rates directly, adjustments to this benchmark ripple quickly through the broader financial system.\n\nWhen the policy rate rises, banks face higher costs for short-term liquidity. Lenders pass those expenses to borrowers by lifting the prime rate and short-term indices tied to consumer debt. According to the [Federal Reserve](https://www.federalreserve.gov/monetarypolicy.htm), these higher financing costs help cool economic activity by making borrowing more expensive across the economy.\n\nThe immediate impact lands on variable-rate credit cards, home equity lines of credit (HELOCs), and newly issued auto loans. Mortgage rates also respond to broader monetary policy and inflation expectations, as detailed in our guide on [current mortgage rates](/guides/current-mortgage-rates-guide/). Higher rates increase monthly debt service for households carrying revolving balances."
+    },
+    {
+      "heading": "Existing Bond Prices and the Maturity Distinction",
+      "body": "An interest rate hike reduces the market price of bonds you already own if you sell them before maturity. Bond prices and yields move in opposite directions. As the [Securities and Exchange Commission](https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds) (SEC) notes, when prevailing interest rates rise, existing bonds paying lower fixed coupon rates become less attractive to secondary-market buyers.\n\nConsider a concrete example. Suppose you own a $1,000 bond paying a fixed 3% coupon, which delivers $30 in annual interest. If the central bank raises rates and comparable newly issued bonds pay 5% ($50 annually), no buyer will pay $1,000 for your 3% bond.\n\nTo attract a buyer, your bond's resale price must fall until its total return matches the prevailing 5% market yield. That decline represents a paper loss on your brokerage statement. This drop in resale value only affects you if you liquidate the position early.\n\nIf you hold an individual bond to maturity, you still receive your promised interest payments and full principal repayment, assuming the issuer does not default. The rate hike changes its interim market quote, not its contractual cash flow. However, duration risk influences how far that interim price falls.\n\nBonds with longer maturities carry higher duration risk because their fixed payments remain locked below market rates for more years. A 20-year bond drops substantially more in price than a 2-year note during a rate shock. Shorter-duration debt protects capital better when rates climb."
+    },
+    {
+      "heading": "New Debt Purchases and Bond Yield Timing",
+      "body": "A Federal Reserve rate hike increases the yields available on newly issued fixed-income securities. Issuers of corporate debt, municipal bonds, and government obligations must offer higher payouts to compete with prevailing market rates. According to [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/), newly auctioned Treasury bills, notes, and bonds reflect these higher benchmark rates directly at auction.\n\nFor investors with unallocated cash, higher coupon rates present a stronger income stream than was available before the rate adjustment. Locking in a higher yield today provides guaranteed cash flow for the life of the security. Yet yield timing carries an inherent tradeoff.\n\nIf the central bank raises rates multiple times, debt purchased today will see its market value decline as subsequent issues offer even higher yields. Conversely, waiting for peak rates risks leaving cash in lower-yielding instruments if the central bank pauses or reverses course sooner than expected. Savers evaluating newly issued fixed-income options often compare certificates of deposit (CDs) against short-term government debt, a tradeoff we examine in our [CD vs. Treasury bill](/compare/cd-vs-treasury-bill/) comparison."
+    },
+    {
+      "heading": "Fed Rate Hike Savings and Investments in Cash Deposits",
+      "body": "Commercial bank deposit rates tend to rise after a policy hike, but they rarely match the Federal Reserve's rate change in size or speed. The central bank does not set retail deposit rates. As the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/consumer-tools/save/) (CFPB) explains, individual banks establish their own savings and money market interest rates based on their balance-sheet needs and funding requirements.\n\nOnline banks and high-yield institutions generally raise yields faster than traditional brick-and-mortar lenders to attract customer deposits. Even then, deposit pass-through remains well below 100%. Savers comparing flexible cash options can review our [HYSA vs. money market account](/compare/hysa-vs-money-market/) breakdown or run projections using our [high-yield savings calculator](/investing/high-yield-savings-calculator/).\n\nCertificates of deposit introduce a different timing dynamic because they lock in a fixed yield for a specified period. Opening a CD immediately before a hike locks your capital into a lower pre-hike rate for the entire term. Waiting until after the hike allows you to capture the higher return for the duration of the agreement.\n\nThe tradeoff balances rate certainty against opportunity cost. A locked CD guarantees your return if rates tumble, but it leaves you behind if the central bank continues tightening. Our guide comparing a [HYSA vs. CD](/compare/hysa-vs-cd/) details how to weigh this flexibility against guaranteed term yields."
+    },
+    {
+      "heading": "Federal Reserve Projections and Rate Paths",
+      "body": "Financial markets evaluate whether a rate hike is an isolated event or the start of an extended tightening cycle by studying central bank projections. Every quarter, the Federal Open Market Committee publishes its [Summary of Economic Projections](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm). This release includes the dot plot, which visualizes where each committee member expects the federal funds rate to settle over the coming years.\n\nThe dot plot serves as a gauge of policy sentiment rather than a formal guarantee. Policymakers do not pre-commit to future rate moves. Instead, the committee adjusts policy meeting by meeting based on incoming data on inflation, employment, and economic output.\n\nWhen the dot plot indicates several additional hikes ahead, fixed-income yields across all maturities often adjust upward before those meetings even occur. If projections point toward a pause, bond markets tend to stabilize. Monitoring these official forecasts helps investors avoid assuming that a single rate increase will immediately be followed by another."
+    },
+    {
+      "heading": "Equity Valuations and the Discount Rate",
+      "body": "A Federal Reserve rate hike exerts downward valuation pressure on stocks by increasing the discount rate applied to future corporate earnings. Equity valuation models calculate the present value of a business by discounting its projected future cash flows back to today's dollars. When interest rates rise, that mathematical discount factor increases, reducing the calculated present worth of distant profits.\n\nThis discount mechanism affects fast-growing companies particularly hard because much of their expected profit sits years in the future. Higher yields on cash and government bonds also provide investors with viable alternatives to equities. Capital that previously pursued stock market returns can find acceptable yields in safer debt instruments.\n\nRate increases can also cause stocks and bonds to decline simultaneously. While balanced portfolios rely on bonds to cushion equity declines, an inflation shock can depress both asset classes together. We examine this shifting relationship in our guide on [stocks vs. bonds](/compare/stocks-vs-bonds/)."
+    },
+    {
+      "heading": "Who Should Not Reallocate After a Policy Shift",
+      "body": "Investors with long-term horizons who hold individual bonds to maturity should not alter their asset allocation in response to a rate hike. If your objective is predictable income and capital preservation at redemption, interim secondary-market price fluctuations do not diminish your final payout. Selling seasoned bonds at a paper loss to chase slightly higher yields on new issues incurs transaction costs and locks in an otherwise temporary decline.\n\nSimilarly, systematic equity index investors should avoid shifting into cash. Attempting to time interest rate cycles requires predicting both policy moves and market reactions. Investors with time horizons exceeding seven years should maintain their existing contribution schedules rather than reacting to short-term Federal Reserve headlines."
+    },
+    {
+      "heading": "Conditions That Would Change This Guidance",
+      "body": "Our perspective on portfolio positioning would change if economic indicators trigger a rapid shift toward monetary easing. If inflation slows abruptly and unemployment rises, the Federal Open Market Committee could pause hikes or cut rates. Under those conditions, the yield advantage on cash and short-term paper would vanish quickly.\n\nIn an easing environment, longer-duration bonds would gain strong capital appreciation as their fixed payments become more valuable. A shift in your personal timeline would also alter this advice. If you transition from accumulating wealth to needing immediate liquidity for a home purchase, prioritizing capital preservation in insured cash accounts outweighs long-term asset positioning."
+    },
+    {
+      "heading": "Action Steps for Fed Rate Hike Savings and Investments",
+      "body": "You can optimize your portfolio after a policy adjustment by auditing your cash yields and reviewing the duration of your debt holdings. Begin by verifying the current annual percentage yield (APY) on your primary savings account. If your bank has not adjusted its rates upward, transfer surplus emergency reserves to a competitive high-yield account or short-term Treasury bills.\n\nNext, review the average duration of any bond mutual funds or exchange-traded funds (ETFs) in your portfolio. Confirm that your fixed-income allocation aligns with your tolerance for short-term price volatility. Check your bank's latest rate schedule and the Federal Reserve's policy calendar before making any final portfolio changes to your fed rate hike savings and investments."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/high-yield-savings-calculator/",
+      "label": "High-yield savings calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does a Fed rate hike mean for my savings account?",
+      "answer": "It usually raises the annual percentage yield (APY) on your savings account. Commercial banks set their own rates independently. Because of that flexibility, institutions adjust yields at varying speeds and rarely match the full Federal Reserve rate move."
+    },
+    {
+      "question": "Does a Fed rate hike hurt bonds I already own?",
+      "answer": "It hurts their resale price if you sell before maturity. New debt arrives with higher coupons, which makes older, lower-paying bonds less attractive to secondary-market buyers. If you hold a bond to its maturity date, you still receive all scheduled coupon payments and your full principal back."
+    },
+    {
+      "question": "Is now a good time to buy bonds?",
+      "answer": "It can be an attractive entry point for newly issued debt. New issues pay higher coupons than older issues. However, if the central bank raises rates again later, market prices on those new purchases will drop temporarily."
+    },
+    {
+      "question": "Will a Fed rate hike raise my CD rate?",
+      "answer": "A rate hike will not change the yield on a certificate of deposit (CD) you already opened. The rate is locked for the entire term. New certificates of deposit issued after the hike, however, will generally offer higher fixed yields than older issues."
+    },
+    {
+      "question": "How does a Fed rate hike affect the stock market?",
+      "answer": "Higher interest rates often create headwinds for equity valuations. They increase the discount rate analysts apply to future corporate earnings, which depresses the present value of those cash flows. Rising yields on cash and bonds also create stiffer competition for investor dollars."
+    },
+    {
+      "question": "How do I know if the Fed will keep raising rates?",
+      "answer": "You cannot know with certainty. The Federal Open Market Committee (FOMC) publishes its Summary of Economic Projections quarterly, which contains the dot plot showing member rate forecasts. The central bank evaluates economic data before each meeting and never guarantees future rate adjustments in advance."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Federal Reserve, Federal Open Market Committee",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm"
+    },
+    {
+      "label": "Federal Reserve, Monetary Policy",
+      "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+    },
+    {
+      "label": "SEC Investor.gov, Bonds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds"
+    },
+    {
+      "label": "TreasuryDirect, Treasury Bills",
+      "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bills/"
+    },
+    {
+      "label": "CFPB, Saving",
+      "url": "https://www.consumerfinance.gov/consumer-tools/save/"
+    },
+    {
+      "label": "Federal Reserve, Summary of Economic Projections",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

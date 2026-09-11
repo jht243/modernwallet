@@ -1,0 +1,60 @@
+{
+  "title": "Annualized Return Calculator (CAGR)",
+  "metaDescription": "Use this annualized return calculator to find your compound annual growth rate (CAGR) from a starting value, ending value, and holding period.",
+  "h1": "Annualized Return Calculator",
+  "introText": "This annualized return calculator calculates your compound annual growth rate (CAGR).\n\nYou enter three numbers. Provide a starting value, an ending balance, and the total years. The tool then determines the single annual growth rate required to turn that starting sum into the ending amount.\n\nAt ModernWallet, we see many investors confuse simple average gains with compound growth. The two calculations yield different numbers. This tool displays your total percentage return, your simple average annual gain, and your true annualized rate side by side. If you want to project future wealth instead of evaluating past performance, use our [compound interest calculator](/investing/compound-interest-calculator/).",
+  "howItWorks": "Three distinct formulas drive this calculator. First, total return measures overall percentage growth across the entire timeline. The formula is simple: (Ending Value - Beginning Value) / Beginning Value. Second, the simple average annual return divides that total percentage by the number of years: Total Return / n. Here, n represents the holding period. Finally, the compound annual growth rate (CAGR) determines the geometric rate of return. The exact formula is: CAGR = (Ending Value / Beginning Value)^(1/n) - 1. This formula isolates the steady yearly pace needed to match your ending balance.\n\nCAGR rarely matches the simple arithmetic average. They produce identical figures only when an asset gains the exact same percentage every single year. In the real world, market returns bounce around. Whenever annual returns vary, the compound annual growth rate will always sit below the arithmetic average. Mathematicians call this difference volatility drag or variance drag. Compounding uneven gains and losses creates lower terminal wealth than compounding the simple average of those same numbers. Furthermore, CAGR operates as a smoothed rate. It describes a hypothetical steady path rather than individual annual steps. An asset with an 8% CAGR over five years could gain 30% in year one and drop 10% in year two. The annualized figure records the net compound speed, not the year-to-year volatility.\n\nThis tool relies on one foundational assumption. It assumes a single lump sum that grew untouched without any intermediate deposits or withdrawals. If you added savings every month or pulled cash out during the period, CAGR will mislead you. Interim cash flows require a money-weighted calculation called the internal rate of return (IRR). An IRR calculation tracks both the specific timing and the dollar size of every cash transfer. Another boundary condition involves total losses. If your investment drops to zero, the CAGR formula cannot mathematically resolve a meaningful fractional power. A zero ending balance represents an absolute loss of -100% total return. Annualizing a complete wipeout over several years produces an undefined mathematical result rather than a useful annual benchmark. To review broader asset allocation rules for lump sums, consult the [Securities and Exchange Commission (SEC) Investor.gov guidance on asset allocation](https://www.investor.gov/introduction-investing/getting-started/asset-allocation).",
+  "commonMistakes": [
+    "Confusing CAGR with the simple arithmetic average. Uneven year-to-year returns create variance drag, meaning your actual compounded return is almost always lower than the simple average of your yearly gains.",
+    "Assuming CAGR describes what happened in every individual year. CAGR smooths your entire journey into one hypothetical rate, hiding huge surges, sharp market drops, and intermediate drawdowns.",
+    "Applying CAGR to portfolios with regular deposits or withdrawals. The formula assumes a static lump sum, so intermediate cash flows require an internal rate of return (IRR) calculation instead.",
+    "Comparing your result to a memorized historical figure rather than a live benchmark. Market conditions shift, so evaluate your performance against a relevant index's current published returns over the exact same time frame.",
+    "Ignoring the impact of holding period length on annualized metrics. Annualizing very short periods can exaggerate minor price spikes into absurdly high annual percentages that cannot be sustained."
+  ],
+  "workedExample": "Consider an initial investment of $10,000 that grows to $16,000 over 5 years. Total gain is $6,000. Your total return equals 60% (($16,000 - $10,000) / $10,000). Dividing 60% by 5 years yields a simple average annual return of 12%. However, money compounds geometrically. Plugging the figures into the CAGR formula gives: ($16,000 / $10,000)^(1/5) - 1, which equals 9.86%. The true annualized return is 9.86%. A simple average overstates your real annual compounding speed by 2.14 percentage points.\n\nNow consider that same growth over a shorter period. Imagine your $10,000 reaches $16,000 in just 2 years. The total return remains 60%. Dividing that gain across 2 years produces a simple average return of 30%. The CAGR formula tells a different story. Taking ($16,000 / $10,000)^(1/2) - 1 gives a compound annual growth rate of 26.49%. Here, the gap between simple averaging and compound growth is 3.51 percentage points. This difference demonstrates how period length and total gain interact to shape volatility drag.",
+  "faqs": [
+    {
+      "question": "What is an annualized return calculator?",
+      "answer": "It calculates compound annual growth rate. An annualized return calculator takes your starting principal, your ending balance, and the total duration of your holding period. From these inputs, it calculates the single constant interest rate that would transform the initial capital into the final amount over that timeline. The tool strips away annual noise. It shows the geometric progression of your capital instead of treating each year as an isolated event. You can use it to evaluate single stocks, index funds, real estate purchases, or entire private businesses."
+    },
+    {
+      "question": "Is CAGR the same as annualized return?",
+      "answer": "Yes, they are identical calculations. In personal finance and investment analysis, compound annual growth rate (CAGR) and annualized return describe the exact same mathematical formula. Both metrics solve for the geometric annual return of a lump-sum investment across multiple years. Some analysts call it annualized return, while corporate financial reports frequently refer to it as CAGR. Our calculator computes CAGR to deliver your annualized rate. There is zero functional difference between the two terms."
+    },
+    {
+      "question": "How do I calculate annualized return manually?",
+      "answer": "Follow three mathematical steps. First, divide your ending portfolio value by your beginning balance. Second, raise that quotient to the power of 1 divided by the number of years in your holding period. Finally, subtract 1 from that result and multiply by 100 to get a percentage. Written as an equation: CAGR = (Ending Value / Beginning Value)^(1/n) - 1. If your holding period includes partial years, express n as a decimal fraction. For a holding period of 3 years and 6 months, set n equal to 3.5."
+    },
+    {
+      "question": "What is the difference between CAGR and average annual return?",
+      "answer": "CAGR accounts for compound interest. The simple average annual return adds up your percentage returns across all years and divides by the number of years. That arithmetic calculation ignores compounding and consistently exaggerates real wealth generation. In contrast, CAGR calculates the actual geometric rate required to arrive at your final balance. Unless an investment earns the exact same return every year, CAGR will always remain lower than the simple average. This difference is known as volatility drag or variance drag."
+    },
+    {
+      "question": "What is a good annual return on investment?",
+      "answer": "A good return depends on your benchmark. Rather than relying on a fixed target or memorized rules of thumb, evaluate your performance against the current published return of a relevant index. If you hold a diversified equity portfolio, compare your CAGR against the published performance of a broad market index over the identical time horizon. If you take minimal risk, compare your return against the yield on cash in our [high-yield savings calculator](/investing/high-yield-savings-calculator/). Risk tolerance dictates realistic expectations. Securities and Exchange Commission (SEC) Investor.gov guidance on asset allocation explains how aligning your time horizon with asset class risk establishes an appropriate personal benchmark."
+    },
+    {
+      "question": "Does this calculator work if I added or withdrew money along the way?",
+      "answer": "No, it does not. The standard annualized return and CAGR formula strictly assumes a single lump sum that grew untouched. Deposits or withdrawals distort the calculation because capital entered or exited at varying points in time. When cash flows occur mid-period, you must compute an internal rate of return (IRR) instead. IRR weights each cash injection or distribution by its exact date and dollar amount. To model ongoing additions for future goals, look into our [portfolio calculator](/portfolio/). The [Financial Industry Regulatory Authority (FINRA) Tools and Calculators](https://www.finra.org/investors/tools-and-calculators) collection also provides specialized tools for monitoring cash-adjusted returns."
+    },
+    {
+      "question": "Does a longer holding period make CAGR more accurate?",
+      "answer": "No, the math is always exact. The formula produces an exact mathematical result for any lump sum, whether the timeframe is two years or twenty. Holding period length does not alter calculation accuracy. Instead, duration influences how widely CAGR diverges from simple arithmetic averaging. Longer periods compound returns over more intervals, which often magnifies the dollar impact of variance drag. However, CAGR remains the single mathematically correct rate for measuring lump-sum compound growth over any timeline."
+    },
+    {
+      "question": "What does CAGR fail to tell you about an investment?",
+      "answer": "It does not measure risk. CAGR describes the net annualized speed of growth, but it hides all intermediate market turbulence. Two portfolios can end with the exact same 10% CAGR over a decade while providing completely different investor journeys. One might climb steadily upward by roughly 10% each year with minimal drama. The other could surge 50% in year one, drop 30% in year two, and rebound later. CAGR cannot show you maximum drawdown, downside deviation, or day-to-day volatility. Never rely on annualized return alone when evaluating whether an asset fits your risk tolerance."
+    }
+  ],
+  "sources": [
+    {
+      "label": "FINRA, Tools and Calculators",
+      "url": "https://www.finra.org/investors/tools-and-calculators"
+    },
+    {
+      "label": "SEC Investor.gov, Asset Allocation",
+      "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+    }
+  ],
+  "slug": "annualized-return-calculator"
+}

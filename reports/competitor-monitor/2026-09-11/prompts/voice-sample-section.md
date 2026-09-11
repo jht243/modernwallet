@@ -1,0 +1,5 @@
+## Shop Smarter: Get Real Quotes the Same Day, Not Scattered Over Weeks
+
+The [CFPB has found that nearly half of borrowers get a quote from only one lender](https://www.consumerfinance.gov/about-us/newsroom/cfpb-report-finds-nearly-half-of-borrowers-do-not-shop-for-a-mortgage/), which leaves real savings on the table. Because rates move daily, quotes gathered on different days aren't a fair comparison. Get Loan Estimates from at least three lenders on the same day, so you're comparing rate and fees under identical market conditions.
+
+Compare the APR, not just the interest rate. The APR folds in origination fees, discount points, and certain closing costs into a single annualized number, so a lender advertising a lower rate but charging higher fees can actually have a higher APR than a competitor. The [CFPB's rate explorer](https://www.consumerfinance.gov/owning-a-home/explore-rates/) shows how rates typically vary by credit score and loan type, which is a useful benchmark before you start calling lenders. Use our [closing cost calculator](/mortgage/closing-cost-calculator/) to see the full cash picture behind each Loan Estimate, not just the payment.

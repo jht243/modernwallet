@@ -46,6 +46,7 @@ import SCorpTaxCalculator from "./SCorpTaxCalculator";
 import LifeInsuranceNeedsCalculator from "./LifeInsuranceNeedsCalculator";
 import OperatingCashFlowCalculator from "./OperatingCashFlowCalculator";
 import CashConversionCycleCalculator from "./CashConversionCycleCalculator";
+import AnnualizedReturnCalculator from "./AnnualizedReturnCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -59,6 +60,7 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "real-estate": RentalCalculator,
   "retirement": RetirementCalculator,
   "investing": InvestmentCalculator,
+  "annualized-return": AnnualizedReturnCalculator,
   "portfolio": PortfolioCalculator,
   "net-worth": NetWorthCalculator,
   "budget": BudgetCalculator,

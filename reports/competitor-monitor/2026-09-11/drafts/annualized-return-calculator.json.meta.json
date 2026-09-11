@@ -1,0 +1,40 @@
+{
+ "slug": "annualized-return-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1584,
+ "floor": 1200,
+ "input_tokens": 18291,
+ "output_tokens": 2447,
+ "thinking_tokens": 15173,
+ "est_cost_usd": 0.0798,
+ "guards": {
+  "repairs": [
+   "slug None -> 'annualized-return-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1584,
+  "numbers_not_in_facts": [
+   "3.5"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16147
+  }
+ },
+ "seconds": 49.7,
+ "response_id": "M3WkarWpBYzP_uMP9bjX6A0",
+ "generated_at": "2026-09-11T21:40:52+0000"
+}
