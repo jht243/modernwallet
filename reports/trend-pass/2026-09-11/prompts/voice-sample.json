@@ -1,0 +1,58 @@
+{
+  "slug": "power-of-attorney-vs-guardianship",
+  "title": "Power of Attorney vs. Guardianship: Key Differences",
+  "metaDescription": "Power of attorney vs guardianship compared: cost, court involvement, and control — see why setting up a POA now can help you avoid guardianship later.",
+  "targetKeyword": "power of attorney vs guardianship",
+  "optionA": "Power of Attorney",
+  "optionB": "Guardianship",
+  "h1": "Power of Attorney vs. Guardianship: What's the Difference?",
+  "introText": "A power of attorney is a document you sign while you're still capable, naming someone to handle your finances or health decisions. It typically costs $150 to $700 and takes days to set up. Guardianship, by contrast, is a court process imposed by a judge only after you can no longer make decisions and haven't named an agent. It typically costs thousands of dollars and takes weeks or months to establish.",
+  "comparisonTable": {
+    "rows": [
+      { "dimension": "Who sets it up", "a": "You — while you still have legal capacity", "b": "A court — after you've already lost capacity" },
+      { "dimension": "Court involvement", "a": "None to create it; no ongoing court supervision", "b": "Required — a judge appoints the guardian and typically supervises ongoing" },
+      { "dimension": "Typical cost", "a": "$150–$700 attorney-drafted; often bundled free with an online will package", "b": "$2,000–$10,000+ in attorney and court fees, plus ongoing accounting costs" },
+      { "dimension": "Time to establish", "a": "Days — sign and notarize", "b": "Weeks to months — filing, medical evaluation, and a court hearing" },
+      { "dimension": "Who you choose", "a": "You name your own agent", "b": "A judge decides, who may not be who you would have picked" },
+      { "dimension": "Scope", "a": "Can be narrow (one account) or broad (all finances and health)", "b": "Often broad — covers most or all decision-making for the ward" },
+      { "dimension": "When it takes effect", "a": "Immediately, or \"springs\" into effect at incapacity, per the document", "b": "Only after the court hearing and formal appointment" }
+    ]
+  },
+  "verdict": "Set up a durable power of attorney now, while you're healthy — it's cheap, fast, and lets you choose who handles your affairs if you become incapacitated. Guardianship becomes necessary only when someone loses capacity without a valid POA in place, and it's slower, more expensive, and hands the choice of decision-maker to a judge instead of you. If a family member is already incapacitated and has no POA, guardianship is often the only remaining option — but the surest way to avoid ever needing it is a POA signed today.",
+  "sections": [
+    {
+      "heading": "How a power of attorney works",
+      "content": "A power of attorney (POA) is a legal document where you, the principal, name someone — your agent or attorney-in-fact — to act on your behalf. A durable POA stays in effect even if you become incapacitated, which is the version most estate plans use.\n\nYou control the scope. A POA can be narrow, covering a single bank account or transaction, or broad, covering all financial decisions and, with a separate healthcare POA, medical decisions too. Most attorney-drafted estate planning packages bundle a financial POA and a healthcare directive together for $150 to $700, and many online will services include both at no extra cost.\n\nBecause a POA is a private document, not a court filing, it takes effect as soon as it's properly signed and notarized — no judge, no hearing, no waiting period, per guidance from the Consumer Financial Protection Bureau."
+    },
+    {
+      "heading": "How guardianship works, and why it costs so much more",
+      "content": "Guardianship is a court process. A judge appoints someone — often called a guardian or conservator, depending on the state — to manage the finances, healthcare, or both for a person the court has determined can no longer manage their own affairs.\n\nGetting there requires a petition, a medical or psychological evaluation documenting incapacity, notice to interested family members, and a formal hearing. According to the National Guardianship Association, courts are required to confirm that less restrictive alternatives — like an existing POA — aren't sufficient before appointing a guardian, which is one reason a valid POA can prevent the case from ever being filed.\n\nThe process typically costs several thousand dollars in attorney and court fees just to get started, and many states require the guardian to file regular accountings with the court afterward, adding ongoing legal and administrative cost for as long as the guardianship lasts."
+    },
+    {
+      "heading": "Why a POA can prevent the need for guardianship entirely",
+      "content": "The single biggest reason to sign a POA before you need one: it removes the reason for a guardianship petition to exist. Courts only step in when no one already has legal authority to act — a valid, durable POA fills that gap.\n\nWithout a POA, a spouse or adult child has no automatic legal right to manage your bank accounts, sign on your behalf, or make medical decisions once you're incapacitated, even for a short-term situation like a coma after an accident. The family has to go to court and ask a judge for that authority, which is exactly what guardianship requires.\n\nA POA, according to the American Bar Association, can also be tailored far more precisely than a court-ordered guardianship — you decide exactly what your agent can and can't do, rather than accepting whatever scope of authority a judge grants."
+    },
+    {
+      "heading": "What happens if you wait too long",
+      "content": "Once someone has already lost capacity — from a stroke, advanced dementia, or a serious accident — it's too late to sign a POA. Signing a legal document requires the mental capacity to understand what you're agreeing to, and a court will not accept a POA signed after that capacity is gone.\n\nAt that point, guardianship becomes the only path forward for a family that needs legal authority to manage the person's finances or healthcare. That's the scenario that runs $2,000 to $10,000 or more and takes weeks to months to resolve, all while bills, insurance decisions, and medical choices are on hold.\n\nThe fix is timing: sign a durable POA — and a healthcare directive — while you're healthy, well before you think you'll need one. Pair it with the rest of your estate plan using our will cost calculator to see what a complete document package runs in your state."
+    }
+  ],
+  "faqs": [
+    { "question": "Does having a power of attorney prevent guardianship?", "answer": "In most cases, yes. Courts are generally required to consider whether a less restrictive alternative — like an existing, valid power of attorney — already gives someone the legal authority needed before appointing a guardian. A properly drafted, durable POA typically removes the need for a guardianship petition altogether." },
+    { "question": "How much does guardianship cost compared to a power of attorney?", "answer": "A power of attorney typically costs $150 to $700 attorney-drafted, or is bundled free with many online will packages. Guardianship typically costs $2,000 to $10,000 or more in attorney and court fees to establish, plus ongoing costs for required court accountings — often 10 to 20 times more expensive than a POA." },
+    { "question": "Can a power of attorney be revoked?", "answer": "Yes, at any time, as long as you still have legal capacity. You can revoke a POA by signing a written revocation, notifying your agent and any institutions relying on the document, and destroying old copies. Guardianship, by contrast, can only be modified or ended through another court proceeding." },
+    { "question": "What happens if someone becomes incapacitated without a POA?", "answer": "A family member has no automatic legal authority to manage that person's finances or make medical decisions, even a spouse in most states. The family must petition the court for guardianship, which requires a medical evaluation, notice to relatives, and a formal hearing before a judge grants that authority." },
+    { "question": "Is a healthcare power of attorney the same as a living will?", "answer": "No. A healthcare power of attorney names a person to make medical decisions on your behalf. A living will (or advance directive) states your own wishes for specific treatments, like life support, in writing. Most estate planning packages include both documents together, since they cover different situations." }
+  ],
+  "sources": [
+    { "label": "CFPB — Managing Someone Else's Money", "url": "https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/" },
+    { "label": "National Guardianship Association", "url": "https://www.guardianship.org/" },
+    { "label": "American Bar Association — Power of Attorney", "url": "https://www.americanbar.org/groups/real_property_trust_estate/resources/estate_planning/power_of_attorney/" }
+  ],
+  "relatedComparisons": ["living-trust-vs-will", "probate-vs-trust", "online-will-vs-lawyer"],
+  "calculatorLinks": [
+    { "label": "Will Cost Calculator", "href": "/estate-planning/will-cost-calculator/" },
+    { "label": "Estate Planning Hub", "href": "/estate-planning/" },
+    { "label": "Probate Hub", "href": "/probate/" }
+  ]
+}
