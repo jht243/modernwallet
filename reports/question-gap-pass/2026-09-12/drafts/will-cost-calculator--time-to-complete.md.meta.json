@@ -1,0 +1,35 @@
+{
+ "slug": "will-cost-calculator--time-to-complete",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 85,
+ "floor": 0,
+ "input_tokens": 16738,
+ "output_tokens": 100,
+ "thinking_tokens": 4746,
+ "cached_tokens": 16483,
+ "est_cost_usd": 0.0215,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 85,
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16981
+  }
+ },
+ "seconds": 15.9,
+ "response_id": "79Wlav_aINzTjMcPs8qV2Ag",
+ "generated_at": "2026-09-12T22:45:18+0000"
+}

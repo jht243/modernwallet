@@ -478,6 +478,13 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in Iowa?",
     introText: "In Iowa, a will costs $0 with a free online tool like FreeWill or roughly $285 to $760 for a simple attorney-drafted will, about 5% below the national baseline. Iowa does not recognize holographic wills, has no state estate tax, and fully repealed its inheritance tax effective January 1, 2025.",
     lawContext: "Under Iowa Code 633.279, a valid will must be in writing, signed by the testator, and declared by the testator to be the will and witnessed by two competent persons who signed as witnesses in the testator's presence. Iowa does not recognize holographic wills, though Iowa Code 633.279(2) allows self-proving affidavits so the will can be admitted to probate without live witness testimony.\n\nAttorney fees in Iowa run about $285-$760 for a simple will, $713-$2,375 for a moderate estate plan, and $2,375-$7,125+ for complex plans. Iowa has no state estate tax, and its inheritance tax was fully phased out for deaths on or after January 1, 2025, so only federal estate tax rules apply going forward. Online options include FreeWill ($0), LegalZoom ($129/$229), Trust & Will ($199/$299), and Nolo WillMaker ($99-$209).",
+    extraFaqs: [
+      {
+        question: "Do all estates have to go through probate in Iowa?",
+        answer:
+          "No, not all estates have to go through full probate in Iowa. Under Iowa Code section 633.356, an estate can avoid court administration through a small-estate affidavit if personal property subject to probate is $100,000 or less. To qualify, at least 40 days must have passed since the death, no probate proceeding can be pending, and the estate cannot include any real estate. Estates that do not qualify must go through full probate, where Iowa sets attorney and executor pay by statutory fee schedule under Iowa Code section 633.197 and 633.198. You can estimate those state-mandated costs on our [probate fee calculator](/probate/fee-calculator/).",
+      },
+    ],
   },
   "kansas": {
     title: "Will Cost in Kansas 2026: Attorney vs Online Prices",
@@ -590,6 +597,18 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in New Mexico?",
     introText: "In New Mexico, an attorney-drafted will typically costs $285 to $760 for a simple document, $715 to $2,375 for one of moderate complexity, and $2,375 to $7,125+ for complex estates. Online services range from free through FreeWill to $299 through Trust & Will. Legal-services costs in New Mexico run slightly below the U.S. average.",
     lawContext: "New Mexico wills must be in writing, signed by a testator age 18 or older, and witnessed by two competent individuals who sign in the testator's presence (NMSA §45-2-502). A self-proving affidavit executed before a notary streamlines probate. Holographic (handwritten unwitnessed) wills are not recognized in New Mexico.\n\nAttorney fees in New Mexico trend about 5% below the national baseline. New Mexico imposes no state estate tax and no inheritance tax, so tax planning is federal-only unless the estate exceeds the federal exemption. Online options like FreeWill ($0), LegalZoom ($129 basic / $229 with attorney help), Trust & Will ($199 individual / $299 couple), and Nolo Quicken WillMaker ($99-$209) all produce documents that meet New Mexico's execution requirements when signed and witnessed correctly.",
+    extraFaqs: [
+      {
+        question: "Do you have to probate a will in New Mexico?",
+        answer:
+          "You do not always have to probate a will in New Mexico. Under New Mexico Statutes Annotated (NMSA) 1978, Section 45-3-1201, a small-estate affidavit skips probate court for estates under $50,000 once at least 30 days have passed since the death. Assets held in a living trust, plus life insurance and retirement accounts with named beneficiaries, bypass probate entirely and do not count toward that $50,000 limit. For estates above that threshold, New Mexico operates as a Uniform Probate Code state and offers an informal [probate process](/guides/probate-process-guide/). This option moves faster than formal probate when there is a valid, uncontested will and no contested property claims.",
+      },
+      {
+        question: "Is New Mexico a community-property state, and does that affect my will?",
+        answer:
+          "Yes, New Mexico is one of nine U.S. community-property states, which directly limits what your will can distribute. Under state law, you can generally only use a will to give away your separate property plus your half of the couple's community property. The will cannot transfer your spouse's half of that community property. Unless you have a separate marital agreement, make sure your will's language matches how your accounts and property are titled, since mismatches are a common source of disputes after death.",
+      },
+    ],
   },
   "new-york": {
     title: "Will Cost in New York: Attorney vs Online (2026)",
@@ -701,7 +720,14 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     metaDescription: "How much does a will cost in Washington? Attorney fees run $360-$960 simple, $900-$3,000 moderate. State estate tax rates reset July 2026.",
     h1: "How Much Does a Will Cost in Washington State?",
     introText: "Washington has some of the highest will costs in the country, about 20% above the national average. Simple attorney-drafted wills cost $360 to $960, while wills for moderate estates cost $900 to $3,000, driven by Seattle-area attorney rates and Washington's own state estate tax. A major rate change is coming on July 1, 2026.",
-    lawContext: "Washington does not recognize holographic wills. A valid will must be signed by the testator in the presence of two competent witnesses who also sign. Self-proving affidavits are permitted. Washington is a community property state, meaning property acquired during marriage is generally owned equally by both spouses.\n\nWashington imposes its own state estate tax on estates exceeding $3 million (2026 threshold), and rates are currently in a temporary elevated period: from July 1, 2025 through June 30, 2026, the top marginal rate is 35% on the largest estates. On July 1, 2026, the top rate resets to 20%.",
+    lawContext: "Washington does not recognize holographic wills. A valid will must be signed by the testator in the presence of two competent witnesses who also sign. Self-proving affidavits are permitted. Washington is a community property state, meaning property acquired during marriage is generally owned equally by both spouses.\n\nWashington imposes its own state estate tax on estates exceeding $3 million (2026 threshold), and rates are currently in a temporary elevated period: from July 1, 2025 through June 30, 2026, the top marginal rate is 35% on the largest estates. On July 1, 2026, the top rate resets to 20%. Because Washington's $3 million threshold is far below the federal $15 million exemption, homeowners with a house plus retirement accounts should check their total estate value before assuming a will alone — without a trust — is enough; see the [estate tax calculator](/estate-planning/estate-tax-calculator/).",
+    extraFaqs: [
+      {
+        question: "Do I need a will if my spouse and I already own everything jointly in Washington?",
+        answer:
+          "Yes, you still need a will even though community property and jointly owned assets typically pass directly to the surviving spouse without probate. A will lets you name an executor to handle the estate, designate a guardian for minor children, and direct where any separate property goes. Without one, a court appoints an administrator, and Washington's default intestacy rules determine who receives that property. Those state defaults may not match what you and your spouse would have chosen.",
+      },
+    ],
   },
   "west-virginia": {
     title: "How Much Does a Will Cost in West Virginia? (2026)",

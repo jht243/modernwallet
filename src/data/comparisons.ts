@@ -2868,6 +2868,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "Can my child spend a UTMA on anything?", answer: "Yes, once your child reaches the age of majority (18 to 21, up to 25 in some states), they take full control of the UTMA and can legally spend the entire balance on anything. A 529 stays under the account owner's control." },
       { question: "What happens if I don't use 529 money for school?", answer: "Non-qualified 529 withdrawals owe income tax plus a 10% penalty on the earnings portion. You can avoid this by changing the beneficiary or rolling up to $35,000 of unused funds into the beneficiary's Roth IRA if the account is at least 15 years old. See [what to do with leftover 529 money](/guides/529-leftover-money-options/) for the full list of options and the Roth-rollover rules in detail." },
       { question: "Can I convert a UTMA to a 529 plan?", answer: "Not directly — you can't roll UTMA assets into a 529 tax-free. The custodian sells the UTMA's holdings (which can trigger capital gains tax under the kiddie tax) and moves the cash into a custodial 529 plan for the same child. A custodial 529 still legally belongs to the child, unlike a standard parent-owned 529, so it becomes theirs at the age of majority just like the UTMA would have." },
+      { question: "Can a 529 or UTMA lose money if the market drops?", answer: "Yes, both accounts can lose value if the market drops, and neither comes with a guarantee or insurance from the Federal Deposit Insurance Corporation (FDIC) or the National Credit Union Administration (NCUA). A 529 plan's age-based portfolio option automatically shifts money from stocks toward conservative holdings like bonds and cash-like investments as the child gets closer to college age. This reduces market risk right before the money is needed, but it does not eliminate it. A Uniform Transfers to Minors Act (UTMA) account has no automatic glide path. It stays invested however the custodian originally chose, so the account can remain heavily in stocks right up until the child takes control." },
     ],
     sources: [
       { label: "IRS Topic 313: Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
@@ -2875,6 +2876,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Federal Student Aid: How aid is calculated", url: "https://studentaid.gov/complete-aid-process/how-calculated" },
     ],
     relatedComparisons: ["529-vs-roth-ira","529-vs-brokerage-account","utma-vs-ugma"],
+    updated: "2026-09-12",
     calculatorLinks: [ { label: "529 savings calculator", href: "/529-savings-calculator/" }, { label: "Investment calculator", href: "/investing/" } ],
   },
 
@@ -2958,6 +2960,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "Does a child need a job to open a UTMA?", answer: "No, a child does not need earned income to have a UTMA or UGMA funded. Anyone can gift money to it, which is why it is often the only investing option for a newborn or a young child who is not yet working. That includes a grandparent. See [which providers let a grandparent open the account](/roundup/best-custodial-roth-ira-providers/) for the specifics on each." },
       { question: "How does each account affect college financial aid?", answer: "A UTMA is counted as the student's own asset on the FAFSA and assessed at up to 20%, which reduces aid more than a parent's assets do. Retirement accounts, including a custodial Roth IRA, are not reported as assets on the FAFSA, so the Roth is gentler on aid eligibility." },
       { question: "What happens to the account if the custodian dies before the child turns 18?", answer: "A named successor custodian takes over managing the account for the child, or a parent or guardian can petition the court to appoint one if no successor was named. This applies the same way to a custodial Roth IRA's custodian and a UTMA's custodian, since both account types are set up under state law with a responsible adult managing assets until the child reaches the age of majority. Naming a successor custodian when you first open either account avoids the court step entirely, and most account paperwork includes that field up front." },
+      { question: "Can I lose money in a custodial Roth IRA or a UTMA if the market drops?", answer: "Yes, you can lose money in both accounts if the market drops. Custodians typically invest these balances in securities such as stocks, mutual funds, and exchange-traded funds instead of holding plain cash. Neither account carries Federal Deposit Insurance Corporation (FDIC) or National Credit Union Administration (NCUA) deposit insurance, which covers only cash held at a bank or credit union. Securities Investor Protection Corporation (SIPC) coverage protects against a brokerage firm failing, but it does not protect against ordinary market losses." },
     ],
     sources: [
       { label: "IRS — Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
@@ -2966,11 +2969,13 @@ export const COMPARISONS: ComparisonEntry[] = [
     ],
     relatedComparisons: ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma", "custodial-roth-ira-vs-brokerage-account", "custodial-roth-ira-vs-traditional-ira"],
     calculatorLinks: [ { label: "Investment calculator", href: "/investing/" } ],
+    updated: "2026-09-12",
   },
 
   // ─── Custodial Roth IRA vs Brokerage Account (ga4-top-pages pass 2026-07-08) ──
   {
     slug: "custodial-roth-ira-vs-brokerage-account",
+    updated: "2026-09-12",
     title: "Custodial Roth IRA vs Brokerage Account for Kids (2026)",
     metaDescription:
       "Custodial Roth IRA vs brokerage account: the Roth needs a job but grows tax-free; the brokerage account is taxable but open to anyone, no income rule.",
@@ -3066,6 +3071,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         question: "Can a custodial Roth IRA be used for college?",
         answer:
           "Contributions come out of a custodial Roth IRA anytime, tax- and penalty-free, so a family can tap them for tuition in a pinch. Earnings are different: withdrawing earnings before age 59½ normally owes tax plus a 10% penalty, but the IRS waives the 10% penalty (not the tax) when the money pays for the account owner's qualified higher-education expenses. A custodial brokerage account has no such carve-out, so any of its gains sold to pay tuition are simply taxed under the kiddie tax that year.",
+      },
+      {
+        question: "Can I lose money in a custodial brokerage account the way I could in the stock market?",
+        answer:
+          "Yes, your balance can go down if your investments lose value, exactly as it can in any ordinary brokerage account. Custodians typically invest these accounts in securities like stocks, mutual funds, and ETFs. Neither carries FDIC or NCUA deposit insurance, because those programs cover only cash deposits at banks or credit unions. Where SIPC coverage applies, it protects against the brokerage firm itself failing, but it does not protect against normal market losses.",
       },
     ],
     sources: [
@@ -3491,7 +3501,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       },
       {
         question: "Trump account vs high yield savings — which grows more?",
-        answer: "A Trump account typically grows far more over 18 years because it is invested in an S&P 500 index fund. At a 7% return, a $1,000 seed grows to about $3,513, or roughly $89,657 with $200 a month added. A high-yield savings account at ~4%, taxed yearly, cannot match that over the same period. Run your own high-yield savings numbers with our [high-yield savings calculator](/investing/high-yield-savings-calculator/)."
+        answer: "A Trump account typically grows far more over 18 years because it is invested in an S&P 500 index fund. At a 7% return, a $1,000 seed grows to about $3,513, or roughly $89,657 with $200 a month added. A high-yield savings account at ~4%, taxed yearly, cannot match that over the same period — a Trump Account does not pay a fixed interest rate the way a savings account does, since it is a stock-index investment; see [how Trump Account growth actually works](/guides/trump-savings-account/) if that's the comparison you had in mind. Run your own high-yield savings numbers with our [high-yield savings calculator](/investing/high-yield-savings-calculator/)."
       },
       {
         question: "Is money in a Trump account FDIC-insured like a savings account?",

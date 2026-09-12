@@ -1,0 +1,35 @@
+{
+ "slug": "trump-account-worth-it--taxpayer-funding",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 86,
+ "floor": 0,
+ "input_tokens": 16844,
+ "output_tokens": 104,
+ "thinking_tokens": 5381,
+ "cached_tokens": 16483,
+ "est_cost_usd": 0.0239,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 86,
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16981
+  }
+ },
+ "seconds": 16.9,
+ "response_id": "pdWlau2UIpnQjMcP6OnQqAk",
+ "generated_at": "2026-09-12T22:44:05+0000"
+}

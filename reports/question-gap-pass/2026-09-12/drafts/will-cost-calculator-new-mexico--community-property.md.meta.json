@@ -1,0 +1,35 @@
+{
+ "slug": "will-cost-calculator-new-mexico--community-property",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 83,
+ "floor": 0,
+ "input_tokens": 16725,
+ "output_tokens": 104,
+ "thinking_tokens": 8731,
+ "cached_tokens": 16483,
+ "est_cost_usd": 0.0364,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 83,
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16981
+  }
+ },
+ "seconds": 30.8,
+ "response_id": "LNalaqmgHtnV-sAP3vXp4Qw",
+ "generated_at": "2026-09-12T22:46:34+0000"
+}

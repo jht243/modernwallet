@@ -10,6 +10,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
   {
     calculator: "estate-planning",
     slug: "will-cost-calculator",
+    updated: "2026-09-12",
     islandId: "will-cost",
     title: "Estate Planning & Will Cost Calculator — 2026 State Prices",
     metaDescription:
@@ -68,6 +69,11 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         answer:
           "A will is cheaper upfront: $300 to $7,500+ attorney-drafted (or as low as $99 online), versus $1,500 to $5,000+ for a revocable living trust ($499–$599 online). The tradeoff is what happens at death — a will goes through public probate court, while a trust's assets bypass probate entirely. Our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) breaks down trust pricing, and [living trust vs will](/compare/living-trust-vs-will/) covers the full probate-cost, privacy, and multi-state-property tradeoffs side by side.",
       },
+      {
+        question: "How long does it take to get a will done?",
+        answer:
+          "An online will-making service typically produces a completed document in well under an hour. An attorney-drafted will usually takes two to four weeks total from the initial consultation through revisions and final signing for a moderate-complexity plan. The attorney typically prepares a first draft within a few business days of that initial meeting, but complex situations involving blended families, business interests, or trusts take longer. Either way, a will is not legally effective until it is properly executed by signing with the required witnesses present.",
+      },
     ],
     sources: [
       { label: "Legaltemplates 2026 — 909-firm estate planning cost study", url: "https://legaltemplates.net/resources/estate-planning/cost-of-estate-planning/" },
@@ -105,6 +111,7 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
   {
     calculator: "estate-planning",
     slug: "living-trust-cost-calculator",
+    updated: "2026-09-12",
     islandId: "living-trust-cost",
     title: "Living Trust Cost Calculator: RLT, ILIT & Dynasty Trusts",
     metaDescription:
@@ -192,6 +199,16 @@ export const ESTATE_PLANNING_SPOKES: SpokeEntry[] = [
         question: "What is the \"7-year rule\" for trusts?",
         answer:
           "There is no U.S. federal or state \"7-year rule\" that applies to a revocable or irrevocable living trust. The phrase comes from UK inheritance-tax law, where a gift outside a trust generally falls out of the estate after 7 years, and it doesn't carry over to U.S. trust or estate-tax rules. The lookback period that does apply to a U.S. trust is Medicaid's 5-year lookback on transfers into a Medicaid Asset Protection Trust, a different rule for a different purpose.",
+      },
+      {
+        question: "What are the disadvantages of putting life insurance in a trust?",
+        answer:
+          "The primary disadvantage is losing ownership and control of the policy, because an irrevocable life insurance trust (ILIT) cannot be altered or canceled, unlike a revocable living trust. Attorney-drafted ILIT setup also costs $2,500 to $4,000. Ongoing administration requires the trustee to send Crummey notices to beneficiaries each time a premium payment is made so the gift qualifies for the annual gift-tax exclusion. People who manage trust administration on their own often miss this compliance step. Finally, transferring an existing policy pulls the proceeds back into your taxable estate under Internal Revenue Code (IRC) section 2035(a) if you die within three years of the transfer.",
+      },
+      {
+        question: "How do I put life insurance into a trust?",
+        answer:
+          "The cleanest method is to have a new policy issued directly in the name of an Irrevocable Life Insurance Trust (ILIT). Under the Internal Revenue Code (IRC) section 2035(a) three-year lookback rule, transferring an existing policy leaves the proceeds in your taxable estate if you die within three years. The trustee must pay the ongoing premiums instead of you and send Crummey notices to beneficiaries for each payment so it qualifies as a tax-free gift. DIY estate-planning software is not appropriate for an ILIT. An attorney must draft the trust, which typically costs $2,500 to $4,000.",
       },
     ],
     sources: [
