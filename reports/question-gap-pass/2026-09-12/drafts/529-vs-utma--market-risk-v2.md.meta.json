@@ -1,0 +1,35 @@
+{
+ "slug": "529-vs-utma--market-risk-v2",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 130,
+ "floor": 0,
+ "input_tokens": 17245,
+ "output_tokens": 194,
+ "thinking_tokens": 29118,
+ "cached_tokens": 16483,
+ "est_cost_usd": 0.1136,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 130,
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16981
+  }
+ },
+ "seconds": 82.0,
+ "response_id": "39mlapn4JdnV-sAP3vXp4Qw",
+ "generated_at": "2026-09-12T23:03:13+0000"
+}

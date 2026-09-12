@@ -1,70 +1,60 @@
-# Question-Gap-Pass Auto — Gap Chart (2026-09-05)
+# question-gap-pass — Gap Chart — 2026-09-12
 
-20 pages analyzed via 4 parallel Phase 2+3 sub-passes (real GSC top-90-day-click pages + real Google
-PAA questions via DataForSEO + locally generated follow-ups). Full per-question tables are in the
-4 sub-agent outputs summarized below; this file records the AUTO-APPROVED action set actually executed
-in Phase 4, applying the deterministic rule: every Add/Strengthen/Link the sub-passes produced is
-auto-approved, subject to the existing high-value/not-elsewhere filters. Three items were DROPPED
-(not auto-approved) because no primary source could ground them without fabrication, per the YMYL
-hard rule — "ground every claim or DROP the enrichment":
-- "What does Dave Ramsey say about UTMA accounts?" / "...about 529?" (2 pages) — Ramsey Solutions'
-  specific published stance on UTMA/529 accounts was not verified from a primary source.
-- "Why are people boycotting 529 plans?" (2 pages) — no grounded, verifiable basis for this PAA claim.
-- Exact dollar figures for E7/average military retirement pay, IRS payment-plan modification fees,
-  "Americans with $1M in liquid/retirement assets," and SNT-specific tax/Section-8 mechanics — written
-  as hedged, non-numeric answers (pointing to the DoD pay chart / existing site tools) rather than
-  invented figures, per each sub-pass's explicit flag.
+Top 20 pages by GSC clicks (90-day window). 17/20 were also analyzed by the 2026-09-05 run
+(see cache.json) — most rows this time are `Skip — already shipped last run` or newly-scored
+against fresh PAA data. Only the 3 New Mexico/Iowa/Washington will-cost-calculator state pages
+were genuinely unanalyzed before this run. Full per-question tables (108 real PAA questions +
+~350 generated candidates, every one scored) were produced by four parallel analysis passes and
+are summarized here; the complete row-by-row tables live in this run's task history.
 
-## Add / Strengthen (executed — see commit diff for exact text)
+## Trump Account cluster (6 pages, 35 clicks / 1,921 impr combined)
+- `/compare/trump-account-vs-brokerage-account/` (15 clicks) → Add 0 · Strengthen 0 · Link 1 identified (not applied) · Skip 23
+- `/compare/trump-account-vs-savings-account/` (9 clicks) → Add 0 · Strengthen 0 · Link 1 applied + 3 identified · Skip 20
+- `/compare/trump-account-vs-baby-bonds/` (5 clicks) → Add 0 · Strengthen 0 · Link 2 identified · Skip 21
+- `/trump-account/` (3 clicks) → Add 0 · Strengthen 0 · Link 1 identified · Skip 22
+- `/guides/trump-account-worth-it/` (2 clicks) → **Add 1** ("Are taxpayers paying for Trump Accounts?") · Strengthen 0 · Link 1 identified · Skip 20
+- `/compare/trump-account-vs-529/` (1 click) → Add 0 · Strengthen 0 · Link 1 identified · Skip 21
 
-| Page | Question | Action |
-|---|---|---|
-| /compare/trump-account-vs-brokerage-account/ | Does the $1,000 Trump Account seed expire or have a claim deadline? | Add |
-| /trump-account/ | Does an adopted child qualify for a Trump Account the same as a biological child? | Add |
-| /compare/trump-account-vs-savings-account/ | Does a Trump Account or kids savings account affect SNAP/Medicaid eligibility? | Add |
-| /investing/withdrawal-calculator/ | What is the 7% withdrawal rule? | Add |
-| /investing/withdrawal-calculator/ | How long will $500,000 last in retirement at 62? | Strengthen |
-| /investing/withdrawal-calculator/ | How much do I need in a 401(k) to get $3,000/month? | Add |
-| /net-worth/liquid-net-worth-calculator/ | How many Americans have $1,000,000 in liquid assets? | Add (hedged) |
-| /portfolio/60-40-portfolio-calculator/ | How many Americans have $1,000,000 in retirement? | Add (hedged) |
-| /retirement/military-retirement-calculator/ | How much is E7 retirement pay with 20 years? | Strengthen (hedged) |
-| /retirement/military-retirement-calculator/ | How much does a retired military member make a month? | Strengthen (hedged) |
-| /compare/custodial-roth-ira-vs-utma/ | What are the downsides of the account not already covered — full list? | Link (see below) |
-| /compare/529-vs-utma/ | What is the 529 loophole (Roth IRA rollover)? | Link (see below) |
-| /tax-resolution/irs-payment-plan-calculator/ | Is it a good idea to do a payment plan with the IRS? | Add |
-| /tax-resolution/irs-payment-plan-calculator/ | What if I can't afford an IRS payment plan? | Strengthen |
-| /estate-planning/living-trust-cost-calculator/ | What is the downside of having a living trust? | Strengthen |
-| /estate-planning/living-trust-cost-calculator/ | What is the "7 year rule" for trusts? | Add (myth-bust) |
-| /estate-planning/ | What are common mistakes to avoid in estate planning? | Add |
-| /roundup/best-estate-planning-software/ | Which child should be executor? | Add |
-| /elder-care/special-needs-trust-calculator/ | How much money can a special needs trust hold? | Strengthen |
-| /elder-care/special-needs-trust-calculator/ | What is the downside of a special needs trust? | Strengthen |
-| /roundup/best-ira-accounts/ | Is it better to put money in a CD or an IRA? | Add |
-| /roundup/best-ira-accounts/ | Where can I get 7% interest on my money? | Add (hedged) |
-| /roundup/best-ira-accounts/ | Where can I put $10,000 to make the most money? | Strengthen |
+## Estate planning / will-cost cluster (5 pages, 8 clicks / 337 impr combined)
+- `/estate-planning/living-trust-cost-calculator/` (3 clicks) → **Add 2** (ILIT life-insurance disadvantages + how-to) · Strengthen 0 · Link 1 identified · Skip 21
+- `/roundup/best-estate-planning-software/` (1 click) → Add 0 · Strengthen 0 · Link 2 identified · Skip 22
+- `/estate-planning/will-cost-calculator/new-mexico/` (2 clicks, **new page**) → **Add 2** (NM probate threshold + community property) · Strengthen 0 · Link 2 identified · Skip 14
+- `/estate-planning/will-cost-calculator/iowa/` (1 click, **new page**) → **Add 1** (Iowa probate threshold, corrected figure) · Strengthen 0 · Link 3 identified · Skip 15
+- `/estate-planning/will-cost-calculator/washington/` (1 click, **new page**, SERP unread) → **Add 1** (joint-ownership) · **Strengthen 1** (lawContext connecting sentence) · Link 2 identified · Skip 11
+- Base spoke `will-cost-calculator` (applies to hub + all 50 states) → **Add 1** ("How long does it take to get a will done?")
 
-## Link (executed — one high-value, genuinely-missing link per page, capped)
+## Custodial / 529 / UTMA cluster (3 pages, 3 clicks / 273 impr combined)
+- `/compare/custodial-roth-ira-vs-utma/` (1 click) → **Add 1** (market-risk FAQ) · Strengthen 0 · Link 3 identified · Skip 20
+- `/compare/custodial-roth-ira-vs-brokerage-account/` (1 click) → **Add 1** (market-risk FAQ) · Strengthen 0 · Link 2 identified · Skip 21
+- `/compare/529-vs-utma/` (1 click, forum-dominated SERP) → **Add 1** (market-risk FAQ, lived-experience tone, regenerated post-audit) · Strengthen 0 · Link 4 identified · Skip 15 (2 more flagged for research, not actioned: "Dave Ramsey on 529s" and "529 boycott" — no verifiable source in hand, correctly not fabricated)
 
-| Page | Target | Question it answers |
-|---|---|---|
-| /compare/trump-account-vs-baby-bonds/ | /compare/trump-account-vs-529/ | Key differences between a 529 plan and a Trump Account |
-| /guides/trump-account-worth-it/ | /investing/roth-ira-calculator/ | How much will $10,000 in a Roth IRA be worth in 20 years |
-| /compare/custodial-roth-ira-vs-utma/ | /compare/custodial-account-vs-savings-account/ | Can I take the UTMA money back for myself |
-| /compare/custodial-roth-ira-vs-brokerage-account/ | /compare/iul-vs-roth-ira/ | How much will $10,000 in a Roth IRA be worth in 20 years |
-| /compare/529-vs-utma/ | /guides/529-leftover-money-options/ | What is the 529 loophole |
-| /compare/trump-account-vs-529/ | /guides/trump-account-worth-it/ | (SNAP/Medicaid theme — link forward once added there) |
-| /investing/high-yield-savings-calculator/ | /guides/pay-off-debt-or-invest/ | Should I put money in a HYSA or pay off debt first |
-| /portfolio/60-40-portfolio-calculator/ | /guides/how-to-retire-with-1-million/ | How long will $1,000,000 last using the 4% rule |
-| /estate-planning/living-trust-cost-calculator/ | /roundup/best-estate-planning-software/ | What assets cannot be placed in a trust |
-| /estate-planning/ | /guides/probate-process-guide/ | What happens if I die without a will |
-| /roundup/best-estate-planning-software/ | /compare/living-trust-vs-will/ | Is it better to put your estate in a trust or a will |
-| /elder-care/special-needs-trust-calculator/ | /compare/special-needs-trust-vs-able-account/ | SNT vs ABLE account |
-| /roundup/best-ira-accounts/ | /compare/rollover-ira-vs-traditional-ira/ | Does an IRA protect my money in a lawsuit/bankruptcy |
+## Misc calculators / roundup cluster (6 pages, 8 clicks / 2,435 impr combined)
+- `/investing/withdrawal-calculator/` (2 clicks, PAA empty for this query) → Add 0 · Link 1 identified · Skip 25
+- `/retirement/military-retirement-calculator/` (2 clicks) → Add 0 · Link 1 identified · Skip 25
+- `/roundup/best-ira-accounts/` (1 click) → Add 0 · Link 1 identified · Skip 23
+- `/investing/high-yield-savings-calculator/` (1 click) → Add 0 · Link 0 · Skip 24 (most thoroughly enriched page in the cluster — nothing left to close)
+- `/net-worth/liquid-net-worth-calculator/` (1 click) → Add 0 · Link 0 · Skip 25
+- `/portfolio/60-40-portfolio-calculator/` (1 click) → Add 0 · Link 0 · Skip 26
 
-## Skipped (already clear, already linked, or below the value bar)
-See the 4 sub-pass outputs for the full per-page question tables (~90 questions total). The large
-majority of PAA + generated questions scored `clear` against their own page or were already linked
-by the 2026-08-29 run (verified live against the current file, not just the cache).
+## TOTAL across 20 pages (+ 1 base spoke)
+- **Add: 11** (all API-generated via `scripts/lib/content_gen.py section`, `.meta.json` committed alongside)
+- **Strengthen: 1** (one-sentence in-context edit, exempt from API generation)
+- **Link applied: 2** (one-sentence internal-link insertions, exempt from API generation)
+- **Link identified, not applied this run: ~28** (recorded in `cache.json` `planned_links` as "identified, not yet applied" — safe, low-risk, cheap fixes for a future run; deprioritized this run in favor of the 11 substantive Add gaps, all real PAA/AI-Overview-citation-driven)
+- **Skip: ~410** (of ~450 questions scored — most rows were already clear on-page, especially the 17 pages the 2026-09-05 run already enriched)
 
-## Audit
-See Phase 5 section of the run email for pass/fail counts.
+## Phase 5 audit
+8/13 pieces passed on first read; 5 failed (3 unlinked first-mention entities, 1 banned
+em-dash/semicolon punctuation, 1 wrong register for a forum-dominated page). All 5 fixed:
+4 as Rung-1 mechanical fix-in-place (add the missing link, remove the banned punctuation), 1 as
+a Rung-2 regeneration through the API writer with a corrections block (529-vs-utma market-risk
+FAQ, rewritten to lead with the real parent worry instead of a neutral mechanism explainer).
+13/13 pass on re-check. Zero pages reverted.
+
+## Fact-check finding (out of scope for this run, flagged for a future fact-audit pass)
+Iowa's small-estate probate threshold is stated as **$100,000** in this run's new content
+(verified live 2026-09-12 against Iowa Code §633.356 as amended by House File 2660, effective
+July 1, 2026 — previously $50,000). An **older, incorrect $200,000 figure for Iowa already
+exists elsewhere on the site** (`src/data/spokes-probate.ts`, probate-timeline calculator
+content). This is a pre-existing site error, not introduced by this run — flagged here for a
+dedicated fact-audit pass to correct.
