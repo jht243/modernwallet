@@ -65,6 +65,23 @@ FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-5.6-sol")
 # effort, Anthropic extended thinking). Standard set 2026-09-06. An empty or unrecognised
 # value falls back to "high" rather than silently omitting reasoning; a numeric value is a
 # Gemini token budget for deliberate experiments only.
+# Per-SITE tier (2026-09-12): a repo may carry `.claude/content-gen.env` (plain KEY=VALUE, no
+# secrets) — e.g. CONTENT_THINKING=medium on growing sites while major sites keep "high". Loaded
+# here, before the defaults below, with the environment winning over the file. Shipped per repo
+# by scripts/sync-content-gen.sh from its MAJOR/growing tier list.
+def _load_repo_config() -> None:
+    d = pathlib.Path.cwd().resolve()
+    for c in [d] + list(d.parents):
+        f = c / ".claude" / "content-gen.env"
+        if f.exists():
+            for line in f.read_text(errors="ignore").splitlines():
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1); os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+            return
+        if (c / ".git").exists():
+            return
+_load_repo_config()
 _t = os.environ.get("CONTENT_THINKING", "high").strip().lower()
 THINKING = _t if (_t in ("low", "medium", "high") or _t.lstrip("-").isdigit()) else "high"
 if _t and THINKING != _t:
@@ -83,6 +100,14 @@ JSON_MODE = False   # set by complete(json_mode=True): ask the provider for a JS
 RATES = {
     "gemini-3.8-flash": (0.75, 3.75),
 }
+# Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a
+# run (~25k tokens), so it is cached ONCE per run and referenced per call. Cached input bills at
+# a fraction of the input rate (CONTENT_RATE_CACHED, default 0.25 of input) plus a negligible
+# hourly storage fee. CONTENT_CACHE=0 disables; CONTENT_CACHE_MIN_TOKENS is the size floor.
+CACHE_ON = os.environ.get("CONTENT_CACHE", "1") != "0"
+CACHE_MIN_TOKENS = int(os.environ.get("CONTENT_CACHE_MIN_TOKENS", "4096"))
+CACHE_TTL_S = int(os.environ.get("CONTENT_CACHE_TTL", "3600"))
+CACHED_RATE = float(os.environ.get("CONTENT_RATE_CACHED", "0.25"))
 
 SECRET_FILES = [os.environ.get("CONTENT_SECRETS", ""), ".env",
                 os.path.expanduser("~/.claude/secrets.env")]
@@ -145,7 +170,8 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
     """Append one billable call to the ledger. Never raises — accounting must not break a run."""
     try:
         it, ot, tt = r.get("input_tokens"), r.get("output_tokens"), r.get("thinking_tokens")
-        cost = est_cost(r.get("model", "?"), it, ot, tt)
+        ct = r.get("cached_tokens") or 0
+        cost = est_cost(r.get("model", "?"), it, ot, tt, ct)
         _RUN["calls"] += 1
         _RUN["in"] += it or 0; _RUN["out"] += ot or 0; _RUN["think"] += tt or 0
         if cost is None and (it or ot):
@@ -156,7 +182,7 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
             "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),   # UTC, so --since filters match Google's day buckets
             "caller": CALLER, "kind": kind, "model": r.get("model"),
             "provider": r.get("provider"), "input_tokens": it, "output_tokens": ot,
-            "thinking_tokens": tt, "cost_usd": cost, "thinking": THINKING,
+            "thinking_tokens": tt, "cached_tokens": ct, "cost_usd": cost, "thinking": THINKING,
             "fallback_used": bool(r.get("fallback_used")), "finish": r.get("finish"),
             "discarded": discarded, "note": note, "repo": (_repo_root().name if _repo_root() else None),
             "response_id": r.get("response_id"),
@@ -250,6 +276,49 @@ def _post(url: str, headers: dict, payload: dict, timeout: int = 900) -> dict:
 
 
 # ───────────────────────────── providers ─────────────────────────────
+
+def _cache_key(model: str, system: str) -> str:
+    import hashlib
+    return hashlib.sha256((model + "\n" + system).encode()).hexdigest()[:16]
+
+
+def _cache_file(model: str, system: str) -> pathlib.Path:
+    import tempfile
+    d = pathlib.Path(tempfile.gettempdir()) / "content_gen_cache"; d.mkdir(parents=True, exist_ok=True)
+    return d / (_cache_key(model, system) + ".json")
+
+
+def _cache_forget(model: str, system: str) -> None:
+    try: _cache_file(model, system).unlink()
+    except Exception: pass
+
+
+def _gemini_cache(model: str, system: str, headers: dict):
+    """Name of a cachedContents entry holding this system prompt, creating it once per run
+    (cross-process: the name lives in a temp file keyed by model+system). None = send inline."""
+    if not CACHE_ON or len(system) // 4 < CACHE_MIN_TOKENS:
+        return None
+    f = _cache_file(model, system)
+    try:
+        if f.exists():
+            d = json.loads(f.read_text())
+            if d.get("expires", 0) > time.time() + 90:
+                return d["name"]
+        body = {"model": f"models/{model}", "systemInstruction": {"parts": [{"text": system}]},
+                "ttl": f"{CACHE_TTL_S}s", "displayName": f"content_gen {_cache_key(model, system)}"}
+        r = _post("https://generativelanguage.googleapis.com/v1beta/cachedContents", headers, body, timeout=120)
+        name = r.get("name")
+        if not name:
+            return None
+        f.write_text(json.dumps({"name": name, "expires": time.time() + CACHE_TTL_S,
+                                 "tokens": (r.get("usageMetadata") or {}).get("totalTokenCount")}))
+        log(f"cache created {name} (≈{len(system)//4:,} tok system prompt, ttl {CACHE_TTL_S}s) — later pages in this run bill it at {int(CACHED_RATE*100)}%")
+        return name
+    except Exception as e:  # noqa: BLE001
+        log(f"cache unavailable ({type(e).__name__}: {str(e)[:100]}) — sending system prompt inline")
+        return None
+
+
 def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
     name, key = resolve_key("gemini")
     if GEMINI_MODE == "vertex":
@@ -270,9 +339,23 @@ def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking:
         gen["thinkingConfig"] = {"thinkingBudget": int(thinking)}
     payload = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
                "generationConfig": gen}
+    cache_name = None
     if system.strip():
-        payload["systemInstruction"] = {"parts": [{"text": system}]}
-    resp = _post(url, headers, payload)
+        cache_name = _gemini_cache(model, system, headers) if GEMINI_MODE != "vertex" else None
+        if cache_name:
+            payload["cachedContent"] = cache_name
+        else:
+            payload["systemInstruction"] = {"parts": [{"text": system}]}
+    try:
+        resp = _post(url, headers, payload)
+    except Exception as e:  # noqa: BLE001 — a stale/expired cache must never fail a page
+        if cache_name:
+            log(f"cache {cache_name} rejected ({str(e)[:80]}) — resending inline, cache dropped")
+            _cache_forget(model, system)
+            payload.pop("cachedContent", None); payload["systemInstruction"] = {"parts": [{"text": system}]}
+            resp = _post(url, headers, payload)
+        else:
+            raise
     cands = resp.get("candidates") or []
     if not cands:
         raise RuntimeError(f"no candidates; promptFeedback={json.dumps(resp.get('promptFeedback', {}))[:200]}")
@@ -285,6 +368,7 @@ def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking:
             "input_tokens": u.get("promptTokenCount"),
             "output_tokens": u.get("candidatesTokenCount"),
             "thinking_tokens": u.get("thoughtsTokenCount"),
+            "cached_tokens": u.get("cachedContentTokenCount") or 0,
             "response_id": resp.get("responseId")}
 
 
@@ -385,7 +469,7 @@ def generate(system: str, prompt: str) -> dict:
         # Always log a successful generation: a silent success is invisible in cron logs, and
         # "did this run actually use Gemini?" must be answerable from the log alone.
         log(f"ok model={r['model']} in={r.get('input_tokens')} out={r.get('output_tokens')} "
-            f"think={r.get('thinking_tokens')} cost≈${est_cost(r['model'], r.get('input_tokens'), r.get('output_tokens'), r.get('thinking_tokens'))}"
+            f"think={r.get('thinking_tokens')} cached={r.get('cached_tokens') or 0} cost≈${est_cost(r['model'], r.get('input_tokens'), r.get('output_tokens'), r.get('thinking_tokens'), r.get('cached_tokens') or 0)}"
             f"{' FALLBACK' if i > 0 else ''}")
         record(r, kind=os.environ.get("CONTENT_KIND", "generate"))
         return r
@@ -596,12 +680,13 @@ def verify(text: str, a) -> tuple[dict, dict]:
 
 
 # ───────────────────────────── commands ─────────────────────────────
-def est_cost(model: str, it, ot, tt) -> float | None:
+def est_cost(model: str, it, ot, tt, ct=0) -> float | None:
     rin = os.environ.get("CONTENT_RATE_IN"); rout = os.environ.get("CONTENT_RATE_OUT")
     rate = (float(rin), float(rout)) if rin and rout else RATES.get(model.lower())
     if not rate or it is None or ot is None:
         return None
-    return round((it * rate[0] + (ot + (tt or 0)) * rate[1]) / 1_000_000, 4)
+    ct = min(ct or 0, it)   # cached tokens are part of promptTokenCount, billed at the cached rate
+    return round(((it - ct) * rate[0] + ct * rate[0] * CACHED_RATE + (ot + (tt or 0)) * rate[1]) / 1_000_000, 4)
 
 
 def cmd_preflight(a) -> int:
@@ -789,7 +874,7 @@ def cmd_system(a) -> int:
 
 
 def cmd_write(a) -> int:
-    global CALLER
+    global CALLER, JSON_MODE
     if not CALLER:
         # Routines write under reports/<routine>/<date>/drafts/… — the routine name IS the caller.
         parts = pathlib.Path(a.out).resolve().parts
@@ -797,6 +882,10 @@ def cmd_write(a) -> int:
             CALLER = parts[parts.index("reports") + 1]
     system = pathlib.Path(a.system).read_text()
     prompt = pathlib.Path(a.prompt).read_text()
+    # --format json (the default, and every TS/JSON-store page) needs the provider's actual
+    # JSON mode, or the model is free to answer in plain prose — see call_gemini/call_openai's
+    # JSON_MODE checks. `section`/markdown output never wants this.
+    JSON_MODE = (a.format == "json")
     t0 = time.time()   # writer scoping happens inside generate(), for every caller
     try:
         r = generate(system, prompt)
@@ -821,8 +910,8 @@ def cmd_write(a) -> int:
         "thinking": THINKING, "key_source": r["key_source"],
         "finish_reason": r["finish"], "words": report["words"], "floor": a.floor,
         "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"],
-        "thinking_tokens": r["thinking_tokens"],
-        "est_cost_usd": est_cost(r["model"], r["input_tokens"], r["output_tokens"], r["thinking_tokens"]),
+        "thinking_tokens": r["thinking_tokens"], "cached_tokens": r.get("cached_tokens") or 0,
+        "est_cost_usd": est_cost(r["model"], r["input_tokens"], r["output_tokens"], r["thinking_tokens"], r.get("cached_tokens") or 0),
         "guards": {**report, "writer_scope": LAST_SCOPE}, "seconds": round(time.time() - t0, 1),
         "response_id": r["response_id"],
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
