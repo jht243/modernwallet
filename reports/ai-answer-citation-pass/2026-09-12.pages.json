@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/529-vs-utma/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+      "clicks": 0,
+      "impressions": 73,
+      "ctr": 0,
+      "position": 78.27
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 63,
+      "ctr": 0,
+      "position": 95.44
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 86.06
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 56.97
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-online-will-makers/",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 81.41
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/military-retirement-vs-medical-retirement/",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 70.95
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-living-trust-services/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 63.38
+    },
+    {
+      "page": "https://www.themodernwallet.com/tax-resolution/offer-in-compromise-calculator/michigan/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 61.77
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.58
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 20.42
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.73
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 7.55
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 3.09
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/retirement-calculator-spreadsheet-template/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 74.45
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 5.27
+    },
+    {
+      "page": "https://www.themodernwallet.com/real-estate/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 60.64
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 41.18
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-roth-ira-vs-utma/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 65.7
+    },
+    {
+      "page": "https://www.themodernwallet.com/mortgage/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.1
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 8.9
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 4.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/elder-care/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 18.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/chase-travel-portal-guide/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 63.78
+    }
+  ]
+}
