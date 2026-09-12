@@ -1,0 +1,135 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-11",
+  "window_start": "2026-09-11",
+  "window_end": "2026-09-11",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 34,
+      "sessions": 37,
+      "active_users": 35,
+      "clicks": 34
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 25,
+      "sessions": 28,
+      "active_users": 26,
+      "clicks": 25
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 13,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 13
+    },
+    {
+      "page": "/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 7
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 4,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 5,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 5
+    },
+    {
+      "page": "/real-estate/rental-income-calculator/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/auto-loan/",
+      "views": 4,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 4
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 1,
+      "clicks": 4
+    }
+  ],
+  "top10_pages_total_views": 110,
+  "top10_pages_total_clicks": 110,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 18,
+      "Organic Search": 15,
+      "Unassigned": 13
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 14,
+      "Organic Search": 10,
+      "Unassigned": 10,
+      "Direct": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Cross-network": 7,
+      "Organic Search": 6,
+      "Unassigned": 6,
+      "Direct": 1
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Organic Search": 5,
+      "Direct": 1
+    },
+    "/": {
+      "Unassigned": 4,
+      "Referral": 3,
+      "Cross-network": 2,
+      "Direct": 1
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 4,
+      "Cross-network": 1,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/real-estate/rental-income-calculator/": {
+      "Direct": 4,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 3
+    },
+    "/auto-loan/": {
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Cross-network": 1,
+      "Direct": 1,
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
