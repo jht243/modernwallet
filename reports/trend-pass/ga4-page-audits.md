@@ -152,3 +152,11 @@
 | /guides/trump-account-alternatives/ | 2026-09-10 | 1 | 0/0/0/0/0 | 0 |
 | /compare/financial-advisor-vs-wealth-manager/ | 2026-09-11 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-brokerage-accounts-for-interest-on-cash/ | 2026-09-11 | 1 | 0/0/0/0/0 | 0 |
+| /auto-loan/ | 2026-09-12 | 4 | 1/0/0/0/0 | 0 |
+| /real-estate/rental-income-calculator/ | 2026-09-12 | 5 | 0/0/0/0/0 | 1 |
+| /guides/is-social-security-taxable/ | 2026-09-12 | 34 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-09-12 | 25 | 0/0/0/0/0 | 0 |
+| /investing/withdrawal-calculator/ | 2026-09-12 | 7 | 0/0/0/0/0 | 0 |
+| /roundup/best-401k-providers-for-small-business/ | 2026-09-12 | 6 | 0/0/0/0/0 | 1 |
+| /guides/401k-beneficiary-rules/ | 2026-09-12 | 5 | 0/0/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-09-12 | 4 | 0/1/0/0/0 | 2 |
