@@ -1,9 +1,9 @@
 {
   "slug": "what-is-a-family-trust",
-  "title": "What Is a Family Trust and How Does It Work?",
-  "metaDescription": "A family trust holds assets for relatives, avoids probate court, and operates under clear revocable or irrevocable legal terms.",
-  "h1": "What Is a Family Trust and How Does It Work",
-  "cardBlurb": "A family trust holds assets for relatives, avoids probate when funded as a living trust, and operates under clear tax rules.",
+  "title": "What Is a Family Trust? (Explained Simply)",
+  "metaDescription": "A family trust holds assets for relatives and avoids probate court, under clear revocable or irrevocable legal terms.",
+  "h1": "What Is a Family Trust?",
+  "cardBlurb": "What a family trust actually does, revocable vs. irrevocable, and how to decide if your estate needs one.",
   "introText": "A family trust is a legal arrangement created to hold and manage assets for the benefit of family members. Most people set up this arrangement as either a revocable living trust or an irrevocable trust. At ModernWallet, we often see households assume that a family trust is a specialized tax shield reserved only for the ultra-wealthy. That assumption is incorrect. A family trust primarily serves to transfer property privately and avoid probate court. Understanding how the underlying legal document functions helps you decide whether your household needs one or whether a simple will provides enough protection.",
   "sections": [
     {
@@ -27,7 +27,7 @@
       "body": "Even without federal estate tax exposure, a family trust offers substantial non-tax benefits that make it worth the drafting cost for many households. Avoiding probate delays and court filing expenses is often reason enough. Probate can tie up bank accounts and real estate for many months, creating financial friction for surviving family members who need immediate cash flow to maintain household expenses.\n\nIncapacity planning represents another major advantage. If you become medically incapacitated, your named successor trustee can immediately manage trust bank accounts and real property without court intervention. Without a funded trust, your family might have to petition a probate court for a conservatorship or guardianship to manage your personal assets.\n\nA family trust also gives you control over how and when your beneficiaries receive distributions. Instead of handing an eighteen-year-old child a lump-sum inheritance, your trust document can stagger distributions across specific ages or milestone events. We examine these trade-offs in depth in our guide covering [is a living trust worth it](/guides/is-a-living-trust-worth-it/)."
     },
     {
-      "heading": "Using a Pour-Over Will With a Trust",
+      "heading": "Using a Pour-Over Will with a Trust",
       "body": "A living trust does not entirely eliminate the need for a will. Estate planners routinely pair a revocable living trust with a legal document called a pour-over will. Even diligent grantors occasionally forget to retitle an asset, such as a newly opened savings account or a vehicle, into the formal name of their trust.\n\nA pour-over will serves as a legal safety net. The ABA points out that a pour-over will catches any stray asset left in your personal name at death and transfers it into your trust. The asset must still pass through probate court, but the will ensures the property ultimately distributes under the exact terms of your trust agreement.\n\nThe pour-over will also performs the job of naming legal guardians for minor children. Because a trust cannot appoint guardians, the will handles custody designations while the trust manages the financial inheritance. Both documents function together as parts of a unified estate plan, which you can map out on our [estate planning calculator](/estate-planning/) hub."
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "heading": "Next Steps for Setting Up Your Estate Plan",
-      "body": "Deciding what is a family trust worth for your situation starts with a full inventory of your real estate, bank balances, and beneficiary designations. Once you clarify whether your primary objective is probate avoidance, privacy, or multi-state property management, interview a licensed estate-planning attorney to draft the appropriate documents. A trust document provides no legal protection until you retitle your physical deeds and financial accounts into the name of the trust entity."
+      "body": "Deciding whether a family trust is worth it for your situation starts with a full inventory of your real estate, bank balances, and beneficiary designations. Once you clarify whether your primary objective is probate avoidance, privacy, or multi-state property management, interview a licensed estate-planning attorney to draft the appropriate documents. A trust document provides no legal protection until you retitle your physical deeds and financial accounts into the name of the trust entity."
     }
   ],
   "tools": [
