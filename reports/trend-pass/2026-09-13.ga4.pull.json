@@ -1,0 +1,119 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-13",
+  "window_start": "2026-09-13",
+  "window_end": "2026-09-13",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/calculators/",
+      "views": 4,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 4
+    },
+    {
+      "page": "/net-worth/net-worth-percentile-calculator/",
+      "views": 3,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 3
+    },
+    {
+      "page": "/portfolio/asset-allocation-calculator/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/net-worth/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/roundup/best-net-worth-tracker/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/net-worth/liquid-net-worth-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/vanguard-vs-fidelity/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 18,
+  "top10_pages_total_clicks": 18,
+  "channel_split": {
+    "/portfolio/asset-allocation-calculator/": {
+      "Unassigned": 2,
+      "Cross-network": 1
+    },
+    "/": {
+      "Cross-network": 1
+    },
+    "/calculators/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/compare/vanguard-vs-fidelity/": {
+      "Organic Search": 1
+    },
+    "/guides/trump-accounts/": {
+      "Direct": 1
+    },
+    "/net-worth/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/net-worth/liquid-net-worth-calculator/": {
+      "Cross-network": 1
+    },
+    "/net-worth/net-worth-percentile-calculator/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/portfolio/": {
+      "Cross-network": 1
+    },
+    "/roundup/best-net-worth-tracker/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    }
+  }
+}

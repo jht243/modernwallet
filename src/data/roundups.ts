@@ -3096,6 +3096,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     calculatorLinks: [
       { label: "Net Worth Calculator", href: "/net-worth/" },
       { label: "Investment Growth Calculator", href: "/investing/" },
+      { label: "Build your own spreadsheet (free)", href: "/guides/net-worth-calculator-spreadsheet-template/" },
     ],
   },
 

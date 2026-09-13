@@ -160,3 +160,11 @@
 | /roundup/best-401k-providers-for-small-business/ | 2026-09-12 | 6 | 0/0/0/0/0 | 1 |
 | /guides/401k-beneficiary-rules/ | 2026-09-12 | 5 | 0/0/0/0/0 | 0 |
 | /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-09-12 | 4 | 0/1/0/0/0 | 2 |
+| /calculators/ | 2026-09-13 | 4 | 0/0/0/0/0 | 1 |
+| /net-worth/net-worth-percentile-calculator/ | 2026-09-13 | 3 | 0/0/0/0/0 | 1 |
+| /portfolio/asset-allocation-calculator/ | 2026-09-13 | 3 | 0/0/0/0/0 | 1 |
+| /net-worth/ | 2026-09-13 | 2 | 0/0/1/0/0 | 0 |
+| /roundup/best-net-worth-tracker/ | 2026-09-13 | 2 | 0/0/0/0/1 | 0 |
+| /guides/trump-accounts/ | 2026-09-13 | 1 | 0/0/0/0/0 | 0 |
+| /net-worth/liquid-net-worth-calculator/ | 2026-09-13 | 1 | 0/0/0/0/0 | 0 |
+| /compare/vanguard-vs-fidelity/ | 2026-09-13 | 0 | 0/0/0/0/0 | 0 |
