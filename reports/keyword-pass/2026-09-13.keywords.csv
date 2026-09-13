@@ -1,0 +1,8 @@
+keyword,action,target_page_or_new_url,lens,tier,volume,notes
+what is a family trust,create new content,/guides/what-is-a-family-trust/,lens1-carryover,adjacent,110000,"carried over from 2026-08-30; audit-blocked twice on FAQ formatting only; rewritten this run"
+how to pay off debt,create new content,/guides/how-to-pay-off-debt/,lens1-carryover,adjacent,450000,"carried over from 2026-08-30; audit-blocked twice on FAQ formatting only; rewritten this run"
+debt consolidation,create new content,/guides/how-to-pay-off-debt/,lens1-carryover,adjacent,1220000,"same page as how-to-pay-off-debt; secondary keyword"
+social security calculator,left for human,new calculator hub (future pass),lens2-autocomplete,adjacent,,"demand inferred from live Autocomplete signal — no tool volume pulled this run (SEMRUSH dead, Ahrefs budget preserved); needs SSA bend-point formula engine"
+hsa calculator,left for human,new standalone calculator (future pass),lens2-autocomplete,adjacent,,"demand inferred from live Autocomplete signal — no tool volume pulled this run; strong precedent via existing 529 calculator engine shape"
+hsa contribution limit calculator,left for human,new standalone calculator (future pass),lens2-autocomplete,adjacent,,"demand inferred from live Autocomplete signal"
+hsa growth calculator,left for human,new standalone calculator (future pass),lens2-autocomplete,adjacent,,"demand inferred from live Autocomplete signal"

@@ -1,0 +1,106 @@
+{
+  "slug": "what-is-a-family-trust",
+  "title": "What Is a Family Trust? Costs, Rules, and Choices",
+  "metaDescription": "A family trust protects assets and avoids probate. Learn how revocable and irrevocable trusts work, tax rules, and when you need one.",
+  "h1": "What Is a Family Trust",
+  "cardBlurb": "How a family trust works, the difference between revocable and irrevocable structures, and how to decide if your estate needs one.",
+  "introText": "A family trust is a legal arrangement created to hold and manage assets for the benefit of family members, typically structured as either a revocable living trust or an irrevocable trust. At ModernWallet, we frequently see people assume that a family trust is a unique, standalone legal instrument designed only for multi-millionaires. In practice, the phrase is simply a familiar umbrella label for standard estate planning trusts that name relatives as beneficiaries.\n\nUnderstanding what is a family trust begins with recognizing how ownership changes once you fund the arrangement. When you place real estate, bank accounts, or investments into a trust, the legal entity holds title to those assets under the management of a designated trustee. This structural separation allows your property to bypass the probate court system, keep your personal distribution terms private, and establish precise rules for how loved ones inherit your wealth.",
+  "sections": [
+    {
+      "heading": "What Is a Family Trust in Legal Terms",
+      "body": "The term family trust is not an independent statutory classification under state or federal property law. According to the [American Bar Association](https://www.americanbar.org/content/dam/aba-cms-dotorg/products/inv/brochure/339471413/rev-living-trusts_wtrmk-2-5431040.pdf) (ABA), a family trust is almost universally built using a revocable living trust agreement. The person creating the trust is known as the grantor or settlor, the person administering the property is the trustee, and the family members receiving distributions are the beneficiaries.\n\nBecause state law governs the formation and execution of trust agreements, the exact language required to establish the entity varies by jurisdiction. Regardless of state borders, the core mechanics operate identically. You execute a written trust agreement defining the terms of administration, and then you formally retitle selected personal property into the name of the trust. Unfunded trust agreements hold no assets and provide zero probate protection until you complete this transfer process.\n\nMost households name themselves as the initial trustee while they remain alive and competent. This setup gives you complete operational control over your checking accounts, brokerage holdings, and family home during your lifetime. You can estimate the financial commitment of drafting these foundational documents by using our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/)."
+    },
+    {
+      "heading": "Revocable Trust vs. Irrevocable Trust Choices",
+      "body": "The fundamental divide in trust design centers on whether the creator retains the right to alter the legal terms after signing. The [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/abusive-trust-tax-evasion-schemes-questions-and-answers) (IRS) clarifies that a revocable trust can be revoked, amended, or completely dissolved by the grantor at any point during their lifetime, provided the grantor remains legally competent. Because you retain complete power to take assets back out of the trust, the IRS classifies every revocable trust as a grantor trust for income tax purposes. You report all interest, dividends, and capital gains directly on your personal Form 1040 tax return.\n\nAn irrevocable trust functions under opposite constraints. By its legal terms, an irrevocable trust cannot be modified, amended, or dissolved once executed, meaning control over all placed assets passes out of your hands permanently. While an irrevocable trust removes your personal ownership, it can still receive grantor trust tax treatment if it meets specific rules under Internal Revenue Code (IRC) sections 671, 673, 674, 675, 676, or 677. That tax determination remains separate from whether the trust document itself allows administrative amendments.\n\nGiving up control through an irrevocable vehicle represents a major commitment that cannot be undone lightly. You can learn more about annual income reporting by reading our guide on [how trusts are taxed](/guides/trust-tax-rates-explained/)."
+    },
+    {
+      "heading": "Living Trust vs. Will Mechanics",
+      "body": "A revocable living trust takes effect immediately upon execution, whereas a traditional last will and testament takes effect only upon your death. The ABA notes that the primary mechanical benefit of a living trust is probate avoidance. Probate represents the formal court process used to validate a will, verify creditor claims, and distribute estate assets under judicial supervision. A trust avoids probate because the legal entity itself, rather than the deceased person, holds title to the property at the moment of death.\n\nA will cannot bypass probate under any circumstances. When you pass away leaving only a will, your designated executor must submit the document to the probate court before transferring accounts to heirs. You can weigh will-related drafting expenses alongside court filing expectations through our [will cost calculator](/estate-planning/will-cost-calculator/).\n\nPrivacy and guardianship mark two critical differences between these tools. Once filed in probate court, a will becomes an open public record that anyone can read, inspect, or copy. A revocable living trust remains private because the agreement is generally not filed with a court. A will remains essential, however, because it is the only legal document capable of nominating a legal guardian for minor children. A living trust cannot name guardians."
+    },
+    {
+      "heading": "Tax Rules That Clarify What Is a Family Trust",
+      "body": "Federal estate tax concerns rarely dictate whether an ordinary household needs a family trust. For tax year 2026, the [IRS inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill) set the federal estate and gift tax basic exclusion amount at $15,000,000 per individual, up from $13,990,000 in 2025. This historic statutory threshold means an individual estate owes zero federal estate tax unless total wealth surpasses $15,000,000 at death.\n\nBecause the modern federal exemption sits so high, the historical sales pitch for irrevocable trusts has vanished for the vast majority of families. Moving assets into an irrevocable trust to shrink your taxable estate provides zero federal estate tax reduction if your net worth falls below $15,000,000. You surrender financial control without gaining federal tax relief.\n\nState taxation requires separate diligence. State-level estate taxes and inheritance taxes frequently apply at much lower wealth thresholds than the federal standard. State exemption levels vary widely across the country, so you must confirm your local state tax rules rather than relying entirely on federal benchmarks. You can run individual net worth calculations on our [estate tax calculator](/estate-planning/estate-tax-calculator/)."
+    },
+    {
+      "heading": "Who Needs a Trust Beyond Tax Considerations",
+      "body": "A family trust delivers substantial structural value to families who have no federal estate tax exposure whatsoever. First, avoiding probate eliminates court administrative delays that can otherwise lock up family assets for months or years. Heirs receive direct access to funds through a successor trustee without waiting on judges to grant letters of administration.\n\nSecond, a family trust provides immediate protection during periods of physical or cognitive incapacity. If you suffer a disabling medical event, your designated successor trustee steps in to manage trust assets according to your written terms. This mechanism prevents your relatives from enduring a humiliating and expensive public conservatorship proceeding.\n\nThird, trust agreements permit structured distribution timing. Rather than transferring a large lump sum to an eighteen-year-old heir, you can instruct your trustee to release funds incrementally as the child attains specific ages or milestones. You can review the complete financial balance of these protections in our guide answering [is a living trust worth it](/guides/is-a-living-trust-worth-it/)."
+    },
+    {
+      "heading": "Coordination Through a Pour-Over Will",
+      "body": "A comprehensive estate plan pairs a revocable living trust with a specialized instrument known as a pour-over will. According to the ABA, a pour-over will serves as a critical safety net by capturing any asset you acquired but neglected to retitle in the name of your trust before passing away. At your death, the pour-over will directs the probate court to transfer those forgotten assets directly into your existing trust.\n\nAssets flowing through a pour-over will must undergo probate before landing in your trust. The pour-over will does not prevent probate for omitted accounts, but it ensures that those assets ultimately distribute under your private trust instructions rather than default state intestacy statutes. Meanwhile, all property correctly titled in the name of the trust before your death bypasses probate entirely.\n\nMaintaining asset titling requires periodic review. Every time you purchase a new parcel of real estate or open a replacement investment portfolio, you must ensure the account title designates the trust as legal owner. You can explore our full collection of planning resources on the [estate planning calculator](/estate-planning/) hub."
+    },
+    {
+      "heading": "Conditions That Change the Trust Strategy",
+      "body": "A simple will is often sufficient for a person with modest assets, no real estate, and adult beneficiaries who get along. If your total property falls far below state and federal tax levels, you can often coordinate simple distributions through payable-on-death bank designations and a straightforward will.\n\nOur recommendation flips decisively toward establishing a trust under specific real-world conditions. You need a trust if you own real property in more than one state, because owning out-of-state real estate forces your heirs into multiple probate court proceedings known as ancillary probate. A trust also becomes essential for blended families where step-parents and biological children hold competing financial interests.\n\nSpecial circumstances demand customized legal drafting. If you have a child with special needs who relies on government support programs, or if your overall family balance sheet approaches state estate tax thresholds, you should consult an estate-planning attorney. Professional legal guidance ensures your trust complies with local statutory rules."
+    },
+    {
+      "heading": "Next Steps for What Is a Family Trust Planning",
+      "body": "Deciding whether a family trust fits your financial life starts with an honest inventory of your real estate, bank accounts, and family goals. Evaluating what is a family trust reveals that the legal vehicle acts primarily as an administrative bridge, keeping your private financial matters out of public courts and smoothing asset transfers for your loved ones.\n\nBegin by listing every major asset you own, including business interests and retirement accounts. Schedule a consultation with a licensed estate-planning attorney in your state to review your family dynamics, examine local inheritance tax exposures, and draft customized trust language. Once your trust agreement is signed, promptly contact your financial institutions to retitle your eligible assets into the name of your new family trust."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/living-trust-cost-calculator/",
+      "label": "Living trust cost calculator"
+    },
+    {
+      "href": "/estate-planning/will-cost-calculator/",
+      "label": "Will cost calculator"
+    },
+    {
+      "href": "/estate-planning/estate-tax-calculator/",
+      "label": "Estate tax calculator"
+    },
+    {
+      "href": "/estate-planning/",
+      "label": "Estate planning calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is a family trust?",
+      "answer": "A family trust is an estate planning arrangement established to hold and manage assets for the benefit of family members. It is usually set up as a revocable living trust. This legal vehicle allows property to bypass probate and pass directly to your designated heirs."
+    },
+    {
+      "question": "Is a family trust the same as a living trust?",
+      "answer": "Yes, in most legal contexts they refer to the same instrument. Family trust is an informal term used when relatives are the named beneficiaries. Living trust is the formal legal classification for a revocable trust created during your lifetime."
+    },
+    {
+      "question": "Do I need a lawyer to set up a family trust?",
+      "answer": "You are not legally required to hire an attorney, but professional help is strongly recommended. Trust documents must comply with precise state execution laws and property rules. An estate-planning attorney ensures your documents are valid and that assets transfer correctly."
+    },
+    {
+      "question": "Does a family trust avoid estate tax?",
+      "answer": "A standard revocable family trust does not reduce federal estate taxes because you retain full ownership of the assets. For 2026, the federal exclusion is $15,000,000 per individual. Most estates owe no federal estate tax, though state-level inheritance taxes may still apply."
+    },
+    {
+      "question": "What happens to a family trust when the grantor dies?",
+      "answer": "The revocable trust becomes irrevocable automatically upon the grantor's death. The designated successor trustee assumes administrative control over the accounts. That trustee pays final debts and distributes the remaining assets according to the written trust instructions."
+    },
+    {
+      "question": "Can a family trust be changed after it's created?",
+      "answer": "A revocable living trust can be amended or revoked at any time while the grantor remains alive and competent. An irrevocable trust cannot be altered once signed. State law and the specific trust provisions determine the exact legal process for making any modifications."
+    }
+  ],
+  "sources": [
+    {
+      "label": "American Bar Association, Revocable Living Trusts",
+      "url": "https://www.americanbar.org/content/dam/aba-cms-dotorg/products/inv/brochure/339471413/rev-living-trusts_wtrmk-2-5431040.pdf"
+    },
+    {
+      "label": "IRS, Abusive Trust Tax Evasion Schemes Questions and Answers",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/abusive-trust-tax-evasion-schemes-questions-and-answers"
+    },
+    {
+      "label": "IRS, Inflation Adjustments for Tax Year 2026",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
