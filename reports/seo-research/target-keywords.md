@@ -1,8 +1,10 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-09-02 — autocomplete-pass-auto mined 6 seeds (iul, auto loan, portfolio, elder care, estate planning, business loan payoff calculators), shipped 16 new pages + 6 asset specs, 18 metadata rewrites, 29 body updates. See `## 2026-09-02 autocomplete-pass — newly classified keywords` below for the full list._
+> _Updated: 2026-09-13 — keyword-gap-pass-auto: SEMRUSH dead (403), Ahrefs workspace quota preserved for other routines (99,981/100k used) — Lens 1 did not run. Lens 2 (Autocomplete) mined 2 fresh seeds (social security calculator, hsa calculator) — both flagged left-for-human as new-vertical calculator builds. Shipped 2 carried-over 2026-08-30 backlog rows that were previously audit-blocked on a mechanical FAQ-formatting defect only (`what-is-a-family-trust`, `how-to-pay-off-debt`) — rewritten with the defect fixed, passed audit on the 2nd rework, shipped with 6 new inbound links from related existing pages. See `## 2026-09-13 keyword-gap-pass-auto — newly tracked gap keywords` below._
 >
-> _Prior: 2026-08-30 — keyword-gap-pass-auto shipped 3 new gap keywords + 12 already-shipped supporting keywords; 2 more were written but rolled back on a failed content audit (see bottom section)._
+> _Prior: 2026-09-02 — autocomplete-pass-auto mined 6 seeds (iul, auto loan, portfolio, elder care, estate planning, business loan payoff calculators), shipped 16 new pages + 6 asset specs, 18 metadata rewrites, 29 body updates. See `## 2026-09-02 autocomplete-pass — newly classified keywords` below for the full list._
+>
+> _Before that: 2026-08-30 — keyword-gap-pass-auto shipped 3 new gap keywords + 12 already-shipped supporting keywords; 2 more were written but rolled back on a failed content audit (see bottom section) — those 2 are the rows this run revived and shipped._
 
 
 ## Autocomplete Discovery Log
@@ -9683,3 +9685,19 @@ Second Autocomplete mining of 6 seeds (iul calculator — live but never mined; 
 | does elder law planning include t&e lawyers | update existing body text | `/compare/elder-law-attorney-vs-estate-planning-attorney/` | new-vertical | Autocomplete signal |
 | at what age should you do estate planning (+2 variants) | update existing body text | `/estate-planning/` | new-vertical | Autocomplete signal |
 | how do you calculate loan payoff (+8 variants) | update existing body text | `/business-loan-payoff/` | new-vertical | Autocomplete signal |
+
+## 2026-09-13 keyword-gap-pass-auto — newly tracked gap keywords
+
+SEMRUSH dead (403 on every call); Ahrefs MCP workspace quota preserved for other routines (99,981/100,000 units used, 19 remaining, resets 2026-09-18) — Lens 1 (competitor gap) did not run this pass. Lens 2 (Google Autocomplete, free) mined 2 fresh seeds. 2 rows shipped — both carried over from the 2026-08-30 chart, where they were classified, written, and rolled back twice purely on a mechanical FAQ-formatting audit defect (unsplit long FAQ-answer sentences), not a demand or relevance problem. Rewritten this run with that defect explicitly fixed; passed audit on the 2nd rework (round 0 also caught a fabricated "Form 1040" reference and a fabricated "$1,000 starter fund" figure, both removed; round 1 caught a verbatim-competitor title copy and a fresh banned-antithesis tell introduced by the round-0 fixes, both corrected). 2 further Autocomplete clusters (social security calculator, hsa calculator) were strong enough to flag as new-vertical calculator opportunities but too large to build safely in the same pass — left for human, see `reports/keyword-pass/2026-09-13.md`.
+
+| keyword | action | target | tier | volume |
+|---|---|---|---|---|
+| what is a family trust | create new content | `/guides/what-is-a-family-trust/` | adjacent | 110,000 |
+| how to pay off debt | create new content | `/guides/how-to-pay-off-debt/` | adjacent | 450,000 |
+| debt consolidation | create new content (same page as above) | `/guides/how-to-pay-off-debt/` | adjacent | 1,220,000 |
+
+### Left for human (still open — new-vertical calculator builds, not content-only)
+- Social Security benefit-estimate calculator (Autocomplete signal 2026-09-13 — needs the SSA bend-point formula + wage-index + FRA table, live-sourced from ssa.gov)
+- HSA contribution/growth calculator (Autocomplete signal 2026-09-13 — strong precedent via the existing `CollegeSavings529Calculator.tsx` engine shape; recommended lead candidate for the next build pass)
+- Income-tax-calculator vertical (first flagged 2026-08-30 — still needs a new federal+state bracket engine)
+- HELOC / home-equity-line payment calculator (first flagged 2026-08-30 — still needs interest-only-draw + amortizing-repayment engine logic)

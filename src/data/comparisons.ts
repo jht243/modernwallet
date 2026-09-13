@@ -6473,7 +6473,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   optionB: "Debt Avalanche",
   h1: "Debt Snowball vs Avalanche: Which Method Wins?",
   introText:
-    "Debt snowball vs. avalanche comes down to one tradeoff: motivation versus math.\n\nWith the snowball, you pay off your smallest balance first, giving you fast, motivating wins. With the avalanche, you tackle the highest interest rate first, saving the most money.\n\nBoth methods require minimum payments on every debt, then direct every spare dollar toward one target debt. The avalanche almost always costs less in interest and gets you debt-free at least as fast. The snowball delivers a quicker first win, which helps many people finish.\n\nUltimately, the best method is the one you will actually stick with.",
+    "Debt snowball vs. avalanche comes down to one tradeoff: motivation versus math.\n\nWith the snowball, you pay off your smallest balance first, giving you fast, motivating wins. With the avalanche, you tackle the highest interest rate first, saving the most money.\n\nBoth methods require minimum payments on every debt, then direct every spare dollar toward one target debt. The avalanche almost always costs less in interest and gets you debt-free at least as fast. The snowball delivers a quicker first win, which helps many people finish.\n\nUltimately, the best method is the one you will actually stick with. For the full framework, sizing your debts, minimum-payment traps, consolidation, and when bankruptcy is the realistic answer, see our [how to pay off debt](/guides/how-to-pay-off-debt/) guide.",
   comparisonTable: {
     rows: [
       { dimension: "Order of attack", a: "Smallest balance first", b: "Highest APR first" },
