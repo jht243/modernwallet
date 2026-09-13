@@ -27,7 +27,7 @@ tool = d.get("tool_name") or ""
 inp = d.get("tool_input") or {}
 bg = inp.get("run_in_background")
 
-if tool == "Agent" and bg is not False:
+if tool in ("Agent", "Task") and bg is not False:
     sys.stderr.write(
         "BLOCKED by .claude/tools/no-background-agents.sh: this run is unattended, and a "
         "backgrounded subagent is never waited for, so its work is lost and the phase never "
