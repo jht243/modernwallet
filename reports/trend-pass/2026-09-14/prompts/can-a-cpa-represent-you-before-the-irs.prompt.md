@@ -81,6 +81,27 @@ Draft 1 broke register purity and introduced two untraceable numbers. Fix all of
 5. **Link the first mention of "IRS Independent Office of Appeals"** to https://www.irs.gov/appeals (also now a permitted URL, first mention only; every later mention of "Appeals" or "the Office of Appeals" stays plain text).
 6. FAQ **questions and answers** both follow the strict third-person rule — no "I"/"you"/"your"/"we"/"our" anywhere in the faqs array, matching the voice sample's own FAQs exactly (its questions read "Does passing the Enrolled Agent exam qualify someone for Tax Court?", never "Do I qualify..."). Use the updated FAQ question list below verbatim.
 
+## CORRECTIONS FROM THE PHASE 4 AUDIT (draft 2 → draft 3)
+
+An independent adversarial audit FAILED draft 2 on three gates. Fix all of the following; keep the register/pronoun fixes from draft 2 (those passed clean):
+
+### 1. GATE — Anchor (missing)
+Draft 2 had zero proprietary anchor and no `anchor-exempt` note. Add ONE reporter-register sourced-analysis observation, derived ONLY from fact 14 (Form 2848 must specify the exact tax matters/years, not a blanket grant) — do not invent a new fact. Weave this into the "Form 2848 as the Official Authorization Mechanism" section, close to where fact 14 is already covered: state plainly that because the authorization is scoped to the listed matters and years, a CPA authorized for one tax year's audit has no standing on a different, unlisted year even if it is a closely related issue, and a taxpayer in that position needs a new or amended Form 2848 naming the additional year before the CPA can act on it. This is a real, sourced-from-the-fact-list failure mode, not a new invented fact — do not attach any number, date, or example year to it.
+
+### 2. GATE — Sentence rhythm (hard fail)
+The audit found a run of 13+ consecutive long sentences (15+ words) spanning the Form 2848 vs. 8821 section through Filing Channels into Representation Scope, with no short/medium sentence breaking it up. Vary sentence length throughout the whole piece: no run of 10 consecutive sentences may sit in only one length band, and no 5 consecutive sentences may fall within 3 words of each other. Do this by writing naturally varied sentences the first time, not by padding or chopping a clear sentence artificially.
+
+### 3. Fabricated details NOT on the closed fact list — remove or rewrite every one of these (draft 2 examples quoted, do not repeat any of them)
+- Do NOT say Part II requires the representative to "identify their licensing jurisdiction" — fact 15 does not include this field. State only what fact 15 actually lists (designation as CPA, current-authorization attestation, CAF number).
+- Do NOT invent a Form 8821 use-case scenario ("a lender, third-party administrator, or financial advisor needs to verify tax records") — stick to fact 8's actual contrast (information access vs. representation) without inventing who typically uses it.
+- Do NOT state or imply Form 8821 can be given to "any individual, corporation, or entity" — that eligibility detail is not in the closed fact list. Omit any claim about Form 8821's eligible-recipient scope.
+- Do NOT call the online submission tool "the fastest method" — that is an unsourced superlative. Describe it neutrally as one of the three filing channels (fact 12).
+- Do NOT say the online tool "requires identity verification/authentication before uploading" — this is not in fact 12. Omit any claim about an identity-verification step.
+- Do NOT say the instructions "divide the United States into regional processing sites" or that sending to the wrong office "can delay processing" — fact 12 says only that the correct fax number/mailing address depends on the taxpayer's location. Do not add an invented consequence for getting it wrong.
+- Do NOT say incomplete entries or missing signatures "will cause the IRS to reject the submission without updating the representative database" — this consequence is not sourced. Omit it entirely.
+- Do NOT use the specific invented phrase "automated adjustment notices" — if describing what a CPA can respond to, use only what fact 2/6 support (audits, collections, appeals; signing agreements/consents/waivers) without naming a specific notice type not on the fact list.
+- Do NOT write anything implying CPA/attorney/EA authorizations stay "active until revoked or replaced" as a contrast to the 130-day LITC/STCP rule (fact 10) — the row instructions explicitly forbid stating or implying a retention/duration rule for non-student representatives. State fact 10 ONLY about the LITC/STCP category, with no comparison to how long a CPA's authorization lasts.
+
 ## Objectivity / scope notes
 
 - This is a factual/procedural explainer, not advice on choosing a CPA vs. an attorney vs. an Enrolled Agent (that comparison already exists at /compare/tax-attorney-vs-cpa-vs-enrolled-agent/ — link to it, do not duplicate its comparison table or verdict here).
