@@ -1,0 +1,5 @@
+Long-Term Care Facility vs. Nursing Home
+
+A long-term care facility is any residential setting where staff help residents with daily activities like bathing, dressing, eating, and mobility. A nursing home is one specific setting under that umbrella. It is not a synonym for the whole category, because nursing homes specifically provide around-the-clock clinical care from licensed nurses for residents who need continuous medical oversight.
+
+Other residential settings under this umbrella offer personal help without continuous clinical supervision. Assisted living provides daily personal care and medication reminders for residents who live mostly independently, while memory care adds secure wings and specialized staffing for dementia. In-home aides provide those same daily support services at home instead of inside a residential setting.

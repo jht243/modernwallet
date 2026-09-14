@@ -1,0 +1,49 @@
+{
+ "slug": "tax-consequences-adding-someone-to-deed",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2353,
+ "floor": 1200,
+ "input_tokens": 18335,
+ "output_tokens": 3378,
+ "thinking_tokens": 905,
+ "cached_tokens": 16237,
+ "est_cost_usd": 0.0207,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2353,
+  "numbers_not_in_facts": [
+   "100000",
+   "181000",
+   "200000",
+   "250000",
+   "300000",
+   "350000",
+   "400000",
+   "50000",
+   "500000",
+   "551",
+   "600000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16604
+  }
+ },
+ "seconds": 15.0,
+ "response_id": "Emuoasq7LdCc-8YP5I71-Qo",
+ "generated_at": "2026-09-14T21:46:09+0000"
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "roth-conversion-ladder--bracket-sizing",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 186,
+ "floor": 150,
+ "input_tokens": 17135,
+ "output_tokens": 283,
+ "thinking_tokens": 7316,
+ "cached_tokens": 16237,
+ "est_cost_usd": 0.0322,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 186,
+  "numbers_not_in_facts": [
+   "10000",
+   "111800",
+   "121800"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16604
+  }
+ },
+ "seconds": 24.8,
+ "response_id": "e2uoat2lOorv_uMPwIXpgAo",
+ "generated_at": "2026-09-14T21:48:04+0000"
+}

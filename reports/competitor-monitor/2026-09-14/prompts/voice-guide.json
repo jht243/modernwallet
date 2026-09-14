@@ -1,0 +1,27 @@
+{
+  "slug": "roth-conversion-ladder",
+  "title": "Roth Conversion Ladder: How the 5-Year Bridge Works",
+  "metaDescription": "A Roth conversion ladder converts IRA money each year so you can tap it penalty-free five years later. See the schedule, tax cost, and alternatives.",
+  "h1": "Roth Conversion Ladder: The Early Retirement Bridge, Step by Step",
+  "cardBlurb": "Convert one year of expenses at a time, five years ahead of needing it, and bridge the gap to 59 1/2.",
+  "introText": "A Roth conversion ladder moves money from a traditional IRA into a Roth IRA one year at a time. Five years after each conversion, that amount can be withdrawn without the 10% early-withdrawal tax. Early retirees use this strategy to access retirement money long before age 59 1/2. It only works if you already have five years' worth of spending saved elsewhere. This guide covers the five-year rule, a year-by-year schedule, the tax bill, and the alternatives.",
+  "sections": [
+    { "heading": "Why early retirees need a bridge at all", "body": "Most retirement money sits in accounts you cannot touch early for free. The IRS charges a 10% additional tax on most distributions taken before age 59 1/2. That tax lands on top of the regular income tax you already owe.\n\nAn early retiree therefore has a gap to cross. Stop working at 45 and you face about 15 years before penalty-free access begins. A Roth conversion ladder is one legal way to cross it. Size the gap with our [early retirement calculator](/retirement/early-retirement-calculator/), and size the portfolio itself with our [FIRE calculator](/retirement/fire-calculator/)." },
+    { "heading": "The 5-year rule that makes it a ladder", "body": "Each conversion carries its own five-year clock. IRS Publication 590-B states that a separate 5-year period applies to each conversion and rollover. Take the converted money out early and the 10% additional tax can apply to it.\n\nThe clock is generous about timing. It starts on the first day of the tax year in which you convert. So a conversion made in December 2026 still starts its clock on January 1, 2026. That amount escapes the 10% tax starting January 1, 2031.\n\nOne conversion buys you one year of spending money, five years out. Repeat it every year and the tranches mature one after another. That repeating chain is why the strategy is called a ladder." },
+    { "heading": "A year-by-year conversion schedule", "body": "Here is the schedule for someone who retires in 2026 and spends $50,000 a year.\n\nIn 2026 you convert $50,000 from a traditional IRA into a Roth IRA. You live that year on taxable savings. You repeat the same $50,000 conversion in 2027, 2028, 2029, and 2030. You keep living on taxable savings the whole time.\n\nIn 2031 the first rung matures. You withdraw the 2026 conversion of $50,000 free of the 10% tax, and you convert another $50,000 for later. In 2032 you withdraw the 2027 conversion. Each year after that you climb one rung and add one rung.\n\nThe ladder ends when you turn 59 1/2, because the 10% tax no longer applies. Note that only the converted principal is on the rung. Growth on that money counts as earnings, and earnings follow different rules covered below." }
+  ],
+  "tools": [
+    { "href": "/retirement/fire-calculator/", "label": "FIRE number" },
+    { "href": "/retirement/early-retirement-calculator/", "label": "Early retirement" },
+    { "href": "/investing/roth-ira-calculator/", "label": "Roth IRA" },
+    { "href": "/retirement/ira-early-withdrawal-calculator/", "label": "IRA early withdrawal" }
+  ],
+  "faqs": [
+    { "question": "How does a Roth conversion ladder work?", "answer": "A Roth conversion ladder works by converting roughly one year of expenses from a traditional IRA to a Roth IRA each year. Each conversion has its own five-year period before the converted amount escapes the 10% early-withdrawal tax. You withdraw the year one conversion in year six, the year two conversion in year seven, and so on until age 59 1/2." },
+    { "question": "How much do I need saved outside my IRA to start a Roth conversion ladder?", "answer": "You generally need five years of living expenses in taxable or already-accessible accounts. Your first conversion cannot come out free of the 10% tax until the sixth year. Someone spending $50,000 a year needs roughly $250,000 outside their traditional accounts to cover that stretch." }
+  ],
+  "sources": [
+    { "label": "IRS Publication 590-B, Distributions from IRAs", "url": "https://www.irs.gov/publications/p590b" },
+    { "label": "IRS Topic no. 558, Additional tax on early distributions", "url": "https://www.irs.gov/taxtopics/tc558" }
+  ]
+}

@@ -1,0 +1,7 @@
+## Sizing a Conversion Rung to Fill a Tax Bracket
+
+Sizing an annual Roth conversion rung around a target tax bracket moves money into tax-free accounts at predictable rates. You do not have to convert only what you spend. Bridge years often feature little or no wage income, opening room in lower brackets before Social Security and Required Minimum Distributions (RMDs) raise ordinary income later in life.
+
+Take a single retiree who spends $50,000 a year and earns $10,000 in taxable dividends and interest. For 2026, the single standard deduction is $16,100, which means gross income can reach $121,800 before taxable income crosses the 22% bracket ceiling of $105,700. Converting $111,800 instead of the baseline $50,000 spending target absorbs that bracket space without pushing any income into the 24% rate.
+
+Accelerating conversions this way builds a larger tax-free balance, but it requires paying more tax today from outside money. The higher income can also increase state income taxes, which vary by state, or trim eligibility for income-tested healthcare subsidies. Our guide to [Roth conversion rules](/guides/roth-conversion-rules/) explains how to run marginal bracket calculations across multiple income sources.

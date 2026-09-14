@@ -1,0 +1,37 @@
+{
+ "slug": "defensive-investment-strategy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2022,
+ "floor": 1200,
+ "input_tokens": 17787,
+ "output_tokens": 2943,
+ "thinking_tokens": 2823,
+ "cached_tokens": 16237,
+ "est_cost_usd": 0.0258,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2022,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16604
+  }
+ },
+ "seconds": 21.2,
+ "response_id": "lmqoau7HI5u0jMcPr56q6Qg",
+ "generated_at": "2026-09-14T21:44:11+0000"
+}
