@@ -146345,11 +146345,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/learn/die-with-zero": {
+          "acted": false,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:ca36b51f3d559ea33c924904b926b43c70d0ef8b923ac28d0b8c594dcffeade6",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-09-14T06:00:32-07:00",
+          "our_url": "https://www.themodernwallet.com/retirement/fire-calculator/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Don\u2019t take it literally",
@@ -146361,7 +146365,7 @@
           "relevance_hits": [
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Should You Really Try to \u2018Die with Zero\u2019? - NerdWallet",
           "tool_io": []
         },
@@ -184581,11 +184585,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-september-14-2026": {
+          "acted": false,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:2338c46c834abaa08b8b83b5d7d31748423a47124ef0fbee04b192d69aa8dfa6",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-09-14T06:56:03-07:00",
+          "our_url": "https://www.themodernwallet.com/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -184602,7 +184610,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Monday, September 14: Over 7% - NerdWallet",
           "tool_io": []
         },
@@ -364415,11 +364423,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/estate-planning/how-to-have-an-estate-sale": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:d2b93f0fbeac8bdae677db43a1ea4c27c34d48e4fbf37d4a8edfefdf0ea62a0c",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:09+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-to-hold-an-estate-sale/",
           "outline": [
             "What Is an Estate Sale?",
             "DIY Approach vs. Hiring a Professional Company",
@@ -364458,7 +364470,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Hold an Estate Sale",
           "tool_io": []
         },
@@ -375823,11 +375835,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/equitable-distribution": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:8004f48b92b3d70f3c17a95c8586ae9d1ef83dabbafd4fc860c0a6f85a7b4dae",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:32+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/equitable-distribution-by-state/",
           "outline": [
             "Understanding Equitable Distribution",
             "Factors that Impact Equitable Distribution",
@@ -375851,7 +375867,7 @@
             "retirement",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Equitable Distribution: Definition and State List",
           "tool_io": []
         },
@@ -380971,11 +380987,15 @@
           "tool_io": []
         },
         "https://smartasset.com/financial-advisor/long-term-care-facility-vs-nursing-home": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:f74922bd702a60c34605d6974b36ef6632dc4f4ce212d27d612db33277836d68",
+          "disposition": "enriched",
           "first_seen": "2026-09-14",
           "kind": "comparison",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:03+00:00",
+          "our_url": "https://www.themodernwallet.com/elder-care/long-term-care-cost-calculator/",
           "outline": [
             "What Is Long-Term Care?",
             "What Is a Nursing Home?",
@@ -381001,7 +381021,7 @@
             "financial",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Long-Term Care Facility vs. Nursing Home",
           "tool_io": []
         },
@@ -393613,11 +393633,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/investing/defensive-investment-strategy": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:25e976e2970adc129eca2c7f56b99546023af45a0f516419db30735834313609",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:20+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/defensive-investment-strategy/",
           "outline": [
             "What Does \u201cDefensive Investing\u201d Mean?",
             "Examples of Defensive Investing Strategies",
@@ -393641,7 +393665,7 @@
             "investment",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Defensive Investment Strategy?",
           "tool_io": []
         },
@@ -417355,11 +417379,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/mortgage/things-to-avoid-before-applying-for-mortgage": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:78c03fde2af3373c152b29fe3ca2784f4d281cd9c4ab2fb2726b950b31bca11d",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:37+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/mortgage-mistakes-before-applying/",
           "outline": [
             "1. Racking up Debt",
             "2. Forgetting to Check Your Credit",
@@ -417390,7 +417418,7 @@
             "payment",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "10 Things to Avoid Before Applying for a Mortgage",
           "tool_io": []
         },
@@ -426129,11 +426157,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/couple-can-convert-133k-a-year-to-roth-at-9-percent": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:40c221088c5be3e3620badf075f99d20b43c2b16f7217181080462423622ad4f",
+          "disposition": "enriched",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-20T22:00:00+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/roth-conversion-ladder/",
           "outline": [
             "The Low-Tax Window",
             "The Cost of Waiting",
@@ -426145,7 +426177,7 @@
             "roth",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "A Couple Can Convert $133,000 a Year to a Roth at About 9%. Here&#x27;s How",
           "tool_io": []
         },
@@ -436003,11 +436035,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/retirement-withdrawal-strategies-that-stretch-savings": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:2afa15dcaca760c6f851230fbb3356d11f70579c793333088ebf7766e1f03e38",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:04:28+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/retirement-withdrawal-strategies/",
           "outline": [
             "Understanding the Importance of Your Retirement Withdrawal Strategy",
             "4 Retirement Withdrawal Strategies Can Stretch Your Savings",
@@ -436040,7 +436076,7 @@
             "savings",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Retirement Withdrawal Strategies That Can Stretch Your Savings",
           "tool_io": []
         },
@@ -448694,11 +448730,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/tax-consequences-of-adding-name-to-deed": {
+          "acted": true,
+          "acted_date": "2026-09-14",
           "content_hash": "sha256:e3dd9020816b1922c7cef3f76cf9089e5a60fb84acc90ce315c71415677fbef2",
+          "disposition": "published",
           "first_seen": "2026-09-14",
           "kind": "page",
           "last_seen": "2026-09-14",
           "lastmod": "2026-06-18T20:03:45+00:00",
+          "our_url": "https://www.themodernwallet.com/guides/tax-consequences-adding-someone-to-deed/",
           "outline": [
             "What Are the Tax Consequences of Being Added to a Deed?",
             "How to Transfer Ownership of a Property",
@@ -448726,7 +448766,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Are the Tax Consequences of Being Added to a Deed?",
           "tool_io": []
         },
