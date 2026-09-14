@@ -1,0 +1,98 @@
+{
+  "slug": "s-corp-vs-c-corp",
+  "metaTitle": "S Corp vs C Corp: Which Tax Structure Fits in 2026?",
+  "metaDescription": "S corp vs C corp compared: taxes, ownership rules, stock classes, and reasonable salary requirements so you can choose the right structure.",
+  "h1": "S Corp vs C Corp: Choosing the Right Structure",
+  "subtitle": "A complete comparison of corporate tax treatments, ownership rules, stock classes, and shareholder limits for business founders.",
+  "optionAName": "S Corp",
+  "optionBName": "C Corp",
+  "introText": "An S corporation passes its net taxable profit through to the owners' personal tax returns to avoid double taxation, whereas a C corporation pays a flat entity-level tax and taxes distributions to shareholders a second time. At ModernWallet, we review corporate filings and small-business structures to help owners make practical financial decisions. The deciding factor between an S corp vs C corp is rarely paperwork alone. If you plan to raise venture capital or distribute equity to foreign investors, a C corporation is mandatory. If you run a closely held domestic business where the owners actively work and take distributions, electing Subchapter S status can prevent double taxation and trim payroll taxes.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Tax status type",
+        "a": "Tax election made by filing Internal Revenue Service (IRS) Form 2553",
+        "b": "Default corporate tax entity created by filing state articles of incorporation"
+      },
+      {
+        "dimension": "Federal entity-level income tax",
+        "a": "None; profits and losses flow through to shareholder tax returns",
+        "b": "Flat 21% federal corporate tax rate on net corporate income"
+      },
+      {
+        "dimension": "Shareholder-level tax on distributed profits",
+        "a": "Taxed once on personal returns; distributions are free of corporate-level tax",
+        "b": "Taxed twice: once at corporate level, then again on shareholder dividend income"
+      },
+      {
+        "dimension": "Maximum number of shareholders",
+        "a": "Capped at 100 eligible shareholders",
+        "b": "Unlimited shareholders permitted"
+      },
+      {
+        "dimension": "Shareholder eligibility rules",
+        "a": "Must be U.S. citizens or resident individuals; most entities and foreign citizens barred",
+        "b": "Open to foreign citizens, institutional funds, partnerships, and corporate entities"
+      },
+      {
+        "dimension": "Permitted classes of stock",
+        "a": "Only one class of stock allowed (voting and non-voting differences permitted)",
+        "b": "Multiple classes allowed, including common stock and preferred stock"
+      },
+      {
+        "dimension": "Owner compensation requirements",
+        "a": "Shareholder-employees must receive a reasonable Form W-2 (Wage and Tax Statement) salary",
+        "b": "Owner-employees can take wages, leave profit inside the firm, or pay dividends"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Federal Tax Mechanics and the Double Taxation Problem",
+      "content": "A C corporation pays federal corporate income taxes directly to the Internal Revenue Service (IRS) on its annual profits, while an S corporation passes profits directly through to its owners. Under the Tax Cuts and Jobs Act (TCJA), the federal corporate tax rate sits at a flat 21%. When a C corp earns profit, it calculates net income and pays this 21% rate on the company tax return. If the board of directors subsequently distributes the remaining post-tax earnings to shareholders as dividends, those shareholders report that dividend income on their personal tax returns. This process generates two layers of income tax on the exact same dollar of business earnings, commonly called double taxation.\n\nAn [S corporation](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations) eliminates the corporate layer of tax entirely. The entity files an informational return on IRS Form 1120-S, but the business itself pays no federal corporate income tax. Instead, the net profit or loss passes through pro rata to each shareholder on a Schedule K-1. The shareholders then report that income on their individual returns. For a profitable company that distributes its earnings to owners every year, avoiding the entity-level 21% tax bracket can result in a substantially lower combined tax bill.\n\nRetaining profits produces a different dynamic. If a business needs to leave large amounts of capital inside the company to fund inventory or capital expansion, a C corp lets that money sit taxed only at the 21% corporate rate. In an S corp, owners must pay personal income tax on all business profits during the year earned, whether or not the company actually distributes cash to pay those personal tax bills."
+    },
+    {
+      "heading": "Shareholder Eligibility Rules and Stock Class Limits",
+      "content": "Federal law strictly caps S corporation ownership to 100 qualifying shareholders and allows only a single class of stock. These statutory rules protect the integrity of the pass-through system, but they place hard limits on company growth and capital fundraising. Every shareholder in an S corp must generally be an individual who is a U.S. citizen or a permanent U.S. resident. Nonresident aliens cannot hold shares. Most institutional investors, venture capital funds, corporate holding companies, and standard limited liability company (LLC) entities cannot legally hold stock in an S corp. If an ineligible entity acquires a single share, the S corp election terminates immediately.\n\nA C corporation operates without any of these shareholder restrictions. A C corp can have five shareholders or five million shareholders. Investors can include foreign nationals, venture capital firms, sovereign wealth funds, and domestic corporations. When evaluating an s corp vs c corp for small business operations that plan to seek outside funding, these ownership rules usually settle the question. Institutional investors will not invest in an entity that cannot issue equity directly to their partnership funds.\n\nThe single-class-of-stock restriction also rules out preferred shares. An S corp can issue voting and non-voting common shares, but every share must carry identical economic rights to liquidation proceeds and distributions. Venture capital investors require preferred stock that grants liquidation preferences, anti-dilution provisions, and priority dividend distributions over common founders. A C corp can create and issue preferred share series as needed. If your business model requires selling equity to institutional investors or angel groups outside the United States, you cannot use an S corp."
+    },
+    {
+      "heading": "Reasonable Compensation Rules and Payroll Tax Treatment",
+      "content": "Shareholder-employees of an S corporation must receive reasonable compensation as wages subject to payroll taxes before taking any profit distributions. This requirement forms the core mechanism of s corp vs c corp taxes for owner-operated small businesses. When a business operates as a standard sole proprietorship or partnership, 100% of net business income is typically exposed to federal self-employment taxes for Social Security and Medicare. In an S corp, only the owner's W-2 wage incurs payroll taxes, which total 15.3% across the employer and employee shares up to the statutory wage caps. Any profit remaining above that wage can be distributed to the owner as an equity distribution, which incurs income tax but no payroll tax.\n\nThe IRS closely audits S corp owner salaries to prevent artificial wage suppression. If an owner runs an engineering firm generating $200,000 in net profit, pays themselves a $15,000 W-2 salary, and takes the remaining $185,000 as distributions, the IRS can reclassify those distributions as wages. When reclassification occurs, the agency assesses back payroll taxes, substantial penalties, and interest charges. The salary must reflect what an independent firm would pay an unrelated professional to deliver the same operational duties, management oversight, and technical services.\n\nYou should run your numbers through our [S Corp Reasonable Salary Calculator](/s-corp-tax/s-corp-reasonable-salary-calculator/) to model potential payroll distributions against your operating expenses. Setting a legally defensible salary requires reviewing industry wage databases, regional compensation surveys, and your actual hours worked. For a broader overview of how pass-through rules interact with overall payroll planning, visit our [S Corp Tax Hub](/s-corp-tax/) before altering your corporate tax filings."
+    },
+    {
+      "heading": "Filing IRS Form 2553 and Corporate Formation Steps",
+      "content": "Every corporation begins as a C corp under state corporate law, while an S corp is strictly a federal tax election. To create a corporation, you file articles of incorporation or a certificate of incorporation with your state's business filing agency and pay the state formation fee. That act creates a standard C corporation entity with corporate governance formalities, a board of directors, corporate bylaws, and share issuance procedures.\n\nTransforming that legal corporation into an S corp requires submitting an election under [IRS Form 2553](https://www.irs.gov/forms-pubs/about-form-2553). All shareholders must sign the consent statement. The filing must occur no later than two months and 15 days after the beginning of the tax year the election takes effect, or at any time during the preceding tax year. If you miss this deadline, your business remains taxed as a standard C corp for that calendar year unless you qualify for IRS late-election relief.\n\nAn existing LLC can also make an S corp election without forming a corporate charter under state law. A business structured as a limited liability company can elect corporate tax treatment and simultaneously file Form 2553 to become an S corp for federal income tax purposes. This strategy combines the flexible governance rules of an LLC with the pass-through taxation and payroll tax mechanisms of an S corp. If you are debating whether to start with an LLC or adopt corporate tax rules, review our guide to [LLC vs S Corp](/compare/llc-vs-s-corp/) structures to understand how state organizational maintenance differs from federal tax classification."
+    },
+    {
+      "heading": "Assessing S Corp vs C Corp Pros and Cons for Your Company",
+      "content": "Weighing s corp vs c corp pros and cons comes down to matching your operational cash flow with long-term capitalization needs. The major advantage of an S corp is single-tier taxation combined with potential payroll tax reductions on distributions. The downside is strict administrative oversight, state corporate annual report filings, required corporate resolutions, and severe constraints on who can own company shares. An S corp also requires running formal payroll processing and filing quarterly payroll tax forms even if the owner is the sole worker.\n\nThe primary advantage of a C corp is complete operational flexibility regarding capital structure and equity issuance. A C corp can grant stock options to international contractors, create separate classes of preferred stock with liquidation priority, and accumulate substantial retained earnings without forcing tax liabilities onto individual investors. The clear disadvantage is double taxation on profits distributed out of the business, along with potential state-level corporate franchise and income taxes.\n\nInitial business stage also dictates structural efficiency. For founders evaluating an early venture before revenue arrives, a simpler structure often makes sense. You can see how un-incorporated entities contrast with formal charters in our breakdown of [Sole Proprietorship vs LLC](/compare/sole-proprietorship-vs-llc/) options. Adding corporate accounting complexity, separate corporate tax returns, and mandatory W-2 payroll filings before your business generates consistent operating profit increases overhead without delivering tangible tax savings."
+    }
+  ],
+  "verdict": "Choose an S corp if you own a profitable, closely held operating company with domestic owners, plan to take regular cash distributions, and want to avoid the double taxation inherent in corporate dividends. The ability to separate W-2 wages from pass-through equity distributions makes an S corp a practical vehicle for service businesses, agencies, and established trade operations that generate steady cash flow. Choose a C corp if your business model requires outside venture capital, seeks investments from foreign entities, plans to offer equity options to overseas staff, or intends to reinvest substantial earnings directly into long-term assets without distributing cash. This recommendation is not for pre-revenue startups with minimal cash flow, where the accounting and payroll overhead of maintaining corporate tax compliance exceeds any structural benefit. Our recommendation flips toward a C corp if your growth plans require issuing preferred stock or onboarding institutional investors, because those funding mechanisms disqualify an S corp under federal law.",
+  "faqItems": [
+    {
+      "question": "Which is better, S corp or C corp?",
+      "answer": "Neither structure is universally better because the right choice depends on your funding model and ownership base. An S corp is generally better for a closely held domestic business where the owners actively work and want to avoid double taxation on distributed profits. A C corp is necessary if you intend to raise venture capital, issue preferred stock, or include foreign investors who are legally prohibited from holding S corp shares."
+    },
+    {
+      "question": "Can an LLC elect to be taxed as an S corp or a C corp?",
+      "answer": "Yes, an eligible limited liability company can elect to be taxed as either an S corp or a C corp for federal tax purposes. By default, a single-member LLC is taxed as a disregarded entity and a multi-member LLC is taxed as a partnership. An LLC can elect C corp status by filing IRS Form 8832, or elect S corp pass-through status by filing IRS Form 2553, provided the business meets all statutory S corp eligibility requirements."
+    },
+    {
+      "question": "What is the biggest downside of a C corp compared to an S corp?",
+      "answer": "The primary disadvantage of a C corp is double taxation on corporate earnings distributed to owners. The corporation pays a 21% federal income tax rate on net profits, and shareholders pay personal income taxes on those same earnings when received as dividend distributions. An S corp bypasses this corporate-level tax by passing profits directly through to owners' personal tax returns."
+    },
+    {
+      "question": "Can a foreign investor own shares in an S corp?",
+      "answer": "No, nonresident aliens cannot legally own shares in an S corporation under federal tax law. All S corp shareholders must be U.S. citizens or resident aliens who meet domestic residency standards. If a business needs to bring on foreign individuals or international investment funds as equity holders, it must organize and remain taxed as a C corporation."
+    },
+    {
+      "question": "Do S corps and C corps both protect owners from personal liability?",
+      "answer": "Yes, both S corps and C corps provide limited liability protection to their shareholders under state law. Choosing between an S corp and a C corp is strictly a tax election filed with the IRS and does not change your legal liability shield. In both structures, personal assets like your home and personal bank accounts remain shielded from ordinary business debts and commercial lawsuits, provided you maintain proper corporate separation."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

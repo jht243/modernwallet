@@ -1,0 +1,44 @@
+{
+ "slug": "lyft-vs-uber",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1792,
+ "floor": 1500,
+ "input_tokens": 18475,
+ "output_tokens": 2799,
+ "thinking_tokens": null,
+ "cached_tokens": 17017,
+ "est_cost_usd": 0.0148,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1792,
+  "numbers_not_in_facts": [
+   "1040",
+   "15.3"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17422
+  }
+ },
+ "seconds": 14.0,
+ "response_id": "3K6narTSIsuj_PUPmsOfOA",
+ "generated_at": "2026-09-14T08:23:05+0000"
+}

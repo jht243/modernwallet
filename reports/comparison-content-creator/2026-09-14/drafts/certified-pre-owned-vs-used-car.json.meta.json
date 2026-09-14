@@ -1,0 +1,43 @@
+{
+ "slug": "certified-pre-owned-vs-used-car",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2078,
+ "floor": 1500,
+ "input_tokens": 18415,
+ "output_tokens": 3064,
+ "thinking_tokens": 1385,
+ "cached_tokens": 17017,
+ "est_cost_usd": 0.0209,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2078,
+  "numbers_not_in_facts": [
+   "24"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17422
+  }
+ },
+ "seconds": 19.3,
+ "response_id": "CLCnaqK8ELnf-sAPhp-7mQ8",
+ "generated_at": "2026-09-14T08:28:11+0000"
+}

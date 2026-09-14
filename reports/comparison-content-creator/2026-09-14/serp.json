@@ -1,0 +1,733 @@
+{
+ "rows": [
+  {
+   "keyword": "lyft vs uber",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "rosalindwarren.medium.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.investopedia.com",
+    "getridewise.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "rosalindwarren.medium.com",
+    "www.facebook.com",
+    "www.investopedia.com",
+    "news.ycombinator.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.youtube.com",
+    "www.businessinsider.com",
+    "getridewise.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "rosalindwarren.medium.com",
+    "www.facebook.com",
+    "news.ycombinator.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to take Lyft or Uber?",
+    "Who is usually cheaper, Lyft or Uber?",
+    "How much should I tip on a $100 Uber ride?",
+    "Who is safer, Lyft or Uber?",
+    "Is it rude not to tip Lyft?",
+    "Why is Lyft charging me $150?"
+   ],
+   "related_searches": [
+    "Lyft vs uber reddit",
+    "Lyft vs Uber driver income",
+    "Lyft vs Uber market share",
+    "Lyft vs Uber valuation",
+    "Lyft vs Uber price",
+    "Uber vs Lyft as a passenger",
+    "Lyft vs Uber politics",
+    "Lyft vs Uber stock"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, rosalindwarren.medium.com, www.facebook.com, news.ycombinator.co) incl. #1; AI Overview present, cites www.reddit.com, rosalindwarren.medium.com, www.facebook.com, www.youtube.com",
+   "se_results_count": 141
+  },
+  {
+   "keyword": "doordash vs uber eats",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.cnet.com",
+    "www.facebook.com",
+    "www.orderout.co",
+    "www.itsacheckmate.com",
+    "shifttrackerapp.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.orderout.co",
+    "www.cnet.com",
+    "www.quora.com",
+    "shifttrackerapp.com",
+    "enatega.com",
+    "gridwise.io",
+    "www.quora.com",
+    "www.itsacheckmate.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can I make $1000 a week with Uber Eats?",
+    "How many hours of DoorDash to make $500 a week?",
+    "Why is no one delivering on DoorDash?",
+    "Can I make $1000 in a week with DoorDash?",
+    "How much can I make in 4 hours on DoorDash?",
+    "Is it hard to make $200 a day with DoorDash?"
+   ],
+   "related_searches": [
+    "Doordash vs uber eats reddit",
+    "DoorDash vs Uber Eats as a driver",
+    "Ubereats vs DoorDash driver pay",
+    "Doordash vs uber eats vs grubhub",
+    "Doordash vs uber eats pros and cons",
+    "Doordash vs uber eats cheaper",
+    "Uber Eats vs DoorDash subscription",
+    "Ubereats vs DoorDash driver pay reddit"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.cnet.com, www.facebook.com",
+   "se_results_count": 106
+  },
+  {
+   "keyword": "instacart vs doordash",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.quora.com",
+    "www.convequity.com",
+    "shifttrackerapp.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "deonde.co",
+    "www.facebook.com",
+    "www.indeed.com",
+    "www.quora.com",
+    "walletgrower.com",
+    "www.convequity.com",
+    "shifttrackerapp.com",
+    "www.ziprecruiter.com",
+    "www.tiktok.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.tiktok.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can I make $1000 a week doing Instacart?",
+    "What is the $99 Instacart fee?",
+    "What are the disadvantages of Instacart?",
+    "How many hours to make $500 a week with DoorDash?",
+    "Can I make $1000 a day with DoorDash?",
+    "What disqualifies you from doordashing?"
+   ],
+   "related_searches": [
+    "Instacart vs DoorDash pay",
+    "Instacart vs doordash reddit",
+    "Instacart vs DoorDash subscription",
+    "Instacart vs DoorDash vs Ubereats",
+    "Is Instacart or DoorDash cheaper",
+    "Amazon Flex vs DoorDash vs Instacart",
+    "Instacart vs DoorDash vs UberEats pay",
+    "Instacart vs DoorDash vs UberEats reddit"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com, www.tiktok.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.quora.com, www.convequity.com",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "shipt vs instacart",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "www.shipt.com",
+    "www.thepennyhoarder.com",
+    "www.quora.com",
+    "subpilot.tech"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.shipt.com",
+    "www.thepennyhoarder.com",
+    "www.quora.com",
+    "www.indeed.com",
+    "subpilot.tech",
+    "wetried.it",
+    "www.ramseysolutions.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "video": 1
+   },
+   "paa": [
+    "What pays more, Shipt or Instacart?",
+    "Does anyone use Shipt anymore?",
+    "How much can I make in 4 hours doing Instacart?",
+    "Are groceries more expensive on Shipt?",
+    "How much do most people tip on Shipt?",
+    "Who is the cheapest to deliver groceries?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com, www.youtube.com) incl. #1; AI Overview present, cites www.youtube.com, www.shipt.com, www.thepennyhoarder.com, www.quora.com",
+   "se_results_count": 108
+  },
+  {
+   "keyword": "amazon flex vs doordash",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.primewayfcu.com",
+    "www.youtube.com",
+    "flexassist.app",
+    "therideshareguy.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "serviceclub.com",
+    "www.primewayfcu.com",
+    "www.indeed.com",
+    "www.getwhizz.com",
+    "flexassist.app",
+    "www.quora.com",
+    "therideshareguy.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can I make $1000 a week with Amazon Flex?",
+    "How many hours do I need to DoorDash to make $1000?",
+    "Can I make $500 a week with Amazon Flex?",
+    "What are the downsides of Amazon Flex?",
+    "How many packages are in a 2 hour block on Amazon Flex?",
+    "Can I make $2000 a month with Amazon Flex?"
+   ],
+   "related_searches": [
+    "Amazon flex vs doordash reddit",
+    "Amazon Flex vs DoorDash pay",
+    "Amazon flex vs doordash vs uber eats",
+    "Amazon Flex vs DoorDash vs Instacart",
+    "Amazon flex vs uber eats reddit",
+    "Amazon Flex vs Instacart",
+    "Amazon Flex vs Spark",
+    "Amazon Flex driver"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.quora.com, www.youtube.com) incl. #1; AI Overview present, cites www.reddit.com, www.facebook.com, www.primewayfcu.com, www.youtube.com",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "s corp vs c corp",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.wolterskluwer.com",
+    "mblawfirm.com",
+    "www.reddit.com",
+    "www.nerdwallet.com",
+    "oregonsbdc.org",
+    "corporatefinanceinstitute.com",
+    "mailchimp.com",
+    "rcreports.com",
+    "www.nav.com",
+    "taxstra.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.wolterskluwer.com",
+    "www.reddit.com",
+    "tax.thomsonreuters.com",
+    "oregonsbdc.org",
+    "mblawfirm.com",
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "www.youtube.com",
+    "www.oysterhr.com",
+    "mpmlaw.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which is better, C corp or S corp?",
+    "Is my LLC an S or C corp or partnership?",
+    "What is the downside of being an S corp?",
+    "How do I know if I have an S or C corp?",
+    "Can you look up if a business is an S corp?",
+    "What are the disadvantages of a C corp?"
+   ],
+   "related_searches": [
+    "S corp vs c corp taxes",
+    "S corp vs c corp pros and cons",
+    "S corp vs c corp reddit",
+    "S corp vs C corp vs LLC",
+    "S corp vs C corp vs partnership",
+    "S corp vs c corp vs sole proprietorship",
+    "S Corp vs LLC",
+    "S corp vs C Corp for small business"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.wolterskluwer.com, mblawfirm.com, www.reddit.com, www.nerdwallet.com",
+   "se_results_count": 131
+  },
+  {
+   "keyword": "llc vs c corp",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "tax.thomsonreuters.com",
+    "stripe.com",
+    "www.blockadvisors.com",
+    "carta.com",
+    "www.incorp.com",
+    "www.forbes.com",
+    "growthequityinterviewguide.com",
+    "poole.ncsu.edu",
+    "www.usehaven.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "stripe.com",
+    "tax.thomsonreuters.com",
+    "www.blockadvisors.com",
+    "www.legalshield.com",
+    "www.incorp.com",
+    "www.reddit.com",
+    "poole.ncsu.edu",
+    "carta.com",
+    "www.youtube.com",
+    "www.forbes.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which is better, C corporation or LLC?",
+    "Why do investors prefer C corp?",
+    "What is the biggest disadvantage of an LLC?",
+    "How can I tell if my LLC is C or S corp?",
+    "Is an LLC automatically an S corp?",
+    "What are the four types of LLC?"
+   ],
+   "related_searches": [
+    "Llc vs c corp taxes",
+    "Llc vs c corp reddit",
+    "LLC vs C corp vs S corp",
+    "Llc vs c corp pros and cons",
+    "Llc vs c corp tax advantages",
+    "S Corp vs LLC",
+    "LLC C corp vs S corp vs partnership",
+    "LLC vs C Corporation for foreign ownership"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites tax.thomsonreuters.com, stripe.com, www.blockadvisors.com, carta.com",
+   "se_results_count": 124
+  },
+  {
+   "keyword": "h&r block vs taxact",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.taxact.com",
+    "financebuzz.com",
+    "www.primewayfcu.com",
+    "www.thepennyhoarder.com",
+    "grasshopper.com",
+    "www.youtube.com",
+    "www.hrblock.com",
+    "www.reddit.com",
+    "thecollegeinvestor.com",
+    "www.capterra.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com",
+    "www.capterra.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who is the most reliable tax preparer?",
+    "Is TaxAct owned by H&R Block?",
+    "Is it worth paying for H&R Block?",
+    "What is the H&R Block controversy?",
+    "How reliable is H&R Block for taxes?",
+    "Is H&R Block having problems?"
+   ],
+   "related_searches": [
+    "H&r block vs taxact reddit",
+    "H&r block vs taxact reviews",
+    "H&r block vs taxact salary",
+    "H&r block vs taxact cost",
+    "Taxact vs turbotax bigger refund",
+    "Taxact vs turbotax vs h&r block",
+    "TaxAct vs FreeTaxUSA",
+    "TurboTax vs TaxAct"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com, www.capterra.com); AI Overview present",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "medicare vs medicaid",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.medicare.gov",
+    "www.hhs.gov",
+    "www.wellpoint.com",
+    "staycovered.ri.gov",
+    "health.usnews.com",
+    "www.healthline.com",
+    "www.upmchealthplan.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.medicare.gov",
+    "www.uhc.com",
+    "www.upmchealthplan.com",
+    "staycovered.ri.gov",
+    "www.youtube.com",
+    "www.hhs.gov",
+    "www.aetna.com",
+    "www.ncoa.org",
+    "www.aflac.com",
+    "www.ricafortelaw.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to have Medicare or Medicaid?",
+    "Is Medicare free after 65?",
+    "What is the highest income to be eligible for Medicaid?",
+    "What are the 6 things Medicare doesn't cover?",
+    "Does Medicare pay 100% of hospital bills?",
+    "What are the biggest mistakes people make with Medicare?"
+   ],
+   "related_searches": [
+    "Medicare vs medicaid pros and cons",
+    "Medicare vs Medicaid cuts",
+    "Who is eligible for both Medicare and Medicaid",
+    "Medicare vs Medicaid simple",
+    "Medicare vs Medicaid chart",
+    "Medicare vs Medicaid vs Medicare Advantage",
+    "Medicare vs medicaid dental",
+    "Medicare and Medicaid for Dummies"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.medicare.gov, www.hhs.gov, www.wellpoint.com, staycovered.ri.gov",
+   "se_results_count": 135
+  },
+  {
+   "keyword": "new car vs used car",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "redrocks.org",
+    "www.youtube.com",
+    "www.cnbc.com",
+    "www.nerdwallet.com",
+    "www.santamonicagmc.com",
+    "www.bankrate.com",
+    "www.kingstoyota.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.caranddriver.com",
+    "www.myriversidechevy.com",
+    "redrocks.org",
+    "www.kingstoyota.com",
+    "www.consumerreports.org",
+    "www.cnbc.com",
+    "www.kenwilsonford.com",
+    "www.wesselsusedcars.com",
+    "www.caminofcu.org"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What is the $3000 rule for cars?",
+    "What are the disadvantages of a new car?",
+    "Is it better to buy a new or used car in 2026?",
+    "What not to tell a dealer?",
+    "How to win against a car salesman?",
+    "What not to do at a car dealership?"
+   ],
+   "related_searches": [
+    "New car vs used car reddit",
+    "New car vs used car pros and cons",
+    "Is it better to buy a new or used car in 2026",
+    "New car vs used car price",
+    "Buy new or used car calculator",
+    "New car vs used car interest rates",
+    "Is it easier to finance a new or used car with bad credit",
+    "Is buying a new car worth it reddit"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.reddit.com, redrocks.org, www.youtube.com, www.cnbc.com",
+   "se_results_count": 132
+  },
+  {
+   "keyword": "certified pre-owned vs used car",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.kbb.com",
+    "www.victorytoyotabarboursville.com",
+    "www.consumerreports.org",
+    "www.victorysanbruno.com",
+    "www.oceanhondawhittier.com",
+    "www.geauxchevrolet.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.kbb.com",
+    "www.reddit.com",
+    "www.donfranklinauto.com",
+    "www.victorytoyotabarboursville.com",
+    "www.redmccombstoyota.com",
+    "www.fjmercedes.com",
+    "www.victoryhondamichigancity.com",
+    "www.consumerreports.org",
+    "www.youtube.com",
+    "www.caranddriver.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to buy a certified pre-owned car or a new car?",
+    "What is the $3000 rule for cars?",
+    "Is buying a certified pre-owned vehicle a good idea?",
+    "Are CPO cars always a good deal?",
+    "What is the most reliable pre-owned car?",
+    "Is it worth buying an extended warranty for a CPO car?"
+   ],
+   "related_searches": [
+    "Certified pre owned vs used car reddit",
+    "Certified pre owned vs used car suv",
+    "Certified pre owned vs used car for sale",
+    "Pre owned vs used cars",
+    "Certified pre owned cars",
+    "Are certified pre owned cars worth it",
+    "Used vs certified pre owned reddit",
+    "Certified pre owned cars near me"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.kbb.com, www.victorytoyotabarboursville.com, www.consumerreports.org",
+   "se_results_count": 135
+  },
+  {
+   "keyword": "secured vs unsecured credit card",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.capitalone.com",
+    "www.discover.com",
+    "www.experian.com",
+    "www.td.com",
+    "www.bankrate.com",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.capitalone.com",
+    "www.discover.com",
+    "www.td.com",
+    "www.experian.com",
+    "www.bankrate.com",
+    "www.synchrony.com",
+    "www.nerdwallet.com",
+    "www.citi.com",
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the biggest killer of credit scores?",
+    "How does a $200 secured credit card work?",
+    "Do unsecured credit cards build credit?",
+    "What are the disadvantages of a secured credit card?",
+    "Do secured cards hurt your credit?",
+    "Can I close my secured credit card and get my money back?"
+   ],
+   "related_searches": [
+    "Secured vs unsecured credit card reddit",
+    "Secured vs unsecured credit card pros and cons",
+    "Secured vs unsecured credit card for bad credit",
+    "Unsecured credit cards for bad credit",
+    "Capital One unsecured credit card",
+    "Discover unsecured credit card",
+    "Unsecured credit card apply",
+    "Best unsecured credit cards"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.capitalone.com, www.discover.com, www.experian.com, www.td.com",
+   "se_results_count": 112
+  }
+ ],
+ "cost": "DataForSEO: 12 calls, $0.04980 of $2.00 budget"
+}

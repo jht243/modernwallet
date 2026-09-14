@@ -1,0 +1,94 @@
+{
+  "slug": "sole-proprietorship-vs-partnership",
+  "metaTitle": "Sole Proprietorship vs Partnership: Key Differences",
+  "metaDescription": "Compare sole proprietorship vs partnership: tax filings, owner liability, written agreements, and why an LLC may protect you better.",
+  "h1": "Sole Proprietorship vs Partnership: Which Structure Fits?",
+  "subtitle": "A side-by-side breakdown of taxes, legal liability, formation rules, and structural risks for unincorporated businesses.",
+  "optionAName": "Sole Proprietorship",
+  "optionBName": "General Partnership",
+  "introText": "A sole proprietorship is the default legal structure for a single-owner business, while a general partnership is the default structure whenever two or more individuals start an enterprise together without filing entity paperwork. At ModernWallet, we review business formation and self-employment finances to help founders understand what unformalized structures expose them to before customer contracts or vendor debts accumulate. Both paths share one fundamental vulnerability: neither structure provides a legal liability shield to protect your personal assets from business obligations. For most founders, the comparison between a sole proprietorship and a general partnership is less about choosing an ideal long-term structure and more about realizing when you must form a formal legal entity instead.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Number of owners",
+        "a": "Exactly one owner",
+        "b": "Two or more owners"
+      },
+      {
+        "dimension": "State formation paperwork",
+        "a": "None required to exist (DBA filings may apply)",
+        "b": "None required to exist (DBA filings may apply)"
+      },
+      {
+        "dimension": "Federal tax return",
+        "a": "Schedule C attached to personal Form 1040",
+        "b": "Form 1065 informational return plus Schedule K-1 for each partner"
+      },
+      {
+        "dimension": "Entity-level federal income tax",
+        "a": "No ($0 at entity level; profits pass through)",
+        "b": "No ($0 at entity level; profits pass through)"
+      },
+      {
+        "dimension": "Personal liability exposure",
+        "a": "Unlimited personal liability for own business debts and actions",
+        "b": "Unlimited personal liability for business debts, plus joint liability for partners' actions"
+      },
+      {
+        "dimension": "Governing document",
+        "a": "None (single owner holds full discretion)",
+        "b": "Written partnership agreement strongly recommended; otherwise state default rules govern"
+      },
+      {
+        "dimension": "Path to convert to an LLC or corporation",
+        "a": "File formation documents with your state",
+        "b": "File formation documents with your state"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Tax Filings and Pass-Through Mechanics",
+      "content": "A sole proprietorship reports business revenue directly on the owner's personal tax return, whereas a general partnership must file its own annual informational return with the Internal Revenue Service (IRS). As outlined by the [IRS sole proprietorship guidance](https://www.irs.gov/businesses/small-businesses-self-employed/sole-proprietorships), an individual operating as a sole proprietor records all gross income, deductible expenses, and depreciation on Schedule C (Profit or Loss From Business), which attaches directly to personal Form 1040. The net profit calculated on Schedule C flows to the front of Form 1040 and is subject to ordinary income tax as well as federal self-employment tax. You can run your expected net revenue through our [Self-Employment Tax Calculator](/self-employment-tax/) to see how Medicare and Social Security obligations calculate against your take-home earnings.\n\nA general partnership functions under different informational compliance rules, documented in the [IRS partnership guidelines](https://www.irs.gov/businesses/partnerships). The partnership itself does not pay federal income tax. Instead, the partnership compiles its operational revenue, business deductions, and asset records on Form 1065 (U.S. Return of Partnership Income), which serves as an informational report detailing total earnings. The business then prepares a Schedule K-1 (Partner's Share of Income, Deductions, Credits, etc.) for every individual partner. Each partner transfers their assigned share of profit or loss from their personal Schedule K-1 onto their individual Form 1040.\n\nBecause the partnership does not withhold taxes from partner distributions, each partner must manage their own quarterly estimated payments. In both business structures, every dollar of net operating profit triggers taxation in the year it is earned, regardless of whether the funds are kept in a commercial bank account or distributed directly to the owners. For growing operations evaluating tax elections down the road, our [S Corp Tax Hub](/s-corp-tax/) outlines how corporate tax elections alter these self-employment obligations."
+    },
+    {
+      "heading": "Unlimited Personal Liability and the Multi-Owner Risk",
+      "content": "Unlimited personal liability applies to both structures, but a general partnership carries far greater financial danger because each partner is legally responsible for the business acts of other partners. In a sole proprietorship, your personal bank accounts, vehicles, and real estate are exposed if the business defaults on a supplier invoice or faces a commercial slip-and-fall lawsuit. The scope of that exposure, however, is tethered entirely to your own decisions, contracts you sign, and actions you authorize.\n\nA general partnership magnifies that vulnerability across every person who holds ownership. Under standard legal rules of agency, any general partner can bind the partnership to commercial contracts, credit lines, equipment leases, or operational commitments during ordinary business operations, often without requiring prior consent from the other owners. If your co-founder signs a vendor contract that the business cannot afford, creditors can pursue your personal assets to satisfy the entire balance.\n\nPersonal exposure extends into negligence and operational misconduct. If your business partner causes a catastrophic accident while delivering goods to a client or damages client property during an installation, the injured party can name you personally in a civil lawsuit. Many founders assume liability divides neatly according to their equity percentage, but creditors can collect full damages from whichever partner possesses liquid personal assets. This cross-liability represents the single biggest argument against operating an unformalized partnership. Business founders facing external client contracts or commercial debt should review our breakdown on [Sole Proprietorship vs LLC](/compare/sole-proprietorship-vs-llc/) to understand how statutory liability shields protect non-culpable owners."
+    },
+    {
+      "heading": "State Default Rules and Written Partnership Agreements",
+      "content": "A written partnership agreement is not legally required to form a general partnership, but operating without one leaves your enterprise controlled entirely by state statutory defaults. When two people begin selling products, rendering professional services, or pooling funds to build a commercial venture without legal documents, state partnership law assumes an unformalized general partnership exists. The state does not examine the private intentions of the founders; it evaluates whether two or more parties share management authority and profits.\n\nIn the absence of a customized written agreement, state default laws dictate how your partnership runs, and these statutory defaults rarely match what partners believe they agreed upon verbally. Most state codes dictate that all partners hold equal management votes, share profits equally, and share losses equally. If one partner contributes ninety percent of the startup capital and handles eighty percent of the weekly labor while the second partner contributes ten percent, state default rules still award each partner a fifty percent share of profits and equal control over operational decisions. Furthermore, default rules can dictate that any partner can dissolve the partnership at will, forcing a liquidation of commercial assets even if the other partner wishes to continue operating.\n\nA written partnership agreement allows co-founders to replace these rigid statutory rules with customized terms. A thorough agreement defines exact equity percentages, capital contribution schedules, voting thresholds for substantial financial commitments, profit distribution timelines, and buy-sell provisions that dictate what occurs if a partner dies, departs, or files personal bankruptcy. A sole proprietorship requires no equivalent governing document because one person holds full ownership authority, eliminating internal ownership disputes entirely."
+    },
+    {
+      "heading": "Conversion Timelines and the Move to an LLC",
+      "content": "Both sole proprietorships and general partnerships can transition into formal corporate entities at any point by filing formation documents with state filing offices. Neither unformalized structure requires initial charter filings with a state agency, meaning startup friction and regulatory fees are zero at the moment you launch. This absence of paperwork makes both options common for weekend side hustles, brief trial ventures, and informal consulting engagements.\n\nContinuing to operate without a formal entity becomes reckless the moment your operations take on customer contracts, hire independent contractors, lease physical commercial property, or build intellectual property. To eliminate personal asset exposure, founders typically form a limited liability company (LLC). Filing Articles of Organization with your state establishes a distinct legal entity separate from the owners, inserting a legal shield between business debts and personal bank accounts. A sole proprietorship converts into a single-member LLC, while a general partnership converts into a multi-member LLC.\n\nConverting early prevents complicated accounting transfers later. An unformalized general partnership that accumulates real assets, supplier debts, and commercial leases must reassign those legal contracts to the new corporate entity during a conversion. If you organize an LLC from the outset, all vendor agreements, merchant processing accounts, and customer liabilities sit inside the protected entity from day one. When comparing entity trajectories, review our guide on [LLC vs S Corp](/compare/llc-vs-s-corp/) to see how business structures scale their legal and tax options as profits expand."
+    }
+  ],
+  "verdict": "Choose a sole proprietorship only if you are a solo entrepreneur testing a low-risk side venture where you have no co-founders, no employees, and negligible debt exposure. Choose a general partnership only as a brief stepping stone while you draft an operating agreement and file for an LLC with your co-founder. We do not recommend remaining in an unformalized general partnership for any active business, because joint liability permits your partner's legal mistakes or unauthorized vendor commitments to wipe out your personal savings. This unincorporated framework is not suitable for any business with physical facilities, retail foot traffic, customer contracts, or commercial credit lines. What would change our perspective: if your business operates in an industry where commercial liability insurance covers all operational risk and you generate no customer-facing exposure, remaining a sole proprietor can save administrative overhead. However, the moment you invite a co-owner, sign an equipment lease, or hire staff, forming a formal legal entity becomes mandatory.",
+  "faqItems": [
+    {
+      "question": "Do I need to file anything to start a sole proprietorship or a general partnership?",
+      "answer": "No formal corporate paperwork is required at the state level to establish a sole proprietorship or a general partnership. Both structures come into existence automatically the moment business activity begins with one owner or multiple owners. However, you may need to file a local Doing Business As (DBA) registration if you plan to operate under a brand name other than your own legal name, and you must obtain any standard municipal business permits required for your trade."
+    },
+    {
+      "question": "Am I liable for my business partner's mistakes in a general partnership?",
+      "answer": "Yes, general partners share joint personal liability for business obligations and legal claims arising from actions taken by other partners in the course of business. If your partner enters into an expensive supply contract or acts negligently while completing client work, creditors and plaintiffs can target your personal assets, including your private bank accounts, to recover the full balance."
+    },
+    {
+      "question": "How are sole proprietorships and partnerships taxed differently?",
+      "answer": "A sole proprietorship reports business income directly on Schedule C attached to the owner's personal Form 1040, whereas a general partnership files an annual informational return on Form 1065. The partnership produces a Schedule K-1 for each partner showing their allocation of net income or loss, which the partners then report on their personal returns. Neither entity pays federal income tax at the corporate level."
+    },
+    {
+      "question": "Do I need a written partnership agreement for a general partnership?",
+      "answer": "A written agreement is not legally mandatory to form a general partnership, but operating without one is dangerous. Without a written agreement, your state's default partnership statutes govern your operations, typically assigning equal management control and equal profit splits regardless of who contributed the initial capital or performs the daily work."
+    },
+    {
+      "question": "Should I just form an LLC instead of a sole proprietorship or general partnership?",
+      "answer": "Yes, forming a limited liability company (LLC) is the safer choice for almost every business that interacts with customers, signs vendor contracts, or carries debt. An LLC provides a statutory liability shield that protects your personal savings and property from business debts, eliminating the shared personal liability inherent in general partnerships."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

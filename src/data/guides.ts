@@ -189,7 +189,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "question": "Is a robotaxi cheaper than Uber?",
-        "answer": "Whether a robotaxi ride is cheaper than an Uber trip depends on real-time market demand and location. Neither Tesla nor Waymo publishes a fixed per-mile fare card, so the only reliable comparison is the live quote in each app for your specific route. Passengers should compare quotes directly between the Tesla robotaxi app and the Uber app for their specific route."
+        "answer": "Whether a robotaxi ride is cheaper than an Uber trip depends on real-time market demand and location. Neither Tesla nor Waymo publishes a fixed per-mile fare card, so the only reliable comparison is the live quote in each app for your specific route. [Waymo](https://waymo.com) operates a driverless robotaxi service through its own app in a limited number of approved cities, while [Uber](https://www.uber.com) runs a human-driven network with far broader domestic and international reach. Neither service publishes a fixed fare card, so rates fluctuate with real-time rider demand, distance, and the time of day. Because commercial robotaxis do not consistently undercut human drivers, checking a live quote in both apps remains the only reliable way to compare trip costs."
       },
       {
         "question": "Is the Cybercab a good investment?",

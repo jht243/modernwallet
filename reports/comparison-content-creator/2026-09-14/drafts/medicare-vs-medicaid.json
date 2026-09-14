@@ -1,0 +1,97 @@
+{
+  "slug": "medicare-vs-medicaid",
+  "metaTitle": "Medicare vs Medicaid: Difference, Eligibility, and Costs",
+  "metaDescription": "Medicare vs Medicaid explained: compare eligibility rules, covered benefits, dual enrollment, and long-term care to find the right coverage for your health.",
+  "h1": "Medicare vs Medicaid: Key Differences, Eligibility, and Dual Coverage",
+  "subtitle": "Compare eligibility rules, covered medical services, nursing home care, and dual enrollment options across Medicare and Medicaid.",
+  "optionAName": "Medicare",
+  "optionBName": "Medicaid",
+  "introText": "Medicare is a federal health insurance program primarily for people age 65 and older or those with qualifying disabilities, while Medicaid is a joint federal and state program designed for individuals with limited income and assets. At ModernWallet, we evaluate these healthcare programs to help families plan for medical expenses, understand coverage options, and avoid unexpected out-of-pocket costs. When comparing medicare vs medicaid, the two programs address fundamentally different questions: Medicare asks whether you meet age or disability criteria, whereas Medicaid asks whether you meet specific financial thresholds. An individual can qualify for Medicare alone, Medicaid alone, both programs simultaneously, or neither program. Understanding how these systems function prevents costly coverage mistakes and clarifies how to finance both routine healthcare and long-term support.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Administering authority",
+        "a": "Federal government via the Centers for Medicare & Medicaid Services (CMS)",
+        "b": "Joint federal and state partnership administered directly by state agencies"
+      },
+      {
+        "dimension": "Primary eligibility basis",
+        "a": "Age 65 or older, or specific long-term disabilities and conditions",
+        "b": "Household income and financial assets falling below state-defined limits"
+      },
+      {
+        "dimension": "Program rule consistency",
+        "a": "Uniform coverage rules, premiums, and benefits nationwide",
+        "b": "Varies significantly by state for income caps, asset limits, and optional benefits"
+      },
+      {
+        "dimension": "Long-term custodial care coverage",
+        "a": "No coverage for ongoing custodial assistance in a nursing home or at home",
+        "b": "Covers nursing home custodial care and home-based support after asset spend-down"
+      },
+      {
+        "dimension": "Enrollee cost-sharing and premiums",
+        "a": "Standard monthly premiums, annual deductibles, and coinsurance apply to most enrollees",
+        "b": "Minimal or zero premiums and out-of-pocket costs for qualifying individuals"
+      },
+      {
+        "dimension": "Dual enrollment capability",
+        "a": "Can be combined with Medicaid if the enrollee meets state financial criteria",
+        "b": "Can be combined with Medicare to pay Medicare cost-sharing and fill benefit gaps"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Comparing Medicare vs Medicaid on Eligibility Rules",
+      "content": "Medicare eligibility depends on your age or disability status under uniform federal rules, while Medicaid eligibility depends on your household income and countable financial assets under state-specific guidelines.\n\nThe federal government oversees Medicare through the Centers for Medicare & Medicaid Services (CMS). Because Medicare is entirely federal, the qualification criteria remain identical across all fifty states. Most Americans qualify for Medicare by turning age 65, provided they or their spouse paid Medicare payroll taxes for at least ten years. People under 65 can qualify after receiving Social Security Disability Insurance benefits for twenty-four months, or immediately upon diagnosis with End-Stage Renal Disease (ESRD) or Amyotrophic Lateral Sclerosis (ALS). You can register for your initial Medicare coverage through the [Social Security Administration](https://www.ssa.gov) (SSA).\n\nMedicaid operates as a cooperative partnership between the federal government and individual states, coordinated nationally by [Medicaid.gov](https://www.medicaid.gov). Federal law establishes broad coverage baselines, but each state designs its own administrative framework, selects optional benefits, and enforces distinct income caps. Medicaid eligibility evaluates modified adjusted gross income alongside household size against the Federal Poverty Level (FPL). For aged, blind, and disabled populations, states also apply strict resource limits that cap countable liquid assets like checking accounts, savings accounts, and investment portfolios.\n\nThe division between state rules expanded after the passage of the Affordable Care Act (ACA). The legislation allowed states to expand Medicaid coverage to adults earning up to 138 percent of the federal poverty line without requiring an asset test. States that adopted the expansion provide health coverage to a broad population of low-income working adults. States that rejected the expansion retain older, stricter rules that often deny Medicaid to non-disabled adults without dependent children, regardless of how little money they earn. Consequently, an individual earning the exact same wage could qualify for comprehensive Medicaid in one state while remaining completely uninsured in a neighboring state."
+    },
+    {
+      "heading": "Four-Part Medicare Structure and Coverage Choices",
+      "content": "Medicare consists of four distinct operational parts that divide hospital care, outpatient medical treatments, private managed care plans, and prescription drugs.\n\nPart A functions as hospital insurance, covering inpatient admissions, short-term skilled nursing rehabilitation following a qualifying hospital stay, certain home healthcare services, and hospice care. Most beneficiaries receive Part A without paying a monthly premium if they accumulated forty quarters of Medicare-covered employment. Part B operates as medical insurance, covering outpatient physician visits, preventative screenings, laboratory tests, mental health services, and durable medical equipment. Beneficiaries pay a monthly base premium for Part B, which CMS adjusts annually, alongside an annual deductible and a standard twenty percent coinsurance charge for covered services.\n\nPart D delivers outpatient prescription drug coverage through private insurance carriers contracted by CMS. Beneficiaries select a standalone plan that matches their medication list, paying an annual deductible, monthly premiums, and tier-based copayments. Part C, commonly known as Medicare Advantage, offers an alternative private insurance framework that replaces Original Medicare Part A and Part B with a managed care plan, such as a health maintenance organization or preferred provider organization. Most Medicare Advantage plans bundle prescription drug coverage directly into the benefit package.\n\nChoosing between traditional Medicare paired with a supplemental policy and a private Medicare Advantage plan represents one of the most critical decisions an older adult will face. Because this choice involves distinct trade-offs between provider flexibility and out-of-pocket maximums, we analyze the details in our dedicated guide to [Medicare Advantage vs Medigap](/compare/medicare-advantage-vs-medigap/)."
+    },
+    {
+      "heading": "Understanding the Medicare vs Medicaid Difference in Long-Term Care",
+      "content": "The most consequential difference between Medicare and Medicaid centers on long-term custodial care, which Medicare excludes and Medicaid finances.\n\nMedicare is designed specifically as acute care insurance. It pays for doctors, surgeries, prescription drugs, emergency room care, and physical therapy aimed at recovery or stabilization. When a patient enters a skilled nursing facility following a qualifying three-day inpatient hospital stay, Medicare Part A covers rehabilitative care for up to one hundred days. However, the patient must require daily skilled medical or therapy services to maintain coverage. Once the patient stabilizes or reaches a plateau where skilled care is no longer rehabilitative, Medicare coverage stops completely. Medicare never covers ongoing custodial assistance, such as permanent nursing home placement, assistance with eating, dressing, bathing, or general home supervision.\n\nMedicaid serves as the dominant public funding source for nursing home care across the United States. Once an applicant qualifies financially and demonstrates a medical need for daily assistance with activities of daily living, Medicaid pays for nursing home room and board, personal care attendants, and comprehensive medical treatments. Many states also offer Home and Community-Based Services waiver programs that deliver personal care assistance directly inside the beneficiary's private residence, helping older adults avoid institutionalization.\n\nBecause private nursing home care frequently costs thousands of dollars each month, families facing progressive cognitive conditions or physical decline often experience rapid financial depletion. You can estimate local care costs and evaluate potential financial gaps using our [Long-Term Care Cost Calculator](/elder-care/long-term-care-cost-calculator/), which outlines regional expenses for assisted living, home health aides, and nursing facilities."
+    },
+    {
+      "heading": "Dual Eligibility When You Qualify for Both Programs",
+      "content": "Dual eligibility allows an individual to maintain simultaneous enrollment in Medicare and Medicaid when they satisfy the qualifying criteria for both systems.\n\nOver twelve million Americans hold dual-eligible status, qualifying for Medicare by virtue of age or disability while qualifying for Medicaid based on limited financial resources. In this arrangement, Medicare acts as the primary payer for all clinical encounters, hospital stays, physician visits, and medical equipment. Healthcare providers submit claims to Medicare first. Once Medicare pays its contracted share, Medicaid acts as the secondary payer, covering remaining out-of-pocket costs such as Part B coinsurance, deductibles, and co-payments.\n\nDual enrollment shields low-income older adults from out-of-pocket expenses that could otherwise trigger medical debt. Furthermore, Medicaid covers vital support services that Medicare excludes, most notably long-term personal care assistance and custodial nursing home stays. Beneficiaries with full dual eligibility also receive federal low-income subsidies for Medicare Part D, which substantially lowers prescription drug copayments.\n\nState Medicaid agencies administer Medicare Savings Programs to assist lower-income Medicare recipients who may have assets slightly above full Medicaid thresholds. These programs can pay Medicare Part B premiums, and in some categories, Part A and Part B deductibles and coinsurance. Navigating dual enrollment allows low-income seniors to access broad physician networks through federal Medicare while relying on Medicaid to eliminate billing friction and finance ongoing personal care."
+    },
+    {
+      "heading": "Asset Limits and the Medicaid Spend-Down Process",
+      "content": "Medicaid requires applicants who have assets above statutory limits to complete a structured spend-down before receiving government coverage for long-term care.\n\nUnlike Medicare, which enforces zero asset restrictions and charges uniform premiums regardless of personal wealth, Medicaid enforces strict resource caps on applicants who need long-term custodial care. In most states, an individual applicant cannot hold more than a few thousand dollars in countable liquid assets to qualify. Countable assets include checking accounts, savings accounts, certificates of deposit, brokerage holdings, and secondary real estate. Non-countable assets generally include the applicant's primary home up to state equity limits, one vehicle used for medical transportation, household furnishings, personal effects, and pre-funded burial arrangements.\n\nWhen an individual requires nursing home care but owns assets above the state limit, they must pay for care privately until their savings drop to the qualifying threshold. This depletion process is known as spending down. State Medicaid rules govern what constitutes a legitimate spend-down expenditure. Acceptable expenses include paying nursing home bills directly, funding home repairs to improve accessibility, purchasing medical equipment, and paying off existing debt.\n\nStates also apply a five-year look-back period to uncover asset transfers made for less than fair market value. Transferring funds, gifting property, or deeding a home to family members within sixty months of a Medicaid application triggers a penalty period of ineligibility. For families managing these complex elder care milestones, our [Elder Care Hub](/elder-care/) provides essential guidance on navigating long-term support systems, legal documents, and care coordination options."
+    },
+    {
+      "heading": "Next Steps to Verify Eligibility and Apply",
+      "content": "Begin your enrollment process by identifying which program matches your current age and household financial position.\n\nIf you are approaching age 65, visit [Medicare.gov](https://www.medicare.gov) up to three months before your birth month to review enrollment periods, evaluate Part D prescription drug plans, and confirm your work credits. If your household income is low or you anticipate substantial long-term care bills, locate your state department of health or social services agency through [Medicaid.gov](https://www.medicaid.gov) to request specific asset and income worksheets. Preparing these verification documents early ensures you can enroll on time, prevent administrative processing delays, and determine whether dual eligibility applies to your household. To protect your family finances, contact your state Medicaid office or sign in to Medicare.gov today to establish your medicare vs medicaid coverage strategy."
+    }
+  ],
+  "verdict": "Choose Medicare as your primary focus if you are turning age 65 or have a qualifying disability with moderate to high income and savings, since you will qualify automatically based on federal criteria without financial vetting. In that situation, your primary task is choosing between Original Medicare with Medigap or an all-in-one Medicare Advantage plan. Choose Medicaid if you have low household income and limited liquid assets, regardless of your age, to secure comprehensive healthcare coverage with minimal or zero out-of-pocket fees. If you are age 65 or older and have low income and few assets, apply for both programs to achieve dual eligibility, which allows Medicaid to cover your Medicare premiums, cost-sharing, and long-term nursing home care. This advice does not work for non-disabled adults under age 65 who live in states that rejected the ACA Medicaid expansion and earn income below the federal poverty line. Those individuals fall into the coverage gap, where they earn too little for marketplace subsidies and are excluded from state Medicaid. They must look toward community health centers or try to adjust reported earnings to cross the subsidy threshold. What would change our recommendation: Reaching age 65, receiving an official disability determination from the Social Security Administration, spending down assets through ongoing medical care, or your state passing legislation to adopt Medicaid expansion would immediately change which program you should pursue.",
+  "faqItems": [
+    {
+      "question": "Can you have both Medicare and Medicaid at the same time?",
+      "answer": "Yes, individuals who meet the separate eligibility criteria for each program can enroll in both Medicare and Medicaid at the same time. This status is called dual eligibility and is common among low-income adults age 65 and older or younger individuals with permanent disabilities. Under dual enrollment, Medicare acts as the primary payer for doctor visits, hospitalizations, and approved medical procedures, while Medicaid serves as the secondary payer to cover Medicare cost-sharing, including Part B premiums, deductibles, and coinsurance. Medicaid also covers long-term care services that Medicare excludes."
+    },
+    {
+      "question": "Does Medicare or Medicaid cover nursing home care?",
+      "answer": "Medicaid covers long-term nursing home care, while Medicare covers only temporary rehabilitative stays in a skilled nursing facility. Medicare Part A will pay for up to one hundred days of skilled rehabilitation after a qualifying three-day inpatient hospital stay, provided you require daily physical therapy or skilled nursing care. Medicare never covers long-term custodial care, such as help with bathing, eating, and dressing. In contrast, Medicaid is the primary public payer for permanent nursing home stays in the United States, covering room, board, and daily assistance once an applicant spends down assets to state limits."
+    },
+    {
+      "question": "Why is Medicaid different in every state while Medicare is uniform?",
+      "answer": "Medicaid differs across states because it is funded jointly by the federal government and state budgets, but managed entirely at the state level. Federal guidelines set minimum baseline rules, but each state legislature has the legal authority to determine its own eligibility income thresholds, asset rules, and optional benefits. This includes the decision of whether to adopt the Affordable Care Act expansion. Conversely, Medicare is a purely federal program managed by the Centers for Medicare & Medicaid Services, ensuring that coverage rules, benefit structures, and eligibility requirements remain identical nationwide."
+    },
+    {
+      "question": "Do I qualify for Medicaid if I am under 65?",
+      "answer": "You can qualify for Medicaid if you are under 65 if you meet your state's income thresholds, particularly in states that adopted the Affordable Care Act expansion. In expansion states, adults under age 65 who earn up to 138 percent of the Federal Poverty Level can qualify for full Medicaid coverage without an asset test. In non-expansion states, eligibility for adults under 65 remains limited to low-income parents, pregnant women, and individuals with certified disabilities. Check your state agency through Medicaid.gov to see specific qualifications for non-elderly adults."
+    },
+    {
+      "question": "What is dual eligibility for Medicare and Medicaid?",
+      "answer": "Dual eligibility is a healthcare status describing someone who qualifies for both Medicare and Medicaid coverage simultaneously. Beneficiaries typically qualify for Medicare based on age or a certified disability and qualify for Medicaid by meeting strict state-level income and asset limits. Dual-eligible enrollees receive medical care through Medicare provider networks with Medicaid paying for premiums, copayments, and deductibles. Furthermore, dual-eligible individuals gain access to Medicaid-funded long-term services, such as home personal care attendants and custodial nursing home stays, creating a safety net for vulnerable older adults."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

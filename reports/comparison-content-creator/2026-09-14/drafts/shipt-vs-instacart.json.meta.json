@@ -1,0 +1,43 @@
+{
+ "slug": "shipt-vs-instacart",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1556,
+ "floor": 1500,
+ "input_tokens": 18077,
+ "output_tokens": 2439,
+ "thinking_tokens": 678,
+ "cached_tokens": 17017,
+ "est_cost_usd": 0.0157,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1556,
+  "numbers_not_in_facts": [
+   "2026"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17422
+  }
+ },
+ "seconds": 14.1,
+ "response_id": "OK-nap3ODJiK-sAPssbD2Qg",
+ "generated_at": "2026-09-14T08:24:37+0000"
+}

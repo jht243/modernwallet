@@ -1,0 +1,37 @@
+{
+ "slug": "ltc-cost-calc--self-funding-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 74,
+ "floor": 0,
+ "input_tokens": 17570,
+ "output_tokens": 84,
+ "thinking_tokens": 5095,
+ "cached_tokens": 17017,
+ "est_cost_usd": 0.023,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 74,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17422
+  }
+ },
+ "seconds": 17.9,
+ "response_id": "tLGnavjxNL_j_uMPsJ-B6Ac",
+ "generated_at": "2026-09-14T08:35:18+0000"
+}
