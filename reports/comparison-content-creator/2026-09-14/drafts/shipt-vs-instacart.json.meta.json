@@ -11,13 +11,13 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1556,
+ "words": 1992,
  "floor": 1500,
- "input_tokens": 18077,
- "output_tokens": 2439,
- "thinking_tokens": 678,
+ "input_tokens": 18298,
+ "output_tokens": 3067,
+ "thinking_tokens": 843,
  "cached_tokens": 17017,
- "est_cost_usd": 0.0157,
+ "est_cost_usd": 0.0188,
  "guards": {
   "repairs": [],
   "flags": [
@@ -26,9 +26,10 @@
    "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
   "disallowed_urls_removed": [],
-  "words": 1556,
+  "words": 1992,
   "numbers_not_in_facts": [
-   "2026"
+   "2026",
+   "400"
   ],
   "writer_scope": {
    "dropped_sections": [],
@@ -37,7 +38,7 @@
    "tokens_sent_est": 17422
   }
  },
- "seconds": 14.1,
- "response_id": "OK-nap3ODJiK-sAPssbD2Qg",
- "generated_at": "2026-09-14T08:24:37+0000"
+ "seconds": 19.7,
+ "response_id": "N7SnavfaApiK-sAPssbD2Qg",
+ "generated_at": "2026-09-14T08:46:02+0000"
 }

@@ -54,3 +54,8 @@ Anything not on this list, you do not know. Never invent a membership price or s
 - Can I shop for both Shipt and Instacart?
 - Is Shipt only for Target?
 - Do Shipt shoppers pay taxes the same way as Instacart shoppers?
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT
+
+- defect: draft's reader-facing prose (intro + section bodies + verdict + FAQ answers) measures only 1,311 words by direct word count, well under the 1,500-word depth floor for a comparison page.
+- fix: expand with REAL substance, not padding. Add a new section (or substantially deepen sections 2 and 3) covering: (a) how membership pricing philosophy differs in practice — the trade-offs a customer weighs when a membership only unlocks free delivery at some retailers but not others, and (b) a deeper treatment of the worker-side schedule/order-density comparison already outlined in point 3 of "What to cover, section by section" — give a concrete, non-numeric-fabricated walkthrough of how a shopper would actually decide which app to prioritize on a given day. Target at least 1,650 words of body prose (intro + sections + verdict + FAQs combined) so the page clears the floor with real margin.
