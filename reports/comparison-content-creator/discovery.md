@@ -178,3 +178,39 @@ Legend: 🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 dup
 **Audit fixes applied (1 rework pass, all Rung-1 mechanical, 0 Rung-2 reworks, 0 dropped pages):** cd-vs-treasury-bill — hand-linked an unlinked "Treasury auction yields" directive, deep-linked the CFPB source. schd-vs-vym — lengthened title 46→52 chars, split a 38-word opener, removed a filler adjective from the verdict, linked Dow Jones/FTSE on first mention, deep-linked two "check the fact sheet" directives to the real fund pages. dgro-vs-vig — replaced a placeholder comparison-table cell + matching prose with VIG's real -16.79% worst-quarter figure (sourced from this site's own `roundups.ts`, since the generator's fact list didn't have it), split a 42-word opener, linked Morningstar/S&P on first mention, deep-linked the methodology-docs directive. betterment-vs-wealthfront — split a 40-word opener, deep-linked two pricing-page directives, fixed Title Case on one heading; **live web-verified the page's Betterment fee figures ($5/mo under $24,000, Premium 0.65%/$100k) as current and correct, and found this site's own `roundups.ts` had gone stale on the same facts ($4/mo under $20,000, 0.40% Premium) — corrected both stale occurrences.** hsa-vs-roth-ira and both enrichments passed cleanly with zero fixes. The generator's own fact-guard flagged the 2026 Roth IRA $1,100 catch-up figure and DGRO's 75% payout-ratio exclusion threshold as unverified against its closed fact list; both were independently web-verified as correct during the audit-fix pass (IRS/SECURE 2.0 catch-up schedule; Morningstar US Dividend Growth Index methodology).
 **Inbound links added (Phase 5):** hsa-vs-fsa/cd-vs-money-market/hysa-vs-cd `relatedComparisons` arrays extended; one link each added from `/roundup/best-dividend-etfs/` (to schd-vs-vym + dgro-vs-vig) and `/roundup/best-robo-advisors/` (to betterment-vs-wealthfront). dgro-vs-vig and schd-vs-vym already backlink each other via `relatedComparisons`.
 **Build:** green — `npx tsc --noEmit` clean, `npm run build` 778 pages. All 5 new `/compare/<slug>/` routes confirmed present in `dist/`.
+
+## Run 2026-09-14 (comparison-content-auto, autonomous) — refreshed facts
+- **Comparisons live at run start:** 138 in `src/data/comparisons.ts` + 7 in `src/data/comparisons-business.ts` + 2 in `src/data/comparisons-business-structure.ts` = 147 total (many added by other fleet routines since 09-07, not previously tracked in `cache.json`).
+- **SEO data:** Ahrefs/SEMRUSH still unconfigured this run. Per `_keyword-demand-ladder`, ran on rung 2: **DataForSEO** (`DATAFORSEO_B64` supplied inline, balance $51.37) for volume+KD, plus live SERP via `scripts/lib/serp.py` for all 14 NEW candidates (13/14 came back `verdict: winnable`; 1 — reverse-mortgage-vs-downsizing — had no measured volume at all and was dropped before a SERP call).
+- Candidate generation delegated to a research subagent given how heavily picked-over the site now is (147 live comparisons + guides/roundups/spokes). Explored underexplored verticals: gig-economy delivery platforms (only Cybercab pages existed), small-business entity comparisons beyond LLC/S-corp, the one missing edge in the tax-software matrix, Medicare/Medicaid basics, new-vs-used auto, and secured/unsecured credit building.
+
+### Candidate Chart (DataForSEO US, live)
+| # | Comparison | Vol | KD | CPC | Coverage | Verdict |
+|---|---|---|---|---|---|---|
+| 1 | medicare vs medicaid | 90,500 | 11 | $7.72 | 🟢 new | Build — Tier 1 (huge volume, low KD; entrenched .gov/insurer SERP noted but site already ranks similar elder-care/insurance content) |
+| 2 | s corp vs c corp | 14,800 | 5 | $8.77 | 🟢 new | Build — Tier 1 |
+| 3 | lyft vs uber | 5,400 | 6 | $3.87 | 🟢 new | Build — Tier 1 |
+| 4 | secured vs unsecured credit card | 2,400 | 17 | $18.17 | 🟢 new | Build — Tier 1 |
+| 5 | doordash vs uber eats | 2,900 | 0 | $6.58 | 🟢 new | Build — Tier 1 |
+| 6 | instacart vs doordash | 2,900 | 0 | $8.05 | 🟢 new | Build — Tier 1 |
+| 7 | new car vs used car | 1,300 | 22 | $1.41 | 🟢 new | Build — Tier 2 (forum-dominated SERP, winnable) |
+| 8 | llc vs c corp | 1,000 | 12 | $9.75 | 🟢 new | Build — Tier 2 |
+| 9 | shipt vs instacart | 1,000 | 0 | $76.60 | 🟢 new | Build — Tier 2 |
+| 10 | sole proprietorship vs partnership | 590 | 15 | $1.16 | 🟢 new | Build — Tier 2 |
+| 11 | amazon flex vs doordash | 480 | 0 | $2.62 | 🟢 new | Build — Tier 2 |
+| 12 | certified pre-owned vs used car | 320 | — | $1.63 | 🟢 new | Build — Tier 2 |
+| 13 | h&r block vs taxact | 90 | 1 | — | 🟢 new | Build — Tier 2 (fills the one missing edge in the turbotax/taxact/freetaxusa/hr-block matrix) |
+| — | reverse mortgage vs downsizing | 20–200 (est.) | — | — | 🟢 new | Drop — below reliable-volume floor (autocomplete estimate only, no measured DataForSEO volume) |
+| — | waymo vs uber | — | — | — | 🟡 partial (Cybercab guide FAQ + passive-income guide) | Enrich — expanded FAQ into a real Waymo-vs-Uber comparison |
+| — | rap vs tiered standard repayment plan | — | — | — | 🟡 partial (`/guides/student-loan-standard-repayment-plan/`) | Re-checked live: already adequately covered (full verdict section exists) — skipped, no edit |
+| — | long term care insurance vs self-funding | — | — | — | 🟡 partial (`/elder-care/long-term-care-cost-calculator/`) | Enrich — expanded FAQ with the risk-transfer mechanism |
+| — | ally bank vs marcus | — | — | — | 🟡 partial (`/roundup/best-high-yield-savings-accounts/`) | Enrich — added a head-to-head verdict callout |
+| — | estate tax vs inheritance tax | — | — | — | 🟡 partial (`/estate-planning/estate-tax-calculator/`) | Re-checked live: already adequately covered (full state-by-state section + FAQ exists) — skipped, no edit |
+| — | assisted living vs nursing home | — | — | — | 🔴 duplicate (`/elder-care/long-term-care-cost-calculator/`) | Drop — subsumed by an existing 3-way decision block with a full cost comparison and explicit verdict |
+
+**Built (13 new pages):** lyft-vs-uber, doordash-vs-uber-eats, instacart-vs-doordash, amazon-flex-vs-doordash, shipt-vs-instacart, s-corp-vs-c-corp, llc-vs-c-corp, sole-proprietorship-vs-partnership, hr-block-vs-taxact, medicare-vs-medicaid, new-car-vs-used-car, certified-pre-owned-vs-used-car, secured-credit-card-vs-unsecured-credit-card.
+**Enriched (3 in-place edits):** guides.ts Cybercab guide FAQ (Waymo vs Uber comparison), spokes-elder-care.ts long-term-care-cost-calculator FAQ (LTC insurance vs self-funding risk-transfer mechanism), roundups.ts best-high-yield-savings-accounts verdict (Ally vs Marcus head-to-head callout).
+**Skipped as already-covered (2, re-checked live per Phase 3b rule):** rap-vs-tiered-standard-repayment-plan, estate-tax-vs-inheritance-tax — both PARTIALs turned out to already have a real comparison section + verdict on the target page, so no edit was made.
+**Dropped (2):** reverse-mortgage-vs-downsizing (below volume floor), assisted-living-vs-nursing-home (duplicate).
+**Audit fixes applied (1 rework pass; 9/13 pages passed clean):** doordash-vs-uber-eats, amazon-flex-vs-doordash, certified-pre-owned-vs-used-car — titles lengthened into the 50–60 char range. llc-vs-c-corp — removed an unsourced IRC §357 citation (the underlying tax-consequence warning was kept, with a "confirm with a CPA" hedge). medicare-vs-medicaid — removed an unsourced "twelve million Americans" dual-eligibility statistic. shipt-vs-instacart — failed the depth gate at 1,311 words (a real gap; the generator's own word-count in its `.meta.json` was itself found to be wrong), reworked in one regeneration pass to 1,711 words. 0 pages dropped/drafted.
+**Build:** green — `npm run build` 822 pages (node_modules installed fresh this run). All 13 new `/compare/<slug>/` routes confirmed present in `dist/`.
