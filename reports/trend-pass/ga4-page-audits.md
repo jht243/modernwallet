@@ -168,3 +168,8 @@
 | /guides/trump-accounts/ | 2026-09-13 | 1 | 0/0/0/0/0 | 0 |
 | /net-worth/liquid-net-worth-calculator/ | 2026-09-13 | 1 | 0/0/0/0/0 | 0 |
 | /compare/vanguard-vs-fidelity/ | 2026-09-13 | 0 | 0/0/0/0/0 | 0 |
+| /estate-planning/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
+| /estate-planning/estate-tax-calculator/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
+| /estate-planning/living-trust-cost-calculator/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-investment-apps-for-beginners | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-monthly-dividend-etfs/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |

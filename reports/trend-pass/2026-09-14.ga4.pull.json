@@ -1,0 +1,64 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-14",
+  "window_start": "2026-09-14",
+  "window_end": "2026-09-14",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/estate-planning/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/estate-planning/estate-tax-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/estate-planning/living-trust-cost-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-investment-apps-for-beginners",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-monthly-dividend-etfs/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/estate-planning/": {
+      "Direct": 1
+    },
+    "/estate-planning/estate-tax-calculator/": {
+      "Direct": 1
+    },
+    "/estate-planning/living-trust-cost-calculator/": {
+      "Unassigned": 1
+    },
+    "/roundup/best-investment-apps-for-beginners": {
+      "Direct": 1
+    },
+    "/roundup/best-monthly-dividend-etfs/": {
+      "Unassigned": 1
+    }
+  }
+}
