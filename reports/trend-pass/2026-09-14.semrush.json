@@ -1,0 +1,201 @@
+{
+  "status": "ok",
+  "seeds": [
+    "cpa represent a client",
+    "can a cpa represent you before the irs"
+  ],
+  "database": "us",
+  "sources": {
+    "estimate": 15
+  },
+  "provider_notes": [
+    "ahrefs unusable (no AHREFS_API_KEY)",
+    "semrush unusable (no SEMRUSH_API_KEY)",
+    "expand: no provider usable \u2014 autocomplete estimate only",
+    "Autocomplete added 10 live ideas 'cpa represent a client' (no provider)",
+    "Autocomplete added 5 live ideas 'can a cpa represent you before the irs' (no provider)"
+  ],
+  "keywords": [
+    {
+      "keyword": "cpa standards of professional conduct",
+      "volume": 250,
+      "volume_low": 250,
+      "volume_high": 2500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "how many clients does a cpa have",
+      "volume": 250,
+      "volume_low": 250,
+      "volume_high": 2500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "cpa represent a client",
+      "volume": 150,
+      "volume_low": 150,
+      "volume_high": 1500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "cpa rep a client",
+      "volume": 150,
+      "volume_low": 150,
+      "volume_high": 1500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "cpa duties to client",
+      "volume": 150,
+      "volume_low": 150,
+      "volume_high": 1500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "can a cpa represent a client in tax court",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "how do cpas get clients",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "can cpa represent client tax court",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "can a cpa represent you before the irs",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "can a cpa represent you before the irs"
+    },
+    {
+      "keyword": "can a cpa represent you to the irs",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "can a cpa represent you before the irs"
+    },
+    {
+      "keyword": "can a cpa report you to the irs",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "can a cpa represent you before the irs"
+    },
+    {
+      "keyword": "does a cpa have to sign a tax return",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "can a cpa represent you before the irs"
+    },
+    {
+      "keyword": "who can represent a taxpayer before the irs",
+      "volume": 75,
+      "volume_low": 75,
+      "volume_high": 750,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+      "seed": "can a cpa represent you before the irs"
+    },
+    {
+      "keyword": "cpa description",
+      "volume": 50,
+      "volume_low": 50,
+      "volume_high": 500,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    },
+    {
+      "keyword": "what is a client accountant",
+      "volume": 10,
+      "volume_low": 10,
+      "volume_high": 100,
+      "kd": "",
+      "cpc": "",
+      "source": "estimate",
+      "confidence": "low",
+      "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 10-100/mo, NOT measured)",
+      "seed": "cpa represent a client"
+    }
+  ],
+  "errors": []
+}

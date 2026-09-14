@@ -1,0 +1,26 @@
+{
+  "slug": "can-an-enrolled-agent-represent-you-in-tax-court",
+  "title": "Can an Enrolled Agent Represent You in Tax Court?",
+  "metaDescription": "Can an Enrolled Agent represent you in U.S. Tax Court? Only if separately admitted under the Tax Court's Rule 200, a step most Enrolled Agents never take.",
+  "h1": "Can an Enrolled Agent Represent You in U.S. Tax Court?",
+  "cardBlurb": "Circular 230 gives an Enrolled Agent full IRS practice rights, but U.S. Tax Court is a separate court with its own admission exam almost no Enrolled Agent passes.",
+  "introText": "An Enrolled Agent can represent you in [U.S. Tax Court](https://www.ustaxcourt.gov/) only if they have separately passed the Tax Court's own exam for non-attorneys. Most Enrolled Agents never take that exam.\n\nUnder [Circular 230](https://www.irs.gov/tax-professionals/circular-230-tax-professionals), Enrolled Agents have unlimited authority to handle audits, collections, and administrative appeals before the [Internal Revenue Service (IRS)](https://www.irs.gov). But the Tax Court is a federal court separate from the IRS, and it sets its own rules about who can argue cases before its judges.\n\nThat distinction matters mainly for the small share of disputes that never settle, since most Tax Court petitions are resolved before trial.",
+  "sections": [
+    { "heading": "What Circular 230 Covers", "body": "Circular 230 is the [U.S. Treasury](https://home.treasury.gov/) regulation that licenses Enrolled Agents to represent taxpayers before the IRS. It grants the same unlimited practice rights an attorney or a Certified Public Accountant (CPA) holds for that same work. An Enrolled Agent earns the license by passing the IRS's three-part Special Enrollment Examination, or by working at least five years in a qualifying IRS position. The license is federal, so it carries into all 50 states without a separate application." },
+    { "heading": "Why the Tax Court Is a Separate Court from the IRS", "body": "Admission to argue a case in Tax Court comes from the court itself. It is a separate credential from any IRS license, including the Enrolled Agent license. The Tax Court is an independent federal court, created under Article I of the Constitution." },
+    { "heading": "How a Non-Attorney Gets Admitted to Tax Court", "body": "A non-attorney is admitted to argue cases in Tax Court only by passing the court's own written exam, a separate hurdle from the Enrolled Agent license itself. Tax Court Rule 200 sets two paths to admission." }
+  ],
+  "tools": [
+    { "href": "/tax-resolution/", "label": "Tax resolution calculator" },
+    { "href": "/tax-resolution/offer-in-compromise-calculator/", "label": "Offer in compromise calculator" },
+    { "href": "/tax-resolution/irs-payment-plan-calculator/", "label": "IRS payment plan calculator" }
+  ],
+  "faqs": [
+    { "question": "Does passing the Enrolled Agent exam qualify someone for Tax Court?", "answer": "No. The Enrolled Agent license comes from the IRS's own Special Enrollment Examination, a different test from the Tax Court's written exam for non-attorneys under Rule 200. Passing one does not exempt a candidate from the other, and an Enrolled Agent who has never taken the Tax Court exam has no standing to argue a case there." },
+    { "question": "What is a United States Tax Court Practitioner (USTCP)?", "answer": "A United States Tax Court Practitioner is a non-attorney who has passed the Tax Court's Rule 200 exam and cleared its character and fitness review. That person has also been formally admitted to argue cases before the court." }
+  ],
+  "sources": [
+    { "label": "IRS — Circular 230: Regulations Governing Practice Before the IRS", "url": "https://www.irs.gov/tax-professionals/circular-230-tax-professionals" },
+    { "label": "United States Tax Court — Rule 200: Admission to Practice", "url": "https://ustaxcourt.gov/files/documents/rule-200.pdf" }
+  ]
+}
