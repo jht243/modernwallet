@@ -1,0 +1,14 @@
+Key dc557f6bfced447aa1a71771d8a0d24a · 16 URLs (1 mistaken: /guides/can-you-buy-a-cybercab/ was
+not the enriched guide's real route — the enriched guide's actual slug is
+cybercab-cost-of-ownership; corrected below)
+  https://www.themodernwallet.com/compare/amazon-flex-vs-doordash/
+  https://www.themodernwallet.com/compare/certified-pre-owned-vs-used-car/
+  https://www.themodernwallet.com/compare/doordash-vs-uber-eats/
+  https://www.themodernwallet.com/compare/hr-block-vs-taxact/
+  https://www.themodernwallet.com/compare/instacart-vs-doordash/
+  ... and 11 more
+Submitted 16 URLs — HTTP 200
+
+Correction — the enriched Cybercab guide is actually at:
+  https://www.themodernwallet.com/guides/cybercab-cost-of-ownership/
+Submitted 1 URL — HTTP 200
