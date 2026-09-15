@@ -1604,13 +1604,15 @@ export const GUIDES: Guide[] = [
       { question: "Can I open a Trump Account if my child was not born in the eligible years?", answer: "Yes. Almost any U.S. child under 18 with a Social Security number can have an account. Only the $1,000 government seed is limited to citizen children born January 1, 2025 through December 31, 2028." },
       { question: "When can I open and fund a Trump Account?", answer: "The program went live July 4, 2026. Starting that date, families who did not opt in at tax time can open and fund an account at TrumpAccounts.gov. Families who opted in while filing 2025 taxes may already have one started." },
       { question: "How much can I contribute after opening a Trump Account?", answer: "You can contribute up to $5,000 per year combined, with an employer able to add up to $2,500 within that cap. The $1,000 government seed does not count against the limit. Contributions go into an S&P 500 index fund." },
+      { question: "What is the minimum contribution to a Trump Account?", answer: "Federal rules set no minimum contribution amount to open or fund a Trump Account. The law limits annual contributions to $5,000, and any amount you deposit must go into the required U.S.-equity index fund. Approved trustees can still establish their own account minimums or fee schedules, so review your trustee's terms before funding the account." },
       { question: "Is my money locked after I open a Trump Account?", answer: "Yes. Funds grow tax-deferred and stay locked until January 1 of the year the child turns 18. The account is designed as a long-term investment in a U.S.-equity index fund." },
       { question: "How do I know a Trump Account site or app is not a scam?", answer: "Open the account only at TrumpAccounts.gov or the official Trump Accounts app, and never pay a fee to open one or to receive the $1,000 seed. See [Trump Account scams to know](/guides/trump-account-scams/) for the copycat sites, fake texts, and fake apps already circulating." }
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
       { label: "IRS — Notice 2025-68 (full text, PDF)", url: "https://www.irs.gov/pub/irs-drop/n-25-68.pdf" }
-    ]
+    ],
+    updated: "2026-09-15"
   },
 
   {

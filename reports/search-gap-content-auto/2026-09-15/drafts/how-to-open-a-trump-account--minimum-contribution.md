@@ -1,0 +1,1 @@
+Federal rules set no minimum contribution amount to open or fund a Trump Account. The law limits annual contributions to $5,000, and any amount you deposit must go into the required U.S.-equity index fund. Approved trustees can still establish their own account minimums or fee schedules, so review your trustee's terms before funding the account.
