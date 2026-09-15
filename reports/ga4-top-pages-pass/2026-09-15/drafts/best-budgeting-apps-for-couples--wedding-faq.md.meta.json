@@ -1,0 +1,36 @@
+{
+ "slug": "best-budgeting-apps-for-couples--wedding-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 85,
+ "floor": 0,
+ "input_tokens": 16394,
+ "output_tokens": 97,
+ "thinking_tokens": 3271,
+ "cached_tokens": 15445,
+ "est_cost_usd": 0.0162,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 85,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16018
+  }
+ },
+ "seconds": 13.4,
+ "response_id": "IhCpaqmPIZ-cjrEPs-js4AE",
+ "generated_at": "2026-09-15T09:30:22+0000"
+}

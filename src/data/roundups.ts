@@ -2632,6 +2632,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Honeydue is the strongest fit for couples who keep some or all accounts separate, since it lets each partner mark individual accounts 'mine only' while still sharing visibility into joint accounts and category spending limits. Copilot works similarly well for Apple-ecosystem couples who want each partner's accounts linked but not fully merged. YNAB, by contrast, shows all linked accounts to both partners with no privacy controls, so it fits best for couples who want full transparency rather than separate accounts with selective sharing.",
       },
+      {
+        question: "What's the best budgeting app for couples saving for a wedding?",
+        answer:
+          "Monarch Money and YNAB are the strongest options for couples saving for a wedding, depending on the budgeting style you prefer. Monarch tracks shared savings targets directly on its household dashboard. For an envelope approach, YNAB assigns incoming dollars to a dedicated wedding category before the month begins, while Goodbudget separates wedding cash into a virtual envelope. No budgeting app includes dedicated wedding planning or vendor tracking tools, so each tool relies on its general savings categories to keep event funds separate from everyday bills.",
+      },
     ],
     sources: [
       { label: "CFPB — Managing Money in Relationships", url: "https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/financial-well-being/" },

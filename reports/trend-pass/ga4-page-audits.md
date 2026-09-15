@@ -173,3 +173,5 @@
 | /estate-planning/living-trust-cost-calculator/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-investment-apps-for-beginners | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-monthly-dividend-etfs/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
+| /portfolio/portfolio-risk-calculator/ | 2026-09-15 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-budgeting-apps-for-couples/ | 2026-09-15 | 1 | 0/0/1/0/0 | 0 |
