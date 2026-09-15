@@ -1,0 +1,39 @@
+{
+ "slug": "merchant-cash-advance-vs-revenue-based-financing--faq-cost-range",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 133,
+ "floor": 0,
+ "input_tokens": 17811,
+ "output_tokens": 251,
+ "thinking_tokens": 2578,
+ "cached_tokens": 17017,
+ "est_cost_usd": 0.0144,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 133,
+  "numbers_not_in_facts": [
+   "10000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17422
+  }
+ },
+ "seconds": 14.8,
+ "response_id": "IQaparjwEfmm_PUPt6Xx0Ao",
+ "generated_at": "2026-09-15T08:47:43+0000"
+}

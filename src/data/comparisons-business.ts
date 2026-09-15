@@ -591,6 +591,11 @@ export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
         answer:
           "Usually, yes — most revenue-based financing is structured as a loan or debt-like financing agreement, though the exact legal treatment varies by provider and state, and some structure it as a revenue-share purchase instead. Either way, RBF is generally not structured as a sale of receivables the way a merchant cash advance is, which is the key legal difference between the two products.",
       },
+      {
+        question: "How much would $50,000 cost under an MCA vs RBF at each end of the typical rate range?",
+        answer:
+          "On a $50,000 advance, total repayment costs sit within $10,000 at the lower end of typical pricing but diverge by $75,000 at the top. At the low end, a merchant cash advance (MCA) with a 1.10 factor rate requires $55,000 in total repayment ($5,000 fee), while revenue-based financing (RBF) at a 1.3x cap requires $65,000 total ($15,000 fee). At the high end, an MCA with a 1.50 factor rate totals $75,000 ($25,000 fee), whereas RBF at a 3x cap requires $150,000 total ($100,000 fee). The two financing structures land close together on entry pricing, but their upper boundaries diverge sharply because maximum RBF multiples reach 3x while MCA factor rates top out near 1.50.",
+      },
     ],
     sources: [
       { label: "Federal Reserve — 2025 Small Business Credit Survey (Report on Employer Firms)", url: "https://www.fedsmallbusiness.org/reports/survey/2025/2025-report-on-employer-firms" },
