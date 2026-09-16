@@ -873,6 +873,11 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         answer:
           "No — this is an independent ModernWallet calculator, not an SSA tool, and it doesn't access your actual earnings record. For your official, records-based benefit estimate, use the SSA's own [Retirement Estimator](https://www.ssa.gov/benefits/retirement/estimator.html) or the my Social Security account portal at ssa.gov, both of which pull your real wage history to calculate your benefit. This calculator is meant to be used alongside that official number: get your SSA-estimated monthly benefit first, then plug it into the projection above to see your combined savings-plus-Social-Security income at different claiming ages and retirement dates — a combined view SSA's own calculator doesn't provide.",
       },
+      {
+        question: "How is my Social Security benefit calculated if I have fewer than 35 years of earnings?",
+        answer:
+          "The Social Security Administration calculates your retirement benefit by averaging your 35 highest-earning years after indexing each year for wage growth. If you have fewer than 35 years of covered earnings, the agency enters $0 for each missing year, which lowers your average. Working additional years can increase your monthly benefit because higher-earning years replace those zeros in the calculation.",
+      },
     ],
     sources: [
       {

@@ -74,6 +74,11 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
         answer:
           "The [IRS](https://www.irs.gov/tax-professionals/standard-mileage-rates) business standard mileage rate was 70 cents per mile for all of 2025. Calendar year 2026 features two separate rates, setting 72.5 cents for January 1 to June 30 and 76 cents for July 1 to December 31. In contrast, 2025 maintained a single 70-cent rate across the entire year. Filers completing a late or amended 2025 return must calculate their business deduction using that 70-cent figure instead of either 2026 rate.",
       },
+      {
+        question: "Does the IRS mileage rate change if I drive an electric or hybrid vehicle?",
+        answer:
+          "No, the IRS standard mileage rate applies equally whether you drive a gasoline, diesel, hybrid, or all-electric vehicle. The 2026 business rates of 72.5 cents per mile from January 1 to June 30 and 76 cents per mile from July 1 to December 31 apply to electric and hybrid cars without adjustment. The IRS uses one blended figure to cover fuel, maintenance, insurance, and depreciation across all vehicle types, so no separate EV deduction exists.",
+      },
     ],
     sources: [IRS_MILEAGE, IRS_PUB463, IRS_SE_TAX],
     toolHeading: "2026 mileage deduction",

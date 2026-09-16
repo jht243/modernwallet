@@ -1,0 +1,38 @@
+{
+  "calculator": "investing",
+  "slug": "compound-interest-calculator",
+  "title": "Compound Interest Calculator: Grow Your Money",
+  "metaDescription": "Use this compound interest calculator to see how your money grows over time and how compounding frequency affects your returns. Free and simple.",
+  "targetKeyword": "compound interest calculator",
+  "h1": "Compound Interest Calculator",
+  "introText": "This compound interest calculator shows how your money can grow when you earn interest on your interest. Enter your starting amount, monthly contribution, expected return, and time period. You can also choose how often the interest compounds (from yearly to daily) and see the effect for yourself.",
+  "howItWorks": "Compound interest is the interest you earn on both your original money and the interest it has already earned. Over time, this snowball effect can grow your balance far beyond what you put in. To use the tool, enter your starting balance, regular contribution, annual return rate, and number of years.\n\nThe calculator above includes a compounding frequency control. Compounding frequency is how often your earned interest gets added back to your balance. More frequent compounding earns slightly more. But time and your return rate matter far more, so focus there first. To project a full portfolio, try the [investment growth calculator](/investing/investment-growth-calculator/).",
+  "commonMistakes": [
+    "Forgetting to add regular contributions. Steady monthly deposits often drive most of your long-term growth, not the starting balance.",
+    "Overestimating your annual return. Using an unrealistic rate inflates results. A modest, realistic figure gives a more useful estimate.",
+    "Obsessing over compounding frequency. Daily versus annual compounding changes results only slightly compared to time and rate.",
+    "Ignoring inflation and taxes. The calculator shows nominal growth, so your real spending power will be lower.",
+    "Starting too late. Compounding rewards time, so delaying even a few years can cost you a large share of your final balance."
+  ],
+  "workedExample": "Imagine you start with $5,000 and add $200 every month. You expect a 6% annual return, compounded monthly, and you leave the money invested for 30 years. After 30 years, your balance grows to $231,016. You contributed $77,000 of your own money over that time. The remaining $154,016 is pure growth, the interest earned on your interest. This shows why time in the market matters so much.",
+  "faqs": [
+    {
+      "question": "What is a compound interest calculator?",
+      "answer": "A compound interest calculator is a tool that shows how your money grows when you earn interest on your interest. You enter a starting amount, contributions, a return rate, and a time period. It then estimates your future balance. The calculator above also lets you pick how often interest compounds."
+    },
+    {
+      "question": "How does compounding frequency affect my returns?",
+      "answer": "More frequent compounding earns slightly more, but the difference is small. On $10,000 at 5% over 10 years with no contributions, annual compounding grows to $16,289. Quarterly reaches $16,436, monthly $16,470, and daily $16,487. Time and your return rate matter far more than frequency."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SEC Investor.gov \u2014 Compound Interest Calculator",
+      "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
+    },
+    {
+      "label": "FINRA \u2014 Tools and Calculators",
+      "url": "https://www.finra.org/investors/tools-and-calculators"
+    }
+  ]
+}

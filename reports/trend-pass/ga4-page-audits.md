@@ -175,3 +175,11 @@
 | /roundup/best-monthly-dividend-etfs/ | 2026-09-14 | 1 | 0/0/0/0/0 | 0 |
 | /portfolio/portfolio-risk-calculator/ | 2026-09-15 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-budgeting-apps-for-couples/ | 2026-09-15 | 1 | 0/0/1/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-09-16 | 25 | 0/0/1/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-09-16 | 15 | 0/0/0/0/0 | 0 |
+| /retirement/social-security-retirement-calculator/ | 2026-09-16 | 7 | 0/0/1/0/0 | 0 |
+| / | 2026-09-16 | 6 | 0/0/0/0/0 | 0 |
+| /guides/529-leftover-money-options/ | 2026-09-16 | 6 | 0/0/0/0/0 | 0 |
+| /guides/is-driving-around-for-cheaper-gas-worth-it/ | 2026-09-16 | 4 | 0/0/0/0/0 | 0 |
+| /roundup/best-money-market-accounts/ | 2026-09-16 | 4 | 0/0/0/0/0 | 0 |
+| /compare/trump-account-vs-brokerage-account/ | 2026-09-16 | 3 | 0/0/0/0/0 | 0 |
