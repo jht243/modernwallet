@@ -1,0 +1,89 @@
+  {
+    "slug": "freelance-rate-calculator-uk-ir35-explained",
+    "updated": "2026-09-16",
+    "title": "Freelance Rate Calculator UK and How IR35 Shapes Pay",
+    "metaDescription": "Learn how to calculate your rate with a freelance rate calculator UK guide. See how IR35 status, billable hours, and off-payroll rules change take-home pay.",
+    "h1": "Freelance Rate Calculator UK and How IR35 Affects Your Rates",
+    "cardBlurb": "Our main freelance rate calculator uses United States tax rules, but its underlying hours math is universal. Here is how IR35 status shapes your actual United Kingdom take-home pay.",
+    "introText": "Our freelance rate calculator runs on 2026 United States federal self-employment tax rules, which means a United Kingdom contractor cannot use its tax output directly.\n\nAt ModernWallet, we design our calculators to help working professionals make clear money decisions based on real cash flow. The underlying math for billable hours, working weeks, and non-billable administrative time is universal across borders. What truly decides United Kingdom take-home pay is your status under off-payroll working rules, known as IR35, rather than a United States self-employment tax percentage.\n\nSearching for a freelance rate calculator UK tool often lands contractors on platforms built around American tax deductions. Converting those numbers into an accurate day rate requires stripping out foreign tax models, establishing your IR35 position, and applying genuine United Kingdom tax principles.",
+    "sections": [
+      {
+        "heading": "Why US Tax Models Fail for United Kingdom Contractors",
+        "body": "United States rate calculators assume tax deductions and liabilities that have no equivalent under United Kingdom tax law. Our primary [freelance rate calculator](/freelance-rate/) works backward from target income using a 15.3 percent United States federal self-employment tax rate. It also applies the American Qualified Business Income (QBI) deduction, which has zero legal standing in the United Kingdom.\n\nAmerican tools often compare independent contractors to corporate employees through our [1099 vs W-2 calculator](/freelance-rate/1099-vs-w2-calculator/). That comparison represents a domestic United States worker classification and does not map onto United Kingdom contracting arrangements. Plugging United Kingdom billing figures into an American tax engine distorts your net earnings completely.\n\nYour actual retained revenue in Britain depends on whether an engagement is deemed employment or genuine commercial contracting. Rather than relying on static percentages from foreign models, British freelancers must look to their own tax framework. You need to identify your off-payroll status before you can settle on an accurate hourly or daily quote."
+      },
+      {
+        "heading": "Inside IR35 Compared to Outside IR35 Engagements",
+        "body": "The off-payroll working rules, commonly known as IR35, determine whether a contractor is treated as an employee for tax purposes. As detailed in the official [HMRC guidance on off-payroll working (IR35)](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35), the legislation tests whether a worker providing services through an intermediary would look like an employee if hired directly. That intermediary is typically the worker's own personal service company (PSC).\n\nAn engagement that falls inside IR35 is classified as deemed employment for tax. Under this classification, the party paying the worker, known as the fee-payer, must deduct Income Tax and employee National Insurance contributions from the invoice before paying the intermediary. The fee-payer must also account separately for employer National Insurance and the Apprenticeship Levy, which sharply reduces the net cash reaching your company bank account.\n\nWorking outside IR35 means you are recognized as genuinely self-employed for that specific contract. You receive the gross invoice amount and manage your own tax liabilities through Self Assessment or through your limited company using corporation tax and dividends. For more official regulatory context on these operational categories, consult the [off-payroll working detailed information collection](https://www.gov.uk/government/collections/off-payroll-working-ir35-detailed-information) published by the government."
+      },
+      {
+        "heading": "Status Determination Statements and the CEST Tool",
+        "body": "The legal responsibility for determining your IR35 status rests with your client unless that client qualifies as a small business. In both public-sector bodies and medium or large private-sector organizations, the client evaluates the working relationship. The hiring organization must issue a formal Status Determination Statement (SDS) detailing their decision and the operational reasoning behind it.\n\nWhen a private-sector client qualifies as a small business, the responsibility stays with the contractor's intermediary instead. In those situations, you evaluate your own working practices, contracts, and operational independence. You are then responsible for defending that position if tax authorities open an inquiry.\n\nTo help evaluate engagements, tax authorities provide an online system called Check Employment Status for Tax (CEST). Anyone involved in the supply chain can use the official [CEST tool page](https://www.gov.uk/guidance/check-employment-status-for-tax) to assess employment status for tax. While official guidance states the government will stand by a CEST determination if inputs are accurate and not contrived, the same guidance warns that parties should not rely on the output in isolation."
+      },
+      {
+        "heading": "Off-Payroll Working Reforms and 2026 Threshold Changes",
+        "body": "Private-sector contracting rules changed significantly on 6 April 2021 when the government shifted determination responsibilities to end clients. Before that reform, contractors working through personal service companies in the private sector evaluated their own status. Shifting the legal burden prompted medium and large organizations to implement blanket policies, which permanently altered how British contractors quote their rates.\n\nStatutory thresholds that define whether a client is small will increase starting 6 April 2026. As reported by contractor-compliance specialists at [Kingsbridge](https://www.kingsbridge.co.uk/blog/contractors/ir35/ir35-small-company-threshold-changes-2026/), the turnover threshold rises from 10.2 million pounds to 15 million pounds, and the balance sheet total increases from 5.1 million pounds to 7.5 million pounds. The employee headcount threshold remains unchanged at 50 workers.\n\nBecause small-company status depends on performance in previous financial years, compliance specialists note that the practical effects will not alter most contracts until the 2026/27 tax year. Furthermore, specialists report that new rules taking effect on 6 April 2026 will make recruitment agencies and end clients liable for Pay As You Earn (PAYE) underpayments on workers paid through umbrella companies. That liability applies even when the umbrella company manages payroll directly, which may push clients to re-examine all contractor payment structures."
+      },
+      {
+        "heading": "Universal Utilization Math for Billable Hours and Days",
+        "body": "While American tax calculations do not fit the British tax year, the math governing working capacity applies to every freelancer worldwide. You cannot bill 40 hours a week for 52 consecutive weeks. Factoring in holidays, sick leave, portfolio maintenance, invoicing, and business development reduces your available billable capacity significantly.\n\nOur specialized [billable hours calculator](/freelance-rate/billable-hours-calculator/) helps you isolate your true annual productive capacity. By entering realistic working weeks and expected utilization rates, you discover how many hours you can realistically charge out each month. Freelancers quoting daily agreements can apply that same capacity breakdown using our [day rate calculator](/freelance-rate/day-rate-calculator/).\n\nContractors in creative and technical sectors face distinct overhead demands that limit direct production time. If you work in design, branding, or copywriting, our [creative freelancer rate calculator](/freelance-rate/creative-freelancer-rate-calculator/) offers comparative capacity benchmarks. Pinning down your actual billable capacity prevents you from underpricing projects before local taxes even enter the picture."
+      },
+      {
+        "heading": "How to Calculate Your Rate as a United Kingdom Contractor",
+        "body": "Building an effective quote requires working backward from personal income goals, business overhead, and contract classification. First, determine your contract status by reviewing your client's Status Determination Statement or testing the engagement parameters through CEST. Knowing whether an engagement falls inside or outside IR35 tells you whether taxes will be withheld before payment reaches you.\n\nNext, calculate your total baseline costs by combining personal take-home requirements, software licenses, equipment costs, and professional insurance. Because individual tax circumstances vary, obtain current tax rates, National Insurance thresholds, dividend rates, and corporation tax rules directly from official government publications or your accountant. Once you know your target gross revenue, divide that sum by your billable days or hours using our capacity tools.\n\nThis guide provides general economic information about contracting structures rather than individualized tax, accounting, or legal advice. If you are preparing an upcoming client proposal, map your productive working weeks in our [billable hours calculator](/freelance-rate/billable-hours-calculator/) before you set your next quote."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance rate"
+      },
+      {
+        "href": "/freelance-rate/billable-hours-calculator/",
+        "label": "Billable hours"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I use a US freelance rate calculator if I'm a UK freelancer?",
+        "answer": "You can use the capacity and utilization features of an American calculator, but you cannot rely on its tax outputs. American tools deduct United States self-employment taxes and local business deductions that do not exist under United Kingdom law. Use the tool to establish your billable hours, then apply British tax rules separately."
+      },
+      {
+        "question": "What does IR35 mean for how much I take home?",
+        "answer": "Your IR35 classification determines whether tax is deducted before your invoice gets paid. Working inside IR35 means the fee-payer deducts employee Income Tax and National Insurance directly, while accounting for employer levies. Working outside IR35 allows you to receive gross payments and manage tax through your own company via Self Assessment, corporation tax, or dividends."
+      },
+      {
+        "question": "Who decides if I'm inside or outside IR35?",
+        "answer": "Public-sector bodies and medium or large private-sector clients are legally required to make the status determination for contractors they hire. If your private-sector client meets the statutory criteria for a small company, the determination responsibility remains with your own intermediary. Whoever makes the decision should provide a Status Determination Statement explaining the outcome."
+      },
+      {
+        "question": "What is HMRC's CEST tool?",
+        "answer": "The Check Employment Status for Tax tool is a free digital service provided by the British government to help assess employment status for tax. Hirers, agencies, and individual workers can use it to view an indication of whether IR35 applies to a contract. The government states it will stand by results from accurate data, though the tool should not be relied on alone."
+      },
+      {
+        "question": "What's changing with IR35 in April 2026?",
+        "answer": "Starting 6 April 2026, the turnover threshold defining a small private client rises to 15 million pounds and the balance sheet threshold rises to 7.5 million pounds. Because rules look at prior financial years, specialists note the practical effects will land in the 2026/27 tax year at the earliest. New rules will also make agencies and hirers liable for PAYE underpayments on umbrella workers."
+      },
+      {
+        "question": "How do I work out a day rate or hourly rate as a UK freelancer?",
+        "answer": "Start by identifying your IR35 status to establish whether you will receive gross or net payments. Next, calculate your annual personal financial requirement, business overhead, and expected tax obligations using current government figures. Finally, divide that total gross sum by your actual billable days or hours, leaving a buffer for holidays, sickness, and administration."
+      }
+    ],
+    "sources": [
+      {
+        "label": "HMRC Guidance on Off-Payroll Working (IR35)",
+        "url": "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"
+      },
+      {
+        "label": "Off-Payroll Working (IR35) Detailed Information",
+        "url": "https://www.gov.uk/government/collections/off-payroll-working-ir35-detailed-information"
+      },
+      {
+        "label": "HMRC Check Employment Status for Tax (CEST)",
+        "url": "https://www.gov.uk/guidance/check-employment-status-for-tax"
+      },
+      {
+        "label": "Kingsbridge, Small Company Threshold Changes 2026",
+        "url": "https://www.kingsbridge.co.uk/blog/contractors/ir35/ir35-small-company-threshold-changes-2026/"
+      }
+    ]
+  },

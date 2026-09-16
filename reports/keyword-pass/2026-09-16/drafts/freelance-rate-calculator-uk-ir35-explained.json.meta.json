@@ -1,0 +1,40 @@
+{
+ "slug": "freelance-rate-calculator-uk-ir35-explained",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1703,
+ "floor": 1200,
+ "input_tokens": 20329,
+ "output_tokens": 2864,
+ "thinking_tokens": null,
+ "cached_tokens": 18089,
+ "est_cost_usd": 0.0158,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1703,
+  "numbers_not_in_facts": [
+   "40",
+   "52"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 19029
+  }
+ },
+ "seconds": 13.0,
+ "response_id": "jleqao7BLcGb_uMPwtCRuAY",
+ "generated_at": "2026-09-16T08:47:22+0000"
+}

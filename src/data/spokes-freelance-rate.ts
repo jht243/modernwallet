@@ -209,4 +209,73 @@ export const FREELANCE_RATE_SPOKES: SpokeEntry[] = [
     },
     relatedSlugs: ["billable-hours-calculator", "day-rate-calculator"],
   },
+
+  // ── keyword-pass 2026-09-16 (freelance design/writing/art rate cluster) ──
+  {
+    calculator: "freelance-rate",
+    slug: "creative-freelancer-rate-calculator",
+    updated: "2026-09-16",
+    title: "Freelance Design Rate Calculator: Hourly and Project Rates",
+    metaDescription:
+      "Use our freelance design rate calculator to price creative work. Calculate your hourly floor and benchmark against design, writing, and illustration data.",
+    targetKeyword: "freelance design rate calculator",
+    estimatedVolume: 10,
+    h1: "Freelance Design Rate Calculator for Creative Work",
+    introText:
+      "A creative freelancer targeting $65,000 in take-home pay needs to charge an $86.11 hourly rate or a $688.86 day rate. That required floor sits well above the market averages creative professionals often see quoted in salary surveys, because a sustainable rate must absorb self-employment taxes, business overhead, and unbillable studio time that generic surveys omit.\n\nTo generate $65,000 of take-home income while billing 22 hours per week across 46 working weeks with $5,000 in annual overhead, you need $87,140.99 in gross annual revenue. At ModernWallet, we built this freelance design rate calculator to show creative professionals their true mathematical floor before they commit to client estimates.",
+    howItWorks:
+      "Creative professionals need a different pricing model than general service providers because creative disciplines run on market comparables as much as operational cost. When you calculate rates on the [freelance rate hub](/freelance-rate/), the math works backward from personal expenses and taxes. Graphic designers, illustrators, and copywriters often abandon those calculated numbers because freelance marketplaces and client expectations reference standard market averages instead. Pricing strictly by marketplace averages creates a hidden deficit. If an average rate does not cover unbilled hours spent drafting concepts or pitching prospective clients, every booked project slowly drains your business reserves.\n\nOur freelance rate engine shows the clear gap between market averages and financial sustainability. For a single filer wanting $65,000 of take-home pay with $5,000 of overhead, billing 22 hours weekly for 46 weeks requires $87,140.99 in gross revenue. That schedule yields 1,012 billable hours in a year. Across a 40-hour workweek, 22 billable hours represents a 55 percent utilization rate, leaving 18 hours each week for client communication, administrative duties, revisions, and business development. Hitting that target requires an hourly rate of $86.11, an eight-hour day rate of $688.86, and a weekly revenue target of $1,894.37. By comparison, data from [Payscale](https://www.payscale.com/research/US/Job=Freelance_Graphic_Designer/Hourly_Rate) shows the average hourly pay for a freelance graphic designer in the United States sits at $38.06 per hour. Payscale places the 10th percentile at $20.68 per hour and the 90th percentile at $85.11 per hour. A graphic designer charging the national average of $38.06 per hour while working 1,012 billable hours produces only $38,516.72 in gross revenue, leaving them far below their $65,000 take-home goal after covering taxes and studio expenses.\n\nCreative freelancers often operate with relatively light overhead, yet that lean structure can disguise their true tax and benefits obligations. An independent designer or writer typically carries around $5,000 in yearly business expenses for design software subscriptions, cloud storage, web hosting, and computing hardware. That modest equipment profile leads many freelancers to assume their rates can stay low. A comparable corporate role tells a very different story. To take home the same $65,000 through traditional employment, an employee requires a W-2 salary of $79,843.64, which comes out to $38.39 per hour across a standard 2,080-hour corporate year. The calculated freelance rate of $86.11 is 1.09 times that employee hourly baseline once you adjust for billable utilization. When comparing options with a [1099 vs. W-2 calculator](/freelance-rate/1099-vs-w2-calculator/), you see how the self-employment tax burden and missing employee benefits require a substantial premium, even when physical operating costs remain minimal.\n\nMarket rate bands vary substantially across creative fields, so writing rates and visual design rates need to be compared separately. According to the [Editorial Freelancers Association](https://www.the-efa.org/rates/) (EFA), which surveyed over 1,100 members on writing assignments, freelance writing work spans several clear pricing tiers. For ghostwritten projects, blog posts range from 25.0 to 40.0 cents per word or $75 to $100 per hour. Ghostwritten articles and essays command 15.0 to 30.0 cents per word or $75 to $100 per hour, while ghostwritten business and marketing copy reaches 50.0 cents to $1.00 per word or $87.50 to $125 per hour. Work-for-hire writing under a byline commands 25.0 to 45.0 cents per word or $70 to $100 per hour for articles, and 25.0 to 45.0 cents per word or $74.50 to $87.50 per hour for blog posts. The EFA explicitly states that it does not set rates or tell members what to charge, as individual figures depend on expertise, location, training, and experience. These market benchmarks demonstrate that senior writing assignments align closely with the $86.11 hourly floor, whereas standard blog writing often demands higher volume to yield equal revenue.\n\nFor illustrators and visual artists, rate data shows a similarly wide spread across commercial and editorial markets. While comprehensive survey databases for visual art are fragmented, the [Graphic Artists Guild](https://graphicartistsguild.org/the-graphic-artists-guild-handbook-pricing-ethical-guidelines/) publishes the Graphic Artists Guild Handbook: Pricing & Ethical Guidelines (17th edition), which serves as the established industry benchmark for illustration licensing and design standards. Fine art and commercial illustration projects carry wide variability depending on usage rights, print runs, and territorial scope. Visual artists can use the calculator above the same way: treat the required hourly floor it returns as the non-negotiable cost baseline, then use the Graphic Artists Guild resources to price the licensing and intellectual property rights on top of production time.\n\nTo price upcoming contracts accurately, calculate your personal floor rate using our freelance design rate calculator, compare that baseline against published industry surveys for your discipline, and set your quotes at or above the higher number.",
+    commonMistakes: [
+      "Charging the national industry average rate without tracking utilization. Billing the average graphic design rate of $38.06 per hour across 22 billable hours leaves you with less than half of an $87,140.99 revenue target.",
+      "Assuming full 40-hour billable weeks throughout the year. Creative projects involve unbilled revisions, mood boards, and administrative tasks, meaning 22 billable hours per week is a realistic ceiling for most sole practitioners.",
+      "Ignoring licensing rights and intellectual property transfer in fixed quotes. Charging an hourly production rate for artwork without licensing terms gives away long-term commercial rights for the price of basic labor.",
+      "Treating low equipment overhead as an excuse to underprice work. Spending only $5,000 annually on software and hardware does not replace the self-employment tax obligations and health coverage an employer normally funds.",
+    ],
+    workedExample:
+      "A graphic designer aims for $65,000 in net annual take-home income while operating as a single tax filer with $5,000 in routine business expenses. They schedule 46 working weeks per year, reserving 6 weeks for sickness, holidays, and pipeline development. At 22 billable hours per week, they maintain a 55 percent utilization rate across 40 total working hours, generating 1,012 billable hours annually. To satisfy federal self-employment tax, income tax, and overhead, our engine calculates that the business must generate $87,140.99 in gross revenue. That target requires an hourly rate of $86.11, an eight-hour day rate of $688.86, and a weekly revenue volume of $1,894.37. By contrast, an employee taking home the same $65,000 earns a salary of $79,843.64, or $38.39 per hour across 2,080 annual hours, showing that the freelance hourly rate must be 1.09 times the corporate equivalent rate to offset fewer billable hours and independent tax loads.",
+    faqs: [
+      {
+        question: "How much should I charge as a freelance graphic designer?",
+        answer:
+          "You should charge at least your calculated hourly cost floor, which reaches $86.11 per hour for a $65,000 take-home goal with typical utilization. Payscale data shows an overall average rate of $38.06 per hour in the United States, with the 90th percentile reaching $85.11 per hour. Setting your prices near the 90th percentile allows you to absorb non-billable hours, software subscriptions, and self-employment taxes without taking an unplanned pay cut.",
+      },
+      {
+        question: "How much do freelance writers charge per word?",
+        answer:
+          "Freelance writers charge between 15.0 cents and $1.00 per word depending on the format and whether the piece is ghostwritten. According to the Editorial Freelancers Association rate chart, ghostwritten business and marketing copy commands 50.0 cents to $1.00 per word, while ghostwritten blog posts command 25.0 to 40.0 cents per word. Standard work-for-hire articles under a byline typically range from 25.0 to 45.0 cents per word or $70 to $100 per hour.",
+      },
+      {
+        question: "Why is my calculated rate higher than the average market rate for my field?",
+        answer:
+          "Your calculated rate is higher because market surveys often capture raw hourly billing rates without accounting for unpaid studio time. A full-time employee works 2,080 paid hours annually, whereas a creative contractor typically bills only 1,012 hours across 46 working weeks. Your rate must also cover full self-employment taxes and business expenses that employers normally pay, pushing your required hourly rate above casual survey averages.",
+      },
+      {
+        question: "Does this work for illustrators and other visual artists?",
+        answer:
+          "Yes, visual artists can use the same take-home framework to determine their minimum hourly production cost. While illustration fees vary widely by commercial licensing scope, your base operating cost remains fixed. For specific contract terms and licensing benchmarks across commercial illustration, consult the Graphic Artists Guild Handbook: Pricing & Ethical Guidelines, and add those usage fees to your baseline production rate.",
+      },
+      {
+        question: "Should a creative freelancer charge hourly, per word, or per project?",
+        answer:
+          "Use project rates for well-defined creative deliverables and hourly rates when project scope is open-ended. Fixed fees allow you to earn higher margins as your production speed improves, while per-word pricing provides clear client expectations on standard editorial assignments. Check your estimated project hours against our [billable hours calculator](/freelance-rate/billable-hours-calculator/) or [day rate calculator](/freelance-rate/day-rate-calculator/) to ensure every flat quote exceeds your $86.11 hourly floor.",
+      },
+    ],
+    sources: [
+      { label: "Editorial Freelancers Association — 2026 Rate Chart", url: "https://www.the-efa.org/rates/" },
+      { label: "Payscale — Freelance Graphic Designer Hourly Rate", url: "https://www.payscale.com/research/US/Job=Freelance_Graphic_Designer/Hourly_Rate" },
+      { label: "Graphic Artists Guild — Handbook: Pricing & Ethical Guidelines", url: "https://graphicartistsguild.org/the-graphic-artists-guild-handbook-pricing-ethical-guidelines/" },
+    ],
+    toolHeading: "Creative freelancer rate",
+    toolSubheading: "Benchmark your floor against design and writing market data",
+    preset: {
+      targetTakeHome: 65000,
+      billableHoursPerWeek: 22,
+      weeksWorkedPerYear: 46,
+      annualOverhead: 5000,
+      filingStatus: "single",
+      hoursPerDay: 8,
+      totalHoursPerWeek: 40,
+    },
+    relatedSlugs: ["billable-hours-calculator", "day-rate-calculator", "1099-vs-w2-calculator"],
+  },
 ];
