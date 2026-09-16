@@ -1,0 +1,42 @@
+{
+ "slug": "state-mileage-reimbursement-law-california-texas-michigan",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2263,
+ "floor": 1200,
+ "input_tokens": 19283,
+ "output_tokens": 3502,
+ "thinking_tokens": 7515,
+ "cached_tokens": 16744,
+ "est_cost_usd": 0.0464,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2263,
+  "numbers_not_in_facts": [
+   "16",
+   "200",
+   "300",
+   "6.67"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17279
+  }
+ },
+ "seconds": 31.9,
+ "response_id": "gVeqatz1I_nb_uMP8dDzsAY",
+ "generated_at": "2026-09-16T08:47:28+0000"
+}

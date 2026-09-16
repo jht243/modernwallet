@@ -147,6 +147,16 @@ export const MILEAGE_DEDUCTION_HUB: CalculatorDef = {
       answer:
         "A contemporaneous log showing the date, the number of business miles, the destination, and the business purpose of each trip, plus your total annual mileage for the vehicle. \"Contemporaneous\" means recorded at or near the time of the trip — an estimate assembled at filing time is what gets disallowed on audit. Automatic mileage-tracking apps satisfy this, and keeping the odometer reading at January 1 and December 31 supports the business-use percentage.",
     },
+    {
+      question: "Is there a mileage log spreadsheet or app I can use instead of doing the math by hand?",
+      answer:
+        "You can download our free [mileage log template](/templates/mileage-log-template/) to track trips in Excel, Google Sheets, or Numbers, or use an automatic route-tracking mobile app that records drives without manual logging. The spreadsheet tracks dates, odometer readings, locations, and business purposes. Its rows are dated to split driving between the two 2026 IRS standard mileage rates. Whichever tool you pick, the IRS requires a contemporaneous log showing the date, business miles, destination, and business purpose for every trip.",
+    },
+    {
+      question: "Is there a maximum mileage deduction?",
+      answer:
+        "The IRS sets no dollar cap and no mileage limit on the standard mileage deduction. You can deduct every business mile you actually drive, but you must support the deduction with a contemporaneous mileage log showing the date, business miles, destination, and business purpose for each trip. Without that detailed log, the IRS can disallow the deduction on audit regardless of the dollar amount. You must also elect the standard rate during the vehicle's first year of business use, because claiming [actual vehicle expenses](/mileage-deduction/standard-mileage-vs-actual-expenses/) first permanently forfeits the standard mileage method for that car.",
+    },
   ],
 
   sources: [IRS_MILEAGE, IRS_PUB463, IRS_GIG],

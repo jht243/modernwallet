@@ -69,6 +69,11 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
         answer:
           "Mileage reimbursement is not taxable if your employer pays it under an accountable plan at or below the IRS standard mileage rate. An accountable plan requires a business connection, timely substantiation of dates and miles, and the return of any excess reimbursement. If your employer pays more than the IRS rate, generally only the excess amount is taxed as wages on Form W-2. Under a non-accountable plan, the full reimbursement is taxed as ordinary income.",
       },
+      {
+        question: "What was the standard mileage rate for 2025?",
+        answer:
+          "The [IRS](https://www.irs.gov/tax-professionals/standard-mileage-rates) business standard mileage rate was 70 cents per mile for all of 2025. Calendar year 2026 features two separate rates, setting 72.5 cents for January 1 to June 30 and 76 cents for July 1 to December 31. In contrast, 2025 maintained a single 70-cent rate across the entire year. Filers completing a late or amended 2025 return must calculate their business deduction using that 70-cent figure instead of either 2026 rate.",
+      },
     ],
     sources: [IRS_MILEAGE, IRS_PUB463, IRS_SE_TAX],
     toolHeading: "2026 mileage deduction",
