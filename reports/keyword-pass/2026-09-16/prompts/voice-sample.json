@@ -1,0 +1,43 @@
+{
+  "slug": "how-much-do-uber-drivers-make",
+  "updated": "2026-09-09",
+  "title": "How Much Do Uber Drivers Make After Vehicle Expenses",
+  "metaDescription": "Gridwise reports Uber drivers gross $23.88 per active hour, but vehicle costs and self-employment tax reduce net take-home pay to about $8.48 an hour.",
+  "h1": "How Much Do Uber Drivers Make After Expenses and Taxes",
+  "cardBlurb": "Gridwise data shows $23.88 gross per active hour, but real vehicle costs and self-employment taxes leave about $8.48 per active hour.",
+  "introText": "Uber drivers gross an average of $23.88 per active hour according to the 2026 Annual Gig Mobility Report by [Gridwise](https://gridwise.io/blog/how-much-do-uber-drivers-make), which leaves about $8.48 per active hour after vehicle operating expenses and self-employment taxes. At ModernWallet, we evaluate rideshare economics through our tax and mileage modeling tools because published fare rates leave out the costs of commercial driving. Drivers routinely watch gross deposits reach their bank accounts and mistake total cash flow for taxable profit, only to face heavy repair costs and self-employment tax bills later.\n\nDriving for [Uber](https://www.uber.com/us/en/drive/how-much-drivers-make/) requires operating a vehicle that loses value with every mile driven on the road. That mechanical wear, combined with fuel, tires, routine maintenance, and commercial insurance coverage, acts as a continuous drain on revenue. Calculating a driver's true net hourly wage requires recording all business miles driven, including miles traveled between drop-offs and new pickups.\n\nTaxes create a second layer of expense that corporate employees rarely calculate on their own. As an independent contractor, a rideshare driver pays both halves of Social Security and Medicare taxes alongside applicable federal and state income taxes. Comparing net take-home earnings with gross platform fares clarifies whether driving delivers sustainable earnings or simply converts existing vehicle equity into immediate cash.",
+  "sections": [
+    {
+      "heading": "Active Hours Compared With Clock Hours",
+      "body": "Gross hourly pay figures published by rideshare platforms measure active trip time rather than total time spent on shift. The 2026 Annual Gig Mobility Report from Gridwise puts the average Uber driver at $23.88 gross per active hour, based on an average schedule of 21.2 active hours per week. An active hour includes only the minutes when a driver is either en route to pick up a passenger or actively transporting a rider to a destination.\n\nActive hours exclude the unpaid periods drivers spend waiting for ride requests or repositioning their vehicles. If an operator logs 30 total clock hours on the platform to accumulate 21.2 active hours, their total weekly gross revenue of $506.26 spreads across 30 hours of labor, for $16.88 gross per clock hour. Time spent waiting in designated airport staging areas, sitting in parking lots between ride pings, and cruising back toward downtown hubs after suburban drop-offs generates zero revenue.\n\nReviewing an app dashboard that shows $23.88 per hour creates an exaggerated impression of driver pay. Eight or nine hours of unpaid waiting time each week quietly drag down real earnings before vehicle expenses enter the equation. Drivers balancing variable shifts across multiple apps can review our guide on [budgeting on irregular income](/guides/how-to-budget-with-irregular-income/) to track total hours worked against net income."
+    },
+    {
+      "heading": "The Two Standard Mileage Rates in 2026",
+      "body": "The Internal Revenue Service enacted two separate standard mileage rates for business driving during calendar year 2026. For travel from January 1 through June 30, 2026, the [IRS standard mileage rate](https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates) is 72.5 cents per mile. For business miles driven between July 1 and December 31, 2026, the rate increases to 76 cents per mile. Many rideshare guides and online forums cite only the earlier 72.5-cent figure, leading drivers to understate their deductions for the second half of the year.\n\nConsider a driver who travels 20,000 business miles distributed evenly across the calendar year. Logging 10,000 miles during the first half yields a deduction of $7,250, while 10,000 miles during the second half yields $7,600. Together, those periods produce an annual deduction of $14,850, creating a blended rate of 74.25 cents per mile. Applying the outdated 72.5-cent figure across all 20,000 miles produces a deduction of only $14,500, leaving $350 in lawful deductions on the table.\n\nLosing that $350 deduction artificially inflates taxable business profit, causing the driver to overpay both self-employment and income taxes. Drivers can calculate their deduction across both rate windows using our free [mileage deduction calculator](/mileage-deduction/)."
+    },
+    {
+      "heading": "Calculation of Self-Employment Tax",
+      "body": "Independent contractors must pay both the employer and employee portions of Social Security and Medicare taxes on their net business earnings. Traditional W-2 employees have 7.65% withheld from their wages under the Federal Insurance Contributions Act (FICA), while their employers contribute a matching 7.65%. Uber drivers operate as self-employed individuals, making them responsible for the combined 15.3% self-employment tax rate.\n\nA common misunderstanding among gig workers is that self-employment tax takes 15.3% of total Schedule C profit. Under [IRS self-employment tax rules](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), the 15.3% rate applies to 92.35% of net business earnings rather than the full balance, for an effective rate of 14.13% on net profit. You can verify your exact quarterly tax liability using our [self-employment tax calculator](/self-employment-tax/)."
+    }
+  ],
+  "tools": [
+    { "href": "/mileage-deduction/", "label": "Mileage deduction" },
+    { "href": "/self-employment-tax/", "label": "Self-employment tax" },
+    { "href": "/budget/", "label": "Budget" }
+  ],
+  "faqs": [
+    {
+      "question": "Do Uber drivers make good money?",
+      "answer": "Uber drivers generally earn modest take-home pay once vehicle depreciation, fuel, maintenance, and self-employment taxes are subtracted from gross fares. While Gridwise reports average gross earnings of $23.88 per active hour, net pay drops to $8.48 per active hour under our standardized 20,000-mile worked example. Drivers who operate older, highly fuel-efficient cars with low maintenance costs retain more of their gross receipts."
+    },
+    {
+      "question": "How much should an Uber driver set aside for taxes?",
+      "answer": "An Uber driver should set aside 14.13% of net business profit for self-employment tax, plus an additional percentage for federal income tax once profit exceeds the standard deduction. Self-employment tax applies at a 15.3% rate to 92.35% of Schedule C net profit, which equals an effective rate of 14.13%. If rideshare driving is your sole income source and net profit remains below the standard deduction, federal income tax is $0. Use our [self-employment tax calculator](/self-employment-tax/) to determine your exact quarterly estimated payments."
+    }
+  ],
+  "sources": [
+    { "label": "IRS - Standard Mileage Rates", "url": "https://www.irs.gov/businesses/small-businesses-self-employed/standard-mileage-rates" },
+    { "label": "IRS - Self-Employment Tax (Social Security and Medicare Taxes)", "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" },
+    { "label": "Gridwise - 2026 Gig Mobility Report", "url": "https://gridwise.io/blog/how-much-do-uber-drivers-make" }
+  ]
+}
