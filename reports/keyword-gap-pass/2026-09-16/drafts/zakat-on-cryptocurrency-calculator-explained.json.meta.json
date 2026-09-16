@@ -1,0 +1,40 @@
+{
+ "slug": "zakat-on-cryptocurrency-calculator-explained",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1608,
+ "floor": 1200,
+ "input_tokens": 20147,
+ "output_tokens": 2378,
+ "thinking_tokens": 2922,
+ "cached_tokens": 17974,
+ "est_cost_usd": 0.0249,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1608,
+  "numbers_not_in_facts": [
+   "0.5",
+   "354"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18901
+  }
+ },
+ "seconds": 19.9,
+ "response_id": "QVeqapXWE8aa-8YP-_GMuAw",
+ "generated_at": "2026-09-16T08:46:12+0000"
+}

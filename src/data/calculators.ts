@@ -1452,11 +1452,51 @@ export const CALCULATORS: CalculatorDef[] = [
         answer:
           "No. It applies the standard 2.5% rate to the net zakatable wealth and nisab threshold you enter, which covers the arithmetic every school of thought agrees on. Points where scholars genuinely disagree, such as jewelry worn for personal use or how to treat a retirement account you can't access yet, aren't resolved by any calculator. Bring those specific questions to a qualified scholar or your local Islamic center.",
       },
+      // ── Autocomplete-pass-auto 2026-09-16: currency / gold-silver-unit / debt / format / salary / business-inventory / catch-up FAQs ──
+      {
+        question: "Does this zakat calculator work in currencies other than US dollars?",
+        answer:
+          "Yes, this zakat calculator works in any currency. Rather than hardcoding a fixed dollar threshold, the tool derives your nisab baseline directly from the gold or silver price per gram you enter. The calculation remains accurate for any currency as long as you enter your assets, debts, and metal prices using that same unit consistently. You only need to look up today's local gold or silver price per gram in your own currency, as the calculator does not pull automated exchange rates.",
+      },
+      {
+        question: "My gold is weighed in tola, not grams. How do I use it in this calculator?",
+        answer:
+          "Multiply your weight in tolas by 11.6638 to find the total in grams, since one South Asian tola equals [11.6638 grams](https://yconvert.com/convert/weight/tola-to-gram.php). Retail jewelers commonly round this conversion to 11.664 grams for daily transactions. Enter that converted gram figure into our calculator, which evaluates both gold and silver nisab standards to determine your zakat.",
+      },
+      {
+        question: "How do a mortgage, other debt, or a 401(k) I can't access yet affect my zakat calculation?",
+        answer:
+          "Only debts and bills currently due reduce your zakatable wealth. You deduct this month's mortgage payment instead of the full remaining loan balance, because as Islamic scholar [Joe Bradford notes](https://joebradford.substack.com/p/how-to-calculate-your-zakat), future obligations do not reduce current assets. Treatment for a restricted 401(k) or pension remains an open scholarly debate. One view applying [classical ownership principles cited by Bradford](https://joebradford.substack.com/p/zakat-on-retirement-accounts-a-complete) holds that zakat is not owed on wealth you cannot access without penalty, while other scholars assess zakat annually on the estimated net balance after taxes and penalties. Our calculator does not provide an automatic restricted-account adjustment, so bring your specific plan details to a qualified scholar to determine which ruling to follow.",
+      },
+      {
+        question: "Can I download this as an Excel sheet or template instead of using the calculator?",
+        answer:
+          "No, this calculator does not offer a downloadable Excel spreadsheet or offline template. It runs directly in your browser, with no built-in export, CSV download, or print button. To keep a record of your calculations, use your browser's print function to save the page as a PDF, or copy your asset figures into your own document.",
+      },
+      {
+        question: "Do I owe zakat directly on my salary or income?",
+        answer:
+          "No, you do not owe zakat directly on your salary or income as you earn it. Zakat applies only to accumulated net wealth once your qualifying assets minus immediate debts reach the nisab threshold and you hold that balance for one full lunar year (the hawl). Any portion of your paycheck spent on living expenses during the year is never zakatable. Your earnings only count toward zakat if you save them and that surplus remains part of your accumulated wealth at the one-year mark.",
+      },
+      {
+        question: "How do I value business inventory for zakat?",
+        answer:
+          "Value business inventory at its current resale value on your zakat due date rather than its original cost. Only goods held for resale count. Equipment, machinery, and fixtures used to run the business remain exempt. Because this calculator does not have a dedicated inventory field, add that total resale figure to your zakatable assets alongside cash and investments.",
+      },
+      {
+        question: "How do I calculate zakat I owe from previous years I didn't pay?",
+        answer:
+          "Calculate missed zakat sequentially year by year, treating each unpaid year's zakat as a debt that reduces your zakatable wealth before you figure the next year's balance. As documented by [SeekersGuidance](https://seekersguidance.org/answers/hanafi-fiqh/how-do-i-pay-zakat-from-previous-years/), if you owed zakat on 500 grams of gold, year one requires 2.5% (12.5 grams), leaving 487.5 grams subject to zakat in year two. Because our calculator evaluates one year at a time, you must run it separately for each missed year. Manually deduct the previous year's unpaid zakat from your assets before calculating each subsequent year.",
+      },
     ],
     sources: [
       { label: "Zakat Foundation of America — What Is Nisab in Islam?", url: "https://www.zakat.org/what-is-ni-ab-in-islam" },
       { label: "Islamic Relief Canada — Zakat on Gold", url: "https://www.islamicreliefcanada.org/our-work/zakat/zakat-on-gold" },
       { label: "Kitco — Live Gold and Silver Spot Prices", url: "https://www.kitco.com/charts/silver" },
+      { label: "Yconvert — Tola to Gram Converter", url: "https://yconvert.com/convert/weight/tola-to-gram.php" },
+      { label: "Joe Bradford — How to Calculate Your Zakat", url: "https://joebradford.substack.com/p/how-to-calculate-your-zakat" },
+      { label: "Joe Bradford — Zakat on Retirement Accounts", url: "https://joebradford.substack.com/p/zakat-on-retirement-accounts-a-complete" },
+      { label: "SeekersGuidance — How Do I Pay Zakat from Previous Years?", url: "https://seekersguidance.org/answers/hanafi-fiqh/how-do-i-pay-zakat-from-previous-years/" },
     ],
     defaultPreset: {
       cashAndBank: 8000,
