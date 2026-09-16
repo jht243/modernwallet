@@ -1,0 +1,51 @@
+{
+ "slug": "dave-ramsey-12-percent-investment-return-explained",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2316,
+ "floor": 1200,
+ "input_tokens": 20476,
+ "output_tokens": 4025,
+ "thinking_tokens": 2785,
+ "cached_tokens": 18089,
+ "est_cost_usd": 0.0307,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2316,
+  "numbers_not_in_facts": [
+   "09",
+   "10000",
+   "1000000",
+   "11200",
+   "18",
+   "1990",
+   "2000000",
+   "2026",
+   "22",
+   "3.18",
+   "40",
+   "60000",
+   "820000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 19029
+  }
+ },
+ "seconds": 24.1,
+ "response_id": "41eqasm-B760_PUPldqVsQk",
+ "generated_at": "2026-09-16T08:48:58+0000"
+}

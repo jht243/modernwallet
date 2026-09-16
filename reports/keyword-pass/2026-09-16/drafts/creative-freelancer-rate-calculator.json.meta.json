@@ -1,0 +1,39 @@
+{
+ "slug": "creative-freelancer-rate-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1249,
+ "floor": 1200,
+ "input_tokens": 18692,
+ "output_tokens": 2226,
+ "thinking_tokens": 2239,
+ "cached_tokens": 16970,
+ "est_cost_usd": 0.0212,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1249,
+  "numbers_not_in_facts": [
+   "18"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17489
+  }
+ },
+ "seconds": 15.7,
+ "response_id": "vleqao-qEoOnjrEPue-Q-A0",
+ "generated_at": "2026-09-16T08:48:12+0000"
+}

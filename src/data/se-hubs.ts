@@ -211,6 +211,16 @@ export const FREELANCE_RATE_HUB: CalculatorDef = {
       answer:
         "No — and both push the rate you need higher. The calculator models federal self-employment and income tax only. State and local income tax adds anywhere from nothing to over 10% depending on where you live. Health insurance is the larger gap for most people: an employee's premium is typically subsidised by their employer, while a freelancer pays the entire cost. Add your annual premium to the overhead field to see the real number.",
     },
+    {
+      question: "Does this calculator work if I don't live in the United States?",
+      answer:
+        "Not accurately. The tool models 2026 US federal income tax brackets and the 15.3 percent US self-employment tax, meaning the tax deductions will not match rules outside the United States. The underlying arithmetic for billable hours per week, annual working weeks, and overhead expenses works in any currency once you enter your own numbers. If you work in the United Kingdom, read our guide on [UK freelance rates and IR35](/guides/freelance-rate-calculator-uk-ir35-explained/) to see how contract status sets your take-home pay. For all other countries, use the calculator to establish your target gross billings, then apply your local tax rules to that baseline.",
+    },
+    {
+      question: "Does this calculator work with Bonsai or Upwork?",
+      answer:
+        "This calculator does not integrate with, import data from, or require [Bonsai](https://www.hellobonsai.com/) or [Upwork](https://www.upwork.com/). It operates as a standalone rate and revenue planning tool. If you use Bonsai for invoicing, proposals, or contracts, check our roundups of the [Best Accounting Software for Freelancers](/roundup/best-accounting-software-for-freelancers/) and [Best Invoicing Apps for Freelancers](/roundup/best-invoicing-apps-for-freelancers/) to review current pricing. If you bill through Upwork, our guide on [Upwork Taxes: Fees, Forms, and What You Owe](/self-employment-tax/upwork-taxes/) explains how Upwork service fees, 1099-K reporting, and self-employment tax affect your net income.",
+    },
   ],
 
   sources: [IRS_SE_TAX, IRS_SE_TAX_PAGE, IRS_ES],

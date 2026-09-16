@@ -1,0 +1,36 @@
+{
+ "slug": "freelance-rate-hub--intl-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 101,
+ "floor": 40,
+ "input_tokens": 18675,
+ "output_tokens": 148,
+ "thinking_tokens": 2612,
+ "cached_tokens": 18089,
+ "est_cost_usd": 0.0142,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 101,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 19029
+  }
+ },
+ "seconds": 8.9,
+ "response_id": "_liqap_ON6fe-sAPhp2_gAU",
+ "generated_at": "2026-09-16T08:53:27+0000"
+}
