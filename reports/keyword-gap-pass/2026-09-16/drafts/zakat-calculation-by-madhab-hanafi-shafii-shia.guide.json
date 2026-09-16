@@ -1,0 +1,105 @@
+{
+  "slug": "zakat-calculation-by-madhab-hanafi-shafii-shia",
+  "updated": "2026-09-16",
+  "title": "Zakat Calculator Hanafi Rules and Madhab Differences",
+  "metaDescription": "A zakat calculator Hanafi setup uses the silver nisab and counts all jewelry, while other madhabs use gold. Compare Hanafi, Shafi'i, Hanbali, and Shia rules.",
+  "h1": "Zakat Calculator Hanafi Guidelines Across Major Islamic Schools",
+  "cardBlurb": "Learn how Hanafi zakat calculations differ from Shafi'i, Hanbali, and Shia rules, specifically regarding silver nisab, personal jewelry exemptions, and household wealth.",
+  "introText": "The standard zakat rate of 2.5 percent on surplus wealth applies across Sunni and Shia schools of thought, but the threshold to qualify and the treatment of personal jewelry differ by madhab. A Muslim using a zakat calculator must know whether their legal school uses the gold or silver nisab standard and whether personal jewelry counts as a zakatable asset.\n\nAt ModernWallet, we build financial tools around transparent mathematical rules so you can see how each variable moves your final payment. What we see readers get wrong most often is assuming that a single online zakat calculator reflects universal consensus across every legal school. While the core arithmetic remains identical once net wealth is established, the classification of assets and qualifying thresholds depend on your school of Islamic jurisprudence.\n\nTo compute your personal obligation accurately, you can input your confirmed balances into our [zakat calculator](/zakat/). Before entering your numbers, review how the Hanafi, Shafi'i, Maliki, Hanbali, and Ja'fari traditions define your qualifying threshold and exempt assets.",
+  "sections": [
+    {
+      "heading": "The Core Rate and Where Madhabs Diverge",
+      "body": "Every major Islamic legal school agrees that zakat requires distributing 2.5 percent of net zakatable wealth once that wealth passes a minimum threshold known as nisab and remains held for one full lunar year, or hawl. The foundational scriptural guidance for zakat calculation in Quran and zakat calculation hadith literature sets this core redistributive duty. Disagreements arise not on the 2.5 percent percentage itself, but on how to value cash, which threshold standard applies to mixed savings, and whether personal-use items like jewelry incur the tax.\n\nSunni jurisprudence divides primarily over which precious metal standard establishes the minimum wealth threshold for modern paper currencies. Classical scholars pegged nisab to either 20 mithqals of gold or 200 dirhams of silver. In the modern era, because the commercial price of gold has risen dramatically relative to silver, these two classical standards produce vastly different cash cutoffs.\n\nIf you hold alternative liquid assets like digital tokens, our breakdown on the [zakat on cryptocurrency calculator](/guides/zakat-on-cryptocurrency-calculator-explained/) outlines how digital holdings are categorized. For standard savings and family assets, your chosen madhab dictates which baseline precious metal threshold you must clear before the 2.5 percent rate applies."
+    },
+    {
+      "heading": "Hanafi School Rules on Silver Nisab and Jewelry",
+      "body": "The Hanafi school resolves modern cash and liquid asset evaluations by applying the silver nisab standard rather than the gold standard. Applying the silver threshold creates a significantly lower dollar cutoff, which broadens the base of individuals who qualify to pay zakat. Islamic law scholar [Joe Bradford](https://joebradford.substack.com/p/how-to-calculate-your-zakat), author of a simple zakat calculator guide, notes that the silver standard produces a lower threshold and thereby includes a broader base of Muslims in the obligation to support the poor.\n\nUnder Hanafi fiqh, jurists combine cash, gold, silver, and business inventory into a unified pool of liquid wealth. If the combined cash value of those assets equals or exceeds the market value of the silver nisab, zakat becomes due on the entire amount. You do not need your gold to clear the gold threshold independently if your collective net wealth clears the silver baseline.\n\nHanafi scholars also take a strict approach to jewelry. In the Hanafi school, all gold and silver jewelry is fully zakatable at 2.5 percent of its intrinsic metal value, regardless of whether it is worn daily, stored for special occasions, or kept as a family heirloom. The school treats the precious metal itself as an inherently growing asset, meaning the practical use of the jewelry does not exempt it from the annual assessment."
+    },
+    {
+      "heading": "Shafi'i, Maliki, and Hanbali Classical Gold Standards",
+      "body": "Classical scholars within the Shafi'i, Maliki, and Hanbali schools default to the gold nisab standard when assessing modern paper currency and savings. Historically, this threshold equates to 20 mithqals of pure gold, which translates to roughly 84 to 85 grams of gold based on a classical mithqal weight of approximately 4.25 grams. Because gold carries a much higher market price than silver, choosing a zakat calculator Shafi'i or zakat calculator Hanbali approach typically requires a much larger cash balance before the obligation triggers.\n\nContemporary Shafi'i scholars actively debate whether the gold standard remains appropriate today. As documented in a scholarly analysis on [SeekersGuidance](https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/), the late South African Shafi'i mufti Shaykh Taha Karaan argued for maintaining the classical gold standard. He reasoned that setting the cutoff at the lower silver standard pulls lower-income wage earners into paying a tax that was originally designed to redistribute wealth from the rich. Conversely, American Shafi'i scholar Shaykh Nuh Ha Mim Keller advocates for using the silver standard, which he calculates at approximately 592.9 grams of silver, arguing that the lower threshold is better for the poor because it accelerates social support.\n\nRegarding personal jewelry, the Shafi'i, Maliki, and Hanbali schools take the opposite stance from the Hanafi school. Jurists across these three schools generally exempt gold and silver jewelry that a woman wears for personal use within customary limits. They classify personal jewelry as a personal utility item rather than a store of wealth, exempting it from zakat unless it is stored strictly as an investment or kept in extravagant quantities beyond local custom."
+    },
+    {
+      "heading": "Weight Conversions and Variations in Gold Nisab Figures",
+      "body": "Precious metal weight conversions vary slightly across reputable Islamic organizations due to minor historical differences in defining classical units like the mithqal. For example, our own site calculator uses 87.48 grams of gold and 612.36 grams of silver as modern baselines. These figures reflect common South Asian and Middle Eastern retail conversions that map classical measures to modern troy ounces and tolas.\n\nOther relief organizations employ slightly different conversions. The [Zakat Foundation of America](https://www.zakat.org/what-is-ni-ab-in-islam) cites a classical gold figure of roughly 85 grams for nisab, while guidelines from [Islamic Relief Canada](https://www.islamicreliefcanada.org/our-work/zakat/zakat-on-gold) show minor operational differences depending on local market conventions. These minor differences illustrate that exact gram definitions can fluctuate by one to three grams depending on the research board your charity follows.\n\nThese small gram variations rarely change the outcome for an individual with substantial savings. However, if your cash balances hover right on the boundary of qualifying, a two-gram difference in the gold nisab can determine whether you owe zakat for that lunar year. You should verify which gram conversion your preferred local Islamic center recognizes when calculating marginal balances."
+    },
+    {
+      "heading": "Shia Ja'fari Rules on Enumerated Assets and Minted Coins",
+      "body": "A zakat calculator Shia or zakat calculator fiqa jafria model operates on a structurally distinct framework from Sunni jurisprudence. Under Ja'fari fiqh, zakat is not a blanket tax on net general wealth. Instead, as outlined by the official legal rulings of Grand Ayatollah Ali al-Sistani on [Sistani.org](https://www.sistani.org/english/book/48/2314/), zakat is strictly obligatory only on nine specific categories: wheat, barley, dates, raisins, gold, silver, camels, cows, and sheep or goats, along with business goods by obligatory precaution.\n\nFurthermore, the gold and silver rules in Ja'fari jurisprudence apply only under narrow monetary conditions. According to the [Sistani legal rulings on gold and silver](https://www.sistani.org/english/book/48/2317/), zakat on gold and silver is obligatory only when the metal is minted into coins that serve as prevalent circulating currency. Because modern jewelry and bullion are not circulating legal tender coins, personal gold and silver jewelry is entirely exempt from zakat under Ja'fari law.\n\nThe gold nisab in Ja'fari fiqh is twenty legal mithqals. The Sistani office publishes an exact conversion stating that one legal mithqal equals 3.456 grams, which establishes the Ja'fari gold nisab at exactly 69.12 grams. For silver, the [Sistani silver nisab ruling](https://www.sistani.org/english/book/48/2318/) sets the threshold at 105 common mithqals. Because the official source does not publish a verified gram conversion for this silver figure, Shia Muslims evaluating silver coin holdings should consult a qualified Ja'fari scholar or specialized community resource to confirm current gram measurements."
+    },
+    {
+      "heading": "Khums as a Parallel Obligation for Shia Households",
+      "body": "For Shia Muslims following Twelver Ja'fari jurisprudence, annual wealth purification relies primarily on khums rather than general zakat. While Sunni Muslims pay 2.5 percent zakat on accumulated cash savings, Shia jurisprudence assesses an obligatory 20 percent payment on annual net surplus income through the mechanism of khums. This tax applies to all income and savings remaining at the end of an individual's financial year after accounting for legitimate household living expenses.\n\nBecause khums targets surplus annual earnings, a Shia Muslim who relies only on a standard 2.5 percent zakat calculator will omit their primary charitable and religious obligation. The rules governing deductions for living costs, debt obligations, and family provisions under khums differ significantly from standard zakat formulas. If you follow Ja'fari jurisprudence, you cannot substitute a standard 2.5 percent calculation for your annual khums accounting.\n\nOur general calculator evaluates basic liquid asset balances, which makes it suitable for calculating Sunni zakat obligations and identifying commercial assets. Shia households must calculate khums separately through official community channels or authorized representatives of their chosen marja."
+    },
+    {
+      "heading": "What Our Calculator Resolves and What It Leaves Open",
+      "body": "Our online zakat calculator applies the standard 2.5 percent rate to whichever asset values and nisab figures you provide. It serves as a mathematical tool to calculate total liabilities, net assets, and final payment amounts based on your input. The calculator does not issue a religious ruling or dictate whether you must adopt the gold or silver standard.\n\nThis distinction is important for individuals with complex assets, disputed jewelry holdings, or marginal savings balances. A calculator cannot determine whether your personal jewelry qualifies as customary personal wear or taxable surplus, nor can it decide between conflicting scholarly views on modern currency backing. For those living under centralized state collection systems, you may also see distinct rules such as those reviewed in our guide on the [zakat calculator Malaysia by state](/guides/zakat-calculator-malaysia-by-state/).\n\nThis page is not intended for individuals looking for a binding religious decree or for Shia Muslims attempting to calculate their comprehensive annual khums liability. Our calculations would change if major contemporary juristic councils reached a unified consensus on currency standards or updated classical weight equivalents. In the absence of universal consensus, the tool provides the math, while you select the standard approved by your school of thought."
+    },
+    {
+      "heading": "Next Steps for Running Your Figures Accurately",
+      "body": "To complete your annual calculation, determine your madhab's stance on gold versus silver nisab and verify whether your personal jewelry must be included in your asset total. If you follow the Hanafi school, check today's retail market price for 612.36 grams of silver and gather the gram weights of all household gold and silver jewelry. If you follow the Shafi'i, Maliki, or Hanbali schools, confirm whether your local scholars recommend the gold threshold of approximately 85 to 87.48 grams and tally only jewelry held strictly for investment.\n\nOnce you have your metal prices and qualifying asset values ready, navigate directly to our [zakat calculator](/zakat/) to run your net balances and compute your final 2.5 percent payment. If you face edge cases involving mixed-metal jewelry, long-term retirement accounts, or local khums obligations, present your itemized balance sheet to a qualified local scholar or your mosque's legal committee before transferring your funds."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/zakat/",
+      "label": "Zakat calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does the Hanafi school use gold or silver for zakat nisab?",
+      "answer": "The Hanafi school uses the silver nisab standard to evaluate modern cash, liquid savings, and mixed personal wealth. As scholar [Joe Bradford](https://joebradford.substack.com/p/how-to-calculate-your-zakat) explains, the silver standard sets a lower dollar threshold that broadens the base of individuals required to pay zakat. Hanafi jurisprudence also requires counting all gold and silver jewelry as zakatable wealth, regardless of whether it is worn."
+    },
+    {
+      "question": "Why do Shafi'i, Maliki, and Hanbali scholars generally use the gold nisab instead?",
+      "answer": "Classical jurists in the Shafi'i, Maliki, and Hanbali traditions use the gold standard because 20 classical mithqals of gold historically matched the purchasing power required to define true household wealth. According to research on [SeekersGuidance](https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/), scholars like Shaykh Taha Karaan maintained this position so low-income individuals would not be taxed, though other scholars like Shaykh Nuh Keller favor silver to benefit the poor."
+    },
+    {
+      "question": "Is zakat calculated differently for Shia Muslims?",
+      "answer": "Yes, Ja'fari Shia jurisprudence calculates zakat strictly on nine enumerated categories of wealth, including livestock, specific agricultural crops, and minted coins, rather than on general cash wealth. Official rulings on [Sistani.org](https://www.sistani.org/english/book/48/2314/) confirm these distinct categories. General surplus cash and modern personal savings in Shia practice are purified annually through a separate 20 percent obligation known as khums."
+    },
+    {
+      "question": "Do Shia Muslims pay zakat on gold and silver jewelry?",
+      "answer": "No, Shia Muslims do not pay zakat on gold and silver jewelry under Ja'fari legal rulings. According to the [Sistani legal rulings on gold and silver](https://www.sistani.org/english/book/48/2317/), zakat on precious metals becomes obligatory only when the metal is minted into coins used as circulating currency. Because jewelry is uncoined and personal, it remains entirely exempt from zakat."
+    },
+    {
+      "question": "What is khums, and is it the same as zakat?",
+      "answer": "Khums is a separate 20 percent religious obligation in Shia jurisprudence assessed on net annual surplus savings and earnings after household living expenses are paid. It is not the same as the 2.5 percent zakat levy found in Sunni law. While Sunni households fulfill their savings purification through zakat, Shia households fulfill that role primarily through khums as outlined on [Sistani.org](https://www.sistani.org/english/book/48/2314/)."
+    },
+    {
+      "question": "Which nisab standard should I use in the calculator?",
+      "answer": "You should use the silver nisab standard if you follow the Hanafi school or prefer a conservative approach that ensures maximum support for charitable recipients. If you follow the Shafi'i, Maliki, or Hanbali traditions, you should generally select the gold nisab standard unless your local scholar has advised you to follow the silver standard. You can adjust your threshold and calculate your final numbers directly on our [zakat calculator](/zakat/)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joe Bradford — How to Calculate Your Zakat",
+      "url": "https://joebradford.substack.com/p/how-to-calculate-your-zakat"
+    },
+    {
+      "label": "SeekersGuidance — Gold or Silver Nisab Standard",
+      "url": "https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/"
+    },
+    {
+      "label": "Zakat Foundation of America — What Is Nisab in Islam?",
+      "url": "https://www.zakat.org/what-is-ni-ab-in-islam"
+    },
+    {
+      "label": "Islamic Relief Canada — Zakat on Gold",
+      "url": "https://www.islamicreliefcanada.org/our-work/zakat/zakat-on-gold"
+    },
+    {
+      "label": "Sistani.org — Alms Tax (Zakat), Chapter Eight",
+      "url": "https://www.sistani.org/english/book/48/2314/"
+    },
+    {
+      "label": "Sistani.org — The Taxable Limit (Nisab) for Gold",
+      "url": "https://www.sistani.org/english/book/48/2317/"
+    },
+    {
+      "label": "Sistani.org — The Nisab for Silver",
+      "url": "https://www.sistani.org/english/book/48/2318/"
+    }
+  ]
+}

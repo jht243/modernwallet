@@ -1,0 +1,39 @@
+{
+ "slug": "zakat-calculation-by-madhab-hanafi-shafii-shia",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2318,
+ "floor": 1200,
+ "input_tokens": 21497,
+ "output_tokens": 3725,
+ "thinking_tokens": 1646,
+ "cached_tokens": 17974,
+ "est_cost_usd": 0.0262,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2318,
+  "numbers_not_in_facts": [
+   "200"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18901
+  }
+ },
+ "seconds": 39.6,
+ "response_id": "21aqatqiBYHrjMcP7-7lkAM",
+ "generated_at": "2026-09-16T08:44:49+0000"
+}

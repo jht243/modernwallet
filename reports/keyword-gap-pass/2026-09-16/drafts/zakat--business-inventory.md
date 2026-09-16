@@ -1,0 +1,1 @@
+Value business inventory at its current resale value on your zakat due date rather than its original cost. Only goods held for resale count. Equipment, machinery, and fixtures used to run the business remain exempt. Because this calculator does not have a dedicated inventory field, add that total resale figure to your zakatable assets alongside cash and investments.

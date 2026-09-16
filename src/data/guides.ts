@@ -9863,6 +9863,287 @@ export const GUIDES: Guide[] = [
     ],
   },
 
+  // ── Zakat madhab/crypto/Malaysia cluster — autocomplete-pass-auto 2026-09-16 ──
+  {
+    "slug": "zakat-calculation-by-madhab-hanafi-shafii-shia",
+    "updated": "2026-09-16",
+    "title": "Zakat Calculator Hanafi Rules and Madhab Differences",
+    "metaDescription": "A zakat calculator Hanafi setup uses the silver nisab and counts all jewelry, while other madhabs use gold. Compare Hanafi, Shafi'i, Hanbali, and Shia rules.",
+    "h1": "Zakat Calculator Hanafi Guidelines Across Major Islamic Schools",
+    "cardBlurb": "Learn how Hanafi zakat calculations differ from Shafi'i, Hanbali, and Shia rules, specifically regarding silver nisab, personal jewelry exemptions, and household wealth.",
+    "introText": "The standard zakat rate of 2.5 percent on surplus wealth applies across Sunni and Shia schools of thought, but the threshold to qualify and the treatment of personal jewelry differ by madhab. A Muslim using a zakat calculator must know whether their legal school uses the gold or silver nisab standard and whether personal jewelry counts as a zakatable asset.\n\nAt ModernWallet, we build financial tools around transparent mathematical rules so you can see how each variable moves your final payment. What we see readers get wrong most often is assuming that a single online zakat calculator reflects universal consensus across every legal school. While the core arithmetic remains identical once net wealth is established, the classification of assets and qualifying thresholds depend on your school of Islamic jurisprudence.\n\nTo compute your personal obligation accurately, you can input your confirmed balances into our [zakat calculator](/zakat/). Before entering your numbers, review how the Hanafi, Shafi'i, Maliki, Hanbali, and Ja'fari traditions define your qualifying threshold and exempt assets.",
+    "sections": [
+      {
+        "heading": "The Core Rate and Where Madhabs Diverge",
+        "body": "Every major Islamic legal school agrees that zakat requires distributing 2.5 percent of net zakatable wealth once that wealth passes a minimum threshold known as nisab and remains held for one full lunar year, or hawl. The foundational scriptural guidance for zakat calculation in Quran and zakat calculation hadith literature sets this core redistributive duty. Disagreements arise not on the 2.5 percent percentage itself, but on how to value cash, which threshold standard applies to mixed savings, and whether personal-use items like jewelry incur the tax.\n\nSunni jurisprudence divides primarily over which precious metal standard establishes the minimum wealth threshold for modern paper currencies. Classical scholars pegged nisab to either 20 mithqals of gold or 200 dirhams of silver. In the modern era, because the commercial price of gold has risen dramatically relative to silver, these two classical standards produce vastly different cash cutoffs.\n\nIf you hold alternative liquid assets like digital tokens, our breakdown on the [zakat on cryptocurrency calculator](/guides/zakat-on-cryptocurrency-calculator-explained/) outlines how digital holdings are categorized. For standard savings and family assets, your chosen madhab dictates which baseline precious metal threshold you must clear before the 2.5 percent rate applies."
+      },
+      {
+        "heading": "Hanafi School Rules on Silver Nisab and Jewelry",
+        "body": "The Hanafi school resolves modern cash and liquid asset evaluations by applying the silver nisab standard rather than the gold standard. Applying the silver threshold creates a significantly lower dollar cutoff, which broadens the base of individuals who qualify to pay zakat. Islamic law scholar [Joe Bradford](https://joebradford.substack.com/p/how-to-calculate-your-zakat), author of a simple zakat calculator guide, notes that the silver standard produces a lower threshold and thereby includes a broader base of Muslims in the obligation to support the poor.\n\nUnder Hanafi fiqh, jurists combine cash, gold, silver, and business inventory into a unified pool of liquid wealth. If the combined cash value of those assets equals or exceeds the market value of the silver nisab, zakat becomes due on the entire amount. You do not need your gold to clear the gold threshold independently if your collective net wealth clears the silver baseline.\n\nHanafi scholars also take a strict approach to jewelry. In the Hanafi school, all gold and silver jewelry is fully zakatable at 2.5 percent of its intrinsic metal value, regardless of whether it is worn daily, stored for special occasions, or kept as a family heirloom. The school treats the precious metal itself as an inherently growing asset, meaning the practical use of the jewelry does not exempt it from the annual assessment."
+      },
+      {
+        "heading": "Shafi'i, Maliki, and Hanbali Classical Gold Standards",
+        "body": "Classical scholars within the Shafi'i, Maliki, and Hanbali schools default to the gold nisab standard when assessing modern paper currency and savings. Historically, this threshold equates to 20 mithqals of pure gold, which translates to roughly 84 to 85 grams of gold based on a classical mithqal weight of approximately 4.25 grams. Because gold carries a much higher market price than silver, choosing a zakat calculator Shafi'i or zakat calculator Hanbali approach typically requires a much larger cash balance before the obligation triggers.\n\nContemporary Shafi'i scholars actively debate whether the gold standard remains appropriate today. As documented in a scholarly analysis on [SeekersGuidance](https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/), the late South African Shafi'i mufti Shaykh Taha Karaan argued for maintaining the classical gold standard. He reasoned that setting the cutoff at the lower silver standard pulls lower-income wage earners into paying a tax that was originally designed to redistribute wealth from the rich. Conversely, American Shafi'i scholar Shaykh Nuh Ha Mim Keller advocates for using the silver standard, which he calculates at approximately 592.9 grams of silver, arguing that the lower threshold is better for the poor because it accelerates social support.\n\nRegarding personal jewelry, the Shafi'i, Maliki, and Hanbali schools take the opposite stance from the Hanafi school. Jurists across these three schools generally exempt gold and silver jewelry that a woman wears for personal use within customary limits. They classify personal jewelry as a personal utility item rather than a store of wealth, exempting it from zakat unless it is stored strictly as an investment or kept in extravagant quantities beyond local custom."
+      },
+      {
+        "heading": "Weight Conversions and Variations in Gold Nisab Figures",
+        "body": "Precious metal weight conversions vary slightly across reputable Islamic organizations due to minor historical differences in defining classical units like the mithqal. For example, our own site calculator uses 87.48 grams of gold and 612.36 grams of silver as modern baselines. These figures reflect common South Asian and Middle Eastern retail conversions that map classical measures to modern troy ounces and tolas.\n\nOther relief organizations employ slightly different conversions. The [Zakat Foundation of America](https://www.zakat.org/what-is-ni-ab-in-islam) cites a classical gold figure of roughly 85 grams for nisab, while guidelines from [Islamic Relief Canada](https://www.islamicreliefcanada.org/our-work/zakat/zakat-on-gold) show minor operational differences depending on local market conventions. These minor differences illustrate that exact gram definitions can fluctuate by one to three grams depending on the research board your charity follows.\n\nThese small gram variations rarely change the outcome for an individual with substantial savings. However, if your cash balances hover right on the boundary of qualifying, a two-gram difference in the gold nisab can determine whether you owe zakat for that lunar year. You should verify which gram conversion your preferred local Islamic center recognizes when calculating marginal balances."
+      },
+      {
+        "heading": "Shia Ja'fari Rules on Enumerated Assets and Minted Coins",
+        "body": "A zakat calculator Shia or zakat calculator fiqa jafria model operates on a structurally distinct framework from Sunni jurisprudence. Under Ja'fari fiqh, zakat is not a blanket tax on net general wealth. Instead, as outlined by the official legal rulings of Grand Ayatollah Ali al-Sistani on [Sistani.org](https://www.sistani.org/english/book/48/2314/), zakat is strictly obligatory only on nine specific categories: wheat, barley, dates, raisins, gold, silver, camels, cows, and sheep or goats, along with business goods by obligatory precaution.\n\nFurthermore, the gold and silver rules in Ja'fari jurisprudence apply only under narrow monetary conditions. According to the [Sistani legal rulings on gold and silver](https://www.sistani.org/english/book/48/2317/), zakat on gold and silver is obligatory only when the metal is minted into coins that serve as prevalent circulating currency. Because modern jewelry and bullion are not circulating legal tender coins, personal gold and silver jewelry is entirely exempt from zakat under Ja'fari law.\n\nThe gold nisab in Ja'fari fiqh is twenty legal mithqals. The Sistani office publishes an exact conversion stating that one legal mithqal equals 3.456 grams, which establishes the Ja'fari gold nisab at exactly 69.12 grams. For silver, the [Sistani silver nisab ruling](https://www.sistani.org/english/book/48/2318/) sets the threshold at 105 common mithqals. Because the official source does not publish a verified gram conversion for this silver figure, Shia Muslims evaluating silver coin holdings should consult a qualified Ja'fari scholar or specialized community resource to confirm current gram measurements."
+      },
+      {
+        "heading": "Khums as a Parallel Obligation for Shia Households",
+        "body": "For Shia Muslims following Twelver Ja'fari jurisprudence, annual wealth purification relies primarily on khums rather than general zakat. While Sunni Muslims pay 2.5 percent zakat on accumulated cash savings, Shia jurisprudence assesses an obligatory 20 percent payment on annual net surplus income through the mechanism of khums. This tax applies to all income and savings remaining at the end of an individual's financial year after accounting for legitimate household living expenses.\n\nBecause khums targets surplus annual earnings, a Shia Muslim who relies only on a standard 2.5 percent zakat calculator will omit their primary charitable and religious obligation. The rules governing deductions for living costs, debt obligations, and family provisions under khums differ significantly from standard zakat formulas. If you follow Ja'fari jurisprudence, you cannot substitute a standard 2.5 percent calculation for your annual khums accounting.\n\nOur general calculator evaluates basic liquid asset balances, which makes it suitable for calculating Sunni zakat obligations and identifying commercial assets. Shia households must calculate khums separately through official community channels or authorized representatives of their chosen marja."
+      },
+      {
+        "heading": "What Our Calculator Resolves and What It Leaves Open",
+        "body": "Our online zakat calculator applies the standard 2.5 percent rate to whichever asset values and nisab figures you provide. It serves as a mathematical tool to calculate total liabilities, net assets, and final payment amounts based on your input. The calculator does not issue a religious ruling or dictate whether you must adopt the gold or silver standard.\n\nThis distinction is important for individuals with complex assets, disputed jewelry holdings, or marginal savings balances. A calculator cannot determine whether your personal jewelry qualifies as customary personal wear or taxable surplus, nor can it decide between conflicting scholarly views on modern currency backing. For those living under centralized state collection systems, you may also see distinct rules such as those reviewed in our guide on the [zakat calculator Malaysia by state](/guides/zakat-calculator-malaysia-by-state/).\n\nThis page is not intended for individuals looking for a binding religious decree or for Shia Muslims attempting to calculate their comprehensive annual khums liability. Our calculations would change if major contemporary juristic councils reached a unified consensus on currency standards or updated classical weight equivalents. In the absence of universal consensus, the tool provides the math, while you select the standard approved by your school of thought."
+      },
+      {
+        "heading": "Next Steps for Running Your Figures Accurately",
+        "body": "To complete your annual calculation, determine your madhab's stance on gold versus silver nisab and verify whether your personal jewelry must be included in your asset total. If you follow the Hanafi school, check today's retail market price for 612.36 grams of silver and gather the gram weights of all household gold and silver jewelry. If you follow the Shafi'i, Maliki, or Hanbali schools, confirm whether your local scholars recommend the gold threshold of approximately 85 to 87.48 grams and tally only jewelry held strictly for investment.\n\nOnce you have your metal prices and qualifying asset values ready, navigate directly to our [zakat calculator](/zakat/) to run your net balances and compute your final 2.5 percent payment. If you face edge cases involving mixed-metal jewelry, long-term retirement accounts, or local khums obligations, present your itemized balance sheet to a qualified local scholar or your mosque's legal committee before transferring your funds."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/zakat/",
+        "label": "Zakat calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does the Hanafi school use gold or silver for zakat nisab?",
+        "answer": "The Hanafi school uses the silver nisab standard to evaluate modern cash, liquid savings, and mixed personal wealth. As scholar [Joe Bradford](https://joebradford.substack.com/p/how-to-calculate-your-zakat) explains, the silver standard sets a lower dollar threshold that broadens the base of individuals required to pay zakat. Hanafi jurisprudence also requires counting all gold and silver jewelry as zakatable wealth, regardless of whether it is worn."
+      },
+      {
+        "question": "Why do Shafi'i, Maliki, and Hanbali scholars generally use the gold nisab instead?",
+        "answer": "Classical jurists in the Shafi'i, Maliki, and Hanbali traditions use the gold standard because 20 classical mithqals of gold historically matched the purchasing power required to define true household wealth. According to research on [SeekersGuidance](https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/), scholars like Shaykh Taha Karaan maintained this position so low-income individuals would not be taxed, though other scholars like Shaykh Nuh Keller favor silver to benefit the poor."
+      },
+      {
+        "question": "Is zakat calculated differently for Shia Muslims?",
+        "answer": "Yes, Ja'fari Shia jurisprudence calculates zakat strictly on nine enumerated categories of wealth, including livestock, specific agricultural crops, and minted coins, rather than on general cash wealth. Official rulings on [Sistani.org](https://www.sistani.org/english/book/48/2314/) confirm these distinct categories. General surplus cash and modern personal savings in Shia practice are purified annually through a separate 20 percent obligation known as khums."
+      },
+      {
+        "question": "Do Shia Muslims pay zakat on gold and silver jewelry?",
+        "answer": "No, Shia Muslims do not pay zakat on gold and silver jewelry under Ja'fari legal rulings. According to the [Sistani legal rulings on gold and silver](https://www.sistani.org/english/book/48/2317/), zakat on precious metals becomes obligatory only when the metal is minted into coins used as circulating currency. Because jewelry is uncoined and personal, it remains entirely exempt from zakat."
+      },
+      {
+        "question": "What is khums, and is it the same as zakat?",
+        "answer": "Khums is a separate 20 percent religious obligation in Shia jurisprudence assessed on net annual surplus savings and earnings after household living expenses are paid. It is not the same as the 2.5 percent zakat levy found in Sunni law. While Sunni households fulfill their savings purification through zakat, Shia households fulfill that role primarily through khums as outlined on [Sistani.org](https://www.sistani.org/english/book/48/2314/)."
+      },
+      {
+        "question": "Which nisab standard should I use in the calculator?",
+        "answer": "You should use the silver nisab standard if you follow the Hanafi school or prefer a conservative approach that ensures maximum support for charitable recipients. If you follow the Shafi'i, Maliki, or Hanbali traditions, you should generally select the gold nisab standard unless your local scholar has advised you to follow the silver standard. You can adjust your threshold and calculate your final numbers directly on our [zakat calculator](/zakat/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Joe Bradford — How to Calculate Your Zakat",
+        "url": "https://joebradford.substack.com/p/how-to-calculate-your-zakat"
+      },
+      {
+        "label": "SeekersGuidance — Gold or Silver Nisab Standard",
+        "url": "https://seekersguidance.org/answers/shafii-fiqh/should-the-minimum-zakatable-amount-be-measured-by-the-gold-or-silver-standards/"
+      },
+      {
+        "label": "Zakat Foundation of America — What Is Nisab in Islam?",
+        "url": "https://www.zakat.org/what-is-ni-ab-in-islam"
+      },
+      {
+        "label": "Islamic Relief Canada — Zakat on Gold",
+        "url": "https://www.islamicreliefcanada.org/our-work/zakat/zakat-on-gold"
+      },
+      {
+        "label": "Sistani.org — Alms Tax (Zakat), Chapter Eight",
+        "url": "https://www.sistani.org/english/book/48/2314/"
+      },
+      {
+        "label": "Sistani.org — The Taxable Limit (Nisab) for Gold",
+        "url": "https://www.sistani.org/english/book/48/2317/"
+      },
+      {
+        "label": "Sistani.org — The Nisab for Silver",
+        "url": "https://www.sistani.org/english/book/48/2318/"
+      }
+    ]
+  },
+  {
+    "slug": "zakat-on-cryptocurrency-calculator-explained",
+    "updated": "2026-09-16",
+    "title": "Zakat Calculator Crypto Guide for Valuation and Hawl",
+    "metaDescription": "Use our zakat calculator crypto guide to value digital assets at spot price. Calculate 2.5% zakat on Bitcoin and crypto holdings after meeting hawl and nisab.",
+    "h1": "Zakat Calculator Crypto Rules for Bitcoin and Digital Assets",
+    "cardBlurb": "Learn how to enter digital assets into a zakat calculator crypto tool by valuing your tokens at spot price and calculating 2.5 percent across your holdings.",
+    "introText": "Cryptocurrency is subject to zakat under the majority view of contemporary Islamic scholars when your total qualifying net worth meets the nisab threshold and completes a hawl of one lunar year. Mainstream jurisprudential councils treat tradeable digital tokens as personal financial wealth subject to the standard 2.5 percent rate. A minority of scholars still urges caution regarding digital currencies, which makes individual assessment necessary for unique holdings.\n\nAt ModernWallet, we look at personal balance sheets across both traditional accounts and decentralized assets to help you prepare accurate annual numbers. What we see readers get wrong most often is valuing crypto at the original purchase price rather than the current market value on their zakat due date. You can run your converted cash totals directly through our [zakat calculator](/zakat/) once you determine the fair market figure for your tokens.\n\nApplying a zakat calculator crypto workflow requires three distinct steps before entering numbers into any digital tool. You must confirm that your tokens count as zakatable wealth, calculate their spot market value on your specific anniversary date, and separate accessible holdings from locked contracts. Taking time to work through each factor ensures your annual religious obligation rests on defensible financial figures.",
+    "sections": [
+      {
+        "heading": "Scholarly Classification of Cryptocurrency as Zakatable Wealth",
+        "body": "Most contemporary jurists classify cryptocurrency held for investment or trade as zakatable wealth known as mal mutaqawwim. Modern scholars, including the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI) and regulatory Shariah advisory boards across Malaysia, the Gulf, and South Asia, view tradeable tokens as financial assets. They evaluate digital assets through functional equivalence rather than historical precedent.\n\nClassical Islamic jurisprudence established explicit rules for gold, silver, livestock, agricultural output, and commercial merchandise. Scholar [Joe Bradford](https://joebradford.substack.com/p/zakat-on-cryptocurrency) explains that when a contemporary asset functions as a store of value and an accepted medium of exchange within a community, identical zakat rules apply. Digital assets like Bitcoin operate as tradeable financial property, which places them into the general category of commercial goods and liquid wealth.\n\nAn educational analysis from [Musaffa Academy](https://academy.musaffa.com/zakat-on-cryptocurrency/) confirms that holding digital tokens with the expectation of commercial gain qualifies them for wealth assessment. You evaluate your total crypto balance alongside traditional cash balances, gold, and stock holdings. When the aggregate value reaches the cryptocurrency nisab threshold, the obligation to calculate your liability begins."
+      },
+      {
+        "heading": "Valuation of Crypto Assets at Hawl Spot Prices",
+        "body": "You must value your cryptocurrency holdings using the spot market price on your exact hawl anniversary date rather than your original purchase price. Historical cost basis has no bearing on Islamic wealth taxation because zakat reflects your real purchasing power at the moment of assessment. Never calculate your liability by taking an average of token prices across the preceding twelve months.\n\nMusaffa Academy notes that the spot price on your zakat calculation date represents the true market value required for an accurate assessment. If you bought one Bitcoin for twenty thousand dollars and it trades at sixty thousand dollars on your hawl date, you owe 2.5 percent of the sixty thousand dollar valuation. If the market drops below your acquisition price, you calculate the obligation solely against that lower prevailing figure.\n\nTracking the hawl on crypto follows the same uninterrupted lunar calendar requirement as traditional cash savings. The holding period covers one lunar year of approximately 354 days, starting from the day your total cumulative wealth first equaled or exceeded the nisab standard. You can learn more about how traditional thresholds differ between schools of thought in our [zakat calculation by madhab](/guides/zakat-calculation-by-madhab-hanafi-shafii-shia/) guide."
+      },
+      {
+        "heading": "Treatment of Staking Rewards and Holding Periods",
+        "body": "Staking rewards received throughout the lunar year count as additional wealth added directly to your primary cryptocurrency balance. Rather than creating a separate tax schedule for yields, contemporary guidelines treat staking income as part of your overall liquid pool. The added tokens adopt the valuation date of the underlying portfolio when your annual hawl arrives.\n\nThe principal tokens committed to a staking pool remain zakatable at their current market price during assessment. As Musaffa Academy outlines, rewards earned before your hawl date combine with the original principal to form a single cumulative balance. You determine the spot price of both the original stake and the accrued yield on the single assessment day.\n\nThis consolidated method mirrors how traditional dividend reinvestment functions in public equity portfolios. You avoid calculating distinct 354-day holding clocks for micro-distributions received weekly or daily from smart contracts. Everything accessible in your wallet on the valuation date joins your collective zakat base."
+      },
+      {
+        "heading": "Locked Tokens and Exchange Insolvency Disputes",
+        "body": "Scholarly opinion remains divided on whether you must pay zakat on tokens locked in rigid staking contracts or frozen on bankrupt exchanges. The core disagreement centers on whether a token holder retains full, unimpeded ownership during the restriction. Scholars continue to debate this issue without reaching a single consensus position across international jurisdictions.\n\nThe stricter jurisprudential view holds that assets without immediate liquidity do not incur an active zakat obligation until the owner regains physical possession. In an analysis of restricted holdings, [Joe Bradford](https://joebradford.substack.com/p/zakat-on-retirement-accounts-a-complete) details how classical scholars waived current payment on wealth lacking complete ownership, known as al-milk al-tamm. Under this reasoning, you postpone payment until frozen funds return to your personal control.\n\nA more cautious school of thought recommends calculating and paying the 2.5 percent fee annually on locked balances as an act of personal precaution. Proponents of this view argue that the underlying value remains your legal property even while withdrawal features remain temporarily suspended. If you hold tokens trapped in prolonged corporate restructuring, consult a qualified local scholar to determine which legal principle fits your circumstances."
+      },
+      {
+        "heading": "Calculator Inputs for Converted Cash Equivalents",
+        "body": "Our site interface does not feature a dedicated entry field labeled for decentralized tokens or specific blockchain networks. To use the online tool, multiply your total eligible token units by the current spot price in your local fiat currency. You then enter that aggregate cash figure into the cash and liquid investment field of our [zakat calculator](/zakat/).\n\nFor example, an investor holding 0.5 Bitcoin trading at sixty thousand dollars per coin records thirty thousand dollars of liquid value. If that same investor holds ten Ethereum tokens trading at three thousand dollars each, another thirty thousand dollars joins the sum. The total sixty thousand dollar sum enters the calculator alongside regular savings account balances.\n\nThe calculator combines your converted digital assets with other declared liquid wealth and deducts allowable short-term liabilities. If your remaining balance equals or clears the nisab benchmark, the software applies the standard 2.5 percent calculation automatically. This simple approach prevents mathematical confusion while applying established legal standards to your digital portfolio."
+      },
+      {
+        "heading": "Excluded Trading Activities and Practical Next Steps",
+        "body": "This guidance applies strictly to spot holdings of digital tokens held for personal saving, passive investment, or standard commercial trade. Speculative derivative contracts, perpetual futures, and margin-leveraged positions involve severe compliance issues regarding contractual certainty and potential interest. Those instruments fall outside standard zakatable categories and require individual scholarly review before any religious dues are calculated.\n\nThis straightforward calculation framework is not designed for active algorithmic day traders managing complex automated market-making pools or decentralized loan protocols. Individuals engaged in liquidity-provider fee structures must seek tailored religious advice to separate trading inventory from platform fees. Our assessment would change if international fiqh academies issue a unified declaration removing digital assets from the category of tradeable merchandise.\n\nTo fulfill your obligation, calculate the current fiat value of your accessible tokens using today's spot market quotes. Check your personal calendar to verify that your total net worth has maintained nisab across a full lunar year. Once you have that combined sum, enter your converted total into our [zakat calculator](/zakat/) to finalize your annual payment."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/zakat/",
+        "label": "Zakat calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is zakat due on cryptocurrency like Bitcoin?",
+        "answer": "Yes, the majority of contemporary scholars and institutions like [Musaffa Academy](https://academy.musaffa.com/zakat-on-cryptocurrency/) consider cryptocurrency held for investment to be zakatable wealth. Tokens function as tradeable property and stores of value, making them subject to the standard 2.5 percent rate. Zakat applies once your aggregate net worth exceeds the nisab and completes a one-year lunar holding period."
+      },
+      {
+        "question": "What price do I use to value my crypto for zakat, purchase price or today's price?",
+        "answer": "You must use the spot market price of your cryptocurrency on your specific zakat anniversary date. Scholar [Joe Bradford](https://joebradford.substack.com/p/zakat-on-cryptocurrency) notes that the obligation applies to the full market value on your valuation day rather than what you originally paid. Historical acquisition costs and twelve-month moving averages are not permissible metrics for your calculation."
+      },
+      {
+        "question": "Does zakat apply to crypto that's locked in staking or frozen on an exchange?",
+        "answer": "Scholarly opinion is split on illiquid or inaccessible tokens. One legal view holds that zakat is deferred until you regain complete ownership and access, following classical precedents outlined by [Joe Bradford](https://joebradford.substack.com/p/zakat-on-retirement-accounts-a-complete). Another conservative view advises paying the 2.5 percent annually as a precaution, meaning you should consult a local scholar regarding frozen accounts."
+      },
+      {
+        "question": "How do I enter crypto into this site's zakat calculator?",
+        "answer": "Calculate the total fiat cash value of your digital tokens using current spot prices on your valuation date. Open our [zakat calculator](/zakat/) and add that combined dollar figure into the cash and liquid investment input line. The calculator then combines your assets and calculates your exact 2.5 percent liability automatically."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Joe Bradford — Zakat on Cryptocurrency",
+        "url": "https://joebradford.substack.com/p/zakat-on-cryptocurrency"
+      },
+      {
+        "label": "Musaffa Academy — Zakat on Cryptocurrency",
+        "url": "https://academy.musaffa.com/zakat-on-cryptocurrency/"
+      },
+      {
+        "label": "Joe Bradford — Zakat on Retirement Accounts",
+        "url": "https://joebradford.substack.com/p/zakat-on-retirement-accounts-a-complete"
+      }
+    ]
+  },
+  {
+    "slug": "zakat-calculator-malaysia-by-state",
+    "updated": "2026-09-16",
+    "title": "Zakat Calculator Johor and Malaysian State Agencies",
+    "metaDescription": "Malaysia runs a mandatory state zakat system. Find your authorized state agency, use a zakat calculator Johor portal, and claim the Section 6A(3) tax rebate.",
+    "h1": "Zakat Calculator Johor and Malaysian State Directory",
+    "cardBlurb": "Malaysia operates a state-administered zakat framework where official state agencies collect obligatory contributions, process payroll deductions, and provide receipts required for federal tax rebates.",
+    "introText": "Malaysia operates a mandatory, state-administered zakat system rather than a single voluntary national pool. Every state, along with the Federal Territories, manages Islamic religious revenue through an official state Islamic religious council, known as Majlis Agama Islam Negeri, or through an assigned statutory collection agency. Whether you search for a zakat calculator Johor portal or an agency in another jurisdiction, your payments must flow directly to your designated state authority.\n\nAt ModernWallet, we see readers get wrong most often the assumption that a single national agency calculates and collects zakat across all of Malaysia. Because religious affairs fall under state jurisdiction under the Malaysian constitution, each state maintains autonomous authority over collection portals, nisab thresholds, and administrative rules. Third-party calculation tools cannot collect your payment, issue an enforceable receipt, or process tax documents.\n\nOur general [live zakat calculator](/zakat/) provides a currency-agnostic sanity check for your baseline math, but it does not connect to any Malaysian government body or state agency. Malaysian taxpayers who want to claim statutory tax deductions must obtain official receipts directly from their state collection agency under federal tax law.",
+    "sections": [
+      {
+        "heading": "State Administration of Malaysian Zakat",
+        "body": "Malaysian zakat collection is decentralized across thirteen states and the Federal Territories. Each state maintains exclusive constitutional authority over Islamic matters within its borders. A taxpayer residing or earning income in Johor falls under the jurisdiction of Majlis Agama Islam Negeri Johor (MAIJ), while a taxpayer in Kuala Lumpur answers to federal territory religious authorities. You cannot satisfy your religious obligation or tax rebate requirements by submitting payments to an arbitrary state agency.\n\nThe official portal of the Malaysian government maintains the verified [list of state zakat agencies](https://www.malaysia.gov.my/en/categories/aid-welfare-and-assistance/zakat/list-of-state-zakat-agencies). That directory directs taxpayers to the authorized collection authority for each territory. Using an unauthorized intermediary or an unverified online payment gateway creates the risk that your contribution will not be recognized by state religious auditors or federal tax officials.\n\nState collection bodies publish localized annual assessments, calculate regional nisab values based on fluctuating market weights, and manage local distribution to designated beneficiary categories (asnaf). Understanding which agency controls your territory is the first step toward settling your dues accurately."
+      },
+      {
+        "heading": "Authorized Zakat Agencies across Malaysian States",
+        "body": "Every state designates either an internal council committee or a corporatized collection subsidiary to process funds and issue documentation. These statutory bodies manage official web portals where citizens review local payment regulations, calculate annual dues, and download contribution statements.\n\nThe authorized agencies listed in the official Malaysian government directory include:\n\n* Johor: Majlis Agama Islam Negeri Johor (MAIJ)\n* Selangor: Lembaga Zakat Selangor (LZS)\n* Wilayah Persekutuan (Kuala Lumpur, Putrajaya, Labuan): Majlis Agama Islam Wilayah Persekutuan (MAIWP)\n* Kelantan: Majlis Agama Islam dan Adat Istiadat Melayu Kelantan\n* Kedah: Lembaga Zakat Negeri Kedah\n* Terengganu: Majlis Agama Islam dan Adat Melayu Terengganu (MAIDAM)\n* Negeri Sembilan: Zakat Negeri Sembilan (MAINS)\n* Melaka: Pusat Zakat Melaka\n* Penang (Pulau Pinang): Zakat Pulau Pinang\n* Perak: Baitulmal Majlis Agama Islam Perak (MAIAMP)\n* Sabah: Majlis Ugama Islam Sabah (MUIS)\n* Sarawak: Tabung Baitulmal Sarawak\n\nEach body maintains its own computational guidelines. While core mathematical percentages remain pegged to classical Islamic jurisprudence, local deduction categories and nisab valuations reflect regional economic assessments determined by each council's Shariah committee."
+      },
+      {
+        "heading": "Selangor Administration and LZS versus JAIS",
+        "body": "Selangor residents searching for a zakat calculator JAIS often confuse two distinct state organizations. Jabatan Agama Islam Selangor (JAIS) serves as the state Islamic religious department. According to the stated functions on the [JAIS corporate portal](https://www.jais.gov.my/en/about-us-3/), JAIS administers Islamic family law, religious education, mosque oversight, and Shariah regulatory enforcement. JAIS does not manage zakat funds or operate a public collection counter.\n\nZakat assessment and collection in Selangor belong solely to Lembaga Zakat Selangor (LZS). As detailed on the [Lembaga Zakat Selangor information page](https://www.zakatselangor.com.my/en/about-us/), LZS is the dedicated corporate entity entrusted by the state religious council with managing zakat assessment, collection, and distribution. If you live or work in Selangor, you must calculate and remit your funds through LZS rather than directing inquiries to JAIS.\n\nConfusing the administrative and enforcement arm with the revenue collection arm delays contribution processing. LZS provides an authorized web calculator and automated payment portal for Selangor taxpayers. Directing payments to JAIS accounts results in rejected transfers or unallocated deposits that fail to produce a valid collection receipt."
+      },
+      {
+        "heading": "Federal Territory Operations through MAIWP and PPZ",
+        "body": "Taxpayers living or working in Kuala Lumpur, Putrajaya, or Labuan fall under the jurisdiction of Majlis Agama Islam Wilayah Persekutuan (MAIWP). MAIWP oversees Islamic religious governance within the Federal Territories. To handle revenue operations efficiently, MAIWP operates a specialized collection agency known as Pusat Pungutan Zakat (PPZ-MAIWP).\n\nPPZ-MAIWP manages digital payment gateways, mobile counters, and the official zakat calculator Kuala Lumpur platform. Residents calculate wealth, income, savings, and gold zakat through this portal to receive immediate verification of their transactions. The agency directly deposits proceeds into MAIWP accounts for statutory welfare distribution across urban centers.\n\nFederal Territory workers whose companies operate headquarters within Kuala Lumpur typically coordinate with PPZ-MAIWP for automated corporate payroll deductions. Using the authorized PPZ-MAIWP portal guarantees that urban residents secure compliant records for both religious compliance and subsequent tax filings."
+      },
+      {
+        "heading": "Johor Guidelines and MAIJ Assessment Procedures",
+        "body": "Residents of Johor assess their liability through Majlis Agama Islam Negeri Johor (MAIJ). Searching for a kalkulator zakat pendapatan Johor connects workers to MAIJ's income evaluation guidelines. Income zakat, or zakat pendapatan, applies to gross employment income, allowances, bonuses, and professional fees earned by Muslim individuals within the state.\n\nMAIJ outlines permissible personal deductions before applying the standard two and a half percent calculation. Allowable deductions generally cover basic personal maintenance, spousal support, dependent children, medical costs for elderly parents, and mandatory retirement savings contributions. MAIJ publishes its own current nisab threshold based on the prevailing local gold price and updates it directly on its own portal, so check MAIJ's own figures rather than a generic number before you rely on one.\n\nOnce an individual's net income clears the MAIJ annual nisab, the obligation becomes payable. Johor taxpayers can complete payment through MAIJ district offices, authorized banking portals, or the official state online system. Retaining the final MAIJ transaction receipt ensures the contributor can verify compliance with state religious requirements."
+      },
+      {
+        "heading": "Payroll Deductions through Potongan Gaji Berjadual",
+        "body": "Many Malaysian employers offer a structured monthly salary deduction system known as Potongan Gaji Berjadual (PGB). Instead of calculating and paying a substantial annual lump sum, salaried employees can arrange for their finance or human resources department to deduct a predetermined amount directly from their monthly remuneration. The employer remits these accumulated sums directly to the employee's authorized state zakat body each month.\n\nFinancial analysis by [iMoney on income zakat and tax rebates](https://www.imoney.my/articles/zakat-income-2026-tax-rebate) explains that scheduled payroll deductions smooth personal cash flow throughout the financial year. A predictable monthly deduction prevents the budgetary strain of settling an entire year's religious obligation in December. It also ensures consistent funding for state welfare programs.\n\nParticipating in Potongan Gaji Berjadual does not alter your legal status or eligibility for statutory benefits. State collection bodies issue consolidated annual contribution statements to employees who use monthly payroll deductions. These formal statements aggregate your twelve monthly remittances into a single verified figure that mirrors the documentation provided to lump-sum contributors."
+      },
+      {
+        "heading": "Section 6A3 Income Tax Rebate Mechanics",
+        "body": "Under Section 6A(3) of the Malaysian Income Tax Act 1967, zakat, fitrah, and other obligatory Islamic religious payments paid to an authorized state religious authority generate a direct tax rebate. A tax rebate differs fundamentally from a standard tax relief. A tax relief reduces your total taxable income bracket before tax calculation, delivering a financial benefit equal only to your marginal tax percentage. A tax rebate reduces your calculated tax liability ringgit for ringgit.\n\nAs outlined in reporting by [iMoney](https://www.imoney.my/articles/zakat-income-2026-tax-rebate), if your calculated income tax liability stands at 3,000 Malaysian ringgit and you paid 2,500 ringgit in verified zakat during that assessment year, your final tax balance owed to the Inland Revenue Board of Malaysia falls to 500 ringgit. The tax deduction provides exact dollar-for-dollar relief against your tax obligation.\n\nSection 6A(3) applies strict statutory limitations to this rebate mechanism:\n\n* The rebate cannot reduce your tax liability below zero ringgit.\n* If you pay 4,000 ringgit in zakat but your assessed income tax liability is only 3,000 ringgit, your tax bill drops to zero.\n* The Inland Revenue Board does not refund the surplus 1,000 ringgit to you.\n* Unused zakat amounts cannot be carried forward to offset tax liability in future assessment years.\n\nZakat deducted through scheduled monthly payroll arrangements qualifies fully for this Section 6A(3) tax rebate. Taxpayers must simply retain their official annual statement to claim the credit on their electronic tax return."
+      },
+      {
+        "heading": "State Receipt Requirements for Tax Validation",
+        "body": "To successfully claim a Section 6A(3) tax rebate, Malaysian taxpayers must possess an official receipt issued directly by an authorized state zakat body. The Inland Revenue Board of Malaysia routinely audits claims and demands proof of payment. Only formal documentation produced by bodies such as MAIJ, LZS, PPZ-MAIWP, or other recognized state councils fulfills statutory compliance standards.\n\nPrintouts, screenshots, or calculation summaries generated by independent third-party software carry no legal validity under federal tax law. Third-party calculators lack authority to collect religious funds or confirm receipt of capital. If a taxpayer claims a rebate using an unofficial document and faces an audit, the tax authority will disallow the rebate, assess back taxes, and impose statutory penalties.\n\nTaxpayers who pay online through banking apps or state portals must download and archive the official receipt immediately. Employers coordinating payroll deductions receive batch confirmations, but individual employees should verify that their personal tax identification number appears accurately on the annual zakat agency statement before submitting their tax returns."
+      },
+      {
+        "heading": "Using Third-Party Tools as Math Sanity Checks",
+        "body": "Independent calculation tools serve a practical purpose as initial estimation platforms before you commit funds through official state portals. Calculating net zakatable assets across diverse asset classes requires organizing bank balances, physical precious metals, investment portfolios, and business capital. Our [online zakat calculator](/zakat/) provides a flexible workspace where you can input asset totals against live gold and silver prices to evaluate your approximate baseline position.\n\nIf you hold complex digital assets, reviewing our breakdown on [crypto zakat calculations](/guides/zakat-on-cryptocurrency-calculator-explained/) helps clarify how volatile holdings map into broader net-wealth frameworks. When examining broader jurisprudence questions surrounding asset classes or nisab methodologies across historical legal traditions, explore our overview of [zakat calculation across madhabs](/guides/zakat-calculation-by-madhab-hanafi-shafii-shia/).\n\nTreat external calculators purely as planning aids. Once you establish your general asset baseline and verify whether your total net wealth clears prevailing nisab thresholds, transfer your figures to your specific state portal. Finalize your actual payments exclusively through your designated state agency to secure an authorized receipt and protect your federal tax rebate."
+      },
+      {
+        "heading": "Next Steps for Malaysian Taxpayers",
+        "body": "Take immediate steps to confirm your regional zakat jurisdiction and organize your financial records for the current calendar year. Begin by consulting the official [directory of state zakat agencies](https://www.malaysia.gov.my/en/categories/aid-welfare-and-assistance/zakat/list-of-state-zakat-agencies) to identify the authorized body that governs your state of residence or employment.\n\nIf you receive consistent monthly employment income, contact your company's payroll department to inquire whether they support Potongan Gaji Berjadual. Setting up recurring monthly payroll deductions eliminates the risk of missing payment deadlines and spreads your cash outflows evenly across twelve months.\n\nIf you choose to make lump-sum payments instead, access the official online portal for your state body, such as MAIJ in Johor or LZS in Selangor, complete the payment transaction, and download your formal receipt immediately. Store these state-issued receipts alongside your annual tax documentation so you can claim your full Section 6A(3) ringgit-for-ringgit tax rebate when filing your annual income tax return."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/zakat/",
+        "label": "Zakat calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does JAIS collect zakat in Selangor?",
+        "answer": "No, JAIS does not collect zakat in Selangor. Jabatan Agama Islam Selangor (JAIS) oversees Islamic family law, religious education, and regulatory enforcement. Zakat assessment, collection, and distribution in Selangor are handled exclusively by [Lembaga Zakat Selangor](https://www.zakatselangor.com.my/en/about-us/) (LZS)."
+      },
+      {
+        "question": "Which body collects zakat in Kuala Lumpur?",
+        "answer": "Zakat in Kuala Lumpur and the Federal Territories is collected by Pusat Pungutan Zakat (PPZ-MAIWP) on behalf of Majlis Agama Islam Wilayah Persekutuan (MAIWP). PPZ-MAIWP operates online portals, payment counters, and payroll deduction programs for residents of Kuala Lumpur, Putrajaya, and Labuan."
+      },
+      {
+        "question": "Is zakat mandatory in Malaysia?",
+        "answer": "Yes, zakat is a mandatory religious obligation for all eligible Muslims in Malaysia who meet the nisab and haul wealth thresholds. Under Malaysia's legal structure, the administration of zakat falls under state jurisdiction, and payments must be remitted directly to the authorized state religious agency."
+      },
+      {
+        "question": "Does zakat reduce my income tax in Malaysia?",
+        "answer": "Yes, under Section 6A(3) of the Income Tax Act 1967, zakat paid to an authorized state agency acts as a direct, ringgit-for-ringgit tax rebate against your final tax payable. The rebate is capped at your total tax liability, meaning it can reduce your tax payable to zero but will not result in a cash refund for excess zakat paid."
+      },
+      {
+        "question": "Can I pay zakat automatically through my salary in Malaysia?",
+        "answer": "Yes, Malaysian employees can pay zakat automatically through a scheduled salary deduction program called Potongan Gaji Berjadual (PGB). Your employer deducts your chosen zakat amount directly from your monthly wages and remits it to your state zakat body, which issues an annual statement for tax filing."
+      },
+      {
+        "question": "Can I use this site's zakat calculator instead of my state's official calculator?",
+        "answer": "No, you cannot use this site's calculator as a legal substitute for your state's official system. This site provides a general math sanity check, but it cannot collect funds or issue official receipts. To fulfill your legal obligations and claim a Malaysian income tax rebate, you must pay through your authorized state agency."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Malaysia.gov.my — List of State Zakat Agencies",
+        "url": "https://www.malaysia.gov.my/en/categories/aid-welfare-and-assistance/zakat/list-of-state-zakat-agencies"
+      },
+      {
+        "label": "JAIS — About Us",
+        "url": "https://www.jais.gov.my/en/about-us-3/"
+      },
+      {
+        "label": "Lembaga Zakat Selangor — About Us",
+        "url": "https://www.zakatselangor.com.my/en/about-us/"
+      },
+      {
+        "label": "iMoney — Income Zakat and Tax Rebate",
+        "url": "https://www.imoney.my/articles/zakat-income-2026-tax-rebate"
+      }
+    ]
+  },
+
   ...SELF_EMPLOYED_GUIDES,
 ];
 

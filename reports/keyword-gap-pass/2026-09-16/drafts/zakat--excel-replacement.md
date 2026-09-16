@@ -1,0 +1,1 @@
+No, this calculator does not offer a downloadable Excel spreadsheet or offline template. It runs directly in your browser, with no built-in export, CSV download, or print button. To keep a record of your calculations, use your browser's print function to save the page as a PDF, or copy your asset figures into your own document.

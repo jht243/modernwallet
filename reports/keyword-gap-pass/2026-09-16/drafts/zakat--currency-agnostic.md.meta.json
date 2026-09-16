@@ -1,0 +1,37 @@
+{
+ "slug": "zakat--currency-agnostic",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 82,
+ "floor": 0,
+ "input_tokens": 18690,
+ "output_tokens": 96,
+ "thinking_tokens": 6468,
+ "cached_tokens": 17974,
+ "est_cost_usd": 0.0285,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 82,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18901
+  }
+ },
+ "seconds": 19.8,
+ "response_id": "yViqapK-J7qdjrEPtqzC4Q0",
+ "generated_at": "2026-09-16T08:52:44+0000"
+}

@@ -1,0 +1,37 @@
+{
+ "slug": "zakat--salary-misconception",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 84,
+ "floor": 0,
+ "input_tokens": 18440,
+ "output_tokens": 98,
+ "thinking_tokens": 2053,
+ "cached_tokens": 17974,
+ "est_cost_usd": 0.0118,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 84,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18901
+  }
+ },
+ "seconds": 7.3,
+ "response_id": "AFmqaqeSBIjVjMcPwMu3gQM",
+ "generated_at": "2026-09-16T08:53:27+0000"
+}
