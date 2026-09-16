@@ -1,0 +1,39 @@
+{
+ "slug": "fed-rate-hike-savings-investments--sept2026-example",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 180,
+ "floor": 150,
+ "input_tokens": 17912,
+ "output_tokens": 358,
+ "thinking_tokens": 8571,
+ "cached_tokens": 16959,
+ "est_cost_usd": 0.0374,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 180,
+  "numbers_not_in_facts": [
+   "20000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17396
+  }
+ },
+ "seconds": 24.9,
+ "response_id": "cA-ratKYLaLc-sAPtO2BiAw",
+ "generated_at": "2026-09-16T21:52:09+0000"
+}

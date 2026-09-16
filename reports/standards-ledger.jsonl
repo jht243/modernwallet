@@ -211,3 +211,4 @@
 {"ts":"2026-09-16T08:44:42+00:00","routine":"autocomplete-pass-auto","phase":"phase-3-5-mileage-cluster","via":"load-script","cs":"64123458","aa":"71a2ad6a","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}
 {"ts":"2026-09-16T08:41:03+00:00","routine":"autocomplete-pass-auto","phase":"phase-3","via":"load-script","cs":"64123458","aa":"71a2ad6a","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}
 {"ts":"2026-09-16T08:41:03+00:00","routine":"autocomplete-pass-auto","phase":"phase-5","via":"load-script","cs":"64123458","aa":"71a2ad6a","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}
+{"ts":"2026-09-16T21:43:11+00:00","routine":"competitor-monitor","phase":"phase-3","via":"load-script","cs":"64123458","aa":"71a2ad6a","exp":"31d70e56","domain":"The Modern Wallet (themodernwallet.com) is a personal-financ"}

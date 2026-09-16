@@ -1,0 +1,7 @@
+## The September 2026 Rate Increase in Practice
+
+On September 16, 2026, the Federal Open Market Committee (FOMC) raised the target range for the federal funds rate by 25 basis points to 3-3/4 to 4 percent. The unanimous 12-0 vote marked the central bank's first rate increase since 2023. The Federal Reserve's [official policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) stated the decision supports a return to its 2 percent inflation target, while [updated projections](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm) signaled another potential rate hike in 2026.
+
+A 25-basis-point hike lifts cash returns modestly. For example, an illustrative $10,000 deposit receiving the full 0.25 percentage point rise in annual percentage yield (APY) generates an additional $25 in interest over one year. Because retail institutions rarely pass through the complete hike, calculate realistic returns on your balance with our [high-yield savings calculator](/investing/high-yield-savings-calculator/).
+
+Borrowing costs react much faster when benchmark rates climb. For example, an illustrative $20,000 variable home equity line of credit (HELOC) balance incurs $50 in extra annual interest after a full 25-basis-point adjustment. Existing fixed loans remain insulated from these rate moves, as detailed in our [mortgage rates guide](/guides/current-mortgage-rates-guide/).
