@@ -1,0 +1,357 @@
+2026-09-16 autocomplete-pass - per-keyword export (343 new-to-inventory suggestions, 6 seeds)
+keyword | proposed action | target
+
+--- zakat calculator (244) ---
+what is zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+what is nisab in zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+what is the best zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+what is the formula to calculate zakat | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how calculate zakat on gold | update existing body text (grouped) | /zakat/
+how to do zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how to make zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how to pay zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how to work out zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator how much percentage | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how is gold zakat calculator | update existing body text (grouped) | /zakat/
+zakat calculator app | update existing body text (grouped) | /zakat/
+zakat calculator as sunnah | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator ahmadiyya | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator aed | update existing body text (grouped) | /zakat/
+zakat calculator australia | update existing body text (grouped) | /zakat/
+zakat calculator as sunnah foundation | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator awqaf | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator asb | update existing body text (grouped) | /zakat/
+zakat calculator alkhidmat | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator al khair | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator bd | update existing body text (grouped) | /zakat/
+zakat calculator bangladesh | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator bangladesh 2026 | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator brunei | update existing body text (grouped) | /zakat/
+zakat calculator bahrain | update existing body text (grouped) | /zakat/
+zakat calculator bd 2026 | update existing body text (grouped) | /zakat/
+zakat calculator bangla | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator by dawateislami | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator bd as sunnah | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator bd as sunnah foundation | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator canada | update existing body text (grouped) | /zakat/
+zakat calculator chart | update existing body text (grouped) | /zakat/
+zakat calculator cash | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator canada hanafi | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator cad | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator chart in urdu | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator canada 2026 | update existing body text (grouped) | /zakat/
+zakat calculator crypto | create new content | /guides/zakat-on-cryptocurrency-calculator-explained/
+zakat calculator canada gold | update existing body text (grouped) | /zakat/
+zakat calculation criteria | update existing body text (grouped) | /zakat/
+zakat calculator darussalam | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator dawateislami | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator dubai | update existing body text (grouped) | /zakat/
+zakat calculator dawateislami india | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator dib | update existing body text (grouped) | /zakat/
+zakat calculator dollars | update existing body text (grouped) | /zakat/
+zakat calculator dawateislami pakistan | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator download | update existing body text (grouped) | /zakat/
+zakat calculator darul uloom karachi | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator deoband | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator egypt | update existing body text (grouped) | /zakat/
+zakat calculator euro | update existing body text (grouped) | /zakat/
+zakat calculator excel | update existing body text (grouped) | /zakat/
+zakat calculator excel download | update existing body text (grouped) | /zakat/
+zakat calculator excel sheet | update existing body text (grouped) | /zakat/
+zakat calculator easy | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator excel template | update existing body text (grouped) | /zakat/
+zakat calculator english | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator excel bangladesh | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator excel free download | update existing body text (grouped) | /zakat/
+zakat calculator for gold | update existing body text (grouped) | /zakat/
+zakat calculator for gold in indian rupees | update existing body text (grouped) | /zakat/
+zakat calculator formula | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator for salary | update existing body text (grouped) | /zakat/
+zakat calculator for business | update existing body text (grouped) | /zakat/
+zakat calculator for stocks | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator for silver | update existing body text (grouped) | /zakat/
+zakat calculator for gold in grams | update existing body text (grouped) | /zakat/
+zakat calculator for cash | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator for 22k gold | update existing body text (grouped) | /zakat/
+zakat calculator gold | update existing body text (grouped) | /zakat/
+zakat calculator ghamidi | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator gold grams | update existing body text (grouped) | /zakat/
+zakat calculator gold tola | update existing body text (grouped) | /zakat/
+zakat calculator germany | update existing body text (grouped) | /zakat/
+zakat calculator gold tola in india | update existing body text (grouped) | /zakat/
+zakat calculator gold weight uk | update existing body text (grouped) | /zakat/
+zakat calculator grams | update existing body text (grouped) | /zakat/
+zakat calculator gold and silver | update existing body text (grouped) | /zakat/
+zakat calculator gold indian rupees | update existing body text (grouped) | /zakat/
+zakat calculator hanafi | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator human appeal | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator hyderabad | update existing body text (grouped) | /zakat/
+zakat calculator hk | update existing body text (grouped) | /zakat/
+zakat calculator how much | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator hindi | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator hanbali | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator hidaya | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculation hadith | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator india | update existing body text (grouped) | /zakat/
+zakat calculator in naira | update existing body text (grouped) | /zakat/
+zakat calculator india rupees | update existing body text (grouped) | /zakat/
+zakat calculator in urdu | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator in pakistan | update existing body text (grouped) | /zakat/
+zakat calculator in pkr | update existing body text (grouped) | /zakat/
+zakat calculator in philippines | update existing body text (grouped) | /zakat/
+zakat calculator islamic relief | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator in rupees | update existing body text (grouped) | /zakat/
+calculate vat on amount | dropped - pure noise/malformed (unrelated VAT fuzzy-match / stutter / truncated fragment) | -
+zakat calculator johor | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator jordan | update existing body text (grouped) | /zakat/
+zakat calculator japan | update existing body text (grouped) | /zakat/
+zakat calculator jamiat | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator jewelry | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator jais | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat johor calculator pdf | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+kalkulator zakat pendapatan johor | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+simple zakat calculator joe bradford | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator fiqa jafria | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator ksa | update existing body text (grouped) | /zakat/
+zakat calculator kl | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator kuwait | update existing body text (grouped) | /zakat/
+zakat calculator kelantan | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator kenya | update existing body text (grouped) | /zakat/
+zakat calculator kedah | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator kuala lumpur | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator kerala | update existing body text (grouped) | /zakat/
+zakat calculator ksa online | update existing body text (grouped) | /zakat/
+zakat calculator karachi | update existing body text (grouped) | /zakat/
+zakat calculator launchgood | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator list | update existing body text (grouped) | /zakat/
+zakat calculator lzs | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator l | dropped - pure noise/malformed (unrelated VAT fuzzy-match / stutter / truncated fragment) | -
+zakat calculator live | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator london | update existing body text (grouped) | /zakat/
+zakat calculator latest | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator sri lanka | update existing body text (grouped) | /zakat/
+zakat calculator sri lanka rupees | update existing body text (grouped) | /zakat/
+zakat calculator maiwp | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator malaysia | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator muis | update existing body text (grouped) | /zakat/
+zakat calculator maldives | update existing body text (grouped) | /zakat/
+zakat calculator maroc | update existing body text (grouped) | /zakat/
+zakat calculator melaka | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator mira | update existing body text (grouped) | /zakat/
+zakat calculator maidam | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator meaning | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator matw | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator negeri sembilan | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator nz | update existing body text (grouped) | /zakat/
+zakat calculator nigeria | update existing body text (grouped) | /zakat/
+zakat calculator nisab | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator naira | update existing body text (grouped) | /zakat/
+zakat calculator nzf | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator national zakat foundation | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator norway | update existing body text (grouped) | /zakat/
+zakat calculator netherlands | update existing body text (grouped) | /zakat/
+zakat calculator nisab 2026 | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator on gold | update existing body text (grouped) | /zakat/
+zakat calculator on gold in pakistan | update existing body text (grouped) | /zakat/
+zakat calculator on salary | update existing body text (grouped) | /zakat/
+zakat calculator online | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator on gold in bangladesh | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator oman | update existing body text (grouped) | /zakat/
+zakat calculator on silver | update existing body text (grouped) | /zakat/
+zakat calculator on cash | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator on gold tola | update existing body text (grouped) | /zakat/
+zakat calculator on property | update existing body text (grouped) | /zakat/
+zakat calculator pkr | update existing body text (grouped) | /zakat/
+zakat calculator pakistan | update existing body text (grouped) | /zakat/
+zakat calculator philippines | update existing body text (grouped) | /zakat/
+zakat calculator penang | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator pakistan 2026 | update existing body text (grouped) | /zakat/
+zakat calculator perak | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator percentage | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator peso | update existing body text (grouped) | /zakat/
+zakat calculator pakistan rupees | update existing body text (grouped) | /zakat/
+zakat calculator pakistan 2025 | update existing body text (grouped) | /zakat/
+zakat calculator qatar | update existing body text (grouped) | /zakat/
+zakat calculator qatar charity | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator quantum | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculation questions | dropped - already covered (existing zakat hub FAQ) | /zakat/
+gold zakat calculator qatar | update existing body text (grouped) | /zakat/
+zakat calculator in qatari riyal | update existing body text (grouped) | /zakat/
+zakat calculation in quran | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator minhaj ul quran | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+quick zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+how to calculate zakat on income | update existing body text (grouped) | /zakat/
+zakat calculator rupees | update existing body text (grouped) | /zakat/
+zakat calculator rupees pakistan | update existing body text (grouped) | /zakat/
+zakat calculator rupees in india | update existing body text (grouped) | /zakat/
+zakat calculator rupees pakistan urdu | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator reddit | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator ramadan | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator riyal | update existing body text (grouped) | /zakat/
+zakat calculator rate | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator rupees pakistan hanafi | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator rupees in urdu | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator selangor | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator singapore | update existing body text (grouped) | /zakat/
+zakat calculator sabah | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator sg | update existing body text (grouped) | /zakat/
+zakat calculator south africa | update existing body text (grouped) | /zakat/
+zakat calculator saudi arabia | update existing body text (grouped) | /zakat/
+zakat calculator salary | update existing body text (grouped) | /zakat/
+zakat calculator shia | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat calculator shaukat khanum | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator tola | update existing body text (grouped) | /zakat/
+zakat calculator taka | update existing body text (grouped) | /zakat/
+zakat calculator tunisie | update existing body text (grouped) | /zakat/
+kalkulator zakat terengganu | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator today | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator tamil | dropped - wrong language (site is English-only; possible future localization play) | -
+zakat calculator tool | update existing body text (grouped) | /zakat/
+zakat calculator tcf | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator trinidad | update existing body text (grouped) | /zakat/
+zakat calculator template | update existing body text (grouped) | /zakat/
+zakat calculator usa | update existing body text (grouped) | /zakat/
+zakat calculator uk | update existing body text (grouped) | /zakat/
+zakat calculator uae | update existing body text (grouped) | /zakat/
+zakat calculator usd | update existing body text (grouped) | /zakat/
+zakat calculator uganda | update existing body text (grouped) | /zakat/
+zakat calculator uae dirhams | update existing body text (grouped) | /zakat/
+zakat calculator uae awqaf | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator ummah welfare trust | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator uk gold | update existing body text (grouped) | /zakat/
+zakat calculator uk hanafi | create new content (grouped) | /guides/zakat-calculation-by-madhab-hanafi-shafii-shia/
+zakat value calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+vithr zakat calculator | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+how is zakat calculated | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator with mortgage | update existing body text (grouped) | /zakat/
+zakat calculator wahed | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator wilayah | create new content (grouped) | /guides/zakat-calculator-malaysia-by-state/
+zakat calculator with loan | update existing body text (grouped) | /zakat/
+zakat calculator with 401k | update existing body text (grouped) | /zakat/
+zakat calculator with gold | update existing body text (grouped) | /zakat/
+zakat calculator website | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator with debt | update existing body text (grouped) | /zakat/
+zakat calculator weight | update existing body text (grouped) | /zakat/
+zakat calculator with home loan | update existing body text (grouped) | /zakat/
+zakat calculator xls | update existing body text (grouped) | /zakat/
+download zakat calculator xls file | update existing body text (grouped) | /zakat/
+how do i calculate vat on my calculator | dropped - pure noise/malformed (unrelated VAT fuzzy-match / stutter / truncated fragment) | -
+yaqeen zakat calculator | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculator yen | update existing body text (grouped) | /zakat/
+zakat year calculator | update existing body text (grouped) | /zakat/
+zakat calculator for previous years | update existing body text (grouped) | /zakat/
+how to zakat calculator | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator zoya | dropped - navigational (searching for that specific charity/org's own calculator tool) | -
+zakat calculation zatca | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat calculator zakat fund | dropped - already covered (existing zakat hub FAQ) | /zakat/
+zakat zakat calculator | dropped - pure noise/malformed (unrelated VAT fuzzy-match / stutter / truncated fragment) | -
+
+--- mileage deduction calculator (53) ---
+what is mileage reimbursement calculator | dropped - already covered (hub intro/FAQ) | /mileage-deduction/
+is there a maximum mileage deduction | update existing body text | /mileage-deduction/
+business mileage deduction calculator | dropped - duplicate of hub's own coverage | /mileage-deduction/
+how much tax deduction for mileage | dropped - already covered (mileage deduction worth FAQ) | /mileage-deduction/
+standard mileage vs actual expenses calculator | dropped - already shipped (spokes-mileage.ts spoke) | /mileage-deduction/standard-mileage-vs-actual-expenses/
+mileage reimbursement calculator california | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage reimbursement calculator canada | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage rate calculator car | dropped - duplicate of hub's own coverage | /mileage-deduction/
+mileage rate 2026 calculator california | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage reimbursement 2026 calculator california | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage rate 2025 calculator california | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage reimbursement 2025 calculator california | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+irs mileage cost calculator | dropped - already covered (hub/spoke) | /mileage-deduction/
+car mileage tax deduction calculator | dropped - duplicate of hub's own coverage | /mileage-deduction/
+calculator for mileage reimbursement | dropped - duplicate of hub's own coverage | /mileage-deduction/
+doordash mileage deduction calculator | dropped - already shipped (doordash-mileage-deduction spoke) | /mileage-deduction/doordash-mileage-deduction/
+mileage reimbursement calculator excel | update existing body text (grouped) | /mileage-deduction/
+self employed mileage deduction calculator | dropped - duplicate of hub's own coverage (whole hub is for the self-employed) | /mileage-deduction/
+how to calculate standard mileage deduction | dropped - already shipped (irs-mileage-rate-2026 spoke) | /mileage-deduction/irs-mileage-rate-2026/
+excel mileage calculator formula | update existing body text (grouped) | /mileage-deduction/
+mileage reimbursement calculator for work | dropped - already covered (reimbursement-taxable FAQ) | /mileage-deduction/irs-mileage-rate-2026/
+mileage reimbursement calculator free | dropped - already covered (site is free) | /mileage-deduction/
+irs mileage calculator for 2026 | dropped - already shipped (irs-mileage-rate-2026 spoke) | /mileage-deduction/irs-mileage-rate-2026/
+mileage allowance calculator gov uk | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage allowance relief calculator gov uk | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage allowance calculator hmrc | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage rate calculator ireland | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage allowance ireland calculator | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+irs mileage deduction calculator | dropped - already covered (hub/spoke) | /mileage-deduction/
+lemon law mileage deduction calculator | create new content | /guides/lemon-law-mileage-offset-calculator-explained/
+mileage reimbursement calculator map | update existing body text (grouped) | /mileage-deduction/
+mileage rate calculator michigan | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage rate calculator nz | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage reimbursement calculator nz | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage rate calculator nz pdf | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage rate 2025 calculator nz | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+road mileage rate calculator nz | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage allowance payments calculator | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage allowance relief calculator | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+irs mileage calculation rules | dropped - already covered (irs-mileage-rate-2026 spoke) | /mileage-deduction/irs-mileage-rate-2026/
+mileage deduction tax savings calculator | dropped - already covered (mileage deduction worth FAQ) | /mileage-deduction/
+standard mileage deduction calculator | dropped - already shipped (irs-mileage-rate-2026 spoke) | /mileage-deduction/irs-mileage-rate-2026/
+standard mileage deduction 2025 calculator | update existing body text | /mileage-deduction/irs-mileage-rate-2026/
+mileage reimbursement calculator texas | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage rate tax calculator | dropped - already covered (hub/spoke) | /mileage-deduction/
+mileage rate 2025 calculator texas | create new content (grouped) | /guides/state-mileage-reimbursement-law-california-texas-michigan/
+mileage tax deduction calculator | dropped - already covered (hub/spoke) | /mileage-deduction/
+mileage allowance calculator uk | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage reimbursement calculator uk | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage rate calculator uk | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+mileage reimbursement calculator usa | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+uber mileage deduction calculator | dropped - already covered (uber-driver-taxes spoke mileage FAQ) | /guides/uber-driver-taxes/
+mileage allowance vat calculation | create new content (grouped) | /guides/mileage-reimbursement-rates-uk-canada-ireland-nz/
+
+--- freelance rate calculator (31) ---
+freelance rate calculator australia | update existing body text (grouped) | /freelance-rate/
+freelance rate calculator artist | create new content (grouped) | /freelance-rate/creative-freelancer-rate-calculator/
+freelance rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+how to calculate freelance rate | dropped - already covered (hub's own FAQ) | /freelance-rate/
+freelance day rate calculator | dropped - already shipped (day-rate-calculator spoke) | /freelance-rate/day-rate-calculator/
+freelance rate calculator belgium | update existing body text (grouped) | /freelance-rate/
+freelance day rate calculator belgium | update existing body text (grouped) | /freelance-rate/
+bonsai freelance rate calculator | update existing body text (grouped) | /freelance-rate/
+freelance rate calculator canada | update existing body text (grouped) | /freelance-rate/
+freelance day rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+freelance daily rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+freelance daily rate calculator | dropped - already shipped (day-rate-calculator spoke) | /freelance-rate/day-rate-calculator/
+freelance design rate calculator | create new content (grouped) | /freelance-rate/creative-freelancer-rate-calculator/
+freelance graphic design hourly rate calculator | create new content (grouped) | /freelance-rate/creative-freelancer-rate-calculator/
+freelance graphic design rate calculator | create new content (grouped) | /freelance-rate/creative-freelancer-rate-calculator/
+hourly rate calculator for freelance | dropped - already covered (hub's own FAQ) | /freelance-rate/
+freelance rate calculator germany | update existing body text (grouped) | /freelance-rate/
+freelance hourly rate calculator | dropped - already covered (hub's own FAQ) | /freelance-rate/
+freelance hourly rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+freelance rate calculator india | update existing body text (grouped) | /freelance-rate/
+ph freelance rate calculator | update existing body text (grouped) | /freelance-rate/
+freelance rate vs salary calculator | dropped - already covered (1099-vs-w2-calculator spoke) | /freelance-rate/1099-vs-w2-calculator/
+salario freelance rate calculator | update existing body text (grouped) | /freelance-rate/
+the freelance rate calculator | dropped - duplicate of hub's own coverage | /freelance-rate/
+freelance rate to salary calculator | dropped - already covered (1099-vs-w2-calculator spoke) | /freelance-rate/1099-vs-w2-calculator/
+the freelance hourly rate calculator | dropped - duplicate of hub's own coverage | /freelance-rate/
+freelance pay calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+self employed hourly rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+self employed day rate calculator uk | create new content (grouped) | /guides/freelance-rate-calculator-uk-ir35-explained/
+upwork freelance rate calculator | update existing body text (grouped) | /freelance-rate/
+freelance writing rate calculator | create new content (grouped) | /freelance-rate/creative-freelancer-rate-calculator/
+
+--- mortgage calculator (6 new-to-inventory of 325 mined) ---
+mortgage calculator games geometry dash | dropped - pure noise/malformed (Google fuzzy-matched an unrelated game via the alphabet:g sweep) | -
+mortgage calculator google sheets template | dropped - already shipped (mortgage-amortization-schedule-excel-template guide) | /guides/mortgage-amortization-schedule-excel-template/
+mortgage calculator jn | dropped - noise/unclear (ambiguous 2-letter fragment) | -
+mortgage calculator kalamazoo mi | dropped - already covered (PITI varies by state FAQ) | /mortgage/
+mortgage calculator mississippi | dropped - already covered (PITI varies by state FAQ) | /mortgage/
+mortgage calculator prepayment | dropped - already covered (extra-payment/payoff spokes + pay off faster FAQ) | /mortgage/
+
+--- net worth calculator (1 new-to-inventory of 264 mined) ---
+net worth calculator by age usa | dropped - already shipped (net-worth-by-age-calculator spoke) | /net-worth/net-worth-by-age-calculator/
+
+--- investment calculator (8 new-to-inventory of 291 mined) ---
+investment calculator australia | update existing body text (grouped) | /investing/
+investment calculator chimp | dropped - navigational (Chimp is a specific Canadian investing app's own calculator) | -
+investment calculator david ramsey | create new content | /guides/dave-ramsey-12-percent-investment-return-explained/
+investment calculator erika | dropped - noise/unclear (no discernible clear intent) | -
+investment calculator netherlands | update existing body text (grouped) | /investing/
+investment calculator ontario | update existing body text (grouped) | /investing/
+investment calculator uk s&p 500 | update existing body text (grouped) | /investing/sp500-calculator/
+investment calculator with withdrawals and inflation | dropped - already shipped (withdrawal-calculator spoke + hub inflation FAQ) | /investing/withdrawal-calculator/
