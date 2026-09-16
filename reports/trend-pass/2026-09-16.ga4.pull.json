@@ -1,0 +1,134 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-15",
+  "window_start": "2026-09-15",
+  "window_end": "2026-09-15",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 65,
+      "sessions": 61,
+      "active_users": 57,
+      "clicks": 65
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 25,
+      "sessions": 30,
+      "active_users": 30,
+      "clicks": 25
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 7,
+      "sessions": 8,
+      "active_users": 7,
+      "clicks": 7
+    },
+    {
+      "page": "/retirement/social-security-retirement-calculator/",
+      "views": 7,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 7
+    },
+    {
+      "page": "/",
+      "views": 6,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/is-driving-around-for-cheaper-gas-worth-it/",
+      "views": 4,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/compare/trump-account-vs-brokerage-account/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 1,
+      "clicks": 3
+    }
+  ],
+  "top10_pages_total_views": 142,
+  "top10_pages_total_clicks": 142,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 44,
+      "Unassigned": 19,
+      "Cross-network": 12,
+      "Direct": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 17,
+      "Unassigned": 10,
+      "Cross-network": 7,
+      "Direct": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 10,
+      "Unassigned": 6,
+      "Cross-network": 4
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Organic Search": 7,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/retirement/social-security-retirement-calculator/": {
+      "Organic Search": 4,
+      "Unassigned": 4,
+      "Cross-network": 1
+    },
+    "/": {
+      "Referral": 3,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Direct": 3,
+      "Organic Search": 2,
+      "Cross-network": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 3,
+      "Unassigned": 2
+    },
+    "/compare/trump-account-vs-brokerage-account/": {
+      "Direct": 2
+    },
+    "/guides/is-driving-around-for-cheaper-gas-worth-it/": {
+      "Cross-network": 2,
+      "Direct": 1,
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
