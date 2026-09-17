@@ -183,3 +183,6 @@
 | /guides/is-driving-around-for-cheaper-gas-worth-it/ | 2026-09-16 | 4 | 0/0/0/0/0 | 0 |
 | /roundup/best-money-market-accounts/ | 2026-09-16 | 4 | 0/0/0/0/0 | 0 |
 | /compare/trump-account-vs-brokerage-account/ | 2026-09-16 | 3 | 0/0/0/0/0 | 0 |
+| /compare/utma-vs-ugma/ | 2026-09-17 | 1 | 0/0/0/0/0 | 0 |
+| /guides/passive-income-ideas/ | 2026-09-17 | 1 | 0/0/2/0/0 | 0 |
+| /portfolio/60-40-portfolio-calculator/ | 2026-09-17 | 1 | 0/0/0/0/0 | 0 |

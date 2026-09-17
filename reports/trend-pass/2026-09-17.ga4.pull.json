@@ -1,0 +1,75 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-17",
+  "window_start": "2026-09-17",
+  "window_end": "2026-09-17",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/utma-vs-ugma/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/vanguard-vs-fidelity/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/passive-income-ideas",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 6,
+  "top10_pages_total_clicks": 6,
+  "channel_split": {
+    "/compare/utma-vs-ugma/": {
+      "Organic Search": 1
+    },
+    "/compare/vanguard-vs-fidelity/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 1
+    },
+    "/guides/passive-income-ideas": {
+      "Direct": 1
+    },
+    "/portfolio/60-40-portfolio-calculator": {
+      "Direct": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 1
+    }
+  }
+}

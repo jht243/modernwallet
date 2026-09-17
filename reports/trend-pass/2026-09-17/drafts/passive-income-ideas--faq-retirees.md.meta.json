@@ -1,0 +1,36 @@
+{
+ "slug": "passive-income-ideas--faq-retirees",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 102,
+ "floor": 0,
+ "input_tokens": 16825,
+ "output_tokens": 153,
+ "thinking_tokens": 2580,
+ "cached_tokens": 16153,
+ "est_cost_usd": 0.0138,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 102,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16639
+  }
+ },
+ "seconds": 10.5,
+ "response_id": "q7KrarCFH8iW-8YP6ufD2AE",
+ "generated_at": "2026-09-17T09:28:20+0000"
+}
