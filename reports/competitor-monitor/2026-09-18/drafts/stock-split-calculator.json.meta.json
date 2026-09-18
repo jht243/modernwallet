@@ -1,0 +1,51 @@
+{
+ "slug": "stock-split-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1528,
+ "floor": 1200,
+ "input_tokens": 18424,
+ "output_tokens": 2227,
+ "thinking_tokens": 12195,
+ "cached_tokens": 17405,
+ "est_cost_usd": 0.0581,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1528,
+  "numbers_not_in_facts": [
+   "30",
+   "300",
+   "409",
+   "60",
+   "6000",
+   "90",
+   "9000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18275
+  }
+ },
+ "seconds": 39.9,
+ "response_id": "n7Ctas7_OPHPjMcP34KlgAQ",
+ "generated_at": "2026-09-18T21:44:38+0000"
+}

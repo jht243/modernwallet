@@ -47,6 +47,10 @@ import LifeInsuranceNeedsCalculator from "./LifeInsuranceNeedsCalculator";
 import OperatingCashFlowCalculator from "./OperatingCashFlowCalculator";
 import CashConversionCycleCalculator from "./CashConversionCycleCalculator";
 import AnnualizedReturnCalculator from "./AnnualizedReturnCalculator";
+import StockSplitCalculator from "./StockSplitCalculator";
+import StockAverageCostCalculator from "./StockAverageCostCalculator";
+import StockProfitCalculator from "./StockProfitCalculator";
+import NavCalculator from "./NavCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -138,6 +142,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // GA4 top-pages pass (2026-08-17): reverse withdrawal solver — the inverse of the forward
   // /investing/withdrawal-calculator/ tool (balance + years → max sustainable monthly withdrawal).
   "withdrawal-reverse": WithdrawalReverseCalculator,
+  // Competitor-monitor pass (2026-09-18): stock-position mini-tools — split adjustment, blended
+  // average cost basis, single-trade buy/sell profit, and fund NAV per share.
+  "stock-split": StockSplitCalculator,
+  "stock-average-cost": StockAverageCostCalculator,
+  "stock-profit": StockProfitCalculator,
+  "nav-calculator": NavCalculator,
 };
 
 interface Props {

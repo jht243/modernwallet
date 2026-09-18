@@ -599,7 +599,7 @@ export const GUIDES: Guide[] = [
     sections: [
       { heading: "Step 1: Figure out how much house you can afford", body: "Start by working out a home price that fits your income and debts. Lenders look at your debt-to-income ratio, which is all your monthly debt payments divided by your gross monthly income. A common guideline is the 28/36 rule: keep housing costs near 28% of gross income and total debt near 36%.\n\nUse our [home affordability calculator](/mortgage/home-affordability-calculator/) to apply the 28/36 rule to your own numbers. It shows a realistic price range before you start shopping. Knowing your limit keeps you from falling for a home you cannot comfortably afford." },
       { heading: "Step 2: Save your down payment and understand PMI", body: "Your down payment is the cash you put toward the home price up front. A larger down payment lowers your loan and your monthly payment. When you put down less than 20% on a conventional loan, lenders require private mortgage insurance (PMI), which protects the lender, not you.\n\nSome loans need less cash to start. Conventional loans can go as low as 3% down, and FHA loans backed by HUD allow as little as 3.5%. Putting 20% down avoids PMI on a conventional loan. Use our [down payment calculator](/mortgage/down-payment-calculator/) to see how different amounts change your costs. Once you're preapproved, see our [mortgage mistakes to avoid before applying](/guides/mortgage-mistakes-before-applying/) so a new credit card, a big undocumented deposit, or a job change doesn't derail your approval before closing." },
-      { heading: "Step 3: Budget for closing costs", body: "Closing costs are separate fees you pay to finalize the loan, on top of your down payment. They cover things like the appraisal, title insurance, taxes, and prepaid items such as homeowners insurance. These costs typically run about 2% to 5% of the loan amount.\n\nMany first-time buyers forget to budget for this cash. Your lender lists every fee on your Loan Estimate, so review it carefully. Use our [closing cost calculator](/mortgage/closing-cost-calculator/) to estimate this amount and avoid a surprise at the closing table. One line item, real estate transfer tax, is set by state law and varies more than any other closing cost; see our [real estate transfer tax guide](/guides/real-estate-transfer-tax-explained/) to check what your own state and county charge before you budget." },
+      { heading: "Step 3: Budget for closing costs", body: "Closing costs are separate fees you pay to finalize the loan, on top of your down payment. They cover things like the appraisal, title insurance, taxes, and prepaid items such as homeowners insurance. These costs typically run about 2% to 5% of the loan amount.\n\nMany first-time buyers forget to budget for this cash. Your lender lists every fee on your Loan Estimate, so review it carefully — and see our [questions to ask a mortgage lender](/guides/questions-to-ask-a-mortgage-lender/) guide for what to ask before you compare that Loan Estimate against another lender's. Use our [closing cost calculator](/mortgage/closing-cost-calculator/) to estimate this amount and avoid a surprise at the closing table. One line item, real estate transfer tax, is set by state law and varies more than any other closing cost; see our [real estate transfer tax guide](/guides/real-estate-transfer-tax-explained/) to check what your own state and county charge before you budget." },
       { heading: "Step 4: Understand the monthly payment and paying it down", body: "Your monthly payment is more than just principal and interest. It often includes property taxes, homeowners insurance, and PMI if you put down less than 20%. Knowing the full payment helps you plan your budget honestly.\n\nPaying extra toward principal can shrink your loan years faster and save interest. Even small extra payments add up over time. Use our [mortgage payoff calculator](/mortgage/payoff-calculator/) to see how extra payments shorten your loan and cut total interest." },
       { heading: "Step 5: Make sure you're financially ready", body: "Being financially ready means more than affording the payment. You should have an emergency fund for repairs and a clear picture of your overall finances. Owning a home brings new costs, so a cash cushion protects you when something breaks.\n\nTracking your net worth shows whether you are on solid ground before you buy. It adds up what you own and subtracts what you owe. Use our [net worth calculator](/net-worth/) to check your full financial picture before you commit to a mortgage." },
       { heading: "Step 6: Bought a house? You now need a will", body: "The single biggest financial asset most first-time buyers acquire is the home. Without a will, at death that home passes under state intestacy law — usually to a spouse and children, but with court supervision through probate and no guardian named for minor kids. A basic will handles both: it directs how the home passes and names a guardian for the children. If you own real estate in more than one state (say, a home plus an inherited family cabin), a revocable living trust also avoids ancillary probate in each state.\n\nAttorney costs run $300 to $2,500 depending on state and complexity; online services like Trust & Will ($199 individual / $299 couple), LegalZoom Basic ($129/$229), or FreeWill ($0) work for straightforward cases. See specifics with our [will cost calculator](/estate-planning/will-cost-calculator/), or run the full plan tier through the [estate planning calculator](/estate-planning/). This applies from the day you close on your first home." },
@@ -2958,7 +2958,7 @@ export const GUIDES: Guide[] = [
       { question: "What happened to Income-Contingent Repayment (ICR) and PAYE?", answer: "Both are being phased out under the One Big Beautiful Bill Act, with a full sunset date of July 1, 2028. Borrowers currently on ICR or PAYE will be transitioned to one of the new plans before that date; your loan servicer will contact you with your specific timeline and options." },
       { question: "How do I find out which repayment plan I'm currently on?", answer: "Log into your account at Federal Student Aid (studentaid.gov) to see your current plan and the options available to you. The site also offers a loan simulator that estimates your monthly payment and total cost under each plan you qualify for." },
       { question: "Why did my student loan payment suddenly go up?", answer: "Usually because your loan moved off a phased-out income-driven plan (like ICR or PAYE) onto a Standard-style plan by default, or because the new Tiered Standard Plan set your term based on your balance. Confirm your actual current plan at studentaid.gov rather than assuming your latest statement reflects the plan you'd choose." },
-      { question: "I'm about to start grad school — how much can I borrow under these new rules?", answer: "Grad PLUS loans stopped accepting new borrowers on July 1, 2026. In their place, general graduate students can borrow up to $20,500 a year (aggregate $100,000) and professional students up to $50,000 a year (aggregate $200,000) in Direct Unsubsidized Loans. See our [guide to paying for grad school](/guides/how-to-pay-for-grad-school/) for the full funding order of operations." },
+      { question: "I'm about to start grad school — how much can I borrow under these new rules?", answer: "Grad PLUS loans stopped accepting new borrowers on July 1, 2026. In their place, general graduate students can borrow up to $20,500 a year (aggregate $100,000) and professional students up to $50,000 a year (aggregate $200,000) in Direct Unsubsidized Loans. See our [student loan borrowing limits](/guides/student-loan-borrowing-limits/) guide for the full undergraduate-through-professional breakdown, or our [guide to paying for grad school](/guides/how-to-pay-for-grad-school/) for the full funding order of operations." },
       { question: "What happens if I fall behind on payments under any of these plans?", answer: "Missing payments for 270 straight days moves a federal loan into default, which triggers wage garnishment and tax refund offset risk regardless of which repayment plan you were on beforehand. See our [guide to what happens if you don't pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) for the full timeline and how to get out of default." },
     ],
     sources: [
@@ -6977,7 +6977,7 @@ export const GUIDES: Guide[] = [
         body: "Once a loan is in default, the government (or its collection agency) can add collection costs on top of the principal and interest, and those fees can meaningfully increase the total balance you eventually have to repay. On top of that direct cost, default strips you of income-driven repayment plans, deferment, and forbearance, the exact tools that would have helped you manage the original payment trouble in the first place.\n\nThat combination is what makes default expensive beyond the credit score hit: you lose access to the flexible repayment options right when you need them most, while the balance itself grows from added fees. Acting before the 270-day mark, even a partial payment or a call to your servicer, keeps every one of those flexible options on the table." },
       {
         heading: "Private student loans work differently",
-        body: "Private student loan default has no fixed 270-day federal standard; the specific trigger is set by your loan contract, and most private lenders define default after 90 to 120 days of missed payments, sometimes faster. Private lenders also cannot use Administrative Wage Garnishment or the Treasury Offset Program, since both are federal government collection tools tied specifically to federal loans.\n\nA private lender can, however, sue you in civil court and pursue a court-ordered wage garnishment if it wins a judgment, which follows a slower legal process but can ultimately reach a similar outcome. If you're behind on a private loan, contact your servicer directly and ask about a hardship forbearance or a modified payment plan before a missed payment becomes a lawsuit." },
+        body: "Private student loan default has no fixed 270-day federal standard; the specific trigger is set by your loan contract, and most private lenders define default after 90 to 120 days of missed payments, sometimes faster. Private lenders also cannot use Administrative Wage Garnishment or the Treasury Offset Program, since both are federal government collection tools tied specifically to federal loans.\n\nA private lender can, however, sue you in civil court and pursue a court-ordered wage garnishment if it wins a judgment, which follows a slower legal process but can ultimately reach a similar outcome. If you're behind on a private loan, contact your servicer directly and ask about a hardship forbearance or a modified payment plan before a missed payment becomes a lawsuit. Before you ever take one out, see our [private student loan requirements](/guides/private-student-loan-requirements/) guide for the credit, income, and cosigner rules private lenders actually check." },
       {
         heading: "Two ways out of federal default", body: "Loan rehabilitation requires nine consecutive on-time, agreed-upon payments over roughly 10 months. Complete it and the default status is removed from your credit history entirely, which is the only path that erases the default record itself rather than just resolving the debt.\n\nDirect Consolidation is faster, often resolving in weeks rather than months, but it does not erase the default from your credit history and it capitalizes any accrued collection costs into your new loan balance, meaning you pay interest on those fees going forward. If speed matters more than your credit history right now (an active wage garnishment you need stopped, for example), consolidation is the quicker fix; if a clean credit report is the priority and you can sustain nine months of payments, rehabilitation is the better long-term move. Either path starts with a call to the Default Resolution Group, not your original loan servicer, since that group now owns the defaulted account." },
       {
@@ -7966,7 +7966,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Should You Refinance a Private Student Loan?",
-        body: "A private student loan carries none of the federal protections above to begin with, since it was never eligible for PSLF, income-driven repayment, or federal forbearance in the first place. Refinancing a private loan into another private loan is a much simpler decision: compare the new interest rate, the loan term, and any origination fee against what you're paying now, and take the offer if the total cost is genuinely lower.\n\nA mixed borrower with both federal and private loans doesn't have to refinance everything at once. Refinancing only the private balance captures a lower rate on that portion while leaving federal loans, and the protections attached to them, completely untouched.",
+        body: "A private student loan carries none of the federal protections above to begin with, since it was never eligible for PSLF, income-driven repayment, or federal forbearance in the first place. Refinancing a private loan into another private loan is a much simpler decision: compare the new interest rate, the loan term, and any origination fee against what you're paying now, and take the offer if the total cost is genuinely lower.\n\nA mixed borrower with both federal and private loans doesn't have to refinance everything at once. Refinancing only the private balance captures a lower rate on that portion while leaving federal loans, and the protections attached to them, completely untouched. If you're weighing a private loan (or refinance offer) for the first time, see our [private student loan requirements](/guides/private-student-loan-requirements/) guide for the credit, income, and cosigner standards lenders actually check.",
       },
       {
         heading: "Refinancing vs. Consolidating Federal Loans",
@@ -8625,7 +8625,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Portfolio NAV Formula",
-        body: "Net asset value (NAV) is what a mutual fund or exchange-traded fund (ETF) share is worth, and the formula is simple: NAV per share = (total fund assets minus total fund liabilities), divided by total shares outstanding. [SEC Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/net-asset-value) defines a fund's total NAV as its assets minus its liabilities, then divides that figure by shares outstanding to get the per-share price you actually see quoted.\n\nA fund holding $500 million in securities and cash, with $10 million in liabilities like accrued management fees, has a total NAV of $490 million. Divide that by 20 million shares outstanding and each share is worth $24.50. Mutual funds calculate this figure once per business day, after the major U.S. exchanges close, which is why a mutual fund purchase always executes at that day's closing NAV rather than a live, intraday price the way a stock or ETF trade does.",
+        body: "Net asset value (NAV) is what a mutual fund or exchange-traded fund (ETF) share is worth, and the formula is simple: NAV per share = (total fund assets minus total fund liabilities), divided by total shares outstanding. [SEC Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/net-asset-value) defines a fund's total NAV as its assets minus its liabilities, then divides that figure by shares outstanding to get the per-share price you actually see quoted.\n\nA fund holding $500 million in securities and cash, with $10 million in liabilities like accrued management fees, has a total NAV of $490 million. Divide that by 20 million shares outstanding and each share is worth $24.50. Mutual funds calculate this figure once per business day, after the major U.S. exchanges close, which is why a mutual fund purchase always executes at that day's closing NAV rather than a live, intraday price the way a stock or ETF trade does. Plug in a fund's own published numbers with our [NAV calculator](/investing/nav-calculator/) to check the math yourself.",
       },
       {
         heading: "Portfolio Gamma Calculation",
@@ -10479,6 +10479,405 @@ export const GUIDES: Guide[] = [
       { label: "SEC — AI-related enforcement and investor warnings", url: "https://www.sec.gov/newsroom/press-releases/2024-36" },
       { label: "FINRA — Artificial Intelligence and Investment Fraud", url: "https://www.finra.org/investors/insights/artificial-intelligence-and-investment-fraud" },
     ],
+  },
+
+  // -- competitor-monitor 2026-09-18: questions-to-ask-a-mortgage-lender --
+  {
+    "slug": "questions-to-ask-a-mortgage-lender",
+    "updated": "2026-09-18",
+    "title": "Questions to Ask a Mortgage Lender Before You Apply",
+    "metaDescription": "Learn the essential questions to ask a mortgage lender. Compare loan programs, fees, rate locks, and closing costs using standard Loan Estimates.",
+    "h1": "Questions to Ask a Mortgage Lender When Shopping for a Home Loan",
+    "cardBlurb": "Ask the specific questions about loan programs, closing fees, and rate locks that reveal the true cost of your home loan.",
+    "introText": "The questions that determine which mortgage saves you money focus on the loan program, total closing fees, and rate-lock terms rather than the headline rate quoted over the phone. At The Modern Wallet, we evaluate home financing options by looking at the complete loan structure instead of a single advertised figure. A low interest rate paired with excessive lender fees or risky adjustment terms can cost thousands of dollars more over the life of your debt. Asking direct questions about loan types, discount points, and rate expirations helps you compare competing lenders on equal terms.",
+    "sections": [
+      {
+        "heading": "Loan Programs and Interest Structure",
+        "body": "Ask each loan officer which specific mortgage programs you qualify for based on your credit profile and target down payment. The Consumer Financial Protection Bureau (CFPB) [advises borrowers to explore different loan types](https://www.consumerfinance.gov/owning-a-home/explore/understand-the-different-kinds-of-loans-available/) because conventional loans, Federal Housing Administration (FHA) loans, Department of Veterans Affairs (VA) loans, and United States Department of Agriculture (USDA) loans carry completely different qualification standards, down payment minimums, and mortgage insurance rules. A conventional loan requires private mortgage insurance when you put down less than 20%, but that insurance drops off once you reach sufficient equity, while an FHA loan typically charges mortgage insurance premiums for the entire duration of the loan. You can evaluate the impact of different loan structures by reading our [FHA vs. conventional loan comparison](/compare/fha-vs-conventional-loan/).\n\nDemand clarification on whether the quoted rate is fixed or adjustable. A fixed-rate mortgage holds the same interest charge and principal payment for the entire term, providing long-term predictability for household budgeting. An adjustable-rate mortgage offers an initial introductory rate that resets periodically based on market benchmarks, which creates payment uncertainty after the fixed window ends. Inquire directly whether the quoted interest rate includes discount points. A discount point is an upfront fee paid at closing to lower your ongoing rate, meaning an attractive quote might simply reflect thousands of dollars in prepaid interest rather than superior loan pricing. If you are uncertain how your savings translate into upfront capital, review our [down payment calculator](/mortgage/down-payment-calculator/) before committing to a specific program."
+      },
+      {
+        "heading": "The Standardized Loan Estimate and Closing Costs",
+        "body": "Request a complete official document rather than relying on informal phone worksheets or verbal rate summaries. The CFPB mandates that every mortgage lender provide an applicant with a standardized three-page [Loan Estimate](https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/) within three business days of receiving a completed application. This document lists the exact interest rate, the Annual Percentage Rate (APR), the projected monthly payment, and the itemized closing charges. Because the form follows an identical layout across all institutions by federal law, it allows you to compare competing loan packages side by side without deciphering proprietary sales sheets.\n\nAsk the lender for their complete estimated closing costs, which typically range from 2% to 5% of the total loan amount according to CFPB data. Closing expenses consist of lender origination charges, underwriting fees, home appraisals, title insurance policies, government recording fees, and prepaid property taxes or homeowners insurance escrow reserves. You can estimate your potential settlement expenses with our [closing cost calculator](/mortgage/closing-cost-calculator/). Never evaluate a mortgage based on the interest rate alone, because an institution offering a slightly lower interest rate may offset that difference by charging significantly higher origination fees on page two of the Loan Estimate. Our team often sees buyers focus entirely on the headline rate, only to spend far more in upfront lender charges that take several years of monthly payments to recover."
+      },
+      {
+        "heading": "Rate Lock Duration and Expiration Rules",
+        "body": "Ask the loan officer how many days your quoted interest rate will remain locked and whether that guarantee requires an upfront fee. A rate lock protects your transaction against market fluctuations while your application moves through underwriting, property appraisal, and title review. The CFPB cautions buyers to verify how long the lock lasts and to clarify the exact policy if the closing date extends beyond that period. Lock windows vary by lender and by loan type, so get the exact number of days in writing rather than assuming a standard length.\n\nFind out immediately what financial penalties occur if processing delays cause the lock to expire before settlement. When a lock lapses, the borrower may be forced to pay a costly extension fee to keep the original terms or accept current market rates, which can increase the monthly payment if interest levels have climbed. Ask whether the institution offers a float-down option, which allows you to capture a lower interest rate if prevailing market pricing drops during your underwriting period. Establish these terms in writing early so an administrative delay does not jeopardize your home purchase agreement."
+      },
+      {
+        "heading": "Real Estate Agent Affiliations and Lender Independence",
+        "body": "Ask the lender whether their company maintains an affiliated business arrangement, marketing partnership, or joint venture with your real estate agent or brokerage firm. The CFPB [confirms that working with an agent's preferred lender is never required by law](https://www.consumerfinance.gov/ask-cfpb/how-do-i-find-the-best-loan-available-when-im-shopping-for-a-home-mortgage-loan-en-137/). While real estate agents frequently suggest preferred mortgage brokers or in-house lending partners for convenience, buyers retain the legal right to shop the open market and select any qualified financial institution.\n\nInquire about referral arrangements openly to ensure you receive competitive financing rather than an unscrutinized internal recommendation. An affiliated lender may provide efficient communication with your agent, but convenience should never replace objective cost comparisons. Request an official Loan Estimate from the affiliated company, and then seek competing quotes from independent retail banks or credit unions. Securing outside options gives you the leverage needed to negotiate origination charges or confirm whether your agent's recommendation provides genuine market value."
+      },
+      {
+        "heading": "Turnaround Times and Underwriting Milestones",
+        "body": "Ask the loan officer for their average turnaround time from application submission to final loan approval. Purchase contracts include strict financing contingency deadlines and closing dates, making an efficient underwriting pipeline essential to protecting your earnest money deposit. Ask whether your file will be underwritten by an in-house team or sent to a third-party processing center, as decentralized underwriting operations can introduce communication delays when resolving documentation conditions.\n\nAlign the lender's projected operational timeline directly against the duration of your rate lock agreement. If the underwriting timeline the lender quotes you runs close to, or past, your rate lock's expiration date, that mismatch is a real financial risk worth resolving before you commit. Require the loan officer to outline key operational milestones in writing, including appraisal order dates, initial document submissions, and underwriting review cycles. For a complete overview of the purchase timeline and preparation steps, consult our [first-time home buyer guide](/guides/first-time-home-buyer-guide/)."
+      },
+      {
+        "heading": "Comparing Multiple Offers on the Same Day",
+        "body": "Submit formal loan applications to at least three different lending institutions on the same calendar day to ensure an accurate evaluation. The CFPB emphasizes that mortgage rates fluctuate continuously based on secondary bond market movements, meaning that quotes obtained days apart cannot be compared fairly. Gathering multiple standardized Loan Estimates simultaneously reveals differences in lender origination fees, credit charges, and discount points.\n\nWho this strategy is not for: buyers purchasing a property within an extremely tight timeframe of two weeks or fewer should prioritize closing reliability and local reputation over shopping multiple lenders, as running several underwriting files concurrently can cause transaction delays. What would change our advice is if credit bureau reporting policies change to treat separate mortgage credit inquiries outside a unified 45-day shopping window as multiple distinct penalties. To determine your maximum borrowing parameters before contacting lenders, calculate your sustainable monthly payment using our [home affordability calculator](/mortgage/affordability-calculator/). Prepare your financial documents, submit your applications to three lenders on the same morning, and compare the total closing figures on each Loan Estimate before selecting your primary mortgage provider."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/",
+        "label": "Mortgage"
+      },
+      {
+        "href": "/mortgage/down-payment-calculator/",
+        "label": "Down payment"
+      },
+      {
+        "href": "/mortgage/closing-cost-calculator/",
+        "label": "Closing cost"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the most important question to ask a mortgage lender?",
+        "answer": "The most important question to ask a mortgage lender is what the total estimated closing costs and APR are on an official Loan Estimate, rather than just asking about the headline interest rate. A low interest rate can be offset by high upfront origination fees, administrative charges, or required discount points that increase the total expense of borrowing."
+      },
+      {
+        "question": "What is a Loan Estimate and why does it matter?",
+        "answer": "A Loan Estimate is a standardized three-page federal disclosure that mortgage lenders must provide within three business days of receiving your completed application. It outlines your interest rate, monthly payment, loan terms, and itemized settlement fees using an identical layout across all financial institutions, making it straightforward to compare competing offers side by side."
+      },
+      {
+        "question": "Do I have to use my real estate agent's recommended lender?",
+        "answer": "No, you are never legally required to use a lender recommended or affiliated with your real estate agent. Federal regulations protect your right to shop around and choose any qualified mortgage lender. You should obtain quotes from independent banks, credit unions, and online lenders to verify whether your agent's recommendation offers competitive pricing."
+      },
+      {
+        "question": "How many lenders should I get quotes from?",
+        "answer": "You should get Loan Estimates from at least three different lenders, submitted on the same day. Because mortgage interest rates change daily based on market conditions, applying with multiple lenders simultaneously ensures an accurate comparison of rates, discount points, and lender fees."
+      },
+      {
+        "question": "What happens if my rate lock expires before closing?",
+        "answer": "If your rate lock expires before closing, you may be required to pay a fee to extend the lock or accept the current prevailing market interest rate. If interest rates have risen since your initial application, an expired rate lock can increase your monthly payment and alter your loan qualification status."
+      },
+      {
+        "question": "Are closing costs negotiable?",
+        "answer": "Yes, certain closing costs can be negotiated, particularly lender-controlled fees such as application, processing, and underwriting charges listed in Section A of your Loan Estimate. Third-party government recording fees and property taxes are fixed by local authorities and cannot be changed by the lender."
+      }
+    ],
+    "sources": []
+  },
+  // -- competitor-monitor 2026-09-18: private-student-loan-requirements --
+  {
+    "slug": "private-student-loan-requirements",
+    "updated": "2026-09-18",
+    "title": "Private Student Loan Requirements: How to Qualify",
+    "metaDescription": "Learn the private student loan requirements for credit scores, income, cosigners, and school enrollment before applying for college funding.",
+    "h1": "Private Student Loan Requirements and How to Qualify",
+    "cardBlurb": "A breakdown of credit score baselines, debt-to-income limits, cosigner rules, and enrollment checks for private student loans.",
+    "introText": "Qualifying for a private student loan requires meeting credit score cutoffs, showing steady income or adding a qualified cosigner, and maintaining enrollment in an accredited degree program. At The Modern Wallet, we evaluate lending standards to help families calculate their true college borrowing obligations before they sign a promissory note. While federal loans depend largely on financial need and student status, private lenders operate as commercial creditors who evaluate your default risk. You can secure private financing once you understand the underwriting standards lenders set for credit histories, debt-to-income thresholds, and school eligibility.",
+    "sections": [
+      {
+        "heading": "Credit Score Thresholds for Borrowers and Cosigners",
+        "body": "Private student loan eligibility depends heavily on credit scores, which lenders use to predict whether a borrower will repay on schedule. According to credit bureau [Experian](https://www.experian.com/blogs/ask-experian/how-do-i-qualify-for-a-private-student-loan/), most private student loan lenders require a credit score in the good-to-excellent range, which commonly means a score of 670 or higher. There is no universal government cutoff across all private creditors, so individual institutions publish their own underwriting bands. Borrowers with scores near the top of the range secure the lowest available annual percentage rate (APR), while lower scores trigger higher borrowing costs.\n\nMost undergraduate students run into an immediate hurdle here because an eighteen-year-old rarely possesses an established credit profile. A thin file with zero credit cards, no auto loans, and no rent history leaves automated scoring models with nothing to measure. When an applicant lacks an adequate score, lenders allow a creditworthy cosigner to step in. That cosigner must meet the lender's credit standards independently, usually maintaining a score of 670 or above alongside spotless payment histories on their own open accounts.\n\nAdding a cosigner creates legal exposure that both participants must evaluate. A cosigner assumes full legal liability for the entire debt balance. If the primary student borrower misses a payment, the private lender marks that delinquency on both credit files. Before families agree to this shared obligation, comparing options like a [Parent PLUS loan vs. private student loan](/compare/parent-plus-loan-vs-private-student-loan/) clarifies whether federal parent borrowing provides better safety terms than a commercial cosigned contract."
+      },
+      {
+        "heading": "Income Minimums and Debt-to-Income Limits",
+        "body": "Private lenders verify that an applicant generates sufficient cash flow to manage debt service. Commercial underwriters establish a minimum annual income threshold, with some lenders setting baselines as low as roughly $24,000 per year. For full-time students who earn minimal wages from campus work or summer internships, meeting this income floor alone is nearly impossible without adding an employed cosigner.\n\nUnderwriters also evaluate an applicant's debt-to-income (DTI) ratio, which measures gross monthly income against recurring monthly obligations such as rent, auto notes, and personal loans. Many private student lenders establish a preferred maximum DTI ratio under roughly 36 percent. If an applicant or cosigner earns $6,000 per month but already carries $2,400 in existing monthly debt obligations, their baseline DTI sits at 40 percent, putting automated approval in jeopardy.\n\nChecking household numbers against an organized [monthly budget](/budget/) before submitting applications shows whether debt loads exceed underwriter expectations. When high existing debts inflate an applicant's DTI ratio, bringing in a cosigner with low personal debt and high steady income can bring the blended ratio down to an acceptable level."
+      },
+      {
+        "heading": "Enrollment Status at an Eligible Institution",
+        "body": "Academic enrollment status forms the foundation of private student loan eligibility. Federal guidelines administered by [Federal Student Aid](https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens) and individual private lending rules both require a borrower to be enrolled at least half-time in a degree or certificate program at an accredited, eligible institution. Lenders will not disburse funds to students enrolled in unaccredited educational outfits or casual non-credit workshops.\n\nPrivate lenders confirm academic standing directly with the campus registrar through a formal school certification process. After initial credit pre-approval, the lender transmits loan details to your financial aid office. The university verifies that the student is registered for sufficient credit hours and confirms that the requested loan amount does not exceed the official cost of attendance minus other financial aid received.\n\nThis school certification step protects borrowers from taking out excess funds, but it also creates processing timelines. If you drop below half-time enrollment status before the school certifies the paperwork, the lender will cancel the disbursement. Students planning compressed or non-traditional class schedules must verify their registrar's half-time credit definition before applying."
+      },
+      {
+        "heading": "Age, Residency, and Citizenship Rules",
+        "body": "Every commercial lender establishes baseline legal qualifications governing who can enter into a binding financial contract. Applicants must be at or above the age of majority in their home state, which is eighteen in most jurisdictions, though Alabama and Nebraska set this boundary at nineteen. Minors cannot sign promissory notes independently and must wait until their legal birthday or apply under specific state statutes with adult representation.\n\nCitizenship standards are equally strict across mainstream lending institutions. Most private student lenders require the primary borrower or cosigner to be a U.S. citizen or a permanent legal resident holding a valid Social Security number. This standard ensures that creditors possess legal recourse within the domestic court system if a loan enters default.\n\nInternational students and individuals covered under the Deferred Action for Childhood Arrivals (DACA) program face tighter constraints, but viable lending paths exist. Several private lenders extend student loans to international or DACA students provided they apply alongside a creditworthy cosigner who is a U.S. citizen or permanent resident. The cosigner's domestic residency satisfies the lender's underwriting risk model, allowing the non-citizen borrower to access commercial education funding."
+      },
+      {
+        "heading": "Options for Applicants with Limited or Bad Credit",
+        "body": "Applicants without established credit or with lower scores can still access private student financing through targeted adjustments. The most effective route is securing a qualified cosigner with pristine credit. A cosigner essentially replaces the student's unproven financial profile with established creditworthiness, satisfying the private student loan credit score hurdle and securing competitive interest rates.\n\nCertain specialty lenders offer outcome-based student loans that evaluate academic metrics rather than historical credit files. These lenders review a student's grade point average, major, school quality, and projected future earning capacity to make underwriting decisions. However, these specialized programs often carry higher origination fees or restrictive post-graduation terms compared to standard cosigned loans.\n\nBorrowers who must accept higher interest rates due to marginal initial credit profiles should map out an exit plan before borrowing. Once a student graduates, finds full-time employment, and maintains twelve to twenty-four months of on-time payments, reviewing [should you refinance student loans](/guides/should-you-refinance-student-loans/) allows them to refinance the balance at lower market rates and remove the cosigner from legal responsibility."
+      },
+      {
+        "heading": "Why Federal Aid Options Come Before Private Underwriting",
+        "body": "Federal Direct Loans should always be exhausted before you turn to commercial student lenders. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/student-loans/) notes that private student loans do not provide the safety nets embedded in the federal student loan program. Federal borrowing offers income-driven repayment plans, public service loan forgiveness programs, and standardized economic hardship forbearance periods, none of which exist as guaranteed contractual terms in the private lending market.\n\nThe downstream risks of private borrowing become evident during periods of sudden financial distress. Our research into [what happens if you do not pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) highlights that private lenders frequently declare a loan in default after 90 to 120 days of missed payments. In contrast, federal student loans require approximately 270 days of delinquency before triggering formal default proceedings.\n\nPrivate lenders also have the contractual right to accelerate debt, demanding the full remaining loan balance immediately once default occurs, followed by rapid transfer to third-party collection agencies or legal actions. A federal loan provides administrative paths to rehabilitation and loan consolidation that commercial lenders are under no legal obligation to match. Treat private student financing strictly as gap funding after maximizing all federal subsidized, unsubsidized, and institutional aid programs."
+      },
+      {
+        "heading": "Pre-Application Checklist Before You Sign",
+        "body": "Submitting multiple incomplete loan applications damages your credit profile through repeated hard inquiries. Prepare your documentation in advance to streamline the review process and secure the best available terms from participating lenders.\n\nCollect your financial records before initiating online loan applications:\n\n* Pull your personal credit reports to review for errors or open disputes, confirming a credit score of 670 or higher.\n* Confirm your cosigner's readiness by verifying their recent pay stubs, W-2 forms, and current debt-to-income ratio.\n* Request an official financial aid award letter from your academic institution to verify remaining unmet financial need.\n* Compare interest rate structures across multiple private lenders, noting the differences between fixed and variable APR choices.\n\nRun pre-qualification estimates with three separate lenders to review rate ranges without triggering hard credit inquiries, then select the loan offer that carries the lowest fixed rate and zero origination fees."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/what-happens-if-you-dont-pay-your-student-loans/",
+        "label": "Student loan default"
+      },
+      {
+        "href": "/compare/parent-plus-loan-vs-private-student-loan/",
+        "label": "Parent PLUS vs private"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do you have to qualify for private student loans?",
+        "answer": "Yes, you must qualify for private student loans by meeting strict commercial underwriting standards set by individual lenders. Unlike federal Direct Subsidized and Unsubsidized loans that do not evaluate student credit histories, private lenders require proof of good credit, adequate income, and school enrollment before approving an application."
+      },
+      {
+        "question": "Can you apply for a private student loan at any time?",
+        "answer": "Yes, you can apply for a private student loan at any point during the academic year, provided your school can certify your enrollment and financial need. Most students apply during the summer months prior to the fall semester, but private lenders accept applications year-round for spring and summer terms."
+      },
+      {
+        "question": "Should you apply for federal or private student loans first?",
+        "answer": "You should apply for federal student loans first by submitting the Free Application for Federal Student Aid. Federal loans carry lower interest rates, income-driven repayment options, and flexible deferment protections that private loans do not provide. Use private student loans only to cover remaining funding gaps after maximizing all federal aid."
+      },
+      {
+        "question": "Can you be denied a private student loan?",
+        "answer": "Yes, private student loan applications face denial if the borrower or cosigner has a low credit score, an elevated debt-to-income ratio, or an unverified enrollment status. Lenders must issue an adverse action notice detailing the specific reasons for denial, such as delinquent credit accounts or inadequate annual income."
+      },
+      {
+        "question": "What credit score do you need for a private student loan?",
+        "answer": "Most private student loan lenders require a credit score of roughly 670 or higher to qualify for standard loan terms. Applicants with scores below that threshold generally need a creditworthy cosigner whose score meets the lender's benchmark, while scores above 740 secure the most competitive interest rates."
+      }
+    ],
+    "sources": []
+  },
+  // -- competitor-monitor 2026-09-18: student-loan-borrowing-limits --
+  {
+    "slug": "student-loan-borrowing-limits",
+    "updated": "2026-09-18",
+    "title": "Student Loan Borrowing Limits: Federal Caps and Rules",
+    "metaDescription": "Learn current federal student loan borrowing limits for undergrad, graduate, and professional programs, including lifetime caps and key 2026 rules.",
+    "h1": "Student Loan Borrowing Limits and Federal Caps Explained",
+    "cardBlurb": "A complete breakdown of annual and lifetime caps for undergraduate, graduate, and professional degrees under current federal rules.",
+    "introText": "Federal student loan borrowing limits depend on your academic year, dependency status, and degree type. For dependent undergraduates, direct loan caps range from $5,500 to $7,500 each year. At The Modern Wallet, we find that borrowers run into trouble when they expect federal direct loans to cover full tuition, room, and board. Because these statutory caps sit well below the total price of many four-year programs, families must often cover remaining funding gaps using savings, outside assistance, or alternative financing.",
+    "sections": [
+      {
+        "heading": "Undergraduate Annual Borrowing Limits",
+        "body": "Annual federal limits for undergraduates depend on your year of study and whether you file financial aid as a dependent or independent student. The federal government divides Direct Subsidized Loans and Direct Unsubsidized Loans into separate ceilings, capping how much interest-free borrowing you receive while enrolled.\n\nDependent undergraduate students face these annual limits:\n\n* First-year students can borrow up to $5,500, with a maximum of $3,500 in subsidized loans.\n* Second-year students can borrow up to $6,500, with a maximum of $4,500 in subsidized loans.\n* Third-year students and beyond can borrow up to $7,500, with a maximum of $5,500 in subsidized loans.\n\nIndependent undergraduates qualify for higher annual limits to account for managing living expenses without parental financial support. A dependent student whose parent applies for and is denied a Direct PLUS Loan also qualifies for these higher independent thresholds. First-year independent students can borrow up to $9,500 total, second-year students up to $10,500, and third-year students and beyond up to $12,500 per year. In all cases, the subsidized portion cannot exceed the standard $3,500, $4,500, and $5,500 tier caps. To see how these borrowing categories work in practice, explore our guide to the [types of student loans](/guides/types-of-student-loans/)."
+      },
+      {
+        "heading": "Undergraduate Aggregate Lifetime Limits",
+        "body": "Aggregate loan limits restrict the total federal student debt an undergraduate can carry across their entire academic career. Once a borrower hits this aggregate ceiling, the Department of Education will not issue additional direct undergraduate loans until the outstanding balance drops below the threshold.\n\nDependent undergraduates are capped at a lifetime aggregate limit of $31,000. Within that $31,000 ceiling, no more than $23,000 may come from Direct Subsidized Loans. Any remaining balance must consist of Direct Unsubsidized Loans.\n\nIndependent undergraduates carry an aggregate limit of $57,500 across their undergraduate education. The subsidized portion remains capped at the same $23,000 ceiling. When mapping out degree costs across multiple years, use our [budget planner](/budget/) to track anticipated term-by-term expenses and prevent borrowing surprises."
+      },
+      {
+        "heading": "Graduate and Professional Limits Under Current Legislation",
+        "body": "Graduate and professional student loan limits shifted significantly under the One Big Beautiful Bill Act for new borrowers taking out funds on or after July 1, 2026. While the Direct Unsubsidized Loan annual limit for general master's and doctoral students remains $20,500 per year, the aggregate limit for graduate education dropped from $138,500 to $100,000.\n\nStudents entering qualified professional degree tracks, such as law, medicine, and dentistry, operate under separate caps. These professional students can borrow up to $50,000 annually with an aggregate limit of $200,000.\n\nA universal lifetime cap of $257,500 now applies across all federal student loans combined for any individual student borrower. This universal figure includes both undergraduate and graduate direct debt, though it excludes Parent PLUS loans taken out separately by a student's parents. In addition, the legislation eliminated the Graduate PLUS Loan program for new borrowers after June 30, 2026, removing uncapped federal borrowing for graduate school."
+      },
+      {
+        "heading": "Grandfather Rules for Legacy Borrowers",
+        "body": "A statutory legacy provision protects students who started their graduate programs prior to the July 1, 2026 effective date. If a student had an eligible federal loan disbursed before July 1, 2026, while enrolled in a qualified program of study, they remain under the prior borrowing rules and caps.\n\nThis grandfather protection continues for up to three years or until the borrower finishes their current program of study, whichever comes first. Borrowers qualified under this provision can access Graduate PLUS loans through June 30, 2029, to complete their enrolled degree. Students entering graduate school after the cutoff date do not receive legacy access and must comply with the strict statutory dollar caps."
+      },
+      {
+        "heading": "School Cost of Attendance Interaction",
+        "body": "Statutory dollar limits represent a legal ceiling, but your school's certified cost of attendance establishes your actual borrowing limit. [Federal Student Aid](https://studentaid.gov/complete-aid-process/how-calculated) guidelines define the cost of attendance as tuition, fees, room and board, books, supplies, and basic certified personal expenses.\n\nFederal loan amounts can never exceed your school's certified cost of attendance minus any other financial aid, scholarships, or grants you have already received. If your calculated financial need or certified remaining cost is lower than the federal annual limit, your school must reduce your loan award to match that lower figure. You cannot borrow federal funds to produce cash windfalls that exceed certified institutional expenses."
+      },
+      {
+        "heading": "Private Student Loan Limits and Variations",
+        "body": "Private student loan caps are established by commercial banks, credit unions, and specialty lenders rather than federal legislation. Most private lenders allow students to borrow up to the school's certified cost of attendance minus other financial aid received, matching the institutional calculation used by financial aid offices.\n\nEach commercial lender evaluates creditworthiness, income, existing debt burdens, and whether you apply with a creditworthy cosigner. Because private loans do not carry income-driven repayment plans or standardized federal protections, borrowers should evaluate them with care. When managing balances across federal and private options, you can review our guide on [student loan standard repayment plans](/guides/student-loan-standard-repayment-plan/) to understand monthly obligations."
+      },
+      {
+        "heading": "Covering Funding Gaps Beyond Federal Caps",
+        "body": "Families facing a tuition bill that exceeds annual direct federal caps must evaluate secondary funding choices to bridge the difference. Parents of dependent undergraduates often weigh the choice between taking on federal parent debt or assisting with private financing. To examine the differences in interest structures and protections, read our breakdown of [Parent PLUS loans vs private student loans](/compare/parent-plus-loan-vs-private-student-loan/).\n\nBorrowers who end up using private funding to cover shortfalls should monitor market rates as their personal income and credit profiles grow. Many graduates opt to restructure private debt after leaving school. Check our analysis on [whether you should refinance student loans](/guides/should-you-refinance-student-loans/) to decide if lowering your ongoing interest rate makes sense. Your immediate next action is to log in to your studentaid.gov portal to verify your cumulative borrowed balances against federal aggregate limits before planning next semester's tuition payments."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/types-of-student-loans/",
+        "label": "Types of student loans"
+      },
+      {
+        "href": "/guides/student-loan-standard-repayment-plan/",
+        "label": "Repayment plan changes"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much can I take out in federal student loans per year?",
+        "answer": "Dependent undergraduate students can borrow between $5,500 and $7,500 annually in Direct Loans, depending on their year in school. Independent undergraduates can borrow between $9,500 and $12,500 annually. General graduate students can borrow up to $20,500 per year, while qualifying professional students can borrow up to $50,000 annually."
+      },
+      {
+        "question": "What is the lifetime student loan limit?",
+        "answer": "Dependent undergraduates face an aggregate lifetime limit of $31,000, while independent undergraduates can borrow up to $57,500. Under current legislation for new graduate borrowers, general graduate aggregate limits are $100,000, professional-degree limits are $200,000, and the universal lifetime cap across all federal student loans is $257,500."
+      },
+      {
+        "question": "Did student loan limits change in 2026?",
+        "answer": "Yes, the One Big Beautiful Bill Act altered graduate borrowing limits starting July 1, 2026. The legislation dropped the graduate aggregate limit to $100,000, established a professional student aggregate limit of $200,000, instituted a universal lifetime ceiling of $257,500, and eliminated Graduate PLUS loans for new borrowers."
+      },
+      {
+        "question": "Is there a benefit to borrowing less than my school's full cost?",
+        "answer": "Borrowing less than the certified cost of attendance reduces accrued interest charges and lowers your mandatory monthly payment after graduation. Because interest compounds on unsubsidized and private loans while you are enrolled, taking out only the minimum funds needed for tuition and essentials minimizes total borrowing costs."
+      },
+      {
+        "question": "Can I increase my student loan amount if I hit the limit?",
+        "answer": "You cannot exceed statutory federal direct loan caps through your financial aid office once you reach an annual or aggregate ceiling. Dependent students whose parents are denied a Direct PLUS Loan can access higher independent undergraduate limits, while other borrowers must look to outside scholarships, institutional aid, or private loans to fund the remaining gap."
+      }
+    ],
+    "sources": []
+  },
+  // -- competitor-monitor 2026-09-18: what-is-a-pell-grant --
+  {
+    "slug": "what-is-a-pell-grant",
+    "updated": "2026-09-18",
+    "title": "What Is a Pell Grant? Eligibility and Award Amounts",
+    "metaDescription": "Learn what is a Pell Grant, who qualifies, how much it pays for 2026-27, and how to apply for federal aid money you do not need to pay back.",
+    "h1": "What Is a Pell Grant?",
+    "cardBlurb": "Federal Pell Grants provide up to $7,395 for college undergraduate costs without repayment requirements.",
+    "introText": "A Federal Pell Grant is federal student aid awarded to undergraduate students with exceptional financial need that generally does not have to be repaid. At The Modern Wallet, we build tools and write guides to help students evaluate college funding without taking on unnecessary debt. The grant pays up to $7,395 for the 2026-27 award year, and you qualify automatically when you submit the Free Application for Federal Student Aid (FAFSA). Because this aid acts like cash rather than a debt burden, securing it early changes how much you need to borrow from private or federal loan programs.",
+    "sections": [
+      {
+        "heading": "What Is a Pell Grant and How It Compares to Loans",
+        "body": "A Federal Pell Grant provides direct gift aid from the United States Department of Education to undergraduate students pursuing their first bachelor's degree or certain post-baccalaureate teacher certification programs. Unlike a federal student loan, a grant does not accrue interest, does not require a co-signer, and does not require monthly repayments after you leave school. The funds serve as the foundational layer of federal financial aid, reducing the overall balance you must cover with savings, scholarships, or borrowing.\n\nRepayment is required only under narrow conditions where your enrollment status changes unexpectedly. For example, if you withdraw early from all courses during an academic term, your college financial aid office must calculate how much aid you earned before leaving. If you drop out before completing more than 60 percent of the semester, federal rules require the school and student to return unearned grant funds. If you remain enrolled and complete your coursework, you keep the grant money permanently.\n\nStudents who need additional funding beyond grant aid frequently turn to student loans to bridge the gap. Before you sign any promissory note, review our guide on [student loan borrowing limits](/guides/student-loan-borrowing-limits/) to see statutory caps on federal undergraduate borrowing. Comparing debt against non-repayable grants helps you avoid graduating with payments that overwhelm your starting salary."
+      },
+      {
+        "heading": "How Much Is a Pell Grant for 2026-27",
+        "body": "For the 2026-27 award year, the maximum Federal Pell Grant is $7,395 and the minimum scheduled award is $740, according to the official notice from the [United States Department of Education Federal Student Aid office](https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts). Congress sets these maximums periodically based on federal budget appropriations. Your actual award depends on your calculated financial need, the cost of attendance at your college, and whether you attend classes on a full-time or part-time schedule.\n\nFinancial need is measured using the Student Aid Index (SAI), a calculated metric that replaced the old Expected Family Contribution (EFC). The SAI formula evaluates family income, taxed and untaxed assets, and household size to produce a numerical score. For the 2026-27 award year, an applicant with an SAI of $14,790 or higher receives zero Pell Grant dollars. If your SAI falls between zero and $14,789, your scheduled award decreases proportionally as your calculated index rises.\n\nWhen calculating an award for a student who qualifies for partial aid, the financial aid administrator subtracts your calculated SAI from the annual maximum grant of $7,395, rounding the final total to the nearest $5. A student with an SAI of $3,000 would receive an annual scheduled award of $4,395, provided they attend full-time. Students qualifying for the Maximum Pell Grant receive the full $7,395 regardless of their precise calculated index number, ensuring the lowest-income households receive the highest possible support."
+      },
+      {
+        "heading": "Pell Grant Eligibility Rules and Income Thresholds",
+        "body": "Pell Grant eligibility centers on family income, household size, and federal poverty guidelines rather than academic merit or test scores. The federal formula divides recipients into three distinct award categories: Maximum Pell, SAI-calculated Pell, and Minimum Pell. You do not need a perfect grade point average to qualify, though you must maintain Satisfactory Academic Progress (SAP) as defined by your college to keep receiving funds each semester.\n\nMaximum and Minimum Pell Grant eligibility categories are determined by matching your family's adjusted gross income against the federal poverty line for your family size and state of residence. Single-parent households and non-single-parent households face different income multiples under these statutory rules. Applicants whose families earn below the established poverty ratio qualify for the maximum award automatically, bypassing the complex SAI subtraction calculation entirely.\n\nInstitutions evaluate your household circumstances through standard federal forms. Some private colleges also require the CSS Profile to award their own institutional endowments, which follow separate criteria. You can examine how institutional aid differs from federal aid in our [CSS Profile vs FAFSA comparison](/compare/css-profile-vs-fafsa/). Understanding both submission paths prevents you from leaving private college grant money on the table."
+      },
+      {
+        "heading": "What Changed for Foreign Earned Income Exclusion",
+        "body": "A significant policy shift taking effect in the 2026-27 award year changes how adjusted gross income is measured for families living or working abroad. Under updates linked to the One Big Beautiful Bill Act, any foreign earned income exclusion amount claimed on federal tax forms must now be added back into adjusted gross income when the Department of Education evaluates an applicant for Maximum and Minimum Pell Grants.\n\nIn prior aid cycles, families residing overseas could exclude substantial portions of earned foreign wages from adjusted gross income, which sometimes lowered their reported income low enough to trigger Maximum Pell awards. Adding this exclusion back into total income creates a more complete accounting of true household earnings. Expatriate households and military families living abroad must account for this adjustment when estimating their Student Aid Index.\n\nThis calculation revision affects eligibility determination but does not modify the underlying application paperwork. The FAFSA system pulls tax details directly through data exchanges with the [Internal Revenue Service](https://www.irs.gov/), calculating the adjusted income figure without requiring manual additions on the standard digital form."
+      },
+      {
+        "heading": "How to Apply for a Pell Grant Step by Step",
+        "body": "To learn how to apply for a Pell Grant, you only need to complete the [Free Application for Federal Student Aid](https://studentaid.gov/h/apply-for-aid/fafsa) online at studentaid.gov. There is no independent application, separate portal, or supplemental fee required to request a Federal Pell Grant. Submitting the FAFSA sends your financial data to the federal processor and directly to every college or career school code you list on the form.\n\nBoth the student and any contributing parents or spouses must establish an FSA ID account before opening the form. The digital FAFSA utilizes the Direct Data Exchange to retrieve federal tax returns directly from the Internal Revenue Service, speeding up entry and eliminating most manual transcription errors. Once submitted, you receive a FAFSA Submission Summary outlining your Student Aid Index and estimated federal aid eligibility.\n\nYour selected colleges download this summary to package your formal financial aid offer. The financial aid office disburses the Pell Grant directly to your student account, applying the funds toward tuition, mandatory campus fees, and on-campus housing balances. If grant and loan funds exceed your direct institutional billing, the bursar refunds the remaining balance directly to your checking account or prepaid card."
+      },
+      {
+        "heading": "Approved Educational Expenses and Tax Consequences",
+        "body": "A Federal Pell Grant can pay for any component of your college cost of attendance, including tuition, mandatory campus fees, textbooks, required course materials, and room and board. Federal regulations also permit using grant proceeds for transportation expenses, necessary equipment such as a personal computer, and certified dependent childcare expenses while attending classes.\n\nTax liability depends entirely on how the money is spent across the academic calendar. Under federal tax law, grant money spent on qualified education expenses, specifically tuition, institutional fees, and required course books, is exempt from federal income tax. Any grant portion used for non-qualified expenses, such as dormitory rooms, meal plans, travel, or off-campus living expenses, counts as taxable income that you must report on your federal tax return.\n\nManaging non-tuition costs effectively requires careful planning so refund checks last throughout the term. You can organize housing, groceries, and academic materials using our free [monthly budget calculator](/budget/) to track every dollar of financial aid. For younger students living away from home for the first time, our guide on [how to budget for college students](/guides/how-to-budget-for-teens-college-students/) outlines practical spending guards."
+      },
+      {
+        "heading": "Lifetime Eligibility Limits and Part-Time Student Rules",
+        "body": "Undergraduate students can receive a Federal Pell Grant for up to 12 semesters, or roughly 6 full academic years, across their lifetime. The Department of Education tracks this through a measurement called Lifetime Eligibility Used (LEU). A student who receives a full grant for an entire academic year consumes 100 percent of their annual eligibility, with a hard lifetime ceiling established at 600 percent.\n\nPart-time students remain eligible for Pell Grants, but their disbursements are scaled according to enrollment intensity. Under modern federal rules, your award is calculated as an exact percentage of the full-time rate based on credit hours. For example, if you enroll in 6 credit hours and full-time status requires 12 credit hours, you receive 50 percent of the scheduled semester award, consuming only 25 percent of an annual LEU allotment rather than 50 percent.\n\nGraduate and professional students do not qualify for Federal Pell Grants, which remain reserved strictly for undergraduate study. If you are preparing for advanced degrees beyond a bachelor's, read our guide on [how to pay for grad school](/guides/how-to-pay-for-grad-school/) to compare fellowship options, assistantships, and direct borrowing programs. For broader questions on managing higher education borrowing and repayment options, review consumer resources from the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/consumer-tools/student-loans/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/compare/css-profile-vs-fafsa/",
+        "label": "CSS Profile vs FAFSA"
+      },
+      {
+        "href": "/guides/student-loan-borrowing-limits/",
+        "label": "Student loan limits"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much money can I get from the Pell Grant?",
+        "answer": "You can receive up to $7,395 for the 2026-27 award year, with a minimum scheduled grant of $740. Your exact award is determined by subtracting your calculated Student Aid Index (SAI) from the $7,395 maximum and rounding to the nearest $5, unless your income qualifies you directly for the maximum or minimum grant tier."
+      },
+      {
+        "question": "Do I have to pay back a Pell Grant?",
+        "answer": "No, you do not have to pay back a Pell Grant under normal circumstances because it is need-based federal gift aid. Repayment is required only in rare cases where you withdraw early from school before completing more than 60 percent of the semester, causing your institution to return unearned aid."
+      },
+      {
+        "question": "How do I apply for a Pell Grant?",
+        "answer": "You apply for a Pell Grant by completing the Free Application for Federal Student Aid (FAFSA) online at studentaid.gov. There is no separate application, and your college financial aid office automatically determines your eligibility and calculates your award based on your FAFSA submission."
+      },
+      {
+        "question": "Can I still receive a Pell Grant as a part-time student?",
+        "answer": "Yes, part-time undergraduate students can receive a Pell Grant. Your disbursement is prorated based on your enrollment intensity, meaning your award equals the percentage of credit hours you take relative to a full-time course load."
+      },
+      {
+        "question": "Do I have to pay taxes on Pell Grant money I receive?",
+        "answer": "You do not pay taxes on Pell Grant funds used directly for tuition, mandatory college fees, books, and required supplies. Any portion of the grant used to pay for room and board, travel, or general living expenses is considered taxable income on your federal return."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Federal Student Aid, 2026-27 Pell Grant Award Amounts",
+        "url": "https://fsapartners.ed.gov/knowledge-center/library/dear-colleague-letters/2026-01-30/2026-27-federal-pell-grant-maximum-and-minimum-award-amounts"
+      },
+      {
+        "label": "Federal Student Aid, Apply for Aid (FAFSA)",
+        "url": "https://studentaid.gov/h/apply-for-aid/fafsa"
+      },
+      {
+        "label": "CFPB, Student Loans Guide",
+        "url": "https://www.consumerfinance.gov/consumer-tools/student-loans/"
+      }
+    ]
+  },
+  // -- competitor-monitor 2026-09-18: types-of-student-loans --
+  {
+    "slug": "types-of-student-loans",
+    "updated": "2026-09-18",
+    "title": "Types of Student Loans: Federal vs Private Explained",
+    "metaDescription": "Compare the main types of student loans. Learn how subsidized, unsubsidized, Direct PLUS, and private loans work so you can borrow the right way.",
+    "h1": "Types of Student Loans: How Federal and Private Options Compare",
+    "cardBlurb": "Understand subsidized, unsubsidized, Direct PLUS, and private student loans before you borrow.",
+    "introText": "Student loans split into two broad categories: federal loans funded by the government and private loans issued by banks, credit unions, and online lenders. Picking the wrong category or borrowing out of order can cost you thousands of dollars in avoidable interest charges and leave you without basic repayment safeguards. At The Modern Wallet, we build financial calculators and borrowing guides to help students run the numbers before signing a promissory note. Every borrowing decision should protect your budget during school and after graduation.",
+    "sections": [
+      {
+        "heading": "The Primary Division Between Federal and Private Borrowing",
+        "body": "Federal student loans come directly from the U.S. Department of Education under the William D. Ford Federal Direct Loan Program, while private loans come from financial institutions like banks, credit unions, and online lenders. That single difference in source changes everything about how the loan functions, who qualifies, and how you repay the balance.\n\nEvery federal loan offers statutory borrower protections, including income-driven repayment options, standardized deferment programs, and administrative discharge rights set by Congress. Private loans operate entirely under contract law. A private lender decides its own interest terms, repayment options, and hardship policies, and none of those perks match the statutory protections of a federal promissory note. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/student-loans/) recommends exhausting federal grant and loan options before turning to private lenders."
+      },
+      {
+        "heading": "Direct Subsidized Loans for Undergraduates With Need",
+        "body": "Direct Subsidized Loans are federal student loans reserved exclusively for undergraduate students who demonstrate financial need on the [Free Application for Federal Student Aid](https://studentaid.gov/h/apply-for-aid/fafsa) (FAFSA). The federal government pays the interest on these loans while you remain enrolled at least half-time, during the six-month grace period after you leave school, and throughout any authorized deferment period.\n\nBecause interest does not build up while you are sitting in class, a subsidized loan is the single cheapest form of borrowing available in higher education. A borrower who takes out subsidized debt graduates owing only the original principal amount borrowed, without years of compounded interest added to the bill. Federal rules strictly cap the annual and aggregate amounts you can borrow, which you can review in our [student loan borrowing limits guide](/guides/student-loan-borrowing-limits/)."
+      },
+      {
+        "heading": "Direct Unsubsidized Loans for Undergraduates and Graduate Students",
+        "body": "Direct Unsubsidized Loans are federal loans available to both undergraduate and graduate students regardless of demonstrated financial need. You do not need to show low family income to qualify for an unsubsidized loan, but you must take on full responsibility for the interest charges from the day the school receives the funds.\n\nInterest on an unsubsidized loan begins accruing immediately upon disbursement and runs throughout your time in school, your grace period, and any deferment. If you choose not to pay that interest while attending classes, the unpaid interest gets added to your principal balance at specific administrative triggers in a process called capitalization. Once capitalized, you pay interest on top of interest for the remainder of your repayment term. You can test how monthly payments fit into your financial plan with our [budget calculator](/budget/)."
+      },
+      {
+        "heading": "Direct PLUS Loans for Parents and Graduate Students",
+        "body": "Direct PLUS Loans are unsubsidized federal loans that require an applicant to pass a basic credit check confirming the absence of an adverse credit history. Unlike private loans, PLUS loans do not require proof of personal income, employment, or a specific minimum credit score. They carry higher borrowing limits than standard Direct Loans, allowing borrowers to cover the full remaining cost of attendance after accounting for other financial aid.\n\nThese loans come in two distinct categories with different borrowers of record. Parent PLUS Loans are taken out by parents of dependent undergraduate students, placing legal responsibility for the debt entirely on the parent rather than the student. For families weighing that choice against commercial borrowing, our [Parent PLUS Loan vs private student loan comparison](/compare/parent-plus-loan-vs-private-student-loan/) breaks down the real cost differences.\n\nThe second category is the Grad PLUS Loan, which graduate and professional students historically borrowed to fund their advanced degrees. Under the One Big Beautiful Bill Act (OBBBA), Congress eliminated the Grad PLUS Loan program for new borrowers after June 30, 2026. Students who borrowed under the program prior to that date retain access under a legacy provision through June 30, 2029, as explained in detail on the official [Federal Student Aid PLUS page](https://studentaid.gov/understand-aid/types/loans/plus)."
+      },
+      {
+        "heading": "Private Student Loans From Commercial and Nonprofit Lenders",
+        "body": "Private student loans are commercial credit products underwritten on the applicant's credit score, verifiable income, and existing debt obligations rather than financial need. Because most undergraduate students lack the established credit history or income needed to qualify on their own, roughly nine out of ten private undergraduate loans require a creditworthy cosigner to guarantee the debt.\n\nPrivate loans do not include federal repayment plans, government interest subsidies, or access to public loan forgiveness. If you lose your job or face an unexpected drop in household income, a private lender is not legally required to lower your monthly payments. You can read our breakdown of underwriting criteria in our [private student loan requirements guide](/guides/private-student-loan-requirements/) before submitting an application to a commercial bank or credit union."
+      },
+      {
+        "heading": "Enrollment Rules Across All Loan Categories",
+        "body": "Federal Direct Loans and private student loans share a universal requirement: the student borrower must be enrolled at least half-time in a degree or certificate program at an eligible institution. A school's financial aid office must certify your enrollment status and your total cost of attendance before loan funds can be disbursed to pay for tuition and campus fees.\n\nDropping below half-time enrollment triggers your repayment timeline across both federal and private products. For federal loans, dropping below half-time starts the countdown on your six-month grace period before payments become due on the [student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/). For private loans, dropping below half-time often begins your contractual grace period immediately, depending on the terms written into your private credit agreement."
+      },
+      {
+        "heading": "A Smart Borrowing Order to Minimize Total Interest",
+        "body": "Borrowing in the correct sequence minimizes the total interest you pay over the life of your debt. Our general rule of thumb is simple: accept every dollar of Direct Subsidized Loan funding you qualify for first, because interest does not build while you attend school. That single step keeps your starting loan balance as low as possible at graduation.\n\nMove to Direct Unsubsidized Loans only after exhausting your subsidized options, because unsubsidized borrowing still gives you access to flexible federal repayment programs. Treat PLUS loans and private student loans as a last resort for any remaining financial gap. If a private lender offers an interest rate below federal PLUS options, compare the interest savings directly against the permanent loss of federal safety nets before you accept the contract. Check your total borrowing targets against our [student loan borrowing limits guide](/guides/student-loan-borrowing-limits/) before submitting your final loan requests for the upcoming school year."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/student-loan-borrowing-limits/",
+        "label": "Student loan limits"
+      },
+      {
+        "href": "/guides/private-student-loan-requirements/",
+        "label": "Private loan requirements"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the main types of student loans?",
+        "answer": "The main types of student loans are federal loans and private loans. Federal options include Direct Subsidized Loans for undergraduates with financial need, Direct Unsubsidized Loans for undergraduate and graduate students, and Direct PLUS Loans for parents and graduate students. Private student loans are commercial credit products issued by banks, credit unions, and online lenders that require a credit check and often require a cosigner."
+      },
+      {
+        "question": "What is the difference between subsidized and unsubsidized loans?",
+        "answer": "The difference between subsidized and unsubsidized loans is who pays the interest while you attend school. With a Direct Subsidized Loan, the federal government pays the interest while you are enrolled at least half-time, during your grace period, and throughout any deferment. With an unsubsidized loan, interest starts accumulating the day funds are disbursed, and unpaid interest can capitalize and increase your principal balance."
+      },
+      {
+        "question": "What is a Direct PLUS Loan?",
+        "answer": "A Direct PLUS Loan is an unsubsidized federal loan available to parents of dependent undergraduates and graduate students. PLUS loans require a basic credit check to ensure the borrower has no adverse credit history, but they do not evaluate personal income or debt ratios. They allow families to borrow up to the school's full cost of attendance minus other financial aid received."
+      },
+      {
+        "question": "Should I take federal or private student loans first?",
+        "answer": "You should take federal student loans first before turning to private loans. Federal loans carry fixed interest rates, income-driven repayment options, and administrative relief programs set by federal law. Private loans lack these protections and depend entirely on your private contract terms, making them riskier if you face financial hardship after leaving school."
+      },
+      {
+        "question": "Is Grad PLUS still available in 2026?",
+        "answer": "Grad PLUS loans remain available for new borrowers until June 30, 2026. Under the One Big Beautiful Bill Act (OBBBA), the Grad PLUS program is eliminated for new student borrowers after that date. Graduate students who borrowed a Grad PLUS Loan prior to July 1, 2026, can continue borrowing under the program through June 30, 2029, under a legacy provision."
+      }
+    ],
+    "sources": []
   },
 
   ...SELF_EMPLOYED_GUIDES,

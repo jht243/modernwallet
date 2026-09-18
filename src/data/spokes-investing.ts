@@ -333,7 +333,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     introText:
       "Dollar cost averaging (DCA) means investing a fixed dollar amount at regular intervals, regardless of market conditions. This approach automatically buys more shares when prices are low and fewer when prices are high.\n\nThe calculator above projects the future value of a DCA strategy based on a starting balance, a fixed monthly contribution, an assumed annual return, and a time horizon. Over long periods, the result shows how consistent, disciplined investing can build significant wealth without trying to time the market.",
     howItWorks:
-      "DCA works by decoupling the investment decision from the price decision. Because you invest the same dollar amount each period, a lower price automatically buys you more shares and a higher price buys fewer — your average cost per share ends up lower than the average price per share over the period. This mechanical effect slightly reduces risk versus investing everything at once when prices happen to be high.\n\nHere is the non-obvious nuance: FINRA's research and Vanguard's widely cited study 'Dollar-Cost Averaging Just Means Taking Risk Later' found that investing a lump sum immediately outperforms DCA roughly two-thirds of the time over a 12-month horizon — because markets tend to rise more often than they fall. DCA's most important benefit is behavioral, not mathematical: it removes the paralysis of waiting for 'the right moment' and gets investors into the market consistently. For investors who receive income periodically (e.g., a paycheck), DCA is also the natural structure. To model a one-time lump sum instead, try the [investment growth calculator](/investing/investment-growth-calculator/).",
+      "DCA works by decoupling the investment decision from the price decision. Because you invest the same dollar amount each period, a lower price automatically buys you more shares and a higher price buys fewer — your average cost per share ends up lower than the average price per share over the period. Once you've made a few of these purchases, our [stock average cost calculator](/investing/stock-average-cost-calculator/) blends your actual buy lots into that one weighted-average number. This mechanical effect slightly reduces risk versus investing everything at once when prices happen to be high.\n\nHere is the non-obvious nuance: FINRA's research and Vanguard's widely cited study 'Dollar-Cost Averaging Just Means Taking Risk Later' found that investing a lump sum immediately outperforms DCA roughly two-thirds of the time over a 12-month horizon — because markets tend to rise more often than they fall. DCA's most important benefit is behavioral, not mathematical: it removes the paralysis of waiting for 'the right moment' and gets investors into the market consistently. For investors who receive income periodically (e.g., a paycheck), DCA is also the natural structure. To model a one-time lump sum instead, try the [investment growth calculator](/investing/investment-growth-calculator/).",
     commonMistakes: [
       "Stopping contributions during market downturns. That is precisely when DCA buys the most shares at the lowest prices — pausing defeats the strategy.",
       "Choosing too short a time horizon. DCA's cost-averaging benefit is most visible over many years; short periods show little statistical difference from lump sum investing.",
@@ -815,4 +815,300 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     preset: { beginningValue: 10000, endingValue: 16000, years: 5 },
     relatedSlugs: ["compound-interest-calculator", "high-yield-savings-calculator", "savings-goal-calculator"],
   },
+  // -- competitor-monitor 2026-09-18: stock-split-calculator (investing tool) --
+  {
+    "calculator": "investing",
+    "slug": "stock-split-calculator",
+    "updated": "2026-09-18",
+    "title": "Stock Split Calculator: Adjust Shares and Cost Basis",
+    "metaDescription": "Use our stock split calculator to find your adjusted share count, new price per share, and updated cost basis after a forward split or reverse stock split.",
+    "targetKeyword": "stock split calculator",
+    "h1": "Stock Split Calculator",
+    "introText": "This stock split calculator calculates your updated share count, per-share price, and per-share cost basis after an announced forward split or reverse split. At ModernWallet, we see many investors worry that a corporate share adjustment changes the underlying dollar value of their portfolio. In reality, a stock split alters the number of units representing your ownership without adding or subtracting a single dollar from your total equity balance.\n\nWhether you are evaluating a forward split that grants extra shares or a reverse split that consolidates your holdings, you simply enter your starting shares, your original price or cost basis, and the split ratio. If you purchased multiple blocks of shares at varying prices over time, you can pair this tool with our [stock average cost calculator](/investing/stock-average-cost-calculator/) to preserve accurate accounting across all tax lots.",
+    "howItWorks": "A stock split alters the quantity of shares you hold while shifting your per-share market price and per-share cost basis by the exact inverse ratio. According to the [Investor.gov stock split glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split), the total market capitalization of the issuing corporation remains completely unchanged because the aggregate dollar value of the firm is simply distributed across a different number of circulating shares. Because the proportional ownership stake of every shareholder stays constant, your total investment value and your cumulative cost basis before and after the split date remain identical.\n\nForward splits distribute additional shares to existing stockholders according to a specified split multiple such as 2-for-1, 3-for-1, or 4-for-1. In a standard 2-for-1 forward split, the corporation delivers two new shares for every single share you held on the record date, which doubles your total share count while dividing both your market price per share and your original per-share cost basis in half. If a firm completes a 3-for-1 split, the calculation multiplies your share balance by three while dividing your per-share market price and cost basis by three, ensuring your total dollar position never changes.\n\nA reverse split executes the opposite mathematical adjustment by consolidating an existing share pool into a smaller quantity of higher-priced shares. As detailed in the [Investor.gov reverse stock split glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/reverse-stock-splits), a 1-for-10 reverse stock split exchanges ten existing shares for one consolidated share, which reduces your total share balance by a factor of ten while multiplying both your per-share price and per-share cost basis by ten. Companies often pursue reverse splits to elevate a depressed share price and satisfy minimum price listing requirements on major stock exchanges, but the consolidation creates no change in your total dollar balance.\n\nBrokerages automatically adjust your investment accounts on the distribution date, meaning you do not need to take manual action or submit paperwork to receive your split-adjusted shares. Under [Internal Revenue Service (IRS) Topic No. 409](https://www.irs.gov/taxtopics/tc409) guidelines, a stock split is not a taxable event by itself because the IRS treats the adjustment as a reallocation of your existing cost basis across a different unit count rather than a realized sale or exchange. However, you should still verify your updated cost basis against your brokerage statement for future tax reporting, and if you hold equity options, remember that the options clearing process independently adjusts contract strike prices and deliverable share quantities.",
+    "commonMistakes": [
+      "Assuming that a stock split changes the total market value of your position. A forward split grants extra shares at a proportionally reduced price per share, while a reverse split reduces share count at a proportionally higher price per share, leaving your aggregate portfolio value completely unchanged.",
+      "Failing to adjust your manually tracked cost basis per share after the split date passes. If you manage tax lots in personal spreadsheets or portfolio trackers, neglecting to divide your original purchase price by the split ratio will distort your capital gains or losses when calculating realized profit with our [stock profit calculator](/investing/stock-profit-calculator/).",
+      "Confusing a forward split ratio with a reverse split ratio during financial modeling. Entering a 1-for-10 reverse consolidation as a 10-for-1 forward distribution incorrectly multiplies your projected share balance by ten instead of dividing it by ten, creating an error of one hundred times your actual share quantity.",
+      "Expecting an immediate tax bill from the Internal Revenue Service (IRS) in the year a split occurs. A corporate stock split is not a taxable event on its own, so you only realize a capital gain or loss when you formally sell or dispose of the adjusted shares in a taxable account.",
+      "Assuming that equity options contracts are ignored or canceled when a stock splits. Options contracts are adjusted separately through the options clearing process, which modifies both the strike price and the deliverable share count of the contract so that total contract value is preserved."
+    ],
+    "workedExample": "Consider a hypothetical investor who purchases 100 shares of an equity at a cost basis of $60 per share, representing an initial cash outlay of $6,000. Over time, the stock appreciates to a market price of $90 per share, bringing the total market value of the investment to $9,000. When the corporate board announces a hypothetical 3-for-1 forward stock split, the investor prepares to receive three shares for every individual share currently owned.\n\nOn the split execution date, the investor's total holding expands from 100 shares to 300 shares (100 multiplied by 3). The prevailing market price divides by three, adjusting from $90 down to $30 per share, while the investor's per-share cost basis also divides by three, moving from $60 down to $20 per share. Multiplying 300 shares by the new $30 trading price confirms the position still equals $9,000 in total value, and multiplying 300 shares by the $20 cost basis confirms the total dollar basis remains exactly $6,000.\n\nA reverse stock split mirrors this arithmetic in the opposite direction. Picking up right where the investor left off, with 300 shares at the post-split $30 market price and $20 cost basis, a hypothetical 1-for-3 reverse split would divide the share count by three, returning it to 100 shares. The per-share market price and per-share cost basis would each multiply by three in turn, raising the market price back to $90 and the cost basis back to $60, while the total position value stays at $9,000 and the total cost basis stays at $6,000 throughout.",
+    "faqs": [
+      {
+        "question": "Does a stock split change how much my shares are worth?",
+        "answer": "No, a stock split does not change the total dollar value of your shares. A forward split gives you more shares at a proportionally lower price per share, while a reverse split gives you fewer shares at a proportionally higher price per share. Because the corporation's overall market capitalization remains unchanged, the total value of your investment account stays identical before and after the split."
+      },
+      {
+        "question": "Is a stock split a taxable event?",
+        "answer": "No, a standard corporate stock split is not a taxable event for investors. Under [Internal Revenue Service (IRS) Topic No. 409](https://www.irs.gov/taxtopics/tc409), a split represents a reallocation of your existing tax basis across a new number of shares rather than a taxable sale or exchange. You will only encounter capital gains or losses when you eventually sell the adjusted shares in a taxable account."
+      },
+      {
+        "question": "What happens to my cost basis after a stock split?",
+        "answer": "Your cost basis per share adjusts by the exact proportion of the split ratio, while your total dollar cost basis remains unchanged. In a 2-for-1 forward split, your per-share cost basis is cut in half because your original dollar investment is distributed across twice as many shares. In a 1-for-10 reverse split, your per-share cost basis multiplies by ten, which you can evaluate against historical performance using our [annualized return calculator](/investing/annualized-return-calculator/)."
+      },
+      {
+        "question": "What is the difference between a forward split and a reverse split?",
+        "answer": "A forward split increases your total share count to lower the per-share price, whereas a reverse split decreases your share count to raise the per-share price. Companies typically execute forward splits to make whole shares more accessible to individual investors when the trading price reaches high levels. Conversely, firms execute reverse splits to lift a depressed share price and preserve listing eligibility on major stock exchanges."
+      },
+      {
+        "question": "Do I need to do anything when a stock I own splits?",
+        "answer": "No, your brokerage automatically updates your share count, current price, and cost basis on the split effective date. You do not need to submit instructions, transfer capital, or execute market trades to receive your adjusted shares. Once the split takes effect, reviewing your subsequent monthly brokerage statement ensures that your custodian adjusted your share quantities and tax lots accurately."
+      },
+      {
+        "question": "What happens to stock options when a company executes a stock split?",
+        "answer": "Options contracts on splitting stocks are automatically adjusted through the options clearing process rather than this calculator. The clearing authority adjusts both the strike price and the deliverable share quantity of the contract to preserve the total contract value. For example, a forward split lowers the strike price and increases the underlying deliverable shares, preventing the corporate action from penalizing or enriching option holders."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC Investor.gov \u2014 Stock Split",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-split"
+      },
+      {
+        "label": "SEC Investor.gov \u2014 Reverse Stock Splits",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/reverse-stock-splits"
+      },
+      {
+        "label": "IRS Topic No. 409 \u2014 Capital Gains and Losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      }
+    ],
+    "toolHeading": "Calculate Your Adjusted Shares and Cost Basis",
+    "toolSubheading": "Enter your starting share count, original share price or cost basis, and the split ratio to see your adjusted holdings.",
+    "islandId": "stock-split",
+    "preset": {
+      "shares": 100,
+      "pricePerShare": 200,
+      "costBasisPerShare": 150,
+      "splitFromRatio": 2,
+      "splitToRatio": 1
+    },
+    "relatedSlugs": [
+      "stock-average-cost-calculator",
+      "stock-profit-calculator",
+      "annualized-return-calculator"
+    ]
+  },
+  // -- competitor-monitor 2026-09-18: stock-average-cost-calculator (investing tool) --
+  {
+    "calculator": "investing",
+    "slug": "stock-average-cost-calculator",
+    "updated": "2026-09-18",
+    "title": "Stock Average Cost Calculator: Find Your Cost Basis",
+    "metaDescription": "Use this stock average cost calculator to find your weighted-average cost basis per share across multiple buy lots, including commissions and trade fees.",
+    "targetKeyword": "stock average cost calculator",
+    "h1": "Stock Average Cost Calculator",
+    "introText": "This stock average cost calculator determines your blended purchase price per share across multiple transactions.\n\nYou enter the share count, share price, and purchase commission for each buy lot. The formula sums your total cash spent and divides it by your total share count to output your true weighted-average cost basis.\n\nAt ModernWallet, we see many investors miscalculate their returns by relying on simple price averages that ignore the size of each trade. If you want to see how future sales generate taxable capital gains, pair this calculation with our [stock profit calculator](/investing/stock-profit-calculator/).",
+    "howItWorks": "Your average cost basis per share equals the total dollar amount spent across every purchase lot divided by the total number of shares you own. This calculation blends separate purchase orders into a single weighted-average figure regardless of when you bought each lot. The arithmetic weights each lot by the number of shares purchased rather than treating every transaction equally. For instance, buying 100 shares at $10 and 10 shares at $20 does not create an average cost of $15. You spent $1,200 across 110 shares. That division yields a weighted-average cost basis of $10.91 per share. Tracking this blended number shows you the break-even threshold for your entire position.\n\nEvery dollar you pay to acquire shares changes your tax baseline. Per general guidance from [Internal Revenue Service (IRS) Publication 550](https://www.irs.gov/publications/p550), purchase commissions and transaction fees add directly to the cost basis of that lot, which raises your total cost per share. When you eventually sell shares, any commission paid on the sale is subtracted from your gross sale proceeds, reducing your capital gain or increasing your deductible capital loss. Trading fees matter. Comparing your future sale price against your accurate cost basis reveals your true gain or loss. If your records omit buy-side fees, you understate your cost basis and risk overpaying taxes on non-existent profits.\n\nThe IRS permits several distinct cost-basis accounting methods when you make a partial sale of a holding. Allowed methods include First-In-First-Out (FIFO), specific-share identification, and an average-cost method reserved specifically for mutual fund shares. A brokerage applies a default method automatically. You can change that default before a sale settles. According to [Securities and Exchange Commission (SEC) Investor.gov guidance on brokerage account statements](https://www.investor.gov/better-understanding-your-brokerage-account-statement), individual stock shares are most commonly tracked by specific-lot identification or FIFO by default, though many brokerages permit account holders to choose their preferred method. Average-cost tracking is most commonly applied automatically to mutual fund holdings and certain dividend-reinvestment plans rather than individual equities.\n\nPeriodic investing strategies naturally generate multiple share lots across varying price levels. Many investors practice dollar-cost averaging, which involves investing a fixed dollar amount on a disciplined, recurring schedule. As explained in the [SEC Investor.gov glossary entry on dollar-cost averaging](https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging), buying at regular intervals purchases more shares when prices dip and fewer shares when prices climb. This steady accumulation creates numerous distinct tax lots with separate transaction dates and prices. Our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/) explores how this strategy functions over multi-year horizons, while this stock average cost calculator consolidates those scattered purchases into a single clear figure.",
+    "commonMistakes": [
+      "Forgetting to include commissions and transaction fees in your lot costs. Purchase fees add directly to your cost basis, so omitting them makes your average cost per share appear artificially low and causes you to overreport taxable gains upon sale.",
+      "Assuming average cost is the mandatory accounting method your brokerage uses for taxes. Individual stock sales frequently default to First-In-First-Out (FIFO) or specific-lot identification, meaning your tax return may reflect a different cost basis than your running average unless you actively designate specific lots.",
+      "Confusing a simple arithmetic average of share prices with a weighted-average cost basis. Adding up your purchase prices and dividing by the number of transactions ignores lot sizes, skewing your calculated cost whenever you purchase unequal share quantities.",
+      "Failing to adjust your tracked cost basis following a corporate stock split. When a company executes a split, your total share count increases and your per-share cost basis decreases proportionally, which you can recalculate using our [stock split calculator](/investing/stock-split-calculator/).",
+      "Relying on memory instead of your official brokerage trade confirmations. Unrecorded partial shares, reinvested dividend lots, or forgotten transaction charges distort your records and produce inaccurate figures on Form 1099-B."
+    ],
+    "workedExample": "Consider an investor who builds an equity position in an individual stock across three separate purchase lots. In the first lot, the investor buys 50 shares at $40 per share and pays a $5 brokerage commission, spending $2,005 in total ($2,000 in equity plus $5 in fees). Several weeks later, the stock drops, and the investor buys a second lot of 100 shares at $30 per share with an identical $5 commission, spending $3,005. Months later, the stock climbs, and the investor purchases a third lot of 25 shares at $50 per share with another $5 commission, spending $1,255.\n\nTo calculate the blended average cost basis, sum the total dollars spent across all three transactions: $2,005 + $3,005 + $1,255 = $6,265. Next, sum the total shares acquired across the lots: 50 + 100 + 25 = 175 shares. Dividing total outlays by total shares ($6,265 / 175) yields a weighted-average cost basis of $35.80 per share. Notice that simply averaging the raw purchase prices of $40, $30, and $50 produces an arithmetic average of $40.00 per share. That unweighted number overstates the investor's true cost by $4.20 per share because it ignores the heavy weighting of the 100-share purchase at $30.\n\nNow imagine the investor sells 50 shares when the market price hits $45 per share, incurring a $5 selling commission. The gross sale proceeds equal $2,250 (50 shares multiplied by $45). Subtracting the $5 commission leaves net sale proceeds of $2,245. If the investor uses the average cost basis of $35.80 per share, the cost for those 50 shares equals $1,790. Subtracting the $1,790 basis from net proceeds of $2,245 yields a taxable capital gain of $455. If the brokerage instead applies First-In-First-Out (FIFO) accounting, those 50 shares come entirely from the first lot, which carried a cost basis of $40.10 per share ($2,005 / 50), resulting in a lower taxable gain of $240.",
+    "faqs": [
+      {
+        "question": "How do you calculate average cost per share?",
+        "answer": "Divide your total dollars spent by your total shares owned. First, calculate the total cost of each separate purchase lot by multiplying the number of shares by the purchase price and adding any commission paid. Second, add the total costs of all purchase lots together to find your cumulative cash outlay. Third, sum the total number of shares purchased across all lots. Finally, divide the cumulative cash outlay by the total number of shares. For example, spending $1,000 for 50 shares and $1,500 for 50 shares gives a total outlay of $2,500 for 100 shares, resulting in an average cost of $25 per share."
+      },
+      {
+        "question": "Does average cost basis include commissions?",
+        "answer": "Yes, purchase commissions are included directly in your cost basis. Under [Internal Revenue Service (IRS) Publication 550](https://www.irs.gov/publications/p550) rules, fees and commissions paid to acquire an asset add to its initial cost basis, raising your per-share acquisition cost. When you sell shares, selling fees are deducted from the sale proceeds rather than added to the basis. Both adjustments work in your favor by lowering your net taxable capital gain or expanding your deductible capital loss."
+      },
+      {
+        "question": "What is the difference between average cost and FIFO for taxes?",
+        "answer": "Average cost blends every lot into a single price, whereas First-In-First-Out (FIFO) treats your oldest shares as sold first. Under FIFO, your taxable gain or loss is determined solely by comparing your sale price against the specific price you paid for the earliest acquired shares. If share prices rose steadily over time, FIFO results in a lower cost basis and a higher taxable capital gain on early sales. Average cost smooths out those price differences across all historical purchases. The IRS automatically allows the average-cost method for mutual funds, while individual stocks sold in partial blocks generally default to FIFO or specific-lot identification."
+      },
+      {
+        "question": "Can I choose which cost-basis method to use?",
+        "answer": "Yes, you can choose among the accounting methods permitted by IRS rules and supported by your brokerage. For individual stock shares, the IRS permits specific-share identification or FIFO. According to [SEC Investor.gov brokerage guidance](https://www.investor.gov/better-understanding-your-brokerage-account-statement), brokerages establish a default method, typically FIFO, but permit investors to select specific lots or change their default standing instructions. You must specify which lot you are selling before the trade settles, as you cannot retroactively alter your cost-basis method after completing the sale."
+      },
+      {
+        "question": "Does dollar-cost averaging lower my average cost per share?",
+        "answer": "Dollar-cost averaging lowers your average cost per share compared to the simple average market price during volatile periods. Because you invest a fixed dollar amount at regular intervals, you automatically acquire more shares when prices decline and fewer shares when prices rise. As detailed in the [SEC Investor.gov glossary on dollar-cost averaging](https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging), this dynamic pulls your weighted-average purchase price below the arithmetic midpoint of market fluctuations. However, in a market that rises continuously without pullbacks, dollar-cost averaging produces a higher average cost than investing a lump sum upfront."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Publication 550 \u2014 Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "SEC Investor.gov \u2014 Understanding Your Brokerage Account Statement",
+        "url": "https://www.investor.gov/better-understanding-your-brokerage-account-statement"
+      },
+      {
+        "label": "SEC Investor.gov \u2014 Dollar Cost Averaging",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging"
+      }
+    ],
+    "toolHeading": "Calculate Your Average Share Cost",
+    "toolSubheading": "Enter your purchase lots with share counts, prices, and fees to find your weighted-average cost basis.",
+    "islandId": "stock-average-cost",
+    "preset": {
+      "lots": [
+        {
+          "shares": 50,
+          "price": 20
+        },
+        {
+          "shares": 30,
+          "price": 25
+        },
+        {
+          "shares": 0,
+          "price": 0
+        },
+        {
+          "shares": 0,
+          "price": 0
+        }
+      ],
+      "commissionPerTrade": 0
+    },
+    "relatedSlugs": [
+      "dollar-cost-averaging-calculator",
+      "stock-profit-calculator",
+      "stock-split-calculator"
+    ]
+  },
+  // -- competitor-monitor 2026-09-18: stock-profit-calculator (investing tool) --
+  {
+    "calculator": "investing",
+    "slug": "stock-profit-calculator",
+    "updated": "2026-09-18",
+    "title": "Stock Profit Calculator: Net Return and Break-Even",
+    "metaDescription": "Use this stock profit calculator to find your exact dollar profit or loss, return percentage, and break-even share price after trading commissions.",
+    "targetKeyword": "stock profit calculator",
+    "h1": "Stock Profit Calculator",
+    "introText": "This stock profit calculator determines your net profit or loss, total return percentage, and break-even exit price for any share trade.\n\nYou enter four numbers: your purchase price, your sale price, your total share count, and any broker transaction fees. At ModernWallet, we build tools that eliminate math confusion so you can evaluate the true financial result of an investment before committing cash. When you purchase multiple share lots across different dates rather than a single block, calculate your blended cost basis with our [stock average cost calculator](/investing/stock-average-cost-calculator/).",
+    "howItWorks": "Realized profit on a stock trade measures the net cash left over after accounting for all trade expenses. To compute the true dollar return, start with your net purchase cost. Multiply your share count by the purchase price per share, and add any buy-side brokerage commission. Next, determine your net sale proceeds by multiplying the shares sold by the execution price, and subtract any sell-side commission. Subtracting net purchase cost from net sale proceeds yields your realized profit or loss. Dividing that net dollar profit by your total initial outlay delivers your return percentage. The [Securities and Exchange Commission (SEC) Investor.gov glossary defines profit](https://www.investor.gov/introduction-investing/investing-basics/glossary/profit) as the money an investment earns after subtracting the original capital and related expenses. Many traders look only at gross sale proceeds, but ignoring transaction fees understates actual acquisition costs.\n\nYour break-even stock price identifies the exact sale price per share required to exit a trade with zero net gain and zero net loss. To determine this figure, take your total purchase cost, add both the buy commission and the anticipated sell commission, and divide that combined sum by your total share count. Selling above this calculated threshold yields a positive cash return. Selling below this threshold produces a net loss. Factoring both entry and exit fees into your target exit price prevents unexpected losses on narrow price swings. A position that rises slightly in market value can still lose money once two separate transaction charges hit your account balance.\n\nTax liability directly reduces the final cash an investor keeps from a profitable trade. The Internal Revenue Service (IRS) divides investment gains into two distinct tax categories based on holding duration. Under [IRS Topic No. 409 on capital gains and losses](https://www.irs.gov/taxtopics/tc409), shares held for one year or less generate short-term capital gains, which face taxation at your ordinary income tax rate. Shares held for more than one year qualify for long-term capital gains rates, which are generally lower than ordinary income tax brackets. When a trade ends in a loss, you can use that capital loss to offset other capital gains realized during the same calendar year. If your total losses exceed your total capital gains, [IRS Publication 550 on investment income and expenses](https://www.irs.gov/publications/p550) permits you to deduct up to $3,000 of net capital losses against your ordinary income per year. Any remaining unused losses carry forward into future tax years.\n\nTransaction fees alter net trading returns, even in modern low-cost brokerage accounts. Many online brokerages now provide zero-dollar commissions on standard online stock trades. Even so, transaction charges still occur across specific trade channels, order types, and specialty account structures. Broker-assisted telephone orders, foreign market routing, physical certificate processing, and illiquid over-the-counter securities often incur explicit transaction fees. Assuming an account charges zero fees on every trade can skew your break-even calculations. Reviewing trade confirmation slips before executing high-volume or specialized orders ensures your calculation matches your true settlement statement.",
+    "commonMistakes": [
+      "Omitting commissions from both sides of the trade. Investors often deduct the fee paid when buying shares but forget to account for the transaction charge when selling, which inflates the reported profit.",
+      "Confusing gross sale proceeds with net profit. Gross proceeds equal total shares multiplied by sale price, whereas net profit subtracts your original purchase cost and all associated transaction expenses.",
+      "Overlooking the tax impact of holding duration. Selling shares held for one year or less triggers short-term capital gains rates at ordinary income levels, whereas holding beyond one year qualifies for preferential long-term capital gains rates.",
+      "Assuming every brokerage trade carries zero fees. While standard online equity orders often feature zero-dollar commissions, specialty routing, telephone orders, and foreign securities frequently incur specific transaction charges that change your net return.",
+      "Neglecting break-even requirements before setting exit limit orders. Placing a sell order right at your entry price guarantees a cash loss if your brokerage assessed trade commissions on either side of the position."
+    ],
+    "workedExample": "Consider an investor who buys 200 shares of an illustrative company at $50 per share, paying a $10 brokerage commission on the trade. The gross stock cost equals $10,000 (200 shares multiplied by $50). Adding the $10 buy commission produces a total net purchase cost of $10,010. Six months later, the investor sells all 200 shares at $65 per share, paying another $10 transaction fee to execute the sale. Gross proceeds from this sale total $13,000 (200 shares multiplied by $65). Subtracting the $10 sell commission leaves net sale proceeds of $12,990.\n\nTo calculate the realized dollar gain, subtract the total net purchase cost from the net sale proceeds. Subtracting $10,010 from $12,990 yields a net profit of $2,980. Dividing $2,980 by the total initial outlay of $10,010 results in a net return of 29.77%. Because the investor held the shares for six months (one year or less), this $2,980 gain represents a short-term capital gain taxed at ordinary income rates under IRS rules.\n\nNow examine the break-even price for this same trade. The investor paid $10,010 to acquire the position and faces a $10 fee to exit, making total round-trip expenses equal $10,020. Dividing $10,020 by 200 shares gives a break-even price of $50.10 per share. Selling at exactly $50 per share would generate an actual cash loss of $20 because of the two $10 commissions. The investor must sell at or above $50.10 per share to avoid losing money on the completed trade.",
+    "faqs": [
+      {
+        "question": "How do you calculate profit on a stock trade?",
+        "answer": "To calculate profit on a stock trade, subtract your total net purchase cost from your net sale proceeds. Net purchase cost equals the shares bought multiplied by the purchase price per share, plus any buy-side commission. Net sale proceeds equal the shares sold multiplied by the sale price per share, minus any sell-side commission. Subtracting the net cost from the net proceeds gives your realized dollar profit or loss. To find your return percentage, divide that dollar profit by your total initial cost outlay and multiply by 100."
+      },
+      {
+        "question": "What is the break-even price on a stock trade?",
+        "answer": "The break-even price is the exact sale price per share where your net sale proceeds equal your total purchase cost. To compute it, add all buy-side and sell-side transaction fees to your gross purchase amount, then divide by the total number of shares. Selling above this price yields a net profit, while selling below it produces a net loss. This calculation ensures that trade commissions do not turn an apparent flat trade into an unexpected loss of cash."
+      },
+      {
+        "question": "Do I pay taxes on stock trading profit?",
+        "answer": "Yes, you generally pay capital gains taxes when you realize a profit by selling shares in a taxable brokerage account. If you hold the shares for one year or less, the Internal Revenue Service (IRS) treats the return as a short-term capital gain taxed at your ordinary income tax rate. If you hold the shares for longer than one year, the gain qualifies for lower long-term capital gains tax rates. You can review tax rules in [IRS Publication 550](https://www.irs.gov/publications/p550). Investment gains inside tax-advantaged retirement accounts, like traditional or Roth individual retirement arrangements (IRAs), follow separate tax distribution guidelines."
+      },
+      {
+        "question": "Does holding a stock longer change how it is taxed?",
+        "answer": "Yes, the length of time you hold a stock determines whether you pay short-term or long-term capital gains tax rates. According to [IRS Topic No. 409](https://www.irs.gov/taxtopics/tc409), the critical threshold is one calendar year. Assets sold after being held for one year or less generate short-term capital gains, which are taxed at the same rate as wages and salaries. Positions held for more than 365 days qualify for long-term capital gains rates, which are typically lower. If your strategy involves multi-year growth, you can evaluate your compound performance over extended holding windows using our [annualized return calculator](/investing/annualized-return-calculator/)."
+      },
+      {
+        "question": "Do online brokers still charge commissions on stock trades?",
+        "answer": "Many major retail brokerages offer zero-dollar commissions on standard online equity transactions. However, fees can still apply depending on the trade channel and order characteristics. Broker-assisted orders placed over the telephone, foreign stock market trades, and certain illiquid securities still carry transaction fees. Review your trade confirmation slips for unusual or assisted orders so you can record accurate commission inputs."
+      },
+      {
+        "question": "How does a stock split affect my trade profit?",
+        "answer": "A stock split changes your total share count and your per-share cost basis without changing the overall dollar value of your holding. In a standard two-for-one split, you receive double the shares, while your cost basis per share cuts in half. Your total invested capital and overall dollar profit remain identical before and after the corporate action. If a company you hold undergoes a restructuring, use our [stock split calculator](/investing/stock-split-calculator/) to adjust your share count and adjusted cost basis correctly before running profit figures."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC Investor.gov \u2014 Profit",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/profit"
+      },
+      {
+        "label": "IRS Topic No. 409 \u2014 Capital Gains and Losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      },
+      {
+        "label": "IRS Publication 550 \u2014 Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      }
+    ],
+    "toolHeading": "Calculate Your Stock Trade Profit",
+    "toolSubheading": "Enter your share quantity, buy price, sale price, and any trading commissions.",
+    "islandId": "stock-profit",
+    "preset": {
+      "shares": 100,
+      "buyPrice": 40,
+      "buyCommission": 0,
+      "sellPrice": 48,
+      "sellCommission": 0
+    },
+    "relatedSlugs": [
+      "stock-average-cost-calculator",
+      "stock-split-calculator",
+      "annualized-return-calculator"
+    ]
+  },
+  // -- competitor-monitor 2026-09-18: nav-calculator (investing tool) --
+  {
+    "calculator": "investing",
+    "slug": "nav-calculator",
+    "updated": "2026-09-18",
+    "title": "NAV Calculator: Net Asset Value per Share",
+    "metaDescription": "Calculate net asset value per share with this free NAV calculator. Enter fund assets, liabilities, and shares to find mutual fund or ETF NAV.",
+    "targetKeyword": "nav calculator",
+    "h1": "NAV Calculator for Mutual Funds and ETFs",
+    "introText": "This NAV calculator computes the net asset value (NAV) per share for any pooled investment fund from its total assets, liabilities, and outstanding shares.\n\nYou enter the market value of the fund's holdings, subtract what the fund owes, and divide the remaining balance across all issued shares. At ModernWallet, we built this interactive tool to mirror the core math in our [portfolio metrics formulas guide](/guides/portfolio-metrics-formulas-explained/), giving investors an immediate way to check fund accounting numbers without building a spreadsheet.",
+    "howItWorks": "Net asset value per share follows a direct accounting identity defined by the [Securities and Exchange Commission (SEC) Investor.gov glossary entry on net asset value](https://www.investor.gov/introduction-investing/investing-basics/glossary/net-asset-value). The formula takes the total market value of all securities, cash, and receivables held by the fund, subtracts all outstanding obligations, and divides that net figure by the total count of shares currently held by investors. Expressed as an equation: Net Asset Value per Share = (Total Assets - Total Liabilities) / Total Shares Outstanding. The numerator represents total net assets, which measures the aggregate equity value of the entire fund portfolio before breaking it down to a per-unit basis.\n\nMutual funds calculate and publish their net asset value exactly once per business day. This calculation occurs after the major United States stock exchanges close their regular trading sessions at 4:00 PM Eastern Time. Fund pricing administrators value every single security in the portfolio against its official closing price, add any interest or dividend receivables, and tally up daily liabilities. When you submit an order to buy or sell mutual fund shares during the trading day, your transaction does not execute at a live intraday price. Instead, your trade waits until the market close and executes at that day's newly published closing net asset value per share.\n\nAn exchange-traded fund (ETF) uses this identical net asset value formula to establish the underlying per-share book value of its portfolio. However, the trading mechanism for an exchange-traded fund operates very differently from an open-end mutual fund. An exchange-traded fund trades continuously throughout regular market hours on a secondary stock exchange. Buyers and sellers exchange shares at a market-determined price that fluctuates second by second based on immediate supply and demand. Because market prices move continuously while fund accounting calculates net asset value only once daily, an exchange-traded fund often trades at a slight premium or a slight discount relative to its underlying net asset value. A premium occurs whenever strong buying pressure lifts the market price above the underlying net asset value. A discount develops whenever selling pressure forces the exchange price below that underlying per-share value.\n\nAccurately determining total liabilities represents a critical component of this calculation that casual observers frequently overlook. A fund's total liabilities consist of short-term debts, unpaid trade settlements, and accrued operational expenses. These accrued expenses encompass daily management fees, administrative costs, legal fees, and custodian expenses that the fund has incurred but has not yet paid in cash out of its custodial accounts. Deducting these accrued liabilities ensures that the resulting net asset value accurately reflects the actual net capital available to current shareholders rather than gross portfolio holdings. If you evaluate how asset changes compound over multi-year holding periods after calculating fund pricing, you can test your compounding assumptions with our [annualized return calculator](/investing/annualized-return-calculator/).",
+    "commonMistakes": [
+      "Assuming an exchange-traded fund always trades at its exact net asset value throughout the market day, ignoring how intraday supply and demand create premiums and discounts against the underlying portfolio value.",
+      "Forgetting to subtract accrued expenses and operational liabilities from gross portfolio assets before dividing by the number of shares outstanding.",
+      "Using outdated or stale portfolio asset values instead of the most recently published closing figures from the fund sponsor's official reporting portal.",
+      "Confusing total net assets with net asset value per share by dividing gross assets rather than net equity by the total share count.",
+      "Expecting a mutual fund order placed in the morning to fill immediately at the prior day's published net asset value rather than the upcoming market close price."
+    ],
+    "workedExample": "Consider a hypothetical open-end mutual fund named the Horizon Growth Fund. Suppose Horizon Growth holds a diversified equity portfolio with an aggregate closing market value of $250,000,000 across stocks, bonds, and cash reserves. In addition to these primary holdings, the fund holds $2,000,000 in accrued dividend receivables from corporations that declared distributions but have not yet deposited the cash into the fund's account. This raises total gross fund assets to $252,000,000.\n\nNext, the fund accountants calculate total fund liabilities. Horizon Growth owes $1,500,000 in pending trade settlements for stock purchases that executed earlier in the week. The fund also records $500,000 in accrued management fees, shareholder servicing fees, and administrative expenses owed to the investment adviser. Subtracting total liabilities of $2,000,000 ($1,500,000 plus $500,000) from total assets of $252,000,000 leaves total net assets of $250,000,000.\n\nFinally, the fund administrator divides these net assets across the fund's ownership units. If Horizon Growth has 10,000,000 total shares outstanding held across all retail and institutional shareholder accounts, the net asset value per share equals exactly $25.00 ($250,000,000 divided by 10,000,000 shares). Any investor purchasing shares of Horizon Growth on that business day pays $25.00 per share, while any departing investor redeeming shares receives $25.00 per share before any applicable transaction fees.",
+    "faqs": [
+      {
+        "question": "What is the formula for calculating NAV?",
+        "answer": "Net asset value per share equals total fund assets minus total fund liabilities, divided by total shares outstanding. Assets include the market value of all underlying portfolio securities, cash balances, and accrued receivables. Liabilities include accrued management fees, operating costs, and unsettled trades. Dividing this net equity by the total number of issued shares yields the exact per-share value."
+      },
+      {
+        "question": "How often is a mutual fund's NAV calculated?",
+        "answer": "Mutual funds calculate their net asset value once per business day after major United States stock exchanges close at 4:00 PM Eastern Time. Fund administrators price all portfolio securities against official market closing quotes, subtract all daily expenses, and post the updated figure in the evening. Mutual fund buy and sell orders execute at that single closing price rather than trading continuously during the day."
+      },
+      {
+        "question": "Can an ETF trade above or below its NAV?",
+        "answer": "Yes, an exchange-traded fund can trade above or below its net asset value. While an exchange-traded fund calculates its net asset value once daily like a mutual fund, its shares trade continuously on an exchange where market prices shift based on live buyer and seller supply. When market demand pushes the trading price above the underlying portfolio value, the fund trades at a premium. When heavy selling pushes the trading price below the portfolio value, the fund trades at a discount."
+      },
+      {
+        "question": "What counts as a fund's liabilities when calculating NAV?",
+        "answer": "Fund liabilities consist of all obligations and accrued operational debts that the fund owes but has not yet paid out of its cash reserves. Common liability line items include accrued investment advisory fees, administrative expenses, custody fees, audit fees, and unpaid broker settlement obligations for recent security transactions. Subtracting these operational obligations ensures that shareholders evaluate the actual net value of their capital."
+      },
+      {
+        "question": "Is NAV the same as a fund's share price?",
+        "answer": "For an open-end mutual fund, net asset value is the exact transaction price that investors pay to buy shares or receive when redeeming shares. For an exchange-traded fund, the share price frequently differs from the net asset value because the market price fluctuates continuously on a public stock exchange. An exchange-traded fund's market price reflects real-time exchange transactions, while its net asset value reflects the accounting value of its underlying basket of assets."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC Investor.gov \u2014 Net Asset Value",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/net-asset-value"
+      }
+    ],
+    "toolHeading": "Calculate Net Asset Value per Share",
+    "toolSubheading": "Enter the fund's total assets, liabilities, and outstanding shares to determine per-share NAV.",
+    "islandId": "nav-calculator",
+    "preset": {
+      "totalAssets": 500000000,
+      "totalLiabilities": 10000000,
+      "sharesOutstanding": 20000000
+    },
+    "relatedSlugs": [
+      "annualized-return-calculator",
+      "stock-average-cost-calculator"
+    ]
+  },
+
 ];

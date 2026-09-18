@@ -1,0 +1,44 @@
+{
+ "slug": "what-is-a-pell-grant",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2218,
+ "floor": 1200,
+ "input_tokens": 18055,
+ "output_tokens": 3640,
+ "thinking_tokens": 875,
+ "cached_tokens": 16693,
+ "est_cost_usd": 0.0211,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2218,
+  "numbers_not_in_facts": [
+   "14789",
+   "25",
+   "3000",
+   "4395",
+   "60",
+   "600"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17138
+  }
+ },
+ "seconds": 14.8,
+ "response_id": "666tapr8LI29sOIPouOygQI",
+ "generated_at": "2026-09-18T21:36:58+0000"
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "types-of-student-loans",
+  "metaTitle": "Types of Student Loans: Federal vs Private Explained",
+  "metaDescription": "Compare the main types of student loans. Learn how subsidized, unsubsidized, Direct PLUS, and private loans work so you can borrow the right way.",
+  "h1": "Types of Student Loans: How Federal and Private Options Compare",
+  "subtitle": "Understand subsidized, unsubsidized, Direct PLUS, and private student loans before you borrow.",
+  "introText": "Student loans split into two broad categories: federal loans funded by the government and private loans issued by banks, credit unions, and online lenders. Picking the wrong category or borrowing out of order can cost you thousands of dollars in avoidable interest charges and leave you without basic repayment safeguards. At The Modern Wallet, we build financial calculators and borrowing guides to help students run the numbers before signing a promissory note. Every borrowing decision should protect your budget during school and after graduation.",
+  "sections": [
+    {
+      "heading": "The Primary Division Between Federal and Private Borrowing",
+      "body": "Federal student loans come directly from the U.S. Department of Education under the William D. Ford Federal Direct Loan Program, while private loans come from financial institutions like banks, credit unions, and online lenders. That single difference in source changes everything about how the loan functions, who qualifies, and how you repay the balance.\n\nEvery federal loan offers statutory borrower protections, including income-driven repayment options, standardized deferment programs, and administrative discharge rights set by Congress. Private loans operate entirely under contract law. A private lender decides its own interest terms, repayment options, and hardship policies, and none of those perks match the statutory protections of a federal promissory note. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/student-loans/) recommends exhausting federal grant and loan options before turning to private lenders."
+    },
+    {
+      "heading": "Direct Subsidized Loans for Undergraduates With Need",
+      "body": "Direct Subsidized Loans are federal student loans reserved exclusively for undergraduate students who demonstrate financial need on the [Free Application for Federal Student Aid](https://studentaid.gov/h/apply-for-aid/fafsa) (FAFSA). The federal government pays the interest on these loans while you remain enrolled at least half-time, during the six-month grace period after you leave school, and throughout any authorized deferment period.\n\nBecause interest does not build up while you are sitting in class, a subsidized loan is the single cheapest form of borrowing available in higher education. A borrower who takes out subsidized debt graduates owing only the original principal amount borrowed, without years of compounded interest added to the bill. Federal rules strictly cap the annual and aggregate amounts you can borrow, which you can review in our [student loan borrowing limits guide](/guides/student-loan-borrowing-limits/)."
+    },
+    {
+      "heading": "Direct Unsubsidized Loans for Undergraduates and Graduate Students",
+      "body": "Direct Unsubsidized Loans are federal loans available to both undergraduate and graduate students regardless of demonstrated financial need. You do not need to show low family income to qualify for an unsubsidized loan, but you must take on full responsibility for the interest charges from the day the school receives the funds.\n\nInterest on an unsubsidized loan begins accruing immediately upon disbursement and runs throughout your time in school, your grace period, and any deferment. If you choose not to pay that interest while attending classes, the unpaid interest gets added to your principal balance at specific administrative triggers in a process called capitalization. Once capitalized, you pay interest on top of interest for the remainder of your repayment term. You can test how monthly payments fit into your financial plan with our [budget calculator](/budget/)."
+    },
+    {
+      "heading": "Direct PLUS Loans for Parents and Graduate Students",
+      "body": "Direct PLUS Loans are unsubsidized federal loans that require an applicant to pass a basic credit check confirming the absence of an adverse credit history. Unlike private loans, PLUS loans do not require proof of personal income, employment, or a specific minimum credit score. They carry higher borrowing limits than standard Direct Loans, allowing borrowers to cover the full remaining cost of attendance after accounting for other financial aid.\n\nThese loans come in two distinct categories with different borrowers of record. Parent PLUS Loans are taken out by parents of dependent undergraduate students, placing legal responsibility for the debt entirely on the parent rather than the student. For families weighing that choice against commercial borrowing, our [Parent PLUS Loan vs private student loan comparison](/compare/parent-plus-loan-vs-private-student-loan/) breaks down the real cost differences.\n\nThe second category is the Grad PLUS Loan, which graduate and professional students historically borrowed to fund their advanced degrees. Under the One Big Beautiful Bill Act (OBBBA), Congress eliminated the Grad PLUS Loan program for new borrowers after June 30, 2026. Students who borrowed under the program prior to that date retain access under a legacy provision through June 30, 2029, as explained in detail on the official [Federal Student Aid PLUS page](https://studentaid.gov/understand-aid/types/loans/plus)."
+    },
+    {
+      "heading": "Private Student Loans From Commercial and Nonprofit Lenders",
+      "body": "Private student loans are commercial credit products underwritten on the applicant's credit score, verifiable income, and existing debt obligations rather than financial need. Because most undergraduate students lack the established credit history or income needed to qualify on their own, roughly nine out of ten private undergraduate loans require a creditworthy cosigner to guarantee the debt.\n\nPrivate loans do not include federal repayment plans, government interest subsidies, or access to public loan forgiveness. If you lose your job or face an unexpected drop in household income, a private lender is not legally required to lower your monthly payments. You can read our breakdown of underwriting criteria in our [private student loan requirements guide](/guides/private-student-loan-requirements/) before submitting an application to a commercial bank or credit union."
+    },
+    {
+      "heading": "Enrollment Rules Across All Loan Categories",
+      "body": "Federal Direct Loans and private student loans share a universal requirement: the student borrower must be enrolled at least half-time in a degree or certificate program at an eligible institution. A school's financial aid office must certify your enrollment status and your total cost of attendance before loan funds can be disbursed to pay for tuition and campus fees.\n\nDropping below half-time enrollment triggers your repayment timeline across both federal and private products. For federal loans, dropping below half-time starts the countdown on your six-month grace period before payments become due on the [student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/). For private loans, dropping below half-time often begins your contractual grace period immediately, depending on the terms written into your private credit agreement."
+    },
+    {
+      "heading": "A Smart Borrowing Order to Minimize Total Interest",
+      "body": "Borrowing in the correct sequence minimizes the total interest you pay over the life of your debt. Our general rule of thumb is simple: accept every dollar of Direct Subsidized Loan funding you qualify for first, because interest does not build while you attend school. That single step keeps your starting loan balance as low as possible at graduation.\n\nMove to Direct Unsubsidized Loans only after exhausting your subsidized options, because unsubsidized borrowing still gives you access to flexible federal repayment programs. Treat PLUS loans and private student loans as a last resort for any remaining financial gap. If a private lender offers an interest rate below federal PLUS options, compare the interest savings directly against the permanent loss of federal safety nets before you accept the contract. Check your total borrowing targets against our [student loan borrowing limits guide](/guides/student-loan-borrowing-limits/) before submitting your final loan requests for the upcoming school year."
+    }
+  ],
+  "ctaTitle": "Run Your Student Loan Numbers",
+  "ctaText": "Use our free financial tools to plan your budget and model monthly payments.",
+  "ctaButton": "Explore Student Loan Guides",
+  "faqItems": [
+    {
+      "question": "What are the main types of student loans?",
+      "answer": "The main types of student loans are federal loans and private loans. Federal options include Direct Subsidized Loans for undergraduates with financial need, Direct Unsubsidized Loans for undergraduate and graduate students, and Direct PLUS Loans for parents and graduate students. Private student loans are commercial credit products issued by banks, credit unions, and online lenders that require a credit check and often require a cosigner."
+    },
+    {
+      "question": "What is the difference between subsidized and unsubsidized loans?",
+      "answer": "The difference between subsidized and unsubsidized loans is who pays the interest while you attend school. With a Direct Subsidized Loan, the federal government pays the interest while you are enrolled at least half-time, during your grace period, and throughout any deferment. With an unsubsidized loan, interest starts accumulating the day funds are disbursed, and unpaid interest can capitalize and increase your principal balance."
+    },
+    {
+      "question": "What is a Direct PLUS Loan?",
+      "answer": "A Direct PLUS Loan is an unsubsidized federal loan available to parents of dependent undergraduates and graduate students. PLUS loans require a basic credit check to ensure the borrower has no adverse credit history, but they do not evaluate personal income or debt ratios. They allow families to borrow up to the school's full cost of attendance minus other financial aid received."
+    },
+    {
+      "question": "Should I take federal or private student loans first?",
+      "answer": "You should take federal student loans first before turning to private loans. Federal loans carry fixed interest rates, income-driven repayment options, and administrative relief programs set by federal law. Private loans lack these protections and depend entirely on your private contract terms, making them riskier if you face financial hardship after leaving school."
+    },
+    {
+      "question": "Is Grad PLUS still available in 2026?",
+      "answer": "Grad PLUS loans remain available for new borrowers until June 30, 2026. Under the One Big Beautiful Bill Act (OBBBA), the Grad PLUS program is eliminated for new student borrowers after that date. Graduate students who borrowed a Grad PLUS Loan prior to July 1, 2026, can continue borrowing under the program through June 30, 2029, under a legacy provision."
+    }
+  ]
+}

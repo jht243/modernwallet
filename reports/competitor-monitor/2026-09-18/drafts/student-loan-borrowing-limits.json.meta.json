@@ -1,0 +1,37 @@
+{
+ "slug": "student-loan-borrowing-limits",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1418,
+ "floor": 1200,
+ "input_tokens": 18482,
+ "output_tokens": 2328,
+ "thinking_tokens": null,
+ "cached_tokens": 16693,
+ "est_cost_usd": 0.0132,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1418,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17138
+  }
+ },
+ "seconds": 9.0,
+ "response_id": "4q6tau3iLe6bjrEPwvGu6Qo",
+ "generated_at": "2026-09-18T21:36:43+0000"
+}

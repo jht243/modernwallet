@@ -1,0 +1,42 @@
+{
+ "slug": "private-student-loan-requirements",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1789,
+ "floor": 1200,
+ "input_tokens": 17896,
+ "output_tokens": 2676,
+ "thinking_tokens": 1115,
+ "cached_tokens": 16693,
+ "est_cost_usd": 0.0182,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1789,
+  "numbers_not_in_facts": [
+   "2400",
+   "40",
+   "6000",
+   "740"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17138
+  }
+ },
+ "seconds": 15.5,
+ "response_id": "0q6tapPrPMK9jMcPoqTxyA8",
+ "generated_at": "2026-09-18T21:36:34+0000"
+}
