@@ -1,0 +1,45 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-18",
+  "window_start": "2026-09-18",
+  "window_end": "2026-09-18",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/investing/annualized-return-calculator/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-ai-stock-pickers",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 4,
+  "top10_pages_total_clicks": 4,
+  "channel_split": {
+    "/investing/annualized-return-calculator/": {
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/": {
+      "Referral": 1
+    },
+    "/roundup/best-ai-stock-pickers": {
+      "Direct": 1
+    }
+  }
+}
