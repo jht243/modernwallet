@@ -186,3 +186,5 @@
 | /compare/utma-vs-ugma/ | 2026-09-17 | 1 | 0/0/0/0/0 | 0 |
 | /guides/passive-income-ideas/ | 2026-09-17 | 1 | 0/0/2/0/0 | 0 |
 | /portfolio/60-40-portfolio-calculator/ | 2026-09-17 | 1 | 0/0/0/0/0 | 0 |
+| /investing/annualized-return-calculator/ | 2026-09-18 | 2 | 0/0/0/0/0 | 0 |
+| /roundup/best-ai-stock-pickers | 2026-09-18 | 1 | 0/1/0/0/0 | 0 |
