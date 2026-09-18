@@ -57147,11 +57147,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/parent-student-loans": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:fc978bb6a7c8c836a4726c80f10b3531749e5eb0b69fab81c743b2f7e9473758",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T15:20:23-04:00",
+          "our_url": "/compare/parent-plus-loan-vs-private-student-loan/",
           "outline": [
             "Key takeaways",
             "Parent PLUS vs. private student loan rates",
@@ -57172,7 +57176,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Parent PLUS Loans Vs. Private Student Loans | Bankrate",
           "tool_io": []
         },
@@ -57257,11 +57261,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/private-student-loan-requirements": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:f8273243d41a734ec1cb383f69e0a783b77c782a9b4de36dd62409a8c1c3e5ce",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T15:12:46-04:00",
+          "our_url": "/guides/private-student-loan-requirements/",
           "outline": [
             "Key takeaways",
             "Private student loan eligibility requirements",
@@ -57286,7 +57294,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Private Student Loan Requirements: How To Qualify | Bankrate",
           "tool_io": []
         },
@@ -58420,11 +58428,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/student-loan-limits": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:8ebe664095dc254fbcf1752a40ddfa2fa15aad04a9d23038756460bcd88d818e",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:41:44-04:00",
+          "our_url": "/guides/student-loan-borrowing-limits/",
           "outline": [
             "Key takeaways",
             "Federal student loan limits",
@@ -58443,7 +58455,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Can I Take Out In Student Loans? | Bankrate",
           "tool_io": []
         },
@@ -58632,11 +58644,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/types-of-student-loans": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:ce6a8d7d33729a24b0ed64906a2d7a1cacb159cf4b73c098b8830473d1a2a228",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T13:56:19-04:00",
+          "our_url": "/guides/types-of-student-loans/",
           "outline": [
             "Key takeaways",
             "Student loan types: Federal and private",
@@ -58656,7 +58672,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Types Of Student Loans &amp; How To Choose One | Bankrate",
           "tool_io": []
         },
@@ -58693,11 +58709,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/student-loans/what-is-a-pell-grant": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:5420d2388eadecefac906cf4a75bcced34bc7e5251ad3ff044a5555d2f654d62",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:27:53-04:00",
+          "our_url": "/guides/what-is-a-pell-grant/",
           "outline": [
             "Key takeaways",
             "Pell Grant updates with Trump&#8217;s budget reconciliation bill",
@@ -58718,7 +58738,7 @@
             "loans",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is A Pell Grant And How Do I Apply? | Bankrate",
           "tool_io": []
         },
@@ -61948,11 +61968,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/mortgages/four-questions-to-ask-mortgage-lender": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:028be2e787170bfd0ab16490619903b90a85db55cda24c66a1e11c8c05c57463",
+          "disposition": "published",
           "first_seen": "2026-09-18",
           "kind": "page",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T19:00:00-04:00",
+          "our_url": "/guides/questions-to-ask-a-mortgage-lender/",
           "outline": [
             "Ask: What loan programs do I qualify for?",
             "Ask: How much are rates and fees?",
@@ -61967,7 +61991,7 @@
             "mortgage",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "4 Questions to Ask a Mortgage Lender, From Realtors |",
           "tool_io": []
         },
@@ -270391,11 +270415,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/nav": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:fbb35300087a350a12314496e4f0fbc490d0492e2bdf36d32b0a62dc6d41af6c",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:05:55.764Z",
+          "our_url": "/investing/nav-calculator/",
           "outline": [
             "What is net asset value? \u2014 Net asset value definition",
             "How to calculate the net asset value? \u2014 The net asset value formula",
@@ -270412,7 +270440,7 @@
             "finance",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "NAV Calculator",
           "tool_io": [
             "label: Cash and cash equivalents",
@@ -273707,11 +273735,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/stock": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:823880c5933c94481694b61fb99189bf076d8fd10e32d7e90f7f1922c59eea5e",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:17:42.082Z",
+          "our_url": "/investing/stock-profit-calculator/",
           "outline": [
             "What are stocks?",
             "How is the stock price determined?",
@@ -273728,7 +273760,7 @@
             "finance",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Stock Calculator",
           "tool_io": [
             "label: Buying price",
@@ -273743,11 +273775,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/stock-average": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:459a6f44f33e1d5d8cfba52127b513853ef18084d3927a7fa45202e9baae7dec",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:26:29.392Z",
+          "our_url": "/investing/stock-average-cost-calculator/",
           "outline": [
             "What is the cost basis of a stock?",
             "How to calculate average stock price",
@@ -273762,7 +273798,7 @@
             "finance",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Stock Average Calculator",
           "tool_io": [
             "label: 1st buy #",
@@ -273772,11 +273808,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/stock-split": {
+          "acted": true,
+          "acted_date": "2026-09-18",
           "content_hash": "sha256:422a7169c05c89f10ef86fa806d019bf9468906c3ad2126b63800e1f57c34156",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-09-18",
           "lastmod": "2026-09-18T14:37:32.939Z",
+          "our_url": "/investing/stock-split-calculator/",
           "outline": [
             "What is a stock split?",
             "How to calculate a stock split \u2014 Calculating reverse stock split",
@@ -273791,7 +273831,7 @@
             "calculator",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Stock Split Calculator",
           "tool_io": [
             "label: Share price",
