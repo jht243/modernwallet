@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-09-12",
+  "run_date": "2026-09-19",
   "pages_analyzed": [
     "/compare/trump-account-vs-brokerage-account/",
     "/compare/trump-account-vs-savings-account/",
@@ -27,7 +27,11 @@
     "/elder-care/special-needs-trust-calculator/",
     "/estate-planning/will-cost-calculator/new-mexico/",
     "/estate-planning/will-cost-calculator/washington/",
-    "/estate-planning/will-cost-calculator/iowa/"
+    "/estate-planning/will-cost-calculator/iowa/",
+    "/estate-planning/will-cost-calculator/louisiana/",
+    "/estate-planning/will-cost-calculator/maryland/",
+    "/estate-planning/will-cost-calculator/missouri/",
+    "/estate-planning/will-cost-calculator/oregon/"
   ],
   "sections_added": {
     "/compare/trump-account-vs-brokerage-account/": [
@@ -133,6 +137,18 @@
     ],
     "/compare/529-vs-utma/": [
       "Can a 529 or UTMA lose money if the market drops?"
+    ],
+    "/estate-planning/will-cost-calculator/louisiana/": [
+      "Can I disinherit my child in Louisiana?"
+    ],
+    "/estate-planning/will-cost-calculator/maryland/": [
+      "Who inherits my property in Maryland if I die without a will?"
+    ],
+    "/estate-planning/will-cost-calculator/missouri/": [
+      "Who inherits my property in Missouri if I die without a will?"
+    ],
+    "/estate-planning/will-cost-calculator/oregon/": [
+      "Does my will still cover my ex-spouse after a divorce in Oregon?"
     ]
   },
   "strengthened": {

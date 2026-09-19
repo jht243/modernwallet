@@ -506,6 +506,13 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in Louisiana?",
     introText: "In Louisiana, a simple attorney-drafted notarial testament typically costs $270 to $720, about 10% below the national baseline. Unlike in other states, most $0 online tools cannot produce a valid Louisiana will because they skip the required notary. As an alternative, Louisiana's civil-law system also recognizes olographic, or fully handwritten, wills.",
     lawContext: "Louisiana Civil Code article 1577 requires a notarial testament to be in writing, dated, and signed by the testator at the end and on each other separate page, in the presence of a notary and two competent witnesses, followed by a specific attestation clause signed by the witnesses and the notary. This two-witnesses-plus-notary requirement is unique to Louisiana, and online will services that only prompt for witness signatures will not produce a valid will here. Louisiana also recognizes olographic wills under La. Civ. Code art. 1575 if the entire will is written, dated, and signed in the testator's own hand.\n\nAttorney fees in Louisiana run about $270-$720 for a simple notarial testament, $675-$2,250 for a moderate estate plan, and $2,250-$6,750+ for complex plans, and the attorney typically handles the notary requirement in the same appointment. Louisiana has no state estate tax and no state inheritance tax. Online options like FreeWill ($0), LegalZoom ($129/$229), Trust & Will ($199/$299), and Nolo WillMaker ($99-$209) can be starting points but must be re-executed in front of a notary and two witnesses using Louisiana's attestation language to be valid.",
+    extraFaqs: [
+      {
+        question: "Can I disinherit my child in Louisiana?",
+        answer:
+          "You can disinherit a child in Louisiana if they are 24 or older and not permanently incapacitated. Louisiana is the only U.S. state that enforces forced heirship. Under Louisiana Civil Code articles 1493 to 1503, this law reserves a protected forced portion of your estate for any descendant who is 23 or younger at your death, or of any age if permanently incapable of caring for themselves or administering their own estate because of mental incapacity or physical infirmity. Under article 1621, you can disinherit a forced heir only for specific just causes, such as striking a parent or persistent criminal conduct. Mere estrangement, disagreement, or disapproval of a child's lifestyle is not a valid ground.",
+      },
+    ],
   },
   "maine": {
     title: "Will Cost in Maine 2026: Attorney vs Online Prices",
@@ -520,6 +527,13 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in Maryland?",
     introText: "In Maryland, a will costs $0 with a free online tool like FreeWill, while a simple attorney-drafted will costs roughly $345 to $920, about 15% above the national baseline. Maryland does not recognize holographic wills, except for a narrow military exception, and is the only U.S. state to impose both a state estate tax and a separate state inheritance tax.",
     lawContext: "Under Maryland Estates & Trusts Article 4-102, a valid will must be in writing, signed by the testator, and attested and signed by two or more credible witnesses in the presence of the testator. Maryland does not recognize holographic wills except in a narrow exception under 4-103 for members of the U.S. armed services (void one year after discharge), and self-proving affidavits are permitted under 4-102 to streamline probate.\n\nAttorney fees in Maryland run about $345-$920 for a simple will, $863-$2,875 for a moderate estate plan, and $2,875-$8,625+ for complex plans. Maryland is unique in imposing both a state estate tax (with a $5M exemption) and a state inheritance tax (10% on transfers to non-lineal beneficiaries such as siblings, nieces, nephews, and friends), so beneficiary structure matters even at modest net worths. Online options include FreeWill ($0), LegalZoom ($129/$229), Trust & Will ($199/$299), and Nolo WillMaker ($99-$209).",
+    extraFaqs: [
+      {
+        question: "Who inherits my property in Maryland if I die without a will?",
+        answer:
+          "Your surviving spouse and descendants inherit your property under Maryland's intestate succession statute (Md. Code, Estates & Trusts §3-102). Verbal intentions do not control who inherits. A surviving spouse inherits the entire estate if there is no surviving minor child and no descendants outside that spouse's line. If you leave a surviving minor child, the spouse's share drops to one-half, and the other half passes to your descendants. If no minor child survives but you leave descendants who are not also descendants of the surviving spouse, the spouse receives the first $100,000 plus one-half of whatever remains.",
+      },
+    ],
   },
   "massachusetts": {
     title: "Massachusetts Will Cost: Attorney vs Online (2026)",
@@ -555,6 +569,13 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in Missouri?",
     introText: "In Missouri, a simple will typically costs $285 to $760 with an attorney, or $0 to $299 online. Legal fees in Missouri run about 5% below the national average. Because there is no state estate or inheritance tax, most Missouri residents can safely use online will services.",
     lawContext: "Missouri requires a will to be signed by the testator (age 18+ and of sound mind) and witnessed by two competent individuals under Mo. Rev. Stat. § 474.320. Missouri does not recognize holographic wills. A self-proving affidavit, signed before a notary, is strongly recommended because it lets the will be admitted to probate without calling the witnesses to testify.\n\nExpect attorney fees of roughly $285-$760 for a simple will, $713-$2,375 for moderate complexity, and $2,375-$7,125+ for complex estates. Missouri has no state estate tax and no state inheritance tax. Online options like FreeWill ($0), Trust & Will ($199), LegalZoom Basic ($129), and Nolo WillMaker ($99-$209) all work well for typical Missouri estates.",
+    extraFaqs: [
+      {
+        question: "Who inherits my property in Missouri if I die without a will?",
+        answer:
+          "Under Missouri's intestate succession statute (RSMo §474.010), your probate estate passes to your surviving spouse and descendants based on statutory formulas rather than verbal wishes. A surviving spouse inherits the entire estate if you leave no descendants. If all your surviving descendants are also descendants of your spouse, your spouse inherits the first $20,000 plus one-half of the remaining balance, and the descendants split the rest. That spousal share drops to one-half of the estate if you leave children from a prior relationship. Intestate succession only governs probate property, so assets with a named beneficiary, payable-on-death designations, or joint ownership with survivorship pass outside the estate automatically.",
+      },
+    ],
   },
   "montana": {
     title: "Montana Will Cost: Attorney vs Online (2026)",
@@ -651,6 +672,13 @@ const WILL_COST_STATE_OVERRIDES: Record<string, StateOverride> = {
     h1: "How Much Does a Will Cost in Oregon?",
     introText: "In Oregon, a simple attorney-drafted will typically costs $330 to $880. For a will of moderate complexity, the cost is usually $825 to $2,750, while complex estates typically cost $2,750 to $8,250+. Oregon attorney fees are about 10% above the national baseline. Online options range from $0 to $299.",
     lawContext: "Oregon wills must be in writing, signed by a testator age 18 or older (or lawfully married), and witnessed by two competent individuals who see the testator sign or hear the testator acknowledge the will (ORS 112.235). A self-proving affidavit before a notary is authorized under ORS 113.055. Oregon does not recognize holographic wills.\n\nOregon imposes a state estate tax with an exemption of just $1 MILLION — the LOWEST estate tax threshold in the entire United States. Any Oregon resident with real estate, retirement accounts, and life insurance totaling over $1M should assume state estate tax exposure, with rates ranging from 10% to 16% on amounts above the exemption. Oregon has no inheritance tax. Online services (FreeWill $0, LegalZoom $129/$229, Trust & Will $199/$299, Nolo $99-$209) satisfy Oregon's execution rules but cannot design around the $1M threshold — Oregonians approaching that estate size should engage a licensed attorney.",
+    extraFaqs: [
+      {
+        question: "Does my will still cover my ex-spouse after a divorce in Oregon?",
+        answer:
+          "No, a final divorce automatically revokes any will provisions favoring your former spouse. Under Oregon Revised Statutes (ORS) 112.315, the law treats your ex-spouse as having died before you, which voids their inheritance and personal representative appointment. This revocation occurs automatically without amending or refiling the will, unless the document explicitly states that those provisions should survive. However, this state-law revocation does not reach life insurance policies or retirement accounts governed by the Employee Retirement Income Security Act (ERISA). You must update those beneficiary designations directly with each plan administrator or insurer, or your former spouse can still receive that money.",
+      },
+    ],
   },
   "pennsylvania": {
     title: "Will Cost in Pennsylvania: Attorney vs Online (2026)",

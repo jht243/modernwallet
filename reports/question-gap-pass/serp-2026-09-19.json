@@ -1,0 +1,143 @@
+{
+ "pages": {
+  "/estate-planning/will-cost-calculator/louisiana/": {
+   "query": "how much does a will cost in louisiana",
+   "paa": [
+    "Do you need a lawyer for a will in Louisiana?",
+    "Is it better to have a will or trust in Louisiana?",
+    "Is it legal to write your own will in Louisiana?",
+    "Can I just write out my own will?",
+    "What should you not put in a will?",
+    "Should bank accounts be mentioned in a will?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fieldlawllc.com",
+    "www.louisianasuccessionattorney.com",
+    "www.baringerlawfirm.com",
+    "wjblanchardlaw.com",
+    "trustandwill.com",
+    "www.swiftprobate.com",
+    "simplytrust.com",
+    "www.contractscounsel.com",
+    "louisianalawhelp.org",
+    "www.nobelprize.org"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/estate-planning/will-cost-calculator/maryland/": {
+   "query": "how much does a will cost in maryland",
+   "paa": [
+    "Do you need a lawyer for a will in Maryland?",
+    "What is the cheapest way to have a will?",
+    "Is it better to have a will or a trust in Maryland?",
+    "Can I write my own will in Maryland?",
+    "Who cannot be a beneficiary of a will?",
+    "Who inherits if there is no will in Maryland?"
+   ],
+   "related_searches": [
+    "How much does a will cost in maryland without",
+    "How much does a will cost in maryland calculator",
+    "Maryland will template",
+    "Maryland last will and testament",
+    "Last will and Testament cost",
+    "How much does it cost to register a will",
+    "How to make a will without a lawyer",
+    "Register of Wills estate Search by name"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "registers.maryland.gov",
+    "trustandwill.com",
+    "ardenlawfirm.com",
+    "www.acornlawllc.com",
+    "www.scheuermanlaw.com",
+    "www.peoples-law.org",
+    "bflawmd.com",
+    "www.thespencerlawgroup.com",
+    "registers.maryland.gov",
+    "labor.maryland.gov"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/estate-planning/will-cost-calculator/missouri/": {
+   "query": "how much does a will cost in missouri",
+   "paa": [
+    "Do I need a lawyer to make a will in Missouri?",
+    "Is it better to have a trust or will in Missouri?",
+    "Can I create a will without a lawyer?",
+    "How much can you inherit without paying taxes in Missouri?",
+    "Who inherits when there is no will in Missouri?",
+    "Which assets are exempt from inheritance tax?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.lifegenlawgroup.com",
+    "www.theelderlawgroup.com",
+    "nemolegal.com",
+    "www.reddit.com",
+    "iastl.com",
+    "steinmetzltd.com",
+    "simplytrust.com",
+    "doyellaw.com",
+    "www.tdd-law.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/estate-planning/will-cost-calculator/oregon/": {
+   "query": "how much does a will cost in oregon",
+   "paa": [
+    "Do I need a lawyer for a will in Oregon?",
+    "What's the least expensive way to do a will?",
+    "Can I make a simple will in Oregon?",
+    "Does Oregon require a will to be notarized?",
+    "Who inherits when there is no will in Oregon?",
+    "Can I just write out my own will?"
+   ],
+   "related_searches": [
+    "How much does a living trust cost in oregon",
+    "How much does it cost to make a will",
+    "Creating a will in oregon",
+    "Living trust vs will in oregon",
+    "How to avoid probate in oregon",
+    "Can I write my own will and have it notarized",
+    "Free Wills for seniors",
+    "Do I need an executor for a simple will"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.osbar.org",
+    "www.levinelawcenter.com",
+    "swpdxlaw.com",
+    "simplytrust.com",
+    "whiteoakwills.com",
+    "trustandwill.com",
+    "thecommonslawcenter.org",
+    "www.paulfsherman.com",
+    "oregonlegalcenter.com",
+    "fairhalllab.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 4 calls, $0.01660 of $2.00 budget"
+}
