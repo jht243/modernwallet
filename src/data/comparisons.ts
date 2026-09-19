@@ -2972,6 +2972,141 @@ export const COMPARISONS: ComparisonEntry[] = [
     updated: "2026-09-12",
   },
 
+  // ─── Custodial Roth IRA vs Trust Fund (ga4-top-pages pass 2026-09-19) ──
+  {
+  "slug": "custodial-roth-ira-vs-trust-fund",
+  "updated": "2026-09-19",
+  "title": "Custodial Roth IRA vs Trust Fund: Which Fits Your Child?",
+  "metaDescription": "Custodial Roth IRA vs trust fund: compare setup costs, tax treatment, contribution limits, and when your child receives full control over the money.",
+  "targetKeyword": "custodial roth ira vs trust fund",
+  "optionA": "Custodial Roth IRA",
+  "optionB": "Trust Fund",
+  "segment": "Kids & family investing",
+  "h1": "Custodial Roth IRA vs Trust Fund: Which Is Better for Your Child?",
+  "introText": "Choose a custodial Roth Individual Retirement Account (Roth IRA) if your child earns income from a job and you want tax-free growth without setup costs. A trust fund fits better when you plan to transfer a large sum or physical property, set custom distribution milestones, or gift money to a child who has no wages.\n\nIn the guides we publish here, we show the real math behind wealth-building tools like these, so families can see exactly what a choice costs before they commit to it. A custodial Roth IRA requires documented earned income, capping annual contributions at $7,000 for 2025. A trust fund has no earned income requirement and accepts unlimited funding, but creating one usually requires an estate planning attorney and formal asset retitling. This guide compares both vehicles across legal control, setup expenses, taxation, and financial aid impact.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Earned income required",
+        "a": "Yes, child must have documented wages or self-employment",
+        "b": "No, anyone can gift money or property at any time"
+      },
+      {
+        "dimension": "Annual contribution limit (2025)",
+        "a": "Lesser of child's earned income or $7,000",
+        "b": "No legal cap (federal gift tax reporting rules apply)"
+      },
+      {
+        "dimension": "Initial setup cost",
+        "a": "Free or low minimum deposit at major brokerages",
+        "b": "$1,500 to $5,000 or more for attorney drafting"
+      },
+      {
+        "dimension": "What assets it can hold",
+        "a": "Public securities, index funds, exchange-traded funds, cash",
+        "b": "Cash, securities, real estate, business interests, life insurance"
+      },
+      {
+        "dimension": "Taxation on growth and income",
+        "a": "Completely tax-free growth and qualified withdrawals",
+        "b": "Varies: grantor rates or compressed trust rates hitting 37% at $15,650"
+      },
+      {
+        "dimension": "When child takes full control",
+        "a": "Age of majority (18 to 21 depending on state law)",
+        "b": "Any age or milestone chosen by the grantor in trust terms"
+      },
+      {
+        "dimension": "FAFSA college aid treatment",
+        "a": "Excluded from student asset reporting entirely",
+        "b": "Varies by drafting; consult an aid officer or estate attorney"
+      }
+    ]
+  },
+  "verdict": "Pick a custodial Roth IRA when you want a free, simple account to invest wages for a working teenager, locking in decades of completely tax-free compound growth. Pick a trust fund when you need to transfer real estate, privately held business interests, or a large sum to a minor under tight distribution rules that extend well beyond age 18. Families transferring a large sum frequently fund both vehicles together, maxing out the working teen's Roth IRA first before placing additional family capital inside a formal trust arrangement. Model long-term account compounding with our [Investment calculator](/investing/) and review broader asset transfer strategies inside our [Estate Planning Hub](/estate-planning/).",
+  "sections": [
+    {
+      "heading": "What Each Vehicle Is and Who Can Fund It",
+      "content": "A custodial Roth IRA is a tax-advantaged individual retirement account opened by an adult for the benefit of a minor who earns taxable wages. Federal rules require the child to earn documented income from formal employment or bona fide self-employment, such as neighborhood babysitting or yard care. Total annual contributions cannot exceed the child's actual net earned income for the calendar year, with an absolute ceiling of $7,000 for 2025 under [IRS Roth IRA rules](https://www.irs.gov/retirement-plans/roth-iras). Parents, grandparents, or the children themselves can supply the actual cash deposits, provided the child's reported earnings equal or exceed the total amount contributed. Once deposited, the money grows sheltered from federal and state taxes, and all original contributions can be withdrawn at any time without penalty or income tax liability.\n\nA trust fund is a distinct legal relationship created by a written agreement rather than a standard brokerage form. A grantor creates the trust and transfers property to a trustee. That trustee holds legal title and manages the assets for named beneficiaries. Unlike an individual retirement account, a trust requires no earned income from the child. A parent, grandparent, or family friend can gift any dollar amount to a trust for a newborn on the day of birth. Trusts also accommodate asset classes that cannot sit inside a retirement account. A grantor can title rental properties, family business shares, physical collectibles, and life insurance policies directly into the trust's legal name. The grantor dictates every distribution rule in the governing document, deciding whether the child receives distributions for college tuition, health needs, or broad living allowances.\n\nFunding rules create the first natural boundary between these two choices. If your child does not work a job and earn taxable income, opening a custodial Roth IRA is legally impossible. In that scenario, gifting money through a trust or an account under the Uniform Transfers to Minors Act (UTMA) represents the viable path forward. You can compare those specific mechanics in our guide on [Custodial Roth IRA vs UTMA](/compare/custodial-roth-ira-vs-utma/). Conversely, if your teen earns $4,000 from summer lifeguarding, a custodial Roth IRA offers a direct home for those funds without creating an elaborate legal structure."
+    },
+    {
+      "heading": "Setup Costs, Paperwork, and Ongoing Account Maintenance",
+      "content": "Opening a custodial Roth IRA takes fifteen minutes on a brokerage website and carries zero creation fees. Major financial institutions let parents complete the entire application online by entering the child's Social Security number and linking an existing bank account. You can explore leading firms with zero account minimums in our review of the [Best Custodial Roth IRA Providers](/roundup/best-custodial-roth-ira-providers/). Once opened, maintaining the account requires no legal filings, court registrations, or annual state reports. The custodian selects index funds, mutual funds, or individual stocks, and the brokerage handles annual tax reporting on standard information forms. If you want a flexible taxable option alongside it, review our breakdown of a [Custodial Roth IRA vs Brokerage Account](/compare/custodial-roth-ira-vs-brokerage-account/).\n\nEstablishing a trust fund demands legal expertise, custom document drafting, and upfront capital. According to research on legal fees published by [SmartAsset](https://smartasset.com/estate-planning/how-much-does-it-cost-to-set-up-a-trust), a basic revocable living trust package drafted by an estate planning attorney typically costs between $1,500 and $4,000 in 2026. That package generally includes the core trust declaration, a pour-over will, financial powers of attorney, and healthcare directives. When a family requires specialized minor sub-trust provisions, incentive clauses, or multi-state real estate transfer deeds, comprehensive legal drafting routinely pushes total setup costs past $5,000. Subsequent modifications to the trust terms, such as changing a successor trustee or altering beneficiary age milestones, typically incur attorney amendment fees of $300 to $500.\n\nA trust also introduces an ongoing operational step known as trust funding. Writing and signing the trust document creates an empty vessel. The grantor must formally retitle bank accounts, update brokerage registrations, and execute new county deeds for real estate so ownership transfers to the trustee. If you purchase a new parcel of real estate five years later and fail to deed it into the trust's name, that property falls outside the trust's governance and may face probate court upon your death. A custodial Roth IRA requires no deeds or retitling chores because the account itself serves as the registered holding container."
+    },
+    {
+      "heading": "How Growth and Income Are Taxed in Each Structure",
+      "content": "Taxation separates these two estate planning tools completely. A custodial Roth IRA offers straightforward tax treatment. Contributions enter the account after income taxes have already been paid. Inside the account, dividends, interest payments, and capital gains accumulate entirely tax-free. Qualified distributions taken during retirement carry zero federal or state income tax liability. Because original contributions can be withdrawn at any time without taxes or early withdrawal penalties, parents gain emergency liquidity for the child's benefit.\n\nTrust taxation is far more complex. Tax rules depend on whether the trust is revocable or irrevocable. A revocable living trust is treated as a grantor trust for federal tax purposes. The grantor keeps full operational control over the assets. Because of that control, the trust is not a separate taxpayer. All interest, dividends, and realized capital gains flow directly onto the grantor's personal tax return. The income is taxed at the grantor's personal bracket. The trust itself files no separate return.\n\nNon-grantor irrevocable trusts follow completely different rules. These entities file their own annual tax returns on IRS Form 1041. If the trustee leaves earnings inside the trust, those retained gains face steep tax rates. As detailed in the [IRS Form 1041 instructions](https://www.irs.gov/instructions/i1041), federal trust tax brackets compress dramatically compared to individual personal brackets. For 2025, a non-grantor trust reaches the top 37% federal income tax bracket at just $15,650 of retained taxable income. By comparison, an unmarried individual filer does not reach the 37% bracket until taxable income passes $626,350. Trust investment income retained above statutory thresholds can also trigger an additional 3.8% Net Investment Income Tax.\n\nTrustees often manage this tax drag by making distributions. When a trustee pays income out to a minor beneficiary, that income passes through on a Schedule K-1. The distributed earnings are then taxed on the beneficiary's tax return. That distribution strategy lowers the trust's tax bill. However, it transfers taxable funds directly into the child's hands.\n\nMany parents confuse trust tax brackets with custodial account rules. Custodial accounts under UTMA or UGMA statutes do not pay compressed trust tax rates. Instead, custodial accounts fall under the federal kiddie tax rules detailed in [IRS Topic 553](https://www.irs.gov/taxtopics/tc553). For 2025, the first $1,350 of a child's unearned investment income is tax-free. The next $1,350 is taxed at the child's own rate. Any unearned income exceeding $2,700 is taxed at the parents' marginal income tax rate. Learn more about these specific thresholds in our guide to [Custodial Account Taxes and the Kiddie Tax](/guides/custodial-account-taxes-kiddie-tax/). A custodial Roth IRA bypasses both of these tax regimes because its investment growth remains sheltered from annual taxation entirely."
+    },
+    {
+      "heading": "Control and Payout Schedules: Age 18 vs Custom Milestones",
+      "content": "Legal control over the accumulated money represents the primary reason parents choose a trust over a custodial account. When you open a custodial Roth IRA, state law dictates when your parental authority ends. In most states, the minor attains the legal age of majority at 18 or 21. On that statutory birthday, legal ownership transfers to the child completely. The newly minted adult can contact the brokerage, assume sole control of the account, and change login credentials. While Roth IRA withdrawal penalties on investment earnings discourage rapid liquidation, the young adult maintains the absolute legal authority to cash out the entire account balance on their eighteenth birthday and spend it on whatever they wish.\n\nA trust eliminates that sudden loss of parental control. The grantor holds the legal power to establish customized distribution schedules spanning decades. Rather than delivering a large cash balance at age 18, a trust document can stipulate that the trustee only releases funds for college tuition, vocational training, medical emergencies, or living stipends until the child reaches mature adulthood. Common drafting structures release principal in staggered tiers, such as one-third at age 25, one-third at age 30, and the final balance at age 35. You can also tie distributions directly to verifiable personal milestones, such as completing a four-year college degree or purchasing a primary residence.\n\nA trust can also protect family wealth from third-party threats. If a beneficiary faces a lawsuit, bankruptcy, or divorce later in life, an irrevocable trust equipped with a valid spendthrift clause can shield trust principal from outside creditors. A custodial Roth IRA provides no comparable protection against the beneficiary's personal financial mistakes once ownership transfers at the age of majority. For a deeper look at basic trust architecture, read our guide on [Living Trust vs Will](/compare/living-trust-vs-will/)."
+    },
+    {
+      "heading": "College Financial Aid and the FAFSA Asset Formula",
+      "content": "Asset ownership plays a major role when colleges calculate need-based financial aid. When completing the Free Application for Federal Student Aid (FAFSA), families must report specific asset balances held by both the parents and the student. Under federal aid guidelines, retirement accounts owned by either parents or students are completely excluded from reported assets. Because a custodial Roth IRA is legally classified as a qualified retirement vehicle, the balance inside the account does not appear on the FAFSA asset worksheet. That exclusion protects the child's financial aid eligibility, regardless of how much the Roth account grows.\n\nTrust assets face far more variable treatment under higher education funding guidelines. The impact of a trust on financial aid cannot be stated as a single universal rule because federal financial aid formulas evaluate trusts on specific legal drafting terms. If a student is the primary beneficiary of a trust fund, aid calculations often assess those assets heavily, potentially treating the holdings as student resources. Student assets are assessed at a steep 20% annual rate in federal aid calculations, which can sharply reduce need-based grant awards. Conversely, certain irrevocable trusts with restricted access rules or independent trustee discretion may receive different evaluation by financial aid officers. Because formulas differ and aid policies shift, families must confirm the financial aid treatment of their specific trust structure directly with an experienced estate attorney or a certified college financial aid planner."
+    },
+    {
+      "heading": "Who Each Account Serves Best",
+      "content": "A custodial Roth IRA serves parents and working teenagers who want an accessible, low-friction savings tool. If your fifteen-year-old earns $3,500 working at a grocery store or running a lawn-care business, setting up a custodial Roth IRA is an exceptional move. Depositing those earnings gives the teen a practical lesson in personal finance while capturing fifty years of compound tax-free growth. Paying, say, $2,500 in attorney fees to protect a $5,000 account erases half its value before it starts growing, making a trust impractical for modest balances. If you want to guide your child through early investing, review our walk-through on setting up a [Custodial Roth IRA for Kids](/guides/custodial-roth-ira-for-kids/).\n\nA trust fund serves families transferring large sums or complex assets who need strict governance over how and when the funds are spent. A trust is the proper vehicle when grandparents wish to leave $300,000 in municipal bonds, commercial real estate, or family company stock to young grandchildren. Handing an eighteen-year-old direct legal access to an unrestricted six-figure brokerage account introduces obvious behavioral risks. A trust guarantees that a responsible trustee oversees the capital, disburses money for education and healthcare, and preserves the underlying wealth across multiple generations. To estimate legal planning costs for your family, visit our [Living Trust Cost Calculator](/estate-planning/living-trust-cost-calculator/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is a trust fund better than a custodial Roth IRA?",
+      "answer": "A trust fund is better if you are transferring large sums, physical real estate, or business interests and want strict legal control over when the child receives the money. A custodial Roth IRA is better if the child has earned income from a job and you want free setup with completely tax-free investment growth."
+    },
+    {
+      "question": "How much does it cost to set up a trust fund for a child?",
+      "answer": "Setting up a basic attorney-drafted revocable living trust package generally costs between $1,500 and $4,000 in 2026. If the estate requires complex minor sub-trust provisions, specific distribution milestones, or multiple real estate deed transfers, total attorney drafting fees frequently exceed $5,000."
+    },
+    {
+      "question": "Can a trust and a custodial Roth IRA both be used for the same child?",
+      "answer": "Yes, a family can use both vehicles simultaneously for the same child. Parents frequently fund a custodial Roth IRA up to the child's annual earned income limit to capture tax-free retirement growth, while placing larger family gifts, inheritance money, or real estate assets into a formal trust fund."
+    },
+    {
+      "question": "Is a trust fund taxed the same as a custodial account?",
+      "answer": "No, trust funds and custodial accounts follow different tax systems. Custodial accounts under UTMA rules are taxed under the kiddie tax rules, where unearned income over $2,700 for 2025 is taxed at the parents' rate. In contrast, non-grantor irrevocable trusts pay compressed trust tax rates that reach the top 37% federal bracket on just $15,650 of retained income."
+    },
+    {
+      "question": "Does a child gain full control of a trust at 18, like a UTMA?",
+      "answer": "No, a child does not automatically gain control of a trust at age 18. The person who creates the trust sets the distribution rules, meaning the trustee can retain management and release funds at staggered ages like 25, 30, and 35, or tie distributions to specific life milestones."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Roth IRAs",
+      "url": "https://www.irs.gov/retirement-plans/roth-iras"
+    },
+    {
+      "label": "IRS, Instructions for Form 1041 and Schedules A, B, G, J, and K-1",
+      "url": "https://www.irs.gov/instructions/i1041"
+    },
+    {
+      "label": "IRS, Topic 553, Tax on a Child's Investment and Other Unearned Income (Kiddie Tax)",
+      "url": "https://www.irs.gov/taxtopics/tc553"
+    },
+    {
+      "label": "SmartAsset, How Much Does It Cost to Set Up a Trust?",
+      "url": "https://smartasset.com/estate-planning/how-much-does-it-cost-to-set-up-a-trust"
+    }
+  ],
+  "relatedComparisons": [
+    "custodial-roth-ira-vs-utma",
+    "custodial-roth-ira-vs-brokerage-account",
+    "custodial-roth-ira-vs-529"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Estate Planning Hub",
+      "href": "/estate-planning/"
+    },
+    {
+      "label": "Investment calculator",
+      "href": "/investing/"
+    }
+  ]
+},
+
   // ─── Custodial Roth IRA vs Brokerage Account (ga4-top-pages pass 2026-07-08) ──
   {
     slug: "custodial-roth-ira-vs-brokerage-account",
@@ -3084,7 +3219,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — UGMA/UTMA (Custodial) Accounts glossary", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" },
       { label: "IRS — Publication 590-B, Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
     ],
-    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira", "custodial-roth-ira-vs-trump-account", "custodial-roth-ira-vs-hysa"],
+    relatedComparisons: ["custodial-roth-ira-vs-utma", "custodial-roth-ira-vs-529", "utma-vs-ugma", "custodial-roth-ira-vs-traditional-ira", "custodial-roth-ira-vs-trump-account", "custodial-roth-ira-vs-hysa", "custodial-roth-ira-vs-trust-fund"],
     calculatorLinks: [ { label: "Roth IRA calculator", href: "/investing/roth-ira-calculator/" }, { label: "Investment calculator", href: "/investing/" } ],
   },
 

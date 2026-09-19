@@ -5683,6 +5683,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "what-is-a-good-credit-score",
+    updated: "2026-09-19",
     title: "What Is a Good Credit Score? FICO Ranges Explained",
     metaDescription:
       "A good credit score is 670 to 739 on the FICO scale. See all 5 score ranges, the 5 factors behind your score, and what you need for a mortgage or top card.",
@@ -5713,6 +5714,7 @@ export const GUIDES: Guide[] = [
       { question: "How long does it take to improve a credit score?", answer: "Utilization-related changes can show up within a single billing cycle, since issuers typically report your balance monthly. Other factors, like average account age or recovering from a missed payment, take months to years, and a missed payment can stay on your report for up to seven years." },
       { question: "Is 700 a good credit score?", answer: "Yes, a 700 FICO score falls in the good range (670-739). It qualifies you for most mainstream credit products and reasonable rates, though the very best advertised rates and rewards cards are usually reserved for scores closer to 740 and up." },
       { question: "What credit score do I need to buy a house?", answer: "Conventional mortgages generally want good credit or better for the best rates, while government-backed programs like FHA loans are designed to work with lower scores. Exact cutoffs vary by lender, so check current requirements with a HUD-approved lender before you shop." },
+      { question: "What is the difference between a good credit score and a very good or excellent score?", answer: "Moving from a good score (670 to 739) to very good (740 to 799) or exceptional (800 to 850) secures slightly better loan terms, but the practical gains get smaller as your score climbs. The largest improvement in approval odds and pricing happens when crossing from fair credit into the good range at 670, which is the point where borrowing becomes meaningfully easier and access to top rewards credit cards opens up. Once your score passes 740, most lenders already view you as low-risk, so the rate differences from one lender to the next start to shrink." },
     ],
     sources: [
       { label: "myFICO — Credit Score Ranges", url: "https://www.myfico.com/credit-education/credit-scores" },

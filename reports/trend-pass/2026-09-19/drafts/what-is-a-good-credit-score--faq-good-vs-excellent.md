@@ -1,0 +1,3 @@
+**Q:** What is the difference between a good credit score and a very good or excellent score?
+
+**A:** Moving from a good score (670 to 739) to very good (740 to 799) or exceptional (800 to 850) secures slightly better loan terms, but the practical gains get smaller as your score climbs. The largest improvement in approval odds and pricing happens when crossing from fair credit into the good range at 670, which is the point where borrowing becomes meaningfully easier and access to top rewards credit cards opens up. Once your score passes 740, most lenders already view you as low-risk, so the rate differences from one lender to the next start to shrink.

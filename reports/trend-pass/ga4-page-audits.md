@@ -188,3 +188,7 @@
 | /portfolio/60-40-portfolio-calculator/ | 2026-09-17 | 1 | 0/0/0/0/0 | 0 |
 | /investing/annualized-return-calculator/ | 2026-09-18 | 2 | 0/0/0/0/0 | 0 |
 | /roundup/best-ai-stock-pickers | 2026-09-18 | 1 | 0/1/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-09-19 | 1 | 0/1/0/0/0 | 1 |
+| /guides/what-is-a-good-credit-score/ | 2026-09-19 | 1 | 0/0/1/0/0 | 0 |
+| /guides/custodial-account-taxes-kiddie-tax/ | 2026-09-19 | 1 | 0/0/0/0/0 | 1 |
+| /retirement/couples-retirement-calculator/ | 2026-09-19 | 1 | 0/0/0/0/0 | 0 |

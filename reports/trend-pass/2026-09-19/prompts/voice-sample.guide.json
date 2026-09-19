@@ -1,0 +1,24 @@
+{
+  "slug": "what-is-a-good-credit-score",
+  "title": "What Is a Good Credit Score? FICO Ranges Explained",
+  "metaDescription": "A good credit score is 670 to 739 on the FICO scale. See all 5 score ranges, the 5 factors behind your score, and what you need for a mortgage or top card.",
+  "h1": "What Is a Good Credit Score? The FICO Ranges Explained",
+  "cardBlurb": "The 5 FICO score ranges, the 5 factors that build your score, and the tiers lenders actually look for on a mortgage, auto loan, or rewards card.",
+  "introText": "A good FICO credit score falls between 670 and 739, one tier below \"very good\" and two tiers below \"exceptional.\" This guide covers all five FICO score ranges, the five factors that shape your score, how to check it for free, and the score tiers lenders actually look for when reviewing applications for a mortgage, auto loan, or top rewards card.",
+  "sections": [
+    { "heading": "The Five FICO Score Ranges", "body": "FICO scores run from 300 to 850, split into five ranges. [myFICO](https://www.myfico.com/credit-education/credit-scores), the company that publishes the FICO scoring model, defines them as poor (300-579), fair (580-669), good (670-739), very good (740-799), and exceptional (800-850).\n\nMost lenders treat \"good\" as the point where credit becomes meaningfully easier and cheaper. Below 670, you can often still qualify for a loan or card, but usually at a higher rate or a smaller limit. Above 740, the rate difference from one lender to the next starts to shrink, since most already treat you as low-risk.\n\nFICO is not the only score in use. [VantageScore](https://vantagescore.com/), built by the three credit bureaus, uses a similar 300-850 range but can score the same credit report slightly differently. Check which score type a lender is quoting before you compare offers." },
+    { "heading": "What Actually Builds Your Score", "body": "Five factors make up a FICO score, and they are not weighted equally. Payment history counts for 35%, amounts owed (your utilization) counts for 30%, length of credit history counts for 15%, new credit counts for 10%, and credit mix counts for 10%, according to [myFICO](https://www.myfico.com/credit-education/whats-in-your-credit-score).\n\nHere's a tradeoff most people miss: closing your oldest credit card can hurt your score two ways at once. It shortens your average account age, part of that 15% history factor, and it lowers your total available credit, which can spike your utilization even if your spending doesn't change. Keeping an old, no-fee card open often helps your score more than closing it ever would." }
+  ],
+  "tools": [
+    { "href": "/mortgage/", "label": "Mortgage" },
+    { "href": "/auto-loan/", "label": "Auto loan" }
+  ],
+  "faqs": [
+    { "question": "What is considered a good credit score?", "answer": "A good credit score is 670 to 739 on the FICO scale, which runs from 300 to 850. Scores below that are fair (580-669) or poor (below 580), while scores above it are very good (740-799) or exceptional (800-850)." },
+    { "question": "Is 700 a good credit score?", "answer": "Yes, a 700 FICO score falls in the good range (670-739). It qualifies you for most mainstream credit products and reasonable rates, though the very best advertised rates and rewards cards are usually reserved for scores closer to 740 and up." }
+  ],
+  "sources": [
+    { "label": "myFICO — Credit Score Ranges", "url": "https://www.myfico.com/credit-education/credit-scores" },
+    { "label": "myFICO — What's in Your FICO Score", "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score" }
+  ]
+}

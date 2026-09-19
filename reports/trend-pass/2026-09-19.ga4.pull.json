@@ -1,0 +1,54 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-19",
+  "window_start": "2026-09-19",
+  "window_end": "2026-09-19",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/what-is-a-good-credit-score/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 4,
+  "top10_pages_total_clicks": 4,
+  "channel_split": {
+    "/compare/custodial-roth-ira-vs-brokerage-account": {
+      "Direct": 1
+    },
+    "/guides/custodial-account-taxes-kiddie-tax": {
+      "Direct": 1
+    },
+    "/guides/what-is-a-good-credit-score/": {
+      "Organic Search": 1
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 1
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "updated": "2026-09-12",
+  "slug": "custodial-roth-ira-vs-utma",
+  "title": "Custodial Roth IRA vs UTMA: Which for Your Kid?",
+  "metaDescription": "Custodial Roth IRA vs UTMA (or UGMA): the Roth grows tax-free but needs a job; a UTMA has no income rule or cap. See which one fits your child best.",
+  "targetKeyword": "custodial roth ira vs utma",
+  "optionA": "Custodial Roth IRA",
+  "optionB": "UTMA / Custodial Account",
+  "h1": "Custodial Roth IRA vs UTMA: Which Account Is Better for Your Child?",
+  "introText": "When choosing between a custodial Roth IRA and a UTMA, pick the custodial Roth IRA if your child has a job, since its growth is fully tax-free. Fund a UTMA (or the older UGMA version) if they have no earned income, need money before retirement, or want to save more than the Roth allows.\n\nA custodial Roth IRA can only be funded with a child's earned income, up to $7,000 in 2025. A UTMA custodial account has no earned-income rule and no contribution cap, but its investment gains face the kiddie tax. This page compares both options, including how a custodial brokerage account stacks up.",
+  "comparisonTable": { "rows": [
+    { "dimension": "Earned income required?", "a": "Yes — child must have a job or self-employment", "b": "No — anyone can gift money to it" },
+    { "dimension": "Contribution limit (2025)", "a": "Lesser of earned income or $7,000", "b": "No cap (gift-tax exclusion ~$19,000/yr applies)" },
+    { "dimension": "How growth is taxed", "a": "Tax-free growth and qualified withdrawals", "b": "Kiddie tax: above $2,700 of unearned income taxed at parent's rate" },
+    { "dimension": "What the money is for", "a": "Retirement-oriented (contributions withdrawable anytime)", "b": "Any purpose — college, car, first apartment" },
+    { "dimension": "When the child gains control", "a": "Child owns it, but Roth rules discourage early spending", "b": "Full control at the age of majority (18–21, up to 25 in some states)" },
+    { "dimension": "College financial aid (FAFSA)", "a": "Retirement accounts are not reported as an asset", "b": "Counts as the student's asset, assessed at 20%" },
+    { "dimension": "Investment choice", "a": "Broad — stocks, funds, ETFs", "b": "Broad — stocks, funds, and (UTMA) even property" }
+  ] },
+  "verdict": "For a teen with a job, max the custodial Roth IRA first — tax-free growth is hard to beat — then send any extra savings to a UTMA. For a younger child with no earned income, the custodial Roth is not even an option, so a UTMA or custodial brokerage account is the flexible choice. Model the long-term difference with our investment calculator, and see how both fit alongside a 529 in the best investment account for kids guide.",
+  "sections": [
+    { "heading": "The core trade-off: tax-free growth vs no strings", "content": "A custodial Roth IRA wins on taxes. Every dollar of growth and every qualified withdrawal is tax-free. Over decades that beats any taxable account. Its disadvantage is two hard limits: the child must have documented earned income to fund it at all, and the contribution is capped at the lesser of that income or $7,000 (2025). Like a UTMA, the child gains full control at the age of majority, though Roth rules make spending it down early costly enough that most leave it invested.\n\nA UTMA custodial account trades that tax perk for freedom. There is no earned-income rule and no contribution cap. You can fund it for a newborn, and the money can be spent on anything — not just retirement. The cost is the kiddie tax, which parents can end up paying at their own tax rate on a child's larger UTMA gains, and the fact that the child takes full control at the age of majority. A UTMA belongs to the child irrevocably, so a parent who funded it cannot take the money back out for themselves." },
+    { "heading": "When a custodial Roth IRA isn't even possible", "content": "This is the decision rule most parents miss: a custodial Roth IRA requires earned income, so a child with no job cannot have one funded at all. A newborn, a toddler, or a kid who only receives allowance and gift money is not eligible.\n\nIf your child has no wages, the choice narrows to a UTMA, a UGMA, a 529 plan, or a parent-owned brokerage account. The Roth question only returns once they start earning — from a summer job, babysitting, or self-employment they can document." },
+    { "heading": "The smart move for a working teen: fund both", "content": "When a teen does have a job, the strongest play is to fund the custodial Roth first, then overflow into a UTMA. Here is why. The Roth is capped at their earned income (max $7,000 in 2025), so a teen earning $4,000 can only put $4,000 in the Roth that year.\n\nOnce that tax-free bucket is full, extra savings have nowhere tax-advantaged left to go — so a UTMA catches the overflow. You get the best of both: tax-free retirement growth up to the cap, plus an uncapped, flexible account for near-term goals like a car or college." }
+  ],
+  "faqs": [
+    { "question": "Is there a minimum age for a custodial Roth IRA?", "answer": "No, there is no minimum age for a custodial Roth IRA. The only requirement is documented earned income, so a child of any age who has earned money from a job or self-employment can qualify." },
+    { "question": "Custodial Roth IRA vs UTMA — which is better?", "answer": "A custodial Roth IRA is better for a child with earned income because its growth is tax-free, while a UTMA is better for a child with no job or one who needs flexible, uncapped savings." },
+    { "question": "Can a child have both a custodial Roth IRA and a UTMA?", "answer": "Yes, a child can hold both a custodial Roth IRA and a UTMA at the same time. A common strategy is to max the tax-free Roth up to the child's earned income, then put any additional savings in a UTMA, which has no contribution cap." }
+  ],
+  "sources": [
+    { "label": "IRS — Roth IRAs", "url": "https://www.irs.gov/retirement-plans/roth-iras" },
+    { "label": "IRS — Topic 553, Kiddie Tax (child's unearned income)", "url": "https://www.irs.gov/taxtopics/tc553" },
+    { "label": "SEC Investor.gov — UGMA/UTMA custodial accounts", "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ugmautma-accounts" }
+  ],
+  "relatedComparisons": ["custodial-roth-ira-vs-529", "529-vs-utma", "utma-vs-ugma", "custodial-roth-ira-vs-brokerage-account", "custodial-roth-ira-vs-traditional-ira"],
+  "calculatorLinks": [ { "label": "Investment calculator", "href": "/investing/" } ]
+}
