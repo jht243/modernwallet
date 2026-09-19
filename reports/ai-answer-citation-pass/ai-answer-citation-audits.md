@@ -37,3 +37,12 @@
 | /roundup/best-tax-relief-companies/ | 2026-09-12 | irs approved 2290 providers | ABSENT | no | irs.gov/expresstrucktax.com/2290online.com (+2 more) | none | n/a |
 | /compare/custodial-roth-ira-vs-utma/ | 2026-09-12 | utma to roth ira | ABSENT | no | reddit.com/meetfabric.com/vanguard.com (+2 more) | none | n/a |
 | /elder-care/ | 2026-09-12 | spousal impoverishment calculator | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-09-19 | any downside to trump account | ABSENT | no | taxlawcenter.org/www.cato.org/searcyfinancial.com (+3 more) | none | n/a |
+| /compare/etf-vs-mutual-fund/ | 2026-09-19 | etf vs mutal fund | ABSENT | no | www.schwab.com/investor.vanguard.com/www.fidelity.com (+7 more) | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-09-19 | 401 vs roth 401k | ABSENT | no | www.fidelity.com/www.umcu.org/www.benefits.ml.com (+4 more) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-09-19 | buy will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-09-19 | living trust usa reviews | ABSENT | no | oag.ca.gov/www.reddit.com/www.askmyattorney.net (+3 more) | none | n/a |
+| /roundup/best-tax-relief-companies/ | 2026-09-19 | irs approved 2290 providers | ABSENT | no | www.irs.gov/www.expresstrucktax.com/www.ez2290.com (+1 more) | none | n/a |
+| /portfolio/ | 2026-09-19 | portfolio value | ABSENT | no | www.startengine.com/www.kubera.com/info.quicken.com (+2 more) | none | n/a |
+| /real-estate/ | 2026-09-19 | rental property return | ABSENT | no | www.reddit.com/www.calculator.net/www.rocketmortgage.com (+6 more) | none | n/a |
+| /compliance/colorado-cottage-foods-act-expansion/ | 2026-09-19 | cottage food law colorado | ABSENT | no | cdphe.colorado.gov/extension.colostate.edu/nationalaglawcenter.org (+5 more) | none | n/a |

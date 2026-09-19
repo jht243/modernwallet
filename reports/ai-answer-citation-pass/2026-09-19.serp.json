@@ -1,0 +1,410 @@
+{
+ "pages": {
+  "/guides/trump-account-worth-it/": {
+   "query": "any downside to trump account",
+   "paa": [
+    "Is there any advantage to a Trump Account?",
+    "Are Trump accounts valid?",
+    "Is a Trump Account better than a 529?",
+    "How much does it cost to open a Trump Account?",
+    "Do banks open Trump accounts?",
+    "Who should open a Trump account?"
+   ],
+   "related_searches": [
+    "Is Trump account worth it reddit",
+    "Are Trump accounts safe",
+    "Trump account distribution rules",
+    "Trump account tax advantages",
+    "Trump account vs 529",
+    "Trump account vs Roth IRA",
+    "Trump account vs UTMA",
+    "Should I open a Trump account for my older child"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "taxlawcenter.org",
+    "www.cato.org",
+    "searcyfinancial.com",
+    "www.congress.gov",
+    "www.facebook.com",
+    "www.actec.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "taxlawcenter.org",
+    "searcyfinancial.com",
+    "www.cato.org",
+    "bipartisanpolicy.org",
+    "www.youtube.com",
+    "www.morningstar.com",
+    "www.actec.org",
+    "www.ameriprise.com",
+    "www.mortonwealth.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/etf-vs-mutual-fund/": {
+   "query": "etf vs mutal fund",
+   "paa": [
+    "Is it better to buy ETFs or mutual funds?",
+    "Why does Dave Ramsey say not to invest in ETFs?",
+    "What did Warren Buffett say about ETFs?",
+    "What is the downside to an ETF?",
+    "Why avoid ETFs?",
+    "What is the 7% rule in ETF?"
+   ],
+   "related_searches": [
+    "ETF vs mutual fund vs index fund",
+    "ETF vs mutual fund which is better",
+    "ETF vs mutual fund returns",
+    "ETF vs mutual fund which is better for long-term",
+    "ETF vs mutual fund for beginners",
+    "Etf vs mutual fund reddit",
+    "ETF vs mutual fund which is safer",
+    "ETF vs mutual fund vs stock",
+    "ETF vs mutual fund example"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.schwab.com",
+    "investor.vanguard.com",
+    "www.fidelity.com",
+    "www.usbank.com",
+    "www.troweprice.com",
+    "www.ishares.com",
+    "www.youtube.com",
+    "www.westernsouthern.com",
+    "www.td.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.schwab.com",
+    "investor.vanguard.com",
+    "www.finra.org",
+    "www.fidelity.com",
+    "www.reddit.com",
+    "www.americancentury.com",
+    "www.navyfederal.org",
+    "www.troweprice.com",
+    "www.hartfordfunds.com",
+    "www.usbank.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/compare/roth-401k-vs-traditional-401k/": {
+   "query": "401 vs roth 401k",
+   "paa": [
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "What does Dave Ramsey say about Roth 401(k)?",
+    "Is there a downside to Roth 401(k)?",
+    "At what age is Roth not worth it?",
+    "How much should I have in Roth by 50?",
+    "What does Warren Buffett say about Roth IRA?"
+   ],
+   "related_searches": [
+    "Roth 401k vs Roth IRA",
+    "Roth vs traditional 401k calculator",
+    "Why Roth 401k is bad",
+    "Roth 401k vs 401k for high income earners",
+    "Roth 401k vs traditional 401(k) contribution limits",
+    "Roth 401k vs traditional 401k comparison chart",
+    "Roth 401k income limits",
+    "Roth 401k vs brokerage account"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.umcu.org",
+    "www.benefits.ml.com",
+    "www.johnsonfinancialgroup.com",
+    "www.hrblock.com",
+    "www.ramseysolutions.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.benefits.ml.com",
+    "www.umcu.org",
+    "www.mutualofamerica.com",
+    "www.johnsonfinancialgroup.com",
+    "www.americancentury.com",
+    "www.empowerfcu.com",
+    "www.nerdwallet.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/roundup/best-online-will-makers/": {
+   "query": "buy will online",
+   "paa": [
+    "Can you legally do a will online?",
+    "Can online wills be trusted?",
+    "Can I legally write my own will?",
+    "Do online wills stand up in court?",
+    "Can I write up a will without a lawyer?",
+    "Who cannot be a beneficiary of a will?"
+   ],
+   "related_searches": [
+    "Buy will online free",
+    "Create a will online for free",
+    "Best online will maker",
+    "Free online will and trust",
+    "Best free online will maker",
+    "Can I write my own will and have it notarized",
+    "Best online will and trust",
+    "Best online will maker Consumer Reports"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "www.redcross.org",
+    "www.cnbc.com",
+    "www.ncoa.org",
+    "www.ramseysolutions.com",
+    "trustandwill.com",
+    "www.aarp.org",
+    "www.doyourownwill.com",
+    "michiganlegalhelp.org",
+    "registertovoteflorida.gov"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-living-trust-services/": {
+   "query": "living trust usa reviews",
+   "paa": [
+    "Is it wise to put your house in a living trust?",
+    "What is the average cost of a living trust?",
+    "What are the disadvantages of putting my home in a living trust?",
+    "What are five assets that should never be included in a living trust?",
+    "What does Dave Ramsey say about living trusts?",
+    "Can I lose my house if it's in a trust?"
+   ],
+   "related_searches": [
+    "Living trust usa reviews yelp",
+    "Living trust usa reviews reddit",
+    "Living trust usa reviews complaints",
+    "Living trust usa reviews consumer reports",
+    "Best living trust usa reviews",
+    "Living trust usa reviews bbb",
+    "Living trust usa reviews complaints bbb",
+    "Living trust usa reviews complaints reddit"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "oag.ca.gov",
+    "www.reddit.com",
+    "www.askmyattorney.net",
+    "affordablelivingtrusts.com",
+    "da.lacounty.gov",
+    "livingtrust-attorneys.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "oag.ca.gov",
+    "www.reddit.com",
+    "www.bbb.org",
+    "www.yelp.com",
+    "www.facebook.com",
+    "www.texasbar.com",
+    "www.youtube.com",
+    "www.legalshield.com",
+    "www.askmyattorney.net",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/roundup/best-tax-relief-companies/": {
+   "query": "irs approved 2290 providers",
+   "paa": [
+    "Can I file my 2290 directly with the IRS?",
+    "Who is an authorized e-file provider?",
+    "How much does a form 2290 cost?",
+    "How to verify if IRS received form 2290?",
+    "How long does it take to get 2290 from IRS?",
+    "How do I know if the IRS approved my return?"
+   ],
+   "related_searches": [
+    "Irs approved 2290 providers list",
+    "IRS 2290 payment",
+    "List of authorized IRS E file providers",
+    "IRS Form 2290 for 2025",
+    "IRS 2290 Form 2023",
+    "Best 2290 e file provider",
+    "Is TaxBandits IRS approved",
+    "List of IRS approved Tax Software"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.expresstrucktax.com",
+    "www.ez2290.com",
+    "www.eform2290.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "www.irs.gov",
+    "www.expresstrucktax.com",
+    "www.irs.gov",
+    "www.ez2290.com",
+    "www.irs.gov",
+    "www.trucktaxonline.com",
+    "www.irs.gov",
+    "www.truckdues.com",
+    "pcssnow.org"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/portfolio/": {
+   "query": "portfolio value",
+   "paa": [
+    "What does \"portfolio value\" mean?",
+    "What percentage of Americans have over $100,000 in the stock market?",
+    "What does a 70/30 portfolio mean?",
+    "Is a $1 million portfolio good?",
+    "What percentage of retirees have $1,000,000?",
+    "What net worth puts you in the top 2%?"
+   ],
+   "related_searches": [
+    "Portfolio value formula",
+    "Portfolio value calculator",
+    "Total portfolio value meaning",
+    "Portfolio value example",
+    "Portfolio value vs stocks",
+    "Portfolio value crypto",
+    "Portfolio value vs investment value",
+    "Can i withdraw my portfolio value"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.startengine.com",
+    "www.kubera.com",
+    "info.quicken.com",
+    "www.investopedia.com",
+    "invessed.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.startengine.com",
+    "www.kubera.com",
+    "www.camsonline.com",
+    "info.quicken.com",
+    "www.youtube.com",
+    "www.americancentury.com",
+    "www.usbank.com",
+    "www.investopedia.com",
+    "www.parnassus.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/real-estate/": {
+   "query": "rental property return",
+   "paa": [
+    "What is considered a good return on a rental property?",
+    "What is the 7% rule for rental property?",
+    "What is the 2% rule for rental property?",
+    "What return should I expect on a rental property?",
+    "What is the 50% rule in rental property?",
+    "Is 8% return on renting good?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.calculator.net",
+    "www.rocketmortgage.com",
+    "rentfivestar.com",
+    "www.homedepot.com",
+    "www.mashvisor.com",
+    "www.obieinsurance.com",
+    "hello.pricelabs.co",
+    "thedocegroup.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.calculator.net",
+    "www.investopedia.com",
+    "www.reddit.com",
+    "cfoproanalytics.com",
+    "www.narpm.org",
+    "hello.pricelabs.co",
+    "www.rocketmortgage.com",
+    "sparkrental.com",
+    "www.allpropertymanagement.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compliance/colorado-cottage-foods-act-expansion/": {
+   "query": "cottage food law colorado",
+   "paa": [
+    "Do I need a license to sell cottage foods in Colorado?",
+    "What does the cottage food law disclaimer mean on cottage food products in Colorado?",
+    "How much is a food license in Colorado?",
+    "What information is required on cottage food labels in Colorado?",
+    "Can you make food out of your home and sell it?"
+   ],
+   "related_searches": [
+    "New cottage food law colorado",
+    "Colorado cottage food list pdf",
+    "Cottage food law colorado springs",
+    "Cottage foods list",
+    "Colorado cottage food license test",
+    "CSU Extension Cottage food safety training",
+    "Cottage foods Act",
+    "Colorado cottage food class"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "cdphe.colorado.gov",
+    "extension.colostate.edu",
+    "nationalaglawcenter.org",
+    "cofarmtomarket.com",
+    "ij.org",
+    "cakerybakeries.com",
+    "pitkincounty.com",
+    "foodsmartcolorado.colostate.edu"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "cdphe.colorado.gov",
+    "extension.colostate.edu",
+    "nationalaglawcenter.org",
+    "cofarmtomarket.com",
+    "cakerybakeries.com",
+    "aaafoodhandler.com",
+    "www.facebook.com",
+    "ij.org",
+    "www.denvergov.org",
+    "www.pitkincounty.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 9 calls, $0.03735 of $2.00 budget"
+}

@@ -1,0 +1,848 @@
+[
+  {
+    "page": "https://www.themodernwallet.com/compare/529-vs-utma/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 1,
+      "clicks": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 100.0%, position 1.0, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 1,
+      "impressions": 1,
+      "position": 1,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 53,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 75.53
+    },
+    "top_queries": [
+      {
+        "query": "any downside to trump account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 81
+      },
+      {
+        "query": "are the trump accounts a scam",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 63
+      },
+      {
+        "query": "are the trump accounts worth it",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 62
+      },
+      {
+        "query": "are trump accounts good",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "query": "are trump accounts legit",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 67
+      },
+      {
+        "query": "are trump accounts safe",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 85
+      },
+      {
+        "query": "cons for trump account",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 88
+      },
+      {
+        "query": "cons of trump account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 76
+      },
+      {
+        "query": "does it make sense to open a trump account",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 72
+      },
+      {
+        "query": "downsides of trump accounts",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 86
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0% on 53 impressions (avg pos 75.5) \u2014 page is shown but nobody clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 53,
+      "position": 75.53,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 40,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 96.53
+    },
+    "top_queries": [
+      {
+        "query": "etf vs mutal fund",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 99
+      },
+      {
+        "query": "etf vs mutual fund",
+        "impressions": 28,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 97.46
+      },
+      {
+        "query": "etfs vs mutual funds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 101
+      },
+      {
+        "query": "exchange traded funds vs mutual funds",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 97
+      },
+      {
+        "query": "mutual fund vs etf",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 97
+      },
+      {
+        "query": "mutual funds vs etf",
+        "impressions": 6,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 99
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 96.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 40,
+      "position": 96.53,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 26,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 86.69
+    },
+    "top_queries": [
+      {
+        "query": "401 vs roth 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 95
+      },
+      {
+        "query": "401k or roth 401k",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 87.5
+      },
+      {
+        "query": "401k versus roth 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "query": "401k vs roth 401",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 94
+      },
+      {
+        "query": "401k vs roth 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "query": "how much should i put in roth vs 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98
+      },
+      {
+        "query": "roth 401k percentage",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 91
+      },
+      {
+        "query": "roth 401k tax rate",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 88
+      },
+      {
+        "query": "roth 401k vs 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 87
+      },
+      {
+        "query": "roth 401k vs traditional 401k",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 19
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 86.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 26,
+      "position": 86.69,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/roundup/best-online-will-makers/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 20,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 76.35
+    },
+    "top_queries": [
+      {
+        "query": "buy will online",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 83.5
+      },
+      {
+        "query": "create a will online free",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93
+      },
+      {
+        "query": "last will and testament online",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "query": "last will online",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 96.5
+      },
+      {
+        "query": "making will online",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 45
+      },
+      {
+        "query": "online last will",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 94
+      },
+      {
+        "query": "will maker and trust",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 96
+      },
+      {
+        "query": "wills and power of attorney online",
+        "impressions": 4,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93.75
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 76.3, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 20,
+      "position": 76.35,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/roundup/best-living-trust-services/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 12,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 65.75
+    },
+    "top_queries": [
+      {
+        "query": "living trust usa reviews",
+        "impressions": 9,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 81
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 65.8, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 12,
+      "position": 65.75,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 12,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.58
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 4.6 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 12,
+      "position": 4.58,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/guides/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 2.45
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 2.5 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 11,
+      "position": 2.45,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/investing/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 5.82
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 5.8 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 11,
+      "position": 5.82,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/calculators/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.7
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 7.7 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 10,
+      "position": 7.7,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/methodology/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.3
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 4.3 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 10,
+      "position": 4.3,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 33.36
+    },
+    "top_queries": [
+      {
+        "query": "irs approved 2290 providers",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 91.33
+      },
+      {
+        "query": "which tax debt settlement brands offer the best value for money?",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 6
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 33.4, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 11,
+      "position": 33.36,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/budget/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.33
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 4.3 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 9,
+      "position": 4.33,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/invoice-factoring/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 15.6
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 15.6, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 10,
+      "position": 15.6,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/portfolio/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 16.78
+    },
+    "top_queries": [
+      {
+        "query": "portfolio value",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 93
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 16.8, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 9,
+      "position": 16.78,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compliance/colorado-antitrust-premerger-notification-update/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 12.56
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 12.6, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 9,
+      "position": 12.56,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/probate/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.25
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 9.2 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 9.25,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/real-estate/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 70.67
+    },
+    "top_queries": [
+      {
+        "query": "rental property return",
+        "impressions": 2,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98.5
+      },
+      {
+        "query": "rental property return on investment",
+        "impressions": 3,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 98.67
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 70.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 9,
+      "position": 70.67,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/retirement/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 4.5 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 4.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/business-line-of-credit/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 10.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 10.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 10.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 28.5
+    },
+    "top_queries": [
+      {
+        "query": "cottage food law colorado",
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 84
+      }
+    ],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 28.5, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 28.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/merchant-cash-advance/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.75
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 9.8 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 9.75,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/mortgage/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 5.25
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 5.2 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 8,
+      "position": 5.25,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/about/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 6,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.5
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "underperforming",
+      "reason": "CTR 0.0% < 3% at avg position 6.5 \u2014 title not pulling clicks; rewrite justified.",
+      "ctr": 0,
+      "impressions": 6,
+      "position": 6.5,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  },
+  {
+    "page": "https://www.themodernwallet.com/guides/first-time-home-buyer-guide/",
+    "site_url": "sc-domain:themodernwallet.com",
+    "window_days": 30,
+    "totals": {
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 80.71
+    },
+    "top_queries": [],
+    "trend": null,
+    "verdict": {
+      "label": "mixed",
+      "reason": "CTR 0.0%, position 80.7, trend None \u2014 neither clearly winning nor losing. Rewrite OK with caution.",
+      "ctr": 0,
+      "impressions": 7,
+      "position": 80.71,
+      "impressions_trend_30d": null,
+      "rewrite_recommended": true
+    }
+  }
+]

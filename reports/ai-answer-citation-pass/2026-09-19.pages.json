@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/compare/529-vs-utma/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 75.53
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 96.53
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 86.11
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-online-will-makers/",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 79.62
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-living-trust-services/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 69.93
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 4.31
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 2.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 7.91
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.73
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 33.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/invoice-factoring/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 15.6
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 15.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-antitrust-premerger-notification-update/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 12.56
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://www.themodernwallet.com/real-estate/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 70.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 4.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-line-of-credit/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 28.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.75
+    },
+    {
+      "page": "https://www.themodernwallet.com/mortgage/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 6.71
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/first-time-home-buyer-guide/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 80.71
+    }
+  ]
+}
