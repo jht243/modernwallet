@@ -1,0 +1,48 @@
+{
+ "slug": "best-same-day-business-loans",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2403,
+ "floor": 1500,
+ "input_tokens": 19242,
+ "output_tokens": 4235,
+ "thinking_tokens": 411,
+ "cached_tokens": 17053,
+ "est_cost_usd": 0.0223,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2403,
+  "numbers_not_in_facts": [
+   "00",
+   "15",
+   "25",
+   "35",
+   "40",
+   "55",
+   "620",
+   "72",
+   "75",
+   "80"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17666
+  }
+ },
+ "seconds": 22.7,
+ "response_id": "LQyzatDxBcrD39IPp6DRuQg",
+ "generated_at": "2026-09-22T23:16:18+0000"
+}

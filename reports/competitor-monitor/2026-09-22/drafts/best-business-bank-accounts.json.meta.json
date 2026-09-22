@@ -1,0 +1,45 @@
+{
+ "slug": "best-business-bank-accounts",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3019,
+ "floor": 1500,
+ "input_tokens": 18950,
+ "output_tokens": 4955,
+ "thinking_tokens": 629,
+ "cached_tokens": 17053,
+ "est_cost_usd": 0.0256,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3019,
+  "numbers_not_in_facts": [
+   "25",
+   "30",
+   "300",
+   "3000000",
+   "500",
+   "5000",
+   "5000000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17666
+  }
+ },
+ "seconds": 26.2,
+ "response_id": "RwyzaoKWOejdjMcPj7eauAU",
+ "generated_at": "2026-09-22T23:16:49+0000"
+}
