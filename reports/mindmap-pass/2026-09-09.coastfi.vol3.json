@@ -1,0 +1,133 @@
+{
+ "rows": [
+  {
+   "keyword": "best coast fire calculator",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 7,
+   "cpc": 3.19,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire calculator reddit",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fidelity coast fire calculator",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 35,
+   "cpc": 4.85,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "walletburst coast fire calculator",
+   "volume": 8100,
+   "volume_low": 8100,
+   "volume_high": 8100,
+   "kd": 4,
+   "cpc": 1.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "coast fire calculator with social security",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 0,
+   "cpc": 2.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire calculator alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "coast fire downsides",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "what are the downsides of coast fire",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (HTTP 403 {\n  \"error\": \"API units limit reached. Expected usage: 50, API units left: 19.\"\n})",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 5/8 phrases",
+  "semrush unusable (HTTP 403)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 4/8 rows corroborated live"
+ ]
+}

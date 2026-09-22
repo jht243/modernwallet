@@ -1,0 +1,102 @@
+{
+  "slug": "intentionally-defective-grantor-trust-idgt",
+  "title": "Intentionally Defective Grantor Trust (IDGT) Guide",
+  "metaDescription": "An intentionally defective grantor trust (IDGT) freezes estate value and shifts appreciation to heirs tax-free. Learn how an IDGT works, rules, and tradeoffs.",
+  "h1": "Intentionally Defective Grantor Trust: Rules, Taxes, and Risks",
+  "cardBlurb": "How an intentionally defective grantor trust removes wealth from your taxable estate while you pay the income taxes.",
+  "introText": "An intentionally defective grantor trust (IDGT) is an irrevocable trust designed so that transfers of assets are complete for federal estate tax purposes, but incomplete for federal income tax purposes under Internal Revenue Code sections 671 to 679.\n\nAt ModernWallet, we evaluate complex wealth transfer strategies to clarify how structural tax rules operate before families commit substantial capital to legal entities. The intentional mismatch between estate tax rules and income tax rules allows high-growth assets to compound outside your taxable estate while you personally pay the trust's ongoing income taxes.\n\nBecause you satisfy the income tax liability on behalf of the trust, the trust principal grows without tax erosion. Under federal tax rulings, paying those taxes does not count as an additional taxable gift to your beneficiaries.",
+  "sections": [
+    {
+      "heading": "The Statutory Defect in an Intentionally Defective Grantor Trust",
+      "body": "The intentional defect in an IDGT stems from a deliberate disconnect between federal estate tax law and federal income tax law. Under Internal Revenue Code (IRC) sections 671 through 679, retaining specific administrative powers causes a trust's creator to be treated as its owner for federal income tax purposes. Common defect-triggering powers include the power to reacquire trust assets by substituting property of equivalent value under IRC section 675(4)(C), or the power to borrow from the trust without adequate security under section 675(2).\n\nAt the same time, the trust is drafted to avoid retained interests that would pull assets back into the gross estate under estate tax rules. The grantor must not retain a life estate under section 2036, a power to revoke or alter beneficial enjoyment under section 2038, or incidents of ownership over life insurance policies under section 2042. This structural asymmetry creates a vehicle that is outside the gross estate for the 40% federal estate tax, yet fully taxable to the grantor on their individual Form 1040.\n\nThis structure directly answers the practical question of an IDGT vs irrevocable trust. An IDGT is an irrevocable trust, but standard irrevocable trusts often file as separate non-grantor taxpayers subject to compressed tax rates. An IDGT deliberately avoids those compressed brackets by using grantor trust rules to pass all tax items through to the grantor's personal return."
+    },
+    {
+      "heading": "The Installment-Sale Mechanic and Seed Gift Convention",
+      "body": "An installment sale to an IDGT transfers appreciation to heirs in exchange for a promissory note without using substantial lifetime gift tax exemption. The grantor begins by making an initial transfer of capital to the trust, commonly called a seed gift. A seed gift equal to roughly 10% of the value of the assets to be sold is an established planning convention, though it is not a statutory rule mandated by the Internal Revenue Code. This seed capital provides economic substance, demonstrating to tax authorities that the trust has independent equity to service its debt obligations.\n\nAfter funding the seed, the grantor sells appreciating assets, such as private stock or commercial real estate, to the trust in exchange for a promissory note. The note must charge interest at the applicable federal rate (AFR) the IRS publishes monthly. Installment-sale notes use the midterm or long-term AFR, depending on the note's maturity, not the Section 7520 rate that governs a GRAT.\n\nHere is a hypothetical illustration. An individual gifts $1,000,000 in cash to seed an IDGT, filing [Form 709](https://www.irs.gov/instructions/i709) to report the use of lifetime exemption. The grantor then sells $10,000,000 of private operating company shares to the trust in exchange for a ten-year interest-only note. If the business assets grow at 9% annually while the note pays 4% interest, the 5% net spread compounds entirely inside the trust. All appreciation above the note's interest rate passes to the trust beneficiaries free of gift and estate taxes."
+    },
+    {
+      "heading": "Tax-Free Compounding Through Grantor Income Tax Payments",
+      "body": "A grantor paying the trust's personal income tax liability acts as an engine of tax-free wealth transfer. Under Revenue Ruling 2004-64, when a grantor pays the income tax attributable to a grantor trust, the payment satisfies the grantor's own legal obligation under the tax code. Consequently, the tax payment is not treated as a constructive gift to the trust beneficiaries, allowing millions of dollars in wealth to transfer without consuming lifetime gift exemption or incurring transfer tax.\n\nIn addition, the initial asset sale generates no recognized capital gain for income tax purposes. Under Revenue Ruling 85-13, transactions between a grantor and their grantor trust are disregarded for federal income tax purposes because the grantor is treated as dealing with themselves. The transfer of appreciated property does not trigger capital gains tax at the time of sale, and the trust's promissory note interest payments back to the grantor do not produce taxable interest income.\n\nThis double benefit accelerates wealth accumulation. The trust's underlying investments compound without any reduction for annual taxes, while the grantor's personal payments steadily reduce their own gross estate. Over a decade or longer, this burn of the taxable estate cuts the grantor's exposure to the flat 40% federal estate tax."
+    },
+    {
+      "heading": "The Step-Up in Basis Trade-Off for Beneficiaries",
+      "body": "Assets transferred to an intentionally defective grantor trust forfeit a step-up in basis at the grantor's death. Under IRC section 1014, assets included in a decedent's gross estate receive a new basis equal to fair market value at death, eliminating all unrealized capital gains. Because an IDGT intentionally removes assets from the grantor's gross estate to bypass federal transfer taxes, those assets keep their original carryover tax basis.\n\nThis IDGT step-up basis exclusion requires careful mathematical evaluation. If beneficiaries receive low-basis corporate stock through an IDGT and later liquidate the position, they must pay federal capital gains taxes topping out at 20%, plus the 3.8% Net Investment Income Tax and any applicable state taxes. Saving a 40% estate tax on total value is usually superior to saving a 23.8% capital gains tax on appreciation, but the benefit narrows if the asset produces modest growth and carries near-zero basis.\n\nMany attorneys address this trade-off by including an asset substitution power in the trust agreement. Under IRC section 675(4)(C), the grantor can exchange cash or high-basis assets from their personal balance sheet for the low-basis assets held inside the trust. Executing this swap shortly before death pulls the low-basis assets back into the taxable estate, where they receive a full basis step-up, while leaving cash or high-basis assets inside the IDGT to escape estate taxation."
+    },
+    {
+      "heading": "Disadvantages and Administrative Risks of an IDGT",
+      "body": "The primary disadvantages of an IDGT center on inflexibility, personal liquidity risk, and strict compliance burdens. Reviewing IDGT pros and cons reveals that the structure is irrevocable. Once established, the grantor cannot alter the beneficial interests or reclaim the assets for personal retirement security. If the grantor experiences unexpected financial difficulties, continuing to pay income taxes on trust income can become an exhausting personal drain.\n\nValuation risk is the other main exposure when selling hard-to-value property. If the IRS audits the transaction and determines that the assets sold were worth substantially more than the face value of the promissory note, the agency can treat the excess value as a taxable gift. To mitigate this exposure, experienced practitioners include formula allocation clauses and secure formal appraisal reports from independent valuation professionals.\n\nAdministrative discipline must also be maintained throughout the life of the promissory note. The trustee must execute formal promissory notes, make scheduled interest and principal payments, and document all transactions with corporate formality. If the grantor fails to collect note interest or commingles trust funds with personal accounts, the IRS can argue that the sale was a sham transaction, pulling the entire value back into the gross estate under section 2036."
+    },
+    {
+      "heading": "Tax Return Requirements and Form 1041 Filing Methods",
+      "body": "An intentionally defective grantor trust must fulfill specific reporting rules, even though it incurs no direct tax liability. The trustee typically files Form 1041, the fiduciary income tax return for estates and trusts, as an informational document. Instead of calculating taxable income and computing tax on the form, the trustee checks the box indicating grantor trust status and leaves the tax calculation lines blank.\n\nThe trustee attaches a separate grantor information statement to Form 1041. This statement details all items of gross income, deductions, and tax credits generated by the trust property. The grantor then copies these figures directly onto their individual Form 1040, paying taxes at their standard personal rates.\n\nThis filing process avoids the severe tax brackets that hit non-grantor trusts. As covered in our breakdown of [trust tax rates explained](/guides/trust-tax-rates-explained/), a non-grantor trust reaches the top 37% federal tax bracket at just $16,000 of retained income in 2026. An IDGT bypasses these compressed brackets entirely, allowing trust assets to be taxed at the grantor's personal marginal rate."
+    },
+    {
+      "heading": "Structural Trade-Offs Between an IDGT and a GRAT",
+      "body": "An IDGT and a grantor retained annuity trust both aim to transfer asset growth free of gift tax, but they work through entirely different legal mechanics. A [grantor retained annuity trust (GRAT)](/guides/what-is-a-grat-trust/) operates over a short, fixed period of two to ten years, funding almost entirely through an annuity stream calculated against the statutory hurdle rate. If the grantor dies during the annuity term, IRC section 2036 pulls the trust assets back into the taxable estate, causing the strategy to fail.\n\nBy contrast, an IDGT is built for multi-generational wealth transfer over an indefinite planning horizon. It requires a seed gift that uses a portion of the lifetime gift tax exemption, which stands at $15,000,000 per individual in 2026 under the One Big Beautiful Bill Act of 2025. An IDGT has no fixed term, so the grantor's death does not end it. If the grantor dies while the promissory note is outstanding, the trust assets stay out of the estate, and only the fair market value of the remaining promissory note is included on Form 706.\n\nSelecting between these strategies depends on whether the grantor possesses liquid exemption to make a seed gift and whether they want a multi-decade trust or a short-term trial. For a detailed point-by-point analysis of these approaches, review our comprehensive [GRAT vs. IDGT comparison](/compare/grat-vs-idgt/)."
+    },
+    {
+      "heading": "Who an Intentionally Defective Grantor Trust Fits Best",
+      "body": "An intentionally defective grantor trust fits wealthy individuals who own rapidly growing assets and possess substantial liquidity outside the trust structure. Ideal candidates face taxable estates well above the $15,000,000 individual exemption ($30,000,000 for a married couple using portability) and own appreciating property like commercial real estate, private business equity, or concentrated pre-IPO stock.\n\nThis trust is poorly suited for individuals with total net worth below the federal transfer tax threshold. Establishing an IDGT without an estate tax exposure sacrifices the step-up in basis at death without providing any corresponding federal estate tax relief. It is also a poor fit for individuals whose wealth is entirely tied up in the assets being transferred, as they will lack the independent cash flow needed to pay the trust's income taxes.\n\nWhat would change our answer is a dramatic legislative shift in the capital gains tax rate or a sweeping alteration of grantor trust tax treatment. If federal law were to treat grantor trust tax payments as taxable gifts or force estate inclusion on grantor trusts, the financial benefits of an IDGT would narrow dramatically."
+    },
+    {
+      "heading": "Setup Costs and the Professional Advisory Team",
+      "body": "Establishing an IDGT requires a coordinated team of legal, accounting, and valuation specialists. Legal fees to design and execute an advanced irrevocable trust typically range from $2,500 to $10,000 or more, with comprehensive multi-entity plans, promissory note structuring, and family governance provisions moving costs to the upper bound of that spectrum.\n\nIn addition to an estate planning attorney, the engagement requires an independent certified appraiser to value the assets transferred in the installment sale. A qualified appraisal protects the transaction against IRS undervaluation challenges. A Certified Public Accountant (CPA) must also prepare the annual informational returns and file the initial gift tax return on [Form 709](https://www.irs.gov/instructions/i709) to document the seed gift properly.\n\nAn IDGT functions most effectively when integrated with a broader wealth preservation strategy. To see how installment sales operate alongside tools like family limited partnerships and qualified personal residence trusts, read our comprehensive review of [advanced estate planning strategies](/guides/advanced-estate-planning-strategies/). To evaluate whether your balance sheet justifies an installment sale to an intentionally defective grantor trust, calculate your projected transfer tax liability with an attorney and run your numbers through our [estate tax calculator](/estate-planning/estate-tax-calculator/)."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/estate-tax-calculator/",
+      "label": "Estate tax calculator"
+    },
+    {
+      "href": "/estate-planning/living-trust-cost-calculator/",
+      "label": "Living trust cost calculator"
+    },
+    {
+      "href": "/estate-planning/",
+      "label": "Estate planning hub"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is a disadvantage of an intentionally defective grantor trust?",
+      "answer": "A major disadvantage is the ongoing personal tax liability imposed on the grantor, who must pay income taxes on trust earnings from independent funds. Assets inside the trust also forfeit a step-up in basis at death, exposing heirs to capital gains taxes upon sale. The structure is irrevocable and requires strict ongoing compliance to service the promissory note."
+    },
+    {
+      "question": "What is the difference between an intentionally defective grantor trust (IDGT) and a GRAT?",
+      "answer": "An IDGT operates over an open-ended horizon using an installment sale and a seed gift, while a GRAT functions over a fixed term of years through mandatory annuity payments. A GRAT fails if the grantor dies during the annuity term, whereas an IDGT survives the grantor's death without losing completed transfer benefits. An IDGT requires seed capital using part of your lifetime exemption, while a zeroed-out GRAT uses virtually no exemption."
+    },
+    {
+      "question": "Does an intentionally defective grantor trust get a step-up in basis?",
+      "answer": "No, assets held in an intentionally defective grantor trust do not receive a step-up in basis when the grantor dies. Because the assets are removed from the gross estate to avoid the 40% federal estate tax, beneficiaries receive the grantor's carryover tax basis. Grantors often manage this issue by using a substitution power to swap cash for low-basis assets before death."
+    },
+    {
+      "question": "Who pays taxes on an IDGT?",
+      "answer": "The grantor pays all federal and state income taxes on income generated by the trust on their personal Form 1040 tax return. Under Internal Revenue Code sections 671 to 679, the trust's tax items flow directly to the creator. Under Revenue Ruling 2004-64, paying these taxes does not count as an additional taxable gift to the trust."
+    },
+    {
+      "question": "Does an intentionally defective grantor trust file a tax return?",
+      "answer": "Yes, an IDGT generally files an annual informational return on Form 1041. The trustee reports the entity as a grantor trust and leaves the tax calculation lines blank, attaching an informational statement detailing all income and deductions. The grantor then reports those figures on their personal Form 1040."
+    },
+    {
+      "question": "What is the seed gift for an IDGT?",
+      "answer": "The seed gift is an initial capital transfer made to provide the IDGT with independent economic substance before an installment sale occurs. Estate planners commonly use a planning convention of funding the trust with a gift worth roughly 10% of the value of the assets being purchased. This 10% figure is a practical guideline to establish creditworthiness rather than a statutory tax rule."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Instructions for Form 709",
+      "url": "https://www.irs.gov/instructions/i709"
+    },
+    {
+      "label": "IRS, Section 7520 Interest Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

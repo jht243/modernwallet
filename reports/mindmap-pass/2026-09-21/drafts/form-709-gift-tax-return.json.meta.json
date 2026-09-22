@@ -1,0 +1,59 @@
+{
+ "slug": "form-709-gift-tax-return",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2055,
+ "floor": 1200,
+ "input_tokens": 21451,
+ "output_tokens": 3673,
+ "thinking_tokens": 8625,
+ "est_cost_usd": 0.0622,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2055,
+  "numbers_not_in_facts": [
+   "1040",
+   "131000",
+   "14719000",
+   "15000",
+   "150000",
+   "18",
+   "2027",
+   "281000",
+   "30000",
+   "31",
+   "31000",
+   "4868",
+   "50000",
+   "56000",
+   "8892"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17682
+  }
+ },
+ "seconds": 40.9,
+ "response_id": "EZGyat_VGu2k6dkP2432oAU",
+ "generated_at": "2026-09-22T09:31:21-0500"
+}

@@ -1,0 +1,159 @@
+{
+  "updated": "2026-09-22",
+  "slug": "grat-vs-idgt",
+  "title": "GRAT vs IDGT: Key Differences and Strategy Fit",
+  "metaDescription": "Compare GRAT vs IDGT estate planning strategies: funding mechanics, gift tax exposure, mortality risk, basis step-up, and optimal asset choices.",
+  "targetKeyword": "grat vs idgt",
+  "optionA": "GRAT (Grantor Retained Annuity Trust)",
+  "optionB": "IDGT (Intentionally Defective Grantor Trust)",
+  "h1": "GRAT vs IDGT: How to Choose Between Two Advanced Trusts",
+  "introText": "A Grantor Retained Annuity Trust (GRAT) transfers asset appreciation using a statutory annuity exchange with near-zero gift tax liability, whereas an Intentionally Defective Grantor Trust (IDGT) transfers wealth through an installment sale in exchange for a promissory note. At ModernWallet, we evaluate advanced wealth transfer strategies to help families understand their tax exposure before they commit to five-figure legal bills. Both vehicles are irrevocable trusts designed to freeze asset values and remove future growth from a gross estate.\n\nUnder the One Big Beautiful Bill Act (Public Law 119-21) signed in July 2025, the 2026 federal lifetime gift and estate tax exemption sits at $15,000,000 per individual ($30,000,000 for a married couple). Estates above these thresholds face a flat 40% federal transfer tax rate. A zeroed-out GRAT lets a grantor pass appreciation above the Internal Revenue Service (IRS) Section 7520 hurdle rate (5.40% for September 2026) to beneficiaries without consuming that lifetime exemption. In contrast, an IDGT typically requires an upfront taxable seed gift to support a promissory note, but it allows multi-generational structuring and carries no mortality cliff.\n\nLegal fees for either trust structure typically range from $2,500 to $10,000 or more for initial drafting. Choosing between them depends on the volatility of the asset, whether you want to spend lifetime exemption, and how long you expect to survive after funding.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Core transfer mechanic",
+        "a": "Grantor retains fixed annuity payments for a set term of years",
+        "b": "Grantor sells assets to trust in exchange for a promissory note"
+      },
+      {
+        "dimension": "Gift tax exposure at funding",
+        "a": "Near zero when structured as a zeroed-out trust",
+        "b": "Consumes exemption on the upfront seed gift"
+      },
+      {
+        "dimension": "Structure time horizon",
+        "a": "Fixed short term, typically 2 to 10 years",
+        "b": "Open-ended long term based on promissory note maturity"
+      },
+      {
+        "dimension": "Grantor mortality risk",
+        "a": "Assets return to taxable estate if grantor dies during term",
+        "b": "No term cliff; only the unpaid note balance stays in estate"
+      },
+      {
+        "dimension": "Annual cash obligation",
+        "a": "Trust must pay the fixed annuity on schedule every year",
+        "b": "Trust must service note interest, which the parties can set as interest-only"
+      },
+      {
+        "dimension": "Fixing the basis problem",
+        "a": "No swap power; the carryover basis is locked in at term end",
+        "b": "Substitution power under IRC §675(4)(C) lets the grantor swap in high-basis assets before death"
+      },
+      {
+        "dimension": "Lifetime exemption consumption",
+        "a": "Zero or negligible under IRC Section 2702 rules",
+        "b": "Consumes exemption equal to the initial seed gift"
+      },
+      {
+        "dimension": "Statutory and valuation scrutiny",
+        "a": "Strict adherence to IRC Section 2702 annuity payment timing",
+        "b": "Valuation challenges on sold assets and promissory note terms"
+      },
+      {
+        "dimension": "Optimal asset profile",
+        "a": "Rapidly appreciating liquid equities or pending liquidity events",
+        "b": "Illiquid business interests, real estate, and discounted entities"
+      },
+      {
+        "dimension": "Legal and ongoing costs",
+        "a": "$2,500 to $10,000 per trust; multiplies for rolling series",
+        "b": "$2,500 to $10,000 setup plus ongoing note and appraisal management"
+      }
+    ]
+  },
+  "verdict": "Choose a GRAT if your goal is shifting upside from high-growth, liquid assets out of your estate without consuming your $15,000,000 lifetime gift tax exemption, and your health allows you to outlive a two to five year term. Choose an IDGT if you hold closely held business interests, real estate, or minority shares that benefit from valuation discounts, and you want to lock in multi-generational wealth transfer through an open-ended installment note. This comparison is not for households whose estates fall safely below the 2026 federal exemption ($15,000,000 per individual or $30,000,000 for married couples) and who reside in states without independent estate taxes. For those families, a standard [revocable living trust](/compare/revocable-vs-irrevocable-trust/) avoids probate while preserving a complete step-up in income tax basis at death. What would change our verdict: if federal tax legislation eliminates the grantor trust income tax burn or imposes mandatory ten-year minimum terms on GRATs, installment sales to IDGTs would become the primary viable freeze technique.",
+  "sections": [
+    {
+      "heading": "Core Mechanics: Annuity Hurdle Rates vs Installment Note Sales",
+      "content": "A Grantor Retained Annuity Trust transfers wealth through an annual annuity payment, while an Intentionally Defective Grantor Trust relies on a debt-financed installment sale. Under Internal Revenue Code (IRC) Section 2702 and Treasury Regulation Section 25.2702-3, a GRAT grantor makes an irrevocable transfer of assets while retaining the right to receive fixed annual payments for a designated term of years. The value of the taxable gift equals the total fair market value of the transferred property minus the actuarial value of the retained annuity stream.\n\nPlanners regularly create a zeroed-out GRAT by setting the annuity payments so the remainder interest equals zero. When structured this way, the transfer triggers near-zero taxable gift value and consumes virtually none of the grantor's lifetime exemption.\n\nTo produce a net transfer to remainder beneficiaries, the trust investments must outpace the Section 7520 hurdle rate. The IRS calculates this rate monthly at 120% of the applicable federal midterm rate, setting the September 2026 hurdle rate at 5.40%. You can check the current figure on the official [IRS Section 7520 interest rates](https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates) page. Growth above this benchmark shifts to the beneficiaries without federal gift or estate taxes, while underperformance simply returns the assets to the grantor through annual installments. Learn more in our detailed guides on [what is a GRAT trust](/guides/what-is-a-grat-trust/) and the [rolling GRAT strategy](/guides/rolling-grat-strategy/).\n\nAn IDGT uses an installment sale rather than a retained annuity. The grantor creates an irrevocable trust and funds it with an initial seed gift, which estate planners typically set at roughly 10% of the intended sale value as a planning convention. The grantor then sells rapidly appreciating assets to the trust in exchange for a formal promissory note carrying interest at the statutory Applicable Federal Rate (AFR).\n\nRevenue Ruling 85-13 confirms that a sale between a grantor and their grantor trust is ignored for federal income tax purposes, meaning the transaction triggers no immediate capital gains realization. The installment note locks in the asset value at the sale date, shifting all future appreciation above the note interest rate to trust beneficiaries. Read our [IDGT guide](/guides/intentionally-defective-grantor-trust-idgt/) for an in-depth breakdown of installment note structures."
+    },
+    {
+      "heading": "Mortality Risk and the IRC Section 2036 Cliff",
+      "content": "Mortality risk creates a complete loss of tax benefits for a GRAT if the grantor dies during the trust term, whereas an IDGT avoids this all-or-nothing cliff. Under IRC Section 2036, retained life interests cause trust assets to return to the grantor's gross estate if the grantor passes away before the annuity period concludes. If a grantor establishes a five-year GRAT and dies in year four, the estate receives zero transfer tax savings, forfeiting the legal setup costs.\n\nEstate planners counteract this mortality vulnerability by implementing a rolling GRAT strategy. Grantors establish a sequence of short two-year trusts, rolling each returned annuity payment into a fresh trust with its own two-year horizon. A short term reduces the probability of dying during an active trust and confines the risk of an investment loss to one isolated portfolio tranche.\n\nAn IDGT carries no statutory term and no mortality cliff. Where the sale is respected as bona fide, the trust assets stay outside the gross estate no matter when the grantor dies. If the grantor fails to collect note interest or commingles trust funds, the IRS can argue the sale was a sham and pull the value back under IRC Section 2036. Only the remaining unpaid balance of the promissory note, including accrued interest, is included in the gross estate on Form 706.\n\nExecutors file Form 706 within nine months of death, though a six-month extension is available upon request. Surviving family members avoid estate tax on all asset appreciation inside the IDGT, preserving the integrity of the initial freeze transaction."
+    },
+    {
+      "heading": "Tax Treatment: The Grantor Trust Tax Burn and Basis Rules",
+      "content": "Both GRATs and IDGTs classify as grantor trusts for federal income tax purposes, requiring the grantor to pay income taxes on trust earnings. Under IRC Sections 671 to 679, the trust's tax attributes flow directly to the grantor's individual tax return. This tax treatment prevents the trust from paying income taxes at compressed fiduciary brackets that reach the 37% federal rate at just $16,000 of income. Review our [trust tax rates guide](/guides/trust-tax-rates-explained/) for bracket breakdowns.\n\nThe grantor's tax obligation functions as an ongoing, indirect transfer of wealth. Under Revenue Ruling 2004-64, the grantor's payment of income taxes generated by trust property is not treated as an additional gift to trust beneficiaries. Trust assets compound tax-free while the grantor's taxable estate is reduced by the annual income tax payments, a dynamic known as the grantor trust tax burn.\n\nNeither structure provides a step-up in income tax basis under IRC Section 1014 for assets that successfully pass outside the gross estate. Beneficiaries receive a carryover basis equal to the grantor's original purchase basis, which creates an embedded capital gains exposure upon eventual liquidation. High-net-worth families accept this carryover basis because avoiding a flat 40% estate tax delivers greater net wealth preservation than avoiding a 20% federal capital gains tax."
+    },
+    {
+      "heading": "Asset Selection: Liquid Volatility vs Illiquid Discounted Holdings",
+      "content": "Asset liquidity and valuation predictability dictate whether a GRAT or an IDGT serves as the superior transfer vehicle. A GRAT requires annual distributions of cash or property to satisfy the strict annuity schedule mandated by Treasury regulations. Distributing illiquid or hard-to-value assets back to the grantor requires formal annual appraisals, which inflates administrative fees and invites IRS valuation challenges.\n\nPublicly traded equities, shares with near-term initial public offering (IPO) potential, and volatile venture holdings represent ideal assets for a GRAT. If an equity holding surges by 150% in eighteen months, the excess growth easily clears the 5.40% September 2026 hurdle rate and passes out of the estate. If the stock drops, the grantor simply reclaims the remaining shares via annuity payments and can deploy them into a new trust.\n\nAn IDGT excels when holding illiquid family business interests, real estate limited liability companies, or commercial property portfolios. The promissory note allows flexible payment structures, including interest-only terms with balloon principal payments at maturity. This structure lets an operating business service the note out of ordinary operational cash flows rather than forced asset sales.\n\nGrantors can also capitalize on valuation discounts when transferring assets to an IDGT. Minority interests in private operating companies or real estate partnerships may qualify for lack-of-marketability and lack-of-control valuation discounts, the size of which depends entirely on a qualified appraisal of the specific interest. Selling discounted entity units against a promissory note amplifies the effective wealth transfer without running afoul of rigid annuity requirements. See our overview of [advanced estate planning strategies](/guides/advanced-estate-planning-strategies/) for entity discount rules."
+    },
+    {
+      "heading": "Regulatory Scrutiny and IRS Enforcement Focus",
+      "content": "Recent enforcement activity shows that the Internal Revenue Service closely reviews trust administration and asset valuation in high-dollar transfer plans. According to a September 2026 Wall Street Journal report by Ashlea Ebeling, the IRS is asserting a $736 million gift tax bill against Chuck and Trisha Elcan of Nashville, Tennessee, over GRATs that held shares of HCA Healthcare. The couple are disputing the assessment in U.S. Tax Court, and the case remains pending and unresolved.\n\nThe IRS contends that the taxpayers made operational missteps with the trusts, whereas the couple argue their tactics are valid and standard industry practice. Their attorney, John Porter, stated that the IRS position produces a draconian result. Trisha Elcan's father and grandfather co-founded HCA in 1968, highlighting the multi-generational wealth at stake in the dispute.\n\nMike Kaercher, deputy director of the Tax Law Center at New York University, described GRATs as largely no-regrets planning because grantors whose trusts underperform can place assets into a new trust and try again. Lauren Wagner, a tax partner at Armanino Advisory, observed that grantors who execute repeated GRATs accept winning years and losing years in the expectation of coming out ahead over time.\n\nThe Biden administration proposed restricting trust strategies, including GRATs, projecting $84 billion in revenue over a decade, but Congress did not enact the legislation. As an illustration of upside, Louis Laski, a former private-wealth lawyer and co-founder of GRATtrack, estimated that $1 million of Amazon.com stock placed in two-year rolling GRATs ten years ago would have shifted roughly $4.5 million to beneficiaries gift-tax-free; this is one practitioner's estimate reported by the WSJ rather than a measured guarantee. IDGTs face their own audit exposure, particularly around valuation discounts and promissory note commercial terms."
+    },
+    {
+      "heading": "Cost, Complexity, and Rolling Strategies",
+      "content": "Establishing and maintaining either trust requires legal and administrative expense of $2,500 to $10,000 or more per trust, recurring over multiple tax years that recurs over multiple tax years. Professional fees for drafting an irrevocable trust typically range from $2,500 to $10,000 or more depending on asset complexity and jurisdictional requirements. Neither vehicle is appropriate for do-it-yourself planning; each demands qualified estate planning attorneys, certified public accountants (CPAs), and independent valuation appraisers.\n\nA rolling GRAT strategy multiplies these initial expenses because every two-year cycle involves drafting a new trust instrument and retitling assets. Grantors must file Form 709 (United States Gift and Generation-Skipping Transfer Tax Return) by April 15 of the year following trust funding. Even when a zeroed-out GRAT yields zero taxable gift liability, filing [Form 709](/guides/form-709-gift-tax-return/) discloses the transaction to start the statutory three-year audit limitation period. Track your limits with our [2026 gift tax limit guide](/guides/gift-tax-limit-2026/).\n\nAn IDGT concentrates costs in the initial transaction and ongoing loan management. Upfront expenses include formal qualified appraisals for privately held assets to defend valuation discounts against IRS audits, along with drafting the underlying promissory note. Ongoing administration demands annual tracking of interest payments, monitoring note covenants, and maintaining clear fiduciary boundaries to avoid estate inclusion.\n\nModel your net transfer tax exposure with our [estate tax calculator](/estate-planning/estate-tax-calculator/) before meeting an estate planning attorney to evaluate GRAT vs IDGT options for your specific assets."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the disadvantages of a GRAT trust?",
+      "answer": "The primary disadvantage of a GRAT is mortality risk: if the grantor dies during the trust term, all trust assets return to the gross estate under IRC Section 2036, eliminating any tax benefit. Additionally, if the trust assets fail to appreciate faster than the Section 7520 hurdle rate (5.40% for September 2026), the strategy produces no wealth transfer while wasting administrative and legal fees. Transferred assets also lose the step-up in income tax basis at death, passing carryover basis to remainder beneficiaries."
+    },
+    {
+      "question": "What are the disadvantages of an Intentionally Defective Grantor Trust (IDGT)?",
+      "answer": "An IDGT requires an upfront seed gift that consumes a portion of your $15,000,000 lifetime gift tax exemption, unlike a zeroed-out GRAT which requires little to no exemption. The grantor must also bear the ongoing income tax liability for trust earnings over a multi-year period, which can create liquidity strain if the grantor lacks independent cash flow. If the IRS successfully challenges the valuation of assets sold to the trust, the difference between the sale price and fair market value may be recharacterized as a taxable gift subject to penalties."
+    },
+    {
+      "question": "What is the difference between a grantor trust and an Intentionally Defective Grantor Trust?",
+      "answer": "A grantor trust is any trust where the creator retains certain powers under IRC Sections 671 to 679, making the creator responsible for paying income taxes on trust earnings. An Intentionally Defective Grantor Trust is an irrevocable trust intentionally structured to separate income tax rules from estate tax rules. The trust is complete for estate tax purposes, removing assets from the gross estate, while remaining defective for income tax purposes so the grantor continues paying the income tax."
+    },
+    {
+      "question": "What happens to a GRAT when the grantor dies?",
+      "answer": "If the grantor dies during the active term of a GRAT, some or all trust assets are pulled back into the grantor's taxable estate under IRC Section 2036, resulting in estate taxation as if the trust had never been formed. If the grantor survives the term, the remaining trust assets pass to designated remainder beneficiaries or continuing trusts completely free of federal estate and gift taxes. Estate planners frequently use short two-year terms to minimize this mortality exposure."
+    },
+    {
+      "question": "Who pays taxes on a GRAT?",
+      "answer": "The grantor pays all income taxes on earnings, dividends, and realized capital gains generated by a GRAT during the trust term. Because a GRAT is classified as a grantor trust under federal tax law, the trust does not pay income tax at compressed trust rates; instead, the grantor reports trust income directly on their individual Form 1040. This tax payment is not treated as an additional taxable gift to the beneficiaries, allowing trust assets to compound without tax drag."
+    },
+    {
+      "question": "What happens to an IDGT when the grantor dies?",
+      "answer": "When the grantor dies, assets held inside an IDGT remain outside the grantor's gross estate and pass to beneficiaries without incurring estate tax. However, any outstanding balance on the promissory note owed by the trust to the grantor is an asset of the grantor and is included in the gross estate on Form 706. The assets distributed from the trust do not receive a step-up in basis under IRC Section 1014, so beneficiaries inherit the trust's carryover tax basis."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Estate and Gift Taxes",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "label": "IRC §2702, Special Valuation Rules in Case of Transfers of Certain Interests in Trusts",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "label": "IRC §2036, Transfers with Retained Life Estate",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2036"
+    },
+    {
+      "label": "IRS, Section 7520 Interest Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates"
+    }
+  ],
+  "relatedComparisons": [
+    "grat-vs-slat",
+    "revocable-vs-irrevocable-trust"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Estate tax calculator",
+      "href": "/estate-planning/estate-tax-calculator/"
+    },
+    {
+      "label": "Estate planning hub",
+      "href": "/estate-planning/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

@@ -1,0 +1,60 @@
+{
+ "slug": "grat-vs-idgt",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2845,
+ "floor": 1500,
+ "input_tokens": 22121,
+ "output_tokens": 4813,
+ "thinking_tokens": 13460,
+ "est_cost_usd": 0.0851,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)",
+   "removed 2 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.actec.org/', 'https://www.irs.gov/applicable-federal-rates'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.actec.org/",
+   "https://www.irs.gov/applicable-federal-rates"
+  ],
+  "words": 2845,
+  "numbers_not_in_facts": [
+   "1014",
+   "1040",
+   "150",
+   "16000",
+   "26",
+   "35",
+   "37"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18382
+  }
+ },
+ "seconds": 56.5,
+ "response_id": "s5GyauzkNenUz7IP6_PhuQ0",
+ "generated_at": "2026-09-22T09:34:19-0500"
+}

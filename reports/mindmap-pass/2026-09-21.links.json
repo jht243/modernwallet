@@ -1,0 +1,317 @@
+{
+ "new_pages": {
+  "guides/what-is-a-grat-trust": {
+   "inbound": 7,
+   "distinct_anchors": 5,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-idgt",
+    "compare/grat-vs-slat",
+    "guides/form-709-gift-tax-return",
+    "guides/gift-tax-limit-2026",
+    "guides/intentionally-defective-grantor-trust-idgt",
+    "guides/rolling-grat-strategy"
+   ],
+   "links": [
+    {
+     "from": "guides/rolling-grat-strategy",
+     "anchor": "what a GRAT trust is"
+    },
+    {
+     "from": "guides/advanced-estate-planning-strategies",
+     "anchor": "what a GRAT is and how it works"
+    },
+    {
+     "from": "guides/gift-tax-limit-2026",
+     "anchor": "what is a GRAT trust"
+    },
+    {
+     "from": "guides/intentionally-defective-grantor-trust-idgt",
+     "anchor": "grantor retained annuity trust (GRAT)"
+    },
+    {
+     "from": "guides/form-709-gift-tax-return",
+     "anchor": "Grantor Retained Annuity Trust (GRAT)"
+    },
+    {
+     "from": "compare/grat-vs-idgt",
+     "anchor": "what is a GRAT trust"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "what a GRAT is"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/rolling-grat-strategy": {
+   "inbound": 3,
+   "distinct_anchors": 2,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-idgt",
+    "compare/grat-vs-slat",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "rolling GRAT strategy guide"
+    },
+    {
+     "from": "compare/grat-vs-idgt",
+     "anchor": "rolling GRAT strategy"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "rolling GRAT strategy"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/gift-tax-limit-2026": {
+   "inbound": 8,
+   "distinct_anchors": 7,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-idgt",
+    "compare/grat-vs-slat",
+    "guides/form-709-gift-tax-return",
+    "guides/slat-trust-explained",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "estate-planning/estate-tax-calculator",
+     "anchor": "$19,000 annual exclusion"
+    },
+    {
+     "from": "guides/lending-money-to-family-boundaries",
+     "anchor": "2026 gift tax limits guide"
+    },
+    {
+     "from": "guides/slat-trust-explained",
+     "anchor": "2026 gift tax limit"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "what counts against the lifetime exemption"
+    },
+    {
+     "from": "guides/form-709-gift-tax-return",
+     "anchor": "2026 gift tax limits"
+    },
+    {
+     "from": "guides/how-to-open-a-custodial-brokerage-account-for-kids",
+     "anchor": "federal gift tax"
+    },
+    {
+     "from": "compare/grat-vs-idgt",
+     "anchor": "2026 gift tax limit guide"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "2026 gift tax limit guide"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/form-709-gift-tax-return": {
+   "inbound": 6,
+   "distinct_anchors": 5,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-idgt",
+    "compare/grat-vs-slat",
+    "guides/gift-tax-limit-2026",
+    "guides/slat-trust-explained",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/advanced-estate-planning-strategies",
+     "anchor": "filing the gift tax return"
+    },
+    {
+     "from": "guides/slat-trust-explained",
+     "anchor": "Form 709 filing requirements"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "Form 709"
+    },
+    {
+     "from": "guides/gift-tax-limit-2026",
+     "anchor": "Form 709 gift tax return"
+    },
+    {
+     "from": "compare/grat-vs-idgt",
+     "anchor": "Form 709"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "Form 709 filing guide"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/intentionally-defective-grantor-trust-idgt": {
+   "inbound": 7,
+   "distinct_anchors": 4,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-idgt",
+    "compare/grat-vs-slat",
+    "guides/form-709-gift-tax-return",
+    "guides/rolling-grat-strategy",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/rolling-grat-strategy",
+     "anchor": "intentionally defective grantor trust (IDGT)"
+    },
+    {
+     "from": "guides/advanced-estate-planning-strategies",
+     "anchor": "full IDGT walkthrough"
+    },
+    {
+     "from": "guides/trust-tax-rates-explained",
+     "anchor": "IDGT"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "IDGT guide"
+    },
+    {
+     "from": "guides/form-709-gift-tax-return",
+     "anchor": "Intentionally Defective Grantor Trust (IDGT)"
+    },
+    {
+     "from": "compare/grat-vs-idgt",
+     "anchor": "IDGT guide"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "intentionally defective grantor trust (IDGT)"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "guides/slat-trust-explained": {
+   "inbound": 6,
+   "distinct_anchors": 5,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-slat",
+    "guides/form-709-gift-tax-return",
+    "guides/gift-tax-limit-2026",
+    "guides/rolling-grat-strategy",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/rolling-grat-strategy",
+     "anchor": "spousal lifetime access trust (SLAT)"
+    },
+    {
+     "from": "guides/trust-tax-rates-explained",
+     "anchor": "SLAT"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "SLAT guide"
+    },
+    {
+     "from": "guides/gift-tax-limit-2026",
+     "anchor": "how a SLAT trust works"
+    },
+    {
+     "from": "guides/form-709-gift-tax-return",
+     "anchor": "Spousal Lifetime Access Trust (SLAT)"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "how a SLAT works"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "compare/grat-vs-idgt": {
+   "inbound": 5,
+   "distinct_anchors": 5,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "compare/grat-vs-slat",
+    "guides/intentionally-defective-grantor-trust-idgt",
+    "guides/rolling-grat-strategy",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/rolling-grat-strategy",
+     "anchor": "how an installment sale differs from an annuity"
+    },
+    {
+     "from": "guides/advanced-estate-planning-strategies",
+     "anchor": "side-by-side of the two structures"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "GRAT vs. IDGT comparison"
+    },
+    {
+     "from": "guides/intentionally-defective-grantor-trust-idgt",
+     "anchor": "the mortality-risk tradeoff against a GRAT"
+    },
+    {
+     "from": "compare/grat-vs-slat",
+     "anchor": "GRAT vs IDGT analysis"
+    }
+   ],
+   "unlinked_mentions": []
+  },
+  "compare/grat-vs-slat": {
+   "inbound": 3,
+   "distinct_anchors": 3,
+   "orphan": false,
+   "below_target": false,
+   "single_anchor": false,
+   "siblings_linking_in": [
+    "guides/rolling-grat-strategy",
+    "guides/slat-trust-explained",
+    "guides/what-is-a-grat-trust"
+   ],
+   "links": [
+    {
+     "from": "guides/rolling-grat-strategy",
+     "anchor": "whether spousal access beats a growth hurdle"
+    },
+    {
+     "from": "guides/slat-trust-explained",
+     "anchor": "how a growth-freeze trust compares with a SLAT"
+    },
+    {
+     "from": "guides/what-is-a-grat-trust",
+     "anchor": "GRAT vs. SLAT comparison"
+    }
+   ],
+   "unlinked_mentions": []
+  }
+ },
+ "target_inbound": 3
+}

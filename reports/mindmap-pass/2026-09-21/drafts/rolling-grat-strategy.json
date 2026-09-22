@@ -1,0 +1,102 @@
+{
+  "slug": "rolling-grat-strategy",
+  "title": "Rolling GRAT Strategy: How Zeroed-Out Trusts Work",
+  "metaDescription": "A rolling GRAT uses short-term trusts to pass investment gains to heirs gift-tax-free. Learn how zeroed-out GRAT math, terms, and IRS rules work.",
+  "h1": "Rolling GRAT Strategy: Mechanics, Math, and IRS Rules",
+  "cardBlurb": "How rolling short-term GRATs use zeroed-out annuity math to shift investment gains out of taxable estates.",
+  "introText": "A rolling grantor retained annuity trust (GRAT) transfers asset growth above a federal hurdle rate to beneficiaries with little or no gift tax liability. At ModernWallet, we evaluate transfer techniques across our estate planning guides to help readers understand the mechanics of moving wealth out of taxable estates. This strategy links a continuous series of two-year trusts so that each returned annuity payment immediately funds the next vehicle in line.\n\nBecause a zeroed-out trust structure sets the taxable gift value near zero dollars, a taxpayer can initiate new trusts repeatedly without exhausting their lifetime gift tax exemption. A rolling GRAT captures market surges during favorable years while returning the original principal during market downturns.",
+  "sections": [
+    {
+      "heading": "Rolling GRAT Mechanics and Funding Structure",
+      "body": "A rolling GRAT is a series of short-term, back-to-back grantor retained annuity trusts where each annual annuity payment received by the grantor immediately funds the next trust in the sequence.\n\nUnder Internal Revenue Code (IRC) Section 2702 and Treasury Regulation Section 25.2702-3, a grantor creates an irrevocable trust and retains the right to an annuity paid at least annually for a set term of years. When that term ends, any remaining trust assets pass to designated remainder beneficiaries, such as children or an irrevocable family trust.\n\nThe rolling mechanism functions like an automated wealth pipeline. A grantor funds Trust One with an appreciating asset, such as publicly traded stock. When Trust One pays its required annual annuity back to the grantor at the end of year one, the grantor transfers those distributed shares into Trust Two. When Trust One pays its final distribution at the end of year two, that capital funds Trust Three alongside the distribution from Trust Two. Maintaining this continuous cycle ensures that capital remains deployed inside an active trust structure without requiring fresh capital injections."
+    },
+    {
+      "heading": "The Zeroed-Out Transfer Math",
+      "body": "In a zeroed-out GRAT, the grantor sets annual annuity payments so that the actuarial present value of the retained annuity precisely matches the fair market value of assets transferred to the trust.\n\nThe Internal Revenue Service (IRS) calculates the actuarial value of the annuity using the statutory hurdle rate under IRC Section 7520. This rate equals 120% of the applicable federal midterm rate, compounded annually, and updates monthly. Because the present value of the retained annuity offsets the funding amount, the calculated value of the remainder interest equals zero dollars or a nominal sum. As a result, funding the trust requires filing [Form 709](https://www.irs.gov/instructions/i709) but consumes little or none of the taxpayer's federal lifetime gift and estate tax exemption.\n\nHere is a hypothetical illustration, using the September 2026 Section 7520 rate of 5.40%. A grantor transfers $5,000,000 of equities into a two-year zeroed-out GRAT in September 2026. To produce a remainder near zero, the trust agreement schedules two annual annuity payments of approximately $2,704,400 back to the grantor. If the equities grow at an annualized rate of 12%, the trust value rises to $5,600,000 at the close of year one. The trustee distributes the first annuity payment of $2,704,400, leaving $2,895,600 to compound in year two.\n\nAt a 12% growth rate in year two, that balance reaches approximately $3,243,000 before the final distribution. The trust pays the second annuity of $2,704,400 to the grantor, leaving roughly $538,600 in the trust. That surplus growth of nearly $539,000 passes to the beneficiaries completely free of federal gift and estate tax. Actual financial results depend entirely on the Section 7520 rate in the specific funding month and the performance of the underlying assets. You can check the current published rates in the official [IRS Section 7520 interest rates table](https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates)."
+    },
+    {
+      "heading": "Two-Year Terms Versus Ten-Year Commitments",
+      "body": "Two-year trust terms minimize mortality exposure and isolate down market cycles to individual trusts.\n\nUnder IRC Section 2036, if a grantor dies while retaining an income interest in a trust, the underlying trust property is pulled back into their taxable gross estate. A long ten-year trust exposes the grantor to a full decade of mortality risk, which would eliminate the estate tax benefit if death occurs in year nine. A series of two-year trusts confines mortality risk to a rolling 24-month window.\n\nShort terms also protect the overall plan from market downturns. In a single ten-year trust, a severe bear market in years three or four can drag cumulative portfolio returns below the hurdle rate for the entire decade, leaving zero remainder for heirs. With two-year rolling structures, market declines affect only the specific trust active during that drop. Prior successful transfers remain shielded in the hands of beneficiaries, and subsequent trusts can fund at depressed asset values to capture the recovery."
+    },
+    {
+      "heading": "Downside Outcomes During Down Market Cycles",
+      "body": "When trust investments produce returns below the Section 7520 rate, the trust pays out its full value to the grantor through the required annuity and dissolves with zero taxable transfer.\n\nIf an asset declines or grows more slowly than the benchmark rate, the trust runs out of capital while paying the grantor's annuity. The remainder beneficiaries receive nothing, and the trust balance hits zero. The grantor does not lose the underlying capital, because the returned shares simply flow back onto the grantor's balance sheet. The real loss is confined to legal drafting fees, appraisal expenses, and administrative time.\n\nThis asymmetric risk profile makes the strategy popular among wealth advisors. According to a September 2026 Wall Street Journal report, Mike Kaercher, deputy director of the Tax Law Center at New York University, described GRATs as \"largely no-regrets planning\" because \"if your GRAT doesn't work, you just throw your assets into a new GRAT and try again.\" In the same report, Lauren Wagner, a tax partner at Armanino Advisory, noted regarding repeated trust structures that \"you're going to have winning years and losing years, and you hope you come out ahead.\""
+    },
+    {
+      "heading": "Historical Estimates and Market Performance Variance",
+      "body": "Substantial wealth transfers through rolling trusts require underlying assets to outpace the statutory hurdle rate by a wide margin across market cycles.\n\nBecause the trust hurdle rate is fixed at funding, high-volatility equities offer the highest statistical dispersion between flat performance and exceptional appreciation. According to a September 2026 Wall Street Journal report, Louis Laski, a former private-wealth lawyer and co-founder of GRATtrack, estimated that $1,000,000 of Amazon.com stock placed in two-year rolling GRATs ten years ago would have pushed about $4,500,000 to beneficiaries free of gift and estate tax, despite Amazon's steep stock decline in 2022.\n\nThat scenario is one practitioner's estimate reported by the Wall Street Journal, not a guaranteed or typical result. The outcome of any rolling strategy depends on sustained equity outperformance above the prevailing Section 7520 benchmark. If an asset produces flat or modest single-digit returns that match the hurdle rate, the trust returns all capital to the grantor and passes zero dollars to heirs."
+    },
+    {
+      "heading": "IRS Regulatory Scrutiny and Administrative Discipline",
+      "body": "Operating a sequence of trusts requires strict compliance with statutory distribution deadlines and accurate asset valuations.\n\nThe IRS monitors grantor trusts to confirm that taxpayers adhere to formal statutory guidelines rather than running trusts as informal holding accounts. Treasury Regulation Section 25.2702-3 requires annuity distributions to occur at least annually, without exception. Trustees cannot issue promissory notes to satisfy the annuity, nor can they delay distributions until market conditions improve. Furthermore, hard-to-value assets like private company stock require independent appraisals to prevent undervaluation penalties on funding.\n\nThis administrative scrutiny is evident in current federal litigation. According to a September 2026 Wall Street Journal report, the IRS is asserting a $736 million gift tax bill against Chuck and Trisha Elcan of Nashville, Tennessee, regarding GRATs that held shares of HCA Healthcare. Trisha Elcan's father and grandfather co-founded HCA Healthcare in 1968. The couple are disputing the assessment in U.S. Tax Court, and the case remains pending and unresolved.\n\nThe IRS argues that the taxpayers made operational missteps during trust administration, while the couple assert that their methods are valid and standard industry practice. Their attorney, John Porter, stated that the IRS position produces a draconian result. While the Biden administration previously proposed closing perceived trust loopholes to generate an estimated $84 billion in federal revenue over ten years, Congress did not pass those measures. However, the Elcan dispute shows the IRS will examine how annual payments and valuations were executed."
+    },
+    {
+      "heading": "When a Rolling GRAT Fits Your Plan",
+      "body": "A rolling trust structure fits grantors holding volatile, high-growth assets whose estates exceed the federal lifetime gift and estate tax exemption.\n\nFor 2026, the federal lifetime gift and estate tax exemption is $15,000,000 per individual and $30,000,000 for a married couple using portability. These thresholds were made permanent and indexed to inflation under the One Big Beautiful Bill Act (Public Law 119-21, signed July 2025), which amended IRC Section 2010(c)(3). When estate assets exceed these amounts, any excess value faces a flat 40% federal transfer tax upon death. A rolling trust fits individuals holding concentrated positions in volatile public equities or private equity shares anticipating imminent valuation spikes.\n\nThis structure is not for everyone. Taxpayers with total assets well below the $15,000,000 threshold have no immediate federal estate tax exposure and should focus on foundational documents like wills and revocable living trusts. We compare those foundational tools in our [living trust vs. will guide](/compare/living-trust-vs-will/). Similarly, individuals with illiquid assets that cannot be easily valued or partitioned should avoid this approach, as paying the annual annuity in illiquid shares requires costly recurring appraisals. Finally, individuals with acute medical challenges or short life expectancies should avoid two-year commitments, as death during the term pulls all trust assets back into the gross taxable estate."
+    },
+    {
+      "heading": "Annual Costs of Running a Rolling GRAT Program",
+      "body": "Legal drafting and ongoing administration fees represent the primary cash expenditure for rolling trust structures.\n\nEstablishing a single irrevocable trust typically costs between $2,500 to $10,000 or more in attorney drafting fees. In a rolling program, these expenses multiply because every trust is a distinct legal entity requiring its own trust agreement, separate employer identification number, dedicated brokerage account, and formal asset re-titling.\n\nIn addition to attorney fees, grantors incur ongoing administrative costs. A certified public accountant (CPA) must prepare and file Form 709 each year to report the funding of every new trust and verify that the calculated remainder interest equals zero. If the trust holds private company interests, each annual in-kind annuity payment needs its own qualified appraisal, and that fee recurs every year. Because of these cumulative overhead costs, a rolling program generally requires several million dollars in volatile assets to justify the annual legal and accounting bills. You can explore standard trust administration costs using our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/)."
+    },
+    {
+      "heading": "Alternative Trust Structures and Long-Horizon Options",
+      "body": "Evaluating a rolling program requires comparing short-term statutory annuities against permanent wealth transfer tools.\n\nWhile a rolling trust operates in short two-year bursts, other structures provide multi-generational transfer benefits over decades. An [intentionally defective grantor trust (IDGT)](/guides/intentionally-defective-grantor-trust-idgt/) allows a grantor to sell assets to a trust in exchange for an installment promissory note. An IDGT carries no fixed statutory term and can hold assets for generations. Planners typically fund an IDGT with a seed gift of roughly 10% of the purchase value as an accepted planning convention, as detailed in our [GRAT vs. IDGT comparison](/compare/grat-vs-idgt/).\n\nAnother popular option is a [spousal lifetime access trust (SLAT)](/guides/slat-trust-explained/), which uses a portion of the grantor's $15,000,000 lifetime exemption upfront to grant a spouse indirect access to trust funds. For a direct evaluation of those tradeoffs, review our [GRAT vs. SLAT comparison](/compare/grat-vs-slat/) and our overview of [what a GRAT trust is](/guides/what-is-a-grat-trust/). Because both structures classify as grantor trusts, the grantor pays the income tax on trust earnings, which allows the trust corpus to compound without tax erosion under the rules explained in our [trust tax rates guide](/guides/trust-tax-rates-explained/).\n\nOur evaluation would change if Congress enacts legislation establishing mandatory ten-year minimum terms for GRATs or eliminating zeroed-out remainder calculations. Furthermore, if statutory Section 7520 hurdle rates rise higher than realistic equity returns, the economic rationale for the strategy collapses. To determine whether your portfolio warrants this level of structuring, estimate your potential exposure with our [estate tax calculator](/estate-planning/estate-tax-calculator/) before speaking with an estate planning attorney about a rolling GRAT."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/estate-tax-calculator/",
+      "label": "Estate tax calculator"
+    },
+    {
+      "href": "/estate-planning/living-trust-cost-calculator/",
+      "label": "Living trust cost calculator"
+    },
+    {
+      "href": "/guides/what-is-a-grat-trust/",
+      "label": "GRAT trust guide"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does GRAT mean?",
+      "answer": "GRAT stands for grantor retained annuity trust. It is an irrevocable trust where the creator transfers assets and retains the right to receive annual annuity payments for a set term of years. Any asset growth exceeding the statutory hurdle rate passes to remainder beneficiaries at the end of the term."
+    },
+    {
+      "question": "How long can a GRAT last?",
+      "answer": "A GRAT typically lasts between two to ten years. Treasury regulations require a minimum term of two years, which planners often favor to minimize the risk of the grantor dying during the trust term."
+    },
+    {
+      "question": "How much does a GRAT cost?",
+      "answer": "Legal fees to establish an irrevocable trust like a GRAT commonly run $2,500 to $10,000 or more per trust. A rolling program that creates new trusts every year incurs recurring attorney drafting fees, valuation costs, and accounting expenses for annual tax filings."
+    },
+    {
+      "question": "What is the difference between a SLAT and a GRAT?",
+      "answer": "A spousal lifetime access trust (SLAT) uses the donor's lifetime gift tax exemption upfront to remove assets from the estate while providing indirect access through a spouse. A zeroed-out GRAT uses little or no lifetime exemption, returning principal and hurdle-rate interest to the grantor while shifting only surplus growth to heirs."
+    },
+    {
+      "question": "Who pays taxes on a GRAT?",
+      "answer": "The grantor pays income taxes on all income and capital gains generated by the GRAT. Because a GRAT is classified as a grantor trust for federal tax purposes, trust income flows through directly to the grantor's individual tax return."
+    },
+    {
+      "question": "Why would someone use a GRAT?",
+      "answer": "A grantor uses a GRAT to transfer rapid investment growth to children or trusts without incurring federal gift tax or consuming their lifetime exemption. The structure allows wealth creators to shift appreciation above the IRS Section 7520 hurdle rate out of their taxable estate."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Section 7520 Interest Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates"
+    },
+    {
+      "label": "IRS, Instructions for Form 709",
+      "url": "https://www.irs.gov/instructions/i709"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

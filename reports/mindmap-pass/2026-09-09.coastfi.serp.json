@@ -1,0 +1,456 @@
+{
+ "rows": [
+  {
+   "keyword": "coast fi",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "pages.m1.com",
+    "www.investopedia.com",
+    "thefioneers.com",
+    "breakyourbudget.substack.com",
+    "www.wsj.com",
+    "www.richify.ai",
+    "projectionlab.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "pages.m1.com",
+    "www.reddit.com",
+    "walletburst.com",
+    "breakyourbudget.substack.com",
+    "coastfirecalc.com",
+    "www.investopedia.com",
+    "projectionlab.com",
+    "nickwolny.com",
+    "www.richify.ai",
+    "www.instagram.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "breakyourbudget.substack.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What does \"coast fi\" mean?",
+    "How do you calculate your coast fi?",
+    "What is the $1000 a month rule for retirees?",
+    "What is a good coast fi number?",
+    "What percentage of people retire with $1,000,000?",
+    "Is $600,000 enough to retire at 62?"
+   ],
+   "related_searches": [
+    "Coast fi calculator",
+    "Coast fi retirement",
+    "Best Coast FIRE calculator",
+    "Coast FIRE calculator couple",
+    "Coast fi vs fire",
+    "Fidelity Coast FIRE calculator",
+    "Coast FIRE calculator reddit",
+    "Coast FIRE calculator NerdWallet"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites pages.m1.com, www.investopedia.com, thefioneers.com, breakyourbudget.substack.com",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "coast fire number by age",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.richify.ai",
+    "pages.m1.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "walletburst.com",
+    "coastfirecalc.com",
+    "www.reddit.com",
+    "www.richify.ai",
+    "marriagekidsandmoney.com",
+    "www.instagram.com",
+    "pages.m1.com",
+    "www.youtube.com",
+    "choosefi.com",
+    "moneyguy.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What should my coast FIRE number be?",
+    "What percentage of Americans have over $1,000,000 in retirement savings?",
+    "What is my Coast FIRE number at 50 years old?",
+    "At what age should you have $200,000 saved?",
+    "How many Americans have at least $100,000 in savings?",
+    "How much do most retirees live on per month?"
+   ],
+   "related_searches": [
+    "Coast FIRE calculator",
+    "Coast fire number by age reddit",
+    "Coast number calculator",
+    "What is Coast FIRE number",
+    "Coast fire number at 40",
+    "Barista FIRE calculator",
+    "Best Coast FIRE calculator",
+    "Coast FIRE number at 30"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.richify.ai, pages.m1.com",
+   "se_results_count": 129
+  },
+  {
+   "keyword": "coast fire number",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "pages.m1.com",
+    "www.richify.ai",
+    "www.get.pelcro.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "coastfirecalc.com",
+    "walletburst.com",
+    "www.reddit.com",
+    "www.richify.ai",
+    "www.get.pelcro.com",
+    "firenum.com",
+    "www.financialsamurai.com",
+    "www.youtube.com",
+    "pages.m1.com",
+    "moneyguy.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do you get your Coast FIRE number?",
+    "What is a good coast FIRE number?",
+    "What does coast FIRE number mean?",
+    "How do I calculate my CoastFIRE number?",
+    "How do I figure out my FIRE number?",
+    "How long will $750,000 last in retirement at 62?"
+   ],
+   "related_searches": [
+    "Coast FIRE calculator",
+    "How to find coast fire number",
+    "Coast fire number calculator",
+    "What is Coast FIRE",
+    "Best Coast FIRE calculator",
+    "Coast FIRE number by age",
+    "Coast fire number at 40",
+    "Coast FIRE number at 30"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites pages.m1.com, www.richify.ai, www.get.pelcro.com",
+   "se_results_count": 130
+  },
+  {
+   "keyword": "coast fire vs fire",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.moneyhub.co.nz",
+    "www.empower.com",
+    "ungrindfi.com",
+    "investingfire.com",
+    "smartasset.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.moneyhub.co.nz",
+    "www.tiktok.com",
+    "projectionlab.com",
+    "www.youtube.com",
+    "www.financialsamurai.com",
+    "www.nerdwallet.com",
+    "investingfire.com",
+    "ungrindfi.com",
+    "www.empower.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.tiktok.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the downsides of coast FIRE?",
+    "How do I know if I am coast FIRE?",
+    "Can you still retire early with Coast FIRE?",
+    "Why is it called coast FIRE?",
+    "What is the difference between FIRE and Coast FIRE?",
+    "Is coast FIRE possible?"
+   ],
+   "related_searches": [
+    "Coast fire vs fire reddit",
+    "Coast fire vs fire pros and cons",
+    "Coast fire vs fire calculator",
+    "Lean FIRE vs Fat FIRE vs Coast FIRE",
+    "Lean FIRE vs Coast FIRE",
+    "Coast FIRE vs Barista FIRE",
+    "Best Coast FIRE calculator",
+    "Fat FIRE vs Lean FIRE"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.tiktok.com, www.youtube.com) incl. #1; AI Overview present, cites www.reddit.com, www.moneyhub.co.nz, www.empower.com, ungrindfi.com",
+   "se_results_count": 124
+  },
+  {
+   "keyword": "is coast fire realistic",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.whitecoatinvestor.com",
+    "www.empower.com",
+    "coastfirecalc.com",
+    "kppfinancial.com",
+    "projectionlab.com",
+    "8figures.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "projectionlab.com",
+    "www.whitecoatinvestor.com",
+    "www.nerdwallet.com",
+    "www.empower.com",
+    "coastfirecalc.com",
+    "kppfinancial.com",
+    "www.financialsamurai.com",
+    "www.kubera.com",
+    "www.reddit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What are the downsides of coast FIRE?",
+    "What percentage of Americans have over $1,000,000 in retirement savings?",
+    "What is the $1000 a month rule for retirees?",
+    "How many Americans have at least $100,000 in savings?",
+    "What is considered a wealthy retiree?",
+    "How much does the average 70 year old have in savings?"
+   ],
+   "related_searches": [
+    "Is coast fire realistic reddit",
+    "Is coast fire realistic or not",
+    "Coast FIRE examples",
+    "Coast FIRE at 40",
+    "Coast FIRE calculator",
+    "Best Coast FIRE calculator",
+    "Coast FIRE strategy",
+    "What is Coast FIRE"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.reddit.com, www.whitecoatinvestor.com, www.empower.com, coastfirecalc.com",
+   "se_results_count": 126
+  },
+  {
+   "keyword": "coast fire chart",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "walletburst.com",
+    "coastfirecalc.com",
+    "projectionlab.com",
+    "www.financialaha.com",
+    "firenum.com",
+    "www.youtube.com",
+    "nickwolny.com",
+    "www.get.pelcro.com",
+    "www.investopedia.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "images": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is a good coastfire number?",
+    "How do I calculate my coast FIRE?",
+    "What is the best Coast FIRE calculator?",
+    "How much money do you need to retire with $100,000 a year income at 55?",
+    "How much do you have to make to get $3,000 a month in Social Security?",
+    "What percentage of Americans retire with $1,000,000?"
+   ],
+   "related_searches": [
+    "Coast FIRE calculator",
+    "Free coast fire chart",
+    "Coast fire chart calculator",
+    "Coast fire chart withdrawal",
+    "Coast FIRE number by age",
+    "Barista FIRE calculator",
+    "Fidelity Coast FIRE calculator",
+    "Coast FIRE spreadsheet"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1",
+   "se_results_count": 133
+  },
+  {
+   "keyword": "how to calculate coast fire",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "walletburst.com",
+    "pages.m1.com",
+    "www.get.pelcro.com",
+    "firenum.com",
+    "coastfirehub.com",
+    "www.financialaha.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "walletburst.com",
+    "coastfirecalc.com",
+    "www.reddit.com",
+    "www.get.pelcro.com",
+    "choosefi.com",
+    "pages.m1.com",
+    "www.financialaha.com",
+    "www.youtube.com",
+    "tools.walletburst.com",
+    "firenum.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much to coast FIRE at 30?",
+    "What is a good CoastFIRE number?",
+    "What is a realistic amount of money to retire with?",
+    "What is the best coast FIRE calculator?",
+    "How do I calculate my Coast FIRE number?",
+    "How long will $500,000 last in retirement at 62?"
+   ],
+   "related_searches": [
+    "How to calculate coast fire withdrawal",
+    "Best Coast FIRE calculator",
+    "How to calculate coast fire retirement",
+    "What is Coast FIRE",
+    "Barista FIRE calculator",
+    "Fidelity Coast FIRE calculator",
+    "Coast FIRE calculator for couples",
+    "Coast FIRE number by age"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites walletburst.com, pages.m1.com, www.get.pelcro.com, firenum.com",
+   "se_results_count": 100
+  },
+  {
+   "keyword": "coast fire spreadsheet template",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "firenum.com",
+    "www.financialaha.com",
+    "walletburst.com",
+    "coastfirecalc.com",
+    "accidentallyretired.com",
+    "www.etsy.com",
+    "johnnyafrica.com",
+    "thefioneers.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Free coast fire spreadsheet template",
+    "Coast fire spreadsheet template free download",
+    "Coast fire spreadsheet template pdf",
+    "Coast FIRE calculator",
+    "Coast FIRE calculator Excel",
+    "FIRE Google Sheet",
+    "Google Sheets retirement planning template",
+    "Coast FIRE calculator fioneers"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present",
+   "se_results_count": 107
+  }
+ ],
+ "cost": "DataForSEO: 8 calls, $0.03305 of $2.00 budget"
+}

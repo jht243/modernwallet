@@ -1,0 +1,98 @@
+{
+  "slug": "slat-trust-explained",
+  "title": "Spousal Lifetime Access Trust and SLAT Trust Guide",
+  "metaDescription": "A spousal lifetime access trust (SLAT) locks in gift exemption. Learn how a SLAT trust works, grantor tax rules, reciprocal risks, and 2026 limits.",
+  "h1": "Spousal Lifetime Access Trust and How a SLAT Trust Works",
+  "cardBlurb": "How a spousal lifetime access trust locks in the lifetime gift tax exemption while keeping indirect access to family assets.",
+  "introText": "A spousal lifetime access trust (SLAT) is an irrevocable trust that one spouse creates for the benefit of the other, using the donor's lifetime exemption while keeping indirect access to trust funds through the beneficiary spouse.\n\nAt ModernWallet, we evaluate wealth transfer structures across our estate guides to show families how an irrevocable transfer impacts lifetime tax liability. A SLAT trust removes appreciating assets from a gross estate while maintaining a financial safety net within the household.\n\nUnder the One Big Beautiful Bill Act (Public Law 119-21) signed in July 2025, the federal lifetime gift and estate tax exemption stands at $15,000,000 per individual and $30,000,000 for a married couple in 2026. Setting up a spousal trust locks in that exemption through a completed gift. Three things decide whether a SLAT fits your plan: how distributions reach your household, who pays the income tax, and what divorce or a spouse's death does to your access.",
+  "sections": [
+    {
+      "heading": "Core Mechanics of a SLAT Trust",
+      "body": "A spousal lifetime access trust operates as an irrevocable trust funded by one spouse for the primary benefit of the other spouse during their lifetime. The funding spouse, known as the donor or grantor, transfers individual property into the trust as a completed gift. Children or grandchildren often serve as remainder beneficiaries who receive the trust property after the surviving spouse passes away.\n\nBecause the transfer is irrevocable, the donor relinquishes direct legal title to the contributed assets. The trust document names a trustee to manage investments and authorize distributions according to established guidelines. For broader context on how irrevocable vehicles operate compared to flexible family arrangements, review our [revocable vs. irrevocable trust comparison](/compare/revocable-vs-irrevocable-trust/) or explore our [advanced estate planning strategies guide](/guides/advanced-estate-planning-strategies/)."
+    },
+    {
+      "heading": "Locking in the 2026 Lifetime Exemption",
+      "body": "Funding a SLAT removes asset appreciation from the gross estate while using the donor's federal lifetime gift and estate tax exemption. In 2026, the basic exclusion amount is $15,000,000 per individual, codified under Internal Revenue Code (IRC) Section 2010(c)(3) and adjusted by the Internal Revenue Service (IRS). Any transfer above the annual exclusion of $19,000 per donee uses a portion of this lifetime limit, shielding future growth from the flat 40% federal estate tax rate.\n\nWhen assets grow inside the trust, that financial growth escapes transfer taxation entirely. As a hypothetical illustration, a $10,000,000 portfolio that grows to $22,000,000 over two decades passes to heirs with no estate tax assessed on the $12,000,000 of growth. Real results depend on actual investment performance. To review the current annual and lifetime thresholds, see our guide to the [2026 gift tax limit](/guides/gift-tax-limit-2026/)."
+    },
+    {
+      "heading": "Indirect Distributions and Beneficiary Access",
+      "body": "The donor spouse maintains indirect access to trust funds solely through distributions made to the beneficiary spouse. The donor is not a trust beneficiary. Because the donor is excluded, the donor possesses no legal right to demand principal or income. Trust agreements typically grant the trustee discretionary authority to pay out funds for health, education, maintenance, or support (HEMS), or under broader discretionary standards.\n\nIndirect access works in practice only while the couple lives together in a stable marriage. Once the trustee distributes cash to the beneficiary spouse, those funds enter the shared marital household. If the beneficiary spouse deposits distributions into a separate account or spends the money independently, the donor spouse has no legal standing to force a transfer."
+    },
+    {
+      "heading": "Divorce, Premature Death, and Reciprocal Trust Doctrine Risks",
+      "body": "A SLAT carries three primary structural risks that can permanently extinguish indirect access or invalidate the trust's tax shelter. The first risk is divorce. If the donor and beneficiary spouse divorce, the donor's indirect access disappears immediately. In many jurisdictions, the ex-spouse retains beneficiary rights unless the trust agreement specifically defines the beneficiary as the person to whom the grantor is currently married.\n\nThe second risk occurs upon the death of the beneficiary spouse. If the beneficiary spouse passes away before the donor, the trust terms direct remaining assets to secondary beneficiaries like children or grandchildren. The donor cannot step into the spouse's shoes or reclaim the assets without triggering estate inclusion under IRC Section 2036.\n\nThe third risk stems from the reciprocal trust doctrine under federal tax jurisprudence. When two spouses create identical mirror SLATs for each other at the same time, the IRS can uncross the trusts. If courts determine the trusts leave both spouses in substantially the same economic position, the IRS pulls both trusts back into the taxable estates. Planners avoid this by using different trustees, staggered execution dates, varied distribution standards, or different beneficiary classes."
+    },
+    {
+      "heading": "SLAT Trust Taxation and Form 709 Filing",
+      "body": "A SLAT functions as a grantor trust for federal income tax purposes, requiring the donor spouse to report and pay all income taxes generated by trust property. Under IRC Section 677, a trust is treated as a grantor trust whenever income may be distributed to the grantor's spouse without adverse party approval. The trust avoids compressed trust tax brackets, which hit the top 37% rate at just $16,000 of retained income, as detailed in our guide to [trust tax rates](/guides/trust-tax-rates-explained/).\n\nPaying the trust's annual income tax provides an extra wealth transfer benefit. Under IRS Revenue Ruling 2004-64, the grantor's tax payments do not constitute additional taxable gifts to the trust. Trust assets grow without reduction from income taxes, while the grantor's outside estate decreases by the amount paid in taxes.\n\nFunding a SLAT is a completed transfer, so the donor must file Form 709, the United States Gift and Generation-Skipping Transfer Tax Return. The return is due on April 15 of the calendar year following the gift, matching the individual income tax filing deadline. For detailed instructions on tracking lifetime exemption allocations, read our guide on [Form 709 filing requirements](/guides/form-709-gift-tax-return/) or consult the official [Form 709 instructions](https://www.irs.gov/instructions/i709)."
+    },
+    {
+      "heading": "Differences Between a SLAT and a QTIP Marital Trust",
+      "body": "A SLAT removes wealth from the gross estate using lifetime gift exemption, whereas a QTIP trust defers estate taxation until the surviving spouse dies. A qualified terminable interest property (QTIP) trust relies on the unlimited marital deduction under IRC Section 2523 for lifetime gifts or IRC Section 2056 for testamentary transfers. No gift or estate tax is due when a QTIP is funded, but all remaining trust assets face estate taxation in the surviving spouse's estate.\n\nIn contrast, funding a SLAT consumes the donor's $15,000,000 lifetime exemption immediately. Because the transfer is a completed taxable gift, the trust assets and all subsequent capital appreciation bypass estate taxes when both spouses pass away. Families choose a QTIP trust primarily to defer taxes while providing income to a surviving spouse, while a SLAT is chosen to permanently shelter growth from the 40% estate tax."
+    },
+    {
+      "heading": "Typical Legal Costs and Administration Requirements",
+      "body": "Establishing a single irrevocable trust typically costs between $2,500 and $10,000 or more in attorney fees depending on estate complexity. Creating dual non-reciprocal trusts for a married couple requires customized drafting and asset division, pushing legal expenses toward the upper end of that typical range. Professional appraisals for illiquid assets, such as closely held business stock or real estate, add independent valuation fees.\n\nOngoing administration demands an advisory team consisting of an estate planning attorney, a certified public accountant (CPA), and an investment manager. The CPA prepares annual gift tax filings on Form 709 during funding years and tracks grantor trust status. Selecting an independent trustee or corporate fiduciary may require an annual management fee, which ensures distribution decisions remain separate from the donor spouse."
+    },
+    {
+      "heading": "Candidates for a SLAT Trust and Common Alternatives",
+      "body": "A SLAT best fits married couples with net worth exceeding federal exemption levels who wish to lock in transfer tax exclusions without surrendering all household access. A SLAT is not suitable for unmarried individuals, couples with total assets below the $15,000,000 individual threshold, or households that might require the gifted assets returned directly to the donor. Those families are better served by revocable living trusts and standard annual exclusion gifts.\n\nOur recommendation would change if Congress lowers the 40% estate tax rate substantially, repeals grantor trust tax rules, or if a household faces marital discord that threatens indirect access. Couples looking to transfer high-growth investments without consuming lifetime gift exemption should review our [GRAT vs. SLAT comparison](/compare/grat-vs-slat/) to examine grantor retained annuity trusts. Work with an estate planning attorney and CPA to evaluate your balance sheet and determine whether creating a SLAT matches your generational wealth objectives.\n\nThis analysis provides general educational information rather than individualized legal or financial advice. Consult a licensed estate planning attorney and CPA before establishing or funding an irrevocable trust structure."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/estate-tax-calculator/",
+      "label": "Estate tax calculator"
+    },
+    {
+      "href": "/estate-planning/living-trust-cost-calculator/",
+      "label": "Living trust cost calculator"
+    },
+    {
+      "href": "/compare/grat-vs-slat/",
+      "label": "GRAT vs. SLAT comparison"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the potential drawbacks of a SLAT trust?",
+      "answer": "The main drawbacks of a spousal lifetime access trust (SLAT) are loss of direct control, risk of divorce, death of the beneficiary spouse, and the reciprocal trust doctrine. Because the transfer is an irrevocable gift, the donor spouse cannot serve as sole trustee with discretionary distribution powers or demand assets back. If the beneficiary spouse dies or the couple divorces, the donor spouse loses all indirect access to trust property."
+    },
+    {
+      "question": "What is the difference between a SLAT and a QTIP trust?",
+      "answer": "A SLAT is an irrevocable lifetime trust that uses the donor's lifetime gift tax exemption to remove assets and their future growth from the gross estate immediately. A qualified terminable interest property (QTIP) trust is typically created at death or during life using the marital deduction. This structure postpones federal estate taxes until the surviving spouse dies instead of using gift exemption during life. While a SLAT shelters asset growth from transfer tax across generations, assets in a QTIP trust remain part of the surviving spouse's taxable estate."
+    },
+    {
+      "question": "Who pays the taxes on a SLAT?",
+      "answer": "The donor spouse pays the income tax generated by trust assets because a SLAT is typically structured as a grantor trust under Internal Revenue Code (IRC) sections 671 through 679. The trust does not pay income tax at compressed trust rates, and the grantor reports all interest, dividends, and capital gains on Form 1040. Under Revenue Ruling 2004-64, the donor's tax payments do not count as additional taxable gifts to the beneficiaries."
+    },
+    {
+      "question": "What happens to a SLAT when the beneficiary spouse dies?",
+      "answer": "When the beneficiary spouse dies, the donor spouse's indirect access to the trust terminates permanently. The remaining trust assets either stay in trust for secondary beneficiaries, such as children, or distribute according to the original trust terms. The donor spouse cannot step in as a beneficiary or reclaim ownership of trust property without pulling the assets back into their gross estate under federal tax law."
+    },
+    {
+      "question": "Is a SLAT a grantor trust?",
+      "answer": "Yes, a SLAT is almost always classified as a grantor trust for federal income tax purposes. Because trust income may be distributed to or accumulated for the donor's spouse without the consent of an adverse party under IRC Section 677, the donor spouse remains responsible for all trust tax liabilities. This grantor status allows the trust principal to compound without being reduced by annual income taxes."
+    },
+    {
+      "question": "How much does a SLAT cost to set up?",
+      "answer": "Attorney fees to establish a single irrevocable trust like a SLAT typically range from $2,500 to $10,000 or more depending on asset complexity. Administering the trust also requires ongoing expenses, including certified public accountant (CPA) fees for annual gift tax reporting on Form 709 and independent trustee or advisory fees. Complex family plans involving two distinct trusts for both spouses run toward the higher end of that pricing spectrum."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Instructions for Form 709",
+      "url": "https://www.irs.gov/instructions/i709"
+    },
+    {
+      "label": "IRS, Frequently Asked Questions on Gift Taxes",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

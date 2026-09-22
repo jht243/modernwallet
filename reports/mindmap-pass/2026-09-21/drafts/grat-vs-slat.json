@@ -1,0 +1,163 @@
+{
+  "updated": "2026-09-22",
+  "slug": "grat-vs-slat",
+  "title": "GRAT vs SLAT: Differences, Tradeoffs, and How to Choose",
+  "metaDescription": "GRAT vs SLAT compared: how each trust works, gift tax exemption use, spousal access, hurdle rates, mortality risk, tax rules, and when to pick each trust.",
+  "targetKeyword": "grat vs slat",
+  "optionA": "GRAT (Grantor Retained Annuity Trust)",
+  "optionB": "SLAT (Spousal Lifetime Access Trust)",
+  "h1": "GRAT vs SLAT: What Is the Difference?",
+  "introText": "The fundamental difference between a GRAT and a SLAT is how they treat your lifetime gift tax exemption: a Grantor Retained Annuity Trust (GRAT) transfers asset appreciation above an IRS benchmark rate while using virtually none of your lifetime exemption, whereas a Spousal Lifetime Access Trust (SLAT) permanently removes assets from your estate by consuming a substantial portion of your lifetime exemption up front.\n\nAt ModernWallet, we evaluate advanced estate planning structures to show high-net-worth households how specific trust choices affect tax exposure, liquidity, and family control. A zeroed-out GRAT returns your initial principal through mandatory annual annuity payments over a fixed term, shifting only the surplus growth to remainder beneficiaries free of gift tax under Internal Revenue Code (IRC) Section 2702. In contrast, a SLAT is an irrevocable gift that provides your spouse with ongoing distributions, allowing a married couple to retain indirect access to the transferred capital while locking in the 2026 federal lifetime exemption of $15,000,000 per individual ($30,000,000 for a married couple).\n\nBoth vehicles operate as grantor trusts for federal income tax purposes, but their term lengths, asset requirements, and failure modes address completely different financial risks.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "What problem it solves",
+        "a": "Transfers growth above the hurdle rate without using lifetime exemption",
+        "b": "Locks in lifetime gift tax exemption while maintaining indirect spousal access"
+      },
+      {
+        "dimension": "Lifetime exemption used at funding",
+        "a": "Near $0 when structured as a zeroed-out trust",
+        "b": "Consumes dollar-for-dollar exemption up to $15,000,000 per individual"
+      },
+      {
+        "dimension": "Access to the money afterwards",
+        "a": "Direct return of principal and hurdle rate interest via annuity payments",
+        "b": "Indirect access through distributions to the beneficiary spouse"
+      },
+      {
+        "dimension": "Marital dependency",
+        "a": "None, available to single or married individuals",
+        "b": "High, divorce or the death of the beneficiary spouse ends indirect access"
+      },
+      {
+        "dimension": "Term length",
+        "a": "Fixed duration, commonly 2 to 10 years",
+        "b": "No fixed term, typically lasts for the spouse's lifetime and beyond"
+      },
+      {
+        "dimension": "Main failure mode",
+        "a": "Grantor dies during the term, pulling assets back under IRC Section 2036",
+        "b": "Spousal death, divorce, or violation of the reciprocal trust doctrine"
+      },
+      {
+        "dimension": "Who can use it",
+        "a": "Anyone, single or married",
+        "b": "Married couples only, and access ends with the marriage"
+      },
+      {
+        "dimension": "Asset fit",
+        "a": "High-growth, volatile assets expected to beat the Section 7520 rate",
+        "b": "Income-generating assets, diversified portfolios, or permanent family capital"
+      },
+      {
+        "dimension": "Whether it is a completed gift",
+        "a": "Completed gift of the remainder interest only, valued at or near $0",
+        "b": "Completed gift of the entire transferred amount upon funding"
+      },
+      {
+        "dimension": "Cost and complexity",
+        "a": "$2,500 to $10,000 or more per trust, often repeated in rolling cycles",
+        "b": "$2,500 to $10,000 or more with intensive drafting around spousal distribution terms"
+      }
+    ]
+  },
+  "verdict": "Choose a GRAT when your primary goal is to shift rapid upside from highly appreciating assets to your heirs without spending your $15,000,000 lifetime gift tax exemption. A GRAT requires you to survive the stated term of years and fits individuals who want their original capital returned through fixed annuity installments. Choose a SLAT when you are a married couple ready to make a permanent, completed gift to lock in current federal exemptions while preserving an indirect financial safety net through distributions to your spouse.\n\nNeither trust is designed for estates comfortably below the $15,000,000 individual threshold (or $30,000,000 for a married couple) or for individuals who cannot afford to lose direct legal ownership of substantial capital. If you are unmarried, a SLAT is completely unavailable. If you cannot tolerate the risk that a sudden drop in asset value leaves zero remainder for your heirs, a single long-term GRAT is the wrong tool.\n\nWhat would change our answer is a dramatic legislative shift in the federal lifetime exemption, a sharp move in the IRS Section 7520 hurdle rate, or a change in marital stability. If statutory exemption levels fall, funding a SLAT immediately becomes more attractive to capture the higher allowance before it disappears. Conversely, if the Section 7520 hurdle rate rises well above its September 2026 level of 5.40%, GRATs require much more aggressive asset performance to pass wealth to beneficiaries.\n\nMany comprehensive plans do not treat GRAT vs SLAT as an exclusive choice: households frequently fund a SLAT with liquid capital to anchor their baseline exemption, then use rolling GRATs to harvest upside from concentrated equity or private business interests.",
+  "sections": [
+    {
+      "heading": "Core Mechanics: How GRATs and SLATs Move Wealth Differently",
+      "content": "A GRAT moves future appreciation out of your estate through structured annuity payments, whereas a SLAT removes an entire block of principal immediately using a completed lifetime gift. Under IRC Section 2702 and Treasury Regulation Section 25.2702-3, a Grantor Retained Annuity Trust is an irrevocable vehicle where the grantor contributes assets and retains an absolute right to receive annual annuity payments for a defined term of 2 to 10 years. The annuity payments are calculated using the IRS Section 7520 hurdle rate for the funding month. If the investments inside the trust grow faster than that hurdle rate, the surplus value remains in the trust and passes to remainder beneficiaries completely free of gift and estate taxes when the term ends. If the investments fail to outperform the hurdle rate, the assets simply return to the grantor through the scheduled annuity distributions, leaving the trust empty.\n\nA Spousal Lifetime Access Trust functions on an entirely different legal framework. A SLAT is an irrevocable trust established by one spouse (the donor) for the benefit of the other spouse (the beneficiary), often naming children or grandchildren as secondary beneficiaries. The transfer into a SLAT is a permanent, completed gift under federal tax rules. The assets do not return to the donor spouse through an annuity. Instead, the trustee manages the principal and distributes income or principal to the beneficiary spouse according to the terms of the trust agreement. To learn more about standalone structures, explore our detailed guides on [what a GRAT is](/guides/what-is-a-grat-trust/) and [how a SLAT works](/guides/slat-trust-explained/)."
+    },
+    {
+      "heading": "Gift Tax Exemption and Completed Gifts",
+      "content": "Funding a SLAT immediately absorbs your lifetime gift and estate tax exemption, while funding a zeroed-out GRAT uses virtually none of it. The One Big Beautiful Bill Act (P.L. 119-21, signed July 2025) permanently established the federal lifetime gift and estate tax exemption at $15,000,000 per individual ($30,000,000 for a married couple using portability) under IRC Section 2010(c)(3), indexed annually for inflation. Any transfer above the exemption faces a flat 40% federal transfer tax rate. A SLAT uses this lifetime exemption immediately upon funding because the transfer is a completed gift under federal tax law. If an individual gifts $10,000,000 into a SLAT, their remaining lifetime exemption drops to $5,000,000.\n\nIn contrast, a zeroed-out GRAT uses virtually no lifetime exemption at all. The grantor retains an annuity stream with an actuarial present value calculated under IRC Section 7520 that roughly equals the initial contribution value. The IRS values the remainder gift to the heirs at or near $0 under Treasury Regulation Section 25.2702-3. Planners who want to move growth without consuming their basic exclusion often use a [rolling GRAT strategy](/guides/rolling-grat-strategy/) to repeat this process across two-year cycles. Readers can review our [2026 gift tax limit guide](/guides/gift-tax-limit-2026/) to understand baseline annual exclusions ($19,000 per donee, or $38,000 for couples splitting gifts). Both GRATs and SLATs require filing Form 709 (United States Gift and Generation-Skipping Transfer Tax Return) by April 15 of the year following the transfer, even when zero gift tax is owed. Review our [Form 709 filing guide](/guides/form-709-gift-tax-return/) for specific reporting instructions."
+    },
+    {
+      "heading": "Spousal Access and the Marital Dependency Risk",
+      "content": "A SLAT maintains indirect family access to trust distributions through the beneficiary spouse, but that access vanishes if the marriage ends or the beneficiary spouse dies. This indirect benefit occurs because distributions made to the beneficiary spouse for health, education, maintenance, and support (HEMS) can support the household standard of living. The donor spouse cannot serve as sole trustee with unrestricted distribution powers and cannot be a named beneficiary without triggering estate inclusion under IRC Section 2036. If the beneficiary spouse predeceases the donor spouse, trust distributions shift exclusively to remainder beneficiaries such as children, cutting off the surviving donor spouse entirely. In the event of divorce, the donor spouse loses all indirect access while the ex-spouse continues to benefit from the trust assets.\n\nA GRAT carries zero marital dependency. Anyone can create a GRAT, whether single, married, or divorced, because access to the capital is preserved directly through mandatory annuity checks paid straight to the grantor. When married couples decide to establish SLATs for each other, they face an additional hurdle: the reciprocal trust doctrine. If the IRS determines that two SLATs created by spouses are interrelated and put the parties in substantially identical economic positions, a court can uncross the trusts and pull the assets back into both taxable estates. Planners avoid this by using different trustees, different distribution standards, different powers of appointment, and different funding dates."
+    },
+    {
+      "heading": "Growth Hurdle versus Market Downturns",
+      "content": "A GRAT transfers wealth only when the investments outpace the statutory IRS hurdle rate. A SLAT does not depend on a hurdle rate at all: the transfer is complete at funding, so the principal and its growth sit outside the estate whatever the market does afterwards, as long as the trust survives the reciprocal trust and Section 2036 challenges covered below. Under IRC Section 7520, the IRS calculates the hurdle rate monthly as 120% of the applicable federal midterm rate, compounded annually. For September 2026, the Section 7520 hurdle rate is 5.40%. Because the IRS resets it monthly, check the current figure on the official [IRS Section 7520 interest rates](https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates) page before funding. For a GRAT to transfer wealth to heirs, the underlying assets must generate an annualized total return higher than 5.40% across the trust term.\n\nConsider a hypothetical illustration of a $5,000,000 transfer into a two-year zeroed-out GRAT funded in September 2026. Under the September 2026 Section 7520 rate of 5.40%, the trust must pay back the full principal plus the 5.40% hurdle rate through annual annuity installments. If the trust assets appreciate at 12% annually, the trust satisfies its annuity obligations and distributes hundreds of thousands of dollars in surplus growth to the remainder beneficiaries completely free of gift tax. If the assets return only 3% annually, the trust pays out its entire value to the grantor in annuity checks, transferring $0 to heirs. In that downside scenario, the grantor loses only the legal and administrative setup fees, while the underlying capital returns safely to their ownership. Actual results depend entirely on the Section 7520 rate for the specific month of funding and the real investment performance of the portfolio.\n\nA SLAT does not rely on a benchmark hurdle rate. Once assets are gifted into a SLAT, the principal and its future growth sit outside the taxable estate, provided the trust survives the reciprocal trust and Section 2036 challenges covered below, even if the assets drop in value during a market downturn."
+    },
+    {
+      "heading": "Mortality Risk, IRS Scrutiny, and Structural Vulnerabilities",
+      "content": "The primary structural risk of a GRAT is the mortality of the grantor during the trust term, while SLATs face legal challenges surrounding IRS scrutiny and reciprocal trust rules. If a grantor dies while a GRAT is active, IRC Section 2036 requires that some or all of the trust assets be pulled back into the grantor's taxable estate. In that scenario, the tax-saving benefit is lost, and the estate must report the assets on Form 706 within 9 months of death. Planners frequently manage this mortality exposure by creating short, two-year rolling GRATs rather than a single ten-year trust.\n\nAccording to a September 2026 Wall Street Journal report, the IRS is actively challenging aggressive trust planning in U.S. Tax Court. The IRS is asserting a $736 million gift tax bill against Chuck and Trisha Elcan of Nashville, Tennessee, over GRATs that held shares of HCA Healthcare. Trisha Elcan's father and grandfather co-founded HCA in 1968. The couple are disputing the assessment in U.S. Tax Court, and the case remains pending and unresolved. The IRS claims that the couple made missteps with their GRAT administration, while their attorney, John Porter, said the IRS position produces a draconian result. Legislative efforts under the Biden administration previously proposed restricting trust maneuvers including GRATs, estimating $84 billion in savings over a decade, but those provisions did not pass Congress.\n\nCommenting on the strategy in the report, Mike Kaercher, deputy director of the Tax Law Center at New York University, noted that GRATs function as largely no-regrets planning, where taxpayers can try again with new assets if a trust fails to beat the hurdle rate. Lauren Wagner, a tax partner at Armanino Advisory, observed that repeated GRAT cycles will experience winning years and losing years over time. In the same report, Louis Laski, a former private-wealth lawyer and co-founder of GRATtrack, estimated that $1 million of Amazon stock placed in two-year rolling GRATs ten years ago would have pushed about $4.5 million to beneficiaries free of tax; this represents one practitioner's retrospective estimate rather than a guaranteed legal or financial outcome."
+    },
+    {
+      "heading": "Cost, Administration, and Decision Framework",
+      "content": "Both GRATs and SLATs require substantial legal drafting and ongoing tax administration that make professional guidance non-negotiable. Legal fees for establishing a single irrevocable trust typically run $2,500 to $10,000 or more, depending on estate complexity and regional market rates. A SLAT usually incurs this cost once, though drafting dual non-reciprocal trusts for a married couple roughly doubles the expense. A rolling GRAT strategy requires recurring legal and appraisal fees because each new trust tranche requires separate legal documents and formal tax return filings. Our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) offers baseline context on basic trust drafting, but advanced irrevocable structures demand specialized estate tax counsel.\n\nBoth trust types qualify as grantor trusts under IRC Sections 671 to 679 for federal income tax purposes. The grantor reports all dividends, interest, and capital gains on their personal Form 1040 rather than paying compressed trust tax rates on Form 1041. Under Revenue Ruling 2004-64, the grantor's ongoing payment of trust income taxes is not considered an additional taxable gift, creating an indirect, tax-free transfer of wealth to beneficiaries over time. For more detail on compressed fiduciary brackets, consult our [trust tax rates guide](/guides/trust-tax-rates-explained/). To evaluate how these tools interact with your broader goals, review our guide on [advanced estate planning strategies](/guides/advanced-estate-planning-strategies/) or compare other structures like an [intentionally defective grantor trust (IDGT)](/guides/intentionally-defective-grantor-trust-idgt/) in our [GRAT vs IDGT analysis](/compare/grat-vs-idgt/).\n\nCalculate your family's potential federal and state tax exposure using our [estate tax calculator](/estate-planning/estate-tax-calculator/), review your asset allocation with a licensed estate planning attorney, and determine whether a GRAT vs SLAT structure fits your long-term wealth transfer objectives."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between a SLAT and a GRAT?",
+      "answer": "A GRAT transfers asset appreciation that exceeds an IRS hurdle rate back to beneficiaries without using much lifetime gift tax exemption, returning the principal to the grantor via annuity payments over a fixed term. A SLAT is an irrevocable transfer that permanently removes assets from the grantor's estate by using lifetime gift tax exemption up front, while granting indirect access to trust funds through distributions to a beneficiary spouse. A GRAT is open to individuals regardless of marital status, while a SLAT requires a marriage to provide indirect access."
+    },
+    {
+      "question": "Who pays taxes on a GRAT?",
+      "answer": "The grantor pays all federal and state income taxes generated by the GRAT on their personal Form 1040 tax return. Because a GRAT is structured as a grantor trust under IRC Sections 671 to 679, the trust itself does not pay income tax on its dividends, interest, or realized capital gains. The grantor's tax payments further reduce their taxable estate without counting as additional taxable gifts to the remainder beneficiaries."
+    },
+    {
+      "question": "What are the potential drawbacks of a SLAT trust?",
+      "answer": "The primary drawback of a SLAT is the complete loss of indirect access if the beneficiary spouse dies or the couple divorces. Because the gift is irrevocable and consumes the donor's $15,000,000 lifetime exemption, the donor spouse cannot retrieve the gifted assets or become a direct beneficiary. Additionally, if both spouses create SLATs that the IRS deems too similar, the reciprocal trust doctrine can unroll the structures and force the assets back into their taxable estates."
+    },
+    {
+      "question": "What happens to a SLAT when the beneficiary spouse dies?",
+      "answer": "When the beneficiary spouse dies, all indirect access to the SLAT terminates for the surviving donor spouse. The trust assets remain outside the donor's taxable estate and continue to be administered for secondary beneficiaries, such as children or grandchildren, according to the trust document. The surviving spouse cannot receive distributions from the trust, and the assets do not receive a step-up in income tax basis at the beneficiary spouse's death."
+    },
+    {
+      "question": "How long does a GRAT last?",
+      "answer": "A GRAT lasts for a fixed term of years defined in the trust agreement, most commonly running from 2 to 10 years. Shorter terms, such as two-year rolling GRATs, are popular among planners because they reduce the risk that the grantor will die during the term and pull the assets back into the taxable estate under IRC Section 2036. The trust terminates automatically once the final scheduled annuity payment is made to the grantor and the remaining assets distribute to remainder beneficiaries."
+    },
+    {
+      "question": "Can you have both a GRAT and a SLAT?",
+      "answer": "Yes, an estate plan can use both a GRAT and a SLAT simultaneously to achieve complementary tax objectives. Married couples often fund a SLAT with diversified, income-producing assets to lock in their $15,000,000 lifetime exemption while retaining spousal liquidity, and simultaneously establish rolling GRATs to capture upside from volatile, high-growth equity. Using both structures allows a household to shelter existing wealth permanently while transferring future upside free of gift tax."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Estate and Gift Taxes",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax"
+    },
+    {
+      "label": "IRC §2702, Transfers of Interests in Trusts",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2702"
+    },
+    {
+      "label": "IRC §2036, Transfers with Retained Life Estate",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2036"
+    },
+    {
+      "label": "IRC §2010, Unified Credit Against Estate Tax",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2010"
+    },
+    {
+      "label": "IRS, Section 7520 Interest Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates"
+    }
+  ],
+  "relatedComparisons": [
+    "grat-vs-idgt",
+    "revocable-vs-irrevocable-trust"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Estate tax calculator",
+      "href": "/estate-planning/estate-tax-calculator/"
+    },
+    {
+      "label": "Estate planning hub",
+      "href": "/estate-planning/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

@@ -1,0 +1,403 @@
+{
+ "rows": [
+  {
+   "keyword": "grat calculator",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 0,
+   "cpc": 6.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "grantor retained annuity trust calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": 6.65,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "grat vs idgt",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "grat vs slat",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "rolling grat",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 0,
+   "cpc": 25.68,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "zeroed out grat",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gift tax calculator",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 7,
+   "cpc": 0.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gift tax return",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 20,
+   "cpc": 6.04,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "form 709",
+   "volume": 9900,
+   "volume_low": 9900,
+   "volume_high": 9900,
+   "kd": 17,
+   "cpc": 1.48,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how much can you gift tax free",
+   "volume": 3600,
+   "volume_low": 3600,
+   "volume_high": 3600,
+   "kd": 23,
+   "cpc": 3.01,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "lifetime gift tax exemption",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 21,
+   "cpc": 3.05,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gift tax limit 2026",
+   "volume": 9900,
+   "volume_low": 9900,
+   "volume_high": 9900,
+   "kd": 26,
+   "cpc": 1.73,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "7520 rate",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "idgt",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 0,
+   "cpc": 8.08,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "intentionally defective grantor trust",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 0,
+   "cpc": 8.08,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "slat trust",
+   "volume": 1900,
+   "volume_low": 1900,
+   "volume_high": 1900,
+   "kd": 0,
+   "cpc": 3.54,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "spousal lifetime access trust",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": 0,
+   "cpc": 6.09,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "grat alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat cost",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "how much does a grat cost",
+   "volume": 25,
+   "volume_low": 25,
+   "volume_high": 250,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 25-250/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat pros and cons",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat vs irrevocable trust",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "grat tax court",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat irs audit",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat mortality risk",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "grat term length",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (HTTP 403 {\n  \"error\": \"API units limit reached. Expected usage: 50, API units left: 15.\"\n})",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 17/26 phrases",
+  "semrush unusable (HTTP 403)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 9 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 19/26 rows corroborated live"
+ ]
+}

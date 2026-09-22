@@ -1,0 +1,58 @@
+{
+    slug: "trust-tax-rates-explained",
+    title: "Trust Tax Rates Hit 37% at Just $16,000 in 2026",
+    metaDescription:
+      "A trust hits the top 37% federal bracket at just $16,000 of income in 2026. Here's how trust taxation actually works and what lowers the bill.",
+    h1: "Trust Tax Rates Hit 37% at Just $16,000 in 2026",
+    cardBlurb: "Why a trust hits the 37% bracket at $16,000, and the deduction that lets most trusts avoid it.",
+    introText:
+      "In 2026, a non-grantor trust that keeps its own income reaches the top 37% federal tax bracket once its taxable income exceeds just $16,000. By comparison, a single individual does not reach that rate until their taxable income is $640,600 or more.\n\nThe mistake we see most often is applying that compressed bracket to every trust. But a grantor trust does not pay income tax at the trust level at all. Instead, its income flows directly to the person who created it and is taxed at their individual rate.",
+    sections: [
+      {
+        heading: "The 2026 Trust Income Tax Brackets",
+        body: "A non-grantor trust pays 10% on its first $3,300 of taxable income, 24% on the next portion up to $11,700, 35% up to $16,000, and 37% on anything above $16,000. Those four brackets compress a trust's income into a fraction of the range an individual filer gets before hitting the same rates, since a single filer only reaches the 37% bracket above $640,600.\n\nA 3.8% Net Investment Income Tax (NIIT) can stack on top of the 37% bracket once a trust's undistributed income passes a similarly low $16,000 threshold, producing a combined federal rate near 40.8% on ordinary trust income and 23.8% on long-term capital gains the trust doesn't distribute. Those combined rates apply only to income the trust actually keeps, which is why the distribution rule below matters more than the bracket table itself.",
+      },
+      {
+        heading: "A Grantor Trust Does Not Pay Trust-Level Tax",
+        body: "A grantor trust's income isn't taxed at the trust at all. Instead, it passes through to the person who created the trust, taxed on that person's own Form 1040 at their individual bracket, which for most people runs far below the trust's compressed 37% cliff.\n\nA non-grantor trust is its own separate taxpayer. It files its own return, [Form 1041](https://www.irs.gov/instructions/i1041), and pays tax on any income it keeps at the compressed brackets above. Whether a given trust is a grantor or non-grantor trust depends on specific rules in the trust document, such as whether the creator retained certain powers over the trust's assets, which is why the trust agreement itself, not a general rule of thumb, decides which tax treatment applies. For the broader tradeoffs between trust structures, see our [revocable vs. irrevocable trust comparison](/compare/revocable-vs-irrevocable-trust/).",
+      },
+      {
+        heading: "The Distribution Deduction Is the Real Planning Lever",
+        body: "A trust that distributes income to its beneficiaries deducts that amount from its own taxable income, shifting the tax bill onto the beneficiary's individual return instead. The trust reports each beneficiary's share on a Schedule K-1, and the beneficiary pays tax on that income at their own bracket, which usually sits well below the trust's compressed rates.\n\nThis is the mechanism most non-grantor trusts actually use to avoid the 37% cliff: distribute income out each year rather than letting it accumulate inside the trust. A trust that keeps every dollar it earns pays the compressed rate itself; a trust that passes income through pushes the tax down to whatever rate the beneficiary already pays.",
+      },
+      {
+        heading: "Deductions a Trust Can Claim",
+        body: "A trust can deduct trustee fees and tax preparation costs paid from trust assets, along with any charitable contributions the trust document authorizes, without the percentage-of-income caps that apply to an individual's charitable deduction. These deductions reduce the trust's own taxable income before the compressed brackets apply, on top of whatever it distributes to beneficiaries under the rule above.\n\nA trust generally cannot deduct amounts that also benefit the trust's creator directly, and the specific list of deductible expenses depends on whether a cost counts as one uniquely required by administering the trust. Check the trust document and the [Form 1041 instructions](https://www.irs.gov/instructions/i1041) before assuming a specific expense qualifies.",
+      },
+      {
+        heading: "When Trust Tax Planning Matters",
+        body: "Trust-level tax planning matters most for a non-grantor trust holding income-producing assets, like a brokerage account or rental property, that the trustee doesn't distribute every year. A trust sitting on $50,000 of investment income it never pays out can owe tax at rates approaching 41% combined, on income a beneficiary in a lower individual bracket would have paid far less on had it been distributed instead.\n\nA revocable living trust used mainly to avoid probate rarely triggers this problem, since it's typically a grantor trust taxed on the creator's own return while they're alive. The compressed brackets matter most for irrevocable trusts built to hold assets long-term, which is the scenario worth reviewing with a tax professional before assuming the trust's stated purpose also decided its tax treatment.",
+      },
+      {
+        heading: "Retained Income Costs More Than Distributed Income",
+        body: "Take a non-grantor trust that earns $30,000 of investment income for the year and keeps all of it. Running that $30,000 through the brackets gives $330 on the first $3,300, $2,016 on the next $8,400, $1,505 on the next $4,300, and $5,180 on the remaining $14,000 at 37%, for $9,031 in ordinary income tax. Add the 3.8% NIIT on the $14,000 above the $16,000 threshold, another $532, and the trust owes about $9,563 total, close to a 32% effective rate on that $30,000.\n\nDistribute that same $30,000 to a beneficiary in the 22% individual bracket instead, and the tax bill drops to roughly $6,600, a difference of nearly $3,000 on identical income. A beneficiary in the 12% bracket would owe closer to $3,600, less than 40% of what the trust would have paid by holding the income itself. This is why so much trust tax planning comes down to one decision: distribute, or retain.",
+      },
+      {
+        heading: "Trust Income Tax vs. Estate and Gift Tax",
+        body: "Trust income tax and estate tax are two entirely separate systems that a beneficiary or trustee can easily conflate. Everything covered above, the compressed brackets, the 37% cliff at $16,000, and the distribution deduction, taxes the income a trust generates every year, the same way your own tax return taxes your annual wages and investment income.\n\nEstate and gift tax works differently. It applies to the value of assets transferred into the trust or passed at death, not the income those assets later earn, and it only applies above the federal exemption, an amount in the tens of millions of dollars per person that Congress adjusts periodically. A trust can owe income tax on $9,000 of interest income every year for decades without ever coming close to triggering estate or gift tax on the assets that generated it.",
+      },
+    ],
+    tools: [
+      { href: "/estate-planning/", label: "Estate planning calculator" },
+      { href: "/probate/", label: "Probate calculator" },
+    ],
+    faqs: [
+      { question: "What is the top trust tax rate in 2026?", answer: "37%, which a non-grantor trust reaches once its taxable income passes $16,000 for the year. A 3.8% Net Investment Income Tax can stack on top of that for undistributed investment income, producing a combined federal rate near 40.8%." },
+      { question: "Do all trusts pay tax at the compressed trust brackets?", answer: "No. Only a non-grantor trust that keeps income pays tax at those compressed brackets. A grantor trust's income passes through to the person who created it and gets taxed at their individual rate instead." },
+      { question: "How do trusts avoid the 37% tax bracket?", answer: "By distributing income to beneficiaries each year instead of keeping it inside the trust. The trust deducts what it distributes, and the beneficiary reports that income on their own return, usually at a lower individual rate than the trust's compressed brackets." },
+      { question: "What is the capital gains tax rate for a trust in 2026?", answer: "A trust pays 0% on long-term capital gains up to $3,300, 15% between $3,300 and $16,250, and 20% above $16,250, before any Net Investment Income Tax that applies to undistributed gains." },
+      { question: "Can a trust deduct trustee and tax preparation fees?", answer: "Yes. A trust can deduct trustee fees and tax preparation costs paid from trust assets, along with any charitable contributions the trust document authorizes, reducing the trust's taxable income before the compressed brackets apply." },
+      { question: "Is trust income tax the same as estate tax?", answer: "No. Trust income tax applies every year to the income a trust generates, like interest or rental income, using the compressed brackets above. Estate and gift tax applies separately to the value of assets transferred into the trust, and only above a federal exemption in the tens of millions of dollars per person." },
+      { question: "Does distributing trust income always lower the total tax bill?", answer: "Usually, since most beneficiaries sit in individual tax brackets well below the trust's compressed 37% cliff. A $30,000 distribution taxed at a beneficiary's 22% bracket can owe roughly $3,000 less than the same $30,000 taxed inside the trust, though the exact savings depends on the beneficiary's own income and bracket." },
+    ],
+    sources: [
+      { label: "IRS — Form 1041-ES, Estimated Income Tax for Estates and Trusts", url: "https://www.irs.gov/pub/irs-pdf/f1041es.pdf" },
+      { label: "IRS — Instructions for Form 1041", url: "https://www.irs.gov/instructions/i1041" },
+      { label: "IRS — Net Investment Income Tax", url: "https://www.irs.gov/individuals/net-investment-income-tax" },
+    ],
+  }

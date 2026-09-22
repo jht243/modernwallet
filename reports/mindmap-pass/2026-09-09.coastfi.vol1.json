@@ -1,0 +1,313 @@
+{
+ "rows": [
+  {
+   "keyword": "coast fi",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 6,
+   "cpc": 2.59,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 23,
+   "cpc": 2.91,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire number by age",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 1,
+   "cpc": 1.99,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fi number by age",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "is coast fire a good idea",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire chart",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 16,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire by age",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 2.81,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire formula",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 4,
+   "cpc": 2.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to calculate coast fire",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 5,
+   "cpc": 2.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire vs lean fire",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire vs fat fire",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire spreadsheet",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": 2.95,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire number at 30",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire at 35",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 49,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire risks",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire vs regular fire",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "downsides of coast fire",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "coast fire inflation",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire safe withdrawal rate",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire milestone",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (HTTP 403 {\n  \"error\": \"API units limit reached. Expected usage: 50, API units left: 19.\"\n})",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 14/20 phrases",
+  "semrush unusable (HTTP 403)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 6 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 19/20 rows corroborated live"
+ ]
+}

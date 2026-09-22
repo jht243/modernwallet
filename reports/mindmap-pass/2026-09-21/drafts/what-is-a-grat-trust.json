@@ -1,0 +1,102 @@
+{
+  "slug": "what-is-a-grat-trust",
+  "title": "What Is a GRAT Trust? How It Works, Taxes, and 2026 Rules",
+  "metaDescription": "A GRAT trust lets you transfer asset growth to beneficiaries with minimal gift tax. Learn how the Section 7520 rate, taxes, and zeroed-out GRATs work in 2026.",
+  "h1": "What Is a GRAT Trust? How It Works, Taxes, and 2026 Rules",
+  "cardBlurb": "How a grantor retained annuity trust transfers wealth above the hurdle rate, and why zeroed-out structures minimize gift tax.",
+  "introText": "A grantor retained annuity trust, or GRAT trust, is an irrevocable trust that transfers asset growth to beneficiaries with minimal gift tax by retaining an annuity payment for a set term. Any growth exceeding the statutory hurdle rate passes to heirs free of federal transfer taxes when the term expires.\n\nAt ModernWallet, we see readers explore this structure after reading headlines about affluent families moving substantial wealth before tax laws shift. The math follows clear rules. Federal interest rates, asset valuations, and strict IRS guidelines dictate every dollar saved.",
+  "sections": [
+    {
+      "heading": "GRAT Trust Structure and Core Mechanics",
+      "body": "A GRAT is an irrevocable estate planning trust that holds appreciating property while paying an annual annuity back to the grantor for a set period. The grantor contributes high-growth assets into the trust, such as public equities or private shares. Terms commonly run two to ten years. During this window, the trustee distributes a fixed annual annuity based on federal valuation formulas.\n\nWhen the term ends, remaining trust property passes directly to remainder beneficiaries. These recipients can be children or a separate family trust. This transfer occurs free of federal gift and estate taxes. Because the IRS values the gift upfront, market appreciation above the statutory hurdle rate avoids transfer tax entirely."
+    },
+    {
+      "heading": "Four Steps in Trust Administration",
+      "body": "Administering a GRAT requires four sequential steps governed by federal tax statutes and Treasury regulations. First, the grantor executes the trust agreement and transfers appreciating assets to the trustee. Under Internal Revenue Code (IRC) Section 2702 and Treasury Regulation (Treas. Reg.) Section 25.2702-3, the retained annuity must qualify as an irrevocable qualified interest. This rule requires fixed payments made at least annually.\n\nSecond, the trustee manages the portfolio and distributes the required annuity each year. The trust can pay this distribution in cash or through in-kind asset transfers at current fair market value. Third, the trust reaches the end of its predetermined term. This milestone terminates the grantor's right to any further payments. Fourth, the trustee transfers all residual growth and principal to the beneficiaries. This final distribution completes the tax-free wealth transfer."
+    },
+    {
+      "heading": "The Section 7520 Hurdle Rate",
+      "body": "The Section 7520 hurdle rate is the statutory interest rate set monthly by the IRS to calculate the value of the grantor's retained annuity. Under IRC Section 7520, this benchmark equals 120% of the applicable federal midterm rate compounded annually. For September 2026, the Section 7520 rate is 5.40%. A trust is permanently locked to the specific rate published for its funding month. Subsequent monthly rate adjustments do not affect an active trust. Always check the active monthly figure on the official [IRS Section 7520 interest rates](https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates) page before finalizing a transfer.\n\nHere is a hypothetical illustration. A two-year GRAT is funded in September 2026 with $5,000,000, when the Section 7520 rate is 5.40%. To zero out the taxable gift, the trust pays two annual annuities of roughly $2,704,000 back to the grantor. These payments return the original principal plus the 5.40% hurdle rate. If the investments grow at 12% annually, the trust pays the required distributions and leaves approximately $539,000 for beneficiaries tax-free. If the assets return only 3% annually, the trust exhausts its holdings paying the grantor and transfers zero dollars. The grantor loses only legal setup fees. Real results depend on the funding month rate and actual investment performance."
+    },
+    {
+      "heading": "Zeroed-Out GRAT Trust Plans and Lifetime Exemptions",
+      "body": "A zeroed-out GRAT sets the actuarial value of the retained annuity stream to match the initial funding amount, reducing the taxable gift to near zero dollars. Under IRC Section 2702 valuation rules, the taxable gift equals the total transfer value minus the present value of the annuity payments. When both values match, the gift is negligible. This calculation lets grantors shift substantial wealth without expending their federal lifetime gift and estate tax exemption.\n\nUnder the One Big Beautiful Bill Act (P.L. 119-21, signed July 2025), which amended IRC Section 2010(c)(3), the 2026 exemption is $15,000,000 per individual. A married couple using portability can shield up to $30,000,000. The law indexes this limit for inflation. A zeroed-out trust allows you to transfer growth while keeping your entire $15,000,000 exemption intact. You can then apply that exemption to real estate, cash, or other transfers covered in our [2026 gift tax limit guide](/guides/gift-tax-limit-2026/)."
+    },
+    {
+      "heading": "Mortality Risk and Structural Drawbacks",
+      "body": "The primary structural risk of a GRAT is mortality risk, which eliminates the estate tax savings if the grantor dies during the trust term. Under IRC Section 2036, trust assets return to the grantor's gross estate if death occurs before the term expires. This pull-back treats the assets as if the trust never existed. To reduce this risk, attorneys often establish two-year or three-year terms instead of longer structures.\n\nInvestment risk presents another challenge. If trust investments fail to beat the Section 7520 hurdle rate, the trust transfers zero dollars to beneficiaries. The trustee must return the underperforming capital to the grantor to satisfy the annuity. The grantor absorbs legal and administrative expenses with no tax benefit. Finally, a GRAT is irrevocable. You cannot change remainder beneficiaries, amend terms, or reclaim contributed assets outside the scheduled annuity payments."
+    },
+    {
+      "heading": "Tax Obligations During the Trust Term",
+      "body": "A GRAT is treated as a grantor trust for federal income tax purposes, requiring the grantor to report all trust earnings on their personal tax return. Because the grantor retains an annuity right under IRC Sections 671 to 679, the trust pays no income tax directly. This arrangement bypasses the compressed brackets detailed in our [trust tax rates guide](/guides/trust-tax-rates-explained/). The grantor reports all dividends, interest, and capital gains on Form 1040. Paying these taxes out of personal funds creates an additional financial benefit. It lets trust assets compound without tax drag. The IRS does not treat this tax payment as an additional taxable gift.\n\nOn the transfer tax side, funding the trust requires filing [Form 709](/guides/form-709-gift-tax-return/) by April 15 of the following year. Even a zeroed-out GRAT requires this filing because the transfer involves a future interest. Submitting Form 709 adequately discloses the transaction to the IRS. This filing starts the three-year statute of limitations for audit review."
+    },
+    {
+      "heading": "Setup Expenses and Advisory Teams",
+      "body": "Drafting legal documents for a single irrevocable trust typically costs between $2,500 and $10,000 or more, depending on structural complexity. This price range reflects standard legal fees for an estate planning attorney to draft the trust agreement. Plans holding private business equity or multi-trust structures sit at the higher end of that range. Establishing a GRAT is never a do-it-yourself project. Any technical drafting error can violate qualified interest rules and trigger an unexpected gift tax bill.\n\nYou will need three professionals on your advisory team. An estate planning attorney drafts the trust and structures annuity terms. A certified public accountant (CPA) prepares the required Form 709 gift tax return and coordinates fiduciary accounting. A financial advisor manages asset allocations and executes timely annuity payments. If you fund the trust with illiquid assets, you must also budget for qualified appraisal fees. Appraisals are required at initial funding and for each in-kind annuity payment."
+    },
+    {
+      "heading": "Internal Revenue Service Scrutiny and Operational Compliance",
+      "body": "The IRS is actively examining operational compliance and asset valuations in high-dollar grantor retained annuity trusts. According to a September 2026 Wall Street Journal report, the IRS is asserting a $736 million gift tax bill against Chuck and Trisha Elcan of Nashville, Tennessee. The dispute involves trusts that held shares of HCA Healthcare. Trisha Elcan's father and grandfather helped co-found HCA Healthcare in 1968. As reported by The Wall Street Journal, the couple are disputing the assessment in U.S. Tax Court, and the case remains pending and unresolved.\n\nThe IRS claims the taxpayers made missteps in trust administration. The couple maintain their actions followed valid, standard planning practices. Their attorney, John Porter, stated the IRS position produces a draconian result. Legislative efforts under the Biden administration previously proposed restricting GRAT techniques to save an estimated $84 billion over a decade. Those proposals did not pass Congress. Interest in GRATs has since increased.\n\nThis pending dispute highlights that administrative execution matters as much as initial drafting. Trustees must pay required annuities at least annually, secure defensible independent valuations for non-public assets, and keep complete records. Mike Kaercher, deputy director of the Tax Law Center at New York University, told The Wall Street Journal that GRATs often function as no-regrets planning. If a trust underperforms, grantors can place assets into a new trust and try again. Lauren Wagner, a tax partner at Armanino Advisory, noted that repeat GRATs bring winning years and losing years over time."
+    },
+    {
+      "heading": "Deciding If a GRAT Trust Fits Your Estate",
+      "body": "A GRAT is best suited for grantors with rapidly appreciating assets who wish to shift wealth to heirs without consuming their lifetime gift exemption. This structure fits founders, executives, and investors holding high-growth public stock, startup equity, or private fund interests. It requires asset appreciation to clearly beat the Section 7520 hurdle rate over a short term. Conversely, a GRAT is not for individuals who need personal access to trust principal. It also fails assets with low returns. If your goals require different tradeoffs, other estate planning trusts may provide a better fit.\n\nIf you need indirect spousal access to trust funds, review a spousal lifetime access trust through our [GRAT vs. SLAT comparison](/compare/grat-vs-slat/) and our [SLAT guide](/guides/slat-trust-explained/). If you want to transfer appreciating assets to multi-generational dynasty trusts while using generation-skipping transfer tax exemptions, an intentionally defective grantor trust is often superior. Compare both options in our [GRAT vs. IDGT comparison](/compare/grat-vs-idgt/) and read our [IDGT guide](/guides/intentionally-defective-grantor-trust-idgt/). If you want to manage market volatility across cycles, study our [rolling GRAT strategy guide](/guides/rolling-grat-strategy/).\n\nWhat would change our assessment of a GRAT is federal legislation imposing mandatory minimum terms, such as a ten-year requirement, or eliminating zeroed-out calculations. If Congress passed those limits, installment sales to IDGTs would become the primary alternative. Work with an estate planning attorney and a CPA to model whether a GRAT trust fits your balance sheet and transfer goals."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/estate-tax-calculator/",
+      "label": "Estate tax calculator"
+    },
+    {
+      "href": "/estate-planning/living-trust-cost-calculator/",
+      "label": "Trust cost calculator"
+    },
+    {
+      "href": "/guides/rolling-grat-strategy/",
+      "label": "Rolling GRAT strategy guide"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the disadvantages of a GRAT trust?",
+      "answer": "The primary disadvantage is mortality risk under Internal Revenue Code Section 2036, which pulls trust assets back into your taxable estate if you die during the term. Additionally, setting up and administering the trust requires legal, appraisal, and accounting fees that produce no tax benefit if the assets fail to outperform the Section 7520 hurdle rate. Because a GRAT is irrevocable, you cannot change remainder beneficiaries or reclaim transferred assets once the agreement is signed."
+    },
+    {
+      "question": "Who pays taxes on a GRAT?",
+      "answer": "The grantor pays all income taxes generated by the trust during the term. Because a GRAT is classified as a grantor trust under federal tax law, all interest, dividends, and realized capital gains flow through to the grantor's individual tax return. This personal tax payment allows trust assets to compound tax-free for the beneficiaries without counting as an additional taxable gift."
+    },
+    {
+      "question": "How much does it cost to set up a GRAT?",
+      "answer": "Attorney drafting fees for a single irrevocable trust typically range from $2,500 to $10,000 or more, depending on structural complexity and asset types. You will also incur ongoing costs for certified public accountant tax preparation, annual asset valuations for non-public assets, and financial advisory management. Establishing this type of trust requires coordinated work between an estate planning attorney, a tax professional, and an investment advisor."
+    },
+    {
+      "question": "How long does a GRAT last?",
+      "answer": "A GRAT typically lasts for a fixed term between two and ten years. Shorter terms, such as two years, are common because they minimize the risk of the grantor dying while the trust is active. Many wealth planners use a rolling series of short-term trusts to capture distinct market cycles and reduce overall mortality exposure."
+    },
+    {
+      "question": "What is the point of a GRAT trust?",
+      "answer": "The point of a GRAT is to transfer asset growth that exceeds the IRS Section 7520 hurdle rate to heirs free of federal gift and estate taxes. By using a zeroed-out design, you can complete this wealth transfer without consuming your lifetime gift tax exemption. It provides an efficient mechanism for shifting rapidly appreciating investments out of a taxable estate."
+    },
+    {
+      "question": "Is a GRAT an irrevocable trust?",
+      "answer": "Yes, a GRAT is an irrevocable trust that cannot be altered, amended, or revoked once established and funded. The grantor gives up control over the ultimate disposition of the remainder assets, retaining only the right to receive the scheduled annuity payments. This irrevocable status is required by federal tax regulations to qualify for the favorable transfer tax treatment."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Section 7520 Interest Rates",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/section-7520-interest-rates"
+    },
+    {
+      "label": "IRS, Instructions for Form 709",
+      "url": "https://www.irs.gov/instructions/i709"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

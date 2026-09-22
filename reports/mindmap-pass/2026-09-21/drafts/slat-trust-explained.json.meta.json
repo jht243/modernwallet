@@ -1,0 +1,58 @@
+{
+ "slug": "slat-trust-explained",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1985,
+ "floor": 1200,
+ "input_tokens": 21312,
+ "output_tokens": 3236,
+ "thinking_tokens": 21211,
+ "est_cost_usd": 0.1077,
+ "guards": {
+  "repairs": [
+   "removed 2 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.irs.gov', 'https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.irs.gov",
+   "https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes"
+  ],
+  "words": 1985,
+  "numbers_not_in_facts": [
+   "10000000",
+   "1040",
+   "12000000",
+   "16000",
+   "2056",
+   "22000000",
+   "37",
+   "677"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17682
+  }
+ },
+ "seconds": 70.3,
+ "response_id": "aJGyaufHDZ-JqtsP3pTD0QE",
+ "generated_at": "2026-09-22T09:33:17-0500"
+}

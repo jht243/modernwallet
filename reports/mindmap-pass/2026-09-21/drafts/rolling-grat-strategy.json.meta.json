@@ -1,0 +1,63 @@
+{
+ "slug": "rolling-grat-strategy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2408,
+ "floor": 1200,
+ "input_tokens": 21362,
+ "output_tokens": 3975,
+ "thinking_tokens": 17833,
+ "est_cost_usd": 0.0978,
+ "guards": {
+  "repairs": [
+   "removed 2 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes', 'https://www.irs.gov/pub/irs-pdf/f709.pdf'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes",
+   "https://www.irs.gov/pub/irs-pdf/f709.pdf"
+  ],
+  "words": 2408,
+  "numbers_not_in_facts": [
+   "1000000",
+   "12",
+   "15000",
+   "24",
+   "2704400",
+   "2895600",
+   "3243000",
+   "4500000",
+   "5000",
+   "5000000",
+   "538600",
+   "539000",
+   "5600000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17682
+  }
+ },
+ "seconds": 80.1,
+ "response_id": "kZCyarvxE5Ck_PUP0oqJsQE",
+ "generated_at": "2026-09-22T09:29:52-0500"
+}
