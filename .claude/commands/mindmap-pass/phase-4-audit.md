@@ -88,6 +88,8 @@ Any hit → **FAIL the page** and require removal. Delete the claim outright; do
 
 ---
 
+**Hand the auditor the row's `reader_question`, `answer` and `answer_placement` (chart cols 10–12) with every page.** `_content-standard.md`'s `GATE — Reader question` is audited against them — without them the auditor has to guess what the page was supposed to answer, which is how a definitional opener passed three audit rounds on 2026-09-22. Include the evidence tag (`[PAA n/m …]` / `[verb-only …]`): a verb-only question is a weaker premise and the auditor should say so rather than fail the page for missing evidence it never had.
+
 **Remediation — load `.claude/commands/_remediation-ladder.md` and apply it IN FULL.** It is the single source of truth for what happens AFTER a gate fails: Rung 0 mechanical lint (never a rework attempt), Rung 1 FIX-IN-PLACE with the reviewer supplying the exact replacement text, Rung 2 REWORK by the writer for that page only — max 2 attempts **per page**, then drop that page and continue the run. It also defines per-page pass state: a page that passed is never re-audited because a sibling was fixed. It changes only the COST of fixing a finding, never the bar for passing one — every gate above applies exactly as written. If the file is missing, FAIL the run and report it; never improvise a remediation policy.
 <!-- CRON_PROMPT_END -->
 

@@ -1,5 +1,13 @@
 # Phase 2 — Metadata fixes
 
+> **The title and description answer the reader's question, not the topic.** Where the chart row
+> carries `reader_question` (cols 10–12, build-brief Step 4.6), the rewritten `metaTitle` and
+> `metaDescription` must promise THAT answer in the reader's own words — a "how do I…" row gets a
+> title that promises the method, a "how much" row promises the figure. A title that names the
+> topic while the reader asked how to do it is the same failure this workflow fixed on the page
+> body. Where a row has no `reader_question` (a pure metadata row with no content change), work
+> the target term in as before.
+
 Act on every **metadata** row in the chart.
 
 Please go ahead and update the metadata per your suggestions.

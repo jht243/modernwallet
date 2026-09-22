@@ -33,6 +33,8 @@ Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, 
 
 Anything inline below this block is superseded by the canonical files above.
 
+**Where the row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, exactly as a new page would. Copy all three into the `section` command's row prompt. An enrichment that appends the answer to the bottom of a page whose opener still answers the wrong question has not done the job. Where the row has no question (a pure gap-fill), place the section where it reads best, as before.
+
 ---
 
 Update the body text now, but I don't want you to totally recreate the page using scripts. I'd like you to keep the same page, but update it with your suggestions you identified prior. DO NOT recreate the page via script, only make updates where needed.

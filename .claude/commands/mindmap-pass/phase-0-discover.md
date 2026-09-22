@@ -42,9 +42,9 @@ The manifest mirrors the format of the Phase 8 end-of-run summary so the user se
 |------------------------|------|------|
 | 1 — Cannibalization detection (advisory) | {N}  | Per-row plan: "FLAG /page-a vs /page-b (same cluster) — recommend manual-consolidate / differentiate; **no edits, detection only**" |
 | 2 — Metadata           | {N}  | Per-row plan: "Rewrite metaTitle+desc on: {target 1}, {target 2}, ..." (or "skipped — no rows") |
-| 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`]; create /route-b [calculator — user inputs X → outputs Y, spec only]; ..." — name format for each row, and for article rows the floor from the `phase-3-new-content.md` table so the user approves the depth commitment up front |
+| 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`] — **answers "{reader_question}" in {answer_placement}**; create /route-b [calculator — user inputs X → outputs Y, spec only] — answers "{reader_question}"; ..." — name format for each row, the floor from the `phase-3-new-content.md` table, AND the chart's `reader_question` + `answer_placement` (cols 10–12) so the user approves the *question each page answers*, not just its topic |
 | 4 — Audit              | —    | "Adversarial review of {N} new pages from Phase 3" |
-| 5 — Body text          | {N}  | Per-row plan: "{target}: {section description}; {target}: {section description}; ..." |
+| 5 — Body text          | {N}  | Per-row plan: "{target}: {section description} — answers "{reader_question}" at {answer_placement}; ..." |
 | 6 — Internal linking   | {N} + inbound | Per-row plan: "Add inbound to {target 1}, {target 2}; reinforce {N} Phase-3 pages with ≥3 inbound each" |
 | 7 — Sitemap + IndexNow | —    | "Add {N} routes; refresh lastmod on {N}; remove {N} consolidation losers; submit to IndexNow" |
 | 8 — Summary            | —    | "Print run summary, then auto-continue to Phase 9 (no approval stop)" |
@@ -63,6 +63,8 @@ This block makes the Lens 2 findings visible so the user reviews the *new search
 
 ### Rules
 - **Rows column**: integer count of chart rows in that bucket, or `—` if the phase has no chart rows (audit, sitemap, summary, commit).
+- **Reader question is part of the approval.** Every Phase-3 and Phase-5 row in the Plan column carries the chart's `reader_question` **with its evidence tag** (`[PAA n/m <pattern>; ac n/m]`) and `answer_placement` (cols 10–12). A create/body row whose chart entry lacks them, or whose col 10 has no evidence tag, is an **Ambiguous / skipped** row (HARD STOP below) — the pass does not write a page whose question was never decided from evidence.
+- **Print the question-evidence flags above the phase table**, as their own short list, so the user sees them before approving: every row tagged `[verb-only — no PAA, no completions]` (the question is a guess, not a measurement) and every row tagged with half or more off-topic PAA (`[PAA 3/6 off-topic: lawyer salary]` — Google is not confident the phrase means what we think). Zero flags → print `Question evidence: every content row's question is PAA- or completion-backed.`
 - **Plan column**: must list the **actual targets and actions per row** — never just row numbers. Sourced from each chart row's `solution` / `target` columns, restated in one short clause per row, joined with semicolons. If a phase has zero rows, write `skipped — no rows` instead of leaving the cell blank.
 - **Omit rows whose count is 0** unless it's one of the always-present phases (4, 7, 8, 9). For 0-row buckets, write `skipped — no rows` in the Plan column instead of dropping the row.
 - **Ambiguous / skipped rows**: if any chart rows could not be classified, append a final row to the table:

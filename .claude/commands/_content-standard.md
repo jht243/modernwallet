@@ -175,6 +175,41 @@ Every page carries these. They apply in **both** registers (see VOICE) unless no
 
 ---
 
+## INTENT — answer the reason the reader is on the page, near the top (added 2026-09-22)
+
+Every page is opened by a person with ONE question, and it is usually a *doing* question, not a
+*defining* one. Someone who searches "law firm client onboarding automation" wants to know **how
+to build it** — what connects to what, what fires first, what to wire up before anything else.
+A page that opens by defining onboarding, drawing its boundaries, and classifying its stages has
+answered a question nobody asked, however well it did it.
+
+**The rule:**
+
+1. **Name the reader's question on the row**, as `reader question: "<the question, in the
+   reader's words>"`. It is DECIDED at chart-build time (mindmap-pass build-brief Step 4.6 —
+   question, then answer + shape, then placement — recorded as chart cols 10–12 and approved by
+   the user in the Phase 0 manifest); the writer and auditor consume it. Derive it from the
+   query's verb and the live PAA, not from the topic noun:
+   "how do I…", "which should I…", "is X worth…", "what does X cost". If the row cannot state it
+   in one sentence, the page has no reason to exist yet.
+2. **Answer that question in the first or second section**, before any scope, boundary,
+   background, taxonomy, or "what is X" material. Sentence 1 of the body is still the direct
+   answer (GATE Tee-up); this rule governs the *first sections*, which must deliver the working
+   answer — the mechanism, the recommendation, the number, the verdict — not set up for it.
+3. **A "how" question gets a "how" answer**: the trigger, the sequence of hops, the parts to
+   assemble, and the one thing to build first. Naming the categories of work without showing
+   how to do it does not satisfy a "how" question.
+4. Definitions, scope, and history may follow the answer, or sit at the end, or be cut. They
+   never lead.
+
+**Why this exists:** on 2026-09-22 five per-vertical `…-automation` guides shipped that each
+opened with a "Scope and Boundaries" section and walked the stages by automation bucket, and not
+one of them said what to connect to what, or named an automation layer. Every gate passed,
+because every gate checked the *quality* of the answer and none checked that it answered the
+reader's question. This section is that check, and the AUDITOR gate below enforces it.
+
+---
+
 ## DEPTH
 
 Every article page has a **minimum body word count** by page type. These are **floors, not targets** — a page under its floor does not compete, and the audit phase hard-fails it. Body words = reader-facing prose only (intro + section bodies + FAQ answers + verdict); title, meta, nav/header/footer, schema, CTA boilerplate, and code blocks do NOT count.
@@ -450,12 +485,15 @@ Apply these gates in addition to the `## AUDITOR` section of `_anti-ai-language.
   - registers blended inside a paragraph, or more than one operator-register analysis section on a reporter page → FAIL.
 - **GATE — Tee-up.** Operator pages: sentence 1 of the first body paragraph is the direct answer, not the tee-up. A tee-up as sentence 1 → FAIL, note `teeup-before-answer`. If a tee-up is used, it is the next sentence, and it is one sentence. A tee-up of more than one sentence → FAIL. A missing tee-up with no `teeup-exempt:` note → FAIL. A tee-up that reads as bolted-on for this page → FAIL, same as a missing one. A tee-up placed in the title, subtitle, hero, deck, or any other header field → FAIL. The same sentence appearing in both a header field and the tee-up → FAIL, note `teeup-duplicated: [fields]`; the fix is to restore the header field to its own descriptive job, never to delete the body tee-up. The intro restating the subtitle in different words → FAIL, note `subtitle-restated: "[both]"`. The fix deletes the intro repeat, not the subtitle. On `teeup-exempt:` pages, sentence 1 is still the answer and there is no tee-up. Reporter pages: any tee-up → FAIL.
 - **GATE — Experience truth.** Every first-person experience claim must be traceable to `_experience.md`. An invented number, duration, headcount, client name, date, quote, or test result → FAIL. More than two named-client references on one page → FAIL.
+- **GATE — Reader question.** The row must carry `reader question: "…"` (see INTENT) **with its evidence tag** — `[PAA n/m <pattern>; ac n/m]`, `[verb-only — no PAA, no completions]`, or the on-/off-topic split. Missing question → FAIL, note `no-reader-question`; question with no evidence tag → FAIL, note `question-unevidenced` (it was guessed from the topic noun, which is exactly the failure this gate exists for). Then check PAA's two jobs were kept apart: the top on-intent PAA question must be answered by the opening section (not merely by an FAQ entry), and the remaining on-topic PAA questions must appear in the FAQ; every PAA question sitting only in the FAQ while the opener answers something else → FAIL, note `paa-only-in-faq`. Then read the page's first TWO sections and decide, as the person who typed that query, whether they now have the working answer — the mechanism for a "how" question, the pick for a "which" question, the figure for a "cost" question, the verdict for a "worth it" question. If the first two sections are definition, scope, boundaries, background, history, or a taxonomy of the topic, and the working answer arrives later or never → FAIL, note `intent-answered-late: first answered in section N` (or `intent-unanswered`). A "how" question answered only by categorising the work ("these steps are automatable, these are not") with no trigger, sequence, or parts named → FAIL, note `how-without-mechanism`. The fix moves or adds the answering section to position 1 or 2; it never pads the opener.
 - **GATE — Required page elements.** Missing direct answer up top → FAIL. On a page that recommends, ranks, or picks a winner: missing "who this is not for", or missing "what would change our answer" → FAIL. Missing or generic `inlineCta.text` where the project supports one → FAIL.
 - **GATE — Disclaimer placement.** A legal/medical/financial or "not advice" disclaimer appearing in the title, subtitle, intro, or first section → FAIL, note `disclaimer-at-top`. The fix moves it to the page's final element. A YMYL site (per `_experience.md`) with NO disclaimer anywhere → FAIL, note `disclaimer-missing`.
 - **GATE — Byline in body prose.** Any reviewer/author attribution or review-date sentence inside a prose field (intro, sections, verdict, callouts, FAQ answers) — "Reviewed by…", "Last updated…", "on [date]", "We research using…", "[Name], Founder of…" → FAIL, note `byline-in-body: [field/heading]`. The byline is template-rendered from the record's date fields and emitted in JSON-LD; the fix is to delete the sentence from prose, never to add a byline slot.
 - **GATE — Anchor.** No proprietary anchor and no `anchor-exempt:` note → FAIL. A force-fit anchor → FAIL.
 - **GATE — Neutrality.** Any self-asserted neutrality, independence, or "no financial interest" claim → FAIL.
 - **GATE — Links.** Run this as an explicit pass, not an impression. Extract every proper noun on the page that names an organisation — vendors, competitors, cited sources, aggregator and comparison sites, publications, research outfits, standards bodies, regulators — and for each, find its FIRST occurrence. That occurrence must be either a markdown link to the organisation's own site, or a bare name covered by the project's auto-link registry. Anything else → FAIL, note `unlinked-company: "[name]"`. Exempt from this gate: `metaTitle` and `metaDescription`, which are plain-text SEO fields where a markdown link would render as literal brackets in the search result. Name companies freely there; the linking obligation attaches to the on-page mention. Also exempt: text that is ALREADY a link. A company name used as the label of an internal `relatedLinks` entry, a nav item, or a breadcrumb is a link by construction and needs no second one. The gate covers prose, headings, FAQ answers, table cells, and CTA copy. Cited sources are the most commonly missed case: naming an aggregator as the origin of a figure and not linking it fails exactly like an unlinked vendor. The fix is additive: link the first occurrence, or register the entity. This is a hard fail, never an advisory note.
+
+- **GATE — No deferral in a data cell.** A comparison-table cell, spec row or pricing column exists to CARRY the fact. "Refer to current vendor console", "check vendor site", "verify current pricing" are not answers — the reader came to the page for that number, and sending them elsewhere is worse than omitting the row, because it advertises that you did not do the work. Go and get the figure: the vendor's own pricing page, and for AI model rates `data/pricing.ts`, which is maintained and dated. If the figure genuinely is not public, state THAT as the fact — "Quote-based", "Contact sales", "Not published" — which is information; an instruction to go look is not. Prose may of course tell a reader to confirm terms before signing; this gate is about cells that should hold a value. → FAIL, note `deferral-in-cell: "[cell]"`. Hard fail. **The link must be MARKDOWN — `[Label](https://url)` — never an HTML `<a href>`.** Page prose renders through a markdown parser that never injects HTML, so a raw tag is escaped and the reader sees the markup itself; the autolinker then linkifies company names inside that visible tag soup. The same applies to every other tag: a table is a GFM pipe table (one pipe-row per `content[]` element), emphasis is `**bold**` / `*italic*`. Raw HTML anywhere in a page field is a hard fail on its own, independent of whether the first mention is linked — checking only "is it linked?" is what let this ship live on five pages. In a URL, percent-encode `(` and `)` as `%28` / `%29`: the renderer's link pattern stops at the first paren. Exempt, as above: `metaTitle`, `metaDescription`, `h1` and `subtitle` render bare, so they take neither markdown nor HTML — plain text only.
 - **GATE — Naming and directives.** A generic stand-in ("the vendor", "the platform", "this provider", "the company", "the tool") on a page that names its subject → FAIL, note `coy-abstraction: "[text]"`. A sentence telling the reader to verify, confirm, or check something with no link to the exact page that answers it → FAIL, note `unlinked-directive: "[text]"`. A directive linked only to a vendor homepage when a specific sub-page answers it → FAIL. Scan body prose, FAQ answers, CTA copy, and every heading field.
 - **GATE — Load receipt.** `reports/standards-ledger.jsonl` must contain a `"via":"load-script"` entry for THIS run (this routine, this date), staged in the run's commit. Verify it yourself with `tail reports/standards-ledger.jsonl`. Missing → FAIL, note `no-load-receipt` — it means the writer opened the standard some other way or not at all. Recompute the three hashes yourself with `shasum -a 256` and compare: any mismatch means the writer used a stale or different file → FAIL, note `stale-standard: <which>`. An empty or placeholder `domain=` value → FAIL. This gate is what converts "the phase file told it to load the standard" into proof that it did.
 - **GATE — Medium and row records.** Each row must carry all three records: `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>`. Any one missing → FAIL. An image or video asset promised → FAIL.

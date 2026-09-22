@@ -1,5 +1,7 @@
 # Phase 6 — Internal linking
 
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** A page whose question is "how do I automate client onboarding" earns anchors that read like the question or its answer ("how to build the onboarding automation"), not the bare page title. This is the same principle as the page opener: link on what the reader wants, not on what the page is called.
+
 Execute the internal-linking rows from the chart, AND add inbound internal links to every page created in Phase 3 (**target ~3 links each** from relevant existing pages).
 
 **The ~3 is a target, not a quota — relevance wins over the count.** Only add a link where it is genuinely contextually relevant and reads naturally. If a new page has fewer than 3 *logical* placements, add the ones that fit and STOP — do not manufacture a forced, marginal, or over-optimized exact-match link just to hit the number, and never repeat the same anchor across unrelated pages. A page with 1–2 strong, relevant inbound links is better than 3 where one is a stretch. When you land below the target, note in the phase report which page and why (no more relevant placements exist) — that is an accepted outcome, not a failure.

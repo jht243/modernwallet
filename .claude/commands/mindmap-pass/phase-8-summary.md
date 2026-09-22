@@ -1,5 +1,11 @@
 # Phase 8 — Summary (auto-continues to Phase 9 push)
 
+> **Report question coverage.** For every page created or enriched this run, print one line:
+> `<route> — asked "<reader_question>" <evidence tag> → answered in <answer_placement>`. Then the
+> run-wide counts: how many rows were PAA/completion-backed versus `verb-only`, and any row flagged
+> for off-topic PAA. This is what tells the user the pass answered real questions rather than
+> well-formed guesses, and it is the only place the evidence quality of the whole run is visible.
+
 After Phase 7's gate passes, **print a single summary table for the user, then auto-continue to Phase 9**. This is NOT a human gate — do not stop, do not wait for approval. The summary is informational; the push happens automatically in the next step. (The only human stop in this run is the Phase 0 manifest gate.)
 
 Print exactly this table — one row per phase that ran (rows for any phase that didn't run because its chart bucket was empty MAY be omitted):

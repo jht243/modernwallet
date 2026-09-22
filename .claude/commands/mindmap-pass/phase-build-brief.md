@@ -117,6 +117,111 @@ Lens 3 reuses the same dedup, SEMRUSH-validation, and adversarial duplicate-supp
 
 Every Tier 0 row also appears in the `## Emerging search patterns (clusters)` block (theme = `{model} launch core`), same table+block agreement rule as Lenses 2 & 3.
 
+## Step 4.5 — SERP reality check (REQUIRED — read the SERP before you decide the lever)
+
+Demand data says *how many people search a thing*. It does not say *whether a page like ours can win the result page*, and it never says *what shape of page is winning today*. Lenses 1–3 have historically produced rows blind to both. This step fixes that, and it runs **after clustering and before the lever decision**, so the lever and the format are chosen with the SERP in hand.
+
+**Read the top ~10 cluster heads only** — not every candidate phrase. One live SERP is ~$0.004; ten is four cents. Never read the whole candidate pool.
+
+```bash
+# one head, human-readable
+python3 scripts/lib/serp.py read --keyword "<cluster head phrase>"
+
+# the batch you actually want: heads.txt = one cluster head per line
+python3 scripts/lib/serp.py batch \
+  --keywords-file reports/mindmap-pass/<TODAY>.heads.txt \
+  --out reports/mindmap-pass/<TODAY>.serp.json --cap 12
+```
+
+Each read returns a verdict (`winnable` / `contested` / `locked` / `unread`), plus `forum_dominated`, `ai_overview_present` + the domains the AI Overview cites, `featured_snippet`, `top10_domains`, the real `paa` questions, `related_searches`, and a `recommended_shape`.
+
+**Feed all four signals back into the rows — this is the point of the step:**
+
+| SERP signal | What it changes in the chart |
+|---|---|
+| `forum_dominated` (Reddit/Quora/YouTube own page one) | The `format` must move off `article`. A vendor explainer does not outrank first-person community answers — switch to operator-voice/experience-led, or to an interactive tool. Say so in the `solution` cell. |
+| `ai_overview_present` + cited domains | Row is an AEO target: the page needs a directly-extractable answer block up top. Name the cited domains in `serp_evidence` — that is who Google is quoting instead of us. |
+| `paa[]` | These are **real** member queries. They REPLACE invented follow-up questions as cluster evidence in col 1, and they are the FAQ spec for the page. Never keep an LLM-guessed question when a real PAA question exists for the same intent. |
+| `verdict: locked` (≥6/10 page-one slots held by major platforms) | Keep the row, label it, and sort it BELOW winnable rows. Do not silently drop it. |
+
+**The verdict is ADVISORY — it never drops a row by itself.** A wrong automated DROP in an unattended pass costs far more than a mislabeled row, and this fleet has been bitten by silent single-record failures before. The only removal path in this phase remains the duplicate-suppression gate.
+
+**If the SERP cannot be read** (no credentials, budget cap hit, API error), do NOT stop the pass. Rows carry `serp_verdict: unread` with the reason in `serp_evidence`, and the pass continues on demand data alone — the same never-block rule the demand ladder follows.
+
+## Step 4.6 — Determine the reader's question, the answer, and where it goes (REQUIRED — before the lever, before the format)
+
+Demand data says people search a phrase. The SERP says what shape wins. Neither says **what the
+person actually wants to know** — but the tools we already run DO carry that signal, and until
+2026-09-22 this workflow spent it in the wrong place: every "People also ask" question went into
+the FAQ at the bottom of the page, and the top of the page was shaped by the writer's brief. Five
+`…-automation` guides shipped that opened with scope and boundaries while DataForSEO had returned,
+verbatim, *"How to automate the onboarding process?"* for the head term. This step makes the
+question **evidence-driven and decided on the row before anything is written**; Phases 0, 3 and 4
+consume it rather than infer it.
+
+### The evidence — two sources, both already paid for, both mandatory
+1. **PAA from the Step 4.5 SERP read** (`scripts/lib/serp.py`, DataForSEO) — the `paa[]` list per
+   cluster head. This is Google's own record of what people ask next on that term. Every content
+   row's head MUST have a SERP read; if the head was outside the 4.5 cap, read it now
+   (one head ≈ $0.004 — never skip a row's PAA to save a cent).
+2. **The Autocomplete question sweep** (`.claude/tools/autocomplete-paa/autocomplete.py
+   --mode questions`, free, keyless) — the 10 question-prefix completions (what/how/why/is/
+   does/can/should…) for the head. Reuse the Lens 2 CSV when the seed matches; otherwise run it.
+SEMRUSH `phrase_questions` joins as a third source whenever that key is live. **Never derive the
+question from the topic noun or from your own sense of the phrase while either source above has
+data.**
+
+### Decide three things, in this order, for EVERY `create new content` and `update existing body text` row
+1. **`reader_question`** — the ONE question, in the reader's own words, that brought them to the
+   page. Read the PAA list and the question sweep together and find the **dominant intent
+   pattern** — the verb family most of the questions share:
+   - *how do I / how to / how can I* → the reader wants a **method**
+   - *what should be on / included / what are the steps* → the reader wants a **list**
+   - *which / what is the best / who has the best* → the reader wants a **pick**
+   - *how much / cost / pricing* → the reader wants a **figure**
+   - *is it worth / should I* → the reader wants a **verdict**
+   - *what is / what does X mean* → the reader wants a **definition** — and this is the ONLY
+     pattern that licenses a definitional opener, and only when it is the dominant pattern.
+   Write the question as the top on-intent PAA/completion says it, tidied to one sentence. Record
+   the evidence inline: `reader_question: "How do I automate client onboarding?" [PAA 2/6 how-to,
+   1/6 best-software; ac 3/4 question]`.
+   - **No PAA and no completions returned** (it happens — `lawmatics vs clio grow` and `dental
+     patient onboarding` both came back empty on 2026-09-22): fall back to the query's verb and
+     label it `[verb-only — no PAA, no completions]`. That label is a weakness signal on the row,
+     the same way `source: estimate` is for volume; it is never silently dropped.
+   - **PAA wanders off-topic** (3 of 6 questions on `law firm client onboarding` were about
+     lawyer salaries): use only the on-topic questions, and record `[PAA 3/6 on-topic; 3/6
+     off-topic: lawyer salary]`. Half or more off-topic is a **keyword-intent flag** — Google is
+     not confident the phrase means what we think — and Phase 0 prints it at the manifest.
+   - **A PAA question that names a sibling page we do not have** (`How much does GUIDEcx cost?`
+     under `client onboarding software`) is a Lens 2/3 candidate: add it to the candidate pool
+     with the PAA cited as its signal, do not lose it.
+   If, with the evidence in hand, the row still cannot state the question in one sentence, it has
+   no page yet — hold it.
+2. **`answer`** — the working answer in one sentence, and its **shape**, which follows from the
+   dominant pattern above: **mechanism** (trigger → sequence of hops → parts → build-this-first)
+   for a method; **the items** for a list; **the pick with its boundary** for a pick; **the figure
+   or the honest absence of one** for a figure; **the verdict with the break-even** for a verdict.
+   If you cannot write the answer sentence from the fact list and the SERP read, the row is not
+   ready to write. **The shape decides the format**, so this step runs BEFORE the format step
+   below: a mechanism wants steps or a template, a pick wants a comparison, a figure wants a
+   table or calculator, a list wants a checklist.
+3. **`answer_placement`** — which section delivers the answer. It MUST be section 1 or 2, and the
+   cell names it (e.g. `section 1: "How to Build the Onboarding Automation"`). Definition, scope,
+   boundaries, background and taxonomy never lead unless *definition* was the dominant pattern.
+
+### PAA has two jobs — keep them apart
+The **top on-intent question** shapes the opening section (col 12). The **remaining on-topic
+questions** are the FAQ spec, verbatim, exactly as before. Off-topic questions go in neither.
+A row that sends every PAA question to the FAQ and lets the brief shape the top of the page has
+failed this step, whatever the audit says about the prose.
+
+Record all three as chart columns 10–12 (see Output format), with the evidence tag inside col 10.
+They flow verbatim into the Phase 3 row prompt, appear per row in the Phase 0 manifest so the user
+approves the *question* and its *evidence* and not just the *topic*, and are what Phase 4's
+`GATE — Reader question` audits the finished page against. A row missing any of the three fails
+Phase 0 parsing as ambiguous; a row whose col 10 carries no evidence tag is treated as missing.
+
 ## Decide the lever per row/cluster (top to bottom; first match wins — same ladder as seo-gsc-pass)
 - **No existing page is a reasonable home for this intent →** `create new content` (a new page/hub for the topic). This is the primary engine for net-new pages — exactly what the user is asking for when they say "things I want added."
 - **An existing page is the right topical home but doesn't address this angle/subtopic →** `update existing body text` (add a section/FAQ — additive only, never a rewrite).
@@ -137,7 +242,9 @@ Generate and validate your candidate rows from the brief + SEMRUSH FIRST; do not
 
 ## Output format (IDENTICAL to the seo-gsc-pass engine so Phases 0–9 parse it unchanged)
 
-Main action table columns — **col 1: `problem`** (which lens surfaced it — direct-intent vs adjacent-discovery — the cluster/theme + 2–4 member phrases from SEMRUSH/Autocomplete as evidence, the SEMRUSH volume/KD/competition read, and the diagnosis of why the site doesn't own it yet; for inference-based/news rows say so and cite the signal), **col 2: `solution`** (the specific lever in one clause — "Create /route targeting 'X' under the {hub} hub [format]", "Add a section on X to {page}", "Work 'X' into the title + meta of {page}"; for non-article `create new content` rows describe what the format would DO), **col 3: `bucket`** (must map cleanly to exactly one canonical bucket: `update existing metadata`, `create new content`, `update existing body text`, `add internal links`, `consolidate / canonicalize`), **col 4: `target`** (exact file path or route), **col 5: `format`** (for `create new content`: one of `article`, `interactive tool`, `calculator`, `quiz/assessment`, `template`, `comparison table/database`, `glossary/reference`, `data report` + one-line rationale; else `n/a`), **col 6: `best_medium`** (ONLY for `create new content`: one of `text`, `image`, `video`, `chart`, `downloadable data`, `interactive tool`; else `n/a`), **col 7: `resolved_deliverable`** (`best_medium` mapped through our production-capability rules — **WE CANNOT GENERATE IMAGE OR VIDEO ASSETS**: `text`→text, `image`→text, `video`→text, `chart`→chart, `downloadable data`→`downloadable data + on-page text`, `interactive tool`→interactive tool; `n/a` for non-create rows — this is what Phase 3 actually ships and Phase 4 audits).
+Main action table columns — **col 1: `problem`** (which lens surfaced it — direct-intent vs adjacent-discovery — the cluster/theme + 2–4 member phrases from SEMRUSH/Autocomplete as evidence, the SEMRUSH volume/KD/competition read, and the diagnosis of why the site doesn't own it yet; for inference-based/news rows say so and cite the signal), **col 2: `solution`** (the specific lever in one clause — "Create /route targeting 'X' under the {hub} hub [format]", "Add a section on X to {page}", "Work 'X' into the title + meta of {page}"; for non-article `create new content` rows describe what the format would DO), **col 3: `bucket`** (must map cleanly to exactly one canonical bucket: `update existing metadata`, `create new content`, `update existing body text`, `add internal links`, `consolidate / canonicalize`), **col 4: `target`** (exact file path or route), **col 5: `format`** (for `create new content`: one of `article`, `interactive tool`, `calculator`, `quiz/assessment`, `template`, `comparison table/database`, `glossary/reference`, `data report` + one-line rationale; else `n/a`), **col 6: `best_medium`** (ONLY for `create new content`: one of `text`, `image`, `video`, `chart`, `downloadable data`, `interactive tool`; else `n/a`), **col 7: `resolved_deliverable`** (`best_medium` mapped through our production-capability rules — **WE CANNOT GENERATE IMAGE OR VIDEO ASSETS**: `text`→text, `image`→text, `video`→text, `chart`→chart, `downloadable data`→`downloadable data + on-page text`, `interactive tool`→interactive tool; `n/a` for non-create rows — this is what Phase 3 actually ships and Phase 4 audits), **col 8: `serp_verdict`** (from Step 4.5 — `winnable` / `contested` / `locked` / `unread`, plus any flags in parentheses, e.g. `winnable (forum-owned, AI Overview)`; `unread` for rows whose head was not read), **col 9: `serp_evidence`** (one clause of the actual SERP read — who owns page one, whether an AI Overview is present and who it cites — or the reason the SERP was unread).
+
+**col 10: `reader_question`** (the question in the reader's words PLUS the evidence tag in brackets — `[PAA n/m <pattern>; ac n/m]`, `[verb-only — no PAA, no completions]`, or `[PAA n/m on-topic; n/m off-topic: <what>]`), **col 11: `answer`** (one sentence + its shape: mechanism / pick / figure / verdict / list), **col 12: `answer_placement`** (`section 1` or `section 2`, with the section's working heading) — from Step 4.6. Required on every `create new content` and `update existing body text` row; `n/a` on metadata, link and advisory rows.
 
 The table contains **only actionable rows.** No "no action / already addressed / leave alone" rows — note those in a brief exclusions paragraph below the table instead. If after filtering there are no actionable rows, say so plainly (Phase 0 will report an empty pass) and still write the file.
 

@@ -51,6 +51,12 @@ discovered for THIS repo:**
   is ideal; never the page being written); (2) the output contract for that shape (noun-phrase
   headings, ≤1 heading opening with the keyword, the CTA button text this repo uses, the brand
   first-"we" rule "At {BUSINESS_NAME}, we…" using the name Phase 0 discovered);
+  (2a) when writing `metaTitle`, `h1`, `subtitle` and `metaDescription`, take the row's
+  `reader question` into account — these are what the person who typed that question sees in
+  the results and on arrival, so their wording is a useful guide to what will read as the
+  answer. Lean toward the words that person would use over the words the vendor uses for
+  itself; a term the product coined for itself usually lands better in the body, where you
+  define it, than in the headline.
   (3) `_anti-ai-language.md` WRITER section (wins on conflict); (4) `_experience.md` in full;
   (5) `_content-standard.local.md` if present; (6) `_content-standard.md` LAST, scoped to
   structure/SEO/depth — "follow its rules, do not copy its tone".

@@ -56,6 +56,12 @@ Verifies every model in the chain has a key and answers. A failing preflight STO
 standing rule here (retyping them is how they go missing). It carries:
 
 - route, slug, page type, depth floor, primary/secondary keywords, intent
+- **`reader question: "…"`, `answer: …`, `answer placement: section 1|2 "<heading>"`** — copied
+  from the chart (mindmap build-brief Step 4.6 cols 10–12, or the equivalent step in the calling
+  routine), never derived in this phase. The row prompt tells the writer the answering section
+  goes in that slot, before any scope/definition/taxonomy material (`_content-standard.md` INTENT). A "how" question must get the trigger,
+  the sequence of hops, the parts to assemble, and the thing to build first — not a
+  classification of the work.
 - **the CLOSED FACT LIST** — every number, date, price, limit, score the page may state, with
   the sentence *"Anything not on this list, you do not know. Never invent a price, limit,
   benchmark, or URL; say it is unpublished and tell the reader to verify at the vendor page."*
