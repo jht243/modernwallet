@@ -114091,11 +114091,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/business/banking/best/types": {
+          "acted": true,
+          "acted_date": "2026-09-22",
           "content_hash": "sha256:f68f208ee0e6e7dcde0dea5fe34686dc367a6477815d69eedb2f6ae8dc183cd7",
+          "disposition": "published",
           "first_seen": "2026-09-22",
           "kind": "page",
           "last_seen": "2026-09-22",
           "lastmod": "2026-09-02T00:00:00-07:00",
+          "our_url": "/roundup/best-business-bank-accounts/",
           "outline": [
             "Best business bank accounts",
             "Bluevine Business Checking",
@@ -114135,7 +114139,7 @@
             "savings",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Business Bank Accounts of 2026 - NerdWallet",
           "tool_io": []
         },
@@ -114830,11 +114834,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/business/credit-cards/best": {
+          "acted": false,
+          "acted_date": "2026-09-22",
           "content_hash": "sha256:d99cddf9d1105ec58391679d6305f92ef43344a7041ce7a06b2c6925339e6b49",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-22",
           "kind": "page",
           "last_seen": "2026-09-22",
           "lastmod": "2026-09-04T00:00:00-07:00",
+          "our_url": "/roundup/best-business-credit-cards/",
           "outline": [
             "Best business credit cards",
             "Ink Business Unlimited\u00ae Credit Card",
@@ -114890,7 +114898,7 @@
             "apr",
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Business Credit Cards of September 2026 - NerdWallet",
           "tool_io": []
         },
@@ -119531,11 +119539,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/business/loans/best/same-day": {
+          "acted": true,
+          "acted_date": "2026-09-22",
           "content_hash": "sha256:38a3f69acc548eb4595d5cc67041972e1bea0116332d041c264cbcb7f0e25753",
+          "disposition": "published",
           "first_seen": "2026-09-22",
           "kind": "page",
           "last_seen": "2026-09-22",
           "lastmod": "2026-09-17T00:00:00-07:00",
+          "our_url": "/roundup/best-same-day-business-loans/",
           "outline": [
             "same-day business loans: More details",
             "Bluevine: Best for working capital",
@@ -119575,7 +119587,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Best Same-Day Business Loans of September 2026 - NerdWallet",
           "tool_io": []
         },
