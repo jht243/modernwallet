@@ -1,0 +1,26 @@
+{
+ "_vertical": "personal finance",
+ "hacker_news": false,
+ "news_queries": [
+  "fintech app launch",
+  "budgeting app",
+  "neobank launch"
+ ],
+ "subreddits": [
+  "personalfinance",
+  "fintech",
+  "churning"
+ ],
+ "google_trends_geo": "US",
+ "incumbents": [
+  "chime",
+  "robinhood",
+  "sofi",
+  "venmo",
+  "cashapp",
+  "plaid"
+ ],
+ "min_stories": 3,
+ "hours": 72,
+ "min_points": 5
+}
