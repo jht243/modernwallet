@@ -1,0 +1,17 @@
+{
+  "slug": "trust-tax-rates-explained",
+  "pageType": "explainer",
+  "title": "Trust Tax Rates Hit 37% at Just $16,000 in 2026",
+  "h1": "Trust Tax Rates Hit 37% at Just $16,000 in 2026",
+  "introText": "In 2026, a non-grantor trust that keeps its own income reaches the top 37% federal tax bracket once its taxable income exceeds just $16,000. By comparison, a single individual does not reach that rate until their taxable income is $640,600 or more.\n\nThe mistake we see most often is applying that compressed bracket to every trust. But a grantor trust does not pay income tax at the trust level at all. Instead, its income flows directly to the person who created it and is taxed at their individual rate. See our what is a family trust guide for how the revocable-vs-irrevocable choice decides which treatment applies to your own trust.",
+  "sections": [
+    {
+      "heading": "The 2026 Trust Income Tax Brackets",
+      "body": "A non-grantor trust pays 10% on its first $3,300 of taxable income, 24% on the next portion up to $11,700, 35% up to $16,000, and 37% on anything above $16,000. Those four brackets compress a trust's income into a fraction of the range an individual filer gets before hitting the same rates, since a single filer only reaches the 37% bracket above $640,600.\n\nA 3.8% Net Investment Income Tax (NIIT) can stack on top of the 37% bracket once a trust's undistributed income passes a similarly low $16,000 threshold, producing a combined federal rate near 40.8% on ordinary trust income and 23.8% on long-term capital gains the trust doesn't distribute. Those combined rates apply only to income the trust actually keeps, which is why the distribution rule below matters more than the bracket table itself."
+    }
+  ],
+  "faqs": [
+    { "question": "What is the top trust tax rate in 2026?", "answer": "37%, which a non-grantor trust reaches once its taxable income passes $16,000 for the year. A 3.8% Net Investment Income Tax can stack on top of that for undistributed investment income, producing a combined federal rate near 40.8%." },
+    { "question": "What is the capital gains tax rate for a trust in 2026?", "answer": "A trust pays 0% on long-term capital gains up to $3,300, 15% between $3,300 and $16,250, and 20% above $16,250, before any Net Investment Income Tax that applies to undistributed gains." }
+  ]
+}

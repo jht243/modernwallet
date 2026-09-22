@@ -192,3 +192,8 @@
 | /guides/what-is-a-good-credit-score/ | 2026-09-19 | 1 | 0/0/1/0/0 | 0 |
 | /guides/custodial-account-taxes-kiddie-tax/ | 2026-09-19 | 1 | 0/0/0/0/0 | 1 |
 | /retirement/couples-retirement-calculator/ | 2026-09-19 | 1 | 0/0/0/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-09-22 | 29 | 0/0/0/0/0 | 1 |
+| /guides/401k-beneficiary-rules/ | 2026-09-22 | 3 | 0/0/0/0/0 | 0 |
+| /guides/trust-tax-rates-explained/ | 2026-09-22 | 3 | 0/0/1/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-09-22 | 3 | 0/0/1/0/0 | 1 |
+| /roundup/best-401k-providers-for-small-business/ | 2026-09-22 | 3 | 0/0/0/0/0 | 1 |

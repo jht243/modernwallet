@@ -1,0 +1,37 @@
+{
+ "slug": "trust-tax-rates-explained--qualified-dividends",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 98,
+ "floor": 30,
+ "input_tokens": 16245,
+ "output_tokens": 176,
+ "thinking_tokens": 2635,
+ "cached_tokens": 15458,
+ "est_cost_usd": 0.014,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 98,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15832
+  }
+ },
+ "seconds": 9.8,
+ "response_id": "AvyyasXZOrLbjMcPyuP2uA8",
+ "generated_at": "2026-09-22T22:07:07+0000"
+}
