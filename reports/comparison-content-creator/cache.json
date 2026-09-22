@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-14",
+ "lastRun": "2026-09-22",
  "dropped": [
   {
    "slug": "trump-account-vs-coverdell-esa",
@@ -961,6 +961,36 @@
    "slug": "secured-credit-card-vs-unsecured-credit-card",
    "format": "comparison",
    "publishedAt": "2026-09-14"
+  },
+  {
+   "slug": "medicare-vs-medicare-advantage",
+   "format": "comparison",
+   "optionA": "Medicare",
+   "optionB": "Medicare Advantage",
+   "reason": "2026-09-22 run: Vol 5400, KD 17, CPC $2.06 (dataforseo) \u2014 SERP verdict winnable, AI Overview cites medicare.gov/AARP/insurers; fills gap in Medicare vertical alongside medicare-advantage-vs-medigap + medicare-vs-medicaid",
+   "score": 0.75,
+   "publishedAt": "2026-09-22"
+  },
+  {
+   "slug": "target-date-fund-vs-index-fund",
+   "format": "enrichment",
+   "route": "/guides/what-target-date-fund-should-i-choose/",
+   "note": "Added a 'Target-Date Fund vs Index Fund' sub-section + table to the existing guide (PARTIAL from Phase 1b \u2014 was covered only via a single FAQ sentence, no table/verdict).",
+   "publishedAt": "2026-09-22"
+  },
+  {
+   "slug": "hsa-vs-401k",
+   "format": "enrichment",
+   "route": "/guides/tax-free-retirement-account/",
+   "note": "Added an 'HSA vs 401(k)' sub-section + table to the existing guide (PARTIAL from Phase 1b \u2014 was covered only via the funding-order narrative, no direct head-to-head table).",
+   "publishedAt": "2026-09-22"
+  },
+  {
+   "slug": "donor-advised-fund-vs-qcd",
+   "format": "enrichment",
+   "route": "/compare/donor-advised-fund-vs-private-foundation/",
+   "note": "Added a 'Donor-Advised Fund vs. QCD' sub-section + table to the existing DAF-vs-foundation comparison (PARTIAL from Phase 1b \u2014 DAF and QCD were named side by side in a guide but never compared head-to-head).",
+   "publishedAt": "2026-09-22"
   }
  ]
 }

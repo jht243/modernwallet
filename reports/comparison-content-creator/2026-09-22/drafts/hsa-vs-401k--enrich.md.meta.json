@@ -1,0 +1,37 @@
+{
+ "slug": "tax-free-retirement-account--hsa-vs-401k",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 235,
+ "floor": 0,
+ "input_tokens": 18611,
+ "output_tokens": 341,
+ "thinking_tokens": 10983,
+ "cached_tokens": 17528,
+ "est_cost_usd": 0.0466,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 235,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17913
+  }
+ },
+ "seconds": 37.8,
+ "response_id": "RwezauWzGOjijrEPzNjMoQQ",
+ "generated_at": "2026-09-22T22:55:40+0000"
+}

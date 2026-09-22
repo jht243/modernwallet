@@ -1,0 +1,39 @@
+{
+ "slug": "donor-advised-fund-vs-private-foundation--daf-vs-qcd",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 312,
+ "floor": 0,
+ "input_tokens": 18549,
+ "output_tokens": 444,
+ "thinking_tokens": 5838,
+ "cached_tokens": 17528,
+ "est_cost_usd": 0.0276,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 312,
+  "numbers_not_in_facts": [
+   "501"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17913
+  }
+ },
+ "seconds": 21.9,
+ "response_id": "mgezaseeHdjTjMcPqqTv0QI",
+ "generated_at": "2026-09-22T22:56:47+0000"
+}
