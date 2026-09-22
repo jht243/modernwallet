@@ -1,0 +1,57 @@
+{
+ "rows": [
+  {
+   "keyword": "sinking fund vs emergency fund",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "robo advisor vs financial advisor",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 1,
+   "cpc": 12.41,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "is roth conversion worth it",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 7,
+   "cpc": 3.05,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 3/3 phrases",
+  "semrush unusable (HTTP 403)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "Autocomplete: 3/3 rows corroborated live"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "slug": "can-i-retire-on-rental-income",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2364,
+ "floor": 1200,
+ "input_tokens": 20070,
+ "output_tokens": 3750,
+ "thinking_tokens": 10976,
+ "cached_tokens": 17582,
+ "est_cost_usd": 0.0604,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2364,
+  "numbers_not_in_facts": [
+   "1000",
+   "15.3",
+   "4000",
+   "5000",
+   "8000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18018
+  }
+ },
+ "seconds": 42.2,
+ "response_id": "6AGzauaEKqbUjMcP69HOcQ",
+ "generated_at": "2026-09-22T22:32:50+0000"
+}

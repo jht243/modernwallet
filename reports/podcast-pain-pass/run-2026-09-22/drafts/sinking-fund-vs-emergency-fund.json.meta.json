@@ -1,0 +1,58 @@
+{
+ "slug": "sinking-fund-vs-emergency-fund",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1861,
+ "floor": 1500,
+ "input_tokens": 19391,
+ "output_tokens": 3016,
+ "thinking_tokens": 12752,
+ "cached_tokens": 17662,
+ "est_cost_usd": 0.0637,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)",
+   "removed 3 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.consumerfinance.gov/about-us/blog/youve-got-goals-your-life-and-some-them-take-money-achieve/', 'https://www.consumerfinance.gov/consumer-tools/save-as-you-earn/emergency-fund-guide/', 'https://www.federalreserve.gov/consumerscommunities/shed.htm'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.consumerfinance.gov/about-us/blog/youve-got-goals-your-life-and-some-them-take-money-achieve/",
+   "https://www.consumerfinance.gov/consumer-tools/save-as-you-earn/emergency-fund-guide/",
+   "https://www.federalreserve.gov/consumerscommunities/shed.htm"
+  ],
+  "words": 1861,
+  "numbers_not_in_facts": [
+   "2000",
+   "3500",
+   "8000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18081
+  }
+ },
+ "seconds": 46.8,
+ "response_id": "JgKzaomNGrLbjMcPyuP2uA8",
+ "generated_at": "2026-09-22T22:33:55+0000"
+}

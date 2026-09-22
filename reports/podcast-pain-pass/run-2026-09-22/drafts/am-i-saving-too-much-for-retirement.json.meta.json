@@ -1,0 +1,52 @@
+{
+ "slug": "am-i-saving-too-much-for-retirement",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1759,
+ "floor": 1200,
+ "input_tokens": 19862,
+ "output_tokens": 3044,
+ "thinking_tokens": 20045,
+ "cached_tokens": 17582,
+ "est_cost_usd": 0.0916,
+ "guards": {
+  "repairs": [
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.fidelity.com/viewpoints/retirement/how-much-money-should-i-save'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.fidelity.com/viewpoints/retirement/how-much-money-should-i-save"
+  ],
+  "words": 1759,
+  "numbers_not_in_facts": [
+   "32000",
+   "45"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18018
+  }
+ },
+ "seconds": 68.1,
+ "response_id": "nwGzatrwI4bWjrEPqaKK-AQ",
+ "generated_at": "2026-09-22T22:32:03+0000"
+}
