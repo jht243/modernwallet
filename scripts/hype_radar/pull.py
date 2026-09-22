@@ -459,6 +459,12 @@ def main() -> int:
     min_points = a.min_points or cfg["min_points"]
     min_stories = a.min_stories or cfg["min_stories"]
     INCUMBENTS.update(x.lower() for x in cfg.get("incumbents") or [])
+    # A query's own words describe the whole vertical, so they appear in nearly
+    # every headline it returns — 'diy' led one test with 21 stories. They are the
+    # search term, never the discovery. Kill them and their obvious inflections.
+    for q in cfg.get("news_queries") or []:
+        for w in re.findall(r"[a-z0-9]+", q.lower()):
+            STOPWORDS.update({w, w + "s", w + "es", w + "ers", w + "er", w + "ing"})
 
     items: list[dict] = []
     if cfg.get("hacker_news"):
