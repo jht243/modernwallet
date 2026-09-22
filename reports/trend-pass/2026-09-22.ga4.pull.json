@@ -1,0 +1,133 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-22",
+  "window_start": "2026-09-22",
+  "window_end": "2026-09-22",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 29,
+      "sessions": 33,
+      "active_users": 32,
+      "clicks": 29
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 9,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 9,
+      "sessions": 11,
+      "active_users": 10,
+      "clicks": 9
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 9,
+      "sessions": 11,
+      "active_users": 8,
+      "clicks": 9
+    },
+    {
+      "page": "/",
+      "views": 5,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/compare/utma-vs-ugma/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 3
+    },
+    {
+      "page": "/guides/trust-tax-rates-explained/",
+      "views": 3,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 3
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 3,
+      "sessions": 4,
+      "active_users": 3,
+      "clicks": 3
+    }
+  ],
+  "top10_pages_total_views": 77,
+  "top10_pages_total_clicks": 77,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 26,
+      "Unassigned": 8,
+      "Organic Search": 3
+    },
+    "/guides/trump-gold-coin/": {
+      "Cross-network": 7,
+      "Organic Search": 2,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 7,
+      "Organic Search": 3,
+      "Unassigned": 2
+    },
+    "/portfolio/60-40-portfolio-calculator/": {
+      "Cross-network": 7,
+      "Unassigned": 4,
+      "Direct": 1,
+      "Organic Search": 1
+    },
+    "/": {
+      "Unassigned": 3,
+      "Cross-network": 2,
+      "Direct": 2
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Direct": 3,
+      "Unassigned": 3,
+      "Cross-network": 1
+    },
+    "/compare/utma-vs-ugma/": {
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Cross-network": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Cross-network": 2,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/guides/trust-tax-rates-explained/": {
+      "Direct": 2,
+      "Cross-network": 1
+    }
+  }
+}
