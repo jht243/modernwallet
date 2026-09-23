@@ -197,3 +197,7 @@
 | /guides/trust-tax-rates-explained/ | 2026-09-22 | 3 | 0/0/1/0/0 | 0 |
 | /guides/how-to-open-a-trump-account/ | 2026-09-22 | 3 | 0/0/1/0/0 | 1 |
 | /roundup/best-401k-providers-for-small-business/ | 2026-09-22 | 3 | 0/0/0/0/0 | 1 |
+| /guides/trump-gold-coin/ | 2026-09-23 | 1 | 0/0/0/0/0 | 0 |
+| /guides/what-are-trump-accounts-invested-in | 2026-09-23 | 1 | 0/0/1/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-09-23 | 1 | 0/0/0/0/0 | 0 |
+| /portfolio/90-10-portfolio-calculator/ | 2026-09-23 | 0 | 0/1/1/0/0 | 0 |

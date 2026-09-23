@@ -9439,6 +9439,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
       { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
     ],
+    relatedComparisons: ["60-40-vs-90-10-portfolio"],
     calculatorLinks: [
       { label: "70/30 portfolio calculator", href: "/portfolio/70-30-portfolio-calculator/" },
       { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
@@ -9503,6 +9504,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
       { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
     ],
+    relatedComparisons: ["60-40-vs-90-10-portfolio"],
     calculatorLinks: [
       { label: "80/20 portfolio calculator", href: "/portfolio/80-20-portfolio-calculator/" },
       { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
@@ -9572,6 +9574,86 @@ export const COMPARISONS: ComparisonEntry[] = [
     calculatorLinks: [
       { label: "70/30 portfolio calculator", href: "/portfolio/70-30-portfolio-calculator/" },
       { label: "80/20 portfolio calculator", href: "/portfolio/80-20-portfolio-calculator/" },
+    ],
+  },
+
+  // ─── 60/40 Portfolio vs 90/10 Portfolio (ga4-top-pages pass 2026-09-23) ──
+  // Lane B for winner /portfolio/90-10-portfolio-calculator/. Real, repeated autocomplete demand
+  // ("90 10 vs 60 40 portfolio") first flagged 2026-08-20 when the 90/10 calculator itself was
+  // built, deferred same-night, re-confirmed by tonight's autocomplete pull. Figures independently
+  // computed against src/lib/portfolio.ts and cross-checked against this site's own already-
+  // published 60/40 and 90/10 figures (70-30-vs-60-40-portfolio, 80-20-vs-90-10-portfolio pages).
+  {
+    slug: "60-40-vs-90-10-portfolio",
+    updated: "2026-09-23",
+    title: "60/40 vs 90/10 Portfolio: Return, Risk, and Growth",
+    metaDescription:
+      "60/40 vs 90/10 portfolio compared: expected return, volatility, Sharpe ratio, and 30-year growth on $100,000 to help you pick the right asset split.",
+    targetKeyword: "60/40 vs 90/10 portfolio",
+    optionA: "60/40 Portfolio",
+    optionB: "90/10 Portfolio",
+    segment: "Portfolio allocation",
+    h1: "60/40 vs 90/10 Portfolio: Which Asset Allocation Fits?",
+    introText:
+      "A 90/10 portfolio holds 90% stocks and 10% bonds to maximize long-term growth, while a 60/40 portfolio holds 60% stocks and 40% bonds to limit annual drawdowns. In our portfolio model at The Modern Wallet, a 90/10 mix generates a 9.40% expected annual return with 14.46% volatility, while a 60/40 mix produces a 7.60% expected return with 10.00% volatility. That 1.80 percentage point return premium adds up to an extra $580,619 on a $100,000 balance over 30 years, but it requires accepting nearly 45% more volatility and a lower risk-adjusted Sharpe ratio of 0.48 compared to 0.51 for 60/40. Choosing between them comes down to whether your time horizon spans several decades and whether your temperament allows you to hold through severe market declines without selling.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Stock and bond allocation", a: "60% stocks / 40% bonds", b: "90% stocks / 10% bonds" },
+        { dimension: "Expected annual return (model)", a: "7.60%", b: "9.40%" },
+        { dimension: "Annual volatility (model)", a: "10.00%", b: "14.46%" },
+        { dimension: "Sharpe ratio (risk-adjusted return)", a: "0.51", b: "0.48" },
+        { dimension: "$100,000 balance after 30 years", a: "≈$900,260", b: "≈$1,480,879" },
+        { dimension: "Likely 1-year range on $100,000 (±1 std dev)", a: "$97,600 to $117,600", b: "$94,940 to $123,860" },
+        { dimension: "Primary investment objective", a: "Capital preservation and moderate growth", b: "Maximum long-run wealth accumulation" },
+        { dimension: "Suitable investor horizon", a: "Medium to long horizon", b: "Very long horizon (20+ years)" },
+      ],
+    },
+    verdict:
+      "Pick a 90/10 portfolio if your investment horizon extends 20 years or longer, you make regular ongoing contributions, and you have the stomach to endure sharp multi-year market downturns without selling equities. Pick a 60/40 portfolio if you plan to withdraw funds within a medium timeframe or if seeing your portfolio drop significantly in a single year would cause you to panic and exit the market. The deciding factor is whether you prioritize raw wealth accumulation over 30 years, where 90/10 delivers approximately $580,619 more on a $100,000 starting balance in this model, or risk efficiency, where 60/40 achieves a superior Sharpe ratio of 0.51 versus 0.48 by dampening volatility with a substantial 40% bond cushion.",
+    sections: [
+      {
+        heading: "Where These 60/40 vs 90/10 Portfolio Numbers Come From",
+        content:
+          "Every projection on this page comes from the standardized asset-pricing model used across our investing tools and sibling comparison pages. We model equities at a 10.00% expected long-term annual return with 16.00% annual volatility, and fixed income at a 4.00% expected annual return with 5.00% annual volatility. These baseline assumptions reflect the capital market return and dispersion standards outlined in [SEC Investor.gov guidance](https://www.investor.gov/introduction-investing/getting-started/asset-allocation) on broad asset classes. The model incorporates a 0.10 correlation coefficient between equities and fixed income, alongside a constant 2.50% risk-free cash return rate.\n\nApplying standard modern portfolio theory to these figures yields distinct mathematical profiles for each mix. For the 60/40 asset allocation, the expected return is calculated as (0.60 × 10.00%) + (0.40 × 4.00%), which equals 7.60%. Factoring in asset variance, standard deviations, and the 0.10 cross-asset correlation produces a portfolio variance of 0.0100 and a standard deviation of exactly 10.00%. Subtracting the 2.50% risk-free rate from the 7.60% portfolio return and dividing by 10.00% volatility yields a Sharpe ratio of 0.51.\n\nFor the aggressive 90/10 allocation, the expected return climbs to (0.90 × 10.00%) + (0.10 × 4.00%), which totals 9.40%. However, holding 90% in higher-variance equities pushes total portfolio volatility to 14.46%. When we calculate risk-adjusted efficiency by subtracting the 2.50% risk-free baseline from 9.40% and dividing by 14.46%, the resulting Sharpe ratio drops to 0.48. These figures represent mathematical model estimates over multi-decade cycles, not guarantees of annual returns in actual market conditions.",
+      },
+      {
+        heading: "90/10's Extra Return Comes at a Risk-Adjusted Cost",
+        content:
+          "Comparing a 60/40 vs 90/10 portfolio highlights a fundamental trade-off between absolute dollar generation and statistical portfolio efficiency. In raw compounding terms, the 90/10 asset mix produces significantly larger portfolio balances over extended timeframes. On an initial $100,000 investment with zero additional deposits, compounding at 9.40% annually produces an estimated $1,480,879 after 30 years. The same $100,000 compounded at 60/40's 7.60% expected rate reaches approximately $900,260 over three decades. The aggressive allocation creates a modeled wealth surplus of $580,619, representing an absolute gain that is more than 64% larger than the balanced portfolio.\n\nDespite this substantial terminal wealth gap, 60/40 proves more efficient on a risk-adjusted basis. Risk-adjusted return measures how much excess return an investor receives for each unit of volatility endured. The 60/40 portfolio's Sharpe ratio of 0.51 exceeds the 0.48 Sharpe ratio delivered by 90/10. This occurs because moving an asset allocation from 60% equities to 90% equities increases volatility much faster than it adds expected return. You gain 1.80 percentage points of annual return (a 23.7% increase), but you take on 4.46 percentage points of additional volatility (a 44.6% surge in risk).\n\nExamining the likely one-year dispersion illustrates what this volatility means in practice. Using a normal distribution model bounded by one standard deviation (±1 sigma, encompassing roughly 68% of historical annual outcomes), an initial $100,000 balance in 60/40 fluctuates between $97,600 in a weak year and $117,600 in a strong year. In contrast, the same $100,000 placed into a 90/10 portfolio spans from $94,940 on the downside to $123,860 on the upside. The 90/10 allocation opens up meaningful additional upside in bull markets, but leaves your capital exposed to deeper single-year losses.",
+      },
+      {
+        heading: "The Impact of Equity Exposure on Volatility and Sequence Risk",
+        content:
+          "The mechanical driver behind the risk differential between 60/40 and 90/10 is the stabilizing role of fixed income. High-quality bonds serve two primary functions in a diversified portfolio: generating steady income and dampening the price swings inherent in public equity markets. When you allocate 40% of your holdings to fixed income, as in a classic balanced portfolio, four out of every ten dollars sit in an asset class modeled with only 5.00% volatility. This substantial fixed-income ballast absorbs market turbulence and establishes a sturdier floor during equity bear markets.\n\nIn a 90/10 allocation, the 10% bond holding is too thin to meaningfully cushion severe market shocks. When equity prices drop sharply, a 10% bond component cannot prevent the total portfolio value from declining almost lockstep with stock indexes. For young investors in the accumulation phase who have dependable employment income and decades ahead of them, this equity exposure works to their advantage. It maximizes capital compounding and allows them to purchase shares at lower prices during market pullbacks.\n\nFor investors approaching or entering the distribution phase, however, this equity concentration introduces acute sequence of returns risk. Sequence risk is the danger that the timing of market drawdowns will permanently impair an investment portfolio. If an investor must liquidate assets to cover living expenses during an early-retirement bear market, selling out of a 90/10 portfolio locks in heavy paper losses on stocks that have already declined sharply. A 60/40 portfolio mitigates this vulnerability by providing a large pool of stable fixed-income assets from which to draw living expenses, allowing the stock component time to recover without forced liquidations.",
+      },
+      {
+        heading: "Who Each Stock-Bond Mix Serves Best",
+        content:
+          "A 90/10 portfolio is not suitable for investors nearing or already in retirement, retirees reliant on portfolio withdrawals, or individuals who would be tempted to sell after a sharp single-year decline. If you fall into those categories, allocating 90% of your life savings to stocks exposes you to excessive sequence risk and behavioral strain. Instead of running 90/10, conservative and pre-retirement savers should maintain a higher fixed-income weighting such as 60/40 or consider moving toward capital preservation strategies.\n\nConversely, a 60/40 portfolio is poorly matched for young workers in their twenties or thirties with high job stability, an emergency fund, and a 30-year investing horizon. Capping stock exposure at 60% across several decades imposes an enormous opportunity cost. Sacrificing the potential $580,619 compounding premium to eliminate volatility you do not need to avoid is an inefficient financial trade-off for a person who will not spend the money for thirty years.\n\nWhat would change our assessment and flip this recommendation? If bond yields rose to historically exceptional levels while equity valuations became intensely stretched, the expected return spread between stocks and bonds could narrow enough that 60/40 matches or exceeds 90/10's growth on a forward-looking basis. Similarly, if an investor's personal timeline shifts unexpectedly due to early retirement, an inheritance, or health changes, re-evaluating the allocation becomes essential regardless of past performance.",
+      },
+      {
+        heading: "How to Decide Between 60/40 and 90/10 Portfolio Mixes",
+        content:
+          "To choose between these two distinct portfolio structures, evaluate your investment horizon, withdrawal requirements, and emotional capacity for risk. Time horizon serves as the primary objective constraint. Money earmarked for purchases within the next decade requires protection from sustained equity downturns, which points directly toward 60/40. Capital dedicated to multi-decade wealth building can weather short-term paper losses, which allows a 90/10 allocation to harness the full power of equity compounding.\n\nNext, assess your psychological tolerance for market volatility. Many investors overestimate their willingness to absorb losses until an actual market crash occurs. According to investor education materials published by [FINRA on diversification](https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification), maintaining an asset mix that matches your risk profile prevents destructive behavioral mistakes like panic-selling at market bottoms. If holding a 90/10 portfolio causes you to sell equities after a sharp decline, the higher theoretical return of that allocation is lost.\n\nIf you find yourself torn between the capital preservation of 60/40 and the compounding power of 90/10, consider evaluating middle-ground splits. Sibling strategies such as 70/30 and 80/20 bridge the gap between these bookends on the risk spectrum. You can model how intermediate allocations alter your specific numbers using the [asset allocation calculator](/portfolio/asset-allocation-calculator/), compare downside exposure in our [portfolio risk calculator](/portfolio/portfolio-risk-calculator/), or stress-test dedicated splits with the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/) and [90/10 portfolio calculator](/portfolio/90-10-portfolio-calculator/). For personalized portfolio design tailored to your specific tax bracket and retirement timeline, consult a certified financial planner or qualified fiduciary advisor.",
+      },
+    ],
+    faqs: [
+      { question: "Is 90/10 too aggressive if I already run 60/40?", answer: "Yes, jumping directly from a 60/40 split to a 90/10 portfolio represents a major leap in risk, increasing portfolio volatility from 10.00% to 14.46%. In a typical down year, the modeled floor on a $100,000 balance falls from $97,600 in a 60/40 mix down to $94,940 in a 90/10 mix, with potential for significantly wider drawdowns in severe bear markets. Investors seeking higher equity exposure usually benefit from stepping up gradually to a 70/30 or 80/20 allocation before considering a 90/10 portfolio." },
+      { question: "How much more does a 90/10 portfolio grow than 60/40 over 30 years?", answer: "In our portfolio model, a $100,000 initial investment with no added contributions grows to approximately $1,480,879 in a 90/10 portfolio over 30 years, compared to roughly $900,260 in a 60/40 portfolio. That creates a modeled growth surplus of about $580,619 in favor of 90/10, driven by the 1.80 percentage point advantage in expected annual return compounding across three decades." },
+      { question: "Which has the better risk-adjusted return, 60/40 or 90/10?", answer: "The 60/40 portfolio delivers the superior risk-adjusted return, achieving a Sharpe ratio of 0.51 compared to 0.48 for the 90/10 portfolio. Because 60/40 carries a 10.00% volatility profile versus 14.46% for 90/10, it generates more return per unit of total risk taken, even though 90/10 produces a higher absolute dollar total over time." },
+      { question: "What's the difference in risk between a 60/40 and a 90/10 portfolio?", answer: "The primary risk difference lies in annual volatility, which measures the dispersion of returns around the expected average. A 90/10 portfolio carries a modeled volatility of 14.46%, which is 4.46 percentage points higher than the 10.00% volatility of a 60/40 portfolio. In a one-standard-deviation bad year, our model projects a $100,000 investment dropping to $94,940 in 90/10 versus $97,600 in 60/40." },
+      { question: "Is there a middle ground between 60/40 and 90/10?", answer: "Yes, intermediate splits like 70/30 and 80/20 offer balanced compromises between the aggressive growth of 90/10 and the capital preservation of 60/40. A 70/30 or 80/20 asset mix captures much of the equity upside while maintaining a more substantial fixed-income buffer. You can test these custom allocations directly on this site using our [asset allocation calculator](/portfolio/asset-allocation-calculator/)." },
+    ],
+    sources: [
+      { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+      { label: "FINRA — Asset Allocation and Diversification", url: "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification" },
+    ],
+    relatedComparisons: ["70-30-vs-60-40-portfolio", "80-20-vs-90-10-portfolio", "70-30-vs-80-20-portfolio"],
+    calculatorLinks: [
+      { label: "60/40 portfolio calculator", href: "/portfolio/60-40-portfolio-calculator/" },
+      { label: "90/10 portfolio calculator", href: "/portfolio/90-10-portfolio-calculator/" },
+      { label: "Asset allocation calculator", href: "/portfolio/asset-allocation-calculator/" },
+      { label: "Portfolio risk calculator", href: "/portfolio/portfolio-risk-calculator/" },
     ],
   },
 
