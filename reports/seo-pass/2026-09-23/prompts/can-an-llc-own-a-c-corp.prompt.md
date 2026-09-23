@@ -2,6 +2,8 @@ route: /guides/can-an-llc-own-a-c-corp/
 slug: can-an-llc-own-a-c-corp
 page type: explainer / spoke (floor 1,200 body words)
 depth floor: 1200
+medium: text → text
+register: operator
 primary keyword: can an llc own a c corp
 secondary keywords: can a c corp own an llc, is an llc a c corp, llc holding company c corp subsidiary
 intent: someone confused about how the LLC and C-corp entity types relate to EACH OTHER structurally — can one own the other, and is an LLC "a kind of" C corp — as distinct from someone comparing the two to pick one (that reader question is already answered on the site's /compare/llc-vs-c-corp/ page and is out of scope here).
@@ -47,3 +49,28 @@ Anything not on this list, you do not know. Never invent a percentage, a statute
 2. "Can an LLC own an S corp the same way it can own a C corp?"
 3. "Why would a C corp want to own an LLC instead of just running the business itself?"
 4. "If my LLC elects to be taxed as a C corp, does that mean it can suddenly issue stock?"
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (attempt 1/2)
+
+The previous draft FAILED the audit for two reasons — fix both in this regeneration:
+
+1. **Filler word in `subtitle`.** The word "key" was used as an inflated filler adjective ("...and the key shareholder restrictions"). Do not use "key", "crucial", "essential", "significant", or similar filler adjectives anywhere on this page. Just name the thing directly (e.g. "...and the shareholder restrictions that come with S-corp status").
+
+2. **Sentence-rhythm monotony (HARD FAIL).** The previous draft's entire opening run — the intro plus the first section and part of the second — was 23 consecutive sentences that were ALL in the "long" length band (15+ words), with individual lengths like 17, 29, 26, 17, 20, 22, 17, 27, 25, 33, 17, 22, 15, 33, 23, 19, 21, 30, 17, 21, 17, 24, 19 words. This is a hard fail under `_content-standard.md` STYLE: no run of 10 consecutive sentences may sit in a single length band, and no 5 consecutive sentences may fall within 3 words of each other.
+
+   Fix this throughout the ENTIRE page, not just the intro: deliberately mix short (1-8 words), medium (9-14 words), and long (15+ words) sentences. Put a genuinely short, punchy sentence every few sentences — a direct claim, a one-line answer, a short transition. Do not achieve variety by padding; vary real sentence length by writing some short, declarative sentences. Re-read your own draft's sentence lengths before returning it; if you count 5+ sentences in a row within 3 words of each other, or 10+ in a row in one band, rewrite that stretch.
+
+Keep every fact from the CLOSED FACT LIST above unchanged. Do not drop any required section or FAQ. This is a rhythm and word-choice fix, not a content change.
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (attempt 2/2 — FINAL, this page is dropped if these are not both fixed)
+
+The previous regeneration fixed the worst monotony (no more 10+ sentence runs in one band) but two problems remain, confirmed by a mechanical word/sentence-length count of the actual draft:
+
+1. **DEPTH GATE FAIL: only 1,165 body words against the 1,200 floor.** Body words = introText + every section body + every FAQ answer. The page is too short. Do NOT pad existing sentences — add real substance instead: expand the "Can a C Corp Own an LLC?" section's bulleted reasons (real estate, product-line ring-fencing, IP, joint ventures) into fuller paragraphs with one added concrete detail each, and add one more worked micro-example (grounded in the CLOSED FACT LIST only) to the "How Taxes Work for a Corporation-Owned LLC" section showing how a disregarded-entity subsidiary's numbers actually land on the parent's Form 1120 (e.g., in plain terms: the subsidiary keeps no separate return, so its revenue and expenses are simply added into the parent's own totals). Target 1,400-1,600 body words this time, comfortably clear of the floor.
+
+2. **Residual sentence-rhythm monotony (still a HARD FAIL, just smaller).** Two runs of exactly 5 consecutive sentences within 3 words of each other survived the last regeneration:
+   - "An entrepreneur might set up an LLC holding company..." / "If one operating unit is an S corp..." / "To understand the rules separating these corporate forms..." / "The IRS rules on S corporations define eligible shareholders..." / "A C corporation can own an LLC as a subsidiary." — five sentences in a row all landing at roughly 10-14 words.
+   - "By default, a single-member LLC is a disregarded entity." / "A multi-member LLC is taxed as a partnership." / "Neither entity receives corporate tax treatment automatically." / "An LLC can choose corporate taxation." / "To do this, the company files IRS Form 8832." — five short sentences in a row all landing at roughly 6-9 words.
+   Fixing the 10-in-a-row problem is not enough — you must also avoid stringing together 5+ short, similarly-clipped declarative sentences back to back, even when they are each individually fine. Break these specific patterns up: combine two of the short adjacent sentences into one slightly longer one with a connective (e.g., "while", "because", "so"), or insert one noticeably longer or shorter sentence into the run. Re-read the WHOLE draft sentence-by-sentence before returning it and manually break up any stretch of 5 or more sentences whose word counts sit within 3 words of each other, wherever it occurs — not just in the two spots quoted above.
+
+This is the last attempt for this page. Keep every fact from the CLOSED FACT LIST unchanged; add depth by answering more of the reader's real sub-questions, never by restating what is already said.

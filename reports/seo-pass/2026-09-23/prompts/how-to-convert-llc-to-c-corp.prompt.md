@@ -2,6 +2,8 @@ route: /guides/how-to-convert-llc-to-c-corp/
 slug: how-to-convert-llc-to-c-corp
 page type: explainer / spoke (floor 1,200 body words)
 depth floor: 1200
+medium: text → text
+register: operator
 primary keyword: how to convert llc to c corp
 secondary keywords: llc to c corp conversion, how to elect c corp status for llc, statutory conversion llc to corporation
 intent: an LLC owner or founder deciding whether/how to turn their LLC into a C corp — this is a HOW-TO / decision page for someone actively considering the move (e.g. because they are raising venture capital and need C-corp status), not a "what is Form 8832" reference lookup.

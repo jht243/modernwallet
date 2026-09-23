@@ -2,6 +2,8 @@ route: /guides/form-8832-entity-classification-election/
 slug: form-8832-entity-classification-election
 page type: explainer / spoke (floor 1,200 body words)
 depth floor: 1200
+medium: text → text
+register: operator
 primary keyword: form 8832
 secondary keywords: entity classification election, irs form 8832 instructions, check the box election
 intent: a general reference explainer for ANYONE who has encountered "Form 8832" — this audience is broader than just LLC-to-C-corp founders (it also covers foreign entity elections, single-member disregarded-entity elections, and partnership elections), so this page explains the FORM ITSELF: what it does, who can file it, the deadlines, and how it differs from Form 2553. It is not a step-by-step "should I convert my LLC" decision guide — link out to that sibling page for the decision-making angle.
@@ -51,3 +53,21 @@ Anything not on this list, you do not know. Never invent a mailing address, a sp
 3. "What's the difference between Form 8832 and Form 2553?"
 4. "Does filing Form 8832 turn my LLC into a corporation?"
 5. "Can I change my entity classification election again later?"
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (attempt 1/2)
+
+The previous draft FAILED the audit for sentence-rhythm monotony (HARD FAIL, two separate runs): sentences 15-31 were 17 consecutive sentences all in the "long" length band (15+ words), and sentences 33-42 were another 10 consecutive long sentences. This violates `_content-standard.md` STYLE: no run of 10 consecutive sentences may sit in a single length band, and no 5 consecutive sentences may fall within 3 words of each other.
+
+Fix this throughout the ENTIRE page: deliberately mix short (1-8 words), medium (9-14 words), and long (15+ words) sentences in every section, not just the opening. Put a genuinely short, punchy sentence every few sentences — a direct claim, a one-line answer, a short transition — especially in the later sections on deadlines and the 60-month rule, where the previous draft's long runs occurred. Do not achieve variety by padding; vary real sentence length by writing some short, declarative sentences. Re-read your own draft's sentence lengths before returning it; if you count 5+ sentences in a row within 3 words of each other, or 10+ in a row in one band, rewrite that stretch.
+
+Keep every fact from the CLOSED FACT LIST above unchanged. Do not drop any required section or FAQ. This is a rhythm fix, not a content change.
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT (attempt 2/2 — FINAL, this page is dropped if this is not fixed)
+
+The previous regeneration fixed the worst monotony (the two 17-sentence and 10-sentence long-band runs are gone) but a residual, smaller pattern survived, confirmed by a mechanical sentence-length count of the actual draft: two runs of exactly 5 consecutive sentences within 3 words of each other —
+- "To confirm your business status, review the official guidance..." / "If you operate an entity that was legally incorporated..." / "The tax code assigns default tax classifications..." / "You do not have to file anything if those defaults match..." / "A domestic eligible entity with a single owner defaults..." — five sentences in a row all around 12-18 words.
+- "An S corporation cannot have more than 100 shareholders." / "Furthermore, all shareholders must be individuals, certain trusts, or estates." / "Non-resident aliens cannot hold shares in an S corporation." / "Choosing between these filings depends on your target tax structure." / "An eligible entity files Form 8832 for straight C-corporation taxation." — five sentences in a row all around 9-10 words.
+
+Fixing the long 10+/17+ sentence runs is not enough on its own — you must also avoid stringing together 5 or more sentences that are all similarly clipped, even when each one is individually fine. Break these specific patterns up (combine two adjacent similar-length sentences with a connective, or insert a noticeably shorter or longer sentence into the run). Re-read the WHOLE draft sentence-by-sentence before returning it and manually break up any stretch of 5 or more sentences whose word counts sit within 3 words of each other, wherever it occurs on the page — not just in the two spots quoted above.
+
+This is the last attempt for this page. Keep every fact from the CLOSED FACT LIST unchanged and keep the body word count comfortably above the 1,200 floor (the last draft was 1,405 words — stay at or above that).
