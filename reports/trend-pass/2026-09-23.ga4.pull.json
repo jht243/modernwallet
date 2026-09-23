@@ -1,0 +1,54 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-23",
+  "window_start": "2026-09-23",
+  "window_end": "2026-09-23",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/what-are-trump-accounts-invested-in",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-index-funds",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/portfolio/90-10-portfolio-calculator/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 3,
+  "top10_pages_total_clicks": 3,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 1
+    },
+    "/guides/what-are-trump-accounts-invested-in": {
+      "Direct": 1
+    },
+    "/portfolio/90-10-portfolio-calculator/": {
+      "Unassigned": 1
+    },
+    "/roundup/best-index-funds": {
+      "Direct": 1
+    }
+  }
+}
