@@ -1,0 +1,39 @@
+{
+ "slug": "how-to-convert-llc-to-c-corp",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1503,
+ "floor": 1200,
+ "input_tokens": 19418,
+ "output_tokens": 2334,
+ "thinking_tokens": null,
+ "cached_tokens": 17424,
+ "est_cost_usd": 0.0135,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1503,
+  "numbers_not_in_facts": [
+   "2026"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17992
+  }
+ },
+ "seconds": 9.6,
+ "response_id": "ZoyzavLtI_OGjMcP9siJ2AM",
+ "generated_at": "2026-09-23T08:23:11+0000"
+}

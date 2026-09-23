@@ -1,0 +1,67 @@
+{
+  "slug": "form-8832-entity-classification-election",
+  "metaTitle": "Form 8832 Instructions: Entity Classification Election",
+  "metaDescription": "Learn how Form 8832 works, who qualifies to file an entity classification election, default IRS rules, effective date limits, and the 60-month waiting period.",
+  "h1": "Form 8832 Instructions: Entity Classification Election Guide",
+  "subtitle": "How eligible business entities use Form 8832 to elect corporate, partnership, or disregarded tax status under IRS check-the-box regulations.",
+  "introText": "Form 8832 allows an eligible business entity to choose how the Internal Revenue Service (IRS) taxes its operations without altering its legal structure under state law.\n\nAt ModernWallet, we review business structure questions regularly, and founders often confuse a federal tax classification election with a state-level corporate conversion. Filing this document lets an unincorporated business select treatment as a corporation, a partnership, or a disregarded entity. Unless a business submits this election, default federal tax rules dictate whether income passes directly to owners or faces taxation at the entity level.",
+  "sections": [
+    {
+      "heading": "What Form 8832 Does",
+      "body": "Form 8832, Entity Classification Election, is the form an eligible business entity files with the IRS to choose how it is taxed at the federal level: as a corporation, a partnership, or a disregarded entity. It changes only the entity's federal tax classification, not its legal form under state law. A business that files the document continues operating under its existing state formation documents while adopting a new federal tax status.\n\nThese rules originate from the check-the-box Treasury regulations that took effect in 1997. Before these regulations existed, the IRS evaluated multiple corporate characteristics to determine how to tax an unincorporated business. The check-the-box framework replaced that subjective test with a direct elective system, allowing eligible entities to choose their preferred tax category on the official [IRS Form 8832 page](https://www.irs.gov/forms-pubs/about-form-8832)."
+    },
+    {
+      "heading": "Eligible Entities Permitted to File Form 8832",
+      "body": "Only an eligible entity may submit an entity classification election under the check-the-box regulations. In general, an eligible entity is an unincorporated business structure recognized under federal tax law. A domestic Limited Liability Company (LLC) represents the most common real-world example of an eligible entity submitting this election.\n\nA business formed as a corporation under state corporation statutes cannot file this form. State-chartered corporations are per se corporations for federal tax purposes and cannot elect partnership or disregarded-entity status. The IRS automatically taxes every state-formed corporation under corporate income tax rules from the moment of legal incorporation."
+    },
+    {
+      "heading": "The Default Classification Rules Overridden by Filing",
+      "body": "The check-the-box regulations establish automatic default classifications for unincorporated businesses that never submit an election. A domestic eligible entity with a single owner defaults to classification as a disregarded entity. Under this default arrangement, a single-member LLC does not file a separate federal business return, and all business profit or loss flows straight to the owner's individual return.\n\nA domestic eligible entity with two or more owners defaults to classification as a partnership. Under partnership tax rules, a multi-member LLC files an informational return while passing taxable earnings to the owners. Filing an election overrides these default rules and reclassifies the business as an association taxable as a corporation."
+    },
+    {
+      "heading": "Electing C-Corporation Status Under Federal Tax Rules",
+      "body": "Filing to elect corporate status requires an eligible entity to submit Form 1120 annually and calculate its federal tax under the corporate income tax regime. Corporate earnings are subject to the flat 21% federal corporate income tax rate established by the 2017 Tax Cuts and Jobs Act (TCJA). The business pays federal taxes on its own income rather than passing profits through to the personal returns of the owners.\n\nSubmitting the form does not create corporate stock, stock certificates, or a board of directors. An LLC that elects corporate taxation remains an LLC under state law, governed by its operating agreement and membership interests. Founders curious about holding company structures can review [can an LLC own a C-corp](/guides/can-an-llc-own-a-c-corp/) or consult our [LLC vs C-corp](/compare/llc-vs-c-corp/) comparison. Turning an LLC into a statutory corporation with corporate shares requires a separate legal conversion under state statutes."
+    },
+    {
+      "heading": "Differences Between Form 8832 and Form 2553",
+      "body": "Form 8832 elects classification as an association taxable as a C-corporation, a partnership, or a disregarded entity, while Form 2553 elects S-corporation tax status. An S-corporation functions as a specialized pass-through tax regime governed by distinct statutory eligibility standards under the Internal Revenue Code. Taxpayers can access filing details on the [IRS Form 2553 page](https://www.irs.gov/forms-pubs/about-form-2553).\n\nS-corporation rules restrict ownership to individuals, certain trusts, and estates, while imposing a strict cap on the total number of allowable shareholders. Form 8832 carries no restrictions on who may own membership interests in the filing business. You can read our [S-corp vs C-corp](/compare/s-corp-vs-c-corp/) analysis to contrast pass-through distributions with corporate dividend treatment."
+    },
+    {
+      "heading": "Deadlines and Effective Date Windows",
+      "body": "An entity classification election cannot take effect more than 75 days before the date the form is filed with the IRS. The IRS strictly enforces this retroactive limit, which means businesses cannot backdate an election into an earlier closed tax quarter or prior calendar year. An election submitted with an effective date older than 75 days will be adjusted or rejected under Treasury regulations.\n\nThe election effective date also cannot fall more than 12 months after the filing date. This forward-looking restriction allows owners to establish corporate status ahead of an upcoming fiscal period without selecting speculative dates years into the future. Verifying the requested effective date against these boundaries prevents processing delays and correspondence from IRS processing centers."
+    },
+    {
+      "heading": "The 60-Month Limitation on Subsequent Elections",
+      "body": "Once an eligible entity classification election takes effect, the business generally cannot make another classification election for 60 months. This five-year limitation begins on the effective date of the initial election. Treasury regulations created the 60-month rule to prevent businesses from alternating between corporate and pass-through taxation to reduce taxes in fluctuating financial years.\n\nThe IRS allows narrow exceptions to the 60-month restriction when specific structural ownership events occur. For example, the form instructions outline an exception when more than 50% of the ownership interests transfer to new owners who did not own interests on the original effective date. Absent such qualifying circumstances, a business remains bound to its chosen classification until the five-year window concludes."
+    },
+    {
+      "heading": "Other Reasons Businesses Submit an Election",
+      "body": "Businesses also submit Form 8832 to establish federal tax treatment for foreign business organizations operating in the United States. Foreign eligible entities file the election to specify classification as a foreign corporation, partnership, or disregarded entity for international tax compliance. Domestic single-member LLCs also use the form when switching from corporate classification back to disregarded-entity status after the required waiting period.\n\nFounders planning a complete legal transition should read our guide on [how to convert an LLC to a C-corp](/guides/how-to-convert-llc-to-c-corp/) to learn the legal steps required by state filing offices. Additional background on entity types is available on the [IRS limited liability company page](https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc). Review your entity formation records, confirm your target effective date falls within the statutory window, and complete Form 8832 before filing your next annual tax return."
+    }
+  ],
+  "ctaTitle": "Plan Your Federal Entity Classification",
+  "ctaText": "Explore our guides and calculators to see how electing corporate tax status impacts your annual filing requirements and overall business obligations.",
+  "ctaButton": "Explore Entity Guides",
+  "faqItems": [
+    {
+      "question": "Who needs to file Form 8832?",
+      "answer": "An eligible unincorporated business entity, such as an LLC, must file Form 8832 if it wants to elect a federal tax classification other than its statutory default. A single-member LLC files to be taxed as a corporation instead of a disregarded entity. A multi-member LLC files to be taxed as a corporation instead of a partnership. State-chartered corporations cannot file the form."
+    },
+    {
+      "question": "What is the deadline to file Form 8832?",
+      "answer": "Form 8832 does not have a single fixed calendar deadline, but the requested effective date must fall within a strict window. The election cannot take effect more than 75 days before the date of filing, and it cannot take effect more than 12 months after the filing date. Filing late prevents retroactive application beyond the 75-day boundary."
+    },
+    {
+      "question": "What's the difference between Form 8832 and Form 2553?",
+      "answer": "Form 8832 is used by an eligible entity to elect classification as a C-corporation, a partnership, or a disregarded entity for federal tax purposes. Form 2553 is used separately to elect S-corporation tax status, which provides pass-through taxation subject to strict shareholder limits and ownership rules. Form 8832 does not elect S-corporation treatment and imposes no shareholder restrictions."
+    },
+    {
+      "question": "Does filing Form 8832 turn my LLC into a corporation?",
+      "answer": "Filing Form 8832 changes only your federal tax classification, not your legal business structure under state law. An LLC that elects corporate taxation continues to operate as an LLC governed by its operating agreement and membership interests. It does not issue shares of corporate stock or adopt bylaws. Legal conversion requires a separate filing with your state business registry."
+    },
+    {
+      "question": "Can I change my entity classification election again later?",
+      "answer": "You can change your classification again, but the 60-month rule generally prohibits making another election for five years after the initial effective date. Treasury regulations enforce this waiting period to stop businesses from constantly switching tax status. An exception applies if more than 50% of the ownership of the entity changes hands, allowing an earlier subsequent election."
+    }
+  ]
+}

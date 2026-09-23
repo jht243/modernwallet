@@ -1,0 +1,63 @@
+{
+  "slug": "how-to-convert-llc-to-c-corp",
+  "metaTitle": "How to Convert an LLC to a C Corp (2026 Guide)",
+  "metaDescription": "Learn how to convert an LLC to a C corp through a state legal conversion or a federal tax election on Form 8832, including EIN and tax rules.",
+  "h1": "How to Convert an LLC to a C Corp",
+  "subtitle": "State statutory conversions, mergers, and federal tax elections carry very different legal and tax results.",
+  "introText": "Converting an LLC to a C corp happens through two distinct paths: an actual legal conversion under state law that creates a new corporation, or a pure federal tax election on IRS Form 8832 that leaves the LLC intact.\n\nAt ModernWallet, we see founders confuse these two paths regularly when preparing for outside investment. A legal conversion changes your underlying business structure, creates real stock, and satisfies institutional venture capital investors. A tax election changes only how the Internal Revenue Service (IRS) collects tax on your net business income.",
+  "sections": [
+    {
+      "heading": "What 'Converting' Actually Means: Tax Election vs. Legal Conversion",
+      "body": "There are two different ways to do it, and they are not the same thing: a pure federal tax election on [IRS Form 8832](https://www.irs.gov/forms-pubs/about-form-8832) that keeps the LLC's legal form but changes how it is taxed, or an actual legal conversion under state law that turns the LLC into a corporation.\n\nWhich one you need depends on why you are converting. An LLC electing C-corp tax status remains an LLC under state law. It retains its LLC name, its state LLC registration, and its existing operating agreement. The only change occurs on the federal level, where the business files [IRS Form 1120](https://www.irs.gov/forms-pubs/about-form-1120) and pays the flat 21% federal corporate income tax rate set by the 2017 Tax Cuts and Jobs Act (TCJA).\n\nA legal conversion changes the company's legal DNA. Venture capital investors and institutional funds cannot hold pure tax-elected LLC interests because they require standardized preferred shares and corporate governance protections. If outside capital demands a corporation, filing a federal tax form does not satisfy the requirement."
+    },
+    {
+      "heading": "How a Statutory Conversion Works",
+      "body": "A statutory conversion transforms an LLC into a corporation by operation of state law through a streamlined administrative filing. The LLC files articles of conversion alongside initial corporate formation documents with the state Secretary of State.\n\nThis statutory process automatically transfers existing assets, operational contracts, leases, vendor accounts, and liabilities to the new corporation. The LLC does not need to undergo a formal winding-up or separate dissolution step because the legal entity continues its existence in a new business form.\n\nAvailability varies by state jurisdiction. Not every state allows statutory conversions for every pairing of entity types. Founders must confirm with their state's Secretary of State or retain corporate counsel to verify whether a single-filing statutory conversion is legally supported in their home state before preparing paperwork."
+    },
+    {
+      "heading": "When You Need a Merger Instead",
+      "body": "A statutory merger serves as the primary alternative when a direct statutory conversion is unavailable under local law or when you are changing your entity's home state. Founders moving an entity to Delaware frequently use this multi-step structure.\n\nTo execute a statutory merger, the founders first incorporate a brand-new corporation in the chosen state. The founders then merge the existing LLC into the newly created corporate entity under governing state merger statutes. The corporate entity survives the merger, and all LLC membership units convert into corporate stock.\n\nMergers involve drafting a formal merger agreement, approving corporate bylaws, and filing merger certificates. If you want to compare different structural relationships before executing a merger, our guide on whether [an LLC can own a C corp](/guides/can-an-llc-own-a-c-corp/) explains holding-company setups."
+    },
+    {
+      "heading": "The EIN and Tax Filings Change Too",
+      "body": "Per official IRS guidance on [whether you need a new EIN](https://www.irs.gov/businesses/small-businesses-self-employed/do-you-need-a-new-ein), a partnership that incorporates is required to obtain a new Employer Identification Number (EIN). The federal tax identification number follows the underlying federal tax classification rather than state registration paperwork.\n\nFounders converting an existing LLC into a corporation must plan for this administrative change. You cannot assume your existing LLC EIN will carry over to the new corporation once the state legal process concludes. Bank accounts, payroll registrations, and vendor records will require updating under the new identifier.\n\nTax reporting shifts from pass-through schedules to corporate returns. Instead of distributing annual profit and loss statements to owners via Schedule K-1 or reporting business activity on Schedule C, the corporation files [IRS Form 1120](https://www.irs.gov/forms-pubs/about-form-1120). The corporation pays entity-level tax directly, and any subsequent shareholder distributions become subject to dividend tax rules."
+    },
+    {
+      "heading": "What a Conversion Actually Costs",
+      "body": "Legal fees make up the largest direct expense of converting an LLC into a corporation. Because the transaction requires drafting state filings, writing corporate bylaws, adopting shareholder agreements, and issuing formal stock certificates, founders should expect real legal bills that commonly run into the thousands of dollars.\n\nA major tax risk involves the transfer of encumbered company assets. Transferring an LLC's assets to a corporate entity triggers a taxable gain if the business liabilities assumed by the new corporation exceed the tax basis of the assets contributed. A business carrying significant debt or equipment financing can face an immediate, unexpected tax bill.\n\nFounders should review their balance sheet basis with a Certified Public Accountant (CPA) before submitting state paperwork. You can review ongoing entity tax liabilities using our [S corp tax calculator](/s-corp-tax/) when weighing entity structures."
+    },
+    {
+      "heading": "Just Need C-Corp Taxes, Not a New Entity? Electing Instead of Converting",
+      "body": "Filing IRS Form 8832 allows an LLC to elect C-corporation federal taxation without changing its state-level legal entity status. This procedure, colloquially known as checking the box, treats the LLC as an association taxable as a corporation for federal revenue purposes.\n\nForm 8832 imposes strict timing rules. The effective date specified on the election cannot be more than 75 days before the date the form is filed, and it cannot be more than 12 months after the filing date. Once you file Form 8832, IRS rules generally prohibit another classification change for 60 months (5 years), subject to limited relief exceptions. For detailed line-by-line filing rules, read our companion breakdown on [Form 8832 entity classification elections](/guides/form-8832-entity-classification-election/).\n\nForm 8832 is completely separate from IRS Form 2553. If a business wants pass-through taxation under corporate rules, it files Form 2553 for S-corporation status, which carries specific shareholder limits. You can evaluate the core operational tradeoffs on our [LLC vs S corp comparison](/compare/llc-vs-s-corp/)."
+    },
+    {
+      "heading": "Why Founders Convert in the First Place",
+      "body": "Institutional venture capital funds overwhelmingly require portfolio companies to operate as C corporations. Investment funds with tax-exempt endowments or foreign limited partners cannot cleanly hold pass-through LLC units without triggering complicated administrative and tax liabilities for their underlying investors.\n\nCorporations provide the legal infrastructure institutional investors demand. Only a corporate entity can issue standardized preferred stock, create formalized employee stock option pools, and establish clear board governance structures. Review our [LLC vs C corp comparison](/compare/llc-vs-c-corp/) for a complete breakdown of governance differences.\n\nTo move forward, consult your business attorney and tax advisor to confirm whether a statutory conversion or merger fits your balance sheet and investor timeline."
+    }
+  ],
+  "ctaTitle": "Plan Your Corporate Conversion",
+  "ctaText": "Converting an LLC to a C corp requires coordinating state legal filings, new EIN applications, and tax basis reviews. Speak with our specialists to review your conversion strategy.",
+  "ctaButton": "Book a Consultation",
+  "faqItems": [
+    {
+      "question": "Can I convert my LLC to a C corp myself without a lawyer?",
+      "answer": "Completing a legal conversion without legal counsel is risky because the process requires drafting corporate formation documents, issuing formal stock, adopting corporate bylaws, and preparing statutory conversion or merger agreements. Because professional legal fees commonly run into the thousands of dollars, founders should treat this as a complex legal restructuring rather than routine paperwork."
+    },
+    {
+      "question": "Do I need a new EIN when I convert my LLC to a C corp?",
+      "answer": "Yes, per official IRS guidance, a partnership that incorporates is required to obtain a new Employer Identification Number (EIN). The federal identification number is tied to the entity's federal tax classification rather than state filings alone, so you cannot assume your existing LLC EIN will carry over."
+    },
+    {
+      "question": "What's the difference between electing C-corp tax status and actually converting to a corporation?",
+      "answer": "Electing C-corp tax status by filing IRS Form 8832 changes only how your business is taxed by the IRS, leaving your state LLC registration, operating agreement, and legal structure intact. A full legal conversion changes your underlying entity type under state law, creating a true corporation capable of issuing shares of stock."
+    },
+    {
+      "question": "Is converting an LLC to a C corp a taxable event?",
+      "answer": "A conversion can trigger a taxable gain if the liabilities assumed by the new corporation exceed the tax basis of the assets contributed by the LLC. Founders must evaluate their company debt and asset basis with a CPA before executing a transfer to prevent an unexpected tax liability."
+    },
+    {
+      "question": "How long does it take to convert an LLC to a C corp?",
+      "answer": "Processing timelines vary by state government agency and current workload. Because processing times are not standardized federally, you should verify current corporate processing schedules directly with your state's Secretary of State."
+    }
+  ]
+}
