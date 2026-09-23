@@ -159956,11 +159956,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/news/ai-shopping": {
+          "acted": false,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:35a61d594f2ee042adf50624d4e232c589d673698ee487229acbfd9741f1e63e",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-09-23T13:16:36-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "AI can help you pick a product",
@@ -159973,7 +159977,7 @@
             "budget",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What AI Can (and Can\u2019t) Do for Your Shopping - NerdWallet",
           "tool_io": []
         },
@@ -160212,11 +160216,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/news/data-center-ai-midterm-election-2026": {
+          "acted": false,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:ba82d773618cea96213d06d9ecfdcb124dd7fc9405b37c1e3fc80bba96c5f2c1",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-09-23T08:21:05-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Meet MoneyNerd, your financial news decoder",
@@ -160228,7 +160236,7 @@
             "finance",
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Data Centers Are a Potent, Bipartisan Battleground in the Midterms - NerdWallet",
           "tool_io": []
         },
@@ -191979,11 +191987,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/learn/mortgage-editor-rents-instead-of-buying": {
+          "acted": false,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:9cd43c089719d6c6c36fefba986fa4fa0b8bd645ad94d26ffe8d794586d0d91e",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-09-23T11:26:16-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "The real (personal) math of renting vs. buying",
@@ -191993,7 +192005,7 @@
             "mortgage",
             "rent"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "I Edit Mortgage Advice for a Living \u2014 and Still Rent - NerdWallet",
           "tool_io": []
         },
@@ -195847,11 +195859,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-wednesday-september-23-2026": {
+          "acted": false,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:506bcc57673389f9743c18c298a38659275f394500e709e3c81f29c601abeb1a",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-09-23T06:43:45-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -195868,7 +195884,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Wednesday, September 23: Easing, But Still Above 7% - NerdWallet",
           "tool_io": []
         },
@@ -398332,11 +398348,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/financial-advisor/flat-fee-vs-aum-based-financial-advisors": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:1b05db9fc2ce845f642086bdf8f005ed401c45ac740530c72c4751e07875d58d",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "comparison",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T13:47:27+00:00",
+          "our_url": "/compare/flat-fee-vs-aum-based-financial-advisors/",
           "outline": [
             "How Flat-Fee Financial Advisors Work",
             "Pros and Cons of Flat-Fee Financial Advisors",
@@ -398355,7 +398375,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Flat-Fee vs. AUM-Based Financial Advisors",
           "tool_io": []
         },
@@ -449517,11 +449537,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/can-you-retire-on-1-5-million-comfortably": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:fff18619d1553a2ab9d3f0e3d971ccf30f5f7806d72ea9306b7098cfca2c3552",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T15:37:44+00:00",
+          "our_url": "/guides/can-you-retire-on-1-5-million-comfortably/",
           "outline": [
             "Factors to Consider for Your Retirement",
             "How Much Do Retirees Usually Spend?",
@@ -449536,7 +449560,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Can You Retire on $1.5 Million Comfortably?",
           "tool_io": []
         },
@@ -451110,11 +451134,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/does-retirement-income-count-as-income-for-social-security": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:68df7fa69aafde7a8484194943ae273fb88c10cad1aac7885fcd837fdcd286cd",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T14:43:36+00:00",
+          "our_url": "/guides/does-retirement-income-count-as-income-for-social-security/",
           "outline": [
             "Understanding Social Security Benefits",
             "Does Retirement Income Count as Income for Social Security?",
@@ -451133,7 +451161,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Does Retirement Income Count as Income for Social Security?",
           "tool_io": []
         },
@@ -452980,11 +453008,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/how-long-will-150k-last-in-retirement": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:dc4eb93017a7718941f6fed5f817fa59ab37e1e903f8c9edd890d9d9dcb00be7",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T15:32:47+00:00",
+          "our_url": "/guides/how-long-will-150k-last-in-retirement/",
           "outline": [
             "Can You Retire With No Money?",
             "How Long Will $150,000 Last in Retirement?",
@@ -453003,7 +453035,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Long Will $150,000 Last in Retirement?",
           "tool_io": []
         },
@@ -454365,11 +454397,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/how-much-will-i-need-to-retire-in-2050": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:60ebbd74c09508464b2d5bc37af0e684131f5cc06099b243c866b755a45fa67d",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T14:20:34+00:00",
+          "our_url": "/guides/how-much-will-i-need-to-retire-in-2050/",
           "outline": [
             "Who\u2019s Retiring in 2050?",
             "Estimating Living Expenses in 2050",
@@ -454390,7 +454426,7 @@
             "retirement",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much You Need to Save to Retire By 2050",
           "tool_io": []
         },
@@ -454992,11 +455028,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/how-to-check-your-401k-balance": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:3938f750b3b5c76c8c8bd4b56d4edd2f42c2e4027f1caf51cc526ff824a5e47d",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T15:40:27+00:00",
+          "our_url": "/guides/how-to-check-your-401k-balance/",
           "outline": [
             "What Is a 401(k)?",
             "Why Is It Important to Check Your 401(k)?",
@@ -455013,7 +455053,7 @@
             "calculator",
             "retirement"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Check Your 401(k) Balance",
           "tool_io": []
         },
@@ -458147,11 +458187,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/is-10-million-enough-for-you-to-retire-at-50": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:2a3124ee2fb1dda762f0b753d5e63cacdc6b3d6a9dd513833ea59b0dc56f2602",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T14:07:28+00:00",
+          "our_url": "/guides/is-10-million-enough-for-you-to-retire-at-50/",
           "outline": [
             "Is $10 Million Enough to Retire at 50?",
             "Other Factors Affecting Retirement at 50 With $10 Million",
@@ -458173,7 +458217,7 @@
             "savings",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Is $10 Million Enough for You to Retire at 50?",
           "tool_io": []
         },
@@ -463857,11 +463901,15 @@
           "tool_io": []
         },
         "https://smartasset.com/retirement/roth-403b-vs-roth-ira": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:8f9ad80ec595afb321a5f848a05ba695be6628f73c8599b98daf0031504addc5",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "comparison",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T12:52:39+00:00",
+          "our_url": "/compare/roth-403b-vs-roth-ira/",
           "outline": [
             "What Is a Roth IRA?",
             "What Is a Roth 403(b)?",
@@ -463878,7 +463926,7 @@
             "retirement",
             "roth"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Roth 403b vs. Roth IRA: Key Differences",
           "tool_io": []
         },
@@ -464970,11 +465018,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/retirement/simple-ira-vs-sep-ira": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:72e8d4f71a63b205adb65b5c4851dca39fe859e247b38fdb31b8f625b5dd3b2c",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "comparison",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T13:05:49+00:00",
+          "our_url": "/compare/simple-ira-vs-sep-ira/",
           "outline": [
             "What Is a SIMPLE IRA?",
             "How a SIMPLE IRA Works",
@@ -464998,7 +465050,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Simple IRA vs. SEP-IRA: What&#x27;s the Difference?",
           "tool_io": []
         },
@@ -476970,11 +477022,15 @@
           "status": "baseline"
         },
         "https://smartasset.com/taxes/rental-property-tax-deductions": {
+          "acted": true,
+          "acted_date": "2026-09-23",
           "content_hash": "sha256:c54716505148bc56cb33e9943fc83fbc4eb4f308dd3e34d78e4a9ff6e88f8a7d",
+          "disposition": "published",
           "first_seen": "2026-09-23",
           "kind": "page",
           "last_seen": "2026-09-23",
           "lastmod": "2026-07-16T18:15:38+00:00",
+          "our_url": "/guides/rental-property-tax-deductions/",
           "outline": [
             "Top Rental Property Tax Deductions",
             "1. Mortgage Interest",
@@ -477010,7 +477066,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "10 Rental Property Tax Deductions for Landlords",
           "tool_io": []
         },
