@@ -1,0 +1,36 @@
+{
+ "slug": "best-high-yield-savings-accounts--big-banks-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 102,
+ "floor": 0,
+ "input_tokens": 17424,
+ "output_tokens": 123,
+ "thinking_tokens": 2290,
+ "cached_tokens": 17050,
+ "est_cost_usd": 0.0125,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 102,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17420
+  }
+ },
+ "seconds": 10.4,
+ "response_id": "f5KzasOvOazVjMcPp-CdiAc",
+ "generated_at": "2026-09-23T08:49:14+0000"
+}

@@ -6,6 +6,7 @@ import type { SpokeEntry } from "./types";
 
 export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
   {
+    updated: "2026-09-23",
     calculator: "real-estate",
     slug: "cash-flow-calculator",
     title: "Rental Property Cash Flow Calculator",
@@ -36,6 +37,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
       { question: "Does cash flow include the mortgage payment?", answer: "Yes. Cash flow subtracts your full debt service, including principal and interest. This is the key difference from net operating income, which ignores the loan. NOI in our example is $17,704, but cash flow is $3,694 a year after the mortgage." },
       { question: "What DSCR do lenders want for a rental property?", answer: "Lenders typically want a debt service coverage ratio of at least 1.2, meaning NOI covers the loan payment with room to spare. Our example deal has a DSCR of 1.26, which clears that bar. A higher DSCR signals a safer loan. See the [cap rate calculator](/real-estate/cap-rate-calculator/) and [cash-on-cash return calculator](/real-estate/cash-on-cash-return-calculator/) for the other metrics." },
       { question: "Is there a dedicated DSCR calculator, or does this tool cover it?", answer: "This calculator covers it: DSCR is one of the four figures returned above, alongside cash flow, cap rate, and cash-on-cash return. The formula is DSCR = net operating income ÷ annual debt service (your yearly loan payment). For our $17,704 NOI example against a $14,010 annual debt service, that's 1.26. Commercial and larger multifamily lenders lean on this same ratio during underwriting, often requiring 1.20 to 1.25 or higher depending on the property type." },
+      { question: "Does this work for a commercial or multifamily property, and how does it compare to BiggerPockets' 50% rule?", answer: "Yes, the same purchase price, financing, rent, and expense inputs apply to commercial or multifamily properties, though commercial lenders enforce the higher debt service coverage ratio (DSCR) thresholds noted above. The 50% rule serves as a quick screening shortcut where investors assume operating expenses excluding debt service consume roughly half of gross rent to eyeball a deal fast. Itemizing your actual taxes, insurance, maintenance, and property management costs provides the precise numbers needed before you commit capital. Our worked example produced $8,516 in operating expenses on $27,600 in gross rent, or roughly 31%, so relying on the shortcut would have understated the property's true cash flow." },
     ],
     sources: [
       { label: "IRS Topic No. 414, Rental Income and Expenses", url: "https://www.irs.gov/taxtopics/tc414" },

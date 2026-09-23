@@ -1,0 +1,84 @@
+{
+  "slug": "hysa-vs-roth-ira-vs-brokerage-account",
+  "title": "High Yield Savings Account vs Roth IRA vs Brokerage",
+  "metaDescription": "Deciding between a high yield savings account vs Roth IRA vs taxable brokerage? Compare 2026 contribution limits, tax treatment, and liquidity rules.",
+  "h1": "High-Yield Savings Account vs. Roth IRA vs. Brokerage Account",
+  "cardBlurb": "Compare liquidity, 2026 contribution limits, and tax rules to decide whether your extra cash belongs in a high-yield savings account, Roth IRA, or brokerage.",
+  "introText": "Where your extra cash belongs depends entirely on your spending timeline and the tax treatment you need for the money. Money you plan to spend within two or three years belongs in a high-yield savings account (HYSA). Money reserved for retirement decades away belongs in a Roth Individual Retirement Account (Roth IRA) up to annual federal limits, provided your income qualifies. Long-term funds you want to invest without annual contribution caps, or money you may need before age 59½ that exceeds your Roth contributions, belongs in a taxable brokerage account.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and outlining the tradeoffs behind each planning assumption. Choosing between a high yield savings account vs Roth IRA vs a taxable account is rarely an all-or-nothing contest. Each account uses completely different rules for tax advantages, withdrawal penalties, and deposit safety.\n\nIf you want to project how cash compounds under steady deposits, test your numbers on our [high-yield savings calculator](/investing/high-yield-savings-calculator/) or explore our broader [investing](/investing/) resources. If you are researching accounts specifically for a minor child rather than your own balances, read our separate guide on a [custodial Roth IRA vs HYSA](/compare/custodial-roth-ira-vs-hysa/) instead.",
+  "sections": [
+    {
+      "heading": "Account Selection by Timeline and Tax Treatment",
+      "body": "Your timeline determines which account handles your cash best because liquidity rules vary drastically across these three accounts. A high-yield savings account provides total liquidity without penalties, age minimums, or holding periods. You can withdraw your original principal and all accumulated interest at any time, which makes an HYSA the natural home for an emergency fund, an upcoming home down payment, or planned tuition expenses. The Federal Deposit Insurance Corporation (FDIC) insures that principal up to $250,000 per depositor, per bank, per ownership category.\n\nA Roth IRA trades near-term liquidity on growth for tax-free compounding over decades. While you can pull out your direct contributions at any time without tax or penalty, the investment earnings must remain untouched until retirement age to avoid penalties. A regular brokerage account offers middle-ground liquidity: you can sell investments and withdraw cash whenever you want, but you trigger capital gains taxes on every profitable trade."
+    },
+    {
+      "heading": "Direct Comparison of a High Yield Savings Account vs Roth IRA",
+      "body": "When comparing a high yield savings account vs Roth IRA, the fundamental tension sits between tax-sheltered growth and guaranteed principal preservation. The table below outlines how these two account types contrast on key operational rules for 2026.\n\n| Feature | High-Yield Savings Account (HYSA) | Roth IRA |\n|---|---|---|\n| 2026 Annual Contribution Limit | No limit | $7,500 ($8,600 if age 50 or older) |\n| Income Eligibility Caps | None | Phases out at $153,000 to $168,000 (single) or $242,000 to $252,000 (joint) |\n| Withdrawal Rules | 100% accessible anytime with zero penalty | Contributions out anytime penalty-free; earnings restricted until age 59½ and 5 years |\n| Tax Treatment of Growth | Interest taxed annually as ordinary income | Investment growth is 100% tax-free in retirement |\n| Principal Protection | Insured up to $250,000 by the FDIC | Market risk; account value fluctuates with investments |\n\nChoose an HYSA when your primary priority is preventing balance losses on funds you will spend in the short term. Choose a Roth IRA when you have earned income, fall within the federal earnings limits, and want to compound wealth across decades without paying taxes on qualified distributions."
+    },
+    {
+      "heading": "Brokerage Accounts and Unlimited Investment Capacity",
+      "body": "A plain taxable brokerage account provides access to equity markets without the restrictive boundaries of tax-advantaged retirement plans. Unlike a Roth IRA, a brokerage account has no annual deposit limits, allowing you to invest any dollar amount you choose. There are also zero income eligibility restrictions, meaning high earners who are completely phased out of Roth IRA contributions can invest freely through a brokerage account.\n\nThe cost of that unlimited capacity is annual tax drag. When you sell securities held for more than one year, profits are taxed at long-term capital gains rates under [IRS Topic 409](https://www.irs.gov/taxtopics/tc409), which run at 0%, 15%, or 20% depending on your taxable income bracket for 2026. If you sell an asset held for one year or less, your profit is classified as a short-term capital gain and taxed at your regular ordinary income rate. Furthermore, holding equities or fixed income inside a brokerage account exposes your balance to market risk, meaning your invested principal can lose value during market declines."
+    },
+    {
+      "heading": "Savers Who Should Pause Before Using These Accounts",
+      "body": "None of these three accounts is the proper starting destination for an individual who is currently carrying toxic, high-interest consumer debt. If you carry credit card debt charging 20% to 30% interest, depositing surplus funds into an HYSA earning cash interest or investing in a volatile brokerage account guarantees a net loss against that debt. Before directing discretionary cash into an investment calculator or a retirement plan, route that cash directly toward eliminating high-interest balances.\n\nSimilarly, opening a Roth IRA or a brokerage account is premature for someone who does not already possess a foundational baseline of stable emergency savings. Investing your only available cash exposes you to sudden liquidation losses if market downturns coincide with an unexpected job layoff or medical emergency. In that scenario, keep every spare dollar inside an HYSA until your basic household baseline is covered."
+    },
+    {
+      "heading": "Conditions That Shift the Ideal Account Choice",
+      "body": "Shifts in your modified adjusted gross income (MAGI) can immediately alter which accounts you are legally permitted to use. Under 2026 rules established by [the IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), single tax filers begin losing Roth IRA eligibility once MAGI surpasses $153,000, losing contribution access entirely at $168,000. For married couples filing jointly, the phase-out range spans from $242,000 to $252,000. If an unexpected year-end promotion or bonus pushes your MAGI above those phase-out thresholds, regular Roth IRA contributions are prohibited, shifting your direct investment options toward a taxable brokerage account.\n\nA compressed life timeline can also reverse your account choice. If a planned home purchase or car replacement shifts from seven years away to eighteen months away, money intended for that milestone should move out of a volatile brokerage account and into an account backed by [the FDIC](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance). Shorter horizons eliminate the recovery runway required to ride out equity drawdowns, making guaranteed principal protection the dominant priority."
+    },
+    {
+      "heading": "Savings Allocation and Multi-Account Sequencing",
+      "body": "What we see readers get wrong most often is treating high yield savings account vs investing decisions as a rigid either/or contest. The most resilient financial structures rarely choose one vehicle to the total exclusion of the others. Instead, they assign incoming cash across multiple account types based on specific operational jobs.\n\nTo build an effective savings sequence, first fill an HYSA until you hold three to six months of living expenses protected from market drawdowns. Once that baseline is secured, redirect extra monthly cash toward an IRA to capture the 2026 annual contribution limit of $7,500, or $8,600 if you are 50 or older. After exhausting that tax-advantaged cap, sweep any remaining surplus into a taxable brokerage account to maintain long-term capital growth potential without restrictions."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/high-yield-savings-calculator/",
+      "label": "High-yield savings calculator"
+    },
+    {
+      "href": "/investing/",
+      "label": "Investment calculator hub"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I put my money in a HYSA or a Roth IRA?",
+      "answer": "Place your money in an HYSA if you expect to spend it within the next three years or need an emergency reserve. Place it in a Roth IRA if the cash is designated for retirement decades away, because investment earnings grow entirely tax-free."
+    },
+    {
+      "question": "Is a high-yield savings account better than investing in a brokerage account?",
+      "answer": "An HYSA is better for short-term preservation because your balance cannot drop during market corrections and carries FDIC insurance up to federal thresholds. A brokerage account is better for multi-year horizons where you want equity growth potential that can outpace inflation over time."
+    },
+    {
+      "question": "Can I lose money in a HYSA the way I can in a brokerage account?",
+      "answer": "No, your principal balance in an HYSA cannot decline due to stock market volatility. Deposits at an FDIC-insured institution are protected up to $250,000 per depositor, per bank, for each account ownership category."
+    },
+    {
+      "question": "What's the Roth IRA contribution limit for 2026?",
+      "answer": "For 2026, the annual Roth IRA contribution limit is $7,500 for savers under age 50. Savers age 50 and older can contribute an additional $1,100 catch-up amount, bringing their total maximum contribution to $8,600."
+    },
+    {
+      "question": "Can I withdraw my Roth IRA contributions without penalty?",
+      "answer": "Yes, you can withdraw your original Roth IRA contributions at any time and for any reason with zero taxes and zero penalties under [Roth IRA withdrawal rules](https://www.irs.gov/retirement-plans/roth-iras). However, withdrawing investment earnings before age 59½ and before the account has been open for 5 years generally incurs ordinary income tax and a 10% early withdrawal penalty."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Newsroom: 2026 IRA and Retirement Plan Limits",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "label": "IRS: Roth IRAs",
+      "url": "https://www.irs.gov/retirement-plans/roth-iras"
+    },
+    {
+      "label": "IRS Topic 409: Capital Gains and Losses",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    },
+    {
+      "label": "FDIC: Understanding Deposit Insurance",
+      "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance"
+    }
+  ]
+}

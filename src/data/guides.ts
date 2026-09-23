@@ -1826,7 +1826,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Option 4: Take a non-qualified withdrawal",
-        body: "If you just want the cash, you can take a non-qualified withdrawal — but only the earnings get taxed and penalized. Your original after-tax contributions always come out tax-free and penalty-free.\n\nOn the earnings portion, you owe ordinary income tax plus a 10% federal penalty. Each withdrawal is split pro-rata between contributions and growth, so you cannot pull out only your principal.\n\nExample: if an account is 60% contributions and 40% earnings, a $10,000 withdrawal treats $4,000 as taxable, penalized earnings. If most of the balance is still your own contributions, the real cost is small."
+        body: "If you just want the cash, you can take a non-qualified withdrawal — but only the earnings get taxed and penalized. Your original after-tax contributions always come out tax-free and penalty-free.\n\nOn the earnings portion, you owe ordinary income tax plus a 10% federal penalty. Each withdrawal is split pro-rata between contributions and growth, so you cannot pull out only your principal.\n\nExample: if an account is 60% contributions and 40% earnings, a $10,000 withdrawal treats $4,000 as taxable, penalized earnings. If most of the balance is still your own contributions, the real cost is small. Some states also require you to repay ('recapture') any state tax deduction you claimed on contributions if the withdrawal is non-qualified — see our [529 plan tax deduction by state](/guides/529-plan-tax-deduction-by-state/) guide for which states apply this rule."
       },
       {
         heading: "Option 5: The scholarship exception",
@@ -1886,7 +1886,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "K-12 tuition: up to $20,000 per year in 2026",
-        body: "A 529 can pay for private or religious K-12 school tuition, up to $20,000 per beneficiary per year as of 2026. This is a big jump from the old $10,000 cap. The limit is per student, not per account, so it applies across all 529 plans for that child.\n\nOne catch: at the K-12 level, only tuition clearly qualifies for federal purposes. Room & board, books, and supplies for K-12 are treated differently than at the college level. Some states also do not follow the federal rule and may tax or penalize K-12 withdrawals at the state level.\n\nCheck your own state's treatment before pulling money for private school. A withdrawal that is federally fine can still trigger a state tax bill or clawback of a past state deduction."
+        body: "A 529 can pay for private or religious K-12 school tuition, up to $20,000 per beneficiary per year as of 2026. This is a big jump from the old $10,000 cap. The limit is per student, not per account, so it applies across all 529 plans for that child.\n\nOne catch: at the K-12 level, only tuition clearly qualifies for federal purposes. Room & board, books, and supplies for K-12 are treated differently than at the college level. Some states also do not follow the federal rule and may tax or penalize K-12 withdrawals at the state level.\n\nCheck your own state's treatment before pulling money for private school. A withdrawal that is federally fine can still trigger a state tax bill or clawback of a past state deduction — see our [529 plan tax deduction by state](/guides/529-plan-tax-deduction-by-state/) guide for which states enforce this."
       },
       {
         heading: "Room & board — and the off-campus rent trap",
@@ -3398,7 +3398,7 @@ export const GUIDES: Guide[] = [
   sections: [
     { heading: "Paying off debt is a guaranteed return", body: "Paying off debt gives you a guaranteed, risk-free return equal to the loan's interest rate. Wipe out a card charging 21%, and you effectively earn 21% -- with zero risk. No investment can promise that.\n\nThe U.S. stock market has historically returned roughly 10% a year before inflation. But that long-run average hides big swings, and some years it drops 20% or more. Your future return is uncertain; the debt payoff is not.\n\nSo the real question is simple. Does your debt cost more than you can reliably earn? If yes, paying off the debt wins. Credit cards recently averaged about 21% APR, far above any safe return (Federal Reserve, May 2026)." },
     { heading: "Step 1: Grab your employer 401(k) match first", body: "Always contribute enough to capture your full employer 401(k) match before anything else. A match is free money and an instant return no debt payoff can beat.\n\nMany plans add 50 cents for every dollar you contribute (IRS). That is an immediate 50% return. A dollar-for-dollar match doubles your money on the spot -- a 100% return. Even with credit card debt, grab the match first, then attack the debt.\n\nOne catch: matching money may vest over a few years, so check your plan rules. After you secure the match, you can [compare a 401(k) vs a Roth IRA](/compare/401k-vs-roth-ira/) for the rest of your savings." },
-    { heading: "Step 2: Build a starter emergency fund", body: "Build a small starter emergency fund before you throw every dollar at debt. Without cash on hand, one surprise bill lands right back on a credit card. That traps you in the cycle you are trying to escape.\n\nA starter fund of about $1,000, or one month of expenses, is enough at this stage. Keep it in a separate savings account you do not touch.\n\nYou can build the full three-to-six-month cushion later, after your high-rate debt is gone. See [how much emergency fund you need](/guides/how-much-emergency-fund/) for your own situation." },
+    { heading: "Step 2: Build a starter emergency fund", body: "Build a small starter emergency fund before you throw every dollar at debt. Without cash on hand, one surprise bill lands right back on a credit card. That traps you in the cycle you are trying to escape.\n\nA starter fund of about $1,000, or one month of expenses, is enough at this stage. Keep it in a separate savings account you do not touch.\n\nYou can build the full three-to-six-month cushion later, after your high-rate debt is gone. See [how much emergency fund you need](/guides/how-much-emergency-fund/) for your own situation. Once you're ready to grow money beyond that cushion, see our [HYSA vs. Roth IRA vs. brokerage account](/guides/hysa-vs-roth-ira-vs-brokerage-account/) guide for where extra cash should go next." },
     { heading: "Step 3: Kill high-interest debt before taxable investing", body: "Pay off high-interest debt before you invest in a regular taxable account. High-interest usually means anything above roughly 7% to 8%. Credit cards, at about 21%, are the clearest example.\n\nNo safe investment reliably beats those rates, so clearing the debt wins. The CFPB suggests targeting your highest-rate balance first to save the most (CFPB).\n\nNot sure which debt to hit first? See [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) to pick a method. To map your timeline, read [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/)." },
     { heading: "Step 4: With low-rate debt, investing often wins", body: "With low-rate debt, investing your extra cash often beats paying the loan down early. A sub-4% mortgage is the classic example. If your loan costs 3.5% and investments may earn more over time, the math favors investing.\n\nThat gap is your likely reward for taking some risk. It is not guaranteed, though, so weigh your comfort with risk.\n\nStudent loans and auto loans fall in a gray zone. Compare each loan's rate to your expected return, and split extra cash if you are unsure. Federal student loans also carry protections you give up by paying them off fast." },
     { heading: "The behavioral factor: guaranteed vs uncertain", body: "The math is only half the decision -- how you feel about debt matters too. A return from debt payoff is certain, while investment gains are not.\n\nSome people sleep better with zero debt, even when investing might earn a bit more. That peace of mind has real value. If debt stresses you out, paying it down faster is a reasonable choice.\n\nThe best plan is the one you will actually stick with. You can also split the difference: invest part of your cash and pay down debt with the rest." },
@@ -7733,7 +7733,7 @@ export const GUIDES: Guide[] = [
     h1: "Investment Appraisal Methods: NPV, IRR, and Payback Period",
     cardBlurb: "Net present value, internal rate of return, and payback period, the three methods used to decide whether an investment is worth the cash it costs.",
     introText:
-      "Net present value (NPV), internal rate of return (IRR), and payback period are the three most common ways to determine whether an investment is worth its cost. NPV converts each future cash flow into today's dollars, then adds them together. IRR identifies the discount rate that would bring that total to exactly zero. Payback period simply measures how many years it takes to recover your original investment, without any discounting.\n\nThis guide uses the same worked numbers for all three methods, making it easier to see where they agree and where they pull apart. If you want to project a lump sum or regular contribution instead of appraising a single project's cash flows, see our [investment calculator](/investing/).",
+      "Net present value (NPV), internal rate of return (IRR), and payback period are the three most common ways to determine whether an investment is worth its cost. NPV converts each future cash flow into today's dollars, then adds them together. IRR identifies the discount rate that would bring that total to exactly zero. Payback period simply measures how many years it takes to recover your original investment, without any discounting.\n\nThis guide uses the same worked numbers for all three methods, making it easier to see where they agree and where they pull apart. If you want to project a lump sum or regular contribution instead of appraising a single project's cash flows, see our [investment calculator](/investing/). For how the cash flow figure itself is built, including the DCF terminal value math that pairs with an NPV calculation, see our [free cash flow calculator and DCF valuation guide](/guides/free-cash-flow-calculator-and-dcf-valuation-explained/).",
     sections: [
       {
         heading: "What NPV Actually Measures",
@@ -11667,6 +11667,263 @@ export const GUIDES: Guide[] = [
         url: "https://www.irs.gov/publications/p527",
       },
     ],
+  },
+
+  // ── autocomplete-pass-auto 2026-09-23: 529 state-tax + FCF/DCF + HYSA-vs-Roth-vs-brokerage ──
+  {
+    "slug": "529-plan-tax-deduction-by-state",
+    "updated": "2026-09-23",
+    "title": "529 Plan Tax Deduction by State: Rules and Limits",
+    "metaDescription": "Learn how the 529 plan tax deduction by state works, which states allow out-of-state plan deductions, and how tax parity changes your options.",
+    "h1": "529 Plan Tax Deduction by State Rules and Contribution Limits",
+    "cardBlurb": "Contributions are never federally deductible, but roughly thirty states offer a state income tax deduction or credit with distinct rules.",
+    "introText": "You do not get a federal tax deduction for putting money into a 529 plan, but roughly thirty states and the District of Columbia offer a state income tax deduction or tax credit when you contribute.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and explaining the tradeoffs behind every planning decision. Whether your contribution earns an immediate tax break depends entirely on the state where you live, where you file your state tax return, and whether that state requires you to use its own in-state plan.\n\nUnderstanding the 529 plan tax deduction by state helps you decide whether to capture an immediate state tax reduction or pick an out-of-state plan with different investment options. When you project long-term savings on [the 529 savings calculator](/529-savings-calculator/), that tool models balance growth and monthly contributions over time, while this guide covers the upfront tax benefits that happen on your state tax return.",
+    "sections": [
+      {
+        "heading": "Federal Tax Status and State Income Tax Rules",
+        "body": "Federal tax law does not provide any deduction for 529 college savings plan contributions under any circumstance. As outlined in [IRS Topic No. 313](https://www.irs.gov/taxtopics/tc313), earnings inside a qualified tuition program grow free of federal income tax, and distributions remain free from federal income tax when used for qualified education expenses. The federal tax advantage sits entirely in the compound growth and distribution phase rather than at the time of your deposit.\n\nState-level tax treatment follows an entirely different system. Roughly thirty states alongside the District of Columbia give residents an upfront state income tax deduction or credit for deposits made within the tax year. In states with no personal income tax, including Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, and Wyoming, no state deduction can exist because there is no state income tax liability to offset.\n\nFor residents in states that do levy an income tax and provide a tax incentive, the majority require you to invest specifically in that state's sponsored 529 plan to claim the deduction. If you live in one of those states and deposit funds into a plan sponsored by another state, you forfeit the upfront state income tax deduction for that contribution."
+      },
+      {
+        "heading": "Tax Parity in Nine Any-State Plan Jurisdictions",
+        "body": "Nine states operate under tax parity rules, which allow residents to deduct contributions made to any state's 529 plan rather than restricting benefits to their home state's option. According to research published by [SavingForCollege.com](https://www.savingforcollege.com/article/how-much-is-your-state-s-529-plan-tax-deduction-really-worth), these nine parity states are Arizona, Arkansas, Kansas, Maine, Minnesota, Missouri, Montana, Ohio, and Pennsylvania.\n\nResidents of these nine states hold complete flexibility over where they open an account. A taxpayer in Missouri or Pennsylvania can choose a direct-sold plan from another state without sacrificing their local state income tax deduction. This allows parents and relatives to shop across state borders for specific index portfolios or lower annual asset-management fees while retaining their home-state tax write-off.\n\nTax parity eliminates the captive-audience dynamic present in most states. If your home state offers a deduction but does not offer tax parity, opening an out-of-state account means leaving an immediate tax discount on the table. In tax-parity states, that conflict does not exist, letting you prioritize plan features and administrative fees directly."
+      },
+      {
+        "heading": "State Tax Credits Compared to State Tax Deductions",
+        "body": "Two states structure their 529 tax incentive as a direct tax credit rather than a traditional tax deduction: Indiana and Vermont. A tax deduction reduces your total taxable income before tax rates apply, meaning its value scales with your marginal state tax bracket. A tax credit reduces your actual calculated tax bill dollar for dollar, which generally delivers more financial value per contributed dollar than an equivalent deduction.\n\nIndiana provides a clear example of this credit structure through its CollegeChoice 529 program. According to the [Indiana Education Savings Authority](https://www.in.gov/tos/iesa/tax-credit/), the state provides a 20% tax credit on contributions up to $1,500 per year for single and joint filers, or $750 for married individuals filing separately, for the 2025 tax year. That 20% rate produces an immediate $300 tax reduction on a $1,500 contribution, and the agency publishes that the maximum available credit increases starting with the 2026 tax year.\n\nBecause a credit acts as a direct offset against taxes owed, its relative return on contribution is fixed and predictable. For taxpayers in lower income brackets who pay modest marginal income tax rates, a 20% credit generates substantially higher immediate cash savings than an ordinary deduction against low-percentage state income tax brackets."
+      },
+      {
+        "heading": "Contribution Caps Across Four Representative States",
+        "body": "State deduction limits vary widely across the country, ranging from modest fixed dollar amounts to unlimited annual allowances. As reported by SavingForCollege.com, New York allows account owners to deduct up to $5,000 per year for single filers or $10,000 for married couples filing jointly on contributions to New York's own 529 plan. Illinois sets its annual deduction limit higher, allowing up to $10,000 for single filers and $20,000 for married couples filing jointly when contributing to an Illinois sponsored plan.\n\nOther states impose no specific annual ceiling on eligible 529 deductions. Colorado and Pennsylvania both permit qualifying state residents to deduct their full annual 529 plan contributions against state taxable income with no stated dollar cap, as most recently reported in industry compilations. Because state legislatures adjust tax codes and statutory caps periodically, you should always confirm the current-year cap on your specific state's official 529 plan site before preparing your annual tax return.\n\nThese statutory deductions apply strictly within the calendar year the deposit settles. If you contribute funds exceeding your state's annual cap, several states prohibit carrying forward the unused excess to future tax years, while others impose strict timing limits. Researching your home jurisdiction's specific carryforward rules prevents leaving eligible deductions unfiled."
+      },
+      {
+        "heading": "Tradeoffs Between Home State Deductions and Out-of-State Options",
+        "body": "Deciding whether your home state's 529 plan matters requires balancing the immediate value of a state tax reduction against long-term operational costs. If you live in an income-tax-free state, your home state provides zero tax deduction, giving you total freedom to choose any low-cost plan nationally. In that scenario, comparing administrative fees and portfolio options across the broader market yields the best outcome.\n\nIf your state offers a deduction that requires using its own plan, you must calculate what that tax break puts in your pocket each year. For a family in a 5% state tax bracket contributing $5,000, the deduction generates an immediate $250 in annual tax savings. For an out-of-state plan to overcome that $250 annual hurdle purely through lower administrative expenses or marginally better investment returns, the account balance would need to grow exceptionally large over many years.\n\nWhen non-qualified withdrawals occur, or when families reallocate funds, tax consequences can reverse. Many states enforce tax recapture rules, requiring account owners to pay back claimed deductions if funds are transferred to an out-of-state plan or withdrawn for non-educational uses. Reviewing [what happens to money you don't use](/guides/529-leftover-money-options/) and checking [what actually counts as a qualified withdrawal](/guides/529-qualified-expenses/) ensures you do not inadvertently trigger state-level penalties."
+      },
+      {
+        "heading": "Evaluating Plan Selection Beyond the Immediate Deduction",
+        "body": "What we see readers get wrong most often is assuming their state's own plan is automatically the best choice just because it is the one that earns the deduction. An upfront state deduction provides an undeniable first-year boost, but ongoing management fees compound against your total accumulated assets for over a decade. In states with low contribution caps or modest state tax rates, a high-fee in-state plan can erode the original tax benefit over a fifteen-year holding period.\n\nWhen a household does not intend to use the funds for qualified higher education, alternative vehicles such as standard taxable brokerage accounts explored in our [investing hub](/investing/) offer unconstrained liquidity without penalty risks. If you do commit to college savings, verifying the exact net tax savings from your state's revenue department clarifies whether staying in-state delivers measurable mathematical advantages.\n\nA sensible plan evaluation begins with checking your state's deduction cap, multiplying that cap by your marginal state tax rate, and comparing that annual savings figure against the ongoing expense ratio differences of alternative plans."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/529-savings-calculator/",
+        "label": "529 savings calculator"
+      },
+      {
+        "href": "/investing/",
+        "label": "Investing guide hub"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I get a tax deduction for contributing to a 529 plan?",
+        "answer": "You do not get a deduction on your federal tax return for contributing to a 529 plan. However, roughly thirty states and the District of Columbia offer a state income tax deduction or tax credit for residents who make qualifying contributions. Residents living in states with no personal income tax do not receive any state deduction."
+      },
+      {
+        "question": "Does it matter which state's 529 plan I use for the tax deduction?",
+        "answer": "Yes, for most taxpayers it matters significantly. Most states that offer a tax deduction or credit require you to contribute to your home state's sponsored 529 plan to claim the benefit. If you contribute to an out-of-state plan in those states, you forfeit your state income tax deduction."
+      },
+      {
+        "question": "Which states let me deduct contributions to any 529 plan, not just my own state's?",
+        "answer": "Nine states offer tax parity, allowing residents to deduct contributions to any state's 529 plan. These nine states are Arizona, Arkansas, Kansas, Maine, Minnesota, Missouri, Montana, Ohio, and Pennsylvania. Residents of these states can choose an out-of-state plan without losing their home-state deduction."
+      },
+      {
+        "question": "Is a 529 tax credit better than a 529 tax deduction?",
+        "answer": "A 529 tax credit is generally more valuable than a deduction because it reduces your tax bill dollar for dollar. A deduction only reduces your taxable income, so its dollar value depends on your marginal tax bracket. Indiana and Vermont offer tax credits rather than standard deductions."
+      },
+      {
+        "question": "Can I still get my state's 529 tax deduction if I already maxed out this year?",
+        "answer": "Once you contribute up to your state's annual statutory cap, additional contributions in that same tax year do not earn further deductions for that period. Some states allow you to carry forward excess contributions to future tax years, while others do not permit carryforwards. Confirm your state's specific carryforward provisions on its official 529 plan site."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Topic No. 313",
+        "url": "https://www.irs.gov/taxtopics/tc313"
+      },
+      {
+        "label": "SavingForCollege.com",
+        "url": "https://www.savingforcollege.com/article/how-much-is-your-state-s-529-plan-tax-deduction-really-worth"
+      },
+      {
+        "label": "Indiana Education Savings Authority",
+        "url": "https://www.in.gov/tos/iesa/tax-credit/"
+      }
+    ]
+  },
+  {
+    "slug": "free-cash-flow-calculator-and-dcf-valuation-explained",
+    "updated": "2026-09-23",
+    "title": "Free Cash Flow Calculator and DCF Valuation Explained",
+    "metaDescription": "Learn how to use a free cash flow calculator, calculate FCFF and FCFE, evaluate yield and margin, and model terminal value in a DCF valuation.",
+    "h1": "Free Cash Flow Calculator Mechanics and DCF Valuation",
+    "cardBlurb": "Free cash flow deducts capital expenditures from operating cash flow. Here is how FCF feeds DCF valuations, how unlevered differs from levered cash flow, and how to read the ratios.",
+    "introText": "Free cash flow (FCF) equals net cash provided by operating activities minus capital expenditures. It measures the surplus cash a company generates after paying the recurring operational expenses and reinvesting the capital required to maintain or expand its physical asset base.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and outlining the tradeoffs behind each planning assumption. When investors evaluate business earnings or open an investment model, accounting net income often obscures the actual movement of cash. Non-cash accounting items like depreciation, along with changes in working capital and large capital outlays, create a substantial gap between reported net income and spendable cash.\n\nUnderstanding free cash flow requires separating operational performance from capital expenditures, capital structure choices, and corporate valuation inputs. By examining the mechanics of a free cash flow calculator, comparing unlevered and levered cash flows, and reviewing the mathematical inputs of discounted cash flow (DCF) terminal value formulas, you can evaluate corporate filings and investment models with precision.",
+    "sections": [
+      {
+        "heading": "The Free Cash Flow Calculation Formula and Operating Cash Flow",
+        "body": "Free cash flow uses a straightforward formula: net cash provided by operating activities minus capital expenditures (CapEx). While net cash provided by operating activities reflects the cash generated by core commercial operations, free cash flow takes the calculation one step further by subtracting the money spent purchasing property, plant, equipment, or software required to keep the business operational. This standard subtraction reflects the basic definition public companies apply when presenting free cash flow as a non-GAAP measure in regulatory filings.\n\nThis calculation produces a fundamentally different figure than the number generated by our [operating cash flow calculator](/operating-cash-flow/). The operating cash flow calculator applies the Financial Accounting Standards Board (FASB) Accounting Standards Codification (ASC) 230 indirect method, beginning with net income, adding back non-cash expenses, and adjusting for changes in working capital assets and liabilities. It stops before deducting capital expenditures. Free cash flow starts where operating cash flow ends, subtracting capital outlays to reveal the cash left over after maintaining asset capacity.\n\nInvestors must treat the resulting figure with care. The [Securities and Exchange Commission (SEC)](https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures) explicitly cautions in its staff guidance on non-GAAP financial measures that free cash flow should not be presented as cash completely available for discretionary spending. A company still faces mandatory, non-discretionary commitments, such as contractual debt principal repayments, lease obligations, and legal liabilities, that standard free cash flow calculations do not deduct."
+      },
+      {
+        "heading": "Unlevered Free Cash Flow and Net Operating Profit After Tax",
+        "body": "Unlevered free cash flow, also known as Free Cash Flow to Firm (FCFF), measures the cash generated by a business before accounting for interest payments, debt service, or other financing arrangements. Because it ignores capital structure, unlevered free cash flow represents the cash available to all capital providers, including both equity shareholders and debt holders. Financial analysts and corporate valuation models use this figure to evaluate the core earnings capacity of an enterprise independent of how heavily the company relies on debt.\n\nCalculating unlevered free cash flow begins with Net Operating Profit After Tax (NOPAT), which equals earnings before interest and taxes (EBIT) multiplied by one minus the corporate tax rate. From NOPAT, analysts add back non-cash depreciation and amortization (D&A), subtract capital expenditures, and subtract any increase in net working capital (NWC). Educational materials from [Wall Street Prep](https://www.wallstreetprep.com/knowledge/unlevered-free-cash-flow/) outline the full structural equation as FCFF = NOPAT + D&A − CapEx − change in net working capital.\n\nConsider a baseline mathematical structure: a hypothetical business produces $100 million in EBIT with a 20% effective tax rate, generating $80 million in NOPAT. If the firm records $15 million in depreciation and amortization, spends $25 million on capital expenditures, and absorbs an $8 million increase in net working capital, its unlevered free cash flow equals $62 million ($80 million + $15 million − $25 million − $8 million). This $62 million represents the total operational cash generated for both lenders and equity owners."
+      },
+      {
+        "heading": "Levered Free Cash Flow and Cost of Capital Alignment",
+        "body": "Levered free cash flow, commonly called Free Cash Flow to Equity (FCFE), represents the residual cash surplus available solely to equity shareholders after the business pays its debt obligations. Unlike unlevered cash flow, levered free cash flow accounts for borrowing costs, interest expenses, and net changes in debt principal balances. It measures what remains for common shareholders to receive as dividends, fund share repurchases, or retain for corporate reserves.\n\nTo derive levered free cash flow from unlevered free cash flow, analysts subtract after-tax interest expenses and add net new borrowing (or subtract net debt repayments). The formula structure runs as FCFE = FCFF − after-tax interest expense + net new debt issued − debt principal repaid. If the hypothetical business above with $62 million in FCFF pays $10 million in after-tax interest and repays $5 million in net principal, its levered free cash flow equals $47 million ($62 million − $10 million − $5 million).\n\nThe cash flow definition must match the discount rate used to value it. When valuing unlevered free cash flow, analysts discount future cash flows using the weighted average cost of capital (WACC), which blends the required return on equity with the after-tax cost of debt. When valuing levered free cash flow, analysts must use the cost of equity alone. Applying the weighted average cost of capital to levered cash flows double-counts the tax shield of debt and produces a distorted valuation figure."
+      },
+      {
+        "heading": "Free Cash Flow Yield and Free Cash Flow Margin Ratios",
+        "body": "Free cash flow ratios allow investors to assess corporate profitability and market valuation without relying on accounting accruals. Two primary ratios serve this function: free cash flow yield and free cash flow margin. Each ratio uses the dollar amount of free cash flow in its numerator, but they divide that cash by different corporate metrics to answer distinct analytical questions.\n\n[Free cash flow yield](https://www.wallstreetprep.com/knowledge/free-cash-flow-yield/) measures the cash flow return an investor receives relative to the market value of the stock. It equals free cash flow per share divided by the current market price per share, expressed as a percentage. Free cash flow yield acts as the cash-based equivalent of the traditional accounting earnings yield (earnings per share divided by stock price). If a stock trades at $50 per share and the business generates $3.50 in free cash flow per share, the free cash flow yield is 7.0% ($3.50 ÷ $50). A higher yield indicates that the company produces more surplus cash relative to its public equity valuation.\n\nFree cash flow margin evaluates operational efficiency by dividing total free cash flow by total revenue, expressed as a percentage. This metric shows what share of every revenue dollar the business converts into surplus cash after covering operating costs and capital investments. Free cash flow margin complements the free cash flow conversion rate, which measures how efficiently a company converts accounting operating profit, such as earnings before interest, taxes, depreciation, and amortization (EBITDA), into free cash."
+      },
+      {
+        "heading": "Discounted Free Cash Flow Models and Terminal Value Dynamics",
+        "body": "In a discounted cash flow (DCF) valuation model, an analyst forecasts a company's free cash flows across an explicit projection window, commonly five to ten years. Because a corporation is assumed to continue operating indefinitely beyond that initial forecast, the valuation model calculates a terminal value to capture all future cash flows stretching into perpetuity. The discounted sum of the explicit projection period plus the discounted terminal value equals the total estimated enterprise value of the business.\n\nFinancial analysts estimate terminal value using the Gordon Growth formula: Terminal Value = (final year projected FCF × (1 + perpetuity growth rate)) ÷ (discount rate − perpetuity growth rate). If a company generates $100 million in free cash flow in the final projection year, the assumed perpetuity growth rate is 2.5%, and the discount rate is 8.5%, the terminal value formula computes ($100 million × 1.025) ÷ (0.085 − 0.025). This resolves to $102.5 million ÷ 0.06, producing a terminal value of approximately $1.708 billion before discounting back to present value.\n\nThe terminal value commonly represents the majority, roughly 60% to 75%, of the total estimated value in a DCF model. Because the denominator depends on the spread between the discount rate and the perpetuity growth rate, small adjustments to either assumption cause large swings in the final valuation. Increasing the perpetuity growth rate from 2.5% to 3.0% in the example above narrows the spread from 6.0% to 5.5%, lifting the undiscounted terminal value to $1.873 billion. Analysts benchmarking perpetual growth assumptions against long-term broad market benchmarks, such as those modeled in our [S&P 500 calculator](/investing/sp500-calculator/), keep perpetual growth rates at or below the long-term growth rate of the broader economy."
+      },
+      {
+        "heading": "Operational Cash Flow Separation Across Financial Planning",
+        "body": "In the guides we publish here, we keep operating cash flow, free cash flow, and the cash conversion cycle as three separate tools rather than one blended number, because each answers a different question about where a business's cash actually goes. Combining these metrics into a single headline number obscures where capital bottlenecks occur. A company can show expanding operating cash flow while bleeding free cash flow if management must commit increasing capital expenditures to maintain obsolete equipment.\n\nSimilarly, tracking the days required to turn operational investments into liquid cash requires distinct timing metrics. Our [cash conversion cycle calculator](/cash-conversion-cycle/) measures how many days inventory and receivables remain tied up before collection, tracking working capital efficiency rather than a specific dollar amount of cash generated. Evaluating the cash conversion cycle alongside operating cash flow reveals whether working capital changes represent temporary operational frictions or systemic liquidity pressures.\n\nFor investors exploring long-term asset allocation within our general [investing](/investing/) resources, understanding the distinction between accounting earnings and free cash flow prevents common valuation errors. When a business consistently generates free cash flow in excess of its reported net income, it demonstrates strong cash conversion quality. Conversely, when reported accounting profits are not matched by positive free cash flow, the underlying business may face aggressive revenue recognition, growing working capital demands, or heavy ongoing capital requirements."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/operating-cash-flow/",
+        "label": "Operating cash flow calculator"
+      },
+      {
+        "href": "/cash-conversion-cycle/",
+        "label": "Cash conversion cycle calculator"
+      },
+      {
+        "href": "/investing/sp500-calculator/",
+        "label": "S&P 500 calculator"
+      },
+      {
+        "href": "/investing/",
+        "label": "Investment calculator hub"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the formula for free cash flow?",
+        "answer": "The standard formula for free cash flow is net cash provided by operating activities minus capital expenditures. Operating cash flow accounts for core commercial receipts, inventory purchases, and payroll, while capital expenditures subtracts cash spent acquiring and maintaining physical equipment, facilities, and software assets."
+      },
+      {
+        "question": "What is the difference between free cash flow and operating cash flow?",
+        "answer": "Operating cash flow measures the net cash generated by core operations without accounting for investments in long-term assets. Free cash flow takes operating cash flow and subtracts capital expenditures, isolating the surplus cash left over after maintaining or expanding the company's productive asset base."
+      },
+      {
+        "question": "What is the difference between levered and unlevered free cash flow?",
+        "answer": "Unlevered free cash flow represents cash available to all capital providers before debt interest and principal obligations are paid, which analysts discount using the weighted average cost of capital. Levered free cash flow deducts debt interest and net borrowing changes, measuring the remaining cash available exclusively to equity shareholders."
+      },
+      {
+        "question": "What is free cash flow yield?",
+        "answer": "Free cash flow yield equals free cash flow per share divided by market price per share, expressed as a percentage. It measures the cash flow return an investor receives relative to the stock price, functioning as the cash-based alternative to the traditional accounting earnings yield."
+      },
+      {
+        "question": "How does free cash flow feed into a DCF valuation's terminal value?",
+        "answer": "In a discounted cash flow valuation, free cash flow is projected over an initial multi-year window, after which the Gordon Growth formula calculates terminal value for all cash flows into perpetuity. Terminal value equals the final projected cash flow multiplied by one plus the perpetuity growth rate, divided by the spread between the discount rate and the perpetuity growth rate."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Securities and Exchange Commission",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures"
+      },
+      {
+        "label": "Wall Street Prep, Unlevered Free Cash Flow",
+        "url": "https://www.wallstreetprep.com/knowledge/unlevered-free-cash-flow/"
+      },
+      {
+        "label": "Wall Street Prep, Free Cash Flow Yield",
+        "url": "https://www.wallstreetprep.com/knowledge/free-cash-flow-yield/"
+      }
+    ]
+  },
+  {
+    "slug": "hysa-vs-roth-ira-vs-brokerage-account",
+    "updated": "2026-09-23",
+    "title": "High Yield Savings Account vs Roth IRA vs Brokerage",
+    "metaDescription": "Deciding between a high yield savings account vs Roth IRA vs taxable brokerage? Compare 2026 contribution limits, tax treatment, and liquidity rules.",
+    "h1": "High-Yield Savings Account vs. Roth IRA vs. Brokerage Account",
+    "cardBlurb": "Compare liquidity, 2026 contribution limits, and tax rules to decide whether your extra cash belongs in a high-yield savings account, Roth IRA, or brokerage.",
+    "introText": "Where your extra cash belongs depends entirely on your spending timeline and the tax treatment you need for the money. Money you plan to spend within two or three years belongs in a high-yield savings account (HYSA). Money reserved for retirement decades away belongs in a Roth Individual Retirement Account (Roth IRA) up to annual federal limits, provided your income qualifies. Long-term funds you want to invest without annual contribution caps, or money you may need before age 59½ that exceeds your Roth contributions, belongs in a taxable brokerage account.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and outlining the tradeoffs behind each planning assumption. Choosing between a high yield savings account vs Roth IRA vs a taxable account is rarely an all-or-nothing contest. Each account uses completely different rules for tax advantages, withdrawal penalties, and deposit safety.\n\nIf you want to project how cash compounds under steady deposits, test your numbers on our [high-yield savings calculator](/investing/high-yield-savings-calculator/) or explore our broader [investing](/investing/) resources. If you are researching accounts specifically for a minor child rather than your own balances, read our separate guide on a [custodial Roth IRA vs HYSA](/compare/custodial-roth-ira-vs-hysa/) instead.",
+    "sections": [
+      {
+        "heading": "Account Selection by Timeline and Tax Treatment",
+        "body": "Your timeline determines which account handles your cash best because liquidity rules vary drastically across these three accounts. A high-yield savings account provides total liquidity without penalties, age minimums, or holding periods. You can withdraw your original principal and all accumulated interest at any time, which makes an HYSA the natural home for an emergency fund, an upcoming home down payment, or planned tuition expenses. The Federal Deposit Insurance Corporation (FDIC) insures that principal up to $250,000 per depositor, per bank, per ownership category.\n\nA Roth IRA trades near-term liquidity on growth for tax-free compounding over decades. While you can pull out your direct contributions at any time without tax or penalty, the investment earnings must remain untouched until retirement age to avoid penalties. A regular brokerage account offers middle-ground liquidity: you can sell investments and withdraw cash whenever you want, but you trigger capital gains taxes on every profitable trade."
+      },
+      {
+        "heading": "Direct Comparison of a High Yield Savings Account vs Roth IRA",
+        "body": "When comparing a high yield savings account vs Roth IRA, the fundamental tension sits between tax-sheltered growth and guaranteed principal preservation. The table below outlines how these two account types contrast on key operational rules for 2026.\n\n| Feature | High-Yield Savings Account (HYSA) | Roth IRA |\n|---|---|---|\n| 2026 Annual Contribution Limit | No limit | $7,500 ($8,600 if age 50 or older) |\n| Income Eligibility Caps | None | Phases out at $153,000 to $168,000 (single) or $242,000 to $252,000 (joint) |\n| Withdrawal Rules | 100% accessible anytime with zero penalty | Contributions out anytime penalty-free; earnings restricted until age 59½ and 5 years |\n| Tax Treatment of Growth | Interest taxed annually as ordinary income | Investment growth is 100% tax-free in retirement |\n| Principal Protection | Insured up to $250,000 by the FDIC | Market risk; account value fluctuates with investments |\n\nChoose an HYSA when your primary priority is preventing balance losses on funds you will spend in the short term. Choose a Roth IRA when you have earned income, fall within the federal earnings limits, and want to compound wealth across decades without paying taxes on qualified distributions."
+      },
+      {
+        "heading": "Brokerage Accounts and Unlimited Investment Capacity",
+        "body": "A plain taxable brokerage account provides access to equity markets without the restrictive boundaries of tax-advantaged retirement plans. Unlike a Roth IRA, a brokerage account has no annual deposit limits, allowing you to invest any dollar amount you choose. There are also zero income eligibility restrictions, meaning high earners who are completely phased out of Roth IRA contributions can invest freely through a brokerage account.\n\nThe cost of that unlimited capacity is annual tax drag. When you sell securities held for more than one year, profits are taxed at long-term capital gains rates under [IRS Topic 409](https://www.irs.gov/taxtopics/tc409), which run at 0%, 15%, or 20% depending on your taxable income bracket for 2026. If you sell an asset held for one year or less, your profit is classified as a short-term capital gain and taxed at your regular ordinary income rate. Furthermore, holding equities or fixed income inside a brokerage account exposes your balance to market risk, meaning your invested principal can lose value during market declines."
+      },
+      {
+        "heading": "Savers Who Should Pause Before Using These Accounts",
+        "body": "None of these three accounts is the proper starting destination for an individual who is currently carrying toxic, high-interest consumer debt. If you carry credit card debt charging 20% to 30% interest, depositing surplus funds into an HYSA earning cash interest or investing in a volatile brokerage account guarantees a net loss against that debt. Before directing discretionary cash into an investment calculator or a retirement plan, route that cash directly toward eliminating high-interest balances.\n\nSimilarly, opening a Roth IRA or a brokerage account is premature for someone who does not already possess a foundational baseline of stable emergency savings. Investing your only available cash exposes you to sudden liquidation losses if market downturns coincide with an unexpected job layoff or medical emergency. In that scenario, keep every spare dollar inside an HYSA until your basic household baseline is covered."
+      },
+      {
+        "heading": "Conditions That Shift the Ideal Account Choice",
+        "body": "Shifts in your modified adjusted gross income (MAGI) can immediately alter which accounts you are legally permitted to use. Under 2026 rules established by [the IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), single tax filers begin losing Roth IRA eligibility once MAGI surpasses $153,000, losing contribution access entirely at $168,000. For married couples filing jointly, the phase-out range spans from $242,000 to $252,000. If an unexpected year-end promotion or bonus pushes your MAGI above those phase-out thresholds, regular Roth IRA contributions are prohibited, shifting your direct investment options toward a taxable brokerage account.\n\nA compressed life timeline can also reverse your account choice. If a planned home purchase or car replacement shifts from seven years away to eighteen months away, money intended for that milestone should move out of a volatile brokerage account and into an account backed by [the FDIC](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance). Shorter horizons eliminate the recovery runway required to ride out equity drawdowns, making guaranteed principal protection the dominant priority."
+      },
+      {
+        "heading": "Savings Allocation and Multi-Account Sequencing",
+        "body": "What we see readers get wrong most often is treating high yield savings account vs investing decisions as a rigid either/or contest. The most resilient financial structures rarely choose one vehicle to the total exclusion of the others. Instead, they assign incoming cash across multiple account types based on specific operational jobs.\n\nTo build an effective savings sequence, first fill an HYSA until you hold three to six months of living expenses protected from market drawdowns. Once that baseline is secured, redirect extra monthly cash toward an IRA to capture the 2026 annual contribution limit of $7,500, or $8,600 if you are 50 or older. After exhausting that tax-advantaged cap, sweep any remaining surplus into a taxable brokerage account to maintain long-term capital growth potential without restrictions."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-yield savings calculator"
+      },
+      {
+        "href": "/investing/",
+        "label": "Investment calculator hub"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I put my money in a HYSA or a Roth IRA?",
+        "answer": "Place your money in an HYSA if you expect to spend it within the next three years or need an emergency reserve. Place it in a Roth IRA if the cash is designated for retirement decades away, because investment earnings grow entirely tax-free."
+      },
+      {
+        "question": "Is a high-yield savings account better than investing in a brokerage account?",
+        "answer": "An HYSA is better for short-term preservation because your balance cannot drop during market corrections and carries FDIC insurance up to federal thresholds. A brokerage account is better for multi-year horizons where you want equity growth potential that can outpace inflation over time."
+      },
+      {
+        "question": "Can I lose money in a HYSA the way I can in a brokerage account?",
+        "answer": "No, your principal balance in an HYSA cannot decline due to stock market volatility. Deposits at an FDIC-insured institution are protected up to $250,000 per depositor, per bank, for each account ownership category."
+      },
+      {
+        "question": "What's the Roth IRA contribution limit for 2026?",
+        "answer": "For 2026, the annual Roth IRA contribution limit is $7,500 for savers under age 50. Savers age 50 and older can contribute an additional $1,100 catch-up amount, bringing their total maximum contribution to $8,600."
+      },
+      {
+        "question": "Can I withdraw my Roth IRA contributions without penalty?",
+        "answer": "Yes, you can withdraw your original Roth IRA contributions at any time and for any reason with zero taxes and zero penalties under [Roth IRA withdrawal rules](https://www.irs.gov/retirement-plans/roth-iras). However, withdrawing investment earnings before age 59½ and before the account has been open for 5 years generally incurs ordinary income tax and a 10% early withdrawal penalty."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Newsroom: 2026 IRA and Retirement Plan Limits",
+        "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+      },
+      {
+        "label": "IRS: Roth IRAs",
+        "url": "https://www.irs.gov/retirement-plans/roth-iras"
+      },
+      {
+        "label": "IRS Topic 409: Capital Gains and Losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      },
+      {
+        "label": "FDIC: Understanding Deposit Insurance",
+        "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance"
+      }
+    ]
   },
 
   ...SELF_EMPLOYED_GUIDES,

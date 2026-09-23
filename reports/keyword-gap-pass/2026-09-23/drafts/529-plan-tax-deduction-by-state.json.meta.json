@@ -1,0 +1,40 @@
+{
+ "slug": "529-plan-tax-deduction-by-state",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1751,
+ "floor": 1200,
+ "input_tokens": 19304,
+ "output_tokens": 2858,
+ "thinking_tokens": null,
+ "cached_tokens": 17050,
+ "est_cost_usd": 0.0156,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1751,
+  "numbers_not_in_facts": [
+   "250",
+   "300"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17420
+  }
+ },
+ "seconds": 11.4,
+ "response_id": "_o6zarX-Nsi6sOIPzauOwAY",
+ "generated_at": "2026-09-23T08:34:17+0000"
+}

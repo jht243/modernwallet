@@ -4981,6 +4981,7 @@ export const ROUNDUPS: RoundupEntry[] = [
 
   // ── 18. Best High-Yield Savings Accounts ─────────────────────────────────
   {
+    updated: "2026-09-23",
     slug: "best-high-yield-savings-accounts",
     title: "Best High-Yield Savings Accounts of 2026",
     metaDescription:
@@ -5242,6 +5243,16 @@ export const ROUNDUPS: RoundupEntry[] = [
         question: "How much will a high-yield savings account actually earn me?",
         answer:
           "It depends on your balance, your deposit schedule, and the current APY, which changes over time. Use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) and enter the bank's actual current rate (not a number from any article) along with your starting balance and planned monthly deposit to see a realistic projected balance.",
+      },
+      {
+        question: "Does my state or city matter, or should I use a local bank or credit union for a high-yield savings account?",
+        answer:
+          "Your state or city does not limit your options because every provider reviewed on this page is available online nationwide. A high-yield savings account (HYSA) is not a near-me product the way a traditional branch bank is. A local credit union can offer competitive rates too, but membership eligibility rules tied to an employer, region, or association vary by credit union. Check that specific credit union's own membership terms directly rather than assuming any credit union near you qualifies.",
+      },
+      {
+        question: "Why don't Chase, Bank of America, or Wells Fargo offer high-yield savings rates?",
+        answer:
+          "Large branch-network banks carry high fixed operating overhead from physical locations, staffing, and automated teller machine (ATM) networks compared to online-only institutions. These banks also hold steady customer deposits through branch convenience and existing checking relationships, so they do not need to compete aggressively on deposit yields to attract cash. As a result, their standard savings account annual percentage yield (APY) typically sits close to the low national average rather than a competitive rate. You can keep your primary checking account at your current bank while opening a separate high-yield savings account (HYSA) at an online bank without leaving your primary institution.",
       },
     ],
     sources: [

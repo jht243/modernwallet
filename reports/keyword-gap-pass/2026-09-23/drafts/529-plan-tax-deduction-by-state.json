@@ -1,0 +1,80 @@
+{
+  "slug": "529-plan-tax-deduction-by-state",
+  "title": "529 Plan Tax Deduction by State: Rules and Limits",
+  "metaDescription": "Learn how the 529 plan tax deduction by state works, which states allow out-of-state plan deductions, and how tax parity changes your options.",
+  "h1": "529 Plan Tax Deduction by State Rules and Contribution Limits",
+  "cardBlurb": "Contributions are never federally deductible, but roughly thirty states offer a state income tax deduction or credit with distinct rules.",
+  "introText": "You do not get a federal tax deduction for putting money into a 529 plan, but roughly thirty states and the District of Columbia offer a state income tax deduction or tax credit when you contribute.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and explaining the tradeoffs behind every planning decision. Whether your contribution earns an immediate tax break depends entirely on the state where you live, where you file your state tax return, and whether that state requires you to use its own in-state plan.\n\nUnderstanding the 529 plan tax deduction by state helps you decide whether to capture an immediate state tax reduction or pick an out-of-state plan with different investment options. When you project long-term savings on [the 529 savings calculator](/529-savings-calculator/), that tool models balance growth and monthly contributions over time, while this guide covers the upfront tax benefits that happen on your state tax return.",
+  "sections": [
+    {
+      "heading": "Federal Tax Status and State Income Tax Rules",
+      "body": "Federal tax law does not provide any deduction for 529 college savings plan contributions under any circumstance. As outlined in [IRS Topic No. 313](https://www.irs.gov/taxtopics/tc313), earnings inside a qualified tuition program grow free of federal income tax, and distributions remain free from federal income tax when used for qualified education expenses. The federal tax advantage sits entirely in the compound growth and distribution phase rather than at the time of your deposit.\n\nState-level tax treatment follows an entirely different system. Roughly thirty states alongside the District of Columbia give residents an upfront state income tax deduction or credit for deposits made within the tax year. In states with no personal income tax, including Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, and Wyoming, no state deduction can exist because there is no state income tax liability to offset.\n\nFor residents in states that do levy an income tax and provide a tax incentive, the majority require you to invest specifically in that state's sponsored 529 plan to claim the deduction. If you live in one of those states and deposit funds into a plan sponsored by another state, you forfeit the upfront state income tax deduction for that contribution."
+    },
+    {
+      "heading": "Tax Parity in Nine Any-State Plan Jurisdictions",
+      "body": "Nine states operate under tax parity rules, which allow residents to deduct contributions made to any state's 529 plan rather than restricting benefits to their home state's option. According to research published by [SavingForCollege.com](https://www.savingforcollege.com/article/how-much-is-your-state-s-529-plan-tax-deduction-really-worth), these nine parity states are Arizona, Arkansas, Kansas, Maine, Minnesota, Missouri, Montana, Ohio, and Pennsylvania.\n\nResidents of these nine states hold complete flexibility over where they open an account. A taxpayer in Missouri or Pennsylvania can choose a direct-sold plan from another state without sacrificing their local state income tax deduction. This allows parents and relatives to shop across state borders for specific index portfolios or lower annual asset-management fees while retaining their home-state tax write-off.\n\nTax parity eliminates the captive-audience dynamic present in most states. If your home state offers a deduction but does not offer tax parity, opening an out-of-state account means leaving an immediate tax discount on the table. In tax-parity states, that conflict does not exist, letting you prioritize plan features and administrative fees directly."
+    },
+    {
+      "heading": "State Tax Credits Compared to State Tax Deductions",
+      "body": "Two states structure their 529 tax incentive as a direct tax credit rather than a traditional tax deduction: Indiana and Vermont. A tax deduction reduces your total taxable income before tax rates apply, meaning its value scales with your marginal state tax bracket. A tax credit reduces your actual calculated tax bill dollar for dollar, which generally delivers more financial value per contributed dollar than an equivalent deduction.\n\nIndiana provides a clear example of this credit structure through its CollegeChoice 529 program. According to the [Indiana Education Savings Authority](https://www.in.gov/tos/iesa/tax-credit/), the state provides a 20% tax credit on contributions up to $1,500 per year for single and joint filers, or $750 for married individuals filing separately, for the 2025 tax year. That 20% rate produces an immediate $300 tax reduction on a $1,500 contribution, and the agency publishes that the maximum available credit increases starting with the 2026 tax year.\n\nBecause a credit acts as a direct offset against taxes owed, its relative return on contribution is fixed and predictable. For taxpayers in lower income brackets who pay modest marginal income tax rates, a 20% credit generates substantially higher immediate cash savings than an ordinary deduction against low-percentage state income tax brackets."
+    },
+    {
+      "heading": "Contribution Caps Across Four Representative States",
+      "body": "State deduction limits vary widely across the country, ranging from modest fixed dollar amounts to unlimited annual allowances. As reported by SavingForCollege.com, New York allows account owners to deduct up to $5,000 per year for single filers or $10,000 for married couples filing jointly on contributions to New York's own 529 plan. Illinois sets its annual deduction limit higher, allowing up to $10,000 for single filers and $20,000 for married couples filing jointly when contributing to an Illinois sponsored plan.\n\nOther states impose no specific annual ceiling on eligible 529 deductions. Colorado and Pennsylvania both permit qualifying state residents to deduct their full annual 529 plan contributions against state taxable income with no stated dollar cap, as most recently reported in industry compilations. Because state legislatures adjust tax codes and statutory caps periodically, you should always confirm the current-year cap on your specific state's official 529 plan site before preparing your annual tax return.\n\nThese statutory deductions apply strictly within the calendar year the deposit settles. If you contribute funds exceeding your state's annual cap, several states prohibit carrying forward the unused excess to future tax years, while others impose strict timing limits. Researching your home jurisdiction's specific carryforward rules prevents leaving eligible deductions unfiled."
+    },
+    {
+      "heading": "Tradeoffs Between Home State Deductions and Out-of-State Options",
+      "body": "Deciding whether your home state's 529 plan matters requires balancing the immediate value of a state tax reduction against long-term operational costs. If you live in an income-tax-free state, your home state provides zero tax deduction, giving you total freedom to choose any low-cost plan nationally. In that scenario, comparing administrative fees and portfolio options across the broader market yields the best outcome.\n\nIf your state offers a deduction that requires using its own plan, you must calculate what that tax break puts in your pocket each year. For a family in a 5% state tax bracket contributing $5,000, the deduction generates an immediate $250 in annual tax savings. For an out-of-state plan to overcome that $250 annual hurdle purely through lower administrative expenses or marginally better investment returns, the account balance would need to grow exceptionally large over many years.\n\nWhen non-qualified withdrawals occur, or when families reallocate funds, tax consequences can reverse. Many states enforce tax recapture rules, requiring account owners to pay back claimed deductions if funds are transferred to an out-of-state plan or withdrawn for non-educational uses. Reviewing [what happens to money you don't use](/guides/529-leftover-money-options/) and checking [what actually counts as a qualified withdrawal](/guides/529-qualified-expenses/) ensures you do not inadvertently trigger state-level penalties."
+    },
+    {
+      "heading": "Evaluating Plan Selection Beyond the Immediate Deduction",
+      "body": "What we see readers get wrong most often is assuming their state's own plan is automatically the best choice just because it is the one that earns the deduction. An upfront state deduction provides an undeniable first-year boost, but ongoing management fees compound against your total accumulated assets for over a decade. In states with low contribution caps or modest state tax rates, a high-fee in-state plan can erode the original tax benefit over a fifteen-year holding period.\n\nWhen a household does not intend to use the funds for qualified higher education, alternative vehicles such as standard taxable brokerage accounts explored in our [investing hub](/investing/) offer unconstrained liquidity without penalty risks. If you do commit to college savings, verifying the exact net tax savings from your state's revenue department clarifies whether staying in-state delivers measurable mathematical advantages.\n\nA sensible plan evaluation begins with checking your state's deduction cap, multiplying that cap by your marginal state tax rate, and comparing that annual savings figure against the ongoing expense ratio differences of alternative plans."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/529-savings-calculator/",
+      "label": "529 savings calculator"
+    },
+    {
+      "href": "/investing/",
+      "label": "Investing guide hub"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I get a tax deduction for contributing to a 529 plan?",
+      "answer": "You do not get a deduction on your federal tax return for contributing to a 529 plan. However, roughly thirty states and the District of Columbia offer a state income tax deduction or tax credit for residents who make qualifying contributions. Residents living in states with no personal income tax do not receive any state deduction."
+    },
+    {
+      "question": "Does it matter which state's 529 plan I use for the tax deduction?",
+      "answer": "Yes, for most taxpayers it matters significantly. Most states that offer a tax deduction or credit require you to contribute to your home state's sponsored 529 plan to claim the benefit. If you contribute to an out-of-state plan in those states, you forfeit your state income tax deduction."
+    },
+    {
+      "question": "Which states let me deduct contributions to any 529 plan, not just my own state's?",
+      "answer": "Nine states offer tax parity, allowing residents to deduct contributions to any state's 529 plan. These nine states are Arizona, Arkansas, Kansas, Maine, Minnesota, Missouri, Montana, Ohio, and Pennsylvania. Residents of these states can choose an out-of-state plan without losing their home-state deduction."
+    },
+    {
+      "question": "Is a 529 tax credit better than a 529 tax deduction?",
+      "answer": "A 529 tax credit is generally more valuable than a deduction because it reduces your tax bill dollar for dollar. A deduction only reduces your taxable income, so its dollar value depends on your marginal tax bracket. Indiana and Vermont offer tax credits rather than standard deductions."
+    },
+    {
+      "question": "Can I still get my state's 529 tax deduction if I already maxed out this year?",
+      "answer": "Once you contribute up to your state's annual statutory cap, additional contributions in that same tax year do not earn further deductions for that period. Some states allow you to carry forward excess contributions to future tax years, while others do not permit carryforwards. Confirm your state's specific carryforward provisions on its official 529 plan site."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Topic No. 313",
+      "url": "https://www.irs.gov/taxtopics/tc313"
+    },
+    {
+      "label": "SavingForCollege.com",
+      "url": "https://www.savingforcollege.com/article/how-much-is-your-state-s-529-plan-tax-deduction-really-worth"
+    },
+    {
+      "label": "Indiana Education Savings Authority",
+      "url": "https://www.in.gov/tos/iesa/tax-credit/"
+    }
+  ]
+}

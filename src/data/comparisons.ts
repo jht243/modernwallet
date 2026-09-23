@@ -880,7 +880,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When to use each account",
         content:
-          "Use a HYSA when your only goal is maximum interest on savings you don't need to spend directly. Most HYSAs let you link to an external checking account for easy transfers within 1–2 business days.\n\nUse a money market account when you need to be able to write checks or swipe a card from your savings — common for emergency funds where a transfer delay could cause problems, or for business owners managing cash flow.\n\nBoth are excellent for emergency funds, short-term savings goals, and parking cash you're waiting to invest. They're less suitable for money you'll need in under 1 month (use checking) or over 2 years (consider a CD). To find a top-paying account, see our [best money market accounts](/roundup/best-money-market-accounts/) roundup.",
+          "Use a HYSA when your only goal is maximum interest on savings you don't need to spend directly. Most HYSAs let you link to an external checking account for easy transfers within 1–2 business days.\n\nUse a money market account when you need to be able to write checks or swipe a card from your savings — common for emergency funds where a transfer delay could cause problems, or for business owners managing cash flow.\n\nBoth are excellent for emergency funds, short-term savings goals, and parking cash you're waiting to invest. They're less suitable for money you'll need in under 1 month (use checking) or over 2 years (consider a CD). To find a top-paying account, see our [best money market accounts](/roundup/best-money-market-accounts/) roundup. Ready to invest for the long term instead? See our [HYSA vs. Roth IRA vs. brokerage account](/guides/hysa-vs-roth-ira-vs-brokerage-account/) guide.",
       },
     ],
     faqs: [
@@ -6680,6 +6680,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   ...BUSINESS_COMPARISONS,
   // -- podcast-pain-pass 2026-07-21: debt-snowball-vs-avalanche --
 {
+  updated: "2026-09-23",
   slug: "debt-snowball-vs-avalanche",
   title: "Debt Snowball vs Avalanche: Which Pays Off Faster?",
   metaDescription:
@@ -6760,6 +6761,11 @@ export const COMPARISONS: ComparisonEntry[] = [
       question: "Can I switch methods partway through?",
       answer:
         "Yes -- you can switch between the snowball and avalanche at any time. Some people start with the snowball for an early win, then switch to the avalanche to cut interest. The key is to keep aiming every extra dollar at one debt.",
+    },
+    {
+      question: "What is a debt snowball calculator, and does the debt snowball method actually work?",
+      answer:
+        "A debt snowball calculator is a tool that takes your debt balances, interest rates, and minimum payments, adds your extra monthly payment, and generates a schedule that pays off the smallest balance first. The method reliably gets you to zero across all debts given consistent monthly payments. Its primary advantage is behavioral, as research cited by the Consumer Financial Protection Bureau (CFPB) shows that early wins keep people motivated to continue paying, whereas the debt avalanche minimizes total interest instead. While this page walks through a complete worked numeric example rather than an interactive tool, the underlying payoff math and rollover sequence are identical.",
     },
   ],
   sources: [

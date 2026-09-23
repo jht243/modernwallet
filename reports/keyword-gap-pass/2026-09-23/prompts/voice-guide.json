@@ -1,0 +1,26 @@
+{
+  "slug": "dave-ramsey-12-percent-investment-return-explained",
+  "updated": "2026-09-16",
+  "title": "Investment Calculator Dave Ramsey: The 12% Return Explained",
+  "metaDescription": "Before setting an investment calculator Dave Ramsey return at 12%, see what the historical data shows for nominal versus inflation-adjusted S&P 500 returns.",
+  "h1": "Investment Calculator Dave Ramsey Assumptions and the 12% Return",
+  "cardBlurb": "Ramsey's 12% figure is a real, sourced nominal average, but it runs higher than the inflation-adjusted long-run figure most other sources cite.",
+  "introText": "Dave Ramsey's 12% figure is a real, sourced number based on the historical average annual S&P 500 return over his stated 1928 to 2025 window, but it is a nominal figure that does not subtract inflation. That lack of an inflation adjustment sits at the heart of the debate over whether the estimate belongs in personal financial planning.\n\nAt ModernWallet, we build financial tools and guides centered on verifiable math, showing what moves an account balance and outlining the tradeoffs behind each planning assumption. When someone evaluates an investment calculator Dave Ramsey recommends or inputs 12% into a compound interest tool, they are often assuming that their future portfolio will purchase goods at today's price level. In practice, long-term purchasing power depends on the difference between raw capital growth and consumer price increases.\n\nUnderstanding the numbers behind this benchmark requires separating nominal stock performance from real purchasing power. By examining the underlying S&P 500 historical data, third-party retirement research, and multi-decade rolling windows, you can decide whether a 12% nominal growth rate or a lower inflation-adjusted estimate fits your wealth-building plan.",
+  "sections": [
+    { "heading": "Dave Ramsey's 12% Return Claim and Historical Windows", "body": "[Ramsey Solutions](https://www.ramseysolutions.com/retirement/the-12-reality) bases its 12% benchmark on the historical average annual return of the S&P 500 index from 1928 through 2025, which Ramsey Solutions states reached 11.86%. Dave Ramsey rounds that 11.86% arithmetic average up to 12% when coaching radio callers and explaining compounding growth in personal finance presentations. The figure represents an unweighted historical average across nearly a century of American corporate equity performance." },
+    { "heading": "Nominal Returns in an Investment Calculator Dave Ramsey Discusses", "body": "The 11.86% historical figure and the 30-year rolling averages cited by Ramsey Solutions are nominal returns that exclude the effects of inflation. Nominal returns measure the total increase in dollars within an account, ignoring how much purchasing power those dollars lose over time. If a portfolio starts at $10,000 and grows by 12% in a year, the account balance reaches $11,200 regardless of whether the cost of groceries, housing, and healthcare increased during that same twelve months." },
+    { "heading": "How ModernWallet Benchmarks Investment Calculator Assumptions", "body": "When we reviewed this historical performance data ourselves across ModernWallet, we structured our planning tools to distinguish between nominal market growth and real purchasing power. On our [S&P 500 calculator](/investing/sp500-calculator/), we set the default nominal growth preset at 10.5% per year with all dividends reinvested. That baseline reflects the long-run nominal figure of roughly 10% to 11% reported in industry analyses such as the [SPIVA S&P Dow Jones Indices Scorecard](https://www.spglobal.com/spdji/en/research-insights/spiva/)." }
+  ],
+  "tools": [
+    { "href": "/investing/", "label": "Investment calculator" },
+    { "href": "/investing/sp500-calculator/", "label": "S&P 500 calculator" }
+  ],
+  "faqs": [
+    { "question": "What is Dave Ramsey's 12% investment return rule?", "answer": "Dave Ramsey's 12% return rule is his guideline that long-term investors can plan around an average annual return near 12% for stock market investing over multi-decade horizons. Ramsey Solutions bases this figure on the historical arithmetic average annual return of the S&P 500 from 1928 through 2025, which Ramsey Solutions measures at 11.86% and rounds up to 12%." },
+    { "question": "Does Dave Ramsey's 12% figure account for inflation?", "answer": "No, Dave Ramsey's 12% figure does not account for inflation. The 11.86% historical average cited on the Ramsey Solutions website is an unadjusted nominal return figure that reflects raw dollar growth rather than inflation-adjusted purchasing power." }
+  ],
+  "sources": [
+    { "label": "Ramsey Solutions", "url": "https://www.ramseysolutions.com/retirement/the-12-reality" },
+    { "label": "officialdata.org", "url": "https://www.officialdata.org/us/stocks/s-p-500/1926" }
+  ]
+}

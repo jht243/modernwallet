@@ -1,0 +1,36 @@
+{
+ "slug": "cash-conversion-cycle--excel-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 116,
+ "floor": 0,
+ "input_tokens": 17399,
+ "output_tokens": 216,
+ "thinking_tokens": 6024,
+ "cached_tokens": 17050,
+ "est_cost_usd": 0.0269,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "words": 116,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17420
+  }
+ },
+ "seconds": 18.5,
+ "response_id": "pJCzaszgLqHrjrEP8cOG-QM",
+ "generated_at": "2026-09-23T08:41:26+0000"
+}
