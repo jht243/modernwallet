@@ -48,7 +48,7 @@
       "answer": "Yes, per official IRS guidance, a partnership that incorporates is required to obtain a new Employer Identification Number (EIN). The federal identification number is tied to the entity's federal tax classification rather than state filings alone, so you cannot assume your existing LLC EIN will carry over."
     },
     {
-      "question": "What's the difference between electing C-corp tax status and actually converting to a corporation?",
+      "question": "What's the difference between electing C-corp tax status and converting to a corporation?",
       "answer": "Electing C-corp tax status by filing IRS Form 8832 changes only how your business is taxed by the IRS, leaving your state LLC registration, operating agreement, and legal structure intact. A full legal conversion changes your underlying entity type under state law, creating a true corporation capable of issuing shares of stock."
     },
     {
