@@ -1,0 +1,51 @@
+{
+ "slug": "roth-403b-vs-roth-ira",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2322,
+ "floor": 1500,
+ "input_tokens": 19417,
+ "output_tokens": 4524,
+ "thinking_tokens": 2468,
+ "cached_tokens": 16807,
+ "est_cost_usd": 0.0313,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2322,
+  "numbers_not_in_facts": [
+   "1.5",
+   "20000",
+   "32000",
+   "32500",
+   "35750",
+   "45",
+   "45000",
+   "450000",
+   "61",
+   "62",
+   "80",
+   "80000",
+   "8600"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16949
+  }
+ },
+ "seconds": 22.5,
+ "response_id": "WUe0arvyO5q839IPkIjk0QI",
+ "generated_at": "2026-09-23T21:41:04+0000"
+}

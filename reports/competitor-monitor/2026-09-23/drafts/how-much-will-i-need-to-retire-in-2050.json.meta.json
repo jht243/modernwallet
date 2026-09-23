@@ -1,0 +1,47 @@
+{
+ "slug": "how-much-will-i-need-to-retire-in-2050",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1938,
+ "floor": 1200,
+ "input_tokens": 18671,
+ "output_tokens": 3609,
+ "thinking_tokens": 742,
+ "cached_tokens": 16297,
+ "est_cost_usd": 0.0212,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1938,
+  "numbers_not_in_facts": [
+   "0.5",
+   "103",
+   "13500",
+   "16",
+   "2.71",
+   "3.58",
+   "337500",
+   "445500",
+   "65"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16622
+  }
+ },
+ "seconds": 18.7,
+ "response_id": "-ka0aqarM4PbjMcPmOLe4A8",
+ "generated_at": "2026-09-23T21:39:25+0000"
+}

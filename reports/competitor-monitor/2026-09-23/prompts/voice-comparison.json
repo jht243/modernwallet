@@ -1,0 +1,35 @@
+{
+  "slug": "sep-ira-vs-solo-401k",
+  "title": "SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed",
+  "metaDescription": "SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.",
+  "targetKeyword": "sep ira vs solo 401k",
+  "optionA": "SEP-IRA",
+  "optionB": "Solo 401(k)",
+  "segment": "Self-employed retirement",
+  "h1": "SEP-IRA vs Solo 401(k): Which Retirement Plan Wins?",
+  "introText": "When choosing between a SEP-IRA and a Solo 401(k), go with a Solo 401(k) if you want to save the most or contribute Roth money. Choose a SEP-IRA if you want the simplest setup. Both are tax-advantaged retirement plans for self-employed people and small-business owners, but they're funded differently. A SEP-IRA allows employer contributions only, while a Solo 401(k) lets you make an employee deferral in addition to an employer contribution. As a result, a Solo 401(k) often lets you save more at the same income.",
+  "comparisonTable": {
+    "rows": [
+      { "dimension": "Who can contribute", "a": "Employer only (the business funds it)", "b": "You as employee plus you as employer" },
+      { "dimension": "2025 maximum", "a": "$70,000", "b": "$70,000 ($77,500 if age 50+)" },
+      { "dimension": "Roth option", "a": "No", "b": "Yes, Roth deferrals allowed" }
+    ]
+  },
+  "verdict": "Choose a Solo 401(k) if you are owner-only and want to save the most, add Roth dollars, or borrow from the plan. Choose a SEP-IRA if you value the simplest possible setup or you have employees you must cover. At modest income, the Solo 401(k) usually wins because its flat employee deferral lets you contribute far more than a SEP-IRA's 25% cap.",
+  "sections": [
+    { "heading": "How the SEP-IRA vs Solo 401(k) funding rules differ", "content": "The core split in the SEP-IRA vs Solo 401(k) debate is who puts money in. A SEP-IRA is funded by the business only. You can contribute up to 25% of your compensation, capped at $70,000 in 2025.\n\nA Solo 401(k) works in two layers. First, you make an employee salary deferral of up to $23,500 in 2025. Second, the business adds a profit-sharing contribution. Together they can reach the same $70,000 cap." },
+    { "heading": "When a SEP-IRA is the better pick", "content": "A SEP-IRA is the better pick when you want the simplest plan or you have employees. It takes minutes to open and has almost no ongoing paperwork.\n\nThe employee rule is the key limit. A Solo 401(k) is for owner-only businesses, meaning you and a spouse with no other full-time staff." }
+  ],
+  "faqs": [
+    { "question": "Can I contribute more to a SEP-IRA or a Solo 401(k)?", "answer": "You can usually contribute more to a Solo 401(k), especially at modest income. Both cap at $70,000 in 2025, but the Solo 401(k) adds a $23,500 employee deferral on top of the employer share. That flat deferral lets you save more than a SEP-IRA's 25% limit until your income is high enough to max both." }
+  ],
+  "sources": [
+    { "label": "IRS: One-Participant 401(k) Plans", "url": "https://www.irs.gov/retirement-plans/one-participant-401k-plans" },
+    { "label": "IRS: SEP Contribution Limits", "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps" }
+  ],
+  "relatedComparisons": ["401k-vs-roth-ira", "brokerage-vs-ira", "roth-401k-vs-traditional-401k", "simple-ira-vs-401k", "solo-401k-vs-simple-ira"],
+  "calculatorLinks": [
+    { "label": "401(k) Calculator", "href": "/retirement/401k-calculator/" },
+    { "label": "Retirement Savings Calculator", "href": "/retirement/retirement-savings-calculator/" }
+  ]
+}

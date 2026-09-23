@@ -5187,6 +5187,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "Notify employees before November 2 of the year prior to the switch, terminate the SIMPLE IRA effective December 31, and start the new 401(k) on January 1. Work with a 401(k) provider several months ahead of the target date to have the plan document and payroll integration ready in time.",
       },
+      {
+        question: "How does a SIMPLE IRA compare to a SEP-IRA instead of a 401(k)?",
+        answer:
+          "See our [SIMPLE IRA vs. SEP-IRA comparison](/compare/simple-ira-vs-sep-ira/) for the employer-contribution and eligibility differences between those two small-business options.",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) Limit Increases to $24,500 for 2026", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
@@ -15085,6 +15090,432 @@ export const COMPARISONS: ComparisonEntry[] = [
       },
     ],
   },
+
+  // ── competitor-monitor-auto pass 2026-09-23 (SmartAsset coverage gaps) ──
+  {
+    "slug": "flat-fee-vs-aum-based-financial-advisors",
+    "updated": "2026-09-23",
+    "title": "Flat-Fee vs. AUM Financial Advisors Compared by Cost",
+    "metaDescription": "Compare flat-fee vs AUM financial advisor costs, crossover points, and fiduciary rules. See 2026 fee benchmarks to pick the right advisory model.",
+    "targetKeyword": "flat fee vs aum financial advisor",
+    "optionA": "Flat-Fee Advisors",
+    "optionB": "AUM-Based Advisors",
+    "segment": "Choosing a financial advisor",
+    "h1": "Flat-Fee vs. AUM-Based Financial Advisors Compared by Cost",
+    "introText": "Choose a flat-fee advisor when your investment portfolio exceeds the crossover point where a fixed retainer costs less than an assets-under-management percentage, or when you want your advisor's compensation decoupled from your account balances. Choose an assets-under-management advisor when you have a smaller portfolio where a flat retainer would represent an excessive percentage of your wealth, or when you prefer having advisory fees deducted directly from your investment accounts rather than billed out of pocket.\n\nAt ModernWallet, we evaluate advisor and fee decisions through the lens of cash flow and total cost, not just the sticker price. While both pricing models can be structured under a strict fiduciary standard, they create fundamentally different economic incentives and long-term costs. The right choice depends on your investable balance, your need for ongoing planning, and the specific dollar amounts in the advisory contracts you compare.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "How the fee is calculated",
+          "a": "Fixed dollar amount charged annually, monthly, or per project",
+          "b": "Percentage of assets under management (AUM), often using a tiered schedule"
+        },
+        {
+          "dimension": "Typical cost range",
+          "a": "$2,926 one-time plan, $595 monthly, or $6,815 annual retainer average",
+          "b": "0.75% to 1.50% annually, averaging roughly 1.00% on $500,000 to $1,000,000"
+        },
+        {
+          "dimension": "Cost change as portfolio grows",
+          "a": "Remains constant regardless of asset growth or market performance",
+          "b": "Rises automatically in dollar terms as portfolio balances increase"
+        },
+        {
+          "dimension": "Incentive alignment",
+          "a": "Independent of portfolio balance; no bias against outside cash uses",
+          "b": "Directly tied to portfolio value; incentivizes keeping assets invested"
+        },
+        {
+          "dimension": "Best fit by asset level",
+          "a": "Portfolios above the fee crossover point (often $500,000 to $1,000,000+)",
+          "b": "Smaller portfolios where a fixed annual retainer would exceed 1% to 1.5%"
+        },
+        {
+          "dimension": "Fiduciary status",
+          "a": "Can operate as a fiduciary (Registered Investment Adviser standard)",
+          "b": "Can operate as a fiduciary (Registered Investment Adviser standard)"
+        },
+        {
+          "dimension": "Billing predictability",
+          "a": "Completely predictable dollar amount billed by invoice or debit",
+          "b": "Fluctuates quarterly or monthly based on underlying portfolio value"
+        }
+      ]
+    },
+    "verdict": "Choose a flat-fee advisor if you hold a larger portfolio, expect rapid balance growth, want predictable annual advisory bills, or want financial guidance on real estate and debt without an incentive to keep every dollar in managed accounts. Choose an AUM-based advisor if you are earlier in your wealth-building path with a portfolio under your local crossover point, or if you prefer having your advisory fee deducted straight from your investment accounts instead of paying out of monthly cash flow. This recommendation is not for anyone who assumes fee structure alone guarantees legal loyalty; you must verify that your individual professional acts as a fiduciary under the Investment Advisers Act. Comparing the exact dollar numbers from each advisor's written agreement will determine which structure delivers lower total cost for your exact asset level.",
+    "sections": [
+      {
+        "heading": "How the Math Dictates the Flat-Fee vs. AUM Financial Advisor Decision",
+        "content": "The choice between a flat-fee advisor and an assets-under-management (AUM) advisor comes down to a clear mathematical crossover point. An AUM advisor charges a percentage of the assets they oversee for you, which typically ranges from 0.75% to 1.5% annually. At a standard 1% rate, a client with a $250,000 portfolio pays $2,500 per year. That same client with a $1,000,000 portfolio pays $10,000 annually, and at $2,000,000, the annual fee reaches $20,000. In an AUM arrangement, the dollar cost rises automatically as your balance expands, even when the underlying investment work remains largely identical.\n\nFlat-fee advisors charge a fixed dollar amount for their services regardless of how much money you have invested. Data from the 2026 State of Financial Planning Fees study published by [Envestnet](https://www.envestnet.com/financial-intel/pros-and-cons-different-advisory-fee-models) shows that the average annual retainer fee among advisors who charge separately for financial planning was $6,815. That represents a 52% increase from $4,484 in 2023, reflecting rising demand for comprehensive wealth planning. The same Envestnet study found that the average one-time financial plan fee was $2,926, while the average monthly subscription fee sat at $595 per month, which totals $7,140 annually.\n\nFinding your break-even point requires setting the flat retainer fee equal to the percentage charge. If an advisor quotes an annual flat retainer of $6,815 and a competing AUM advisor quotes a 1% annual fee, the crossover balance is exactly $681,500. Below $681,500 in managed assets, the 1% AUM fee costs fewer dollars out of pocket. Above $681,500, the flat fee delivers immediate cash savings that widen every time your portfolio grows. If your portfolio reaches $1,500,000, a 1% AUM fee consumes $15,000 per year, leaving you paying $8,185 more each year than you would with the average $6,815 flat retainer. You can track how these asset thresholds interact with your overall balance using our [net worth calculator](/net-worth/)."
+      },
+      {
+        "heading": "Understanding AUM Fee Structures and Tiered Schedules",
+        "content": "AUM pricing remains the prevailing compensation model across the retail wealth management industry. Under this structure, the advisor calculates their fee as an annualized percentage of the average daily balance or quarter-end balance of your investment accounts. Most firms that use this structure apply a tiered or graduated schedule rather than a flat percentage across your entire account balance. A tiered schedule reduces the marginal percentage rate as your portfolio crosses higher balance thresholds.\n\nA typical graduated fee schedule might assess 1.25% on the first $500,000 of assets, 1.00% on assets between $500,000 and $1,000,000, 0.75% on balances between $1,000,000 and $2,000,000, and 0.50% on amounts exceeding $2,000,000. For a portfolio of $1,200,000, the client pays 1.25% on the first $500,000 ($6,250), 1.00% on the next $500,000 ($5,000), and 0.75% on the remaining $200,000 ($1,500). The total annual dollar cost comes to $12,750, producing an effective blended fee of roughly 1.06%.\n\nIndustry averages across multiple benchmarking studies place the median AUM charge near 1.00% for accounts in the $500,000 to $1,000,000 range. Smaller accounts below $500,000 frequently see published fee schedules between 1.25% and 1.50%. The defining mechanical advantage of AUM billing is friction-free payment execution. The advisor automatically debits the advisory fee directly from the cash allocation inside your custodial account each month or quarter. You do not need to write a check, authorize an electronic transfer from your checking account, or allocate earned household income to cover advisory overhead. However, this automatic deduction can conceal the compounding drag on investment returns over multi-decade compounding periods."
+      },
+      {
+        "heading": "How Flat-Fee and Retainer Advisory Models Work",
+        "content": "Flat-fee wealth managers charge a transparent, fixed dollar price that is explicitly divorced from the size of your balance sheet. This model presents in three primary formats: annual retainers, monthly subscriptions, and standalone project fees. Under an annual retainer contract, the client pays an agreed figure, such as $6,000 to $10,000 per year, broken into quarterly or semi-annual payments. This fee covers an agreed scope of work, including investment management, retirement modeling, tax planning, insurance reviews, and estate document coordination.\n\nMonthly subscriptions adapt the retainer framework for ongoing planning, charging a recurring figure like the Envestnet study benchmark of $595 per month. This format appeals to high-earning individuals who have substantial household cash flow but have not yet accumulated large taxable brokerage balances. Project fees, averaging $2,926 according to the Envestnet data, cover single engagements such as building a retirement road map, evaluating an employer stock option package, or organizing estate structures. Once the plan delivers, the formal engagement concludes, leaving implementation to the client.\n\nBecause flat fees cannot always be extracted from tax-deferred investment accounts under federal tax rules, clients typically pay flat fees via electronic bank transfer, credit card, or an invoice billed directly to their personal operating accounts. This visibility forces an active annual renewal evaluation. You directly see the dollar expense leaving your household budget, which requires the advisor to deliver tangible planning value each year to justify the contract. To explore how continuous advisory fees impact your long-range wealth accumulation, evaluate your portfolio using our [retirement savings calculator](/retirement/retirement-savings-calculator/)."
+      },
+      {
+        "heading": "Incentive Alignment and Conflicting Financial Advice",
+        "content": "Every compensation structure creates distinct behavioral incentives, and neither model is completely free of potential bias. An AUM advisor earns more money when your managed account balance climbs and earns less when your account drops. Proponents argue this aligns the advisor with your financial progress. However, this alignment applies specifically to liquid assets under their direct custody. When a financial decision requires pulling funds out of that custodial account, an inherent structural conflict appears.\n\nIf you ask an AUM advisor whether you should withdraw $300,000 from your investment portfolio to pay off a mortgage, purchase an investment property, or fund a private business venture, their business revenue drops permanently if you proceed. Recommending that you keep the $300,000 invested protects the advisor's fee stream. A flat-fee advisor earns the exact same compensation whether you maintain $2,000,000 in your investment account or deploy $500,000 into real estate. Their revenue remains identical if you choose to pay down low-rate debt or hold extra liquidity in high-yield cash accounts outside their management.\n\nConversely, flat-fee advisors face an operational incentive regarding labor hours. Because their fee does not increase as your asset base grows more complex, an unscrupulous flat-fee practitioner might attempt to minimize the hours spent on your account to maximize their effective hourly profit. When assessing incentive alignment, remember that pricing design alone cannot replace professional ethics. Guidance published by [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/how-to-pay-financial-professional-fees-and-costs), an official educational resource from the Securities and Exchange Commission (SEC), explains that understanding fee models is a foundational step in identifying advisory conflicts. Readers should review our breakdown of [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) to evaluate advisor vetting standards."
+      },
+      {
+        "heading": "Fiduciary Standards and the Fee-Only Designation",
+        "content": "A widespread misconception among retail investors is that an advisor's fee model reveals their regulatory standard of care. A flat-fee advisor is not automatically a fiduciary, and an AUM advisor is not automatically operating under a lesser standard. Fiduciary duty is a distinct legal requirement established by how an advisor registers their business, not how they draft their client invoices. Under the Investment Advisers Act, a firm registered as a Registered Investment Adviser (RIA) owes a comprehensive fiduciary duty of care and loyalty to its clients. This legal standard mandates putting the client's interests first and eliminating or disclosing all material conflicts.\n\nBoth flat-fee advisors and AUM advisors can be registered as RIAs, and both can serve as strict fiduciaries. Furthermore, both pricing mechanisms fit under the formal industry definition of fee-only financial planning. The [National Association of Personal Financial Advisors (NAPFA)](https://www.napfa.org/financial-planning/what-is-fee-only-advising), the leading professional organization for fee-only practitioners, explicitly confirms that fee-only advisors may structure their compensation as an hourly rate, a retainer, a flat fee, or a percentage of assets under management. The core requirement of a fee-only designation is the total absence of sales commissions, transaction kickbacks, third-party revenue sharing, or product placement fees.\n\nDo not confuse fee-only with fee-based. A fee-based advisor charges a fee (either AUM or flat) while also holding licenses to collect commissions on insurance policies, annuities, or mutual fund loads. When interviewing prospective advisors, ask for their Form ADV Part 2A filing with the SEC and verify their registration status. Reviewing the difference between a [financial advisor vs. financial planner](/compare/financial-advisor-vs-financial-planner/) or a [financial advisor vs. wealth manager](/compare/financial-advisor-vs-wealth-manager/) can clarify how different professional designations approach their regulatory duties."
+      },
+      {
+        "heading": "Comparing Long-Term Compounding Drag Across Both Models",
+        "content": "The true economic cost of an advisory fee structure becomes visible over decades of compound growth. A 1% annual AUM fee does not simply remove 1% of your wealth over your lifetime; it removes the compound interest that money would have generated for the rest of your life. Consider an investor with a $1,000,000 portfolio growing at an annualized 7% gross return over 20 years. Without any investment management fees, that portfolio would expand to approximately $3,869,684.\n\nUnder a continuous 1% AUM fee, the net annual return drops to 6%. Over that 20-year horizon, the portfolio ends at roughly $3,207,135. The client paid substantial annual fees, but the total reduction in terminal net worth reaches $662,549 due to lost compound growth. By contrast, suppose that same investor hires a flat-fee advisor charging the Envestnet benchmark average annual retainer of $6,815. Even if we assume the flat fee increases over time to match inflation, the cumulative dollars extracted from the portfolio remain fixed rather than scaling alongside the growing seven-figure balance.\n\nOn a $2,000,000 starting portfolio compounding under the same parameters, a 1% AUM fee siphons $20,000 in year one alone, and the dollar fee climbs every year the market rises. In contrast, the $6,815 flat retainer represents an effective starting cost of just 0.34%. As the balance climbs toward $4,000,000, that same flat fee drops to an effective rate of 0.17%. For investors with substantial portfolios, this difference in compounding drag amounts to hundreds of thousands of dollars saved over a standard retirement lifecycle. Reviewing whether a [financial advisor is worth it](/guides/financial-advisor-worth-it/) will help you measure these costs against your real planning needs."
+      },
+      {
+        "heading": "Operational Realities and Billing Execution",
+        "content": "Executing fee payments involves practical tax and administrative realities that differ across both business setups. AUM fees possess a distinct structural convenience: they are deducted directly from pre-tax retirement accounts such as Traditional Individual Retirement Accounts (IRAs) and 401(k) rollovers. When an AUM advisor withdraws their management fee from your Traditional IRA, the fee is paid with pre-tax dollars, and the withdrawal does not trigger a taxable event or an early distribution penalty under Internal Revenue Service rules.\n\nFlat-fee retainers face more restrictive operational guidelines. Custodians generally do not allow an advisor to debit a multi-thousand-dollar annual comprehensive planning retainer from a tax-advantaged retirement account to cover non-investment services. Because financial planning encompasses estate design, cash flow management, business succession, and insurance analysis, regulatory rules dictate that planning fees must be paid from outside taxable accounts or personal checking accounts. Paying an advisory fee with after-tax dollars means you must earn enough gross income to cover both the income taxes and the advisor's invoice.\n\nTax deductibility for personal investment advisory expenses was eliminated for individual taxpayers under the Tax Cuts and Jobs Act. Consequently, individual investors cannot deduct flat fees or AUM fees on Schedule A of federal tax returns. For business owners, however, some planning services directly related to corporate retirement plans, executive benefits, or business succession may qualify as deductible business expenses. If your situation involves corporate structures, consulting a [financial advisor vs. CPA](/compare/financial-advisor-vs-cpa/) will clarify which professional fees can be allocated to business entities."
+      },
+      {
+        "heading": "A Checklist for Choosing Between Flat-Fee and AUM Advisors",
+        "content": "Deciding which advisory framework fits your financial life requires reviewing five specific operational factors. Work through these considerations before signing an advisory contract:\n\n1. Calculate your household crossover balance. Gather the exact fee quotes from both prospective advisors. Divide the flat annual retainer quote by the percentage AUM fee quote. If your investable assets sit comfortably above that dollar threshold, the flat-fee structure holds a distinct mathematical advantage.\n\n2. Audit your asset allocation across categories. If a substantial portion of your wealth sits in real estate, private business equity, or deferred compensation plans that an advisor cannot manage directly, an AUM advisor cannot bill on those assets. A flat-fee advisor can evaluate your total balance sheet without requiring you to liquidate non-custodial holdings.\n\n3. Determine your payment preferences. If paying an ongoing retainer from personal bank accounts disrupts your monthly budget or feels administratively burdensome, the automatic withdrawal mechanics of an AUM arrangement provide frictionless execution.\n\n4. Confirm fiduciary commitments in writing. Demand a written fiduciary oath and review the firm's Form ADV filing. Ensure the advisor operates as a fiduciary across all client interactions, regardless of whether they charge flat fees or AUM percentages.\n\n5. Measure the scope of financial planning. Ensure the fee, whether flat or percentage-based, covers comprehensive planning topics such as tax strategy, estate coordination, and insurance evaluations, rather than basic portfolio allocation alone."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is a flat fee or AUM cheaper for a financial advisor?",
+        "answer": "A flat fee is usually cheaper for larger portfolios, while an assets-under-management (AUM) fee is usually cheaper for smaller balances. The dividing line is the crossover point, calculated by dividing the flat fee by the AUM percentage. For example, comparing an average $6,815 annual retainer to a 1% AUM fee creates a break-even threshold of $681,500. Below that balance, a 1% AUM fee costs fewer dollars annually; above that balance, a flat fee costs significantly less."
+      },
+      {
+        "question": "Do AUM-based advisors have a conflict of interest?",
+        "answer": "Yes, AUM advisors face a structural incentive to keep client assets under their direct custodial management. Because their income drops if managed assets leave the account, they may have a disincentive to advise clients to pay off mortgages, invest in real estate, or hold large cash balances. However, Registered Investment Advisers acting as fiduciaries are legally bound to disclose these conflicts and prioritize client interests."
+      },
+      {
+        "question": "Can a flat-fee advisor also be a fiduciary?",
+        "answer": "Yes, a flat-fee advisor can be a fiduciary. Fiduciary status depends on whether an advisor is registered as a Registered Investment Adviser (RIA) under the Investment Advisers Act, not on how they structure their fees. Both flat-fee and AUM practitioners can be fee-only fiduciaries if they refuse sales commissions and act in their clients' best legal interests."
+      },
+      {
+        "question": "At what portfolio size does a flat fee become cheaper than an AUM fee?",
+        "answer": "A flat fee becomes cheaper at the exact dollar point where the AUM percentage exceeds the flat retainer quote. Using industry benchmarks of a 1% AUM rate and an average $6,815 annual flat fee, the threshold sits at $681,500. If an AUM advisor charges 1.25%, a $6,815 flat fee becomes cheaper at just $545,200. Conversely, if an AUM fee is 0.75%, the break-even balance rises to $908,667."
+      },
+      {
+        "question": "What is the average cost of a flat-fee financial advisor?",
+        "answer": "According to the 2026 State of Financial Planning Fees study by Envestnet, the average annual retainer fee for advisors charging separately for financial planning is $6,815, up from $4,484 in 2023. The same benchmark study found that the average one-time financial plan fee is $2,926, and the average monthly subscription fee is $595 per month."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Envestnet, The Pros and Cons of Different Advisory Fee Models",
+        "url": "https://www.envestnet.com/financial-intel/pros-and-cons-different-advisory-fee-models"
+      },
+      {
+        "label": "NAPFA, What Is Fee-Only Financial Advising?",
+        "url": "https://www.napfa.org/financial-planning/what-is-fee-only-advising"
+      },
+      {
+        "label": "Investor.gov (SEC), How to Pay for Financial Professional Fees and Costs",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/how-to-pay-financial-professional-fees-and-costs"
+      }
+    ],
+    "relatedComparisons": [
+      "financial-advisor-vs-financial-planner",
+      "financial-advisor-vs-wealth-manager",
+      "financial-advisor-vs-cpa"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Net Worth Calculator",
+        "href": "/net-worth/"
+      },
+      {
+        "label": "Retirement Savings Calculator",
+        "href": "/retirement/retirement-savings-calculator/"
+      }
+    ]
+  },
+  {
+    "slug": "simple-ira-vs-sep-ira",
+    "updated": "2026-09-23",
+    "title": "SIMPLE IRA vs. SEP-IRA: Which One Fits Your Business?",
+    "metaDescription": "Compare SIMPLE IRA vs. SEP-IRA: contribution limits, mandatory matches, employee rules, and the 25% penalty. Find the right plan for your team.",
+    "targetKeyword": "simple ira vs sep ira",
+    "optionA": "SIMPLE IRA",
+    "optionB": "SEP-IRA",
+    "segment": "Small business retirement plans",
+    "h1": "SIMPLE IRA vs. SEP-IRA: Which Plan Fits Your Business?",
+    "introText": "Choose a SIMPLE IRA if you want employees to fund their own retirement accounts through payroll deductions, and pick a SEP-IRA if you want total discretion over annual contributions or need to set up a plan past October 1.\n\nAt ModernWallet, we break down small-business retirement plan mechanics so owners can see the real tradeoff before committing, and the primary division between these two accounts comes down to funding mechanics. A Savings Incentive Match Plan for Employees (SIMPLE IRA) functions like a scaled-down 401(k), splitting contributions between worker salary deferrals and a required company match. A Simplified Employee Pension (SEP-IRA) operates purely on employer funding, barring workers from putting in their own wages.\n\nThat architectural difference directly shifts who carries the financial load each tax year. If you run a business with steady staff looking to save their own money, a SIMPLE IRA delivers that framework without heavy administrative bills. If you run an owner-dominated shop with variable profit margins, a SEP-IRA lets you adjust or completely skip deposits in lean cycles while still offering high dollar maximums in flush years.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Who contributes",
+          "a": "Both the employee through salary deferrals and the employer through mandatory contributions",
+          "b": "Employer only; employees cannot make salary deferrals"
+        },
+        {
+          "dimension": "2026 maximum contribution",
+          "a": "$17,000 employee deferral, plus $4,000 catch-up for age 50+ or $5,250 for ages 60 to 63, plus employer match",
+          "b": "Lesser of 25% of compensation or $72,000 (based on a compensation cap of $360,000)"
+        },
+        {
+          "dimension": "Employer contribution requirement",
+          "a": "Mandatory every year: dollar-for-dollar match up to 3%, or flat 2% nonelective contribution to all eligible staff",
+          "b": "Discretionary each year, but must contribute the exact same percentage to all eligible participants"
+        },
+        {
+          "dimension": "Early-withdrawal penalty",
+          "a": "25% penalty if taken within the first 2 years of plan participation, dropping to 10% afterward",
+          "b": "Standard 10% penalty before age 59 1/2 with regular exceptions"
+        },
+        {
+          "dimension": "Plan setup deadline",
+          "a": "Between January 1 and October 1 of the tax year",
+          "b": "Up to the business tax filing deadline, including extensions"
+        },
+        {
+          "dimension": "Roth option availability",
+          "a": "Yes, allowed at participating financial providers under SECURE 2.0 rules",
+          "b": "Yes, allowed at participating financial providers under SECURE 2.0 rules"
+        },
+        {
+          "dimension": "Plan loans allowed",
+          "a": "No, loans are prohibited from IRA-based accounts",
+          "b": "No, loans are prohibited from IRA-based accounts"
+        },
+        {
+          "dimension": "Employee eligibility rules",
+          "a": "Must have earned at least $5,000 in any 2 prior years and expect $5,000 in current year",
+          "b": "Age 21+, worked in 3 of the last 5 years, and earned at least $800 in 2026 compensation"
+        }
+      ]
+    },
+    "verdict": "Choose a SIMPLE IRA if you want your staff to build their own savings through elective payroll deferrals, you have fewer than 100 workers, and your enterprise can reliably fund a mandatory annual 2% to 3% employer contribution. Choose a SEP-IRA if you run an owner-dominant firm, generate fluctuating annual revenue that demands contribution flexibility, or need to open and fund a plan retroactively up to your tax filing deadline. This recommendation is not for a business that wants employees to save their own money without an owner deciding the deposit percentage each cycle, because a SEP-IRA forbids worker deferrals entirely. The verdict flips toward a SEP-IRA if you miss the October 1 cut-off for a new SIMPLE IRA, or toward a full company 401(k) if your payroll exceeds 100 qualifying team members.",
+    "sections": [
+      {
+        "heading": "Core Funding Differences Between SIMPLE IRAs and SEP-IRAs",
+        "content": "A SIMPLE IRA divides the contribution responsibility between the employee and the business, while a SEP-IRA requires the business to supply every dollar deposited into the accounts.\n\nUnder a SIMPLE IRA, your staff members determine how much of their paycheck they wish to stash away through pre-tax or Roth salary reductions. The [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions) caps these elective deferrals at $17,000 for 2026. Employees who have reached age 50 can deposit an extra $4,000 catch-up contribution, and those aged 60 through 63 receive an enhanced catch-up ceiling of $5,250 under SECURE 2.0 legislation. On top of those worker contributions, the enterprise must add funds. You must either match worker contributions dollar-for-dollar up to 3% of their pay, or provide an across-the-board 2% nonelective deposit to every qualifying worker whether they save on their own or not.\n\nA SEP-IRA discards employee deferrals entirely. As an employer, you alone write the checks into each participant's individual account, and staff members cannot elect to have salary withheld into the plan. For 2026, the employer contribution limit per participant is the lesser of 25% of compensation or $72,000, calculated against an annual compensation ceiling of $360,000. Because all money comes from the business side, there is no employee catch-up allowance for workers over 50. The percentage you declare applies uniformly to everyone: if you put away 15% of your own compensation, you must fund 15% of pay for every eligible worker on your payroll."
+      },
+      {
+        "heading": "Mandatory Matching vs. Annual Discretionary Deposits",
+        "content": "The employer contribution in a SIMPLE IRA is an absolute requirement every single operating year, whereas a SEP-IRA allows the business owner to change or skip deposits as company revenue shifts.\n\nRunning a SIMPLE IRA means factoring retirement funding into your firm's permanent operating expenses. The IRS grants no holiday years where an employer can pass on contributions. If you select the 3% match, you are legally obligated to fund up to 3% of compensation for every employee who defers pay. If you select the 2% nonelective track, you must deposit 2% of compensation for every qualified worker, even those who do not put in a cent. For a firm running thin margins or navigating seasonal downturns, this fixed overhead can stress payroll accounts during lean quarters.\n\nA SEP-IRA provides complete financial breathing room from year to year. In a banner year with surplus operating revenue, the company can fund up to the full 25% limitation for all participants to reduce corporate taxable income. If profits drop or cash reserves dry up the following year, the company can scale the contribution down to 5%, 2%, or zero. The only binding rule is parity across your roster: whatever percentage the ownership allocates to itself must match the percentage funded for qualifying staff."
+      },
+      {
+        "heading": "The 25% Early-Withdrawal Penalty Unique to SIMPLE IRAs",
+        "content": "Employees who pull money out of a SIMPLE IRA within two years of their first contribution face a steep 25% early-distribution penalty instead of the standard 10% rate.\n\nUnder regular [IRS early distribution rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions), non-qualified withdrawals made before reaching age 59 1/2 trigger regular income tax plus a 10% excise penalty. Congress altered this framework for the SIMPLE IRA structure to discourage participants from using the plan as a short-term cash stash. The [IRS SIMPLE IRA contribution guidelines](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits) dictate that any distribution taken within the initial two-year period, counted precisely from the date your initial contribution lands in the account, draws a harsh 25% penalty tax.\n\nThis two-year restriction also blocks rollovers to other account types like a traditional IRA or a qualified corporate 401(k). If a worker leaves your company nine months after opening their SIMPLE IRA and attempts to roll the balance into an individual brokerage IRA, the IRS considers that a distribution hit by the 25% excise tax. Once the 24-month clock clears, early distributions drop back to the standard 10% penalty rate. A SEP-IRA carries no such trap. Early withdrawals from a SEP-IRA are governed by standard traditional IRA statutes, meaning the penalty holds at 10% from day one."
+      },
+      {
+        "heading": "Setup Deadlines and Calendar Constraints for Business Owners",
+        "content": "A business must establish a new SIMPLE IRA by October 1 of the tax year, while a SEP-IRA can be opened and funded as late as your company tax filing deadline including extensions.\n\nTiming dictates whether a SIMPLE IRA is even viable for your immediate tax year. Federal guidelines require new SIMPLE IRA plans to be set up between January 1 and October 1 to apply to that current calendar year. This window ensures employees receive adequate advance notice to configure salary deferrals before payroll processing closes. If you start researching retirement plans in November, you cannot establish a retroactive SIMPLE IRA for that tax year. You are forced to wait until the following January 1, unless you launched your business after October 1 and execute the plan as soon as administratively feasible.\n\nA SEP-IRA offers unmatched flexibility for late-year tax planning. Because employees do not defer their own wages, the IRS lets an employer open and deposit into a SEP-IRA right up to the filing deadline of the business return. For an S-corporation or partnership with an extension, that window stretches all the way into September of the following calendar year. For a sole proprietorship filing Schedule C, the extended deadline runs to October 15. This retroactivity lets an entrepreneur calculate year-end net income with a certified public accountant, determine the exact deduction needed, and execute a SEP-IRA deposit months after the calendar year concludes."
+      },
+      {
+        "heading": "Staff Eligibility Rules and Long-Term Payroll Expansion",
+        "content": "A SEP-IRA lets you exclude newer or short-tenured staff through stricter vesting-service rules, but a SIMPLE IRA becomes legally unavailable if your overall payroll surpasses 100 workers.\n\nEmployee participation criteria differ substantially between the two programs. The [Department of Labor (DOL)](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/sep-retirement-plans-for-small-businesses) outlines that an employer running a SEP-IRA can legally exclude workers until they satisfy three baseline conditions: reaching age 21, working for the firm in at least three of the immediately preceding five years, and earning at least $800 in compensation for 2026. This three-of-five-year rule lets businesses with seasonal employees or frequent entry-level turnover avoid funding retirement deposits for transient workers. However, any employee who crosses those thresholds must receive the same contribution percentage as the owner.\n\nA SIMPLE IRA casts a wider net across short-term staff. An employee qualifies if they earned at least $5,000 during any two prior calendar years and expect to make $5,000 in the current year. Furthermore, the plan carries an absolute headcount ceiling. A business can only establish a SIMPLE IRA if it employs 100 or fewer workers who received at least $5,000 in compensation during the previous year. If your company steadily scales past 100 workers, you must phase out the SIMPLE IRA after a statutory grace period. At that stage, you will need to compare a traditional company vehicle by reviewing our [SIMPLE IRA vs 401(k)](/compare/simple-ira-vs-401k/) analysis to evaluate a full ERISA platform."
+      },
+      {
+        "heading": "Vesting Schedules, Account Loans, and Roth Allowances",
+        "content": "Both SIMPLE IRAs and SEP-IRAs require 100% immediate vesting on all dollars, prohibit participant plan loans, and offer Roth contribution accounts at participating brokerages.\n\nNeither vehicle permits a graded or cliff vesting schedule. In a traditional corporate 401(k), an employer might require workers to stay with the company for three to five years before they gain full ownership of company-matched dollars. In both SIMPLE IRAs and SEP-IRAs, every cent deposited belongs entirely to the employee the second the transfer settles. If an employee quits twenty-four hours after receiving a 3% match or a 15% SEP contribution, they walk away with the entire balance.\n\nBorrowing rules are similarly restrictive because both programs operate on the individual retirement account framework rather than corporate trust foundations. Plan participants cannot take out personal loans against their SIMPLE IRA or SEP-IRA balances. If you or your staff need access to plan capital, an ERISA-governed qualified plan is necessary. You can review our breakdown of the [Solo 401(k) vs SIMPLE IRA](/compare/solo-401k-vs-simple-ira/) to examine how solo operators use loan provisions.\n\nSECURE 2.0 modernized both plans by authorizing Roth options starting in 2023. At participating institutions, employees can elect to treat SIMPLE IRA salary deferrals as after-tax Roth contributions, and business owners can designate employer match or SEP contributions as Roth income. Selecting the Roth option means the participant pays upfront income tax on the contribution in exchange for tax-free withdrawals in retirement. Check with your custodian before opening an account, as not every financial custodian has rolled out administrative support for Roth SIMPLE or Roth SEP accounts."
+      },
+      {
+        "heading": "Choosing the Right Plan for Your Small Business",
+        "content": "Selecting between a SIMPLE IRA and a SEP-IRA comes down to whether your employees want to save their own money and whether your business can support a mandatory annual match.\n\nChoose a SIMPLE IRA when your workers actively request a payroll deduction vehicle to build their own nest egg. Because the employee supplies up to $17,000 on their own in 2026, your business can provide a competitive benefit package while keeping employer contributions capped at 2% or 3% of payroll. This setup shines for professional service outfits, small dental practices, and retail operations with a stable, loyal workforce that values salary deferrals.\n\nChoose a SEP-IRA when your primary goal is maximizing contributions for yourself or an ownership group, or when your business income moves through sharp boom-and-bust cycles. A solo consultant or high-earning freelancer can deposit up to $72,000 under the [IRS SEP contribution rules](https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps), sheltering significantly more income than the SIMPLE IRA deferral limit allows. Solo operators comparing these caps should also consult our guide on [SEP-IRA vs Solo 401(k)](/compare/sep-ira-vs-solo-401k/) to see how single-owner setups handle deferrals. For firms with multiple employees, a SEP-IRA works best when you have few long-term staff, or when you are willing to fund generous retirement balances across the entire team during your most profitable years.\n\nCalculate your team's projected annual compensation and run those figures through our [retirement savings calculator](/retirement/retirement-savings-calculator/) to see how required matching versus discretionary profit allocations shift your company's balance sheet over time."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between a SIMPLE IRA and a SEP-IRA?",
+        "answer": "The main difference is who puts money into the account. A SIMPLE IRA allows employees to contribute their own pay through salary deferrals up to $17,000 in 2026, combined with a mandatory employer match of up to 3% or a flat 2% contribution. A SEP-IRA is funded entirely by the employer up to 25% of compensation, with no option for employees to make elective salary deferrals."
+      },
+      {
+        "question": "Can employees contribute to a SEP-IRA?",
+        "answer": "No, employees cannot make personal salary deferrals into a SEP-IRA. The account is funded exclusively through employer contributions. If an employee wants to save personal wages beyond what their employer deposits into the SEP-IRA, they must open a separate traditional or Roth IRA on their own outside the workplace."
+      },
+      {
+        "question": "Is the SIMPLE IRA early-withdrawal penalty really 25%?",
+        "answer": "Yes, if an employee takes a non-qualified withdrawal from a SIMPLE IRA within the first two years of participating in the plan, the federal penalty is 25% instead of the standard 10%. The two-year period begins on the day the first contribution is deposited into the worker's account. After that initial two-year window closes, the penalty drops to the normal 10% rate for participants under age 59 1/2."
+      },
+      {
+        "question": "Can I still set up a SEP-IRA after October 1?",
+        "answer": "Yes, you can establish and fund a SEP-IRA after October 1. Unlike a SIMPLE IRA, which has a strict October 1 setup deadline for the current calendar year, a SEP-IRA can be opened and funded as late as your business tax filing deadline, including extensions. This allows owners to establish a plan well into the following calendar year for the prior tax season."
+      },
+      {
+        "question": "Which is better for a small business with employees, a SIMPLE IRA or a SEP-IRA?",
+        "answer": "A SIMPLE IRA is generally better if you want employees to fund their own retirement while capping the company's financial commitment at a 2% to 3% match. A SEP-IRA is usually better if the business experiences highly volatile profits and needs the legal right to skip or alter contributions each year, or if the enterprise has few eligible non-owner employees."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, COLA Increases for Dollar Limitations on Benefits and Contributions",
+        "url": "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+      },
+      {
+        "label": "IRS, Retirement Topics: SIMPLE IRA Contribution Limits",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits"
+      },
+      {
+        "label": "IRS, Exceptions to Tax on Early Distributions",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions"
+      },
+      {
+        "label": "IRS, SEP Contribution Limits",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps"
+      },
+      {
+        "label": "Department of Labor, SEP Retirement Plans for Small Businesses",
+        "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/sep-retirement-plans-for-small-businesses"
+      }
+    ],
+    "relatedComparisons": [
+      "sep-ira-vs-solo-401k",
+      "simple-ira-vs-401k",
+      "traditional-ira-vs-simple-ira",
+      "solo-401k-vs-simple-ira"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Retirement Savings Calculator",
+        "href": "/retirement/retirement-savings-calculator/"
+      },
+      {
+        "label": "Net Worth Calculator",
+        "href": "/net-worth/"
+      }
+    ]
+  },
+  {
+    "slug": "roth-403b-vs-roth-ira",
+    "updated": "2026-09-23",
+    "title": "Roth 403(b) vs. Roth IRA: Which Should You Fund First?",
+    "metaDescription": "Roth 403(b) vs Roth IRA: compare 2026 contribution limits, income rules, employer matching, and withdrawal terms to pick the right account.",
+    "targetKeyword": "roth 403b vs roth ira",
+    "optionA": "Roth 403(b)",
+    "optionB": "Roth IRA",
+    "segment": "Retirement accounts for nonprofit/school/hospital employees",
+    "h1": "Roth 403(b) vs. Roth IRA: Which Should You Fund First?",
+    "introText": "Choose your employer's Roth 403(b) first if you receive a matching contribution or want to save up to $24,500 in 2026, and choose a Roth individual retirement account (Roth IRA) if you want full control over your investment choices and penalty-free access to your original contributions.\n\nAt ModernWallet, we evaluate retirement account structures to help public service and healthcare workers allocate their savings efficiently. Many eligible employees do not have to choose between them because the Internal Revenue Service (IRS) allows you to fund both accounts simultaneously up to their separate limits.\n\nA Roth 403(b) is an employer-sponsored plan offered by public schools, charities, and hospital systems, while a Roth IRA is an individual account you establish independently with a brokerage firm. Both accounts accept after-tax dollars and provide tax-free growth and tax-free withdrawals in retirement. The practical divide between them comes down to contribution size, income eligibility barriers, employer matches, and early withdrawal flexibility.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Account access",
+          "a": "Employees of eligible public schools, nonprofits, and hospital systems",
+          "b": "Any individual with taxable earned income below IRS limits"
+        },
+        {
+          "dimension": "2026 contribution limit",
+          "a": "$24,500 ($32,500 if age 50 or older; $35,750 for ages 60 to 63)",
+          "b": "$7,500 ($8,600 if age 50 or older)"
+        },
+        {
+          "dimension": "Income eligibility limits",
+          "a": "None (all eligible employees can participate)",
+          "b": "Single phase-out at $153,000 to $168,000; joint phase-out at $242,000 to $252,000"
+        },
+        {
+          "dimension": "Employer matching",
+          "a": "Available if offered by the employer (pre-tax or Roth)",
+          "b": "None (opened independently without an employer)"
+        },
+        {
+          "dimension": "Lifetime required minimum distributions",
+          "a": "None for original account owners starting in 2024",
+          "b": "None for original account owners"
+        },
+        {
+          "dimension": "Investment selection",
+          "a": "Limited to employer-selected menu of funds and annuities",
+          "b": "Broad selection of stocks, bonds, and funds across the open market"
+        },
+        {
+          "dimension": "Access to contributions before retirement",
+          "a": "Restricted by plan rules; withdrawals are pro-rata earnings and contributions",
+          "b": "Original contributions can be withdrawn at any time without tax or penalty"
+        }
+      ]
+    },
+    "verdict": "Prioritize a Roth 403(b) if your employer offers a matching contribution, if you plan to save more than $7,500 in 2026, or if your income exceeds the Roth IRA eligibility thresholds. Prioritize a Roth IRA if you want broad investment choices across individual stocks and low-cost index funds, or if you want the freedom to pull out your original contributions at any time without triggering taxes or penalties. This recommendation is not for employees who assume the two accounts share a combined contribution ceiling, because their limits are entirely distinct. Our recommendation would change if your income climbs past the Roth IRA phase-out threshold, eliminating direct IRA eligibility, or if your employer updates its plan design to offer matching dollars directly into your Roth account.",
+    "sections": [
+      {
+        "heading": "Contribution Limits and 2026 Catch-Up Allowances",
+        "content": "A Roth 403(b) provides more than three times the annual savings room of a Roth IRA. For the 2026 tax year, the [IRS employee elective-deferral limit](https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions) under Internal Revenue Code (IRC) Section 402(g) caps Roth 403(b) employee contributions at $24,500. By contrast, an individual can contribute up to $7,500 to a [Roth IRA](https://www.irs.gov/retirement-plans/roth-iras) across the same tax year.\n\nCatch-up contribution rules also favor the workplace plan by a wide margin. Savers who are age 50 and older can contribute an additional $8,000 to a Roth 403(b) in 2026, bringing their personal contribution ceiling to $32,500. Under changes introduced by SECURE 2.0, participants aged 60, 61, 62, and 63 qualify for an enhanced catch-up contribution of $11,250, lifting their total 2026 limit to $35,750. The Roth IRA allows a catch-up contribution of $1,100 for workers age 50 and older, reaching an annual maximum of $8,600.\n\nBecause these account ceilings operate under different sections of the tax code, contributing to one account does not reduce your allowance in the other. A 45-year-old teacher who can afford to save $32,000 each year can place $24,500 into a district Roth 403(b) and the remaining $7,500 into an individual Roth account. You can use our [retirement savings calculator](/retirement/retirement-savings-calculator/) to project how maximizing both account buckets accelerates your target retirement date."
+      },
+      {
+        "heading": "Income Limits and the High-Earner Advantage",
+        "content": "A designated Roth 403(b) has zero income limits, making it universally available to any employee whose organization offers the plan. Whether you earn $45,000 or $450,000, you can direct up to $24,500 of your wages into the Roth balance of your workplace plan. This feature makes the account accessible to high-earning physicians, tenured professors, and hospital administrators who cannot make direct contributions to an individual Roth account.\n\nA Roth IRA imposes strict modified adjusted gross income (MAGI) phase-out ranges that change annually with inflation. According to [IRS 2026 contribution guidance](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), single filers can make a full Roth IRA contribution if their MAGI sits below $153,000. Their allowable contribution scales down between $153,000 and $168,000, reaching zero once income hits $168,000. For married couples filing jointly, the phase-out range runs from $242,000 to $252,000.\n\nThis distinction creates an important strategic path for professionals in public institutions. If your household income exceeds $252,000, the workplace Roth 403(b) remains your straightforward method for accumulating tax-free retirement assets. You do not need to execute multi-step conversion maneuvers to secure Roth treatment on your retirement contributions."
+      },
+      {
+        "heading": "Employer Matching and SECURE 2.0 Account Rules",
+        "content": "A Roth 403(b) can receive an employer matching contribution, whereas a Roth IRA never provides matching funds. If your school district or healthcare organization offers a 50% match on the first 6% of compensation you contribute, funding your workplace account guarantees an immediate return on your capital. Skipping the workplace account to fund an outside IRA alone means leaving guaranteed employer dollars uncollected.\n\nHistorically, employer matching funds had to enter an employee's pre-tax account, even when the worker made all deferrals into a designated Roth account. That rule meant account owners ended up with two distinct balances: their own after-tax Roth contributions and a pre-tax employer balance that faced standard income taxes upon withdrawal in retirement. SECURE 2.0 changed this dynamic by allowing employers to deposit vested matching contributions directly into an employee's Roth account if the employer updates its plan documents.\n\nNot every workplace has added this provision, so check with your human resources department to verify whether matching dollars land on a pre-tax or Roth basis. Even when matches remain pre-tax, capturing the match remains your primary savings priority before you allocate capital to outside accounts. Workers evaluating broader employer benefits can read our [403(b) vs 401(k)](/compare/403b-vs-401k/) analysis to see how institutional retirement programs compare."
+      },
+      {
+        "heading": "Early Withdrawals and Access to Your Principal",
+        "content": "A Roth IRA provides significantly greater liquidity than a Roth 403(b) before you reach age 59 1/2. IRS ordering rules dictate that all distributions from a Roth IRA come from your original contributions first. Because you already paid income tax on that money, you can withdraw your principal balance at any age, for any reason, with zero taxes and zero early withdrawal penalties.\n\nA Roth 403(b) follows the restrictive distribution framework of employer-sponsored plans. You generally cannot take money out of a 403(b) plan while still employed unless you reach age 59 1/2, separate from service, or qualify for a documented hardship distribution. Even if your plan allows an in-service distribution, the IRS does not treat workplace plan withdrawals as contribution-first.\n\nWorkplace plan distributions are calculated on a pro-rata basis between contributions and earnings. If your account holds $80,000 of contributions and $20,000 of investment earnings, any withdrawal consists of 80% principal and 20% growth. The earnings portion faces regular income tax and a 10% early withdrawal penalty if you do not meet an IRS qualifying condition. If you want a backup safety reserve alongside your regular emergency fund, a Roth IRA offers superior accessibility."
+      },
+      {
+        "heading": "Investment Menus and Administrative Expenses",
+        "content": "A Roth IRA grants you complete freedom to invest across the entire public financial market. You can open an account with any major custodian and build a portfolio using individual stocks, exchange-traded funds, low-cost broad-market index funds, and bonds. This self-directed structure allows you to keep annual expense ratios near zero while avoiding account maintenance charges.\n\nA Roth 403(b) restricts your money to an investment menu curated by your employer and third-party plan administrators. In the public education sector, 403(b) plans historically featured insurance products, including fixed and variable annuities with surrender charges and elevated administrative fees. While modern plans often include institutional mutual funds, you cannot purchase assets outside the official employer list.\n\nInvestment fees cut directly into compound growth over multi-decade careers. If your employer's plan menu consists exclusively of high-fee variable annuities with annual drag exceeding 1.5%, you may want to capture your employer match and direct subsequent retirement dollars into an independent Roth IRA. Savers in state or municipal roles who also have access to deferred compensation plans can review our [457(b) vs 403(b)](/compare/457b-vs-403b/) comparison to identify lower-cost investment options."
+      },
+      {
+        "heading": "Distribution Rules and the 5-Year Holding Period",
+        "content": "Both accounts require owners to satisfy a 5-year aging rule before earnings can be withdrawn completely tax-free. For a Roth IRA, the 5-year clock begins on January 1 of the tax year for which you made your very first contribution to any Roth IRA. Once satisfied, you never need to restart the clock on a separate Roth IRA.\n\nA designated Roth account inside an employer plan operates on its own 5-year holding rule. Satisfying the 5-year period in a Roth IRA does not satisfy the timing test for your Roth 403(b), and fulfilling the requirement in your 403(b) does not qualify an outside IRA. If you roll over an eligible Roth 403(b) balance into a Roth IRA after leaving your job, IRS rules apply the original start date of the receiving Roth IRA to determine whether future earnings distributions qualify as tax-free.\n\nRequired minimum distributions (RMDs) no longer separate these two accounts during your lifetime. Per SECURE 2.0 Section 325, designated Roth accounts inside employer plans no longer require lifetime RMDs for the original account owner, mirroring the longstanding rule for Roth IRAs. Beneficiaries who inherit either account type remain subject to mandatory distribution timelines, but original owners can let their balances compound undisturbed throughout retirement."
+      },
+      {
+        "heading": "How to Coordinate Contributions Across Both Plans",
+        "content": "The most effective long-term strategy for many public-sector workers involves using both accounts systematically. Begin by contributing enough to your Roth 403(b) to claim the entire employer match, guaranteeing that you receive every dollar of institutional support. If your household budget allows for additional savings, direct the next wave of capital into a Roth IRA to gain access to low-cost funds and penalty-free principal withdrawals.\n\nIf you max out the Roth IRA limit of $7,500 and still have investable cash flow, return to your Roth 403(b) to use the remaining portion of your $24,500 employee elective-deferral room. This sequential funding pattern gives you maximum employer contributions, optimal investment variety, and large-scale tax-free accumulation. You can test your personal savings pace using our free [401(k) calculator](/retirement/401k-calculator/) to see the compounding impact of staged contributions.\n\nEmployees with access to other municipal structures should also consider our [457(b) vs Roth IRA](/compare/457b-vs-roth-ira/) guide, or check our [Roth IRA vs Roth 401(k)](/compare/roth-ira-vs-roth-401k/) breakdown to see how private-sector corporate plans compare. If you are debating pre-tax versus after-tax account types, our [Roth IRA vs traditional IRA](/compare/roth-ira-vs-traditional-ira/) review breaks down the long-term tax calculations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between a Roth 403(b) and a Roth IRA?",
+        "answer": "A Roth 403(b) is an employer-sponsored plan for public education, hospital, and non-profit staff that allows up to $24,500 in employee contributions for 2026, offers employer matching, and has no income restrictions. A Roth IRA is an individually opened account with a $7,500 contribution cap, strict income eligibility ceilings, full self-directed investment flexibility, and penalty-free access to your original contributions at any time."
+      },
+      {
+        "question": "Does a Roth 403(b) have an income limit?",
+        "answer": "No, a Roth 403(b) has no income restrictions. Any employee eligible to participate in their organization's 403(b) plan can direct contributions into the designated Roth account, regardless of how much money they earn. This contrasts with a Roth IRA, which completely phases out direct contributions for single filers earning $168,000 or more and married joint filers earning $252,000 or more in 2026."
+      },
+      {
+        "question": "Can I contribute to both a Roth 403(b) and a Roth IRA in the same year?",
+        "answer": "Yes, you can contribute to both accounts simultaneously if your income allows you to fund a Roth IRA. The contribution limits are separate and do not offset each other. For 2026, an eligible worker under age 50 can save up to $24,500 in a Roth 403(b) and up to $7,500 in a Roth IRA, creating a total annual tax-free contribution capacity of $32,000."
+      },
+      {
+        "question": "Do Roth 403(b) accounts have required minimum distributions?",
+        "answer": "No, original account owners are no longer required to take lifetime minimum distributions from a Roth 403(b). Effective starting in the 2024 tax year under SECURE 2.0 Section 325, designated Roth accounts in workplace retirement plans match Roth IRAs in having zero lifetime RMD obligations. Note that inherited accounts are still subject to beneficiary distribution rules, and pre-tax balances in the same plan still require RMDs."
+      },
+      {
+        "question": "Can I withdraw my Roth IRA contributions before retirement without a penalty?",
+        "answer": "Yes, you can withdraw original contributions from a Roth IRA at any time, at any age, and for any reason without paying income taxes or early withdrawal penalties. IRS ordering rules consider distributions to come from contributed principal first. This freedom does not apply to a Roth 403(b), where in-service distributions are restricted by plan rules and any permitted withdrawal is split pro-rata between contributions and earnings."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS: COLA Increases for Dollar Limitations on Benefits and Contributions",
+        "url": "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+      },
+      {
+        "label": "IRS: 401(k) Limit Increases to $24,500 for 2026, IRA Limit to $7,500",
+        "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+      },
+      {
+        "label": "IRS: Roth IRAs",
+        "url": "https://www.irs.gov/retirement-plans/roth-iras"
+      },
+      {
+        "label": "IRS: Retirement Plans FAQs on Designated Roth Accounts",
+        "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-on-designated-roth-accounts"
+      }
+    ],
+    "relatedComparisons": [
+      "403b-vs-401k",
+      "457b-vs-403b",
+      "457b-vs-roth-ira",
+      "roth-ira-vs-traditional-ira",
+      "roth-ira-vs-roth-401k"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "401(k) Calculator",
+        "href": "/retirement/401k-calculator/"
+      },
+      {
+        "label": "Retirement Savings Calculator",
+        "href": "/retirement/retirement-savings-calculator/"
+      }
+    ]
+  },
+
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

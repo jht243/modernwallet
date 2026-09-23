@@ -1,0 +1,25 @@
+{
+  "slug": "is-3-million-enough-to-retire-at-40",
+  "title": "Is $3 Million Enough to Retire at 40?",
+  "metaDescription": "Is $3 million enough to retire at 40? See what it supports at a safe withdrawal rate, how a family vs. single lifestyle changes the math, and the risks.",
+  "h1": "Is $3 Million Enough to Retire at 40?",
+  "cardBlurb": "What $3 million actually supports at a safe withdrawal rate, how location and family size change the math, and the risks worth planning around.",
+  "introText": "For a 40-year-old retiree, $3 million supports roughly $90,000 to $105,000 in annual spending, based on the more conservative 3% to 3.5% withdrawal rate appropriate for a 50-plus-year retirement horizon. Whether that's enough depends entirely on your actual expenses, location, and whether you're supporting a family or just yourself. This guide breaks down the real numbers, compares a few household scenarios, and explains the risks that can erode even a $3 million cushion faster than the math suggests.",
+  "sections": [
+    { "heading": "The starting math: what $3 million actually generates", "body": "A 40-year-old retiree faces a much longer withdrawal period than the 30-year retirement the standard 4% rule was built around, so a more conservative 3% to 3.5% withdrawal rate is the more defensible starting point. At 3.5%, $3 million supports about $105,000 a year before tax; at a more conservative 3%, that drops to $90,000." },
+    { "heading": "The bottom line", "body": "Three million dollars is enough for many 40-year-old retirees, particularly a single person or couple with no dependents in a moderate-to-lower cost-of-living area, using a conservative 3% to 3.5% withdrawal rate. Run your own specific numbers rather than treating $3 million as a universal yes-or-no answer." }
+  ],
+  "tools": [
+    { "href": "/retirement/fire-calculator/", "label": "FIRE calculator" },
+    { "href": "/retirement/early-retirement-calculator/", "label": "Early retirement" },
+    { "href": "/portfolio/portfolio-risk-calculator/", "label": "Portfolio risk" },
+    { "href": "/budget/", "label": "Budget" }
+  ],
+  "faqs": [
+    { "question": "Is $3 million enough to retire at 40?", "answer": "For many people, yes — at a conservative 3% to 3.5% withdrawal rate appropriate for a 50-plus-year retirement, $3 million supports roughly $90,000 to $105,000 a year. Whether that's enough for you depends on your actual expenses, location, and whether you're supporting dependents, so run your own numbers rather than relying on the average." }
+  ],
+  "sources": [
+    { "label": "Cooley, Hubbard & Walz — 'Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable' (Trinity Study), AAII Journal, 1998", "url": "https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable" },
+    { "label": "SSA — Retirement Age and Benefit Reduction", "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html" }
+  ]
+}

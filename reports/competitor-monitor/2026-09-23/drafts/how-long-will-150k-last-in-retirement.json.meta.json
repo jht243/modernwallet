@@ -1,0 +1,52 @@
+{
+ "slug": "how-long-will-150k-last-in-retirement",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2014,
+ "floor": 1200,
+ "input_tokens": 18254,
+ "output_tokens": 3611,
+ "thinking_tokens": null,
+ "cached_tokens": 16297,
+ "est_cost_usd": 0.0181,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2014,
+  "numbers_not_in_facts": [
+   "1400",
+   "2000",
+   "2200",
+   "2480",
+   "250",
+   "2571",
+   "2821",
+   "3000",
+   "3800",
+   "4000",
+   "401",
+   "45",
+   "600",
+   "800"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16622
+  }
+ },
+ "seconds": 17.6,
+ "response_id": "wka0apXAEuLV-sAP146S-Q0",
+ "generated_at": "2026-09-23T21:38:27+0000"
+}

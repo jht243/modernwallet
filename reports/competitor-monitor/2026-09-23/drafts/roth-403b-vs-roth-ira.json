@@ -1,0 +1,138 @@
+{
+  "slug": "roth-403b-vs-roth-ira",
+  "title": "Roth 403(b) vs. Roth IRA: Which Should You Fund First?",
+  "metaDescription": "Roth 403(b) vs Roth IRA: compare 2026 contribution limits, income rules, employer matching, and withdrawal terms to pick the right account.",
+  "targetKeyword": "roth 403b vs roth ira",
+  "optionA": "Roth 403(b)",
+  "optionB": "Roth IRA",
+  "segment": "Retirement accounts for nonprofit/school/hospital employees",
+  "h1": "Roth 403(b) vs. Roth IRA: Which Should You Fund First?",
+  "introText": "Choose your employer's Roth 403(b) first if you receive a matching contribution or want to save up to $24,500 in 2026, and choose a Roth individual retirement account (Roth IRA) if you want full control over your investment choices and penalty-free access to your original contributions.\n\nAt ModernWallet, we evaluate retirement account structures to help public service and healthcare workers allocate their savings efficiently. Many eligible employees do not have to choose between them because the Internal Revenue Service (IRS) allows you to fund both accounts simultaneously up to their separate limits.\n\nA Roth 403(b) is an employer-sponsored plan offered by public schools, charities, and hospital systems, while a Roth IRA is an individual account you establish independently with a brokerage firm. Both accounts accept after-tax dollars and provide tax-free growth and tax-free withdrawals in retirement. The practical divide between them comes down to contribution size, income eligibility barriers, employer matches, and early withdrawal flexibility.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Account access",
+        "a": "Employees of eligible public schools, nonprofits, and hospital systems",
+        "b": "Any individual with taxable earned income below IRS limits"
+      },
+      {
+        "dimension": "2026 contribution limit",
+        "a": "$24,500 ($32,500 if age 50 or older; $35,750 for ages 60 to 63)",
+        "b": "$7,500 ($8,600 if age 50 or older)"
+      },
+      {
+        "dimension": "Income eligibility limits",
+        "a": "None (all eligible employees can participate)",
+        "b": "Single phase-out at $153,000 to $168,000; joint phase-out at $242,000 to $252,000"
+      },
+      {
+        "dimension": "Employer matching",
+        "a": "Available if offered by the employer (pre-tax or Roth)",
+        "b": "None (opened independently without an employer)"
+      },
+      {
+        "dimension": "Lifetime required minimum distributions",
+        "a": "None for original account owners starting in 2024",
+        "b": "None for original account owners"
+      },
+      {
+        "dimension": "Investment selection",
+        "a": "Limited to employer-selected menu of funds and annuities",
+        "b": "Broad selection of stocks, bonds, and funds across the open market"
+      },
+      {
+        "dimension": "Access to contributions before retirement",
+        "a": "Restricted by plan rules; withdrawals are pro-rata earnings and contributions",
+        "b": "Original contributions can be withdrawn at any time without tax or penalty"
+      }
+    ]
+  },
+  "verdict": "Prioritize a Roth 403(b) if your employer offers a matching contribution, if you plan to save more than $7,500 in 2026, or if your income exceeds the Roth IRA eligibility thresholds. Prioritize a Roth IRA if you want broad investment choices across individual stocks and low-cost index funds, or if you want the freedom to pull out your original contributions at any time without triggering taxes or penalties. This recommendation is not for employees who assume the two accounts share a combined contribution ceiling, because their limits are entirely distinct. Our recommendation would change if your income climbs past the Roth IRA phase-out threshold, eliminating direct IRA eligibility, or if your employer updates its plan design to offer matching dollars directly into your Roth account.",
+  "sections": [
+    {
+      "heading": "Contribution Limits and 2026 Catch-Up Allowances",
+      "content": "A Roth 403(b) provides more than three times the annual savings room of a Roth IRA. For the 2026 tax year, the [IRS employee elective-deferral limit](https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions) under Internal Revenue Code (IRC) Section 402(g) caps Roth 403(b) employee contributions at $24,500. By contrast, an individual can contribute up to $7,500 to a [Roth IRA](https://www.irs.gov/retirement-plans/roth-iras) across the same tax year.\n\nCatch-up contribution rules also favor the workplace plan by a wide margin. Savers who are age 50 and older can contribute an additional $8,000 to a Roth 403(b) in 2026, bringing their personal contribution ceiling to $32,500. Under changes introduced by SECURE 2.0, participants aged 60, 61, 62, and 63 qualify for an enhanced catch-up contribution of $11,250, lifting their total 2026 limit to $35,750. The Roth IRA allows a catch-up contribution of $1,100 for workers age 50 and older, reaching an annual maximum of $8,600.\n\nBecause these account ceilings operate under different sections of the tax code, contributing to one account does not reduce your allowance in the other. A 45-year-old teacher who can afford to save $32,000 each year can place $24,500 into a district Roth 403(b) and the remaining $7,500 into an individual Roth account. You can use our [retirement savings calculator](/retirement/retirement-savings-calculator/) to project how maximizing both account buckets accelerates your target retirement date."
+    },
+    {
+      "heading": "Income Limits and the High-Earner Advantage",
+      "content": "A designated Roth 403(b) has zero income limits, making it universally available to any employee whose organization offers the plan. Whether you earn $45,000 or $450,000, you can direct up to $24,500 of your wages into the Roth balance of your workplace plan. This feature makes the account accessible to high-earning physicians, tenured professors, and hospital administrators who cannot make direct contributions to an individual Roth account.\n\nA Roth IRA imposes strict modified adjusted gross income (MAGI) phase-out ranges that change annually with inflation. According to [IRS 2026 contribution guidance](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), single filers can make a full Roth IRA contribution if their MAGI sits below $153,000. Their allowable contribution scales down between $153,000 and $168,000, reaching zero once income hits $168,000. For married couples filing jointly, the phase-out range runs from $242,000 to $252,000.\n\nThis distinction creates an important strategic path for professionals in public institutions. If your household income exceeds $252,000, the workplace Roth 403(b) remains your straightforward method for accumulating tax-free retirement assets. You do not need to execute multi-step conversion maneuvers to secure Roth treatment on your retirement contributions."
+    },
+    {
+      "heading": "Employer Matching and SECURE 2.0 Account Rules",
+      "content": "A Roth 403(b) can receive an employer matching contribution, whereas a Roth IRA never provides matching funds. If your school district or healthcare organization offers a 50% match on the first 6% of compensation you contribute, funding your workplace account guarantees an immediate return on your capital. Skipping the workplace account to fund an outside IRA alone means leaving guaranteed employer dollars uncollected.\n\nHistorically, employer matching funds had to enter an employee's pre-tax account, even when the worker made all deferrals into a designated Roth account. That rule meant account owners ended up with two distinct balances: their own after-tax Roth contributions and a pre-tax employer balance that faced standard income taxes upon withdrawal in retirement. SECURE 2.0 changed this dynamic by allowing employers to deposit vested matching contributions directly into an employee's Roth account if the employer updates its plan documents.\n\nNot every workplace has added this provision, so check with your human resources department to verify whether matching dollars land on a pre-tax or Roth basis. Even when matches remain pre-tax, capturing the match remains your primary savings priority before you allocate capital to outside accounts. Workers evaluating broader employer benefits can read our [403(b) vs 401(k)](/compare/403b-vs-401k/) analysis to see how institutional retirement programs compare."
+    },
+    {
+      "heading": "Early Withdrawals and Access to Your Principal",
+      "content": "A Roth IRA provides significantly greater liquidity than a Roth 403(b) before you reach age 59 1/2. IRS ordering rules dictate that all distributions from a Roth IRA come from your original contributions first. Because you already paid income tax on that money, you can withdraw your principal balance at any age, for any reason, with zero taxes and zero early withdrawal penalties.\n\nA Roth 403(b) follows the restrictive distribution framework of employer-sponsored plans. You generally cannot take money out of a 403(b) plan while still employed unless you reach age 59 1/2, separate from service, or qualify for a documented hardship distribution. Even if your plan allows an in-service distribution, the IRS does not treat workplace plan withdrawals as contribution-first.\n\nWorkplace plan distributions are calculated on a pro-rata basis between contributions and earnings. If your account holds $80,000 of contributions and $20,000 of investment earnings, any withdrawal consists of 80% principal and 20% growth. The earnings portion faces regular income tax and a 10% early withdrawal penalty if you do not meet an IRS qualifying condition. If you want a backup safety reserve alongside your regular emergency fund, a Roth IRA offers superior accessibility."
+    },
+    {
+      "heading": "Investment Menus and Administrative Expenses",
+      "content": "A Roth IRA grants you complete freedom to invest across the entire public financial market. You can open an account with any major custodian and build a portfolio using individual stocks, exchange-traded funds, low-cost broad-market index funds, and bonds. This self-directed structure allows you to keep annual expense ratios near zero while avoiding account maintenance charges.\n\nA Roth 403(b) restricts your money to an investment menu curated by your employer and third-party plan administrators. In the public education sector, 403(b) plans historically featured insurance products, including fixed and variable annuities with surrender charges and elevated administrative fees. While modern plans often include institutional mutual funds, you cannot purchase assets outside the official employer list.\n\nInvestment fees cut directly into compound growth over multi-decade careers. If your employer's plan menu consists exclusively of high-fee variable annuities with annual drag exceeding 1.5%, you may want to capture your employer match and direct subsequent retirement dollars into an independent Roth IRA. Savers in state or municipal roles who also have access to deferred compensation plans can review our [457(b) vs 403(b)](/compare/457b-vs-403b/) comparison to identify lower-cost investment options."
+    },
+    {
+      "heading": "Distribution Rules and the 5-Year Holding Period",
+      "content": "Both accounts require owners to satisfy a 5-year aging rule before earnings can be withdrawn completely tax-free. For a Roth IRA, the 5-year clock begins on January 1 of the tax year for which you made your very first contribution to any Roth IRA. Once satisfied, you never need to restart the clock on a separate Roth IRA.\n\nA designated Roth account inside an employer plan operates on its own 5-year holding rule. Satisfying the 5-year period in a Roth IRA does not satisfy the timing test for your Roth 403(b), and fulfilling the requirement in your 403(b) does not qualify an outside IRA. If you roll over an eligible Roth 403(b) balance into a Roth IRA after leaving your job, IRS rules apply the original start date of the receiving Roth IRA to determine whether future earnings distributions qualify as tax-free.\n\nRequired minimum distributions (RMDs) no longer separate these two accounts during your lifetime. Per SECURE 2.0 Section 325, designated Roth accounts inside employer plans no longer require lifetime RMDs for the original account owner, mirroring the longstanding rule for Roth IRAs. Beneficiaries who inherit either account type remain subject to mandatory distribution timelines, but original owners can let their balances compound undisturbed throughout retirement."
+    },
+    {
+      "heading": "How to Coordinate Contributions Across Both Plans",
+      "content": "The most effective long-term strategy for many public-sector workers involves using both accounts systematically. Begin by contributing enough to your Roth 403(b) to claim the entire employer match, guaranteeing that you receive every dollar of institutional support. If your household budget allows for additional savings, direct the next wave of capital into a Roth IRA to gain access to low-cost funds and penalty-free principal withdrawals.\n\nIf you max out the Roth IRA limit of $7,500 and still have investable cash flow, return to your Roth 403(b) to use the remaining portion of your $24,500 employee elective-deferral room. This sequential funding pattern gives you maximum employer contributions, optimal investment variety, and large-scale tax-free accumulation. You can test your personal savings pace using our free [401(k) calculator](/retirement/401k-calculator/) to see the compounding impact of staged contributions.\n\nEmployees with access to other municipal structures should also consider our [457(b) vs Roth IRA](/compare/457b-vs-roth-ira/) guide, or check our [Roth IRA vs Roth 401(k)](/compare/roth-ira-vs-roth-401k/) breakdown to see how private-sector corporate plans compare. If you are debating pre-tax versus after-tax account types, our [Roth IRA vs traditional IRA](/compare/roth-ira-vs-traditional-ira/) review breaks down the long-term tax calculations."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between a Roth 403(b) and a Roth IRA?",
+      "answer": "A Roth 403(b) is an employer-sponsored plan for public education, hospital, and non-profit staff that allows up to $24,500 in employee contributions for 2026, offers employer matching, and has no income restrictions. A Roth IRA is an individually opened account with a $7,500 contribution cap, strict income eligibility ceilings, full self-directed investment flexibility, and penalty-free access to your original contributions at any time."
+    },
+    {
+      "question": "Does a Roth 403(b) have an income limit?",
+      "answer": "No, a Roth 403(b) has no income restrictions. Any employee eligible to participate in their organization's 403(b) plan can direct contributions into the designated Roth account, regardless of how much money they earn. This contrasts with a Roth IRA, which completely phases out direct contributions for single filers earning $168,000 or more and married joint filers earning $252,000 or more in 2026."
+    },
+    {
+      "question": "Can I contribute to both a Roth 403(b) and a Roth IRA in the same year?",
+      "answer": "Yes, you can contribute to both accounts simultaneously if your income allows you to fund a Roth IRA. The contribution limits are separate and do not offset each other. For 2026, an eligible worker under age 50 can save up to $24,500 in a Roth 403(b) and up to $7,500 in a Roth IRA, creating a total annual tax-free contribution capacity of $32,000."
+    },
+    {
+      "question": "Do Roth 403(b) accounts have required minimum distributions?",
+      "answer": "No, original account owners are no longer required to take lifetime minimum distributions from a Roth 403(b). Effective starting in the 2024 tax year under SECURE 2.0 Section 325, designated Roth accounts in workplace retirement plans match Roth IRAs in having zero lifetime RMD obligations. Note that inherited accounts are still subject to beneficiary distribution rules, and pre-tax balances in the same plan still require RMDs."
+    },
+    {
+      "question": "Can I withdraw my Roth IRA contributions before retirement without a penalty?",
+      "answer": "Yes, you can withdraw original contributions from a Roth IRA at any time, at any age, and for any reason without paying income taxes or early withdrawal penalties. IRS ordering rules consider distributions to come from contributed principal first. This freedom does not apply to a Roth 403(b), where in-service distributions are restricted by plan rules and any permitted withdrawal is split pro-rata between contributions and earnings."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS: COLA Increases for Dollar Limitations on Benefits and Contributions",
+      "url": "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+    },
+    {
+      "label": "IRS: 401(k) Limit Increases to $24,500 for 2026, IRA Limit to $7,500",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+      "label": "IRS: Roth IRAs",
+      "url": "https://www.irs.gov/retirement-plans/roth-iras"
+    },
+    {
+      "label": "IRS: Retirement Plans FAQs on Designated Roth Accounts",
+      "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-on-designated-roth-accounts"
+    }
+  ],
+  "relatedComparisons": [
+    "403b-vs-401k",
+    "457b-vs-403b",
+    "457b-vs-roth-ira",
+    "roth-ira-vs-traditional-ira",
+    "roth-ira-vs-roth-401k"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "401(k) Calculator",
+      "href": "/retirement/401k-calculator/"
+    },
+    {
+      "label": "Retirement Savings Calculator",
+      "href": "/retirement/retirement-savings-calculator/"
+    }
+  ]
+}

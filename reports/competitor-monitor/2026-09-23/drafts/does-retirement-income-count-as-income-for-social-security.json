@@ -1,0 +1,96 @@
+{
+  "slug": "does-retirement-income-count-as-income-for-social-security",
+  "title": "Does Retirement Income Count as Income for Social Security?",
+  "metaDescription": "Does retirement income count as income for Social Security? Learn why 401(k) withdrawals and pensions do not trigger the earnings test, and how limits work.",
+  "h1": "Does Retirement Income Count as Income for Social Security?",
+  "cardBlurb": "Retirement account withdrawals and pensions do not count against the Social Security earnings test. Learn how the 2026 rules separate wages from investments.",
+  "introText": "Retirement income from 401(k) plans, Individual Retirement Accounts (IRAs), pensions, and taxable investments does not count as income under the Social Security earnings test. At ModernWallet, we frequently see people delay taking portfolio distributions because they mistakenly believe every dollar of cash flow triggers benefit withholding.\n\nThe federal government evaluates your incoming money through two completely different mechanisms that serve separate purposes. One rule temporarily withholds checks if you work before your full retirement age. The other rule determines whether your monthly check faces federal income tax.\n\nUnderstanding the exact boundary between earned wages and passive investment withdrawals lets you plan retirement distributions without unexpected reductions. For benefit withholding specifically, the answer is a clear no.",
+  "sections": [
+    {
+      "heading": "How the Earnings Test Actually Treats Retirement Income",
+      "body": "Retirement distributions never reduce your monthly Social Security benefit under the retirement earnings test. When the [Social Security Administration (SSA)](https://www.ssa.gov/benefits/retirement/planner/whileworking.html) calculates whether your benefits must be withheld due to earnings, the agency looks solely at earned income from active employment. That category includes gross wages from a standard job and net earnings from self-employment.\n\nInvestment returns, pension annuities, and retirement account withdrawals fall into unearned income. This distinction means you can take substantial distributions from a traditional IRA or 401(k) without losing a single dollar of your monthly Social Security payment. The rule also covers private corporate pensions, state government pensions, annuities, stock dividends, bond interest, and capital gains.\n\nIf you receive $80,000 annually from a pension and withdraw another $40,000 from an IRA, the SSA records zero dollars of countable earnings against your benefits. Many pre-retirees confuse standard taxable income with countable earnings for benefit withholding, which causes unnecessary worry when planning initial portfolio withdrawals."
+    },
+    {
+      "heading": "How the Social Security Earnings Test Works in 2026",
+      "body": "The Social Security earnings test applies only to beneficiaries who collect benefits before reaching [Full Retirement Age (FRA)](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). For anyone born in 1960 or later, full retirement age is 67. If you claim benefits at age 62, 63, 64, 65, or 66 while continuing to work, your earned income faces statutory annual limits.\n\nAccording to the [SSA 2026 COLA Fact Sheet](https://www.ssa.gov/news/en/cola/factsheets/2026.html), two separate earnings limits govern beneficiaries in 2026. If you remain under full retirement age for the entire year, the annual earnings limit is $24,480. If your wages exceed that threshold, the SSA withholds $1 in benefits for every $2 you earn above $24,480.\n\nA different rule applies during the specific calendar year you reach full retirement age. In that year, the earnings limit jumps to $65,160, and the SSA withholds $1 for every $3 earned above the limit. Furthermore, the agency only counts the earnings you receive during the months before the exact month you reach full retirement age. Once you reach your full retirement age, the earnings test disappears entirely for every subsequent month, allowing you to earn unlimited wages without any withholding."
+    },
+    {
+      "heading": "What Counts as Income Under the Earnings Test",
+      "body": "Determining whether your money counts against Social Security requires sorting your cash flow into earned versus unearned categories. You can review your overall portfolio balance with our [retirement income calculator](/retirement/retirement-income-calculator/) to see how various assets generate ongoing payments.\n\nThe earned income category includes:\n\n- Gross wages, salaries, bonuses, commissions, and severance pay reported on a W-2 form.\n- Net earnings from self-employment reported on Schedule SE of your federal tax return.\n- Tips, royalties from work you personally created, and corporate director fees.\n\nThe unearned income category, which never counts toward the earnings test, includes:\n\n- Distributions from traditional and Roth 401(k) plans or 403(b) accounts.\n- Withdrawals from traditional, Roth, SEP, or SIMPLE IRAs.\n- Monthly payments from defined-benefit corporate, municipal, or military pensions.\n- Payouts from fixed, variable, or indexed annuities.\n- Capital gains from the sale of stock, real estate, or mutual fund shares.\n- Taxable interest from savings accounts, certificates of deposit, and treasury notes.\n- Dividend payments from brokerage holdings.\n- Net rental income from real estate properties where you act as an investor rather than a real estate professional."
+    },
+    {
+      "heading": "Working in Retirement and the Temporary Benefit Withholding",
+      "body": "Working while receiving early Social Security benefits can trigger withholding, but that withheld money is not permanently forfeited. When your earned income exceeds the annual limit, the SSA holds back complete monthly benefit checks until the required reduction amount is satisfied. Many workers assume this reduction acts as an irreversible financial penalty or a special tax.\n\nThe earnings test operates as a timing adjustment rather than a permanent loss. When you reach your full retirement age of 67, the SSA automatically recalculates your ongoing monthly benefit. The agency adjusts your lifetime benefit upward to credit back each month that a check was withheld.\n\nFor example, if you claimed benefits early and had a total of 18 monthly checks withheld over several years because of your job, the SSA recalculates your benefit at full retirement age as if you had claimed 18 months later. That higher monthly payout remains with you for the rest of your life. While having checks withheld creates an immediate cash-flow disruption during your working years, the underlying value is restored over your retirement horizon. You can model this dynamic using our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) to compare claiming ages against your work schedule. If you receive survivor payments while earning wages, consult our guide on [Social Security survivor benefits and working](/guides/social-security-survivor-benefits-and-working/) for related rules."
+    },
+    {
+      "heading": "Coordinating Account Withdrawals with Claiming Decisions",
+      "body": "While retirement distributions do not trigger the earnings test, they can affect your finances through a completely separate channel: the taxation of your benefits. This dual-track system creates confusion for retirees who assume clear sailing because their withdrawals pass the earnings test. The [IRS guidelines on Social Security income](https://www.irs.gov/faqs/social-security-income) and the [SSA tax rules](https://www.ssa.gov/benefits/retirement/planner/taxes.html) use an entirely different formula called combined income to evaluate your household.\n\nCombined income equals your adjusted gross income, plus any nontaxable municipal bond interest, plus one-half of your annual Social Security benefits. If you are a single tax filer, combined income between $25,000 and $34,000 makes up to 50% of your Social Security benefits subject to federal income tax. Single filers with combined income over $34,000 face taxation on up to 85% of their benefits. For married couples filing jointly, the 50% bracket spans combined income from $32,000 to $44,000, and amounts above $44,000 expose up to 85% of benefits to income tax.\n\nThese statutory thresholds have never been indexed for inflation since Congress enacted them. Consequently, pulling large distributions from a traditional IRA or taking a taxable pension easily pushes your combined income above $34,000 or $44,000. While the withdrawal will not reduce the gross dollar amount of your monthly Social Security check, it can trigger federal income taxes on the benefit. For a detailed breakdown of this calculation, read our guide on [is Social Security taxable](/guides/is-social-security-taxable/). When planning required minimum distributions from your accounts, you can use our [RMD calculator](/retirement/rmd-calculator/) to project future income spikes."
+    },
+    {
+      "heading": "Combining Multiple Income Streams Before Full Retirement Age",
+      "body": "Structuring multiple income streams allows you to maximize total monthly cash flow while remaining completely compliant with the earnings test. If you choose to claim benefits before reaching age 67, you can stack several unearned revenue sources on top of a part-time job without losing any monthly benefits.\n\nConsider a 63-year-old retiree in 2026 who works a part-time consulting role generating $20,000 in annual wages. Because $20,000 sits safely below the $24,480 earnings limit for beneficiaries under full retirement age, the SSA withholds zero dollars from their Social Security checks. That same retiree can simultaneously withdraw $35,000 from a traditional IRA, collect $15,000 from a former employer pension, and receive $12,000 in net rental income.\n\nTheir total gross cash flow equals $82,000, yet their countable earnings for Social Security remain strictly at $20,000. By keeping wage earnings below the annual cap and sourcing remaining living expenses from retirement portfolios, an early beneficiary prevents cash-flow disruptions while preserving steady monthly checks."
+    },
+    {
+      "heading": "Who This Rule Does Not Protect and When the Verdict Changes",
+      "body": "This distribution strategy works smoothly only if your wage income remains predictable. It does not protect individuals who attempt to claim early Social Security while keeping high-salary corporate roles or running high-revenue self-employment practices. A corporate manager earning $120,000 at age 63 who claims early benefits will see all or most of their checks withheld under the $1-for-$2 reduction rule. For those earning well above $24,480, claiming before full retirement age rarely makes sense unless health concerns or immediate survival needs force the decision.\n\nOur recommendation to claim early and supplement with portfolio withdrawals would also flip if Congress updates the earnings test statutes or indexing formulas. If legislators were to expand the definition of countable earnings to include investment income, or if your earned wages suddenly surpass the annual limit, claiming early loses its primary appeal. Until such statutory changes occur, retirees can rely on the legal boundary: unearned retirement income does not count against your Social Security checks.\n\nEvaluate your upcoming wage earnings against the annual cap, plan your investment distributions accordingly, and use our calculators to see exactly how each income source affects your Social Security check and your tax bill."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/retirement/social-security-retirement-calculator/",
+      "label": "Social Security retirement calculator"
+    },
+    {
+      "href": "/retirement/retirement-income-calculator/",
+      "label": "Retirement income calculator"
+    },
+    {
+      "href": "/retirement/rmd-calculator/",
+      "label": "RMD calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a 401(k) withdrawal count as income for Social Security?",
+      "answer": "No, a 401(k) withdrawal does not count as income for the Social Security retirement earnings test. The Social Security Administration only counts earned income, such as wages from a job and net self-employment earnings. Distributions from 401(k) accounts, traditional IRAs, and Roth IRAs are considered unearned income, so they will never reduce your monthly Social Security benefit check."
+    },
+    {
+      "question": "Does pension income reduce my Social Security check?",
+      "answer": "No, private and standard corporate pension income does not reduce your Social Security check under the earnings test. Pension payments represent unearned income and do not count toward the annual earnings limits. However, taking a pension can increase your combined income, which may make a portion of your Social Security benefit subject to federal income taxes."
+    },
+    {
+      "question": "What is the Social Security earnings limit for 2026?",
+      "answer": "For 2026, the earnings limit is $24,480 for beneficiaries who will be under full retirement age for the entire year. The Social Security Administration withholds $1 of benefits for every $2 earned above that limit. For beneficiaries reaching full retirement age in 2026, the limit is $65,160 for earnings in the months before reaching full retirement age, with a reduction of $1 for every $3 earned above the limit."
+    },
+    {
+      "question": "Does working after full retirement age reduce my Social Security benefit?",
+      "answer": "No, working after you reach full retirement age will not reduce your Social Security benefit. The earnings test ends completely starting the month you attain full retirement age, which is age 67 for anyone born in 1960 or later. From that month onward, you can earn an unlimited amount of wages without facing any benefit withholding."
+    },
+    {
+      "question": "Is money withheld under the earnings test lost permanently?",
+      "answer": "No, money withheld under the earnings test is not lost permanently. When you reach your full retirement age, the Social Security Administration recalculates your benefit to credit back the months in which your checks were withheld. This recalculation increases your monthly benefit amount going forward for the rest of your life."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SSA, How Work Affects Your Benefits",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/whileworking.html"
+    },
+    {
+      "label": "SSA, 2026 Social Security Changes Fact Sheet",
+      "url": "https://www.ssa.gov/news/en/cola/factsheets/2026.html"
+    },
+    {
+      "label": "SSA, Retirement Age and Benefit Reduction",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+    },
+    {
+      "label": "SSA, Income Taxes and Your Social Security Benefit",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/taxes.html"
+    },
+    {
+      "label": "IRS, Social Security Income FAQ",
+      "url": "https://www.irs.gov/faqs/social-security-income"
+    }
+  ]
+}

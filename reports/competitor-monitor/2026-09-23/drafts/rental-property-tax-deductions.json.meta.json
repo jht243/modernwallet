@@ -1,0 +1,39 @@
+{
+ "slug": "rental-property-tax-deductions",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1978,
+ "floor": 1200,
+ "input_tokens": 18511,
+ "output_tokens": 3459,
+ "thinking_tokens": 277,
+ "cached_tokens": 16297,
+ "est_cost_usd": 0.0187,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1978,
+  "numbers_not_in_facts": [
+   "414"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16622
+  }
+ },
+ "seconds": 19.1,
+ "response_id": "eUa0apvDOI3UjMcP4qG3uQs",
+ "generated_at": "2026-09-23T21:37:15+0000"
+}

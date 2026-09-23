@@ -1,0 +1,109 @@
+  {
+    "slug": "how-to-check-your-401k-balance",
+    "updated": "2026-09-23",
+    "title": "How to Check Your 401k Balance: Step-by-Step Guide",
+    "metaDescription": "Learn how to check your 401k balance for current and old accounts, search federal registries for lost funds, and verify your workplace savings.",
+    "h1": "How to Check Your 401k Balance and Locate Old Accounts",
+    "cardBlurb": "Learn how to check your 401k balance across current and former employers, track down abandoned accounts through public registries, and verify your savings.",
+    "introText": "You can check your 401(k) balance by signing into your current plan recordkeeper's online portal, opening the provider's mobile app, or reviewing your latest quarterly account statement. If you need to find an old 401k balance from a former job, the process starts with your historical tax forms before moving to federal and private lost-retirement registries.\n\nAt ModernWallet, we build financial planning tools and reference guides to help workers keep track of every dollar they earn. When you switch employers, retirement balances get scattered across multiple recordkeeping platforms, making account drift and forgotten balances common problems. Tracking down every workplace account ensures you retain control over your investment allocation, pay only appropriate administrative fees, and protect your long-term retirement savings.",
+    "sections": [
+      {
+        "heading": "How to Check Your 401k Balance for a Current Job",
+        "body": "To check your balance with your current employer, sign into the online benefits portal provided by your workplace 401k administrator. Most modern employers partner with a dedicated recordkeeper who maintains your digital account access. You can find the login link on your company's internal human resources portal, on your most recent pay stub, or on quarterly statements sent by mail or email.\n\nOnce you reach the recordkeeper portal, enter your login credentials to view your dashboard. The primary summary page displays your total vested balance, your current employee contribution rate, and the allocation across your chosen mutual funds or index portfolios. If you have not yet registered an account online, click the registration link and provide your Social Security number, date of birth, and home address to establish your digital profile.\n\nIf you prefer not to manage the account through a web browser, download the recordkeeper's official mobile application from your device's app store. You can also dial the customer service phone number listed on your plan statement. A phone representative will ask you to verify your identity using your personal identifying details before reading your total account balance and investment breakdown."
+      },
+      {
+        "heading": "Understanding the Role of Your 401k Administrator",
+        "body": "A 401(k) is an employer-sponsored defined-contribution retirement plan that allows eligible employees to save and invest pre-tax or designated Roth earnings. Your employer acts as the plan sponsor, deciding plan rules and matching policies, while a third-party financial firm serves as the plan recordkeeper and administrator. The administrator tracks individual participant deposits, executes investment trades, processes withdrawals, and maintains official balance ledgers.\n\nUnder the Employee Retirement Income Security Act (ERISA), plan administrators must furnish account statements to participants. For plans where participants direct their own investments, administrators generally distribute statements on a quarterly basis. When you leave a job, the administrator still maintains your records until you roll the money into an Individual Retirement Account (IRA), transfer it to a new employer plan, or take a cash distribution."
+      },
+      {
+        "heading": "Why You Should Check Your 401k Balance Regularly",
+        "body": "Monitoring your retirement account protects your financial plan against silent asset allocation drift. Over months of market movements, stock holdings may outgrow bond holdings, causing your overall portfolio risk to drift far beyond your original plan targets. Routine reviews allow you to rebalance your holdings and stay aligned with your retirement timeline.\n\nRegular check-ins also help you detect administrative fee creep and recordkeeping errors before they compound over decades. Every plan charges administrative and investment management expenses, which reduce your net investment yield over time. Reviewing statements lets you verify that payroll contributions match your pay stubs and that fee deductions reflect plan agreements.\n\nChecking your account ensures that your listed beneficiaries remain accurate following major life changes. Marriage, divorce, or the birth of a child should prompt an immediate review of your primary and contingent designations. Beneficiary designations on a retirement account override instructions in a traditional personal will, so an outdated beneficiary form can override even a recently updated will. You can learn more about these requirements in our guide to [401(k) beneficiary rules](/guides/401k-beneficiary-rules/)."
+      },
+      {
+        "heading": "How Often to Review Your Workplace Account",
+        "body": "You should check your 401(k) balance at least once per year when your annual summary arrives, though a quarterly cadence provides better oversight. Reviewing your balance four times a year matches the schedule on which most administrators issue official statements. This cadence gives you enough touchpoints to spot payroll deduction discrepancies without encouraging you to react emotionally to routine short-term market fluctuations.\n\nCertain personal milestones call for an unscheduled account review outside your normal calendar cadence. You should log into your account whenever you receive a promotion or pay increase to evaluate your savings rate. Using a [401(k) calculator](/retirement/401k-calculator/) helps you project how incremental contribution boosts alter your long-term wealth trajectory.\n\nJob transitions represent another critical moment to log in and document your assets. Before your final day of employment, download your most recent statement and save the customer service contact information for your plan. Having this documentation prevents you from joining the millions of workers who leave a lost 401k balance behind after changing positions."
+      },
+      {
+        "heading": "Locating an Old 401k Balance Through the Paper Trail",
+        "body": "The fastest way to locate a 401(k) from a past employer is to examine your historical employment documents. Look through old tax folders for prior W-2 forms or end-of-year pay stubs, where retirement contributions appear in Box 12 under specific letter codes. These records often print the legal corporate name of the sponsor or the brand of the plan recordkeeper directly on the document.\n\nIf your tax records do not name the financial institution, reach out directly to the human resources or payroll department of your previous company. Provide your dates of employment and full legal name, and ask for the current contact details of the company's 401(k) recordkeeper. Even if the firm has changed service providers since your departure, the human resources team can direct you to the firm holding legacy balances.\n\nWhen a former employer has merged, changed names, or relocated, you can search public federal filings. Qualified retirement plans file an annual Form 5500 detailing plan operations with the federal government. You can look up these public reports on the Department of Labor [EFAST2 filing search](https://www.efast.dol.gov/) system. Searching by your previous employer's corporate name or employer identification number pulls up recent filings, which state the active plan name and the official contact information for the plan administrator."
+      },
+      {
+        "heading": "Using Public and Private Lost Retirement Registries",
+        "body": "When your personal records and employer contacts produce no results, public and private databases can locate your funds. The Pension Benefit Guaranty Corporation (PBGC) maintains a dedicated program for participants separated from closed plans. You can run a search on the [PBGC unclaimed retirement benefits tool](https://www.pbgc.gov/workers-retirees/find-unclaimed-retirement-benefits/search-unclaimed) by entering your last name and the last four digits of your Social Security number. For additional assistance, review the [PBGC search tips](https://www.pbgc.gov/workers-retirees/find-unclaimed-retirement-benefits/tips) provided for participants.\n\nThe U.S. Department of Labor's Employee Benefits Security Administration (EBSA) provides tools to help workers trace accounts from closed companies. You can visit the [U.S. Department of Labor EBSA](https://www.dol.gov/agencies/ebsa) portal to search the Abandoned Plan Program database and the national Retirement Savings Lost and Found database. These resources catalog retirement plans whose original corporate sponsors have gone out of business or dissolved.\n\nYou can also search non-government registries, though you must distinguish between public agencies and commercial entities. The [National Registry of Unclaimed Retirement Benefits](https://unclaimedretirementbenefits.com/) is a private commercial database where participating employers list separated employees with vested assets. In addition to private platforms, every state government operates an official unclaimed property registry. If an employer could not find you after repeated attempts, your cash balance may have been transferred to a state treasury, where you can claim it without paying search fees."
+      },
+      {
+        "heading": "How to Contact the Administrator and Verify Your Identity",
+        "body": "Once you identify the financial institution managing your legacy plan, call their participant service center to initiate an account inquiry. Because retirement assets represent protected financial property, customer representatives must confirm your identity before releasing balance figures or updating your account profile. Expect the representative to request your full legal name, current mailing address, date of birth, and complete Social Security number.\n\nRepresentatives may also ask for historical employment information to match your file against company records. Have your previous work location, approximate dates of hiring and departure, and any legacy employee identification numbers ready before you call. If you have a copy of an old account statement, locate the plan number and historical account identifier printed on the header.\n\nAfter clearing security verification, ask the representative for your total vested balance, current investment positions, and outstanding administrative fee schedule. Request current distribution and rollover paperwork so you can move the funds into an active account. Consolidating your savings into an IRA or your current workplace plan simplifies long-term management and keeps your investment strategy on track. You can test different growth scenarios using our [retirement savings calculator](/retirement/retirement-savings-calculator/)."
+      },
+      {
+        "heading": "Step-by-Step Checklist for Tracking Down Every Account",
+        "body": "Tracking down every retirement plan you have ever participated in requires an organized, sequential approach. Work through these steps in order to recover any uncollected balances:\n\n1. Review your past W-2 forms, tax returns, and pay stubs to identify every employer where you had retirement contributions deducted.\n2. Contact the human resources or benefits office for each previous employer to request the current recordkeeper contact information.\n3. Search the federal EFAST2 database for Form 5500 filings if a company has closed, rebranded, or merged.\n4. Query the PBGC Missing Participants directory and the Department of Labor Abandoned Plan database for terminated plans.\n5. Check the private National Registry of Unclaimed Retirement Benefits and your relevant state unclaimed property divisions.\n6. Call the identified recordkeepers with your identification details to claim your funds and review your rollover choices.\n\nFollowing these steps ensures that no portion of your hard-earned wealth remains stranded in forgotten accounts. Once you regain access to your balances, you can evaluate your total net worth and set new milestones with our guides on [how to become a 401(k) millionaire](/guides/how-to-become-a-401k-millionaire/) and [401(k) contribution limits](/guides/401k-contribution-limits-2026/)."
+      },
+      {
+        "heading": "Deciding What to Do After You Find an Old 401k",
+        "body": "Locating an old account presents you with four distinct paths for your recovered savings. You can leave the money in the existing employer plan if the balance exceeds the plan's mandatory cash-out threshold and the investment choices remain cost-effective. Alternatively, you can execute a direct rollover into your new employer's 401(k) plan, which keeps all your workplace savings in a single location.\n\nRolling the balance into an IRA provides another popular solution, offering broader investment flexibility and independent control over your asset choices. As a final choice, you could cash out the balance, but doing so triggers ordinary income taxes and potential early withdrawal penalties if you are under age 59 and a half. For most workers, choosing a direct trustee-to-trustee rollover avoids tax withholding and preserves compound growth over the rest of your career."
+      },
+      {
+        "heading": "Review Your Accounts to Keep Your Retirement on Track",
+        "body": "Confirming your workplace plan balances keeps your retirement strategy on track. Take twenty minutes today to log into your current plan portal, record your total balance, and check that your asset allocation aligns with your risk tolerance. If you have past employers on your resume, run your information through the public registries to confirm that no forgotten savings remain unclaimed. To evaluate how your combined account balances support your future goals, explore our tools in the ModernWallet [retirement hub](/retirement/), and put a reminder on your calendar to check every account again next year."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/401k-calculator/",
+        "label": "401(k) Calculator"
+      },
+      {
+        "href": "/retirement/retirement-savings-calculator/",
+        "label": "Retirement Savings Calculator"
+      },
+      {
+        "href": "/retirement/",
+        "label": "Retirement Hub"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I check my 401(k) balance online?",
+        "answer": "You can check your 401(k) balance online by logging into the website or mobile app of the recordkeeper that manages your employer's plan. If you have not registered your digital account yet, select the register or new user link and verify your identity using your Social Security number, birth date, and contact details."
+      },
+      {
+        "question": "How do I find a 401(k) from a job I left years ago?",
+        "answer": "Start by searching your historical W-2 forms or old pay stubs to locate the plan sponsor or recordkeeper name, or contact your former employer's human resources department. If the business is unreachable, search public registries including the Department of Labor EFAST2 Form 5500 database, the PBGC unclaimed retirement benefits directory, and your state's unclaimed property registry."
+      },
+      {
+        "question": "Is the National Registry of Unclaimed Retirement Benefits a government website?",
+        "answer": "No, the National Registry of Unclaimed Retirement Benefits is a private, commercial database rather than a government agency. Employers choose whether to report separated employees with vested accounts to this registry, so you should pair your search with official government databases like PBGC and the Department of Labor."
+      },
+      {
+        "question": "What happens to my 401(k) if my old employer goes out of business?",
+        "answer": "If your former employer closes, federal law requires that your 401(k) assets remain held in trust separately from company operating funds. When an abandoned plan terminates, remaining balances are typically distributed to participants or transferred to the PBGC Missing Participants Program, an individual retirement account, or state unclaimed property divisions."
+      },
+      {
+        "question": "How often should I check my 401(k) balance?",
+        "answer": "You should check your 401(k) balance at least once per year when your annual statement arrives, though quarterly reviews offer an ideal balance between oversight and avoiding short-term market panic. You should also check your balance during major life transitions, such as starting a new job, receiving a salary increase, or updating your designated beneficiaries."
+      }
+    ],
+    "sources": [
+      {
+        "label": "PBGC, Search Unclaimed Retirement Benefits",
+        "url": "https://www.pbgc.gov/workers-retirees/find-unclaimed-retirement-benefits/search-unclaimed"
+      },
+      {
+        "label": "PBGC, Tips for Finding Unclaimed Benefits",
+        "url": "https://www.pbgc.gov/workers-retirees/find-unclaimed-retirement-benefits/tips"
+      },
+      {
+        "label": "U.S. Department of Labor, Employee Benefits Security Administration",
+        "url": "https://www.dol.gov/agencies/ebsa"
+      },
+      {
+        "label": "U.S. Department of Labor, EFAST2 Form 5500 Search",
+        "url": "https://www.efast.dol.gov/"
+      },
+      {
+        "label": "National Registry of Unclaimed Retirement Benefits",
+        "url": "https://unclaimedretirementbenefits.com/"
+      }
+    ]
+  },
