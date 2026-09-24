@@ -13,8 +13,10 @@ argument-hint: "[optional path to an existing chart .md — skips the gap analys
 >   `batch-analysis` or any other `mcp__*ahrefs*` / Ahrefs API endpoint — not as a primary source and
 >   not as a fallback. This overrides any sentence below that says SEMRUSH, `SemrushClient`, or
 >   "Ahrefs MCP fallback". SEMRUSH is dead on the fleet key; do not try it either.
-> - **Competitor gap (Lens 1):** run `python3 scripts/lib/dfs_keyword_gap.py --refresh-competitors`
->   from the repo root. It reads `OUR_DOMAIN` / `COMPETITORS` / `RELEVANT` / `ADJACENT` / `EXCLUDE` /
+> - **Competitor gap (Lens 1):** run `DATAFORSEO_B64='<the value this routine's prompt gives for
+>   keyword_data.py>' python3 scripts/lib/dfs_keyword_gap.py --refresh-competitors` from the repo root
+>   — the prompt's DATAFORSEO key line covers this script too, even where it only names
+>   keyword_data.py / serp.py. Without the prefix it prints "DataForSEO unavailable". It reads `OUR_DOMAIN` / `COMPETITORS` / `RELEVANT` / `ADJACENT` / `EXCLUDE` /
 >   `TARGET_KW_FILE` from `scripts/semrush_keyword_gap.py`, pulls each domain's ranked keywords from
 >   DataForSEO, and writes `reports/seo-research/keyword-gap.json` (same `gaps[]` shape: keyword,
 >   volume, kd, cpc, tier, competitors, num_competitors, score). Use that file wherever the text below
