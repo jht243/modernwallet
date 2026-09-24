@@ -327,13 +327,72 @@ def related_keywords(seed: str, limit: int = 200, database: str = "us",
 
 def serp_organic(keyword: str, database: str = "us", depth: int = 20,
                  paa_depth: int = 1) -> dict:
-    """One live Google SERP, advanced. Raw payload — see serp.py for the verdict."""
-    body = _post("serp/google/organic/live/advanced",
-                 [{"keyword": keyword, "location_code": _loc(database),
-                   "language_code": "en", "device": "desktop", "depth": depth,
-                   "people_also_ask_click_depth": paa_depth}])
+    """
+    One live Google SERP, advanced. Raw payload — see serp.py for the verdict.
+
+    paa_depth <= 0 OMITS the People-Also-Ask field entirely rather than sending
+    a zero, which the API rejects as an invalid field (task error 40501). Drop
+    it when you only need the organic roster: it is roughly a third of the call
+    cost and none of the answer.
+    """
+    task = {"keyword": keyword, "location_code": _loc(database),
+            "language_code": "en", "device": "desktop", "depth": depth}
+    if paa_depth > 0:
+        task["people_also_ask_click_depth"] = paa_depth
+    body = _post("serp/google/organic/live/advanced", [task])
     res = _task_result(body)
     return res[0] if res else {}
+
+
+def ranked_keywords(domain: str, limit: int = 300, database: str = "us") -> list[dict]:
+    """Organic keywords a domain ranks for, highest estimated traffic first.
+
+    The DataForSEO equivalent of SEMRUSH domain_organic / Ahrefs organic-keywords,
+    used by the keyword-gap engine (scripts/lib/dfs_keyword_gap.py).
+    """
+    body = _post("dataforseo_labs/google/ranked_keywords/live",
+                 [{"target": domain.strip(), "location_code": _loc(database),
+                   "language_code": "en", "limit": min(limit, 1000),
+                   "item_types": ["organic"],
+                   "order_by": ["ranked_serp_element.serp_item.etv,desc"]}])
+    rows = []
+    for res in _task_result(body):
+        for it in (res.get("items") or []):
+            kd_ = it.get("keyword_data") or {}
+            ki = kd_.get("keyword_info") or {}
+            kp = kd_.get("keyword_properties") or {}
+            si = (it.get("ranked_serp_element") or {}).get("serp_item") or {}
+            rows.append({
+                "keyword": kd_.get("keyword") or "",
+                "volume": _num(ki.get("search_volume")),
+                "kd": "" if kp.get("keyword_difficulty") is None else _num(kp["keyword_difficulty"]),
+                "cpc": "" if ki.get("cpc") is None else round(float(ki["cpc"]), 2),
+                "position": _num(si.get("rank_group")),
+                "url": si.get("url") or "",
+            })
+    return rows
+
+
+def competitors_domain(domain: str, limit: int = 20, database: str = "us") -> list[dict]:
+    """Domains sharing the most organic keywords with `domain` (SERP overlap).
+
+    exclude_top_domains drops youtube/reddit/wikipedia-type giants, which
+    otherwise dominate every overlap list and are never real competitors.
+    """
+    body = _post("dataforseo_labs/google/competitors_domain/live",
+                 [{"target": domain.strip(), "location_code": _loc(database),
+                   "language_code": "en", "limit": min(limit, 1000),
+                   "exclude_top_domains": True}])
+    rows = []
+    for res in _task_result(body):
+        for it in (res.get("items") or []):
+            dom = it.get("domain") or ""
+            if not dom or dom == domain:
+                continue
+            rows.append({"domain": dom,
+                         "intersections": _num(it.get("intersections")),
+                         "avg_position": round(float(it.get("avg_position") or 0), 1)})
+    return rows
 
 
 def account() -> dict:

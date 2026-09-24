@@ -1,5 +1,35 @@
 # Phase BUILD-KEYWORDS — Generate the chart from a SEMRUSH keyword-gap analysis
 
+<!-- KG-DFS:BEGIN — canonical copy lives in layer3 .claude/commands/_keyword-gap-data-source.md; synced by scripts/sync-keyword-gap-dfs.sh -->
+> **‼️ DATA SOURCE FOR THIS PASS (2026-09-24) — DataForSEO ONLY. NEVER Ahrefs.**
+> Ahrefs units are reserved for technical site audits (`ahrefs-site-audit-auto`). On 2026-09-20
+> this pass burned ~143k of the 200k monthly Ahrefs units in 50 minutes by pulling competitor
+> keywords through the Ahrefs MCP. So, for every step of the keyword-gap pass:
+>
+> - **Do NOT call any Ahrefs tool** — no `site-explorer-*`, `keywords-explorer-*`, `serp-overview`,
+>   `batch-analysis` or any other `mcp__*ahrefs*` / Ahrefs API endpoint — not as a primary source and
+>   not as a fallback. This overrides any sentence below that says SEMRUSH, `SemrushClient`, or
+>   "Ahrefs MCP fallback". SEMRUSH is dead on the fleet key; do not try it either.
+> - **Competitor gap (Lens 1):** run `python3 scripts/lib/dfs_keyword_gap.py --refresh-competitors`
+>   from the repo root. It reads `OUR_DOMAIN` / `COMPETITORS` / `RELEVANT` / `ADJACENT` / `EXCLUDE` /
+>   `TARGET_KW_FILE` from `scripts/semrush_keyword_gap.py`, pulls each domain's ranked keywords from
+>   DataForSEO, and writes `reports/seo-research/keyword-gap.json` (same `gaps[]` shape: keyword,
+>   volume, kd, cpc, tier, competitors, num_competitors, score). Use that file wherever the text below
+>   says to run the SEMRUSH gap script.
+> - **Competitor refresh (Step A):** use the `live_competitors` list in that JSON (DataForSEO SERP
+>   overlap, giants excluded) plus a web cross-check, instead of `SemrushClient.domain_competitors`.
+>   Keep 6–12 real competitors; sync them into the `COMPETITORS` constant as before.
+> - **Cache — commit it.** Domain pulls are cached 28 days in `reports/seo-research/dfs-cache/`.
+>   Commit that directory with the run so next week's run reuses it (a fresh layer3 pull costs ~$0.50;
+>   a cached run costs $0). Never pass `--no-cache` in an autonomous run.
+> - **Volumes / KD for Lens-2 ideas:** `scripts/lib/keyword_data.py` with `DFS_ENABLED` on; if a row
+>   comes back `source: ahrefs`, you are running with an Ahrefs key you should not use here — unset
+>   `AHREFS_API_KEY` for this run (`env -u AHREFS_API_KEY python3 …`).
+> - **PAA / SERP checks:** `scripts/lib/serp.py` (DataForSEO SERP), never Ahrefs `serp-overview`.
+> - **If DataForSEO is unavailable or over budget:** continue on Lens 2 (autocomplete + web) with
+>   `source: estimate` rows labelled as such. That is the fallback — not Ahrefs.
+<!-- KG-DFS:END -->
+
 This is Step 1 of `/keyword-gap-pass`. It replaces seo-gsc-pass's "build chart from GSC screenshots" step. Instead of reading screenshots, it explores live opportunity two ways — a **competitor keyword gap via SEMRUSH** (with a competitor set refreshed every run, never hardcoded) **and wider whitespace/live-market exploration** (new verticals, niche long-tail, news-driven demand) — diffs both against the keywords already tracked in the project's target-keyword document, and produces the same machine-readable chart the rest of the phases consume.
 
 Run this phase **only when** Phase 0 cannot find a chart at `reports/keyword-pass/<TODAY>.md`. If today's chart already exists, or the user passed a chart path argument, skip this phase and let Phase 0 load it.
@@ -69,7 +99,7 @@ This is the part the user actually cares about: opportunities **no current compe
   - The `--inventory` flag is **per-project**: pass the path discovered in Step A (e.g. `target-keyword-inventory.md` at THIS project's repo root). The tool dedupes against everything already tracked there — primary keywords, supporting-keywords cells, and prior log entries — and appends only genuinely new suggestions under a `## Autocomplete Discovery Log` section. NEVER point it at another project's inventory.
   - `--mode all` runs the question-prefix sweep (10 prefixes — what/how/why/is/does/can/should/when/where/which) AND the alphabet sweep (seed + a-z), then dedups. Output is `seed,suggestion,via` CSV.
   - **Read the CSV** AND **scan the newly-appended rows in the Discovery Log** — treat every row as a Lens-2 candidate to consider. These are phrases real Google searchers are typing right now. Phrases that look genuinely customer-relevant get classified into a bucket in Step C even when SEMRUSH shows zero volume; note `"demand inferred from live Autocomplete — no tool volume"` in the chart's `problem` cell.
-  - **People Also Ask:** Autocomplete covers the bulk; for PAA-specific gaps, if the Ahrefs MCP `serp-overview` tool is connected this run, call it on the top 3-5 candidates' parent queries to extract their PAA boxes — record any PAA phrase not already captured by Autocomplete, and add them manually to the same Discovery Log section in the inventory (one row per PAA phrase, with `via: paa:<source-query>`).
+  - **People Also Ask:** Autocomplete covers the bulk; for PAA-specific gaps, run `python3 scripts/lib/serp.py read --keyword "<query>"` (DataForSEO — never Ahrefs) on the top 3-5 candidates' parent queries to extract their PAA boxes — record any PAA phrase not already captured by Autocomplete, and add them manually to the same Discovery Log section in the inventory (one row per PAA phrase, with `via: paa:<source-query>`).
   - These candidates compete with higher-volume opportunities **on equal footing** — they are options to weigh at the manifest gate, NOT auto-prioritized; when a stronger higher-volume or more-relevant keyword exists for the same slot, prefer it.
 
 For Lens 2, judge relevance **editorially** — "is this something this site could credibly and usefully own?" — not by a fixed regex. The script's `RELEVANT` pattern is a coarse *core-tier tag* for Lens 1 only; do not let it cap exploration. **Adjacency is the goal here, not a risk to filter out** — a topic next to our core that we could plausibly rank for is exactly what both lenses should be surfacing. Capture each Lens-2 idea with its rationale and any volume/difficulty you can pull from `keyword_overview`.
