@@ -1,0 +1,103 @@
+{
+  "updated": "2026-09-24",
+  "slug": "are-annuities-taxable",
+  "title": "Are Annuities Taxable Under Current IRS Rules",
+  "metaDescription": "Are annuities taxable? Payouts from qualified plans are fully taxed, while non-qualified annuities tax only earnings. See how the IRS taxes withdrawals.",
+  "h1": "Are Annuities Taxable Under IRS Rules",
+  "cardBlurb": "How the IRS taxes qualified and non-qualified annuity withdrawals, the earnings-first rule, and early distribution penalties.",
+  "introText": "Annuity distributions are taxable to the extent they represent untaxed income or investment gains, with the exact tax liability determined by whether the contract was purchased with pre-tax or after-tax funds. What we see readers get wrong most often about annuity taxation is treating every annuity the same, when different funding sources follow entirely different Internal Revenue Service (IRS) regulations. Qualified annuities funded through pre-tax retirement accounts face ordinary income tax on every dollar withdrawn, whereas non-qualified contracts bought with after-tax money are only taxed on their investment earnings.",
+  "sections": [
+    {
+      "heading": "The Tax Status of Annuities by Funding Source",
+      "body": "Whether an annuity distribution is taxable depends primarily on whether the contract is qualified or non-qualified under federal tax law. A qualified annuity is purchased with pre-tax money inside a tax-advantaged account such as a traditional Individual Retirement Arrangement (IRA) or a 401(k) plan. Because you made contributions with pre-tax money and claimed a tax deduction or exclusion at the time of deposit, no portion of the balance represents after-tax investment. The [IRS Topic 410 on Pensions and Annuities](https://www.irs.gov/taxtopics/tc410) confirms that distributions from qualified plans are fully taxable as ordinary income in the year you receive them.\n\nA non-qualified annuity is purchased with after-tax money outside of an employer retirement plan or traditional IRA. Because you already paid income tax on the principal used to buy the contract, the IRS does not tax that money a second time upon withdrawal. Your original contributions represent your cost basis, which the tax code officially terms your investment in the contract. Under [IRS Publication 575](https://www.irs.gov/publications/p575), distributions from a non-qualified annuity are only partially taxable. The portion of each payment that represents a return of your after-tax cost basis is received tax-free, while the portion attributable to investment earnings is taxed at ordinary income rates.\n\nFunding source also dictates how required minimum distribution rules apply to your contract. Qualified annuities inside traditional IRAs and workplace plans are generally subject to annual withdrawal mandates once you reach your statutory distribution age. You can explore how deferred structures interact with these mandates by reading our guide to the QLAC, or by modeling your overall distribution schedules with our [RMD calculator](/retirement/rmd-calculator/). In contrast, non-qualified contracts held outside retirement accounts do not have required minimum distributions under the tax code, allowing principal and earnings to compound tax-deferred until you elect to take a payout."
+    },
+    {
+      "heading": "Non-Qualified Annuity Withdrawals and the Earnings-First Rule",
+      "body": "Partial withdrawals and lump-sum distributions from a non-qualified annuity are taxed on an earnings-first basis under modern tax regulations. When you take money out of a deferred annuity without converting the contract into a formal stream of scheduled lifetime payments, the IRS treats the distribution as coming entirely from accumulated investment gains before any principal is touched. Every dollar withdrawn is treated as taxable ordinary income until all earnings accrued inside the contract have been completely paid out. Only after all accumulated gains have been exhausted do subsequent withdrawals count as a tax-free return of your cost basis.\n\nTo see how this earnings-first ordering rule works in practice, consider a simple hypothetical example. For illustration only, suppose an investor paid $100,000 in after-tax cash to purchase a non-qualified deferred annuity, establishing an initial cost basis of $100,000. Over several years, the contract value grows to $140,000, which reflects $40,000 in untaxed investment earnings. If the owner takes a partial cash withdrawal of $25,000, the entire $25,000 distribution is treated as taxable ordinary income because it is drawn entirely from the $40,000 pool of accumulated earnings. The cost basis remains intact at $100,000, and the contract retains $15,000 in remaining taxable gains.\n\nThe historical exception to this rule applies only to contracts purchased before August 14, 1982. Under [IRS Publication 575](https://www.irs.gov/publications/p575), contracts bought on or before that date use a pro-rata cost-recovery ordering system that treats withdrawals as coming first from after-tax principal rather than earnings. For any contract purchased on or after August 14, 1982, the earnings-first ordering rule is mandatory. You cannot instruct the insurance company to return your original cost basis first when taking a partial withdrawal, which means initial withdrawals will generate an immediate income tax liability."
+    },
+    {
+      "heading": "The Exclusion Ratio for Periodic Annuitized Payments",
+      "body": "Annuitizing a non-qualified contract spreads your tax-free cost basis across every periodic distribution through a calculation known as the exclusion ratio. Annuitization occurs when you irrevocably exchange your lump-sum account value for a guaranteed stream of periodic payments over your lifetime or a designated term of years. Rather than taxing early payments as earnings-first, the IRS General Rule allows you to exclude a fixed fraction of each check from taxable income. The tax-free percentage equals your total after-tax investment in the contract divided by the total expected financial return of the payout stream.\n\nEach monthly or annual payment you receive under an annuitized non-qualified contract is split into two distinct components. One part represents a tax-free return of your original principal, while the remaining balance represents taxable investment earnings. The insurance company calculates this exact exclusion percentage based on IRS actuarial tables when the payout phase begins, applying the ratio uniformly to every regular check. This structure provides predictable tax treatment during retirement by preventing the heavy front-loaded tax bills that accompany irregular partial withdrawals.\n\nThe exclusion ratio remains in effect until you fully recover your cumulative investment in the contract. Under the rules detailed in [IRS Publication 575](https://www.irs.gov/publications/p575), if you live long enough to recover your entire original cost basis through these fractional exclusions, every subsequent payment becomes 100% taxable as ordinary income. Conversely, if an annuitant passes away before the total cost basis is recovered and payments cease without a refund feature, the unrecovered after-tax basis can generally be claimed as a miscellaneous deduction on the decedent's final income tax return."
+    },
+    {
+      "heading": "Tax Rules for Inherited and Death-Benefit Annuities",
+      "body": "Death benefits paid to a designated beneficiary from an annuity are taxable to the extent the payout exceeds the owner's unrecovered cost basis. Life insurance proceeds generally pass to beneficiaries entirely free from federal income tax, but annuities do not receive this blanket tax exemption. When an annuity owner passes away and a beneficiary receives a single-sum death-benefit distribution from a variable or fixed annuity, the taxable portion equals the total cash proceeds minus the deceased owner's unrecovered investment in the contract. The beneficiary owes ordinary income tax on all accumulated investment growth.\n\nSurviving joint annuitants calculate their taxable income by continuing the original cost-recovery schedule established on the contract. If a married couple owns a joint-and-survivor non-qualified annuity that has already been annuitized, the surviving spouse does not reset the exclusion ratio upon the first spouse's death. According to [IRS Publication 575](https://www.irs.gov/publications/p575), the surviving joint annuitant figures the tax-free and taxable portions of ongoing monthly payments in the exact same manner the original annuitants did, maintaining the identical exclusion percentage until the remaining cost basis is fully exhausted.\n\nBeneficiaries inheriting a qualified annuity face full income taxation because the original account contained zero after-tax cost basis. When you inherit an annuity that was held inside a traditional IRA or qualified employer plan, every dollar distributed must be reported as ordinary income in the year it is withdrawn. Beneficiaries must also adhere to post-death distribution timing schedules established under federal retirement laws, which dictate how quickly inherited accounts must be liquidated. Evaluating your broader distribution strategy using our [retirement calculator](/retirement/) helps illustrate how inherited income streams interact with other household revenue sources."
+    },
+    {
+      "heading": "The 10% Additional Tax on Early Distributions",
+      "body": "Distributions taken from an annuity before you reach age 59½ can trigger an additional 10% federal tax penalty on the taxable portion of the payout. The IRS imposes this early withdrawal penalty to discourage individuals from liquidating tax-deferred retirement vehicles ahead of traditional retirement age. [IRS Topic 558 on Additional Tax on Early Distributions](https://www.irs.gov/taxtopics/tc558) notes that this 10% surtax applies to premature distributions from qualified retirement plans as well as traditional deferred annuity contracts. On a non-qualified annuity, the 10% penalty applies only to the taxable earnings portion of the withdrawal, leaving your return of cost basis exempt from both regular income tax and early distribution penalties.\n\nThe tax code provides specific statutory exceptions that waive the 10% early distribution penalty for qualified taxpayers. Distributions avoid the 10% penalty if the contract owner becomes permanently disabled or receives a diagnosis of terminal illness. You can also avoid the penalty by electing to receive substantially equal periodic payments based on your life expectancy under structured IRS guidelines. For qualified workplace plans, an exception applies if you separate from service with your employer during or after the calendar year in which you attain age 55.\n\nTaking irregular withdrawals before age 59½ from a non-qualified contract creates a compounded tax liability due to the earnings-first ordering rule. Because non-annuitized withdrawals pull 100% taxable earnings first, an early withdrawal is often fully subject to both your marginal ordinary income tax rate and the 10% early distribution surtax. Anyone considering liquidating an annuity contract before age 59½ must account for both levies before requesting a surrender check from the issuing insurance company."
+    },
+    {
+      "heading": "Reporting Requirements on Form 1099-R and Benefit Stacking",
+      "body": "Annuity distributions are formally reported to both you and the federal government on Form 1099-R. The official title of the document is [Form 1099-R Distributions From Pensions, Annuities, Retirement or Profit-Sharing Plans, IRAs, Insurance Contracts, etc.](https://www.irs.gov/forms-pubs/about-form-1099-r). Box 1 of the form reports the gross distribution amount paid out during the tax year. Box 2a shows the taxable amount determined by the insurance carrier or plan administrator. If the contract is non-qualified and the payer cannot verify the exact cost basis, Box 2b may be checked to indicate that the taxable amount was not determined, placing the responsibility on you to compute your exclusion ratio or earnings-first gain on your tax return.\n\nReceiving taxable annuity payments can indirectly increase the taxation of other retirement income streams, particularly Social Security benefits. Adding taxable annuity income to your tax return raises your adjusted gross income and overall combined income calculation. Whether your Social Security benefits become subject to income tax depends on separate statutory income thresholds evaluated by the IRS. If you are balancing monthly annuity checks alongside government retirement benefits, review our dedicated guide explaining [whether Social Security is taxable](/guides/is-social-security-taxable/) to determine your exposure, and evaluate your household numbers on our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/).\n\nState income taxes also apply to the taxable portion of annuity distributions in most jurisdictions. While federal rules establish the fundamental distinction between return of principal and taxable earnings, individual states apply their own income tax rates, standard deductions, and retirement income exclusions. Maintaining comprehensive records of all premium deposits, surrender fees, and historical Form 1099-R statements guarantees that you do not overpay state or federal tax on returned after-tax principal."
+    },
+    {
+      "heading": "Retirees Who See No Benefit from Annuity Tax Deferral",
+      "body": "Annuity tax deferral provides zero practical advantage for individuals whose taxable income already sits below standard deduction levels. If your lifetime income consists strictly of modest Social Security benefits and nominal savings, your baseline earnings will not generate federal income tax liability. Purchasing a non-qualified annuity in that situation locks up personal liquidity without delivering meaningful tax relief, because the underlying investments would have generated little or no tax liability inside an ordinary taxable bank or brokerage account.\n\nRetirees who expect to need cash before age 59½ should also avoid non-qualified deferred annuities. The combination of early withdrawal penalties from the insurer and the mandatory 10% IRS penalty makes early liquidations financially punitive. Individuals in this category are better served keeping their money in liquid high-yield savings accounts, certificates of deposit, or taxable brokerage portfolios where cost basis can be accessed without triggering earnings-first tax recognition or statutory IRS penalties."
+    },
+    {
+      "heading": "Circumstances That Change Annuity Tax Outcomes",
+      "body": "Two primary developments can materially alter the tax liability associated with your existing annuity contract. First, a major revision of federal tax brackets by Congress would directly shift the financial cost of receiving annuity distributions. Because both qualified withdrawals and non-qualified earnings are taxed at ordinary income rates rather than lower long-term capital gains rates, any upward adjustment in federal income tax brackets increases the tax bill on every dollar of annuity profit you withdraw.\n\nSecond, electing to convert a deferred annuity into an annuitized stream of lifetime payments permanently changes your tax accounting from the earnings-first rule to the exclusion ratio. If you hold a deferred contract with substantial accumulated gains, taking partial withdrawals exposes you to immediate taxation on every dollar taken until all earnings are gone. Deciding instead to annuitize the contract locks in a fixed tax-free return of basis on every check, sheltering a calculated portion of your immediate cash flow. Consult a certified financial planner or tax advisor to evaluate your contract cost basis before initiating any distribution."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/guides/is-social-security-taxable/",
+      "label": "Whether Social Security is taxable"
+    },
+    {
+      "href": "/guides/qlac-qualified-longevity-annuity-contract/",
+      "label": "QLAC"
+    },
+    {
+      "href": "/retirement/rmd-calculator/",
+      "label": "RMD calculator"
+    },
+    {
+      "href": "/retirement/social-security-retirement-calculator/",
+      "label": "Social Security retirement calculator"
+    },
+    {
+      "href": "/retirement/",
+      "label": "Retirement calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much of my annuity income is taxable?",
+      "answer": "The taxable amount depends on whether your annuity is qualified or non-qualified, as well as the payout method you select. Qualified annuities purchased with pre-tax retirement funds are 100% taxable as ordinary income upon distribution. Non-qualified annuities purchased with after-tax money are only taxed on their investment earnings, with the after-tax cost basis returning to you tax-free either through an exclusion ratio on annuitized payments or after all earnings are withdrawn on non-annuitized distributions."
+    },
+    {
+      "question": "Do you have to report an annuity on a tax return?",
+      "answer": "Yes, you must report annuity distributions on your federal income tax return using Form 1099-R. The issuing insurance company or retirement plan administrator sends this tax document to you and the IRS by January 31, detailing your total gross distributions in Box 1 and the taxable portion in Box 2a."
+    },
+    {
+      "question": "What type of annuity is not taxable?",
+      "answer": "No annuity is entirely untaxed in all respects, but the after-tax cost basis in a non-qualified annuity is never taxed when returned to you. While the investment earnings inside a non-qualified contract are always subject to ordinary income tax when withdrawn, the original principal you deposited with after-tax dollars returns to you tax-free."
+    },
+    {
+      "question": "Is this annuity tax information financial advice?",
+      "answer": "No. This guide provides general educational information regarding IRS tax rules for qualified and non-qualified annuity contracts. It does not constitute personalized tax, legal, or investment advice. Because tax circumstances vary by individual taxpayer and state of residence, you should verify your specific cost basis and reporting obligations with a licensed certified public accountant or qualified tax professional."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Topic 410, Pensions and Annuities",
+      "url": "https://www.irs.gov/taxtopics/tc410"
+    },
+    {
+      "label": "IRS Publication 575, Pension and Annuity Income",
+      "url": "https://www.irs.gov/publications/p575"
+    },
+    {
+      "label": "IRS Topic 558, Additional Tax on Early Distributions",
+      "url": "https://www.irs.gov/taxtopics/tc558"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

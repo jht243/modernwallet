@@ -1,0 +1,236 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] expand: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] dataforseo expanded 'are annuities taxable' -> 20 ideas
+[keyword_data] Autocomplete added 14 live ideas 'are annuities taxable' (dataforseo missed them)
+{
+ "rows": [
+  {
+   "keyword": "are annuities taxable",
+   "volume": 1300,
+   "volume_low": 1300,
+   "volume_high": 1300,
+   "kd": 23,
+   "cpc": 4.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are inherited annuities taxable",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 1,
+   "cpc": 3.6,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are death benefit annuities taxable",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 0,
+   "cpc": 0.55,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are distributions from annuities taxable",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 24,
+   "cpc": 4.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are annuities taxable when inherited",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 1,
+   "cpc": 3.6,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are annuities taxable income",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 24,
+   "cpc": 1.73,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are annuities taxable to beneficiaries",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 10,
+   "cpc": 0.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are nonqualified annuities taxable",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 12,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are non qualified annuities taxable",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 6,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are annuities taxable in pa",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 4.87,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are pension annuities taxable",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 8,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are pensions and annuities taxable",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 41,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are immediate annuities taxable",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 22,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are fixed annuities taxable",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 16,
+   "cpc": 1.98,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are retirement annuities taxable",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 24,
+   "cpc": 3.62,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are annuities taxable in illinois",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 5,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are non qualified annuities taxable in pa",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are variable annuities taxable",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are life insurance annuities taxable",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 23,
+   "cpc": 6.5,
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  },
+  {
+   "keyword": "are qualified annuities taxable",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "seed": "are annuities taxable"
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "expand: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "dataforseo expanded 'are annuities taxable' -> 20 ideas",
+  "Autocomplete added 14 live ideas 'are annuities taxable' (dataforseo missed them)"
+ ]
+}

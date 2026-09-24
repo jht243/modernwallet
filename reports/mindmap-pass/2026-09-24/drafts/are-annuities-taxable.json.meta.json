@@ -1,0 +1,59 @@
+{
+ "slug": "are-annuities-taxable",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2502,
+ "floor": 1200,
+ "input_tokens": 20917,
+ "output_tokens": 3955,
+ "thinking_tokens": 3999,
+ "cached_tokens": 18824,
+ "est_cost_usd": 0.0349,
+ "guards": {
+  "repairs": [
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://themodernwallet.com/guides/qlac-qualified-longevity-annuity-contract/'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://themodernwallet.com/guides/qlac-qualified-longevity-annuity-contract/"
+  ],
+  "words": 2502,
+  "numbers_not_in_facts": [
+   "09",
+   "100000",
+   "140000",
+   "15000",
+   "2026",
+   "24",
+   "25000",
+   "31",
+   "40000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 19137
+  }
+ },
+ "seconds": 34.7,
+ "response_id": "WD-1arTvL9bgsOIP1dLJkAQ",
+ "generated_at": "2026-09-24T15:19:21+0000"
+}

@@ -1,0 +1,58 @@
+{
+ "keyword": "are annuities taxable",
+ "verdict": "winnable",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.westernsouthern.com",
+  "www.northwesternmutual.com",
+  "www.annuity.org",
+  "www.ameriprise.com",
+  "www.irs.gov",
+  "myannuitystore.com",
+  "gainbridge.com",
+  "www.floridafa.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.northwesternmutual.com",
+  "www.westernsouthern.com",
+  "www.irs.gov",
+  "www.annuity.org",
+  "www.ameriprise.com",
+  "canvasannuity.com",
+  "www.newyorklife.com",
+  "www.pacificlife.com",
+  "www.annuityadvantage.com",
+  "www.irs.gov"
+ ],
+ "major_domains": [],
+ "forum_domains": [],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 19,
+  "people_also_ask": 1,
+  "related_searches": 2
+ },
+ "paa": [
+  "How much of my annuity income is taxable?",
+  "What is the biggest disadvantage of an annuity?",
+  "How much will a $100,000 annuity pay per month?",
+  "Do you have to report an annuity on a tax return?",
+  "What did Warren Buffett say about annuities?",
+  "What type of annuity is not taxable?"
+ ],
+ "related_searches": [
+  "Are annuities taxable in usa",
+  "Are annuities taxable to beneficiaries",
+  "Annuity tax calculator",
+  "Are annuities taxable in california",
+  "Is non qualified annuity income taxable",
+  "Is Fixed annuity income taxable",
+  "Does annuity count as income for Social Security",
+  "State taxes on annuities"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "AI Overview present, cites www.westernsouthern.com, www.northwesternmutual.com, www.annuity.org, www.ameriprise.com",
+ "se_results_count": 130
+}
