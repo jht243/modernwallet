@@ -46859,18 +46859,22 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/loans/auto-loans/caribou-prequalification": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:3af0429ec27229df6fba9eed83411ad21cdc02d9258880ffedc390012cffcb07",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-25",
           "kind": "comparison",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T18:56:17+00:00",
+          "our_url": "",
           "outline": [],
           "relevance_hits": [
             "loans",
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bankrate.com - Compare mortgage, refinance, insurance, CD rates",
           "tool_io": []
         },
@@ -113809,11 +113813,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/banking/learn/why-ally-and-other-banks-missed-our-best-savings-list": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:f72ea5e7389b05c25ea50bdbfd2bea2fd646f1f0bacd61fdea41568136186125",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T10:32:39-07:00",
+          "our_url": "/roundup/best-high-yield-savings-accounts/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "We look for the best combination of features and rates",
@@ -113826,7 +113834,7 @@
             "investment",
             "savings"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Ally Bank Compares With Our Best High-Yield Savings Accounts - NerdWallet",
           "tool_io": []
         },
@@ -162029,11 +162037,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/news/coffee-day-deals": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:ca7eb7c51da4531a6714bb311756e6912e00857dca12d5e750e476fe6ec60e4d",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "If you\u2019d rather brew your own cup at home, there\u2019s a deal for you:",
@@ -162044,7 +162056,7 @@
             "budget",
             "finance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "National Coffee Day: Where to Find Free Coffee and Deals on Sept. 29 - NerdWallet",
           "tool_io": []
         },
@@ -163795,11 +163807,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/finance/studies/parents-fall-expenses": {
+          "acted": true,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:ec11c5ba1ad38c8aa698e031c1c901c229cfa3c8fb86d78bf2199bb2ad441c24",
+          "disposition": "published",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T06:00:44-07:00",
+          "our_url": "/guides/buy-now-pay-later-risks/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "1. Prioritize, reduce, skip or defer",
@@ -163811,7 +163827,7 @@
             "finance",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "These 3 Money Moves Take the Fright out of Fall - NerdWallet",
           "tool_io": []
         },
@@ -196458,11 +196474,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-bond-yields": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:98f59472af8ab9ca0ae944f20dfc8f82c6f438dd84d5e8995278d75174157acd",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-25T10:12:50-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "\ud83c\udf88Inflation",
@@ -196477,7 +196497,7 @@
             "investment",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Why the Bond Market\u2019s Struggles Are Driving Up Mortgage Rates - NerdWallet",
           "tool_io": []
         },
@@ -196756,11 +196776,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-september-25-2026": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:fce18ca1930abc2538901b52839a30505bdcf85901c4295de038bed3da857d75",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-25T07:02:39-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -196777,7 +196801,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Friday, September 25: A Little Relief, but Still Above 7% - NerdWallet",
           "tool_io": []
         },
@@ -197355,11 +197379,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-thursday-september-24-2026": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:154ff9f00e69eda8af1c7bb65d37491c58b908529c9493b30858c3aeb327bf7d",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T06:41:06-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -197376,7 +197404,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Thursday, September 24: Ouch - NerdWallet",
           "tool_io": []
         },
@@ -198641,11 +198669,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/mortgages/news/weekly-mortgage-rates-9-24-26": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:83a8ccaa2c93f7fbe31813b9f871eb42a304d3f59ad0c4326800da05943aa7ba",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T13:32:11-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Budget for uncertainty",
@@ -198659,7 +198691,7 @@
             "budget",
             "mortgage"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Your Guide to Bargain Hunting With Mortgage Rates Above 7% - NerdWallet",
           "tool_io": []
         },
@@ -207223,11 +207255,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/student-loans/learn/refinancing-to-lower-monthly-payments": {
+          "acted": false,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:9f16254aca088441860670c754eb52c29b41e8c6b079b223a10b5e1a1cd3f912",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-24T17:14:55-07:00",
+          "our_url": "/guides/should-you-refinance-student-loans/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "When a lower payment might be worth the trade-off",
@@ -207240,7 +207276,7 @@
             "payment",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Refinancing Student Loans for a Lower Payment: What to Know - NerdWallet",
           "tool_io": []
         },
@@ -236139,11 +236175,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/travel/news/bilt-amtrak": {
+          "acted": true,
+          "acted_date": "2026-09-25",
           "content_hash": "sha256:a29a7945dd08a7a0f382385a6026634aca30bd9455cbf5df5e08a505b2a318a5",
+          "disposition": "enriched",
           "first_seen": "2026-09-25",
           "kind": "page",
           "last_seen": "2026-09-25",
           "lastmod": "2026-09-23T18:14:54-07:00",
+          "our_url": "/compare/bilt-rewards-vs-chase-ultimate-rewards/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "How many Amtrak points do you need for a ticket?",
@@ -236154,7 +236194,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bilt Adds Amtrak as a 2:1 Transfer Partner - NerdWallet",
           "tool_io": []
         },

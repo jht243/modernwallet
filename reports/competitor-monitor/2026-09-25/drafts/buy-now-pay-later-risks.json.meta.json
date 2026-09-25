@@ -11,13 +11,13 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1610,
+ "words": 1635,
  "floor": 1200,
- "input_tokens": 21990,
- "output_tokens": 3197,
- "thinking_tokens": null,
+ "input_tokens": 23148,
+ "output_tokens": 3162,
+ "thinking_tokens": 1495,
  "cached_tokens": 18606,
- "est_cost_usd": 0.018,
+ "est_cost_usd": 0.0244,
  "guards": {
   "repairs": [],
   "flags": [
@@ -29,13 +29,11 @@
    "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
   "disallowed_urls_removed": [],
-  "words": 1610,
+  "words": 1635,
   "numbers_not_in_facts": [
    "09",
-   "150",
    "2026",
-   "25",
-   "40"
+   "25"
   ],
   "writer_scope": {
    "dropped_sections": [],
@@ -44,7 +42,7 @@
    "tokens_sent_est": 19035
   }
  },
- "seconds": 14.1,
- "response_id": "ium2aqW5EpfSjMcP0vbogAY",
- "generated_at": "2026-09-25T21:37:27+0000"
+ "seconds": 19.9,
+ "response_id": "1eu2au7rMdac9MoP7YWfuAE",
+ "generated_at": "2026-09-25T21:47:21+0000"
 }

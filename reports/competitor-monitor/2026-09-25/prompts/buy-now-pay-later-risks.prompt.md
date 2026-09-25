@@ -143,6 +143,65 @@ the specific provider's own terms.
   rule in May 2025, so no federal rule currently guarantees those specific protections; check
   the provider's own buyer-protection terms instead.
 
+## Row records (administrative, not reader-facing prose)
+
+teeup-exempt: regulatory/data-driven explainer — CFPB statistics and federal-rule history have
+no natural first-person "what we've seen" moment for sentence 2; sentence 1 is still the direct
+answer.
+anchor-exempt: every available proprietary angle (the CFPB stacking data, the 2024/2025 rule
+history, the Affirm/Experian/TransUnion/FICO reporting timeline) is sourced analysis, not a
+first-hand ModernWallet observation `_experience.md` would license; forcing one in would be a
+shoehorned reference the ANCHOR section itself bans.
+
+## THE ADDITIONAL CLOSED URL — added after the first draft's audit
+
+- https://www.experian.com/blogs/news/2025/03/19/affirm-expands-credit-reporting-with-experian/
+  (Experian's own primary source announcing the same Affirm reporting expansion fact 9 already
+  covers — link "Experian" itself here on its first mention, distinct from the existing Affirm
+  and TransUnion links)
+
+# CORRECTIONS FROM THE PHASE 4 AUDIT — apply to the regenerated draft
+
+The first draft was substantively correct (facts, sourcing, structure) but failed on these
+specific, fixable defects. Fix each; do not otherwise rewrite sections that did not fail.
+
+1. **Unlinked "Experian" (GATE — Links).** In section 3, "Experian" is named but never linked.
+   Add a markdown link on its first mention to
+   `https://www.experian.com/blogs/news/2025/03/19/affirm-expands-credit-reporting-with-experian/`
+   (Experian's own post about this exact fact), separate from the existing Affirm-hosted link
+   already used for "Affirm announced".
+2. **Coy abstraction "The company" (GATE — Naming and directives).** Section 3 currently reads
+   "The company announced a similar reporting expansion to TransUnion...". Replace "The company"
+   with "Affirm" — never use a generic stand-in once the subject has been named.
+3. **Undefined acronym "BNPL" (SEO — acronym rule).** The metaDescription uses the bare acronym
+   "BNPL" without ever pairing it with "Buy Now, Pay Later" first. Fix the metaDescription (and
+   check title/H1/intro/body/FAQ) so the FIRST time "Buy Now, Pay Later" appears in each of those
+   reader-facing fields where the bare acronym "BNPL" is later used in that SAME field, it is
+   written as "Buy Now, Pay Later (BNPL)" once, then "BNPL" alone is fine afterward within that
+   field.
+4. **Section 1 heading is a banned "X, not Y" antithesis (`_anti-ai-language.md` headline tell).**
+   "The Real Risk of Buy Now, Pay Later Is Stacking, Not Interest" matches the banned compressed
+   comma-antithesis shape. Replace with a plain declarative noun-phrase heading that states the
+   finding without the antithesis frame — e.g. a heading naming loan stacking as the real risk
+   WITHOUT the "not interest" contrastive clause tacked on.
+5. **Monotone sentence rhythm (GATE — Sentence rhythm, measured).** Sentences 54 through 66 of
+   the concatenated body text are 13 consecutive sentences all in the 15+-word "long" band
+   (lengths measured: 21,24,20,18,17,28,17,18,20,27,18,15,26). This run falls inside sections
+   "Whether Buy Now, Pay Later Shows Up on Your Credit Report" and "What Federal Protections You
+   Do and Do Not Have". Rewrite some of those sentences shorter (1-14 words) so no run of 10
+   consecutive sentences sits in a single length band, and no 5 consecutive sentences fall within
+   3 words of each other. Do not cut any fact or citation — vary rhythm only, e.g. split a
+   28-word sentence into a short punchy sentence plus a medium one, or state a fact plainly in
+   under 10 words where the draft currently pads it into a long sentence.
+6. **Unlabeled illustrative numbers (advisory, fix while regenerating).** "three or four $40
+   biweekly installments" and "several disconnected $150 purchases" in section 2 are invented
+   illustrative round numbers, not CFPB data. Label them explicitly as a hypothetical example
+   (e.g. "say three $40 installments land the same week" or similar plain framing that a reader
+   cannot mistake for a cited statistic), the same way this site labels other illustrative math.
+7. **Redundant section-1 opener (advisory).** Section 1's opening sentence currently restates the
+   intro's opening claim almost verbatim. Vary the wording so it adds something the intro did not
+   already say, while still standing alone as a complete declarative answer (AEO).
+
 ## Sources (for the `sources` field)
 
 - { "label": "CFPB — What Is a Buy Now, Pay Later (BNPL) Loan?", "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-buy-now-pay-later-bnpl-loan-en-2119/" }
