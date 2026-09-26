@@ -1,0 +1,125 @@
+{
+  "slug": "voo-vs-spy",
+  "title": "VOO vs SPY: Vanguard vs SPDR S&P 500 ETF",
+  "metaDescription": "VOO vs SPY compared: expense ratio, fund structure, and liquidity, so you can see which S&P 500 ETF fits your investing style.",
+  "targetKeyword": "voo vs spy",
+  "optionA": "VOO (Vanguard S&P 500 ETF)",
+  "optionB": "SPY (SPDR S&P 500 ETF Trust)",
+  "segment": "Investing",
+  "h1": "VOO vs SPY: Which S&P 500 ETF Should You Buy?",
+  "introText": "VOO has a 0.03% expense ratio and is structured as an ETF share class of an open-end [Vanguard](https://investor.vanguard.com) mutual fund. SPY, by contrast, charges 0.0945% and is structured as a unit investment trust with the deepest trading volume of any ETF in the world. So the better choice usually depends on whether you're a buy-and-hold investor looking for the lowest cost or an active trader who needs maximum liquidity.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Expense ratio",
+        "a": "0.03%",
+        "b": "0.0945%"
+      },
+      {
+        "dimension": "Fund structure",
+        "a": "Open-end fund (ETF share class of the Vanguard 500 Index Fund)",
+        "b": "Unit investment trust (UIT)"
+      },
+      {
+        "dimension": "Inception date",
+        "a": "September 2010",
+        "b": "January 1993 — the first U.S.-listed ETF"
+      },
+      {
+        "dimension": "Assets under management",
+        "a": "About $979 billion (ETF share class, June 2026)",
+        "b": "About $805 billion (August 2026)"
+      },
+      {
+        "dimension": "Dividend handling",
+        "a": "Can reinvest dividends into the portfolio right away",
+        "b": "Holds dividends in cash until the quarterly payout"
+      },
+      {
+        "dimension": "Securities lending",
+        "a": "Allowed — lending revenue can help offset costs",
+        "b": "Not allowed under UIT rules"
+      },
+      {
+        "dimension": "Trading liquidity",
+        "a": "High, with tight spreads",
+        "b": "Highest of any ETF worldwide, with the deepest options market"
+      }
+    ]
+  },
+  "verdict": "Neither ETF wins outright, because they're built for different jobs. SPY's unit investment trust structure makes it the default choice for options traders and large institutions moving big blocks of shares, since its trading volume and options open interest dwarf every other ETF. VOO's lower expense ratio and open-end fund structure — which allows dividend reinvestment and securities lending — make it the better pick for a buy-and-hold retail investor, since a 0.065-percentage-point cost gap compounds into real money over decades. If you're not trading options or moving institutional-size blocks, the cost difference usually outweighs SPY's liquidity edge.",
+  "sections": [
+    {
+      "heading": "The expense ratio gap, in real dollars",
+      "content": "VOO's 0.03% [expense ratio](/guides/what-is-a-good-expense-ratio/) costs about $3 a year on a $10,000 investment, while SPY's 0.0945% expense ratio costs about $9.45 a year on the same balance — both confirmed directly from Vanguard's and [State Street's](https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy) own fund fact sheets.\n\nThat 0.065-percentage-point gap looks tiny year to year, but it compounds. On a hypothetical $10,000 investment growing at 8% a year before fees for 30 years, VOO's lower cost leaves you with roughly $1,770 more than SPY, assuming both funds otherwise tracked the index identically.\n\nNeither fee is high by industry standards — both funds are far cheaper than the average actively managed fund. But between two funds tracking the exact same index, the cheaper one wins on cost alone whenever you don't need SPY's specific trading advantages."
+    },
+    {
+      "heading": "The real structural difference: open-end fund vs. unit investment trust",
+      "content": "VOO's 0.03% cost edge isn't the only structural difference, and for some investors the structure matters more than the fee. VOO is an ETF share class of the Vanguard 500 Index Fund, an open-end mutual fund, using the patented share-class structure Vanguard pioneered in 2001. Open-end funds are allowed to reinvest dividends into the portfolio right away and to lend out portfolio securities for extra income that helps offset costs.\n\nSPY is legally a [unit investment trust](https://www.ssga.com/us/en/individual/etfs/spdr-sp-500-etf-trust-spy), a structure State Street chose in 1993 because it was the design regulators understood fastest at the time. A UIT can't lend its securities and can't reinvest the dividends it collects — it has to hold that cash until the next quarterly distribution, creating a small performance drag known as cash drag that shows up most in strong bull markets.\n\nFor a long-term holder, that structural gap plus the expense-ratio gap both point toward VOO. For a trader who needs SPY's specific liquidity profile, the structural tradeoff is usually worth accepting."
+    },
+    {
+      "heading": "Why professional traders still choose SPY",
+      "content": "SPY is the single most heavily traded ETF in the world, and that liquidity is the real reason institutions and options traders keep using it over VOO. Higher trading volume means tighter bid-ask spreads, which matters most to anyone trading in and out the same day or moving a large block of shares.\n\nSPY also carries by far the deepest options market of any equity ETF, with far more strike prices and expiration dates available than VOO offers. A trader hedging a portfolio or running an income strategy with covered calls needs that options depth — VOO's options market has grown but still doesn't match SPY's.\n\nNone of this liquidity edge matters if you're simply buying shares once a month and holding for 20 years. It matters a lot if you're an active trader or an institution moving size."
+    },
+    {
+      "heading": "Minimums, taxes, and dividends",
+      "content": "Both ETFs trade for the price of one share, so there's no meaningful minimum-investment difference between them — a real change from Vanguard's own mutual funds, which often require $3,000 or more to start. You can buy either ETF through the [investing hub](/investing/) with whatever cash you have.\n\nBoth funds pay dividends quarterly and are similarly tax-efficient in a taxable account, since both use the in-kind creation and redemption process that lets ETFs generally avoid passing capital gains distributions to shareholders. SPY's dividend-cash-drag from its UIT structure is a performance detail, not a tax difference — both funds' dividends are taxed the same way in your hands.\n\nIn a 401(k), IRA, or other tax-advantaged account, none of this matters much. Use the [S&P 500 calculator](/investing/sp500-calculator/) to project either fund's growth, and the [compound interest calculator](/investing/compound-interest-calculator/) to see how small fee differences compound over your own time horizon."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is VOO better than SPY?",
+      "answer": "For most buy-and-hold investors, yes — VOO's 0.03% expense ratio is lower than SPY's 0.0945%, and that gap compounds meaningfully over decades. SPY remains the better pick for active and options traders because of its much deeper trading volume and options market."
+    },
+    {
+      "question": "Why does SPY cost more than VOO if they track the same index?",
+      "answer": "SPY is structured as a unit investment trust, a legal structure from 1993 that can't reinvest dividends or lend securities the way VOO's open-end fund structure can. Those restrictions, plus SPY's older cost basis, leave it with a higher expense ratio: 0.0945% versus VOO's 0.03%."
+    },
+    {
+      "question": "Can VOO and SPY lose money?",
+      "answer": "Yes. Both funds track the S&P 500 Index and rise and fall with it — the index fell about 19% in 2022. Since they track the same 500 companies, VOO and SPY move by almost identical amounts in any given period, aside from the small cost of their fees."
+    },
+    {
+      "question": "Which is more liquid, VOO or SPY?",
+      "answer": "SPY. It's the most heavily traded ETF in the world, with a far deeper options market than VOO. That extra liquidity matters most to options traders and institutions moving large blocks of shares — it rarely matters to someone buying and holding for retirement."
+    },
+    {
+      "question": "Do VOO and SPY pay the same dividend?",
+      "answer": "They pay very similar dividend amounts because they hold the same 500 companies, though the exact per-share amount differs based on share price and each fund's expenses. Both distribute dividends quarterly; SPY holds the cash until the payout date because its unit investment trust structure doesn't allow reinvestment in between."
+    },
+    {
+      "question": "Which should I hold in a 401(k) or IRA?",
+      "answer": "Either works, since account-level tax treatment removes most of the tax-efficiency difference between them. VOO's lower expense ratio makes it the more common default for a buy-and-hold retirement account, unless your plan only offers SPY."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vanguard — VOO fund fact sheet (June 30, 2026)",
+      "url": "https://fund-docs.vanguard.com/F0968.pdf"
+    },
+    {
+      "label": "State Street — SPY fund fact sheet (June 30, 2026)",
+      "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spy.pdf"
+    },
+    {
+      "label": "SEC — SPDR ETFs: Basics of Product Structure (State Street)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1222333/000119312514287007/d766507dfwp.htm"
+    }
+  ],
+  "relatedComparisons": [
+    "etf-vs-mutual-fund",
+    "index-fund-vs-etf",
+    "vanguard-vs-fidelity",
+    "target-date-fund-vs-sp500"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "S&P 500 calculator",
+      "href": "/investing/sp500-calculator/"
+    },
+    {
+      "label": "Compound interest calculator",
+      "href": "/investing/compound-interest-calculator/"
+    }
+  ]
+}

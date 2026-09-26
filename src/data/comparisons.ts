@@ -15516,6 +15516,93 @@ export const COMPARISONS: ComparisonEntry[] = [
     ]
   },
 
+  // -- ga4-top-pages-pass 2026-09-26: voo-vs-spy-vs-qqq (comparison, spoke of /compare/voo-vs-spy/) --
+  {
+    "updated": "2026-09-26",
+    "slug": "voo-vs-spy-vs-qqq",
+    "title": "VOO vs SPY vs QQQ: S&P 500 vs Nasdaq-100 ETFs",
+    "metaDescription": "Compare VOO, SPY, and QQQ on expense ratios, index concentration, and trading liquidity to find the right balance between S&P 500 and Nasdaq-100 ETFs.",
+    "targetKeyword": "VOO vs SPY vs QQQ",
+    "optionA": "VOO / SPY (S&P 500 ETFs)",
+    "optionB": "QQQ (Nasdaq-100 ETF)",
+    "h1": "VOO vs SPY vs QQQ: Which Fund Fits Your Portfolio?",
+    "introText": "QQQ tracks the Nasdaq-100 Index rather than the S&P 500, giving it roughly double the technology-sector exposure and far heavier concentration in its top ten holdings than either VOO or SPY. At The Modern Wallet, we evaluate fund mechanics by portfolio weights and expense ratios rather than market sentiment, because index rules dictate how your cash gets deployed.\n\nVOO and SPY distribute your money across 500 large domestic companies, while QQQ concentrates capital into 100 non-financial companies listed exclusively on the Nasdaq exchange. Choosing between VOO vs SPY vs QQQ comes down to whether you want broad, low-cost domestic equity exposure or a targeted growth tilt toward mega-cap technology.",
+    "comparisonTable": {
+      "rows": [
+        { "dimension": "Tracked index", "a": "S&P 500 Index", "b": "Nasdaq-100 Index" },
+        { "dimension": "Expense ratio", "a": "0.03% (VOO) / 0.0945% (SPY)", "b": "0.18%" },
+        { "dimension": "Total holdings count", "a": "500 companies across 11 market sectors", "b": "102 positions excluding financials" },
+        { "dimension": "Information technology sector weight", "a": "Roughly a third of total fund assets", "b": "Approximately 57.8% of total fund assets" },
+        { "dimension": "Top 10 holdings concentration", "a": "Just over 37%, and by some measures closer to 39%", "b": "Approximately 47.3% of total fund assets" },
+        { "dimension": "Trading liquidity and options market", "a": "SPY leads global volume; VOO options volume is lower", "b": "Second most traded U.S. ETF by daily volume with deep options liquidity" },
+        { "dimension": "Fund legal structure", "a": "Open-end fund (VOO) / Unit investment trust (SPY)", "b": "Unit investment trust (UIT)" },
+        { "dimension": "Financial sector exposure", "a": "Full exposure including major commercial banks", "b": "Zero allocation to financial companies by index design" },
+        { "dimension": "Assets under management", "a": "About $979 billion (VOO, June 2026) / About $805 billion (SPY, August 2026)", "b": "Approximately $485.8 billion (June 2026)" },
+      ]
+    },
+    "verdict": "Neither fund is a universal winner because they serve different portfolio roles. VOO is the best choice for buy-and-hold retail investors seeking low-cost, broad market coverage across all sectors, thanks to its 0.03% expense ratio and diversified 500-stock portfolio. SPY remains the default vehicle for institutional desks and active options traders moving large blocks of capital who need maximum trading liquidity. QQQ suits growth-focused investors who deliberately want heavy technology exposure, zero banking sector risk, and higher price momentum, and who are willing to accept an 0.18% expense ratio alongside wider swings in portfolio value. What would change our recommendation is a sharp reduction in QQQ's expense ratio or a shift in investor risk tolerance away from mega-cap growth. If you already hold individual technology equities or an S&P 500 fund, adding QQQ amplifies your single-sector concentration rather than providing diversification.",
+    "sections": [
+      {
+        "heading": "How Index Rules Shape VOO vs SPY vs QQQ Concentration",
+        "content": "QQQ tracks the Nasdaq-100 Index rather than the S&P 500, giving it roughly double the technology-sector exposure and far heavier concentration in its top ten holdings than either VOO or SPY.\n\nVOO and SPY track the S&P 500 Index. They hold roughly 500 large domestic companies selected across 11 market sectors. QQQ follows the Nasdaq-100 Index instead. That benchmark tracks the 100 largest non-financial companies listed on the Nasdaq exchange. Weighting follows a modified market capitalization formula.\n\nPer [Invesco](https://www.invesco.com/qqq-etf/en/home.html) and its Form NPORT-P filing with the [Securities and Exchange Commission](https://www.sec.gov/Archives/edgar/data/0001067839/000106783926000030/edgar.htm), QQQ holds 102 total positions with approximately $485.8 billion in net assets as of June 30, 2026. Its top ten holdings account for approximately 47.3% of total fund assets. Information technology positions make up approximately 57.8% of the fund.\n\nData reported by [Pensions & Investments](https://www.pionline.com/data-rankings/chart-of-the-day/pi-sp500-index-concentration/) puts the top ten holdings of the S&P 500 at just over 37%, and by some measures closer to 39%, of total index weight. Information technology represents roughly a third of the S&P 500, or about 30% of total assets. That leaves QQQ roughly 8 to 10 percentage points more concentrated in its ten largest holdings than VOO or SPY, with nearly twice the exposure to technology."
+      },
+      {
+        "heading": "The Structural Difference Between VOO and SPY",
+        "content": "VOO and SPY track the identical S&P 500 Index, but they differ in fund structure, expense ratios, and dividend management. Our dedicated [VOO vs SPY comparison](/compare/voo-vs-spy/) covers these fund mechanics in full detail.\n\nAccording to the [Vanguard](https://fund-docs.vanguard.com/F0968.pdf) fund fact sheet, VOO launched in September 2010 as an Exchange-Traded Fund (ETF) share class of an open-end mutual fund and charges an expense ratio of 0.03%. The ETF share class held about $979 billion in Assets Under Management (AUM) as of June 30, 2026. Open-end structures allow immediate dividend reinvestment.\n\nThe [State Street](https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spy.pdf) fact sheet shows SPY launched in January 1993 as a Unit Investment Trust (UIT) with a 0.0945% expense ratio and held about $805 billion as of August 2026. Under unit investment trust rules, SPY cannot lend its portfolio securities or reinvest dividends before distribution dates. It holds cash until quarterly payouts.\n\nQQQ shares this exact unit investment trust design with SPY, meaning Invesco must hold dividend cash rather than reinvesting it immediately. Buy-and-hold investors often prefer VOO for lower costs. Active institutions favor SPY for unmatched options liquidity."
+      },
+      {
+        "heading": "Portfolio Allocation Tradeoffs in VOO vs SPY vs QQQ",
+        "content": "Adding QQQ to a portfolio that already holds VOO or SPY increases technology exposure rather than adding true diversification. The largest companies in the Nasdaq-100 also dominate the S&P 500. Buying both funds concentrates capital into the same mega-cap corporations instead of spreading risk into distinct economic sectors.\n\nConsider an investor who allocates 80% of an equity portfolio to VOO and 20% to QQQ. That portfolio places over 35% of its total capital in technology companies and over 39% of its value in just ten corporate names. Holding individual tech shares on top creates even heavier single-industry exposure.\n\nSector allocation marks the primary difference between these index strategies. VOO and SPY provide exposure across banking, healthcare, industrials, and energy. QQQ excludes financial companies by index design.\n\nWith 102 positions and roughly 57.8% in technology, QQQ swings further in both directions than a 500-stock index fund. Broader funds cushion industry downturns through defensive holdings like utilities. Investors seeking balanced asset allocation should weigh that tradeoff carefully."
+      },
+      {
+        "heading": "Liquidity and Expense Ratios in VOO vs SPY vs QQQ",
+        "content": "QQQ carries an expense ratio of 0.18%, which is double SPY's 0.0945% fee and six times VOO's 0.03% fee. On a $10,000 investment balance, VOO costs $3 annually, SPY costs $9.45 annually, and QQQ costs $18 annually. On a $100,000 balance, annual fees reach $30 for VOO, $94.50 for SPY, and $180 for QQQ.\n\nCarrying costs compound over time. Our [expense ratio guide](/guides/what-is-a-good-expense-ratio/) explains how management fees erode long-term returns. Use our [compound interest calculator](/investing/compound-interest-calculator/) to compare how an 0.18% fee stacks up against an 0.03% fee over 20 or 30 years.\n\nTrading liquidity presents a different balance of advantages across the three funds. Per Invesco fund disclosures, QQQ is the second-most traded ETF in the United States based on average daily volume. SPY ranks first globally in ETF trading volume, while VOO maintains tight spreads with lower daily turnover.\n\nTraders who buy and sell options contracts heavily favor SPY and QQQ over VOO. Both funds offer deep order books with tight bid-ask spreads across strike prices and expiration dates. Long-term buy-and-hold investors gain little from options liquidity."
+      },
+      {
+        "heading": "Deciding Which Fund Fits Your Timeline",
+        "content": "Choosing between VOO, SPY, and QQQ depends on your investment time horizon, risk tolerance, and existing equity exposure. VOO fits long-term buy-and-hold investors who prioritize low costs and broad sector diversification. SPY fits active traders, institutions, and options strategists who require the deepest trading volume and narrowest execution spreads available.\n\nQQQ fits growth-oriented investors with longer holding horizons who seek concentrated exposure to large non-financial companies and can tolerate sharper price swings. This fund is not for conservative investors who require capital preservation, steady dividend yields, or broad sector diversification. Conservative portfolios need broader sector balance.\n\nWhat would change our assessment is a shift in fund cost or index concentration. If Invesco lowered QQQ's 0.18% expense ratio closer to Vanguard levels, holding the fund long term would carry far less fee drag. Fee reductions would improve its long-term compounding profile.\n\nModel your investment timeline using our [S&P 500 calculator](/investing/sp500-calculator/) to project potential broad-market growth. If you invest on a set schedule, test contribution frequencies with our [dollar-cost averaging calculator](/investing/dollar-cost-averaging-calculator/). Because tax considerations and risk tolerance vary by household, consult a licensed financial advisor or certified public accountant regarding your portfolio strategy.\n\nReview your current sector allocations and calculate your annual carrying costs before choosing your allocation among VOO vs SPY vs QQQ."
+      },
+    ],
+    "faqs": [
+      {
+        "question": "Is QQQ just a more expensive version of VOO or SPY?",
+        "answer": "No, QQQ tracks an entirely different index. While VOO and SPY follow the S&P 500 Index of 500 companies across all market sectors, QQQ tracks the Nasdaq-100 Index. That index includes only the 100 largest non-financial companies listed on the Nasdaq exchange. QQQ charges a higher expense ratio of 0.18%, compared to 0.03% for VOO and 0.0945% for SPY, but its primary difference lies in its 57.8% technology weighting and absence of financial stocks."
+      },
+      {
+        "question": "How much more concentrated is QQQ than the S&P 500?",
+        "answer": "QQQ is noticeably more concentrated in both single stocks and technology sector exposure. Per Invesco fund filings, QQQ holds approximately 47.3% of its total assets in its top ten holdings, compared to just over 37%, and by some measures closer to 39%, for the S&P 500. Furthermore, QQQ allocates approximately 57.8% of its portfolio to information technology, which is roughly double the technology weighting of the S&P 500 at about a third."
+      },
+      {
+        "question": "Can I hold VOO or SPY and QQQ together, or does that overlap too much?",
+        "answer": "You can hold both, but you should recognize that doing so concentrates your portfolio in mega-cap technology rather than diversifying it. The largest companies in the Nasdaq-100 are also the largest companies in the S&P 500. Combining VOO or SPY with QQQ increases your portfolio weighting in those specific firms while reducing your relative exposure to healthcare, financials, and industrials."
+      },
+      {
+        "question": "Which is riskier, QQQ or an S&P 500 fund?",
+        "answer": "QQQ generally carries higher volatility and downside risk because of its concentrated portfolio. With only 102 positions and approximately 57.8% of assets in the technology sector, QQQ experiences larger price swings when growth stocks fluctuate. VOO and SPY spread risk across 500 companies and 11 distinct economic sectors, which helps cushion downturns when technology stocks pull back."
+      },
+      {
+        "question": "Why does QQQ have zero financial stocks?",
+        "answer": "The Nasdaq-100 Index rules explicitly exclude financial companies, including commercial banks, investment banks, and insurance providers. By index design, QQQ only selects the largest non-financial firms listed on the Nasdaq exchange. In contrast, VOO and SPY track the S&P 500, which includes major financial institutions as part of its broad market coverage."
+      },
+      {
+        "question": "Which fund is best for options trading?",
+        "answer": "SPY and QQQ are both superior to VOO for options trading due to their massive daily volume. SPY ranks as the most heavily traded ETF globally, while Invesco reports QQQ as the second-most traded ETF in the United States by average daily volume. Both funds maintain tight bid-ask spreads and deep order books across strike prices, whereas VOO has lower trading volume that suits buy-and-hold investing instead."
+      },
+    ],
+    "sources": [
+      { "label": "Invesco, QQQ ETF Fund Page", "url": "https://www.invesco.com/qqq-etf/en/home.html" },
+      { "label": "SEC EDGAR, Invesco QQQ Trust, Series 1 Form NPORT-P (June 30, 2026)", "url": "https://www.sec.gov/Archives/edgar/data/0001067839/000106783926000030/edgar.htm" },
+      { "label": "Pensions & Investments, S&P 500 Index Concentration Report", "url": "https://www.pionline.com/data-rankings/chart-of-the-day/pi-sp500-index-concentration/" },
+      { "label": "Vanguard, VOO Fund Fact Sheet (June 30, 2026)", "url": "https://fund-docs.vanguard.com/F0968.pdf" },
+      { "label": "State Street, SPY Fund Fact Sheet (June 30, 2026)", "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-spy.pdf" },
+    ],
+    "relatedComparisons": ["voo-vs-spy"],
+    "calculatorLinks": [
+      { "label": "S&P 500 calculator", "href": "/investing/sp500-calculator/" },
+      { "label": "Compound interest calculator", "href": "/investing/compound-interest-calculator/" },
+      { "label": "Dollar-cost averaging calculator", "href": "/investing/dollar-cost-averaging-calculator/" },
+    ]
+  },
 ];
 
 export const COMPARISON_BY_SLUG = Object.fromEntries(

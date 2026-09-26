@@ -201,3 +201,8 @@
 | /guides/what-are-trump-accounts-invested-in | 2026-09-23 | 1 | 0/0/1/0/0 | 0 |
 | /roundup/best-index-funds/ | 2026-09-23 | 1 | 0/0/0/0/0 | 0 |
 | /portfolio/90-10-portfolio-calculator/ | 2026-09-23 | 0 | 0/1/1/0/0 | 0 |
+| /investing/stock-profit-calculator/ | 2026-09-26 | 2 | 0/0/1/0/0 | 0 |
+| /auto-loan/payoff-calculator/ | 2026-09-26 | 1 | 0/0/0/0/0 | 0 |
+| /compare/voo-vs-spy | 2026-09-26 | 1 | 0/1/0/0/0 | 0 |
+| /roundup/best-ai-stock-pickers | 2026-09-26 | 1 | 0/0/1/0/0 | 0 |
+| /compare/utma-vs-ugma/ | 2026-09-26 | 1 | 0/0/0/0/0 | 0 |

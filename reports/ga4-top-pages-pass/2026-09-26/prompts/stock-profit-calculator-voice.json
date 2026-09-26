@@ -1,0 +1,17 @@
+{
+  "slug": "stock-profit-calculator",
+  "pageType": "spoke/calculator",
+  "title": "Stock Profit Calculator: Net Return and Break-Even",
+  "h1": "Stock Profit Calculator",
+  "introText": "This stock profit calculator determines your net profit or loss, total return percentage, and break-even exit price for any share trade.\n\nYou enter four numbers: your purchase price, your sale price, your total share count, and any broker transaction fees. At ModernWallet, we build tools that eliminate math confusion so you can evaluate the true financial result of an investment before committing cash. When you purchase multiple share lots across different dates rather than a single block, calculate your blended cost basis with our [stock average cost calculator](/investing/stock-average-cost-calculator/).",
+  "faqs": [
+    {
+      "question": "How do you calculate profit on a stock trade?",
+      "answer": "To calculate profit on a stock trade, subtract your total net purchase cost from your net sale proceeds. Net purchase cost equals the shares bought multiplied by the purchase price per share, plus any buy-side commission. Net sale proceeds equal the shares sold multiplied by the sale price per share, minus any sell-side commission. Subtracting the net cost from the net proceeds gives your realized dollar profit or loss. To find your return percentage, divide that dollar profit by your total initial cost outlay and multiply by 100."
+    },
+    {
+      "question": "Do I pay taxes on stock trading profit?",
+      "answer": "Yes, you generally pay capital gains taxes when you realize a profit by selling shares in a taxable brokerage account. If you hold the shares for one year or less, the Internal Revenue Service (IRS) treats the return as a short-term capital gain taxed at your ordinary income tax rate. If you hold the shares for longer than one year, the gain qualifies for lower long-term capital gains tax rates. You can review tax rules in [IRS Publication 550](https://www.irs.gov/publications/p550). Investment gains inside tax-advantaged retirement accounts, like traditional or Roth individual retirement arrangements (IRAs), follow separate tax distribution guidelines."
+    }
+  ]
+}

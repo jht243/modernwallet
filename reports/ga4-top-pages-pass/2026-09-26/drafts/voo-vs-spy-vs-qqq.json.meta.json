@@ -1,0 +1,60 @@
+{
+ "slug": "voo-vs-spy-vs-qqq",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1933,
+ "floor": 1500,
+ "input_tokens": 21288,
+ "output_tokens": 4139,
+ "thinking_tokens": 24412,
+ "cached_tokens": 18169,
+ "est_cost_usd": 0.1128,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1933,
+  "numbers_not_in_facts": [
+   "09",
+   "10000",
+   "100000",
+   "11",
+   "18",
+   "180",
+   "26",
+   "35",
+   "80",
+   "9.45",
+   "94.5"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18344
+  }
+ },
+ "seconds": 88.7,
+ "response_id": "NJW3arqIOdfh-sAP1vi82QY",
+ "generated_at": "2026-09-26T09:51:09+0000"
+}

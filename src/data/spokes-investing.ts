@@ -1022,6 +1022,10 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       {
         "question": "How does a stock split affect my trade profit?",
         "answer": "A stock split changes your total share count and your per-share cost basis without changing the overall dollar value of your holding. In a standard two-for-one split, you receive double the shares, while your cost basis per share cuts in half. Your total invested capital and overall dollar profit remain identical before and after the corporate action. If a company you hold undergoes a restructuring, use our [stock split calculator](/investing/stock-split-calculator/) to adjust your share count and adjusted cost basis correctly before running profit figures."
+      },
+      {
+        "question": "Does this calculator include dividends I received while holding the stock?",
+        "answer": "No, this stock profit calculator only measures realized capital gain or loss based on your purchase price, sale price, share count, and broker commissions. Dividends provide a separate return stream from capital appreciation. If you received cash dividends during your holding period, add that payout to your net profit result to find your true total return. The Internal Revenue Service (IRS) taxes qualified dividends at the same preferential rates as long-term capital gains, while non-qualified ordinary dividends are taxed as ordinary income."
       }
     ],
     "sources": [
