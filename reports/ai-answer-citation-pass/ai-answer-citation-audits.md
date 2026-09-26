@@ -46,3 +46,12 @@
 | /portfolio/ | 2026-09-19 | portfolio value | ABSENT | no | www.startengine.com/www.kubera.com/info.quicken.com (+2 more) | none | n/a |
 | /real-estate/ | 2026-09-19 | rental property return | ABSENT | no | www.reddit.com/www.calculator.net/www.rocketmortgage.com (+6 more) | none | n/a |
 | /compliance/colorado-cottage-foods-act-expansion/ | 2026-09-19 | cottage food law colorado | ABSENT | no | cdphe.colorado.gov/extension.colostate.edu/nationalaglawcenter.org (+5 more) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-09-26 | last will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-09-26 | cons for trump account | none (no AIO) | n/a | n/a | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-09-26 | roth 401k percentage | none (no AIO) | n/a | n/a | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-09-26 | living trust usa reviews | ABSENT | no | oag.ca.gov/www.reddit.com/da.lacounty.gov (+4 more) | none | n/a |
+| /compare/etf-vs-mutual-fund/ | 2026-09-26 | etf vs mutual fund | ABSENT | no | investor.vanguard.com/www.finra.org/www.fidelity.com (+2 more) | none | n/a |
+| /budget/ | 2026-09-26 | nerdwallet budget calculator | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/llc-vs-c-corp/ | 2026-09-26 | difference between an llc and a c corp | ABSENT | no | stripe.com/tax.thomsonreuters.com/www.wolterskluwer.com (+6 more) | none | n/a |
+| /roundup/best-tax-relief-companies/ | 2026-09-26 | irs approved 2290 providers | ABSENT | no | www.irs.gov/www.expresstrucktax.com/www.truckdues.com (+3 more) | none | n/a |
+| /real-estate/ | 2026-09-26 | rental property return on investment | ABSENT | no | www.reddit.com/www.calculator.net/www.rocketmortgage.com (+3 more) | none | n/a |
