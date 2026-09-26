@@ -1,0 +1,7 @@
+2026-09-26 ga4-top-pages-pass IndexNow submission
+Key: dc557f6bfced447aa1a71771d8a0d24a (fallback key, already active on this site)
+URLs submitted (3):
+https://www.themodernwallet.com/compare/voo-vs-spy-vs-qqq/
+https://www.themodernwallet.com/investing/stock-profit-calculator/
+https://www.themodernwallet.com/roundup/best-ai-stock-pickers/
+Result: HTTP 200
