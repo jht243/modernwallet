@@ -1,0 +1,473 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-26",
+  "window_start": "2026-08-30",
+  "window_end": "2026-09-26",
+  "window_days": 28,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 1068,
+      "sessions": 1059,
+      "active_users": 958,
+      "clicks": 1068,
+      "avg_eng_s": 75.0,
+      "engagement_rate": 0.6601,
+      "bounce_rate": 0.3399,
+      "scrolled_users": 93,
+      "scrolled_pct": 0.0971
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 875,
+      "sessions": 889,
+      "active_users": 777,
+      "clicks": 875,
+      "avg_eng_s": 114.7,
+      "engagement_rate": 0.5939,
+      "bounce_rate": 0.4061,
+      "scrolled_users": 27,
+      "scrolled_pct": 0.0347
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 414,
+      "sessions": 451,
+      "active_users": 395,
+      "clicks": 414,
+      "avg_eng_s": 42.1,
+      "engagement_rate": 0.4922,
+      "bounce_rate": 0.5078,
+      "scrolled_users": 33,
+      "scrolled_pct": 0.0835
+    },
+    {
+      "page": "/",
+      "views": 222,
+      "sessions": 181,
+      "active_users": 175,
+      "clicks": 222,
+      "avg_eng_s": 13.5,
+      "engagement_rate": 0.3923,
+      "bounce_rate": 0.6077,
+      "scrolled_users": 13,
+      "scrolled_pct": 0.0743
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 129,
+      "sessions": 135,
+      "active_users": 122,
+      "clicks": 129,
+      "avg_eng_s": 103.3,
+      "engagement_rate": 0.5926,
+      "bounce_rate": 0.4074,
+      "scrolled_users": 11,
+      "scrolled_pct": 0.0902
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 128,
+      "sessions": 140,
+      "active_users": 116,
+      "clicks": 128,
+      "avg_eng_s": 65.1,
+      "engagement_rate": 0.5071,
+      "bounce_rate": 0.4929,
+      "scrolled_users": 8,
+      "scrolled_pct": 0.069
+    },
+    {
+      "page": "/guides/401k-beneficiary-rules/",
+      "views": 127,
+      "sessions": 128,
+      "active_users": 110,
+      "clicks": 127,
+      "avg_eng_s": 84.8,
+      "engagement_rate": 0.5391,
+      "bounce_rate": 0.4609,
+      "scrolled_users": 12,
+      "scrolled_pct": 0.1091
+    },
+    {
+      "page": "/retirement/social-security-retirement-calculator/",
+      "views": 117,
+      "sessions": 111,
+      "active_users": 99,
+      "clicks": 117,
+      "avg_eng_s": 72.0,
+      "engagement_rate": 0.7928,
+      "bounce_rate": 0.2072,
+      "scrolled_users": 28,
+      "scrolled_pct": 0.2828
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 105,
+      "sessions": 109,
+      "active_users": 96,
+      "clicks": 105,
+      "avg_eng_s": 108.6,
+      "engagement_rate": 0.5596,
+      "bounce_rate": 0.4404,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.0521
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 96,
+      "sessions": 100,
+      "active_users": 91,
+      "clicks": 96,
+      "avg_eng_s": 106.3,
+      "engagement_rate": 0.45,
+      "bounce_rate": 0.55,
+      "scrolled_users": 12,
+      "scrolled_pct": 0.1319
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 94,
+      "sessions": 85,
+      "active_users": 75,
+      "clicks": 94,
+      "avg_eng_s": 126.0,
+      "engagement_rate": 0.7765,
+      "bounce_rate": 0.2235,
+      "scrolled_users": 8,
+      "scrolled_pct": 0.1067
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 82,
+      "sessions": 86,
+      "active_users": 76,
+      "clicks": 82,
+      "avg_eng_s": 97.9,
+      "engagement_rate": 0.4767,
+      "bounce_rate": 0.5233,
+      "scrolled_users": 11,
+      "scrolled_pct": 0.1447
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 77,
+      "sessions": 75,
+      "active_users": 70,
+      "clicks": 77,
+      "avg_eng_s": 90.5,
+      "engagement_rate": 0.8267,
+      "bounce_rate": 0.1733,
+      "scrolled_users": 8,
+      "scrolled_pct": 0.1143
+    },
+    {
+      "page": "/guides/custodial-account-taxes-kiddie-tax/",
+      "views": 64,
+      "sessions": 71,
+      "active_users": 59,
+      "clicks": 64,
+      "avg_eng_s": 96.6,
+      "engagement_rate": 0.5775,
+      "bounce_rate": 0.4225,
+      "scrolled_users": 8,
+      "scrolled_pct": 0.1356
+    },
+    {
+      "page": "/compare/vanguard-vs-fidelity/",
+      "views": 60,
+      "sessions": 60,
+      "active_users": 35,
+      "clicks": 60,
+      "avg_eng_s": 142.6,
+      "engagement_rate": 0.4167,
+      "bounce_rate": 0.5833,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.0857
+    },
+    {
+      "page": "/portfolio/60-40-portfolio-calculator/",
+      "views": 59,
+      "sessions": 57,
+      "active_users": 49,
+      "clicks": 59,
+      "avg_eng_s": 61.6,
+      "engagement_rate": 0.6316,
+      "bounce_rate": 0.3684,
+      "scrolled_users": 8,
+      "scrolled_pct": 0.1633
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account/",
+      "views": 55,
+      "sessions": 55,
+      "active_users": 12,
+      "clicks": 55,
+      "avg_eng_s": 76.2,
+      "engagement_rate": 0.2909,
+      "bounce_rate": 0.7091,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.0833
+    },
+    {
+      "page": "/guides/250th-anniversary-coins/",
+      "views": 51,
+      "sessions": 53,
+      "active_users": 49,
+      "clicks": 51,
+      "avg_eng_s": 29.2,
+      "engagement_rate": 0.5472,
+      "bounce_rate": 0.4528,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.0612
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 44,
+      "sessions": 46,
+      "active_users": 34,
+      "clicks": 44,
+      "avg_eng_s": 62.2,
+      "engagement_rate": 0.4348,
+      "bounce_rate": 0.5652,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.0882
+    },
+    {
+      "page": "/compare/hysa-vs-money-market/",
+      "views": 42,
+      "sessions": 43,
+      "active_users": 39,
+      "clicks": 42,
+      "avg_eng_s": 47.2,
+      "engagement_rate": 0.4884,
+      "bounce_rate": 0.5116,
+      "scrolled_users": 1,
+      "scrolled_pct": 0.0256
+    },
+    {
+      "page": "/compare/utma-vs-ugma/",
+      "views": 40,
+      "sessions": 42,
+      "active_users": 36,
+      "clicks": 40,
+      "avg_eng_s": 48.6,
+      "engagement_rate": 0.3333,
+      "bounce_rate": 0.6667
+    },
+    {
+      "page": "/guides/high-yield-savings-account-for-kids-and-teens/",
+      "views": 39,
+      "sessions": 39,
+      "active_users": 37,
+      "clicks": 39,
+      "avg_eng_s": 60.6,
+      "engagement_rate": 0.5897,
+      "bounce_rate": 0.4103,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.1351
+    },
+    {
+      "page": "/portfolio/portfolio-risk-calculator/",
+      "views": 39,
+      "sessions": 37,
+      "active_users": 37,
+      "clicks": 39,
+      "avg_eng_s": 7.7,
+      "engagement_rate": 0.1622,
+      "bounce_rate": 0.8378,
+      "scrolled_users": 2,
+      "scrolled_pct": 0.0541
+    },
+    {
+      "page": "/mortgage/payoff-calculator/",
+      "views": 35,
+      "sessions": 37,
+      "active_users": 34,
+      "clicks": 35,
+      "avg_eng_s": 89.7,
+      "engagement_rate": 0.5946,
+      "bounce_rate": 0.4054,
+      "scrolled_users": 3,
+      "scrolled_pct": 0.0882
+    },
+    {
+      "page": "/net-worth/",
+      "views": 35,
+      "sessions": 31,
+      "active_users": 31,
+      "clicks": 35,
+      "avg_eng_s": 103.1,
+      "engagement_rate": 0.8387,
+      "bounce_rate": 0.1613,
+      "scrolled_users": 6,
+      "scrolled_pct": 0.1935
+    }
+  ],
+  "top10_pages_total_views": 4097,
+  "top10_pages_total_clicks": 4097,
+  "channel_split": {
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 992,
+      "Direct": 47,
+      "Unassigned": 14,
+      "Cross-network": 11,
+      "Referral": 2,
+      "AI Assistant": 1,
+      "Organic Social": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 808,
+      "Cross-network": 35,
+      "Direct": 35,
+      "Unassigned": 29,
+      "Referral": 2
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 375,
+      "Cross-network": 44,
+      "Unassigned": 28,
+      "Direct": 22
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 121,
+      "Direct": 8,
+      "AI Assistant": 4,
+      "Unassigned": 3,
+      "Cross-network": 2,
+      "Organic Social": 1,
+      "Referral": 1
+    },
+    "/guides/401k-beneficiary-rules/": {
+      "Organic Search": 114,
+      "Direct": 10,
+      "Cross-network": 3,
+      "Unassigned": 2,
+      "AI Assistant": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 112,
+      "Direct": 11,
+      "Cross-network": 8,
+      "Unassigned": 6,
+      "AI Assistant": 1
+    },
+    "/retirement/social-security-retirement-calculator/": {
+      "Organic Search": 95,
+      "Direct": 7,
+      "Unassigned": 7,
+      "Cross-network": 2,
+      "Referral": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Organic Search": 93,
+      "Direct": 14,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/": {
+      "Referral": 91,
+      "Direct": 69,
+      "Organic Search": 15,
+      "Unassigned": 6,
+      "AI Assistant": 3,
+      "Cross-network": 2
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 76,
+      "Cross-network": 4,
+      "Direct": 4,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 70,
+      "Direct": 24,
+      "Cross-network": 3,
+      "Unassigned": 2,
+      "AI Assistant": 1,
+      "Referral": 1
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 67,
+      "Direct": 5,
+      "Unassigned": 3,
+      "AI Assistant": 1
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Organic Search": 67,
+      "Direct": 12,
+      "Cross-network": 6,
+      "Unassigned": 4
+    },
+    "/guides/custodial-account-taxes-kiddie-tax/": {
+      "Organic Search": 61,
+      "Direct": 9,
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account/": {
+      "Organic Search": 53,
+      "Direct": 2
+    },
+    "/compare/vanguard-vs-fidelity/": {
+      "Organic Search": 51,
+      "Direct": 7,
+      "Unassigned": 3,
+      "AI Assistant": 1
+    },
+    "/guides/250th-anniversary-coins/": {
+      "Organic Search": 48,
+      "Unassigned": 3,
+      "Cross-network": 2,
+      "Direct": 2
+    },
+    "/portfolio/60-40-portfolio-calculator/": {
+      "Organic Search": 48,
+      "Direct": 4,
+      "Cross-network": 3,
+      "AI Assistant": 2
+    },
+    "/compare/utma-vs-ugma/": {
+      "Organic Search": 33,
+      "Direct": 7,
+      "Cross-network": 2
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Organic Search": 33,
+      "Direct": 12,
+      "Unassigned": 1
+    },
+    "/portfolio/portfolio-risk-calculator/": {
+      "Direct": 30,
+      "Organic Search": 6,
+      "AI Assistant": 1
+    },
+    "/compare/hysa-vs-money-market/": {
+      "Organic Search": 29,
+      "Direct": 12,
+      "Cross-network": 2,
+      "Unassigned": 1
+    },
+    "/mortgage/payoff-calculator/": {
+      "Organic Search": 28,
+      "Cross-network": 3,
+      "Unassigned": 3,
+      "AI Assistant": 2,
+      "Direct": 2,
+      "Referral": 1
+    },
+    "/net-worth/": {
+      "Organic Search": 27,
+      "Direct": 3,
+      "Unassigned": 1
+    },
+    "/guides/high-yield-savings-account-for-kids-and-teens/": {
+      "Organic Search": 25,
+      "Direct": 13,
+      "Unassigned": 2,
+      "Cross-network": 1
+    }
+  }
+}
