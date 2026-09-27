@@ -20,6 +20,7 @@ const year = 2026;
         <span>{SITE.name}</span>
       </a>
       <p class="tagline">{SITE.description}</p>
+      <a class="sponsor-pill" href="/sponsor" rel="nofollow"><span aria-hidden="true">📣</span> Advertise With Us</a>
     </div>
 
     <div class="ftr-navs">
@@ -117,6 +118,12 @@ const year = 2026;
   .brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; }
   .brand span { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.02em; }
   .tagline { font-size: 0.85rem; line-height: 1.5; color: #7B948C; margin: 8px 0 0; }
+  .sponsor-pill {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; padding: 5px 14px;
+    border: 1px solid #33433C; border-radius: 999px; font-size: 0.78rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+  }
+  .sponsor-pill:hover { border-color: #5A726A; background: #1C2A24; }
   .ftr-navs { margin-left: auto; display: flex; gap: 36px 48px; flex-wrap: wrap; align-items: flex-start; }
   .ftr-links { }
   .grp-title { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: #5A726A; font-weight: 700; margin-bottom: 10px; }

@@ -1,0 +1,40 @@
+---
+/**
+ * "Advertise With Us" box for pages vendors read: comparisons, best-of
+ * roundups, alternatives and (non-paid) reviews. Sits under the comparison
+ * table / ranked list and never changes it. Links to /sponsor with the page
+ * path so the team email says which page the vendor came from.
+ * Keep off pages that are already paid (partner) content.
+ */
+export interface Props {
+  path: string;
+}
+const { path } = Astro.props;
+---
+<aside class="sponsor-slot" aria-label="Advertise with us">
+  <span class="sponsor-slot__icon" aria-hidden="true">📣</span>
+  <div class="sponsor-slot__copy">
+    <p class="sponsor-slot__title">Building in finance?</p>
+    <p class="sponsor-slot__text">Put your product in front of readers comparing options on this page.</p>
+  </div>
+  <a class="sponsor-slot__btn" href={`/sponsor?from=${encodeURIComponent(path)}`} rel="nofollow">Advertise With Us →</a>
+</aside>
+
+<style>
+  .sponsor-slot {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin: 4px 0 20px; padding: 16px 18px;
+    border: 1px dashed #A9D6C8; background: #F4FAF8; border-radius: 14px;
+  }
+  .sponsor-slot__icon { font-size: 24px; line-height: 1; }
+  .sponsor-slot__copy { flex: 1; min-width: 180px; }
+  .sponsor-slot .sponsor-slot__title { margin: 0; font-size: 1rem; font-weight: 700; color: #1a3a30; line-height: 1.4; }
+  .sponsor-slot .sponsor-slot__text { margin: 2px 0 0; font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+  .sponsor-slot__btn {
+    display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px;
+    border: 1px solid #A9D6C8; background: #fff; color: var(--primary-dark);
+    font-size: 0.88rem; font-weight: 700; text-decoration: none; white-space: nowrap;
+    transition: background 120ms ease, border-color 120ms ease;
+  }
+  .sponsor-slot__btn:hover { background: #E4F4EF; border-color: var(--primary); }
+</style>

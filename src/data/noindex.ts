@@ -20,8 +20,13 @@ export const NOINDEX_PILLARS = new Set<string>([
 
 // True for a spoke or state page under a noindexed pillar; false for the pillar hub
 // and for every page outside these pillars. Accepts a pathname (leading slash optional).
+// Standalone pages that carry their own `noindex, follow` robots meta (e.g. the
+// "Advertise With Us" form) — kept out of the sitemap and the site-search index.
+export const NOINDEX_PAGES = new Set<string>(["sponsor"]);
+
 export function isNoindexedPath(pathname: string): boolean {
   const segments = pathname.split("/").filter(Boolean);
+  if (segments.length === 1 && NOINDEX_PAGES.has(segments[0])) return true;
   // segments[0] = pillar/category, segments[1] = spoke slug, segments[2] = state.
   // length >= 2 means it is a sub-page (spoke or state), not the hub.
   return segments.length >= 2 && NOINDEX_PILLARS.has(segments[0]);

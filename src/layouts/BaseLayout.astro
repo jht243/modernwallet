@@ -8,8 +8,10 @@ export interface Props {
   description: string;
   canonical?: string;
   noindex?: boolean;
+  /** explicit robots meta (e.g. "noindex, follow"); overrides `noindex` */
+  robots?: string;
 }
-const { title, description, canonical, noindex } = Astro.props;
+const { title, description, canonical, noindex, robots } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 
 // Sitewide Organization JSON-LD (brand entity for SEO).
@@ -60,7 +62,7 @@ const websiteJsonLd = {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {robots ? <meta name="robots" content={robots} /> : noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />

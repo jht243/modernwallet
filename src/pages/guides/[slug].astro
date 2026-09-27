@@ -7,6 +7,7 @@ import { GUIDES } from "../../data/guides";
 import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import LeadForm from "../../components/LeadForm.astro";
+import SponsorSlot from "../../components/SponsorSlot.astro";
 import { BUSINESS_GUIDE_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
@@ -15,6 +16,17 @@ export function getStaticPaths() {
 
 const { guide } = Astro.props;
 const canonicalUrl = new URL(`/guides/${guide.slug}/`, Astro.site).toString();
+
+// Guides vendors read ("best X", "X vs Y", alternatives, reviews) get one
+// "Advertise With Us" box: under the section holding the first table, else
+// after the last body section.
+const showSponsor =
+  /(^best-|-vs-|alternatives|-review$)/.test(guide.slug) && !guide.slug.startsWith("how-to-");
+const renderedSections = guide.sections.map((s) => ({ ...s, html: richBody(s.body) }));
+const firstTableIdx = renderedSections.findIndex((s) => s.html.includes("<table"));
+const sponsorAfterIdx = showSponsor
+  ? (firstTableIdx >= 0 ? firstTableIdx : renderedSections.length - 1)
+  : -1;
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -73,11 +85,14 @@ const jsonLdArticle = articleSchema({
       </div>
     </section>
 
-    {guide.sections.map((s) => (
-      <section class="section">
-        <h2>{s.heading}</h2>
-        <Fragment set:html={richBody(s.body)} />
-      </section>
+    {renderedSections.map((s, i) => (
+      <>
+        <section class="section">
+          <h2>{s.heading}</h2>
+          <Fragment set:html={s.html} />
+        </section>
+        {i === sponsorAfterIdx && <SponsorSlot path={`/guides/${guide.slug}/`} />}
+      </>
     ))}
 
     <section class="section">

@@ -7,6 +7,7 @@ import { COMPARISONS } from "../../data/comparisons";
 import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import LeadForm from "../../components/LeadForm.astro";
+import SponsorSlot from "../../components/SponsorSlot.astro";
 import { BUSINESS_COMPARISON_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
@@ -101,6 +102,9 @@ const relatedEntries = entry.relatedComparisons
         </table>
       </div>
     </section>
+
+    {/* Advertise With Us (under the side-by-side table) */}
+    <SponsorSlot path={`/compare/${entry.slug}/`} />
 
     <section class="section verdict-section">
       <h2>Which should you choose?</h2>

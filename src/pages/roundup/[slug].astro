@@ -8,6 +8,7 @@ import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { COMPARISONS } from "../../data/comparisons";
 import LeadForm from "../../components/LeadForm.astro";
+import SponsorSlot from "../../components/SponsorSlot.astro";
 import { BUSINESS_ROUNDUP_SLUGS } from "../../data/business-financing";
 
 export function getStaticPaths() {
@@ -144,6 +145,9 @@ const relatedEntries = entry.relatedComparisons
         </table>
       </div>
     </section>
+
+    {/* Advertise With Us (under the ranked list + comparison table) */}
+    <SponsorSlot path={`/roundup/${entry.slug}/`} />
 
     <section class="section verdict-section">
       <h2>Our verdict: which should you choose?</h2>
