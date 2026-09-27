@@ -5,14 +5,14 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     slug: "best-merchant-cash-advance-companies",
     title: "Best Merchant Cash Advance Companies 2026",
     metaDescription:
-      "Compare the best merchant cash advance companies of 2026 on factor rates, speed, and remittance terms. Independent picks — no lender paid for placement.",
+      "Compare the best merchant cash advance companies of 2026 on factor rates, speed, and remittance terms.",
     targetKeyword: "best merchant cash advance companies",
     category: "merchant cash advance companies",
     angle: "best",
     segment: "small business owners",
     h1: "Best Merchant Cash Advance Companies of 2026",
     introText:
-      "The best merchant cash advance companies offer fast funding, provide a clear factor rate, and base remittances on your actual sales, not on a fixed schedule that ignores a slow week. For most small businesses, that means choosing one of the six providers below: Rapid Finance, Credibly, Fora Financial, National Funding, Expansion Capital Group, or the fixed-payment alternatives OnDeck and Fundbox.\n\nA merchant cash advance (MCA) is not a loan. You receive cash today in exchange for a slice of your future revenue, then repay it through a daily or weekly holdback until you reach the agreed amount. Pricing is quote-based and varies by risk profile, so the ranges below are directional, get a real offer before making a decision. ModernWallet is not a lender and charges no placement fees. These rankings are independent, and no company paid to be included.",
+      "The best merchant cash advance companies offer fast funding, provide a clear factor rate, and base remittances on your actual sales, not on a fixed schedule that ignores a slow week. For most small businesses, that means choosing one of the six providers below: Rapid Finance, Credibly, Fora Financial, National Funding, Expansion Capital Group, or the fixed-payment alternatives OnDeck and Fundbox.\n\nA merchant cash advance (MCA) is not a loan. You receive cash today in exchange for a slice of your future revenue, then repay it through a daily or weekly holdback until you reach the agreed amount. Pricing is quote-based and varies by risk profile, so the ranges below are directional, get a real offer before making a decision. ModernWallet is not a lender.",
     rankingCriteria:
       "We scored each provider on five things a business owner actually feels: funding speed, factor rate transparency, remittance flexibility (daily vs. weekly, and whether the holdback flexes with sales), minimum eligibility (time in business, monthly revenue, credit), and disclosure practices in states that now require APR-style disclosure.\n\nProviders that publish clear eligibility and lean toward weekly or sales-linked remittance ranked higher. Providers that market only a factor rate with no path to an APR-equivalent number ranked lower, because a factor rate alone hides the true cost of fast repayment.",
     options: [
@@ -374,7 +374,7 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       {
         question: "What are the best merchant cash advance companies in 2026?",
         answer:
-          "The best merchant cash advance companies in 2026 are Rapid Finance and Fora Financial for high-limit advances, Credibly for sales-linked remittance on fluctuating revenue, and National Funding for hands-on specialist support. OnDeck is the best fixed-payment alternative if you qualify. Rankings are independent — no company paid for placement, and pricing is always quote-based.",
+          "The best merchant cash advance companies in 2026 are Rapid Finance and Fora Financial for high-limit advances, Credibly for sales-linked remittance on fluctuating revenue, and National Funding for hands-on specialist support. OnDeck is the best fixed-payment alternative if you qualify. Pricing is always quote-based.",
       },
       {
         question: "How is a merchant cash advance different from a business loan?",
@@ -458,14 +458,14 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     slug: "best-invoice-factoring-companies",
     title: "Best Invoice Factoring Companies Near You (2026)",
     metaDescription:
-      "Find and compare the best invoice factoring companies near you on advance rate, industry focus, and speed. Independent picks — no paid placement.",
+      "Find and compare the best invoice factoring companies near you on advance rate, industry focus, and speed.",
     targetKeyword: "best invoice factoring companies",
     category: "invoice factoring companies",
     angle: "best",
     segment: "small business owners",
     h1: "Best Invoice Factoring Companies of 2026",
     introText:
-      "The best invoice factoring companies offer fast funding, a clear advance rate and fee, and a genuine specialty (whether that's trucking, staffing, government contracting, or general B2B) that fits your industry. For most small businesses, that means one of the six providers below: altLINE, Riviera Finance, Scale Funding, Triumph Business Capital, Porter Capital, or RTS Financial. There's also eCapital for businesses that want one funder across several industry niches.\n\nInvoice factoring is the sale of your unpaid invoices, not a loan. You receive cash now, and when your customer pays, the factor collects, or, under a non-recourse or recourse agreement, you retain the collections relationship. Pricing is typically quote-based and varies by risk profile, so the ranges below are directional. Get a real offer before making a decision.\n\nModernWallet is not a lender and takes no placement fees. These rankings are independent, and no company paid to appear.",
+      "The best invoice factoring companies offer fast funding, a clear advance rate and fee, and a genuine specialty (whether that's trucking, staffing, government contracting, or general B2B) that fits your industry. For most small businesses, that means one of the six providers below: altLINE, Riviera Finance, Scale Funding, Triumph Business Capital, Porter Capital, or RTS Financial. There's also eCapital for businesses that want one funder across several industry niches.\n\nInvoice factoring is the sale of your unpaid invoices, not a loan. You receive cash now, and when your customer pays, the factor collects, or, under a non-recourse or recourse agreement, you retain the collections relationship. Pricing is typically quote-based and varies by risk profile, so the ranges below are directional. Get a real offer before making a decision.\n\nModernWallet is not a lender.",
     rankingCriteria:
       "We scored each provider on five things a business owner actually feels: funding speed, advance-rate and fee transparency, industry specialization (a factor that knows trucking or staffing underwrites and services those invoices better than a generalist), recourse vs non-recourse options, and whether the company lends directly or brokers through a third party.\n\nProviders that publish a clear advance-rate range and disclose recourse terms upfront ranked higher. Providers with a narrow, well-matched industry focus ranked higher for businesses in that niche, even when their headline terms weren't the cheapest on paper.",
     options: [
@@ -702,7 +702,7 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       {
         question: "What are the best invoice factoring companies in 2026?",
         answer:
-          "The best invoice factoring companies in 2026 include altLINE for bank-backed, fee-light general factoring, Riviera Finance for non-recourse protection with a 60-year track record, Triumph Business Capital and RTS Financial for trucking-specific factoring, and Porter Capital, Scale Funding, and eCapital as established general-purpose direct lenders. Rankings are independent — no company paid for placement, and pricing is always quote-based.",
+          "The best invoice factoring companies in 2026 include altLINE for bank-backed, fee-light general factoring, Riviera Finance for non-recourse protection with a 60-year track record, Triumph Business Capital and RTS Financial for trucking-specific factoring, and Porter Capital, Scale Funding, and eCapital as established general-purpose direct lenders. Pricing is always quote-based.",
       },
       {
         question: "How much does invoice factoring cost?",
@@ -769,9 +769,9 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     segment: "small business owners",
     h1: "Business Line of Credit Rates by Lender",
     introText:
-      "Business line of credit rates vary widely by lender, and most banks won't give you an actual number until you apply. This page brings together what each of the 10 lenders below publishes on its own business-banking site: Chase, Wells Fargo, Bank of America, PNC, TD Bank, RBC, Scotiabank, CIBC, American Express Business Blueprint, and Bluevine. That way, you can compare their rate structures, fees, and qualification bars side by side.\n\nThis is a comparison of terms, not a ranking of \"best\" lenders. Several of these lenders don't publish a specific rate or margin online at all, and we say that plainly rather than guessing. When a bank does publish a number, we cite the page where it appears. ModernWallet is not a lender and takes no placement fees. No bank paid to appear here or to be ranked higher.",
+      "Business line of credit rates vary widely by lender, and most banks won't give you an actual number until you apply. This page brings together what each of the 10 lenders below publishes on its own business-banking site: Chase, Wells Fargo, Bank of America, PNC, TD Bank, RBC, Scotiabank, CIBC, American Express Business Blueprint, and Bluevine. That way, you can compare their rate structures, fees, and qualification bars side by side.\n\nThis is a comparison of terms, not a ranking of \"best\" lenders. Several of these lenders don't publish a specific rate or margin online at all, and we say that plainly rather than guessing. When a bank does publish a number, we cite the page where it appears. ModernWallet is not a lender.",
     rankingCriteria:
-      "This page is compiled directly from each lender's own publicly disclosed business line of credit terms — not a paid ranking, and no lender paid for placement or order. We listed lenders in the order they appear in live search demand (Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, CIBC, Amex, Bluevine), not by rate.\n\nFor every lender we checked its own official small-business borrowing page for the rate basis (prime + margin, flat fee, or unpublished), the credit-limit range, any disclosed fees, and stated qualification requirements. Where a lender doesn't publish a number, that's noted as 'not publicly disclosed' rather than estimated — actual pricing depends on your credit, revenue, and relationship with the bank, and can only be confirmed by applying.",
+      "This page is compiled directly from each lender's own publicly disclosed business line of credit terms. We listed lenders in the order they appear in live search demand (Chase, Wells Fargo, Bank of America, PNC, TD, RBC, Scotiabank, CIBC, Amex, Bluevine), not by rate.\n\nFor every lender we checked its own official small-business borrowing page for the rate basis (prime + margin, flat fee, or unpublished), the credit-limit range, any disclosed fees, and stated qualification requirements. Where a lender doesn't publish a number, that's noted as 'not publicly disclosed' rather than estimated — actual pricing depends on your credit, revenue, and relationship with the bank, and can only be confirmed by applying.",
     options: [
       {
         name: "Chase",
@@ -1205,14 +1205,14 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     slug: "best-business-credit-cards",
     title: "Best Business Credit Cards of 2026: Compared by Structure",
     metaDescription:
-      "The best business credit cards of 2026, compared on personal guarantee, spending limit type, and bureau reporting. No issuer paid for placement.",
+      "The best business credit cards of 2026, compared on personal guarantee, spending limit type, and bureau reporting.",
     targetKeyword: "best business credit cards",
     category: "business credit cards",
     angle: "best",
     segment: "small business owners",
     h1: "Best Business Credit Cards of 2026",
     introText:
-      "Choosing the right business credit card is less about finding the flashiest rewards multiplier and more about answering three structural questions: Does it require a personal guarantee? Does it report to your personal credit file, a business bureau, or both? And is it a traditional credit card or a charge card with no preset spending limit? We compared six widely available cards based on those factors, along with fee transparency and who each card actually fits.\n\nNo card issuer paid for placement in this roundup. Because card terms change often, treat every dollar figure below as directional and confirm the current terms on the issuer's own page before applying. If you're also considering a term loan or line of credit, use our [business loan payoff calculator](/business-loan-payoff/) and [business line of credit calculator](/business-line-of-credit/) to compare the real cost side by side.",
+      "Choosing the right business credit card is less about finding the flashiest rewards multiplier and more about answering three structural questions: Does it require a personal guarantee? Does it report to your personal credit file, a business bureau, or both? And is it a traditional credit card or a charge card with no preset spending limit? We compared six widely available cards based on those factors, along with fee transparency and who each card actually fits.\n\nBecause card terms change often, treat every dollar figure below as directional and confirm the current terms on the issuer's own page before applying. If you're also considering a term loan or line of credit, use our [business loan payoff calculator](/business-loan-payoff/) and [business line of credit calculator](/business-line-of-credit/) to compare the real cost side by side.",
     rankingCriteria:
       "Rankings weighted four factors: personal guarantee and personal-credit reporting practices (30%, since this is the single biggest structural difference between cards and the factor most reviews bury), fee and rewards transparency (25%), accessibility for newer or lower-revenue businesses (25%), and expense-management or spend-control features useful to a small team (20%). We did not weight welcome-offer size heavily, since a large sign-up bonus that requires a personal guarantee and heavy annual spend isn't automatically the best fit for every business stage.",
     options: [
@@ -1346,7 +1346,7 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
       {
         heading: "How we ranked",
         content:
-          "We weighted personal-guarantee and credit-reporting transparency most heavily, since it's the factor most comparison content buries beneath rewards-rate marketing, followed by fee transparency, accessibility across credit tiers, and spend-control features useful to a growing team. No card issuer paid for placement. Where an issuer's exact current fee or rate wasn't independently confirmable at publish time, we noted that explicitly rather than importing a third-party estimate that may already be outdated.",
+          "We weighted personal-guarantee and credit-reporting transparency most heavily, since it's the factor most comparison content buries beneath rewards-rate marketing, followed by fee transparency, accessibility across credit tiers, and spend-control features useful to a growing team. Where an issuer's exact current fee or rate wasn't independently confirmable at publish time, we noted that explicitly rather than importing a third-party estimate that may already be outdated.",
       },
     ],
     faqs: [
@@ -1414,7 +1414,7 @@ export const BUSINESS_ROUNDUPS: RoundupEntry[] = [
     h1: "Best Same-Day Business Loans of 2026",
     introText: `[OnDeck](https://www.ondeck.com/business-loans) and [Credibly](https://www.credibly.com) offer the most reliable paths to getting business loan proceeds deposited into your checking account on the calendar day you submit an application. At ModernWallet, we review online lending platforms for a living. Getting money within hours takes two things marketing pages rarely mention: an approval finalized before a morning cutoff, and a complete application backed by linked bank accounts, not scanned statements. Submit in the afternoon, and settlement almost always slides to the next business morning, no matter how fast underwriting says yes.
 
-No business lender paid for placement in this evaluation. We compared each lender's own published cutoff times, eligibility thresholds, and rate disclosures, because that's what actually determines whether cash lands today. If you want to check repayment costs before signing anything, run your loan amount through our [business loan payoff calculator](/business-loan-payoff/) or plan recurring draw costs with our [business line of credit calculator](/business-line-of-credit/).`,
+We compared each lender's own published cutoff times, eligibility thresholds, and rate disclosures, because that's what actually determines whether cash lands today. If you want to check repayment costs before signing anything, run your loan amount through our [business loan payoff calculator](/business-loan-payoff/) or plan recurring draw costs with our [business line of credit calculator](/business-line-of-credit/).`,
     rankingCriteria: "We weighted speed transparency and hard cutoff rules at 35 percent, because an instant approval that takes two days to disburse fails the basic intent of the search. Realistic qualification standards account for 25 percent of the score, prioritizing lenders that accept lower credit scores or shorter business operating histories during emergencies. Rate transparency makes up 25 percent, giving priority to lenders that disclose average APRs rather than low teaser rates that few borrowers receive. Repayment structures and fee clarity represent the final 15 percent, focusing on whether daily or weekly debits create cash-flow hazards for small operations.",
     options: [
       {
@@ -1497,7 +1497,7 @@ No business lender paid for placement in this evaluation. We compared each lende
     h1: "Best Business Bank Accounts of 2026",
     introText: `Four business checking accounts charge genuinely zero dollars a month, with no opening deposit and no minimum balance: [Bluevine](https://www.bluevine.com/business-checking), [Mercury](https://mercury.com/business-banking), [NBKC Bank](https://www.nbkc.com/business/checking), and [Axos Bank](https://www.axosbank.com/business/business-checking-accounts/basic-business-checking) Basic Business Checking. At ModernWallet, we compare deposit products against the fee schedule that applies once the account is open, not the headline that sells it. The hidden expenses are what actually drain a cash balance before revenue stabilizes.
 
-No bank or financial technology company paid for placement in this roundup. Banking terms, interest yields, and fee schedules change. Verify current details directly on each provider's official website before you apply. If your growing business needs financing alongside cash management, run the numbers through our [business line of credit calculator](/business-line-of-credit/).`,
+Banking terms, interest yields, and fee schedules change. Verify current details directly on each provider's official website before you apply. If your growing business needs financing alongside cash management, run the numbers through our [business line of credit calculator](/business-line-of-credit/).`,
     rankingCriteria: "We ranked these business bank accounts across five core operational dimensions: monthly maintenance and account-keeping fees (30%), transfer and transaction expenses including domestic and international wire fees (25%), deposit safety including Federal Deposit Insurance Corporation (FDIC) pass-through sweep structures (20%), physical cash and ATM accessibility (15%), and ease of digital onboarding for early-stage companies (10%). Rather than prioritizing introductory bonus promotions that expire after ninety days, our methodology rewards accounts that eliminate persistent overhead and protect working capital.",
     options: [
       {
@@ -1561,7 +1561,7 @@ Start with cash. A branchless fintech account is a bottleneck if your business c
 Next, look at your outgoing payments. Standard bank wire fees can add up to hundreds of dollars a year if your vendors need same-day wire funding. Mercury's free domestic and USD international wires make it the cheap option for a technology startup, agency, or import business with heavy wire volume. Axos gives you two free domestic wires a month, a middle ground between wire access and cost control. If your vendors take standard ACH batches instead, all four accounts process those transactions with no per-item fee.
 
 Finally, check the ledger integration. A direct feed into [QuickBooks](https://quickbooks.intuit.com) or [Xero](https://www.xero.com) cuts manual entry errors and speeds up month-end close. Axos, Bluevine, and Mercury all offer an API connection that feeds settled transactions into your books daily. NBKC skips the API and instead bundles an optional Autobooks invoicing module for $10 a month, letting an early-stage operator send professional invoices straight from the banking dashboard.` },
-      { heading: "How We Ranked the Best Business Bank Accounts", content: `We scored these accounts on five operational metrics: maintenance fees (30%), transfer and transaction fees (25%), deposit safety and regulatory structure (20%), cash access and ATM networks (15%), and onboarding speed (10%). No bank or financial services provider paid for placement, inclusion, or preferential ranking in this review.
+      { heading: "How We Ranked the Best Business Bank Accounts", content: `We scored these accounts on five operational metrics: maintenance fees (30%), transfer and transaction fees (25%), deposit safety and regulatory structure (20%), cash access and ATM networks (15%), and onboarding speed (10%).
 
 Our methodology deliberately downweights short-term welcome bonuses. Many commercial banks dangle $300 to $500 to open a new account, then charge $15 to $30 a month once the introductory window closes, or require a balance most new businesses can't maintain. We optimized for the cost of ownership over time instead, confirming that every recommended account genuinely charges zero dollars a month on its standard tier, not just for an introductory period. We checked every fee schedule, wires, stop payments, non-sufficient funds, out-of-network ATM use, against the provider's own published disclosures and the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/consumer-tools/). The accounts that eliminate arbitrary administrative penalties and disclose their sweep protection clearly earned the top spots.` },
     ],

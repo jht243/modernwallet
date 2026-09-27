@@ -467,6 +467,8 @@ If anything there has honest topical overlap, weave **ONE** observation into the
 
 **NEVER assert our own neutrality or lack of financial interest.** Do not write that {BUSINESS_NAME} "does not resell", "takes no referral fee", "takes no commission", "does not partner with", "is vendor-neutral", that a ranking "is independent", or any "note on objectivity". The audit phase hard-fails any page carrying one.
 
+**Never claim the site takes no payment for placement.** Do not write "no paid placement", "no company paid for placement", "we're not paid to rank" or any variant: the site sells paid placements, so the claim is false.
+
 Two reasons. First, it is often **false**: where a project auto-inserts `rel="sponsored"` affiliate links from an entity registry, the very page making the claim may be earning a referral fee. Second, it does not work even when true — a reader credits objectivity that is **shown**, not claimed.
 
 Demonstrate it instead, using the required page elements in SEO: name who should NOT pick the option you favour, state plainly what would change your verdict, and ground every judgment in what each vendor actually publishes. If a real affiliate relationship exists, the site's affiliate-disclosure mechanism handles it. Body prose never does, and must never claim the relationship does not exist.
