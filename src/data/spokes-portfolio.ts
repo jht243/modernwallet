@@ -188,6 +188,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   {
     calculator: "portfolio",
     slug: "70-30-portfolio-calculator",
+    updated: "2026-09-28",
     title: "70/30 Portfolio Calculator: Return, Risk & Growth",
     metaDescription:
       "Use this 70/30 portfolio calculator to see the expected return, risk, and long-run growth of a 70% stock, 30% bond mix versus the classic 60/40.",
@@ -214,6 +215,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       { question: "How often should I rebalance a 70/30 portfolio?", answer: "Many investors rebalance once a year or when the mix drifts a set amount, such as 5 percentage points, from target. Without rebalancing, a strong stock run can quietly push a 70/30 portfolio toward 80/20 or higher, raising your risk beyond what you originally chose." },
       { question: "How does 70/30 compare to 60/40 in dollar terms?", answer: "Over 30 years with no added contributions, $100,000 grows to about $1,063,697 in a 70/30 mix versus about $900,260 in a 60/40 mix in this model — roughly $163,000 more, in exchange for higher volatility (11.45% versus 10.00%) along the way. See the full [70/30 vs 60/40 portfolio comparison](/compare/70-30-vs-60-40-portfolio/) for the risk-adjusted breakdown." },
       { question: "70/30 vs 80/20 portfolio: is the extra stock weight worth it?", answer: "In the model, 80/20 has a higher expected return (8.80% vs 8.20%) but also higher volatility (12.94% vs 11.45%), and a slightly lower Sharpe ratio (0.49 vs 0.50), meaning 70/30 delivers marginally more return per unit of risk taken. See the full [70/30 vs 80/20 portfolio comparison](/compare/70-30-vs-80-20-portfolio/) for the complete numbers, including the 30-year growth gap and the worst-case 1-year range for each." },
+      { question: "How does a 70/30 portfolio compare to a target-date fund like Fidelity Freedom 2055?", answer: "A target-date fund automatically shifts toward bonds as retirement approaches, following a preset glide path, and includes international diversification that a basic two-fund 70/30 mix leaves out. If you look at [Fidelity](https://www.fidelity.com/), check the fund name carefully. Fidelity sells an actively managed Freedom 2055 fund charging 0.68% in annual expenses alongside a separate Fidelity Freedom Index 2055 fund charging 0.12%. See our [best target-date funds](/roundup/best-target-date-funds/) roundup to compare index fees and asset allocations across major brokerages." },
     ],
     sources: [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },

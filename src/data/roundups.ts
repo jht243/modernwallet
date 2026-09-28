@@ -4342,6 +4342,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── Competitor-monitor pass (2026-07-22): Best Brokers for Treasury Bonds ──
   {
     slug: "best-brokers-for-treasury-bonds",
+    updated: "2026-09-28",
     title: "Best Brokers for Treasury Bills, Notes & Bonds (2026)",
     metaDescription:
       "TreasuryDirect vs. Fidelity, Schwab, and other brokers for buying Treasuries — fees, liquidity, auto-roll, and which to use for your situation.",
@@ -4427,6 +4428,24 @@ export const ROUNDUPS: RoundupEntry[] = [
         pricing:
           "No stated commission on new-issue Treasury auction purchases; secondary-market trades are priced with a spread built into the transaction.",
       },
+      {
+        name: "Edward Jones",
+        bestFor: "Investors who work with an advisor and want Treasuries inside an existing managed portfolio",
+        description:
+          "[Edward Jones](https://www.edwardjones.com/) operates on a full-service, advisor-led model. Investors purchase U.S. Treasuries through an assigned financial advisor as part of an advised portfolio. When Edward Jones acts as principal on fixed-income trades, published pricing includes a markup of up to 2.00% on purchases and a markdown of up to 0.75% on sales. That markup reduces your net yield compared to buying debt at auction through a zero-commission broker.\n\nAutomated auction roll programs, online secondary-market inventory access, and commission rates for trades placed as an agent are not publicly disclosed by Edward Jones. You must confirm those transaction terms directly with an Edward Jones advisor before placing an order. This structure costs more than self-directed alternatives for basic buy-and-hold Treasury purchases. It serves investors who already retain an Edward Jones advisor and want bond holdings managed under that advisory relationship.",
+        strengths: [
+          "No stated minimum to open a Select (commission-based) brokerage account",
+          "Treasuries held alongside stocks, mutual funds, ETFs and annuities in one advised account, including IRA versions",
+          "Direct access to a personal financial advisor for every purchase",
+        ],
+        limitations: [
+          "Disclosed markups up to 2.00% on buys and markdowns up to 0.75% on principal sales",
+          "Automated auction roll programs and agent trade commissions are not publicly disclosed",
+          "Higher execution costs for buy-and-hold purchases than zero-commission brokers",
+        ],
+        pricing:
+          "Principal trades carry a markup of up to 2.00% on purchases and a markdown of up to 0.75% on sales. Commission rates for agent trades are not publicly disclosed, so confirm current schedules directly with an Edward Jones advisor.",
+      },
     ],
     comparisonTable: {
       headers: ["Best For", "New-Issue Auction Fee", "Sell Before Maturity", "Works in an IRA", "Auto-Roll at Maturity"],
@@ -4446,6 +4465,10 @@ export const ROUNDUPS: RoundupEntry[] = [
         {
           name: "Vanguard",
           values: ["Consolidating with existing Vanguard assets", "No stated commission", "Yes, anytime market is open", "Yes", "Yes"],
+        },
+        {
+          name: "Edward Jones",
+          values: ["Existing advisor relationship", "Not publicly disclosed — confirm with an advisor", "Not publicly disclosed — ask an advisor", "Yes", "Not publicly disclosed"],
         },
       ],
     },
@@ -4509,11 +4532,17 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Laddering — buying several Treasuries with staggered maturity dates — is a common way to keep a predictable stream of cash becoming available without guessing on interest-rate timing or locking all your money up until one single date. It's a reasonable approach whether you build it manually at TreasuryDirect using scheduled reinvestment or through a brokerage's dedicated laddering tools, which tend to be easier to manage as the number of rungs grows.",
       },
+      {
+        question: "Where does Edward Jones rank for buying Treasury bonds?",
+        answer:
+          "Edward Jones ranks behind TreasuryDirect, Fidelity, Charles Schwab, and Vanguard on pure cost because it applies a disclosed markup or markdown to secondary-market Treasury trades. That pricing makes buying bonds here more expensive for self-directed investors than using a zero-commission broker. It fits an investor who already has an Edward Jones advisor relationship and wants fixed-income holdings consolidated within that existing account.",
+      },
     ],
     sources: [
       { label: "TreasuryDirect.gov — Buying a Treasury Marketable Security", url: "https://www.treasurydirect.gov/marketable-securities/" },
       { label: "Bureau of the Fiscal Service — About Treasury Auctions", url: "https://www.treasurydirect.gov/auctions/auction-process/" },
       { label: "Investor.gov (SEC) — Treasury Securities", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products-0" },
+      { label: "Edward Jones — Fixed Income Fees & Expenses", url: "https://www.edwardjones.com/us-en/disclosures/account-fees/fees-compensation/fixed-income-fees" },
     ],
     relatedComparisons: ["hysa-vs-money-market", "hysa-vs-cd"],
   },

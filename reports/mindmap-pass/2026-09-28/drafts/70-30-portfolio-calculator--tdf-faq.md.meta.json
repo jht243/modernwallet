@@ -1,0 +1,39 @@
+{
+ "slug": "70-30-portfolio-calculator--tdf-faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 75,
+ "floor": 0,
+ "input_tokens": 18612,
+ "output_tokens": 126,
+ "thinking_tokens": 2323,
+ "cached_tokens": 18110,
+ "est_cost_usd": 0.013,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 75,
+  "numbers_not_in_facts": [
+   "0.75"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18377
+  }
+ },
+ "seconds": 11.6,
+ "response_id": "44a6aoLIBZrx-8YPsNfPuAQ",
+ "generated_at": "2026-09-28T15:25:33+0000"
+}
