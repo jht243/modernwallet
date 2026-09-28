@@ -69,10 +69,14 @@ const REGISTRY = JSON.parse(readFileSync('data/entity-links.json', 'utf8'));
 // The rule is per COMPANY: "Google Docs", "Google Workspace" and "Google" share one link
 // per page. Group = registrable domain (+ aliases for brands on a parent's other domain).
 const DOMAIN_ALIAS = REGISTRY._domainAlias || {};
+const SLD = new Set(['co', 'com', 'org', 'net', 'gov', 'gob', 'edu', 'ac', 'or', 'ne', 'go', 'gv']);
 function companyOf(url) {
   const host = new URL(url).hostname.replace(/^www\./, '');
   const parts = host.split('.');
-  const base = parts.length > 2 ? parts.slice(-2).join('.') : host;
+  // Two-level country suffixes (co.uk, com.br, com.ve…) keep three labels, or every
+  // .com.ve company would collapse into one "com.ve" and only the first would link.
+  const n = parts.length > 2 && parts.at(-1).length === 2 && SLD.has(parts.at(-2)) ? 3 : 2;
+  const base = parts.length > n ? parts.slice(-n).join('.') : host;
   return DOMAIN_ALIAS[base] || base;
 }
 
@@ -94,9 +98,12 @@ const SKIP_TREE = new Set(['head', 'script', 'style', 'template', 'svg', 'code',
   'nav', 'header', 'footer']);
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// Name pattern: a space in a brand name matches any whitespace run, so "Northrop Grumman"
+// still links when the HTML wraps it across a line break.
+const namePat = (name) => esc(name).replace(/ /g, '\\s+');
 // Word-ish boundaries that tolerate brand names containing '.' (Education.com): a '.' after
 // the name ends it unless a letter/digit follows, so "…made by Boveda." still links.
-const boundaried = (name) => new RegExp(`(^|[^A-Za-z0-9.])(${esc(name)})(?![A-Za-z0-9]|\\.[A-Za-z0-9])`);
+const boundaried = (name) => new RegExp(`(^|[^A-Za-z0-9.])(${namePat(name)})(?![A-Za-z0-9]|\\.[A-Za-z0-9])`);
 const attrEsc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 
 function anchor(url, text, sponsored) {
@@ -119,7 +126,7 @@ function linkPage(html) {
   }
   // ...or by anchor text (links routed through a redirector).
   for (const [name, , company] of ENTITIES) {
-    if (new RegExp(`<a\\b[^>]*>[^<]*${esc(name)}`).test(html)) linked.add(company);
+    if (new RegExp(`<a\\b[^>]*>[^<]*${namePat(name)}`).test(html)) linked.add(company);
   }
 
   let changed = 0;
