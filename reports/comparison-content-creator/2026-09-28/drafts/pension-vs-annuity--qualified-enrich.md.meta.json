@@ -1,0 +1,37 @@
+{
+ "slug": "pension-vs-annuity--qualified-enrich",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 461,
+ "floor": 0,
+ "input_tokens": 19816,
+ "output_tokens": 652,
+ "thinking_tokens": 2104,
+ "cached_tokens": 18716,
+ "est_cost_usd": 0.0147,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 461,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 20170
+  }
+ },
+ "seconds": 10.9,
+ "response_id": "iia6aubJOdm0jrEP8-zSmQY",
+ "generated_at": "2026-09-28T08:34:29+0000"
+}

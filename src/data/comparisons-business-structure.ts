@@ -30,6 +30,96 @@ const IRS_SE_TAX = {
 };
 
 export const BUSINESS_STRUCTURE_COMPARISONS: ComparisonEntry[] = [
+  // ── comparison-content-auto pass 2026-09-28 ──
+  {
+    updated: "2026-09-28",
+    slug: "partnership-vs-llc",
+    title: "Partnership vs LLC: How to Choose for Your Business",
+    metaDescription:
+      "Partnership vs LLC compared on taxes, personal liability, formation steps, and S-corp paths so co-founders can pick the right legal structure.",
+    targetKeyword: "partnership vs llc",
+    optionA: "Partnership",
+    optionB: "LLC",
+    segment: "Business Structure",
+    h1: "Partnership vs LLC: How to Choose the Right Structure",
+    introText:
+      "A general partnership and a multi-member limited liability company (LLC) share identical federal tax treatment by default, meaning the real decision between them comes down to personal liability rather than tax savings. At ModernWallet, we examine legal structures through the lens of long-term cash flow and balance-sheet risk, and co-founders routinely mistake an LLC for an automatic tax shelter. Both entities pass profit and loss through to the owners without entity-level federal tax. The decisive distinction is that an LLC creates a legal wall protecting personal assets from business creditors, while a general partnership leaves each partner personally exposed to all company liabilities.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Formation process", a: "Forms automatically the moment two or more individuals enter business together for profit, with zero state filing required", b: "Requires filing Articles of Organization with the state filing agency and paying an initial state fee" },
+        { dimension: "Initial formation cost", a: "Zero dollars in required state filing fees", b: "Commonly $50 to $500 depending on the state of formation" },
+        { dimension: "Default federal tax classification", a: "Pass-through taxation via an informational partnership return (Form 1065) and Schedule K-1", b: "Identical pass-through taxation as a partnership by default, using Form 1065 and Schedule K-1" },
+        { dimension: "Personal asset protection", a: "None; each partner faces full, personal joint and several liability for company debts and actions", b: "Statutory personal liability protection, shielding personal assets from company creditors if formalities are maintained" },
+        { dimension: "Ongoing state compliance", a: "Typically no formal annual reporting or annual state franchise taxes required", b: "Many states mandate periodic annual reports, recurring franchise fees, or annual reporting payments" },
+        { dimension: "S-corporation election route", a: "Cannot make an S-corporation tax election directly without first incorporating or converting to an LLC", b: "Can elect S-corporation tax status directly by filing IRS Form 2553 once business income supports it" },
+      ],
+    },
+    verdict:
+      "Choose an LLC if you are launching a business with commercial contracts, external clients, physical inventory, physical office space, or hired staff, because the personal asset protection outweighs the state formation fee. Choose a general partnership only if you and a trusted partner are running a brief, zero-liability experiment to test whether a business concept generates paying customers before spending cash on state filings. This recommendation is not for co-founders operating in fields carrying real litigation risk or major vendor commitments who remain an informal partnership solely to avoid paying a couple hundred dollars in state filing fees. Saving a minor registration fee does not justify risking your personal bank accounts, home, and personal investments against business liabilities. Our verdict would change if state statutes eliminated joint and several liability for general partners, or if your venture plans to use an S-corporation tax election immediately, which requires abandoning the general partnership model to file the corporate election.",
+    sections: [
+      {
+        heading: "What Changes Between a Partnership and an LLC",
+        content:
+          "A general partnership and a multi-member LLC are taxed identically by default under federal law, which makes personal liability the fundamental dividing line between the two structures. The Internal Revenue Service (IRS) does not view a multi-member LLC as an independent federal tax class. Instead, federal tax rules treat an LLC with two or more owners as a partnership by default, as detailed on the [IRS Partnership Page](https://www.irs.gov/businesses/partnerships).\n\nBoth business models report their top-line revenue, allowable deductions, and net taxable profits on an informational Form 1065. The business entity itself does not pay federal income tax on those earnings. Instead, net earnings pass directly through to the individual owners on Schedule K-1, and each co-owner reports their assigned share on their personal Form 1040 return. Because the baseline income tax mechanism is identical, forming an LLC does not reduce your initial federal tax burden.\n\nThe genuine distinction between a general partnership vs LLC sits entirely inside the legal protections shielding your private property. A general partnership provides no barrier between company obligations and your personal bank accounts, vehicles, or home equity. An LLC establishes a separate legal entity under state law, restricting business creditors to the assets held directly by the company. For single-owner businesses weighing similar structural choices, see our analysis in [Sole Proprietorship vs LLC](/compare/sole-proprietorship-vs-llc/).",
+      },
+      {
+        heading: "Why Partnership vs LLC Taxes Present an Identical Starting Point",
+        content:
+          "Co-founders frequently assume that forming an LLC automatically lowers their income taxes, but partnership vs LLC taxes operate on the exact same default rules. Both structures leave co-owners subject to personal income tax and self-employment tax on their entire share of company earnings. Self-employment tax covers federal Social Security and Medicare obligations, and it applies fully to active partners in a general partnership and active members in a multi-member LLC.\n\nNeither entity gains a default tax write-off or preferential deduction that the other lacks. Every legitimate business deduction available to an LLC on Form 1065 is equally accessible to a general partnership filing the exact same form. The IRS confirms these default pass-through classifications on its [IRS LLC Information Page](https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc).\n\nThe genuine tax divergence only appears if an LLC chooses to alter its default classification by electing corporate status. An LLC can file Form 8832 to be taxed as a traditional C-corporation, or file Form 2553 to elect S-corporation treatment. A general partnership cannot file Form 2553 directly. It must first convert into a formal state entity or incorporate before it can access S-corporation distributions. Co-founders wanting to understand single-owner partnership alternatives can review [Sole Proprietorship vs Partnership](/compare/sole-proprietorship-vs-partnership/).",
+      },
+      {
+        heading: "Why Personal Liability Decides the General Partnership vs LLC Choice",
+        content:
+          "Personal liability is the single most important factor when weighing a general partnership vs LLC. In a general partnership, all co-owners shoulder joint and several liability for every business debt, commercial contract, and legal judgment. If your business partner signs a disastrous equipment lease or commits a negligent act while performing work for a client, company creditors can sue you personally. Creditors can legally seize your personal bank balances and sell personal assets to satisfy those obligations.\n\nAn LLC limits that financial exposure by creating a statutory corporate veil between the entity and the individual members. When an LLC defaults on a commercial loan or loses a client lawsuit, the claimant can generally pursue only the capital, equipment, and receivables owned by the LLC. The personal checking accounts, family homes, and individual retirement assets of the owners remain legally insulated from those commercial judgments.\n\nThis liability shield is not absolute, and courts will discard it if members fail to run the business as an independent entity. This failure mode, legally termed piercing the veil, occurs when owners commingle company funds with personal cash, run personal expenses through company accounts, or fail to submit mandatory state documents. Co-founders must open a dedicated business checking account, keep clear bookkeeping records, and maintain genuine financial separation to preserve their statutory asset protection.",
+      },
+      {
+        heading: "What Forming Each Multi Member Business Involves",
+        content:
+          "A general partnership requires zero official paperwork, zero state registration, and zero legal expense to come into legal existence. The moment two or more individuals agree to launch a commercial venture together for profit, a general partnership forms automatically by law. While simple, this informal creation presents a massive trap, because you can easily stumble into unlimited joint liability with an associate without filing a single legal form.\n\nForming an LLC requires formal execution and state approval. Co-founders must draft and submit Articles of Organization to the relevant state filing office and remit a mandatory formation fee. This one-time state fee commonly ranges from $50 to $500 depending entirely on the state in which you establish the company. Many states also enforce recurring compliance burdens, such as annual reporting schedules or minimum annual franchise taxes, which you must confirm through your state's business division.\n\nBoth business structures benefit enormously from formal governance documents drafted in writing, even when state statutes do not explicitly mandate them. A general partnership relies on a written partnership agreement, while an LLC operates under a formal operating agreement. These internal governing contracts clearly document equity percentages, voting authority, capital call requirements, profit distributions, and procedures for buying out departing co-owners. Operating without a written agreement forces your business to rely on standard state statutory defaults during owner disputes.",
+      },
+      {
+        heading: "Evaluating S-Corporation Election Options for a Multi Member LLC",
+        content:
+          "An LLC provides structural tax flexibility that a general partnership cannot offer on its own. While both structures start with identical pass-through tax rules, a multi member LLC vs partnership analysis must consider the future S-corporation election route. An LLC with multiple members can file Form 2553 directly with the IRS to adopt S-corporation taxation, as detailed in the official [IRS Form 2553 Instructions](https://www.irs.gov/instructions/i2553).\n\nUnder an S-corporation election, active owners divide their earnings between a defensible W-2 reasonable salary and unearned profit distributions. The reasonable salary remains subject to federal payroll taxes, but the remaining profit distributions bypass Social Security and Medicare taxes entirely. This dual-distribution mechanism creates real tax savings once business net profit grows large enough to offset the accounting costs of managing regular payroll.\n\nPer our internal S-corporation math, an S-corp election starts making sense around $35,000 of profit at a 50 percent salary split, or roughly $52,000 of profit at a 60 percent salary split. A general partnership cannot make this election directly without first restructuring as a state-registered LLC or formal corporation. Co-founders planning for future corporate tax flexibility can evaluate specific distribution savings through our guide on [LLC vs S Corp](/compare/llc-vs-s-corp/).",
+      },
+    ],
+    faqs: [
+      {
+        question: "Why would someone choose a general partnership over an LLC?",
+        answer:
+          "Co-founders choose a general partnership primarily to launch immediately with zero legal red tape and zero state filing fees. It serves as a frictionless, temporary structure for testing an early business concept with a partner before spending capital on formal state registrations and annual reporting fees.",
+      },
+      {
+        question: "Do partnerships and LLCs pay different taxes?",
+        answer:
+          "No, general partnerships and multi-member LLCs do not pay different federal taxes by default. Both structures are classified by the IRS as pass-through partnerships, filing Form 1065 and sending Schedule K-1 forms to owners, who pay income and self-employment taxes on their individual tax returns.",
+      },
+      {
+        question: "Can a general partnership become an LLC later?",
+        answer:
+          "Yes, a general partnership can convert into an LLC at any point by filing Articles of Organization with the state and paying the appropriate state filing fee. Once approved by the state, the owners execute a formal LLC operating agreement and transfer business operations into the newly formed entity.",
+      },
+      {
+        question: "Is a written partnership agreement required by law?",
+        answer:
+          "A written partnership agreement is not legally required in most states, but operating without one is dangerous. Without a written agreement, any partnership dispute regarding profit splits, management authority, or partner exits will be governed entirely by default state partnership laws rather than your agreed terms.",
+      },
+      {
+        question: "Can an LLC with multiple owners elect S-corp status?",
+        answer:
+          "Yes, a multi-member LLC can elect S-corporation tax status by submitting Form 2553 to the IRS, provided all owners meet statutory eligibility rules. This election allows active members to take a reasonable salary alongside profit distributions, potentially reducing personal self-employment tax liabilities once net income is sufficiently high.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Partnerships", url: "https://www.irs.gov/businesses/partnerships" },
+      { label: "IRS — Limited Liability Company (LLC)", url: "https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc" },
+      { label: "IRS — Instructions for Form 2553", url: "https://www.irs.gov/instructions/i2553" },
+    ],
+    relatedComparisons: ["sole-proprietorship-vs-llc", "sole-proprietorship-vs-partnership", "llc-vs-s-corp"],
+    calculatorLinks: [
+      { label: "S Corp Tax Calculator", href: "/s-corp-tax/" },
+    ],
+  },
   {
     slug: "llc-vs-s-corp",
     updated: "2026-09-05",
@@ -118,7 +208,7 @@ export const BUSINESS_STRUCTURE_COMPARISONS: ComparisonEntry[] = [
       },
     ],
     sources: [IRS_SCORP, IRS_SCORP_COMP, IRS_2553, IRS_LLC, IRS_SE_TAX],
-    relatedComparisons: ["sole-proprietorship-vs-llc", "1099-vs-w2"],
+    relatedComparisons: ["sole-proprietorship-vs-llc", "1099-vs-w2", "partnership-vs-llc"],
     calculatorLinks: [
       { label: "S Corp Tax Calculator", href: "/s-corp-tax/" },
       { label: "LLC vs S Corp Tax Calculator", href: "/s-corp-tax/llc-vs-s-corp-tax-calculator/" },
@@ -180,6 +270,11 @@ export const BUSINESS_STRUCTURE_COMPARISONS: ComparisonEntry[] = [
         content:
           "Your tax return, unless you make a further election. Your self-employment tax. Your deductions. Your obligation to pay quarterly estimated taxes. The requirement to report all business income whether or not a 1099 arrives — and note that for 2026 the Form 1099-NEC threshold rose to $2,000, so more genuine income now arrives with no form at all.\n\nWhat does change is the legal boundary around the business, the paperwork that maintains it, and the availability of an S-corp election later. Setting the expectation correctly matters, because owners who form an LLC expecting a tax cut are frequently disappointed by their first return.",
       },
+      {
+        heading: "Sole Proprietorship vs S Corp: Why You Can't Go Straight There",
+        content:
+          "A sole proprietor cannot elect S corporation status directly because an [S corporation](https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations) is a federal tax election rather than an independent legal entity. Under Internal Revenue Service (IRS) rules, you must establish an eligible legal entity like a limited liability company (LLC) or a state-law corporation before you can file [IRS Form 2553](https://www.irs.gov/instructions/i2553) to change your tax classification. While a default single-member LLC shares the same pass-through tax treatment as a sole proprietorship, forming that separate legal structure is the mandatory first step to accessing S-corp taxation.\n\n| Dimension | Sole Proprietorship | S Corporation |\n| --- | --- | --- |\n| Entity prerequisite | None; exists automatically once you conduct business | Must form an LLC or corporation at the state level first |\n| Self-employment and payroll taxes | 15.3% self-employment tax applies to 100% of net profit | Payroll taxes apply only to a reasonable W-2 salary; distributions are exempt |\n| Tax filings and ongoing compliance | Report business profit on personal Schedule C with no payroll filings | Run payroll with quarterly payroll tax filings and submit annual Form 1120-S |\n\nWhen evaluating a sole proprietorship vs S corp structure, moving between them requires a strict two-step sequence. First, you register an LLC or corporation with your state government. Second, you submit Form 2553 to the IRS to request subchapter S tax status for that underlying entity.\n\nThis transition fundamentally shifts how your income is taxed. Sole proprietors pay the standard 15.3% self-employment tax on every dollar of net business profit reported on Schedule C. With an S corporation, you must pay yourself a reasonable salary through W-2 payroll, subjecting only that specific wage portion to Social Security and Medicare taxes. The remaining profit passes through as shareholder distributions free from self-employment taxes, creating the core tax reduction.\n\nThat tax reduction comes with additional ongoing operational friction. An S corporation requires regular payroll processing, quarterly payroll tax filings, and an annual Form 1120-S corporate tax return that generates a Schedule K-1 for your personal return. Based on our [S Corp Tax Calculator](/s-corp-tax/), the tax savings only begin to outweigh these administrative costs once business profit reaches roughly $35,000 (assuming a reasonable salary set at 50% of profit) to around $52,000 (at a 60% salary).\n\nIf your annual net earnings sit below that threshold, the combined costs of payroll software, filing fees, and professional tax preparation can easily exceed the payroll taxes you save. For a detailed breakdown of operating an LLC under default versus corporate rules, review our comparison of [LLC vs S Corp](/compare/llc-vs-s-corp/).\n\nStay as a sole proprietor if your annual profit remains below $35,000 or if your business income is unpredictable from month to month. Adding mandatory payroll schedules and corporate tax returns when revenue is volatile creates fixed overhead without enough tax savings to justify the setup. Once your net profit consistently clears the $35,000 to $52,000 range and can reliably absorb ongoing payroll obligations, forming an LLC and making the S-corp election becomes an effective way to lower your annual tax bill.",
+      },
     ],
     faqs: [
       {
@@ -214,7 +309,7 @@ export const BUSINESS_STRUCTURE_COMPARISONS: ComparisonEntry[] = [
       },
     ],
     sources: [IRS_LLC, IRS_SOLE_PROP, IRS_SE_TAX, IRS_2553],
-    relatedComparisons: ["llc-vs-s-corp", "1099-vs-w2"],
+    relatedComparisons: ["llc-vs-s-corp", "1099-vs-w2", "partnership-vs-llc"],
     calculatorLinks: [
       { label: "Self-Employment Tax Calculator", href: "/self-employment-tax/" },
       { label: "S Corp Tax Calculator", href: "/s-corp-tax/" },

@@ -1,0 +1,43 @@
+{
+ "slug": "partnership-vs-llc",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1872,
+ "floor": 1500,
+ "input_tokens": 20541,
+ "output_tokens": 2884,
+ "thinking_tokens": null,
+ "cached_tokens": 18716,
+ "est_cost_usd": 0.0157,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1872,
+  "numbers_not_in_facts": [
+   "1040"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 20170
+  }
+ },
+ "seconds": 17.2,
+ "response_id": "HiW6ari-EOne-sAP5J7CuA8",
+ "generated_at": "2026-09-28T08:28:31+0000"
+}

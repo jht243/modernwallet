@@ -1,7 +1,43 @@
 {
  "version": 1,
- "lastRun": "2026-09-22",
+ "lastRun": "2026-09-28",
  "dropped": [
+  {
+   "slug": "equipment-financing-vs-sba-loan",
+   "optionA": "Equipment Financing",
+   "optionB": "SBA Loan",
+   "format": "comparison",
+   "reason": "DataForSEO autocomplete-estimate only, 0-25/mo, below reliable-volume floor (Nq<50) (2026-09-28)",
+   "score": 0
+  },
+  {
+   "slug": "iul-vs-term-life-insurance",
+   "optionA": "IUL",
+   "optionB": "Term Life Insurance",
+   "reason": "PARTIAL, re-checked live and found already adequately covered — /compare/term-life-vs-universal-life-insurance/ already has a dedicated 'Term Life vs. Indexed Universal Life (IUL), Specifically' section with a full premium/growth/liquidity/cost-transparency comparison plus an explicit FAQ verdict; skipped without edit, 2026-09-28",
+   "score": 0
+  },
+  {
+   "slug": "sole-proprietorship-vs-s-corp",
+   "optionA": "Sole Proprietorship",
+   "optionB": "S Corp",
+   "reason": "PARTIAL — enriched in place (/compare/sole-proprietorship-vs-llc/ got a new 'Sole Proprietorship vs S Corp' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "score": 0
+  },
+  {
+   "slug": "backdoor-roth-vs-traditional-ira",
+   "optionA": "Backdoor Roth IRA",
+   "optionB": "Traditional IRA",
+   "reason": "PARTIAL — enriched in place (/compare/roth-ira-vs-traditional-ira/ got a new 'Backdoor Roth IRA vs Traditional IRA: The Mechanics' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "score": 0
+  },
+  {
+   "slug": "qualified-vs-non-qualified-annuity",
+   "optionA": "Qualified Annuity",
+   "optionB": "Non-Qualified Annuity",
+   "reason": "PARTIAL — enriched in place (/compare/pension-vs-annuity/ got a new 'Qualified Annuity vs Non-Qualified Annuity: The Full Difference' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "score": 0
+  },
   {
    "slug": "trump-account-vs-coverdell-esa",
    "format": "comparison",
@@ -500,6 +536,14 @@
   }
  ],
  "published": [
+  { "slug": "doordash-vs-grubhub", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "grubhub-vs-uber-eats", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "robinhood-vs-webull", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "fidelity-vs-merrill-edge", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "freetaxusa-vs-hr-block", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "home-equity-loan-vs-personal-loan", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "401k-loan-vs-heloc", "format": "comparison", "date": "2026-09-28" },
+  { "slug": "partnership-vs-llc", "format": "comparison", "date": "2026-09-28" },
   {
    "slug": "best-mortgage-lenders",
    "format": "roundup",

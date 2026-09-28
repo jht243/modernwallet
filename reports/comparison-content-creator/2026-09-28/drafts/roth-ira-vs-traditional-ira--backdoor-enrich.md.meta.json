@@ -1,0 +1,39 @@
+{
+ "slug": "roth-ira-vs-traditional-ira--backdoor-enrich",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 389,
+ "floor": 0,
+ "input_tokens": 19890,
+ "output_tokens": 533,
+ "thinking_tokens": 3583,
+ "cached_tokens": 18716,
+ "est_cost_usd": 0.0198,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 389,
+  "numbers_not_in_facts": [
+   "590"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 20170
+  }
+ },
+ "seconds": 18.3,
+ "response_id": "eCa6as-tHInAsOIPuYWIwAQ",
+ "generated_at": "2026-09-28T08:34:18+0000"
+}

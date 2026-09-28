@@ -1,0 +1,97 @@
+{
+  "slug": "doordash-vs-grubhub",
+  "metaTitle": "DoorDash vs Grubhub: Fees, Driver Pay, and True Costs",
+  "metaDescription": "DoorDash vs Grubhub compared on checkout fees, membership programs, driver pay mechanics, and 1099 self-employment taxes so you pick the right app.",
+  "h1": "DoorDash vs Grubhub: Which App Wins on Price and Pay?",
+  "subtitle": "A direct comparison of customer checkout fees, subscription programs, driver earnings, and tax rules between the two largest standalone food-delivery apps.",
+  "optionAName": "DoorDash",
+  "optionBName": "Grubhub",
+  "introText": "Neither delivery app is universally cheaper or better across every order. The total bill you pay on DoorDash vs Grubhub changes with every meal based on merchant pricing, variable delivery fees, service fees, and whether you subscribe to a monthly membership program. At ModernWallet, we evaluate consumer spending decisions and independent work opportunities through direct cash-flow math, and your bottom line on both apps depends on local marketplace conditions rather than a single fixed rate. Gig workers weighing both platforms also encounter nearly identical tax rules, as both companies treat drivers as independent contractors responsible for self-employment taxes.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Core customer fee model",
+        "a": "Charges a variable delivery fee, a percentage-based service fee, and a small-order fee on orders below local minimums",
+        "b": "Charges a variable delivery fee and a service fee that fluctuate based on restaurant agreements and order size"
+      },
+      {
+        "dimension": "Subscription membership program",
+        "a": "Offers DashPass, which waives delivery fees and lowers service fees on eligible orders meeting minimum purchase totals",
+        "b": "Offers Grubhub+, which eliminates delivery fees on eligible orders and provides member-only promotions"
+      },
+      {
+        "dimension": "Worker legal classification",
+        "a": "Classifies drivers as 1099 independent contractors, known formally as Dashers, with no employer tax withholding",
+        "b": "Classifies delivery partners as 1099 independent contractors with zero payroll tax withholding"
+      },
+      {
+        "dimension": "Customer tip distribution",
+        "a": "Passes 100 percent of customer-paid tips directly to the delivery driver on top of base pay",
+        "b": "Passes 100 percent of customer-paid tips directly to the delivery partner alongside per-order compensation"
+      },
+      {
+        "dimension": "Merchant selection and pricing",
+        "a": "Depends on individual merchant partner contracts, resulting in distinct restaurant menus and delivery ranges by zip code",
+        "b": "Rests on separate commercial agreements with restaurants, creating unique local catalog availability by address"
+      },
+      {
+        "dimension": "Driver tax reporting forms",
+        "a": "Reports annual driver earnings on Form 1099-NEC or Form 1099-K depending on statutory payment volume thresholds",
+        "b": "Issues Form 1099-NEC or Form 1099-K to delivery partners based on standard federal reporting rules"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Actually Changes the Price on DoorDash vs Grubhub",
+      "content": "Grubhub costs more than DoorDash on some orders, but DoorDash costs more than Grubhub on others. The total checkout price for a food-delivery order splits into food subtotal, delivery fee, service fee, local regulatory charges, sales tax, and driver tip. Restaurants set their own menu prices inside each app independently, which means a single restaurant can list a sandwich for twelve dollars on one service and thirteen dollars on the other to offset differing merchant commission rates.\n\nDelivery fees also shift constantly based on distance and demand. A restaurant located two miles away might carry a low promotional delivery fee on [Grubhub](https://www.grubhub.com) while charging a higher standard delivery fee on [DoorDash](https://www.doordash.com). Conversely, peak meal hours can trigger temporary fee increases on either platform when local driver availability drops. Neither company publishes a flat national delivery charge, so your neighborhood and the time of day dictate which app charges more.\n\nService fees add another layer of variance. Both marketplaces charge service fees calculated as a percentage of your food subtotal, and DoorDash applies an additional small-order fee whenever your cart falls below a specified dollar threshold. If you place a ten-dollar order on DoorDash, that small-order fee can instantly make the meal more expensive than the exact same order placed through Grubhub. The only reliable way to find the cheaper option is to assemble your cart in both apps and compare the final checkout screen before you pay."
+    },
+    {
+      "heading": "Membership Economics of DashPass and Grubhub+",
+      "content": "Paid subscription memberships alter the price equation if you order takeout multiple times per month. DoorDash sells DashPass, while Grubhub offers Grubhub+. Both subscription programs target recurring fees by eliminating the delivery charge entirely on eligible restaurant orders that meet a minimum subtotal, while also reducing the standard service fee percentage.\n\nThese memberships do not make every order free of fees. You will still pay reduced service fees, local regulatory fees where applicable, sales tax, and the driver tip on every delivery. Furthermore, restaurants must opt into the membership program to qualify for zero-dollar delivery. If your favorite neighborhood diner does not participate in DashPass or Grubhub+, you will pay full standard delivery fees regardless of your active membership status.\n\nDeciding whether a membership saves you money requires basic break-even math. Because monthly subscription prices and fee structures change periodically, you should check the active rate on each company's official membership page before enrolling. If you order food delivery three or four times each month from participating merchants, the fee reductions generally surpass the monthly subscription fee. For an examination of how these subscription dynamics compare against grocery and rideshare platforms, review our guide on [DoorDash vs Uber Eats](/compare/doordash-vs-uber-eats/)."
+    },
+    {
+      "heading": "Customer Ordering Steps to Minimize Takeout Costs",
+      "content": "You can consistently lower your total food delivery costs by checking both apps before submitting an order. Because restaurants set their menu prices separately on each platform, comparing the same establishment across both applications often reveals price discrepancies on identical items. A difference of two dollars per entree across a family meal creates immediate savings before fees even enter the calculation.\n\nTiming your orders also reduces unexpected charges. Ordering during peak lunch or dinner hours frequently triggers increased delivery fees on both networks due to driver shortages in your immediate zone. If you have schedule flexibility, placing your order twenty minutes before or after typical meal rushes can lower the delivery fee quoted at checkout.\n\nKeep an eye on minimum cart requirements. If your order falls short of the minimum purchase amount required for reduced fees, adding a small beverage or side dish can sometimes cost less than the penalty fee assessed for an undersized order. Before finalizing payment, look closely at the fee expansion menu on the final screen so you understand exactly what percentage goes to administrative platform costs versus the worker delivering your food."
+    },
+    {
+      "heading": "Driving for DoorDash vs Grubhub for Drivers and Gig Workers",
+      "content": "Delivery drivers evaluating DoorDash vs Grubhub for drivers will find that both platforms use variable pay models rather than fixed hourly rates. Neither company guarantees an exact dollar amount per mile or hour nationwide. Instead, each order offer presented to a driver calculates base pay using an algorithm that weighs estimated delivery time, driving distance, and the general desirability of the trip.\n\nCustomer tips form a substantial portion of overall driver revenue on both applications. DoorDash and Grubhub state in their official driver-pay policies that one hundred percent of customer-paid tips flow directly to the delivery contractor without platform deductions. However, order volume differs significantly across individual metro markets. In some suburban areas, DoorDash captures the majority of local restaurant orders, giving Dashers steady trip requests throughout the day. In certain dense urban markets, Grubhub maintains deep legacy ties with local takeout spots, generating higher per-order totals.\n\nExperienced gig workers frequently sign up for both services simultaneously to offset slow periods on either network. Running both apps allows a driver to evaluate incoming offers from two distinct merchant pools and accept the trip with the best return on time and mileage. To see how restaurant delivery earnings compare to grocery logistics, explore our breakdown of [Instacart vs DoorDash](/compare/instacart-vs-doordash/)."
+    },
+    {
+      "heading": "Understanding 1099 Self-Employment Tax Obligations for Drivers",
+      "content": "Earning money on either delivery platform creates identical tax obligations under federal law. Neither DoorDash nor Grubhub acts as a traditional employer, meaning neither company withholds federal income tax, state income tax, Social Security, or Medicare from your weekly payouts. Instead, both services classify you as a 1099 independent contractor.\n\nWhen you work as an independent contractor, you must pay self-employment tax on your net business earnings. The self-employment tax covers the employee and employer portions of Social Security and Medicare, which total 15.3 percent. You can calculate your anticipated tax exposure using our [Self-Employment Tax Calculator](/self-employment-tax/) to avoid surprises at tax time.\n\nBecause no taxes are withheld automatically, independent contractors who expect to owe more than one thousand dollars in annual federal taxes must generally submit quarterly estimated payments to the Internal Revenue Service (IRS). Failing to remit these payments by the quarterly deadlines exposes you to underpayment penalties. You can read official guidance directly through the [IRS Gig Economy Tax Center](https://www.irs.gov/businesses/gig-economy-tax-center) to verify filing schedules and compliance standards."
+    },
+    {
+      "heading": "Maximizing Vehicle Expense Deductions on Delivery Routes",
+      "content": "Tracking business mileage is the most effective method for gig delivery contractors to reduce taxable net income. When you drive your personal vehicle for DoorDash or Grubhub, you can deduct the costs of operating that vehicle against your gross delivery revenue. The Internal Revenue Service allows you to choose between two deduction methods: the standard mileage rate or actual vehicle expenses.\n\nThe standard mileage rate lets you deduct a set number of cents for every qualified business mile driven during the tax year. This single rate accounts for fuel, depreciation, maintenance, and insurance costs. Alternatively, the actual expense method requires keeping detailed receipts for gas purchases, repair bills, tire replacements, vehicle registration, and insurance premiums, then multiplying those combined expenses by the percentage of total miles driven for business purposes.\n\nYou cannot use both deduction methods simultaneously for the same vehicle within a single tax year. Most delivery drivers choose the standard mileage rate because it simplifies recordkeeping and provides a dependable deduction that directly offsets per-order earnings. You can study the full calculation steps in our [DoorDash mileage deduction guide](/mileage-deduction/doordash-mileage-deduction/) or explore regional driving expenses through our [Mileage Deduction Calculator hub](/mileage-deduction/)."
+    }
+  ],
+  "verdict": "Choose DoorDash if you order food frequently in suburban or mid-sized markets where its wider merchant footprint gives you access to more neighborhood restaurants, or if you plan to subscribe to DashPass to eliminate delivery fees across multiple orders each month. Choose Grubhub if you live in an urban center where independent diners maintain exclusive partnerships with Grubhub, or if you already hold an active Grubhub+ membership that offsets checkout fees. This recommendation is not for shoppers who expect one platform to remain permanently cheaper across every single order. Restaurant markups, surge fees, and distance calculations fluctuate with every purchase, making static platform loyalty expensive. Our verdict would change if either service instituted transparent, fixed delivery fees nationwide, or if a major municipal cap on third-party restaurant commissions fundamentally altered fee schedules in your specific market.",
+  "faqItems": [
+    {
+      "question": "Does Grubhub cost more than DoorDash?",
+      "answer": "Grubhub does not cost more than DoorDash by default, as neither service is universally cheaper across every order. Total checkout costs depend on individual restaurant menu markups, variable delivery charges, percentage-based service fees, and applicable small-order penalties. A customer must compare the final checkout screen for the same order on both apps to see which platform offers the lower total price."
+    },
+    {
+      "question": "Is DoorDash or Grubhub better to drive for?",
+      "answer": "Neither platform is universally better for drivers because compensation depends entirely on order volume and customer tipping patterns in your local market. Both companies use dynamic pay algorithms that factor in trip distance, estimated delivery time, and route desirability, while passing 100 percent of customer tips to the worker. Drivers in dense urban zones often find strong demand on Grubhub, while suburban drivers frequently see higher order density on DoorDash."
+    },
+    {
+      "question": "Do DoorDash and Grubhub drivers pay the same taxes?",
+      "answer": "Yes, drivers on both platforms face identical tax treatment because both companies classify delivery workers as 1099 independent contractors. Neither company withholds payroll or income taxes from payouts, which means workers on both apps owe self-employment tax for Social Security and Medicare on their net earnings. Drivers must track business mileage and typically submit quarterly estimated tax payments to avoid underpayment penalties."
+    },
+    {
+      "question": "Can I use both DoorDash and Grubhub as a driver at the same time?",
+      "answer": "Yes, independent contractors are legally permitted to register and drive for both platforms at the same time. Many experienced gig workers keep both applications active on their phones to monitor trip requests across two merchant networks simultaneously. Once a driver accepts an order on one platform, they typically pause incoming requests on the other app until that delivery is completed."
+    },
+    {
+      "question": "Is DashPass or Grubhub+ worth it?",
+      "answer": "A subscription to DashPass or Grubhub+ is worth the recurring cost if you order takeout delivery at least three to four times per month from participating merchants. Both services waive the delivery fee and discount the standard service fee on qualifying orders that meet minimum cart requirements. If you only order food delivery once a month, paying standard per-order fees is cheaper than maintaining an ongoing subscription."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

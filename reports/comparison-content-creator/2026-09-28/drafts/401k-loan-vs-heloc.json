@@ -1,0 +1,93 @@
+{
+  "slug": "401k-loan-vs-heloc",
+  "metaTitle": "401(k) Loan vs HELOC: Which Borrowing Path Fits Best?",
+  "metaDescription": "Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.",
+  "h1": "401k Loan vs HELOC: Which Financing Path Fits Your Plans?",
+  "subtitle": "A side-by-side comparison of repayment terms, qualification hurdles, tax rules, and asset risks when borrowing against retirement or home equity.",
+  "optionAName": "401(k) Loan",
+  "optionBName": "HELOC",
+  "introText": "A 401(k) loan lets you borrow from your own retirement balance without a credit check or home lien, while a home equity line of credit (HELOC) lets you borrow against your home value without pulling money out of tax-advantaged investments. At ModernWallet, we evaluate consumer borrowing through total net worth impact, comparing a 401k loan vs HELOC by measuring default penalties, repayment timelines, and asset exposure. Choosing the wrong borrowing vehicle can either put your residence at risk of foreclosure or generate unexpected income taxes if your employment ends unexpectedly. Every borrower must weigh whether they prefer risking their future retirement security or pledging their physical home as collateral to secure liquidity today.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Qualification requirements",
+        "a": "Requires no credit check, income verification, or property appraisal; availability depends on whether your employer plan permits participant loans",
+        "b": "Requires a formal credit check, proof of steady income, and a home appraisal to evaluate available home equity"
+      },
+      {
+        "dimension": "Maximum borrowing limit",
+        "a": "Capped under federal rules at the lesser of 50% of your vested account balance or $50,000",
+        "b": "Determined by your lender based on your home value, existing mortgage balance, and maximum allowable loan-to-value ratio"
+      },
+      {
+        "dimension": "Destination of interest payments",
+        "a": "All interest payments go directly back into your own 401(k) account at a plan-determined interest rate",
+        "b": "All interest payments go directly to the commercial lending institution as compensation for the loan"
+      },
+      {
+        "dimension": "Default and job-loss consequences",
+        "a": "Unpaid balances after leaving an employer become taxable distributions subject to income taxes and potential early-withdrawal penalties",
+        "b": "Failure to meet monthly repayment obligations can result in default, severe credit damage, and eventual property foreclosure"
+      },
+      {
+        "dimension": "Tax deductibility of interest",
+        "a": "Interest is never tax-deductible because the borrower is paying interest back to their own personal retirement account",
+        "b": "Interest may be federally tax-deductible if proceeds are used to buy, build, or substantially improve the securing property"
+      },
+      {
+        "dimension": "Impact on investment growth",
+        "a": "Borrowed capital stops earning investment returns and market dividends until fully repaid through payroll deductions",
+        "b": "Retirement investments remain untouched and continue compounding uninterrupted in financial markets"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Decides Between a 401(k) Loan and a HELOC",
+      "content": "Choosing between a 401(k) loan and a HELOC depends on whether you have sufficient home equity and whether your employment is stable enough to avoid accelerated repayment rules. If you borrow from your workplace retirement account, the primary operational hazard centers on your job status. When an employee leaves or loses their position with an outstanding loan balance, federal tax guidelines accelerate the repayment timeline. Failing to settle that balance by the deadline converts the outstanding debt into a taxable withdrawal, generating an unexpected tax liability. Conversely, a home equity line of credit introduces physical asset risk, because defaulting on a secured bank line allows the lender to initiate foreclosure on your residence.\n\nThe decision also hinges on qualification barriers and upfront costs. Opening a HELOC requires undergoing a thorough underwriting evaluation, including a review of your credit report, income verification, and a professional property appraisal to establish your loan-to-value (LTV) ratio. A 401(k) loan bypasses credit bureaus entirely because you are borrowing your own accumulated capital under Internal Revenue Code (IRC) Section 72(p). If you have a damaged credit history or require rapid liquidity without paying loan origination fees, a retirement loan offers a much faster administrative path. For readers coordinating broader household savings strategies, our [Retirement Hub](/retirement/) provides detailed frameworks on structuring assets across multiple accounts."
+    },
+    {
+      "heading": "Comparing a 401k Loan vs HELOC for Home Improvement",
+      "content": "A HELOC is generally the superior choice for home improvement projects because it offers revolving access to cash and potential tax deductibility that a 401(k) loan cannot match. Major home renovations rarely incur all expenses at once, often rolling out in phases over several months. A HELOC accommodates this workflow through an initial draw period that typically spans up to 10 years, allowing you to pull funds only when contractor invoices arrive while paying interest exclusively on the active balance. According to the [Consumer Financial Protection Bureau (CFPB)](https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf), variable interest rates on home equity lines in 2026 run roughly 8.5% to 9.5%. You can model these variable payment structures using our [HELOC calculator guide](/guides/heloc-calculator-explained/) before committing your residential equity.\n\nThe federal tax code also provides a meaningful structural advantage for home renovations financed through real estate equity. Under [Internal Revenue Service (IRS) Publication 936](https://www.irs.gov/publications/p936), interest paid on a home equity line of credit is federally tax-deductible if the borrowed proceeds are used to buy, build, or substantially improve the residence securing the credit line. In contrast, interest on a 401(k) loan is never tax-deductible under any circumstance, because you are remitting interest payments back to yourself. While repaying interest to your own account provides personal satisfaction, pulling capital out of equity keeps your retirement portfolio fully invested while opening up a potential tax deduction if you itemize."
+    },
+    {
+      "heading": "The Job Separation Risk of Retirement Borrowing",
+      "content": "Leaving an employer with an active 401(k) loan accelerates your repayment schedule and can trigger immediate tax liabilities if you cannot pay off the balance. Federal rules under IRC Section 72(p) govern how workplace retirement plans administer participant borrowing, as outlined by the [Internal Revenue Service](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-loans). Under standard plan guidelines, an active employee repays their loan over a maximum five-year term through automatic payroll deductions. However, if you voluntarily resign, experience a corporate layoff, or face termination, those automated payroll deductions cease immediately. Current federal tax law gives separated workers until the due date of their federal tax return for that tax year, including extensions, to repay the outstanding balance in full.\n\nIf you lack the liquid capital to pay off that accelerated balance by the tax deadline, the unpaid loan amount is officially classified as a deemed distribution. The entire remaining principal is added directly to your gross taxable income for that calendar year, subjecting you to ordinary state and federal income tax brackets. Furthermore, if you are under age 59\u00bd, the IRS imposes a mandatory 10% early-withdrawal penalty on that taxable sum. You can calculate the exact cash cost of an unintended distribution with our [401(k) Early Withdrawal Calculator](/retirement/401k-early-withdrawal-calculator/) before tapping your vested workplace balance."
+    },
+    {
+      "heading": "Collateral Requirements and Foreclosure Exposure with Home Equity",
+      "content": "Borrowing against residential equity through a HELOC avoids putting your retirement funds at risk but exposes your home to foreclosure if you fall behind on payments. Unlike a 401(k) loan where you borrow from your personal assets, a HELOC is a third-party commercial debt instrument secured by a legal lien against your property deed. If an unforeseen financial emergency or prolonged income disruption prevents you from making the required monthly interest or principal payments, the lending institution holds the legal right to foreclose on the property to recover its capital. This foreclosure exposure represents a fundamental hazard that retirement loans do not share, where default triggers tax consequences rather than the loss of your home.\n\nSecuring a home equity line also requires satisfying rigorous bank underwriting standards that workplace retirement plans do not mandate. Lenders review your credit score across major reporting agencies, evaluate your overall debt-to-income ratio, and demand an appraisal to confirm sufficient equity above existing mortgage balances. If your credit score is below prime thresholds or your local housing market has experienced price drops, lenders can reject your application or charge high variable margins. If you want to evaluate home equity against non-collateral alternatives, review our comparison of a [HELOC vs Personal Loan](/compare/heloc-vs-personal-loan/) to weigh unsecured options."
+    },
+    {
+      "heading": "Evaluating a 401k Loan vs HELOC for Down Payment Needs",
+      "content": "Using a 401(k) loan for a home down payment provides fast liquidity without adding a lien on your existing property, but statutory borrowing limits restrict its utility for larger purchases. Federal regulations cap 401(k) borrowing at the lesser of 50% of your vested balance or $50,000. While plan administrators frequently allow extended repayment schedules beyond five years when the loan is explicitly used to acquire a primary residence, a $50,000 cap may fall short of what buyers require in competitive real estate markets. A HELOC can provide substantially larger borrowing amounts if your current home has accrued meaningful equity, limited only by your lender's allowable LTV ratio.\n\nRetirement borrowing also incurs an unavoidable opportunity cost that home equity borrowing avoids. Every dollar removed from your retirement account stops generating investment earnings, compounding interest, and corporate dividend payouts until you repay the funds. Even though your repayment interest goes back into your account, that fixed rate rarely matches the multi-year compound performance of a diversified equity market index. Borrowing $50,000 right before an extended market expansion can permanently depress your future retirement wealth, costing far more in missed compounding than the fees saved by skipping a bank loan."
+    }
+  ],
+  "verdict": "Choose a 401(k) loan if your job is stable, you need $50,000 or less, you want to avoid lender closing costs, appraisals, and credit checks, and you have a clear plan to repay the balance within five years. Choose a HELOC if you have substantial home equity, want to leave your retirement savings fully invested to maximize compound growth, require revolving access to larger credit lines, and plan to use the money for home improvements where interest may qualify for a tax deduction. This advice is not for workers navigating unstable corporate restructurings or volatile employment situations, where an unexpected layoff would instantly turn an unpaid 401(k) loan into a punishing taxable distribution with a 10% penalty. Our recommendation would change if your employer's plan document prohibits participant loans entirely, or if local property values drop so significantly that you cannot satisfy standard bank equity thresholds to open a credit line. Before making a final choice on a 401k loan vs HELOC, check your employer's summary plan description with your plan administrator and calculate the exact distribution tax consequences on our [401(k) Early Withdrawal Calculator](/retirement/401k-early-withdrawal-calculator/).",
+  "faqItems": [
+    {
+      "question": "What are the drawbacks of taking out a 401(k) loan?",
+      "answer": "The primary drawback of a 401(k) loan is the risk of accelerated repayment if you separate from your employer, which converts unpaid debt into a taxable distribution with potential penalties. Additionally, money borrowed stops earning compound market returns, and loans are federally capped at the lesser of 50% of your vested balance or $50,000."
+    },
+    {
+      "question": "Is a 401(k) loan or a HELOC better for a down payment?",
+      "answer": "A HELOC is often better if you need more than $50,000 and own a primary home with extensive equity, while a 401(k) loan works well for smaller down payments if you have no current home to borrow against. A 401(k) loan also allows extended repayment terms beyond five years when purchasing a primary home, though plan rules dictate the exact duration."
+    },
+    {
+      "question": "What happens to a 401(k) loan if I lose my job?",
+      "answer": "If you leave or lose your job with an outstanding 401(k) loan balance, your automatic payroll deductions stop immediately. Under federal tax law, you generally have until the due date of your federal tax return for that year, including extensions, to repay the balance; any unpaid funds become a taxable distribution subject to income tax and a 10% penalty if you are under age 59\u00bd."
+    },
+    {
+      "question": "Is 401(k) loan interest tax-deductible like HELOC interest can be?",
+      "answer": "No, 401(k) loan interest is never tax-deductible because you are paying the interest directly back into your own personal retirement account. HELOC interest, by comparison, may be tax-deductible if you itemize deductions and use the borrowed proceeds specifically to buy, build, or substantially improve the property securing the line of credit."
+    },
+    {
+      "question": "Do I need good credit for a 401(k) loan?",
+      "answer": "No, you do not need good credit to qualify for a 401(k) loan because there is no credit check, credit bureau reporting, or third-party underwriting involved. You are borrowing against your own vested balance under plan guidelines, unlike a HELOC which requires a solid credit score, income verification, and an appraisal."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

@@ -1,0 +1,54 @@
+{
+ "slug": "home-equity-loan-vs-personal-loan",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2688,
+ "floor": 1500,
+ "input_tokens": 20562,
+ "output_tokens": 3889,
+ "thinking_tokens": 938,
+ "cached_tokens": 18716,
+ "est_cost_usd": 0.023,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2688,
+  "numbers_not_in_facts": [
+   "1000",
+   "100000",
+   "15000",
+   "2000",
+   "25000",
+   "30000",
+   "320000",
+   "340000",
+   "40000",
+   "400000",
+   "5000",
+   "60000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 20170
+  }
+ },
+ "seconds": 24.8,
+ "response_id": "3SS6asXvLqDIjMcP9quXkAk",
+ "generated_at": "2026-09-28T08:27:34+0000"
+}

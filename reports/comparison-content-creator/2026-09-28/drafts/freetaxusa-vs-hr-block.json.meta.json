@@ -1,0 +1,41 @@
+{
+ "slug": "freetaxusa-vs-hr-block",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1930,
+ "floor": 1500,
+ "input_tokens": 20321,
+ "output_tokens": 3116,
+ "thinking_tokens": 725,
+ "cached_tokens": 18716,
+ "est_cost_usd": 0.0191,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1930,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 20170
+  }
+ },
+ "seconds": 19.9,
+ "response_id": "ySS6aoWWMr3N-sAPwK7xsQ8",
+ "generated_at": "2026-09-28T08:27:09+0000"
+}

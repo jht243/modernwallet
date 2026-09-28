@@ -1,0 +1,97 @@
+{
+  "slug": "grubhub-vs-uber-eats",
+  "metaTitle": "Grubhub vs Uber Eats: Fees, Perks, and Driver Pay Compared",
+  "metaDescription": "Grubhub vs Uber Eats compared on checkout fees, Grubhub+ vs Uber One perks, driver pay mechanics, and 1099 tax obligations so you can choose.",
+  "h1": "Grubhub vs Uber Eats: Comparing Pricing and Driver Pay",
+  "subtitle": "A direct comparison of customer checkout fees, subscription savings, independent contractor tax rules, and driver earning mechanics across both food delivery services.",
+  "optionAName": "Grubhub",
+  "optionBName": "Uber Eats",
+  "introText": "Neither Grubhub nor Uber Eats is flatly cheaper, because your checkout total depends on fluctuating delivery fees, merchant service fees, and whether you hold an active membership like Grubhub+ or Uber One. At ModernWallet, we examine gig platforms and consumer cash flow to show how fee stacks and independent contractor tax rules affect your personal budget. Customers often assume one app offers a permanent discount, but menu markups and local promotions shift by restaurant and zip code. Meanwhile, delivery drivers on both platforms face identical independent contractor tax obligations, paying self-employment taxes without automatic paycheck withholding. Deciding between them requires evaluating checkout fees as a diner and net earnings retention as a driver.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Customer fee structure",
+        "a": "Charges a variable delivery fee and service fee per order, alongside potential small order surcharges set by cart size and location",
+        "b": "Charges a variable delivery fee and service fee based on distance and demand, with distinct fees for priority delivery options"
+      },
+      {
+        "dimension": "Monthly membership scope",
+        "a": "Offers Grubhub+, which waives delivery fees on eligible restaurant orders through Grubhub only",
+        "b": "Offers Uber One, which waives delivery fees on eligible food orders and provides discounts on Uber rideshare trips"
+      },
+      {
+        "dimension": "Driver work classification",
+        "a": "Classifies delivery couriers as 1099 independent contractors with no income tax withholding or fringe benefits",
+        "b": "Classifies delivery couriers as 1099 independent contractors with no income tax withholding or fringe benefits"
+      },
+      {
+        "dimension": "Platform crossover for drivers",
+        "a": "Dedicated exclusively to restaurant delivery and select convenience drop-offs",
+        "b": "Runs on the unified Uber Driver platform, allowing couriers to accept rideshare passenger trips and food deliveries on one account"
+      },
+      {
+        "dimension": "Driver tip retention",
+        "a": "Passes 100 percent of customer tips directly to the delivery partner with zero company deduction",
+        "b": "Passes 100 percent of customer tips directly to the delivery partner with zero company deduction"
+      },
+      {
+        "dimension": "Tax documentation provided",
+        "a": "Issues Form 1099-NEC or Form 1099-K to qualifying drivers based on annual gross earnings thresholds",
+        "b": "Issues Form 1099-NEC or Form 1099-K to qualifying drivers based on annual gross earnings thresholds"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Actually Changes the Price on Grubhub vs Uber Eats",
+      "content": "A customer's total order price on Grubhub or Uber Eats is determined by individual restaurant menu pricing, dynamic delivery fees, and variable service charges rather than a fixed marketplace rate. Both [Grubhub](https://www.grubhub.com) and [Uber Eats](https://www.ubereats.com) permit independent restaurants to establish their own menu prices within each app. Many restaurants inflate app prices compared to their in-store menus to offset commission charges, and a single merchant can set different prices on Grubhub than on Uber Eats. When you evaluate which is cheaper, grubhub or uber eats, you must compare the complete checkout screen for the identical restaurant order on both services.\n\nDelivery fees fluctuate constantly on both platforms based on distance, local driver availability, and real-time demand. A restaurant located three miles away might carry a modest delivery fee during a quiet mid-afternoon hour on Grubhub, while Uber Eats might raise fees from that same location if courier supply is constrained. Both apps also tack on a percentage-based service fee to cover operational overhead, payment processing, and customer support. If your order falls below a specific dollar threshold, both platforms apply an additional small cart fee that inflates the total cost.\n\nSubscription memberships further disrupt simple price comparisons. Grubhub features Grubhub+, a paid monthly subscription that waives delivery fees on eligible restaurant orders meeting a minimum subtotal. Uber offers Uber One, a shared membership that waives delivery fees on eligible Uber Eats orders and provides member pricing discounts on Uber rides. Because Uber One applies across both food delivery and rideshare transportation, users who already spend money commuting through Uber often extract higher combined value from an Uber One membership than from a Grubhub+ subscription."
+    },
+    {
+      "heading": "Ordering as a Customer: Checkout Fees and Subscription Math",
+      "content": "Evaluating customer costs requires reviewing the final order screen after adding your delivery address, because promotional discounts and local taxes distort earlier estimates. When deciding is grubhub cheaper than uber eats for a standard dinner order, you must look beyond the initial subtotal. Uber Eats frequently distributes targeted percentage-off promotions to inactive accounts or specific geographic zones, which temporarily offsets its service fees. Grubhub frequently partners with corporate benefit programs or retail loyalty clubs to offer free promotional periods for Grubhub+, altering checkout totals for eligible cardholders.\n\nService fees represent the most variable component of your food delivery order. On Grubhub, service fees are calculated as a percentage of your food subtotal, and the percentage can increase based on market conditions or municipal regulatory caps. Uber Eats uses a similar variable calculation, but it also presents optional add-ons like priority delivery, which charges an extra fee to route the courier directly to your home without intermediate stops. Selecting priority delivery raises the Uber Eats total, making standard Grubhub delivery less expensive for that specific run.\n\nIf you place orders three or more times each month, holding a membership fundamentally resets the pricing calculation. You should verify current subscription prices on each company's website to determine your break-even threshold. For households that already take rideshare trips, an Uber One membership eliminates delivery fees on eligible food orders while discounting vehicle rides. If you never use rideshare services, evaluating Grubhub+ against Uber One comes down strictly to which application features the specific local restaurants you patronize most often."
+    },
+    {
+      "heading": "Driver Pay Models and Daily Earning Factors",
+      "content": "Driver earnings on both Grubhub and Uber Eats are calculated dynamically per delivery based on estimated travel time, total mileage, and local customer demand rather than an hourly wage. When evaluating grubhub vs uber eats driver pay, workers must recognize that neither platform publishes a uniform, fixed per-mile compensation formula. Instead, each service presents an upfront trip offer when pinging a driver's smartphone, showing an estimated payout that bundles base pay, potential demand incentives, and upfront customer tips. Drivers retain the contractual right to accept or decline each individual delivery offer based on its projected profitability.\n\nBase pay on Grubhub factors in the estimated driving distance from your current location to the restaurant, the projected wait time at the merchant, and the distance to the delivery destination. Uber Eats calculates its trip supplement using comparable parameters, adjusting base compensation when orders have languished on merchant shelves or during severe weather events. Both platforms state in their driver-pay disclosures that 100 percent of customer tips go directly to the driver without platform skimming. Because customer tipping practices vary by neighborhood, net earnings depend heavily on local tipping norms and order volume.\n\nPlatform versatility provides a distinct operational difference for couriers on Uber Eats. Because Uber operates both food delivery and rideshare passenger transport on the same technological backbone, couriers can toggle between Uber Eats deliveries and Uber rideshare requests using a single driver account. Grubhub focuses entirely on restaurant delivery and retail convenience drop-offs. Drivers looking to compare broader rideshare economics can review our comparison of [Lyft vs Uber](/compare/lyft-vs-uber/) or examine alternative delivery networks in our analysis of [DoorDash vs Uber Eats](/compare/doordash-vs-uber-eats/)."
+    },
+    {
+      "heading": "Tax Obligations for Independent Delivery Contractors",
+      "content": "Drivers for both Grubhub and Uber Eats are classified as independent contractors under federal and state tax law, meaning neither company withholds taxes from weekly payouts. When you examine grubhub vs uber eats for drivers, your federal income tax, state income tax, and self-employment tax liabilities remain identical regardless of which platform you log into. Couriers receive a Form 1099-NEC for direct nonemployee compensation or a Form 1099-K summarizing gross transaction volume, rather than the standard Form W-2 issued to corporate employees.\n\nBecause no employer taxes are withheld throughout the year, contractors are responsible for paying the full self-employment tax rate of 15.3 percent to fund Social Security and Medicare. This obligation comes on top of standard federal and state income taxes on net business profit. Drivers earning regular income from food delivery typically need to calculate and submit quarterly estimated tax payments to avoid underpayment penalties from the Internal Revenue Service (IRS). To calculate your prospective tax burden based on gross gig receipts, use our [Self-Employment Tax Calculator](/self-employment-tax/) and read our specialized [Uber Eats taxes guide](/self-employment-tax/uber-eats-taxes/). You can also review tax filing requirements directly on the [Internal Revenue Service Gig Economy Tax Center](https://www.irs.gov/businesses/gig-economy-tax-center).\n\nLowering your net taxable gig income requires tracking deductible vehicle expenses accurately. The IRS allows drivers to deduct vehicle expenses using either the standard mileage rate or the actual expenses method, which tallies fuel, insurance, depreciation, and repairs. You cannot alternate between both methods for the same vehicle in the same tax year. Because mileage tracking directly offsets self-employment tax liability, maintaining a detailed mileage log from the moment you accept an order to the drop-off point is necessary for both services. For another look at competing contractor platforms, read our breakdown of [DoorDash vs Grubhub](/compare/doordash-vs-grubhub/)."
+    },
+    {
+      "heading": "Managing Order Flow and Multi-App Driving Routines",
+      "content": "Running both Grubhub and Uber Eats simultaneously is permitted under independent contractor agreements and serves as the primary method experienced couriers use to reduce unpaid idle time. While waiting in a commercial dining corridor, a driver can keep both apps active, reviewing incoming delivery requests and accepting whichever order offers the highest payout per mile. Once an acceptable offer is accepted on one platform, the courier temporarily pauses incoming requests on the competing application to complete the delivery without delay.\n\nAttempting to deliver orders from both applications at the exact same moment carries significant operational risks. While combining orders going in the exact same direction might seem efficient, unpredictable kitchen delays on one order can cause late delivery marks on the other. Both Grubhub and Uber Eats track driver location via GPS and monitor on-time arrival metrics. Sustained delivery delays, customer complaints regarding cold food, or extensive route detours can trigger automated account reviews or permanent deactivation on either network.\n\nMarket density also dictates which app commands your attention. In certain metropolitan centers, Grubhub maintains longstanding relationships with legacy independent restaurants, generating substantial order volume during lunch and dinner rushes. In suburban territories, Uber Eats frequently secures broader corporate franchise partnerships, producing more consistent order flow across mid-afternoon hours. Running both applications for a trial period allows you to observe which service dominates order frequency in your specific zip codes."
+    },
+    {
+      "heading": "Deciding Between the Two Food Delivery Networks",
+      "content": "Choosing between Grubhub and Uber Eats comes down to your personal transport habits as a diner and your vehicle setup as a driver. Diners must weigh the financial utility of their active subscriptions. If your household relies on rideshare transportation for airport commutes or urban travel, maintaining an Uber One subscription makes Uber Eats the logical starting point for food delivery. If you rarely take rideshare trips and your favorite neighborhood eateries operate exclusively on Grubhub, paying for Grubhub+ or ordering on Grubhub directly provides superior meal options.\n\nFor delivery couriers, the primary operational difference centers on vehicle flexibility and scheduling mechanics. Drivers who own qualifying passenger vehicles and enjoy mixing passenger trips with food drop-offs will find the consolidated Uber Driver application more versatile than Grubhub. Couriers who prefer to keep their back seats empty of passengers, or who drive older vehicles that fail local rideshare inspection criteria, can run Grubhub delivery routes without passenger restrictions.\n\nBoth services require disciplined financial recordkeeping if you work behind the wheel. Because neither company provides healthcare benefits, paid time off, or guaranteed hourly rates, your real hourly earnings must account for fuel consumption, vehicle depreciation, and self-employment tax obligations. Tracking every business mile driven and setting aside a percentage of every payout for quarterly taxes ensures that delivery driving generates genuine disposable income rather than an unexpected tax deficit at year end."
+    }
+  ],
+  "verdict": "Choose Uber Eats if you already pay for an Uber One membership to take rideshare trips, because the consolidated subscription waives food delivery fees while discounting your travel. Choose Grubhub if your preferred local restaurants partner exclusively with its marketplace, or if you hold corporate retail partnerships that grant complimentary Grubhub+ access. For drivers, choose Uber Eats if you want the flexibility to switch between passenger rides and food delivery on a single app, and choose Grubhub if you want straightforward food delivery without passenger requirements. This recommendation is not for individuals who expect one delivery service to be universally cheaper in every city, as localized restaurant menu markups and variable service fees vary by zip code. Our verdict would change if Uber decouples Uber Eats from Uber One membership benefits, or if Grubhub restructures its delivery contracts to guarantee minimum hourly base pay for couriers in major urban markets.",
+  "faqItems": [
+    {
+      "question": "Is Grubhub basically the same as Uber Eats?",
+      "answer": "Yes, both Grubhub and Uber Eats operate as on-demand food delivery marketplaces connecting customers, local restaurants, and independent delivery couriers. However, Uber Eats integrates directly into the broader Uber platform, enabling shared subscription perks through Uber One and allowing drivers to complete both passenger rides and food deliveries using a single account."
+    },
+    {
+      "question": "Which is cheaper, Grubhub or Uber Eats?",
+      "answer": "Neither app is consistently cheaper across all orders. Total checkout prices depend on individual restaurant menu markups, variable delivery fees based on distance, and percentage-based service fees. Diners should compare the final checkout screen for the same order on both apps, as checkout promotions and active memberships like Grubhub+ or Uber One heavily influence the final cost."
+    },
+    {
+      "question": "Is Uber One worth it if I already use Uber for rides?",
+      "answer": "Yes, Uber One is frequently worth the cost for frequent rideshare users because the membership provides discounts on Uber rides while also waiving delivery fees on eligible Uber Eats food orders. Combining transportation savings and meal delivery discounts under one subscription delivers greater utility than maintaining food-only subscriptions like Grubhub+."
+    },
+    {
+      "question": "Do Grubhub and Uber Eats drivers pay the same taxes?",
+      "answer": "Yes, couriers on both platforms are classified as 1099 independent contractors subject to identical tax regulations. Neither company withholds income or payroll taxes, meaning drivers on both apps owe federal income tax, state income tax, and the 15.3 percent self-employment tax on their net business earnings."
+    },
+    {
+      "question": "Can I drive for both Grubhub and Uber Eats at the same time?",
+      "answer": "Yes, independent contractors are legally permitted to hold active driver accounts on both Grubhub and Uber Eats simultaneously. Many couriers log into both apps to reduce waiting time between deliveries, though accepting active orders on both services at the exact same moment risks delivery delays and potential account deactivation."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}
