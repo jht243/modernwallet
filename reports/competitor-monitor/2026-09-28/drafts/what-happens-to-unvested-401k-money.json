@@ -1,0 +1,82 @@
+{
+  "slug": "what-happens-to-unvested-401k-money",
+  "title": "What Happens to Unvested 401(k) Money When You Leave a Job?",
+  "metaDescription": "Unvested 401(k) money goes back to your employer's plan when you leave. Learn how vesting schedules work, what you keep, and how to protect your match.",
+  "h1": "What Happens to Unvested 401(k) Money When You Leave a Job?",
+  "cardBlurb": "When you leave an employer, you forfeit any unvested 401(k) matching dollars while keeping all of your own contributions.",
+  "introText": "Unvested 401(k) money returns to your employer's retirement plan when you leave your job, meaning you forfeit those dollars permanently. You never lose your own salary deferrals, which remain 100% yours from the day you contribute them. At The Modern Wallet, we see workers walk away from thousands of dollars in matching funds simply because they resigned weeks before reaching a vesting threshold.\n\nEmployer matching dollars follow specific schedules that determine when ownership transfers to you. Whether your plan uses a cliff schedule, a graded timeline, or immediate vesting dictates exactly what portion of your balance moves with you. Understanding your plan rules before giving notice protects your compensation and prevents costly timing errors.",
+  "sections": [
+    {
+      "heading": "Vesting Basics and the Ownership of 401(k) Contributions",
+      "body": "Vesting refers to your legal ownership of the money inside your employer-sponsored retirement account. While your retirement account statement shows a single total balance, that balance divides into two distinct categories: employee contributions and employer contributions. The portion representing your personal salary deferrals belongs to you immediately and unconditionally.\n\nEmployer contributions function under different rules governed by the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/retirement-topics-vesting). When your employer deposits matching contributions or profit-sharing dollars into your account, those funds come with ownership restrictions. The employer retains legal claim over those dollars until you satisfy the employment service requirements set out in the plan document.\n\nIf you resign or face termination before fulfilling those service conditions, any unvested 401(k) money returns to the retirement plan. The plan then uses these forfeited funds to offset future employer contributions or defray administrative plan expenses. Tracking both your total balance and your vested balance prevents surprises when evaluating job changes, and our [401(k) calculator](/calculators/401k-calculator/) helps you model how these matching dollars accumulate over your career."
+    },
+    {
+      "heading": "Cliff Versus Graded Vesting Schedules in Employer Plans",
+      "body": "Federal regulations establish specific statutory ceilings for employer matching schedules, categorizing them into cliff or graded systems. In a cliff vesting schedule, you earn zero ownership of employer contributions during your initial years of service, and then jump directly to 100% ownership at a single milestone. Under federal statutory limits, a cliff schedule cannot require more than three years of service before granting full ownership.\n\nA graded vesting schedule phases in your ownership percentage gradually over several years of service. A common statutory arrangement grants 20% ownership per year starting in the second year of service, reaching 100% vesting after six years. Employers can always choose to vest contributions faster than federal limits mandate, but they cannot legally establish a slower schedule for standard matching contributions.\n\nSafe harbor 401(k) plans provide an important exception to these multi-year timelines. Employers utilizing a safe harbor design to satisfy federal non-discrimination testing generally provide matching contributions that vest immediately. If your employer provides a safe harbor match, every dollar deposited on your behalf becomes 100% yours as soon as it enters the account."
+    },
+    {
+      "heading": "What Happens to Forfeited Funds After Resignation",
+      "body": "When you separate from service with unvested balances, the plan administrator separates your vested money from your non-vested matching contributions. The non-vested portion does not transfer to your personal bank account, nor can you transfer it to an individual retirement account. The employer reclaims the unvested 401(k) money and places it into the plan's forfeiture account according to IRS guidelines.\n\nEmployers cannot divert forfeited matching dollars back into general corporate operating funds for regular payroll or capital expenses. Federal law strictly mandates that retirement plan assets remain inside the plan for the benefit of plan participants. The company must apply these forfeiture account balances directly toward reducing future employer matching contributions or paying eligible administrative costs.\n\nCertain unique life events trigger immediate full vesting regardless of your actual years of service on the job. Under federal retirement rules, employers generally must fully vest plan participants if the company terminates the retirement plan entirely. Plans also generally must provide 100% vesting when a participant reaches the plan's defined normal retirement age, ensuring that older workers do not surrender their matching accumulation upon retirement."
+    },
+    {
+      "heading": "How to Check Your Vested Balance and Plan Documents",
+      "body": "Finding your exact vested balance requires looking beyond your headline 401(k) account statement. Your quarterly statement or online recordkeeper dashboard typically separates your funds into total balance, employee contributions, vested employer contributions, and unvested employer contributions. Only the vested total represents money you can withdraw or transfer when leaving the employer.\n\nYour primary legal guide for these calculations is the Summary Plan Description (SPD), a document your employer must supply to all covered workers. The SPD explicitly outlines how the plan defines a year of service, which typically requires working a minimum number of hours during a calendar or plan year. Reviewing this document confirms whether service credits accrue based on your anniversary hire date or a plan-year schedule.\n\nReviewing your recordkeeper portal before making career transitions prevents costly oversights. If you plan to move savings into personal tax-advantaged accounts after leaving, comparing account options through our [401(k) vs. Roth IRA](/compare/401k-vs-roth-ira/) guide clarifies the distribution rules for each structure. Verifying your service credit count with your human resources department provides written confirmation before you submit a formal resignation notice."
+    },
+    {
+      "heading": "Timing a Job Change Around Vesting Milestones",
+      "body": "Resigning just weeks before an employment anniversary can cost you thousands of dollars in matching compensation. For example, leaving a firm with a three-year cliff schedule at two years and eleven months means forfeiting 100% of accumulated company contributions. Delaying your departure date by several weeks could secure the entire matching balance permanently.\n\nWhen evaluating a competing job offer, factor your unvested 401(k) balance directly into your total compensation negotiation. If accepting a new position requires surrendering an unvested match, ask the hiring company for a signing bonus or equity grant to offset that loss. Prospective employers frequently agree to bridge that compensation gap when presented with clear documentation from your current retirement statement.\n\nWorkers who do not need immediate salary changes should weigh the exact calendar timeline of their vesting schedule. If you plan to leave the workforce or shift to independent contract work, walking away from unvested dollars may be unavoidable. However, if staying an extra month converts thousands of employer dollars into permanent personal wealth, waiting represents a guaranteed return that alternative investments cannot duplicate."
+    },
+    {
+      "heading": "Managing Your Vested Balance and Avoiding Rollover Mistakes",
+      "body": "After separating from your employer, your unvested money disappears from the account, leaving only your fully vested funds. You have several choices for managing the remaining money: leave it in the former employer's plan if the balance exceeds the plan's mandatory distribution threshold, or transfer it to an IRA or new employer 401(k). Completing a direct rollover avoids mandatory tax withholding and early withdrawal penalties.\n\nA frequent mistake involves requesting a cash distribution rather than a direct institution-to-institution transfer. Cashing out your balance exposes you to income taxes and an early distribution penalty if you are under age 59½. Our [guide on how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/) covers the tax mechanics and penalty exceptions in greater detail.\n\nAnother common error is assuming that market gains on your match belong to you even if the underlying principal is unvested. Investment gains generated by unvested employer contributions follow the same vesting percentage as the contributions themselves, meaning unvested earnings are forfeited alongside the match. Before finalizing your separation paperwork, review your final retirement statement to verify that your vested funds remain secure and positioned for rollover."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/calculators/401k-calculator/",
+      "label": "401(k) Calculator"
+    },
+    {
+      "href": "/guides/how-to-withdraw-from-401k/",
+      "label": "401(k) Withdrawal Guide"
+    },
+    {
+      "href": "/compare/401k-vs-roth-ira/",
+      "label": "401(k) vs. Roth IRA"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can an employer take back my salary deferrals if I leave early?",
+      "answer": "No, your employer can never take back your personal salary deferrals. Federal regulations mandate that employee contributions to a 401(k) remain 100% vested from the moment they enter the plan."
+    },
+    {
+      "question": "What happens to the unvested 401(k) money when I resign?",
+      "answer": "The unvested 401(k) balance is forfeited and returns to the retirement plan. The employer uses those forfeited funds to pay plan administrative costs or offset future employer matching contributions for remaining employees."
+    },
+    {
+      "question": "What is the difference between cliff and graded vesting?",
+      "answer": "A cliff vesting schedule provides zero ownership until you satisfy a specific service period, jumping directly to 100% vesting after no more than three years. A graded schedule phases in ownership gradually over time, reaching 100% after no more than six years of service."
+    },
+    {
+      "question": "Are safe harbor 401(k) contributions subject to a vesting schedule?",
+      "answer": "Safe harbor 401(k) matching contributions are generally fully vested immediately. Employees keep all safe harbor employer contributions regardless of when they separate from service."
+    },
+    {
+      "question": "Where can I find my current vested 401(k) balance?",
+      "answer": "You can find your vested balance on your quarterly retirement account statement or by logging into your plan recordkeeper portal. The Summary Plan Description provides the precise rules your plan uses to calculate service credit."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Retirement Topics: Vesting",
+      "url": "https://www.irs.gov/retirement-plans/retirement-topics-vesting"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

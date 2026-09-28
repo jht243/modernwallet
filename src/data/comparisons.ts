@@ -30,6 +30,253 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── Competitor-monitor pass 2026-09-28 ──
+  {
+    "slug": "rule-of-55-vs-72t",
+    "title": "Rule of 55 vs 72(t): Early Retirement Withdrawals",
+    "metaDescription": "Rule of 55 vs 72(t) compared: eligibility, eligible accounts, payment flexibility, tax treatment, and how to avoid the 10% early withdrawal penalty.",
+    "targetKeyword": "rule of 55 vs 72t",
+    "optionA": "Rule of 55",
+    "optionB": "72(t) SEPP",
+    "h1": "Rule of 55 vs 72(t) for Early Retirement Withdrawals",
+    "introText": "The Rule of 55 allows penalty-free distributions only from your current employer's qualified plan if you leave your job in or after the calendar year you turn 55, while Section 72(t) allows penalty-free distributions from an IRA or employer plan at any age through substantially equal periodic payments. In this comparison of the rule of 55 vs 72t, the better path depends on your age at separation, the account holding your retirement savings, and how much flexibility you need over your withdrawal amounts. Both strategies remove the standard 10% early withdrawal penalty before age 59½, but both leave ordinary income taxes in place.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Eligible account types",
+          "a": "Qualified workplace retirement plan from your most recent employer only",
+          "b": "Traditional IRAs, Roth IRAs, and employer plans"
+        },
+        {
+          "dimension": "Minimum age requirement",
+          "a": "Age 55 (age 50 for qualified public safety employees)",
+          "b": "Any age"
+        },
+        {
+          "dimension": "Employment condition",
+          "a": "Must separate from service in or after the calendar year turning 55",
+          "b": "None required for IRAs; plan rules vary for active workplace plans"
+        },
+        {
+          "dimension": "Withdrawal schedule flexibility",
+          "a": "High; take custom amounts or ad hoc distributions if the plan allows",
+          "b": "Rigid; fixed schedule calculated using one of three IRS-approved methods"
+        },
+        {
+          "dimension": "Required payment duration",
+          "a": "No minimum duration; stop, start, or adjust withdrawals as needed",
+          "b": "At least five full years or until age 59½, whichever comes later"
+        },
+        {
+          "dimension": "Mistake penalty risk",
+          "a": "Low; disqualification only subjects unexempt distributions to the 10% tax",
+          "b": "High; modifying payments triggers retroactive 10% penalty plus interest"
+        },
+        {
+          "dimension": "Calculation methods",
+          "a": "None mandated by the IRS",
+          "b": "Required minimum distribution, fixed amortization, or fixed annuitization"
+        },
+        {
+          "dimension": "Income tax treatment",
+          "a": "Distributions are taxed as ordinary income",
+          "b": "Distributions are taxed as ordinary income"
+        }
+      ]
+    },
+    "verdict": "Choose the Rule of 55 if you leave your job during or after the calendar year you reach age 55 and your savings sit primarily in your most recent employer's 401(k) or similar qualified retirement plan. This route gives you the freedom to withdraw only what you need when you need it without committing to an immutable schedule. In contrast, Section 72(t) substantially equal periodic payments suit retirees who leave work before age 55, or whose savings sit in IRAs or older employer accounts. The tradeoff is absolute rigidity: you must sustain your payment schedule for at least five full years or until you turn 59½, whichever is later. At The Modern Wallet, we evaluate retirement cash flows by assessing both tax efficiency and liquidity risks before funds are committed to restrictive schedules. If your plan does not allow partial distributions under the Rule of 55, or if you must retire prior to age 55, our verdict flips to 72(t) as the sole viable path to waive the 10% penalty.",
+    "sections": [
+      {
+        "heading": "Rule of 55 vs 72(t) Account Eligibility and Separation Rules",
+        "content": "The Rule of 55 applies exclusively to the qualified retirement plan of the employer you just left. Under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558), you qualify for an exception to the 10% additional tax on early distributions if you separate from service during or after the calendar year you turn age 55. For qualified public safety employees, this age threshold drops to age 50. The rule does not cover individual retirement accounts, nor does it cover 401(k) plans maintained by former employers from earlier in your career. If you roll your 401(k) balance into an IRA after leaving your job, you immediately forfeit access to the Rule of 55 for those funds.\n\nSection 72(t) covers both individual retirement accounts and employer-sponsored plans regardless of your age when you begin withdrawals. Under [IRS guidance on substantially equal periodic payments](https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments), you do not need to separate from an employer at a specific age to establish a series of payments from an IRA. This distinction makes 72(t) the primary tool for individuals retiring in their thirties, forties, or early fifties before the Rule of 55 window opens. You can run your balance through an [IRA early withdrawal calculator](/retirement/ira-early-withdrawal-calculator/) to see the default 10% tax cost that both of these relief paths help you avoid.\n\nAccount consolidation decisions frequently dictate which option remains open to you. An employee who leaves a position at age 56 with a significant balance in their current 401(k) can use the Rule of 55 directly. If that same employee rolls their 401(k) into an IRA to gain broader investment choices, they lose the Rule of 55 protection and must rely on a 72(t) schedule to access the money before age 59½ without penalty. Keeping the balance in your final workplace plan preserves your access to flexible distributions."
+      },
+      {
+        "heading": "Payment Flexibility and IRS Calculation Methods in Rule of 55 vs 72(t)",
+        "content": "The Rule of 55 offers far greater withdrawal flexibility because the IRS imposes no mandatory payment schedule or calculation formula. You may take a single lump sum, withdraw variable amounts throughout the year, or pull out funds only when unexpected expenses arrive, provided your former employer's plan allows partial distributions. Some employer plans do not permit ad hoc distributions and instead require full lump-sum withdrawals or structured installments. You must review your plan document to confirm whether partial distributions are allowed before relying on this method, as detailed in our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/).\n\nSection 72(t) requires you to establish a series of substantially equal periodic payments calculated using one of three IRS-approved methods. The first method is the required minimum distribution method, which divides your account balance each year by a life expectancy factor, causing the annual payment to change as your balance and life expectancy shift. The second method is the fixed amortization method, which calculates a uniform annual payment over your life expectancy using an IRS-accepted interest rate. The third method is the fixed annuitization method, which divides your balance by an annuity factor derived from an IRS mortality table and interest rate.\n\nChoosing a fixed method locks your annual withdrawal amount into a rigid figure that cannot be altered to match market swings or personal emergencies. If you calculate an annual distribution of $35,000 under the fixed amortization method, you must withdraw exactly $35,000 each calendar year regardless of whether your living costs decline or your portfolio suffers a severe market drop. This lack of cash-flow flexibility represents the main drawback of the 72(t) structure compared to the Rule of 55."
+      },
+      {
+        "heading": "Duration Requirements and Penalties for Distribution Errors",
+        "content": "A Section 72(t) payment schedule requires an uncompromising time commitment. You must continue taking your scheduled payments for at least five full years or until you reach age 59½, whichever period ends later. For example, if you start a 72(t) schedule at age 52, you must maintain the payments until age 59½, spanning seven and a half years. If you begin a schedule at age 57, you cannot terminate it when you reach age 59½; you must fulfill the five-year minimum, continuing the distributions until age 62.\n\nThe penalty for altering a 72(t) payment schedule is severe and retroactive. If you modify your annual distribution by taking even one dollar more or less than the calculated amount, the IRS revokes the penalty exception across the entire payment series. You become liable for the 10% early withdrawal tax on every dollar received prior to age 59½, plus accrued interest charges calculated from the year of each withdrawal. This retroactive tax can wipe out years of savings if you make a calculation error or intentionally change your withdrawal amount during a portfolio downturn.\n\nThe Rule of 55 carries no retroactive penalty structure. Because the exemption is granted based on your separation event rather than an ongoing distribution contract, taking an extra withdrawal or skipping a withdrawal does not trigger historical taxes. If an ad hoc withdrawal fails plan guidelines, the penalty applies only to the non-qualifying distribution itself rather than past withdrawals. To estimate baseline penalties on non-exempt distributions, review our [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/)."
+      },
+      {
+        "heading": "Tax Treatment and Portfolio Depletion Risks in Early Retirement",
+        "content": "Both the Rule of 55 and Section 72(t) waive only the 10% early distribution penalty; neither strategy reduces your ordinary income tax liability. Every dollar taken from a pre-tax 401(k) or traditional IRA is added to your gross income for the tax year in which you receive it. Taking large distributions under either method can push your income into higher federal tax brackets and increase your state income tax liability. If you also hold Roth assets, comparing distribution sequences between pre-tax and after-tax funds is necessary, similar to the decisions outlined in our [401(k) vs Roth IRA comparison](/compare/401k-vs-roth-ira/).\n\nEarly withdrawals also introduce severe sequence-of-returns risk that can permanently deplete your retirement nest egg. Liquidating assets during market declines locks in portfolio losses and leaves fewer shares to recover during subsequent market rebounds. Under a fixed 72(t) schedule, this risk accelerates because you cannot reduce your withdrawal dollar amount to give your investments room to heal. If your portfolio drops 25% during a recession, you must still sell the exact same predetermined dollar amount, liquidating an increasingly large share of your remaining holdings.\n\nThe Rule of 55 mitigates this depletion risk because you retain discretion over your withdrawal rate. If market values decline, a retiree using the Rule of 55 can choose to cut back living expenses, pause discretionary withdrawals, or lean on separate cash reserves to preserve portfolio capital. That flexibility helps protect your principal during the vulnerable early years of retirement."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I use the Rule of 55 on an IRA account?",
+        "answer": "No, the Rule of 55 applies only to qualified employer-sponsored retirement plans like a 401(k) from the employer you left in or after the year you turned 55. Individual retirement accounts do not qualify for this exception, so withdrawing from an IRA before age 59½ requires Section 72(t) or another statutory exception to avoid the 10% penalty."
+      },
+      {
+        "question": "What happens if I change my 72(t) payment amount before age 59½?",
+        "answer": "Modifying your distribution amount or stopping payments before the required timeframe triggers a retroactive 10% penalty on all distributions taken prior to age 59½. The IRS also assesses interest charges dating back to the tax year of each individual distribution, which makes altering a 72(t) schedule exceptionally costly."
+      },
+      {
+        "question": "Do I have to wait until my 55th birthday to use the Rule of 55?",
+        "answer": "No, you do not need to wait for your exact birthday. Under IRS Topic 558, the separation from service must occur in or after the calendar year in which you reach age 55, meaning you qualify even if your separation occurs earlier in that same calendar year."
+      },
+      {
+        "question": "Are distributions under the Rule of 55 and 72(t) taxable?",
+        "answer": "Yes, both strategies waive only the 10% early withdrawal penalty. Any money withdrawn from a traditional pre-tax retirement account remains subject to federal and state ordinary income taxes in the year the distribution is received."
+      },
+      {
+        "question": "Can I use the Rule of 55 if I retire at age 52?",
+        "answer": "You cannot use the Rule of 55 at age 52 unless you qualify as a public safety employee, who can access the exception starting in the calendar year turning age 50. For standard private-sector employees leaving service at 52, a Section 72(t) payment plan is the primary penalty-free option available."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Topic No. 558: Additional Tax on Early Distributions from Retirement Plans",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      },
+      {
+        "label": "IRS Substantially Equal Periodic Payments FAQs",
+        "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments"
+      }
+    ],
+    "relatedComparisons": [
+      "401k-vs-roth-ira",
+      "brokerage-vs-ira",
+      "traditional-ira-vs-roth-ira"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "401(k) Early Withdrawal Calculator",
+        "href": "/retirement/401k-early-withdrawal-calculator/"
+      },
+      {
+        "label": "IRA Early Withdrawal Calculator",
+        "href": "/retirement/ira-early-withdrawal-calculator/"
+      }
+    ],
+    "updated": "2026-09-28"
+  },
+  {
+    "slug": "annuity-vs-roth-ira",
+    "title": "Annuity vs Roth IRA: How to Choose for Retirement",
+    "metaDescription": "Compare an annuity vs Roth IRA on tax rules, contribution caps, income guarantees, and withdrawal flexibility to see which belongs in your retirement plan.",
+    "targetKeyword": "annuity vs roth ira",
+    "optionA": "Annuity",
+    "optionB": "Roth IRA",
+    "h1": "Annuity vs Roth IRA: How to Choose for Retirement",
+    "introText": "A Roth Individual Retirement Account (Roth IRA) is usually the better foundation for retirement savers who qualify, while a non-qualified annuity serves as a specialized tool for uncapped savings or guaranteed lifetime payments. At The Modern Wallet, we evaluate how each structure preserves capital and distributes income over decades. In an annuity vs Roth IRA comparison, the Roth IRA offers completely tax-free growth and tax-free qualified withdrawals with no required distributions during your lifetime. A non-qualified annuity lets you invest without annual deposit caps, but your investment earnings face ordinary income tax rates upon withdrawal.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "2026 contribution limit",
+          "a": "No annual IRS contribution limit",
+          "b": "$7,500 ($8,600 if age 50 or older)"
+        },
+        {
+          "dimension": "Income eligibility limits",
+          "a": "None",
+          "b": "Phases out between $153,000 and $168,000 for single filers; $242,000 to $252,000 for married couples filing jointly"
+        },
+        {
+          "dimension": "Tax treatment of withdrawals",
+          "a": "Earnings are taxed as ordinary income; principal returns tax-free",
+          "b": "Completely tax-free for qualified distributions"
+        },
+        {
+          "dimension": "Guaranteed lifetime income",
+          "a": "Available through contract annuitization or riders",
+          "b": "No guaranteed income stream; returns depend on asset performance"
+        },
+        {
+          "dimension": "Required minimum distributions (RMDs)",
+          "a": "None for non-qualified contracts until annuitized under contract terms",
+          "b": "None for the original account owner"
+        },
+        {
+          "dimension": "Early withdrawal penalty",
+          "a": "10% federal penalty tax on earnings before age 59½, plus insurer surrender charges",
+          "b": "10% federal penalty tax on non-qualified earnings before age 59½; original contributions can be pulled anytime without tax or penalty"
+        },
+        {
+          "dimension": "Withdrawal order before annuitizing",
+          "a": "Last-in, first-out (earnings come out before original principal)",
+          "b": "First-in, first-out for contributions (principal comes out before earnings)"
+        },
+        {
+          "dimension": "Earned income requirement",
+          "a": "No earned income needed to purchase",
+          "b": "Must have taxable earned income equal to or exceeding your contribution"
+        }
+      ]
+    },
+    "verdict": "Choose a Roth IRA first if your modified adjusted gross income falls within the federal limits and you have taxable earned income to contribute. The combination of tax-free growth and completely tax-free qualified withdrawals makes the Roth IRA hard to beat for long-term wealth accumulation. A non-qualified annuity becomes attractive if you have already maxed out all available tax-advantaged accounts and still want to defer taxes on additional investments, or if you need an insurer to guarantee a steady stream of income that you cannot outlive. However, the higher administrative costs, surrender penalties, and ordinary income taxation on annuity earnings mean that an annuity is not for investors who require full portfolio liquidity or who remain in high tax brackets during retirement. What would change our answer is an investor who has already exceeded the Roth IRA income phase-out thresholds, holds no remaining workplace retirement plan space, and prioritizes guaranteed monthly cash flow over investment control and tax-free legacy transfers.",
+    "sections": [
+      {
+        "heading": "Annuity vs Roth IRA Tax Treatment and Growth Mechanics",
+        "content": "A Roth IRA provides complete tax exemption on investment growth when you follow distribution guidelines, whereas an annuity provides tax deferral followed by ordinary income taxation. With a Roth IRA, you contribute dollars that have already been taxed. According to the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/roth-iras), qualified distributions from a Roth IRA are entirely tax-free. To qualify, a distribution must occur after a five-year aging period that begins on January 1 of the tax year for which you made your first contribution, and the distribution must take place after you reach age 59½, suffer a permanent disability, pass away, or purchase a first home under the $10,000 lifetime allowance.\n\nA non-qualified annuity operates under different tax rules. Because you purchase a non-qualified annuity with after-tax money, you do not pay taxes on your original principal when it returns to you. However, all growth inside the contract compounds on a tax-deferred basis, and the [IRS rules on pensions and annuities](https://www.irs.gov/taxtopics/tc410) specify that earnings are taxed as ordinary income upon withdrawal. If you take withdrawals before annuitizing the contract into a scheduled payment stream, the IRS treats the distribution on a last-in, first-out basis. This means your taxable earnings come out before your tax-free principal, increasing your tax liability during the early withdrawal years.\n\nCapital gains taxes never apply to either account type. In a Roth IRA, this mechanism is an enormous advantage because investment growth escapes capital gains taxes and ordinary income taxes entirely. In a non-qualified annuity, the tax treatment can be a distinct disadvantage compared to a standard taxable brokerage account, because your long-term growth is converted from potentially lower capital gains rates into higher ordinary income tax rates at distribution."
+      },
+      {
+        "heading": "Contribution Limits and Income Rules in the Annuity vs Roth IRA Decision",
+        "content": "The IRS tightly restricts who can fund a Roth IRA, whereas non-qualified annuities impose no statutory limits on contributions or investor income levels. For the 2026 tax year, the annual Roth IRA contribution limit is $7,500, with an additional $1,100 catch-up contribution permitted for savers aged 50 or older, raising their total cap to $8,600. Furthermore, you cannot contribute more than your actual taxable earned income for the year. If you earn $5,000 from working, your maximum contribution to a Roth IRA is capped at $5,000 regardless of your age.\n\nRoth IRA eligibility also depends directly on your modified adjusted gross income. In 2026, the allowable contribution begins to phase out for single tax filers with incomes between $153,000 and $168,000. For married couples filing jointly, the phase-out range spans from $242,000 to $252,000. Once your income crosses the top threshold of these ranges, you cannot make direct contributions to a Roth IRA at all. You can explore how these limitations compare across account structures in our [Roth IRA vs Traditional IRA analysis](/compare/roth-ira-vs-traditional-ira/).\n\nNon-qualified annuities do not carry IRS contribution caps or earned income tests. You can invest $10,000 or $500,000 into a non-qualified annuity in a single transaction, using funds from an inheritance, the sale of a business, or accumulated cash reserves. You do not need a job or active wages to buy an annuity contract. This makes an annuity a flexible destination for high-income earners who have been phased out of Roth IRAs and have exhausted all other tax-sheltered options."
+      },
+      {
+        "heading": "Income Guarantees, Fees, and Liquidity Constraints",
+        "content": "An annuity can convert accumulated assets into a contractual stream of lifetime income, which is a feature that a Roth IRA cannot natively provide. When you buy an annuity, you enter into a legal contract with an insurance company. You can choose to annuitize the contract, exchanging your lump-sum value for guaranteed periodic payments for the rest of your life or for a specified term of years. If you want to understand how this differs from traditional defined-benefit payouts, review our guide on [pensions vs annuities](/compare/pension-vs-annuity/). A Roth IRA holds market investments such as mutual funds, exchange-traded funds, and individual securities, meaning your future income depends entirely on portfolio returns and personal withdrawal management.\n\nGuarantees come at the expense of liquidity and fee efficiency. Annuities are insurance products that can carry significant ongoing costs, including administrative charges, mortality and expense risk fees, and investment management fees. Contracts frequently enforce surrender charges, which are penalties imposed by the insurer if you withdraw more than a permitted percentage of your money during the first several years of ownership. Conversely, a Roth IRA held at a discount brokerage typically incurs zero account maintenance fees, leaving you to pay only the internal expense ratios of your selected funds.\n\nLiquidity rules also diverge sharply. Because a Roth IRA tracks your contributions separately from investment growth, you can withdraw your original contributions at any time and at any age with zero taxes and zero penalties. In contrast, withdrawing earnings from an annuity before age 59½ generally triggers a 10% additional federal tax under the [IRS additional tax rules](https://www.irs.gov/taxtopics/tc558), on top of regular income taxes and any insurer surrender fees."
+      },
+      {
+        "heading": "Required Minimum Distributions and Estate Planning Mechanics",
+        "content": "Original Roth IRA owners face no Required Minimum Distributions (RMDs) during their lifetimes, providing maximum control over portfolio preservation and legacy goals. You can leave money inside your Roth IRA to compound tax-free indefinitely, regardless of whether you live to age 75, 85, or beyond. You are never forced to liquidate assets or take income that you do not need, which makes the Roth IRA an exceptional tool for generational wealth transfer.\n\nNon-qualified annuities also avoid statutory IRS required minimum distributions during the owner's lifetime before annuitization occurs, but their estate dynamics are markedly different. When your heirs inherit a Roth IRA, their qualified withdrawals remain 100% tax-free, although non-spouse beneficiaries must empty the inherited account within specific statutory windows. When beneficiaries inherit a non-qualified annuity, all accrued growth is taxable to them as ordinary income, without the step-up in basis that traditional taxable investments receive. This tax drag can create a substantial income tax burden for your heirs if the annuity has experienced decades of untaxed compounding."
+      },
+      {
+        "heading": "Can You Own Both an Annuity and a Roth IRA?",
+        "content": "Holding both an annuity and a Roth IRA within a single retirement framework is entirely permissible, and many households use both tools to satisfy distinct objectives. You can own a Roth IRA to build liquid, tax-free growth assets during your working years, while purchasing a non-qualified annuity near retirement to establish an income floor that supplements Social Security benefits. To project your growth trajectory across multiple decades, test your savings targets on our [Roth IRA calculator](/investing/roth-ira-calculator/).\n\nSome insurance providers also offer annuities structured as individual retirement accounts, known as Roth IRA annuities. In this structure, the annuity sits inside the Roth tax wrapper. However, wrapping an annuity inside a Roth IRA rarely makes economic sense for younger investors. The Roth IRA wrapper already grants complete tax deferral and tax-free withdrawals, meaning you do not need an insurance contract just to gain tax sheltering. Placing an annuity inside a Roth IRA layers insurance fees and potential surrender penalties over an account type that already provides superior tax benefits on low-cost index investments. If you are comparing fixed-income insurance products against simpler banking options, compare our breakdown on [annuities vs CDs](/compare/annuity-vs-cd/) to review baseline return dynamics."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I lose money in an annuity versus a Roth IRA?",
+        "answer": "Yes, you can lose money in both, depending on the investments selected. In a Roth IRA, your balance fluctuates with the market value of your stocks, bonds, and funds. In an annuity, fixed contracts protect your principal through insurance company guarantees, while variable contracts invest in market sub-accounts that can lose value if financial markets decline."
+      },
+      {
+        "question": "Are withdrawals from an annuity tax-free like a Roth IRA?",
+        "answer": "No. Qualified withdrawals from a Roth IRA are completely tax-free for both your original contributions and your investment earnings. With a non-qualified annuity, only the return of your original after-tax principal is tax-free; all accumulated earnings are taxed as ordinary income whenever you withdraw them."
+      },
+      {
+        "question": "What is the 2026 contribution limit for a Roth IRA versus an annuity?",
+        "answer": "For 2026, the Roth IRA contribution limit is $7,500, or $8,600 if you are age 50 or older, subject to earned income and phase-out thresholds. A non-qualified annuity has no IRS annual contribution ceiling, allowing you to invest any dollar amount the issuing insurance company is willing to accept."
+      },
+      {
+        "question": "How do early withdrawal penalties differ between an annuity and a Roth IRA?",
+        "answer": "A Roth IRA allows you to withdraw your direct contributions at any time without taxes or penalties, while non-qualified earnings withdrawn before age 59½ face taxes and a 10% IRS penalty. In a non-qualified annuity, earnings are distributed first and generally incur ordinary income taxes and a 10% IRS penalty if taken before 59½, alongside potential insurer surrender charges."
+      },
+      {
+        "question": "Does an annuity or a Roth IRA have required minimum distributions?",
+        "answer": "Neither account forces the original owner to take Required Minimum Distributions (RMDs) during their lifetime. A Roth IRA owner never faces lifetime RMDs, and a non-qualified annuity does not mandate distributions before the contract annuitizes or reaches its contractual maturity date."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Internal Revenue Service, Roth IRAs",
+        "url": "https://www.irs.gov/retirement-plans/roth-iras"
+      },
+      {
+        "label": "Internal Revenue Service, Topic No. 410, Pensions and Annuities",
+        "url": "https://www.irs.gov/taxtopics/tc410"
+      },
+      {
+        "label": "Internal Revenue Service, Topic No. 558, Additional Tax on Early Distributions from Retirement Plans",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      }
+    ],
+    "relatedComparisons": [
+      "roth-ira-vs-traditional-ira",
+      "pension-vs-annuity",
+      "annuity-vs-cd"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Roth IRA Calculator",
+        "href": "/investing/roth-ira-calculator/"
+      }
+    ],
+    "updated": "2026-09-28"
+  },
   // ── comparison-content-auto pass 2026-09-28 ──
   {
     updated: "2026-09-28",

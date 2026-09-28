@@ -28,6 +28,181 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── Competitor-monitor pass 2026-09-28 ──
+  {
+    "slug": "can-you-take-a-loan-from-an-ira",
+    "title": "Can You Take a Loan From an IRA? Rules and Risks",
+    "metaDescription": "Learn why you cannot take a loan from an IRA, how the 60-day rollover rule works, tax penalties, and alternatives like 401(k) loans and HELOCs.",
+    "h1": "Can You Take a Loan From an IRA?",
+    "cardBlurb": "Federal rules prohibit taking a loan from an IRA, but short-term rollovers and 401(k) loans offer potential liquidity.",
+    "introText": "You cannot take a loan from an IRA. Federal tax law strictly prohibits an individual retirement account (IRA) from lending money to its owner or serving as loan collateral. At The Modern Wallet, we evaluate retirement rules to help savers avoid expensive tax traps when short-term cash needs arise.\n\nWhile a formal loan from an IRA does not exist, account holders sometimes use a 60-day rollover as a temporary funding bridge. Workplace retirement plans like a 401(k) also permit direct borrowing under specific terms. Understanding the boundaries between permitted rollovers and prohibited transactions protects your balance from unexpected taxes and early distribution penalties.",
+    "sections": [
+      {
+        "heading": "The Legal Ban on Taking a Loan From an IRA",
+        "body": "An individual retirement account cannot make loans to its owner under any circumstances. Internal Revenue Service regulations detailed in [IRS Publication 590-B](https://www.irs.gov/publications/p590b) prohibit direct lending between an IRA and the account holder. The statute treats any agreement where the account owner borrows cash from the balance as an immediate disqualification of the account.\n\nPledging an IRA balance as collateral for a bank loan triggers the exact same prohibition. If an owner assigns any portion of an individual retirement account as security for a line of credit or mortgage, the government views that action as a distribution. The tax code established IRAs exclusively for retirement accumulation, intentionally removing the loan features commonly found in workplace savings plans.\n\nThis restriction applies across traditional IRAs, Roth IRAs, SEP IRAs, and SIMPLE IRAs. When an investor asks to borrow against an IRA, brokerage firms and custodians must deny the request. Attempting to draft an informal promissory note or withdraw funds with a personal promise to repay does not satisfy tax requirements. The balance either stays inside the tax shelter or leaves as a distribution."
+      },
+      {
+        "heading": "The 60-Day Rollover Rule as a Temporary Cash Bridge",
+        "body": "A 60-day rollover serves as the only legal mechanism to access IRA capital temporarily without immediate taxes. Under the [IRS rollover regulations](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions), an account owner may withdraw money from an IRA and redeposit the full amount back into the same or another qualified account within 60 calendar days. If completed correctly, the transaction avoids regular income tax and early withdrawal penalties.\n\nThe 60-day window operates strictly by calendar days rather than business days. Day one begins the day after receiving the distribution, and the funds must clear into the receiving account before the deadline expires. If an investor uses our [IRA early withdrawal calculator](/retirement/ira-early-withdrawal-calculator/) to measure the damage of an outright distribution, they quickly see why returning the full amount within the window remains vital.\n\nFederal regulations enforce a rigid one-rollover-per-year limitation. You can complete only one IRA-to-IRA rollover in any 12-month period across all IRAs you own, including traditional, Roth, SEP, and SIMPLE accounts. Direct trustee-to-trustee transfers do not count toward this cap, but personal distribution checks fall directly under the rule. Missing the 60-day redeposit deadline by a single day renders the entire withdrawal fully taxable."
+      },
+      {
+        "heading": "Prohibited Transaction Penalties and Total Account Disqualification",
+        "body": "Borrowing against an IRA constitutes a prohibited transaction that causes the entire account to lose its tax-exempt status. If an owner borrows money from the account or pledges assets as loan collateral, the account stops being an IRA as of the first day of that tax year. This total disqualification represents one of the harshest penalties in the tax code.\n\nThe entire fair market value of the disqualified account gets treated as distributed on January 1 of the year the violation occurred. The account holder must report the full market balance as ordinary income for that tax year. If the account owner is under age 59½, an additional 10% early distribution tax applies to the entire balance on top of standard federal and state income taxes.\n\nThese consequences eliminate the tax-deferred growth built up over decades. The remaining funds cannot be rolled into a new retirement account, ending future tax protection for that capital. Even an unintentional loan or minor collateral agreement produces this full account termination, leaving no option for retroactive repayment."
+      },
+      {
+        "heading": "Workplace 401(k) Plan Options Instead of a Loan From an IRA",
+        "body": "Employer-sponsored plans offer borrowing features that individual retirement accounts legally lack. If the specific employer plan permits it, [IRS retirement loan guidance](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-loans) allows active employees to borrow from a 401(k) balance. Not every company plan includes this provision, so participants must review their plan summary before initiating a request.\n\nFederal limits cap 401(k) borrowing at the lesser of $50,000 or 50% of your vested balance. A participant with $60,000 in vested assets can borrow up to $30,000, while someone with $200,000 remains capped at $50,000. Plan loans generally require repayment within five years through payroll deductions, though terms can extend longer if borrowing to purchase a primary residence.\n\nInvestors weighing distribution options often review our [guide on 401(k) withdrawals](/guides/how-to-withdraw-from-401k/) before deciding to borrow. Unlike an IRA rollover, a 401(k) loan does not trigger a 60-day repayment panic as long as the borrower remains employed and current on the amortization schedule. However, leaving the job often causes the outstanding loan balance to become due quickly."
+      },
+      {
+        "heading": "Other Financing Options and Statutory Penalty Exceptions",
+        "body": "Borrowers seeking liquidity outside employer plans must explore traditional debt vehicles rather than retirement reserves. A home equity line of credit (HELOC) or an unsecured personal loan provides cash without disrupting retirement assets. Evaluating a [401(k) loan against a HELOC](/compare/401k-loan-vs-heloc/) highlights the difference between tapping home equity and accessing workplace retirement balances.\n\nIf cash needs stem from severe hardship, certain distributions escape early withdrawal penalties without requiring a loan. The IRS lists statutory exceptions under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558). Qualifying scenarios include unreimbursed medical expenses exceeding specific income thresholds, higher education expenses, and up to $10,000 for a qualified first-time home purchase.\n\nThese statutory exceptions waive only the 10% additional tax, not the underlying income tax on traditional IRA balances. In contrast, moving funds between retirement vehicles through a direct transfer preserves tax sheltering, as outlined in our [rollover IRA and traditional IRA guide](/compare/rollover-ira-vs-traditional-ira/). Relying on debt outside retirement accounts avoids permanently depleting future compound earnings."
+      },
+      {
+        "heading": "A Worked Cost Example of a Failed Rollover",
+        "body": "Failing to redeposit a short-term rollover creates an expensive tax obligation. Consider a 45-year-old account owner who takes $30,000 from a traditional IRA to cover a business expense, intending to repay the sum on day 55. A delayed customer invoice prevents repayment, and day 60 passes without the funds returning to an IRA.\n\nThe entire $30,000 instantly becomes a taxable distribution. If the individual sits in the 24% federal income tax bracket, federal income taxes equal $7,200. Because the taxpayer is under age 59½ and does not qualify for an IRS Topic 558 exception, the 10% additional tax adds another $3,000 in liability.\n\nThe owner now owes $10,200 in combined federal taxes and penalties on money they intended to borrow cost-free. State income taxes often push the total tax bill even higher. Missing the strict 60-day calendar deadline turns an informal short-term cash solution into an immediate, irreversible financial penalty."
+      },
+      {
+        "heading": "Next Steps to Avoid an Unintended Loan From an IRA",
+        "body": "Avoiding costly tax liabilities requires choosing financing structures designed for debt rather than retirement savings. The 60-day rollover approach is not suitable for borrowers who lack guaranteed cash flow to execute a complete redeposit within two months. A temporary bridge loan or workplace 401(k) loan provides a far safer legal framework.\n\nOur stance would change only if Congress passed statutory legislation allowing formal loan provisions inside individual retirement accounts similar to workplace retirement plans. Until tax laws change, treating an IRA balance as a lending pool triggers catastrophic disqualification or steep distribution penalties.\n\nReview your available workplace borrowing options, verify your eligibility under IRS Topic 558, and confirm alternative financing lines before withdrawing retirement funds. If you need capital, examine your personal loan or HELOC terms today to secure funding without risking an unintended, taxable loan from an IRA."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/ira-early-withdrawal-calculator/",
+        "label": "IRA early withdrawal calculator"
+      },
+      {
+        "href": "/guides/how-to-withdraw-from-401k/",
+        "label": "401(k) withdrawal guide"
+      },
+      {
+        "href": "/compare/401k-loan-vs-heloc/",
+        "label": "401(k) loan vs. HELOC"
+      },
+      {
+        "href": "/compare/rollover-ira-vs-traditional-ira/",
+        "label": "Rollover IRA vs. traditional IRA"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I borrow money from my IRA?",
+        "answer": "No, you cannot borrow money from an IRA. Federal tax law strictly prohibits loans from individual retirement accounts, and attempting to borrow or pledge the account as collateral results in full account disqualification and taxation."
+      },
+      {
+        "question": "How does the 60-day rollover work as a short-term loan?",
+        "answer": "You can withdraw funds from an IRA and redeposit the full amount into an IRA within 60 calendar days without paying income tax or penalties. You may only complete one such rollover in any 12-month period across all your IRAs."
+      },
+      {
+        "question": "What happens if I miss the 60-day rollover deadline?",
+        "answer": "Missing the 60-day deadline makes the entire distributed amount subject to ordinary income tax. If you are under age 59½, an additional 10% early withdrawal tax applies unless you qualify for a specific statutory exception."
+      },
+      {
+        "question": "Can I take a loan from my workplace 401(k)?",
+        "answer": "Yes, if your employer plan allows it. Plan loans are generally capped at the lesser of $50,000 or 50% of your vested balance, with standard repayment terms of up to five years."
+      },
+      {
+        "question": "What are the penalties for an IRA prohibited transaction?",
+        "answer": "Engaging in a prohibited transaction causes the entire IRA to lose its tax-exempt status as of January 1 of that tax year. The full market value is treated as distributed, generating income tax and a 10% early withdrawal penalty for owners under age 59½."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Publication 590-B, Distributions from Individual Retirement Arrangements",
+        "url": "https://www.irs.gov/publications/p590b"
+      },
+      {
+        "label": "IRS, Rollovers of Retirement Plan and IRA Distributions",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions"
+      },
+      {
+        "label": "IRS, Retirement Topics: Loans",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-loans"
+      },
+      {
+        "label": "IRS, Topic No. 558, Additional Tax on Early Distributions",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      }
+    ],
+    "updated": "2026-09-28"
+  },
+  {
+    "slug": "what-happens-to-unvested-401k-money",
+    "title": "What Happens to Unvested 401(k) Money When You Leave a Job?",
+    "metaDescription": "Unvested 401(k) money goes back to your employer's plan when you leave. Learn how vesting schedules work, what you keep, and how to protect your match.",
+    "h1": "What Happens to Unvested 401(k) Money When You Leave a Job?",
+    "cardBlurb": "When you leave an employer, you forfeit any unvested 401(k) matching dollars while keeping all of your own contributions.",
+    "introText": "Unvested 401(k) money returns to your employer's retirement plan when you leave your job, meaning you forfeit those dollars permanently. You never lose your own salary deferrals, which remain 100% yours from the day you contribute them. At The Modern Wallet, we see workers walk away from thousands of dollars in matching funds simply because they resigned weeks before reaching a vesting threshold.\n\nEmployer matching dollars follow specific schedules that determine when ownership transfers to you. Whether your plan uses a cliff schedule, a graded timeline, or immediate vesting dictates exactly what portion of your balance moves with you. Understanding your plan rules before giving notice protects your compensation and prevents costly timing errors.",
+    "sections": [
+      {
+        "heading": "Vesting Basics and the Ownership of 401(k) Contributions",
+        "body": "Vesting refers to your legal ownership of the money inside your employer-sponsored retirement account. While your retirement account statement shows a single total balance, that balance divides into two distinct categories: employee contributions and employer contributions. The portion representing your personal salary deferrals belongs to you immediately and unconditionally.\n\nEmployer contributions function under different rules governed by the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/retirement-topics-vesting). When your employer deposits matching contributions or profit-sharing dollars into your account, those funds come with ownership restrictions. The employer retains legal claim over those dollars until you satisfy the employment service requirements set out in the plan document.\n\nIf you resign or face termination before fulfilling those service conditions, any unvested 401(k) money returns to the retirement plan. The plan then uses these forfeited funds to offset future employer contributions or defray administrative plan expenses. Tracking both your total balance and your vested balance prevents surprises when evaluating job changes, and our [401(k) calculator](/retirement/401k-calculator/) helps you model how these matching dollars accumulate over your career."
+      },
+      {
+        "heading": "Cliff Versus Graded Vesting Schedules in Employer Plans",
+        "body": "Federal regulations establish specific statutory ceilings for employer matching schedules, categorizing them into cliff or graded systems. In a cliff vesting schedule, you earn zero ownership of employer contributions during your initial years of service, and then jump directly to 100% ownership at a single milestone. Under federal statutory limits, a cliff schedule cannot require more than three years of service before granting full ownership.\n\nA graded vesting schedule phases in your ownership percentage gradually over several years of service. A common statutory arrangement grants 20% ownership per year starting in the second year of service, reaching 100% vesting after six years. Employers can always choose to vest contributions faster than federal limits mandate, but they cannot legally establish a slower schedule for standard matching contributions.\n\nSafe harbor 401(k) plans provide an important exception to these multi-year timelines. Employers utilizing a safe harbor design to satisfy federal non-discrimination testing generally provide matching contributions that vest immediately. If your employer provides a safe harbor match, every dollar deposited on your behalf becomes 100% yours as soon as it enters the account."
+      },
+      {
+        "heading": "What Happens to Forfeited Funds After Resignation",
+        "body": "When you separate from service with unvested balances, the plan administrator separates your vested money from your non-vested matching contributions. The non-vested portion does not transfer to your personal bank account, nor can you transfer it to an individual retirement account. The employer reclaims the unvested 401(k) money and places it into the plan's forfeiture account according to IRS guidelines.\n\nEmployers cannot divert forfeited matching dollars back into general corporate operating funds for regular payroll or capital expenses. Federal law strictly mandates that retirement plan assets remain inside the plan for the benefit of plan participants. The company must apply these forfeiture account balances directly toward reducing future employer matching contributions or paying eligible administrative costs.\n\nCertain unique life events trigger immediate full vesting regardless of your actual years of service on the job. Under federal retirement rules, employers generally must fully vest plan participants if the company terminates the retirement plan entirely. Plans also generally must provide 100% vesting when a participant reaches the plan's defined normal retirement age, ensuring that older workers do not surrender their matching accumulation upon retirement."
+      },
+      {
+        "heading": "How to Check Your Vested Balance and Plan Documents",
+        "body": "Finding your exact vested balance requires looking beyond your headline 401(k) account statement. Your quarterly statement or online recordkeeper dashboard typically separates your funds into total balance, employee contributions, vested employer contributions, and unvested employer contributions. Only the vested total represents money you can withdraw or transfer when leaving the employer.\n\nYour primary legal guide for these calculations is the Summary Plan Description (SPD), a document your employer must supply to all covered workers. The SPD explicitly outlines how the plan defines a year of service, which typically requires working a minimum number of hours during a calendar or plan year. Reviewing this document confirms whether service credits accrue based on your anniversary hire date or a plan-year schedule.\n\nReviewing your recordkeeper portal before making career transitions prevents costly oversights. If you plan to move savings into personal tax-advantaged accounts after leaving, comparing account options through our [401(k) vs. Roth IRA](/compare/401k-vs-roth-ira/) guide clarifies the distribution rules for each structure. Verifying your service credit count with your human resources department provides written confirmation before you submit a formal resignation notice."
+      },
+      {
+        "heading": "Timing a Job Change Around Vesting Milestones",
+        "body": "Resigning just weeks before an employment anniversary can cost you thousands of dollars in matching compensation. For example, leaving a firm with a three-year cliff schedule at two years and eleven months means forfeiting 100% of accumulated company contributions. Delaying your departure date by several weeks could secure the entire matching balance permanently.\n\nWhen evaluating a competing job offer, factor your unvested 401(k) balance directly into your total compensation negotiation. If accepting a new position requires surrendering an unvested match, ask the hiring company for a signing bonus or equity grant to offset that loss. Prospective employers frequently agree to bridge that compensation gap when presented with clear documentation from your current retirement statement.\n\nWorkers who do not need immediate salary changes should weigh the exact calendar timeline of their vesting schedule. If you plan to leave the workforce or shift to independent contract work, walking away from unvested dollars may be unavoidable. However, if staying an extra month converts thousands of employer dollars into permanent personal wealth, waiting represents a guaranteed return that alternative investments cannot duplicate."
+      },
+      {
+        "heading": "Managing Your Vested Balance and Avoiding Rollover Mistakes",
+        "body": "After separating from your employer, your unvested money disappears from the account, leaving only your fully vested funds. You have several choices for managing the remaining money: leave it in the former employer's plan if the balance exceeds the plan's mandatory distribution threshold, or transfer it to an IRA or new employer 401(k). Completing a direct rollover avoids mandatory tax withholding and early withdrawal penalties.\n\nA frequent mistake involves requesting a cash distribution rather than a direct institution-to-institution transfer. Cashing out your balance exposes you to income taxes and an early distribution penalty if you are under age 59½. Our [guide on how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/) covers the tax mechanics and penalty exceptions in greater detail.\n\nAnother common error is assuming that market gains on your match belong to you even if the underlying principal is unvested. Investment gains generated by unvested employer contributions follow the same vesting percentage as the contributions themselves, meaning unvested earnings are forfeited alongside the match. Before finalizing your separation paperwork, review your final retirement statement to verify that your vested funds remain secure and positioned for rollover."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/401k-calculator/",
+        "label": "401(k) Calculator"
+      },
+      {
+        "href": "/guides/how-to-withdraw-from-401k/",
+        "label": "401(k) Withdrawal Guide"
+      },
+      {
+        "href": "/compare/401k-vs-roth-ira/",
+        "label": "401(k) vs. Roth IRA"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can an employer take back my salary deferrals if I leave early?",
+        "answer": "No, your employer can never take back your personal salary deferrals. Federal regulations mandate that employee contributions to a 401(k) remain 100% vested from the moment they enter the plan."
+      },
+      {
+        "question": "What happens to the unvested 401(k) money when I resign?",
+        "answer": "The unvested 401(k) balance is forfeited and returns to the retirement plan. The employer uses those forfeited funds to pay plan administrative costs or offset future employer matching contributions for remaining employees."
+      },
+      {
+        "question": "What is the difference between cliff and graded vesting?",
+        "answer": "A cliff vesting schedule provides zero ownership until you satisfy a specific service period, jumping directly to 100% vesting after no more than three years. A graded schedule phases in ownership gradually over time, reaching 100% after no more than six years of service."
+      },
+      {
+        "question": "Are safe harbor 401(k) contributions subject to a vesting schedule?",
+        "answer": "Safe harbor 401(k) matching contributions are generally fully vested immediately. Employees keep all safe harbor employer contributions regardless of when they separate from service."
+      },
+      {
+        "question": "Where can I find my current vested 401(k) balance?",
+        "answer": "You can find your vested balance on your quarterly retirement account statement or by logging into your plan recordkeeper portal. The Summary Plan Description provides the precise rules your plan uses to calculate service credit."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Retirement Topics: Vesting",
+        "url": "https://www.irs.gov/retirement-plans/retirement-topics-vesting"
+      }
+    ],
+    "updated": "2026-09-28"
+  },
   // ── Cybercab / gig-economy pass 2026-09-09 ──
   {
     "slug": "can-you-buy-a-cybercab",
