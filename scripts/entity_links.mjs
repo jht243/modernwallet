@@ -22,6 +22,9 @@
 //   - anything already inside an <a> (never nests or double-links)
 //   - headings h1-h6, form controls, and site chrome (nav/header/footer)
 //   - tag interiors, so an attribute value can never be corrupted
+//   - any element carrying data-no-entity-link (and everything inside it). Put it on
+//     affiliate product cards / shop blocks so a brand mention there doesn't pull the
+//     click away from our own affiliate button.
 // A company the page already links (by href domain or anchor text) is left alone.
 import { readdirSync, statSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -91,7 +94,9 @@ const SKIP_TREE = new Set(['head', 'script', 'style', 'template', 'svg', 'code',
   'nav', 'header', 'footer']);
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const boundaried = (name) => new RegExp(`(^|[^A-Za-z0-9.])(${esc(name)})(?![A-Za-z0-9.])`);
+// Word-ish boundaries that tolerate brand names containing '.' (Education.com): a '.' after
+// the name ends it unless a letter/digit follows, so "…made by Boveda." still links.
+const boundaried = (name) => new RegExp(`(^|[^A-Za-z0-9.])(${esc(name)})(?![A-Za-z0-9]|\\.[A-Za-z0-9])`);
 const attrEsc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 
 function anchor(url, text, sponsored) {
@@ -100,11 +105,12 @@ function anchor(url, text, sponsored) {
 }
 
 function linkPage(html) {
-  // A tag starts with "<" + letter, "/" or "!". A bare "<" (CSS `@media (width<=700px)`,
-  // inline JS `i<n`) is text: splitting on it swallowed `</style>` and left the rest of
-  // the page on the skip stack, so nothing after an Astro scoped <style> was ever linked.
+  // A tag must start with a letter, '/' or '!': a bare '<' in inline CSS/JS (e.g. Astro's
+  // `@media (width<=700px)`) would otherwise swallow </style> and disable the whole page.
   const parts = html.split(/(<[a-zA-Z\/!][^>]*>)/);
   const skipStack = [];
+  // Opt-out subtrees: { tag, depth } so a nested same-name tag (div in div) can't end it early.
+  const optOut = [];
   const linked = new Set();
 
   // A company already linked anywhere on the page (by href) is done.
@@ -125,6 +131,13 @@ function linkPage(html) {
       if (m) {
         const [, closing, rawTag] = m;
         const tag = rawTag.toLowerCase();
+        const selfClose = /\/>$/.test(p);
+        const top = optOut[optOut.length - 1];
+        if (top && top.tag === tag && !selfClose) {
+          if (closing) { if (--top.depth === 0) optOut.pop(); } else top.depth++;
+        } else if (!closing && !selfClose && /\sdata-no-entity-link\b/.test(p)) {
+          optOut.push({ tag, depth: 1 });
+        }
         if (SKIP_TREE.has(tag)) {
           if (closing) {
             const at = skipStack.lastIndexOf(tag);
@@ -134,7 +147,7 @@ function linkPage(html) {
       }
       continue;
     }
-    if (skipStack.length) continue;
+    if (skipStack.length || optOut.length) continue;
     if (linked.size >= COMPANY_COUNT) break;
 
     // Claim spans against the ORIGINAL text so a shorter brand can't match inside an
