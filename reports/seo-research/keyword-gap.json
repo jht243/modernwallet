@@ -1,0 +1,6678 @@
+{
+  "source": "dataforseo",
+  "domain": "themodernwallet.com",
+  "database": "us",
+  "competitors": [
+    "calculator.net",
+    "bankrate.com",
+    "nerdwallet.com",
+    "smartasset.com",
+    "investopedia.com",
+    "mortgagecalculator.org",
+    "ramseysolutions.com",
+    "fidelity.com",
+    "themodestwallet.com"
+  ],
+  "live_competitors": [
+    {
+      "domain": "nerdwallet.com",
+      "intersections": 113,
+      "avg_position": 20.9
+    },
+    {
+      "domain": "smartasset.com",
+      "intersections": 89,
+      "avg_position": 31.1
+    },
+    {
+      "domain": "investopedia.com",
+      "intersections": 83,
+      "avg_position": 19.2
+    },
+    {
+      "domain": "fidelity.com",
+      "intersections": 62,
+      "avg_position": 8.3
+    },
+    {
+      "domain": "calculator.net",
+      "intersections": 59,
+      "avg_position": 14.1
+    },
+    {
+      "domain": "forbes.com",
+      "intersections": 59,
+      "avg_position": 26.9
+    },
+    {
+      "domain": "cnbc.com",
+      "intersections": 51,
+      "avg_position": 17.7
+    },
+    {
+      "domain": "usnews.com",
+      "intersections": 50,
+      "avg_position": 27.4
+    },
+    {
+      "domain": "schwab.com",
+      "intersections": 48,
+      "avg_position": 13.5
+    },
+    {
+      "domain": "ramseysolutions.com",
+      "intersections": 44,
+      "avg_position": 25.1
+    },
+    {
+      "domain": "vanguard.com",
+      "intersections": 42,
+      "avg_position": 11.0
+    },
+    {
+      "domain": "bankrate.com",
+      "intersections": 42,
+      "avg_position": 12.4
+    },
+    {
+      "domain": "aarp.org",
+      "intersections": 41,
+      "avg_position": 16.4
+    },
+    {
+      "domain": "businessinsider.com",
+      "intersections": 40,
+      "avg_position": 35.0
+    },
+    {
+      "domain": "fool.com",
+      "intersections": 39,
+      "avg_position": 32.9
+    },
+    {
+      "domain": "justanswer.com",
+      "intersections": 39,
+      "avg_position": 36.4
+    },
+    {
+      "domain": "kiplinger.com",
+      "intersections": 35,
+      "avg_position": 35.2
+    },
+    {
+      "domain": "morningstar.com",
+      "intersections": 34,
+      "avg_position": 27.8
+    },
+    {
+      "domain": "sofi.com",
+      "intersections": 33,
+      "avg_position": 24.2
+    }
+  ],
+  "our_keyword_count": 160,
+  "tracked_keyword_count": 213,
+  "competitor_rows_pulled": 1800,
+  "new_gap_count": 497,
+  "core_count": 346,
+  "adjacent_count": 151,
+  "cost": "DataForSEO: 11 calls, $0.36960 of $2.00 budget",
+  "notes": [
+    "themodernwallet.com: fresh pull (160 rows)",
+    "calculator.net: fresh pull (200 rows)",
+    "bankrate.com: fresh pull (200 rows)",
+    "nerdwallet.com: fresh pull (200 rows)",
+    "smartasset.com: fresh pull (200 rows)",
+    "investopedia.com: fresh pull (200 rows)",
+    "mortgagecalculator.org: fresh pull (200 rows)",
+    "ramseysolutions.com: fresh pull (200 rows)",
+    "fidelity.com: fresh pull (200 rows)",
+    "themodestwallet.com: fresh pull (200 rows)"
+  ],
+  "gaps": [
+    {
+      "keyword": "home to rental",
+      "volume": 450000,
+      "kd": 0,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 450000.0
+    },
+    {
+      "keyword": "calculator mortgage",
+      "volume": 2740000,
+      "kd": 79,
+      "cpc": 1.89,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net",
+        "mortgagecalculator.org",
+        "nerdwallet.com",
+        "ramseysolutions.com",
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 6,
+      "score": 205500.0
+    },
+    {
+      "keyword": "indigo credit card",
+      "volume": 201000,
+      "kd": 0,
+      "cpc": 2.74,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 201000.0
+    },
+    {
+      "keyword": "indigo credit cards",
+      "volume": 201000,
+      "kd": 0,
+      "cpc": 2.74,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 201000.0
+    },
+    {
+      "keyword": "high-yield savings account",
+      "volume": 1220000,
+      "kd": 14,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 162666.7
+    },
+    {
+      "keyword": "tax amortization benefit",
+      "volume": 135000,
+      "kd": 0,
+      "cpc": 0.15,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 135000.0
+    },
+    {
+      "keyword": "social security",
+      "volume": 4090000,
+      "kd": 65,
+      "cpc": 0.15,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 7,
+      "num_competitors": 2,
+      "score": 123939.4
+    },
+    {
+      "keyword": "highest yield savings accounts",
+      "volume": 1220000,
+      "kd": 35,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "investopedia.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 3,
+      "score": 101666.7
+    },
+    {
+      "keyword": "capital one credit card",
+      "volume": 2240000,
+      "kd": 22,
+      "cpc": 7.05,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 97391.3
+    },
+    {
+      "keyword": "high-yield savings accounts",
+      "volume": 1220000,
+      "kd": 50,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "investopedia.com",
+        "nerdwallet.com",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 4,
+      "score": 95686.3
+    },
+    {
+      "keyword": "high yield interest savings account",
+      "volume": 1220000,
+      "kd": 52,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 3,
+      "score": 69056.6
+    },
+    {
+      "keyword": "auto loan refinance calculator",
+      "volume": 60500,
+      "kd": 0,
+      "cpc": 4.05,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 60500.0
+    },
+    {
+      "keyword": "car loan refinance calculator",
+      "volume": 60500,
+      "kd": 0,
+      "cpc": 4.05,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 60500.0
+    },
+    {
+      "keyword": "car payment refinance calculator",
+      "volume": 60500,
+      "kd": 0,
+      "cpc": 4.05,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 60500.0
+    },
+    {
+      "keyword": "car refinance calculator",
+      "volume": 60500,
+      "kd": 0,
+      "cpc": 4.05,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 60500.0
+    },
+    {
+      "keyword": "t j maxx credit card",
+      "volume": 301000,
+      "kd": 4,
+      "cpc": 8.22,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 60200.0
+    },
+    {
+      "keyword": "chase credit card",
+      "volume": 550000,
+      "kd": 19,
+      "cpc": 2.86,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 55000.0
+    },
+    {
+      "keyword": "highest yield savings account",
+      "volume": 1220000,
+      "kd": 49,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 48800.0
+    },
+    {
+      "keyword": "high yield savings accounts",
+      "volume": 1220000,
+      "kd": 50,
+      "cpc": 16.95,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 47843.1
+    },
+    {
+      "keyword": "rocket mortgage home loans",
+      "volume": 1000000,
+      "kd": 45,
+      "cpc": 2.18,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 43478.3
+    },
+    {
+      "keyword": "calculate compound interest calculator",
+      "volume": 823000,
+      "kd": 57,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 3,
+      "score": 42569.0
+    },
+    {
+      "keyword": "new york salary calculator",
+      "volume": 40500,
+      "kd": 0,
+      "cpc": 7.58,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 40500.0
+    },
+    {
+      "keyword": "figure compound interest calculator",
+      "volume": 823000,
+      "kd": 64,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 3,
+      "score": 37984.6
+    },
+    {
+      "keyword": "figuring compound interest calculator",
+      "volume": 823000,
+      "kd": 64,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 3,
+      "score": 37984.6
+    },
+    {
+      "keyword": "compound interest calculator",
+      "volume": 823000,
+      "kd": 64,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 3,
+      "score": 37984.6
+    },
+    {
+      "keyword": "national rental car companies",
+      "volume": 823000,
+      "kd": 21,
+      "cpc": 1.16,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 37409.1
+    },
+    {
+      "keyword": "roth ira with fidelity",
+      "volume": 201000,
+      "kd": 6,
+      "cpc": 4.07,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 28714.3
+    },
+    {
+      "keyword": "ny tax calculator",
+      "volume": 27100,
+      "kd": 0,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27100.0
+    },
+    {
+      "keyword": "tax calculator nyc",
+      "volume": 27100,
+      "kd": 0,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27100.0
+    },
+    {
+      "keyword": "mortgage calculator g a m e",
+      "volume": 27100,
+      "kd": 0,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27100.0
+    },
+    {
+      "keyword": "mortgage calculator game",
+      "volume": 27100,
+      "kd": 0,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27100.0
+    },
+    {
+      "keyword": "mortgage calculator games",
+      "volume": 27100,
+      "kd": 0,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27100.0
+    },
+    {
+      "keyword": "total expense ratio",
+      "volume": 135000,
+      "kd": 4,
+      "cpc": 2.7,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 27000.0
+    },
+    {
+      "keyword": "freedom mortgage loans",
+      "volume": 550000,
+      "kd": 41,
+      "cpc": 0.26,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 2,
+      "score": 26190.5
+    },
+    {
+      "keyword": "credit card",
+      "volume": 1000000,
+      "kd": 77,
+      "cpc": 19.56,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com",
+        "investopedia.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 2,
+      "score": 25641.0
+    },
+    {
+      "keyword": "credit card from chase bank",
+      "volume": 550000,
+      "kd": 42,
+      "cpc": 2.86,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 2,
+      "score": 25581.4
+    },
+    {
+      "keyword": "car auto loan calculator",
+      "volume": 550000,
+      "kd": 46,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 23404.3
+    },
+    {
+      "keyword": "car loan calculator",
+      "volume": 550000,
+      "kd": 46,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 23404.3
+    },
+    {
+      "keyword": "cars car loan calculator",
+      "volume": 550000,
+      "kd": 46,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 23404.3
+    },
+    {
+      "keyword": "progressive insurance",
+      "volume": 1000000,
+      "kd": 42,
+      "cpc": 8.18,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 8,
+      "num_competitors": 1,
+      "score": 23255.8
+    },
+    {
+      "keyword": "vehicle car loan calculator",
+      "volume": 550000,
+      "kd": 47,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 22916.7
+    },
+    {
+      "keyword": "a car loan calculator",
+      "volume": 550000,
+      "kd": 47,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 22916.7
+    },
+    {
+      "keyword": "calculator auto loan",
+      "volume": 550000,
+      "kd": 47,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 22916.7
+    },
+    {
+      "keyword": "car loan calculator car",
+      "volume": 550000,
+      "kd": 47,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "calculator.net"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 22916.7
+    },
+    {
+      "keyword": "loan with terrible credit",
+      "volume": 450000,
+      "kd": 21,
+      "cpc": 13.01,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 20454.5
+    },
+    {
+      "keyword": "term of insurance",
+      "volume": 450000,
+      "kd": 23,
+      "cpc": 45.78,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 18750.0
+    },
+    {
+      "keyword": "earnings before interest tax depreciation and amortization",
+      "volume": 110000,
+      "kd": 5,
+      "cpc": 3.21,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 18333.3
+    },
+    {
+      "keyword": "rocket mortgage",
+      "volume": 1000000,
+      "kd": 55,
+      "cpc": 2.18,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 17857.1
+    },
+    {
+      "keyword": "loan with horrible credit",
+      "volume": 450000,
+      "kd": 25,
+      "cpc": 13.01,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 17307.7
+    },
+    {
+      "keyword": "home depot credit card",
+      "volume": 450000,
+      "kd": 25,
+      "cpc": 0.22,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 17307.7
+    },
+    {
+      "keyword": "mortgage rate today",
+      "volume": 673000,
+      "kd": 77,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 17256.4
+    },
+    {
+      "keyword": "fidelity roth ira",
+      "volume": 201000,
+      "kd": 11,
+      "cpc": 4.07,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 16750.0
+    },
+    {
+      "keyword": "ira and roth ira",
+      "volume": 368000,
+      "kd": 21,
+      "cpc": 11.23,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 16727.3
+    },
+    {
+      "keyword": "loans with low credit",
+      "volume": 450000,
+      "kd": 27,
+      "cpc": 13.01,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 16071.4
+    },
+    {
+      "keyword": "mortgage rates for today",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 2,
+      "score": 16023.8
+    },
+    {
+      "keyword": "mortgage rates today",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 2,
+      "score": 16023.8
+    },
+    {
+      "keyword": "rate today mortgage",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 2,
+      "score": 16023.8
+    },
+    {
+      "keyword": "mortgage rate as of today",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com",
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 2,
+      "score": 16023.8
+    },
+    {
+      "keyword": "fidelity investment",
+      "volume": 673000,
+      "kd": 41,
+      "cpc": 0.5,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 16023.8
+    },
+    {
+      "keyword": "bankrate mortgage calculator",
+      "volume": 550000,
+      "kd": 68,
+      "cpc": 4.9,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 15942.0
+    },
+    {
+      "keyword": "bankrate mortgage loan calculator",
+      "volume": 550000,
+      "kd": 68,
+      "cpc": 4.9,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 15942.0
+    },
+    {
+      "keyword": "mortgage calculator bankrate",
+      "volume": 550000,
+      "kd": 68,
+      "cpc": 4.9,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 15942.0
+    },
+    {
+      "keyword": "fidelity investments roth ira",
+      "volume": 201000,
+      "kd": 12,
+      "cpc": 4.07,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 15461.5
+    },
+    {
+      "keyword": "card and credit",
+      "volume": 1000000,
+      "kd": 64,
+      "cpc": 19.56,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 15384.6
+    },
+    {
+      "keyword": "refinancing calculator auto loan",
+      "volume": 60500,
+      "kd": 3,
+      "cpc": 4.05,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 15125.0
+    },
+    {
+      "keyword": "term policy insurance",
+      "volume": 450000,
+      "kd": 30,
+      "cpc": 45.78,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 14516.1
+    },
+    {
+      "keyword": "spdr s&p 500 etf trust spy",
+      "volume": 550000,
+      "kd": 39,
+      "cpc": 9.07,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 13750.0
+    },
+    {
+      "keyword": "calculator inflation",
+      "volume": 550000,
+      "kd": 80,
+      "cpc": 2.87,
+      "tier": "adjacent",
+      "competitors": [
+        "calculator.net",
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 2,
+      "score": 13580.2
+    },
+    {
+      "keyword": "fil investment",
+      "volume": 673000,
+      "kd": 49,
+      "cpc": 0.5,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 13460.0
+    },
+    {
+      "keyword": "fidelity investment co",
+      "volume": 673000,
+      "kd": 50,
+      "cpc": 0.5,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 13196.1
+    },
+    {
+      "keyword": "calculator for inflation rate",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 2.87,
+      "tier": "adjacent",
+      "competitors": [
+        "calculator.net",
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 13095.2
+    },
+    {
+      "keyword": "mortgage rate",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 13095.2
+    },
+    {
+      "keyword": "rate mortgage lenders",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 13095.2
+    },
+    {
+      "keyword": "freedom mortgage home loans",
+      "volume": 550000,
+      "kd": 41,
+      "cpc": 0.26,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 11,
+      "num_competitors": 1,
+      "score": 13095.2
+    },
+    {
+      "keyword": "rates home loan",
+      "volume": 550000,
+      "kd": 84,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 2,
+      "score": 12941.2
+    },
+    {
+      "keyword": "thrift savings plan tsp",
+      "volume": 450000,
+      "kd": 34,
+      "cpc": 4.1,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 12857.1
+    },
+    {
+      "keyword": "tsp thrift savings plan",
+      "volume": 450000,
+      "kd": 34,
+      "cpc": 4.1,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 12857.1
+    },
+    {
+      "keyword": "pythagoras property",
+      "volume": 368000,
+      "kd": 28,
+      "cpc": 3.57,
+      "tier": "core",
+      "competitors": [
+        "calculator.net"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 12689.7
+    },
+    {
+      "keyword": "home equity line calculator",
+      "volume": 49500,
+      "kd": 3,
+      "cpc": 9.43,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 12375.0
+    },
+    {
+      "keyword": "loans for terrible credit",
+      "volume": 450000,
+      "kd": 36,
+      "cpc": 13.01,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 12162.2
+    },
+    {
+      "keyword": "calculation salary",
+      "volume": 301000,
+      "kd": 49,
+      "cpc": 3.22,
+      "tier": "adjacent",
+      "competitors": [
+        "calculator.net",
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 12040.0
+    },
+    {
+      "keyword": "car loan auto calculator",
+      "volume": 550000,
+      "kd": 47,
+      "cpc": 1.62,
+      "tier": "core",
+      "competitors": [
+        "calculator.net"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 11458.3
+    },
+    {
+      "keyword": "30 fixed rate mortgage",
+      "volume": 301000,
+      "kd": 52,
+      "cpc": 4.98,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 11358.5
+    },
+    {
+      "keyword": "term life insurance",
+      "volume": 450000,
+      "kd": 39,
+      "cpc": 45.78,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 11250.0
+    },
+    {
+      "keyword": "chase credit cards",
+      "volume": 550000,
+      "kd": 48,
+      "cpc": 2.86,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 11224.5
+    },
+    {
+      "keyword": "credit card chase",
+      "volume": 550000,
+      "kd": 48,
+      "cpc": 2.86,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 11224.5
+    },
+    {
+      "keyword": "life and term insurance",
+      "volume": 450000,
+      "kd": 40,
+      "cpc": 45.78,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 10975.6
+    },
+    {
+      "keyword": "credit cards",
+      "volume": 1000000,
+      "kd": 94,
+      "cpc": 19.56,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 10526.3
+    },
+    {
+      "keyword": "thrift savings plan",
+      "volume": 450000,
+      "kd": 43,
+      "cpc": 4.1,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 10227.3
+    },
+    {
+      "keyword": "mortgage rate calculator bankrate",
+      "volume": 550000,
+      "kd": 53,
+      "cpc": 4.9,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 10185.2
+    },
+    {
+      "keyword": "mortgage line of credit calculator",
+      "volume": 49500,
+      "kd": 4,
+      "cpc": 9.43,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 9900.0
+    },
+    {
+      "keyword": "determine mortgage payment",
+      "volume": 201000,
+      "kd": 40,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 9804.9
+    },
+    {
+      "keyword": "driver insurance quote",
+      "volume": 673000,
+      "kd": 70,
+      "cpc": 156.95,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 9478.9
+    },
+    {
+      "keyword": "quotation for car insurance",
+      "volume": 673000,
+      "kd": 70,
+      "cpc": 156.95,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 9478.9
+    },
+    {
+      "keyword": "credit card discover card",
+      "volume": 450000,
+      "kd": 47,
+      "cpc": 5.48,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 9375.0
+    },
+    {
+      "keyword": "aspire credit cards",
+      "volume": 110000,
+      "kd": 11,
+      "cpc": 6.09,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 9166.7
+    },
+    {
+      "keyword": "401k calculator",
+      "volume": 165000,
+      "kd": 36,
+      "cpc": 1.75,
+      "tier": "core",
+      "competitors": [
+        "calculator.net",
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 8918.9
+    },
+    {
+      "keyword": "zillow mortgage loan calculator",
+      "volume": 246000,
+      "kd": 27,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8785.7
+    },
+    {
+      "keyword": "broker in real estate",
+      "volume": 201000,
+      "kd": 22,
+      "cpc": 10.93,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 8739.1
+    },
+    {
+      "keyword": "calculate home loan payoff",
+      "volume": 60500,
+      "kd": 6,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 8642.9
+    },
+    {
+      "keyword": "paying off mortgage calculator",
+      "volume": 60500,
+      "kd": 6,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 8642.9
+    },
+    {
+      "keyword": "mortgage prices today",
+      "volume": 673000,
+      "kd": 77,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 8628.2
+    },
+    {
+      "keyword": "tax form w 9",
+      "volume": 368000,
+      "kd": 42,
+      "cpc": 3.79,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 8558.1
+    },
+    {
+      "keyword": "estimate a mortgage payment",
+      "volume": 201000,
+      "kd": 46,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 8553.2
+    },
+    {
+      "keyword": "mortgage estimated payment",
+      "volume": 201000,
+      "kd": 46,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 8553.2
+    },
+    {
+      "keyword": "mortgage payment calculator zillow",
+      "volume": 246000,
+      "kd": 28,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8482.8
+    },
+    {
+      "keyword": "zillow calculator mortgage",
+      "volume": 246000,
+      "kd": 28,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8482.8
+    },
+    {
+      "keyword": "homeowners line of credit calculator",
+      "volume": 49500,
+      "kd": 5,
+      "cpc": 9.43,
+      "tier": "adjacent",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 8250.0
+    },
+    {
+      "keyword": "fortiva credit card",
+      "volume": 90500,
+      "kd": 10,
+      "cpc": 4.37,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8227.3
+    },
+    {
+      "keyword": "mortgage estimator zillow",
+      "volume": 246000,
+      "kd": 29,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8200.0
+    },
+    {
+      "keyword": "retirement calculators",
+      "volume": 368000,
+      "kd": 44,
+      "cpc": 2.64,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 8177.8
+    },
+    {
+      "keyword": "interest and interest rate",
+      "volume": 201000,
+      "kd": 24,
+      "cpc": 7.69,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 8040.0
+    },
+    {
+      "keyword": "discover credit cards",
+      "volume": 450000,
+      "kd": 55,
+      "cpc": 5.48,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 8035.7
+    },
+    {
+      "keyword": "mortgage loan rates today",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 8011.9
+    },
+    {
+      "keyword": "mortgage rates as of today",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 8011.9
+    },
+    {
+      "keyword": "today home mortgage rates",
+      "volume": 673000,
+      "kd": 83,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 8011.9
+    },
+    {
+      "keyword": "401k",
+      "volume": 301000,
+      "kd": 37,
+      "cpc": 12.03,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 7921.1
+    },
+    {
+      "keyword": "mortgage price today",
+      "volume": 673000,
+      "kd": 84,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 7,
+      "num_competitors": 1,
+      "score": 7917.6
+    },
+    {
+      "keyword": "roth iras",
+      "volume": 368000,
+      "kd": 46,
+      "cpc": 11.23,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 7829.8
+    },
+    {
+      "keyword": "inflation calculator",
+      "volume": 550000,
+      "kd": 70,
+      "cpc": 2.87,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 11,
+      "num_competitors": 1,
+      "score": 7746.5
+    },
+    {
+      "keyword": "finding mortgage payment",
+      "volume": 201000,
+      "kd": 52,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 7584.9
+    },
+    {
+      "keyword": "texas salary calculator",
+      "volume": 60500,
+      "kd": 7,
+      "cpc": 9.83,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 7562.5
+    },
+    {
+      "keyword": "home loan payoff calculator",
+      "volume": 60500,
+      "kd": 7,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 7562.5
+    },
+    {
+      "keyword": "today's fixed mortgage rates",
+      "volume": 673000,
+      "kd": 88,
+      "cpc": 4.96,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 7561.8
+    },
+    {
+      "keyword": "mortgage payments calculation",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 3,
+      "score": 7537.5
+    },
+    {
+      "keyword": "figure out mortgage payment",
+      "volume": 201000,
+      "kd": 53,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 7444.4
+    },
+    {
+      "keyword": "budget",
+      "volume": 550000,
+      "kd": 73,
+      "cpc": 2.37,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 7,
+      "num_competitors": 1,
+      "score": 7432.4
+    },
+    {
+      "keyword": "best yielding savings accounts",
+      "volume": 135000,
+      "kd": 37,
+      "cpc": 13.53,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 7105.3
+    },
+    {
+      "keyword": "equity line of credit calculator",
+      "volume": 49500,
+      "kd": 6,
+      "cpc": 9.43,
+      "tier": "adjacent",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 7071.4
+    },
+    {
+      "keyword": "housing loan mortgage rates",
+      "volume": 550000,
+      "kd": 77,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 7051.3
+    },
+    {
+      "keyword": "zillow mortgage calculator",
+      "volume": 246000,
+      "kd": 34,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 7028.6
+    },
+    {
+      "keyword": "nyc tax calculator",
+      "volume": 27100,
+      "kd": 3,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 6775.0
+    },
+    {
+      "keyword": "estimate heloc payment",
+      "volume": 27100,
+      "kd": 3,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 6775.0
+    },
+    {
+      "keyword": "best high yield savings account",
+      "volume": 135000,
+      "kd": 19,
+      "cpc": 13.53,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 6750.0
+    },
+    {
+      "keyword": "pay mortgage calculator",
+      "volume": 201000,
+      "kd": 60,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 6590.2
+    },
+    {
+      "keyword": "and mortgage rates",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 6547.6
+    },
+    {
+      "keyword": "loan mortgage rates",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6547.6
+    },
+    {
+      "keyword": "mortgage rates",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6547.6
+    },
+    {
+      "keyword": "rate mortgage rates",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6547.6
+    },
+    {
+      "keyword": "home loan mortgage rates",
+      "volume": 550000,
+      "kd": 83,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 11,
+      "num_competitors": 1,
+      "score": 6547.6
+    },
+    {
+      "keyword": "car insurance",
+      "volume": 450000,
+      "kd": 68,
+      "cpc": 128.4,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 6521.7
+    },
+    {
+      "keyword": "conventional mortgage lenders",
+      "volume": 110000,
+      "kd": 16,
+      "cpc": 13.76,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 6470.6
+    },
+    {
+      "keyword": "bankrate mortgage rate",
+      "volume": 368000,
+      "kd": 57,
+      "cpc": 6.58,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 6344.8
+    },
+    {
+      "keyword": "calculator home equity line of credit",
+      "volume": 49500,
+      "kd": 7,
+      "cpc": 9.43,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6187.5
+    },
+    {
+      "keyword": "mortgage lender",
+      "volume": 301000,
+      "kd": 48,
+      "cpc": 26.43,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 6142.9
+    },
+    {
+      "keyword": "best high-yield savings account",
+      "volume": 135000,
+      "kd": 21,
+      "cpc": 13.53,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 6136.4
+    },
+    {
+      "keyword": "pay off home loan calculator",
+      "volume": 60500,
+      "kd": 9,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 6050.0
+    },
+    {
+      "keyword": "calculate salary",
+      "volume": 301000,
+      "kd": 49,
+      "cpc": 3.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6020.0
+    },
+    {
+      "keyword": "calculator salary",
+      "volume": 301000,
+      "kd": 49,
+      "cpc": 3.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 6020.0
+    },
+    {
+      "keyword": "real estate agents",
+      "volume": 201000,
+      "kd": 33,
+      "cpc": 10.93,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 5911.8
+    },
+    {
+      "keyword": "mortgage and rates",
+      "volume": 550000,
+      "kd": 93,
+      "cpc": 5.37,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 5851.1
+    },
+    {
+      "keyword": "united states social security administration",
+      "volume": 301000,
+      "kd": 52,
+      "cpc": 0.46,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 5679.2
+    },
+    {
+      "keyword": "ira roth calculator",
+      "volume": 135000,
+      "kd": 23,
+      "cpc": 2.91,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 5625.0
+    },
+    {
+      "keyword": "loan mortgage payoff calculator",
+      "volume": 60500,
+      "kd": 10,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 5500.0
+    },
+    {
+      "keyword": "new york tax calculator",
+      "volume": 27100,
+      "kd": 4,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 5420.0
+    },
+    {
+      "keyword": "equity line of credit payment calculator",
+      "volume": 27100,
+      "kd": 4,
+      "cpc": 9.23,
+      "tier": "adjacent",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 5420.0
+    },
+    {
+      "keyword": "roth ira calculator",
+      "volume": 135000,
+      "kd": 24,
+      "cpc": 2.91,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 5400.0
+    },
+    {
+      "keyword": "salary calculator",
+      "volume": 301000,
+      "kd": 55,
+      "cpc": 3.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 5375.0
+    },
+    {
+      "keyword": "calculate a mortgage loan payment",
+      "volume": 201000,
+      "kd": 78,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5088.6
+    },
+    {
+      "keyword": "find mortgage payment",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5025.0
+    },
+    {
+      "keyword": "loan mortgage payment calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5025.0
+    },
+    {
+      "keyword": "mortgage price calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5025.0
+    },
+    {
+      "keyword": "online mortgage loan calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 3.11,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5025.0
+    },
+    {
+      "keyword": "online mortgage payment calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 3.11,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com",
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 5025.0
+    },
+    {
+      "keyword": "travel credit cards",
+      "volume": 165000,
+      "kd": 32,
+      "cpc": 26.39,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 5000.0
+    },
+    {
+      "keyword": "salary calculator california",
+      "volume": 49500,
+      "kd": 9,
+      "cpc": 9.55,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4950.0
+    },
+    {
+      "keyword": "states with zero income tax",
+      "volume": 74000,
+      "kd": 14,
+      "cpc": 0.29,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4933.3
+    },
+    {
+      "keyword": "best credit card for travel",
+      "volume": 110000,
+      "kd": 22,
+      "cpc": 19.45,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4782.6
+    },
+    {
+      "keyword": "zillow mortgage cal",
+      "volume": 246000,
+      "kd": 51,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 4730.8
+    },
+    {
+      "keyword": "zillow mortgage payment calculator",
+      "volume": 246000,
+      "kd": 51,
+      "cpc": 5.49,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4730.8
+    },
+    {
+      "keyword": "mortgage calculator paying extra",
+      "volume": 33100,
+      "kd": 13,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 4728.6
+    },
+    {
+      "keyword": "mortgage extra payment calculator",
+      "volume": 33100,
+      "kd": 13,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 4728.6
+    },
+    {
+      "keyword": "estimate mortgage payoff calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "estimated mortgage payoff calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage calculator payoff",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage loan payoff calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage payoff calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage payoff calculators",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage payoff estimator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "mortgage payoff payment calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "pay down mortgage calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "pay down my mortgage calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "pay off mortgage calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "pay off my mortgage calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "paying off home loan calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "payoff mortgage calculator",
+      "volume": 60500,
+      "kd": 12,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4653.8
+    },
+    {
+      "keyword": "calculate home equity line of credit payments",
+      "volume": 27100,
+      "kd": 5,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4516.7
+    },
+    {
+      "keyword": "home line of credit calculator",
+      "volume": 49500,
+      "kd": 10,
+      "cpc": 9.43,
+      "tier": "adjacent",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 4500.0
+    },
+    {
+      "keyword": "bankrate mortgage rates",
+      "volume": 368000,
+      "kd": 83,
+      "cpc": 6.58,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4381.0
+    },
+    {
+      "keyword": "salary calculator for texas",
+      "volume": 60500,
+      "kd": 13,
+      "cpc": 9.83,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4321.4
+    },
+    {
+      "keyword": "salary calculator texas",
+      "volume": 60500,
+      "kd": 13,
+      "cpc": 9.83,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4321.4
+    },
+    {
+      "keyword": "auto loan calculator bankrate",
+      "volume": 201000,
+      "kd": 46,
+      "cpc": 2.94,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4276.6
+    },
+    {
+      "keyword": "bankrate auto loan calculator",
+      "volume": 201000,
+      "kd": 46,
+      "cpc": 2.94,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4276.6
+    },
+    {
+      "keyword": "best high yield savings accounts",
+      "volume": 135000,
+      "kd": 31,
+      "cpc": 13.53,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4218.8
+    },
+    {
+      "keyword": "car loan calculator bankrate",
+      "volume": 201000,
+      "kd": 47,
+      "cpc": 2.94,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 4187.5
+    },
+    {
+      "keyword": "how to make income online",
+      "volume": 135000,
+      "kd": 32,
+      "cpc": 5.51,
+      "tier": "adjacent",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 89,
+      "num_competitors": 1,
+      "score": 4090.9
+    },
+    {
+      "keyword": "calculate tax",
+      "volume": 246000,
+      "kd": 60,
+      "cpc": 3.69,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 4032.8
+    },
+    {
+      "keyword": "best credit cards",
+      "volume": 90500,
+      "kd": 22,
+      "cpc": 14.18,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3934.8
+    },
+    {
+      "keyword": "heloc payment estimator",
+      "volume": 27100,
+      "kd": 6,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3871.4
+    },
+    {
+      "keyword": "home equity line of credit payment calculator",
+      "volume": 27100,
+      "kd": 6,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3871.4
+    },
+    {
+      "keyword": "dave ramsey retirement calculator",
+      "volume": 27100,
+      "kd": 6,
+      "cpc": 5.63,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3871.4
+    },
+    {
+      "keyword": "fidelity 401k fidelity",
+      "volume": 201000,
+      "kd": 51,
+      "cpc": 4.58,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3865.4
+    },
+    {
+      "keyword": "current interest rates mortgage",
+      "volume": 301000,
+      "kd": 78,
+      "cpc": 4.84,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3810.1
+    },
+    {
+      "keyword": "best credit cards for travel",
+      "volume": 110000,
+      "kd": 28,
+      "cpc": 19.45,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3793.1
+    },
+    {
+      "keyword": "best yield savings account",
+      "volume": 135000,
+      "kd": 35,
+      "cpc": 13.53,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3750.0
+    },
+    {
+      "keyword": "tax calculator",
+      "volume": 246000,
+      "kd": 65,
+      "cpc": 3.69,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 3727.3
+    },
+    {
+      "keyword": "tax and calculator",
+      "volume": 246000,
+      "kd": 65,
+      "cpc": 3.69,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 3727.3
+    },
+    {
+      "keyword": "real estate agent",
+      "volume": 201000,
+      "kd": 53,
+      "cpc": 10.93,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3722.2
+    },
+    {
+      "keyword": "illinois salary calculator",
+      "volume": 22200,
+      "kd": 5,
+      "cpc": 7.56,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3700.0
+    },
+    {
+      "keyword": "calculating tax calculator",
+      "volume": 246000,
+      "kd": 66,
+      "cpc": 3.69,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 3671.6
+    },
+    {
+      "keyword": "cash back credit card",
+      "volume": 201000,
+      "kd": 54,
+      "cpc": 16.76,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 3654.5
+    },
+    {
+      "keyword": "fidelity investment 401k",
+      "volume": 201000,
+      "kd": 54,
+      "cpc": 4.58,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3654.5
+    },
+    {
+      "keyword": "real estate",
+      "volume": 368000,
+      "kd": 100,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 5,
+      "num_competitors": 1,
+      "score": 3643.6
+    },
+    {
+      "keyword": "interest rate",
+      "volume": 201000,
+      "kd": 55,
+      "cpc": 7.69,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3589.3
+    },
+    {
+      "keyword": "30 year fixed home loan rate",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.98,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "30 year fixed home loan rates",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.98,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "30 year fixed mortgage rates",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.98,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "current mortgage fixed rates",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.84,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "current mortgage rate",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.84,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "mortgage rates 30 year fixed",
+      "volume": 301000,
+      "kd": 83,
+      "cpc": 4.98,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3583.3
+    },
+    {
+      "keyword": "bofa interest rates mortgage",
+      "volume": 201000,
+      "kd": 57,
+      "cpc": 6.39,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 8,
+      "num_competitors": 1,
+      "score": 3465.5
+    },
+    {
+      "keyword": "calculate home equity line payment",
+      "volume": 27100,
+      "kd": 7,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3387.5
+    },
+    {
+      "keyword": "calculate payment on heloc",
+      "volume": 27100,
+      "kd": 7,
+      "cpc": 9.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 3387.5
+    },
+    {
+      "keyword": "dave ramsey investment calculator",
+      "volume": 33100,
+      "kd": 9,
+      "cpc": 7.02,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3310.0
+    },
+    {
+      "keyword": "credit card cashback",
+      "volume": 201000,
+      "kd": 60,
+      "cpc": 16.76,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 3295.1
+    },
+    {
+      "keyword": "fidelity 401k",
+      "volume": 201000,
+      "kd": 60,
+      "cpc": 4.58,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3295.1
+    },
+    {
+      "keyword": "fidelity investments 401k",
+      "volume": 201000,
+      "kd": 60,
+      "cpc": 4.58,
+      "tier": "core",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3295.1
+    },
+    {
+      "keyword": "calculate income tax",
+      "volume": 90500,
+      "kd": 28,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3120.7
+    },
+    {
+      "keyword": "calculator for paying down mortgage",
+      "volume": 60500,
+      "kd": 19,
+      "cpc": 1.45,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3025.0
+    },
+    {
+      "keyword": "investment calculator dave ramsey",
+      "volume": 33100,
+      "kd": 10,
+      "cpc": 7.02,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 3009.1
+    },
+    {
+      "keyword": "extra mortgage payment calculator",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "extra payment mortgage calculator",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "mortgage calculator with extra payments",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "mortgage payment calculator extra payments",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "pay more on mortgage calculator",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "paying extra mortgage calculator",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "paying more on mortgage calculator",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 2878.3
+    },
+    {
+      "keyword": "30 year residential mortgage rates",
+      "volume": 201000,
+      "kd": 69,
+      "cpc": 4.3,
+      "tier": "core",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2871.4
+    },
+    {
+      "keyword": "30 year mortgage fixed",
+      "volume": 201000,
+      "kd": 69,
+      "cpc": 4.3,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 7,
+      "num_competitors": 1,
+      "score": 2871.4
+    },
+    {
+      "keyword": "apr",
+      "volume": 90500,
+      "kd": 31,
+      "cpc": 1.37,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2828.1
+    },
+    {
+      "keyword": "mortgage payment calculator with extra payments",
+      "volume": 33100,
+      "kd": 23,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2758.3
+    },
+    {
+      "keyword": "0 income tax states",
+      "volume": 74000,
+      "kd": 26,
+      "cpc": 0.29,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2740.7
+    },
+    {
+      "keyword": "debt consolidation",
+      "volume": 135000,
+      "kd": 49,
+      "cpc": 70.86,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2700.0
+    },
+    {
+      "keyword": "interest rate today",
+      "volume": 201000,
+      "kd": 74,
+      "cpc": 5.3,
+      "tier": "adjacent",
+      "competitors": [
+        "bankrate.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2680.0
+    },
+    {
+      "keyword": "mortgage payment calculator pay extra",
+      "volume": 33100,
+      "kd": 24,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2648.0
+    },
+    {
+      "keyword": "paying extra on mortgage calculator",
+      "volume": 33100,
+      "kd": 24,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2648.0
+    },
+    {
+      "keyword": "529 funds",
+      "volume": 135000,
+      "kd": 50,
+      "cpc": 3.36,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2647.1
+    },
+    {
+      "keyword": "funding 529",
+      "volume": 135000,
+      "kd": 50,
+      "cpc": 3.36,
+      "tier": "adjacent",
+      "competitors": [
+        "fidelity.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2647.1
+    },
+    {
+      "keyword": "best credit card for balance transfer",
+      "volume": 49500,
+      "kd": 18,
+      "cpc": 43.84,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2605.3
+    },
+    {
+      "keyword": "mortgage calculator payments",
+      "volume": 201000,
+      "kd": 78,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2544.3
+    },
+    {
+      "keyword": "online calculator mortgage",
+      "volume": 201000,
+      "kd": 78,
+      "cpc": 3.11,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2544.3
+    },
+    {
+      "keyword": "salary take home calculator",
+      "volume": 60500,
+      "kd": 23,
+      "cpc": 5.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2520.8
+    },
+    {
+      "keyword": "salary take home estimator",
+      "volume": 60500,
+      "kd": 23,
+      "cpc": 5.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2520.8
+    },
+    {
+      "keyword": "mortgage calculator payment",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2512.5
+    },
+    {
+      "keyword": "mortgage loan calculator online",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 3.11,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2512.5
+    },
+    {
+      "keyword": "mortgage payment calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 1.82,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2512.5
+    },
+    {
+      "keyword": "online mortgage calculator",
+      "volume": 201000,
+      "kd": 79,
+      "cpc": 3.11,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2512.5
+    },
+    {
+      "keyword": "comparison of mortgage rates",
+      "volume": 110000,
+      "kd": 88,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 2471.9
+    },
+    {
+      "keyword": "pay mortgage off early calculator",
+      "volume": 27100,
+      "kd": 10,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2463.6
+    },
+    {
+      "keyword": "ramsey investment calculator",
+      "volume": 27100,
+      "kd": 10,
+      "cpc": 7.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2463.6
+    },
+    {
+      "keyword": "investment strategies",
+      "volume": 90500,
+      "kd": 36,
+      "cpc": 9.46,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2445.9
+    },
+    {
+      "keyword": "budget apps",
+      "volume": 110000,
+      "kd": 44,
+      "cpc": 9.24,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2444.4
+    },
+    {
+      "keyword": "income take home calculator",
+      "volume": 60500,
+      "kd": 24,
+      "cpc": 5.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2420.0
+    },
+    {
+      "keyword": "interest rate as of today",
+      "volume": 201000,
+      "kd": 83,
+      "cpc": 5.3,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2392.9
+    },
+    {
+      "keyword": "real estate investing",
+      "volume": 110000,
+      "kd": 46,
+      "cpc": 13.85,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2340.4
+    },
+    {
+      "keyword": "nerdwallet retirement calculator",
+      "volume": 90500,
+      "kd": 38,
+      "cpc": 8.36,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2320.5
+    },
+    {
+      "keyword": "salary tax in washington state",
+      "volume": 27100,
+      "kd": 12,
+      "cpc": 3.76,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2084.6
+    },
+    {
+      "keyword": "pay off mortgage faster calculator",
+      "volume": 27100,
+      "kd": 12,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2084.6
+    },
+    {
+      "keyword": "payoff mortgage faster calculator",
+      "volume": 27100,
+      "kd": 12,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2084.6
+    },
+    {
+      "keyword": "comparing home loan rates",
+      "volume": 110000,
+      "kd": 53,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 2037.0
+    },
+    {
+      "keyword": "states with no personal income tax",
+      "volume": 74000,
+      "kd": 36,
+      "cpc": 0.29,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 2000.0
+    },
+    {
+      "keyword": "early payoff mortgage payment calculator",
+      "volume": 27100,
+      "kd": 13,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1935.7
+    },
+    {
+      "keyword": "pay off early calculator mortgage",
+      "volume": 27100,
+      "kd": 13,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1935.7
+    },
+    {
+      "keyword": "payoff mortgage sooner calculator",
+      "volume": 27100,
+      "kd": 13,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1935.7
+    },
+    {
+      "keyword": "nyc property taxes",
+      "volume": 40500,
+      "kd": 21,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1840.9
+    },
+    {
+      "keyword": "mortgage payoff faster calculator",
+      "volume": 27100,
+      "kd": 14,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1806.7
+    },
+    {
+      "keyword": "pay down mortgage early calculator",
+      "volume": 27100,
+      "kd": 14,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1806.7
+    },
+    {
+      "keyword": "paying mortgage early calculator",
+      "volume": 27100,
+      "kd": 14,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1806.7
+    },
+    {
+      "keyword": "compare mortgage deals",
+      "volume": 110000,
+      "kd": 61,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1774.2
+    },
+    {
+      "keyword": "best credit card with transfer balance",
+      "volume": 49500,
+      "kd": 27,
+      "cpc": 43.84,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1767.9
+    },
+    {
+      "keyword": "high interest accounts savings",
+      "volume": 90500,
+      "kd": 52,
+      "cpc": 11.96,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1707.5
+    },
+    {
+      "keyword": "taxable income calculator",
+      "volume": 90500,
+      "kd": 52,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1707.5
+    },
+    {
+      "keyword": "calculator to pay off mortgage sooner",
+      "volume": 27100,
+      "kd": 15,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1693.8
+    },
+    {
+      "keyword": "early payoff of mortgage calculator",
+      "volume": 27100,
+      "kd": 15,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1693.8
+    },
+    {
+      "keyword": "property",
+      "volume": 110000,
+      "kd": 64,
+      "cpc": 5.51,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1692.3
+    },
+    {
+      "keyword": "property managers",
+      "volume": 110000,
+      "kd": 64,
+      "cpc": 8.14,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1692.3
+    },
+    {
+      "keyword": "us inflation calculator",
+      "volume": 135000,
+      "kd": 79,
+      "cpc": 2.84,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 6,
+      "num_competitors": 1,
+      "score": 1687.5
+    },
+    {
+      "keyword": "best credit card",
+      "volume": 90500,
+      "kd": 53,
+      "cpc": 14.18,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1675.9
+    },
+    {
+      "keyword": "tax calculator california",
+      "volume": 27100,
+      "kd": 16,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1594.1
+    },
+    {
+      "keyword": "early mortgage repayment calculator",
+      "volume": 27100,
+      "kd": 16,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1594.1
+    },
+    {
+      "keyword": "home loan calculator to pay off early",
+      "volume": 27100,
+      "kd": 16,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1594.1
+    },
+    {
+      "keyword": "paying off mortgage early calculator",
+      "volume": 27100,
+      "kd": 16,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1594.1
+    },
+    {
+      "keyword": "states with no state income tax",
+      "volume": 74000,
+      "kd": 46,
+      "cpc": 0.29,
+      "tier": "adjacent",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1574.5
+    },
+    {
+      "keyword": "tax property nyc",
+      "volume": 40500,
+      "kd": 25,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1557.7
+    },
+    {
+      "keyword": "rate compare home loan",
+      "volume": 110000,
+      "kd": 71,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1527.8
+    },
+    {
+      "keyword": "definition of apr",
+      "volume": 60500,
+      "kd": 39,
+      "cpc": 11.14,
+      "tier": "core",
+      "competitors": [
+        "investopedia.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1512.5
+    },
+    {
+      "keyword": "income and tax calculator",
+      "volume": 90500,
+      "kd": 59,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1508.3
+    },
+    {
+      "keyword": "calculator for a mortgage loan",
+      "volume": 90500,
+      "kd": 59,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1508.3
+    },
+    {
+      "keyword": "compare home loan rates",
+      "volume": 110000,
+      "kd": 72,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1506.8
+    },
+    {
+      "keyword": "compare mortgage lenders rates",
+      "volume": 110000,
+      "kd": 72,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1506.8
+    },
+    {
+      "keyword": "compare mortgage lender rates",
+      "volume": 110000,
+      "kd": 72,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1506.8
+    },
+    {
+      "keyword": "compare mortgage rates",
+      "volume": 110000,
+      "kd": 72,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1506.8
+    },
+    {
+      "keyword": "mortgage lender rates comparison",
+      "volume": 110000,
+      "kd": 72,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1506.8
+    },
+    {
+      "keyword": "ny state tax calculator",
+      "volume": 27100,
+      "kd": 17,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1505.6
+    },
+    {
+      "keyword": "early payoff mortgage loan calculator",
+      "volume": 27100,
+      "kd": 17,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1505.6
+    },
+    {
+      "keyword": "mortgage pay off sooner calculator",
+      "volume": 27100,
+      "kd": 17,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1505.6
+    },
+    {
+      "keyword": "mortgage payment calculator early payoff",
+      "volume": 27100,
+      "kd": 17,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1505.6
+    },
+    {
+      "keyword": "estimate for income tax",
+      "volume": 90500,
+      "kd": 60,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1483.6
+    },
+    {
+      "keyword": "mortgage",
+      "volume": 135000,
+      "kd": 90,
+      "cpc": 19.84,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1483.5
+    },
+    {
+      "keyword": "ramsey retirement calculator",
+      "volume": 22200,
+      "kd": 14,
+      "cpc": 5.83,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1480.0
+    },
+    {
+      "keyword": "extra mortgage payment calculators",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1439.1
+    },
+    {
+      "keyword": "mortgage calculator with extra principal payments",
+      "volume": 33100,
+      "kd": 22,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1439.1
+    },
+    {
+      "keyword": "compare interest rates mortgage",
+      "volume": 110000,
+      "kd": 76,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1428.6
+    },
+    {
+      "keyword": "mortgage interest rates comparison",
+      "volume": 110000,
+      "kd": 76,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1428.6
+    },
+    {
+      "keyword": "mortgage loan rate comparison",
+      "volume": 110000,
+      "kd": 76,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1428.6
+    },
+    {
+      "keyword": "new york city tax calculator",
+      "volume": 27100,
+      "kd": 18,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1426.3
+    },
+    {
+      "keyword": "new york income tax calculator",
+      "volume": 27100,
+      "kd": 18,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1426.3
+    },
+    {
+      "keyword": "nyc income tax calculator",
+      "volume": 27100,
+      "kd": 18,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1426.3
+    },
+    {
+      "keyword": "interest rate on homes today",
+      "volume": 74000,
+      "kd": 52,
+      "cpc": 5.01,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1396.2
+    },
+    {
+      "keyword": "mortgage calculator extra payments",
+      "volume": 33100,
+      "kd": 47,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 1379.2
+    },
+    {
+      "keyword": "income tax calculator",
+      "volume": 90500,
+      "kd": 65,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1371.2
+    },
+    {
+      "keyword": "tax income calculator",
+      "volume": 90500,
+      "kd": 65,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1371.2
+    },
+    {
+      "keyword": "tax income estimator",
+      "volume": 90500,
+      "kd": 65,
+      "cpc": 1.78,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1371.2
+    },
+    {
+      "keyword": "new york city income tax calculator",
+      "volume": 27100,
+      "kd": 19,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1355.0
+    },
+    {
+      "keyword": "ny income tax calculator",
+      "volume": 27100,
+      "kd": 19,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1355.0
+    },
+    {
+      "keyword": "tax calculator new york city",
+      "volume": 27100,
+      "kd": 19,
+      "cpc": 4.06,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1355.0
+    },
+    {
+      "keyword": "pay off mortgage early calculator",
+      "volume": 27100,
+      "kd": 19,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1355.0
+    },
+    {
+      "keyword": "additional payment mortgage calculator",
+      "volume": 33100,
+      "kd": 48,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 2,
+      "score": 1351.0
+    },
+    {
+      "keyword": "business property loans calculator",
+      "volume": 12100,
+      "kd": 8,
+      "cpc": 4.75,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1344.4
+    },
+    {
+      "keyword": "fast mortgage calculator",
+      "volume": 40500,
+      "kd": 60,
+      "cpc": 5.78,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org",
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 2,
+      "score": 1327.9
+    },
+    {
+      "keyword": "mortgage interest rate comparison",
+      "volume": 110000,
+      "kd": 83,
+      "cpc": 22.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1309.5
+    },
+    {
+      "keyword": "compare mortgage loan offers",
+      "volume": 60500,
+      "kd": 46,
+      "cpc": 14.46,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1287.2
+    },
+    {
+      "keyword": "calculating home loan",
+      "volume": 90500,
+      "kd": 72,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1239.7
+    },
+    {
+      "keyword": "nerdwallet mortgage rates",
+      "volume": 60500,
+      "kd": 48,
+      "cpc": 10.27,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1234.7
+    },
+    {
+      "keyword": "new york city property taxes",
+      "volume": 40500,
+      "kd": 32,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1227.3
+    },
+    {
+      "keyword": "salary to take home pay calculator",
+      "volume": 60500,
+      "kd": 49,
+      "cpc": 5.22,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1210.0
+    },
+    {
+      "keyword": "income taxes",
+      "volume": 74000,
+      "kd": 61,
+      "cpc": 10.37,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1193.5
+    },
+    {
+      "keyword": "early mortgage payoff calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "early payoff mortgage calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage calculator pay off early",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage early payoff calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage loan payoff calculator early",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage payment calculator for early payoff",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage payment calculator pay off early",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "mortgage payoff early calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "pay mortgage early calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "paying off home loan early calculator",
+      "volume": 27100,
+      "kd": 22,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1178.3
+    },
+    {
+      "keyword": "nerdwallet compound interest calculator",
+      "volume": 49500,
+      "kd": 42,
+      "cpc": 6.93,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1151.2
+    },
+    {
+      "keyword": "calculator for mortgage loans",
+      "volume": 90500,
+      "kd": 78,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1145.6
+    },
+    {
+      "keyword": "mortgage home loan calculator",
+      "volume": 90500,
+      "kd": 78,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1145.6
+    },
+    {
+      "keyword": "home loan calculator",
+      "volume": 90500,
+      "kd": 79,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1131.2
+    },
+    {
+      "keyword": "home mortgage loan calculator",
+      "volume": 90500,
+      "kd": 79,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1131.2
+    },
+    {
+      "keyword": "calculate home mortgage",
+      "volume": 90500,
+      "kd": 79,
+      "cpc": 3.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1131.2
+    },
+    {
+      "keyword": "mortgage payment calculator to pay off early",
+      "volume": 27100,
+      "kd": 23,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 1129.2
+    },
+    {
+      "keyword": "nerdwallet auto loan calculator",
+      "volume": 49500,
+      "kd": 44,
+      "cpc": 4.07,
+      "tier": "core",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1100.0
+    },
+    {
+      "keyword": "commercial property loan calculator",
+      "volume": 12100,
+      "kd": 10,
+      "cpc": 4.75,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1100.0
+    },
+    {
+      "keyword": "mortgage calculator and amortization",
+      "volume": 60500,
+      "kd": 55,
+      "cpc": 1.94,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 4,
+      "num_competitors": 1,
+      "score": 1080.4
+    },
+    {
+      "keyword": "nyc taxes property",
+      "volume": 40500,
+      "kd": 37,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1065.8
+    },
+    {
+      "keyword": "real estate taxes new york city",
+      "volume": 40500,
+      "kd": 37,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1065.8
+    },
+    {
+      "keyword": "new york property tax",
+      "volume": 40500,
+      "kd": 38,
+      "cpc": 6.09,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 1038.5
+    },
+    {
+      "keyword": "ca state tax calculator",
+      "volume": 27100,
+      "kd": 26,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1003.7
+    },
+    {
+      "keyword": "figuring out net worth",
+      "volume": 27100,
+      "kd": 26,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 1003.7
+    },
+    {
+      "keyword": "commercial mortgage calculator",
+      "volume": 9900,
+      "kd": 9,
+      "cpc": 3.84,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 990.0
+    },
+    {
+      "keyword": "florida income tax",
+      "volume": 12100,
+      "kd": 12,
+      "cpc": 13.96,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 930.8
+    },
+    {
+      "keyword": "calculate net worth",
+      "volume": 27100,
+      "kd": 29,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 903.3
+    },
+    {
+      "keyword": "net worth estimator",
+      "volume": 27100,
+      "kd": 29,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 903.3
+    },
+    {
+      "keyword": "commercial mortgage payment calculator",
+      "volume": 9900,
+      "kd": 10,
+      "cpc": 3.84,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 900.0
+    },
+    {
+      "keyword": "state of california tax calculator",
+      "volume": 27100,
+      "kd": 30,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 874.2
+    },
+    {
+      "keyword": "calculate california state tax",
+      "volume": 27100,
+      "kd": 30,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 874.2
+    },
+    {
+      "keyword": "california tax calculator",
+      "volume": 27100,
+      "kd": 30,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 874.2
+    },
+    {
+      "keyword": "california tax estimator",
+      "volume": 27100,
+      "kd": 30,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 874.2
+    },
+    {
+      "keyword": "estimate net worth",
+      "volume": 27100,
+      "kd": 30,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 874.2
+    },
+    {
+      "keyword": "commercial real estate loan calculator",
+      "volume": 12100,
+      "kd": 13,
+      "cpc": 4.75,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 864.3
+    },
+    {
+      "keyword": "tax calculator in california",
+      "volume": 27100,
+      "kd": 31,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 846.9
+    },
+    {
+      "keyword": "tax calculator 2025",
+      "volume": 27100,
+      "kd": 31,
+      "cpc": 1.37,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 846.9
+    },
+    {
+      "keyword": "mortgage rates calculator",
+      "volume": 40500,
+      "kd": 47,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 843.8
+    },
+    {
+      "keyword": "snowball debt calculator",
+      "volume": 6600,
+      "kd": 7,
+      "cpc": 3.67,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 825.0
+    },
+    {
+      "keyword": "snowball method debt calculator",
+      "volume": 6600,
+      "kd": 7,
+      "cpc": 3.67,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 825.0
+    },
+    {
+      "keyword": "income tax california",
+      "volume": 22200,
+      "kd": 26,
+      "cpc": 4.44,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 822.2
+    },
+    {
+      "keyword": "dave ramsey mortgage payment calculator",
+      "volume": 14800,
+      "kd": 18,
+      "cpc": 6.01,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 778.9
+    },
+    {
+      "keyword": "home price mortgage calculator",
+      "volume": 60500,
+      "kd": 79,
+      "cpc": 3.16,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 756.2
+    },
+    {
+      "keyword": "income tax calculator california",
+      "volume": 18100,
+      "kd": 23,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 754.2
+    },
+    {
+      "keyword": "income tax california calculator",
+      "volume": 18100,
+      "kd": 23,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 754.2
+    },
+    {
+      "keyword": "ca income tax calculator",
+      "volume": 27100,
+      "kd": 35,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 752.8
+    },
+    {
+      "keyword": "calculate california income tax",
+      "volume": 27100,
+      "kd": 35,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 752.8
+    },
+    {
+      "keyword": "calculate tax in california",
+      "volume": 27100,
+      "kd": 35,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 752.8
+    },
+    {
+      "keyword": "tax in usa california",
+      "volume": 27100,
+      "kd": 36,
+      "cpc": 9.1,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 732.4
+    },
+    {
+      "keyword": "california tax bracket calculator",
+      "volume": 18100,
+      "kd": 24,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 724.0
+    },
+    {
+      "keyword": "income tax ca calculator",
+      "volume": 18100,
+      "kd": 24,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 724.0
+    },
+    {
+      "keyword": "pay down debt calculator",
+      "volume": 18100,
+      "kd": 24,
+      "cpc": 5.35,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 724.0
+    },
+    {
+      "keyword": "interest rate for houses",
+      "volume": 40500,
+      "kd": 55,
+      "cpc": 5.86,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 723.2
+    },
+    {
+      "keyword": "interest rate current",
+      "volume": 60500,
+      "kd": 83,
+      "cpc": 5.38,
+      "tier": "adjacent",
+      "competitors": [
+        "nerdwallet.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 720.2
+    },
+    {
+      "keyword": "house tax calculation",
+      "volume": 22200,
+      "kd": 30,
+      "cpc": 5.67,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 716.1
+    },
+    {
+      "keyword": "dave ramsey mortgage calculators",
+      "volume": 14800,
+      "kd": 20,
+      "cpc": 6.01,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 704.8
+    },
+    {
+      "keyword": "dave ramsey net worth",
+      "volume": 18100,
+      "kd": 25,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 696.2
+    },
+    {
+      "keyword": "mortgage loan calculator with extra payments",
+      "volume": 33100,
+      "kd": 47,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 689.6
+    },
+    {
+      "keyword": "paying extra on mortgage payment calculator",
+      "volume": 33100,
+      "kd": 47,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 689.6
+    },
+    {
+      "keyword": "ovo mortgage calculator",
+      "volume": 12100,
+      "kd": 17,
+      "cpc": 1.99,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 672.2
+    },
+    {
+      "keyword": "reverse mortgage calculator",
+      "volume": 12100,
+      "kd": 17,
+      "cpc": 30.95,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 672.2
+    },
+    {
+      "keyword": "california income tax calculator",
+      "volume": 18100,
+      "kd": 26,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 670.4
+    },
+    {
+      "keyword": "after tax",
+      "volume": 18100,
+      "kd": 27,
+      "cpc": 0,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 646.4
+    },
+    {
+      "keyword": "net worth dave ramsey",
+      "volume": 18100,
+      "kd": 27,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 646.4
+    },
+    {
+      "keyword": "net worth of dave ramsey",
+      "volume": 18100,
+      "kd": 27,
+      "cpc": 0,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 646.4
+    },
+    {
+      "keyword": "how to calculate net worth",
+      "volume": 14800,
+      "kd": 22,
+      "cpc": 1.58,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 643.5
+    },
+    {
+      "keyword": "how to compute net worth",
+      "volume": 14800,
+      "kd": 22,
+      "cpc": 1.58,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 643.5
+    },
+    {
+      "keyword": "loan and mortgage calculator",
+      "volume": 49500,
+      "kd": 78,
+      "cpc": 2.59,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 626.6
+    },
+    {
+      "keyword": "housing loan mortgage calculator",
+      "volume": 49500,
+      "kd": 79,
+      "cpc": 2.59,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 618.8
+    },
+    {
+      "keyword": "loan and mortgage calculators",
+      "volume": 49500,
+      "kd": 79,
+      "cpc": 2.59,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 618.8
+    },
+    {
+      "keyword": "mortgage loan calculator",
+      "volume": 49500,
+      "kd": 79,
+      "cpc": 2.59,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 618.8
+    },
+    {
+      "keyword": "mortgage calculator lending",
+      "volume": 49500,
+      "kd": 79,
+      "cpc": 2.59,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 618.8
+    },
+    {
+      "keyword": "calculate reverse mortgage",
+      "volume": 12100,
+      "kd": 19,
+      "cpc": 30.95,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 605.0
+    },
+    {
+      "keyword": "california tax rate calculator",
+      "volume": 18100,
+      "kd": 30,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 583.9
+    },
+    {
+      "keyword": "hourly income tax calculator",
+      "volume": 14800,
+      "kd": 25,
+      "cpc": 6.49,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 569.2
+    },
+    {
+      "keyword": "calculating your net worth",
+      "volume": 27100,
+      "kd": 47,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 564.6
+    },
+    {
+      "keyword": "mortgage early repayment calculator",
+      "volume": 27100,
+      "kd": 47,
+      "cpc": 1.39,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 564.6
+    },
+    {
+      "keyword": "figure out net worth",
+      "volume": 27100,
+      "kd": 48,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 553.1
+    },
+    {
+      "keyword": "budget zero",
+      "volume": 14800,
+      "kd": 26,
+      "cpc": 8.8,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 548.1
+    },
+    {
+      "keyword": "home loan rate calculator",
+      "volume": 40500,
+      "kd": 75,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 532.9
+    },
+    {
+      "keyword": "mortgage loan rate calculator",
+      "volume": 40500,
+      "kd": 75,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 532.9
+    },
+    {
+      "keyword": "mortgage rates and calculator",
+      "volume": 40500,
+      "kd": 75,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 532.9
+    },
+    {
+      "keyword": "debt snowball method",
+      "volume": 18100,
+      "kd": 33,
+      "cpc": 5.98,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 532.4
+    },
+    {
+      "keyword": "snowball method debt",
+      "volume": 18100,
+      "kd": 33,
+      "cpc": 5.98,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 532.4
+    },
+    {
+      "keyword": "smartasset retirement calculator",
+      "volume": 14800,
+      "kd": 27,
+      "cpc": 2.5,
+      "tier": "core",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 528.6
+    },
+    {
+      "keyword": "smartasset capital gains tax calculator",
+      "volume": 12100,
+      "kd": 22,
+      "cpc": 3.8,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 526.1
+    },
+    {
+      "keyword": "us tax calculator california",
+      "volume": 27100,
+      "kd": 51,
+      "cpc": 3.95,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 521.2
+    },
+    {
+      "keyword": "best roth ira accounts",
+      "volume": 18100,
+      "kd": 34,
+      "cpc": 9.07,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 24,
+      "num_competitors": 1,
+      "score": 517.1
+    },
+    {
+      "keyword": "tax calculator 2026",
+      "volume": 27100,
+      "kd": 52,
+      "cpc": 1.92,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 511.3
+    },
+    {
+      "keyword": "dave ramsey mortgage calculator",
+      "volume": 14800,
+      "kd": 28,
+      "cpc": 6.01,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 510.3
+    },
+    {
+      "keyword": "mortgage rate calculator",
+      "volume": 40500,
+      "kd": 79,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 506.2
+    },
+    {
+      "keyword": "home mortgage rate calculator",
+      "volume": 40500,
+      "kd": 79,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 506.2
+    },
+    {
+      "keyword": "interest rate calculator mortgage",
+      "volume": 40500,
+      "kd": 79,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 506.2
+    },
+    {
+      "keyword": "mortgage rate payment calculator",
+      "volume": 40500,
+      "kd": 79,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 506.2
+    },
+    {
+      "keyword": "mortgage rates and calculators",
+      "volume": 40500,
+      "kd": 79,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 506.2
+    },
+    {
+      "keyword": "estimated monthly mortgage payment",
+      "volume": 22200,
+      "kd": 43,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 504.5
+    },
+    {
+      "keyword": "ca tax calculator income",
+      "volume": 18100,
+      "kd": 35,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 502.8
+    },
+    {
+      "keyword": "us california income tax calculator",
+      "volume": 18100,
+      "kd": 35,
+      "cpc": 6.18,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 502.8
+    },
+    {
+      "keyword": "debt snowball",
+      "volume": 18100,
+      "kd": 35,
+      "cpc": 5.98,
+      "tier": "adjacent",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 502.8
+    },
+    {
+      "keyword": "top roth iras",
+      "volume": 18100,
+      "kd": 35,
+      "cpc": 9.07,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 57,
+      "num_competitors": 1,
+      "score": 502.8
+    },
+    {
+      "keyword": "best mortgage calculator",
+      "volume": 27100,
+      "kd": 53,
+      "cpc": 2.38,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 501.9
+    },
+    {
+      "keyword": "home loan mortgage rate calculator",
+      "volume": 40500,
+      "kd": 80,
+      "cpc": 2.29,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 500.0
+    },
+    {
+      "keyword": "figure out monthly payment on mortgage",
+      "volume": 22200,
+      "kd": 46,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 472.3
+    },
+    {
+      "keyword": "income tax florida",
+      "volume": 12100,
+      "kd": 25,
+      "cpc": 13.96,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 465.4
+    },
+    {
+      "keyword": "home interest rate today",
+      "volume": 33100,
+      "kd": 71,
+      "cpc": 5.33,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 459.7
+    },
+    {
+      "keyword": "retirement savings calculator",
+      "volume": 22200,
+      "kd": 48,
+      "cpc": 3.28,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 453.1
+    },
+    {
+      "keyword": "tax estimator",
+      "volume": 27100,
+      "kd": 59,
+      "cpc": 3.64,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 451.7
+    },
+    {
+      "keyword": "micro investing apps",
+      "volume": 8100,
+      "kd": 17,
+      "cpc": 10.73,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 59,
+      "num_competitors": 1,
+      "score": 450.0
+    },
+    {
+      "keyword": "micro-investing app",
+      "volume": 8100,
+      "kd": 17,
+      "cpc": 10.73,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 57,
+      "num_competitors": 1,
+      "score": 450.0
+    },
+    {
+      "keyword": "mortgage calculator ramsey",
+      "volume": 14800,
+      "kd": 32,
+      "cpc": 4.33,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 448.5
+    },
+    {
+      "keyword": "ramsey mortgage calculator",
+      "volume": 14800,
+      "kd": 32,
+      "cpc": 4.33,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 448.5
+    },
+    {
+      "keyword": "simple mortgage formula",
+      "volume": 40500,
+      "kd": 90,
+      "cpc": 1.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 445.1
+    },
+    {
+      "keyword": "estimated net worth",
+      "volume": 27100,
+      "kd": 60,
+      "cpc": 1.65,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 444.3
+    },
+    {
+      "keyword": "home mortgage estimates",
+      "volume": 27100,
+      "kd": 61,
+      "cpc": 2.13,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 437.1
+    },
+    {
+      "keyword": "hourly salary paycheck calculator",
+      "volume": 22200,
+      "kd": 51,
+      "cpc": 4.8,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 426.9
+    },
+    {
+      "keyword": "savings calculator for retirement",
+      "volume": 22200,
+      "kd": 52,
+      "cpc": 3.28,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 418.9
+    },
+    {
+      "keyword": "free mortgage estimates",
+      "volume": 22200,
+      "kd": 56,
+      "cpc": 2.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 389.5
+    },
+    {
+      "keyword": "0 based budget",
+      "volume": 14800,
+      "kd": 38,
+      "cpc": 8.8,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 379.5
+    },
+    {
+      "keyword": "comparison of mortgage interest rates",
+      "volume": 33100,
+      "kd": 88,
+      "cpc": 19.39,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 3,
+      "num_competitors": 1,
+      "score": 371.9
+    },
+    {
+      "keyword": "ramsey solutions investment calculator",
+      "volume": 6600,
+      "kd": 18,
+      "cpc": 15.48,
+      "tier": "core",
+      "competitors": [
+        "ramseysolutions.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 347.4
+    },
+    {
+      "keyword": "mortgage on house calculator",
+      "volume": 27100,
+      "kd": 78,
+      "cpc": 2.13,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 343.0
+    },
+    {
+      "keyword": "income and federal tax calculator",
+      "volume": 18100,
+      "kd": 52,
+      "cpc": 1.37,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 341.5
+    },
+    {
+      "keyword": "home mortgage calculator",
+      "volume": 27100,
+      "kd": 79,
+      "cpc": 2.13,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 338.8
+    },
+    {
+      "keyword": "standard mortgage calculator",
+      "volume": 27100,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 338.8
+    },
+    {
+      "keyword": "home loan payment estimator",
+      "volume": 27100,
+      "kd": 79,
+      "cpc": 2.18,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 338.8
+    },
+    {
+      "keyword": "house calculator mortgage",
+      "volume": 27100,
+      "kd": 79,
+      "cpc": 2.13,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 338.8
+    },
+    {
+      "keyword": "roth ira accounts",
+      "volume": 14800,
+      "kd": 46,
+      "cpc": 13.64,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 70,
+      "num_competitors": 1,
+      "score": 314.9
+    },
+    {
+      "keyword": "income tax calculator smartasset",
+      "volume": 12100,
+      "kd": 39,
+      "cpc": 11.16,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 302.5
+    },
+    {
+      "keyword": "ways to make income on the side",
+      "volume": 8100,
+      "kd": 26,
+      "cpc": 4.55,
+      "tier": "adjacent",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 52,
+      "num_competitors": 1,
+      "score": 300.0
+    },
+    {
+      "keyword": "free home loan calculator mortgage calculator",
+      "volume": 22200,
+      "kd": 78,
+      "cpc": 2.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 281.0
+    },
+    {
+      "keyword": "monthly calculator mortgage",
+      "volume": 22200,
+      "kd": 78,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 281.0
+    },
+    {
+      "keyword": "monthly mortgage loan payment calculator",
+      "volume": 22200,
+      "kd": 78,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 281.0
+    },
+    {
+      "keyword": "free home loan mortgage calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 2.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "free mortgage calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 2.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "monthly mortgage payment calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "monthly payment calculator mortgage",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "mortgage calculator monthly payment",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "mortgage loan monthly payment calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "monthly payment calculator home loan",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "monthly payment mortgage calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "mortgage and monthly payment calculator",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 1.87,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "mortgage loan calculator free",
+      "volume": 22200,
+      "kd": 79,
+      "cpc": 2.31,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 2,
+      "num_competitors": 1,
+      "score": 277.5
+    },
+    {
+      "keyword": "us income taxes calculator",
+      "volume": 18100,
+      "kd": 65,
+      "cpc": 1.37,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 274.2
+    },
+    {
+      "keyword": "side hustle that make money",
+      "volume": 8100,
+      "kd": 34,
+      "cpc": 3.78,
+      "tier": "adjacent",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 61,
+      "num_competitors": 1,
+      "score": 231.4
+    },
+    {
+      "keyword": "calculate mortgage payment",
+      "volume": 18100,
+      "kd": 79,
+      "cpc": 2.32,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 226.2
+    },
+    {
+      "keyword": "calculator mortgage calculator",
+      "volume": 18100,
+      "kd": 79,
+      "cpc": 2.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 226.2
+    },
+    {
+      "keyword": "mortgage estimate calculator",
+      "volume": 18100,
+      "kd": 79,
+      "cpc": 2.45,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 226.2
+    },
+    {
+      "keyword": "mortgage calculator florida",
+      "volume": 12100,
+      "kd": 55,
+      "cpc": 2.34,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 216.1
+    },
+    {
+      "keyword": "mortgage loan calculator florida",
+      "volume": 12100,
+      "kd": 55,
+      "cpc": 2.34,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 216.1
+    },
+    {
+      "keyword": "mortgage payment calculator florida",
+      "volume": 12100,
+      "kd": 55,
+      "cpc": 2.34,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 216.1
+    },
+    {
+      "keyword": "estimate mortgage",
+      "volume": 9900,
+      "kd": 46,
+      "cpc": 3.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 210.6
+    },
+    {
+      "keyword": "smartasset income tax calculator",
+      "volume": 12100,
+      "kd": 61,
+      "cpc": 11.16,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 195.2
+    },
+    {
+      "keyword": "smartasset tax calculator",
+      "volume": 12100,
+      "kd": 61,
+      "cpc": 11.0,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 195.2
+    },
+    {
+      "keyword": "google mortgage loan calculator",
+      "volume": 14800,
+      "kd": 79,
+      "cpc": 1.48,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 185.0
+    },
+    {
+      "keyword": "how much tax",
+      "volume": 12100,
+      "kd": 65,
+      "cpc": 9.17,
+      "tier": "adjacent",
+      "competitors": [
+        "smartasset.com"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 183.3
+    },
+    {
+      "keyword": "home loan estimate",
+      "volume": 9900,
+      "kd": 62,
+      "cpc": 3.23,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 157.1
+    },
+    {
+      "keyword": "investing in real estate investment trusts",
+      "volume": 6600,
+      "kd": 44,
+      "cpc": 9.45,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 91,
+      "num_competitors": 1,
+      "score": 146.7
+    },
+    {
+      "keyword": "sofi investing platform",
+      "volume": 9900,
+      "kd": 67,
+      "cpc": 7.65,
+      "tier": "core",
+      "competitors": [
+        "themodestwallet.com"
+      ],
+      "best_pos": 27,
+      "num_competitors": 1,
+      "score": 145.6
+    },
+    {
+      "keyword": "estimate mortgage payment with taxes",
+      "volume": 9900,
+      "kd": 79,
+      "cpc": 1.97,
+      "tier": "core",
+      "competitors": [
+        "mortgagecalculator.org"
+      ],
+      "best_pos": 1,
+      "num_competitors": 1,
+      "score": 123.8
+    }
+  ]
+}

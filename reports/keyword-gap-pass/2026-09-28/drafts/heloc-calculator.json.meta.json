@@ -1,0 +1,43 @@
+{
+ "slug": "heloc-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1112,
+ "floor": 600,
+ "input_tokens": 18691,
+ "output_tokens": 1886,
+ "thinking_tokens": 796,
+ "cached_tokens": 16816,
+ "est_cost_usd": 0.0146,
+ "guards": {
+  "repairs": [
+   "slug None -> 'heloc-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1112,
+  "numbers_not_in_facts": [
+   "12",
+   "300000",
+   "8200"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17395
+  }
+ },
+ "seconds": 12.1,
+ "response_id": "NsW6avf_FZS3sOIPpr6f4QI",
+ "generated_at": "2026-09-28T19:51:29+0000"
+}

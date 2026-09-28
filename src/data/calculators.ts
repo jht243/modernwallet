@@ -1205,6 +1205,81 @@ export const CALCULATORS: CalculatorDef[] = [
       targetMonths: 24,
     },
   },
+  // HELOC calculator — keyword-gap-pass (2026-09-28): the equity limit (home value x lender CLTV cap,
+  // less the mortgage) plus the draw-period vs repayment-period payment. Every rate, cap and term is a
+  // user input. Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/).
+  {
+    id: "heloc-calculator",
+    islandId: "heloc-calculator",
+    label: "HELOC",
+    navOrder: 38,
+    metaTitle: "HELOC Calculator: Payments, Borrowing Limit & Interest",
+    metaDescription:
+      "Free HELOC calculator. Estimate your borrowing limit, interest-only draw payments, repayment amounts, and rate increase impact.",
+    targetKeyword: "heloc calculator",
+    h1: "HELOC Calculator",
+    introText:
+      "A home equity line of credit (HELOC) calculator shows how much borrowing power your home equity supports and what your monthly payment will be during both the draw and repayment periods. Enter your property value, remaining mortgage balance, the lender's combined loan-to-value (CLTV) limit, your planned draw, and your annual percentage rate (APR) in the tool above.\n\nFor example, consider a $400,000 home with a $250,000 mortgage balance and a lender combined loan-to-value cap of 85%. The most your equity supports is $90,000. If you draw $50,000 at 8.5% APR with a 10-year draw period and a 20-year repayment period, your combined loan-to-value after the draw is 75%. During the draw period, an interest-only payment is $354.17 a month, totaling $42,500 in interest over 10 years. In the repayment period, the monthly payment increases by $79.74 to $433.91, generating $54,138.79 in interest over 20 years. That brings the total interest across 30 years to $96,638.79.",
+    howItWorks:
+      "A home equity line of credit (HELOC) divides into two separate phases: a draw period and a repayment period. During the draw period, which is 10 years in the worked example, many HELOCs permit interest-only payments. In that scenario, your monthly payment covers only the interest that accrues on the balance. In many HELOCs, once the repayment period begins you repay both principal and interest across the remaining term, such as 20 years. Lenders set their own draw periods, repayment terms and fees, so check your lender's offer. If the draw period was interest-only, your monthly obligation rises because you are amortizing the full loan balance over a shorter window.\n\nYour borrowing limit depends on your home value, your current mortgage, and your lender's combined loan-to-value (CLTV) cap. The calculator finds your borrowing ceiling by multiplying your home value by the lender's CLTV cap, then subtracting your outstanding mortgage balance. In the worked example, an 85% cap on a $400,000 property allows up to $340,000 in total debt. Subtracting the $250,000 mortgage leaves a maximum credit line of $90,000. If you take out a $50,000 line, your combined loan debt reaches $300,000, which results in a 75% CLTV.\n\nYou can also select a principal-and-interest draw option, which pays down principal from the first month. Under this schedule, your monthly payment does not jump when repayment starts because you pay down principal from the first month. Paying principal and interest on a $50,000 draw over 30 years at 8.5% APR requires a level payment of $384.46 every month. That path results in $88,404.43 in total interest, compared to $96,638.79 on the interest-only draw path, saving over $8,200 in interest charges across the full term.\n\nThe calculator includes a rate-stress row to show the financial impact of higher interest rates. If your rate rises by 2 percentage points from 8.5% to 10.5% on that $50,000 balance, the monthly interest-only draw payment increases from $354.17 to $437.50, and the monthly repayment amount rises from $433.91 to $499.19. This tool assumes one lump-sum draw at the start, one fixed rate held for the entire term, no fees, no additional draws, and no rate caps. Many HELOCs carry variable rates in practice. The interest rate and CLTV limit in the tool are placeholders. They are not quotes, so replace them with your lender's stated terms.\n\nAccording to [IRS Publication 936](https://www.irs.gov/publications/p936) from the Internal Revenue Service (IRS), interest on home equity loans and lines of credit is deductible only if you use the borrowed funds to buy, build, or substantially improve the home securing the loan. The loan must also be secured by your main home or a second home and satisfy additional federal rules. Consult a qualified tax professional to evaluate your specific situation.",
+    faqs: [
+      {
+        question: "How much can I borrow with a HELOC?",
+        answer:
+          "Your maximum borrowing line equals your home value multiplied by your lender's combined loan-to-value (CLTV) limit, minus your current mortgage balance. On a $400,000 property with an 85% cap and a $250,000 mortgage, the most you can borrow is $90,000. Lenders establish their own CLTV limits, so check with your lender for their exact caps.",
+      },
+      {
+        question: "How is a HELOC payment calculated?",
+        answer:
+          "During an interest-only draw period, your monthly payment is calculated by applying your annual percentage rate (APR) to the drawn balance and dividing by 12. During the repayment period, the calculator uses a standard loan amortization formula over the remaining years to pay off both principal and interest. If you choose principal-and-interest payments from the start, the calculator amortizes the balance across the entire term.",
+      },
+      {
+        question: "What is the difference between the draw period and the repayment period?",
+        answer:
+          "In many HELOCs the draw period is when you borrow against the line, and many agreements permit interest-only payments. In many HELOCs, once the repayment period begins you repay principal and interest each month until the full balance hits zero.",
+      },
+      {
+        question: "Why does my HELOC payment go up when the repayment period starts?",
+        answer:
+          "Your payment rises because you must begin paying down loan principal in addition to interest. On an interest-only draw schedule, none of your previous payments reduced the loan balance. The remaining balance must now be fully amortized across the shorter repayment window.",
+      },
+      {
+        question: "What is CLTV and why does it matter for a HELOC?",
+        answer:
+          "Combined loan-to-value (CLTV) is the percentage of your home value that is encumbered by all mortgage debt combined. It matters because your lender's CLTV cap multiplied by your home value, minus your existing mortgage balance, sets your maximum borrowing line. A lower mortgage balance or higher property appraisal creates more borrowing capacity.",
+      },
+      {
+        question: "Is HELOC interest tax deductible?",
+        answer:
+          "Under Internal Revenue Service (IRS) Publication 936, HELOC interest is deductible only if the funds buy, build, or substantially improve the home securing the debt. The debt must also be secured by your primary or secondary residence and meet other requirements. Speak with a tax professional to determine if your expenses qualify.",
+      },
+      {
+        question: "What happens to my HELOC payment if interest rates rise?",
+        answer:
+          "A higher interest rate increases your monthly payments during both phases. On a $50,000 balance, a 2-point increase from 8.5% to 10.5% raises an interest-only payment from $354.17 to $437.50 and the repayment payment from $433.91 to $499.19. Many lines carry variable rates, meaning your costs can change over time.",
+      },
+      {
+        question: "Should I use a HELOC, a home equity loan, or a personal loan?",
+        answer:
+          "Lenders set their own interest rates, repayment terms, and fees for each product, so you should compare actual quotes. You can examine tradeoffs in our guide on [home equity loans vs personal loans](/compare/home-equity-loan-vs-personal-loan/) before deciding. You can also calculate alternative borrowing costs with our [personal loan calculator](/personal-loan/).",
+      },
+    ],
+    sources: [
+      { label: "IRS — Publication 936, Home Mortgage Interest Deduction", url: "https://www.irs.gov/publications/p936" },
+    ],
+    updated: "2026-09-28",
+    defaultPreset: {
+      homeValue: 400000,
+      mortgageBalance: 250000,
+      maxCltvPct: 85,
+      drawnBalance: 50000,
+      aprPct: 8.5,
+      drawYears: 10,
+      repayYears: 20,
+      drawPaymentType: "interest-only",
+      stressPoints: 2,
+    },
+  },
   {
     id: "pto-cashout",
     islandId: "pto-cashout",

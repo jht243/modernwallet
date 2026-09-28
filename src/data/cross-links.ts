@@ -40,6 +40,14 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/iul-vs-401k/", label: "IUL vs 401(k): which wins" },
     { href: "/compare/iul-vs-roth-ira/", label: "IUL vs Roth IRA" },
   ],
+  "heloc-calculator": [
+    { href: "/mortgage/", label: "Compare against a mortgage payment" },
+    { href: "/personal-loan/", label: "Compare a personal loan instead" },
+    { href: "/budget/", label: "Does the payment fit your budget?" },
+    { href: "/net-worth/", label: "See your full net worth" },
+    { href: "/compare/home-equity-loan-vs-personal-loan/", label: "Home equity loan vs personal loan" },
+    { href: "/compare/401k-loan-vs-heloc/", label: "401(k) loan vs HELOC" },
+  ],
   "auto-loan": [
     { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
     { href: "/budget/", label: "Does this fit your budget?" },
@@ -50,6 +58,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Read this first" },
   ],
   "mortgage": [
+    { href: "/heloc-calculator/", label: "Borrowing against your equity? Model a HELOC" },
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
     { href: "/budget/", label: "Build a monthly budget" },
     { href: "/net-worth/", label: "Check if you're financially ready" },
@@ -109,6 +118,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/lending-money-to-family-boundaries/", label: "Lending money to family? Set boundaries first" },
   ],
   "personal-loan": [
+    { href: "/heloc-calculator/", label: "Own a home? Compare a HELOC payment" },
     { href: "/budget/", label: "Does the payment fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/credit-card-payoff/", label: "Compare against paying the card down directly" },

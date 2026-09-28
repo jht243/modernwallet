@@ -1,6 +1,8 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-09-13 — keyword-gap-pass-auto: SEMRUSH dead (403), Ahrefs workspace quota preserved for other routines (99,981/100k used) — Lens 1 did not run. Lens 2 (Autocomplete) mined 2 fresh seeds (social security calculator, hsa calculator) — both flagged left-for-human as new-vertical calculator builds. Shipped 2 carried-over 2026-08-30 backlog rows that were previously audit-blocked on a mechanical FAQ-formatting defect only (`what-is-a-family-trust`, `how-to-pay-off-debt`) — rewritten with the defect fixed, passed audit on the 2nd rework, shipped with 6 new inbound links from related existing pages. See `## 2026-09-13 keyword-gap-pass-auto — newly tracked gap keywords` below._
+> _Updated: 2026-09-28 — keyword-gap-pass-auto: DataForSEO Lens 1 ran (497 gap rows); shipped /heloc-calculator/ (new tool). Gap keywords added at the bottom section._
+>
+> _Prior: 2026-09-13 — keyword-gap-pass-auto: SEMRUSH dead (403), Ahrefs workspace quota preserved for other routines (99,981/100k used) — Lens 1 did not run. Lens 2 (Autocomplete) mined 2 fresh seeds (social security calculator, hsa calculator) — both flagged left-for-human as new-vertical calculator builds. Shipped 2 carried-over 2026-08-30 backlog rows that were previously audit-blocked on a mechanical FAQ-formatting defect only (`what-is-a-family-trust`, `how-to-pay-off-debt`) — rewritten with the defect fixed, passed audit on the 2nd rework, shipped with 6 new inbound links from related existing pages. See `## 2026-09-13 keyword-gap-pass-auto — newly tracked gap keywords` below._
 >
 > _Prior: 2026-09-02 — autocomplete-pass-auto mined 6 seeds (iul, auto loan, portfolio, elder care, estate planning, business loan payoff calculators), shipped 16 new pages + 6 asset specs, 18 metadata rewrites, 29 body updates. See `## 2026-09-02 autocomplete-pass — newly classified keywords` below for the full list._
 >
@@ -10358,3 +10360,12 @@ All 22 actionable rows are queued for execution (Phases 1–9 of `/autocomplete-
 ### Already-shipped, confirmed during this pass' dedup (no page edit; logged so future passes don't re-propose)
 
 `net-worth-by-age-calculator` (already covers "net worth calculator by age usa"), `mortgage-amortization-schedule-excel-template` guide (already covers "mortgage calculator google sheets template"), `uber-driver-taxes` (already covers "uber mileage deduction calculator" via its own mileage FAQ), `withdrawal-calculator` + investing-hub inflation FAQ (already covers "investment calculator with withdrawals and inflation"), `1099-vs-w2-calculator` (already covers "freelance rate vs salary calculator" / "freelance rate to salary calculator").
+
+
+## Keyword-gap pass 2026-09-28 (Target URL | Primary Keyword | Supporting Keywords)
+
+| Target URL | Primary Keyword | Supporting Keywords |
+|---|---|---|
+| /heloc-calculator/ | heloc calculator | heloc payment calculator; home equity line of credit calculator; heloc payment estimator; home equity line calculator; calculate payment on heloc; homeowners line of credit calculator; how much can i borrow with a heloc |
+| /mortgage/payoff-calculator/ | mortgage payoff calculator | mortgage payoff estimator; pay off mortgage early calculator; early mortgage payoff calculator; pay down mortgage calculator |
+| /mortgage/extra-payment-calculator/ | mortgage extra payment calculator | mortgage calculator with extra payments; extra payment mortgage calculator |
