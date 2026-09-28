@@ -19,7 +19,7 @@ model silently.
 | Env | Default | Meaning |
 |---|---|---|
 | `CONTENT_MODEL` | `gemini-3.8-flash` | primary writer. Changing the fleet's model = changing this value. |
-| `CONTENT_FALLBACK_MODEL` | `gpt-5.6-sol` | used ONLY when the primary errors, truncates, or returns nothing. Always logged. `""` disables. |
+| `CONTENT_FALLBACK_MODEL` | `gpt-6-sol` | used ONLY when the primary errors, truncates, or returns nothing. Always logged. `""` disables. |
 | `CONTENT_THINKING` | `high` | reasoning effort — **`high` is the fleet standard for every writer model** (Gemini `thinkingLevel`, OpenAI `reasoning.effort`, Anthropic extended thinking). Never lower it per routine without a stated reason; an invalid value falls back to `high`. |
 | `CONTENT_MAX_TOKENS` | `40000` | thinking tokens count against this on Gemini — keep it high |
 

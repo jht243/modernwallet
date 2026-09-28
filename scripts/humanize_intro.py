@@ -2,7 +2,7 @@
 """
 humanize_intro.py — PORTABLE, store-agnostic intro re-voicer (fleet-wide).
 
-Text in, humanised text out. One call to GPT-5.6 Sol with one fixed prompt and NO ban
+Text in, humanised text out. One call to GPT-6 Sol with one fixed prompt and NO ban
 list. It does not know or care how this repo stores content — the routine that calls it
 reads the new page's intro paragraphs from its own store (TS data file, Astro/markdown
 frontmatter, DB row, whatever), pipes them in here, and writes the result back.
@@ -53,7 +53,7 @@ PROMPT = (
     "make this sound more human. you can change structure, rhythm, tone, and word choice, but do not "
     "change what it means. keep every fact, number, name and link. keep every hedge exactly as strong or as weak as it already is: if it says may, can, often, most, almost never, or usually, it must still say something just as tentative. do not make a statement firmer or softer than it is, do not turn an example list into a complete one or a complete list into examples, do not swap a term of art for a near-synonym, and add nothing that is not already there"
 )
-MODEL = os.environ.get("HUMANIZE_MODEL", "gpt-5.6-sol")
+MODEL = os.environ.get("HUMANIZE_MODEL", "gpt-6-sol")
 
 # Attribution / legal copy: never sent to the model, restored in place afterwards.
 PROTECTED = re.compile(
