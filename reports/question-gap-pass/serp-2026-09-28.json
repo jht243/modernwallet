@@ -1,0 +1,454 @@
+{
+ "pages": {
+  "/compare/trump-account-vs-brokerage-account/": {
+   "query": "brokerage account vs trump account",
+   "paa": [
+    "Is it worth investing in a Trump Account?",
+    "What brokerage does the Trump Account use?",
+    "What is the downside to a brokerage account?",
+    "Is the Trump Account a custodial brokerage account?",
+    "Is a brokerage account better than a Trump Account?",
+    "Who is eligible for a Trump Account?"
+   ],
+   "related_searches": [
+    "Trump account tax advantages",
+    "Trump account vs custodial account",
+    "How are Trump Accounts invested",
+    "Trump account investment options",
+    "Trump account withdrawal rules",
+    "Trump account vs 529",
+    "Trump Account vs UTMA",
+    "Trump Accounts portal"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.monotelo.com",
+    "www.reddit.com",
+    "bipartisanpolicy.org",
+    "www.psca.org",
+    "www.acorns.com",
+    "www.youtube.com",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "www.cnbc.com",
+    "crr.bc.edu"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.monotelo.com",
+    "www.reddit.com",
+    "www.acorns.com",
+    "www.schwab.com",
+    "www.psca.org",
+    "bipartisanpolicy.org",
+    "crr.bc.edu",
+    "www.investor.gov",
+    "skwealth.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/compare/trump-account-vs-savings-account/": {
+   "query": "trump account vs high yield savings",
+   "paa": [
+    "Is a Trump Account better than a savings account?",
+    "What accounts are better than Trump accounts?",
+    "Is a Trump Account a high-yield savings account?",
+    "What are the pros and cons of Trump accounts?",
+    "Is a Trump account better than a 529?",
+    "Is TrumpAccount.com legit?"
+   ],
+   "related_searches": [
+    "Trump account vs 529",
+    "Trump account tax advantages",
+    "Trump account interest rate",
+    "Trump account vs IRA",
+    "Trump Account vs UTMA",
+    "Trump account for older kids $250",
+    "Trump account vs Roth IRA",
+    "Trump account vs custodial account"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "www.wbaltv.com",
+    "am.jpmorgan.com",
+    "www.schwab.com",
+    "stories.wf.com",
+    "www.morningstar.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cnn.com",
+    "www.franklintempleton.com",
+    "bipartisanpolicy.org",
+    "am.jpmorgan.com",
+    "www.fidelity.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "www.congress.gov",
+    "www.wbaltv.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/trump-account-vs-baby-bonds/": {
+   "query": "trump accounts vs baby bonds",
+   "paa": [
+    "What is the $1000 Trump account for newborns?",
+    "Are baby bonds still a thing?",
+    "Is the ugma or trump account better?",
+    "What is the age limit for the Trump child account?",
+    "Are Trump accounts a good idea?",
+    "Can Trump accounts be converted to Roth IRA?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.brookings.edu",
+    "www.forbes.com",
+    "www.youtube.com",
+    "www.irs.gov",
+    "trumpaccounts.gov",
+    "crr.bc.edu",
+    "www.fidelity.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fox61.com",
+    "www.caledonianrecord.com",
+    "www.courant.com",
+    "www.instagram.com",
+    "fox8.com",
+    "www.wusa9.com",
+    "abc13.com",
+    "www.facebook.com",
+    "www.instagram.com",
+    "www.kvue.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/trump-account/": {
+   "query": "how much will $1000 grow in 18 years",
+   "paa": [
+    "How much will $1000 be worth in 20 years?",
+    "How to turn $1000 into $10000 quickly?",
+    "What if I invested $1000 in Coca-Cola 20 years ago?",
+    "What is the future value of $10,000 in 20 years?",
+    "How long will it take to become a millionaire if I invest $1000 a month?",
+    "What is the smartest thing to do with $20,000?"
+   ],
+   "related_searches": [
+    "Country music singer rushed to hospital",
+    "Men's hockey team controversy"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "finance.yahoo.com",
+    "www.moneylion.com",
+    "www.facebook.com",
+    "x.com",
+    "www.gobankingrates.com",
+    "www.instagram.com",
+    "www.facebook.com",
+    "finance.yahoo.com",
+    "patch.com",
+    "moneywise.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/estate-planning/living-trust-cost-calculator/": {
+   "query": "can you put life insurance in a trust",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "unread",
+   "error": "SERP read failed: Remote end closed connection without response"
+  },
+  "/investing/withdrawal-calculator/": {
+   "query": "compound interest calculator withdrawals",
+   "paa": [],
+   "related_searches": [
+    "Compound interest with withdrawals formula",
+    "Compound interest with withdrawals calculator Vanguard",
+    "Monthly investment withdrawal calculator",
+    "Best retirement withdrawal calculator",
+    "Monthly retirement withdrawal calculator",
+    "Investment calculator with withdrawals and inflation",
+    "Savings withdrawal calculator with interest",
+    "Simple savings withdrawal calculator",
+    "Compound interest calculator withdrawals s&p 500"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.advancefcu.org",
+    "www.thecalculatorsite.com",
+    "www.cnbankpa.com",
+    "www.bankrate.com",
+    "reedcorp.tax",
+    "www.schwabmoneywise.com",
+    "www.getsmarteraboutmoney.ca"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.thecalculatorsite.com",
+    "www.cnbankpa.com",
+    "www.mackenzieinvestments.com",
+    "www.bankrate.com",
+    "www.advancefcu.org",
+    "www.calcxml.com",
+    "www.investor.gov",
+    "www.bancfirst.bank",
+    "www.annuityexpertadvice.com",
+    "www.annuityexpertadvice.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/guides/trump-account-worth-it/": {
+   "query": "advantage of trump account",
+   "paa": [
+    "What are the cons of opening a Trump account?",
+    "Where does the $1000 Trump account money come from?",
+    "What income will benefit from Trump's tax plan?",
+    "Are Trump accounts actually tax advantaged?",
+    "Who can take advantage of Trump accounts?",
+    "Can Trump accounts be converted to Roth IRA?"
+   ],
+   "related_searches": [
+    "Trump account tax advantages",
+    "Trump account vs 529",
+    "Trump account for older kids $250",
+    "Who is eligible for Trump Accounts",
+    "Trump account investment options",
+    "Trump account withdrawal rules",
+    "Should I open a Trump account for my child",
+    "Trump account $250"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "trumpaccounts.gov",
+    "www.schwab.com",
+    "www.ameriprise.com",
+    "www.congress.gov",
+    "www.usbank.com",
+    "www.eisneramper.com",
+    "www.youtube.com",
+    "www.chase.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.schwab.com",
+    "www.irs.gov",
+    "www.fidelity.com",
+    "www.ameriprise.com",
+    "crr.bc.edu",
+    "www.reddit.com",
+    "www.congress.gov",
+    "www.actec.org",
+    "www.usbank.com",
+    "bipartisanpolicy.org"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/estate-planning/will-cost-calculator/new-mexico/": {
+   "query": "create a will new mexico",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "unread",
+   "error": "SERP read failed: task 40101 Internal SE Server Error."
+  },
+  "/retirement/military-retirement-calculator/": {
+   "query": "military retirement calculator",
+   "paa": [
+    "How much is E7 retirement pay with 20 years?",
+    "How much is a 20 year pension worth in the military?",
+    "How can I calculate my military retirement?",
+    "How much social security would I get if I make $70,000 a year?",
+    "How much do you have to make to get $3,000 a month in Social Security?",
+    "How much do you have to make to get $4000 a month in Social Security?"
+   ],
+   "related_searches": [
+    "Military retirement calculator monthly",
+    "Military retirement pay Chart",
+    "20 year military retirement calculator",
+    "Military High-3 retirement calculator",
+    "Military retirement calculator army",
+    "Best military retirement calculator monthly",
+    "Military retirement Calculator app",
+    "Simple military retirement calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "militarypay.defense.gov",
+    "www.dfas.mil",
+    "www.usa.gov",
+    "myarmybenefits.us.army.mil",
+    "myairforcebenefits.us.af.mil",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "militarypay.defense.gov",
+    "veteran.com",
+    "militarypay.defense.gov",
+    "myairforcebenefits.us.af.mil",
+    "militarypay.defense.gov",
+    "militaryretirementcalc.com",
+    "www.militaryonesource.mil",
+    "usaaef.org",
+    "themilitarywallet.com",
+    "myarmybenefits.us.army.mil"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-ira-accounts/": {
+   "query": "abc bank open an ira dallas tx",
+   "paa": [
+    "Can I open an IRA account at a bank?",
+    "How much money do I need to open an IRA account?",
+    "What is the best place to open an IRA account?",
+    "Who is the best to open a traditional IRA?",
+    "Is it better to put money in a CD or an IRA?",
+    "Can I lose my IRA if the market crashes?"
+   ],
+   "related_searches": [
+    "ABC Bank customer service",
+    "American Bank of Commerce locations",
+    "ABC Bank plano",
+    "ABC Bank Dallas",
+    "American Bank of Commerce headquarters",
+    "American Bank of Commerce login",
+    "American Bank of Commerce asset size",
+    "American Bank of Commerce Lubbock"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "theabcbank.com",
+    "theabcbank.com",
+    "www.facebook.com",
+    "theabcbank.com",
+    "www.bankofamerica.com",
+    "www.txbank.com",
+    "www.bankoftexas.com",
+    "texasfirst.bank",
+    "theabcbank.com",
+    "www.wellsfargo.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/high-yield-savings-calculator/": {
+   "query": "high yield savings calculator",
+   "paa": [
+    "How much would $10,000 make in a high-yield savings?",
+    "How much will $100,000 make in a high-yield savings account?",
+    "Which bank gives 7% interest on savings?",
+    "How much do I need in a Hysa to make $1000 a month?",
+    "How long will it take to become a millionaire if I invest $1000 a month?",
+    "What are the risks of high-yield savings?"
+   ],
+   "related_searches": [
+    "Saving account interest calculator monthly",
+    "High-yield savings account monthly calculator",
+    "Best high yield savings",
+    "High-yield savings calculator Amex",
+    "High-yield calculator",
+    "High-yield savings account calculator compounded monthly",
+    "High-yield savings calculator Capital One",
+    "Discover high-yield savings calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.sofi.com",
+    "www.bankrate.com",
+    "bell.bank",
+    "www.cit.com",
+    "www.firstcitycu.org",
+    "www.usnews.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.sofi.com",
+    "www.nerdwallet.com",
+    "bell.bank",
+    "www.firstcitycu.org",
+    "www.marcus.com",
+    "finred.usalearning.gov",
+    "www.cit.com",
+    "www.usnews.com",
+    "www.evabank.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/net-worth/liquid-net-worth-calculator/": {
+   "query": "liquid net worth calculator",
+   "paa": [
+    "How do you calculate your liquid net worth?",
+    "Is a 401k considered part of liquid net worth?",
+    "How many Americans have $1,000,000 in liquid assets?",
+    "Does a house count as liquid net worth?",
+    "Is $3 million in liquid assets a lot?",
+    "Who is the richest person with liquid assets?"
+   ],
+   "related_searches": [
+    "Liquid net worth calculator with steps",
+    "Liquid net worth vs net worth",
+    "Liquid net worth percentile",
+    "Does liquid net worth include 401k",
+    "Liquid net worth by age",
+    "Average liquid net worth",
+    "What is total net worth",
+    "Are stocks liquid net worth"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "www.omnicalculator.com",
+    "www.sofi.com",
+    "finance.yahoo.com",
+    "www.inc.com",
+    "projectionlab.com",
+    "www.bonsave.app"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.omnicalculator.com",
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "wealthtender.com",
+    "www.ramseysolutions.com",
+    "instacalc.com",
+    "www.sofi.com",
+    "investor.sebi.gov.in",
+    "smartasset.com",
+    "www.wiseradvisor.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 11 calls, $0.04335 of $2.00 budget"
+}
