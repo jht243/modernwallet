@@ -206,3 +206,8 @@
 | /compare/voo-vs-spy | 2026-09-26 | 1 | 0/1/0/0/0 | 0 |
 | /roundup/best-ai-stock-pickers | 2026-09-26 | 1 | 0/0/1/0/0 | 0 |
 | /compare/utma-vs-ugma/ | 2026-09-26 | 1 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-scams | 2026-09-29 | 2 | 0/0/0/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-09-29 | 1 | 0/0/0/0/0 | 1 |
+| /guides/personal-loans-for-excellent-credit/ | 2026-09-29 | 1 | 0/0/1/0/0 | 0 |
+| /personal-loan/ | 2026-09-29 | 1 | 1/0/0/0/0 | 0 |
+| /roundup/best-dividend-etfs/ | 2026-09-29 | 1 | 0/0/0/0/0 | 0 |

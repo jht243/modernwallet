@@ -1,0 +1,4 @@
+{
+ "question": "Can I still get a good personal loan rate with good credit instead of excellent credit?",
+ "answer": "Yes, you can qualify with a credit score below 720, though lenders reserve their lowest published rates and highest loan amounts for excellent credit. Lenders also weigh income, existing debt, and debt-to-income ratio, and prequalification allows you to check terms using a soft credit pull that does not affect your score. An origination fee deducted from your payout raises your total cost above the advertised annual percentage rate (APR), which you can verify using the [personal loan calculator](/personal-loan/). To compare published spreads across institutions, check [personal loan rates by lender](/roundup/personal-loan-rates-by-lender/)."
+}

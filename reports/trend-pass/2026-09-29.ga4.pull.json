@@ -1,0 +1,64 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-29",
+  "window_start": "2026-09-29",
+  "window_end": "2026-09-29",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-account-scams",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/personal-loans-for-excellent-credit/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/personal-loan/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-dividend-etfs/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 6,
+  "top10_pages_total_clicks": 6,
+  "channel_split": {
+    "/guides/trump-account-scams": {
+      "Direct": 2
+    },
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 1
+    },
+    "/guides/personal-loans-for-excellent-credit/": {
+      "Cross-network": 1
+    },
+    "/personal-loan/": {
+      "Cross-network": 1
+    },
+    "/roundup/best-dividend-etfs/": {
+      "Direct": 1
+    }
+  }
+}
