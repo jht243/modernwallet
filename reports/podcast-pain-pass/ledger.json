@@ -554,6 +554,24 @@
   ],
   "deferred_rows": [
     {
+      "slug": "medicare-costs-2026-part-b-premium-irmaa",
+      "target": "/guides/medicare-costs-2026-part-b-premium-irmaa/",
+      "volume": 49500,
+      "note": "dropped 2026-09-29: failed Phase 4 audit x3 (unlisted claims); retry with narrower fact list + SSA/IRS URLs added to allowed list"
+    },
+    {
+      "slug": "medicare-enrollment-periods",
+      "target": "/guides/medicare-enrollment-periods/",
+      "volume": 6600,
+      "note": "dropped 2026-09-29: failed audit x3; needs fuller medicare.gov fact list"
+    },
+    {
+      "slug": "health-insurance-before-medicare-early-retirement",
+      "target": "/guides/health-insurance-before-medicare-early-retirement/",
+      "volume": 1000,
+      "note": "dropped 2026-09-29: failed audit x3; needs healthcare.gov/COBRA fact list"
+    },
+    {
       "slug": "gold-etf-vs-physical-gold",
       "target": "/compare/gold-etf-vs-physical-gold/",
       "volume": 480,

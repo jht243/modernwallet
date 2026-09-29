@@ -11,29 +11,34 @@
  "thinking": "high",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1718,
- "floor": 1200,
- "input_tokens": 18723,
- "output_tokens": 2792,
- "thinking_tokens": 11222,
+ "words": 1298,
+ "floor": 700,
+ "input_tokens": 20146,
+ "output_tokens": 2466,
+ "thinking_tokens": 17161,
  "cached_tokens": 17634,
- "est_cost_usd": 0.0567,
+ "est_cost_usd": 0.0788,
  "guards": {
-  "repairs": [],
+  "repairs": [
+   "removed 1 off-list link(s), kept the text"
+  ],
   "flags": [
    "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "auditor: verify the sentences that cited ['https://www.healthcare.gov/'] are still supported"
   ],
-  "disallowed_urls_removed": [],
-  "words": 1718,
+  "disallowed_urls_removed": [
+   "https://www.healthcare.gov/"
+  ],
+  "words": 1298,
   "numbers_not_in_facts": [
    "15",
-   "55",
-   "62"
+   "30",
+   "64"
   ],
   "writer_scope": {
    "dropped_sections": [],
@@ -42,7 +47,7 @@
    "tokens_sent_est": 18073
   }
  },
- "seconds": 55.6,
- "response_id": "n7q7atK6C_jqjMcP84PhkQQ",
- "generated_at": "2026-09-29T13:19:17+0000"
+ "seconds": 69.0,
+ "response_id": "4by7apytBum_39IP5ZPo2Q4",
+ "generated_at": "2026-09-29T13:29:09+0000"
 }

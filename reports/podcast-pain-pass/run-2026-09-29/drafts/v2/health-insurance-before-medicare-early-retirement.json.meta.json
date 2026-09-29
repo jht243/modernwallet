@@ -2,22 +2,22 @@
  "slug": "health-insurance-before-medicare-early-retirement",
  "schema": "guide",
  "kind": "write",
- "model": "gemini-3.8-flash",
- "provider": "gemini",
+ "model": "gpt-6-sol",
+ "provider": "openai",
  "requested_model": "gemini-3.8-flash",
- "fallback_used": false,
- "fallback_reason": null,
+ "fallback_used": true,
+ "fallback_reason": "gemini-3.8-flash: empty response (finish=RECITATION)",
  "retried_for_truncation": false,
  "thinking": "high",
- "key_source": "GEMINI_API_KEY",
+ "key_source": "OPENAI_API_KEY",
  "finish_reason": "STOP",
- "words": 1531,
- "floor": 700,
- "input_tokens": 20423,
- "output_tokens": 2716,
- "thinking_tokens": 20363,
- "cached_tokens": 17634,
- "est_cost_usd": 0.0919,
+ "words": 1593,
+ "floor": 900,
+ "input_tokens": 18804,
+ "output_tokens": 6130,
+ "thinking_tokens": 3624,
+ "cached_tokens": 0,
+ "est_cost_usd": null,
  "guards": {
   "repairs": [],
   "flags": [
@@ -29,7 +29,7 @@
    "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
   "disallowed_urls_removed": [],
-  "words": 1531,
+  "words": 1593,
   "numbers_not_in_facts": [],
   "writer_scope": {
    "dropped_sections": [],
@@ -38,7 +38,7 @@
    "tokens_sent_est": 18073
   }
  },
- "seconds": 79.3,
- "response_id": "4by7aq7pBuTW-8YPlP-VwQU",
- "generated_at": "2026-09-29T13:29:19+0000"
+ "seconds": 146.4,
+ "response_id": "resp_0b616493f8b9ef83006abbbbe62cf887d2ae8657277840eaf1",
+ "generated_at": "2026-09-29T13:25:28+0000"
 }

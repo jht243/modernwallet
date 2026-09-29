@@ -1,0 +1,5 @@
+# Podcast Pain Pass — 2026-09-29 — 0 pages shipped
+36 episodes mined (6 shows x6; Simply Investing Dividend and Personal Finance Club: 0 new). 82 pain sentences: budget 27, retirement 19, investing 17, tax-estate 12, real-estate 6, net-worth 1.
+Keyword data: volume=dataforseo, kd=semrush. All 14 Lens-1 head terms already covered on site (dedup DROP).
+Lens 2/3: 14 candidates vetted by adversarial dedup: KEEP medicare part b premium/IRMAA (merged), medicare enrollment periods, early-retirement health insurance (+ACA folded), gold ETF vs physical gold, surrender life insurance, HELOC risks, types of budgets; DROP how to pay off debt, 529-to-Roth rollover, trump accounts; RECLASSIFY how to retire early, pay cash vs finance car.
+Three pages were generated (gemini-3.8-flash; one regen round fell back to gpt-6-sol on the health page) and each FAILED the adversarial Phase 4 audit three times (initial + 2 regenerations) for claims outside the closed fact list. Per the YMYL guardrail and remediation ladder they were DROPPED, not published. Drafts kept under drafts/, v1, v2 for provenance. Rows saved in ledger deferred_rows.

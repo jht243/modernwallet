@@ -11,31 +11,35 @@
  "thinking": "high",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1355,
- "floor": 700,
- "input_tokens": 20717,
- "output_tokens": 2712,
- "thinking_tokens": 21035,
+ "words": 1840,
+ "floor": 1300,
+ "input_tokens": 19294,
+ "output_tokens": 3361,
+ "thinking_tokens": 10936,
  "cached_tokens": 17634,
- "est_cost_usd": 0.0947,
+ "est_cost_usd": 0.0582,
  "guards": {
-  "repairs": [
-   "removed 1 off-list link(s), kept the text"
-  ],
+  "repairs": [],
   "flags": [
    "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "auditor: verify the sentences that cited ['https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-coverage-start'] are still supported"
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
-  "disallowed_urls_removed": [
-   "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-coverage-start"
+  "disallowed_urls_removed": [],
+  "words": 1840,
+  "numbers_not_in_facts": [
+   "109001",
+   "1148.4",
+   "300000",
+   "35",
+   "44",
+   "49.5",
+   "65",
+   "92"
   ],
-  "words": 1355,
-  "numbers_not_in_facts": [],
   "writer_scope": {
    "dropped_sections": [],
    "html_comments_dropped": 0,
@@ -43,7 +47,7 @@
    "tokens_sent_est": 18073
   }
  },
- "seconds": 84.7,
- "response_id": "4by7asahA7SB-8YP0qSxyQ4",
- "generated_at": "2026-09-29T13:29:25+0000"
+ "seconds": 54.9,
+ "response_id": "n7q7aqLpFMSijrEPwJux4QY",
+ "generated_at": "2026-09-29T13:19:16+0000"
 }

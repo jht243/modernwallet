@@ -1,5 +1,5 @@
 {
- "slug": "medicare-costs-2026-part-b-premium-irmaa",
+ "slug": "medicare-enrollment-periods",
  "schema": "guide",
  "kind": "write",
  "model": "gemini-3.8-flash",
@@ -11,30 +11,25 @@
  "thinking": "high",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1355,
- "floor": 700,
- "input_tokens": 20717,
- "output_tokens": 2712,
- "thinking_tokens": 21035,
+ "words": 1304,
+ "floor": 900,
+ "input_tokens": 19453,
+ "output_tokens": 2333,
+ "thinking_tokens": 13115,
  "cached_tokens": 17634,
- "est_cost_usd": 0.0947,
+ "est_cost_usd": 0.0626,
  "guards": {
-  "repairs": [
-   "removed 1 off-list link(s), kept the text"
-  ],
+  "repairs": [],
   "flags": [
    "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
    "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "auditor: verify the sentences that cited ['https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-coverage-start'] are still supported"
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
   ],
-  "disallowed_urls_removed": [
-   "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-does-coverage-start"
-  ],
-  "words": 1355,
+  "disallowed_urls_removed": [],
+  "words": 1304,
   "numbers_not_in_facts": [],
   "writer_scope": {
    "dropped_sections": [],
@@ -43,7 +38,7 @@
    "tokens_sent_est": 18073
   }
  },
- "seconds": 84.7,
- "response_id": "4by7asahA7SB-8YP0qSxyQ4",
- "generated_at": "2026-09-29T13:29:25+0000"
+ "seconds": 62.5,
+ "response_id": "tru7atymMpjXjMcPwMGtyA0",
+ "generated_at": "2026-09-29T13:24:04+0000"
 }
