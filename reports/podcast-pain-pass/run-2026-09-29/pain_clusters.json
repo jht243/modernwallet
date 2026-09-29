@@ -1,0 +1,48 @@
+{
+ "retirement": {
+  "count": 19,
+  "examples": [
+   "Health insurance, when you can touch your money, how much you can safely spend, all of these things and more are completely different the earlier you retire.",
+   "Some direct quotes we heard when we surveyed people is I wish I had retired earlier.",
+   "Some of the specific things we heard on the survey are people saying, I wish I'd used the Roth IRA earlier."
+  ]
+ },
+ "budget": {
+  "count": 27,
+  "examples": [
+   "Health insurance, when you can touch your money, how much you can safely spend, all of these things and more are completely different the earlier you retire.",
+   "The gap is how much you want to spend.",
+   "And that gap is the difference between how much you want to spend and how much income is coming in."
+  ]
+ },
+ "investing": {
+  "count": 17,
+  "examples": [
+   "That's a 60% increase in terms of how much is coming from your portfolio, which means there's a lot of pressure being put on your portfolio.",
+   "Because if your portfolio gets hit at that time and your spending's too high, that's where things can really get ugly.",
+   "How much of that should I pull from my traditional IRA versus my Roth IRA versus my brokerage account?"
+  ]
+ },
+ "tax-estate": {
+  "count": 12,
+  "examples": [
+   "You can calculate how much you're going to owe additional in taxes perhaps.",
+   "Also, well, how much money can you tax loss harvest in a given year, Matt?",
+   "How much money in taxes do you think they paid?"
+  ]
+ },
+ "real-estate": {
+  "count": 6,
+  "examples": [
+   "But hey, if you're like, I don't know how to do this, I don't want to do this, I don't want to figure it out, but I do want to reduce my property tax bill, that's a good way to go.",
+   "We'll take a look at one of their deals and see how much money the property is making.",
+   "How much involvement do you have in being involved with the property?"
+  ]
+ },
+ "net-worth": {
+  "count": 1,
+  "examples": [
+   "I didn't know what a net worth was."
+  ]
+ }
+}

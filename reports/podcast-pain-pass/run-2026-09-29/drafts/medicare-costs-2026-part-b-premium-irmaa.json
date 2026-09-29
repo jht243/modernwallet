@@ -1,0 +1,82 @@
+{
+  "slug": "medicare-costs-2026-part-b-premium-irmaa",
+  "title": "Medicare Part B Premium 2026: Costs and IRMAA Brackets",
+  "metaDescription": "The standard Medicare Part B premium 2026 is $202.90 and the deductible is $283. See the six 2026 IRMAA brackets, surcharges, and how income affects your tier.",
+  "h1": "Medicare Part B Premium 2026 and IRMAA Brackets",
+  "cardBlurb": "The standard 2026 Part B premium, annual deductible, and the six income tiers that trigger an IRMAA surcharge.",
+  "introText": "The standard Medicare Part B premium 2026 is $202.90 per month, and the annual Part B deductible is $283. At ModernWallet, we track Medicare baseline updates and retirement tax thresholds to help people protect their household cash flow.\n\nMost enrollees pay this standard rate, but higher-income beneficiaries pay an additional Income-Related Monthly Adjustment Amount (IRMAA) determined by the Social Security Administration. Roughly 8% of people with Medicare Part B pay these surcharges, which can push total monthly Part B payments up to $689.90 depending on modified adjusted gross income.\n\nThis guide details the standard 2026 figures, the six IRMAA tiers for single and joint tax filers, and the income rules that dictate your final monthly cost.",
+  "sections": [
+    {
+      "heading": "Medicare Part B Premium 2026 Baseline and Deductibles",
+      "body": "The standard monthly Medicare Part B premium 2026 is $202.90, which covers doctor visits, outpatient hospital care, durable medical equipment, and preventive medical screenings. Enrollees must also satisfy an annual Part B deductible of $283 before Medicare begins paying its share for covered outpatient treatments. Once you meet this annual deductible, you typically pay a 20% coinsurance for Medicare-approved medical services unless you carry supplemental coverage.\n\nOriginal Medicare also includes Part A for inpatient hospital care, which carries separate cost-sharing requirements. The 2026 Part A inpatient hospital deductible is $1,736 per benefit period admission. Unlike the annual Part B deductible, the Part A deductible applies to each separate hospital benefit period rather than once per calendar year.\n\nThe [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) announced these official figures following statutory formula calculations based on projected program spending. For roughly 92% of Medicare enrollees, the $202.90 monthly premium represents their full Part B obligation."
+    },
+    {
+      "heading": "What IRMAA Is and How Social Security Assesses It",
+      "body": "The Income-Related Monthly Adjustment Amount (IRMAA) is a mandatory monthly surcharge added to standard Medicare Part B and Part D premiums for individuals and couples with higher incomes. The Social Security Administration calculates this surcharge using statutory income tiers set by federal law. IRMAA affects roughly 8% of people with Medicare Part B, meaning the vast majority of beneficiaries pay only the standard monthly rate.\n\nSocial Security determines IRMAA from the most recent federal tax return the Internal Revenue Service (IRS) provides. For 2026 Medicare premiums, the agency generally uses the tax return filed in 2025 for tax year 2024. If your income crossed a surcharge threshold in 2024, your 2026 monthly premiums increase accordingly.\n\nThe calculation uses your Modified Adjusted Gross Income (MAGI), which combines your adjusted gross income with any tax-exempt interest income. Married couples filing jointly have higher thresholds than single filers. Other filing statuses, such as married filing separately, follow distinct rules that are not published on the standard CMS fact sheet, and filers in those categories must confirm their brackets directly with the Social Security Administration."
+    },
+    {
+      "heading": "IRMAA Brackets for the Medicare Part B Premium 2026",
+      "body": "The 2026 IRMAA structure divides beneficiaries into six income tiers based on tax filing status, establishing total monthly Part B premiums ranging from $202.90 to $689.90. Each tier above the baseline triggers an additional Part B surcharge alongside a separate Part D prescription drug adjustment. Beneficiaries enrolled in standalone Part D coverage or Medicare Advantage plans with drug benefits pay the Part D adjustment directly to Medicare, not to their private insurance company.\n\nThe 2026 income brackets and monthly costs span six distinct levels:\n\n- **Tier 1:** Individual MAGI of $109,000 or less, or joint MAGI of $218,000 or less. Monthly adjustment: $0.00. Total Part B premium: $202.90. Part D adjustment: $0.00.\n- **Tier 2:** Individual MAGI above $109,000 to $137,000, or joint MAGI above $218,000 to $274,000. Monthly adjustment: $81.20. Total Part B premium: $284.10. Part D adjustment: $14.50.\n- **Tier 3:** Individual MAGI above $137,000 to $171,000, or joint MAGI above $274,000 to $342,000. Monthly adjustment: $202.90. Total Part B premium: $405.80. Part D adjustment: $37.50.\n- **Tier 4:** Individual MAGI above $171,000 to $205,000, or joint MAGI above $342,000 to $410,000. Monthly adjustment: $324.60. Total Part B premium: $527.50. Part D adjustment: $60.40.\n- **Tier 5:** Individual MAGI above $205,000 to under $500,000, or joint MAGI above $410,000 to under $750,000. Monthly adjustment: $446.30. Total Part B premium: $649.20. Part D adjustment: $83.30.\n- **Tier 6:** Individual MAGI of $500,000 or more, or joint MAGI of $750,000 or more. Monthly adjustment: $487.00. Total Part B premium: $689.90. Part D adjustment: $91.00.\n\nFor married couples filing jointly where both spouses have Part B, each individual pays the surcharge corresponding to their joint income bracket. A joint income of $300,000 places both spouses into Tier 3, meaning each spouse pays $405.80 per month for Part B plus $37.50 for Part D."
+    },
+    {
+      "heading": "Income Triggers and Cliff Mechanics",
+      "body": "Medicare IRMAA thresholds operate as strict cliffs where exceeding a tier by a single dollar triggers the entire surcharge for the full calendar year. Unlike progressive income tax brackets where higher rates apply only to dollars earned above the threshold, IRMAA applies retroactively to every month of coverage. A single filer reporting $109,001 of MAGI pays the Tier 2 surcharge of $81.20 per month for Part B and $14.50 for Part D throughout the entire year, creating an additional annual cost of $1,148.40 over one excess dollar.\n\nSeveral common retirement events can push your tax return over a tier boundary. Large distributions from tax-deferred accounts, capital gains from selling an investment property or taxable mutual fund shares, and executing a Roth conversion all add to MAGI. Review our guide on [Roth conversion rules](/guides/roth-conversion-rules/) to see how conversion timing affects current-year taxable income.\n\nTaxpayers planning major financial moves can project their future cash flow using our [retirement income calculator](/retirement/retirement-income-calculator/) to anticipate potential tier shifts. Managing income across multiple accounts helps preserve control over taxable totals before the two-year lookback locks in higher premiums."
+    },
+    {
+      "heading": "Costs Excluded from Baseline Medicare Figures",
+      "body": "The standard $202.90 premium covers only baseline Original Medicare Part B and excludes private supplemental coverage or prescription drug plan costs. Beneficiaries who choose Medicare Advantage (Part C) or purchase a Medicare Supplement Insurance (Medigap) policy pay private insurance premiums that vary by insurance company, location, and plan design. You can examine coverage differences between these structures in our guide comparing [Medicare vs Medicare Advantage](/compare/medicare-vs-medicare-advantage/) and our review of [Medicare Advantage vs Medigap](/compare/medicare-advantage-vs-medigap/).\n\nMedicare Part D prescription drug plans also charge their own monthly plan premiums directly to the enrollee. If you are subject to IRMAA, the Part D surcharge listed in the tiers above is an extra fee paid to Medicare on top of whatever premium your private Part D plan charges. Someone in Tier 2 paying a $35 private Part D plan premium pays $49.50 total each month after including the $14.50 adjustment.\n\nOut-of-pocket costs such as office visit copayments, prescription deductibles, and hospital coinsurance also fall outside these baseline figures. Review the specific summary of benefits for your private health plan or Part D carrier to calculate your complete out-of-pocket medical budget."
+    },
+    {
+      "heading": "Audience Boundaries and IRMAA Appeals",
+      "body": "IRMAA rules and standard Part B payment mechanics do not apply uniformly to all older adults. Who this is not for: low-income beneficiaries enrolled in Medicare Savings Programs through Medicaid do not pay the standard Part B premium because their state Medicaid agency covers Medicare premiums and cost-sharing. Additionally, people who remain actively employed past age 65 with creditable employer group coverage often delay Part B enrollment without facing premium surcharges or late penalties, as detailed in our guide on [Medicare enrollment periods](/guides/medicare-enrollment-periods/).\n\nWhat would change our answer: the Social Security Administration will reconsider your IRMAA assessment if you experienced a qualifying life-changing event that reduced your household income. Qualifying events include the death of a spouse, marriage, divorce or annulment, work stoppage, work reduction, loss of income-producing property due to disaster, or the loss of employer pension plans.\n\nIf you retired in 2025 or 2026, your 2024 tax return may reflect high employment earnings that no longer represent your current cash flow. In that situation, you can file Form SSA-44 with the Social Security Administration to request an initial determination based on your more recent, reduced income rather than waiting for the standard two-year lookback cycle to catch up."
+    },
+    {
+      "heading": "Action Steps for Managing Part B Expenses",
+      "body": "Managing your Medicare Part B expenses requires tracking both your upcoming enrollment milestones and your taxable income trends. Begin by reviewing the annual Medicare cost notice mailed by the Social Security Administration each November or December, which specifies your exact Part B premium and any applicable IRMAA surcharge for the coming year. If the determination uses outdated income figures following a recent retirement, gather documentation of your work change and submit Form SSA-44 to request an adjustment.\n\nCoordinate with a Certified Public Accountant (CPA) or a fee-only financial planner before selling real estate, liquidating capital assets, or taking optional retirement distributions. You can also contact your local State Health Insurance Assistance Program (SHIP) for free, objective guidance on plan selection and local assistance programs. Reviewing your projected tax returns two years ahead gives you the best control over your Medicare Part B premium 2026."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/retirement/retirement-income-calculator/",
+      "label": "Retirement income"
+    },
+    {
+      "href": "/retirement/social-security-retirement-calculator/",
+      "label": "Social Security retirement"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the Medicare Part B premium in 2026?",
+      "answer": "The standard monthly Medicare Part B premium in 2026 is $202.90. Most beneficiaries pay this standard rate, while individuals with higher taxable incomes pay an income-related surcharge that increases monthly costs up to $689.90."
+    },
+    {
+      "question": "What is the Part B deductible in 2026?",
+      "answer": "The annual Medicare Part B deductible is $283 in 2026. Beneficiaries must pay this amount out of pocket for covered outpatient medical services before Original Medicare begins paying its share."
+    },
+    {
+      "question": "What income triggers IRMAA in 2026?",
+      "answer": "For 2026, IRMAA surcharges begin when 2024 Modified Adjusted Gross Income exceeds $109,000 for single tax filers or $218,000 for married couples filing jointly. Anyone earning at or below those amounts pays the standard $202.90 Part B premium with no surcharge."
+    },
+    {
+      "question": "Do married couples have higher IRMAA thresholds?",
+      "answer": "Yes, married couples filing jointly have income thresholds that are double the single-filer brackets across all tiers. For 2026, joint filers do not pay an IRMAA surcharge until their combined MAGI exceeds $218,000. If both spouses enroll in Part B, each spouse pays the tier surcharge corresponding to their joint return."
+    },
+    {
+      "question": "Is the Part D IRMAA separate from the Part B IRMAA?",
+      "answer": "Yes, Part D IRMAA is an additional monthly surcharge that applies to prescription drug coverage. In 2026, the Part D surcharge ranges from $14.50 to $91.00 per month across tiers 2 through 6. Beneficiaries pay this fee to Medicare in addition to their private Part D plan premium."
+    }
+  ],
+  "sources": [
+    {
+      "label": "CMS -- 2026 Medicare Parts A & B Premiums and Deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

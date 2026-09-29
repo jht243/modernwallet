@@ -1,0 +1,440 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 17/28 phrases
+[keyword_data] kd: using semrush (quality order ahrefs > semrush > dataforseo)
+[keyword_data] KD from semrush for 17 rows (volume came from dataforseo)
+[keyword_data] No tool volume for 11 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 25/28 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "early retirement health insurance",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 40,
+   "cpc": 6.25,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gold ira vs gold etf",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 26,
+   "cpc": 13.19,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "buying a house at 60",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "types of budgets",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 31,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "heloc risks",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 32,
+   "cpc": 9.49,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pay cash or finance a car",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": 0,
+   "cpc": 0.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 to roth ira rollover",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 30,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "surrender life insurance",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 33,
+   "cpc": 0.59,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "medicare part b premium 2026",
+   "volume": 49500,
+   "volume_low": 49500,
+   "volume_high": 49500,
+   "kd": 72,
+   "cpc": 5.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "medicare enrollment periods",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 49,
+   "cpc": 4.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to retire early",
+   "volume": 3600,
+   "volume_low": 3600,
+   "volume_high": 3600,
+   "kd": 37,
+   "cpc": 3.1,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "retirement advice from retirees",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": 6.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to pay off debt",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 74,
+   "cpc": 15.32,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "lifestyle budget",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 plan rules 2026",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": 1.12,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "medicare irmaa",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 50,
+   "cpc": 1.13,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gold etf vs physical gold",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 22,
+   "cpc": 4.83,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "health insurance before medicare early retirement",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 100,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 3 live autocomplete completions (est. 10-100/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "trump accounts",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trump account for kids",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "first time home buyer over 50",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 partial prefix match + broad completion set (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "signs you should fire your financial advisor",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "what to do after reaching financial independence",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "rental property pension",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "things to know before retiring early",
+   "volume": 25,
+   "volume_low": 25,
+   "volume_high": 250,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 9 live autocomplete completions (est. 25-250/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "roth ira contribution mistakes",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "zero based budget vs 50 30 20",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 1,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca subsidies early retirement",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 17/28 phrases",
+  "kd: using semrush (quality order ahrefs > semrush > dataforseo)",
+  "KD from semrush for 17 rows (volume came from dataforseo)",
+  "No tool volume for 11 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 25/28 rows corroborated live"
+ ]
+}

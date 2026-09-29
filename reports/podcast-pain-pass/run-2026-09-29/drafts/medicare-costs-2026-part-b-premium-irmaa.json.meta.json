@@ -1,0 +1,53 @@
+{
+ "slug": "medicare-costs-2026-part-b-premium-irmaa",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "high",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1840,
+ "floor": 1300,
+ "input_tokens": 19294,
+ "output_tokens": 3361,
+ "thinking_tokens": 10936,
+ "cached_tokens": 17634,
+ "est_cost_usd": 0.0582,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1840,
+  "numbers_not_in_facts": [
+   "109001",
+   "1148.4",
+   "300000",
+   "35",
+   "44",
+   "49.5",
+   "65",
+   "92"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18073
+  }
+ },
+ "seconds": 54.9,
+ "response_id": "n7q7aqLpFMSijrEPwJux4QY",
+ "generated_at": "2026-09-29T13:19:16+0000"
+}
