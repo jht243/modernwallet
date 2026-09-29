@@ -4,7 +4,7 @@ import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { COMPARISONS } from "../../data/comparisons";
-import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
+import { linkify, linkifyInline, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import LeadForm from "../../components/LeadForm.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
@@ -94,8 +94,8 @@ const relatedEntries = entry.relatedComparisons
             {entry.comparisonTable.rows.map((row) => (
               <tr>
                 <th scope="row">{row.dimension}</th>
-                <td>{row.a}</td>
-                <td>{row.b}</td>
+                <td set:html={linkifyInline(row.a)} />
+                <td set:html={linkifyInline(row.b)} />
               </tr>
             ))}
           </tbody>

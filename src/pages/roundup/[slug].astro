@@ -4,7 +4,7 @@ import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { ROUNDUPS } from "../../data/roundups";
-import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
+import { linkify, linkifyInline, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
 import { COMPARISONS } from "../../data/comparisons";
 import LeadForm from "../../components/LeadForm.astro";
@@ -115,10 +115,10 @@ const relatedEntries = entry.relatedComparisons
           </div>
           <div class="cons">
             <h3>Limitations</h3>
-            <ul>{opt.limitations.map((l) => <li>{l}</li>)}</ul>
+            <ul>{opt.limitations.map((l) => <li set:html={linkifyInline(l)} />)}</ul>
           </div>
         </div>
-        <p class="opt-pricing"><strong>Pricing:</strong> {opt.pricing}</p>
+        <p class="opt-pricing"><strong>Pricing:</strong> <Fragment set:html={linkifyInline(opt.pricing)} /></p>
       </section>
     ))}
 
@@ -138,7 +138,7 @@ const relatedEntries = entry.relatedComparisons
                 <th scope="row">{row.href
                   ? <a href={row.href} {...(row.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}>{row.name}</a>
                   : row.name}</th>
-                {row.values.map((v) => <td>{v}</td>)}
+                {row.values.map((v) => <td set:html={linkifyInline(v)} />)}
               </tr>
             ))}
           </tbody>

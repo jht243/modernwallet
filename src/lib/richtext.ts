@@ -19,11 +19,15 @@ const _rhAnchor = `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL
 /** Point Robinhood at our referral link everywhere it's mentioned in body prose:
  *  (1) rewrite any existing robinhood.com anchor to the referral URL + sponsored rel,
  *  (2) auto-link bare "Robinhood" mentions that aren't already inside an anchor. */
-function robinhoodize(html: string): string {
-  html = html.replace(
+function rewriteRobinhoodAnchors(html: string): string {
+  return html.replace(
     /<a href="https?:\/\/(?:www\.)?robinhood\.com[^"]*"[^>]*>/gi,
     `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">`,
   );
+}
+
+function robinhoodize(html: string): string {
+  html = rewriteRobinhoodAnchors(html);
   // Split on existing anchors so we never link text that's already a link.
   return html
     .split(/(<a\b[^>]*>.*?<\/a>)/gis)
@@ -31,22 +35,43 @@ function robinhoodize(html: string): string {
     .join("");
 }
 
-/** Escape HTML, then render [text](url) as anchors. Internal links (starting "/") stay normal;
- *  external (http) get rel="noopener". Content is first-party/trusted (we generate it). */
+function anchor(url: string, text: string): string {
+  const isExternal = /^https?:\/\//i.test(url);
+  const rel = isExternal ? ' rel="noopener"' : "";
+  const target = isExternal ? ' target="_blank"' : "";
+  return `<a href="${url}"${target}${rel}>${text}</a>`;
+}
+
+// A plain `<a href="…">text</a>` authored in our own data files, AFTER escapeHtml. Only this exact
+// shape (href only, no nested tags) is restored — anything else stays escaped text.
+const ESCAPED_ANCHOR_RE = /&lt;a href=&quot;((?:\/|https?:\/\/)[^&\s]*)&quot;&gt;((?:(?!&lt;).)+?)&lt;\/a&gt;/g;
+
+/** Escape HTML, then render inline links as anchors: markdown [text](url) and plain
+ *  `<a href="url">text</a>` from our own data. Internal links (starting "/") stay normal;
+ *  external (http) get target=_blank rel="noopener". Content is first-party/trusted (we generate it). */
+function renderLinks(input: string): string {
+  return escapeHtml(input)
+    .replace(ESCAPED_ANCHOR_RE, (_m, url: string, text: string) => anchor(url, text))
+    .replace(LINK_RE, (_m, text: string, url: string) => anchor(url, text));
+}
+
+/** Body prose: inline links + Robinhood referral handling (anchor rewrite + bare-mention autolink). */
 export function linkify(input: string): string {
-  const escaped = escapeHtml(input);
-  const html = escaped.replace(LINK_RE, (_m, text: string, url: string) => {
-    const isExternal = /^https?:\/\//i.test(url);
-    const rel = isExternal ? ' rel="noopener"' : "";
-    const target = isExternal ? ' target="_blank"' : "";
-    return `<a href="${url}"${target}${rel}>${text}</a>`;
-  });
-  return robinhoodize(html);
+  return robinhoodize(renderLinks(input));
+}
+
+/** Short data fields (pricing, pros/cons, table cells, card intros): inline links only. Explicit
+ *  robinhood.com links still go to the referral URL, but bare "Robinhood" mentions are NOT
+ *  auto-linked here. */
+export function linkifyInline(input: string): string {
+  return rewriteRobinhoodAnchors(renderLinks(input));
 }
 
 /** Strip [text](url) down to text. For meta descriptions and JSON-LD answer text. */
 export function plain(input: string): string {
-  return input.replace(LINK_RE, (_m, text: string) => text).replace(/\s+/g, " ").trim();
+  return input
+    .replace(/<a href="[^"]*">([^<]+)<\/a>/g, "$1")
+    .replace(LINK_RE, (_m, text: string) => text).replace(/\s+/g, " ").trim();
 }
 
 /** Break a long content string into readable paragraphs so it never renders as one wall of text.
@@ -61,10 +86,13 @@ export function paragraphs(input: string): string[] {
   // indices is lossless (never drops text) and leaves decimals ("1.1%") and "U.S." intact, because
   // the "." there isn't followed by whitespace + a sentence-start.
   const boundary = /[.!?]["')\]]*\s+(?=[A-Z0-9"'($])/g;
+  const linkSpans = [...t.matchAll(LINK_RE)].map((l) => [l.index!, l.index! + l[0].length]);
   const sentences: string[] = [];
   let last = 0;
   let m: RegExpExecArray | null;
   while ((m = boundary.exec(t)) !== null) {
+    // Never split inside a markdown link's [anchor text] (e.g. "[U.S. Mint](…)").
+    if (linkSpans.some(([s, e]) => m!.index >= s && m!.index < e)) continue;
     const end = m.index + m[0].length;
     sentences.push(t.slice(last, end).trim());
     last = end;

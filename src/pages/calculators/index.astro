@@ -4,6 +4,7 @@ import LinkCard from "../../components/LinkCard.astro";
 import { SITE } from "../../data/site";
 import { CALCULATORS, isLive, spokesForCalc } from "../../data/calculators";
 import { iconForSpoke } from "../../data/icons";
+import { linkifyInline } from "../../lib/richtext";
 
 const calcs = [...CALCULATORS].sort((a, b) => a.navOrder - b.navOrder);
 const canonicalUrl = new URL("/calculators/", Astro.site).toString();
@@ -45,7 +46,7 @@ const jsonLdBreadcrumb = {
               {!live && <span class="soon">Coming soon</span>}
             </h2>
           </div>
-          <p class="calc-intro">{c.introText}</p>
+          <p class="calc-intro" set:html={linkifyInline(c.introText)} />
           {spokes.length > 0 && (
             <div class="grid">
               {spokes.map((s) => (
