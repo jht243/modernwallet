@@ -1,0 +1,132 @@
+{
+  "slug": "social-security-vs-401k",
+  "title": "Social Security vs 401(k): Planning Retirement Income",
+  "metaDescription": "Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.",
+  "targetKeyword": "social security vs 401k",
+  "optionA": "Social Security",
+  "optionB": "401(k)",
+  "h1": "Social Security vs 401(k): Planning Retirement Income",
+  "introText": "Social Security and a 401(k) work best together. Social Security pays a monthly benefit for life that adjusts for inflation. A 401(k) gives you an invested balance to draw from, but that balance can run out. When weighing Social Security vs 401(k) income, start with the expenses you expect each month. Then compare those expenses with your estimated Social Security benefit and decide how much your 401(k) may need to cover. Your claiming age, 401(k) balance, and taxes can all change that gap.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "How you earn or fund it",
+        "a": "Earned through payroll taxes and work credits",
+        "b": "Funded through your contributions and possibly employer contributions"
+      },
+      {
+        "dimension": "What you receive",
+        "a": "A monthly retirement benefit",
+        "b": "Withdrawals from an invested account balance"
+      },
+      {
+        "dimension": "How long it lasts",
+        "a": "Pays for life",
+        "b": "Can run out"
+      },
+      {
+        "dimension": "Inflation protection",
+        "a": "Monthly benefit adjusts for inflation",
+        "b": "No built-in inflation adjustment to withdrawals"
+      },
+      {
+        "dimension": "Your main timing choice",
+        "a": "Choose when to claim, from age 62 through age 70",
+        "b": "Choose how much to withdraw from the available balance"
+      },
+      {
+        "dimension": "Tax treatment",
+        "a": "A portion of benefits may be taxable, depending on income",
+        "b": "Withdrawals of pre-tax money are taxed as ordinary income"
+      },
+      {
+        "dimension": "2026 contribution limit",
+        "a": "No contribution limit of this kind",
+        "b": "$24,500, or $32,500 if age 50 or older"
+      },
+      {
+        "dimension": "Employer match",
+        "a": "Not applicable",
+        "b": "Possible, but it varies by plan and is not guaranteed"
+      }
+    ]
+  },
+  "verdict": "Plan around both sources of income rather than choosing one. Use your estimated Social Security benefit to identify how much of your monthly spending it could cover for life. Then compare the remaining gap with the 401(k) balance you expect to have. If an employer offers a 401(k) match, find out its terms before deciding how much to contribute; a match is not guaranteed. Revisit the calculation at different Social Security claiming ages, since starting at 62 permanently reduces the monthly benefit, while delaying past full retirement age up to 70 increases it. Someone without access to a 401(k) should use the same income-gap calculation but cannot make that account part of the plan.",
+  "sections": [
+    {
+      "heading": "Social Security vs 401(k) Funding and Control",
+      "content": "Social Security and a 401(k) are funded in different ways. [Social Security retirement benefits](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) are earned through payroll taxes and work credits. A [401(k)](https://www.irs.gov/retirement-plans/401k-plans) is an employer retirement plan funded by your contributions and, if your employer offers them, employer contributions. You invest the 401(k) money and later draw from its balance. The 2026 employee contribution limit is $24,500, or $32,500 if you are 50 or older.\n\nThat difference gives you different choices. With Social Security, your central planning decision is when to claim. You do not decide how large a payroll-tax contribution to put into a personal Social Security account. With a 401(k), you decide whether and how much to contribute within the limit, and you make investment decisions for that money. An employer match may add to the balance, but its availability and terms vary by plan.\n\nA larger 401(k) contribution can help build a balance for later withdrawals, while leaving less of your pay available today. If you have a 401(k), compare its contribution amount with your current budget before setting it. If a match is offered, include its specific terms in that decision. Do not assume the match exists simply because the plan does."
+    },
+    {
+      "heading": "Social Security vs 401(k) Income and Longevity",
+      "content": "Social Security pays a monthly benefit for life, while a 401(k) can run out. That makes Social Security useful when planning expenses that will continue regardless of how long retirement lasts. A 401(k) can cover spending above the monthly benefit, but each withdrawal reduces the balance available for later years.\n\nSocial Security benefits adjust for inflation. A 401(k) withdrawal has no built-in increase that automatically follows inflation. Its investments may change in value, and you decide what to withdraw from the balance you have. When estimating future spending, avoid treating a fixed 401(k) withdrawal as though it will cover the same purchases year after year. If you expect an expense to rise, account for that possibility when testing how long the balance might last.\n\nA practical starting point is a monthly gap calculation: expected monthly spending minus estimated monthly Social Security income equals the amount other resources must cover. Run the calculation for ongoing bills before adding optional spending. Then consider whether the 401(k) balance could support withdrawals for many years, rather than checking only the first year of retirement. If the gap looks too large, you can revisit your expected spending, 401(k) contributions, and claiming date. The calculation does not require you to pick one income source over the other."
+    },
+    {
+      "heading": "Claiming Social Security and Drawing From a 401(k)",
+      "content": "The age when you claim Social Security changes your monthly benefit. You can start retirement benefits at 62, but [claiming early permanently reduces the monthly amount](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). [Delaying past full retirement age up to 70 increases the monthly amount](https://www.ssa.gov/benefits/retirement/planner/delayret.html). A larger monthly benefit lasts for life, so the claiming decision affects more than your first retirement-year budget.\n\nA 401(k) presents a different timing question: how much of the balance to draw down. You might plan for 401(k) withdrawals to cover more spending before claiming Social Security, or you might claim earlier and draw less from the 401(k) at first. Either plan needs a check on the balance left for later years. Claiming later does not create 401(k) money; it changes when Social Security income begins and how much arrives each month afterward.\n\nCompare at least two claiming ages using the same spending estimate. For each age, note the years before benefits begin, the monthly benefit afterward, and the 401(k) withdrawals your budget would call for. If your 401(k) balance could not support the years before a later claim, that finding matters even if the later monthly benefit looks appealing. The [Social Security retirement calculator](/calculators/social-security-retirement-calculator/) can help you test the timing against your own estimates."
+    },
+    {
+      "heading": "Taxes on Social Security and 401(k) Withdrawals",
+      "content": "Pre-tax 401(k) withdrawals are taxed as ordinary income, while the taxable portion of Social Security benefits depends on income. The two income sources therefore should not be treated as identical amounts of spendable cash. A budget built from amounts before tax may overstate what you can use for bills.\n\nIf you expect to receive both in the same year, look at the combined income picture before deciding on a 401(k) withdrawal amount. Taking more pre-tax 401(k) money can change the income used to determine whether some Social Security benefits are taxable. The [guide to Social Security benefit taxes](/guides/is-social-security-taxable/) explains the benefit-tax rules. For 401(k) money, keep track of whether a planned withdrawal comes from pre-tax contributions before estimating the tax you might owe.\n\nTaxes can also change a claiming comparison. Two plans might cover the same spending before tax but leave different amounts afterward because the timing and size of 401(k) withdrawals differ. Make a yearly estimate alongside the monthly budget, especially if one plan calls for larger withdrawals while Social Security payments are also coming in. The goal is to compare income you could spend, rather than adding two figures together without accounting for tax."
+    },
+    {
+      "heading": "Combining Social Security With a 401(k)",
+      "content": "A workable retirement plan assigns Social Security and 401(k) income separate jobs. Start with the Social Security benefit you estimate at a chosen claiming age and compare it with expected monthly spending. Use the 401(k) balance to test whether withdrawals could cover the difference over time. Repeat the test at another claiming age instead of assuming that the earliest available benefit or the largest monthly benefit must be right for you.\n\nPeople with modest 401(k) balances may rely more heavily on Social Security for ongoing expenses. In that case, a large planned gap calls for a change to the spending estimate, the contribution plan before retirement, or the claiming timeline. People with larger 401(k) balances still need a withdrawal plan because the account can run out. Neither balance size changes Social Security's lifetime payment or automatic inflation adjustment.\n\nA plan centered on a 401(k) is a poor fit for someone who cannot use an employer 401(k). That person should estimate Social Security income and identify other resources to cover the remaining expenses. Conversely, treating Social Security as sufficient without comparing it with a spending estimate leaves any shortfall unplanned. If you are deciding where to put retirement contributions, the [401(k) vs Roth IRA comparison](/compare/401k-vs-roth-ira/) addresses a different choice: how to use retirement accounts. If you may need access to invested money before retirement, the [401(k) vs brokerage account comparison](/compare/401k-vs-brokerage-account/) covers that tradeoff. For your Social Security vs 401(k) plan, write down your monthly spending estimate and test the gap at two claiming ages."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is Social Security better than a 401(k) for retirement?",
+      "answer": "Neither replaces the other. Social Security pays an inflation-adjusted monthly benefit for life, while a 401(k) gives you an invested balance you can draw from until it is exhausted. Compare your estimated benefit with your planned spending, then use the 401(k) balance to assess the remaining gap."
+    },
+    {
+      "question": "Can I receive Social Security and withdraw from a 401(k) at the same time?",
+      "answer": "Yes. You can plan around both sources of retirement income. Withdrawals of pre-tax 401(k) money are ordinary income, and income can affect whether a portion of your Social Security benefits is taxable. Estimate the after-tax amounts before setting a withdrawal target."
+    },
+    {
+      "question": "Does Social Security go up with inflation like a 401(k)?",
+      "answer": "Social Security benefits adjust for inflation. A 401(k) does not automatically raise your withdrawals with inflation. You choose what to withdraw from its invested balance, which can change in value and can run out."
+    },
+    {
+      "question": "Should I use my 401(k) while waiting to claim Social Security?",
+      "answer": "That can work if the 401(k) balance supports the withdrawals you would need while waiting. Delaying Social Security past full retirement age up to 70 increases the monthly benefit, but drawing from a 401(k) in the meantime leaves less in the account. Compare both the later benefit and the remaining 401(k) balance."
+    },
+    {
+      "question": "What if I do not have a 401(k)?",
+      "answer": "You can still plan around your estimated Social Security benefit. Compare it with expected monthly spending and identify other resources for any gap. A 401(k) is an employer plan, so someone without access to one should not build a retirement budget that assumes 401(k) withdrawals."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Social Security Administration: Retirement benefits by year of birth",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+    },
+    {
+      "label": "Social Security Administration: Delayed retirement",
+      "url": "https://www.ssa.gov/benefits/retirement/planner/delayret.html"
+    },
+    {
+      "label": "Internal Revenue Service: 401(k) plans",
+      "url": "https://www.irs.gov/retirement-plans/401k-plans"
+    }
+  ],
+  "relatedComparisons": [
+    "401k-vs-roth-ira",
+    "401k-vs-brokerage-account"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Social Security retirement calculator",
+      "href": "/calculators/social-security-retirement-calculator/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

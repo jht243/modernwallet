@@ -1,0 +1,56 @@
+{
+ "slug": "can-you-max-out-401k-and-ira",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": true,
+ "fallback_reason": "gemini-3.8-flash: RuntimeError: HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at h",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "OPENAI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2254,
+ "floor": 1200,
+ "input_tokens": 18132,
+ "output_tokens": 4379,
+ "thinking_tokens": 924,
+ "cached_tokens": 0,
+ "est_cost_usd": null,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2254,
+  "numbers_not_in_facts": [
+   "1000",
+   "12",
+   "1250",
+   "26",
+   "269.23",
+   "300",
+   "3600",
+   "500",
+   "5000",
+   "583.33",
+   "942.31"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18869
+  }
+ },
+ "seconds": 58.9,
+ "response_id": "resp_0b9754245c3bb4cb006abd7e4c74f487d2ac981d9383598139",
+ "generated_at": "2026-09-30T21:26:30+0000"
+}

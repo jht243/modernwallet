@@ -30,6 +30,247 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── competitor-monitor 2026-09-30 ──
+  {
+    "updated": "2026-09-30",
+    "slug": "roth-ira-vs-index-fund",
+    "title": "Roth IRA vs Index Fund: Where Should Your Money Go?",
+    "metaDescription": "A Roth IRA can hold an index fund. Compare the tax rules, contribution limits, access to money, risk, and fees before deciding where to invest.",
+    "targetKeyword": "roth ira vs index fund",
+    "optionA": "Roth IRA",
+    "optionB": "Index Fund",
+    "h1": "Roth IRA vs Index Fund: Where Should Your Money Go?",
+    "introText": "A Roth IRA can hold an index fund, so you do not have to choose between them. A Roth individual retirement account (IRA) is an account with tax rules. An index fund is an investment that tracks a market index. If you qualify to contribute and the money is for retirement, you can put it in a Roth IRA and buy an index fund inside the account. If you need unrestricted access to more than you contributed, a taxable brokerage account offers more flexibility for holding an index fund. The question is where to hold the fund, since buying the same fund in either account leaves you with the same underlying investment risk.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "What it is",
+          "a": "An account with tax rules",
+          "b": "An investment that tracks a market index"
+        },
+        {
+          "dimension": "Can they work together?",
+          "a": "Yes. A Roth IRA can hold index funds.",
+          "b": "Yes. An index fund can be held inside a Roth IRA."
+        },
+        {
+          "dimension": "Money contributed",
+          "a": "After-tax money",
+          "b": "Money invested through an account, such as a taxable brokerage account"
+        },
+        {
+          "dimension": "Tax on investment growth",
+          "a": "Qualified withdrawals are tax-free",
+          "b": "In a taxable account, dividends are taxed yearly and long-term gains face federal tax rates of 0%, 15%, or 20%"
+        },
+        {
+          "dimension": "Contribution limit",
+          "a": "Annual IRA limit; $7,000 in 2025",
+          "b": "No contribution limit when held in a taxable brokerage account"
+        },
+        {
+          "dimension": "Income limit",
+          "a": "Income limits apply to direct contributions",
+          "b": "No income limit on buying an index fund in a taxable brokerage account"
+        },
+        {
+          "dimension": "Access to money",
+          "a": "Contributions can be withdrawn anytime without tax or penalty; early earnings withdrawals may face tax and a 10% additional tax",
+          "b": "Money in a taxable brokerage account is accessible anytime"
+        },
+        {
+          "dimension": "Investment risk and fund fees",
+          "a": "Depend on the index fund held inside the account",
+          "b": "Depend on the index fund chosen; index funds typically have low expense ratios"
+        }
+      ]
+    },
+    "verdict": "For retirement money, a Roth IRA holding an index fund is the better starting point if you can contribute. You get the fund's market exposure and, if you meet the withdrawal rules, tax-free withdrawals. Buying an index fund in a taxable brokerage account makes more sense for money you may need before retirement, for amounts above the Roth IRA contribution limit, or when income limits prevent a direct Roth contribution. This recommendation changes if unrestricted access to investment earnings matters more to you than the Roth IRA's tax treatment. Neither account protects an index fund from a drop in the market. Decide how much money you need available, then choose the account before choosing a fund.",
+    "sections": [
+      {
+        "heading": "How a Roth IRA Holds an Index Fund",
+        "content": "A Roth IRA is an account, while an index fund is something you can buy inside an account. Opening a Roth IRA alone does not choose an investment for you. The account sets the tax and withdrawal rules; the fund determines what market index your money follows. You can buy an index fund inside a Roth IRA and use both at once.\n\nThe same index fund can also be held in a taxable brokerage account. Its underlying investments do not change just because you use a different account. What changes is how investment income and withdrawals are taxed, along with when you can access the money without an extra tax. That distinction makes the account decision separate from the fund decision.\n\nSuppose you have money intended for retirement and want to invest it in an index fund. If you qualify for a Roth IRA contribution, you can contribute to the account and select an index fund there. You do not need to give up index investing to use Roth tax treatment. If the money is for a goal that requires unrestricted access before retirement, you can instead buy an index fund through a taxable brokerage account. The fund can still track an index, but the brokerage account has different tax rules.\n\nAn index fund tracks a market index and typically has a low expense ratio. An expense ratio is a fund fee, so it applies to the fund whether you hold that fund in a Roth IRA or a taxable account. A Roth IRA does not make an expensive fund cheap, and a taxable account does not change the fund's underlying market exposure. Compare the fund you plan to buy as well as the account you plan to use. The [best index funds guide](/guides/best-index-funds/) can help with the fund decision after you settle on an account."
+      },
+      {
+        "heading": "Roth IRA vs Index Fund Taxes and Contribution Limits",
+        "content": "Roth IRA tax treatment can be more favorable for retirement money than holding an index fund in a taxable brokerage account. Roth contributions use money that has already been taxed. Qualified withdrawals are tax-free if you meet the age and holding-period rules. That makes the Roth IRA's benefit a rule about the account, regardless of which index fund you choose inside it.\n\nAn index fund in a taxable brokerage account follows taxable-account rules. Dividends are taxed yearly. Long-term capital gains are taxed at federal rates of 0%, 15%, or 20%, depending on your circumstances. A low fund fee does not remove those taxes. If you are comparing two ways to hold the same index fund, account tax treatment is the difference to examine.\n\nThe Roth IRA also limits how much you can contribute. The annual [Internal Revenue Service (IRS) IRA contribution limit](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) was $7,000 in 2025. The limit changes by year, so use that IRS page to verify the figure for the year you plan to contribute. Income limits also apply to direct Roth IRA contributions. A taxable brokerage account has no contribution limit for buying an index fund, so it can hold money you cannot put into a Roth IRA.\n\nConsider someone who has already contributed the full amount permitted to a Roth IRA for the year. Buying another index fund inside the Roth IRA does not create more contribution room. That person can still buy an index fund in a taxable brokerage account, where the IRA contribution cap does not apply. The same separation matters if income prevents a direct Roth contribution: an index fund remains available as an investment in a taxable account. For a closer look at IRA account rules, see [Roth IRA vs Traditional IRA](/compare/roth-ira-vs-traditional-ira/)."
+      },
+      {
+        "heading": "Roth IRA vs Index Fund Access to Money",
+        "content": "A taxable brokerage account gives you unrestricted access to money invested in an index fund. You can sell the fund and access the money at any time, although a sale at a gain may create a capital gains tax bill. This flexibility can matter when you have a date in mind for using the money. It can also matter when the date is uncertain and you may need access to both the amount invested and any growth.\n\nA Roth IRA has a more specific withdrawal distinction. You can withdraw your contributions at any time without tax or penalty. Earnings are different: taking them out early may result in tax and a 10% additional tax. For a distribution to be qualified, the [IRS Roth IRA rules](https://www.irs.gov/retirement-plans/roth-iras) require age 59½ and a five-year holding period. If you expect to need investment earnings before meeting those conditions, the taxable account avoids the Roth IRA's early-earnings restriction.\n\nImagine contributing money to a Roth IRA and buying an index fund that rises in value. The amount you contributed remains available under the contribution withdrawal rule. The increase in value is earnings, so the same early-withdrawal treatment does not automatically apply to that increase. The account balance may look like one number, but the contribution and earnings rules can lead to different tax results. If you might need the full balance soon, plan around access to earnings as well as access to contributions.\n\nThe taxable account suits a different need. There is no age test or five-year holding period before you can access money invested there. Taxable dividends and gains are the tradeoff for that flexibility. If you are weighing account access beyond this comparison, [401(k) vs Brokerage Account](/compare/401k-vs-brokerage-account/) examines another retirement-account decision."
+      },
+      {
+        "heading": "Index Fund Risk and Fees in Either Account",
+        "content": "The account holding an index fund does not remove the fund's market risk. An index fund tracks a market index, so its value can fall when the investments in that index fall. A Roth IRA changes tax and withdrawal rules; it does not promise that an index fund will keep its value. A taxable brokerage account offers access to your money, but access does not prevent you from selling after a decline.\n\nThis matters when choosing between retirement savings and money you may need soon. If you expect to spend the money on a fixed date, consider whether you could leave it invested after a market decline. If the answer is no, the account's easy withdrawal rules alone do not settle whether an index fund fits that goal. The access question and the investment-risk question need separate answers.\n\nFund fees also stay with the investment. Index funds typically have low expense ratios, but different index funds can charge different fees. Look at the expense ratio of the fund you are considering instead of assuming every index fund costs the same. If you buy that fund inside a Roth IRA, the Roth tax rules apply alongside its fund fee. If you buy it in a taxable account, the taxable-account rules apply alongside the fee. Changing the account does not erase the expense ratio.\n\nYou can also compare index funds with exchange-traded funds in [Index Fund vs ETF](/compare/index-fund-vs-etf/). Keep that investment comparison separate from the Roth IRA decision. One question concerns the fund you want to hold. The other concerns the account rules that will apply while you hold it and when you take money out."
+      },
+      {
+        "heading": "Who Should Use Each Account for an Index Fund",
+        "content": "A Roth IRA holding an index fund fits money set aside for retirement when you qualify to contribute. The account offers tax-free qualified withdrawals, and the index fund gives you an investment that tracks a market index. If you do not expect to need the fund's earnings before meeting the withdrawal requirements, the Roth restrictions may be manageable. You can then compare index funds on what they track and what they charge.\n\nA taxable brokerage account fits money that must remain accessible without Roth IRA earnings-withdrawal rules. It also gives you room to invest after reaching the annual IRA contribution limit. If income limits prevent a direct Roth IRA contribution, you can still buy an index fund in a taxable brokerage account. In each case, you accept yearly tax on dividends and applicable tax on long-term gains in exchange for access or the ability to invest without an IRA contribution cap.\n\nNeither choice requires putting every dollar in the same account. You can hold an index fund in a Roth IRA for retirement and hold an index fund in a taxable account for money that needs fewer withdrawal restrictions. Treat the dollars by their intended use. Otherwise, you could put a near-term goal inside a Roth IRA and discover that withdrawing its earnings early has different consequences from withdrawing contributions.\n\nBefore contributing, confirm both your eligibility and the current annual limit on the [IRS IRA contribution limits page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits). Then decide how much of the money must remain accessible before retirement. That decision tells you whether to start with a Roth IRA, a taxable brokerage account, or both."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I buy an index fund inside a Roth IRA?",
+        "answer": "Yes. A Roth IRA is an account, and an index fund is an investment you can hold inside it. You can choose an index fund for a Roth IRA rather than treating the two as competing purchases."
+      },
+      {
+        "question": "Does a Roth IRA have less investment risk than an index fund?",
+        "answer": "No. A Roth IRA is an account, so its risk depends on what you hold inside it. If you hold an index fund in a Roth IRA, the fund still follows its market index and can lose value."
+      },
+      {
+        "question": "Can I take money out of a Roth IRA whenever I want?",
+        "answer": "You can withdraw Roth IRA contributions at any time without tax or penalty. Earnings have different rules: an early withdrawal may face tax and a 10% additional tax. Qualified distributions require age 59½ and a five-year holding period."
+      },
+      {
+        "question": "Is there a limit on buying index funds?",
+        "answer": "An index fund in a taxable brokerage account has no contribution limit. A Roth IRA has an annual contribution limit and income limits for direct contributions. The IRA limit was $7,000 in 2025; verify the figure for your contribution year on the linked IRS limits page."
+      },
+      {
+        "question": "Should I use a Roth IRA or a taxable account for an index fund?",
+        "answer": "Use a Roth IRA for retirement money if you qualify to contribute and can follow its withdrawal rules. Use a taxable brokerage account when you need unrestricted access to the money or have more to invest than your permitted Roth contribution. To resolve the Roth IRA vs index fund question for your money, choose the account based on when you will need it, then choose the fund."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Roth IRAs",
+        "url": "https://www.irs.gov/retirement-plans/roth-iras"
+      },
+      {
+        "label": "IRS, IRA contribution limits",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+      }
+    ],
+    "relatedComparisons": [
+      "roth-ira-vs-traditional-ira",
+      "index-fund-vs-etf",
+      "401k-vs-brokerage-account"
+    ],
+    "calculatorLinks": []
+  },
+  {
+    "updated": "2026-09-30",
+    "slug": "social-security-vs-401k",
+    "title": "Social Security vs 401(k): Planning Retirement Income",
+    "metaDescription": "Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.",
+    "targetKeyword": "social security vs 401k",
+    "optionA": "Social Security",
+    "optionB": "401(k)",
+    "h1": "Social Security vs 401(k): Planning Retirement Income",
+    "introText": "Social Security and a 401(k) work best together. Social Security pays a monthly benefit for life that adjusts for inflation. A 401(k) gives you an invested balance to draw from, but that balance can run out. When weighing Social Security vs 401(k) income, start with the expenses you expect each month. Then compare those expenses with your estimated Social Security benefit and decide how much your 401(k) may need to cover. Your claiming age, 401(k) balance, and taxes can all change that gap.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "How you earn or fund it",
+          "a": "Earned through payroll taxes and work credits",
+          "b": "Funded through your contributions and possibly employer contributions"
+        },
+        {
+          "dimension": "What you receive",
+          "a": "A monthly retirement benefit",
+          "b": "Withdrawals from an invested account balance"
+        },
+        {
+          "dimension": "How long it lasts",
+          "a": "Pays for life",
+          "b": "Can run out"
+        },
+        {
+          "dimension": "Inflation protection",
+          "a": "Monthly benefit adjusts for inflation",
+          "b": "No built-in inflation adjustment to withdrawals"
+        },
+        {
+          "dimension": "Your main timing choice",
+          "a": "Choose when to claim, from age 62 through age 70",
+          "b": "Choose how much to withdraw from the available balance"
+        },
+        {
+          "dimension": "Tax treatment",
+          "a": "A portion of benefits may be taxable, depending on income",
+          "b": "Withdrawals of pre-tax money are taxed as ordinary income"
+        },
+        {
+          "dimension": "2026 contribution limit",
+          "a": "No contribution limit of this kind",
+          "b": "$24,500, or $32,500 if age 50 or older"
+        },
+        {
+          "dimension": "Employer match",
+          "a": "Not applicable",
+          "b": "Possible, but it varies by plan and is not guaranteed"
+        }
+      ]
+    },
+    "verdict": "Plan around both sources of income rather than choosing one. Use your estimated Social Security benefit to identify how much of your monthly spending it could cover for life. Then compare the remaining gap with the 401(k) balance you expect to have. If an employer offers a 401(k) match, find out its terms before deciding how much to contribute; a match is not guaranteed. Revisit the calculation at different Social Security claiming ages, since starting at 62 permanently reduces the monthly benefit, while delaying past full retirement age up to 70 increases it. Someone without access to a 401(k) should use the same income-gap calculation but cannot make that account part of the plan.",
+    "sections": [
+      {
+        "heading": "Social Security vs 401(k) Funding and Control",
+        "content": "Social Security and a 401(k) are funded in different ways. [Social Security retirement benefits](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) are earned through payroll taxes and work credits. A [401(k)](https://www.irs.gov/retirement-plans/401k-plans) is an employer retirement plan funded by your contributions and, if your employer offers them, employer contributions. You invest the 401(k) money and later draw from its balance. The 2026 employee contribution limit is $24,500, or $32,500 if you are 50 or older.\n\nThat difference gives you different choices. With Social Security, your central planning decision is when to claim. You do not decide how large a payroll-tax contribution to put into a personal Social Security account. With a 401(k), you decide whether and how much to contribute within the limit, and you make investment decisions for that money. An employer match may add to the balance, but its availability and terms vary by plan.\n\nA larger 401(k) contribution can help build a balance for later withdrawals, while leaving less of your pay available today. If you have a 401(k), compare its contribution amount with your current budget before setting it. If a match is offered, include its specific terms in that decision. Do not assume the match exists simply because the plan does."
+      },
+      {
+        "heading": "Social Security vs 401(k) Income and Longevity",
+        "content": "Social Security pays a monthly benefit for life, while a 401(k) can run out. That makes Social Security useful when planning expenses that will continue regardless of how long retirement lasts. A 401(k) can cover spending above the monthly benefit, but each withdrawal reduces the balance available for later years.\n\nSocial Security benefits adjust for inflation. A 401(k) withdrawal has no built-in increase that automatically follows inflation. Its investments may change in value, and you decide what to withdraw from the balance you have. When estimating future spending, avoid treating a fixed 401(k) withdrawal as though it will cover the same purchases year after year. If you expect an expense to rise, account for that possibility when testing how long the balance might last.\n\nA practical starting point is a monthly gap calculation: expected monthly spending minus estimated monthly Social Security income equals the amount other resources must cover. Run the calculation for ongoing bills before adding optional spending. Then consider whether the 401(k) balance could support withdrawals for many years, rather than checking only the first year of retirement. If the gap looks too large, you can revisit your expected spending, 401(k) contributions, and claiming date. The calculation does not require you to pick one income source over the other."
+      },
+      {
+        "heading": "Claiming Social Security and Drawing From a 401(k)",
+        "content": "The age when you claim Social Security changes your monthly benefit. You can start retirement benefits at 62, but [claiming early permanently reduces the monthly amount](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). [Delaying past full retirement age up to 70 increases the monthly amount](https://www.ssa.gov/benefits/retirement/planner/delayret.html). A larger monthly benefit lasts for life, so the claiming decision affects more than your first retirement-year budget.\n\nA 401(k) presents a different timing question: how much of the balance to draw down. You might plan for 401(k) withdrawals to cover more spending before claiming Social Security, or you might claim earlier and draw less from the 401(k) at first. Either plan needs a check on the balance left for later years. Claiming later does not create 401(k) money; it changes when Social Security income begins and how much arrives each month afterward.\n\nCompare at least two claiming ages using the same spending estimate. For each age, note the years before benefits begin, the monthly benefit afterward, and the 401(k) withdrawals your budget would call for. If your 401(k) balance could not support the years before a later claim, that finding matters even if the later monthly benefit looks appealing. The [Social Security retirement calculator](/calculators/social-security-retirement-calculator/) can help you test the timing against your own estimates."
+      },
+      {
+        "heading": "Taxes on Social Security and 401(k) Withdrawals",
+        "content": "Pre-tax 401(k) withdrawals are taxed as ordinary income, while the taxable portion of Social Security benefits depends on income. The two income sources therefore should not be treated as identical amounts of spendable cash. A budget built from amounts before tax may overstate what you can use for bills.\n\nIf you expect to receive both in the same year, look at the combined income picture before deciding on a 401(k) withdrawal amount. Taking more pre-tax 401(k) money can change the income used to determine whether some Social Security benefits are taxable. The [guide to Social Security benefit taxes](/guides/is-social-security-taxable/) explains the benefit-tax rules. For 401(k) money, keep track of whether a planned withdrawal comes from pre-tax contributions before estimating the tax you might owe.\n\nTaxes can also change a claiming comparison. Two plans might cover the same spending before tax but leave different amounts afterward because the timing and size of 401(k) withdrawals differ. Make a yearly estimate alongside the monthly budget, especially if one plan calls for larger withdrawals while Social Security payments are also coming in. The goal is to compare income you could spend, rather than adding two figures together without accounting for tax."
+      },
+      {
+        "heading": "Combining Social Security With a 401(k)",
+        "content": "A workable retirement plan assigns Social Security and 401(k) income separate jobs. Start with the Social Security benefit you estimate at a chosen claiming age and compare it with expected monthly spending. Use the 401(k) balance to test whether withdrawals could cover the difference over time. Repeat the test at another claiming age instead of assuming that the earliest available benefit or the largest monthly benefit must be right for you.\n\nPeople with modest 401(k) balances may rely more heavily on Social Security for ongoing expenses. In that case, a large planned gap calls for a change to the spending estimate, the contribution plan before retirement, or the claiming timeline. People with larger 401(k) balances still need a withdrawal plan because the account can run out. Neither balance size changes Social Security's lifetime payment or automatic inflation adjustment.\n\nA plan centered on a 401(k) is a poor fit for someone who cannot use an employer 401(k). That person should estimate Social Security income and identify other resources to cover the remaining expenses. Conversely, treating Social Security as sufficient without comparing it with a spending estimate leaves any shortfall unplanned. If you are deciding where to put retirement contributions, the [401(k) vs Roth IRA comparison](/compare/401k-vs-roth-ira/) addresses a different choice: how to use retirement accounts. If you may need access to invested money before retirement, the [401(k) vs brokerage account comparison](/compare/401k-vs-brokerage-account/) covers that tradeoff. For your Social Security vs 401(k) plan, write down your monthly spending estimate and test the gap at two claiming ages."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Social Security better than a 401(k) for retirement?",
+        "answer": "Neither replaces the other. Social Security pays an inflation-adjusted monthly benefit for life, while a 401(k) gives you an invested balance you can draw from until it is exhausted. Compare your estimated benefit with your planned spending, then use the 401(k) balance to assess the remaining gap."
+      },
+      {
+        "question": "Can I receive Social Security and withdraw from a 401(k) at the same time?",
+        "answer": "Yes. You can plan around both sources of retirement income. Withdrawals of pre-tax 401(k) money are ordinary income, and income can affect whether a portion of your Social Security benefits is taxable. Estimate the after-tax amounts before setting a withdrawal target."
+      },
+      {
+        "question": "Does Social Security go up with inflation like a 401(k)?",
+        "answer": "Social Security benefits adjust for inflation. A 401(k) does not automatically raise your withdrawals with inflation. You choose what to withdraw from its invested balance, which can change in value and can run out."
+      },
+      {
+        "question": "Should I use my 401(k) while waiting to claim Social Security?",
+        "answer": "That can work if the 401(k) balance supports the withdrawals you would need while waiting. Delaying Social Security past full retirement age up to 70 increases the monthly benefit, but drawing from a 401(k) in the meantime leaves less in the account. Compare both the later benefit and the remaining 401(k) balance."
+      },
+      {
+        "question": "What if I do not have a 401(k)?",
+        "answer": "You can still plan around your estimated Social Security benefit. Compare it with expected monthly spending and identify other resources for any gap. A 401(k) is an employer plan, so someone without access to one should not build a retirement budget that assumes 401(k) withdrawals."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Social Security Administration: Retirement benefits by year of birth",
+        "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+      },
+      {
+        "label": "Social Security Administration: Delayed retirement",
+        "url": "https://www.ssa.gov/benefits/retirement/planner/delayret.html"
+      },
+      {
+        "label": "Internal Revenue Service: 401(k) plans",
+        "url": "https://www.irs.gov/retirement-plans/401k-plans"
+      }
+    ],
+    "relatedComparisons": [
+      "401k-vs-roth-ira",
+      "401k-vs-brokerage-account"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Social Security retirement calculator",
+        "href": "/calculators/social-security-retirement-calculator/"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-09-30 ──
   {
     "updated": "2026-09-30",

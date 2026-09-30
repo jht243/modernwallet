@@ -1,0 +1,48 @@
+{
+ "slug": "roth-ira-vs-index-fund",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": true,
+ "fallback_reason": "gemini-3.8-flash: RuntimeError: HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at h",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "OPENAI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2223,
+ "floor": 1000,
+ "input_tokens": 17369,
+ "output_tokens": 4010,
+ "thinking_tokens": 782,
+ "cached_tokens": 0,
+ "est_cost_usd": null,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2223,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18010
+  }
+ },
+ "seconds": 57.6,
+ "response_id": "resp_0b6d8630d27d5aa1006abd7e4c9ea487d289f6f8a2d9e302c1",
+ "generated_at": "2026-09-30T21:26:28+0000"
+}
