@@ -28,6 +28,560 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-09-30 ──
+  {
+    "slug": "senior-deduction-social-security",
+    "updated": "2026-09-30",
+    "title": "Social Security Tax Deduction for Seniors (2026)",
+    "metaDescription": "Learn how the new social security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.",
+    "h1": "Social Security Tax Deduction for Seniors and Benefit Taxes",
+    "cardBlurb": "How the new enhanced senior deduction works alongside the unchanged federal rules for taxing Social Security benefits.",
+    "introText": "Social Security benefits remain taxable in 2026 under the same calculation rules as before. The new tax law created an enhanced deduction for seniors, but it did not exempt regular retirement benefits from your taxable gross income. The provision covers tax years 2025 through 2028. Instead, eligible individuals age 65 and older receive an extra deduction of up to $6,000, or $12,000 for married couples filing jointly if both qualify. This deduction phases out above $75,000 of modified adjusted gross income, or $150,000 jointly.\n\nAt ModernWallet, we review tax changes by tracking the actual dollar calculations as they appear on federal schedules. The new deduction lowers taxable income, sometimes eliminating an owed tax balance completely. That separate benefit calculation remains on the books. Understanding how these separate rules interact prevents an unexpected tax bill when you file your return.",
+    "sections": [
+      {
+        "heading": "The New Deduction and Benefit Taxation",
+        "body": "The enhanced senior deduction does not rewrite how the federal government defines taxable income from your Social Security benefits. The calculation for taxable benefits remains completely untouched. Instead, the [IRS eligibility guidelines for the senior deduction](https://www.irs.gov/newsroom/check-your-eligibility-for-the-new-enhanced-deduction-for-seniors) show that this provision serves as a separate subtraction from your adjusted gross income (AGI).\n\nRetirees frequently encounter rumors that federal taxes on retirement benefits were abolished. That claim is incorrect. The standard formula that pulls up to 85% of your benefits into gross income always runs before any other step.\n\nThe new deduction comes into play once your adjusted gross income is tallied. It reduces your final taxable income directly, which decides which tax bracket will apply across the rest of your household balance. Picture the two policies as separate assembly stations.\n\nStation one measures your overall earnings to determine how many benefit dollars must count as taxable gross income. Station two subtracts deductions like this $6,000 senior allowance before calculating tax.\n\nIf eligible deductions exceed your total income, your federal tax bill drops to zero because extra deductions wipe out the taxable balance. The benefit itself never receives a tax exemption."
+      },
+      {
+        "heading": "How Social Security Benefits Are Still Taxed",
+        "body": "Federal law measures your combined income to decide whether your benefits face taxation. Combined income equals your adjusted gross income, plus any tax-exempt municipal interest, plus exactly half of your total Social Security benefits for the calendar year.\n\nThe threshold amounts have not changed. Single filers, heads of household, and qualifying surviving spouses face taxation when combined income exceeds $25,000. For joint filers, the base threshold is $32,000. If you are married filing separately and lived with your spouse at any time during the year, your threshold drops to $0. Review the full mechanical breakdown in our guide on [whether Social Security is taxable](/guides/is-social-security-taxable/).\n\nIf your combined income falls between $25,000 and $34,000, or $32,000 and $44,000 for joint returns, up to 50% of your benefits may be taxable. Above $34,000, or $44,000 for joint filers, up to 85% of your benefits becomes subject to ordinary income tax. Federal rules cap that taxable portion at 85%. State income tax rules vary, as detailed in our review of [states that tax Social Security](/guides/states-that-tax-social-security/). To estimate your baseline benefit amounts, test your numbers in our [Social Security calculator](/retirement/social-security-retirement-calculator/)."
+      },
+      {
+        "heading": "Eligibility Rules for the Senior Deduction",
+        "body": "Qualifying for the enhanced deduction requires meeting four explicit federal tests. First, you must turn age 65 by the final day of the tax year. For tax year 2025, the [IRS senior filing guidance](https://www.irs.gov/publications/p554) requires you to have been born before January 2, 1961.\n\nSecond, you must possess a valid Social Security number issued before your return's filing due date, including extensions. The Social Security number must be valid for employment. Third, married individuals must file a joint return to claim the deduction. Married taxpayers filing separately cannot claim the enhanced deduction at all.\n\nFourth, the deduction is temporary. Current legislation provides this benefit exclusively for tax years 2025, 2026, 2027, and 2028. You can claim it whether you elect the standard deduction or itemize your deductions on Schedule A. It operates across both filing methods."
+      },
+      {
+        "heading": "Phase-Out Math and Worked Examples for the Senior Deduction",
+        "body": "The full enhanced deduction equals $6,000 per qualifying individual, or $12,000 for a married couple where both spouses reach age 65 by year-end. The phase-out begins when your modified adjusted gross income (MAGI) crosses $75,000 on a single return or $150,000 on a joint return. Modified AGI for this form consists of your AGI from Form 1040 line 11b plus certain foreign or territory earned income exclusions. Social Security counts in MAGI only to the extent that it is already taxable under regular rules.\n\nThe phase-out reduces your deduction by 6% of the income that exceeds your threshold. On [IRS Schedule 1-A](https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf), Part V outlines this exact subtraction. You subtract your threshold from your MAGI, multiply that excess by 6%, and subtract that dollar figure from your initial $6,000 deduction amount.\n\nConsider an unmarried retiree age 67 with $100,000 of MAGI. Their income exceeds the $75,000 limit by $25,000. Multiplying $25,000 by 6% gives a phase-out reduction of $1,500. Subtracting $1,500 from the $6,000 maximum yields an actual deduction of $4,500.\n\nNow examine a married couple who are both age 66, filing jointly with a combined MAGI of $130,000. Because their $130,000 income falls below the $150,000 joint threshold, they experience zero reduction. Both spouses qualify, so they receive the full $12,000 deduction on their joint return."
+      },
+      {
+        "heading": "Stacking the Deduction with the Standard Deduction",
+        "body": "The enhanced deduction for seniors stacks on top of your existing standard deduction amounts. It does not replace them. Eligible filers claim both deductions in the same tax year.\n\nFor tax year 2026, the [IRS inflation adjustment notice](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill) sets the basic standard deduction at $16,100 for single filers and married couples filing separately. For married couples filing jointly, the basic standard deduction is $32,200. Heads of household receive a basic standard deduction of $24,150.\n\nRetirees also retain the existing additional standard deduction for age 65 and older from [IRS Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). For 2026, that additional standard deduction adds $1,650 per qualifying spouse on a joint return. For an unmarried filer who is not a surviving spouse, the additional standard deduction is $2,050.\n\nTogether, these deductions add up to a large tax-free amount. An unmarried 66-year-old with income under $75,000 combines a $16,100 basic standard deduction, a $2,050 age-based standard deduction, and the new $6,000 senior deduction. That retiree has $24,150 in total subtractions. For a married couple where both spouses are 65 or older and MAGI stays under $150,000, they combine a $32,200 basic standard deduction, two $1,650 additional standard deductions totaling $3,300, and two $6,000 senior deductions totaling $12,000. Their total subtractions reach $47,500. For that married couple, taxable income stays at zero until adjusted gross income exceeds $47,500."
+      },
+      {
+        "heading": "Claiming the Social Security Tax Deduction for Seniors on Form 1040",
+        "body": "Taxpayers claim this new benefit using [IRS Schedule 1-A](https://www.irs.gov/newsroom/schedule-1-a-additional-deductions-what-to-know-about-the-new-form). This form calculates your allowed enhanced deduction alongside other adjustments. The completed total flows directly to Form 1040 line 13b.\n\nLine 13b sits immediately after your adjusted gross income on the tax return. The deduction is subtracted along with your standard or itemized deduction, after adjusted gross income, so it lowers taxable income without changing AGI. Because it does not alter your AGI, it does not change your initial calculation for whether Social Security benefits were taxable in the first place.\n\nRetirees who manage mandatory distributions can review timing options with our [RMD calculator](/retirement/rmd-calculator/). Keeping taxable distributions low preserves more of your deduction if your income hovers near the $75,000 or $150,000 thresholds. You can also explore how giving strategies reduce taxable IRA income in our comparison of [RMD vs QCD](/compare/rmd-vs-qcd/)."
+      },
+      {
+        "heading": "Withholding Adjustments and Practical Next Steps",
+        "body": "Because this enhanced deduction reduces your final tax obligation, your existing tax withholding might result in a larger refund than you prefer. Adjusting your federal withholding allows you to keep that cash flow throughout the year instead of waiting for filing season.\n\nTo alter tax withheld from your monthly benefit, submit [IRS Form W-4V](https://www.irs.gov/pub/irs-pdf/fw4v.pdf) to your local Social Security Administration office. Form W-4V lets you have 7%, 10%, 12%, or 22% of each Social Security payment withheld, and no other percentage. If you currently withhold 12% and find that your total deductions wipe out your tax bill, dropping to 7% or zero withholding keeps that cash in your monthly budget.\n\nReview your income from pensions, capital assets, and distributions before making changes. If you hold taxable brokerage accounts, compare current bracket boundaries using our breakdown of [capital gains tax for seniors](/guides/capital-gains-tax-for-seniors/). Gathering your year-end statements and modeling your income against the thresholds will show whether you qualify for the full social security tax deduction for seniors."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/social-security-retirement-calculator/",
+        "label": "Social Security calculator"
+      },
+      {
+        "href": "/retirement/rmd-calculator/",
+        "label": "RMD calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Social Security tax-free now?",
+        "answer": "No. The federal formulas determining whether your Social Security benefits count as taxable income did not change. Up to 85% of your benefits can still be included in gross income under the combined income test. The new law provides an enhanced deduction of up to $6,000 to reduce taxable income, but it does not make benefits tax-free."
+      },
+      {
+        "question": "Who qualifies for the $6,000 senior deduction?",
+        "answer": "You qualify if you reach age 65 by the end of the tax year and have a valid Social Security number issued before your return due date. Married couples must file a joint return to claim the deduction. It phases out for single filers with MAGI above $75,000 and joint filers with MAGI above $150,000."
+      },
+      {
+        "question": "Do I have to itemize to get the senior deduction?",
+        "answer": "No. You can claim the enhanced deduction whether you take the standard deduction or itemize deductions on Schedule A. It is claimed on Schedule 1-A and flows to Form 1040 line 13b."
+      },
+      {
+        "question": "Can married couples filing separately claim it?",
+        "answer": "No. The rules explicitly require married taxpayers to file a joint return to claim the enhanced deduction for seniors. Couples filing separately are not eligible."
+      },
+      {
+        "question": "How long does the senior deduction last?",
+        "answer": "Under current legislation, the enhanced deduction for seniors is temporary. It applies only to tax years 2025, 2026, 2027, and 2028."
+      },
+      {
+        "question": "Does the senior deduction change how much of my Social Security is taxable?",
+        "answer": "No. It does not alter the formula that calculates taxable benefits. It is subtracted along with your standard or itemized deduction, after adjusted gross income, lowering your taxable income without changing your AGI."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Check Your Eligibility for the New Enhanced Deduction for Seniors",
+        "url": "https://www.irs.gov/newsroom/check-your-eligibility-for-the-new-enhanced-deduction-for-seniors"
+      },
+      {
+        "label": "IRS, Schedule 1-A: Additional Deductions",
+        "url": "https://www.irs.gov/newsroom/schedule-1-a-additional-deductions-what-to-know-about-the-new-form"
+      },
+      {
+        "label": "IRS Form 1040 Schedule 1-A (PDF)",
+        "url": "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf"
+      },
+      {
+        "label": "IRS Publication 554, Tax Guide for Seniors",
+        "url": "https://www.irs.gov/publications/p554"
+      },
+      {
+        "label": "IRS Publication 915, Social Security and Equivalent Railroad Retirement Benefits",
+        "url": "https://www.irs.gov/publications/p915"
+      },
+      {
+        "label": "IRS Revenue Procedure 2025-32 (PDF)",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS Form W-4V, Voluntary Withholding Request (PDF)",
+        "url": "https://www.irs.gov/pub/irs-pdf/fw4v.pdf"
+      },
+      {
+        "label": "IRS, Tax Inflation Adjustments for Tax Year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      }
+    ]
+  },
+  {
+    "slug": "states-that-tax-social-security",
+    "updated": "2026-09-30",
+    "title": "States That Tax Social Security Benefits in 2026",
+    "metaDescription": "Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.",
+    "h1": "States That Tax Social Security Benefits in 2026",
+    "cardBlurb": "Eight states tax some Social Security benefits in 2026, most only above specific income thresholds, while West Virginia now fully exempts them.",
+    "introText": "Eight states tax at least some Social Security benefits in tax year 2026: Colorado, Connecticut, Minnesota, Montana, New Mexico, Rhode Island, Utah, and Vermont. West Virginia fully exempts benefits starting in 2026. Every other state with a broad personal income tax exempts Social Security payments from state taxation. States without a broad income tax do not tax them either.\n\nMost of these eight states do not tax every dollar of benefits, and most residents in these jurisdictions pay zero state income tax on their monthly checks. State relief typically arrives through income exemptions, retirement age rules, or targeted tax credits. At ModernWallet, we track these state-level adjustments because state revenue laws shift frequently, and crossing an income threshold by a single dollar can change your state tax bill.",
+    "sections": [
+      {
+        "heading": "States That Tax Social Security in 2026",
+        "body": "State taxation of Social Security depends on state statutes rather than federal brackets alone. The [Connecticut Office of Legislative Research report 2026-R-0106](https://prdext2.cga.ct.gov/2026/rpt/pdf/2026-R-0106.pdf) confirms that eight states tax some benefits for tax year 2026. Each state enforces distinct exemption rules.\n\nColorado lets seniors aged 65 and older subtract all federally taxable benefits. Younger retirees aged 55 to 64 exempt all payments if AGI is $75,000 or less, $95,000 joint, or up to $20,000 when exceeding those caps.\n\nConnecticut shields entire benefits below specific thresholds. Taxpayers owe nothing if federal AGI is under $75,000 for single or married filing separately, or under $100,000 for joint, head of household, and surviving spouse. Above those cutoff points, the state taxes up to 25%.\n\nMinnesota provides a full subtraction below $86,410 for single or head of household filers, $110,780 joint, and $55,390 married filing separately. That allowance phases out above those marks, while an alternative subtraction remains available. Montana taxes benefits included on federal returns, though residents aged 65 and older receive an inflation-adjusted senior subtraction.\n\nNew Mexico fully exempts income under $100,000 for single filers, $150,000 for joint, surviving spouse, and head of household, or $75,000 married filing separately. No exemption applies above those levels. Rhode Island exempts seniors reaching full retirement age with federal AGI below $107,000 for single, head of household, and separate filers in 2025, pending 2026 figures.\n\nUtah uses a tax credit. The credit offsets liability below $54,000 single, $90,000 joint, and $45,000 married filing separately, phasing out at higher incomes. Vermont grants full exemptions at an AGI of $55,000 or less, or $70,000 joint.\n\nPhase-outs extend to $65,000 single and $80,000 joint. West Virginia no longer taxes these benefits at all, making them 100% exempt across all income levels starting in tax year 2026.\n\nResidents in these locations must calculate their state adjusted gross income carefully. Even within these eight states, low-income and middle-income retirees frequently owe zero state tax on their benefits."
+      },
+      {
+        "heading": "Full Exemption Below an Income Line",
+        "body": "Four states apply a straightforward income cut-off to determine who pays tax on benefits. In Connecticut, New Mexico, Vermont, and Minnesota, staying under a statutory income limit protects your entire check from state tax.\n\nUnder guidelines from the [Connecticut Department of Revenue Services](https://portal.ct.gov/drs/individuals/connecticut-tax-tips-for-senior-citizens), your benefits are fully exempt if your federal AGI is under $75,000 as a single filer or married filing separately (MFS). The threshold is under $100,000 for joint filers, heads of household (HOH), and qualifying surviving spouses. If your income exceeds those caps, Connecticut caps the taxable portion at 25% of your benefits.\n\nNew Mexico offers complete relief up to higher dollar amounts. According to the [New Mexico Taxation and Revenue Department](https://www.tax.newmexico.gov/?p=15242), taxpayers with income under $100,000 for single filers pay zero state tax on benefits. Married couples filing jointly, heads of household, and surviving spouses owe nothing if income remains under $150,000. For married individuals filing separately, the threshold is $75,000. Filers who earn above these limits receive no exemption on their benefits.\n\nVermont uses a hard phase-out window. Under [Vermont Statutes Title 32 Section 5830e](https://legislature.vermont.gov/statutes/section/32/151/05830e) and [Vermont Department of Taxes guidelines](https://tax.vermont.gov/individuals/income-tax-returns/social-security-exemption), single filers, heads of household, and married individuals filing separately get a full exclusion at an AGI of $55,000 or less. The exclusion phases out proportionally between $55,000 and $65,000. No exclusion remains at $65,000 or higher. For joint filers, the full exclusion applies at $70,000 or less, phasing out up to $80,000, with zero exclusion above $80,000.\n\nMinnesota establishes both an income-based subtraction and an alternative calculation. The [Minnesota Department of Revenue](https://www.revenue.state.mn.us/social-security-benefit-subtraction) provides a full subtraction for 2026 below set income limits. According to [Minnesota Department of Revenue inflation adjustments](https://www.revenue.state.mn.us/sites/default/files/2025-12/inflation-adjusted-amounts-2026.pdf), the 2026 threshold is $110,780 for married couples filing jointly. It is $86,410 for single filers or heads of household, and $55,390 for married filers filing separately. The subtraction drops by 10% for each $4,000 of AGI over the threshold, or $2,000 for MFS. Minnesota also maintains an alternative method that permits a maximum subtraction of $5,840 for joint filers, $4,560 for single or head of household filers, and $2,920 for married filing separately."
+      },
+      {
+        "heading": "Age-Based Rules for Benefit Taxes",
+        "body": "Two states use your age as a primary gatekeeper for tax relief. Colorado and Rhode Island combine age requirements with income tests to determine liability.\n\nColorado enacted major revisions through [House Bill 24-1142](https://content.leg.colorado.gov/sites/default/files/2024a_1142_signed.pdf). Starting in tax year 2025 and continuing into 2026, taxpayers age 65 and older can subtract all federally taxable Social Security benefits on their state return. For individuals ages 55 to 64, the full subtraction applies only if AGI is $75,000 or less for single filers, or $95,000 or less for joint returns. If a filer between 55 and 64 earns more than those limits, their combined pension and Social Security subtraction cannot exceed $20,000.\n\nRhode Island links taxability to your full retirement age under federal law. Based on [Rhode Island Division of Taxation Advisory 2025-22](https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf), benefits remain exempt only if the taxpayer has reached Social Security full retirement age and their federal AGI sits below an inflation-adjusted limit. For single filers, heads of household, and married individuals filing separately, the 2025 threshold was $107,000. Filers should consult the Rhode Island Division of Taxation for final 2026 numbers because new inflation adjustments apply. A [Rhode Island 2026 legislative summary](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-07/2026_summary_of_legislative_changes.pdf) notes that a budget law eliminates the full-retirement-age requirement beginning in tax year 2027."
+      },
+      {
+        "heading": "Credits and Partial Taxation",
+        "body": "Utah and Montana approach benefit taxation differently from other jurisdictions. Rather than using an upfront income exclusion for all filers, they use tax credits or senior deductions.\n\nUtah includes Social Security benefits in state taxable income. However, [Utah Code Section 59-10-1042](https://le.utah.gov/xcode/Title59/Chapter10/C59-10-S1042_2025050720250507.html) provides a nonrefundable Social Security benefits credit. This credit equals the state tax rate multiplied by the benefits included in Utah taxable income. The credit shrinks by 2.5 cents per dollar of modified AGI above $54,000 for single filers. The phase-out begins above $90,000 for joint filers or heads of household, and above $45,000 for married individuals filing separately. Higher earners gradually lose the credit and pay state tax on their benefits.\n\nMontana taxes the exact portion of benefits included in your federal taxable income. According to the [Montana Department of Revenue Form 2 instructions](https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2024_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf), Montana adopted this approach starting in tax year 2024. Montana does not use an income-based phase-out for Social Security. Instead, taxpayers age 65 and older receive an inflation-adjusted senior subtraction. For 2024, that subtraction stood at $5,500, or $11,000 if both joint filers were 65 or older. The subtraction adjusts annually for inflation from 2025 onward. Taxpayers deduct this amount from their Montana income to offset taxable income."
+      },
+      {
+        "heading": "West Virginia Benefit Exemption in 2026",
+        "body": "West Virginia no longer taxes Social Security. State lawmakers phased out the tax over multiple legislative sessions.\n\nAccording to the [West Virginia State Tax Department](https://tax.wv.gov/Individuals/SeniorCitizens/Pages/SeniorCitizenSocialSecurityModification.aspx), Social Security benefits become 100% exempt from state income tax starting in tax year 2026. For tax year 2025, higher earners still faced partial state liability. Filers with an AGI above $50,000 for single returns or $100,000 for joint returns could exempt only 65% of their benefits in 2025. That limitation has expired. All qualifying benefits earned by West Virginia residents are now completely protected from state income taxation."
+      },
+      {
+        "heading": "Popular States That Do Not Tax Benefits",
+        "body": "Most states do not tax Social Security checks. Relocating retirees often look at large, popular states to see whether moving will trigger a tax bill.\n\nUnder the [California Franchise Tax Board](https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html), California excludes Social Security benefits from taxable personal income. The [Pennsylvania Department of Revenue](https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/gross-compensation) lists Social Security payments as income that is never taxable. In New York, the [New York State Department of Taxation and Finance](https://www.tax.ny.gov/pit/file/information_for_seniors.htm) allows taxpayers to subtract any Social Security income included in their federal AGI. The [New Jersey Division of Taxation](https://www.nj.gov/treasury/taxation/njit12.shtml) lists Social Security as exempt income that you do not report on your state return. Across New England, the [Massachusetts tax expenditure budget](https://budget.digital.mass.gov/govbudget/fy27/tax-expenditure-budget/personal-income-tax/exclusions-from-gross-income/1-009/) excludes Social Security payments from gross personal income.\n\nIf you retire to any of these states, your monthly Social Security benefit bypasses state tax entirely. You never pay state tax on those checks regardless of how high your other income climbs."
+      },
+      {
+        "heading": "Interaction With Federal Social Security Taxation",
+        "body": "State tax rules operate independently from federal brackets. Federal law taxes Social Security using a specific calculation called provisional or combined income. Detailed in [IRS Publication 915](https://www.irs.gov/publications/p915), your combined income equals your adjusted gross income, nontaxable interest, and half of your annual Social Security benefits.\n\nFederal thresholds dictate whether you pay federal tax on your benefits. At the federal level, combined income determines whether none, up to 50%, or up to 85% of your benefits count as taxable income. You can review federal calculation brackets in our guide explaining [is Social Security taxable](/guides/is-social-security-taxable/).\n\nEven when the federal government taxes 85% of your benefits, your state return still follows its own completely separate rulebook. Filers in California or Pennsylvania still include benefits on their federal Form 1040. When filing state paperwork, however, none of that federally taxed amount is taxed on your state return.\n\nMontana and Connecticut take the opposite approach. Filers there start with the federal figure and apply state-specific subtractions. Retirees can see how other tax laws treat older filers in our guide to [capital gains tax for seniors](/guides/capital-gains-tax-for-seniors/) or review [senior deduction Social Security rules](/guides/senior-deduction-social-security/) for deductions."
+      },
+      {
+        "heading": "State Revenue Rule Checks Before Relocating",
+        "body": "State tax codes change frequently. Before finalizing relocation plans or calculating your retirement budget, confirm current guidelines directly with your state revenue department.\n\nState legislatures regularly alter income exemptions and standard deductions. A state that taxes benefits today may phase the practice out over coming legislative sessions, just as West Virginia did. Evaluate overall living expenses, sales taxes, and local property rates alongside benefit taxation. Model your projected income streams inside our [retirement income calculator](/retirement/retirement-income-calculator/) to project cash flow after taxes.\n\nKnowing your state tax rules helps prevent unexpected filing bills. Check your expected monthly benefit using our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) to plan your income accurately. Review your complete portfolio across our broader [retirement planning resources](/retirement/) to prepare for tax season."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/social-security-retirement-calculator/",
+        "label": "Social Security calculator"
+      },
+      {
+        "href": "/retirement/retirement-income-calculator/",
+        "label": "Retirement income calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which states tax Social Security in 2026?",
+        "answer": "Eight states tax at least some Social Security benefits in tax year 2026: Colorado, Connecticut, Minnesota, Montana, New Mexico, Rhode Island, Utah, and Vermont. Most of these states exempt benefits for filers below specific income or age limits."
+      },
+      {
+        "question": "Is Social Security taxable in California?",
+        "answer": "No. California excludes Social Security benefits from taxable personal income. You do not pay California state income tax on your benefits, even if they are taxable on your federal return."
+      },
+      {
+        "question": "Is Social Security taxable in Pennsylvania?",
+        "answer": "No. The Pennsylvania Department of Revenue classifies Social Security payments as income that is never taxable. Benefits are completely exempt from Pennsylvania personal income tax."
+      },
+      {
+        "question": "Is Social Security taxable in New York?",
+        "answer": "No. New York State allows a full subtraction for Social Security benefits that are included in federal adjusted gross income. New York residents pay zero state tax on benefits."
+      },
+      {
+        "question": "Does West Virginia tax Social Security in 2026?",
+        "answer": "No. Social Security benefits are 100% exempt from West Virginia personal income tax starting in tax year 2026. The previous phase-out rules for higher earners no longer apply."
+      },
+      {
+        "question": "Does Colorado tax Social Security?",
+        "answer": "It depends on your age and income. Coloradans age 65 and older can subtract all federally taxable Social Security. Filers ages 55 to 64 can subtract all benefits if AGI is $75,000 or less ($95,000 for joint filers), or up to $20,000 if above."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Connecticut Office of Legislative Research Report 2026-R-0106",
+        "url": "https://prdext2.cga.ct.gov/2026/rpt/pdf/2026-R-0106.pdf"
+      },
+      {
+        "label": "Colorado General Assembly HB24-1142",
+        "url": "https://content.leg.colorado.gov/sites/default/files/2024a_1142_signed.pdf"
+      },
+      {
+        "label": "Connecticut Department of Revenue Services Senior Tax Tips",
+        "url": "https://portal.ct.gov/drs/individuals/connecticut-tax-tips-for-senior-citizens"
+      },
+      {
+        "label": "Minnesota Department of Revenue Social Security Subtraction",
+        "url": "https://www.revenue.state.mn.us/social-security-benefit-subtraction"
+      },
+      {
+        "label": "Montana Department of Revenue Form 2 Instructions",
+        "url": "https://revenue.mt.gov/files/Forms/Montana-Individual-Income-Tax-Return-Form-2/2024_Montana_Individual_Income_Tax_Return_Form_2_Instructions.pdf"
+      },
+      {
+        "label": "New Mexico Taxation and Revenue Department",
+        "url": "https://www.tax.newmexico.gov/?p=15242"
+      },
+      {
+        "label": "Rhode Island Division of Taxation Advisory 2025-22",
+        "url": "https://tax.ri.gov/sites/g/files/xkgbur541/files/2025-11/ADV_2025_22_Inflation_Adjustments.pdf"
+      },
+      {
+        "label": "Utah Code Section 59-10-1042",
+        "url": "https://le.utah.gov/xcode/Title59/Chapter10/C59-10-S1042_2025050720250507.html"
+      },
+      {
+        "label": "Vermont Statutes Title 32 Section 5830e",
+        "url": "https://legislature.vermont.gov/statutes/section/32/151/05830e"
+      },
+      {
+        "label": "West Virginia State Tax Department",
+        "url": "https://tax.wv.gov/Individuals/SeniorCitizens/Pages/SeniorCitizenSocialSecurityModification.aspx"
+      },
+      {
+        "label": "California Franchise Tax Board Form 540 Instructions",
+        "url": "https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html"
+      },
+      {
+        "label": "Pennsylvania Personal Income Tax Guide",
+        "url": "https://www.pa.gov/agencies/revenue/forms-and-publications/pa-personal-income-tax-guide/gross-compensation"
+      },
+      {
+        "label": "New York State Department of Taxation and Finance",
+        "url": "https://www.tax.ny.gov/pit/file/information_for_seniors.htm"
+      },
+      {
+        "label": "New Jersey Division of Taxation",
+        "url": "https://www.nj.gov/treasury/taxation/njit12.shtml"
+      },
+      {
+        "label": "Massachusetts FY27 Tax Expenditure Budget",
+        "url": "https://budget.digital.mass.gov/govbudget/fy27/tax-expenditure-budget/personal-income-tax/exclusions-from-gross-income/1-009/"
+      },
+      {
+        "label": "IRS Publication 915",
+        "url": "https://www.irs.gov/publications/p915"
+      }
+    ]
+  },
+  {
+    "slug": "irs-mileage-rate-history",
+    "updated": "2026-09-30",
+    "title": "IRS Mileage Rate History: Rates by Year (2010 to 2026)",
+    "metaDescription": "Complete IRS mileage rate history by year from 2010 to 2026. View historical rates for business, medical, moving, and charitable driving in one table.",
+    "h1": "IRS Mileage Rate History by Year",
+    "cardBlurb": "A complete historical table of standard IRS mileage rates for business, medical, moving, and charity from 2010 to 2026.",
+    "introText": "For 2026, the standard IRS business mileage rate is 72.5 cents per mile from Jan 1 to Jun 30, and 76 cents per mile from Jul 1 to Dec 31. At ModernWallet, we track these figures so drivers, employers, and accountants can look up the exact rate that applies to any driving log. The IRS updates its standard mileage rates periodically to reflect the costs of owning and operating an automobile. Rates apply to electric, hybrid, gasoline, and diesel vehicles.\n\nLooking back across years of tax records requires precise numbers. In three tax years since 2010, the IRS adjusted figures in the middle of the calendar year rather than keeping a single annual number. When you calculate tax deductions or reconcile employee expense reports, you must match every trip to the rate in effect on the date driven. Use our [mileage deduction calculator](/mileage-deduction/) to evaluate deduction amounts for individual driving totals.",
+    "sections": [
+      {
+        "heading": "IRS Mileage Rates by Year",
+        "body": "The standard mileage rate by year determines the per-mile cost deduction for drivers. The table below lists the [official standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates) published by the Internal Revenue Service for tax years 2010 through 2026. All amounts are expressed in cents per mile.\n\n| Year | Dates | Business | Medical/Moving | Charitable |\n|---|---|---|---|---|\n| 2026 | Jul 1 to Dec 31 | 76 | 23.5 | 14 |\n| 2026 | Jan 1 to Jun 30 | 72.5 | 20.5 | 14 |\n| 2025 | full year | 70 | 21 | 14 |\n| 2024 | full year | 67 | 21 | 14 |\n| 2023 | full year | 65.5 | 22 | 14 |\n| 2022 | Jul 1 to Dec 31 | 62.5 | 22 | 14 |\n| 2022 | Jan 1 to Jun 30 | 58.5 | 18 | 14 |\n| 2021 | full year | 56 | 16 | 14 |\n| 2020 | full year | 57.5 | 17 | 14 |\n| 2019 | full year | 58 | 20 | 14 |\n| 2018 | full year | 54.5 | 18 | 14 |\n| 2017 | full year | 53.5 | 17 | 14 |\n| 2016 | full year | 54 | 19 | 14 |\n| 2015 | full year | 57.5 | 23 | 14 |\n| 2014 | full year | 56 | 23.5 | 14 |\n| 2013 | full year | 56.5 | 24 | 14 |\n| 2012 | full year | 55.5 | 23 | 14 |\n| 2011 | Jul 1 to Dec 31 | 55.5 | 23.5 | 14 |\n| 2011 | Jan 1 to Jun 30 | 51 | 19 | 14 |\n| 2010 | full year | 50 | 16.5 | 14 |\n\nThese rates provide a standard per-mile deduction. Taxpayers may use them in place of tracking actual vehicle expenses. Compare your options using our guide on the [standard mileage vs. actual expenses](/mileage-deduction/standard-mileage-vs-actual-expenses/) method."
+      },
+      {
+        "heading": "Using the Correct Year and Rate for Driving Records",
+        "body": "You must use the rate in effect on the date each mile was driven. Tax deductions depend on when the expense was incurred. If you drive a business mile in May, use the spring rate. A trip taken in August takes the summer rate.\n\nThis rule matters during split-rate tax years. In 2011, 2022, and 2026, the calendar split into two periods. For 2026, miles driven through June 30 use 72.5 cents per mile. Miles driven on or after July 1 take 76 cents. You cannot average the two figures together. You must sort your trip records into separate six-month windows.\n\nMaintaining an accurate log prevents errors. Record the date, the destination, the trip purpose, and odometer readings. You can record trips using our free [mileage log template](/templates/mileage-log-template/) or choose an automated option from our [best mileage tracker apps](/roundup/best-mileage-tracker-apps/) review."
+      },
+      {
+        "heading": "How the IRS Calculates Business and Medical Mileage Rates",
+        "body": "The IRS calculates individual categories using different cost models. According to [IRS release IR-2025-128](https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents), the business rate is based on an annual study of the fixed and variable costs of operating an automobile. This study evaluates operating expenses across vehicle types.\n\nThe medical and moving rate follows a narrower measure. It is based on only the variable costs of operating an automobile. Because fixed costs are excluded, the medical rate sits lower than the business rate. The medical rate was 21 cents in 2024 and 2025 before moving to 20.5 cents for early 2026.\n\nThe charitable rate never follows an annual study. The charitable mileage rate is set by statute at 14 cents per mile. Because Congress wrote that number into the Internal Revenue Code, the IRS has no authority to adjust it. The charitable rate remained exactly 14 cents across every year from 2010 through 2026."
+      },
+      {
+        "heading": "Why Mid-Year Mileage Rate Adjustments Occur",
+        "body": "The IRS usually sets one set of rates for the full calendar year. In most tax seasons, that single rate applies from January 1 through December 31 without mid-year adjustments. Drivers and payroll teams use that number.\n\nIn three tax years between 2010 and 2026, the IRS split the calendar year into two separate periods. Those mid-year splits took effect on July 1 in 2011, 2022, and 2026. For the 2011 tax year, [IR-2011-69](https://www.irs.gov/newsroom/irs-increases-mileage-rate-to-55-5-cents-per-mile) raised the business rate from 51 cents to 55.5 cents starting July 1. For 2022, [IR-2022-124](https://www.irs.gov/newsroom/irs-increases-mileage-rate-for-remainder-of-2022) raised the business rate from 58.5 to 62.5 cents on July 1.\n\nFor 2026, the IRS announced a mid-year increase in [Announcement 2026-11 in Internal Revenue Bulletin 2026-29](https://www.irs.gov/irb/2026-29_irb). The agency stated that this July 1 increase results from recent increases in the price of fuel. Expenses incurred before July 1, 2026, remain subject to the rates established in Notice 2026-10, while expenses on or after July 1 take the new higher rate."
+      },
+      {
+        "heading": "Standard Mileage Rules for Employees and Self-Employed Drivers",
+        "body": "Employment status determines who can claim a business mileage deduction. Self-employed individuals, independent contractors, and small-business owners deduct business driving directly on Schedule C. Gig workers should review our [DoorDash mileage deduction](/mileage-deduction/doordash-mileage-deduction/) guide for delivery-specific record requirements.\n\nRules for company workers are different. As stated in [IR-2019-183](https://www.irs.gov/newsroom/irs-updates-guidance-for-deductible-business-charitable-medical-and-moving-expenses), taxpayers cannot claim a miscellaneous itemized deduction for unreimbursed employee travel expenses, except for certain educator expenses. That miscellaneous itemized deduction was eliminated for tax years after 2017. Most employees cannot deduct work travel on their federal tax returns.\n\nEmployer reimbursement policies remain separate from federal tax deductions. An employer may choose to reimburse workers using standard rates. For details on local workplace rules, see our review of [state mileage reimbursement laws](/guides/state-mileage-reimbursement-law-california-texas-michigan/). Readers managing international teams can consult our overview of [international mileage reimbursement rates](/guides/mileage-reimbursement-rates-uk-canada-ireland-nz/)."
+      },
+      {
+        "heading": "Rules for Deducting Moving Mileage",
+        "body": "The moving mileage deduction is limited by federal law. Under [IR-2018-127](https://www.irs.gov/newsroom/law-change-affects-moving-mileage-and-travel-expenses), moving expenses are deductible only for active-duty Armed Forces members moving under military orders for a permanent change of station. Civilian relocations do not qualify for a moving mileage deduction on federal returns.\n\nThe 2026 rules add an additional group. As outlined in IR-2025-128, the moving deduction also applies to certain members of the intelligence community. For qualified moves, the deduction uses the medical and moving rate listed in the historical table. That rate is 20.5 cents per mile from Jan 1 to Jun 30, 2026, and 23.5 cents per mile from Jul 1 to Dec 31, 2026."
+      },
+      {
+        "heading": "Historical Trends in the Standard Mileage Rate",
+        "body": "Reviewing historical IRS mileage reimbursement rates shows continuous adjustments across the sixteen-year period. In 2010, the business mileage rate began at 50 cents per mile. It rose to 51 cents in early 2011, then reached 55.5 cents for the second half of 2011. The rate remained at 55.5 cents throughout 2012, moved to 56.5 cents in 2013, and adjusted to 56 cents in 2014.\n\nIn 2015, the business rate rose to 57.5 cents per mile. It fell over the next two years to 54 cents in 2016 and 53.5 cents in 2017. The rate increased to 54.5 cents in 2018, 58 cents in 2019, and 57.5 cents in 2020. In 2021, the rate settled at 56 cents.\n\nFrom 2021 through 2026, the rate experienced steady upward movement. The business rate moved from 56 cents in 2021 to 58.5 cents in early 2022. It reached 62.5 cents in late 2022, 65.5 cents in 2023, 67 cents in 2024, and 70 cents in 2025. In 2026, the rate started at 72.5 cents before reaching 76 cents on July 1. Review our [2026 IRS mileage rate breakdown](/mileage-deduction/irs-mileage-rate-2026/) to calculate your current vehicle deduction."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mileage-deduction/",
+        "label": "Mileage deduction calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What was the IRS mileage rate in 2023?",
+        "answer": "For tax year 2023, the IRS standard business mileage rate was 65.5 cents per mile for the entire year. The medical and moving rate was 22 cents per mile, and the charitable rate was 14 cents per mile."
+      },
+      {
+        "question": "What was the IRS mileage rate in 2022?",
+        "answer": "The IRS split the mileage rate for 2022 into two periods. From Jan 1 to Jun 30, 2022, the business rate was 58.5 cents per mile, and the medical and moving rate was 18 cents. From Jul 1 to Dec 31, 2022, the business rate was 62.5 cents per mile, and the medical and moving rate was 22 cents. The charitable rate remained 14 cents for the entire year."
+      },
+      {
+        "question": "Why did the IRS change the mileage rate in the middle of 2026?",
+        "answer": "The IRS changed the mileage rate in the middle of 2026 due to fuel prices. In Announcement 2026-11, the IRS stated that the mid-year increase taking effect July 1, 2026, results from recent increases in the price of fuel."
+      },
+      {
+        "question": "Has the charitable mileage rate ever changed?",
+        "answer": "Between 2010 and 2026, the charitable mileage rate did not change. It remained fixed at 14 cents per mile throughout this entire period. The rate is set by statute in the Internal Revenue Code and cannot be adjusted annually by the IRS."
+      },
+      {
+        "question": "Which rate do I use for miles driven before July 1, 2026?",
+        "answer": "For business miles driven between Jan 1 and Jun 30, 2026, use the rate of 72.5 cents per mile. The medical and moving rate for that same period is 20.5 cents per mile. Only miles driven on or after July 1, 2026, use the higher rates of 76 cents for business and 23.5 cents for medical and moving."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Standard Mileage Rates",
+        "url": "https://www.irs.gov/tax-professionals/standard-mileage-rates"
+      },
+      {
+        "label": "IRS News Release IR-2025-128",
+        "url": "https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents"
+      },
+      {
+        "label": "IRS Announcement 2026-11 (Internal Revenue Bulletin 2026-29)",
+        "url": "https://www.irs.gov/irb/2026-29_irb"
+      },
+      {
+        "label": "IRS News Release IR-2022-124",
+        "url": "https://www.irs.gov/newsroom/irs-increases-mileage-rate-for-remainder-of-2022"
+      },
+      {
+        "label": "IRS News Release IR-2011-69",
+        "url": "https://www.irs.gov/newsroom/irs-increases-mileage-rate-to-55-5-cents-per-mile"
+      },
+      {
+        "label": "IRS News Release IR-2018-127",
+        "url": "https://www.irs.gov/newsroom/law-change-affects-moving-mileage-and-travel-expenses"
+      },
+      {
+        "label": "IRS News Release IR-2019-183",
+        "url": "https://www.irs.gov/newsroom/irs-updates-guidance-for-deductible-business-charitable-medical-and-moving-expenses"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-buy-treasury-bills",
+    "updated": "2026-09-30",
+    "title": "How to Buy Treasury Bills: Step-by-Step Guide",
+    "metaDescription": "Learn how to buy Treasury bills directly through TreasuryDirect or via a brokerage account. See auction rules, settlement dates, and minimums.",
+    "h1": "How to Buy Treasury Bills",
+    "cardBlurb": "A complete walk-through for buying Treasury bills directly from the government or through a brokerage account.",
+    "introText": "You can buy Treasury bills through a [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/) account or through a brokerage account. At ModernWallet, the mistake we see readers make most often is missing the gap between auction day and issue day, which can be days or weeks. The minimum is $100. You buy in $100 steps, up to $10 million per auction with a non-competitive bid.\n\nTreasury bills, often called T-bills, are sold at an auction-determined discount and pay full face value when they mature. You do not need to time the secondary market to get a fair price because non-competitive auction bids guarantee you receive the security at the final rate set by institutional bidders.",
+    "sections": [
+      {
+        "heading": "How to Buy Treasury Bills, Step by Step",
+        "body": "First, choose where to buy: a TreasuryDirect account run by the Treasury, or a brokerage account. TreasuryDirect sells bills directly with no secondary trading, while brokerage accounts allow both auction bidding and secondary market sales. For a breakdown of platforms that support Treasury trades, review our guide to the [best brokers for Treasury bills](/roundup/best-brokers-for-treasury-bonds/).\n\nTo buy directly from the Treasury, use TreasuryDirect:\n\n1. Open an account on [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/buying-a-marketable-security/). You must be a United States citizen, resident, or individual at least 18 years old with a valid Social Security number (SSN), a United States address of record, an email address, and a domestic bank account that accepts Automated Clearing House (ACH) transfers.\n2. Navigate to the BuyDirect tab on the main menu.\n3. Select Bills from the list of marketable securities, pick your desired term, and enter a purchase amount in multiples of $100 up to the non-competitive limit of $10 million.\n4. Select your bank account for payment and decide whether to schedule automatic reinvestment.\n5. Review your order details and submit the bid before the auction closing deadline.\n6. Check the Pending Purchases and Reinvestments page after 5:00 PM Eastern Time (ET) on auction day to confirm the discounted purchase price.\n7. Ensure your linked bank account holds the required settlement funds by the scheduled issue date.\n\nTo buy through a broker such as [Fidelity](https://www.fidelity.com/trading/commissions-margin-rates) or [Charles Schwab](https://www.schwab.com/pricing):\n\n1. Log into your account and navigate to the fixed income or bond trading page.\n2. Choose between entering an upcoming auction or purchasing an existing bill on the secondary market.\n3. Search for United States Treasury bills and select your maturity date.\n4. Enter the face amount you want to buy. The Treasury minimum is $100 in $100 increments, and your broker's order ticket shows any higher minimum it applies.\n5. Select a non-competitive order type for auctions, or set a limit price for secondary market purchases.\n6. Confirm that the trade commission is zero. Online Treasury auctions and secondary market trades cost $0 at Charles Schwab and $0 at Fidelity, though broker-assisted orders incur extra fees ($25 at Charles Schwab and $19.95 at Fidelity).\n7. Confirm the trade and maintain settled cash in your core cash account until the settlement date arrives."
+      },
+      {
+        "heading": "Choosing a Treasury Bill Term",
+        "body": "The United States Department of the Treasury issues bills across seven distinct terms: 4 weeks, 6 weeks, 8 weeks, 13 weeks, 17 weeks, 26 weeks, and 52 weeks. You should match the term to the exact date you need your cash returned, rather than trying to guess interest rate movements.\n\nCash Management Bills (CMBs) also exist for short-term federal financing needs, but individual investors cannot buy them through TreasuryDirect. You can only purchase Cash Management Bills through a bank, broker, or dealer. If you need the money back within about two months, 4-week and 8-week bills return your principal soonest, and their interest is exempt from state income tax. You can review how fixed deposits evaluate against government paper in our [CD vs. Treasury bill guide](/compare/cd-vs-treasury-bill/).\n\nFor funds with longer holding windows, 26-week and 52-week bills lock in the discount rate for up to 52 weeks. Because all bills sell in minimum increments of $100, you can split your cash across multiple maturities to build a rolling liquidity reserve."
+      },
+      {
+        "heading": "Auction Day and Issue Day Schedules",
+        "body": "A Treasury auction date and its issue date are separate calendar events that are often a few days or weeks apart. The [TreasuryDirect auction schedule](https://www.treasurydirect.gov/auctions/how-auctions-work/) lists upcoming offerings every Friday by 10:45 AM ET, providing the specific security, offering amount, auction date, issue date, and maturity date.\n\nWhen you buy at auction through TreasuryDirect, your order is a non-competitive bid, and most brokers let you place one too. Non-competitive bidders are guaranteed to receive the security in the dollar amount requested, and they agree to accept the discount rate established by competitive institutional bidders during the auction. You do not know the exact purchase price when you enter your bid, but you are guaranteed the market-clearing rate.\n\nWith TreasuryDirect, money does not leave your bank account on auction day. The Treasury debits your funds through an ACH transfer on the issue date, which is when the bill officially starts earning interest. If you submit a non-competitive bid on TreasuryDirect, log in after 5:00 PM ET on auction day to review your final discount price and the precise settlement amount required."
+      },
+      {
+        "heading": "Reinvestment and Auto-Roll Rules",
+        "body": "You can automatically reinvest matured Treasury bill proceeds into a new bill of the same term to maintain steady interest income. TreasuryDirect lets you schedule reinvestment when you place your initial purchase order, or you can add or cancel it up to four business days before the maturity date.\n\nThe system limits the total number of consecutive reinvestments based on the maturity of the security. A 52-week bill can be reinvested 1 time, creating a total holding period of two years. A 4-week bill can be reinvested up to 25 times, keeping your capital deployed for roughly two years.\n\nBrokerages refer to automatic reinvestment as an auto-roll program. If you turn on auto-roll at your broker, the broker automatically enters a non-competitive bid in the replacement auction using the principal returning from the maturing bill. If you need cash from an upcoming maturity, turn off reinvestment before the auction date for the replacement bill to ensure the face value settles into your cash account."
+      },
+      {
+        "heading": "Selling a Treasury Bill Before Maturity",
+        "body": "You cannot sell a Treasury bill directly to the government before its maturity date. If you need your cash early, you must transfer the security to an account with a bank, broker, or dealer to execute a secondary market sale.\n\nTreasuryDirect enforces strict holding periods for account-to-account movements. Under [TreasuryDirect transfer rules](https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/), you must hold a bill in your TreasuryDirect account for at least 45 calendar days before transferring it to an external brokerage firm. If you buy a 4-week or 6-week bill in TreasuryDirect, you must hold it to maturity because the entire term expires before the 45-day transfer window opens.\n\nSecondary market prices fluctuate based on broader interest rate trends. According to [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds), when interest rates rise after your purchase, existing bills trading on the secondary market may lose market value and you might have to sell at a discount. Investors who plan to access their principal on short notice should hold their bills directly at an online broker, or hold short cash in our recommended [best money market accounts](/roundup/best-money-market-accounts/) or [high-interest brokerage accounts](/roundup/best-brokerage-accounts-for-interest-on-cash/)."
+      },
+      {
+        "heading": "Discount Pricing and Maturity Payouts",
+        "body": "Treasury bills do not distribute regular coupon payments like traditional notes or corporate bonds. Instead, the government sells bills at a discount to their par value, or face value, and pays the full face value when the bill matures.\n\nFor example, using made-up round numbers rather than a real auction result: if you bid for a $1,000 bill and the auction sets a price of $975, the Treasury debits $975 from your linked bank account on the issue date. When the bill reaches its maturity date, the Treasury deposits the full $1,000 face value into your bank account. The $25 difference between your purchase price and the redemption value represents your interest income.\n\nThe [Internal Revenue Service (IRS) Publication 550](https://www.irs.gov/publications/p550) establishes that Treasury bill interest is subject to federal income tax but fully exempt from state and local income taxes. For detailed tax reporting guidelines, consult our guide on [whether Treasury bills are taxable](/guides/are-treasury-bills-taxable/). TreasuryDirect reports your annual earnings on Form 1099-INT in Box 3, labeled Interest on U.S. Savings Bonds and Treasury Obligations, which you can access under the ManageDirect tab. If a bill matures on December 31 on a weekend or federal holiday, payment processes on the next business day, but the earnings appear on your Form 1099-INT for the maturity year."
+      },
+      {
+        "heading": "Treasury Bills Compared to Other Treasury Securities",
+        "body": "Treasury bills represent the shortest segment of marketable federal debt, which also includes notes, bonds, inflation-protected securities, and floating-rate debt. Every security issued by the Department of the Treasury is backed by the full faith and credit of the United States government.\n\nTreasury bills mature in one year or less, sell at a discount, and distribute interest only at maturity. Treasury notes mature in terms of 2, 3, 5, 7, or 10 years and pay a fixed interest rate every six months. Treasury bonds mature in 20 or 30 years and also pay semiannual interest. To examine how maturity lengths shape yield and duration risks, read our breakdown of [Treasury bills vs. notes vs. bonds](/compare/treasury-bills-vs-notes-vs-bonds/).\n\nFor investors seeking inflation hedges, Treasury Inflation-Protected Securities (TIPS) feature terms of 5, 10, or 30 years with principal values that adjust based on inflation or deflation, paying the greater of original or adjusted principal at maturity. Floating Rate Notes (FRNs) mature in two years and distribute interest four times a year based on the 13-week Treasury bill discount rate plus an auction spread. For how TIPS compare with I bonds as inflation protection, see our [I bonds vs. TIPS comparison](/compare/i-bonds-vs-tips/)."
+      },
+      {
+        "heading": "What to Do Next",
+        "body": "Before you bid, pick the date you need the money back and choose the bill term that matures before it. If you plan to hold to maturity, open a TreasuryDirect account and place a non-competitive bid in the next auction for that term. If you might need to sell early, buy through a brokerage account instead, because TreasuryDirect makes you hold a bill 45 days before you can transfer it out. Either way, have the full purchase amount in your bank or cash account by the issue date."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I buy Treasury bills directly from the government?",
+        "answer": "Yes, you can purchase Treasury bills directly from the federal government by opening an account on the TreasuryDirect website. You must be at least 18 years old, possess a valid Social Security number, have a United States address, and maintain an account with a domestic financial institution that accepts ACH transfers."
+      },
+      {
+        "question": "What is the minimum to buy a Treasury bill?",
+        "answer": "The minimum purchase amount for a Treasury bill is $100, and all bids must be placed in increments of $100. Non-competitive retail orders can reach up to $10 million per individual auction."
+      },
+      {
+        "question": "Can I buy T-bills on Fidelity or Schwab?",
+        "answer": "Yes, both Fidelity and Charles Schwab support online Treasury bill purchases for upcoming auctions and existing secondary market issues. Both firms charge $0 in commissions for self-directed online Treasury orders, though representative-assisted orders carry additional transaction fees."
+      },
+      {
+        "question": "What is a non-competitive bid?",
+        "answer": "A non-competitive bid guarantees that you receive your requested dollar amount of Treasury bills at the final discount rate determined by institutional competitive bidders during the auction. TreasuryDirect accepts only non-competitive bids, while a bank, broker, or dealer accepts both kinds."
+      },
+      {
+        "question": "Can I sell a T-bill before it matures?",
+        "answer": "You can sell a Treasury bill before maturity only through a broker, bank, or dealer on the secondary market. If you hold the bill in TreasuryDirect, you must hold it for at least 45 calendar days before transferring it to an outside brokerage firm for liquidation."
+      },
+      {
+        "question": "What happens when my T-bill matures?",
+        "answer": "When a Treasury bill reaches maturity, the government pays the full face value of the security into your linked financial account. If you scheduled automatic reinvestment prior to maturity, your principal rolls directly into a new bill with the identical term length."
+      }
+    ],
+    "sources": [
+      {
+        "label": "TreasuryDirect, Treasury Bills",
+        "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bills/"
+      },
+      {
+        "label": "TreasuryDirect, Buying a Marketable Security",
+        "url": "https://www.treasurydirect.gov/marketable-securities/buying-a-marketable-security/"
+      },
+      {
+        "label": "TreasuryDirect, How Auctions Work",
+        "url": "https://www.treasurydirect.gov/auctions/how-auctions-work/"
+      },
+      {
+        "label": "TreasuryDirect, Reinvesting a Marketable Security",
+        "url": "https://www.treasurydirect.gov/marketable-securities/reinvesting-a-marketable-security/"
+      },
+      {
+        "label": "TreasuryDirect, Selling Marketable Securities",
+        "url": "https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/"
+      },
+      {
+        "label": "IRS Publication 550, Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "Charles Schwab, Pricing and Commissions",
+        "url": "https://www.schwab.com/pricing"
+      },
+      {
+        "label": "Fidelity, Commissions and Margin Rates",
+        "url": "https://www.fidelity.com/trading/commissions-margin-rates"
+      }
+    ]
+  },
+  {
+    "slug": "are-treasury-bills-taxable",
+    "updated": "2026-09-30",
+    "title": "Are Treasury Bills Taxable? How T-Bill Taxes Work",
+    "metaDescription": "Treasury bills are subject to federal income tax but completely exempt from state and local taxes. Learn how T-bill interest is taxed and reported.",
+    "h1": "Are Treasury Bills Taxable?",
+    "cardBlurb": "Treasury bills are subject to federal income tax but exempt from state and local income tax, with earnings reported on Form 1099-INT box 3.",
+    "introText": "Treasury bills are taxable at the federal level, but they are fully exempt from state and local income taxes. At ModernWallet, we track how fixed-income yields translate into take-home cash, and the tax treatment of United States Treasury bills (T-bills) is one of their primary advantages over standard bank accounts. The difference between what you pay for a bill and what you receive at maturity is interest income. That interest is taxed as ordinary income on your federal return in the year the bill matures or is sold.\n\nBecause state and municipal governments cannot tax interest paid on federal debt obligations, investors living in high-tax jurisdictions keep a larger share of their earnings than they would with equivalent commercial bank products. Whether you purchase bills directly through [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/) or through a brokerage firm, your earnings are reported on Form 1099-INT.",
+    "sections": [
+      {
+        "heading": "Federal Income Tax and State Tax Exemption",
+        "body": "Interest on United States Treasury bills, notes, and bonds is subject to federal income tax, but federal law bars state and local governments from taxing that income. The [Internal Revenue Service (IRS) explains this rule in Publication 550](https://www.irs.gov/publications/p550), which classifies earnings from Treasury obligations as taxable interest for federal filings while recognizing their statutory immunity from state income tax.\n\nYour federal tax rate on T-bill interest matches your ordinary income tax bracket. Unlike long-term capital gains, which benefit from preferential federal rates, Treasury bill interest is taxed at the same rate applied to wages, salary, and standard bank interest. If your federal marginal rate is 24%, you pay 24% of your total T-bill interest to the IRS.\n\nThe state and local exemption applies everywhere in the country. In states that impose a personal income tax, you do not pay a single dollar of state tax on your Treasury bill interest. If your city or county levies a local income tax, T-bill interest is exempt from that local assessment as well. For a step-by-step walkthrough on acquiring these securities, see our [guide on how to buy Treasury bills](/guides/how-to-buy-treasury-bills/)."
+      },
+      {
+        "heading": "How Treasury Bill Interest Is Calculated",
+        "body": "Treasury bills do not pay periodic coupon interest. Instead, the Treasury sells bills at a discount to their par value (also known as face value), and pays the full par value when the bill matures. The difference between the purchase price and the face value is your interest income.\n\nTake a made-up example with round numbers that are not a real auction result. You bid for a $10,000 bill with a 26-week term. The auction sets the price at $9,800, so you pay $9,800 on the issue date. Twenty-six weeks later, the Treasury pays you $10,000. The $200 difference is your interest income.\n\nBills are available in maturities of 4, 6, 8, 13, 17, 26, and 52 weeks, with a minimum purchase amount of $100 and increments of $100. Regardless of the term length you select, your taxable interest is always the face value received at maturity minus the price you paid at issue."
+      },
+      {
+        "heading": "Tax Timing Across Calendar Years and Maturity Dates",
+        "body": "Treasury bill interest is generally taxed in the calendar year the bill matures. If you buy a 13-week bill in November, it matures in February of the following year, and you owe no tax on it for the year you bought it. The entire interest payment lands on the tax return for the year in which the bill matures.\n\nAutomated reinvestment does not postpone this tax liability. If you schedule your matured bill proceeds to roll over into a new bill automatically, the IRS still considers the interest from the first bill to be received at maturity. You must report the full interest on each matured bill in the tax year that individual maturity occurs, even if every penny is immediately reinvested into a new security.\n\nA specific timing rule applies to year-end maturities. According to [TreasuryDirect guidelines on tax reporting](https://www.treasurydirect.gov/marketable-securities/tax-forms-and-withholding/), when a bill has a stated maturity date of December 31 that falls on a weekend or federal holiday, the cash payment is processed on the first business day of January. However, the interest is still reported on Form 1099-INT for the year ending on that December 31 maturity date."
+      },
+      {
+        "heading": "The Accrual Election for Short-Term Obligations",
+        "body": "Without an election, you report T-bill interest when the bill matures. [IRS Publication 550](https://www.irs.gov/publications/p550) gives you another choice for short-term obligations, meaning debt that matures in a year or less. You can elect to include the discount in income as it accrues each year instead of all at maturity.\n\nIf you skip that election and sell a bill before it matures, part of your gain is taxed as ordinary income. That part equals your ratable share of the discount for the days you held the bill. The election covers all your short-term obligations, so talk to a tax professional before you make it."
+      },
+      {
+        "heading": "Reporting on Form 1099-INT Box 3",
+        "body": "Taxable Treasury interest is reported on Form 1099-INT. It does not appear in Box 1 alongside regular bank account interest. Instead, the [IRS Form 1099-INT instructions](https://www.irs.gov/instructions/i1099int) specify that earnings from federal obligations belong in Box 3, labeled \"Interest on U.S. Savings Bonds and Treasury Obligations.\"\n\nIf you hold your securities directly with the government, TreasuryDirect generates your tax form electronically in your online account. Find it under ManageDirect within the Manage My Taxes sub-menu. If you buy securities through an external brokerage account, such as [Charles Schwab](https://www.schwab.com/pricing) or [Fidelity](https://www.fidelity.com/trading/commissions-margin-rates), that institution delivers a consolidated 1099 form showing your Box 3 earnings. Review our [roundup of the best brokers for Treasury bonds](/roundup/best-brokers-for-treasury-bonds/) to compare trading platforms.\n\nOn state returns, you subtract Box 3. State tax software and paper forms instruct you to subtract that Box 3 amount from federal adjusted gross income, ensuring that federal interest bypasses state taxation entirely."
+      },
+      {
+        "heading": "Comparing Treasury Bills to Bank Certificates of Deposit",
+        "body": "State tax exemptions directly alter how Treasury bills compare to taxable bank savings vehicles. Commercial certificates of deposit and savings accounts generate interest that is fully taxable at both the federal and state levels.\n\nOur guide outlines [whether savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/). Banks report standard deposit interest in Box 1 of Form 1099-INT, offering zero state-level tax relief. Because of this difference, a T-bill paying a lower nominal yield than a bank CD can deliver a higher after-tax return for investors facing high state income taxes.\n\nTreasury bill interest avoids state income taxation. Commercial CD interest remains taxable by both the IRS and the state. Conversely, for an investor residing in a state with no individual income tax, such as Texas or Florida, the state tax exemption provides no added financial advantage.\n\nEvaluate your choices across yield and liquidity. See our [comparison of CDs vs Treasury bills](/compare/cd-vs-treasury-bill/) as well as our [guide to high-yield savings accounts vs CDs](/compare/hysa-vs-cd/)."
+      },
+      {
+        "heading": "Tax Rules for Treasury Notes and Bonds",
+        "body": "The state tax exemption that covers short-term Treasury bills applies equally to longer-term debt issued by the United States Department of the Treasury. Treasury notes and bonds avoid state and local income taxes but owe federal tax. Their structural design and payment schedules differ.\n\nUnder the [TreasuryDirect marketable securities guide](https://www.treasurydirect.gov/marketable-securities/), Treasury notes mature in terms of 2, 3, 5, 7, or 10 years, while Treasury bonds mature in 20 or 30 years. Unlike bills sold at a discount, notes and bonds pay a fixed rate of interest every six months until maturity. You owe tax the calendar year you receive them. Your brokerage or TreasuryDirect reports them each year in Box 3 of Form 1099-INT. You can explore the full structural differences in our [comparison of Treasury bills vs notes vs bonds](/compare/treasury-bills-vs-notes-vs-bonds/). Check your annual Form 1099-INT Box 3 carefully before filing your state return. Verify that your full exemption is recorded."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I pay state tax on Treasury bill interest?",
+        "answer": "No. Under federal statutory law, interest on Treasury bills, notes, and bonds is completely exempt from state and local income taxes in all 50 states. You only pay federal income tax on your earnings."
+      },
+      {
+        "question": "When do I pay tax on a T-bill?",
+        "answer": "You pay tax on a Treasury bill in the calendar year it matures or in the year you sell it. For example, if you buy a six-month bill in October that matures in April of the following year, the interest is reported on the tax return for that following year."
+      },
+      {
+        "question": "Do T-bills get a 1099-INT?",
+        "answer": "Yes. Your interest is reported on Form 1099-INT in Box 3, which is labeled \"Interest on U.S. Savings Bonds and Treasury Obligations.\" TreasuryDirect provides this form in your online account, while private brokerage firms include it in their consolidated annual tax statements."
+      },
+      {
+        "question": "Are Treasury bills tax-free?",
+        "answer": "Treasury bills are not completely tax-free. They are fully taxable at the federal level as ordinary income. However, they are tax-free with respect to state, city, and county income taxes."
+      },
+      {
+        "question": "Is T-bill interest taxed as capital gains?",
+        "answer": "No. The discount between the purchase price and the face value at maturity is categorized as ordinary interest income by the IRS. If you sell a bill on the secondary market before maturity, your gain up to the ratable accrued discount is also taxed as ordinary income rather than a capital gain."
+      },
+      {
+        "question": "Are Treasury notes and bonds taxed the same way?",
+        "answer": "Yes, with respect to tax jurisdictions. Treasury notes and bonds are subject to federal income tax and exempt from state and local taxes. However, notes and bonds pay coupon interest every six months, so you report taxable income each year you receive a payment rather than waiting for final maturity."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Publication 550, Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "IRS, Instructions for Form 1099-INT",
+        "url": "https://www.irs.gov/instructions/i1099int"
+      },
+      {
+        "label": "TreasuryDirect, Treasury Bills",
+        "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bills/"
+      },
+      {
+        "label": "TreasuryDirect, Tax Forms and Withholding",
+        "url": "https://www.treasurydirect.gov/marketable-securities/tax-forms-and-withholding/"
+      },
+      {
+        "label": "TreasuryDirect, Marketable Securities Overview",
+        "url": "https://www.treasurydirect.gov/marketable-securities/"
+      }
+    ]
+  },
   // ── ga4-top-pages pass 2026-09-29 ──
   {
     "slug": "is-personal-loan-interest-tax-deductible",
@@ -2586,6 +3140,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "trump-gold-coin",
+    updated: "2026-09-30",
     title: "Trump Gold Coin: Is It Real and What's It Worth? (2026)",
     metaDescription:
       "The Trump gold coin is a real 2026 US Mint $1 coin, but it's gold-colored base metal, not solid gold. See what it's worth, when it's out, and where to buy it.",
@@ -2594,10 +3149,10 @@ export const GUIDES: Guide[] = [
     introText:
       "The Trump gold coin is real. On July 15, 2026, Treasury Secretary Scott Bessent announced that the [U.S. Mint](https://www.usmint.gov/) will strike a new $1 coin featuring President Trump to mark America's 250th anniversary.\n\nBut \"gold\" refers to the coin's color, not its metal. It has a gold-like finish over a non-precious base metal, and its face value is one dollar.\n\nThis guide covers what the coin actually is, what it is worth, when and where you can buy it, and how to avoid the novelty knockoffs already flooding the market.",
     sections: [
-      { heading: "Is the Trump gold coin real?", body: "Yes, the Trump gold coin is a real U.S. Mint product, not a hoax. Treasury Secretary Scott Bessent unveiled the design on July 15, 2026, and reporting from [CBS News](https://www.cbsnews.com/news/1-gold-coin-trump-face-us-mint/) and [The Hill](https://thehill.com/homenews/administration/5969240-scott-bessent-donald-trump-america-250-gold-coin/) confirms production has already begun in Philadelphia.\n\nThe coin marks the country's 250th birthday, the semiquincentennial. Its front shows Trump beneath the word \"LIBERTY,\" with the dual date \"1776-2026\" and \"IN GOD WE TRUST.\" The back carries the presidential seal, the number \"250,\" and \"ONE DOLLAR.\" An earlier draft that showed Trump on both sides with the words \"FIGHT FIGHT FIGHT\" was dropped.\n\nSo the announcement is genuine. Whether the coin should exist at all is a separate, contested question covered below." },
+      { heading: "Is the Trump gold coin real?", body: "Yes, the Trump gold coin is a real U.S. Mint product, not a hoax. Treasury Secretary Scott Bessent unveiled the design on July 15, 2026, and the Mint began selling it on September 2, 2026. Reporting from [CBS News](https://www.cbsnews.com/news/1-gold-coin-trump-face-us-mint/) and [The Hill](https://thehill.com/homenews/administration/5969240-scott-bessent-donald-trump-america-250-gold-coin/) confirms production has already begun in Philadelphia.\n\nThe coin marks the country's 250th birthday, the semiquincentennial. Its front shows Trump beneath the word \"LIBERTY,\" with the dual date \"1776-2026\" and \"IN GOD WE TRUST.\" The back carries the presidential seal, the number \"250,\" and \"ONE DOLLAR.\" An earlier draft that showed Trump on both sides with the words \"FIGHT FIGHT FIGHT\" was dropped.\n\nSo the announcement is genuine. Whether the coin should exist at all is a separate, contested question covered below." },
       { heading: "Is the Trump coin real gold?", body: "No, the Trump coin is not real gold. It has a gold-colored finish but is struck from non-precious metal, according to CBS News and other outlets, and its official value is its face value of one dollar.\n\nThat difference matters for your money. A solid-gold coin is worth its metal content, which moves with the gold market. A gold-colored base-metal coin has no meaningful melt value, so it is a keepsake, not bullion. Treat any seller who calls it \"solid gold\" or \"pure gold\" as a red flag.\n\nA separate 24-karat gold commemorative design was approved by the Commission of Fine Arts in March 2026. That is a different, far more expensive product from the $1 circulating coin most people are searching for." },
-      { heading: "How much will the Trump gold coin cost, and is it worth anything?", body: "The U.S. Mint has not announced a price for the Trump gold coin yet. Its face value is one dollar, but collectible coins usually sell above face value to cover minting and packaging.\n\nFor comparison, the Mint's other 2026 semiquincentennial coins are sold in sets, bags, and rolls at fixed prices. Any real \"worth\" beyond the sale price depends on the collector market, which is impossible to predict for a brand-new coin. Do not buy it as an investment expecting it to rise in value.\n\nWe are not investment advisers, and this is not financial advice. If you want the coin, buy it because you like it as a keepsake, not because you expect a return." },
-      { heading: "When and where can you buy the Trump gold coin?", body: "You will be able to buy the Trump gold coin in fall 2026 from the official U.S. Mint. Reporting says the coins are being minted now and will go on sale later this year.\n\nThe only official seller is the [United States Mint](https://www.usmint.gov/) at usmint.gov. Buying direct is the single best way to be sure you get a genuine coin at the real price. Bookmark the Mint's [semiquincentennial coin page](https://www.usmint.gov/coins/coin-programs/semiquincentennial/) and check back near the release.\n\nBe careful with any other site. Many third-party sellers advertise \"official Trump gold coins\" at inflated prices, and some sell novelty tokens that never came from the Mint." },
+      { heading: "How much will the Trump gold coin cost, and is it worth anything?", body: "The U.S. Mint sells the coin for $61 per 25-coin roll and $154.50 per 100-coin bag under prices effective August 14, 2026. Both options cost more than the $1 face value. That works out to about $2.44 per coin by the roll and about $1.55 per coin by the bag.\n\nThe guaranteed worth is strictly the $1 face value, as the manganese-brass alloy contains no actual gold and carries no bullion value. Coins bearing the special July 4th privy mark are the likeliest to draw collector interest, though resale value remains unpredictable for any brand-new coin. The Mint also lists a separate 24-karat one-ounce gold proof edition, with its official price still to be announced.\n\nWe are not investment advisers, and this is not financial advice. If you want the coin, buy it because you like it as a keepsake, not because you expect a return." },
+      { heading: "When and where can you buy the Trump gold coin?", body: "The [U.S. Mint](https://www.usmint.gov/) began selling the Donald J. Trump $1 coin on September 2, 2026, priced at $61.00 for a 25-coin roll and $154.50 for a 100-coin bag. These are circulating-quality coins struck at the Philadelphia Mint without a mint mark. Despite their golden color, the coins are made from a manganese-brass clad alloy and contain no physical gold.\n\nThe Mint limited initial purchases to two units per household for each option during the first 24 hours. On launch day, rolls showed as backordered and 100-coin bags as unavailable. A total of 250,000 coins struck on July 4, 2026, include a special \"July 4th\" privy mark and were mixed at random into standard packaging, so buyers cannot order that collectible version separately.\n\nThe official U.S. Mint catalog remains the only authorized source for these coins at their original government release prices. Secondary retail sites and online auctions frequently list standard rolls at heavy markups or promote private novelty tokens that the federal government never produced. Paying a reseller's markup does not add any precious metal to the coin." },
       { heading: "Is it legal to put Trump on a coin?", body: "Putting a living president on a U.S. coin is legally disputed. A law from 1866, tied to the later Thayer Amendment, bars the image of any living person from U.S. currency and securities, and the 2005 Presidential $1 Coin Act limited that series to deceased presidents.\n\nThe administration argues the coin is allowed under a different law: the [Circulating Collectible Coin Redesign Act of 2020](https://www.congress.gov/bill/116th-congress/house-bill/1923), which lets the Treasury issue $1 coins with 250th-anniversary designs during 2026 only. Bessent has also pointed to a 1926 Sesquicentennial coin that showed then-living President Calvin Coolidge.\n\nCritics disagree, and some lawmakers have proposed a bill to explicitly ban living or sitting presidents from coins. The Citizens Coinage Advisory Committee declined to review the design, and the Treasury Secretary holds final say. The dispute could still end up in court." },
       { heading: "How to spot and avoid Trump coin scams", body: "The safest way to avoid a Trump coin scam is to buy only from the U.S. Mint at usmint.gov. Because the coin is famous and in high demand, novelty sellers are already promoting look-alikes and \"official\" tokens the Mint never made.\n\nHere is the honest comparison. The official coin is a $1 face-value, gold-colored base-metal coin sold by the U.S. Mint at a set price. A novelty knockoff is often sold as \"solid gold\" or \"legal tender worth thousands,\" priced far higher, and shipped by a private seller using urgent, limited-time claims.\n\nProtect yourself with a few checks. Confirm the seller is usmint.gov, ignore \"solid gold\" or guaranteed-value claims, and never pay by gift card or wire transfer. When a deal feels urgent and too good to be true, it usually is. You can track any coins you own as collectibles in your [net worth calculator](/net-worth/).\n\nThird-party marketplaces are a common source of these scams. A \"Trump gold coin\" listing on [Amazon](https://www.amazon.com) or [eBay](https://www.ebay.com) is not automatically the genuine U.S. Mint product, even if the photos and description look official, since anyone can list a novelty token under that name. For the real coin, buy only through the U.S. Mint's own channels at usmint.gov, not a third-party marketplace listing." },
       { heading: "The Trump coin and the 2026 semiquincentennial series", body: "The Trump gold coin is one piece of a much larger 2026 coin program. To mark 250 years of independence, the U.S. Mint is issuing redesigned quarters, a new dime, and a Statue of Liberty half dollar, all dual-dated \"1776-2026.\"\n\nUnderstanding the full program helps you tell official coins from novelties. Our guide to [America's 250th anniversary coins](/guides/250th-anniversary-coins/) explains every coin the Mint is releasing this year. It is the best way to see where the Trump dollar fits in. For other Trump-branded money topics, see our [Trump accounts guide](/guides/trump-accounts/)." },
@@ -2607,9 +3162,9 @@ export const GUIDES: Guide[] = [
     ],
     faqs: [
       { question: "Are Trump coins real gold?", answer: "No. The $1 Trump coin has a gold-like finish but is made of non-precious metal, and its face value is one dollar. It is a gold-colored collectible, not solid gold or bullion, so it has no meaningful melt value." },
-      { question: "How much will the Trump gold coin cost?", answer: "The U.S. Mint has not announced a price yet. The coin's face value is $1, but collectible coins normally sell above face value to cover minting and packaging. Watch usmint.gov for the official price near the fall 2026 release." },
-      { question: "Where can I buy the Trump gold coin?", answer: "You can buy it from the official United States Mint at usmint.gov, expected in fall 2026. That is the only official source. Avoid third-party sites advertising \"official Trump gold coins,\" which often sell overpriced novelties." },
-      { question: "When does the Trump gold coin come out?", answer: "The Trump gold coin is expected to go on sale in fall 2026. The U.S. Mint says production has already begun in Philadelphia. No exact on-sale date has been announced yet." },
+      { question: "How much will the Trump gold coin cost?", answer: "The circulating-quality coins cost $61.00 for a roll of 25 and $154.50 for a bag of 100. While gold in color, these dollar coins are manganese-brass clad and contain no physical gold bullion. The U.S. Mint also listed a 24-karat gold proof edition in the Federal Register, but that product has no announced price yet." },
+      { question: "Where can I buy the Trump gold coin?", answer: "You can buy the coins online at usmint.gov, which is the only official seller. The Mint capped initial purchases at two units of each product per household for the first 24 hours. Officials have not announced any release into general circulation through commercial banks or the Federal Reserve." },
+      { question: "When does the Trump gold coin come out?", answer: "The coin went on sale September 2, 2026, at noon EDT from the U.S. Mint. On launch day, 25-coin rolls showed as backordered while the 100-coin bags showed as unavailable. The Mint has not yet announced a release date for the separate 24-karat gold proof coin." },
       { question: "Is the Trump gold coin worth anything?", answer: "Its guaranteed worth is its $1 face value. It is gold-colored base metal, not gold, so it has no bullion value. Any collector value beyond the sale price is speculative for a brand-new coin, so do not buy it as an investment." },
       { question: "Is it legal to put Trump on a coin?", answer: "It is disputed. An 1866 law bars living people from U.S. currency, but the Treasury argues a 2020 law allows $1 semiquincentennial designs in 2026. The question is contested and could be challenged in court." },
       { question: "Is the Trump gold coin the same as the Trump crypto coin?", answer: "No. The $1 Trump gold coin is a physical U.S. Mint coin. The \"Trump coin\" traded online is a separate cryptocurrency, or memecoin, with no link to the U.S. Mint. This guide covers only the physical coin." },
@@ -2619,6 +3174,8 @@ export const GUIDES: Guide[] = [
     ],
     sources: [
       { label: "U.S. Mint — Semiquincentennial Coins", url: "https://www.usmint.gov/coins/coin-programs/semiquincentennial/" },
+      { label: "U.S. Mint release (via GlobeNewswire) — Trump $1 coin rolls and bags available September 2, 2026", url: "https://www.globenewswire.com/news-release/2026/08/27/3352282/0/en/2026-semiquincentennial-president-donald-j-trump-1-coin-rolls-bags-available-september-2.html" },
+      { label: "Federal Register — U.S. Mint 2026 product pricing notice (Aug. 12, 2026)", url: "https://www.govinfo.gov/content/pkg/FR-2026-08-12/html/2026-16409.htm" },
       { label: "CBS News — U.S. Mint to make $1 gold coin with Trump's face on it", url: "https://www.cbsnews.com/news/1-gold-coin-trump-face-us-mint/" },
       { label: "The Hill — Bessent unveils $1 golden coin featuring Trump image", url: "https://thehill.com/homenews/administration/5969240-scott-bessent-donald-trump-america-250-gold-coin/" },
       { label: "Congress.gov — Circulating Collectible Coin Redesign Act of 2020 (H.R. 1923, Pub. L. 116-330)", url: "https://www.congress.gov/bill/116th-congress/house-bill/1923" },
@@ -2628,6 +3185,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "250th-anniversary-coins",
+    updated: "2026-09-30",
     title: "250th Anniversary Coins: 2026 Semiquincentennial Guide",
     metaDescription:
       "A plain-English guide to America's 250th anniversary coins: the 2026 semiquincentennial quarters, dime, half dollar, and $1 coin, and how to buy real ones.",
@@ -2638,7 +3196,7 @@ export const GUIDES: Guide[] = [
     sections: [
       { heading: "What are the 250th anniversary coins?", body: "The 250th anniversary coins are U.S. coins issued in 2026 to celebrate the country's semiquincentennial, its 250th birthday. Congress authorized them through the [Circulating Collectible Coin Redesign Act of 2020](https://www.congress.gov/bill/116th-congress/house-bill/1923), which lets the Treasury put special anniversary designs on circulating coins during 2026.\n\nThese are official coins from the [United States Mint](https://www.usmint.gov/), not private collectibles. Most carry a dual date of \"1776-2026\" so you can spot the anniversary year at a glance. You can see the full lineup on the Mint's [semiquincentennial coin page](https://www.usmint.gov/coins/coin-programs/semiquincentennial/)." },
       { heading: "Which coins is the U.S. Mint releasing for 2026?", body: "The U.S. Mint is releasing a full set of redesigned circulating coins for 2026, plus collectible sets. The headline change is five new quarter designs rolled out through the year.\n\nThe five 2026 quarters honor milestones in American history: the Mayflower Compact, the Revolutionary War, the Declaration of Independence, the U.S. Constitution, and the Gettysburg Address. The Mint has also issued a redesigned dime featuring Liberty and a new half dollar showing the Statue of Liberty in place of President Kennedy. The one-cent and five-cent coins keep their normal look but add the \"1776-2026\" dual date." },
-      { heading: "Where does the Trump $1 coin fit in?", body: "The Trump $1 coin is a separate part of the 2026 program, added by the Treasury under the same 2020 law. Announced on July 15, 2026, it is a gold-colored, non-precious-metal $1 coin featuring President Trump.\n\nIt is more controversial than the quarters and half dollar because it shows a living, sitting president, which older laws restrict. If you are searching for that specific coin, our full guide to the [Trump gold coin](/guides/trump-gold-coin/) covers whether it is real gold, what it may cost, when it drops, and how to avoid fakes." },
+      { heading: "Where does the Trump $1 coin fit in?", body: "The Trump $1 coin is a separate part of the 2026 program, added by the Treasury under the same 2020 law. Announced on July 15, 2026, it is a gold-colored, non-precious-metal $1 coin featuring President Trump. The Mint began selling it on September 2, 2026, at $61 for a roll of 25 and $154.50 for a bag of 100.\n\nIt is more controversial than the quarters and half dollar because it shows a living, sitting president, which older laws restrict. If you are searching for that specific coin, our full guide to the [Trump gold coin](/guides/trump-gold-coin/) covers whether it is real gold, what it costs, where to buy it, and how to avoid fakes." },
       { heading: "How to buy the real 250th anniversary coins", body: "You buy genuine 250th anniversary coins directly from the U.S. Mint at usmint.gov. The Mint sells them as annual sets, bags, and rolls, and circulating quarters also reach everyday pocket change through banks.\n\nStick to official channels to avoid overpriced novelties. Many private sites repackage common coins or sell look-alike tokens with claims like \"solid gold\" or \"rare investment.\" A genuine circulating quarter or half dollar is worth its face value plus a small collector premium, not thousands of dollars. Track any coins you keep as collectibles in your [net worth calculator](/net-worth/)." },
     ],
     tools: [
@@ -2649,7 +3207,7 @@ export const GUIDES: Guide[] = [
       { question: "How many 2026 semiquincentennial quarters are there?", answer: "There are five 2026 quarters. Their designs honor the Mayflower Compact, the Revolutionary War, the Declaration of Independence, the U.S. Constitution, and the Gettysburg Address, released at intervals through 2026." },
       { question: "Are the 250th anniversary coins worth money?", answer: "Circulating 250th anniversary coins are generally worth their face value plus a small collector premium. Special proof or silver sets from the U.S. Mint cost more. Be wary of sellers claiming any 2026 coin is a rare investment worth thousands." },
       { question: "Where can I buy 2026 semiquincentennial coins?", answer: "Buy them from the official United States Mint at usmint.gov, which sells annual sets, bags, and rolls. Circulating quarters also appear in everyday change. Buying direct is the best way to avoid overpriced novelty coins." },
-      { question: "Is the Trump coin part of the 250th anniversary coins?", answer: "Yes. The $1 Trump coin is a separate part of the 2026 semiquincentennial program, added by the Treasury under the same 2020 law. It is more disputed because it shows a living president. See our Trump gold coin guide for details." },
+      { question: "Is the Trump coin part of the 250th anniversary coins?", answer: "Yes. The $1 Trump coin is a separate part of the 2026 semiquincentennial program, added by the Treasury under the same 2020 law. It is more disputed because it shows a living president. It went on sale from the U.S. Mint on September 2, 2026. See our Trump gold coin guide for details." },
       { question: "When are the 250th anniversary coins being released?", answer: "The Mint is releasing the coins in stages through 2026. Three of the five quarter designs, Mayflower Compact, Revolutionary War, and Declaration of Independence, are already in circulation. The other two quarters, honoring the Constitution and the Gettysburg Address, are set to enter circulation later in the year. The Mint has not formally announced exact dates for the rest of the 2026 lineup, including the redesigned dime and half dollar. Dealers who track the Mint's release calendar say the schedule can still change." },
     ],
     sources: [
@@ -6422,6 +6980,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "is-social-security-taxable",
+    updated: "2026-09-30",
     title: "Is Social Security Taxable? 2026 Thresholds Explained",
     metaDescription:
       "Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.",
@@ -6431,6 +6990,7 @@ export const GUIDES: Guide[] = [
       "Social Security benefits become federally taxable when your \"combined income\" passes $25,000 for single filers or $32,000 for married couples filing jointly, according to the [Social Security Administration](https://www.ssa.gov/benefits/retirement/planner/taxes.html). Combined income includes your adjusted gross income, tax-exempt interest, and half your Social Security benefit.\n\nBetween the lower and upper thresholds, up to 50% of your benefit is taxable. Above $34,000 for single filers or $44,000 for married couples, up to 85% is taxable, per the [IRS](https://www.irs.gov/faqs/social-security-income).\n\nThis guide explains the exact formula, why these thresholds catch more retirees every year, and how to plan around them. First, run your own benefit estimate with ModernWallet's [Social Security retirement calculator](/retirement/social-security-retirement-calculator/).",
     sections: [
       { heading: "The Short Answer: It Depends on Your Combined Income", body: "Social Security benefits are federally taxable once your combined income crosses $25,000 for single filers or $32,000 for married couples filing jointly, according to the Social Security Administration. Below those amounts, none of your benefit is taxable. Between the lower and upper threshold, up to 50% of your benefit can be added to taxable income; above the upper threshold — $34,000 single or $44,000 married — up to 85% can be taxed, per the IRS.\n\nThis isn't a special Social Security tax rate. The taxable portion of your benefit is added to your other income and taxed at your regular federal income tax bracket, the same as wages or a 401(k) withdrawal." },
+      { heading: "What Changed for 2025 to 2028: The $6,000 Senior Deduction", body: "The benefit-taxation rules did not change for 2026. Instead, a 2025 law created a temporary enhanced deduction for tax years 2025 through 2028, as the [Internal Revenue Service (IRS)](https://www.irs.gov/newsroom/one-big-beautiful-bill-act-tax-deductions-for-working-americans-and-seniors) explains. Eligible taxpayers age 65 or older can deduct up to $6,000 each, or $12,000 for a qualifying married couple filing jointly, on top of the existing age-based standard deduction.\n\nThis deduction lowers your taxable income after the taxable portion of benefits is figured, so it does not change how much of the benefit is included on Form 1040. You claim it on Schedule 1-A, which flows to line 13b of your return, whether you take the standard deduction or itemize. Married couples must file jointly to qualify, and the deduction phases out by 6% of modified adjusted gross income (MAGI) above $75,000 for single filers, or $150,000 on a joint return.\n\nReview our [senior deduction guide](/guides/senior-deduction-social-security/) for worked phase-out examples and Schedule 1-A filing instructions. State governments set separate tax rules for retirement benefits, so check our breakdown of [states that tax Social Security](/guides/states-that-tax-social-security/) before preparing your state return." },
       { heading: "How to Calculate Your Combined Income", body: "Combined income equals your adjusted gross income (AGI), plus any tax-exempt interest (like municipal bond interest), plus half of your annual Social Security benefit, according to the SSA. Income you might not think of as \"benefit-related\" — a pension, a part-time job, IRA withdrawals, or investment income — all counts toward AGI and pushes combined income higher.\n\nWorked example: a single retiree collecting $20,000 a year in Social Security, withdrawing $15,000 from a traditional IRA, and earning $2,000 in taxable interest has combined income of $27,000 — $15,000 in IRA withdrawals, plus $2,000 in interest, plus $10,000 (half of the $20,000 benefit). That's above the $25,000 single threshold, so up to 50% of the benefit, or $10,000, becomes taxable income on top of the IRA withdrawal and interest.\n\nRoth IRA and Roth 401(k) qualified withdrawals do not count toward combined income at all, since they aren't included in AGI — a detail that matters for the planning section below. Annuity income counts toward combined income the same way as an IRA withdrawal, and our guide on [whether annuities are taxable](/guides/are-annuities-taxable/) explains how much of an annuity payment is taxable in the first place." },
       { heading: "The 50% and 85% Thresholds by Filing Status", body: "| Filing status | 0% taxable | Up to 50% taxable | Up to 85% taxable |\n|---|---|---|---|\n| Single / head of household | Combined income under $25,000 | $25,000–$34,000 | Over $34,000 |\n| Married filing jointly | Combined income under $32,000 | $32,000–$44,000 | Over $44,000 |\n\nThe 85% figure is a ceiling, not an automatic rate — the IRS's actual worksheet in [Publication 915](https://www.irs.gov/faqs/social-security-income) can land below 85% depending on your specific numbers. But the reverse is also guaranteed: no more than 85% of your Social Security benefit is ever taxed at the federal level, no matter how high your other income runs. At least 15% of every benefit check stays federally tax-free for life." },
       { heading: "Why These Thresholds Catch More Retirees Every Year", body: "The $25,000/$32,000 thresholds were set in 1983, and the $34,000/$44,000 thresholds in 1993 — and Congress never indexed either set of numbers to inflation. Wages, Social Security cost-of-living adjustments, and retirement account balances have all grown since then, but the taxation thresholds haven't moved a dollar in over three decades.\n\nThe practical effect: a retiree who wasn't taxed on Social Security a decade ago can cross the same fixed threshold today purely from cost-of-living raises to their benefit, without any real increase in purchasing power. The [SSA's own research](https://www.ssa.gov/oact/progdata/taxbenefits.html) on the taxation of benefits documents how the taxed share of beneficiaries has grown over time as a result. There's no way to plan this away entirely — but the withdrawal-order strategy below can reduce how much of your future combined income growth comes from taxable sources." },
@@ -6452,7 +7012,8 @@ export const GUIDES: Guide[] = [
       { question: "What is the maximum percentage of Social Security that can be taxed?", answer: "85%. No matter how high your other income is, at least 15% of your Social Security benefit always stays federally tax-free. The 85% figure is a ceiling from the IRS's worksheet, not a flat rate applied automatically." },
       { question: "Do I owe taxes on Social Security if it's my only income?", answer: "Usually not. Combined income only counts half of your benefit, so if Social Security is your entire income, you'd need an unusually large benefit before crossing the $25,000 or $32,000 threshold. Most retirees living on Social Security alone owe no federal tax on it." },
       { question: "Is Social Security disability income taxed the same way?", answer: "Yes — Social Security Disability Insurance (SSDI) follows the same combined-income formula as retirement benefits. This is different from SSI (Supplemental Security Income), a separate, needs-based program that is not taxable, since it isn't funded by the same payroll taxes." },
-      { question: "Which states tax Social Security benefits?", answer: "A shrinking number of states still tax some Social Security income, and the list changes most years as states phase the tax out. Check Tax Foundation's current state-by-state tracker rather than relying on a fixed count, since several states have dropped the tax in recent years." },
+      { question: "Will Social Security be taxed in 2026?", answer: "Yes, the same combined-income rules apply in 2026. From 2025 through 2028, a senior deduction of up to $6,000 per person age 65 or older lowers taxable income without changing how much of your benefit is taxable, and it phases out above $75,000 of modified adjusted gross income (MAGI), or $150,000 for joint filers. For many middle-income retirees, that deduction can reduce or erase the tax actually owed." },
+      { question: "Which states tax Social Security benefits?", answer: "A shrinking number of states still tax some Social Security income, and the list changes most years as states phase the tax out. Check Tax Foundation's current state-by-state tracker rather than relying on a fixed count, since several states have dropped the tax in recent years. Our [2026 state-by-state list](/guides/states-that-tax-social-security/) shows the eight states that still tax benefits and their income thresholds." },
       { question: "Can I have taxes withheld from Social Security to avoid a surprise bill?", answer: "Yes. You can file IRS Form W-4V to have 7%, 10%, 12%, or 22% of each monthly payment withheld for federal taxes, the same withholding options the SSA offers directly through its own benefit statements." },
     ],
     sources: [
@@ -6822,6 +7383,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "capital-gains-tax-for-seniors",
+    updated: "2026-09-30",
     title: "Capital Gains Tax for Seniors: What the Law Really Says",
     metaDescription:
       "There is no special capital gains tax exemption for seniors under federal law. See what actually lowers the bill: the 0% bracket, Section 121, and QCDs.",
@@ -6835,7 +7397,7 @@ export const GUIDES: Guide[] = [
       { heading: "How Retirement Accounts and Social Security Affect Your Tax Bill", body: "Withdrawals from a traditional IRA or 401(k) count as ordinary income, not capital gains. That distinction matters. Ordinary income stacks on top of your other income. That can push you out of the 0% capital gains bracket. Planning how much to withdraw each year, and from which account, shapes your total tax bill. Learn more in our [retirement planning guide](/retirement/).\n\nSelling investments can also raise the share of Social Security benefits that gets taxed. Up to 85% of benefits become taxable once your combined income passes certain thresholds. Realized capital gains count toward that total. Check the details in our guide on [whether Social Security is taxable](/guides/is-social-security-taxable/)." },
       { heading: "Net Unrealized Appreciation: A Break for Employer Stock in a 401(k)", body: "Net unrealized appreciation, or NUA, is a tax rule for employer stock held in a 401(k). It lets the stock's growth get taxed at capital gains rates instead of ordinary income tax. It applies when you take a lump-sum distribution of that stock rather than rolling it into an IRA. You pay ordinary income tax on the stock's original cost basis right away.\n\nThe appreciation above that basis gets taxed later, at long-term capital gains rates, only when you sell the shares. This strategy can save real money for someone holding heavily appreciated employer stock. The rules around a qualifying lump-sum distribution are strict. Review this move with a tax professional before you act." },
       { heading: "The Section 121 Home Sale Exclusion Still Helps Every Age", body: "The Section 121 exclusion shields home-sale profit from capital gains tax for sellers of any age, not just seniors. Single filers can exclude up to $250,000 of gain. Married couples filing jointly can exclude up to $500,000. To qualify, you must meet an ownership and use test. You need to have owned and lived in the home for at least two of the last five years.\n\nFor retirees downsizing or selling a long-held home, this exclusion is often the biggest capital gains saver available. Any profit above the exclusion limit still gets taxed at regular long-term rates. Run your numbers through the [capital gains tax calculator](/real-estate/capital-gains-calculator/) before you list the house." },
-      { heading: "Other Ways Seniors Can Legally Lower Capital Gains Tax", body: "Several tools can reduce capital gains tax in retirement even without a special age exemption. Landing in the 0% bracket is the biggest one. Lower income in retirement often puts filers there naturally. The additional standard deduction for age 65 and older helps too. For 2026, it adds $2,050 for single filers and $1,650 per qualifying spouse. A separate temporary deduction of up to $6,000 per person applies for 2025 through 2028 under current law. It phases out above $75,000 of income for single filers and $150,000 for joint filers.\n\nQualified charitable distributions, or QCDs, offer another path once you turn 70½. Sending up to $111,000 directly from an IRA to charity in 2026 does not touch your capital gains. It does lower your adjusted gross income. It can also count toward your required minimum distribution. Finally, assets held until death typically get a step-up in basis for your heirs, wiping out the built-in gain. Weigh that option against selling now with our [estate tax calculator](/estate-planning/estate-tax-calculator/)." },
+      { heading: "Other Ways Seniors Can Legally Lower Capital Gains Tax", body: "Several tools can reduce capital gains tax in retirement even without a special age exemption. Landing in the 0% bracket is the biggest one. Lower income in retirement often puts filers there naturally. The additional standard deduction for age 65 and older helps too. For 2026, it adds $2,050 for single filers and $1,650 per qualifying spouse. A separate temporary deduction of up to $6,000 per person applies for 2025 through 2028 under current law. It phases out above $75,000 of income for single filers and $150,000 for joint filers. Our guide to [whether Social Security is still taxed under the senior deduction](/guides/senior-deduction-social-security/) walks through the phase-out math.\n\nQualified charitable distributions, or QCDs, offer another path once you turn 70½. Sending up to $111,000 directly from an IRA to charity in 2026 does not touch your capital gains. It does lower your adjusted gross income. It can also count toward your required minimum distribution. Finally, assets held until death typically get a step-up in basis for your heirs, wiping out the built-in gain. Weigh that option against selling now with our [estate tax calculator](/estate-planning/estate-tax-calculator/)." },
     ],
     tools: [
       { href: "/real-estate/capital-gains-calculator/", label: "Capital gains tax" },
@@ -6860,6 +7422,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "are-church-donations-tax-deductible",
+    updated: "2026-09-30",
     title: "Are Church Donations Tax Deductible? 2026 IRS Rules",
     metaDescription:
       "Are church donations tax deductible in 2026? Learn the AGI limits, new 0.5% floor, $250 receipt rule, and how bunching can beat the standard deduction.",
@@ -6871,7 +7434,7 @@ export const GUIDES: Guide[] = [
       { heading: "Which Church Donations Are Tax-Deductible", body: "A church donation is tax-deductible when you itemize on Schedule A and the church is a qualified tax-exempt group. Churches automatically qualify as 501(c)(3) organizations, so they do not need separate IRS approval like most other charities. Cash gifts, checks, payroll-deducted offerings, and online tithes all count as cash contributions.\n\nNon-cash gifts count too. Donated clothing, furniture, or a used car qualifies at fair market value, which is what a willing buyer would pay. If you drive to church events as a volunteer, you can deduct 14 cents per mile plus parking and tolls. You can also deduct unreimbursed costs tied to volunteer work, like supplies you buy for a church program.\n\nKnowing what qualifies is only half the picture. See [how much tax you'll actually pay](/guides/how-much-tax-will-i-pay/) this year to judge whether a deduction meaningfully lowers your bill." },
       { heading: "When Church Donations Are Not Deductible", body: "Church donations are not deductible when you take the standard deduction, exceed IRS limits, or receive value in return. If you do not itemize, your tithes do not lower your taxable income beyond a small non-itemizer allowance. The value of your time or skills is never deductible. That is true even if you lead a choir or fix the church roof for free.\n\nQuid pro quo gifts are only partly deductible. If you pay $100 for a fundraising dinner worth $40, only $60 counts as a donation. Raffle, bingo, and lottery tickets are never deductible, even when a church sells them. Churches must give you a written disclosure statement for any quid pro quo payment over $75.\n\nTwo IRS caps also limit deductions. Cash gifts to a church cannot exceed 60% of your adjusted gross income (AGI) in one year. Starting in 2026, itemized charitable gifts below 0.5% of your AGI are not deductible at all. A pledge you have not yet paid is not deductible either. The IRS only counts gifts actually given during the tax year." },
       { heading: "How to Claim Church Donations on Your Tax Return", body: "You claim church donations by itemizing on Schedule A and keeping proof that matches each gift. For any single cash gift of $250 or more, the IRS requires a written acknowledgment from the church, called a contemporaneous written acknowledgment, or CWA. It must be dated before you file and state the amount given and any benefit received in return. For smaller cash gifts, a bank record, canceled check, or dated giving statement is enough.\n\nNon-cash donations need extra paperwork once they grow. File Form 8283 for any non-cash gift, or group of similar items, worth more than $500. Gifts over $5,000 need a qualified appraisal attached to your return. Skipping this paperwork is one of the [most common tax filing mistakes](/guides/common-tax-filing-mistakes/) donors make. It can cost you the entire deduction if the IRS asks for proof.\n\nChurch giving statements issued each January usually cover the $250 rule automatically. Ask your church for one if you have not received it." },
-      { heading: "Standard Deduction vs. Itemized Deductions in 2026", body: "The 2026 standard deduction is high enough that most church donors get no extra benefit from itemizing gifts alone. For 2026, the standard deduction is $16,100 for single filers and separate filers. It is $24,150 for head of household. It is $32,200 for married couples filing jointly. Taxpayers age 65 or older can claim an extra $6,000 deduction per qualifying spouse through 2028.\n\nItemizing only helps once your total deductions clear that standard amount. New for 2026, itemizers face a 0.5% of AGI floor: only charitable gifts above that floor count toward the deduction. A household with $150,000 in AGI, for example, loses the first $750 of giving to the floor every year.\n\nThere is a new option for non-itemizers, too. Starting in 2026, you can deduct up to $1,000 in cash gifts to charity while still taking the standard deduction. Married couples filing jointly can deduct up to $2,000. This amount is not subject to the 0.5% floor." },
+      { heading: "Standard Deduction vs. Itemized Deductions in 2026", body: "The 2026 standard deduction is high enough that most church donors get no extra benefit from itemizing gifts alone. For 2026, the standard deduction is $16,100 for single filers and separate filers. It is $24,150 for head of household. It is $32,200 for married couples filing jointly. Taxpayers age 65 or older can claim an extra $6,000 deduction per qualifying spouse through 2028. See [how the $6,000 senior deduction works](/guides/senior-deduction-social-security/) for who qualifies and how it phases out.\n\nItemizing only helps once your total deductions clear that standard amount. New for 2026, itemizers face a 0.5% of AGI floor: only charitable gifts above that floor count toward the deduction. A household with $150,000 in AGI, for example, loses the first $750 of giving to the floor every year.\n\nThere is a new option for non-itemizers, too. Starting in 2026, you can deduct up to $1,000 in cash gifts to charity while still taking the standard deduction. Married couples filing jointly can deduct up to $2,000. This amount is not subject to the 0.5% floor." },
       { heading: "Tax Planning Strategies: Bunching, Donor-Advised Funds, and QCDs", body: "Bunching several years of giving into one tax year is the main strategy for clearing the 2026 standard deduction. Instead of giving the same amount every year, you front-load two or more years of gifts at once into a donor-advised fund. You get the full deduction the year you fund the account. The fund then pays your church its normal amount over the following years, on your own schedule.\n\nHere is a simplified example with round numbers, not a real client case. A married couple with $150,000 AGI gives $12,000 a year to their church, plus $20,000 in other itemized deductions like mortgage interest. Giving every year, they take the $32,200 standard deduction plus the $2,000 non-itemizer cash gift allowance, for $34,200 in deductions each year. Now compare bunching: they put two years of giving, $24,000, into a donor-advised fund in year one. Their itemized total is $20,000 plus $23,250 in deductible charity, after the $750 AGI floor, for $43,250. In year two, with no new cash gift, they fall back to the $32,200 standard deduction. Their two-year bunching total beats giving evenly by about $7,050.\n\nDonors 70½ or older have another tool: the qualified charitable distribution, or QCD. A QCD sends money directly from a traditional IRA to your church, up to $111,000 in 2026, and it is excluded from your taxable income entirely. It also counts toward your required minimum distribution, whether or not you itemize. Review your [retirement account options](/retirement/) to see if a QCD fits your withdrawal plan once you reach that age." },
       { heading: "Bottom Line and Tax Planning Tips", body: "Most church donors get the biggest tax benefit by planning their giving, not by assuming every gift helps. The 2026 standard deduction is high enough that itemizing rarely pays off on its own. It usually takes several years of gifts bunched together, or a large non-cash donation in the same year as other itemized costs.\n\nA few habits protect the deduction you are entitled to. Save every giving statement and receipt, especially for gifts of $250 or more. Track non-cash donations carefully, and get an appraisal once a single gift tops $5,000. If you are 70½ or older, compare a QCD against a regular cash gift before year-end. If your annual giving sits near the standard deduction, model a bunching year with a donor-advised fund before you assume itemizing is not worth it.\n\nNone of these strategies change how much your church benefits from your generosity. They only change how much of that generosity the IRS lets you deduct." },
     ],
@@ -9306,6 +9869,7 @@ export const GUIDES: Guide[] = [
   },
   {
     slug: "is-savings-and-cd-interest-taxable",
+    updated: "2026-09-30",
     title: "Is Interest on Savings Accounts and CDs Taxable?",
     metaDescription:
       "Yes, savings and CD interest is taxable as ordinary income the year it's paid. Here's how the 1099-INT works and what early withdrawal changes.",
@@ -9332,7 +9896,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Accounts That Reduce or Skip This Tax",
-        body: "Four account types change this math, each with a real tradeoff attached. A CD or savings-style fund held inside a Roth IRA grows tax-free, with no annual 1099-INT at all, but the 2026 IRA contribution limit caps how much you can shelter there at $7,500 a year, $8,600 if you're 50 or older. A Treasury bill or note pays interest that's fully exempt from state and local tax, unlike bank CD interest, which most states with an income tax tax the same as your salary. Series I savings bonds defer their interest until you cash them in, and that interest can come out federally tax-free if you spend it on qualified higher-education costs and your income falls under the IRS phase-out. A municipal bond fund pays interest that's generally exempt from federal tax, and from state tax too if you buy bonds issued in your own state, but it trades FDIC insurance for credit and interest-rate risk a bank CD doesn't carry.\n\nNone of these four beats a plain CD on every count at once. Compare the actual after-tax yield of a CD against a savings account, not just the sticker APY, in our [HYSA vs. CD breakdown](/compare/hysa-vs-cd/) before assuming the higher advertised rate wins after taxes.",
+        body: "Four account types change this math, each with a real tradeoff attached. A CD or savings-style fund held inside a Roth IRA grows tax-free, with no annual 1099-INT at all, but the 2026 IRA contribution limit caps how much you can shelter there at $7,500 a year, $8,600 if you're 50 or older. A Treasury bill or note pays interest that's fully exempt from state and local tax, unlike bank CD interest, which most states with an income tax tax the same as your salary. Our guide to [how Treasury bills are taxed](/guides/are-treasury-bills-taxable/) covers when that interest is reported. Series I savings bonds defer their interest until you cash them in, and that interest can come out federally tax-free if you spend it on qualified higher-education costs and your income falls under the IRS phase-out. A municipal bond fund pays interest that's generally exempt from federal tax, and from state tax too if you buy bonds issued in your own state, but it trades FDIC insurance for credit and interest-rate risk a bank CD doesn't carry.\n\nNone of these four beats a plain CD on every count at once. Compare the actual after-tax yield of a CD against a savings account, not just the sticker APY, in our [HYSA vs. CD breakdown](/compare/hysa-vs-cd/) before assuming the higher advertised rate wins after taxes.",
       },
       {
         heading: "State Taxes on Savings and CD Interest",

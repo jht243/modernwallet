@@ -4342,7 +4342,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   // ── Competitor-monitor pass (2026-07-22): Best Brokers for Treasury Bonds ──
   {
     slug: "best-brokers-for-treasury-bonds",
-    updated: "2026-09-28",
+    updated: "2026-09-30",
     title: "Best Brokers for Treasury Bills, Notes & Bonds (2026)",
     metaDescription:
       "TreasuryDirect vs. Fidelity, Schwab, and other brokers for buying Treasuries — fees, liquidity, auto-roll, and which to use for your situation.",
@@ -4478,7 +4478,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "Buying at auction vs. on the secondary market: why it matters",
         content:
-          "Buying a Treasury \"at auction\" means you're purchasing a brand-new security directly from the Treasury on its original issue date, at a price and yield set by that specific auction's results. Auction purchases are typically free of any added fee anywhere you buy them — TreasuryDirect and the major brokerages all pass through the auction price without a markup.\n\nBuying on the \"secondary market\" means purchasing a Treasury that's already outstanding from another investor, through a broker-dealer, at whatever price the market is currently willing to pay. This is how you sell a Treasury before it matures, and it's also how you can buy a specific maturity date that isn't currently being auctioned. Secondary-market trades typically carry a dealer spread — a small difference between the buy and sell price — built into the quoted price rather than shown as a separate line-item commission. That spread is real cost, even when no commission is disclosed, so it's worth understanding it exists rather than assuming a trade is entirely free just because no fee is itemized.",
+          "Buying a Treasury \"at auction\" means you're purchasing a brand-new security directly from the Treasury on its original issue date, at a price and yield set by that specific auction's results. Auction purchases are typically free of any added fee anywhere you buy them — TreasuryDirect and the major brokerages all pass through the auction price without a markup. If you have not bought one before, our step-by-step guide on [how to buy Treasury bills](/guides/how-to-buy-treasury-bills/) walks through both the TreasuryDirect and brokerage routes.\n\nBuying on the \"secondary market\" means purchasing a Treasury that's already outstanding from another investor, through a broker-dealer, at whatever price the market is currently willing to pay. This is how you sell a Treasury before it matures, and it's also how you can buy a specific maturity date that isn't currently being auctioned. Secondary-market trades typically carry a dealer spread — a small difference between the buy and sell price — built into the quoted price rather than shown as a separate line-item commission. That spread is real cost, even when no commission is disclosed, so it's worth understanding it exists rather than assuming a trade is entirely free just because no fee is itemized.",
       },
       {
         heading: "What you give up by using TreasuryDirect",
@@ -4493,7 +4493,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "How to build a simple Treasury ladder",
         content:
-          "A Treasury ladder means buying several Treasuries with staggered maturity dates — for example, one maturing every three or six months — so that you have a predictable, recurring liquidity event instead of one large lump sum locked up until a single date. As each rung matures, you can reinvest it into a new long-dated rung (extending the ladder) or let it convert to cash if you need the money.\n\nA ladder can be built at TreasuryDirect using its scheduled reinvestment feature, or at a brokerage using dedicated laddering tools like Schwab's. The brokerage route is generally easier to manage if you're laddering more than a handful of rungs, since you can see the whole schedule in one place alongside your other holdings, and you retain the option to sell a rung early on the secondary market if your plans change.",
+          "A Treasury ladder means buying several Treasuries with staggered maturity dates — for example, one maturing every three or six months — so that you have a predictable, recurring liquidity event instead of one large lump sum locked up until a single date. As each rung matures, you can reinvest it into a new long-dated rung (extending the ladder) or let it convert to cash if you need the money. To pick which maturities go in the ladder, see [how Treasury bills, notes, and bonds differ](/compare/treasury-bills-vs-notes-vs-bonds/).\n\nA ladder can be built at TreasuryDirect using its scheduled reinvestment feature, or at a brokerage using dedicated laddering tools like Schwab's. The brokerage route is generally easier to manage if you're laddering more than a handful of rungs, since you can see the whole schedule in one place alongside your other holdings, and you retain the option to sell a rung early on the secondary market if your plans change.",
       },
     ],
     faqs: [

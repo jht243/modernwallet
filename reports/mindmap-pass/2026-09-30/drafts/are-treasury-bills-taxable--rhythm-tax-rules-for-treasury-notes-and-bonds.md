@@ -1,0 +1,5 @@
+## Tax Rules for Treasury Notes and Bonds
+
+The state tax exemption that covers short-term Treasury bills applies equally to longer-term debt issued by the United States Department of the Treasury. Treasury notes and bonds avoid state and local income taxes but owe federal tax. Their structural design and payment schedules differ.
+
+Under the [TreasuryDirect marketable securities guide](https://www.treasurydirect.gov/marketable-securities/), Treasury notes mature in terms of 2, 3, 5, 7, or 10 years, while Treasury bonds mature in 20 or 30 years. Unlike bills sold at a discount, notes and bonds pay a fixed rate of interest every six months until maturity. You owe tax the calendar year you receive them. Your brokerage or TreasuryDirect reports them each year in Box 3 of Form 1099-INT. You can explore the full structural differences in our [comparison of Treasury bills vs notes vs bonds](/compare/treasury-bills-vs-notes-vs-bonds/). Check your annual Form 1099-INT Box 3 carefully before filing your state return. Verify that your full exemption is recorded.

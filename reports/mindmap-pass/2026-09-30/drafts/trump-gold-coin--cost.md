@@ -1,0 +1,3 @@
+The U.S. Mint sells the coin for $61 per 25-coin roll and $154.50 per 100-coin bag under prices effective August 14, 2026. Both options cost more than the $1 face value. That works out to about $2.44 per coin by the roll and about $1.55 per coin by the bag.
+
+The guaranteed worth is strictly the $1 face value, as the manganese-brass alloy contains no actual gold and carries no bullion value. Coins bearing the special July 4th privy mark are the likeliest to draw collector interest, though resale value remains unpredictable for any brand-new coin. The Mint also lists a separate 24-karat one-ounce gold proof edition, with its official price still to be announced.

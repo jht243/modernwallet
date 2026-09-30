@@ -1,0 +1,7 @@
+## What Changed for 2025 to 2028: The $6,000 Senior Deduction
+
+The benefit-taxation rules did not change for 2026. Instead, the [Internal Revenue Service (IRS)](https://www.irs.gov/newsroom/one-big-beautiful-bill-act-tax-deductions-for-working-americans-and-seniors) established a temporary enhanced deduction for tax years 2025 through 2028. Eligible taxpayers age 65 or older can deduct up to $6,000 each, or $12,000 for a qualifying married couple filing jointly, on top of the existing age-based standard deduction.
+
+This deduction lowers your taxable income after the taxable portion of benefits is figured, so it does not change how much of the benefit is included on Form 1040. You claim it on Schedule 1-A, which flows to line 13b of your return, whether you take the standard deduction or itemize. Married couples must file jointly to qualify, and the deduction phases out by 6% of modified adjusted gross income (MAGI) above $75,000 for single filers, or $150,000 on a joint return.
+
+Review our [senior deduction guide](/guides/senior-deduction-social-security/) for worked phase-out examples and Schedule 1-A filing instructions. State governments set separate tax rules for retirement benefits, so check our breakdown of [states that tax Social Security](/guides/states-that-tax-social-security/) before preparing your state return.

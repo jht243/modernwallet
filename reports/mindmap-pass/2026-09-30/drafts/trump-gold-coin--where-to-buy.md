@@ -1,0 +1,7 @@
+## When and where can you buy the Trump gold coin?
+
+The [U.S. Mint](https://www.usmint.gov/) began selling the Donald J. Trump $1 coin on September 2, 2026, priced at $61.00 for a 25-coin roll and $154.50 for a 100-coin bag. These are circulating-quality coins struck at the Philadelphia Mint without a mint mark. Despite their golden color, the coins are made from a manganese-brass clad alloy and contain no physical gold.
+
+The Mint limited initial purchases to two units per household for each option during the first 24 hours. Opening-day demand strained stock immediately, leaving rolls on backorder status and 100-coin bags marked unavailable. A total of 250,000 coins struck on July 4, 2026, include a special "July 4th" privy mark and were mixed at random into standard packaging, so buyers cannot order that collectible version separately.
+
+The official U.S. Mint catalog remains the only authorized source for these coins at their original government release prices. Secondary retail sites and online auctions frequently list standard rolls at heavy markups or promote private novelty tokens that the federal government never produced. Buying outside the Mint adds substantial markups without providing actual precious metal.

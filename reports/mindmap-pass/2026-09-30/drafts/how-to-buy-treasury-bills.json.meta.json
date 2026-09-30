@@ -1,0 +1,48 @@
+{
+ "slug": "how-to-buy-treasury-bills",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2141,
+ "floor": 1200,
+ "input_tokens": 20120,
+ "output_tokens": 3713,
+ "thinking_tokens": 1399,
+ "cached_tokens": 17752,
+ "est_cost_usd": 0.0243,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2141,
+  "numbers_not_in_facts": [
+   "00",
+   "1000",
+   "975"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18170
+  }
+ },
+ "seconds": 24.4,
+ "response_id": "uii9ataVI8CV_uMPy8Lb8QQ",
+ "generated_at": "2026-09-30T15:20:50+0000"
+}

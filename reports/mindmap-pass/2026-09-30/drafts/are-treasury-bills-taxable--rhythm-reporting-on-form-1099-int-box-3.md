@@ -1,0 +1,7 @@
+## Reporting on Form 1099-INT Box 3
+
+Taxable Treasury interest is reported on Form 1099-INT. It does not appear in Box 1 alongside regular bank account interest. Instead, the [IRS Form 1099-INT instructions](https://www.irs.gov/instructions/i1099int) specify that earnings from federal obligations belong in Box 3, labeled "Interest on U.S. Savings Bonds and Treasury Obligations."
+
+If you hold your securities directly with the government, TreasuryDirect generates your tax form electronically in your online account. Find it under ManageDirect within the Manage My Taxes sub-menu. If you buy securities through an external brokerage account, such as [Charles Schwab](https://www.schwab.com/pricing) or [Fidelity](https://www.fidelity.com/trading/commissions-margin-rates), that institution delivers a consolidated 1099 form showing your Box 3 earnings. Review our [roundup of the best brokers for Treasury bonds](/roundup/best-brokers-for-treasury-bonds/) to compare trading platforms.
+
+On state returns, you subtract Box 3. State tax software and paper forms instruct you to subtract that Box 3 amount from federal adjusted gross income, ensuring that federal interest bypasses state taxation entirely.

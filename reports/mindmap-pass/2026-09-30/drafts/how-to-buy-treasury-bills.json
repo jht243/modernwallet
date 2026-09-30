@@ -1,0 +1,114 @@
+{
+  "slug": "how-to-buy-treasury-bills",
+  "title": "How to Buy Treasury Bills: Step-by-Step Guide",
+  "metaDescription": "Learn how to buy Treasury bills directly through TreasuryDirect or via a brokerage account. See auction rules, settlement dates, and minimums.",
+  "h1": "How to Buy Treasury Bills",
+  "cardBlurb": "A complete walk-through for buying Treasury bills directly from the government or through a brokerage account.",
+  "introText": "You can buy Treasury bills through a [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/treasury-bills/) account or through a brokerage account. At ModernWallet, the mistake we see readers make most often is missing the gap between auction day and issue day, which can be days or weeks. The minimum is $100. You buy in $100 steps, up to $10 million per auction with a non-competitive bid.\n\nTreasury bills, often called T-bills, are sold at an auction-determined discount and pay full face value when they mature. You do not need to time the secondary market to get a fair price because non-competitive auction bids guarantee you receive the security at the final rate set by institutional bidders.",
+  "sections": [
+    {
+      "heading": "How to Buy Treasury Bills, Step by Step",
+      "body": "First, choose where to buy: a TreasuryDirect account run by the Treasury, or a brokerage account. TreasuryDirect sells bills directly with no secondary trading, while brokerage accounts allow both auction bidding and secondary market sales. For a breakdown of platforms that support Treasury trades, review our guide to the [best brokers for Treasury bills](/roundup/best-brokers-for-treasury-bonds/).\n\nTo buy directly from the Treasury, use TreasuryDirect:\n\n1. Open an account on [TreasuryDirect](https://www.treasurydirect.gov/marketable-securities/buying-a-marketable-security/). You must be a United States citizen, resident, or individual at least 18 years old with a valid Social Security number (SSN), a United States address of record, an email address, and a domestic bank account that accepts Automated Clearing House (ACH) transfers.\n2. Navigate to the BuyDirect tab on the main menu.\n3. Select Bills from the list of marketable securities, pick your desired term, and enter a purchase amount in multiples of $100 up to the non-competitive limit of $10 million.\n4. Select your bank account for payment and decide whether to schedule automatic reinvestment.\n5. Review your order details and submit the bid before the auction closing deadline.\n6. Check the Pending Purchases and Reinvestments page after 5:00 PM Eastern Time (ET) on auction day to confirm the discounted purchase price.\n7. Ensure your linked bank account holds the required settlement funds by the scheduled issue date.\n\nTo buy through a broker such as [Fidelity](https://www.fidelity.com/trading/commissions-margin-rates) or [Charles Schwab](https://www.schwab.com/pricing):\n\n1. Log into your account and navigate to the fixed income or bond trading page.\n2. Choose between entering an upcoming auction or purchasing an existing bill on the secondary market.\n3. Search for United States Treasury bills and select your maturity date.\n4. Enter the face amount you want to buy. The Treasury minimum is $100 in $100 increments, and your broker's order ticket shows any higher minimum it applies.\n5. Select a non-competitive order type for auctions, or set a limit price for secondary market purchases.\n6. Confirm that the trade commission is zero. Online Treasury auctions and secondary market trades cost $0 at Charles Schwab and $0 at Fidelity, though broker-assisted orders incur extra fees ($25 at Charles Schwab and $19.95 at Fidelity).\n7. Confirm the trade and maintain settled cash in your core cash account until the settlement date arrives."
+    },
+    {
+      "heading": "Choosing a Treasury Bill Term",
+      "body": "The United States Department of the Treasury issues bills across seven distinct terms: 4 weeks, 6 weeks, 8 weeks, 13 weeks, 17 weeks, 26 weeks, and 52 weeks. You should match the term to the exact date you need your cash returned, rather than trying to guess interest rate movements.\n\nCash Management Bills (CMBs) also exist for short-term federal financing needs, but individual investors cannot buy them through TreasuryDirect. You can only purchase Cash Management Bills through a bank, broker, or dealer. If you need the money back within about two months, 4-week and 8-week bills return your principal soonest, and their interest is exempt from state income tax. You can review how fixed deposits evaluate against government paper in our [CD vs. Treasury bill guide](/compare/cd-vs-treasury-bill/).\n\nFor funds with longer holding windows, 26-week and 52-week bills lock in the discount rate for up to 52 weeks. Because all bills sell in minimum increments of $100, you can split your cash across multiple maturities to build a rolling liquidity reserve."
+    },
+    {
+      "heading": "Auction Day and Issue Day Schedules",
+      "body": "A Treasury auction date and its issue date are separate calendar events that are often a few days or weeks apart. The [TreasuryDirect auction schedule](https://www.treasurydirect.gov/auctions/how-auctions-work/) lists upcoming offerings every Friday by 10:45 AM ET, providing the specific security, offering amount, auction date, issue date, and maturity date.\n\nWhen you buy at auction through TreasuryDirect, your order is a non-competitive bid, and most brokers let you place one too. Non-competitive bidders are guaranteed to receive the security in the dollar amount requested, and they agree to accept the discount rate established by competitive institutional bidders during the auction. You do not know the exact purchase price when you enter your bid, but you are guaranteed the market-clearing rate.\n\nWith TreasuryDirect, money does not leave your bank account on auction day. The Treasury debits your funds through an ACH transfer on the issue date, which is when the bill officially starts earning interest. If you submit a non-competitive bid on TreasuryDirect, log in after 5:00 PM ET on auction day to review your final discount price and the precise settlement amount required."
+    },
+    {
+      "heading": "Reinvestment and Auto-Roll Rules",
+      "body": "You can automatically reinvest matured Treasury bill proceeds into a new bill of the same term to maintain steady interest income. TreasuryDirect lets you schedule reinvestment when you place your initial purchase order, or you can add or cancel it up to four business days before the maturity date.\n\nThe system limits the total number of consecutive reinvestments based on the maturity of the security. A 52-week bill can be reinvested 1 time, creating a total holding period of two years. A 4-week bill can be reinvested up to 25 times, keeping your capital deployed for roughly two years.\n\nBrokerages refer to automatic reinvestment as an auto-roll program. If you turn on auto-roll at your broker, the broker automatically enters a non-competitive bid in the replacement auction using the principal returning from the maturing bill. If you need cash from an upcoming maturity, turn off reinvestment before the auction date for the replacement bill to ensure the face value settles into your cash account."
+    },
+    {
+      "heading": "Selling a Treasury Bill Before Maturity",
+      "body": "You cannot sell a Treasury bill directly to the government before its maturity date. If you need your cash early, you must transfer the security to an account with a bank, broker, or dealer to execute a secondary market sale.\n\nTreasuryDirect enforces strict holding periods for account-to-account movements. Under [TreasuryDirect transfer rules](https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/), you must hold a bill in your TreasuryDirect account for at least 45 calendar days before transferring it to an external brokerage firm. If you buy a 4-week or 6-week bill in TreasuryDirect, you must hold it to maturity because the entire term expires before the 45-day transfer window opens.\n\nSecondary market prices fluctuate based on broader interest rate trends. According to [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds), when interest rates rise after your purchase, existing bills trading on the secondary market may lose market value and you might have to sell at a discount. Investors who plan to access their principal on short notice should hold their bills directly at an online broker, or hold short cash in our recommended [best money market accounts](/roundup/best-money-market-accounts/) or [high-interest brokerage accounts](/roundup/best-brokerage-accounts-for-interest-on-cash/)."
+    },
+    {
+      "heading": "Discount Pricing and Maturity Payouts",
+      "body": "Treasury bills do not distribute regular coupon payments like traditional notes or corporate bonds. Instead, the government sells bills at a discount to their par value, or face value, and pays the full face value when the bill matures.\n\nFor example, using made-up round numbers rather than a real auction result: if you bid for a $1,000 bill and the auction sets a price of $975, the Treasury debits $975 from your linked bank account on the issue date. When the bill reaches its maturity date, the Treasury deposits the full $1,000 face value into your bank account. The $25 difference between your purchase price and the redemption value represents your interest income.\n\nThe [Internal Revenue Service (IRS) Publication 550](https://www.irs.gov/publications/p550) establishes that Treasury bill interest is subject to federal income tax but fully exempt from state and local income taxes. For detailed tax reporting guidelines, consult our guide on [whether Treasury bills are taxable](/guides/are-treasury-bills-taxable/). TreasuryDirect reports your annual earnings on Form 1099-INT in Box 3, labeled Interest on U.S. Savings Bonds and Treasury Obligations, which you can access under the ManageDirect tab. If a bill matures on December 31 on a weekend or federal holiday, payment processes on the next business day, but the earnings appear on your Form 1099-INT for the maturity year."
+    },
+    {
+      "heading": "Treasury Bills Compared to Other Treasury Securities",
+      "body": "Treasury bills represent the shortest segment of marketable federal debt, which also includes notes, bonds, inflation-protected securities, and floating-rate debt. Every security issued by the Department of the Treasury is backed by the full faith and credit of the United States government.\n\nTreasury bills mature in one year or less, sell at a discount, and distribute interest only at maturity. Treasury notes mature in terms of 2, 3, 5, 7, or 10 years and pay a fixed interest rate every six months. Treasury bonds mature in 20 or 30 years and also pay semiannual interest. To examine how maturity lengths shape yield and duration risks, read our breakdown of [Treasury bills vs. notes vs. bonds](/compare/treasury-bills-vs-notes-vs-bonds/).\n\nFor investors seeking inflation hedges, Treasury Inflation-Protected Securities (TIPS) feature terms of 5, 10, or 30 years with principal values that adjust based on inflation or deflation, paying the greater of original or adjusted principal at maturity. Floating Rate Notes (FRNs) mature in two years and distribute interest four times a year based on the 13-week Treasury bill discount rate plus an auction spread. For how TIPS compare with I bonds as inflation protection, see our [I bonds vs. TIPS comparison](/compare/i-bonds-vs-tips/)."
+    },
+    {
+      "heading": "What to Do Next",
+      "body": "Before you bid, pick the date you need the money back and choose the bill term that matures before it. If you plan to hold to maturity, open a TreasuryDirect account and place a non-competitive bid in the next auction for that term. If you might need to sell early, buy through a brokerage account instead, because TreasuryDirect makes you hold a bill 45 days before you can transfer it out. Either way, have the full purchase amount in your bank or cash account by the issue date."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/",
+      "label": "Investment calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I buy Treasury bills directly from the government?",
+      "answer": "Yes, you can purchase Treasury bills directly from the federal government by opening an account on the TreasuryDirect website. You must be at least 18 years old, possess a valid Social Security number, have a United States address, and maintain an account with a domestic financial institution that accepts ACH transfers."
+    },
+    {
+      "question": "What is the minimum to buy a Treasury bill?",
+      "answer": "The minimum purchase amount for a Treasury bill is $100, and all bids must be placed in increments of $100. Non-competitive retail orders can reach up to $10 million per individual auction."
+    },
+    {
+      "question": "Can I buy T-bills on Fidelity or Schwab?",
+      "answer": "Yes, both Fidelity and Charles Schwab support online Treasury bill purchases for upcoming auctions and existing secondary market issues. Both firms charge $0 in commissions for self-directed online Treasury orders, though representative-assisted orders carry additional transaction fees."
+    },
+    {
+      "question": "What is a non-competitive bid?",
+      "answer": "A non-competitive bid guarantees that you receive your requested dollar amount of Treasury bills at the final discount rate determined by institutional competitive bidders during the auction. TreasuryDirect accepts only non-competitive bids, while a bank, broker, or dealer accepts both kinds."
+    },
+    {
+      "question": "Can I sell a T-bill before it matures?",
+      "answer": "You can sell a Treasury bill before maturity only through a broker, bank, or dealer on the secondary market. If you hold the bill in TreasuryDirect, you must hold it for at least 45 calendar days before transferring it to an outside brokerage firm for liquidation."
+    },
+    {
+      "question": "What happens when my T-bill matures?",
+      "answer": "When a Treasury bill reaches maturity, the government pays the full face value of the security into your linked financial account. If you scheduled automatic reinvestment prior to maturity, your principal rolls directly into a new bill with the identical term length."
+    }
+  ],
+  "sources": [
+    {
+      "label": "TreasuryDirect, Treasury Bills",
+      "url": "https://www.treasurydirect.gov/marketable-securities/treasury-bills/"
+    },
+    {
+      "label": "TreasuryDirect, Buying a Marketable Security",
+      "url": "https://www.treasurydirect.gov/marketable-securities/buying-a-marketable-security/"
+    },
+    {
+      "label": "TreasuryDirect, How Auctions Work",
+      "url": "https://www.treasurydirect.gov/auctions/how-auctions-work/"
+    },
+    {
+      "label": "TreasuryDirect, Reinvesting a Marketable Security",
+      "url": "https://www.treasurydirect.gov/marketable-securities/reinvesting-a-marketable-security/"
+    },
+    {
+      "label": "TreasuryDirect, Selling Marketable Securities",
+      "url": "https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/"
+    },
+    {
+      "label": "IRS Publication 550, Investment Income and Expenses",
+      "url": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "label": "Charles Schwab, Pricing and Commissions",
+      "url": "https://www.schwab.com/pricing"
+    },
+    {
+      "label": "Fidelity, Commissions and Margin Rates",
+      "url": "https://www.fidelity.com/trading/commissions-margin-rates"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -1,0 +1,39 @@
+{
+ "slug": "states-that-tax-social-security--rhythm-states-that-tax-social-security-in-2026",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 332,
+ "floor": 0,
+ "input_tokens": 20638,
+ "output_tokens": 604,
+ "thinking_tokens": 28278,
+ "cached_tokens": 17752,
+ "est_cost_usd": 0.1138,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "auditor: section repeats existing page heading(s) ['## States That Tax Social Security in 2026'] \u2014 merge, do not duplicate"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 332,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18170
+  }
+ },
+ "seconds": 106.0,
+ "response_id": "6Su9aqq0ApWj_PUPj-6SwAg",
+ "generated_at": "2026-09-30T15:35:46+0000"
+}

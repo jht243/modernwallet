@@ -1,0 +1,39 @@
+{
+ "slug": "senior-deduction-social-security--rhythm-how-social-security-benefits-are-still-t",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 194,
+ "floor": 0,
+ "input_tokens": 19706,
+ "output_tokens": 320,
+ "thinking_tokens": 10998,
+ "cached_tokens": 17752,
+ "est_cost_usd": 0.0472,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "auditor: section repeats existing page heading(s) ['## How Social Security Benefits Are Still Taxed'] \u2014 merge, do not duplicate"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 194,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18170
+  }
+ },
+ "seconds": 39.0,
+ "response_id": "aSu9areBOdCb9MoPgaPByAU",
+ "generated_at": "2026-09-30T15:32:32+0000"
+}

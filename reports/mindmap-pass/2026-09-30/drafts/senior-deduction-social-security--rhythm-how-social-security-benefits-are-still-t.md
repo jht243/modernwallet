@@ -1,0 +1,7 @@
+## How Social Security Benefits Are Still Taxed
+
+Federal law measures your combined income to decide whether your benefits face taxation. Combined income equals your adjusted gross income, plus any tax-exempt municipal interest, plus exactly half of your total Social Security benefits for the calendar year.
+
+The threshold amounts have not changed. Single filers, heads of household, and qualifying surviving spouses face taxation when combined income exceeds $25,000. For joint filers, the base threshold is $32,000. If you are married filing separately and lived with your spouse at any time during the year, your threshold drops to $0. Review the full mechanical breakdown in our guide on [whether Social Security is taxable](/guides/is-social-security-taxable/).
+
+If your combined income falls between $25,000 and $34,000, or $32,000 and $44,000 for joint returns, up to 50% of your benefits may be taxable. Above $34,000, or $44,000 for joint filers, up to 85% of your benefits becomes subject to ordinary income tax. Federal rules cap that taxable portion at 85%. State income tax rules vary, as detailed in our review of [states that tax Social Security](/guides/states-that-tax-social-security/). To estimate your baseline benefit amounts, test your numbers in our [Social Security calculator](/retirement/social-security-retirement-calculator/).
