@@ -1,0 +1,4 @@
+{
+ "question": "How much emergency fund should a couple or a family have?",
+ "answer": "There is no separate target by household size, so couples and families still aim for 3 to 6 months of essential monthly expenses rather than income. Stable two-income households can aim near 3 months because the other paycheck still covers part of the bills, while a family's sole earner should lean toward 6 months or more. To calculate your dollar goal, add up household essentials for rent or mortgage, utilities, groceries, insurance, transportation, and minimum debt payments, then multiply by your months. For example, if your household's essentials total $3,000 a month, 3 months is $9,000 and 6 months is $18,000. You can total your household essentials using our [monthly budget calculator](/budget/monthly-budget-calculator/)."
+}

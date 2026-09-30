@@ -211,3 +211,12 @@
 | /guides/personal-loans-for-excellent-credit/ | 2026-09-29 | 1 | 0/0/1/0/0 | 0 |
 | /personal-loan/ | 2026-09-29 | 1 | 1/0/0/0/0 | 0 |
 | /roundup/best-dividend-etfs/ | 2026-09-29 | 1 | 0/0/0/0/0 | 0 |
+| /guides/how-much-emergency-fund/ | 2026-09-30 | 2 | 0/0/2/0/0 | 0 |
+| /compare/401k-vs-brokerage-account/ | 2026-09-30 | 1 | 0/0/1/0/0 | 0 |
+| /compare/schd-vs-vym | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /compare/target-date-fund-vs-sp500 | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /retirement/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-brokers-for-treasury-bonds/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-budgeting-apps | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |

@@ -1,0 +1,115 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-09-30",
+  "window_start": "2026-09-30",
+  "window_end": "2026-09-30",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-much-emergency-fund/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/401k-vs-brokerage-account/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/schd-vs-vym",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/target-date-fund-vs-sp500",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/retirement/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-budgeting-apps",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 11,
+  "top10_pages_total_clicks": 11,
+  "channel_split": {
+    "/guides/how-much-emergency-fund/": {
+      "Direct": 2
+    },
+    "/compare/401k-vs-brokerage-account/": {
+      "Direct": 1
+    },
+    "/compare/schd-vs-vym": {
+      "Direct": 1
+    },
+    "/compare/target-date-fund-vs-sp500": {
+      "Direct": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Cross-network": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    },
+    "/retirement/": {
+      "Cross-network": 1
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Cross-network": 1
+    },
+    "/roundup/best-budgeting-apps": {
+      "Direct": 1
+    }
+  }
+}

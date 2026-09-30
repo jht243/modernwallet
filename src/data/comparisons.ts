@@ -7259,6 +7259,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         answer:
           "This isn't a true 401(k)-versus-index-fund choice, since an index fund is an investment you hold, not an account type competing with a 401(k). Inside a 401(k), you're limited to whatever index funds the plan's menu offers, usually a handful of low-cost options. In a brokerage account, you can buy any index fund or ETF on the market, but you'll owe tax on its dividends every year, something the 401(k) defers until withdrawal.",
       },
+      {
+        question: "Is a brokerage account or a 401(k) better if I want to retire before 59½?",
+        answer:
+          "Use both accounts together by funding your 401(k) up to the full employer match first, then using a taxable brokerage account as an early bridge. Withdrawals from a 401(k) before age 59½ normally carry a 10% additional tax on top of ordinary income tax. A brokerage account carries no early-withdrawal penalty, though you owe tax on dividends, interest, and gains as they occur. In 2026, long-term capital gains rates are 0%, 15%, or 20%, with the 0% bracket topping out at $49,450 for single filers and $98,900 for married couples filing jointly. [IRS Topic 558](https://www.irs.gov/taxtopics/tc558) lists exceptions to the 10% additional tax, including substantially equal periodic payments and leaving an employer in or after the year you turn 55. The age-55 exception applies only to that employer's plan. Plan rules can be stricter, so confirm terms with your administrator, then test numbers in our [early retirement calculator](/retirement/early-retirement-calculator/).",
+      },
     ],
     sources: [
       { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
