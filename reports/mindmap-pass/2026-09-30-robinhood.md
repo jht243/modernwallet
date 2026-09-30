@@ -53,3 +53,6 @@ Dedup summary (re-run after fast-forwarding local main to origin/main — the fi
 - **"trading bot taxes" (10)** — too thin standalone; folded into row 7 (wash sale).
 - **Tier 0 Launch Core (rule 2c)** — not applicable: Robinhood Agents is a brokerage feature, not a new AI model release; the models it offers (GPT-6 Luna/Sol, Opus 4.8) are not launched in this brief.
 - **Interactive Gold break-even calculator** — would be spec-only in Phase 3; row 4 ships the article with a static break-even table now; calculator is a follow-up.
+
+## IndexNow submission
+- 2026-09-30: 7 URLs submitted after deploy of 7ddbbed, all verified HTTP 200 first (plus 8 link-only pages verified 200, not submitted). IndexNow response: HTTP 200 (api.indexnow.org; api.indexnow.com did not resolve).
