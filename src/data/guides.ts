@@ -1397,10 +1397,10 @@ export const GUIDES: Guide[] = [
   },
   // ── AI investing pass 2026-09-09 ──
   {
-    "updated": "2026-09-09",
+    "updated": "2026-09-30",
     "slug": "robinhood-agentic-trading-explained",
-    "title": "Robinhood Agentic Trading and AI Tools Explained in Full",
-    "metaDescription": "Learn how Robinhood agentic trading and Cortex work, how the ring-fenced MCP wallet protects funds, what Gold costs, and who should avoid AI trading.",
+    "title": "Robinhood Agentic Trading and Robinhood Agents Explained",
+    "metaDescription": "What Robinhood Agents are, how Loops can trade while you sleep, how they differ from plugging in your own AI via MCP, and the risk you carry.",
     "h1": "Robinhood Agentic Trading and AI Tools Explained",
     "cardBlurb": "Learn how Robinhood agentic trading and Cortex work, how the ring-fenced wallet isolates risk, and what automated trading costs.",
     "introText": "[Robinhood](https://robinhood.com/us/en/newsroom/introducing-strategies-banking-and-cortex/) offers two distinct AI features: Cortex, an in-app research assistant that generates market summaries and options setups, and Agentic Trading, a beta environment that allows an external software agent to execute stock orders on your behalf.\n\nAt ModernWallet, we track automated brokerage tools to show you how execution protocols, safety controls, and real account costs affect your cash before you connect any live trading key. Understanding the boundary between an informational assistant and an autonomous execution engine prevents expensive configuration errors in your brokerage balance.",
@@ -1408,6 +1408,10 @@ export const GUIDES: Guide[] = [
       {
         "heading": "Robinhood AI Trading Splits into Two Separate Products",
         "body": "[Robinhood](https://robinhood.com/us/en/newsroom/introducing-strategies-banking-and-cortex/) provides artificial intelligence tools through two completely separate systems rather than a single unified program. Widespread confusion among retail investors followed multiple automated updates announced in quick succession. This led traders to blur conversational research tools with automated order routing. You must separate informational interfaces from programmatic execution tools before connecting any funds.\n\nThe first product is Robinhood Cortex, an in-app research copilot designed to summarize market news, explain asset price swings, and structure options contracts from conversational prompts. Cortex operates inside the standard Robinhood interface and never initiates a transaction on its own. You review the ideas that Cortex compiles. You make the final decision to submit or cancel each trade.\n\nThe second product is Robinhood Agentic Trading, a developer beta that permits independent software agents to place equity orders directly through Robinhood infrastructure. This feature relies on external code running outside the consumer app, communicating with Robinhood through a communication framework called the Model Context Protocol. Unlike Cortex, Agentic Trading gives external software the authority to execute trades without requiring manual button clicks for routine fills.\n\nRobinhood also offers Robinhood Strategies, which some investors mistake for an artificial intelligence trading system. Robinhood Strategies consists of managed investment portfolios that rebalance assets programmatically using human oversight and traditional index algorithms, entirely separate from large language models. For a comprehensive overview of how algorithmic systems compare across the retail market, explore our [guide to AI stock trading](/guides/ai-stock-trading-explained). Knowing which tool handles research and which tool routes orders is the first step toward evaluating whether these capabilities fit your personal portfolio."
+      },
+      {
+        "heading": "Robinhood Agents: The In-App AI Traders Announced September 29, 2026",
+        "body": "Robinhood Agents are AI agents built into the Robinhood mobile app that research, propose and place trades from a separately funded agent account, with trade approvals on by default. The May 2026 route works differently: you connect your own outside agent, such as ChatGPT, Claude or Codex, through Robinhood's Model Context Protocol (MCP) server, and trade approvals start off.\n\nRobinhood announced the in-app agents on September 29, 2026, at its [HOOD Summit '26](https://robinhood.com/us/en/newsroom/hood-summit-2026/) conference in Houston. The feature is coming soon to eligible U.S. customers, and [CoinDesk](https://www.coindesk.com/markets/2026/09/30/robinhood-is-giving-customers-an-ai-agent-that-trades-for-them-plus-10x-crypto-bets) reported on September 30 that the products are still rolling out.\n\nEvery built-in agent operates strictly inside its own dedicated account. The agent can only touch the cash you transfer into that specific balance from a linked bank account or an existing Robinhood balance, leaving your primary portfolio untouched. You need an open primary Robinhood individual investing account, and each customer can currently have one built-in agent. Setup and chat work fully only in the mobile app; on the web, Robinhood's [agent setup documentation](https://robinhood.com/us/en/support/articles/setting-up-an-agent/) says agentic accounts \"may have limited usability.\"\n\nTrade approvals default to on for built-in agents, and you can change the setting at any time. When approvals stay on, the agent analyzes market data and drafts orders, but you must manually review and submit every trade in the mobile app. By contrast, external MCP accounts default to autonomous execution with approvals turned off. Even with approvals off, Robinhood says certain trades may still require your approval. In California and Connecticut, trade approvals must stay on for crypto trades placed through built-in agents.\n\nLoops, marked coming soon, turn a strategy into a standing instruction the agent runs on repeat, around the clock, without asking you to approve each trade. Robinhood's [agentic trading page](https://robinhood.com/us/en/agentic-trading/) describes them as scheduling agents to research and trade continuously or on a schedule. You can turn a Loop off at any time, and Robinhood says it does not guarantee how Loops will perform in any given market condition. Around-the-clock trading applies fully to crypto; stock orders still follow Robinhood's market hours, covered in [Robinhood 24-hour trading](/guides/robinhood-24-hour-trading/).\n\nRobinhood states that users select models from several leading AI labs including OpenAI, with usage of OpenAI GPT-Luna provided for free through the end of 2026. Beyond GPT-Luna, [Fortune](https://ca.finance.yahoo.com/news/robinhood-just-rolled-trading-agents-230000312.html) reported that launch options include GPT-6 Sol and Anthropic Opus 4.8, with standard token rates applying once promotional periods end. Robinhood has not published specific token pricing for those alternative models.\n\nBuilt-in agents can trade long equities, options, and cryptocurrencies using market orders, dollar-based market orders, limit orders, stop limit orders, and stop market orders. Robinhood's support page does not list short selling or margin among agent capabilities, and an agent cannot transfer, stake, or lend crypto. Agent crypto trading also remains unavailable in several jurisdictions, including New York state. An agent that sells a stock at a loss and buys it back soon after can trigger the wash-sale rule. Read [how the wash-sale rule works](/guides/wash-sale-rule-explained/) before letting an agent trade the same ticker repeatedly. Robinhood also announced crypto perpetual futures alongside Agents: up to 10x leverage on Bitcoin and Ether perpetuals and 3x on other coins. Robinhood Derivatives will offer them through Bitstamp in the coming months. Futures are not on the support page's list of what agents can trade.\n\nAgent Apps, also coming soon to eligible U.S. customers, are premium third-party data subscriptions your agent can draw on, and each comes with a one-month free trial. Examples include Unusual Whales Options Trader at $30 a month, Nasdaq Investor Intelligence at $10 a month and Visual Crossing Weather Trader at $5 a month.\n\nTo set up a built-in Robinhood Agent:\n\n1. Open the Robinhood mobile app and tap the Agents tab at the top of the screen.\n2. Enter a custom name for your agent.\n3. Review and sign the account agreement and the agentic agreement.\n4. Open the dedicated agent account and transfer an initial cash deposit.\n5. Confirm that trade approvals remain toggled on to require manual order confirmation.\n6. Select your underlying AI model.\n\nTo connect an outside agent instead, Robinhood's [agentic trading overview](https://www.robinhood.com/us/en/support/articles/agentic-trading-overview/) lists three steps:\n\n1. Add Robinhood's MCP link (`https://agent.robinhood.com/mcp/trading`) to your AI client. For Claude Code, run `claude mcp add robinhood-trading --transport http https://agent.robinhood.com/mcp/trading`.\n2. Sign in to Robinhood when your AI client asks you to authenticate. Robinhood then prompts you to open a Robinhood MCP account.\n3. Follow the on-screen steps to finish opening and funding that account.\n\nBecause autonomous software can misinterpret prompts, fund this dedicated balance strictly with capital you can afford to lose. Connected external agents get read-only access to all your Robinhood accounts, including balances, account numbers and order history, but can place trades only in the agent account. You can disconnect an agent at any time from the Robinhood app.\n\nRobinhood's announcement carries two disclosures: \"You assume all risk for trades executed by AI agents.\" and \"Robinhood does not control, supervise, monitor, recommend, or audit agents.\" For a wider evaluation of account custody, SIPC limits, and institutional protections, see [whether Robinhood is safe](/guides/is-robinhood-safe/).\n\nRobinhood reports that more than 150,000 customers have opened agentic trading accounts since the May launch, and that agents use its tools almost 30 million times a day."
       },
       {
         "heading": "Robinhood Cortex Capabilities and Gold Pricing",
@@ -1451,7 +1455,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "question": "Does Robinhood allow agentic trading?",
-        "answer": "Yes, Robinhood launched an agentic trading beta on May 27, 2026, allowing customers to connect external AI agents to an official Model Context Protocol server. The feature currently supports US equity stocks. To protect your capital, agentic trades run exclusively inside a dedicated, ring-fenced sub-account that prevents external code from touching your primary investments."
+        "answer": "Yes, Robinhood launched an agentic trading beta on May 27, 2026, allowing customers to connect external AI agents to an official Model Context Protocol server. At launch it supported US stocks only; Robinhood's support page now lists long equities, options and crypto for agents. To protect your capital, agentic trades run exclusively inside a dedicated, ring-fenced sub-account that prevents external code from touching your primary investments."
       },
       {
         "question": "Is Robinhood agentic trading good?",
@@ -1468,6 +1472,18 @@ export const GUIDES: Guide[] = [
       {
         "question": "Is Robinhood Cortex free?",
         "answer": "No, Robinhood Cortex is not free because it requires an active Robinhood Gold subscription, which costs $5 per month or $50 per year. Robinhood does not charge any separate fees for running Cortex queries, generating Stock Digests, or using the conversational Trade Builder tool once you pay for Robinhood Gold."
+      },
+      {
+        "question": "What are Robinhood Agents?",
+        "answer": "Robinhood Agents are built-in artificial intelligence (AI) tools that analyze market trends, build strategies, and execute trades on a customer's behalf. Robinhood announced the feature on September 29, 2026, and says it is coming soon to eligible U.S. customers in the mobile app. Each agent operates from a dedicated, separately funded account and can trade long equities, options, and cryptocurrencies."
+      },
+      {
+        "question": "How do I connect an AI agent to Robinhood?",
+        "answer": "You connect an AI agent to Robinhood either through the built-in mobile app feature or through Robinhood's Model Context Protocol (MCP) server. For the built-in route, open the Agents tab in the mobile app, sign the required agreements, and set up a dedicated account. For external agents, add Robinhood's MCP link into supported platforms such as Claude Desktop, Claude Code, ChatGPT, Cursor, or Codex CLI to authenticate a dedicated MCP account. Trade approvals default to on for built-in Robinhood Agents, whereas external MCP accounts operate with trade approvals turned off by default."
+      },
+      {
+        "question": "Which AI agent is best for Robinhood?",
+        "answer": "Robinhood does not name a best AI agent. With the built-in agent, you can select from several models, including OpenAI GPT-Luna, which Robinhood provides for free through the end of 2026. For external options, you can connect tools like Claude, ChatGPT, Cursor, Codex, or Grok through an MCP account. If you want to approve every trade, the built-in agent does that by default; outside MCP agents start with approvals off, and other models move to token-based pricing after any free period."
       }
     ],
     "sources": [
@@ -7268,6 +7284,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "portfolio-rebalancing",
+    updated: "2026-09-30",
     title: "Portfolio Rebalancing: When and How to Do It",
     metaDescription:
       "Portfolio rebalancing keeps your asset mix on target. See calendar vs. threshold rebalancing, the tax cost in a taxable account, and a simple rule.",
@@ -7295,7 +7312,7 @@ export const GUIDES: Guide[] = [
       { question: "How often should I rebalance my portfolio?", answer: "Investor.gov describes two approaches: calendar-based (commonly every 6 or 12 months) or threshold-based (whenever an asset class drifts past a set band, often 5 percentage points). Either beats never rebalancing, but investor.gov's own guidance is that rebalancing works best done infrequently, not as a frequent trade." },
       { question: "Does rebalancing cost anything in taxes?", answer: "Not inside a 401(k), traditional IRA, or Roth IRA — those accounts have no tax consequence for buying and selling internally. In a taxable brokerage account, selling an appreciated asset to rebalance realizes a capital gain, which is taxable in the year you sell." },
       { question: "What is threshold (band) rebalancing?", answer: "Threshold rebalancing triggers a rebalance only when an asset class drifts past a percentage band you set in advance, rather than on a fixed calendar date. A common example is a 5-point band: a 60% stock target that hits 65% or falls to 55% triggers the rebalance." },
-      { question: "Can rebalancing trigger the wash sale rule?", answer: "Yes, if you sell a losing position to rebalance and buy back a substantially identical security within 30 days before or after the sale. The SEC's investor.gov confirms this disallows the tax loss you were trying to claim — wait out the window or buy a similar, non-identical fund instead." },
+      { question: "Can rebalancing trigger the wash sale rule?", answer: "Yes, if you sell a losing position to rebalance and buy back a substantially identical security within 30 days before or after the sale. The SEC's investor.gov confirms this disallows the tax loss you were trying to claim — wait out the window or buy a similar, non-identical fund instead. Our guide to [whether the wash sale window is 30 or 60 days](/guides/wash-sale-rule-explained/) walks through the dates." },
       { question: "Should I rebalance during a market downturn?", answer: "A downturn is often exactly when rebalancing matters most, since it typically means selling relatively steadier assets (like bonds) to buy stocks while they're down — the buy-low half of the discipline. Stick to your predetermined schedule or threshold rather than deciding in the moment based on headlines." },
       { question: "Do target-date funds rebalance automatically?", answer: "Yes. Target-date funds and many robo-advisors rebalance the underlying portfolio on your behalf, effectively running a threshold- or calendar-based approach automatically, which is one reason they appeal to investors who don't want to track this manually." },
       { question: "Is there a free spreadsheet or calculator to run a rebalancing threshold?", answer: "You don't need a spreadsheet to run this. The [asset allocation calculator](/portfolio/asset-allocation-calculator/) and [portfolio risk calculator](/portfolio/portfolio-risk-calculator/) do the same math for free, with no download. A worked threshold example shows exactly what to check, whether by hand or with either tool above. Say your target is 60% stocks and 40% bonds with a 5-point band, so a rebalance triggers whenever stocks hit 65% or fall to 55%. A portfolio holding $120,000 in stocks and $65,000 in bonds sits at about 64.9% stocks, just under the trigger, so it needs no action yet. Let stocks grow to $125,000 against the same $65,000 in bonds and the mix moves to about 65.8% stocks, over the band. Selling $11,000 in stocks brings the portfolio back to the 60/40 target. If you'd rather track this by hand, the same formula, stock value divided by total portfolio value, works fine in a spreadsheet too." },
@@ -9692,6 +9709,7 @@ export const GUIDES: Guide[] = [
   // register: reporter · medium: text → text · page type: explainer/spoke (1200-word floor).
   {
     slug: "portfolio-margin-and-leverage-explained",
+    updated: "2026-09-30",
     title: "Portfolio Margin and Leverage Explained",
     metaDescription:
       "How broker portfolio margin differs from Reg T, how securities-based lending works, and the leverage risk behind both, sourced from FINRA and SEC rules.",
@@ -9714,7 +9732,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "The Leverage Risk All Three Share",
-        body: "Every one of these three borrowing structures carries the same underlying danger: leverage magnifies losses in the same proportion it magnifies gains, and a forced sale during a decline locks in the loss at the worst possible moment. [Investor.gov's own bulletin on margin accounts](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-29) states that a brokerage can sell securities in a margin or portfolio margin account without contacting the account holder first if equity falls below the required maintenance level, and a client is not entitled to an extension of time to meet a margin call.\n\nPortfolio margin compounds this risk in one specific way a standard Reg T account does not. Because the requirement itself is calculated from current market volatility, a sharp market decline that triggers a margin call can simultaneously raise the margin requirement, moving the target the account holder is trying to satisfy at the same moment losses are mounting. A trader who has never faced a Reg T margin call has no reliable intuition for how much faster that dynamic can move in a portfolio margin account, and that gap is the failure mode a retail investor comparing account types tends to underestimate.",
+        body: "Every one of these three borrowing structures carries the same underlying danger: leverage magnifies losses in the same proportion it magnifies gains, and a forced sale during a decline locks in the loss at the worst possible moment. [Investor.gov's own bulletin on margin accounts](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-29) states that a brokerage can sell securities in a margin or portfolio margin account without contacting the account holder first if equity falls below the required maintenance level, and a client is not entitled to an extension of time to meet a margin call. Day traders on margin should read [whether the pattern day trader rule still exists](/guides/pattern-day-trader-rule/), since the SEC approved replacing its $25,000 minimum in April 2026.\n\nPortfolio margin compounds this risk in one specific way a standard Reg T account does not. Because the requirement itself is calculated from current market volatility, a sharp market decline that triggers a margin call can simultaneously raise the margin requirement, moving the target the account holder is trying to satisfy at the same moment losses are mounting. A trader who has never faced a Reg T margin call has no reliable intuition for how much faster that dynamic can move in a portfolio margin account, and that gap is the failure mode a retail investor comparing account types tends to underestimate.",
       },
       {
         heading: "Why ModernWallet's Portfolio Calculator Does Not Model Portfolio Margin",
@@ -13861,6 +13879,576 @@ export const GUIDES: Guide[] = [
 },
 
   ...SELF_EMPLOYED_GUIDES,
+  // ── mindmap-pass 2026-09-30-robinhood (WSJ: Robinhood AI agents) ──
+  {
+    "updated": "2026-09-30",
+    "slug": "robinhood-24-hour-trading",
+    "title": "Robinhood 24 Hour Trading Hours and Overnight Risks",
+    "metaDescription": "Robinhood 24 hour trading lets you trade select stocks five days a week. Learn the session schedule, order limits, ATS execution, and overnight risks.",
+    "h1": "Robinhood 24 Hour Trading Hours and Overnight Order Rules",
+    "cardBlurb": "A practical breakdown of how Robinhood 24 hour trading works, when orders execute, and why overnight spreads require limit prices.",
+    "introText": "Robinhood lets you trade select stocks 24 hours a day, five days a week, from Sunday at 8:00 p.m. Eastern Time (ET) to Friday at 8:00 p.m. ET. At ModernWallet, every guide we write starts from the rule you will hit first, and overnight that rule is the order type. Trading overnight requires whole-share limit orders on a curated list of securities, meaning you cannot use market orders, stop orders, or fractional shares in the middle of the night.\n\nOvernight trading lets you act on evening earnings reports or overseas news before the 9:30 a.m. ET open. Fewer buyers and sellers trade at night, so the gap between the bid and the ask is wider and your order is less likely to fill.",
+    "sections": [
+      {
+        "heading": "The 24 Hour Market Session and Daily Timetable",
+        "body": "The [Robinhood 24 Hour Market](https://robinhood.com/us/en/support/articles/24hour-market/) operates continuously from Sunday at 8:00 p.m. ET until Friday at 8:00 p.m. ET. Each weekday splits into set windows. Robinhood calls 8:00 p.m. to 4:00 a.m. ET the overnight hours; a 24 Hour Market order stays executable after 4:00 a.m., and the standard pre-market session opens at 7:00 a.m. ET.\n\nRegular exchange trading runs during normal market hours from 9:30 a.m. to 4:00 p.m. ET, while after-hours trading extends from 4:00 p.m. to 8:00 p.m. ET. According to [Robinhood extended-hours disclosures](https://cdn.robinhood.com/assets/robinhood/legal/ExtendedHoursTradingDisclosure.pdf), an overnight limit order can execute between 12:00 a.m. and 8:00 p.m. ET on a full trading day, between 12:00 a.m. and 5:00 p.m. ET on an exchange half-day, and between 8:00 p.m. and 12:00 a.m. ET on the evening before a trading day. In March 2022, Robinhood moved its [pre-market open](https://robinhood.com/us/en/newsroom/the-future-of-investing-is-24-7/) to 7:00 a.m. ET from 9:00 a.m. and extended after-hours to 8:00 p.m. ET.\n\nWhen you build an order, Robinhood requires you to select your target trading session. You can designate your limit order specifically for the regular session, extended hours, or the 24 Hour Market. Time-in-force parameters also apply: Good-for-Day (GFD) orders expire at 8:00 p.m. ET, while Good-'til-Canceled (GTC) orders remain active for up to 90 calendar days. If you are comparing extended session access across retail brokerages, our [Robinhood vs. Webull comparison](/compare/robinhood-vs-webull/) outlines how order types and trading clocks differ between platforms."
+      },
+      {
+        "heading": "Eligible Securities and Order Restrictions",
+        "body": "You cannot trade every ticker in Robinhood 24 hour trading. Robinhood restricts overnight trading to a curated list of hundreds of popular, highly traded individual stocks and exchange-traded funds (ETFs). Robinhood's [HOOD Summit 2026 announcement](https://robinhood.com/us/en/newsroom/hood-summit-2026/) describes the list as available \"across all account types,\" though the 24 Hour Market support page does not say which accounts qualify.\n\nRobinhood launched the 24 Hour Market in May 2023 with 43 stocks and ETFs and had 95 by September 2023. By March 2024, customers had traded more than [$10 billion overnight](https://robinhood.com/us/en/newsroom/robinhood-24-hour-market-reaches-10b-in-total-volume-traded-overnight/). However, strict order rules govern every overnight ticket. Robinhood accepts only whole-share limit orders in the 24 Hour Market. Market orders are not supported outside daytime hours and queue automatically for the following morning, while stop orders will not trigger or fill overnight.\n\nFractional shares are completely excluded from the 24 Hour Market. While Robinhood permits fractional trading from 7:00 a.m. to 9:30 a.m. ET and from 4:00 p.m. to 7:30 p.m. ET, fractional execution pauses between 7:30 p.m. and 8:00 p.m. ET and stays unavailable until morning. Equity options are also excluded from overnight equity trading; from October 2026, Robinhood options trading runs from 7:30 a.m. to 4:15 p.m. ET. If you trade alternative asset classes, [Robinhood weekend investing guidelines](https://robinhood.com/us/en/support/articles/investing-on-weekends/) clarify that cryptocurrency trades continuously around the clock while futures contracts trade 23 hours a day, five days a week."
+      },
+      {
+        "heading": "Order Routing and Bruce ATS Execution Mechanics",
+        "body": "When you submit a 24 Hour Market order between 8:00 p.m. and 4:00 a.m. ET, Robinhood Securities routes it to what its disclosure calls \"24H Market Makers.\" These market makers can execute your trade as principal or route the shares to an alternative trading system (ATS).\n\nRobinhood's HOOD Summit 2026 post names Bruce ATS as the alternative trading system that powers the 24 Hour Market. Overnight ATSs are not required to display their prices publicly. Robinhood's disclosure says 24 Hour Market orders may not be price protected, so your order can fill at a worse price than another venue shows at the same moment.\n\nTo prevent wild price swings from distorting execution, Robinhood applies ATS pricing bands. These bands establish hard boundaries above and below each asset's closing price from the preceding 8:00 p.m. ET close. If market sentiment moves aggressively, an order priced outside these bands cannot execute. Robinhood also notes that unfilled overnight orders may be canceled and re-routed when transitioning across session boundaries, creating brief gaps where your order is temporarily unexecutable while systems re-enter the queue."
+      },
+      {
+        "heading": "Overnight Trading Risks and Price Volatility",
+        "body": "Overnight orders carry the risks Robinhood lists for all extended-hours trading. In its extended-hours trading risk disclosures, Robinhood explicitly highlights several primary hazards: lower overall liquidity, elevated volatility, changing prices, unlinked trading venues, breaking news, and wider bid-ask spreads. Between 8:00 p.m. and 4:00 a.m. ET, fewer buyers and sellers are active, so liquidity is lower than in the day session.\n\nWith fewer orders on each side, the bid-ask spread (the gap between what buyers will pay and what sellers will accept) gets wider. Picture a stock whose buyers and sellers sat a penny apart at the 4:00 p.m. close. At 2:00 a.m. ET, the lowest ask on the ATS can sit well above that close. A limit order fills only at your price or better, so if the ask is above your limit, your order waits instead of paying it.\n\nMoreover, Robinhood reserves the right to suspend 24 Hour Market trading at any time without advance warning. If trading stops, an open overnight order may not fill, so check its status when the pre-market session opens at 7:00 a.m. ET. For newer investors evaluating entry points across platforms, our [roundup of the best investment apps for beginners](/roundup/best-investment-apps-for-beginners/) explores how standard risk protections compare across popular mobile accounts."
+      },
+      {
+        "heading": "Artificial Intelligence Agents and Overnight Trading",
+        "body": "Robinhood's AI agents follow the same overnight order rules you do. At its HOOD Summit in late September 2026, Robinhood launched AI agents that can place trades while you sleep.\n\nAn agent cannot skip the whole-share limit order requirement, nor can it bypass the pricing bands enforced by Bruce ATS. Say an agent places a buy order after a company reports earnings at night. If the price moves past the order's limit, the order will not fill. Our [guide to Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/) explains how the agents work and place orders.\n\nAgents pay the same wide overnight spread you do. Our [explainer on AI stock trading](/guides/ai-stock-trading-explained/) covers how other trading software handles orders."
+      },
+      {
+        "heading": "The Future of 24/7 Stock Trading and Exchange Approvals",
+        "body": "Round-the-clock stock market access is expanding across the financial industry. Robinhood stated in late September 2026 that weekend equity trading is coming soon, pending formal regulatory review. If regulators approve it, Robinhood customers could trade stocks on weekends, as they already can with crypto.\n\nRegulators have cleared one exchange to run an overnight session, starting in 2027. On August 7, 2026, the Securities and Exchange Commission (SEC) granted the 24X National Exchange [temporary conditional exemptive relief under Release 34-106061](https://www.sec.gov/files/rules/exorders/2026/34-106061.pdf). This regulatory relief permits 24X to operate an overnight market session from 9:00 p.m. to 4:00 a.m. ET, running Sunday through Thursday nights preceding a standard business day. The SEC relief takes effect on January 24, 2027, and extends until the implementation of broader Extended Hours Amendments or July 2, 2027.\n\nTraditional financial institutions have explored similar continuous trading frameworks. According to a [July 2025 report from Markets Media](https://www.marketsmedia.com/24-hour-u-s-equities-trading-advances), the Nasdaq targeted 24-hour trading capability for the second half of 2026, while the New York Stock Exchange parent company planned a 22-hour weekday session on NYSE Arca pending regulatory clearance. Their status in September 2026 is unverified."
+      },
+      {
+        "heading": "Practical Rules for Trading Overnight",
+        "body": "Trading overnight requires tighter risk discipline than managing positions during the normal trading day. If you choose to execute outside standard hours, always anchor your limit price close to recent trading ranges rather than reaching for distant bids. Entering aggressive limit orders into a shallow order book invites poor fills, because the absence of institutional volume leaves pricing vulnerable to momentary imbalances.\n\nKeep your overnight position sizing modest. Trying to execute large block orders during thin overnight hours will often move the ATS price against you or leave your order partially unfilled. Overnight sessions serve best as an occasional risk-management venue to react to breaking geopolitical events or evening earnings reports, rather than a primary environment for active day trading. If you trade often on margin, our [guide to the pattern day trader rule](/guides/pattern-day-trader-rule/) explains the 2026 change to day-trading margin rules.\n\nOvernight equity trading is not for long-term buy-and-hold investors, passive indexers, or anyone uncomfortable with wide pricing spreads. If you hold diversified index funds for multi-year horizons, you gain virtually nothing by trading between midnight and dawn. Our [Robinhood vs. Fidelity comparison](/compare/robinhood-vs-fidelity/) sets Robinhood's trading hours against Fidelity's. To examine platform security and insurance coverage before funding an account, review our breakdown on [whether Robinhood is safe](/guides/is-robinhood-safe/). Before you place an overnight order, compare your limit price with the current bid and ask on the Robinhood order ticket."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Robinhood allow 24 hour trading?",
+        "answer": "Yes. Robinhood offers 24 hour trading on a curated list of hundreds of stocks and ETFs from Sunday at 8:00 p.m. ET through Friday at 8:00 p.m. ET. Overnight trades must be whole-share limit orders, which Robinhood routes to 24H market makers and alternative trading systems."
+      },
+      {
+        "question": "Is there 24 hour stock trading?",
+        "answer": "Yes. Robinhood offers 24-hour weekday trading in a curated list of stocks and ETFs, routing overnight orders to market makers and alternative trading systems. The SEC has also granted the 24X National Exchange temporary relief to run an overnight session starting January 24, 2027."
+      },
+      {
+        "question": "How risky is overnight Robinhood trading?",
+        "answer": "Overnight trading carries substantial risk due to lower liquidity, wide bid-ask spreads, and elevated price volatility. Because institutional participation is limited at night, prices can swing sharply, orders may not receive price protection, and Robinhood can suspend overnight market access without prior notice."
+      },
+      {
+        "question": "Can you trade options overnight on Robinhood?",
+        "answer": "No. Options contracts cannot be traded in the Robinhood 24 Hour Market. From October 2026, Robinhood options trading runs from 7:30 a.m. to 4:15 p.m. ET, separate from the 24 Hour Market."
+      },
+      {
+        "question": "Can you buy fractional shares in the 24 Hour Market?",
+        "answer": "No. The Robinhood 24 Hour Market supports whole-share orders only. Fractional-share trading is permitted during select daytime extended hours from 7:00 a.m. to 9:30 a.m. ET and 4:00 p.m. to 7:30 p.m. ET, but pauses completely during overnight hours."
+      },
+      {
+        "question": "What time does Robinhood 24 hour trading start?",
+        "answer": "Robinhood 24 hour trading starts every week on Sunday at 8:00 p.m. ET and runs continuously until Friday at 8:00 p.m. ET. Each daily overnight cycle specifically operates from 8:00 p.m. to 4:00 a.m. ET before the morning pre-market session begins."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Robinhood Help Center, 24 Hour Market",
+        "url": "https://robinhood.com/us/en/support/articles/24hour-market/"
+      },
+      {
+        "label": "Robinhood Help Center, Extended-Hours Trading",
+        "url": "https://robinhood.com/us/en/support/articles/extendedhours-trading/"
+      },
+      {
+        "label": "Robinhood Financial, Extended Hours Trading Risk Disclosure",
+        "url": "https://cdn.robinhood.com/assets/robinhood/legal/ExtendedHoursTradingDisclosure.pdf"
+      },
+      {
+        "label": "Robinhood Newsroom, HOOD Summit 2026 Announcements",
+        "url": "https://robinhood.com/us/en/newsroom/hood-summit-2026/"
+      },
+      {
+        "label": "Robinhood Newsroom, 24 Hour Market Reaches $10B Volume",
+        "url": "https://robinhood.com/us/en/newsroom/robinhood-24-hour-market-reaches-10b-in-total-volume-traded-overnight/"
+      },
+      {
+        "label": "U.S. Securities and Exchange Commission, Order Granting 24X National Exchange Relief",
+        "url": "https://www.sec.gov/files/rules/exorders/2026/34-106061.pdf"
+      },
+      {
+        "label": "Markets Media, 24-Hour U.S. Equities Trading Advances",
+        "url": "https://www.marketsmedia.com/24-hour-u-s-equities-trading-advances"
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-30",
+    "slug": "is-robinhood-gold-worth-it",
+    "title": "Is Robinhood Gold Worth It? Break-Even Math and Rates",
+    "metaDescription": "Robinhood Gold costs $50 a year. See the break-even math on the IRA match, cash interest and free margin to decide whether it pays for itself.",
+    "h1": "Is Robinhood Gold Worth It?",
+    "cardBlurb": "Robinhood Gold costs $50 a year. Here is the break-even math across the 3% IRA match, cash APY, and margin to see if it pays for itself.",
+    "introText": "Robinhood Gold is worth its $50 annual subscription if you hit any one of four break-even points: contributing at least $2,500 a year to an IRA, holding roughly $1,389 in uninvested cash, carrying $1,000 or more on margin, or keeping $120,000 or more in a Robinhood Strategies account. If your account does not hit one of those thresholds, the perks do not offset the subscription cost and you should stay on the free tier. At ModernWallet, we track financial products by running the cash math before looking at secondary features. The core subscription gives you an extra 2 percentage points of IRA match, a variable 3.6% annual percentage yield (APY) on idle cash through the High-Yield Cash Program as of September 17, 2026, an interest-free buffer on your first $1,000 of margin, larger instant deposits, and research tools.\n\nWhether that bundle makes financial sense depends on how you use your account. A passive investor who maxes out an annual IRA contribution can easily clear the $50 annual fee through the match alone. An active trader who uses margin or keeps cash waiting for dips can clear it on interest savings. But a casual stock buyer who deposits small sums into a taxable account and carries little cash will lose money on the subscription.",
+    "sections": [
+      {
+        "heading": "When Robinhood Gold Pays for Its $50 Fee",
+        "body": "Robinhood Gold pays for itself when any single perk returns more than the $50 annual subscription cost. Each Gold perk can clear the $50 fee on its own, so the table tests them one at a time.\n\n| Benefit | What It Is Worth | Break-Even Point |\n| --- | --- | --- |\n| Extra 2% IRA Match | $20 per $1,000 contributed | $2,500 in annual IRA contributions |\n| Variable 3.6% Cash APY (as of Sept 17, 2026) | $36 per $1,000 in cash a year | Roughly $1,389 of uninvested cash |\n| $1,000 Interest-Free Margin | $52.50 a year at the variable 5.25% rate (as of Sept 17, 2026) | $1,000 carried on margin for a full year |\n| Robinhood Strategies Cap | 0.25% fee waived above $100k | $120,000 or more in managed assets |\n\nThe extra Individual Retirement Account (IRA) match is the fastest trigger for most long-term investors. Robinhood provides a 1% match on eligible contributions to all users, but Gold bumps that to 3%. That 2 percentage point bonus represents an extra $20 for every $1,000 you deposit. Once you contribute $2,500 during the tax year, that bonus hits exactly $50, which covers the annual subscription fee. You can model how those deposits compound inside a tax-sheltered account with our [Roth IRA calculator](/investing/roth-ira-calculator/).\n\nThe cash APY break-even works on uninvested money sitting in your brokerage account. Through the [Robinhood High-Yield Cash Program](https://robinhood.com/us/en/support/articles/high-yield-cash-program/), Gold subscribers earn a variable 3.6% APY as of September 17, 2026. Because 3.6% of $1,388.89 equals $50, maintaining roughly $1,389 in idle cash across the year produces enough interest to offset the annual fee. Robinhood does not publish an APY for uninvested cash held by non-Gold members on the pages checked, so this calculation measures the absolute yield generated against the $50 cost. For investors holding more cash than that, you can check competing accounts on our [roundup of the best brokerage accounts for interest on cash](/roundup/best-brokerage-accounts-for-interest-on-cash/).\n\nThe margin break-even appeals to investors who borrow against their equities. Robinhood Gold includes your first $1,000 of margin interest-free. At Robinhood's variable 5.25% rate for balances up to $50,000 (as of September 17, 2026), borrowing that first $1,000 for twelve months would normally cost $52.50 in interest. The interest waiver alone saves you $52.50, clearing the $50 annual subscription by $2.50.\n\nThe fourth path applies to Robinhood Strategies, the automated portfolio management product. Robinhood charges a 0.25% annual management fee on these accounts, but caps the fee at $250 per year for Gold members by waiving charges on balances above $100,000. Without Gold, a $200,000 Strategies balance incurs a $500 yearly fee. With Gold, you pay only the $250 cap plus the $50 subscription, saving $200 net."
+      },
+      {
+        "heading": "Robinhood Gold Billing and Cancellation",
+        "body": "Robinhood Gold costs $5 per month or $50 per year when billed annually. Choosing the annual plan saves $10 compared to paying $5 every month over a full calendar year. [Robinhood states in its billing guide](https://robinhood.com/us/en/support/articles/paying-for-robinhood-gold) that subscription charges are deducted from your individual investing account at the beginning of each billing cycle.\n\nNew subscribers can test the features using a one-time free trial for their first 30 days, as outlined on the [Robinhood Gold landing page](https://robinhood.com/us/en/gold/). If your account lacks enough buying power to cover the fee when the billing cycle rolls over, you risk an account deficit, a margin call if margin trading is turned on, or an automatic downgrade back to the standard tier.\n\nCancelling your membership is handled directly inside the mobile app. You navigate to Account (the person icon), open the Menu (three horizontal bars), select Robinhood Gold, and tap Cancel membership. According to [Robinhood's downgrading policy](https://robinhood.com/support/articles/360026472551/downgrading-from-gold), all Gold features stay active through the conclusion of your current billing period. Once that cycle concludes, perks such as the High-Yield Cash Program are disabled.\n\nTwo rules limit cancelling. First, if you opened a Robinhood Gold Credit Card, Robinhood requires you to close that credit card account before it lets you cancel your Gold membership. Second, cancelling Gold within 1 year of your first Gold IRA match triggers Robinhood's Gold cancellation IRA match removal fee, which takes back the extra 2% match. Your next billing date is shown under Account → Menu → Robinhood Gold; cancel before it to avoid another charge."
+      },
+      {
+        "heading": "The Robinhood Gold IRA Match Rules and Requirements",
+        "body": "Robinhood offers an IRA match of 3% on eligible annual retirement contributions for Gold members, compared to 1% for standard users. For 2026, Robinhood lists IRA contribution limits of $7,500 under age 50 and $8,600 at 50 and older. If you max out your IRA at $7,500, a non-Gold user earns a $75 match, while a Gold user earns a $225 match. At age 50 or older, maxing out at $8,600 yields $86 without Gold versus $258 with Gold. In both cases, the extra 2% bonus provides $150 or $172 in additional funding, which far exceeds the $50 annual membership fee.\n\nThis match comes with structural conditions detailed in the [Robinhood IRA match rules](https://robinhood.com/us/en/support/articles/ira-match-faq/). Direct account transfers from outside brokers and old 401(k) rollovers earn only a 1% match for everyone, regardless of whether you pay for Gold. Contributions from accounts managed by Robinhood Strategies are not eligible for the IRA match.\n\nKeeping the match depends on two time limits. First, matched funds must remain in your IRA for at least 5 years. Withdrawing early can trigger an early removal fee if your ending balance drops below the total matched deposit plus the earned match. Second, you must maintain an active Gold membership for at least 1 full year starting from the date of your first Gold match. If you cancel Gold before that 1-year mark, Robinhood assesses a cancellation fee equal to the extra 2% match. If your account lacks the uninvested cash to pay that charge, Robinhood reserves the right to liquidate your investment positions to recover the balance."
+      },
+      {
+        "heading": "Cash Yield and Margin Perks",
+        "body": "Under the [Robinhood cash program terms](https://robinhood.com/us/en/support/articles/cash-program-interest-rate/), Gold subscribers earn a variable 3.6% APY as of September 17, 2026. This rate is subject to change at any time based on broader market conditions. Interest compounds daily and pays out monthly into your brokerage balance. There are no minimum balance requirements or maximum deposit caps tied to earning this APY.\n\nMargin trading features a $1,000 interest-free allowance for Gold members, which applies to one account with margin investing enabled. Beyond that initial $1,000 buffer, [Robinhood charges tiered margin interest](https://robinhood.com/us/en/support/articles/margin-rates) calculated daily on settled margin balances. As of September 17, 2026, those variable rates are:\n\n- Up to $50,000: 5.25%\n- $50,000 to $100,000: 5.05%\n- $100,000 to $1,000,000: 4.75%\n- $1,000,000 to $10,000,000: 4.50%\n- $10,000,000 to $50,000,000: 4.45%\n- Above $50,000,000: 4.20%\n\nGold also raises how much of a deposit you can use instantly. As documented in [Robinhood's instant deposit guidelines](https://robinhood.com/us/en/support/articles/bigger-instant-deposits/), standard accounts get instant access to deposits up to $1,000, or 2 times their portfolio value rounded down to the nearest thousand if greater. Gold raises standard taxable brokerage limits to $5,000, or 3 times your portfolio value if greater. These larger limits do not apply to retirement accounts; IRA instant deposits remain capped at $1,000 regardless of your Gold subscription status. To evaluate how these trading terms compare across platforms, you can see our [Robinhood vs. Fidelity breakdown](/compare/robinhood-vs-fidelity/) and our [Robinhood vs. Webull comparison](/compare/robinhood-vs-webull/)."
+      },
+      {
+        "heading": "Gold Research and AI Tools",
+        "body": "Robinhood Gold includes technical market data and fundamental equity analysis designed for self-directed taxable individual and joint accounts. Subscribers receive [Level II Market Data powered by Nasdaq TotalView](https://robinhood.com/us/en/support/articles/level-ii-market-data/). This feed displays real-time depth of book with multiple bid and ask quotes. According to Robinhood's market data disclosures, this view only includes quotes submitted by Nasdaq participants, meaning it does not capture order books from other trading venues or internal Robinhood flow.\n\nFundamental research comes in the form of company reports from [Morningstar](https://robinhood.com/us/en/newsroom/nasdaq-level-2-market-data-is-here/). Robinhood first integrated Morningstar research and Nasdaq Level 2 data back in June 2019. For derivatives traders, Gold also lists a discounted index options fee of $0.35 per contract and a futures commission of $0.50 per contract.\n\nGold also includes Cortex Digests. As described in [Robinhood's Cortex documentation](https://robinhood.com/us/en/support/articles/cortex-digests/), these are AI-generated Asset Digests and Portfolio Digests written in plain language. Robinhood says these summaries are not formal research reports, recommendations, or personalized investment advice. If you are following recent platform updates regarding autonomous execution, read our guide on [Robinhood agentic trading explained](/guides/robinhood-agentic-trading-explained/). No source ties Robinhood Agents to Gold."
+      },
+      {
+        "heading": "Downsides and Restrictions of a Gold Membership",
+        "body": "The main downside to Robinhood Gold is paying recurring fees for features that sit unused. Paying $50 a year or $5 a month drains your cash balance if you do not actively take advantage of the 3% IRA match, borrow on margin, or hold sufficient uninvested cash.\n\nThe IRA match holds several structural risks. You must remain an active Gold subscriber for at least 1 full year to retain the bonus match, which commits you to at least $50 in Gold subscription fees. If you cancel early, Robinhood claws back the extra 2% match and may sell positions to cover the fee if you lack uninvested cash. Withdrawing matched funds within 5 years can trigger an early removal fee if your remaining balance falls below the matched deposit plus the match.\n\nCash and margin rates are variable. The 3.6% cash APY and 5.25% base margin rate as of September 17, 2026, can drop or rise whenever market benchmark yields shift. If the cash APY declines, your break-even cash threshold increases. Finally, subscribers who sign up for the [Robinhood Gold Card](https://robinhood.com/us/en/support/articles/robinhood-gold-card-waitlist/) face an administrative barrier: Robinhood does not allow you to cancel your Gold subscription without shutting down your Gold Card first, creating friction if you decide you no longer want the paid software membership."
+      },
+      {
+        "heading": "Who Should Get Robinhood Gold and Who Should Skip It",
+        "body": "Robinhood Gold pays for itself for four kinds of Robinhood user and costs money for everyone else. For how Robinhood's terms compare with other brokers, see our [SoFi Invest vs. Robinhood comparison](/compare/sofi-invest-vs-robinhood/) and our [Charles Schwab vs. Robinhood review](/compare/charles-schwab-vs-robinhood/).\n\nRobinhood Gold makes financial sense for:\n- IRA investors depositing $2,500 or more annually, where the extra 2% match exceeds the $50 subscription fee.\n- Savers keeping more than $1,389 in uninvested cash who want a variable 3.6% APY as of September 17, 2026, compounding daily.\n- Traders who carry $1,000 of margin all year.\n- Investors with $120,000 or more in Robinhood Strategies, where the $250 fee cap saves more than the $50 subscription.\n\nYou should skip Robinhood Gold if:\n- You invest small sums in a taxable account only.\n- You cannot commit to maintaining the Gold subscription for 12 months after receiving an IRA match.\n- You do not hold idle cash in your brokerage account and prefer to keep your emergency fund in a separate bank.\n- You are a beginner learning the basics of investing who might find Level II order books and margin unnecessary.\n\nBefore upgrading, our guide on [whether Robinhood is safe](/guides/is-robinhood-safe/) covers what protects the money in your account. The verdict changes if Robinhood lowers the Gold APY, changes the 3% IRA match, or raises the $50 price; rerun the four break-even points against the new figures. Add up your expected IRA contributions and idle cash, then compare the match and interest with the $50 fee."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/roth-ira-calculator/",
+        "label": "Roth IRA calculator"
+      },
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-yield savings calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Robinhood Gold $50 a month?",
+        "answer": "No. Robinhood Gold costs either $5 per month or $50 per year if you choose annual billing. The $50 figure represents the full annual membership cost, which saves you $10 compared to paying the $5 monthly rate for twelve months."
+      },
+      {
+        "question": "At what point is Robinhood Gold worth it?",
+        "answer": "Robinhood Gold is worth it once you reach any one of four break-even points: contributing at least $2,500 annually to an IRA, holding roughly $1,389 or more in uninvested cash at the variable 3.6% APY as of September 17, 2026, borrowing at least $1,000 on margin to save $52.50 in interest, or keeping $120,000 or more in a Robinhood Strategies account."
+      },
+      {
+        "question": "Are there any downsides to Robinhood Gold?",
+        "answer": "Yes. Downsides include paying $50 annually for unused perks, variable cash APY and margin rates that can fluctuate, a 1-year Gold membership requirement to keep the full 3% IRA match, a 5-year holding rule on matched IRA deposits, and a policy requiring you to close the Robinhood Gold Card before cancelling Gold."
+      },
+      {
+        "question": "How hard is it to cancel Robinhood Gold?",
+        "answer": "Cancelling takes a few taps inside the mobile app by going to Account, selecting Menu, choosing Robinhood Gold, and tapping Cancel membership. Your benefits run until the end of the current billing cycle. However, if you have an open Robinhood Gold Card, you must close that credit card before the app permits cancellation."
+      },
+      {
+        "question": "Is Robinhood Gold worth it for the IRA match?",
+        "answer": "Yes, provided you contribute at least $2,500 per year and plan to keep the account open for at least 12 months. Gold boosts your IRA contribution match from 1% to 3%. On a $2,500 contribution, that extra 2 percentage points equals exactly $50, fully paying for the annual subscription."
+      },
+      {
+        "question": "Does Robinhood Gold have a free trial?",
+        "answer": "Yes. Robinhood provides a one-time 30-day free trial for new Gold members. You can test features like the variable 3.6% cash APY (as of Sept 17, 2026), Nasdaq Level II quotes, and Morningstar research before your individual investing account is billed."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Robinhood, Gold Overview",
+        "url": "https://robinhood.com/us/en/support/articles/gold-overview"
+      },
+      {
+        "label": "Robinhood, Paying for Robinhood Gold",
+        "url": "https://robinhood.com/us/en/support/articles/paying-for-robinhood-gold"
+      },
+      {
+        "label": "Robinhood, Downgrading from Gold",
+        "url": "https://robinhood.com/support/articles/360026472551/downgrading-from-gold"
+      },
+      {
+        "label": "Robinhood, IRA Match FAQ",
+        "url": "https://robinhood.com/us/en/support/articles/ira-match-faq/"
+      },
+      {
+        "label": "Robinhood, Cash Program Interest Rate",
+        "url": "https://robinhood.com/us/en/support/articles/cash-program-interest-rate/"
+      },
+      {
+        "label": "Robinhood, Margin Rates",
+        "url": "https://robinhood.com/us/en/support/articles/margin-rates"
+      },
+      {
+        "label": "Robinhood, Nasdaq Level 2 Market Data Is Here",
+        "url": "https://robinhood.com/us/en/newsroom/nasdaq-level-2-market-data-is-here/"
+      },
+      {
+        "label": "Robinhood, Cortex Digests",
+        "url": "https://robinhood.com/us/en/support/articles/cortex-digests/"
+      },
+      {
+        "label": "Robinhood, Level II Market Data",
+        "url": "https://robinhood.com/us/en/support/articles/level-ii-market-data/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-30",
+    "slug": "is-robinhood-safe",
+    "title": "Is Robinhood Safe? What Protects Your Money",
+    "metaDescription": "Robinhood is SIPC-protected against broker failure up to $500,000, but not against market losses, crypto, or AI agent trades. See every limit and gap.",
+    "h1": "Is Robinhood Safe? What Protects Your Money and What Doesn't",
+    "cardBlurb": "A breakdown of SIPC limits, FDIC cash sweeps, account security rules, and where Robinhood leaves you exposed.",
+    "introText": "Robinhood is safe against Robinhood itself failing, up to [SIPC](https://www.sipc.org/for-investors/what-sipc-protects) and excess-insurance limits. Nothing covers market losses, crypto has neither SIPC nor [FDIC](https://robinhood.com/us/en/support/articles/deposit-sweep-program/) protection, and Robinhood puts the risk of AI agent trades on you. Robinhood Financial LLC and Robinhood Securities, LLC are [SEC-registered](https://files.brokercheck.finra.org/firm/firm_287900.pdf) broker-dealers and members of the Securities Investor Protection Corporation (SIPC), which protects customer assets up to $500,000, including $250,000 of cash, if either firm fails.\n\nAt ModernWallet, we judge a broker's safety by its custody protections and its regulatory record. Swept cash can receive FDIC coverage through program banks. Anyone who wants protection against investment losses will not get it from SIPC, at Robinhood or any other member firm.",
+    "sections": [
+      {
+        "heading": "Account Protections Across Robinhood Asset Types",
+        "body": "Different balances inside a Robinhood account fall under different legal frameworks. Which Robinhood entity holds a balance decides what covers it if that entity fails.\n\n| Asset Type | Primary Protection | Coverage Limit | What Is Not Covered |\n| --- | --- | --- | --- |\n| U.S. Stocks and ETFs | SIPC Protection | Up to $500,000 total | Losses from market price drops |\n| Uninvested Brokerage Cash | SIPC Protection | Up to $250,000 cash | Cash already moved to sweep banks |\n| Swept Cash | FDIC Insurance (Program Banks) | Up to $2.5M individual, $5M joint | Amounts above the limits; no SIPC once swept |\n| Excess Brokerage Balances | [Lloyd's of London policy](https://robinhood.com/us/en/support/articles/how-youre-protected/) | Up to $50M per user ($1.9M cash) | Crypto balances and market losses |\n| Cryptocurrencies | None | $0 | Market drops and Robinhood Crypto failure |\n| Futures Contracts | Not SIPC-protected | n/a | Market losses |\n| AI Agent Trades | Your risk under Robinhood's terms | None for trade outcomes | Losses from any trade an agent places |\n\nSIPC and the Lloyd's policy cover stocks, funds, and uninvested cash if Robinhood fails; crypto, futures, and the outcome of AI agent trades have no such coverage. Review our [best investment apps for beginners](/roundup/best-investment-apps-for-beginners/) guide to see how other retail platforms organize custody."
+      },
+      {
+        "heading": "SIPC Protection and Excess Insurance Coverage Limits",
+        "body": "Securities held in standard Robinhood accounts are protected by SIPC. Both Robinhood Financial LLC and Robinhood Securities, LLC maintain SIPC membership according to Robinhood's account protection disclosures. When a member brokerage firm fails financially and enters liquidation, SIPC works to restore customer cash and registered securities that were present at the start of liquidation.\n\nSIPC protection caps its statutory coverage at $500,000 per customer, which includes a maximum of $250,000 for uninvested cash claims. SIPC does not protect against a decline in the market value of your securities. If you purchase shares and their price drops to zero, SIPC provides no reimbursement. SIPC solely protects custody, stepping in when missing shares or cash cannot be recovered from a collapsing broker.\n\nRobinhood also provides supplemental excess-of-SIPC insurance underwritten by Lloyd's of London once statutory SIPC limits are exhausted. This private policy carries an aggregate limit of $1 billion across all covered accounts, with a combined per-customer limit of $50 million, including up to $1.9 million in uninvested cash. Like statutory SIPC coverage, this Lloyd's policy does not cover declines in market value."
+      },
+      {
+        "heading": "Cash Sweep Balances and FDIC Insurance Rules",
+        "body": "Under Robinhood's deposit sweep program, eligible uninvested cash moves to program banks. As of July 1, 2026, the sweep network has 15 FDIC-insured program banks.\n\nAs of January 15, 2025, swept balances qualify for FDIC insurance through program banks up to $2.5 million for individual accounts and up to $5 million for joint accounts. Any deposits you already hold at those specific partner banks in the same legal capacity count toward that maximum coverage threshold.\n\nOnce your cash moves to a program bank, it is no longer held in your Robinhood brokerage account and loses SIPC protection. Swept balances instead rely on FDIC insurance at the destination bank. If you keep cash unswept inside your primary investing account, it remains subject to standard $250,000 SIPC cash protection instead of bank FDIC insurance. You can review how this sweep compares with established institutional options in our [Charles Schwab vs. Robinhood](/compare/charles-schwab-vs-robinhood/) comparison."
+      },
+      {
+        "heading": "Cryptocurrency and AI Agent Trading Risks",
+        "body": "Cryptocurrency assets held through Robinhood Crypto carry neither SIPC nor FDIC protection. As stated by SIPC, digital asset securities that represent unregistered investment contracts do not qualify as covered securities under the Securities Investor Protection Act. If Robinhood Crypto were to suffer insolvency, your digital tokens would not be eligible for SIPC liquidation recoveries. Futures held through Robinhood Derivatives are not SIPC-protected either.\n\nRobinhood announced Robinhood Agents at its HOOD Summit, in a [newsroom post](https://robinhood.com/us/en/newsroom/hood-summit-2026/) dated September 29, 2026. Robinhood's disclosure says you assume all risk for trades executed by artificial intelligence agents and for any use of your account data by third-party large language model (LLM) providers.\n\nRobinhood explicitly states that it does not control, supervise, monitor, recommend, or audit agents. According to [Robinhood agentic trading documentation](https://robinhood.com/us/en/support/articles/agentic-trading-overview/), agents can execute orders only within a dedicated Robinhood Agentic account. Robinhood says you are 'ultimately responsible for the trades your AI agent places in your account.' For how these permissions work, read our [Robinhood agentic trading explained](/guides/robinhood-agentic-trading-explained/) analysis."
+      },
+      {
+        "heading": "Account Security Settings and the 2021 Data Incident",
+        "body": "Robinhood protects account access using BCrypt password hashing, Transport Layer Security (TLS) data encryption, and encrypted storage for sensitive user records. Robinhood added [two-factor authentication](https://robinhood.com/us/en/newsroom/two-factor-authentication/) (2FA) in September 2016, offering it as an elective user setting. To defend against unauthorized logins, Robinhood relies on [trusted devices and mobile alerts](https://robinhood.com/us/en/support/articles/trusted-devices/) that prompt you to approve or deny sign-in attempts on unrecognized hardware.\n\nIdentity verification checks can occur during suspicious logins or account profile updates. Per [Robinhood verification guidelines](https://robinhood.com/us/en/support/articles/verifying-its-you/), users may be asked to complete SMS one-time codes, bank verifications, a three-point selfie, or government identification uploads. Apple iOS 16 and newer users can also activate [Apple passkeys on Robinhood](https://robinhood.com/us/en/support/articles/passkeys/) to sign in with Face ID or Touch ID. Under the [Robinhood security guarantee](https://robinhood.com/us/en/support/articles/security-guarantee/), Robinhood states that, if you are eligible, it will reimburse direct losses from unauthorized activity, provided your own actions did not facilitate the breach.\n\nLate on November 3, 2021, an unauthorized party socially engineered a customer support employee over the phone. According to the [Robinhood data incident update](https://robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update/), the attacker obtained email addresses for about 5 million people and full names for a different group of about 2 million people. Roughly 310 individuals had their name, date of birth, and zip code exposed, and about 10 accounts suffered more extensive disclosure. Robinhood confirmed that no Social Security numbers, bank account numbers, or debit card numbers were accessed, and customers experienced no direct financial losses."
+      },
+      {
+        "heading": "Robinhood's Outage and Enforcement Record",
+        "body": "Robinhood's two broker-dealers have settled several regulatory actions over order routing, outages, and clearing operations. The [FINRA BrokerCheck report for Robinhood Financial](https://files.brokercheck.finra.org/firm/firm_165998.pdf) lists 56 regulatory events and 12 arbitrations. Robinhood Securities is registered with the SEC, one self-regulatory organization, and 53 U.S. states and territories, and is not currently suspended with any regulator.\n\nFINRA's [2021 order](https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf) records that Robinhood's website and mobile apps shut down on March 2 and 3, 2020, with a second significant outage on March 9, 2020. Beginning January 28, 2021, Robinhood Securities temporarily restricted or limited purchases of certain securities, including [GameStop Corp. and AMC Entertainment Holdings, Inc.](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000145/hood-20250331.htm) Robinhood's SEC filing attributes the restrictions to increased deposit requirements imposed by its clearinghouse. On January 29, 2021, Robinhood [said](https://robinhood.com/us/en/newsroom/what-happened-this-week/) its clearinghouse-mandated equities deposit requirements had \"increased ten-fold\" that week.\n\nOn December 17, 2020, the [SEC announced](https://www.sec.gov/newsroom/press-releases/2020-321) that Robinhood Financial agreed to pay $65 million to settle charges that it misled customers about payment for order flow from 2015 to late 2018 and failed to seek best execution. The SEC found that inferior execution prices cost customers $34.1 million in aggregate, even after commission savings. In June 2021, FINRA fined Robinhood Financial $57 million and ordered restitution of $12,598,445.16 plus interest over systems outages, false or misleading information, and options approvals. On January 13, 2025, Robinhood Securities ($33.5 million) and Robinhood Financial ($11.5 million) [agreed to pay $45 million combined](https://www.sec.gov/newsroom/press-releases/2025-5) over charges including Regulation SHO, Regulation S-P Rule 30(a), Regulation S-ID Rule 201, and recordkeeping and reporting violations. On March 7, 2025, [FINRA fined both firms $26 million and ordered $3.75 million in restitution](https://www.finra.org/media-center/newsreleases/2025/finra-orders-robinhood-financial-pay-375-million-restitution). The total was $29.75 million. The issues included market-order \"collaring\" disclosures, anti-money-laundering failures, customer identification, clearing-system supervision in January 2021, and influencer communications."
+      },
+      {
+        "heading": "Bank Account Connections and Identity Requirements",
+        "body": "Robinhood asks for your Social Security number (SSN) and identity details when you open an account, as US brokerages do to verify who you are. Robinhood says it protects that data with BCrypt password hashing, TLS encryption, and encrypted storage. Its 2021 incident exposed email addresses and names, and Robinhood said no Social Security, bank account, or debit card numbers were exposed.\n\nLinking a bank account lets you move money between that bank and Robinhood. Robinhood may ask for bank verification at login or when account details change, which makes it harder for someone else to redirect your transfers. If money moves through unauthorized activity, Robinhood's security guarantee covers direct losses for eligible customers, except where the customer's own actions made it possible. Compare how other brokers handle funding in our [Robinhood vs. Webull](/compare/robinhood-vs-webull/) and [Robinhood vs. Fidelity](/compare/robinhood-vs-fidelity/) reviews."
+      },
+      {
+        "heading": "Practical Steps for Securing Your Account",
+        "body": "To maximize security while using Robinhood, implement these defensive controls:\n\n1. Turn on two-factor authentication immediately within security settings and avoid relying solely on basic SMS delivery if passkeys are available on your device.\n2. Review your trusted devices list regularly inside the application and remove legacy tablets, phones, or web browsers you no longer use.\n3. Leave agent trade approvals on (Robinhood turns them on by default).\n4. Size any crypto you hold through Robinhood Crypto knowing it has no SIPC or FDIC coverage.\n5. Read your Robinhood statements and report any trade or transfer you did not make.\n\nConsider subscription costs and premium features in our [is Robinhood Gold worth it](/guides/is-robinhood-gold-worth-it/) breakdown, or review extended execution terms in our [Robinhood 24-hour trading](/guides/robinhood-24-hour-trading/) guide before depositing funds."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is it safe to have all my money in Robinhood?",
+        "answer": "Robinhood's coverage protects against the broker failing, not against losses. SIPC covers up to $500,000 per customer, including $250,000 of cash, and Robinhood's Lloyd's of London excess policy has a combined per-customer limit of $50 million, including up to $1.9 million in cash. Swept cash is FDIC-eligible through program banks up to $2.5 million for individual accounts. None of it covers market declines, and crypto has neither SIPC nor FDIC protection."
+      },
+      {
+        "question": "Is Robinhood safe to give SSN?",
+        "answer": "Robinhood asks for your SSN to open an account, as US brokerages do to verify identity, and says it stores sensitive data encrypted. Its 2021 incident exposed email addresses and names; Robinhood said no Social Security, bank account, or debit card numbers were exposed."
+      },
+      {
+        "question": "Can I trust Robinhood with my bank account?",
+        "answer": "Linking a bank lets Robinhood move the deposits and withdrawals you request. Robinhood may require bank verification when account details change. If money moves through unauthorized activity, Robinhood's security guarantee reimburses direct losses for eligible customers, excluding cases the customer's own actions facilitated."
+      },
+      {
+        "question": "What is the downside of using Robinhood?",
+        "answer": "The main downsides are Robinhood's record of outages, including March 2020, and several regulatory settlements over disclosures and execution quality. Crypto has no SIPC or FDIC coverage, and trades an AI agent places are your risk under Robinhood's terms."
+      },
+      {
+        "question": "Is my crypto insured on Robinhood?",
+        "answer": "No. Robinhood says crypto held through Robinhood Crypto is not SIPC- or FDIC-protected, so neither program covers a price collapse or a Robinhood Crypto failure."
+      },
+      {
+        "question": "Who is responsible if a Robinhood AI agent loses money?",
+        "answer": "You are entirely responsible for all trading losses produced by AI agents at Robinhood. Robinhood's terms state that it does not control, supervise, monitor, recommend, or audit agents, and customers assume all financial risk for orders placed in their Agentic account."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Robinhood, How You're Protected",
+        "url": "https://robinhood.com/us/en/support/articles/how-youre-protected/"
+      },
+      {
+        "label": "SIPC, What SIPC Protects",
+        "url": "https://www.sipc.org/for-investors/what-sipc-protects"
+      },
+      {
+        "label": "Robinhood, Deposit Sweep Program",
+        "url": "https://robinhood.com/us/en/support/articles/deposit-sweep-program/"
+      },
+      {
+        "label": "FINRA, BrokerCheck Report: Robinhood Financial LLC",
+        "url": "https://files.brokercheck.finra.org/firm/firm_165998.pdf"
+      },
+      {
+        "label": "FINRA, BrokerCheck Report: Robinhood Securities LLC",
+        "url": "https://files.brokercheck.finra.org/firm/firm_287900.pdf"
+      },
+      {
+        "label": "U.S. SEC, Press Release 2020-321",
+        "url": "https://www.sec.gov/newsroom/press-releases/2020-321"
+      },
+      {
+        "label": "U.S. SEC, Press Release 2025-5",
+        "url": "https://www.sec.gov/newsroom/press-releases/2025-5"
+      },
+      {
+        "label": "FINRA, AWC Order Robinhood Financial LLC (2021)",
+        "url": "https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf"
+      },
+      {
+        "label": "FINRA, Press Release: Order on Restitution and Fines (2025)",
+        "url": "https://www.finra.org/media-center/newsreleases/2025/finra-orders-robinhood-financial-pay-375-million-restitution"
+      },
+      {
+        "label": "Robinhood, Data Security Incident Update",
+        "url": "https://robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update/"
+      },
+      {
+        "label": "Robinhood, What Happened This Week (January 29, 2021)",
+        "url": "https://robinhood.com/us/en/newsroom/what-happened-this-week/"
+      },
+      {
+        "label": "Robinhood Markets, Form 10-Q for Q1 2025 (SEC EDGAR)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387925000145/hood-20250331.htm"
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-30",
+    "slug": "wash-sale-rule-explained",
+    "title": "Wash Sale Rule Window Is 30 Days Before and After a Sale",
+    "metaDescription": "The wash sale rule covers 30 days before and after a loss sale. The disallowed loss is added to your new shares' basis. Bots and AI agents can trigger it.",
+    "h1": "The Wash Sale Rule Explained",
+    "cardBlurb": "How the IRS wash sale rule works across accounts and automated trades, how basis adjustments defer disallowed losses, and when the window applies.",
+    "introText": "The wash sale rule disallows a tax deduction on an investment loss if you acquire the same or substantially identical security within 30 days before or 30 days after the sale date. That creates a window spanning 61 calendar days in total, so it is neither strictly a 30-day nor a 60-day rule in practice. In a taxable account, the disallowed loss is added to the cost basis of your replacement shares, so the deduction waits until you sell those shares.\n\nAt ModernWallet, we find that what readers get wrong most often is assuming the rule only looks forward in time. Buying replacement shares two weeks before you sell a losing lot disallows the loss just as buying them two weeks after does. Trading bots and AI agents make this easy to miss, because they can buy the stock back in a separate account without asking you.",
+    "sections": [
+      {
+        "heading": "The Mechanics of the 30-Day Window Before and After",
+        "body": "Under [Internal Revenue Code Section 1091](https://www.law.cornell.edu/uscode/text/26/1091), the statutory window begins 30 days before the date of the sale at a loss and ends 30 days after that date. Counting the day of the sale itself alongside the 30 days preceding it and the 30 days following it yields an arithmetic total of 61 days. If you execute a sale on July 15 at a capital loss, any acquisition of substantially identical assets between June 15 and August 14 can trigger the restriction.\n\nThe rule covers more transactions than direct purchases of common stock. [IRS Publication 550](https://www.irs.gov/publications/p550) establishes that entering into a contract or option to acquire substantially identical stock or securities counts as an acquisition for wash sale purposes. This includes purchasing call options or warrants on the stock you just sold at a loss. Selling bonus-award shares at a loss while receiving another award of substantially identical stock within 30 days also disallows the deduction.\n\nThe rule also reaches beyond transactions registered exclusively in your personal name. If you sell stock at a loss and your spouse buys substantially identical shares within the window, the IRS treats the transaction as a wash sale. The same restriction applies if a corporation you control purchases the replacement shares. The rule also applies under Section 1091(e) to losses on closing a short sale if you sell substantially identical stock or enter another short sale within 30 days before or after closing the position."
+      },
+      {
+        "heading": "Basis Adjustments and Holding-Period Additions",
+        "body": "When a wash sale occurs, the disallowed loss is not permanently eliminated from your taxable holdings. Publication 550 instructs you to add the disallowed dollar amount directly to the cost basis of the newly acquired replacement shares. This upward basis adjustment postpones your tax deduction until you ultimately dispose of those replacement shares in a future, unwashed transaction.\n\nPublication 550's Example 1 shows the math. Suppose you purchase 100 shares of stock X for $1,000. You later sell those 100 shares for $750, realizing a $250 loss. Within 30 days of that sale, you purchase 100 replacement shares of stock X for $800. Because the purchase falls inside the wash sale window, your $250 loss is not deductible on your current tax return. Instead, you add the $250 disallowed loss to the $800 purchase price, giving your new 100 shares an adjusted cost basis of $1,050.\n\nAlong with the basis increase, the holding period of your original stock attaches to your replacement stock. If you held the initial shares for ten months before selling at a loss, your newly acquired shares automatically inherit that ten-month period on day one. This provision helps determine whether a subsequent sale qualifies for long-term treatment as outlined in our [ordinary income vs. capital gains tax comparison](/compare/ordinary-income-vs-capital-gains-tax/)."
+      },
+      {
+        "heading": "The Facts and Circumstances of Substantially Identical Securities",
+        "body": "The tax code does not provide a mechanical, mathematical formula for what makes two financial instruments substantially identical. Publication 550 states that you must evaluate all facts and circumstances in each situation. Ordinarily, stocks or securities issued by one corporation are not considered substantially identical to those issued by an entirely separate corporation.\n\nExceptions exist when corporate structures merge or overlap. For example, securities issued by predecessor and successor corporations involved in a corporate reorganization can be treated as substantially identical under IRS scrutiny. Bonds or preferred stock are not ordinarily substantially identical to the same company's common stock. Convertible bonds or convertible preferred stock can be, depending on their relative values, price changes and other circumstances.\n\nFor mutual funds and exchange-traded funds, Publication 550 does not publish a bright-line test. Publication 550 does not say whether two funds that track the same index, such as two S&P 500 funds from different managers, are substantially identical. Because no safe-harbor list exists for fund pairs, a replacement fund that tracks a different market segment carries less doubt; our [portfolio rebalancing](/guides/portfolio-rebalancing/) guide covers choosing one."
+      },
+      {
+        "heading": "Partial Share Matching and the IRA Trap",
+        "body": "When the quantity of shares bought within the window does not match the quantity sold, Publication 550 requires a lot-by-lot matching sequence. You must match the replacement shares bought with an equal number of shares sold, starting with the earliest purchases made during the window. A wash sale on a partial position disallows only the loss attributable to the matched replacement lots.\n\nPublication 550 demonstrates this with an exact dated scenario. An investor buys 100 shares of company M on September 20, 2024, for $5,000. On December 13, 2024, the investor buys 50 shares for $2,750, and on December 20, 2024, buys 25 shares for $1,125. On January 3, 2025, the investor sells the original 100 shares for $4,000, creating an overall $1,000 loss. Because 75 shares were acquired within the preceding 30 days, the loss on 75 shares ($750) is disallowed, while the loss on the remaining 25 shares ($250) is immediately deductible. The basis of the December 13 lot increases to $3,250 ($2,750 plus $500), and the basis of the December 20 lot increases to $1,375 ($1,125 plus $250).\n\nThe rule is harsher if you buy the replacement shares in an IRA or a Roth IRA. [Revenue Ruling 2008-5](https://www.irs.gov/irb/2008-03_IRB), published in Internal Revenue Bulletin 2008-3, covers this case. If you sell stock at a loss and have your IRA or Roth IRA buy substantially identical stock within 30 days before or after the sale, the loss is disallowed under Section 1091. The individual's basis in the IRA is not increased. Because that basis does not go up, you never recover the disallowed loss."
+      },
+      {
+        "heading": "Cross-Account Trading and Autonomous Bot Execution",
+        "body": "Brokerage firms are only required to calculate and report wash sales for covered securities sharing the same CUSIP number within a single brokerage account. Under the official [Form 1099-B instructions](https://www.irs.gov/instructions/i1099b), a broker is permitted, but not required, to aggregate transactions across different accounts. If you sell a stock at a loss at one brokerage and buy it back two weeks later at another, your Form 1099-B may show no disallowed loss. Publication 550 says you still cannot deduct it.\n\nThe same gap applies when software buys for you. As explained in our breakdown of [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/), an AI agent can trade in its own account. If that agent buys a stock you sold at a loss in your main account within 30 days, you have a wash sale that your Form 1099-B may not flag.\n\nAn agent trading in the [Robinhood 24 Hour Market](/guides/robinhood-24-hour-trading/) can make that purchase overnight, before you check your account. Robo-advisors that harvest tax losses raise the same question, and our [best robo-advisors roundup](/roundup/best-robo-advisors/) covers how each handles tax-loss harvesting. You remain personally responsible for identifying and adjusting every matching trade on your return regardless of automated origin."
+      },
+      {
+        "heading": "Tax Reporting on Form 1099-B and Form 8949",
+        "body": "When a wash sale happens within a single taxable brokerage account involving identical CUSIPs, your financial institution will detail the adjustment directly on Form 1099-B. Box 1g will show the exact dollar amount of the wash sale loss disallowed.\n\nTo report these transactions accurately to the IRS, you transfer the figures to Form 8949, Sales and Other Dispositions of Capital Assets, using either Part I for short-term trades or Part II for long-term holdings. Per the [Form 8949 instructions](https://www.irs.gov/instructions/i8949), you list the details of the transaction, enter the capital \"W\" in column (f) to designate a wash sale, and write the disallowed loss as a positive number in column (g). Entering the positive number in column (g) reduces the net capital loss claimed on that trade line.\n\nIf the number in box 1g of Form 1099-B is incorrect because the repurchase happened in another account, or if a wash sale occurred that the broker did not track, you must input the correct calculation in column (g). If your actual wash sale disallowance is lower than what the broker stated, the IRS instructions require you to attach an explanatory statement to your tax return explaining why the broker figure was adjusted. Our [tax tips guide](/guides/tax-tips/) covers the records to keep before you file."
+      },
+      {
+        "heading": "Digital Asset Treatment and Pending Legislation",
+        "body": "The text of Section 1091 specifies that wash sale limitations apply to sales or trades of \"stock or securities.\" Under current federal tax guidance, the [IRS classifies digital assets as property](https://www.irs.gov/filing/digital-assets), citing Notice 2014-21. Because general property transactions follow general tax principles rather than the specific provisions of Section 1091, conventional cryptocurrencies have historically not been restricted by statutory wash sale disallowance rules.\n\nHowever, tokenized securities represent a distinct category subject to standard reporting. Under the official [Form 1099-DA instructions](https://www.irs.gov/instructions/i1099da), brokers must report disallowed wash sale losses in box 1i for transactions involving tokenized securities treated as stock or securities under Section 1091. Same-account and same-CUSIP reporting principles apply to these digital securities exactly as they do to traditional equity assets.\n\nPending federal legislation could extend the rule to most digital assets. On September 16, 2026, the House Ways and Means Committee voted 38 to 5 to approve H.R. 10357, known as the Digital Asset Tax Certainty Act, according to an [Unchained report on H.R. 10357](https://unchainedcrypto.com/house-panel-advances-crypto-tax-bill-that-would-limit-certain-loss-write-offs/). If enacted, the bill would extend wash sale rules to traded digital assets other than qualified dollar stablecoins, retroactive to sales occurring after September 14, 2026. A [Forvis Mazars analysis](https://www.forvismazars.us/forsights/2026/09/ways-means-approves-digital-asset-tax-certainty-act) notes that broader House and Senate action remains uncertain, leaving the bill as unpassed legislation rather than settled law."
+      },
+      {
+        "heading": "Mark-to-Market Elections for Qualifying Active Traders",
+        "body": "Day traders are subject to the wash sale rule unless they make a mark-to-market election. [IRS Topic 429](https://www.irs.gov/taxtopics/tc429) says traders without that election remain subject to both the capital loss limits and the wash sale rules. If you trade the same stock in and out many times, disallowed losses keep rolling into your newest shares, so your return can show taxable gains in a year your account balance fell.\n\nTo bypass these restrictions, a qualifying trader must make a formal mark-to-market election under Section 475(f) of the tax code. IRS Topic 429 confirms that traders who make a valid Section 475(f) election are not subject to wash sale rules or regular capital loss deduction limits.\n\nTrader tax status is a separate question from the [pattern day trader rule](/guides/pattern-day-trader-rule/), which is a margin rule at your broker. Publication 550 also notes that dealers in stock or securities are exempt from wash sale disallowance for losses incurred in the ordinary course of business. Talk to a tax professional before you make a Section 475(f) election."
+      },
+      {
+        "heading": "Practical Execution Tactics to Avoid Unintended Disallowance",
+        "body": "The simplest way to stay clear is to wait until the 31st day after the sale to buy back; for a July 15 sale, that is August 15. Also make no purchase of the same stock in the 30 days before the sale. If you want to stay invested in the meantime, you can buy a different holding, such as a broad fund. Publication 550 gives no test for funds, so the facts-and-circumstances standard decides whether a replacement is substantially identical.\n\nAutomatic purchases count as purchases. If a recurring buy purchases more shares of the stock within 30 days of your loss sale, the matching rule disallows the loss on that many shares, so pause recurring buys of that stock around the sale.\n\nIf you run a trading bot or an AI agent, tell it not to buy any ticker you plan to sell at a loss, from 30 days before the sale until the 31st day after it. Once that window passes, check your trade log before you let it trade the ticker again."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is the wash sale rule 30 or 60 days?",
+        "answer": "The statutory rule covers 30 days before and 30 days after your sale date, spanning an arithmetic total of 61 calendar days when including the sale day itself. Because replacement purchases made in the 30 days leading up to the sale trigger disallowance just like purchases made afterward, the rule operates over this combined two-sided window."
+      },
+      {
+        "question": "Can I sell a stock and buy it back within 30 days?",
+        "answer": "Yes, you can legally buy it back at any time, but doing so within 30 days disallows your ability to claim the capital loss on your tax return. Instead, your disallowed loss is added to the cost basis of the newly purchased shares, deferring the tax deduction until those new shares are sold in an unwashed transaction."
+      },
+      {
+        "question": "Can I claim a loss after a wash sale?",
+        "answer": "You cannot claim the loss in the tax year the wash sale occurs, but the loss is usually deferred rather than lost forever. Because the disallowed amount gets added to the replacement stock's cost basis, you will realize the tax benefit when you eventually sell the replacement position, provided that final sale is not another wash sale."
+      },
+      {
+        "question": "How do day traders avoid wash sales?",
+        "answer": "Day traders avoid wash sales by either waiting 31 calendar days before re-entering a losing position, trading completely different instruments, or qualifying for Trader Tax Status and making a Section 475(f) mark-to-market election. A valid mark-to-market election exempts qualifying traders from wash sale rules entirely under IRS Topic 429."
+      },
+      {
+        "question": "Does the wash sale rule apply to crypto?",
+        "answer": "Current tax law treats digital assets as property rather than stock or securities, so standard cryptocurrency transactions are not subject to Section 1091 wash sale rules today. However, tokenized securities are covered, and H.R. 10357, a bill approved by a House committee, would apply the rule to most digital assets sold after September 14, 2026, if enacted."
+      },
+      {
+        "question": "Does the wash sale rule apply across different brokerage accounts?",
+        "answer": "Yes. The wash sale rule applies across all your accounts, including IRAs, and to purchases by your spouse or a corporation you control. While individual brokers only report wash sales that occur within the same account for the exact same CUSIP, you are legally responsible for tracking and reporting cross-account wash sales on Form 8949."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Publication 550, Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "26 U.S. Code § 1091, Loss from Wash Sales of Stock or Securities",
+        "url": "https://www.law.cornell.edu/uscode/text/26/1091"
+      },
+      {
+        "label": "IRS Topic No. 429, Traders in Securities",
+        "url": "https://www.irs.gov/taxtopics/tc429"
+      },
+      {
+        "label": "IRS Revenue Ruling 2008-5, Internal Revenue Bulletin 2008-3",
+        "url": "https://www.irs.gov/irb/2008-03_IRB"
+      },
+      {
+        "label": "IRS Instructions for Form 1099-B",
+        "url": "https://www.irs.gov/instructions/i1099b"
+      },
+      {
+        "label": "IRS Instructions for Form 8949",
+        "url": "https://www.irs.gov/instructions/i8949"
+      },
+      {
+        "label": "IRS Instructions for Form 1099-DA",
+        "url": "https://www.irs.gov/instructions/i1099da"
+      },
+      {
+        "label": "IRS, Digital Assets",
+        "url": "https://www.irs.gov/filing/digital-assets"
+      },
+      {
+        "label": "Unchained, House Panel Advances Crypto Tax Bill",
+        "url": "https://unchainedcrypto.com/house-panel-advances-crypto-tax-bill-that-would-limit-certain-loss-write-offs/"
+      },
+      {
+        "label": "Forvis Mazars, Ways and Means Approves Digital Asset Tax Certainty Act",
+        "url": "https://www.forvismazars.us/forsights/2026/09/ways-means-approves-digital-asset-tax-certainty-act"
+      }
+    ]
+  },
+  {
+    "updated": "2026-09-30",
+    "slug": "pattern-day-trader-rule",
+    "title": "Pattern Day Trader Rule Changes in 2026",
+    "metaDescription": "FINRA replaced the pattern day trader rule and its $25,000 equity minimum with new intraday margin standards. Learn how the 2026 change affects your account.",
+    "h1": "Pattern Day Trader Rule Changes and the 2026 Intraday Standard",
+    "cardBlurb": "How FINRA's 2026 rule change replaces the $25,000 pattern day trader equity requirement with an intraday margin deficit standard.",
+    "introText": "The pattern day trader rule ended on June 4, 2026, at brokers that have switched to [FINRA's new intraday margin standards](https://www.finra.org/compliance-tools/weekly-archive/04152026), and other brokers have until October 20, 2027, to switch. At ModernWallet, every guide we write starts from the rule you will actually hit, and for day traders that rule now depends on when your broker switches. The [Securities and Exchange Commission](https://www.sec.gov/files/rules/sro/finra/2026/34-104572.pdf) approved FINRA's proposed rule change, SR-FINRA-2025-017, on April 14, 2026.\n\nThis regulatory update removes the longstanding requirement that designated day traders maintain at least $25,000 in equity and eliminates the rigid counting of day trades within a rolling five-business-day window. In place of those formulas, FINRA instituted an intraday margin deficit framework under Rule 4210(d)(2). Until then, the rules you face depend on which broker holds your margin account.",
+    "sections": [
+      {
+        "heading": "The 2026 Regulatory Change and Implementation Timeline",
+        "body": "FINRA replaced its longstanding day trading margin regime through proposed rule change SR-FINRA-2025-017, filed with the Securities and Exchange Commission on December 29, 2025. The SEC granted accelerated approval to the proposal on April 14, 2026, in Exchange Act Release No. 105226. FINRA subsequently published [Regulatory Notice 26-10](https://www.finra.org/sites/default/files/2026-04/Regulatory-Notice-26-10.pdf) on April 20, 2026, giving notice that the new intraday margin standards replace the former day trading margin requirements in their entirety.\n\nThe effective date for the new rules was June 4, 2026. However, FINRA granted firms that require additional time to adjust operational systems a phase-in window extending through October 20, 2027. During this transition window, individual broker-dealers may migrate to the new intraday margin standards immediately or continue operating under the legacy rules until the October 2027 deadline.\n\n| Regulatory Milestone | Date | Significance for Margin Traders |\n| :--- | :--- | :--- |\n| Proposed Rule Filing | December 29, 2025 | FINRA submitted SR-FINRA-2025-017 to the SEC |\n| SEC Accelerated Approval | April 14, 2026 | SEC approved the replacement of legacy day trading margin rules |\n| Regulatory Notice 26-10 | April 20, 2026 | FINRA issued operational guidance and implementation details |\n| Official Effective Date | June 4, 2026 | New intraday margin deficit standards took regulatory effect |\n| Mandatory Firm Deadline | October 20, 2027 | Final cutoff date for all broker-dealers to retire legacy PDT tracking |"
+      },
+      {
+        "heading": "Requirements Under the Former Day Trading Margin Framework",
+        "body": "The legacy framework governing day trading originated in 2001 when the SEC approved rules created by the New York Stock Exchange and the National Association of Securities Dealers. Under former FINRA Rule 4210, a day trade meant purchasing and selling, or selling and purchasing, the same security on the same day in a margin account. According to [Investor.gov educational guidance](https://www.investor.gov/introduction-investing/investing-basics/glossary/pattern-day-trader), a customer was designated as a pattern day trader upon executing four or more day trades within five business days, provided those trades made up more than 6% of the customer's total trades in that margin account over that same period.\n\nOnce tagged with the designation, a trader had to maintain a minimum account equity of $25,000 at all times before continuing to day trade. If equity fell below $25,000, the customer had to deposit enough to restore it before day trading again. Buying power under the old system equaled the account's equity at the close of the previous day, minus maintenance margin requirements, multiplied by four for equity securities.\n\nExceeding day-trading buying power produced a special maintenance margin deficiency. When an investor triggered this deficiency, the broker cut day-trading buying power from four times to two times for equity securities and issued a day-trading margin call. Customers had five business days to deposit funds to satisfy the call. A customer who missed the call could trade only on a cash-available basis for 90 days or until the call was met. Furthermore, funds deposited to satisfy pattern day trader equity requirements could not be withdrawn for at least two business days following deposit."
+      },
+      {
+        "heading": "The New Intraday Margin Standard Under Rule 4210",
+        "body": "FINRA Rule 4210(d)(2) establishes an intraday margin deficit calculation to manage exposure, retiring both the $25,000 equity hurdle and the practice of counting day trades. A brokerage firm must determine the intraday margin deficit for each customer margin account on each day with what the rule calls an \"IML-reducing transaction\". Regulatory Notice 26-10 explains that real-time calculation is not mandated across the industry; firms may instead elect to calculate the intraday margin deficit once daily, mirroring standard end-of-day maintenance margin procedures.\n\nThis framework supplements rather than replaces regular maintenance margin requirements. When an account incurs an intraday margin deficit, the account holder must resolve the deficiency as promptly as possible. The deficit remains open until satisfied or until immediately following the close of business on the 15th business day after the deficit date.\n\nTo address serial non-compliance, FINRA introduced a targeted 90-day restriction. A customer who makes a practice of failing to resolve intraday margin deficits promptly, and who fails to resolve a deficit by the close of business on the fifth business day, faces restrictions. The broker blocks that account from creating or expanding any short position or debit balance for 90 calendar days, or until the deficit is satisfied. Regulatory Notice 26-10 includes a specific deficit carve-out: deficits that do not exceed the lesser of 5% of account equity or $1,000 do not count toward making a practice of chronic deficits. For specialized accounts, customers who use [portfolio margin and leverage](/guides/portfolio-margin-and-leverage-explained/) with under $5 million in equity must maintain intraday risk margin that is substantially similar to end-of-day margin."
+      },
+      {
+        "heading": "Broker Adoption Status and Operational Differences",
+        "body": "Because brokerages have until October 20, 2027, to overhaul their internal compliance engines, rules currently differ across firms. Robinhood customer support documentation says Robinhood removed day trade restrictions, day trade calls and existing pattern day trader flags on June 4, 2026. Robinhood margin clients no longer need $25,000 in portfolio value to day trade, though Robinhood monitors margin balances in real time to prevent accounts from expanding intraday margin deficits.\n\nOther brokerages followed distinct schedules. [E*TRADE published margin guidance](https://us.etrade.com/knowledge/library/margin/pattern-day-trading-rule-change) stating that it rolled out the new intraday margin standards on June 9, 2026. E*TRADE bases intraday buying power on real-time intraday margin excess. An intraday margin deficit there is due five days after issuance, and three violations in a rolling 12 months may bring a 90-day restriction.\n\nIf you are comparing brokers, as in [Robinhood vs. Fidelity](/compare/robinhood-vs-fidelity/) or [Robinhood vs. Webull](/compare/robinhood-vs-webull/), ask each one whether it has switched. A broker that has not switched may still designate you a pattern day trader after four or more day trades in five business days (if they exceed 6% of your trades) and require $25,000 in equity to keep day trading."
+      },
+      {
+        "heading": "Cash Accounts and Federal Settlement Rules",
+        "body": "Cash accounts were never subject to the pattern day trader rule, and the 2026 FINRA rule change does not alter how cash accounts operate. A cash account requires investors to pay for all securities purchases in full without borrowing from the broker-dealer.\n\nCash account day trading remains governed by Regulation T. According to [SEC guidance on cash transactions](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-9), buying and then selling a security before paying for it constitutes freeriding. Freeriding violates Regulation T and may require the broker to freeze the account for 90 days; during the freeze you can still buy, but you must pay in full on the trade date.\n\nAdditionally, [FINRA investor education publications](https://www.finra.org/investors/insights/frequent-intraday-trading) outline good faith violations. A good faith violation takes place when an investor purchases a security using unsettled funds from a recent sale and then sells that newly purchased security before the original purchase funds have fully settled."
+      },
+      {
+        "heading": "Automated Systems and Algorithmic Trading Orders",
+        "body": "Dropping the day-trade count matters most for trading bots and AI agents, which can make many round trips in a day. Under the old rule, a bot's fourth day trade within five business days (if day trades were over 6% of the account's trades) made the account a pattern day trader, and below $25,000 in equity it could not keep day trading.\n\nAt a broker that has switched, the number of trades no longer triggers anything. The new standard asks whether the positions an agent opens during the day leave an intraday margin deficit, and Robinhood says it monitors accounts in real time to stop activity that would create or increase one. Our guide to [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/) explains how the agents place trades. If an agent also trades in the [Robinhood 24 Hour Market](/guides/robinhood-24-hour-trading/), its orders land in thinner overnight trading, so leave room in your margin equity for a price move."
+      },
+      {
+        "heading": "Unchanged Requirements and Continuing Risks",
+        "body": "Several rules did not change. The $2,000 minimum equity for any margin account still applies. [FINRA Rule 4210(b)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210) has long mandated that customer margin accounts maintain at least $2,000 in equity to borrow funds or trade on margin. This baseline $2,000 rule was not created by the 2026 intraday reform, and individual brokerages retain the authority to set higher house minimums.\n\nTax obligations and structural risks also remain completely unaltered by the 2026 rule revision. Frequent intraday trading generates short-term capital gains, which are taxed at regular marginal rates rather than preferential long-term rates. Our [ordinary income vs. capital gains tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison shows the rate difference. Furthermore, rapidly closing and reopening positions in the same stock can trigger tax adjustments under the [wash sale rule](/guides/wash-sale-rule-explained/), which defers loss deductions on repurchased assets.\n\nDay trading on margin can lose money quickly, and the new standard does not change that. Robinhood's rules are on its [pattern day trading support page](https://robinhood.com/us/en/support/articles/pattern-day-trading/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does the pattern day trading rule still exist?",
+        "answer": "The pattern day trader rule has been officially replaced under FINRA Rule 4210 with a new intraday margin deficit framework. However, because brokerages have until October 20, 2027, to implement the changes, the legacy rule may still apply at brokerages that have not yet updated their internal compliance systems."
+      },
+      {
+        "question": "When did the pattern day trader rule change?",
+        "answer": "The SEC approved FINRA proposed rule change SR-FINRA-2025-017 on April 14, 2026. The new intraday margin standards took effect on June 4, 2026, following the release of FINRA Regulatory Notice 26-10."
+      },
+      {
+        "question": "Does Robinhood still have the pattern day trader rule?",
+        "answer": "No. Robinhood says it removed day trade restrictions, day trade calls and existing pattern day trader flags from margin accounts on June 4, 2026. Robinhood margin traders no longer need a $25,000 portfolio value to execute intraday trades, though the standard $2,000 margin equity minimum still applies."
+      },
+      {
+        "question": "Do I still need $25,000 to day trade?",
+        "answer": "You do not need $25,000 if your brokerage has implemented the new FINRA intraday margin standards. You only need to maintain sufficient equity to satisfy your broker's intraday margin requirements and the longstanding $2,000 baseline margin equity requirement. If your broker has not yet updated its systems, it may enforce the $25,000 minimum until October 20, 2027."
+      },
+      {
+        "question": "Does the PDT rule apply to cash accounts?",
+        "answer": "No. The pattern day trader rule never applied to cash accounts, and the 2026 update applies only to margin accounts. Regulation T prohibits freeriding in a cash account, and FINRA warns that selling a security bought with unsettled funds can cause a good faith violation."
+      },
+      {
+        "question": "What replaced the pattern day trader rule?",
+        "answer": "FINRA replaced the legacy framework with an intraday margin deficit standard under Rule 4210(d)(2). Instead of monitoring trade counts, brokerages now measure whether intraday activity creates an intraday margin deficit, with specific restrictions applied if chronic deficits go unresolved."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC Notice of Filing, SR-FINRA-2025-017 (Release No. 34-104572)",
+        "url": "https://www.sec.gov/files/rules/sro/finra/2026/34-104572.pdf"
+      },
+      {
+        "label": "FINRA Regulatory Notice 26-10, Intraday Margin Standards",
+        "url": "https://www.finra.org/sites/default/files/2026-04/Regulatory-Notice-26-10.pdf"
+      },
+      {
+        "label": "FINRA Weekly Rule Filing Update, April 15, 2026",
+        "url": "https://www.finra.org/compliance-tools/weekly-archive/04152026"
+      },
+      {
+        "label": "FINRA Rule 4210, Margin Requirements",
+        "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210"
+      },
+      {
+        "label": "FINRA Investor Insights, Frequent and Intraday Trading",
+        "url": "https://www.finra.org/investors/insights/frequent-intraday-trading"
+      },
+      {
+        "label": "Investor.gov Glossary, Pattern Day Trader",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/pattern-day-trader"
+      },
+      {
+        "label": "Investor.gov Investor Bulletin, Trading in Cash Accounts",
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-9"
+      },
+      {
+        "label": "Robinhood Support, Pattern Day Trading",
+        "url": "https://robinhood.com/us/en/support/articles/pattern-day-trading/"
+      },
+      {
+        "label": "E*TRADE Margin Education, Pattern Day Trading Rule Change",
+        "url": "https://us.etrade.com/knowledge/library/margin/pattern-day-trading-rule-change"
+      }
+    ]
+  }
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));

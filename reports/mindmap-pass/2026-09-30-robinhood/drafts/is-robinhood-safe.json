@@ -1,0 +1,122 @@
+{
+  "slug": "is-robinhood-safe",
+  "title": "Is Robinhood Safe? What Protects Your Money",
+  "metaDescription": "Is Robinhood safe? Learn how SIPC insurance, FDIC cash sweeps, account security, and regulatory history protect your assets, plus where the real risks lie.",
+  "h1": "Is Robinhood Safe? What Protects Your Money and What Doesn't",
+  "cardBlurb": "A complete breakdown of SIPC limits, FDIC cash sweeps, account security rules, and where Robinhood leaves you exposed.",
+  "introText": "Robinhood is safe from broker failure for standard stock and fund holdings, but it provides no protection against market losses, excludes cryptocurrency from coverage, and assigns all financial responsibility for automated trades to you. Robinhood Financial LLC and Robinhood Securities, LLC are registered broker-dealers subject to oversight by the U.S. Securities and Exchange Commission (SEC) and the Financial Industry Regulatory Authority (FINRA). Standard brokerage accounts carry protection through the Securities Investor Protection Corporation (SIPC), which protects customer assets up to $500,000 if the firm fails.\n\nAt ModernWallet, we evaluate trading platforms by looking at legal custody safeguards and regulatory histories rather than brand marketing. Swept cash can receive Federal Deposit Insurance Corporation (FDIC) coverage through partner banks. However, crypto assets held through Robinhood Crypto lack both SIPC and FDIC coverage, and trading using artificial intelligence (AI) agents operates strictly at your own financial risk.",
+  "sections": [
+    {
+      "heading": "Account Protections across Robinhood Asset Types",
+      "body": "Different balances inside a Robinhood account fall under different legal frameworks. Knowing which entity holds your balance determines which federal or private program protects it if an outage, fraud, or liquidation takes place.\n\n| Asset Type | Primary Protection | Coverage Limit | What Is Not Covered |\n| --- | --- | --- | --- |\n| U.S. Stocks and ETFs | SIPC Protection | Up to $500,000 total | Losses from market price drops |\n| Uninvested Brokerage Cash | SIPC Protection | Up to $250,000 cash | Cash already moved to sweep banks |\n| Swept Cash | FDIC Insurance (Program Banks) | Up to $2.5M individual, $5M joint | Direct Robinhood entity insolvency |\n| Excess Brokerage Balances | Lloyd's of London Policy | Up to $50M per user ($1.9M cash) | Crypto balances and market losses |\n| Cryptocurrencies | None | $0 | Market drops, fraud, entity failure |\n| Futures Contracts | None | $0 | Product losses and market swings |\n| AI Agent Trades | None (User Assumes All Risk) | $0 | Erroneous, automated, or bad trades |\n\nThis breakdown reveals that traditional brokerage holdings enjoy standard federal safeguards. In contrast, cryptocurrency and experimental execution tools operate without statutory safety nets. Review our [best investment apps for beginners](/roundup/best-investment-apps-for-beginners/) guide to see how other retail platforms organize custody."
+    },
+    {
+      "heading": "SIPC Protection and Excess Insurance Coverage Limits",
+      "body": "Securities held in standard Robinhood accounts are protected by the [Securities Investor Protection Corporation](https://www.sipc.org/for-investors/what-sipc-protects). Both Robinhood Financial LLC and Robinhood Securities, LLC maintain SIPC membership according to [Robinhood's account protection disclosures](https://robinhood.com/us/en/support/articles/how-youre-protected/). When a member brokerage firm fails financially and enters liquidation, SIPC works to restore customer cash and registered securities that were present at the start of liquidation.\n\nSIPC protection caps its statutory coverage at $500,000 per customer, which includes a maximum of $250,000 for uninvested cash claims. It is essential to recognize that SIPC does not protect against a decline in the market value of your securities. If you purchase shares and their price drops to zero, SIPC provides no reimbursement. SIPC solely protects custody, stepping in when missing shares or cash cannot be recovered from a collapsing broker.\n\nRobinhood also provides supplemental excess-of-SIPC insurance underwritten by Lloyd's of London once statutory SIPC limits are exhausted. This private policy carries an aggregate limit of $1 billion across all covered accounts, with an individual customer limit of $50 million in securities and up to $1.9 million in cash. Like statutory SIPC coverage, this Lloyd's policy does not cover declines in market value."
+    },
+    {
+      "heading": "Cash Sweep Balances and FDIC Insurance Rules",
+      "body": "Uninvested cash inside your brokerage account is treated differently depending on whether you participate in Robinhood's deposit sweep program. Under the [Robinhood deposit sweep program](https://robinhood.com/us/en/support/articles/deposit-sweep-program/), eligible uninvested cash is automatically routed into interest-bearing accounts across a network of partner institutions. As of July 1, 2026, this sweep network includes 15 FDIC-insured institutions, such as Goldman Sachs Bank USA, Wells Fargo, Citibank, U.S. Bank, and Truist Bank.\n\nSwept balances qualify for FDIC insurance up to $2.5 million for individual accounts and up to $5 million for joint accounts. These caps apply across the entire program bank network, subject to each individual bank's standard $250,000 deposit limit. Any deposits you already hold at those specific partner banks in the same legal capacity count toward that maximum coverage threshold.\n\nA critical custody rule applies to swept funds: once your cash moves to a program bank, it is no longer held in your Robinhood brokerage account and loses SIPC protection. Swept balances instead rely on pass-through FDIC insurance at the destination bank. If you keep cash unswept inside your primary investing account, it remains subject to standard $250,000 SIPC cash protection instead of bank FDIC insurance. You can review how this sweep compares with established institutional options in our [Charles Schwab vs. Robinhood](/compare/charles-schwab-vs-robinhood/) comparison."
+    },
+    {
+      "heading": "Cryptocurrency and AI Agent Trading Risks",
+      "body": "Cryptocurrency assets held through Robinhood Crypto carry neither SIPC nor FDIC protection. As stated by SIPC, digital asset securities that represent unregistered investment contracts do not qualify as covered securities under the Securities Investor Protection Act. If Robinhood Crypto were to suffer insolvency, your digital tokens would not be eligible for SIPC liquidation recoveries. Derivatives and futures contracts held through Robinhood Derivatives are likewise excluded from SIPC coverage.\n\nAlgorithmic and automated trading introduces another major liability boundary. At its HOOD Summit, according to the [Robinhood newsroom announcement](https://robinhood.com/us/en/newsroom/hood-summit-2026/), the firm introduced Robinhood Agents. Platform legal terms stipulate that you assume all risk for trades executed by artificial intelligence agents and for any use of your account data by third-party large language model (LLM) providers.\n\nRobinhood explicitly states that it does not control, supervise, monitor, recommend, or audit agents. According to [Robinhood agentic trading documentation](https://robinhood.com/us/en/support/articles/agentic-trading-overview/), agents can execute orders only within a dedicated Robinhood Agentic account. You remain solely responsible for any orders your automated agent submits or fills. For an in-depth breakdown of these execution permissions, read our [Robinhood agentic trading explained](/guides/robinhood-agentic-trading-explained/) analysis."
+    },
+    {
+      "heading": "Account Security Settings and the 2021 Data Incident",
+      "body": "Robinhood protects account access using BCrypt password hashing, Transport Layer Security (TLS) data encryption, and encrypted storage for sensitive user records. The company rolled out [two-factor authentication](https://robinhood.com/us/en/newsroom/two-factor-authentication/) (2FA) in September 2016, offering it as an elective user setting. To defend against unauthorized logins, Robinhood relies on [trusted devices and mobile alerts](https://robinhood.com/us/en/support/articles/trusted-devices/) that prompt you to approve or deny sign-in attempts on unrecognized hardware.\n\nIdentity verification checks can occur during suspicious logins or account profile updates. Per [Robinhood verification guidelines](https://robinhood.com/us/en/support/articles/verifying-its-you/), users may be asked to complete SMS one-time codes, bank verifications, three-point video selfies, or government identification uploads. Apple iOS 16 and newer users can also activate [Apple passkeys on Robinhood](https://robinhood.com/us/en/support/articles/passkeys/) to sign in with Face ID or Touch ID. Under the [Robinhood security guarantee](https://robinhood.com/us/en/support/articles/security-guarantee/), Robinhood states it will reimburse direct losses from unauthorized activity, provided your own actions did not facilitate the breach.\n\nSecurity protocols were tested on November 3, 2021, when an unauthorized attacker socially engineered a customer support employee over the phone. According to the [Robinhood data incident update](https://robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update/), the intruder accessed approximately 5 million email addresses and about 2 million customer names. Roughly 310 individuals had their name, date of birth, and zip code exposed, and about 10 accounts suffered more extensive disclosure. Robinhood confirmed that no Social Security numbers, bank account numbers, or payment card numbers were accessed, and customers experienced no direct financial losses."
+    },
+    {
+      "heading": "Regulatory Fines and Past Trading Halts",
+      "body": "Robinhood has faced substantial regulatory enforcement actions tied to order routing, platform stability, and clearing operations. Public records from the [Robinhood Financial FINRA BrokerCheck report](https://files.brokercheck.finra.org/firm/firm_165998.pdf) show 56 regulatory events and 12 arbitrations. Its sister clearing entity, profiled in the [Robinhood Securities FINRA BrokerCheck report](https://files.brokercheck.finra.org/firm/firm_287900.pdf), remains registered with the SEC and FINRA across 53 states and territories.\n\nOutages and order restrictions have previously interrupted user access during high-volatility events. FINRA documentation details that Robinhood's mobile applications and website crashed on March 2 and March 3, 2020, followed by another outage on March 9, 2020. Later, on January 28, 2021, Robinhood Securities temporarily restricted customer purchases of volatile meme stocks, including GameStop Corp. and AMC Entertainment Holdings, Inc. According to [Robinhood SEC filings](https://www.sec.gov/Archives/edgar/data/1783879/000178387925000145/hood-20250331.htm), the National Securities Clearing Corporation (NSCC) increased clearinghouse equity deposit requirements ten-fold, forcing the platform to curb buying while meeting collateral obligations.\n\nFederal and industry regulators have penalized Robinhood through major financial settlements. In December 2020, the [SEC announced a $65 million settlement](https://www.sec.gov/newsroom/press-releases/2020-321) regarding misleading payment for order flow statements from 2015 through 2018, which caused $34.1 million in customer execution price harm. In June 2021, a [FINRA Letter of Acceptance, Waiver, and Consent](https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf) imposed a $57 million fine and ordered $12,598,445.16 in customer restitution over outages, communications, and options approvals. In January 2025, the [SEC issued a $45 million penalty](https://www.sec.gov/newsroom/press-releases/2025-5) across Robinhood Securities and Robinhood Financial over short-sale and recordkeeping rules. In March 2025, [FINRA ordered $29.75 million in penalties and restitution](https://www.finra.org/media-center/newsreleases/2025/finra-orders-robinhood-financial-pay-375-million-restitution) concerning order collaring, supervisory systems, and anti-money laundering controls."
+    },
+    {
+      "heading": "Bank Account Connections and Identity Requirements",
+      "body": "Opening an account with an SEC-registered broker requires submitting your Social Security number (SSN) and verifiable personal details. Federal financial regulations, including the USA PATRIOT Act and FINRA customer identification rules, obligate brokerages to confirm taxpayer identity and monitor anti-money laundering records before opening trading accounts.\n\nRobinhood relies on Automated Clearing House (ACH) network connections to transfer funds to and from external bank accounts. When you link a checking or savings account, the platform requests banking credentials or account routing details to process electronic deposits and withdrawals. Under federal banking regulations, ACH debits require customer authorization before funds move.\n\nRobinhood cannot arbitrarily pull funds from your checking account without an explicit user deposit request or an active recurring deposit schedule. If you wish to minimize account linkage exposure, verify your active recurring transfers inside the mobile app settings. Compare how other retail brokers handle funding and cash management in our [Robinhood vs. Webull](/compare/robinhood-vs-webull/) and [Robinhood vs. Fidelity](/compare/robinhood-vs-fidelity/) reviews."
+    },
+    {
+      "heading": "Practical Steps for Securing Your Account",
+      "body": "Retail accounts are most frequently compromised through credential stuffing, phishing, or poor password hygiene rather than direct broker database intrusions. To maximize security while using Robinhood, implement these defensive controls:\n\n1. Turn on two-factor authentication immediately within security settings and avoid relying solely on basic SMS delivery if passkeys are available on your device.\n2. Review your trusted devices list regularly inside the application and remove legacy tablets, phones, or web browsers you no longer use.\n3. Keep trade confirmation prompts activated if you experiment with automated execution tools or agent accounts.\n4. Avoid keeping speculative cryptocurrency holdings in custodial trading apps without dedicated insurance frameworks.\n5. Monitor monthly clearing statements from Robinhood Securities to verify that your transaction history matches your actual trading activity.\n\nEvaluating platform stability helps clarify whether Robinhood fits your portfolio objectives. Consider subscription costs and premium features in our [is Robinhood Gold worth it](/guides/is-robinhood-gold-worth-it/) breakdown, or review extended execution terms in our [Robinhood 24-hour trading](/guides/robinhood-24-hour-trading/) guide before depositing funds."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/",
+      "label": "Investment calculators"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is it safe to have all my money in Robinhood?",
+      "answer": "Keeping your entire net worth in Robinhood exposes you to operational bottlenecks and strict coverage caps. Standard stocks and cash receive SIPC protection up to $500,000, while swept cash qualifies for FDIC insurance up to $2.5 million through partner banks. However, holding large uninsured crypto positions or facing sudden trading halts during market volatility can trap your capital."
+    },
+    {
+      "question": "Is Robinhood safe to give SSN?",
+      "answer": "Yes, Robinhood is an SEC-registered broker legally required by federal laws to collect and verify your Social Security number before opening an investing account. Robinhood stores sensitive taxpayer data using encryption protocols. The 2021 social engineering incident did not expose Social Security numbers or banking information."
+    },
+    {
+      "question": "Can I trust Robinhood with my bank account?",
+      "answer": "Robinhood uses encrypted connections and standard Automated Clearing House transfer protocols to link bank accounts. The platform cannot initiate ACH withdrawals without your instruction, authorization, or scheduled recurring transfer. If an unauthorized transfer ever occurs, federal electronic banking rules protect consumers who report errors promptly."
+    },
+    {
+      "question": "What is the downside of using Robinhood?",
+      "answer": "The primary downsides include a history of platform crashes during heavy trading volumes, a series of regulatory fines regarding execution quality and disclosures, and total lack of insurance on cryptocurrency holdings. Furthermore, automated trades placed via AI agents are executed entirely at the account holder's personal financial risk."
+    },
+    {
+      "question": "Is my crypto insured on Robinhood?",
+      "answer": "No, cryptocurrency held through Robinhood Crypto is not covered by SIPC or FDIC insurance. Digital assets are not categorized as protected securities under federal investor protection statutes, meaning you receive zero government coverage if an asset collapses or an entity liquidates."
+    },
+    {
+      "question": "Who is responsible if a Robinhood AI agent loses money?",
+      "answer": "You are entirely responsible for all trading losses produced by AI agents on the platform. Robinhood's terms state that the firm does not control, supervise, monitor, recommend, or audit agents, and customers assume all financial risk for orders placed in their Agentic account."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Robinhood, How You're Protected",
+      "url": "https://robinhood.com/us/en/support/articles/how-youre-protected/"
+    },
+    {
+      "label": "SIPC, What SIPC Protects",
+      "url": "https://www.sipc.org/for-investors/what-sipc-protects"
+    },
+    {
+      "label": "Robinhood, Deposit Sweep Program",
+      "url": "https://robinhood.com/us/en/support/articles/deposit-sweep-program/"
+    },
+    {
+      "label": "FINRA, BrokerCheck Report: Robinhood Financial LLC",
+      "url": "https://files.brokercheck.finra.org/firm/firm_165998.pdf"
+    },
+    {
+      "label": "FINRA, BrokerCheck Report: Robinhood Securities LLC",
+      "url": "https://files.brokercheck.finra.org/firm/firm_287900.pdf"
+    },
+    {
+      "label": "U.S. SEC, Press Release 2020-321",
+      "url": "https://www.sec.gov/newsroom/press-releases/2020-321"
+    },
+    {
+      "label": "U.S. SEC, Press Release 2025-5",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-5"
+    },
+    {
+      "label": "FINRA, AWC Order Robinhood Financial LLC (2021)",
+      "url": "https://www.finra.org/sites/default/files/2021-06/robinhood-financial-awc-063021.pdf"
+    },
+    {
+      "label": "FINRA, Press Release: Order on Restitution and Fines (2025)",
+      "url": "https://www.finra.org/media-center/newsreleases/2025/finra-orders-robinhood-financial-pay-375-million-restitution"
+    },
+    {
+      "label": "Robinhood, Data Security Incident Update",
+      "url": "https://robinhood.com/us/en/newsroom/robinhood-announces-data-security-incident-update/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -1,0 +1,49 @@
+{
+ "slug": "robinhood-24-hour-trading",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2170,
+ "floor": 1200,
+ "input_tokens": 21522,
+ "output_tokens": 4198,
+ "thinking_tokens": 1294,
+ "cached_tokens": 17752,
+ "est_cost_usd": 0.0268,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2170,
+  "numbers_not_in_facts": [
+   "100.5",
+   "103",
+   "97",
+   "99.99"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18170
+  }
+ },
+ "seconds": 24.6,
+ "response_id": "zYm9arbSJIjnz7IP9JeB2Qs",
+ "generated_at": "2026-09-30T17:15:00-0500"
+}

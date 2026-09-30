@@ -1,0 +1,126 @@
+{
+  "slug": "wash-sale-rule-explained",
+  "title": "Wash Sale Rule Explained: 30 or 60 Days?",
+  "metaDescription": "Learn how the wash sale rule works, why the window spans 30 days before and after a sale, how basis adjustments defer losses, and what automated trading changes.",
+  "h1": "The Wash Sale Rule Explained",
+  "cardBlurb": "How the IRS wash sale rule works across accounts and automated trades, how basis adjustments defer disallowed losses, and when the window applies.",
+  "introText": "The wash sale rule disallows a tax deduction on an investment loss if you acquire the same or substantially identical security within 30 days before or 30 days after the sale date. That creates a window spanning 61 calendar days in total, so it is neither strictly a 30-day nor a 60-day rule in practice. When the rule triggers, your loss is not wiped out forever in a standard taxable account. Instead, the disallowed loss gets added to the cost basis of your replacement shares, postponing your tax deduction until you eventually sell that new block of stock.\n\nAt ModernWallet, we find that what readers get wrong most often is assuming the rule only looks forward in time. Buying replacement shares two weeks before you sell an existing losing lot triggers the exact same wash sale disallowance as buying them two weeks after. A growing challenge comes from automated portfolio sweeps, dividend reinvestments, and autonomous trading bots that buy assets back into separate accounts without active manual approval.",
+  "sections": [
+    {
+      "heading": "The Mechanics of the 30-Day Window Before and After",
+      "body": "Under [Internal Revenue Code Section 1091](https://www.law.cornell.edu/uscode/text/26/1091), the statutory window begins 30 days before the date of the sale at a loss and ends 30 days after that date. Counting the day of the sale itself alongside the 30 days preceding it and the 30 days following it yields an arithmetic total of 61 days. If you execute a sale on July 15 at a capital loss, any acquisition of substantially identical assets between June 15 and August 14 can trigger the restriction.\n\nThe rule covers more transactions than direct purchases of common stock. [IRS Publication 550](https://www.irs.gov/publications/p550) establishes that entering into a contract or option to acquire substantially identical stock or securities counts as an acquisition for wash sale purposes. This includes purchasing call options or warrants on the stock you just sold at a loss. Selling bonus-award shares at a loss while receiving another award of substantially identical stock within 30 days also disallows the deduction.\n\nThe rule also reaches beyond transactions registered exclusively in your personal name. If you sell stock at a loss and your spouse buys substantially identical shares within the window, the IRS treats the transaction as a wash sale. The same restriction applies if a corporation you control purchases the replacement shares. The rule also applies under Section 1091(e) to losses on closing a short sale if you sell substantially identical stock or enter another short sale within 30 days before or after closing the position."
+    },
+    {
+      "heading": "Basis Adjustments and Holding-Period Additions",
+      "body": "When a wash sale occurs, the disallowed loss is not permanently eliminated from your taxable holdings. Publication 550 instructs you to add the disallowed dollar amount directly to the cost basis of the newly acquired replacement shares. This upward basis adjustment postpones your tax deduction until you ultimately dispose of those replacement shares in a future, unwashed transaction.\n\nPublication 550 illustrates this mechanism through a clear dated example. Suppose you purchase 100 shares of stock X for $1,000. You later sell those 100 shares for $750, realizing a $250 loss. Within 30 days of that sale, you purchase 100 replacement shares of stock X for $800. Because the purchase falls inside the wash sale window, your $250 loss is not deductible on your current tax return. Instead, you add the $250 disallowed loss to the $800 purchase price, giving your new 100 shares an adjusted cost basis of $1,050.\n\nAlong with the basis increase, the holding period of your original stock attaches to your replacement stock. If you held the initial shares for ten months before selling at a loss, your newly acquired shares automatically inherit that ten-month period on day one. This provision helps determine whether a subsequent sale qualifies for long-term treatment as outlined in our [ordinary income vs. capital gains tax comparison](/compare/ordinary-income-vs-capital-gains-tax/)."
+    },
+    {
+      "heading": "The Facts and Circumstances of Substantially Identical Securities",
+      "body": "The tax code does not provide a mechanical, mathematical formula for what makes two financial instruments substantially identical. Publication 550 states that you must evaluate all facts and circumstances in each situation. Ordinarily, stocks or securities issued by one corporation are not considered substantially identical to those issued by an entirely separate corporation.\n\nExceptions exist when corporate structures merge or overlap. For example, securities issued by predecessor and successor corporations involved in a corporate reorganization can be treated as substantially identical under IRS scrutiny. Similarly, preferred stock or corporate bonds from a company are not ordinarily substantially identical to common stock of that same company, but convertible bonds or convertible preferred shares may qualify as substantially identical if they trade at relative values and price movements tied directly to the underlying common stock.\n\nFor mutual funds and exchange-traded funds, Publication 550 does not publish a bright-line test. The IRS has not issued definitive public rulings stating whether two funds tracking identical or overlapping market indexes, such as two separate funds tracking the S&P 500 from competing fund managers, qualify as substantially identical. Because no official safe-harbor list exists for fund pairs, conservative investors frequently choose replacement funds benchmarked to completely different market segments or asset classes when executing a [portfolio rebalancing](/guides/portfolio-rebalancing/) plan."
+    },
+    {
+      "heading": "Partial Share Matching and the Permanent IRA Penalty",
+      "body": "When the quantity of shares bought within the window does not match the quantity sold, Publication 550 requires a lot-by-lot matching sequence. You must match the replacement shares bought with an equal number of shares sold, starting with the earliest purchases made during the window. A wash sale on a partial position disallows only the loss attributable to the matched replacement lots.\n\nPublication 550 demonstrates this with an exact dated scenario. An investor buys 100 shares of company M on September 20, 2024, for $5,000. On December 13, 2024, the investor buys 50 shares for $2,750, and on December 20, 2024, buys 25 shares for $1,125. On January 3, 2025, the investor sells the original 100 shares for $4,000, creating an overall $1,000 loss. Because 75 shares were acquired within the preceding 30 days, the loss on 75 shares ($750) is disallowed, while the loss on the remaining 25 shares ($250) is immediately deductible. The basis of the December 13 lot increases to $3,250 ($2,750 plus $500), and the basis of the December 20 lot increases to $1,375 ($1,125 plus $250).\n\nA severe trap emerges if you purchase replacement shares inside an individual retirement account or a Roth IRA. In [Revenue Ruling 2008-5](https://www.irs.gov/irb/2008-03_IRB), published in Internal Revenue Bulletin 2008-3, the IRS ruled that if an individual sells stock at a loss in a taxable account and causes their IRA or Roth IRA to purchase substantially identical stock within the 30-day window, the loss deduction is disallowed under Section 1091. Crucially, the individual's basis in the IRA is not increased. Because retirement accounts do not track cost basis on internal holdings under regular capital gain rules, the disallowed loss disappears permanently rather than being deferred."
+    },
+    {
+      "heading": "Cross-Account Trading and Autonomous Bot Execution",
+      "body": "Brokerage firms are only required to calculate and report wash sales for covered securities sharing the exact same Committee on Uniform Securities Identification Procedures (CUSIP) number within a single brokerage account. Under the official [Form 1099-B instructions](https://www.irs.gov/instructions/i1099b), a broker is permitted, but not required, to aggregate transactions across different accounts. If you sell a stock at a loss at one brokerage firm and buy it back within 20 days at another firm, your 1099-B tax statements will show zero disallowed losses, yet federal tax law still obligates you to disallow that loss on your tax return.\n\nThis cross-account tracking requirement poses fresh operational friction with automated investment platforms, automated dividend reinvestments, and autonomous trading bots. As explored in our breakdown of [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/), retail investors increasingly run algorithmic software that executes rapid purchases across separate accounts or sub-accounts. If an automated agent or algorithm sweeps capital into an asset you recently sold for a tax loss elsewhere, that automated buy creates a wash sale that your broker's tax slip will not catch.\n\nSimilar issues arise with automated portfolio software and features like [Robinhood 24-hour trading](/guides/robinhood-24-hour-trading/) or third-party automated portfolio builders. Selecting a high-performing automated service from our [best robo-advisors roundup](/roundup/best-robo-advisors/) often requires reviewing how each service handles tax-loss harvesting settings across multiple connected accounts. You remain personally responsible for identifying and adjusting every matching trade on your return regardless of automated origin."
+    },
+    {
+      "heading": "Tax Reporting on Form 1099-B and Form 8949",
+      "body": "When a wash sale happens within a single taxable brokerage account involving identical CUSIPs, your financial institution will detail the adjustment directly on Form 1099-B. Box 1g will show the exact dollar amount of the wash sale loss disallowed. If you earned proceeds that were partly offset by unwashed positions, box 1g isolates only the disallowed segment.\n\nTo report these transactions accurately to the IRS, you transfer the figures to Form 8949, Sales and Other Dispositions of Capital Assets, using either Part I for short-term trades or Part II for long-term holdings. Per the [Form 8949 instructions](https://www.irs.gov/instructions/i8949), you list the details of the transaction, enter the capital \"W\" in column (f) to designate a wash sale, and write the disallowed loss as a positive number in column (g). Entering the positive number in column (g) reduces the net capital loss claimed on that trade line.\n\nIf the number in box 1g of Form 1099-B is incorrect due to split trades across unlinked accounts, or if a wash sale occurred that the broker did not track, you must input the correct calculation in column (g). If your actual wash sale disallowance is lower than what the broker stated, the IRS instructions require you to attach an explanatory statement to your tax return explaining why the broker figure was adjusted. Reviewing our general [tax tips guide](/guides/tax-tips/) can assist with recordkeeping organization before filing."
+    },
+    {
+      "heading": "Digital Asset Treatment and Pending Legislation",
+      "body": "The text of Section 1091 specifies that wash sale limitations apply to sales or trades of \"stock or securities.\" Under current federal tax guidance, the [IRS classifies digital assets as property](https://www.irs.gov/filing/digital-assets), citing Notice 2014-21. Because general property transactions follow general tax principles rather than the specific provisions of Section 1091, conventional cryptocurrencies have historically not been restricted by statutory wash sale disallowance rules.\n\nHowever, tokenized securities represent a distinct category subject to standard reporting. Under the official [Form 1099-DA instructions](https://www.irs.gov/instructions/i1099da), brokers must report disallowed wash sale losses in box 1i for transactions involving tokenized securities treated as stock or securities under Section 1091. Same-account and same-CUSIP reporting principles apply to these digital securities exactly as they do to traditional equity assets.\n\nPending federal legislation could alter this framework for all digital assets. On September 16, 2026, the House Ways and Means Committee voted 38 to 5 to approve H.R. 10357, known as the Digital Asset Tax Certainty Act, according to an [Unchained report on H.R. 10357](https://unchainedcrypto.com/house-panel-advances-crypto-tax-bill-that-would-limit-certain-loss-write-offs/). If enacted, the bill would extend wash sale rules to traded digital assets other than qualified dollar stablecoins, retroactive to sales occurring after September 14, 2026. A [Forvis Mazars analysis](https://www.forvismazars.us/forsights/2026/09/ways-means-approves-digital-asset-tax-certainty-act) notes that broader House and Senate action remains uncertain, leaving the bill as unpassed legislation rather than settled law."
+    },
+    {
+      "heading": "Mark-to-Market Elections for Qualifying Active Traders",
+      "body": "Active day traders often wonder if high transaction volume exempts them from the complexity of wash sales. Under [IRS Topic 429](https://www.irs.gov/taxtopics/tc429), retail day traders are fully subject to standard capital loss limitations and wash sale rules by default. Managing numerous intraday round trips without accounting for wash sales can leave an active trader with massive taxable phantom gains at year-end, even if their net trading account balance fell.\n\nTo bypass these restrictions, a qualifying trader must make a formal mark-to-market election under Section 475(f) of the tax code. IRS Topic 429 confirms that traders who make a valid Section 475(f) election are not subject to wash sale rules or regular capital loss deduction limits. Under mark-to-market accounting, all positions open at the close of the final trading day of the tax year are treated as if sold at fair market value, and gains or losses are treated as ordinary income rather than capital gains.\n\nSecuring trader tax status requires meeting stringent IRS tests regarding trading frequency, intent, and market consistency, beyond retail thresholds like the [pattern day trader rule](/guides/pattern-day-trader-rule/). Publication 550 also notes that registered dealers in stock or securities are exempt from wash sale disallowance for losses incurred in the ordinary course of business. Because qualifying for a Section 475(f) election carries severe procedural deadlines and long-term tax consequences, consulting a qualified tax professional is essential before electing this status."
+    },
+    {
+      "heading": "Practical Execution Tactics to Avoid Unintended Disallowance",
+      "body": "The simplest and cleanest way to avoid triggering the wash sale rule is to wait at least 31 full calendar days after your sale date before repurchasing the security. By waiting until calendar day 32, you sit safely outside the statutory 30-day lookback and lookforward boundary. If maintaining continuous market exposure is critical, you can replace individual corporate stock with a broad, diversified fund that holds the company among hundreds of other assets, as the two are not substantially identical.\n\nAutomated features in brokerage accounts require proactive management during tax-loss harvesting periods. If you sell an equity at a loss, check whether you have an active automated dividend reinvestment plan (DRIP) attached to that security or a recurring automatic deposit plan configured to buy more shares every two weeks. A small automatic dividend reinvestment of $15 will trigger a partial wash sale on your recent loss, disallowing deductions on matching share quantities and creating complicated basis calculations.\n\nInvestors utilizing automated trading algorithms or semi-autonomous order agents should program strict exclusion parameters into their tools. Add the ticker of any asset sold for a tax loss to your trading bot's restricted trading blacklist for at least 32 days. Once the 31-day cooling-off window expires, review your trade logs, verify your settled position dates, and resume regular automated execution across your investment accounts."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/",
+      "label": "Investment calculators"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is the wash sale rule 30 or 60 days?",
+      "answer": "The statutory rule covers 30 days before and 30 days after your sale date, spanning an arithmetic total of 61 calendar days when including the sale day itself. Because replacement purchases made in the 30 days leading up to the sale trigger disallowance just like purchases made afterward, the rule operates over this combined two-sided window."
+    },
+    {
+      "question": "Can I sell a stock and buy it back within 30 days?",
+      "answer": "Yes, you can legally buy it back at any time, but doing so within 30 days disallows your ability to claim the capital loss on your tax return. Instead, your disallowed loss is added to the cost basis of the newly purchased shares, deferring the tax deduction until those new shares are sold in an unwashed transaction."
+    },
+    {
+      "question": "Can I claim a loss after a wash sale?",
+      "answer": "You cannot claim the loss in the tax year the wash sale occurs, but the loss is usually deferred rather than lost forever. Because the disallowed amount gets added to the replacement stock's cost basis, you will realize the tax benefit when you eventually sell the replacement position, provided that final sale is not another wash sale."
+    },
+    {
+      "question": "How do day traders avoid wash sales?",
+      "answer": "Day traders avoid wash sales by either waiting 31 calendar days before re-entering a losing position, trading completely different instruments, or qualifying for Trader Tax Status and making a Section 475(f) mark-to-market election. A valid mark-to-market election exempts qualifying traders from wash sale rules entirely under IRS Topic 429."
+    },
+    {
+      "question": "Does the wash sale rule apply to crypto?",
+      "answer": "Current tax law treats digital assets as property rather than stock or securities, so standard cryptocurrency transactions are not subject to Section 1091 wash sale rules today. However, tokenized securities are covered, and pending legislation under H.R. 10357 would extend wash sale rules to traded digital assets if enacted by Congress."
+    },
+    {
+      "question": "Does the wash sale rule apply across different brokerage accounts?",
+      "answer": "Yes, the wash sale rule applies across every taxable account you own, as well as accounts owned by your spouse or a corporation you control. While individual brokers only report wash sales that occur within the same account for the exact same CUSIP, you are legally responsible for tracking and reporting cross-account wash sales on Form 8949."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Publication 550, Investment Income and Expenses",
+      "url": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "label": "26 U.S. Code § 1091, Loss from Wash Sales of Stock or Securities",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1091"
+    },
+    {
+      "label": "IRS Topic No. 429, Traders in Securities",
+      "url": "https://www.irs.gov/taxtopics/tc429"
+    },
+    {
+      "label": "IRS Revenue Ruling 2008-5, Internal Revenue Bulletin 2008-3",
+      "url": "https://www.irs.gov/irb/2008-03_IRB"
+    },
+    {
+      "label": "IRS Instructions for Form 1099-B",
+      "url": "https://www.irs.gov/instructions/i1099b"
+    },
+    {
+      "label": "IRS Instructions for Form 8949",
+      "url": "https://www.irs.gov/instructions/i8949"
+    },
+    {
+      "label": "IRS Instructions for Form 1099-DA",
+      "url": "https://www.irs.gov/instructions/i1099da"
+    },
+    {
+      "label": "IRS, Digital Assets",
+      "url": "https://www.irs.gov/filing/digital-assets"
+    },
+    {
+      "label": "Unchained, House Panel Advances Crypto Tax Bill",
+      "url": "https://unchainedcrypto.com/house-panel-advances-crypto-tax-bill-that-would-limit-certain-loss-write-offs/"
+    },
+    {
+      "label": "Forvis Mazars, Ways and Means Approves Digital Asset Tax Certainty Act",
+      "url": "https://www.forvismazars.us/forsights/2026/09/ways-means-approves-digital-asset-tax-certainty-act"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

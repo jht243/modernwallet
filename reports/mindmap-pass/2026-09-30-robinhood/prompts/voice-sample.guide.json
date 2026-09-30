@@ -1,0 +1,92 @@
+{
+  "slug": "is-savings-and-cd-interest-taxable",
+  "title": "Is Interest on Savings Accounts and CDs Taxable?",
+  "metaDescription": "Yes, savings and CD interest is taxable as ordinary income the year it's paid. Here's how the 1099-INT works and what early withdrawal changes.",
+  "h1": "Is Interest on Savings Accounts and CDs Taxable?",
+  "cardBlurb": "How the IRS taxes savings and CD interest, what a 1099-INT reports, and the few accounts that dodge the bill.",
+  "introText": "Interest from a savings account or certificate of deposit (CD) is taxable as ordinary income in the year it's paid or credited, even if you never touch the money or roll it directly into a new CD. The mistake we see most often is treating the CD's maturity date as the tax event. For a CD with a term longer than one year, you're taxed on the interest credited each year, not only in the year the CD finally pays out. Banks report the interest on Form 1099-INT once it clears $10. If you break a CD early, the penalty is separately deductible, and only a handful of account types avoid the tax entirely.",
+  "sections": [
+    {
+      "heading": "How Savings and CD Interest Gets Taxed",
+      "body": "Savings and CD interest counts as ordinary income, taxed at your regular federal bracket rather than the lower capital-gains rate that applies to long-held stocks. The [IRS spells this out in Publication 550](https://www.irs.gov/publications/p550): interest is taxable in the year it becomes available to you, whether you withdraw it, leave it in the account, or automatically roll it into a new CD.\n\nThat means a $10,000 CD paying 5% APY for one year adds $500 to your taxable income for that year, the same as $500 of extra salary would. A saver in the 22% federal bracket owes $110 of that $500 in tax, leaving an after-tax yield closer to 3.9%, not the 5% the CD advertises. Run your own balance and rate through the [high-yield savings calculator](/investing/high-yield-savings-calculator/) to see the pretax number before you subtract your own bracket."
+    },
+    {
+      "heading": "What the 1099-INT Reports",
+      "body": "Your bank sends a Form 1099-INT only when your interest for the year reaches $10, but the $10 threshold is a reporting rule, not a tax rule. You still owe tax on $9 of interest even if no form ever arrives, because the obligation to report income on your return doesn't depend on getting a slip that says so.\n\nBox 1 of the form shows your taxable interest for the year. Box 2 shows any early withdrawal penalty the bank charged you, a separate line that matters for the deduction covered next. If a joint account splits interest between two people, only one Social Security number appears on the 1099-INT, and the other owner reports their share using the nominee-interest rules in the Form 1040 instructions."
+    },
+    {
+      "heading": "How Multi-Year CDs Get Taxed Before They Mature",
+      "body": "A CD with a term over one year gets taxed annually on the interest it credits that year, not deferred until the CD matures. Banks credit interest to the account periodically, usually monthly or quarterly, even on a CD that doesn't let you withdraw a dime until the term ends, and the IRS treats that credited amount as income the moment it's added to your balance.\n\nSo a 3-year CD paying $1,800 in total interest doesn't dump all $1,800 onto your return in year three. It typically splits across three 1099-INTs, one per year, based on how much accrued each period. Check your CD's annual statement or year-end 1099-INT rather than assuming the whole amount lands at once, since guessing wrong at maturity can leave you underpaying tax in the earlier years."
+    },
+    {
+      "heading": "An Early CD Withdrawal Penalty Is Deductible",
+      "body": "An early CD withdrawal penalty is deductible even though it's a real cost you paid out of pocket. The bank reports it in Box 2 of your 1099-INT, and you claim it as an adjustment to income on Schedule 1 of Form 1040, the same schedule used for a handful of above-the-line deductions.\n\nThat deduction reduces your taxable income directly, regardless of whether you itemize. A $150 early withdrawal penalty on a $5,000 CD lowers your taxable income by $150, separate from and in addition to whatever interest that CD actually paid before you broke it. The penalty itself typically runs from 90 days to a full year of interest, set by the bank's own CD agreement, so check that document before assuming the deduction fully offsets what you lose by cashing out early."
+    },
+    {
+      "heading": "Accounts That Reduce or Skip This Tax",
+      "body": "Four account types change this math, each with a real tradeoff attached. A CD or savings-style fund held inside a Roth IRA grows tax-free, with no annual 1099-INT at all, but the 2026 IRA contribution limit caps how much you can shelter there at $7,500 a year, $8,600 if you're 50 or older. A Treasury bill or note pays interest that's fully exempt from state and local tax, unlike bank CD interest, which most states with an income tax tax the same as your salary. Series I savings bonds defer their interest until you cash them in, and that interest can come out federally tax-free if you spend it on qualified higher-education costs and your income falls under the IRS phase-out. A municipal bond fund pays interest that's generally exempt from federal tax, and from state tax too if you buy bonds issued in your own state, but it trades FDIC insurance for credit and interest-rate risk a bank CD doesn't carry.\n\nNone of these four beats a plain CD on every count at once. Compare the actual after-tax yield of a CD against a savings account, not just the sticker APY, in our [HYSA vs. CD breakdown](/compare/hysa-vs-cd/) before assuming the higher advertised rate wins after taxes."
+    },
+    {
+      "heading": "State Taxes on Savings and CD Interest",
+      "body": "Most states with their own income tax treat savings and CD interest exactly like wages, taxing it at your regular state rate on top of the federal bill covered above. A handful of states, including Florida, Texas, and Washington, charge no state income tax at all, so residents there owe only the federal tax on the same interest.\n\nThis is where the earlier point about Treasury bills and I bonds pays off twice. Their interest skips state tax everywhere, even in a state that taxes bank CD interest at 5% or more, which can meaningfully close the gap between a Treasury's slightly lower advertised rate and a bank CD's higher one once you compare actual after-tax income in a high-tax state."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/high-yield-savings-calculator/",
+      "label": "High-yield savings calculator"
+    },
+    {
+      "href": "/investing/compound-interest-calculator/",
+      "label": "Compound interest calculator"
+    },
+    {
+      "href": "/compare/hysa-vs-cd/",
+      "label": "HYSA vs. CD"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do I owe tax on CD interest if I roll it into a new CD?",
+      "answer": "Yes. Rolling matured interest into a new CD is still a taxable event in the year the original CD paid out, the same as if you had taken the cash and redeposited it yourself. The IRS taxes interest when it becomes available to you, not when you choose to spend it."
+    },
+    {
+      "question": "What if my bank never sends me a 1099-INT?",
+      "answer": "You still owe the tax. Banks only issue a 1099-INT once your interest for the year hits $10, but that threshold governs the bank's reporting duty, not your obligation to report the income. Add up interest from account statements if no form arrives."
+    },
+    {
+      "question": "Is CD interest taxed differently inside an IRA?",
+      "answer": "Yes. A CD held inside a traditional IRA defers the tax until you withdraw funds in retirement, and one held inside a Roth IRA skips the tax entirely on qualified withdrawals. A CD held in a regular taxable account gets taxed every year the interest is credited, whether you touch the money or not."
+    },
+    {
+      "question": "Can I deduct an early CD withdrawal penalty?",
+      "answer": "Yes. Your bank reports the penalty in Box 2 of your 1099-INT, and you claim it as an adjustment to income on Schedule 1 of Form 1040. This lowers your taxable income directly, regardless of whether you itemize deductions."
+    },
+    {
+      "question": "Do Treasury bills and I bonds avoid state income tax?",
+      "answer": "Yes, for Treasury bills, notes, and bonds, whose interest is exempt from state and local tax under federal law, though still taxable federally. Series I savings bonds work the same way and can also skip federal tax if used for qualified education expenses under the income limits."
+    },
+    {
+      "question": "Does a multi-year CD get taxed all at once when it matures?",
+      "answer": "No. A CD with a term longer than one year is taxed annually as interest accrues and gets credited to the account, typically reported on a separate 1099-INT each year rather than one lump sum at maturity."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Publication 550 — Investment Income and Expenses",
+      "url": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "label": "IRS — Topic No. 403, Interest Received",
+      "url": "https://www.irs.gov/taxtopics/tc403"
+    },
+    {
+      "label": "IRS — Instructions for Forms 1099-INT and 1099-OID",
+      "url": "https://www.irs.gov/instructions/i1099int"
+    },
+    {
+      "label": "TreasuryDirect — Tax Considerations for I Bonds",
+      "url": "https://www.treasurydirect.gov/savings-bonds/tax-information-for-eebonds/"
+    }
+  ]
+}

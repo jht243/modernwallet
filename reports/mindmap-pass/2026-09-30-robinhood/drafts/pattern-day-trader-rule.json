@@ -1,0 +1,114 @@
+{
+  "slug": "pattern-day-trader-rule",
+  "title": "Pattern Day Trader Rule: The 2026 FINRA Changes",
+  "metaDescription": "FINRA replaced the pattern day trader rule and its $25,000 equity minimum with new intraday margin standards. Learn how the 2026 change affects your account.",
+  "h1": "Pattern Day Trader Rule Changes and the 2026 Intraday Standard",
+  "cardBlurb": "How FINRA's 2026 rule change replaces the $25,000 pattern day trader equity requirement with an intraday margin deficit standard.",
+  "introText": "The pattern day trader rule no longer exists in its traditional form at brokerages that adopted FINRA's 2026 regulatory updates. At ModernWallet, we track retail trading rules so self-directed investors understand exactly how regulatory shifts change their daily execution limits. The Securities and Exchange Commission approved Financial Industry Regulatory Authority (FINRA) proposed rule change SR-FINRA-2025-017 on April 14, 2026, which took effect on June 4, 2026.\n\nThis regulatory update removes the longstanding requirement that designated day traders maintain at least $25,000 in equity and eliminates the rigid counting of day trades within a rolling five-business-day window. In place of those formulas, FINRA instituted an intraday margin deficit framework under Rule 4210(d)(2). Because brokerages have an 18-month transition window until October 20, 2027, to implement the new framework, trading permissions and day-trading limits currently vary depending on which broker handles your margin account.",
+  "sections": [
+    {
+      "heading": "The 2026 Regulatory Change and Implementation Timeline",
+      "body": "FINRA replaced its longstanding day trading margin regime through proposed rule change [SR-FINRA-2025-017](https://www.sec.gov/files/rules/sro/finra/2026/34-104572.pdf), filed with the Securities and Exchange Commission on December 29, 2025. The SEC granted accelerated approval to the proposal on April 14, 2026, in Exchange Act Release No. 105226. FINRA subsequently published [Regulatory Notice 26-10](https://www.finra.org/sites/default/files/2026-04/Regulatory-Notice-26-10.pdf) on April 20, 2026, giving notice that the new intraday margin standards replace the former day trading margin requirements in their entirety.\n\nThe effective date for the new rules was June 4, 2026. However, FINRA granted firms that require additional time to adjust operational systems a phase-in window extending through October 20, 2027. During this transition window, individual broker-dealers may migrate to the new intraday margin standards immediately or continue operating under the legacy rules until the October 2027 deadline.\n\n| Regulatory Milestone | Date | Significance for Margin Traders |\n| :--- | :--- | :--- |\n| Proposed Rule Filing | December 29, 2025 | FINRA submitted SR-FINRA-2025-017 to the SEC |\n| SEC Accelerated Approval | April 14, 2026 | SEC approved the replacement of legacy day trading margin rules |\n| Regulatory Notice 26-10 | April 20, 2026 | FINRA issued operational guidance and implementation details |\n| Official Effective Date | June 4, 2026 | New intraday margin deficit standards took regulatory effect |\n| Mandatory Firm Deadline | October 20, 2027 | Final cutoff date for all broker-dealers to retire legacy PDT tracking |"
+    },
+    {
+      "heading": "Requirements under the Former Day Trading Margin Framework",
+      "body": "The legacy framework governing day trading originated in 2001 when the SEC approved rules created by the New York Stock Exchange and the National Association of Securities Dealers. Under former FINRA Rule 4210, a day trade meant purchasing and selling, or selling and purchasing, the same security on the same day in a margin account. According to [Investor.gov educational guidance](https://www.investor.gov/introduction-investing/investing-basics/glossary/pattern-day-trader), a customer was designated as a pattern day trader upon executing four or more day trades within five business days, provided those trades made up more than 6% of the customer's total trades in that margin account over that same period.\n\nOnce tagged with the designation, a trader had to maintain a minimum account equity of $25,000 at all times before continuing to day trade. If equity dipped below $25,000, day trading buying power was restricted. Buying power under the old system equaled the account's equity at the close of the previous day, minus maintenance margin requirements, multiplied by four for equity securities.\n\nExceeding day-trading buying power produced a special maintenance margin deficiency. When an investor triggered this deficiency, the broker reduced day-trading buying power to two times maintenance margin and issued a day-trading margin call. Customers had five business days to deposit funds to satisfy the call. Failing to meet the call forced the broker to restrict the account to trading strictly on a cash-available basis for 90 days. Furthermore, funds deposited to satisfy pattern day trader equity requirements could not be withdrawn for at least two business days following deposit."
+    },
+    {
+      "heading": "The New Intraday Margin Standard under Rule 4210",
+      "body": "FINRA Rule 4210(d)(2) establishes an intraday margin deficit calculation to manage exposure, retiring both the $25,000 equity hurdle and the practice of counting day trades. A brokerage firm must determine the intraday margin deficit for each customer margin account on each day an intraday-margin-reducing transaction occurs. Regulatory Notice 26-10 explains that real-time calculation is not mandated across the industry; firms may instead elect to calculate the intraday margin deficit once daily, mirroring standard end-of-day maintenance margin procedures.\n\nThis framework supplements rather than replaces regular maintenance margin requirements. When an account incurs an intraday margin deficit, the account holder must resolve the deficiency as promptly as possible. The deficit remains open until satisfied or until immediately following the close of business on the 15th business day after the deficit date.\n\nTo address serial non-compliance, FINRA introduced a targeted 90-day restriction. A customer who makes a practice of failing to resolve intraday margin deficits promptly, and who fails to resolve a deficit by the close of business on the fifth business day, faces restrictions. The broker blocks that account from creating or expanding any short position or debit balance for 90 calendar days, or until the deficit is satisfied. Crucially, Regulatory Notice 26-10 includes a specific deficit carve-out: deficits that do not exceed the lesser of 5% of account equity or $1,000 do not count toward making a practice of chronic deficits. For specialized accounts, customers who use [portfolio margin and leverage](/guides/portfolio-margin-and-leverage-explained/) with under $5 million in equity must maintain intraday risk margin that is substantially similar to end-of-day margin."
+    },
+    {
+      "heading": "Broker Adoption Status and Operational Differences",
+      "body": "Because brokerages have until October 20, 2027, to overhaul their internal compliance engines, rules currently differ across firms. [Robinhood customer support documentation](https://robinhood.com/us/en/support/articles/pattern-day-trading/) confirms that the platform removed day trade counters, day trade restrictions, and existing pattern day trader flags on June 4, 2026. Robinhood margin clients no longer need $25,000 in portfolio value to day trade, though Robinhood monitors margin balances in real time to prevent accounts from expanding intraday margin deficits.\n\nOther brokerages followed distinct schedules. [E*TRADE published margin guidance](https://us.etrade.com/knowledge/library/margin/pattern-day-trading-rule-change) stating that it rolled out the new intraday margin standards on June 9, 2026. E*TRADE computes day-trading access using real-time intraday margin excess, mandates that intraday margin deficits be satisfied within five days, and notes that three violations within a rolling 12-month period can trigger a 90-day trading restriction.\n\nWhen evaluating choices like [Robinhood vs. Fidelity](/compare/robinhood-vs-fidelity/) or [Robinhood vs. Webull](/compare/robinhood-vs-webull/), check each broker's specific margin agreement directly in your account portal. Firms that have not yet converted internal systems still flag accounts executing four or more day trades in five business days, locking equity under the $25,000 rule until their technical rollout concludes."
+    },
+    {
+      "heading": "Cash Accounts and Federal Settlement Rules",
+      "body": "Cash accounts were never subject to the pattern day trader rule, and the 2026 FINRA rule change does not alter how cash accounts operate. A cash account requires investors to pay for all securities purchases in full without borrowing from the broker-dealer. Consequently, the replacement of Rule 4210 day trading margin rules applies solely to margin accounts.\n\nInstead, cash account day trading remains governed by Federal Reserve Regulation T. According to [SEC guidance on cash transactions](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-9), buying and then selling a security before paying for it constitutes freeriding. Freeriding violates Regulation T and obligates the brokerage to freeze the account for 90 days, during which time the investor must hold settled cash before initiating any buy order.\n\nAdditionally, [FINRA investor education publications](https://www.finra.org/investors/insights/frequent-intraday-trading) outline good faith violations. A good faith violation takes place when an investor purchases a security using unsettled funds from a recent sale and then sells that newly purchased security before the original purchase funds have fully settled. Accumulating multiple settlement violations leads to automated restrictions on cash trading, regardless of account balance."
+    },
+    {
+      "heading": "Automated Systems and Algorithmic Trading Orders",
+      "body": "The removal of trade-count caps carries significant implications for algorithmic and automated execution strategies. Automated tools frequently execute multiple round-trip orders within minutes. Under the retired 2001 standard, running an automated intraday script in a margin account under $25,000 quickly triggered account freezing after the fourth trade in a five-business-day window.\n\nUnder the new FINRA Rule 4210 standard, execution frequency itself does not trigger regulatory flags. What matters is maintaining sufficient capital to prevent an intraday margin deficit. For example, traders deploying retail automated tools such as [Robinhood agentic trading systems](/guides/robinhood-agentic-trading-explained/) can enter and exit positions freely as long as margin excess covers the activity. Combined with extended sessions such as [Robinhood 24-hour trading](/guides/robinhood-24-hour-trading/), continuous order routing requires careful capital buffers so sudden price swings do not trigger an immediate intraday margin deficit call."
+    },
+    {
+      "heading": "Unchanged Requirements and Continuing Risks",
+      "body": "While FINRA eliminated trade counting, several critical trading rules remain untouched. Most notably, the statutory $2,000 minimum equity requirement for any margin account still applies. [FINRA Rule 4210(b)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210) has long mandated that customer margin accounts maintain at least $2,000 in equity to borrow funds or trade on margin. This baseline $2,000 rule was not created by the 2026 intraday reform, and individual brokerages retain the authority to set higher house minimums.\n\nTax obligations and structural risks also remain completely unaltered by the 2026 rule revision. Frequent intraday trading generates short-term capital gains, which are taxed at regular marginal rates rather than preferential long-term rates. Investors comparing [ordinary income vs. capital gains tax](/compare/ordinary-income-vs-capital-gains-tax/) must track every executed order. Furthermore, rapidly closing and reopening positions in the same stock can trigger tax adjustments under the [wash sale rule](/guides/wash-sale-rule-explained/), which defers loss deductions on repurchased assets.\n\nDay trading inherently involves substantial financial risk and rapid loss potential. To manage your positions safely under the updated framework, review your brokerage's current intraday margin deficit policy and verify your available equity buffer before executing your next trade."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/",
+      "label": "Investment calculators"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does the pattern day trading rule still exist?",
+      "answer": "The pattern day trader rule has been officially replaced under FINRA Rule 4210 with a new intraday margin deficit framework. However, because brokerages have until October 20, 2027, to implement the changes, the legacy rule may still apply at brokerages that have not yet updated their internal compliance systems."
+    },
+    {
+      "question": "When did the pattern day trader rule change?",
+      "answer": "The SEC approved FINRA proposed rule change SR-FINRA-2025-017 on April 14, 2026. The new intraday margin standards took effect on June 4, 2026, following the release of FINRA Regulatory Notice 26-10."
+    },
+    {
+      "question": "Does Robinhood still have the pattern day trader rule?",
+      "answer": "No. Robinhood removed its pattern day trading flags, trade counting tools, and day trade restrictions on June 4, 2026. Robinhood margin traders no longer need a $25,000 portfolio value to execute intraday trades, though the standard $2,000 margin equity minimum still applies."
+    },
+    {
+      "question": "Do I still need $25,000 to day trade?",
+      "answer": "You do not need $25,000 if your brokerage has implemented the new FINRA intraday margin standards. You only need to maintain sufficient equity to satisfy your broker's intraday margin requirements and the longstanding $2,000 baseline margin equity requirement. If your broker has not yet updated its systems, it may enforce the $25,000 minimum until October 20, 2027."
+    },
+    {
+      "question": "Does the PDT rule apply to cash accounts?",
+      "answer": "No. The pattern day trader rule never applied to cash accounts, and the 2026 update applies only to margin accounts. Cash accounts remain governed by Regulation T settlement rules, which prohibit freeriding and good faith violations."
+    },
+    {
+      "question": "What replaced the pattern day trader rule?",
+      "answer": "FINRA replaced the legacy framework with an intraday margin deficit standard under Rule 4210(d)(2). Instead of monitoring trade counts, brokerages now measure whether intraday activity creates an intraday margin deficit, with specific restrictions applied if chronic deficits go unresolved."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SEC Notice of Filing, SR-FINRA-2025-017 (Release No. 34-104572)",
+      "url": "https://www.sec.gov/files/rules/sro/finra/2026/34-104572.pdf"
+    },
+    {
+      "label": "FINRA Regulatory Notice 26-10, Intraday Margin Standards",
+      "url": "https://www.finra.org/sites/default/files/2026-04/Regulatory-Notice-26-10.pdf"
+    },
+    {
+      "label": "FINRA Weekly Rule Filing Update, April 15, 2026",
+      "url": "https://www.finra.org/compliance-tools/weekly-archive/04152026"
+    },
+    {
+      "label": "FINRA Rule 4210, Margin Requirements",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210"
+    },
+    {
+      "label": "FINRA Investor Insights, Frequent and Intraday Trading",
+      "url": "https://www.finra.org/investors/insights/frequent-intraday-trading"
+    },
+    {
+      "label": "Investor.gov Glossary, Pattern Day Trader",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/pattern-day-trader"
+    },
+    {
+      "label": "Investor.gov Investor Bulletin, Trading in Cash Accounts",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-9"
+    },
+    {
+      "label": "Robinhood Support, Pattern Day Trading",
+      "url": "https://robinhood.com/us/en/support/articles/pattern-day-trading/"
+    },
+    {
+      "label": "E*TRADE Margin Education, Pattern Day Trading Rule Change",
+      "url": "https://us.etrade.com/knowledge/library/margin/pattern-day-trading-rule-change"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -1,0 +1,8 @@
+**Q: What are Robinhood Agents?**
+Robinhood Agents are built-in artificial intelligence (AI) tools that analyze market trends, build strategies, and execute trades on a customer's behalf. Robinhood announced the feature on September 29, 2026, and is rolling it out as coming soon to eligible U.S. customers in the mobile app. Each agent operates from a dedicated, separately funded account and can trade long equities, options, and cryptocurrencies.
+
+**Q: How do I connect an AI agent to Robinhood?**
+You connect an AI agent to Robinhood either through the built-in mobile app feature or through an external Model Context Protocol (MCP) server. For the built-in route, open the Agents tab in the mobile app, sign the required agreements, and set up a dedicated account. For external agents, add Robinhood's MCP link into supported platforms such as Claude Desktop, Claude Code, ChatGPT, Cursor, or Codex CLI to authenticate a dedicated MCP account. Trade approvals default to on for built-in Robinhood Agents, whereas external MCP accounts operate with trade approvals turned off by default.
+
+**Q: Which AI agent is best for Robinhood?**
+Robinhood does not name a best AI agent, as the right choice depends on your required trade oversight, preferred software, and ongoing costs. With the built-in agent, you can select from several models, including OpenAI GPT-Luna, which Robinhood provides for free through the end of 2026. For external options, you can connect tools like Claude, ChatGPT, Cursor, Codex, or Grok through an MCP account. Select an agent based on your preferred trade approval settings, post-promotional token costs, and how actively you intend to supervise trading activity.

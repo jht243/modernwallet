@@ -1,0 +1,878 @@
+{
+ "rows": [
+  {
+   "keyword": "robinhood agents",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "robinhood.com",
+    "fortune.com",
+    "finance.yahoo.com",
+    "x.com",
+    "uk.finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "finance.yahoo.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "www.reddit.com",
+    "github.com",
+    "robinhood.com",
+    "www.investing.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 16,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "What are Robinhood agents?",
+    "How do I connect an agent to Robinhood?",
+    "Which AI agent is best for Robinhood?",
+    "What is the downside to using Robinhood?",
+    "Why are people leaving Robinhood?",
+    "How much is Robinhood's monthly fee?"
+   ],
+   "related_searches": [
+    "Robinhood agent trading",
+    "Robinhood agentic trading reddit",
+    "Robinhood AI agent",
+    "Robinhood agents text message",
+    "Robinhood MCP",
+    "Robinhood Agentic crypto",
+    "Robinhood agentic credit card",
+    "Robinhood agentic trading overview"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites robinhood.com, fortune.com, finance.yahoo.com, x.com",
+   "se_results_count": 99
+  },
+  {
+   "keyword": "how to use robinhood agents",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "www.reddit.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "www.finder.com",
+    "robinhood.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "organic": 18,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Can I use an AI agent with Robinhood?",
+    "Why stay away from Robinhood?",
+    "How do I connect an agent to Robinhood?",
+    "What is a Robinhood agent?",
+    "Why is Robinhood being sued?",
+    "Which AI agent is best for trading stocks?"
+   ],
+   "related_searches": [
+    "How to use robinhood agents reddit",
+    "How to use Robinhood Agentic trading",
+    "Robinhood agentic trading reddit",
+    "How does Robinhood Agentic trading work",
+    "Best AI agent for Robinhood",
+    "Robinhood agentic trading overview",
+    "Robinhood MCP documentation",
+    "Robinhood agentic credit card"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "no entrenched incumbents or SERP features detected",
+   "se_results_count": 108
+  },
+  {
+   "keyword": "robinhood 24 hour trading",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "robinhood.com",
+    "finance.yahoo.com",
+    "www.reddit.com",
+    "www.tradingview.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "robinhood.com",
+    "www.ig.com",
+    "www.robinhood.com",
+    "www.reuters.com",
+    "www.reddit.com",
+    "www.reddit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "Does Robinhood allow 24 hour trading?",
+    "Can you make $1000 a day with day trading?",
+    "Is there 24 hour stock trading?",
+    "How risky is overnight Robinhood trading?",
+    "Why do people say not to use Robinhood?",
+    "Can you make $200 per day in day trading?"
+   ],
+   "related_searches": [
+    "Robinhood 24 hour trading reddit",
+    "Robinhood 24 Hour trading stock list today",
+    "Robinhood 24 Hour trading mu",
+    "Robinhood 24 hour trading AMD",
+    "Robinhood 24 Hour trading NVDA",
+    "Robinhood 24 hour trading nbis",
+    "Robinhood 24 hour trading baba",
+    "Robinhood 24 hour trading coin"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites robinhood.com, finance.yahoo.com, www.reddit.com, www.tradingview.com",
+   "se_results_count": 101
+  },
+  {
+   "keyword": "robinhood futures",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "robinhood.com",
+    "www.youtube.com",
+    "www.tradealgo.com",
+    "www.facebook.com",
+    "www.metrotrade.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.tradingview.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.thisismoney.co.uk",
+    "x.com",
+    "beincrypto.com",
+    "www.prnewswire.com",
+    "www.reddit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "x.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Why won't Robinhood let me trade futures?",
+    "Is Robinhood a good place to trade futures?",
+    "Why stay away from Robinhood?",
+    "Is $1000 enough to trade futures?",
+    "Is it possible to turn $100 into $1000 in one day trading?",
+    "Can you make $500 a day with day trading?"
+   ],
+   "related_searches": [
+    "Robinhood futures chart",
+    "Robinhood futures tradingview",
+    "Robinhood futures strategy",
+    "Robinhood futures app"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com, x.com) incl. #1; AI Overview present, cites robinhood.com, www.youtube.com, www.tradealgo.com, www.facebook.com",
+   "se_results_count": 101000
+  },
+  {
+   "keyword": "is robinhood gold worth it",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.finder.com",
+    "www.wallstreetsurvivor.com",
+    "www.fool.com",
+    "www.warriortrading.com",
+    "robinhood.com",
+    "www.nerdwallet.com",
+    "highlatitudestyle.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.joinkudos.com",
+    "www.cheddarflow.com",
+    "evertrap.proboards.com",
+    "www.youtube.com",
+    "ficoforums.myfico.com",
+    "www.quora.com",
+    "www.youtube.com",
+    "www.thehackersparadise.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.quora.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "Why stay away from Robinhood?",
+    "How hard is it to cancel Robinhood Gold?",
+    "Is Robinhood Gold $50 a month?",
+    "Why is Robinhood Gold so good?",
+    "Are there any downsides to Robinhood Gold?",
+    "At what point is Robinhood Gold worth it?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.quora.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.finder.com, www.wallstreetsurvivor.com",
+   "se_results_count": 140000
+  },
+  {
+   "keyword": "robinhood vs fidelity",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.investopedia.com",
+    "www.nerdwallet.com",
+    "wise.com",
+    "smartasset.com",
+    "www.stockbrokers.com",
+    "www.fool.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.aol.com",
+    "www.facebook.com",
+    "www.techjockey.com",
+    "www.youtube.com",
+    "forums.studentdoctor.net",
+    "www.bogleheads.org",
+    "www.techjockey.com",
+    "news.ycombinator.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "news.ycombinator.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 16,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "What is the downside to using Robinhood?",
+    "Is a $300,000 investment better in Vanguard or in Fidelity?",
+    "What's better for beginners, Fidelity or Robinhood?",
+    "What is the downside of Fidelity?",
+    "Is Robinhood or Fidelity better?",
+    "What are the top 3 safest investments?"
+   ],
+   "related_searches": [
+    "Robinhood vs fidelity reddit",
+    "Robinhood vs fidelity review"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com, news.ycombinator.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.investopedia.com, www.nerdwallet.com",
+   "se_results_count": 97100
+  },
+  {
+   "keyword": "robinhood vs webull",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.stockbrokers.com",
+    "www.redchip.com",
+    "www.finder.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.investopedia.com",
+    "www.unbiased.com",
+    "www.nerdwallet.com",
+    "www.stockbrokers.com",
+    "wise.com",
+    "robinhood.com",
+    "www.dailyforex.com",
+    "wallethacks.com",
+    "www.warriortrading.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What is the downside of Webull?",
+    "Why stay away from Robinhood?",
+    "Why is Webull falling?",
+    "Who is better than Webull?",
+    "Should I get Robinhood or Webull?",
+    "What is the #1 trading platform?"
+   ],
+   "related_searches": [
+    "Robinhood vs webull reddit",
+    "Robinhood vs Webull vs Fidelity",
+    "Robinhood vs webull live",
+    "Robinhood vs Webull vs moomoo",
+    "Webull or Robinhood for beginners",
+    "Robinhood vs Webull for day trading",
+    "Robinhood vs Webull fees",
+    "Webull vs Robinhood vs Vanguard"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.stockbrokers.com, www.redchip.com",
+   "se_results_count": 106
+  },
+  {
+   "keyword": "robinhood vs coinbase",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.investopedia.com",
+    "www.youtube.com",
+    "finance.yahoo.com",
+    "www.nerdwallet.com",
+    "www.facebook.com",
+    "smartasset.com",
+    "www.trustradius.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.investopedia.com",
+    "robinhood.com",
+    "coinledger.io",
+    "www.youtube.com",
+    "www.trustradius.com",
+    "finance.yahoo.com",
+    "www.nerdwallet.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the best place to buy crypto?",
+    "Do you actually own bitcoin on Robinhood?",
+    "Why stay away from Robinhood?",
+    "How much does Coinbase charge for $1000?",
+    "What is the downside of Coinbase?",
+    "Is it cheaper to buy crypto on Robinhood or Coinbase?"
+   ],
+   "related_searches": [
+    "Robinhood vs coinbase reddit",
+    "Robinhood vs coinbase prediction",
+    "Robinhood vs Coinbase fees",
+    "Robinhood vs Coinbase vs Kraken",
+    "Robinhood vs Coinbase market cap",
+    "Robinhood vs coinbase price",
+    "Robinhood vs coinbase vs cash app",
+    "Coinbase or Robinhood for XRP"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.facebook.com) incl. #1; AI Overview present, cites www.reddit.com, www.investopedia.com, www.youtube.com, finance.yahoo.com",
+   "se_results_count": 186
+  },
+  {
+   "keyword": "robinhood vs acorns",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.acorns.com",
+    "www.nerdwallet.com",
+    "www.youtube.com",
+    "wise.com",
+    "smartasset.com",
+    "www.wallstreetsurvivor.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.nerdwallet.com",
+    "www.acorns.com",
+    "wise.com",
+    "smartasset.com",
+    "medium.datadriveninvestor.com",
+    "www.wallstreetsurvivor.com",
+    "www.policygenius.com",
+    "whop.com",
+    "www.creditdonkey.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What is the downside to Acorns?",
+    "What is the downside of using Robinhood?",
+    "Does Ashton Kutcher own Acorns?",
+    "Who is Robinhood's biggest competitor?",
+    "Which brokerage is better than Robinhood?",
+    "What is the #1 stock trading app?"
+   ],
+   "related_searches": [
+    "Robinhood vs acorns reddit",
+    "Robinhood vs acorns vs fidelity",
+    "Robinhood vs acorns vs vanguard",
+    "Robinhood vs Fidelity",
+    "Robinhood vs Acorns vs Stash",
+    "Sofi vs Robinhood vs acorns",
+    "Robinhood vs Webull",
+    "Wealthfront vs Acorns"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.acorns.com, www.nerdwallet.com, www.youtube.com, wise.com",
+   "se_results_count": 95
+  },
+  {
+   "keyword": "robinhood vs vanguard",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "smartasset.com",
+    "www.youtube.com",
+    "www.wallstreetsurvivor.com",
+    "finance.yahoo.com",
+    "www.instagram.com",
+    "www.creditdonkey.com",
+    "www.moneygirlsinvest.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "smartasset.com",
+    "www.youtube.com",
+    "www.wallstreetsurvivor.com",
+    "www.unbiased.com",
+    "www.creditdonkey.com",
+    "brokerchooser.com",
+    "www.bogleheads.org",
+    "www.facebook.com",
+    "smartasset.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the downside of Robinhood?",
+    "What is the downside to Vanguard?",
+    "What did Warren Buffett say about Vanguard?",
+    "Is Vanguard a Trump supporter?",
+    "Can I trust Vanguard with my money?",
+    "Who is bigger, Charles Schwab or Vanguard?"
+   ],
+   "related_searches": [
+    "Robinhood vs vanguard reddit",
+    "Robinhood vs vanguard vs fidelity",
+    "Robinhood vs vanguard vs vanguard reddit",
+    "Robinhood vs vanguard review",
+    "Robinhood vs Vanguard Roth IRA",
+    "Robinhood vs fidelity vs vanguard reddit",
+    "Buying VOO on Robinhood vs Vanguard",
+    "Robinhood vs Vanguard IRA"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.facebook.com) incl. #1; AI Overview present, cites smartasset.com, www.youtube.com, www.wallstreetsurvivor.com, finance.yahoo.com",
+   "se_results_count": 98
+  },
+  {
+   "keyword": "robinhood alternatives",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.nerdwallet.com",
+    "www.kraken.com",
+    "www.unbiased.com",
+    "robinhood.com",
+    "wise.com",
+    "coinrabbit.io",
+    "www.finder.com",
+    "www.youtube.com",
+    "www.wallstreetzen.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Why stay away from Robinhood?",
+    "Who is Robinhood's rival?",
+    "What is the #1 investment app?",
+    "Is Webull better or Robinhood?",
+    "Is there anything better than Robinhood?",
+    "Why is Webull falling?"
+   ],
+   "related_searches": [
+    "Robinhood alternatives reddit",
+    "Robinhood alternatives for non us citizens",
+    "Robinhood alternatives free",
+    "Robinhood alternatives for beginners",
+    "Best robinhood alternatives",
+    "Apps like Robinhood for crypto",
+    "Robinhood vs Public",
+    "Robinhood alternatives 2022"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present",
+   "se_results_count": 125
+  },
+  {
+   "keyword": "is robinhood safe",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "robinhood.com",
+    "www.investopedia.com",
+    "www.youtube.com",
+    "www.security.org",
+    "www.wallstreetsurvivor.com",
+    "www.nerdwallet.com",
+    "www.stockbrokers.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "beginnerbull.com",
+    "www.reddit.com",
+    "www.justanswer.com",
+    "www.teamblind.com",
+    "www.quora.com",
+    "fintvia.com",
+    "vpnsuper.com",
+    "www.bogleheads.org",
+    "www.wealthdaily.com",
+    "www.quora.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.quora.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 15,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the downside of using Robinhood?",
+    "Is Robinhood safe to give SSN?",
+    "Is it safe to have all my money in Robinhood?",
+    "Can I trust Robinhood with my bank account?",
+    "Will Robinhood take money from my bank account?",
+    "Is Robinhood safe and trusted?"
+   ],
+   "related_searches": [
+    "Is robinhood safe reddit",
+    "Is robinhood safe 2021"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.quora.com); AI Overview present, cites robinhood.com, www.investopedia.com, www.youtube.com, www.security.org",
+   "se_results_count": 78500
+  },
+  {
+   "keyword": "wash sale rule",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.schwab.com",
+    "www.fidelity.com",
+    "www.investor.gov",
+    "turbotax.intuit.com",
+    "privatebank.jpmorgan.com",
+    "www.youtube.com",
+    "www.newyorklife.com",
+    "www.bogleheads.org",
+    "monumentwealthmanagement.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.schwab.com",
+    "www.fidelity.com",
+    "www.investor.gov",
+    "turbotax.intuit.com",
+    "www.reddit.com",
+    "apps.irs.gov",
+    "www.newyorklife.com",
+    "www.investopedia.com",
+    "www.wellsfargoadvisors.com",
+    "www.prudential.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do day traders avoid wash sales?",
+    "Can I sell a stock and buy it back within 30 days?",
+    "Is it a wash sale if I sell my XRP and immediately buy it back?",
+    "Is wash sale rule 30 or 60 days?",
+    "Can I claim a loss after a wash sale?",
+    "What happens if I sell shares and buy them back within 30 days?"
+   ],
+   "related_searches": [
+    "Wash sale 61-day rule",
+    "Wash sale examples",
+    "Wash sale rule irs",
+    "Wash sale rule 30 or 60 days",
+    "How to avoid wash sale rule",
+    "Wash sale rule crypto",
+    "Wash sale rule substantially identical",
+    "Wash sale rule examples with dates"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.schwab.com, www.fidelity.com, www.investor.gov, turbotax.intuit.com",
+   "se_results_count": 127
+  },
+  {
+   "keyword": "pattern day trader rule",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.investor.gov",
+    "en.wikipedia.org",
+    "www.nerdwallet.com",
+    "us.etrade.com",
+    "www.investopedia.com",
+    "robinhood.com",
+    "www.britannica.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nifmacademy.com",
+    "stockstotrade.com",
+    "tradewiththepros.com",
+    "blog.mometic.com",
+    "goodmoneyguide.com",
+    "www.reddit.com",
+    "www.linkedin.com",
+    "www.youtube.com",
+    "blog.pickmytrade.trade",
+    "timothysykes.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.linkedin.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Does the pattern day trading rule still exist?",
+    "How did one trader make $2.4 million in 28 minutes?",
+    "How much money do day traders with $50,000 accounts make per day on average?",
+    "What is the 3-5-7 rule in day trading?",
+    "Can you make $1000 a day with day trading?",
+    "What is the 10 am rule in trading?"
+   ],
+   "related_searches": [
+    "Pattern day trader rule reddit",
+    "Pattern day trader rule strategy",
+    "Pattern day trader rule forex"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.linkedin.com, www.youtube.com); AI Overview present, cites www.investor.gov, en.wikipedia.org, www.nerdwallet.com, us.etrade.com",
+   "se_results_count": 88000
+  },
+  {
+   "keyword": "robinhood strategies review",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "robinhood.com",
+    "www.finder.com",
+    "www.youtube.com",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.glassdoor.com",
+    "robinhood.com",
+    "kismac-ng.org",
+    "www.creditdonkey.com",
+    "www.linkedin.com",
+    "www.gobankingrates.com",
+    "www.moomoo.com",
+    "www.youtube.com",
+    "www.quora.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.linkedin.com",
+    "www.youtube.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "scholarly_articles": 1
+   },
+   "paa": [
+    "Is Robinhood Strategies account worth it?",
+    "How much do Robinhood Strategies cost?",
+    "How do Robinhood Strategies work?",
+    "What is the downside to using Robinhood?",
+    "Why are people leaving Robinhood?",
+    "How much is Robinhood's monthly fee?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.linkedin.com, www.youtube.com, www.quora.com) incl. #1; AI Overview present, cites www.reddit.com, robinhood.com, www.finder.com, www.youtube.com",
+   "se_results_count": 83700
+  }
+ ],
+ "cost": "DataForSEO: 15 calls, $0.06225 of $2.00 budget"
+}

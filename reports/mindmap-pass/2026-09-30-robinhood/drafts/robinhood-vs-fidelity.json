@@ -1,0 +1,231 @@
+{
+  "updated": "2026-09-30",
+  "slug": "robinhood-vs-fidelity",
+  "title": "Robinhood vs Fidelity: Which Broker Wins in 2026?",
+  "metaDescription": "Robinhood vs Fidelity compared on fees, IRA match, margin rates, overnight trading, account types, and tools so you can pick the right brokerage.",
+  "targetKeyword": "robinhood vs fidelity",
+  "optionA": "Robinhood",
+  "optionB": "Fidelity",
+  "h1": "Robinhood vs Fidelity: Which Brokerage Is Better?",
+  "introText": "Fidelity offers a full-service investing ecosystem with comprehensive account types, zero-expense-ratio mutual funds, and 215 physical branches, whereas Robinhood provides a streamlined, mobile-first trading environment highlighted by a 3% IRA contribution match for Gold members, low margin rates, and overnight equities access through its 24 Hour Market. At ModernWallet, we evaluate trading platforms by comparing direct transaction fees, cash sweep yields, and long-term asset availability so retail investors can protect their capital while avoiding friction. Your preferred asset classes, account needs, and trading routine decide which firm serves you best.\n\nOpening an account requires weighing daily convenience against long-term breadth. Choosing Robinhood vs Fidelity depends on whether you value an automated retirement match and overnight trading or full banking features, specialized tax accounts, and institutional research. Both brokers charge zero dollars for online US stock and exchange-traded fund (ETF) trades, yet their fee structures diverge sharply once you trade options, hold uninvested cash, borrow on margin, or build a tax-sheltered portfolio.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Stock and ETF commissions",
+        "a": "$0 online US stock and ETF trades",
+        "b": "$0 online US stock and ETF trades"
+      },
+      {
+        "dimension": "Options contract fees",
+        "a": "$0 base fee on equity options ($0.04 regulatory fee plus $0.0003 CAT fee); $0.35 Gold or $0.50 standard per index contract",
+        "b": "$0.65 per contract ($0 to buy to close if $0.65 or less); additional $0.50 per contract for professional options traders"
+      },
+      {
+        "dimension": "Account minimum",
+        "a": "$0 to open; $2,000 minimum for margin trading",
+        "b": "$0 to open; $0 for retail accounts and IRAs"
+      },
+      {
+        "dimension": "Account types",
+        "a": "Individual, joint, Traditional IRA, Roth IRA, custodial, revocable trust, and managed Strategies accounts",
+        "b": "Individual, joint, Traditional, Roth, Rollover, SEP, and SIMPLE IRAs, solo 401(k), HSA, 529, trust, estate, custodial, and youth accounts"
+      },
+      {
+        "dimension": "IRA match",
+        "a": "3% on annual contributions with Robinhood Gold ($5 per month) or 1% without Gold; 1% match on rollovers and transfers",
+        "b": "Does not advertise an ongoing IRA contribution match comparable to Robinhood"
+      },
+      {
+        "dimension": "Fractional share trading",
+        "a": "Starts at $1 for eligible US exchange-listed stocks and ETFs trading above $1 with market cap over $25 million",
+        "b": "Stocks by the Slice starts at $1 down to three decimal places for NMS exchange-listed stocks and ETFs"
+      },
+      {
+        "dimension": "Mutual funds",
+        "a": "Not supported on Robinhood Financial",
+        "b": "Thousands available, including four Fidelity ZERO expense ratio index funds and no-transaction-fee funds"
+      },
+      {
+        "dimension": "Uninvested cash yield",
+        "a": "3.6% APY for Robinhood Gold members ($5 monthly fee) as of September 17, 2026 (variable rate)",
+        "b": "3.46% 7-day yield in default SPAXX core sweep as of September 24, 2026 (variable rate)"
+      },
+      {
+        "dimension": "Extended and overnight hours",
+        "a": "24 Hour Market runs Sunday 8:00 p.m. to Friday 8:00 p.m. ET for select stocks and ETFs with whole-share limit orders",
+        "b": "Premarket from 7:00 a.m. to 9:28 a.m. ET and after-hours from 4:00 p.m. to 8:00 p.m. ET"
+      },
+      {
+        "dimension": "Cryptocurrency trading",
+        "a": "Robinhood Crypto supports coins including BTC, ETH, DOGE, and SOL with recurring buys and staking from $1",
+        "b": "Fidelity Crypto supports BTC, ETH, FIDD, LTC, and SOL with a 1% trade fee; crypto IRAs and spot ETPs available"
+      },
+      {
+        "dimension": "Research and tools",
+        "a": "Robinhood Legend desktop charting platform and technical indicators at no extra cost",
+        "b": "StarMine Equity Summary Score combining 10 to 12 third-party research reports, screeners, and active trader software"
+      },
+      {
+        "dimension": "Customer service and branches",
+        "a": "24/7 in-app chat and phone callback service from 7:00 a.m. to 9:00 p.m. ET Monday through Friday; no branches",
+        "b": "24/7 phone support and 215 physical Investor Centers nationwide"
+      },
+      {
+        "dimension": "Margin rates",
+        "a": "5.25% up to $50,000 down to 4.20% over $50 million as of September 17, 2026 (variable); first $1,000 margin included with Gold",
+        "b": "Base rate 10.825% with effective rate 12.075% under $25,000 down to 7.75% over $1 million as of September 18, 2026 (variable)"
+      },
+      {
+        "dimension": "Full account transfer-out fee",
+        "a": "$100 ACATS fee for partial or full transfers out",
+        "b": "$0 for full or partial transfers out; $0 IRA closeout fee"
+      },
+      {
+        "dimension": "Managed portfolios",
+        "a": "Robinhood Strategies at 0.25% annual management fee ($50 minimum); Gold covers fee on first $100,000",
+        "b": "Fidelity Go at $0 under $25,000 and 0.35% at $25,000 and above ($10 minimum to start investing)"
+      },
+      {
+        "dimension": "Artificial intelligence tools",
+        "a": "Robinhood Cortex AI assistant for Gold; Robinhood Agents announced September 29, 2026 and coming soon to eligible users",
+        "b": "Automated screeners, technical pattern recognition, and virtual assistant support"
+      },
+      {
+        "dimension": "Futures trading",
+        "a": "Robinhood Derivatives charges $0.75 per contract ($0.50 with Gold) plus $0.02 NFA fee and exchange fees",
+        "b": "Direct retail futures pricing unpublished on reviewed primary pricing schedules"
+      },
+      {
+        "dimension": "SIPC and excess coverage",
+        "a": "SIPC up to $500,000 ($250,000 cash); excess coverage up to $1 billion aggregate ($50 million securities, $1.9 million cash limit)",
+        "b": "SIPC up to $500,000 ($250,000 cash); excess coverage up to $1 billion aggregate ($1.9 million cash limit, no dollar cap on securities)"
+      }
+    ]
+  },
+  "verdict": "Choose Robinhood if you want an automated 3% retirement match on annual IRA contributions through a Robinhood Gold subscription, access to overnight equity trading from Sunday night through Friday evening, low margin interest rates, or an accessible crypto trading workflow inside your primary brokerage. Choose Fidelity if you plan to consolidate your household finances in one place with a Health Savings Account (HSA), 529 college plan, or small business retirement account, or if you prefer zero-expense-ratio index mutual funds and in-person assistance at physical branch locations. Neither broker works as a universal solution for every investor. If you frequently trade OTC penny stocks, bonds, or require direct branch access, Robinhood falls short. If you rely on cheap margin borrowing or want an IRA match bonus, Fidelity falls short. Our recommendation flips toward Fidelity if you decide to transfer your portfolio out, because Robinhood charges a $100 transfer fee while Fidelity charges zero. Check your target account types and verify current margin schedules before moving your cash.",
+  "sections": [
+    {
+      "heading": "Robinhood vs Fidelity: Which Is Better for You?",
+      "content": "Fidelity is the stronger overall broker for investors who want broad account selection, in-depth fundamental research, and long-term retirement accounts, while Robinhood is better for active self-directed traders who want lower margin interest, a 3% retirement contribution match, and overnight trading. Deciding between Robinhood vs Fidelity comes down to the types of investments you plan to purchase and whether you prefer an app-driven experience or an established institution with local branches.\n\nPick Robinhood if your primary goals include building an IRA balance with matching funds or buying equities during non-standard hours. Robinhood Gold offers a 3% match on new IRA contributions, which adds up to $225 on the 2026 maximum annual contribution. Active traders also benefit from whole-share trading around the clock through Robinhood's 24 Hour Market, as well as competitive margin rates that undercut traditional discount brokers by several percentage points.\n\nPick Fidelity if you need a comprehensive financial home that supports accounts beyond basic taxable and individual retirement accounts. Fidelity offers Health Savings Accounts (HSAs), 529 education savings plans, custodial accounts, and small-business plans like the Solo 401(k) and SEP IRA. Fidelity also lets you trade mutual funds with zero expense ratios and gives you access to 215 walk-in Investor Centers across the country. Investors who want to see how Fidelity stacks up against other legacy firms can read our comparison of [Fidelity vs Charles Schwab](/compare/fidelity-vs-schwab/)."
+    },
+    {
+      "heading": "Trading Costs, Options Contracts, and Transfer Fees",
+      "content": "Both brokers provide commission-free online trading for US exchange-listed stocks and ETFs, but their pricing paths split on options and account transfers. Standard stock and ETF options trades on Robinhood carry no base contract fee, meaning you pay only pass-through charges. These include a combined $0.04 regulatory fee per options contract (effective January 10, 2025) and a Consolidated Audit Trail (CAT) fee of $0.0003 per contract. Index options on Robinhood carry a separate contract fee of $0.35 per contract for Robinhood Gold members and $0.50 per contract for non-Gold users.\n\nFidelity charges a standard fee of $0.65 per contract for online option trades. Investors who qualify as Professional Options Traders pay an extra $0.50 per contract on top of that base cost. However, Fidelity waives the contract fee when you place a buy-to-close option order valued at $0.65 or less, which helps short options sellers close low-value positions without friction.\n\nAccount transfer fees create another major cost difference between the two platforms. Robinhood charges a $100 Automated Customer Account Transfer Service (ACATS) fee for each partial or full transfer out of its platform. This fee is deducted from your cash balance or passed along to your receiving broker. In contrast, Fidelity charges zero dollars for outgoing full or partial transfers and charges no fee to close an IRA. If you like modern trading apps with zero commissions, compare our breakdown of [Robinhood vs Webull](/compare/robinhood-vs-webull/) to see how other mobile platforms handle account costs."
+    },
+    {
+      "heading": "Account Types and Retirement Investing with the IRA Match",
+      "content": "Fidelity provides far more account variety than Robinhood, making it capable of serving a family's complete financial lifecycle from birth to estate planning. Fidelity supports taxable brokerage accounts, Traditional, Roth, Rollover, Inherited, SEP, and SIMPLE IRAs, as well as Self-Employed 401(k) plans. It also features standalone Fidelity HSAs, 529 college savings accounts, trust and estate accounts, custodial setups, and specialized Youth Accounts for teenagers.\n\nRobinhood supports a smaller group of accounts focused on individual retail savers. The broker offers individual investing accounts, joint investing accounts with rights of survivorship, Traditional IRAs, Roth IRAs, and managed portfolios via Robinhood Strategies. Custodial accounts began rolling out on March 4, 2026, and revocable living trust accounts were announced for deployment later in 2026. Robinhood does not support HSAs, 529 plans, or employer 401(k) plans.\n\nRetirement savers get a rare perk at Robinhood through its IRA contribution match. Subscribers to Robinhood Gold, which costs $5 per month, receive a 3% match on eligible annual IRA contributions, while non-Gold users get a 1% match. Robinhood also provides a 1% match on IRA transfers and old 401(k) rollovers for any amount. To keep the match and avoid potential early withdrawal fees, the funds must remain in your Robinhood IRA for at least five years, and Gold users must maintain their subscription for one consecutive year following their first Gold match. You can project your potential balance growth using our [Roth IRA calculator](/investing/roth-ira-calculator/). Fidelity does not advertise an ongoing IRA contribution match comparable to Robinhood's promotional structure."
+    },
+    {
+      "heading": "Trading Hours and the Robinhood 24 Hour Market",
+      "content": "Robinhood delivers broader market access during off-hours through its overnight trading system, whereas Fidelity restricts extended sessions to traditional premarket and postmarket windows. Robinhood's 24 Hour Market operates continuously from Sunday at 8:00 p.m. ET through Friday at 8:00 p.m. ET. This system allows you to trade select US exchange-listed equities and ETFs overnight through Alternative Trading Systems (ATS).\n\nTrading overnight on Robinhood requires accepting specific order restrictions. Overnight orders must be submitted as whole-share limit orders, meaning market orders and fractional shares cannot be used. Furthermore, overnight trading volume is significantly lower than daytime market volume, which can lead to wider bid-ask spreads and sudden price changes. Learn more about order mechanics in our guide to [Robinhood 24 hour trading](/guides/robinhood-24-hour-trading/). At the HOOD Summit on September 29, 2026, Robinhood announced that 24/7 weekend equities trading is scheduled for rollout early next year, pending regulatory approval, along with extended options hours from 7:30 a.m. to 4:15 p.m. ET.\n\nFidelity maintains standard extended trading sessions without an overnight equities window. Clients can trade premarket orders from 7:00 a.m. to 9:28 a.m. ET and after-hours orders from 4:00 p.m. to 8:00 p.m. ET on regular business days. Fidelity's official trading documentation lists no overnight trading session. Day traders and earnings-announcement traders who need to react to late-breaking global news at 2:00 a.m. ET will find Robinhood's schedule far more accommodating."
+    },
+    {
+      "heading": "Cash Sweep Programs, Mutual Funds, and Margin Borrowing",
+      "content": "Fidelity sweeps idle brokerage cash into money market funds by default, while Robinhood requires an active Gold subscription to unlock its highest sweep yields. Uninvested cash in new retail Fidelity accounts automatically flows into the Fidelity Government Money Market Fund (SPAXX). As of September 24, 2026, SPAXX offered a 7-day yield of 3.46%, which is a variable rate. Because SPAXX is a money market mutual fund, it is backed by government securities rather than Federal Deposit Insurance Corporation (FDIC) coverage.\n\nRobinhood operates a High-Yield Cash Program through partner banks that pays a 3.6% APY to Robinhood Gold members as of September 17, 2026, which is also a variable rate. Cash enrolled in this sweep program receives pass-through FDIC insurance across Robinhood's network of receiving banks. However, unlocking this yield requires paying the $5 monthly Gold subscription fee, making the sweep less attractive if your cash balance is small. Check our analysis of whether [Robinhood Gold is worth it](/guides/is-robinhood-gold-worth-it/) before signing up for the membership tier.\n\nMutual funds highlight an absolute operational divide between the two brokerages. Robinhood Financial does not support mutual funds or direct bond purchases. Fidelity is an industry giant in mutual funds, offering thousands of options with no transaction fees. Most notably, Fidelity provides four proprietary ZERO index mutual funds that charge a 0% expense ratio with no investment minimums: Large Cap Index (FNILX), Extended Market Index (FZIPX), Total Market Index (FZROX), and International Index (FZILX). Holding these funds inside a taxable account requires care, because selling them within 60 days of purchase can trigger a $49.95 short-term redemption fee on certain funds.\n\nMargin lending represents a decisive win for Robinhood. As of September 17, 2026, Robinhood's variable margin rates run at 5.25% for borrowing balances up to $50,000, 5.05% for $50,000 to $100,000, and 4.75% for $100,000 to $1 million, with rates dropping to 4.20% for $50 million or more. Robinhood Gold subscribers also get their first $1,000 of margin borrowing interest-free. By comparison, Fidelity's margin base rate stood at 10.825% as of September 18, 2026 (variable), creating an effective borrowing rate of 12.075% on balances under $25,000. Fidelity's rate decreases to 7.75% only when borrowing exceeds $1 million, making Robinhood far more cost-effective for retail margin investors."
+    },
+    {
+      "heading": "Research Platforms, Active Tools, and Artificial Intelligence",
+      "content": "Fidelity leads in institutional equity research and screening tools, whereas Robinhood has concentrated on proprietary charting and newly unveiled artificial intelligence features. Fidelity clients receive the StarMine Equity Summary Score on individual stocks, which consolidates sentiment ratings from 10 to 12 independent third-party research firms. Fidelity also provides detailed thematic stock screeners, advanced fixed-income tools, and downloadable trading platforms suited for seasoned market analysts.\n\nRobinhood equips active traders through Robinhood Legend, a dedicated desktop trading interface provided at zero additional cost. Legend gives users multi-monitor workspaces, real-time depth charting, custom watchlists, and technical analysis indicators. It bridges the gap between Robinhood's historically basic mobile design and professional charting applications.\n\nArtificial intelligence represents Robinhood's fastest-moving product frontier. Robinhood Gold subscribers have access to Robinhood Cortex, an embedded AI assistant that summarizes portfolio holdings, answers investing questions, builds custom stock screens, and drafts trade orders that users manually verify and submit. Robinhood Cortex is legally restricted from giving direct buy or sell advice. Expanding beyond Cortex, Robinhood announced Robinhood Agents at its HOOD Summit on September 29, 2026. Billed as an embedded AI experience designed to analyze markets, build strategies, and trade on your behalf around the clock, Robinhood Agents is coming soon to eligible US customers. Trades execute exclusively inside dedicated agentic trading accounts with manual trade approval enabled by default. You can read our detailed breakdown of [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/) to see how automated execution operates."
+    },
+    {
+      "heading": "Managed Portfolios and Automated Investing",
+      "content": "Both brokers offer automated robo-advisory accounts for investors who prefer hands-off portfolio management over picking individual stocks. Robinhood Strategies charges an annual advisory fee of 0.25% of assets under management, with an opening minimum of $50. For Robinhood Gold members, the 0.25% management fee is waived on the first $100,000 in assets. Robinhood Strategies is available across individual taxable accounts, Traditional IRAs, and Roth IRAs, though balances managed by Strategies cannot earn the IRA contribution match.\n\nFidelity Go provides an automated robo-advisory service with no advisory fee on balances under $25,000. Once your account reaches $25,000 or more, Fidelity Go charges an annual advisory fee of 0.35%. Opening an account has no minimum, but your balance must reach at least $10 before Fidelity Go begins investing your cash. Fidelity Go can be deployed across taxable accounts, Traditional, Roth, Rollover, and SEP IRAs, as well as HSAs. Investors maintaining $25,000 or more also receive access to one-on-one financial coaching sessions. To compare alternative hands-off investment platforms, browse our review of the [best robo-advisors](/roundup/best-robo-advisors/)."
+    },
+    {
+      "heading": "Broker Safety, Asset Protection, and Customer Support",
+      "content": "Both Robinhood and Fidelity are regulated broker-dealers that provide standard Securities Investor Protection Corporation (SIPC) coverage alongside private excess insurance policies. Brokerage accounts at both firms carry SIPC protection up to $500,000 total, which includes up to $250,000 in cash claims, against broker insolvency. SIPC coverage does not protect against market losses or falling stock prices.\n\nBoth companies supplement statutory insurance with private excess-of-SIPC policies underwritten through Lloyd's of London. Robinhood maintains an aggregate excess coverage limit of $1 billion across all customers, with a per-customer limit of $50 million in securities and $1.9 million in uninvested cash. Fidelity similarly carries an aggregate limit of $1 billion with a $1.9 million cash ceiling, but offers no per-customer dollar cap on securities. Cryptocurrency held through Robinhood Crypto or Fidelity Digital Assets, as well as futures contracts at Robinhood Derivatives, are not securities and receive no SIPC protection. For an in-depth examination of broker security, read our guide on [is Robinhood safe](/guides/is-robinhood-safe/).\n\nCustomer service channels differ substantially in accessibility. Fidelity offers 24/7 direct phone support at 800-343-3548 and operates 215 physical Investor Centers where clients can meet representatives face to face. Robinhood operates without brick-and-mortar locations. Customer support is handled via 24/7 in-app chat, along with a phone callback feature available Monday through Friday from 7:00 a.m. to 9:00 p.m. ET for eligible investing inquiries. Investors who prefer having a local branch or immediate inbound phone line will find Fidelity's infrastructure significantly more reassuring."
+    },
+    {
+      "heading": "How to Transfer Assets Between Robinhood and Fidelity",
+      "content": "Transferring your investment portfolio between Robinhood and Fidelity is handled through the Automated Customer Account Transfer Service without requiring you to liquidate your holdings into cash. When moving from Robinhood to Fidelity, you initiate the transfer request through Fidelity's transfer portal. You will provide your Robinhood account number and specify whether you are performing a full or partial transfer.\n\nKeep Robinhood's transfer costs and investment limits in mind before starting the move. Robinhood assesses a $100 ACATS fee on all outgoing transfers. This fee will be deducted directly from your uninvested cash balance, or charged against your new Fidelity account if you lack cash. If you hold cryptocurrencies or fractional shares at Robinhood, note that crypto assets cannot be transferred directly into a standard Fidelity brokerage account via ACATS. Any fractional shares held at Robinhood will be liquidated into cash during a full transfer, with the resulting cash sent to your new broker.\n\nMoving an account in the opposite direction from Fidelity to Robinhood is equally straightforward. Fidelity charges zero dollars in transfer-out fees, meaning your full balance arrives intact at Robinhood. If you are rolling over a retirement account, track your expected balance accumulation with our [investment growth calculator](/investing/investment-growth-calculator/) to measure how lower ongoing fees impact your final portfolio value."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is Robinhood or Fidelity better?",
+      "answer": "Neither brokerage is universally better because each serves different investor needs. Fidelity is better for long-term investors seeking comprehensive account choices like HSAs and 529 plans, physical branch support, zero-expense index funds, and third-party research. Robinhood is better for active traders and mobile users who want an automated 3% IRA contribution match through Gold, lower margin interest rates, and access to overnight equity trading."
+    },
+    {
+      "question": "What's better for beginners, Fidelity or Robinhood?",
+      "answer": "Robinhood is generally easier for beginners who want a simple, clean mobile interface that allows them to start buying fractional shares for as little as $1. However, Fidelity is better for beginners who want an all-in-one platform where they can learn investing principles, open a retirement account, use automated robo-advising via Fidelity Go for free under $25,000, and consult customer service representatives over the phone anytime."
+    },
+    {
+      "question": "What is the downside to using Robinhood?",
+      "answer": "The main downsides to using Robinhood include its lack of mutual funds and individual bond trading, the absence of tax-advantaged accounts like HSAs and 529 college savings plans, and a $100 transfer-out fee if you decide to move your assets to another broker. Robinhood also lacks physical branches and direct inbound phone support, relying instead on scheduled callbacks and in-app chat."
+    },
+    {
+      "question": "Is Robinhood or Fidelity better for a Roth IRA?",
+      "answer": "Robinhood is better if your primary goal is maximizing your annual contribution balance, as Robinhood Gold members earn a 3% match on new IRA contributions (worth up to $225 on 2026 limits) provided the funds remain in the account for five years. Fidelity is better if you want a complete retirement lineup that includes zero-fee index mutual funds, automated portfolio management with financial coaching, or the option to hold specialized accounts like a SEP IRA or Solo 401(k)."
+    },
+    {
+      "question": "Can I transfer from Robinhood to Fidelity?",
+      "answer": "Yes, you can transfer your stocks, ETFs, and cash from Robinhood to Fidelity using the Automated Customer Account Transfer Service (ACATS). You start the request through Fidelity, which pulls the assets from Robinhood. Keep in mind that Robinhood charges a $100 fee for outgoing transfers, fractional shares will be sold for cash, and cryptocurrencies cannot transfer directly into a standard Fidelity brokerage account."
+    },
+    {
+      "question": "Does Fidelity have 24 hour trading like Robinhood?",
+      "answer": "No, Fidelity does not offer an overnight 24-hour stock trading market on its published trading schedules. Fidelity offers standard premarket trading from 7:00 a.m. to 9:28 a.m. ET and after-hours trading from 4:00 p.m. to 8:00 p.m. ET on regular market days. In contrast, Robinhood's 24 Hour Market permits trading in select stocks and ETFs from Sunday at 8:00 p.m. ET through Friday at 8:00 p.m. ET."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Robinhood, Trading Fees",
+      "url": "https://robinhood.com/us/en/support/articles/trading-fees-on-robinhood"
+    },
+    {
+      "label": "Robinhood, 24 Hour Market",
+      "url": "https://robinhood.com/us/en/support/articles/24hour-market"
+    },
+    {
+      "label": "Robinhood, IRA Overview",
+      "url": "https://robinhood.com/us/en/support/articles/ira-overview/"
+    },
+    {
+      "label": "Robinhood, Margin Rates",
+      "url": "https://robinhood.com/us/en/support/articles/margin-rates"
+    },
+    {
+      "label": "Fidelity, Commissions, Margin Rates, and Fees",
+      "url": "https://www.fidelity.com/trading/commissions-margin-rates"
+    },
+    {
+      "label": "Fidelity, All Account Types",
+      "url": "https://www.fidelity.com/open-account/all-accounts"
+    },
+    {
+      "label": "Fidelity, Order FAQs and Trading Hours",
+      "url": "https://www.fidelity.com/trading/faqs-placing-orders"
+    },
+    {
+      "label": "Fidelity, Safeguarding Your Accounts",
+      "url": "https://www.fidelity.com/why-fidelity/safeguarding-your-accounts"
+    }
+  ],
+  "relatedComparisons": [
+    "robinhood-vs-webull",
+    "charles-schwab-vs-robinhood",
+    "sofi-invest-vs-robinhood",
+    "fidelity-vs-schwab",
+    "vanguard-vs-fidelity",
+    "etrade-vs-fidelity"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Roth IRA calculator",
+      "href": "/investing/roth-ira-calculator/"
+    },
+    {
+      "label": "Investment growth calculator",
+      "href": "/investing/investment-growth-calculator/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

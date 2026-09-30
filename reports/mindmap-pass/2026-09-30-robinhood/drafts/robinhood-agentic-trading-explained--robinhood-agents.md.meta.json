@@ -1,0 +1,44 @@
+{
+ "slug": "robinhood-agentic-trading-explained--robinhood-agents",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 903,
+ "floor": 600,
+ "input_tokens": 22511,
+ "output_tokens": 1455,
+ "thinking_tokens": 1457,
+ "cached_tokens": 17752,
+ "est_cost_usd": 0.0178,
+ "guards": {
+  "repairs": [
+   "removed 2 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "auditor: verify the sentences that cited ['https://agent.robinhood.com/mcp/trading`', 'https://agent.robinhood.com/mcp/trading`.'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://agent.robinhood.com/mcp/trading`",
+   "https://agent.robinhood.com/mcp/trading`."
+  ],
+  "words": 903,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18170
+  }
+ },
+ "seconds": 12.4,
+ "response_id": "dYy9avfqEfiY6dkP05KKIA",
+ "generated_at": "2026-09-30T17:26:08-0500"
+}
