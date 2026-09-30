@@ -7,7 +7,6 @@ code path, so swapping models fleet-wide is one env change:
     CONTENT_MODEL=gemini-3.8-flash          primary  (default)
     CONTENT_FALLBACK_MODEL=gpt-6-sol      used ONLY when the primary fails; always logged
     CONTENT_THINKING=high                   reasoning effort (gemini thinkingLevel / openai effort)
-    CONTENT_SECTION_THINKING=high           ceiling for `section` enrichments (never above CONTENT_THINKING)
     CONTENT_MAX_TOKENS=40000                thinking tokens count against this on Gemini
 
 Provider is inferred from the model name (gemini-* -> Google, gpt-*/o* -> OpenAI,
@@ -87,13 +86,6 @@ _t = os.environ.get("CONTENT_THINKING", "high").strip().lower()
 THINKING = _t if (_t in ("low", "medium", "high") or _t.lstrip("-").isdigit()) else "high"
 if _t and THINKING != _t:
     print(f"[content_gen] WARNING: CONTENT_THINKING={_t!r} not recognised — using 'high'", file=sys.stderr)
-# Enrichments (`section`) are short — a median of ~150 output tokens — yet at "high" each one
-# spent ~9k thinking tokens: 919 such calls cost as much as 564 whole pages (2026-09-13..30).
-# They get their own ceiling; the lower of the two levels wins, so a low-tier site stays low.
-# Default "high" = no change; low-tier repos set it in .claude/content-gen.env.
-_LEVELS = ("low", "medium", "high")
-_st = os.environ.get("CONTENT_SECTION_THINKING", "high").strip().lower()
-SECTION_THINKING = _st if _st in _LEVELS else "high"
 MAX_TOKENS = int(os.environ.get("CONTENT_MAX_TOKENS", "40000"))
 RETRIES = int(os.environ.get("CONTENT_RETRIES", "6"))
 BACKOFF_CAP = int(os.environ.get("CONTENT_BACKOFF_CAP", "20"))
@@ -102,25 +94,20 @@ GEMINI_MODE = os.environ.get("GEMINI_API_MODE", "aistudio").lower()
 GEMINI_PROJECT = os.environ.get("GEMINI_PROJECT", "")
 GEMINI_LOCATION = os.environ.get("GEMINI_LOCATION", "global")
 JSON_MODE = False   # set by complete(json_mode=True): ask the provider for a JSON object
-CMD = "complete"    # write | section | complete — recorded in the usage ledger
 
 # USD per 1M tokens (input, output). Thinking bills as output. Override per run with
 # CONTENT_RATE_IN / CONTENT_RATE_OUT. Gemini 3.8 Flash intro rate doubles 2027-01-01.
 RATES = {
     "gemini-3.8-flash": (0.75, 3.75),
-    "gemini-3.5-flash-lite": (0.30, 2.50),
-    "gemini-3.1-flash-lite": (0.25, 1.50),
-    "gpt-6-sol": (2.00, 10.00),
 }
 # Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a
 # run (~25k tokens), so it is cached ONCE per run and referenced per call. Cached input bills at
-# a fraction of the input rate (CONTENT_RATE_CACHED, default 0.10 of input — Google's published
-# cached rate for 3.8 Flash, $0.075 vs $0.75, checked 2026-09-30) plus a negligible
+# a fraction of the input rate (CONTENT_RATE_CACHED, default 0.25 of input) plus a negligible
 # hourly storage fee. CONTENT_CACHE=0 disables; CONTENT_CACHE_MIN_TOKENS is the size floor.
 CACHE_ON = os.environ.get("CONTENT_CACHE", "1") != "0"
 CACHE_MIN_TOKENS = int(os.environ.get("CONTENT_CACHE_MIN_TOKENS", "4096"))
 CACHE_TTL_S = int(os.environ.get("CONTENT_CACHE_TTL", "3600"))
-CACHED_RATE = float(os.environ.get("CONTENT_RATE_CACHED", "0.10"))
+CACHED_RATE = float(os.environ.get("CONTENT_RATE_CACHED", "0.25"))
 
 SECRET_FILES = [os.environ.get("CONTENT_SECRETS", ""), ".env",
                 os.path.expanduser("~/.claude/secrets.env")]
@@ -196,7 +183,6 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
             "caller": CALLER, "kind": kind, "model": r.get("model"),
             "provider": r.get("provider"), "input_tokens": it, "output_tokens": ot,
             "thinking_tokens": tt, "cached_tokens": ct, "cost_usd": cost, "thinking": THINKING,
-            "cmd": CMD,
             "fallback_used": bool(r.get("fallback_used")), "finish": r.get("finish"),
             "discarded": discarded, "note": note, "repo": (_repo_root().name if _repo_root() else None),
             "response_id": r.get("response_id"),
@@ -436,133 +422,7 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
 CALLERS = {"gemini": call_gemini, "openai": call_openai, "anthropic": call_anthropic}
 
 
-# ───────────────────────────── raw-HTML → markdown (writer output) ─────────────────────────────
-# Page prose renders through renderSectionContent/renderInline, which parse MARKDOWN and never
-# use dangerouslySetInnerHTML. An <a href> or <table> the model writes is therefore escaped by
-# React and the reader sees the markup — and the entity autolinker then linkifies company names
-# inside that visible tag soup. This shipped live on 5 pages (2026-09-22) before anything caught
-# it, so the writer's output is normalised here, for every routine and every repo on the fleet.
-#
-# Applied to the raw completion text, which is why both quote forms are handled: JSON mode emits
-# <a href=\"…\" > inside a string literal, markdown mode emits <a href="…">.
-_A_TAG = re.compile(r'<a\s[^>]*?href=(\\?["\'])(.*?)\1[^>]*?>(.*?)</a\s*>', re.I | re.S)
-_STRONG = re.compile(r'</?(?:strong|b)(?:\s[^>]*)?>', re.I)
-_EM = re.compile(r'</?(?:em|i)(?:\s[^>]*)?>', re.I)
-_BREAK = re.compile(r'<(?:br|hr)(?:\s[^>]*)?/?>', re.I)
-_OTHER_TAG = re.compile(r'</?(?:p|div|span|u)(?:\s[^>]*)?/?>', re.I)
-
-
-def _strip_tags(s: str) -> tuple[str, int]:
-    """Emphasis is preserved as markdown (renderInline parses ** and *); the rest is dropped."""
-    n = 0
-    s, k = _STRONG.subn("**", s); n += k
-    s, k = _EM.subn("*", s); n += k
-    s, k = _BREAK.subn(" ", s); n += k
-    s, k = _OTHER_TAG.subn("", s); n += k
-    return re.sub(r"[ \t]{2,}", " ", s), n
-
-
-def _md_url(u: str) -> str:
-    """INLINE_LINK in sectionContent.tsx matches [^)\\s]+, so a paren or space truncates the URL."""
-    return u.replace("(", "%28").replace(")", "%29").replace(" ", "%20")
-
-
-def dehtml_links(text: str) -> tuple[str, int]:
-    """Rewrite raw anchors as markdown links and drop inline formatting tags.
-
-    Returns (text, count). Tables are NOT rewritten here — a GFM table has to become one
-    pipe-row per content[] element, which is a structural change this text-level pass cannot
-    make safely. They are reported by the caller and fail the build gate instead.
-    """
-    n = 0
-
-    def sub(m):
-        nonlocal n
-        url, label = m.group(2), m.group(3)
-        label = _strip_tags(label)[0].strip()
-        if not label or "]" in label or "[" in label:
-            return label                      # markdown-unsafe label -> plain text
-        n += 1
-        return f"[{label}]({_md_url(url)})"
-
-    out = _A_TAG.sub(sub, text)
-    out, k = _strip_tags(out)
-    return out, n + k
-
-
 LAST_SCOPE = {}   # what writer_scope dropped on the most recent generate() — read by cmd_write for meta
-
-
-# ───────────────────────────── truncation detection ─────────────────────────────
-# The provider's finish reason is NOT enough. Gemini returns finishReason="STOP" on
-# output that stops mid-sentence, so the MAX_TOKENS retry below never fired and the
-# clipped page went to the audit, which refused it. 15 of 45 pages were lost that way
-# on the Opus 5.5 launch (2026-09-22) — every core Tier 0 page and all 9 comparisons.
-# So we also LOOK at the text: unparseable JSON, or a prose field that just stops.
-
-# A prose string that ends without terminal punctuation is the tell. Headings, labels,
-# slugs and table rows legitimately end bare, so only long free-text is judged, and the
-# bar is deliberately high — a false positive costs one retry, a false negative costs
-# the page.
-# Terminal punctuation, including the non-Latin marks the fleet's localized pages use.
-_ENDS_CLEAN = re.compile(r'[.!?:;"\'\)\]}»”’…|\-。！？；：、؟।۔]\s*$')
-# A markdown table row, with or without the leading pipe — the generator emits both.
-_TABLE_ROW = re.compile(r'^\s*\|.*\|\s*$|(?:[^|\n]*\|){2,}')
-_PROSE_MIN = 60
-# WHITELIST, not a blacklist. Only fields that hold running prose are judged: a bullet,
-# a table cell, a heading or a label ends without a full stop by design. Measured against
-# all 2,438 published pages, a blacklist flagged 33% of them; this flags none.
-_PROSE_KEYS = {
-    "introtext", "content", "answer", "callout", "verdict", "summary",
-    "body", "intro", "excerpt", "whatsnew", "takeaway",
-    # NOT "description": relatedLinks[].description is a link blurb, deliberately clipped.
-}
-
-
-def _clipped_strings(node, out=None, where=""):
-    out = [] if out is None else out
-    if isinstance(node, dict):
-        for k, v in node.items():
-            _clipped_strings(v, out, f"{where}.{k}" if where else k)
-    elif isinstance(node, list):
-        for i, v in enumerate(node):
-            _clipped_strings(v, out, f"{where}[{i}]")
-    elif isinstance(node, str):
-        s = node.strip()
-        key = re.sub(r"\[\d+\]", "", where).split(".")[-1].lower()
-        if key not in _PROSE_KEYS:
-            return out
-        if (len(s) >= _PROSE_MIN and len(s.split()) >= 10
-                and not _TABLE_ROW.match(s) and not _ENDS_CLEAN.search(s)
-                and not re.search(r'https?://\S+$', s)):
-            out.append((where or "(root)", s[-60:]))
-    return out
-
-
-def looks_truncated(text: str, json_mode: bool) -> str:
-    """Return a reason string when the output is clipped, else ""."""
-    t = (text or "").strip()
-    if not t:
-        return "empty"
-    if json_mode:
-        # JSON mode is the strong case: a response cut mid-string cannot parse.
-        try:
-            data = json.loads(t)
-        except Exception:  # noqa: BLE001
-            return "unparseable JSON (cut mid-structure)"
-        bad = _clipped_strings(data)
-        if bad:
-            where, tail = bad[0]
-            return f"{len(bad)} field(s) stop mid-sentence, e.g. {where}: ...{tail!r}"
-        return ""
-    # prose/markdown mode: judge the last substantive line
-    lines = [l for l in t.split("\n") if l.strip()]
-    last = lines[-1].strip() if lines else ""
-    if last.startswith("```") or _TABLE_ROW.match(last) or last.startswith("#") or last.startswith("|"):
-        return ""
-    if len(last) >= _PROSE_MIN and len(last.split()) >= 10 and not _ENDS_CLEAN.search(last):
-        return f"last line stops mid-sentence: ...{last[-60:]!r}"
-    return ""
 
 
 def generate(system: str, prompt: str) -> dict:
@@ -586,40 +446,24 @@ def generate(system: str, prompt: str) -> dict:
             errors.append(f"{model}: {type(e).__name__}: {str(e)[:200]}")
             log(f"{model} failed -> {errors[-1][:160]}")
             continue
-        # Truncated = the provider SAID so, or the text itself stops mid-sentence.
-        # The second half is the one that matters: Gemini reports STOP on clipped output.
-        why = "provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS" else looks_truncated(r["text"], JSON_MODE)
-        if why:
+        if r["finish"] == "MAX_TOKENS":
             # Cheapest rung first: the SAME model with double the cap, once, before falling back.
             cap = {"gemini": 65536, "openai": 128000, "anthropic": 64000}[provider_for(model)]
             retry_tokens = min(MAX_TOKENS * 2, cap)
-            log(f"{model}: truncated ({why}) at MAX_TOKENS={MAX_TOKENS} — retrying once "
-                f"with {retry_tokens} (provider ceiling {cap})")
+            log(f"{model}: truncated at MAX_TOKENS={MAX_TOKENS} — retrying once with {retry_tokens} (provider ceiling {cap})")
             record(r, kind="truncated-discarded", discarded=True,
-                   note=f"{why}; output thrown away; retried at {retry_tokens}")
+                   note=f"output thrown away; retried at {retry_tokens}")
             try:
                 r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, THINKING)
             except Exception as e:  # noqa: BLE001
                 errors.append(f"{model}: retry failed: {str(e)[:160]}"); continue
-            why2 = ("provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS"
-                    else looks_truncated(r["text"], JSON_MODE))
-            if why2:
-                # Still clipped at double the cap -> fall through to the next model in the
-                # chain rather than publishing half a page.
-                errors.append(f"{model}: still truncated at {retry_tokens} ({why2})")
+            if r["finish"] == "MAX_TOKENS" or not r["text"].strip():
+                errors.append(f"{model}: still truncated at {retry_tokens}")
                 continue
             r["retried_for_truncation"] = True
         if not r["text"].strip():
             errors.append(f"{model}: empty response (finish={r['finish']})")
             continue
-        # Normalise raw HTML the model wrote into prose before any caller sees it.
-        cleaned, n_html = dehtml_links(r["text"])
-        if n_html:
-            log(f"normalised {n_html} raw HTML tag(s) in writer output -> markdown")
-            r["text"] = cleaned
-        if re.search(r"<(table|thead|tbody|tr|t[hd])[ >]", r["text"], re.I):
-            log("WARNING: writer emitted a raw HTML <table>; it must become a GFM table "
-                "(one pipe-row per content[] element) or the build gate will reject it")
         r["fallback_used"] = i > 0
         r["fallback_reason"] = "; ".join(errors) if i > 0 else None
         # Always log a successful generation: a silent success is invisible in cron logs, and
@@ -846,8 +690,6 @@ def est_cost(model: str, it, ot, tt, ct=0) -> float | None:
 
 
 def cmd_preflight(a) -> int:
-    global CMD
-    CMD = "preflight"
     chain = [MODEL] + ([FALLBACK] if FALLBACK else [])
     print(f"[content_gen] primary   : {MODEL} ({provider_for(MODEL)})")
     print(f"[content_gen] fallback  : {FALLBACK or 'none'}")
@@ -1032,11 +874,7 @@ def cmd_system(a) -> int:
 
 
 def cmd_write(a) -> int:
-    global CALLER, JSON_MODE, THINKING, CMD
-    CMD = a.cmd
-    if a.cmd == "section" and THINKING in _LEVELS and _LEVELS.index(SECTION_THINKING) < _LEVELS.index(THINKING):
-        log(f"section: thinking {THINKING} -> {SECTION_THINKING} (CONTENT_SECTION_THINKING)")
-        THINKING = SECTION_THINKING
+    global CALLER, JSON_MODE
     if not CALLER:
         # Routines write under reports/<routine>/<date>/drafts/… — the routine name IS the caller.
         parts = pathlib.Path(a.out).resolve().parts
