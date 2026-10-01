@@ -220,3 +220,7 @@
 | /retirement/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-brokers-for-treasury-bonds/ | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-budgeting-apps | 2026-09-30 | 1 | 0/0/0/0/0 | 0 |
+| /real-estate/capital-gains-calculator/ | 2026-10-01 | 1 | 1/0/0/0/0 | 0 |
+| /retirement/early-retirement-calculator | 2026-10-01 | 1 | 0/0/0/0/0 | 0 |
+| /retirement/pension-calculator/ | 2026-10-01 | 1 | 1/0/0/0/0 | 0 |
+| /roundup/business-line-of-credit-rates-by-lender/ | 2026-10-01 | 1 | 0/0/0/0/0 | 0 |

@@ -1,0 +1,49 @@
+{
+ "slug": "how-long-will-my-pension-last",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1851,
+ "floor": 1100,
+ "input_tokens": 21065,
+ "output_tokens": 3123,
+ "thinking_tokens": null,
+ "cached_tokens": 19089,
+ "est_cost_usd": 0.0146,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1851,
+  "numbers_not_in_facts": [
+   "01",
+   "11",
+   "150000",
+   "2026"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 19760
+  }
+ },
+ "seconds": 15.2,
+ "response_id": "gye-atK9BOOssOIPuZyKiAc",
+ "generated_at": "2026-10-01T09:27:44+0000"
+}

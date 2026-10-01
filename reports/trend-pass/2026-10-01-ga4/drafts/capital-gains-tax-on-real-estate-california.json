@@ -1,0 +1,87 @@
+{
+  "updated": "2026-10-01",
+  "slug": "capital-gains-tax-on-real-estate-california",
+  "title": "Capital Gains Tax on Real Estate California",
+  "metaDescription": "Calculate capital gains tax on real estate in California. See how federal rates, California state income tax, and the Section 121 exclusion apply to your sale.",
+  "h1": "Capital Gains Tax on Real Estate in California",
+  "cardBlurb": "Learn how federal rates, California ordinary income tax up to 13.3%, and the Section 121 primary home exclusion apply to property sales.",
+  "introText": "Capital gains tax on real estate in California combines federal capital gains rates of 0%, 15%, or 20% with California ordinary income tax rates of up to 13.3%, because California offers no preferential rate for capital assets. At ModernWallet, we review state and federal tax mechanics directly from statutory sources so sellers understand their real liability before closing escrow.\n\nYour taxable gain equals the amount realized from the sale minus your adjusted basis. If the property served as your primary residence and you lived in it for two of the prior five years, federal law and California state rules let you exclude up to $250,000 in gain if you file as a single taxpayer, or up to $500,000 if you file married jointly. Any remaining profit above that threshold faces both federal and California levies.\n\nInvestment properties and second homes do not qualify for the primary residence exclusion, meaning the full gain face taxes unless deferred. Sellers also encounter extra liabilities like the federal Net Investment Income Tax and California escrow withholding on out-of-state transitions.",
+  "sections": [
+    {
+      "heading": "Calculation of Taxable Gain on Property Sales",
+      "body": "Capital gains tax on real estate California sellers owe starts with determining your net taxable profit through two primary components: amount realized and adjusted basis. The amount realized equals the final contract sale price minus allowable selling costs, such as transfer taxes, legal fees, and commissions. Your adjusted basis starts with the original purchase price, plus capital improvements and qualified closing costs from purchase, minus any depreciation previously claimed or allowed.\n\nTo see this arithmetic in action, consider a concrete worked example. Assume a seller bought a home for $400,000, spent $50,000 on capital improvements including a new roof and kitchen, and later sold the property for $900,000 while paying $54,000 in selling costs:\n\n* Original Purchase Price: $400,000\n* Capital Improvements: $50,000\n* Adjusted Basis ($400,000 + $50,000): $450,000\n* Gross Sale Price: $900,000\n* Selling Costs: $54,000\n* Amount Realized ($900,000 - $54,000): $846,000\n* Total Capital Gain ($846,000 - $450,000): $396,000\n\nThis $396,000 balance represents the total gain. It does not automatically represent the amount subject to tax, because your usage of the property dictates your available exclusions. You can model your personal property purchase and renovation costs using our [capital gains calculator](/real-estate/capital-gains-calculator/) to establish your baseline numbers."
+    },
+    {
+      "heading": "Federal Tax Rates on Real Estate Profits",
+      "body": "Federal taxation on real property profits depends primarily on how long you owned the asset prior to closing. Real estate held for one year or less falls under short-term capital gains rules, which means the federal government taxes the gain as ordinary income at standard tax brackets. You can review how this contrasts with investment structures in our guide to [ordinary income vs capital gains tax](/compare/ordinary-income-vs-capital-gains-tax/).\n\nProperty held for more than one year qualifies for long-term capital gains treatment, which applies preferential rates of 0%, 15%, or 20%. The rate that applies to your transaction depends on your overall taxable income for the year of sale. The exact income brackets governing the 0%, 15%, and 20% thresholds change annually, so review [IRS Topic 409, capital gains and losses](https://www.irs.gov/taxtopics/tc409) to confirm your specific bracket.\n\nHigher-income real estate sellers must also account for the Net Investment Income Tax (NIIT). The NIIT adds a 3.8% surtax on net investment income, including real estate capital gains, for taxpayers with modified adjusted gross income exceeding $200,000 for single filers or $250,000 for married couples filing jointly. Congress set these statutory thresholds without inflation adjustments, so long-held properties that appreciate significantly often push sellers over these limits."
+    },
+    {
+      "heading": "California State Income Tax on Capital Assets",
+      "body": "California has no separate or reduced capital gains tax rate for real estate sales. The state taxes all net capital gains as standard ordinary income through its progressive bracket schedule, regardless of whether you held the property for six months or thirty years. This approach exposes California property sellers to standard state income tax brackets on every dollar of non-excluded profit.\n\nCalifornia state income tax rates reach a top marginal bracket of 12.3%, with an additional 1% Mental Health Services Tax assessed on taxable income over $1,000,000. This brings the top marginal state rate to 13.3% on qualifying real estate earnings. You should consult the [California Franchise Tax Board](https://www.ftb.ca.gov/) to identify the state income brackets that correspond to your household income level.\n\nBecause state rates run alongside federal rates, combined taxation can consume a substantial share of profit on non-primary assets. Sellers looking at inherited estates should also review our overview of [capital gains tax on inherited property](/guides/capital-gains-tax-on-inherited-property/) to see how basis resets alter these calculations, while older owners can evaluate [capital gains tax for seniors](/guides/capital-gains-tax-for-seniors/) before disposing of long-held assets."
+    },
+    {
+      "heading": "Primary Residence Exclusions Under Section 121",
+      "body": "The primary residence exclusion under Internal Revenue Code Section 121 shields large property gains from both federal and state tax bills. To qualify, you must have owned the property and used it as your principal residence for at least two of the five years immediately preceding the date of sale. Qualified single filers can exclude up to $250,000 of gain, while married couples filing jointly can exclude up to $500,000.\n\nCalifornia tax law generally conforms to this federal exclusion, applying the exact same ownership and residency tests. Taxpayers can typically claim this exclusion once every two years, as detailed in [IRS Topic 701, sale of your home](https://www.irs.gov/taxtopics/tc701). When your gain falls within these boundaries, you pay no federal or California capital gains tax on the excluded amount.\n\nLooking back at our worked example with a $396,000 total gain illustrates the power of this exclusion. A married couple filing jointly who meets the residency test can exclude up to $500,000, which means none of the $396,000 gain is subject to state or federal tax. A single taxpayer with the same transaction excludes $250,000, leaving a net taxable capital gain of $146,000 ($396,000 minus $250,000) that remains exposed to both federal capital gains rates and California state income brackets."
+    },
+    {
+      "heading": "Rental Property Considerations and Depreciation Recapture",
+      "body": "Selling a rental property or commercial building removes the primary residence exclusion and introduces depreciation adjustments. When you claim depreciation deductions during the years a property is rented, those deductions decrease your adjusted basis. A lower basis directly expands your net capital gain when you eventually sell the asset.\n\nFederal tax law divides profits from depreciated rental assets into standard capital gains and unrecaptured Section 1250 gain. The portion of your profit that reflects past depreciation deductions faces a federal tax rate capped at 25%, rather than the standard 15% or 20% long-term rates. To calculate your accumulated depreciation deductions before listing your property, plug your acquisition timeline into our [depreciation calculator](/real-estate/depreciation-calculator/) and track historical rental yields with our [rental income tax calculator](/real-estate/rental-income-tax-calculator/).\n\nInvestors can defer gains by executing an exchange under Section 1031 into like-kind real estate. While Section 1031 defers both federal and California obligations, the Franchise Tax Board closely monitors deferred assets. If you exchange California real estate for replacement property located outside the state, you must file California Form FTB 3840 annually with the Franchise Tax Board. This reporting ensures California can track the deferred gain until you execute a taxable sale. You can compare this deferral mechanism with other tax strategies in our guide on [1031 exchange vs Opportunity Zone](/compare/1031-exchange-vs-opportunity-zone/)."
+    },
+    {
+      "heading": "Nonresident Escrow Withholding Rules Under Form 593",
+      "body": "California enforces upfront tax collection on real estate closings using Form 593 to prevent sellers from avoiding state obligations. When a property sale closes, the escrow officer must generally withhold 3 1/3% of the gross sale price unless the seller qualifies for a statutory exemption. This withholding applies to sellers who are nonresidents of California, as well as to entities and resident sellers disposing of properties that do not serve as principal residences.\n\nThis 3 1/3% escrow deduction is a prepayment toward anticipated state taxes rather than an added assessment. If the actual tax liability calculated on your year-end California return is lower than the withheld funds, the state refunds the excess balance once you file. Sellers who qualify for complete primary home exclusions can complete Form 593 at escrow to claim an exemption and bypass the withholding requirement entirely.\n\nSellers who move out of California before listing their real estate remain subject to California taxation because the property itself sits in the state. Land transactions face similar collection structures, which we outline in our review of how to [avoid capital gains tax on land sale](/guides/avoid-capital-gains-tax-on-land-sale/). Verify your residency classification and withholding status directly with your escrow officer and the [California Franchise Tax Board](https://www.ftb.ca.gov/) to ensure correct paperwork is submitted before closing."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/real-estate/capital-gains-calculator/",
+      "label": "Capital gains calculator"
+    },
+    {
+      "href": "/real-estate/depreciation-calculator/",
+      "label": "Depreciation calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does California tax capital gains on real estate?",
+      "answer": "Yes, California taxes all capital gains from real estate sales as regular personal income. The state does not provide a reduced or preferential capital gains rate for long-term holdings, meaning property profits are taxed across standard graduated state income tax brackets up to a maximum rate of 13.3%."
+    },
+    {
+      "question": "What is California's capital gains tax rate on a home sale?",
+      "answer": "California does not have a dedicated capital gains rate. Profits from a home sale are taxed at your ordinary state income tax rate, which ranges up to 12.3% plus a 1% mental health surtax on income exceeding $1,000,000, resulting in a top rate of 13.3%. If the property is your primary residence, the state generally conforms to the Section 121 exclusion of up to $250,000 for single filers or $500,000 for married couples."
+    },
+    {
+      "question": "Do I pay California capital gains if I move out of state?",
+      "answer": "Yes, you must pay California income tax on profits from property located inside California even if you live in another state. California treats gains from local real estate as California-source income regardless of your residency status, and escrow officers will generally withhold 3 1/3% of the sale price via Form 593 unless an exemption applies. Verify your specific filing obligations with the California Franchise Tax Board."
+    },
+    {
+      "question": "How do I avoid capital gains tax on a California home sale?",
+      "answer": "You can avoid or reduce capital gains tax on a home sale by using the Section 121 primary residence exclusion, which shields up to $250,000 of gain for single taxpayers and up to $500,000 for married joint filers who lived in the home for two of the past five years. For investment properties, owners can defer taxes through a Section 1031 like-kind exchange or offset gains by adding documented capital improvements to their cost basis."
+    },
+    {
+      "question": "Is the home sale exclusion the same in California?",
+      "answer": "Yes, California generally conforms to the federal Section 121 home sale exclusion rules. Qualifying homeowners who owned and used the property as their primary residence for at least two out of the five years before the sale can exclude up to $250,000 of profit as single filers, or up to $500,000 as married couples filing jointly, from both state and federal income taxes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Topic 409, capital gains and losses",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    },
+    {
+      "label": "IRS Topic 701, sale of your home",
+      "url": "https://www.irs.gov/taxtopics/tc701"
+    },
+    {
+      "label": "California Franchise Tax Board",
+      "url": "https://www.ftb.ca.gov/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

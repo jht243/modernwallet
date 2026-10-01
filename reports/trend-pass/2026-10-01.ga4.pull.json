@@ -1,0 +1,65 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-01",
+  "window_start": "2026-10-01",
+  "window_end": "2026-10-01",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-account-scams",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/real-estate/capital-gains-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/retirement/early-retirement-calculator",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/retirement/pension-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/business-line-of-credit-rates-by-lender/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/guides/trump-account-scams": {
+      "Direct": 1
+    },
+    "/real-estate/capital-gains-calculator/": {
+      "Direct": 1
+    },
+    "/retirement/early-retirement-calculator": {
+      "Direct": 1
+    },
+    "/retirement/pension-calculator/": {
+      "Direct": 1
+    },
+    "/roundup/business-line-of-credit-rates-by-lender/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    }
+  }
+}
