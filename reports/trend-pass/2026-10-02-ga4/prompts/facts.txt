@@ -1,0 +1,9 @@
+CLOSED FACT LIST (anything not here, you do not know):
+- IRS Form W-9 asks for a name on line 1 (the name shown on your income tax return), a business name or disregarded entity name on line 2 if different, and a federal tax classification on line 3a.
+- A sole proprietor or a single-member LLC that is a disregarded entity uses the name of the individual owner on line 1; the LLC's own name goes on line 2.
+- On line 3a, a sole proprietor and a single-member LLC that is disregarded both check the same box: "Individual/sole proprietor or single-member LLC".
+- The LLC classification box on line 3a is for an LLC taxed as a C corporation, S corporation, or partnership.
+- The W-9 asks for a taxpayer identification number: a Social Security number or an employer identification number (EIN).
+- A sole proprietor or single-member LLC can give a client either an SSN or an EIN on the W-9; an EIN is free from the IRS and keeps the owner's Social Security number off forms clients keep on file.
+- A client who pays you $600 or more in a year (the 1099-NEC threshold in effect for payments in 2025) generally issues a Form 1099-NEC to the name and taxpayer ID on the W-9.
+- Income still goes on Schedule C of the owner's personal return in either structure.

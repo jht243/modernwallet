@@ -307,6 +307,11 @@ export const BUSINESS_STRUCTURE_COMPARISONS: ComparisonEntry[] = [
         answer:
           "If the work carries meaningful liability, forming early is cheaper than forming after a problem. If you are testing whether the business works at all, starting as a sole proprietor and forming later is a reasonable sequence — you can move the activity into an LLC once it has revenue. What is not sensible is delaying because you expect a tax benefit, since there is not one by default.",
       },
+      {
+        question: "What do I put on a W-9 as a sole proprietor vs a single-member LLC, and do I need an EIN?",
+        answer:
+          "The [W-9](https://www.irs.gov/forms-pubs/about-form-w-9) looks the same for a sole proprietor and a disregarded single-member LLC: put your own legal name on line 1, put the LLC's name on line 2, and check the \"Individual/sole proprietor or single-member LLC\" box on line 3a. For the taxpayer identification number, give your Social Security number or an EIN. You do not need an EIN just to complete the W-9.",
+      },
     ],
     sources: [IRS_LLC, IRS_SOLE_PROP, IRS_SE_TAX, IRS_2553],
     relatedComparisons: ["llc-vs-s-corp", "1099-vs-w2", "partnership-vs-llc"],

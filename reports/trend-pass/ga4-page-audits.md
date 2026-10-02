@@ -224,3 +224,7 @@
 | /retirement/early-retirement-calculator | 2026-10-01 | 1 | 0/0/0/0/0 | 0 |
 | /retirement/pension-calculator/ | 2026-10-01 | 1 | 1/0/0/0/0 | 0 |
 | /roundup/business-line-of-credit-rates-by-lender/ | 2026-10-01 | 1 | 0/0/0/0/0 | 0 |
+| /compare/sole-proprietorship-vs-llc | 2026-10-02 | 1 | 0/0/1/0/0 | 0 |
+| /guides/private-placement-life-insurance | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-money-market-accounts/ | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |
+| /roundup/best-student-credit-cards/ | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |

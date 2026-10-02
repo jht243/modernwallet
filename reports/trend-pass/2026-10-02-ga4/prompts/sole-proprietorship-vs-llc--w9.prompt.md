@@ -1,0 +1,4 @@
+TASK: Write the answer for ONE new FAQ on the page /compare/sole-proprietorship-vs-llc. FAQ answer only, no heading.
+READER QUESTION: "What do I put on a W-9 as a sole proprietor vs a single-member LLC, and do I need an EIN?"
+WHY: autocomplete shows repeated demand ("sole proprietor vs llc on w9", "sole proprietorship llc ein", "disregarded entity sole proprietorship vs single member llc"); the page never mentions the W-9.
+Answer in the first sentence: the W-9 looks the same for both, because a disregarded single-member LLC uses the owner's name and the same classification box. Then say what goes where, and that an EIN is optional but useful. Do not repeat the page's existing EIN paragraph in full; link nothing internal. You may cite the IRS W-9 page once, using the allowed URL as a markdown link on the first mention of "Form W-9".
