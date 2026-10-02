@@ -1,0 +1,51 @@
+{
+ "slug": "tax-deductions-for-homeowners",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2211,
+ "floor": 1200,
+ "input_tokens": 18646,
+ "output_tokens": 4198,
+ "thinking_tokens": null,
+ "cached_tokens": 16349,
+ "est_cost_usd": 0.0187,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2211,
+  "numbers_not_in_facts": [
+   "100000",
+   "1098",
+   "24401.27",
+   "50000",
+   "7500",
+   "800000"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16678
+  }
+ },
+ "seconds": 16.8,
+ "response_id": "GSPAar-dINay39IP0_SDyQE",
+ "generated_at": "2026-10-02T21:33:29+0000"
+}

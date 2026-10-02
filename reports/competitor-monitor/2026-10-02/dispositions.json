@@ -1,0 +1,12 @@
+{
+ "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-october-2-2026": {"disposition": "skipped-duplicate", "our_url": "/guides/current-mortgage-rates-guide/"},
+ "https://www.nerdwallet.com/finance/learn/pay-medical-debt": {"disposition": "published", "our_url": "/guides/how-to-deal-with-medical-debt/"},
+ "https://www.nerdwallet.com/mortgages/learn/tax-deductions-for-homeowners": {"disposition": "published", "our_url": "/guides/tax-deductions-for-homeowners/"},
+ "https://www.nerdwallet.com/financial-advisors/learn/registered-investment-advisor": {"disposition": "published", "our_url": "/guides/what-is-a-registered-investment-advisor/"},
+ "https://www.nerdwallet.com/investing/learn/how-much-save-by-30": {"disposition": "skipped-duplicate", "our_url": "/guides/how-much-do-i-need-to-retire-by-age/"},
+ "https://www.omnicalculator.com/finance/payday-loan": {"disposition": "published", "our_url": "/guides/payday-loan-calculator-explained/"},
+ "https://www.omnicalculator.com/finance/student-loan": {"disposition": "published", "our_url": "/guides/how-to-calculate-your-monthly-student-loan-payment/"},
+ "https://www.omnicalculator.com/finance/home-improvement-loan": {"disposition": "published", "our_url": "/guides/home-improvement-loan-guide/"},
+ "https://www.nerdwallet.com/insurance/auto/auto-insurance-pricing-report-2026": {"disposition": "skipped-low-value", "our_url": ""},
+ "https://www.nerdwallet.com/travel/learn/bilt-obsidian-vs-chase-sapphire-preferred": {"disposition": "skipped-low-value", "our_url": ""}
+}

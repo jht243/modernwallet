@@ -1,0 +1,120 @@
+{
+  "slug": "tax-deductions-for-homeowners",
+  "title": "Tax Deductions for Homeowners and the Itemizing Test in 2026",
+  "metaDescription": "Learn which tax deductions for homeowners qualify in 2026, how the standard deduction test works, and whether itemizing saves you more money.",
+  "h1": "Tax Deductions for Homeowners in 2026",
+  "cardBlurb": "See which homeownership expenses qualify for itemized write-offs, how the 2026 standard deduction affects the math, and when itemizing pays off.",
+  "introText": "The main tax deductions for homeowners are mortgage interest, state and local property taxes, and mortgage points, but they only help when total itemized deductions exceed the standard deduction.\n\nMany buyers assume that buying a home immediately lowers their tax bill. For a married couple filing jointly in 2026, the standard deduction is $32,200, which means an average mortgage balance often generates less write-off value than taking the standard amount. Determining whether you come out ahead requires running the actual numbers on your interest, real estate taxes, and other qualified expenses before choosing Schedule A.",
+  "sections": [
+    {
+      "heading": "Do Your Deductions Beat the Standard Deduction",
+      "body": "A homeowner only benefits from deducting housing costs if their combined itemized expenses exceed the standard deduction for their tax filing status.\n\nUnder the [IRS inflation adjustments for tax year 2026](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill), the standard deduction is $16,100 for single filers and married individuals filing separately, $24,150 for heads of household, and $32,200 for married couples filing jointly. Unless your total itemized deductions surpass those thresholds, you claim the standard deduction instead.\n\nConsider a hypothetical worked example of a $400,000 30-year fixed mortgage at an interest rate of 6.5%. The monthly principal-and-interest payment is $2,528.27, generating roughly $25,868.36 of interest in the first full year. If that household pays $5,000 in annual property taxes, their baseline housing deductions total $30,868. For a married couple filing jointly, that $30,868 total sits below the $32,200 standard deduction, so itemizing purely on those two items yields no tax advantage. That couple would need at least $1,332 in additional itemized deductions, such as charitable gifts or state income taxes, before itemizing provides a financial gain.\n\nWith smaller balances, the gap widens. A $300,000 mortgage at 6.5% has a monthly payment of $1,896.20 and generates about $19,401.27 of interest during the first year. Even with $5,000 in property taxes, the total deduction reaches $24,401.27, leaving a married couple thousands of dollars short of the $32,200 threshold. You can estimate your own amortization schedule using our [mortgage calculator hub](/mortgage/) to check your specific first-year interest amount."
+    },
+    {
+      "heading": "Mortgage Interest Deductions and Debt Limits",
+      "body": "Homeowners who itemize can deduct the interest paid on debt used to acquire or substantially improve their primary or secondary residence.\n\nAccording to [IRS Publication 936](https://www.irs.gov/publications/p936) and [IRS Topic 505](https://www.irs.gov/taxtopics/tc505), mortgage interest is deductible on acquisition debt up to $750,000 for single filers and married couples filing jointly, or $375,000 for married filers filing separately, on homes acquired after December 15, 2017. A higher grandfathered limit of $1 million, or $500,000 for married filing separately, applies to mortgages originated on or before December 15, 2017.\n\nEach January, your mortgage servicer reports the exact interest you paid during the prior calendar year on Form 1098. If your total qualifying mortgage balance across all properties exceeds the $750,000 acquisition debt limit, you cannot deduct the interest attributable to the excess balance. Review our guide on [mortgage early payoff tax implications](/guides/mortgage-early-payoff-tax-implications/) to evaluate how accelerating payments impacts your annual interest deduction."
+    },
+    {
+      "heading": "Home Equity Loan and Line of Credit Interest",
+      "body": "Interest on a home equity loan or a home equity line of credit is deductible only when the borrowed funds are spent to buy, build, or substantially improve the home that secures the loan.\n\nPer [IRS Publication 936](https://www.irs.gov/publications/p936), 'No matter when the indebtedness was incurred, you can no longer deduct the interest from a loan secured by your home to the extent the loan proceeds weren't used to buy, build, or substantially improve your home.' Any debt secured by your home also counts against the overall $750,000 acquisition indebtedness ceiling.\n\nThe specific use of the loan proceeds dictates its tax deductibility. If you take out a $50,000 home equity loan to remodel your kitchen, replace a roof, or construct an addition, the interest qualifies for deduction. Conversely, if you tap home equity to consolidate personal credit card debt, finance a car purchase, or pay college tuition, none of that interest can be deducted. Explore our breakdown of [HELOC vs home equity loan](/compare/heloc-vs-home-equity-loan/) options and run figures through our [HELOC calculator](/heloc-calculator/) to see the monthly payment impact."
+    },
+    {
+      "heading": "Deducting Mortgage Discount Points",
+      "body": "Discount points paid upfront to lower your mortgage interest rate can be deducted on Schedule A, either immediately in the year paid or spread across the loan term.\n\nAs outlined in [IRS Topic 505](https://www.irs.gov/taxtopics/tc505) and [IRS Publication 936](https://www.irs.gov/publications/p936), points paid on a purchase mortgage for your primary residence can generally be deducted in full in the year you pay them if specific requirements are met. The loan must be used to purchase or build your main home, and the points must be clearly shown as points on your settlement statement.\n\nWhen points do not qualify for immediate full deduction, they must be deducted ratably over the life of the mortgage. Points paid by a seller cannot be deducted by the buyer as interest. To calculate upfront financing expenses on a prospective purchase, check our [closing cost calculator](/mortgage/closing-cost-calculator/)."
+    },
+    {
+      "heading": "Property Taxes and the State and Local Tax Cap",
+      "body": "Real estate property taxes assessed by state or local governments are deductible as an itemized expense on Schedule A within statutory limits.\n\nUnder [IRS Topic 503](https://www.irs.gov/taxtopics/tc503), state and local real property taxes are combined with other state and local taxes, including income or sales taxes, subject to an aggregate state and local tax deduction cap. The state and local tax deduction cap is set at $40,000 for 2025, or $20,000 for married individuals filing separately, and the cap cannot be reduced below $10,000. Under current law, this cap is scheduled to rise 1% annually, making the cap $40,400 for 2026, though filers should verify the current figure directly at [IRS Topic 503](https://www.irs.gov/taxtopics/tc503).\n\nCheck the amount on your county property tax statement, because only taxes actually paid count."
+    },
+    {
+      "heading": "Home Office Deductions for Eligible Homeowners",
+      "body": "Homeowners who run an independent business or work as self-employed individuals may deduct qualifying home office expenses, but regular corporate employees cannot.\n\nUnder rules from the [IRS simplified home office option](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction), qualified taxpayers can claim a simplified deduction of $5 per square foot for a dedicated work area, up to a maximum of 300 square feet, which produces a top deduction of $1,500. Alternatively, filers can calculate actual expenses based on the square footage percentage of housing costs, including utilities, insurance, and depreciation.\n\nTo qualify under either method, the home office space must be used exclusively and on a regular basis as your principal place of business or to meet clients. Employees receiving a Form W-2 cannot claim a home office deduction under current federal rules, because miscellaneous itemized deductions for unreimbursed employee business expenses were eliminated for tax years beginning after 2017."
+    },
+    {
+      "heading": "Medically Necessary Home Improvements",
+      "body": "Capital improvements made to your home for medical care qualify as itemized medical deductions only to the extent the expense exceeds any increase in property value.\n\nAccording to [IRS Publication 502](https://www.irs.gov/publications/p502) and [IRS Topic 502](https://www.irs.gov/taxtopics/tc502), capital expenditures made primarily for medical care, such as widening doorways, installing wheelchair ramps, lowering kitchen counters, or adding a chairlift, count toward your medical expense calculation. However, if an improvement increases the market value of your residence, the deductible amount is strictly limited to the difference between the actual construction cost and the corresponding increase in the home's appraisal value.\n\nTotal qualified medical expenses are only deductible on Schedule A to the extent they exceed 7.5% of your adjusted gross income, commonly abbreviated as AGI. For example, if your adjusted gross income is $100,000, only medical expenses exceeding $7,500 can be factored into your itemized deductions."
+    },
+    {
+      "heading": "Homeowner Expenses That Are Not Deductible",
+      "body": "Many recurring expenses associated with owning real estate do not qualify for federal tax deductions on a primary personal residence.\n\nIRS guidance specifies that regular personal housing outlays are not deductible on Schedule A:\n\n- Mortgage principal payments\n- Homeowners insurance and hazard insurance premiums\n- Routine maintenance costs and general repairs\n- Utilities including electricity, natural gas, trash, and water\n- Homeowners association fees, commonly known as HOA dues\n\nUnlike capital improvements that get added to your property basis, routine repairs such as fixing a roof leak or repainting a wall do not lower your current taxable income. In addition, the itemized deduction for private mortgage insurance premiums is noted in [IRS Publication 936](https://www.irs.gov/publications/p936) as expired, and tax law changes in 2025 affect this area, so consult the current version of the publication to confirm whether any recent legislation reinstates the deduction for your filing year."
+    },
+    {
+      "heading": "Filing Preparation and Recordkeeping Steps",
+      "body": "Organizing real estate documentation before tax season ensures you do not miss qualifying deductions or claim invalid write-offs.\n\nFollow these practical steps when preparing your annual filing:\n\n1. Gather your Form 1098 statements from all mortgage servicers that held your loan during the calendar year.\n2. Review your closing disclosure if you purchased or refinanced during the tax year to verify whether discount points were itemized.\n3. Check your county property tax statements to verify the exact tax payments disbursed within the tax year.\n4. Keep paid receipts and contractor invoices for any medical modifications or substantial improvements funded via home equity.\n5. Verify the current treatment of mortgage insurance premiums in [IRS Publication 936](https://www.irs.gov/publications/p936) to check if your policy qualifies under newly enacted rules.\n\nComparing these gathered records against the standard deduction threshold helps you decide whether filing Schedule A is worth the effort. For a broad inventory of deductions outside real estate, consult our [tax deductions checklist](/guides/tax-deductions-checklist/)."
+    },
+    {
+      "heading": "Who This Deductibility Math Does Not Serve",
+      "body": "The standard deduction test produces very different outcomes depending on debt balance and location.\n\nItemizing real estate deductions does not benefit homeowners with small mortgage balances or paid-off homes, especially married filers in low-property-tax states. If you are married filing jointly and your total annual mortgage interest and local taxes stay well below $32,200, tracking individual receipts provides zero tax reduction compared to taking the standard allowance. First-time buyers can evaluate baseline costs using our [first time home buyer guide](/guides/first-time-home-buyer-guide/) or test borrowing limits on the [home affordability calculator](/mortgage/home-affordability-calculator/).\n\nOur verdict would flip if a buyer holds a substantial mortgage balance, such as a $700,000 loan at a high interest rate, paired with higher property taxes and charitable donations that push itemized deductions comfortably above the standard deduction threshold. Calculate your total deductible expenses each filing season, because annual principal amortization lowers your deductible interest each year, eventually making the standard deduction the superior choice."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/mortgage/",
+      "label": "Mortgage calculator hub"
+    },
+    {
+      "href": "/mortgage/closing-cost-calculator/",
+      "label": "Closing cost calculator"
+    },
+    {
+      "href": "/mortgage/home-affordability-calculator/",
+      "label": "Home affordability"
+    },
+    {
+      "href": "/heloc-calculator/",
+      "label": "HELOC calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is mortgage interest tax deductible in 2026?",
+      "answer": "Yes, mortgage interest is deductible on acquisition debt up to $750,000 for single and joint filers, or $375,000 for married individuals filing separately, for homes acquired after December 15, 2017. You must itemize deductions on Schedule A to claim it, and loans originating before December 16, 2017, qualify under an older $1 million limit."
+    },
+    {
+      "question": "Are property taxes deductible?",
+      "answer": "Yes, state and local property taxes are deductible on Schedule A, subject to the combined state and local tax deduction cap. For 2025, that cap is $40,000, or $20,000 for married filers filing separately, with a statutory floor of $10,000 and an annual 1% increase that makes the cap $40,400 for 2026."
+    },
+    {
+      "question": "Can I deduct home equity loan or HELOC interest?",
+      "answer": "You can deduct interest on a home equity loan or line of credit only if the borrowed money was used to buy, build, or substantially improve the home securing the loan. If the funds were used for other purposes, such as paying down personal loans or funding college tuition, the interest is not deductible."
+    },
+    {
+      "question": "Can I deduct home improvements?",
+      "answer": "Standard home renovations and routine repairs are not deductible, but medically necessary modifications may qualify under Schedule A medical expense deductions. The deductible amount is restricted to the cost that exceeds any increase in the market value of your property, and total medical expenses must surpass 7.5% of your adjusted gross income."
+    },
+    {
+      "question": "Should I itemize or take the standard deduction as a homeowner?",
+      "answer": "You should itemize only if your total qualifying deductions, including mortgage interest, property taxes, points, and other allowable write-offs, exceed the standard deduction for your filing status. For 2026, the standard deduction is $16,100 for single filers, $24,150 for heads of household, and $32,200 for married couples filing jointly."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Tax Inflation Adjustments for Tax Year 2026",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+    },
+    {
+      "label": "IRS, Topic 505: Interest Expense",
+      "url": "https://www.irs.gov/taxtopics/tc505"
+    },
+    {
+      "label": "IRS, Publication 936: Home Mortgage Interest Deduction",
+      "url": "https://www.irs.gov/publications/p936"
+    },
+    {
+      "label": "IRS, Topic 503: Deductible Taxes",
+      "url": "https://www.irs.gov/taxtopics/tc503"
+    },
+    {
+      "label": "IRS, Simplified Option for Home Office Deduction",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction"
+    },
+    {
+      "label": "IRS, Publication 502: Medical and Dental Expenses",
+      "url": "https://www.irs.gov/publications/p502"
+    },
+    {
+      "label": "IRS, Topic 502: Medical and Dental Expenses",
+      "url": "https://www.irs.gov/taxtopics/tc502"
+    }
+  ]
+}

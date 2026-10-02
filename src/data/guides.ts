@@ -28,6 +28,637 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── competitor-monitor 2026-10-02 ──
+  {
+    "slug": "how-to-deal-with-medical-debt",
+    "updated": "2026-10-02",
+    "title": "How to Deal with Medical Debt You Cannot Afford to Pay",
+    "metaDescription": "Learn how to deal with medical debt. Review billing errors, request hospital charity care, negotiate balances, and understand your credit reporting protections.",
+    "h1": "How to Deal with Medical Debt",
+    "cardBlurb": "A practical checklist for handling medical debt: review itemized bills, apply for hospital financial assistance, set up interest-free terms, and protect your credit.",
+    "introText": "Before paying anything on a medical bill you cannot afford, request an itemized bill and check every line against the explanation of benefits from your health insurer, then ask the billing department for a payment plan or a financial assistance application.\n\nPutting a medical bill on a credit card out of panic strips away protections that apply to healthcare debt. Converting an outstanding balance into commercial credit turns medical collections into ordinary consumer debt subject to immediate credit bureau reporting.\n\nTaking deliberate, sequenced action protects your personal budget. This guide breaks down the legal rights, hospital requirements, and practical negotiation steps that keep medical obligations from derailing your finances.",
+    "sections": [
+      {
+        "heading": "What to Do First When a Medical Bill Arrives",
+        "body": "Do not pay a medical balance immediately upon receiving the first billing statement. Medical bills frequently contain coding errors, duplicate charges, or services that an insurance carrier should have covered under the policy terms.\n\nCall the provider and request an itemized bill showing every specific procedure code and medication fee. Once that document arrives, pull the explanation of benefits (EOB) issued by your health insurance company for those dates of service. Compare each line item to ensure the provider credited your insurance adjustments and that you are only being billed for the copayment, coinsurance, or deductible amount verified by the insurer.\n\nCheck whether the billing violates the [Centers for Medicare & Medicaid Services (CMS) No Surprises Act](https://www.cms.gov/nosurprises/consumers), which took effect January 1, 2022. This federal statute protects patients from surprise out-of-network bills for emergency services, non-emergency care provided by out-of-network clinicians at in-network hospitals, outpatient departments, or ambulatory surgical centers, and air ambulance transportation. If you are an uninsured or self-pay patient, providers generally must provide a good faith estimate when scheduled at least 3 business days ahead, and you can formally dispute a bill that exceeds that estimate by $400 or more by calling the CMS help desk at 1-800-985-3059."
+      },
+      {
+        "heading": "Setting Up an Extended Medical Bill Payment Plan",
+        "body": "Most healthcare providers will agree to split an outstanding balance across regular monthly installments rather than demanding the entire sum at once. Ask the billing department directly for an interest-free arrangement before discussing any other payment method.\n\nConsider a hypothetical worked example of a $6,000 hospital bill. If the provider agrees to a zero percent payment plan stretched over 24 months, the required payment comes out to exactly $250 a month ($6,000 divided by 24). Whether a specific hospital or physician group offers zero percent terms is entirely up to their internal policies, which makes asking directly necessary.\n\nAlways secure the agreed terms in writing before making an initial payment. Confirm that the agreement specifies zero percent interest, lists the fixed monthly due date, and explicitly states that the account will remain in good standing without referral to third-party collection agencies so long as you meet the schedule. You can test how different monthly installments fit your broader cash flow using our [budget calculator](/budget/)."
+      },
+      {
+        "heading": "Hospital Financial Assistance and Charity Care Deadlines",
+        "body": "Nonprofit hospitals are legally required to maintain written financial assistance policies that reduce or eliminate bills for qualifying patients. Under [Internal Revenue Service (IRS) Section 501(r)(6)](https://www.irs.gov/charities-non-profits/billing-and-collections-section-501r6), charitable hospitals must make reasonable efforts to determine whether an individual qualifies for financial help before initiating extraordinary collection actions.\n\nExtraordinary collection actions include reporting the debt to credit reporting agencies, selling the account to outside debt buyers, or pursuing judicial proceedings such as a lawsuit. The statutory framework grants patients specific timeframes anchored to the initial billing statement:\n\n1. A 120-day notification period starts on the date of the first post-discharge billing statement, and the hospital must send written notice at least 30 days before the end of that period describing the collection actions it may take.\n2. A 240-day application period opens on that same first post-discharge billing statement date, during which you can submit a financial assistance application.\n\nRequest the facility's plain-language summary of its financial assistance policy, along with the application form. Each hospital sets its own eligibility rules, so ask for the written policy and read the income limits before you apply."
+      },
+      {
+        "heading": "How to Negotiate Medical Bills Directly",
+        "body": "You can negotiate medical bills directly with the hospital or clinic billing manager without outside help. Providers often accept a discounted lump-sum settlement if you offer to pay immediately.\n\nBegin by contacting the billing office and explaining your cash constraints plainly. Ask if the office offers a prompt-pay discount for self-pay balances, which often reduces the total fee by a noticeable margin if settled within a short window. If you cannot afford a lump sum, request that the provider reprice your charges to match the rates they accept from major insurance carriers.\n\nIf your total disputed balance runs into tens of thousands of dollars and involves complex surgical bills, hiring an independent medical bill advocate can be worth considering. A professional advocate audits medical records and challenges improper coding on your behalf. The operational decision criterion for hiring an advocate is straightforward: consider one if the disputed balance exceeds several thousand dollars and you lack the time to audit technical hospital billing codes yourself. For standard balances, direct negotiation preserves your cash."
+      },
+      {
+        "heading": "Risks of Using Credit Cards and Personal Loans",
+        "body": "Transferring an unpaid medical balance onto a credit card or commercial loan eliminates the unique consumer protections built specifically into healthcare debt. Once you swipe a credit card or accept a medical loan, the debt belongs to a private financial lender under standard consumer credit contracts.\n\nIf you leave the medical bill with the clinic, you retain access to statutory charity care programs, zero-interest internal payment schedules, and strict credit bureau reporting pauses. Moving that balance to a credit card creates high-interest revolving debt where a missed payment is reported under standard credit rules. If you are already struggling with high-interest card debt, you can calculate the payoff timeline on our [credit card payoff calculator](/credit-card-payoff/).\n\nThere is one concrete inversion case where borrowing money makes sense: when an independent provider refuses to perform a non-emergency, medically necessary procedure without advance payment, offers no internal financing, and the interest on an unsecured loan is manageable. In that narrow scenario, reviewing a [medical loan](/guides/medical-loan-explained/) or checking borrowing terms on our [personal loan hub](/personal-loan/) can secure needed treatment, provided you have exhausted all charity care options first."
+      },
+      {
+        "heading": "Credit Reporting Rules and Protections for Medical Debt",
+        "body": "Medical debt operates under different credit reporting standards than credit cards, mortgages, or auto loans. Equifax, Experian, and TransUnion maintain voluntary reporting policies that protect consumers from sudden credit damage while resolving healthcare disputes.\n\nUnder these voluntary bureau standards, paid medical collection accounts do not appear on credit reports, and unpaid medical collections under $500 are entirely excluded from credit reporting. The bureaus also wait 365 days before new medical debt can appear on a credit report. This one-year window allows time to file insurance appeals, negotiate adjustments, or complete charity care reviews.\n\nRegulatory history is important here because enforcement rules shifted recently. The Consumer Financial Protection Bureau (CFPB) finalized a rule under [Regulation V](https://www.consumerfinance.gov/rules-policy/final-rules/prohibition-on-creditors-and-consumer-reporting-agencies-concerning-medical-information-regulation-v/) in January 2025 designed to prohibit consumer reporting agencies from including any medical debt on credit files. However, the U.S. District Court for the Eastern District of Texas vacated that rule in July 2025 in Cornerstone Credit Union League v. CFPB. As a result, the comprehensive federal ban is not in effect, and consumer protection currently relies on the voluntary credit bureau policies."
+      },
+      {
+        "heading": "Nonprofit Relief and Income-Based Hardship Programs",
+        "body": "Patients struggling with major medical bills can access outside relief programs designed to cover out-of-pocket healthcare expenses. These programs help bridge the gap when insurance benefits expire or when household income exceeds standard hospital charity care thresholds.\n\nDisease-specific charitable organizations provide targeted grants to individuals diagnosed with chronic, rare, or life-altering conditions. These non-profit foundations frequently distribute dedicated co-pay assistance, travel grants for specialized treatment, and subsidies for daily maintenance medications.\n\nIndependent religious charities and community-based nonprofit groups also offer emergency financial assistance funds to prevent utility shutoffs or evictions caused by medical distress. When exploring local assistance, contact hospital social workers directly, as clinical case managers regularly maintain rosters of active regional patient relief funds."
+      },
+      {
+        "heading": "Tax Deductions for Medical Expenses",
+        "body": "Medical expenses can provide tax relief, but the Internal Revenue Service limits how many taxpayers can actually benefit from the deduction. Under [IRS Topic 502](https://www.irs.gov/taxtopics/tc502), medical and dental expenses are deductible only to the extent that they exceed 7.5% of your adjusted gross income (AGI), and only if you itemize deductions on Schedule A of Form 1040.\n\nConsider a hypothetical worked example with an AGI of $80,000. The 7.5% baseline threshold equals $6,000 ($80,000 multiplied by 0.075). If you incur $9,000 in qualifying medical bills during the calendar year, only the $3,000 spent above the $6,000 floor counts as a deductible expense. Under the [IRS 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill), the standard deduction is $16,100 for single filers and $32,200 for married couples filing jointly. Itemizing deductions solely to claim $3,000 in excess healthcare expenses rarely beats taking the standard deduction unless you possess extensive additional itemized deductions.\n\nQualified deductible costs can include capital expenses for medical care. According to [IRS Publication 502](https://www.irs.gov/publications/p502), home modifications made for medical care, such as access ramps, widened doorways, or support grab bars, count as a deductible medical expense only to the extent the cost exceeds any increase in the home's market value."
+      },
+      {
+        "heading": "Handling Medical Debt Collectors",
+        "body": "When a medical provider gives up on internal billing, they transfer or sell the unpaid account to a collection agency. Third-party collectors are governed by the Fair Debt Collection Practices Act (FDCPA) and federal rules outlined on the [CFPB debt collection page](https://www.consumerfinance.gov/consumer-tools/debt-collection/).\n\nIf your bill has been forwarded to an outside agency, review our guide on [how to deal with debt collectors](/guides/how-to-deal-with-debt-collectors/) to understand your communication rights. Follow this checklist when managing collection notices:\n\n1. Request written validation of the debt to verify the underlying provider, date of service, and itemized balance.\n2. Do not provide verbal bank account access or authorize automatic debit transactions over the phone.\n3. Verify whether the balance is under $500, because the major credit bureaus exclude unpaid medical collections below that threshold from credit reports.\n4. Negotiate a single lump-sum settlement in writing before sending funds if you choose to pay, ensuring the agreement confirms the debt is satisfied in full.\n\nUnderstanding your rights prevents collection agencies from coercing you into unfavorable payment structures. You can prioritize medical settlements alongside other obligations by studying [how to pay off debt](/guides/how-to-pay-off-debt/) across structured repayment plans."
+      },
+      {
+        "heading": "When Standard Medical Debt Strategies Do Not Apply",
+        "body": "The steps in this guide do not apply to non-medical consumer debt, nor do they help individuals who already transferred hospital balances to private credit cards or personal loans. If you converted your medical balance to commercial credit, you must use standard debt repayment strategies such as the [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) method .\n\nOur advice to negotiate before borrowing would change if the credit bureaus dropped their voluntary medical debt policies or if a provider refused every payment plan and demanded payment up front.\n\nTo begin resolving your balance today, call your healthcare provider's billing office to request a detailed itemized bill and a financial assistance application before agreeing to any repayment terms."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget calculator"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      },
+      {
+        "href": "/personal-loan/",
+        "label": "Personal loans"
+      },
+      {
+        "href": "/compare/debt-snowball-vs-avalanche/",
+        "label": "Snowball vs avalanche"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I deal with medical debt I can't afford to pay?",
+        "answer": "Request an itemized bill, compare it to your insurer's explanation of benefits, and apply for the hospital's financial assistance policy. Nonprofit hospitals must offer charity care to qualifying patients under federal tax law, and setting up an interest-free payment plan keeps the debt out of collections."
+      },
+      {
+        "question": "Can I negotiate a hospital bill?",
+        "answer": "Yes, you can negotiate hospital bills directly with the facility's billing department. Providers routinely offer prompt-pay discounts for lump-sum settlements, lower rates to match commercial insurance payments, or set up zero percent multi-year installment agreements upon request."
+      },
+      {
+        "question": "Is medical debt on my credit report?",
+        "answer": "Medical debt does not appear on your credit report if it is paid, if the unpaid balance is under $500, or if it is newer than the bureaus' 365-day waiting period. The three nationwide credit bureaus voluntarily exclude paid accounts and sub-$500 collections while providing a one-year grace period for larger balances."
+      },
+      {
+        "question": "Should I put a medical bill on a credit card?",
+        "answer": "No, you should avoid putting medical bills on a credit card whenever possible. Transferring medical debt to credit cards strips away the 365-day credit reporting waiting period, removes charity care access, and replaces potential zero-interest payment terms with high-interest consumer revolving credit."
+      },
+      {
+        "question": "Can I deduct medical expenses on my taxes?",
+        "answer": "You can deduct qualified medical expenses only if you itemize deductions on Schedule A and your total unreimbursed costs exceed 7.5% of your adjusted gross income. Because standard deduction thresholds are high, claiming medical expenses alone rarely produces a tax benefit."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Topic 502: Medical and Dental Expenses",
+        "url": "https://www.irs.gov/taxtopics/tc502"
+      },
+      {
+        "label": "IRS, Tax Inflation Adjustments for Tax Year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      },
+      {
+        "label": "CMS, No Surprises Act Consumer Protections",
+        "url": "https://www.cms.gov/nosurprises/consumers"
+      },
+      {
+        "label": "IRS, Billing and Collections under Section 501(r)(6)",
+        "url": "https://www.irs.gov/charities-non-profits/billing-and-collections-section-501r6"
+      },
+      {
+        "label": "CFPB, Prohibition on Creditors Concerning Medical Information (Regulation V)",
+        "url": "https://www.consumerfinance.gov/rules-policy/final-rules/prohibition-on-creditors-and-consumer-reporting-agencies-concerning-medical-information-regulation-v/"
+      },
+      {
+        "label": "CFPB, Debt Collection Rules and Rights",
+        "url": "https://www.consumerfinance.gov/consumer-tools/debt-collection/"
+      },
+      {
+        "label": "IRS, Publication 502: Medical and Dental Expenses",
+        "url": "https://www.irs.gov/publications/p502"
+      }
+    ]
+  },
+  {
+    "slug": "tax-deductions-for-homeowners",
+    "updated": "2026-10-02",
+    "title": "Tax Deductions for Homeowners and the Itemizing Test in 2026",
+    "metaDescription": "Learn which tax deductions for homeowners qualify in 2026, how the standard deduction test works, and whether itemizing saves you more money.",
+    "h1": "Tax Deductions for Homeowners in 2026",
+    "cardBlurb": "See which homeownership expenses qualify for itemized write-offs, how the 2026 standard deduction affects the math, and when itemizing pays off.",
+    "introText": "The main tax deductions for homeowners are mortgage interest, state and local property taxes, and mortgage points, but they only help when total itemized deductions exceed the standard deduction.\n\nMany buyers assume that buying a home immediately lowers their tax bill. For a married couple filing jointly in 2026, the standard deduction is $32,200, which means an average mortgage balance often generates less write-off value than taking the standard amount. Determining whether you come out ahead requires running the actual numbers on your interest, real estate taxes, and other qualified expenses before choosing Schedule A.",
+    "sections": [
+      {
+        "heading": "Do Your Deductions Beat the Standard Deduction",
+        "body": "A homeowner only benefits from deducting housing costs if their combined itemized expenses exceed the standard deduction for their tax filing status.\n\nUnder the [IRS inflation adjustments for tax year 2026](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill), the standard deduction is $16,100 for single filers and married individuals filing separately, $24,150 for heads of household, and $32,200 for married couples filing jointly. Unless your total itemized deductions surpass those thresholds, you claim the standard deduction instead.\n\nConsider a hypothetical worked example of a $400,000 30-year fixed mortgage at an interest rate of 6.5%. The monthly principal-and-interest payment is $2,528.27, generating roughly $25,868.36 of interest in the first full year. If that household pays $5,000 in annual property taxes, their baseline housing deductions total $30,868. For a married couple filing jointly, that $30,868 total sits below the $32,200 standard deduction, so itemizing purely on those two items yields no tax advantage. That couple would need at least $1,332 in additional itemized deductions, such as charitable gifts or state income taxes, before itemizing provides a financial gain.\n\nWith smaller balances, the gap widens. A $300,000 mortgage at 6.5% has a monthly payment of $1,896.20 and generates about $19,401.27 of interest during the first year. Even with $5,000 in property taxes, the total deduction reaches $24,401.27, leaving a married couple thousands of dollars short of the $32,200 threshold. You can estimate your own amortization schedule using our [mortgage calculator hub](/mortgage/) to check your specific first-year interest amount."
+      },
+      {
+        "heading": "Mortgage Interest Deductions and Debt Limits",
+        "body": "Homeowners who itemize can deduct the interest paid on debt used to acquire or substantially improve their primary or secondary residence.\n\nAccording to [IRS Publication 936](https://www.irs.gov/publications/p936) and [IRS Topic 505](https://www.irs.gov/taxtopics/tc505), mortgage interest is deductible on acquisition debt up to $750,000 for single filers and married couples filing jointly, or $375,000 for married filers filing separately, on homes acquired after December 15, 2017. A higher grandfathered limit of $1 million, or $500,000 for married filing separately, applies to mortgages originated on or before December 15, 2017.\n\nEach January, your mortgage servicer reports the exact interest you paid during the prior calendar year on Form 1098. If your total qualifying mortgage balance across all properties exceeds the $750,000 acquisition debt limit, you cannot deduct the interest attributable to the excess balance. Review our guide on [mortgage early payoff tax implications](/guides/mortgage-early-payoff-tax-implications/) to evaluate how accelerating payments impacts your annual interest deduction."
+      },
+      {
+        "heading": "Home Equity Loan and Line of Credit Interest",
+        "body": "Interest on a home equity loan or a home equity line of credit is deductible only when the borrowed funds are spent to buy, build, or substantially improve the home that secures the loan.\n\nPer [IRS Publication 936](https://www.irs.gov/publications/p936), 'No matter when the indebtedness was incurred, you can no longer deduct the interest from a loan secured by your home to the extent the loan proceeds weren't used to buy, build, or substantially improve your home.' Any debt secured by your home also counts against the overall $750,000 acquisition indebtedness ceiling.\n\nThe specific use of the loan proceeds dictates its tax deductibility. If you take out a $50,000 home equity loan to remodel your kitchen, replace a roof, or construct an addition, the interest qualifies for deduction. Conversely, if you tap home equity to consolidate personal credit card debt, finance a car purchase, or pay college tuition, none of that interest can be deducted. Explore our breakdown of [HELOC vs home equity loan](/compare/heloc-vs-home-equity-loan/) options and run figures through our [HELOC calculator](/heloc-calculator/) to see the monthly payment impact."
+      },
+      {
+        "heading": "Deducting Mortgage Discount Points",
+        "body": "Discount points paid upfront to lower your mortgage interest rate can be deducted on Schedule A, either immediately in the year paid or spread across the loan term.\n\nAs outlined in [IRS Topic 505](https://www.irs.gov/taxtopics/tc505) and [IRS Publication 936](https://www.irs.gov/publications/p936), points paid on a purchase mortgage for your primary residence can generally be deducted in full in the year you pay them if specific requirements are met. The loan must be used to purchase or build your main home, and the points must be clearly shown as points on your settlement statement.\n\nWhen points do not qualify for immediate full deduction, they must be deducted ratably over the life of the mortgage. Points paid by a seller cannot be deducted by the buyer as interest. To calculate upfront financing expenses on a prospective purchase, check our [closing cost calculator](/mortgage/closing-cost-calculator/)."
+      },
+      {
+        "heading": "Property Taxes and the State and Local Tax Cap",
+        "body": "Real estate property taxes assessed by state or local governments are deductible as an itemized expense on Schedule A within statutory limits.\n\nUnder [IRS Topic 503](https://www.irs.gov/taxtopics/tc503), state and local real property taxes are combined with other state and local taxes, including income or sales taxes, subject to an aggregate state and local tax deduction cap. The state and local tax deduction cap is set at $40,000 for 2025, or $20,000 for married individuals filing separately, and the cap cannot be reduced below $10,000. Under current law, this cap is scheduled to rise 1% annually, making the cap $40,400 for 2026, though filers should verify the current figure directly at [IRS Topic 503](https://www.irs.gov/taxtopics/tc503).\n\nCheck the amount on your county property tax statement, because only taxes actually paid count."
+      },
+      {
+        "heading": "Home Office Deductions for Eligible Homeowners",
+        "body": "Homeowners who run an independent business or work as self-employed individuals may deduct qualifying home office expenses, but regular corporate employees cannot.\n\nUnder rules from the [IRS simplified home office option](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction), qualified taxpayers can claim a simplified deduction of $5 per square foot for a dedicated work area, up to a maximum of 300 square feet, which produces a top deduction of $1,500. Alternatively, filers can calculate actual expenses based on the square footage percentage of housing costs, including utilities, insurance, and depreciation.\n\nTo qualify under either method, the home office space must be used exclusively and on a regular basis as your principal place of business or to meet clients. Employees receiving a Form W-2 cannot claim a home office deduction under current federal rules, because miscellaneous itemized deductions for unreimbursed employee business expenses were eliminated for tax years beginning after 2017."
+      },
+      {
+        "heading": "Medically Necessary Home Improvements",
+        "body": "Capital improvements made to your home for medical care qualify as itemized medical deductions only to the extent the expense exceeds any increase in property value.\n\nAccording to [IRS Publication 502](https://www.irs.gov/publications/p502) and [IRS Topic 502](https://www.irs.gov/taxtopics/tc502), capital expenditures made primarily for medical care, such as widening doorways, installing wheelchair ramps, lowering kitchen counters, or adding a chairlift, count toward your medical expense calculation. However, if an improvement increases the market value of your residence, the deductible amount is strictly limited to the difference between the actual construction cost and the corresponding increase in the home's appraisal value.\n\nTotal qualified medical expenses are only deductible on Schedule A to the extent they exceed 7.5% of your adjusted gross income, commonly abbreviated as AGI. For example, if your adjusted gross income is $100,000, only medical expenses exceeding $7,500 can be factored into your itemized deductions."
+      },
+      {
+        "heading": "Homeowner Expenses That Are Not Deductible",
+        "body": "Many recurring expenses associated with owning real estate do not qualify for federal tax deductions on a primary personal residence.\n\nIRS guidance specifies that regular personal housing outlays are not deductible on Schedule A:\n\n- Mortgage principal payments\n- Homeowners insurance and hazard insurance premiums\n- Routine maintenance costs and general repairs\n- Utilities including electricity, natural gas, trash, and water\n- Homeowners association fees, commonly known as HOA dues\n\nUnlike capital improvements that get added to your property basis, routine repairs such as fixing a roof leak or repainting a wall do not lower your current taxable income. In addition, the itemized deduction for private mortgage insurance premiums is noted in [IRS Publication 936](https://www.irs.gov/publications/p936) as expired, and tax law changes in 2025 affect this area, so consult the current version of the publication to confirm whether any recent legislation reinstates the deduction for your filing year."
+      },
+      {
+        "heading": "Filing Preparation and Recordkeeping Steps",
+        "body": "Organizing real estate documentation before tax season ensures you do not miss qualifying deductions or claim invalid write-offs.\n\nFollow these practical steps when preparing your annual filing:\n\n1. Gather your Form 1098 statements from all mortgage servicers that held your loan during the calendar year.\n2. Review your closing disclosure if you purchased or refinanced during the tax year to verify whether discount points were itemized.\n3. Check your county property tax statements to verify the exact tax payments disbursed within the tax year.\n4. Keep paid receipts and contractor invoices for any medical modifications or substantial improvements funded via home equity.\n5. Verify the current treatment of mortgage insurance premiums in [IRS Publication 936](https://www.irs.gov/publications/p936) to check if your policy qualifies under newly enacted rules.\n\nComparing these gathered records against the standard deduction threshold helps you decide whether filing Schedule A is worth the effort. For a broad inventory of deductions outside real estate, consult our [tax deductions checklist](/guides/tax-deductions-checklist/)."
+      },
+      {
+        "heading": "Who This Deductibility Math Does Not Serve",
+        "body": "The standard deduction test produces very different outcomes depending on debt balance and location.\n\nItemizing real estate deductions does not benefit homeowners with small mortgage balances or paid-off homes, especially married filers in low-property-tax states. If you are married filing jointly and your total annual mortgage interest and local taxes stay well below $32,200, tracking individual receipts provides zero tax reduction compared to taking the standard allowance. First-time buyers can evaluate baseline costs using our [first time home buyer guide](/guides/first-time-home-buyer-guide/) or test borrowing limits on the [home affordability calculator](/mortgage/home-affordability-calculator/).\n\nOur verdict would flip if a buyer holds a substantial mortgage balance, such as a $700,000 loan at a high interest rate, paired with higher property taxes and charitable donations that push itemized deductions comfortably above the standard deduction threshold. Calculate your total deductible expenses each filing season, because annual principal amortization lowers your deductible interest each year, eventually making the standard deduction the superior choice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/",
+        "label": "Mortgage calculator hub"
+      },
+      {
+        "href": "/mortgage/closing-cost-calculator/",
+        "label": "Closing cost calculator"
+      },
+      {
+        "href": "/mortgage/home-affordability-calculator/",
+        "label": "Home affordability"
+      },
+      {
+        "href": "/heloc-calculator/",
+        "label": "HELOC calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is mortgage interest tax deductible in 2026?",
+        "answer": "Yes, mortgage interest is deductible on acquisition debt up to $750,000 for single and joint filers, or $375,000 for married individuals filing separately, for homes acquired after December 15, 2017. You must itemize deductions on Schedule A to claim it, and loans originating before December 16, 2017, qualify under an older $1 million limit."
+      },
+      {
+        "question": "Are property taxes deductible?",
+        "answer": "Yes, state and local property taxes are deductible on Schedule A, subject to the combined state and local tax deduction cap. For 2025, that cap is $40,000, or $20,000 for married filers filing separately, with a statutory floor of $10,000 and an annual 1% increase that makes the cap $40,400 for 2026."
+      },
+      {
+        "question": "Can I deduct home equity loan or HELOC interest?",
+        "answer": "You can deduct interest on a home equity loan or line of credit only if the borrowed money was used to buy, build, or substantially improve the home securing the loan. If the funds were used for other purposes, such as paying down personal loans or funding college tuition, the interest is not deductible."
+      },
+      {
+        "question": "Can I deduct home improvements?",
+        "answer": "Standard home renovations and routine repairs are not deductible, but medically necessary modifications may qualify under Schedule A medical expense deductions. The deductible amount is restricted to the cost that exceeds any increase in the market value of your property, and total medical expenses must surpass 7.5% of your adjusted gross income."
+      },
+      {
+        "question": "Should I itemize or take the standard deduction as a homeowner?",
+        "answer": "You should itemize only if your total qualifying deductions, including mortgage interest, property taxes, points, and other allowable write-offs, exceed the standard deduction for your filing status. For 2026, the standard deduction is $16,100 for single filers, $24,150 for heads of household, and $32,200 for married couples filing jointly."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Tax Inflation Adjustments for Tax Year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      },
+      {
+        "label": "IRS, Topic 505: Interest Expense",
+        "url": "https://www.irs.gov/taxtopics/tc505"
+      },
+      {
+        "label": "IRS, Publication 936: Home Mortgage Interest Deduction",
+        "url": "https://www.irs.gov/publications/p936"
+      },
+      {
+        "label": "IRS, Topic 503: Deductible Taxes",
+        "url": "https://www.irs.gov/taxtopics/tc503"
+      },
+      {
+        "label": "IRS, Simplified Option for Home Office Deduction",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction"
+      },
+      {
+        "label": "IRS, Publication 502: Medical and Dental Expenses",
+        "url": "https://www.irs.gov/publications/p502"
+      },
+      {
+        "label": "IRS, Topic 502: Medical and Dental Expenses",
+        "url": "https://www.irs.gov/taxtopics/tc502"
+      }
+    ]
+  },
+  {
+    "slug": "what-is-a-registered-investment-advisor",
+    "updated": "2026-10-02",
+    "title": "What a Registered Investment Advisor Is and How to Check One",
+    "metaDescription": "Learn what a registered investment advisor is, who regulates RIAs, how they make money, and how to verify any firm on the free SEC database before hiring.",
+    "h1": "What Is a Registered Investment Advisor (RIA)?",
+    "cardBlurb": "A registered investment advisor manages money under a fiduciary standard. Learn how RIAs get paid, who regulates them, and how to run a free public check.",
+    "introText": "A registered investment advisor (RIA) is a firm paid to give investment advice that is registered with the Securities and Exchange Commission (SEC) or a state regulator and owes clients a fiduciary duty.\n\nMany people assume anyone calling themselves a financial advisor is legally bound to put clients first. The legal label registered investment advisor applies to specific regulated entities that operate under an ongoing legal obligation to serve your financial interests, which you can verify yourself in minutes using official public filings.",
+    "sections": [
+      {
+        "heading": "How to Check an RIA Before You Hire One",
+        "body": "You can verify the credentials, fee schedule, and disciplinary background of any registered investment advisor for free on the official [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database. Before you sign an agreement or transfer money, search the firm name or the individual representative's name on that portal.\n\nThe database provides two critical documents that every retail investor should review. The first is Form ADV Part 2, commonly called the brochure, which describes the firm's business practices, fee structures, investment strategies, potential conflicts of interest, and any past disciplinary actions. The second is Form CRS, a relationship summary designed to let you quickly evaluate services, legal standards, and costs. Reviewing these filings allows you to confirm that the firm holds active registration and shows the firm's disciplinary history."
+      },
+      {
+        "heading": "What an RIA Is and the Legal Meaning of Adviser",
+        "body": "Under federal law, an investment adviser is generally a natural person or company that, for compensation, engages in the business of providing advice to others or issuing reports or analyses regarding securities. The [Securities and Exchange Commission (SEC)](https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/investment-advisers) oversees this standard under the Investment Advisers Act.\n\nYou will see both spellings used across the industry: the legal statute uses 'adviser' with an 'e', while marketing materials, business cards, and everyday articles commonly use 'advisor' with an 'o'. The spelling makes no difference under securities laws. What matters is the entity's actual registration status with either federal or state regulators rather than the commercial title on a business card. A professional may market themselves as a wealth manager, financial consultant, or wealth advisor without being subject to the fiduciary requirements of a registered investment advisor unless their firm formally holds that registration."
+      },
+      {
+        "heading": "RIA vs IAR vs Broker-Dealer Representative",
+        "body": "The term registered investment advisor refers strictly to the advisory firm, while the individual professional you interact with is typically an investment adviser representative (IAR). An investment adviser representative is a supervised person of an advisory firm who regularly solicits, meets with, or communicates with the firm's clients.\n\nThis distinction clarifies who holds the legal responsibility. The RIA is the business entity that registers with regulators and creates firm-wide compliance protocols, while the IAR is the licensed individual executing planning and investment strategies under that umbrella. By contrast, a representative of a broker-dealer acts primarily as an agent buying and selling securities on behalf of customers. Both may give guidance on your portfolio, and both SEC-registered RIAs and broker-dealers must give you Form CRS so you can compare services and costs. Ask which one you are dealing with, because it changes how your professional is paid."
+      },
+      {
+        "heading": "Who Regulates Registered Investment Advisors",
+        "body": "Regulatory oversight of an RIA depends primarily on the amount of regulatory assets under management (AUM) the firm oversees. As outlined by the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/working-with-investment-professional/investment-advisers), the dividing line between federal and state jurisdiction centers on specific asset thresholds.\n\nFirms managing $100 million or more in client assets are generally overseen directly by the SEC. Advisers with less than $100 million in assets under management are generally regulated by the state securities agency where the adviser has its principal place of business. Registration with the SEC becomes mandatory once an adviser reaches $110 million in AUM, and an SEC-registered firm must deregister and transition to state supervision if its assets fall below $90 million. Internet-based advisers may register with the SEC regardless of AUM levels, and mid-sized advisers managing between $25 million and $100 million may register at the federal level if their home state does not require state registration."
+      },
+      {
+        "heading": "The Fiduciary Duty and What It Does Not Guarantee",
+        "body": "Investment advisers are legally classified as fiduciaries, meaning they must act in the retail investor's best interests throughout the entire advisory relationship. The [SEC Form CRS framework](https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs) describes this standard.\n\nA fiduciary standard does not guarantee positive investment returns, nor does it guarantee that the firm charges low fees. An RIA can follow every fiduciary obligation while managing a portfolio that loses money during a market downturn, because fiduciary duty governs process, diligence, and loyalty rather than investment performance. Similarly, an adviser can charge substantial management fees as long as those fees are fully disclosed in Form ADV and agreed upon by the client. The core decision criterion when selecting an adviser is not simply confirming fiduciary status, but comparing total fee drag against the tangible value of the comprehensive planning provided."
+      },
+      {
+        "heading": "How RIAs Make Money",
+        "body": "A registered investment advisor is generally paid through a percentage of assets under management, though many firms charge fixed flat fees or hourly rates. The method of compensation changes your total annual cost significantly as your balance grows, which makes it worth comparing fee structures before hiring.\n\nUnder a standard 1% assets-under-management fee structure, managing a $500,000 portfolio costs $5,000 per year, whereas a $2,500 flat annual fee for the same planning scope costs half that amount. If that same portfolio grows to $1,000,000, a 1% annual fee rises to $10,000 every year even if the underlying planning workload remains identical. These worked figures illustrate how asset-percentage models scale automatically with portfolio size. To evaluate which billing arrangement suits your situation, you can review our [guide on flat-fee vs AUM-based financial advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) or test long-term compounding outcomes using our [portfolio tools](/portfolio/)."
+      },
+      {
+        "heading": "How an RIA Can Help and Questions to Ask",
+        "body": "A registered investment advisor can help coordinate retirement projections, structure taxable investments, manage estate distributions, and minimize capital gains exposure across personal and business accounts. Because their role is advisory, they can provide comprehensive roadmaps that tie disparate financial accounts into a cohesive long-term plan.\n\nBefore engaging an adviser, interview candidates directly to evaluate their practice standards and transparency. Ask these four core questions during your introductory meeting:\n\n1. Are you and your firm acting as a fiduciary for all services across our entire relationship?\n2. What is your complete fee schedule, including administrative costs, underlying fund fees, and advisory charges?\n3. Do you or your firm receive any compensation, rebates, or incentives for recommending specific investments?\n4. What is your registration status on the SEC IAPD portal, and are there any past disciplinary items on your Form ADV?"
+      },
+      {
+        "heading": "Who an RIA Is Not For",
+        "body": "Hiring a full-service registered investment advisor is not the right move for an investor with a small balance or basic planning needs. If your primary financial goal is setting up a straightforward monthly contribution into broad index funds, paying an annual asset-based fee or a high minimum retainer will unnecessarily erode your investment returns over time.\n\nInvestors with uncomplicated financial lives are often better served by self-managing with low-cost funds, using automated platforms covered in our [roundup of the best robo-advisors](/roundup/best-robo-advisors/), or booking a one-time project engagement. Our recommendation to hire an RIA would change if an individual with modest assets suddenly encounters complex tax rules, an inheritance, equity compensation, or intricate business succession issues. To verify whether a firm is legally bound to work in your best interest, look up their public Form ADV on the SEC database today."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/how-to-choose-a-financial-advisor/",
+        "label": "Advisor guide"
+      },
+      {
+        "href": "/compare/flat-fee-vs-aum-based-financial-advisors/",
+        "label": "Fee comparison"
+      },
+      {
+        "href": "/roundup/best-robo-advisors/",
+        "label": "Robo-advisors"
+      },
+      {
+        "href": "/portfolio/",
+        "label": "Portfolio tools"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does RIA stand for?",
+        "answer": "RIA stands for registered investment advisor, which is a firm registered with either the SEC or state securities regulators to provide investment advice for compensation. The firm operates under a legal fiduciary standard requiring it to act in the best interests of its clients."
+      },
+      {
+        "question": "Is a registered investment advisor a fiduciary?",
+        "answer": "Yes, a registered investment advisor is a fiduciary by law under the Investment Advisers Act. This legal standard requires the firm to act in the client's best interests throughout the advisory relationship."
+      },
+      {
+        "question": "How do I verify a registered investment advisor?",
+        "answer": "You can verify any registered investment advisor by searching the SEC's Investment Adviser Public Disclosure (IAPD) database at adviserinfo.sec.gov. The free database allows you to view the firm's Form ADV, which reveals regulatory status, business practices, fee schedules, conflicts of interest, and disciplinary history."
+      },
+      {
+        "question": "How do RIAs get paid?",
+        "answer": "RIAs generally get paid through an assets-under-management (AUM) fee calculated as an annual percentage of the client's portfolio, though some firms charge flat annual fees or hourly rates. For example, a 1% AUM fee on a $500,000 account amounts to $5,000 per year, whereas a flat-fee advisor might charge $2,500 annually for identical planning scope."
+      },
+      {
+        "question": "What is the difference between an RIA and a financial advisor?",
+        "answer": "A registered investment advisor is a legally defined entity registered with the SEC or state regulators that owes a fiduciary duty to clients. In contrast, 'financial advisor' is a broad marketing title that can be used by insurance agents, broker-dealer sales representatives, or uncredentialed planners who may not be held to an ongoing fiduciary standard."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC, Investment Advisers",
+        "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/investment-advisers"
+      },
+      {
+        "label": "FINRA, Investment Advisers",
+        "url": "https://www.finra.org/investors/investing/working-with-investment-professional/investment-advisers"
+      },
+      {
+        "label": "SEC, Frequently Asked Questions on Form CRS",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs"
+      },
+      {
+        "label": "SEC, Investment Adviser Public Disclosure (IAPD)",
+        "url": "https://adviserinfo.sec.gov/"
+      }
+    ]
+  },
+  {
+    "slug": "payday-loan-calculator-explained",
+    "updated": "2026-10-02",
+    "title": "Payday Loan Calculator Math for the True APR and Fees",
+    "metaDescription": "Calculate the true APR on a payday loan. See how a $15 fee becomes a 391% APR, how rollovers compound borrowing costs, and compare cheaper alternatives.",
+    "h1": "How a Payday Loan Calculator Turns Fees Into Triple-Digit APR",
+    "cardBlurb": "A standard $15 fee per $100 translates to a 391% APR on a two-week loan. See how the formula works, what rollovers cost, and which alternatives to consider.",
+    "introText": "A payday loan fee of $15 per $100 borrowed for 14 days equals an annual percentage rate (APR) of 391.07%. A flat fee reads like a small convenience charge until it is converted into an annualized rate. That disconnect conceals the true expense of short-term borrowing.\n\nBecause the typical borrowing window spans only two to four weeks, the annualized interest rate climbs into the triple digits. Rolling over the balance adds another fee each cycle. Understanding the arithmetic behind a payday loan calculator shows how small fees turn into prolonged debt balances.",
+    "sections": [
+      {
+        "heading": "How to Calculate the APR on a Payday Loan",
+        "body": "The annual percentage rate on a single-payment short loan divides the fee by the principal, multiplies by 365 days, and divides by the term length in days. The mathematical formula is APR = (fee / amount borrowed) x (365 / term in days) x 100.\n\nConsider a hypothetical borrowing scenario of $400 for 14 days at a common rate of $15 per $100 borrowed. The total fee equals $60, bringing the full repayment amount on your next payday to $460. Plug those figures into the formula: ($60 / $400) x (365 / 14) x 100 yields an APR of 391.07%.\n\nState regulations determine the allowable pricing caps, with maximum charges typically ranging from $10 to $30 per $100 borrowed according to the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/). On a 14-day loan, a $10 fee per $100 produces an APR of 260.71%, a $15 fee per $100 produces an APR of 391.07%, and a $30 fee per $100 reaches an APR of 782.14%."
+      },
+      {
+        "heading": "How Payday Loans Work",
+        "body": "A payday loan provides immediate cash that is scheduled for full repayment in a single lump sum on the borrower's next payday. The due date typically falls two to four weeks after receiving the funds.\n\nUnlike traditional underwriting processes, payday lenders do not generally verify your ability to repay while meeting other basic living obligations. That lack of scrutiny speeds up approval times, but it leaves borrowers vulnerable to cash shortfalls immediately following repayment."
+      },
+      {
+        "heading": "The Compounding Cost of Loan Rollovers",
+        "body": "A rollover occurs when a borrower cannot pay the full balance on the due date and pays only the fee to extend the principal for another cycle. Some states permit this practice, allowing the lender to extend the due date for another two to four weeks while charging an entirely new fee.\n\nTake the hypothetical $400 loan with an initial $60 fee. If you reach payday unable to spare $460, the lender may offer to roll over the balance for another $60. Doing this three times means you make four separate fee payments of $60, totaling $240 in fees across eight weeks.\n\nAfter paying $240 in total charges, you still owe the original $400 principal balance. That amounts to a 60% cash charge on the principal over two months without reducing the debt by a single dollar. You can map out repayment timelines for other balances using our [credit card payoff calculator](/credit-card-payoff/)."
+      },
+      {
+        "heading": "Dollar Costs Compared to Annualized Rates",
+        "body": "The duration of the borrowing term directly alters the calculated APR even when the out-of-pocket dollar fee remains identical. A $15 fee per $100 borrowed on a 28-day term produces an APR of 195.54%, which is exactly half the 391.07% APR calculated on a 14-day loan.\n\nThe dollar cost does not drop on the longer loan. You pay the exact same $60 to borrow $400 for four weeks as you would for two weeks, but spreading that fee over twice as many days cuts the annualized rate in half.\n\nThis creates an inversion where APR alone can mislead short-term planning. If you know you will settle the debt within 14 days, the raw dollar fee measures the immediate financial damage to your checking account. The APR serves a different job, revealing how payday financing compares to longer-term debt products."
+      },
+      {
+        "heading": "Comparing Payday Loans to Traditional Debt Products",
+        "body": "Mainstream credit products cost significantly less over comparable periods than short-term payday advances. A credit card cash advance carrying a 30% APR for 14 days on a $400 balance accrues roughly $4.60 in interest ($400 x 0.30 x 14 / 365), not counting the card issuer's initial transaction fee. Read our [credit card cash advance guide](/guides/credit-card-cash-advance-guide/) to evaluate those fees.\n\nBy comparison, standard credit card purchase APRs range from about 12 percent to about 30 percent according to the CFPB. While a cash advance ranks as an expensive option inside a consumer credit card account, its annualized interest remains a fraction of the 391.07% charged on an equivalent payday advance.\n\nPersonal installment loans provide structured amortization across several months. A hypothetical $400 personal installment loan at a 36% APR over a six-month term requires a monthly payment of $73.84 and generates $43.03 in total interest. The total interest paid over half a year remains lower than the $60 fee charged for a single two-week payday advance. You can run customized estimates on our [personal loan calculator hub](/personal-loan/)."
+      },
+      {
+        "heading": "Comparing Payday Loan Alternatives",
+        "body": "Before taking an advance with triple-digit interest, evaluate emergency financing options in a strict sequence to minimize borrowing costs:\n\n1. Contact utility companies or existing creditors to ask for an official payment extension or a hardship installment plan.\n2. Inquire about small-dollar emergency advances or payroll advances through your employer or specialized workplace programs.\n3. Apply for a small-dollar installment loan through a local credit union.\n4. Review structured personal financing options on our [secured personal loans explained guide](/guides/secured-personal-loans-explained/).\n5. Draw a credit card cash advance, which carries high fees but remains far cheaper than a 391.07% payday advance.\n6. Seek temporary relief through local community action agencies, religious charities, or nonprofit emergency funds.\n7. Request a short-term, interest-free personal loan from trusted family members or friends.\n\nNote that credit-builder loans do not serve as an emergency cash alternative. A credit-builder loan holds the borrowed sum in a locked savings account while you make monthly payments, releasing the principal only after completion. It builds credit history, but it provides no immediate liquidity for urgent bills."
+      },
+      {
+        "heading": "Steps to Break Free From a Rollover Trap",
+        "body": "Escaping an active cycle of payday debt requires stopping the fee rollover loop immediately through structured steps:\n\n1. Stop taking out loans from secondary payday lenders to pay off existing advances, which multiplies fee exposure.\n2. Ask the lender directly whether an extended payment plan exists, since availability varies by state and lender.\n3. Make a partial principal payment alongside the standard fee if your lender's contract and state regulations allow it.\n4. Cut discretionary spending for one complete pay cycle to direct all surplus cash toward the balance.\n5. Build a basic emergency cash buffer using our [budget calculator hub](/budget/) to absorb future unexpected expenses without borrowing.\n\nIf unpaid balances transition into default and go to collections, our [guide to dealing with debt collectors](/guides/how-to-deal-with-debt-collectors/) outlines your legal consumer protections."
+      },
+      {
+        "heading": "Tradeoffs of Payday Loans",
+        "body": "Payday loans offer quick access to cash with little underwriting, because lenders do not generally verify your ability to repay.\n\nThe disadvantages outweigh the operational speed for most households. The triple-digit APR, high flat fees, and immediate lump-sum repayment schedule drain bank accounts right when paychecks arrive. Lenders do not evaluate your ability to repay while handling other expenses, which repeatedly forces borrowers into unaffordable rollovers."
+      },
+      {
+        "heading": "Who Should Skip a Payday Loan",
+        "body": "Payday loans are not suitable for anyone managing an ongoing structural deficit between their monthly income and fixed living costs. If you cannot afford your baseline bills today, giving up a large chunk of your next paycheck makes the following month worse. Households facing chronic monthly deficits should review our [guide on how to pay off debt](/guides/how-to-pay-off-debt/) rather than taking short-term advances.\n\nOur verdict would change only if a borrower had no cheaper source of cash and was certain to repay the full $460 on day 14, in which case the $60 dollar fee, not the APR, is the number to weigh. To protect your finances, check your state financial regulator's website to verify local fee caps before signing any loan contract."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/personal-loan/",
+        "label": "Personal loan calculator"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do you calculate the APR on a payday loan?",
+        "answer": "Divide the loan fee by the amount borrowed, multiply the result by 365 days, and then divide by the term of the loan in days before multiplying by 100. For instance, a $60 fee on a $400 loan held for 14 days results in an APR of 391.07%."
+      },
+      {
+        "question": "How much does a $500 payday loan cost?",
+        "answer": "A $500 payday loan typically costs between $50 and $150 in fees for a single two-week term, depending on state regulations. At a common rate of $15 per $100 borrowed, a $500 loan costs $75 in fees, requiring a full repayment of $575 on your next payday."
+      },
+      {
+        "question": "What happens if I can't repay a payday loan?",
+        "answer": "In some states the lender may offer a rollover, where you pay only the fee and the due date is extended, but the fee repeats and the principal stays the same. Ask the lender about a payment plan before the due date, and read the loan contract for what happens if you miss it."
+      },
+      {
+        "question": "Is a payday loan worse than a credit card cash advance?",
+        "answer": "Yes, a payday loan is significantly more expensive than a credit card cash advance. A $400 cash advance at a 30% APR held for 14 days generates about $4.60 in interest, whereas a standard 14-day payday loan fee of $15 per $100 costs $60 on that same balance."
+      },
+      {
+        "question": "Are payday loans legal in every state?",
+        "answer": "No. State law sets whether payday lending is allowed and how much it may cost, so check your state financial regulator to see your local rules."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Consumer Financial Protection Bureau, What is a payday loan?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/"
+      }
+    ]
+  },
+  {
+    "slug": "how-to-calculate-your-monthly-student-loan-payment",
+    "updated": "2026-10-02",
+    "title": "Student Loan Payment Calculator Formula With Worked Examples",
+    "metaDescription": "Calculate your monthly student loan payment with our formula breakdown, worked examples, term comparison tables, and standard repayment rules.",
+    "h1": "How to Calculate Your Monthly Student Loan Payment",
+    "cardBlurb": "Learn the standard amortization formula to determine your monthly student loan bill, see real worked examples, and compare payoff timelines.",
+    "introText": "To calculate your monthly student loan payment, use the standard amortization formula payment = P x i / (1 - (1 + i)^-n), where P is your current loan principal, i is your monthly interest rate calculated as your annual rate divided by 12, and n is the total number of monthly payments across your loan term.\n\nSmall changes in interest and term length add up to thousands of dollars in total financing cost. For example, a $30,000 undergraduate loan at the fixed federal rate of 6.52% repaid over 10 years produces a monthly payment of $340.95 and costs $10,913.92 in total interest. The same balance stretched across 20 years reduces the monthly bill to $224.03, but it drives your cumulative interest expense up to $23,766.08.\n\nRunning these calculations by hand or through a dedicated model gives you clarity over how much debt service your paycheck can actually sustain. Whether you carry federal direct loans or private debt, understanding the mechanics of daily accrual, standard repayment terms, and payment allocation ensures you can plan a realistic path toward zero debt.",
+    "sections": [
+      {
+        "heading": "The Student Loan Payment Formula With a Worked Example",
+        "body": "The standard fixed monthly loan payment calculation uses the amortization equation payment = P x i / (1 - (1 + i)^-n). In this equation, P represents the starting principal balance, i represents the periodic monthly interest rate calculated by dividing the annual interest rate by 12, and n represents the total count of monthly payments scheduled over the life of the loan.\n\nConsider an undergraduate borrower who owes $30,000 at a fixed annual rate of 6.52% on a standard 10-year repayment schedule. Ten years equates to 120 monthly payments, making n equal to 120. Dividing the annual rate of 0.0652 by 12 yields a periodic monthly rate i of approximately 0.0054333.\n\nPlugging these variables into the equation produces a required monthly payment of exactly $340.95. Over 120 payments, this borrower pays a total of $40,913.92, which consists of the original $30,000 principal plus $10,913.92 in cumulative interest. You can test identical amortization math for unsecured borrowing using our [personal loan calculator](/personal-loan/) to model how interest rates and schedules interact."
+      },
+      {
+        "heading": "How Loan Term Length Changes Your Payment and Total Interest",
+        "body": "Choosing a longer loan term lowers your mandatory monthly payment but substantially increases the total interest you pay over the life of the loan. Stretched repayment schedules spread principal reduction across more years, allowing interest to accumulate on a higher remaining balance for an extended period.\n\nThe math on a $30,000 loan balance at a 6.52% fixed rate illustrates this dynamic across multiple standard terms:\n\n- 5 years (60 payments): $587.27 a month, $5,235.93 total interest, $35,235.93 total paid\n- 10 years (120 payments): $340.95 a month, $10,913.92 total interest, $40,913.92 total paid\n- 20 years (240 payments): $224.03 a month, $23,766.08 total interest, $53,766.08 total paid\n- 25 years (300 payments): $202.94 a month, $30,881.17 total interest, $60,881.17 total paid\n\nComparing the 10-year term to the 20-year term reveals the underlying trade-off clearly. Extending the term from 10 to 20 years lowers the required payment by $116.92 each month, dropping from $340.95 down to $224.03. However, that breathing room in your monthly cash flow comes at a steep price: you hand over an additional $12,852.14 in total interest charges ($23,766.08 compared to $10,913.92). If your balance is larger, such as $50,000 at 6.52% on a 10-year term, your payment rises to $568.25 a month with $18,189.86 in interest, totaling $68,189.86."
+      },
+      {
+        "heading": "Federal vs Private Student Loans and Rate Differences",
+        "body": "Federal student loans carry statutory fixed interest rates established by congressional policy, whereas private student loans carry rates and terms determined entirely by commercial lenders evaluating borrower creditworthiness. This fundamental difference determines whether your payment remains predictable or fluctuates over time.\n\nAccording to the [U.S. Department of Education Federal Student Aid announcement GENERAL-26-33](https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027), Federal Direct Subsidized and Unsubsidized Loans for undergraduate students first disbursed between July 1, 2026 and June 30, 2027 have a fixed interest rate of 6.52%. This rate is derived from the 10-year Treasury note high yield of 4.468% plus a statutory add-on of 2.05%, and it remains fixed for the life of the loan.\n\nPrivate loans do not share these fixed federal formulas or statutory protections. Instead, private lenders evaluate credit scores, income, and debt-to-income ratios to set individual loan terms, and borrowers looking to modify private debt often evaluate external options using our [student loan refinance roundup](/roundup/best-student-loan-refinance/)."
+      },
+      {
+        "heading": "The Standard Repayment Plan and Alternative Options",
+        "body": "The standard repayment plan sets a fixed monthly payment of at least $50 over a term of up to 10 years, or up to 30 years for consolidated debt. Excluding periods of deferment and forbearance, this plan generally repays your debt with the lowest overall interest cost because it amortizes the principal quickly.\n\nBorrowers who need structured repayment details can review our [student loan standard repayment plan guide](/guides/student-loan-standard-repayment-plan/) to see how monthly schedules are established. Standard plans ensure that every dollar you pay steadily reduces the underlying debt balance without prolonging interest accumulation.\n\nFederal repayment plans other than the standard plan, including income-driven options and loan forgiveness programs, have undergone repeated legislative and regulatory revisions. Because rules and eligibility criteria shift, borrowers exploring other plans should check [studentaid.gov](https://studentaid.gov/) directly to determine which specific repayment or forgiveness options currently apply to their loan holdings."
+      },
+      {
+        "heading": "Daily Interest Accrual and Servicer Payoff Differences",
+        "body": "Student loan interest accrues daily on your outstanding principal balance, which explains why your monthly servicer statement may show a balance that differs slightly from a standard amortization formula. Amortization formulas assume twelve evenly spaced payment intervals per year, whereas calendar months contain varying day counts from 28 to 31 days.\n\nTo calculate daily interest, your loan servicer multiplies your outstanding principal by your annual interest rate and divides the result by the number of days in the year. That daily accrual builds until your scheduled payment arrives, which pays down accrued interest first before reducing the remaining principal.\n\nBecause calendar timing, leap years, and payment processing dates influence daily interest accumulation, your monthly billing statement remains the authoritative source for your exact balance and official loan payoff quote. To plan how recurring debt service fits into your broader financial picture, evaluate your cash flow with our [budget calculator hub](/budget/)."
+      },
+      {
+        "heading": "A Step-by-Step Checklist to Calculate and Manage Your Payments",
+        "body": "Managing your student loan payments effectively requires collecting your exact loan details before committing extra funds toward repayment. Following a structured series of checks ensures your payments go where you intend without disrupting basic living expenses.\n\n1. Locate your current outstanding principal balance and fixed interest rate on your official servicer dashboard.\n2. Choose a repayment term length, such as the standard 10-year baseline or an extended schedule.\n3. Compute your baseline monthly bill using the fixed amortization payment formula.\n4. Check your overall monthly cash flow to ensure the required payment fits comfortably alongside rent and savings.\n5. Confirm directly with your loan servicer that any extra payments made above the minimum are applied directly to principal rather than held as advance payments for future billing dates.\n\nMaking additional payments directly to your loan principal shortens your overall payoff timeline and saves money on cumulative interest. If you carry higher-rate debt alongside your student loans, compare early payoff strategies against our [credit card payoff calculator](/credit-card-payoff/) to prioritize your highest-cost balances first."
+      },
+      {
+        "heading": "When Choosing a Lower Monthly Payment Makes Strategic Sense",
+        "body": "Selecting an extended repayment term with a lower monthly payment is often the right operational decision for income-constrained borrowers who need immediate monthly budget relief. While paying down debt over 10 years saves interest, maintaining basic financial solvency takes precedence when your cash flow is tight.\n\nIf committing to a $340.95 monthly payment on a $30,000 balance forces you to skip emergency savings or fall behind on living expenses, extending the repayment period to reduce the monthly obligation to $224.03 prevents delinquency and defaults. Borrowers worried about missing payments should review our guide on [what happens if you do not pay student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) to understand the consequences of delinquency.\n\nOnce income stabilizes or household earnings rise, borrowers on longer schedules can voluntarily accelerate payments toward principal. This approach gives you the safety net of a low mandatory payment while preserving your ability to cut total interest later."
+      },
+      {
+        "heading": "Who This Standard Calculation Is Not For and When the Math Changes",
+        "body": "This standard payment calculation is not suitable for borrowers on income-driven federal repayment plans. Those plans determine monthly obligations based on adjusted gross income and family size rather than the underlying loan balance or standard amortization schedules.\n\nOur payment calculation conclusions would also change if your underlying interest rate moves. Borrowers holding high-interest private debt who qualify for lower market rates may find better terms elsewhere, which we examine in our guide on [whether you should refinance student loans](/guides/should-you-refinance-student-loans/). If your rate drops through refinancing, your monthly payment and overall interest costs will decrease accordingly.\n\nTo take control of your student debt today, gather your latest loan statements, run the amortization formula to determine your exact numbers, and contact your servicer to verify that any extra monthly payments reduce your principal immediately."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/personal-loan/",
+        "label": "Personal loan calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget calculator"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff calculator"
+      },
+      {
+        "href": "/roundup/best-student-loan-refinance/",
+        "label": "Refinance options"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I calculate my monthly student loan payment?",
+        "answer": "Use the fixed amortization formula payment = P x i / (1 - (1 + i)^-n), where P is your principal balance, i is your monthly interest rate (annual rate divided by 12), and n is the total number of monthly payments. For example, a $30,000 balance at 6.52% fixed interest over a 10-year term (120 payments) results in a monthly payment of $340.95."
+      },
+      {
+        "question": "How much is the payment on a $50,000 student loan?",
+        "answer": "On a standard 10-year repayment term at a fixed 6.52% interest rate, the monthly payment on a $50,000 loan is $568.25. Over the 120-month schedule, you will pay $18,189.86 in total interest, bringing the total cost of the loan to $68,189.86."
+      },
+      {
+        "question": "What is the current federal student loan interest rate?",
+        "answer": "Federal Direct Subsidized and Unsubsidized Loans for undergraduate students first disbursed between July 1, 2026 and June 30, 2027 carry a fixed rate of 6.52%. This rate is calculated from the 10-year Treasury note high yield of 4.468% plus a statutory add-on of 2.05%, and it remains fixed for the life of the loan."
+      },
+      {
+        "question": "Does a longer term save money on student loans?",
+        "answer": "No, a longer term lowers your required monthly payment but increases your total loan cost substantially. For instance, lengthening a $30,000 loan at 6.52% from 10 years to 20 years saves $116.92 each month ($224.03 vs. $340.95) but adds $12,852.14 in total interest charges over the life of the debt."
+      },
+      {
+        "question": "Can I pay off my student loan early?",
+        "answer": "Generally yes, but confirm with your loan servicer that prepayment is allowed and that all extra funds are applied directly to reducing your principal balance rather than held to cover the next scheduled monthly payment."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Education Federal Student Aid, Interest Rates for Federal Direct Loans Disbursed Between July 1, 2026 and June 30, 2027 (GENERAL-26-33)",
+        "url": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027"
+      },
+      {
+        "label": "Federal Student Aid, Repayment Plans and Program Rules",
+        "url": "https://studentaid.gov/"
+      }
+    ]
+  },
+  {
+    "slug": "home-improvement-loan-guide",
+    "updated": "2026-10-02",
+    "title": "How to Choose a Home Improvement Loan by Total Cost",
+    "metaDescription": "Compare home improvement loan types, calculate real monthly payments on a $25,000 project, and see IRS rules on tax-deductible interest.",
+    "h1": "How to Choose and Compare a Home Improvement Loan",
+    "cardBlurb": "Learn how to choose between secured and unsecured renovation financing, how origination fees change your borrowing total, and when project interest is tax-deductible.",
+    "introText": "The best home improvement loan is the cheapest financing structure you can repay comfortably without putting your home at risk.\n\nA $25,000 project financed with an 8% five-year loan requires a $506.91 monthly payment and costs $5,414.59 in total interest. The same balance at a 12% rate pushes the payment to $556.11 and interest to $8,366.67, meaning interest rates and upfront lender charges determine which loan structure makes financial sense.",
+    "sections": [
+      {
+        "heading": "How to Choose a Home Improvement Loan",
+        "body": "When comparing financing options for a renovation, the interest rate and repayment timeline determine your ultimate project cost. Monthly payments for fixed-rate installment loans follow a standard amortization formula where the payment equals P multiplied by i divided by 1 minus the quantity 1 plus i raised to the negative n power, where P is principal, i is the monthly interest rate, and n represents total payments.\n\nEvaluating a baseline $25,000 project across illustrative terms shows how rates shift total financing charges. An 8% interest rate over 60 months generates a monthly payment of $506.91 and total interest of $5,414.59. If that rate climbs to 12% over the same 60-month term, the payment increases to $556.11 and total interest reaches $8,366.67. Extending an 8% loan to 120 months drops the payment to $303.32 but raises total interest to $11,398.28. A 7% loan stretched over 180 months yields a $224.71 monthly payment while accumulating $15,447.27 in interest.\n\nWork through three checks in order:\n\n1. Check whether you have enough equity to use a secured loan without threatening your housing security.\n2. Check whether your income supports the $506.91 payment of a five-year schedule in the example above.\n3. Compare the total cost of origination fees against any rate discount the lender offers."
+      },
+      {
+        "heading": "Types of Home Improvement Loans",
+        "body": "A home improvement loan is any financing product used to repair, renovate, or remodel a residential property. Borrowers typically select from six main options depending on their available home equity, needed funding speed, and total project budget.\n\nUnsecured personal loans provide a lump sum deposited directly into your bank account without using your home as collateral. These loans carry fixed interest rates and set monthly installments. Home equity loans also deliver a single lump-sum payout with fixed rates, but they require using your residence as collateral to secure the debt.\n\nA home equity line of credit, often called a HELOC, functions like a revolving credit line secured by your home. Borrowers draw funds as contractor bills arrive during an initial draw period. A cash-out refinance replaces your existing primary mortgage with a completely new, larger loan, returning the difference between the balances to you in cash.\n\nCredit cards can finance smaller DIY purchases or emergency repairs, but they carry variable rates that are usually higher than installment loan rates. The Consumer Financial Protection Bureau notes that [credit card annual percentage rates](https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/) can range from about 12 percent to about 30 percent, which makes prolonged borrowing on plastic expensive. Contractor financing is arranged directly through the remodeling firm completing the work, while government-backed renovation loans offer programs backed by federal agencies. Because terms, eligibility rules, and rates vary widely, verify all program specifics directly with the respective lender or program administrator before committing."
+      },
+      {
+        "heading": "Secured vs Unsecured Financing Options",
+        "body": "The choice between secured and unsecured financing represents a fundamental tradeoff between your interest rate and personal risk. Secured loans use your house as collateral, which gives the lender a legal lien on your property until the balance is cleared.\n\nBecause secured loans reduce risk for the lender, home equity loans and HELOCs typically carry lower interest rates than unsecured personal loans. However, missing payments on a secured loan puts your home at risk of foreclosure. For homeowners with variable income, seasonal employment, or thin emergency reserves, risking the roof over their heads for a non-urgent kitchen remodel creates dangerous vulnerability.\n\nUnsecured personal loans require no property appraisal, and demand no home equity. If you default on an unsecured personal loan, the lender cannot automatically seize your residence, though they can damage your credit profile and pursue legal collections. Borrowers who recently purchased their house and lack built-up equity often find unsecured personal loans to be their only viable installment option."
+      },
+      {
+        "heading": "How Origination Fees Increase Borrowing Costs",
+        "body": "Upfront origination fees can quietly erase the benefit of an apparently low interest rate. Lenders often deduct origination fees directly from the loan principal before transferring the remaining funds to your account.\n\nConsider a hypothetical 5% origination fee applied to a $25,000 personal loan. The lender withholds $1,250 immediately, leaving you with net proceeds of only $23,750. If your contractor requires a full $25,000 deposit to begin construction, receiving $23,750 leaves a $1,250 shortfall that you must cover from savings.\n\nTo walk away with a full $25,000 after accounting for a 5% fee, you must borrow $26,315.79, calculated as $25,000 divided by 0.95. Financing $26,315.79 at an 8% interest rate over 60 months produces a monthly payment of $533.59 and total interest charges of $5,699.57. That 5% fee adds $26.68 each month to your required payment and costs an additional $284.98 in interest over the life of the loan compared to a zero-fee $25,000 loan at the same rate."
+      },
+      {
+        "heading": "Comparing Loan Terms and Total Interest",
+        "body": "Extending your repayment term lowers your required monthly outlay but dramatically increases the total cash leaving your pocket over time. A lower monthly payment can fit tight monthly cash flow, but the long-term trade-off is substantial.\n\nFor a $25,000 loan balance, financing at 8% over 60 months requires $506.91 per month and accumulates $5,414.59 in total interest. Keeping the same 8% interest rate but stretching payments across 120 months reduces the monthly obligation to $303.32. That change frees up $203.59 in monthly budget space, yet the total interest jumps to $11,398.28, more than doubling your financing charges.\n\nTaking that same $25,000 and spreading it across 180 months at a 7% interest rate produces a small payment of $224.71 per month. However, that fifteen-year repayment timeline generates $15,447.27 in interest payments alone."
+      },
+      {
+        "heading": "Are Home Improvement Loans Tax Deductible",
+        "body": "Interest paid on a home improvement loan is tax deductible only under strict statutory conditions regarding collateral and use of funds. An unsecured personal loan used for remodeling generally does not qualify for an interest deduction, because it is not secured by your home.\n\nAccording to [IRS Publication 936](https://www.irs.gov/publications/p936), interest on loans secured by your primary residence or second home is deductible only if the borrowed capital was used to buy, build, or substantially improve the property securing the debt. The publication explicitly states: \"No matter when the indebtedness was incurred, you can no longer deduct the interest from a loan secured by your home to the extent the loan proceeds weren't used to buy, build, or substantially improve your home.\" Furthermore, deductible home acquisition debt is capped at an overall limit of $750,000, or $375,000 for married individuals filing separately.\n\nTax savings materialize only if your cumulative itemized deductions exceed the standard deduction. Under the [IRS 2026 inflation adjustments release](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill), the standard deduction is $16,100 for single filers and $32,200 for married couples filing jointly. A separate rule outlined in [IRS Publication 502](https://www.irs.gov/publications/p502) governs medically necessary modifications, such as support bars or wheelchair ramps. Those expenses qualify as deductible medical deductions only to the extent that the modification cost exceeds any resulting increase in the property value."
+      },
+      {
+        "heading": "Application Steps and Lender Comparison Checklist",
+        "body": "Lenders assess your credit score, household debt-to-income ratio, reliable employment history, and available home equity before approving a loan. While unsecured personal loan lenders focus primarily on income verification and credit standing, home equity lenders require formal appraisals to confirm property valuation.\n\nWhen evaluating competing renovation loan offers, work through this five-step checklist:\n\n1. Confirm whether the quoted annual percentage rate is fixed or variable over the full repayment period.\n2. Calculate the net cash proceeds disbursed to your bank account after all origination fees are subtracted.\n3. Verify whether the lender charges a prepayment penalty if you clear the debt balance ahead of schedule.\n4. Tally closing costs, including appraisal, title search, and administrative fees on secured options.\n5. Compare total borrowing costs, which equal the monthly payment multiplied by total months, plus all upfront fees."
+      },
+      {
+        "heading": "When to Pay Cash Instead of Borrowing",
+        "body": "Financing a home project makes little financial sense if the upgrade fails to preserve structural integrity, correct an active safety hazard, or deliver clear functional utility. Borrowing high-interest funds to finance purely discretionary cosmetic updates can strain household finances.\n\nIf a planned upgrade does not address an urgent structural risk, saving cash and waiting several months is generally superior to taking on five years of installment debt. New homeowners should exercise particular caution when considering renovation borrowing. First-time buyers frequently exhaust liquid reserves on down payments and closing fees, leaving them vulnerable to unexpected baseline homeownership costs.\n\nTaking on an immediate unsecured personal loan or equity lien directly following a home purchase increases fixed monthly commitments. If emergency systems fail, a homeowner carrying new renovation debt may find themselves without remaining credit options or cash reserves."
+      },
+      {
+        "heading": "Who This Is Not for and What Changes Our Answer",
+        "body": "This guidance does not apply to real estate investors executing rapid short-term flips or homeowners who can comfortably cover project expenses from liquid emergency savings without depleting safety cushions. Borrowers with unstable monthly income should also avoid secured loans entirely, relying instead on smaller phased cash projects to prevent risking their primary shelter.\n\nOur preference for unsecured loans when income is uncertain would flip if a secured loan carried no closing costs and a rate far below your unsecured offers, and you held ample equity and steady income. Calculate your specific numbers on a [personal loan hub](/personal-loan/) before finalizing your borrowing choice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/personal-loan/",
+        "label": "Personal loan calculator"
+      },
+      {
+        "href": "/heloc-calculator/",
+        "label": "HELOC calculator"
+      },
+      {
+        "href": "/compare/heloc-vs-personal-loan/",
+        "label": "HELOC vs personal loan"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the best loan for home improvements?",
+        "answer": "The best loan is the lowest-cost option that matches your project timeline without exposing your home to foreclosure risk. A fixed-rate home equity loan or personal loan offers predictable payments for a one-time project, while a HELOC provides flexible borrowing for ongoing work."
+      },
+      {
+        "question": "Are home improvement loans tax deductible?",
+        "answer": "Interest is tax deductible only on loans secured by your home where proceeds are used to buy, build, or substantially improve that property, provided you itemize deductions. Interest on an unsecured personal loan is generally not deductible."
+      },
+      {
+        "question": "Is a HELOC or a personal loan better for a renovation?",
+        "answer": "A HELOC works better for multi-stage renovations requiring flexible withdrawals at typically lower interest rates, provided you are willing to use your home as collateral. An unsecured personal loan is better if you lack home equity, need fast funding, or refuse to risk your house."
+      },
+      {
+        "question": "How much does a $25,000 home improvement loan cost?",
+        "answer": "Financed at an 8% interest rate over 60 months, a $25,000 loan requires a $506.91 monthly payment and costs $5,414.59 in total interest. At a 12% rate over 60 months, the payment rises to $556.11 and interest totals $8,366.67."
+      },
+      {
+        "question": "Can I get a home improvement loan with bad credit?",
+        "answer": "Yes, but lenders compensate for lower credit scores by charging higher interest rates and origination fees. Borrowers can also explore government-backed renovation loans, secured equity options if sufficient home value exists, or contractor financing programs."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Publication 936, Home Mortgage Interest Deduction",
+        "url": "https://www.irs.gov/publications/p936"
+      },
+      {
+        "label": "IRS, Tax Inflation Adjustments for Tax Year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      },
+      {
+        "label": "CFPB, What is a payday loan?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/"
+      },
+      {
+        "label": "IRS, Publication 502, Medical and Dental Expenses",
+        "url": "https://www.irs.gov/publications/p502"
+      }
+    ]
+  },
   // ── competitor-monitor 2026-09-30 ──
   {
     "updated": "2026-09-30",
@@ -1822,6 +2453,7 @@ export const GUIDES: Guide[] = [
       { heading: "Step 5: Questions to ask on the first call", body: "Bring the same short list to every advisor you interview. Ask: Are you a fiduciary on all accounts and at all times, in writing? How are you paid, exactly, and what will my total annual cost be in dollars? What credentials do you hold, and is one the CFP?\n\nAlso ask: Who is your typical client, and do they look like me? How often will we meet, and who is my main contact? What happens to my accounts if you leave or retire? A good advisor answers each question directly. A vague or evasive answer is your signal to keep looking." },
     ],
     tools: [
+      { href: "/guides/what-is-a-registered-investment-advisor/", label: "What is a registered investment advisor" },
       { href: "/retirement/", label: "Retirement" },
       { href: "/investing/", label: "Investing" },
       { href: "/net-worth/", label: "Net worth" },
@@ -1863,6 +2495,7 @@ export const GUIDES: Guide[] = [
       { heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges around 0.25% of assets with no dedicated human attached, while a traditional fee-only financial advisor charges roughly 1% AUM, about four times more, for a relationship with an actual person.\n\nThat extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation, and guidance through one-time events like a business sale or inheritance. A robo-advisor rebalances on schedule and diversifies well, but it can't talk you out of a panic sell or plan around a stock-compensation vesting schedule.\n\nPick a robo-advisor if your situation is simple, one or two retirement accounts with no complex tax events, and you mainly need low-cost diversification and rebalancing. Pick a financial advisor once your situation has real complexity, or if you know you tend to make emotional investment decisions during volatility; the behavioral coaching alone is often worth more than the extra fee. See our [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/) comparison for the difference between those two credentials once you decide a human advisor is the right call." },
     ],
     tools: [
+      { href: "/guides/what-is-a-registered-investment-advisor/", label: "What is a registered investment advisor" },
       { href: "/guides/how-to-choose-a-financial-advisor/", label: "How to choose a financial advisor" },
       { href: "/investing/", label: "Investing" },
       { href: "/portfolio/", label: "Portfolio" },
@@ -3460,6 +4093,7 @@ export const GUIDES: Guide[] = [
       { heading: "If you already took one, minimize the damage", body: "Pay off a cash advance balance before your statement closes if at all possible, since interest is calculated daily from the transaction date with no grace period — every extra day carries a cost. Check your card's specific cash advance APR in your cardholder agreement or online account; it's often listed separately from your purchase APR and can be several points higher.\n\nIf you're carrying multiple balances, most issuers apply any payment above the minimum to the highest-APR balance first — since cash advance APR is usually the highest rate on the card, that works in your favor once you're paying more than the minimum." },
     ],
     tools: [
+      { href: "/guides/payday-loan-calculator-explained/", label: "Payday loan APR calculator explained" },
       { href: "/budget/", label: "Budget" },
       { href: "/net-worth/", label: "Net worth" },
     ],
@@ -3975,6 +4609,7 @@ export const GUIDES: Guide[] = [
       },
     ],
     tools: [
+      { href: "/guides/how-to-calculate-your-monthly-student-loan-payment/", label: "Calculate your student loan payment" },
       { href: "/budget/", label: "Budget" },
       { href: "/net-worth/", label: "Net worth" },
     ],
@@ -6243,6 +6878,7 @@ export const GUIDES: Guide[] = [
       },
     ],
     tools: [
+      { href: "/guides/home-improvement-loan-guide/", label: "Home improvement loan guide" },
       { href: "/mortgage/", label: "Mortgage" },
       { href: "/mortgage/refinance-calculator/", label: "Mortgage refinance" },
       { href: "/net-worth/", label: "Net worth" },
@@ -8203,6 +8839,7 @@ export const GUIDES: Guide[] = [
       { heading: "How to Use This Tax Deductions Checklist", body: "Use this tax deductions checklist as a starting point, not a finished tax return. Walk through each item above, note whether it applies to you, then add up your itemizable total and compare it against your standard deduction.\n\nMost single filers, and many married couples, still come out ahead with the standard deduction, especially now that it rises with inflation every year. Homeowners with a large mortgage, filers in high-tax states affected by the new $40,400 SALT cap, and households with a major medical or charitable year are the ones most likely to benefit from itemizing instead.\n\nKeep documentation year-round rather than scrambling every April. Save mortgage interest statements, property tax bills, medical receipts, and charitable acknowledgment letters as they arrive. Recheck this checklist every year, since dollar limits and phase-out ranges adjust for inflation and can change again if Congress passes new tax legislation. When your situation gets complicated, such as self-employment income, a big life event, or a deduction close to a phase-out line, a CPA or enrolled agent earns their fee. This guide is general information, not personalized tax advice." },
     ],
     tools: [
+      { href: "/guides/tax-deductions-for-homeowners/", label: "Tax deductions for homeowners" },
       { href: "/retirement/401k-calculator/", label: "401(k) calculator" },
       { href: "/retirement/", label: "Retirement" },
       { href: "/net-worth/", label: "Net worth" },
@@ -10399,6 +11036,7 @@ export const GUIDES: Guide[] = [
       },
     ],
     tools: [
+      { href: "/guides/how-to-deal-with-medical-debt/", label: "How to deal with medical debt" },
       { href: "/personal-loan/", label: "Personal loan calculator" },
       { href: "/credit-card-payoff/", label: "Credit card payoff calculator" },
       { href: "/budget/", label: "Budget calculator" },

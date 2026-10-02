@@ -1,0 +1,100 @@
+{
+  "slug": "what-is-a-registered-investment-advisor",
+  "title": "What a Registered Investment Advisor Is and How to Check One",
+  "metaDescription": "Learn what a registered investment advisor is, who regulates RIAs, how they make money, and how to verify any firm on the free SEC database before hiring.",
+  "h1": "What Is a Registered Investment Advisor (RIA)?",
+  "cardBlurb": "A registered investment advisor manages money under a fiduciary standard. Learn how RIAs get paid, who regulates them, and how to run a free public check.",
+  "introText": "A registered investment advisor (RIA) is a firm paid to give investment advice that is registered with the Securities and Exchange Commission (SEC) or a state regulator and owes clients a fiduciary duty.\n\nMany people assume anyone calling themselves a financial advisor is legally bound to put clients first. The legal label registered investment advisor applies to specific regulated entities that operate under an ongoing legal obligation to serve your financial interests, which you can verify yourself in minutes using official public filings.",
+  "sections": [
+    {
+      "heading": "How to Check an RIA Before You Hire One",
+      "body": "You can verify the credentials, fee schedule, and disciplinary background of any registered investment advisor for free on the official [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database. Before you sign an agreement or transfer money, search the firm name or the individual representative's name on that portal.\n\nThe database provides two critical documents that every retail investor should review. The first is Form ADV Part 2, commonly called the brochure, which describes the firm's business practices, fee structures, investment strategies, potential conflicts of interest, and any past disciplinary actions. The second is Form CRS, a relationship summary designed to let you quickly evaluate services, legal standards, and costs. Reviewing these filings allows you to confirm that the firm holds active registration and shows the firm's disciplinary history."
+    },
+    {
+      "heading": "What an RIA Is and the Legal Meaning of Adviser",
+      "body": "Under federal law, an investment adviser is generally a natural person or company that, for compensation, engages in the business of providing advice to others or issuing reports or analyses regarding securities. The [Securities and Exchange Commission (SEC)](https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/investment-advisers) oversees this standard under the Investment Advisers Act.\n\nYou will see both spellings used across the industry: the legal statute uses 'adviser' with an 'e', while marketing materials, business cards, and everyday articles commonly use 'advisor' with an 'o'. The spelling makes no difference under securities laws. What matters is the entity's actual registration status with either federal or state regulators rather than the commercial title on a business card. A professional may market themselves as a wealth manager, financial consultant, or wealth advisor without being subject to the fiduciary requirements of a registered investment advisor unless their firm formally holds that registration."
+    },
+    {
+      "heading": "RIA vs IAR vs Broker-Dealer Representative",
+      "body": "The term registered investment advisor refers strictly to the advisory firm, while the individual professional you interact with is typically an investment adviser representative (IAR). An investment adviser representative is a supervised person of an advisory firm who regularly solicits, meets with, or communicates with the firm's clients.\n\nThis distinction clarifies who holds the legal responsibility. The RIA is the business entity that registers with regulators and creates firm-wide compliance protocols, while the IAR is the licensed individual executing planning and investment strategies under that umbrella. By contrast, a representative of a broker-dealer acts primarily as an agent buying and selling securities on behalf of customers. Both may give guidance on your portfolio, and both SEC-registered RIAs and broker-dealers must give you Form CRS so you can compare services and costs. Ask which one you are dealing with, because it changes how your professional is paid."
+    },
+    {
+      "heading": "Who Regulates Registered Investment Advisors",
+      "body": "Regulatory oversight of an RIA depends primarily on the amount of regulatory assets under management (AUM) the firm oversees. As outlined by the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/working-with-investment-professional/investment-advisers), the dividing line between federal and state jurisdiction centers on specific asset thresholds.\n\nFirms managing $100 million or more in client assets are generally overseen directly by the SEC. Advisers with less than $100 million in assets under management are generally regulated by the state securities agency where the adviser has its principal place of business. Registration with the SEC becomes mandatory once an adviser reaches $110 million in AUM, and an SEC-registered firm must deregister and transition to state supervision if its assets fall below $90 million. Internet-based advisers may register with the SEC regardless of AUM levels, and mid-sized advisers managing between $25 million and $100 million may register at the federal level if their home state does not require state registration."
+    },
+    {
+      "heading": "The Fiduciary Duty and What It Does Not Guarantee",
+      "body": "Investment advisers are legally classified as fiduciaries, meaning they must act in the retail investor's best interests throughout the entire advisory relationship. The [SEC Form CRS framework](https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs) describes this standard.\n\nA fiduciary standard does not guarantee positive investment returns, nor does it guarantee that the firm charges low fees. An RIA can follow every fiduciary obligation while managing a portfolio that loses money during a market downturn, because fiduciary duty governs process, diligence, and loyalty rather than investment performance. Similarly, an adviser can charge substantial management fees as long as those fees are fully disclosed in Form ADV and agreed upon by the client. The core decision criterion when selecting an adviser is not simply confirming fiduciary status, but comparing total fee drag against the tangible value of the comprehensive planning provided."
+    },
+    {
+      "heading": "How RIAs Make Money",
+      "body": "A registered investment advisor is generally paid through a percentage of assets under management, though many firms charge fixed flat fees or hourly rates. The method of compensation changes your total annual cost significantly as your balance grows, which makes it worth comparing fee structures before hiring.\n\nUnder a standard 1% assets-under-management fee structure, managing a $500,000 portfolio costs $5,000 per year, whereas a $2,500 flat annual fee for the same planning scope costs half that amount. If that same portfolio grows to $1,000,000, a 1% annual fee rises to $10,000 every year even if the underlying planning workload remains identical. These worked figures illustrate how asset-percentage models scale automatically with portfolio size. To evaluate which billing arrangement suits your situation, you can review our [guide on flat-fee vs AUM-based financial advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) or test long-term compounding outcomes using our [portfolio tools](/portfolio/)."
+    },
+    {
+      "heading": "How an RIA Can Help and Questions to Ask",
+      "body": "A registered investment advisor can help coordinate retirement projections, structure taxable investments, manage estate distributions, and minimize capital gains exposure across personal and business accounts. Because their role is advisory, they can provide comprehensive roadmaps that tie disparate financial accounts into a cohesive long-term plan.\n\nBefore engaging an adviser, interview candidates directly to evaluate their practice standards and transparency. Ask these four core questions during your introductory meeting:\n\n1. Are you and your firm acting as a fiduciary for all services across our entire relationship?\n2. What is your complete fee schedule, including administrative costs, underlying fund fees, and advisory charges?\n3. Do you or your firm receive any compensation, rebates, or incentives for recommending specific investments?\n4. What is your registration status on the SEC IAPD portal, and are there any past disciplinary items on your Form ADV?"
+    },
+    {
+      "heading": "Who an RIA Is Not For",
+      "body": "Hiring a full-service registered investment advisor is not the right move for an investor with a small balance or basic planning needs. If your primary financial goal is setting up a straightforward monthly contribution into broad index funds, paying an annual asset-based fee or a high minimum retainer will unnecessarily erode your investment returns over time.\n\nInvestors with uncomplicated financial lives are often better served by self-managing with low-cost funds, using automated platforms covered in our [roundup of the best robo-advisors](/roundup/best-robo-advisors/), or booking a one-time project engagement. Our recommendation to hire an RIA would change if an individual with modest assets suddenly encounters complex tax rules, an inheritance, equity compensation, or intricate business succession issues. To verify whether a firm is legally bound to work in your best interest, look up their public Form ADV on the SEC database today."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/guides/how-to-choose-a-financial-advisor/",
+      "label": "Advisor guide"
+    },
+    {
+      "href": "/compare/flat-fee-vs-aum-based-financial-advisors/",
+      "label": "Fee comparison"
+    },
+    {
+      "href": "/roundup/best-robo-advisors/",
+      "label": "Robo-advisors"
+    },
+    {
+      "href": "/portfolio/",
+      "label": "Portfolio tools"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does RIA stand for?",
+      "answer": "RIA stands for registered investment advisor, which is a firm registered with either the SEC or state securities regulators to provide investment advice for compensation. The firm operates under a legal fiduciary standard requiring it to act in the best interests of its clients."
+    },
+    {
+      "question": "Is a registered investment advisor a fiduciary?",
+      "answer": "Yes, a registered investment advisor is a fiduciary by law under the Investment Advisers Act. This legal standard requires the firm to act in the client's best interests throughout the advisory relationship."
+    },
+    {
+      "question": "How do I verify a registered investment advisor?",
+      "answer": "You can verify any registered investment advisor by searching the SEC's Investment Adviser Public Disclosure (IAPD) database at adviserinfo.sec.gov. The free database allows you to view the firm's Form ADV, which reveals regulatory status, business practices, fee schedules, conflicts of interest, and disciplinary history."
+    },
+    {
+      "question": "How do RIAs get paid?",
+      "answer": "RIAs generally get paid through an assets-under-management (AUM) fee calculated as an annual percentage of the client's portfolio, though some firms charge flat annual fees or hourly rates. For example, a 1% AUM fee on a $500,000 account amounts to $5,000 per year, whereas a flat-fee advisor might charge $2,500 annually for identical planning scope."
+    },
+    {
+      "question": "What is the difference between an RIA and a financial advisor?",
+      "answer": "A registered investment advisor is a legally defined entity registered with the SEC or state regulators that owes a fiduciary duty to clients. In contrast, 'financial advisor' is a broad marketing title that can be used by insurance agents, broker-dealer sales representatives, or uncredentialed planners who may not be held to an ongoing fiduciary standard."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SEC, Investment Advisers",
+      "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/investment-advisers"
+    },
+    {
+      "label": "FINRA, Investment Advisers",
+      "url": "https://www.finra.org/investors/investing/working-with-investment-professional/investment-advisers"
+    },
+    {
+      "label": "SEC, Frequently Asked Questions on Form CRS",
+      "url": "https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-form-crs"
+    },
+    {
+      "label": "SEC, Investment Adviser Public Disclosure (IAPD)",
+      "url": "https://adviserinfo.sec.gov/"
+    }
+  ]
+}

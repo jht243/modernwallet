@@ -1,0 +1,92 @@
+{
+  "slug": "how-to-calculate-your-monthly-student-loan-payment",
+  "title": "Student Loan Payment Calculator Formula With Worked Examples",
+  "metaDescription": "Calculate your monthly student loan payment with our formula breakdown, worked examples, term comparison tables, and standard repayment rules.",
+  "h1": "How to Calculate Your Monthly Student Loan Payment",
+  "cardBlurb": "Learn the standard amortization formula to determine your monthly student loan bill, see real worked examples, and compare payoff timelines.",
+  "introText": "To calculate your monthly student loan payment, use the standard amortization formula payment = P x i / (1 - (1 + i)^-n), where P is your current loan principal, i is your monthly interest rate calculated as your annual rate divided by 12, and n is the total number of monthly payments across your loan term.\n\nSmall changes in interest and term length add up to thousands of dollars in total financing cost. For example, a $30,000 undergraduate loan at the fixed federal rate of 6.52% repaid over 10 years produces a monthly payment of $340.95 and costs $10,913.92 in total interest. The same balance stretched across 20 years reduces the monthly bill to $224.03, but it drives your cumulative interest expense up to $23,766.08.\n\nRunning these calculations by hand or through a dedicated model gives you clarity over how much debt service your paycheck can actually sustain. Whether you carry federal direct loans or private debt, understanding the mechanics of daily accrual, standard repayment terms, and payment allocation ensures you can plan a realistic path toward zero debt.",
+  "sections": [
+    {
+      "heading": "The Student Loan Payment Formula With a Worked Example",
+      "body": "The standard fixed monthly loan payment calculation uses the amortization equation payment = P x i / (1 - (1 + i)^-n). In this equation, P represents the starting principal balance, i represents the periodic monthly interest rate calculated by dividing the annual interest rate by 12, and n represents the total count of monthly payments scheduled over the life of the loan.\n\nConsider an undergraduate borrower who owes $30,000 at a fixed annual rate of 6.52% on a standard 10-year repayment schedule. Ten years equates to 120 monthly payments, making n equal to 120. Dividing the annual rate of 0.0652 by 12 yields a periodic monthly rate i of approximately 0.0054333.\n\nPlugging these variables into the equation produces a required monthly payment of exactly $340.95. Over 120 payments, this borrower pays a total of $40,913.92, which consists of the original $30,000 principal plus $10,913.92 in cumulative interest. You can test identical amortization math for unsecured borrowing using our [personal loan calculator](/personal-loan/) to model how interest rates and schedules interact."
+    },
+    {
+      "heading": "How Loan Term Length Changes Your Payment and Total Interest",
+      "body": "Choosing a longer loan term lowers your mandatory monthly payment but substantially increases the total interest you pay over the life of the loan. Stretched repayment schedules spread principal reduction across more years, allowing interest to accumulate on a higher remaining balance for an extended period.\n\nThe math on a $30,000 loan balance at a 6.52% fixed rate illustrates this dynamic across multiple standard terms:\n\n- 5 years (60 payments): $587.27 a month, $5,235.93 total interest, $35,235.93 total paid\n- 10 years (120 payments): $340.95 a month, $10,913.92 total interest, $40,913.92 total paid\n- 20 years (240 payments): $224.03 a month, $23,766.08 total interest, $53,766.08 total paid\n- 25 years (300 payments): $202.94 a month, $30,881.17 total interest, $60,881.17 total paid\n\nComparing the 10-year term to the 20-year term reveals the underlying trade-off clearly. Extending the term from 10 to 20 years lowers the required payment by $116.92 each month, dropping from $340.95 down to $224.03. However, that breathing room in your monthly cash flow comes at a steep price: you hand over an additional $12,852.14 in total interest charges ($23,766.08 compared to $10,913.92). If your balance is larger, such as $50,000 at 6.52% on a 10-year term, your payment rises to $568.25 a month with $18,189.86 in interest, totaling $68,189.86."
+    },
+    {
+      "heading": "Federal vs Private Student Loans and Rate Differences",
+      "body": "Federal student loans carry statutory fixed interest rates established by congressional policy, whereas private student loans carry rates and terms determined entirely by commercial lenders evaluating borrower creditworthiness. This fundamental difference determines whether your payment remains predictable or fluctuates over time.\n\nAccording to the [U.S. Department of Education Federal Student Aid announcement GENERAL-26-33](https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027), Federal Direct Subsidized and Unsubsidized Loans for undergraduate students first disbursed between July 1, 2026 and June 30, 2027 have a fixed interest rate of 6.52%. This rate is derived from the 10-year Treasury note high yield of 4.468% plus a statutory add-on of 2.05%, and it remains fixed for the life of the loan.\n\nPrivate loans do not share these fixed federal formulas or statutory protections. Instead, private lenders evaluate credit scores, income, and debt-to-income ratios to set individual loan terms, and borrowers looking to modify private debt often evaluate external options using our [student loan refinance roundup](/roundup/best-student-loan-refinance/)."
+    },
+    {
+      "heading": "The Standard Repayment Plan and Alternative Options",
+      "body": "The standard repayment plan sets a fixed monthly payment of at least $50 over a term of up to 10 years, or up to 30 years for consolidated debt. Excluding periods of deferment and forbearance, this plan generally repays your debt with the lowest overall interest cost because it amortizes the principal quickly.\n\nBorrowers who need structured repayment details can review our [student loan standard repayment plan guide](/guides/student-loan-standard-repayment-plan/) to see how monthly schedules are established. Standard plans ensure that every dollar you pay steadily reduces the underlying debt balance without prolonging interest accumulation.\n\nFederal repayment plans other than the standard plan, including income-driven options and loan forgiveness programs, have undergone repeated legislative and regulatory revisions. Because rules and eligibility criteria shift, borrowers exploring other plans should check [studentaid.gov](https://studentaid.gov/) directly to determine which specific repayment or forgiveness options currently apply to their loan holdings."
+    },
+    {
+      "heading": "Daily Interest Accrual and Servicer Payoff Differences",
+      "body": "Student loan interest accrues daily on your outstanding principal balance, which explains why your monthly servicer statement may show a balance that differs slightly from a standard amortization formula. Amortization formulas assume twelve evenly spaced payment intervals per year, whereas calendar months contain varying day counts from 28 to 31 days.\n\nTo calculate daily interest, your loan servicer multiplies your outstanding principal by your annual interest rate and divides the result by the number of days in the year. That daily accrual builds until your scheduled payment arrives, which pays down accrued interest first before reducing the remaining principal.\n\nBecause calendar timing, leap years, and payment processing dates influence daily interest accumulation, your monthly billing statement remains the authoritative source for your exact balance and official loan payoff quote. To plan how recurring debt service fits into your broader financial picture, evaluate your cash flow with our [budget calculator hub](/budget/)."
+    },
+    {
+      "heading": "A Step-by-Step Checklist to Calculate and Manage Your Payments",
+      "body": "Managing your student loan payments effectively requires collecting your exact loan details before committing extra funds toward repayment. Following a structured series of checks ensures your payments go where you intend without disrupting basic living expenses.\n\n1. Locate your current outstanding principal balance and fixed interest rate on your official servicer dashboard.\n2. Choose a repayment term length, such as the standard 10-year baseline or an extended schedule.\n3. Compute your baseline monthly bill using the fixed amortization payment formula.\n4. Check your overall monthly cash flow to ensure the required payment fits comfortably alongside rent and savings.\n5. Confirm directly with your loan servicer that any extra payments made above the minimum are applied directly to principal rather than held as advance payments for future billing dates.\n\nMaking additional payments directly to your loan principal shortens your overall payoff timeline and saves money on cumulative interest. If you carry higher-rate debt alongside your student loans, compare early payoff strategies against our [credit card payoff calculator](/credit-card-payoff/) to prioritize your highest-cost balances first."
+    },
+    {
+      "heading": "When Choosing a Lower Monthly Payment Makes Strategic Sense",
+      "body": "Selecting an extended repayment term with a lower monthly payment is often the right operational decision for income-constrained borrowers who need immediate monthly budget relief. While paying down debt over 10 years saves interest, maintaining basic financial solvency takes precedence when your cash flow is tight.\n\nIf committing to a $340.95 monthly payment on a $30,000 balance forces you to skip emergency savings or fall behind on living expenses, extending the repayment period to reduce the monthly obligation to $224.03 prevents delinquency and defaults. Borrowers worried about missing payments should review our guide on [what happens if you do not pay student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) to understand the consequences of delinquency.\n\nOnce income stabilizes or household earnings rise, borrowers on longer schedules can voluntarily accelerate payments toward principal. This approach gives you the safety net of a low mandatory payment while preserving your ability to cut total interest later."
+    },
+    {
+      "heading": "Who This Standard Calculation Is Not For and When the Math Changes",
+      "body": "This standard payment calculation is not suitable for borrowers on income-driven federal repayment plans. Those plans determine monthly obligations based on adjusted gross income and family size rather than the underlying loan balance or standard amortization schedules.\n\nOur payment calculation conclusions would also change if your underlying interest rate moves. Borrowers holding high-interest private debt who qualify for lower market rates may find better terms elsewhere, which we examine in our guide on [whether you should refinance student loans](/guides/should-you-refinance-student-loans/). If your rate drops through refinancing, your monthly payment and overall interest costs will decrease accordingly.\n\nTo take control of your student debt today, gather your latest loan statements, run the amortization formula to determine your exact numbers, and contact your servicer to verify that any extra monthly payments reduce your principal immediately."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/personal-loan/",
+      "label": "Personal loan calculator"
+    },
+    {
+      "href": "/budget/",
+      "label": "Budget calculator"
+    },
+    {
+      "href": "/credit-card-payoff/",
+      "label": "Credit card payoff calculator"
+    },
+    {
+      "href": "/roundup/best-student-loan-refinance/",
+      "label": "Refinance options"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I calculate my monthly student loan payment?",
+      "answer": "Use the fixed amortization formula payment = P x i / (1 - (1 + i)^-n), where P is your principal balance, i is your monthly interest rate (annual rate divided by 12), and n is the total number of monthly payments. For example, a $30,000 balance at 6.52% fixed interest over a 10-year term (120 payments) results in a monthly payment of $340.95."
+    },
+    {
+      "question": "How much is the payment on a $50,000 student loan?",
+      "answer": "On a standard 10-year repayment term at a fixed 6.52% interest rate, the monthly payment on a $50,000 loan is $568.25. Over the 120-month schedule, you will pay $18,189.86 in total interest, bringing the total cost of the loan to $68,189.86."
+    },
+    {
+      "question": "What is the current federal student loan interest rate?",
+      "answer": "Federal Direct Subsidized and Unsubsidized Loans for undergraduate students first disbursed between July 1, 2026 and June 30, 2027 carry a fixed rate of 6.52%. This rate is calculated from the 10-year Treasury note high yield of 4.468% plus a statutory add-on of 2.05%, and it remains fixed for the life of the loan."
+    },
+    {
+      "question": "Does a longer term save money on student loans?",
+      "answer": "No, a longer term lowers your required monthly payment but increases your total loan cost substantially. For instance, lengthening a $30,000 loan at 6.52% from 10 years to 20 years saves $116.92 each month ($224.03 vs. $340.95) but adds $12,852.14 in total interest charges over the life of the debt."
+    },
+    {
+      "question": "Can I pay off my student loan early?",
+      "answer": "Generally yes, but confirm with your loan servicer that prepayment is allowed and that all extra funds are applied directly to reducing your principal balance rather than held to cover the next scheduled monthly payment."
+    }
+  ],
+  "sources": [
+    {
+      "label": "U.S. Department of Education Federal Student Aid, Interest Rates for Federal Direct Loans Disbursed Between July 1, 2026 and June 30, 2027 (GENERAL-26-33)",
+      "url": "https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027"
+    },
+    {
+      "label": "Federal Student Aid, Repayment Plans and Program Rules",
+      "url": "https://studentaid.gov/"
+    }
+  ]
+}
