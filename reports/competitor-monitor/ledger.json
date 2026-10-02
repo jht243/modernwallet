@@ -167162,11 +167162,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/finance/learn/pay-medical-debt": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:a2dc0ffa689107e210ca3303d9610ae70c38902fd3953f9ce7307025f1b8c39c",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T00:00:00-07:00",
+          "our_url": "/guides/how-to-deal-with-medical-debt/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "1. Set up a medical bill payment plan",
@@ -167185,7 +167189,7 @@
             "finance",
             "payment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "7 Ways to Deal with Medical Debt - NerdWallet",
           "tool_io": []
         },
@@ -172151,11 +172155,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/registered-investment-advisor": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:b0c097f5203d42ac80c8fd9c1dd5051871626f56bf3696cb7628d90d7fb8c988",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T00:00:00-07:00",
+          "our_url": "/guides/what-is-a-registered-investment-advisor/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Financial advisor or adviser?",
@@ -172169,7 +172177,7 @@
             "financial",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Registered Investment Advisor (RIA)? - NerdWallet",
           "tool_io": []
         },
@@ -174548,11 +174556,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/insurance/auto/auto-insurance-pricing-report-2026": {
+          "acted": false,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:1df60f8f2c66299c97d91c3d1b977f1c344a875a8bad53b95492ecfd931610ab",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-10-02",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T13:34:39-07:00",
+          "our_url": "",
           "outline": [
             "Key takeaways from our data analysis",
             "How NerdWallet measures change over time",
@@ -174609,7 +174621,7 @@
           "relevance_hits": [
             "credit"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "NerdWallet Auto Insurance Rates Report (2026) - NerdWallet",
           "tool_io": []
         },
@@ -194661,11 +194673,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/investing/learn/how-much-save-by-30": {
+          "acted": false,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:2c4cd14f27ad7e38327ae19487bb204a9530e230dda7acbf9141f8a605f81189",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T00:00:00-07:00",
+          "our_url": "/guides/how-much-do-i-need-to-retire-by-age/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "How much money should I have saved by 30?",
@@ -194681,7 +194697,7 @@
             "invest",
             "investing"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How Much Money Should I Have Saved by 30? - NerdWallet",
           "tool_io": []
         },
@@ -202733,11 +202749,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/learn/tax-deductions-for-homeowners": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:1bc781293895ee35d2269442e2ad41b06d9336f24cf37a75170b886a42489b42",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T00:00:00-07:00",
+          "our_url": "/guides/tax-deductions-for-homeowners/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Standard deduction for the 2026 tax year",
@@ -202757,7 +202777,7 @@
             "tax",
             "taxes"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Tax Deductions for Homeowners in 2026 - NerdWallet",
           "tool_io": []
         },
@@ -204937,11 +204957,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-friday-october-2-2026": {
+          "acted": false,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:1e39d2b240659559a51c3f78a18dfb122341d06c0b45af430a512108ef659f0e",
+          "disposition": "skipped-duplicate",
           "first_seen": "2026-10-02",
           "kind": "page",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T07:19:26-07:00",
+          "our_url": "/guides/current-mortgage-rates-guide/",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "Average mortgage rates, last 30 days",
@@ -204958,7 +204982,7 @@
             "mortgage",
             "refinance"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Mortgage Rates Today, Friday, October 2: A Little Lower, Still Above 7% - NerdWallet",
           "tool_io": []
         },
@@ -223979,11 +224003,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/travel/learn/bilt-obsidian-vs-chase-sapphire-preferred": {
+          "acted": false,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:dac9a5bf457ad1621efa0a12d289c3023b4f5d6cbe2de9967d6d901eb50cceac",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "comparison",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-02T00:00:00-07:00",
+          "our_url": "",
           "outline": [
             "You&apos;re our first priority.Every time.",
             "How the cards compare",
@@ -224005,7 +224033,7 @@
             "rent",
             "rental"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Bilt Obsidian vs. Chase Sapphire Preferred: Which Travels Best? - NerdWallet",
           "tool_io": []
         },
@@ -289592,11 +289620,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/home-improvement-loan": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:4efc113c478cfa643137e1cc49b542a068d0b74a040bcb46310176296cb512aa",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-01T02:32:08.109Z",
+          "our_url": "/guides/home-improvement-loan-guide/",
           "outline": [
             "What is a home improvement loan? How do home improvement loans work?",
             "How to use the home improvement loan calculator",
@@ -289618,7 +289650,7 @@
             "loans",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Home Improvement Loan Calculator",
           "tool_io": [
             "label: Loan term",
@@ -293697,11 +293729,15 @@
           "status": "baseline"
         },
         "https://www.omnicalculator.com/finance/payday-loan": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:75f0bd552825f1c69b6331fadcd69bd00315c6f18a81eb5ab6ca1b57a7f2fc11",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-01T02:40:21.807Z",
+          "our_url": "/guides/payday-loan-calculator-explained/",
           "outline": [
             "What is a payday loan? \u2013 Payday loan definition",
             "How do payday loans work?",
@@ -293719,7 +293755,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Payday Loan Calculator",
           "tool_io": [
             "label: Finance charge",
@@ -297011,11 +297047,15 @@
           ]
         },
         "https://www.omnicalculator.com/finance/student-loan": {
+          "acted": true,
+          "acted_date": "2026-10-02",
           "content_hash": "sha256:abc71e76686689f79ff1038d1bd50ff7c403b9654f2edc192b30eee077793cd4",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "tool",
           "last_seen": "2026-10-02",
           "lastmod": "2026-10-01T02:54:48.145Z",
+          "our_url": "/guides/how-to-calculate-your-monthly-student-loan-payment/",
           "outline": [
             "What is a student loan?",
             "How do student loans work?",
@@ -297033,7 +297073,7 @@
             "loan",
             "loans"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Student Loan Calculator",
           "tool_io": [
             "label: Remaining term",
