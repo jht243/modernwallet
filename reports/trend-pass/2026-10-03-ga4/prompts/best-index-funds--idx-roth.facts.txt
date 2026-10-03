@@ -1,0 +1,6 @@
+CLOSED FACT LIST (anything not here, you do not know):
+- A Roth IRA is a type of account that holds investments; it is not an investment itself. Growth inside a Roth IRA is not taxed again when qualified withdrawals are taken.
+- Funds on the page: VOO (Vanguard S&P 500 ETF, 0.03% expense ratio); FZROX (Fidelity ZERO Total Market Index Fund, 0.00%, available only in Fidelity accounts); VTI (Vanguard Total Stock Market ETF, 0.03%, about 3,700 U.S. stocks); FXAIX (Fidelity 500 Index Fund, 0.015%, no minimum at Fidelity); IVV (iShares Core S&P 500 ETF, 0.03%); SCHB (Schwab U.S. Broad Market ETF, 0.03%); VXUS (Vanguard Total International Stock ETF); BND (Vanguard Total Bond Market ETF, 0.03%).
+- FZROX is exclusive to Fidelity accounts and cannot be moved to another brokerage as-is.
+- The 2026 Roth IRA contribution limit and income limits: you do not know them; tell the reader to check the IRS page rather than quoting them.
+- In a taxable account, index funds are taxed along the way (dividends each year, capital gains when sold); inside a Roth IRA that tax drag does not apply.

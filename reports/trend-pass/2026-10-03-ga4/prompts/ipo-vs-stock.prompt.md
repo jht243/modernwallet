@@ -1,0 +1,4 @@
+TASK: Write the answer for ONE new FAQ on the page /guides/what-is-an-ipo. FAQ answer only, no heading.
+READER QUESTION: "What is the difference between an IPO and a stock?"
+WHY: autocomplete shows repeated demand ("what is an ipo vs stock", "ipo vs regular stock", "ipo vs shares which is better"); the page explains IPOs but never says how an IPO relates to a share of stock.
+Answer in the first sentence: an IPO is an event, the first sale of a company's shares to the public, while a stock is the ownership share itself; after the IPO those same shares are ordinary stock that trades on the exchange. Then say what is different about buying at the IPO versus later. Do not repeat the lockup explanation in full. Link nothing internal. You may cite the SEC investor bulletin once, using the allowed URL as a markdown link.

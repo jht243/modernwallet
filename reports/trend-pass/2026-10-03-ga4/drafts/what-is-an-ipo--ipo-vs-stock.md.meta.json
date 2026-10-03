@@ -1,0 +1,37 @@
+{
+ "slug": "what-is-an-ipo--ipo-vs-stock",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 102,
+ "floor": 0,
+ "input_tokens": 17030,
+ "output_tokens": 115,
+ "thinking_tokens": null,
+ "cached_tokens": 15645,
+ "est_cost_usd": 0.0026,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 102,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16218
+  }
+ },
+ "seconds": 2.0,
+ "response_id": "JsrAatKlGamb-8YPq6va4AY",
+ "generated_at": "2026-10-03T09:25:59+0000"
+}

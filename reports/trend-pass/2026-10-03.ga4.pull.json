@@ -1,0 +1,74 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-03",
+  "window_start": "2026-10-03",
+  "window_end": "2026-10-03",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/stocks-vs-bonds-vs-cash",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-invest-100k-to-1-million/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/robinhood-24-hour-trading",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/what-is-an-ipo",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/what-to-do-with-an-inheritance/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 6,
+  "top10_pages_total_clicks": 6,
+  "channel_split": {
+    "/compare/stocks-vs-bonds-vs-cash": {
+      "Direct": 1
+    },
+    "/guides/how-to-invest-100k-to-1-million/": {
+      "Cross-network": 1
+    },
+    "/guides/robinhood-24-hour-trading": {
+      "Direct": 1
+    },
+    "/guides/what-is-an-ipo": {
+      "Direct": 1
+    },
+    "/guides/what-to-do-with-an-inheritance/": {
+      "Cross-network": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Direct": 1
+    }
+  }
+}

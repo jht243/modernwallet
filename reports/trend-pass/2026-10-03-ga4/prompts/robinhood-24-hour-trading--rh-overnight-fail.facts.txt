@@ -1,0 +1,8 @@
+CLOSED FACT LIST (anything not here, you do not know):
+- The Robinhood 24 Hour Market runs continuously from Sunday at 8:00 p.m. ET until Friday at 8:00 p.m. ET; there is no overnight session on the weekend.
+- 24 hour trading is available on a curated list of stocks and ETFs, not every security.
+- Overnight orders must be whole-share limit orders; fractional shares do not trade overnight.
+- Options cannot be traded in the 24 Hour Market.
+- Overnight orders are routed to 24H market makers and alternative trading systems.
+- Robinhood can suspend overnight market access without prior notice.
+- Overnight liquidity is lower and bid-ask spreads wider, so a limit order away from the market price may not fill.

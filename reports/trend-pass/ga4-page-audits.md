@@ -228,3 +228,9 @@
 | /guides/private-placement-life-insurance | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-money-market-accounts/ | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |
 | /roundup/best-student-credit-cards/ | 2026-10-02 | 1 | 0/0/0/0/0 | 0 |
+| /compare/stocks-vs-bonds-vs-cash | 2026-10-03 | 1 | 0/0/0/0/0 | 0 |
+| /guides/how-to-invest-100k-to-1-million/ | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
+| /guides/robinhood-24-hour-trading | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
+| /guides/what-is-an-ipo | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
+| /guides/what-to-do-with-an-inheritance/ | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |

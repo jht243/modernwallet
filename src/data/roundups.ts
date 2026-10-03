@@ -1708,6 +1708,11 @@ export const ROUNDUPS: RoundupEntry[] = [
         answer:
           "Yes, the fund's holdings stay protected because a mutual fund or ETF's assets are legally segregated from the fund company's own assets. An independent custodian holds those assets, separate from the manager's own balance sheet. If a fund company like Vanguard or Fidelity were to fail, the stocks and bonds inside your index fund would not become part of that company's bankruptcy estate. You own a share of the fund's underlying assets, and that ownership is separate from any claim against the fund company itself. This protection works differently from SIPC coverage, which instead protects your account if the brokerage firm holding it fails.",
       },
+      {
+        question: "What are the best index funds for a Roth IRA?",
+        answer:
+          "A Roth IRA is an account that holds investments rather than an investment itself, so the same low-cost index funds work inside it because the account changes how growth is taxed instead of which fund performs best. Broad stock funds like VOO, VTI, and FXAIX benefit most from that tax-free growth over decades because they avoid the annual dividend and capital gains taxes incurred in taxable brokerage accounts. If you hold your account at Fidelity, FZROX carries a 0.00% expense ratio and FXAIX costs 0.015%, though FZROX is exclusive to Fidelity accounts and cannot transfer to another broker as-is. You can model your projected balance using our [Roth IRA calculator](/investing/roth-ira-calculator/) or explore the account rules in our guide on [Roth IRAs vs index funds](/compare/roth-ira-vs-index-fund/).",
+      },
     ],
     sources: [
       { label: "S&P SPIVA Report — Active vs. Passive Scorecard", url: "https://www.spglobal.com/spdji/en/research-insights/spiva/" },

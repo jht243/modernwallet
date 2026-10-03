@@ -1,0 +1,37 @@
+{
+ "slug": "how-to-invest-100k-to-1-million--income-100k",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 100,
+ "floor": 0,
+ "input_tokens": 17068,
+ "output_tokens": 161,
+ "thinking_tokens": null,
+ "cached_tokens": 15645,
+ "est_cost_usd": 0.0028,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 100,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16218
+  }
+ },
+ "seconds": 2.7,
+ "response_id": "r8nAauXRLpC1jrEPhZPUCQ",
+ "generated_at": "2026-10-03T09:24:01+0000"
+}
