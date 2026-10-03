@@ -1,5 +1,5 @@
 {
- "run_date": "2026-09-28",
+ "run_date": "2026-10-03",
  "pages_analyzed": [
   "/compare/trump-account-vs-brokerage-account/",
   "/compare/trump-account-vs-savings-account/",
@@ -193,7 +193,8 @@
    "Does a custodial brokerage account for my child get hit by the kiddie tax each year? -> /compare/trump-account-vs-custodial-account/",
    "Is there an income limit on who can open or contribute to a Trump Account? -> /guides/trump-account-worth-it/",
    "Is TrumpAccounts.gov legit, or is it a scam? -> /trump-account/",
-   "Fidelity Trump Accounts -> /guides/how-to-open-a-trump-account/ (identified, not yet applied)"
+   "Fidelity Trump Accounts -> /guides/how-to-open-a-trump-account/ (identified, not yet applied)",
+   "What brokerage does the Trump Account use? -> /guides/what-are-trump-accounts-invested-in/ (applied 2026-10-03)"
   ],
   "/compare/trump-account-vs-savings-account/": [
    "Are the Trump accounts worth it? -> /guides/trump-account-worth-it/",
@@ -217,7 +218,9 @@
    "How to open a Trump account for baby -> /guides/how-to-open-a-trump-account/",
    "Does it cost anything to open a Trump Account or apply for a state baby bond? -> /guides/trump-account-worth-it/",
    "What is better than Trump's account? -> /guides/trump-account-alternatives/ (identified, not yet applied)",
-   "Are Trump accounts worth it for older kids? -> /guides/trump-account-worth-it/ (identified, not yet applied)"
+   "Are Trump accounts worth it for older kids? -> /guides/trump-account-worth-it/ (identified, not yet applied)",
+   "What babies qualify for the Trump account? -> /guides/trump-account-eligibility/ (applied 2026-10-03)",
+   "What is better than Trump's account? -> /guides/trump-account-alternatives/ (applied 2026-10-03)"
   ],
   "/trump-account/": [
    "How much will $1000 grow in 20 years? -> /investing/compound-interest-calculator/",
@@ -310,7 +313,8 @@
    "Do I need to rebalance if I only hold index funds? -> /guides/portfolio-rebalancing/"
   ],
   "/guides/trump-account-worth-it/": [
-   "How much will $10,000 in a Roth IRA be worth in 20 years? -> /investing/roth-ira-calculator/"
+   "How much will $10,000 in a Roth IRA be worth in 20 years? -> /investing/roth-ira-calculator/",
+   "What is the difference between a Roth IRA and a Trump account? -> /compare/trump-account-vs-roth-ira/ (applied 2026-10-03)"
   ],
   "/compare/529-vs-utma/": [
    "What is the 529 loophole? -> /guides/529-leftover-money-options/",
@@ -346,5 +350,5 @@
    "Does this calculator cap my TSP contribution at the annual IRS/TSP limit? -> /investing/tsp-calculator/ (identified, not yet applied)"
   ]
  },
- "status": "no-changes"
+ "status": "success"
 }

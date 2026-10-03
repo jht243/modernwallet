@@ -1,0 +1,349 @@
+{
+ "pages": {
+  "/compare/trump-account-vs-brokerage-account/": {
+   "query": "trump account vs brokerage account",
+   "paa": [
+    "Is it worth investing in a Trump Account?",
+    "What brokerage does the Trump Account use?",
+    "What is different about a Trump Account?",
+    "Who gets Trump investment accounts?",
+    "How do I invest in a Trump account?",
+    "Can my financial advisor open a Trump account?"
+   ],
+   "related_searches": [
+    "Trump account vs 529",
+    "Trump account vs custodial account",
+    "Trump accounts",
+    "Trump Account vs UTMA",
+    "Trump account vs 529 vs UTMA",
+    "Trump account tax advantages",
+    "Trump Account calculator",
+    "Trump account investment options",
+    "Trump baby account vs 529",
+    "Trump account $250",
+    "Trump account taxable"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.monotelo.com",
+    "www.psca.org",
+    "bipartisanpolicy.org",
+    "www.acorns.com",
+    "www.nerdwallet.com",
+    "www.cnn.com",
+    "crr.bc.edu",
+    "www.fidelity.com",
+    "www.linkedin.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.monotelo.com",
+    "www.reddit.com",
+    "www.psca.org",
+    "www.cato.org",
+    "us.etrade.com",
+    "adamnmichel.substack.com",
+    "www.youtube.com",
+    "www.congress.gov",
+    "www.fidelity.com",
+    "skwealth.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/trump-account-vs-savings-account/": {
+   "query": "trump account vs savings account",
+   "paa": [
+    "Is the Trump Account better than a regular savings account?",
+    "What are the advantages and disadvantages of a Trump Account?",
+    "How do Trump savings accounts work?",
+    "How is a Trump Account different than an investment account?",
+    "Are Trump accounts safe?",
+    "Can Trump Account funds be used for anything?"
+   ],
+   "related_searches": [
+    "Trump account vs 529",
+    "Trump account withdrawal rules",
+    "Trump account tax advantages",
+    "Trump account for older kids $250",
+    "Trump account $250",
+    "Trump account interest rate",
+    "Trump Account calculator",
+    "Trump account vs IRA"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.cnn.com",
+    "www.wbaltv.com",
+    "www.fdic.gov",
+    "www.nytimes.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cnn.com",
+    "www.wbaltv.com",
+    "www.healthequity.com",
+    "www.fdic.gov",
+    "www.franklintempleton.com",
+    "www.cato.org",
+    "richmondbrothers.com",
+    "www.congress.gov",
+    "www.usbank.com",
+    "www.actec.org"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/trump-account-vs-baby-bonds/": {
+   "query": "trump accounts vs baby bonds",
+   "paa": [
+    "Are Trump accounts better than 529 accounts?",
+    "What is better than Trump's account?",
+    "Are Trump accounts worth it?",
+    "What babies qualify for the Trump account?",
+    "Can a grandparent open a Trump account?",
+    "What is the best investment for a newborn baby?"
+   ],
+   "related_searches": [
+    "Trump accounts baby bonds",
+    "How to open Trump account",
+    "Trump baby account vs 529",
+    "How to open Trump account for newborn",
+    "Trump account pros and cons",
+    "What states have baby bonds",
+    "Trump account vs 529 vs UTMA",
+    "Trump account vs 529 which is better"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.brookings.edu",
+    "www.forbes.com",
+    "ctmirror.org",
+    "racepowerpolicy.org",
+    "www.youtube.com",
+    "www.nytimes.com",
+    "trumpaccounts.guide"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.brookings.edu",
+    "www.forbes.com",
+    "am.jpmorgan.com",
+    "nwlc.org",
+    "trumpaccounts.guide",
+    "racepowerpolicy.org",
+    "www.youtube.com",
+    "www.irs.gov",
+    "abc7.com",
+    "crr.bc.edu"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/trump-account/": {
+   "query": "how much will a trump account be worth",
+   "paa": [
+    "How much would a Trump account be worth at 65?",
+    "How much can a Trump account make?",
+    "Who gets $1000 for Trump accounts?",
+    "Is opening a Trump account a good idea?",
+    "What is so special about a Trump account?",
+    "Is having $30,000 in savings good?"
+   ],
+   "related_searches": [
+    "Trump account $250",
+    "Trump account withdrawal rules",
+    "Trump Account calculator",
+    "How much will a Trump account be worth in 18 years",
+    "Who is eligible for Trump Accounts",
+    "Trump account tax advantages",
+    "Trump account for older kids $250",
+    "Trump account pros and cons"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "trumpaccounts.gov",
+    "www.nytimes.com",
+    "www.kiplinger.com",
+    "www.independentvanguardadviser.com",
+    "trumpaccounts.guide",
+    "www.wbaltv.com",
+    "www.firstcommand.com",
+    "finance.yahoo.com",
+    "www.congress.gov",
+    "www.savingforcollege.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/estate-planning/living-trust-cost-calculator/": {
+   "query": "cost of a living trust",
+   "paa": [
+    "Is it a good idea to put your house in a revocable trust?",
+    "Is it expensive to have a living trust?",
+    "What assets can I put in a trust?",
+    "What are the disadvantages of a living trust?",
+    "Is there anything better than a living trust?",
+    "Can a nursing home take your house if it is in a living trust?"
+   ],
+   "related_searches": [
+    "Cost of a living trust vs will",
+    "Cost of a living trust for a house",
+    "Cost of a living trust calculator",
+    "Living trust cost $500",
+    "How much does a living trust cost to maintain",
+    "Cost of a living trust in california",
+    "Living trust cost $500 near me",
+    "Living trust cost near me",
+    "How much does a revocable trust cost for a house",
+    "How much does an irrevocable trust cost for a house"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.isba.org",
+    "www.youtube.com",
+    "smartasset.com",
+    "www.reddit.com",
+    "vonrocklaw.com",
+    "randallsparkslaw.com",
+    "www.lawyerinbluejeans.com",
+    "www.bladeoffices.com",
+    "www.cunninghamlegal.com",
+    "www.nafsbenefits.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/withdrawal-calculator/": {
+   "query": "drawdown calculator",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.advancedwealth.com",
+    "www.noelwhittaker.com.au",
+    "guidedinvestor.com.au",
+    "www.mackenzieinvestments.com",
+    "www.westernsouthern.com",
+    "www.umcu.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.mrexcel.com",
+    "play.google.com",
+    "www.rebatekingfx.com",
+    "www.getzenquery.com",
+    "australaccountants.com.au",
+    "tools.yalla-calculator.co.uk",
+    "www.snappchart.app",
+    "smartbizcalcs.com",
+    "www.calculatorrank.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/guides/trump-account-worth-it/": {
+   "query": "are trump accounts a good idea",
+   "paa": [
+    "Can I lose money in a Trump account?",
+    "Are Trump accounts legitimate?",
+    "What is the difference between a Roth IRA and a Trump account?",
+    "Is a Trump account better than a brokerage account?",
+    "Can Trump accounts be converted to Roth IRA?",
+    "What can Trump accounts be used for?"
+   ],
+   "related_searches": [
+    "Trump account pros and cons",
+    "Are Trump accounts a good idea reddit",
+    "Trump account tax advantages",
+    "Are Trump accounts safe",
+    "Trump account vs 529",
+    "Are Trump accounts worth it for older kids",
+    "What can Trump Accounts be used for",
+    "Trump account vs IRA"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "trumpaccounts.gov",
+    "www.usbank.com",
+    "www.ameriprise.com",
+    "www.schwab.com",
+    "www.wealthenhancement.com",
+    "www.irs.gov",
+    "www.congress.gov",
+    "www.youtube.com",
+    "www.nytimes.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cato.org",
+    "www.reddit.com",
+    "www.wbaltv.com",
+    "www.fidelity.com",
+    "bipartisanpolicy.org",
+    "www.ameriprise.com",
+    "searcyfinancial.com",
+    "am.jpmorgan.com",
+    "www.youtube.com",
+    "www.nytimes.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/roundup/best-ira-accounts/": {
+   "query": "best bank for ira",
+   "paa": [
+    "What bank has the best IRA rates?",
+    "Is it better to open an IRA at a bank?",
+    "How much will $10,000 in a Roth IRA be worth in 20 years?",
+    "Where is the safest place to put an IRA?",
+    "Can I lose my IRA if the market crashes?",
+    "Who has the best IRA account?"
+   ],
+   "related_searches": [
+    "Best bank for ira reddit",
+    "Best bank for ira fidelity",
+    "Best bank for ira roth ira"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.nerdwallet.com",
+    "www.schwab.com",
+    "www.ally.com",
+    "www.regions.com",
+    "money.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.mybanktracker.com",
+    "www.quora.com",
+    "www.foxbusiness.com",
+    "3riversfcu.org",
+    "www.magnifymoney.com",
+    "www.bogleheads.org",
+    "www.facebook.com",
+    "benefitslink.com",
+    "www.cvb.bank"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  }
+ },
+ "cost": "DataForSEO: 8 calls, $0.03305 of $2.00 budget"
+}
