@@ -55,3 +55,15 @@
 | /compare/llc-vs-c-corp/ | 2026-09-26 | difference between an llc and a c corp | ABSENT | no | stripe.com/tax.thomsonreuters.com/www.wolterskluwer.com (+6 more) | none | n/a |
 | /roundup/best-tax-relief-companies/ | 2026-09-26 | irs approved 2290 providers | ABSENT | no | www.irs.gov/www.expresstrucktax.com/www.truckdues.com (+3 more) | none | n/a |
 | /real-estate/ | 2026-09-26 | rental property return on investment | ABSENT | no | www.reddit.com/www.calculator.net/www.rocketmortgage.com (+3 more) | none | n/a |
+| /roundup/best-mortgage-lenders/ | 2026-10-03 | best lender for mortgage | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-10-03 | build a will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| / | 2026-10-03 | best iul calculator free | ABSENT | no | insurancegeek.com/behavioralwealth.org/ispyinsurance.com (+2 more) | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-10-03 | living trust usa reviews | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /guides/defensive-investment-strategy/ | 2026-10-03 | defensive equity | ABSENT | no | investopedia.com/aqr.com/robeco.com (+3 more) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-10-03 | are the trump accounts a good idea | ABSENT | no | trumpaccounts.gov/chase.com/usbank.com (+6 more) | none | n/a |
+| /compare/etf-vs-mutual-fund/ | 2026-10-03 | etf vs mutual | ABSENT | no | schwab.com/investor.vanguard.com/fidelity.com (+7 more) | none | n/a |
+| /compare/llc-vs-c-corp/ | 2026-10-03 | c corp to run llc | ABSENT | no | guidantfinancial.com/reddit.com/youtube.com (+2 more) | none | n/a |
+| /budget/ | 2026-10-03 | nerdwallet budget calculator | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/custodial-account-vs-savings-account/ | 2026-10-03 | custodial account vs savings account | none (no AIO) | n/a | n/a | none | n/a |
+| /roundup/best-tax-relief-companies/ | 2026-10-03 | irs approved 2290 providers | ABSENT | no | irs.gov/expresstrucktax.com/truckdues.com (+2 more) | none | n/a |
+| /roundup/best-money-market-accounts/ | 2026-10-03 | find me money market account options with top account accessibility. | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |

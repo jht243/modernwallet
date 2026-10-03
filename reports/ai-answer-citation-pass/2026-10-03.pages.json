@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-mortgage-lenders/",
+      "clicks": 0,
+      "impressions": 72,
+      "ctr": 0,
+      "position": 77.53
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-online-will-makers/",
+      "clicks": 0,
+      "impressions": 67,
+      "ctr": 0,
+      "position": 87.51
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-living-trust-services/",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 74.26
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/defensive-investment-strategy/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 56.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 97.31
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/llc-vs-c-corp/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 56
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 2.54
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 4.85
+    },
+    {
+      "page": "https://www.themodernwallet.com/invoice-factoring/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.17
+    },
+    {
+      "page": "https://www.themodernwallet.com/merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.42
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 10.45
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 8.27
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/custodial-account-vs-savings-account/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 20.27
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 5.91
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-line-of-credit/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.6
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 4.1
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 31.8
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 9.22
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 4.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.62
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-money-market-accounts/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.88
+    }
+  ]
+}
