@@ -1,0 +1,47 @@
+{
+ "slug": "commercial-mortgage-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1155,
+ "floor": 600,
+ "input_tokens": 18706,
+ "output_tokens": 2031,
+ "thinking_tokens": null,
+ "cached_tokens": 16816,
+ "est_cost_usd": 0.0103,
+ "guards": {
+  "repairs": [
+   "slug None -> 'commercial-mortgage-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1155,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17395
+  }
+ },
+ "seconds": 9.3,
+ "response_id": "ywvCasGUA9W7sOIPosOpqAE",
+ "generated_at": "2026-10-04T08:18:27+0000"
+}

@@ -16,118 +16,118 @@
   "live_competitors": [
     {
       "domain": "nerdwallet.com",
-      "intersections": 113,
-      "avg_position": 20.9
+      "intersections": 80,
+      "avg_position": 18.8
     },
     {
       "domain": "smartasset.com",
-      "intersections": 89,
-      "avg_position": 31.1
+      "intersections": 62,
+      "avg_position": 32.0
     },
     {
       "domain": "investopedia.com",
-      "intersections": 83,
-      "avg_position": 19.2
+      "intersections": 55,
+      "avg_position": 19.3
     },
     {
       "domain": "fidelity.com",
-      "intersections": 62,
-      "avg_position": 8.3
-    },
-    {
-      "domain": "calculator.net",
-      "intersections": 59,
-      "avg_position": 14.1
+      "intersections": 44,
+      "avg_position": 9.2
     },
     {
       "domain": "forbes.com",
-      "intersections": 59,
-      "avg_position": 26.9
+      "intersections": 41,
+      "avg_position": 24.5
+    },
+    {
+      "domain": "calculator.net",
+      "intersections": 41,
+      "avg_position": 11.9
     },
     {
       "domain": "cnbc.com",
-      "intersections": 51,
-      "avg_position": 17.7
+      "intersections": 39,
+      "avg_position": 15.6
     },
     {
       "domain": "usnews.com",
-      "intersections": 50,
-      "avg_position": 27.4
+      "intersections": 38,
+      "avg_position": 25.0
     },
     {
       "domain": "schwab.com",
-      "intersections": 48,
-      "avg_position": 13.5
+      "intersections": 34,
+      "avg_position": 13.0
     },
     {
       "domain": "ramseysolutions.com",
-      "intersections": 44,
-      "avg_position": 25.1
-    },
-    {
-      "domain": "vanguard.com",
-      "intersections": 42,
-      "avg_position": 11.0
+      "intersections": 32,
+      "avg_position": 19.9
     },
     {
       "domain": "bankrate.com",
-      "intersections": 42,
-      "avg_position": 12.4
-    },
-    {
-      "domain": "aarp.org",
-      "intersections": 41,
-      "avg_position": 16.4
+      "intersections": 32,
+      "avg_position": 9.3
     },
     {
       "domain": "businessinsider.com",
-      "intersections": 40,
-      "avg_position": 35.0
+      "intersections": 32,
+      "avg_position": 34.4
+    },
+    {
+      "domain": "vanguard.com",
+      "intersections": 30,
+      "avg_position": 9.7
+    },
+    {
+      "domain": "aarp.org",
+      "intersections": 30,
+      "avg_position": 12.6
     },
     {
       "domain": "fool.com",
-      "intersections": 39,
-      "avg_position": 32.9
-    },
-    {
-      "domain": "justanswer.com",
-      "intersections": 39,
-      "avg_position": 36.4
-    },
-    {
-      "domain": "kiplinger.com",
-      "intersections": 35,
-      "avg_position": 35.2
-    },
-    {
-      "domain": "morningstar.com",
-      "intersections": 34,
-      "avg_position": 27.8
+      "intersections": 30,
+      "avg_position": 30.1
     },
     {
       "domain": "sofi.com",
-      "intersections": 33,
-      "avg_position": 24.2
+      "intersections": 27,
+      "avg_position": 22.2
+    },
+    {
+      "domain": "gobankingrates.com",
+      "intersections": 26,
+      "avg_position": 54.0
+    },
+    {
+      "domain": "morningstar.com",
+      "intersections": 25,
+      "avg_position": 24.0
+    },
+    {
+      "domain": "justanswer.com",
+      "intersections": 25,
+      "avg_position": 37.5
     }
   ],
   "our_keyword_count": 160,
-  "tracked_keyword_count": 213,
+  "tracked_keyword_count": 234,
   "competitor_rows_pulled": 1800,
-  "new_gap_count": 497,
-  "core_count": 346,
-  "adjacent_count": 151,
-  "cost": "DataForSEO: 11 calls, $0.36960 of $2.00 budget",
+  "new_gap_count": 483,
+  "core_count": 333,
+  "adjacent_count": 150,
+  "cost": "DataForSEO: 1 calls, $0.01440 of $2.00 budget",
   "notes": [
-    "themodernwallet.com: fresh pull (160 rows)",
-    "calculator.net: fresh pull (200 rows)",
-    "bankrate.com: fresh pull (200 rows)",
-    "nerdwallet.com: fresh pull (200 rows)",
-    "smartasset.com: fresh pull (200 rows)",
-    "investopedia.com: fresh pull (200 rows)",
-    "mortgagecalculator.org: fresh pull (200 rows)",
-    "ramseysolutions.com: fresh pull (200 rows)",
-    "fidelity.com: fresh pull (200 rows)",
-    "themodestwallet.com: fresh pull (200 rows)"
+    "themodernwallet.com: cache (6d old, 160 rows)",
+    "calculator.net: cache (6d old, 200 rows)",
+    "bankrate.com: cache (6d old, 200 rows)",
+    "nerdwallet.com: cache (6d old, 200 rows)",
+    "smartasset.com: cache (6d old, 200 rows)",
+    "investopedia.com: cache (6d old, 200 rows)",
+    "mortgagecalculator.org: cache (6d old, 200 rows)",
+    "ramseysolutions.com: cache (6d old, 200 rows)",
+    "fidelity.com: cache (6d old, 200 rows)",
+    "themodestwallet.com: cache (6d old, 200 rows)"
   ],
   "gaps": [
     {
@@ -461,21 +461,6 @@
         "bankrate.com",
         "calculator.net",
         "nerdwallet.com"
-      ],
-      "best_pos": 2,
-      "num_competitors": 3,
-      "score": 37984.6
-    },
-    {
-      "keyword": "compound interest calculator",
-      "volume": 823000,
-      "kd": 64,
-      "cpc": 1.82,
-      "tier": "core",
-      "competitors": [
-        "bankrate.com",
-        "nerdwallet.com",
-        "ramseysolutions.com"
       ],
       "best_pos": 2,
       "num_competitors": 3,
@@ -1194,19 +1179,6 @@
       "score": 12689.7
     },
     {
-      "keyword": "home equity line calculator",
-      "volume": 49500,
-      "kd": 3,
-      "cpc": 9.43,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 2,
-      "num_competitors": 1,
-      "score": 12375.0
-    },
-    {
       "keyword": "loans for terrible credit",
       "volume": 450000,
       "kd": 36,
@@ -1431,20 +1403,6 @@
       "score": 9166.7
     },
     {
-      "keyword": "401k calculator",
-      "volume": 165000,
-      "kd": 36,
-      "cpc": 1.75,
-      "tier": "core",
-      "competitors": [
-        "calculator.net",
-        "nerdwallet.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 2,
-      "score": 8918.9
-    },
-    {
       "keyword": "zillow mortgage loan calculator",
       "volume": 246000,
       "kd": 27,
@@ -1575,19 +1533,6 @@
       "best_pos": 2,
       "num_competitors": 1,
       "score": 8482.8
-    },
-    {
-      "keyword": "homeowners line of credit calculator",
-      "volume": 49500,
-      "kd": 5,
-      "cpc": 9.43,
-      "tier": "adjacent",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 3,
-      "num_competitors": 1,
-      "score": 8250.0
     },
     {
       "keyword": "fortiva credit card",
@@ -2422,20 +2367,6 @@
       "score": 4728.6
     },
     {
-      "keyword": "mortgage extra payment calculator",
-      "volume": 33100,
-      "kd": 13,
-      "cpc": 1.48,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org",
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 2,
-      "score": 4728.6
-    },
-    {
       "keyword": "estimate mortgage payoff calculator",
       "volume": 60500,
       "kd": 12,
@@ -2488,19 +2419,6 @@
       "score": 4653.8
     },
     {
-      "keyword": "mortgage payoff calculator",
-      "volume": 60500,
-      "kd": 12,
-      "cpc": 1.45,
-      "tier": "core",
-      "competitors": [
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 4653.8
-    },
-    {
       "keyword": "mortgage payoff calculators",
       "volume": 60500,
       "kd": 12,
@@ -2514,33 +2432,7 @@
       "score": 4653.8
     },
     {
-      "keyword": "mortgage payoff estimator",
-      "volume": 60500,
-      "kd": 12,
-      "cpc": 1.45,
-      "tier": "core",
-      "competitors": [
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 4653.8
-    },
-    {
       "keyword": "mortgage payoff payment calculator",
-      "volume": 60500,
-      "kd": 12,
-      "cpc": 1.45,
-      "tier": "core",
-      "competitors": [
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 4653.8
-    },
-    {
-      "keyword": "pay down mortgage calculator",
       "volume": 60500,
       "kd": 12,
       "cpc": 1.45,
@@ -2772,19 +2664,6 @@
       "best_pos": 1,
       "num_competitors": 1,
       "score": 3934.8
-    },
-    {
-      "keyword": "heloc payment estimator",
-      "volume": 27100,
-      "kd": 6,
-      "cpc": 9.23,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 2,
-      "num_competitors": 1,
-      "score": 3871.4
     },
     {
       "keyword": "home equity line of credit payment calculator",
@@ -3086,19 +2965,6 @@
       "score": 3387.5
     },
     {
-      "keyword": "calculate payment on heloc",
-      "volume": 27100,
-      "kd": 7,
-      "cpc": 9.23,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 2,
-      "num_competitors": 1,
-      "score": 3387.5
-    },
-    {
       "keyword": "dave ramsey investment calculator",
       "volume": 33100,
       "kd": 9,
@@ -3191,34 +3057,6 @@
     },
     {
       "keyword": "extra mortgage payment calculator",
-      "volume": 33100,
-      "kd": 22,
-      "cpc": 1.48,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org",
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 2,
-      "score": 2878.3
-    },
-    {
-      "keyword": "extra payment mortgage calculator",
-      "volume": 33100,
-      "kd": 22,
-      "cpc": 1.48,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org",
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 2,
-      "score": 2878.3
-    },
-    {
-      "keyword": "mortgage calculator with extra payments",
       "volume": 33100,
       "kd": 22,
       "cpc": 1.48,
@@ -4450,19 +4288,6 @@
       "score": 1355.0
     },
     {
-      "keyword": "pay off mortgage early calculator",
-      "volume": 27100,
-      "kd": 19,
-      "cpc": 1.39,
-      "tier": "core",
-      "competitors": [
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 1355.0
-    },
-    {
       "keyword": "additional payment mortgage calculator",
       "volume": 33100,
       "kd": 48,
@@ -4593,19 +4418,6 @@
       "best_pos": 4,
       "num_competitors": 1,
       "score": 1193.5
-    },
-    {
-      "keyword": "early mortgage payoff calculator",
-      "volume": 27100,
-      "kd": 22,
-      "cpc": 1.39,
-      "tier": "core",
-      "competitors": [
-        "ramseysolutions.com"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 1178.3
     },
     {
       "keyword": "early payoff mortgage calculator",

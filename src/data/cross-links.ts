@@ -48,6 +48,14 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/home-equity-loan-vs-personal-loan/", label: "Home equity loan vs personal loan" },
     { href: "/compare/401k-loan-vs-heloc/", label: "401(k) loan vs HELOC" },
   ],
+  "commercial-mortgage-calculator": [
+    { href: "/guides/commercial-mortgage-calculator-explained/", label: "DSCR and balloon payments explained" },
+    { href: "/real-estate/cap-rate-calculator/", label: "Check the property's cap rate" },
+    { href: "/real-estate/", label: "Model rental property cash flow" },
+    { href: "/mortgage/", label: "Compare a home mortgage payment" },
+    { href: "/heloc-calculator/", label: "Borrowing against equity instead? Model a HELOC" },
+    { href: "/business-loan-payoff/", label: "Paying down a business loan early?" },
+  ],
   "auto-loan": [
     { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
     { href: "/budget/", label: "Does this fit your budget?" },
@@ -58,6 +66,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Read this first" },
   ],
   "mortgage": [
+    { href: "/commercial-mortgage-calculator/", label: "Buying commercial property? Model the balloon and DSCR" },
     { href: "/heloc-calculator/", label: "Borrowing against your equity? Model a HELOC" },
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
     { href: "/budget/", label: "Build a monthly budget" },
@@ -69,6 +78,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   ],
   "real-estate": [
     { href: "/mortgage/", label: "Finance the purchase" },
+    { href: "/commercial-mortgage-calculator/", label: "Buying commercial property? Model the loan" },
     { href: "/investing/", label: "Compare to stock-market returns" },
     { href: "/net-worth/", label: "Track your total net worth" },
   ],

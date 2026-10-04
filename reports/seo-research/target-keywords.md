@@ -1,6 +1,8 @@
 # Target Keywords — ModernWallet (themodernwallet.com)
 
-> _Updated: 2026-09-28 — keyword-gap-pass-auto: DataForSEO Lens 1 ran (497 gap rows); shipped /heloc-calculator/ (new tool). Gap keywords added at the bottom section._
+> _Updated: 2026-10-04 — keyword-gap-pass-auto: DataForSEO Lens 1 (483 gap rows); shipped /commercial-mortgage-calculator/ (new tool).
+>
+> _Prior: 2026-09-28 — keyword-gap-pass-auto: DataForSEO Lens 1 ran (497 gap rows); shipped /heloc-calculator/ (new tool). Gap keywords added at the bottom section._
 >
 > _Prior: 2026-09-13 — keyword-gap-pass-auto: SEMRUSH dead (403), Ahrefs workspace quota preserved for other routines (99,981/100k used) — Lens 1 did not run. Lens 2 (Autocomplete) mined 2 fresh seeds (social security calculator, hsa calculator) — both flagged left-for-human as new-vertical calculator builds. Shipped 2 carried-over 2026-08-30 backlog rows that were previously audit-blocked on a mechanical FAQ-formatting defect only (`what-is-a-family-trust`, `how-to-pay-off-debt`) — rewritten with the defect fixed, passed audit on the 2nd rework, shipped with 6 new inbound links from related existing pages. See `## 2026-09-13 keyword-gap-pass-auto — newly tracked gap keywords` below._
 >
@@ -11371,3 +11373,4 @@ All 22 actionable rows are queued for execution (Phases 1–9 of `/autocomplete-
 | /heloc-calculator/ | heloc calculator | heloc payment calculator; home equity line of credit calculator; heloc payment estimator; home equity line calculator; calculate payment on heloc; homeowners line of credit calculator; how much can i borrow with a heloc |
 | /mortgage/payoff-calculator/ | mortgage payoff calculator | mortgage payoff estimator; pay off mortgage early calculator; early mortgage payoff calculator; pay down mortgage calculator |
 | /mortgage/extra-payment-calculator/ | mortgage extra payment calculator | mortgage calculator with extra payments; extra payment mortgage calculator |
+| /commercial-mortgage-calculator/ | commercial mortgage calculator | commercial mortgage payment calculator; commercial property loan calculator; commercial real estate loan calculator; commercial mortgage balloon payment; dscr calculator commercial loan |

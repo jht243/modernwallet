@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Commercial Mortgage Calculator: Payment and Balloon",
+  "metaDescription": "Free commercial mortgage calculator. Estimate your monthly payment, balloon balance, DSCR coverage, and debt yield based on your loan terms.",
+  "introText": "A commercial mortgage calculator calculates your monthly loan payment, the balloon balance owed when the loan term ends, and your property coverage metrics based on the terms in your lender's term sheet.\n\nFor example, a $1,000,000 property value with a 75% loan-to-value (LTV) requires a $250,000 down payment and results in a $750,000 loan amount. At a 7% annual percentage rate (APR) with a 25-year amortization schedule and a 10-year loan term, the monthly principal-and-interest payment is $5,300.84, which equals an annual debt service of $63,610.13. Because the 10-year term ends well before the 25-year amortization completes, you pay $160,249.53 in principal and $475,851.75 in total interest over that decade, leaving a balloon balance of $589,750.47 due at the end of the term. With an annual net operating income (NOI) of $100,000, the property yields a debt service coverage ratio (DSCR) of 1.57x and a debt yield of 13.3%.",
+  "howItWorks": "Commercial real estate loans frequently separate the amortization schedule from the loan term. While monthly payments are calculated across a longer schedule to keep debt service manageable, the loan term itself matures earlier. On the $750,000 loan at 7% APR amortized over 25 years, the monthly payment is $5,300.84, but the 10-year term ends with $589,750.47 in remaining principal. Borrowers typically satisfy this commercial mortgage balloon payment by refinancing into a new loan or selling the real estate asset before the maturity date. You can explore how these components interact in our detailed guide on the [commercial mortgage calculator explained](/guides/commercial-mortgage-calculator-explained/).\n\nUnderwriting tests whether property earnings adequately service the debt rather than relying strictly on personal finances. The DSCR calculator commercial loan function measures this by dividing your annual net operating income by your annual debt service. An annual NOI of $100,000 against $63,610.13 in annual debt service yields a DSCR of 1.57x, while the debt yield of 13.3% reflects that same $100,000 divided by the $750,000 loan amount. If a lender sets a minimum DSCR of 1.25x, that same $100,000 NOI can support a maximum loan size of $943,246.02 at a 7% rate and 25-year amortization. That figure represents a coverage limit, meaning the lender's loan-to-value cap remains an independent ceiling on total borrowing.\n\nChoosing a commercial loan interest only period reduces initial outlays while increasing what you owe at maturity. Adding a 2-year interest-only period to the worked example lowers payments to $4,375.00 a month for the first 24 months before returning to $5,300.84 for the remaining amortization. Because no principal is retired during those first two years, the balloon balance at the end of year 10 increases to $631,307.89, and total interest paid over the term climbs to $495,188.92. You can benchmark property yields against these carrying costs using the [cap rate calculator](/real-estate/cap-rate-calculator/) or evaluate alternative debt structures using the [business loan payoff calculator](/business-loan-payoff/).\n\nInterest rate adjustments directly impact both debt affordability and lender underwriting metrics. Under a rate-stress scenario where the APR rises from 7% to 8% while holding all other inputs steady, the monthly payment increases to $5,788.62, the balloon balance rises to $605,724.80, and the DSCR falls to 1.44x. Lenders establish their own underwriting rules, meaning rate, term, amortization length, fees, prepayment penalties, minimum DSCR targets, and maximum LTV thresholds vary by institution. Missing required payments on a commercial mortgage can lead to foreclosure on the underlying property.\n\nThe tool applies specific baseline assumptions across all scenarios. It assumes a fixed interest rate throughout the loan term, standard monthly payments, and that amortization begins immediately after any designated interest-only period concludes. Calculations reflect pure principal and interest without accounting for loan closing fees, replacement reserves, property taxes, insurance, or prepayment penalties. The DSCR is computed against the standard amortizing payment, and all inputs serve as custom placeholders for the values stated on your lender's official term sheet.",
+  "faqs": [
+    {
+      "question": "How is a commercial mortgage payment calculated?",
+      "answer": "A commercial mortgage payment is calculated using the loan amount, interest rate, and amortization period rather than the shorter loan term. On a $750,000 loan at 7% APR with a 25-year amortization, the fixed monthly payment is $5,300.84. Enter your specific rate and schedule in the calculator above to review your monthly debt service."
+    },
+    {
+      "question": "What is a balloon payment on a commercial mortgage?",
+      "answer": "A balloon payment is the full remaining loan balance that comes due when a commercial loan reaches the end of its term before the amortization schedule finishes. In the worked example, a 10-year term on a 25-year amortization leaves a balloon balance of $589,750.47. Borrowers typically settle this lump sum by refinancing the balance or selling the underlying property."
+    },
+    {
+      "question": "What is DSCR and how do lenders use it?",
+      "answer": "Debt service coverage ratio measures a property's cash flow against its required debt payments. It is calculated by dividing annual net operating income by total annual debt service, producing 1.57x on an NOI of $100,000 and debt service of $63,610.13. Commercial lenders set their own minimum DSCR thresholds to confirm the asset generates sufficient revenue to cover the loan."
+    },
+    {
+      "question": "How much commercial mortgage can I afford?",
+      "answer": "Your borrowing limit depends on the property's net operating income, your financing terms, and the lender's underwriting standards. With an annual NOI of $100,000 and a minimum DSCR requirement of 1.25x at 7% interest over a 25-year amortization, the income supports a loan up to $943,246.02. Lenders also enforce separate loan-to-value limits, meaning you must check their term sheet to confirm final borrowing capacity."
+    },
+    {
+      "question": "What is debt yield?",
+      "answer": "Debt yield is the ratio of an asset's annual net operating income to the total loan amount, stated as a percentage. On a $100,000 NOI with a $750,000 mortgage, the debt yield is 13.3%. Lenders use this metric to evaluate default risk independently of the interest rate or amortization term."
+    },
+    {
+      "question": "What does an interest-only period do to a commercial loan?",
+      "answer": "An interest-only period lowers payments early in the loan term by deferring principal reduction. On a $750,000 loan at 7% APR, a 2-year interest-only structure reduces monthly payments to $4,375.00 for the first 24 months. Because principal is not paid down during those two years, the balloon balance at year 10 increases to $631,307.89."
+    },
+    {
+      "question": "How is a commercial mortgage different from a residential mortgage?",
+      "answer": "Commercial loans are underwritten primarily on property revenue and DSCR coverage rather than personal household earnings alone. Many commercial mortgages feature loan terms that are shorter than their amortization schedules, which creates a balloon payment at maturity. Residential loans, such as those evaluated on a [home mortgage calculator](/mortgage/), typically amortize fully over a 15-year or 30-year term without balloon balances."
+    },
+    {
+      "question": "Should I use a commercial mortgage or a home equity line to buy property?",
+      "answer": "Lenders establish their own rates, terms, and closing fees for both commercial property loans and personal equity products. You should compare actual loan quotes across both financing options to identify which structure aligns with your capital plan. Review your borrowing costs using our [HELOC calculator](/heloc-calculator/) and study commercial underwriting mechanics in our guide on the [commercial mortgage calculator explained](/guides/commercial-mortgage-calculator-explained/)."
+    }
+  ],
+  "slug": "commercial-mortgage-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

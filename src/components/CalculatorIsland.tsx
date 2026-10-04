@@ -52,6 +52,7 @@ import StockAverageCostCalculator from "./StockAverageCostCalculator";
 import StockProfitCalculator from "./StockProfitCalculator";
 import NavCalculator from "./NavCalculator";
 import HelocCalculator from "./HelocCalculator";
+import CommercialMortgageCalculator from "./CommercialMortgageCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -115,6 +116,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "credit-card-payoff": CreditCardPayoffCalculator,
   // HELOC — keyword-gap-pass (2026-09-28): equity limit + draw-period vs repayment-period payment.
   "heloc-calculator": HelocCalculator,
+  // Commercial mortgage — keyword-gap-pass (2026-10-04): payment, balloon at term end, DSCR.
+  "commercial-mortgage-calculator": CommercialMortgageCalculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,
