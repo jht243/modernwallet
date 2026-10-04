@@ -2138,7 +2138,7 @@ export const GUIDES: Guide[] = [
   },
   // ── AI investing pass 2026-09-09 ──
   {
-    "updated": "2026-09-09",
+    "updated": "2026-10-04",
     "slug": "ai-stock-trading-explained",
     "title": "How AI Stock Trading Works from Research to Execution",
     "metaDescription": "Learn how AI stock trading works across stock scanners, scoring platforms, and autonomous agentic tools before testing automated software with real money.",
@@ -2201,6 +2201,10 @@ export const GUIDES: Guide[] = [
       {
         "question": "What is agentic trading?",
         "answer": "Agentic trading refers to an artificial intelligence architecture where autonomous agents take concrete actions, such as calculating order sizes, routing buy orders, or exiting positions, on an investor's behalf. Unlike conversational research assistants that only answer prompts or draft hypothetical strategies, agentic systems interact directly with brokerage execution environments under predetermined risk boundaries, kill switches, and balance caps."
+      },
+      {
+        "question": "Is AI stock trading legal?",
+        "answer": "Nothing in federal enforcement actions makes using an AI trading tool itself unlawful. Regulators target deceptive marketing and fraud instead, including the SEC's March 18, 2024 settled actions concerning false statements about AI use. The legality question turns on who offers the tool and how it is marketed, so verify registration before sending funds and avoid services that demand upfront fees or promise guaranteed returns."
       },
       {
         "question": "Is AI stock trading safe?",

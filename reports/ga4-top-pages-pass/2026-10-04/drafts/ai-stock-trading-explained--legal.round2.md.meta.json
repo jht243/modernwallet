@@ -1,0 +1,43 @@
+{
+ "slug": "ai-stock-trading-explained--legal",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 98,
+ "floor": 0,
+ "input_tokens": 18218,
+ "output_tokens": 141,
+ "thinking_tokens": null,
+ "cached_tokens": 17456,
+ "est_cost_usd": 0.0024,
+ "guards": {
+  "repairs": [
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "auditor: verify the sentences that cited ['https://www.finra.org/investors/insights/ai-and-investment-fraud'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.finra.org/investors/insights/ai-and-investment-fraud"
+  ],
+  "words": 98,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18092
+  }
+ },
+ "seconds": 1.6,
+ "response_id": "NxvCasnNCvf4jrEP0I7kkAs",
+ "generated_at": "2026-10-04T09:24:08+0000"
+}

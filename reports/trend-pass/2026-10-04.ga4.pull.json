@@ -1,0 +1,55 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-04",
+  "window_start": "2026-10-04",
+  "window_end": "2026-10-04",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/whole-life-vs-universal-life-insurance",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/ai-stock-trading-explained",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/real-estate/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 4,
+  "top10_pages_total_clicks": 4,
+  "channel_split": {
+    "/compare/whole-life-vs-universal-life-insurance": {
+      "Direct": 1
+    },
+    "/guides/ai-stock-trading-explained": {
+      "Direct": 1
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Cross-network": 1
+    },
+    "/real-estate/": {
+      "Direct": 1,
+      "Unassigned": 1
+    }
+  }
+}

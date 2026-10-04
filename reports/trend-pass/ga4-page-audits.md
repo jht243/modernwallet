@@ -234,3 +234,7 @@
 | /guides/what-is-an-ipo | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
 | /guides/what-to-do-with-an-inheritance/ | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
 | /roundup/best-index-funds/ | 2026-10-03 | 1 | 0/0/1/0/0 | 0 |
+| /compare/whole-life-vs-universal-life-insurance | 2026-10-04 | 1 | 0/0/0/0/0 | 0 |
+| /guides/ai-stock-trading-explained | 2026-10-04 | 1 | 0/0/1/0/0 | 0 |
+| /investing/high-yield-savings-calculator/ | 2026-10-04 | 1 | 0/0/0/0/0 | 0 |
+| /real-estate/ | 2026-10-04 | 1 | 0/0/0/0/0 | 0 |
