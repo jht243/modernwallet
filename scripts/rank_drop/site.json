@@ -1,0 +1,14 @@
+{
+  "site": "themodernwallet.com",
+  "base_url": "https://www.themodernwallet.com",
+  "gsc_property": "sc-domain:themodernwallet.com",
+  "ga4_property": "543459487",
+  "repo": "jht243/modernwallet",
+  "backend": "ts_entries",
+  "ts": {"data_globs": ["src/data/*.ts"], "parent_field": "calculator",
+         "fields": {"title": "title", "description": "metaDescription", "h1": "h1", "updated": "updated"},
+         "title_fallback": ["metaTitle"], "updated_insert": true},
+  "indexnow_key": "dc557f6bfced447aa1a71771d8a0d24a",
+  "trailing_slash": true,
+  "setup": ["npm ci --no-audit --no-fund --silent || true"]
+}
