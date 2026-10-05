@@ -1,0 +1,99 @@
+{
+  "slug": "vti-vs-voo",
+  "metaTitle": "VTI vs VOO: Which Core Vanguard ETF to Pick",
+  "metaDescription": "VTI vs VOO compared on index rules, holdings, expense ratios, and portfolio overlap so you can pick the right core US stock ETF.",
+  "h1": "VTI vs VOO: Vanguard Total Market or S&P 500?",
+  "subtitle": "A direct comparison of index construction, stock holdings, and expense ratios between Vanguard's two primary US equity funds.",
+  "optionAName": "VTI (Vanguard Total Stock Market ETF)",
+  "optionBName": "VOO (Vanguard S&P 500 ETF)",
+  "introText": "VTI and VOO are both issued by Vanguard, both list a 0.03% expense ratio, and both deliver core exposure to United States equities with heavy holdings overlap. At ModernWallet, we evaluate index funds through practical portfolio construction, and choosing between these two options comes down to whether you want exposure limited to the roughly 500 large companies in the S&P 500 or expanded to include thousands of mid- and small-cap US stocks. Because large-cap companies represent the vast majority of total United States market value, the two exchange-traded funds (ETFs) track each other closely over long periods. You do not need both in a single portfolio. Choosing one allows you to build a broad domestic equity allocation without creating redundant positions.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Index tracked",
+        "a": "CRSP US Total Market Index",
+        "b": "S&P 500 Index"
+      },
+      {
+        "dimension": "Number of holdings",
+        "a": "Thousands of US stocks across large, mid, and small market capitalizations",
+        "b": "Roughly 500 of the largest publicly traded US companies"
+      },
+      {
+        "dimension": "Company sizes held",
+        "a": "Large-cap, mid-cap, and small-cap US equities",
+        "b": "Large-cap US equities only"
+      },
+      {
+        "dimension": "Expense ratio",
+        "a": "0.03% at the time of writing; confirm current expense ratios on Vanguard's fund pages",
+        "b": "0.03% at the time of writing; confirm current expense ratios on Vanguard's fund pages"
+      },
+      {
+        "dimension": "Fund issuer",
+        "a": "Vanguard",
+        "b": "Vanguard"
+      },
+      {
+        "dimension": "International or bond exposure",
+        "a": "None; 100% US equity fund",
+        "b": "None; 100% US equity fund"
+      },
+      {
+        "dimension": "Index selection method",
+        "a": "Rules-based index construction based on market size",
+        "b": "Committee-based selection process that sets specific inclusion rules"
+      },
+      {
+        "dimension": "Mutual fund share class counterpart",
+        "a": "Vanguard Total Stock Market Index Fund (VTSAX)",
+        "b": "Vanguard 500 Index Fund (VFIAX)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Actually Separates VTI From VOO",
+      "content": "The structural difference between VTI and VOO comes down to fund breadth and index selection rules. VOO tracks the S&P 500 index, maintaining positions in roughly 500 of the largest United States corporations selected by an index committee. VTI tracks the CRSP US Total Market Index, holding thousands of publicly traded companies across the large-cap, mid-cap, and small-cap segments of the domestic market through a rules-based process based on market size.\n\nBecause the S&P 500 holds the largest companies in the United States and those enterprises make up the large majority of total market value, the two funds hold much of the same stocks in similar weights. The top holdings in VOO appear in VTI at nearly identical proportions. Because of this heavy concentration in the same large companies, the total investment returns of both funds have tracked closely over extended horizons.\n\nBoth investment products trade on public exchanges during regular market hours, meaning buyers purchase shares at live market prices rather than end-of-day net asset values. If you are comparing fund wrappers, our guide on [ETF vs Mutual Fund](/compare/etf-vs-mutual-fund/) details how trading mechanics differ from traditional open-end funds like VTSAX or VFIAX. Regulatory disclosures detailing trading rules can be reviewed directly at the [Securities and Exchange Commission (SEC)](https://www.sec.gov/investor/pubs/etfs.htm)."
+    },
+    {
+      "heading": "Why Some Investors Pick VOO",
+      "content": "Investors choose VOO when their target portfolio allocation specifically calls for an S&P 500 index baseline. Many financial planning models, institutional portfolios, and employer retirement plans measure domestic equity performance against the S&P 500, making an exact match practical for tracking purposes. Holding roughly 500 companies keeps the portfolio focused entirely on the largest established corporate entities in the United States.\n\nVOO also benefits from index familiarity. The S&P 500 is the most widely quoted stock index in the financial media, allowing investors to follow their core holding by tracking general market news. While competitors exist for large-cap indexing, such as the SPDR fund we analyze in [VOO vs SPY](/compare/voo-vs-spy/), Vanguard structures VOO with a low 0.03% expense ratio that keeps annual fund administration costs minimal.\n\nChoosing VOO also fits portfolios that add dedicated small-cap or mid-cap funds separately. An investor who prefers to set their own explicit weighting for smaller companies can use VOO for large caps and pair it with separate satellite funds. More details on constructing multi-fund portfolios appear in our overview of [VOO vs SPY vs QQQ](/compare/voo-vs-spy-vs-qqq/)."
+    },
+    {
+      "heading": "Why Some Investors Pick VTI",
+      "content": "Investors choose VTI because it provides complete exposure to the entire investable United States equity market within a single ticker. By owning thousands of stocks, VTI captures the growth of emerging small-cap and mid-cap businesses that have not yet reached large-cap scale. If a small company expands rapidly, VTI captures that entire run within its portfolio without waiting for an index committee to approve the stock for inclusion.\n\nThe CRSP US Total Market Index relies on clear, objective rules based on market size rather than subjective committee decisions. Some investors prefer this automated methodology, as it eliminates discretionary inclusion hurdles. You can confirm current index methodology and fund updates directly on [Vanguard](https://investor.vanguard.com).\n\nVTI also appeals to minimalist portfolio builders who want a simple one-fund solution for United States stocks. Pairing VTI with an international equity fund and a bond fund creates a complete three-fund portfolio without the need to calculate separate weights for large, mid, and small companies. To see how total market funds fit alongside other diversified options, read our guide to the [Best Index Funds](/roundup/best-index-funds/)."
+    },
+    {
+      "heading": "Why Holding Both VTI and VOO Is Redundant",
+      "content": "Holding both VTI and VOO inside the same account adds complexity without delivering genuine diversification. Because large-cap companies represent the vast majority of total United States market capitalization, the roughly 500 stocks inside VOO already make up the primary weight of VTI. Buying both funds simply overweights large-cap stocks while diluting the small- and mid-cap exposure that VTI was designed to provide.\n\nDividing monthly contributions between VTI and VOO also increases transaction tracking and complicates portfolio rebalancing. You are effectively paying the same 0.03% expense ratio twice to own duplicate shares of the same underlying corporate issuers. Investors seeking to understand fund structures and share mechanics can consult our explainer on [Index Fund vs ETF](/compare/index-fund-vs-etf/).\n\nA streamlined portfolio uses a single core United States equity fund. Selecting either VTI or VOO allows you to direct remaining capital toward asset classes neither fund provides, such as international stocks or fixed-income securities. Splitting money across both funds creates an overlapping allocation that does not reduce portfolio volatility."
+    }
+  ],
+  "verdict": "Choose VTI if you want a complete, single-fund solution that covers the entire United States stock market, captures mid-cap and small-cap companies, and follows an objective rules-based index. Choose VOO if your investment plan specifically tracks the S&P 500 index or you prefer to hold only large-cap companies. Neither fund serves an investor looking for fixed-income stability or international stock diversification, as both funds hold only domestic equities and carry full stock-market risk. Our recommendation would change if Vanguard adjusted the expense ratio on one fund to create a cost disparity, or if an investor needed to replicate an exact S&P 500 benchmark for institutional matching.",
+  "faqItems": [
+    {
+      "question": "Is VTI or VOO better for long-term investing?",
+      "answer": "Neither fund is universally better for long-term investing because their returns have tracked closely over extended periods. VTI provides broader market coverage by holding thousands of large, mid, and small companies, while VOO concentrates on roughly 500 large companies. Both carry identical 0.03% expense ratios at the time of writing, making either an effective core United States equity holding."
+    },
+    {
+      "question": "What is the difference between VTI and VOO?",
+      "answer": "The main difference is the index tracked and the size of companies included. VOO tracks the S&P 500 index using a committee-based selection process that holds roughly 500 large-cap US companies. VTI tracks the CRSP US Total Market Index, using a rules-based method based on market size to hold thousands of US stocks across large, mid, and small capitalizations."
+    },
+    {
+      "question": "Can I own both VTI and VOO?",
+      "answer": "You can purchase both, but owning both is redundant because the roughly 500 stocks in VOO already make up the majority of VTI by weight. Holding both funds increases portfolio overlap without providing meaningful diversification benefits."
+    },
+    {
+      "question": "Does VTI have more risk than VOO?",
+      "answer": "Both funds are 100% equity funds that carry full stock-market risk. While VTI holds mid-cap and small-cap stocks, those companies represent a modest portion of the fund by weight, meaning total market fluctuations affect both funds in a similar manner."
+    },
+    {
+      "question": "Should I choose VTI or VOO for a Roth IRA?",
+      "answer": "Both funds work well inside a Roth IRA or any long-term account. Select VTI if you prefer one fund to cover the entire domestic market, or select VOO if you want strict large-cap exposure tied directly to the S&P 500."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

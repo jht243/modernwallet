@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-28",
+ "lastRun": "2026-10-05",
  "dropped": [
   {
    "slug": "equipment-financing-vs-sba-loan",
@@ -14,28 +14,28 @@
    "slug": "iul-vs-term-life-insurance",
    "optionA": "IUL",
    "optionB": "Term Life Insurance",
-   "reason": "PARTIAL, re-checked live and found already adequately covered — /compare/term-life-vs-universal-life-insurance/ already has a dedicated 'Term Life vs. Indexed Universal Life (IUL), Specifically' section with a full premium/growth/liquidity/cost-transparency comparison plus an explicit FAQ verdict; skipped without edit, 2026-09-28",
+   "reason": "PARTIAL, re-checked live and found already adequately covered \u2014 /compare/term-life-vs-universal-life-insurance/ already has a dedicated 'Term Life vs. Indexed Universal Life (IUL), Specifically' section with a full premium/growth/liquidity/cost-transparency comparison plus an explicit FAQ verdict; skipped without edit, 2026-09-28",
    "score": 0
   },
   {
    "slug": "sole-proprietorship-vs-s-corp",
    "optionA": "Sole Proprietorship",
    "optionB": "S Corp",
-   "reason": "PARTIAL — enriched in place (/compare/sole-proprietorship-vs-llc/ got a new 'Sole Proprietorship vs S Corp' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "reason": "PARTIAL \u2014 enriched in place (/compare/sole-proprietorship-vs-llc/ got a new 'Sole Proprietorship vs S Corp' section with table + verdict) rather than published as a standalone page, 2026-09-28",
    "score": 0
   },
   {
    "slug": "backdoor-roth-vs-traditional-ira",
    "optionA": "Backdoor Roth IRA",
    "optionB": "Traditional IRA",
-   "reason": "PARTIAL — enriched in place (/compare/roth-ira-vs-traditional-ira/ got a new 'Backdoor Roth IRA vs Traditional IRA: The Mechanics' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "reason": "PARTIAL \u2014 enriched in place (/compare/roth-ira-vs-traditional-ira/ got a new 'Backdoor Roth IRA vs Traditional IRA: The Mechanics' section with table + verdict) rather than published as a standalone page, 2026-09-28",
    "score": 0
   },
   {
    "slug": "qualified-vs-non-qualified-annuity",
    "optionA": "Qualified Annuity",
    "optionB": "Non-Qualified Annuity",
-   "reason": "PARTIAL — enriched in place (/compare/pension-vs-annuity/ got a new 'Qualified Annuity vs Non-Qualified Annuity: The Full Difference' section with table + verdict) rather than published as a standalone page, 2026-09-28",
+   "reason": "PARTIAL \u2014 enriched in place (/compare/pension-vs-annuity/ got a new 'Qualified Annuity vs Non-Qualified Annuity: The Full Difference' section with table + verdict) rather than published as a standalone page, 2026-09-28",
    "score": 0
   },
   {
@@ -533,17 +533,79 @@
    "format": "comparison",
    "reason": "PARTIAL, re-checked live and found already adequately covered \u2014 the estate-tax-calculator spoke already has a full state-by-state estate/inheritance tax comparison section plus a dedicated FAQ with a worked example; skipped without edit, 2026-09-14",
    "score": 0
+  },
+  {
+   "slug": "qqq-vs-voo",
+   "reason": "DUPLICATE: subsumed by /compare/voo-vs-spy-vs-qqq/",
+   "score": 0
+  },
+  {
+   "slug": "federal-vs-private-student-loans",
+   "reason": "PARTIAL: covered by types-of-student-loans guide section; skipped 2026-10-05",
+   "score": 0
+  },
+  {
+   "slug": "social-security-at-62-vs-67",
+   "reason": "PARTIAL: covered in guides + spokes-retirement; skipped 2026-10-05",
+   "score": 0
+  },
+  {
+   "slug": "chase-sapphire-preferred-vs-reserve",
+   "reason": "Tier 3: off-niche, DR90+ card SERP, 2026-10-05",
+   "score": 0
+  },
+  {
+   "slug": "amex-gold-vs-platinum",
+   "reason": "Tier 3: off-niche, DR90+ card SERP, 2026-10-05",
+   "score": 0
+  },
+  {
+   "slug": "zelle-vs-venmo",
+   "reason": "off-niche payments app, 2026-10-05",
+   "score": 0
   }
  ],
  "published": [
-  { "slug": "doordash-vs-grubhub", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "grubhub-vs-uber-eats", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "robinhood-vs-webull", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "fidelity-vs-merrill-edge", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "freetaxusa-vs-hr-block", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "home-equity-loan-vs-personal-loan", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "401k-loan-vs-heloc", "format": "comparison", "date": "2026-09-28" },
-  { "slug": "partnership-vs-llc", "format": "comparison", "date": "2026-09-28" },
+  {
+   "slug": "doordash-vs-grubhub",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "grubhub-vs-uber-eats",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "robinhood-vs-webull",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "fidelity-vs-merrill-edge",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "freetaxusa-vs-hr-block",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "home-equity-loan-vs-personal-loan",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "401k-loan-vs-heloc",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
+  {
+   "slug": "partnership-vs-llc",
+   "format": "comparison",
+   "date": "2026-09-28"
+  },
   {
    "slug": "best-mortgage-lenders",
    "format": "roundup",
@@ -1035,6 +1097,26 @@
    "route": "/compare/donor-advised-fund-vs-private-foundation/",
    "note": "Added a 'Donor-Advised Fund vs. QCD' sub-section + table to the existing DAF-vs-foundation comparison (PARTIAL from Phase 1b \u2014 DAF and QCD were named side by side in a guide but never compared head-to-head).",
    "publishedAt": "2026-09-22"
+  },
+  {
+   "slug": "vti-vs-voo",
+   "format": "comparison",
+   "date": "2026-10-05"
+  },
+  {
+   "slug": "ivv-vs-voo",
+   "format": "comparison",
+   "date": "2026-10-05"
+  },
+  {
+   "slug": "credit-union-vs-bank",
+   "format": "comparison",
+   "date": "2026-10-05"
+  },
+  {
+   "slug": "checking-vs-savings-account",
+   "format": "comparison",
+   "date": "2026-10-05"
   }
  ]
 }

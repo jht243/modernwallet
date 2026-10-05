@@ -1,0 +1,97 @@
+{
+  "slug": "ivv-vs-voo",
+  "metaTitle": "IVV vs VOO: Which S&P 500 ETF Is Better in 2026?",
+  "metaDescription": "IVV vs VOO compared on expense ratios, issuer structure, brokerage fit, and holdings to help you choose the right S&P 500 ETF for your portfolio.",
+  "h1": "IVV vs VOO: Which S&P 500 ETF Is Better for You?",
+  "subtitle": "A direct comparison of fees, issuer structures, trading access, and portfolio fit between the two leading low-cost S&P 500 funds.",
+  "optionAName": "IVV (iShares Core S&P 500 ETF)",
+  "optionBName": "VOO (Vanguard S&P 500 ETF)",
+  "introText": "IVV and VOO both track the Standard and Poor's 500 (S&P 500) index and both list a 0.03% expense ratio, meaning they perform almost identically. The primary difference is the fund sponsor, with BlackRock managing IVV and Vanguard managing VOO, along with how your chosen brokerage handles trading for each fund. At ModernWallet, we evaluate index funds and core holdings to help you build long-term wealth without paying unnecessary fees. Neither fund holds a distinct structural advantage over the other for a buy-and-hold portfolio. Choosing between them comes down to issuer preference, account integration, and whether your brokerage permits automated fractional purchases for that specific ticker.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Tracked index",
+        "a": "S&P 500 index, tracking roughly 500 of the largest United States public companies",
+        "b": "S&P 500 index, tracking roughly 500 of the largest United States public companies"
+      },
+      {
+        "dimension": "Fund sponsor",
+        "a": "BlackRock, operating under the iShares fund family brand",
+        "b": "The Vanguard Group, operating under the Vanguard fund family brand"
+      },
+      {
+        "dimension": "Stated expense ratio",
+        "a": "0.03% annual expense ratio at the time of writing",
+        "b": "0.03% annual expense ratio at the time of writing"
+      },
+      {
+        "dimension": "Holdings and sector weights",
+        "a": "Essentially identical to the index weights of the S&P 500",
+        "b": "Essentially identical to the index weights of the S&P 500"
+      },
+      {
+        "dimension": "Fund sponsor corporate structure",
+        "a": "Publicly traded asset manager accountable to public shareholders",
+        "b": "Client-owned mutual structure where the funds own the management company"
+      },
+      {
+        "dimension": "Commission-free trading access",
+        "a": "Available commission-free at most major United States brokerages, subject to broker rules",
+        "b": "Available commission-free at most major United States brokerages, subject to broker rules"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Actually Separates IVV From VOO",
+      "content": "IVV and VOO produce nearly identical investment returns because both funds purchase the exact same underlying basket of roughly 500 large-cap United States stocks. Both exchange-traded funds list an annual expense ratio of 0.03%, meaning an investor pays three dollars per year for every ten thousand dollars invested. You can verify current expense ratios directly through the [iShares fund catalog](https://www.ishares.com) and the [Vanguard investor portal](https://investor.vanguard.com). For an introduction to fund mechanics, review the investor guidance published by the [United States Securities and Exchange Commission (SEC)](https://www.sec.gov/investor/pubs/etfs.htm).\n\nBecause their fees and holdings match, the practical choice between IVV and VOO rests on issuer corporate structure and brokerage platform mechanics. Vanguard operates under a unique corporate structure where the company is owned by its funds, meaning the fund shareholders indirectly own the management firm. BlackRock is a standalone, publicly traded corporation listed on the stock exchange. While this difference in ownership philosophy appeals to certain long-term investors, it does not create a meaningful difference in the daily performance of the funds.\n\nPlatform convenience is the other factor to evaluate. Many retail brokerages offer commission-free trading for both funds, but their rules for automated investing and fractional shares often differ. Certain brokerages allow clients to schedule recurring automated purchases of fractional shares for Vanguard ETFs while restricting iShares ETFs to manual full-share orders, or vice versa. If your brokerage only lets you automate purchases in one of the two funds, picking that fund removes the operational friction of manually placing market orders each month."
+    },
+    {
+      "heading": "Portfolio Architecture and Core Index Strategy",
+      "content": "Both funds serve as foundational building blocks for a broad equity portfolio. Because they replicate the S&P 500 index, both products provide weighted exposure to the largest companies in the United States across technology, healthcare, financials, consumer discretionary, and industrial sectors. If you want to estimate your future account balance based on historical equity trends, test your contribution rate with our [S&P 500 calculator](/investing/sp500-calculator/).\n\nInvestors frequently debate whether a portfolio needs total stock market exposure or large-cap concentration. A broad-market fund includes mid-cap and small-cap companies, whereas an S&P 500 fund restricts its portfolio to the largest enterprises. To see how a total market allocation compares against a pure large-cap fund, explore our analysis of [VTI vs VOO](/compare/vti-vs-voo/). Both IVV and VOO trade throughout normal market hours like standard equities, distinguishing them from traditional mutual funds. To understand how order execution and settlement work across different investment vehicles, read our overview of [Index Fund vs ETF](/compare/index-fund-vs-etf/).\n\nA third major fund tracking this exact index is the SPDR S&P 500 ETF, known by its ticker SPY. To see how these funds compare on structural points, read our breakdown of [VOO vs SPY](/compare/voo-vs-spy/). If you are also considering tech-heavy indices, examine [VOO vs SPY vs QQQ](/compare/voo-vs-spy-vs-qqq/) to compare index composition before making an allocation."
+    },
+    {
+      "heading": "Why Some Investors Pick IVV",
+      "content": "Investors typically choose IVV when their existing investment accounts are already centered on the iShares ecosystem. Many institutional accounts, retirement plans, and wealth advisory programs partner with BlackRock to build automated model portfolios. Choosing IVV allows an investor to maintain a unified product family alongside other iShares fixed income or international equity products. This simplifies annual accounting by consolidating reporting across a single fund manager.\n\nBrokerage integration also plays a role in selecting IVV. Certain investment apps and independent clearing brokers provide pre-built recurring baskets that default to iShares Core ETFs. If a platform offers automated dividend reinvestment and recurring fractional purchases exclusively for IVV, choosing it prevents uninvested cash from sitting idle in your brokerage sweep account. Review our curated list of the [Best Index Funds](/roundup/best-index-funds/) to see where iShares funds fit into broader asset allocation models.\n\nOther investors choose IVV simply out of familiarity with BlackRock products. Because the fund matches the industry-standard 0.03% expense ratio, selecting IVV never puts an investor at a cost disadvantage relative to Vanguard. As long as your brokerage does not assess transaction fees or trade commissions on iShares products, the fund serves as a reliable core holding for decades of accumulation."
+    },
+    {
+      "heading": "Why Some Investors Pick VOO",
+      "content": "Investors who choose VOO often do so out of loyalty to Vanguard's investor-owned mutual structure. Because Vanguard is owned by its member funds, profits generated by management operations are reinvested into lowering expense ratios across its product catalog. Many long-term index investors prefer supporting a management structure where the fund manager does not have to balance the interests of outside corporate shareholders against fund owners.\n\nDirect account holders on Vanguard's brokerage platform also find VOO to be the most natural choice. Vanguard allows direct account holders to execute automated recurring investments into its proprietary ETFs without commissions or service friction. While Vanguard's platform also permits trading of other exchange-traded products, sticking with proprietary funds ensures full compatibility with the brokerage's internal portfolio reporting tools.\n\nVOO has earned broad recognition as a standard large-cap index fund among independent retail investors. Its widespread availability across workplace brokerage windows, individual retirement accounts, and automated robo-advisors makes it easy to maintain across multiple institutions. Choosing VOO ensures you hold one of the most widely supported index funds in modern retirement planning."
+    },
+    {
+      "heading": "Tax and Switching Rules Across Account Types",
+      "content": "Switching between IVV and VOO inside a taxable brokerage account is not a neutral move. If you hold shares of IVV that have grown in value and decide to sell them to purchase VOO, that sale can trigger capital gains taxes. Even though the two funds track the exact same index and hold the same underlying equities, selling an ETF at a profit inside a taxable account creates a taxable realization event for the current tax year.\n\nSelling shares at a loss involves distinct tax accounting considerations as well. Tax regulations govern how capital losses can be claimed when replacing a sold position with an identical or similar asset, and an investor should consult a qualified tax professional before attempting tax-loss trades between S&P 500 funds. Because IVV and VOO perform nearly identically, selling one to buy the other rarely provides an investment benefit that justifies incurring taxes or dealing with accounting paperwork.\n\nInside tax-advantaged accounts like an Individual Retirement Arrangement (IRA), switching funds does not trigger capital gains taxes. You can sell IVV and buy VOO within a traditional IRA or Roth IRA without generating a taxable event. However, because both funds charge the same 0.03% fee and follow the same benchmark, there is little practical incentive to swap holdings unless your custodian changes its trading fee schedule."
+    },
+    {
+      "heading": "Evaluating IVV vs VOO for Long-Term Portfolios",
+      "content": "When deciding between IVV and VOO, your primary goal is minimizing friction rather than hunting for excess investment return. Both funds deliver complete replication of the S&P 500 index at a minimal cost. Neither fund will generate meaningful alpha over the other across a multi-decade horizon because both track the same index methodology with identical fee drag. Focusing on savings rate and contribution consistency produces far greater financial impact than debating these two tickers.\n\nReview your brokerage platform's trade execution settings before submitting your initial order. Check whether your broker supports fractional-share purchases for both funds, and confirm that automated recurring deposits can be assigned directly to your chosen ticker. If a broker supports fractional purchases for one fund but requires whole-share purchases for the other, select the fund that supports fractional trading to keep every dollar invested immediately.\n\nIf you hold existing shares of either fund, keep them right where they are. Investors sometimes feel compelled to consolidate their holdings under a single fund family, but liquidating a growing position in a taxable account can result in an unnecessary tax bill. A portfolio containing both IVV and VOO functions perfectly well because both represent identical ownership stakes in the broad United States corporate economy."
+    }
+  ],
+  "verdict": "Choose IVV if your brokerage provides better automated fractional trading tools for iShares products, or if you prefer consolidating your investments under BlackRock's fund lineup. Choose VOO if you prioritize Vanguard's client-owned corporate structure, hold your primary account at Vanguard, or use a platform that integrates smoothly with Vanguard funds. This recommendation is not for investors seeking total market diversification across mid-cap and small-cap stocks, or those seeking international market exposure. Investors wanting broader diversification should evaluate total market funds or international index products instead. Our verdict would change if either fund sponsor raises or lowers its stated expense ratio, or if your brokerage introduces commissions or trading limits on one of the two funds. Check your brokerage platform today to confirm which ticker supports commission-free fractional investing, and set up your automated monthly contribution.",
+  "faqItems": [
+    {
+      "question": "Is IVV or VOO better?",
+      "answer": "Neither fund is better because both track the S&P 500 index and both charge an identical 0.03% expense ratio. The choice depends on which issuer you prefer and which fund your brokerage allows you to purchase commission-free with automated fractional shares."
+    },
+    {
+      "question": "Do IVV and VOO hold the same stocks?",
+      "answer": "Yes, IVV and VOO hold the same underlying equities because both funds track the S&P 500 index. Their portfolio allocations and sector weightings reflect roughly 500 of the largest publicly traded corporations in the United States."
+    },
+    {
+      "question": "Can I switch from IVV to VOO without paying taxes?",
+      "answer": "Inside a taxable brokerage account, selling IVV at a profit to buy VOO can trigger capital gains taxes. Inside a tax-advantaged account like an IRA, switching funds does not generate a taxable event, though there is rarely a performance reason to switch."
+    },
+    {
+      "question": "Is IVV or VOO better for a Roth IRA?",
+      "answer": "Both IVV and VOO are outstanding core holdings for a Roth IRA. You should pick whichever fund your Roth IRA custodian supports with automated, commission-free recurring purchases and fractional-share trading."
+    },
+    {
+      "question": "What is the difference between IVV, VOO, and SPY?",
+      "answer": "All three funds track the S&P 500 index, but they are managed by different fund sponsors. IVV is issued by BlackRock, VOO is issued by Vanguard, and SPY is issued by State Street Global Advisors."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}
