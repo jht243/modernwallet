@@ -1,0 +1,50 @@
+{
+ "slug": "how-to-buy-and-sell-a-house-at-the-same-time",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2211,
+ "floor": 1200,
+ "input_tokens": 17957,
+ "output_tokens": 3363,
+ "thinking_tokens": null,
+ "cached_tokens": 16349,
+ "est_cost_usd": 0.015,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2211,
+  "numbers_not_in_facts": [
+   "15",
+   "24",
+   "45",
+   "5528.27",
+   "60"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16678
+  }
+ },
+ "seconds": 19.0,
+ "response_id": "ZBPEaoORG9-z1MkPuI2BiQ4",
+ "generated_at": "2026-10-05T21:15:33+0000"
+}

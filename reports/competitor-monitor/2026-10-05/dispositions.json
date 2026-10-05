@@ -1,0 +1,14 @@
+{"dispositions":{
+"https://www.nerdwallet.com/mortgages/learn/how-to-buy-and-sell-a-house-at-the-same-time":{"disposition":"published","our_url":"/guides/how-to-buy-and-sell-a-house-at-the-same-time/"},
+"https://smartasset.com/estate-planning/how-to-fund-a-trust":{"disposition":"published","our_url":"/guides/how-to-fund-a-trust/"},
+"https://smartasset.com/taxes/taxes-on-options-trading":{"disposition":"published","our_url":"/guides/taxes-on-options-trading/"},
+"https://smartasset.com/financial-advisor/trading-fees":{"disposition":"published","our_url":"/guides/what-do-brokers-charge-to-trade/"},
+"https://www.bankrate.com/mortgages/who-overpays-most-on-mortgages":{"disposition":"published","our_url":"/guides/who-overpays-on-mortgages/"},
+"https://www.nerdwallet.com/mortgages/news/mortgage-rates-today-monday-october-5-2026":{"disposition":"skipped-duplicate","our_url":"/guides/current-mortgage-rates-guide/"},
+"https://www.nerdwallet.com/mortgages/learn/home-equity-loans-tax-deductible":{"disposition":"skipped-duplicate","our_url":"/guides/tax-deductions-for-homeowners/"},
+"https://www.nerdwallet.com/student-loans/learn/student-loan-interest-rates":{"disposition":"skipped-duplicate","our_url":"/guides/"},
+"https://smartasset.com/retirement/income-sources-for-retirees":{"disposition":"skipped-duplicate","our_url":"/guides/retirement-withdrawal-strategies/"},
+"https://smartasset.com/insurance/how-much-does-long-term-care-insurance-cost":{"disposition":"skipped-duplicate","our_url":"/calculators/long-term-care-cost-calculator/"},
+"https://www.nerdwallet.com/credit-cards/news/venmo-credit-card-updates-rewards":{"disposition":"skipped-low-value","our_url":""},
+"https://www.nerdwallet.com/business/credit-cards/news/us-bank-business-essential-cards-launch":{"disposition":"skipped-low-value","our_url":""}
+}}

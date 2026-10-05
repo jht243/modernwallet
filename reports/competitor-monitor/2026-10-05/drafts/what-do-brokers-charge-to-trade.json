@@ -1,0 +1,106 @@
+{
+  "slug": "what-do-brokers-charge-to-trade",
+  "title": "Trading Fees Brokers Charge: The True Cost to Trade",
+  "metaDescription": "Understand the trading fees brokers charge, from spreads to transfer fees. See what zero commission really covers and how to read a broker fee schedule.",
+  "h1": "What Brokers Charge to Trade and Where the Real Costs Hide",
+  "cardBlurb": "Zero-dollar commissions mean the visible trade fee is gone, but the true bill sits in spreads, options contract charges, regulatory pass-throughs, and account fees.",
+  "introText": "Most large United States online brokers charge zero dollars in commission for online stock and exchange-traded fund (ETF) trades, which means the visible transaction charge has moved into indirect layers rather than disappearing. When you place a trade today, the trading fees brokers charge show up through bid-ask spreads, options contract fees, mutual fund transaction charges, account maintenance, and fund expense ratios.\n\nAt ModernWallet, we review personal finance accounts and tools to show the real arithmetic behind everyday money decisions. Understanding the full cost of an investment requires looking past the marketing headline of free trades. What looks like a free transaction can quietly drain returns through execution pricing or administrative line items when you manage a personal portfolio.",
+  "sections": [
+    {
+      "heading": "Where the Cost of a Trade Sits Today",
+      "body": "The actual cost of an investment transaction sits across five distinct layers: commissions, product-specific contract fees, the bid-ask spread, underlying fund expense ratios, and account administrative fees. Even when the trade commission reads zero dollars, the remaining four items still determine what you keep.\n\nProduct-specific fees apply whenever you move past basic domestic equities. If you trade options contracts, buy mutual funds outside an institution's curated list, or place orders with telephone assistance, brokers assess transaction charges that appear on their official fee schedules. Meanwhile, market mechanics quietly absorb value on every transaction through the gap between buy and sell prices.\n\nOngoing ownership costs compound the transaction frictions. Holding an index fund or mutual fund requires paying an annual management fee deducted directly from fund assets. When you eventually transfer assets or wire money out of the account, back-end administrative charges can consume more capital than several years of trading activity would have."
+    },
+    {
+      "heading": "What Zero Commission Covers and What Remains Excluded",
+      "body": "Zero-commission trading applies almost exclusively to self-directed online orders for standard United States equities and exchange-traded funds. It does not mean every security can be purchased without an upfront transaction cost.\n\nBrokers regularly charge fees for trades placed through a human representative over the phone. Over-the-counter (OTC) securities, foreign equities traded on international exchanges, and certain fixed-income products carry separate transaction charges. The precise pricing is unpublished in broad advertisements, so you must verify current terms directly on your chosen broker's published fee schedule.\n\nInvestors opening a taxable account on a standard trading platform often assume all asset classes follow identical rules. If you are comparing account structures, such as a [brokerage vs IRA](/compare/brokerage-vs-ira/) or evaluating a [401k vs brokerage account](/compare/401k-vs-brokerage-account/), remember that investment platform rules apply to trade mechanics regardless of tax classification."
+    },
+    {
+      "heading": "Options Contract Charges and Mutual Fund Transaction Fees",
+      "body": "Options orders carry contract fees that apply to every contract bought or sold, even when equity commissions are zero dollars. An investor trading multiple contracts per order will pay a separate charge per contract that accumulates rapidly with volume.\n\nMutual funds present a separate pricing structure. Many brokerages maintain a list of no-transaction-fee (NTF) mutual funds, but purchasing funds outside that roster triggers a flat transaction fee per purchase or redemption. That fee can exceed the entire expected short-term yield of the position if you invest in small increments.\n\nBefore entering an options order or buying an unfamiliar mutual fund, locate the broker's current fee document. Platforms do not standardize these line items, and a platform that offers cheap equity execution can charge steep rates for derivative contracts and traditional open-end funds."
+    },
+    {
+      "heading": "The Bid-Ask Spread and How Limit Orders Protect Capital",
+      "body": "The bid-ask spread is the price difference between the highest price a buyer will pay (the bid) and the lowest price a seller will accept (the ask). Whenever you place a market order, you buy at the ask and sell at the bid, paying that gap directly to the market.\n\nConsider a hypothetical worked example of a stock quoted with a $50.00 bid and a $50.10 ask. If you buy 100 shares using a market order, you purchase at the ask price of $50.10, spending $5,010. If you change your mind and sell those 100 shares immediately at the $50.00 bid, you receive $5,000. That round-trip trade costs you $10, which represents 0.2% of the initial capital, despite paying zero dollars in visible commission.\n\nA limit order protects against wide spreads by allowing you to set the maximum buy price or minimum sell price you are willing to accept. A limit order guarantees your price or better, but it introduces the operational tradeoff that your order may not fill if the market never reaches your specified target."
+    },
+    {
+      "heading": "Payment for Order Flow as an Execution Tradeoff",
+      "body": "Payment for order flow (PFOF) is the practice of retail brokers routing customer orders to wholesale market makers in exchange for cash compensation. Market makers profit from the spread and pay the brokerage a fraction of a cent per share for direct access to retail trade volume.\n\nThis mechanism helps subsidize zero-dollar commissions, but it represents an execution tradeoff every investor should evaluate. When a broker receives compensation for order routing, the execution quality, meaning whether your trade filled at the national best bid or offer, becomes the critical metric rather than the commission line. Every retail broker discloses order-routing arrangements in regular regulatory filings that investors can review to see where their orders travel."
+    },
+    {
+      "heading": "Regulatory Pass-Through Fees on Every Asset Sale",
+      "body": "Selling a stock or ETF triggers mandatory regulatory fees that online brokerages pass directly to the client. These charges do not apply to purchases, only to sales of covered securities.\n\nThe Securities and Exchange Commission assesses a fee under Section 31 of the Securities Exchange Act, designed to recover government costs associated with supervising securities markets. The Financial Industry Regulatory Authority also assesses a Trading Activity Fee (TAF) on sales to support market oversight. Because these rates change periodically based on statutory adjustments, you should review current rates directly on [sec.gov](https://www.sec.gov/) and [finra.org](https://www.finra.org/) rather than relying on outdated static figures."
+    },
+    {
+      "heading": "Fund Expense Ratios and Ongoing Carrying Costs",
+      "body": "An exchange-traded fund or mutual fund deducts an ongoing management fee known as an expense ratio, which operates entirely outside trading commissions. The fund company deducts this percentage annually from the fund's total assets, reducing your net investment return.\n\nThe compounding effect of fund management fees creates a substantial gap over time. In a hypothetical example, an investor placing $10,000 into a fund with a 0.50% expense ratio pays $50 every year in asset-level management costs. Moving that same $10,000 into a broad market index fund carrying a 0.05% expense ratio lowers that annual cost to $5.\n\nAn investor selecting funds inside our [portfolio tools](/portfolio/) should treat the expense ratio as a permanent drag on compounding. A zero-dollar commission trade into a high-cost fund produces far more total expense than paying an occasional trade fee on an ultra-low-cost fund."
+    },
+    {
+      "heading": "Account Maintenance, Wire, and Transfer Charges",
+      "body": "Administrative charges incurred during account maintenance often exceed trade-level friction. Brokers publish these operational costs inside separate disclosures that many account holders never examine until closing an account.\n\nAn Automated Customer Account Transfer Service (ACATS) fee is assessed when you move your securities to a competing brokerage. Outgoing wire transfers, paper statement requests, and account inactivity policies can introduce recurring or one-off deductions that erode small balances. If you borrow capital to trade on margin, the broker charges margin interest, which fluctuates based on benchmark borrowing rates.\n\nBefore funding a new account, check the firm's schedule for full and partial transfer-out costs. Knowing what it costs to leave a platform prevents surprise deductions if your strategy requires switching providers later."
+    },
+    {
+      "heading": "A Checklist for Comparing Broker Fee Schedules",
+      "body": "Comparing two broker fee schedules requires looking beyond the homepage marketing text to find the exact line items that match your portfolio habits. Check these five items before depositing funds:\n\n1. Listed equity and ETF commission rates, including any surcharges for phone orders or foreign securities.\n2. Options pricing schedules, specifically looking for per-contract charges and exercise or assignment fees.\n3. The no-transaction-fee mutual fund catalog and the flat transaction price for buying non-participating funds.\n4. Complete ACATS transfer-out charges, wire fees, and paper statement charges.\n5. Margin interest schedules across different borrowing tiers if you plan to borrow on margin.\n\nInvestors who prefer automated portfolio management without manual order execution can review our [best robo-advisors roundup](/roundup/best-robo-advisors/) to compare how bundled management fees balance against individual execution fees."
+    },
+    {
+      "heading": "Who This Advice Serves and What Alters the Math",
+      "body": "A buy-and-hold index investor purchasing broad market funds once a month needs to optimize for low fund expense ratios and zero account maintenance charges, because execution spreads on liquid index products are minimal. Paying attention to complex order flow or derivative charges provides little practical benefit for long-term passive holders.\n\nFrequent options traders, active equity scalpers, and investors using margin face an entirely different cost structure. For these market participants, contract fees, margin interest tiers, and execution quality overwhelm nominal commission savings. If active portfolio management or specialized financial planning is your priority, reading our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) can clarify whether paying for professional asset management offsets these retail trading frictions.\n\nOur verdict would flip if regulatory authorities banned payment for order flow or if major clearinghouses eliminated transfer-out charges across the industry. Until platform policies standardize, examine the complete published fee document before opening an account, and enter your next order as a limit order to control your trade execution price directly."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/portfolio/",
+      "label": "Portfolio calculator"
+    },
+    {
+      "href": "/compare/brokerage-vs-ira/",
+      "label": "Brokerage vs IRA"
+    },
+    {
+      "href": "/compare/401k-vs-brokerage-account/",
+      "label": "401(k) vs brokerage"
+    },
+    {
+      "href": "/roundup/best-robo-advisors/",
+      "label": "Best robo-advisors"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are there fees to trade stocks?",
+      "answer": "Yes, trading stocks still involves costs even though online commissions are typically zero dollars at major brokers. Investors pay indirect costs through the bid-ask spread on every trade, regulatory pass-through fees when selling shares, and account maintenance or wire charges listed on the broker's fee schedule."
+    },
+    {
+      "question": "What is the bid-ask spread?",
+      "answer": "The bid-ask spread is the price difference between the highest price a buyer is willing to pay and the lowest price a seller will accept. Market orders execute across this gap immediately, meaning the spread acts as an indirect cost paid on every purchase and sale."
+    },
+    {
+      "question": "What is payment for order flow?",
+      "answer": "Payment for order flow is the practice where retail brokers route customer orders to wholesale market-making firms in exchange for cash compensation. The broker receives money for providing trading volume, while the market maker captures profit from the bid-ask spread."
+    },
+    {
+      "question": "Do ETFs have trading fees?",
+      "answer": "Most large online brokers charge zero commission to execute online ETF trades, but every fund carries an ongoing expense ratio. This annual percentage fee is deducted directly from fund assets to cover portfolio management and administrative overhead."
+    },
+    {
+      "question": "What is the cheapest way to buy stocks?",
+      "answer": "The cheapest way to buy stocks is using a zero-commission online brokerage and submitting limit orders on highly liquid securities. Limit orders specify your maximum buy price, preventing you from overpaying across a wide bid-ask spread during market volatility."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Securities and Exchange Commission, Section 31 Fee Rate Filings",
+      "url": "https://www.sec.gov/"
+    },
+    {
+      "label": "Financial Industry Regulatory Authority, Trading Activity Fee Structure",
+      "url": "https://www.finra.org/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

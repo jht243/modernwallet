@@ -1,0 +1,102 @@
+{
+  "slug": "taxes-on-options-trading",
+  "title": "Taxes on Options Trading: How Gains and Losses Are Taxed",
+  "metaDescription": "Learn how taxes on options trading work. See rules for exercise, expiration, selling, Section 1256 contracts, and wash sales with clear examples.",
+  "h1": "How Taxes on Options Trading Work",
+  "cardBlurb": "Learn how the IRS treats options trades, including the tax rules for expiring worthless, exercising shares, writing contracts, and trading Section 1256 index products.",
+  "introText": "Gains and losses from equity options are taxed as capital gains, treated as short-term if held for one year or less and long-term if held longer than one year. The specific tax event depends on how a trade closes, because exercising an option changes your underlying stock cost basis rather than creating an immediate gain or loss.\n\nAt ModernWallet, we see traders run into trouble when they assume every option close triggers an immediate tax bill on the contract itself. Selling an open contract realizes a direct capital gain or loss, but exercising or letting an option expire resets the tax timing entirely. Understanding the mechanics across individual stocks, ETFs, and broad-based index contracts keeps your tax filings accurate and prevents surprise liabilities.",
+  "sections": [
+    {
+      "heading": "How Each Option Outcome Is Taxed",
+      "body": "Every option trade ends in one of four ways: you sell it, let it expire, exercise the contract, or get assigned by the counterparty. The Internal Revenue Service (IRS) treats each path differently under [IRS Publication 550](https://www.irs.gov/publications/p550).\n\nSelling an option before expiration closes your position and creates an immediate capital gain or loss. The taxable amount equals the difference between the premium you paid to open the position and the net proceeds you received when closing it.\n\nLetting an option expire worthless produces a capital loss on the expiration date for the buyer, equal to the original premium paid plus transaction costs. For the option writer who collected the premium upfront, an expired contract turns that cash into a short-term capital gain on the date of expiration.\n\nExercising an option delays tax recognition until you sell the underlying shares. An exercised call adds the option premium to the purchase price of the shares, while an exercised put subtracts the option premium from the sale proceeds of the stock."
+    },
+    {
+      "heading": "Short-Term vs Long-Term Holding Periods for Options",
+      "body": "Holding periods for options follow standard capital gains principles, splitting at exactly one year between purchase and closing sale. An option held for one year or less generates short-term capital gains, taxed at the same rates as ordinary wage income. You can compare these brackets using our [ordinary income vs capital gains tax guide](/compare/ordinary-income-vs-capital-gains-tax/).\n\nContracts held for longer than one year qualify for preferential long-term capital gains rates, which are significantly lower than ordinary income brackets. For further context on general asset holding brackets, see our [capital gains tax guide](/guides/capital-gains-tax-for-seniors/).\n\nLong-term equity options are rare in practice because most traders trade contracts with durations under three months. Long-Term Equity Anticipation Securities (LEAPS) are the primary exception, allowing investors to hold contracts for more than a year to secure long-term treatment when sold directly on the open market."
+    },
+    {
+      "heading": "Buying a Call or Put and Exercising It",
+      "body": "Exercising an option does not create an immediate taxable gain or loss on the contract itself. Instead, the purchase price of the option permanently adjusts your cost basis or sale proceeds on the underlying stock.\n\nWhen you exercise a call option, the premium paid to buy the contract folds into the tax basis of the shares you purchase. If you pay a $3 premium for a $50 strike call, your cost basis in the acquired shares becomes $53 per share, and your holding period for the shares starts the day after exercise.\n\nWhen you exercise a put option, the premium paid reduces the total amount realized on the sale of your stock. If you own stock and exercise a $100 put that you bought for a $4 premium, your gross sale proceeds for tax purposes equal $96 per share, directly lowering your capital gain or enlarging your capital loss on the stock."
+    },
+    {
+      "heading": "Writing Options and Premium Recognition",
+      "body": "Writing an option brings in immediate cash, but that premium is not taxable in the tax year you receive it unless the contract also closes in that same year. The IRS views open short positions as incomplete transactions until an exit event occurs.\n\nIf the short option expires worthless in the following calendar year, the entire premium received becomes a short-term capital gain in that subsequent year, regardless of how long the contract stayed open. Closing the short position through a buy-to-close order locks in a capital gain or loss on the closing date.\n\nIf you are assigned on a written call, the premium collected increases the total amount realized on the sale of your underlying shares. If you are assigned on a written put, the premium received reduces your cost basis in the shares you are forced to buy."
+    },
+    {
+      "heading": "Section 1256 Index Options and the 60/40 Split",
+      "body": "Nonequity options, including broad-based index options such as contracts on the S&P 500, fall under Section 1256 of the Internal Revenue Code. Section 1256 contracts receive blended tax treatment: 60% of any net gain is taxed at long-term capital gains rates and 40% is taxed at short-term capital gains rates, regardless of how long you hold the contract.\n\nThese contracts are also marked to market at the end of each calendar year. Under mark-to-market rules, any open position held on the final trading day of December is treated as if it were sold at fair market value, triggering taxable gains or losses on your current-year return.\n\nConsider a hypothetical worked example with a $10,000 net trading gain. With a Section 1256 index option, the IRS treats $6,000 as long-term gain and $4,000 as short-term gain. If you face an illustrative 22% ordinary income bracket and a 15% long-term capital gains bracket, your tax equals 0.22 multiplied by $4,000 ($880) plus 0.15 multiplied by $6,000 ($900), producing $1,780 in total tax. That creates a blended effective rate of 17.8%. By comparison, that same $10,000 gain on an equity option held for six months would be taxed entirely at your 22% short-term bracket, resulting in $2,200 in tax. Tax brackets vary by income, so verify your own current rates using the official tables at [IRS Topic No. 409](https://www.irs.gov/taxtopics/tc409)."
+    },
+    {
+      "heading": "The Wash Sale Rule for Options",
+      "body": "The wash sale rule prevents taxpayers from claiming a tax deduction on a security sold at a loss if they acquire substantially identical securities within a 60-day window. This window spans 30 days before the sale date, the day of the sale, and 30 days after the sale date.\n\nOptions fall squarely under the wash sale rule. If you sell stock at a loss and immediately purchase call options on that same stock within 30 days, the IRS disallows the loss deduction on the stock sale. Similarly, closing an option position at a loss and re-entering the same contract within 30 days triggers a wash sale.\n\nWhen a loss is disallowed under this rule, the loss does not disappear forever. Instead, the disallowed dollar amount is added to the cost basis of the newly acquired position, deferring the tax deduction until you eventually close the replacement asset without triggering another wash sale."
+    },
+    {
+      "heading": "Tax Forms and Reporting Requirements",
+      "body": "Active options trading produces documentation across several IRS forms. Your brokerage firm summarizes gross sales proceeds and reported basis on Form 1099-B, which arrives in late winter.\n\nTaxpayers transfer individual equity option transactions from Form 1099-B onto IRS Form 8949, separating short-term trades from long-term trades. The subtotals from Form 8949 flow directly onto Schedule D of Form 1040, where your net capital gains or losses combine with your other investment results.\n\nSection 1256 contracts bypass Form 8949 entirely. Broad-based index options are reported on IRS Form 6781, where the statutory 60/40 split is calculated automatically before transferring net figures to Schedule D. To keep track of investment returns across your broader balance sheet, review our [portfolio hub](/portfolio/)."
+    },
+    {
+      "heading": "Record-Keeping Checklist for Active Traders",
+      "body": "Brokers track most equity option transactions, but corporate actions, assignments, and multi-leg trades often cause discrepancies between brokerage reports and your actual tax liability. Keep an independent trade log to verify every 1099-B.\n\nMaintain detailed records of these four items for every contract:\n\n1. The exact trade date, expiration date, strike price, and whether the position was long or short.\n2. The gross premium paid or received, along with all exchange fees and commissions.\n3. The final exit event, noting whether the contract closed via open market sale, expiration, or exercise.\n4. Any basis adjustments made to stock positions acquired through exercise or assignment.\n\nFor a wider perspective on deductions and personal balance sheet tracking, consult our [tax deductions checklist](/guides/tax-deductions-checklist/)."
+    },
+    {
+      "heading": "Who This Guide Is Not For",
+      "body": "This explainer covers standard individual trading of single-stock options, broad ETF options, and broad-based index contracts held in taxable brokerage accounts. If you hold these contracts inside an individual retirement account, taxes on options trading do not apply to current-year trades; gains grow tax-deferred or tax-free until withdrawal, as detailed in our [brokerage vs IRA comparison](/compare/brokerage-vs-ira/).\n\nThis guide does not address complex tax shelters, professional trader tax status (TTS) with Section 475(f) mark-to-market elections, straddles, or qualified covered call rules. Straddles and qualified covered calls follow specialized loss-deferral and holding-period suspension rules under the tax code.\n\nIf you trade offsetting positions, write deep-in-the-money calls against existing shares, or qualify as an active business trader, consult IRS Publication 550 directly or hire a credentialed certified public accountant (CPA) to review your specific trades."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/compare/ordinary-income-vs-capital-gains-tax/",
+      "label": "Ordinary income vs capital gains tax"
+    },
+    {
+      "href": "/compare/brokerage-vs-ira/",
+      "label": "Brokerage vs IRA"
+    },
+    {
+      "href": "/portfolio/",
+      "label": "Portfolio tools"
+    },
+    {
+      "href": "/guides/tax-deductions-checklist/",
+      "label": "Tax deductions checklist"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are options taxed as ordinary income or capital gains?",
+      "answer": "Options are taxed as capital gains, not ordinary income. Contracts held for one year or less are short-term capital gains taxed at ordinary income tax rates, while contracts held longer than one year qualify for lower long-term capital gains tax rates. Nonequity options qualify for a special 60/40 blended rate regardless of holding period."
+    },
+    {
+      "question": "How are expired options taxed?",
+      "answer": "If you buy an option and it expires worthless, the IRS treats the full premium paid as a capital loss recognized on the expiration date. If you write an option and it expires worthless, the full premium you collected is treated as a short-term capital gain on the expiration date."
+    },
+    {
+      "question": "What are Section 1256 contracts?",
+      "answer": "Section 1256 contracts are specific financial instruments that include nonequity options, such as broad-based stock index options. Under IRS rules, any gain or loss is automatically treated as 60% long-term capital gain and 40% short-term capital gain, regardless of how long you hold the contract."
+    },
+    {
+      "question": "Does the wash sale rule apply to options?",
+      "answer": "Yes, the wash sale rule applies to options. If you sell stock or an option at a loss and buy a substantially identical contract or stock within 30 days before or after the sale, the loss deduction is disallowed and added to the cost basis of the replacement position."
+    },
+    {
+      "question": "Do I owe tax when I exercise an option?",
+      "answer": "No, exercising an option is not a taxable transaction on the contract itself. Exercising a call option adds the premium paid to your cost basis in the acquired stock, while exercising a put option reduces your net proceeds from selling the underlying shares."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Publication 550: Investment Income and Expenses",
+      "url": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "label": "IRS, Topic No. 409: Capital Gains and Losses",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
