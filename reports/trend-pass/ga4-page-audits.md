@@ -238,3 +238,6 @@
 | /guides/ai-stock-trading-explained | 2026-10-04 | 1 | 0/0/1/0/0 | 0 |
 | /investing/high-yield-savings-calculator/ | 2026-10-04 | 1 | 0/0/0/0/0 | 0 |
 | /real-estate/ | 2026-10-04 | 1 | 0/0/0/0/0 | 0 |
+| /compare/grat-vs-slat | 2026-10-05 | 1 | 0/0/0/0/0 | 0 |
+| /guides/how-to-retire-at-67 | 2026-10-05 | 1 | 0/0/1/0/0 | 0 |
+| /guides/how-to-withdraw-from-401k/ | 2026-10-05 | 1 | 0/0/1/0/0 | 0 |

@@ -1,0 +1,66 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-05",
+  "window_start": "2026-10-05",
+  "window_end": "2026-10-05",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/grat-vs-slat",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-retire-at-67",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-withdraw-from-401k/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/robinhood-24-hour-trading",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/compare/grat-vs-slat": {
+      "Direct": 1
+    },
+    "/guides/how-to-retire-at-67": {
+      "Direct": 1
+    },
+    "/guides/how-to-withdraw-from-401k/": {
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/guides/robinhood-24-hour-trading": {
+      "Direct": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 1,
+      "Unassigned": 1
+    }
+  }
+}

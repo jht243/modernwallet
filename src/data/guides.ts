@@ -6537,6 +6537,10 @@ export const GUIDES: Guide[] = [
     {
       question: "Is 67 too late to catch up on retirement savings?",
       answer: "No, catch-up contribution rules exist specifically to help late savers close the gap. In 2026, workers 50 and older can add an extra $8,000 to a 401(k). Workers 60 to 63 can add $11,250 instead. Delaying your own retirement date adds more savings and possibly more delayed Social Security credits."
+    },
+    {
+      question: "Should I retire at 62 or at 67?",
+      answer: "Retire at 67 if you want a larger guaranteed monthly check and Medicare already in place, but retire at 62 only if your savings can bridge the three-year health coverage gap and fund extra years of living costs. Stopping work and claiming Social Security are separate choices, so you can leave your job at 62 while delaying your claim to protect your benefit amount. For anyone born in 1960 or later, waiting until [full retirement age](https://www.ssa.gov/retirement/full-retirement-age) at 67 avoids the permanent 30% benefit reduction and ensures your savings have to cover fewer years. Test how different claiming dates alter your monthly budget by running your numbers through a [Social Security retirement calculator](/retirement/social-security-retirement-calculator/)."
     }
   ],
   sources: [
@@ -8312,6 +8316,10 @@ export const GUIDES: Guide[] = [
       { question: "Can I withdraw from my 401(k) at 55 without a penalty?", answer: "Yes, if you leave that employer's job in or after the year you turn 55. This Rule of 55 exception waives the 10% penalty, though you still owe ordinary income tax on the withdrawal." },
       { question: "Is a 401(k) loan better than a hardship withdrawal?", answer: "A loan is usually cheaper if your job is stable. You repay yourself with interest instead of losing money to tax, while a hardship withdrawal is gone for good and taxed right away." },
       { question: "What happens if I default on a 401(k) loan?", answer: "The unpaid balance becomes a taxable distribution. You owe ordinary income tax on it, plus the 10% early withdrawal penalty if you're under 59½." },
+      {
+        question: "How do I withdraw from my 401(k) after leaving a job?",
+        answer: "You do not have to withdraw money from your 401(k) simply because you left a job. You can usually leave the balance in the existing plan, though some plans require small balances to be moved out. You can also transfer the balance through a direct [rollover](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) to a new employer's plan or an IRA without triggering taxes or penalties. Cashing out the account is the only option that counts as a taxable distribution and creates ordinary income tax."
+      }
     ],
     sources: [
       { label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },

@@ -1,0 +1,37 @@
+{
+ "slug": "how-to-retire-at-67--retire-62-or-67",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 112,
+ "floor": 0,
+ "input_tokens": 17563,
+ "output_tokens": 166,
+ "thinking_tokens": null,
+ "cached_tokens": 16856,
+ "est_cost_usd": 0.0024,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 112,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17623
+  }
+ },
+ "seconds": 2.2,
+ "response_id": "l2zDariVL5Km_PUPlKSG8AE",
+ "generated_at": "2026-10-05T09:23:37+0000"
+}
