@@ -93,7 +93,7 @@ Read `reports/rank-drop/$D.md` and `$D.measure.md`.
 
 **Owner override:** if the routine instructions contain the line `FORCE_FIX: yes`, add `--force-fix` to the detect.py call. The report then runs in FIX mode even during a Google update and records `mode_override`; the email headline must say `FIX (owner override during <update name>)`. Never add `--force-fix` on your own judgment.
 
-**Mode gate:** if `detect.json` → `mode` is `OBSERVE` (a Google ranking update is still rolling out), **skip Phases 1–3 entirely**: no page edits while rankings are moving. Still run reverts above, commit the reports, and email the detection chart with the headline `Rank-drop: observing — <update name> in progress`. Rationale: fixes made mid-update chase a moving target and can't be measured.
+**Mode gate:** if `detect.json` → `mode` is `OBSERVE` (a Google ranking update is still rolling out), **skip Phases 1–3 entirely**: no page edits while rankings are moving. Still run reverts above, commit the reports, then send the email EXACTLY as the Email section says (`email_report.py` builds the body even with no packets; append one `## Blocker` line naming the update). Never hand-write the email body. Rationale: fixes made mid-update chase a moving target and can't be measured.
 
 ## ‼️ NEW CONTENT = THE MINDMAP-PASS SYSTEM (owner rule, 2026-10-04)
 
