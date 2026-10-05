@@ -1,0 +1,61 @@
+{
+  "status": "OK",
+  "site": "sc-domain:themodernwallet.com",
+  "base_url": "https://www.themodernwallet.com",
+  "generated_at": "2026-10-05T22:17:08.811068+00:00",
+  "mode": "OBSERVE",
+  "mode_override": null,
+  "windows": {
+    "history": [
+      "2026-06-21",
+      "2026-09-19"
+    ],
+    "current": [
+      "2026-09-20",
+      "2026-10-03"
+    ],
+    "baseline_rule": "each page\u00d7query's BEST (lowest) 14-day position inside the history window"
+  },
+  "google_updates": {
+    "ongoing": [
+      {
+        "name": "September 2026 spam update",
+        "begin": "2026-09-24",
+        "end": null
+      }
+    ],
+    "recent_60d": [
+      {
+        "name": "September 2026 spam update",
+        "begin": "2026-09-24",
+        "end": null
+      },
+      {
+        "name": "August 2026 spam update",
+        "begin": "2026-08-18",
+        "end": "2026-08-21"
+      }
+    ]
+  },
+  "pages": [],
+  "demand": [],
+  "unstable": [],
+  "stats": {
+    "pairs_baseline": 13,
+    "pairs_current": 64,
+    "pages_below_traffic_floor": 0
+  },
+  "provenance": {
+    "sources": [
+      "searchconsole.googleapis.com",
+      "analyticsdata.googleapis.com",
+      "status.search.google.com"
+    ],
+    "gsc_property": "sc-domain:themodernwallet.com",
+    "ga4_property": "543459487",
+    "service_account": "indexing-api-bot@caracas-research.iam.gserviceaccount.com",
+    "gsc_data_state": "final",
+    "third_party_sources": [],
+    "sha256": "58df1dc7d7e90440ac4ffd85b09e682975515b5d476fa1f45eed12cb11fda9a5"
+  }
+}
