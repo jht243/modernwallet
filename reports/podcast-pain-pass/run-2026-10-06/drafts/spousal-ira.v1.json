@@ -1,0 +1,82 @@
+{
+  "slug": "spousal-ira",
+  "title": "Spousal IRA Rules and Contribution Limits (2026)",
+  "metaDescription": "Learn how a spousal IRA works for non-earning spouses in 2026. Explore contribution limits, joint filing requirements, and rules for traditional and Roth accounts.",
+  "h1": "Spousal IRA Rules and 2026 Limits",
+  "cardBlurb": "How a spousal IRA works, the 2026 contribution limit, joint filing rules, and how a working spouse can fund an account for a partner with no income.",
+  "introText": "You can fund an individual retirement arrangement (IRA) for a spouse who does not earn an income, provided you file taxes jointly and have enough household compensation to cover the deposits. A spousal IRA is not a separate product or joint account; it is an IRS rule that permits a working partner's taxable pay to satisfy the earned-income requirement for the non-working partner's account.\n\nAt ModernWallet, we see couples overlook this strategy simply because one partner left the paid workforce. In 2026, eligible couples can contribute up to $7,500 each, or $8,600 if age 50 or older, expanding family retirement savings without requiring both partners to earn wages.",
+  "sections": [
+    {
+      "heading": "What a Spousal IRA Is",
+      "body": "A spousal IRA is an IRS provision rather than a distinct type of financial account. Under standard rules, you must earn taxable compensation to put money into a retirement account. The spousal IRA exception allows a married partner with little or no taxable compensation to contribute to their own account based on the other spouse's earnings.\n\nTo qualify for this rule, you must file a joint tax return. The account itself is opened solely in the name of the non-earning spouse. It holds investments under their Social Security number, ensuring that retirement assets accumulate in both partners' names regardless of who receives the paycheck.\n\nCouples can run their numbers through our [couples retirement calculator](/retirement/couples-retirement-calculator/) to see how funding two accounts changes long-term projected balances compared to funding just one."
+    },
+    {
+      "heading": "The Joint Return and Compensation Rule",
+      "body": "Each spouse can make a contribution up to the annual limit, but total combined deposits cannot exceed the taxable compensation reported on your joint tax return. The IRS explicitly caps combined funding at your actual household earnings.\n\nFor example, if one spouse earns $12,000 in taxable compensation for the year, total combined contributions between both partners cannot exceed $12,000. If the working spouse puts $7,500 into their own account, only $4,500 of earned income remains available to fund the non-earning spouse's account.\n\nWhen household compensation easily surpasses the combined caps, each spouse can contribute the full maximum allowed for their age bracket. You cannot use this provision if you choose to file married filing separately, as the tax code requires a joint return to share earned income for retirement funding."
+    },
+    {
+      "heading": "The 2026 Spousal IRA Contribution Limit",
+      "body": "For 2026, the spousal IRA contribution limit is $7,500 per person, or $8,600 if the account owner is age 50 or older. The total amount you deposit across all of your personal traditional and Roth IRAs cannot exceed this dollar cap or your joint taxable compensation, whichever figure is lower.\n\nBecause each partner has their own separate account, an eligible couple under age 50 can contribute up to $15,000 total across two accounts in 2026. If both spouses are age 50 or older, their combined maximum reaches $17,200.\n\nAge limits no longer restrict these deposits. There is no age limit on making regular contributions to traditional or Roth IRAs, so an older spouse who does not work can continue receiving annual contributions as long as the working spouse has taxable compensation. To map out how regular additions grow over decades, test different scenarios with our [retirement savings calculator](/retirement/retirement-savings-calculator/)."
+    },
+    {
+      "heading": "Traditional or Roth for the Spouse Account",
+      "body": "A spousal IRA can be set up as a traditional IRA or a Roth IRA, and both structures follow specific tax regulations. To understand how upfront deductions compare against future tax treatment, review our guide comparing [Roth IRA vs traditional IRA](/compare/roth-ira-vs-traditional-ira/).\n\nIf neither spouse participates in a retirement plan at work, all of your traditional IRA contributions will be deductible regardless of your household income. If either spouse participates in an employer plan, your traditional deduction may be limited once joint income exceeds certain levels. You can still contribute to an IRA even if you participate in another retirement plan through your employer, though the deduction rules change.\n\nRoth IRA contributions are never tax-deductible, but qualifying withdrawals come out tax-free in retirement, as detailed in our guide to [tax-free retirement accounts](/guides/tax-free-retirement-account/). Roth contributions may be limited based on filing status and income, which means higher-earning couples must verify whether their joint earnings permit direct Roth funding."
+    },
+    {
+      "heading": "Common Mix-Ups and Account Ownership",
+      "body": "The single most common misunderstanding is assuming a spousal IRA is a joint account. Financial institutions do not offer joint IRAs; every account belongs entirely to the individual named on the title. Even though funds come from one partner's paycheck, the non-earning spouse legally owns the account, picks the investments, and controls the beneficiary designations.\n\nAnother mistake involves depositing more money than the IRS permits. An excess IRA contribution occurs if you contribute more than the contribution limit or exceed your reported taxable compensation. The IRS imposes a tax on excess IRA contributions for every year the unallowable funds stay in the account.\n\nRollovers do not interfere with these annual caps. Rollover contributions are not subject to the IRA contribution limit, which means moving money from an old employer plan into an IRA does not reduce what you can deposit under the spousal rules for the year."
+    },
+    {
+      "heading": "Where to Check Your Own Numbers",
+      "body": "Retirement rules involve specific income limits that vary depending on whether workplace plans are active and whether you choose traditional or Roth accounts. Because individual tax situations differ, speak with a certified public accountant (CPA) or a licensed financial advisor before finalizing contribution amounts.\n\nThe [Internal Revenue Service](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) provides detailed regulatory guidelines on contribution caps, and taxpayers can consult the Kay Bailey Hutchison Spousal IRA limit provisions inside [IRS Publication 590-A](https://www.irs.gov/publications/p590a) to confirm eligibility. Check these resources alongside your latest joint return to make sure your household compensation fully supports your planned savings."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/retirement/couples-retirement-calculator/",
+      "label": "Couples retirement"
+    },
+    {
+      "href": "/retirement/retirement-savings-calculator/",
+      "label": "Retirement savings"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can a non-working spouse have an IRA?",
+      "answer": "Yes. A non-working spouse can own and fund an IRA under the spousal IRA rules, provided the couple files a joint tax return and the working spouse earns sufficient taxable compensation to cover the contributions."
+    },
+    {
+      "question": "Can my spouse fund my Roth IRA?",
+      "answer": "Yes. Your spouse can supply the money to fund your Roth IRA as long as you file jointly and your household taxable compensation covers the deposit. Roth contributions may be limited if your joint income exceeds certain levels."
+    },
+    {
+      "question": "How much can a spouse contribute to a spousal IRA in 2026?",
+      "answer": "For 2026, the limit is $7,500, or $8,600 if the account owner is age 50 or older. The contribution cannot exceed the total taxable compensation reported on the couple's joint return."
+    },
+    {
+      "question": "Do we have to file jointly to use a spousal IRA?",
+      "answer": "Yes. The IRS requires married couples to file a joint return to use one spouse's taxable compensation to fund an IRA for the other spouse."
+    },
+    {
+      "question": "Is a spousal IRA a joint account?",
+      "answer": "No. All IRAs are individual accounts registered to a single person. The non-earning spouse is the sole owner and controls the investments and beneficiary designations, even though the working spouse provided the earnings."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS -- Retirement Topics - IRA Contribution Limits",
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+    },
+    {
+      "label": "IRS -- Publication 590-A, Contributions to Individual Retirement Arrangements (IRAs)",
+      "url": "https://www.irs.gov/publications/p590a"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

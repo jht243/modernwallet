@@ -1,0 +1,313 @@
+{
+ "rows": [
+  {
+   "keyword": "4 percent rule",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": 42,
+   "cpc": 2.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "spousal ira",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 38,
+   "cpc": 4.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pto cash out",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 21,
+   "cpc": 1.46,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "monarch money vs ynab",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 12,
+   "cpc": 8.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security for millennials",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "will social security run out",
+   "volume": 4400,
+   "volume_low": 4400,
+   "volume_high": 4400,
+   "kd": 57,
+   "cpc": 0.41,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to choose a financial advisor",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 51,
+   "cpc": 15.31,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how much can i spend in retirement",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 13,
+   "cpc": 4.01,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "house hacking",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 39,
+   "cpc": 2.31,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "health insurance without employer",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 27,
+   "cpc": 13.22,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "frugal vs cheap",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 18,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to find a fiduciary financial advisor",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 39,
+   "cpc": 29.61,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "can my spouse fund my roth ira",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "monarch money alternatives",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "net price calculator college",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "retire at 65 vs 62",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "chatgpt retirement planning",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "college rental property",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "buy and hold rental cash flow",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "retirement withdrawal strategy bear market",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 12/20 phrases",
+  "kd: using semrush (quality order ahrefs > semrush > dataforseo)",
+  "KD from semrush for 12 rows (volume came from dataforseo)",
+  "No tool volume for 8 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 18/20 rows corroborated live"
+ ]
+}

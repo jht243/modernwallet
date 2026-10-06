@@ -72,7 +72,13 @@
         "Buzzsprout-17886183",
         "Buzzsprout-17886462",
         "Buzzsprout-17886414",
-        "Buzzsprout-17848982"
+        "Buzzsprout-17848982",
+        "Buzzsprout-19904783",
+        "Buzzsprout-17849068",
+        "Buzzsprout-17824383",
+        "Buzzsprout-17823640",
+        "Buzzsprout-17823623",
+        "Buzzsprout-17790927"
       ]
     },
     "How to Money": {
@@ -146,7 +152,13 @@
         "ec9fbcf5-b281-4f0e-a9aa-b4b200fbc2ef",
         "e6491d04-1650-48b5-b095-b43501571c2d",
         "c71daf6e-0fa4-4d75-8c4c-b41d012f8dd5",
-        "f40346db-f341-4cd5-9faf-b41901546dab"
+        "f40346db-f341-4cd5-9faf-b41901546dab",
+        "dd7d2d6e-0c4e-4cfe-b59d-b4d80124ea57",
+        "6413ed95-e5ec-403d-8f07-b4d601365185",
+        "46d63a95-94c5-4707-9873-b4aa013f92cf",
+        "4db12b83-610d-4459-8fe1-b42e0140e554",
+        "25773be9-ea1c-4c38-b100-b4040159b004",
+        "ea95ea88-505b-447f-93b6-b4170132c07c"
       ]
     },
     "Suze Orman's Women & Money": {
@@ -220,7 +232,13 @@
         "7840fe2b-93ed-49bc-b343-b3ea0169147a",
         "a519d5fe-af02-4644-9af8-b3e800248039",
         "91f93ddc-1fa9-4cc8-a380-b3e3013cef72",
-        "43e305fa-9413-4f63-8d15-b3e1002f8cd9"
+        "43e305fa-9413-4f63-8d15-b3e1002f8cd9",
+        "47161076-34a1-4fef-bd85-b4d8015e407d",
+        "3e1d09e0-e4a0-43c4-983b-b4d60003c4ae",
+        "9f47b0c1-3df2-41ac-9a9f-b3dc01533830",
+        "05d043cb-2b97-4a57-9cff-b3da0033bd7f",
+        "b38d1489-4b5e-41fa-a50d-b3d501051546",
+        "a5611799-33a6-4d31-92e5-b3d30021e292"
       ]
     },
     "The Better Budgeting Podcast": {
@@ -294,7 +312,13 @@
         "Buzzsprout-14314561",
         "Buzzsprout-14280420",
         "Buzzsprout-14249292",
-        "Buzzsprout-14215081"
+        "Buzzsprout-14215081",
+        "Buzzsprout-14188846",
+        "Buzzsprout-14150020",
+        "Buzzsprout-14065505",
+        "Buzzsprout-14065296",
+        "Buzzsprout-13986326",
+        "Buzzsprout-13890985"
       ]
     },
     "Catching Up to FI": {
@@ -346,7 +370,13 @@
         "42f2eb63-e45e-43ed-a788-0430593434d8",
         "48570b6e-51d1-494c-b514-6a2277e00447",
         "1e088e03-2653-4e39-b074-904820e539c1",
-        "57e72a39-b984-41b4-b648-da1b273fa7be"
+        "57e72a39-b984-41b4-b648-da1b273fa7be",
+        "2bf3f623-2bad-4708-98ff-b0371c9ff2b6",
+        "06e41013-c234-4d3f-95f5-cd996267b2e1",
+        "f3be5e92-8c74-48bf-81b3-df9b6315cb36",
+        "df501792-b798-4e72-b3eb-e213f885a7b6",
+        "563a03f1-d7e8-45a3-bf17-dca23862160a",
+        "0eb3e23c-ba39-4d08-ac6b-f9ca4c462f32"
       ]
     },
     "The Simply Investing Dividend Podcast": {
@@ -466,7 +496,13 @@
         "https://api.spreaker.com/episode/66904230",
         "https://api.spreaker.com/episode/66747907",
         "https://api.spreaker.com/episode/66729089",
-        "https://api.spreaker.com/episode/66709901"
+        "https://api.spreaker.com/episode/66709901",
+        "https://api.spreaker.com/episode/74840383",
+        "https://api.spreaker.com/episode/66549011",
+        "https://api.spreaker.com/episode/66465338",
+        "https://api.spreaker.com/episode/66368291",
+        "https://api.spreaker.com/episode/65689075",
+        "https://api.spreaker.com/episode/65667085"
       ]
     },
     "The Personal Finance Club Show": {
@@ -550,7 +586,8 @@
     "what-is-a-sinking-fund",
     "sinking-fund-vs-emergency-fund",
     "am-i-saving-too-much-for-retirement",
-    "can-i-retire-on-rental-income"
+    "can-i-retire-on-rental-income",
+    "spousal-ira"
   ],
   "deferred_rows": [
     {
@@ -594,6 +631,36 @@
       "target": "/guides/types-of-budgets/",
       "volume": 720,
       "note": "low priority hub"
+    },
+    {
+      "slug": "when-to-take-social-security",
+      "target": "/guides/when-to-take-social-security/",
+      "volume": 1600,
+      "note": "2026-10-06: not built; ssa.gov returns 403 to the routine so no primary-source facts could be fetched. Needs SSA facts supplied"
+    },
+    {
+      "slug": "will-social-security-run-out",
+      "target": "/guides/will-social-security-run-out/",
+      "volume": 4400,
+      "note": "2026-10-06: not built; Trustees Report (ssa.gov) 403. Needs primary-source facts"
+    },
+    {
+      "slug": "house-hacking",
+      "target": "/guides/house-hacking/",
+      "volume": 5400,
+      "note": "2026-10-06: not built this run; needs HUD/FHA/CFPB fact list"
+    },
+    {
+      "slug": "frugal-vs-cheap",
+      "target": "/compare/frugal-vs-cheap/",
+      "volume": 880,
+      "note": "2026-10-06: low priority, mindset content"
+    },
+    {
+      "slug": "monarch-money-vs-ynab",
+      "target": "/compare/monarch-money-vs-ynab/",
+      "volume": 480,
+      "note": "2026-10-06: needs verified vendor pricing; not invented"
     }
   ],
   "last_run": "2026-09-22"
