@@ -1,0 +1,74 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-06",
+  "window_start": "2026-10-06",
+  "window_end": "2026-10-06",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-buy-treasury-bills/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-invest-200k",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/trump-gold-coin",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/roundup/business-line-of-credit-rates-by-lender/",
+      "views": 0,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 0
+    }
+  ],
+  "top10_pages_total_views": 5,
+  "top10_pages_total_clicks": 5,
+  "channel_split": {
+    "/guides/how-to-buy-treasury-bills/": {
+      "Organic Search": 1
+    },
+    "/guides/how-to-invest-200k": {
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin": {
+      "Direct": 1
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Unassigned": 1
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Cross-network": 1
+    },
+    "/roundup/business-line-of-credit-rates-by-lender/": {
+      "Unassigned": 1
+    }
+  }
+}

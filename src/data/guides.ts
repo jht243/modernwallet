@@ -1248,6 +1248,10 @@ export const GUIDES: Guide[] = [
       {
         "question": "What happens when my T-bill matures?",
         "answer": "When a Treasury bill reaches maturity, the government pays the full face value of the security into your linked financial account. If you scheduled automatic reinvestment prior to maturity, your principal rolls directly into a new bill with the identical term length."
+      },
+      {
+        "question": "What is the best day or time to buy Treasury bills?",
+        "answer": "There is no best day or time of day to buy Treasury bills. A non-competitive bid fills at the discount rate determined by competitive bidders in the auction, so waiting for a specific day does not give you a better yield. What matters is submitting your order before the auction closing deadline and having money ready in your account by the issue date, when the ACH transfer occurs. Instead of trying to guess rate changes, pick an auction with a maturity date that matches when you actually need the cash back."
       }
     ],
     "sources": [
@@ -5693,6 +5697,7 @@ export const GUIDES: Guide[] = [
       { question: "How should I split $200k between taxable and retirement accounts?", answer: "If the money is already inside retirement accounts, place bonds and other ordinary-income-generating assets in the tax-deferred portion (401(k) or traditional IRA) and stock funds in taxable or Roth accounts, since stock gains are taxed more favorably. If it's new money outside any retirement account, prioritize maxing tax-advantaged accounts first before building a separate taxable brokerage position." },
       { question: "What allocation is right for a moderate risk tolerance?", answer: "A 60/40 portfolio — roughly 60% stocks and 40% bonds — is the classic moderate allocation, balancing meaningful long-run growth against a real cushion during downturns. Model your own numbers in the 60/40 portfolio calculator to see the expected return and volatility tradeoff." },
       { question: "How much do investment fees really cost on $200,000?", answer: "A 1% annual expense ratio, compounded over 20 years, can cost tens of thousands of dollars in growth compared with a comparable fund charging closer to 0.05% to 0.10% — the gap compounds silently since it never shows up as a single visible charge. Favor low-cost, broad index funds for the core of the portfolio." },
+      { question: "How should I invest $200,000 for monthly income?", answer: "Decide the monthly amount you need first, because the payout rate required sets how much risk you must take. As an illustration, drawing 3% from $200,000 provides $6,000 a year, or $500 a month, while a 4% payout produces about $667 a month and 5% yields about $833 a month. Aiming for a higher payout rate increases the risk to the $200,000 balance itself. Building that cash flow generally involves mixing assets like bonds, dividend funds, and real estate investment trusts (REITs). Because bond interest faces ordinary income tax rates, keep that bond sleeve inside a tax-deferred account like a traditional individual retirement account (IRA) or 401(k)." },
     ],
     sources: [
       { label: "SEC Investor.gov — Save and Invest", url: "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest" },

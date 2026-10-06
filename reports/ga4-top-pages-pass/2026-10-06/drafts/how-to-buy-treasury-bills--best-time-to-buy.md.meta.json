@@ -1,0 +1,37 @@
+{
+ "slug": "how-to-buy-treasury-bills--best-time-to-buy",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 91,
+ "floor": 0,
+ "input_tokens": 17310,
+ "output_tokens": 100,
+ "thinking_tokens": null,
+ "cached_tokens": 16856,
+ "est_cost_usd": 0.002,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 91,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17623
+  }
+ },
+ "seconds": 3.9,
+ "response_id": "qL3EasCeG4CZ_uMPgZ2CqAc",
+ "generated_at": "2026-10-06T09:21:46+0000"
+}

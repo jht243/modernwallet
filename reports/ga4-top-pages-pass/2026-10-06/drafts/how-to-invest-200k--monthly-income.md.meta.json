@@ -1,0 +1,37 @@
+{
+ "slug": "how-to-invest-200k--monthly-income",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 107,
+ "floor": 0,
+ "input_tokens": 17379,
+ "output_tokens": 167,
+ "thinking_tokens": null,
+ "cached_tokens": 16856,
+ "est_cost_usd": 0.0023,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 107,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17623
+  }
+ },
+ "seconds": 2.7,
+ "response_id": "q73EasehF5WOjrEP-Zi0WA",
+ "generated_at": "2026-10-06T09:21:49+0000"
+}

@@ -241,3 +241,5 @@
 | /compare/grat-vs-slat | 2026-10-05 | 1 | 0/0/0/0/0 | 0 |
 | /guides/how-to-retire-at-67 | 2026-10-05 | 1 | 0/0/1/0/0 | 0 |
 | /guides/how-to-withdraw-from-401k/ | 2026-10-05 | 1 | 0/0/1/0/0 | 0 |
+| /guides/how-to-buy-treasury-bills/ | 2026-10-06 | 1 | 0/0/1/0/0 | 0 |
+| /guides/how-to-invest-200k | 2026-10-06 | 1 | 0/0/1/0/0 | 0 |
