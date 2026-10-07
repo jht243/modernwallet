@@ -4,7 +4,7 @@ Work from the Phase 0 pull JSON only.
 
 > **Research only (2026-10-06 port of the layer3 2026-10-05 redesign).** Lane A never builds or writes pages and calls no external API. Its output is a verdict + findings for the research pack (Phase 4); the mindmap engine (Phase 4c) is the only builder.
 
-> **⚠️ Two-lane model — READ FIRST.** This phase decides ONLY the trend lane; it no longer ends the run. Every outcome below that says "exit 0 / ALL WORK STOPS" now means only **"the trend lane produces no candidates this run"** — control **always** continues to **Phase 1b (coverage lane)**, which runs every run regardless. Whether anything ships is decided downstream by mindmap (Phase 4c), not here. Never `exit 0` from this phase; "stop" means *stop the trend lane and go to Phase 1b*, carrying the digest note forward.
+> **⚠️ Lane A feeds Lane C — READ FIRST.** This phase only decides Lane A's research verdict; it never ends the run. Any outcome below that says "stop" (or used to say "exit 0 / ALL WORK STOPS") means only *Lane A adds no findings this run* — control always continues to Phase 1b (Lane B), then Phase 4 (research pack), then **Phase 4c (mindmap), which runs every run, in full**. Never `exit 0` from this phase, and never treat "no trend" as a reason to skip Phase 4c.
 
 ## 1. Filter query noise
 Drop any query starting with `-` or containing `-site:` (audit-crawler operator strings, not human demand). Collapse obvious near-identical 0-click impression-spam variants to one representative. Pages are never noise.
