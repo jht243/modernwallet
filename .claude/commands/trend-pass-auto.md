@@ -163,7 +163,7 @@ No-changes/failure with nothing committed → `--commit-sha "" --commit-url ""`.
 - Never ask a human anything.
 - Never let Lane A or Lane B build, write, or publish anything, or call any external API/data source (Autocomplete, SEMrush, Ahrefs, DataForSEO, SERP reads, extra GSC calls). They research and hand off.
 - Never do trend-gap research on a trend that matches a `trends.md` row — Lane A reports the verdict only. (This does NOT stop the run — Lanes B and C still run.)
-- Never put a finding into the research pack whose slug/intent appears in `ledger.md` as KEPT or DROPPED.
+- Never put a finding into the research pack whose slug/intent appears in `ledger.md` as KEPT or DROPPED (an owner OVERRIDE row beats DROPPED; HELD rows never block — they re-compete every run).
 - Never exceed 25 new pages in one run, under any reasoning.
 - Never run mindmap's metadata phase (phase-2) or its own sitemap/summary/commit phases (7/8/9) inside this pass, and never consolidate, redirect, or rewrite existing pages.
 - Never invent YMYL facts — figures, rates, limits, statutes, or advice.

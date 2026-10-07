@@ -54,6 +54,7 @@ Read and follow `.claude/commands/mindmap-pass/phase-build-brief.md` with the br
 
 ## 3. Ledger check + cap
 - Drop any `create new content` row whose slug/intent is KEPT or DROPPED in `reports/trend-pass/ledger.md`.
+- **Ledger statuses (owner rule 2026-10-07).** Only **KEPT** and **DROPPED** block a row. An owner **OVERRIDE** / **OVERRIDDEN** row beats any earlier DROPPED for the same slug or intent — build it. **HELD** means temporarily blocked (a YMYL fact source unreachable from the runner, a source not yet supplied, an external dependency): a HELD row re-competes every run and is never treated as DROPPED. Log any "source unreachable / not groundable this run" outcome as **HELD**, never DROPPED — DROPPED is only for exists / duplicate / off-mission / failed audit / owner-rejected. Before declaring a source unreachable, check `data/sources/` for an owner-committed copy of it and ground on that.
 - Rank surviving `create new content` rows in mindmap's own row order. Take the first **25**. Past 25 → digest "over cap — not built", **NOT ledgered** (re-competes next run). Enrichments and internal-link rows don't count against the cap.
 
 ## 4. Execute (mindmap phases)

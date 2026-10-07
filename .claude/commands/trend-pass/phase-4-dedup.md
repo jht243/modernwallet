@@ -8,7 +8,7 @@ Lanes A and B are research only (2026-10-06 port of the layer3 2026-10-05 redesi
 For every finding from Phase 2 (`source: trend`) and Phase 1b (`source: coverage`):
 - **Slug inventory:** `python3 scripts/trend_pass/slug_inventory.py --base-url <BASE_URL> --check <slug>` → exit 1 (TAKEN) → remove ("exists: <where>"). It matches the full path OR the last segment, so a bare segment like `interest-calculator` can collide with a route in another vertical — record which route it hit.
 - **Git history:** `git log -S "<slug>" --oneline` → hit → remove with the commit ref (a deliberately removed page must not silently return). A hit that is only a planning mention in a report (e.g. a `reports/keyword-pass/*.md` chart row that was never built) is NOT an existing page — keep the finding and note the ref.
-- **Candidate ledger:** `reports/trend-pass/ledger.md` has it as KEPT or DROPPED → remove (the old row stands).
+- **Candidate ledger:** `reports/trend-pass/ledger.md` has it as KEPT or DROPPED → remove (the old row stands). An owner OVERRIDE row beats an earlier DROPPED; a HELD row does not block (see Phase 4c ledger statuses).
 
 Removed findings are listed in the run report, not ledgered again.
 
