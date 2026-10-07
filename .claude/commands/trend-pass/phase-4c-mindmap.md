@@ -1,5 +1,16 @@
 # Phase 4c — Mindmap lane (Lane C — the ONLY builder, EVERY run)
 
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** Lanes A and B only
+> feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
+> mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
+> reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.
+> An empty research pack, an already-caught trend, "all top-20 queries covered", or low clicks are
+> NEVER reasons to skip Phase 4c, run a "reduced" BUILD-BRIEF, or replace it with your own
+> classification of the queries. A run that does not save a full BUILD-BRIEF chart at
+> `reports/mindmap-pass/<date>-trend-lane-c.md` is a FAILED run (`--status failure`), even if it
+> builds nothing.
+
+
 **Owner design (layer3 2026-10-05, ported here 2026-10-06):** Lanes A and B research; mindmap builds. Every run, mindmap gets the top-10 queries (7-day window) plus the research pack from Phase 4 as its brief, and decides what ships. It runs even when the research pack is empty.
 
 ## Owner decisions — do not relitigate

@@ -13,6 +13,16 @@ argument-hint: "(no arguments — fully autonomous)"
 > with no `.meta.json` for it has violated this rule. One-sentence edits (titles, descriptions,
 > link sentences, corrections) are the only in-context text.
 
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** Lanes A and B only
+> feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
+> mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
+> reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.
+> An empty research pack, an already-caught trend, "all top-20 queries covered", or low clicks are
+> NEVER reasons to skip Phase 4c, run a "reduced" BUILD-BRIEF, or replace it with your own
+> classification of the queries. A run that does not save a full BUILD-BRIEF chart at
+> `reports/mindmap-pass/<date>-trend-lane-c.md` is a FAILED run (`--status failure`), even if it
+> builds nothing.
+
 # /trend-pass-auto — WEEKLY-window top-down trend detection → capped auto-publish (portable)
 
 > **‼️ RUN-WIDE RULE.** Fully autonomous, NO human checkpoint anywhere. Never ask a question at any phase boundary. On any hard blocker, still finish by sending an email report and exiting 0.
