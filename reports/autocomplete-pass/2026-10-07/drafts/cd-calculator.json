@@ -1,0 +1,48 @@
+{
+ "metaTitle": "CD Calculator: Maturity Value & Interest",
+ "metaDescription": "Free CD calculator. See your certificate of deposit balance at maturity, interest earned, after-tax total, and early withdrawal penalty.",
+ "introText": "A CD calculator shows the final balance and total interest earned on a certificate of deposit based on your deposit, rate, and term.\n\nFor example, take a $10,000 deposit at a 4.5% APY for 12 months. That balance reaches $10,450.00 at maturity, producing $450.00 in total interest. At a 22% tax rate, the interest after tax comes to $351.00. That return averages $37.50 in monthly earnings across the full term.",
+ "howItWorks": "Interest on a certificate of deposit compounds over the term, and the annual percentage yield already accounts for that compounding. To find the balance at maturity, the tool multiplies the starting deposit by one plus the APY raised to the number of years. Take a $10,000 deposit at a 4.5% APY for 12 months. That formula delivers a maturity balance of $10,450.00 and $450.00 in interest. Hold that same deposit at the same APY for 60 months, and the balance grows to $12,461.82. That 60-month term earns $2,461.82 in total interest, showing how compounding builds earnings over longer holding periods.\n\nTaxes reduce the dollar amount you keep once the term finishes. The calculator applies one flat tax rate directly to the total interest earned over the holding period. On the 12-month example with $450.00 in total interest, applying a 22% tax rate leaves $351.00 after taxes. Because the calculator uses a single flat rate, it shows an estimate rather than an exact filing result. You can read about how tax rules treat these accounts in our guide on [is savings and cd interest taxable](/guides/is-savings-and-cd-interest-taxable/).\n\nCashing out before maturity triggers a fee that lowers your final payout. The calculator models this fee as a set number of months of interest on the initial deposit at the chosen APY. Imagine withdrawing the 12-month CD at month 6 with a penalty equal to 3 months of interest. The accrued interest by month 6 is $222.52, while the penalty costs $112.50. That early exit leaves a net balance received of $10,110.02, which represents a net gain of $110.02 above the original deposit. Because banks calculate penalties differently, check the exact terms on your agreement before requesting funds.\n\nComparing certificates of deposit requires matching annual percentage yields across identical terms. Comparing offers across different durations can obscure the actual dollar return, because longer durations give funds more time to compound. You can review alternative cash vehicles in our guides on [CD vs money market accounts](/compare/cd-vs-money-market/) and [CD vs Treasury bills](/compare/cd-vs-treasury-bill/).\n\nEvery calculation relies on several core assumptions. The tool assumes the APY stays fixed for the entire term, with no additional deposits added along the way. The penalty calculation assumes a simple deduction of interest months from the balance, though some institutions apply different methods. The APY, tax rate and penalty in the calculator are placeholders, not quotes. Replace them with the figures in your bank's CD disclosure.",
+ "faqs": [
+  {
+   "question": "How do you calculate CD interest?",
+   "answer": "The calculator multiplies the deposit by one plus the APY raised to the number of years. On a $10,000 deposit at 4.5% APY, 12 months yields $450.00 in total interest. Subtracting the initial principal from the final maturity figure gives the exact dollar return."
+  },
+  {
+   "question": "How much does a $10,000 CD earn?",
+   "answer": "At a 4.5% APY, a $10,000 deposit earns $450.00 after 12 months. Held for 60 months at the same APY, it earns $2,461.82. The exact dollar gain depends on your term and the stated annual percentage yield."
+  },
+  {
+   "question": "What is the difference between APY and interest rate on a CD?",
+   "answer": "The annual percentage yield includes the effect of compounding over the year. A plain interest rate reflects only the base rate before compounding occurs. Because APY captures compounding, it represents the accurate annual metric for comparing returns."
+  },
+  {
+   "question": "Is CD interest taxable?",
+   "answer": "CD interest is generally taxed as ordinary income. A flat tax rate reduces the total dollars you keep at maturity, as explained in our guide on [is savings and cd interest taxable](/guides/is-savings-and-cd-interest-taxable/). Enter your estimated rate in the tool to view your post-tax return."
+  },
+  {
+   "question": "What happens if I withdraw from a CD early?",
+   "answer": "Banks charge an early withdrawal penalty that reduces your accrued earnings. Say a 12-month certificate is pulled at month 6 with a 3-month interest penalty. The penalty costs $112.50. That deduction leaves $10,110.02 from an initial $10,000 deposit."
+  },
+  {
+   "question": "Does a longer CD term always earn more?",
+   "answer": "A longer term earns more total dollars only when the APY remains the same. A 12-month term at 4.5% APY earns $450.00, whereas a 60-month term earns $2,461.82. However, banks set a different APY for each term."
+  },
+  {
+   "question": "How is a CD different from a money market account?",
+   "answer": "A certificate of deposit commits your cash for a fixed term, whereas money market accounts provide ongoing access. The two products differ in terms and access rules, so compare actual offers directly. Review our guide on [CD vs money market accounts](/compare/cd-vs-money-market/) for details."
+  },
+  {
+   "question": "How does a CD compare with a Treasury bill?",
+   "answer": "Certificates of deposit and Treasury bills differ in their structure, rules, and access terms. Review current offers across both options to see which matches your holding timeframe. You can read our detailed side-by-side comparison in [CD vs Treasury bills](/compare/cd-vs-treasury-bill/)."
+  }
+ ],
+ "slug": "cd-calculator",
+ "h1": "",
+ "subtitle": "",
+ "sections": [],
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

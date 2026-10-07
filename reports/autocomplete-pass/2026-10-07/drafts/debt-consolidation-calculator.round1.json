@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Debt Consolidation Calculator: Compare Savings",
+  "metaDescription": "Free debt consolidation calculator. Compare your current monthly payments and total interest against a single new loan, including any origination fee.",
+  "introText": "A debt consolidation calculator compares the total interest and monthly payments across several existing debts against the cost of rolling them into a single loan. Enter each current balance, interest rate, and monthly payment alongside your potential loan terms to see whether consolidating lowers your overall borrowing costs.\n\nConsider three debts: $8,000 at 24% APR paying $250 a month, $5,000 at 19% APR paying $150 a month, and $3,000 at 29% APR paying $100 a month. Together, these debts total $16,000 with monthly payments of $500. Keeping them as they are takes 55 months to clear the last balance and costs $9,469.39 in total interest. Replacing them with a 48-month consolidation loan at 12% APR with a 3% origination fee produces a new monthly payment of $434.37. That payment is $65.63 lower each month, and the combined interest and fee of $4,849.89 saves $4,619.50 overall.",
+  "howItWorks": "The calculator starts by simulating your existing balances month by month. For each debt, it applies that month's interest, subtracts your fixed payment, and tracks the remaining principal. If a payment is no larger than the monthly interest, the balance never reaches zero, and the tool flags that debt. Across the three separate balances in the worked example, paying the current amounts clears the entire balance in 55 months and generates $9,469.39 in total interest.\n\nNext, the calculator models the new consolidation loan. Lenders usually deduct an origination fee directly from the loan proceeds. To leave enough cash to clear every old balance, the calculator sizes the new loan to cover the starting balances plus that fee. On the $16,000 balance with a 3% fee, the fee comes to $494.85, which brings the total loan size to $16,494.85. Sizing the borrowing this way gives an amortized monthly payment of $434.37 over a 48-month term.\n\nTo see if debt consolidation is worth it, the calculator weighs every expense on both sides of the ledger. The new loan generates $4,355.04 in interest over 48 months. Adding the $494.85 origination fee brings total borrowing costs to $4,849.89. Comparing that figure against the $9,469.39 interest bill from keeping the debts separate reveals total debt consolidation interest savings of $4,619.50.\n\nMonthly payment savings do not always match total interest savings. A borrower might see a lower monthly bill simply because a new loan stretches repayments over more months, not because the interest rate dropped. Extending the repayment timeline can actually increase the total interest paid over the life of the debt. For an accurate comparison, check both the monthly cash flow impact and the total lifetime borrowing cost before committing to a new loan.\n\nThe calculator assumes fixed interest rates, steady monthly payments on existing accounts, and no new card charges. The terms, rates, and origination fees you enter are working placeholders, as actual rates and eligibility are set by individual lenders. You can test your existing balances on our [credit card payoff calculator](/credit-card-payoff/) or research stand-alone options using the [personal loan calculator](/personal-loan/). To map out a broader repayment strategy, read our overview on [how to pay off debt](/guides/how-to-pay-off-debt/).",
+  "faqs": [
+    {
+      "question": "Does debt consolidation save money?",
+      "answer": "Debt consolidation saves money when the new loan secures a lower interest rate without stretching the repayment timeline too far. In the example above, consolidating a $16,000 balance cuts total interest and fees by $4,619.50. Check the total interest output rather than just the monthly payment to confirm real savings."
+    },
+    {
+      "question": "How does a debt consolidation loan work?",
+      "answer": "A debt consolidation loan combines several separate balances into one single monthly payment. You take out a new fixed-rate loan, use the funds to pay off your existing creditors, and repay the single lender over a fixed term. You can model rates and term lengths with our [personal loan calculator](/personal-loan/)."
+    },
+    {
+      "question": "How is the new loan amount calculated?",
+      "answer": "The new loan amount equals the sum of all your existing balances plus the cost of any upfront fees. Because lenders typically deduct an origination fee from the payout, the total loan must be sized up to ensure enough money remains to pay off the old accounts. On a $16,000 balance with a 3% fee, the loan amount becomes $16,494.85."
+    },
+    {
+      "question": "Does an origination fee change the math?",
+      "answer": "An origination fee increases the initial loan balance and adds to the total cost of borrowing. In the $16,000 example, a 3% fee adds $494.85 to the debt. Even after including that fee, the overall plan saves money because the new interest rate is substantially lower than the original rates."
+    },
+    {
+      "question": "Is a lower monthly payment always better?",
+      "answer": "A lower monthly payment is not always better for your finances. A smaller payment often comes from extending the loan term across more months rather than securing a lower interest rate. Stretching out repayment gives interest more time to accumulate, which can raise your total cost."
+    },
+    {
+      "question": "What debts can you consolidate?",
+      "answer": "Lenders decide which types of debt they allow you to consolidate. Common eligible accounts include credit cards, personal loans, and other unsecured balances. Check eligibility guidelines with individual lenders before applying to ensure your accounts qualify."
+    },
+    {
+      "question": "What is the difference between debt consolidation and a balance transfer?",
+      "answer": "A debt consolidation loan is an installment loan with a fixed repayment term and a fixed monthly payment. A balance transfer moves existing balances to a credit card, usually to take advantage of a temporary promotional interest rate. Review [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) to evaluate that approach."
+    },
+    {
+      "question": "Should I consolidate or use the snowball or avalanche method?",
+      "answer": "Consolidation replaces multiple accounts with one payment, while the snowball and avalanche methods organize your existing payments by balance size or interest rate. Neither method is universally superior for every borrower. Read our comparison of the [debt snowball vs. avalanche](/compare/debt-snowball-vs-avalanche/) strategies to evaluate how each path handles your debts."
+    }
+  ],
+  "slug": "debt-consolidation-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -48,6 +48,27 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/home-equity-loan-vs-personal-loan/", label: "Home equity loan vs personal loan" },
     { href: "/compare/401k-loan-vs-heloc/", label: "401(k) loan vs HELOC" },
   ],
+  "cd-calculator": [
+    { href: "/emergency-fund-calculator/", label: "Parking an emergency fund? Size it first" },
+    { href: "/compare/cd-vs-money-market/", label: "CD vs money market account" },
+    { href: "/compare/cd-vs-treasury-bill/", label: "CD vs Treasury bill" },
+    { href: "/guides/is-savings-and-cd-interest-taxable/", label: "Is CD interest taxable?" },
+    { href: "/investing/", label: "Compare to stock-market returns" },
+  ],
+  "emergency-fund-calculator": [
+    { href: "/guides/how-much-emergency-fund/", label: "How much emergency fund is enough?" },
+    { href: "/cd-calculator/", label: "Model a CD for part of the fund" },
+    { href: "/budget/", label: "Find your essential monthly costs" },
+    { href: "/debt-consolidation-calculator/", label: "Carrying high-rate debt? Compare a consolidation loan" },
+    { href: "/compare/sinking-fund-vs-emergency-fund/", label: "Sinking fund vs emergency fund" },
+  ],
+  "debt-consolidation-calculator": [
+    { href: "/credit-card-payoff/", label: "Pay off one card: time and interest" },
+    { href: "/personal-loan/", label: "Model a personal loan payment" },
+    { href: "/compare/debt-snowball-vs-avalanche/", label: "Debt snowball vs avalanche" },
+    { href: "/guides/how-to-pay-off-debt/", label: "How to pay off debt" },
+    { href: "/emergency-fund-calculator/", label: "Build a cushion so debt doesn't return" },
+  ],
   "commercial-mortgage-calculator": [
     { href: "/guides/commercial-mortgage-calculator-explained/", label: "DSCR and balloon payments explained" },
     { href: "/real-estate/cap-rate-calculator/", label: "Check the property's cap rate" },
@@ -98,6 +119,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
   ],
   "investing": [
+    { href: "/cd-calculator/", label: "Compare to a CD: model the maturity value" },
     { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/retirement/", label: "Plan your retirement" },
     { href: "/portfolio/", label: "Balance your portfolio" },
@@ -119,6 +141,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/financial-planning-for-30-year-olds/", label: "Financial planning in your 30s" },
   ],
   "budget": [
+    { href: "/emergency-fund-calculator/", label: "Size your emergency fund from your essential bills" },
     { href: "/net-worth/", label: "See your full net worth" },
     { href: "/investing/", label: "Invest your monthly surplus" },
     { href: "/retirement/", label: "Are you saving enough to retire?" },
@@ -128,6 +151,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/lending-money-to-family-boundaries/", label: "Lending money to family? Set boundaries first" },
   ],
   "personal-loan": [
+    { href: "/debt-consolidation-calculator/", label: "Consolidating debt? Compare the total cost" },
     { href: "/heloc-calculator/", label: "Own a home? Compare a HELOC payment" },
     { href: "/budget/", label: "Does the payment fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
@@ -138,6 +162,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/is-possible-finance-a-good-personal-loan-option/", label: "Considering Possible Finance? Check the real APR" },
   ],
   "credit-card-payoff": [
+    { href: "/debt-consolidation-calculator/", label: "Several balances? Compare one consolidation loan" },
     { href: "/personal-loan/", label: "Compare a fixed-rate personal loan instead" },
     { href: "/budget/", label: "Build a payoff plan into your budget" },
     { href: "/net-worth/", label: "See your full net worth" },

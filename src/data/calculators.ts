@@ -1352,6 +1352,189 @@ export const CALCULATORS: CalculatorDef[] = [
       minDscr: 1.25,
     },
   },
+  // CD calculator — autocomplete-pass (2026-10-07): maturity balance at an APY, interest after tax, and an early-withdrawal penalty entered as months of interest. Every rate, term, tax rate and penalty length is a user input. Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/autocomplete-pass/2026-10-07/drafts/).
+  {
+    id: "cd-calculator",
+    islandId: "cd-calculator",
+    label: "CD Calculator",
+    navOrder: 40,
+    metaTitle: "CD Calculator: Maturity Value & Interest",
+    metaDescription:
+      "Free CD calculator. See your certificate of deposit balance at maturity, interest earned, after-tax total, and early withdrawal penalty.",
+    targetKeyword: "cd calculator",
+    h1: "CD Calculator",
+    introText:
+      "A CD calculator shows the final balance and total interest earned on a certificate of deposit based on your deposit, rate, and term.\n\nFor example, take a $10,000 deposit at a 4.5% APY for 12 months. That balance reaches $10,450.00 at maturity, producing $450.00 in total interest. At a 22% tax rate, the interest after tax comes to $351.00. That return averages $37.50 in monthly earnings across the full term.",
+    howItWorks:
+      "Interest on a certificate of deposit compounds over the term, and the annual percentage yield already accounts for that compounding. To find the balance at maturity, the tool multiplies the starting deposit by one plus the APY raised to the number of years. Take a $10,000 deposit at a 4.5% APY for 12 months. That formula delivers a maturity balance of $10,450.00 and $450.00 in interest. Hold that same deposit at the same APY for 60 months, and the balance grows to $12,461.82. That 60-month term earns $2,461.82 in total interest, showing how compounding builds earnings over longer holding periods.\n\nTaxes reduce the dollar amount you keep once the term finishes. The calculator applies one flat tax rate directly to the total interest earned over the holding period. On the 12-month example with $450.00 in total interest, applying a 22% tax rate leaves $351.00 after taxes. Because the calculator uses a single flat rate, it shows an estimate rather than an exact filing result. You can read about how tax rules treat these accounts in our guide on [is savings and cd interest taxable](/guides/is-savings-and-cd-interest-taxable/).\n\nCashing out before maturity triggers a fee that lowers your final payout. The calculator models this fee as a set number of months of interest on the initial deposit at the chosen APY. Imagine withdrawing the 12-month CD at month 6 with a penalty equal to 3 months of interest. The accrued interest by month 6 is $222.52, while the penalty costs $112.50. That early exit leaves a net balance received of $10,110.02, which represents a net gain of $110.02 above the original deposit. Because banks calculate penalties differently, check the exact terms on your agreement before requesting funds.\n\nComparing certificates of deposit requires matching annual percentage yields across identical terms. Comparing offers across different durations can obscure the actual dollar return, because longer durations give funds more time to compound. You can review alternative cash vehicles in our guides on [CD vs money market accounts](/compare/cd-vs-money-market/) and [CD vs Treasury bills](/compare/cd-vs-treasury-bill/).\n\nEvery calculation relies on several core assumptions. The tool assumes the APY stays fixed for the entire term, with no additional deposits added along the way. The penalty calculation assumes a simple deduction of interest months from the balance, though some institutions apply different methods. The APY, tax rate and penalty in the calculator are placeholders, not quotes. Replace them with the figures in your bank's CD disclosure.",
+    faqs: [
+      {
+        question: "How do you calculate CD interest?",
+        answer:
+          "The calculator multiplies the deposit by one plus the APY raised to the number of years. On a $10,000 deposit at 4.5% APY, 12 months yields $450.00 in total interest. Subtracting the initial principal from the final maturity figure gives the exact dollar return.",
+      },
+      {
+        question: "How much does a $10,000 CD earn?",
+        answer:
+          "At a 4.5% APY, a $10,000 deposit earns $450.00 after 12 months. Held for 60 months at the same APY, it earns $2,461.82. The exact dollar gain depends on your term and the stated annual percentage yield.",
+      },
+      {
+        question: "What is the difference between APY and interest rate on a CD?",
+        answer:
+          "The annual percentage yield includes the effect of compounding over the year. A plain interest rate reflects only the base rate before compounding occurs. Because APY captures compounding, it represents the accurate annual metric for comparing returns.",
+      },
+      {
+        question: "Is CD interest taxable?",
+        answer:
+          "CD interest is generally taxed as ordinary income. A flat tax rate reduces the total dollars you keep at maturity, as explained in our guide on [is savings and cd interest taxable](/guides/is-savings-and-cd-interest-taxable/). Enter your estimated rate in the tool to view your post-tax return.",
+      },
+      {
+        question: "What happens if I withdraw from a CD early?",
+        answer:
+          "Banks charge an early withdrawal penalty that reduces your accrued earnings. Say a 12-month certificate is pulled at month 6 with a 3-month interest penalty. The penalty costs $112.50. That deduction leaves $10,110.02 from an initial $10,000 deposit.",
+      },
+      {
+        question: "Does a longer CD term always earn more?",
+        answer:
+          "A longer term earns more total dollars only when the APY remains the same. A 12-month term at 4.5% APY earns $450.00, whereas a 60-month term earns $2,461.82. However, banks set a different APY for each term.",
+      },
+      {
+        question: "How is a CD different from a money market account?",
+        answer:
+          "A certificate of deposit commits your cash for a fixed term, whereas money market accounts provide ongoing access. The two products differ in terms and access rules, so compare actual offers directly. Review our guide on [CD vs money market accounts](/compare/cd-vs-money-market/) for details.",
+      },
+      {
+        question: "How does a CD compare with a Treasury bill?",
+        answer:
+          "Certificates of deposit and Treasury bills differ in their structure, rules, and access terms. Review current offers across both options to see which matches your holding timeframe. You can read our detailed side-by-side comparison in [CD vs Treasury bills](/compare/cd-vs-treasury-bill/).",
+      },
+    ],
+    updated: "2026-10-07",
+    defaultPreset: { deposit: 10000, apyPct: 4.5, termMonths: 12, taxRatePct: 22, penaltyMonths: 3, withdrawMonth: 6 },
+  },
+  // Emergency fund calculator — autocomplete-pass (2026-10-07): target from essential monthly bills times a chosen number of months, the gap, and time to goal. The months to cover is a user input, not a recommendation. Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/autocomplete-pass/2026-10-07/drafts/).
+  {
+    id: "emergency-fund-calculator",
+    islandId: "emergency-fund-calculator",
+    label: "Emergency Fund",
+    navOrder: 41,
+    metaTitle: "Emergency Fund Calculator: Target and Timeline",
+    metaDescription:
+      "Free emergency fund calculator. Turn your essential monthly costs into an emergency fund target, check your current progress, and see how long it takes to save.",
+    targetKeyword: "emergency fund calculator",
+    h1: "Emergency Fund Calculator",
+    introText:
+      "An emergency fund calculator turns your essential monthly bills and the number of months you choose into a savings target. Enter your must-pay expenses across the seven categories, the months you want covered, your current savings, your planned deposit, and an optional savings yield in the calculator above.\n\nFor example, monthly essential costs of $3,000 covered for 6 months create an emergency fund target of $18,000. If you have $3,000 saved so far, that balance covers 1.0 month of bills. The remaining gap is $15,000 to save. Adding a deposit of $400 a month with no yield reaches that target in 38 months, or 3 years 2 months. If your goal is to finish saving within 12 months with no yield, the required monthly deposit is $1,250.",
+    howItWorks:
+      "An emergency fund target starts from essential expenses rather than your take-home pay, because your required spending drops when non-essential purchases stop. The calculator tallies seven monthly bills that continue even after a job loss: rent or mortgage, food, utilities, insurance, minimum debt payments, transportation, and other must-pay costs. In the worked example, monthly essentials total $3,000. That includes rent or mortgage of $1,500 and food of $500. It also includes utilities of $250 and insurance of $200. The remaining costs in that total are minimum debt payments of $250, transportation of $200, and other must-pay costs of $100. Discretionary spending is left out because those purchases pause during an emergency.\n\nThe calculator takes that monthly essentials figure and multiplies it by the number of months you select to find your savings target. Choosing 6 months against the $3,000 monthly total produces a target of $18,000. It then compares that target to your current balance to determine your remaining gap and your current safety cushion. With $3,000 saved so far, you currently cover 1.0 month of essential expenses. That leaves an amount still to save of $15,000 to reach the full target. You can review your regular spending with the [budget calculator](/budget/) to identify where your must-pay bills currently stand.\n\nTo map your path toward the goal, the tool calculates both your estimated completion timeline and an accelerated option. If you deposit $400 a month with no yield, closing the $15,000 gap takes 38 months. That equals 3 years 2 months of steady saving. The tool also provides a fixed 12-month comparison row. Reaching that same target in 12 months with no yield requires a deposit of $1,250 a month. Tracking both figures shows how adjusting your monthly contribution shifts your finish date.\n\nAdding an optional savings yield shortens the time needed to reach your goal. The calculator compounds interest monthly and applies that return directly to your growing balance. Because the earned interest contributes to the balance alongside your deposits, a higher yield trims the number of months required to finish saving. The tool allows you to enter any annual percentage yield to model how interest changes your timeline. If you want to compare fixed-rate options for holding cash, run potential terms through the [CD calculator](/cd-calculator/).\n\nThe calculations rely on a few steady assumptions. The tool assumes your monthly essential spending remains constant and that you make the same deposit each month. It also assumes that any entered yield compounds monthly without changes to interest rates or inflation over time. The 6 months shown in the tool is an adjustable placeholder rather than a recommendation. The right cushion depends on your household, job stability, and health. For details on how to choose your number of months, visit our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/).",
+    faqs: [
+      {
+        question: "How much emergency fund do I need?",
+        answer:
+          "The target depends on your own monthly essential costs and the number of months you choose to cover. In our worked example, essential bills of $3,000 a month covered for 6 months create a target of $18,000. Read our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/) to decide what cushion fits your household.",
+      },
+      {
+        question: "What counts as an essential expense?",
+        answer:
+          "Essential expenses are the bills that continue after an income disruption or job loss. These include housing, groceries, utilities, insurance, transportation, minimum debt payments, and other unavoidable obligations. Discretionary spending on dining out, entertainment, and non-essential shopping is excluded from this target.",
+      },
+      {
+        question: "Should the target be based on income or expenses?",
+        answer:
+          "The target is built from essential expenses rather than income. When pay stops, only mandatory bills continue, so replacing your full gross or take-home pay is unnecessary. The calculator focuses strictly on the must-pay costs required to keep your household running.",
+      },
+      {
+        question: "How long does it take to build an emergency fund?",
+        answer:
+          "Your timeline depends on the gap between your current savings and your target, along with your monthly deposit. In the worked example, closing a $15,000 gap with deposits of $400 a month takes 38 months. Increasing that deposit to $1,250 a month reaches the target in 12 months.",
+      },
+      {
+        question: "Where should I keep my emergency fund?",
+        answer:
+          "Most people look for an account that is easy to reach quickly and does not lose value when financial markets drop. You can explore how fixed-rate options grow over time using the [CD calculator](/cd-calculator/).",
+      },
+      {
+        question: "Should I pay off debt or build an emergency fund first?",
+        answer:
+          "Both orders are common approaches. Deciding between them depends on the interest rate on your debt and how stable your income is. Review the tradeoffs in our guide on [how to pay off debt](/guides/how-to-pay-off-debt/) before choosing which goal to fund first.",
+      },
+      {
+        question: "What is the difference between a sinking fund and an emergency fund?",
+        answer:
+          "An emergency fund covers unexpected disruptions, such as a sudden job loss or an urgent unplanned bill. A sinking fund sets aside money for a known future expense, like planned car maintenance or an annual insurance premium. See our breakdown of [sinking funds vs. emergency funds](/compare/sinking-fund-vs-emergency-fund/) to separate the two.",
+      },
+      {
+        question: "Should I include my minimum debt payments?",
+        answer:
+          "Yes, because minimum debt payments continue even after a job loss. In the worked example, minimum debt payments account for $250 of the $3,000 monthly essential costs. Leaving them out would leave your emergency target short of your actual ongoing obligations.",
+      },
+    ],
+    updated: "2026-10-07",
+    defaultPreset: { housing: 1500, food: 500, utilities: 250, insurance: 200, debtMinimums: 250, transport: 200, other: 100, targetMonths: 6, currentSavings: 3000, monthlyDeposit: 400, apyPct: 0 },
+  },
+  // Debt consolidation calculator — autocomplete-pass (2026-10-07): up to four debts played forward at today's payments against one new fixed-rate loan with the origination fee taken from the proceeds. Every balance, rate, payment, term and fee is a user input. Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/autocomplete-pass/2026-10-07/drafts/).
+  {
+    id: "debt-consolidation-calculator",
+    islandId: "debt-consolidation-calculator",
+    label: "Debt Consolidation",
+    navOrder: 42,
+    metaTitle: "Debt Consolidation Calculator: Compare Interest & Payments",
+    metaDescription:
+      "Free debt consolidation calculator. Compare your current payments and interest against a new consolidation loan to see whether you save money after fees.",
+    targetKeyword: "debt consolidation calculator",
+    h1: "Debt Consolidation Calculator",
+    introText:
+      "A debt consolidation calculator shows whether replacing multiple existing balances with one fixed-rate loan lowers your monthly payment and your total interest after fees.\n\nFor example, take three debts. The first is $8,000 at 24% annual percentage rate (APR), paid at $250 a month. The second is $5,000 at 19% APR, paid at $150 a month. The third is $3,000 at 29% APR, paid at $100 a month. Together, those balances total $16,000 and require $500 a month in payments. Keeping those debts as they are takes 55 months to clear the last balance and costs $9,469.39 in interest. Now take a 48-month consolidation loan at 12% APR with a 3% origination fee. It produces a $434.37 monthly payment. That payment is $65.63 less each month, and consolidating costs $4,619.50 less overall once the fee is counted.",
+    howItWorks:
+      "The calculator starts by simulating each current debt separately. Every month, interest accrues on each remaining balance, and your payment reduces the principal after interest is covered. The tool projects this month by month until every balance reaches zero, assuming you make the exact payments you entered. In our worked example, clearing the final debt takes 55 months, which is 4 years 7 months. Across all three accounts, total interest reaches $9,469.39. If a payment is no larger than the monthly interest, the balance never reaches zero, and the tool flags that debt.\n\nNext, the calculator sizes the proposed consolidation loan. In this tool the fee is taken out of the loan proceeds, so the new loan is sized to cover the balances plus the fee. On a $16,000 total balance with a 3% origination fee, the fee comes out to $494.85. That puts the total borrowed amount at $16,494.85. Using that balance, the tool amortizes the debt over a 48-month term at 12% APR. This gives a monthly payment of $434.37, which is $65.63 lower each month than the combined $500 payment made today.\n\nThe tool then balances total borrowing costs between the two paths. The new loan generates $4,355.04 in total interest over its term. Adding the $494.85 origination fee brings total borrowing costs to $4,849.89. Compared to the $9,469.39 in interest from keeping the individual balances, the consolidation path costs $4,619.50 less. This cost difference accounts for the entire borrowing period and reflects the net interest saved after absorbing the upfront fee into the loan balance.\n\nA lower monthly payment does not automatically mean a loan is cheaper overall. Monthly payments drop when you secure a lower APR, but they also drop if you extend repayment across a longer term. A stretched timeline can cause total interest to rise even when your monthly bill decreases. You need to inspect both the monthly payment change and total interest costs rather than relying only on the immediate cash-flow relief.\n\nAll calculations rely on fixed rates and assume no new borrowing occurs on paid-off accounts. Consolidating does not erase the debt, and charging new purchases onto cleared cards can rebuild the original balances. The tool also assumes you continue making today's stated payments on your existing accounts without change. Rates, fees, and eligibility are set by each lender, meaning the rates, terms, and fee percentages entered in the tool serve as placeholders rather than guaranteed quotes.",
+    faqs: [
+      {
+        question: "Does debt consolidation save money?",
+        answer:
+          "It can, but only when the new loan costs less in total, not just per month. In our example, keeping three debts costs $9,469.39 in interest over 55 months. Consolidating with a 48-month loan costs $4,849.89 in combined interest and fees. That saves $4,619.50 overall.",
+      },
+      {
+        question: "How does a debt consolidation loan work?",
+        answer:
+          "A lender issues a single fixed-rate loan large enough to pay off your individual balances. You use those loan proceeds to clear the accounts, leaving you with one monthly payment over a fixed term. You can test potential borrowing rates using our [personal loan calculator](/personal-loan/).",
+      },
+      {
+        question: "How is the new loan amount calculated?",
+        answer:
+          "The calculator sums your existing balances to find the net payoff amount needed. It then adds the origination fee percentage to that principal so the proceeds fully cover the original debts. On a $16,000 balance with a 3% fee, the total loan amount becomes $16,494.85.",
+      },
+      {
+        question: "Does an origination fee change the math?",
+        answer:
+          "Yes, an origination fee raises the loan amount and the overall cost of borrowing. In our example, the 3% fee adds $494.85 to the balance. Consolidating still costs $4,619.50 less once the fee is counted, but you must factor that cost into the net comparison.",
+      },
+      {
+        question: "Is a lower monthly payment always better?",
+        answer:
+          "No, because a lower payment can result from stretching the debt across a longer term rather than securing a lower interest rate. A longer repayment window can lead to higher overall borrowing costs. You should always evaluate total interest alongside the monthly payment.",
+      },
+      {
+        question: "What debts can you consolidate?",
+        answer:
+          "Credit cards and personal loans are two general kinds of debt a consolidation loan may cover. Each lender sets its own policies and decides which debts are eligible for consolidation. Check specific lender terms before applying.",
+      },
+      {
+        question: "What is the difference between debt consolidation and a balance transfer?",
+        answer:
+          "A debt consolidation loan is an installment loan with a fixed repayment term and interest rate. A balance transfer moves card balances onto a single credit card, often with a temporary introductory rate. Learn more about evaluating transfer terms in our guide on [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/).",
+      },
+      {
+        question: "Should I consolidate or use the snowball or avalanche method?",
+        answer:
+          "Consolidation replaces multiple accounts with one payment, while the snowball and avalanche methods organize your existing payments without opening a new loan. Snowball clears the smallest balance first, while avalanche targets the highest APR first. You can compare both acceleration strategies in our [debt snowball vs. avalanche](/compare/debt-snowball-vs-avalanche/) guide.",
+      },
+    ],
+    updated: "2026-10-07",
+    defaultPreset: { debts: [{ balance: 8000, aprPct: 24, payment: 250 }, { balance: 5000, aprPct: 19, payment: 150 }, { balance: 3000, aprPct: 29, payment: 100 }, { balance: 0, aprPct: 0, payment: 0 }], newAprPct: 12, newTermMonths: 48, feePct: 3 },
+  },
   {
     id: "pto-cashout",
     islandId: "pto-cashout",

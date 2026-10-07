@@ -1,0 +1,48 @@
+{
+ "metaTitle": "Emergency Fund Calculator: Target and Timeline",
+ "metaDescription": "Free emergency fund calculator. Turn your essential monthly costs into an emergency fund target, check your current progress, and see how long it takes to save.",
+ "introText": "An emergency fund calculator turns your essential monthly bills and the number of months you choose into a savings target. Enter your must-pay expenses across the seven categories, the months you want covered, your current savings, your planned deposit, and an optional savings yield in the calculator above.\n\nFor example, monthly essential costs of $3,000 covered for 6 months create an emergency fund target of $18,000. If you have $3,000 saved so far, that balance covers 1.0 month of bills. The remaining gap is $15,000 to save. Adding a deposit of $400 a month with no yield reaches that target in 38 months, or 3 years 2 months. If your goal is to finish saving within 12 months with no yield, the required monthly deposit is $1,250.",
+ "howItWorks": "An emergency fund target starts from essential expenses rather than your take-home pay, because your required spending drops when non-essential purchases stop. The calculator tallies seven monthly bills that continue even after a job loss: rent or mortgage, food, utilities, insurance, minimum debt payments, transportation, and other must-pay costs. In the worked example, monthly essentials total $3,000. That includes rent or mortgage of $1,500 and food of $500. It also includes utilities of $250 and insurance of $200. The remaining costs in that total are minimum debt payments of $250, transportation of $200, and other must-pay costs of $100. Discretionary spending is left out because those purchases pause during an emergency.\n\nThe calculator takes that monthly essentials figure and multiplies it by the number of months you select to find your savings target. Choosing 6 months against the $3,000 monthly total produces a target of $18,000. It then compares that target to your current balance to determine your remaining gap and your current safety cushion. With $3,000 saved so far, you currently cover 1.0 month of essential expenses. That leaves an amount still to save of $15,000 to reach the full target. You can review your regular spending with the [budget calculator](/budget/) to identify where your must-pay bills currently stand.\n\nTo map your path toward the goal, the tool calculates both your estimated completion timeline and an accelerated option. If you deposit $400 a month with no yield, closing the $15,000 gap takes 38 months. That equals 3 years 2 months of steady saving. The tool also provides a fixed 12-month comparison row. Reaching that same target in 12 months with no yield requires a deposit of $1,250 a month. Tracking both figures shows how adjusting your monthly contribution shifts your finish date.\n\nAdding an optional savings yield shortens the time needed to reach your goal. The calculator compounds interest monthly and applies that return directly to your growing balance. Because the earned interest contributes to the balance alongside your deposits, a higher yield trims the number of months required to finish saving. The tool allows you to enter any annual percentage yield to model how interest changes your timeline. If you want to compare fixed-rate options for holding cash, run potential terms through the [CD calculator](/cd-calculator/).\n\nThe calculations rely on a few steady assumptions. The tool assumes your monthly essential spending remains constant and that you make the same deposit each month. It also assumes that any entered yield compounds monthly without changes to interest rates or inflation over time. The 6 months shown in the tool is an adjustable placeholder rather than a recommendation. The right cushion depends on your household, job stability, and health. For details on how to choose your number of months, visit our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/).",
+ "faqs": [
+  {
+   "question": "How much emergency fund do I need?",
+   "answer": "The target depends on your own monthly essential costs and the number of months you choose to cover. In our worked example, essential bills of $3,000 a month covered for 6 months create a target of $18,000. Read our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/) to decide what cushion fits your household."
+  },
+  {
+   "question": "What counts as an essential expense?",
+   "answer": "Essential expenses are the bills that continue after an income disruption or job loss. These include housing, groceries, utilities, insurance, transportation, minimum debt payments, and other unavoidable obligations. Discretionary spending on dining out, entertainment, and non-essential shopping is excluded from this target."
+  },
+  {
+   "question": "Should the target be based on income or expenses?",
+   "answer": "The target is built from essential expenses rather than income. When pay stops, only mandatory bills continue, so replacing your full gross or take-home pay is unnecessary. The calculator focuses strictly on the must-pay costs required to keep your household running."
+  },
+  {
+   "question": "How long does it take to build an emergency fund?",
+   "answer": "Your timeline depends on the gap between your current savings and your target, along with your monthly deposit. In the worked example, closing a $15,000 gap with deposits of $400 a month takes 38 months. Increasing that deposit to $1,250 a month reaches the target in 12 months."
+  },
+  {
+   "question": "Where should I keep my emergency fund?",
+   "answer": "Most people look for an account that is easy to reach quickly and does not lose value when financial markets drop. You can explore how fixed-rate options grow over time using the [CD calculator](/cd-calculator/)."
+  },
+  {
+   "question": "Should I pay off debt or build an emergency fund first?",
+   "answer": "Both orders are common approaches. Deciding between them depends on the interest rate on your debt and how stable your income is. Review the tradeoffs in our guide on [how to pay off debt](/guides/how-to-pay-off-debt/) before choosing which goal to fund first."
+  },
+  {
+   "question": "What is the difference between a sinking fund and an emergency fund?",
+   "answer": "An emergency fund covers unexpected disruptions, such as a sudden job loss or an urgent unplanned bill. A sinking fund sets aside money for a known future expense, like planned car maintenance or an annual insurance premium. See our breakdown of [sinking funds vs. emergency funds](/compare/sinking-fund-vs-emergency-fund/) to separate the two."
+  },
+  {
+   "question": "Should I include my minimum debt payments?",
+   "answer": "Yes, because minimum debt payments continue even after a job loss. In the worked example, minimum debt payments account for $250 of the $3,000 monthly essential costs. Leaving them out would leave your emergency target short of your actual ongoing obligations."
+  }
+ ],
+ "slug": "emergency-fund-calculator",
+ "h1": "",
+ "subtitle": "",
+ "sections": [],
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

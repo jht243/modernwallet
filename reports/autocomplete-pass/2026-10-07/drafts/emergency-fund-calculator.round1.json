@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Emergency Fund Calculator: Calculate Your Savings",
+  "metaDescription": "Free emergency fund calculator. Calculate your target emergency savings, see how much you still need, and find out how long it takes to reach your goal.",
+  "introText": "An emergency fund calculator calculates your total savings target based on your essential monthly bills, the cushion you choose, and your current balance. Enter your core monthly expenses, your existing savings, and your planned monthly contribution into the tool above to see your timeline.\n\nFor example, monthly essential costs of $3,000 across 6 months create an emergency fund target of $18,000. If you have $3,000 saved so far, your current savings cover 1.0 month of bills. That leaves $15,000 still to save. Adding $400 a month with no yield reaches that goal in 38 months, or 3 years 2 months. Reaching that same target in 12 months requires saving $1,250 a month.",
+  "howItWorks": "An emergency savings target starts with essential expenses rather than your take-home pay. Count only the obligations that continue if your income stops: housing, basic groceries, utilities, necessary insurance, required transportation, minimum debt obligations, and other non-negotiable living costs. Discretionary spending, dining out, and optional subscriptions stay out of the calculation. In the worked example, the $3,000 monthly total includes rent or mortgage of $1,500, food of $500, utilities of $250, insurance of $200, minimum debt payments of $250, transportation of $200, and other must-pay costs of $100. Our [budget calculator](/budget/) helps organize your spending if you want to isolate these baseline numbers first.\n\nThe calculator multiplies your monthly essential expenses by the number of months you choose to establish your total target. With $3,000 in monthly bills and a 6-month target, your total goal is $18,000. The tool then subtracts your current balance to show your remaining savings gap and your current safety net. If you have $3,000 set aside today, you have covered 1.0 month of living expenses, leaving $15,000 left to save.\n\nYour monthly deposit determines your timeline to complete the cushion. Depositing $400 each month toward the $15,000 balance reaches your goal in 38 months, which is 3 years 2 months. To help you evaluate faster options, the tool also calculates the contribution needed to finish within one year. Clearing that same $15,000 gap within 12 months requires a deposit of $1,250 a month.\n\nAdding an annual percentage yield shortens the total payoff time slightly. When your savings earn interest, that yield compounds monthly on your rising principal, reducing the net cash you must deposit from your paycheck. The calculator lets you test any yield percentage to see how interest offsets your required timeline.\n\nAll estimates in the calculator rely on steady monthly costs, a fixed monthly deposit, and monthly compounding on any entered yield. The tool assumes no changes in inflation, rent, or basic bills over the savings period. The 6-month setting in the tool serves as a starting point rather than a fixed recommendation. For details on how household needs and job stability shape that cushion, read our guide on [how much emergency fund](/guides/how-much-emergency-fund/) to keep.",
+  "faqs": [
+    {
+      "question": "How much emergency fund do I need?",
+      "answer": "Your target depends on your essential living expenses and the number of months of costs you decide to cover. In our worked example, covering 6 months of $3,000 in monthly essentials produces an $18,000 target. Review our guide on [how much emergency fund](/guides/how-much-emergency-fund/) to choose a target that matches your household."
+    },
+    {
+      "question": "What counts as an essential expense?",
+      "answer": "Essential expenses include only the bills that must be paid during a period of unemployment or emergency. Common examples are rent or mortgage, groceries, basic utilities, insurance, transportation, and minimum debt payments. Discretionary purchases and entertainment are left out of the target."
+    },
+    {
+      "question": "Should the target be based on income or expenses?",
+      "answer": "A target should be based on your essential expenses rather than your take-home pay. Income often covers discretionary spending, retirement contributions, and luxury purchases that stop during a financial crisis. Basing your cushion on core bills ensures your target reflects what you actually need to survive."
+    },
+    {
+      "question": "How long does it take to build an emergency fund?",
+      "answer": "The time required depends on your remaining savings gap, your monthly contribution, and any yield you earn. For example, saving $400 a month toward a $15,000 gap takes 38 months with no yield. Increasing that deposit to $1,250 a month reaches the goal in 12 months."
+    },
+    {
+      "question": "Where should I keep my emergency fund?",
+      "answer": "Most savers look for an account that is easy to access quickly and does not lose value when financial markets drop. Cash reserves should stay protected from volatility rather than invested in fluctuating assets. You can use our [CD calculator](/cd-calculator/) to model returns on fixed-term deposits alongside standard liquid accounts."
+    },
+    {
+      "question": "Should I pay off debt or build an emergency fund first?",
+      "answer": "People take different approaches depending on their interest rates, income stability, and comfort with risk. Some savers establish a basic cash reserve before tackling high-cost loans, while others clear expensive balances first to lower their monthly overhead. Explore our guide on [how to pay off debt](/guides/how-to-pay-off-debt/) to weigh both approaches."
+    },
+    {
+      "question": "What is the difference between a sinking fund and an emergency fund?",
+      "answer": "An emergency fund protects against unexpected hardships like job losses or major medical events. A sinking fund sets aside money for planned, specific future costs like car maintenance or property taxes. Compare the two strategies in our guide on [sinking fund vs. emergency fund](/compare/sinking-fund-vs-emergency-fund/)."
+    },
+    {
+      "question": "Should I include my minimum debt payments?",
+      "answer": "Yes, required debt payments belong in your baseline essentials because lenders still expect them each month. Missing these payments during a crisis triggers late fees and damages your credit record. Count every minimum payment due on credit cards, auto loans, or student loans in your monthly total."
+    }
+  ],
+  "slug": "emergency-fund-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
