@@ -3526,7 +3526,8 @@ export const GUIDES: Guide[] = [
       {
         question: "Can I use leftover 529 money for student loans?",
         answer: "Yes. You can use up to $10,000 lifetime of 529 funds to repay the beneficiary's student loans, plus up to $10,000 for each of their siblings. This is a one-time-per-person lifetime cap, separate from the account's other uses."
-      }
+      },
+      { question: "Can I use leftover 529 money to buy a house?", answer: "A house purchase or down payment is not a qualified 529 expense, so using the money directly for real estate counts as a non-qualified withdrawal. When you take money out for a non-qualified expense, your original contributions come back tax-free and penalty-free, while only the earnings portion faces ordinary income tax plus a 10% federal penalty. Every distribution is split pro-rata between contributions and earnings, and the penalty is waived up to the amount of any scholarship the beneficiary received. To protect the tax break, you can roll up to $35,000 of leftover money into the beneficiary's Roth IRA over time, provided the 529 plan is at least 15 years old and the beneficiary has earned income." },
     ],
     sources: [
       { label: "IRS Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
@@ -7705,6 +7706,7 @@ export const GUIDES: Guide[] = [
       { question: "Can you lose money in a money market account?", answer: "No, a bank money market account is FDIC insured up to $250,000 per depositor, per institution, so your principal is protected even if the bank fails. The only ways to effectively lose ground are fees exceeding your interest, or inflation outpacing your rate over time — neither is a loss of principal." },
       { question: "Should I put my emergency fund in a money market account?", answer: "Yes, a money market account is a standard, appropriate home for an emergency fund (typically 3-6 months of expenses), because it combines FDIC insurance, liquidity, and an above-average yield. Choose a competitive account rather than your primary bank's default rate — see our best money market accounts roundup for current top picks." },
       { question: "Is it worth moving my savings to a money market account for a slightly higher rate?", answer: "It depends on the gap and the hassle. A meaningful rate difference (a full percentage point or more) on a large balance can be worth an afternoon of paperwork to switch. A tiny difference on a small balance may not be worth the effort. Compare your current rate against current top accounts before deciding." },
+      { question: "Is a money market account the same as a money market fund?", answer: "No. A money market account is a bank deposit account protected by FDIC insurance up to $250,000 per depositor, per institution. A money market fund is an investment product, specifically a mutual fund bought through a brokerage, that does not carry FDIC insurance and can lose value even though it aims to maintain a stable price. While the two options share similar names, their underlying protections are entirely different. Always confirm whether an institution is offering a deposit account or an investment fund before you compare yields." },
     ],
     sources: [
       { label: "FDIC — Deposit Insurance Coverage", url: "https://www.fdic.gov/resources/deposit-insurance/financial-products-insured/index.html" },

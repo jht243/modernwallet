@@ -1,0 +1,114 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-07",
+  "window_start": "2026-10-07",
+  "window_end": "2026-10-07",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/compare/ai-investing-vs-robo-advisors",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 2,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/cybercab-vs-waymo",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/compare/voo-vs-spy",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/529-leftover-money-options/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/how-to-invest-100k-to-1-million",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-60-40-portfolio-dead",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-a-money-market-account-worth-it",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    },
+    {
+      "page": "/guides/robinhood-24-hour-trading",
+      "views": 1,
+      "sessions": 1,
+      "active_users": 1,
+      "clicks": 1
+    }
+  ],
+  "top10_pages_total_views": 12,
+  "top10_pages_total_clicks": 12,
+  "channel_split": {
+    "/compare/ai-investing-vs-robo-advisors": {
+      "Direct": 2
+    },
+    "/compare/cybercab-vs-waymo": {
+      "Direct": 1
+    },
+    "/compare/voo-vs-spy": {
+      "Direct": 1
+    },
+    "/guides/529-leftover-money-options/": {
+      "Cross-network": 1
+    },
+    "/guides/how-to-invest-100k-to-1-million": {
+      "Direct": 1
+    },
+    "/guides/is-60-40-portfolio-dead": {
+      "Direct": 1
+    },
+    "/guides/is-a-money-market-account-worth-it": {
+      "Cross-network": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 1
+    },
+    "/guides/robinhood-24-hour-trading": {
+      "Direct": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 1
+    }
+  }
+}

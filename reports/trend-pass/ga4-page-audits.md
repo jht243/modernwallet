@@ -243,3 +243,11 @@
 | /guides/how-to-withdraw-from-401k/ | 2026-10-05 | 1 | 0/0/1/0/0 | 0 |
 | /guides/how-to-buy-treasury-bills/ | 2026-10-06 | 1 | 0/0/1/0/0 | 0 |
 | /guides/how-to-invest-200k | 2026-10-06 | 1 | 0/0/1/0/0 | 0 |
+| /compare/ai-investing-vs-robo-advisors | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /compare/cybercab-vs-waymo | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /compare/voo-vs-spy | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /guides/529-leftover-money-options/ | 2026-10-07 | 1-2 | 0/0/1/0/0 | 0 |
+| /guides/is-60-40-portfolio-dead | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /guides/is-a-money-market-account-worth-it | 2026-10-07 | 1-2 | 0/0/1/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
