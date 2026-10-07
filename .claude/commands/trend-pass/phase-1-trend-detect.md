@@ -2,7 +2,9 @@
 
 Work from the Phase 0 pull JSON only.
 
-> **⚠️ Two-lane model — READ FIRST.** This phase decides ONLY the trend lane; it no longer ends the run. Every outcome below that says "exit 0 / ALL WORK STOPS" now means only **"the trend lane produces no candidates this run"** — control **always** continues to **Phase 1b (coverage lane)**, which runs every run regardless. The run only fully early-exits when BOTH lanes come up empty (decided downstream, not here). Never `exit 0` from this phase; "stop" means *stop the trend lane and go to Phase 1b*, carrying the digest note forward.
+> **Research only (2026-10-06 port of the layer3 2026-10-05 redesign).** Lane A never builds or writes pages and calls no external API. Its output is a verdict + findings for the research pack (Phase 4); the mindmap engine (Phase 4c) is the only builder.
+
+> **⚠️ Two-lane model — READ FIRST.** This phase decides ONLY the trend lane; it no longer ends the run. Every outcome below that says "exit 0 / ALL WORK STOPS" now means only **"the trend lane produces no candidates this run"** — control **always** continues to **Phase 1b (coverage lane)**, which runs every run regardless. Whether anything ships is decided downstream by mindmap (Phase 4c), not here. Never `exit 0` from this phase; "stop" means *stop the trend lane and go to Phase 1b*, carrying the digest note forward.
 
 ## 1. Filter query noise
 Drop any query starting with `-` or containing `-site:` (audit-crawler operator strings, not human demand). Collapse obvious near-identical 0-click impression-spam variants to one representative. Pages are never noise.
@@ -18,7 +20,7 @@ A theme qualifies when **≥3 of the surviving top-10 queries share it** (same e
 
 ## 4. Trend ledger check (BEFORE any mining)
 Read `reports/trend-pass/trends.md`. Match semantically against the MINED rows (trends whose content already exists) and the EVERGREEN rows (steady site demand).
-- **MATCH → the TREND lane stops.** No trend mining, no trend building, no queue, no backlog for the trend. Record the verdict ("Trend already caught on <date>: <theme> — no trend work this run") for the digest, then **go to Phase 1b** (the coverage lane still runs). Do NOT exit the run.
+- **MATCH → the TREND lane stops.** No trend gap research, no trend findings, no queue, no backlog for the trend. Record the verdict ("Trend already caught on <date>: <theme> — no trend work this run") for the digest, then **go to Phase 1b** (the coverage lane still runs). Do NOT exit the run.
 - **Ownership by another engine is NOT a match/stop** — there is no RADAR-OWNED class; if the theme isn't a MINED/EVERGREEN row, it's a NO MATCH even if some other engine also covers that surface.
 - **NO MATCH** → step 5.
 

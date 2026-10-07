@@ -1,5 +1,5 @@
 ---
-description: AUTONOMOUS WEEKLY content engine with TWO lanes. Pulls the top-10 GSC queries + top-10 pages (7 days) plus the top-20 queries. Lane A (trend) detects a shared theme top-down and, only for a ledger-NEW trend, mines missing content around it (autocomplete + SEMrush). Lane B (coverage) runs EVERY run and finds top-20 queries with no dedicated page. Both lanes dedup (ownership is never a skip reason), are capped at 5 additive pages PER LANE (up to 10), auto-publish via the repo's own content approach, and email a Resend digest. NO human gates. Designed for scheduled cloud runs.
+description: AUTONOMOUS content engine on a 7-day GSC window. Pulls the top-10 GSC queries + top-10 pages (7 days) plus the top-20 queries. Two RESEARCH lanes use no external API — Lane A (trend) detects a shared theme and, only for a ledger-NEW trend, maps its gaps; Lane B (query check) finds top-20 queries with no dedicated page. Their findings plus the top-10 queries become the brief for Lane C, the mindmap engine — the ONLY builder (cap 25 pages per run total), which validates, dedups, writes, audits and auto-publishes under the site's finance/YMYL guardrails. Emails a Resend digest. NO human gates. Designed for scheduled cloud runs.
 argument-hint: "(no arguments — fully autonomous)"
 ---
 
@@ -13,67 +13,137 @@ argument-hint: "(no arguments — fully autonomous)"
 > with no `.meta.json` for it has violated this rule. One-sentence edits (titles, descriptions,
 > link sentences, corrections) are the only in-context text.
 
-# /trend-pass-auto — WEEKLY top-down trend detection → capped auto-publish (portable)
+# /trend-pass-auto — WEEKLY-window top-down trend detection → capped auto-publish (portable)
 
 > **‼️ RUN-WIDE RULE.** Fully autonomous, NO human checkpoint anywhere. Never ask a question at any phase boundary. On any hard blocker, still finish by sending an email report and exiting 0.
 
-**The two questions this engine asks:** (1) *Trend lane* — "What did the last 7 days' winning pages have in common, and what good page is missing from that theme?" (fires only on a genuinely NEW trend); (2) *Coverage lane* — "Are any of our top-20 queries missing a dedicated page?" (runs EVERY run, trend or not). Portable weekly sibling of the Layer3 nightly engine; it auto-discovers this repo's structure rather than hardcoding one.
+**‼️ Writer output is never final without its audit.** Nothing a phase writes may be published or committed as final until mindmap's adversarial audit has run on that exact output and passed. A rewrite voids any prior pass and re-triggers the audit.
+
+**The three lanes** (redesign ported from layer3 2026-10-06 — research lanes feed one builder):
+1. **Lane A, trend (research only)** — *"What did the last 7 days' winning pages have in common, and what is missing from that theme?"* (maps gaps only for a genuinely NEW trend).
+2. **Lane B, query check (research only, EVERY run)** — *"Are any of our top-20 queries missing a dedicated page?"*
+3. **Lane C, mindmap (the ONLY builder, EVERY run)** — gets the top-10 queries plus Lanes A/B's findings as its brief, and decides what to build.
+
+This is a thin orchestrator. Phase instructions live at `.claude/commands/trend-pass/phase-*.md` — read each file when you reach that phase. Do not paraphrase from memory.
 
 ## Hard pre-flight (FIRST) — any failure → email failure, exit 0, no commit
-1. **Working tree clean** for your files (`git status --porcelain`); if the tree has unrelated dirty files from other crons, DO NOT touch them — stage only your own trend-pass files by pathspec.
+1. **Working tree clean** for your files (`git status --porcelain`); if the tree has unrelated dirty files from other crons, DO NOT touch them — stage only your own trend-pass/mindmap files by pathspec.
 2. **Branch committable** (cloud `claude/*` branch expected). "push" = `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (this deploys straight to `main` — intended, no approval needed).
 3. **GSC credentials** present (`$GOOGLE_REPORTING_SA_JSON` / SA file). Missing → email failure.
 4. **Ledgers exist** (`reports/trend-pass/trends.md` + `ledger.md`). Missing → email failure.
 5. **Resend secrets** best-effort: present → email; absent → do the work, print report, skip email only.
-6. **SEMrush key** best-effort (NOT a gate): `$SEMRUSH_API_KEY` (from `~/.claude/secrets.env`). Absent/dry → Phase 3 demotes a rung on the demand ladder (the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate) rather than skipping; autocomplete runs regardless. Note the rung in the digest (`Keyword data: ahrefs (SEMRUSH units exhausted)`). Never block the run on this. See `.claude/commands/_keyword-demand-ladder.md`.
+6. **Keyword data** best-effort (NOT a gate). Only mindmap's BUILD-BRIEF (Phase 4c) touches keyword providers, through the demand ladder (`.claude/commands/_keyword-demand-ladder.md`); a dry/missing key demotes a rung rather than blocking. Lanes A/B never call one. Note the rung that ran in the digest (`Keyword data: ahrefs (SEMRUSH units exhausted)`).
 
-## Site facts (discover in this repo)
-- BASE_URL / GSC property: use the `--base-url` given in the trigger; property is `sc-domain:<host>`.
-- **Auto-build surface (discover):** find how THIS repo adds a page — an additive data file (e.g. `data/*.ts`, a Python data tuple, a content/markdown dir) or a bundled generator. Prefer the additive data/markdown surface. Content is written via `.claude/commands/seo-gsc-pass/phase-3-new-content.md` (verbatim) + audited via `phase-4-audit.md`. If no clean additive surface exists, build via the repo's existing seo-gsc-pass / comparison-content approach. NEVER rewrite an existing page.
+## Site facts (this repo)
+- BASE_URL / GSC property: use the `--base-url` given in the trigger (`https://www.themodernwallet.com`); property is `sc-domain:themodernwallet.com`.
+- **Site:** The Modern Wallet — a personal-finance site (Astro) of free calculators + plain-language money guides. **Finance is YMYL.**
+- **Content store:** pages are objects in the `src/data/*.ts` registries (`calculators.ts`, `spokes-*.ts`, `guides*.ts`, `comparisons*.ts`, `roundups*.ts`, hub files); calculator engines live in `src/lib/*`. The content system is `CONTENT.md` (engine ground-truth numbers, primary sources). Mindmap (Phase 4c) is the only thing that writes to them. NEVER rewrite an existing page.
 
 ## Execution — phases in order
 | Phase | File | Purpose |
 |---|---|---|
-| 0 | `trend-pass/phase-0-pull.md` | Top-10 queries + top-10 pages + top-20 queries, **7 days** |
-| 1 | `trend-pass/phase-1-trend-detect.md` | **Trend lane:** classify → clear-trend rule → trend-ledger match |
-| 1b | `trend-pass/phase-1b-coverage.md` | **Coverage lane (EVERY run):** find top-20 queries with no dedicated page |
-| 2 | `trend-pass/phase-2-matrix.md` | Entity × angle coverage gaps via the breadth framework (NEW trends only) |
-| 3 | `trend-pass/phase-3-autocomplete.md` | Autocomplete **+ SEMrush** expansion (seeds = trend entities ∪ uncovered coverage queries) |
-| 4 | `trend-pass/phase-4-dedup.md` | Content-existence dedup + winner protection, both lanes (ownership is NEVER a skip reason) |
-| 5 | `trend-pass/phase-5-execute-publish.md` | Build ≤5 additive pages PER LANE (up to 10) → audit → ledgers → push → 200s → IndexNow |
+| 0 | `trend-pass/phase-0-pull.md` | Top-10 queries + top-10 pages + top-20 queries, **7 days** (the ONLY external data call before mindmap) |
+| 1 | `trend-pass/phase-1-trend-detect.md` | **Lane A (research):** classify → clear-trend rule → trend-ledger match → refutation subagent |
+| 1b | `trend-pass/phase-1b-coverage.md` | **Lane B (research, EVERY run):** which top-20 queries have no dedicated page |
+| 2 | `trend-pass/phase-2-matrix.md` | **Lane A (research):** entity × angle gap matrix (ledger-NEW trends only) |
+| 4 | `trend-pass/phase-4-dedup.md` | Local pre-filter (slug inventory + git + ledger) → assemble the **research pack** |
+| 4c | `trend-pass/phase-4c-mindmap.md` | **Lane C (the ONLY builder):** top-10 queries + research pack → mindmap brief → chart → build ≤25 pages + enrichments → audit, under binding finance/YMYL guardrails |
+| 5 | `trend-pass/phase-5-execute-publish.md` | Build check → ledgers → ONE commit → push → 200s → IndexNow → digest |
 
-**Two-lane control flow.** Phase 1 decides ONLY the trend lane; Phase 1b (coverage) runs **every run regardless**. Phase 1's old "exit / ALL WORK STOPS" outcomes now mean only "the trend lane contributes no candidates" — the run always continues to Phase 1b:
-- Phase 1 finds **no clear trend** → trend lane empty; **still run Phase 1b**, then Phases 3–5 on whatever coverage found.
-- Phase 1 finds a trend that **matches a `trends.md` row** → trend lane stops (no trend mining/building, no backlog); **still run Phase 1b**. An already-caught trend ships zero *trend* pages — coverage may still ship.
-- Phase 1 finds a **ledger-NEW trend** → trend lane runs Phases 2–5 **and** Phase 1b also runs; candidates merge at Phase 4.
+**Research → build model.** Lanes A and B **research only — they never write, build, or publish anything, and they use NO external API or data source** (no Autocomplete, no SEMrush/Ahrefs/DataForSEO, no SERP reads, no new GSC calls). They work only from the Phase 0 pull, local repo files, and the two ledgers, and they answer two questions: *is there a new trend?* and *is something missing?* Their findings go into one **research pack** (Phase 4). **Lane C — the mindmap engine — is the only builder.** It receives the top-10 queries plus the research pack as its brief, does all keyword/SERP validation, dedup, winner protection, writing and auditing, and decides what ships. Mindmap may drop or reshape any A/B finding.
 
-**The ONLY full early-exit (SUCCESS, `--status no-changes`, exit 0):** BOTH lanes produce zero build candidates after dedup — no new trend AND every top-20 query already covered/winner-protected. A run that ships even one coverage page is `--status success`.
+**Control flow.** Every phase runs every run except Phase 2 (only on a ledger-NEW trend):
+- Phase 1 finds **no clear trend** or a trend that **matches `trends.md`** → Lane A contributes only its verdict to the pack (no trend findings). Never exit here.
+- Phase 1 finds a **ledger-NEW trend** → Phase 2 maps its gaps into the pack.
+- Phase 1b always runs and adds its uncovered queries (may be none).
+- Phase 4c always runs — even with an empty research pack it still has the top-10 queries.
 
-## Breadth framework (BOTH lanes — capture all the angles, don't ship a sliver)
-Whenever a trend or an uncovered query centers on a discrete entity (product, brand, service, tool, compound…), expand it into the full angle cluster — deep-dive, comparison, alternatives, pricing, is-it-worth-it, how-to-use, safety, evidence, roundup — not a single narrow page. One winning query means the whole topic has demand. Framework + entity-type presets + the HARD fit gate: [`.claude/commands/trend-pass/_breadth-framework.md`](trend-pass/_breadth-framework.md); Phase 2 (trend) and Phase 1b (coverage) both apply it. **The fit gate is load-bearing: only build an angle that genuinely fits AND has enough groundable information — never fabricate a fact to complete a cluster, never force an angle that doesn't fit. A relevant omission beats a forced page.** Clusters obey the per-lane cap; on the coverage lane a large cluster completes over several runs.
+**The ONLY full early-exit (SUCCESS, `--status no-changes`, exit 0):** mindmap ships zero pages and zero enrichments. Email the digest and exit 0. A run that ships even one page or enrichment is `--status success`.
 
-## Hard guardrails
+## Breadth framework (Lanes A + B — suggest all the angles)
+Whenever a trend or an uncovered query centers on a discrete entity (product, brand, service, tool, account type…), suggest the full angle cluster — deep-dive, comparison, alternatives, pricing, is-it-worth-it, how-to-use, safety, evidence, roundup — not a single narrow page. Framework + entity-type presets + the HARD fit gate: [`.claude/commands/trend-pass/_breadth-framework.md`](trend-pass/_breadth-framework.md); Phase 2 and Phase 1b apply it by reasoning only (no keyword lookups). These are suggestions in the pack; mindmap validates and decides. **Never fabricate a fact to complete a cluster — a relevant omission beats a forced page.**
+
+## Hard guardrails (no phase may override)
 1. **Additive only** — never rewrite/regenerate an existing page.
-2. **"Owned by another engine" is NEVER a stop/drop reason.** Build any good, non-existent opportunity; overlap is resolved solely by content-existence dedup (mutual — whoever writes it first wins).
-3. **Cap: 5 new pages/run PER LANE (not 5 total) — up to 10/run.** Each lane caps its own survivors independently; neither eats the other's budget. Trend-lane overflow is flagged + dropped (no backlog); coverage-lane overflow is flagged but left un-ledgered so it re-competes next run.
-4. **Winner protection (BOTH lanes)** — a candidate overlapping a top-10 page's clicking queries is flagged, never auto-built.
-5. **YMYL caution** — for finance/legal/health/medical claims, ground facts in the repo's own sourced content; never invent figures, statutes, doses, or advice. If facts can't be grounded, flag instead of building.
-6. **Digest email passes the site voice standard** like every Resend report.
+2. **No metadata rows** — mindmap phase-2 never runs inside this pass.
+3. **No consolidation/redirects** — ever. (Mindmap's cannibalization phase is advisory-only and may run; it writes no edits.)
+4. **"Owned by another engine" is NEVER a stop/drop reason.** Overlap is resolved solely by content-existence dedup (mutual — whoever writes it first wins).
+5. **Winner protection lives in mindmap** — this pass adds no separate winner-protection filter.
+6. **Cap: 25 new pages per run TOTAL**, across everything mindmap builds. Body enrichments don't count. Overflow is flagged "over cap — not built" and left un-ledgered so it re-competes next run.
+7. **No external data in Lanes A/B** — only the Phase 0 GSC pull, local files and the ledgers.
+8. **YMYL caution (binding in Phase 4c)** — every figure comes from the site's `src/lib/*` engine or a primary source (CFPB, Fed/FRED, IRS, FTC, SEC, BLS); never invent figures, rates, limits, statutes or advice. If a fact can't be grounded, drop the row instead of building.
+9. **Digest email passes the site voice standard** like every Resend report.
 
-## Email digest (ALWAYS sent) — write `/tmp/trend-pass-auto-<YYYY-MM-DD>.md` with EXACT headings, split into two top-level sections that mirror the two lanes (each heading present, "None this run" if empty; nothing pooled across lanes):
-**`# Trends` (Lane A):** `## Trend verdict` · `## Trend pages shipped (N)` (title → live URL) · `## Trend — flagged for the human (N)` (winner-protection / over-cap-dropped / non-groundable).
-**`# Query check` (Lane B — the top-20 uncovered-query check):** `## Coverage verdict (top-20 queries)` (covered / winner-protected / uncovered counts + the uncovered queries built) · `## Query-check pages shipped (N)` (title → live URL, coverage query "<query>") · `## Query-check — flagged for the human (N)` (winner-protection / over-cap-not-ledgered).
-**`# Run details` (shared):** `## SEMrush expansion` (status + keyword count, or "skipped — no key") · `## Ledger deltas` · `## Audit` · `## IndexNow` · `## Blocker`.
+## Email digest (ALWAYS sent) — write `/tmp/trend-pass-auto-<YYYY-MM-DD>.md` with these EXACT headings (include every heading even if empty — write "None this run")
+Three top-level sections — `# Trends` (Lane A's verdict + what mindmap built from it), `# Query check` (Lane B's findings + what mindmap built from them) and `# Mindmap` (the brief, plus pages built from the top-10 queries directly) — then `# Run details`. Every shipped page/enrichment is listed ONCE, under the section of the finding it came from (`source: trend` / `coverage` / `top-10`).
 
-**Email SUBJECT is fixed for this routine.** It is always `Trend (yes|no) / Query (yes|no)` and nothing else — pass it verbatim as `--headline`, substituting each lane's own verdict: `yes` = that lane shipped at least one page this run, `no` = it shipped none. The `--summary` stays the longer one-liner (it becomes the inbox preview).
+```markdown
+# Trends
+## Trend verdict
+<one of: "NEW TREND: <theme statement>" / "Trend already caught on <date>: <theme>" / "No clear trend" — plus the query/page evidence counts that triggered or failed the bar>
+
+## Trend findings sent to mindmap (N)
+- <suggested slug/angle> — <gap cell>
+
+## Built from trend findings (N)
+- **<Title>** → <live URL>
+
+# Query check
+## Coverage verdict (top-20 queries)
+<counts: covered / uncovered — and the list of UNCOVERED queries sent to mindmap, or "All top-20 queries already covered">
+
+## Built from query-check findings (N)
+- **<Title>** → <live URL> (query "<query>")
+
+# Mindmap
+## Brief
+<the 10 queries sent with clicks, the count of A/B findings attached, and the chart path reports/mindmap-pass/<date>-trend-lane-c.md>
+
+## Built from top-10 queries (N)
+- **<Title>** → <live URL> (query "<query>")
+
+## Body enrichments (N)
+- **<route>** — <section added> (source: trend / coverage / top-10)
+
+## Flagged specs, not built (N)
+- <slug> — <calculator/tool/quiz/template spec path>
+
+## Over cap, not built (N)
+- <slug> — over the 25-page per-run cap. NOT ledgered — re-competes next run.
+
+## Dropped by mindmap (N)
+- <slug> — <source> — <reason: exists / ledger / winner protection / weak demand / SERP locked / metadata or redirect row / non-article format / non-groundable YMYL fact / failed audit>
+
+## Cannibalization advisory
+<pairs mindmap's advisory phase flagged, or "None this run">
+
+# Run details
+## Ledger deltas
+trends.md: <new trend row added, or "None — already-caught / no-trend run">
+ledger.md: <KEPT/DROPPED rows appended, or "None this run">
+
+## Keyword data
+<the demand-ladder rung mindmap's BUILD-BRIEF used, e.g. "ahrefs (SEMRUSH units exhausted)">
+
+## Audit
+<mindmap audit result: X/Y passed; reverts and why>
+
+## IndexNow
+<URLs submitted + HTTP status, or "skipped — <reason>">
+
+## Blocker (only if the run stopped early)
+<what stopped it and the exact reason; omit on success>
+```
+
+**Email SUBJECT is fixed for this routine.** It is always `Trend (yes|no) / Query (yes|no) / Mindmap (yes|no)` and nothing else — pass it verbatim as `--headline`: `Trend yes` = at least one page shipped from a trend finding; `Query yes` = at least one page shipped from a query-check finding; `Mindmap yes` = at least one page shipped from the top-10 queries directly. The `--summary` stays the longer one-liner (it becomes the inbox preview) and leads with all three.
 
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 .claude/scripts/send-routine-email.py --status <success|failure|no-changes> \
   --skill trend-pass-auto --site "<BASE_URL>" --repo "$REPO" --branch "$BRANCH" \
-  --headline "Trend (<yes|no>) / Query (<yes|no>)" \
-  --summary "Trend: <NO — no clear trend / YES — <theme>>. Query check: <NO — all top-20 already covered / YES — N page(s): <titles>>.<deploy/verify note if anything shipped>" \
+  --headline "Trend (<yes|no>) / Query (<yes|no>) / Mindmap (<yes|no>)" \
+  --summary "Trend: <NO — no clear trend / YES — <theme>>. Query check: <NO — all top-20 already covered / YES — N page(s): <titles>>. Mindmap: <NO — nothing built / YES — N page(s), M enrichment(s)>.<deploy/verify note if anything shipped>" \
   --details-file /tmp/trend-pass-auto-$(date +%Y-%m-%d).md \
   --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
 ```
@@ -81,14 +151,17 @@ No-changes/failure with nothing committed → `--commit-sha "" --commit-url ""`.
 
 ## What this skill MUST NOT do
 - Never ask a human anything.
-- Never do any *trend-lane* work on a trend that matches a `trends.md` row — stop the trend lane, no queue/backlog. (This does NOT stop the run — the coverage lane still runs.)
-- Never drop a candidate because another engine covers that surface (only existence + winner-protection).
-- Never rewrite an existing page, exceed **5 new pages per lane** (≤10 total: ≤5 trend + ≤5 coverage — capped separately, never pooled), or invent YMYL facts.
-- Never widen the *trend* input beyond the two top-10 lists (`coverage_queries[20]` feeds only the coverage lane, not trend detection).
-- Never hardcode the SEMrush key into a committed file — it comes from `$SEMRUSH_API_KEY` only. Never commit secrets/.env.
+- Never let Lane A or Lane B build, write, or publish anything, or call any external API/data source (Autocomplete, SEMrush, Ahrefs, DataForSEO, SERP reads, extra GSC calls). They research and hand off.
+- Never do trend-gap research on a trend that matches a `trends.md` row — Lane A reports the verdict only. (This does NOT stop the run — Lanes B and C still run.)
+- Never put a finding into the research pack whose slug/intent appears in `ledger.md` as KEPT or DROPPED.
+- Never exceed 25 new pages in one run, under any reasoning.
+- Never run mindmap's metadata phase (phase-2) or its own sitemap/summary/commit phases (7/8/9) inside this pass, and never consolidate, redirect, or rewrite existing pages.
+- Never invent YMYL facts — figures, rates, limits, statutes, or advice.
+- Never widen the *trend* input beyond the two top-10 lists (`coverage_queries[20]` feeds only Lane B).
+- Never hardcode an API key into a committed file. Never commit secrets/.env. Never commit `dist/`.
 
 ## Reference
-Breadth framework: `.claude/commands/trend-pass/_breadth-framework.md` · Pull: `scripts/trend_pass/gsc_pull_7d.py` (adds `coverage_queries[20]`) · Inventory: `scripts/trend_pass/slug_inventory.py` · Autocomplete: `scripts/trend_pass/mine_trend_autocomplete.py` · SEMrush expansion: `scripts/trend_pass/semrush_trend_expand.py` (best-effort, `$SEMRUSH_API_KEY`) · Ledgers: `reports/trend-pass/{trends,ledger}.md` · Content: `.claude/commands/seo-gsc-pass/phase-3-new-content.md` + `phase-4-audit.md` · Email: `.claude/scripts/send-routine-email.py`
+Breadth framework: `.claude/commands/trend-pass/_breadth-framework.md` · Pull: `scripts/trend_pass/gsc_pull_7d.py` (adds `coverage_queries[20]`) · Inventory: `scripts/trend_pass/slug_inventory.py` · Builder: `.claude/commands/mindmap-pass/` phases (via Phase 4c) · Ledgers: `reports/trend-pass/{trends,ledger}.md` · Content system: `CONTENT.md` + `.claude/commands/_content-standard.md` + `mindmap-pass/phase-4-audit.md` · Email: `.claude/scripts/send-routine-email.py`
 
 ## IndexNow Fallback Key (workflow-wide)
 On any IndexNow error (missing `public/<32-hex>.txt`, key not discoverable, 403/422), fall back to env `INDEXNOW_KEY` (default `dc557f6bfced447aa1a71771d8a0d24a`): create `public/<key>.txt` containing the key, commit+push before the POST, retry; if still failing, note the status in the digest and continue.

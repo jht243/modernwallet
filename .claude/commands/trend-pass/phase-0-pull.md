@@ -15,4 +15,4 @@ python3 scripts/trend_pass/gsc_pull_7d.py --base-url <BASE_URL> \
 - A low/zero-click week is NOT a failure — it's a valid "no clear trend" input; continue to Phase 1.
 
 ## Output
-The pull JSON (now with `top_queries[10]`, `coverage_queries[20]`, `top_pages[10]`) → Phase 1 (trend lane) **and** Phase 1b (coverage lane). Fetch nothing else from GSC this run.
+The pull JSON (now with `top_queries[10]`, `coverage_queries[20]`, `top_pages[10]`) → Phase 1 (trend lane) **and** Phase 1b (coverage lane). Fetch nothing else from GSC this run. This pull is the ONLY external data call Lanes A/B make — keyword/SERP data is fetched later, and only by mindmap (Phase 4c).

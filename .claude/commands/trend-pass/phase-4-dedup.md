@@ -1,23 +1,37 @@
-# Phase 4 — Dedup gate (automatic, adversarial)
+# Phase 4 — Local pre-filter + research pack
 
-Every candidate must clear ALL layers, regardless of lane. Candidates come from THIS run's two lanes: the **trend lane** (matrix + autocomplete + SEMrush on a genuinely-new trend, when one fired) and the **coverage lane** (uncovered top-20 queries from Phase 1b + their expansion). On a trendless run the pool is coverage-only — that is normal, not empty. There is no deferred/backlog queue feeding in. As the site's coverage fills in, output self-saturates toward zero (a candidate built last run is now in the slug inventory, so Layer 1 drops it) — a run where dedup kills everything is a SUCCESS, say so in the digest.
+Lanes A and B are research only (2026-10-06 port of the layer3 2026-10-05 redesign). This phase does NOT decide what gets built. It removes findings that obviously already exist, so mindmap doesn't waste work on them, and packages everything for the builder, mindmap (Phase 4c). **Local checks only — no external API, no keyword data, no SERP reads.** Winner protection, near-duplicate judgment, demand validation and the cap all belong to mindmap.
 
-> **‼️ The ONLY drop reasons are content-existence and winner-protection.** Drop a candidate if the page already EXISTS (slug inventory / git / candidate ledger / near-dup) or if it would cannibalize a top-10 page. **"Another engine covers this surface" is NEVER a drop reason** — if the page doesn't exist and it's a good opportunity, BUILD it; overlap is mutual and self-resolving via existence dedup.
+> **"Owned by another engine" is NEVER a removal reason.** The only removal reason here is that the page already exists (or was already judged in the ledger). Overlap with another engine is mutual and self-resolving via existence dedup.
 
-## Layer 1 — Slug inventory
-`python3 scripts/trend_pass/slug_inventory.py --base-url <BASE_URL> --check <slug>` per candidate. TAKEN → DROPPED.
+## 1. Pre-filter each finding (local, cheap)
+For every finding from Phase 2 (`source: trend`) and Phase 1b (`source: coverage`):
+- **Slug inventory:** `python3 scripts/trend_pass/slug_inventory.py --base-url <BASE_URL> --check <slug>` → exit 1 (TAKEN) → remove ("exists: <where>"). It matches the full path OR the last segment, so a bare segment like `interest-calculator` can collide with a route in another vertical — record which route it hit.
+- **Git history:** `git log -S "<slug>" --oneline` → hit → remove with the commit ref (a deliberately removed page must not silently return). A hit that is only a planning mention in a report (e.g. a `reports/keyword-pass/*.md` chart row that was never built) is NOT an existing page — keep the finding and note the ref.
+- **Candidate ledger:** `reports/trend-pass/ledger.md` has it as KEPT or DROPPED → remove (the old row stands).
 
-## Layer 2 — Git history
-`git log -S "<slug>" --oneline` per candidate (catches added-then-removed pages) + one `git log -20 --stat` topic scan. Hit → DROPPED with the ref.
+Removed findings are listed in the run report, not ledgered again.
 
-## Layer 3 — Candidate ledger
-`reports/trend-pass/ledger.md`: a DROPPED candidate is never re-litigated; a KEPT candidate is never re-emitted.
+## 2. Assemble the research pack
+Write `reports/trend-pass/<YYYY-MM-DD>.research.md`:
 
-## Layer 4 — Adversarial reviewer (subagent)
-A subagent that did NOT build the list re-verifies layers 1–3 and applies near-dup semantics (a candidate whose intent is already a page's dedicated job is a duplicate even under a different slug). Verdicts final.
+```markdown
+# Trend-pass research pack — <data_date> (7-day window <start>→<end>)
 
-## Winner protection
-Does the candidate's target query set overlap a top-10 page's clicking queries (Phase 0 pull)? Overlap → NEVER auto-built; move to the digest "Flagged for the human", append to `ledger.md` as DROPPED (`winner-protection`).
+## Trend (Lane A)
+Verdict: <NEW TREND: <theme> / Trend already caught on <date>: <theme> / No clear trend> — <evidence counts>
+### Trend gap findings
+- <suggested slug> — <entity × angle> — sibling evidence: <route, clicks> — proposed title: <title>
+
+## Query check (Lane B)
+Verdict: <N covered / M uncovered of top-20>
+- "<uncovered query>" (<clicks> clicks, <impr> impr) — entity: <entity> — suggested angles: <anchor, angle, angle…>
+
+## Pre-filtered out (already exists)
+- <slug> — <reason>
+```
+
+Every heading is always present; write `None this run` under an empty one.
 
 ## Output
-Survivors (by Phase 2 evidence rank) → Phase 5. Non-survivors recorded for the ledger append (DROPPED + reason).
+The research pack path → Phase 4c.

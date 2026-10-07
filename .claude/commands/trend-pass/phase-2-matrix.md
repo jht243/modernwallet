@@ -1,6 +1,6 @@
 # Phase 2 — Coverage-gap matrix (ledger-NEW trends only)
 
-Turn the confirmed trend into concrete missing-page candidates, mechanically.
+Turn the confirmed trend into concrete missing-page candidates, mechanically. **Research only, no external API** — local slug inventory + the Phase 0 pull. The output is a set of findings for mindmap (Phase 4c), which validates and builds.
 
 ## 1. Enumerate what exists
 ```bash
@@ -17,7 +17,7 @@ Apply the framework's entity-type presets and its **HARD fit gate** (`_breadth-f
 Every surviving cell whose slug is FREE is a candidate. Follow the site's existing slug conventions exactly (copy the shape from a built sibling; do not invent a new layout).
 
 ## 3. Evidence-rank candidates
-Rank by sibling evidence from the Phase 0 pull only (a candidate inherits the clicks of its nearest built sibling in the top-10). No-evidence cells rank last but stay in the list; the cap handles volume.
+Rank by sibling evidence from the Phase 0 pull only (a candidate inherits the clicks of its nearest built sibling in the top-10). No-evidence cells rank last but stay in the list; mindmap handles volume and the cap.
 
 ## Output
-Ranked candidate list (`slug · cell · sibling evidence · proposed title`) → Phase 3 → Phase 4.
+Ranked candidate list (`slug · cell · sibling evidence · proposed title`) → Phase 4 (tagged `source: trend`).
