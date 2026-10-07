@@ -103,6 +103,7 @@ GEMINI_PROJECT = os.environ.get("GEMINI_PROJECT", "")
 GEMINI_LOCATION = os.environ.get("GEMINI_LOCATION", "global")
 JSON_MODE = False   # set by complete(json_mode=True): ask the provider for a JSON object
 CMD = "complete"    # write | section | complete — recorded in the usage ledger
+SCOPE_ON = True     # writer_scope() on the system prompt; complete(writer_scope=False) for non-writer callers (auditors)
 
 # USD per 1M tokens (input, output). Thinking bills as output. Override per run with
 # CONTENT_RATE_IN / CONTENT_RATE_OUT. Gemini 3.8 Flash intro rate doubles 2027-01-01.
@@ -436,7 +437,133 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
 CALLERS = {"gemini": call_gemini, "openai": call_openai, "anthropic": call_anthropic}
 
 
+# ───────────────────────────── raw-HTML → markdown (writer output) ─────────────────────────────
+# Page prose renders through renderSectionContent/renderInline, which parse MARKDOWN and never
+# use dangerouslySetInnerHTML. An <a href> or <table> the model writes is therefore escaped by
+# React and the reader sees the markup — and the entity autolinker then linkifies company names
+# inside that visible tag soup. This shipped live on 5 pages (2026-09-22) before anything caught
+# it, so the writer's output is normalised here, for every routine and every repo on the fleet.
+#
+# Applied to the raw completion text, which is why both quote forms are handled: JSON mode emits
+# <a href=\"…\" > inside a string literal, markdown mode emits <a href="…">.
+_A_TAG = re.compile(r'<a\s[^>]*?href=(\\?["\'])(.*?)\1[^>]*?>(.*?)</a\s*>', re.I | re.S)
+_STRONG = re.compile(r'</?(?:strong|b)(?:\s[^>]*)?>', re.I)
+_EM = re.compile(r'</?(?:em|i)(?:\s[^>]*)?>', re.I)
+_BREAK = re.compile(r'<(?:br|hr)(?:\s[^>]*)?/?>', re.I)
+_OTHER_TAG = re.compile(r'</?(?:p|div|span|u)(?:\s[^>]*)?/?>', re.I)
+
+
+def _strip_tags(s: str) -> tuple[str, int]:
+    """Emphasis is preserved as markdown (renderInline parses ** and *); the rest is dropped."""
+    n = 0
+    s, k = _STRONG.subn("**", s); n += k
+    s, k = _EM.subn("*", s); n += k
+    s, k = _BREAK.subn(" ", s); n += k
+    s, k = _OTHER_TAG.subn("", s); n += k
+    return re.sub(r"[ \t]{2,}", " ", s), n
+
+
+def _md_url(u: str) -> str:
+    """INLINE_LINK in sectionContent.tsx matches [^)\\s]+, so a paren or space truncates the URL."""
+    return u.replace("(", "%28").replace(")", "%29").replace(" ", "%20")
+
+
+def dehtml_links(text: str) -> tuple[str, int]:
+    """Rewrite raw anchors as markdown links and drop inline formatting tags.
+
+    Returns (text, count). Tables are NOT rewritten here — a GFM table has to become one
+    pipe-row per content[] element, which is a structural change this text-level pass cannot
+    make safely. They are reported by the caller and fail the build gate instead.
+    """
+    n = 0
+
+    def sub(m):
+        nonlocal n
+        url, label = m.group(2), m.group(3)
+        label = _strip_tags(label)[0].strip()
+        if not label or "]" in label or "[" in label:
+            return label                      # markdown-unsafe label -> plain text
+        n += 1
+        return f"[{label}]({_md_url(url)})"
+
+    out = _A_TAG.sub(sub, text)
+    out, k = _strip_tags(out)
+    return out, n + k
+
+
 LAST_SCOPE = {}   # what writer_scope dropped on the most recent generate() — read by cmd_write for meta
+
+
+# ───────────────────────────── truncation detection ─────────────────────────────
+# The provider's finish reason is NOT enough. Gemini returns finishReason="STOP" on
+# output that stops mid-sentence, so the MAX_TOKENS retry below never fired and the
+# clipped page went to the audit, which refused it. 15 of 45 pages were lost that way
+# on the Opus 5.5 launch (2026-09-22) — every core Tier 0 page and all 9 comparisons.
+# So we also LOOK at the text: unparseable JSON, or a prose field that just stops.
+
+# A prose string that ends without terminal punctuation is the tell. Headings, labels,
+# slugs and table rows legitimately end bare, so only long free-text is judged, and the
+# bar is deliberately high — a false positive costs one retry, a false negative costs
+# the page.
+# Terminal punctuation, including the non-Latin marks the fleet's localized pages use.
+_ENDS_CLEAN = re.compile(r'[.!?:;"\'\)\]}»”’…|\-。！？；：、؟।۔]\s*$')
+# A markdown table row, with or without the leading pipe — the generator emits both.
+_TABLE_ROW = re.compile(r'^\s*\|.*\|\s*$|(?:[^|\n]*\|){2,}')
+_PROSE_MIN = 60
+# WHITELIST, not a blacklist. Only fields that hold running prose are judged: a bullet,
+# a table cell, a heading or a label ends without a full stop by design. Measured against
+# all 2,438 published pages, a blacklist flagged 33% of them; this flags none.
+_PROSE_KEYS = {
+    "introtext", "content", "answer", "callout", "verdict", "summary",
+    "body", "intro", "excerpt", "whatsnew", "takeaway",
+    # NOT "description": relatedLinks[].description is a link blurb, deliberately clipped.
+}
+
+
+def _clipped_strings(node, out=None, where=""):
+    out = [] if out is None else out
+    if isinstance(node, dict):
+        for k, v in node.items():
+            _clipped_strings(v, out, f"{where}.{k}" if where else k)
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            _clipped_strings(v, out, f"{where}[{i}]")
+    elif isinstance(node, str):
+        s = node.strip()
+        key = re.sub(r"\[\d+\]", "", where).split(".")[-1].lower()
+        if key not in _PROSE_KEYS:
+            return out
+        if (len(s) >= _PROSE_MIN and len(s.split()) >= 10
+                and not _TABLE_ROW.match(s) and not _ENDS_CLEAN.search(s)
+                and not re.search(r'https?://\S+$', s)):
+            out.append((where or "(root)", s[-60:]))
+    return out
+
+
+def looks_truncated(text: str, json_mode: bool) -> str:
+    """Return a reason string when the output is clipped, else ""."""
+    t = (text or "").strip()
+    if not t:
+        return "empty"
+    if json_mode:
+        # JSON mode is the strong case: a response cut mid-string cannot parse.
+        try:
+            data = json.loads(t)
+        except Exception:  # noqa: BLE001
+            return "unparseable JSON (cut mid-structure)"
+        bad = _clipped_strings(data)
+        if bad:
+            where, tail = bad[0]
+            return f"{len(bad)} field(s) stop mid-sentence, e.g. {where}: ...{tail!r}"
+        return ""
+    # prose/markdown mode: judge the last substantive line
+    lines = [l for l in t.split("\n") if l.strip()]
+    last = lines[-1].strip() if lines else ""
+    if last.startswith("```") or _TABLE_ROW.match(last) or last.startswith("#") or last.startswith("|"):
+        return ""
+    if len(last) >= _PROSE_MIN and len(last.split()) >= 10 and not _ENDS_CLEAN.search(last):
+        return f"last line stops mid-sentence: ...{last[-60:]!r}"
+    return ""
 
 
 def generate(system: str, prompt: str) -> dict:
@@ -444,7 +571,11 @@ def generate(system: str, prompt: str) -> dict:
     global LAST_SCOPE
     # Every caller — write, section, complete() from crons, the client bridges — sends the
     # writer only what a writer can use. Files on disk are never touched.
-    system, LAST_SCOPE = writer_scope(system or "")
+    if SCOPE_ON:
+        system, LAST_SCOPE = writer_scope(system or "")
+    else:   # an AUDITOR call: its "Hard fails"/AUDITOR sections are the whole point — send them intact
+        system, LAST_SCOPE = system or "", {"dropped_sections": [], "html_comments_dropped": 0,
+                                            "tokens_dropped_est": 0, "tokens_sent_est": len(system or "") // 4}
     if LAST_SCOPE["dropped_sections"] or LAST_SCOPE["html_comments_dropped"]:
         log(f"writer scope: dropped ≈{LAST_SCOPE['tokens_dropped_est']:,} tokens from the system prompt "
             f"({', '.join(LAST_SCOPE['dropped_sections'])[:160]}); ≈{LAST_SCOPE['tokens_sent_est']:,} sent")
@@ -460,24 +591,40 @@ def generate(system: str, prompt: str) -> dict:
             errors.append(f"{model}: {type(e).__name__}: {str(e)[:200]}")
             log(f"{model} failed -> {errors[-1][:160]}")
             continue
-        if r["finish"] == "MAX_TOKENS":
+        # Truncated = the provider SAID so, or the text itself stops mid-sentence.
+        # The second half is the one that matters: Gemini reports STOP on clipped output.
+        why = "provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS" else looks_truncated(r["text"], JSON_MODE)
+        if why:
             # Cheapest rung first: the SAME model with double the cap, once, before falling back.
             cap = {"gemini": 65536, "openai": 128000, "anthropic": 64000}[provider_for(model)]
             retry_tokens = min(MAX_TOKENS * 2, cap)
-            log(f"{model}: truncated at MAX_TOKENS={MAX_TOKENS} — retrying once with {retry_tokens} (provider ceiling {cap})")
+            log(f"{model}: truncated ({why}) at MAX_TOKENS={MAX_TOKENS} — retrying once "
+                f"with {retry_tokens} (provider ceiling {cap})")
             record(r, kind="truncated-discarded", discarded=True,
-                   note=f"output thrown away; retried at {retry_tokens}")
+                   note=f"{why}; output thrown away; retried at {retry_tokens}")
             try:
                 r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, THINKING)
             except Exception as e:  # noqa: BLE001
                 errors.append(f"{model}: retry failed: {str(e)[:160]}"); continue
-            if r["finish"] == "MAX_TOKENS" or not r["text"].strip():
-                errors.append(f"{model}: still truncated at {retry_tokens}")
+            why2 = ("provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS"
+                    else looks_truncated(r["text"], JSON_MODE))
+            if why2:
+                # Still clipped at double the cap -> fall through to the next model in the
+                # chain rather than publishing half a page.
+                errors.append(f"{model}: still truncated at {retry_tokens} ({why2})")
                 continue
             r["retried_for_truncation"] = True
         if not r["text"].strip():
             errors.append(f"{model}: empty response (finish={r['finish']})")
             continue
+        # Normalise raw HTML the model wrote into prose before any caller sees it.
+        cleaned, n_html = dehtml_links(r["text"])
+        if n_html:
+            log(f"normalised {n_html} raw HTML tag(s) in writer output -> markdown")
+            r["text"] = cleaned
+        if re.search(r"<(table|thead|tbody|tr|t[hd])[ >]", r["text"], re.I):
+            log("WARNING: writer emitted a raw HTML <table>; it must become a GFM table "
+                "(one pipe-row per content[] element) or the build gate will reject it")
         r["fallback_used"] = i > 0
         r["fallback_reason"] = "; ".join(errors) if i > 0 else None
         # Always log a successful generation: a silent success is invisible in cron logs, and
@@ -492,7 +639,8 @@ def generate(system: str, prompt: str) -> dict:
 
 # ───────────────────────────── in-process API (for crons / radars) ─────────────────────────────
 def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = None,
-             thinking: str = None, fallback: str = None, json_mode: bool = False) -> str:
+             thinking: str = None, fallback: str = None, json_mode: bool = False,
+             writer_scope: bool = True) -> str:
     """One-call text completion for Python pipelines (the Render radar crons).
 
     Same chain as `write`: primary model then the fallback (logged to stderr), truncation retried
@@ -502,10 +650,11 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
         from lib.content_gen import complete           # after sys.path.insert(0, "scripts")
         text = complete(system_prompt, user_prompt)    # was: _llm(...) -> OpenAI directly
     """
-    global MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE
-    saved = (MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE)
+    global MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE, SCOPE_ON
+    saved = (MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE, SCOPE_ON)
     try:
         JSON_MODE = bool(json_mode)
+        SCOPE_ON = bool(writer_scope)
         if model: MODEL = model
         if fallback is not None: FALLBACK = fallback
         if max_tokens: MAX_TOKENS = int(max_tokens)
@@ -537,7 +686,7 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
                 log("complete(): returning non-JSON text after all attempts (caller must handle)")
         return text
     finally:
-        MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE = saved
+        MODEL, FALLBACK, MAX_TOKENS, THINKING, JSON_MODE, SCOPE_ON = saved
 
 
 # ───────────────────────────── verify stage ─────────────────────────────

@@ -68,10 +68,8 @@ Also refresh every surface derived from that date: JSON-LD `dateModified`, and t
 
 **Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
 
----
 
-**BAR 3 — NEVER assert our own neutrality or lack of financial interest (added 2026-08-21).** Do not write that Layer3 Labs "does not resell", "takes no referral fee", "takes no commission", "does not partner with", "is vendor-neutral", that a ranking "is independent", or any "note on objectivity". Phase 4 hard-fails any page carrying one.
+## Content standard — sequencing
+> **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
 
-Two reasons. First, it is often **false**: this repo auto-inserts `rel="sponsored"` affiliate links from the `ENTITY_LINKS` registry in `src/utils/sectionContent.tsx`, so any entity there with `sponsored: true` (Cursor, ElevenLabs, Murf, Apollo.io, Instantly.ai, Dext, Nutshell, Pinecone, Netlify, RunPod, Carepatron, Prezi, ZoomInfo, and more as it grows) pays us a referral fee on that very page. Second, it does not work even when true: a reader credits objectivity that is **shown**, not claimed.
-
-Demonstrate it instead. Name who should NOT pick the option you favour, state plainly what would change your verdict, and ground every judgment in what each vendor actually publishes. If a real affiliate relationship exists, the site's affiliate-disclosure mechanism handles it. Body prose never does, and must never claim the relationship does not exist.
+If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard; see PRECEDENCE at the top of the standard. Neutrality and paid-placement claims are governed by the standard's neutrality rules (Phase 4 hard-fails them).

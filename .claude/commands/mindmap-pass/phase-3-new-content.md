@@ -61,7 +61,11 @@ discovered for THIS repo:**
   (5) `_content-standard.local.md` if present; (6) `_content-standard.md` LAST, scoped to
   structure/SEO/depth — "follow its rules, do not copy its tone".
 - **`<slug>.prompt.md`, one per row, DATA ONLY** — route/slug/type/depth floor, keywords +
-  intent from the chart row, SERP evidence and real PAA questions as the FAQ spec, **the
+  intent from the chart row, **the chart's cols 10–12 copied verbatim — `reader question: "…"`, `answer: …` (with its
+  shape), `answer placement: section 1|2 "<heading>"` — decided in build-brief Step 4.6, never
+  re-derived here; the writer is told the answering section goes in that slot, before any
+  scope/definition material (`_content-standard.md` INTENT; Phase 4 fails `intent-answered-late`)**,
+  SERP evidence and real PAA questions as the FAQ spec, **the
   CLOSED FACT LIST** (with the "anything not on this list, you do not know" sentence and any
   leak warnings), **the CLOSED URL LIST**, the real internal routes it may link (siblings
   shipping in this run are fine), section-by-section coverage; for comparisons the two option

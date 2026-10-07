@@ -1,6 +1,6 @@
 # Phase BUILD-BRIEF — Generate the chart from a free-form input brief (SEMRUSH-validated)
 
-This is Step 1 of `/mindmap-pass`. It replaces seo-gsc-pass's "build chart from 5 GSC screenshots" step. Instead of reading GSC keyword screenshots, it reads **whatever the user handed you** — free text, an image, a chart/screenshot of data, a pasted news article, a URL, or a half-formed "here's a thought" — interprets it into concrete topics the user wants on the site, **validates and expands that intent through the keyword demand ladder (the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate)**, clusters the demand, and produces the **same machine-readable chart** the rest of the phases (0–9) consume unchanged.
+This is Step 1 of `/mindmap-pass`. It replaces seo-gsc-pass's "build chart from 5 GSC screenshots" step. Instead of reading GSC keyword screenshots, it reads **whatever the user handed you** — free text, an image, a chart/screenshot of data, a pasted news article, a URL, or a half-formed "here's a thought" — interprets it into concrete topics the user wants on the site, **validates and expands that intent through the keyword demand ladder (best available provider PER FIELD, plus Google Autocomplete on top of every call)**, reads the LIVE SERP for the surviving cluster heads, clusters the demand, and produces the **same machine-readable chart** the rest of the phases (0–9) consume unchanged.
 
 Run this phase **only when** Phase 0 cannot find a chart at `reports/mindmap-pass/<TODAY>.md`. If today's chart already exists, or the user passed a chart path argument, skip this phase and let Phase 0 load it.
 
@@ -20,9 +20,11 @@ Unlike `/seo-gsc-pass`, this workflow does **not** want GSC screenshots. Its inp
 Write a short **Interpreted brief** paragraph at the top of your working notes (and later into the saved chart's frontmatter/source line): 2–4 sentences restating, in your own words, what the user wants added — the topics, the audience, the angle, and the input modality it came from. This is what everything downstream is validated against; if your interpretation is wrong, the user catches it at the Phase 0 manifest gate.
 
 ## API key (read from environment — NEVER embed in this file or the saved chart)
-- **Keyword demand comes from the shared ladder, not a single API.** Call `scripts/lib/keyword_data.py` (`volumes()` / `expand()`), which walks the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate automatically. Read `.claude/commands/_keyword-demand-ladder.md` before this phase. Do NOT hand-roll a SEMRUSH call and do NOT hardcode a key — the helper reads `$SEMRUSH_API_KEY` / `$AHREFS_API_KEY` from the environment (`us` database by default; override with `SEMRUSH_DATABASE`).
-- **SEMRUSH is preferred, Ahrefs is the automatic backup.** The old "never use Ahrefs here" rule is retired: when SEMRUSH is dry (units zero / 401 / 403 / no key) the helper falls through to Ahrefs, and then to a public-source estimate, so this pass keeps running. (GSC performance data may still be consulted later, in the execution phases' metadata gates — that is a separate signal, not keyword discovery.)
-- **NEVER stop this pass because a key is missing or dry.** The helper demotes a rung and continues. If it lands on rung 3 (estimate), keep going and label every affected row `source: estimate (autocomplete) — NOT measured`, carrying the band rather than a point figure. Apply floors with `passes_floor()`, and state the rung that ran in the summary (`keyword_data.notes()`). Fabricating a volume number, or inventing a keyword phrase, remains forbidden at every rung.
+- **Keyword demand comes from the shared ladder, not a single API.** Call `scripts/lib/keyword_data.py` (`volumes()` / `expand()`), which picks the best usable provider for each field automatically (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo) and always adds live Google Autocomplete on top. Read `.claude/commands/_keyword-demand-ladder.md` before this phase. Do NOT hand-roll a SEMRUSH call and do NOT hardcode a key — the helper reads `$SEMRUSH_API_KEY` / `$AHREFS_API_KEY` from the environment (`us` database by default; override with `SEMRUSH_DATABASE`).
+- **Best provider per field, not one global winner.** Ahrefs leads on keyword difficulty and idea quality; DataForSEO leads on availability (pay-as-you-go, no monthly cliff) and is the ONLY source of live SERP data. The helper resolves each field independently and stamps `source` (volume provider) and `kd_source` on every row — report both in the summary, along with `keyword_data.notes()`.
+- **Do not over-read DataForSEO KD or volume.** Its KD is modeled, not link-graph calibrated; its volume comes from Google but is rounded into buckets with close variants merged. Trust cluster totals over single rows, and never drop a row on a DataForSEO KD alone.
+- **DataForSEO controls:** `DFS_ENABLED=0` removes it from every ladder; `DFS_MAX_COST_USD` (default `$2.00`) caps per-process spend, demoting the field rather than overspending. (GSC performance data may still be consulted later, in the execution phases' metadata gates — that is a separate signal, not keyword discovery.)
+- **NEVER stop this pass because a key is missing or dry.** The helper demotes a rung and continues. If a phrase has no provider volume, keep going and label that row `source: estimate (autocomplete) — NOT measured`, carrying the band rather than a point figure. Apply floors with `passes_floor()`, and state the rung that ran in the summary (`keyword_data.notes()`). Fabricating a volume number, or inventing a keyword phrase, remains forbidden at every rung.
 - If you must call SEMRUSH from a shell, prefix so the key never lands in shell history/logs (e.g. `SEMRUSH_API_KEY="$SEMRUSH_API_KEY" python scripts/semrush_ai_seo_research.py ...`).
 
 ## API budget discipline (SEMRUSH costs credits — use it moderately)
@@ -231,7 +233,20 @@ Phase 0 parsing as ambiguous; a row whose col 10 carries no evidence tag is trea
 Name the exact target (file/route) for the chosen lever. For `create new content`, the target is the proposed new route.
 
 ### For every `create new content` row — recommend the BEST FORMAT, not just an article
-Before defaulting to an article, evaluate the cluster's query signals against these formats (same list as seo-gsc-pass): **interactive tool / calculator** (calculator/estimate/cost/ROI/score signals), **quiz / assessment** (which/what-type/best-for-me signals), **template / downloadable** (template/example/checklist/worksheet signals), **comparison table / database** (vs/alternatives/list-of signals), **glossary / reference** (definitional lookups), **data-driven report / study** (benchmark/stat topics), or **article / guide** (the default only when nothing above fits). Add the `format` field with a one-line rationale grounded in the phrases; for tool/quiz/template rows, note in the solution column what the interactive element would DO.
+
+**Start from the answer SHAPE decided in Step 4.6 (col 11), not from the keywords.** The shape is
+what the reader needs to receive, so it constrains the format before any query signal is read:
+
+| Answer shape (col 11) | Formats it permits |
+|---|---|
+| **mechanism** (how) | `article` with a numbered build sequence, `template`, or `interactive tool` — never a bare explainer |
+| **list** (what should be on/included) | `template` / downloadable checklist, or `article` built as the list |
+| **pick** (which / best) | `comparison table/database`, or `quiz/assessment` when the pick depends on the reader's situation |
+| **figure** (how much / cost) | `calculator` when inputs change the number, else `comparison table/database` or `article` |
+| **verdict** (is it worth it) | `article` carrying the break-even, or `calculator` for the break-even itself |
+| **definition** (what is) | `article` / `glossary/reference` |
+
+Then use the query signals to choose WITHIN that row, and to break ties: (same list as seo-gsc-pass): **interactive tool / calculator** (calculator/estimate/cost/ROI/score signals), **quiz / assessment** (which/what-type/best-for-me signals), **template / downloadable** (template/example/checklist/worksheet signals), **comparison table / database** (vs/alternatives/list-of signals), **glossary / reference** (definitional lookups), **data-driven report / study** (benchmark/stat topics), or **article / guide** (the default only when nothing above fits). Add the `format` field with a one-line rationale grounded in the phrases; for tool/quiz/template rows, note in the solution column what the interactive element would DO.
 
 ## ORDER OF OPERATIONS — VALIDATE & CLASSIFY FIRST, THEN DEDUP AGAINST COMMITS
 Generate and validate your candidate rows from the brief + SEMRUSH FIRST; do not let commit history bias what you look at. Only once you have a concrete candidate (keyword + action + target file/route) do you check whether it already shipped. Mechanics:
@@ -246,6 +261,8 @@ Main action table columns — **col 1: `problem`** (which lens surfaced it — d
 
 **col 10: `reader_question`** (the question in the reader's words PLUS the evidence tag in brackets — `[PAA n/m <pattern>; ac n/m]`, `[verb-only — no PAA, no completions]`, or `[PAA n/m on-topic; n/m off-topic: <what>]`), **col 11: `answer`** (one sentence + its shape: mechanism / pick / figure / verdict / list), **col 12: `answer_placement`** (`section 1` or `section 2`, with the section's working heading) — from Step 4.6. Required on every `create new content` and `update existing body text` row; `n/a` on metadata, link and advisory rows.
 
+Cols 8–9 are appended AFTER the existing columns so Phases 0–9 parse cols 1–7 exactly as before; they are advisory context for the manifest gate and no phase executes off them. **Cols 10–12 are NOT advisory**: Phase 0 prints them per row in the manifest, Phase 3 copies them into each row prompt, and Phase 4 fails a page whose first two sections do not deliver col 11.
+
 The table contains **only actionable rows.** No "no action / already addressed / leave alone" rows — note those in a brief exclusions paragraph below the table instead. If after filtering there are no actionable rows, say so plainly (Phase 0 will report an empty pass) and still write the file.
 
 **Save the result to a file.** After the on-screen table, write the full chart to `reports/mindmap-pass/<YYYY-MM-DD>.md` (today's date). It MUST begin with this header block, then the table, the emerging-clusters block, and the exclusions paragraph:
@@ -255,7 +272,9 @@ The table contains **only actionable rows.** No "no action / already addressed /
 mindmap_pass_date: <YYYY-MM-DD>
 source: free-form input brief ({modality: text | image | chart | news article | thought}), SEMRUSH-validated
 interpreted_brief: <2–4 sentence restatement of what the user wants added>
-generated_by: mindmap-pass build phase — brief interpretation + SEMRUSH phrase_related/questions/these/kdi/organic + Autocomplete miner
+generated_by: mindmap-pass build phase — brief interpretation + keyword demand ladder (rung that answered: <dataforseo|semrush|ahrefs|estimate>) + Autocomplete miner + live SERP reality check (<N> heads read, <unread reason if any>)
+demand_source: <rung that answered>  # dataforseo = measured Google Ads volume + Labs KD
+serp_reads: <N heads read; cost from keyword_data.notes()/serp.py>
 status: ready-for-execution
 ---
 ```
@@ -266,9 +285,9 @@ In the saved file, col 3 uses the **exact canonical bucket wording** (the machin
 
 ```
 ## Emerging search patterns (clusters)
-| Cluster (theme) | Member queries (from SEMRUSH/Autocomplete) | Why emerging / under-served | Current coverage | Lever | Target | Format | Best medium | Resolved deliverable |
-|---|---|---|---|---|---|---|---|---|
-| ... | q1; q2; q3 | coverage gap at theme level / intent mismatch / news-driven | none / partial / snippet-mismatch / cannibalized | create new content | /proposed-route | calculator — searchers want a personalized estimate | interactive tool | interactive tool |
+| Cluster (theme) | Member queries (from demand ladder / Autocomplete / SERP PAA) | Why emerging / under-served | Current coverage | Lever | Target | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ... | q1; q2; q3 | coverage gap at theme level / intent mismatch / news-driven | none / partial / snippet-mismatch / cannibalized | create new content | /proposed-route | calculator — searchers want a personalized estimate | interactive tool | interactive tool | winnable (AI Overview) | 1/10 major platforms; AI Overview cites x.com, y.com |
 ```
 - `Lever` uses exact canonical bucket wording (or `consolidate / canonicalize` flag for cannibalized clusters).
 - `Format` / `Best medium` / `Resolved deliverable` are populated ONLY for `create new content` clusters (`n/a` otherwise), with the same capability-mapping rule (image/video best-medium falls back to text).

@@ -14,7 +14,7 @@ This phase IS the gate for Phase 3. It checks **only the net-new pages created i
 - A placeholder exists at the target route (if the framework expects a route file) ✓/✗
 A spec that passes all seven points is a **PASS** — the human builds the asset in a follow-up; that is by design. Missing items are hard-fail rework.
 
-**For `article` format rows — and for `comparison table/database` rows that Phase 3 generated as REAL pages (a `<slug>.meta.json` exists):** apply the standard checklist below. A generated comparison is a page, not a spec.
+**For `article` format rows — and for `comparison table/database` rows that Phase 3 generated as REAL pages (a `<slug>.meta.json` exists):** apply the standard checklist below. A generated comparison is a page, not a spec: audit its comparison table, its verdict, and its objectivity (the business is never the auto-winner).
 
 **API-generated pages (the normal case — see `_content-generation.md`):** hand the auditor the run's **closed fact list(s)** (`reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md`) and **`allowed-urls.txt`** alongside the drafts, plus each draft's `meta.guards`. An auditor working from a trimmed fact set will flag TRUE sourced facts as fabrication. Before acting on any "unsupported claim" finding, verify it against the source; keep confirmed facts, cut only what no source supports. Findings are actionable only with the exact quoted text; fixes follow the remediation ladder (mechanical in place first).
 
@@ -54,6 +54,7 @@ Banned constructions (non-exhaustive — judge by intent, not exact wording):
 - "Layer3 Labs does not resell / resells none of / does not refer / does not partner with…"
 - "We take no referral fee / no commission / no kickback from…"
 - "This ranking is independent." / "A note on objectivity:" / "Layer3 Labs is vendor-neutral."
+- "No paid placement" / "No sponsored placement" / "We don't take payment to be listed" / "Our rankings are editorial, not paid" — the site sells paid placements, so any claim it doesn't is false.
 - "We run our own repositories on this stack, so this is written from the position of someone who has to live with the choice."
 - Any variant that asks the reader to trust our motives rather than showing our reasoning.
 
@@ -64,7 +65,7 @@ Banned constructions (non-exhaustive — judge by intent, not exact wording):
 
 **Auditor procedure — run this on every page in the phase:**
 ```bash
-grep -inE "does not resell|do not resell|resells? none|takes? no (referral|commission|kickback)|no commission on|does not (refer|partner)|vendor.neutral|this (ranking|comparison|page) is independent|note on objectivity|we are not (paid|sponsored)|no financial (interest|stake)" <the new/edited entries>
+grep -inE "does not resell|do not resell|resells? none|takes? no (referral|commission|kickback)|no commission on|does not (refer|partner)|vendor.neutral|this (ranking|comparison|page) is independent|note on objectivity|we are not (paid|sponsored)|no financial (interest|stake)|no sponsored placement|not paid placements|(do not|don.t) (charge|take payment) to be (listed|included|ranked)" <the new/edited entries>
 ```
 Any hit → **FAIL the page** and require removal. Delete the claim outright; do not soften it. Where the sentence also carried real methodology ("we weighed what each vendor publishes about X"), keep only the methodology half and drop the financial/neutrality assertion.
 
@@ -122,4 +123,4 @@ Also refresh every surface derived from that date: JSON-LD `dateModified`, and t
 
 **Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
 
-If any of those files is missing, FAIL the run and report it — never substitute your own gates.
+If any of those files is missing, FAIL the run and report it — never substitute your own gates. If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard.
