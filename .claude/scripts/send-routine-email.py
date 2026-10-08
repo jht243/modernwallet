@@ -146,6 +146,7 @@ REPO_PROJECTS = {
 # Falls back to the raw --skill value for anything not listed.
 SKILL_LABELS = {
     "comparison-content-auto": "Comparison content",
+    "page-1-2-no-clicks-pass-auto": "Page 1-2 No Clicks Pass",
     "indexing-pass-auto": "Indexing pass",
     "autocomplete-pass-auto": "Autocomplete pass",
     "ahrefs-site-audit-auto": "Ahrefs site audit",
@@ -379,7 +380,26 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
         s = re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], s)
         return s
 
+    table: list[list[str]] = []
+
+    def flush_table():
+        nonlocal table
+        if table:
+            th = "".join(f'<th style="text-align:left;padding:6px 8px;border-bottom:2px solid #e5e7eb;font-size:12px;color:#111827;">{inline(c)}</th>' for c in table[0])
+            rows = "".join("<tr>" + "".join(f'<td style="vertical-align:top;padding:6px 8px;border-bottom:1px solid #f3f4f6;font-size:12px;color:#374151;line-height:1.45;">{inline(c)}</td>' for c in r) + "</tr>" for r in table[1:])
+            out.append(f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 14px;"><tr>{th}</tr>{rows}</table>')
+            table = []
+
     for raw in lines:
+        st = raw.strip()
+        if st.startswith("|") and st.endswith("|"):
+            flush_para()
+            flush_list()
+            cells = [c.strip() for c in st.strip("|").split("|")]
+            if not all(set(c) <= set("-: ") for c in cells):   # skip the |---| separator row
+                table.append(cells)
+            continue
+        flush_table()
         if raw.strip().startswith("```"):
             if in_code:
                 out.append(
@@ -427,6 +447,7 @@ def markdown_to_html(md: str, base_url: str = "") -> str:
             flush_list()
             para_buf.append(stripped)
 
+    flush_table()
     flush_para()
     flush_list()
     return "\n".join(out)
@@ -449,7 +470,7 @@ _CHANGE_HEADINGS = (
     "enrich", "links added", "next-step link", "internal link", "tool",
     "metadata rewrite", "metadata fix", "fix", "consolidat", "redirect",
     "asset", "treatment", "what changed", "changes made", "updated", "blocker",
-    "verif",
+    "verif", "added", "built", "vendor",
 )
 _NOISE_HEADINGS = (
     "table", "verdict", "engagement", "per-page", "per page", "skipped",
@@ -457,6 +478,16 @@ _NOISE_HEADINGS = (
     "improvement report", "roster", "run info", "source", "overview",
     "pulled pages", "metrics", "diagnos",
 )
+
+
+# A section whose heading starts with one of these is a per-page CHANGE chart (what was edited, why,
+# what was fixed) — kept WITH its table, rendered as an HTML table. Opt-in by exact heading so no other
+# skill's analytics tables come back (2026-10-07: page-1-2-no-clicks-pass email showed no pages).
+_CHART_HEADINGS = ("pages changed",)
+
+
+def _is_chart_heading(heading: str) -> bool:
+    return heading.lower().startswith(_CHART_HEADINGS)
 
 
 def _is_change_heading(heading: str) -> bool:
@@ -517,6 +548,12 @@ def clean_details(md: str) -> str:
 
     out: list[str] = []
     for head, body in sections:
+        if _is_chart_heading(head):
+            if any(x.strip().startswith("|") for x in body):
+                out.append(f"## {head}")
+                out.extend(body)
+                out.append("")
+            continue
         if not _is_change_heading(head):
             continue
         clean_body = _strip_tables_and_empties(body)
