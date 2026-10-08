@@ -116,6 +116,14 @@ draft** — it never throws a page away for a one-line fix:
   (the same model is first retried once at double the cap, then the fallback), or output that
   is not a parseable page object at all (the raw text is saved beside the draft first).
 
+- **Claim check (every draft written with `--facts`):** a GROUNDING block rides on the row
+  prompt; then a verifier call lists each sentence/table cell the fact list does not support and
+  replaces it with what the list does say (or deletes it), and a second pass DELETES whatever is
+  still unsupported. Exact string splices; a replacement can never add a number, link or name
+  that is not in the fact list. Logged in `meta.guards.claim_check`; the unchecked draft is kept
+  as `<out>.precheck`. A `thin fact list` flag means the list is too short for the floor: expand
+  it with SOURCED facts before anything else. `CONTENT_FACTCHECK=0` disables it.
+
 Read `meta.guards` before handing the draft on — it is the repair log the auditor needs.
 
 Check draft one before generating draft two: a systemic prompt defect is cheapest on page one.
@@ -133,9 +141,24 @@ The draft is a draft, not a page. Before templating:
   facts as fabrication (verify any "unsupported" finding against the source before acting).
 
 **Fixing a finding** follows `_remediation-ladder.md`: Rung 0 mechanical lint (a banned word,
-a heading, an anchor text, one sentence) is applied in place. Anything larger is a
-**regeneration** with a `# CORRECTIONS FROM THE PHASE 4 AUDIT` block appended to the row
-prompt (defect → the exact offending text → the replacing rule). Never hand-write generated
+a heading, an anchor text, one sentence) is applied in place. **Claim and tell findings
+(invented, unsourced, contradicted or inferred claims; AI tells; unlinked directives) go to
+`content_gen.py fix` FIRST** — never straight to a regeneration, which re-rolls every sentence
+and fails on new claims:
+
+```bash
+python3 scripts/lib/content_gen.py fix --draft reports/<run>/drafts/<slug>.json \
+  --findings reports/<run>/audit/<slug>.findings.txt \
+  --facts reports/<run>/prompts/<slug>.prompt.md --floor <depth floor> \
+  --allowed-urls reports/<run>/prompts/allowed-urls.txt
+```
+
+The findings file is the auditor's report for that page (quote + defect per finding). The
+replacements are model-written and only restate the fact list or delete; then re-template and
+re-audit that page in full on the same bar. A **regeneration** with a `# CORRECTIONS FROM THE
+PHASE 4 AUDIT` block appended to the row prompt (defect → the exact offending text → the
+replacing rule) is only for what `fix` lists as NOT FIXABLE IN PLACE or a page now under its
+floor — and for that, expand the fact list with sourced facts first. Never hand-write generated
 prose; it defeats the routine and falsifies the provenance record. Two failed regenerations
 on the same defect → drop the page and report.
 

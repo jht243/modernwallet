@@ -60,11 +60,21 @@ The **orchestrator** applies each replacement verbatim with a targeted edit, re-
 
 The rule the reviewer follows: if you can write the corrected sentence, you have already done the work — hand over the replacement rather than a complaint. A finding reported without a replacement, where one was possible, is an incomplete report.
 
+**Unsupported claims are Rung 1 too (API-written pages).** An invented, unsourced, contradicted or inferred claim — a sentence, bullet or table cell the closed fact list does not support — is fixed IN PLACE by deleting it or restating what the fact list does say. Never by regenerating the page: a whole-page re-roll rewrites every sentence and fails on NEW invented claims (2026-10: 19 of 19 drafts dropped that way across 8 routines). For a page written by `scripts/lib/content_gen.py`, save the reviewer's findings for that page (quote + defect per finding, claims AND tells) to a file and run:
+
+```bash
+python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> \
+    --facts <row prompt> --floor <floor> [--allowed-urls <urls.txt>]
+```
+
+It splices model-written replacements by exact string match (a replacement may only restate the fact list, or delete), runs one claim-check pass that deletes anything the replacements left unsupported, keeps a `.pre-fix-N` backup, and lists anything it could not fix as `NOT FIXABLE IN PLACE`. Then apply the draft to the store, re-run Rung 0, and re-audit **the fixed page in full** (the bar is unchanged: zero unsupported claims). `fix` never adds a fact and is not a rework attempt. Only what it lists as NOT FIXABLE IN PLACE, or a page its fixes push under the depth floor, goes to Rung 2.
+
 ### Rung 2 — REWORK (back to the writer, this page only)
 
 Reserved for findings that need new substance, new research, or a structurally different page:
 
-- an invented, unsourced, or contradicted fact
+- a claim `content_gen.py fix` reported NOT FIXABLE IN PLACE (the page needs a fact it does not have)
+- depth under the floor after unsupported claims were removed: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
 - an experience claim `_experience.md` does not license
 - the wrong register for what the page does
 - depth under the floor for its page type
@@ -72,7 +82,7 @@ Reserved for findings that need new substance, new research, or a structurally d
 - a dead-end problem the page raises and never resolves
 - a section that has to be rewritten rather than repaired
 
-Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. The reworked page then gets a full audit again, from Rung 0.
+Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
 
 **Max 2 rework attempts per PAGE.** A page that still fails after its second rework is **dropped from the run**: unstage its entry, remove it from the sitemap and the IndexNow URL list, and record it under "Ambiguous / skipped" with its outstanding notes. The run continues with the pages that passed. Never stop a whole run over one page.
 

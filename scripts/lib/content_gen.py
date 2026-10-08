@@ -40,6 +40,27 @@ adversarial audit still runs after this, unchanged. Never throws a page away for
     quotes -> ASCII. Lifted from humanize_intro.py, so this step supersedes it for pages
     generated here end-to-end.
 
+Claim check (any write/section that carries --facts; CONTENT_FACTCHECK=0 disables): a GROUNDING
+block rides on the row prompt, then a verifier call lists every sentence/cell the fact list does
+not support with a replacement that only restates it (or "" = delete), spliced in by exact string
+replace. A second, final pass DELETES whatever is still unsupported (a table cell becomes "Not
+published"; titles, headings, frontmatter and disclosures are never deleted), so the loop ends
+without an unchecked rewrite; a first pass that finds >= CONTENT_FACTCHECK_ADAPT (12) claims buys
+one extra full read. A replacement carrying a number, link or proper noun that is not in SOURCE
+is refused mechanically. It never adds a fact. Logged in meta.guards.claim_check; the unchecked
+draft is kept as <out>.precheck. Cost (2026-10-08, gemini-3.8-flash): ~$0.05-0.10 per page; up
+to ~$0.23 on a heavily padded draft (thin fact list + low-thinking writer).
+Knobs: CONTENT_FACTCHECK_THINKING (medium), CONTENT_FACTCHECK_FINAL_THINKING (low),
+CONTENT_FACTCHECK_PASSES (2), CONTENT_FACTCHECK_ADAPT (12; 0 = off), CONTENT_FACT_BUDGET_RATIO.
+
+    python3 scripts/lib/content_gen.py fix --draft <draft> --findings <auditor-findings.txt> \
+        --facts <row prompt> [--floor N] [--allowed-urls urls.txt]
+
+`fix` = the remediation ladder's FIX-IN-PLACE rung for Phase 4 findings (claims AND tells): the
+model writes each replacement, it is spliced in, then one claim-check pass deletes anything the
+replacements left unsupported; backup <draft>.pre-fix-N; findings that need new substance are
+listed "NOT FIXABLE IN PLACE" (then Rung 2: source the facts, then regenerate).
+
 Keys: GEMINI_API_KEY | GEMINI_ACCESS_TOKEN | GOOGLE_API_KEY ; OPENAI_API_KEY (or a
 per-site OPENAI_API_KEY_<SITE>) ; ANTHROPIC_API_KEY. Read from env, then $CONTENT_SECRETS,
 ./.env, ~/.claude/secrets.env. Cloud routines export keys from their inline prompt block.
@@ -104,6 +125,7 @@ GEMINI_LOCATION = os.environ.get("GEMINI_LOCATION", "global")
 JSON_MODE = False   # set by complete(json_mode=True): ask the provider for a JSON object
 CMD = "complete"    # write | section | complete — recorded in the usage ledger
 SCOPE_ON = True     # writer_scope() on the system prompt; complete(writer_scope=False) for non-writer callers (auditors)
+TEMPERATURE = 0.7   # Gemini sampling temperature; the claim checker lowers it for its own calls
 
 # USD per 1M tokens (input, output). Thinking bills as output. Override per run with
 # CONTENT_RATE_IN / CONTENT_RATE_OUT. Gemini 3.8 Flash intro rate doubles 2027-01-01.
@@ -345,7 +367,7 @@ def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking:
     else:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         headers = {"x-goog-api-key": key, "Content-Type": "application/json"}
-    gen = {"temperature": 0.7, "maxOutputTokens": max_tokens}
+    gen = {"temperature": TEMPERATURE, "maxOutputTokens": max_tokens}
     if JSON_MODE:
         gen["responseMimeType"] = "application/json"
     if thinking in ("low", "medium", "high"):
@@ -548,7 +570,9 @@ def looks_truncated(text: str, json_mode: bool) -> str:
     if json_mode:
         # JSON mode is the strong case: a response cut mid-string cannot parse.
         try:
-            data = json.loads(t)
+            # strict=False like every parser downstream: a literal newline inside a string (a
+            # table row, an echoed quote) is not a cut-off response and must not cost a re-run
+            data = json.loads(t, strict=False)
         except Exception:  # noqa: BLE001
             return "unparseable JSON (cut mid-structure)"
         bad = _clipped_strings(data)
@@ -702,6 +726,23 @@ def strip_fences(t: str) -> str:
     return t.strip()
 
 
+def fix_table_separators(s: str) -> str:
+    """A GFM separator row whose column count differs from its header row renders as plain text
+    (seen 2026-10-08: a 4-column header over a 5-column separator). Re-cut it to the header."""
+    if "|" not in s or "-" not in s:
+        return s
+    ls = s.split("\n")
+    for i in range(1, len(ls)):
+        sep, head = ls[i].strip(), ls[i - 1].strip()
+        if re.fullmatch(r"\|?(\s*:?-{3,}:?\s*\|)+\s*:?-{3,}:?\s*\|?|\|?(\s*:?-{3,}:?\s*\|)+", sep) and head.count("|") >= 2:
+            n_head = len([c for c in head.strip("|").split("|")])
+            cells = [c.strip() for c in sep.strip("|").split("|") if c.strip()]
+            if cells and len(cells) != n_head:
+                cells = (cells + [cells[-1]] * n_head)[:n_head]
+                ls[i] = "| " + " | ".join(cells) + " |"
+    return "\n".join(ls)
+
+
 def house_style(s: str) -> str:
     s = (s.replace("’", "'").replace("‘", "'").replace("“", '"')
           .replace("”", '"').replace("…", "..."))
@@ -766,7 +807,7 @@ def verify(text: str, a) -> tuple[dict, dict]:
         die(4, f"{a.slug}: output is not a parseable page object — raw text saved to {rawp}. "
                f"This is the one case that needs a regeneration (Rung 2).")
     # house style + control-char normalisation on every string value (Rung 0)
-    page = walk(page, lambda s: house_style(re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", s)))
+    page = walk(page, lambda s: fix_table_separators(house_style(re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", s))))
 
     # slug: always the expected one (Rung 0)
     if page.get("slug") != a.slug:
@@ -842,6 +883,517 @@ def verify(text: str, a) -> tuple[dict, dict]:
     return page, report
 
 
+# ───────────────────────────── grounding + claim check (FIX-IN-PLACE for facts) ─────────────────────────────
+# WHY (2026-10-07). In one week 8 content routines across the fleet shipped NOTHING: 19 of 19 drafts
+# failed the Phase 4 fact audit. The audit was right every time (invented brand facts, a competitor
+# price table, unhedged legal claims, "inference" about use). What killed the runs was the repair
+# path, not the bar:
+#   * a writer handed a short closed fact list and a 1,400-1,500 word floor fills the gap with
+#     unlisted claims (the RingCentral draft ran 2,664 words on a ~350-word fact list), and
+#   * every "unsupported claim" finding was routed to a WHOLE-PAGE regeneration, which re-rolls
+#     every sentence, so round 2 failed on NEW invented claims (readnext round 2: 8 of 8 findings
+#     were new; humidor's corrections block grew to ~60 banned phrases) — two rounds, page dropped.
+# The fix keeps the audit bar identical and changes where unsupported claims are removed:
+#   1. GROUNDING — a fixed block appended to every row prompt that carries --facts (rows stay
+#      DATA ONLY; this is the generator's standing rule, so no orchestrator can forget it).
+#   2. CLAIM CHECK — after every write/section, a verifier call lists each sentence/table cell the
+#      fact list does not support and supplies an API-written replacement that only restates the
+#      list (or deletes the sentence). Applied by exact string replacement, re-checked once, logged
+#      in meta.guards.claim_check, and the pre-check draft is kept beside the draft.
+#   3. `fix` — the same machinery for the Phase 4 auditor's findings: the remediation ladder's
+#      FIX-IN-PLACE rung for claims and tells, with the replacement text still model-generated.
+# The checker never adds a fact: a replacement may only restate SOURCE or say a thing is not
+# published. If removing claims drops a page under its floor, it is FLAGGED — the cure is a larger
+# sourced fact list (Rung 2 with research), never padding and never a looser audit.
+GROUNDING = """
+
+# GROUNDING (appended by content_gen.py to every row that carries a closed fact list; applies to every sentence)
+- A sentence that states something about the world (a product, company, person, court, law, price, number, date, feature, what people or vendors usually do, how something works, why something happens) must restate a line of the CLOSED FACT LIST or the row data above. If no line supports it, leave it out. A shorter true sentence beats a longer guessed one.
+- Always allowed: instructions to the reader, choices built only from listed facts ("pick X if you want <listed attribute>"), arithmetic on listed numbers with the inputs shown, and the plain statement that something is not published ("RingCentral does not publish a cap on concurrent calls").
+- Never tell the reader to check, verify, confirm or consult something unless that same sentence links the exact page from the CLOSED URL LIST (or an internal route you were given). With no such link, state the gap as a fact instead.
+- No inference past the list: no use cases, audiences, causes, reputations, counts, rankings, typical behaviour, quality judgements or comparisons the list does not state. No number that is not on the list, except arithmetic shown on listed numbers.
+- Reach the depth floor by covering MORE of the listed facts and more of the reader's decision (what to compare, what to ask, what to do first, what each listed fact means for that decision), never by adding claims the list does not hold.
+"""
+
+CLAIMCHECK_ON = os.environ.get("CONTENT_FACTCHECK", "1") != "0"
+CLAIMCHECK_PASSES = max(1, int(os.environ.get("CONTENT_FACTCHECK_PASSES", "2")))
+# Measured 2026-10-07/08 on two failed pages (humidor partagas-vs-cohiba, layer3 RingCentral):
+#   high   one check 36-38k thinking tokens, ~4 min, ~$0.15 — and clipped at the 40k cap
+#   medium 9-19k thinking, $0.04-0.08 per check; found 18+4 / 2+5 claims over 2 passes
+#   low    ~1k thinking, ~$0.005 per check; found only 7+3 / 1+1 — misses too much for the full read
+# So the full read (pass 1) runs at medium and the final delete-only pass at low: ~$0.05-0.09/page.
+_fct = os.environ.get("CONTENT_FACTCHECK_THINKING", "medium").strip().lower()
+CLAIMCHECK_THINKING = _fct if _fct in _LEVELS else "medium"
+# A first pass that finds this many claims means a padded draft: one extra full read (adaptive, max 1).
+CLAIMCHECK_ADAPT = int(os.environ.get("CONTENT_FACTCHECK_ADAPT", "12"))
+_fcf = os.environ.get("CONTENT_FACTCHECK_FINAL_THINKING", "low").strip().lower()
+CLAIMCHECK_FINAL_THINKING = _fcf if _fcf in _LEVELS else "low"
+CLAIMCHECK_MAX_TOKENS = int(os.environ.get("CONTENT_FACTCHECK_MAX_TOKENS", "64000"))   # thinking counts against it
+# A thin closed fact list is the upstream cause of padded claims. Below this ratio of fact-list
+# words to the page's floor, the draft is FLAGGED (meta.guards.flags + stderr) so the orchestrator
+# expands the list with sourced facts BEFORE spending a regeneration. Calibrated on the 2026-10
+# failures (pro se 0.06, banthebots minimal, RingCentral 0.25) vs pages that passed first time.
+FACT_BUDGET_RATIO = float(os.environ.get("CONTENT_FACT_BUDGET_RATIO", "0.30"))
+
+_SKIP_KEYS = {"slug", "href", "buttonHref", "category", "publishedDate", "updatedDate", "id",
+              "ctaButton", "buttonLabel", "image", "imageAlt", "icon", "schema", "type", "date",
+              "lastUpdated", "updated", "published"}
+
+_SKIP_ROOTS = {"ctaTitle", "ctaText", "ctaButton", "inlineCta", "cta", "relatedLinks", "schema", "sources"}
+
+CLAIMCHECK_SYSTEM = """You are the fact checker for a web page draft, working BEFORE the human-grade audit. The audit fails any page that states something its closed fact list does not support. Your job is to find every such statement and supply the in-place fix, so the page reaches the audit clean.
+
+You receive:
+- SOURCE: the closed fact list and row data the writer was given. It is the ONLY knowledge the page may state. Instruction blocks inside SOURCE (CORRECTIONS, COVER, NOTES, FAQ specs, GROUNDING) are rules, not facts: they never support a claim, and a CLAIM they forbid is a finding. Style, format, length and title-framing rules are NOT your job (another gate checks them) — never flag a sentence, title or heading for style.
+- UNITS: the page text, one unit per line as `<id> ::: <text>`.
+
+METHOD. Walk the units in order and report EVERY unit — none may be skipped. Inside a unit, test each clause: it is SUPPORTED only if a SOURCE line states it (faithful paraphrase and synonyms count). Anything else that describes the world is a finding. Writers pad thin fact lists with exactly these, so look for them in every unit:
+- descriptive or evaluative words SOURCE does not use for that thing: quality, reputation, prestige, fame, reliability, consistency, texture, smoothness, "balanced", "refined", "polished", "traditional", "flagship", "established", "well-known", "popular", "affordable", "accessible", "oily", "rich" — unless SOURCE says it of that same thing;
+- purposes, audiences, occasions and use cases SOURCE does not state ("designed for", "ideal for", "for gifting", "for beginners", "for everyday rotation", "for compliance teams");
+- market, retail, availability and price claims SOURCE does not state (what shops carry, samplers, discounts, why prices vary, what something is "marketed as");
+- causes and consequences SOURCE does not state ("because", "which means", "making it", "so that");
+- laws, regulators, rules or authorities SOURCE does not name;
+- comparisons, rankings and degree words SOURCE does not state ("more", "far more", "the sharpest", "best", "most", "significantly");
+- what people, buyers, smokers, vendors or companies typically do, feel, prefer or need;
+- a fact SOURCE states about one thing, written about another (brand A's fact given to brand B; a Cuban fact given to the non-Cuban product);
+- a number, date, name or feature SOURCE does not list, or wrong arithmetic on SOURCE numbers;
+- a sentence sending the reader to an OUTSIDE source to check / verify / confirm a fact (the vendor's page, a regulator, documentation, a professional) with no markdown link in that same sentence;
+- a first-person claim by the site ("At <Brand>, we ...", "we tested", "we help ...") that the SITE SELF-DESCRIPTION block does not support.
+NOT findings: required boilerplate the page contract dictates (an affiliate or commission disclosure, a CTA line); instructions telling the reader what to do, test, try, compare or ask in their OWN evaluation (a trial checklist, "test X", "make sure your CRM receives Y") as long as they assert no fact about the world; conditional picks built only from SOURCE facts ("pick X if you want <listed attribute>"); conditional or hypothetical statements about what would change the page's answer ("our answer would change if the vendor published Y"); correct arithmetic on SOURCE numbers; "X is not published / not stated"; the site's own first-person sentences that the SITE SELF-DESCRIPTION supports; headings and labels that only name a topic; internal links; questions; neutral connective wording.
+
+For each finding supply `replacement`:
+- the closest statement SOURCE does support that keeps the sentence's job in its paragraph (usually the same sentence with the unsupported words removed), or
+- "" (empty string) to delete it, when nothing in SOURCE can carry it.
+The replacement is spliced in by exact string replacement, so it must read naturally between the text before and after the quote. It must not introduce any fact, number, name or link that is not in SOURCE, must keep any markdown link that was valid, and must keep table pipes intact: in a table row quote only the cell text and never empty a cell (write "Not published" instead).
+
+`quote` must be copied character for character from that unit (usually one whole sentence; a cell's text for a table). One finding per sentence.
+
+Return ONLY JSON, every unit once, in order:
+{"units":[{"id":"<unit id>","findings":[{"quote":"<exact text>","type":"unsupported|contradicted|inference|unlinked-directive","why":"<what SOURCE lacks or says instead, max 15 words>","replacement":"<text or empty string>"}]}]}
+A clean unit is {"id":"<unit id>","findings":[]}."""
+
+FIX_SYSTEM = """You repair a web page draft in place for the findings of an adversarial audit, without rewriting the page.
+
+You receive SOURCE (the closed fact list and row data — the ONLY knowledge the page may state; instruction blocks inside it are rules, not facts), AUDIT FINDINGS (the reviewer's report), and UNITS (the page text, one unit per line as `<id> ::: <text>`).
+
+For EVERY audit finding that points at text on the page, return the unit id, the exact offending text, and its replacement:
+- a fact finding (unsupported / invented / contradicted / inference): replace with the closest statement SOURCE supports that keeps the sentence's job, or "" to delete it;
+- a wording finding (an AI tell, a banned word, a heading or title rule, a length limit, a directive with no link): rewrite only the quoted text so the defect is gone and the same supported meaning remains.
+Never add a fact, number, name or link that is not in SOURCE. Keep table pipes intact and never empty a table cell (write "Not published"). If a finding can only be fixed by adding a NEW fact, a new section or restructuring the page, return it with "replacement": null and why "needs new substance" — it is not fixable in place.
+
+`quote` must be copied character for character from that unit. If one finding covers several sentences, return one entry per sentence.
+
+Return ONLY JSON: {"findings":[{"id":"<unit id>","quote":"<exact text>","finding":"<which audit finding, short>","why":"<max 20 words>","replacement":"<text, empty string, or null>"}]}"""
+
+
+def _source_text(a) -> str:
+    """SOURCE for the checker: the facts file + the row prompt (deduplicated), never the system.
+    The repo's _experience.md rides along as the licence for the site's OWN first-person claims
+    (without it the checker deletes every "At <Brand>, we ..." line, which the standard requires)."""
+    parts, seen = [], set()
+    for f in (getattr(a, "facts", ""), getattr(a, "prompt", "")):
+        if f and f not in seen and pathlib.Path(f).exists():
+            seen.add(f); parts.append(pathlib.Path(f).read_text())
+    root = _repo_root()
+    exp = root / ".claude" / "commands" / "_experience.md" if root else None
+    if exp and exp.exists():
+        parts.append("## SITE SELF-DESCRIPTION (licenses ONLY the site's own first-person / \"we\" claims; "
+                     "never a fact about anything else)\n" + re.sub(r"<!--.*?-->", "", exp.read_text(), flags=re.S).strip())
+    return "\n\n".join(parts)
+
+
+def fact_budget(a) -> dict | None:
+    """Words in the closed fact list(s) vs the page floor. None when there is nothing to measure."""
+    if not getattr(a, "facts", "") or not getattr(a, "floor", 0):
+        return None
+    words = 0; found = False
+    for f in {a.facts, getattr(a, "prompt", "") or a.facts}:
+        if not f or not pathlib.Path(f).exists():
+            continue
+        in_f = False
+        for line in pathlib.Path(f).read_text().splitlines():
+            if re.match(r"^#{1,6}\s", line):
+                up = line.upper()
+                if "FACT" in up:
+                    in_f = found = True
+                elif in_f and re.search(r"URL|LINK|COVER|CORRECTION|FAQ|NOTE|ROUTE|ROW DATA|STANDING|SECTION|CONTRACT|OUTPUT", up):
+                    in_f = False
+                continue
+            if in_f and line.strip():
+                words += len(line.split())
+    if not found:   # a dedicated facts file with no FACT heading: the whole file is the list
+        if a.facts != getattr(a, "prompt", None) and pathlib.Path(a.facts).exists():
+            words = len(pathlib.Path(a.facts).read_text().split())
+        else:
+            return None
+    ratio = round(words / a.floor, 2)
+    return {"fact_words": words, "floor": a.floor, "ratio": ratio, "thin": ratio < FACT_BUDGET_RATIO}
+
+
+def _units(page, fmt: str):
+    """[(id, text, setter)] for every reader-facing prose string."""
+    out = []
+    if fmt == "markdown":
+        lines = page.split("\n"); in_code = False
+        for i, l in enumerate(lines):
+            if l.strip().startswith("```"):
+                in_code = not in_code; continue
+            if in_code or l.strip() in ("---", "") or len(l.split()) < 3:
+                continue
+            out.append((f"L{i + 1}", l, ("line", i)))
+        return out
+
+    def rec(o, path, parent, key):
+        if isinstance(o, str):
+            leaf = path.rsplit(".", 1)[-1].split("[", 1)[0]
+            # short strings still count when they can carry a claim: a number, or a table cell
+            if path.split(".", 1)[0].split("[", 1)[0] in _SKIP_ROOTS:
+                return
+            if leaf not in _SKIP_KEYS and (len(o.split()) >= 3 or re.search(r"\d", o)
+                                           or "table" in path.lower()):
+                out.append((path, o, (parent, key)))
+        elif isinstance(o, list):
+            for i, x in enumerate(o):
+                rec(x, f"{path}[{i}]", o, i)
+        elif isinstance(o, dict):
+            for k, v in o.items():
+                rec(v, f"{path}.{k}" if path else k, o, k)
+    rec(page, "", None, None)
+    return out
+
+
+def _tidy(s: str) -> str:
+    # leading indentation is structure (YAML frontmatter, nested bullets) — never touch it
+    lead, body = re.match(r"^([ \t]*)(.*)$", s, re.S).groups()
+    body = re.sub(r"[ \t]{2,}", " ", body)
+    body = re.sub(r"[ \t]+([,.;:!?])(?=\s|$)", r"\1", body)
+    body = re.sub(r"([,;])[ \t]*([.!?])(?=\s|$)", r"\2", body)
+    body = re.sub(r"\([ \t]*\)", "", body)
+    body = re.sub(r"(?<!\.)\.\.(?!\.)", ".", body)          # "A.. B" left by a deleted clause; "..." kept
+    body = re.sub(r"^[,;:][ \t]*", "", body)
+    return lead + body.rstrip()
+
+
+def _norm_ws(s: str) -> str:
+    return re.sub(r"\s+", " ", s.replace("’", "'").replace("“", '"').replace("”", '"')).strip()
+
+
+def _new_tokens(rep: str, allowed_text: str) -> list:
+    """Numbers, links and mid-sentence proper nouns in `rep` that `allowed_text` does not contain.
+    The mechanical half of "the checker never adds a fact": a replacement that brings in any of
+    these is refused, whatever the model said about it."""
+    def n(x):
+        x = x.replace(",", "").rstrip("%")
+        return x.rstrip("0").rstrip(".") if "." in x else x
+    low = allowed_text.lower()
+    nums = {n(x) for x in _NUM.findall(allowed_text)}
+    bad = [x for x in _NUM.findall(rep) if n(x) not in nums]
+    bad += [u for u in _EXT.findall(rep) if u.rstrip(".,;") not in allowed_text]
+    bad += [m.group(0) for m in re.finditer(r"/[a-z0-9][a-z0-9/_-]+", rep)
+            if "](" + m.group(0) in rep and m.group(0).rstrip("/") not in allowed_text]
+    words = re.findall(r"[A-Za-z][\w'-]*", rep)
+    if rep.lstrip().startswith("#") or (len(words) >= 2 and sum(w[0].isupper() for w in words) >= 0.6 * len(words)):
+        return bad   # a heading or Title Case label: capitals there are style, not proper nouns
+    for sent in re.split(r"(?<=[.!?:;])\s+|\|", re.sub(r"\]\([^)]*\)", "]", rep)):
+        for w in re.findall(r"(?<=[\s\[(\"'])[A-Z][\w'&.-]*", " " + sent.strip())[1:]:
+            w = w.rstrip(".'")
+            if w.lower() not in low:
+                bad.append(w)
+    return bad
+
+
+# a sentence boundary: terminal punctuation + space + a capital, not after an initial ("U.S. Market")
+_SENT_END = re.compile(r"(?<!\b[A-Z])[.!?]\s+(?=[A-Z\"\[*(])")
+_LIMITERS = {"not", "no", "never", "only", "without", "except", "unless", "nor", "cannot", "can't", "don't",
+             "doesn't", "isn't", "aren't", "won't", "neither", "none", "illegal", "unavailable"}
+
+
+_DISCLOSURE = re.compile(r"\b(commission|affiliate|sponsored|paid partnership|disclosure)\b", re.I)
+_PROTECTED_KEYS = {"metaTitle", "metaDescription", "h1", "title", "subtitle", "heading", "question",
+                   "optionAName", "optionBName", "label", "name"}
+
+
+def _is_closed_rewrite(quote: str, rep: str, src: str) -> bool:
+    """True when every word of `rep` already occurs in the quote or in SOURCE, its negations and
+    limiters are exactly the quote's, and it carries no new number/link/name. Such a rewrite can
+    only rearrange what the page and the fact list already say, so the delete-only pass may keep it."""
+    norm = lambda w: re.sub(r"[^\w$%'-]", "", w.lower())  # noqa: E731
+    vocab = {norm(w) for w in (quote + " " + src).split()}
+    rw = [norm(w) for w in rep.split() if norm(w)]
+    lim = lambda ws: sorted(w for w in ws if w in _LIMITERS)  # noqa: E731
+    return bool(rw) and all(w in vocab for w in rw) and lim(rw) == lim(norm(w) for w in quote.split()) \
+        and not _new_tokens(rep, src + "\n" + quote)
+
+
+def _is_word_removal(quote: str, rep: str) -> bool:
+    """True when `rep` is `quote` with some words taken out and none of them a negation/limiter —
+    the one rewrite that cannot add a claim or flip one, so the delete-only pass may keep it."""
+    q, r = quote.split(), rep.split()
+    if not r or len(r) >= len(q):
+        return False
+    norm = lambda w: re.sub(r"[^\w$%'-]", "", w.lower())  # noqa: E731
+    i, removed = 0, []
+    for w in q:
+        if i < len(r) and norm(w) == norm(r[i]):
+            i += 1
+        else:
+            removed.append(norm(w))
+    return i == len(r) and not (set(removed) & _LIMITERS)
+
+
+def _sentence_span(cur: str, exact: str) -> str:
+    """The whole sentence of `cur` that contains `exact` (a forced delete never leaves a clause
+    stub whose meaning flipped, e.g. a dropped "only" or "not")."""
+    i = cur.find(exact)
+    if i < 0:
+        return exact
+    starts = [m.end() for m in _SENT_END.finditer(cur[:i + 1])]
+    st = starts[-1] if starts else 0
+    m = re.search(r"(?<!\b[A-Z])[.!?](?=\s|$)", cur[i + len(exact) - 1:])
+    en = i + len(exact) - 1 + m.end() if m else len(cur)
+    span = cur[st:en]
+    lead = re.match(r"^\s*(?:[-*]\s+|\d+\.\s+)?(?:\*\*[^*]+\*\*:?\s*)?", span).group(0)
+    return span[len(lead):] if span[len(lead):].strip() else exact
+
+
+def apply_findings(page, fmt: str, findings: list, src: str = "", on_new: str = "delete",
+                   delete_all: bool = False) -> tuple:
+    """Exact-string FIX-IN-PLACE. Returns (page, applied, unapplied). Never raises on a bad finding.
+    A replacement carrying a number, link or proper noun found neither in SOURCE nor in the text it
+    replaces is refused: on_new="delete" (claim check: the quote was unsupported anyway) removes
+    the quote instead; on_new="skip" (fix: wording findings) leaves it and reports it.
+    delete_all=True (the final claim-check pass, which nothing re-checks) keeps a replacement only
+    when it merely removes words (no negation/limiter among them) or is a rewrite built from the
+    quote's own words + SOURCE vocabulary; otherwise it deletes the quote's whole sentence (a table
+    cell becomes "Not published"). Titles, headings and frontmatter are never deleted."""
+    units = _units(page, fmt)
+    by_id = {u[0]: u for u in units}
+    applied, unapplied, drop = [], [], []
+    lines = page.split("\n") if fmt == "markdown" else None
+    fm_end = 0
+    if lines and lines[0].strip() == "---":
+        fm_end = next((i + 1 for i, l in enumerate(lines[1:], 1) if l.strip() == "---"), 0)
+    for f in findings:
+        if not isinstance(f, dict):
+            continue
+        q, rep = f.get("quote") or "", f.get("replacement")
+        if not q or rep is None:
+            unapplied.append({**f, "reason": "no quote" if not q else "not fixable in place"}); continue
+        rep = "" if delete_all else (house_style(str(rep)) if rep else "")
+        cands = [by_id[f.get("id")]] if f.get("id") in by_id else []
+        # a quote found in some OTHER unit than the one named must be long enough to be unambiguous
+        cands += [u for u in units if u not in cands and len(q.split()) >= 4]
+        hit = None
+        for uid, text, where in cands:
+            cur = lines[where[1]] if fmt == "markdown" else where[0][where[1]]
+            if q in cur:
+                hit = (uid, cur, where, q); break
+            nq = _norm_ws(q)
+            if nq and nq in _norm_ws(cur):
+                # tolerate quote/whitespace drift: rebuild the exact span from the normalised match
+                m = re.search(re.escape(nq).replace(r"\ ", r"\s+").replace("'", "['’]").replace('"', '["“”]'), cur)
+                if m:
+                    hit = (uid, cur, where, m.group(0)); break
+        if not hit:
+            unapplied.append({**f, "reason": "quote not found on the page"}); continue
+        uid, cur, where, exact = hit
+        is_cell = (cur.lstrip().startswith("|") and cur.count("|") >= 2) or \
+            (fmt == "json" and "table" in uid.lower())
+        # titles, headings, metadata and frontmatter are page STRUCTURE: they may be reworded, never
+        # deleted (a dropped `title:` breaks the build; a dropped heading orphans its section)
+        if fmt == "markdown":
+            fm_key = re.match(r"^([A-Za-z_][\w-]*):\s", cur) if where[1] < fm_end else None
+            protected = cur.lstrip().startswith("#") or where[1] < fm_end
+        else:
+            fm_key = None
+            protected = uid.rsplit(".", 1)[-1].split("[", 1)[0] in _PROTECTED_KEYS
+        # an affiliate/commission disclosure is required boilerplate (FTC), never a claim to cut
+        protected = protected or bool(_DISCLOSURE.search(exact))
+        cand = house_style(str(f.get("replacement") or ""))
+        if delete_all and cand and not is_cell and (
+                _is_word_removal(exact, cand) or _is_closed_rewrite(exact, cand, src)):
+            rep = cand   # a rewrite from the quote's own words + SOURCE vocabulary, limiters unchanged
+        if rep:
+            added = _new_tokens(rep, src + "\n" + cur)
+            if added:
+                if on_new != "delete" or protected:
+                    unapplied.append({**f, "reason": f"replacement adds {added[:4]} not in SOURCE"}); continue
+                log(f"claim check: replacement refused (adds {added[:4]} not in SOURCE) — quote deleted instead")
+                rep = ""
+        if protected and not rep:
+            unapplied.append({**f, "reason": "title/heading/metadata: never deleted, needs a reworded replacement"}); continue
+        if is_cell and not rep:
+            rep = "Not published"
+        elif delete_all and not rep and "|" not in exact:
+            if _SENT_END.search(exact.strip()):
+                unapplied.append({**f, "reason": "delete pass: quote spans several sentences; left for the auditor"}); continue
+            exact = _sentence_span(cur, exact)
+        if exact.count("|") != rep.count("|"):
+            unapplied.append({**f, "reason": "replacement would change the table's columns"}); continue
+        k = cur.find(exact)
+        head, tail = cur[:k], cur[k + len(exact):]
+        if not rep and tail.lstrip()[:1].islower() and (not head.strip() or re.search(r"[.!?:]\s*$", head)
+                                                        or re.fullmatch(r"\s*(?:[-*]|\d+\.)\s*", head)):
+            j = len(tail) - len(tail.lstrip())   # a cut at a sentence start leaves the next word capitalised
+            tail = tail[:j] + tail[j].upper() + tail[j + 1:]
+        new = _tidy(head + rep + tail)
+        if fm_key and not new.startswith(fm_key.group(0)):
+            unapplied.append({**f, "reason": f"would break the frontmatter key {fm_key.group(1)!r}"}); continue
+        if fmt == "markdown":
+            lines[where[1]] = new
+        else:
+            where[0][where[1]] = new
+        applied.append({"id": uid, "quote": exact, "replacement": rep,
+                        "type": f.get("type") or f.get("finding"), "why": f.get("why")})
+        if not re.sub(r"[\W_]+", "", new) or re.fullmatch(r"\s*(?:[-*]|\d+\.)?\s*\*\*[^*]+\*\*:?\s*", new):
+            drop.append(where)   # nothing left, or only a bullet's bold label
+        if re.fullmatch(r"\s*(?:[-*]|\d+\.)?\s*\*\*[^*]+\*\*:?\s*", new) and fmt == "json":
+            where[0][where[1]] = ""
+        units = _units("\n".join(lines) if fmt == "markdown" else page, fmt)
+        by_id = {u[0]: u for u in units}
+    if fmt == "markdown":
+        drop_lines = {w[1] for w in drop}
+        return "\n".join(l for i, l in enumerate(lines) if i not in drop_lines), applied, unapplied
+    # emptied strings: list items are removed; dict values stay "" (flagged by the caller)
+    for parent, key in sorted((w for w in drop if isinstance(w[0], list)), key=lambda w: -w[1]):
+        try:
+            if not re.sub(r"[\W_]+", "", parent[key]):
+                parent.pop(key)
+        except Exception:  # noqa: BLE001
+            pass
+    return page, applied, unapplied
+
+
+def _checker_call(system: str, prompt: str, thinking: str = None) -> list | None:
+    """One JSON verifier call through the normal chain (usage recorded as kind=claim-check)."""
+    global TEMPERATURE
+    saved_kind, saved_t = os.environ.get("CONTENT_KIND"), TEMPERATURE
+    os.environ["CONTENT_KIND"] = "claim-check"; TEMPERATURE = 0.2
+    try:
+        text = complete(system, prompt, json_mode=True, writer_scope=False, thinking=thinking or CLAIMCHECK_THINKING,
+                        max_tokens=CLAIMCHECK_MAX_TOKENS)
+    except Exception as e:  # noqa: BLE001
+        log(f"claim check unavailable ({type(e).__name__}: {str(e)[:140]})"); return None
+    finally:
+        TEMPERATURE = saved_t
+        if saved_kind is None: os.environ.pop("CONTENT_KIND", None)
+        else: os.environ["CONTENT_KIND"] = saved_kind
+    try:
+        d = json.loads(strip_fences(text), strict=False)
+    except Exception:  # noqa: BLE001
+        i, j = text.find("{"), text.rfind("}")
+        try: d = json.loads(text[i:j + 1], strict=False)
+        except Exception: log("claim check returned unparseable JSON — skipped"); return None  # noqa: E701
+    items = (d.get("units") or d.get("findings") or []) if isinstance(d, dict) else d
+    if not isinstance(items, list):
+        return []
+    out = []
+    for it in items:
+        if not isinstance(it, dict):
+            continue
+        if isinstance(it.get("findings"), list):   # the per-unit walk, whatever key the model wrapped it in
+            out += [{**x, "id": x.get("id") or it.get("id")} for x in it["findings"] if isinstance(x, dict)]
+        elif "quote" in it or "replacement" in it:   # a finding (fix: may carry replacement null)
+            out.append(it)
+    return out
+
+
+def _units_block(page, fmt: str) -> str:
+    # one unit per line: a multi-line string (a JSON table) is shown on one line; quotes copied
+    # from it still match via apply_findings' whitespace-tolerant fallback
+    nl = re.compile(r"\s*\n\s*")
+    return "\n".join(uid + " ::: " + nl.sub(" ", text) for uid, text, _ in _units(page, fmt))
+
+
+def claim_check(page, fmt: str, a, passes: int = None, delete_from: int = None) -> tuple:
+    """Find claims SOURCE does not support and fix them in place. Returns (page, report).
+    Passes before `delete_from` splice the checker's replacements; from `delete_from` on, every
+    finding is deleted instead (default: the last pass when there are 2+, so nothing written by
+    the checker goes unchecked and the loop ends without a separate confirm call)."""
+    src = _source_text(a)
+    total = passes or CLAIMCHECK_PASSES
+    if delete_from is None:
+        delete_from = total - 1 if total > 1 else total
+    rep = {"passes": 0, "found": [], "applied": [], "deleted_final": 0, "unapplied": [], "remaining": [],
+           "thinking": CLAIMCHECK_THINKING, "final_thinking": CLAIMCHECK_FINAL_THINKING, "extra_pass": False}
+    n = -1
+    while n + 1 < total:
+        n += 1
+        final = n >= delete_from
+        prompt = f"SOURCE\n======\n{src}\n\nUNITS\n=====\n{_units_block(page, fmt)}\n"
+        # the first full read gets the deeper reasoning; a later delete-only sweep is the cheap one
+        found = _checker_call(CLAIMCHECK_SYSTEM, prompt,
+                              CLAIMCHECK_FINAL_THINKING if (final and n > 0) else CLAIMCHECK_THINKING)
+        if found is None:
+            rep["error"] = "checker unavailable"; break
+        rep["passes"] = n + 1; rep["found"].append(len(found))
+        if not found:
+            break
+        n_units = len(_units(page, fmt))
+        if final and len(found) > max(8, n_units // 3):
+            # a delete-only sweep that condemns a third of the page is a checker malfunction, not a
+            # page to gut: apply nothing and hand every finding to the auditor instead
+            rep["remaining"] = [{"id": f.get("id"), "quote": f.get("quote"), "type": f.get("type"),
+                                 "reason": "final pass over-flagged; not applied"} for f in found]
+            log(f"claim check pass {n + 1}: {len(found)} finding(s) on {n_units} units — over-flagged, "
+                f"nothing deleted; listed for the auditor")
+            break
+        page, ok, bad = apply_findings(page, fmt, found, src=src, on_new="delete", delete_all=final)
+        rep["applied"] += ok; rep["unapplied"] += bad
+        if final:
+            rep["deleted_final"] += len(ok)
+        elif len(found) >= CLAIMCHECK_ADAPT > 0 and not rep["extra_pass"]:
+            # a heavily padded draft: one pass rarely catches all of it, so read it in full once
+            # more (replacing) before the delete-only sweep. Bounded: at most one extra call.
+            rep["extra_pass"] = True; total += 1; delete_from += 1
+        rep["remaining"] = [{"id": f.get("id"), "quote": f.get("quote"), "type": f.get("type"),
+                             "reason": f.get("reason")} for f in bad]
+        log(f"claim check pass {n + 1}: {len(found)} unsupported claim(s), {len(ok)} "
+            f"{'deleted' if final else 'fixed in place'}{f', {len(bad)} not applied' if bad else ''}")
+    return page, rep
+
+
+def _finish_guards(page, fmt: str, a, report: dict, cc: dict) -> tuple:
+    """Re-run the mechanical guards on the checked page and fold the claim-check result in."""
+    if fmt == "markdown":
+        page, rep2 = verify_markdown(page, a)
+    else:
+        page, rep2 = verify(json.dumps(page, ensure_ascii=False), a)
+    for k in ("words", "numbers_not_in_facts"):
+        if k in rep2: report[k] = rep2[k]
+    report["flags"] = [x for x in report.get("flags", []) if "< depth floor" not in x]
+    report["flags"] += [x for x in rep2.get("flags", []) if "< depth floor" in x]
+    report["claim_check"] = cc
+    emptied = []
+    if fmt == "json":
+        for sec in page.get("sections", []) or []:
+            if isinstance(sec, dict) and not any(isinstance(x, str) and x.strip() for x in (sec.get("content") or [])) \
+                    and not (sec.get("bullets") or []):
+                emptied.append(sec.get("heading") or sec.get("id") or "?")
+        for q in page.get("faqItems", []) or []:
+            if isinstance(q, dict) and not str(q.get("answer", "")).strip():
+                emptied.append("FAQ: " + str(q.get("question", "?")))
+    else:
+        ls = [l for l in page.split("\n")]
+        for i, l in enumerate(ls):
+            if re.match(r"^#{2,6}\s", l):
+                nxt = next((x for x in ls[i + 1:] if x.strip()), "")
+                if not nxt or re.match(r"^#{1,6}\s", nxt) and len(re.match(r"^(#+)", nxt).group(1)) <= len(re.match(r"^(#+)", l).group(1)):
+                    emptied.append(l.strip("# ").strip())
+    if emptied and cc.get("applied"):
+        report["flags"].append(f"emptied by the claim check (nothing in the fact list could carry it): {emptied[:5]} — "
+                               f"source facts for it and regenerate, or drop the section; never refill it unsourced")
+    if cc.get("remaining"):
+        qs = "; ".join(repr((r.get("quote") or "")[:80]) for r in cc["remaining"][:4])
+        report["flags"].append(f"claim check: {len(cc['remaining'])} claim(s) still unsupported after "
+                               f"{cc['passes']} pass(es) — auditor must cut or source: {qs}")
+    if a.floor and report.get("words", 0) < a.floor and cc.get("applied"):
+        report["flags"].append(
+            f"{report['words']} words < floor {a.floor} after removing unsupported claims: the fact list is "
+            f"too thin for this page. Expand it with SOURCED facts, then regenerate (Rung 2). Never pad.")
+    return page, report
+
+
 # ───────────────────────────── commands ─────────────────────────────
 def est_cost(model: str, it, ot, tt, ct=0) -> float | None:
     rin = os.environ.get("CONTENT_RATE_IN"); rout = os.environ.get("CONTENT_RATE_OUT")
@@ -908,9 +1460,16 @@ def verify_markdown(text: str, a) -> tuple[str, dict]:
         text = "\n".join(body).strip()
         report["repairs"].append("stripped outer markdown code fence")
     text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", text)
+    # frontmatter must be line 1: drop a stray preamble (e.g. an agent "standard-loaded:" receipt
+    # the writer echoed from the standards) sitting above a frontmatter block
+    ls = text.split("\n")
+    k = next((i for i, l in enumerate(ls[:6]) if l.strip() == "---"), None)
+    if k and len(ls) > k + 1 and re.match(r"^[A-Za-z_][\w-]*:\s", ls[k + 1]):
+        report["repairs"].append(f"dropped {k} line(s) above the frontmatter: {ls[0][:60]!r}")
+        text = "\n".join(ls[k:])
     # house style outside fenced code blocks only
     parts = re.split(r"(```.*?```)", text, flags=re.S)
-    text = "".join(p if p.startswith("```") else house_style(p) for p in parts)
+    text = "".join(p if p.startswith("```") else fix_table_separators(house_style(p)) for p in parts)
     if a.allowed_urls:
         allowed = [u.strip() for u in pathlib.Path(a.allowed_urls).read_text().splitlines() if u.strip()]
         ok = lambda u: any(u.startswith(x) for x in allowed)  # noqa: E731
@@ -1051,6 +1610,13 @@ def cmd_write(a) -> int:
             CALLER = parts[parts.index("reports") + 1]
     system = pathlib.Path(a.system).read_text()
     prompt = pathlib.Path(a.prompt).read_text()
+    if a.facts and "# GROUNDING (appended by content_gen.py" not in prompt:
+        prompt = prompt.rstrip() + "\n" + GROUNDING   # the standing fact rule rides on every fact-listed row
+    budget = fact_budget(a)
+    if budget and budget["thin"]:
+        log(f"WARNING {a.slug}: closed fact list ≈{budget['fact_words']} words for a {a.floor}-word floor "
+            f"(ratio {budget['ratio']} < {FACT_BUDGET_RATIO}) — a writer fills that gap with unlisted claims. "
+            f"Expand the list with SOURCED facts before spending a regeneration.")
     # --format json (the default, and every TS/JSON-store page) needs the provider's actual
     # JSON mode, or the model is free to answer in plain prose — see call_gemini/call_openai's
     # JSON_MODE checks. `section`/markdown output never wants this.
@@ -1065,12 +1631,26 @@ def cmd_write(a) -> int:
 
     out = pathlib.Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    if a.format == "markdown":
+    fmt = "markdown" if a.format == "markdown" else "json"
+    if fmt == "markdown":
         page, report = verify_markdown(r["text"], a)
-        out.write_text(page)
     else:
         page, report = verify(r["text"], a)
-        out.write_text(json.dumps(page, ensure_ascii=False, indent=2))
+    if budget:
+        report["fact_budget"] = budget
+        if budget["thin"]:
+            report["flags"].append(f"thin fact list: ≈{budget['fact_words']} fact words for a {a.floor}-word floor "
+                                   f"(ratio {budget['ratio']}); expand it with sourced facts before any regeneration")
+    if a.facts and CLAIMCHECK_ON:
+        # Rung 1 for claims, before any reviewer reads a word: unsupported sentences are replaced by
+        # what the fact list supports (or deleted). The unchecked draft is kept beside the draft.
+        pre = out.with_suffix(out.suffix + ".precheck")
+        pre.write_text(page if fmt == "markdown" else json.dumps(page, ensure_ascii=False, indent=2))
+        words_before = report.get("words")
+        page, cc = claim_check(page, fmt, a)
+        cc["words_before"] = words_before
+        page, report = _finish_guards(page, fmt, a, report, cc)
+    out.write_text(page if fmt == "markdown" else json.dumps(page, ensure_ascii=False, indent=2))
     meta = {
         "slug": a.slug, "schema": a.schema, "kind": a.cmd,
         "model": r["model"], "provider": r["provider"], "requested_model": MODEL,
@@ -1088,6 +1668,61 @@ def cmd_write(a) -> int:
     out.with_suffix(out.suffix + ".meta.json").write_text(json.dumps(meta, indent=1))
     log(f"wrote {out} ({report['words']} words, {meta['seconds']}s, model={meta['model']}"
         f"{' FALLBACK' if r['fallback_used'] else ''}, cost≈${meta['est_cost_usd']})")
+    return 0
+
+
+def cmd_fix(a) -> int:
+    """FIX-IN-PLACE for Phase 4 findings: model-written replacements, exact-string splices, re-checked."""
+    global CMD, CALLER
+    CMD = "fix"
+    draft = pathlib.Path(a.draft)
+    fmt = a.format or ("json" if draft.suffix == ".json" else "markdown")
+    if not CALLER:
+        parts = draft.resolve().parts
+        if "reports" in parts and parts.index("reports") + 1 < len(parts):
+            CALLER = parts[parts.index("reports") + 1]
+    a.prompt = a.prompt or a.facts
+    a.out = str(draft)
+    raw = draft.read_text()
+    page = json.loads(raw, strict=False) if fmt == "json" else raw
+    # the page's own slug wins: verify() would otherwise "repair" it to the file name
+    a.slug = a.slug or (page.get("slug") if isinstance(page, dict) else "") or draft.name.split(".")[0]
+    findings_text = pathlib.Path(a.findings).read_text().strip()
+    if not findings_text:
+        log("fix: findings file is empty — nothing to do"); return 0
+    prompt = (f"SOURCE\n======\n{_source_text(a)}\n\nAUDIT FINDINGS\n==============\n{findings_text}\n\n"
+              f"UNITS\n=====\n{_units_block(page, fmt)}\n")
+    found = _checker_call(FIX_SYSTEM, prompt)
+    if found is None:
+        die(3, "fix: the model call failed — nothing was changed")
+    n = len(list(draft.parent.glob(draft.name + ".pre-fix-*"))) + 1
+    draft.with_name(f"{draft.name}.pre-fix-{n}").write_text(raw)
+    page, ok, bad = apply_findings(page, fmt, found, src=_source_text(a), on_new="skip")
+    cc = {"passes": 0, "found": [], "applied": [], "unapplied": [], "remaining": []}
+    if a.facts and CLAIMCHECK_ON:
+        # a replacement must not smuggle in a new claim: one pass, and what it finds is deleted
+        page, cc = claim_check(page, fmt, a, passes=1, delete_from=0)
+    report = {"repairs": [], "flags": []}
+    page, report = _finish_guards(page, fmt, a, report, cc)
+    draft.write_text(page if fmt == "markdown" else json.dumps(page, ensure_ascii=False, indent=2))
+    mp = draft.with_suffix(draft.suffix + ".meta.json")
+    meta = json.loads(mp.read_text()) if mp.exists() else {"slug": a.slug}
+    g = meta.setdefault("guards", {})
+    g.setdefault("fixes", []).append({
+        "round": n, "at": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "findings_file": str(a.findings),
+        "applied": ok, "not_fixable_in_place": bad, "claim_check": cc,
+        "words": report.get("words"), "flags": report.get("flags")})
+    meta["words"] = report.get("words", meta.get("words"))
+    g["flags"] = report.get("flags", [])
+    g["numbers_not_in_facts"] = report.get("numbers_not_in_facts", g.get("numbers_not_in_facts"))
+    mp.write_text(json.dumps(meta, indent=1))
+    log(f"fix round {n} on {draft}: {len(ok)} finding(s) fixed in place, {len(bad)} not fixable in place, "
+        f"{len(cc.get('applied', []))} further unsupported claim(s) deleted by the re-check; "
+        f"{report.get('words')} words (floor {a.floor or '-'}); backup {draft.name}.pre-fix-{n}")
+    for b in bad:
+        log(f"   NOT FIXABLE IN PLACE ({b.get('reason')}): {str(b.get('quote') or b.get('finding'))[:120]!r}")
+    for fl in report.get("flags", []):
+        log(f"   FLAG: {fl[:200]}")
     return 0
 
 
@@ -1171,11 +1806,21 @@ def main(argv=None) -> int:
     sy.add_argument("--voice", default="", help="file with the real page to imitate (JSON or markdown)")
     sy.add_argument("--contract", default="", help="file with the output contract for this page shape")
     sy.add_argument("--out", required=True)
+    fx = sub.add_parser("fix", help="FIX-IN-PLACE a draft for Phase 4 findings (model-written replacements, re-checked)")
+    fx.add_argument("--draft", required=True, help="the draft file (.json page object or markdown); edited in place, backup kept")
+    fx.add_argument("--findings", required=True, help="text file with the auditor's findings for THIS page (quotes + defects)")
+    fx.add_argument("--facts", default="", help="the closed fact list (usually the row prompt)")
+    fx.add_argument("--prompt", default="", help="the row prompt, if separate from --facts")
+    fx.add_argument("--allowed-urls", dest="allowed_urls", default="")
+    fx.add_argument("--slug", default="")
+    fx.add_argument("--floor", type=int, default=0)
+    fx.add_argument("--schema", default="none", choices=sorted(SCHEMAS))
+    fx.add_argument("--format", default="", choices=["", "json", "markdown"])
     a = ap.parse_args(argv)
     if a.cmd == "section":
         a.format, a.schema = "markdown", "none"
     return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write,
-            "usage": cmd_usage, "system": cmd_system}[a.cmd](a)
+            "usage": cmd_usage, "system": cmd_system, "fix": cmd_fix}[a.cmd](a)
 
 
 if __name__ == "__main__":
