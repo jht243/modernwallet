@@ -1,0 +1,50 @@
+{
+ "slug": "trump-account-alternatives",
+ "sha": "319abcd",
+ "round": 1,
+ "verdict": "FAIL",
+ "mechanical": [
+  {
+   "old": "you can still open a Trump Account \u2014 but you get zero seed money",
+   "new": "you can still open a Trump Account, but you get zero seed money"
+  },
+  {
+   "old": "3. Custodial Roth IRA \u2014 best for a working teen",
+   "new": "3. Custodial Roth IRA: best for a working teen"
+  },
+  {
+   "old": "Your child must have a job \u2014 babysitting, a summer role, or a first W-2 \u2014 to contribute at all.",
+   "new": "Your child must have a job (babysitting, a summer role, or a first W-2) to contribute at all."
+  }
+ ],
+ "fixes": [
+  {
+   "old": "A 529 plan serves families focused strictly on tax-free college savings, while a custodial brokerage account under the Uniform Transfers to Minors Act (UTMA) or Uniform Gifts to Minors Act (UGMA) fits parents who want flexible spending without contribution caps. A custodial Roth IRA works for a teenager with earned income, a Coverdell Education Savings Account (ESA) covers smaller education goals up to $2,000 annually, and high-yield savings accounts or Treasury inflation-protected I bonds protect cash needed on a shorter timeline. If you weigh a [Trump Account vs a 529](/compare/trump-account-vs-529/), the broader utility of these established vehicles often outweighs the restrictions tied to the newer model.",
+   "new": "A 529 plan fits families saving for college, and its qualified education withdrawals are tax-free. A custodial brokerage account under the Uniform Transfers to Minors Act (UTMA) or Uniform Gifts to Minors Act (UGMA) fits parents who want flexible spending with no contribution cap. A custodial Roth IRA fits a teenager with earned income. A Coverdell Education Savings Account (ESA) covers smaller education goals, up to $2,000 a year per child. A high-yield savings account or I bonds hold money needed sooner or kept safe. To compare the first option with the Trump Account directly, read [Trump Account vs a 529](/compare/trump-account-vs-529/).",
+   "why": "Overloaded sentences (45+ words, 5 goals chained); 'Treasury inflation-protected I bonds' is not on the closed fact list and reads as TIPS (I bonds are not); closing sentence ('broader utility ... often outweighs the restrictions tied to the newer model') is a vague hedged judgment with a coy 'newer model'.",
+   "source": "https://www.irs.gov/pub/irs-drop/n-25-68.pdf"
+  },
+  {
+   "old": "Our guide on [how a Trump Account works](/guides/trump-accounts/) breaks down how these outside contributions share an annual $5,000 cap with family deposits for 2026 and 2027.",
+   "new": "Employer and family contributions share an annual $5,000 cap for 2026 and 2027, while qualified general contributions fall outside that cap. [How a Trump Account works](/guides/trump-accounts/) covers the full contribution rules.",
+   "why": "Wrong: per Notice 2025-68 only employer and other-source contributions share the $5,000 cap; qualified general contributions, the pilot deposit and rollovers are exempt. Contradicts the closed fact list.",
+   "source": "https://www.irs.gov/pub/irs-drop/n-25-68.pdf"
+  },
+  {
+   "old": "Unlike the Trump Account's single index fund and age-18 lock",
+   "new": "Unlike the Trump Account's index-fund-only rule and age-18 lock",
+   "why": "Outdated/contradicts corrected text: Trump Account may hold a low-fee index fund of mainly U.S. companies, not a single fund.",
+   "source": "https://www.irs.gov/pub/irs-drop/n-25-68.pdf"
+  },
+  {
+   "old": "For 2025, you can contribute the lesser of their earned income or $7,000.",
+   "new": "For 2026, you can contribute the lesser of their earned income or $7,500.",
+   "why": "Outdated IRA limit; contradicts corrected Roth section.",
+   "source": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+  }
+ ],
+ "rework": [],
+ "out_of_scope": [
+  "fact-unverified: Kiddie tax sentence ('large balances get taxed at parent rates') in the UTMA section is simplified; not verified against IRS Pub. 929"
+ ]
+}
