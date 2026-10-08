@@ -171,7 +171,8 @@ def _paras_html(paras) -> str:
             continue
         lines = [ln.strip() for ln in p.split("\n") if ln.strip()]
         if all(re.match(r"[-*]\s+", ln) for ln in lines):
-            blocks.append("<ul>" + "".join(f"<li>{_md_inline(re.sub(r'^[-*]\s+', '', ln))}</li>"
+            _bullet = re.compile(r"^[-*]\s+")       # no backslash inside the f-string: py3.11 rejects it
+            blocks.append("<ul>" + "".join(f"<li>{_md_inline(_bullet.sub('', ln))}</li>"
                                            for ln in lines) + "</ul>")
         else:
             blocks.append(f"<p>{_md_inline(' '.join(lines))}</p>")
