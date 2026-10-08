@@ -176,6 +176,10 @@ def recently_edited(path: str, B) -> str | None:
     """Why the page must wait, if ANY routine changed its stored source in the last 14 days.
     Generic across file backends: the page's current source must appear verbatim in its file as it
     was 14 days ago. Returns None when the page is untouched (or the backend has no files)."""
+    if B.cfg.get("backend") == "pg_rows":
+        # Database pages (rankandpay): rows are only snapshotted after detection (pg_mcp.py), and their
+        # history is updated_at, not git. The run's own ledger cooldown still applies.
+        return None
     page = B.locate(path)
     if page is None:
         return "page source not found"
@@ -184,9 +188,18 @@ def recently_edited(path: str, B) -> str | None:
     old = _commit_before()
     if not old:                       # history unavailable: can't prove the page is untouched → wait
         return f"cannot verify edits in the last {RECENT_EDIT_DAYS} days (no git history)"
-    src = subprocess.run(["git", "show", f"{old}:{page.files[0]}"], cwd=ROOT,
-                         capture_output=True, text=True).stdout
-    return None if page.native in src else f"edited in the last {RECENT_EDIT_DAYS} days"
+    rel = page.files[0]
+    cur = (ROOT / rel).read_text(errors="ignore") if (ROOT / rel).exists() else ""
+    if page.native and page.native in cur:
+        # page lives inside a shared data file (TS entries, Python dicts): the page's own text must be
+        # unchanged since the old commit — other pages in the same file may change freely
+        src = subprocess.run(["git", "show", f"{old}:{rel}"], cwd=ROOT, capture_output=True, text=True).stdout
+        return None if page.native in src else f"edited in the last {RECENT_EDIT_DAYS} days"
+    # page is assembled from several files (Jinja template + catalog): its first file is the page's own
+    # template — any commit to it inside the window counts as an edit (2026-10-07 psych_report)
+    hit = subprocess.run(["git", "log", "-1", "--format=%h", f"{old}..HEAD", "--", rel], cwd=ROOT,
+                         capture_output=True, text=True).stdout.strip()
+    return f"edited in the last {RECENT_EDIT_DAYS} days" if hit else None
 
 
 def detect(gsc, site, ga4, prop, end: date, pick: int, B):
@@ -211,20 +224,33 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
     for r in PQ:
         by_page.setdefault(r["keys"][0], []).append(r)
 
+    # small sites: a 500-impression floor can exclude almost every page (modernwallet: 302 of 310) —
+    # use the site's own 90th-percentile page instead when that is lower (never below 150)
+    impr_sorted = sorted(r["impressions"] for r in P90.values())
+    p90 = impr_sorted[int(len(impr_sorted) * 0.9)] if impr_sorted else MIN_IMPR_90D
+    floor = max(150, min(MIN_IMPR_90D, p90))
     # this site's own CTR curve: median page CTR per position band (pages with real volume)
     bands: dict[int, list[float]] = {i: [] for i in range(len(BANDS))}
     for r in P90.values():
-        if r["impressions"] >= MIN_IMPR_90D and r["position"] <= RANK_MAX_POS:
+        if r["impressions"] >= floor and r["position"] <= RANK_MAX_POS:
             bands[band_of(r["position"])].append(r["clicks"] / r["impressions"])
     medians = {i: (statistics.median(v) if v else 0.0) for i, v in bands.items()}
 
     host_tokens = set(re.split(r"[^a-z0-9]+", urllib.parse.urlparse(site.replace("sc-domain:", "https://")).netloc.lower()))
     stats = {"pages_90d": len(P90), "below_impression_floor": 0, "too_young": 0, "nav_or_hub": 0,
-             "mostly_synthetic": 0, "beyond_page_2": 0, "ctr_ok": 0, "cooldown": 0, "recently_edited": 0}
+             "mostly_synthetic": 0, "beyond_page_2": 0, "ctr_ok": 0, "cooldown": 0, "recently_edited": 0,
+             "impression_floor": floor}
     cands, skipped = [], []
+    best_url: dict[str, str] = {}                     # one candidate per path (GSC can list URL variants)
+    for url, r in P90.items():
+        p = path_of(url)
+        if p not in best_url or r["impressions"] > P90[best_url[p]]["impressions"]:
+            best_url[p] = url
     for url, r in P90.items():
         path = path_of(url)
-        if r["impressions"] < MIN_IMPR_90D:
+        if best_url.get(path) != url:
+            continue
+        if r["impressions"] < floor:
             stats["below_impression_floor"] += 1
             continue
         if path == "/":                               # home; other non-content pages fail B.locate below
