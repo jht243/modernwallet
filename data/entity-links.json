@@ -139,5 +139,10 @@
  "Unusual Whales": "https://unusualwhales.com/",
  "Visual Crossing": "https://www.visualcrossing.com/",
  "Bitstamp": "https://www.bitstamp.net/",
- "Grok": "https://grok.com/"
+ "Grok": "https://grok.com/",
+ "Killswitch": {
+  "url": "https://killswitch.rip/",
+  "sponsored": true,
+  "company": "killswitch.rip"
+ }
 }

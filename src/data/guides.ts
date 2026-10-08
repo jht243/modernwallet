@@ -28,6 +28,104 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── Killswitch deep dive 2026-10-08 ──
+  {
+    "slug": "killswitch-review",
+    "updated": "2026-10-08",
+    "title": "Killswitch Review 2026: $69 Will, $99 for Three Documents",
+    "metaDescription": "Killswitch review: a $69 online will, or $99 for a will, power of attorney, and healthcare directive. Pricing, state coverage, limits, and who it fits.",
+    "h1": "Killswitch Review: A $99 Estate Plan You Can Read Before You Pay",
+    "cardBlurb": "Killswitch sells a $69 will or $99 for all three core documents, with a free preview before you pay. Here is what you get, what it skips, and who it fits.",
+    "introText": "Killswitch is an online estate planning service that sells a last will for $69, or a will, financial power of attorney, and advance healthcare directive together for $99, paid once. You can build and read every document free before you pay anything.\n\nAt ModernWallet, we review estate planning software against the documents a household actually needs and what each service charges for them. We went through Killswitch's published pricing, its product limits, and its state signing guides, and compared it with the services in our [best estate planning software](/roundup/best-estate-planning-software/) roundup.\n\nThe short version: Killswitch is one of the cheapest paid ways to get the three core non-trust documents, and it lets you see the finished will before you buy. It does not sell trusts, and no attorney reviewed its templates. If your estate is simple, that trade is often fine. If it isn't, the [estate planning calculator](/estate-planning/) will tell you which tier of plan you need first.",
+    "sections": [
+      {
+        "heading": "What Killswitch costs",
+        "body": "Every Killswitch document is a one-time purchase. There is no subscription on the documents themselves.\n\n- Last will and testament: $69\n- Financial power of attorney: $39\n- Advance healthcare directive: $39\n- All three together: $99, versus $147 bought separately\n\nIf you buy the will first and decide later that you want the full set, what you already paid is credited toward the $99 bundle, so you pay only the difference.\n\nThe one recurring charge is optional. Killswitch Crypt is an encrypted vault for account numbers, insurance policies, and passwords your family would otherwise have to hunt for. It costs $49 a year and renews until you cancel. You don't need it to get valid documents.\n\nThe pricing page does not list a couples package. Each spouse needs a separate will anyway, so a married couple buying the full set should plan on two $99 bundles, or $198."
+      },
+      {
+        "heading": "How the free preview works",
+        "body": "Killswitch lets you answer the questions, build the document, and read it end to end before paying. The preview carries a watermark so the free copy can't be signed and used.\n\nPaying removes the watermark and gives you a clean PDF along with your state's signing and witnessing instructions printed on the document. Killswitch says most people finish a document in about 30 minutes.\n\nThis order matters more than it sounds. With most services you commit money first and find out whether the questions fit your family second. Here you can confirm the will names the right executor, beneficiaries, and guardian for minor children before you spend $69."
+      },
+      {
+        "heading": "Updates, refunds, and what locks",
+        "body": "After you buy, the will stays editable. You can change beneficiaries, executors, or guardians and download an updated PDF at no extra cost. Two fields lock once you pay: your legal name and your date of birth, since those identify the document you bought.\n\nRemember that editing the file is not the same as changing your will. A new version only takes legal effect once you sign it again with the witnesses your state requires.\n\nRefunds are available for 14 days from purchase, for the full price. They take 5 to 10 business days to process, and your documents are deleted when the refund goes through, so download anything you want to keep first."
+      },
+      {
+        "heading": "How the templates are built",
+        "body": "Killswitch says its templates are drafted from published state statutes and the uniform codes behind them. No attorney reviewed them, and the company is clear that it is not a law firm and does not give legal advice.\n\nThe check it offers instead is citation. Each state page names the statute it relies on. Its Texas will guide, for example, is built on Tex. Est. Code §251.051 and spells out the details people get wrong: Texas requires two or more credible witnesses age 14 or older who sign in your presence, a notary is not required for the will to be valid, and a self-proving affidavit under §251.104 is optional but makes probate easier.\n\nThat level of state detail is useful whatever service you use. Online wills usually fail at signing, not drafting. A missing witness or a beneficiary who signs as a witness causes more trouble than the wording of the document."
+      },
+      {
+        "heading": "What Killswitch does not do",
+        "body": "Killswitch publishes a list of what it does not sell, which makes the decision easier:\n\n- Living trusts, including revocable living trusts\n- Special-needs trusts\n- Business succession planning\n- Estate-tax structuring\n- Probate services\n- Notarization or remote online notarization\n- Legal advice or attorney review of your documents\n\nIt is also web only, with no mobile app, and U.S. only. And it is new: the product launched in July 2025, so it has a shorter track record than LegalZoom (2001) or Trust & Will (2017).\n\nOne naming note: Killswitch at killswitch.rip is unrelated to other products called Killswitch, including dead-man's-switch services and killswitch.app."
+      },
+      {
+        "heading": "Killswitch vs Trust & Will, FreeWill, LegalZoom, and Nolo",
+        "body": "Against the services in our [estate planning software roundup](/roundup/best-estate-planning-software/), Killswitch sits at the low end on price and the narrow end on scope.\n\n- **FreeWill** costs $0 for a will, power of attorney, and healthcare directive, paid for by nonprofit partnerships. If cost is the only factor and your case is simple, FreeWill is cheaper.\n- **Trust & Will** charges $199 for an individual will that includes the power of attorney and healthcare directive, offers a $299 attorney-review add-on, and sells trusts from $499. You pay about twice as much as Killswitch for that wider scope.\n- **LegalZoom Basic** starts at $129, but the Basic tier does not include the power of attorney or healthcare directive.\n- **Nolo Quicken WillMaker** starts at $99 as desktop software, and you buy it again each year to get the latest version.\n\nSo the case for Killswitch is narrower than \"cheapest.\" It is the low-cost paid option on the web with all three core documents, a full preview before payment, and free edits afterward. For a side-by-side of online tools and attorneys, see [online will vs lawyer](/compare/online-will-vs-lawyer/)."
+      },
+      {
+        "heading": "Who Killswitch fits, and who should skip it",
+        "body": "Killswitch fits you if most of these are true:\n\n- You need a will, a financial power of attorney, and a healthcare directive, but not a trust.\n- Your estate is simple: clear heirs, no business, no special-needs dependent.\n- You want to name a guardian for minor children without paying attorney rates.\n- You are comfortable following printed signing instructions and gathering your own witnesses.\n\nSkip it and look at a trust product or an attorney if you own real estate in more than one state, have a blended family, own a business, have a special-needs dependent, or have a net worth near a state estate tax threshold. Oregon's starts at $1 million and Massachusetts' at $2 million. Our [living trust cost calculator](/estate-planning/living-trust-cost-calculator/) and [living trust vs will](/compare/living-trust-vs-will/) comparison will show whether a trust is worth it for you, and the [will cost calculator](/estate-planning/will-cost-calculator/) shows what an attorney-drafted will runs in your state."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/estate-planning/",
+        "label": "Estate planning calculator"
+      },
+      {
+        "href": "/estate-planning/will-cost-calculator/",
+        "label": "Will cost calculator"
+      },
+      {
+        "href": "/estate-planning/living-trust-cost-calculator/",
+        "label": "Living trust cost calculator"
+      },
+      {
+        "href": "/roundup/best-estate-planning-software/",
+        "label": "Best estate planning software"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does Killswitch cost?",
+        "answer": "A Killswitch will costs $69, paid once. The financial power of attorney and advance healthcare directive are $39 each, or you can buy all three for $99. Building and previewing is free; you pay to download the clean PDF. The only recurring charge is the optional Killswitch Crypt vault at $49 a year."
+      },
+      {
+        "question": "Is a Killswitch will legally valid?",
+        "answer": "A Killswitch will can be valid in any U.S. state if you sign it the way your state requires. Validity comes from execution, not the software: the right number of witnesses, signing in their presence, and a notary where your state needs one. Killswitch prints your state's signing instructions on the document, but it does not notarize or guarantee validity."
+      },
+      {
+        "question": "Did an attorney review Killswitch's templates?",
+        "answer": "No. Killswitch says its templates are built from published state statutes and uniform codes, and each state page cites the statute it relies on so you can check it. Killswitch is not a law firm and does not give legal advice. If you want attorney review, Trust & Will sells a $299 add-on and LegalZoom Premium includes a consultation."
+      },
+      {
+        "question": "Does Killswitch offer living trusts?",
+        "answer": "No. Killswitch sells a will, a financial power of attorney, and an advance healthcare directive. It does not offer revocable living trusts, special-needs trusts, or estate-tax planning. If you need a trust, Trust & Will, LegalZoom, or Nolo WillMaker Plus are the online options covered in our estate planning software roundup."
+      },
+      {
+        "question": "Can I change my Killswitch will after I buy it?",
+        "answer": "Yes. You can keep editing the will and download an updated PDF at no extra cost. Your legal name and date of birth lock after purchase. Any new version needs to be signed and witnessed again to replace the old one."
+      },
+      {
+        "question": "What is Killswitch's refund policy?",
+        "answer": "Killswitch refunds the full purchase price within 14 days. Refunds take 5 to 10 business days, and your documents are deleted when the refund is processed."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tex. Est. Code §251.051 — Requirements for will",
+        "url": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm"
+      },
+      {
+        "label": "Uniform Law Commission — Uniform Probate Code",
+        "url": "https://www.uniformlaws.org/"
+      },
+      {
+        "label": "Cornell LII — Will execution overview",
+        "url": "https://www.law.cornell.edu/wex/will"
+      }
+    ]
+  },
   // ── competitor-monitor 2026-10-07 ──
   {
     "slug": "pay-for-delete-letters-explained",
