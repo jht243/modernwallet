@@ -14,6 +14,8 @@ export interface Guide {
    *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
   updated?: string;
   slug: string;
+  /** true = no Mediavine ads on this page (paid sponsor deep dives). */
+  noAds?: boolean;
   title: string;
   metaDescription: string;
   h1: string;
@@ -31,12 +33,13 @@ export const GUIDES: Guide[] = [
   // ── Killswitch deep dive 2026-10-08 ──
   {
     "slug": "killswitch-review",
+    "noAds": true,
     "updated": "2026-10-08",
     "title": "Killswitch Review 2026: $69 Will, $99 for Three Documents",
     "metaDescription": "Killswitch review: a $69 online will, or $99 for a will, power of attorney, and healthcare directive. Pricing, state coverage, limits, and who it fits.",
     "h1": "Killswitch Review: A $99 Estate Plan You Can Read Before You Pay",
     "cardBlurb": "Killswitch sells a $69 will or $99 for all three core documents, with a free preview before you pay. Here is what you get, what it skips, and who it fits.",
-    "introText": "Killswitch is an online estate planning service that sells a last will for $69, or a will, financial power of attorney, and advance healthcare directive together for $99, paid once. You can build and read every document free before you pay anything.\n\nAt ModernWallet, we review estate planning software against the documents a household actually needs and what each service charges for them. We went through Killswitch's published pricing, its product limits, and its state signing guides, and compared it with the services in our [best estate planning software](/roundup/best-estate-planning-software/) roundup.\n\nThe short version: Killswitch is one of the cheapest paid ways to get the three core non-trust documents, and it lets you see the finished will before you buy. It does not sell trusts, and no attorney reviewed its templates. If your estate is simple, that trade is often fine. If it isn't, the [estate planning calculator](/estate-planning/) will tell you which tier of plan you need first.",
+    "introText": "Killswitch is an online estate planning service that sells a last will for $69, or a will, financial power of attorney, and advance healthcare directive together for $99. You can build and read every document free before you pay anything.\n\nAt ModernWallet, we review estate planning software against the documents a household actually needs and what each service charges for them. We went through Killswitch's published pricing, its product limits, and its state signing guides, and compared it with the services in our [best estate planning software](/roundup/best-estate-planning-software/) roundup.\n\nThe short version: Killswitch is one of the cheapest paid ways to get the three core non-trust documents, and it lets you see the finished will before you buy. It does not sell trusts, and no attorney reviewed its templates. If your estate is simple, that trade is often fine. If it isn't, the [estate planning calculator](/estate-planning/) will tell you which tier of plan you need first.",
     "sections": [
       {
         "heading": "What Killswitch costs",

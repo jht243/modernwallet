@@ -10,8 +10,10 @@ export interface Props {
   noindex?: boolean;
   /** explicit robots meta (e.g. "noindex, follow"); overrides `noindex` */
   robots?: string;
+  /** true drops the Mediavine ad script (paid sponsor pages). */
+  noAds?: boolean;
 }
-const { title, description, canonical, noindex, robots } = Astro.props;
+const { title, description, canonical, noindex, robots, noAds } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 
 // Sitewide Organization JSON-LD (brand entity for SEO).
@@ -93,7 +95,7 @@ const websiteJsonLd = {
       }
     </style>
     <!-- Mediavine -->
-    <script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/5442bdab-1c3c-400e-a0f9-0120568ee0fd.js" is:inline></script>
+    {!noAds && <script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/5442bdab-1c3c-400e-a0f9-0120568ee0fd.js" is:inline></script>}
   </head>
   <body>
     <SiteHeader />

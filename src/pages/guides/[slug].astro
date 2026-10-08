@@ -57,7 +57,7 @@ const jsonLdArticle = articleSchema({
   sources: guide.sources,
 });
 ---
-<BaseLayout title={guide.title} description={guide.metaDescription}>
+<BaseLayout title={guide.title} description={guide.metaDescription} noAds={guide.noAds}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
