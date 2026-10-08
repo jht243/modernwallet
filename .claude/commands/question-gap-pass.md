@@ -97,6 +97,8 @@ Pages analyzed, total follow-up questions generated, sections added vs strengthe
 
 ## IndexNow Fallback Key (workflow-wide)
 
+**Submit with the fleet helper first:** `python3 .claude/scripts/indexnow-submit.py --urls-file <list>` (or pass the URLs as arguments). It uses the key Bing accepts for this host (a few hosts are pinned to an older key, so the fleet key returns 403 there), tries api.indexnow.org, then www.bing.com, then yandex.com, and relays through layer3labs-web `/api/indexnow-relay` when the sandbox blocks those hosts. Exit 0 means accepted. Use the manual steps below only if that script is missing. Never POST to `api.indexnow.com`; that host does not exist.
+
 If any phase in this workflow hits an IndexNow error — the site's `public/<32-hex>.txt` challenge file is missing, the key can't be discovered, or the IndexNow API returns a key-verification error (403/422) — **fall back to this project-wide key**:
 
 - **env var name:** `INDEXNOW_KEY`
