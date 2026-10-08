@@ -40,6 +40,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -63,6 +64,14 @@ FETCH_TIMEOUT = 30
 SLEEP_BETWEEN_FETCHES = 0.5     # seconds
 MAX_URLS_PER_COMPETITOR = 8000  # ignore sitemaps larger than this (runaway guard)
 MAX_SITEMAP_DEPTH = 5           # nested sitemapindex recursion limit
+# Time budget. The routine's background-command limit is 30 min, so detect must
+# finish well inside it. Pages left unfetched keep their old ledger state and are
+# picked up next run (new URLs stay unseen, lastmod advances stay un-acked).
+MAX_FETCHES_PER_COMPETITOR = int(os.environ.get("CM_MAX_FETCHES", "60"))
+RUN_BUDGET_SECONDS = int(os.environ.get("CM_RUN_BUDGET", str(20 * 60)))
+SITEMAP_BUDGET_SECONDS = int(os.environ.get("CM_SITEMAP_BUDGET", "180"))  # per competitor
+COMPETITOR_BUDGET_SECONDS = int(os.environ.get("CM_COMPETITOR_BUDGET", "150"))  # page fetches, per competitor
+_sitemap_deadline = float("inf")
 
 # ── Classification ────────────────────────────────────────────────────────────
 TOOL_RE = re.compile(r"\b(calculator|calculate|tool|assessment|quiz|configurator|estimator|simulator)\b", re.I)
@@ -348,7 +357,7 @@ def discover_sitemaps(domain: str, override: str | None) -> list[str]:
 
 def parse_sitemap(url: str, depth: int = 0) -> dict[str, str]:
     """Return {canonical_url: lastmod}. Recurses into <sitemapindex>."""
-    if depth > MAX_SITEMAP_DEPTH:
+    if depth > MAX_SITEMAP_DEPTH or time.monotonic() > _sitemap_deadline:
         return {}
     xml = fetch(url)
     if not xml:
@@ -379,9 +388,14 @@ def parse_sitemap(url: str, depth: int = 0) -> dict[str, str]:
 
 def collect_competitor_urls(comp: dict) -> dict[str, str]:
     """All sitemap URLs for a competitor → {canonical_url: lastmod}."""
+    global _sitemap_deadline
+    _sitemap_deadline = time.monotonic() + SITEMAP_BUDGET_SECONDS
     urls: dict[str, str] = {}
     for sm in discover_sitemaps(comp["domain"], comp.get("sitemap")):
         urls.update(parse_sitemap(sm))
+        if time.monotonic() > _sitemap_deadline:
+            print(f"  ! {comp['domain']}: sitemap budget ({SITEMAP_BUDGET_SECONDS}s) spent; using {len(urls)} URLs found so far")
+            break
         if len(urls) >= MAX_URLS_PER_COMPETITOR:
             print(f"  ! {comp['domain']}: hit MAX_URLS cap ({MAX_URLS_PER_COMPETITOR}); truncating")
             break
@@ -437,8 +451,12 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tu
     candidates: list[Candidate] = []
     fetch_failures: list[str] = []
     skipped_off_niche: list[dict] = []
+    deadline = time.monotonic() + RUN_BUDGET_SECONDS
 
     for comp in roster:
+        if time.monotonic() > deadline:
+            print(f"\n! run budget ({RUN_BUDGET_SECONDS}s) spent — skipping {comp['domain']} this run")
+            continue
         key = domain_key(comp["domain"])
         name = comp.get("name", key)
         if only and only.lower() not in key:
@@ -471,8 +489,14 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tu
         # are fetched lazily, only once, and only if we actually fetch a page.
         new_count = updated_count = retry_count = 0
         boiler_box: dict = {}
+        fetches = {"n": 0}
+        comp_deadline = min(deadline, time.monotonic() + COMPETITOR_BUDGET_SECONDS)
+
+        def _out_of_budget() -> bool:
+            return fetches["n"] >= MAX_FETCHES_PER_COMPETITOR or time.monotonic() > comp_deadline
 
         def _meta(u: str):
+            fetches["n"] += 1
             if "set" not in boiler_box:
                 boiler_box["set"] = boilerplate_headings(comp["domain"])
             return fetch_page_meta(u, boiler_box["set"])
@@ -520,6 +544,14 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tu
         # 2) Walk live URLs for new + materially-updated.
         for u, lm in live.items():
             rec = pages.get(u)
+            if _out_of_budget() and (rec is None or rec.get("status") == "fetch-failed"
+                                     or (lm and lm != rec.get("lastmod", ""))):
+                if fetches.get("warned") is None:
+                    fetches["warned"] = True
+                    print(f"  ! fetch budget reached ({fetches['n']} fetches); remaining changes wait for next run")
+                if rec is not None:
+                    rec["last_seen"] = today
+                continue
             if rec is None:
                 meta = _meta(u)
                 if meta is None:
