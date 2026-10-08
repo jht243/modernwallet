@@ -79,7 +79,30 @@ same file rank-drop uses; never type site values into commands.
 | Ledger | `reports/page-1-2-no-clicks/ledger.jsonl` |
 | Reports | `reports/page-1-2-no-clicks/<D>.{json,md}` + `.measure.{json,md}` + `<D>/packets/` |
 
-Postgres sites (`"backend": "pg_rows"`): follow the `pg_mcp.py` steps exactly as `rank-drop-recovery-auto.md` § Site config describes, with this routine's packets dir.
+### Postgres sites (`"backend": "pg_rows"` in site.json, e.g. rankandpay) — the PG CYCLE
+
+The cloud runner cannot reach the database; every row read/write goes through the Supabase MCP
+connector's `execute_sql`, scripted by `scripts/rank_drop/pg_mcp.py` (never hand-write SQL, never
+retype a row by hand). Two procedures, used at fixed points below:
+
+**PG LOAD** (once, right after Phase 0, BEFORE `prepare.py`):
+```bash
+python3 scripts/rank_drop/pg_mcp.py select --detect $OUT.json > /tmp/select.sql
+```
+→ run `/tmp/select.sql` with `execute_sql` → write the returned JSON rows to `/tmp/rows.json` →
+`python3 scripts/rank_drop/pg_mcp.py save --rows /tmp/rows.json`. Every picked page now has a snapshot;
+without this, `prepare.py` cannot locate the pages (2026-10-08 first run: only 2 of 6 loaded).
+
+**PG CYCLE** (after EVERY step that edits pages: `apply_data_refresh.py`, `apply_sections.py`,
+`apply_fixes.py`, `apply_sections.py --rework`, `revert_page.py`):
+1. `python3 scripts/rank_drop/pg_mcp.py pending` → for each listed `.sql` file, in order: run its
+   contents with `execute_sql`, then `python3 scripts/rank_drop/pg_mcp.py done --sql <file> --result '<json>'`.
+2. `python3 scripts/rank_drop/pg_mcp.py confirm > /tmp/confirm.sql` → run it with `execute_sql` →
+   save rows to `/tmp/rows.json` → `python3 scripts/rank_drop/pg_mcp.py save --rows /tmp/rows.json`.
+   This refreshes the snapshots to the POST-edit rows, so the next step (e.g. audit fixes) applies on
+   top of the new section. Skipping it makes every audit-fix pair "found 0x" (2026-10-08 first run).
+`inbound.py` does not support database pages and skips them by itself. Live pages may be cached for
+~75 min after a write; `finish_run.py`'s live check may time out on them, which is reported, not a failure.
 
 ## Phase 0 — Detect + measure (Google only)
 
@@ -114,6 +137,7 @@ and mark that ledger row `status: reverted` (edit only that row's status field i
 
 ```bash
 P=$OUT/packets
+# Postgres sites: run PG LOAD (Site config § Postgres) before this line
 python3 scripts/page12/prepare.py --detect $OUT.json --out $P
 DATAFORSEO_B64=… python3 scripts/page12/serp_read.py --packets $P
 python3 scripts/page12/diagnose.py --packets $P          # <slug>/diagnosis.json + $P/diagnosis.md
