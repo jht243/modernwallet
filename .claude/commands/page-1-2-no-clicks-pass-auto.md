@@ -79,11 +79,14 @@ same file rank-drop uses; never type site values into commands.
 | Ledger | `reports/page-1-2-no-clicks/ledger.jsonl` |
 | Reports | `reports/page-1-2-no-clicks/<D>.{json,md}` + `.measure.{json,md}` + `<D>/packets/` |
 
-### Postgres sites (`"backend": "pg_rows"` in site.json, e.g. rankandpay) — the PG CYCLE
+### Postgres sites (`"backend": "pg_rows"` in site.json, e.g. rankandpay) — PG LOAD + PG PUBLISH
 
 The cloud runner cannot reach the database; every row read/write goes through the Supabase MCP
-connector's `execute_sql`, scripted by `scripts/rank_drop/pg_mcp.py` (never hand-write SQL, never
-retype a row by hand). Two procedures, used at fixed points below:
+connector's `execute_sql`, scripted by `scripts/rank_drop/pg_mcp.py` — the same connector the site's
+other routines publish with. Never hand-write SQL, never retype a row by hand. Like a code site, NOTHING
+goes live before the audit: every edit step only QUEUES a guarded `.sql` file (and moves the cached row
+to the post-edit state, so the next edit chains on it); PG PUBLISH runs the queue once, in order, after
+Phase 5. Two procedures:
 
 **PG LOAD** (once, right after Phase 0, BEFORE `prepare.py`):
 ```bash
@@ -93,16 +96,20 @@ python3 scripts/rank_drop/pg_mcp.py select --detect $OUT.json > /tmp/select.sql
 `python3 scripts/rank_drop/pg_mcp.py save --rows /tmp/rows.json`. Every picked page now has a snapshot;
 without this, `prepare.py` cannot locate the pages (2026-10-08 first run: only 2 of 6 loaded).
 
-**PG CYCLE** (after EVERY step that edits pages: `apply_data_refresh.py`, `apply_sections.py`,
-`apply_fixes.py`, `apply_sections.py --rework`, `revert_page.py`):
-1. `python3 scripts/rank_drop/pg_mcp.py pending` → for each listed `.sql` file, in order: run its
-   contents with `execute_sql`, then `python3 scripts/rank_drop/pg_mcp.py done --sql <file> --result '<json>'`.
-2. `python3 scripts/rank_drop/pg_mcp.py confirm > /tmp/confirm.sql` → run it with `execute_sql` →
-   save rows to `/tmp/rows.json` → `python3 scripts/rank_drop/pg_mcp.py save --rows /tmp/rows.json`.
-   This refreshes the snapshots to the POST-edit rows, so the next step (e.g. audit fixes) applies on
-   top of the new section. Skipping it makes every audit-fix pair "found 0x" (2026-10-08 first run).
+**PG PUBLISH** (once, Phase 6 step 0 — after the audit and every fix/rework/revert is applied):
+1. `python3 scripts/rank_drop/pg_mcp.py pending` → for each listed `.sql` file, IN ORDER: pass its whole
+   contents to `execute_sql` as-is (values are base64-encoded, so the connector sees one plain
+   `UPDATE … WHERE page_key = '…'`), then `python3 scripts/rank_drop/pg_mcp.py done --sql <file> --result '<json>'`.
+   An empty result (`[]`) means the guard did not match (the live row changed since PG LOAD): record it,
+   skip the REST of that page's files, report the page as `not published` — never edit the SQL to force it.
+2. `python3 scripts/rank_drop/pg_mcp.py confirm > /tmp/confirm.sql` → run it → save rows to
+   `/tmp/rows.json` → `python3 scripts/rank_drop/pg_mcp.py save --rows /tmp/rows.json`.
+3. If `execute_sql` asks for a confirmation or times out: STOP publishing (do not retry, do not
+   rewrite the SQL), leave the rest pending, and report it in the email as the blocker.
 `inbound.py` does not support database pages and skips them by itself. Live pages may be cached for
 ~75 min after a write; `finish_run.py`'s live check may time out on them, which is reported, not a failure.
+
+**Shell:** never `rm` through an unguarded variable (`rm $P/x` is blocked by the runner's safety check); write `rm -f "${P:?}"/"${s:?}"/x`.
 
 ## Phase 0 — Detect + measure (Google only)
 
@@ -202,6 +209,7 @@ the page from up to 5 related pages, using the page's own new title/description)
 
 ## Phase 6 — Deploy once, verify, ledger, email
 
+0. Postgres sites: PG PUBLISH (Site config § Postgres), then commit the snapshots + `applied.jsonl`.
 1. `.claude/scripts/deploy-run-to-main.sh push`
 2. `RD_ENGINE=page-1-2-no-clicks-pass python3 scripts/rank_drop/finish_run.py --packets $P --date $D` — ledger
    row per PASSED page (with its pre-fix `baseline` from Google), live check, ONE IndexNow POST, commits

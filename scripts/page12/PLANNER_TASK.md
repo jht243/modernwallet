@@ -70,12 +70,12 @@ For each slug S in your batch:
 
 3. **Write**:
    - `$P/S/plan.json` — `{"slug", "lane": "SNIPPET"|"RANK", "action": "add_section"|"meta_only"|"no-fix",
-     "section_id": "<new kebab id, not in packet.sections>", "insert_before": "<first section id>",
+     "section_id": "<new kebab id, not in packet.sections>", "insert_before": "<first section id, or its heading text when the id is null (Postgres/Jinja sites)>",
      "meta": {"metaTitle": "…", "metaDescription": "…"}, "reader_question": "<the main search as a question>",
      "answer": "<the one-line answer>", "answer_placement": "section 1", "summary": "<one sentence>"}`
    - `$P/S/section.prompt.md` (add_section only), DATA ONLY, the Enrichment chapter's shape: one task
      line (answer "<main search>" in the first two sentences, then the listed questions, 120–220 words,
-     paragraphs only, no heading that repeats the H1); reader question / answer / placement; a
+     begin with exactly one "## " heading line — a short topic phrase, not the H1 or page title — then paragraphs only; every backend rejects a draft without it); reader question / answer / placement; a
      **CLOSED FACT LIST** (only facts from pricing_rows, the page itself AFTER your fact-edits, or a
      vendor page you fetched — with the sentence "anything not on this list, you do not know"); a
      **CLOSED URL LIST**; 1–2 internal links from routes.txt with anchor text.
