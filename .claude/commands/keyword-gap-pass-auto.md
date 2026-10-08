@@ -126,7 +126,7 @@ Respect the manual skill's ordering rules: never start a phase until every phase
 
 **Rule 6c is absolute and survives automation: update & add — NEVER regenerate or delete.** Existing pages are improved by targeted in-place `Edit` operations that change only what a chart row calls for. Never rewrite or "rebuild" a whole existing page, and never run a generator that regenerates page content wholesale — that is how good pages get flattened into thin templated content and how a site earns a sitewide quality demotion. If acting on a row would require regenerating or deleting a page, drop the row and record it under "Left for human".
 
-If Phase 4 (audit) hard-fails after 2 reworks per the manual skill's retry rule, **STOP**, `git reset --hard HEAD` to discard the staged work, and email failure. Do not push a run whose audit failed.
+**Phase 4 failures are handled per PAGE by `.claude/commands/_remediation-ladder.md`, never per run.** Claim and tell findings on a generated page go to `python3 scripts/lib/content_gen.py fix` (Rung 1); a re-audit that still finds claims or tells after a fix round is ANOTHER fix round (max 3 per page), not a failed attempt — never drop or regenerate a page because its first post-`fix` re-audit failed. Rung 2 regeneration (expand the closed fact list with sourced facts first) is capped at 2 per page; a page still failing after its 2nd regeneration is dropped ALONE — unstage it, keep it out of the sitemap and the IndexNow list, list it under "Left for human" with its outstanding findings — and the run continues with everything that passed. Never push a page that has not passed its audit. Only when a ladder rung cannot run at all (lint script broken, a standard file missing, the reviewer cannot run): **STOP**, `git reset --hard HEAD` to discard the staged work, and email failure.
 
 ## Auto-decision at the former Phase 8 push gate
 
@@ -134,7 +134,7 @@ The original skill stops at Phase 8 for the user to approve the push. The auto v
 
 | Condition (after Phase 7 returns) | Decision | Email status |
 |---|---|---|
-| Phase 4 audit hard-failed earlier | (already exited above) | `failure` |
+| A Phase 4 ladder rung could not run (see above) | (already exited above) | `failure` |
 | Any staged file is in a high-blast-radius path (below) | skip push, roll back the staging | `failure` (names the files) |
 | Nothing staged (every row turned out to be a no-op) | skip push | `no-changes` |
 | Otherwise | run **Phase 9** — `phase-9-commit-deliver.md` | `success` |

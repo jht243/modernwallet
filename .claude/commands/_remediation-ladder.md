@@ -67,14 +67,14 @@ python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt>
     --facts <row prompt> --floor <floor> [--allowed-urls <urls.txt>]
 ```
 
-It splices model-written replacements by exact string match (a replacement may only restate the fact list, or delete), runs one claim-check pass that deletes anything the replacements left unsupported, keeps a `.pre-fix-N` backup, and lists anything it could not fix as `NOT FIXABLE IN PLACE`. Then apply the draft to the store, re-run Rung 0, and re-audit **the fixed page in full** (the bar is unchanged: zero unsupported claims). `fix` never adds a fact and is not a rework attempt. Only what it lists as NOT FIXABLE IN PLACE, or a page its fixes push under the depth floor, goes to Rung 2.
+It splices model-written replacements by exact string match (a replacement may only restate the fact list, or delete), runs one claim-check pass that deletes anything the replacements left unsupported, keeps a `.pre-fix-N` backup, and lists anything it could not fix as `NOT FIXABLE IN PLACE`. Then apply the draft to the store, re-run Rung 0, and re-audit **the fixed page in full** (the bar is unchanged: zero unsupported claims). `fix` never adds a fact and is not a rework attempt, **and neither is a re-audit that still finds claims or tells after a fix round**: save those new findings to a fresh findings file and run `fix` again, up to **3 fix rounds per page** (pages near the fact-budget edge routinely need 2). A failed post-`fix` re-audit never counts toward the Rung 2 cap and never drops a page by itself (2026-10-08 keyword-gap: both drafts were dropped as "failed the audit twice" after one fix round, while same-day mindmap pages with thinner fact lists shipped after their second). Only what `fix` lists as NOT FIXABLE IN PLACE, a page its fixes push under the depth floor, an auditor note that the floor can only be met by restating facts, or a page still failing after 3 fix rounds goes to Rung 2.
 
 ### Rung 2 — REWORK (back to the writer, this page only)
 
 Reserved for findings that need new substance, new research, or a structurally different page:
 
 - a claim `content_gen.py fix` reported NOT FIXABLE IN PLACE (the page needs a fact it does not have)
-- depth under the floor after unsupported claims were removed: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
+- depth under the floor after unsupported claims were removed, or a page that can only reach its floor by restating the same facts: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
 - an experience claim `_experience.md` does not license
 - the wrong register for what the page does
 - depth under the floor for its page type

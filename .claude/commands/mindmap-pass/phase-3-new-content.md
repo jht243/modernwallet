@@ -106,9 +106,21 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
 4. **Phase 4 audit is the gate** — hand the auditor the closed fact list(s) AND the allowed URL
    list with the drafts, so a real sourced fact is not flagged as fabrication. Verify any
    "unsupported claim" finding against the source before acting on it. Fixes follow
-   `_remediation-ladder.md`: Rung-0 mechanical edits in place; anything larger is a
-   **regeneration** with a `# CORRECTIONS FROM THE PHASE 4 AUDIT` block appended to the row
-   prompt — never hand-write generated prose. Two failed regenerations → drop the page.
+   `_remediation-ladder.md`, **per page**: Rung-0 mechanical edits in place. Claim and tell
+   findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
+   **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
+   to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt>`,
+   then re-template and re-audit that page in full on the same bar. **A re-audit that still
+   finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
+   never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
+   both pages were dropped as "failed twice" after a single fix round). A **regeneration**
+   (Rung 2) is only for what `fix` lists as NOT FIXABLE IN PLACE, a page under its floor, an
+   auditor note that the floor can only be met by restating facts, or a page still failing
+   after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
+   `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
+   AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
+   never hand-write generated prose. Two failed regenerations → drop the page.
 
 `git add` your work; do NOT commit (Phase 9 commits).
 
