@@ -1422,7 +1422,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 41,
     metaTitle: "Emergency Fund Calculator: Target and Timeline",
     metaDescription:
-      "Free emergency fund calculator. Turn your essential monthly costs into an emergency fund target, check your current progress, and see how long it takes to save.",
+      "Free emergency fund calculator. Turn essential monthly costs into a savings target, check your progress, and see how long it takes to save.",
     targetKeyword: "emergency fund calculator",
     h1: "Emergency Fund Calculator",
     introText:
