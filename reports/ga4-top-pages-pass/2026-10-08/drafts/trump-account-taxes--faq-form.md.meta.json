@@ -1,0 +1,67 @@
+{
+ "slug": "trump-account-taxes--faq-form",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 134,
+ "floor": 0,
+ "input_tokens": 17915,
+ "output_tokens": 209,
+ "thinking_tokens": null,
+ "cached_tokens": 16856,
+ "est_cost_usd": 0.0028,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 134,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "You can submit Form 4547 at any time, including by e-filing it alongside your current-year income tax return or through trumpaccounts.gov when online elections open in mid-2026.",
+     "replacement": "You can submit Form 4547 at any time, including by e-filing it alongside your current-year income tax return or through trumpaccounts.gov, where online elections may be available starting in mid-2026.",
+     "type": "inference",
+     "why": "Source states online elections may be available in mid-2026, not that they definitely open."
+    },
+    {
+     "id": "L1",
+     "quote": "For a child born after December 31, 2024 and before January 1, 2029, check line 7 in Part III to request the initial government contribution, or leave line 7 blank if the child only qualifies for the standard account election described in our guide on [how to open a Trump Account](/guides/how-to-open-a-trump-account/).",
+     "replacement": "For a child born after December 31, 2024 and before January 1, 2029, check line 7 in Part III to request the pilot program contribution, or leave line 7 blank if the child only qualifies for the standard account election described in our guide on [how to open a Trump Account](/guides/how-to-open-a-trump-account/).Trim",
+     "type": "unsupported",
+     "why": "Source calls this the pilot program contribution, not an initial government contribution."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 131
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 47.8,
+ "response_id": "eWHHarCXF5SZ_uMP97SjqAE",
+ "generated_at": "2026-10-08T09:26:00+0000"
+}

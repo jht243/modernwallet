@@ -1,0 +1,143 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-07",
+  "window_start": "2026-10-07",
+  "window_end": "2026-10-07",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 69,
+      "sessions": 66,
+      "active_users": 64,
+      "clicks": 69
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 61,
+      "sessions": 64,
+      "active_users": 58,
+      "clicks": 61
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 46,
+      "sessions": 47,
+      "active_users": 47,
+      "clicks": 46
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 40,
+      "sessions": 42,
+      "active_users": 40,
+      "clicks": 40
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 23,
+      "sessions": 24,
+      "active_users": 22,
+      "clicks": 23
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 18,
+      "sessions": 18,
+      "active_users": 17,
+      "clicks": 18
+    },
+    {
+      "page": "/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 13,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 13
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 12,
+      "sessions": 10,
+      "active_users": 8,
+      "clicks": 12
+    },
+    {
+      "page": "/trump-account/",
+      "views": 12,
+      "sessions": 14,
+      "active_users": 12,
+      "clicks": 12
+    }
+  ],
+  "top10_pages_total_views": 309,
+  "top10_pages_total_clicks": 309,
+  "channel_split": {
+    "/guides/how-to-open-a-trump-account/": {
+      "Cross-network": 45,
+      "Unassigned": 21,
+      "Direct": 8,
+      "Organic Search": 8
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Cross-network": 42,
+      "Unassigned": 16,
+      "Organic Search": 15,
+      "Direct": 3
+    },
+    "/guides/trump-gold-coin/": {
+      "Cross-network": 39,
+      "Unassigned": 9,
+      "Organic Search": 3,
+      "Direct": 2,
+      "Organic Social": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Cross-network": 28,
+      "Organic Search": 11,
+      "Unassigned": 11
+    },
+    "/guides/trump-account-worth-it/": {
+      "Cross-network": 14,
+      "Unassigned": 7,
+      "Organic Search": 4,
+      "Direct": 3
+    },
+    "/guides/trump-account-rules/": {
+      "Cross-network": 13,
+      "Unassigned": 6,
+      "Direct": 2,
+      "Organic Search": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Cross-network": 11,
+      "Unassigned": 4,
+      "Organic Search": 1
+    },
+    "/": {
+      "Unassigned": 7,
+      "Direct": 6,
+      "Cross-network": 3,
+      "Referral": 2,
+      "Organic Search": 1
+    },
+    "/trump-account/": {
+      "Cross-network": 7,
+      "Unassigned": 7,
+      "Organic Search": 4
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Cross-network": 5,
+      "Organic Search": 4,
+      "Direct": 1,
+      "Unassigned": 1
+    }
+  }
+}

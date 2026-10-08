@@ -251,3 +251,11 @@
 | /guides/is-60-40-portfolio-dead | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
 | /guides/is-a-money-market-account-worth-it | 2026-10-07 | 1-2 | 0/0/1/0/0 | 0 |
 | /guides/is-social-security-taxable/ | 2026-10-07 | 1-2 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-10-08 | 69 | 0/0/1/0/0 | 0 |
+| /guides/trump-account-rules/ | 2026-10-08 | 18 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-worth-it/ | 2026-10-08 | 23 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-10-08 | 46 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-10-08 | 13 | 0/0/0/0/0 | 0 |
+| /roundup/best-brokers-for-treasury-bonds/ | 2026-10-08 | 12 | 0/0/0/0/0 | 0 |
+| /trump-account/ | 2026-10-08 | 12 | 0/0/0/0/0 | 0 |
+| / | 2026-10-08 | 15 | 0/0/0/0/0 | 0 |
