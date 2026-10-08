@@ -1,0 +1,67 @@
+{
+ "slug": "chase-travel-portal-worth-it--points-to-dollars",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 73,
+ "floor": 0,
+ "input_tokens": 17774,
+ "output_tokens": 214,
+ "thinking_tokens": null,
+ "cached_tokens": 16856,
+ "est_cost_usd": 0.0028,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 73,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "That dollar value rises only when you book travel through Points Boost or move points to airline and hotel transfer partners.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention booking travel, airlines, hotels, or value rising only through them."
+    },
+    {
+     "id": "L1",
+     "quote": "You also receive that same 1-cent rate when redeeming points for a statement credit through Pay Yourself Back toward eligible purchases from the prior 90 days.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE specifies purchases not in promotional categories or merchants, not eligible purchases."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 120
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 67.8,
+ "response_id": "eELHaouoMIu839IPwu7O6Qg",
+ "generated_at": "2026-10-08T07:14:03+0000"
+}

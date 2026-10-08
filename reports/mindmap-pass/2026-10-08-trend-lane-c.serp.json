@@ -1,0 +1,337 @@
+{
+ "rows": [
+  {
+   "keyword": "chase ultimate rewards points value",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "thepointsguy.com",
+    "www.dailydrop.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "community.vikunja.io",
+    "www.reddit.com",
+    "thepointsguy.com",
+    "frequentmiler.com",
+    "blog.fbasd.org",
+    "www.hustlermoneyblog.com",
+    "financebuzz.com",
+    "www.youtube.com",
+    "financebuzz.com",
+    "thepointsguy.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How much are 100,000 Chase Ultimate points worth?",
+    "How much are 50,000 Chase points worth in dollars?",
+    "Is 500,000 Chase points a lot?",
+    "How much are 200,000 Chase points worth?",
+    "Is 150,000 Chase Sapphire points a lot?",
+    "What is the best way to use Chase Ultimate Rewards points?"
+   ],
+   "related_searches": [
+    "Chase ultimate rewards points value sapphire",
+    "Chase ultimate rewards points value reddit"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, thepointsguy.com, www.dailydrop.com",
+   "se_results_count": 78100
+  },
+  {
+   "keyword": "chase ultimate rewards points to dollars",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "thepointsguy.com",
+    "www.dailydrop.com",
+    "www.cnbc.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "www.chase.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "thepointsguy.com",
+    "www.cnbc.com",
+    "www.cardonomics.com",
+    "www.forbes.com",
+    "www.chase.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much are 50,000 Chase points worth in dollars?",
+    "How much are 100,000 Chase Ultimate points worth?",
+    "How much are 20,000 Chase Ultimate Rewards points worth?",
+    "Is 10,000 Chase points a lot?",
+    "How long does it take to get 100,000 Chase points?",
+    "How much are 500,000 Chase points worth?"
+   ],
+   "related_searches": [
+    "Chase ultimate rewards points to dollars worth",
+    "Chase ultimate rewards points to dollars calculator",
+    "Chase ultimate rewards points to dollars free",
+    "How much is 10,000 Chase points worth",
+    "100,000 Chase points to dollars",
+    "Chase points value calculator",
+    "125,000 Chase points to dollars",
+    "How much is 75,000 Chase points worth for travel"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites www.nerdwallet.com, www.chase.com, thepointsguy.com, www.dailydrop.com",
+   "se_results_count": 100
+  },
+  {
+   "keyword": "best mortgage lenders",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.reddit.com",
+    "www.bogleheads.org",
+    "www.quora.com",
+    "www.americanhomelendingusa.com",
+    "www.realpha.com",
+    "reliancefinancial.com",
+    "www.houzz.com",
+    "wallethub.com",
+    "moreirateam.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.reddit.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "images": 2,
+    "local_pack": 3,
+    "organic": 18,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "What is the best mortgage lender right now?",
+    "Who is the best company to get a mortgage from?",
+    "Who are the top 5 mortgage lenders in the US?",
+    "How much income to qualify for a $200,000 mortgage?",
+    "Can I afford a 300k house on a $70k salary?",
+    "Can I afford a 250k house on a 40k salary?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.quora.com) incl. #1",
+   "se_results_count": 160000
+  },
+  {
+   "keyword": "best online will",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "aineow.com",
+    "theuswillregistry.org",
+    "www.reddit.com",
+    "www.essialaw.com.au",
+    "www.expatlegalwills.com",
+    "www.bogleheads.org",
+    "www.caring.com",
+    "www.quora.com",
+    "www.bogleheads.org",
+    "www.avforums.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Are online wills legitimate?",
+    "Which online will maker is the most trusted?",
+    "Do online wills hold up in court?",
+    "Can you legally make a will online?",
+    "What is the biggest mistake with wills?",
+    "Who cannot be a beneficiary of a will?"
+   ],
+   "related_searches": [
+    "Best online will reddit",
+    "Best online will template",
+    "Best online will free",
+    "Best online will california",
+    "Best online will 2022"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 478000
+  },
+  {
+   "keyword": "custodial account vs savings account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.synchrony.com",
+    "www.bergerfinancialgroup.com",
+    "www.savingforcollege.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "heritagefcu.com",
+    "www.investopedia.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "finelo.com",
+    "www.reddit.com",
+    "www.linkedin.com",
+    "theworldchangers.com",
+    "www.banks.com",
+    "forum.savingforcollege.com",
+    "www.federalpensionadvisors.com",
+    "www.facebook.com",
+    "www.quora.com",
+    "www.bogleheads.org"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.linkedin.com",
+    "www.facebook.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 16,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What are the downsides of a custodial account?",
+    "What is the best way to put money away for kids?",
+    "Is a 529 better than a savings account for a child?",
+    "Do parents pay taxes on custodial accounts?",
+    "Can I give my daughter $50,000 tax-free?",
+    "Can you write off custodial accounts?"
+   ],
+   "related_searches": [
+    "Custodial account vs savings account reddit",
+    "Custodial account vs savings account taxes",
+    "Custodial account vs savings account fidelity"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.linkedin.com, www.facebook.com, www.quora.com); AI Overview present, cites www.synchrony.com, www.bergerfinancialgroup.com, www.savingforcollege.com, www.schwab.com",
+   "se_results_count": 126000
+  },
+  {
+   "keyword": "529 vs brokerage account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.savingforcollege.com",
+    "www.farther.com",
+    "www.morningstar.com",
+    "www.youtube.com",
+    "blog.acadviser.com",
+    "slpwealth.com",
+    "www.cnbc.com",
+    "useorigin.com",
+    "augustuswealth.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.finra.org",
+    "www.facebook.com",
+    "www.merrilledge.com",
+    "investor.vanguard.com",
+    "faircollegefunding.com",
+    "smartasset.com",
+    "www.bogleheads.org",
+    "investor.vanguard.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What happens to 529 if a child does not go to college?",
+    "What is a brokerage account vs Roth IRA?",
+    "Are 529 accounts good?",
+    "Is it better to invest with a bank or a broker?",
+    "Where do millionaires keep their money if banks only insure $250k?",
+    "What is the downside to a brokerage account?"
+   ],
+   "related_searches": [
+    "529 vs brokerage account reddit",
+    "529 vs brokerage account vs 401k",
+    "Best 529 vs brokerage account",
+    "Fidelity 529 vs brokerage account",
+    "Why 529 plans are a bad idea",
+    "Best 529 plans",
+    "What is a 529 account",
+    "List what the 529 prepaid tuition plan covers and what the 529 college savings plan covers"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com) incl. #1; AI Overview present, cites www.reddit.com, www.savingforcollege.com, www.farther.com, www.morningstar.com",
+   "se_results_count": 143
+  }
+ ],
+ "cost": "DataForSEO: 6 calls, $0.02490 of $2.00 budget"
+}
