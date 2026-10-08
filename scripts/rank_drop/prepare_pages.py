@@ -350,13 +350,19 @@ def main(argv=None) -> int:
     for kind in sorted({q.get("kind") or "page" for q in queue}):
         tag = re.sub(r"[^\w-]+", "-", kind)
         sysf = out / ("system-" + tag + ".md")
-        voice = B.voice_sample(kind, editing)
+        # No DB connection in the cloud → no voice sample from the backend; fall back to a page of this
+        # type being edited (still real published text) so a system prompt ALWAYS exists.
+        voice = B.voice_sample(kind, editing) or next(
+            ((out / q["slug"] / "page.md").read_text() for q in queue
+             if (q.get("kind") or "page") == kind and (out / q["slug"] / "page.md").exists()), None)
         if voice:
             vf = out / ("voice-" + tag + ".txt")
             vf.write_text(voice)
-            subprocess.run([sys.executable, str(ROOT / "scripts/lib/content_gen.py"), "system",
-                            "--voice", str(vf), "--contract", str(contract), "--out", str(sysf)],
-                           capture_output=True)
+            r = subprocess.run([sys.executable, str(ROOT / "scripts/lib/content_gen.py"), "system",
+                                "--voice", str(vf), "--contract", str(contract), "--out", str(sysf)],
+                               capture_output=True, text=True)
+            if r.returncode or not sysf.exists():
+                print(f"WARN system prompt for {kind} not built: {(r.stderr or r.stdout)[-300:]}", file=sys.stderr)
     base = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     (out / "queue.json").write_text(json.dumps({"queue": queue, "skipped": skipped, "base_sha": base}, indent=2))
     print(f"OK packets={len(queue)} skipped={len(skipped)} → {out}")

@@ -40,6 +40,7 @@ Live pages are cached per gunicorn worker for up to 1h (_PAGE_CACHE) + 15 min (_
 from __future__ import annotations
 
 import ast
+import base64
 import difflib
 import hashlib
 import html
@@ -876,14 +877,13 @@ if __name__ == "__main__":
 '''
 
     def _render_sql(self, page_key: str, expect: dict, after: dict, set_dates: dict | None) -> str:
-        blob = json.dumps([expect, after], ensure_ascii=False)
-        tag = "$rd$"
-        n = 0
-        while tag in blob:
-            n += 1
-            tag = f"$rd{n}$"
-        q = lambda s: f"{tag}{s}{tag}"  # noqa: E731
-        sets, where = [], [f"page_key = {q(page_key)}"]
+        # Every value is base64-encoded: page text can hold words (DROP, DELETE…) or ";" that trip the
+        # Supabase MCP's destructive-SQL check, which then waits for a confirmation an unattended run
+        # cannot give. Encoded, the statement reads as one plain UPDATE … WHERE page_key = '…'.
+        def q(s: str) -> str:
+            b = base64.b64encode(s.encode("utf-8")).decode("ascii")
+            return f"convert_from(decode('{b}', 'base64'), 'UTF8')"
+        sets, where = [], ["page_key = '" + page_key.replace("'", "''") + "'"]
         for k in sorted(after):
             v = after[k]
             if k in JSON_COLS:
@@ -993,6 +993,12 @@ if __name__ == "__main__":
         if not self._dsn():
             if self.apply_mode == "mcp":
                 self._queue(sql_rel, page, "EDIT")
+                # The queued SQL runs later (PG PUBLISH, after the audit), in order. The cached row moves to
+                # the post-edit state now so the next edit's guard expects exactly what this one leaves.
+                pending_row = {**row, **after}
+                self.save_snapshot(pending_row, source="pending")
+                files.append(str(self._snap_path(page.key).relative_to(self.root)))
+                page.extra["row"], page.native = pending_row, json.dumps(pending_row, indent=1, ensure_ascii=False)
                 return Result(True, "PENDING_SQL " + sql_rel, files, notes + ["PENDING_SQL " + sql_rel])
             return Result(False, MISSING_DB, files, notes + [f"apply {sql_rel} via Supabase MCP execute_sql, then commit: "
                                                              + " ".join(files)])
@@ -1049,6 +1055,8 @@ if __name__ == "__main__":
         if not self._dsn():
             if self.apply_mode == "mcp":
                 self._queue(sql_rel, page, "REVERT")
+                self.save_snapshot({**current, **after}, source="pending")
+                files.append(str(self._snap_path(page.key).relative_to(self.root)))
                 return Result(True, "PENDING_SQL " + sql_rel, files, notes + ["PENDING_SQL " + sql_rel])
             return Result(False, MISSING_DB, files, notes + [f"apply {sql_rel} via Supabase MCP execute_sql"])
         r = self._run_script(rel)

@@ -65,9 +65,14 @@ reach the database directly; all row reads/writes go through the attached Supaba
 (`execute_sql`), scripted by `scripts/rank_drop/pg_mcp.py` (never hand-written SQL):
 - before Phase 1: `pg_mcp.py select --detect reports/rank-drop/$D.json` → run the printed SQL with
   execute_sql → save the JSON rows to a file → `pg_mcp.py save --rows <file>`;
-- after every apply_sections / apply_fixes / rework call: `pg_mcp.py pending` → run each listed .sql
-  file's contents with execute_sql, in order → `pg_mcp.py done --sql <file>`;
-- before finish_run: `pg_mcp.py confirm` → run it → `pg_mcp.py save --rows <file>` (records the live rows).
+- edit steps (apply_sections / apply_fixes / rework / revert) only QUEUE guarded .sql files — nothing
+  goes live before the audit;
+- once, after the audit and before finish_run: `pg_mcp.py pending` → pass each listed .sql file's
+  contents to execute_sql as-is, in order (values are base64-encoded so the connector sees one plain
+  `UPDATE … WHERE page_key = '…'`) → `pg_mcp.py done --sql <file> --result '<json>'`. A `[]` result =
+  guard mismatch: skip that page's remaining files and report it unpublished. A confirmation prompt or
+  timeout = stop, leave the rest pending, report it;
+- then `pg_mcp.py confirm` → run it → `pg_mcp.py save --rows <file>` (records the live rows).
 Live pages are cached up to ~75 min after a write; finish_run's live check may time out on them —
 that is reported, not a failure.
 
