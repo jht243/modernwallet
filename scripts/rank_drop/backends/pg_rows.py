@@ -74,6 +74,73 @@ _FALLBACK_LIMITS = {"TITLE_MIN": 50, "TITLE_MAX": 65, "SUMMARY_MIN": 140, "SUMMA
 _RENDER_CLIP = {"title": 70, "summary": 160, "subtitle": 115}
 
 
+def _jsonb_text(v) -> str:
+    """Postgres jsonb::text output (keys by length then bytes, ", " / ": " separators) — verified
+    against md5(col::text) on live landing_pages rows."""
+    if v is None:
+        return "null"
+    if v is True:
+        return "true"
+    if v is False:
+        return "false"
+    if isinstance(v, (int, float)):
+        return json.dumps(v)
+    if isinstance(v, str):
+        out = ['"']
+        for ch in v:
+            esc = {'"': '\\"', "\\": "\\\\", "\b": "\\b", "\f": "\\f", "\n": "\\n", "\r": "\\r", "\t": "\\t"}.get(ch)
+            out.append(esc if esc else (f"\\u{ord(ch):04x}" if ord(ch) < 0x20 else ch))
+        return "".join(out) + '"'
+    if isinstance(v, list):
+        return "[" + ", ".join(_jsonb_text(x) for x in v) + "]"
+    if isinstance(v, dict):
+        keys = sorted(v, key=lambda k: (len(k.encode()), k.encode()))
+        return "{" + ", ".join(_jsonb_text(k) + ": " + _jsonb_text(v[k]) for k in keys) + "}"
+    raise TypeError(f"unsupported JSON value {type(v)}")
+
+
+_SQL_RISKY = re.compile(r"\b(drop|delete|truncate|alter|grant|revoke|insert|update|create|execute|copy)\b|;|--|/\*", re.I)
+_TOK = re.compile(r"<[^>]*>|\\.|[^<\s\\]+|\s+", re.S)
+
+
+def _replace_chunks(a: str, b: str) -> list[tuple[str, str]] | None:
+    """(old, new) pairs that turn a into b when applied in order with SQL replace() (which, like
+    str.replace, replaces EVERY occurrence) — each old fragment unique at its step. None = no safe set."""
+    ta, tb = _TOK.findall(a), _TOK.findall(b)
+    if "".join(ta) != a or "".join(tb) != b:
+        return None
+    pa = [0]
+    for t in ta:
+        pa.append(pa[-1] + len(t))
+    pb = [0]
+    for t in tb:
+        pb.append(pb[-1] + len(t))
+    ops = [o for o in difflib.SequenceMatcher(None, ta, tb, autojunk=False).get_opcodes() if o[0] != "equal"]
+    spans = []
+    for _, i1, i2, j1, j2 in ops:
+        ctx = 0
+        while True:
+            x1, x2 = max(0, i1 - ctx), min(len(ta), i2 + ctx)
+            y1, y2 = j1 - (i1 - x1), j2 + (x2 - i2)
+            old = a[pa[x1]:pa[x2]]
+            if old and a.count(old) == 1:
+                break
+            if x1 == 0 and x2 == len(ta):
+                return None
+            ctx += 2
+        if spans and x1 <= spans[-1][1]:            # overlaps the previous chunk: merge
+            px1, _, py1, _ = spans.pop()
+            x1, y1 = min(x1, px1), min(y1, py1)
+        spans.append((x1, x2, y1, y2))
+    pairs = [(a[pa[x1]:pa[x2]], b[pb[y1]:pb[y2]]) for x1, x2, y1, y2 in spans]
+    cur = a
+    for o, n in pairs:
+        if cur.count(o) != 1:
+            return None
+        cur = cur.replace(o, n)
+    return pairs if cur == b else None
+
+
 # ---- small text helpers ------------------------------------------------------------------------
 def _plain(fragment: str) -> str:
     """Inner HTML -> the text a reader sees (tags stripped, entities decoded, whitespace collapsed)."""
@@ -394,11 +461,31 @@ class PgRows(Backend):
     def _snap_path(self, page_key: str, suffix: str = "") -> Path:
         return self.root / self.snap_dir / f"{_safe_key(page_key)}{suffix}.json"
 
-    def _queue(self, sql_rel: str, page: Page, kind: str):
+    def _queue(self, sql_rel: str, page: Page, kind: str, before: str | None = None, after: str | None = None,
+               dates: dict | None = None):
+        """before/after = snapshot files of this step's rows; dates None = now(), else explicit values.
+        pg_mcp.py publish collapses a page's queued steps into ONE net statement (first before → last after)."""
         q = self.root / self.snap_dir / "pending.jsonl"
         q.parent.mkdir(parents=True, exist_ok=True)
         with open(q, "a") as fh:
-            fh.write(json.dumps({"sql": sql_rel, "page_key": page.key, "path": page.path, "kind": kind}) + "\n")
+            fh.write(json.dumps({"sql": sql_rel, "page_key": page.key, "path": page.path, "kind": kind,
+                                 "before": before, "after": after, "dates": dates}) + "\n")
+
+    def render_net_sql(self, records: list[dict]) -> str | None:
+        """One guarded statement taking the live row (first step's before) to the last step's after."""
+        load = lambda f: _norm_row(json.loads((self.root / f).read_text())["row"])  # noqa: E731
+        first, last = load(records[0]["before"]), load(records[-1]["after"])
+        cols = [k for k in EDIT_COLS if first.get(k) != last.get(k)]
+        if not cols:
+            return None
+        if records[-1]["kind"] == "REVERT":
+            dates = records[-1].get("dates")
+        elif any(r["kind"] == "EDIT" and r.get("dates") is None for r in records):
+            dates = None
+        else:
+            dates = {k: str(first.get(k)) for k in ("updated_at", "last_generated_at") if first.get(k)} or None
+        return self._render_sql(records[0]["page_key"], {k: first.get(k) for k in cols},
+                                {k: last.get(k) for k in cols}, dates)
 
     def snapshot_select_sql(self, page_key: str) -> str:
         """The SELECT to run through the Supabase MCP; feed the row to save_snapshot()."""
@@ -636,6 +723,12 @@ class PgRows(Backend):
             for k in ("question", "answer", "q", "a"):
                 if isinstance(q.get(k), str):
                     hits += [("faq_json", "raw", (i, k))] * q[k].count(old)
+        if not hits and "|" in old:
+            # planners quote tables from page.md as "a | b | c" rows; the body stores <tr><td>a</td>…
+            row = self._replace_table_row(body, old, new)
+            if row is not None:
+                f["body_html"] = row
+                return f'body_html (table row): "{old[:80]}" -> "{new[:80]}"'
         if len(hits) != 1:
             where = sorted({h[0] for h in hits})
             raise ValueError(f"replace 'old' text found {len(hits)}x (need exactly 1){' in ' + ', '.join(where) if where else ''}: {old[:80]!r}")
@@ -664,6 +757,28 @@ class PgRows(Backend):
             faq[i][k] = faq[i][k].replace(old, plain_new, 1)
             f["faq_json"] = json.dumps(faq, ensure_ascii=False) if isinstance(f.get("faq_json"), str) else faq
         return f'{col}: "{old[:80]}" -> "{new[:80]}"'
+
+    @staticmethod
+    def _replace_table_row(body: str, old: str, new: str) -> str | None:
+        """Exactly one <tr> whose cell texts equal old's "|" cells → swap the changed cells' text."""
+        cells = lambda t: [c.strip() for c in t.strip().strip("|").split("|")]  # noqa: E731
+        want, repl = cells(old), cells(new)
+        if len(want) != len(repl):
+            return None
+        cell_rx = re.compile(r"(<t[dh]\b[^>]*>)(.*?)(</t[dh]>)", re.S | re.I)
+        found = []
+        for tr in re.finditer(r"<tr\b[^>]*>.*?</tr>", body, re.S | re.I):
+            cs = list(cell_rx.finditer(tr.group(0)))
+            if [_plain(c.group(2)).strip() for c in cs] == want:
+                found.append((tr, cs))
+        if len(found) != 1:
+            return None
+        tr, cs = found[0]
+        seg = tr.group(0)
+        for c, w, r in reversed(list(zip(cs, want, repl))):
+            if w != r:
+                seg = seg[:c.start(2)] + html.escape(r, quote=False) + seg[c.end(2):]
+        return body[:tr.start()] + seg + body[tr.end():]
 
     def _apply_ops(self, row: dict, ops: list[dict]) -> tuple[dict, list[str]]:
         f = json.loads(json.dumps({k: row.get(k) for k in EDIT_COLS}))  # deep copy
@@ -877,32 +992,44 @@ if __name__ == "__main__":
 '''
 
     def _render_sql(self, page_key: str, expect: dict, after: dict, set_dates: dict | None) -> str:
-        # Every value is base64-encoded: page text can hold words (DROP, DELETE…) or ";" that trip the
-        # Supabase MCP's destructive-SQL check, which then waits for a confirmation an unattended run
-        # cannot give. Encoded, the statement reads as one plain UPDATE … WHERE page_key = '…'.
-        def q(s: str) -> str:
-            b = base64.b64encode(s.encode("utf-8")).decode("ascii")
+        """Guarded UPDATE for the Supabase MCP path. The model passes this text to execute_sql by
+        retyping it, so it must be SMALL and typo-proof:
+          - each changed column is rewritten with nested replace(col, old, new) on only the changed
+            fragments (JSON columns on their exact jsonb::text form), never the whole value;
+          - WHERE md5(col) = <before> AND md5(<the replace expression>) = <after>: a wrong character
+            anywhere (fragment, hash) makes it update 0 rows — it can never write a corrupted page.
+        Fragments holding SQL keywords (DROP, DELETE…), ";", "--" or backslashes are base64-encoded:
+        the connector keyword-scans the text and would wait for a confirmation an unattended run can't
+        give (cloud probe 2026-10-08: plain 'drop' → prompt; base64 and plain replace() → ran)."""
+        def q(v: str) -> str:
+            if not _SQL_RISKY.search(v) and "\\" not in v:   # plain text: easy to copy exactly
+                return "'" + v.replace("'", "''") + "'"
+            b = base64.b64encode(v.encode("utf-8")).decode("ascii")
             return f"convert_from(decode('{b}', 'base64'), 'UTF8')"
+        md5 = lambda v: hashlib.md5(v.encode("utf-8")).hexdigest()  # noqa: E731
         sets, where = [], ["page_key = '" + page_key.replace("'", "''") + "'"]
         for k in sorted(after):
-            v = after[k]
-            if k in JSON_COLS:
-                sets.append(f"{k} = " + ("NULL" if v is None else f"{q(json.dumps(v, ensure_ascii=False))}::jsonb"))
+            is_json = k in JSON_COLS
+            old_v, new_v = expect.get(k), after[k]
+            col = f"{k}::text" if is_json else k
+            old_t = None if old_v is None else (_jsonb_text(old_v) if is_json else old_v)
+            new_t = None if new_v is None else (_jsonb_text(new_v) if is_json else new_v)
+            if new_t is None:
+                sets.append(f"{k} = NULL")
             else:
-                sets.append(f"{k} = " + ("NULL" if v is None else q(v)))
-        for k in sorted(expect):
-            v = expect[k]
-            if v is None:
-                where.append(f"{k} IS NULL")
-            elif k in JSON_COLS:
-                where.append(f"{k} = {q(json.dumps(v, ensure_ascii=False))}::jsonb")
-            else:
-                where.append(f"md5({k}) = '{hashlib.md5(v.encode()).hexdigest()}'")
+                pairs = _replace_chunks(old_t, new_t) if old_t is not None else None
+                if pairs is not None and sum(len(o) + len(n) for o, n in pairs) < len(new_t):
+                    expr = col
+                    for o, n in pairs:
+                        expr = f"replace({expr}, {q(o)}, {q(n)})"
+                else:
+                    expr = q(new_t)
+                sets.append(f"{k} = ({expr})::jsonb" if is_json else f"{k} = {expr}")
+                where.append(f"md5({expr}) = '{md5(new_t)}'")
+            where.append(f"{k} IS NULL" if old_t is None else f"md5({col}) = '{md5(old_t)}'")
         for k in ("updated_at", "last_generated_at"):
             sets.append(f"{k} = '{set_dates[k]}'::timestamp" if set_dates and set_dates.get(k) else f"{k} = now()")
-        return ("-- Guarded: updates 0 rows if the row no longer equals the snapshot (or is already applied).\n"
-                "-- Run through the Supabase MCP execute_sql when DATABASE_URL is not available.\n"
-                f"UPDATE {self.table} SET\n  " + ",\n  ".join(sets) + "\nWHERE " + "\n  AND ".join(where)
+        return (f"UPDATE {self.table} SET\n  " + ",\n  ".join(sets) + "\nWHERE " + "\n  AND ".join(where)
                 + "\nRETURNING page_key, updated_at;\n")
 
     def _preview(self, expect: dict, after: dict) -> str:
@@ -972,7 +1099,7 @@ if __name__ == "__main__":
         rel, seq = self._pick_script(page.path, today, expect, restore=False)
         sql_rel = rel[:-3] + ".sql"
         self._write(rel, self._render_script(rel, page.key, page.path, today, expect, after, notes, keep or None, "EDIT"))
-        self._write(sql_rel, self._render_sql(page.key, expect, after, None))
+        self._write(sql_rel, self._render_sql(page.key, expect, after, keep or None))
         diff = self._preview(expect, after)
         if dry_run:
             if preview is not None:
@@ -992,7 +1119,7 @@ if __name__ == "__main__":
         files = [rel, sql_rel, snap_b, snap_a]
         if not self._dsn():
             if self.apply_mode == "mcp":
-                self._queue(sql_rel, page, "EDIT")
+                self._queue(sql_rel, page, "EDIT", snap_b, snap_a, keep or None)
                 # The queued SQL runs later (PG PUBLISH, after the audit), in order. The cached row moves to
                 # the post-edit state now so the next edit's guard expects exactly what this one leaves.
                 pending_row = {**row, **after}
@@ -1054,7 +1181,14 @@ if __name__ == "__main__":
         files = [rel, sql_rel]
         if not self._dsn():
             if self.apply_mode == "mcp":
-                self._queue(sql_rel, page, "REVERT")
+                stamp = today.replace("-", "")
+                rb = f"{self.snap_dir}/{_safe_key(page.key)}.{stamp}.revert.before.json"
+                ra = f"{self.snap_dir}/{_safe_key(page.key)}.{stamp}.revert.after.json"
+                self._write(rb, json.dumps({"page_key": page.key, "row": current}, indent=1, ensure_ascii=False) + "\n")
+                self._write(ra, json.dumps({"page_key": page.key, "row": {**current, **after, **(dates or {})}},
+                                           indent=1, ensure_ascii=False) + "\n")
+                files += [rb, ra]
+                self._queue(sql_rel, page, "REVERT", rb, ra, dates)
                 self.save_snapshot({**current, **after}, source="pending")
                 files.append(str(self._snap_path(page.key).relative_to(self.root)))
                 return Result(True, "PENDING_SQL " + sql_rel, files, notes + ["PENDING_SQL " + sql_rel])

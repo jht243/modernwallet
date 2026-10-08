@@ -16,6 +16,10 @@ scripted, two-call exchange — the orchestrator never writes SQL itself:
       Run each file's contents with execute_sql, in order, then:
   pg_mcp.py done --sql <file> [--result <json from execute_sql>]
       marks it applied (pending.jsonl -> applied.jsonl) so finish_run / the next call skip it.
+  pg_mcp.py publish
+      PG PUBLISH (after the audit): ONE net guarded statement per page (live row → final audited row),
+      written to <snapshot_dir>/publish/<page>.sql; prints "<page_key> <file>" per page. Run each file
+      with execute_sql, then `pg_mcp.py done --page <page_key> --result '<json>'` (marks all its steps).
   pg_mcp.py confirm > /tmp/confirm.sql
       one SELECT re-reading every row touched this run; run it, then `pg_mcp.py save --rows …` again.
 """
@@ -44,8 +48,10 @@ def main(argv=None) -> int:
     s2 = sub.add_parser("save")
     s2.add_argument("--rows", required=True)
     sub.add_parser("pending")
+    sub.add_parser("publish")
     s4 = sub.add_parser("done")
-    s4.add_argument("--sql", required=True)
+    s4.add_argument("--sql", default="")
+    s4.add_argument("--page", default="")
     s4.add_argument("--result", default="")
     sub.add_parser("confirm")
     a = ap.parse_args(argv)
@@ -81,11 +87,38 @@ def main(argv=None) -> int:
             if x["sql"] not in applied:
                 print(x["sql"])
         return 0
+    if a.cmd == "publish":
+        applied = {json.loads(l)["sql"] for l in done.read_text().splitlines()} if done.exists() else set()
+        groups: dict[str, list[dict]] = {}
+        for l in pend.read_text().splitlines() if pend.exists() else []:
+            x = json.loads(l)
+            if x["sql"] not in applied:
+                groups.setdefault(x["page_key"], []).append(x)
+        out_dir = snap / "publish"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for key, recs in groups.items():
+            if not all(r.get("before") and r.get("after") for r in recs):
+                print(f"{key} LEGACY: run these files in order instead: " + " ".join(r["sql"] for r in recs))
+                continue
+            sql = B.render_net_sql(recs)
+            if sql is None:
+                print(f"{key} NOTHING (steps cancel out) — mark it: pg_mcp.py done --page '{key}' --result '[]'")
+                continue
+            f = out_dir / (pg_rows._safe_key(key) + ".sql")
+            f.write_text(sql)
+            print(f"{key} {f.relative_to(ROOT)}")
+        return 0
     if a.cmd == "done":
         snap.mkdir(parents=True, exist_ok=True)
+        if a.page:
+            sqls = [json.loads(l)["sql"] for l in pend.read_text().splitlines()
+                    if json.loads(l)["page_key"] == a.page] if pend.exists() else []
+        else:
+            sqls = [a.sql]
         with open(done, "a") as fh:
-            fh.write(json.dumps({"sql": a.sql, "result": a.result[:500]}) + "\n")
-        print(f"applied {a.sql}")
+            for q in sqls:
+                fh.write(json.dumps({"sql": q, "page_key": a.page or None, "result": a.result[:500]}) + "\n")
+        print(f"applied {len(sqls)} queued step(s) for {a.page or a.sql}")
         return 0
     if a.cmd == "confirm":
         keys = sorted({json.loads(l)["page_key"] for l in pend.read_text().splitlines()} if pend.exists() else set())
