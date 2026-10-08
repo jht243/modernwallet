@@ -1,0 +1,13 @@
+{
+  "round": 1,
+  "sha": "319abcd",
+  "applied": [
+    "\"you can still open a Trump Account \u2014 but you get zero seed money\" -> \"you can still open a Trump Account, but you get zero seed money\"",
+    "\"3. Custodial Roth IRA \u2014 best for a working teen\" -> \"3. Custodial Roth IRA: best for a working teen\"",
+    "\"Your child must have a job \u2014 babysitting, a summer role, or a first W-2 \u2014 to con\" -> \"Your child must have a job (babysitting, a summer role, or a first W-2) to contr\"",
+    "\"A 529 plan serves families focused strictly on tax-free college savings, while a\" -> \"A 529 plan fits families saving for college, and its qualified education withdra\"",
+    "\"Our guide on [how a Trump Account works](/guides/trump-accounts/) breaks down ho\" -> \"Employer and family contributions share an annual $5,000 cap for 2026 and 2027, \"",
+    "\"Unlike the Trump Account's single index fund and age-18 lock\" -> \"Unlike the Trump Account's index-fund-only rule and age-18 lock\"",
+    "\"For 2025, you can contribute the lesser of their earned income or $7,000.\" -> \"For 2026, you can contribute the lesser of their earned income or $7,500.\""
+  ]
+}

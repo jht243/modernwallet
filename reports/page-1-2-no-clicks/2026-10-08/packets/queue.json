@@ -1,0 +1,13 @@
+{
+  "queue": [
+    {
+      "slug": "trump-account-alternatives",
+      "path": "/guides/trump-account-alternatives",
+      "lane_hint": "RANK",
+      "data_file": "src/data/guides.ts",
+      "kind": "guides"
+    }
+  ],
+  "skipped": [],
+  "base_sha": "015a124"
+}

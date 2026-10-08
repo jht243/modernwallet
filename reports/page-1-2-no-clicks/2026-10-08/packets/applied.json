@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "trump-account-alternatives",
+    "path": "/guides/trump-account-alternatives",
+    "kind": "FACT FIX",
+    "status": "applied",
+    "commit": "ad9eb5e",
+    "notes": [
+      "\"It also locks up the money until the year your child turns 18, taxes it as ordin\" -> \"It also locks up the money until the year your child turns 18, taxes it as ordin\"",
+      "\"Contributions are capped at $5,000 a year, and you can only buy a U.S.-equity in\" -> \"Most contributions are capped at $5,000 a year, and you can only buy a low-fee i\"",
+      "\"For 2025, the contribution limit is the lesser of the child's earned income or $\" -> \"For 2026, the contribution limit is the lesser of the child's earned income or $\""
+    ]
+  },
+  {
+    "slug": "trump-account-alternatives",
+    "path": "/guides/trump-account-alternatives",
+    "kind": "RANK",
+    "status": "applied",
+    "commit": "319abcd",
+    "notes": [
+      "added section: Alternative Savings Vehicles and Funding Rules",
+      "title -> Trump Account Alternatives: 6 Options by Goal",
+      "metaDescription -> Alternatives to Trump Accounts: 529, custodial Roth IRA, UTMA, Coverdell, saving"
+    ]
+  }
+]

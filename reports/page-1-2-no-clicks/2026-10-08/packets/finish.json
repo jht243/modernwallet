@@ -1,0 +1,15 @@
+{
+ "ledger_rows": 1,
+ "ledger_rows_new": 1,
+ "indexnow": 200,
+ "indexnow_urls": 1,
+ "live": {
+  "https://www.themodernwallet.com/guides/trump-account-alternatives": "ok"
+ },
+ "out_of_scope": {
+  "trump-account-alternatives": [
+   "fact-unverified: Kiddie tax sentence ('large balances get taxed at parent rates') in the UTMA section is simplified; not verified against IRS Pub. 929",
+   "fact-unverified: pre-existing FAQ 'What specific index fund...' cites 'Section 530A', 'Robinhood as initial trustee' and trustee list; not re-verified this round"
+  ]
+ }
+}
