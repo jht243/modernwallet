@@ -1,0 +1,15 @@
+{
+  "slug": "trump-account-alternatives",
+  "lane": "RANK",
+  "action": "add_section",
+  "section_id": "best-alternatives-quick-answer",
+  "insert_before": "Why families look past the Trump Account",
+  "meta": {
+    "metaTitle": "Trump Account Alternatives: 6 Options by Goal",
+    "metaDescription": "Alternatives to Trump Accounts: 529, custodial Roth IRA, UTMA, Coverdell, savings, I bonds. See which fits your goal, plus who else can fund an account."
+  },
+  "reader_question": "What are the alternatives to a Trump Account?",
+  "answer": "A 529 plan is the usual first alternative for education savings; a custodial brokerage, custodial Roth IRA, Coverdell ESA, savings account or I bonds fit other goals.",
+  "answer_placement": "section 1",
+  "summary": "Page 2 (#10.9) with no answer-first block: add a quick-answer section above the intro naming the alternatives by goal and answering the unanswered PAA 'Who else is funding Trump accounts?' from IRS Notice 2025-68, plus a title/description rewrite around the exact search wording. Fact fixes (S&P-only claim, 2025/$7,000 Roth limit) handled in fact-edits.json. Note: packet.sections is empty (sections have no ids), so insert_before uses the first section heading."
+}

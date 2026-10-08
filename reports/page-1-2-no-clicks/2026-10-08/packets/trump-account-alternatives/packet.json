@@ -1,0 +1,84 @@
+{
+  "path": "/guides/trump-account-alternatives",
+  "url": "https://www.themodernwallet.com/guides/trump-account-alternatives/",
+  "slug": "trump-account-alternatives",
+  "data_file": "src/data/guides.ts",
+  "files": [
+    "src/data/guides.ts"
+  ],
+  "page_key": "src/data/guides.ts::trump-account-alternatives",
+  "kind": "guides",
+  "lane_hint": "RANK",
+  "classes": {
+    "RANK": 1
+  },
+  "lost_searches": [
+    {
+      "query": "alternatives to trump accounts",
+      "class": "RANK",
+      "market": "global",
+      "base_pos": 10.9,
+      "cur_pos": null,
+      "base_impr_d": 0.1,
+      "cur_impr_d": 0.0,
+      "taker": null
+    },
+    {
+      "query": "trump account alternatives",
+      "class": "RANK",
+      "market": "global",
+      "base_pos": 20.2,
+      "cur_pos": null,
+      "base_impr_d": 0.1,
+      "cur_impr_d": 0.0,
+      "taker": null
+    }
+  ],
+  "successor_routes": [],
+  "taker_routes": [],
+  "pricing_rows": [],
+  "traffic": {
+    "gsc_clicks_d": {
+      "baseline": 0.0,
+      "current": 0.0
+    },
+    "ga4_sessions_d": {
+      "baseline": 0.1,
+      "current": 0.2,
+      "change": 0.875
+    }
+  },
+  "worktree": "/tmp/rank-drop-wt/trump-account-alternatives",
+  "detect_sha256": "ef3385a9f617a664152a1e90baf7c8880f2b87d92b8238ce8d4852522575eec1",
+  "cooldown": false,
+  "sections": [],
+  "title": "Trump Account Alternatives: 6 Options Ranked by Goal",
+  "description": "Compare the 6 best Trump Account alternatives - 529, custodial Roth IRA, UTMA, Coverdell, HYSA, I bonds - ranked by goal, including kids born before 2025.",
+  "system": "reports/page-1-2-no-clicks/2026-10-08/packets/system-guides.md",
+  "page12": {
+    "lane": "RANK",
+    "main_query": "alternatives to trump accounts",
+    "main_pos": 10.9,
+    "main_impressions_90d": 8,
+    "impressions_90d": 226,
+    "clicks_90d": 0,
+    "position_90d": 9.8,
+    "impressions_28d": 0,
+    "clicks_28d": 0,
+    "ctr": 0.0,
+    "band_median_ctr": 0.01494,
+    "expected_gain_90d": 3.4,
+    "synthetic_share": 0.07,
+    "listed_query_share": 0.06,
+    "ai_referrals_180d": 1,
+    "aio_cited": false,
+    "ai_cited": true,
+    "facts_only": false,
+    "top_page": null,
+    "google_update_ongoing": [
+      "September 2026 spam update"
+    ]
+  },
+  "inbound_links": 4,
+  "detect_report": "reports/page-1-2-no-clicks/2026-10-08.json"
+}

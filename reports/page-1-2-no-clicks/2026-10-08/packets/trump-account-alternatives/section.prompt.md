@@ -1,0 +1,16 @@
+TASK: Write one short section (120 to 220 words, paragraphs only, no list, no heading that repeats the H1) for the page "Trump Account Alternatives: 6 Better Ways to Save for a Child". In the first two sentences answer the search "alternatives to trump accounts": name the alternatives and which goal each fits. Then answer this question in two or three sentences: "Who else is funding Trump accounts?" Do not mention anything not on the closed fact list.
+
+READER QUESTION: What are the alternatives to a Trump Account?
+ANSWER: A 529 plan is the usual first pick for education savings. A custodial brokerage account (UTMA/UGMA) suits flexible spending, a custodial Roth IRA suits a teen with earned income, a Coverdell ESA is a small tax-free education option, and a high-yield savings account or I bonds suit money needed soon or kept safe.
+PLACEMENT: section 1, directly above the existing intro and before the heading "Why families look past the Trump Account".
+
+CLOSED FACT LIST (anything not on this list, you do not know):
+- Page facts: 529 qualified education withdrawals are tax-free; unused 529 funds up to $35,000 can roll into the beneficiary's Roth IRA (15-year account-age rule); a UTMA/UGMA has no contribution cap and the child takes control at the age of majority; a custodial Roth IRA needs earned income, limit is the lesser of earned income or $7,500 for 2026; Coverdell ESA allows $2,000 per year per child and has income limits; high-yield savings is liquid, interest taxed yearly; I bonds are bought at TreasuryDirect.gov, backed by the U.S. Treasury, with annual purchase limits.
+- Trump Account (IRS Notice 2025-68, https://www.irs.gov/pub/irs-drop/n-25-68.pdf): the $1,000 Treasury pilot deposit goes to U.S.-citizen children born after Dec 31, 2024 and before Jan 1, 2029. Contributions can come from five sources: the Treasury pilot deposit, "qualified general contributions" funded by states or local governments, the United States, D.C., Indian tribal governments, or section 501(c)(3) tax-exempt organizations for a qualified class of children, employer contributions under section 128, rollovers from a prior Trump account, and contributions from other sources such as the beneficiary, parents or any other person. Employer contributions are limited to $2,500 (adjusted for cost of living after 2027) and are not taxed to the employee. Employer contributions and contributions from other sources share an aggregate limit of $5,000 per year for 2026 and 2027; the pilot deposit, qualified general contributions and rollovers are not subject to that limit. Contributions cannot be made before July 4, 2026.
+- Do not mention any named company, philanthropist or pledge: none is on this list.
+
+CLOSED URL LIST: https://www.irs.gov/pub/irs-drop/n-25-68.pdf (may be linked once, on the words "IRS guidance on Trump Accounts"). No other external URLs.
+
+INTERNAL LINKS (use 1 or 2, markdown, natural anchor text): [Trump Account vs a 529](/compare/trump-account-vs-529/) ; [how a Trump Account works](/guides/trump-accounts/).
+
+STYLE: plain sentences, no em-dashes, no "honest", no signposting such as "here is" or "the short answer is". Do not repeat the page's existing intro word for word.

@@ -1,0 +1,26 @@
+{
+  "summary": "Two outdated/inexact statements corrected per IRS Notice 2025-68 and the IRS 2026 limits release: the Trump Account is not limited to a single S&P 500 fund (any low-fee US-company index fund/ETF qualifies), and the custodial Roth IRA limit is $7,500 for 2026, not $7,000 for 2025. Seed, $5,000 cap, age-18 lock and birth years match the IRS notice.",
+  "edits": [
+    {
+      "old": "It also locks up the money until the year your child turns 18, taxes it as ordinary income, limits contributions to $5,000 a year, and holds only an S&P 500 index fund.",
+      "new": "It also locks up the money until the year your child turns 18, taxes it as ordinary income, limits most contributions to $5,000 a year, and holds only a low-fee index fund of mainly U.S. companies, such as one tracking the S&P 500.",
+      "source": "https://www.irs.gov/pub/irs-drop/n-25-68.pdf",
+      "quote": "a mutual fund or exchange traded fund (ETF) that tracks an index of primarily U.S. companies, such as the Standard and Poor's 500 stock market index, does not use leverage, does not have annual fees and expenses of more than 0.1 percent",
+      "math": ""
+    },
+    {
+      "old": "Contributions are capped at $5,000 a year, and you can only buy a U.S.-equity index fund.",
+      "new": "Most contributions are capped at $5,000 a year, and you can only buy a low-fee index fund of mainly U.S. companies.",
+      "source": "https://www.irs.gov/pub/irs-drop/n-25-68.pdf",
+      "quote": "The limit for aggregate contributions (other than exempt contributions) is $5,000 per year for 2026 and 2027; pilot program contributions, qualified general contributions, and qualified rollover contributions are not subject to an annual contribution limit.",
+      "math": ""
+    },
+    {
+      "old": "For 2025, the contribution limit is the lesser of the child's earned income or $7,000. If your teen earns $3,000, that's the most you can put in.",
+      "new": "For 2026, the contribution limit is the lesser of the child's earned income or $7,500. If your teen earns $3,000, that's the most you can put in.",
+      "source": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "quote": "The limit on annual contributions to an IRA is increased to $7,500 from $7,000.",
+      "math": "Earned-income rule unchanged: min($3,000 earned, $7,500) = $3,000."
+    }
+  ]
+}

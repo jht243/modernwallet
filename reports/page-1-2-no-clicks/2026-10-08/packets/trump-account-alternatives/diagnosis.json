@@ -1,0 +1,31 @@
+{
+  "level": 4,
+  "label": "SECTION",
+  "needs": [
+    3,
+    4
+  ],
+  "lane": "RANK",
+  "fact_check": false,
+  "inbound": false,
+  "ai_cited": true,
+  "evidence": {
+    "main_search": "“alternatives to trump accounts” #10.9",
+    "paa_not_answered": [
+      "Who else is funding Trump accounts?"
+    ],
+    "ai_overview": {
+      "present": true,
+      "cites_us": false,
+      "cited": [
+        "tynmagazine.com",
+        "finance.yahoo.com",
+        "www.wbaltv.com",
+        "www.advisorperspectives.com",
+        "stories.wf.com"
+      ]
+    },
+    "rank_lane": "page 2: add an answer-first block at the top; cover what page 1 answers",
+    "main_search_words_missing_from_title_description": "alternatives to trump accounts"
+  }
+}
