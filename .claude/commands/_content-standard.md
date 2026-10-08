@@ -541,7 +541,7 @@ These are non-blocking observations. Do NOT set fail for any of them, and do not
 
 The one exception is a FACT problem: a number, date, claim, or link that changed or disappeared. Then discard the rewrite and keep the ORIGINAL intro verbatim. Never hand-repair the humanized text.
 
-**Why it is a separate step, not part of the writer.** The writer drafts against this whole standard plus the tell list, and a draft that dodges every ban comes out flat: the same "[verdict]. At {BUSINESS}, we [experience]. [one fact]." shape on every page. This step fixes only the intro, with GPT-6 Sol, using ONE instruction and NO ban list:
+**Why it is a separate step, not part of the writer.** The writer drafts against this whole standard plus the tell list, and a draft that dodges every ban comes out flat: the same "[verdict]. At {BUSINESS}, we [experience]. [one fact]." shape on every page. This step fixes only the intro, with GPT-6.1 Sol, using ONE instruction and NO ban list:
 
 > make this sound more human. you can change structure, rhythm, tone, and word choice, but do not change what it means. keep every fact, number, name and link. keep every hedge exactly as strong or as weak as it already is: if it says may, can, often, most, almost never, or usually, it must still say something just as tentative. do not make a statement firmer or softer than it is, do not turn an example list into a complete one or a complete list into examples, do not swap a term of art for a near-synonym, and add nothing that is not already there
 
@@ -555,7 +555,7 @@ The one exception is a FACT problem: a number, date, claim, or link that changed
 printf '%s' "$INTRO_PARAGRAPHS" | python3 scripts/humanize_intro.py
 ```
 
-The helper sends the intro alone to GPT-6 Sol, returns the same number of paragraphs re-voiced, and — if `OPENAI_API_KEY` is unset or the API errors — returns the intro UNCHANGED and exits 0, so this step can never break a run. (layer3 also ships a schema-aware batch version, `scripts/humanize_intros.py --changed <run-base>`, that finds and rewrites every new `data/*.ts` intro in one call; other repos use the portable helper above.)
+The helper sends the intro alone to GPT-6.1 Sol, returns the same number of paragraphs re-voiced, and — if `OPENAI_API_KEY` is unset or the API errors — returns the intro UNCHANGED and exits 0, so this step can never break a run. (layer3 also ships a schema-aware batch version, `scripts/humanize_intros.py --changed <run-base>`, that finds and rewrites every new `data/*.ts` intro in one call; other repos use the portable helper above.)
 
 **Rules.**
 - New pages only. Do NOT run it on existing pages a routine merely edited, and never on a page under DEFEND-LOCK.

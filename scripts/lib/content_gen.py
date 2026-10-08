@@ -5,7 +5,7 @@ ONE generator for every routine that writes new pages. The MODEL is a config val
 code path, so swapping models fleet-wide is one env change:
 
     CONTENT_MODEL=gemini-3.8-flash          primary  (default)
-    CONTENT_FALLBACK_MODEL=gpt-6-sol      used ONLY when the primary fails; always logged
+    CONTENT_FALLBACK_MODEL=gpt-6.1-sol    used ONLY when the primary fails; always logged
     CONTENT_THINKING=high                   reasoning effort (gemini thinkingLevel / openai effort)
     CONTENT_SECTION_THINKING=high           ceiling for `section` enrichments (never above CONTENT_THINKING)
     CONTENT_MAX_TOKENS=40000                thinking tokens count against this on Gemini
@@ -82,7 +82,7 @@ import urllib.request
 
 # ───────────────────────────── config ─────────────────────────────
 MODEL = os.environ.get("CONTENT_MODEL", "gemini-3.8-flash")
-FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-6-sol")
+FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-6.1-sol")
 # Reasoning effort is HIGH for every writer model (Gemini thinkingLevel, OpenAI reasoning
 # effort, Anthropic extended thinking). Standard set 2026-09-06. An empty or unrecognised
 # value falls back to "high" rather than silently omitting reasoning; a numeric value is a
@@ -133,6 +133,7 @@ RATES = {
     "gemini-3.8-flash": (0.75, 3.75),
     "gemini-3.5-flash-lite": (0.30, 2.50),
     "gemini-3.1-flash-lite": (0.25, 1.50),
+    "gpt-6.1-sol": (2.00, 10.00),
     "gpt-6-sol": (2.00, 10.00),
 }
 # Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a

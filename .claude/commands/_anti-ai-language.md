@@ -14,7 +14,7 @@ The overall standard: every sentence must parse on the first read and carry info
 
 ---
 
-**THE INTRO HUMANIZE CARVE-OUT.** A routine's last prose step re-voices the intro of each NEW page through GPT-6 Sol, deliberately with no ban list, AFTER every gate in this file has already run against the drafted intro. See `## INTRO HUMANIZE` in `_content-standard.md`. Two consequences bind every reader of this file:
+**THE INTRO HUMANIZE CARVE-OUT.** A routine's last prose step re-voices the intro of each NEW page through GPT-6.1 Sol, deliberately with no ban list, AFTER every gate in this file has already run against the drafted intro. See `## INTRO HUMANIZE` in `_content-standard.md`. Two consequences bind every reader of this file:
 
 - **Writers:** never call `scripts/humanize_intro.py` yourself, and never mid-draft. The orchestrator runs it once, at the end. Hand back your intro as drafted.
 - **Auditors and lint gates:** this file does NOT apply to an intro that has already been humanized. Do not re-check it, do not rewrite it, do not split its sentences or trim it to a length target. A style flag on a humanized intro is expected; let it stand. Only a lost fact or a broken link justifies action, and the fix is to restore the ORIGINAL intro, never to hand-edit the new one.
