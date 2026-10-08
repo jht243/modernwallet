@@ -35,6 +35,12 @@ from runlog import ROOT, base_sha, git  # noqa: E402
 from siteconf import backend, site  # noqa: E402
 
 
+
+def _engine() -> str:
+    from siteconf import engine
+    return engine()
+
+
 def restore_entry(item: dict, base: str, date: str) -> tuple[bool, str]:
     """Put this ONE page back exactly as it was at the run base and commit it as REVERT — through the
     site's backend, so other pages (and other crons' edits) in the same files survive."""
@@ -46,7 +52,7 @@ def restore_entry(item: dict, base: str, date: str) -> tuple[bool, str]:
     if not res.ok:
         return False, res.msg
     subprocess.run(["git", "add", *res.files], cwd=ROOT)
-    subprocess.run(["git", "commit", "-q", "-m", f"rank-drop-recovery {date}: REVERT {item['path']}\n\n"
+    subprocess.run(["git", "commit", "-q", "-m", f"{_engine()} {date}: REVERT {item['path']}\n\n"
                     "Failed audit after the maximum reworks; page restored to its pre-run state."], cwd=ROOT)
     return True, "restored to " + base
 

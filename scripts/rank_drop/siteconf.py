@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import importlib
 import json
+import os
+import sys
 from functools import lru_cache
 from pathlib import Path
 
@@ -30,3 +32,27 @@ def backend():
 
 def url(path: str) -> str:
     return site()["base_url"].rstrip("/") + path
+
+
+# ── engine — the same pipeline serves more than one routine ─────────────────
+# rank-drop-recovery (default) and page-1-2-no-clicks-pass share every script from the splice on
+# (apply_sections → lint → audit → apply_fixes → rework → finish_run → email). The engine decides the
+# commit-subject prefix runlog matches, the reports dir (ledger) and the task files. It is read from
+# RD_ENGINE, else inferred from a packets path on the command line, else rank-drop-recovery.
+ENGINES = {
+    "rank-drop-recovery": {"reports": "reports/rank-drop", "tasks": "scripts/rank_drop"},
+    "page-1-2-no-clicks-pass": {"reports": "reports/page-1-2-no-clicks", "tasks": "scripts/page12"},
+}
+
+
+def engine() -> str:
+    e = os.environ.get("RD_ENGINE", "").strip()
+    if e in ENGINES:
+        return e
+    if any("page-1-2-no-clicks" in a for a in sys.argv[1:]):
+        return "page-1-2-no-clicks-pass"
+    return "rank-drop-recovery"
+
+
+def reports_dir() -> str:
+    return ENGINES[engine()]["reports"]

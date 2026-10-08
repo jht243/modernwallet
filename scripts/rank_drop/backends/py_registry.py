@@ -51,7 +51,7 @@ import tempfile
 import tokenize
 from pathlib import Path
 
-from .base import Backend, Page, Result, Unsupported
+from .base import Backend, Page, Result, Unsupported, substantive
 
 PLAIN_TOP = ("title", "subtitle", "summary", "meta_description")
 HTML_TOP = ("introText",)
@@ -876,11 +876,12 @@ class PyRegistry(Backend):
                 self._rewrite(srcs, orig, rel, path, op["fields"], notes)
             else:
                 raise ValueError(f"unknown op {kind}")
-        node = self._page(srcs, rel, path)
-        srcs[rel] = self._set_value(srcs[rel], node, "reviewed_at", today)
-        notes.append(f"reviewed_at -> {today}")
+        if substantive(ops):              # visible date only moves on a real content change (Google)
+            node = self._page(srcs, rel, path)
+            srcs[rel] = self._set_value(srcs[rel], node, "reviewed_at", today)
+            notes.append(f"reviewed_at -> {today}")
         d = self._values_of(self._page(srcs, rel, path))
-        self._expect[path] = {"reviewed_at": today,
+        self._expect[path] = {**({"reviewed_at": today} if substantive(ops) else {}),
                               "headings": [s.get("heading") for s in d.get("sections") or [] if isinstance(s, dict)]}
         changed = [f for f in srcs if srcs[f] is not None and srcs[f] != orig[f]]
         return srcs, orig, changed, notes

@@ -27,7 +27,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from runlog import ROOT, run_commits, section_heading_now  # noqa: E402
-from siteconf import site, url as site_url  # noqa: E402
+from siteconf import engine, reports_dir, site, url as site_url  # noqa: E402
 
 SITE = site()["base_url"].rstrip("/")
 GSC = site()["gsc_property"]
@@ -77,15 +77,18 @@ def main(argv=None) -> int:
             "lane": plan.get("lane") or q.get("lane_hint"),
             "commits": [c["sha"] for c in cs], "edits": sorted({c["kind"] for c in cs}),
             "status": "published", "audit_rounds": au.get("round", 1),
-            "detect_report": pk.get("detect_report") or f"reports/rank-drop/{a.date}.json",
+            "detect_report": pk.get("detect_report") or f"{reports_dir()}/{a.date}.json",
             "detect_sha256": pk.get("detect_sha256"),
             "targets": [{"query": s["query"], "base_pos": s.get("base_pos"), "cur_pos": s.get("cur_pos")}
                         for s in pk.get("lost_searches", [])],
+            # page-1-2-no-clicks-pass: the pre-fix clicks/impressions/CTR its measure.py compares against
+            **({"baseline": pk["page12"]} if pk.get("page12") else {}),
         })
         marker = section_heading_now(q, plan, d)   # the new heading as it reads NOW (audit fixes may retitle)
         checks[url] = marker
 
-    led = ROOT / "reports" / "rank-drop" / "ledger.jsonl"
+    led = ROOT / reports_dir() / "ledger.jsonl"
+    led.parent.mkdir(parents=True, exist_ok=True)
     have = set()
     if led.exists():
         for line in led.read_text().splitlines():
@@ -141,9 +144,9 @@ def main(argv=None) -> int:
            "out_of_scope": oos}
     (P / "finish.json").write_text(json.dumps(out, indent=1))
     if not a.no_commit:
-        subprocess.run(["git", "add", str(P.relative_to(ROOT)), "reports/rank-drop/ledger.jsonl"], cwd=ROOT)
+        subprocess.run(["git", "add", str(P.relative_to(ROOT)), f"{reports_dir()}/ledger.jsonl"], cwd=ROOT)
         subprocess.run(["git", "commit", "-q", "-m",
-                        f"rank-drop-recovery {a.date}: packets, audit rounds, ledger rows ({len(rows)} pages)"], cwd=ROOT)
+                        f"{engine()} {a.date}: packets, audit rounds, ledger rows ({len(rows)} pages)"], cwd=ROOT)
     ok = sum(v == "ok" for v in live.values())
     print(f"OK finish ledger_rows={len(rows)} live={ok}/{len(live)} indexnow={indexnow}")
     return 0 if (ok or not live) else 1

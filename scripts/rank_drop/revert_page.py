@@ -17,11 +17,18 @@ sys.path.insert(0, str(HERE))
 from siteconf import ROOT, backend  # noqa: E402
 
 
+
+def _engine() -> str:
+    from siteconf import engine
+    return engine()
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--path", required=True)
     ap.add_argument("--sha", required=True, help="the FIRST treatment commit; the page returns to its parent")
     ap.add_argument("--date", required=True)
+    ap.add_argument("--reason", default="Measurement verdict WORSE", help="why, for the commit body")
     a = ap.parse_args(argv)
     B = backend()
     page = B.locate(a.path)
@@ -33,8 +40,8 @@ def main(argv=None) -> int:
         print(f"FAIL {res.msg}", file=sys.stderr)
         return 1
     subprocess.run(["git", "add", *res.files], cwd=ROOT)
-    subprocess.run(["git", "commit", "-q", "-m", f"rank-drop-recovery {a.date}: REVERT {a.path}\n\n"
-                    f"Measurement verdict WORSE; restored to before {a.sha}."], cwd=ROOT)
+    subprocess.run(["git", "commit", "-q", "-m", f"{_engine()} {a.date}: REVERT {a.path}\n\n"
+                    f"{a.reason}; restored to before {a.sha}."], cwd=ROOT)
     print(f"OK reverted {a.path} ({res.msg})")
     return 0
 

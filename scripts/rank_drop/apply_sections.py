@@ -40,6 +40,12 @@ SKIPPED_META: list[str] = []
 STR = r"""(?P<q>["'])(?:\\.|(?!(?P=q)).)*(?P=q)"""
 
 
+
+def _engine() -> str:
+    from siteconf import engine
+    return engine()
+
+
 def match_bracket(s: str, i: int) -> int:
     """Index just past the bracket matching s[i] ('[' or '{'), string-aware."""
     pairs = {"[": "]", "{": "}"}
@@ -190,7 +196,7 @@ def _edit_one(item: dict, d: Path, kind: str, ops: list[dict], a, summary: str) 
     if not (a.no_commit or a.dry_run):
         sh("git", "add", *res.files, str(d.relative_to(ROOT)))
         r = sh("git", "commit", "-q", "-m",
-               f"rank-drop-recovery {a.date}: {kind} {item['path']}\n\n{summary}\n" + "\n".join(res.notes) +
+               f"{_engine()} {a.date}: {kind} {item['path']}\n\n{summary}\n" + "\n".join(res.notes) +
                "\n\nCo-Authored-By: Claude <noreply@anthropic.com>")
         if r.returncode:
             raise ValueError("commit failed: " + r.stderr[:200])
@@ -223,8 +229,10 @@ def main(argv=None) -> int:
             edits = json.load(open(fe)).get("edits", [])
             if edits:
                 try:
-                    results.append(_edit_one(item, d, "FACT FIX", [{"op": "replace", **e} for e in edits], a,
-                                             "Stale-price sentences rewritten from the price ledger."))
+                    ops = [{"op": "replace", "old": e["old"], "new": e["new"], "substantive": True} for e in edits]
+                    why = json.load(open(fe)).get("summary") or "Stale-price sentences rewritten from the price ledger."
+                    src = "\n".join(f"source for \"{e['old'][:60]}\": {e['source']}" for e in edits if e.get("source"))
+                    results.append(_edit_one(item, d, "FACT FIX", ops, a, why + ("\n" + src if src else "")))
                 except Exception as e:  # noqa: BLE001
                     results.append({"slug": slug, "kind": "FACT FIX", "status": "error", "error": str(e)[:300]})
         # 2) the planned fix (L3 meta / L4 section / L5 rewrite) — own commit

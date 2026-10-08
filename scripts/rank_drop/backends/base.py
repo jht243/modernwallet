@@ -17,13 +17,21 @@ Edit operations (`ops`, applied in order, all-or-nothing per call):
   {"op": "replace", "old": str, "new": str}
         exact sentence edit (fact fix / audit fix); `old` is the text as a reader sees it
   {"op": "rewrite", "fields": dict}           (optional; L5 full rewrite — may raise Unsupported)
-Every successful apply() also bumps the page's visible "updated" date to `today`.
+A successful apply() bumps the page's visible "updated" date to `today` ONLY when substantive(ops).
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
+
+
+def substantive(ops: list[dict]) -> bool:
+    """Google: change a page's visible date only when its content changed meaningfully. A new or
+    replaced section, a rewrite, or a fact correction (replace op flagged `substantive`) qualifies;
+    a title/description edit or a wording fix does not (2026-10-07 owner rule)."""
+    return any(o["op"] in ("insert_section", "replace_section", "rewrite") or
+               (o["op"] == "replace" and o.get("substantive")) for o in ops)
 
 
 class Unsupported(Exception):

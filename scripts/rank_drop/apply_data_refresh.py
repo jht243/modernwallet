@@ -29,6 +29,11 @@ from diagnose import PRICE_PAIR, aliases_on_page  # noqa: E402
 from prepare_pages import find_entry  # noqa: E402
 
 
+def _engine() -> str:
+    from siteconf import engine
+    return engine()
+
+
 def fmt(x: float) -> str:
     return str(int(x)) if float(x).is_integer() else f"{x:g}"
 
@@ -314,7 +319,7 @@ def main(argv=None) -> int:
             if not (a.no_commit or a.dry_run):
                 subprocess.run(["git", "add", str(f.relative_to(ROOT))], cwd=ROOT)
                 subprocess.run(["git", "commit", "-q", "-m",
-                                f"rank-drop-recovery {a.date}: DATA REFRESH {item['path']}\n\n" + "\n".join(changes)],
+                                f"{_engine()} {a.date}: DATA REFRESH {item['path']}\n\n" + "\n".join(changes)],
                                cwd=ROOT)
                 sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT,
                                      capture_output=True, text=True).stdout.strip()

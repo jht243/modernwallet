@@ -19,7 +19,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from runlog import ROOT, git, run_commits, section_heading_now  # noqa: E402
-from siteconf import site, url as site_url  # noqa: E402
+from siteconf import engine, reports_dir, site, url as site_url  # noqa: E402
 
 
 def jload(p: Path, default=None):
@@ -34,11 +34,56 @@ def pos(x) -> str:
 
 
 def why(pk: dict) -> str:
+    n = pk.get("page12")
+    if n:                                   # page-1-2-no-clicks-pass: shown on page 1-2, barely clicked
+        return (f"Shown {n['impressions_90d']:,} times in 90 days, {n['clicks_90d']} clicks "
+                f"(CTR {n['ctr']:.2%} vs this site's {n['band_median_ctr']:.2%} at the same position). "
+                f"Main search “{n['main_query']}” at #{round(n['main_pos'])} → {n['lane']} lane.")
     lost = sorted(pk.get("lost_searches", []), key=lambda q: -(q.get("base_impr_d") or 0))[:3]
     parts = [f"“{q['query']}” {pos(q.get('base_pos'))} → {pos(q.get('cur_pos'))}" for q in lost]
     c = (pk.get("traffic") or {}).get("gsc_clicks_d") or {}
     clicks = f" Google clicks/day {c.get('baseline')} → {c.get('current')}." if c else ""
     return ("Lost " + "; ".join(parts) + "." if parts else "Lost rankings.") + clicks
+
+
+def _k(n) -> str:
+    n = n or 0
+    return f"{n/1000:.0f}k" if n >= 10000 else f"{n:,}"
+
+
+def _cell(t: str) -> str:
+    return " ".join(str(t).replace("|", "/").split())
+
+
+def p12_why(pk: dict) -> str:
+    n = pk.get("page12") or {}
+    return _cell(f"Shown {_k(n.get('impressions_90d'))} times / 90d, {n.get('clicks_90d')} clicks "
+                 f"(CTR {n.get('ctr', 0):.2%} vs site {n.get('band_median_ctr', 0):.2%}). "
+                 f"Main search “{n.get('main_query')}” at #{round(n.get('main_pos') or 0)}"
+                 f"{' (AI-cited)' if n.get('ai_cited') else ''}"
+                 + (f". TOP PAGE ({n.get('top_page')}): facts only" if n.get("facts_only") else ""))
+
+
+def p12_diag(dx: dict) -> str:
+    e = dx.get("evidence") or {}
+    out = []
+    if e.get("snippet_fact_disagreement"):
+        out.append("other results show prices missing from our page (possible outdated facts)")
+    if e.get("stale_prices"):
+        out.append("model price disagrees with our price ledger")
+    if e.get("price_search_but_no_price_in_snippet"):
+        out.append("price search, but no price in our title/description")
+    if e.get("main_search_words_missing_from_title_description"):
+        out.append("title/description don't use the searcher's words")
+    if e.get("opening_does_not_answer_main_search"):
+        out.append("opening doesn't answer the search")
+    if e.get("paa_not_answered"):
+        out.append(f"{len(e['paa_not_answered'])} Google 'People also ask' questions unanswered")
+    if dx.get("inbound"):
+        out.append(f"only {e.get('few_internal_links', 0)} internal links point here")
+    if dx.get("lane") == "RANK":
+        out.append("on page 2 (needs to rank higher)")
+    return _cell("; ".join(out) or "snippet not winning the click")
 
 
 def short(t: str, n: int = 220) -> str:
@@ -57,7 +102,7 @@ def main(argv=None) -> int:
     ap.add_argument("--detect")
     a = ap.parse_args(argv)
     P = Path(a.packets).resolve()
-    det = jload(Path(a.detect or ROOT / f"reports/rank-drop/{a.date}.json"), {}) or {}
+    det = jload(Path(a.detect or ROOT / f"{reports_dir()}/{a.date}.json"), {}) or {}
     queue = (jload(P / "queue.json", {}) or {}).get("queue", [])
     commits = run_commits(P) if queue else {}
     finish = jload(P / "finish.json", {}) or {}
@@ -68,6 +113,7 @@ def main(argv=None) -> int:
                 if (commits.get(q["path"]) or [{}])[-1].get("kind") == "REVERT"}
 
     changed, flagged, n_sec, n_price, n_meta = [], [], 0, 0, 0
+    chart = []
     for q in queue:
         slug, d = q["slug"], P / q["slug"]
         pk = jload(d / "packet.json", {}) or {}
@@ -92,7 +138,7 @@ def main(argv=None) -> int:
         else:
             if "REWRITE" in kinds:
                 what.append("Rewrote the page.")
-            elif any(k in kinds for k in ("RECOVER", "REFRESH", "DIFFERENTIATE", "SECTION", "REWORK")) \
+            elif any(k in kinds for k in ("RECOVER", "REFRESH", "DIFFERENTIATE", "SECTION", "REWORK", "SNIPPET", "RANK")) \
                     and act == "add_section":
                 h = section_heading_now(q, plan, d)
                 what.append(f"Added a section: “{h}”." if h else "Added a new section.")
@@ -101,8 +147,11 @@ def main(argv=None) -> int:
                 what.append("New search title and description.")
                 n_meta += 1
             p_edits = sum(body_edits(c["sha"]) for c in cs if c["kind"] in ("DATA REFRESH", "FACT FIX"))
+            il = sum(body_edits(c["sha"]) for c in cs if c["kind"] == "INBOUND LINKS")
+            if il:
+                what.append(f"Linked to it from {il} related page{'s' if il != 1 else ''}.")
             if p_edits:
-                what.append(f"Updated {p_edits} outdated price mention{'s' if p_edits != 1 else ''} to current prices.")
+                what.append(f"Corrected {p_edits} outdated fact{'s' if p_edits != 1 else ''} (prices or figures) from the official source.")
                 n_price += 1
             fx = sum(body_edits(c["sha"]) for c in cs if c["kind"] == "AUDIT FIX")
             if fx:
@@ -113,6 +162,10 @@ def main(argv=None) -> int:
         lv = live.get(url)
         status = ("live" if lv == "ok" else f"not live yet ({lv})" if lv else "pending deploy") \
             if slug not in reverted else "reverted"
+        if pk.get("page12"):
+            dx = jload(d / "diagnosis.json", {}) or {}
+            chart.append(f"| [{_cell(title)}]({url}) | {p12_why(pk)} | {p12_diag(dx)} | "
+                         f"{_cell(' '.join(what) or 'n/a')} | {status} |")
         changed.append(f"\n### [{title}]({url})\n- **Why:** {why(pk)}\n- **What changed:** {' '.join(what) or 'n/a'}\n"
                        f"- **Review:** {audit.lower() if audit != 'PASS' else 'passed'}"
                        f"{'' if audit == 'not audited' else f' (round {au.get(chr(114)+chr(111)+chr(117)+chr(110)+chr(100), 1)})'}"
@@ -132,14 +185,17 @@ def main(argv=None) -> int:
     L = [f"**{summary}**", "",
          f"Mode: **{mode}**" + (f" ({det['mode_override']})" if det.get("mode_override") else "")
          + f". Google updates rolling out: {ongoing}. Data: Google Search Console + GA4 only.", "",
-         "## Pages changed", ""] + (changed or ["None this run."]) + \
+         "## Pages changed", ""] + ((["| Page | Why it was picked | What was wrong | What was fixed | Status |",
+                                      "|---|---|---|---|---|"] + chart) if chart else (changed or ["None this run."])) + \
         ["", "## Flagged for you (nothing changed)", ""] + ([f"- {x}" for x in flagged] or ["None."]) + \
         ["", "## Run details", "",
-         f"- Pages checked: {len(queue)} dropped pages qualified"
+         f"- Pages checked: {len(queue)} " + ("near-miss pages picked" if engine() == "page-1-2-no-clicks-pass" else "dropped pages qualified")
          + (f"; {stats['pages_below_traffic_floor']} more were skipped for low traffic" if 'pages_below_traffic_floor' in stats else "") + ".",
          f"- IndexNow: {finish.get('indexnow', 'not sent')} for {finish.get('indexnow_urls', 0)} URLs.",
-         f"- Changed pages are left alone for 28 days so Google can react; the next check of their results is at 14 days."]
-    out = Path(f"/tmp/rank-drop-{a.date}.md")
+         (f"- Changed pages are left alone for 35 days; clicks and CTR are re-measured at 28 days and losers are reverted."
+          if engine() == "page-1-2-no-clicks-pass" else
+          f"- Changed pages are left alone for 28 days so Google can react; the next check of their results is at 14 days.")]
+    out = Path(f"/tmp/{engine()}-{a.date}.md")
     out.write_text("\n".join(L) + "\n")
     print(summary)
     return 0

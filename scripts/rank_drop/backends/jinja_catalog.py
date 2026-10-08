@@ -44,7 +44,7 @@ import tempfile
 from html.parser import HTMLParser
 from pathlib import Path
 
-from .base import Backend, Page, Result, Unsupported
+from .base import Backend, Page, Result, Unsupported, substantive
 
 KINDS = {
     "guides": {"catalog": "src/seo/cluster_topology.py", "cls": "Therapy", "tpl": "guides",
@@ -1290,7 +1290,8 @@ class JinjaCatalog(Backend):
                 raise Unsupported("full rewrite (L5) is not supported for Jinja template pages")
             else:
                 raise ValueError(f"unknown op {kop}")
-        self._bump_dates(page, kind, srcs, today, notes)
+        if substantive(ops):              # visible date only moves on a real content change (Google)
+            self._bump_dates(page, kind, srcs, today, notes)
         changed = [r for r in srcs if srcs[r] != orig[r]]
         if dry_run:
             if preview is not None:

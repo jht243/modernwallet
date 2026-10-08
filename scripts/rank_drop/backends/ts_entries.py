@@ -22,7 +22,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from .base import Backend, Page, Result, Unsupported
+from .base import Backend, Page, Result, Unsupported, substantive
 
 _ENGINE = Path(__file__).resolve().parents[1]
 if str(_ENGINE) not in sys.path:
@@ -318,6 +318,8 @@ class TsEntries(Backend):
                 notes.append("rewrote keys: " + ", ".join(sorted(op["fields"])))
             else:
                 raise ValueError(f"unknown op {kind}")
+        if not substantive(ops):                 # meta-only / wording fix: keep the visible date
+            return entry, notes
         up = self.f["updated"]
         entry, n = re.subn(r"""(["']?""" + re.escape(up) + r"""["']?\s*:\s*)(["'])\d{4}-\d{2}-\d{2}\2""",
                            lambda m: f"{m.group(1)}{m.group(2)}{today}{m.group(2)}", entry, count=1)

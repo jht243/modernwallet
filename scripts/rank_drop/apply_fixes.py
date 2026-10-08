@@ -32,6 +32,12 @@ sys.path.insert(0, str(HERE))
 from siteconf import backend  # noqa: E402
 
 
+
+def _engine() -> str:
+    from siteconf import engine
+    return engine()
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--packets", required=True)
@@ -49,7 +55,10 @@ def main(argv=None) -> int:
     for audit_f in sorted(P.glob("*/audit.json")):
         slug, d = audit_f.parent.name, audit_f.parent
         au = json.load(open(audit_f))
-        if au.get("verdict") == "PASS":
+        # A PASS can still carry pairs: fact corrections on text the run did not write (page-1-2-no-clicks
+        # audits facts on the whole page) or sentence fixes outside the run's diff. Skip only an empty PASS
+        # (2026-10-07 first page-1-2 run: 18 fact/lint pairs on PASS pages were silently dropped).
+        if au.get("verdict") == "PASS" and not (au.get("mechanical") or au.get("fixes")):
             continue
         rnd = au.get("round", 1)
         prev = json.load(open(d / "fixes-applied.json")) if (d / "fixes-applied.json").exists() else {}
@@ -66,7 +75,7 @@ def main(argv=None) -> int:
                 page = B.locate(item["path"])
                 if not page:
                     raise ValueError("page not found by backend")
-                res = B.apply(page, [{"op": "replace", "old": e["old"], "new": e["new"]} for e in edits],
+                res = B.apply(page, [{"op": "replace", "old": e["old"], "new": e["new"], "substantive": bool(e.get("source"))} for e in edits],
                               a.date, dry_run=a.dry_run, preview=d / "audit-fix.preview.diff")
                 if not res.ok:
                     raise ValueError("backend: " + res.msg)
@@ -74,7 +83,7 @@ def main(argv=None) -> int:
                 if not a.dry_run:
                     subprocess.run(["git", "add", *res.files, str(audit_f.relative_to(ROOT))], cwd=ROOT)
                     subprocess.run(["git", "commit", "-q", "-m",
-                                    f"rank-drop-recovery {a.date}: AUDIT FIX {item['path']}\n\n" + "\n".join(notes)],
+                                    f"{_engine()} {a.date}: AUDIT FIX {item['path']}\n\n" + "\n".join(notes)],
                                    cwd=ROOT)
                     sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT,
                                          capture_output=True, text=True).stdout.strip()

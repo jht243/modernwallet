@@ -54,7 +54,7 @@ from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
-from .base import Backend, Page, Result, Unsupported
+from .base import Backend, Page, Result, Unsupported, substantive
 
 EDIT_COLS = ("title", "subtitle", "summary", "body_html", "faq_json", "sections_json")
 JSON_COLS = ("faq_json", "sections_json")
@@ -966,10 +966,12 @@ if __name__ == "__main__":
         after = {k: new[k] for k in changed}
         hard, soft = self.check_fields(after)
         notes += [f"warn: {p}" for p in hard + soft]
-        notes.append("updated_at, last_generated_at -> now()")
+        keep = None if substantive(ops) else {k: str(row.get(k)) for k in ("updated_at", "last_generated_at")
+                                                  if row.get(k)}           # meta-only: dates stay (Google)
+        notes.append("updated_at, last_generated_at -> now()" if keep is None else "dates kept (no content change)")
         rel, seq = self._pick_script(page.path, today, expect, restore=False)
         sql_rel = rel[:-3] + ".sql"
-        self._write(rel, self._render_script(rel, page.key, page.path, today, expect, after, notes, None, "EDIT"))
+        self._write(rel, self._render_script(rel, page.key, page.path, today, expect, after, notes, keep or None, "EDIT"))
         self._write(sql_rel, self._render_sql(page.key, expect, after, None))
         diff = self._preview(expect, after)
         if dry_run:

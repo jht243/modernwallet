@@ -14,7 +14,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-SUBJECT = re.compile(r"^rank-drop-recovery \S+: ([A-Z][A-Z ]*?) (/\S+)$")
+def _subject():
+    from siteconf import engine
+    return re.compile(r"^" + re.escape(engine()) + r" \S+: ([A-Z][A-Z ]*?) (/\S+)$")
 
 
 def git(*args: str) -> str:
@@ -38,6 +40,7 @@ def base_sha(P: Path) -> str:
 def run_commits(P: Path) -> dict[str, list[dict]]:
     """{path: [{"sha", "kind"}...]} oldest first, for every rank-drop commit since the run base."""
     out: dict[str, list[dict]] = {}
+    SUBJECT = _subject()
     for line in reversed(git("log", "--format=%h %s", f"{base_sha(P)}..HEAD").splitlines()):
         sha, _, subj = line.partition(" ")
         m = SUBJECT.match(subj.strip())
