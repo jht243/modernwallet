@@ -3958,24 +3958,6 @@ export const ROUNDUPS: RoundupEntry[] = [
         pricing: "Basic $129/$229; Pro $149/$249; Premium $299/$399; Trust ~$279.",
       },
       {
-        name: "FreeWill",
-        bestFor: "Best genuinely free — simple-to-moderate estates",
-        description:
-          "$0 for will + POA + healthcare directive. Monetized via 2,400+ nonprofit partnerships (nonprofits pay for placement; users are not required to include a charitable gift). RLT available in California only. Founded 2017.",
-        strengths: [
-          "Truly $0 — no credit card or upsell required",
-          "Includes POA and healthcare directive",
-          "Simple, focused flow",
-          "Nonprofit partnership model reduces monetization pressure on users",
-        ],
-        limitations: [
-          "No RLT outside California",
-          "No attorney-review option",
-          "No membership — re-do the flow to change anything",
-        ],
-        pricing: "$0 for will + POA + healthcare directive. RLT California only.",
-      },
-      {
         name: "Killswitch",
         bestFor: "Best low-cost web option: build and read the will free, pay once at download",
         description:
@@ -3994,6 +3976,24 @@ export const ROUNDUPS: RoundupEntry[] = [
           "Web only; no notarization or remote online notarization",
         ],
         pricing: "$69 will; $39 POA; $39 healthcare directive; $99 all three. Optional Crypt vault $49/yr.",
+      },
+      {
+        name: "FreeWill",
+        bestFor: "Best genuinely free — simple-to-moderate estates",
+        description:
+          "$0 for will + POA + healthcare directive. Monetized via 2,400+ nonprofit partnerships (nonprofits pay for placement; users are not required to include a charitable gift). RLT available in California only. Founded 2017.",
+        strengths: [
+          "Truly $0 — no credit card or upsell required",
+          "Includes POA and healthcare directive",
+          "Simple, focused flow",
+          "Nonprofit partnership model reduces monetization pressure on users",
+        ],
+        limitations: [
+          "No RLT outside California",
+          "No attorney-review option",
+          "No membership — re-do the flow to change anything",
+        ],
+        pricing: "$0 for will + POA + healthcare directive. RLT California only.",
       },
       {
         name: "Nolo Quicken WillMaker & Trust 2026",
@@ -4054,8 +4054,8 @@ export const ROUNDUPS: RoundupEntry[] = [
       rows: [
         { name: "Trust & Will", values: ["$199 / $299", "$499 / $599", "Yes", "+$299", "Web"] },
         { name: "LegalZoom", values: ["$129 / $229 Basic", "~$279", "Pro+ only", "Premium ($299)", "Web"] },
-        { name: "FreeWill", values: ["$0 / $0", "CA only", "Yes", "No", "Web"] },
         { name: "Killswitch", values: ["$69", "None", "$99 bundle", "No", "Web"] },
+        { name: "FreeWill", values: ["$0 / $0", "CA only", "Yes", "No", "Web"] },
         { name: "Nolo WillMaker Plus", values: ["$139", "$139 (RLT template)", "Yes", "No", "Desktop"] },
         { name: "Mama Bear", values: ["$159 / $249", "None", "Yes", "No", "Web"] },
         { name: "Rocket Lawyer", values: ["Membership", "N/A", "Yes", "Membership", "Web"] },
