@@ -259,3 +259,6 @@
 | /roundup/best-brokers-for-treasury-bonds/ | 2026-10-08 | 12 | 0/0/0/0/0 | 0 |
 | /trump-account/ | 2026-10-08 | 12 | 0/0/0/0/0 | 0 |
 | / | 2026-10-08 | 15 | 0/0/0/0/0 | 0 |
+| /roundup/best-money-market-accounts/ | 2026-10-09 | 11 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-scams/ | 2026-10-09 | 8 | 0/0/0/0/0 | 0 |
+| /guides/trump-accounts/ | 2026-10-09 | 10 | 0/0/0/0/0 | 0 |

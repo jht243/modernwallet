@@ -1,0 +1,129 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-08",
+  "window_start": "2026-10-08",
+  "window_end": "2026-10-08",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 53,
+      "sessions": 57,
+      "active_users": 50,
+      "clicks": 53
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 51,
+      "sessions": 47,
+      "active_users": 42,
+      "clicks": 51
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 49,
+      "sessions": 49,
+      "active_users": 45,
+      "clicks": 49
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 32,
+      "sessions": 31,
+      "active_users": 26,
+      "clicks": 32
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 18,
+      "sessions": 18,
+      "active_users": 18,
+      "clicks": 18
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 17,
+      "sessions": 17,
+      "active_users": 15,
+      "clicks": 17
+    },
+    {
+      "page": "/",
+      "views": 10,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 10
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-account-scams/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 6,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/trump-accounts/",
+      "views": 8,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 8
+    }
+  ],
+  "top10_pages_total_views": 257,
+  "top10_pages_total_clicks": 257,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 56,
+      "Unassigned": 6,
+      "Direct": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 49,
+      "Unassigned": 4
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 40,
+      "Direct": 5,
+      "Unassigned": 4,
+      "Referral": 1
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 27,
+      "Direct": 4
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 16,
+      "Unassigned": 4
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 14,
+      "Organic Social": 4,
+      "Unassigned": 3
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 9,
+      "Direct": 2
+    },
+    "/": {
+      "Direct": 8
+    },
+    "/guides/trump-account-scams/": {
+      "Organic Search": 7,
+      "Organic Social": 1
+    },
+    "/guides/trump-accounts/": {
+      "Direct": 5,
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Referral": 1
+    }
+  }
+}
