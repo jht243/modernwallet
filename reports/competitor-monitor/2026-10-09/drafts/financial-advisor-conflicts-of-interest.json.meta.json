@@ -1,0 +1,274 @@
+{
+ "slug": "financial-advisor-conflicts-of-interest",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1805,
+ "floor": 1200,
+ "input_tokens": 18230,
+ "output_tokens": 3078,
+ "thinking_tokens": null,
+ "cached_tokens": 16369,
+ "est_cost_usd": 0.0142,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 13 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Financial advisor conflicts of interest are not always obvious on a firm website'; 'These pressures stem directly from revenue arrangements rather than ill intent.'; 'When an advisor earns an upfront or trailing cut from selling a specific fund or'; 'They might also face sales quotas, production targets, or revenue minimums that '"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1903,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 434,
+   "floor": 1200,
+   "ratio": 0.36,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we look at money decisions through the exact math and disclosures behind them, because how someone gets paid shapes what they recommend.",
+     "replacement": "How an advisor gets paid shapes what they recommend.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not license first-person claim starting with At ModernWallet, we."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If you take $100,000 out of your portfolio to pay off your home loan or wipe out consumer debt, the assets under management decrease immediately, which reduces the advisor's billable pay.",
+     "replacement": "If you take money out of your portfolio to pay off debt, the assets under management decrease, which reduces the advisor's pay.",
+     "type": "unsupported",
+     "why": "SOURCE does not include $100,000; arithmetic must use only listed worked-example numbers."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If you pay off a $200,000 debt using funds from that account, the balance drops to $300,000, reducing the advisor's 1% annual fee to $3,000 a year.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE restricts arithmetic to listed worked-example numbers only ($500,000 and $20,000)."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Our advice to reject commission-earning or hybrid planners would change if you have a niche requirement that only an insurance broker can execute, such as securing complex term life insurance coverage where commission-based distribution is standard practice across the industry.",
+     "replacement": "Our advice to reject commission-earning or hybrid planners would change if you need a specific insurance product sold on commission.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that commission-based distribution is standard practice across the industry."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "To safeguard your capital today, pull the Form ADV Part 2 and Form CRS for your current or prospective planner on the SEC disclosure portal and verify their legal fee structure before scheduling your next planning conversation.",
+     "replacement": "To safeguard your capital today, pull the Form ADV Part 2 and Form CRS for your current or prospective planner on the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database and verify their fee structure before scheduling your next planning conversation.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to SEC disclosure portal without a markdown link."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1972
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 2,
+    "at": "2026-10-09T21:21:38+0000",
+    "findings_file": "reports/competitor-monitor/2026-10-09/audit/financial-advisor-conflicts-of-interest.findings.txt",
+    "applied": [
+     {
+      "id": "sections[3].body",
+      "quote": "Complicating this further, a single person can hold both roles as a dually registered professional.",
+      "replacement": "A person can hold both roles.",
+      "type": "Dually registered term not in source",
+      "why": "Fact list states only that a person can hold both roles."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "An advisor might act as an investment adviser representative managing your portfolio in the morning, and switch into a broker-dealer role in the afternoon to sell you an insurance policy.",
+      "replacement": "",
+      "type": "Morning/afternoon scenario not in source",
+      "why": "Fact list does not include this scenario."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "They accept no commissions, finder fees, or product kickbacks from mutual fund families or insurance providers.",
+      "replacement": "",
+      "type": "Finder fees and kickbacks not in source",
+      "why": "Terms not on fact list; source specifies fee-only is paid only by client."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "examine their employment history, licenses, and any formal customer disputes or regulatory penalties",
+      "replacement": "see the free public database for brokers",
+      "type": "Employment history, licenses, and disputes not in source",
+      "why": "Source only describes BrokerCheck as the free public database for brokers."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "A clean answer is an unequivocal yes on firm letterhead.",
+      "replacement": "A good answer confirms this in writing.",
+      "type": "Flourish about letterhead not in source",
+      "why": "Source specifies asking for the fiduciary commitment in writing."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "A strong candidate confirms they have zero production minimums pressuring their recommendations.",
+      "replacement": "A good answer discloses whether any production targets or revenue minimums exist.",
+      "type": "Scripted phrasing and unsupported absolute claim",
+      "why": "Source lists asking about production targets and revenue minimums."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "A reliable answer confirms the firm receives no revenue sharing from fund families.",
+      "replacement": "A good answer discloses whether any third-party product payments exist.",
+      "type": "Revenue sharing not in source",
+      "why": "Source mentions third-party payments tied to recommended products."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Because an hourly or flat-fee consultant earns nothing from whether you purchase the annuity or execute the trade, their evaluation is free from product sales commissions.",
+      "replacement": "",
+      "type": "Overclaims second opinion is free from bias",
+      "why": "Source does not support claim that evaluation is entirely free of commissions."
+     },
+     {
+      "id": "introText",
+      "quote": "protects your portfolio from unnecessary fees, unsuitable products, and biased allocations",
+      "replacement": "helps you spot these potential biases",
+      "type": "Unsupported outcome promise",
+      "why": "Fact list does not support protection guarantees."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[3].body",
+      "quote": "Regulation Best Interest demands that broker-dealers act in your best interest at the time of a trade, but it allows product sales and commission arrangements that a pure fiduciary would avoid.",
+      "finding": "Reg BI trade timing and pure fiduciary comparison not in source",
+      "why": "Fact list does not mention trade timing or pure fiduciaries.",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      13
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "Financial advisor conflicts of interest are not always obvious on a firm website, but you can uncover them by checking regulatory filings and asking targeted questions about compensation before signing an agreement.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "These pressures stem directly from revenue arrangements rather than ill intent.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "When an advisor earns an upfront or trailing cut from selling a specific fund or policy, an inherent tension exists between their income and your savings.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "They might also face sales quotas, production targets, or revenue minimums that encourage moving assets into preferred products.",
+       "type": "inference",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[1].body",
+       "quote": "The terminology used in the financial planning industry confuses many consumers because fee-only and fee-based sound nearly identical despite having distinct legal and economic meanings.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[1].body",
+       "quote": "In contrast, commission-based advisors earn their livelihood exclusively or primarily from the products they sell.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "This fiduciary standard requires the professional to put the client's interests ahead of their own at all times and eliminate or transparently disclose conflicts.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "Regulation Best Interest demands that broker-dealers act in your best interest at the time of a trade, but it allows product sales and commission arrangements that a pure fiduciary would avoid.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "A helpful answer details any parent corporate ties that might restrict investment selections.",
+       "type": "inference",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "A candid planner explains their hourly or flat consultation rates for planning alone.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[6].body",
+       "quote": "This check is valuable whenever an existing planner suggests liquidating long-held assets or transferring retirement balances into complex proprietary vehicles.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "sections[7].body",
+       "quote": "This guidance on screening financial advisor conflicts of interest is not geared toward self-directed investors who manage their own portfolios using low-cost index funds and require no outside financial planning assistance.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      },
+      {
+       "id": "faqs[0].answer",
+       "quote": "Common examples include earning sales commissions on specific funds, receiving third-party kickbacks, or facing quotas that incentivize selling particular products.",
+       "type": "unsupported",
+       "reason": "final pass over-flagged; not applied"
+      }
+     ],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1805,
+    "flags": [
+     "claim check: 13 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Financial advisor conflicts of interest are not always obvious on a firm website'; 'These pressures stem directly from revenue arrangements rather than ill intent.'; 'When an advisor earns an upfront or trailing cut from selling a specific fund or'; 'They might also face sales quotas, production targets, or revenue minimums that '"
+    ]
+   }
+  ]
+ },
+ "seconds": 122.7,
+ "response_id": "NVnJaqSsFvqu_uMP2OWZmAk",
+ "generated_at": "2026-10-09T21:16:30+0000"
+}

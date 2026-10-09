@@ -18143,6 +18143,99 @@ export const GUIDES: Guide[] = [
     "faqItems": [],
     "updated": "2026-10-06"
   },
+  {
+    "slug": "financial-advisor-conflicts-of-interest",
+    "updated": "2026-10-09",
+    "title": "How to Spot Financial Advisor Conflicts of Interest",
+    "metaDescription": "Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.",
+    "h1": "How to Spot Financial Advisor Conflicts of Interest Before You Hire",
+    "cardBlurb": "Learn how advisor pay models create hidden conflicts, how to read Form CRS and Form ADV, and the exact questions to ask before hiring an advisor.",
+    "introText": "A conflict of interest exists whenever the way an advisor earns money can reward advice that is not the cheapest or best fit for you.\n\nHow an advisor gets paid shapes what they recommend. Financial advisor conflicts of interest are not always obvious on a firm website, but you can uncover them by checking regulatory filings and asking targeted questions about compensation before signing an agreement.\n\nLearning to evaluate financial advisor conflicts of interest helps you spot these potential biases throughout your relationship with a planner.",
+    "sections": [
+      {
+        "heading": "Where Advisor Conflicts Come From",
+        "body": "Financial advisor conflicts of interest occur whenever an advisor's compensation or affiliations could reward a recommendation that is not the best fit for the client. These pressures stem directly from revenue arrangements rather than ill intent.\n\nAdvisors rely on several common pay sources: a percentage of assets under management, a flat fee, an hourly rate, commissions on products sold, or a mix of these models. Commissions commonly apply to mutual funds, annuities, and insurance products. When an advisor earns an upfront or trailing cut from selling a specific fund or policy, an inherent tension exists between their income and your savings.\n\nAffiliations create another major channel for advisor conflicts of interest. An advisor may have ties to a broker-dealer or an insurance firm. They might also face sales quotas, production targets, or revenue minimums that encourage moving assets into preferred products. Others receive direct payments from third parties tied to specific products recommended to clients. When you research [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/), identifying every party paying that professional is the starting point."
+      },
+      {
+        "heading": "Fee-Only vs Fee-Based Pay Structures",
+        "body": "The terminology used in the financial planning industry confuses many consumers because fee-only and fee-based sound nearly identical despite having distinct legal and economic meanings.\n\nFee-only advisors are paid only by the client. In contrast, commission-based advisors earn their livelihood exclusively or primarily from the products they sell. Hybrid advisors can charge fees to the client while simultaneously taking commissions.\n\nThis hybrid setup is where the fee-based label causes problems. A fee-based advisor can charge you a management fee and still earn commissions on annuities, insurance, or mutual funds they place in your portfolio. The fee-based tag does not mean commission-free. Because the distinction between fee-only vs fee-based directly affects recommendations, ask directly how every dollar of pay arrives to clarify whether any third-party commissions exist."
+      },
+      {
+        "heading": "The Conflict Inside a Percentage-of-Assets Fee",
+        "body": "A percentage-of-assets fee has its own conflict: the advisor earns more when the account grows, including when you add money, which can discourage advice such as paying off a mortgage or debt with those assets.\n\nA percentage-of-assets fee is often around 1% a year. Under this pricing model, keeping cash inside the advisory account generates ongoing management revenue for the professional. If you take money out of your portfolio to pay off debt, the assets under management decrease, which reduces the advisor's pay.\n\nConsider this hypothetical worked example. A 1% annual fee on a portfolio of $500,000 is $5,000 a year. Conversely, a 1% fee on a smaller starting balance of $20,000 is $200 a year. The math shows why an advisor charging under an assets-under-management structure faces a financial disincentive whenever you consider spending down managed wealth or transferring balances out. Exploring tools on our [investing calculators](/investing/) hub helps evaluate what these recurring fees cost over time."
+      },
+      {
+        "heading": "Fiduciary vs Non-Fiduciary Legal Standards",
+        "body": "Understanding fiduciary vs non-fiduciary advisor standards explains why two professionals working at similar desks can operate under entirely separate legal duties.\n\nInvestment advisers registered with the Securities and Exchange Commission (SEC) or a state regulator owe a fiduciary duty under the Investment Advisers Act of 1940. This fiduciary standard requires the professional to put the client's interests ahead of their own at all times and eliminate or transparently disclose conflicts. You can learn more about how these registered firms function in our guide to [what is a registered investment advisor](/guides/what-is-a-registered-investment-advisor/).\n\nBroker-dealer representatives operate under a different legal framework. They are held to Regulation Best Interest, which raises the older suitability standard but is not the same as fiduciary duty.\n\nA person can hold both roles. For this reason, you must ask whether the advisor is a fiduciary at all times and on all your accounts, and ask for the answer in writing."
+      },
+      {
+        "heading": "Questions to Ask a Financial Advisor to Uncover Conflicts",
+        "body": "Before hiring any wealth manager or planner, present them with specific questions to ask a financial advisor to expose financial advisor conflicts of interest:\n\n1. Are you a fiduciary at all times, on all of my accounts, and will you commit to that in writing? A good answer confirms this in writing.\n\n2. Exactly how are you paid, and does any part of your income come from commissions or third-party bonuses? A transparent response clarifies every revenue source, whether flat fees, hourly billing, or assets under management.\n\n3. Are you classified as fee-only or fee-based? A clear reply explains whether the firm ever accepts commissions for recommending insurance, annuities, or mutual funds.\n\n4. Do you face any sales quotas, production targets, or revenue minimums from your firm or an affiliated broker-dealer? A good answer discloses whether any production targets or revenue minimums exist.\n\n5. Does your firm receive payments from third parties tied to specific products you recommend? A good answer discloses whether any third-party product payments exist.\n\n6. Are you affiliated with a broker-dealer or an insurance company? A helpful answer details any parent corporate ties that might restrict investment selections.\n\n7. What forms of compensation do you earn if I choose not to invest in your recommended portfolio? A candid planner explains their hourly or flat consultation rates for planning alone.\n\nComparing options across our [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/) overview shows how different service models handle these obligations."
+      },
+      {
+        "heading": "How to Verify Advisor Disclosures",
+        "body": "You do not have to rely solely on verbal answers, because regulatory filings require advisory firms to publish their compensation structures, background records, and legal disciplinary actions in plain view.\n\nForm CRS (Customer Relationship Summary) is a short plain-language document most advisers and brokers must give retail clients. It outlines services, fees, conflicts of interest, and disciplinary history in a standardized format. Alongside it, Form ADV Part 2 (the brochure) describes an investment adviser's business practices, fee structure, conflicts of interest, and disciplinary history in greater narrative detail. If an advisor will not provide a Form CRS or Form ADV, that is a reason to keep looking.\n\nYou can independently verify these documents through free public databases. Use the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database to review registered investment advisers and read their active Form ADV filings. For broker-dealer representatives, check [FINRA BrokerCheck](https://brokercheck.finra.org/) to see the free public database for brokers. Reviewing these databases ensures the advisor's verbal claims match their official regulatory filings."
+      },
+      {
+        "heading": "Getting a Second Opinion on Large Decisions",
+        "body": "When facing a major portfolio adjustment, seeking a second opinion provides an effective sanity check against potential advisor conflicts of interest.\n\nA second opinion from an unconnected advisor, paid by flat fee or hourly, is a way to test a recommendation, especially a product like an annuity or a switch of investments. \n\nThis check is valuable whenever an existing planner suggests liquidating long-held assets or transferring retirement balances into complex proprietary vehicles. Using resources in our [retirement calculators](/retirement/) hub alongside an unaligned second opinion helps you calculate whether a proposed change actually serves your long-term goals. Reading our analysis on whether a [financial advisor is worth it](/guides/financial-advisor-worth-it/) offers extra perspective on balancing these ongoing fees against objective guidance."
+      },
+      {
+        "heading": "Who This Advice Is Not For and When the Approach Shifts",
+        "body": "This guidance on screening financial advisor conflicts of interest is not geared toward self-directed investors who manage their own portfolios using low-cost index funds and require no outside financial planning assistance. If you manage your own wealth without an intermediary, you do not face advisor sales conflicts and do not need to audit Form ADV filings or interview advisory firms.\n\nOur advice to reject commission-earning or hybrid planners would change if you need a specific insurance product sold on commission. Even in that setting, keep the transaction isolated to that single product rather than handing over full investment management discretion.\n\nTo safeguard your capital today, pull the Form ADV Part 2 and Form CRS for your current or prospective planner on the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database and verify their fee structure before scheduling your next planning conversation."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/how-to-choose-a-financial-advisor/",
+        "label": "How to choose an advisor"
+      },
+      {
+        "href": "/guides/what-is-a-registered-investment-advisor/",
+        "label": "Registered investment advisor guide"
+      },
+      {
+        "href": "/compare/financial-advisor-vs-wealth-manager/",
+        "label": "Advisor vs wealth manager"
+      },
+      {
+        "href": "/investing/",
+        "label": "Investing calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a conflict of interest for a financial advisor?",
+        "answer": "A conflict of interest for a financial advisor occurs when their compensation or professional affiliations could reward a recommendation that is not the cheapest or best fit for the client. Common examples include earning sales commissions on specific funds, receiving third-party kickbacks, or facing quotas that incentivize selling particular products."
+      },
+      {
+        "question": "Is a fee-only advisor free of conflicts?",
+        "answer": "No, a fee-only advisor is not completely free of conflicts. While fee-only planners do not accept product commissions, charging a percentage of assets under management creates an incentive to keep your cash invested rather than advising you to pay off debt or use those assets outside the portfolio."
+      },
+      {
+        "question": "What is the difference between fee-only and fee-based?",
+        "answer": "Fee-only advisors are compensated solely by direct fees from their clients, with no third-party commissions. Fee-based advisors charge clients fees but can also accept commissions on products like annuities, insurance policies, or mutual funds they sell."
+      },
+      {
+        "question": "Do all financial advisors have to be fiduciaries?",
+        "answer": "No, not all financial advisors are held to a fiduciary standard. Registered investment advisers owe a fiduciary duty under the Investment Advisers Act of 1940, but broker-dealer representatives follow Regulation Best Interest, which is not the same as a comprehensive fiduciary duty."
+      },
+      {
+        "question": "How do I check an advisor's conflicts of interest?",
+        "answer": "You can check an advisor's conflicts of interest by reading their Form CRS and Form ADV Part 2, and by searching the SEC Investment Adviser Public Disclosure database or FINRA BrokerCheck. These public records detail the firm's fees, compensation sources, conflicts, and disciplinary history."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Securities and Exchange Commission, Investment Adviser Public Disclosure",
+        "url": "https://adviserinfo.sec.gov/"
+      },
+      {
+        "label": "FINRA, BrokerCheck Public Database",
+        "url": "https://brokercheck.finra.org/"
+      }
+    ]
+  },
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));
