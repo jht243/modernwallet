@@ -1,0 +1,528 @@
+{
+ "rows": [
+  {
+   "keyword": "best mortgage lenders",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "money.usnews.com",
+    "www.floridahousing.org",
+    "wallethub.com",
+    "www.zillow.com",
+    "www.forbes.com",
+    "wallethub.com",
+    "bestcompany.com",
+    "wallethub.com",
+    "themortgagereports.com",
+    "www.marketwatch.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "local_pack": 3,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the top 5 mortgage companies?",
+    "How much is a $300,000 mortgage at 7% interest?",
+    "Will mortgage rates get to 4% in 2026?",
+    "What are the best DSCR loan rates right now?",
+    "Can I get a $100,000 DSCR loan?",
+    "How to get a 4% mortgage rate?"
+   ],
+   "related_searches": [
+    "Best mortgage lenders near me",
+    "Best mortgage lenders for first-time buyers",
+    "Rocket Mortgage",
+    "Best mortgage lenders in florida for first time buyers",
+    "Best mortgage lenders in michigan",
+    "United Wholesale Mortgage",
+    "Mortgage lenders near me",
+    "CrossCountry Mortgage",
+    "Best mortgage lenders 2025",
+    "Reddit best mortgage lenders",
+    "Best mortgage lenders reddit 2025",
+    "Best mortgage rates"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "best mortgage lenders for first time home buyers",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.lendingtree.com",
+    "www.frontrangemortgage.com",
+    "reliancefinancial.com",
+    "money.usnews.com",
+    "www.zillow.com",
+    "www.quora.com",
+    "www.capitalone.com",
+    "money.usnews.com",
+    "www.facebook.com",
+    "www.bobrutledge.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.quora.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who has the best mortgage rates for first-time buyers?",
+    "What is an adjustable-rate mortgage?",
+    "Which bank provides the best home loan?",
+    "Who is the #1 mortgage lender in America?",
+    "Which mortgage lender will offer the best mortgage rates in 2026?",
+    "What credit score is needed for a mortgage?"
+   ],
+   "related_searches": [
+    "best mortgage lenders for first time home buyers near california",
+    "best mortgage lenders for first time home buyers near texas",
+    "Best mortgage lenders for first time home buyers near",
+    "Best mortgage lenders for first time home buyers california",
+    "Rocket Mortgage",
+    "Best mortgage lenders in PA for first-time buyers",
+    "Best mortgage lenders with low interest rates",
+    "Best Mortgage lenders in PA reddit",
+    "Best mortgage lenders for first time home buyers usa"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 75
+  },
+  {
+   "keyword": "are online wills legal",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "woodsandbates.com",
+    "www.reddit.com",
+    "www.legalzoom.com",
+    "www.youtube.com",
+    "www.sedalawfirm.com",
+    "trustandwill.com",
+    "blog.mcmfirm.com",
+    "ozarkslegacylaw.com",
+    "www.estatelawpartners.com",
+    "bononiandbononi.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is an online will legally binding?",
+    "Is FreeWill good on Reddit?",
+    "Can you look up a person's will?",
+    "What are the downsides of using a living will?",
+    "What to never put in your will?",
+    "Is it better to leave your house in a will or trust?",
+    "What is the best way to leave your house to your children in your will?",
+    "What is the biggest mistake with wills?"
+   ],
+   "related_searches": [
+    "are online wills legal near california",
+    "are online wills legal near texas",
+    "Are online wills legal in texas",
+    "Are online wills legal in Pa",
+    "Are online wills legal in illinois",
+    "Are free online wills legitimate",
+    "Best online will maker Consumer Reports",
+    "How to create a simple will online"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "make a will online",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.freewill.com",
+    "www.redcross.org",
+    "www.cnbc.com",
+    "www.statefarm.com",
+    "www.ncoa.org",
+    "www.youtube.com",
+    "www.aarp.org",
+    "trustandwill.com",
+    "www.legalzoom.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "trustandwill.com",
+    "www.uslegalwills.com",
+    "www.redcrosslegacy.org",
+    "www.doyourownwill.com",
+    "www.metromin.org",
+    "www.unitedway.org",
+    "smartasset.com",
+    "www.nolo.com",
+    "mygoodtrust.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is an online will legally binding?",
+    "Can I create a simple will in Florida?",
+    "What is the biggest mistake with wills?",
+    "How to make a will in NJ?",
+    "Can you write your own will in NJ without a lawyer?",
+    "Can I create a will without a lawyer?"
+   ],
+   "related_searches": [
+    "Make a will online free",
+    "Last Will and Testament template",
+    "Free printable will forms PDF",
+    "Free blank will template",
+    "AARP free will forms",
+    "Best free printable Will forms",
+    "Where can I get a blank Will form",
+    "Last Will and Testament template PDF"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.freewill.com, www.redcross.org, www.cnbc.com, www.statefarm.com",
+   "se_results_count": 119
+  },
+  {
+   "keyword": "custodial account fafsa",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.savingforcollege.com",
+    "www.schwab.com",
+    "www.chase.com",
+    "www.maxifi.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "westwoodgroup.com",
+    "sullivansavagegroup.bairdwealth.com",
+    "studentaid.gov",
+    "www.janushenderson.com",
+    "www.citizensbank.com",
+    "www.terrysavage.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.investopedia.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How to fill out FAFSA if parents are divorced and remarried?",
+    "What is the Charles Schwab Kids investment account?",
+    "What assets are exempt from being included as assets on the FAFSA?",
+    "Are 529 accounts considered custodial accounts?",
+    "Does FAFSA look at custodial accounts?",
+    "What happens to 529 if kid doesn't go to college?"
+   ],
+   "related_searches": [
+    "Custodial account fafsa reddit",
+    "Can I put 0 for student assets on FAFSA",
+    "Types of custodial accounts",
+    "Fidelity custodial account",
+    "How does FAFSA verify assets",
+    "What parent assets are reported on FAFSA",
+    "Does student assets on FAFSA include parents",
+    "Schwab custodial account"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com); AI Overview present, cites www.savingforcollege.com, www.schwab.com, www.chase.com, www.maxifi.com",
+   "se_results_count": 122
+  },
+  {
+   "keyword": "can custodial accounts be garnished",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.stash.com",
+    "www.avvo.com",
+    "www.reddit.com",
+    "www.unitedway.org",
+    "www.peoples-law.org",
+    "www.alperlaw.com",
+    "www.schwabmoneywise.com",
+    "ag.ny.gov",
+    "texaslawhelp.org",
+    "www.consumerfinance.gov"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What type of accounts cannot be garnished?",
+    "Who owns the money in a custodial account?",
+    "Can a creditor take money from my child's bank account?",
+    "How do I protect my bank account from garnishment?",
+    "What states prohibit bank account garnishments?",
+    "How to stop garnishment immediately?"
+   ],
+   "related_searches": [
+    "Can custodial accounts be garnished reddit",
+    "Can custodial accounts be garnished in california",
+    "Can custodial accounts be garnished in texas",
+    "Can your bank account be garnished without notice",
+    "Can creditors garnish wages",
+    "How to stop creditor garnishment",
+    "How to file exemption for wage garnishment",
+    "How to garnish someone's wages"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "custodial account vs savings account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.synchrony.com",
+    "www.bergerfinancialgroup.com",
+    "www.savingforcollege.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "heritagefcu.com",
+    "www.investopedia.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.kpmcpa.com",
+    "reidadvisorsllc.com",
+    "www.youtube.com",
+    "www.businessinsider.com",
+    "www.maxwellfm.com",
+    "www.wellsfargo.com",
+    "www.reddit.com",
+    "www.getearlybird.io",
+    "blog.sweeneyconrad.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Should I open a savings account for my child?",
+    "Is an investment account different from a savings account?",
+    "Which is better, FD or savings?",
+    "What is the Schwab child investment account?",
+    "What is the best way to invest $1,000 for my child?",
+    "Who is better, Fidelity or Schwab?"
+   ],
+   "related_searches": [
+    "Custodial account vs savings account reddit",
+    "Wells fargo custodial account vs savings account",
+    "Custodial account vs savings account taxes",
+    "Custodial account vs savings account pros and cons",
+    "Custodial account vs savings account fidelity",
+    "Types of custodial accounts",
+    "Custodial account vs 529",
+    "How to open a custodial account",
+    "What is custodial brokerage account"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.synchrony.com, www.bergerfinancialgroup.com, www.savingforcollege.com, www.schwab.com",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "529 vs brokerage account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.savingforcollege.com",
+    "www.farther.com",
+    "www.morningstar.com",
+    "www.youtube.com",
+    "blog.acadviser.com",
+    "slpwealth.com",
+    "www.cnbc.com",
+    "useorigin.com",
+    "augustuswealth.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.finra.org",
+    "www.merrilledge.com",
+    "investor.vanguard.com",
+    "faircollegefunding.com",
+    "smartasset.com",
+    "www.facebook.com",
+    "smartasset.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Why are people boycotting 529 plans?",
+    "How do the wealthy use 529 plans?",
+    "What does Dave Ramsey say about 529 plans?",
+    "What are the key differences between a brokerage account and a mutual fund account?",
+    "What is the downside to a brokerage account?",
+    "Is a $300,000 investment better in Vanguard or in Fidelity?"
+   ],
+   "related_searches": [
+    "529 vs brokerage account reddit",
+    "529 vs brokerage account vs 401k",
+    "Best 529 vs brokerage account",
+    "Fidelity 529 vs brokerage account",
+    "Custodial account vs 529",
+    "Custodial account vs 529 vs Roth IRA",
+    "Why 529 plans are a bad idea",
+    "529 vs custodial account reddit"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com) incl. #1; AI Overview present, cites www.reddit.com, www.savingforcollege.com, www.farther.com, www.morningstar.com",
+   "se_results_count": 143
+  },
+  {
+   "keyword": "living trusts usa reviews",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "oag.ca.gov",
+    "www.facebook.com",
+    "www.askmyattorney.net",
+    "www.legalshield.com",
+    "www.youtube.com",
+    "www.contractscounsel.com",
+    "livingtrustcalifornia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "oag.ca.gov",
+    "www.reddit.com",
+    "www.bbb.org",
+    "www.yelp.com",
+    "www.facebook.com",
+    "www.texasbar.com",
+    "www.askmyattorney.net",
+    "lawvex.com",
+    "affordablelivingtrusts.com",
+    "affordablelivingtrusts.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the disadvantages of having a living trust?",
+    "What does Dave Ramsey say about living trusts?",
+    "Is it wise to put my house in a living trust?",
+    "What are five assets that should never be included in a living trust?",
+    "What are common mistakes in living trusts?",
+    "What overrides a living trust?"
+   ],
+   "related_searches": [
+    "Living trusts usa reviews reddit",
+    "Living trusts usa reviews complaints",
+    "Living trusts usa reviews yelp",
+    "Living trusts usa reviews bbb",
+    "Living trusts usa complaints",
+    "Living Trust USA reviews complaints BBB",
+    "Livingtrustsusa com reviews and complaints reddit",
+    "Living trust near me"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites oag.ca.gov, www.facebook.com, www.askmyattorney.net, www.legalshield.com",
+   "se_results_count": 110
+  }
+ ],
+ "cost": "DataForSEO: 9 calls, $0.03735 of $2.00 budget"
+}
