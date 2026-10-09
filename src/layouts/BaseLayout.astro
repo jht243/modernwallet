@@ -54,6 +54,28 @@ const websiteJsonLd = {
       gtag('js', new Date());
       gtag('config', 'G-GLEBF3S7CQ');
     </script>
+    <!-- Fleet tool-use tracker (canonical: layer3 scripts/tool_usage/tool-use-snippet.js) -->
+    <script is:inline>
+      (function () {
+        var sent = false;
+        var CONTROLS = 'button,[role="button"],input,select,textarea,label,summary';
+        function onEvent(e) {
+          if (sent) return;
+          var el = e.target;
+          if (!el || !el.closest) return;
+          var root = el.closest('[data-tool]');
+          if (!root) return;
+          if (e.type === 'click' && !root.hasAttribute('data-tool-any-click') && !el.closest(CONTROLS)) return;
+          sent = true;
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'tool_use', { tool_name: root.getAttribute('data-tool'), tool_trigger: e.type });
+          }
+        }
+        ['click', 'input', 'change', 'submit'].forEach(function (t) {
+          document.addEventListener(t, onEvent, true);
+        });
+      })();
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />

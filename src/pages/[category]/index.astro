@@ -120,7 +120,7 @@ const jsonLdArticle = articleSchema({
       {paragraphs(calc.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
-    <section class="tool-section" aria-label="Interactive calculator">
+    <section class="tool-section" aria-label="Interactive calculator" data-tool={calc.id}>
       <div class="tool-badge"><span class="dot"></span> Interactive — edit any field</div>
       <CalculatorIsland client:only="react" calculatorId={calc.islandId} initialData={calc.defaultPreset} mortgageMode={calc.id === "mortgage"} />
     </section>
