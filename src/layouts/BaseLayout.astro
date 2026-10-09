@@ -54,22 +54,43 @@ const websiteJsonLd = {
       gtag('js', new Date());
       gtag('config', 'G-GLEBF3S7CQ');
     </script>
-    <!-- Fleet tool-use tracker (canonical: layer3 scripts/tool_usage/tool-use-snippet.js) -->
+    <!-- Fleet tool-usage tracker → our DB (canonical: layer3 scripts/tool_usage/tool-use-snippet.js) -->
     <script is:inline>
       (function () {
-        var sent = false;
+        var API = 'https://growth-sites-api.onrender.com/api/tool-use';
+        var vid = '';
+        try {
+          vid = localStorage.getItem('_tu_vid') || '';
+          if (!vid) { vid = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem('_tu_vid', vid); }
+        } catch (e) { /* storage blocked — send without an id */ }
+        function send(event, root, trigger) {
+          var body = JSON.stringify({ event: event, tool: root.getAttribute('data-tool'), path: location.pathname, vid: vid, trigger: trigger || '' });
+          try {
+            if (navigator.sendBeacon && navigator.sendBeacon(API, new Blob([body], { type: 'text/plain' }))) return;
+          } catch (e) { /* fall through */ }
+          try { fetch(API, { method: 'POST', body: body, keepalive: true, mode: 'no-cors' }); } catch (e) { /* give up quietly */ }
+        }
+        var viewed = false;
+        function checkView() {
+          if (viewed) return;
+          var root = document.querySelector('[data-tool]');
+          if (root) { viewed = true; send('view', root); }
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', checkView); else checkView();
+        window.addEventListener('load', function () { checkView(); setTimeout(checkView, 2500); });
+
+        var used = false;
         var CONTROLS = 'button,[role="button"],input,select,textarea,label,summary';
         function onEvent(e) {
-          if (sent) return;
+          if (used) return;
           var el = e.target;
           if (!el || !el.closest) return;
           var root = el.closest('[data-tool]');
           if (!root) return;
           if (e.type === 'click' && !root.hasAttribute('data-tool-any-click') && !el.closest(CONTROLS)) return;
-          sent = true;
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', 'tool_use', { tool_name: root.getAttribute('data-tool'), tool_trigger: e.type });
-          }
+          used = true;
+          if (!viewed) { viewed = true; send('view', root); }
+          send('use', root, e.type);
         }
         ['click', 'input', 'change', 'submit'].forEach(function (t) {
           document.addEventListener(t, onEvent, true);
