@@ -1,0 +1,37 @@
+{
+ "slug": "how-to-open-a-trump-account--auto-enrolled-callout",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 72,
+ "floor": 0,
+ "input_tokens": 19272,
+ "output_tokens": 107,
+ "thinking_tokens": null,
+ "cached_tokens": 17359,
+ "est_cost_usd": 0.0031,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 72,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17778
+  }
+ },
+ "seconds": 3.9,
+ "response_id": "ZFXIaojmApqDqtsPuYf2mAQ",
+ "generated_at": "2026-10-08T21:45:59-0500"
+}

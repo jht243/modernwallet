@@ -1,0 +1,68 @@
+
+  {
+    slug: "trump-account-vs-529",
+    title: "Trump Account vs 529: What's the Difference?",
+    metaDescription:
+      "Trump Account vs 529 (sometimes called a 530A account): one is tax-deferred and usable for anything at 18, the other is tax-free but school-only. Compare.",
+    targetKeyword: "trump account vs 529",
+    optionA: "Trump Account",
+    optionB: "529 Plan",
+    segment: "family savings",
+    h1: "Trump Account vs 529 Plan",
+    introText:
+      "At the heart of the Trump Account vs 529 debate is a trade-off between taxes and flexibility. A Trump Account grows tax-deferred and can be used for anything at 18. It also gives U.S.-citizen children born in 2025 to 2028 a free $1,000 federal seed, with contributions capped at $5,000 a year.\n\nA 529 plan, on the other hand, grows tax-free, but only for education. It has no federal annual limit, often comes with a state tax break, and can pay for tuition, books, and room and board tax-free.\n\nFor paying for college, a 529 usually wins on taxes. For open-ended savings that don't require school, the Trump Account has the edge.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it's for", a: "Anything after the child turns 18", b: "Qualified education costs only" },
+        { dimension: "Tax treatment of growth", a: "Tax-deferred; taxed as ordinary income at withdrawal", b: "Tax-free for qualified education expenses" },
+        { dimension: "Free money to start", a: "$1,000 federal seed (children born 2025–2028, needs SSN)", b: "None from the federal government" },
+        { dimension: "Annual contribution limit", a: "$5,000/yr combined from all private sources", b: "No federal limit (gift-tax exclusion ~$19,000/yr in 2025)" },
+        { dimension: "State tax deduction", a: "No", b: "Most states offer a deduction or credit" },
+        { dimension: "Investment choice", a: "Must be an S&P 500 / U.S.-equity index fund", b: "Menu of funds chosen by the state plan" },
+      ],
+    },
+    verdict:
+      "Choose a 529 plan if the goal is education, because tax-free growth and a likely state deduction beat the Trump Account's tax-deferred treatment. Choose a Trump Account if you want a head start with no strings: the free $1,000 seed is real money, and the child can use the balance for anything at 18 without needing to attend college. Most families with children born 2025 to 2028 can do both. Claim the free seed, then decide where new dollars go. For a full projection, try our [Trump Account calculator](/trump-account/), and if you're weighing education paths, see [529 vs Roth IRA](/compare/529-vs-roth-ira/).",
+    sections: [
+      {
+        heading: "How each account is taxed",
+        content:
+          "The tax rules are the biggest difference between these accounts.\n\nA 529 plan uses after-tax contributions, but growth and withdrawals are tax-free when spent on qualified education. Qualified costs include tuition, fees, books, and room and board, plus up to $20,000 a year in K-12 tuition. Non-qualified withdrawals trigger income tax plus a 10% penalty on the earnings.\n\nA Trump Account also uses after-tax contributions, and those contributions are not deductible. Growth is tax-deferred, not tax-free. After the child turns 18, the account works like a traditional IRA, so withdrawals are taxed as ordinary income. There is no state tax deduction. For a plain-English primer, read [what is a Trump Account](/guides/trump-accounts/).",
+      },
+      {
+        heading: "Contribution limits and the free seed",
+        content:
+          "A Trump Account starts with a [$1,000 federal seed](/compare/trump-account-vs-brokerage-account/) for eligible children born between January 1, 2025, and December 31, 2028. The child must be a U.S. citizen with a Social Security number. After that, contributions are capped at $5,000 a year from all private sources combined. An employer may add up to $2,500 a year, but that amount counts toward the $5,000 cap rather than on top of it. The seed itself does not count against the cap. Opening either account is generally quick online. See [how to open a Trump Account](/guides/how-to-open-a-trump-account/) for the exact steps and timeline.\n\nA 529 plan has no federal annual limit. Contributions are treated as gifts, so most families stay under the annual gift-tax exclusion of about $19,000 per giver in 2025. Each state plan sets a high aggregate lifetime limit, often above $500,000, though [the underlying funds' fees vary by plan](/guides/529-investment-strategy-by-age/). Ready to claim the free seed? See [how to open a Trump Account](/guides/how-to-open-a-trump-account/) for the steps.",
+      },
+      {
+        heading: "Flexibility and what happens if plans change",
+        content:
+          "Flexibility is where the accounts diverge most.\n\nMoney in a Trump Account is generally locked until January 1 of the year the child turns 18. After that, the child controls it and can spend it on anything, from a first home to a business to retirement. The trade is that every dollar of growth is eventually taxed as income. Both accounts also carry ordinary market risk, since they invest in stock and bond funds, so the balance can fall as well as rise. See [is a Trump Account worth it](/guides/trump-account-worth-it/) for how that risk weighs against the free seed. The account is also titled to the child's own Social Security number, IRA-style, so unlike a 529, there's no beneficiary to change if plans shift; the money stays tied to that one child.\n\nA 529 plan is narrower but has escape hatches. You can change the beneficiary to another family member. Under SECURE 2.0, up to $35,000 of unused 529 funds can roll into the beneficiary's Roth IRA, subject to a 15-year account-age rule. To decide whether the Trump Account's flexibility is worth the tax cost, see [are Trump Accounts worth it](/guides/trump-account-worth-it/).",
+      },
+      {
+        heading: "Impact on college financial aid",
+        content:
+          "A parent-owned 529 plan is reported as a parental asset on the FAFSA. Parental assets are assessed at a maximum of 5.64%, so a 529 has a relatively small effect on aid eligibility.\n\nThe Trump Account is a newer, IRA-style account owned by the child. Retirement accounts are generally not reported as assets on the FAFSA, which can be an underrated advantage for aid-sensitive families. The catch is that the Trump Account is built for education only by coincidence, not by design, so any withdrawal to pay tuition is still taxed as ordinary income. For the complete rundown of catches, see [what's the catch with a Trump Account](/guides/trump-account-worth-it/).",
+      },
+    ],
+    faqs: [
+      { question: "Can I roll a 529 plan into a Trump Account, or the other way around?", answer: "No, there is no direct rollover between a 529 plan and a Trump Account; the two are separate account types with different rules. If you want to redirect money, the custodian would need to withdraw from one account, which can trigger taxes and penalties on a non-qualified 529 withdrawal, and then contribute to the other within its own contribution limits." },
+      { question: "Does my child need to be a U.S. citizen to have a 529 plan the way they do for a Trump Account?", answer: "No, a 529 plan has no citizenship requirement for the beneficiary, so any child with a Social Security number or taxpayer ID can generally be named on one. A Trump Account is narrower: only U.S.-citizen children [born between January 1, 2025, and December 31, 2028](/guides/trump-account-rules/) qualify for the account, and only citizens born in that window get the $1,000 seed." },
+      { question: "Is a Trump Account or a 529 better for college?", answer: "A 529 plan is usually better for college because its growth and withdrawals are tax-free for qualified education expenses. A Trump Account only grows tax-deferred, so tuition withdrawals are taxed as ordinary income. In the Trump Account vs 529 comparison, the 529 wins on education taxes, while the Trump Account wins on flexibility and the free $1,000 seed. If a Roth IRA is also on the table, see [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/) for that tradeoff too." },
+      { question: "Can I open both a Trump Account and a 529 plan?", answer: "Yes, you can open both a Trump Account and a 529 plan for the same child. Many families claim the free $1,000 Trump Account seed for eligible children and also fund a 529 for tax-free education savings. The accounts have separate rules and separate contribution limits. If you're also weighing a UTMA, see [how a Trump Account, 529 plan, and UTMA compare](/compare/trump-account-vs-529-vs-utma/)." },
+      { question: "How much can a Trump Account grow by age 18?", answer: "A Trump Account's $1,000 seed alone grows to about $3,513 by age 18 at a 7% return. Adding $200 a month brings it to roughly $89,657, and contributing the $5,000 yearly maximum from birth reaches about $182,980. Run your own numbers with the [Trump Account calculator](/trump-account/)." },
+      { question: "Does a Trump Account get a state tax deduction like a 529?", answer: "No, a Trump Account does not offer a state tax deduction. Contributions are after-tax and not deductible on either federal or state returns. Most 529 plans, by contrast, give residents a state income-tax deduction or credit on their contributions." },
+      { question: "What happens to a 529 if the child skips college?", answer: "Unused 529 funds have several options if the child skips college. You can change the beneficiary to another family member, or roll up to $35,000 into the beneficiary's Roth IRA under SECURE 2.0 rules. Cashing out for non-education use triggers income tax plus a 10% penalty on the earnings." },
+      { question: "Is a Trump Account the same as a 530A account?", answer: "Yes. \"Trump Account\" is the common name; the account was codified into the tax code as new Internal Revenue Code Section 530A, so \"530A account\" and \"Trump Account\" refer to the same thing. It sits next to Section 530, which covers Coverdell education savings accounts — a separate account type from either a Trump Account or a 529 plan. For more on whether the program is legitimate and worth using at all, see [is a Trump Account worth it](/guides/trump-account-worth-it/)." },
+    ],
+    sources: [
+      { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
+      { label: "IRS — Topic No. 313, Qualified Tuition Programs (529 plans)", url: "https://www.irs.gov/taxtopics/tc313" },
+      { label: "Congressional Research Service — Report R48910", url: "https://www.congress.gov/crs-product/R48910" },
+    ],
+    relatedComparisons: ["529-vs-roth-ira", "brokerage-vs-ira", "trump-account-vs-roth-ira", "529-vs-utma"],
+    calculatorLinks: [
+      { label: "Trump Account calculator", href: "/trump-account/" },
+      { label: "Investment calculator", href: "/investing/" },
+    ],
+  },

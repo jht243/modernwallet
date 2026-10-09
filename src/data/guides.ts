@@ -30,6 +30,638 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-08 ──
+  {
+    "slug": "how-to-claim-a-trump-account",
+    "updated": "2026-10-08",
+    "title": "How to Claim a Trump Account After Auto-Enrollment",
+    "metaDescription": "Step-by-step instructions to claim your child's auto-enrolled Trump Account through the official app or website, unblock deposits, and verify the $1,000 seed.",
+    "h1": "How to Claim a Trump Account After Auto-Enrollment",
+    "cardBlurb": "Learn how to claim your child's auto-enrolled Trump Account, verify your identity, unblock contributions, and confirm the federal seed deposit.",
+    "introText": "You claim an auto-enrolled Trump Account in the official Trump Accounts app or on the web version at trumpaccount.com. At ModernWallet, we publish this site's [Trump Account calculator](/trump-account/) and guides, so we follow each [Treasury](https://home.treasury.gov/news/press-releases/sb0642) and [IRS](https://www.irs.gov/trumpaccounts) notice on the program.\n\nTreasury announced in press release SB-0642 that automatic enrollment was complete on October 1, 2026, and about 60 to 70 million children now have accounts, depending on the source.\n\nUntil a parent or guardian claims the account, family, friends and employers cannot contribute to it. For a child born 2025 through 2028, Treasury also says the account must be claimed to receive the $1,000 seed.",
+    "sections": [
+      {
+        "heading": "How to Claim an Auto-Enrolled Trump Account, Step by Step",
+        "body": "To claim your child's account, complete the four steps Treasury lists in press release SB-0642:\n\n1. Download the mobile app or visit the web portal. Install \"Trump Accounts: Official App\" on an Apple iOS device through the [Apple App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) or on an Android device via Google Play. If you do not use a smartphone, navigate directly to the official browser portal at trumpaccount.com or access program tools through [TrumpAccounts.gov](https://trumpaccounts.gov).\n2. Verify your identity and relationship. Follow the initial authentication prompts on screen. You must verify your own identity as the claiming adult and confirm your legal relationship as the parent or guardian of the child.\n3. Review the child's information. Review the information Treasury has on file for your child and confirm it is correct.\n4. Accept the account terms. Read the account terms. Once you accept the terms, the account is claimed, and family, friends and employers can start contributing.\n\nIf you find that an account does not exist for your child, review [how to open a Trump Account](/guides/how-to-open-a-trump-account/) to establish one directly. For technical bugs encountered during mobile setup, consult our guide to the [Trump Account app](/guides/trump-account-app/)."
+      },
+      {
+        "heading": "What You Need Before Starting the Claim Process",
+        "body": "Gather your details before you start. You will verify your own identity and your relationship to the child; Treasury has not published which identity documents the check asks for. You also need your child's legal name, date of birth, and valid Social Security number.\n\nMake sure you only submit personal details through recognized federal entry points. The official app is listed as \"Trump Accounts: Official App\", published with the U.S. Department of the Treasury listed as seller. Web users should verify that their browser address bar points to trumpaccount.com or TrumpAccounts.gov before typing sensitive information.\n\nIf you experience identity mismatches during the claim flow, official support is available. Contact the official Treasury call center at 1-866-USA-4547 or request an official callback directly inside the application interface."
+      },
+      {
+        "heading": "What Automatic Enrollment Accomplished on October 1, 2026",
+        "body": "Treasury press release SB-0642 announced that automatic enrollment finished on October 1, 2026. Treasury Secretary Scott Bessent stated that over 60 million more eligible children received an account ready to be claimed, building upon the accounts established earlier by parents who enrolled manually.\n\nTotals vary by source regarding the full enrollment volume. While Treasury cited over 60 million additional children in its announcement, reporting from [CNBC](https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html) on October 8, 2026, indicated nearly 70 million accounts exist nationwide. [Invest America](https://investamerica.org/) similarly reported that more than 70 million children hold accounts.\n\nAutomatic enrollment applied to every eligible child under age 18 holding a valid Social Security number."
+      },
+      {
+        "heading": "What Happens to an Account Nobody Claims",
+        "body": "An auto-enrolled account does not disappear if you take no immediate action, but its features remain heavily restricted. According to a tax-practitioner analysis of the regulations published under Treasury Decision (TD) 10056, unclaimed accounts are held in a Treasury master group trust. These accounts can receive only general contributions and the $1,000 pilot contribution, while family and employer contributions are blocked until claimed.\n\nTreasury has published no formal deadline by which a parent must claim an account. According to a tax-practitioner analysis of the regulations, claiming remains available until the end of the year the child turns 17. Under the same practitioner analysis, if two individuals attempt to claim the same child, the first person to activate becomes the responsible party on file.\n\nOnce you claim it, you can track the account in the app and let family, friends and employers contribute."
+      },
+      {
+        "heading": "Why Claiming Now Makes Sense",
+        "body": "Claiming the account now is the right move if your family intends to contribute or if your child qualifies for the $1,000 federal seed. Family and friends can add up to $5,000 a year combined. Employers can add up to $2,500, which counts inside that $5,000, as our guide to [Trump Account employer contributions](/guides/trump-account-employer-contributions/) explains. None of that capital can enter the account until you complete the claim workflow.\n\nA family whose child was born outside the 2025 through 2028 window and who plans no personal contributions loses little by waiting. The underlying account remains open in the master trust, and a tax-practitioner analysis indicates claiming stays open through the calendar year the child turns 17. The primary reason not to delay is avoiding dispute over who manages the assets, because the first authorized person to activate becomes the legal responsible party.\n\nOur answer would change if Treasury confirms whether an in-app claim counts as the pilot program election. Until it does, a family with a child born 2025 through 2028 should confirm the election is on file, as the next section explains."
+      },
+      {
+        "heading": "The $1,000 Federal Seed and the Form 4547 Election Wrinkle",
+        "body": "Children born between January 1, 2025, and December 31, 2028, who are U.S. citizens with valid Social Security numbers qualify for a one-time $1,000 federal seed deposit. Treasury press release SB-0642 explicitly states that a child's account must be claimed to receive this $1,000 seed. Claiming the account is a mandatory requirement, but it may not be the only procedural step needed.\n\nUnder temporary regulations [T.D. 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts) published on September 30, 2026, Treasury established initial accounts but noted that the Secretary cannot make a pilot program election on behalf of an individual. An auto-enrolled account gets the $1,000 only if an eligible person has made the pilot election. It remains unknown whether completing the claim steps inside the mobile app counts as making the pilot election under federal rules.\n\nIf you have a child born between 2025 and 2028, do not assume an app claim alone delivers the seed. Call 1-866-USA-4547 to check that a pilot election is on file. The documented method to secure the deposit is submitting Part III of [IRS Form 4547](https://www.irs.gov/forms-pubs/about-form-4547), as explained in our overview of [Form 4547](/guides/form-4547/). Details on deposit processing schedules appear in our review of [when Trump Accounts get funded](/guides/when-will-trump-account-be-funded/)."
+      },
+      {
+        "heading": "Private Donations and the Dell $250 Deposit",
+        "body": "Michael and Susan Dell pledged $6.25 billion to put $250 into the accounts of 25 million children born 2016 through 2024, in ZIP codes with a median family income of about $118,000 or less. The cutoff was $150,000 in the December 2025 announcement and fell because auto-enrollment added far more eligible children. There is no separate application; you can look up your ZIP's median family income in [Census Reporter table B19113](https://censusreporter.org/tables/B19113/), and our [Dell Trump Account $250](/guides/dell-trump-account-250/) guide covers the rest."
+      },
+      {
+        "heading": "Account Structure After Claiming",
+        "body": "You do not pick a broker after you claim. [Robinhood Securities](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf) serves as the trustee on Treasury's behalf and developed the underlying application software. To learn more about how custody works under the program, consult our breakdown of [Trump Account trustees](/compare/trump-account-trustees/).\n\nAll contributed balances are invested in a qualifying low-cost index fund tracking the S&P 500 or broad U.S. equities, as detailed in our guide on [what Trump Accounts are invested in](/guides/what-are-trump-accounts-invested-in/). The app interface lets you connect a bank account, set up recurring deposits, and monitor cumulative investment returns. Growth remains tax-deferred, and withdrawals are generally blocked until January 1 of the year your child turns 18, under policies explained in our summary of [Trump Account rules](/guides/trump-account-rules/)."
+      },
+      {
+        "heading": "Avoiding Fraudulent Messages During Account Activation",
+        "body": "Official email correspondence regarding account activation originates only from the address no-reply@TrumpAccounts.Treasury.gov.\n\nIgnore unsolicited text messages, phone calls, or social media advertisements claiming to activate your child's account for a processing fee. If you receive a questionable communication requesting your banking credentials or child's SSN, review our guide to [Trump Account scams](/guides/trump-account-scams/) to identify common fraudulent tactics before taking any action."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I claim Trump Account money?",
+        "answer": "You claim the account by downloading the official \"Trump Accounts: Official App\" or visiting trumpaccount.com, completing identity verification, reviewing your child's data, and accepting the account terms. Once claimed, the account can accept outside contributions and satisfy the claim requirement for federal funds."
+      },
+      {
+        "question": "Should I claim a Trump Account?",
+        "answer": "Yes, you should claim the account if your child qualifies for the $1,000 seed or if family, friends, or employers plan to contribute. If two people try to claim the same child, the first to activate becomes the responsible party, according to a tax-practitioner analysis of the regulations."
+      },
+      {
+        "question": "How many Trump Accounts have been claimed?",
+        "answer": "Published government figures reflect total accounts created rather than the number of accounts claimed by parents. Treasury reported over 60 million more accounts from automatic enrollment, while CNBC and Invest America put the total near or above 70 million."
+      },
+      {
+        "question": "Who gets $1,000 for Trump Accounts?",
+        "answer": "The $1,000 federal seed is reserved exclusively for U.S.-citizen children born between January 1, 2025, and December 31, 2028, who have a valid Social Security number. The account must be claimed, and an authorized adult must ensure a pilot program election is recorded with the government."
+      },
+      {
+        "question": "Is there a deadline to claim a Trump Account?",
+        "answer": "Treasury has published no formal claim deadline. According to a tax-practitioner analysis of program regulations, an account remains eligible to be claimed until the end of the year the child turns 17."
+      },
+      {
+        "question": "Can I claim without the app?",
+        "answer": "Yes. If you do not have an iOS or Android smartphone, you can complete the claim flow online via a web browser at trumpaccount.com or access program tools through TrumpAccounts.gov."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Treasury Press Release SB-0642 (Auto-Enrollment)",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "IRS, Trump Accounts",
+        "url": "https://www.irs.gov/trumpaccounts"
+      },
+      {
+        "label": "Federal Register, Temporary Regulations TD 10056",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      },
+      {
+        "label": "IRS, Form 4547 Instructions",
+        "url": "https://www.irs.gov/instructions/i4547"
+      },
+      {
+        "label": "Robinhood, Trump Account Customer Agreement",
+        "url": "https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "trump-account-app",
+    "updated": "2026-10-08",
+    "title": "How to Use the Official Trump Accounts App",
+    "metaDescription": "Download the official Trump Account app, claim your child's auto-enrolled balance, track deposits, or use the web portal if you do not have a smartphone.",
+    "h1": "How to Use the Trump Account App",
+    "cardBlurb": "How to install the official Trump Account app, claim your child's balance, fix common login or bank errors, and manage funds without a phone.",
+    "introText": "You check your child's Trump Account in Trump Accounts: Official App, which the [U.S. Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0508) publishes on the [App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) and Google Play. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each Treasury update to the app.\n\nThe app lets you claim the account, track contributions, activity and performance, link a bank, and set up recurring contributions. If you do not have a mobile device, Treasury offers a web version at trumpaccount.com.",
+    "sections": [
+      {
+        "heading": "Getting Into the Trump Accounts App",
+        "body": "To check your child's balance on a phone, install the app and complete four basic steps. Treasury released Trump Accounts: Official App on the Apple App Store and Google Play, with the seller listed as the U.S. Department of the Treasury.\n\n1. Download \"Trump Accounts: Official App\" from the App Store or Google Play on your mobile device.\n2. Open the app, sign in, and verify your identity along with your parental relationship to the child.\n3. Review the information Treasury has on file for your child and confirm it is correct.\n4. Accept the legal account terms to finish claiming the record and open up full dashboard features.\n\nOnce the account is claimed, the app shows its contributions, activity and investment performance. For the full claim steps, see [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/)."
+      },
+      {
+        "heading": "What You Can Do in the App",
+        "body": "The app lets you manage contributions, review government deposits and track investment growth. A child's money is automatically invested into a qualifying index fund that tracks the S&P 500 or a similar broad U.S. stock index. You cannot purchase individual stocks or speculative assets in the app.\n\nParents can link external checking accounts to send one-time deposits or set up recurring contributions. Friends, relatives, and employers can also send gifts directly into the account up to the statutory limit of $5,000 per year combined. Employers can chip in up to $2,500 inside that same $5,000 yearly cap, as outlined in our guide to [Trump Account employer contributions](/guides/trump-account-employer-contributions/).\n\nThe app also shows federal deposits. Qualifying children born between 2025 and 2028 receive a one-time $1,000 federal seed, which does not count toward the $5,000 annual limit. Children born between 2016 and 2024 who live in eligible lower-income areas may see a separate $250 contribution funded by Michael and Susan Dell, detailed in our guide to the [Dell Trump Account $250](/guides/dell-trump-account-250/) grant. Parents can calculate how these balances compound over eighteen years using our [Trump Account calculator](/trump-account/)."
+      },
+      {
+        "heading": "Using Trump Accounts Without the App",
+        "body": "Treasury's SB-0508 release says a web version exists at trumpaccount.com for people without a mobile device, and account management is also referenced at [TrumpAccounts.gov](https://trumpaccounts.gov).\n\nTreasury has not published a feature-by-feature comparison of the web version and the app. If a step you need is missing on the web, call 1-866-USA-4547 or request a callback online.\n\nBefore automatic enrollment in October 2026, some parents opened accounts by filing Form 4547 with the [IRS](https://www.irs.gov/trumpaccounts) online, using an [ID.me](https://www.id.me/) sign-in. A Form 4547 election on its own does not give you a usable account, so the account still has to be claimed in the app or on the web. Our [IRS Form 4547](/guides/form-4547/) guide covers whether you need the form's $1,000 pilot election."
+      },
+      {
+        "heading": "Common Technical Problems and How to Fix Them",
+        "body": "Users have reported several problems in app reviews, and Treasury has not published causes or error codes for them.\n\n- Bank-link errors: update the app, then remove and re-link the bank account. If it still fails, request an in-app callback or call 1-866-USA-4547.\n- Linked debit cards disappearing: update the app and add the card again. If the card disappears again, request a callback.\n- Recurring contributions not showing: check your bank statement to see whether the money left your account before you send a second deposit, then request a callback if the transfer is missing.\n- Failed activation or requests to resubmit information: resubmit your child's details exactly as they appear on the Social Security card, then call 1-866-USA-4547 if activation still fails.\n\nIf these steps do not work, request an in-app callback rather than starting a second claim for the same child."
+      },
+      {
+        "heading": "Customer Service and Official Contact Channels",
+        "body": "Treasury maintains a dedicated telephone support center for parents needing technical or account assistance. You can reach official customer service by calling 1-866-USA-4547. Use it for app problems, a failed claim or a missing deposit.\n\nParents can also request an electronic callback directly through the app or the web version. Official email correspondence regarding child accounts comes exclusively from no-reply@TrumpAccounts.Treasury.gov.\n\nFake lookalike apps exist, so check that the App Store seller is the U.S. Department of the Treasury; our guide to [Trump Account scams](/guides/trump-account-scams/) covers the warning signs."
+      },
+      {
+        "heading": "Who Publishes and Runs the Trump Account App",
+        "body": "Treasury announced the app in press release SB-0508 on May 28, 2026. Treasury is the seller on the app stores, and [Robinhood Securities](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf) is the trustee on Treasury's behalf and built the app.\n\nTreasury's SB-0642 release says over 60 million more children had accounts ready to claim as of October 1, 2026, and [CNBC](https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html) put the total near 70 million.\n\nAccording to a tax-practitioner analysis of the regulations, unclaimed accounts sit in a Treasury master group trust until a parent or guardian claims them. To see how the trustee arrangement works, read our comparison of [Trump Account trustees](/compare/trump-account-trustees/)."
+      },
+      {
+        "heading": "Next Steps to Take on Your Child's Account",
+        "body": "If your child was under 18 with a valid Social Security number on October 1, 2026, Treasury has already opened an account for them, and it is waiting to be claimed. Download Trump Accounts: Official App from the App Store or Google Play, or use the web version at trumpaccount.com to claim your child's record.\n\nComplete the identity verification steps so the account can receive the $1,000 seed if your child is eligible, gifts from family and friends, and employer contributions. If you run into technical errors during registration, place a call to 1-866-USA-4547 to resolve the issue with an official representative."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the Trump Account app?",
+        "answer": "The Trump Account app, titled Trump Accounts: Official App, is the official mobile application created by the U.S. Department of the Treasury and built with Robinhood Securities. It lets parents claim auto-enrolled accounts, link bank accounts, monitor index fund growth, and receive contributions up to $5,000 per year."
+      },
+      {
+        "question": "How do I check my child's Trump Account?",
+        "answer": "You can check your child's balance by downloading Trump Accounts: Official App on iOS or Android, or by using the web version at trumpaccount.com. Once you verify your identity and claim the account, the app shows its contributions, activity and investment performance."
+      },
+      {
+        "question": "Can I use a Trump Account without the app?",
+        "answer": "Yes. Treasury offers a web version at trumpaccount.com for people without a mobile device, and account management is also referenced at TrumpAccounts.gov. Treasury has not published whether every app feature is on the web, so call 1-866-USA-4547 if a step is missing."
+      },
+      {
+        "question": "What is the Trump Account phone number?",
+        "answer": "The official phone number for Trump Account customer service is 1-866-USA-4547. You can call this toll-free line for help with failed activations, identity verification issues, or missing deposits, or request an electronic callback inside the app."
+      },
+      {
+        "question": "Why is the Trump Account app not working?",
+        "answer": "Users have reported bank-link errors, linked debit cards disappearing, recurring contributions not showing and failed activations in app reviews, and Treasury has not published the causes. Update the app, re-link your bank, or call 1-866-USA-4547 or request an in-app callback."
+      },
+      {
+        "question": "Is the Trump Account app real?",
+        "answer": "Yes, the official app is legitimate and released by the U.S. Department of the Treasury on the Apple App Store and Google Play. Because fraudulent copycat apps exist, check that the [App Store listing](https://apps.apple.com/us/app/trump-accounts/id6767364919) names the U.S. Department of the Treasury as the seller and learn how to identify fake offers in our guide to [Trump Account scams](/guides/trump-account-scams/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of the Treasury, Automatic Enrollment (SB-0642)",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "U.S. Department of the Treasury, Official App Announcement (SB-0508)",
+        "url": "https://home.treasury.gov/news/press-releases/sb0508"
+      },
+      {
+        "label": "Apple App Store, Trump Accounts: Official App",
+        "url": "https://apps.apple.com/us/app/trump-accounts/id6767364919"
+      },
+      {
+        "label": "TrumpAccounts.gov, Official Program Portal",
+        "url": "https://trumpaccounts.gov"
+      },
+      {
+        "label": "IRS, Trump Accounts Information",
+        "url": "https://www.irs.gov/trumpaccounts"
+      }
+    ]
+  },
+  {
+    "slug": "dell-trump-account-250",
+    "updated": "2026-10-08",
+    "title": "Dell Trump Account: Who Gets the $250 Deposit?",
+    "metaDescription": "Check if your child qualifies for the $250 Dell Trump Account deposit: birth years 2016 to 2024, ZIP code median family income limits, and funding details.",
+    "h1": "Dell Trump Account: Who Gets the $250 Deposit?",
+    "cardBlurb": "Your child qualifies for the $250 Dell deposit if born between 2016 and 2024 and living in an eligible ZIP code.",
+    "introText": "Your child qualifies for the $250 Dell Trump Account deposit if they were born between 2016 and 2024 and live in a ZIP code where the median family income is about $118,000 or less. At ModernWallet, we track every deposit a child can get through a Trump Account, and this one has the most confusing rules. The contribution requires no separate application form. The money deposits into the child's established Trump Account directly, with transfers expected by October 9, 2026.\n\nThe Dell gift targets 25 million children whose birth years fall right before the federal seed window. Many parents saw earlier headlines citing different eligibility numbers and wonder whether their neighborhood made the final cut.\n\nFor an overview of the broader program, review [what a Trump Account is](/guides/trump-accounts/).",
+    "sections": [
+      {
+        "heading": "Who Qualifies for the Dell $250",
+        "body": "A child qualifies for the Dell Trump Account deposit by meeting three tests published by [Invest America](https://investamerica.org/check-dell-250-eligibility/):\n\n- Born between January 1, 2016, and December 31, 2024.\n- Lives in a ZIP code with a median family income of about $118,000 or less.\n- Has a Trump Account, and an account created by automatic enrollment or Form 4547 counts.\n\nThis private contribution comes from a $6.25 billion philanthropic pledge announced by Michael and Susan Dell through the [White House](https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/) in December 2025. The pledge funds private deposits of $250 each for 25 million children nationwide. Eligibility depends strictly on geography and birth year rather than individual household earnings.\n\nFamilies do not need to demonstrate financial hardship or submit pay stubs to qualify. If your child fits the birth-year window and your postal area falls below the income ceiling, your child is eligible. To confirm how general account qualifications work across age groups, read our breakdown of [Trump Account eligibility](/guides/trump-account-eligibility/)."
+      },
+      {
+        "heading": "How to Check Your ZIP Code Income",
+        "body": "You can verify your postal area's median family income by looking up your five-digit postal code on the [Census Reporter table B19113](https://censusreporter.org/tables/B19113/). Search for your ZIP code there and read the median family income figure. Invest America's threshold uses the 2020 to 2024 American Community Survey 5-year estimates. Look directly at the figure reported for median family income.\n\nYou must check median family income rather than median household income. Household income also counts people who live alone or with roommates, so it is usually a different figure from family income for the same ZIP. The Dell gift rules rely specifically on table B19113 family data, so relying on general household statistics will give you an incorrect benchmark.\n\nIf the number on table B19113 is at or below approximately $118,000, your postal zone qualifies. There is no official ZIP checker tool. Census Reporter is the source Invest America itself points families to."
+      },
+      {
+        "heading": "Why the Threshold Moved from $150,000 to $118,000",
+        "body": "The income ceiling dropped to approximately $118,000 because federal automatic enrollment expanded the pool of participating children far beyond original projections. When the White House first announced the Dell pledge in December 2025, officials cited a preliminary cutoff of $150,000.\n\nOn October 1, 2026, the [U.S. Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642) announced the completion of automatic enrollment under press release SB-0642. According to Treasury Secretary Bessent, over 60 million more eligible children under 18 with Social Security numbers now have an account ready to be claimed. Total enrolled accounts stand at roughly 60 to 70 million across various official and news estimates.\n\nBecause the Dell pledge is capped at $6.25 billion, it covers exactly 25 million children. Automatic enrollment gave tens of millions more children an account, so the income limit had to fall for the fixed gift to cover 25 million children, starting with the lowest-income ZIP codes. Articles that cite $150,000 are quoting the original December 2025 figure."
+      },
+      {
+        "heading": "Do You Need to Apply or Claim the Deposit?",
+        "body": "Parents do not need to file a separate grant application to secure the $250 Dell deposit. If your child already had an account opened manually through [Form 4547](https://www.irs.gov/forms-pubs/about-form-4547) or automatically through federal records, the money transfers directly into that account.\n\nHowever, you must claim the child's auto-enrolled account to track the balance and invest future funds. Claiming requires downloading the official mobile app released on the [Apple App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) and Google Play, confirming your identity, and accepting account terms. To walk through the activation screens step-by-step, review our guide on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/).\n\nAccording to a tax-practitioner analysis of temporary Treasury regulations TD 10056, unclaimed accounts sit inside a Treasury master group trust. Family and employer deposits are blocked until a parent claims the account. The older manual route is covered in our [Form 4547 guide](/guides/form-4547/)."
+      },
+      {
+        "heading": "When the $250 Arrives and How to Track It",
+        "body": "All Dell deposits were scheduled for completion by the end of the day on Friday, October 9, 2026. The distribution began in the lowest-income qualifying ZIP codes and expanded upward until reaching 25 million children. Invest America advised parents to check account balances early the following week to confirm receipt.\n\nYou can view deposited balances through the official mobile application or the web portal at [TrumpAccounts.gov](https://www.trumpaccounts.gov). Note that user reviews in app stores have cited occasional bugs, such as bank-linking errors and delayed display updates. If the deposit is not showing yet, check again early the week after October 9, as Invest America suggests.\n\nIf your child meets all eligibility terms and the deposit remains missing by mid-October 2026, contact the official support line at 1-866-USA-4547. You can also request an electronic callback inside the app. For additional background on delivery schedules, see our overview of [when Trump Accounts get funded](/guides/when-will-trump-account-be-funded/)."
+      },
+      {
+        "heading": "Dell $250 vs. the $1,000 Treasury Seed",
+        "body": "The Dell deposit and the federal seed payment are completely separate programs created for different age groups. The federal government funds a one-time $1,000 seed strictly for infants born between 2025 and 2028. The Dell philanthropic gift provides $250 to children born between 2016 and 2024 who missed the newborn window.\n\n| Program Feature | Dell $250 Deposit | Treasury $1,000 Seed |\n| --- | --- | --- |\n| Funding Source | Private donation ($6.25B pledge) | Federal government |\n| Eligible Birth Years | 2016 through 2024 | 2025 through 2028 |\n| Geographic Limits | ZIP median family income about $118,000 or less | None (all qualifying U.S. citizens) |\n| Child Capacity | 25 million children | All eligible newborns in window |\n| Application Form | None required | None (claim account to access) |\n\nA single child cannot collect both deposits because their birth years do not overlap. Families with multiple children may receive both across siblings, such as a toddler born in 2023 receiving the Dell gift and a baby born in 2025 receiving the Treasury seed. Learn more about infant rules in our guide to [Trump Accounts for newborns](/guides/trump-account-for-newborns/)."
+      },
+      {
+        "heading": "Special Eligibility Cases and Long-Term Growth",
+        "body": "Children living on U.S. military bases qualify for the Dell contribution under program guidelines. For foster children, program organizers have reserved funding allocations, with initial distribution rounds expected to occur next year.\n\nOnce deposited, the $250 is invested in a low-cost index fund tracking the S&P 500 or broad U.S. equities, where it compounds tax-deferred until the child reaches adulthood. Withdrawals stay locked until January 1 of the year the child turns 18. You can estimate how compound returns build until the child turns 18 using our [Trump Account calculator](/trump-account/).\n\nParents can complement this starting balance by contributing up to $5,000 annually from family, friends, and participating employers. Review our guide to [Trump Account rules](/guides/trump-account-rules/) to see how annual contribution ceilings function. If you want to check your child's balance today, log in at TrumpAccounts.gov."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What ZIP codes qualify for the Dell Trump Account?",
+        "answer": "ZIP codes qualify if their median family income is approximately $118,000 or less based on the Census 2020 to 2024 American Community Survey 5-year estimates. You can check your area using table B19113 on Census Reporter."
+      },
+      {
+        "question": "Is my ZIP code eligible for a Trump Account deposit?",
+        "answer": "Your ZIP code is eligible for the Dell deposit if its Census median family income falls at or below roughly $118,000. General Trump Accounts have no ZIP code restrictions, but the Dell $250 distribution uses postal income data to reach 25 million children."
+      },
+      {
+        "question": "Do I have to apply for the Dell $250?",
+        "answer": "No application is required for the Dell $250 deposit. Eligible children enrolled automatically or via Form 4547 receive the deposit directly, though parents should claim the account in the official app to track and manage funds."
+      },
+      {
+        "question": "Can my child get both the $1,000 and the Dell $250?",
+        "answer": "No individual child qualifies for both. The $1,000 federal seed is restricted to children born between 2025 and 2028, while the Dell $250 deposit is reserved for older children born between 2016 and 2024."
+      },
+      {
+        "question": "Why do some articles say $150,000?",
+        "answer": "The initial December 2025 announcement estimated a $150,000 cutoff before automatic enrollment was implemented. After Treasury finished automatic enrollment on October 1, 2026, the income ceiling was adjusted down to about $118,000 to cap recipients at 25 million."
+      },
+      {
+        "question": "What is the official Trump Account website?",
+        "answer": "The official program website is TrumpAccounts.gov, and account holders can also access tools at trumpaccount.com. To avoid fraudulent copycat portals, see our guide to [Trump Account scams](/guides/trump-account-scams/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Invest America, Check Dell $250 Eligibility",
+        "url": "https://investamerica.org/check-dell-250-eligibility/"
+      },
+      {
+        "label": "White House, Landmark Dell Gift Announcement",
+        "url": "https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/"
+      },
+      {
+        "label": "U.S. Department of the Treasury, Press Release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "Census Reporter, Table B19113 Median Family Income",
+        "url": "https://censusreporter.org/tables/B19113/"
+      },
+      {
+        "label": "Trump Accounts Official App, Apple App Store",
+        "url": "https://apps.apple.com/us/app/trump-accounts/id6767364919"
+      },
+      {
+        "label": "Official Portal, TrumpAccounts.gov",
+        "url": "https://trumpaccounts.gov"
+      }
+    ]
+  },
+  {
+    "slug": "form-4547",
+    "updated": "2026-10-08",
+    "title": "Do You Need IRS Form 4547 for a Trump Account?",
+    "metaDescription": "IRS Form 4547 explained. Learn who needs to file the Trump Account Election form, how to elect the $1,000 pilot seed, and how to file with TurboTax.",
+    "h1": "How IRS Form 4547 Works for Trump Accounts",
+    "cardBlurb": "IRS Form 4547 lets you elect to open a Trump Account and request the $1,000 pilot seed, but recent auto-enrollment rules change who still needs to file it.",
+    "introText": "[IRS Form 4547](https://www.irs.gov/forms-pubs/about-form-4547), titled \"Trump Account Election(s),\" does two jobs: it elects to open an initial Trump Account for an eligible child, and it elects the one-time $1,000 pilot contribution. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each IRS and Treasury notice on the program.\n\n[Treasury](https://home.treasury.gov/news/press-releases/sb0642) opened accounts automatically on or about October 1, 2026, so most families no longer need Form 4547 just to get an account. The regulations also say Treasury cannot make the $1,000 pilot election for you, so parents of a child born 2025 through 2028 should make sure that election is on file.\n\nA Form 4547 election alone does not create an account you can use. You still have to claim and activate the account before anyone can add money.",
+    "sections": [
+      {
+        "heading": "What Form 4547 Does and Who Needs to File It",
+        "body": "Form 4547 is the official tax document used to establish a Trump Account and elect the $1,000 pilot contribution. According to [Treasury temporary regulations T.D. 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), Treasury created automatic accounts on October 1, 2026, for eligible children without a prior election. The regulations say this generally removes the need for anyone else to file an election just to open an account. The same regulations say the Secretary of the Treasury cannot make the pilot program election. Parents of children born between 2025 and 2028 must ensure the line 7 pilot election is formally submitted to secure the $1,000 seed.\n\n| Child Category | Automatic Account Created? | Is Form 4547 Needed? |\n|---|---|---|\n| Born 2025 to 2028 | Yes, under T.D. 10056 | Recommended for Part III line 7 pilot election |\n| Born before 2025 | Yes, if child has valid SSN | No, account already opened; ineligible for pilot seed |\n\nWhether claiming an account inside the official mobile app also registers the pilot election remains unconfirmed in published IRS guidance. Families with children born in the 2025 to 2028 window should verify that their election is on record either through the app or by calling the Treasury contact center at 1-866-USA-4547. Filing Form 4547 with Part III completed provides a documented paper trail with the IRS. For more background on initial account creation, see [how to open a Trump Account](/guides/how-to-open-a-trump-account/)."
+      },
+      {
+        "heading": "Who Can File Form 4547 and in What Order",
+        "body": "The IRS establishes a strict legal priority order for who may file Form 4547 to establish an account. According to the [official Form 4547 instructions](https://www.irs.gov/instructions/i4547), the hierarchy ranks legal guardians first, followed by parents, adult siblings, and grandparents. If multiple adults submit competing forms for the same child, the IRS applies this hierarchy to determine the authorized individual.\n\nRequesting the $1,000 pilot seed imposes an additional requirement. Only an individual who expects the child to be their qualifying child for tax purposes during the election year may submit the Part III pilot election. An adult relative who holds opening authority cannot request the federal seed unless they also meet qualifying child dependency rules for that tax year.\n\nThe child must also satisfy baseline program rules. To have an account opened, the child must be under age 18 at year-end, possess a valid Social Security number, and have no prior Trump Account election on file. To qualify for the $1,000 pilot deposit, the child must be a U.S. citizen born between January 1, 2025, and December 31, 2028. Review [Trump Account eligibility](/guides/trump-account-eligibility/) for comprehensive qualification standards."
+      },
+      {
+        "heading": "Line-by-Line Guide to Completing Form 4547",
+        "body": "Form 4547 spans four discrete parts designed to collect parent identification, child records, election choices, and legal signatures.\n\n| Form Part | Information Required | Practical Tip |\n|---|---|---|\n| Part I | Authorized individual's name, address, and SSN | This person becomes the designated responsible party |\n| Part II | Child's information, plus the line 6 authorization checkbox | Check line 6 to authorize establishing the traditional IRA |\n| Part III | Pilot program election on line 7 | Check line 7 only if child was born 2025 to 2028 and is your qualifying child |\n| Part IV | Disclosure consent, signature, date, paid preparer info | The authorized individual signs; a paid preparer, if used, completes the preparer section |\n\nIn Part I, enter your personal details as the authorized individual. This person becomes the account's responsible party. Part II requires the child's identifying records; check line 6 to authorize account creation. Part III contains line 7, which activates the $1,000 pilot request. Leave Part III blank if the child was born before 2025. Finally, sign Part IV, which also holds the consent to disclosure and the paid preparer section."
+      },
+      {
+        "heading": "Filing Methods and Deadlines for Form 4547",
+        "body": "You can file Form 4547 through electronic tax software, the web, or traditional mail. The IRS designates e-filing alongside your annual Form 1040 as the fastest processing channel. Alternatively, filers can submit an election online at [irs.gov/trumpaccounts](https://www.irs.gov/trumpaccounts) using an [ID.me](https://www.id.me/) sign-in, which requires the child's SSN, date of birth, and residential address.\n\nPaper filers must mail the completed form separately to the specific address designated at [IRS.gov/PaperReturns](https://www.irs.gov/PaperReturns). Never attach Form 4547 to Form 1040-X, and do not submit an amended tax return solely to deliver this document.\n\nNo formal filing deadline exists beyond maintaining eligibility while the child remains under age 18. [TurboTax](https://turbotax.intuit.com/tax-tips/irs-tax-forms/form-4547-how-to-establish-a-trump-account-for-your-child/c8C3uZhxW) advises making the election before the year the child turns 18. Money in a Trump Account generally cannot be withdrawn until January 1 of the year the child turns 18. To review withdrawal constraints and investment restrictions, consult our summary of [Trump Account rules](/guides/trump-account-rules/)."
+      },
+      {
+        "heading": "Filing Form 4547 With TurboTax",
+        "body": "TurboTax supports Form 4547 when you e-file your federal return. TurboTax's own guidance says its users \"can file IRS Form 4547 with their federal income tax return,\" and that route requires e-filing.\n\nIf you file your Form 1040 on paper, TurboTax cannot send Form 4547 for you. Print the form and mail it on its own to the address at IRS.gov/PaperReturns, or make the election online at irs.gov/trumpaccounts instead."
+      },
+      {
+        "heading": "Form 4547 Election vs Claiming in the App",
+        "body": "Submitting Form 4547 does not instantly create a functional account that parents can manage. The temporary regulations say a Form 4547 election alone does not establish an account. The account has to be activated (claimed) before anyone can manage it. As detailed in Treasury press release SB-0642, parents must claim the account through the official mobile app or online portal.\n\nAccording to a tax-practitioner analysis of the regulations, unclaimed accounts sit in a Treasury master group trust. Family, friends and employers cannot contribute to it. SB-0642 also says a child's account must be claimed to receive the $1,000 seed.\n\nTo manage funds, download the official app and verify your identity and legal relationship to the child. Once the account is claimed, family, friends and employers can add up to $5,000 a year combined. For detailed onboarding instructions, read our walkthrough on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/)."
+      },
+      {
+        "heading": "Next Steps After Submitting Form 4547",
+        "body": "After you file, claim the account in the official Trump Accounts app or sign in at [trumpaccounts.gov](https://trumpaccounts.gov) to verify your identity and activate it.\n\nIf your child qualifies for the pilot deposit, monitor the account dashboard for the incoming federal transfer. If your child was born between 2016 and 2024, they do not receive the pilot seed, but they may qualify for private philanthropic funds such as the [Dell $250 contribution](/guides/dell-trump-account-250/). You can track expected processing timeframes in our guide on [when Trump Accounts will be funded](/guides/when-will-trump-account-be-funded/).\n\nStart with your child's birth year. For a child born 2025 through 2028, confirm the line 7 pilot election is on file; for an older child, claiming the account is the only step."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need Form 4547 if my child was auto-enrolled?",
+        "answer": "If your child was auto-enrolled on October 1, 2026, you generally do not need Form 4547 just to open the account. However, Treasury regulations clarify that the government cannot make the $1,000 pilot election for you. If your child was born between 2025 and 2028, filing Form 4547 with Part III completed is the documented method to ensure that seed election is officially on record."
+      },
+      {
+        "question": "Can I file Form 4547 with TurboTax?",
+        "answer": "Yes. TurboTax allows users to file IRS Form 4547 alongside their federal income tax return, but it requires e-filing the return. If you file your federal taxes on paper, you must print and mail Form 4547 separately to the IRS."
+      },
+      {
+        "question": "Where do I mail Form 4547?",
+        "answer": "Paper filers must mail Form 4547 separately to the designated IRS address listed at [IRS.gov/PaperReturns](https://www.irs.gov/PaperReturns). Do not attach it to Form 1040-X, and do not bundle it with an amended tax return."
+      },
+      {
+        "question": "Can I add Form 4547 to an amended return?",
+        "answer": "No. The IRS instructions explicitly state that you should not attach Form 4547 to Form 1040-X or file an amended return solely to submit the election. Submit it with an original e-filed return, complete it online via ID.me at irs.gov/trumpaccounts, or mail it as a standalone document."
+      },
+      {
+        "question": "Who can sign Form 4547?",
+        "answer": "Form 4547 must be signed by an authorized individual. Eligibility follows a strict priority order: legal guardian, parent, adult sibling, and grandparent. To claim the $1,000 pilot seed in Part III, the person signing must also expect the child to be their qualifying child for tax purposes during the election year."
+      },
+      {
+        "question": "Is there a deadline for Form 4547?",
+        "answer": "There is no deadline beyond \"any time\" while the child is eligible. TurboTax advises making the election before the year the child turns 18."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Form 4547 Instructions",
+        "url": "https://www.irs.gov/instructions/i4547"
+      },
+      {
+        "label": "IRS, About Form 4547",
+        "url": "https://www.irs.gov/forms-pubs/about-form-4547"
+      },
+      {
+        "label": "Federal Register, Trump Accounts Temporary Regulations (T.D. 10056)",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      },
+      {
+        "label": "U.S. Department of the Treasury, Release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "TurboTax, Form 4547 Overview",
+        "url": "https://turbotax.intuit.com/tax-tips/irs-tax-forms/form-4547-how-to-establish-a-trump-account-for-your-child/c8C3uZhxW"
+      }
+    ]
+  },
+  {
+    "slug": "when-will-trump-account-be-funded",
+    "updated": "2026-10-08",
+    "title": "When Will My Child's Trump Account Be Funded?",
+    "metaDescription": "When will Trump Account money arrive? Review deposit timing for the $1,000 seed, the Dell $250 gift, processing delays, and how to verify funding status.",
+    "h1": "When Will My Child's Trump Account Be Funded?",
+    "cardBlurb": "Tracking deposits for the $1,000 federal seed and the Dell $250 gift depends on child birth year, account claiming, and processing timelines.",
+    "introText": "Trump Account deposits do not arrive on one date for every child. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each funding date announced for the program.\n\nThe $1,000 seed could begin as early as July 4, 2026, and the [IRS](https://www.irs.gov/trumpaccounts) said up to 25 million accounts could be funded by mid-October 2026. Treasury says an account must be claimed before it can receive the $1,000, and the Dell $250 deposits were expected to finish by October 9, 2026.",
+    "sections": [
+      {
+        "heading": "When the $1,000 Seed and Dell $250 Arrive",
+        "body": "The $1,000 seed could begin as early as July 4, 2026, but the date for each child depends on which deposit applies and whether the account has been claimed. The U.S. Department of the Treasury completed automatic enrollment for over 60 million children on October 1, 2026, according to [Treasury press release SB-0642](https://home.treasury.gov/news/press-releases/sb0642). On October 2, 2026, IRS CEO Frank Bisignano told [CNBC](https://www.cnbc.com/2026/10/02/trump-accounts-funding.html) that up to 25 million accounts could be funded by mid-October. CNBC noted it was unclear whether that count meant the $1,000 seed, the Dell $250, or family and employer money.\n\n| Date | Milestone | Program Details |\n|---|---|---|\n| July 4, 2026 | Seed Deposits Could Begin | [Treasury press release SB-0508](https://home.treasury.gov/news/press-releases/sb0508) said $1,000 seed deposits could begin as early as this date. |\n| October 1, 2026 | Automatic Enrollment Completed | Treasury created accounts for eligible minors with an SSN under temporary rule TD 10056. |\n| October 9, 2026 | Dell $250 Deposits Expected Done | [Invest America](https://investamerica.org/check-dell-250-eligibility/) expected all $250 deposits for eligible children born 2016 to 2024 to be made by end of day. |\n| Mid-October 2026 | Up to 25 Million Accounts Funded | IRS said up to 25 million accounts could be funded. |\n\nIn July 2026, Treasury called the gap between opening an account and receiving the seed \"standard processing time, like receiving a tax refund.\" Most families got the money in 1 to 2 days, though some were told it could take up to 4 weeks. Parents must activate an account through the official mobile application or online portal before any federal seed money appears."
+      },
+      {
+        "heading": "Why Your Trump Account Is Not Funded Yet",
+        "body": "Five things can hold up a deposit, and the first one to check is whether the account has been claimed.\n\n1. The account is unclaimed: According to a tax-practitioner analysis of the regulations, an auto-enrolled account sits in a Treasury master group trust until a parent or guardian claims it. A parent or guardian must verify their identity in the mobile application before federal funds release or private deposits process. Review the walkthrough on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/) to activate your child's record.\n\n2. The child is outside the seed birth window: Only U.S. citizens born between January 1, 2025, and December 31, 2028, qualify for the $1,000 federal pilot contribution. Children born outside that window receive no federal seed money, even though they remain eligible to hold an account and accept family deposits.\n\n3. The pilot program election is missing: Under the [Federal Register notice for TD 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), Treasury cannot execute a pilot program election on behalf of a family. Parents of a child born 2025 through 2028 can make the election by completing Part III of [Form 4547](/guides/form-4547/).\n\n4. Processing time: Treasury called the wait \"standard processing time,\" and some families were told it could take up to 4 weeks.\n\n5. Dell donation income restrictions: The private $250 contribution announced in a [White House press release](https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/) applies exclusively to children born between 2016 and 2024 residing in ZIP codes with a median family income of roughly $118,000 or less. If your neighborhood sits above that threshold, your child does not receive this gift. Check the qualification rules in our overview of the [Dell Trump Account $250 gift](/guides/dell-trump-account-250/). Invest America says money for foster children is reserved, with contributions expected next year, and children on military bases are included."
+      },
+      {
+        "heading": "Checking Your Deposit and Application Status",
+        "body": "Parents can check deposit status directly using the official digital tools provided by Treasury and trustee partner [Robinhood Securities](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf). The primary tracking platform is the official mobile application, titled \"Trump Accounts: Official App\" on Apple iOS and Android app stores. Families without a mobile smartphone can access their profile through the web dashboard at trumpaccount.com or review federal program announcements at [TrumpAccounts.gov](https://trumpaccounts.gov).\n\nWithin the dashboard, parents can inspect account activity, monitor investment progress, and confirm whether incoming deposits have settled. For detailed steps on downloading and navigating the portal, read our guide on the [Trump Account app](/guides/trump-account-app/).\n\nUsers have reported problems in app store reviews, including bank-link errors, linked debit cards disappearing and requests to resubmit information. If one of these stalls a deposit, update the app first, then request an in-app callback or call 1-866-USA-4547."
+      },
+      {
+        "heading": "Missing Deposits and Protection Against Scams",
+        "body": "If your child qualifies for seed money but the balance has not arrived after four weeks of claiming the record, contact the official Treasury helpline. You can reach the federal call center at 1-866-USA-4547 or submit a callback request directly through the official mobile application. Official emails come only from no-reply@TrumpAccounts.Treasury.gov.\n\nNever pay any third party claiming they can release your funds or accelerate administrative processing. Criminal operations target parents awaiting government disbursements by demanding advance processing fees, debit card numbers, or sensitive family data. Read our safety warnings on [Trump Account scams](/guides/trump-account-scams/) to recognize suspicious messages."
+      },
+      {
+        "heading": "How the Money Is Invested After It Arrives",
+        "body": "Once seed funds or personal deposits arrive in a Trump Account, the cash does not sit in an uninvested checking balance. All deposited balances automatically purchase shares in a qualifying index fund tracking the S&P 500 or broad U.S. equity markets. You do not select individual company stocks or execute trades.\n\nGrowth is tax-deferred, and withdrawals are generally blocked until January 1 of the year the child turns 18. After that, withdrawals are taxed like a traditional IRA. Run realistic growth models using our [Trump Account calculator](/trump-account/) to see how a $1,000 initial seed compounds across 18 years."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Who is funding the Trump account?",
+        "answer": "Funding comes from multiple sources depending on child eligibility. The federal government finances the one-time $1,000 seed for qualifying citizens born between 2025 and 2028. Private donors Michael and Susan Dell contributed $6.25 billion to fund $250 deposits for up to 25 million eligible children born between 2016 and 2024. Parents, extended family, and participating employers provide ongoing voluntary contributions."
+      },
+      {
+        "question": "When can you access Trump account funds?",
+        "answer": "Withdrawals are generally blocked until January 1 of the year the child turns 18. After that, withdrawals are taxed like a traditional IRA."
+      },
+      {
+        "question": "Is the Trump account automatically invested?",
+        "answer": "Yes. Every deposited dollar is automatically invested into a designated low-cost index fund tracking the S&P 500 or a broad U.S. stock index. Beneficiaries and parents cannot pick individual stock shares."
+      },
+      {
+        "question": "Why does my Trump Account say processing?",
+        "answer": "Treasury has not published definitions for in-app status labels, so \"processing\" has no official meaning. In July 2026 Treasury called the wait \"standard processing time, like receiving a tax refund,\" and some families were told it could take up to 4 weeks. After that, call 1-866-USA-4547 or request an in-app callback."
+      },
+      {
+        "question": "How long does the $1,000 take to arrive?",
+        "answer": "Treasury called the wait \"standard processing time, like receiving a tax refund.\" In July 2026 most families got the money 1 to 2 days after opening the account, though some were told it could take up to 4 weeks."
+      },
+      {
+        "question": "When will employer contributions arrive?",
+        "answer": "Employer contributions arrive only after a parent claims and activates the child's account. Actual deposit timing depends entirely on each participating employer's standard payroll and corporate matching calendar."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of the Treasury, Press Release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "U.S. Department of the Treasury, Press Release SB-0508",
+        "url": "https://home.treasury.gov/news/press-releases/sb0508"
+      },
+      {
+        "label": "CNBC, Trump Accounts Funding Projections",
+        "url": "https://www.cnbc.com/2026/10/02/trump-accounts-funding.html"
+      },
+      {
+        "label": "Invest America, Dell $250 Eligibility Details",
+        "url": "https://investamerica.org/check-dell-250-eligibility/"
+      },
+      {
+        "label": "Federal Register, Temporary Regulations TD 10056",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      },
+      {
+        "label": "White House, Landmark Dell Gift Announcement",
+        "url": "https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/"
+      }
+    ]
+  },
+  {
+    "slug": "trump-account-employer-contributions",
+    "updated": "2026-10-08",
+    "title": "Trump Account Employer Contribution: Matches and Rules",
+    "metaDescription": "See which companies match Trump Accounts and how a Trump Account employer contribution works under IRC Section 128, including caps, tax rules, and steps.",
+    "h1": "Trump Account Employer Contribution: Matches and Rules",
+    "cardBlurb": "Employers can contribute up to $2,500 per worker toward a child's Trump Account under IRC Section 128. See pledged matches, tax rules, and how to claim it.",
+    "introText": "Employers can deposit up to $2,500 per year into a dependent child's Trump Account on a federally income-tax-free basis under Internal Revenue Code Section 128. At ModernWallet, we track which employers have publicly pledged money to these accounts and what an employee has to do to get it. This workplace benefit sits inside the total $5,000 annual contribution limit per child, giving parents a direct way to build the balance without funding every dollar themselves.\n\nOver 50 companies have publicly pledged contributions as of August 2026, though most employers have not yet established a plan.\n\nA parent has to claim the child's account first, because an employer cannot deposit into an unclaimed account.",
+    "sections": [
+      {
+        "heading": "Companies That Have Pledged Trump Account Contributions",
+        "body": "Dozens of major corporations have publicly announced pledges to fund Trump Accounts for their employees' children, most often offering to match the government's initial $1,000 seed deposit. These pledges are as publicly reported, with the date and source for each, as of October 2026; confirm with your HR department before counting on a deposit.\n\n| Company | What was pledged | Announced | Source |\n|---|---|---|---|\n| Robinhood | Match the $1,000 for eligible employees' children | Dec 24, 2025 | [InvestmentNews](https://www.investmentnews.com/retirement-planning/robinhood-schwab-to-match-1000-contribution-for-employees-trump-accounts/263687) |\n| Charles Schwab | Match the $1,000 | Dec 24, 2025 | [InvestmentNews](https://www.investmentnews.com/retirement-planning/robinhood-schwab-to-match-1000-contribution-for-employees-trump-accounts/263687) |\n| BlackRock | $1,000 match | Dec 24, 2025 | InvestmentNews |\n| BNY | $1,000 match | Dec 24, 2025 | InvestmentNews |\n| Dell Technologies | Match the $1,000 for children of U.S. employees born 2025 to 2028 | Dec 2025 | [CBS News](https://www.cbsnews.com/news/michael-dell-25-million-children-250-each-trump-accounts) |\n| JPMorgan Chase | $1,000 per eligible child born 2025 to 2028 | Jan 28, 2026 | [BenefitNews](https://www.benefitnews.com/articles/jpmorgan-bank-of-america-matching-trump-account-contributions) |\n| Bank of America | $1,000 match plus pre-tax payroll deductions for staff with children under 18 | Jan 2026 | [BenefitNews](https://www.benefitnews.com/articles/jpmorgan-bank-of-america-matching-trump-account-contributions) |\n| Wells Fargo | $1,000 match | Jan 2026 | BenefitNews |\n| Nvidia | Match the government deposit | Jan 28, 2026 | [The Hill via Yahoo Finance](https://finance.yahoo.com/news/companies-matching-trump-account-contributions-185540814.html) |\n| Uber | Match the government deposit | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Comcast | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Chipotle | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Intel | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Coinbase | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Goldman Sachs | One-time $1,000 for employees' children born 2025 to 2028 | Jul 2, 2026 | [Fox Business](https://www.foxbusiness.com/economy/goldman-sachs-contribute-1000-trump-accounts-eligible-children-employees) |\n| Citi | At least matches the $1,000 | Jul 2026 | Fox Business |\n| Vanguard | Employees may direct a $1,500 employer contribution starting 2027 | Apr 2026 | Vanguard; [Treasury SB-0602](https://home.treasury.gov/news/press-releases/sb0602) |\n| Visa | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| Franklin Templeton | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| State Street | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| Chime | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n\nTotal employer commitments counted between 55 and roughly 72 across independent tracking tallies by early October 2026, according to [CNBC](https://www.cnbc.com/2026/10/02/trump-accounts-funding.html). Most corporate programs target children who qualify for the federal seed."
+      },
+      {
+        "heading": "How Employer Contributions Work Under Section 128",
+        "body": "Internal Revenue Code Section 128 allows an employer to contribute up to $2,500 per year per employee, rather than per child. If a worker has two dependent children, the employer's total tax-free contribution cap across both children remains $2,500. Conversely, if two spouses work for participating companies, each parent can receive up to $2,500 from their respective employer, as outlined by [Chase](https://www.chase.com/personal/investments/trump-accounts).\n\nEvery employer dollar counts directly toward the child's annual $5,000 contribution ceiling. If an employer deposits $2,500 into a child's account, family members can only contribute an additional $2,500 during that calendar year. Review [the overall limits](/guides/trump-account-rules/) to track total household contributions.\n\nEmployer contributions are only partly tax-free. Contributions under Section 128 are excluded from federal income tax withholding, but they remain subject to Federal Insurance Contributions Act taxes for Social Security and Medicare. Employers report these amounts on Form W-2 in Box 12 using code TA, as detailed by [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/08/irs-issues-proposed-regulations-on-employer-contributions-to-trump-accounts-and-nondiscrimination-rules-for-dependent-care-assistance-programs). The statutory $2,500 cap is scheduled for inflation indexing after 2027."
+      },
+      {
+        "heading": "Steps to Receive an Employer Match",
+        "body": "An employer cannot deposit anything until the child's account is claimed, so do these steps in order.\n\n1. Claim the child's account. Parents must claim the account in the [Trump Accounts app](https://apps.apple.com/us/app/trump-accounts/id6767364919) as directed by the [Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642). Employers cannot contribute to an unclaimed account. Follow [our claiming walkthrough](/guides/how-to-claim-a-trump-account/) if you have not finished this initial setup.\n2. Inquire with human resources. Ask your benefits team if the company maintains a formal Trump Account Contribution Program.\n3. Complete self-certification paperwork. Treasury guidance requires employees to self-certify the child's age and dependent status; the employer separately validates that the account is a Trump Account.\n4. Confirm account deposits. Check the child's account for the deposit, and keep family plus employer money within the $5,000 annual cap."
+      },
+      {
+        "heading": "Employer Plan Rules and Compliance Requirements",
+        "body": "Businesses offering this benefit must establish a separate written document titled a Trump Account Contribution Program. The Department of the Treasury issued proposed regulations on August 11, 2026, establishing compliance obligations for workplace programs, with public comments closing in September 2026. Because these rules remain proposed rather than final, companies must monitor subsequent guidance from the [Internal Revenue Service](https://www.irs.gov/trumpaccounts).\n\nUnder proposed rules, employers must issue formal notices to staff, deliver annual benefit statements, and report contributions directly to the account trustee. Programs must also satisfy nondiscrimination standards to ensure contributions do not disproportionately favor highly compensated employees. The proposed rules include a safe harbor for employers that match the $1,000 pilot contribution.\n\nEmployers operating cafeteria plans can allow staff to make pre-tax payroll deductions into their child's account. However, pre-tax salary reductions can only fund an account established for a legal dependent."
+      },
+      {
+        "heading": "Workplace Adoption Rates Across Employers",
+        "body": "Widespread availability of workplace matching remains limited. An April 2026 survey by Mercer, reported by [Fortune](https://fortune.com/2026/07/27/what-employers-will-contribute-to-trump-accounts-chipotle-bank-of-america-dell-uber/), found that approximately two-thirds of surveyed employers had no plans to contribute to employee Trump Accounts. Only 4 percent of employers indicated an intent to provide funding.\n\nMost of the pledges in the table above come from banks, brokerages and technology companies. Parents should not assume workplace contributions exist without formal confirmation from their benefits administrator."
+      },
+      {
+        "heading": "Options When Your Employer Does Not Match",
+        "body": "Families working for employers without a matching plan retain full access to standard funding methods. Parents, relatives, and external donors can contribute up to the full $5,000 annual limit directly. Learn about eligibility baselines in our [guide to account qualification](/guides/trump-account-eligibility/).\n\nU.S.-citizen children with a valid Social Security number born from January 1, 2025, through December 31, 2028, qualify for the $1,000 federal seed whether or not an employer contributes. Some children born 2016 through 2024 also get the Dells' separate $250 deposit; see [who qualifies for the Dell $250](/guides/dell-trump-account-250/). Evaluate prospective investment outcomes using our [Trump Account calculator](/trump-account/) to project family savings milestones over an 18-year horizon."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does an employer contribute to a Trump Account?",
+        "answer": "An employer can contribute up to $2,500 per year per employee under Internal Revenue Code Section 128, but contributions are entirely optional. Companies must establish a written Trump Account Contribution Program, and employees must claim their child's account before an employer can make a deposit."
+      },
+      {
+        "question": "Which banks are matching Trump accounts?",
+        "answer": "Several major banks have publicly pledged to match the government's $1,000 deposit, including JPMorgan Chase, Bank of America, Wells Fargo, BNY, Goldman Sachs, and Citi. Specific eligibility conditions vary by firm, and workers should confirm current policies with their benefits department."
+      },
+      {
+        "question": "Is an employer Trump Account contribution taxable?",
+        "answer": "Employer contributions up to $2,500 are exempt from federal income tax withholding under Section 128. However, the money remains subject to FICA taxes for Social Security and Medicare. Employers report these contributions on Form W-2 in Box 12 using code TA."
+      },
+      {
+        "question": "Can both parents' employers contribute?",
+        "answer": "Yes. The $2,500 statutory cap applies per employee rather than per child. If two working spouses are employed by companies offering matching programs, each parent can receive up to $2,500 from their employer, provided the total annual deposits into the child's account do not exceed $5,000."
+      },
+      {
+        "question": "Does the employer contribution count toward the $5,000 limit?",
+        "answer": "Yes. Any workplace contribution counts directly toward the child's $5,000 annual statutory limit. If an employer deposits $1,000, family members and outside contributors can add no more than $4,000 during that same calendar year."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Treasury Press Release SB-0602",
+        "url": "https://home.treasury.gov/news/press-releases/sb0602"
+      },
+      {
+        "label": "Treasury Press Release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "IRS Trump Accounts Information",
+        "url": "https://www.irs.gov/trumpaccounts"
+      },
+      {
+        "label": "Mayer Brown Analysis of Proposed Employer Regulations",
+        "url": "https://www.mayerbrown.com/en/insights/publications/2026/08/irs-issues-proposed-regulations-on-employer-contributions-to-trump-accounts-and-nondiscrimination-rules-for-dependent-care-assistance-programs"
+      }
+    ]
+  },
+  {
+    "slug": "do-trump-accounts-affect-fafsa",
+    "updated": "2026-10-08",
+    "title": "Does a Trump Account Affect FAFSA Financial Aid?",
+    "metaDescription": "Does a Trump Account affect FAFSA aid? Learn how financial aid formulas treat the account, expert views on asset assessments, and comparisons to 529 plans.",
+    "h1": "Does a Trump Account Affect FAFSA Financial Aid?",
+    "cardBlurb": "Financial aid rules for Trump Accounts remain unsettled: explore whether balances count as student assets or qualify for the traditional retirement exclusion.",
+    "introText": "Whether a Trump Account reduces college financial aid is unsettled as of October 2026. At ModernWallet, we track how new savings accounts are treated on the FAFSA, and this one has no official answer yet. The [U.S. Department of Education](https://studentaid.gov/) has not issued guidance naming Trump Accounts, and FAFSA materials do not mention them.\n\nHigher education specialists currently point to two conflicting interpretations. One view considers the balance a student asset assessed at up to 20 percent on the Free Application for Federal Student Aid (FAFSA). Another view treats the account like an individual retirement arrangement (IRA), which standard formulas exclude from reportable assets entirely.\n\nUntil the Education Department rules, the safer plan is to know what each reading would cost and keep college-only savings where the treatment is settled.",
+    "sections": [
+      {
+        "heading": "How the FAFSA Treats a Trump Account Right Now",
+        "body": "Official federal guidance does not yet specify how colleges must evaluate a Trump Account on financial aid forms. The U.S. Department of Education has released no formal instructions regarding these balances, leaving administrators and parents without a definitive rule as of October 2026. Until it does, two financial aid experts offer competing readings.\n\n| Treatment | Assessment Rate | Who Argues It |\n| --- | --- | --- |\n| Student Asset | Up to 20% | Mark Kantrowitz (quoted by CNBC) |\n| Excluded Retirement Asset | 0% (Not Reported) | Kalman Chany |\n| Unsettled Official Rule | Pending Guidance | No one yet; Education Department guidance pending |\n\nFinancial aid expert Mark Kantrowitz, quoted by [CNBC](https://www.cnbc.com/2026/07/09/trump-accounts-college-financial-aid.html), expects the balance to be classified as a student asset. In contrast, college financing author Kalman Chany suggests the structure aligns with retirement vehicles, which standard aid formulas exempt from reporting. If you are deciding [how to open a Trump Account](/guides/how-to-open-a-trump-account/) with college in mind, plan for both readings until guidance appears on [studentaid.gov](https://studentaid.gov/)."
+      },
+      {
+        "heading": "The Potential Impact on Need-Based Financial Aid",
+        "body": "If the Department of Education classifies the program as a student asset, the financial aid formula assesses the balance heavily. Under standard federal methodology, student-owned assets reduce aid eligibility by up to 20 percent of their total value each academic year.\n\nConsider a child who reaches college age with a $10,000 balance in their account. Under the 20 percent student asset formula, that $10,000 balance could reduce need-based financial aid by about $2,000 for that award year.\n\nThis possible reduction matters for households expecting substantial need-based grants or subsidized student loans. Families projecting future balances can model their numbers using our [Trump Account calculator](/trump-account/) to understand the potential exposure."
+      },
+      {
+        "heading": "Why the Financial Aid Classification Is Unsettled",
+        "body": "The legal design of the program creates conflicting signals for financial aid formulas. The law sets the account up as a traditional IRA for the child, but locks it until the year the child turns 18. Kalman Chany's argument rests on the FAFSA rule that retirement accounts, such as IRAs, are not reportable assets.\n\nThe [Trump Account rules](/guides/trump-account-rules/) keep the money invested for the long term.\n\nFederal administrators have not clarified whether statutory retirement status automatically shields the balance on the FAFSA. Until the Education Department issues instructions, families have no official answer on whether to report the balance."
+      },
+      {
+        "heading": "Comparing Trump Accounts to 529 College Savings Plans",
+        "body": "For families saving primarily for tuition, a 529 college savings plan offers clear, established financial aid treatment that a Trump Account currently lacks. The federal aid formula explicitly treats a parent-owned 529 plan as a parental asset, which faces a maximum assessment rate of only 5.64 percent. By comparison, student assets face assessment rates up to 20 percent.\n\nThat gap only matters if the Trump Account is treated as a student asset; under the retirement-account reading it would not be counted at all. Furthermore, qualified distributions from a 529 plan to pay for college tuition remain completely tax-free. Read our full [Trump Account vs. 529 plan comparison](/compare/trump-account-vs-529/) to see how the two accounts stack up across contribution limits and tax rules.\n\nBeyond aid formulas, earnings inside a Trump Account grow tax-deferred but face regular income taxes upon withdrawal under traditional IRA guidelines, as outlined in our guide to [Trump Account taxes](/guides/trump-account-taxes/). For education-specific savings, established 529 plans provide predictable aid treatment and tax-exempt withdrawals."
+      },
+      {
+        "heading": "Financial Aid Treatment After the Beneficiary Turns 18",
+        "body": "The aid implications shift once the beneficiary reaches age 18. After December 31 of the year the child turns 17, standard traditional IRA distribution rules govern the account. From then on, the child can leave the money invested or take withdrawals, which are taxed as income.\n\nIf an 18-year-old college student liquidates part of the balance to pay for tuition, books, or living costs, the IRS treats that withdrawal as taxable personal income. On a later FAFSA, that withdrawal could count as student income, which can lower the next year's aid.\n\nWhether the balance itself is excluded after 18 has not been confirmed, but withdrawals taken while the student is enrolled could reduce aid either way. Our [Trump Accounts guide](/guides/trump-accounts/) covers how the money is invested until then."
+      },
+      {
+        "heading": "What Would Settle the Question",
+        "body": "Official guidance from the U.S. Department of Education would resolve how these funds affect federal financial aid. That clarification would appear on [studentaid.gov](https://studentaid.gov/) or within updated Free Application for Federal Student Aid (FAFSA) instructions.\n\nIf the Education Department classifies a Trump Account as a student asset, the balance would be assessed at up to 20 percent on the FAFSA. If the Education Department instead exempts the balance by treating it like an individual retirement account (IRA), the account value would not be reported as an asset at all.\n\nA separate milestone occurs after December 31 of the year the child turns 17, when ordinary traditional-IRA rules begin to apply. Whether the underlying balance is officially excluded from aid formulas at that point remains unconfirmed. Any distributions taken after that transition become taxable income, which could count as student income on a subsequent FAFSA.\n\nWatch for the FAFSA instructions published on studentaid.gov for the year your student will file."
+      },
+      {
+        "heading": "Action Steps for Families Planning for College",
+        "body": "You do not need to pause long-term planning while the Education Department decides.\n\n1. Claim the seed if your child qualifies. U.S.-citizen children with a valid Social Security number born from January 1, 2025, through December 31, 2028, qualify for a free $1,000 federal seed under [Trump Account eligibility](/guides/trump-account-eligibility/) rules. Taking free government money makes sense under either FAFSA reading.\n2. Decide where extra dollars go. Family and friends can add up to $5,000 a year combined, with employers allowed up to $2,500 inside that cap. If the goal is college rather than retirement, put extra family contributions into a parent-owned 529, which the FAFSA assesses at up to 5.64 percent.\n3. Keep records of every deposit, employer contribution and government seed.\n4. Watch [studentaid.gov](https://studentaid.gov/) for guidance before you file college aid forms."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can a Trump Account be used for college?",
+        "answer": "Yes, a child can use funds from a Trump Account to pay for college after reaching age 18. However, withdrawals follow traditional IRA tax rules, meaning earnings and untaxed contributions count as ordinary taxable income rather than receiving the tax-free education treatment of a 529 plan."
+      },
+      {
+        "question": "Do Trump Accounts count as a student asset on the FAFSA?",
+        "answer": "Federal treatment remains unsettled because the U.S. Department of Education has not issued guidance naming the program. Financial aid expert Mark Kantrowitz expects balances to be assessed as student assets at up to 20 percent, while Kalman Chany argues it could be treated like an IRA, which the FAFSA does not count as an asset."
+      },
+      {
+        "question": "Will the $1,000 seed hurt my child's financial aid?",
+        "answer": "The seed is a small balance, so its effect on aid would be small under either reading: assessed at up to 20 percent if it counts as a student asset, or not counted at all if it is treated like a retirement account."
+      },
+      {
+        "question": "Is a 529 better than a Trump Account for financial aid?",
+        "answer": "A parent-owned 529 has the clearer treatment: the FAFSA assesses it at up to 5.64 percent. A Trump Account could count at up to 20 percent as a student asset or not at all as a retirement account, and the Education Department has not said which."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CNBC, Trump Accounts College Financial Aid",
+        "url": "https://www.cnbc.com/2026/07/09/trump-accounts-college-financial-aid.html"
+      },
+      {
+        "label": "Federal Student Aid, Official Portal",
+        "url": "https://studentaid.gov/"
+      },
+      {
+        "label": "IRS, Trump Accounts Information",
+        "url": "https://www.irs.gov/trumpaccounts"
+      }
+    ]
+  },
   // ── Killswitch deep dive 2026-10-08 ──
   {
     "slug": "killswitch-review",
@@ -3473,6 +4105,7 @@ export const GUIDES: Guide[] = [
 
   // ─── What Is a Trump Account? (pillar — mindmap pass 2026-07-04) ──────────
   {
+    updated: "2026-10-08",
     slug: "trump-accounts",
     title: "What Is a Trump Account? Rules & How to Open",
     metaDescription:
@@ -3485,12 +4118,12 @@ export const GUIDES: Guide[] = [
     sections: [
       { heading: "What a Trump Account is", body: "A Trump Account is a new kind of tax-advantaged investment account built for children. Congress created it in the 2025 tax law, the One Big Beautiful Bill, also called the Working Families Tax Cuts. In the tax code it lives under new section 530A.\n\nThink of it as a starter retirement account for a kid. Money goes in after tax, gets invested in a U.S. stock index fund, and grows without yearly tax bills. The account holds one investment type: a low-cost fund that tracks the S&P 500 or a similar U.S.-equity index.\n\nThe program went live on July 4, 2026. Before that date, no contributions could be made. The goal is simple. Give American children a long runway to build wealth through the stock market.\n\nWant the numbers behind that runway? Run your child's details through our [Trump Account calculator](/trump-account/)." },
       { heading: "Other names for the Trump Account", body: "The Trump Account goes by many informal names, but they all mean the same federal account. You may see it called a \"Trump savings account,\" a \"Trump baby account,\" a \"Trump child account,\" a \"Trump investment account,\" or even the \"Trump fund.\"\n\nNone of these are separate programs. They are all nicknames for the one account created under tax-code section 530A. Note that it is not a bank savings account and pays no fixed interest rate — the money is invested in a stock index fund.\n\nIf you searched using one of those names, these guides go deeper. See the [Trump savings account](/guides/trump-savings-account/) explainer, the account [for newborns](/guides/trump-account-for-newborns/), and [what it's invested in](/guides/what-are-trump-accounts-invested-in/). For the fine print, read the full [rules](/guides/trump-account-rules/), [who qualifies](/guides/trump-account-eligibility/), [how it's taxed](/guides/trump-account-taxes/), and [how to open one](/guides/how-to-open-a-trump-account/)." },
-      { heading: "Who is eligible and the $1,000 seed", body: "Eligibility for the account and eligibility for the free $1,000 are two different things. Almost any child under 18 can have an account. Only a specific group gets the federal seed money.\n\n**Who gets the $1,000 seed:** The government adds a one-time $1,000 to the account of each U.S.-citizen child born between January 1, 2025, and December 31, 2028. The child needs a Social Security number. Any parent can open the account, regardless of the parent's own immigration status.\n\n**Who can open an account but gets no seed:** Children born before 2025, or after 2028, can still have a Trump Account opened and funded. They just do not receive the $1,000. The same is true for any eligible child under 18 outside the birth window.\n\nHere is a non-obvious point. The $1,000 seed does not count against your yearly contribution limit. It is a bonus on top of what your family can add. See the next section for how much you can contribute." },
-      { heading: "Contribution limits and how the money is invested", body: "Families and friends can add up to $5,000 per year, combined, to a child's Trump Account. That cap is indexed to inflation starting after 2027, so it will rise over time. The $1,000 federal seed does not count toward this cap.\n\nEmployers can chip in too. An employer may contribute up to $2,500 a year for an employee's child. But that money counts inside the $5,000 limit, not on top of it. So if an employer adds $2,500, the family can add $2,500 more that year.\n\nRemember: no contributions were allowed before July 4, 2026.\n\n**How the money is invested:** Every Trump Account must hold a low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. There is no menu of risky picks. This keeps fees low and the strategy simple.\n\nWhat can that grow into? At a 7% average return, a single $1,000 seed left alone reaches about $3,513 by age 18. Add $200 a month and it grows to roughly $89,657. Max out $5,000 a year from birth and the account could hit about $182,980. Model your own plan with the [Investment calculator](/investing/)." },
+      { heading: "Who is eligible and the $1,000 seed", body: "Eligibility for the account and eligibility for the free $1,000 are two different things. Almost any child under 18 can have an account. Only a specific group gets the federal seed money.\n\n**Who gets the $1,000 seed:** The government adds a one-time $1,000 to the account of each U.S.-citizen child born between January 1, 2025, and December 31, 2028. The child needs a Social Security number. Any parent can open the account, regardless of the parent's own immigration status.\n\n**Who can open an account but gets no seed:** Children born before 2025, or after 2028, can still have a Trump Account opened and funded. They just do not receive the $1,000. The same is true for any eligible child under 18 outside the birth window.\n\nHere is a non-obvious point. The $1,000 seed does not count against your yearly contribution limit. It is a bonus on top of what your family can add. See the next section for how much you can contribute. For timing, see [when does the $1,000 seed arrive](/guides/when-will-trump-account-be-funded/)." },
+      { heading: "Contribution limits and how the money is invested", body: "Families and friends can add up to $5,000 per year, combined, to a child's Trump Account. That cap is indexed to inflation starting after 2027, so it will rise over time. The $1,000 federal seed does not count toward this cap.\n\nEmployers can chip in too. An employer may contribute up to $2,500 a year for an employee's child. But that money counts inside the $5,000 limit, not on top of it. So if an employer adds $2,500, the family can add $2,500 more that year.\n\nRemember: no contributions were allowed before July 4, 2026.\n\n**How the money is invested:** Every Trump Account must hold a low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. There is no menu of risky picks. This keeps fees low and the strategy simple.\n\nWhat can that grow into? At a 7% average return, a single $1,000 seed left alone reaches about $3,513 by age 18. Add $200 a month and it grows to roughly $89,657. Max out $5,000 a year from birth and the account could hit about $182,980. Model your own plan with the [Investment calculator](/investing/). Our guide to [employer Trump Account contributions](/guides/trump-account-employer-contributions/) lists the companies that have pledged money." },
       { heading: "How Trump Accounts are taxed", body: "This is where families most often get confused, so read closely. Contributions are made with after-tax money. They are not tax-deductible, unlike a traditional IRA contribution.\n\nWhile the money sits in the account, growth is tax-deferred. You pay no yearly tax on gains or dividends. That lets the balance compound faster.\n\nHere is the key insight most headlines miss. A Trump Account is not tax-free. When the child eventually withdraws, the account follows traditional-IRA rules. Withdrawals are taxed as ordinary income, and early-withdrawal penalties can apply.\n\nThat matters a lot. A Roth IRA grows tax-free. A 529 plan is tax-free when used for school. A Trump Account is only tax-deferred, so the tax bill comes later. This changes who benefits most from it. To weigh those trade-offs, read [Trump Account vs 529](/compare/trump-account-vs-529/) and [Trump Account vs a custodial account](/compare/trump-account-vs-custodial-account/)." },
-      { heading: "How to open a Trump Account", body: "You open and manage a Trump Account through the official government channels. Do not use a random third-party site.\n\n**Step 1: Go to the official source.** Manage everything at [TrumpAccounts.gov](/trump-account/) or through the official Trump Accounts app. Families who already opted in while filing their taxes may have an account started for them.\n\n**Step 2: Have your documents ready.** You need the child's Social Security number, date of birth, and address. Opening takes only a few minutes.\n\n**Step 3: Pick a trustee.** The Bank of New York Mellon (BNY) is the Treasury's financial agent. Robinhood is the initial trustee. Fidelity, Schwab, Vanguard, and Bank of America are among the approved trustees you can choose.\n\n**Step 4: Fund the account.** Starting July 4, 2026, families who did not opt in at tax time can open and fund an account at TrumpAccounts.gov. Contributions are capped at $5,000 a year.\n\nOnce it is open, the $1,000 seed (if your child qualifies) is added by the government. Then your family contributions go to work in the index fund." },
+      { heading: "How to open a Trump Account", body: "Your child most likely has one already. On October 1, 2026 the [Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642) finished automatically enrolling every eligible child under 18 with a Social Security number, so most parents now claim the existing account in the official app instead of opening a new one. Treasury counts over 60 million newly enrolled children, and other counts run closer to 70 million. A parent or guardian must finish claiming before family or employers can deposit funds. Follow our guide on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/) to activate your child's record. The manual enrollment steps below still apply if a child was missed.\n\nYou open and manage a Trump Account through the official government channels. Do not use a random third-party site.\n\n**Step 1: Go to the official source.** Manage everything at [TrumpAccounts.gov](/trump-account/) or through the official Trump Accounts app. Families whose child was auto-enrolled on October 1, 2026 claim that existing account instead of opening a new one.\n\n**Step 2: Have your documents ready.** You need the child's Social Security number, date of birth, and address. Opening takes only a few minutes.\n\n**Step 3: Know who holds the account.** The Bank of New York Mellon (BNY) is the Treasury's financial agent. Robinhood is the initial trustee. As of October 2026 no other firm accepts Trump Accounts yet; see our [comparison of Trump Account trustees](/compare/trump-account-trustees/).\n\n**Step 4: Fund the account.** Contributions have been allowed since July 4, 2026, and family money can go in only after the account is claimed or opened. Contributions are capped at $5,000 a year.\n\nOnce it is open, the $1,000 seed (if your child qualifies) is added by the government. Then your family contributions go to work in the index fund." },
       { heading: "The timeline to age 18 and what happens after", body: "A Trump Account is a long-game account. The rules are built around the child turning 18.\n\n**Before 18:** Withdrawals are generally blocked. The money stays invested and compounds. This lock-up is a feature, not a bug. It protects the runway that makes the account powerful.\n\nThe exact turning point is January 1 of the year the child turns 18. From that date, withdrawals become possible.\n\n**After 18:** The account is treated like a traditional IRA. That means withdrawals are taxed as ordinary income. Early-withdrawal rules apply if the now-adult takes money out before retirement age without a qualifying reason.\n\nSo the smart move for many families is to leave the money invested well past 18. The longer it compounds tax-deferred, the larger it grows. A balance that reaches five figures by 18 can multiply many times over by retirement. Test different holding periods in the [Investment calculator](/investing/)." },
-      { heading: "Kids born before 2025 and other edge cases", body: "Plenty of parents ask the same question: my child was born before 2025, so are we shut out? No. You are not.\n\nAny eligible child under age 18 can have a Trump Account opened and funded. The birth date only decides one thing: whether the child gets the free $1,000 seed. Kids born before January 1, 2025, do not receive the seed, but they still get the tax-deferred account and the $5,000 yearly contribution room.\n\nThis is a real decision point. Without the $1,000 head start, is a Trump Account still the best home for your savings? For a child born before 2025, a Roth IRA (if they have earned income), a 529 for college, or a plain custodial account may fit better because of the tax difference. We break this down in [are Trump Accounts worth it](/guides/trump-account-worth-it/) and [Trump Account vs a custodial account](/compare/trump-account-vs-custodial-account/).\n\nThe bottom line: eligibility to open is broad, but the $1,000 bonus is narrow. Match the account to your child's situation, not just the headline. If your child missed the seed window, weigh the [best Trump Account alternatives](/guides/trump-account-alternatives/) before you decide." },
+      { heading: "Kids born before 2025 and other edge cases", body: "Plenty of parents ask the same question: my child was born before 2025, so are we shut out? No. You are not.\n\nAny eligible child under age 18 can have a Trump Account opened and funded. The birth date only decides one thing: whether the child gets the free $1,000 seed. Kids born before January 1, 2025, do not receive the seed, but they still get the tax-deferred account and the $5,000 yearly contribution room.\n\nThis is a real decision point. Without the $1,000 head start, is a Trump Account still the best home for your savings? For a child born before 2025, a Roth IRA (if they have earned income), a 529 for college, or a plain custodial account may fit better because of the tax difference. We break this down in [are Trump Accounts worth it](/guides/trump-account-worth-it/) and [Trump Account vs a custodial account](/compare/trump-account-vs-custodial-account/).\n\nThe bottom line: eligibility to open is broad, but the $1,000 bonus is narrow. Match the account to your child's situation, not just the headline. If your child missed the seed window, weigh the [best Trump Account alternatives](/guides/trump-account-alternatives/) before you decide. Some of these children also get the Dells' $250 deposit, covered in [does my child qualify for the Dell $250](/guides/dell-trump-account-250/)." },
     ],
     tools: [
       { href: "/trump-account/", label: "Trump Account calculator" },
@@ -3499,14 +4132,14 @@ export const GUIDES: Guide[] = [
     faqs: [
       { question: "What is a Trump Account?", answer: "A Trump Account is a tax-advantaged investment account for a child, created by the 2025 Working Families Tax Cuts law under tax-code section 530A. It holds a low-cost S&P 500 index fund, grows tax-deferred, and can receive a one-time $1,000 federal seed for U.S.-citizen children born between 2025 and 2028. The money is generally locked until the child turns 18, after which the account follows traditional-IRA rules." },
       { question: "Is the Trump Account real?", answer: "Yes, the Trump Account is a real federal program, not a scam. Congress created it in the 2025 Working Families Tax Cuts law (the One Big Beautiful Bill) under tax-code section 530A, and the IRS administers it. Informal names like \"Trump baby account,\" \"Trump savings account,\" and \"Trump fund\" all refer to this same real account. The honest caveats are its tax and lock-up rules, not the program's legitimacy." },
-      { question: "How do I open a Trump Account?", answer: "You open a Trump Account at the official [TrumpAccounts.gov](/trump-account/) site or the official Trump Accounts app, starting July 4, 2026. Have the child's Social Security number, date of birth, and address ready, then choose an approved trustee such as Robinhood, Fidelity, Schwab, Vanguard, or Bank of America. The Bank of New York Mellon (BNY) is the Treasury's financial agent. Families who opted in while filing taxes may already have an account started." },
+      { question: "How do I open a Trump Account?", answer: "You open a Trump Account at the official [TrumpAccounts.gov](/trump-account/) site or the official Trump Accounts app, starting July 4, 2026. Have the child's Social Security number, date of birth, and address ready, and the account is held at Robinhood Securities, the initial trustee. The Bank of New York Mellon (BNY) is the Treasury's financial agent. Most eligible children were auto-enrolled on October 1, 2026, so check for and claim that account in the app first." },
       { question: "Who is eligible for a Trump Account?", answer: "Almost any U.S. child under age 18 with a Social Security number is eligible to have a Trump Account opened. Any parent can open one, regardless of the parent's immigration status. However, only U.S.-citizen children born between January 1, 2025, and December 31, 2028, receive the one-time $1,000 federal seed. Kids outside that birth window can still have an account, just without the seed." },
       { question: "Can kids born before 2025 get a Trump Account?", answer: "Yes, children born before 2025 can have a Trump Account opened and funded, but they do not receive the $1,000 federal seed. The seed is reserved for U.S.-citizen children born between January 1, 2025, and December 31, 2028. A child born earlier still gets the tax-deferred account and the same $5,000 yearly contribution room. Without the free seed, though, compare it against a Roth IRA, 529, or [custodial account](/compare/trump-account-vs-custodial-account/) first." },
       { question: "How much can you contribute to a Trump Account?", answer: "Families and friends can contribute up to $5,000 per year combined to a child's Trump Account, and that cap is indexed to inflation after 2027. An employer may add up to $2,500 a year, but that amount counts inside the $5,000 cap, not on top of it. The one-time $1,000 federal seed does not count toward the limit. Contributions could not be made before July 4, 2026." },
       { question: "Are Trump Accounts worth it?", answer: "Trump Accounts can be worth it, especially for a child who qualifies for the free $1,000 seed and a long time horizon. The key catch is taxes: withdrawals are taxed as ordinary income under traditional-IRA rules, not tax-free like a Roth IRA or a 529 used for school. That makes them a strong wealth-building tool but not always the best account for every goal. See our full breakdown of whether [Trump Accounts are worth it](/guides/trump-account-worth-it/)." },
       { question: "How is the money in a Trump Account invested?", answer: "The money in a Trump Account must be invested in a low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. There is no menu of individual stocks or risky picks, which keeps fees low and the strategy simple. At a 7% average return, a single $1,000 seed left alone could reach about $3,513 by age 18, while $200 a month could grow to roughly $89,657." },
       { question: "Can grandparents open or contribute to a Trump Account?", answer: "Grandparents, relatives, and friends can all contribute to a child's Trump Account, though a parent or legal guardian generally opens the account. Everyone's contributions count toward the same $5,000 annual cap, and money a grandparent adds is treated as a gift to the child. This makes a Trump Account an easy way for extended family to chip in on a child's future." },
-      { question: "When can you open a Trump Account?", answer: "You can open and fund a Trump Account starting July 4, 2026, when the program went live. No contributions were allowed before that date. Families who opted in while filing their 2025 taxes may already have an account started, and everyone else can open one at TrumpAccounts.gov or through the official Trump Accounts app." },
+      { question: "When can you open a Trump Account?", answer: "You can open and fund a Trump Account starting July 4, 2026, when the program went live. No contributions were allowed before that date. Most eligible children were auto-enrolled on October 1, 2026, so parents claim that account in the official Trump Accounts app and open one at TrumpAccounts.gov only if a child was missed." },
       { question: "Do you report a Trump Account on your taxes?", answer: "You do not report Trump Account growth on your yearly taxes, because the account grows tax-deferred. Contributions are made with after-tax dollars and are not deductible, so they do not lower your tax bill. You make a one-time Trump Account election when you open the account, and withdrawals after the child turns 18 are taxed as ordinary income under traditional-IRA rules." },
     ],
     sources: [
@@ -3566,6 +4199,7 @@ export const GUIDES: Guide[] = [
 
   // Trump Account alias + intent guides (autocomplete pass 2026-07-08) — 7 guides
   {
+    updated: "2026-10-08",
     slug: "trump-savings-account",
     title: "Trump Savings Account: How It Works & Who Qualifies",
     metaDescription: "The Trump savings account is the federal Trump Account. See how it works, the $1,000 seed, eligibility, contribution limits, taxes, and if it's worth it.",
@@ -3592,7 +4226,7 @@ export const GUIDES: Guide[] = [
       { question: "How is the Trump savings account taxed?", answer: "It is tax-deferred, not tax-free. Contributions are made with after-tax dollars and are not deductible, but growth is not taxed while it stays in the account. After the child turns 18 the account is treated like a traditional IRA, so withdrawals are taxed as ordinary income and early-withdrawal penalties can apply." },
       { question: "How much can you put in a Trump savings account?", answer: "Family, relatives, and friends can contribute up to $5,000 per year combined, a cap indexed to inflation after 2027. An employer may add up to $2,500 per year, but that counts inside the $5,000 cap, not on top of it. The $1,000 federal seed does not count against the cap." },
       { question: "Is the Trump savings account worth it for newborns?", answer: "For most families with a qualifying newborn, yes — the $1,000 seed is free money you cannot get elsewhere. At a 7% return, the seed alone grows to about $3,513 by age 18, and adding $200 a month reaches roughly $89,657. The main trade-off is that the money is locked until the child turns 18." },
-      { question: "How do you open a Trump savings account?", answer: "Open one at TrumpAccounts.gov or the official Trump Accounts app using the child's Social Security number, date of birth, and address. Bank of New York Mellon (BNY) is Treasury's financial agent, Robinhood is the initial trustee, and Fidelity, Schwab, Vanguard, and Bank of America are among approved trustees. See our [how to open one](/guides/how-to-open-a-trump-account/) guide for steps." }
+      { question: "How do you open a Trump savings account?", answer: "Open one at TrumpAccounts.gov or the official Trump Accounts app using the child's Social Security number, date of birth, and address. Bank of New York Mellon (BNY) is Treasury's financial agent, Robinhood is the initial trustee and, as of October 2026, the only firm that holds Trump Accounts. See our [how to open one](/guides/how-to-open-a-trump-account/) guide for steps." }
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
@@ -3602,6 +4236,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    updated: "2026-10-08",
     slug: "trump-account-for-newborns",
     title: "Trump Account for Newborns: The $1,000 Baby Seed",
     metaDescription: "Yes, the Trump account for newborns is real: a $1,000 federal seed for U.S. babies born 2025–2028. See who qualifies and how to open one.",
@@ -3609,11 +4244,11 @@ export const GUIDES: Guide[] = [
     cardBlurb: "Babies born 2025–2028 get a free $1,000 federal seed. Here is how the Trump account for newborns works and how to open one.",
     introText: "Trump Accounts for newborns are real, and eligible babies receive a free $1,000 federal seed. Congress created them through the 2025 \"One Big Beautiful Bill,\" the Working Families Tax Cuts law.\n\nThe main benefit is a one-time $1,000 government deposit into your child's account. It is not a loan, and you do not have to pay it back.\n\nThis page focuses specifically on newborns and babies. You will learn whether it is real, who qualifies based on birth year, whether enrollment is automatic, and how to open an account for your baby. For the bigger picture, see [what a Trump Account is](/guides/trump-accounts/).",
     sections: [
-      { heading: "Is the Trump baby account real?", body: "Yes, the Trump baby account is real and written into federal law. It was created by the 2025 \"One Big Beautiful Bill\" (the Working Families Tax Cuts law) under IRC section 530A.\n\nThe program goes live on July 4, 2026. No money can go in before that date, so there is nothing to fund yet in 2025 or early 2026.\n\n\"Trump baby account\" and \"Trump newborn savings account\" are informal nicknames. The real product is the federal Trump Account, a tax-deferred investment account. It is not a bank savings account, and it does not sit at your local bank." },
+      { heading: "Is the Trump baby account real?", body: "Yes, the Trump baby account is real and written into federal law. It was created by the 2025 \"One Big Beautiful Bill\" (the Working Families Tax Cuts law) under IRC section 530A.\n\nThe program went live on July 4, 2026, when deposits and contributions could begin.\n\n\"Trump baby account\" and \"Trump newborn savings account\" are informal nicknames. The real product is the federal Trump Account, a tax-deferred investment account. It is not a bank savings account, and it does not sit at your local bank.\n\nOn October 1, 2026 the [Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642) finished opening an account automatically for every eligible child with a Social Security number, so parents now claim it in the official app rather than open it." },
       { heading: "The $1,000 newborn seed explained", body: "The newborn seed is a one-time $1,000 the federal government deposits into your baby's Trump Account. It is the single biggest reason to open one early.\n\nThe seed is free money that does not count against the yearly contribution cap. That cap is $5,000 per year combined, and an employer can add up to $2,500 inside it. The cap adjusts for inflation after 2027.\n\nThe money is invested in a low-cost S&P 500 or U.S.-equity index fund. It grows tax-deferred, so you owe no tax until your child withdraws it after age 18. Want to model the growth? Try the [Trump Account calculator](/trump-account/)." },
       { heading: "Which babies qualify: born 2025 through 2028", body: "Your baby qualifies for the $1,000 seed if they are a U.S. citizen born between January 1, 2025 and December 31, 2028. The child also needs a Social Security number.\n\nBabies born in 2025, 2026, 2027, and 2028 all qualify for the seed. A baby born in any of those four years hits the window, including a Trump account baby born 2025.\n\nA child born before 2025 does not get the seed. They can still have a Trump Account, but they miss the free $1,000. Any parent can open the account, no matter their own immigration status. See the full rules on [who qualifies](/guides/trump-account-eligibility/)." },
-      { heading: "Is it automatic, or do you open it?", body: "The seed is not always automatic, so most parents should plan to open the account themselves. Do not assume the $1,000 will appear on its own.\n\nSome families who opted in while filing their taxes may already have an account started. If that is you, you may only need to confirm and fund it.\n\nEveryone else should open the account once the program is live. Your baby also needs a Social Security number first, which you usually apply for at birth. Without an SSN, the account cannot be created." },
-      { heading: "How to open a Trump account for a baby", body: "You open a Trump account for a baby at TrumpAccounts.gov or through the official Trump Accounts app. Have your child's SSN, date of birth, and address ready.\n\nAccounts are held by approved trustees. BNY Mellon is the Treasury's financial agent, and Robinhood is the initial trustee. Fidelity, Schwab, Vanguard, and Bank of America are also among the approved providers.\n\nOpen the account after the July 4, 2026 launch, since no money moves before then. For a step-by-step walkthrough, read [how to open a Trump Account](/guides/how-to-open-a-trump-account/)." },
+      { heading: "Is it automatic, or do you open it?", body: "Yes, Treasury opens the account automatically for every eligible child with a Social Security number, and it completed that auto-enrollment on October 1, 2026. A parent must still claim it in the official Trump Accounts app before the $1,000 seed is paid or anyone can add money. For a newborn, this process starts once the baby receives an SSN, which parents usually apply for at birth. According to a tax-practitioner analysis of the regulations, an unclaimed account sits in a Treasury master group trust, and it cannot receive family or employer deposits.\n\nTo activate the account, download the official Trump Accounts app, verify your identity and your relationship to the child, review their details, and accept the terms. Follow our step-by-step guide on [how to claim your baby's Trump Account in the app](/guides/how-to-claim-a-trump-account/) to finish the setup. \n\nTreasury regulations state that the government cannot make the $1,000 pilot program election on a child's behalf. It remains unpublished whether claiming in the app counts as that election, so parents of children born between 2025 and 2028 should confirm the election is on file in the app or at 1-866-USA-4547, or submit Part III of [Form 4547](/guides/form-4547/) to secure the deposit. Check the timeline for [when the $1,000 arrives](/guides/when-will-trump-account-be-funded/) to track the payout." },
+      { heading: "How to open a Trump account for a baby", body: "You open a Trump account for a baby at TrumpAccounts.gov or through the official Trump Accounts app. Have your child's SSN, date of birth, and address ready.\n\nBNY Mellon is the Treasury's financial agent, and Robinhood Securities is the initial trustee that holds every account. No other firm accepts Trump Accounts yet as of October 2026.\n\nClaim the account Treasury opened for your baby in the official Trump Accounts app, and open one yourself only if your baby was missed. For a step-by-step walkthrough, read [how to open a Trump Account](/guides/how-to-open-a-trump-account/)." },
       { heading: "What the newborn seed can grow to by 18", body: "A newborn has the full 18-year runway, which makes the growth potential the best of any age. The account is locked until January 1 of the year your child turns 18.\n\nAt a 7% return, the $1,000 seed alone grows to about $3,513 by age 18. Add $200 a month and it reaches about $89,657. Contribute the $5,000 yearly max from birth and it can hit about $182,980.\n\nRemember the money is tax-deferred, not tax-free. Withdrawals after 18 are taxed as ordinary income, like a traditional IRA. To weigh it against college savings, compare [Trump Account vs 529](/compare/trump-account-vs-529/) and see [the rules](/guides/trump-account-rules/)." }
     ],
     tools: [
@@ -3621,10 +4256,10 @@ export const GUIDES: Guide[] = [
       { href: "/investing/", label: "Investment calculator" }
     ],
     faqs: [
-      { question: "Is the Trump account for newborns real?", answer: "Yes. The Trump account for newborns is real federal law, created by the 2025 \"One Big Beautiful Bill\" under IRC section 530A. It gives eligible U.S. babies a one-time $1,000 seed. The program goes live July 4, 2026." },
+      { question: "Is the Trump account for newborns real?", answer: "Yes. The Trump account for newborns is real federal law, created by the 2025 \"One Big Beautiful Bill\" under IRC section 530A. It gives eligible U.S. babies a one-time $1,000 seed. The program went live July 4, 2026." },
       { question: "How much is the newborn seed?", answer: "The seed is a one-time $1,000 deposited by the federal government. It is free and does not count against the $5,000 yearly contribution cap. Your baby must be a U.S. citizen born 2025–2028 with a Social Security number." },
       { question: "Does a baby born in 2025 qualify?", answer: "Yes. A baby born in 2025 qualifies for the $1,000 seed, and so do babies born in 2026, 2027, and 2028. The child must be a U.S. citizen with an SSN. A baby born before 2025 can hold an account but gets no seed." },
-      { question: "Is the Trump baby account automatic?", answer: "Not always. Some families who opted in while filing taxes may already have an account started. Most parents should plan to open one themselves at TrumpAccounts.gov once the program launches on July 4, 2026." },
+      { question: "Is the Trump baby account automatic?", answer: "Yes, Treasury opens one automatically for every eligible baby with a Social Security number, but a parent must claim it in the official Trump Accounts app before the $1,000 seed or any deposits arrive." },
       { question: "How do I open a Trump account for a baby?", answer: "Open it at TrumpAccounts.gov or the official Trump Accounts app. You need the child's SSN, date of birth, and address. Apply for your baby's SSN at birth first, since the account cannot be created without one." },
       { question: "Is the Trump newborn savings account a bank account?", answer: "No. \"Trump baby account\" and \"Trump newborn savings account\" are nicknames for the federal Trump Account. It is a tax-deferred investment account holding a low-cost U.S. stock index fund, not a bank savings account." },
       { question: "What can the $1,000 seed grow to by age 18?", answer: "At 7% growth, the $1,000 seed alone reaches about $3,513 by 18. Adding $200 a month gets about $89,657, and the $5,000 yearly max from birth reaches about $182,980. Withdrawals after 18 are taxed as ordinary income." },
@@ -3640,32 +4275,32 @@ export const GUIDES: Guide[] = [
   {
     slug: "how-to-open-a-trump-account",
     title: "How to Open a Trump Account: Step-by-Step Guide",
-    metaDescription: "Learn how to open a Trump Account in minutes at TrumpAccounts.gov. Step-by-step: gather documents, pick a trustee, and fund your child's account safely.",
+    metaDescription: "Learn how to open a Trump Account in minutes at TrumpAccounts.gov. Step-by-step: gather documents, claim or open the account, and fund your child's account safely.",
     h1: "How to Open a Trump Account: A Step-by-Step Guide",
     cardBlurb: "The step-by-step path to opening your child's Trump Account — the official site, documents, trustees, and funding.",
     introText: "Learning how to open a Trump Account takes just a few minutes online. You can open one at TrumpAccounts.gov or through the official Trump Accounts app using your child's basic details. This guide walks you through every step, from gathering documents and choosing a trustee to funding the account.\n\nBefore you begin, it helps to understand [what a Trump Account is](/guides/trump-accounts/): a tax-deferred savings account for kids created by the 2025 One Big Beautiful Bill. If you want to model growth first, try our [Trump Account calculator](/trump-account/).",
     sections: [
-      { heading: "Step 1: Go to the official Trump Account source", body: "Open a Trump Account only at TrumpAccounts.gov or the official Trump Accounts app. These are the government's channels, and they are the safe place to sign up. Opening takes only a few minutes once you have your child's details ready.\n\nThe program went live on July 4, 2026, so no accounts or contributions existed before then. If you opted in while filing your 2025 taxes, an account may already be started for you. In that case, log in through the official site to check and finish setup.\n\nBe careful, because scammers copy government pages to steal personal data. Never enter your child's Social Security number on a random third-party site. Type the official web address yourself instead of clicking links from ads, texts, or emails." },
+      { heading: "Step 1: Go to the official Trump Account source", body: "If your child was auto-enrolled, you do not need to open a new account. On October 1, 2026 the [Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642) automatically opened an account for every eligible child under 18 with a Social Security number. Check for that account and claim it first, and open a new one only if your child was missed. About 60 to 70 million children were enrolled, depending on the source. Our guide on [how do I claim an auto-enrolled Trump Account](/guides/how-to-claim-a-trump-account/) shows how to activate the auto-enrolled account in the app.\n\nOpen a Trump Account only at TrumpAccounts.gov or the official Trump Accounts app. These are the government's channels, and they are the safe place to sign up. Opening takes only a few minutes once you have your child's details ready.\n\nThe program went live on July 4, 2026, so no accounts or contributions existed before then.\n\nBe careful, because scammers copy government pages to steal personal data. Never enter your child's Social Security number on a random third-party site. Type the official web address yourself instead of clicking links from ads, texts, or emails." },
       { heading: "Step 2: Gather the documents you need to sign up", body: "You need three things to open a Trump Account: the child's Social Security number, date of birth, and address. Have these ready before you start so the process moves quickly. With them on hand, signing up takes just a few minutes.\n\nAny parent can open an account, no matter their own immigration status. The child is the account owner, so their details are what the form asks for. Double-check the Social Security number, since a typo can delay your application. A grandparent opening one on a grandchild's behalf should note that a parent or legal guardian generally opens the account itself, though [grandparents can still contribute](/guides/trump-accounts/) once it's open.\n\nKeep this information private during and after setup. The official site is secure, but you should still avoid sharing these details anywhere else. To confirm your child qualifies, review [who qualifies](/guides/trump-account-eligibility/) before you apply." },
-      { heading: "Step 3: Choose which bank or trustee holds the account", body: "You pick an approved trustee to hold and invest the Trump Account. The Treasury uses Bank of New York Mellon (BNY) as its financial agent behind the scenes. Robinhood is the initial trustee available at launch.\n\nMore providers are approved so families have choices. Fidelity, Schwab, Vanguard, and Bank of America are among the approved trustees you can select. Pick the one that fits how you already manage money, then continue setup.\n\nWhichever trustee you choose, the account still follows the same federal rules. The money goes into an S&P 500 index fund regardless of provider. Learn more about [the rules](/guides/trump-account-rules/) that apply no matter which trustee you use." },
-      { heading: "Step 4: Fund the Trump Account after you open it", body: "You fund the account with family contributions once it is open. Starting July 4, 2026, families who did not opt in at tax time can open and fund at TrumpAccounts.gov. Contributions go straight into the S&P 500 index fund.\n\nThere is a yearly limit on how much you can add. The cap is $5,000 per year combined, and an employer can add up to $2,500 within that same cap. The $1,000 government seed does not count against this limit.\n\nYou do not have to max it out to start. Even small, steady contributions add up over years of market growth. Use our [Trump Account calculator](/trump-account/) or [investment calculator](/investing/) to see how funding choices grow over time." },
+      { heading: "Step 3: Which bank or trustee holds the account", body: "Robinhood Securities holds and invests every Trump Account today. The Treasury uses Bank of New York Mellon (BNY) as its financial agent behind the scenes. Robinhood is the initial trustee.\n\nFidelity and Vanguard have said they plan to accept rollovers once Treasury issues guidance, and J.P. Morgan says rollovers are not yet available; as of October 2026 no other firm is live. Our [Trump Account trustee comparison](/compare/trump-account-trustees/) tracks where each firm stands.\n\nWhichever trustee holds it, the account still follows the same federal rules. The money goes into an S&P 500 index fund regardless of provider. Learn more about [the rules](/guides/trump-account-rules/) that apply no matter which trustee you use." },
+      { heading: "Step 4: Fund the Trump Account after you open it", body: "You fund the account with family contributions once it is open. Family money can go in only after the account is claimed or opened, and contributions have been allowed since July 4, 2026. Contributions go straight into the S&P 500 index fund.\n\nThere is a yearly limit on how much you can add. The cap is $5,000 per year combined, and an employer can add up to $2,500 within that same cap. The $1,000 government seed does not count against this limit.\n\nYou do not have to max it out to start. Even small, steady contributions add up over years of market growth. Use our [Trump Account calculator](/trump-account/) or [investment calculator](/investing/) to see how funding choices grow over time." },
       { heading: "Who can open a Trump Account", body: "Almost any U.S. child under 18 with a Social Security number can have a Trump Account. Any parent can open one, regardless of their immigration status. This makes the account widely available to American families.\n\nOpening an account is separate from getting the $1,000 seed. The government seed is only for U.S.-citizen kids born between January 1, 2025 and December 31, 2028. Your child can still have an account and grow savings even without qualifying for the seed.\n\nSo two rules apply: one to open, and one to receive the seed. Understanding both prevents confusion at sign-up. If you have a baby, see our guide on Trump Accounts [for newborns](/guides/trump-account-for-newborns/)." },
-      { heading: "IRS Form 4547 and the Trump Account Election", body: "Taxpayers use [IRS Form 4547](https://www.irs.gov/forms-pubs/about-form-4547), titled \"Trump Account Election(s)\", to elect to open an initial Trump account for an eligible child and to request the one-time $1,000 pilot program contribution. You must file this form to make the initial account election. Under the [IRS instructions for Form 4547](https://www.irs.gov/instructions/i4547), the authorized individual who signs for the account must be the child's legal guardian, parent, adult sibling, or grandparent, in that order of priority. To request the pilot contribution, the signer must also anticipate that the child will be their qualifying child for that tax year. Review [who qualifies](/guides/trump-account-eligibility/) to check the child's age and Social Security number requirements before you submit the paperwork.\n\nYou can submit Form 4547 at any time, and the IRS instructions describe e-filing with your current-year income tax return as the fastest method. The instructions note that online elections may be available at trumpaccounts.gov starting in the middle of 2026. For a paper submission, mail the document to the address listed at IRS.gov/PaperReturns for that return year, and ensure you include a handwritten signature. Do not attach Form 4547 to Form 1040-X, and do not amend a Form 1040, 1040-SR, or 1040-NR to include it.\n\nThe form contains four distinct sections. Part I collects your name, address, and Social Security number, while Part II records the child's details, relationship to you, and a checkbox confirming your authority to open the account. Part III contains line 7, which you check to request the one-time $1,000 pilot program contribution for a child born after December 31, 2024, and before January 1, 2029. Leave line 7 blank if the child does not meet the pilot birth dates, as you will still use the form to open the underlying account. Part IV requires your disclosure consent, signature, and date. Any approved pilot contribution is deposited after the Treasury confirms the account is open, though not before July 4, 2026. See our guide on [Trump Account taxes](/guides/trump-account-taxes/) to see how the account is taxed." },
-      { heading: "What happens after you open a Trump Account", body: "After you open the account, the $1,000 seed is added by the government if your child qualifies. Your family contributions are invested in an S&P 500 / U.S.-equity index fund. This is the same fund for every account, chosen for broad market growth.\n\nThe account is built for the long term. Earnings grow tax-deferred, so you owe no yearly tax on the gains inside it. The money is locked until January 1 of the year the child turns 18.\n\nThat long runway is the point of the account. Years of contributions plus market growth can build a meaningful sum by adulthood. To weigh the trade-offs, read whether [Trump Accounts are worth it](/guides/trump-account-worth-it/) for your family." }
+      { heading: "IRS Form 4547 and the Trump Account Election", body: "Taxpayers use [IRS Form 4547](https://www.irs.gov/forms-pubs/about-form-4547), titled \"Trump Account Election(s)\", to elect to open an initial Trump account for an eligible child and to request the one-time $1,000 pilot program contribution. Since Treasury auto-enrolled eligible children on October 1, 2026, most families no longer need the form to open an account, but it remains the documented way to make the $1,000 pilot election; see our [Form 4547 guide](/guides/form-4547/). Under the [IRS instructions for Form 4547](https://www.irs.gov/instructions/i4547), the authorized individual who signs for the account must be the child's legal guardian, parent, adult sibling, or grandparent, in that order of priority. To request the pilot contribution, the signer must also anticipate that the child will be their qualifying child for that tax year. Review [who qualifies](/guides/trump-account-eligibility/) to check the child's age and Social Security number requirements before you submit the paperwork.\n\nYou can submit Form 4547 at any time, and the IRS instructions describe e-filing with your current-year income tax return as the fastest method. The instructions note that online elections may be available at trumpaccounts.gov starting in the middle of 2026. For a paper submission, mail the document to the address listed at IRS.gov/PaperReturns for that return year, and ensure you include a handwritten signature. Do not attach Form 4547 to Form 1040-X, and do not amend a Form 1040, 1040-SR, or 1040-NR to include it.\n\nThe form contains four distinct sections. Part I collects your name, address, and Social Security number, while Part II records the child's details, relationship to you, and a checkbox confirming your authority to open the account. Part III contains line 7, which you check to request the one-time $1,000 pilot program contribution for a child born after December 31, 2024, and before January 1, 2029. Leave line 7 blank if the child does not meet the pilot birth dates, as you will still use the form to open the underlying account. Part IV requires your disclosure consent, signature, and date. Any approved pilot contribution is deposited after the Treasury confirms the account is open, though not before July 4, 2026. See our guide on [Trump Account taxes](/guides/trump-account-taxes/) to see how the account is taxed." },
+      { heading: "What happens after you open a Trump Account", body: "After you open the account, the $1,000 seed is added by the government if your child qualifies. Your family contributions are invested in an S&P 500 / U.S.-equity index fund. This is the same fund for every account, chosen for broad market growth.\n\nThe account is built for the long term. Earnings grow tax-deferred, so you owe no yearly tax on the gains inside it. The money is locked until January 1 of the year the child turns 18.\n\nThat long runway is the point of the account. Years of contributions plus market growth can build a meaningful sum by adulthood. To weigh the trade-offs, read whether [Trump Accounts are worth it](/guides/trump-account-worth-it/) for your family. To check the balance and deposits, see [how to use the Trump Accounts app](/guides/trump-account-app/)." }
     ],
     tools: [
       { href: "/trump-account/", label: "Trump Account calculator" },
       { href: "/investing/", label: "Investment calculator" }
     ],
     faqs: [
-      { question: "How do you open a Trump Account?", answer: "You open a Trump Account at TrumpAccounts.gov or the official Trump Accounts app. Enter the child's Social Security number, date of birth, and address, then choose an approved trustee. The whole process takes only a few minutes." },
+      { question: "How do you open a Trump Account?", answer: "You open a Trump Account at TrumpAccounts.gov or the official Trump Accounts app. Enter the child's Social Security number, date of birth, and address. The whole process takes only a few minutes." },
       { question: "Where do I sign up for a Trump Account?", answer: "Sign up only at TrumpAccounts.gov or the official Trump Accounts app. These are the government's official channels. Avoid random third-party sites, since scammers copy government pages to steal personal data." },
       { question: "What documents do I need to apply for a Trump Account?", answer: "You need the child's Social Security number, date of birth, and address. Have these ready before you start so setup goes quickly. Any parent can apply, regardless of their immigration status." },
-      { question: "Which bank should I use for a Trump Account?", answer: "You choose from approved trustees. Robinhood is the initial trustee, and Fidelity, Schwab, Vanguard, and Bank of America are among the approved options. Bank of New York Mellon serves as the Treasury's financial agent behind the scenes." },
+      { question: "Which bank should I use for a Trump Account?", answer: "For now you do not choose: Robinhood Securities holds every Trump Account. Fidelity and Vanguard have said they plan to accept rollovers later, and J.P. Morgan says rollovers are not yet available; none is live as of October 2026. Bank of New York Mellon serves as the Treasury's financial agent behind the scenes." },
       { question: "Can I open a Trump Account if my child was not born in the eligible years?", answer: "Yes. Almost any U.S. child under 18 with a Social Security number can have an account. Only the $1,000 government seed is limited to citizen children born January 1, 2025 through December 31, 2028." },
-      { question: "When can I open and fund a Trump Account?", answer: "The program went live July 4, 2026. Starting that date, families who did not opt in at tax time can open and fund an account at TrumpAccounts.gov. Families who opted in while filing 2025 taxes may already have one started." },
+      { question: "When can I open and fund a Trump Account?", answer: "The program went live July 4, 2026. Most eligible children were auto-enrolled on October 1, 2026, so parents claim that account first and open one at TrumpAccounts.gov only if a child was missed." },
       { question: "How much can I contribute after opening a Trump Account?", answer: "You can contribute up to $5,000 per year combined, with an employer able to add up to $2,500 within that cap. The $1,000 government seed does not count against the limit. Contributions go into an S&P 500 index fund." },
-      { question: "What is the minimum contribution to a Trump Account?", answer: "Federal rules set no minimum contribution amount to open or fund a Trump Account. The law limits annual contributions to $5,000, and any amount you deposit must go into the required U.S.-equity index fund. Approved trustees can still establish their own account minimums or fee schedules, so review your trustee's terms before funding the account." },
+      { question: "What is the minimum contribution to a Trump Account?", answer: "Federal rules set no minimum contribution amount to open or fund a Trump Account. The law limits annual contributions to $5,000, and any amount you deposit must go into the required U.S.-equity index fund. Robinhood, the only trustee as of October 2026, says it charges no other account fees on Trump Accounts; review its terms before funding." },
       { question: "Is my money locked after I open a Trump Account?", answer: "Yes. Funds grow tax-deferred and stay locked until January 1 of the year the child turns 18. The account is designed as a long-term investment in a U.S.-equity index fund." },
       { question: "How do I know a Trump Account site or app is not a scam?", answer: "Open the account only at TrumpAccounts.gov or the official Trump Accounts app, and never pay a fee to open one or to receive the $1,000 seed. See [Trump Account scams to know](/guides/trump-account-scams/) for the copycat sites, fake texts, and fake apps already circulating." }
     ],
@@ -3673,10 +4308,11 @@ export const GUIDES: Guide[] = [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
       { label: "IRS — Notice 2025-68 (full text, PDF)", url: "https://www.irs.gov/pub/irs-drop/n-25-68.pdf" }
     ],
-    updated: "2026-09-15"
+    updated: "2026-10-08"
   },
 
   {
+    updated: "2026-10-08",
     slug: "trump-account-eligibility",
     title: "Trump Account Eligibility: Who Qualifies?",
     metaDescription: "Trump Account eligibility explained: nearly any U.S. child under 18 with an SSN can open one, but only kids born 2025-2028 get the $1,000 seed.",
@@ -3687,7 +4323,7 @@ export const GUIDES: Guide[] = [
       { heading: "Trump Account Eligibility: The Two Rules That Matter", body: "Trump Account eligibility splits into two separate questions. First, who can open an account. Second, who gets the one-time $1,000 seed.\n\nAlmost any U.S. child under 18 with a Social Security number can have an account opened. The seed is narrower. Only U.S.-citizen children born in a specific window receive it.\n\nHold these two rules apart as you read. A child can clear the first test, open an account, invest for years, and still not get the seed. That is normal, and it is not a rejection." },
       { heading: "Who Qualifies to Open an Account?", body: "Nearly any U.S. child under 18 with a valid Social Security number qualifies to open a Trump Account. The SSN is the key requirement. Without it, the account cannot be opened.\n\nAny parent can open one, regardless of the parent's immigration status. Your status does not block your child. The account belongs to the child, not to you.\n\nThere is no lottery and no waiting list. If your child is under 18 and has an SSN, you can move forward. See [how to open one](/guides/how-to-open-a-trump-account/) for the step-by-step." },
       { heading: "Trump Account Eligibility for the $1,000 Seed", body: "Only U.S.-citizen children born between January 1, 2025 and December 31, 2028 qualify for the one-time $1,000 federal seed. The child must also have a Social Security number. Miss the birth window, and the seed is gone even if everything else lines up.\n\nThe seed is a single federal deposit into the child's account. It does not count against the yearly contribution cap. It simply gives the account a head start.\n\nIf your child fits this window, they are a strong candidate. Parents of new babies should read [for newborns](/guides/trump-account-for-newborns/) to claim it correctly." },
-      { heading: "Trump Account Eligibility for Older Kids and Adults", body: "Children born before 2025 can still open and fund a Trump Account. They simply get no seed. The birth-year window controls only the $1,000, not the account itself.\n\nThe same is true for kids born after 2028 or otherwise outside the window. They can invest the full amount each year. They just skip the free federal deposit. An older child is not shut out of the program.\n\nAdults do not qualify at all. A Trump Account is for children under 18, and it cannot be opened in an adult's name. Searches for a Trump Account for adults usually reflect confusion. The child gains control of the account at 18, so the money is locked until then. Check [the rules](/guides/trump-account-rules/) for the full lock-up terms." },
+      { heading: "Trump Account Eligibility for Older Kids and Adults", body: "Children born before 2025 can still open and fund a Trump Account. They simply get no seed. The birth-year window controls only the $1,000, not the account itself.\n\nThe same is true for kids born after 2028 or otherwise outside the window. They can invest the full amount each year. They just skip the free federal deposit. An older child is not shut out of the program.\n\nAdults do not qualify at all. A Trump Account is for children under 18, and it cannot be opened in an adult's name. Searches for a Trump Account for adults usually reflect confusion. The child gains control of the account at 18, so the money is locked until then. Check [the rules](/guides/trump-account-rules/) for the full lock-up terms. Children born 2016 through 2024 in lower-income ZIP codes may also get a separate $250 from the Dells; see [who qualifies for the Dell $250](/guides/dell-trump-account-250/)." },
       { heading: "Is There a Trump Account Income Limit?", body: "There is no Trump Account income limit for parents, none to open and none to receive the $1,000 seed. High earners qualify. Low earners qualify. Your household income simply does not affect whether your child is eligible.\n\nThis surprises many families. Plenty of federal benefits phase out as income rises. This program does not work that way.\n\nThe only real caps are on contributions. You can add up to $5,000 per year combined, and an employer can put in up to $2,500 inside that same limit. Run the numbers with our [Trump Account calculator](/trump-account/), and weigh the trade-offs in [are Trump Accounts worth it](/guides/trump-account-worth-it/)." },
       { heading: "Your Trump Account Eligibility Checklist", body: "Use this quick checklist to confirm where your child stands. It separates the two eligibility rules so nothing gets mixed up.\n\nTo OPEN an account: the child is under 18, and the child has a valid Social Security number. Parent immigration status does not matter, and there is no income limit.\n\nTo GET the $1,000 SEED: the child is a U.S. citizen, has an SSN, and was born between January 1, 2025 and December 31, 2028. If your child meets the first set but not the second, you can still open and fund the account. You just will not receive the federal seed." }
     ],
@@ -3713,6 +4349,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    updated: "2026-10-08",
     slug: "trump-account-rules",
     title: "Trump Account Rules: Limits, Deposits & Access",
     metaDescription: "Trump account rules explained: the $5,000 annual cap, $1,000 seed, employer limits, S&P 500-only investing, and the lock-until-18 withdrawal rule.",
@@ -3723,7 +4360,7 @@ export const GUIDES: Guide[] = [
       { heading: "Trump account rules at a glance", body: "Trump account rules boil down to a few hard limits you cannot exceed. Learn these first, and the rest falls into place.\n\n- Combined contributions are capped at $5,000 per year.\n- The federal $1,000 seed is separate and does not count against that cap.\n- Money must be invested in a low-cost S&P 500 index fund.\n- Funds are locked until January 1 of the year the child turns 18.\n- After 18, the account is treated like a traditional IRA.\n\nContributions are made with after-tax dollars and are not deductible. Growth inside the account is tax-deferred. To see how the numbers grow, use the [Trump Account calculator](/trump-account/)." },
       { heading: "Trump account contribution limits", body: "The Trump account contribution limit is $5,000 per year, combined across everyone who pays in. That single cap covers deposits from family, relatives, and friends together.\n\nThe $5,000 limit is indexed to inflation after 2027, so it should rise over time. Before then, it stays fixed at $5,000. No single person gets their own separate cap.\n\nEvery deposit counts toward the same annual total. If one grandparent adds $3,000, only $2,000 of room is left for the year. Deposits must wait until the program opens on July 4, 2026." },
       { heading: "The $1,000 seed money rules", body: "The government seeds eligible accounts with a one-time $1,000 deposit, and it does not count against the $5,000 cap. This seed is free federal money, not a contribution you make.\n\nTo qualify for the seed, the child must be a U.S. citizen with a Social Security number, born between January 1, 2025 and December 31, 2028. Kids born in that window get the $1,000 automatically.\n\nChildren born outside that window can still open a Trump account. They just do not receive the $1,000 seed. Check the full [eligibility rules](/guides/trump-account-eligibility/) to confirm who qualifies." },
-      { heading: "Who can contribute, including employers", body: "Anyone can contribute to a child's Trump account, including family, relatives, and friends. All of their deposits share the same $5,000 annual cap.\n\nEmployers can contribute too, up to $2,500 per year. That employer money is counted inside the $5,000 cap, not on top of it.\n\nHere is what that means in practice:\n\n- An employer adds $2,500, leaving $2,500 of room for everyone else.\n- Family and friends fill the rest, up to the shared $5,000 total.\n- The $1,000 federal seed stays separate from all of it.\n\nSo the most an account can receive in one year is $5,000 in contributions, plus the one-time $1,000 seed if the child qualifies." },
+      { heading: "Who can contribute, including employers", body: "Anyone can contribute to a child's Trump account, including family, relatives, and friends. All of their deposits share the same $5,000 annual cap.\n\nEmployers can contribute too, up to $2,500 per year. That employer money is counted inside the $5,000 cap, not on top of it.\n\nHere is what that means in practice:\n\n- An employer adds $2,500, leaving $2,500 of room for everyone else.\n- Family and friends fill the rest, up to the shared $5,000 total.\n- The $1,000 federal seed stays separate from all of it.\n\nSo the most an account can receive in one year is $5,000 in contributions, plus the one-time $1,000 seed if the child qualifies ([when will the $1,000 be deposited](/guides/when-will-trump-account-be-funded/)). For which companies have pledged contributions and how employees get them, see [which employers contribute to Trump Accounts](/guides/trump-account-employer-contributions/)." },
       { heading: "The S&P 500 investment restriction", body: "Trump account money must be held in a low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S. equity index. This is a strict restriction with no exceptions.\n\nYou cannot pick individual stocks, bonds, or international funds. There are no self-directed choices and no active fund managers. The account holds one broad U.S. index fund.\n\nThis keeps costs low and the strategy simple. It also means returns follow the U.S. stock market. Learn more about [what a Trump Account is invested in](/guides/what-are-trump-accounts-invested-in/), or compare growth paths with the [Investment calculator](/investing/)." },
       { heading: "Trump account withdrawal rules and access", body: "Trump account withdrawal rules lock the money until January 1 of the year the child turns 18. No one can take funds out before then, including the parents.\n\nAfter 18, the account is treated like a traditional IRA. Withdrawals are taxed as ordinary income, and early-withdrawal penalties can apply depending on how the money is used.\n\nAt a 7% return, a $1,000 seed alone grows to about $3,513 by age 18. Add $200 a month and it reaches roughly $89,657. Fund the full $5,000 a year from birth and the balance nears $182,980. For the tax side, read [how it's taxed](/guides/trump-account-taxes/)." }
     ],
@@ -3751,6 +4388,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    updated: "2026-10-08",
     slug: "trump-account-taxes",
     title: "Trump Account Taxes: Deductible? How It's Taxed",
     metaDescription: "Trump account taxes explained: contributions are not deductible and growth is tax-deferred, not tax-free. See how withdrawals after 18 are taxed.",
@@ -3759,11 +4397,12 @@ export const GUIDES: Guide[] = [
     introText: "Trump Account taxes confuse most parents, so let's start with the biggest correction: A Trump Account is tax-DEFERRED, not tax-free. Your contributions are not tax-deductible either.\n\nYou fund it with after-tax dollars, the money grows without a yearly tax bill, and taxes come due later. After the child turns 18, it works like a traditional IRA.\n\nThis guide explains every tax question in plain terms. If you want the basics first, see [what a Trump Account is](/guides/trump-accounts/) and [the rules](/guides/trump-account-rules/).",
     sections: [
       { heading: "Are Trump Account contributions tax-deductible?", body: "No, Trump Account contributions are not tax-deductible. You fund the account with after-tax dollars, so contributions never lower your taxable income.\n\nThis is a key difference from a traditional IRA. A traditional IRA contribution can often be deducted. A Trump Account contribution cannot.\n\nDo not expect a write-off for the money you put in. The annual cap is $5,000, and none of it reduces your tax bill. Employers can add up to $2,500, but that sits inside the same $5,000 limit." },
+      { heading: "Do Trump Account Contributions Count Toward the Gift Tax?", body: "Yes, a contribution is a gift to the child, but under the safe harbor in [Rev. Proc. 2026-25](https://www.irs.gov/pub/irs-drop/rp-26-25.pdf) most family contributions require no gift tax return. The maximum $5,000 yearly contribution sits well below the 2026 annual gift tax exclusion of $19,000 per recipient. If your deposit clears the safe harbor, the IRS treats it as a completed gift that qualifies for the annual exclusion rather than a future-interest gift, so you do not file Form 709.\n\nTo qualify for the safe harbor, a contribution must meet all five IRS conditions:\n\n1. The donor is an individual.\n2. The donor's only taxable gifts that year are cash contributions to Trump Accounts, each made before the calendar year the beneficiary turns 18.\n3. Total gifts from that donor to each beneficiary, including the Trump Account contribution, are at or below the annual exclusion.\n4. No gift tax or generation-skipping transfer tax liability results.\n5. No gift tax return is otherwise required or filed for that calendar year.\n\nIf any single condition fails, the safe harbor is lost. When that happens, the donor must file Form 709 and report all Trump Account contributions for that year as future-interest gifts. In an official IRS example, a donor gives a child a $5,000 Trump Account contribution plus a $14,500 cash gift in the same year. That brings the combined gifts to $19,500, which tops the $19,000 cap and triggers a Form 709 filing.\n\nGrandparents and other relatives each hold their own $19,000 annual exclusion per child, so one relative's gifts do not use up another relative's exclusion, although all Trump Account contributions for a child still share the $5,000 yearly cap. Employer contributions to a Trump Account are not covered by the revenue procedure, and the IRS has not published a gift-tax rule for them." },
       { heading: "Is a Trump Account tax-free or just tax-deferred?", body: "A Trump Account is tax-deferred, not tax-free. The growth avoids yearly taxes, but the government still collects later.\n\nWhile the money stays invested, you owe no tax on gains or dividends each year. That lets the balance compound faster than a taxable account.\n\nThe trade-off is timing, not forgiveness. Tax-deferred means you delay the tax bill. Tax-free would mean you never pay it, and that is not how this account works." },
       { heading: "How is a Trump Account taxed after 18?", body: "After the child turns 18, a Trump Account is taxed like a traditional IRA. Withdrawals count as ordinary income in the year they are taken.\n\nThe account stays locked until January 1 of the year the child turns 18. Once unlocked, any money pulled out is added to taxable income at ordinary rates.\n\nEarly-withdrawal penalties can also apply, just as they do with a traditional IRA. So the size of the future tax bill depends on the child's income and when they withdraw. This is why planning the timing matters." },
       { heading: "Trump Account vs Roth IRA vs 529: tax treatment", body: "The three accounts are taxed in very different ways. Here is the quick contrast so you can see where the Trump Account fits.\n\n- Trump Account: contributions after-tax and not deductible, growth tax-deferred, withdrawals taxed as ordinary income later.\n- Roth IRA: contributions after-tax, growth tax-free, qualified withdrawals tax-free.\n- 529 plan: contributions after-tax, growth tax-free when used for qualified school costs.\n\nOnly the Trump Account defers the tax instead of erasing it. A Roth IRA and a 529 can be fully tax-free at withdrawal, while a Trump Account bill simply arrives later. Compare them directly in [Trump Account vs 529](/compare/trump-account-vs-529/) and [Trump Account vs Roth IRA](/compare/trump-account-vs-roth-ira/)." },
       { heading: "Is the $1,000 federal seed taxable to you?", body: "No, the $1,000 federal seed is not taxable income to you. You do not report it as income when the government adds it.\n\nThe seed is also not a contribution you deduct. It simply funds the account at the start.\n\nIt does not count against your $5,000 annual cap either. So the seed sits on top of what you and any employer can add each year." },
-      { heading: "Trump Account on your tax return and filing notes", body: "You do not report a Trump Account's yearly growth on your own tax return. Because growth is tax-deferred, there is no annual gain to declare while the money stays invested.\n\nWhen you open the account, you make a one-time Trump Account \"election.\" That choice sets up how the account is treated.\n\nThe IRS is still finalizing detailed regulations under Notice 2025-68, so exact forms and reporting may change. Follow current IRS guidance and reporting instructions as they are released. For a full walkthrough of limits and timing, see [the rules](/guides/trump-account-rules/), and decide if the trade-offs fit your family in [are Trump Accounts worth it](/guides/trump-account-worth-it/). This is general information, not tax advice; talk to a tax professional about your situation." }
+      { heading: "Trump Account on your tax return and filing notes", body: "You do not report a Trump Account's yearly growth on your own tax return. Because growth is tax-deferred, there is no annual gain to declare while the money stays invested.\n\nWhen you open the account, you make a one-time Trump Account \"election.\" That choice sets up how the account is treated.\n\nThe IRS is still finalizing detailed regulations under Notice 2025-68, so exact forms and reporting may change. Follow current IRS guidance and reporting instructions as they are released. For a full walkthrough of limits and timing, see [the rules](/guides/trump-account-rules/), and decide if the trade-offs fit your family in [are Trump Accounts worth it](/guides/trump-account-worth-it/). This is general information, not tax advice; talk to a tax professional about your situation. If you need to make the account or $1,000 election on your return, see our [Form 4547 walkthrough](/guides/form-4547/)." }
     ],
     tools: [
       { href: "/trump-account/", label: "Trump Account calculator" },
@@ -3787,6 +4426,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    updated: "2026-10-08",
     slug: "what-are-trump-accounts-invested-in",
     title: "What Are Trump Accounts Invested In?",
     metaDescription: "What are Trump Accounts invested in? One low-cost S&P 500 U.S. stock index fund only. See the rules, restrictions, and long-run growth context.",
@@ -3794,8 +4434,9 @@ export const GUIDES: Guide[] = [
     cardBlurb: "Every Trump Account holds one low-cost S&P 500 index fund. Here is why it is restricted and what that means for growth.",
     introText: "What are Trump Accounts invested in? Each Trump Account must hold a single low-cost fund that tracks the S&P 500 or a similar broad U.S. stock index. You can't choose individual stocks, bonds, or international funds. The money simply follows the U.S. stock market.\n\nThis single-fund design keeps fees low and the strategy straightforward. A \"Trump investment account\" is simply another name for the same account. This guide explains what the money buys, why the options are limited, and how those limits shape long-run growth.",
     sections: [
-      { heading: "What are Trump Accounts invested in?", body: "Every Trump Account is invested in one low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. That is the only allowed holding. There are no other investment choices to make.\n\nThe S&P 500 is a basket of about 500 large U.S. companies. Buying an index fund means you own a slice of all of them at once. Your balance rises and falls with the broad U.S. stock market.\n\nThis is a hands-off design. You do not build a portfolio or trade inside the account. One broad index fund does the work. Learn more about [what a Trump Account is](/guides/trump-accounts/) if you are new to the program." },
+      { heading: "What are Trump Accounts invested in?", body: "Every Trump Account is invested in one low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. That is the only investment the account can buy. There are no other investment choices to make.\n\nThe S&P 500 is a basket of about 500 large U.S. companies. Buying an index fund means you own a slice of all of them at once. Your balance rises and falls with the broad U.S. stock market.\n\nThis is a hands-off design. You do not build a portfolio or trade inside the account. One broad index fund does the work. Learn more about [what a Trump Account is](/guides/trump-accounts/) if you are new to the program." },
       { heading: "Trump account investment restrictions: what you cannot buy", body: "Trump account investment restrictions are strict: you can only hold one broad U.S. index fund. You cannot pick individual stocks like a single tech company. You cannot add bonds, international funds, or sector bets.\n\nThe account is not self-directed. That means no day trading, no crypto, and no custom mix. Your only real choice is which qualifying S&P 500-style fund the provider offers.\n\nThese limits are the same for every child. The law, IRC 530A, requires a low-cost fund tracking a U.S.-equity index. See [the rules](/guides/trump-account-rules/) for the full contribution and eligibility details." },
+      { heading: "Can Donors Give Individual Stocks?", body: "Yes, in one narrow case: under temporary rules published September 30, 2026, governments and 501(c)(3) charities can donate shares of U.S.-listed companies to a whole group of children, and the trustee holds those shares for up to five years before selling them into the index fund. Family money still goes only into the index fund.\n\nUnder the [temporary regulations](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), eligible donors are strictly limited to the United States or the District of Columbia, state or local governments, Indian tribal governments, and 501(c)(3) charities, including through donor-advised funds. Individuals and companies cannot give stock directly. They can do so only by routing the gift through an eligible charity.\n\nThe shares never go to an individual child of the donor's choosing. Instead, donations flow through the [U.S. Department of the Treasury](https://home.treasury.gov/) as a general funding contribution split equally across an entire qualified class, such as all beneficiaries under 18, those born in specified years, or children in an area with at least 5,000 eligible kids. Families cannot select the stock, and they cannot refuse the gift. The stock itself must be issued by a domestic corporation, trade on a registered national exchange, and carry no pre-existing transfer restrictions.\n\nThe trustee must hold the donated shares until the earlier of five years after receipt or December 31 of the year the child turns 17. Early sales are barred; if shares are sold early, the trustee must repurchase the same stock as soon as practicable. Once the holding window ends, the trustee sells the shares within a reasonable time and reallocates the proceeds into an eligible broad-market index fund.\n\nTreasury says the statutory investment limits apply only to what an account buys, so they do not restrict what a donor contributes. The rule carries three risks for families: one company's shares are not diversified, the trustee cannot sell them to cut losses during the hold, and families have no way to decline the gift. Christine Benz of [Morningstar](https://www.morningstar.com/) called the setup unusual, while Michael Dell dismissed such criticism as nonsense. Public comments run through roughly November 30, 2026, so final rules could alter these terms." },
       { heading: "Why the trump account investment options are limited", body: "The trump account investment options are limited on purpose, to keep fees low and the strategy simple. Index funds charge tiny expense ratios. Low fees leave more money to grow over 18 years.\n\nSimplicity also protects families. There is no pressure to time the market or pick winners. Parents cannot make costly trading mistakes inside the account.\n\nBroad index investing is a widely respected approach. The SEC notes that index funds offer low costs and instant diversification. That fits an account meant to run untouched from birth until age 18." },
       { heading: "How does the trump investment account work?", body: "The trump investment account works by holding contributions in one U.S. stock index fund until the child turns 18. Money goes in after-tax, so contributions are not tax-deductible. Growth is tax-deferred while it sits in the account.\n\nContributions are capped at $5,000 per year combined. An employer can add up to $2,500 within that cap. A one-time $1,000 government seed for U.S.-citizen kids born 2025 through 2028 does not count against the cap.\n\nThe balance is locked until January 1 of the year the child turns 18. After that, it is taxed like a traditional IRA, at ordinary income rates on withdrawals. For a full breakdown, see [how it's taxed](/guides/trump-account-taxes/)." },
       { heading: "Trump account return on investment: what to expect", body: "Your trump account return on investment follows the U.S. stock market, so there is no guaranteed rate. Some years the fund rises. Other years it falls. Over long periods, U.S. stocks have historically averaged roughly 7% per year, but the past does not promise the future.\n\nWe use 7% only as an assumed illustration below, not a promise. Markets are volatile, and your real return could be higher or lower. Treat any single number as a rough estimate.\n\nHere is illustrative growth at an assumed 7% average return. A $1,000 seed left alone grows to about $3,513 by age 18. Add $200 a month and it reaches about $89,657. Contribute the full $5,000 a year from birth and it could reach about $182,980.\n\nRun your own numbers with the [Trump Account calculator](/trump-account/) or a general [investment calculator](/investing/) to test different amounts and returns." },
@@ -3807,14 +4448,14 @@ export const GUIDES: Guide[] = [
     ],
     faqs: [
       { question: "What are Trump Accounts invested in?", answer: "Trump Accounts are invested in one low-cost fund that tracks the S&P 500 or a similar broad U.S. stock index. That single fund is the only allowed holding. Your balance rises and falls with the U.S. stock market." },
-      { question: "Can I pick individual stocks in a Trump Account?", answer: "No. You cannot pick individual stocks in a Trump Account. The account holds only one broad U.S. index fund. It is not self-directed, so there is no stock picking or trading." },
+      { question: "Can I pick individual stocks in a Trump Account?", answer: "No. You cannot pick individual stocks in a Trump Account. Family money goes only into one broad U.S. index fund, and the one exception is shares a government or charity donates to a whole group of children under rules published September 30, 2026. It is not self-directed, so there is no stock picking or trading." },
       { question: "What are the Trump account investment restrictions?", answer: "The main restriction is that the account may hold only a low-cost fund tracking a U.S.-equity index. No bonds, international funds, sector funds, crypto, or single stocks are allowed. Every account follows the same rule under IRC 530A." },
       { question: "What is the Trump account return on investment?", answer: "The return follows the U.S. stock market, so there is no guaranteed rate. U.S. stocks have historically averaged around 7% per year over long periods, but returns vary and markets fall in some years. Any projection is an estimate, not a promise." },
       { question: "Is a Trump investment account the same as a Trump Account?", answer: "Yes. \"Trump investment account\" is just another informal name for the Trump Account. Both refer to the same program created by the 2025 One Big Beautiful Bill. The investment inside is the same single index fund." },
       { question: "Why can't I choose my own investments?", answer: "The choices are limited to keep fees low and the strategy simple. One low-cost index fund offers broad diversification with minimal cost. It also removes the risk of costly trading mistakes over the account's long life." },
       { question: "How much could a Trump Account grow?", answer: "At an assumed 7% average annual return, a $1,000 seed alone could reach about $3,513 by age 18. Adding $200 a month could reach about $89,657. Contributing the $5,000 yearly cap from birth could reach about $182,980. These are illustrations, not guarantees." },
       { question: "When can the money be used?", answer: "The balance is locked until January 1 of the year the child turns 18. After that, withdrawals are taxed like a traditional IRA, at ordinary income rates. Contributions are made after-tax and grow tax-deferred until then." },
-      { question: "What specific index fund does my Trump Account actually invest in?", answer: "No single fund applies to every Trump Account, because federal law names the index rather than an individual investment product. Internal Revenue Code (IRC) Section 530A requires the portfolio to hold a low-cost mutual fund or exchange-traded fund (ETF) that tracks the S&P 500 or a similar broad U.S.-equity index. Each financial institution chooses its own qualifying fund that meets that benchmark. The Bank of New York Mellon (BNY) serves as the Treasury's financial agent, and Robinhood operates as the initial trustee. Families can also select other [approved trustees](/guides/trump-accounts/), including Fidelity, Schwab, Vanguard, and Bank of America. Because each institution picks its own eligible fund, the exact ticker and expense ratio vary by provider. Check your chosen provider's account materials for the specific fund and ticker assigned to your account." }
+      { question: "What specific index fund does my Trump Account actually invest in?", answer: "No single fund applies to every Trump Account, because federal law names the index rather than an individual investment product. Internal Revenue Code (IRC) Section 530A requires the portfolio to hold a low-cost mutual fund or exchange-traded fund (ETF) that tracks the S&P 500 or a similar broad U.S.-equity index. Each financial institution chooses its own qualifying fund that meets that benchmark. The Bank of New York Mellon (BNY) serves as the Treasury's financial agent, and Robinhood operates as the initial trustee. Other firms, including Fidelity and Vanguard, plan to accept rollovers once Treasury issues guidance, but none is live as of October 2026; see our [which firms will hold Trump Accounts](/compare/trump-account-trustees/). Because each institution picks its own eligible fund, the exact ticker and expense ratio vary by provider. Check your chosen provider's account materials for the specific fund and ticker assigned to your account." }
     ],
     sources: [
       { label: "IRS — Trump Accounts", url: "https://www.irs.gov/trumpaccounts" },
@@ -9712,6 +10353,7 @@ export const GUIDES: Guide[] = [
   // with no existing dedicated page. register: operator · medium: text → text ·
   // page type: explainer/spoke (1200-word floor). ────────────────────────────
   {
+    updated: "2026-10-08",
     slug: "trump-account-scams",
     title: "Is TrumpAccounts.gov Legit? Trump Account Scams to Know",
     metaDescription:
@@ -9735,7 +10377,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "Fake Trump Account Apps",
-        body: "An app claiming to be the official Trump Accounts app is fake unless it is linked directly from TrumpAccounts.gov or published by one of the approved trustees, such as [Fidelity](https://www.fidelity.com), [Charles Schwab](https://www.schwab.com), [Vanguard](https://investor.vanguard.com), [Bank of America](https://www.bankofamerica.com), or [Robinhood](https://robinhood.com), the initial trustee at launch.\n\nCheck the developer name listed in the app store before you install anything. An app from an unfamiliar developer, with only a handful of reviews, or with an added word like \"Official\" or \"Pro\" in the name to sound more legitimate, is a common way scammers copy a real government rollout. A brand-new app with thousands of five-star reviews posted in the same week is another red flag, since real download histories build up slowly. Uninstall it if it asks for your child's Social Security number before you have confirmed, through TrumpAccounts.gov itself, that the app is one of the approved ways to manage the account.",
+        body: "An app claiming to be the official Trump Accounts app is fake unless it is linked directly from TrumpAccounts.gov or published by [Robinhood](https://robinhood.com), the only trustee that holds Trump Accounts as of October 2026.\n\nCheck the developer name listed in the app store before you install anything. An app from an unfamiliar developer, with only a handful of reviews, or with an added word like \"Official\" or \"Pro\" in the name to sound more legitimate, is a common way scammers copy a real government rollout. A brand-new app with thousands of five-star reviews posted in the same week is another red flag, since real download histories build up slowly. Uninstall it if it asks for your child's Social Security number before you have confirmed, through TrumpAccounts.gov itself, that the app is one of the approved ways to manage the account. To find and use the real one, see our guide to the [official Trump Accounts app](/guides/trump-account-app/).",
       },
       {
         heading: "What a Legitimate Contact Never Asks For",
@@ -9755,7 +10397,7 @@ export const GUIDES: Guide[] = [
       { question: "Is a text or email asking me to verify my Trump Account real?", answer: "No. TrumpAccounts.gov does not send unsolicited texts or emails asking you to click a link and re-enter your child's Social Security number. Go directly to TrumpAccounts.gov in your browser instead of clicking the link in the message." },
       { question: "Do I have to pay a fee to open a Trump Account or get the $1,000 seed?", answer: "No. Opening a Trump Account is free, and the $1,000 federal seed for an eligible child is a deposit the government owes, not something a payment releases. Any request for a fee, gift card, or wire transfer to release the seed is a scam." },
       { question: "Is a .com site with a name like TrumpAccounts the same as the official program?", answer: "No. The official program uses the .gov domain, and any .com, .net, or misspelled copy of TrumpAccounts.gov is not the government's site, even if the design looks identical." },
-      { question: "What should I do if I think I gave my child's information to a scam site?", answer: "Contact your child's actual trustee, such as Fidelity, Schwab, Vanguard, Bank of America, or Robinhood, to flag the account. Freeze your child's credit with Equifax, Experian, and TransUnion, and report the scam at ReportFraud.ftc.gov." },
+      { question: "What should I do if I think I gave my child's information to a scam site?", answer: "Contact Robinhood, which holds every Trump Account as of October 2026, to flag the account. Freeze your child's credit with Equifax, Experian, and TransUnion, and report the scam at ReportFraud.ftc.gov." },
       { question: "Will the government call or text me about my child's $1,000 seed?", answer: "No. The Treasury does not open a Trump Account application over an inbound call or text, and it will not call to tell you the seed is \"ready\" and needs a payment to release. A caller ID showing a government-sounding name or a Washington, D.C. area code can be faked and is not proof the call is real." },
     ],
     sources: [

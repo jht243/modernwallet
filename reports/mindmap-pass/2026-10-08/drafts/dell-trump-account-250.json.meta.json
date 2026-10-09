@@ -1,0 +1,47 @@
+{
+ "slug": "dell-trump-account-250",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1735,
+ "floor": 1200,
+ "input_tokens": 21591,
+ "output_tokens": 3331,
+ "thinking_tokens": null,
+ "cached_tokens": 17359,
+ "est_cost_usd": 0.017,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1735,
+  "numbers_not_in_facts": [
+   "118",
+   "2023"
+  ],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17778
+  }
+ },
+ "seconds": 29.0,
+ "response_id": "v1TIaqzxBPPg8QG_9r7RAw",
+ "generated_at": "2026-10-08T21:43:39-0500"
+}

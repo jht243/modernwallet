@@ -1,0 +1,86 @@
+{
+ "slug": "trump-account-employer-contributions",
+ "title": "Trump Account Employer Contribution: Matches and Rules",
+ "metaDescription": "See which companies match Trump Accounts and how a Trump Account employer contribution works under IRC Section 128, including caps, tax rules, and steps.",
+ "h1": "Trump Account Employer Contribution: Matches and Rules",
+ "cardBlurb": "Employers can contribute up to $2,500 per worker toward a child's Trump Account under IRC Section 128. See pledged matches, tax rules, and how to claim it.",
+ "introText": "Employers can deposit up to $2,500 per year into a dependent child's Trump Account on a federally income-tax-free basis under Internal Revenue Code Section 128. At ModernWallet, we track which employers have publicly pledged money to these accounts and what an employee has to do to get it. This workplace benefit sits inside the total $5,000 annual contribution limit per child, giving parents a direct way to build the balance without funding every dollar themselves.\n\nOver 50 companies have publicly pledged contributions as of August 2026, though most employers have not yet established a plan.\n\nA parent has to claim the child's account first, because an employer cannot deposit into an unclaimed account.",
+ "sections": [
+  {
+   "heading": "Companies That Have Pledged Trump Account Contributions",
+   "body": "Dozens of major corporations have publicly announced pledges to fund Trump Accounts for their employees' children, most often offering to match the government's initial $1,000 seed deposit. These pledges are as publicly reported, with the date and source for each, as of October 2026; confirm with your HR department before counting on a deposit.\n\n| Company | What was pledged | Announced | Source |\n|---|---|---|---|\n| Robinhood | Match the $1,000 for eligible employees' children | Dec 24, 2025 | [InvestmentNews](https://www.investmentnews.com/retirement-planning/robinhood-schwab-to-match-1000-contribution-for-employees-trump-accounts/263687) |\n| Charles Schwab | Match the $1,000 | Dec 24, 2025 | [InvestmentNews](https://www.investmentnews.com/retirement-planning/robinhood-schwab-to-match-1000-contribution-for-employees-trump-accounts/263687) |\n| BlackRock | $1,000 match | Dec 24, 2025 | InvestmentNews |\n| BNY | $1,000 match | Dec 24, 2025 | InvestmentNews |\n| Dell Technologies | Match the $1,000 for children of U.S. employees born 2025 to 2028 | Dec 2025 | [CBS News](https://www.cbsnews.com/news/michael-dell-25-million-children-250-each-trump-accounts) |\n| JPMorgan Chase | $1,000 per eligible child born 2025 to 2028 | Jan 28, 2026 | [BenefitNews](https://www.benefitnews.com/articles/jpmorgan-bank-of-america-matching-trump-account-contributions) |\n| Bank of America | $1,000 match plus pre-tax payroll deductions for staff with children under 18 | Jan 2026 | [BenefitNews](https://www.benefitnews.com/articles/jpmorgan-bank-of-america-matching-trump-account-contributions) |\n| Wells Fargo | $1,000 match | Jan 2026 | BenefitNews |\n| Nvidia | Match the government deposit | Jan 28, 2026 | [The Hill via Yahoo Finance](https://finance.yahoo.com/news/companies-matching-trump-account-contributions-185540814.html) |\n| Uber | Match the government deposit | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Comcast | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Chipotle | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Intel | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Coinbase | Match the $1,000 | Jan 28, 2026 | The Hill via Yahoo Finance |\n| Goldman Sachs | One-time $1,000 for employees' children born 2025 to 2028 | Jul 2, 2026 | [Fox Business](https://www.foxbusiness.com/economy/goldman-sachs-contribute-1000-trump-accounts-eligible-children-employees) |\n| Citi | At least matches the $1,000 | Jul 2026 | Fox Business |\n| Vanguard | Employees may direct a $1,500 employer contribution starting 2027 | Apr 2026 | Vanguard; [Treasury SB-0602](https://home.treasury.gov/news/press-releases/sb0602) |\n| Visa | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| Franklin Templeton | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| State Street | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n| Chime | Match for eligible employees' children | Aug 11, 2026 | Treasury SB-0602 |\n\nTotal employer commitments counted between 55 and roughly 72 across independent tracking tallies by early October 2026, according to [CNBC](https://www.cnbc.com/2026/10/02/trump-accounts-funding.html). Most corporate programs target children who qualify for the federal seed."
+  },
+  {
+   "heading": "How Employer Contributions Work Under Section 128",
+   "body": "Internal Revenue Code Section 128 allows an employer to contribute up to $2,500 per year per employee, rather than per child. If a worker has two dependent children, the employer's total tax-free contribution cap across both children remains $2,500. Conversely, if two spouses work for participating companies, each parent can receive up to $2,500 from their respective employer, as outlined by [Chase](https://www.chase.com/personal/investments/trump-accounts).\n\nEvery employer dollar counts directly toward the child's annual $5,000 contribution ceiling. If an employer deposits $2,500 into a child's account, family members can only contribute an additional $2,500 during that calendar year. Review [the overall limits](/guides/trump-account-rules/) to track total household contributions.\n\nEmployer contributions are only partly tax-free. Contributions under Section 128 are excluded from federal income tax withholding, but they remain subject to Federal Insurance Contributions Act taxes for Social Security and Medicare. Employers report these amounts on Form W-2 in Box 12 using code TA, as detailed by [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/08/irs-issues-proposed-regulations-on-employer-contributions-to-trump-accounts-and-nondiscrimination-rules-for-dependent-care-assistance-programs). The statutory $2,500 cap is scheduled for inflation indexing after 2027."
+  },
+  {
+   "heading": "Steps to Receive an Employer Match",
+   "body": "An employer cannot deposit anything until the child's account is claimed, so do these steps in order.\n\n1. Claim the child's account. Parents must claim the account in the [Trump Accounts app](https://apps.apple.com/us/app/trump-accounts/id6767364919) as directed by the [Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642). Employers cannot contribute to an unclaimed account. Follow [our claiming walkthrough](/guides/how-to-claim-a-trump-account/) if you have not finished this initial setup.\n2. Inquire with human resources. Ask your benefits team if the company maintains a formal Trump Account Contribution Program.\n3. Complete self-certification paperwork. Treasury guidance requires employees to self-certify the child's age and dependent status; the employer separately validates that the account is a Trump Account.\n4. Confirm account deposits. Check the child's account for the deposit, and keep family plus employer money within the $5,000 annual cap."
+  },
+  {
+   "heading": "Employer Plan Rules and Compliance Requirements",
+   "body": "Businesses offering this benefit must establish a separate written document titled a Trump Account Contribution Program. The Department of the Treasury issued proposed regulations on August 11, 2026, establishing compliance obligations for workplace programs, with public comments closing in September 2026. Because these rules remain proposed rather than final, companies must monitor subsequent guidance from the [Internal Revenue Service](https://www.irs.gov/trumpaccounts).\n\nUnder proposed rules, employers must issue formal notices to staff, deliver annual benefit statements, and report contributions directly to the account trustee. Programs must also satisfy nondiscrimination standards to ensure contributions do not disproportionately favor highly compensated employees. The proposed rules include a safe harbor for employers that match the $1,000 pilot contribution.\n\nEmployers operating cafeteria plans can allow staff to make pre-tax payroll deductions into their child's account. However, pre-tax salary reductions can only fund an account established for a legal dependent."
+  },
+  {
+   "heading": "Workplace Adoption Rates Across Employers",
+   "body": "Widespread availability of workplace matching remains limited. An April 2026 survey by Mercer, reported by [Fortune](https://fortune.com/2026/07/27/what-employers-will-contribute-to-trump-accounts-chipotle-bank-of-america-dell-uber/), found that approximately two-thirds of surveyed employers had no plans to contribute to employee Trump Accounts. Only 4 percent of employers indicated an intent to provide funding.\n\nMost of the pledges in the table above come from banks, brokerages and technology companies. Parents should not assume workplace contributions exist without formal confirmation from their benefits administrator."
+  },
+  {
+   "heading": "Options When Your Employer Does Not Match",
+   "body": "Families working for employers without a matching plan retain full access to standard funding methods. Parents, relatives, and external donors can contribute up to the full $5,000 annual limit directly. Learn about eligibility baselines in our [guide to account qualification](/guides/trump-account-eligibility/).\n\nU.S.-citizen children with a valid Social Security number born from January 1, 2025, through December 31, 2028, qualify for the $1,000 federal seed whether or not an employer contributes. Some children born 2016 through 2024 also get the Dells' separate $250 deposit; see [who qualifies for the Dell $250](/guides/dell-trump-account-250/). Evaluate prospective investment outcomes using our [Trump Account calculator](/trump-account/) to project family savings milestones over an 18-year horizon."
+  }
+ ],
+ "tools": [
+  {
+   "href": "/trump-account/",
+   "label": "Trump Account calculator"
+  }
+ ],
+ "faqs": [
+  {
+   "question": "Does an employer contribute to a Trump Account?",
+   "answer": "An employer can contribute up to $2,500 per year per employee under Internal Revenue Code Section 128, but contributions are entirely optional. Companies must establish a written Trump Account Contribution Program, and employees must claim their child's account before an employer can make a deposit."
+  },
+  {
+   "question": "Which banks are matching Trump accounts?",
+   "answer": "Several major banks have publicly pledged to match the government's $1,000 deposit, including JPMorgan Chase, Bank of America, Wells Fargo, BNY, Goldman Sachs, and Citi. Specific eligibility conditions vary by firm, and workers should confirm current policies with their benefits department."
+  },
+  {
+   "question": "Is an employer Trump Account contribution taxable?",
+   "answer": "Employer contributions up to $2,500 are exempt from federal income tax withholding under Section 128. However, the money remains subject to FICA taxes for Social Security and Medicare. Employers report these contributions on Form W-2 in Box 12 using code TA."
+  },
+  {
+   "question": "Can both parents' employers contribute?",
+   "answer": "Yes. The $2,500 statutory cap applies per employee rather than per child. If two working spouses are employed by companies offering matching programs, each parent can receive up to $2,500 from their employer, provided the total annual deposits into the child's account do not exceed $5,000."
+  },
+  {
+   "question": "Does the employer contribution count toward the $5,000 limit?",
+   "answer": "Yes. Any workplace contribution counts directly toward the child's $5,000 annual statutory limit. If an employer deposits $1,000, family members and outside contributors can add no more than $4,000 during that same calendar year."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Treasury Press Release SB-0602",
+   "url": "https://home.treasury.gov/news/press-releases/sb0602"
+  },
+  {
+   "label": "Treasury Press Release SB-0642",
+   "url": "https://home.treasury.gov/news/press-releases/sb0642"
+  },
+  {
+   "label": "IRS Trump Accounts Information",
+   "url": "https://www.irs.gov/trumpaccounts"
+  },
+  {
+   "label": "Mayer Brown Analysis of Proposed Employer Regulations",
+   "url": "https://www.mayerbrown.com/en/insights/publications/2026/08/irs-issues-proposed-regulations-on-employer-contributions-to-trump-accounts-and-nondiscrimination-rules-for-dependent-care-assistance-programs"
+  }
+ ],
+ "metaTitle": "",
+ "subtitle": "",
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

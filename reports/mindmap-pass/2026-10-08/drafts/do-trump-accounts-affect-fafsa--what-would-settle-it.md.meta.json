@@ -1,0 +1,37 @@
+{
+ "slug": "do-trump-accounts-affect-fafsa--what-would-settle-it",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 201,
+ "floor": 0,
+ "input_tokens": 18912,
+ "output_tokens": 262,
+ "thinking_tokens": null,
+ "cached_tokens": 17359,
+ "est_cost_usd": 0.0034,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 201,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17778
+  }
+ },
+ "seconds": 4.2,
+ "response_id": "slfIaqmHO9L6qtsPgq_vuAU",
+ "generated_at": "2026-10-08T21:55:49-0500"
+}

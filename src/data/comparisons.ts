@@ -30,6 +30,165 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── mindmap-pass 2026-10-08 ──
+  {
+    "updated": "2026-10-08",
+    "slug": "trump-account-trustees",
+    "title": "Trump Account Trustees: Robinhood vs Fidelity, Vanguard",
+    "metaDescription": "Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.",
+    "targetKeyword": "trump account trustees",
+    "optionA": "Robinhood (Initial Trustee)",
+    "optionB": "Other Brokers (Fidelity, Vanguard, Schwab, J.P. Morgan)",
+    "h1": "Trump Account Trustees: Robinhood vs Fidelity, Vanguard",
+    "introText": "Every Trump Account is held at Robinhood Securities, the initial trustee the [U.S. Treasury](https://home.treasury.gov/news/press-releases/sb0642) chose, and as of October 2026 no other firm can hold one. At ModernWallet, we track account rules and custody options to help parents decide when to keep balances in place and when to transfer them.\n\n[Fidelity](https://newsroom.fidelity.com/) and [Vanguard](https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-to-serve-as-alternate-fund-partner-for-trump-accounts-070126.html) say they plan to accept rollovers once Treasury issues guidance, [J.P. Morgan](https://www.chase.com/personal/investments/trump-accounts) says rollovers to it are not yet available, and Schwab has said only that transfers should eventually be possible. None of them is live as of October 2026. A transfer cannot occur until Treasury releases official rollover guidance.\n\nFor now, keeping the account at Robinhood is the only functional choice. Robinhood charges Trump Accounts no other account fees and no transfer-out fee, and the reported fund menu costs about 0.02% to 0.03% a year. Seeing the account next to your own brokerage accounts has to wait until another firm opens rollovers.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Available today",
+          "a": "Yes; contributions opened July 4, 2026",
+          "b": "No, pending Treasury guidance"
+        },
+        {
+          "dimension": "Who chooses it",
+          "a": "Designated automatically by Treasury",
+          "b": "Selected by parent once rollovers go live"
+        },
+        {
+          "dimension": "Account fees",
+          "a": "No other account fees charged",
+          "b": "Not yet published"
+        },
+        {
+          "dimension": "Fund offered",
+          "a": "SPYM (reported default); menu about 0.02% to 0.03%",
+          "b": "Not yet published"
+        },
+        {
+          "dimension": "Transfer-out fee",
+          "a": "$0 per customer agreement",
+          "b": "Not yet published"
+        },
+        {
+          "dimension": "How to move there",
+          "a": "Default landing place from Treasury app",
+          "b": "Full trustee-to-trustee transfer via receiving firm"
+        },
+        {
+          "dimension": "Uses your existing login/app",
+          "a": "Managed via official Trump Accounts app",
+          "b": "Expected to consolidate into existing logins"
+        },
+        {
+          "dimension": "Status certainty",
+          "a": "Confirmed operating initial trustee",
+          "b": "Expressed intent; awaiting federal guidance"
+        },
+        {
+          "dimension": "Employer and family contributions",
+          "a": "Subject to standard $5,000 yearly legal cap",
+          "b": "Subject to standard $5,000 yearly legal cap"
+        }
+      ]
+    },
+    "verdict": "Stay with Robinhood Securities today because it is the only live trustee operating the program, charges zero account maintenance fees, and assesses no fee to transfer out later. Consider moving your balance to another broker in the future only if that firm officially launches rollovers, keeps investment expenses equal to or lower than the current index funds, and allows you to view the child's account under your primary household login. Remember that federal rules allow only one funded account per child at any time. Staying put long term is the wrong fit if you want every family account under one login and your own broker later opens rollovers at the same or lower fund cost.",
+    "sections": [
+      {
+        "heading": "Which Firms Can Hold a Trump Account Today",
+        "content": "Only Robinhood Securities is authorized to hold an open Trump Account as of October 2026. Treasury named Robinhood Securities the initial trustee for every account. Fidelity, Vanguard, Schwab and J.P. Morgan have each said something about future rollovers, but none of them accepts a Trump Account transfer yet.\n\nEach firm's status as of October 2026, from its own statements or news reports:\n\n| Firm | Status as of October 2026 | What They Have Said | Source Name |\n| --- | --- | --- | --- |\n| Robinhood Securities, LLC | Live initial trustee | Designated initial trustee; customer agreement active | [Robinhood Agreement](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf) |\n| Fidelity Investments | Not live | Plans rollover support once Treasury issues guidance | [Fidelity Newsroom](https://newsroom.fidelity.com/) |\n| Vanguard | Not live | Intends to support rollovers upon Treasury guidance | [Vanguard Press Release](https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-to-serve-as-alternate-fund-partner-for-trump-accounts-070126.html) |\n| J.P. Morgan Chase | Not live | States rollovers are not yet available | [J.P. Morgan Portal](https://www.chase.com/personal/investments/trump-accounts) |\n| Charles Schwab | Not live | Transfers should eventually be possible; no formal date | Secondary reporting |\n| Bank of America | Not live | Some websites list it as an approved trustee; its announced role is an employee match | [BenefitNews](https://www.benefitnews.com/articles/jpmorgan-bank-of-america-matching-trump-account-contributions) |\n\nAnyone encountering an online list advertising Fidelity or Schwab as active places to open a child's account should know those descriptions are incorrect. Every child starts under the custody of Robinhood Securities."
+      },
+      {
+        "heading": "Why Every Account Starts at Robinhood",
+        "content": "On April 6, 2026, Treasury designated BNY as its financial agent. Robinhood Securities, LLC is the brokerage and initial trustee for every Trump Account, according to Robinhood's Trump Account customer agreement.\n\nTreasury retains administrative control of the front-end user experience through its official mobile application. Parents do not create these accounts on a retail brokerage website. Contributions opened on July 4, 2026.\n\nOur guide to [Trump Account rules](/guides/trump-account-rules/) covers the contribution caps."
+      },
+      {
+        "heading": "Fees and Investment Funds at Robinhood",
+        "content": "The Robinhood Trump Account customer agreement dated September 30, 2026, explicitly states that Robinhood does not charge other account fees to maintain the balance. Robinhood also charges no transfer-out fee if a parent decides to move the assets to another trustee later. This zero-fee transfer policy prevents families from feeling trapped once competitors launch their own offerings.\n\nInvestments inside the account are restricted by statutory requirements to broad equity index funds. News reporting from [InvestmentNews](https://www.investmentnews.com/retirement-planning/treasury-unveils-trump-accounts-fund-lineup-with-blackrock-vanguard/267252) on July 1, 2026, indicated that the default portfolio asset is the SPDR Portfolio S&P 500 ETF, trading under the ticker symbol SPYM. Treasury designated additional alternate funds including IVV, VTI, SPTM, and ITOT. Until federal administrators enable individual selection inside the portal, initial contributions remain inside the default fund.\n\nExpense ratios on the reported fund menu run about 0.02% to 0.03% a year, well under the 0.10% legal cap. To see how these index portfolios compare across asset classes, review our breakdown of [what Trump Accounts are invested in](/guides/what-are-trump-accounts-invested-in/)."
+      },
+      {
+        "heading": "What Other Brokers Have Said About Rollovers",
+        "content": "As of October 2026, Fidelity, Vanguard, Schwab and J.P. Morgan Chase have each said something about future rollovers, and none of them accepts one yet. On June 23, 2026, Fidelity announced that it plans to support Trump Account rollovers once the Treasury Department publishes formal operating guidance. Vanguard made a similar announcement on July 1, 2026, noting its intention to accept transfers while highlighting that the Vanguard Total Stock Market ETF, or VTI, serves as a designated alternate fund. J.P. Morgan Chase displays a plain notice on its investment portal stating that rollovers to the bank are not yet available.\n\nA secondary report in early October 2026 said Charles Schwab and E*TRADE expect transfers to be possible eventually, but neither firm has committed. The firms that gave a reason are waiting for Treasury rollover guidance, and as of October 8, 2026, none had been published.\n\nThat makes any website list of \"approved trustees\" naming Fidelity, Schwab, Vanguard or Bank of America premature. Parents cannot call Vanguard or walk into a Bank of America branch today to transfer their child's account."
+      },
+      {
+        "heading": "How an Account Rollover Will Work",
+        "content": "Moving a balance to a different financial institution in the future will require executing a qualified rollover contribution directly between trustees. Under [IRS](https://www.irs.gov/trumpaccounts) Notice 2025-68 and the Robinhood customer agreement, a parent must initiate the transfer through the receiving firm rather than requesting a cash payout.\n\nThe mechanics follow strict regulatory constraints:\n\n* A qualified rollover must occur as a direct trustee-to-trustee transaction between financial institutions.\n* A child is legally permitted to hold only one funded Trump Account at any given time.\n* The originating account at Robinhood Securities must be completely closed once the funds transfer to the new firm.\n* The receiving institution must qualify under federal law as a chartered bank or an IRS-approved nonbank trustee.\n\nUntil Treasury issues rollover guidance and a receiving firm opens transfers, there is no way to start one."
+      },
+      {
+        "heading": "Deciding Whether to Move Later",
+        "content": "When other financial institutions begin accepting rollovers, compare the specific terms before requesting a transfer. A family evaluating a move can check these five items:\n\n1. Confirm the destination institution is a bank or an IRS-approved nonbank trustee under federal rules.\n2. The receiving firm must say on its own site that it accepts Trump Account rollovers; a third-party list is not enough.\n3. Compare investment costs to ensure the firm's fund options match or beat the reported 0.02% to 0.03% expense ratios on the current menu, while staying below the 0.10% statutory limit.\n4. Review the receiving institution's fee schedule to ensure it charges no recurring maintenance or administrative fees, matching [Robinhood Securities, LLC's agreement](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf), which charges no account fees and no transfer-out fee.\n5. Plan to complete a full transfer and close the existing account, because federal rules permit only one funded Trump Account per child at a time.\n\nSwitching gains little for a family that holds only the initial deposit and adds nothing. The balance is small, and Robinhood charges no account fees."
+      },
+      {
+        "heading": "What Parents Should Do Right Now",
+        "content": "Claim your child's account in the official app first. Then manage it where it is for now. If your child was auto-enrolled under federal initiatives, you must verify your identity to take administrative control. Treasury's October 1, 2026 release, SB-0642, says the account must be claimed before you can manage it or receive family contributions. Follow our step-by-step instructions on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/) to complete the identity process.\n\nOur [Trump Account app](/guides/trump-account-app/) guide covers what you can do once the account is claimed. For how accounts were set up in the first place, see [how to open a Trump Account](/guides/how-to-open-a-trump-account/).\n\nIf you prefer to invest additional family savings through an institution where you already hold personal accounts, consider running a separate vehicle alongside the federal program. A custodial account is one option. Our [Trump Account vs custodial account](/compare/trump-account-vs-custodial-account/) comparison covers the tradeoffs. You can also evaluate a standard taxable account through our breakdown of a [Trump Account vs brokerage account](/compare/trump-account-vs-brokerage-account/). Either kind of account can be opened at your own broker today while the Trump Account stays at Robinhood."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Where can I open a Trump account?",
+        "answer": "You do not open an account directly at a traditional retail brokerage. The account is established through the federal government's program and is held under the custody of Robinhood Securities, LLC, which serves as the initial trustee."
+      },
+      {
+        "question": "Do banks open Trump accounts?",
+        "answer": "No commercial banks offer or open Trump Accounts as of October 2026. While banks may eventually qualify as trustees once federal rollover regulations appear, none currently accept applications or transfers."
+      },
+      {
+        "question": "Can I move my Trump Account from Robinhood to Fidelity?",
+        "answer": "You cannot move the account to Fidelity right now. Fidelity has announced that it plans to accept rollovers in the future, but it cannot do so until the Treasury Department issues official regulatory guidelines for transfers."
+      },
+      {
+        "question": "Does Robinhood charge fees on Trump Accounts?",
+        "answer": "Robinhood does not charge other account maintenance fees on Trump Accounts according to its September 30, 2026 customer agreement. It also charges no fee to transfer the account out."
+      },
+      {
+        "question": "How much money do you need to open a Trump account?",
+        "answer": "There is no published minimum deposit required to open or maintain an account. Eligible children born within qualifying windows receive a $1,000 federal seed deposit from the government without requiring any initial family deposit."
+      },
+      {
+        "question": "Is my child's Trump Account safe at Robinhood?",
+        "answer": "The account is held by Robinhood Securities, LLC, which is a regulated financial broker operating as the official initial trustee under Treasury appointment. To protect yourself from phishing attempts and fraudulent registration websites, read our guide on [Trump Account scams](/guides/trump-account-scams/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Treasury Press Release SB-0508",
+        "url": "https://home.treasury.gov/news/press-releases/sb0508"
+      },
+      {
+        "label": "Robinhood Trump Account Customer Agreement",
+        "url": "https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf"
+      },
+      {
+        "label": "InvestmentNews Fund Lineup Reporting",
+        "url": "https://www.investmentnews.com/retirement-planning/treasury-unveils-trump-accounts-fund-lineup-with-blackrock-vanguard/267252"
+      },
+      {
+        "label": "Fidelity Newsroom",
+        "url": "https://newsroom.fidelity.com/"
+      },
+      {
+        "label": "Vanguard Press Room Announcement",
+        "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-to-serve-as-alternate-fund-partner-for-trump-accounts-070126.html"
+      },
+      {
+        "label": "J.P. Morgan Trump Accounts Portal",
+        "url": "https://www.chase.com/personal/investments/trump-accounts"
+      },
+      {
+        "label": "Treasury Press Release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      }
+    ],
+    "relatedComparisons": [
+      "trump-account-vs-custodial-account",
+      "trump-account-vs-brokerage-account",
+      "trump-account-vs-529"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Trump Account calculator",
+        "href": "/trump-account/"
+      }
+    ]
+  },
   // ── comparison-content-auto 2026-10-05 ──
   {
     "updated": "2026-10-05",
@@ -4394,6 +4553,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   },
 
   {
+    updated: "2026-10-08",
     slug: "trump-account-vs-529",
     title: "Trump Account vs 529: What's the Difference?",
     metaDescription:
@@ -4436,7 +4596,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Impact on college financial aid",
         content:
-          "A parent-owned 529 plan is reported as a parental asset on the FAFSA. Parental assets are assessed at a maximum of 5.64%, so a 529 has a relatively small effect on aid eligibility.\n\nThe Trump Account is a newer, IRA-style account owned by the child. Retirement accounts are generally not reported as assets on the FAFSA, which can be an underrated advantage for aid-sensitive families. The catch is that the Trump Account is built for education only by coincidence, not by design, so any withdrawal to pay tuition is still taxed as ordinary income. For the complete rundown of catches, see [what's the catch with a Trump Account](/guides/trump-account-worth-it/).",
+          "A parent-owned 529 plan is reported as a parental asset on the FAFSA. Parental assets are assessed at a maximum of 5.64%, so a 529 has a relatively small effect on aid eligibility.\n\nThe Trump Account is a newer, IRA-style account owned by the child. Retirement accounts are generally not reported as assets on the FAFSA, which can be an underrated advantage for aid-sensitive families. The catch is that the Trump Account is built for education only by coincidence, not by design, so any withdrawal to pay tuition is still taxed as ordinary income. For the complete rundown of catches, see [what's the catch with a Trump Account](/guides/trump-account-worth-it/). For the open question of how the FAFSA treats a Trump Account itself, see [does a Trump Account count against FAFSA](/guides/do-trump-accounts-affect-fafsa/).",
       },
     ],
     faqs: [
@@ -4463,6 +4623,7 @@ export const COMPARISONS: ComparisonEntry[] = [
 
   // ─── Trump Account vs Custodial Account (mindmap pass 2026-07-04) ─────────
   {
+    updated: "2026-10-08",
     slug: "trump-account-vs-custodial-account",
     title: "Trump Account vs Custodial Account: Which to Open?",
     metaDescription:
@@ -4501,7 +4662,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Control, flexibility, and the FAFSA trap",
         content:
-          "The real trade is control and flexibility versus a free head start. A custodial account lets you invest in anything and spend on the child anytime — braces, a laptop, summer camp, a first car. Control transfers to the child at the age of majority, which ranges from 18 to 25 depending on your state and whether it is UTMA or UGMA.\n\nA Trump Account is far more rigid. It is index-only, locked until 18, and taxed like an IRA. In exchange, you get the free $1,000 and simple, hands-off compounding.\n\nHere is the non-obvious catch: on the FAFSA, a custodial account is the student's asset. Federal Student Aid assesses student assets at 20% — a much bigger aid hit than parental assets. A Trump Account gets lighter, retirement-style treatment. If college aid matters, that gap can outweigh the custodial account's flexibility. See how the numbers play out in [are Trump Accounts worth it](/guides/trump-account-worth-it/).",
+          "The real trade is control and flexibility versus a free head start. A custodial account lets you invest in anything and spend on the child anytime — braces, a laptop, summer camp, a first car. Control transfers to the child at the age of majority, which ranges from 18 to 25 depending on your state and whether it is UTMA or UGMA.\n\nA Trump Account is far more rigid. It is index-only, locked until 18, and taxed like an IRA. In exchange, you get the free $1,000 and simple, hands-off compounding.\n\nHere is the non-obvious catch: on the FAFSA, a custodial account is the student's asset. Federal Student Aid assesses student assets at 20% — a much bigger aid hit than parental assets. A Trump Account may get lighter, retirement-style treatment, though that is not yet confirmed. If college aid matters, that gap can outweigh the custodial account's flexibility. See how the numbers play out in [are Trump Accounts worth it](/guides/trump-account-worth-it/). Whether the Trump Account side counts on the FAFSA is still unsettled; our [Trump Account FAFSA guide](/guides/do-trump-accounts-affect-fafsa/) lays out both readings.",
       },
       {
         heading: "Which should you choose (or use both)?",
@@ -4513,7 +4674,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { question: "What is the difference between a Trump Account and a custodial account?", answer: "The main difference is that a Trump Account gives a free $1,000 federal seed and tax-deferred, index-only growth locked until age 18, while a custodial account (UTMA/UGMA) has no contribution cap, lets you invest in almost anything, and can be used for the child anytime. The Trump Account trades flexibility for a free head start. The custodial account trades the free money for full control and investment freedom." },
       { question: "Can I open both a Trump Account and a custodial account for my child?", answer: "Yes, you can open both a Trump Account and a custodial account for the same child, and many families do. The common strategy is to claim the free $1,000 Trump seed for long-term, hands-off compounding, then use a custodial account for money you may need before the child turns 18. Just remember the custodial account counts more heavily against college financial aid." },
       { question: "How is a custodial account taxed compared to a Trump Account?", answer: "A custodial account is taxed each year under the kiddie tax, while a Trump Account grows tax-deferred and is taxed only at withdrawal. With the kiddie tax, a portion of the child's unearned income is tax-free, some is taxed at the child's rate, and the rest is taxed at the parents' marginal rate (the threshold was $2,700 in 2025). A Trump Account withdrawal after age 18 is taxed as ordinary income, like a traditional IRA." },
-      { question: "Does a custodial account hurt financial aid more than a Trump Account?", answer: "Yes, a custodial account usually hurts financial aid more than a Trump Account. On the FAFSA, a custodial account (UTMA/UGMA) is treated as the student's own asset and assessed at 20%, a steeper hit than parental assets. A Trump Account gets lighter, retirement-style treatment. If maximizing college aid matters to you, this difference can be significant." },
+      { question: "Does a custodial account hurt financial aid more than a Trump Account?", answer: "Yes, a custodial account usually hurts financial aid more than a Trump Account. On the FAFSA, a custodial account (UTMA/UGMA) is treated as the student's own asset and assessed at 20%, a steeper hit than parental assets. A Trump Account may get lighter, retirement-style treatment, though that is not yet confirmed. If maximizing college aid matters to you, this difference can be significant." },
       { question: "When can my child access the money in each account?", answer: "A Trump Account is locked until January 1 of the year the child turns 18, while a custodial account can be used for the child's benefit at any time. After 18, the Trump Account works like a traditional IRA. With a custodial account, full control transfers to the child at the age of majority, which is 18 to 25 depending on your state and whether it is a UTMA or UGMA account." },
     ],
     sources: [

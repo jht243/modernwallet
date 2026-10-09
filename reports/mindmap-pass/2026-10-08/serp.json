@@ -1,0 +1,704 @@
+{
+ "rows": [
+  {
+   "keyword": "dell trump account eligibility",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "investamerica.org",
+    "www.whitehouse.gov",
+    "www.babylist.com",
+    "finance.yahoo.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "investamerica.org",
+    "www.whitehouse.gov",
+    "gettrumpaccount.com",
+    "trumpaccounts.gov",
+    "www.babylist.com",
+    "investamerica.org",
+    "www.facebook.com",
+    "finance.yahoo.com",
+    "www.investopedia.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "Do I qualify for a Trump account?",
+    "What ZIP codes qualify for a Dell Trump account?",
+    "Is my zip code eligible for a Trump account?",
+    "Is TrumpAccount.com a legitimate website?",
+    "What is the official Trump account website?",
+    "How much did Trump make from Trump University?"
+   ],
+   "related_searches": [
+    "Dell Trump account ZIP codes",
+    "Dell $250 Trump account",
+    "Dell contribution to Trump account",
+    "Michael and Susan Dell Foundation Trump Accounts",
+    "Invest America Dell eligibility checker",
+    "Dell account for kids",
+    "Trump Account $250 ZIP codes",
+    "Michael & Susan Dell Foundation $250"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites investamerica.org, www.whitehouse.gov, www.babylist.com, finance.yahoo.com",
+   "se_results_count": 402000
+  },
+  {
+   "keyword": "claim trump account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "trumpaccounts.gov",
+    "www.irs.gov",
+    "abc7ny.com",
+    "www.livenowfox.com",
+    "www.fidelity.com",
+    "finance.yahoo.com",
+    "www.9news.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "trumpaccounts.gov",
+    "www.whitehouse.gov",
+    "www.facebook.com",
+    "www.irs.gov",
+    "trumpaccount.com",
+    "abc7ny.com",
+    "www.youtube.com",
+    "finance.yahoo.com",
+    "www.fidelity.com",
+    "www.usatoday.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "Do I qualify for a Trump account?",
+    "How to claim Trump account money?",
+    "Should I claim a Trump account?",
+    "How many Trump accounts have been claimed?",
+    "Who gets $1000 for Trump accounts?",
+    "Has Trump ever donated any money?"
+   ],
+   "related_searches": [
+    "Trump account $250",
+    "Trump account rules",
+    "Trump account for older kids $250",
+    "Trump Account login",
+    "Trump Account portal",
+    "Trump account app",
+    "Trump account benefits",
+    "Who is eligible for Trump Accounts"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites trumpaccounts.gov, www.irs.gov, abc7ny.com, www.livenowfox.com",
+   "se_results_count": 347000000
+  },
+  {
+   "keyword": "trump account app",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "trumpaccounts.gov",
+    "home.treasury.gov",
+    "www.whitehouse.gov",
+    "abc7ny.com",
+    "www.wbaltv.com",
+    "www.9news.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apps.apple.com",
+    "trumpaccounts.gov",
+    "play.google.com",
+    "home.treasury.gov",
+    "abc7ny.com",
+    "finance.yahoo.com",
+    "www.whitehouse.gov",
+    "www.youtube.com",
+    "www.irs.gov",
+    "www.whitehouse.gov"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "How does the $1000 Trump account work?",
+    "What is the Trump account app?",
+    "How do I check my child's Trump account?",
+    "How do I get a Trump account?",
+    "Can anyone use a Trump account?",
+    "How do I get $250 for my Trump account?"
+   ],
+   "related_searches": [
+    "Trump Account login",
+    "Trump account $250",
+    "Trump Account app Robinhood",
+    "Trump account for older kids $250",
+    "Trump account app Reddit",
+    "Trump account app android",
+    "Trump account website",
+    "Trump account benefits"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (apps.apple.com, play.google.com); AI Overview present, cites trumpaccounts.gov, home.treasury.gov, www.whitehouse.gov, abc7ny.com",
+   "se_results_count": 506000000
+  },
+  {
+   "keyword": "form 4547",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "www.grantthornton.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "www.irs.gov",
+    "trumpaccount.com",
+    "fa-cpa.com",
+    "www.irs.gov",
+    "turbotax.intuit.com",
+    "www.ascensus.com",
+    "www.grantthornton.com",
+    "www.youtube.com",
+    "kb.1040.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "How to file Form 4547",
+    "File Form 4547 online",
+    "Who is eligible for Form 4547",
+    "IRS Form 4547 PDF download",
+    "Trump account Form 4547",
+    "UltraTax Form 4547",
+    "IRS Form 4547 TurboTax",
+    "Lacerte Form 4547"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites www.irs.gov, turbotax.intuit.com, www.grantthornton.com",
+   "se_results_count": 4110
+  },
+  {
+   "keyword": "trump account employer match",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "atr.org",
+    "finance.yahoo.com",
+    "home.treasury.gov",
+    "thehill.com",
+    "www.cnbc.com",
+    "www.forbes.com",
+    "www.hr-brew.com",
+    "www.facebook.com",
+    "www.kiplinger.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "home.treasury.gov",
+    "www.kiplinger.com",
+    "www.irs.gov",
+    "knowledge.dlapiper.com",
+    "www.dol.gov",
+    "www.merceradvisors.com",
+    "www.congress.gov",
+    "www.federalregister.gov",
+    "finance.yahoo.com",
+    "www.aon.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "Does an employer contribute to a Trump Account?",
+    "Which banks are matching Trump accounts?",
+    "How do you know if you qualify for a Trump Account?",
+    "Can anyone use a Trump account?",
+    "Where does the $1000 Trump account money come from?"
+   ],
+   "related_searches": [
+    "Trump Account employee contribution",
+    "Trump Account employer contribution tax deductible",
+    "Trump Account contribution program",
+    "Trump Account pre tax",
+    "Trump account tax advantages",
+    "Trump Account login",
+    "Trump account vs 529",
+    "How to sign up for Trump Account"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites atr.org, finance.yahoo.com, home.treasury.gov, thehill.com",
+   "se_results_count": 6500000
+  },
+  {
+   "keyword": "does trump account affect fafsa",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.savingforcollege.com",
+    "www.cnbc.com",
+    "www.ameriprise.com",
+    "brightstart.com",
+    "www.linkedin.com",
+    "finance.yahoo.com",
+    "edsource.org",
+    "www.instagram.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "thecollegeinvestor.com",
+    "www.reddit.com",
+    "www.cnbc.com",
+    "creativefinancialgrp.com",
+    "www.savingforcollege.com",
+    "www.psca.org",
+    "www.empower.com",
+    "collegelens.ai",
+    "www.facebook.com",
+    "www.ameriprise.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Will my FAFSA be affected by Trump?",
+    "Can a Trump account be used for college?",
+    "What accounts don't count towards FAFSA?",
+    "Does FAFSA actually check your bank accounts?",
+    "Should I empty my bank account before FAFSA?",
+    "Can you get financial aid if your parents make $200,000?"
+   ],
+   "related_searches": [
+    "Trump account vs 529",
+    "Aidvantage",
+    "How to open a Trump account",
+    "Trump account withdrawal rules",
+    "Trump Account calculator",
+    "Trump account $250",
+    "Trump account for kids",
+    "Trump Account login",
+    "FAFSA login"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.savingforcollege.com, www.cnbc.com, www.ameriprise.com, brightstart.com",
+   "se_results_count": 556
+  },
+  {
+   "keyword": "trump accounts on robinhood",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "robinhood.com",
+    "bipartisanpolicy.org",
+    "cdn.robinhood.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "robinhood.com",
+    "robinhood.com",
+    "learn.robinhood.com",
+    "www.reddit.com",
+    "cdn.robinhood.com",
+    "www.youtube.com",
+    "bipartisanpolicy.org",
+    "x.com",
+    "finance.yahoo.com",
+    "abc7ny.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "x.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "Why stay away from Robinhood?",
+    "Are the Trump accounts legal?",
+    "Is it safe to have $1 million in Robinhood?",
+    "Where to open Trump account?",
+    "How much money do you need to open a Trump account?",
+    "Do banks open Trump accounts?"
+   ],
+   "related_searches": [
+    "Robinhood Trump Account login",
+    "Trump Accounts Robinhood reddit",
+    "How to open Trump account on Robinhood",
+    "Trump account vs 529",
+    "Trump account app",
+    "Who is eligible for Trump Accounts",
+    "Trump account robinhood email",
+    "Trump Account Fidelity"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, x.com); AI Overview present, cites robinhood.com, bipartisanpolicy.org, cdn.robinhood.com, finance.yahoo.com",
+   "se_results_count": 2660000
+  },
+  {
+   "keyword": "trump account gift tax",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "tax.thomsonreuters.com",
+    "www.criadv.com",
+    "www.irs.gov",
+    "rsmus.com",
+    "keitercpa.com",
+    "www.merceradvisors.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "tax.thomsonreuters.com",
+    "www.congress.gov",
+    "www.criadv.com",
+    "www.groom.com",
+    "www.actec.org",
+    "www.merceradvisors.com",
+    "www.irs.gov",
+    "www.bny.com",
+    "www.fidelity.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Can my parents gift me $100,000 without paying gift tax?",
+    "Can I give my daughter $50,000 tax free?",
+    "How much money can I gift a family member in 2026 tax free?",
+    "Do I have to worry about the gift tax if I give my son $75000 toward a down payment?",
+    "How does the IRS know if I gift money to my children?",
+    "Can I gift my daughter $100,000 to buy a house?"
+   ],
+   "related_searches": [
+    "Trump account withdrawal rules",
+    "Trump account tax advantages",
+    "Trump Account contribution tax deductible",
+    "Trump account contribution limit",
+    "Trump account $250",
+    "Trump account vs 529",
+    "Are Trump Accounts tax-free",
+    "Trump retirement accounts for adults"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites tax.thomsonreuters.com, www.criadv.com, www.irs.gov, rsmus.com",
+   "se_results_count": 52100000
+  },
+  {
+   "keyword": "trump account phone number",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "trumpaccount.com",
+    "www.irs.gov",
+    "trumpaccount.com",
+    "taylor.house.gov",
+    "home.treasury.gov",
+    "trumpaccounts.gov",
+    "apps.apple.com",
+    "www.fidelity.com",
+    "www.slstoryassoc.com",
+    "www.whitehouse.gov"
+   ],
+   "major_domains": [
+    "apps.apple.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [
+    "How can I contact president Trump?",
+    "Does president Trump have a phone number?",
+    "How to receive $1000 from Trump account?",
+    "Can I speak to president Trump?",
+    "What number is Donald Trump?",
+    "How do we call the President?"
+   ],
+   "related_searches": [
+    "Trump Account login",
+    "Trump account $250",
+    "Trump account app",
+    "IRS Trump Account",
+    "Trump account for older kids $250",
+    "Who is eligible for Trump Accounts",
+    "How to open a Trump account",
+    "Trump account benefits"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (apps.apple.com); AI Overview present",
+   "se_results_count": 111000000
+  },
+  {
+   "keyword": "trump account stock donations",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "home.treasury.gov",
+    "trumpaccounts.gov",
+    "finance.yahoo.com",
+    "www.cnbc.com",
+    "www.reuters.com",
+    "www.wsj.com",
+    "cof.org",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "finance.yahoo.com",
+    "trumpaccounts.gov",
+    "www.wsj.com",
+    "www.reuters.com",
+    "home.treasury.gov",
+    "x.com",
+    "www.congress.gov",
+    "www.cnbc.com",
+    "www.usbank.com",
+    "cof.org"
+   ],
+   "major_domains": [
+    "www.wsj.com"
+   ],
+   "forum_domains": [
+    "x.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "Who are the donors to the Trump account?",
+    "Who donated $100 million to Trump?",
+    "How much money has Trump donated to charity?",
+    "Where are Trump accounts invested?",
+    "What stocks are Trump accounts invested in?",
+    "Who is Trump's biggest money donor?"
+   ],
+   "related_searches": [
+    "Trump account $250",
+    "Trump account for older kids $250",
+    "Who is eligible for Trump Accounts",
+    "Trump account investment options",
+    "Trump account benefits",
+    "Trump Account login",
+    "Trump Account portal",
+    "Dell Trump Account donation"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "1/10 major platforms (www.wsj.com); AI Overview present, cites home.treasury.gov, trumpaccounts.gov, finance.yahoo.com, www.cnbc.com",
+   "se_results_count": 6610000
+  },
+  {
+   "keyword": "when will trump account be funded",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "trumpaccounts.gov",
+    "www.chase.com",
+    "www.fidelity.com",
+    "www.cnbc.com",
+    "abc7ny.com",
+    "www.whitehouse.gov",
+    "www.wbaltv.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.whitehouse.gov",
+    "www.fidelity.com",
+    "www.investor.gov",
+    "www.congress.gov",
+    "www.cnbc.com",
+    "www.miamiherald.com",
+    "trumpaccounts.gov",
+    "abc7ny.com",
+    "trumpaccounts.gov",
+    "www.ameriprise.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "How long can a Trump account be funded?",
+    "Who is funding the Trump account?",
+    "When can you access Trump account funds?",
+    "Is the Trump account automatically invested?",
+    "How much money does Trump still owe?",
+    "Who controls the investments in a Trump account?"
+   ],
+   "related_searches": [
+    "Trump account $250",
+    "Trump account for older kids $250",
+    "Trump Account calculator",
+    "Should I open a Trump account for my child",
+    "Is Trump account worth it",
+    "Trump account benefits",
+    "Trump account tax advantages",
+    "Trump account for kids: eligibility"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites trumpaccounts.gov, www.chase.com, www.fidelity.com, www.cnbc.com",
+   "se_results_count": 80500000
+  },
+  {
+   "keyword": "trump account roth conversion",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.cnbc.com",
+    "www.fidelity.com",
+    "matsorensen.com",
+    "www.babylist.com",
+    "7saturdaysfinancial.com",
+    "www.ktllp.cpa",
+    "www.marsjewett.com",
+    "www.forbes.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.reddit.com",
+    "www.cnbc.com",
+    "crr.bc.edu",
+    "www.congress.gov",
+    "www.ktllp.cpa",
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.babylist.com",
+    "www.edwardjones.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "related_searches": 2,
+    "top_stories": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Trump Account Roth conversion kiddie tax",
+    "Trump account Roth conversion limit",
+    "Can Trump Accounts be converted to Roth IRA",
+    "Trump account vs IRA",
+    "Trump account vs 529 vs Roth IRA",
+    "Trump Accounts vs Roth IRA",
+    "Trump account contribution limit",
+    "Trump Account vs UTMA"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.cnbc.com, www.fidelity.com, matsorensen.com, www.babylist.com",
+   "se_results_count": 434000
+  }
+ ],
+ "cost": "DataForSEO: 12 calls, $0.04980 of $2.00 budget"
+}

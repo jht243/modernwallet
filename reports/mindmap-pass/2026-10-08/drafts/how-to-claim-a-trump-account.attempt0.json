@@ -1,0 +1,98 @@
+{
+  "slug": "how-to-claim-a-trump-account",
+  "title": "How to Claim Trump Account: Steps for Parents",
+  "metaDescription": "Learn how to claim a Trump Account opened by Treasury auto-enrollment. Follow official steps to verify details, claim funds, and unblock contributions.",
+  "h1": "How to Claim a Trump Account",
+  "cardBlurb": "Learn how to claim your child's auto-enrolled Trump Account through the official app or website, verify details, and unblock contributions.",
+  "introText": "You claim an auto-enrolled Trump Account by downloading the official app or signing in at trumpaccount.com, verifying your identity, confirming your relationship to your child, and accepting the terms. Automatic enrollment created accounts for eligible children across the country, but those accounts sit locked until an authorized adult takes ownership.\n\nAt ModernWallet, we track every regulatory update to show you exactly how federal youth accounts work in practice. The U.S. Department of the Treasury completed automatic enrollment on October 1, 2026, establishing accounts for roughly 60 to 70 million children under age 18. Until a parent or legal guardian completes the claim process, family and employer deposits remain completely blocked.",
+  "sections": [
+    {
+      "heading": "How to Claim an Auto-Enrolled Trump Account, Step by Step",
+      "body": "To claim your child's account, complete the four verification steps established by the [U.S. Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0642). You do not need to submit paper forms or visit an office if the account was created during automatic enrollment.\n\n1. Download the \"Trump Accounts: Official App\" from the [Apple App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) or Google Play, or visit trumpaccount.com if you prefer a web browser.\n2. Verify your own identity and your legal relationship to the child within the interface.\n3. Review your child's personal information, including full name, birth date, and Social Security number.\n4. Read and accept the account terms to become the active responsible party.\n\nOnce you accept the terms, the account status changes from an unmanaged government trust to an active custodial IRA. If your child was missed during the October rollout, you must use the separate path to [open a Trump Account](/guides/how-to-open-a-trump-account/) from scratch."
+    },
+    {
+      "heading": "What You Need Before Starting the Claim Process",
+      "body": "Gather your child's Social Security number and legal birth details before you open the application. You must also supply your own identification details and residential address during identity verification.\n\nOnly use the official portal at [TrumpAccounts.gov](https://trumpaccounts.gov) or the approved mobile application. The Treasury Department warns parents against third-party registration websites that request sensitive tax identifiers.\n\nIf you run into device errors or technical crashes during identity entry, check our guide to the [Trump Account app](/guides/trump-account-app/) for documented technical solutions."
+    },
+    {
+      "heading": "What Automatic Enrollment Did on October 1, 2026",
+      "body": "On October 1, 2026, the Treasury Department carried out nationwide automatic enrollment for youth accounts under Treasury press release SB-0642. The initiative created accounts for eligible children under age 18 with a valid Social Security number.\n\nPublic totals vary slightly across official and media summaries as of October 2026. Treasury Secretary Scott Bessent stated that over 60 million children received accounts, while reporting from [CNBC](https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html) and figures from [Invest America](https://investamerica.org/) placed the final total near 70 million.\n\nAutomatic enrollment created the legal account shell, but it did not transfer operational control to parents. The program relies on families to step forward and confirm custody before outside cash can flow into the fund."
+    },
+    {
+      "heading": "What Happens If an Account Remains Unclaimed",
+      "body": "Unclaimed balances stay parked in a master group trust maintained by the federal government under Treasury temporary regulations TD 10056. In this status, the account can receive only broad general allocations and the $1,000 pilot contribution, while private deposits remain strictly barred.\n\nNeither parents, relatives, nor workplace programs can deposit funds into an unclaimed balance. Federal rules prohibit all private deposits, including scheduled [employer contributions](/guides/trump-account-employer-contributions/), until an authorized adult completes activation.\n\nTreasury has published no formal expiration date to finish claiming. According to a tax-practitioner analysis of the regulations, parents can claim an account through December 31 of the year the child turns 17, and the first eligible adult to complete activation becomes the recognized responsible party."
+    },
+    {
+      "heading": "The $1,000 Seed and the Form 4547 Election Wrinkle",
+      "body": "A child must have an active, claimed account to receive the federal $1,000 seed deposit. Under program rules, the seed is restricted to U.S.-citizen children born between January 1, 2025, and December 31, 2028.\n\nA critical legal wrinkle exists between administrative announcements and published federal regulations. Treasury stated in press release SB-0642 that claiming an auto-enrolled account in the app triggers the seed, but [Treasury temporary regulations TD 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts) state that the Treasury Secretary cannot make a pilot program election on a family's behalf.\n\nIt remains officially unconfirmed whether claiming in the app legally satisfies the pilot election requirement on its own. To protect your child's seed, check our walkthrough for [IRS Form 4547](/guides/form-4547/) to verify whether you should submit an explicit Part III pilot election or call the Treasury support center at 1-866-USA-4547."
+    },
+    {
+      "heading": "Private Grants and the Dell Contribution",
+      "body": "Certain children with auto-enrolled accounts also qualify for private foundation deposits. In December 2025, Michael and Susan Dell pledged $6.25 billion to provide a $250 deposit to 25 million eligible American children.\n\nThe gift applies strictly to children born between 2016 and 2024 who reside in qualifying census tracts. The income threshold was adjusted from $150,000 down to approximately $118,000 in median family income using [Census Reporter](https://censusreporter.org/tables/B19113/) table B19113 data following the massive expansion of auto-enrolled accounts.\n\nNo separate claim paperwork is required for this private grant. Review our detailed guide on the [Dell Trump Account 250 dollar deposit](/guides/dell-trump-account-250/) to verify whether your neighborhood qualified before distributions concluded."
+    },
+    {
+      "heading": "Next Steps After Claiming Your Account",
+      "body": "Once you claim the account, you do not need to choose a brokerage firm. Robinhood Securities serves as the primary trustee on behalf of the Treasury Department under the program agreement. For details on platform custody, consult our analysis of [Trump Account trustees](/compare/trump-account-trustees/).\n\nAll deposited funds are automatically directed into low-cost index funds tracking the S&P 500 or broad U.S. stock benchmarks. To track when your federal seed or personal deposits will show up in your available balance, review our breakdown on [when Trump Accounts get funded](/guides/when-will-trump-account-be-funded/).\n\nStay alert for fraudulent communications regarding your new balance. Legitimate emails originate strictly from no-reply@TrumpAccounts.Treasury.gov, and you can review common phishing tactics in our guide to [avoiding Trump Account scams](/guides/trump-account-scams/). If your child does not meet program rules, examine our breakdown on [Trump Account alternatives](/guides/trump-account-alternatives/) to evaluate traditional custodial brokerage options."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/trump-account/",
+      "label": "Trump Account calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I claim Trump Account money?",
+      "answer": "You claim the account by downloading the official Trump Accounts app or visiting trumpaccount.com, completing identity verification, confirming your relationship to the child, and accepting the account terms."
+    },
+    {
+      "question": "Should I claim a Trump Account?",
+      "answer": "Yes, claiming the account is beneficial if you want to secure the $1,000 federal seed for an eligible child, receive private contributions, or make tax-advantaged deposits up to $5,000 each year."
+    },
+    {
+      "question": "How many Trump Accounts have been claimed?",
+      "answer": "Treasury has not released the total number of claimed accounts. Official statements confirm only that about 60 to 70 million children were automatically enrolled as of October 2026."
+    },
+    {
+      "question": "Who gets $1,000 for Trump Accounts?",
+      "answer": "The $1,000 federal seed is available to U.S.-citizen children born between January 1, 2025, and December 31, 2028, who have a valid Social Security number and an active account."
+    },
+    {
+      "question": "Is there a deadline to claim a Trump Account?",
+      "answer": "Treasury has not published an official claim deadline. According to a tax-practitioner analysis of program regulations, an account remains eligible to be claimed until December 31 of the year the child turns 17."
+    },
+    {
+      "question": "Can I claim without the app?",
+      "answer": "Yes, parents without a mobile device can claim an account online by accessing the web portal at trumpaccount.com or navigating through TrumpAccounts.gov."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Treasury SB-0642 Automatic Enrollment Announcement",
+      "url": "https://home.treasury.gov/news/press-releases/sb0642"
+    },
+    {
+      "label": "Treasury SB-0508 App Launch Release",
+      "url": "https://home.treasury.gov/news/press-releases/sb0508"
+    },
+    {
+      "label": "Federal Register TD 10056 Temporary Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+    },
+    {
+      "label": "IRS Form 4547 Overview",
+      "url": "https://www.irs.gov/forms-pubs/about-form-4547"
+    },
+    {
+      "label": "CNBC Auto-Enrollment Coverage",
+      "url": "https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

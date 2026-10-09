@@ -1,0 +1,11 @@
+## Can Donors Give Individual Stocks?
+
+Yes, in one narrow case: under temporary rules published September 30, 2026, governments and 501(c)(3) charities can donate shares of U.S.-listed companies to a whole group of children, and the trustee holds those shares for up to five years before selling them into the index fund; family money still goes only into the index fund.
+
+Under the [temporary regulations](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), eligible donors are strictly limited to the United States or the District of Columbia, state or local governments, Indian tribal governments, and 501(c)(3) charities, including through donor-advised funds. Individual donors and private companies cannot give stock directly. They can do so only by routing the gift through an eligible charity.
+
+The shares never go to an individual child of the donor's choosing. Instead, donations flow through the U.S. Department of the Treasury as a general funding contribution split equally across an entire qualified class, such as all beneficiaries under 18, those born in specified years, or children in an area with at least 5,000 eligible kids. Families cannot select the stock, and they cannot refuse the gift. The stock itself must be issued by a domestic corporation, trade on a registered national exchange, and carry no pre-existing transfer restrictions.
+
+The trustee must hold the donated shares until the earlier of five years after receipt or December 31 of the year the child turns 17. Early sales are barred; if shares are sold early by mistake, the trustee must repurchase the same stock as soon as practicable. Once the holding window ends, the trustee sells the shares within a reasonable time and reallocates the proceeds into an eligible broad-market index fund.
+
+Treasury explained the rule by noting that statutory investment limits govern what an account buys, not what a donor contributes. Critics argue the policy introduces single-stock risk without diversification, traps families in falling positions with no ability to cut losses, and provides no mechanism to decline the asset. Christine Benz of Morningstar called the setup unusual, while Michael Dell dismissed such criticism as nonsense. Public comments run through roughly November 30, 2026, so final rules could alter these terms.

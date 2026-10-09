@@ -1,0 +1,37 @@
+{
+ "slug": "trump-account-taxes--gift-tax",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 289,
+ "floor": 0,
+ "input_tokens": 19151,
+ "output_tokens": 432,
+ "thinking_tokens": null,
+ "cached_tokens": 17359,
+ "est_cost_usd": 0.0043,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 289,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 17778
+  }
+ },
+ "seconds": 5.4,
+ "response_id": "ZFXIaomeA5_pz7IP9-ONiAs",
+ "generated_at": "2026-10-08T21:46:00-0500"
+}

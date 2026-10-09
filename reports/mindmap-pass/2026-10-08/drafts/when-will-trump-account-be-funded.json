@@ -1,0 +1,94 @@
+{
+ "slug": "when-will-trump-account-be-funded",
+ "title": "When Will My Child's Trump Account Be Funded?",
+ "metaDescription": "When will Trump Account money arrive? Review deposit timing for the $1,000 seed, the Dell $250 gift, processing delays, and how to verify funding status.",
+ "h1": "When Will My Child's Trump Account Be Funded?",
+ "cardBlurb": "Tracking deposits for the $1,000 federal seed and the Dell $250 gift depends on child birth year, account claiming, and processing timelines.",
+ "introText": "Trump Account deposits do not arrive on one date for every child. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each funding date announced for the program.\n\nThe $1,000 seed could begin as early as July 4, 2026, and the [IRS](https://www.irs.gov/trumpaccounts) said up to 25 million accounts could be funded by mid-October 2026. Treasury says an account must be claimed before it can receive the $1,000, and the Dell $250 deposits were expected to finish by October 9, 2026.",
+ "sections": [
+  {
+   "heading": "When the $1,000 Seed and Dell $250 Arrive",
+   "body": "The $1,000 seed could begin as early as July 4, 2026, but the date for each child depends on which deposit applies and whether the account has been claimed. The U.S. Department of the Treasury completed automatic enrollment for over 60 million children on October 1, 2026, according to [Treasury press release SB-0642](https://home.treasury.gov/news/press-releases/sb0642). On October 2, 2026, IRS CEO Frank Bisignano told [CNBC](https://www.cnbc.com/2026/10/02/trump-accounts-funding.html) that up to 25 million accounts could be funded by mid-October. CNBC noted it was unclear whether that count meant the $1,000 seed, the Dell $250, or family and employer money.\n\n| Date | Milestone | Program Details |\n|---|---|---|\n| July 4, 2026 | Seed Deposits Could Begin | [Treasury press release SB-0508](https://home.treasury.gov/news/press-releases/sb0508) said $1,000 seed deposits could begin as early as this date. |\n| October 1, 2026 | Automatic Enrollment Completed | Treasury created accounts for eligible minors with an SSN under temporary rule TD 10056. |\n| October 9, 2026 | Dell $250 Deposits Expected Done | [Invest America](https://investamerica.org/check-dell-250-eligibility/) expected all $250 deposits for eligible children born 2016 to 2024 to be made by end of day. |\n| Mid-October 2026 | Up to 25 Million Accounts Funded | IRS said up to 25 million accounts could be funded. |\n\nIn July 2026, Treasury called the gap between opening an account and receiving the seed \"standard processing time, like receiving a tax refund.\" Most families got the money in 1 to 2 days, though some were told it could take up to 4 weeks. Parents must activate an account through the official mobile application or online portal before any federal seed money appears."
+  },
+  {
+   "heading": "Why Your Trump Account Is Not Funded Yet",
+   "body": "Five things can hold up a deposit, and the first one to check is whether the account has been claimed.\n\n1. The account is unclaimed: According to a tax-practitioner analysis of the regulations, an auto-enrolled account sits in a Treasury master group trust until a parent or guardian claims it. A parent or guardian must verify their identity in the mobile application before federal funds release or private deposits process. Review the walkthrough on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/) to activate your child's record.\n\n2. The child is outside the seed birth window: Only U.S. citizens born between January 1, 2025, and December 31, 2028, qualify for the $1,000 federal pilot contribution. Children born outside that window receive no federal seed money, even though they remain eligible to hold an account and accept family deposits.\n\n3. The pilot program election is missing: Under the [Federal Register notice for TD 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), Treasury cannot execute a pilot program election on behalf of a family. Parents of a child born 2025 through 2028 can make the election by completing Part III of [Form 4547](/guides/form-4547/).\n\n4. Processing time: Treasury called the wait \"standard processing time,\" and some families were told it could take up to 4 weeks.\n\n5. Dell donation income restrictions: The private $250 contribution announced in a [White House press release](https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/) applies exclusively to children born between 2016 and 2024 residing in ZIP codes with a median family income of roughly $118,000 or less. If your neighborhood sits above that threshold, your child does not receive this gift. Check the qualification rules in our overview of the [Dell Trump Account $250 gift](/guides/dell-trump-account-250/). Invest America says money for foster children is reserved, with contributions expected next year, and children on military bases are included."
+  },
+  {
+   "heading": "Checking Your Deposit and Application Status",
+   "body": "Parents can check deposit status directly using the official digital tools provided by Treasury and trustee partner [Robinhood Securities](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf). The primary tracking platform is the official mobile application, titled \"Trump Accounts: Official App\" on Apple iOS and Android app stores. Families without a mobile smartphone can access their profile through the web dashboard at trumpaccount.com or review federal program announcements at [TrumpAccounts.gov](https://trumpaccounts.gov).\n\nWithin the dashboard, parents can inspect account activity, monitor investment progress, and confirm whether incoming deposits have settled. For detailed steps on downloading and navigating the portal, read our guide on the [Trump Account app](/guides/trump-account-app/).\n\nUsers have reported problems in app store reviews, including bank-link errors, linked debit cards disappearing and requests to resubmit information. If one of these stalls a deposit, update the app first, then request an in-app callback or call 1-866-USA-4547."
+  },
+  {
+   "heading": "Missing Deposits and Protection Against Scams",
+   "body": "If your child qualifies for seed money but the balance has not arrived after four weeks of claiming the record, contact the official Treasury helpline. You can reach the federal call center at 1-866-USA-4547 or submit a callback request directly through the official mobile application. Official emails come only from no-reply@TrumpAccounts.Treasury.gov.\n\nNever pay any third party claiming they can release your funds or accelerate administrative processing. Criminal operations target parents awaiting government disbursements by demanding advance processing fees, debit card numbers, or sensitive family data. Read our safety warnings on [Trump Account scams](/guides/trump-account-scams/) to recognize suspicious messages."
+  },
+  {
+   "heading": "How the Money Is Invested After It Arrives",
+   "body": "Once seed funds or personal deposits arrive in a Trump Account, the cash does not sit in an uninvested checking balance. All deposited balances automatically purchase shares in a qualifying index fund tracking the S&P 500 or broad U.S. equity markets. You do not select individual company stocks or execute trades.\n\nGrowth is tax-deferred, and withdrawals are generally blocked until January 1 of the year the child turns 18. After that, withdrawals are taxed like a traditional IRA. Run realistic growth models using our [Trump Account calculator](/trump-account/) to see how a $1,000 initial seed compounds across 18 years."
+  }
+ ],
+ "tools": [
+  {
+   "href": "/trump-account/",
+   "label": "Trump Account calculator"
+  }
+ ],
+ "faqs": [
+  {
+   "question": "Who is funding the Trump account?",
+   "answer": "Funding comes from multiple sources depending on child eligibility. The federal government finances the one-time $1,000 seed for qualifying citizens born between 2025 and 2028. Private donors Michael and Susan Dell contributed $6.25 billion to fund $250 deposits for up to 25 million eligible children born between 2016 and 2024. Parents, extended family, and participating employers provide ongoing voluntary contributions."
+  },
+  {
+   "question": "When can you access Trump account funds?",
+   "answer": "Withdrawals are generally blocked until January 1 of the year the child turns 18. After that, withdrawals are taxed like a traditional IRA."
+  },
+  {
+   "question": "Is the Trump account automatically invested?",
+   "answer": "Yes. Every deposited dollar is automatically invested into a designated low-cost index fund tracking the S&P 500 or a broad U.S. stock index. Beneficiaries and parents cannot pick individual stock shares."
+  },
+  {
+   "question": "Why does my Trump Account say processing?",
+   "answer": "Treasury has not published definitions for in-app status labels, so \"processing\" has no official meaning. In July 2026 Treasury called the wait \"standard processing time, like receiving a tax refund,\" and some families were told it could take up to 4 weeks. After that, call 1-866-USA-4547 or request an in-app callback."
+  },
+  {
+   "question": "How long does the $1,000 take to arrive?",
+   "answer": "Treasury called the wait \"standard processing time, like receiving a tax refund.\" In July 2026 most families got the money 1 to 2 days after opening the account, though some were told it could take up to 4 weeks."
+  },
+  {
+   "question": "When will employer contributions arrive?",
+   "answer": "Employer contributions arrive only after a parent claims and activates the child's account. Actual deposit timing depends entirely on each participating employer's standard payroll and corporate matching calendar."
+  }
+ ],
+ "sources": [
+  {
+   "label": "U.S. Department of the Treasury, Press Release SB-0642",
+   "url": "https://home.treasury.gov/news/press-releases/sb0642"
+  },
+  {
+   "label": "U.S. Department of the Treasury, Press Release SB-0508",
+   "url": "https://home.treasury.gov/news/press-releases/sb0508"
+  },
+  {
+   "label": "CNBC, Trump Accounts Funding Projections",
+   "url": "https://www.cnbc.com/2026/10/02/trump-accounts-funding.html"
+  },
+  {
+   "label": "Invest America, Dell $250 Eligibility Details",
+   "url": "https://investamerica.org/check-dell-250-eligibility/"
+  },
+  {
+   "label": "Federal Register, Temporary Regulations TD 10056",
+   "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+  },
+  {
+   "label": "White House, Landmark Dell Gift Announcement",
+   "url": "https://www.whitehouse.gov/releases/2025/12/landmark-dell-gift-supercharges-trump-accounts-for-americas-kids/"
+  }
+ ],
+ "metaTitle": "",
+ "subtitle": "",
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

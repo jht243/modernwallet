@@ -1,0 +1,98 @@
+{
+ "slug": "trump-account-app",
+ "title": "How to Use the Official Trump Accounts App",
+ "metaDescription": "Download the official Trump Account app, claim your child's auto-enrolled balance, track deposits, or use the web portal if you do not have a smartphone.",
+ "h1": "How to Use the Trump Account App",
+ "cardBlurb": "How to install the official Trump Account app, claim your child's balance, fix common login or bank errors, and manage funds without a phone.",
+ "introText": "You check your child's Trump Account in Trump Accounts: Official App, which the [U.S. Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0508) publishes on the [App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) and Google Play. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each Treasury update to the app.\n\nThe app lets you claim the account, track contributions, activity and performance, link a bank, and set up recurring contributions. If you do not have a mobile device, Treasury offers a web version at trumpaccount.com.",
+ "sections": [
+  {
+   "heading": "Getting Into the Trump Accounts App",
+   "body": "To check your child's balance on a phone, install the app and complete four basic steps. Treasury released Trump Accounts: Official App on the Apple App Store and Google Play, with the seller listed as the U.S. Department of the Treasury.\n\n1. Download \"Trump Accounts: Official App\" from the App Store or Google Play on your mobile device.\n2. Open the app, sign in, and verify your identity along with your parental relationship to the child.\n3. Review the information Treasury has on file for your child and confirm it is correct.\n4. Accept the legal account terms to finish claiming the record and open up full dashboard features.\n\nOnce the account is claimed, the app shows its contributions, activity and investment performance. For the full claim steps, see [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/)."
+  },
+  {
+   "heading": "What You Can Do in the App",
+   "body": "The app lets you manage contributions, review government deposits and track investment growth. A child's money is automatically invested into a qualifying index fund that tracks the S&P 500 or a similar broad U.S. stock index. You cannot purchase individual stocks or speculative assets in the app.\n\nParents can link external checking accounts to send one-time deposits or set up recurring contributions. Friends, relatives, and employers can also send gifts directly into the account up to the statutory limit of $5,000 per year combined. Employers can chip in up to $2,500 inside that same $5,000 yearly cap, as outlined in our guide to [Trump Account employer contributions](/guides/trump-account-employer-contributions/).\n\nThe app also shows federal deposits. Qualifying children born between 2025 and 2028 receive a one-time $1,000 federal seed, which does not count toward the $5,000 annual limit. Children born between 2016 and 2024 who live in eligible lower-income areas may see a separate $250 contribution funded by Michael and Susan Dell, detailed in our guide to the [Dell Trump Account $250](/guides/dell-trump-account-250/) grant. Parents can calculate how these balances compound over eighteen years using our [Trump Account calculator](/trump-account/)."
+  },
+  {
+   "heading": "Using Trump Accounts Without the App",
+   "body": "Treasury's SB-0508 release says a web version exists at trumpaccount.com for people without a mobile device, and account management is also referenced at [TrumpAccounts.gov](https://trumpaccounts.gov).\n\nTreasury has not published a feature-by-feature comparison of the web version and the app. If a step you need is missing on the web, call 1-866-USA-4547 or request a callback online.\n\nBefore automatic enrollment in October 2026, some parents opened accounts by filing Form 4547 with the [IRS](https://www.irs.gov/trumpaccounts) online, using an [ID.me](https://www.id.me/) sign-in. A Form 4547 election on its own does not give you a usable account, so the account still has to be claimed in the app or on the web. Our [IRS Form 4547](/guides/form-4547/) guide covers whether you need the form's $1,000 pilot election."
+  },
+  {
+   "heading": "Common Technical Problems and How to Fix Them",
+   "body": "Users have reported several problems in app reviews, and Treasury has not published causes or error codes for them.\n\n- Bank-link errors: update the app, then remove and re-link the bank account. If it still fails, request an in-app callback or call 1-866-USA-4547.\n- Linked debit cards disappearing: update the app and add the card again. If the card disappears again, request a callback.\n- Recurring contributions not showing: check your bank statement to see whether the money left your account before you send a second deposit, then request a callback if the transfer is missing.\n- Failed activation or requests to resubmit information: resubmit your child's details exactly as they appear on the Social Security card, then call 1-866-USA-4547 if activation still fails.\n\nIf these steps do not work, request an in-app callback rather than starting a second claim for the same child."
+  },
+  {
+   "heading": "Customer Service and Official Contact Channels",
+   "body": "Treasury maintains a dedicated telephone support center for parents needing technical or account assistance. You can reach official customer service by calling 1-866-USA-4547. Use it for app problems, a failed claim or a missing deposit.\n\nParents can also request an electronic callback directly through the app or the web version. Official email correspondence regarding child accounts comes exclusively from no-reply@TrumpAccounts.Treasury.gov.\n\nFake lookalike apps exist, so check that the App Store seller is the U.S. Department of the Treasury; our guide to [Trump Account scams](/guides/trump-account-scams/) covers the warning signs."
+  },
+  {
+   "heading": "Who Publishes and Runs the Trump Account App",
+   "body": "Treasury announced the app in press release SB-0508 on May 28, 2026. Treasury is the seller on the app stores, and [Robinhood Securities](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf) is the trustee on Treasury's behalf and built the app.\n\nTreasury's SB-0642 release says over 60 million more children had accounts ready to claim as of October 1, 2026, and [CNBC](https://www.cnbc.com/2026/10/08/trump-accounts-70-million-enrolled.html) put the total near 70 million.\n\nAccording to a tax-practitioner analysis of the regulations, unclaimed accounts sit in a Treasury master group trust until a parent or guardian claims them. To see how the trustee arrangement works, read our comparison of [Trump Account trustees](/compare/trump-account-trustees/)."
+  },
+  {
+   "heading": "Next Steps to Take on Your Child's Account",
+   "body": "If your child was under 18 with a valid Social Security number on October 1, 2026, Treasury has already opened an account for them, and it is waiting to be claimed. Download Trump Accounts: Official App from the App Store or Google Play, or use the web version at trumpaccount.com to claim your child's record.\n\nComplete the identity verification steps so the account can receive the $1,000 seed if your child is eligible, gifts from family and friends, and employer contributions. If you run into technical errors during registration, place a call to 1-866-USA-4547 to resolve the issue with an official representative."
+  }
+ ],
+ "tools": [
+  {
+   "href": "/trump-account/",
+   "label": "Trump Account calculator"
+  }
+ ],
+ "faqs": [
+  {
+   "question": "What is the Trump Account app?",
+   "answer": "The Trump Account app, titled Trump Accounts: Official App, is the official mobile application created by the U.S. Department of the Treasury and built with Robinhood Securities. It lets parents claim auto-enrolled accounts, link bank accounts, monitor index fund growth, and receive contributions up to $5,000 per year."
+  },
+  {
+   "question": "How do I check my child's Trump Account?",
+   "answer": "You can check your child's balance by downloading Trump Accounts: Official App on iOS or Android, or by using the web version at trumpaccount.com. Once you verify your identity and claim the account, the app shows its contributions, activity and investment performance."
+  },
+  {
+   "question": "Can I use a Trump Account without the app?",
+   "answer": "Yes. Treasury offers a web version at trumpaccount.com for people without a mobile device, and account management is also referenced at TrumpAccounts.gov. Treasury has not published whether every app feature is on the web, so call 1-866-USA-4547 if a step is missing."
+  },
+  {
+   "question": "What is the Trump Account phone number?",
+   "answer": "The official phone number for Trump Account customer service is 1-866-USA-4547. You can call this toll-free line for help with failed activations, identity verification issues, or missing deposits, or request an electronic callback inside the app."
+  },
+  {
+   "question": "Why is the Trump Account app not working?",
+   "answer": "Users have reported bank-link errors, linked debit cards disappearing, recurring contributions not showing and failed activations in app reviews, and Treasury has not published the causes. Update the app, re-link your bank, or call 1-866-USA-4547 or request an in-app callback."
+  },
+  {
+   "question": "Is the Trump Account app real?",
+   "answer": "Yes, the official app is legitimate and released by the U.S. Department of the Treasury on the Apple App Store and Google Play. Because fraudulent copycat apps exist, check that the [App Store listing](https://apps.apple.com/us/app/trump-accounts/id6767364919) names the U.S. Department of the Treasury as the seller and learn how to identify fake offers in our guide to [Trump Account scams](/guides/trump-account-scams/)."
+  }
+ ],
+ "sources": [
+  {
+   "label": "U.S. Department of the Treasury, Automatic Enrollment (SB-0642)",
+   "url": "https://home.treasury.gov/news/press-releases/sb0642"
+  },
+  {
+   "label": "U.S. Department of the Treasury, Official App Announcement (SB-0508)",
+   "url": "https://home.treasury.gov/news/press-releases/sb0508"
+  },
+  {
+   "label": "Apple App Store, Trump Accounts: Official App",
+   "url": "https://apps.apple.com/us/app/trump-accounts/id6767364919"
+  },
+  {
+   "label": "TrumpAccounts.gov, Official Program Portal",
+   "url": "https://trumpaccounts.gov"
+  },
+  {
+   "label": "IRS, Trump Accounts Information",
+   "url": "https://www.irs.gov/trumpaccounts"
+  }
+ ],
+ "metaTitle": "",
+ "subtitle": "",
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

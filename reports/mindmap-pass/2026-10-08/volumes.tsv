@@ -1,0 +1,59 @@
+[keyword_data] ahrefs unusable (HTTP 403 {
+  "error": "API units limit reached. Expected usage: 50, API units left: 15."
+})
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 1/50 phrases
+[keyword_data] kd: using semrush (quality order ahrefs > semrush > dataforseo)
+[keyword_data] KD from semrush for 1 rows (volume came from dataforseo)
+[keyword_data] Autocomplete: 48/50 rows corroborated live
+trump account dell	50			estimate	10
+dell trump account	100			estimate	10
+trump account $250	500			estimate	10
+trump account dell zip codes	250			estimate	10
+trump account zip code	100			estimate	8
+dell trump account eligibility	500			estimate	9
+trump account app	500			estimate	10
+trump account login	50			estimate	10
+trump account app not working	75			estimate	4
+trump account without app	500			estimate	10
+is trump account app legit	25			estimate	9
+claim trump account	500			estimate	10
+how to claim trump account	250			estimate	10
+trump account automatic enrollment	150			estimate	1
+trump accounts auto enrollment	150			estimate	1
+trump account form 4547	500			estimate	10
+form 4547	14800	18		dataforseo	10
+how to claim trump account on tax return	75			estimate	6
+trump account employer contribution	500			estimate	10
+trump account employer match	500			estimate	10
+companies matching trump accounts	20			estimate	5
+trump account fafsa	50			estimate	10
+does trump account affect fafsa	250			estimate	10
+trump account robinhood	50			estimate	10
+trump accounts on robinhood	500			estimate	8
+trump account stock donations	150			estimate	4
+trump account for older kids	250			estimate	9
+trump account born before 2025	250			estimate	10
+trump account not funded	150			estimate	1
+when will trump account be funded	75			estimate	4
+trump account deposit	50			estimate	10
+trump account status	20			estimate	7
+trump account gift tax	500			estimate	10
+trump account grandparents	20			estimate	7
+trump account phone number	500			estimate	10
+trump account customer service	150			estimate	7
+trump account fees	50			estimate	10
+trump account pros and cons	250			estimate	10
+trump account news	50			estimate	10
+trump account reddit	50			estimate	10
+trump account vs ugma	50			estimate	10
+trump account turbotax	50			estimate	10
+trump account still processing	150			estimate	7
+trump account bank	50			estimate	10
+trump accounts banks	50			estimate	9
+trump account custodian	20			estimate	7
+trump account withdrawals	50			estimate	10
+trump account roth conversion	500			estimate	10
+trump account vs i bonds	0			estimate	0
+trump account vs hysa	20			estimate	4
+['ahrefs unusable (HTTP 403 {\n  "error": "API units limit reached. Expected usage: 50, API units left: 15."\n})', 'volume: using dataforseo (quality order ahrefs > dataforseo > semrush)', 'dataforseo returned volume for 1/50 phrases', 'kd: using semrush (quality order ahrefs > semrush > dataforseo)', 'KD from semrush for 1 rows (volume came from dataforseo)', 'No tool volume for 49 phrases — autocomplete band (source=estimate, NOT measured)', 'Autocomplete: 48/50 rows corroborated live']

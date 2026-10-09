@@ -1,0 +1,37 @@
+{
+ "slug": "trump-account-trustees--should-you-move",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 201,
+ "floor": 0,
+ "input_tokens": 20046,
+ "output_tokens": 292,
+ "thinking_tokens": null,
+ "cached_tokens": 18224,
+ "est_cost_usd": 0.0038,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 201,
+  "numbers_not_in_facts": [],
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 18468
+  }
+ },
+ "seconds": 4.1,
+ "response_id": "slfIavaTLM-zqtsPvvve2QU",
+ "generated_at": "2026-10-08T21:55:49-0500"
+}

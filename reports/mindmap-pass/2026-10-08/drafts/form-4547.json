@@ -1,0 +1,98 @@
+{
+ "slug": "form-4547",
+ "title": "Do You Need IRS Form 4547 for a Trump Account?",
+ "metaDescription": "IRS Form 4547 explained. Learn who needs to file the Trump Account Election form, how to elect the $1,000 pilot seed, and how to file with TurboTax.",
+ "h1": "How IRS Form 4547 Works for Trump Accounts",
+ "cardBlurb": "IRS Form 4547 lets you elect to open a Trump Account and request the $1,000 pilot seed, but recent auto-enrollment rules change who still needs to file it.",
+ "introText": "[IRS Form 4547](https://www.irs.gov/forms-pubs/about-form-4547), titled \"Trump Account Election(s),\" does two jobs: it elects to open an initial Trump Account for an eligible child, and it elects the one-time $1,000 pilot contribution. At ModernWallet, we publish this site's Trump Account calculator and guides, so we follow each IRS and Treasury notice on the program.\n\n[Treasury](https://home.treasury.gov/news/press-releases/sb0642) opened accounts automatically on or about October 1, 2026, so most families no longer need Form 4547 just to get an account. The regulations also say Treasury cannot make the $1,000 pilot election for you, so parents of a child born 2025 through 2028 should make sure that election is on file.\n\nA Form 4547 election alone does not create an account you can use. You still have to claim and activate the account before anyone can add money.",
+ "sections": [
+  {
+   "heading": "What Form 4547 Does and Who Needs to File It",
+   "body": "Form 4547 is the official tax document used to establish a Trump Account and elect the $1,000 pilot contribution. According to [Treasury temporary regulations T.D. 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), Treasury created automatic accounts on October 1, 2026, for eligible children without a prior election. The regulations say this generally removes the need for anyone else to file an election just to open an account. The same regulations say the Secretary of the Treasury cannot make the pilot program election. Parents of children born between 2025 and 2028 must ensure the line 7 pilot election is formally submitted to secure the $1,000 seed.\n\n| Child Category | Automatic Account Created? | Is Form 4547 Needed? |\n|---|---|---|\n| Born 2025 to 2028 | Yes, under T.D. 10056 | Recommended for Part III line 7 pilot election |\n| Born before 2025 | Yes, if child has valid SSN | No, account already opened; ineligible for pilot seed |\n\nWhether claiming an account inside the official mobile app also registers the pilot election remains unconfirmed in published IRS guidance. Families with children born in the 2025 to 2028 window should verify that their election is on record either through the app or by calling the Treasury contact center at 1-866-USA-4547. Filing Form 4547 with Part III completed provides a documented paper trail with the IRS. For more background on initial account creation, see [how to open a Trump Account](/guides/how-to-open-a-trump-account/)."
+  },
+  {
+   "heading": "Who Can File Form 4547 and in What Order",
+   "body": "The IRS establishes a strict legal priority order for who may file Form 4547 to establish an account. According to the [official Form 4547 instructions](https://www.irs.gov/instructions/i4547), the hierarchy ranks legal guardians first, followed by parents, adult siblings, and grandparents. If multiple adults submit competing forms for the same child, the IRS applies this hierarchy to determine the authorized individual.\n\nRequesting the $1,000 pilot seed imposes an additional requirement. Only an individual who expects the child to be their qualifying child for tax purposes during the election year may submit the Part III pilot election. An adult relative who holds opening authority cannot request the federal seed unless they also meet qualifying child dependency rules for that tax year.\n\nThe child must also satisfy baseline program rules. To have an account opened, the child must be under age 18 at year-end, possess a valid Social Security number, and have no prior Trump Account election on file. To qualify for the $1,000 pilot deposit, the child must be a U.S. citizen born between January 1, 2025, and December 31, 2028. Review [Trump Account eligibility](/guides/trump-account-eligibility/) for comprehensive qualification standards."
+  },
+  {
+   "heading": "Line-by-Line Guide to Completing Form 4547",
+   "body": "Form 4547 spans four discrete parts designed to collect parent identification, child records, election choices, and legal signatures.\n\n| Form Part | Information Required | Practical Tip |\n|---|---|---|\n| Part I | Authorized individual's name, address, and SSN | This person becomes the designated responsible party |\n| Part II | Child's information, plus the line 6 authorization checkbox | Check line 6 to authorize establishing the traditional IRA |\n| Part III | Pilot program election on line 7 | Check line 7 only if child was born 2025 to 2028 and is your qualifying child |\n| Part IV | Disclosure consent, signature, date, paid preparer info | The authorized individual signs; a paid preparer, if used, completes the preparer section |\n\nIn Part I, enter your personal details as the authorized individual. This person becomes the account's responsible party. Part II requires the child's identifying records; check line 6 to authorize account creation. Part III contains line 7, which activates the $1,000 pilot request. Leave Part III blank if the child was born before 2025. Finally, sign Part IV, which also holds the consent to disclosure and the paid preparer section."
+  },
+  {
+   "heading": "Filing Methods and Deadlines for Form 4547",
+   "body": "You can file Form 4547 through electronic tax software, the web, or traditional mail. The IRS designates e-filing alongside your annual Form 1040 as the fastest processing channel. Alternatively, filers can submit an election online at [irs.gov/trumpaccounts](https://www.irs.gov/trumpaccounts) using an [ID.me](https://www.id.me/) sign-in, which requires the child's SSN, date of birth, and residential address.\n\nPaper filers must mail the completed form separately to the specific address designated at [IRS.gov/PaperReturns](https://www.irs.gov/PaperReturns). Never attach Form 4547 to Form 1040-X, and do not submit an amended tax return solely to deliver this document.\n\nNo formal filing deadline exists beyond maintaining eligibility while the child remains under age 18. [TurboTax](https://turbotax.intuit.com/tax-tips/irs-tax-forms/form-4547-how-to-establish-a-trump-account-for-your-child/c8C3uZhxW) advises making the election before the year the child turns 18. Money in a Trump Account generally cannot be withdrawn until January 1 of the year the child turns 18. To review withdrawal constraints and investment restrictions, consult our summary of [Trump Account rules](/guides/trump-account-rules/)."
+  },
+  {
+   "heading": "Filing Form 4547 With TurboTax",
+   "body": "TurboTax supports Form 4547 when you e-file your federal return. TurboTax's own guidance says its users \"can file IRS Form 4547 with their federal income tax return,\" and that route requires e-filing.\n\nIf you file your Form 1040 on paper, TurboTax cannot send Form 4547 for you. Print the form and mail it on its own to the address at IRS.gov/PaperReturns, or make the election online at irs.gov/trumpaccounts instead."
+  },
+  {
+   "heading": "Form 4547 Election vs Claiming in the App",
+   "body": "Submitting Form 4547 does not instantly create a functional account that parents can manage. The temporary regulations say a Form 4547 election alone does not establish an account. The account has to be activated (claimed) before anyone can manage it. As detailed in Treasury press release SB-0642, parents must claim the account through the official mobile app or online portal.\n\nAccording to a tax-practitioner analysis of the regulations, unclaimed accounts sit in a Treasury master group trust. Family, friends and employers cannot contribute to it. SB-0642 also says a child's account must be claimed to receive the $1,000 seed.\n\nTo manage funds, download the official app and verify your identity and legal relationship to the child. Once the account is claimed, family, friends and employers can add up to $5,000 a year combined. For detailed onboarding instructions, read our walkthrough on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/)."
+  },
+  {
+   "heading": "Next Steps After Submitting Form 4547",
+   "body": "After you file, claim the account in the official Trump Accounts app or sign in at [trumpaccounts.gov](https://trumpaccounts.gov) to verify your identity and activate it.\n\nIf your child qualifies for the pilot deposit, monitor the account dashboard for the incoming federal transfer. If your child was born between 2016 and 2024, they do not receive the pilot seed, but they may qualify for private philanthropic funds such as the [Dell $250 contribution](/guides/dell-trump-account-250/). You can track expected processing timeframes in our guide on [when Trump Accounts will be funded](/guides/when-will-trump-account-be-funded/).\n\nStart with your child's birth year. For a child born 2025 through 2028, confirm the line 7 pilot election is on file; for an older child, claiming the account is the only step."
+  }
+ ],
+ "tools": [
+  {
+   "href": "/trump-account/",
+   "label": "Trump Account calculator"
+  }
+ ],
+ "faqs": [
+  {
+   "question": "Do I need Form 4547 if my child was auto-enrolled?",
+   "answer": "If your child was auto-enrolled on October 1, 2026, you generally do not need Form 4547 just to open the account. However, Treasury regulations clarify that the government cannot make the $1,000 pilot election for you. If your child was born between 2025 and 2028, filing Form 4547 with Part III completed is the documented method to ensure that seed election is officially on record."
+  },
+  {
+   "question": "Can I file Form 4547 with TurboTax?",
+   "answer": "Yes. TurboTax allows users to file IRS Form 4547 alongside their federal income tax return, but it requires e-filing the return. If you file your federal taxes on paper, you must print and mail Form 4547 separately to the IRS."
+  },
+  {
+   "question": "Where do I mail Form 4547?",
+   "answer": "Paper filers must mail Form 4547 separately to the designated IRS address listed at [IRS.gov/PaperReturns](https://www.irs.gov/PaperReturns). Do not attach it to Form 1040-X, and do not bundle it with an amended tax return."
+  },
+  {
+   "question": "Can I add Form 4547 to an amended return?",
+   "answer": "No. The IRS instructions explicitly state that you should not attach Form 4547 to Form 1040-X or file an amended return solely to submit the election. Submit it with an original e-filed return, complete it online via ID.me at irs.gov/trumpaccounts, or mail it as a standalone document."
+  },
+  {
+   "question": "Who can sign Form 4547?",
+   "answer": "Form 4547 must be signed by an authorized individual. Eligibility follows a strict priority order: legal guardian, parent, adult sibling, and grandparent. To claim the $1,000 pilot seed in Part III, the person signing must also expect the child to be their qualifying child for tax purposes during the election year."
+  },
+  {
+   "question": "Is there a deadline for Form 4547?",
+   "answer": "There is no deadline beyond \"any time\" while the child is eligible. TurboTax advises making the election before the year the child turns 18."
+  }
+ ],
+ "sources": [
+  {
+   "label": "IRS, Form 4547 Instructions",
+   "url": "https://www.irs.gov/instructions/i4547"
+  },
+  {
+   "label": "IRS, About Form 4547",
+   "url": "https://www.irs.gov/forms-pubs/about-form-4547"
+  },
+  {
+   "label": "Federal Register, Trump Accounts Temporary Regulations (T.D. 10056)",
+   "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+  },
+  {
+   "label": "U.S. Department of the Treasury, Release SB-0642",
+   "url": "https://home.treasury.gov/news/press-releases/sb0642"
+  },
+  {
+   "label": "TurboTax, Form 4547 Overview",
+   "url": "https://turbotax.intuit.com/tax-tips/irs-tax-forms/form-4547-how-to-establish-a-trump-account-for-your-child/c8C3uZhxW"
+  }
+ ],
+ "metaTitle": "",
+ "subtitle": "",
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}
