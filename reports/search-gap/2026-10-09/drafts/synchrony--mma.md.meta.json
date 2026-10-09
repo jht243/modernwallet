@@ -1,0 +1,74 @@
+{
+ "slug": "synchrony--mma",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 192,
+ "floor": 0,
+ "input_tokens": 18082,
+ "output_tokens": 311,
+ "thinking_tokens": null,
+ "cached_tokens": 17283,
+ "est_cost_usd": 0.0031,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 192,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L3",
+     "quote": "The account includes check-writing privileges and an optional ATM card for cash withdrawals online, by phone, or at an ATM.",
+     "replacement": "You can write checks, withdraw money online, by phone, or via ATM, and request an optional ATM card.",
+     "type": "unsupported",
+     "why": "Source states withdrawing money online or by phone, not cash withdrawals via ATM card."
+    },
+    {
+     "id": "L3",
+     "quote": "Synchrony does not charge an ATM fee itself and refunds up to $5 in domestic ATM fees charged by other institutions per statement cycle, with unlimited refunds for depositors who hold Diamond status in its Perks Rewards Program.",
+     "replacement": "Synchrony does not charge an ATM fee itself and refunds domestic ATM fees charged by other institutions up to $5, with unlimited ATM fee refunds per statement cycle for depositors who hold Diamond status in its Perks Rewards Program.",
+     "type": "unsupported",
+     "why": "Source attributes per statement cycle to Diamond status, not the $5 refund."
+    },
+    {
+     "id": "L5",
+     "quote": "If you prefer a pure savings vehicle without checks or an ATM card, Synchrony also offers a high-yield savings product, which we evaluate separately in our [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/).",
+     "replacement": "Synchrony also offers a High Yield Savings account, which we evaluate separately in our [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/).",
+     "type": "contradicted",
+     "why": "Source states an optional ATM card is available with High Yield Savings."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 205
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 96.4,
+ "response_id": "lQXJaqSfEcTw-sAPhsrHyQI",
+ "generated_at": "2026-10-09T15:19:16+0000"
+}

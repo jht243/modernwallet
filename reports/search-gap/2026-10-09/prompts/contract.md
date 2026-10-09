@@ -1,0 +1,1 @@
+Return ONLY a markdown enrichment for an existing roundup page: exactly one `## ` heading (a noun-phrase or question heading) followed by 2 short paragraphs. Plain markdown, links as [text](url) from the allowed list only. No H1. Brand first-"we" rule: "At The Modern Wallet, we…" if "we" is used.
